@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zo/main",
+    "name": "ZO Transformation Devices",
+    "description": "The transformation devices used by ZO.",
+    "icon": "kamenridercraft:zo_core",
+    "sortnum": 1
+}

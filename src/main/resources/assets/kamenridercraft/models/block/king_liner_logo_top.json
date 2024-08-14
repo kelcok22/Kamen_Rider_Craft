@@ -1,0 +1,11 @@
+{
+   "parent": "block/orientable",
+    "textures": {
+        "up": "kamenridercraft:block/king_liner_red",
+        "down": "kamenridercraft:block/king_liner_red",
+        "west": "kamenridercraft:block/king_liner_logo_top",
+        "north": "kamenridercraft:block/king_liner_logo_top",
+        "south": "kamenridercraft:block/king_liner_logo_top",
+        "east": "kamenridercraft:block/king_liner_logo_top"
+    }
+}

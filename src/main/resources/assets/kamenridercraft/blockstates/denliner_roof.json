@@ -1,0 +1,10 @@
+
+ {
+    "variants": {
+        "facing=north": { "model": "kamenridercraft:block/denliner_roof" },
+        "facing=south": { "model": "kamenridercraft:block/denliner_roof", "y": 180 },
+        "facing=west":  { "model": "kamenridercraft:block/denliner_roof", "y": 270 },
+        "facing=east":  { "model": "kamenridercraft:block/denliner_roof", "y": 90 }
+    }
+}
+ 

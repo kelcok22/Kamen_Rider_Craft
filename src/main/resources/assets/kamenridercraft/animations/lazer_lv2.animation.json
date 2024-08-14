@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"walk": {
+			"animation_length": 1,
+			"bones": {
+				"b_wheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"f_wheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true
+		},
+		"fly": {
+			"loop": true
+		},"sneak": {
+			"loop": true,
+			"bones": {
+				"armorBody": {
+				"rotation": {
+						"vector": [-32.05618, 3.64529, -5.19931]
+					},
+					"position": {
+						"vector": [0, 7, 13]
+					}
+				}
+			}
+		},
+		"swing_l": {
+			"loop": true
+		},
+		"swing_r": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

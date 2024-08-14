@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black/main",
+    "name": "Black Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to Kamen Rider Black.",
+    "icon": "kamenridercraft:blackhead",
+    "sortnum": 0
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "kamenridercraft:block/kamen_cafe_counter" },
+        "facing=south": { "model": "kamenridercraft:block/kamen_cafe_counter", "y": 180 },
+        "facing=west":  { "model": "kamenridercraft:block/kamen_cafe_counter", "y": 270 },
+        "facing=east":  { "model": "kamenridercraft:block/kamen_cafe_counter", "y": 90 }
+    }
+}

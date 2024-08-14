@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:x/main",
+    "name": "X Rider Items",
+    "description": "All X-related items that are neither armor nor a weapon.",
+    "icon": "kamenridercraft:ridol_core",
+    "sortnum": 2
+}

@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft;
 
+import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
+import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,6 +53,9 @@ public class KamenRiderCraftCore
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        Ichigo_Rider_Items.register(modEventBus);
+        RiderTabs.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -66,6 +71,8 @@ public class KamenRiderCraftCore
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        RiderTabs.AddItemsToTabs(event);
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

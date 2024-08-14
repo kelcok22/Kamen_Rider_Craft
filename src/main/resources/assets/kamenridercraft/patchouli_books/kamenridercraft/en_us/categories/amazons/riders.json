@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazons/main",
+    "name": "Amazons Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Amazons.",
+    "icon": "kamenridercraft:amazonshead",
+    "sortnum": 0
+}

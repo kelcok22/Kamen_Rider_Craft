@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_rx/main",
+    "name": "Black RX Transformation Devices",
+    "description": "The transformation devices used by the Black RX Riders.",
+    "icon": "kamenridercraft:sun_riser",
+    "sortnum": 1
+}

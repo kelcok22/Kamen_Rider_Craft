@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazon/main",
+    "name": "Amazon Transformation Devices",
+    "description": "The transformation devices used by the Amazon Riders.",
+    "icon": "kamenridercraft:condorer",
+    "sortnum": 1
+}

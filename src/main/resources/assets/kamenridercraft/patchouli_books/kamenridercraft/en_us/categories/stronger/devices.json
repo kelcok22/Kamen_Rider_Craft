@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:stronger/main",
+    "name": "Stronger Transformation Devices",
+    "description": "The transformation devices used by the Stronger Riders.",
+    "icon": "kamenridercraft:electrer",
+    "sortnum": 1
+}
