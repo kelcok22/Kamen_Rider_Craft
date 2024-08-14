@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/saikyo_takumi_oyakata_progrisekey"
+    }
+}

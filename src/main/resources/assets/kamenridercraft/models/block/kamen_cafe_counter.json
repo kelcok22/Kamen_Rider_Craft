@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "kamenridercraft:block/kamen_cafe_counter_top",
+        "front": "kamenridercraft:block/kamen_cafe_counter_side",
+        "side": "kamenridercraft:block/kamen_cafe_counter_side",
+         "bottom": "kamenridercraft:block/kamen_cafe_counter_bottom"
+    }
+}

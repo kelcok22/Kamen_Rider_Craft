@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "Destron Combatman",
+    "description": "",
+    "icon": "kamenridercraft:v3_logo",
+    "sortnum": 4
+}

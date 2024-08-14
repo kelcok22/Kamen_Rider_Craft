@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazons/main",
+    "name": "Amazons Transformation Devices",
+    "description": "The transformation devices used by the Amazons Riders.",
+    "icon": "kamenridercraft:amazons_driver_omega",
+    "sortnum": 1
+}

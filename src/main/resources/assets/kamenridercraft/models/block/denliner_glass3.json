@@ -1,0 +1,11 @@
+{
+   "parent": "block/orientable",
+    "textures": {
+        "up": "kamenridercraft:block/denliner_glass3",
+        "down": "kamenridercraft:block/denliner_glass",
+        "west": "kamenridercraft:block/denliner_glass",
+        "north": "kamenridercraft:block/denliner_glass",
+        "south": "kamenridercraft:block/denliner_glass",
+        "east": "kamenridercraft:block/denliner_glass"
+    }
+}

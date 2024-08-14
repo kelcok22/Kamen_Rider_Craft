@@ -1,0 +1,11 @@
+{
+   "parent": "block/orientable",
+    "textures": {
+        "up": "kamenridercraft:block/denliner_roof",
+        "down": "kamenridercraft:block/new_denliner_interior",
+        "west": "kamenridercraft:block/new_denliner_interior",
+        "north": "kamenridercraft:block/new_denliner_side_with_start_line",
+        "south": "kamenridercraft:block/new_denliner_side_with_start_line2",
+        "east": "kamenridercraft:block/new_denliner_side_with_line"
+    }
+}

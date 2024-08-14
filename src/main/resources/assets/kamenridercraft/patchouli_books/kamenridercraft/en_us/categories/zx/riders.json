@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zx/main",
+    "name": "ZX Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to Kamen Rider ZX.",
+    "icon": "kamenridercraft:zxhead",
+    "sortnum": 0
+}

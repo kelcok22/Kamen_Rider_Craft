@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazon/main",
+    "name": "Red Follower",
+    "description": "",
+    "icon": "kamenridercraft:amazon_logo",
+    "sortnum": 3
+}

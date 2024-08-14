@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/hibiki_ongekibou_rekka_card"
+    }
+}

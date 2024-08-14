@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "V3 Transformation Devices",
+    "description": "The transformation devices used by the V3 Riders.",
+    "icon": "kamenridercraft:double_typhoon",
+    "sortnum": 1
+}

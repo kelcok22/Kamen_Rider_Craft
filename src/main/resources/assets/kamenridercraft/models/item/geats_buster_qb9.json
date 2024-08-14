@@ -1,0 +1,15 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "kamenridercraft:item/geats_buster_qb9"
+  },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "kamenridercraft:item/geats_buster_qb9_gun"
+        }
+    ]
+}

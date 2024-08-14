@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_rx/main",
+    "name": "Black RX Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Black RX.",
+    "icon": "kamenridercraft:black_rx_logo",
+    "sortnum": 4
+}

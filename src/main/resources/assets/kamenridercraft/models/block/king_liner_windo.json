@@ -1,0 +1,12 @@
+{
+   "parent": "block/orientable",
+      "render_type": "minecraft:translucent",
+    "textures": {
+        "up": "kamenridercraft:block/denliner_matel_dark",
+        "down": "kamenridercraft:block/denliner_matel_dark",
+        "west": "kamenridercraft:block/denliner_matel_dark",
+        "north": "kamenridercraft:block/king_liner_windo",
+        "south": "kamenridercraft:block/king_liner_windo",
+        "east": "kamenridercraft:block/denliner_matel_dark"
+    }
+}

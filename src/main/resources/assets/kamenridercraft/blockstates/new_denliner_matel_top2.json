@@ -1,0 +1,9 @@
+ {
+    "variants": {
+        "facing=north": { "model": "kamenridercraft:block/new_denliner_matel_top" },
+        "facing=south": { "model": "kamenridercraft:block/new_denliner_matel_top", "y": 180 },
+        "facing=west":  { "model": "kamenridercraft:block/new_denliner_matel_top", "y": 270 },
+        "facing=east":  { "model": "kamenridercraft:block/new_denliner_matel_top", "y": 90 }
+    }
+}
+ 

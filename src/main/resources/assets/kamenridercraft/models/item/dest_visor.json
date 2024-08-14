@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"1": "kamenridercraft:item/dest_claw_vent",
+		"layer0": "kamenridercraft:item/dest_visor",
+		"particle": "kamenridercraft:item/dest_claw_vent"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 11.25, -0.75],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 11.25, -0.75],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

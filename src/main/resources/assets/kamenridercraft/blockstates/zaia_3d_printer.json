@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/zaia_3d_printer" },
+    "facing=south": { "model": "kamenridercraft:block/zaia_3d_printer", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/zaia_3d_printer", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/zaia_3d_printer", "y": 90 }
+  }
+ }

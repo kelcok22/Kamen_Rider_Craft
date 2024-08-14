@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:stronger/main",
+    "name": "Stronger Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Stronger.",
+    "icon": "kamenridercraft:strongerhead",
+    "sortnum": 0
+}

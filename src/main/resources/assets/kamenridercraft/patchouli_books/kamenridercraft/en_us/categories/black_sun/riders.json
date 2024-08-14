@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_sun/main",
+    "name": "Black Sun Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to Kamen Rider Black Sun.",
+    "icon": "kamenridercraft:blacksunhead",
+    "sortnum": 0
+}

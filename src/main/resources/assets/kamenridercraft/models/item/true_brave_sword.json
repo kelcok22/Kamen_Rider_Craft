@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "kamenridercraft:item/true_brave_sword"
+  }
+}

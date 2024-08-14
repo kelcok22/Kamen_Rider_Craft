@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_sun/main",
+    "name": "Black Sun Transformation Devices",
+    "description": "The transformation devices used by the Black Sun Riders.",
+    "icon": "kamenridercraft:century_king_sun_driver",
+    "sortnum": 1
+}

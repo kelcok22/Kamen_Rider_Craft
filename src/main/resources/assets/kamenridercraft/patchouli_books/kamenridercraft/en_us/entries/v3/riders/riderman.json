@@ -1,0 +1,32 @@
+{
+    "name": "Riderman",
+    "icon": "kamenridercraft:riderman_belt_core",
+    "category": "kamenridercraft:v3/riders",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "riderman",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:riderman_belt\",tag:{slot_tex1:\"riderman_belt_core\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+            "name": " ",
+            "text": "Accessed with the $(l:v3/items/riderman_belt_core)Rider Buckle Core$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+			"title": "Riderman",
+            "text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Transforms with the $(l:v3/devices/riderman_belt)Rider Buckle$(/l)$(br2)Status Effects:$(li)Regeneration$(li)Haste III$(li)Strength II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "perfecter",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:riderman_belt\",tag:{slot_tex1:\"perfecter\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+            "name": "Riderman w/ Perfecter",
+            "text": "Accessed with the $(l:x/items/perfecter)Perfecter$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+			"title": "Riderman",
+            "text": "Appears in:$(li)Riderman Another After (2003, S.I.C. Hero Saga)$(br2)Transforms with the $(l:v3/devices/riderman_belt)Rider Buckle$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration$(li)Jump Boost III$(li)Strength II"
+        }
+    ]
+}
