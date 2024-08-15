@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import org.slf4j.Logger;
 
@@ -53,7 +54,9 @@ public class KamenRiderCraftCore
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
+
         RiderTabs.register(modEventBus);
 
         // Register the item to a creative tab

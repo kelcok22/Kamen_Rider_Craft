@@ -419,9 +419,9 @@ public class RiderTabs {
             }
             event.accept(Rider_Blocks.BLUE_ROSE.get());
             event.accept(Rider_Blocks.IMAGIN_SAND_BLOCK.get());
-
+**/
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
-
+/**
             event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
 

@@ -58,7 +58,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
 
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+FORM+".png");
+        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+FORM+".png");
     }
 
 
