@@ -287,42 +287,43 @@ public class RiderFormChangeItem extends BaseItem {
         return true;
     }
 
-    public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
-        ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
+        ItemStack itemstack = player.getItemInHand(usedHand);
 
-        ItemStack BELT = p_41129_.getItemBySlot(EquipmentSlot.FEET);
+        ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
        // if(!p_41129_.hasEffect(Effect_core.FORM_LOCK.get())) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
 
-                if (STIFT_ITEM instanceof RiderFormChangeItem& p_41129_.isShiftKeyDown()) {
-                    ((RiderFormChangeItem)STIFT_ITEM).use(p_41128_, p_41129_, p_41130_);
+                if (STIFT_ITEM instanceof RiderFormChangeItem& player.isShiftKeyDown()) {
+                    ((RiderFormChangeItem)STIFT_ITEM).use(level, player, usedHand);
                 }
-                else if (CanChange(p_41129_,belt,BELT)) {
-                    //if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
-                    //if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
-                    //if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
-                    //if (RESET_FORM)RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),belt.Base_Form_Item, 1);
-                    //if (SET_TO_ARMOR_FORM)RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),belt.Armor_Form_Item, 1);
+                else if (CanChange(player,belt,BELT)) {
+                    if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
+                    if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
+                    if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
+                    if (RESET_FORM)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),belt.Base_Form_Item, 1);
+                    if (SET_TO_ARMOR_FORM)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),belt.Armor_Form_Item, 1);
 
                     int SLOT = Slot;
-                    if (p_41130_==InteractionHand.OFF_HAND&Offhand)SLOT = OffhandSlot;
+                    if (usedHand==InteractionHand.OFF_HAND&Offhand)SLOT = OffhandSlot;
 
-                    //if (SWITCH_ITEM!=null&RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET), SLOT)==this) RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),SWITCH_ITEM, SLOT);
-                   // else RiderDriverItem.set_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),this, SLOT);
+                    if (SWITCH_ITEM!=null&RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), SLOT)==this) RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),SWITCH_ITEM, SLOT);
+                    else RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),this, SLOT);
 
                 }else if(!alternative.isEmpty()){
 
                     for (int i = 0; i < alternative.size(); i++)
                     {
                         RiderFormChangeItem alternativeItem_form_change = alternative.get(i);
-                        alternativeItem_form_change.use(p_41128_, p_41129_, p_41130_);
+                        alternativeItem_form_change.use(level, player, usedHand);
                     }
                 }
             //}
         }
-        return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
 
     }
 

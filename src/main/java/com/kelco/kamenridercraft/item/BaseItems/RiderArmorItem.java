@@ -34,7 +34,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
 
     public RiderArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties) {
-        super(armorMaterial, type, properties);
+        super(armorMaterial, type, properties.stacksTo(1));
 
     }
 
