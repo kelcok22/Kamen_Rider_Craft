@@ -11,6 +11,8 @@ import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.component.PatchedDataComponentMap;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -83,37 +85,35 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
-    /**
-    @Override
-    public void onArmorTick(ItemStack stack, Level level, Player player)
-    {
+@Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 
-        if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            if (tag.getBoolean("Update_form")) OnformChange(stack, player,tag);
-        }
+        if (entity instanceof LivingEntity player) {
 
-        if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-            if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-                if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-                    if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == this){
-                        for (int n = 0; n < Num_Base_Form_Item; n++)
-                        {
-                            List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),n+1).getPotionEffectList();
-                            for (int i = 0; i < potionEffectList.size(); i++)
-                            {
-                                player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(),potionEffectList.get(i).getDuration(),potionEffectList.get(i).getAmplifier(),true,false));
+            if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+                if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
+            }
+
+            if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS) {
+                if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO) {
+                    if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD) {
+                        if (player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+                            for (int n = 0; n < Num_Base_Form_Item; n++) {
+                                List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
+                                for (int i = 0; i < potionEffectList.size(); i++) {
+                                    player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(), potionEffectList.get(i).getDuration(), potionEffectList.get(i).getAmplifier(), true, false));
+                                }
                             }
                         }
                     }
-                }
+               }
             }
         }
-
     }
-**/
 
-    public void OnformChange(ItemStack itemstack, Player player,CompoundTag  tag) {
+
+    public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         player.setInvisible(false);
        tag.putBoolean("Update_form", false);
     }
