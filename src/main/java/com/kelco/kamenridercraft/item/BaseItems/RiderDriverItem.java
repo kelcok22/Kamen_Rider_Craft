@@ -8,10 +8,14 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.component.PatchedDataComponentMap;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import com.google.common.collect.Lists;
@@ -51,10 +55,10 @@ public class RiderDriverItem extends RiderArmorItem {
     public String BELT_TEXT;
 
 
-
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties);
+        super(material, ArmorItem.Type.BOOTS, properties.stacksTo(1));
+
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -66,7 +70,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider,DeferredItem<Item> baseFormItem,DeferredItem<Item> armorFormItem,DeferredItem<Item> head,DeferredItem<Item>torso,DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties);
+        super(material, ArmorItem.Type.BOOTS, properties.stacksTo(1));
+
+
 
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -76,12 +82,16 @@ public class RiderDriverItem extends RiderArmorItem {
         LEGS=legs.get();
 
     }
-/**
+
+    /**
     @Override
     public void onArmorTick(ItemStack stack, Level level, Player player)
     {
 
-       if (stack.getTag().getBoolean("Update_form"))OnformChange(stack,player);
+        if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            if (tag.getBoolean("Update_form")) OnformChange(stack, player,tag);
+        }
 
         if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
             if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
@@ -101,13 +111,14 @@ public class RiderDriverItem extends RiderArmorItem {
         }
 
     }
+**/
 
-    public void OnformChange(ItemStack itemstack, Player player) {
+    public void OnformChange(ItemStack itemstack, Player player,CompoundTag  tag) {
         player.setInvisible(false);
-        itemstack.getTag().putBoolean("Update_form", false);
+       tag.putBoolean("Update_form", false);
     }
 
-**/
+
     public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item) {
         Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem)item.get());
         Num_Base_Form_Item=2;
@@ -176,32 +187,30 @@ public class RiderDriverItem extends RiderArmorItem {
             if (belt.Num_Base_Form_Item!=1) {
                 for (int n = 0; n < belt.Num_Base_Form_Item-1; n++)
                 {
-                  //  set_Form_Item( itemstack,belt.Extra_Base_Form_Item.get(n),2+n);
+                   set_Form_Item( itemstack,belt.Extra_Base_Form_Item.get(n),2+n);
                 }
             }
-           // set_Form_Item( itemstack,belt.Base_Form_Item,1);
+           set_Form_Item( itemstack,belt.Base_Form_Item,1);
 
         }
     }
 
 
-/**
+
     public static void set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT)
     {
-        if (!itemstack.getComponents().isEmpty())
-        {
-            //(DataComponents.CUSTOM_DATA,new CompoundTag())
-            itemstack.get(DataComponents.POTION_CONTENTS);
-            //itemstack.setTag(new CompoundTag());
+        if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemstack.getItem() instanceof RiderDriverItem) {
+            CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
             ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT);
-            itemstack.getTag().putString("slot_tex"+SLOT, ITEM.toString());
-            itemstack.getTag().putInt("slot"+SLOT, Item.getId(ITEM));
-            itemstack.getTag().putBoolean("Update_form", true);
+            tag.putString("slot_tex"+SLOT, ITEM.toString());
+            tag.putInt("slot"+SLOT, Item.getId(ITEM));
+            tag.putBoolean("Update_form", true);
         }
     }
-**/
+
 
 
 
@@ -262,29 +271,32 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
 
-    public static RiderFormChangeItem get_Form_Item(ItemStack itemstack,int SLOT)
-    {
-        //ResourceLocation Used_Form_Item = new ResourceLocation(KamenRiderCraftCore.MOD_ID, itemstack.getTag().getString("slot_tex"+SLOT));
-        RiderDriverItem belt = (RiderDriverItem)itemstack.getItem();
+    public static RiderFormChangeItem get_Form_Item(ItemStack itemstack,int SLOT) {
+
+        RiderDriverItem belt = (RiderDriverItem) itemstack.getItem();
         RiderFormChangeItem Base_Form_Item = belt.Base_Form_Item;
 
         if (SLOT == 2) {
-            Base_Form_Item =belt.Extra_Base_Form_Item.get(0);
-        }else if (SLOT == 3) {
-            Base_Form_Item =belt.Extra_Base_Form_Item.get(1);
-        }else if (SLOT == 4) {
-            Base_Form_Item =belt.Extra_Base_Form_Item.get(2);
+            Base_Form_Item = belt.Extra_Base_Form_Item.get(0);
+        } else if (SLOT == 3) {
+            Base_Form_Item = belt.Extra_Base_Form_Item.get(1);
+        } else if (SLOT == 4) {
+            Base_Form_Item = belt.Extra_Base_Form_Item.get(2);
         }
-/**
-        if (!itemstack.hasTag())
-        {
-            return  Base_Form_Item;
-        }else if (ForgeRegistries.ITEMS.getValue(Used_Form_Item) instanceof RiderFormChangeItem){
-            return (RiderFormChangeItem) ForgeRegistries.ITEMS.getValue(Used_Form_Item);
-        }else{
-            **/
+
+        if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            int form  =  tag.getInt("slot"+SLOT);
+            if (Item.byId(form) instanceof RiderFormChangeItem formItem) {
+
+                return formItem;
+            }
+        }
+
             return Base_Form_Item;
-        }
+
+
+    }
     }
 
 
