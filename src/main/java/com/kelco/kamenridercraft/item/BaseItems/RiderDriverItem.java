@@ -7,10 +7,13 @@ import java.util.List;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.component.PatchedDataComponentMap;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.component.CustomData;
@@ -206,7 +209,6 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
             ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT);
             tag.putString("slot_tex"+SLOT, ITEM.toString());
-            tag.putInt("slot"+SLOT, Item.getId(ITEM));
             tag.putBoolean("Update_form", true);
         }
     }
@@ -286,17 +288,14 @@ public class RiderDriverItem extends RiderArmorItem {
 
         if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            int form  =  tag.getInt("slot"+SLOT);
-            if (Item.byId(form) instanceof RiderFormChangeItem formItem) {
-
+            ResourceLocation Used_Form_Item = ResourceLocation.parse(tag.getString("slot_tex" + SLOT));
+            if (BuiltInRegistries.ITEM.get(Used_Form_Item) instanceof RiderFormChangeItem formItem) {
                 return formItem;
             }
         }
-
             return Base_Form_Item;
-
-
     }
+
     }
 
 
