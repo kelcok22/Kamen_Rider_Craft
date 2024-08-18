@@ -97,11 +97,10 @@ public class KamenRiderCraftCore
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
-        //NeoForge.EVENT_BUS.register(new ModCommonEvents.ForgeClientEvents());
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            NeoForge.EVENT_BUS.register(new ModCommonEvents.ForgeClientEvents());
         }
     }
 }
