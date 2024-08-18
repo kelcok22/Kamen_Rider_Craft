@@ -1,9 +1,14 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -49,6 +54,8 @@ public class KamenRiderCraftCore
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+       // NeoForge.EVENT_BUS.register(new ModCommonEvents.ForgeCommonEvents());
+        NeoForge.EVENT_BUS.register(new ModCommonEvents.EventHandler());
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -68,6 +75,7 @@ public class KamenRiderCraftCore
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
+
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
@@ -77,7 +85,6 @@ public class KamenRiderCraftCore
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         RiderTabs.AddItemsToTabs(event);
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -90,9 +97,11 @@ public class KamenRiderCraftCore
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
+        //NeoForge.EVENT_BUS.register(new ModCommonEvents.ForgeClientEvents());
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+
         }
     }
 }
