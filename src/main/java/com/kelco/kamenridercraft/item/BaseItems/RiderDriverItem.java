@@ -1,32 +1,17 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
-import java.util.function.Consumer;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
-import net.minecraft.core.component.DataComponentMap;
-import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.component.PatchedDataComponentMap;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import org.jetbrains.annotations.NotNull;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.client.RiderArmorRenderer;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -38,17 +23,10 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.biome.Biomes;
-import software.bernie.geckolib.animatable.client.GeoRenderProvider;
-
-import javax.annotation.Nullable;
-
 
 
 public class RiderDriverItem extends RiderArmorItem {
 
-
-    public String armorNamePrefix;
     public RiderFormChangeItem Base_Form_Item;
     public RiderFormChangeItem Armor_Form_Item;
     protected ArrayList<RiderFormChangeItem> Extra_Base_Form_Item;
@@ -62,7 +40,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties.stacksTo(1));
+        super(material, ArmorItem.Type.BOOTS, properties);
 
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -75,7 +53,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider,DeferredItem<Item> baseFormItem,DeferredItem<Item> armorFormItem,DeferredItem<Item> head,DeferredItem<Item>torso,DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties.stacksTo(1));
+        super(material, ArmorItem.Type.BOOTS, properties);
 
 
 
