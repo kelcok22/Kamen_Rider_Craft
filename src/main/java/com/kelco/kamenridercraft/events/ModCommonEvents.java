@@ -45,30 +45,25 @@ public class ModCommonEvents {
 	public static class ForgeClientEvents {
 
 		@SubscribeEvent
-		public static void addInvisibleCheck(RenderLivingEvent.Pre event) {
-			
+		public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
+
 			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-				
-		
-			if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() ==  belt.HEAD) {
-				if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() ==  belt.TORSO) {
-					if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() ==  belt.LEGS) {
+
+
+				if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() ==  belt.HEAD) {
+					if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() ==  belt.TORSO) {
+						if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() ==  belt.LEGS) {
 							if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())event.getEntity().setInvisible(true);
 						}
 					}
 				}
 			}
-			
-		}
-
-		@SubscribeEvent
-		public static void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
 			float size = 1;
 			boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
 
 			if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
-				size= size*((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier())+1);
+				size= size+((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier())+1);
 			}
 
 			float size2 = event.getEntity().hasEffect(Effect_core.STRETCH)? 1:size;
