@@ -2,18 +2,13 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
+import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -255,10 +250,10 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties())
                     .Override_belt_text("dark_ridol_belt").AddToTabList(RiderTabs.X_TAB_ITEM));
 
-    /**
+
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
-**/
+
 
     //Amazon
 
@@ -472,10 +467,10 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> SHADOW_CHARGER = ITEMS.register("shadow_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_moon",GREEN_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BLACK_TAB_ITEM));
 
-    /**
-    public static final RegistryObject<SwordItem> SATANSABER = ITEMS.register("satansaber",
+
+    public static final DeferredItem<Item> SATANSABER = ITEMS.register("satansaber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLACK_TAB_ITEM));
-**/
+
 
     //Black RX
     public static final DeferredItem<Item>  BLACK_RX_LOGO = ITEMS.register("black_rx_logo",
@@ -532,19 +527,19 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item>  MOON_RISER = ITEMS.register("moon_riser",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"white_rx",MOON_RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
-/**
-    public static final RegistryObject<SwordItem> REVOLCANE = ITEMS.register("revolcane",
+
+    public static final DeferredItem<Item>REVOLCANE = ITEMS.register("revolcane",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
-    public static final RegistryObject<BaseBlasterItem> VORTECHSHOOTER = ITEMS.register("vortech_shooter",
+    public static final DeferredItem<Item> VORTECHSHOOTER = ITEMS.register("vortech_shooter",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
-    public static final RegistryObject<SwordItem> BIOBLADE = ITEMS.register("bio_blade",
+    public static final DeferredItem<Item> BIOBLADE = ITEMS.register("bio_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
-    public static final RegistryObject<SwordItem> SHADOWSABER = ITEMS.register("shadow_saber",
+    public static final DeferredItem<Item> SHADOWSABER = ITEMS.register("shadow_saber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
-**/
+
     // Shin
 
     public static final DeferredItem<Item>  SHIN_LOGO = ITEMS.register("shin_logo",

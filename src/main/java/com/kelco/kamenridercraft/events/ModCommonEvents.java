@@ -7,6 +7,8 @@ import java.util.List;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.client.Minecraft;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -21,6 +23,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.api.distmarker.Dist;
@@ -34,6 +37,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 
 public class ModCommonEvents {
@@ -42,7 +46,7 @@ public class ModCommonEvents {
 
 
 
-	public static class ForgeClientEvents {
+	public static class ClientEvents {
 
 		@SubscribeEvent
 		public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
@@ -50,10 +54,11 @@ public class ModCommonEvents {
 			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
 
-				if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() ==  belt.HEAD) {
-					if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() ==  belt.TORSO) {
-						if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() ==  belt.LEGS) {
-							if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())event.getEntity().setInvisible(true);
+				if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == belt.HEAD) {
+					if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() == belt.TORSO) {
+						if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() == belt.LEGS) {
+							if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
+								event.getEntity().setInvisible(true);
 						}
 					}
 				}
@@ -63,25 +68,55 @@ public class ModCommonEvents {
 			boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
 
 			if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
-				size= size+((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier())+1);
+				size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) + 1);
 			}
 
-			float size2 = event.getEntity().hasEffect(Effect_core.STRETCH)? 1:size;
+			float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
 
 			if (event.getEntity().hasEffect(Effect_core.FLAT)) {
-				size2= 0.1f;
+				size2 = 0.1f;
 			}
-			float size3 = event.getEntity().hasEffect(Effect_core.STRETCH)? 1:size;
+			float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
 			if (event.getEntity().hasEffect(Effect_core.WIDE)) {
-				size2=(float) (size2*3);
-				size3=(float) (size3*3);
+				size2 = (float) (size2 * 3);
+				size3 = (float) (size3 * 3);
 			}
-			event.getPoseStack().scale(size3,size,size2);
+			event.getPoseStack().scale(size3, size, size2);
 		}
-
 	}
 
 	public static class EventHandler {
+
+		@SubscribeEvent
+		public void onPlayerTick(PlayerTickEvent.Post event) {
+			Entity entity=event.getEntity();
+			if (entity == null)
+				return;
+			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false) {
+				if (entity instanceof Player _player) {
+					_player.getAbilities().mayfly = (true);
+					_player.onUpdateAbilities();
+				}
+			}
+			else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false)) {
+				if (entity instanceof Player _player) {
+
+					boolean checkGamemode = false;
+
+					if (_player instanceof ServerPlayer _serverPlayer) {
+						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE&_serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
+					} else if (entity.level().isClientSide()) {
+						checkGamemode =  Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
+								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.SPECTATOR && Minecraft.getInstance()
+								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.CREATIVE;
+					}
+
+					_player.getAbilities().mayfly = (checkGamemode? false:true);
+					_player.onUpdateAbilities();
+				}
+			}
+		}
+
 		@SubscribeEvent
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
 			event.getEntity().setInvisible(false);
