@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.google.common.collect.Lists;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.world.InteractionHand;
@@ -294,7 +295,7 @@ public class RiderFormChangeItem extends BaseItem {
 
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-       // if(!p_41129_.hasEffect(Effect_core.FORM_LOCK.get())) {
+        if(!player.hasEffect(Effect_core.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
 
                 if (STIFT_ITEM instanceof RiderFormChangeItem& player.isShiftKeyDown()) {
@@ -321,7 +322,7 @@ public class RiderFormChangeItem extends BaseItem {
                         alternativeItem_form_change.use(level, player, usedHand);
                     }
                 }
-            //}
+            }
         }
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
 
