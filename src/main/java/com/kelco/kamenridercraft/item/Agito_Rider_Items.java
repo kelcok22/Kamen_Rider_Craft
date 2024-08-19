@@ -154,7 +154,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.POISON, 40, 0,true,false))
-            .AddToTabList(RiderTabs.AGITO_TAB_ITEM));
+					.AddToTabList(RiderTabs.AGITO_TAB_ITEM));
 	//.AddToTabList(GSystemChipProgrammer.G_CHIP, 1)
   
     public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
