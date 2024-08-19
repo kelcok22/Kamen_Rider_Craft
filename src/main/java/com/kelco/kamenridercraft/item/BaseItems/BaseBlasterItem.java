@@ -28,12 +28,7 @@ import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.entity.projectile.ThrownEgg;
 import net.minecraft.world.entity.projectile.ThrownEnderpearl;
 import net.minecraft.world.entity.projectile.WitherSkull;
-import net.minecraft.world.item.ArrowItem;
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -44,8 +39,6 @@ import net.neoforged.neoforge.event.EventHooks;
 
 public class BaseBlasterItem extends BowItem {
 
-	private final float attackDamage;
-	private final Multimap<Attribute, AttributeModifier> defaultModifiers;
 
 	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
 	private Item HenshinBeltItem;
@@ -60,23 +53,15 @@ public class BaseBlasterItem extends BowItem {
 	private Boolean DFB = false;
 	
 	public BaseBlasterItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-		super(prop.durability(toolTier.getUses()));
-		this.attackDamage = (float)Atk;
+		super(prop.durability(toolTier.getUses()).attributes(SwordItem.createAttributes(Tiers.DIAMOND, Atk, Spd)));
 		ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-		//builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Weapon modifier", (double)this.attackDamage, AttributeModifier.Operation.ADDITION));
-		//builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Weapon modifier", (double)Spd, AttributeModifier.Operation.ADDITION));
-		this.defaultModifiers = builder.build();
-
 	}
 	public BaseBlasterItem AddToTabList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}
-/**
-	public float getDamage() {
-		return this.attackDamage;
-	}
 
+/**
 	public void releaseUsing(ItemStack p_40667_, Level p_40668_, LivingEntity p_40669_, int p_40670_) {
 		if (p_40669_ instanceof Player player) {
 			boolean flag = player.getAbilities().instabuild || EnchantmentHelper.getItemEnchantmentLevel(Enchantments.INFINITY. p_40667_) > 0;
@@ -181,7 +166,7 @@ public class BaseBlasterItem extends BowItem {
 
 		}
 	}
-
+ **/
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
@@ -189,25 +174,26 @@ public class BaseBlasterItem extends BowItem {
 		InteractionResultHolder<ItemStack> ret = EventHooks.onArrowNock(itemstack, level, player, hand, flag);
 
 		if (ret != null) return ret;
-		else return InteractionResultHolder.consume(itemstack);
-
+		else {
+			player.startUsingItem(hand);
+			return InteractionResultHolder.consume(itemstack);
+		}
 	}
 
-
-	public static float getPowerForTime(int p_40662_) {
-
-		return 1;
-	}
 
 	public int getDefaultProjectileRange() {
 		return 30;
 	}
-**/
+
+public static float getPowerForTime(int charge) {
+	return 1;
+}
+
 	public BaseBlasterItem ChangeRepairItem(Item item) {
 		RepairItem = item;
 		return this;
 	}
-/**
+
 	public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
 		return p_40393_.getItem()== RepairItem;
 	}
@@ -217,7 +203,7 @@ public class BaseBlasterItem extends BowItem {
 		HenshinBeltItem=item;
 		return this;
 	}
-**/
+
 	public BaseBlasterItem IsSwordGun() {
 		KamenRiderCraftCore.SWORD_GUN_ITEM.add(this);
 		return this;

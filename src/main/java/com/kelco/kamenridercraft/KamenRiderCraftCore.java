@@ -4,12 +4,15 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.Agito_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
 import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ItemStack;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -121,31 +124,28 @@ public class KamenRiderCraftCore
                 }
 
 
+            for (Item item : KUUGA_CHANGING_ITEM) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET) != null) {
+
+                                if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Kuuga_Rider_Items.ARCLE.get()) {
+                                    ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
+                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_r") return 1;
+                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_u") return 2;
+                                    if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_ru") return 2;
+                                } else {
+                                    return 0;
+                                }
+                                return 0;
+                            }
+                            return 0;
+                            //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                        }
+                );
+            }
 /**
- for (int i = 0; i < KUUGA_CHANGING_ITEM.size(); i++)
- {
- ItemProperties.register(KUUGA_CHANGING_ITEM.get(i),  ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
- if (p_174637_ == null) {
- return 0.0F;
- }
- else if (p_174637_.getItemBySlot(EquipmentSlot.FEET)!= null){
-
- if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Kuuga_Rider_Items.ARCLE.get()){
- ItemStack belt = p_174637_.getItemBySlot(EquipmentSlot.FEET);
- if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex()=="arcle_belt_r") return 1;
- if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex()=="arcle_belt_u") return 2;
- if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex()=="arcle_belt_ru") return 2;
- }else {
- return 0;
- }
- return 0;
- }
- return 0;
- //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
- }
- );
- }
-
 
 
  for (int i = 0; i < RAISE_RISER_ITEM.size(); i++)
