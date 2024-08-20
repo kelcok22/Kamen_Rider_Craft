@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft;
 
+import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.Agito_Rider_Items;
@@ -73,6 +74,24 @@ public class KamenRiderCraftCore
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
         Agito_Rider_Items.register(modEventBus);
+       // Ryuki_Rider_Items.register(modEventBus);
+       // Faiz_Rider_Items.register(modEventBus);
+       // Blade_Rider_Items.register(modEventBus);
+       // Hibiki_Rider_Items.register(modEventBus);
+       // Kabuto_Rider_Items.register(modEventBus);
+       // Den_O_Rider_Items.register(modEventBus);
+       // Kiva_Rider_Items.register(modEventBus);
+      //Decade_Rider_Items.register(modEventBus);
+        //W_Rider_Items.register(modEventBus);
+       // OOO_Rider_Items.register(modEventBus);
+        //Ex_Aid_Rider_Items.register(modEventBus);
+        //Zero_One_Rider_Items.register(modEventBus);
+        //Geats_Rider_Items.register(modEventBus);
+        //Gotchard_Rider_Items.register(modEventBus);
+        //Gavv_Rider_Items.register(modEventBus);
+        //Reboot_Rider_Items.register(modEventBus);
+        //Miscellaneous_Rider_Items.register(modEventBus);
+        Rider_Blocks.register(modEventBus);
 
         RiderTabs.register(modEventBus);
 

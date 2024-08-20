@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.block.machineBlocks.GSystemChipProgrammer;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -132,30 +133,26 @@ public class Agito_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-            .AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-   //.AddToTabList(GSystemChipProgrammer.G_CHIP, 10)
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 10).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_X_CHIP = ITEMS.register("g3x",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_x","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-            .AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-    //.AddToTabList(GSystemChipProgrammer.G_CHIP, 3)
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 3).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_MILD_CHIP = ITEMS.register("g3mild",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_mild","g_buckle_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-            .AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-   // .AddToTabList(GSystemChipProgrammer.G_CHIP, 2)
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 2).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G4_CHIP = ITEMS.register("g4",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g4","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.POISON, 40, 0,true,false))
-					.AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-	//.AddToTabList(GSystemChipProgrammer.G_CHIP, 1)
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 1).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
   
     public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g4_x","g_buckle_belt",
@@ -167,16 +164,13 @@ public class Agito_Rider_Items {
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g1","g_buckle_belt_1",
             		new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
-            .AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-	//.AddToTabList(GSystemChipProgrammer.G_CHIP, 10)
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 10).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
    
     public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v1","blank",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.AddToTabList(RiderTabs.AGITO_TAB_ITEM));
-	//.AddToTabList(GSystemChipProgrammer.G_CHIP, 10)
-    
+					.AddToTabList(GSystemChipProgrammer.G_CHIP, 10).AddToTabList(RiderTabs.AGITO_TAB_ITEM));
 	
 	public static final DeferredItem<Item> AGITOHELMET = ITEMS.register("agitohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
