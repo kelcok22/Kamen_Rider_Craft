@@ -67,7 +67,38 @@ public class BaseBlasterItem extends BowItem {
 					if (level instanceof ServerLevel) {
 						ServerLevel serverlevel = (ServerLevel)level;
 						if (!list.isEmpty()) {
-							this.shoot(serverlevel, player, player.getUsedItemHand(), stack, list, 3, 1.0F, true, (LivingEntity)null);
+
+							Vec3 vec3 = player.getLookAngle();
+							if (this.SFB){
+								SmallFireball smallfireball = new SmallFireball(player.level(), player, vec3.normalize());
+								smallfireball.setPos(smallfireball.getX(), player.getY(0.5) + 0.5, smallfireball.getZ());
+								player.level().addFreshEntity(smallfireball);
+							}else if (this.LFB){
+								LargeFireball largefireball = new LargeFireball(player.level(), player, vec3.normalize(),LFBB);
+								largefireball.setPos(largefireball.getX(), player.getY(0.5) + 0.5, largefireball.getZ());
+								player.level().addFreshEntity(largefireball);
+							}else if (DFB) {
+								DragonFireball dragonfireball = new DragonFireball(player.level(), player, vec3.normalize());
+								dragonfireball.setPos(dragonfireball.getX(), player.getY(0.5D) + 0.5D, dragonfireball.getZ());
+								player.level().addFreshEntity(dragonfireball);
+							}else if (CK) {
+								ThrownEgg fireball = new ThrownEgg(player.level(),player);
+								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+								fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+								player.level().addFreshEntity(fireball);
+							}else if (WS) {
+								WitherSkull fireball = new WitherSkull(player.level(), player,vec3.normalize());
+								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+								player.level().addFreshEntity(fireball);
+							}
+							else if (EP) {
+								ThrownEnderpearl fireball = new ThrownEnderpearl(player.level(),player);
+								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+								fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+								player.level().addFreshEntity(fireball);
+							}
+
+							else this.shoot(serverlevel, player, player.getUsedItemHand(), stack, list, 3, 1.0F, true, (LivingEntity)null);
 						}
 					level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 					player.awardStat(Stats.ITEM_USED.get(this));
@@ -79,17 +110,7 @@ public class BaseBlasterItem extends BowItem {
 
 	@Override
 	protected void shootProjectile(LivingEntity shooter, Projectile projectile, int index, float velocity, float inaccuracy, float angle, @Nullable LivingEntity target) {
-		Vec3 vec3 = shooter.getLookAngle();
-
-		if (this.SFB){
-			SmallFireball smallfireball = new SmallFireball(shooter.level(), shooter, vec3.normalize());
-			smallfireball.setPos(smallfireball.getX(), shooter.getY(0.5) + 0.5, smallfireball.getZ());
-			shooter.level().addFreshEntity(smallfireball);
-		}else if (this.LFB){
-			LargeFireball largefireball = new LargeFireball(shooter.level(), shooter, vec3.normalize(),LFBB);
-			largefireball.setPos(largefireball.getX(), shooter.getY(0.5) + 0.5, largefireball.getZ());
-			shooter.level().addFreshEntity(largefireball);
-		}else projectile.shootFromRotation(shooter, shooter.getXRot(), shooter.getYRot() + angle, 0.0F, velocity, inaccuracy);
+		projectile.shootFromRotation(shooter, shooter.getXRot(), shooter.getYRot() + angle, 0.0F, velocity, inaccuracy);
 	}
 
 	@Override
