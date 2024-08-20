@@ -258,7 +258,7 @@ public class Agito_Rider_Items {
 	public static final DeferredItem<Item> G3_X_SHIELD = ITEMS.register("g3x_shield",
             () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 
-	
+
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties()).setProjectileLargeFireball(4).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	
