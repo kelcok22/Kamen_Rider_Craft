@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
@@ -124,10 +125,7 @@ public class KamenRiderCraftCore
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            NeoForge.EVENT_BUS.register(new ModCommonEvents.ClientEvents());
-
-
-
+            NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
 
 
 

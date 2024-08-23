@@ -43,48 +43,6 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 public class ModCommonEvents {
 
 
-
-
-
-	public static class ClientEvents {
-
-		@SubscribeEvent
-		public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
-
-			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-
-				if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == belt.HEAD) {
-					if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() == belt.TORSO) {
-						if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() == belt.LEGS) {
-							if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
-								event.getEntity().setInvisible(true);
-						}
-					}
-				}
-			}
-
-			float size = 1;
-			boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
-
-			if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
-				size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) + 1);
-			}
-
-			float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
-
-			if (event.getEntity().hasEffect(Effect_core.FLAT)) {
-				size2 = 0.1f;
-			}
-			float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
-			if (event.getEntity().hasEffect(Effect_core.WIDE)) {
-				size2 = (float) (size2 * 3);
-				size3 = (float) (size3 * 3);
-			}
-			event.getPoseStack().scale(size3, size, size2);
-		}
-	}
-
 	public static class EventHandler {
 
 		@SubscribeEvent
