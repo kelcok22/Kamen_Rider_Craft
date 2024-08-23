@@ -1,7 +1,0 @@
-{
-	"parent": "kamenridercraft:j/main",
-    "name": "J Transformation Devices",
-    "description": "The transformation devices used by J.",
-    "icon": "kamenridercraft:j_spirit",
-    "sortnum": 1
-}

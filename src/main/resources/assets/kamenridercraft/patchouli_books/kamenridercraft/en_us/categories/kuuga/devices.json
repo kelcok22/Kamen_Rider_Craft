@@ -1,7 +1,0 @@
-{
-	"parent": "kamenridercraft:kuuga/main",
-    "name": "Kuuga Transformation Devices",
-    "description": "The transformation devices used by the Kuuga Riders.",
-    "icon": "kamenridercraft:arcle",
-    "sortnum": 1
-}

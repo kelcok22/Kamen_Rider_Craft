@@ -1,7 +1,0 @@
-{
-	"parent": "kamenridercraft:skyrider/main",
-    "name": "Skyrider Rider Items",
-    "description": "All Skyrider-related items that are neither armor nor a weapon.",
-    "icon": "kamenridercraft:tornado_core",
-    "sortnum": 2
-}

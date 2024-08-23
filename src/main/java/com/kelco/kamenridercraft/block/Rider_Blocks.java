@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
-import com.kelco.kamenridercraft.block.machineBlocks.GSystemChipProgrammer;
+import com.kelco.kamenridercraft.block.machineBlocks.*;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.ChatFormatting;
@@ -43,19 +43,20 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	/**
+
 	public static final DeferredBlock<Block> AMAZON_CELL_EXTRACTOR = registerBlock("amazon_cell_extractor",
 			() -> new AmazonCellExtractor(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
-	public static final RegistryObject<Block> AMAZON_CELL_MUTATOR = registerBlock("amazon_cell_mutator",
+	public static final DeferredBlock<Block> AMAZON_CELL_MUTATOR = registerBlock("amazon_cell_mutator",
 			() -> new AmazonCellMutator(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final RegistryObject<Block> KAIJIN_STONE_GENERATOR = registerBlock("kaijin_stone_generator",
-			() -> new KaijinStoneGenerator(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+	public static final DeferredBlock<Block> KAIJIN_STONE_GENERATOR = registerBlock("kaijin_stone_generator",
+			() -> new KaijinStoneGenerator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	/**
 	public static final DeferredBlock<Block>BLUE_ROSE = registerBlock("blue_rose",
 			() -> new FlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5, 
 					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion().noCollission()));
@@ -151,7 +152,7 @@ public class Rider_Blocks {
 			() -> new DespawnBlockNotCube(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE).dynamicShape(),Block.box(4, 0, 6, 12,16, 10)).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
-/**
+
 	public static final DeferredBlock<Block> GAME_CREATOR = registerBlock("gamecreator",
 			() -> new GameCreator(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -160,7 +161,7 @@ public class Rider_Blocks {
 			() -> new GanbarizingMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).lightLevel(null).dynamicShape().lightLevel((p_152632_) -> {
 					      return 10;}),Block.box(1, 0, 1, 14,32, 14)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	**/
+
 
 	public static final DeferredBlock<Block> COUNTER_95DO = registerBlock("counter_95do",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
@@ -169,7 +170,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GINGA_METEOR = registerBlock("ginga_meteor",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
-/**
+
 	public static final DeferredBlock<Block> HIDEN_3D_PRINTER = registerBlock("hiden_3d_printer",
 			() -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -177,7 +178,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ZAIA_3D_PRINTER = registerBlock("zaia_3d_printer",
 			() -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));

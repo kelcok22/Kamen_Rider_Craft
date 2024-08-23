@@ -32,7 +32,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
+
 @Mod(KamenRiderCraftCore.MOD_ID)
 public class KamenRiderCraftCore
 {
@@ -81,13 +81,13 @@ public class KamenRiderCraftCore
         Decade_Rider_Items.register(modEventBus);
         //W_Rider_Items.register(modEventBus);
        // OOO_Rider_Items.register(modEventBus);
-        //Ex_Aid_Rider_Items.register(modEventBus);
-        //Zero_One_Rider_Items.register(modEventBus);
+        Ex_Aid_Rider_Items.register(modEventBus);
+        Zero_One_Rider_Items.register(modEventBus);
         //Geats_Rider_Items.register(modEventBus);
         //Gotchard_Rider_Items.register(modEventBus);
-        //Gavv_Rider_Items.register(modEventBus);
-        //Reboot_Rider_Items.register(modEventBus);
-        //Miscellaneous_Rider_Items.register(modEventBus);
+        Gavv_Rider_Items.register(modEventBus);
+        Reboot_Rider_Items.register(modEventBus);
+        Miscellaneous_Rider_Items.register(modEventBus);
         Rider_Blocks.register(modEventBus);
 
         RiderTabs.register(modEventBus);
