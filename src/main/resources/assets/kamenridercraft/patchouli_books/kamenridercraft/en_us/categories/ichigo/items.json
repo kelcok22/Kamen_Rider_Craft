@@ -1,7 +1,0 @@
-{
-	"parent": "kamenridercraft:ichigo/main",
-    "name": "Ichigo Rider Items",
-    "description": "All Ichigo-related items that are neither armor nor a weapon.",
-    "icon": "kamenridercraft:typhoon_core",
-    "sortnum": 2
-}

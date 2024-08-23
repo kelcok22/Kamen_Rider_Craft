@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:paper"
+	}, 
+	{
+	  "item": "kamenridercraft:agito_ground"
+	}
+	],
+  "result": {
+
+	"id": "kamenridercraft:agito_logo"
+  }
+}

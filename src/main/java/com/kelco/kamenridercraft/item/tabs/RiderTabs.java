@@ -114,53 +114,56 @@ public class RiderTabs {
     public static DeferredHolder<CreativeModeTab, CreativeModeTab>  DecadeTab = CREATIVE_MODE_TABS.register("krc_300_decade_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Decade_Rider_Items.DECADEHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_decade_items.png"))
                     .title(Component.literal("Decade Rider Items")).build());
-    /**
-    public static RegistryObject<CreativeModeTab> WTab = CREATIVE_MODE_TABS.register("krc_310_w_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(W_Rider_Items.WHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_w_items.png"))
+/**
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab>  WTab = CREATIVE_MODE_TABS.register("krc_310_w_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(W_Rider_Items.WHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_w_items.png"))
                     .title(Component.literal("W Rider Items")).build());
-    public static RegistryObject<CreativeModeTab> OOOTab = CREATIVE_MODE_TABS.register("krc_320_ooo_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_ooo_items.png"))
-                    .title(Component.literal("OOO Rider Items")).build());
 
-    public static RegistryObject<CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_ex_aid_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> OOOTab = CREATIVE_MODE_TABS.register("krc_320_ooo_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ooo_items.png"))
+                    .title(Component.literal("OOO Rider Items")).build());
+**/
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ex_aid_items.png"))
                     .title(Component.literal("Ex-Aid Rider Items")).build());
 
-    public static RegistryObject<CreativeModeTab> Zero_OneTab = CREATIVE_MODE_TABS.register("krc_410_zero_one_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_zero_one_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> Zero_OneTab = CREATIVE_MODE_TABS.register("krc_410_zero_one_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_zero_one_items.png"))
                     .title(Component.literal("Zero-One Rider Items")).build());
-
-    public static RegistryObject<CreativeModeTab> GeatsTab = CREATIVE_MODE_TABS.register("krc_440_geats_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Geats_Rider_Items.GEATS_HELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_geats_items.png"))
+/**
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GeatsTab = CREATIVE_MODE_TABS.register("krc_440_geats_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Geats_Rider_Items.GEATS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_geats_items.png"))
                     .title(Component.literal("Geats Rider Items")).build());
 
-    public static RegistryObject<CreativeModeTab> GotchardTab = CREATIVE_MODE_TABS.register("krc_450_gotchard_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_gotchard_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GotchardTab = CREATIVE_MODE_TABS.register("krc_450_gotchard_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Gotchard_Rider_Items.GOTCHARD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_gotchard_items.png"))
                     .title(Component.literal("Gotchard Rider Items")).build());
-
-    public static RegistryObject<CreativeModeTab> GavvTab = CREATIVE_MODE_TABS.register("krc_460_gavv_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_gavv_items.png"))
+**/
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GavvTab = CREATIVE_MODE_TABS.register("krc_460_gavv_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_gavv_items.png"))
                     .title(Component.literal("Gavv Rider Items")).build());
 
 
-    public static RegistryObject<CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.GHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_g_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.GHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_g_items.png"))
                     .title(Component.literal("G Rider Items")).build());
-    public static RegistryObject<CreativeModeTab> GoriderTab = CREATIVE_MODE_TABS.register("krc_810_gorider_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.AKARIDERHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_gorider_items.png"))
+
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GoriderTab = CREATIVE_MODE_TABS.register("krc_810_gorider_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.AKARIDERHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_gorider_items.png"))
                     .title(Component.literal("Gorider Rider Items")).build());
 
-    public static RegistryObject<CreativeModeTab> RideKamensTab = CREATIVE_MODE_TABS.register("krc_830_ride_kamens_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.RIDE_KAMENS_HELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_ride_kamens_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> RideKamensTab = CREATIVE_MODE_TABS.register("krc_830_ride_kamens_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.RIDE_KAMENS_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ride_kamens_items.png"))
                     .title(Component.literal("Ride Kamens Rider Items")).build());
 
-    public static RegistryObject<CreativeModeTab> AMAZONSTab = CREATIVE_MODE_TABS.register("krc_041_amazons_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.AMAZONSHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_amazons_items.png"))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMAZONSTab = CREATIVE_MODE_TABS.register("krc_041_amazons_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.AMAZONSHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_amazons_items.png"))
                     .title(Component.literal("Amazons Rider Items")).build());
-    public static RegistryObject<CreativeModeTab> BLACKSUNTab = CREATIVE_MODE_TABS.register("krc_102_black_sun_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.BLACKSUNHELMET.get())).withBackgroundLocation(new ResourceLocation(KamenRiderCraftCore.MODID+"textures/gui/tab_black_sun_items.png"))
+
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> BLACKSUNTab = CREATIVE_MODE_TABS.register("krc_102_black_sun_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Reboot_Rider_Items.BLACKSUNHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_black_sun_items.png"))
                     .title(Component.literal("Black Sun Rider Items")).build());
-**/
+
     public static List<Item> ICHIGO_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Item> V3_TAB_ITEM= new ArrayList<Item>();
@@ -186,7 +189,7 @@ public class RiderTabs {
     public static List<Item> DEN_O_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> KIVA_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> DECADE_TAB_ITEM= new ArrayList<Item>();
-    /**
+
      public static List<Item> W_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
 
@@ -202,7 +205,7 @@ public class RiderTabs {
     public static List<Item> RIDE_KAMENS_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> AMAZONS_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> BLACK_SUN_TAB_ITEM= new ArrayList<Item>();
-**/
+
     public static List<Block> RIDER_BLOCK= new ArrayList<Block>();
 
 
@@ -338,11 +341,10 @@ public class RiderTabs {
                 event.accept( RiderTabs.KIVA_TAB_ITEM.get(i));
             }
         }else if(event.getTab() == RiderTabs.DecadeTab.get()) {
-            for (int i = 0; i < RiderTabs.DECADE_TAB_ITEM.size(); i++)
-            {
-                event.accept( RiderTabs.DECADE_TAB_ITEM.get(i));
+            for (int i = 0; i < RiderTabs.DECADE_TAB_ITEM.size(); i++) {
+                event.accept(RiderTabs.DECADE_TAB_ITEM.get(i));
             }
-            /**
+/**
         }else if(event.getTab() == RiderTabs.WTab.get()) {
             for (int i = 0; i < RiderTabs.W_TAB_ITEM.size(); i++)
             {
@@ -354,7 +356,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.OOO_TAB_ITEM.get(i));
             }
-
+**/
         }else if(event.getTab() == RiderTabs.EX_AIDTab.get()) {
             for (int i = 0; i < RiderTabs.EX_AID_TAB_ITEM.size(); i++)
             {
@@ -366,7 +368,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.ZERO_ONE_TAB_ITEM.get(i));
             }
-
+/**
         }else if(event.getTab() == RiderTabs.GeatsTab.get()) {
             for (int i = 0; i < RiderTabs.GEATS_TAB_ITEM.size(); i++)
             {
@@ -378,7 +380,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.GOTCHARD_TAB_ITEM.get(i));
             }
-
+**/
         }else if(event.getTab() == RiderTabs.GavvTab.get()) {
             for (int i = 0; i < RiderTabs.GAVV_TAB_ITEM.size(); i++)
             {
@@ -414,7 +416,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.RIDE_KAMENS_TAB_ITEM.get(i));
             }
-             **/
+
         }else if(event.getTab() == RiderTabs.RiderblockTab.get()) {
             for (int i = 0; i < RiderTabs.RIDER_BLOCK.size(); i++)
             {
