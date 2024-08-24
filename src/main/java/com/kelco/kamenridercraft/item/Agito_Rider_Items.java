@@ -18,7 +18,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Agito_Rider_Items {
 
-	public static final net.neoforged.neoforge.registries.DeferredRegister.Items ITEMS = net.neoforged.neoforge.registries.DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
+	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> AGITO_LOGO = ITEMS.register("agito_logo",
     		() -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM));

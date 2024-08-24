@@ -5,6 +5,9 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import java.util.List;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
+import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
@@ -34,6 +37,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RenderLivingEvent;
 import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
@@ -346,12 +350,15 @@ public class ModCommonEvents {
 			}
 		}
 	}
-
+**/
+	/**
 	@SubscribeEvent
 	public static void entitySpawnRestriction(SpawnPlacementRegisterEvent event) {
 
-		event.register(MobsCore.SHOCKER_COMBATMAN.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);	      
+		event.register(MobsCore.SHOCKER_COMBATMAN.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+
 		event.register(MobsCore.DESTRON_COMBATMAN.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+
 		event.register(MobsCore.GOD_WARFARE_AGENT.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
 		event.register(MobsCore.RED_FOLLWER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
 		event.register(MobsCore.BLACK_SATAN_SOLDIER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
@@ -393,14 +400,16 @@ public class ModCommonEvents {
 
 		
 		event.register(MobsCore.ANKH.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, AnkhEntity::checkAnkhSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
-
 	}
+	 **/
+
+
 
 	@SubscribeEvent
 	public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
 		event.put(MobsCore.SHOCKER_COMBATMAN.get(), ShockerCombatmanEntity.setAttributes());
 		event.put(MobsCore.SHOCKER_RIDER.get(), ShockerRidersEntity.setAttributes());
-
+/**
 		event.put(MobsCore.DESTRON_COMBATMAN.get(), DestronCombatmanEntity.setAttributes());
 		event.put(MobsCore.GOD_WARFARE_AGENT.get(), GODWarfareAgentEntity.setAttributes());
 		event.put(MobsCore.RED_FOLLWER.get(), RedFollowerEntity.setAttributes());
@@ -513,8 +522,8 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes());
-
-	}
 **/
+	}
+
 
 }
