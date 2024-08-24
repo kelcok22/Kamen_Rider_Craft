@@ -41,7 +41,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
         super(material, ArmorItem.Type.BOOTS, properties);
-
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -54,9 +53,6 @@ public class RiderDriverItem extends RiderArmorItem {
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider,DeferredItem<Item> baseFormItem,DeferredItem<Item> armorFormItem,DeferredItem<Item> head,DeferredItem<Item>torso,DeferredItem<Item> legs, Properties properties)
     {
         super(material, ArmorItem.Type.BOOTS, properties);
-
-
-
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)armorFormItem.get());
@@ -185,7 +181,7 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         if (itemstack.getItem() instanceof RiderDriverItem) {
             CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-            ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT);
+            ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT,tag);
             tag.putString("slot_tex"+SLOT, ITEM.toString());
             tag.putBoolean("Update_form", true);
         }
@@ -194,7 +190,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
 
-    public void Extra_set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT)
+    public void Extra_set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT,CompoundTag  tag)
     {
     }
 

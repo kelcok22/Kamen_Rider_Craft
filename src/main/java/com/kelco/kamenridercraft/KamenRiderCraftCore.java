@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.*;
@@ -80,17 +81,18 @@ public class KamenRiderCraftCore
         Den_O_Rider_Items.register(modEventBus);
         Kiva_Rider_Items.register(modEventBus);
         Decade_Rider_Items.register(modEventBus);
-        //W_Rider_Items.register(modEventBus);
-       // OOO_Rider_Items.register(modEventBus);
+        W_Rider_Items.register(modEventBus);
+        OOO_Rider_Items.register(modEventBus);
         Ex_Aid_Rider_Items.register(modEventBus);
         Zero_One_Rider_Items.register(modEventBus);
-        //Geats_Rider_Items.register(modEventBus);
-        //Gotchard_Rider_Items.register(modEventBus);
+        Geats_Rider_Items.register(modEventBus);
+        Gotchard_Rider_Items.register(modEventBus);
         Gavv_Rider_Items.register(modEventBus);
         Reboot_Rider_Items.register(modEventBus);
         Miscellaneous_Rider_Items.register(modEventBus);
         Rider_Blocks.register(modEventBus);
-
+        MobsCore.register(modEventBus);
+        MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
 
         // Register the item to a creative tab
@@ -159,12 +161,12 @@ public class KamenRiderCraftCore
                         }
                 );
             }
-/**
+
 
 
  for (int i = 0; i < RAISE_RISER_ITEM.size(); i++)
  {
- ItemProperties.register(RAISE_RISER_ITEM.get(i), new ResourceLocation("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+ ItemProperties.register(RAISE_RISER_ITEM.get(i), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
  if (p_174637_ == null) {
  return 0.0F;
  }
@@ -185,7 +187,7 @@ public class KamenRiderCraftCore
  );
  }
 
- **/
+
 
                 for (int i = 0; i < SWORD_GUN_ITEM.size(); i++)
                 {
@@ -206,10 +208,10 @@ public class KamenRiderCraftCore
 
                     });
                 }
-                /**
+
                  for (int i = 0; i < DARK_SHIELD_ITEM.size(); i++)
                  {
-                 ItemProperties.register(DARK_SHIELD_ITEM.get(i), new ResourceLocation("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                 ItemProperties.register(DARK_SHIELD_ITEM.get(i), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                  if (p_174637_ == null) {
                  return 0.0F;
                  }
@@ -224,8 +226,8 @@ public class KamenRiderCraftCore
 
                  });
                  }
-                 });
-                 **/
+
+
         }
     }
 }
