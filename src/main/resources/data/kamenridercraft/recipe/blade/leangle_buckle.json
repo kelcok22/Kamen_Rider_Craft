@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "leangle",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:bladecard"
+	}, "C": {
+	  "item": "kamenridercraft:change_spider"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:leangle_buckle"
+  }
+}
