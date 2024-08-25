@@ -235,7 +235,6 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
                     .AddCompatibilityList(new String[] {"tackle"}).AddToTabList(RiderTabs.X_TAB_ITEM));
 
-
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
     public static final DeferredItem<Item> XCHESTPLATE = ITEMS.register("xtroso",
