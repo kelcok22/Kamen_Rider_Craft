@@ -131,7 +131,7 @@ public class Rider_Blocks {
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-/**
+
 	public static final DeferredBlock<Block>  GAIA_MEMORY_REFINER = registerBlock("gaia_memory_refiner",
 			() -> new GaiaMemoryRefinerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -139,7 +139,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> CELL_MEDAL_PROGRAMER = registerBlock("cell_medal_programer",
 			() -> new CellMedalProgramer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	**/
+
 	public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
 			() -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
