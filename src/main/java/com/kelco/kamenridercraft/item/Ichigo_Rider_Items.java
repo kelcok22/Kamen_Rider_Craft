@@ -230,7 +230,7 @@ public class Ichigo_Rider_Items {
                     .AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> PREFECTER = ITEMS.register("perfecter",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_perfector","riderman","ridol_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_perfector","riderman","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
                     .AddCompatibilityList(new String[] {"tackle"}).AddToTabList(RiderTabs.X_TAB_ITEM));

@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.events.ModClientEvents;
 
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.geats.DesireDriverItem;
@@ -13,16 +12,12 @@ import com.kelco.kamenridercraft.item.geats.FeverSlotItem;
 import com.kelco.kamenridercraft.item.geats.LaserRaiseRiserItem;
 import com.kelco.kamenridercraft.item.geats.MissionBoxItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import net.minecraft.client.gui.font.glyphs.BakedGlyph.Effect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShieldItem;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -44,6 +39,7 @@ public class Geats_Rider_Items {
 		    () -> new MissionBoxItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 	public static final DeferredItem<Item> HATENA_MISSION_BOX = ITEMS.register("hatena_mission_box",
 		    () -> new MissionBoxItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+
 	public static final DeferredItem<Item> SUPPORT_MISSION_BOX_TYPE_GEATS = ITEMS.register("gigant_mission_box",
 		    () -> new MissionBoxItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
