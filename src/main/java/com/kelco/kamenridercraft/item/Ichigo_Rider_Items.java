@@ -219,7 +219,6 @@ public class Ichigo_Rider_Items {
                     .Override_belt_text("dark_riderman_belt").AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     //X
-
     public static final DeferredItem<Item> X_LOGO = ITEMS.register("x_logo",
             () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
 
