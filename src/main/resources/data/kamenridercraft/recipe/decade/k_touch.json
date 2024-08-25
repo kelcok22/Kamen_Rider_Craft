@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "decade_complete",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kuuga_ultimate_card"
+	}, 
+	{
+	  "item": "kamenridercraft:agito_shining_card"
+	}, 
+	{
+	  "item": "kamenridercraft:ryuki_survive_card"
+	}, 
+	{
+	  "item": "kamenridercraft:faiz_blaster_card"
+	}, 
+	{
+	  "item": "kamenridercraft:blade_king_card"
+	}, 
+	{
+	  "item": "kamenridercraft:armed_hibiki_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kabuto_hyper_card"
+	}, 
+	{
+	  "item": "kamenridercraft:den_o_liner_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kiva_emperor_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:k_touch"
+  }
+}

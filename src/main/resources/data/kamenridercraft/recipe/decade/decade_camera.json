@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kr_decade",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kuuga_growing"
+	}, 
+	{
+	  "item": "kamenridercraft:agito_of_seed"
+	}, 
+	{
+	  "item": "kamenridercraft:advent_card"
+	}, 
+	{
+	  "item": "kamenridercraft:blank_mission_memory"
+	}, 
+	{
+	  "item": "kamenridercraft:bladecard"
+	}, 
+	{
+	  "item": "kamenridercraft:oni_ore"
+	}, 
+	{
+	  "item": "kamenridercraft:mini_zecter"
+	}, 
+	{
+	  "item": "kamenridercraft:imagin_sand"
+	}, 
+	{
+	  "item": "kamenridercraft:fuestle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:decade_camera"
+  }
+}

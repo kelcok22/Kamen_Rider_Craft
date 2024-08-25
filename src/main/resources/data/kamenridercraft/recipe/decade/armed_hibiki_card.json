@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:hibiki_card"
+	}, 
+	{
+	  "item": "kamenridercraft:armed_saber"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:armed_hibiki_card"
+  }
+}

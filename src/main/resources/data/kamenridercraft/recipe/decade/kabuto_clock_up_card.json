@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "attack_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kabuto_rider_card"
+	}, 
+	{
+	  "item": "minecraft:iron_block"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kabuto_clock_up_card"
+  }
+}

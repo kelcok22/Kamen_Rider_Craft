@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_card"
+	}, 
+	{
+	  "item": "kamenridercraft:cyclode_core"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:super_1_card"
+  }
+}

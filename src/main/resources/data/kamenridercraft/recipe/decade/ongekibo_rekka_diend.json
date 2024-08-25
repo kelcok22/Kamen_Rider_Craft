@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "diend",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ongekibo_rekka"
+	}, 
+	{
+	  "item": "kamenridercraft:diend_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ongekibo_rekka_diend"
+  }
+}

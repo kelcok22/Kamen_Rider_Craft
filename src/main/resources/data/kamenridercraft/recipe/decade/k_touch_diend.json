@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "decade_complete",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:g4_card"
+	}, 
+	{
+	  "item": "kamenridercraft:ryuga_card"
+	}, 
+	{
+	  "item": "kamenridercraft:orga_card"
+	}, 
+	{
+	  "item": "kamenridercraft:glaive_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kabuki_card"
+	}, 
+	{
+	  "item": "kamenridercraft:caucasus_card"
+	}, 
+	{
+	  "item": "kamenridercraft:arc_card"
+	}, 
+	{
+	  "item": "kamenridercraft:skull_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:k_touch_diend"
+  }
+}

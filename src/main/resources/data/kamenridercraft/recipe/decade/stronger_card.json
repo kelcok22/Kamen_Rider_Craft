@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_card"
+	}, 
+	{
+	  "item": "kamenridercraft:electrer_core"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:stronger_card"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:faiz_card"
+	}, 
+	{
+	  "item": "kamenridercraft:faiz_axel_mission_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:faiz_axel_card"
+  }
+}

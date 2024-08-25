@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "decade",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ongekibo_rekka"
+	}, 
+	{
+	  "item": "kamenridercraft:decade_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ongekibo_rekka_decade"
+  }
+}

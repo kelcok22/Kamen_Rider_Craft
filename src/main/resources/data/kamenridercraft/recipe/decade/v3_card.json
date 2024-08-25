@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_card"
+	}, 
+	{
+	  "item": "kamenridercraft:double_typhoon_core"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:v3_card"
+  }
+}

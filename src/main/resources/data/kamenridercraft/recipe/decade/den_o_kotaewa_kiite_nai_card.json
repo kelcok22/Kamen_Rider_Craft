@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "attack_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:den_o_gun_card"
+	}, 
+	{
+	  "item": "kamenridercraft:rider_ticket_gun"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:den_o_kotaewa_kiite_nai_card"
+  }
+}

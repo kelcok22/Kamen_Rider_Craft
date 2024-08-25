@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:agito_ground_card"
+	}, 
+	{
+	  "item": "kamenridercraft:agito_burning"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:agito_burning_card"
+  }
+}

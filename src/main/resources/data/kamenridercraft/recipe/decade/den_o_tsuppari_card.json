@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "attack_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:den_o_ax_card"
+	}, 
+	{
+	  "item": "minecraft:blaze_powder"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:den_o_tsuppari_card"
+  }
+}

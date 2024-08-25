@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:hibiki_card"
+	}, 
+	{
+	  "item": "kamenridercraft:henshin_onsa_kurenai"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:hibiki_kurenai_card"
+  }
+}
