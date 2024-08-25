@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kabuto_rider_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kabuto_zecter"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kabuto_masked_card"
+  }
+}

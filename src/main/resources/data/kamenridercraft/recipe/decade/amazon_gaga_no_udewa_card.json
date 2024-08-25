@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "attack_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:amazon_card"
+	}, 
+	{
+	  "item": "minecraft:gold_ingot"
+	}, 
+	{
+	  "item": "minecraft:gold_ingot"
+	}, 
+	{
+	  "item": "minecraft:gold_ingot"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:amazon_gaga_no_udewa_card"
+  }
+}

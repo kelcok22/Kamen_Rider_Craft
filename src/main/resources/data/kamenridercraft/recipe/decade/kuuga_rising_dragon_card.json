@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:kuuga_mighty_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kuuga_rising_dragon"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kuuga_rising_dragon_card"
+  }
+}

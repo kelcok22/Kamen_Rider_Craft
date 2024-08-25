@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ryuki_card"
+	}, 
+	{
+	  "item": "kamenridercraft:advent_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ryuki_blank_card"
+  }
+}

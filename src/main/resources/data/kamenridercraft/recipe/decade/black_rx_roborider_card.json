@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:black_rx_card"
+	}, 
+	{
+	  "item": "kamenridercraft:robo_core"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:black_rx_roborider_card"
+  }
+}

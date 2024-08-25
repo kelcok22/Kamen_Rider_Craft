@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kr_decade",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_card"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:decadehead"
+  }
+}

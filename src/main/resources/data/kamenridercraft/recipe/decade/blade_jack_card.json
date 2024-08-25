@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blade_ace_card"
+	}, 
+	{
+	  "item": "kamenridercraft:fusion_eagle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:blade_jack_card"
+  }
+}
