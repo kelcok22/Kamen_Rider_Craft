@@ -1,0 +1,22 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "heat_heaven",
+  "ingredients": [
+	{ 
+	  "item": "minecraft:rotten_flesh"
+	},
+	{ 
+	  "item": "minecraft:rotten_flesh"
+	},
+	{ 
+	  "item": "minecraft:rotten_flesh"
+	}, 
+	{
+	  "item": "kamenridercraft:creation_king_extract_vial"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:heat_heaven"
+  }
+}
