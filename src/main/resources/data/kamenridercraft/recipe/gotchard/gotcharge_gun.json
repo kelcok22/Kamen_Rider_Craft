@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gotchard",
+  "pattern": [
+	"XTX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"T": {
+	  "item": "kamenridercraft:hopper1_ride_chemy_card"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:gotcharge_gun"
+  }	
+}
+
