@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gashat",
+  "ingredients": [
+	{ 
+	  "tag": "kamenridercraft:gear/energy_items"
+	}, 
+	{
+	  "tag": "kamenridercraft:gear/energy_items"
+	} , 
+	{
+	  "tag": "kamenridercraft:gear/energy_items"
+	} , 
+	{
+	  "tag": "kamenridercraft:gear/energy_items"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:energy_item_holder"
+  }
+}
