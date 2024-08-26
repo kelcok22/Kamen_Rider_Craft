@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "valvarad",
+  "pattern": [
+	"XXX",
+	"XSX",
+	"XTX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"T": {
+	  "item": "kamenridercraft:madwheel_ride_chemy_card"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:chemy_riser_supana"
+  }	
+}
+
