@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco_gaoh",
+  "pattern": [
+    "###",
+    "#d#",
+    "###"
+  ],
+  "key": {
+    "#": {
+	  "item": "kamenridercraft:denliner_matel_dark"
+    },
+	"d": {
+	  "item": "minecraft:lime_stained_glass_pane"
+	}
+  },
+  "result": {
+    "id": "kamenridercraft:gaoh_liner_windo",
+	"count": 8
+  }
+}

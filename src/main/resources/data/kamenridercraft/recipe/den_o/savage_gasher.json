@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "yuuki",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:imagin_sand"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:rider_ticket_yuuki"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:savage_gasher"
+  }    
+}
+

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "negataros",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XCX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:imagin_sand"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:rider_ticket_rod"
+    },
+    "C": {
+      "item": "kamenridercraft:rider_ticket_nega"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:nega_uratarod"
+  }    
+}
+

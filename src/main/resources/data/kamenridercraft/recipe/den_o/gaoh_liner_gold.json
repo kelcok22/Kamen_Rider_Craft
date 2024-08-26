@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco_gaoh",
+  "pattern": [
+    "RIR",
+    "IGI",
+    "RIR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:iron_ingot"
+    }, "I": {
+      "item": "kamenridercraft:imagin_sand"
+    }, "G": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:gaoh_liner_gold"
+  }
+}

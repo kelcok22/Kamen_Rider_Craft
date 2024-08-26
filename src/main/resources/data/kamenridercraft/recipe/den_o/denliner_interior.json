@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco",
+  "pattern": [
+    "RIR",
+    "IGI",
+    "RIR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:iron_ingot"
+    }, "I": {
+      "item": "kamenridercraft:imagin_sand"
+    }, "G": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:denliner_interior"
+  }
+}
