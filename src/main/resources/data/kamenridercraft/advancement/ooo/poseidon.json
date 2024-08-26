@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:poseidon_boss_block"
+	},
+	"title": "Beg for my life? Yeah, right",
+	"description": "Defeat Kamen Rider Poseidon",
+	"frame": "challenge",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/core",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:poseidon"
+		}
+	  }
+	}
+  }
+}

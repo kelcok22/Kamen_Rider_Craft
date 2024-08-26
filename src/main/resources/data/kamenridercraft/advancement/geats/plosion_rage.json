@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+  	"id": "kamenridercraft:plosion_rage_raise_buckle"
+    },
+    "title": "CREATORs",
+    "description": "Transform into Buffa Plosion Rage",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:geats/jyamashin",
+  "criteria": {
+    "requirement": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_buffa"
+  			],
+  		  "nbt": "{slot_tex3:\"plosion_rage_raise_buckle\"}"
+  		  }
+  		}
+  	  }
+  	}
+    }
+  }
+}

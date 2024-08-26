@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:j_spirit"
+	},
+	"title": "The Grasshopper Talks",
+	"description": "Transform into Kamen Rider J",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/zo",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:jhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:jtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:jlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:j_spirit"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

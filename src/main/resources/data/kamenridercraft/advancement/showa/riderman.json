@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:riderman_belt"
+	},
+	"title": "Demon of Vengeance",
+	"description": "Transform into Riderman",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/v3",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:v3head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:v3troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:v3legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:riderman_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

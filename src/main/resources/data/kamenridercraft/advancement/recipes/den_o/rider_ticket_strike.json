@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rider_ticket_strike"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/new_den_o_belt",
+	  "kamenridercraft:den_o/momotaken",
+	  "kamenridercraft:den_o/uratazao",
+	  "kamenridercraft:den_o/kintaono",
+	  "kamenridercraft:den_o/macheteddy"
+	]
+  },
+  "sends_telemetry_event": false
+}

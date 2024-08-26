@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:typhoon_ichigo"
+	},
+	"title": "If There Is No God or Buddha…",
+	"description": "Transform into Kamen Rider Nigo",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/ichigo",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ichigohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ichigotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ichigolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:typhoon_nigo"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

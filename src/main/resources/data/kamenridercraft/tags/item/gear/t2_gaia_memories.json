@@ -1,0 +1,30 @@
+{
+  "values": [
+	"kamenridercraft:accel_t2_memory",
+	"kamenridercraft:bird_t2_memory",
+	"kamenridercraft:cyclone_t2_memory",
+	"kamenridercraft:dummy_t2_memory",
+	"kamenridercraft:eternal_t2_memory",
+	"kamenridercraft:fang_t2_memory",
+	"kamenridercraft:gene_t2_memory",
+	"kamenridercraft:heat_t2_memory",
+	"kamenridercraft:iceage_t2_memory",
+	"kamenridercraft:joker_t2_memory",
+	"kamenridercraft:key_t2_memory",
+	"kamenridercraft:luna_t2_memory",
+	"kamenridercraft:metal_t2_memory",
+	"kamenridercraft:nasca_t2_memory",
+	"kamenridercraft:ocean_t2_memory",
+	"kamenridercraft:puppeteer_t2_memory",
+	"kamenridercraft:queen_t2_memory",
+	"kamenridercraft:rocket_t2_memory",
+	"kamenridercraft:skull_t2_memory",
+	"kamenridercraft:trigger_t2_memory",
+	"kamenridercraft:unicorn_t2_memory",
+	"kamenridercraft:violence_t2_memory",
+	"kamenridercraft:weather_t2_memory",
+	"kamenridercraft:xtreme_t2_memory",
+	"kamenridercraft:yesterday_t2_memory",
+	"kamenridercraft:zone_t2_memory"
+  ]
+}

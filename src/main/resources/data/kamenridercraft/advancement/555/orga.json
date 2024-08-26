@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:orga_driver"
+	},
+	"title": "A dream is the same as a curse.",
+	"description": "Transform into Kamen Rider Orga",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:555/psyga",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:faizhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:faiztroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:faizlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:orga_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kuuga_rising_mighty"
+	},
+	"title": "Rising your power to Gold",
+	"description": "Access all of Kuuga's Rising forms",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kuuga/kuuga",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ],
+			  "nbt": "{slot_tex1:\"kuuga_rising_mighty\"}"
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ],
+			  "nbt": "{slot_tex1:\"kuuga_rising_dragon\"}"
+			}
+		  }
+		}
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ],
+			  "nbt": "{slot_tex1:\"kuuga_rising_pegasus\"}"
+			}
+		  }
+		}
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ],
+			  "nbt": "{slot_tex1:\"kuuga_rising_titan\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

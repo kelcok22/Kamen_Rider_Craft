@@ -1,0 +1,79 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:faiz_blaster_mission_memory"
+	},
+	"title": "Eyes Glazing Over",
+	"description": "Transform into Faiz Blaster Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:555/faiz_axel",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:faiz_driver"
+					  ],
+					  "nbt": "{slot_tex1:\"faiz_blaster_mission_memory\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:faiz_driver"
+					  ],
+					  "nbt": "{slot_tex1:\"faiz_gold_blaster_mission_memory\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:faizhead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:faiztroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:faizlegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:king_stone_moon"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:black_sun/century_king_moon_driver",
+	  "kamenridercraft:black_sun/century_king_shadow_blade",
+	  "kamenridercraft:black_sun/satansabre"
+	]
+  },
+  "sends_telemetry_event": false
+}

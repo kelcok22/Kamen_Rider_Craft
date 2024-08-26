@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:k_touch_diend"
+	},
+	"title": "Treasure Sniper",
+	"description": "Transform into Diend Complete Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:decade/diend",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:decadehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:decadetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:decadelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:diend_belt"
+			  ],
+			  "nbt": "{slot_tex1:\"k_touch_diend\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

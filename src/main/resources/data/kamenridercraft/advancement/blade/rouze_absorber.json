@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:rouze_absorber"
+	},
+	"title": "Wanna Be Stronger",
+	"description": "Obtain the Rouze Absorber",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:blade/blade",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rouze_absorber"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

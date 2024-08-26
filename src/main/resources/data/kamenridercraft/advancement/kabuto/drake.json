@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:drake_zecter"
+	},
+	"title": "Change Dragonfly",
+	"description": "Transform into Kamen Rider Drake",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kabuto/thebee",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kabutohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kabutotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kabutolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:drake_rider_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

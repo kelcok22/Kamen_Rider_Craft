@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:k_touch"
+	},
+	"title": "Ride the Wind",
+	"description": "Transform into Decade Complete Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:decade/faiz_axel",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:decadehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:decadetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:decadelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:decadriver"
+			  ],
+			  "nbt": "{slot_tex1:\"k_touch\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

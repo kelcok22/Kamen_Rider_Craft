@@ -65,6 +65,10 @@ public class BaseBlasterItem extends BowItem {
 
 					List<ItemStack> list = draw(stack, itemstack, player);
 					if (level instanceof ServerLevel) {
+						if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
+							player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
+							if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem) player.getItemBySlot(EquipmentSlot.OFFHAND).getItem().use(level, player, InteractionHand.OFF_HAND);
+						}
 						ServerLevel serverlevel = (ServerLevel)level;
 						if (!list.isEmpty()) {
 

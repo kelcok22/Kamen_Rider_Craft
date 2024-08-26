@@ -1,0 +1,29 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:basshaamagnum"
+	},
+	"title": "Innocent Trap",
+	"description": "Obtain the Basshaa Magnum",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kiva/garulu_saber",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [],
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:basshaamagnum"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

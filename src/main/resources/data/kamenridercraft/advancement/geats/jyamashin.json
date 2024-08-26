@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+  	"id": "kamenridercraft:jyamashin_wish_card"
+    },
+    "title": "Even if I die...I will crush you!",
+    "description": "Transform into Buffa Fever Zombie Form (Jyamashin)",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:geats/buffa",
+  "criteria": {
+    "requirement": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_buffa"
+  			],
+  		  "nbt": "{slot_tex1:\"jyamashin_wish_card\",slot_tex2:\"zombie_raise_buckle_fever\",slot_tex3:\"zombie_raise_buckle\"}"
+  		  }
+  		}
+  	  }
+  	}
+    }
+  }
+}

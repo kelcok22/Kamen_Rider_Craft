@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kabuto_rider_belt"
+	},
+	"title": "My grandma told me this...",
+	"description": "Transform into Kamen Rider Kabuto",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kabutohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kabutotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kabutolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:kabuto_rider_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

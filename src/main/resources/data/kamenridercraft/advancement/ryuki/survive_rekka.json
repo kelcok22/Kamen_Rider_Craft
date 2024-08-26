@@ -1,0 +1,79 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:survive_rekka"
+	},
+	"title": "revolution",
+	"description": "Transform into Ryuki or Ryuga Survive",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ryuki/ryuki",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_ryuki"
+					  ],
+					  "nbt": "{slot_tex1:\"survive_rekka\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_ryuga"
+					  ],
+					  "nbt": "{slot_tex1:\"survive_rekka_ryuga\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:ryukihead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:ryukitroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:ryukilegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

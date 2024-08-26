@@ -1,0 +1,23 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:rider_pass"
+	  },
+	  "title": "I've decided... I will be strong",
+	  "description": "Enter the Sands of Time",
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:root",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:changed_dimension",
+		"conditions": {
+		  "to": "kamenridercraft:sands_of_time"
+		}
+	  }
+	}
+  }
+  

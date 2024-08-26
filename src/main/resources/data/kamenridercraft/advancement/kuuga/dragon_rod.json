@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:dragon_rod"
+	},
+	"title": "Splash Dragon",
+	"description": "Obtain the Dragon Rod",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kuuga/kuuga",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:dragon_rod"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

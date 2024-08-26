@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hopper1_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gotchard/gotchardriver",
+	  "kamenridercraft:gotchard/gotchard_logo",
+	  "kamenridercraft:gotchard/gotcharge_gun",
+	  "kamenridercraft:gotchard/chemy_riser"
+	]
+  },
+  "sends_telemetry_event": false
+}

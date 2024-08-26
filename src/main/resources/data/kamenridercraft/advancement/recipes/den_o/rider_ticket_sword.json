@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rider_ticket_sword"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/den_o_logo",
+	  "kamenridercraft:den_o/pretty_den_o_belt",
+	  "kamenridercraft:den_o/den_gasher_sword",
+	  "kamenridercraft:den_o/momotarosword",
+	  "kamenridercraft:den_o/ktaros",
+	  "kamenridercraft:ooo/imagin_medal",
+	  "kamenridercraft:geats/den_o_belt_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

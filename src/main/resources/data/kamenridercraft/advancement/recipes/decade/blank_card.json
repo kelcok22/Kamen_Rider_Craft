@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:blank_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/decadehead",
+	  "kamenridercraft:decade/decadetroso",
+	  "kamenridercraft:decade/decadelegs",
+	  "kamenridercraft:decade/kuuga_mighty_card",
+	  "kamenridercraft:decade/agito_ground_card",
+	  "kamenridercraft:decade/ryuki_card",
+	  "kamenridercraft:decade/faiz_card",
+	  "kamenridercraft:decade/blade_ace_card",
+	  "kamenridercraft:decade/hibiki_card",
+	  "kamenridercraft:decade/kabuto_rider_card",
+	  "kamenridercraft:decade/den_o_sword_card",
+	  "kamenridercraft:decade/kiva_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

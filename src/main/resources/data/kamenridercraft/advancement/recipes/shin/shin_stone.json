@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:shin_stone"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:shin/shinhead",
+	  "kamenridercraft:shin/shintroso",
+	  "kamenridercraft:shin/shinlegs",
+	  "kamenridercraft:shin/grasshopper_dna",
+	  "kamenridercraft:shin/shin_logo",
+	  "kamenridercraft:decade/shin_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

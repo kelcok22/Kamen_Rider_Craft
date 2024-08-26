@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:goukidriver"
+	},
+	"title": "Manly Demon",
+	"description": "Transform into Kamen Rider Gouki",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:hibiki/eiki",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:hibikihead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:hibikitroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:hibikilegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:goukidriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

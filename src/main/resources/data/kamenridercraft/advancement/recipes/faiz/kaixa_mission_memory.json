@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kaixa_mission_memory"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:faiz/kaixa_driver",
+	  "kamenridercraft:faiz/kaixa_phone",
+	  "kamenridercraft:faiz/kaixa_blaygun",
+	  "kamenridercraft:faiz/kaixa_shot"
+	]
+  },
+  "sends_telemetry_event": false
+}

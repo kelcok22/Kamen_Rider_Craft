@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ancient_ooo_boss_block"
+	},
+	"title": "Out with the Old",
+	"description": "Defeat Ancient OOO",
+	"frame": "challenge",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/poseidon",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:ancient_ooo"
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:contract_chaostone"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:ride_kamens/ride_kamens_head",
+	  "kamenridercraft:ride_kamens/ride_kamens_troso",
+	  "kamenridercraft:ride_kamens/ride_kamens_legs",
+	  "kamenridercraft:ride_kamens/gasha_tickt",
+	  "kamenridercraft:ride_kamens/kamen_cafe_counter"
+	]
+  },
+  "sends_telemetry_event": false
+}

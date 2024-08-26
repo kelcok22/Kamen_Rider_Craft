@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:agito_shining"
+	},
+	"title": "DEEP BREATH",
+	"description": "Transform into Agito Shining Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/agito_trinity",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:agitohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:agitotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:agitolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:alter_ring"
+			  ],
+			  "nbt": "{slot_tex1:\"agito_shining\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

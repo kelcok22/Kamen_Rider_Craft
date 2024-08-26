@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:meta_factor"
+	},
+	"title": "RAAAAAAHHHHHHHHH",
+	"description": "Transform into Kamen Rider Gills",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/g3",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:agitohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:agitotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:agitolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:meta_factor"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

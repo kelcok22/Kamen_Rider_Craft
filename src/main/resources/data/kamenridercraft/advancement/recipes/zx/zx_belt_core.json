@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:zx_belt_core"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:zx/zx_head",
+	  "kamenridercraft:zx/zx_troso",
+	  "kamenridercraft:zx/zx_legs",
+	  "kamenridercraft:zx/zx_belt",
+	  "kamenridercraft:zx/zx_logo",
+	  "kamenridercraft:decade/zx_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

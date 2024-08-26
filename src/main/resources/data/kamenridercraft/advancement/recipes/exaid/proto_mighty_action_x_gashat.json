@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:proto_mighty_action_x_gashat"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:exaid/gamer_driver_genmu",
+	  "kamenridercraft:exaid/proto_mighty_action_x_gashat_origin"
+	]
+  },
+  "sends_telemetry_event": false
+}

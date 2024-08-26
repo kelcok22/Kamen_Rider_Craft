@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:providence_card_gazer"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:geats/vision_driver_gazer",
+	  "kamenridercraft:geats/vision_driver_gazer_suel",
+	  "kamenridercraft:geats/vision_driver_jyamato_glare"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:hyper_fumetsu_gashat"
+	},
+	"title": "The Ultimate Cheat Game",
+	"description": "Transform into Genm Hyper Fumetsu Gamer",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ex-aid/genm_musou",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ex_aidhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ex_aidtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ex_aidlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gamer_driver_genmu"
+			  ],
+			  "nbt": "{slot_tex1:\"hyper_fumetsu_gashat\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

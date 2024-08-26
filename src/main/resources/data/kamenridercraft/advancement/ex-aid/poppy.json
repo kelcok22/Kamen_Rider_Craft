@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:gashacon_bugvisor_ii_poppy"
+	},
+	"title": "People Game",
+	"description": "Transform into Kamen Rider Poppy",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ex-aid/genm",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ex_aidhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ex_aidtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ex_aidlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gashacon_bugvisor_ii_poppy"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -2,8 +2,10 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.Entity;
@@ -180,10 +182,17 @@ public class RiderDriverItem extends RiderArmorItem {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemstack.getItem() instanceof RiderDriverItem) {
-            CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            CompoundTag  tag = new CompoundTag();
+            Consumer<CompoundTag> data = form ->
+            {
+                form.putString("slot_tex"+SLOT, ITEM.toString());
+			    form.putInt("slot"+SLOT, Item.getId(ITEM));
+                form.putBoolean("Update_form", true);
+            };
+
+            data.accept(tag);
             ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT,tag);
-            tag.putString("slot_tex"+SLOT, ITEM.toString());
-            tag.putBoolean("Update_form", true);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
     }
 

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:double_typhoon_core"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:v3/v3head",
+	  "kamenridercraft:v3/v3troso",
+	  "kamenridercraft:v3/v3legs",
+	  "kamenridercraft:v3/double_typhoon",
+	  "kamenridercraft:v3/v3_logo",
+	  "kamenridercraft:decade/v3_card",
+	  "kamenridercraft:geats/double_typhoon_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

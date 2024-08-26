@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:decade_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/decade_logo",
+	  "kamenridercraft:decade/decadriver",
+	  "kamenridercraft:decade/ride_booker",
+	  "kamenridercraft:decade/decade_bazooka",
+	  "kamenridercraft:geats/deca_driver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:titan_sword"
+	},
+	"title": "Calamity Titan",
+	"description": "Obtain the Titan Sword",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kuuga/pegasus_bowgun",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:titan_sword"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

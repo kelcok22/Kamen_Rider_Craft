@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:acceldriver"
+	},
+	"title": "Do Not Question Me",
+	"description": "Transform into Kamen Rider Accel",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:w/double",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:whead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:acceldriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

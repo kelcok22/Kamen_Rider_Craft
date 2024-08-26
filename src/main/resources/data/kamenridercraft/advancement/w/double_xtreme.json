@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:xtreme_memory"
+	},
+	"title": "The Ultimate W",
+	"description": "Transform into Double CycloneJokerXtreme",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:w/double_fang",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:whead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:wdriver"
+			  ],
+			  "nbt": "{slot_tex1:\"xtreme_memory\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

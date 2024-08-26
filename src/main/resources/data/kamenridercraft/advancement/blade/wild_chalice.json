@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:evolution_paradoxa"
+	},
+	"title": "take it a try",
+	"description": "Transform into Wild Chalice",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:blade/chalice",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:bladehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:bladetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:bladelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:chalice_rouzer"
+			  ],
+			  "nbt": "{slot_tex1:\"evolution_paradoxa\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

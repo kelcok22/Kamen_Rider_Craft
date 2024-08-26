@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:birth_driver"
+	},
+	"title": "Reverse/Re:birth",
+	"description": "Transform into Kamen Rider Birth",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/ooo",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ooohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:oootroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ooolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:birth_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

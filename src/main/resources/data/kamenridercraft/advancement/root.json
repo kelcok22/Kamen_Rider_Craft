@@ -1,0 +1,19 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kamen_rider_logo"
+	},
+	"title": "Kamen Rider Craft",
+	"description": "This is the moment where your story begins!",
+	"background": "kamenridercraft:textures/block/zero_liner_green.png",
+	"frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": false
+  },
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:tick"
+	}
+  }
+}

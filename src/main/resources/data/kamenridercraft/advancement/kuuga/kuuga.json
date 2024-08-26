@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:arcle"
+	},
+	"title": "Please Watch My Henshin!",
+	"description": "Transform into Kamen Rider Kuuga",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

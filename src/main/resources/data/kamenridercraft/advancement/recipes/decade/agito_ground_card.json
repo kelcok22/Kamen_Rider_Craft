@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:agito_ground_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/agito_storm_card",
+	  "kamenridercraft:decade/agito_flame_card",
+	  "kamenridercraft:decade/agito_trinity_card",
+	  "kamenridercraft:decade/agito_burning_card",
+	  "kamenridercraft:decade/agito_shining_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

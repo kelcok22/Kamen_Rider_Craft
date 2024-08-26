@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:tornado_core"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:skyrider/skyriderhead",
+	  "kamenridercraft:skyrider/skyridertroso",
+	  "kamenridercraft:skyrider/skyriderlegs",
+	  "kamenridercraft:skyrider/tornado",
+	  "kamenridercraft:skyrider/skyrider_logo",
+	  "kamenridercraft:decade/skyrider_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kuuga_mighty_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/kuuga_growing_card",
+	  "kamenridercraft:decade/kuuga_dragon_card",
+	  "kamenridercraft:decade/kuuga_pegasus_card",
+	  "kamenridercraft:decade/kuuga_titan_card",
+	  "kamenridercraft:decade/kuuga_rising_mighty_card",
+	  "kamenridercraft:decade/kuuga_rising_dragon_card",
+	  "kamenridercraft:decade/kuuga_rising_pegasus_card",
+	  "kamenridercraft:decade/kuuga_rising_titan_card",
+	  "kamenridercraft:decade/kuuga_amazing_mighty_card",
+	  "kamenridercraft:decade/kuuga_ultimate_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

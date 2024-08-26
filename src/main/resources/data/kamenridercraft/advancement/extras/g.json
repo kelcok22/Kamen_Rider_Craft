@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:g_belt"
+	},
+	"title": "gg no re",
+	"description": "Transform into Kamen Rider G",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:glegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:g_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

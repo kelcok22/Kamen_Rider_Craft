@@ -1,0 +1,74 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:desire_driver_revi"
+	},
+	"title": "Change my future",
+	"description": "Transform into Kamen Riders Revi and Vice using the Desire Driver",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:geats/seeker",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:geatshead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:geatstroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:geatslegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:desire_driver_revi"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:geatshead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:geatstroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:geatslegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:desire_driver_vice"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

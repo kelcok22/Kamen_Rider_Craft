@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:newkivadriver"
+	},
+	"title": "The Future is in Danger!",
+	"description": "Transform into the new Kamen Rider Kiva",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kiva/tatsulot",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kivahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kivatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kivalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:newkivadriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

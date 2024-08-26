@@ -1,0 +1,36 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ridol"
+	},
+	"title": [
+	  {
+		"text": "Stick It Up Your "
+	  },
+	  {
+		"text": "####",
+		"obfuscated": true
+	  }
+	],
+	"description": "Obtain the Ridol Stick",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/x",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:ridol_stick"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

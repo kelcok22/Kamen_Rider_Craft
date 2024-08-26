@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:den_o_ax_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/den_o_nakerude_card",
+	  "kamenridercraft:decade/den_o_tsuppari_card",
+	  "kamenridercraft:decade/den_o_utchari_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

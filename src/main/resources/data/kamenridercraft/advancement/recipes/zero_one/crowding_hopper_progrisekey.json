@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:crowding_hopper_progrisekey"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:zero_one/shot_abaddo_riser",
+	  "kamenridercraft:zero_one/slash_abaddo_riser",
+	  "kamenridercraft:zero_one/slash_abaddo_riser_r",
+	  "kamenridercraft:zero_one/shot_abaddo_riser_g",
+	  "kamenridercraft:zero_one/shot_abaddo_riser_b",
+	  "kamenridercraft:zero_one/slash_abaddo_riser_o",
+	  "kamenridercraft:zero_one/shot_abaddo_gun",
+	  "kamenridercraft:zero_one/slash_abaddo_sword"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,83 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:command_twin_buckle_jet"
+	  },
+	  "title": "A Soaring Upgrade",
+	  "description": "Transform into Geats Command Form",
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:geats/feverslot",
+	"criteria": {
+	  "1": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:geatshead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:geatstroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:geatslegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:desire_driver_geats"
+				],
+				"nbt": "{slot_tex2:\"command_twin_buckle_cannon\"}"
+			  }
+			}
+		  }
+		}
+	  },
+	  "2": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:geatshead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:geatstroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:geatslegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:desire_driver_geats"
+				],
+				"nbt": "{slot_tex3:\"command_twin_buckle_cannon_l\"}"
+			  }
+			}
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"1",
+		"2"
+	  ]
+	]
+  }
+  

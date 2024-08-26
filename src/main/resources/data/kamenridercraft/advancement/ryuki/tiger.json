@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:v_buckle_tiger"
+	},
+	"title": "Eye of the Tiger",
+	"description": "Transform into Kamen Rider Tiger",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ryuki/odin",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ryukihead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ryukitroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ryukilegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:v_buckle_tiger"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

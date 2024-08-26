@@ -1,0 +1,88 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:gm_01_scorpion"
+	},
+	"title": "G3 Maneuvers: Start!",
+	"description": "Obtain all of G3-X's weapons",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/g3x",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gm_01_scorpion"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gg_02_salamander"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gs_03_destroyer"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:ga_04_antares"
+			]
+		  }
+		]
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gx_05_kerberos"
+			]
+		  }
+		]
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gk_06_unicorn"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

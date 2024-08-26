@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:electrer"
+	},
+	"title": "Harder Better Faster Stronger",
+	"description": "Transform into Kamen Rider Stronger",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/amazon",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:strongerhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:strongertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:strongerlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:electrer"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

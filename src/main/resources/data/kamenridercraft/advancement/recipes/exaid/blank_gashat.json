@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:blank_gashat"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:exaid/ex_aidhead",
+	  "kamenridercraft:exaid/ex_aidtroso",
+	  "kamenridercraft:exaid/ex_aidlegs",
+	  "kamenridercraft:exaid/gamecreator"
+	]
+  },
+  "sends_telemetry_event": false
+}

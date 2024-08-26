@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:sai_medal"
+	},
+	"title": "Sun Goes Up",
+	"description": "Obtain the Sai, Gorilla, and Zou Core Medals",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/latorartar",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:sai_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gorilla_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:zou_medal"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

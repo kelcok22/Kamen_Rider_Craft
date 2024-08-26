@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kamen_rider_chronicle_gashat"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:exaid/rideplayerbelt",
+	  "kamenridercraft:exaid/rideplayerbelt_nico",
+	  "kamenridercraft:exaid/gamer_driver_nico_snipe",
+	  "kamenridercraft:exaid/gashacon_bugvisor_ii",
+	  "kamenridercraft:exaid/ride_weapon"
+	]
+  },
+  "sends_telemetry_event": false
+}

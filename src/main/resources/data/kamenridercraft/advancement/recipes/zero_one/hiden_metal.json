@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hiden_metal"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:zero_one/zero_onehead",
+	  "kamenridercraft:zero_one/zero_onetroso",
+	  "kamenridercraft:zero_one/zero_onelegs",
+	  "kamenridercraft:zero_one/blank_progrisekey"
+	]
+  },
+  "sends_telemetry_event": false
+}

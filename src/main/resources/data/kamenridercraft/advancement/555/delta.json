@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:delta_driver"
+	},
+	"title": "DELTA STRIP",
+	"description": "Transform into Kamen Rider Delta",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:555/kaixa",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:faizhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:faiztroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:faizlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:delta_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

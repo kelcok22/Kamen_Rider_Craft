@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kabuto_zecter"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:kabuto/kabuto_rider_belt",
+	  "kamenridercraft:kabuto/kabuto_kunai",
+	  "kamenridercraft:kabuto/kabuto_logo",
+	  "kamenridercraft:geats/kabuto_zector_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

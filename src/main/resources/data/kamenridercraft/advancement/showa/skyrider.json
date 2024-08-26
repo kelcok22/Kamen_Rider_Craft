@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:tornado"
+	},
+	"title": "Sailing Jump!",
+	"description": "Transform into Skyrider",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/stronger",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:skyriderhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:skyridertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:skyriderlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:tornado"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
