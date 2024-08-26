@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:desire_driver_hakubi"
+	},
+	"title": "My Little Sister's a Rider?!",
+	"description": "Transform into Kamen Rider Hakubi",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:geats/groovy",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:geatshead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:geatstroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:geatslegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:desire_driver_hakubi"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

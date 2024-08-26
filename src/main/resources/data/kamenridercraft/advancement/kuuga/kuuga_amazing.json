@@ -1,0 +1,79 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kuuga_amazing_mighty"
+	},
+	"title": "Black and Gold",
+	"description": "Transform into Kuuga Amazing Mighty",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kuuga/kuuga_rising",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:arcle"
+					  ],
+					  "nbt": "{slot_tex1:\"kuuga_amazing_mighty\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:arcle"
+					  ],
+					  "nbt": "{slot_tex1:\"grandgouram\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:kuugahead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:kuugatroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:kuugalegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

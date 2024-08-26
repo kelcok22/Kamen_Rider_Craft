@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kivadriver"
+	},
+	"title": "Kivatte Ikuze!",
+	"description": "Transform into Kamen Rider Kiva",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kivahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kivatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kivalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:kivadriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

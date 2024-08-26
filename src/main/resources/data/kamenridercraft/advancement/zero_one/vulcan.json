@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shotriser_vulcan"
+	},
+	"title": "Wolf? More like Gorilla",
+	"description": "Transform into Kamen Rider Vulcan",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zero_one/zero-one",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zero_onehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zero_onetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zero_onelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:shotriser_vulcan"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:hyper_zecter"
+	},
+	"title": "FULL FORCE",
+	"description": "Transform into Kabuto Hyper Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kabuto/caucasus",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kabutohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kabutotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kabutolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:kabuto_rider_belt"
+			  ],
+			  "nbt": "{slot_tex1:\"hyper_zecter\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rider_circuit"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:misc/base_sword",
+	  "kamenridercraft:misc/monitor",
+	  "kamenridercraft:misc/patchouli_guide",
+	  "kamenridercraft:ichigo/ichigohead",
+	  "kamenridercraft:ichigo/ichigotroso",
+	  "kamenridercraft:ichigo/ichigolegs"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gaiamemory"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:w/whead",
+	  "kamenridercraft:w/wtroso",
+	  "kamenridercraft:w/wlegs",
+	  "kamenridercraft:w/gaia_memory_refiner",
+	  "kamenridercraft:w/unfinished_memory_s",
+	  "kamenridercraft:w/unfinished_memory_g",
+	  "kamenridercraft:w/unfinished_memory_t2",
+	  "kamenridercraft:w/pure_gaia_memory_block"
+	]
+  },
+  "sends_telemetry_event": false
+}

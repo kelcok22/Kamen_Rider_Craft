@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:blay_buckle"
+	},
+	"title": "Did you really betray us?",
+	"description": "Transform into Kamen Rider Blade",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:bladehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:bladetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:bladelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:blay_buckle"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

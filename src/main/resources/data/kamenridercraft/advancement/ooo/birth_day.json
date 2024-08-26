@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:cellmedal"
+	},
+	"title": "Happy Birthday!",
+	"description": "Use all the Birth CLAWs at once (Birth·Day)",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/birth",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ooohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:oootroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ooolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:birth_driver"
+			  ],
+			  "nbt": "{slot_tex2:\"birth_core_breast_cannon\",slot_tex3:\"birth_core_crane_arm\",slot_tex4:\"birth_core_shovel_arm\",slot_tex5:\"birth_core_catepillar_leg\",slot_tex6:\"birth_core_drill_arm\",slot_tex7:\"birth_core_cutter_wing\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

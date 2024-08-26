@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:trigger_magnum"
+	},
+	"title": "Finger on the Trigger",
+	"description": "Obtain the Triggermagnum",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:w/double_metal",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:trigger_magnum"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

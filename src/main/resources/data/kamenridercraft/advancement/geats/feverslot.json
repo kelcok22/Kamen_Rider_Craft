@@ -1,0 +1,29 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:fever_slot_raise_buckle"
+	  },
+	  "title": "Let's go gambling!",
+	  "description": "Obtain the Feverslot Buckle",
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:geats/geats",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "items": [
+			{
+			  "items": [
+				"kamenridercraft:fever_slot_raise_buckle"
+			  ]
+			}
+		  ]
+		}
+	  }
+	}
+  }
+  

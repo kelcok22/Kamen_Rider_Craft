@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:psycorogue_advent"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:ryuki/alternative_v_buckle",
+	  "kamenridercraft:ryuki/alternative_zero_v_buckle",
+	  "kamenridercraft:ryuki/slash_visor"
+	]
+  },
+  "sends_telemetry_event": false
+}

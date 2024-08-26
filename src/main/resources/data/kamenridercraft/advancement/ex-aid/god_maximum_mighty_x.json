@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:god_maximum_mighty_x_gashat"
+	},
+	"title": "I. Am. IMMORTAL",
+	"description": "Transform into Genm God Maximum Gamer Level Billion",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ex-aid/genm_zombie",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ex_aidhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ex_aidtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ex_aidlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gamer_driver_genmu"
+			  ],
+			  "nbt": "{slot_tex1:\"god_maximum_mighty_x_gashat\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kuuga_rising_ultimate"
+	},
+	"title": "Ultimate Ultimate Darkness",
+	"description": "Transform into Kuuga Rising Ultimate",
+	"frame": "challenge",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": true
+  },
+  "parent": "kamenridercraft:kuuga/kuuga_ultimate",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kuugahead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kuugatroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kuugalegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:arcle"
+			  ],
+			  "nbt": "{slot_tex1:\"kuuga_rising_ultimate\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

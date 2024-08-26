@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:robo_core"
+	},
+	"title": "Prince of Sadness",
+	"description": "Transform into Roborider",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/black_rx",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:rxhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:rxtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:rxlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:sun_riser"
+			  ],
+			  "nbt": "{slot_tex1:\"robo_core\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

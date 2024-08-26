@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:century_king_sun_driver"
+	},
+	"title": "Did you see the sunrise?",
+	"description": "Transform into Kamen Rider Black Sun",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:blacksunhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:blacksuntroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:blacksunlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:century_king_sun_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

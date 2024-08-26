@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:bio_blade"
+	},
+	"title": "Spark Cutter",
+	"description": "Obtain the Bio Blade",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/biorider",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:bio_blade"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

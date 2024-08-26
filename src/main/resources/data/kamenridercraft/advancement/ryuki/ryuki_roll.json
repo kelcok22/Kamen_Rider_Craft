@@ -1,0 +1,63 @@
+{
+  "display": {
+	"icon": {
+	  "id": "minecraft:jukebox"
+	},
+	"title": "Get Ryukirolled",
+	"description": "As Ryuki, play a music disc in a jukebox",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": true
+  },
+  "parent": "kamenridercraft:ryuki/ryuki",
+  "criteria": {
+	"play_jukebox_in_meadows": {
+	  "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ryukihead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ryukitroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ryukilegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:v_buckle_ryuki"
+			  ]
+			}
+		  }
+		},
+		"location": [
+		  {
+			"condition": "minecraft:location_check",
+			"predicate": {
+			  "block": {
+				"blocks": [
+				  "minecraft:jukebox"
+				]
+			  }
+			}
+		  },
+		  {
+			"condition": "minecraft:match_tool",
+			"predicate": {
+			  "tag": "minecraft:music_discs"
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

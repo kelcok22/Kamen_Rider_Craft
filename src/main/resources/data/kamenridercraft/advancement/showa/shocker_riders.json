@@ -1,0 +1,83 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shocker_emblem"
+	},
+	"title": "The Infernal Army",
+	"description": "Collect all the Shocker Rider Typhoons",
+	"frame": "challenge",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": true
+  },
+  "parent": "kamenridercraft:showa/nigo",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_1"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_2"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_3"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_4"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_5"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_6"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_7"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_8"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_9"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_10"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_11"
+			]
+		  },
+		  {
+			"items": [
+			  "kamenridercraft:typhoon_shocker_rider_12"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

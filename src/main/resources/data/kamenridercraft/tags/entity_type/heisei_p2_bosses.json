@@ -1,0 +1,23 @@
+{
+  "values": [
+	"#kamenridercraft:block_bosses",
+	"kamenridercraft:ankh_complete_mob",
+	"kamenridercraft:ankh_lost_mob",
+	"kamenridercraft:claydoll_dopant",
+	"kamenridercraft:commander_dopant",
+	"kamenridercraft:eternal_mob",
+	"kamenridercraft:gamel_mob",
+	"kamenridercraft:genm_mob",
+	"kamenridercraft:graphite_bugster_mob",
+	"kamenridercraft:kazari_mob",
+	"kamenridercraft:mezool_mob",
+	"kamenridercraft:muchiri_mob",
+	"kamenridercraft:nazca_dopant",
+	"kamenridercraft:para-dx",
+	"kamenridercraft:poppy_red_mob",
+	"kamenridercraft:smilodon_dopant",
+	"kamenridercraft:terror_dopant",
+	"kamenridercraft:uva_mob",
+	"kamenridercraft:weather_dopant"
+  ]
+}

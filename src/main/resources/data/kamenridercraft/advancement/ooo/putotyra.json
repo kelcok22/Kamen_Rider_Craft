@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ptera_medal"
+	},
+	"title": "POWER to TEARER",
+	"description": "Obtain the Ptera, Tricera, and Tyranno Core Medals",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/tajadol",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:ptera_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:tricera_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:tyranno_medal"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

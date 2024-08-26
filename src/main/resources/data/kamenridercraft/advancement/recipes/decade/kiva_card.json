@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kiva_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/kiva_garulu_card",
+	  "kamenridercraft:decade/kiva_basshaa_card",
+	  "kamenridercraft:decade/kiva_dogga_card",
+	  "kamenridercraft:decade/kiva_dogabaki_card",
+	  "kamenridercraft:decade/kiva_emperor_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,46 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:kyuun_raise_riser_card"
+	  },
+	  "title": "Prince of the Lions",
+	  "description": "Transform into Kamen Rider Kyuun",
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:geats/kekera",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:geatshead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:geatstroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:geatslegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:raise_riser_belt_kyuun"
+				]
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:rider_ticket_g"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/g_den_o_belt",
+	  "kamenridercraft:den_o/g_den_gasher_jitte",
+	  "kamenridercraft:den_o/g_den_gasher_gun"
+	]
+  },
+  "sends_telemetry_event": false
+}

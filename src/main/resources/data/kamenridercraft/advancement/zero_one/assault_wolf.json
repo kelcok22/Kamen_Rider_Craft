@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:assault_wolf_progrisekey"
+	},
+	"title": "No chance of surviving",
+	"description": "Transform into Vulcan Assault Wolf",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zero_one/vulcan",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zero_onehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zero_onetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zero_onelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:shotriser_vulcan"
+			  ],
+			  "nbt": "{slot_tex1:\"assault_wolf_progrisekey\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:card_warrior_kamen_rider_manga"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:misc/cyclonehopper",
+	  "kamenridercraft:misc/flaresalamander",
+	  "kamenridercraft:misc/grandgouram",
+	  "kamenridercraft:misc/stagtornador",
+	  "kamenridercraft:misc/leatheraider",
+	  "kamenridercraft:misc/dragreder",
+	  "kamenridercraft:misc/dragranzer",
+	  "kamenridercraft:misc/darkwing",
+	  "kamenridercraft:misc/greywolch",
+	  "kamenridercraft:misc/chaosdile",
+	  "kamenridercraft:misc/herculespader",
+	  "kamenridercraft:misc/shadowmantis",
+	  "kamenridercraft:misc/akanetaka",
+	  "kamenridercraft:misc/exbeeter",
+	  "kamenridercraft:misc/scissorbeeter",
+	  "kamenridercraft:misc/bakuen_no_senshi",
+	  "kamenridercraft:misc/jinrai_no_senshi"
+	]
+  },
+  "sends_telemetry_event": false
+}

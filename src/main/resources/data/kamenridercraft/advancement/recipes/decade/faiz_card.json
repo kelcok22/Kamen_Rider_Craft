@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:faiz_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/faiz_axel_card",
+	  "kamenridercraft:decade/faiz_blaster_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

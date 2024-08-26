@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:dark_kabuto_rider_belt"
+	},
+	"title": "An Imposter Among Us",
+	"description": "Transform into Kamen Rider Dark Kabuto",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kabuto/punchhopper",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kabutohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kabutotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kabutolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_kabuto_rider_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

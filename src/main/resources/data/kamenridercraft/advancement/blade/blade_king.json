@@ -1,0 +1,79 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:evolution_caucasus"
+	},
+	"title": "Royal Straight Flush",
+	"description": "Transform into Blade King Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:blade/rouze_absorber",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:blay_buckle"
+					  ],
+					  "nbt": "{slot_tex1:\"evolution_caucasus\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:blay_buckle"
+					  ],
+					  "nbt": "{slot_tex1:\"silver_evolution_caucasus\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:bladehead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:bladetroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:bladelegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kickhopper_rider_belt"
+	},
+	"title": "Have you… laughed at me…?",
+	"description": "Transform into Kamen Rider KickHopper",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kabuto/gatack",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:kabutohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:kabutotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:kabutolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:kickhopper_rider_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

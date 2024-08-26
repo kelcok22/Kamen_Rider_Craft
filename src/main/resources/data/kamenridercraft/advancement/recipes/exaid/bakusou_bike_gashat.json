@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:bakusou_bike_gashat"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:exaid/gamer_driver_lazer",
+	  "kamenridercraft:exaid/gashacon_sparrow_sickle_a",
+	  "kamenridercraft:exaid/bakusou_bike_gashat_turbo"
+	]
+  },
+  "sends_telemetry_event": false
+}

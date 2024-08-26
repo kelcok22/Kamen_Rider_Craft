@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:batta_medal"
+	},
+	"title": "Got to keep it real",
+	"description": "Obtain the Kuwagata, Kamakiri, and Batta Core Medals",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/ooo",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kuwagata_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kamakiri_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:batta_medal"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

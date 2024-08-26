@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+  	  "id": "kamenridercraft:oneness_raise_buckle"
+    },
+    "title": "All as One!",
+    "description": "Transform into Kamen Rider Geats Oneness",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:geats/geatsix",
+  "criteria": {
+    "requirement": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_geats"
+  			],
+  		  "nbt": "{slot_tex2:\"oneness_raise_buckle\",slot_tex3:\"boost_mkiii_raise_buckle\"}"
+  		  }
+  		}
+  	  }
+  	}
+    }
+  }
+}

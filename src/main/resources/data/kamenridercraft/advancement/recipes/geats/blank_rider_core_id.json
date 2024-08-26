@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:blank_rider_core_id"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:geats/geatshead",
+	  "kamenridercraft:geats/geatstroso",
+	  "kamenridercraft:geats/geatslegs",
+	  "kamenridercraft:geats/bikkuri_mission_box"
+	]
+  },
+  "sends_telemetry_event": false
+}

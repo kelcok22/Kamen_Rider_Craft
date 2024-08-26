@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:storm_halberd"
+	},
+	"title": "Halberd Spin",
+	"description": "Obtain the Storm Halberd",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/flame_saber",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:storm_halberd"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:electrer_core"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:stronger/strongerhead",
+	  "kamenridercraft:stronger/strongertroso",
+	  "kamenridercraft:stronger/strongerlegs",
+	  "kamenridercraft:stronger/electrer",
+	  "kamenridercraft:stronger/stronger_logo",
+	  "kamenridercraft:decade/stronger_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

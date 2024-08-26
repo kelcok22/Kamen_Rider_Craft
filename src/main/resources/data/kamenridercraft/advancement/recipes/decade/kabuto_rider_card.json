@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kabuto_rider_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/kabuto_masked_card",
+	  "kamenridercraft:decade/kabuto_hyper_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

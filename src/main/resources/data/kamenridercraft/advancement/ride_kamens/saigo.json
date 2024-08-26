@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:chaos_driver_saigo"
+	},
+	"title": "Protect What Must Be Protected",
+	"description": "Transform into Kamen Rider Saigo",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ride_kamens_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ride_kamens_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ride_kamens_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:chaos_driver_saigo"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

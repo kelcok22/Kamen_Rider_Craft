@@ -1,0 +1,103 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:glaive_buckle"
+	},
+	"title": "3 of Ace",
+	"description": "Transform into Kamen Riders Glaive, Larc, and Lance",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:blade/leangle",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:bladehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:bladetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:bladelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:glaive_buckle"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:bladehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:bladetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:bladelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:larc_buckle"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:bladehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:bladetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:bladelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:lance_buckle"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

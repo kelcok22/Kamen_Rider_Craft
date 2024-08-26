@@ -1,0 +1,93 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:tatsulot"
+	},
+	"title": "Supernova",
+	"description": "Transform into Kiva Emperor Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kiva/dogga_hammer",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:kivadriver"
+					  ],
+					  "nbt": "{slot_tex1:\"tatsulot\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:kivadriver"
+					  ],
+					  "nbt": "{slot_tex1:\"dogabaki_emperor\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:kivadriver"
+					  ],
+					  "nbt": "{slot_tex1:\"kiva_says_fuestle\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:kivahead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:kivatroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:kivalegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

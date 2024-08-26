@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:cyclode"
+	},
+	"title": "Five Handed Super Punch",
+	"description": "Transform into Kamen Rider Super-1",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/skyrider",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:super_1head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:super_1troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:super_1legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:cyclode"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

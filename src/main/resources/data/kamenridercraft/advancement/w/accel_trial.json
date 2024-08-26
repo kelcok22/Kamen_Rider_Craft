@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:trial_memory"
+	},
+	"title": "9.9 Seconds Until Your Despair",
+	"description": "Transform into Accel Trial",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:w/accel",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:whead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:acceldriver"
+			  ],
+			  "nbt": "{slot_tex1:\"trial_memory\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

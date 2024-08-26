@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ank_point"
+	},
+	"title": "Now there are two of them!",
+	"description": "Transform into Kamen Rider Another Agito",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/gills",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:agitohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:agitotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:agitolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ank_point"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

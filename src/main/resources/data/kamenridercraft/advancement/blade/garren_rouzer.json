@@ -1,0 +1,29 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:garrenrouzer"
+	},
+	"title": "SAYOKOOOOOO",
+	"description": "Obtain the Garren Rouzer",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:blade/garren",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [],
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:garrenrouzer"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

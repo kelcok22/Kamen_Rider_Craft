@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:new_denliner_interior"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/king_liner_logo_bottom",
+	  "kamenridercraft:den_o/king_liner_logo_side",
+	  "kamenridercraft:den_o/king_liner_logo_sider",
+	  "kamenridercraft:den_o/king_liner_logo_top",
+	  "kamenridercraft:den_o/new_denliner_logo_bottom",
+	  "kamenridercraft:den_o/new_denliner_logo_top",
+	  "kamenridercraft:den_o/new_denliner_matel_side",
+	  "kamenridercraft:den_o/new_denliner_matel_top",
+	  "kamenridercraft:den_o/new_denliner_matel_top2"
+	]
+  },
+  "sends_telemetry_event": false
+}

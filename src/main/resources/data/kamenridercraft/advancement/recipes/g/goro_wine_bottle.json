@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:goro_wine_bottle"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:g/ghead",
+	  "kamenridercraft:g/gtroso",
+	  "kamenridercraft:g/glegs",
+	  "kamenridercraft:g/g_belt",
+	  "kamenridercraft:g/g_logo"
+	]
+  },
+  "sends_telemetry_event": false
+}

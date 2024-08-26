@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:pegasus_bowgun"
+	},
+	"title": "Blast Pegasus",
+	"description": "Obtain the Pegasus Bowgun",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:kuuga/dragon_rod",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:pegasus_bowgun"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

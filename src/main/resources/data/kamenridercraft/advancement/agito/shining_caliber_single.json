@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shining_caliber_summoned"
+	},
+	"title": "Burning Bomber",
+	"description": "Obtain the Shining Calibur (Single)",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/storm_halberd",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:shining_caliber_summoned"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:vortech_shooter"
+	},
+	"title": "Hard Shot",
+	"description": "Obtain the Vortech Shooter",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/roborider",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:vortech_shooter"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

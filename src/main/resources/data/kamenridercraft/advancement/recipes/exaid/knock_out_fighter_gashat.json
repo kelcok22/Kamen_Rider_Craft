@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:knock_out_fighter_gashat"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:exaid/paradoxbelt",
+	  "kamenridercraft:exaid/gamer_driver_paradx",
+	  "kamenridercraft:exaid/parabragun"
+	]
+  },
+  "sends_telemetry_event": false
+}

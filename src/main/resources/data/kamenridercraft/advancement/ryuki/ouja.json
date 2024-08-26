@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:v_buckle_ouja"
+	},
+	"title": "This is where the festival is…",
+	"description": "Transform into Kamen Rider Ouja",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ryuki/gai",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ryukihead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ryukitroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ryukilegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:v_buckle_ouja"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

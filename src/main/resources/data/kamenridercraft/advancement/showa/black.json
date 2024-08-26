@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:vital_charger"
+	},
+	"title": "Unforgivable!",
+	"description": "Transform into Kamen Rider Black",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/zx",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:blackhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:blacktorso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:blacklegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:vital_charger"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:denliner_roof"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/denliner_glass_rekkou",
+	  "kamenridercraft:den_o/denliner_glass2",
+	  "kamenridercraft:den_o/denliner_glass3",
+	  "kamenridercraft:den_o/denliner_matel_dark_line",
+	  "kamenridercraft:den_o/new_denliner_matel_top",
+	  "kamenridercraft:den_o/new_denliner_matel_top2",
+	  "kamenridercraft:den_o/new_denliner_side_with_line",
+	  "kamenridercraft:den_o/new_denliner_side_with_start_line"
+	]
+  },
+  "sends_telemetry_event": false
+}

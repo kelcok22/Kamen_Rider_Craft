@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:g3x"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:agito/g3_x_belt",
+	  "kamenridercraft:agito/gx_05_kerberos",
+	  "kamenridercraft:agito/gk_06_unicorn",
+	  "kamenridercraft:agito/g3x_shield"
+	]
+  },
+  "sends_telemetry_event": false
+}

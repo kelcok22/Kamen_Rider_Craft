@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:rider_ticket_gun"
+	},
+	"title": "I can't hear your answer!",
+	"description": "Transform into Den-O Gun Form",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:den-o/ax_form",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:den_ohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:den_otroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:den_olegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:den_o_belt"
+			  ],
+			  "nbt": "{slot_tex1:\"rider_ticket_gun\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

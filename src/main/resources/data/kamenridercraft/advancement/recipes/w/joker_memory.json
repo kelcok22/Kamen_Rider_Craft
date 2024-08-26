@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:joker_memory"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:w/wdriver",
+	  "kamenridercraft:w/kirifuda_memory",
+	  "kamenridercraft:w/w_logo",
+	  "kamenridercraft:geats/double_driver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

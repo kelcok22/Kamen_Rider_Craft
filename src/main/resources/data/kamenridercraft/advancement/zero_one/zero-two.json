@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:zero_two_progrisekey"
+	},
+	"title": "It's Never Over",
+	"description": "Transform into Kamen Rider Zero-Two",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zero_one/metalcluster_hopper",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zero_onehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zero_onetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zero_onelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:hiden_zero_one_driver"
+			  ],
+			  "nbt": "{slot_tex1:\"zero_two_progrisekey\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

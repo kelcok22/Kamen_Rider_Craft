@@ -1,0 +1,29 @@
+
+{
+  "values": [
+	"kamenridercraft:bug_energy_item",
+	"kamenridercraft:end_energy_item",
+	"kamenridercraft:halt_energy_item",
+	"kamenridercraft:balloon_energy_item",
+	"kamenridercraft:flatten_energy_item",
+	"kamenridercraft:lucky_energy_item",
+	"kamenridercraft:sleep_energy_item",
+	"kamenridercraft:dark_energy_item",
+	"kamenridercraft:liquid_energy_item",
+	"kamenridercraft:giant_energy_item",
+	"kamenridercraft:reverse_energy_item",
+	"kamenridercraft:save_energy_item",
+	"kamenridercraft:reflect_energy_item",
+	"kamenridercraft:emission_energy_item",
+	"kamenridercraft:recover_energy_item",
+	"kamenridercraft:confusion_energy_item",
+	"kamenridercraft:invisible_energy_item",
+	"kamenridercraft:stretch_energy_item",
+	"kamenridercraft:shrink_energy_item",
+	"kamenridercraft:muscle_energy_item",
+	"kamenridercraft:jump_energy_item",
+	"kamenridercraft:instigate_energy_item",
+	"kamenridercraft:iron_energy_item",
+	"kamenridercraft:speed_energy_item"
+  ]
+}

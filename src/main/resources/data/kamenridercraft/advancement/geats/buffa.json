@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:desire_driver_buffa"
+	},
+	"title": "Undead Fire",
+	"description": "Transform into Kamen Rider Buffa",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:geats/na-go",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:geatshead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:geatstroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:geatslegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:desire_driver_buffa"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

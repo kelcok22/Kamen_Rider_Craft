@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:oni_ore"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:hibiki/hibikihead",
+	  "kamenridercraft:hibiki/hibikitroso",
+	  "kamenridercraft:hibiki/hibikilegs",
+	  "kamenridercraft:decade/decade_camera"
+	]
+  },
+  "sends_telemetry_event": false
+}

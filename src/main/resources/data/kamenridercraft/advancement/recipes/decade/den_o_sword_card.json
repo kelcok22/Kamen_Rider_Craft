@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:den_o_sword_card"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:decade/den_o_plat_card",
+	  "kamenridercraft:decade/den_o_rod_card",
+	  "kamenridercraft:decade/den_o_ax_card",
+	  "kamenridercraft:decade/den_o_gun_card",
+	  "kamenridercraft:decade/den_o_wing_card",
+	  "kamenridercraft:decade/den_o_climax_card",
+	  "kamenridercraft:decade/den_o_liner_card",
+	  "kamenridercraft:decade/den_o_ore_sanjou_card",
+	  "kamenridercraft:decade/decade_violent_emotion_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

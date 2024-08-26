@@ -1,0 +1,47 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:kekera_black_raise_riser_card"
+	  },
+	  "title": "kek, lmao even",
+	  "description": "Transform into Premium Kekera",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:geats/kekera",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:geatshead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:geatstroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:geatslegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:raise_riser_belt_kekera"
+				],
+  		  		"nbt": "{slot_tex1:\"kekera_black_raise_riser_card\"}"
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  

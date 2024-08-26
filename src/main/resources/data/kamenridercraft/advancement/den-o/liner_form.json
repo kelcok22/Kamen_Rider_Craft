@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:denkamen_sword"
+	},
+	"title": "Real-Action",
+	"description": "Transform into Den-O Liner Form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:den-o/climax_form",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:den_ohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:den_otroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:den_olegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:den_o_belt"
+			  ],
+			  "nbt": "{slot_tex1:\"den_o_liner_form\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

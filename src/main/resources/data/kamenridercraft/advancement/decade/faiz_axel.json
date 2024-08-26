@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:faiz_axel_card"
+	},
+	"title": "Clock Up, more like Start Up",
+	"description": "Transform into Decade Faiz Axel Form",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:decade/decade",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:decadehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:decadetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:decadelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:decadriver"
+			  ],
+			  "nbt": "{slot_tex1:\"faiz_axel_card\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

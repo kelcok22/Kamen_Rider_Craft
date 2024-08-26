@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:taddle_legacy_gashat"
+	},
+	"title": "Skill Issue Level 100",
+	"description": "Transform into Brave Legacy Gamer Level 100",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ex-aid/taddle_fantasy",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ex_aidhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ex_aidtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ex_aidlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gamer_driver_brave"
+			  ],
+			  "nbt": "{slot_tex2:\"taddle_legacy_gashat\"}"
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

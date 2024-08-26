@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shotriser_valkyrie"
+	},
+	"title": "Revolver Ocelot",
+	"description": "Transform into Kamen Rider Valkyrie",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zero_one/vulcan",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zero_onehead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zero_onetroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zero_onelegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:shotriser_valkyrie"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

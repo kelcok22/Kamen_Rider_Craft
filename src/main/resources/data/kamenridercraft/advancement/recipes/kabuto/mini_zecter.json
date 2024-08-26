@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:mini_zecter"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:kabuto/kabutohead",
+	  "kamenridercraft:kabuto/kabutotroso",
+	  "kamenridercraft:kabuto/kabutolegs",
+	  "kamenridercraft:kabuto/zect_mizer",
+	  "kamenridercraft:kabuto/clock_up_pad",
+	  "kamenridercraft:decade/decade_camera"
+	]
+  },
+  "sends_telemetry_event": false
+}

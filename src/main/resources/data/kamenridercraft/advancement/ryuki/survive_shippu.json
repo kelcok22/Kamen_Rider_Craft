@@ -1,0 +1,93 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:survive_shippu"
+	},
+	"title": "Shippudan",
+	"description": "Use the Survive Shippu card to access Knight, Raia, or Ouja's Survive form",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ryuki/knight",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_knight"
+					  ],
+					  "nbt": "{slot_tex1:\"survive_shippu\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_raia"
+					  ],
+					  "nbt": "{slot_tex1:\"survive_shippu_raia\"}"
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_ouja"
+					  ],
+					  "nbt": "{slot_tex1:\"survive_shippu_ouja\"}"
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:ryukihead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:ryukitroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:ryukilegs"
+				  ]
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

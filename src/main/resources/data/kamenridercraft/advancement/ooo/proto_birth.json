@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:proto_birth_driver"
+	},
+	"title": "Let's Start Earning",
+	"description": "Transform into Kamen Rider Birth·Proto Type",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/birth",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ooohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:oootroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ooolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:proto_birth_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

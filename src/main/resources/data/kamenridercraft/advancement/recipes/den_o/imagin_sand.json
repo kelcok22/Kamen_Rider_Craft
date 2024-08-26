@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:imagin_sand"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:den_o/den_ohead",
+	  "kamenridercraft:den_o/den_otroso",
+	  "kamenridercraft:den_o/den_olegs",
+	  "kamenridercraft:den_o/rider_pass",
+	  "kamenridercraft:den_o/denliner_interior",
+	  "kamenridercraft:den_o/denliner_roof",
+	  "kamenridercraft:den_o/denliner_glass",
+	  "kamenridercraft:den_o/denliner_glass_ikazuchi",
+	  "kamenridercraft:den_o/denliner_gold",
+	  "kamenridercraft:den_o/denliner_matel",
+	  "kamenridercraft:den_o/new_denliner_interior",
+	  "kamenridercraft:den_o/gaoh_liner_gold",
+	  "kamenridercraft:den_o/gaoh_liner_green",
+	  "kamenridercraft:den_o/zero_liner_green",
+	  "kamenridercraft:decade/decade_camera"
+	]
+  },
+  "sends_telemetry_event": false
+}

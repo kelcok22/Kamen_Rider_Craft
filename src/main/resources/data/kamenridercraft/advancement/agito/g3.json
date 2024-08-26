@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:g3_belt"
+	},
+	"title": "Tennis Pro",
+	"description": "Transform into Kamen Rider G3",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:agito/agito",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:agitohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:agitotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:agitolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:g3_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

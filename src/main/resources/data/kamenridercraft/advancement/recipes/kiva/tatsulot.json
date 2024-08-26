@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:tatsulot"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:kiva/zanbatsword_core",
+	  "kamenridercraft:kiva/garulu_saber_tatsulot",
+	  "kamenridercraft:kiva/basshaa_magnum_tatsulot",
+	  "kamenridercraft:kiva/dogga_hammer_tatsulot"
+	]
+  },
+  "sends_telemetry_event": false
+}

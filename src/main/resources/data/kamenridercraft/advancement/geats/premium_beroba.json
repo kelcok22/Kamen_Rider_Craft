@@ -1,0 +1,47 @@
+{
+	"display": {
+	  "icon": {
+		"id": "kamenridercraft:beroba_black_raise_riser_card"
+	  },
+	  "title": "Unhappiness suits you",
+	  "description": "Transform into Premium Beroba",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"parent": "kamenridercraft:geats/beroba",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:inventory_changed",
+		"conditions": {
+		  "player": {
+			"equipment": {
+			  "head": {
+				"items": [
+				  "kamenridercraft:geatshead"
+				]
+			  },
+			  "chest": {
+				"items": [
+				  "kamenridercraft:geatstroso"
+				]
+			  },
+			  "legs": {
+				"items": [
+				  "kamenridercraft:geatslegs"
+				]
+			  },
+			  "feet": {
+				"items": [
+				  "kamenridercraft:raise_riser_belt_beroba"
+				],
+  		  		"nbt": "{slot_tex1:\"beroba_black_raise_riser_card\"}"
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  
