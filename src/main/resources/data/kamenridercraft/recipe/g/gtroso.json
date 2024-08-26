@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kr_g",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ichigotroso"
+	}, 
+	{
+	  "item": "kamenridercraft:goro_wine_bottle"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:gtroso"
+  }
+}
