@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco",
+  "pattern": [
+    "###",
+    "#d#",
+    "###"
+  ],
+  "key": {
+    "#": {
+	  "item": "kamenridercraft:denliner_matel"
+    },
+	"d": {
+      "item": "minecraft:black_dye"
+	}
+  },
+  "result": {
+    "id": "kamenridercraft:denliner_matel_dark",
+	"count": 8
+  }
+}

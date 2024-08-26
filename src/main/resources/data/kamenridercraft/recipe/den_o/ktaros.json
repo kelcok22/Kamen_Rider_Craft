@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "den_o_climax",
+  "pattern": [
+    "XSX",
+    "RXA",
+    "XGX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:imagin_sand"
+    }, "S": {
+      "item": "kamenridercraft:rider_ticket_sword"
+    }, "A": {
+      "item": "kamenridercraft:rider_ticket_ax"
+    }, "R": {
+      "item": "kamenridercraft:rider_ticket_rod"
+    }, "G": {
+      "item": "kamenridercraft:rider_ticket_gun"
+    }
+
+  },
+  "result": {
+    "id": "kamenridercraft:ktaros"
+  }
+}

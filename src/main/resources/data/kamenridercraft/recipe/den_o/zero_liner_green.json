@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco_zero",
+  "pattern": [
+    "RIR",
+    "IGI",
+    "RIR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:iron_ingot"
+    }, "I": {
+      "item": "kamenridercraft:imagin_sand"
+    }, "G": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zero_liner_green"
+  }
+}

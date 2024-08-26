@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "liner_deco",
+  "pattern": [
+    "###",
+    "ddd",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+	  "item": "kamenridercraft:denliner_interior"
+    },
+	"d": {
+	  "item": "kamenridercraft:denliner_glass"
+	},
+	"#": {
+	  "item": "kamenridercraft:denliner_roof"
+	}
+  },
+  "result": {
+    "id": "kamenridercraft:denliner_side_with_line",
+	"count": 9
+  }
+}
