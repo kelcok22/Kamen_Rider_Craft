@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gashat",
+  "ingredients": [
+	{ 
+	  "item": "kamenridercraft:proto_mighty_action_x_gashat_origin"
+	},
+	{ 
+	  "item": "kamenridercraft:unfinished_maximum_mighty_x_gashat"
+	}, 
+	{
+	  "item": "kamenridercraft:save_energy_item"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:unfinished_hyper_muteki_gashat"
+  }
+}

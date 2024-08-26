@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gashat",
+  "ingredients": [
+	{ 
+	  "item": "kamenridercraft:rider_circuit"
+	}, 
+	{
+	  "item": "kamenridercraft:bugster_virus_dna"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:blank_gashat"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ex_aid_xx",
+  "pattern": [
+	"XMX",
+	"XSX",
+	"XPX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gashat"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:perfect_puzzle_gashat"
+	},
+	"P": {
+	  "item": "kamenridercraft:knock_out_fighter_gashat"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:parabragun_axe"
+  }	
+}
+

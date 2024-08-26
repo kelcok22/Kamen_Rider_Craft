@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chronicle_bugster",
+  "pattern": [
+	"XXX",
+	"XXX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:gashacon_bugvisor_ii_chronicle_bugster"
+  }
+}

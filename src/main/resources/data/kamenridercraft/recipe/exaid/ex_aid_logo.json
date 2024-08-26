@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:paper"
+	}, 
+	{
+	  "item": "kamenridercraft:mighty_action_x_gashat"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ex_aid_logo"
+  }
+}
