@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:paper"
+	}, 
+	{
+	  "item": "kamenridercraft:goro_wine_bottle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:g_logo"
+  }
+}
