@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zero_one_shining_assault_hopper",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:shining_hopper_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:assault_wolf_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:shining_assault_hopper_progrisekey"
+  }
+}

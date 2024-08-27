@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	 "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:agito_burning"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 4,
+		  "name": "kamenridercraft:agito_of_seed"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:agito_of_seed",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

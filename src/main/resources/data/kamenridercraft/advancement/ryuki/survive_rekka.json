@@ -29,7 +29,7 @@
 						"kamenridercraft:v_buckle_ryuki"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_rekka\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_rekka\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:v_buckle_ryuga"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_rekka_ryuga\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_rekka_ryuga\"}"
               }
 					}
 				  }

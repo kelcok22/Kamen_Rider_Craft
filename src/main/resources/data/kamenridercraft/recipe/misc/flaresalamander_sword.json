@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "flaresalamander",
+  "pattern": [
+	"XDX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:rider_circuit"
+	},
+	"D": {
+	  "item": "kamenridercraft:flaresalamander"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:flaresalamander_sword"
+  }	
+}

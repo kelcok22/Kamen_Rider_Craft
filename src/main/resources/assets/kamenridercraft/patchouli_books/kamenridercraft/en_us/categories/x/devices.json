@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:x/main",
+    "name": "X Transformation Devices",
+    "description": "The transformation devices used by the X Riders.",
+    "icon": "kamenridercraft:ridol",
+    "sortnum": 1
+}

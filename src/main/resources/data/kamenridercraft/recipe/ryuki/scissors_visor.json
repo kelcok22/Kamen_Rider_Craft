@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "scissors",
+  "pattern": [
+	"XCX",
+	"XZX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:advent_card"
+	}, "C": {
+	  "item": "kamenridercraft:volcancer_advent"
+	}, "Z": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:scissors_visor"
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "bonus_rolls": 0,
+	  "entries": [
+		{
+		  "type": "minecraft:alternatives",
+		  "children": [
+			{
+			  "type": "minecraft:item",
+			  "name": "kamenridercraft:glass_ryuki",
+			  "conditions": [
+				{
+				  "condition": "minecraft:match_tool",
+				  "predicate": {
+					"enchantments": [
+					  {
+						"enchantment": "minecraft:silk_touch",
+						"levels": {
+						  "min": 1
+						}
+					  }
+					]
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:advent_card",
+		  "weight": 300,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dragreder_advent",
+		  "weight": 20,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:darkwing_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:volcancer_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:magnugiga_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:evildiver_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:metalgelas_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:venosnaker_advent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:ride_saber_vent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_saber_vent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_claw_vent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_shield_vent",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_shield_vent_form",
+		  "weight": 15,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:wing_lancer_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:wing_wall_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:knight_trick_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:scissors_pinch_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shell_defense_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giga_horn_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giga_launcher_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giga_cannon_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giga_armor_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giga_tector_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:evil_whip_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:metal_horn_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:veno_saber_vent",
+		  "weight": 10,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_visor_zwei_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:drag_blade_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:ryuki_trick_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dark_blade_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dark_visor_zwei_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dark_arrow_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:evil_visor_zwei_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:veno_visor_zwei_vent",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:survive_rekka",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:survive_shippu",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:survive_mugen",
+		  "weight": 5,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:inverted",
+		  "term": {
+			"condition": "minecraft:match_tool",
+			"predicate": {
+			  "enchantments": [
+				{
+				  "enchantment": "minecraft:silk_touch",
+				  "levels": {
+					"min": 1
+				  }
+				}
+			  ]
+			}
+		  }
+		}
+	  ],
+		"conditions": [
+		  {
+			"condition": "minecraft:inverted",
+			"term": {
+			  "condition": "minecraft:match_tool",
+			  "predicate": {
+				"enchantments": [
+				  {
+					"enchantment": "minecraft:silk_touch",
+					"levels": {
+					  "min": 1
+					}
+				  }
+				]
+			  }
+			}
+		  }
+		]
+	}
+  ],
+  "random_sequence": "kamenridercraft:glass_ryuki"
+}

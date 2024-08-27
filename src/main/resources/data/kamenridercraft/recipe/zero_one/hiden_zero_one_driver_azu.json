@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ark_zero_one",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:ark_zero_one_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hiden_zero_one_driver_azu"
+  }
+}

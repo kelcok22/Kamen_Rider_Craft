@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "Agito Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Agito.",
+    "icon": "kamenridercraft:agitohead",
+    "sortnum": 0
+}

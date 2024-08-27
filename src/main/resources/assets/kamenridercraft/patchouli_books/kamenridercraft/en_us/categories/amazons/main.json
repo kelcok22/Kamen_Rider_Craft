@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/other",
+    "name": "Kamen Rider Amazons",
+    "description": "Everything related to the show, Kamen Rider Amazons.",
+    "icon": "kamenridercraft:amazonshead",
+    "sortnum": 0
+}

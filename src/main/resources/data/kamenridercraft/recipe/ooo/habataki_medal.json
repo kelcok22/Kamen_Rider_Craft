@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_medal",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:henshin_onsa_habataki"
+	}, 
+	{
+	  "item": "kamenridercraft:cellmedal"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:habataki_medal"
+  }
+}

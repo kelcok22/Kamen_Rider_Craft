@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jin_burning_falcon",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:burning_falcon_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zaia_slashriser"
+  }
+}

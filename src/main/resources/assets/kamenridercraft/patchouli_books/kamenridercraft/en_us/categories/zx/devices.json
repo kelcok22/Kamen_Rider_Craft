@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zx/main",
+    "name": "ZX Transformation Devices",
+    "description": "The transformation devices used by the ZX Riders.",
+    "icon": "kamenridercraft:zx_belt",
+    "sortnum": 1
+}

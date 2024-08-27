@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:rider_ticket"
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:random_chance",
+			"chance": 0.1
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:imagin_sand",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 2,
+				  "max": 4
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

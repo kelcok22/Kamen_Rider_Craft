@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shocker_emblem",
+		  "weight": 5
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:typhoon_core_sango",
+		  "weight": 3
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:typhoon_core_yongo",
+		  "weight": 2
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:new_typhoon_core",
+		  "weight": 1
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:rider_circuit",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

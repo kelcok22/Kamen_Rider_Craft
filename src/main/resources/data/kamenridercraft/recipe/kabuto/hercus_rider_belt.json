@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hercus",
+  "pattern": [
+	"XXX",
+	"XZX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:unfinished_kabutick_zecter"
+	},
+	"Z": {
+	  "item": "kamenridercraft:hercus_zecter"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:hercus_rider_belt"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		
+		{
+		  "type": "minecraft:item",
+		  "weight": 2,
+		  "name": "kamenridercraft:bakusou_bike_gasha_trophy"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:bugster_virus_dna",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 5
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

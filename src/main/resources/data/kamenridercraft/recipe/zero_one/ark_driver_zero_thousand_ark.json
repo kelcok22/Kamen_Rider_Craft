@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "thousand_ark",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:thousand_ark_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:ark_driver_zero"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:ark_driver_zero_thousand_ark"
+  }
+}

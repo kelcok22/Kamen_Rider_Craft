@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zero_two",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:zero_two_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hiden_zero_two_driver"
+  }
+}

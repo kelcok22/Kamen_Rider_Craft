@@ -1,0 +1,135 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+	  {
+		"rolls": 1,
+		"bonus_rolls": 0,
+		"entries": [
+		  {
+			"type": "minecraft:alternatives",
+			"children": [
+			  {
+				"type": "minecraft:item",
+				"name": "kamenridercraft:deepslate_stone_kuuga",
+				"conditions": [
+				  {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+					  "enchantments": [
+						{
+						  "enchantment": "minecraft:silk_touch",
+						  "levels": {
+							"min": 1
+						  }
+						}
+					  ]
+					}
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:kuuga_growing",
+			"weight": 4,
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:kuuga_mighty",
+			"weight": 3,
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:kuuga_dragon",
+			"weight": 1,
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:kuuga_pegasus",
+			"weight": 1,
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:kuuga_titan",
+			"weight": 1,
+			"functions": [
+			  {
+				"function": "minecraft:apply_bonus",
+				"enchantment": "minecraft:fortune",
+				"formula": "minecraft:ore_drops"
+			  },
+			  {
+				"function": "minecraft:explosion_decay"
+			  }
+			]
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:inverted",
+			"term": {
+			  "condition": "minecraft:match_tool",
+			  "predicate": {
+				"enchantments": [
+				  {
+					"enchantment": "minecraft:silk_touch",
+					"levels": {
+					  "min": 1
+					}
+				  }
+				]
+			  }
+			}
+		  }
+		]
+	  }
+	],
+	"random_sequence": "kamenridercraft:deepslate_stone_kuuga"
+  }
+  

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gasha_ticket",
+  "ingredients": [
+	{ 
+	  "item": "kamenridercraft:contract_chaostone"
+	}, 
+	{
+	  "item": "kamenridercraft:contract_chaostone"
+	} , 
+	{
+	  "item": "kamenridercraft:contract_chaostone"
+	}, 
+	{
+	  "item": "kamenridercraft:contract_chaostone"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:gasha_ticket"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "Agito Transformation Devices",
+    "description": "The transformation devices used by the Agito Riders.",
+    "icon": "kamenridercraft:alter_ring",
+    "sortnum": 1
+}

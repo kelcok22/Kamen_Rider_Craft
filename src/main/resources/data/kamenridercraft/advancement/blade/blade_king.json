@@ -29,7 +29,7 @@
 						"kamenridercraft:blay_buckle"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:evolution_caucasus\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_caucasus\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:blay_buckle"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:silver_evolution_caucasus\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:silver_evolution_caucasus\"}"
               }
 					}
 				  }

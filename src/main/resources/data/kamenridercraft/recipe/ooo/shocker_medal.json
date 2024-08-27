@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ooo_tamashii",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:shocker_emblem"
+	}, 
+	{
+	  "item": "kamenridercraft:cellmedal"
+	} , 
+	{
+	  "item": "kamenridercraft:rider_circuit"
+	} , 
+	{
+	  "item": "kamenridercraft:rider_circuit"
+	}, 
+	{
+	  "item": "kamenridercraft:rider_circuit"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:shocker_medal"
+  }
+}

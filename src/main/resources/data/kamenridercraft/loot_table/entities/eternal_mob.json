@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:eternal_memory"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:eternal_t2_memory"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:utopia_memory"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:unrefined_memory_t2",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

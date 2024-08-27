@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magia",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XMX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:dodo_zetsumerisekey"
+    }, "M": {
+      "item": "kamenridercraft:matsurida_z_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zetsumeriser_dodo"
+  }
+}

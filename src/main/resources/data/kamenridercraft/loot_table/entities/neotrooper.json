@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:perfectthebee_zecter"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:perfectdrake_zecter"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:perfectsasword_zecter"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:random_chance",
+		  "chance": 0.1
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dark_kabuto_zecter",
+		  "conditions": [
+			{
+			  "condition": "minecraft:random_chance",
+			  "chance": 0.25
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:unfinished_kabutick_zecter",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

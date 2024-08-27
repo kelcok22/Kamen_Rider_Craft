@@ -29,7 +29,7 @@
 						"kamenridercraft:kivadriver"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:tatsulot\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tatsulot\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:kivadriver"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:dogabaki_emperor\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dogabaki_emperor\"}"
               }
 					}
 				  }
@@ -61,7 +61,7 @@
 						"kamenridercraft:kivadriver"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:kiva_says_fuestle\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kiva_says_fuestle\"}"
               }
 					}
 				  }

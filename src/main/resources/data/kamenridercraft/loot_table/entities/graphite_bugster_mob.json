@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		
+		{
+		  "type": "minecraft:item",
+		  "weight": 2,
+		  "name": "kamenridercraft:drago_knight_hunter_z_gashat"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:proto_drago_knight_hunter_z_gashat"
+		}
+	  ]
+	},
+	   {
+	  "rolls": 1,
+	  "entries": [
+		
+		{
+		  "type": "minecraft:item",
+		  "weight": 4,
+		  "name": "kamenridercraft:blank_gashat",
+		   "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 3
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:gekitotsu_robots_gasha_trophy"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:jet_combat_gasha_trophy"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:giri_giri_chambara_gasha_trophy"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:drago_knight_hunter_z_gasha_trophy"
+		}
+		
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:bugster_virus_dna",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 5
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

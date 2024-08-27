@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:skull_memory"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:accel_memory"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:masquerade_memory"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+	   	{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:shika_medal"
+	   	},
+	   	{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:gazelle_medal"
+	   	},
+	   	{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:ushi_medal"
+	   	},
+	   	{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:gaiamemory"
+	   	}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:gaiamemory",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

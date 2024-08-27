@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:doremifa_beat_gasha_trophy",
+		  "weight": 4
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:toki_meki_crisis_gasha_trophy",
+		  "weight": 4
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:poppy_doremifa_beat_gashat",
+		  "weight": 1
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:toki_meki_crisis_gashat",
+		  "weight": 4
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_gashat",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 2
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

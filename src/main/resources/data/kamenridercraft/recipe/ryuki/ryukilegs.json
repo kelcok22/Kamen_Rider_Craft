@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kr_ryuki",
+ "pattern": [
+	"XXX",
+	"X X",
+	"X X"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:advent_card"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:ryukilegs"
+  }
+}

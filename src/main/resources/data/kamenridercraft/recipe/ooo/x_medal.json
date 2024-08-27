@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_medal",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:cellmedal"
+	}, 
+	{
+	  "item": "kamenridercraft:ridol_core"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:x_medal"
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Sasword Yaiver",
+	"icon": "kamenridercraft:sasword_yaiver",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used by $(l:kabuto/riders/sasword)Kamen Rider Sasword$(/l)$(br2)Used to obtain Sasword's $(l:kabuto/devices/sasword_rider_belt)ZECT Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/sasword_yaiver"
+		}
+	]
+}

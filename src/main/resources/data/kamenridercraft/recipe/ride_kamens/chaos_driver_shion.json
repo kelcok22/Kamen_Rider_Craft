@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shion",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:contract_chaostone"
+	}, "C": {
+	  "item": "kamenridercraft:chaos_ring_shion"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:chaos_driver_shion"
+  }
+}

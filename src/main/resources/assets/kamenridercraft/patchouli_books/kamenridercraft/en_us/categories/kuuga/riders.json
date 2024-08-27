@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kuuga/main",
+    "name": "Kuuga Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Kuuga.",
+    "icon": "kamenridercraft:kuugahead",
+    "sortnum": 0
+}

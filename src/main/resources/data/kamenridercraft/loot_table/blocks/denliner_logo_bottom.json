@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+	  {
+		"rolls": 1,
+		"bonus_rolls": 0,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:denliner_logo_bottom"
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:survives_explosion"
+		  }
+		]
+	  }
+	],
+	"random_sequence": "kamenridercraft:denliner_logo_bottom"
+  }
+  

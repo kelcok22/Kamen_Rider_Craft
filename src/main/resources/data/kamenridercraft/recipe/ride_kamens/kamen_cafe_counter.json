@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kamen_cafe_counter",
+  "pattern": [
+	"X",
+	"C"
+  ],
+  "key": {
+	"X": {
+		"item": "kamenridercraft:contract_chaostone"
+	},
+	"C": {
+	 "item": "minecraft:dark_oak_planks"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:kamen_cafe_counter"
+  }
+}

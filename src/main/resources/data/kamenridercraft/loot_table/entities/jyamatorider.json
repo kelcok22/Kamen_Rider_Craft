@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 8,
+		  "name": "kamenridercraft:fever_slot_raise_buckle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:jyamato_buckle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:discore_id"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 2,
+		  "name": "kamenridercraft:gigant_mission_box"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_rider_core_id",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:hatena_mission_box"
+		}
+	  ]
+	}
+  ]
+}

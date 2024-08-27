@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_mighty"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_dragon"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_pegasus"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_titan"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_growing"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kuuga_growing",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
