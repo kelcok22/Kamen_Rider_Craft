@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raise_weapons",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_rider_core_id"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:magnum_shooter_40x_raise_buckle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:magnum_shooter_40x_rifle"
+  }    
+}
+

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raise_weapons",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_rider_core_id"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+	    "tag": "kamenridercraft:gear/raise_riser_cards"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:laser_raise_riser"
+  }    
+}
+
