@@ -29,7 +29,7 @@
 						"kamenridercraft:arcle"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:kuuga_amazing_mighty\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:arcle"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:grandgouram\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:grandgouram\"}"
               }
 					}
 				  }

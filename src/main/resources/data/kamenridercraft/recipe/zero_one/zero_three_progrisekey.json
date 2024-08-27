@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zero_three",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:ark_one_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:zero_two_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:zero_three_progrisekey"
+  }
+}

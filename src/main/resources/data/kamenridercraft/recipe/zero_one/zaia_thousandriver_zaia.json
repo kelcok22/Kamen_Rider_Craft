@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zaia",
+  "pattern": [
+    "XXX",
+    "CXA",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:triceratops_zetsumerisekey"
+    }, "A": {
+      "item": "kamenridercraft:carnotaurus_zetsumerisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zaia_thousandriver_zaia"
+  }
+}

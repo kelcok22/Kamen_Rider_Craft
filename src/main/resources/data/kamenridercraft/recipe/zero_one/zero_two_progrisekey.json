@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zero_two",
+  "pattern": [
+    "XRX",
+    "YCM",
+    "XSX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_progrisekey"
+    }, "C": {
+      "item": "kamenridercraft:is_progrisekey"
+    }, "Y": {
+      "item": "kamenridercraft:metalcluster_hopper_progrisekey"
+    }, "M": {
+      "item": "kamenridercraft:shining_assault_hopper_progrisekey"
+    }, "S": {
+      "item": "kamenridercraft:shining_hopper_progrisekey"
+    }, "R": {
+      "item": "kamenridercraft:rising_hopper_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zero_two_progrisekey"
+  }
+}

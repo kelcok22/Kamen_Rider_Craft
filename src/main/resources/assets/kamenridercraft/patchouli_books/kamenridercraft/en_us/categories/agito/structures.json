@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "Overlord's Out-of-place Artifact",
+    "description": "",
+    "icon": "kamenridercraft:overlord_oopart2",
+    "sortnum": 5
+}

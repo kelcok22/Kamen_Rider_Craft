@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zero_one_metal_cluster_hopper",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:bengoshi_bingo_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:ikkan_nigiro_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:saikyo_takumi_oyakata_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:matsuda_enji_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:morifude_g_pen_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:okureru_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:dr_omigoto_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:sumida_smile_progrisekey"
+    } , 
+    {
+      "item": "kamenridercraft:mamoru_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:progrise_hopper_blade"
+  }
+}

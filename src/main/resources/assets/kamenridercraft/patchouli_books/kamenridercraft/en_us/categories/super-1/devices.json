@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:super-1/main",
+    "name": "Super-1 Transformation Devices",
+    "description": "The transformation devices used by Super-1.",
+    "icon": "kamenridercraft:cyclode",
+    "sortnum": 1
+}

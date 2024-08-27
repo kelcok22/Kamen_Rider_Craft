@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "Agito Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Agito.",
+    "icon": "kamenridercraft:agito_logo",
+    "sortnum": 4
+}

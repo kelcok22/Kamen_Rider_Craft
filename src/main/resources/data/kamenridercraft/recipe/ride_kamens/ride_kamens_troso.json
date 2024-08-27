@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ride_kamens",
+  "pattern": [
+	"X X",
+	"XXX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:contract_chaostone"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:ride_kamens_troso"
+  }
+}

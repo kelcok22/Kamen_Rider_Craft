@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider 555",
+    "description": "Everything related to the show, Kamen Rider 555.",
+    "icon": "kamenridercraft:faiz_logo",
+    "sortnum": 18
+}

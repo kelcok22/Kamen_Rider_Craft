@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ark_one",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:horobi_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:jin_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:ikazuchi_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:naki_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:ark_one_boss_block"
+  }
+}

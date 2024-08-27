@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:skyrider/main",
+    "name": "Skyrider Transformation Devices",
+    "description": "The transformation devices used by Skyrider.",
+    "icon": "kamenridercraft:tornado",
+    "sortnum": 1
+}

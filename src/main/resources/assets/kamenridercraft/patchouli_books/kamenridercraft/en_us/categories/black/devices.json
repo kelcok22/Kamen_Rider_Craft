@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black/main",
+    "name": "Black Transformation Devices",
+    "description": "The transformation devices used by the Black Riders.",
+    "icon": "kamenridercraft:vital_charger",
+    "sortnum": 1
+}

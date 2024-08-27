@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:perfect_puzzle_gasha_trophy",
+		  "weight": 1
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:knockout_fighter_gasha_trophy",
+		  "weight": 1
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+		  "weight": 1
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_gashat",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 2
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

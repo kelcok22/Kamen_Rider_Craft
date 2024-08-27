@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "card_warrior_kamen_rider_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:henshin_onsa_kurenai"
+	}, 
+	{
+	  "item": "kamenridercraft:faiz_axel_mission_memory"
+	} , 
+	{
+	  "item": "kamenridercraft:dragblacker_advent"
+	} , 
+	{
+	  "item": "kamenridercraft:card_warrior_kamen_rider_manga"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:bakuen_no_senshi"
+  }
+}

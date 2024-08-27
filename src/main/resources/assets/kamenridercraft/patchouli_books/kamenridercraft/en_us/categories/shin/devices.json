@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin/main",
+    "name": "Shin Transformation Devices",
+    "description": "The transformation devices used by Shin.",
+    "icon": "kamenridercraft:grasshopper_dna",
+    "sortnum": 1
+}

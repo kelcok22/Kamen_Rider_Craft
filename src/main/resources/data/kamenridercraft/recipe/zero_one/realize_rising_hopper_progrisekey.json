@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zero_one_realizing_hopper",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:ark_scorpion_progrisekey"
+    }, 
+    {
+      "item": "kamenridercraft:zero_two_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:realize_rising_hopper_progrisekey"
+  }
+}

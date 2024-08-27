@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zero_three",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:zero_three_progrisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hiden_zero_three_driver"
+  }
+}

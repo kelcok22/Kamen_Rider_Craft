@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kickhopper_zecter"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:punchhopper_zecter"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:lady_zecter"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:random_chance",
+		  "chance": 0.1
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:gatack_zecter",
+		  "conditions": [
+			{
+			  "condition": "minecraft:random_chance",
+			  "chance": 0.25
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:mini_zecter",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

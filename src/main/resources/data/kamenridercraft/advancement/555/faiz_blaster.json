@@ -29,7 +29,7 @@
 						"kamenridercraft:faiz_driver"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:faiz_blaster_mission_memory\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_blaster_mission_memory\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:faiz_driver"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}"
               }
 					}
 				  }

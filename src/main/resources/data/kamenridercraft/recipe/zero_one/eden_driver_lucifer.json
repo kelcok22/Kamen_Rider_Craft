@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lucifer",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XCX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:eden_zetsumerisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:eden_driver_lucifer"
+  }
+}

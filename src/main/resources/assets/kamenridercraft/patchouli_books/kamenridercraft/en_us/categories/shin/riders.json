@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin/main",
+    "name": "Kamen Rider Shin",
+    "description": "",
+    "icon": "kamenridercraft:shinhead",
+    "sortnum": 0
+}

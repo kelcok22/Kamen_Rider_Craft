@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "V3 Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider V3.",
+    "icon": "kamenridercraft:v3head",
+    "sortnum": 0
+}

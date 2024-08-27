@@ -195,8 +195,7 @@ public class KamenRiderCraftCore
                         if (p_174637_ == null) {
                             return 0.0F;
                         } else {
-                            return 1.0F;
-                            //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                            return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration(p_174637_) - p_174637_.getUseItemRemainingTicks()) / 1.0F;
                         }
                     });
                 }

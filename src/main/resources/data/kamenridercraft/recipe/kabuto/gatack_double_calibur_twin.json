@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "gatack",
+	"ingredients": [
+	  {
+		"item": "kamenridercraft:gatack_double_calibur"
+	  },
+	  {
+		"item": "kamenridercraft:gatack_double_calibur_minus"
+	  }
+	],
+	"result": {
+	  "item": "kamenridercraft:gatack_double_calibur_twin"
+	}
+  }
+  

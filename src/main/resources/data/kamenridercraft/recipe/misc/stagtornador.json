@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "card_warrior_kamen_rider_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:agito_ground"
+	}, 
+	{
+	  "item": "kamenridercraft:card_warrior_kamen_rider_manga"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:stagtornador"
+  }
+}

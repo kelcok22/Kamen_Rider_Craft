@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "kabuto_hyper",
+	"pattern": [
+	  "XMX",
+	  "CBX",
+	  "XDX"
+	],
+	"key": {
+	  "X": {
+		"item": "kamenridercraft:mini_zecter"
+	  },
+	  "B": {
+		"item": "kamenridercraft:base_sword"
+	  },
+	  "M": {
+		"item": "kamenridercraft:perfectdrake_zecter"
+	  },
+	  "C": {
+		"item": "kamenridercraft:perfectthebee_zecter"
+	  },
+	  "D": {
+		"item": "kamenridercraft:perfectsasword_zecter"
+	  }
+	},
+	"result": {
+	  "item": "kamenridercraft:perfect_zecter"
+	}
+  }

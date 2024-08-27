@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:sai_medal"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:gorilla_medal"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:zou_medal"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:greeed_blet_gamel"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 9,
+		  "name": "kamenridercraft:cellmedal"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:cellmedal",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

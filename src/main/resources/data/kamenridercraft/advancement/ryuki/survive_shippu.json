@@ -29,7 +29,7 @@
 						"kamenridercraft:v_buckle_knight"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_shippu\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_shippu\"}"
               }
 					}
 				  }
@@ -45,7 +45,7 @@
 						"kamenridercraft:v_buckle_raia"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_shippu_raia\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_shippu_raia\"}"
               }
 					}
 				  }
@@ -61,7 +61,7 @@
 						"kamenridercraft:v_buckle_ouja"
 					  ],
 					  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_shippu_ouja\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_shippu_ouja\"}"
               }
 					}
 				  }

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ichigo/main",
+    "name": "Ichigo Mobs",
+    "description": "Every mob from or relating to the original Kamen Rider series.",
+    "icon": "kamenridercraft:shocker_emblem",
+    "sortnum": 3
+}

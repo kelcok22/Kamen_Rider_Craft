@@ -1,0 +1,299 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "bonus_rolls": 0,
+	  "entries": [
+		{
+		  "type": "minecraft:alternatives",
+		  "children": [
+			{
+			  "type": "minecraft:item",
+			  "name": "kamenridercraft:deepslate_stone_kiva",
+			  "conditions": [
+				{
+				  "condition": "minecraft:match_tool",
+				  "predicate": {
+					"enchantments": [
+					  {
+						"enchantment": "minecraft:silk_touch",
+						"levels": {
+						  "min": 1
+						}
+					  }
+					]
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 7,
+		  "name": "kamenridercraft:fuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 4,
+		  "name": "kamenridercraft:wakeupfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:garulufuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:basshaafuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:doggafuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:tatsulot",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:kiva_says_fuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:darkwakeupfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:fuestlefake",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 4,
+		  "name": "kamenridercraft:knucklefuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:caliburfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:risingfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 2,
+		  "name": "kamenridercraft:sagafuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:newwakeupfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:keyfuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:kivalafuestle",
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:inverted",
+		  "term": {
+			"condition": "minecraft:match_tool",
+			"predicate": {
+			  "enchantments": [
+				{
+				  "enchantment": "minecraft:silk_touch",
+				  "levels": {
+					"min": 1
+				  }
+				}
+			  ]
+			}
+		  }
+		}
+	  ]
+	}
+  ],
+  "random_sequence": "kamenridercraft:deepslate_stone_kiva"
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "kabuto",
+	"ingredients": [
+	  {
+		"item": "kamenridercraft:kabuto_kunai"
+	  }
+	],
+	"result": {
+	  "item": "kamenridercraft:kabuto_kunai_kunai"
+	}
+  }
+  

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ikazuchi",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:dodo_zetsumerisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:forceriser_ikazuchi"
+  }
+}

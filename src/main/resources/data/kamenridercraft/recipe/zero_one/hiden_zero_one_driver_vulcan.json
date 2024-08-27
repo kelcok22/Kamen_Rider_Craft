@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vulcan",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:hiden_metal"
+    }, "C": {
+      "item": "kamenridercraft:dire_wolf_zetsumerisekey"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hiden_zero_one_driver_vulcan"
+  }
+}

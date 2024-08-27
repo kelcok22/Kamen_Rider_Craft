@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ancient_ooo",
+  "pattern": [
+	"XGX",
+	"ABC",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:cellmedal"
+	}, "A": {
+	  "item": "kamenridercraft:mukade_medal"
+	}, "B": {
+	  "item": "kamenridercraft:hachi_medal"
+	}, "C": {
+	  "item": "kamenridercraft:ari_medal"
+	}, "G": {
+	  "item": "kamenridercraft:greeed_absorption_core"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:goda_boss_block"
+  }
+}

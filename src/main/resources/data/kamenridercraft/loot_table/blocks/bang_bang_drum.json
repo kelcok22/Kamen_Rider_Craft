@@ -1,0 +1,401 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "rolls": 0,
+	  "bonus_rolls": 0,
+	  "entries": [
+		{
+		  "type": "minecraft:alternatives",
+		  "children": [
+			{
+			  "type": "minecraft:item",
+			  "name": "kamenridercraft:bang_bang_drum",
+			  "conditions": [
+				{
+				  "condition": "minecraft:match_tool",
+				  "predicate": {
+					"enchantments": [
+					  {
+						"enchantment": "minecraft:silk_touch",
+						"levels": {
+						  "min": 1
+						}
+					  }
+					]
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:bug_energy_item",
+		  "weight": 2,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:speed_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:iron_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:instigate_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:jump_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:muscle_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shrink_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:stretch_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:invisible_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:confusion_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:emission_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:reflect_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:save_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:reverse_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:giant_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:liquid_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:dark_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:balloon_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:end_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:halt_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:flatten_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:lucky_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:sleep_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:recover_energy_item",
+		  "weight": 1,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			},
+			{
+			  "function": "minecraft:explosion_decay"
+			}
+		  ]
+		}
+	  ]
+	}
+  ],
+  "random_sequence": "kamenridercraft:bang_bang_drum"
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ichigo/main",
+    "name": "Ichigo Transformation Devices",
+    "description": "The transformation devices used by the Ichigo Riders.",
+    "icon": "kamenridercraft:typhoon_ichigo",
+    "sortnum": 1
+}
