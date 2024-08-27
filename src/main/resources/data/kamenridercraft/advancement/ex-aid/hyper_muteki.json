@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:gamer_driver_ex_aid"
 			  ],
-			  "nbt": "{slot_tex1:\"hyper_muteki_gashat\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:hyper_muteki_gashat\"}"
+              }
 			}
 		  }
 		}

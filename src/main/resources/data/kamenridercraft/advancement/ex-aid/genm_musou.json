@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:gamer_driver_genmu"
 			  ],
-			  "nbt": "{slot_tex1:\"genm_musou_gashat\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:genm_musou_gashat\"}"
+              }
 			}
 		  }
 		}

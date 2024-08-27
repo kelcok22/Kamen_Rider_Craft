@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:decadriver"
 			  ],
-			  "nbt": "{slot_tex1:\"k_touch\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:k_touch\"}"
+              }
 			}
 		  }
 		}

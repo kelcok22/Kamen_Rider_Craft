@@ -28,7 +28,9 @@
 					  "items": [
 						"kamenridercraft:v_buckle_ryuki"
 					  ],
-					  "nbt": "{slot_tex1:\"survive_rekka\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_rekka\"}"
+              }
 					}
 				  }
 				}
@@ -42,7 +44,9 @@
 					  "items": [
 						"kamenridercraft:v_buckle_ryuga"
 					  ],
-					  "nbt": "{slot_tex1:\"survive_rekka_ryuga\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:survive_rekka_ryuga\"}"
+              }
 					}
 				  }
 				}

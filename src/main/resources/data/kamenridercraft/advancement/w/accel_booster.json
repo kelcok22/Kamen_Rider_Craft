@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:acceldriver"
 			  ],
-			  "nbt": "{slot_tex1:\"accel_booster_memory\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:accel_booster_memory\"}"
+              }
 			}
 		  }
 		}

@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:arcle"
 			  ],
-			  "nbt": "{slot_tex1:\"kuuga_ultimate\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_ultimate\"}"
+              }
 			}
 		  }
 		}

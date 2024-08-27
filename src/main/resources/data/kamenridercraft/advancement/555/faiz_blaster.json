@@ -28,7 +28,9 @@
 					  "items": [
 						"kamenridercraft:faiz_driver"
 					  ],
-					  "nbt": "{slot_tex1:\"faiz_blaster_mission_memory\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:faiz_blaster_mission_memory\"}"
+              }
 					}
 				  }
 				}
@@ -42,7 +44,9 @@
 					  "items": [
 						"kamenridercraft:faiz_driver"
 					  ],
-					  "nbt": "{slot_tex1:\"faiz_gold_blaster_mission_memory\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}"
+              }
 					}
 				  }
 				}

@@ -36,7 +36,9 @@
 				"items": [
 				  "kamenridercraft:desire_driver_geats"
 				],
-				"nbt": "{slot_tex2:\"command_twin_buckle_cannon\"}"
+				"predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:command_twin_buckle_cannon\"}"
+              }
 			  }
 			}
 		  }
@@ -66,7 +68,9 @@
 				"items": [
 				  "kamenridercraft:desire_driver_geats"
 				],
-				"nbt": "{slot_tex3:\"command_twin_buckle_cannon_l\"}"
+				"predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:command_twin_buckle_cannon_l\"}"
+              }
 			  }
 			}
 		  }

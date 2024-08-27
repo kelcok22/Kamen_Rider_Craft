@@ -28,7 +28,9 @@
 					  "items": [
 						"kamenridercraft:arcle"
 					  ],
-					  "nbt": "{slot_tex1:\"kuuga_amazing_mighty\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:kuuga_amazing_mighty\"}"
+              }
 					}
 				  }
 				}
@@ -42,7 +44,9 @@
 					  "items": [
 						"kamenridercraft:arcle"
 					  ],
-					  "nbt": "{slot_tex1:\"grandgouram\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:grandgouram\"}"
+              }
 					}
 				  }
 				}

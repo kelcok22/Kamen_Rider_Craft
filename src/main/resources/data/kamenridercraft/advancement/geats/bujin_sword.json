@@ -36,7 +36,9 @@
   			"items": [
   			  "kamenridercraft:desire_driver_tycoon"
   			],
-  		  "nbt": "{slot_tex3:\"bujin_sword_raise_buckle\"}"
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:bujin_sword_raise_buckle\"}"
+              }
   		  }
   		}
   	  }

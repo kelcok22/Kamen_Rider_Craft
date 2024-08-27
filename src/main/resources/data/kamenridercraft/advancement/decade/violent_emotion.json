@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:decadriver"
 			  ],
-			  "nbt": "{slot_tex1:\"decade_violent_emotion_card\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:decade_violent_emotion_card\"}"
+              }
 			}
 		  }
 		}

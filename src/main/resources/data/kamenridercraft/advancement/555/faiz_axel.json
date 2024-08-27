@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:faiz_driver"
 			  ],
-			  "nbt": "{slot_tex1:\"faiz_axel_mission_memory\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_mission_memory\"}"
+              }
 			}
 		  }
 		}

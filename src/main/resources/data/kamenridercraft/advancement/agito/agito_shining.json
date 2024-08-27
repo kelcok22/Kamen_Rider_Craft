@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:alter_ring"
 			  ],
-			  "nbt": "{slot_tex1:\"agito_shining\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:agito_shining\"}"
+              }
 			}
 		  }
 		}

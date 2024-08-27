@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:sun_riser"
 			  ],
-			  "nbt": "{slot_tex1:\"bio_core\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:bio_core\"}"
+              }
 			}
 		  }
 		}
