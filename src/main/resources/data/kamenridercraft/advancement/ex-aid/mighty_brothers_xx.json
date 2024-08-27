@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:gamer_driver_ex_aid"
 			  ],
-			  "nbt": "{slot_tex1:\"mighty_brothers_xx_gashat\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat\"}"
+              }
 			}
 		  }
 		}

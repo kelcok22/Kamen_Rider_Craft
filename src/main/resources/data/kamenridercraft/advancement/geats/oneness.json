@@ -36,7 +36,9 @@
   			"items": [
   			  "kamenridercraft:desire_driver_geats"
   			],
-  		  "nbt": "{slot_tex2:\"oneness_raise_buckle\",slot_tex3:\"boost_mkiii_raise_buckle\"}"
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:oneness_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}"
+              }
   		  }
   		}
   	  }

@@ -28,7 +28,9 @@
 					  "items": [
 						"kamenridercraft:kivadriver"
 					  ],
-					  "nbt": "{slot_tex1:\"tatsulot\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:tatsulot\"}"
+              }
 					}
 				  }
 				}
@@ -42,7 +44,9 @@
 					  "items": [
 						"kamenridercraft:kivadriver"
 					  ],
-					  "nbt": "{slot_tex1:\"dogabaki_emperor\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:dogabaki_emperor\"}"
+              }
 					}
 				  }
 				}
@@ -56,7 +60,9 @@
 					  "items": [
 						"kamenridercraft:kivadriver"
 					  ],
-					  "nbt": "{slot_tex1:\"kiva_says_fuestle\"}"
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:kiva_says_fuestle\"}"
+              }
 					}
 				  }
 				}

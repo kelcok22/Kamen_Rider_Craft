@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:wdriver"
 			  ],
-			  "nbt": "{slot_tex1:\"fang_memory\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fang_memory\"}"
+              }
 			}
 		  }
 		}

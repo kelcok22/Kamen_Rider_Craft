@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:v_buckle_ouja"
 			  ],
-			  "nbt": "{slot_tex1:\"survive_mugen\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_mugen\"}"
+              }
 			}
 		  }
 		}

@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:arcle"
 			  ],
-			  "nbt": "{slot_tex1:\"kuuga_rising_mighty\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_mighty\"}"
+              }
 			}
 		  }
 		}
@@ -66,7 +68,9 @@
 			  "items": [
 				"kamenridercraft:arcle"
 			  ],
-			  "nbt": "{slot_tex1:\"kuuga_rising_dragon\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_dragon\"}"
+              }
 			}
 		  }
 		}
@@ -96,7 +100,9 @@
 			  "items": [
 				"kamenridercraft:arcle"
 			  ],
-			  "nbt": "{slot_tex1:\"kuuga_rising_pegasus\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus\"}"
+              }
 			}
 		  }
 		}
@@ -126,7 +132,9 @@
 			  "items": [
 				"kamenridercraft:arcle"
 			  ],
-			  "nbt": "{slot_tex1:\"kuuga_rising_titan\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_titan\"}"
+              }
 			}
 		  }
 		}

@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:gamer_driver_snipe"
 			  ],
-			  "nbt": "{slot_tex2:\"bang_bang_simulation_gashat\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}"
+              }
 			}
 		  }
 		}

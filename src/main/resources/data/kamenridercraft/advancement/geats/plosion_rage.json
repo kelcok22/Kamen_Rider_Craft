@@ -36,7 +36,9 @@
   			"items": [
   			  "kamenridercraft:desire_driver_buffa"
   			],
-  		  "nbt": "{slot_tex3:\"plosion_rage_raise_buckle\"}"
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:plosion_rage_raise_buckle\"}"
+              }
   		  }
   		}
   	  }

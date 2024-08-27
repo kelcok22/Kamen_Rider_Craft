@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:acceldriver"
 			  ],
-			  "nbt": "{slot_tex1:\"trial_memory\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:trial_memory\"}"
+              }
 			}
 		  }
 		}

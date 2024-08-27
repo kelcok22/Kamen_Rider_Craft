@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:gamer_driver_brave"
 			  ],
-			  "nbt": "{slot_tex2:\"taddle_fantasy_gashat\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:taddle_fantasy_gashat\"}"
+              }
 			}
 		  }
 		}

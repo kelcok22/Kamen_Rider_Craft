@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:zeronos_belt"
 			  ],
-			  "nbt": "{slot_tex1:\"zeronos_zero_card\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:zeronos_zero_card\"}"
+              }
 			}
 		  }
 		}

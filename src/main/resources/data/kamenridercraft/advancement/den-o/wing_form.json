@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:den_o_belt"
 			  ],
-			  "nbt": "{slot_tex1:\"rider_ticket_wing\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}"
+              }
 			}
 		  }
 		}

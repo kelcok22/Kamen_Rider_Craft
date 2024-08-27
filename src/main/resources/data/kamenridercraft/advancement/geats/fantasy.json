@@ -36,7 +36,9 @@
   			"items": [
   			  "kamenridercraft:desire_driver_na_go"
   			],
-  		  	"nbt": "{slot_tex2:\"fantasy_raise_buckle\"}"
+  		  	"predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:fantasy_raise_buckle\"}"
+              }
   		  }
   		}
   	  }

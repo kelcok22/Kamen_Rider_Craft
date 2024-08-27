@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:decadriver"
 			  ],
-			  "nbt": "{slot_tex1:\"faiz_axel_card\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:faiz_axel_card\"}"
+              }
 			}
 		  }
 		}

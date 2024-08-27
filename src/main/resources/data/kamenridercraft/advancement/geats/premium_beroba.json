@@ -36,7 +36,9 @@
 				"items": [
 				  "kamenridercraft:raise_riser_belt_beroba"
 				],
-  		  		"nbt": "{slot_tex1:\"beroba_black_raise_riser_card\"}"
+  		  		"predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:beroba_black_raise_riser_card\"}"
+              }
 			  }
 			}
 		  }

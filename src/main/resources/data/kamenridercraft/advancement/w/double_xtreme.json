@@ -36,7 +36,9 @@
 			  "items": [
 				"kamenridercraft:wdriver"
 			  ],
-			  "nbt": "{slot_tex1:\"xtreme_memory\"}"
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:xtreme_memory\"}"
+              }
 			}
 		  }
 		}
