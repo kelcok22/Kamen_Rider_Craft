@@ -29,36 +29,28 @@ public class ThousandriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 		
 	}
-/**
+
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+		super.inventoryTick(stack, level, entity,slotId, isSelected);
 
-			super.inventoryTick(stack, level, entity,slotId, isSelected);
-
-		if (entity instanceof LivingEntity player) {
-		if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-			if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-				if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-					if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == this){
-						if (!level.isClientSide && player.hasEffect(Effect_core.BUGSTER)
-                        & player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())!=0
-                        & player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())!=0) {
-							ItemStack item = new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1);
-							if (item != null) {
-                                player.getInventory().clearOrCountMatchingItems(ItemStack -> ItemStack.getItem() == Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 1, ((Container) player.getInventory()));
-								ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), item, 0, 0, 0);
-								entity.setPickUpDelay(0);
-								level.addFreshEntity(entity);
-                                if (player.hasEffect(Effect_core.BUGSTER)) player.sendSystemMessage(Component.translatable("President Dan Kuroto!").withStyle(ChatFormatting.LIGHT_PURPLE));
-                                player.removeEffect(Effect_core.BUGSTER);
-							}
-                        }
-					}
-				}
+		if (entity instanceof Player player && !level.isClientSide) {
+			if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS
+			&& player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO
+			&& player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD
+			&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == this
+			&& player.hasEffect(Effect_core.BUGSTER)
+        	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())!=0
+        	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())!=0) {
+        	    player.getInventory().clearOrCountMatchingItems(ItemStack -> ItemStack.getItem() == Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 1, player.getInventory());
+				ItemEntity key = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1), 0, 0, 0);
+				key.setPickUpDelay(0);
+				level.addFreshEntity(key);
+        	    player.sendSystemMessage(Component.translatable("President Dan Kuroto!").withStyle(ChatFormatting.LIGHT_PURPLE));
+        	    player.removeEffect(Effect_core.BUGSTER);
 			}
 		}
-
 	}
-**/
+
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
