@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "raise_weapons",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:ninja_dueler_twin_blade_mode"
+    }, 
+    {
+      "item": "kamenridercraft:ninja_dueler_twin_blade_mode2"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:ninja_dueler"
+  }
+}

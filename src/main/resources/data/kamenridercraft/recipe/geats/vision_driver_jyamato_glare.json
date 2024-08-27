@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desire_driver",
+  "pattern": [
+    "XXX",
+    "XCJ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_rider_core_id"
+    }, "C": {
+      "item": "kamenridercraft:providence_card_gazer"
+    }, "J": {
+      "item": "kamenridercraft:jyamato_buckle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:vision_driver_jyamato_glare"
+  }
+}

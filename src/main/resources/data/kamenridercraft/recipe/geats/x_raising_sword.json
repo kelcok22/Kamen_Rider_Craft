@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "raise_weapons",
+  "pattern": [
+    "XXX",
+    "XSX",
+    "XMX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_rider_core_id"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:x_geats_raise_buckle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:x_raising_sword"
+  }    
+}
+
