@@ -25,6 +25,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -56,17 +57,12 @@ public class Rider_Blocks {
 			() -> new KaijinStoneGenerator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	/**
 	public static final DeferredBlock<Block>BLUE_ROSE = registerBlock("blue_rose",
-			() -> new FlowerBlock(() -> MobEffects.MOVEMENT_SPEED, 5, 
-					BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion().noCollission()));
+			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5, 
+					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final RegistryObject<Block> POTTED_BLUE_ROSE = BLOCKS.register("potted_blue_rose",
-			() -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), Rider_Blocks.BLUE_ROSE, 
-					BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
-
-
-	 **/
+	public static final DeferredBlock<Block> POTTED_BLUE_ROSE = registerBlock("potted_blue_rose",
+			() -> new FlowerPotBlock(Rider_Blocks.BLUE_ROSE.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
 	public static final DeferredBlock<Block> KUUGA_ORE = registerBlock("stone_kuuga",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
@@ -228,6 +224,8 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
 					.strength(0.5f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+			// () -> new ColoredFallingBlock(new ColorRGBA(13224123),
+			// BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR = registerBlock("denliner_interior",
