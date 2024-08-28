@@ -2,6 +2,7 @@
    "parent": "block/orientable",
    "render_type": "minecraft:translucent",
     "textures": {
+      "particle": "kamenridercraft:block/denliner_interior_windo",
         "up": "kamenridercraft:block/denliner_interior",
         "down": "kamenridercraft:block/denliner_interior",
         "west": "kamenridercraft:block/denliner_interior",
