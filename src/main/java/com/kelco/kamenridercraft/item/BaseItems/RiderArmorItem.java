@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -34,7 +35,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
 
     public RiderArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties) {
-        super(armorMaterial, type, properties.stacksTo(1));
+        super(armorMaterial, type, properties.stacksTo(1).durability(type ==Type.BOOTS?600:500));
 
     }
 
@@ -51,6 +52,7 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
             }
         });
     }
+
 
     public RiderArmorItem AddToTabList(List<Item> TabList) {
         TabList.add(this);

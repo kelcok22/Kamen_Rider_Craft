@@ -262,7 +262,7 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLADE_JACK_CRAD = ITEMS.register("blade_jack_card",
