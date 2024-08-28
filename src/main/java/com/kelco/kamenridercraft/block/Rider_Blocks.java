@@ -10,8 +10,6 @@ import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -28,7 +26,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Rider_Blocks {
@@ -155,7 +152,7 @@ public class Rider_Blocks {
 	
 	public static final DeferredBlock<Block> GANBERIZING_MACHINE = registerBlock("ganbarizing_machine",
 			() -> new GanbarizingMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL).lightLevel(null).dynamicShape().lightLevel((p_152632_) -> {
+					.strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape().lightLevel((p_152632_) -> {
 					      return 10;}),Block.box(1, 0, 1, 14,32, 14)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
