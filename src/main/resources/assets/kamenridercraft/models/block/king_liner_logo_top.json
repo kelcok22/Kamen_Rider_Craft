@@ -1,6 +1,7 @@
 {
    "parent": "block/orientable",
     "textures": {
+      "particle": "kamenridercraft:block/king_liner_red",
         "up": "kamenridercraft:block/king_liner_red",
         "down": "kamenridercraft:block/king_liner_red",
         "west": "kamenridercraft:block/king_liner_logo_top",

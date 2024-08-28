@@ -75,15 +75,15 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> G_SYSTEM_CHIP_PROGRAMMER = registerBlock("g_chip_programer",
 			() -> new GSystemChipProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	/**
+
 	public static final DeferredBlock<Block>  GLASS_RYUKI = registerBlock("glass_ryuki",
-			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_STAINED_GLASS)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6),DyeColor.RED).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block>  DEEPSLATE_GLASS_RYUKI = registerBlock("deepslate_glass_ryuki",
 			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6),DyeColor.BLACK).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+
 	public static final DeferredBlock<Block>  BLADE_ORE = registerBlock("stone_blade",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -91,7 +91,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block>  DEEPSLATE_BLADE_ORE = registerBlock("deepslate_stone_blade",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	
+
 	public static final DeferredBlock<Block>  HIBIKI_ORE = registerBlock("stone_hibiki",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
@@ -107,10 +107,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block>  DEEPSLATE_KIVA_ORE = registerBlock("deepslate_stone_kiva",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
-/**
+
 	public static final DeferredBlock<Block>  FANGIRE_GLASS = registerBlock("fangire_glass",
-			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.copy(Blocks.GLASS), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 	
 	
 	public static final DeferredBlock<Block>  PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
@@ -240,11 +240,11 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	/**
+
 	public static final DeferredBlock<Block> DENLINER_INTERIOR_WINDOW = registerBlock("denliner_interior_windo",
-			() -> new GlassBaseFacingBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)
-					.strength(2f),DyeColor.BLUE).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE = registerBlock("denliner_side_with_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
@@ -386,11 +386,11 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	/**
+
 	public static final DeferredBlock<Block> KING_LINER_WINDOW = registerBlock("king_liner_windo",
-			() -> new GlassBaseFacingBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)
-					.strength(2f),DyeColor.BLUE).AddToTabList(RiderTabs.RIDER_BLOCK));
-		**/
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> GAOH_LINER_GOLD = registerBlock("gaoh_liner_gold",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
@@ -399,11 +399,11 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GAOH_LINER_GREEN = registerBlock("gaoh_liner_green",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
-	/**
+
 	public static final DeferredBlock<Block> GAOH_LINER_WINDOW = registerBlock("gaoh_liner_windo",
-			() -> new GlassBaseFacingBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)
-					.strength(2f),DyeColor.LIME).AddToTabList(RiderTabs.RIDER_BLOCK));
-	**/
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> GAOHLINER_LOGO_TOP = registerBlock("gaohliner_logo_top",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)

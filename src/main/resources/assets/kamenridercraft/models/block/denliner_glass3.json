@@ -1,6 +1,7 @@
 {
    "parent": "block/orientable",
     "textures": {
+      "particle": "kamenridercraft:block/denliner_glass",
         "up": "kamenridercraft:block/denliner_glass3",
         "down": "kamenridercraft:block/denliner_glass",
         "west": "kamenridercraft:block/denliner_glass",
