@@ -26,13 +26,17 @@ public class RiderTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
             KamenRiderCraftCore.MOD_ID) ;
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("krc_998_misc_tab", () ->
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("krc_997_misc_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.RIDER_CIRCUIT.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.literal("Misc. Rider Items")).build());
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab>  RiderblockTab = CREATIVE_MODE_TABS.register("krc_999_blocks_tab", () ->
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab>  RiderblockTab = CREATIVE_MODE_TABS.register("krc_998_blocks_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.MONITOR.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.literal("Rider Blocks")).build());
+
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab>  RiderdecorTab = CREATIVE_MODE_TABS.register("krc_999_blocks_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Rider_Blocks.PLANKS_LIGHT_BLUE.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+                    .title(Component.literal("Rider Blocks Decor")).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> IchigoTab = CREATIVE_MODE_TABS.register("krc_010_ichigo_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Ichigo_Rider_Items.ICHIGOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
@@ -207,6 +211,7 @@ public class RiderTabs {
     public static List<Item> BLACK_SUN_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Block> RIDER_BLOCK= new ArrayList<Block>();
+    public static List<Block> RIDER_DECOR= new ArrayList<Block>();
 
 
     public static List<Item> Misc_TAB_ITEM= new ArrayList<Item>();
@@ -423,6 +428,12 @@ public class RiderTabs {
                 event.accept( RiderTabs.RIDER_BLOCK.get(i));
             }
            // event.accept(Rider_Blocks.BLUE_ROSE.get());
+
+        }else if(event.getTab() == RiderTabs.RiderdecorTab.get()) {
+            for (int i = 0; i < RiderTabs.RIDER_DECOR.size(); i++)
+            {
+                event.accept( RiderTabs.RIDER_DECOR.get(i));
+            }
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 /**
