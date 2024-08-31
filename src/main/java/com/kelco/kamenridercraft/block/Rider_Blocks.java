@@ -112,7 +112,7 @@ public class Rider_Blocks {
 	
 	public static final DeferredBlock<Block>  PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	//.lightLevel((glow) -> { return 15; })
 	
 	public static final DeferredBlock<Block>  GAIA_MEMORY_ORE = registerBlock("gaiamemoryblock",
@@ -135,7 +135,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
 			() -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> BANG_BANG_DRUM = registerBlock("bang_bang_drum",
 			() -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
@@ -158,11 +158,11 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> COUNTER_95DO = registerBlock("counter_95do",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> GINGA_METEOR = registerBlock("ginga_meteor",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> HIDEN_3D_PRINTER = registerBlock("hiden_3d_printer",
 			() -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -174,12 +174,12 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	
 	public static final DeferredBlock<Block> MONITOR = registerBlock("monitor",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	//.lightLevel((glow) -> { return 15; })
 
 	public static final DeferredBlock<Block> OVERLORD_OOPART = registerBlock("overlord_oopart",
@@ -192,295 +192,295 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> PLANKS_BIG_OAK_GOLDEN_TRIM = registerBlock("planks_big_oak_golden_trim",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> PLANKS_BROWN = registerBlock("planks_brown",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> PLANKS_DARK_BLUE = registerBlock("planks_dark_blue",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> PLANKS_LIGHT_BLUE = registerBlock("planks_light_blue",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block>PLANKS_WHITE = registerBlock("planks_white",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> QUARTZ_BLOCK_GOLD_TRIM = registerBlock("quartz_block_gold_trim",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SPRUCE_FLOORING = registerBlock("spruce_flooring",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
-					.strength(0.5f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(0.5f)).AddToTabList(RiderTabs.RIDER_DECOR));
 			// () -> new ColoredFallingBlock(new ColorRGBA(13224123),
 			// BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR = registerBlock("denliner_interior",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR_DARKER = registerBlock("denliner_interior_darker",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR_WITH_LINE = registerBlock("denliner_interior_with_line",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR_WINDOW = registerBlock("denliner_interior_windo",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE = registerBlock("denliner_side_with_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_SIDE_WITH_START_LINE = registerBlock("denliner_side_with_start_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE_IKAZUCHI = registerBlock("denliner_side_with_line_ikazuchi",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE_REKKOU = registerBlock("denliner_side_with_line_rekkou",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_ROOF = registerBlock("denliner_roof",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> DENLINER_LOGO_TOP = registerBlock("denliner_logo_top",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_LOGO_BOTTOM = registerBlock("denliner_logo_bottom",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_LOGO_SIDE = registerBlock("denliner_logo_side",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_LOGO_SIDER = registerBlock("denliner_logo_sider",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 				
 	public static final DeferredBlock<Block> DENLINER_GLASS = registerBlock("denliner_glass",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_GLASS2 = registerBlock("denliner_glass2",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_GLASS3 = registerBlock("denliner_glass3",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_GLASS_IKAZUCHI = registerBlock("denliner_glass_ikazuchi",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_GLASS_REKKOU = registerBlock("denliner_glass_rekkou",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEGA_DENLINER_GLASS = registerBlock("nega_denliner_glass",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> DENLINER_GOLD = registerBlock("denliner_gold",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_MATEL = registerBlock("denliner_matel",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_MATEL_TOP = registerBlock("denliner_matel_top",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_MATEL_TOP2 = registerBlock("denliner_matel_top2",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_MATEL_SIDE = registerBlock("denliner_matel_side",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> DENLINER_MATEL_DARK = registerBlock("denliner_matel_dark",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> DENLINER_MATEL_DARK_LINE = registerBlock("denliner_matel_dark_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> NEW_DENLINER_INTERIOR = registerBlock("new_denliner_interior",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_SIDE_WITH_LINE = registerBlock("new_denliner_side_with_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_SIDE_WITH_START_LINE = registerBlock("new_denliner_side_with_start_line",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_LOGO_TOP = registerBlock("new_denliner_logo_top",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_LOGO_BOTTOM = registerBlock("new_denliner_logo_bottom",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_MATEL_TOP = registerBlock("new_denliner_matel_top",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_MATEL_TOP2 = registerBlock("new_denliner_matel_top2",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> NEW_DENLINER_MATEL_SIDE = registerBlock("new_denliner_matel_side",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> KING_LINER_RED = registerBlock("king_liner_red",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> KING_LINER_LOGO_TOP = registerBlock("king_liner_logo_top",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> KING_LINER_LOGO_BOTTOM = registerBlock("king_liner_logo_bottom",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> KING_LINER_LOGO_SIDE = registerBlock("king_liner_logo_side",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> KING_LINER_LOGO_SIDER = registerBlock("king_liner_logo_sider",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> KING_LINER_WINDOW = registerBlock("king_liner_windo",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> GAOH_LINER_GOLD = registerBlock("gaoh_liner_gold",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> GAOH_LINER_GREEN = registerBlock("gaoh_liner_green",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> GAOH_LINER_WINDOW = registerBlock("gaoh_liner_windo",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> GAOHLINER_LOGO_TOP = registerBlock("gaohliner_logo_top",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> GAOHLINER_LOGO_BOTTOM = registerBlock("gaohliner_logo_bottom",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> GAOHLINER_LOGO_SIDE = registerBlock("gaohliner_logo_side",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> GAOHLINER_LOGO_SIDER = registerBlock("gaohliner_logo_sider",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> ZERO_LINER_GREEN = registerBlock("zero_liner_green",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 					
 	public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_BOOKSHELF = registerBlock("sword_of_logos_bookshelf",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_BRICK = registerBlock("sword_of_logos_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_TRIM = registerBlock("sword_of_logos_gold_trim",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_LOGO = registerBlock("sword_of_logos_logo",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_SWORD_BLADE = registerBlock("sword_of_logos_sword_blade",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_STAIRS = registerBlock("sword_of_logos_stairs",
 			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_STAIRS = registerBlock("sword_of_logos_wood_stairs",
 			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_STAIRS = registerBlock("sword_of_logos_gold_stairs",
 			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_STAIRS = registerBlock("sword_of_logos_tabel_stairs",
 			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_TOP = registerBlock("sword_of_logos_tabel_top",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_TRIM = registerBlock("sword_of_logos_wood_trim",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));	
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD = registerBlock("sword_of_logos_wood",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD2 = registerBlock("sword_of_logos_wood2",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> TADDLE_BRICK = registerBlock("taddle_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
@@ -492,19 +492,19 @@ public class Rider_Blocks {
 	
 	public static final DeferredBlock<Block> WALLPLATE = registerBlock("wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> WHITE_WALLPLATE = registerBlock("white_wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> WOODEN_PANEL = registerBlock("wooden_panel",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> WOODEN_PANEL2 = registerBlock("wooden_panel2",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 /**
 	public static final RegistryObject<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
