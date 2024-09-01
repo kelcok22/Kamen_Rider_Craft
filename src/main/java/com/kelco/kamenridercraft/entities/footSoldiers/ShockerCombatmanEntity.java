@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 public class ShockerCombatmanEntity extends BaseHenchmenEntity {
 
 
-	public ShockerCombatmanEntity(EntityType<? extends Zombie> type, Level level) {
+	public ShockerCombatmanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
 		NAME="shocker_combatman";
 

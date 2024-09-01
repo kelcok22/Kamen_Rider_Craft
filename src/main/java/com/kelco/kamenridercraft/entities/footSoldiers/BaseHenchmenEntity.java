@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
@@ -18,15 +17,12 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MoveThroughVillageGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.ZombieAttackGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
+import net.minecraft.world.entity.animal.Turtle;
+import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.ZombifiedPiglin;
@@ -39,13 +35,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BaseHenchmenEntity extends Zombie {
+public class BaseHenchmenEntity extends  Monster {
 	
 	public String NAME = "shocker_combatman";
 
 	public int Scale=1;
 	
-    public BaseHenchmenEntity(EntityType<? extends Zombie> type, Level level) {
+    public BaseHenchmenEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
     }
 
@@ -58,10 +54,11 @@ public class BaseHenchmenEntity extends Zombie {
         this.addBehaviourGoals();
         
            }
-    
-    @Override
+
     protected void addBehaviourGoals() {
-        this.goalSelector.addGoal(2, new ZombieAttackGoal(this, 1.0D, false));
+        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0, false));
+        this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(6, new MoveThroughVillageGoal(this, 1.0D, true, 4, this::canBreakDoors));
         this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseHenchmenEntity.class)).setAlertOthers(ZombifiedPiglin.class));
@@ -76,7 +73,9 @@ public class BaseHenchmenEntity extends Zombie {
 	   if (this.swinging) this.updateSwingTime();
 	}
 
-
+    public boolean canBreakDoors() {
+        return true;
+    }
 
     public static AttributeSupplier.Builder setAttributes() {
     
@@ -100,10 +99,7 @@ public class BaseHenchmenEntity extends Zombie {
     
        float f = difficulty.getSpecialMultiplier();
        this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * f);
-       if (spawnGroupData == null) {
-           spawnGroupData = new ZombieGroupData(false, true);
-       }if (spawnGroupData instanceof ZombieGroupData zombie$zombiegroupdata) {
-    }
+
             spawnGroupData =  super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
     if (this.getItemBySlot(EquipmentSlot.OFFHAND).isEmpty()) {
        LocalDate localdate = LocalDate.now();
@@ -114,8 +110,6 @@ public class BaseHenchmenEntity extends Zombie {
           this.armorDropChances[EquipmentSlot.HEAD.getIndex()] = 0.0F;
        }
     }
-
-    this.handleAttributes(f);
     return spawnGroupData;
  }
 

@@ -23,7 +23,7 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
 			Ichigo_Rider_Items.TYPHOON_SHOCKER_RIDER_12.get()};
 
 	
-    public ShockerRidersEntity(EntityType<? extends Zombie> type, Level level) {
+    public ShockerRidersEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="shocker_rider";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Ichigo_Rider_Items.ICHIGOHELMET.get()));
@@ -44,9 +44,7 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 7.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 45.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
-
+        		.add(Attributes.MAX_HEALTH, 45.0D);
      }
     
 
