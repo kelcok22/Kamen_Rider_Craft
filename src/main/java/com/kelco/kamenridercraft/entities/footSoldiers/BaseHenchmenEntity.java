@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import javax.annotation.Nullable;
 
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -21,14 +20,10 @@ import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
-import net.minecraft.world.entity.animal.Turtle;
-import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -78,8 +73,6 @@ public class BaseHenchmenEntity extends  Monster {
     }
 
     public static AttributeSupplier.Builder setAttributes() {
-    
-    	//.add(ForgeMod.ATTACK_RANGE.get(),2)
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 35.0D)
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
@@ -90,10 +83,6 @@ public class BaseHenchmenEntity extends  Monster {
      }
 
 
-
-    //public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_, @Nullable CompoundTag p_34301_) {
-
-        @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
     	RandomSource randomsource = level.getRandom();
     
@@ -113,16 +102,7 @@ public class BaseHenchmenEntity extends  Monster {
     return spawnGroupData;
  }
 
-   
-    protected void populateDefaultEquipmentSlots(RandomSource p_219165_, DifficultyInstance p_219166_) {
-     }
 
-     protected void enchantSpawnedWeapon(RandomSource p_217049_, float p_217050_) {
-     }
-
-     protected void enchantSpawnedArmor(RandomSource p_217052_, float p_217053_, EquipmentSlot p_217054_) {
-     }
-    
     
     public static boolean getSpawnAsBabyOdds(RandomSource p_219163_) {
         return false;
