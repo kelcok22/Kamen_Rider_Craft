@@ -7,6 +7,7 @@ import java.util.List;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -436,10 +437,10 @@ public class RiderTabs {
             }
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
-/**
+
             event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
-
+/**
             event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
             event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);

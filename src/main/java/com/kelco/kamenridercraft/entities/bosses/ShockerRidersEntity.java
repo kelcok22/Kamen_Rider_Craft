@@ -37,7 +37,7 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
 
  
 
-    public static AttributeSupplier setAttributes() {
+    public static AttributeSupplier.Builder setAttributes() {
 
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
@@ -45,8 +45,7 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
         		.add(Attributes.ATTACK_DAMAGE, 7.0D)
         		.add(Attributes.ARMOR, 3.0D)
         		.add(Attributes.MAX_HEALTH, 45.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE)
-        		.build();
+        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
 
      }
     
