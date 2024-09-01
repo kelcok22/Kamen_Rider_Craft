@@ -440,7 +440,7 @@ public class RiderTabs {
 
             event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
-/**
+
             event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
             event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
@@ -453,7 +453,7 @@ public class RiderTabs {
             event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
 
             event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
-
+/**
             event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
             event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
             event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
@@ -488,7 +488,9 @@ public class RiderTabs {
             event.accept(MobsCore.ETERNAL_SPAWN_EGG);
 
             event.accept(MobsCore.YUMMY_SPAWN_EGG);
+ **/
             event.accept(MobsCore.KNIGHT_SOLDIER_SPAWN_EGG);
+            /**
             event.accept(MobsCore.ANKH_SPAWN_EGG);
             event.accept(MobsCore.ANKH_COMPLETE_SPAWN_EGG);
             event.accept(MobsCore.ANKH_LOST_SPAWN_EGG);

@@ -1,9 +1,12 @@
 package com.kelco.kamenridercraft.events;
 
+import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RenderLivingEvent;
 
 public class ModClientEvents {
@@ -12,6 +15,8 @@ public class ModClientEvents {
 
 
     public static class ClientEvents {
+
+
 
         @SubscribeEvent
         public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
