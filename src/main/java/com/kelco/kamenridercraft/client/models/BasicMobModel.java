@@ -86,19 +86,16 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
 
 	   private void holdWeaponHigh(T p_103361_) {
 	      if (p_103361_.isLeftHanded()) {
-	         this.leftArm.xRot = -1F;
+	         this.leftArm.xRot = leftArm.xRot-1F;
 	      } else {
-	         this.rightArm.xRot = -1F;
+	         this.rightArm.xRot = rightArm.xRot-1F;
 	      }
-
 	   }
 
-   public void translateToHand(HumanoidArm p_103778_, PoseStack p_103779_) {
-      float f = p_103778_ == HumanoidArm.RIGHT ? 1.0F : -1.0F;
-      ModelPart modelpart = this.getArm(p_103778_);
-      modelpart.x += f;
-      modelpart.translateAndRotate(p_103779_);
-      modelpart.x -= f;
-   }
+	public void translateToHand(HumanoidArm side, PoseStack poseStack) {
+		ModelPart modelpart = this.getArm(side);
+			modelpart.translateAndRotate(poseStack);
+		}
+
       
 }
