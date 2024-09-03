@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.events;
 
 import java.util.List;
+import java.util.Objects;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
@@ -64,7 +65,7 @@ public class ModCommonEvents {
 								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.CREATIVE;
 					}
 
-					_player.getAbilities().mayfly = (checkGamemode? false:true);
+					_player.getAbilities().mayfly = (!checkGamemode);
 					_player.onUpdateAbilities();
 				}
 			}
@@ -84,12 +85,12 @@ public class ModCommonEvents {
 
 					if (_livEnt.hasEffect(Effect_core.FIRE_PUNCH)) {
 						 if (_livEnt.getMainHandItem().isEmpty()) {
-						event.getEntity().setRemainingFireTicks(25*(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier() + 1));
+						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_PUNCH)).getAmplifier() + 1));
 						}
 					}
 
 					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
-						event.getEntity().setRemainingFireTicks(25*(_livEnt.getEffect(Effect_core.FIRE_ARMOR).getAmplifier() + 1));
+						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_ARMOR)).getAmplifier() + 1));
 					}
 
 					if (_livEnt.hasEffect(Effect_core.EXPLOSION_PUNCH)) {
@@ -105,7 +106,7 @@ public class ModCommonEvents {
 
 				} else if (event.getSource().is(DamageTypes.ARROW) || event.getSource().is(DamageTypes.MOB_PROJECTILE)) {
 					if (_livEnt.hasEffect(Effect_core.FIRE_SHOT)) {
-						event.getEntity().setRemainingFireTicks(25*(_livEnt.getEffect(Effect_core.FIRE_SHOT).getAmplifier() + 1));
+						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_SHOT)).getAmplifier() + 1));
 					}
 
 					if (_livEnt.hasEffect(Effect_core.EXPLOSION_SHOT)) {
