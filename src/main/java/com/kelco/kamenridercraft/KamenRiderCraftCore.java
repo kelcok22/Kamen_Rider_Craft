@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.bosses.ShadowmoonEntity;
 import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
+import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.item.*;
@@ -66,7 +67,7 @@ public class KamenRiderCraftCore
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-       // NeoForge.EVENT_BUS.register(new ModCommonEvents.ForgeCommonEvents());
+       NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
         NeoForge.EVENT_BUS.register(new ModCommonEvents.EventHandler());
 
         // Register ourselves for server and other game events we are interested in.
@@ -100,6 +101,7 @@ public class KamenRiderCraftCore
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
+        RiderVillagers.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -112,7 +114,6 @@ public class KamenRiderCraftCore
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
     }
 
 	private static void entityAttributeEvent(EntityAttributeCreationEvent event) {

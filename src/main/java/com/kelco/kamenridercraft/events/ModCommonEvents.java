@@ -1,47 +1,38 @@
 package com.kelco.kamenridercraft.events;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import java.util.List;
 
+import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
-import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
+import com.kelco.kamenridercraft.item.*;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.client.event.RenderLivingEvent;
-import net.neoforged.neoforge.client.event.RenderPlayerEvent;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
-import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.village.VillagerTradesEvent;
+import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
 
 public class ModCommonEvents {
@@ -138,34 +129,32 @@ public class ModCommonEvents {
 
 			}
 		}
+**/
+	public static class CommonEvents {
 
+			@SubscribeEvent
+			public void addCustomWandererTrades(WandererTradesEvent event) {
+				List<ItemListing> trades = event.getGenericTrades();
+				ItemStack stack = new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1);
+				trades.add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						stack, 10, 8, 0.02F));
 
-	public static class ForgeCommonEvents {
+				trades.add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+			}
 
-		/**
-		@SubscribeEvent
-		public static void addCustomWandererTrades(WandererTradesEvent event) {
-			List<ItemListing> trades = event.getGenericTrades();
-			ItemStack stack = new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1);
-			trades.add((trader, rand) -> new MerchantOffer(
-					new ItemStack(Items.EMERALD, 2),
-					stack,10,8,0.02F));
-			
-			trades.add((trader, rand) -> new MerchantOffer(
-					new ItemStack(Items.EMERALD, 2),
-					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1),10,8,0.02F));
-		}
-		
 
 		@SubscribeEvent
-		public static void addCustomTrades(VillagerTradesEvent event) {
+		public void addCustomTrades(VillagerTradesEvent event) {
 			if(event.getType() == VillagerProfession.LIBRARIAN) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == VillagerProfession.LIBRARIAN) {
@@ -174,7 +163,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == VillagerProfession.LIBRARIAN) {
@@ -183,17 +172,17 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
-			
+
 			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.PREFECTER.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
+						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
 						stack,10,8,0.02F));
 			}
 			
@@ -203,7 +192,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 
@@ -213,7 +202,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 
@@ -223,7 +212,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
@@ -232,7 +221,7 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			} 
 
@@ -242,7 +231,7 @@ public class ModCommonEvents {
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			} 
 
@@ -252,7 +241,7 @@ public class ModCommonEvents {
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			} 
 			
@@ -262,7 +251,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
@@ -271,7 +260,7 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 4),
+						new ItemCost(Items.EMERALD, 4),
 						stack,10,8,0.02F));
 			}
 			
@@ -281,7 +270,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 1),
+						new ItemCost(Items.EMERALD, 1),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
@@ -290,7 +279,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Zero_One_Rider_Items.HIDEN_METAL.get(), 3),
+						new ItemCost(Zero_One_Rider_Items.HIDEN_METAL.get(), 3),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
@@ -299,7 +288,7 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
@@ -308,7 +297,7 @@ public class ModCommonEvents {
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 12),
+						new ItemCost(Items.EMERALD, 12),
 						stack,10,8,0.02F));
 			}
 			
@@ -318,7 +307,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 1),
+						new ItemCost(Items.EMERALD, 1),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
@@ -327,7 +316,7 @@ public class ModCommonEvents {
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
@@ -336,7 +325,7 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 6),
+						new ItemCost(Items.EMERALD, 6),
 						stack,10,8,0.02F));
 			}
 			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
@@ -345,12 +334,12 @@ public class ModCommonEvents {
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemStack(Items.EMERALD, 2),
+						new ItemCost(Items.EMERALD, 2),
 						stack,10,8,0.02F));
 			}
+
 		}
-	}
-**/
+		}
 
 	@SubscribeEvent
 	public static void entitySpawnRestriction(RegisterSpawnPlacementsEvent event) {
