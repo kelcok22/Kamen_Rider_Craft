@@ -1,0 +1,57 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 16740464,
+    "fog_color": 7405460,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 12764563,
+    "foliage_color": 12764563,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "music": {
+      "sound": "minecraft:music.overworld.badlands",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "creature": [
+      {
+        "type": "kamenridercraft:new_mole_imagin_sand",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ],
+    "monster": [
+      {
+        "type": "kamenridercraft:new_mole_imagin_sand",
+        "weight": 1,
+        "minCount": 2,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "minecraft:patch_grass_badlands",
+      "minecraft:patch_dead_bush_2"
+    ]
+  ]
+}

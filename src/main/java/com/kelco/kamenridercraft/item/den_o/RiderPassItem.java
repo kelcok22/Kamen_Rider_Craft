@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -39,11 +40,11 @@ public class RiderPassItem extends BaseItem {
 		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 		entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
 	}
-/**
+
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 
-		ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("kamenridercraft:sands_of_time"));
+		ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "dimension/sands_of_time.json"));
 		MinecraftServer Server = ServerLifecycleHooks.getCurrentServer();
 
 		if (!p_41128_.isClientSide()) {
@@ -62,5 +63,5 @@ public class RiderPassItem extends BaseItem {
 		
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
 	}
- **/
+
 }
