@@ -72,7 +72,8 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
-			event.getEntity().setInvisible(false);
+
+			//event.getEntity().setInvisible(false);
 		}
 
 		@SubscribeEvent
