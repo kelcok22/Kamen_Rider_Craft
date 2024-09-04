@@ -453,7 +453,7 @@ public class RiderTabs {
             event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
 
             event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
-/**
+
             event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
             event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
             event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
@@ -466,7 +466,7 @@ public class RiderTabs {
             event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);
             event.accept(MobsCore.NEOTROOPER_SPAWN_EGG);
             event.accept(MobsCore.CAUCASUS_SPAWN_EGG);
-
+/**
             event.accept(MobsCore.NEW_MOLE_IMAGIN_SPAWN_EGG);
             event.accept(MobsCore.NEW_MOLE_IMAGIN_SAND_SPAWN_EGG);
             event.accept(MobsCore.GAOH_SPAWN_EGG);

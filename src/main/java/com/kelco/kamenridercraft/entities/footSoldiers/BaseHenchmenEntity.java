@@ -4,16 +4,18 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import javax.annotation.Nullable;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -21,23 +23,40 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BaseHenchmenEntity extends  Monster {
-	
+public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
+
+    private boolean swordgunMelee = false;
+    private final RangedBowAttackGoal<RiotrooperEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+    private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
+        public void stop() {
+            super.stop();
+            BaseHenchmenEntity.this.setAggressive(false);
+        }
+
+        public void start() {
+            super.start();
+            BaseHenchmenEntity.this.setAggressive(true);
+        }
+    };
+
 	public String NAME = "shocker_combatman";
 
 	public int Scale=1;
 	
     public BaseHenchmenEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
+        this.reassessWeaponGoal();
     }
 
     
@@ -63,10 +82,18 @@ public class BaseHenchmenEntity extends  Monster {
         //this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
      }
 
-	public void aiStep() {
-		super.aiStep();
-	   if (this.swinging) this.updateSwingTime();
-	}
+
+    public void aiStep() {
+        ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
+        if (this.getTarget() != null && (itemstack.getItem() instanceof BowItem && itemstack.getItem() instanceof SwordItem || itemstack.is(ItemTags.create( ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns"))))) {
+            boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
+                    || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
+                    || this.getTarget().distanceToSqr(this) < 40.0D));
+            if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
+        }
+        super.aiStep();
+        if (this.swinging) this.updateSwingTime();
+    }
 
     public boolean canBreakDoors() {
         return true;
@@ -141,5 +168,79 @@ public class BaseHenchmenEntity extends  Monster {
        this.playSound(this.getStepSound(), 0.15F, 1.0F);
     }
 
+    public void reassessWeaponGoal() {
+        if (this.level() != null && !this.level().isClientSide) {
+            ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
+            if (itemstack.getItem() instanceof BowItem) {
+                int i = 20;
+                if (this.level().getDifficulty() != Difficulty.HARD) {
+                    i = 40;
+                }
 
+                this.bowGoal.setMinAttackInterval(i);
+                this.goalSelector.removeGoal(this.meleeGoal);
+                this.goalSelector.addGoal(2, this.bowGoal);
+            } else {
+                this.goalSelector.removeGoal(this.bowGoal);
+                this.goalSelector.addGoal(2, this.meleeGoal);
+            }
+
+        }
+    }
+
+
+
+
+    public void setSwordgunMelee(boolean melee) {
+        if (this.level() != null && !this.level().isClientSide) {
+            if (melee) {
+                this.goalSelector.removeGoal(this.bowGoal);
+                this.goalSelector.addGoal(2, this.meleeGoal);
+            } else {
+                int i = 20;
+                if (this.level().getDifficulty() != Difficulty.HARD) {
+                    i = 40;
+                }
+
+                this.bowGoal.setMinAttackInterval(i);
+                this.goalSelector.removeGoal(this.meleeGoal);
+                this.goalSelector.addGoal(2, this.bowGoal);
+            }
+            swordgunMelee = melee;
+        }
+    }
+
+    public void readAdditionalSaveData(CompoundTag p_32152_) {
+        super.readAdditionalSaveData(p_32152_);
+        this.reassessWeaponGoal();
+    }
+
+    public void setItemSlot(EquipmentSlot p_32138_, ItemStack p_32139_) {
+        super.setItemSlot(p_32138_, p_32139_);
+        Level level = this.level();
+        if (!level.isClientSide) this.reassessWeaponGoal();
+    }
+
+    public void performRangedAttack(LivingEntity p_32141_, float distanceFactor) {
+        ItemStack weapon = this.getProjectile(this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem)));
+        ItemStack itemstack1 = this.getProjectile(weapon);
+        AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
+        if (this.getMainHandItem().getItem() instanceof BowItem)
+            abstractarrow = ((BowItem)this.getMainHandItem().getItem()).customArrow(abstractarrow, itemstack1, weapon);
+        double d0 = p_32141_.getX() - this.getX();
+        double d1 = p_32141_.getY(0.3333333333333333D) - abstractarrow.getY();
+        double d2 = p_32141_.getZ() - this.getZ();
+        double d3 = Math.sqrt(d0 * d0 + d2 * d2);
+        abstractarrow.shoot(d0, d1 + d3 * (double)0.2F, d2, 1.6F, (float)(14 - this.level().getDifficulty().getId() * 4));
+        this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
+        this.level().addFreshEntity(abstractarrow);
+    }
+
+    protected AbstractArrow getArrow(ItemStack arrow, float velocity, @Nullable ItemStack weapon) {
+        return ProjectileUtil.getMobArrow(this, arrow, velocity, weapon);
+    }
+
+    public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
+        return p_32144_ instanceof BowItem;
+    }
 }

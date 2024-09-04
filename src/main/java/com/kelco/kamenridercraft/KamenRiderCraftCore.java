@@ -6,8 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
-import com.kelco.kamenridercraft.entities.bosses.ShadowmoonEntity;
-import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
+import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
@@ -133,7 +132,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.SHADOWMOON.get(), ShadowmoonEntity.setAttributes().build());
 
 		event.put(MobsCore.ZU_GUMUN_BA.get(), ZuGumunBaEntity.setAttributes().build());
-/**
+
 		event.put(MobsCore.PANTHERAS_LUTEUS.get(), PantherasLuteusEntity.setAttributes().build());
 		event.put(MobsCore.EL_OF_THE_WATER.get(), ElOfTheWaterEntity.setAttributes().build());
 		event.put(MobsCore.ANGUIS_MASCULUS.get(), AnguisMasculusEntity.setAttributes().build());
@@ -146,7 +145,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());
 		event.put(MobsCore.NEOTROOPER.get(), NeotrooperEntity.setAttributes().build());
 		event.put(MobsCore.CAUCASUS.get(), CaucasusEntity.setAttributes().build());
-
+/*
 		event.put(MobsCore.NEW_MOLE_IMAGIN.get(), NewMoleImaginEntity.setAttributes().build());
 		event.put(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandEntity.setAttributes().build());
 		event.put(MobsCore.GAOH.get(), GaohEntity.setAttributes().build());
@@ -378,7 +377,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SHADOWMOON.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ZU_GUMUN_BA.get(), BasicEntityRenderer::new);
-    /*
+
             event.registerEntityRenderer(MobsCore.PANTHERAS_LUTEUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EL_OF_THE_WATER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANGUIS_MASCULUS.get(), BasicEntityRenderer::new);
@@ -391,7 +390,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SHADOW_TROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEOTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CAUCASUS.get(), BasicEntityRenderer::new);
-
+/*
             event.registerEntityRenderer(MobsCore.NEW_MOLE_IMAGIN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandRenderer::new);
             event.registerEntityRenderer(MobsCore.GAOH.get(), BasicEntityRenderer::new);
