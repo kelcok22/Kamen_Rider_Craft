@@ -29,9 +29,12 @@ import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
 public class RiderPassItem extends BaseItem {
 
-	public RiderPassItem (Properties properties)
+	private int TIME = 500;
+
+	public RiderPassItem (Properties properties, int time)
 	{
 		super(properties);
+		TIME=time;
 	}
 
 	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity) {
@@ -44,7 +47,7 @@ public class RiderPassItem extends BaseItem {
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 
-		ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "dimension/sands_of_time.json"));
+		ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
 		MinecraftServer Server = ServerLifecycleHooks.getCurrentServer();
 
 		if (!p_41128_.isClientSide()) {
@@ -57,8 +60,7 @@ public class RiderPassItem extends BaseItem {
 				for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.getLevel(SANDS_OF_TIME), ally);
 				teleportToDimension(Server.getLevel(SANDS_OF_TIME), p_41129_);
 			}
-			if (itemstack.isDamageableItem()) itemstack.hurtAndBreak(1, p_41129_, player -> player.broadcastBreakEvent(player.getUsedItemHand()));
-			p_41129_.getCooldowns().addCooldown(this, 500);
+			p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 		
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
