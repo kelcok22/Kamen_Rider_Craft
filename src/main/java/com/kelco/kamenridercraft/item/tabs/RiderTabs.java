@@ -490,8 +490,9 @@ public class RiderTabs {
             event.accept(MobsCore.YUMMY_SPAWN_EGG);
  **/
             event.accept(MobsCore.KNIGHT_SOLDIER_SPAWN_EGG);
-            /**
+
             event.accept(MobsCore.ANKH_SPAWN_EGG);
+            /**
             event.accept(MobsCore.ANKH_COMPLETE_SPAWN_EGG);
             event.accept(MobsCore.ANKH_LOST_SPAWN_EGG);
             event.accept(MobsCore.UVA_SPAWN_EGG);
