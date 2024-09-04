@@ -1,9 +1,11 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.client.renderer.AnkhRenderer;
 import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
 import com.kelco.kamenridercraft.entities.bosses.ShadowmoonEntity;
 import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
@@ -169,8 +171,8 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.YUMMY.get(), YummyEntity.setAttributes().build());
  **/
 		event.put(MobsCore.KNIGHT_SOLDIER.get(), KnightSoldierEntity.setAttributes().build());
-        /**
 		event.put(MobsCore.ANKH.get(), AnkhEntity.setAttributes().build());
+        /**
 		event.put(MobsCore.ANKHCOMPLETE.get(), AnkhCompleteEntity.setAttributes().build());
 		event.put(MobsCore.ANKH_LOST.get(), AnkhLostEntity.setAttributes().build());
 		event.put(MobsCore.UVA.get(), UvaEntity.setAttributes().build());
@@ -421,7 +423,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.MEZOOL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GAMEL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANKH_LOST.get(), BasicEntityRenderer::new);
+            */
             event.registerEntityRenderer(MobsCore.ANKH.get(), AnkhRenderer::new);
+            /*
             event.registerEntityRenderer(MobsCore.POSEIDON.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CORE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POWERED_UP_CORE.get(), BasicEntityRenderer::new);

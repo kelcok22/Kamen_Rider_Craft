@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entities;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
+import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
 import com.kelco.kamenridercraft.entities.bosses.ShadowmoonEntity;
 import com.kelco.kamenridercraft.entities.bosses.ShockerRidersEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
@@ -312,14 +313,14 @@ public class MobsCore {
 
         public static final DeferredItem<DeferredSpawnEggItem> KNIGHT_SOLDIER_SPAWN_EGG = ITEMS.register("knight_soldier_spawn_egg",
                 () -> new DeferredSpawnEggItem(KNIGHT_SOLDIER, 0xca570f,0x919191, new Item.Properties()));
-    /**
+
     
-       public static final RegistryObject<EntityType<AnkhEntity>> ANKH = MOBLIST.register("ankh_mob",
-              () -> EntityType.Builder.of(AnkhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":ankh_mob"));
+       public static final DeferredHolder<EntityType<?>, EntityType<AnkhEntity>> ANKH = MOBLIST.register("ankh_mob",
+              () -> EntityType.Builder.of(AnkhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ankh_mob"));
 
        public static final DeferredItem<DeferredSpawnEggItem> ANKH_SPAWN_EGG = ITEMS.register("ankh_spawn_egg",
                 () -> new DeferredSpawnEggItem(ANKH, 0xFF2300, 0x42FF00, new Item.Properties()));
-       
+    /**
        public static final RegistryObject<EntityType<AnkhCompleteEntity>> ANKHCOMPLETE = MOBLIST.register("ankh_complete_mob",
                () -> EntityType.Builder.of(AnkhCompleteEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":ankh_complete_mob"));
 
