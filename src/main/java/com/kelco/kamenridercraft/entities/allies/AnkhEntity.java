@@ -9,26 +9,15 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.NeutralMob;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.BreedGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
-import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.SitWhenOrderedToGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
@@ -40,13 +29,17 @@ import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.neoforged.neoforge.common.ItemAbilities;
+import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -61,18 +54,19 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 	
 	public AnkhEntity(EntityType<? extends AnkhEntity> entityType, Level level) {
 		super(entityType, level);
-		
+		if (level != null && !level.isClientSide) {
+			this.registerGoals();
+		}
 		}
 
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new AllyPanicGoal(1.4D));
+		this.goalSelector.addGoal(1, new TamableAnimal.TamableAnimalPanicGoal(1.5, DamageTypeTags.PANIC_ENVIRONMENTAL_CAUSES));
 		this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
 		this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, 0.4F));
-		this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.0D, true));
+		this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.0, true));
 		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1.0, 10.0F, 2.0F));
-		this.goalSelector.addGoal(7, new BreedGoal(this, 1.0D));
-		this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+		this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 1.0));
 		this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Player.class, 8.0F));
 		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
 		//this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseAllyEntity.class, BaseSummonEntity.class)).setAlertOthers());
@@ -91,70 +85,73 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 	}
 
 
-	
+
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
-	      ItemStack itemstack = player.getItemInHand(hand);
-		  Level level = this.level();
-		  if (level.isClientSide) {
-	         boolean flag = this.isOwnedBy(player) || this.isTame() || (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get())
-			 				|| itemstack.is(Modded_item_core.ICE_POP.get()) || itemstack.is(Modded_item_core.ICE_POP2.get()) || itemstack.is(Modded_item_core.ICE_POP3.get()))
-			 				&& !this.isTame()&& !this.isAngry();
-	         return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
-	      } else if (this.isTame()) {
-	         if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
-				 FoodProperties foodproperties = itemstack.getFoodProperties(this);
-				 float f = foodproperties != null ? (float)foodproperties.nutrition() : 1.0F;
-				 this.heal(2.0F * f);
-	            if (!player.getAbilities().instabuild) {
-	               itemstack.shrink(1);
-	            }
+		ItemStack itemstack = player.getItemInHand(hand);
+		Item item = itemstack.getItem();
+		if (!this.level().isClientSide || this.isBaby() && this.isFood(itemstack)) {
+			if (this.isTame()) {
+				if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+					FoodProperties foodproperties = itemstack.getFoodProperties(this);
+					float f = foodproperties != null ? (float)foodproperties.nutrition() : 1.0F;
+					this.heal(2.0F * f);
+					itemstack.consume(1, player);
+					this.gameEvent(GameEvent.EAT);
+					return InteractionResult.sidedSuccess(this.level().isClientSide());
+				} else {
 
-	            this.gameEvent(GameEvent.EAT, this);
-	            return InteractionResult.SUCCESS;
-	         } else {
-	            if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get())) {
-	            	
-	            	player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
-					/**
-	            	BaseHenchmenEntity boss = MobsCore.ANKHCOMPLETE.get().create(this.level());
-	    			if (boss != null) {
-	    				boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), this.getXRot());
-	    				this.level().addFreshEntity(boss);
-	    			}
-	            	this.discard();
-					 **/
-					 }
-
-	            InteractionResult interactionresult = super.mobInteract(player, hand);
-	            if ((!interactionresult.consumesAction() || this.isBaby()) && this.isOwnedBy(player)) {
-	               this.setOrderedToSit(!this.isOrderedToSit());
-	               this.jumping = false;
-	               this.navigation.stop();
-	               this.setTarget((LivingEntity)null);
-	               return InteractionResult.SUCCESS;
-	            } else {
-	               return interactionresult;
-	            }
-	         }
-	      } else if ((itemstack.is(Modded_item_core.ICE_POP.get())
+					if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby()) {
+						player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
+						/**
+						BaseHenchmenEntity boss = MobsCore.ANKHCOMPLETE.get().create(this.level());
+						if (boss != null) {
+							boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), this.getXRot());
+							this.level().addFreshEntity(boss);
+						}
+						 **/
+						this.discard();
+						return InteractionResult.SUCCESS;
+					} else {
+						ItemStack itemstack2;
+							InteractionResult interactionresult = super.mobInteract(player, hand);
+							if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
+								this.setOrderedToSit(!this.isOrderedToSit());
+								this.jumping = false;
+								this.navigation.stop();
+								this.setTarget((LivingEntity)null);
+								return InteractionResult.SUCCESS_NO_ITEM_USED;
+							} else {
+								return interactionresult;
+						}
+					}
+				}
+			}else if ((itemstack.is(Modded_item_core.ICE_POP.get())
 	    		  ||itemstack.is(Modded_item_core.ICE_POP2.get())
 	    		  ||itemstack.is(Modded_item_core.ICE_POP3.get())) && !this.isAngry()) {
-			  if (!player.getAbilities().instabuild) {
-				  itemstack.shrink(1);
-			  }
+			  itemstack.consume(1, player);
+			  this.tryToTame(player);
+			  return InteractionResult.SUCCESS;
+		  } else {
+			  return super.mobInteract(player, hand);
 		  }
-			  InteractionResult interactionresult = super.mobInteract(player, hand);
-			  if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
-				  this.setOrderedToSit(!this.isOrderedToSit());
-				  this.jumping = false;
-				  this.navigation.stop();
-				  this.setTarget((LivingEntity) null);
-				  return InteractionResult.SUCCESS_NO_ITEM_USED;
-			  } else {
-				  return interactionresult;
-			  }
-		  }
+	} else {
+		boolean flag = this.isOwnedBy(player) || this.isTame() || itemstack.is(Items.BONE) && !this.isTame() && !this.isAngry();
+		return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
+	}
+}
 
+	private void tryToTame(Player player) {
+		if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, player)) {
+			this.tame(player);
+			this.navigation.stop();
+			this.setTarget((LivingEntity)null);
+			this.setOrderedToSit(true);
+			this.level().broadcastEntityEvent(this, (byte)7);
+		} else {
+			this.level().broadcastEntityEvent(this, (byte)6);
+		}
+
+	}
 
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
