@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:zu_gumun_ba",
+  "spawners": {
+	"type": "kamenridercraft:zu_gumun_ba",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

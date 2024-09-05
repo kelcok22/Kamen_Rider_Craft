@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:black_satan_soldier",
+  "spawners": {
+	"type": "kamenridercraft:black_satan_soldier",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}
