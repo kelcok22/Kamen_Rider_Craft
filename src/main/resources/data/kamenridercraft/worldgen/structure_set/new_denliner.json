@@ -1,0 +1,14 @@
+{
+  "structures": [
+	{
+	  "structure": "kamenridercraft:new_denliner",
+	  "weight": 1
+	}
+  ],
+  "placement": {
+	"type": "minecraft:random_spread",
+	"salt": 560234,
+	"spacing": 50,
+	"separation": 15
+  }
+}

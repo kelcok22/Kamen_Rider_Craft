@@ -1,0 +1,14 @@
+{
+  "structures": [
+	{
+	  "structure": "kamenridercraft:denliner_ikazuchi",
+	  "weight": 1
+	}
+  ],
+  "placement": {
+	"type": "minecraft:random_spread",
+	"salt": 79482,
+	"spacing": 24,
+	"separation": 8
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+	{
+	  "structure": "kamenridercraft:kingliner",
+	  "weight": 1
+	}
+  ],
+  "placement": {
+	"type": "minecraft:random_spread",
+	"salt": 98743,
+	"spacing": 50,
+	"separation": 20
+  }
+}
