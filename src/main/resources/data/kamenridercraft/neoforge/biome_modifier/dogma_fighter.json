@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:dogma_fighter",
+  "spawners": {
+	"type": "kamenridercraft:dogma_fighter",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

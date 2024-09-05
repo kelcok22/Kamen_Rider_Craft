@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:god_warfare_agent",
+  "spawners": {
+	"type": "kamenridercraft:god_warfare_agent",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

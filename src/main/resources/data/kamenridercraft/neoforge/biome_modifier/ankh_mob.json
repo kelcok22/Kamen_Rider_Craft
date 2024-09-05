@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:ankh_mob",
+  "spawners": {
+	"type": "kamenridercraft:ankh_mob",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 1
+  }
+}
