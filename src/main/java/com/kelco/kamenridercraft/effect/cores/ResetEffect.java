@@ -3,13 +3,12 @@ package com.kelco.kamenridercraft.effect.cores;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import net.minecraft.world.effect.InstantenousMobEffect;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 
 
-public class ResetEffect extends MobEffect {
+public class ResetEffect extends InstantenousMobEffect {
 
 
 	public ResetEffect(MobEffectCategory mobEffectCategory, int color) {
