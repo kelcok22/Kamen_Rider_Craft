@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
+import com.kelco.kamenridercraft.entities.allies.YummyEntity;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
@@ -165,13 +166,12 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.FOUNDATION_X_MASQUERADE.get(), FoundationXMasqueradeEntity.setAttributes().build());
 		event.put(MobsCore.COMMANDER_DOPANT.get(), CommanderDopantEntity.setAttributes().build());
 		event.put(MobsCore.ETERNAL.get(), EternalEntity.setAttributes().build());
+		 **/
 		event.put(MobsCore.MUCHIRI.get(), MuchiriEntity.setAttributes().build());
-
 		event.put(MobsCore.YUMMY.get(), YummyEntity.setAttributes().build());
- **/
 		event.put(MobsCore.KNIGHT_SOLDIER.get(), KnightSoldierEntity.setAttributes().build());
 		event.put(MobsCore.ANKH.get(), AnkhEntity.setAttributes().build());
-        /**
+
 		event.put(MobsCore.ANKHCOMPLETE.get(), AnkhCompleteEntity.setAttributes().build());
 		event.put(MobsCore.ANKH_LOST.get(), AnkhLostEntity.setAttributes().build());
 		event.put(MobsCore.UVA.get(), UvaEntity.setAttributes().build());
@@ -184,6 +184,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
 
+/**
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -410,27 +411,25 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.FOUNDATION_X_MASQUERADE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ETERNAL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMMANDER_DOPANT.get(), BasicEntityRenderer::new);
+ */
             event.registerEntityRenderer(MobsCore.MUCHIRI.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.YUMMY.get(), BasicEntityRenderer::new);
-            */
             event.registerEntityRenderer(MobsCore.KNIGHT_SOLDIER.get(), BasicEntityRenderer::new);
-            /*
             event.registerEntityRenderer(MobsCore.ANKHCOMPLETE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.UVA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.KAZARI.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MEZOOL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GAMEL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANKH_LOST.get(), BasicEntityRenderer::new);
-            */
             event.registerEntityRenderer(MobsCore.ANKH.get(), AnkhRenderer::new);
-            /*
             event.registerEntityRenderer(MobsCore.POSEIDON.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CORE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POWERED_UP_CORE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ANCIENT_OOO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
 
+     /*
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.TADDLE_BUGSTER.get(), BasicEntityRenderer::new);

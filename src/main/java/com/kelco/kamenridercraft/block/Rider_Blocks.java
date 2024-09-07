@@ -8,8 +8,11 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -508,58 +511,58 @@ public class Rider_Blocks {
 	
 /**
 	public static final RegistryObject<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH
 					,Component.translatable("Gaoh Form!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
-
-	public static final RegistryObject<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
-					,MobsCore.POSEIDON
-					,Component.translatable("Same! Kujira! Ookamiuo!").withStyle(ChatFormatting.AQUA)).AddToTabList(RiderTabs.RIDER_BLOCK));
+**/
+	public static final DeferredBlock<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					, MobsCore.POSEIDON
+					, Component.translatable("Same! Kujira! Ookamiuo!").withStyle(ChatFormatting.AQUA)).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
-	public static final RegistryObject<Block> CORE_BOSS_BLOCK = registerBlock("core_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+	public static final DeferredBlock<Block> CORE_BOSS_BLOCK = registerBlock("core_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CORE
 					,Component.translatable("Henshin!").withStyle(ChatFormatting.RED)
 					,1,Blocks.FIRE).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
 	
-	public static final RegistryObject<Block> POWERED_UP_CORE_BOSS_BLOCK = registerBlock("powered_up_core_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+	public static final DeferredBlock<Block> POWERED_UP_CORE_BOSS_BLOCK = registerBlock("powered_up_core_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.POWERED_UP_CORE
 					,Component.translatable("Henshin!").withStyle(ChatFormatting.DARK_PURPLE)
 					,1,Blocks.FIRE).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final RegistryObject<Block> ANCIENT_OOO_BOSS_BLOCK = registerBlock("ancient_ooo_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+	public static final DeferredBlock<Block> ANCIENT_OOO_BOSS_BLOCK = registerBlock("ancient_ooo_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ANCIENT_OOO
 					,Component.translatable("Taka! Tora! Batta!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
-	public static final RegistryObject<Block> GODA_BOSS_BLOCK = registerBlock("goda_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+	public static final DeferredBlock<Block> GODA_BOSS_BLOCK = registerBlock("goda_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GODA
 					,Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-
+/*
 	public static final RegistryObject<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CRONUS
 					,Component.translatable("Buggle Up! Ten wo tsukame Rider! Kizame chronicle! Ima koso toki wa kiwamareri!").withStyle(ChatFormatting.GREEN)
 					,1,MIGHTY_BLOCK.get(),BANG_BANG_DRUM.get(),BAKUSOU_TROPHY.get()).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final RegistryObject<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.HOROBI
 					,Component.translatable("Forcerise! Sting Scorpion! Break down.").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final RegistryObject<Block> IKAZUCHI_BOSS_BLOCK = registerBlock("ikazuchi_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.IKAZUCHI
 					,Component.translatable("Forcerise! Break down.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final RegistryObject<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
-			() -> new BossBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(2f)
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ARK_ZERO
 					,Component.translatable("Arkrise! All zero.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
 **/
