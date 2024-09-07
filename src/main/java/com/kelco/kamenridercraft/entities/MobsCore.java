@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.entities;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
+import com.kelco.kamenridercraft.entities.allies.YummyEntity;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import net.minecraft.core.Holder;
@@ -299,14 +300,13 @@ public class MobsCore {
       public static final DeferredItem<DeferredSpawnEggItem> ETERNAL_SPAWN_EGG = ITEMS.register("eternal_spawn_egg",
               () -> new DeferredSpawnEggItem(ETERNAL, 0xFFFFFF, 0x0092BB, new Item.Properties()));
 
-      //Eternal 0xffe892, 0xFFFFFF
-      
-      public static final RegistryObject<EntityType<YummyEntity>> YUMMY = MOBLIST.register("yummy_mob",
-              () -> EntityType.Builder.of(YummyEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":yummy_mob"));
+     **/
+      public static final DeferredHolder<EntityType<?>, EntityType<YummyEntity>> YUMMY = MOBLIST.register("yummy_mob",
+              () -> EntityType.Builder.of(YummyEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":yummy_mob"));
 
        public static final DeferredItem<DeferredSpawnEggItem> YUMMY_SPAWN_EGG = ITEMS.register("yummy_spawn_egg",
                () -> new DeferredSpawnEggItem(YUMMY, 0xE7E6B2, 0x959586, new Item.Properties()));
-**/
+
        public static final  DeferredHolder<EntityType<?>, EntityType<KnightSoldierEntity>> KNIGHT_SOLDIER = MOBLIST.register("knight_soldier_mob",
                () -> EntityType.Builder.of(KnightSoldierEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":knight_soldier_mob"));
 
@@ -319,86 +319,86 @@ public class MobsCore {
 
        public static final DeferredItem<DeferredSpawnEggItem> ANKH_SPAWN_EGG = ITEMS.register("ankh_spawn_egg",
                 () -> new DeferredSpawnEggItem(ANKH, 0xFF2300, 0x42FF00, new Item.Properties()));
-    /**
-       public static final RegistryObject<EntityType<AnkhCompleteEntity>> ANKHCOMPLETE = MOBLIST.register("ankh_complete_mob",
-               () -> EntityType.Builder.of(AnkhCompleteEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":ankh_complete_mob"));
+
+       public static final DeferredHolder<EntityType<?>, EntityType<AnkhCompleteEntity>> ANKHCOMPLETE = MOBLIST.register("ankh_complete_mob",
+               () -> EntityType.Builder.of(AnkhCompleteEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ankh_complete_mob"));
 
         public static final DeferredItem<DeferredSpawnEggItem> ANKH_COMPLETE_SPAWN_EGG = ITEMS.register("ankh_complete_spawn_egg",
                 () -> new DeferredSpawnEggItem(ANKHCOMPLETE, 0x000000, 0xFF0000, new Item.Properties()));
         
-        public static final RegistryObject<EntityType<AnkhLostEntity>> ANKH_LOST = MOBLIST.register("ankh_lost_mob",
-                () -> EntityType.Builder.of(AnkhLostEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":ankh_lost_mob"));
+        public static final DeferredHolder<EntityType<?>, EntityType<AnkhLostEntity>> ANKH_LOST = MOBLIST.register("ankh_lost_mob",
+                () -> EntityType.Builder.of(AnkhLostEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ankh_lost_mob"));
 
         public static final DeferredItem<DeferredSpawnEggItem> ANKH_LOST_SPAWN_EGG = ITEMS.register("ankh_lost_spawn_egg",
                  () -> new DeferredSpawnEggItem(ANKH_LOST, 0x000000, 0xC61500, new Item.Properties()));
          
         
-        public static final RegistryObject<EntityType<UvaEntity>> UVA = MOBLIST.register("uva_mob",
-                () -> EntityType.Builder.of(UvaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":uva_mob"));
+        public static final DeferredHolder<EntityType<?>, EntityType<UvaEntity>> UVA = MOBLIST.register("uva_mob",
+                () -> EntityType.Builder.of(UvaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":uva_mob"));
 
          public static final DeferredItem<DeferredSpawnEggItem> UVA_SPAWN_EGG = ITEMS.register("uva_spawn_egg",
                  () -> new DeferredSpawnEggItem(UVA, 0x000000, 0x00FF1F, new Item.Properties()));
         
          
-         public static final RegistryObject<EntityType<KazariEntity>> KAZARI = MOBLIST.register("kazari_mob",
-                 () -> EntityType.Builder.of(KazariEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":kazari_mob"));
+         public static final DeferredHolder<EntityType<?>, EntityType<KazariEntity>> KAZARI = MOBLIST.register("kazari_mob",
+                 () -> EntityType.Builder.of(KazariEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kazari_mob"));
 
           public static final DeferredItem<DeferredSpawnEggItem> KAZARI_SPAWN_EGG = ITEMS.register("kazari_spawn_egg",
                   () -> new DeferredSpawnEggItem(KAZARI, 0x000000, 0xFFDC00, new Item.Properties()));
           
          
-          public static final RegistryObject<EntityType<MezoolEntity>> MEZOOL = MOBLIST.register("mezool_mob",
-                  () -> EntityType.Builder.of(MezoolEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":mezool_mob"));
+          public static final DeferredHolder<EntityType<?>, EntityType<MezoolEntity>> MEZOOL = MOBLIST.register("mezool_mob",
+                  () -> EntityType.Builder.of(MezoolEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mezool_mob"));
 
           public static final DeferredItem<DeferredSpawnEggItem> MEZOOL_SPAWN_EGG = ITEMS.register("mezool_spawn_egg",
                    () -> new DeferredSpawnEggItem(MEZOOL, 0x000000, 0x0000FF, new Item.Properties()));
           
           
-          public static final RegistryObject<EntityType<GamelEntity>> GAMEL = MOBLIST.register("gamel_mob",
-                  () -> EntityType.Builder.of(GamelEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":gamel_mob"));
+          public static final DeferredHolder<EntityType<?>, EntityType<GamelEntity>> GAMEL = MOBLIST.register("gamel_mob",
+                  () -> EntityType.Builder.of(GamelEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamel_mob"));
 
           public static final DeferredItem<DeferredSpawnEggItem> GAMEL_SPAWN_EGG = ITEMS.register("gamel_spawn_egg",
                    () -> new DeferredSpawnEggItem(GAMEL, 0x000000, 0xBFBFBF, new Item.Properties()));
           
           
-          public static final RegistryObject<EntityType<MuchiriEntity>> MUCHIRI = MOBLIST.register("muchiri_mob",
-                  () -> EntityType.Builder.of(MuchiriEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":muchiri_mob"));
+          public static final DeferredHolder<EntityType<?>, EntityType<MuchiriEntity>> MUCHIRI = MOBLIST.register("muchiri_mob",
+                  () -> EntityType.Builder.of(MuchiriEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":muchiri_mob"));
 
           public static final DeferredItem<DeferredSpawnEggItem> MUCHIRI_SPAWN_EGG = ITEMS.register("muchiri_spawn_egg",
                    () -> new DeferredSpawnEggItem(MUCHIRI, 0x000000, 0xFF9E00, new Item.Properties()));
           
-          public static final RegistryObject<EntityType<PoseidonEntity>> POSEIDON = MOBLIST.register("poseidon",
-                  () -> EntityType.Builder.of(PoseidonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":poseidon"));
+          public static final DeferredHolder<EntityType<?>, EntityType<PoseidonEntity>> POSEIDON = MOBLIST.register("poseidon",
+                  () -> EntityType.Builder.of(PoseidonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":poseidon"));
 
           public static final DeferredItem<DeferredSpawnEggItem> POSEIDON_SPAWN_EGG = ITEMS.register("poseidon_spawn_egg",
                    () -> new DeferredSpawnEggItem(POSEIDON, 0xD11B1E, 0x30BBEC, new Item.Properties()));
          
-          public static final RegistryObject<EntityType<CoreEntity>> CORE = MOBLIST.register("core",
-                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":core"));
+          public static final DeferredHolder<EntityType<?>, EntityType<CoreEntity>> CORE = MOBLIST.register("core",
+                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> CORE_SPAWN_EGG = ITEMS.register("core_spawn_egg",
                    () -> new DeferredSpawnEggItem(CORE, 0x312511, 0xF97012, new Item.Properties()));
          
           
-          public static final RegistryObject<EntityType<PoweredUpCoreEntity>> POWERED_UP_CORE = MOBLIST.register("powered_up_core",
-                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":powered_up_core"));
+          public static final DeferredHolder<EntityType<?>, EntityType<PoweredUpCoreEntity>> POWERED_UP_CORE = MOBLIST.register("powered_up_core",
+                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":powered_up_core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> POWERED_UP_CORE_SPAWN_EGG = ITEMS.register("powered_up_core_spawn_egg",
                    () -> new DeferredSpawnEggItem(POWERED_UP_CORE, 0x51115D, 0xB419D1, new Item.Properties()));
           
-          public static final RegistryObject<EntityType<AncientOOOEntity>> ANCIENT_OOO = MOBLIST.register("ancient_ooo",
-                  () -> EntityType.Builder.of(AncientOOOEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":ancient_ooo"));
+          public static final DeferredHolder<EntityType<?>, EntityType<AncientOOOEntity>> ANCIENT_OOO = MOBLIST.register("ancient_ooo",
+                  () -> EntityType.Builder.of(AncientOOOEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ancient_ooo"));
 
           public static final DeferredItem<DeferredSpawnEggItem> ANCIENT_OOO_SPAWN_EGG = ITEMS.register("ancient_ooo_spawn_egg",
                    () -> new DeferredSpawnEggItem(ANCIENT_OOO, 0x262320, 0xE5B216, new Item.Properties()));
           
-          public static final RegistryObject<EntityType<GodaEntity>> GODA = MOBLIST.register("goda",
-                  () -> EntityType.Builder.of(GodaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":goda"));
+          public static final DeferredHolder<EntityType<?>, EntityType<GodaEntity>> GODA = MOBLIST.register("goda",
+                  () -> EntityType.Builder.of(GodaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":goda"));
 
           public static final DeferredItem<DeferredSpawnEggItem> GODA_SPAWN_EGG = ITEMS.register("goda_spawn_egg",
                    () -> new DeferredSpawnEggItem(GODA, 0x000000, 0xB200FF, new Item.Properties()));
-          
-          
+
+    /**
           public static final RegistryObject<EntityType<BugsterVirusEntity>> BUGSTERVIRUS = MOBLIST.register("bugstervirus_mob",
                   () -> EntityType.Builder.of(BugsterVirusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MODID + ":bugster_mob"));
           
