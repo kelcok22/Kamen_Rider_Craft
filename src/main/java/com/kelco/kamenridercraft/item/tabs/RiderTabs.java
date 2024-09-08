@@ -466,7 +466,7 @@ public class RiderTabs {
             event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);
             event.accept(MobsCore.NEOTROOPER_SPAWN_EGG);
             event.accept(MobsCore.CAUCASUS_SPAWN_EGG);
-/**
+
             event.accept(MobsCore.NEW_MOLE_IMAGIN_SPAWN_EGG);
             event.accept(MobsCore.NEW_MOLE_IMAGIN_SAND_SPAWN_EGG);
             event.accept(MobsCore.GAOH_SPAWN_EGG);
@@ -486,7 +486,7 @@ public class RiderTabs {
             event.accept(MobsCore.FOUNDATION_X_MASQUERADE_SPAWN_EGG);
             event.accept(MobsCore.COMMANDER_DOPANT_SPAWN_EGG);
             event.accept(MobsCore.ETERNAL_SPAWN_EGG);
- **/
+
             event.accept(MobsCore.YUMMY_SPAWN_EGG);
             event.accept(MobsCore.KNIGHT_SOLDIER_SPAWN_EGG);
             event.accept(MobsCore.ANKH_SPAWN_EGG);
@@ -502,7 +502,7 @@ public class RiderTabs {
             event.accept(MobsCore.POWERED_UP_CORE_SPAWN_EGG);
             event.accept(MobsCore.ANCIENT_OOO_SPAWN_EGG);
             event.accept(MobsCore.GODA_SPAWN_EGG);
-            /**
+
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
             //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);
@@ -538,7 +538,7 @@ public class RiderTabs {
             event.accept(MobsCore.PAWN_JYAMATO_SPAWN_EGG);
             event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);
             event.accept(MobsCore.GM_RIDER_SPAWN_EGG);
-
+            /**
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);
             event.accept(MobsCore.SKULLBOILER_SPAWN_EGG);

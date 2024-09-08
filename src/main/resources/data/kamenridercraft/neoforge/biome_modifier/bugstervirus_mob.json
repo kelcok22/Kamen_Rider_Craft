@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:bugstervirus_mob",
+  "spawners": {
+	"type": "kamenridercraft:bugstervirus_mob",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}
