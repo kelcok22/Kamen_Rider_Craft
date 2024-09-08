@@ -128,6 +128,10 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ooo_items.png"))
                     .title(Component.literal("OOO Rider Items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_drive_items.png"))
+                    .title(Component.literal("Drive Rider Items")).build());
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ex_aid_items.png"))
                     .title(Component.literal("Ex-Aid Rider Items")).build());
@@ -198,6 +202,7 @@ public class RiderTabs {
      public static List<Item> W_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
 
+    public static List<Item> DRIVE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Item> ZERO_ONE_TAB_ITEM= new ArrayList<Item>();
@@ -367,6 +372,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.EX_AID_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.EX_AID_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.DRIVETab.get()) {
+            for (int i = 0; i < RiderTabs.DRIVE_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.DRIVE_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.Zero_OneTab.get()) {
