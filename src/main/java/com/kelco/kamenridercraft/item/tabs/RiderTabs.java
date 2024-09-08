@@ -128,6 +128,10 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(OOO_Rider_Items.OOOHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ooo_items.png"))
                     .title(Component.literal("OOO Rider Items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_LOGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_wizard_items.png"))
+                    .title(Component.literal("Wizard Rider Items")).build());
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_drive_items.png"))
                     .title(Component.literal("Drive Rider Items")).build());
@@ -201,6 +205,8 @@ public class RiderTabs {
 
      public static List<Item> W_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
+
+    public static List<Item> WIZARD_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Item> DRIVE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
@@ -372,6 +378,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.EX_AID_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.EX_AID_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.WIZARDTab.get()) {
+            for (int i = 0; i < RiderTabs.WIZARD_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.WIZARD_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.DRIVETab.get()) {

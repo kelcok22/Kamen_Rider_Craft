@@ -18,7 +18,7 @@ public class Drive_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> DRIVE_LOGO = ITEMS.register("drive_logo",
-			() -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED_TIRE = ITEMS.register("speed_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"type_speed_tire","drive","drivedriver_belt",
