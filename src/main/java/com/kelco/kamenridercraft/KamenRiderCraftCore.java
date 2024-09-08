@@ -92,6 +92,7 @@ public class KamenRiderCraftCore
         Decade_Rider_Items.register(modEventBus);
         W_Rider_Items.register(modEventBus);
         OOO_Rider_Items.register(modEventBus);
+        Drive_Rider_Items.register(modEventBus);
         Ex_Aid_Rider_Items.register(modEventBus);
         Zero_One_Rider_Items.register(modEventBus);
         Geats_Rider_Items.register(modEventBus);
