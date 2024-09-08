@@ -509,12 +509,12 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
-/**
-	public static final RegistryObject<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
+
+	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH
 					,Component.translatable("Gaoh Form!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+
 	public static final DeferredBlock<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					, MobsCore.POSEIDON
@@ -543,29 +543,29 @@ public class Rider_Blocks {
 					,MobsCore.GODA
 					,Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-/*
-	public static final RegistryObject<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
+
+	public static final DeferredBlock<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CRONUS
 					,Component.translatable("Buggle Up! Ten wo tsukame Rider! Kizame chronicle! Ima koso toki wa kiwamareri!").withStyle(ChatFormatting.GREEN)
 					,1,MIGHTY_BLOCK.get(),BANG_BANG_DRUM.get(),BAKUSOU_TROPHY.get()).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
-	public static final RegistryObject<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
+	public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.HOROBI
 					,Component.translatable("Forcerise! Sting Scorpion! Break down.").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final RegistryObject<Block> IKAZUCHI_BOSS_BLOCK = registerBlock("ikazuchi_boss_block",
+	public static final DeferredBlock<Block> IKAZUCHI_BOSS_BLOCK = registerBlock("ikazuchi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.IKAZUCHI
 					,Component.translatable("Forcerise! Break down.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	public static final RegistryObject<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
+	public static final DeferredBlock<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ARK_ZERO
 					,Component.translatable("Arkrise! All zero.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
-**/
+
 
 private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
 	DeferredBlock<T> toReturn = BLOCKS.register(name, block);

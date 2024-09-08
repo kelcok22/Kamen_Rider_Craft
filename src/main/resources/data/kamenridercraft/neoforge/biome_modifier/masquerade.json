@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:masquerade",
+  "spawners": {
+	"type": "kamenridercraft:masquerade",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

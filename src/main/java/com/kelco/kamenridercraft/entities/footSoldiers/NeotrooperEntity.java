@@ -31,8 +31,7 @@ public class NeotrooperEntity extends BaseHenchmenEntity{
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player){
-						Player playerIn=	(Player) this.getLastAttacker();
+					if (this.getLastAttacker()instanceof Player playerIn) {
 						playerIn.sendSystemMessage(Component.translatable("<Kamen Rider Caucasus> Henshin!").withStyle(ChatFormatting.GOLD));
 						playerIn.sendSystemMessage(Component.translatable("Henshin! Change Beetle!").withStyle(ChatFormatting.GOLD));
 					}

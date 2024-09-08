@@ -3,9 +3,12 @@ package com.kelco.kamenridercraft.item.ryuki;
 import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -63,10 +66,7 @@ public class AdventCardItem extends BaseItem {
 												p_41128_.addFreshEntity(entity);
 											}
 										}
-									}
-									/**
-
-									else {
+									} else {
 									 	switch (SPECIAL) {
 									 		case "trick_vent":
 												for (int i = 0; i < 4; i++) {
@@ -130,8 +130,7 @@ public class AdventCardItem extends BaseItem {
 									 			break;
 									 		default:
 									 			break;
-									 **/
-
+										}
 									}
 
 									if (!p_41129_.isCreative()) {
@@ -145,8 +144,7 @@ public class AdventCardItem extends BaseItem {
 					}
 				}
 			}
-
-		
+		}
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
 	}
 }
