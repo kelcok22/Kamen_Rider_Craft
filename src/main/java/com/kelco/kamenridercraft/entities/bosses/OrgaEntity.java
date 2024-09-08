@@ -27,8 +27,7 @@ public class OrgaEntity extends BaseHenchmenEntity {
     public void aiStep() {
     	if (this.getItemBySlot(EquipmentSlot.FEET).getItem()!=Faiz_Rider_Items.ORGA_DRIVER.get()) {
     		if (this.getHealth()<50) {
-    			if(this.getLastAttacker() instanceof Player) {
-    				Player playerIn = (Player) this.getLastAttacker();
+    			if(this.getLastAttacker() instanceof Player playerIn) {
 					playerIn.sendSystemMessage(Component.translatable("<Kamen Rider Orga>Henshin!").withStyle(ChatFormatting.RED));
     				playerIn.sendSystemMessage(Component.translatable("Standing By! Complete!").withStyle(ChatFormatting.RED));
     				

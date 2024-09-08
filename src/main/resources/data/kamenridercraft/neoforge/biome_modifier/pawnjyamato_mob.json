@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#forge:is_dense",
+  "spawners": {
+	"type": "kamenridercraft:pawnjyamato_mob",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

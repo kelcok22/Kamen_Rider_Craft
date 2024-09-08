@@ -2,13 +2,16 @@ package com.kelco.kamenridercraft.item.ex_aid;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.Holder;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -38,39 +41,34 @@ public class GamerDriverItem extends RiderDriverItem {
 		Num_Base_Form_Item=2;
 	}
 
-/**
-    public static boolean paradxSummoned(Player player, Level level) {
-		for (ParaDXSummonEntity entity : level.getEntitiesOfClass(ParaDXSummonEntity.class,
+
+    public static boolean paradxSummoned(Player player) {
+		for (ParaDXSummonEntity entity : player.level().getEntitiesOfClass(ParaDXSummonEntity.class,
 						player.getBoundingBox().inflate(30), entity -> entity.getOwner() == player)) {
 			if (entity != null) return true;
 		}
         return false;
     }
 
-	public void OnformChange(ItemStack itemstack, Player player) {
-		super.OnformChange(itemstack, player);
-
-		Level level = player.level();
-
-		if (!paradxSummoned(player, level)
+	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+		if (entity instanceof Player player && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) {
-			BaseSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(level);
+			ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());
 			if (paradx != null) {
 				paradx.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-				paradx.setTame(true);
-				paradx.setOwnerUUID(player.getUUID());
-				paradx.setRequiredArmor();
+				paradx.bindToPlayer(player);
 				if (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()) {
 					paradx.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_PARA_DX.get()));
 					RiderDriverItem.set_Form_Item(paradx.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get(), 1);
 				}
-				level.addFreshEntity(paradx);
+				player.level().addFreshEntity(paradx);
 			}
 		}
+		super.OnformChange(itemstack, entity, tag);
 	}
-**/
+
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{

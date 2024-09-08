@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:new_mole_imagin_sand",
+  "spawners": {
+	"type": "kamenridercraft:new_mole_imagin_sand",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}
