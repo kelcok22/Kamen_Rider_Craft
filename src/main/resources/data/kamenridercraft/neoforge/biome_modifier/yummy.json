@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:yummy_mob",
+  "spawners": {
+	"type": "kamenridercraft:yummy_mob",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

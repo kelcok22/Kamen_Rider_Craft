@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#kamenridercraft:trilobite_magia",
+  "spawners": {
+	"type": "kamenridercraft:trilobite_magia",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

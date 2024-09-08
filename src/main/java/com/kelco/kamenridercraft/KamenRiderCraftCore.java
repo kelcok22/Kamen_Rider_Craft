@@ -1,14 +1,23 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.client.renderer.AllyEntityRenderer;
 import com.kelco.kamenridercraft.client.renderer.AnkhRenderer;
 import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.NewMoleImaginSandRenderer;
+import com.kelco.kamenridercraft.client.renderer.SummonedEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
+import com.kelco.kamenridercraft.entities.allies.KintarosEntity;
+import com.kelco.kamenridercraft.entities.allies.MomotarosEntity;
+import com.kelco.kamenridercraft.entities.allies.RyutarosEntity;
+import com.kelco.kamenridercraft.entities.allies.UratarosEntity;
 import com.kelco.kamenridercraft.entities.allies.YummyEntity;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
+import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
@@ -146,7 +155,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());
 		event.put(MobsCore.NEOTROOPER.get(), NeotrooperEntity.setAttributes().build());
 		event.put(MobsCore.CAUCASUS.get(), CaucasusEntity.setAttributes().build());
-/*
+
 		event.put(MobsCore.NEW_MOLE_IMAGIN.get(), NewMoleImaginEntity.setAttributes().build());
 		event.put(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandEntity.setAttributes().build());
 		event.put(MobsCore.GAOH.get(), GaohEntity.setAttributes().build());
@@ -166,7 +175,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.FOUNDATION_X_MASQUERADE.get(), FoundationXMasqueradeEntity.setAttributes().build());
 		event.put(MobsCore.COMMANDER_DOPANT.get(), CommanderDopantEntity.setAttributes().build());
 		event.put(MobsCore.ETERNAL.get(), EternalEntity.setAttributes().build());
-		 **/
+
 		event.put(MobsCore.MUCHIRI.get(), MuchiriEntity.setAttributes().build());
 		event.put(MobsCore.YUMMY.get(), YummyEntity.setAttributes().build());
 		event.put(MobsCore.KNIGHT_SOLDIER.get(), KnightSoldierEntity.setAttributes().build());
@@ -184,7 +193,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
 
-/**
+
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -205,7 +214,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.RIDEPLAYER.get(), RideplayerEntity.setAttributes().build());
 		event.put(MobsCore.PARADX.get(), ParaDxEntity.setAttributes().build());
 		event.put(MobsCore.CRONUS.get(), CronusEntity.setAttributes().build());
-		
+
 		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
 		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());
 		event.put(MobsCore.BATTLE_RAIDER.get(), BattleRaiderEntity.setAttributes().build());
@@ -224,18 +233,18 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ZAIA.get(), ZaiaEntity.setAttributes().build());
 		event.put(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), DireWolfSoldMagiaEntity.setAttributes().build());
 		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
-		
+
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
 		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
-
+		/**
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
-
+**/
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
-**/
+
 	}
 
     // Add the example block item to the building blocks tab
@@ -391,7 +400,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SHADOW_TROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEOTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CAUCASUS.get(), BasicEntityRenderer::new);
-/*
+
             event.registerEntityRenderer(MobsCore.NEW_MOLE_IMAGIN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandRenderer::new);
             event.registerEntityRenderer(MobsCore.GAOH.get(), BasicEntityRenderer::new);
@@ -411,7 +420,6 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.FOUNDATION_X_MASQUERADE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ETERNAL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMMANDER_DOPANT.get(), BasicEntityRenderer::new);
- */
             event.registerEntityRenderer(MobsCore.MUCHIRI.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.YUMMY.get(), BasicEntityRenderer::new);
@@ -429,7 +437,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ANCIENT_OOO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
 
-     /*
+
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.TADDLE_BUGSTER.get(), BasicEntityRenderer::new);
@@ -473,14 +481,14 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.PAWN_JYAMATO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GM_RIDER.get(), BasicEntityRenderer::new);
-
+     /*
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);
-
+            */
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
-            */
+
         }
     }
 }

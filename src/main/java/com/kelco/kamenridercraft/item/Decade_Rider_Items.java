@@ -570,8 +570,8 @@ public class Decade_Rider_Items {
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item>DECADE_SLASH_CARD = ITEMS.register("decade_slash_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(Effect_core.SLASH, 300,2,true,false)).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
-    //public static final DeferredItem<Item> DECADE_ILLUSION_CARD = ITEMS.register("decade_illusion_card",
-	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, "illusion").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
+    public static final DeferredItem<Item> DECADE_ILLUSION_CARD = ITEMS.register("decade_illusion_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, "illusion").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DECADE_INVISIBLE_CARD = ITEMS.register("decade_invisible_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_BLAST_CARD = ITEMS.register("diend_blast_card",
@@ -582,8 +582,8 @@ public class Decade_Rider_Items {
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "crossattack").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_BARRIER_CARD = ITEMS.register("diend_barrier_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "barrier").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
-    //public static final DeferredItem<Item> DIEND_ILLUSION_CARD = ITEMS.register("diend_illusion_card",
-	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "diend_illusion").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
+    public static final DeferredItem<Item> DIEND_ILLUSION_CARD = ITEMS.register("diend_illusion_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "diend_illusion").AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     //public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",
 	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan"}, ForgeRegistries.ITEMS.getValue(new ResourceLocation("supersentaicraft:rekka_daizantou")), 1531).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> G4_GIGANT_CARD = ITEMS.register("g4_gigant_card",
