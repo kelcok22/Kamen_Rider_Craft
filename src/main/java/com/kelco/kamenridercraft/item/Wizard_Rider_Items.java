@@ -1,8 +1,11 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.item.wizard.WizardRingItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -232,25 +235,57 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
-	/*
+	public static final DeferredItem<Item> LIGHT_WIZARD_RING = ITEMS.register("light_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.NIGHT_VISION, 800,0,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
-	light_ring
-	excite_ring
-	defend_ring
-	thunder_ring
-	explosion_ring
-	sleep_ring
-	bind_ring
-	teleport_ring
-	fall_ring
-	connect_ring
-	kick_strike_ring
-	eclipse_ring
-	liquid_ring
-	drill_ring
-	big_ring
-	small_ring
-	*/
+	public static final DeferredItem<Item> EXCITE_WIZARD_RING = ITEMS.register("excite_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500,1,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	//defend_ring
+	//thunder_ring
+	//explosion_ring
+
+	public static final DeferredItem<Item> SLEEP_WIZARD_RING = ITEMS.register("sleep_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SLEEP, 80,0,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	//bind_ring
+	//teleport_ring
+	//fall_ring
+	//connect_ring
+
+	public static final DeferredItem<Item> KICK_STRIKE_WIZARD_RING = ITEMS.register("kick_strike_ring",
+			() -> new WizardRingItem(new Item.Properties()
+					, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100,9,true,false)
+					, new MobEffectInstance(MobEffects.JUMP, 100,1,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ECLIPSE_WIZARD_RING = ITEMS.register("eclipse_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.NIGHT, 80,0,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> LIGUID_WIZARD_RING = ITEMS.register("liquid_ring",
+			() -> new WizardRingItem(new Item.Properties()
+					, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1000,9,true,false)
+					, new MobEffectInstance(MobEffects.WATER_BREATHING, 1000,1,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRILL_WIZARD_RING = ITEMS.register("drill_ring",
+			() -> new WizardRingItem(new Item.Properties()
+					, new MobEffectInstance(MobEffects.DIG_SPEED, 800,3,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BIG_WIZARD_RING = ITEMS.register("big_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,2,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMALL, 500,20,true,false))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
 	public static final DeferredItem<Item> DRESS_UP_RING = ITEMS.register("dress_up_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dressup","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
@@ -284,59 +319,59 @@ public class Wizard_Rider_Items {
 	fourze_engage_ring
 	super_sentai_ring
 */
-	public static final DeferredItem<Item> WIZARD_LOGO_HELMET = ITEMS.register("wizard_head",
+	public static final DeferredItem<Item> WIZARD_HEAD = ITEMS.register("wizard_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
-	public static final DeferredItem<Item> WIZARD_LOGO_CHESTPLATE = ITEMS.register("wizard_troso",
+	public static final DeferredItem<Item> WIZARD_CHESTPLATE = ITEMS.register("wizard_troso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
-	public static final DeferredItem<Item> WIZARD_LOGO_LEGGINGS = ITEMS.register("wizard_legs",
+	public static final DeferredItem<Item> WIZARD_LEGGINGS = ITEMS.register("wizard_legs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 			.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER = ITEMS.register("magewizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_B = ITEMS.register("magewizardriver_b",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_G = ITEMS.register("magewizardriver_g",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_FOOT_SOLDIERS = ITEMS.register("magewizardriver_foot_soldiers",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_CAPTAIN = ITEMS.register("magewizardriver_captain",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_DRIVER = ITEMS.register("sorcererdriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER_F = ITEMS.register("whitewizardriver_f",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARDRIVER = ITEMS.register("dark_wizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARDRIVER = ITEMS.register("black_wizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_LOGO_HELMET, WIZARD_LOGO_CHESTPLATE, WIZARD_LOGO_LEGGINGS, new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",

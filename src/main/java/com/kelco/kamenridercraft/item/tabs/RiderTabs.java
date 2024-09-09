@@ -129,7 +129,7 @@ public class RiderTabs {
                     .title(Component.literal("OOO Rider Items")).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_LOGO_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_wizard_items.png"))
+            CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_wizard_items.png"))
                     .title(Component.literal("Wizard Rider Items")).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
