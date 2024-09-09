@@ -83,7 +83,10 @@ public class Effect_core {
             () -> new 	ReflectEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 
     public static final Holder<MobEffect>  SLEEP= EFFECT.register("sleep",
-            () -> new 	SleepEffect(MobEffectCategory.HARMFUL, 0xffce00));
+            () -> new 	SleepEffect(MobEffectCategory.NEUTRAL, 0xffce00));
+
+    public static final Holder<MobEffect>  NIGHT= EFFECT.register("night",
+            () -> new 	NightEffect(MobEffectCategory.HARMFUL, 0xffed9e));
 
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
             () -> new 	FormLockEffect(MobEffectCategory.HARMFUL, 0xffffff));
