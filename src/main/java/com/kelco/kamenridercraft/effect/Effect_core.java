@@ -88,6 +88,10 @@ public class Effect_core {
     public static final Holder<MobEffect>  NIGHT= EFFECT.register("night",
             () -> new 	NightEffect(MobEffectCategory.HARMFUL, 0xffed9e));
 
+    public static final Holder<MobEffect>  THUNDER= EFFECT.register("thunder",
+            () -> new ThunderEffect(MobEffectCategory.HARMFUL, 0x76ecff));
+
+
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
             () -> new 	FormLockEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
