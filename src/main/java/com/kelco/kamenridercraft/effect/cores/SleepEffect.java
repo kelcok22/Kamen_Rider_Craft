@@ -18,6 +18,6 @@ public class SleepEffect extends InstantenousMobEffect {
 		         ((ServerLevel)pLivingEntity.level()).setDayTime(0);
 		      }
 		}
-		return true;
+		return false;
 	}
 }

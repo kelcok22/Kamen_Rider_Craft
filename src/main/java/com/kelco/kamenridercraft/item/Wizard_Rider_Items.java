@@ -52,42 +52,49 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> FLAME_WIZARD_RING = ITEMS.register("flame_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING = ITEMS.register("water_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HURRICANE_WIZARD_RING = ITEMS.register("hurricane_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hurricane","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 400, 5,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LAND_WIZARD_RING = ITEMS.register("land_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_land","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLAME_DRAGON_WIZARD_RING = ITEMS.register("flame_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon","wizard","wizardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_DRAGON_WIZARD_RING = ITEMS.register("water_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water_dragon","wizard","wizardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HURRICANE_DRAGON_WIZARD_RING = ITEMS.register("hurricane_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hurricane_dragon","wizard","wizardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 400, 6,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING_BEAST = ITEMS.register("land_ring_dragon_beast",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wizard","beast","beast_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 2,true,false))
 					.ChangeModel("geo/wizard_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING = ITEMS.register("land_ring_dragon",
@@ -236,19 +243,23 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIGHT_WIZARD_RING = ITEMS.register("light_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.NIGHT_VISION, 800,0,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.NIGHT_VISION, 800,0,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXCITE_WIZARD_RING = ITEMS.register("excite_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500,1,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500,1,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	//defend_ring
-	//thunder_ring
+
+	public static final DeferredItem<Item> THUNDER_WIZARD_RING = ITEMS.register("thunder_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.THUNDER, 500,0,true,true))
+					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
 	//explosion_ring
 
 	public static final DeferredItem<Item> SLEEP_WIZARD_RING = ITEMS.register("sleep_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SLEEP, 80,0,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SLEEP, 80,0,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	//bind_ring
@@ -258,32 +269,31 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> KICK_STRIKE_WIZARD_RING = ITEMS.register("kick_strike_ring",
 			() -> new WizardRingItem(new Item.Properties()
-					, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100,9,true,false)
-					, new MobEffectInstance(MobEffects.JUMP, 100,1,true,false))
+					, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600,2,true,true)
+					, new MobEffectInstance(MobEffects.JUMP, 600,9,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ECLIPSE_WIZARD_RING = ITEMS.register("eclipse_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.NIGHT, 80,0,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.NIGHT, 80,0,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
-
 
 	public static final DeferredItem<Item> LIGUID_WIZARD_RING = ITEMS.register("liquid_ring",
 			() -> new WizardRingItem(new Item.Properties()
-					, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1000,9,true,false)
-					, new MobEffectInstance(MobEffects.WATER_BREATHING, 1000,1,true,false))
+					, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1000,9,true,true)
+					, new MobEffectInstance(MobEffects.WATER_BREATHING, 1000,1,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRILL_WIZARD_RING = ITEMS.register("drill_ring",
 			() -> new WizardRingItem(new Item.Properties()
-					, new MobEffectInstance(MobEffects.DIG_SPEED, 800,3,true,false))
+					, new MobEffectInstance(MobEffects.DIG_SPEED, 800,3,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIG_WIZARD_RING = ITEMS.register("big_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,2,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIG, 500,2,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMALL, 500,20,true,false))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMALL, 500,20,true,true))
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRESS_UP_RING = ITEMS.register("dress_up_ring",

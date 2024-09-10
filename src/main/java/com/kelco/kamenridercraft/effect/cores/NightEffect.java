@@ -18,6 +18,6 @@ public class NightEffect extends InstantenousMobEffect {
 		         ((ServerLevel)pLivingEntity.level()).setDayTime(18000);
 		      }
 		}
-		return true;
+		return false;
 	}
 }

@@ -66,7 +66,7 @@ public class WizardRingItem extends BaseItem {
 					if (EFFECTS != null) {
 						for (int i = 0; i < EFFECTS.size(); i++)
 						{
-							player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,false));
+							player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,true));
 						}
 					}
 					if (!player.isCreative()) {
