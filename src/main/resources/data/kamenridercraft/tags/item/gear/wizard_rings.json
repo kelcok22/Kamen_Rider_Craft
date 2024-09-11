@@ -1,0 +1,25 @@
+{
+  "values": [
+	"kamenridercraft:flame_ring",
+	"kamenridercraft:water_ring",
+	"kamenridercraft:hurricane_ring",
+	"kamenridercraft:land_ring",
+	"kamenridercraft:flame_ring_dragon",
+	"kamenridercraft:water_ring_dragon",
+	"kamenridercraft:hurricane_ring_dragon",
+	"kamenridercraft:land_ring_dragon",
+	"kamenridercraft:infinity_ring",
+	"kamenridercraft:drago_timer",
+	"kamenridercraft:special_ring",
+	"kamenridercraft:finish_strike_ring",
+	"kamenridercraft:special_rush_ring",
+	"kamenridercraft:beast_ring",
+	"kamenridercraft:falco_ring",
+	"kamenridercraft:chameleo_ring",
+	"kamenridercraft:buffa_ring",
+	"kamenridercraft:dolphi_ring",
+	"kamenridercraft:hyper_ring",
+	"kamenridercraft:dress_up_ring",
+	"#kamenridercraft:gear/ability_items/wizard"
+  ]
+}
