@@ -31,6 +31,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
@@ -76,21 +77,35 @@ public class ModCommonEvents {
 
 			//event.getEntity().setInvisible(false);
 		}
+/*
+		@SubscribeEvent
+		// Heals an entity by half a heart every time they jump.
+		public void onLivingJump(LivingEvent.LivingJumpEvent event) {
+			Entity entity = event.getEntity();
+			// Only heal on the server side
+			if (!entity.level().isClientSide()) {
+				boolean flag = entity.level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
 
+				entity.level().explode(null, entity.getX(), entity.getY() +1, entity.getZ(), 3, flag, Level.ExplosionInteraction.MOB);
+
+			}
+		}
+*/
 		@SubscribeEvent
 		public void addLivingDamageEvent(LivingDamageEvent.Post event) {
+
 
 			if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
 				if (event.getSource().is(DamageTypes.PLAYER_ATTACK) || event.getSource().is(DamageTypes.MOB_ATTACK) || event.getSource().is(DamageTypes.MOB_ATTACK_NO_AGGRO)) {
 
 					if (_livEnt.hasEffect(Effect_core.FIRE_PUNCH)) {
 						 if (_livEnt.getMainHandItem().isEmpty()) {
-						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_PUNCH)).getAmplifier() + 1));
+							 event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier()+1);
 						}
 					}
 
 					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
-						event.getEntity().setRemainingFireTicks(25*(Objects.requireNonNull(_livEnt.getEffect(Effect_core.FIRE_ARMOR)).getAmplifier() + 1));
+						_livEnt.igniteForSeconds(event.getEntity().getEffect(Effect_core.FIRE_ARMOR).getAmplifier()+1);
 					}
 
 					if (_livEnt.hasEffect(Effect_core.EXPLOSION_PUNCH)) {
@@ -118,20 +133,9 @@ public class ModCommonEvents {
 		}
 	}
 
-		/**
-		@SubscribeEvent
-		// Heals an entity by half a heart every time they jump.
-		public void onLivingJump(LivingEvent.LivingJumpEvent event) {
-			Entity entity = event.getEntity();
-			// Only heal on the server side
-			if (!entity.level().isClientSide()) {
-				boolean flag = entity.level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
 
-				entity.level().explode(null, entity.getX(), entity.getY() +1, entity.getZ(), 3, flag, Level.ExplosionInteraction.MOB);
 
-			}
-		}
-**/
+
 	public static class CommonEvents {
 
 			@SubscribeEvent

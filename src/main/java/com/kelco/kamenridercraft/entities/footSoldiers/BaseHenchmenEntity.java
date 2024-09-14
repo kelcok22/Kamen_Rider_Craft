@@ -84,7 +84,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
     public void aiStep() {
         ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-        if (this.getTarget() != null && (itemstack.getItem() instanceof BowItem && itemstack.getItem() instanceof SwordItem || itemstack.is(ItemTags.create( ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns"))))) {
+        if (this.getTarget() != null && itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) {
             boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
                     || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
                     || this.getTarget().distanceToSqr(this) < 40.0D));

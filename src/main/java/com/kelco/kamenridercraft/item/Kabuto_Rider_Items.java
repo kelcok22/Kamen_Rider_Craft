@@ -10,7 +10,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -21,19 +20,19 @@ public class Kabuto_Rider_Items {
         public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
         public static final DeferredItem<Item> KABUTO_LOGO = ITEMS.register("kabuto_logo",
-	    		() -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+	    		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
  
         public static final DeferredItem<Item> MINI_ZECTER = ITEMS.register("mini_zecter",
-                () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
  
         public static final DeferredItem<Item> UNFINISHED_KABUTICK_ZECTER = ITEMS.register("unfinished_kabutick_zecter",
-                () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         public static final DeferredItem<Item> PERFECT_THEBEE_ZECTER = ITEMS.register("perfectthebee_zecter",
-                () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         public static final DeferredItem<Item> PERFECT_DRAKE_ZECTER = ITEMS.register("perfectdrake_zecter",
-                () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         public static final DeferredItem<Item> PERFECT_SASWORD_ZECTER = ITEMS.register("perfectsasword_zecter",
-                () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> KABUTO_ZECTER_MASK = ITEMS.register("kabuto_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","kabuto","kabuto_rider_belt_m",
@@ -44,7 +43,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","kabuto","kabuto_rider_belt",
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                .addSwitchForm(KABUTO_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> THEBEE_ZECTER_MASK = ITEMS.register("thebee_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","thebee","zect_buckle_belt",
@@ -56,7 +55,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-                .addSwitchForm(THEBEE_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(THEBEE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> DRAKE_ZECTER_MASK = ITEMS.register("drake_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","drake","zect_buckle_belt",
@@ -69,7 +68,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                .addSwitchForm(DRAKE_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(DRAKE_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> SASWORD_ZECTER_MASK = ITEMS.register("sasword_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","sasword","zect_buckle_belt",
@@ -81,7 +80,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 2,true,false))
-                .addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","gatack","gatack_rider_belt_m",
@@ -94,7 +93,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-                .addSwitchForm(GATACK_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(GATACK_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> GATACK_HYPER_ZECTER = ITEMS.register("gatack_hyper_zecter",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","gatack","gatack_rider_belt",
@@ -113,7 +112,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
                         new MobEffectInstance(MobEffects.JUMP, 40, 7,true,false))
-                .AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> PUNCHHOPPER_ZECTER = ITEMS.register("punchhopper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","punchhopper","punchhopper_zect_buckle_belt",
@@ -122,7 +121,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
                         new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false))
-                .AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> DARK_KABUTO_ZECTER_MASK = ITEMS.register("dark_kabuto_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","dark_kabuto","dark_kabuto_rider_belt_m",
@@ -134,7 +133,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_kabuto","dark_kabuto_rider_belt",
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                .addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> DARK_HYPER_ZECTER = ITEMS.register("dark_hyper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","dark_kabuto","dark_kabuto_rider_belt",
@@ -160,7 +159,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                         new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                .addSwitchForm(CAUCASUS_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(CAUCASUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> HERCUS_ZECTER_MASK = ITEMS.register("hercus_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","hercus","zect_buckle_belt",
@@ -173,7 +172,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                .addSwitchForm(HERCUS_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(HERCUS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> KETAROS_ZECTER_MASK = ITEMS.register("ketaros_zecter_mask",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_masked","ketaros","zect_buckle_belt",
@@ -185,14 +184,14 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                .addSwitchForm(KETAROS_ZECTER_MASK.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addSwitchForm(KETAROS_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> LADY_ZECTER = ITEMS.register("lady_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","lady","zect_buckle_belt",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-                .AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","kabuto","kabuto_rider_belt",
@@ -202,7 +201,7 @@ public class Kabuto_Rider_Items {
                         new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                         new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                .addAlternative(DARK_HYPER_ZECTER.get()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                .addAlternative(DARK_HYPER_ZECTER.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"","zectrooper","zectrooper_belt",
@@ -264,7 +263,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neotrooper",NEOTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
 	    
         public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
-                () -> new ClockUpPadItem(new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new ClockUpPadItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> KABUTO_KUNAI = ITEMS.register("kabuto_kunai",
                 () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)

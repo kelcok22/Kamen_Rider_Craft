@@ -20,22 +20,22 @@ public class Gavv_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> GAVV_LOGO = ITEMS.register("gavv_logo",
-			() -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> POPPINGGUMMY_GOCHIZO = ITEMS.register("poppingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNCHINGUMMY_GOCHIZO = ITEMS.register("punchingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_punchin","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 400, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICKINGUMMY_GOCHIZO = ITEMS.register("kickingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 400, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 400, 1,true,false)).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAVV_HELMET = ITEMS.register("gavv_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
