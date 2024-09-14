@@ -61,6 +61,15 @@
 "effect.kamenridercraft.form_lock":"Form Lock",
 "effect.kamenridercraft.pause":"Pause!",
 "effect.kamenridercraft.greeed":"Greeed",
+  "effect.kamenridercraft.explosion":"Explosion",
+  "effect.kamenridercraft.time":"Time",
+  "effect.kamenridercraft.bind":"Bind",
+  "effect.kamenridercraft.christmas":"Merry Christmas",
+  "effect.kamenridercraft.blizzard":"Blizzard",
+  "effect.kamenridercraft.smell":"Smell",
+  "effect.kamenridercraft.flower":"Flower",
+  "effect.kamenridercraft.fall":"Fall",
+
 
 
 "item.kamenridercraft.rider_circuit": "Rider Circuit",

@@ -320,7 +320,7 @@ public class Wizard_Rider_Items {
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLIZZARD_WIZARD_RING = ITEMS.register("blizzard_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BLIZZARD, 500,2,true,true))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BLIZZARD, 500,0,true,true))
 					.AddToList(UnknownWizardRingItem.blue_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRAVITY_WIZARD_RING = ITEMS.register("gravity_ring",
