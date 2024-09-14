@@ -62,7 +62,7 @@ public class WizardRingItem extends BaseItem {
 		&&player.getItemBySlot(EquipmentSlot.CHEST).getItem() == Wizard_Rider_Items.WIZARD_CHESTPLATE.get()
 		&&player.getItemBySlot(EquipmentSlot.HEAD).getItem() == Wizard_Rider_Items.WIZARD_HEAD.get()){
 			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt){
-				if (ArrayUtils.contains(FORMS, ((RiderDriverItem) belt).GET_TEXT(player.getItemBySlot(EquipmentSlot.FEET), null, player, ((RiderDriverItem) belt).Rider))) {
+				if (ArrayUtils.contains(FORMS, ((RiderDriverItem) belt).Rider)) {
 					if (EFFECTS != null) {
 						for (int i = 0; i < EFFECTS.size(); i++)
 						{

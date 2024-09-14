@@ -7,19 +7,17 @@ import java.util.Random;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 
-public class gasha_ticket extends BaseItem {
+public class GashaTicketItem extends BaseItem {
 
 	  public static List<Item> CHAOS_RING= new ArrayList<Item>();
 
-	public gasha_ticket (Properties properties)
+	public GashaTicketItem(Properties properties)
 	{
 		super(properties);
 	}

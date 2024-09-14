@@ -46,7 +46,7 @@ public class BaseItem extends Item {
     }
 
 
-    public BaseItem AddToTabList(List<Item> TabList,int num) {
+    public BaseItem AddToList(List<Item> TabList, int num) {
         for (int i = 0; i < num; i++)
         {
             TabList.add(this);
@@ -54,7 +54,7 @@ public class BaseItem extends Item {
         return this;
     }
 
-    public BaseItem AddToTabList(List<Item> TabList) {
+    public BaseItem AddToList(List<Item> TabList) {
         TabList.add(this);
         return this;
     }

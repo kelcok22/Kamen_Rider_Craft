@@ -12,7 +12,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 
 public class Ichigo_Rider_Items {
@@ -21,7 +20,7 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_LOGO = ITEMS.register("kamen_rider_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
 
@@ -30,13 +29,13 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_NIGO = ITEMS.register("typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","nigo","typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ORIGINAL_TYPHOON_CORE_NIGO = ITEMS.register("original_typhoon_core_nigo",
@@ -48,49 +47,49 @@ public class Ichigo_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_original","ichigo","typhoon_belt_original",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).addAlternative(ORIGINAL_TYPHOON_CORE_NIGO.get())
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SAKURAJIMA_TYPHOON_CORE = ITEMS.register("sakurajima_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_sakurajima","ichigo","typhoon_belt_original",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_SANGO = ITEMS.register("typhoon_core_sango",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","sango","typhoon_belt_sango",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK = ITEMS.register("rider3_vs_the_demon_of_general_black",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_manga","sango","typhoon_belt_original",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_CORE_YONGO = ITEMS.register("typhoon_core_yongo",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","yongo","typhoon_belt_yongo",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NEW_TYPHOON_CORE = ITEMS.register("new_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_new","ichigo","new_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_rider","shocker_rider_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ichigo","nophoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ICHIGOHELMET = ITEMS.register("ichigohead",
@@ -174,27 +173,27 @@ public class Ichigo_Rider_Items {
     //V3
 
     public static final DeferredItem<Item> V3_LOGO = ITEMS.register("v3_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
     public static final DeferredItem<Item> RIDERMAN_LOGO = ITEMS.register("riderman_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE = ITEMS.register("double_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v3","double_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.V3_TAB_ITEM));
+                    .AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> BLUE_DOUBLE_TYPHOON_CORE = ITEMS.register("blue_double_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_blue","v3","double_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.V3_TAB_ITEM));
+                    .AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_BELT_CORE = ITEMS.register("riderman_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","riderman","riderman_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.V3_TAB_ITEM));
+                    .AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> V3HELMET = ITEMS.register("v3head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
@@ -220,19 +219,19 @@ public class Ichigo_Rider_Items {
 
     //X
     public static final DeferredItem<Item> X_LOGO = ITEMS.register("x_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL_CORE = ITEMS.register("ridol_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","x","ridol_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.X_TAB_ITEM));
+                    .AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> PREFECTER = ITEMS.register("perfecter",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_perfector","riderman","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddCompatibilityList(new String[] {"tackle"}).AddToTabList(RiderTabs.X_TAB_ITEM));
+                    .AddCompatibilityList(new String[] {"tackle"}).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -256,20 +255,20 @@ public class Ichigo_Rider_Items {
     //Amazon
 
     public static final DeferredItem<Item> AMAZON_LOGO = ITEMS.register("amazon_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CONDORER_WHEEL = ITEMS.register("condorer_wheel",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon","condorer_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
+                    .AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> GAGA_ARMLET = ITEMS.register("gaga_armlet",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZONHELMET = ITEMS.register("amazonhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
@@ -288,26 +287,26 @@ public class Ichigo_Rider_Items {
 
     //Stronger
     public static final DeferredItem<Item> STRONGER_LOGO = ITEMS.register("stronger_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ELECTRER_CORE = ITEMS.register("electrer_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","stronger","electrer_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+                    .AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_charge_up","stronger","electrer_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+                    .AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> TACKLE_CORE = ITEMS.register("tackle_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+                    .AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
 
@@ -332,7 +331,7 @@ public class Ichigo_Rider_Items {
 
     //Skyrider
     public static final DeferredItem<Item> SKYRIDER_LOGO = ITEMS.register("skyrider_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> TORNADO_CORE = ITEMS.register("tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","skyrider","tornado_belt",
@@ -340,7 +339,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
                     ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false))
-                    .AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
+                    .AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
 
 
@@ -356,7 +355,7 @@ public class Ichigo_Rider_Items {
 
     //Super 1
     public static final DeferredItem<Item>  SUPER_1_LOGO = ITEMS.register("super_1_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  CYCLODE_CORE = ITEMS.register("cyclode_core",
@@ -365,7 +364,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
+                    .AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUPER1HELMET = ITEMS.register("super_1head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
@@ -379,14 +378,14 @@ public class Ichigo_Rider_Items {
 
     //ZX
     public static final DeferredItem<Item>  ZX_LOGO = ITEMS.register("zx_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  ZX_BELT_CORE = ITEMS.register("zx_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zx","zx_belt_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.ZX_TAB_ITEM));
+                    .AddToList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZXHELMET = ITEMS.register("zxhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
@@ -412,7 +411,7 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item>  BLACK_LOGO = ITEMS.register("black_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  RED_KING_STONE = ITEMS.register("red_king_stone",
@@ -421,7 +420,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+                    .AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BATTA_MAN_KING_STONE = ITEMS.register("batta_man_king_stone",
@@ -429,7 +428,7 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+                    .AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  GREEN_KING_STONE = ITEMS.register("green_king_stone",
@@ -437,19 +436,19 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+                    .AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  CREATION_KING_STONE = ITEMS.register("creation_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_red","shadow_moon","shadow_charger_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+                    .AddToList(RiderTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hajime_sorayama","shadow_moon","shadow_charger_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.BLACK_TAB_ITEM));
+                    .AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BLACKHELMET = ITEMS.register("blackhead",
@@ -472,10 +471,10 @@ public class Ichigo_Rider_Items {
 
     //Black RX
     public static final DeferredItem<Item>  BLACK_RX_LOGO = ITEMS.register("black_rx_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SPLIT_KING_STONE = ITEMS.register("split_king_stone",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  RX_CORE = ITEMS.register("rx_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","black_rx","sun_riser_belt",
@@ -483,7 +482,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.RX_TAB_ITEM));
+                    .AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BIO_CORE = ITEMS.register("bio_core",
@@ -492,7 +491,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.WATER_BREATHING,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.RX_TAB_ITEM));
+                    .AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  ROBO_CORE = ITEMS.register("robo_core",
@@ -501,7 +500,7 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.RX_TAB_ITEM));
+                    .AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RX_CORE = ITEMS.register("moon_rx_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","white_rx","moon_riser",
@@ -509,7 +508,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.RX_TAB_ITEM));
+                    .AddToList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",
@@ -541,7 +540,7 @@ public class Ichigo_Rider_Items {
     // Shin
 
     public static final DeferredItem<Item>  SHIN_LOGO = ITEMS.register("shin_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.SHIN_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SHIN_TAB_ITEM));
 
     public static final DeferredItem<Item>  SHIN_STONE = ITEMS.register("shin_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shin","blank",
@@ -549,7 +548,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
+                    .AddToList(RiderTabs.SHIN_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  SHINHELMET = ITEMS.register("shinhead",
@@ -564,7 +563,7 @@ public class Ichigo_Rider_Items {
 
     // J
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.J_TAB_ITEM));
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
@@ -572,7 +571,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.J_TAB_ITEM).KeepItem());
+                    .AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
@@ -587,7 +586,7 @@ public class Ichigo_Rider_Items {
 
     // ZO
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",
-            () -> new BaseItem(new Item.Properties()).AddToTabList(RiderTabs.ZO_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZO_STONE = ITEMS.register("zo_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zo","blank",
@@ -595,7 +594,7 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToTabList(RiderTabs.ZO_TAB_ITEM).KeepItem());
+                    .AddToList(RiderTabs.ZO_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item>  ZOHELMET = ITEMS.register("zohead",

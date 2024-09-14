@@ -42,15 +42,17 @@ public class Effect_core {
     public static final Holder<MobEffect> FLYING= EFFECT.register("flying",
             () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0x1d8519) );
 
+    public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
+            () -> new 	GravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
     public static final Holder<MobEffect> SMALL= EFFECT.register("small",
             () -> new 	SmallEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
-
     public static final Holder<MobEffect> BIG= EFFECT.register("big",
             () -> new 	BigEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.big"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-
 
     public static final Holder<MobEffect> FLAT= EFFECT.register("flat",
             () -> new 	FlatEffect(MobEffectCategory.NEUTRAL, 0xf7fada));
@@ -63,6 +65,21 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  EXPLODE= EFFECT.register("explode",
             () -> new 	ExplodeEffect(MobEffectCategory.HARMFUL, 0x565656));
+
+    public static final Holder<MobEffect>  EXPLOSION= EFFECT.register("explosion",
+            () -> new ExplosionEffect(MobEffectCategory.HARMFUL, 0x565656));
+
+    public static final Holder<MobEffect>  BIND= EFFECT.register("bind",
+            () -> new BindEffect(MobEffectCategory.HARMFUL, 0xffffff));
+
+    public static final Holder<MobEffect>  FALL= EFFECT.register("fall",
+            () -> new FallEffect(MobEffectCategory.HARMFUL, 0xffffff));
+
+    public static final Holder<MobEffect>  SMELL= EFFECT.register("smell",
+            () -> new SmellEffect(MobEffectCategory.HARMFUL, 0x853d1b));
+
+    public static final Holder<MobEffect>  CHRISTMAS= EFFECT.register("christmas",
+            () -> new ChristmasEffect(MobEffectCategory.HARMFUL, 0x4eff00));
 
     public static final Holder<MobEffect>  FIRE_PUNCH= EFFECT.register("fire_punch",
             () -> new 	FirePunchEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
@@ -88,15 +105,23 @@ public class Effect_core {
     public static final Holder<MobEffect>  NIGHT= EFFECT.register("night",
             () -> new 	NightEffect(MobEffectCategory.HARMFUL, 0xffed9e));
 
+    public static final Holder<MobEffect>  TIME= EFFECT.register("time",
+            () -> new 	TimeEffect(MobEffectCategory.HARMFUL, 0xffed9e));
+
+    public static final Holder<MobEffect>  BLIZZARD= EFFECT.register("blizzard",
+            () -> new BlizzardEffect(MobEffectCategory.HARMFUL, 0x5feaff));
+
     public static final Holder<MobEffect>  THUNDER= EFFECT.register("thunder",
             () -> new ThunderEffect(MobEffectCategory.HARMFUL, 0x76ecff));
-
 
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
             () -> new 	FormLockEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
     public static final Holder<MobEffect>  GREEED= EFFECT.register("greeed",
             () -> new 	GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
+
+    public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
+            () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
 
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
             () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e));
