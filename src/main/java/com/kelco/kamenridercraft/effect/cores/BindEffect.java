@@ -4,17 +4,13 @@ package com.kelco.kamenridercraft.effect.cores;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 
-public class BindEffect extends MobEffect {
+public class BindEffect extends InstantenousMobEffect {
 
 
 	public BindEffect(MobEffectCategory mobEffectCategory, int color) {
@@ -36,7 +32,7 @@ public class BindEffect extends MobEffect {
 
 			}
 		}
-		return true;
+		return false;
 	}
 }
 
