@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:land_ring_dragon"
+	},
+	"title": "Strength of the Earth",
+	"description": "Transform into Wizard Land Dragon",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:wizard/hurricane_dragon",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:wizard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wizard_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wizard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:wizardriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:land_ring_dragon\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

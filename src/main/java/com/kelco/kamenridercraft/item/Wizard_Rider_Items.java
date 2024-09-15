@@ -392,7 +392,7 @@ public class Wizard_Rider_Items {
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMELL_WIZARD_RING = ITEMS.register("smell_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMELL, 500,0,true,true))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMELL, 140,0,true,true))
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_WIZARD_RING = ITEMS.register("merry_christmas_ring",
