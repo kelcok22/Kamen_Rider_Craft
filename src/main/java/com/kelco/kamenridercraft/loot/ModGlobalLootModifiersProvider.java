@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.loot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -20,6 +21,12 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
+
+        add("egg_chicken_memory",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("entities/chicken")).build(),
+                LootItemRandomChanceCondition.randomChance(0.1f).build()},
+                W_Rider_Items.EGG_CHICKEN_MEMORY.get()));
+
         add("purple_medals_nether",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/nether_bridge")).build(),
                 LootItemRandomChanceCondition.randomChance(0.05f).build()},
