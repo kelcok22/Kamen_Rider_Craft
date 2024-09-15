@@ -25,6 +25,7 @@ import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.loot.LootModifierCore;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -87,6 +88,8 @@ public class KamenRiderCraftCore
         NeoForge.EVENT_BUS.register(this);
         Effect_core.register(modEventBus);
 
+
+
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
@@ -115,6 +118,8 @@ public class KamenRiderCraftCore
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
+
+        LootModifierCore.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
