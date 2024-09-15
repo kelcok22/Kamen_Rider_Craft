@@ -2,13 +2,27 @@
   "values": [
 	"kamenridercraft:light_ring",
 	"kamenridercraft:excite_ring",
-	"kamenridercraft:thunder_ring",
 	"kamenridercraft:sleep_ring",
 	"kamenridercraft:kick_strike_ring",
+	"kamenridercraft:defend_ring",
+	"kamenridercraft:thunder_ring",
+	"kamenridercraft:explosion_ring",
+	"kamenridercraft:bind_ring",
+	"kamenridercraft:teleport_ring",
+	"kamenridercraft:fall_ring",
+	"kamenridercraft:connect_ring",
 	"kamenridercraft:eclipse_ring",
 	"kamenridercraft:liquid_ring",
 	"kamenridercraft:drill_ring",
 	"kamenridercraft:big_ring",
-	"kamenridercraft:small_ring"
+	"kamenridercraft:small_ring",
+	"kamenridercraft:copy_ring",
+	"kamenridercraft:smell_ring",
+	"kamenridercraft:extend_ring",
+	"kamenridercraft:merry_christmas_ring",
+	"kamenridercraft:blizzard_ring",
+	"kamenridercraft:gravity_ring",
+	"kamenridercraft:flower_ring",
+	"kamenridercraft:time_ring"
   ]
 }

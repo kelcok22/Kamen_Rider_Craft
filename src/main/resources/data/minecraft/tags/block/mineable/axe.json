@@ -1,6 +1,34 @@
 {
   "replace": false,
   "values": [
-
+    "kamenridercraft:ichigo_chair",
+    "kamenridercraft:counter_95do",
+    "kamenridercraft:kamen_cafe_counter",
+    "kamenridercraft:planks_big_oak_golden_trim",
+	  "kamenridercraft:planks_brown",
+	  "kamenridercraft:planks_dark_blue",
+	  "kamenridercraft:planks_light_blue",
+	  "kamenridercraft:planks_white",
+    "kamenridercraft:spruce_flooring",
+    "kamenridercraft:sword_of_logos_bookshelf",
+    "kamenridercraft:sword_of_logos_stairs",
+	  "kamenridercraft:sword_of_logos_wood_stairs",	
+	  "kamenridercraft:sword_of_logos_gold_stairs",	
+	  "kamenridercraft:sword_of_logos_tabel_stairs",	
+	  "kamenridercraft:sword_of_logos_tabel_top",
+	  "kamenridercraft:sword_of_logos_wood_trim",
+	  "kamenridercraft:sword_of_logos_wood",
+    "kamenridercraft:wooden_panel",
+	  "kamenridercraft:wooden_panel2",
+	  "kamenridercraft:gaoh_boss_block",
+	  "kamenridercraft:poseidon_boss_block",
+	  "kamenridercraft:core_boss_block",
+	  "kamenridercraft:powered_up_core_boss_block",
+	  "kamenridercraft:ancient_ooo_boss_block",
+	  "kamenridercraft:goda_boss_block",
+	  "kamenridercraft:cronus_boss_block",
+	  "kamenridercraft:horobi_boss_block",
+	  "kamenridercraft:ikazuchi_boss_block",
+	  "kamenridercraft:ark_one_boss_block"
   ]
 }
