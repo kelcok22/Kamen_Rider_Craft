@@ -3,8 +3,11 @@
 	"conditions": [
 		{
 			"condition": "neoforge:loot_table_id",
-	 		"loot_table_id": "minecraft:chests/nether_bridge"
-	 	}
+			"loot_table_id": "minecraft:chests/nether_bridge"
+		},{
+			"condition": "minecraft:random_chance",
+			"chance": 0.05
+		}
 	 ],
 	 "item": "kamenridercraft:purple_medals_sealed"
  }
