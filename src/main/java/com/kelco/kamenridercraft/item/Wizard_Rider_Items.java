@@ -427,6 +427,10 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> CREATE_WIZARD_RING = ITEMS.register("create_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.black_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
+	public static final DeferredItem<Item> COPY_WIZARD_RING = ITEMS.register("copy_ring",
+			() -> new WizardRingItem(new Item.Properties(), "copy")
+					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MIRACLE_WIZARD_RING = ITEMS.register("miracle_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.cyan_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
