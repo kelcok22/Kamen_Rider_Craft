@@ -1,41 +1,19 @@
 package com.kelco.kamenridercraft.item.wizard;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
-import net.minecraft.ChatFormatting;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.OwnableEntity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.server.ServerLifecycleHooks;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.List;
@@ -44,12 +22,19 @@ import java.util.List;
 public class WizardRingItem extends BaseItem {
 
 	private List<MobEffectInstance> EFFECTS;
+	public String SPECIAL;
 	public String[] FORMS = new String[] {"wizard","wiseman","mage","mage_blue","mage_green","mage_foot_soldiers","mage_captain","sorcerer","wiseman_female","dark_wizard","black_wizard"};
 
-	public WizardRingItem(Properties properties, MobEffectInstance... effects)
+	public WizardRingItem (Properties properties, MobEffectInstance... effects)
 	{
 		super(properties);
 		EFFECTS = Lists.newArrayList(effects);
+	}
+
+	public WizardRingItem (Properties properties, String special)
+	{
+		super(properties);
+		SPECIAL = special;
 	}
 
 
@@ -67,6 +52,26 @@ public class WizardRingItem extends BaseItem {
 						for (int i = 0; i < EFFECTS.size(); i++)
 						{
 							player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,true));
+						}
+					} else {
+						switch (SPECIAL) {
+							case "copy":
+								RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
+								if (copy != null) {
+									copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+									copy.bindToPlayer(player);
+									copy.NAME = "wizard_copy";
+									copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
+									copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
+									copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
+									copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+									RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+									
+									level.addFreshEntity(copy);
+								}
+								break;
+							default:
+								break;
 						}
 					}
 					if (!player.isCreative()) {
