@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:beast_ring"
+	},
+	"title": "Life is Breakfast Time",
+	"description": "Transform into Kamen Rider Beast",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:wizard/wizard",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:wizard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:wizard_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:wizard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:beastdriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

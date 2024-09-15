@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "unknown_ring",
+  "ingredients": [
+{
+    
+      "item": "minecraft:iron_ingot"
+    }, 
+    {
+      "item": "kamenridercraft:wizardgem_violet"
+    } , 
+    {
+      "item": "kamenridercraft:wizard_gem_crafting_chisel"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:unknown_violet_ring"
+  }
+}
