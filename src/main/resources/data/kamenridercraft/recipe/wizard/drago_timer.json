@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wizard_gem_crafting_chisel",
+  "pattern": [
+   "fae",
+   "aga",
+   "dac"
+  ],
+  "key": {
+   "a": {
+      "item": "kamenridercraft:wizardgem"
+    }, "c": {
+      "item": "kamenridercraft:land_ring_dragon"
+    }, "f": {
+      "item": "kamenridercraft:flame_ring_dragon"
+    }, "e": {
+      "item": "kamenridercraft:hurricane_ring_dragon"
+    }, "d": {
+      "item": "kamenridercraft:water_ring_dragon"
+    }, "g": {
+      "item": "kamenridercraft:special_ring"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:drago_timer"
+  }
+}

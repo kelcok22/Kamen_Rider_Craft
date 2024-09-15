@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:wizardgem"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:wizard/wizard_head",
+	  "kamenridercraft:wizard/wizard_troso",
+	  "kamenridercraft:wizard/wizard_legs",
+	  "kamenridercraft:wizard/wizard_gem_crafting_chisel"
+	]
+  },
+  "sends_telemetry_event": false
+}
