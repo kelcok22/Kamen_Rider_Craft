@@ -454,6 +454,28 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GARUDA_WIZARD_RING = ITEMS.register("garuda_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> UNICORN_WIZARD_RING = ITEMS.register("unicorn_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> KRAKEN_WIZARD_RING = ITEMS.register("kraken_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GOLEM_WIZARD_RING = ITEMS.register("golem_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GARUDA_WIZARD_RING_COLOR_VER = ITEMS.register("garuda_ring_color_ver",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_garuda","wizard","wizardriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.ChangeModel("geo/cyclonehopper_wingsarmor.geo.json").addNeedForm(FLAME_WIZARD_RING.get(),1)
+					.AddToList(UnknownWizardRingItem.red_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
    /*
    connect_ring
 	   teleport_ring
