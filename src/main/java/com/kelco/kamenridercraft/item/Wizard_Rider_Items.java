@@ -440,32 +440,24 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> HOLY_WIZARD_RING = ITEMS.register("holy_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-	public static final DeferredItem<Item> BEAST_ENGAGE_WIZARD_RING = ITEMS.register("beast_engage_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
-
-	public static final DeferredItem<Item> CHIMARISE_WIZARD_RING = ITEMS.register("chimarise_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
-
-	public static final DeferredItem<Item> BEAST_DRIVER_ON_WIZARD_RING = ITEMS.register("beast_driver_on_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
-
-	public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
-
-	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARUDA_WIZARD_RING = ITEMS.register("garuda_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.red_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNICORN_WIZARD_RING = ITEMS.register("unicorn_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.blue_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_WIZARD_RING = ITEMS.register("kraken_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.yellow_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLEM_WIZARD_RING = ITEMS.register("golem_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.violet_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> WHITE_GARUDA_WIZARD_RING = ITEMS.register("white_garuda_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> CERBERUS_WIZARD_RING = ITEMS.register("cerberus_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.black_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARUDA_WIZARD_RING_COLOR_VER = ITEMS.register("garuda_ring_color_ver",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_garuda","wizard","wizardriver_belt",
@@ -476,11 +468,36 @@ public class Wizard_Rider_Items {
 					.ChangeModel("geo/cyclonehopper_wingsarmor.geo.json").addNeedForm(FLAME_WIZARD_RING.get(),1)
 					.AddToList(UnknownWizardRingItem.red_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
+	public static final DeferredItem<Item> KRAKEN_WIZARD_RING_COLOR_VER = ITEMS.register("kraken_ring_color_ver",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kraken","wizard","wizardriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
+					.ChangeModel("geo/cyclonehopper_wingsarmor.geo.json").addNeedForm(WATER_WIZARD_RING.get(),1)
+					.AddToList(UnknownWizardRingItem.yellow_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> BEAST_ENGAGE_WIZARD_RING = ITEMS.register("beast_engage_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHIMARISE_WIZARD_RING = ITEMS.register("chimarise_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BEAST_DRIVER_ON_WIZARD_RING = ITEMS.register("beast_driver_on_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GRIFFIN_WIZARD_RING = ITEMS.register("griffin_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
    /*
    connect_ring
 	   teleport_ring
-       copy_ring
-
    */
 
 	public static final DeferredItem<Item> UNKNOWN_AMBER_RING = ITEMS.register("unknown_amber_ring",
@@ -566,7 +583,7 @@ public class Wizard_Rider_Items {
 					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 /*
 	wizarswordgun

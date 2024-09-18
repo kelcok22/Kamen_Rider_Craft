@@ -2534,7 +2534,8 @@
 "block.kamenridercraft.pure_gaia_memory_block": "Gaia Memory Block",
 "block.kamenridercraft.gaiamemoryblock": "Gaia Memory Ore",
 "block.kamenridercraft.deepslate_gaiamemoryblock": "Deepslate Gaia Memory Ore",
-
+  "block.kamenridercraft.wizardgemblock": "Wizard Gem Stone Ore",
+  "block.kamenridercraft.deepslate_wizardgemblock": "Deepslate Wizard Gem Stone Ore",
 
 "block.kamenridercraft.blue_rose": "Blue Rose",
 "block.kamenridercraft.potted_blue_rose": "Potted Blue Rose",
