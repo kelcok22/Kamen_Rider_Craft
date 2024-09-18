@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -528,72 +529,96 @@ public class Wizard_Rider_Items {
 			() -> new UnknownWizardRingItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_HEAD = ITEMS.register("wizard_head",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties())
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
 	public static final DeferredItem<Item> WIZARD_CHESTPLATE = ITEMS.register("wizard_troso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
 	public static final DeferredItem<Item> WIZARD_LEGGINGS = ITEMS.register("wizard_legs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties())
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-			.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER = ITEMS.register("magewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_B = ITEMS.register("magewizardriver_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_G = ITEMS.register("magewizardriver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_FOOT_SOLDIERS = ITEMS.register("magewizardriver_foot_soldiers",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_CAPTAIN = ITEMS.register("magewizardriver_captain",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_DRIVER = ITEMS.register("sorcererdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER_F = ITEMS.register("whitewizardriver_f",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARDRIVER = ITEMS.register("dark_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARDRIVER = ITEMS.register("black_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
 			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-/*
-	wizarswordgun
-	axcalibur
-	wizarswordgun_mage
-	hammelcane
-	dis_halberd
-	mirage_magnum
-	dice_saber
-*/
+	public static final DeferredItem<Item> WIZARSWORDSGUN = ITEMS.register("wizarswordgun",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
+		() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+				.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).setProjectileFireball().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> WIZARSWORDSGUN_MAGE = ITEMS.register("wizarswordgun_mage",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> HAMMELCANE = ITEMS.register("hammelcane",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
+	public static final DeferredItem<Item> DIS_HALBERD = ITEMS.register("dis_halberd",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+					.ChangeRepairItem(WIZARD_GEM.get()));
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
