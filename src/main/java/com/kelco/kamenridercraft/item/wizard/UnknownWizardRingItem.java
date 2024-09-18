@@ -72,7 +72,7 @@ public class UnknownWizardRingItem extends BaseItem {
 	}
 
 	public void  useEnergyItem (ItemStack itemstack, Level world,Player playerIn) {
-			playerIn.drop(new ItemStack(RingDrop(itemstack.getItem()), 1), true);
+			playerIn.drop(new ItemStack(RingDrop(itemstack.getItem()), 1), false);
 			itemstack.shrink(1);
 	}
 
