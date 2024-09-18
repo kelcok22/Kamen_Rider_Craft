@@ -109,21 +109,30 @@ public class Rider_Blocks {
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block>  FANGIRE_GLASS = registerBlock("fangire_glass",
-			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel((glow) -> { return 15; }), UniformInt.of(0,0),DyeColor.YELLOW).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	
-	
 	public static final DeferredBlock<Block>  PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
-			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> { return 15; })
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
-	//.lightLevel((glow) -> { return 15; })
+
 	
 	public static final DeferredBlock<Block>  GAIA_MEMORY_ORE = registerBlock("gaiamemoryblock",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-	//.lightLevel((glow) -> { return 15; })
+
 	public static final DeferredBlock<Block> DEEPSLATE_GAIA_MEMORY_ORE = registerBlock("deepslate_gaiamemoryblock",
+			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
+	public static final DeferredBlock<Block>  WIZARD_GEM_ORE = registerBlock("wizardgemblock",
+			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6))
+					.AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> DEEPSLATE_WIZARD_GEM_ORE= registerBlock("deepslate_wizardgemblock",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 

@@ -45,8 +45,10 @@ public class ModCommonEvents {
 		@SubscribeEvent
 		public void onPlayerTick(PlayerTickEvent.Post event) {
 			Entity entity=event.getEntity();
-			if (entity == null)
-				return;
+
+			if (entity == null) return;
+
+			if (!event.getEntity().level().isClientSide()){
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false) {
 				if (entity instanceof Player _player) {
 					_player.getAbilities().mayfly = (true);
@@ -59,9 +61,9 @@ public class ModCommonEvents {
 					boolean checkGamemode = false;
 
 					if (_player instanceof ServerPlayer _serverPlayer) {
-						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE&_serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
+						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE & _serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
 					} else if (entity.level().isClientSide()) {
-						checkGamemode =  Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
+						checkGamemode = Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
 								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.SPECTATOR && Minecraft.getInstance()
 								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.CREATIVE;
 					}
@@ -69,6 +71,7 @@ public class ModCommonEvents {
 					_player.getAbilities().mayfly = (!checkGamemode);
 					_player.onUpdateAbilities();
 				}
+			}
 			}
 		}
 
