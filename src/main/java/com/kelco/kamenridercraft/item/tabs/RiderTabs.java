@@ -526,6 +526,8 @@ public class RiderTabs {
             event.accept(MobsCore.ANCIENT_OOO_SPAWN_EGG);
             event.accept(MobsCore.GODA_SPAWN_EGG);
 
+            event.accept(MobsCore.GHOULS_SPAWN_EGG);
+
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
             //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);

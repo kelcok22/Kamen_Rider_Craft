@@ -407,7 +407,23 @@ public class MobsCore {
                    () -> new DeferredSpawnEggItem(GODA, 0x000000, 0xB200FF, new Item.Properties()));
 
 
-          public static final DeferredHolder<EntityType<?>, EntityType<BugsterVirusEntity>> BUGSTERVIRUS = MOBLIST.register("bugstervirus_mob",
+    public static final DeferredHolder<EntityType<?>, EntityType<GhoulsEntity>> GHOULS = MOBLIST.register("ghouls",
+            () -> EntityType.Builder.of(GhoulsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GHOULS_SPAWN_EGG = ITEMS.register("ghouls_spawn_egg",
+            () -> new DeferredSpawnEggItem(GHOULS,  0x9f9789,0x161616, new Item.Properties()));
+
+
+    //medusaPhantomMob 0xe28ce2,0x2da623
+    //phoenixPhantomMob 0xb00000,0xeaa413
+    //gremlinPhantomMob 0xb20834c,0x222222
+    //wisemanMob 0xffffff,0xd79e0b
+    //MageFootSoldiersMob 0xbb9548,0x050505
+    //MageCaptainMob 0xbb9548,0x050505
+    //SorcererMob 0x050505,0xebc256
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BugsterVirusEntity>> BUGSTERVIRUS = MOBLIST.register("bugstervirus_mob",
                   () -> EntityType.Builder.of(BugsterVirusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bugster_mob"));
           
           public static final DeferredItem<DeferredSpawnEggItem> BUGSTERVIRUS_SPAWN_EGG = ITEMS.register("bugstervirus_spawn_egg",
