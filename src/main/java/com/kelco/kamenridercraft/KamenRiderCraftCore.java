@@ -200,6 +200,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
 
+        event.put(MobsCore.GHOULS.get(), BugsterVirusEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -444,6 +445,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ANCIENT_OOO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.GHOULS.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
