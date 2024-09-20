@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "Wizard Transformation Devices",
+    "description": "The transformation devices used by the Wizard Riders.",
+    "icon": "kamenridercraft:wizardriver",
+    "sortnum": 1
+}

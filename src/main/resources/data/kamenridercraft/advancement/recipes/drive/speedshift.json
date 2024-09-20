@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:drive/drive_logo"
+	  "kamenridercraft:drive/drive_logo",
+	  "kamenridercraft:geats/drive_driver_raise_buckle"
 	]
   },
   "sends_telemetry_event": false

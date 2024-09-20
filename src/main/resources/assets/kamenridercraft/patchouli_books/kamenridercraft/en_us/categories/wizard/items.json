@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "Wizard Rider Items",
+    "description": "All Wizard-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:flame_ring",
+    "sortnum": 2
+}

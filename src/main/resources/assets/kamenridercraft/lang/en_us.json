@@ -2420,7 +2420,7 @@
 "entity.kamenridercraft.gmrider": "GM Rider",
 
 "entity.kamenridercraft.denbird": "DenBird",
-"entity.kamenridercraft.macehine_tornador": "Machine Tornador",
+"entity.kamenridercraft.machine_tornador": "Machine Tornador",
 "entity.kamenridercraft.hardboilder": "Hardboilder",
 "entity.kamenridercraft.skullboilder": "Skullboilder",
 
@@ -2536,8 +2536,8 @@
 "item.kamenridercraft.hardboilder_spawn_egg": "Hardboilder Spawn Egg",
 "item.kamenridercraft.skullboilder_spawn_egg": "Skullboilder Spawn Egg",
 
-"entity.kamenridercraft.rider_summon_spawn_egg": "Rider Summon Spawn Egg",
-"entity.kamenridercraft.paradx_summon_spawn_egg": "Para-DX Summon Spawn Egg",
+"item.kamenridercraft.rider_summon_spawn_egg": "Rider Summon Spawn Egg",
+"item.kamenridercraft.paradx_summon_spawn_egg": "Para-DX Summon Spawn Egg",
 
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",

@@ -3,16 +3,11 @@ package com.kelco.kamenridercraft.entities;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
-import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
-import com.kelco.kamenridercraft.entities.allies.KintarosEntity;
-import com.kelco.kamenridercraft.entities.allies.MomotarosEntity;
-import com.kelco.kamenridercraft.entities.allies.RyutarosEntity;
-import com.kelco.kamenridercraft.entities.allies.UratarosEntity;
-import com.kelco.kamenridercraft.entities.allies.YummyEntity;
+import com.kelco.kamenridercraft.entities.allies.*;
+import com.kelco.kamenridercraft.entities.bikes.*;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
-import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.*;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -676,7 +671,7 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> GM_RIDER_SPAWN_EGG = ITEMS.register("gmrider_spawn_egg",
                   () -> new DeferredSpawnEggItem(GM_RIDER, 0x0F100F, 0x9B0E52, new Item.Properties()));
           
-          /**
+
           public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
                   () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.95F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
 
@@ -694,7 +689,7 @@ public class MobsCore {
 
           public static final DeferredItem<DeferredSpawnEggItem> SKULLBOILER_SPAWN_EGG = ITEMS.register("skullboilder_spawn_egg",
                   () -> new DeferredSpawnEggItem(SKULLBOILER, 0xffffff, 0x151515, new Item.Properties()));
-       **/
+
                   
           public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
                   () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));

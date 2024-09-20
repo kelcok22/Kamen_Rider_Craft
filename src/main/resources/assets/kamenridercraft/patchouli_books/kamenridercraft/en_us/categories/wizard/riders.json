@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "Wizard Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Wizard.",
+    "icon": "kamenridercraft:wizard_head",
+    "sortnum": 0
+}
