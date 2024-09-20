@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "Wizard Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Wizard.",
+    "icon": "kamenridercraft:wizard_logo",
+    "sortnum": 4
+}

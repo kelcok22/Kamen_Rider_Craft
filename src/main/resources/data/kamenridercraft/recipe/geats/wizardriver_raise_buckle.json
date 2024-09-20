@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_buckles",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:hatena_mission_box"
+    }, 
+    {
+      "item": "kamenridercraft:flame_ring"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:wizardriver_raise_buckle"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:drive/main",
+    "name": "Drive Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Drive.",
+    "icon": "kamenridercraft:drive_head",
+    "sortnum": 0
+}

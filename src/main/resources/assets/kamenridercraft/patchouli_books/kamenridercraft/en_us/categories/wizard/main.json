@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Wizard",
+    "description": "Everything related to the show, Kamen Rider Wizard.",
+    "icon": "kamenridercraft:wizard_logo",
+    "sortnum": 28
+}

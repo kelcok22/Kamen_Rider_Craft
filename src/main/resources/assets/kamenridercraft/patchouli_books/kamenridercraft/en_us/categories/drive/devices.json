@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:drive/main",
+    "name": "Drive Transformation Devices",
+    "description": "The transformation devices used by the Drive Riders.",
+    "icon": "kamenridercraft:drivedriver",
+    "sortnum": 1
+}

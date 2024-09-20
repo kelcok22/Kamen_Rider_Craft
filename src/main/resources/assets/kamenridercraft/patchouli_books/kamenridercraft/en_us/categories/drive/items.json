@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:drive/main",
+    "name": "Drive Rider Items",
+    "description": "All Drive-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:speedshift",
+    "sortnum": 2
+}

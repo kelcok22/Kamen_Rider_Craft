@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "Wizard Arsenal",
+    "description": "Every weapon and tool used by the Wizard Riders.",
+    "icon": "kamenridercraft:wizarswordgun",
+    "sortnum": 3
+}

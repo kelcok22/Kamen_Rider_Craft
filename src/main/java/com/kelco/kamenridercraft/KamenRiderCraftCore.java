@@ -4,20 +4,16 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.renderer.AllyEntityRenderer;
 import com.kelco.kamenridercraft.client.renderer.AnkhRenderer;
 import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.BikeRenderer;
 import com.kelco.kamenridercraft.client.renderer.NewMoleImaginSandRenderer;
 import com.kelco.kamenridercraft.client.renderer.SummonedEntityRenderer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.allies.AnkhEntity;
-import com.kelco.kamenridercraft.entities.allies.KintarosEntity;
-import com.kelco.kamenridercraft.entities.allies.MomotarosEntity;
-import com.kelco.kamenridercraft.entities.allies.RyutarosEntity;
-import com.kelco.kamenridercraft.entities.allies.UratarosEntity;
-import com.kelco.kamenridercraft.entities.allies.YummyEntity;
+import com.kelco.kamenridercraft.entities.allies.*;
+import com.kelco.kamenridercraft.entities.bikes.*;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
-import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
@@ -245,11 +241,11 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
 		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
-		/**
+
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
-**/
+
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
 
@@ -490,11 +486,11 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.PAWN_JYAMATO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GM_RIDER.get(), BasicEntityRenderer::new);
-     /*
+
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);
-            */
+
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
 
