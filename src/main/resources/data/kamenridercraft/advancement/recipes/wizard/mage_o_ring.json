@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:wizard/magewizardriver"
+	  "kamenridercraft:wizard/magewizardriver",
+	  "kamenridercraft:wizard/wizarswordgun_mage3"
 	]
   },
   "sends_telemetry_event": false
