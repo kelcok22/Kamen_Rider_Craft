@@ -11,7 +11,7 @@ public class SkullboilderEntity extends baseBikeEntity {
 
 
 	
-	public SkullboilderEntity(EntityType<? extends Animal> entityType, Level level) {
+	public SkullboilderEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME ="skullboilder";
 		}
