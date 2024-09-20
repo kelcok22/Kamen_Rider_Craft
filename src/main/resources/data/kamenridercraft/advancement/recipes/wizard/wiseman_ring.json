@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:wizard/whitewizardriver"
+	  "kamenridercraft:wizard/whitewizardriver",
+	  "kamenridercraft:wizard/hammelcane"
 	]
   },
   "sends_telemetry_event": false

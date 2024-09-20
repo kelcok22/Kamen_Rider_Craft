@@ -1,0 +1,15 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kamenridercraft:item/wizarswordgun"
+    },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "kamenridercraft:item/wizarswordgun_gun"
+        }
+    ]
+}

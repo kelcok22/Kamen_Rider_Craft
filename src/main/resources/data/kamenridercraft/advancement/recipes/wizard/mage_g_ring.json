@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:wizard/magewizardriver_g"
+	  "kamenridercraft:wizard/magewizardriver_g",
+	  "kamenridercraft:wizard/wizarswordgun_mage2"
 	]
   },
   "sends_telemetry_event": false

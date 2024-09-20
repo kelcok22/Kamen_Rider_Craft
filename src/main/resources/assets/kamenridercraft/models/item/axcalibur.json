@@ -1,0 +1,15 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kamenridercraft:item/axcalibur"
+    },
+    "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "kamenridercraft:item/axcalibur_charge"
+        }
+    ]
+}

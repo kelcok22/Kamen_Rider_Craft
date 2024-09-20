@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:wizard/sorcererdriver"
+	  "kamenridercraft:wizard/sorcererdriver",
+	  "kamenridercraft:wizard/dis_halberd"
 	]
   },
   "sends_telemetry_event": false
