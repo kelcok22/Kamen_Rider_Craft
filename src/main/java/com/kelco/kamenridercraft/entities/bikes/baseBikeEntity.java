@@ -2,7 +2,10 @@ package com.kelco.kamenridercraft.entities.bikes;
 
 
 import javax.annotation.Nullable;
+
+import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -20,6 +23,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,8 +35,8 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 
 public class baseBikeEntity extends Animal implements GeoEntity {
-	
-	
+
+
 
 	
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -60,6 +64,37 @@ public class baseBikeEntity extends Animal implements GeoEntity {
 		return super.mobInteract(player, hand);
 	}
 
+	public boolean canCollideWith(Entity entity) {
+		return canVehicleCollide(this, entity);
+	}
+
+	public static boolean canVehicleCollide(Entity vehicle, Entity entity) {
+		return (entity.canBeCollidedWith() || entity.isPushable()) && !vehicle.isPassengerOfSameVehicle(entity);
+	}
+
+	public boolean canBeCollidedWith() {
+		return true;
+	}
+
+	public boolean isPushable() {
+		return true;
+	}
+
+	public Vec3 getRelativePortalPosition(Direction.Axis axis, BlockUtil.FoundRectangle portal) {
+		return LivingEntity.resetForwardDirectionOfRelativePortalPosition(super.getRelativePortalPosition(axis, portal));
+	}
+
+	public void push(Entity entity) {
+		if (entity instanceof Boat) {
+			if (entity.getBoundingBox().minY < this.getBoundingBox().maxY) {
+				super.push(entity);
+			}
+		} else if (entity.getBoundingBox().minY <= this.getBoundingBox().minY) {
+			super.push(entity);
+		}
+
+	}
+
 	// Turn off step sounds since it's a bike
 	@Override
 	protected void playStepSound(BlockPos pos, BlockState block) {}
@@ -73,12 +108,11 @@ public class baseBikeEntity extends Animal implements GeoEntity {
 				this.yRotO = getYRot();
 				this.xRotO = getXRot();
 
-				
-			
+
 					setYRot(yRotO-passenger.xxa * 5F);
 					setXRot(passenger.getXRot() * 0.1f);
 				setRot(getYRot(), getXRot());
-			
+
 				this.yBodyRot = this.getYRot();
 				this.yHeadRot = this.yBodyRot;
 				float x = passenger.xxa * 0.01F;
@@ -146,17 +180,30 @@ protected SoundEvent getDeathSound() {
 		public AnimatableInstanceCache getAnimatableInstanceCache() {
 			return this.cache;
 		}
-		
-		
-		// Add our generic idle animation controller
-		@Override
-		public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-			
-			RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
-			RawAnimation WALK = RawAnimation.begin().thenLoop("animation.model.walk");
-			
-			controllers.add(new AnimationController<baseBikeEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(state.isMoving() ? WALK : IDLE )));
-		}
+
+
+
+	// Add our idle/moving animation controller
+	@Override
+	public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+
+		RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
+		RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
+
+		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
+			if (state.isMoving() && getControllingPassenger() != null) {
+				return state.setAndContinue(DRIVE);
+			}
+			else {
+				return state.setAndContinue(IDLE);
+			}
+			// Handle the sound keyframe that is part of our animation json
+		}).setSoundKeyframeHandler(event -> {
+			// We don't have a sound for this yet :(
+		}));
+	}
+
+
 
 
 }

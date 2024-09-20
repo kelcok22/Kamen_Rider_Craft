@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 public class HardboilderEntity extends baseBikeEntity {
 	
 
-	public HardboilderEntity(EntityType<? extends Animal> entityType, Level level) {
+	public HardboilderEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME ="hardboilder";
 		}

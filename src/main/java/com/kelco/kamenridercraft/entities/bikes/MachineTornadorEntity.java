@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 public class MachineTornadorEntity extends baseBikeEntity {
 	
 
-	public MachineTornadorEntity(EntityType<? extends Animal> entityType, Level level) {
+	public MachineTornadorEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME ="machine_tornador";
 		}
