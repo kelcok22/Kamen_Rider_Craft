@@ -38,7 +38,9 @@ public class BaseBlasterItem extends BowItem {
 
 
 	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item FormChangeItem;
 	private Item HenshinBeltItem;
+	private Boolean Form_item = false;
 	private Boolean Henshin_item = false;
 
 	private Boolean LFB = false;
@@ -69,6 +71,9 @@ public class BaseBlasterItem extends BowItem {
 							player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
 							if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem) player.getItemBySlot(EquipmentSlot.OFFHAND).getItem().use(level, player, InteractionHand.OFF_HAND);
 						}
+						if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+							FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
+						}	
 						ServerLevel serverlevel = (ServerLevel)level;
 						if (!list.isEmpty()) {
 
@@ -144,6 +149,12 @@ public class BaseBlasterItem extends BowItem {
 
 	public boolean isValidRepairItem(ItemStack p_40392_, ItemStack p_40393_) {
 		return p_40393_.getItem()== RepairItem;
+	}
+
+	public BaseBlasterItem IsFormItem(Item item) {
+		Form_item=true;
+		FormChangeItem=item;
+		return this;
 	}
 
 	public BaseBlasterItem IsHenshinItem(Item item) {

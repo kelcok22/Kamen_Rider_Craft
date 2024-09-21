@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.hibiki.ArmedSaberItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -240,7 +239,7 @@ public class Hibiki_Rider_Items {
         public static final DeferredItem<Item> ONGEKIBO_REKKA = ITEMS.register("ongekibo_rekka",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ARMED_SABER = ITEMS.register("armed_saber",
-                () -> new ArmedSaberItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
+                () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).IsFormItem(HENSHIN_ONSA_ARMED.get()).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ONGEKIBO_YAMASE = ITEMS.register("ongekibo_yamase",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ONGEKIBO_RAKURAI = ITEMS.register("ongekibo_rakurai",
