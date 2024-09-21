@@ -673,19 +673,19 @@ public class MobsCore {
           
 
           public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
-                  () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.95F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
+                  () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
 
           public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_TORADOR_SPAWN_EGG = ITEMS.register("machine_tornador_spawn_egg",
                   () -> new DeferredSpawnEggItem(MACEHINE_TORADOR, 0xffffff, 0xffe300, new Item.Properties()));
 
           public static final DeferredHolder<EntityType<?>, EntityType<HardboilderEntity>> HARDBOILER = MOBLIST.register("hardboilder",
-                  () -> EntityType.Builder.of(HardboilderEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.95F).build( KamenRiderCraftCore.MOD_ID + ":hardboilder"));
+                  () -> EntityType.Builder.of(HardboilderEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":hardboilder"));
 
           public static final DeferredItem<DeferredSpawnEggItem> HARDBOILER_SPAWN_EGG = ITEMS.register("hardboilder_spawn_egg",
                   () -> new DeferredSpawnEggItem(HARDBOILER,  0xffffff, 0x222222, new Item.Properties()));
       
           public static final DeferredHolder<EntityType<?>, EntityType<SkullboilderEntity>> SKULLBOILER = MOBLIST.register("skullboilder",
-                  () -> EntityType.Builder.of(SkullboilderEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.95F).build( KamenRiderCraftCore.MOD_ID + ":skullboilder"));
+                  () -> EntityType.Builder.of(SkullboilderEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":skullboilder"));
 
           public static final DeferredItem<DeferredSpawnEggItem> SKULLBOILER_SPAWN_EGG = ITEMS.register("skullboilder_spawn_egg",
                  () -> new DeferredSpawnEggItem(SKULLBOILER, 0xffffff, 0x151515, new Item.Properties()));
