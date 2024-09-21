@@ -6,13 +6,11 @@ import javax.annotation.Nullable;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
@@ -21,10 +19,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -34,7 +30,7 @@ import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 
-public class baseBikeEntity extends Animal implements GeoEntity {
+public class baseBikeEntity extends Mob implements GeoEntity {
 
 
 
@@ -43,9 +39,9 @@ public class baseBikeEntity extends Animal implements GeoEntity {
 	public String NAME ="skullboilder";
 	public String NAME_MODEL ="hardboilder";
 	
-	public baseBikeEntity(EntityType<? extends Animal> entityType, Level level) {
+	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
 		super(entityType, level);
-		}
+	}
 
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -162,16 +158,6 @@ protected SoundEvent getDeathSound() {
 	return SoundEvents.METAL_BREAK;
 }
 
-	@Override
-	public AgeableMob getBreedOffspring(ServerLevel world, AgeableMob entity) {
-		return null;
-	}
-
-	@Override
-	public boolean isFood(ItemStack itemStack) {
-		return false;
-	}
-
 	protected float getStandingEyeHeight(Pose pose, EntityDimensions dimensions) {
 		return 0.5F;
 	}
@@ -179,6 +165,11 @@ protected SoundEvent getDeathSound() {
 		@Override
 		public AnimatableInstanceCache getAnimatableInstanceCache() {
 			return this.cache;
+		}
+	
+		@Override
+		public boolean shouldDropExperience() {
+			return false;
 		}
 
 
