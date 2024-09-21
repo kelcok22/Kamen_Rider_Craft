@@ -34,11 +34,8 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:hiden_zero_one_driver"
-			  ],
-              "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:zero_two_progrisekey\"}"
-              }
+				"kamenridercraft:hiden_zero_two_driver"
+			  ]
 			}
 		  }
 		}
