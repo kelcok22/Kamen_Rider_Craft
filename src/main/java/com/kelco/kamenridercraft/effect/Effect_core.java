@@ -99,6 +99,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  REFLECT= EFFECT.register("reflect",
             () -> new 	ReflectEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 
+    public static final Holder<MobEffect> RETURN= EFFECT.register("return",
+            () -> new ReturnEffect(MobEffectCategory.BENEFICIAL, 0xb3b3b3));
+
     public static final Holder<MobEffect>  SLEEP= EFFECT.register("sleep",
             () -> new 	SleepEffect(MobEffectCategory.NEUTRAL, 0xffce00));
 
@@ -122,6 +125,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
+
+    public static final Holder<MobEffect> CONNECT= EFFECT.register("connect",
+            () -> new ConnectEffect(MobEffectCategory.BENEFICIAL, 0xad16d5));
 
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
             () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e));
