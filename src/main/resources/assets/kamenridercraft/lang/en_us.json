@@ -1,4 +1,5 @@
 {
+  "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 
@@ -26,7 +27,7 @@
 "painting.kamenridercraft.saber_run.title":"Run",
 "painting.kamenridercraft.saber_run.author":"Toei Company",
 
-"painting.kamenridercraft.kuuga_gun.title":"I'm going To defeat you with the power of friendship and this gun I found",
+"painting.kamenridercraft.kuuga_gun.title":"I'm going to defeat you with the power of friendship and this gun I found",
 "painting.kamenridercraft.kuuga_gun.author":"Toei Company",
 
 "painting.kamenridercraft.bloody_rose.title":"Bloody Rose",
@@ -69,7 +70,8 @@
   "effect.kamenridercraft.smell":"Smell",
   "effect.kamenridercraft.flower":"Flower",
   "effect.kamenridercraft.fall":"Fall",
-
+  "effect.kamenridercraft.return":"Return",
+  "effect.kamenridercraft.connect":"Connect",
 
 
 "item.kamenridercraft.rider_circuit": "Rider Circuit",

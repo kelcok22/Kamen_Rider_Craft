@@ -336,9 +336,17 @@ public class Wizard_Rider_Items {
                () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.EXPLOSION, 500,1,true,true))
 					   .AddToList(UnknownWizardRingItem.violet_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-       public static final DeferredItem<Item> SLEEP_WIZARD_RING = ITEMS.register("sleep_ring",
-               () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SLEEP, 80,0,true,true))
-					   .AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+	public static final DeferredItem<Item> TELEPORT_WIZARD_RING = ITEMS.register("teleport_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.RETURN, 500,20,true,true))
+					.AddToList(UnknownWizardRingItem.violet_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> CONNECT_WIZARD_RING = ITEMS.register("connect_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.CONNECT, 80,0,true,true))
+					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SLEEP_WIZARD_RING = ITEMS.register("sleep_ring",
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SLEEP, 80,0,true,true))
+					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> BIND_WIZARD_RING = ITEMS.register("bind_ring",
                () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.BIND, 80,0,true,true))
@@ -376,6 +384,7 @@ public class Wizard_Rider_Items {
        public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
                () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.SMALL, 500,20,true,true))
 					   .AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
 
        public static final DeferredItem<Item> DRESS_UP_RING = ITEMS.register("dress_up_ring",
                () -> new RiderFormChangeItem(new Item.Properties(),0,"_dressup","wizard","wizardriver_belt",
@@ -498,7 +507,6 @@ public class Wizard_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
    /*
    connect_ring
-	   teleport_ring
    */
 
 	public static final DeferredItem<Item> UNKNOWN_AMBER_RING = ITEMS.register("unknown_amber_ring",
