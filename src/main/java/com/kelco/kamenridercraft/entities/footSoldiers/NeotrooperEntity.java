@@ -15,6 +15,8 @@ public class NeotrooperEntity extends BaseHenchmenEntity{
     public NeotrooperEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="neotrooper";
+		BOW_COOLDOWN=35;
+		HARD_BOW_COOLDOWN=15;
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kabuto_Rider_Items.KABUTOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));
