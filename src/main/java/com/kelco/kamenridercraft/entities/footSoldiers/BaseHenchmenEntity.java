@@ -36,6 +36,8 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
+    public int BOW_COOLDOWN = 40;
+    public int HARD_BOW_COOLDOWN = 20;
     private boolean swordgunMelee = false;
     private final RangedBowAttackGoal<RiotrooperEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
@@ -171,12 +173,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
         if (this.level() != null && !this.level().isClientSide) {
             ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
             if (itemstack.getItem() instanceof BowItem) {
-                int i = 20;
-                if (this.level().getDifficulty() != Difficulty.HARD) {
-                    i = 40;
-                }
-
-                this.bowGoal.setMinAttackInterval(i);
+                this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
                 this.goalSelector.removeGoal(this.meleeGoal);
                 this.goalSelector.addGoal(2, this.bowGoal);
             } else {
@@ -196,12 +193,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
                 this.goalSelector.removeGoal(this.bowGoal);
                 this.goalSelector.addGoal(2, this.meleeGoal);
             } else {
-                int i = 20;
-                if (this.level().getDifficulty() != Difficulty.HARD) {
-                    i = 40;
-                }
-
-                this.bowGoal.setMinAttackInterval(i);
+                this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
                 this.goalSelector.removeGoal(this.meleeGoal);
                 this.goalSelector.addGoal(2, this.bowGoal);
             }

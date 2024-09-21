@@ -11,6 +11,8 @@ public class ShadowTrooperEntity extends BaseHenchmenEntity {
     public ShadowTrooperEntity(EntityType<? extends BaseHenchmenEntity > type, Level level) {
         super(type, level);
         NAME="shadow_trooper";
+		BOW_COOLDOWN=30;
+		HARD_BOW_COOLDOWN=10;
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Kabuto_Rider_Items.KABUTOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Kabuto_Rider_Items.KABUTOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));

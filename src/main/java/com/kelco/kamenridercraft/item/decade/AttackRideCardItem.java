@@ -114,7 +114,6 @@ public class AttackRideCardItem extends BaseItem {
 										illusion.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
 										illusion.bindToPlayer(p_41129_);
 										illusion.setMeleeOnly(true);
-										illusion.NAME = "decade_illusion";
 										illusion.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
 										illusion.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
 										illusion.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Decade_Rider_Items.DECADELEGGINGS.get()));

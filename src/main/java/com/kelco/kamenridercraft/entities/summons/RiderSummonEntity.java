@@ -70,7 +70,7 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
 
 	public RiderSummonEntity(EntityType<? extends RiderSummonEntity> type, Level level) {
 		super(type, level);
-		NAME="shocker_combatman";
+		NAME="decade_illusion";
         this.reassessWeaponGoal();
 	}
 
