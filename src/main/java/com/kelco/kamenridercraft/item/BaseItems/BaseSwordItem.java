@@ -18,8 +18,10 @@ import net.minecraft.world.level.Level;
 public class BaseSwordItem extends SwordItem {
 
 	private Item RepairItem = Modded_item_core.RIDER_CIRCUIT.get();
+	private Item FormChangeItem;
 	private Item HenshinBeltItem;
 	private Boolean Change_sword = false;
+	private Boolean Form_item = false;
 	private Boolean Henshin_item = false;
 
 
@@ -51,6 +53,12 @@ public class BaseSwordItem extends SwordItem {
 		}
 	}
 
+	public BaseSwordItem IsFormItem(Item item) {
+		Form_item=true;
+		FormChangeItem=item;
+		return this;
+	}
+
 	public BaseSwordItem IsHenshinItem(Item item) {
 		Henshin_item=true;
 		HenshinBeltItem=item;
@@ -79,6 +87,9 @@ public class BaseSwordItem extends SwordItem {
 		if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
 			player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
 			if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem form) form.use(level, player, InteractionHand.OFF_HAND);
+		}	
+		if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+			FormChangeItem.use(level, player, p_41130_);
 		}	
 		if (Change_sword) {
 			if (player.isShiftKeyDown()) {
