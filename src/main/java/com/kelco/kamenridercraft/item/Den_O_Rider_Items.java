@@ -70,7 +70,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addNeedItem(KTAROS.get()).ChangeModel("geo/cyclonehopper_wingsarmor.geo.json"));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addNeedItem(KTAROS.get()).hasStaticWings());
 
 	public static final DeferredItem<Item> RIDER_TICKET_WING = ITEMS.register("rider_ticket_wing",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wing","den_o","den_o_belt_w",

@@ -35,7 +35,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
                 return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
 
-            }else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ichigo.geo.json");
+            }else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
         }
     }
 

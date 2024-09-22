@@ -104,7 +104,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-					.ChangeModel("geo/wizard_all_dragon.geo.json"));
+					.ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING = ITEMS.register("land_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_land_dragon","wizard","wizardriver_belt",
@@ -135,7 +135,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).ChangeModel("geo/wizard_all_dragon.geo.json").AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_DRAGON_WIZARD_SPECIAL_RING = ITEMS.register("water_ring_dragon_special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water_dragon_special","wizard","wizardriver_belt",
@@ -144,7 +144,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
-					.addNeedForm(WATER_DRAGON_WIZARD_RING.get(),1).ChangeModel("geo/wizard_all_dragon.geo.json"));
+					.addNeedForm(WATER_DRAGON_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> HURRICANE_DRAGON_WIZARD_SPECIAL_RING = ITEMS.register("hurricane_ring_dragon_special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hurricane_dragon_special","wizard","wizardriver_belt",
@@ -153,7 +153,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.addNeedForm(HURRICANE_DRAGON_WIZARD_RING.get(),1).addAlternative(WATER_DRAGON_WIZARD_SPECIAL_RING.get()).ChangeModel("geo/wizard_all_dragon.geo.json"));
+					.addNeedForm(HURRICANE_DRAGON_WIZARD_RING.get(),1).addAlternative(WATER_DRAGON_WIZARD_SPECIAL_RING.get()).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_SPECIAL_RING = ITEMS.register("land_ring_dragon_special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_land_dragon_special","wizard","wizardriver_belt",
@@ -162,7 +162,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-					.addNeedForm(LAND_DRAGON_WIZARD_RING.get(),1).addAlternative(HURRICANE_DRAGON_WIZARD_SPECIAL_RING.get()).ChangeModel("geo/wizard_all_dragon.geo.json"));
+					.addNeedForm(LAND_DRAGON_WIZARD_RING.get(),1).addAlternative(HURRICANE_DRAGON_WIZARD_SPECIAL_RING.get()).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> SPECIAL_RING = ITEMS.register("special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon_special","wizard","wizardriver_belt",
@@ -171,7 +171,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 2,true,false))
-					.ChangeModel("geo/wizard_all_dragon.geo.json").addAlternative(LAND_DRAGON_WIZARD_SPECIAL_RING.get())
+					.ChangeModel("wizard_flame_dragon_all_dragon.geo.json").addAlternative(LAND_DRAGON_WIZARD_SPECIAL_RING.get())
 					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).AddToList(UnknownWizardRingItem.red_wizard_ring, 1)
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
@@ -188,7 +188,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("geo/wizard_all_dragon.geo.json"));
+					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING  = ITEMS.register("finish_strike_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_infinity_gold","wizard","wizardriver_belt",
@@ -200,7 +200,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("geo/wizard_all_dragon.geo.json")
+					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json")
 					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECIAL_RUSH_RING = ITEMS.register("special_rush_ring",
@@ -213,7 +213,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
-					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).ChangeModel("geo/wizard_all_dragon.geo.json")
+					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json")
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_RING = ITEMS.register("beast_ring",
@@ -475,7 +475,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.ChangeModel("geo/cyclonehopper_wingsarmor.geo.json").addNeedForm(FLAME_WIZARD_RING.get(),1)
+					.hasStaticWings().addNeedForm(FLAME_WIZARD_RING.get(),1)
 					.AddToList(UnknownWizardRingItem.red_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_WIZARD_RING_COLOR_VER = ITEMS.register("kraken_ring_color_ver",
@@ -483,7 +483,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false))
-					.ChangeModel("geo/cyclonehopper_wingsarmor.geo.json").addNeedForm(WATER_WIZARD_RING.get(),1)
+					.hasStaticWings().addNeedForm(WATER_WIZARD_RING.get(),1)
 					.AddToList(UnknownWizardRingItem.yellow_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 

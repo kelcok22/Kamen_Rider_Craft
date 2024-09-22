@@ -43,8 +43,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
 					new MobEffectInstance(Effect_core.FLYING, 400, 0, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).ifFlyingModelResource("geo/rider_plusbelt_and_wings.geo.json")
-					.AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
@@ -81,8 +80,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
 					new MobEffectInstance(Effect_core.FLYING, 400, 0, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).ifFlyingModelResource("geo/rider_plusbelt_and_wings.geo.json")
-					.AddToList(RiderTabs.BLADE_TAB_ITEM));
+					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));

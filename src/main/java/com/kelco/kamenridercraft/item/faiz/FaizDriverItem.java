@@ -34,8 +34,9 @@ public class FaizDriverItem extends RiderDriverItem {
 			}
 		
 			if (itemstack.getItem()==Faiz_Rider_Items.FAIZ_DRIVER.get()) {
-				if((rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get())
-				||(rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()) ) belt="faiz_driver_belt_b";
+				if(get_Form_Item(itemstack, 1)!=Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()
+				&&((rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get())
+				||(rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()))) belt="faiz_driver_belt_b";
 			}
 			return "belts/"+belt;
 		}
@@ -69,10 +70,6 @@ public class FaizDriverItem extends RiderDriverItem {
 
 		}
 		return false;
-	}
-
-	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Model());
 	}
 	
 	@Override
