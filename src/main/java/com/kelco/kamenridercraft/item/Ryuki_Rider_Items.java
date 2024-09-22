@@ -60,7 +60,7 @@ public class Ryuki_Rider_Items {
 	public static final DeferredItem<Item> METALGELAS_ADVENT = ITEMS.register("metalgelas_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gai","v_buckle_belt_gai",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)).ChangeModel("geo/gai.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> VENOSNAKER_ADVENT = ITEMS.register("venosnaker_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ouja","v_buckle_belt_ouja",
@@ -423,7 +423,7 @@ public class Ryuki_Rider_Items {
     				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
     				new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
     				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-    		.ChangeModel("geo/ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+    		.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
     public static final DeferredItem<Item> DRAG_VISOR_ZWEI_VENT = ITEMS.register("drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), DRAG_VISOR_ZWEI.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -443,7 +443,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-			.ChangeModel("geo/knight_wing_wall.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_TRICK_VENT = ITEMS.register("knight_trick_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "trick_vent_knight").AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -474,7 +474,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-			.ChangeModel("geo/zolda_giga_cannon.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			.AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
     public static final DeferredItem<Item> GIGA_ARMOR_VENT = ITEMS.register("giga_armor_vent",
 			() -> new AdventCardItem(new Item.Properties(), "zolda", MAGNA_VISOR.get(), GIGA_ARMOR.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -534,7 +534,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-			.ChangeModel("geo/ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			.AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
     public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI_VENT = ITEMS.register("black_drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuga", BLACK_DRAG_VISOR.get(), BLACK_DRAG_VISOR_ZWEI.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));

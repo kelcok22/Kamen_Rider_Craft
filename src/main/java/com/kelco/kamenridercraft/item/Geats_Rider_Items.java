@@ -184,12 +184,12 @@ public class Geats_Rider_Items {
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","x_geats","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-			.ChangeModel("cyclonehopper_wingsarmor.geo.json").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dooms_geats","desire_driver_belt_dooms_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-			.ChangeModel("cyclonehopper_wingsarmor.geo.json").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","jyamato","desire_driver_belt_jyamato",
@@ -837,7 +837,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
-			.ChangeModel("geo/ziin.geo.json").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_RAISE_RISER_CARD = ITEMS.register("beroba_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","beroba","raise_riser_belt",
@@ -846,7 +846,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
-			.ChangeModel("geo/beroba.geo.json").SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","beroba","raise_riser_belt_premium",
@@ -863,7 +863,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 8,true,false))
-			.ChangeModel("geo/kekera.geo.json").SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KYUUN_RAISE_RISER_CARD = ITEMS.register("kyuun_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kyuun","blank",
@@ -872,7 +872,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-			.ChangeModel("geo/kyuun.geo.json").SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","kekera","raise_riser_belt_premium_kekera",

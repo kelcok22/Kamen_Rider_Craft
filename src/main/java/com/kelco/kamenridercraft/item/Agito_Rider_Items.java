@@ -81,7 +81,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-            .ChangeModel("geo/gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
+            .AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLD_EXCEED_GILLS = ITEMS.register("gold_exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_gold_exceed","gills","meta_factor_belt_g",
@@ -89,7 +89,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-            .ChangeModel("geo/gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
+            .ChangeModel("gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",

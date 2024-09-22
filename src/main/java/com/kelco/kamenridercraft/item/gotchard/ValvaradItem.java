@@ -51,7 +51,7 @@ public class ValvaradItem extends RiderDriverItem {
 
 		switch (slot) {
 		case HEAD, LEGS ->{
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Model());
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
 		}
 		case CHEST -> {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_custom.geo.json");
@@ -59,7 +59,7 @@ public class ValvaradItem extends RiderDriverItem {
 		}
             default -> {}
 		}
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Model());
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
 	}
 
 	@Override

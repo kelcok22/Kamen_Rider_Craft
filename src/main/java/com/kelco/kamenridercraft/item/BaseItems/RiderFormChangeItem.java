@@ -4,11 +4,19 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.common.collect.Lists;
+import javax.annotation.Nullable;
 
+import org.checkerframework.checker.units.qual.radians;
+
+import com.google.common.collect.Lists;
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
+import com.mojang.brigadier.StringReader;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -18,6 +26,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import software.bernie.geckolib.cache.GeckoLibCache;
 
 public class RiderFormChangeItem extends BaseItem {
 
@@ -35,6 +44,7 @@ public class RiderFormChangeItem extends BaseItem {
     private String BELT_TEX;
     private Boolean IS_GLOWING = false;
     private Boolean IS_BELT_GLOWING = false;
+    private Boolean HAS_STATIC_WINGS = false;
     private String UPDATED_BELT_MODEL;
     private String UPDATED_MODEL;
     private String FLYING_MODEL;
@@ -102,7 +112,8 @@ public class RiderFormChangeItem extends BaseItem {
 
     public String get_Model() {
         if (UPDATED_MODEL!=null) return UPDATED_MODEL;
-        return "geo/ichigo.geo.json";
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+RIDER_NAME+FORM_NAME+".geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? RIDER_NAME+FORM_NAME+".geo.json" : (get_Has_Static_Wings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
     public String get_Animation() {
@@ -122,8 +133,14 @@ public class RiderFormChangeItem extends BaseItem {
         return IS_BELT_GLOWING;
     }
 
+    public Boolean get_Has_Static_Wings() {
+        return HAS_STATIC_WINGS;
+    }
+
     public String get_FlyingModel() {
-        return FLYING_MODEL;
+        if (FLYING_MODEL!=null) return FLYING_MODEL;
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+RIDER_NAME+FORM_NAME+"_wing.geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? RIDER_NAME+FORM_NAME+"_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
     }
     public Boolean HasWingsIfFlying() {
         return FLYING_TEXT;
@@ -177,9 +194,9 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem ifFlyingModelResource(String model) {
+    public RiderFormChangeItem hasFlyingWings(@Nullable String model) {
         FLYING_TEXT=true;
-        FLYING_MODEL=model;
+        if (model!=null) FLYING_MODEL=model;
         return this;
     }
 
@@ -205,6 +222,11 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem IsBeltGlowing() {
         IS_BELT_GLOWING=true;
+        return this;
+    }
+
+    public RiderFormChangeItem hasStaticWings() {
+        HAS_STATIC_WINGS=true;
         return this;
     }
 

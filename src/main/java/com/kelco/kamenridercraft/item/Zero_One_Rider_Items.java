@@ -178,7 +178,7 @@ public class Zero_One_Rider_Items {
              		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
              		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
              		new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
-			.ChangeModel("geo/breaking_mammoth.geo.json").SetPalyerModelInvisible().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 5));
+			.SetPalyerModelInvisible().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 5));
 	
 	public static final DeferredItem<Item> SPARKING_GIRAFFE_PROGRISEKEY = ITEMS.register("sparking_giraffe_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_giraffe","zero_one","hiden_zero_one_driver_belt",

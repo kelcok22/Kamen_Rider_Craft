@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kr_hibiki",
+  "pattern": [
+	"XXX",
+	"X X"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:oni_ore"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:hibikihead"
+  }
+}

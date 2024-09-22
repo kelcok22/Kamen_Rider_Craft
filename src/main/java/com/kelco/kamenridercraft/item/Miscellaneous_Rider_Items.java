@@ -168,25 +168,25 @@ public class Miscellaneous_Rider_Items {
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","saigo","chaos_driver_saigo_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-		            .ChangeModel("geo/saigo.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            .IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_HARUMA = ITEMS.register("chaos_ring_haruma",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","haruma","chaos_driver_haruma_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-		            .ChangeModel("geo/haruma.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		        	.IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_SHION = ITEMS.register("chaos_ring_shion",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shion","chaos_driver_shion_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-		            .ChangeModel("geo/shion.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            .IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_JIGEN = ITEMS.register("chaos_ring_jigen",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","jigen","chaos_driver_jigen_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-		            .ChangeModel("geo/haruma.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+		            .ChangeModel("haruma.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		    
 		    public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",

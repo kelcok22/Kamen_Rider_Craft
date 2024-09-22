@@ -39,7 +39,7 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> KUJAKU_MEDAL = ITEMS.register("kujaku_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujaku","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-			.ChangeSlot(2).ifFlyingModelResource( "geo/ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","ooo","ooodriver_belt",
@@ -289,7 +289,7 @@ public class OOO_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-			.ChangeSlot(2).ifFlyingModelResource( "geo/ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_BATTA_MEDAL = ITEMS.register("super_batta_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_batta","ooo","ooodriver_belt",
@@ -307,7 +307,7 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> KUJAKU_ETERNITY_MEDAL = ITEMS.register("kujaku_eternity_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujaku_eternity","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(2).ifFlyingModelResource( "geo/ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_ETERNITY_MEDAL = ITEMS.register("condor_eternity_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor_eternity","ooo","ooodriver_belt",
@@ -347,7 +347,7 @@ public class OOO_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false))
-			.ChangeSlot(2).ChangeModel("geo/ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARI_GODA_MEDAL = ITEMS.register("ari_goda_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ari","goda","ooodriver_belt",
@@ -520,7 +520,7 @@ public class OOO_Rider_Items {
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_imagin","ooo","ooodriver_belt",
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0,true,false))
-					.ChangeSlot(2).ChangeModel("geo/ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> SHOCKER_MEDAL = ITEMS.register("shocker_medal",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_shocker","ooo","ooodriver_belt",
@@ -616,7 +616,7 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> GREEED_ABSORPTION_CORE = ITEMS.register("greeed_absorption_core",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.ChangeSlot(2).ChangeModel("geo/ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeSlot(2).ChangeModel("ooo_imagin.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 			public static final DeferredItem<Item> AQUA_CORE = ITEMS.register("aqua_core",

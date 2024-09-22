@@ -89,11 +89,11 @@ public class OOODriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.LEGS)num=3;
 		
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, num).get_FlyingModel());
-	 }else if (get_Form_Item(itemstack, num).get_Model()=="geo/ichigo.geo.json") {
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel());
+	 }else if (get_Form_Item(itemstack, num).get_Model()=="default.geo.json") {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/ooo.geo.json");
 		 }else   
-			 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, num).get_Model());
+			 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
 
 	}
 	
