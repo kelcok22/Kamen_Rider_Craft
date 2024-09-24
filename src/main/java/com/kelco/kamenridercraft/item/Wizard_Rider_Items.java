@@ -100,10 +100,12 @@ public class Wizard_Rider_Items {
 					.AddToList(UnknownWizardRingItem.green_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING_BEAST = ITEMS.register("land_ring_dragon_beast",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wizard","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wizard","beast","beast_driver_belt"
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
 					.ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING = ITEMS.register("land_ring_dragon",
@@ -218,94 +220,125 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> BEAST_RING = ITEMS.register("beast_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 5).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FALCO_RING_WIZARD = ITEMS.register("falco_ring_wizard",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_falco","wizard","wizardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1));
 
 	public static final DeferredItem<Item> FALCO_RING = ITEMS.register("falco_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_falco","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.addAlternative(FALCO_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 3));
 
 	public static final DeferredItem<Item> CHAMELEO_RING = ITEMS.register("chameleo_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chameleo","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 3).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BUFFA_RING_WIZARD = ITEMS.register("buffa_ring_wizard",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_beast","wizard","wizardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.addNeedForm(FALCO_RING_WIZARD.get(),1));
 
 	public static final DeferredItem<Item> BUFFA_RING = ITEMS.register("buffa_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_buffa","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.addAlternative(BUFFA_RING_WIZARD.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM)
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 3));
 
 	public static final DeferredItem<Item> DOLPHI_RING = ITEMS.register("dolphi_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dolphi","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 3).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HYPER_RING = ITEMS.register("hyper_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","beast","beast_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
 					.AddToList(UnknownWizardRingItem.beast_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WISEMAN_RING = ITEMS.register("wiseman_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","wiseman","wise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
+			).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_O_RING = ITEMS.register("mage_o_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mage","wise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_B_RING = ITEMS.register("mage_b_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mage_blue","wise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.blue_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_G_RING = ITEMS.register("mage_g_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mage_green","wise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.green_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_RING = ITEMS.register("sorcerer_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","sorcerer","wise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false))
 					.AddToList(UnknownWizardRingItem.black_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARD_RING = ITEMS.register("black_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","black_wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.black_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARD_RING = ITEMS.register("dark_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.violet_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIGHT_WIZARD_RING = ITEMS.register("light_ring",
