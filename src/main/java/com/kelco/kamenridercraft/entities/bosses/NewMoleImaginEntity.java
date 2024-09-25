@@ -27,7 +27,6 @@ public class NewMoleImaginEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 8.0D)
         		.add(Attributes.ARMOR, 2.0D)
-        		.add(Attributes.MAX_HEALTH, 60.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 60.0D);
      }
 }

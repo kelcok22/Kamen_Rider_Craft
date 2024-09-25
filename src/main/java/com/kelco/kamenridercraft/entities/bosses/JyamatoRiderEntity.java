@@ -33,7 +33,6 @@ public class JyamatoRiderEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 1.0D)
         		.add(Attributes.ARMOR, 4.0D)
-        		.add(Attributes.MAX_HEALTH, 60.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 60.0D);
      }
 }

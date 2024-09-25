@@ -135,8 +135,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 				.add(Attributes.ARMOR, 3.0D)
 				.add(Attributes.KNOCKBACK_RESISTANCE, 4.0D)
 				.add(Attributes.ATTACK_KNOCKBACK, 2.0D)
-				.add(Attributes.MAX_HEALTH, 300.0D)
-				.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+				.add(Attributes.MAX_HEALTH, 300.0D);
 	}
 
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {

@@ -47,9 +47,7 @@ public class OrgaEntity extends BaseHenchmenEntity {
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
         		.add(Attributes.MOVEMENT_SPEED,(double)0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 5.0D)
-        		.add(Attributes.MAX_HEALTH, 100.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE)
-        		;
+        		.add(Attributes.MAX_HEALTH, 100.0D);
      }
     
 

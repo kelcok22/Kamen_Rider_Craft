@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Modded_item_core;
@@ -80,7 +81,7 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 			return false;
 		}));
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, this::isAngryAt));
-		//this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, YummyEntity.class, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, YummyEntity.class, false));
 		this.targetSelector.addGoal(8, new ResetUniversalAngerTargetGoal<>(this, true));
 
 	}
@@ -102,14 +103,14 @@ public class AnkhEntity extends BaseAllyEntity implements GeoEntity {
 				} else {
 
 					if (itemstack.is(OOO_Rider_Items.GREEED_BLET_ANKH_LOST.get()) && this.isOwnedBy(player) &&!this.isBaby()) {
-						player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
-						/**
+						//player.sendSystemMessage(Component.translatable("TEST NOT FINISHED").withStyle(ChatFormatting.YELLOW));
+
 						BaseHenchmenEntity boss = MobsCore.ANKHCOMPLETE.get().create(this.level());
 						if (boss != null) {
 							boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), this.getXRot());
 							this.level().addFreshEntity(boss);
 						}
-						 **/
+
 						this.discard();
 						return InteractionResult.SUCCESS;
 					} else {
