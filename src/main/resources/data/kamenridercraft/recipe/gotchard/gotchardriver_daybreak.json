@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gotchard_daybreak",
+  "pattern": [
+	"XXX",
+	"HXS",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"H": {
+	  "item": "kamenridercraft:daybreak_hopper1_ride_chemy_card"
+	},
+	"S": {
+	  "item": "kamenridercraft:daybreak_steamliner_ride_chemy_card"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:gotchardriver_daybreak"
+  }
+}
