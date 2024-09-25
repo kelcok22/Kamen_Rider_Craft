@@ -197,6 +197,9 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
 
         event.put(MobsCore.GHOULS.get(), BugsterVirusEntity.setAttributes().build());
+        event.put(MobsCore.MEDUSA_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
+        event.put(MobsCore.PHOENIX_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
+        event.put(MobsCore.GREMLIN_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -442,6 +445,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GHOULS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MEDUSA_PHANTOM.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.PHOENIX_PHANTOM.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GREMLIN_PHANTOM.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);

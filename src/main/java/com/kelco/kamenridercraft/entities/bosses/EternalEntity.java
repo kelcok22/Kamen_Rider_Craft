@@ -50,8 +50,7 @@ public class EternalEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 200.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 200.0D);
      }
     
 

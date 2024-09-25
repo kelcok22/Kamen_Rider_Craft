@@ -27,7 +27,6 @@ public class CommanderDopantEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 16.0D)
         		.add(Attributes.ARMOR, 4.0D)
-        		.add(Attributes.MAX_HEALTH, 160.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 160.0D);
      }
 }

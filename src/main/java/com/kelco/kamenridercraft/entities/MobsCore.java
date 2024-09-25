@@ -377,14 +377,14 @@ public class MobsCore {
                    () -> new DeferredSpawnEggItem(POSEIDON, 0xD11B1E, 0x30BBEC, new Item.Properties()));
          
           public static final DeferredHolder<EntityType<?>, EntityType<CoreEntity>> CORE = MOBLIST.register("core",
-                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":core"));
+                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> CORE_SPAWN_EGG = ITEMS.register("core_spawn_egg",
                    () -> new DeferredSpawnEggItem(CORE, 0x312511, 0xF97012, new Item.Properties()));
          
           
           public static final DeferredHolder<EntityType<?>, EntityType<PoweredUpCoreEntity>> POWERED_UP_CORE = MOBLIST.register("powered_up_core",
-                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(1.8F, 5.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":powered_up_core"));
+                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":powered_up_core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> POWERED_UP_CORE_SPAWN_EGG = ITEMS.register("powered_up_core_spawn_egg",
                    () -> new DeferredSpawnEggItem(POWERED_UP_CORE, 0x51115D, 0xB419D1, new Item.Properties()));
@@ -403,15 +403,29 @@ public class MobsCore {
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<GhoulsEntity>> GHOULS = MOBLIST.register("ghouls",
-            () -> EntityType.Builder.of(GhoulsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":masquerade"));
+            () -> EntityType.Builder.of(GhoulsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ghouls"));
 
     public static final DeferredItem<DeferredSpawnEggItem> GHOULS_SPAWN_EGG = ITEMS.register("ghouls_spawn_egg",
             () -> new DeferredSpawnEggItem(GHOULS,  0x9f9789,0x161616, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MedusaPhantomEntity>> MEDUSA_PHANTOM = MOBLIST.register("medusa_phantom",
+            () -> EntityType.Builder.of(MedusaPhantomEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":medusa_phantom"));
 
-    //medusaPhantomMob 0xe28ce2,0x2da623
-    //phoenixPhantomMob 0xb00000,0xeaa413
-    //gremlinPhantomMob 0xb20834c,0x222222
+    public static final DeferredItem<DeferredSpawnEggItem> MEDUSA_PHANTOM_SPAWN_EGG = ITEMS.register("medusa_phantom_spawn_egg",
+            () -> new DeferredSpawnEggItem(MEDUSA_PHANTOM,  0xe28ce2,0x2da623, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PhoenixPhantomEntity>> PHOENIX_PHANTOM = MOBLIST.register("phoenix_phantom",
+            () -> EntityType.Builder.of(PhoenixPhantomEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":phoenix_phantom"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PHOENIX_PHANTOM_SPAWN_EGG = ITEMS.register("phoenix_phantom_spawn_egg",
+            () -> new DeferredSpawnEggItem(PHOENIX_PHANTOM,  0xb00000,0xeaa413, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<GremlinPhantomEntity>> GREMLIN_PHANTOM = MOBLIST.register("gremlin_phantom",
+            () -> EntityType.Builder.of(GremlinPhantomEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gremlin_phantom"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GREMLIN_PHANTOM_SPAWN_EGG = ITEMS.register("gremlin_phantom_spawn_egg",
+            () -> new DeferredSpawnEggItem(GREMLIN_PHANTOM,  0xb20834c,0x222222, new Item.Properties()));
+
     //wisemanMob 0xffffff,0xd79e0b
     //MageFootSoldiersMob 0xbb9548,0x050505
     //MageCaptainMob 0xbb9548,0x050505
@@ -575,7 +589,7 @@ public class MobsCore {
                   () -> new DeferredSpawnEggItem(MAGIA, 0x060606, 0xa2a2a2, new Item.Properties()));
 
           public static final DeferredHolder<EntityType<?>, EntityType<GigerEntity>> GIGER = MOBLIST.register("giger",
-                  () -> EntityType.Builder.of(GigerEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giger"));
+                  () -> EntityType.Builder.of(GigerEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giger"));
  
           public static final DeferredItem<DeferredSpawnEggItem> GIGER_SPAWN_EGG = ITEMS.register("giger_spawn_egg",
                   () -> new DeferredSpawnEggItem(GIGER, 0x9c00b2, 0x1f1f1f, new Item.Properties()));

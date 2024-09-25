@@ -27,7 +27,6 @@ public class SmilodonDopantEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.2F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 4.0D)
-        		.add(Attributes.MAX_HEALTH, 110.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 110.0D);
      }
 }
