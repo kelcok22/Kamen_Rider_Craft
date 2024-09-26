@@ -58,8 +58,6 @@ public class MagiaEntity extends BaseHenchmenEntity {
 		  	  NAME="arsino_magia";
 			  this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ZETSUMERISER_ARSINO.get()));
 			  break;
-		  default:
-			  break;
 		}
     }
     

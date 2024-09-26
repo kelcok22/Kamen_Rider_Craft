@@ -43,42 +43,37 @@ public class WizardRingItem extends BaseItem {
 		ItemStack itemstack = player.getItemInHand(hand);
 		
 		if (!level.isClientSide()
-		&&player.getItemBySlot(EquipmentSlot.LEGS).getItem() == Wizard_Rider_Items.WIZARD_LEGGINGS.get()
-		&&player.getItemBySlot(EquipmentSlot.CHEST).getItem() == Wizard_Rider_Items.WIZARD_CHESTPLATE.get()
-		&&player.getItemBySlot(EquipmentSlot.HEAD).getItem() == Wizard_Rider_Items.WIZARD_HEAD.get()){
-			if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt){
-				if (ArrayUtils.contains(FORMS, ((RiderDriverItem) belt).Rider)) {
-					if (EFFECTS != null) {
-						for (int i = 0; i < EFFECTS.size(); i++)
-						{
-							player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,true));
-						}
-					} else {
-						switch (SPECIAL) {
-							case "copy":
-								RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
-								if (copy != null) {
-									copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-									copy.bindToPlayer(player);
-									copy.NAME = "wizard_copy";
-									copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
-									copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
-									copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
-									copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
-									RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
-									
-									level.addFreshEntity(copy);
-								}
-								break;
-							default:
-								break;
-						}
+		&&player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+		&&belt.isTransformed(player)){
+			if (ArrayUtils.contains(FORMS, belt.Rider)) {
+				if (EFFECTS != null) {
+					for (int i = 0; i < EFFECTS.size(); i++)
+					{
+						player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,true));
 					}
-					if (!player.isCreative()) {
-						player.getCooldowns().addCooldown(this, 500);
+				} else {
+					switch (SPECIAL) {
+						case "copy":
+							RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
+							if (copy != null) {
+								copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+								copy.bindToPlayer(player);
+								copy.NAME = "wizard_copy";
+								copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
+								copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
+								copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Wizard_Rider_Items.WIZARD_LEGGINGS.get()));
+								copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+								RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
+								
+								level.addFreshEntity(copy);
+							}
+							break;
 					}
-					player.awardStat(Stats.ITEM_USED.get(this));
 				}
+				if (!player.isCreative()) {
+					player.getCooldowns().addCooldown(this, 500);
+				}
+				player.awardStat(Stats.ITEM_USED.get(this));
 			}
 		}
 		

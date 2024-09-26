@@ -122,8 +122,6 @@ public class RideplayerEntity extends BaseHenchmenEntity {
               case 4:
                  this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
                  break;
-              default:
-                 break;
            }
         }
   

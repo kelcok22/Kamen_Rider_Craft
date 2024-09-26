@@ -87,12 +87,7 @@ public class GamerDriverItem extends RiderDriverItem {
 				}
 			
 			if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json") {
-				if (rider.getItemBySlot(EquipmentSlot.HEAD).getItem()!=Ex_Aid_Rider_Items.EX_AIDHELMET.get()||
-						rider.getItemBySlot(EquipmentSlot.CHEST).getItem()!=Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()||
-						rider.getItemBySlot(EquipmentSlot.LEGS).getItem()!=Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()) {
-					
-					belt = get_Form_Item(itemstack,1).getBeltTex()+"_un";
-				}
+				if (!isTransformed(rider)) belt = get_Form_Item(itemstack,1).getBeltTex()+"_un";
 			}
 			
 			return "belts/"+belt;
@@ -119,12 +114,8 @@ public class GamerDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		
-		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json") {
-			if (rider.getItemBySlot(EquipmentSlot.HEAD).getItem()!=Ex_Aid_Rider_Items.EX_AIDHELMET.get()||
-					rider.getItemBySlot(EquipmentSlot.CHEST).getItem()!=Ex_Aid_Rider_Items.EX_AIDCHESTPLATE.get()||
-					rider.getItemBySlot(EquipmentSlot.LEGS).getItem()!=Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()) {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/riderbelt.geo.json");
-			}
+		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json" && !isTransformed(rider)) {
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/riderbelt.geo.json");
 		}
 		
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());
@@ -135,43 +126,32 @@ public class GamerDriverItem extends RiderDriverItem {
 		if (currentSlot== EquipmentSlot.FEET) {
 			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
 		}
-		if (livingEntity.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-			if (livingEntity.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-				if (livingEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-					switch (currentSlot) {
-					case HEAD ->{ 
-						return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					}
-					case CHEST -> {
-						return get_Form_Item(itemstack, 2).get_Is_Glowing();
-					}
-					case LEGS -> {
-						return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					}
-					default -> {}
-					}
-					return false;
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case HEAD ->{ 
+					return get_Form_Item(itemstack, 1).get_Is_Glowing();
+				}
+				case CHEST -> {
+					return get_Form_Item(itemstack, 2).get_Is_Glowing();
+				}
+				case LEGS -> {
+					return get_Form_Item(itemstack, 1).get_Is_Glowing();
 				}
 			}
-
+			return false;
 		}
 		return false;
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-		switch (slot) {
-
-		case CHEST -> {
+		if (slot == EquipmentSlot.CHEST) {
 			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel());
-			}else if (get_Form_Item(itemstack, 2).get_Model()=="default.geo.json") {
+			} else if (get_Form_Item(itemstack, 2).get_Model()=="default.geo.json") {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bigger_rider_plusbelt.geo.json");
-			}else   
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model());
-		}
-		
-		default -> {}
+			}
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model());
 		}
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
 
@@ -200,9 +180,7 @@ public class GamerDriverItem extends RiderDriverItem {
 				if (part =="rightLeg") return true;
 			}
 		}
-		case LEGS -> {
-		}
-		default -> {}
+		case LEGS -> {}
 		}
 		return false;
 	}

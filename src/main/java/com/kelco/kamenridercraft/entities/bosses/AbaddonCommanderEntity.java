@@ -64,8 +64,6 @@ public class AbaddonCommanderEntity extends BaseHenchmenEntity {
                this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SLASH_ABADDO_RISER_O.get()));
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()));
             break;
-         default:
-            break;
        }
     }
     

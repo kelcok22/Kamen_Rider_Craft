@@ -43,34 +43,6 @@ public class FaizDriverItem extends RiderDriverItem {
 		else return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
 
 	}
-
-	public  boolean getGlowForSlot(ItemStack itemstack,EquipmentSlot currentSlot, LivingEntity livingEntity) {
-
-		if (currentSlot== EquipmentSlot.FEET) {
-			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
-		}
-		if (livingEntity.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-			if (livingEntity.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-				if (livingEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-					switch (currentSlot) {
-					case HEAD ->{ 
-						return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					}
-					case CHEST -> {
-						return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					}
-					case LEGS -> {
-						return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					}
-					default -> {}
-					}
-					return false;
-				}
-			}
-
-		}
-		return false;
-	}
 	
 	@Override
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {

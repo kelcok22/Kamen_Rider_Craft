@@ -106,8 +106,6 @@ public class GmRiderEntity extends BaseHenchmenEntity {
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get(), 2);
 			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_PROPELLER.get()));
 			break;
-		default:
-			break;
 	  }
       return p_34300_;
    }
