@@ -21,7 +21,6 @@ public class GigerEntity extends BaseHenchmenEntity {
     public GigerEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="giger";
-        this.Scale=2;
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zero_One_Rider_Items.ZERO_ONE_LEGGINGS.get()));
@@ -36,7 +35,8 @@ public class GigerEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.3F)
         		.add(Attributes.ATTACK_DAMAGE, 17.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 60.0D);
+        		.add(Attributes.MAX_HEALTH, 60.0D)
+                .add(Attributes.SCALE, 4.0D);
      }   
 
 }

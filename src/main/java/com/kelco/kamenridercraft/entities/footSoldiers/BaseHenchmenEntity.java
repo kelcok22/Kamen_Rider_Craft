@@ -54,7 +54,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
 	public String NAME = "shocker_combatman";
 
-	public int Scale=1;
+
 	
     public BaseHenchmenEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -142,11 +142,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
     protected boolean isSunSensitive() {
         return false;
      }
-    
-    @Override
-    public float getScale() {
-        return Scale;
-     }
+
     
 
     protected SoundEvent getAmbientSound() {

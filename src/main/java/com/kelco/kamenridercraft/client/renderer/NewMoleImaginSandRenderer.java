@@ -22,17 +22,11 @@ public class NewMoleImaginSandRenderer  extends  HumanoidMobRenderer<NewMoleImag
 
 	
 	public NewMoleImaginSandRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
-		super(ctx, new NewMoleImaginSandModel<>(ctx.bakeLayer(ModelLayer)),1);
+		super(ctx, new NewMoleImaginSandModel<>(ctx.bakeLayer(ModelLayer)),1,1,1,1);
 		this.addLayer(new HumanoidArmorLayer<>(this, new NewMoleImaginSandModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new NewMoleImaginSandModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
 
 	}
 
-
-	   protected void scale(NewMoleImaginSandEntity p_114775_, PoseStack p_114776_, float p_114777_) {
-		   
-		   float size = p_114775_.getScale();
-		      p_114776_.scale(size,size,size);
-		   }
 
 	@Override
 	public ResourceLocation getTextureLocation(NewMoleImaginSandEntity p_114482_) {

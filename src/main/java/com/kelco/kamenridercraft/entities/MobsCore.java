@@ -377,14 +377,14 @@ public class MobsCore {
                    () -> new DeferredSpawnEggItem(POSEIDON, 0xD11B1E, 0x30BBEC, new Item.Properties()));
          
           public static final DeferredHolder<EntityType<?>, EntityType<CoreEntity>> CORE = MOBLIST.register("core",
-                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":core"));
+                  () -> EntityType.Builder.of(CoreEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).fireImmune().clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> CORE_SPAWN_EGG = ITEMS.register("core_spawn_egg",
                    () -> new DeferredSpawnEggItem(CORE, 0x312511, 0xF97012, new Item.Properties()));
          
           
           public static final DeferredHolder<EntityType<?>, EntityType<PoweredUpCoreEntity>> POWERED_UP_CORE = MOBLIST.register("powered_up_core",
-                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":powered_up_core"));
+                  () -> EntityType.Builder.of(PoweredUpCoreEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":powered_up_core"));
 
           public static final DeferredItem<DeferredSpawnEggItem> POWERED_UP_CORE_SPAWN_EGG = ITEMS.register("powered_up_core_spawn_egg",
                    () -> new DeferredSpawnEggItem(POWERED_UP_CORE, 0x51115D, 0xB419D1, new Item.Properties()));
@@ -605,7 +605,7 @@ public class MobsCore {
                   () -> new DeferredSpawnEggItem(MAGIA, 0x060606, 0xa2a2a2, new Item.Properties()));
 
           public static final DeferredHolder<EntityType<?>, EntityType<GigerEntity>> GIGER = MOBLIST.register("giger",
-                  () -> EntityType.Builder.of(GigerEntity::new, MobCategory.MONSTER).sized(3F, 10.85F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giger"));
+                  () -> EntityType.Builder.of(GigerEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giger"));
  
           public static final DeferredItem<DeferredSpawnEggItem> GIGER_SPAWN_EGG = ITEMS.register("giger_spawn_egg",
                   () -> new DeferredSpawnEggItem(GIGER, 0x9c00b2, 0x1f1f1f, new Item.Properties()));
