@@ -3,6 +3,12 @@
 	"pools": [
 	  {
 		"rolls": 1,
+		  "conditions": [
+			  {
+				  "condition": "minecraft:random_chance",
+				  "chance": 0.33
+			  }
+		  ],
 		"entries": [
 		  {
 			"type": "minecraft:item",
@@ -12,13 +18,8 @@
 			"type": "minecraft:item",
 			"name": "kamenridercraft:ketaros_zecter"
 		  }
-		],
-		"conditions": [
-		  {
-			"condition": "minecraft:random_chance",
-			"chance": 0.33
-		  }
 		]
+
 	  },
 	  {
 		"rolls": 1,
