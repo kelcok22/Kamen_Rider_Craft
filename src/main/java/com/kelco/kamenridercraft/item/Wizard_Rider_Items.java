@@ -538,9 +538,7 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
-   /*
-   connect_ring
-   */
+
 
 	public static final DeferredItem<Item> UNKNOWN_AMBER_RING = ITEMS.register("unknown_amber_ring",
 			() -> new UnknownWizardRingItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
