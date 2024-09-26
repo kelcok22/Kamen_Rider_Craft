@@ -23,16 +23,9 @@ public class SummonedEntityRenderer  extends  HumanoidMobRenderer<BaseSummonEnti
 
 	
 	public SummonedEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
-		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1);
+		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1,1,1,1);
 		this.addLayer(new HumanoidArmorLayer<>(this, new HumanoidModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
 	}
-
-
-	   protected void scale(BaseSummonEntity p_114775_, PoseStack p_114776_, float p_114777_) {
-		   
-		   float size = p_114775_.getScale();
-		      p_114776_.scale(size,size,size);
-		   }
 
 	@Override
 	public ResourceLocation getTextureLocation(BaseSummonEntity p_114482_) {

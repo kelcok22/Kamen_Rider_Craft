@@ -24,17 +24,10 @@ public class BasicEntityRenderer  extends  HumanoidMobRenderer<BaseHenchmenEntit
 
 	
 	public BasicEntityRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
-		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1);
+		super(ctx, new BasicMobModel<>(ctx.bakeLayer(ModelLayer)),1,1,1,1);
 		this.addLayer(new HumanoidArmorLayer<>(this, new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new FootSoldierModel<>(ctx.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), ctx.getModelManager()));
 
 	}
-
-
-	   protected void scale(BaseHenchmenEntity p_114775_, PoseStack p_114776_, float p_114777_) {
-		   
-		   float size = p_114775_.getScale();
-		      p_114776_.scale(size,size,size);
-		   }
 
 	@Override
 	public ResourceLocation getTextureLocation(BaseHenchmenEntity p_114482_) {

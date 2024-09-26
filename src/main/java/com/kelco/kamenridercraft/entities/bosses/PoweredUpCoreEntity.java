@@ -63,7 +63,6 @@ public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOO_Rider_Items.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.POWERED_UP_CORE_DRIVER.get()));
-   Scale= 2;
     }
 
 	protected void customServerAiStep() {
@@ -132,7 +131,8 @@ public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 15.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 300.0D);
+        		.add(Attributes.MAX_HEALTH, 300.0D)
+                .add(Attributes.SCALE, 4.0D);
        
      }
     

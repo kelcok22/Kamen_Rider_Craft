@@ -28,11 +28,6 @@ public class AllyEntityRenderer  extends  HumanoidMobRenderer<BaseAllyEntity, Ba
 	}
 
 
-	   protected void scale(BaseAllyEntity p_114775_, PoseStack p_114776_, float p_114777_) {
-		   
-		   float size = p_114775_.getScale();
-		      p_114776_.scale(size,size,size);
-		   }
 
 	@Override
 	public ResourceLocation getTextureLocation(BaseAllyEntity p_114482_) {

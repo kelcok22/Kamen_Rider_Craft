@@ -62,7 +62,7 @@ public class CoreEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOO_Rider_Items.OOOLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOO_Rider_Items.CORE_DRIVER.get()));
 
-        Scale= 2;
+
     }
 
 
@@ -133,7 +133,8 @@ public class CoreEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 9.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 180.0D);
+        		.add(Attributes.MAX_HEALTH, 180.0D)
+                .add(Attributes.SCALE, 4.0D);
        
      }
     
