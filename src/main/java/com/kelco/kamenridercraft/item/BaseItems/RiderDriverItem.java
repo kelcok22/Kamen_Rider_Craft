@@ -64,6 +64,12 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
+    public boolean isTransformed(LivingEntity player) {
+        return HEAD.asItem()==player.getItemBySlot(EquipmentSlot.HEAD).getItem()
+        &&TORSO.asItem()==player.getItemBySlot(EquipmentSlot.CHEST).getItem()
+        &&LEGS.asItem()==player.getItemBySlot(EquipmentSlot.LEGS).getItem();
+    }
+
 @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 
@@ -74,19 +80,13 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
             }
 
-            if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS) {
-                if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO) {
-                    if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD) {
-                        if (player.getItemBySlot(EquipmentSlot.FEET) == stack) {
-                            for (int n = 0; n < Num_Base_Form_Item; n++) {
-                                List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
-                                for (int i = 0; i < potionEffectList.size(); i++) {
-                                    player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(), potionEffectList.get(i).getDuration(), potionEffectList.get(i).getAmplifier(), true, false));
-                                }
-                            }
-                        }
+            if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+                for (int n = 0; n < Num_Base_Form_Item; n++) {
+                    List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
+                    for (int i = 0; i < potionEffectList.size(); i++) {
+                        player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(), potionEffectList.get(i).getDuration(), potionEffectList.get(i).getAmplifier(), true, false));
                     }
-               }
+                }
             }
         }
     }
@@ -209,25 +209,19 @@ public class RiderDriverItem extends RiderArmorItem {
         if (currentSlot== EquipmentSlot.FEET) {
             return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
         }
-        if (livingEntity.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-            if (livingEntity.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-                if (livingEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-                    switch (currentSlot) {
-                        case HEAD ->{
-                            return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                        }
-                        case CHEST -> {
-                            return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                        }
-                        case LEGS -> {
-                            return get_Form_Item(itemstack, 1).get_Is_Glowing();
-                        }
-                        default -> {}
-                    }
-                    return false;
+        if (isTransformed(livingEntity)){
+            switch (currentSlot) {
+                case HEAD ->{
+                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
+                }
+                case CHEST -> {
+                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
+                }
+                case LEGS -> {
+                    return get_Form_Item(itemstack, 1).get_Is_Glowing();
                 }
             }
-
+            return false;
         }
         return false;
     }
@@ -248,7 +242,6 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (part =="rightLeg") return true;
                 if (part =="leftLeg") return true;
             }
-            default -> {}
         }
         return false;
     }

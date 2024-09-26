@@ -49,8 +49,6 @@ public class RaiderEntity extends BaseHenchmenEntity {
 				NAME="raider_jackal";
 				this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.RAIDRISER_JACKAL.get()));
 				break;
-			default:
-				break;
 		  }
     }
     

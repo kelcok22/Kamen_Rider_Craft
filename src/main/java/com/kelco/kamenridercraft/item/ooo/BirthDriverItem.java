@@ -53,15 +53,7 @@ public class BirthDriverItem extends RiderDriverItem {
 		if (currentSlot== EquipmentSlot.FEET) {
 			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
 		}
-		if (livingEntity.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-			if (livingEntity.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-				if (livingEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-					if (currentSlot==EquipmentSlot.HEAD)return get_Form_Item(itemstack, 1).get_Is_Glowing();
-					return false;
-				}
-			}
-
-		}
+		if (isTransformed(livingEntity) && currentSlot==EquipmentSlot.HEAD) return get_Form_Item(itemstack, 1).get_Is_Glowing();
 		return false;
 	}
 

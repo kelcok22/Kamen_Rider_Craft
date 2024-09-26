@@ -34,10 +34,7 @@ public class ThousandriverItem extends RiderDriverItem {
 		super.inventoryTick(stack, level, entity,slotId, isSelected);
 
 		if (entity instanceof Player player && !level.isClientSide) {
-			if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS
-			&& player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO
-			&& player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD
-			&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == this
+			if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET).getItem() == this
 			&& player.hasEffect(Effect_core.BUGSTER)
         	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())!=0
         	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())!=0) {

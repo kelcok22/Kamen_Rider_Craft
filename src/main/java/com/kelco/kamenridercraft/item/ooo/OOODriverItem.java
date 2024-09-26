@@ -60,25 +60,19 @@ public class OOODriverItem extends RiderDriverItem {
 		if (currentSlot== EquipmentSlot.FEET) {
 			return get_Form_Item(itemstack, 1).get_Is_Belt_Glowing();
 		}
-		if (livingEntity.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS){
-			if (livingEntity.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO){
-				if (livingEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD){
-					switch (currentSlot) {
-					case HEAD ->{ 
-						return false;
-					}
-					case CHEST -> {
-						return get_Form_Item(itemstack, 2).get_Is_Glowing();
-					}
-					case LEGS -> {
-						return false;
-					}
-					default -> {}
-					}
+		if (isTransformed(livingEntity)){
+			switch (currentSlot) {
+				case HEAD ->{ 
+					return false;
+				}
+				case CHEST -> {
+					return get_Form_Item(itemstack, 2).get_Is_Glowing();
+				}
+				case LEGS -> {
 					return false;
 				}
 			}
-
+			return false;
 		}
 		return false;
 	}

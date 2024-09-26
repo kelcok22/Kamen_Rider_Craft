@@ -22,16 +22,8 @@ public class ModClientEvents {
         public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-
-                if (event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == belt.HEAD) {
-                    if (event.getEntity().getItemBySlot(EquipmentSlot.CHEST).getItem() == belt.TORSO) {
-                        if (event.getEntity().getItemBySlot(EquipmentSlot.LEGS).getItem() == belt.LEGS) {
-                            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
-                                event.getEntity().setInvisible(true);
-                        }
-                    }
-                }
+                if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
+                    event.getEntity().setInvisible(belt.isTransformed(event.getEntity()));
             }
 
             float size = 1;

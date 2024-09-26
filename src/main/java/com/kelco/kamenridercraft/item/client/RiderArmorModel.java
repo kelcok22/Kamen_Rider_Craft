@@ -41,24 +41,13 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(RiderArmorItem animatable) {
-
-
-        String FORM="blank";
         ItemStack BELT = RIDER.getItemBySlot(EquipmentSlot.FEET);
-        if (BELT.getItem() instanceof RiderDriverItem) {
-            FORM=((RiderDriverItem) BELT.getItem()).GET_TEXT(BELT,slot,RIDER,((RiderDriverItem) BELT.getItem()).Rider );
-            if (slot == EquipmentSlot.FEET) {
-
-                FORM=((RiderDriverItem) BELT.getItem()).GET_TEXT(BELT,slot ,RIDER,((RiderDriverItem) BELT.getItem()).Rider);
-            }else if ( ((RiderDriverItem) BELT.getItem()).HEAD.asItem()!=RIDER.getItemBySlot(EquipmentSlot.HEAD).getItem()||
-                    ((RiderDriverItem) BELT.getItem()).TORSO.asItem()!=RIDER.getItemBySlot(EquipmentSlot.CHEST).getItem()||
-                    ((RiderDriverItem) BELT.getItem()).LEGS.asItem()!=RIDER.getItemBySlot(EquipmentSlot.LEGS).getItem()) {
-                FORM="blank";
+        if (BELT.getItem() instanceof RiderDriverItem DRIVER) {
+            if (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER)) {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+DRIVER.GET_TEXT(BELT,slot,RIDER,DRIVER.Rider)+".png");
             }
-
-
         }
-        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+FORM+".png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
     }
 
 

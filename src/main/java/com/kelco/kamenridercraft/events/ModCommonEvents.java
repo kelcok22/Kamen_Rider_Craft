@@ -8,11 +8,15 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.monster.Monster;
@@ -31,7 +35,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
-import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
@@ -72,6 +76,14 @@ public class ModCommonEvents {
 					_player.onUpdateAbilities();
 				}
 			}
+			}
+		}
+
+		@SubscribeEvent
+		public void riderVisibility(LivingVisibilityEvent event) {
+			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
+			&& belt.isTransformed(event.getEntity()) && event.getEntity().hasEffect(MobEffects.INVISIBILITY)) {
+				event.modifyVisibility(event.getVisibilityModifier() * 0.1);
 			}
 		}
 

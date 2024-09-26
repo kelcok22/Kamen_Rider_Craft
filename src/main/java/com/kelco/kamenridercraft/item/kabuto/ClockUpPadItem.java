@@ -30,17 +30,13 @@ public class ClockUpPadItem extends BaseItem {
 
 		String[] ClockUpUsers = new String[] {"kabuto","thebee","drake","sasword","gatack","dark_kabuto","kickhopper","punchhopper","ketaros","hercus","caucasus","lady"};
 		
-		if (p_41129_.getItemBySlot(EquipmentSlot.LEGS).getItem() == Kabuto_Rider_Items.KABUTOLEGGINGS.get()){
-			if (p_41129_.getItemBySlot(EquipmentSlot.CHEST).getItem() == Kabuto_Rider_Items.KABUTOCHESTPLATE.get()){
-				if (p_41129_.getItemBySlot(EquipmentSlot.HEAD).getItem() == Kabuto_Rider_Items.KABUTOHELMET.get()){
-					if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),1).getFormName(false)!="_masked"){
-                        if (ArrayUtils.contains(ClockUpUsers, ((RiderDriverItem)p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem()).Rider) && !p_41128_.isClientSide()) {
-                        	p_41129_.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
-                        	p_41129_.getCooldowns().addCooldown(this, 500);
-							p_41129_.awardStat(Stats.ITEM_USED.get(this));
-                        }
-					}
-				}
+		if (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
+			if (RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),1).getFormName(false)!="_masked"){
+                if (ArrayUtils.contains(ClockUpUsers, belt.Rider) && !p_41128_.isClientSide()) {
+                	p_41129_.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20,true,false));
+                	p_41129_.getCooldowns().addCooldown(this, 500);
+					p_41129_.awardStat(Stats.ITEM_USED.get(this));
+                }
 			}
 		}
 		

@@ -9,10 +9,12 @@ import com.google.common.collect.Multimap;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.util.Unit;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -62,56 +64,61 @@ public class BaseBlasterItem extends BowItem {
 
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
 		if (entityLiving instanceof Player player) {
-			ItemStack itemstack = player.getProjectile(stack);
-			if (!itemstack.isEmpty()) {
+			ItemStack itemstack = new ItemStack(Items.ARROW, 1);
+			itemstack.set(DataComponents.INTANGIBLE_PROJECTILE, Unit.INSTANCE);
 
-					List<ItemStack> list = draw(stack, itemstack, player);
-					if (level instanceof ServerLevel) {
-						if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
-							player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
-							if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem) player.getItemBySlot(EquipmentSlot.OFFHAND).getItem().use(level, player, InteractionHand.OFF_HAND);
-						}
-						if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
-							FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
-						}	
-						ServerLevel serverlevel = (ServerLevel)level;
-						if (!list.isEmpty()) {
-
-							Vec3 vec3 = player.getLookAngle();
-							if (this.SFB){
-								SmallFireball smallfireball = new SmallFireball(player.level(), player, vec3.normalize());
-								smallfireball.setPos(smallfireball.getX(), player.getY(0.5) + 0.5, smallfireball.getZ());
-								player.level().addFreshEntity(smallfireball);
-							}else if (this.LFB){
-								LargeFireball largefireball = new LargeFireball(player.level(), player, vec3.normalize(),LFBB);
-								largefireball.setPos(largefireball.getX(), player.getY(0.5) + 0.5, largefireball.getZ());
-								player.level().addFreshEntity(largefireball);
-							}else if (DFB) {
-								DragonFireball dragonfireball = new DragonFireball(player.level(), player, vec3.normalize());
-								dragonfireball.setPos(dragonfireball.getX(), player.getY(0.5D) + 0.5D, dragonfireball.getZ());
-								player.level().addFreshEntity(dragonfireball);
-							}else if (CK) {
-								ThrownEgg fireball = new ThrownEgg(player.level(),player);
-								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-								fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
-								player.level().addFreshEntity(fireball);
-							}else if (WS) {
-								WitherSkull fireball = new WitherSkull(player.level(), player,vec3.normalize());
-								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-								player.level().addFreshEntity(fireball);
-							}
-							else if (EP) {
-								ThrownEnderpearl fireball = new ThrownEnderpearl(player.level(),player);
-								fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-								fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
-								player.level().addFreshEntity(fireball);
-							}
-
-							else this.shoot(serverlevel, player, player.getUsedItemHand(), stack, list, 3, 1.0F, true, (LivingEntity)null);
-						}
-					level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
-					player.awardStat(Stats.ITEM_USED.get(this));
+			List<ItemStack> list = draw(stack, itemstack, player);
+			if (level instanceof ServerLevel) {
+				if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
+					player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
+					if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem) player.getItemBySlot(EquipmentSlot.OFFHAND).getItem().use(level, player, InteractionHand.OFF_HAND);
 				}
+				if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+					FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
+				}	
+				ServerLevel serverlevel = (ServerLevel)level;
+				if (!list.isEmpty()) {
+
+					Vec3 vec3 = player.getLookAngle();
+					if (SFB){
+						SmallFireball smallfireball = new SmallFireball(player.level(), player, vec3.normalize());
+						smallfireball.setPos(smallfireball.getX(), player.getY(0.5) + 0.5, smallfireball.getZ());
+						player.level().addFreshEntity(smallfireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}else if (LFB){
+						LargeFireball largefireball = new LargeFireball(player.level(), player, vec3.normalize(),LFBB);
+						largefireball.setPos(largefireball.getX(), player.getY(0.5) + 0.5, largefireball.getZ());
+						player.level().addFreshEntity(largefireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}else if (DFB) {
+						DragonFireball dragonfireball = new DragonFireball(player.level(), player, vec3.normalize());
+						dragonfireball.setPos(dragonfireball.getX(), player.getY(0.5D) + 0.5D, dragonfireball.getZ());
+						player.level().addFreshEntity(dragonfireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}else if (CK) {
+						ThrownEgg fireball = new ThrownEgg(player.level(),player);
+						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						player.level().addFreshEntity(fireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}else if (WS) {
+						WitherSkull fireball = new WitherSkull(player.level(), player,vec3.normalize());
+						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+						player.level().addFreshEntity(fireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}
+					else if (EP) {
+						ThrownEnderpearl fireball = new ThrownEnderpearl(player.level(),player);
+						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
+						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						player.level().addFreshEntity(fireball);
+						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
+					}
+
+					else this.shoot(serverlevel, player, player.getUsedItemHand(), stack, list, 3, 1.0F, true, (LivingEntity)null);
+				}
+				level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+				player.awardStat(Stats.ITEM_USED.get(this));
 			}
 		}
 
@@ -199,9 +206,6 @@ public class BaseBlasterItem extends BowItem {
 		return true;
 	}
 
-	public void postHurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-		stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
-	}
 	public static ItemAttributeModifiers createAttributes(Tier tier, int attackDamage, float attackSpeed) {
 		return createAttributes(tier, (float)attackDamage, attackSpeed);
 	}

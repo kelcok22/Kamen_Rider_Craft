@@ -188,20 +188,14 @@ public class DesireDriverItem  extends RiderDriverItem {
 				if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
 			}
 
-			if (player.getItemBySlot(EquipmentSlot.LEGS).getItem() == LEGS) {
-				if (player.getItemBySlot(EquipmentSlot.CHEST).getItem() == TORSO) {
-					if (player.getItemBySlot(EquipmentSlot.HEAD).getItem() == HEAD) {
-						if (player.getItemBySlot(EquipmentSlot.FEET) == stack) {
-							for (int n = 0; n < Num_Base_Form_Item; n++) {
-								List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
+			if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+				for (int n = 0; n < Num_Base_Form_Item; n++) {
+					List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
 
-								for (int i = 0; i < potionEffectList.size(); i++) {
-									boolean Fever=  isFever(stack,this.Rider);
-									int Amplifier = Fever? (potionEffectList.get(i).getAmplifier()+2):(potionEffectList.get(i).getAmplifier());
-									player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(),potionEffectList.get(i).getDuration(),Amplifier,true,false));	}
-							}
-						}
-					}
+					for (int i = 0; i < potionEffectList.size(); i++) {
+						boolean Fever=  isFever(stack,this.Rider);
+						int Amplifier = Fever? (potionEffectList.get(i).getAmplifier()+2):(potionEffectList.get(i).getAmplifier());
+						player.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(),potionEffectList.get(i).getDuration(),Amplifier,true,false));	}
 				}
 			}
 		}
