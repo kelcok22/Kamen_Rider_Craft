@@ -196,10 +196,13 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
 
-        event.put(MobsCore.GHOULS.get(), BugsterVirusEntity.setAttributes().build());
-        event.put(MobsCore.MEDUSA_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
-        event.put(MobsCore.PHOENIX_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
-        event.put(MobsCore.GREMLIN_PHANTOM.get(), BugsterVirusEntity.setAttributes().build());
+        event.put(MobsCore.GHOULS.get(), GhoulsEntity.setAttributes().build());
+        event.put(MobsCore.MEDUSA_PHANTOM.get(), MedusaPhantomEntity.setAttributes().build());
+        event.put(MobsCore.PHOENIX_PHANTOM.get(), PhoenixPhantomEntity.setAttributes().build());
+        event.put(MobsCore.GREMLIN_PHANTOM.get(), GremlinPhantomEntity.setAttributes().build());
+        event.put(MobsCore.MAGE_FOOTSOLDIER.get(), MageFootsoldierEntity.setAttributes().build());
+        event.put(MobsCore.MAGE_CAPTAIN.get(), MageCaptainEntity.setAttributes().build());
+        event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -448,6 +451,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.MEDUSA_PHANTOM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PHOENIX_PHANTOM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GREMLIN_PHANTOM.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MAGE_FOOTSOLDIER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MAGE_CAPTAIN .get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);

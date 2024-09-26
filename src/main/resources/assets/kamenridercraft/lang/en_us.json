@@ -2383,6 +2383,14 @@
 "entity.kamenridercraft.ancient_ooo": "Ancient OOO",
 "entity.kamenridercraft.goda": "Kamen Rider Goda",
 "entity.kamenridercraft.ghouls": "Ghoul",
+  "entity.kamenridercraft.phoenix_phantom": "Phoenix",
+  "entity.kamenridercraft.medusa_phantom": "Medusa",
+  "entity.kamenridercraft.gremlin_phantom": "Gremlin",
+  "entity.kamenridercraft.mage_footsoldier": "Imperial Guard",
+  "entity.kamenridercraft.mage_captain": "Imperial Captain",
+  "entity.kamenridercraft.sorcerer": "Kamen Rider Sorcerer",
+
+
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
 "entity.kamenridercraft.taddle_bugster_mob": "Taddle Bugster",
@@ -2495,6 +2503,9 @@
 "item.kamenridercraft.medusa_phantom_spawn_egg": "Medusa Phantom Spawn Egg",
 "item.kamenridercraft.phoenix_phantom_spawn_egg": "Phoenix Phantom Spawn Egg",
 "item.kamenridercraft.gremlin_phantom_spawn_egg": "Gremlin Phantom Spawn Egg",
+"item.kamenridercraft.mage_captain_spawn_egg": "Imperial Captain Spawn Egg",
+  "item.kamenridercraft.mage_footsoldier_spawn_egg:": "Imperial Guard Spawn Egg",
+  "item.kamenridercraft.sorcerer_spawn_egg": "Sorcerer Spawn Egg",
 
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
