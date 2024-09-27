@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jeanne",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:cobra_vistamp"
+	},
+    {
+      "item": "kamenridercraft:turtle_vistamp"
+    },
+    {
+      "item": "kamenridercraft:kujaku_vistamp"
+    },
+    {
+      "item": "kamenridercraft:hashibiroko_vistamp"
+    },
+    {
+      "item": "kamenridercraft:tricera_vistamp"
+    },
+    {
+      "item": "kamenridercraft:queen_bee_vistamp"
+    },
+    {
+      "item": "kamenridercraft:buffalo_vistamp"
+    },
+    {
+      "item": "kamenridercraft:giff_stamp"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:king_cobra_vistamp"
+  }
+}

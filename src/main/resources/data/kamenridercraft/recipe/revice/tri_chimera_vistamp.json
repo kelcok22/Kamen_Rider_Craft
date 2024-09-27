@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chimera",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:kurosai_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:octopus_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:oomukade_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:giff_eye"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:tri_chimera_vistamp"
+  }
+}

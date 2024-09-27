@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vice_barid_rex",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:proto_vistamp"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    },
+    "M": {
+      "item": "kamenridercraft:barid_rex_vistamp_closed"
+    }
+  },
+  "result": {
+    "item": "kamenridercraft:egg_shield"
+  }    
+}
+

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "livevil",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:bat_vistamp"
+	},
+    {
+      "item": "kamenridercraft:jackal_vistamp"
+    },
+    {
+      "item": "kamenridercraft:holy_wing_vistamp"
+    },
+    {
+      "item": "kamenridercraft:giff_stamp"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:perfect_wing_vistamp"
+  }
+}
