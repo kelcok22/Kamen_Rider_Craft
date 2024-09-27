@@ -619,20 +619,16 @@ public class Geats_Rider_Items {
 			.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_RAISE_BUCKLE_VICE = ITEMS.register("revice_driver_raise_buckle_vice",
-			//() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_vice","desire_driver_belt_geats",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revice","geats_vice","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_vice","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-			//.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_GEATS.get()).ChangeSlot(2).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()));
-			.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_GEATS.get()).ChangeSlot(2).SetOffhandSlot(3));
+			.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_GEATS.get()).ChangeSlot(2).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_RAISE_BUCKLE = ITEMS.register("revice_driver_raise_buckle",
-			//() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_revi","desire_driver_belt_geats",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revice","geats_revi","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geats_revi","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-			//.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_VICE.get()).ChangeSlot(2).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
-			.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_VICE.get()).ChangeSlot(2).SetOffhandSlot(3).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_VICE.get()).ChangeSlot(2).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TWO_SI_DRIVER_RAISE_BUCKLE = ITEMS.register("two_si_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_live","geats","desire_driver_belt_geats",
