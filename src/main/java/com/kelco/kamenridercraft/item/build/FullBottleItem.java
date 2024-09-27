@@ -62,4 +62,22 @@ public class FullBottleItem extends RiderFormChangeItem {
         return this;
     }
 
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+
+        ItemStack itemstack = player.getItemInHand(usedHand);
+
+        ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
+
+        if(!player.hasEffect(Effect_core.FORM_LOCK)) {
+            if (BELT.getItem() instanceof RiderDriverItem belt) {
+              if (CanChange(player,belt,BELT)) {
+                 RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),Build_Rider_Items.FULL_BOTTLE.get(), 3);
+                 super.use(level, player, usedHand);
+                }
+            }
+        }
+        return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+
+    }
 }

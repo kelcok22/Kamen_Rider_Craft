@@ -42,8 +42,8 @@ public class BuildDriverItem extends RiderDriverItem {
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
 		}
 		else if (isBestMatch(itemstack)&isLegend(itemstack)) return riderName+"_"+((FullBottleItem)get_Form_Item(itemstack,Legend_Slot(itemstack))).get_Is_Legend_Name();
-		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+get_Form_Item(itemstack,1).getFormName(fly);
-		else { return riderName+get_Form_Item(itemstack,2).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+get_Form_Item(itemstack,1).getFormName(fly)+get_Form_Item(itemstack,3).getFormName(fly);
+		else { return riderName+get_Form_Item(itemstack,2).getFormName(fly)+get_Form_Item(itemstack,3).getFormName(fly);
 		}
 	}
 

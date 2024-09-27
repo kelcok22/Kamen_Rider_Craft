@@ -80,6 +80,12 @@ public class Build_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
 					.IsLegend("wizard").BestMatch(DIAMOND_FULL_BOTTLE.get()).ChangeSlot(1).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> RABBIT_TANK_SPARKLING = ITEMS.register("rabbittank_sparkling_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_sparkling","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
+					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_CHESTPLATE = ITEMS.register("buildtroso",
@@ -90,7 +96,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> BUILD_DRIVER = ITEMS.register("build_driver",
 			() -> new BuildDriverItem(ArmorMaterials.DIAMOND,"build",RABBIT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties())
-			.Add_Extra_Base_Form_Items(TANK_FULL_BOTTLE).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+			.Add_Extra_Base_Form_Items(TANK_FULL_BOTTLE,FULL_BOTTLE).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 
 	public static void register(IEventBus eventBus) {
