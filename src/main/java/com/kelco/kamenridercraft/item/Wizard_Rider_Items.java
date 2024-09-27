@@ -123,7 +123,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
@@ -185,7 +185,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
@@ -197,7 +197,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
@@ -326,7 +326,7 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
 					.AddToList(UnknownWizardRingItem.black_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARD_RING = ITEMS.register("black_ring",
