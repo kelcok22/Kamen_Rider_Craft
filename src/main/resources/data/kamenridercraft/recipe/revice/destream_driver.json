@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "destream",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:proto_vistamp"
+	}, "C": {
+	  "item": "kamenridercraft:hercules_vistamp"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:destream_driver"
+  }
+}

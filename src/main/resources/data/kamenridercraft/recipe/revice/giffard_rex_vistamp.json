@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "revice",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:rex_vistamp"
+	}, 
+	{
+	  "item": "kamenridercraft:barid_rex_vistamp"
+	},
+    {
+      "item": "kamenridercraft:volcano_vistamp"
+    },
+    {
+      "item": "kamenridercraft:rolling_vistamp"
+    },
+    {
+      "item": "kamenridercraft:thunder_gale_vistamp"
+    },
+    {
+      "item": "kamenridercraft:giff_stamp"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:giffard_rex_vistamp"
+  }
+}

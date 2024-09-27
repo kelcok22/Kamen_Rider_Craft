@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "aguilera",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:proto_vistamp"
+	}, "C": {
+	  "item": "kamenridercraft:queen_bee_vistamp"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:week_endriver"
+  }
+}

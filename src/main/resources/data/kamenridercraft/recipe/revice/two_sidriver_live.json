@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "livevil",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:proto_vistamp"
+	}, "C": {
+	  "item": "kamenridercraft:bat_vistamp"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:two_sidriver_live"
+  }
+}
