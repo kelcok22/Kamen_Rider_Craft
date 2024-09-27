@@ -2,20 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "group": "vail",
   "pattern": [
-    "XvX",
+    "XXX",
     "XCX",
     "XXX"
   ],
   "key": {
     "X": {
       "item": "kamenridercraft:proto_vistamp"
-    }, "v": {
-      "item": "kamenridercraft:hercules_vistamp"
     }, "C": {
-      "item": "kamenridercraft:vail_driver"
+      "item": "kamenridercraft:crimson_vail_vistamp"
     }
   },
   "result": {
-    "id": "kamenridercraft:destream_driver"
+    "id": "kamenridercraft:vail_belt"
   }
 }

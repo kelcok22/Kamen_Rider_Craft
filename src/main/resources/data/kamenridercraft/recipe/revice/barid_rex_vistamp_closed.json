@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "revice_barid_rex",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:eagle_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:mammoth_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:megalodon_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:ptera_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:lion_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:jackal_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:kong_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:kamakiri_vistamp"
+    } , 
+    {
+      "item": "kamenridercraft:brachio_vistamp"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:barid_rex_vistamp_closed"
+  }
+}
