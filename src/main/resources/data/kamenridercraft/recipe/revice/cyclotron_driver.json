@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "century",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:cyclotron_driver_break"
+	}, 
+	{
+	  "item": "kamenridercraft:cyclotron_driver_core"
+	} 
+	],
+  "result": {
+	"id": "kamenridercraft:cyclotron_driver"
+  }
+}
