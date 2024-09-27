@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "juuga",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:twin_chimera_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:tri_chimera_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:barid_rex_vistamp"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:juuga_vistamp"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chimera",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:king_crab_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:crocodile_vistamp"
+    }, 
+    {
+      "item": "kamenridercraft:giff_eye"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:twin_chimera_vistamp"
+  }
+}

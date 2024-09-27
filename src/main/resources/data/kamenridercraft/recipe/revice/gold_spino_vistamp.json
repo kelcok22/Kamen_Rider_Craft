@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "revice",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:barid_rex_vistamp"
+	},
+    {
+      "item": "kamenridercraft:typhoon_core_nigo"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:gold_spino_vistamp"
+  }
+}

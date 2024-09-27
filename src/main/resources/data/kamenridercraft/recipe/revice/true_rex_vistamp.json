@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "revice",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:rex_vistamp"
+	},
+    {
+      "item": "kamenridercraft:rex_vistamp_theme"
+    },
+    {
+      "item": "kamenridercraft:thunder_gale_vistamp"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:true_rex_vistamp"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "demons",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:spider_vistamp"
+	},
+    {
+      "item": "kamenridercraft:komura_vistamp"
+    },
+    {
+      "item": "kamenridercraft:anomarocaris_vistamp"
+    },
+    {
+      "item": "kamenridercraft:batta_vistamp"
+    },
+    {
+      "item": "kamenridercraft:scorpion_vistamp"
+    },
+    {
+      "item": "kamenridercraft:condor_vistamp"
+    },
+    {
+      "item": "kamenridercraft:giff_stamp"
+    }
+	],
+  "result": {
+	"id": "kamenridercraft:giant_spider_vistamp"
+  }
+}

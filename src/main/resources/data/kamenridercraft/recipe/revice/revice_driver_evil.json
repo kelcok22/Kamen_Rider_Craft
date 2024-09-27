@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "century",
+  "group": "demons",
   "pattern": [
 	"XXX",
-	"XCX",
-	"XXX"
+	"XXX",
+	"XCX"
   ],
   "key": {
 	"X": {
 	  "item": "kamenridercraft:proto_vistamp"
-	}, 
-	"C": {
-	  "item": "kamenridercraft:cyclotron_driver_core"
+	}, "C": {
+	  "item": "kamenridercraft:mega_bat_vistamp"
 	}
   },
   "result": {
-	"id": "kamenridercraft:cyclotron_driver"
+	"id": "kamenridercraft:revice_driver_evil"
   }
 }
