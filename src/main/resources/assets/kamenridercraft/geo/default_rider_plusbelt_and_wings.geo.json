@@ -48,7 +48,7 @@
 								"down": {"uv": [64, 127], "uv_size": [64, 0], "uv_rotation": 180}
 							}
 						},
-						{"origin": [-8, 5.5, -5.102], "size": [16, 16, 7], "inflate": -5, "pivot": [0, 13.5, -1.601], "rotation": [0, 0, 20], "uv": [82, 0], "mirror": true}
+						{"origin": [-8, 5.5, -5.102], "size": [16, 16, 7], "inflate": -5, "pivot": [0, 13.5, -1.601], "rotation": [0, 0, 0], "uv": [82, 0], "mirror": true}
 					]
 				},
 				{
