@@ -39,7 +39,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			
-			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
+			return "belts/"+get_Form_Item(itemstack,3).getBeltTex();
 		}
 		else if (isBestMatch(itemstack)&isLegend(itemstack)) return riderName+"_"+((FullBottleItem)get_Form_Item(itemstack,Legend_Slot(itemstack))).get_Is_Legend_Name();
 		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+get_Form_Item(itemstack,1).getFormName(fly)+get_Form_Item(itemstack,3).getFormName(fly);
@@ -64,7 +64,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		}
 		return false;
 	}
-	public boolean isBestMatch(ItemStack itemstack) {
+	public static boolean isBestMatch(ItemStack itemstack) {
 
 		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form){
 			if (form.get_Is_Legend()){
@@ -77,6 +77,17 @@ public class BuildDriverItem extends RiderDriverItem {
 		return false;
 	}
 
+	public static boolean CanHazard(ItemStack itemstack) {
+
+		if (isBestMatch(itemstack)){
+			if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
+				if (form.get_Is_Legend()){
+					return form.Get_Can_Hazard();
+				}
+			}
+		}
+		return false;
+	}
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		int num = 1;
