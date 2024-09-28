@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Random;
 
 
-import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 
 import net.minecraft.world.ItemInteractionResult;
@@ -15,7 +14,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -80,7 +78,14 @@ public class VistampBar extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_VISTAMP.get()){
+                if (player.getInventory().countItem(Revice_Rider_Items.BARID_REX_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++) PROTO_VISTAMP.add(Revice_Rider_Items.VOLCANO_VISTAMP.get());
+                }
+                if (player.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
+                }
                 process(player, level, pos, hand, getVistampDrop(0));
+                PROTO_VISTAMP.removeIf(item -> item == Revice_Rider_Items.VOLCANO_VISTAMP.get() || item == Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }

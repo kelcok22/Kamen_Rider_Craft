@@ -507,7 +507,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> KRAKEN_VISTAMP = ITEMS.register("kraken_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","orteca","demons_driver_belt",
-					new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));

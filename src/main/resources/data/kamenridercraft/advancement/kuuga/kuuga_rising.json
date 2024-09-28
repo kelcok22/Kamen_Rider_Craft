@@ -4,7 +4,7 @@
 	  "id": "kamenridercraft:kuuga_rising_mighty"
 	},
 	"title": "Rising your power to Gold",
-	"description": "Access all of Kuuga's Rising forms",
+	"description": "Transform into all of Kuuga's Rising forms",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,

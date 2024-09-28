@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:demons_driver_orteca"
+      },
+      "title": "Itoshi no Frenemy",
+      "description": "Transform into Kamen Rider Orteca",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/juuga",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:demons_driver_orteca"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
