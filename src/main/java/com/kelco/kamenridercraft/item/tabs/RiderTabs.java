@@ -554,6 +554,7 @@ public class RiderTabs {
             event.accept(MobsCore.MAGE_FOOTSOLDIER_SPAWN_EGG);
             event.accept(MobsCore.MAGE_CAPTAIN_SPAWN_EGG);
             event.accept(MobsCore.SORCERER_SPAWN_EGG);
+            event.accept(MobsCore.WISEMAN_SPAWN_EGG);
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
