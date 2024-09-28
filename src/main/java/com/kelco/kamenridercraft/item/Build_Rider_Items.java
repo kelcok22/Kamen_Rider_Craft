@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.BuildDriverItem;
 import com.kelco.kamenridercraft.item.build.FullBottleItem;
+import com.kelco.kamenridercraft.item.build.HazardTriggerItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.w.WDriverItem;
@@ -87,7 +88,7 @@ public class Build_Rider_Items {
 					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAZARD_TRIGGER = ITEMS.register("hazard_trigger",
-			() -> new FullBottleItem(new Item.Properties(),0,"_hazard","build","build_driver_belt_hazard",
+			() -> new HazardTriggerItem(new Item.Properties(),0,"_hazard","build","build_driver_belt_hazard",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
 					.ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
