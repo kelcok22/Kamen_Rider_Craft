@@ -137,6 +137,7 @@ public class GamerDriverItem extends RiderDriverItem {
 				case LEGS -> {
 					return get_Form_Item(itemstack, 1).get_Is_Glowing();
 				}
+				default -> {}
 			}
 			return false;
 		}
@@ -181,6 +182,7 @@ public class GamerDriverItem extends RiderDriverItem {
 			}
 		}
 		case LEGS -> {}
+		default -> {}
 		}
 		return false;
 	}

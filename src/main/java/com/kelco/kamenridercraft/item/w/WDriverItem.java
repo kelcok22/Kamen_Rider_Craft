@@ -81,11 +81,11 @@ public class WDriverItem extends RiderDriverItem {
 			
 		}
 		case CHEST -> {
+			if (part =="body") return true;
 
 		}
 		case LEGS -> {
 			if (part =="head") return true;
-			if (part =="body") return true;
 			if (part =="leftLeg") return true;
 			if (part =="leftArm") return true;
 		

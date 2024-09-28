@@ -25,27 +25,19 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     @Override
     public ResourceLocation getModelResource(RiderArmorItem animatable) {
         if (slot== EquipmentSlot.FEET) {
-
-            RiderDriverItem BELT = ((RiderDriverItem)RIDER.getItemBySlot(EquipmentSlot.FEET).getItem());
-
+            RiderDriverItem BELT = (RiderDriverItem)RIDER.getItemBySlot(EquipmentSlot.FEET).getItem();
             return BELT.getBeltModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
-        }else {
-
-            if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
-
-                return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
-
-            }else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
+        } else if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
+            return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
         }
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(RiderArmorItem animatable) {
         ItemStack BELT = RIDER.getItemBySlot(EquipmentSlot.FEET);
-        if (BELT.getItem() instanceof RiderDriverItem DRIVER) {
-            if (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER)) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+DRIVER.GET_TEXT(BELT,slot,RIDER,DRIVER.Rider)+".png");
-            }
+        if (BELT.getItem() instanceof RiderDriverItem DRIVER && (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER))) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+DRIVER.GET_TEXT(BELT,slot,RIDER,DRIVER.Rider)+".png");
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
     }

@@ -91,13 +91,11 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String getFormName(Boolean isFlaying) {
-        if (isFlaying&FLYING_TEXT) return FORM_NAME+"_wing";
-        else return FORM_NAME;
+        return (isFlaying&FLYING_TEXT ? FORM_NAME+"_wing" : FORM_NAME);
     }
 
     public String getRiderName(String name) {
-        if (OVERRIDE_RIDER_NAME!=null) return OVERRIDE_RIDER_NAME;
-        else return name;
+        return (OVERRIDE_RIDER_NAME!=null ? OVERRIDE_RIDER_NAME : name);
     }
 
 
@@ -106,8 +104,7 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String get_Belt_Model() {
-        if (UPDATED_BELT_MODEL!=null) return UPDATED_BELT_MODEL;
-        return "geo/riderbelt.geo.json";
+        return (UPDATED_BELT_MODEL!=null ? UPDATED_BELT_MODEL : "geo/riderbelt.geo.json");
     }
 
     public String get_Model() {
@@ -117,8 +114,7 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String get_Animation() {
-        if (UPDATED_MODEL_ANIMATION!=null) return "animations/"+UPDATED_MODEL_ANIMATION;
-        return "animations/ichigo.animation.json";
+        return (UPDATED_MODEL_ANIMATION!=null ? "animations/"+UPDATED_MODEL_ANIMATION : "animations/ichigo.animation.json");
     }
 
     public Boolean get_PalyerModelInvisible() {
