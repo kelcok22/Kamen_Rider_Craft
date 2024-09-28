@@ -177,7 +177,7 @@ public class Den_O_Rider_Items {
     public static final DeferredItem<Item> RIDER_TICKET_PUDDING = ITEMS.register("rider_ticket_pudding",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_pudding","den_o","den_o_belt_pu",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 400, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));

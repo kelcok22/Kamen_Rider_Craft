@@ -42,7 +42,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
-					new MobEffectInstance(Effect_core.FLYING, 400, 0, true, false))
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
 					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
@@ -79,7 +79,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
-					new MobEffectInstance(Effect_core.FLYING, 400, 0, true, false))
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
 					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",

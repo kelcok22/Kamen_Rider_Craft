@@ -79,7 +79,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","sasword","zect_buckle_belt",
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 2,true,false))
+                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
                 .addSwitchForm(SASWORD_ZECTER_MASK.get()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",

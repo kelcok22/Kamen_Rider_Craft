@@ -231,7 +231,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
             ).hasStaticWings());
 
 
@@ -242,7 +242,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
             ).hasStaticWings().addAlternative(JINRAI_NO_SENSHI_DARK_KABUTO.get()));
 
 
@@ -253,7 +253,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false)
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
             ).hasStaticWings().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 

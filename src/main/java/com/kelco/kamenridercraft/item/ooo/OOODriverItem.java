@@ -71,6 +71,7 @@ public class OOODriverItem extends RiderDriverItem {
 				case LEGS -> {
 					return false;
 				}
+				default -> {}
 			}
 			return false;
 		}

@@ -33,7 +33,7 @@ public class Decade_Rider_Items {
     public static final DeferredItem<Item> DECADE_CYAN_CRAD = ITEMS.register("decade_cyan_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyan","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 400, 2,true,false)));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)));
 
     public static final DeferredItem<Item> DIEND_GREEN_CRAD = ITEMS.register("diend_green_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_green","diend","diend_belt",
@@ -45,7 +45,7 @@ public class Decade_Rider_Items {
     public static final DeferredItem<Item> DECADE_CRAD = ITEMS.register("decade_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 400, 2,true,false)).addAlternative(DIEND_GREEN_CRAD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM).AddToList(BlankCardItem.RIDER_CARD, 10));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).addAlternative(DIEND_GREEN_CRAD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM).AddToList(BlankCardItem.RIDER_CARD, 10));
 
     public static final DeferredItem<Item> K_TOUCH = ITEMS.register("k_touch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_complete","decade","decadriver_belt_k_touch",
@@ -92,7 +92,7 @@ public class Decade_Rider_Items {
     public static final DeferredItem<Item> DARK_DECADE_CRAD = ITEMS.register("dark_decade_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dark_decade","dark_decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 400, 2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM).AddToList(BlankCardItem.RIDER_CARD));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM).AddToList(BlankCardItem.RIDER_CARD));
 
 	public static String[] BaseDecadeUsers = new String[] {"decade","dark_decade"};
 
@@ -249,7 +249,7 @@ public class Decade_Rider_Items {
 
     public static final DeferredItem<Item> RYUKI_BLANK_CRAD = ITEMS.register("ryuki_blank_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_blank","decade","decadriver_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 400, 0,true,false))
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
             .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
@@ -269,7 +269,7 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 400, 0,true,false))
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
             .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").hasFlyingWings( "geo/rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 

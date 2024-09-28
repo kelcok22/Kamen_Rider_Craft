@@ -220,6 +220,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 case LEGS -> {
                     return get_Form_Item(itemstack, 1).get_Is_Glowing();
                 }
+                default -> {}
             }
             return false;
         }
@@ -242,6 +243,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (part =="rightLeg") return true;
                 if (part =="leftLeg") return true;
             }
+            default -> {}
         }
         return false;
     }

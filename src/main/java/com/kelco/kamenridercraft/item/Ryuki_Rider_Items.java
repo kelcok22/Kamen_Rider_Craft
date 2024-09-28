@@ -24,7 +24,7 @@ public class Ryuki_Rider_Items {
 
 	public static final DeferredItem<Item> ADVENT_CARD = ITEMS.register("advent_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blank","ryuki","v_buckle_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 400, 0,true,false)).AddCompatibilityList(new String[] {"ouja","knight"}).AddToList(RiderTabs.RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).AddCompatibilityList(new String[] {"ouja","knight"}).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGREDER_ADVENT = ITEMS.register("dragreder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ryuki","v_buckle_belt_ryuki",
