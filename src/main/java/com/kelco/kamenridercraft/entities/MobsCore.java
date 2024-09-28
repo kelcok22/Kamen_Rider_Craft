@@ -427,24 +427,28 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(GREMLIN_PHANTOM,  0xb20834c,0x222222, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<MageFootsoldierEntity>> MAGE_FOOTSOLDIER = MOBLIST.register("mage_footsoldier",
-            () -> EntityType.Builder.of(MageFootsoldierEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gremlin_phantom"));
+            () -> EntityType.Builder.of(MageFootsoldierEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mage_footsoldier"));
 
     public static final DeferredItem<DeferredSpawnEggItem> MAGE_FOOTSOLDIER_SPAWN_EGG = ITEMS.register("mage_footsoldier_spawn_egg",
             () -> new DeferredSpawnEggItem(MAGE_FOOTSOLDIER,  0xbb9548,0x050505, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<MageCaptainEntity>> MAGE_CAPTAIN = MOBLIST.register("mage_captain",
-            () -> EntityType.Builder.of(MageCaptainEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gremlin_phantom"));
+            () -> EntityType.Builder.of(MageCaptainEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mage-captain"));
 
     public static final DeferredItem<DeferredSpawnEggItem> MAGE_CAPTAIN_SPAWN_EGG = ITEMS.register("mage_captain_spawn_egg",
             () -> new DeferredSpawnEggItem(MAGE_CAPTAIN,  0xbb9548,0x050505, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<SorcererEntity>> SORCERER = MOBLIST.register("sorcerer",
-            () -> EntityType.Builder.of(SorcererEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gremlin_phantom"));
+            () -> EntityType.Builder.of(SorcererEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":sorcerer"));
 
     public static final DeferredItem<DeferredSpawnEggItem> SORCERER_SPAWN_EGG = ITEMS.register("sorcerer_spawn_egg",
             () -> new DeferredSpawnEggItem(SORCERER,  0x050505,0xebc256, new Item.Properties()));
 
-    //wisemanMob 0xffffff,0xd79e0b
+    public static final DeferredHolder<EntityType<?>, EntityType<WisemanEntity>> WISEMAN = MOBLIST.register("wiseman",
+            () -> EntityType.Builder.of(WisemanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":wiseman"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> WISEMAN_SPAWN_EGG = ITEMS.register("wiseman_spawn_egg",
+            () -> new DeferredSpawnEggItem(WISEMAN,  0xffffff,0xd79e0b, new Item.Properties()));
 
 
 

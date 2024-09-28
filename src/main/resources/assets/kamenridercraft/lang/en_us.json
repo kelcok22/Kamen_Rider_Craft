@@ -2873,6 +2873,7 @@
 "item.kamenridercraft.mage_captain_spawn_egg": "Imperial Captain Spawn Egg",
 "item.kamenridercraft.mage_footsoldier_spawn_egg": "Imperial Guard Spawn Egg",
 "item.kamenridercraft.sorcerer_spawn_egg": "Sorcerer Spawn Egg",
+  "item.kamenridercraft.wiseman_spawn_egg": "Wiseman Spawn Egg",
 
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
@@ -3064,6 +3065,7 @@
 "block.kamenridercraft.core_boss_block": "Core Boss Block",
 "block.kamenridercraft.powered_up_core_boss_block": "Powered Up Core Boss Block",
 "block.kamenridercraft.ancient_ooo_boss_block": "Ancient OOO Boss Block",
+  "block.kamenridercraft.wiseman_boss_block": "Wiseman Boss Block",
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
