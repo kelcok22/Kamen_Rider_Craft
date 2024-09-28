@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:rolling_vistamp"
+      },
+      "title": "#NiceVice",
+      "description": "Transform into Kamen Rider Jack Revice",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/volcano",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:revice_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:rolling_vistamp\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

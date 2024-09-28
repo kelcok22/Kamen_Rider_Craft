@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:perfect_wing_vistamp"
+      },
+      "title": "I'm Perfect!",
+      "description": "Transform into Kamen Rider EvilytyLive",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/holy_live",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:two_sidriver_live"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:perfect_wing_vistamp\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

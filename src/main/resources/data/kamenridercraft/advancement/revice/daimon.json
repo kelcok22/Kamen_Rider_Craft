@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:chimera_driver_daimon"
+      },
+      "title": "Game On!",
+      "description": "Transform into Kamen Rider Daimon",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/chimera",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:chimera_driver_daimon"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

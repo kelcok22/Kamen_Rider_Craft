@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:giraffa_vistamp"
+      },
+      "title": "Got over it",
+      "description": "Transform into Kamen Rider Get Over Demons",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/over_demons",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:over_demons_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:giraffa_vistamp\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

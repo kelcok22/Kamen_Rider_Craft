@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:two_sidriver_live"
+      },
+      "title": "Let's settle this seriously",
+      "description": "Transform into Kamen Rider Live",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/revice",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:two_sidriver_live"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

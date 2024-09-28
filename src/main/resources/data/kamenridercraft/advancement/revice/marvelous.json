@@ -1,0 +1,81 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:mega_bat_vistamp"
+      },
+      "title": "Marvel's Batman",
+      "description": "Transform into Live/Evil Marvelous",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/evilytylive",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:revice_driver_live"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:revice_driver_evil"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "1",
+        "2"
+      ]
+    ]
+  }
+  

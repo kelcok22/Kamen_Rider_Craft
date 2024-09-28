@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:thunder_gale_vistamp"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:revice/giffard_rex_vistamp",
+	  "kamenridercraft:revice/fifty_gale_vistamp",
+	  "kamenridercraft:revice/true_rex_vistamp"
+	]
+  },
+  "sends_telemetry_event": false
+}

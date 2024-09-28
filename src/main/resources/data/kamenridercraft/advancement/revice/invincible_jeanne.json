@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:king_cobra_vistamp"
+      },
+      "title": "Cherry-ish!",
+      "description": "Transform into Kamen Rider Invincible Jeanne",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/jeanne",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:libera_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:king_cobra_vistamp\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

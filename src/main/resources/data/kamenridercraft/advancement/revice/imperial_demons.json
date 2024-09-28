@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:giant_spider_vistamp"
+      },
+      "title": "Everyone's a feminist until there's a spider",
+      "description": "Transform into Kamen Rider Imperial Demons",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:revice/demons",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:revice_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:revice_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:revice_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:demons_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:giant_spider_vistamp\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
