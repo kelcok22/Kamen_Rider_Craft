@@ -205,6 +205,7 @@ public class KamenRiderCraftCore
         event.put(MobsCore.MAGE_FOOTSOLDIER.get(), MageFootsoldierEntity.setAttributes().build());
         event.put(MobsCore.MAGE_CAPTAIN.get(), MageCaptainEntity.setAttributes().build());
         event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
+        event.put(MobsCore.WISEMAN.get(), SorcererEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -456,6 +457,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.MAGE_FOOTSOLDIER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MAGE_CAPTAIN .get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.WISEMAN.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
