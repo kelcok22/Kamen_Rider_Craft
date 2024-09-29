@@ -72,6 +72,8 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem NEED_FORM_SLOT_3;
     private RiderFormChangeItem NEED_FORM_SLOT_4;
 
+    private int Store_num =1;
+
     public RiderFormChangeItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
         super( properties);
 
@@ -133,6 +135,10 @@ public class RiderFormChangeItem extends BaseItem {
         return HAS_STATIC_WINGS;
     }
 
+    public int get_Stored_num() {
+        return Store_num;
+    }
+
     public String get_FlyingModel() {
         if (FLYING_MODEL!=null) return FLYING_MODEL;
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+RIDER_NAME+FORM_NAME+"_wing.geo.json");
@@ -182,6 +188,11 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem ChangeSlot(int slot) {
         Slot=slot;
+        return this;
+    }
+
+    public RiderFormChangeItem AddNum(int num) {
+        Store_num=num;
         return this;
     }
     public RiderFormChangeItem SetOffhandSlot(int slot) {

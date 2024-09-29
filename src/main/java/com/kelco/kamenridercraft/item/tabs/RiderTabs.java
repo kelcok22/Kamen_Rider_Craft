@@ -136,6 +136,10 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_drive_items.png"))
                     .title(Component.literal("Drive Rider Items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GHOSTTab = CREATIVE_MODE_TABS.register("krc_370_ghost_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Ghost_Rider_Items.GHOST_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ghost_items.png"))
+                    .title(Component.literal("Ghost Rider Items")).build());
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> EX_AIDTab = CREATIVE_MODE_TABS.register("krc_380_exaid_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Ex_Aid_Rider_Items.EX_AIDHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_ex_aid_items.png"))
                     .title(Component.literal("Ex-Aid Rider Items")).build());
@@ -215,7 +219,7 @@ public class RiderTabs {
     public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Item> WIZARD_TAB_ITEM= new ArrayList<Item>();
-
+    public static List<Item> GHOST_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> DRIVE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> BUILD_TAB_ITEM= new ArrayList<Item>();
@@ -381,6 +385,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.OOO_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.OOO_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.GHOSTTab.get()) {
+            for (int i = 0; i < RiderTabs.GHOST_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.GHOST_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.EX_AIDTab.get()) {
