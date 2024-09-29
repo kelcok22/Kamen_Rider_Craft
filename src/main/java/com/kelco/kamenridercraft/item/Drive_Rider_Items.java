@@ -53,6 +53,18 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_HIGH_SPEED_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHIFT_FRUITS_TIRE = ITEMS.register("fruits_tire",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"fruits_tire","drive","drivedriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ChangeSlot(2));
+
+	public static final DeferredItem<Item> SHIFT_FRUITS = ITEMS.register("fruitsshift",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fruits","drive","drivedriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_FRUITS_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"max_flare_tire","drive","drivedriver_belt",

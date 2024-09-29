@@ -188,8 +188,14 @@ public class Miscellaneous_Rider_Items {
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
 		            .ChangeModel("haruma.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
-		    
-		    public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
+	public static final DeferredItem<Item> CHAOS_RING_ARAKI = ITEMS.register("chaos_ring_araki",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","araki","chaos_driver_araki_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
+					.IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+
+
+	public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
 		            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 		    public static final DeferredItem<Item> RIDE_KAMENS_CHESTPLATE = ITEMS.register("ride_kamens_troso",
 		            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
@@ -211,6 +217,10 @@ public class Miscellaneous_Rider_Items {
 		    public static final DeferredItem<Item> CHAOS_DRIVER_JIGEN = ITEMS.register("chaos_driver_jigen",
 			           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jigen",CHAOS_RING_JIGEN ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
 			           .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHAOS_DRIVER_ARAKI = ITEMS.register("chaos_driver_araki",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"araki",CHAOS_RING_ARAKI ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
 		    		() -> new GashaTicketItem(new Item.Properties()).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
