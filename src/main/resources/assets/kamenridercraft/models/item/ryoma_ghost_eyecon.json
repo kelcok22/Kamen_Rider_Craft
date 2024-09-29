@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kamenridercraft4th:items/ry_ghost_eyecon"
+    "layer0": "kamenridercraft:item/ryoma_ghost_eyecon"
   }
 }
