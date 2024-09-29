@@ -64,7 +64,7 @@ public class GhostDriverItem extends RiderDriverItem {
 			return "_base";
 		}else if (rider=="ghost"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2){
 			return "_base";
-		}else if (rider=="specter"&item.get_Stored_num()!=0){
+		}else if (rider=="specter"&item.get_Stored_num()!=0||rider=="zero_specter"&item.get_Stored_num()!=0||rider=="kanon_specter"&item.get_Stored_num()!=0){
 			return "_base";
 		}
 
