@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
@@ -50,16 +51,23 @@ public class GhostDriverItem extends RiderDriverItem {
 		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,2).getFormName(fly);
 
 		else {
-			return riderName + get_Form_Item(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(get_Form_Item(itemstack, 2));
+			return riderName + get_Form_Item(itemstack, 1).getFormName(fly)+Get_Wisp_Horn(get_Form_Item(itemstack, 2),itemstack);
 		}
 	}
 
 
-	public String Get_Wisp_Horn(RiderFormChangeItem item)
+	public String Get_Wisp_Horn(RiderFormChangeItem item,ItemStack itemstack)
 	{
+		String rider = ((GhostDriverItem) itemstack.getItem()).Rider;
+
 		if (Wisp_Horn==item.get_Stored_num()){
 			return "_base";
+		}else if (rider=="ghost"&get_Form_Item(itemstack,1)==Ghost_Rider_Items.ORE_GHOST_EYECON.get()&item.get_Stored_num()==2){
+			return "_base";
+		}else if (rider=="specter"&item.get_Stored_num()!=0){
+			return "_base";
 		}
+
 		return "_base_"+item.get_Stored_num();
 	}
 
