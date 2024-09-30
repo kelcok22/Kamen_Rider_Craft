@@ -47,6 +47,18 @@ public class Ghost_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(BOOST_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
+	public static final DeferredItem<Item> MUGEN_DAMASHII = ITEMS.register("mugen_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"mugen_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2));
+
+	public static final DeferredItem<Item> MUGEN_GHOST_EYECON = ITEMS.register("mugen_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mugen","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(MUGEN_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> SPECTER_DAMASHII = ITEMS.register("specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"specter_damashii","specter","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
@@ -67,7 +79,18 @@ public class Ghost_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_deep","specter","ghostdriver_belt_specter",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.addAlternative(DEEP_SPECTER_DAMASHII.get()).alsoChange2ndSlot(DEEP_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+					.alsoChange2ndSlot(DEEP_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> SIN_SPECTER_DAMASHII = ITEMS.register("sin_specter_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"sin_damashii","specter","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddNum(0).ChangeModel("damashii.geo.json").ChangeSlot(2));
+
+	public static final DeferredItem<Item> SIN_SPECTER_GHOST_EYECON = ITEMS.register("sin_specter_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sin","specter","ghostdriver_belt_specter",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.alsoChange2ndSlot(SIN_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> NECROM_DAMASHII = ITEMS.register("necrom_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"necrom_damashii","necrom","ghostdriver_belt",
@@ -79,6 +102,17 @@ public class Ghost_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.addAlternative(NECROM_DAMASHII.get()).alsoChange2ndSlot(NECROM_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> YUJOU_BURST_DAMASHII = ITEMS.register("yujou_burst_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"yujou_burst_necrom_damashii","necrom","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ChangeModel("damashii.geo.json").ChangeSlot(2));
+
+	public static final DeferredItem<Item> YUJOU_BURST_GHOST_EYECON = ITEMS.register("yujou_burst_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yujou_burst","necrom","necrom_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.alsoChange2ndSlot(YUJOU_BURST_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_DAMASHII = ITEMS.register("dark_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"dark_damashii","ghost","ghostdriver_belt",
