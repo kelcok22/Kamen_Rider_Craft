@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
 import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
@@ -22,6 +23,10 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> GHOST_LOGO = ITEMS.register("ghost_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLANK_GHOST_EYECON = ITEMS.register("blank_ghost_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 
 	public static String[] Can_use_Eyecons = new String[] {"ghost","specter","necrom","zero_specter","dark_necrom","dark_ghost","kanon_specter"};
 
@@ -288,7 +293,10 @@ public class Ghost_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_specter_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
-	//ishinomori_ghost_icon
+
+	public static final DeferredItem<Item> ISHINOMORI_GHOST_EYECON = ITEMS.register("ishinomori_ghost_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 	public static final DeferredItem<Item> COLUMBUS_GHOST_EYECON = ITEMS.register("columbus_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"columbus_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
@@ -324,6 +332,124 @@ public class Ghost_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHOWA_GHOST_EYECON = ITEMS.register("showa_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"showa_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> KUUGA_GHOST_EYECON = ITEMS.register("kuuga_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kuuga_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> AGITO_GHOST_EYECON = ITEMS.register("agito_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"agito_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> RYUKI_GHOST_EYECON = ITEMS.register("ryuki_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ryuki_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> FAIZ_GHOST_EYECON = ITEMS.register("faiz_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"faiz_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLADE_GHOST_EYECON = ITEMS.register("blade_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"blade_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> HIBIKI_GHOST_EYECON = ITEMS.register("hibiki_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"hibiki_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> KABUTO_GHOST_EYECON = ITEMS.register("kabuto_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kabuto_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> DEN_O_GHOST_EYECON = ITEMS.register("den_o_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"den_o_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> KIVA_GHOST_EYECON = ITEMS.register("kiva_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kiva_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> DECADE_GHOST_EYECON = ITEMS.register("decade_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"decade_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> DOUBLE_GHOST_EYECON = ITEMS.register("double_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"double_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> OOO_GHOST_EYECON = ITEMS.register("ooo_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ooo_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> FOURZE_GHOST_EYECON = ITEMS.register("fourze_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"fourze_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> WIZARD_GHOST_EYECON = ITEMS.register("wizard_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"wizard_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> GAIM_GHOST_EYECON = ITEMS.register("gaim_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"gaim_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRIVE_GHOST_EYECON = ITEMS.register("drive_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"drive_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> GHOST_GHOST_EYECON = ITEMS.register("ghost_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> EX_AID_GHOST_EYECON = ITEMS.register("ex_aid_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ex_aid_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> UNFINISHED_FOURTYFIVE_HEISEI_GHOST_EYECON  = ITEMS.register("unfinished_fourtyfive_heisei_ghost_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	/**
+	fourtyfive_heisei_ghost_icon
+	 fourtyfive_showa_ghost_icon
+**/
+
+	public static final DeferredItem<Item> ROYALTY_GAMMA_EYECON = ITEMS.register("royalty_gamma_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> YURUSEN_GAMMA_EYECON = ITEMS.register("yurusen_gamma_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> SISTER_GAMMA_EYECON = ITEMS.register("sister_gamma_eyecon",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 	public static final DeferredItem<Item> GHOST_HELMET = ITEMS.register("ghost_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
 	public static final DeferredItem<Item> GHOST_CHESTPLATE = ITEMS.register("ghost_troso",
@@ -334,6 +460,17 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> GHOST_DRIVER = ITEMS.register("ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"ghost",ORE_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> UNFINISHED_EYECON_DRIVER_G = ITEMS.register("unfinished_eyecon_driver_g",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost_grateful","eyecon_driver_g_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> EYECON_DRIVER_G = ITEMS.register("eyecon_driver_g",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ghost_grateful",UNFINISHED_EYECON_DRIVER_G , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> SPECTER_DRIVER = ITEMS.register("specter_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"specter",SPECTER_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
@@ -374,6 +511,23 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> NEW_GHOST_DRIVER = ITEMS.register("new_ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_ghost",DARK_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(NEW_ORE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+
+	/**
+	gan_gun_saber_blade
+	gan_gun_saber_nitouryu
+	gan_gun_saber_nitouryu_2
+	gan_gun_saber_gun
+	gan_gun_saber_naginata
+	gan_gun_saber_condor_denwor
+	gan_gun_saber_rifle
+	gan_gun_saber_hammer
+
+	sunglasseslasher_sword
+	gan_gun_hand_rod
+	gan_gun_hand_kama
+	deep_slasher_sword
+		gan_gun_catcher_rod
+**/
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
