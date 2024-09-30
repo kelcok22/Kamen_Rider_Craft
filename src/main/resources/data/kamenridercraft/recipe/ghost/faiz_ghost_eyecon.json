@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "legend_rider_eyecons",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"M": {
+	  "item": "kamenridercraft:faiz_mission_memory"
+    } 
+  },
+  "result": {
+    "id": "kamenridercraft:faiz_ghost_eyecon"
+  }	
+}

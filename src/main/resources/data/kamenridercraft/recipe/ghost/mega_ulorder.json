@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "necrom",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"M": {
+	  "item": "kamenridercraft:necrom_ghost_eyecon"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:mega_ulorder"
+  }	
+}

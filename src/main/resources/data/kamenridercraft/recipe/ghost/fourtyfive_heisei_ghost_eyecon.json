@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_eyecons",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:unfinished_fourtyfive_heisei_ghost_eyecon"
+    }, 
+    {
+      "item": "kamenridercraft:decade_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:double_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:ooo_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:fourze_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:wizard_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:gaim_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:drive_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:ghost_ghost_eyecon"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:fourtyfive_heisei_ghost_eyecon"
+  }
+}
