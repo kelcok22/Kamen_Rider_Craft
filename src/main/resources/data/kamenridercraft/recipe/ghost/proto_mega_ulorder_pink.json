@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_necrom_pink",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"M": {
+	  "item": "kamenridercraft:dark_necrom_pink_ghost_eyecon"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:proto_mega_ulorder_pink"
+  }	
+}

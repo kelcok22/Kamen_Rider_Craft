@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zero_specter",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ghost_eyecon"
+	},
+	"M": {
+	  "item": "kamenridercraft:zero_specter_ghost_eyecon"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:zero_specter_driver"
+  }	
+}

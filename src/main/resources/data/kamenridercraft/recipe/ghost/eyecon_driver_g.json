@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ghost_grateful",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:unfinished_eyecon_driver_g"
+    }, 
+    {
+      "item": "kamenridercraft:himiko_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:tutankhamun_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:nobunaga_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:houdini_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:grimm_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:sanzo_ghost_eyecon"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:eyecon_driver_g"
+  }
+}

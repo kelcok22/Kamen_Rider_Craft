@@ -1446,8 +1446,6 @@
   "item.kamenridercraft.zero_specter_driver": "Ghost Driver (Zero Specter)",
   "item.kamenridercraft.new_ghost_driver": "Ghost Driver (New Ghost)",
   "item.kamenridercraft.kanon_specter_driver": "Ghost Driver (Kanon Specter)",
-  "item.kamenridercraft.unfinshed_eyecon_driver_g": "Unfinished Eyecon Driver G",
-  "item.kamenridercraft.eyecon_driver_g": "Eyecon Driver G",
 
   "item.kamenridercraft.ore_ghost_eyecon": "Ore Ghost Eyecon",
   "item.kamenridercraft.specter_ghost_eyecon": "Specter Ghost Eyecon",
@@ -1478,6 +1476,8 @@
   "item.kamenridercraft.sanzo_ghost_eyecon": "Sanzo Ghost Eyecon",
 
   "item.kamenridercraft.boost_ghost_eyecon": "Toucon Boost Ghost Eyecon",
+  "item.kamenridercraft.unfinished_eyecon_driver_g": "Unfinished Eyecon Driver G",
+  "item.kamenridercraft.eyecon_driver_g": "Eyecon Driver G",
   "item.kamenridercraft.mugen_ghost_eyecon": "Mugen Ghost Eyecon",
   "item.kamenridercraft.deep_specter_ghost_eyecon": "Deep Specter Ghost Eyecon",
   "item.kamenridercraft.sin_specter_ghost_eyecon": "Sin Specter Ghost Eyecon",

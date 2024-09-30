@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_eyecons",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:kuuga_ghost_eyecon"
+    }, 
+    {
+      "item": "kamenridercraft:agito_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:ryuki_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:faiz_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:blade_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:hibiki_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:kabuto_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:den_o_ghost_eyecon"
+    } , 
+    {
+      "item": "kamenridercraft:kiva_ghost_eyecon"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_fourtyfive_heisei_ghost_eyecon"
+  }
+}
