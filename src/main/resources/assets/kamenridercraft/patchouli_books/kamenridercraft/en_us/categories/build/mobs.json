@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "Build Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Build.",
+    "icon": "kamenridercraft:build_logo",
+    "sortnum": 4
+}
