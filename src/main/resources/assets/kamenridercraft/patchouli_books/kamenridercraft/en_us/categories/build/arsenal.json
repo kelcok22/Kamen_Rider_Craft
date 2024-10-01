@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "Build Arsenal",
+    "description": "Every weapon and tool used by the Build Riders.",
+    "icon": "kamenridercraft:drill_crusher",
+    "sortnum": 3
+}
