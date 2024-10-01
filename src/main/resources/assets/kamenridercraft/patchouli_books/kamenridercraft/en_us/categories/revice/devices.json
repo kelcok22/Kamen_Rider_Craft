@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "Revice Transformation Devices",
+    "description": "The transformation devices used by the Revice Riders.",
+    "icon": "kamenridercraft:revice_driver",
+    "sortnum": 1
+}
