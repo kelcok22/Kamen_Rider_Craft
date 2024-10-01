@@ -1,0 +1,12 @@
+{
+	"name": "Build Logo",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_logo"
+		}
+	]
+}
