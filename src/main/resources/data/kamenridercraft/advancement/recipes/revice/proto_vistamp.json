@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:rex_vistamp"
+			  "kamenridercraft:proto_vistamp"
 			]
 		  }
 		]
@@ -21,9 +21,9 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/revice_logo",
-	  "kamenridercraft:revice/revice_driver",
-	  "kamenridercraft:revice/barid_rex_vistamp",
+	  "kamenridercraft:revice/revice_head",
+	  "kamenridercraft:revice/revice_troso",
+	  "kamenridercraft:revice/revice_legs"
 	]
   },
   "sends_telemetry_event": false
