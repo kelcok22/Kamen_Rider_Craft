@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ghost",
+  "pattern": [
+	"XXX",
+	"RXT",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:full_bottle"
+	},
+	"R": {
+	  "item": "kamenridercraft:rabbit_full_bottle"
+	},
+	"T": {
+	  "item": "kamenridercraft:tank_full_bottle"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:build_driver"
+  }	
+}
