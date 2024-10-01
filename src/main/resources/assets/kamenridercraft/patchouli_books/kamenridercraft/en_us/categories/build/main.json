@@ -1,0 +1,7 @@
+{ 
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Build",
+    "description": "Everything related to the show, Kamen Rider Build.",
+    "icon": "kamenridercraft:build_logo",
+    "sortnum": 24
+}
