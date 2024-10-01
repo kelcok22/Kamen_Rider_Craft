@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ghost/main",
+    "name": "Ghost Rider Items",
+    "description": "All Ghost-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:ore_ghost_eyecon",
+    "sortnum": 2
+}

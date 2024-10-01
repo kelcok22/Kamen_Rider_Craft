@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ghost/main",
+    "name": "Ghost Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Ghost.",
+    "icon": "kamenridercraft:ghost_head",
+    "sortnum": 0
+}

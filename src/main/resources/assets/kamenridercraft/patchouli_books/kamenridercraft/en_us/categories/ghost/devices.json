@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ghost/main",
+    "name": "Ghost Transformation Devices",
+    "description": "The transformation devices used by the Ghost Riders.",
+    "icon": "kamenridercraft:ghost_driver",
+    "sortnum": 1
+}
