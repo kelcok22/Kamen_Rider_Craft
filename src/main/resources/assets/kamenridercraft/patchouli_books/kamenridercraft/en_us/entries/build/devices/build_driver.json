@@ -1,0 +1,16 @@
+{
+	"name": "Build Driver",
+	"icon": "kamenridercraft:build_driver",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/build#rabbittank)Kamen Rider Build"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_driver"
+		}
+	]
+}
