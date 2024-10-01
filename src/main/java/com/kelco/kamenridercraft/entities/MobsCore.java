@@ -711,8 +711,15 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> DAIOUIKA_DEADMAN_SPAWN_EGG = ITEMS.register("daiouika_deadman_spawn_egg",
                   () -> new DeferredSpawnEggItem(DAIOUIKA_DEADMAN, 0x00a8b8, 0xd8d8d8, new Item.Properties()));
 
+          public static final DeferredHolder<EntityType<?>, EntityType<AnomalocarisDeadmanEntity>> ANOMALOCARIS_DEADMAN = MOBLIST.register("anomalocaris_deadman",
+                  () -> EntityType.Builder.of(AnomalocarisDeadmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":anomalocaris_deadman"));
 
-          public static final DeferredHolder<EntityType<?>, EntityType<PawnJyamatoEntity>> PAWN_JYAMATO = MOBLIST.register("pawnjyamato_mob",
+          public static final DeferredItem<DeferredSpawnEggItem> ANOMALOCARIS_DEADMAN_SPAWN_EGG = ITEMS.register("anomalocaris_deadman_spawn_egg",
+                  () -> new DeferredSpawnEggItem(ANOMALOCARIS_DEADMAN, 0x084b16, 0xf7eb2f, new Item.Properties()));
+
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PawnJyamatoEntity>> PAWN_JYAMATO = MOBLIST.register("pawnjyamato_mob",
                   () -> EntityType.Builder.of(PawnJyamatoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":pawnjyamato_mob"));
           
           public static final DeferredItem<DeferredSpawnEggItem> PAWN_JYAMATO_SPAWN_EGG = ITEMS.register("pawnjyamato_spawn_egg",
