@@ -2,6 +2,6 @@
 	"parent": "kamenridercraft:ghost/main",
     "name": "Ghost Arsenal",
     "description": "Every weapon and tool used by the Ghost Riders.",
-    "icon": "kamenridercraft:ghost_logo",
+    "icon": "kamenridercraft:gan_gun_saber_sword",
     "sortnum": 3
 }

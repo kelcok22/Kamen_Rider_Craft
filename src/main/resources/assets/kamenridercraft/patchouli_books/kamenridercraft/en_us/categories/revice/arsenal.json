@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "Revice Arsenal",
+    "description": "Every weapon and tool used by the Revice Riders.",
+    "icon": "kamenridercraft:ohin_buster_50",
+    "sortnum": 3
+}

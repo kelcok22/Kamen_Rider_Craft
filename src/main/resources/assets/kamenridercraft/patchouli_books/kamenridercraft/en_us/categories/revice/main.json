@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Revice",
+    "description": "Everything related to the show, Kamen Rider Revice.",
+    "icon": "kamenridercraft:revice_logo",
+    "sortnum": 37
+}

@@ -1,7 +1,7 @@
 {
     "parent": "kamenridercraft:main/heisei",
-    "name": "Kamen Rider Drive",
-    "description": "Everything related to the show, Kamen Rider Drive.",
-    "icon": "kamenridercraft:drive_logo",
+    "name": "Kamen Rider Ghost",
+    "description": "Everything related to the show, Kamen Rider Ghost.",
+    "icon": "kamenridercraft:ghost_logo",
     "sortnum": 31
 }

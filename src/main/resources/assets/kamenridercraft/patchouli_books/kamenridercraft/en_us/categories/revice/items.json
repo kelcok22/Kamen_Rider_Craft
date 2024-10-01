@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "Revice Rider Items",
+    "description": "All Revice-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:rex_vistamp",
+    "sortnum": 2
+}

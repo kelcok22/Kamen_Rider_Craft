@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "Revice Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Revice.",
+    "icon": "kamenridercraft:revice_logo",
+    "sortnum": 4
+}
