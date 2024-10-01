@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "Build Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Build.",
+    "icon": "kamenridercraft:buildhead",
+    "sortnum": 0
+}
