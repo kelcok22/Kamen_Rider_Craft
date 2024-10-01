@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:hazard_trigger"
+	},
+	"title": "Is this thing safe?",
+	"description": "Transform into one of Build's Hazard forms",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/sparkling",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:hazard_trigger\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

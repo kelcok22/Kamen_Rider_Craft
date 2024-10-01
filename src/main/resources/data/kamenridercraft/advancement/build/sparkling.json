@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:rabbittank_sparkling_full_bottle"
+	},
+	"title": "The Pepsi-Man",
+	"description": "Transform into Build RabbitTank Sparkling",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/build",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
