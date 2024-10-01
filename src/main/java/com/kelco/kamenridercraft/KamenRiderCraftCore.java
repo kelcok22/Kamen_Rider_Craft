@@ -253,6 +253,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
 		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
 		event.put(MobsCore.DAIOUIKA_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
+        event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
 
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
@@ -511,6 +512,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.GIFF_JUNIOR.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EVIL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DAIOUIKA_DEADMAN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ANOMALOCARIS_DEADMAN.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.PAWN_JYAMATO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);
