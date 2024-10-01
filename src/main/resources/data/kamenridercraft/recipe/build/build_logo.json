@@ -7,7 +7,10 @@
 	  "item": "minecraft:paper"
 	}, 
 	{
-	  "item": "kamenridercraft:full_bottle"
+	  "item": "kamenridercraft:rabbit_full_bottle"
+	},
+	{
+	  "item": "kamenridercraft:tank_full_bottle"
 	}
 	],
   "result": {
