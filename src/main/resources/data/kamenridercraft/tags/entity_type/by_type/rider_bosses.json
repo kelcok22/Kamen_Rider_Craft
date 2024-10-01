@@ -12,6 +12,8 @@
 	"kamenridercraft:powered_up_core",
 	"kamenridercraft:ancient_ooo",
 	"kamenridercraft:goda",
+	"kamenridercraft:wiseman",
+	"kamenridercraft:sorcerer",
 	"kamenridercraft:genm_mob",
 	"kamenridercraft:poppy_red_mob",
 	"kamenridercraft:para-dx",
@@ -24,6 +26,7 @@
     "kamenridercraft:abaddon_commander",
     "kamenridercraft:eden",
     "kamenridercraft:zaia",
+    "kamenridercraft:evil",
     "kamenridercraft:jyamatorider"
   ]
 }

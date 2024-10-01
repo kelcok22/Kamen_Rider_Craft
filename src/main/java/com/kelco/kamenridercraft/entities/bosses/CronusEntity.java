@@ -210,38 +210,38 @@ public class CronusEntity extends BaseHenchmenEntity {
 				} else if (d0 < this.getFollowDistance() * this.getFollowDistance() && flag) {
 					if (this.attackTime <= 0) {
 						++this.attackStep;
-						if (this.attackStep == 1) {
-							this.attackTime = 60;
-							this.Cronus.setCharged(true);
-						} else if (this.attackStep <= 2) {
-							this.attackTime = 6;
-						} else {
-							this.attackTime = 100;
-							this.attackStep = 0;
-							this.Cronus.setCharged(false);
-						}
-
-						if (this.attackStep > 1) {
-							if (!this.Cronus.isSilent()) {
-								this.Cronus.level().levelEvent((Player)null, 1018, this.Cronus.blockPosition(), 0);
-							}
-								if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()) {
-
-									if (RiderDriverItem.get_Form_Item(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
-										livingentity.addEffect(new MobEffectInstance(Effect_core.PAUSE,150,0));
-										if (livingentity instanceof Player playerIn){
-											playerIn.sendSystemMessage(Component.translatable("Pause!").withStyle(ChatFormatting.GREEN));
-										}
-
-									}
-									else {
-										livingentity.addEffect(new MobEffectInstance(Effect_core.RESET,30,0));
-										if (livingentity instanceof Player playerIn){
-											playerIn.sendSystemMessage(Component.translatable("Reset!").withStyle(ChatFormatting.RED));
-										}
-									
+						switch (this.attackStep) {
+							case 1:
+								this.attackTime = 60;
+								this.Cronus.setCharged(true);
+								break;
+							case 2:
+								if (!this.Cronus.isSilent()) {
+									this.Cronus.level().levelEvent((Player)null, 1018, this.Cronus.blockPosition(), 0);
 								}
-							}
+									if (this.Cronus.getItemBySlot(EquipmentSlot.FEET).getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()) {
+
+										if (RiderDriverItem.get_Form_Item(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
+											livingentity.addEffect(new MobEffectInstance(Effect_core.PAUSE,150,0));
+											if (livingentity instanceof Player playerIn){
+												playerIn.sendSystemMessage(Component.translatable("Pause!").withStyle(ChatFormatting.GREEN));
+											}
+
+										}
+										else {
+											livingentity.addEffect(new MobEffectInstance(Effect_core.RESET,30,0));
+											if (livingentity instanceof Player playerIn){
+												playerIn.sendSystemMessage(Component.translatable("Reset!").withStyle(ChatFormatting.RED));
+											}
+										
+									}
+								}
+								break;
+							default:
+								this.attackTime = 240;
+								this.attackStep = 0;
+								this.Cronus.setCharged(false);
+								break;
 						}
 					}
 

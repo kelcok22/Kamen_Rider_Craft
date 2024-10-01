@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:agito/alter_ring",
 	  "kamenridercraft:agito/agito_logo",
+	  "kamenridercraft:ghost/agito_ghost_eyecon",
 	  "kamenridercraft:geats/alter_ring_raise_buckle"
 	]
   },

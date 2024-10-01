@@ -22,6 +22,7 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:drive/drive_logo",
+	  "kamenridercraft:ghost/drive_ghost_eyecon",
 	  "kamenridercraft:geats/drive_driver_raise_buckle"
 	]
   },

@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:wizard/wizard_logo",
 	  "kamenridercraft:wizard/wizardriver",
+	  "kamenridercraft:ghost/wizard_ghost_eyecon",
 	  "kamenridercraft:geats/wizardriver_raise_buckle"
 	]
   },

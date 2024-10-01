@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:mugen_ghost_eyecon"
+	},
+	"title": "KEEP・ON・GOING !",
+	"description": "Transform into Ghost Mugen Damashii",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ghost/grateful",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghost_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ghost_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ghost_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ghost_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:mugen_ghost_eyecon\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

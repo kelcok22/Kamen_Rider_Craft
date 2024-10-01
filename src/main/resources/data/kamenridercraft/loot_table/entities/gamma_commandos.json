@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:blank_ghost_eyecon",
+            "weight": 8
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:ore_ghost_eyecon",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:specter_ghost_eyecon",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:musashi_ghost_eyecon",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:edison_ghost_eyecon",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:robin_ghost_eyecon",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:newton_ghost_eyecon",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:blank_ghost_eyecon",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

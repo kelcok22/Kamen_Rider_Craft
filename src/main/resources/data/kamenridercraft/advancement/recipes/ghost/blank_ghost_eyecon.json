@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:blank_ghost_eyecon"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:ghost/ghost_head",
+	  "kamenridercraft:ghost/ghost_troso",
+	  "kamenridercraft:ghost/ghost_legs"
+	]
+  },
+  "sends_telemetry_event": false
+}

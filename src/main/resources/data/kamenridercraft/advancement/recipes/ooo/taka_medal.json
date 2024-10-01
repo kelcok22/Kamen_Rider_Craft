@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:ooo/ooo_driver",
 	  "kamenridercraft:ooo/ooo_logo",
+	  "kamenridercraft:ghost/ooo_ghost_eyecon",
 	  "kamenridercraft:geats/ooo_driver_raise_buckle"
 	]
   },
