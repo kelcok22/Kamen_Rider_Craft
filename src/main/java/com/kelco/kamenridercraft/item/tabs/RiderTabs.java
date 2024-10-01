@@ -566,6 +566,8 @@ public class RiderTabs {
             event.accept(MobsCore.SORCERER_SPAWN_EGG);
             event.accept(MobsCore.WISEMAN_SPAWN_EGG);
 
+            event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
+
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
             //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);
@@ -597,6 +599,10 @@ public class RiderTabs {
             event.accept(MobsCore.ZAIA_SPAWN_EGG);
             event.accept(MobsCore.DIRE_WOLF_SOLD_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
+
+            event.accept(MobsCore.GIFF_JUNIOR_SPAWN_EGG);
+            event.accept(MobsCore.EVIL_SPAWN_EGG);
+            event.accept(MobsCore.DAIOUIKA_DEADMAN_SPAWN_EGG);
 
             event.accept(MobsCore.PAWN_JYAMATO_SPAWN_EGG);
             event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:gamma_commandos",
+  "spawners": {
+	"type": "kamenridercraft:gamma_commandos",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

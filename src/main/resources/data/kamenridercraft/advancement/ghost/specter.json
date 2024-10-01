@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:specter_driver"
+	},
+	"title": "I'll show you my way of life",
+	"description": "Transform into Kamen Rider Specter",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ghost/ghost",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghost_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ghost_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ghost_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:specter_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

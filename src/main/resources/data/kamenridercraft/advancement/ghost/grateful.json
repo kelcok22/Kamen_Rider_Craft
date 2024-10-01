@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:eyecon_driver_g"
+	},
+	"title": "Dai Henge!",
+	"description": "Transform into Ghost Grateful Damashii",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ghost/toucon_boost",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghost_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ghost_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ghost_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:eyecon_driver_g"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -2863,14 +2863,14 @@
 "entity.kamenridercraft.ancient_ooo": "Ancient OOO",
 "entity.kamenridercraft.goda": "Kamen Rider Goda",
 "entity.kamenridercraft.ghouls": "Ghoul",
-  "entity.kamenridercraft.phoenix_phantom": "Phoenix",
-  "entity.kamenridercraft.medusa_phantom": "Medusa",
-  "entity.kamenridercraft.gremlin_phantom": "Gremlin",
-  "entity.kamenridercraft.mage_footsoldier": "Imperial Guard",
-  "entity.kamenridercraft.mage_captain": "Imperial Captain",
-  "entity.kamenridercraft.sorcerer": "Kamen Rider Sorcerer",
-
-
+"entity.kamenridercraft.phoenix_phantom": "Phoenix",
+"entity.kamenridercraft.medusa_phantom": "Medusa",
+"entity.kamenridercraft.gremlin_phantom": "Gremlin",
+"entity.kamenridercraft.mage_footsoldier": "Imperial Guard",
+"entity.kamenridercraft.mage_captain": "Imperial Captain",
+"entity.kamenridercraft.sorcerer": "Kamen Rider Sorcerer",
+"entity.kamenridercraft.wiseman": "Kamen Rider Wiseman",
+"entity.kamenridercraft.gamma_commandos": "Gamma Commando",
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
 "entity.kamenridercraft.taddle_bugster_mob": "Taddle Bugster",
@@ -2910,6 +2910,9 @@
 "entity.kamenridercraft.dire_wolf_sold_magia": "Dire Wolf Sold Magia",
 "entity.kamenridercraft.serval_tiger_sold_magia": "Serval Tiger Sold Magia",
 "entity.kamenridercraft.is": "Is",
+"entity.kamenridercraft.giff_junior": "Giff Junior",
+"entity.kamenridercraft.evil": "Kamen Rider Evil",
+"entity.kamenridercraft.daiouika_deadman": "Daiouika Deadman",
 "entity.kamenridercraft.pawnjyamato": "Pawn Jyamato",
 "entity.kamenridercraft.jyamatorider": "Jyamato Rider",
 "entity.kamenridercraft.gmrider": "GM Rider",
@@ -2988,6 +2991,8 @@
 "item.kamenridercraft.sorcerer_spawn_egg": "Sorcerer Spawn Egg",
   "item.kamenridercraft.wiseman_spawn_egg": "Wiseman Spawn Egg",
 
+  "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
+
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
 "item.kamenridercraft.taddle_bugster_spawn_egg": "Taddle Bugster Spawn Egg",
@@ -3028,6 +3033,10 @@
 "item.kamenridercraft.dire_wolf_sold_magia_spawn_egg": "Dire Wolf Sold Magia Spawn Egg",
 "item.kamenridercraft.serval_tiger_sold_magia_spawn_egg": "Serval Tiger Sold Magia Spawn Egg",
 "item.kamenridercraft.is_spawn_egg": "Is Spawn Egg",
+
+"item.kamenridercraft.giff_junior_spawn_egg": "Giff Junior Spawn Egg",
+"item.kamenridercraft.evil_spawn_egg": "Kamen Rider Evil Spawn Egg",
+"item.kamenridercraft.daiouika_deadman_spawn_egg": "Daiouika Deadman Spawn Egg",
 
 "item.kamenridercraft.pawnjyamato_spawn_egg": "Pawn Jyamato Spawn Egg",
 "item.kamenridercraft.jyamatorider_spawn_egg": "Jyamato Rider Spawn Egg",

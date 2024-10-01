@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:kiva/kivadriver",
 	  "kamenridercraft:kiva/kiva_logo",
+	  "kamenridercraft:ghost/kiva_ghost_eyecon",
 	  "kamenridercraft:geats/kivat_belt_raise_buckle"
 	]
   },

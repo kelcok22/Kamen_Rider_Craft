@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ghost_driver"
+	},
+	"title": "My life is burning bright!",
+	"description": "Transform into Kamen Rider Ghost",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghost_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ghost_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ghost_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ghost_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

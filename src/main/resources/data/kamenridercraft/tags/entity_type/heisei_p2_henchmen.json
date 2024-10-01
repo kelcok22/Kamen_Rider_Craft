@@ -1,10 +1,13 @@
 {
   "values": [
-	"kamenridercraft:bugstervirus_mob",
-	"kamenridercraft:foundation_x_masquerade",
-	"kamenridercraft:knight_soldier_mob",
 	"kamenridercraft:masquerade",
-	"kamenridercraft:rideplayer",
-	"kamenridercraft:yummy_mob"
+	"kamenridercraft:foundation_x_masquerade",
+	"kamenridercraft:yummy_mob",
+	"kamenridercraft:knight_soldier_mob",
+    "kamenridercraft:ghouls",
+    "kamenridercraft:mage_footsoldier",
+	"kamenridercraft:gamma_commandos",
+	"kamenridercraft:bugstervirus_mob",
+	"kamenridercraft:rideplayer"
   ]
 }

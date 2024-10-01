@@ -451,6 +451,12 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(WISEMAN,  0xffffff,0xd79e0b, new Item.Properties()));
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GammaCommandoEntity>> GAMMA_COMMANDO = MOBLIST.register("gamma_commandos",
+                  () -> EntityType.Builder.of(GammaCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamma_commandos"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> GAMMA_COMMANDO_SPAWN_EGG = ITEMS.register("gamma_commandos_spawn_egg",
+                  () -> new DeferredSpawnEggItem(GAMMA_COMMANDO, 0x000000, 0x6f6f6f, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<BugsterVirusEntity>> BUGSTERVIRUS = MOBLIST.register("bugstervirus_mob",
                   () -> EntityType.Builder.of(BugsterVirusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bugster_mob"));
@@ -685,6 +691,25 @@ public class MobsCore {
  
           public static final DeferredItem<DeferredSpawnEggItem> ARK_ZERO_SPAWN_EGG = ITEMS.register("ark_zero_spawn_egg",
                   () -> new DeferredSpawnEggItem(ARK_ZERO, 0x161616, 0xC40000, new Item.Properties()));
+
+
+          public static final DeferredHolder<EntityType<?>, EntityType<GiffJuniorEntity>> GIFF_JUNIOR = MOBLIST.register("giff_junior",
+                  () -> EntityType.Builder.of(GiffJuniorEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giff_junior"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> GIFF_JUNIOR_SPAWN_EGG = ITEMS.register("giff_junior_spawn_egg",
+                  () -> new DeferredSpawnEggItem(GIFF_JUNIOR, 0x282828, 0xe2e2e2, new Item.Properties()));
+
+          public static final DeferredHolder<EntityType<?>, EntityType<EvilEntity>> EVIL = MOBLIST.register("evil",
+                  () -> EntityType.Builder.of(EvilEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":evil"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> EVIL_SPAWN_EGG = ITEMS.register("evil_spawn_egg",
+                  () -> new DeferredSpawnEggItem(EVIL, 0x03c8a9, 0xa7a7a7, new Item.Properties()));
+
+          public static final DeferredHolder<EntityType<?>, EntityType<DaiouikaDeadmanEntity>> DAIOUIKA_DEADMAN = MOBLIST.register("daiouika_deadman",
+                  () -> EntityType.Builder.of(DaiouikaDeadmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":daiouika_deadman"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> DAIOUIKA_DEADMAN_SPAWN_EGG = ITEMS.register("daiouika_deadman_spawn_egg",
+                  () -> new DeferredSpawnEggItem(DAIOUIKA_DEADMAN, 0x00a8b8, 0xd8d8d8, new Item.Properties()));
 
 
           public static final DeferredHolder<EntityType<?>, EntityType<PawnJyamatoEntity>> PAWN_JYAMATO = MOBLIST.register("pawnjyamato_mob",

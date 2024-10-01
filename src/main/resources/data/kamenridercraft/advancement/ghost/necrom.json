@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:necrom_ghost_eyecon"
+	},
+	"title": "Listen to the call of your heart",
+	"description": "Transform into Kamen Rider Necrom",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ghost/specter",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ghost_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ghost_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ghost_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:mega_ulorder"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

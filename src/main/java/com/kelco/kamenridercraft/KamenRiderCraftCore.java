@@ -206,7 +206,9 @@ public class KamenRiderCraftCore
         event.put(MobsCore.MAGE_FOOTSOLDIER.get(), MageFootsoldierEntity.setAttributes().build());
         event.put(MobsCore.MAGE_CAPTAIN.get(), MageCaptainEntity.setAttributes().build());
         event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
-        event.put(MobsCore.WISEMAN.get(), SorcererEntity.setAttributes().build());
+        event.put(MobsCore.WISEMAN.get(), WisemanEntity.setAttributes().build());
+
+		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -247,6 +249,10 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.ZAIA.get(), ZaiaEntity.setAttributes().build());
 		event.put(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), DireWolfSoldMagiaEntity.setAttributes().build());
 		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
+
+		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
+		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
+		event.put(MobsCore.DAIOUIKA_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
 
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
@@ -460,6 +466,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WISEMAN.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.TADDLE_BUGSTER.get(), BasicEntityRenderer::new);
@@ -499,6 +507,10 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ZAIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), BasicEntityRenderer::new);
+
+            event.registerEntityRenderer(MobsCore.GIFF_JUNIOR.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.EVIL.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DAIOUIKA_DEADMAN.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.PAWN_JYAMATO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);

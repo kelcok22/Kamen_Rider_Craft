@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:giff_junior",
+  "spawners": {
+	"type": "kamenridercraft:giff_junior",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}
