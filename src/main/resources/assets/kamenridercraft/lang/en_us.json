@@ -2914,6 +2914,8 @@
 "entity.kamenridercraft.evil": "Kamen Rider Evil",
 "entity.kamenridercraft.daiouika_deadman": "Daiouika Deadman",
   "entity.kamenridercraft.anomalocaris_deadman": "Anomalocaris Deadman",
+  "entity.kamenridercraft.queen_bee_deadman": "Queen Bee Deadman",
+  "entity.kamenridercraft.wolf_deadman": "Wolf Deadman",
   "entity.kamenridercraft.pawnjyamato": "Pawn Jyamato",
 "entity.kamenridercraft.jyamatorider": "Jyamato Rider",
 "entity.kamenridercraft.gmrider": "GM Rider",
@@ -3039,6 +3041,8 @@
 "item.kamenridercraft.evil_spawn_egg": "Kamen Rider Evil Spawn Egg",
 "item.kamenridercraft.daiouika_deadman_spawn_egg": "Daiouika Deadman Spawn Egg",
   "item.kamenridercraft.anomalocaris_deadman_spawn_egg": "Anomalocaris Deadman Spawn Egg",
+  "item.kamenridercraft.queen_bee_deadman_spawn_egg": "Queen Bee Deadman Spawn Egg",
+  "item.kamenridercraft.wolf_deadman_spawn_egg": "Wolf Deadman Spawn Egg",
 
 "item.kamenridercraft.pawnjyamato_spawn_egg": "Pawn Jyamato Spawn Egg",
 "item.kamenridercraft.jyamatorider_spawn_egg": "Jyamato Rider Spawn Egg",

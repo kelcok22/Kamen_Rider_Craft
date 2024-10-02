@@ -604,6 +604,8 @@ public class RiderTabs {
             event.accept(MobsCore.EVIL_SPAWN_EGG);
             event.accept(MobsCore.DAIOUIKA_DEADMAN_SPAWN_EGG);
             event.accept(MobsCore.ANOMALOCARIS_DEADMAN_SPAWN_EGG);
+            event.accept(MobsCore.QUEEN_BEE_DEADMAN_SPAWN_EGG);
+            event.accept(MobsCore.WOLF_DEADMAN_SPAWN_EGG);
 
             event.accept(MobsCore.PAWN_JYAMATO_SPAWN_EGG);
             event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);
