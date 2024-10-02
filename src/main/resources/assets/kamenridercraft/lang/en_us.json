@@ -44,6 +44,7 @@
 "effect.kamenridercraft.small":"Shrink",
 "effect.kamenridercraft.flat":"Flatten",
   "effect.kamenridercraft.gravity":"Gravity",
+  "effect.kamenridercraft.low_gravity":"Low Gravity",
 "effect.kamenridercraft.stretch":"Stretch",
 "effect.kamenridercraft.wide":"Wide",
 "effect.kamenridercraft.explode":"Explosion",
@@ -51,6 +52,8 @@
 "effect.kamenridercraft.explosion_punch":"Explosive Punch",
 "effect.kamenridercraft.fire_shot":"Flame Shot",
 "effect.kamenridercraft.explosion_shot":"Explosive Shot",
+  "effect.kamenridercraft.thunder_shot":"Thunder Shot",
+  "effect.kamenridercraft.thunder_punch":"Thunder Punch",
 "effect.kamenridercraft.fire_armor":"Flame Body",
 "effect.kamenridercraft.reflect":"Mirror",
 "effect.kamenridercraft.bug":"Bugster Virus",
@@ -72,6 +75,7 @@
   "effect.kamenridercraft.fall":"Fall",
   "effect.kamenridercraft.return":"Return",
   "effect.kamenridercraft.connect":"Connect",
+  "effect.kamenridercraft.ghost":"Ghost",
 
 
 "item.kamenridercraft.rider_circuit": "Rider Circuit",
@@ -1500,7 +1504,7 @@
   "item.kamenridercraft.shinsengumi_ghost_eyecon": "Shinsengumi Ghost Eyecon",
   "item.kamenridercraft.ishinomori_ghost_eyecon": "Ishinomori Ghost Eyecon",
 
-  "item.kamenridercraft.showa_ghost_eyecon": "Showa Ghost Eyecon",
+  "item.kamenridercraft.showa_ghost_eyecon": "Showa Rider 45 Ghost Eyecon",
   "item.kamenridercraft.kuuga_ghost_eyecon": "Kuuga Ghost Eyecon",
   "item.kamenridercraft.agito_ghost_eyecon": "Agito Ghost Eyecon",
   "item.kamenridercraft.ryuki_ghost_eyecon": "Ryuki Ghost Eyecon",
@@ -1519,9 +1523,9 @@
   "item.kamenridercraft.drive_ghost_eyecon": "Drive Ghost Eyecon",
   "item.kamenridercraft.ghost_ghost_eyecon": "Ghost Ghost Eyecon",
   "item.kamenridercraft.ex_aid_ghost_eyecon": "Ex-Aid Ghost Eyecon",
-  "item.kamenridercraft.unfinished_fourtyfive_heisei_ghost_eyecon": "Unfinished 45 Heisei Ghost Eyecon",
-  "item.kamenridercraft.fourtyfive_heisei_ghost_eyecon": "45 Heisei Ghost Eyecon",
-  "item.kamenridercraft.fourtyfive_showa_ghost_eyecon": "45 Showa Ghost Eyecon",
+  "item.kamenridercraft.unfinished_fourtyfive_heisei_ghost_eyecon": "Unfinished Kamen Rider 45 Ghost Eyecon",
+  "item.kamenridercraft.fourtyfive_heisei_ghost_eyecon": "Kamen Rider 45 Ghost Eyecon (Heisei Side)",
+  "item.kamenridercraft.fourtyfive_showa_ghost_eyecon": "Kamen Rider 45 Ghost Eyecon (Ichigou Side)",
 
   "item.kamenridercraft.royalty_gamma_eyecon": "Royalty Gamma Eyecon",
   "item.kamenridercraft.transform_gamma_eyecon": "Transform Gamma Eyecon",

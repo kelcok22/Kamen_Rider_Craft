@@ -6,10 +6,10 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 
 
-public class GravityEffect extends MobEffect {
+public class BasicEffect extends MobEffect {
 
 
-	public GravityEffect(MobEffectCategory mobEffectCategory, int color) {
+	public BasicEffect(MobEffectCategory mobEffectCategory, int color) {
 		super(mobEffectCategory, color);
 	}
 }
