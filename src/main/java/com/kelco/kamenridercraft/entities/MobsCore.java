@@ -717,7 +717,17 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> ANOMALOCARIS_DEADMAN_SPAWN_EGG = ITEMS.register("anomalocaris_deadman_spawn_egg",
                   () -> new DeferredSpawnEggItem(ANOMALOCARIS_DEADMAN, 0x084b16, 0xf7eb2f, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<QueenBeeDeadmanEntity>> QUEEN_BEE_DEADMAN = MOBLIST.register("queen_bee_deadman",
+            () -> EntityType.Builder.of(QueenBeeDeadmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":queen_bee_deadman"));
 
+    public static final DeferredItem<DeferredSpawnEggItem> QUEEN_BEE_DEADMAN_SPAWN_EGG = ITEMS.register("queen_bee_deadman_spawn_egg",
+            () -> new DeferredSpawnEggItem(QUEEN_BEE_DEADMAN, 0xf290f8, 0xfda215, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<WolfDeadmanEntity>> WOLF_DEADMAN = MOBLIST.register("wolf_deadman",
+            () -> EntityType.Builder.of(WolfDeadmanEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":wolf_deadman"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> WOLF_DEADMAN_SPAWN_EGG = ITEMS.register("wolf_deadman_spawn_egg",
+            () -> new DeferredSpawnEggItem(WOLF_DEADMAN, 0x60451a, 0xeb2916, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<PawnJyamatoEntity>> PAWN_JYAMATO = MOBLIST.register("pawnjyamato_mob",
                   () -> EntityType.Builder.of(PawnJyamatoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":pawnjyamato_mob"));

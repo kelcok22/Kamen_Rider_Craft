@@ -380,7 +380,7 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_anomalocaris","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(ANOMALOCARIS_VISTAMP_OVER_DEMONS.get())
-					.addNeedForm(SPIDER_VISTAMP.get(), 1).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.addNeedForm(SPIDER_VISTAMP.get(), 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",
@@ -589,6 +589,12 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> CHAMELEON_VISTAMP = ITEMS.register("chameleon_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_PLANARIAN_VISTAMP = ITEMS.register("proto_planarian_vistamp",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_CHAMELEON_VISTAMP = ITEMS.register("proto_chameleon_vistamp",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABERTIGER_VISTAMP = ITEMS.register("sabertiger_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
