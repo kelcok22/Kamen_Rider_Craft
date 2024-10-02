@@ -26,7 +26,6 @@ public class BoostEffect extends MobEffect {
 
 		if (pLivingEntity.isCrouching()) {
 			if (!pLivingEntity.level().isClientSide()) {
-
 				pLivingEntity.fallDistance = 0.0f;
 				Vec3 look = pLivingEntity.getLookAngle();
 				pLivingEntity.setDeltaMovement(pLivingEntity.getDeltaMovement().add(look.x*(0.1*(1+pAmplifier)), look.y*(0.1*(1+pAmplifier))+pLivingEntity.getGravity(), look.z*(0.1*(1+pAmplifier))));

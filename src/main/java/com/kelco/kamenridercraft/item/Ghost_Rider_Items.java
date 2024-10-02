@@ -37,19 +37,20 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> ORE_GHOST_EYECON = ITEMS.register("ore_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
 					.addAlternative(ORE_DAMASHII.get()).alsoChange2ndSlot(ORE_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_DAMASHII = ITEMS.register("boost_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"boost_damashii","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddNum(3).ChangeModel("damashii.geo.json").ChangeSlot(2));
 
 	public static final DeferredItem<Item> BOOST_GHOST_EYECON = ITEMS.register("boost_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boost","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
 					.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(BOOST_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUGEN_DAMASHII = ITEMS.register("mugen_damashii",
@@ -61,7 +62,8 @@ public class Ghost_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mugen","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
 					.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(MUGEN_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 
@@ -201,7 +203,7 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> NEWTON_GHOST_EYECON = ITEMS.register("newton_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"newton_damashii","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.JUMP, 40, 10,true,false))
+					new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 7,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BILLY_THE_KID_GHOST_EYECON = ITEMS.register("billy_the_kid_ghost_eyecon",
@@ -375,7 +377,7 @@ public class Ghost_Rider_Items {
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOWA_GHOST_EYECON = ITEMS.register("showa_ghost_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"showa_damashii","ghost","ghostdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"showa_rider_45_damashii","ghost","ghostdriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
@@ -519,7 +521,8 @@ public class Ghost_Rider_Items {
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false))
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
 					.AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EYECON_DRIVER_G = ITEMS.register("eyecon_driver_g",

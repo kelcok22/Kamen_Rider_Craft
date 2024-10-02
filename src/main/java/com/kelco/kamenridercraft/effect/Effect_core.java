@@ -28,7 +28,7 @@ public class Effect_core {
             () -> new SlashEffect(MobEffectCategory.BENEFICIAL, 0x21daff));
 
     public static final Holder<MobEffect> SHOT_BOOST= EFFECT.register("shot_boost",
-            () -> new ShotBoostEffect(MobEffectCategory.BENEFICIAL, 0x21daff));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x21daff));
 
     public static final Holder<MobEffect> PUNCH= EFFECT.register("punch",
             () -> new PunchEffect(MobEffectCategory.BENEFICIAL, 0x1d8519));
@@ -37,22 +37,27 @@ public class Effect_core {
             () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0x1d8519) );
 
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
-            () -> new 	GravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final Holder<MobEffect> LOW_GRAVITY= EFFECT.register("low_gravity",
+            () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+                    .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
+
     public static final Holder<MobEffect> SMALL= EFFECT.register("small",
-            () -> new 	SmallEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.small"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> BIG= EFFECT.register("big",
-            () -> new 	BigEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.big"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> FLAT= EFFECT.register("flat",
-            () -> new 	FlatEffect(MobEffectCategory.NEUTRAL, 0xf7fada));
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf7fada));
 
     public static final Holder<MobEffect>  STRETCH= EFFECT.register("stretch",
-            () -> new 	StretchEffect(MobEffectCategory.NEUTRAL, 0xf78d95));
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf78d95));
 
     public static final Holder<MobEffect>  WIDE= EFFECT.register("wide",
             () -> new 	WideEffect(MobEffectCategory.NEUTRAL, 0x87ce87));
@@ -76,22 +81,22 @@ public class Effect_core {
             () -> new ChristmasEffect(MobEffectCategory.HARMFUL, 0x4eff00));
 
     public static final Holder<MobEffect>  FIRE_PUNCH= EFFECT.register("fire_punch",
-            () -> new 	FirePunchEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
     public static final Holder<MobEffect>  EXPLOSION_PUNCH= EFFECT.register("explosion_punch",
-            () -> new 	ExplosionPunchEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
     public static final Holder<MobEffect>  FIRE_SHOT= EFFECT.register("fire_shot",
-            () -> new 	FireShotEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
     public static final Holder<MobEffect>  EXPLOSION_SHOT= EFFECT.register("explosion_shot",
-            () -> new 	ExplosionShotEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
     public static final Holder<MobEffect>  FIRE_ARMOR= EFFECT.register("fire_armor",
-            () -> new 	FireArmorEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
     public static final Holder<MobEffect>  REFLECT= EFFECT.register("reflect",
-            () -> new 	ReflectEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 
     public static final Holder<MobEffect> RETURN= EFFECT.register("return",
             () -> new ReturnEffect(MobEffectCategory.BENEFICIAL, 0xb3b3b3));
@@ -111,8 +116,14 @@ public class Effect_core {
     public static final Holder<MobEffect>  THUNDER= EFFECT.register("thunder",
             () -> new ThunderEffect(MobEffectCategory.HARMFUL, 0x76ecff));
 
+    public static final Holder<MobEffect>  THUNDER_PUNCH= EFFECT.register("thunder_punch",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
+
+    public static final Holder<MobEffect>  THUNDER_SHOT= EFFECT.register("thunder_shot",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
+
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
-            () -> new 	FormLockEffect(MobEffectCategory.HARMFUL, 0xffffff));
+            () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
     public static final Holder<MobEffect>  GREEED= EFFECT.register("greeed",
             () -> new 	GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
@@ -122,6 +133,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect> CONNECT= EFFECT.register("connect",
             () -> new ConnectEffect(MobEffectCategory.BENEFICIAL, 0xad16d5));
+
+    public static final Holder<MobEffect>  GHOST= EFFECT.register("ghost",
+            () -> new 	GhostEffect(MobEffectCategory.BENEFICIAL, 0xf59b14));
 
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
             () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e));
@@ -133,7 +147,7 @@ public class Effect_core {
             () -> new 	SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00));
 
     public static final Holder<MobEffect>  PAUSE= EFFECT.register("pause",
-            () -> new 	PauseEffect(MobEffectCategory.HARMFUL, 0x4eff00)
+            () -> new BasicEffect(MobEffectCategory.HARMFUL, 0x4eff00)
                     .addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), (double)-100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), (double)100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );

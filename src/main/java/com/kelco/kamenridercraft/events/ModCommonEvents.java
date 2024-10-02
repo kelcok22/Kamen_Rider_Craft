@@ -15,10 +15,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
@@ -118,6 +115,14 @@ public class ModCommonEvents {
 							 event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier()+1);
 						}
 					}
+					if (_livEnt.hasEffect(Effect_core.THUNDER_PUNCH)) {
+						if (_livEnt.getMainHandItem().isEmpty()) {
+							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
+							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
+							event.getEntity().level().addFreshEntity(thunder);
+						}
+
+					}
 
 					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
 						_livEnt.igniteForSeconds(event.getEntity().getEffect(Effect_core.FIRE_ARMOR).getAmplifier()+1);
@@ -142,6 +147,12 @@ public class ModCommonEvents {
 					if (_livEnt.hasEffect(Effect_core.EXPLOSION_SHOT)) {
 						boolean flag = event.getEntity().level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
 						event.getEntity().level().explode(null, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), _livEnt.getEffect(Effect_core.EXPLOSION_SHOT).getAmplifier(), flag, Level.ExplosionInteraction.MOB);
+					}
+					if (_livEnt.hasEffect(Effect_core.THUNDER_SHOT)) {
+
+							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
+							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
+							event.getEntity().level().addFreshEntity(thunder);
 					}
 				}
 			}
