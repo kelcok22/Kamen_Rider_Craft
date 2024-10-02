@@ -181,7 +181,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
-        if (itemstack.getItem() instanceof RiderDriverItem) {
+        if (itemstack.getItem() instanceof RiderDriverItem driver) {
             CompoundTag  tag = new CompoundTag();
             Consumer<CompoundTag> data = form ->
             {
@@ -191,8 +191,8 @@ public class RiderDriverItem extends RiderArmorItem {
             };
 
             data.accept(tag);
-            ((RiderDriverItem)itemstack.getItem()).Extra_set_Form_Item(itemstack, ITEM, SLOT,tag);
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+            driver.Extra_set_Form_Item(itemstack, ITEM, SLOT,tag);
         }
     }
 
