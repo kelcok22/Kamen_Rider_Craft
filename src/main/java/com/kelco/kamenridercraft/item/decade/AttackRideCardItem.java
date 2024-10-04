@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.commons.lang3.ArrayUtils;
 
 import com.google.common.collect.Lists;
-import com.ibm.icu.impl.locale.LocaleDistance.Data;
+import com.kelco.kamenridercraft.Config;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
@@ -48,7 +48,6 @@ public class AttackRideCardItem extends BaseItem {
 	public String[] FORMS = new String[] {""};
 	private List<MobEffectInstance> EFFECTS;
 	public Item ITEM;
-	public int DAMAGE;
 	public String SPECIAL;
 
 	public AttackRideCardItem (Properties properties, String[] forms, MobEffectInstance... effects)
@@ -59,13 +58,12 @@ public class AttackRideCardItem extends BaseItem {
 		EFFECTS = Lists.newArrayList(effects);
 	}
 
-	public AttackRideCardItem (Properties properties, String[] forms, Item item, int damage)
+	public AttackRideCardItem (Properties properties, String[] forms, Item item)
 	{
 		super(properties);
 		
 		FORMS = forms;
 		ITEM = item;
-		DAMAGE = damage;
 	}
 
 	public AttackRideCardItem (Properties properties, String[] forms, String special)
@@ -93,7 +91,7 @@ public class AttackRideCardItem extends BaseItem {
 				} else if (ITEM != null) {
 					ItemStack item = new ItemStack(ITEM, 1);
 					if (item != null) {
-						if (DAMAGE > 0 && item.isDamageableItem()) item.set(DataComponents.MAX_DAMAGE, DAMAGE);
+						if (item.isDamageableItem() && Config.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, Config.summonedItemDurability);
 
 						ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
 						entity.setPickUpDelay(0);

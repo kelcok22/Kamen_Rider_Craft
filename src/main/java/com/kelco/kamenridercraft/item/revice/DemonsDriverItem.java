@@ -12,7 +12,10 @@ import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
+
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -21,6 +24,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class DemonsDriverItem extends RiderDriverItem {
@@ -69,12 +73,15 @@ public class DemonsDriverItem extends RiderDriverItem {
 
 	}
 
-	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (get_Form_Item(itemstack, 1) != Base_Form_Item) {
+	@Override
+    public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+    {
+		if (get_Form_Item(belt, 1) != Base_Form_Item) {
 			for (int n = 2; n < 6; n++) {
-			   set_Form_Item(itemstack, Modded_item_core.BLANK_FORM.get(), n);
+				tag.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
+				tag.putInt("slot" + n, Item.getId(Modded_item_core.BLANK_FORM.get()));
 			}
+			CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
 		}
-		super.OnformChange(itemstack, entity, tag);
 	}
 }

@@ -253,7 +253,7 @@ public class KamenRiderCraftCore
 		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
 		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
 		event.put(MobsCore.DAIOUIKA_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
-        event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
+        event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), AnomalocarisDeadmanEntity.setAttributes().build());
         event.put(MobsCore.QUEEN_BEE_DEADMAN.get(), QueenBeeDeadmanEntity.setAttributes().build());
         event.put(MobsCore.WOLF_DEADMAN.get(), WolfDeadmanEntity.setAttributes().build());
 
