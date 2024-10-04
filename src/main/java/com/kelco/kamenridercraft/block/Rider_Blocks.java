@@ -136,6 +136,13 @@ public class Rider_Blocks {
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block>  GHOST_ORE = registerBlock("ghost_eyecon_stone",
+			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block>  DEEPSLATE_GHOST_ORE = registerBlock("deepslate_ghost_eyecon_stone",
+			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block>  GAIA_MEMORY_REFINER = registerBlock("gaia_memory_refiner",
 			() -> new GaiaMemoryRefinerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
