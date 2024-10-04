@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
@@ -19,6 +20,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -43,16 +45,15 @@ public class WDriverItem extends RiderDriverItem {
 	}
 
 	@Override
-	public void OnformChange(ItemStack belt, LivingEntity player, CompoundTag tag) {
-
+    public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+    {
 		if (get_Form_Item(belt, 1)==W_Rider_Items.XTREME_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_GOLD_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) {
 			if (get_Form_Item(belt, 2)!=W_Rider_Items.JOKER_MEMORY.get()) {
 				tag.putString("slot_tex" + 1, (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
 				tag.putInt("slot" + 1, Item.getId(W_Rider_Items.CYCLONE_MEMORY.get()));
+				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
 			}
 		}
-	player.setInvisible(false);
-		tag.putBoolean("Update_form", false);
 	}
 
 	@Override

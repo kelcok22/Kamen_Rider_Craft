@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.ex_aid;
 
 import com.google.common.collect.Lists;
+import com.kelco.kamenridercraft.Config;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
@@ -51,7 +52,7 @@ public class GamerDriverItem extends RiderDriverItem {
     }
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (entity instanceof Player player && !paradxSummoned(player)
+		if (Config.mightyBrotherSpawning && entity instanceof Player player && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) {
