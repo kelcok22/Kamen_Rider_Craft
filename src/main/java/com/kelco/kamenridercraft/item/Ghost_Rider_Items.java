@@ -2,12 +2,7 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -509,9 +504,9 @@ public class Ghost_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
-	/**
-	 fourtyfive_showa_ghost_icon
-**/
+	public static final DeferredItem<Item> TOUSAN_GHOST_EYECON = ITEMS.register("tousan_ghost_eyecon",
+			() -> new CopyFormChangeItem(new Item.Properties(),BOOST_GHOST_EYECON.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> ROYALTY_GAMMA_EYECON = ITEMS.register("royalty_gamma_eyecon",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
@@ -567,6 +562,23 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> DARK_GHOST_DRIVER = ITEMS.register("dark_ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_ghost",DARK_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(DARK_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> UNFINISHED_EXTREMER_DRIVER = ITEMS.register("unfinished_extremer_driver",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","extremer","extremer_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
+					.AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> EXTREMER_DRIVER = ITEMS.register("extremer_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"extremer",UNFINISHED_EXTREMER_DRIVER , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
 
 	public static final DeferredItem<Item> ZERO_SPECTER_DRIVER = ITEMS.register("zero_specter_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"zero_specter",ZERO_SPECTER_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
