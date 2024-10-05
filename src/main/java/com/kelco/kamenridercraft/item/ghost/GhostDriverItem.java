@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
@@ -16,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -38,6 +40,21 @@ public class GhostDriverItem extends RiderDriverItem {
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 		super.inventoryTick(stack,level,entity,slotId,isSelected);
 
+	}
+
+	@Override
+	public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+	{
+		if (get_Form_Item(belt, 1)==Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.FOURTYFIVE_HEISEI_DAMASHII.get()
+		||get_Form_Item(belt, 1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.MUGEN_DAMASHII.get()
+				||get_Form_Item(belt, 1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.SIN_SPECTER_DAMASHII.get()
+		) {
+
+				tag.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
+				tag.putInt("slot" + 1, Item.getId(this.Base_Form_Item));
+				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
+
+		}
 	}
 
 	@Override
