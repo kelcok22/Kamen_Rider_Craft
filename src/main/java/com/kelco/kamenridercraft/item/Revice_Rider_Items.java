@@ -89,7 +89,7 @@ public class Revice_Rider_Items {
 				new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIFFARD_REX_VISTAMP_VICE = ITEMS.register("giffard_rex_vistamp_vice",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate","vice","revice_driver_belt_g",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate","vice","revice_driver_belt_g_vice",
 				new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
