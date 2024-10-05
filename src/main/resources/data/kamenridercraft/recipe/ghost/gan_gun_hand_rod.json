@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "specter",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_ghost_eyecon"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:specter_ghost_eyecon"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:gan_gun_hand_rod"
+  }    
+}
+

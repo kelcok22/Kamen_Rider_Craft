@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:musashi_ghost_eyecon"
+			  "kamenridercraft:tutankhamun_ghost_eyecon"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:ghost/unfinished_eyecon_driver_g",
-	  "kamenridercraft:ghost/gan_gun_saber_nitouryu"
+	  "kamenridercraft:ghost/gan_gun_hand_kama"
 	]
   },
   "sends_telemetry_event": false
