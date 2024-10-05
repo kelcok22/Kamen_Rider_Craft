@@ -2,7 +2,9 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
+import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
@@ -13,6 +15,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -503,15 +506,15 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_HELMET = ITEMS.register("ghost_head",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 	public static final DeferredItem<Item> GHOST_CHESTPLATE = ITEMS.register("ghost_troso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 	public static final DeferredItem<Item> GHOST_LEGGINGS = ITEMS.register("ghost_legs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> GHOST_DRIVER = ITEMS.register("ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"ghost",ORE_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> UNFINISHED_EYECON_DRIVER_G = ITEMS.register("unfinished_eyecon_driver_g",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ghost_grateful","eyecon_driver_g_belt",
@@ -527,65 +530,89 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> EYECON_DRIVER_G = ITEMS.register("eyecon_driver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ghost_grateful",UNFINISHED_EYECON_DRIVER_G , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 
 	public static final DeferredItem<Item> SPECTER_DRIVER = ITEMS.register("specter_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"specter",SPECTER_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> MEGA_ULORDER = ITEMS.register("mega_ulorder",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(NECROM_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(NECROM_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> DARK_GHOST_DRIVER = ITEMS.register("dark_ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_ghost",DARK_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(DARK_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(DARK_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> ZERO_SPECTER_DRIVER = ITEMS.register("zero_specter_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"zero_specter",ZERO_SPECTER_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(ZERO_SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(ZERO_SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> KANON_SPECTER_DRIVER = ITEMS.register("kanon_specter_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"kanon_specter",KANON_SPECTER_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KANON_SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(KANON_SPECTER_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_RED = ITEMS.register("proto_mega_ulorder_red",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(DARK_NECROM_RED_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(DARK_NECROM_RED_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_BLUE = ITEMS.register("proto_mega_ulorder_blue",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(DARK_NECROM_BLUE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(DARK_NECROM_BLUE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_YELLOW = ITEMS.register("proto_mega_ulorder_yellow",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(DARK_NECROM_YELLOW_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(DARK_NECROM_YELLOW_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> PROTO_MEGA_ULORDER_PINK = ITEMS.register("proto_mega_ulorder_pink",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_necrom",NECROM_GHOST_EYECON ,0, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(DARK_NECROM_PINK_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(DARK_NECROM_PINK_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> NEW_GHOST_DRIVER = ITEMS.register("new_ghost_driver",
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_ghost",DARK_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(NEW_ORE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(NEW_ORE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
-	/**
-	gan_gun_saber_blade
-	gan_gun_saber_nitouryu
-	gan_gun_saber_nitouryu_2
-	gan_gun_saber_gun
-	gan_gun_saber_naginata
-	gan_gun_saber_condor_denwor
-	gan_gun_saber_rifle
-	gan_gun_saber_hammer
+	
+	public static final DeferredItem<Item> GAN_GUN_SABER_BLADE = ITEMS.register("gan_gun_saber_blade",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
-	sunglasseslasher_sword
-	gan_gun_hand_rod
-	gan_gun_hand_kama
-	deep_slasher_sword
-		gan_gun_catcher_rod
-**/
+	public static final DeferredItem<Item> GAN_GUN_SABER_NITOURYU = ITEMS.register("gan_gun_saber_nitouryu",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_NITOURYU_2 = ITEMS.register("gan_gun_saber_nitouryu_2",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_GUN = ITEMS.register("gan_gun_saber_gun",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_NAGINATA = ITEMS.register("gan_gun_saber_naginata",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_CONDOR_DENWOR = ITEMS.register("gan_gun_saber_condor_denwor",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_RIFLE = ITEMS.register("gan_gun_saber_rifle",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_SABER_HAMMER = ITEMS.register("gan_gun_saber_hammer",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> SUNGLASSESLASHER = ITEMS.register("sunglasseslasher_sword",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_HAND_ROD = ITEMS.register("gan_gun_hand_rod",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_HAND_KAMA = ITEMS.register("gan_gun_hand_kama",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> DEEP_SLASHER_SWORD = ITEMS.register("deep_slasher_sword",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+	public static final DeferredItem<Item> GAN_GUN_CATCHER_ROD = ITEMS.register("gan_gun_catcher_rod",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

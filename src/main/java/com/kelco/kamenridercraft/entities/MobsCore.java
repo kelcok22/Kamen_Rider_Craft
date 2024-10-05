@@ -207,25 +207,25 @@ public class MobsCore {
              () -> new DeferredSpawnEggItem(GAOH,  0x1d1d1d,0xdea302, new Item.Properties()));
 
      public static final DeferredHolder<EntityType<?>, EntityType<MomotarosEntity>> MOMOTAROS = MOBLIST.register("momotaros",
-             () -> EntityType.Builder.of(MomotarosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":momotaros"));
+             () -> EntityType.Builder.of(MomotarosEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":momotaros"));
 
      public static final DeferredItem<DeferredSpawnEggItem> MOMOTAROS_SPAWN_EGG = ITEMS.register("momotaros_spawn_egg",
              () -> new DeferredSpawnEggItem(MOMOTAROS,  0x790000,0xef0000, new Item.Properties()));
 
      public static final DeferredHolder<EntityType<?>, EntityType<UratarosEntity>> URATAROS = MOBLIST.register("urataros",
-             () -> EntityType.Builder.of(UratarosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":urataros"));
+             () -> EntityType.Builder.of(UratarosEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":urataros"));
 
      public static final DeferredItem<DeferredSpawnEggItem> URATAROS_SPAWN_EGG = ITEMS.register("urataros_spawn_egg",
              () -> new DeferredSpawnEggItem(URATAROS,  0x0075ec,0x003d7d, new Item.Properties()));
 
      public static final DeferredHolder<EntityType<?>, EntityType<KintarosEntity>> KINTAROS = MOBLIST.register("kintaros",
-             () -> EntityType.Builder.of(KintarosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kintaros"));
+             () -> EntityType.Builder.of(KintarosEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kintaros"));
 
      public static final DeferredItem<DeferredSpawnEggItem> KINTAROS_SPAWN_EGG = ITEMS.register("kintaros_spawn_egg",
              () -> new DeferredSpawnEggItem(KINTAROS,  0x212121,0xd2a900, new Item.Properties()));
 
      public static final DeferredHolder<EntityType<?>, EntityType<RyutarosEntity>> RYUTAROS = MOBLIST.register("ryutaros",
-             () -> EntityType.Builder.of(RyutarosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ryutaros"));
+             () -> EntityType.Builder.of(RyutarosEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ryutaros"));
 
      public static final DeferredItem<DeferredSpawnEggItem> RYUTAROS_SPAWN_EGG = ITEMS.register("ryutaros_spawn_egg",
              () -> new DeferredSpawnEggItem(RYUTAROS,  0x3b114e,0x2a0b38, new Item.Properties()));
@@ -318,7 +318,7 @@ public class MobsCore {
 
     
        public static final DeferredHolder<EntityType<?>, EntityType<AnkhEntity>> ANKH = MOBLIST.register("ankh_mob",
-              () -> EntityType.Builder.of(AnkhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ankh_mob"));
+              () -> EntityType.Builder.of(AnkhEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ankh_mob"));
 
        public static final DeferredItem<DeferredSpawnEggItem> ANKH_SPAWN_EGG = ITEMS.register("ankh_spawn_egg",
                 () -> new DeferredSpawnEggItem(ANKH, 0xFF2300, 0x42FF00, new Item.Properties()));
@@ -768,13 +768,13 @@ public class MobsCore {
 
                   
           public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
-                  () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));
+                  () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));
 
           public static final DeferredItem<DeferredSpawnEggItem> RIDER_SUMMON_SPAWN_EGG = ITEMS.register("rider_summon_spawn_egg",
                   () -> new DeferredSpawnEggItem(RIDER_SUMMON, 0xEC008C, 0x222222, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
-                  () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));
+                  () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));
 
           public static final DeferredItem<DeferredSpawnEggItem> PARADX_SUMMON_SPAWN_EGG = ITEMS.register("paradx_summon_spawn_egg",
                   () -> new DeferredSpawnEggItem(PARADX_SUMMON, 0xffa500, 0x00bccf, new Item.Properties()));

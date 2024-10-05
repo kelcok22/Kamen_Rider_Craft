@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:ghost/ghost_driver",
 	  "kamenridercraft:ghost/ghost_ghost_eyecon",
-	  "kamenridercraft:ghost/ghost_logo"
+	  "kamenridercraft:ghost/ghost_logo",
+	  "kamenridercraft:ghost/gan_gun_saber_blade"
 	]
   },
   "sends_telemetry_event": false

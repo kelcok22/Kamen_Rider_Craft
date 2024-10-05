@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:ghost/unfinished_eyecon_driver_g"
+	  "kamenridercraft:ghost/unfinished_eyecon_driver_g",
+	  "kamenridercraft:ghost/gan_gun_saber_nitouryu_2"
 	]
   },
   "sends_telemetry_event": false

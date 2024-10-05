@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:ghost/mega_ulorder"
+	  "kamenridercraft:ghost/mega_ulorder",
+	  "kamenridercraft:ghost/gan_gun_catcher_rod"
 	]
   },
   "sends_telemetry_event": false

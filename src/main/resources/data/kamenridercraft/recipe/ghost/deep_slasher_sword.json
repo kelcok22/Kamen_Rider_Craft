@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "deep_specter",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_ghost_eyecon"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:deep_specter_ghost_eyecon"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:deep_slasher_sword"
+  }    
+}
+
