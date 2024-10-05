@@ -209,12 +209,14 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)));
+                new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
+	);
 
 	public static final DeferredItem<Item> KONG_VISTAMP_VICE = ITEMS.register("kong_vistamp_vice",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","vice","buddy_buckle_belt",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","vice","buddy_buckle_belt_big",
 				new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
-				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)).addAlternative(KONG_VISTAMP_DESTREAM.get()));
+				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+				.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").addAlternative(KONG_VISTAMP_DESTREAM.get()));
 
 	public static final DeferredItem<Item> KONG_VISTAMP = ITEMS.register("kong_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","revi","revice_driver_belt_k",
@@ -232,9 +234,10 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).addAlternative(KAMAKIRI_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 8).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRACHIO_VISTAMP_VICE = ITEMS.register("brachio_vistamp_vice",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_brachio","vice","buddy_buckle_belt",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_brachio","vice","buddy_buckle_belt_big",
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)));
+				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+				.ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json"));
 
 	public static final DeferredItem<Item> BRACHIO_VISTAMP = ITEMS.register("brachio_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_brachio","revi","revice_driver_belt_br",

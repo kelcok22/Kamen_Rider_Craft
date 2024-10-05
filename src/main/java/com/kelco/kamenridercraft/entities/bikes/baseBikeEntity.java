@@ -41,11 +41,14 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	
 	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
 		super(entityType, level);
+		this.setPersistenceRequired();
 	}
 
 
 	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+				.add(Attributes.MAX_HEALTH, 20.0D)
+				.add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
 
 	// Let the player ride the entity
