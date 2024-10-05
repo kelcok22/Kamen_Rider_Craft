@@ -31,7 +31,7 @@ public class Ghost_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 
-	public static String[] Can_use_Eyecons = new String[] {"ghost","specter","necrom","zero_specter","dark_necrom","dark_ghost","kanon_specter"};
+	public static String[] Can_use_Eyecons = new String[] {"ghost","specter","necrom","zero_specter","dark_necrom","dark_ghost","kanon_specter","zero_ghost"};
 
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
@@ -151,6 +151,19 @@ public class Ghost_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
 					.addAlternative(ZERO_SPECTER_DAMASHII.get()).alsoChange2ndSlot(ZERO_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_ORE_DAMASHII = ITEMS.register("proto_ore_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_ore_damashii","zero_ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddNum(2).AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2));
+
+	public static final DeferredItem<Item> PROTO_ORE_GHOST_EYECON = ITEMS.register("proto_ore_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
+					.addAlternative(ZERO_SPECTER_DAMASHII.get()).alsoChange2ndSlot(ZERO_SPECTER_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> KANON_SPECTER_DAMASHII = ITEMS.register("kanon_specter_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kanon_specter_damashii","specter","ghostdriver_belt",
@@ -477,16 +490,26 @@ public class Ghost_Rider_Items {
 	public static final DeferredItem<Item> UNFINISHED_FOURTYFIVE_HEISEI_GHOST_EYECON  = ITEMS.register("unfinished_fourtyfive_heisei_ghost_eyecon",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
+	public static final DeferredItem<Item> FOURTYFIVE_HEISEI_DAMASHII = ITEMS.register("fourtyfive_heisei_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"fourtyfive_heisei_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ChangeModel("damashii.geo.json").ChangeSlot(2));
+
+	public static final DeferredItem<Item> FOURTYFIVE_HEISEI_GHOST_EYECON = ITEMS.register("fourtyfive_heisei_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_heisei","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.alsoChange2ndSlot(FOURTYFIVE_HEISEI_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> FOURTYFIVE_SHOWA_GHOST_EYECON = ITEMS.register("fourtyfive_showa_ghost_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ichigou_damashii","ghost","ghostdriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
+
 	/**
-	fourtyfive_heisei_ghost_icon
-
-	Heisei Eyecon's effects:
-	new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-	new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-	new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-	new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-	new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-
 	 fourtyfive_showa_ghost_icon
 **/
 
@@ -573,7 +596,11 @@ public class Ghost_Rider_Items {
 			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"dark_ghost",DARK_GHOST_EYECON ,1, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(NEW_ORE_GHOST_EYECON).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
-	
+	public static final DeferredItem<Item> ZERO_GHOST_DRIVER = ITEMS.register("zero_ghost_driver",
+			() -> new GhostDriverItem(ArmorMaterials.DIAMOND,"zero_ghost",PROTO_ORE_GHOST_EYECON ,2, GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(PROTO_ORE_DAMASHII).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+
+
 	public static final DeferredItem<Item> GAN_GUN_SABER_BLADE = ITEMS.register("gan_gun_saber_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
