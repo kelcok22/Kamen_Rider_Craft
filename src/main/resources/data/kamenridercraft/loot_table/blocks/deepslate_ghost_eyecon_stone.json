@@ -1,0 +1,424 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "kamenridercraft:deepslate_ghost_eyecon_stone",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"predicates": {
+											"minecraft:enchantments": [
+												{
+													"enchantments": "minecraft:silk_touch",
+													"levels": {
+														"min": 1,
+														"max": 0
+													}
+												}
+											]
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_ghost_eyecon",
+					"weight": 60,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:necrom_ghost_eyecon",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_blue_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_pink_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_red_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:dark_necrom_yellow_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:zero_specter_ghost_eyecon",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:santa_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:yujou_burst_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:sin_specter_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:shinsengumi_ghost_eyecon",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:tenkatoitsu_ghost_eyecon",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:special_ore_ghost_eyecon",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:transform_gamma_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:sister_gamma_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:yurusen_gamma_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:knife_gamma_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:royalty_gamma_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:tousan_ghost_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:new_ore_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:kanon_specter_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:proto_ore_ghost_eyecon",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:mugen_ghost_eyecon",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:apply_bonus",
+							"enchantment": "minecraft:fortune",
+							"formula": "minecraft:ore_drops"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"predicates": {
+								"minecraft:enchantments": [
+									{
+										"enchantments": "minecraft:silk_touch",
+										"levels": {
+											"min": 1
+										}
+									}
+								]
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"random_sequence": "kamenridercraft:deepslate_ghost_eyecon_stone"
+}
