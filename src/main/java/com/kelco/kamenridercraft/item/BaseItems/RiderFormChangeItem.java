@@ -67,6 +67,7 @@ public class RiderFormChangeItem extends BaseItem {
     private Boolean HAS_NEED_ITEM_LIST = false;
     public List<Item> needItemList;
 
+    private Boolean NEED_BASE_FORM = false;
     private RiderFormChangeItem NEED_FORM_SLOT_1;
     private RiderFormChangeItem NEED_FORM_SLOT_2;
     private RiderFormChangeItem NEED_FORM_SLOT_3;
@@ -84,8 +85,13 @@ public class RiderFormChangeItem extends BaseItem {
         RIDER_NAME = ridername;
     }
 
+
     public List<MobEffectInstance> getPotionEffectList() {
         return potionEffectList;
+    }
+
+    public int getSlot() {
+        return Slot;
     }
 
     public int getBelt() {
@@ -237,8 +243,13 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem needBaseForm() {
+     NEED_BASE_FORM=true;
+        return this;
+    }
 
     public RiderFormChangeItem addNeedForm(Item  item, int slot) {
+
         if (slot==1)NEED_FORM_SLOT_1=((RiderFormChangeItem)item);
         else if (slot==2)NEED_FORM_SLOT_2=((RiderFormChangeItem)item);
         else if (slot==3)NEED_FORM_SLOT_3=((RiderFormChangeItem)item);
@@ -290,7 +301,7 @@ public class RiderFormChangeItem extends BaseItem {
         if (this == Modded_item_core.BLANK_FORM.get()) {
             return true;
         }
-        else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
+     else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {
@@ -301,6 +312,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
             }
         }
+        if (NEED_BASE_FORM )if (RiderDriverItem.get_Form_Item(stack, 1)!=belt.Base_Form_Item)return false;
         if (NEED_FORM_SLOT_1!=null )if (RiderDriverItem.get_Form_Item(stack, 1)!=NEED_FORM_SLOT_1)return false;
         if (NEED_FORM_SLOT_2!=null )if (RiderDriverItem.get_Form_Item(stack, 2)!=NEED_FORM_SLOT_2)return false;
         if (NEED_FORM_SLOT_3!=null )if (RiderDriverItem.get_Form_Item(stack, 3)!=NEED_FORM_SLOT_3)return false;

@@ -50,11 +50,9 @@ public class DemonsDriverItem extends RiderDriverItem {
 				}
 				return "belts/"+belt;
 			case EquipmentSlot.CHEST:
-				if (get_Form_Item(itemstack, 2) != Modded_item_core.BLANK_FORM.get()) return riderName+ get_Form_Item(itemstack,2).getFormName(fly);
-				else if (get_Form_Item(itemstack, 3) != Modded_item_core.BLANK_FORM.get()) return riderName+ get_Form_Item(itemstack,3).getFormName(fly);
-			case EquipmentSlot.LEGS: // This is gonna break as soon as we add Condor and Scorpion
-				if (get_Form_Item(itemstack, 4) != Modded_item_core.BLANK_FORM.get()) return riderName+ get_Form_Item(itemstack,4).getFormName(fly);
-				else if (get_Form_Item(itemstack, 5) != Modded_item_core.BLANK_FORM.get()) return riderName+ get_Form_Item(itemstack,5).getFormName(fly);
+				return get_Form_Item(itemstack,1).getFormName(fly)+"_genomix_1";
+			case EquipmentSlot.LEGS:
+				return "_genomix_2";
 			default:
 				return riderName+ get_Form_Item(itemstack,1).getFormName(fly);
 		}	
@@ -63,8 +61,7 @@ public class DemonsDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		int num = 1;
-		if (slot == EquipmentSlot.CHEST) num = (get_Form_Item(itemstack, 2) != Modded_item_core.BLANK_FORM.get() ? 2 : 3);
-		if (slot == EquipmentSlot.LEGS) num = (get_Form_Item(itemstack, 4) != Modded_item_core.BLANK_FORM.get() ? 4 : 5);
+		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
 		
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel());
@@ -73,10 +70,47 @@ public class DemonsDriverItem extends RiderDriverItem {
 
 	}
 
+	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
+
+		switch (currentSlot) {
+			case HEAD ->{
+				if (part =="head") return true;
+				if (part =="body") return true;
+				if (part =="rightArm") return true;
+				if (part =="leftArm") return true;
+				if (part =="rightLeg") return true;
+				if (part =="leftLeg") return true;
+			}
+			case CHEST -> {
+				if (part =="body") return get_Form_Item(itemstack, 4)== Revice_Rider_Items.SCORPION_VISTAMP.get();
+
+				if (get_Form_Item(itemstack, 1)== Revice_Rider_Items.GIANT_SPIDER_VISTAMP.get()){
+					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP_DEMONS.get();
+					if (part == "leftArm") return get_Form_Item(itemstack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP_DEMONS.get();
+
+				}else {
+					if (part == "rightArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+					if (part == "leftArm") return get_Form_Item(itemstack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get();
+				}
+				if (part =="rightLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+				if (part =="leftLeg") return get_Form_Item(itemstack, 5)== Revice_Rider_Items.BATTA_VISTAMP.get();
+			}
+			case LEGS -> {
+				if (part =="body") return get_Form_Item(itemstack, 3)== Revice_Rider_Items.CONDOR_VISTAMP_DEMONS.get();
+
+				if (part =="rightArm") return get_Form_Item(itemstack, 2)== Revice_Rider_Items.MOGURA_VISTAMP.get();
+
+
+			}
+			default -> {}
+		}
+		return false;
+	}
+
 	@Override
     public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
     {
-		if (get_Form_Item(belt, 1) != Base_Form_Item) {
+		if (((RiderFormChangeItem) ITEM).getSlot()==1&Modded_item_core.BLANK_FORM.get()!=ITEM) {
 			for (int n = 2; n < 6; n++) {
 				tag.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
 				tag.putInt("slot" + n, Item.getId(Modded_item_core.BLANK_FORM.get()));
