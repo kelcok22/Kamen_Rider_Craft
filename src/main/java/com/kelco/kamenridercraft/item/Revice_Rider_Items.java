@@ -122,11 +122,17 @@ public class Revice_Rider_Items {
 				new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
 				new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP_VICE = ITEMS.register("gold_spino_vice",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gold_spino","vice","blank",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 6,true,false)).SetPalyerModelInvisible());
+
+
 	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP = ITEMS.register("gold_spino_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_gold_spino","revi","revice_driver_belt_go",
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-				new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
+				new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+				.addAlternative(GOLD_SPINO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRUE_REX_VISTAMP = ITEMS.register("true_rex_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_shin","revi","revice_driver_belt_tr",
@@ -253,10 +259,16 @@ public class Revice_Rider_Items {
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_neo_batta","revi","revice_driver_belt_n",
                 new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)).addAlternative(NEO_BATTA_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+	public static final DeferredItem<Item> KANGAROO_VISTAMP_VICE = ITEMS.register("kangaroo_vistamp_vice",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo","vice","buddy_buckle_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
+					new MobEffectInstance(Effect_core.SMALL, 40, 6,true,false)));
+
 	public static final DeferredItem<Item> KANGAROO_VISTAMP = ITEMS.register("kangaroo_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo","revi","revice_driver_belt_kan",
                 new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
-                new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)).AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)).addAlternative(KANGAROO_VISTAMP_VICE.get())
+				.AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIRIN_VISTAMP = ITEMS.register("kirin_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_kirin","revi","revice_driver_belt_ki",
@@ -307,7 +319,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEGA_BAT_VISTAMP = ITEMS.register("mega_bat_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","live_marvelous","revice_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","live_marvelous","revice_driver_belt_live",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
@@ -343,55 +355,43 @@ public class Revice_Rider_Items {
     		        new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
     		        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	public static final DeferredItem<Item> BATTA_VISTAMP_OVER_DEMONS = ITEMS.register("batta_vistamp_over_demons",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_batta","over_demons","over_demons_driver_belt",
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(KUWAGATA_VISTAMP.get(), 1));
-
 	public static final DeferredItem<Item> BATTA_VISTAMP = ITEMS.register("batta_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_batta","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(BATTA_VISTAMP_OVER_DEMONS.get())
-					.addNeedForm(SPIDER_VISTAMP.get(), 1).AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
+					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 4)
+					.AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	public static final DeferredItem<Item> MOGURA_VISTAMP_OVER_DEMONS = ITEMS.register("mogura_vistamp_over_demons",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mogura","over_demons","over_demons_driver_belt",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(KUWAGATA_VISTAMP.get(), 1));
 
 	public static final DeferredItem<Item> MOGURA_VISTAMP = ITEMS.register("mogura_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mogura","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(MOGURA_VISTAMP_OVER_DEMONS.get())
-					.addNeedForm(SPIDER_VISTAMP.get(), 1).AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
+					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 4)
+					.AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	//public static final DeferredItem<Item> SCORPION_VISTAMP_OVER_DEMONS = ITEMS.register("scorpion_vistamp_over_demons",
-	//		() -> new RiderFormChangeItem(new Item.Properties(),0,"_scorpion","over_demons","over_demons_driver_belt",
-	//				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
-	//				.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(KUWAGATA_VISTAMP.get(), 1));
-	//public static final DeferredItem<Item> SCORPION_VISTAMP = ITEMS.register("scorpion_vistamp",
-	//		() -> new RiderFormChangeItem(new Item.Properties(),0,"_scorpion","demons","demons_driver_belt",
-	//				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
-	//				.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(SCORPION_VISTAMP_OVER_DEMONS.get())
-	//				.addNeedForm(SPIDER_VISTAMP.get(), 1).AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	public static final DeferredItem<Item> ANOMALOCARIS_VISTAMP_OVER_DEMONS = ITEMS.register("anomalocaris_vistamp_over_demons",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_anomalocaris","over_demons","over_demons_driver_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
-					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(KUWAGATA_VISTAMP.get(), 1));
+	public static final DeferredItem<Item> SCORPION_VISTAMP = ITEMS.register("scorpion_vistamp",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_scorpion","demons","demons_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
+				.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddCompatibilityList(new String[] {"over_demons","over_demons_get"})
+					.needBaseForm().AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> ANOMALOCARIS_VISTAMP = ITEMS.register("anomalocaris_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_anomalocaris","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
-					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(ANOMALOCARIS_VISTAMP_OVER_DEMONS.get())
-					.addNeedForm(SPIDER_VISTAMP.get(), 1).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
+					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",
                     new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false)).AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                    new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).needBaseForm()
+					.AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURTLE_VISTAMP = ITEMS.register("turtle_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
@@ -406,7 +406,7 @@ public class Revice_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_COBRA_VISTAMP = ITEMS.register("king_cobra_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_invincible","jeanne","libera_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_invincible","jeanne","libera_driver_belt_k",
                     new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -438,6 +438,11 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+	public static final DeferredItem<Item> CROCODILE_VISTAMP_DEMONS = ITEMS.register("crocodile_vistamp_demons",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_crocodile","demons","demons_driver_belt",
+					new MobEffectInstance(Effect_core.PUNCH, 400, 5,true,false))
+					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(GIANT_SPIDER_VISTAMP.get(),1));
+
 	public static final DeferredItem<Item> CROCODILE_VISTAMP = ITEMS.register("crocodile_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_crocodile","destream","destream_driver_belt_c",
                     new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
@@ -445,7 +450,14 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 400, 5,true,false))
+					.addAlternative(CROCODILE_VISTAMP_DEMONS.get()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
+
+	public static final DeferredItem<Item> KOMODO_DRAGON_VISTAMP_DEMONS = ITEMS.register("komodo_vistamp_demons",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_komodo_dragon","demons","demons_driver_belt",
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 400, 2,true,false))
+					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(GIANT_SPIDER_VISTAMP.get(),1));
 
 	public static final DeferredItem<Item> KOMODO_DRAGON_VISTAMP = ITEMS.register("komodo_dragon_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_komodo_dragon","destream","destream_driver_belt_d",
@@ -454,7 +466,9 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 400, 2,true,false))
+					.addAlternative(KOMODO_DRAGON_VISTAMP_DEMONS.get()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLOOD_VADE_VISTAMP = ITEMS.register("blood_vade_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","blood_vade","vade_belt_belt",
@@ -516,23 +530,19 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
-	//public static final DeferredItem<Item> CONDOR_VISTAMP_OVER_DEMONS = ITEMS.register("condor_vistamp_over_demons",
-	//		() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","over_demons","over_demons_driver_belt",
-	//				new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-	//				.hasStaticWings().ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(KUWAGATA_VISTAMP.get(), 1));
-
-	//public static final DeferredItem<Item> CONDOR_VISTAMP_DEMONS = ITEMS.register("condor_vistamp_demons",
-	//		() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","demons","demons_driver_belt",
-	//				new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-	//				.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addAlternative(CONDOR_VISTAMP_OVER_DEMONS.get())
-	//				.hasStaticWings().addNeedForm(SPIDER_VISTAMP.get(), 1));
+	public static final DeferredItem<Item> CONDOR_VISTAMP_DEMONS = ITEMS.register("batta_vistamp_demons",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_batta", "demons", "demons_driver_belt",
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
+					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
+					.AddCompatibilityList(new String[]{"over_demons", "over_demons_get"}));
 
 	public static final DeferredItem<Item> CONDOR_VISTAMP_VICE = ITEMS.register("condor_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","vice","buddy_buckle_belt",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)));
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
+					.addAlternative(CONDOR_VISTAMP_DEMONS.get()));
 
 	public static final DeferredItem<Item> CONDOR_VISTAMP = ITEMS.register("condor_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","revi","revice_driver_belt_c",
