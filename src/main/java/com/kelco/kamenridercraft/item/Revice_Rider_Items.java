@@ -182,19 +182,20 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).addAlternative(LION_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 8).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP_EVIL = ITEMS.register("jackal_vistamp_evil",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","evil","two_sidriver_evil_belt_j",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","evil","two_sidriver_belt",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)));
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP_LIVE = ITEMS.register("jackal_vistamp_live",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","live","two_sidriver_live_belt_j",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","live","two_sidriver_belt",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_EVIL.get()));
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP_VICE = ITEMS.register("jackal_vistamp_vice",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","vice","buddy_buckle_belt",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","vice","blank",
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_LIVE.get()).SetPalyerModelInvisible());
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_LIVE.get())
+				.ChangeModel("vice_jackal.geo.json").SetPalyerModelInvisible());
 
 	public static final DeferredItem<Item> JACKAL_VISTAMP = ITEMS.register("jackal_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal","revi","revice_driver_belt_j",
@@ -273,14 +274,14 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BAT_VISTAMP_EVIL = ITEMS.register("bat_vistamp_evil",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","evil","two_sidriver_evil_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","evil","two_sidriver_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)));
 
 	public static final DeferredItem<Item> BAT_VISTAMP = ITEMS.register("bat_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","live","two_sidriver_live_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","live","two_sidriver_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -290,7 +291,7 @@ public class Revice_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOLY_WING_VISTAMP = ITEMS.register("holy_wing_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_holy","live","two_sidriver_live_belt_h",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_holy","live","two_sidriver_belt",
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -298,7 +299,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> PERFECT_WING_VISTAMP = ITEMS.register("perfect_wing_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_evility","live","two_sidriver_live_belt_p",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_evility","live","two_sidriver_belt",
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -327,7 +328,7 @@ public class Revice_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUWAGATA_VISTAMP = ITEMS.register("kuwagata_vistamp",
-    		() -> new RiderFormChangeItem(new Item.Properties(),0,"","over_demons","over_demons_driver_belt",
+    		() -> new RiderFormChangeItem(new Item.Properties(),0,"","over_demons","demons_driver_belt",
     		        new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
     		        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
     		        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -335,7 +336,7 @@ public class Revice_Rider_Items {
     		        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIRAFFA_VISTAMP = ITEMS.register("giraffa_vistamp",
-    		() -> new RiderFormChangeItem(new Item.Properties(),0,"_get","over_demons","over_demons_driver_belt",
+    		() -> new RiderFormChangeItem(new Item.Properties(),0,"","over_demons_get","demons_driver_belt",
     		        new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
     		        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
     		        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -422,7 +423,7 @@ public class Revice_Rider_Items {
     		        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CRIMSON_VAIL_VISTAMP = ITEMS.register("crimson_vail_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","crimson_vail","vail_belt_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","crimson_vail","crimson_vail_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -732,6 +733,11 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> OVER_DEMONS_DRIVER = ITEMS.register("over_demons_driver",
 			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"over_demons",KUWAGATA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+
+	public static final DeferredItem<Item> GET_OVER_DEMONS_DRIVER = ITEMS.register("get_over_demons_driver",
+			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"over_demons_get",GIRAFFA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_DEMONS_TROOPER_A = ITEMS.register("demons_driver_demons_trooper_a",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"demons_trooper_alpha",TROOPER_SPIDER_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
