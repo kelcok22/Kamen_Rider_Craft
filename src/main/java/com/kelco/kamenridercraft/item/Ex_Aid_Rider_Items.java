@@ -472,6 +472,12 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> GANBERIZING_GASHAT = ITEMS.register("ganbarizing_gashat",
 			() -> new BaseItem(new Item.Properties()).AddToList(GameCreator.BLANK_GASHAT, 2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
+	public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE = ITEMS.register("proto_mighty_action_x_gashat_origin_remake",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+
+	public static final DeferredItem<Item> TOKI_MEKTI_BRIDAL_GASHAT = ITEMS.register("toki_meki_bridal_gashat",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+
 	public static final DeferredItem<Item> POPPY_DOREMIFA_BEAT_GASHAT_GASHAT = ITEMS.register("poppy_doremifa_beat_gashat",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
