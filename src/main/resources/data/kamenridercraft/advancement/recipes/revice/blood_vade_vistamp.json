@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:queen_bee_vistamp"
+			  "kamenridercraft:blood_vade_vistamp"
 			]
 		  }
 		]
@@ -21,9 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/week_endriver",
-	  "kamenridercraft:revice/needle_kunai",
-	  "kamenridercraft:revice/king_cobra_vistamp"
+	  "kamenridercraft:revice/vade_belt"
 	]
   },
   "sends_telemetry_event": false
