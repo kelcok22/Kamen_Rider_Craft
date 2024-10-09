@@ -70,14 +70,16 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).addAlternative(VOLCANO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+				.ChangeBeltModel("geo/volcano_riderbelt.geo.json").addAlternative(VOLCANO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROLLING_VISTAMP = ITEMS.register("rolling_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_jack_revice","revi","revice_driver_belt_r",
 				new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
+				new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
+				.ChangeBeltModel("geo/volcano_riderbelt.geo.json").AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> THUNDER_GALE_VISTAMP = ITEMS.register("thunder_gale_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_revice","revi","revice_driver_belt_t",
