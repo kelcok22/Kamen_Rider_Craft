@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vade",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:proto_vistamp"
+    }, "C": {
+      "item": "kamenridercraft:blood_vade_vistamp"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:vade_belt"
+  }
+}

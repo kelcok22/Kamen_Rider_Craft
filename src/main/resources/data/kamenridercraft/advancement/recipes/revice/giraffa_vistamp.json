@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:queen_bee_vistamp"
+			  "kamenridercraft:giraffa_vistamp"
 			]
 		  }
 		]
@@ -21,9 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/week_endriver",
-	  "kamenridercraft:revice/needle_kunai",
-	  "kamenridercraft:revice/king_cobra_vistamp"
+	  "kamenridercraft:revice/get_over_demons_driver"
 	]
   },
   "sends_telemetry_event": false

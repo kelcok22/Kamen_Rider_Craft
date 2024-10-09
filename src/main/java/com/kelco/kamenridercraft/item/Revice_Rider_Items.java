@@ -209,7 +209,7 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).addAlternative(JACKAL_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 8).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KONG_VISTAMP_DESTREAM = ITEMS.register("kong_vistamp_destream",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","destream","destream_driver_belt_k",
+        () -> new RiderFormChangeItem(new Item.Properties(),0,"_kong","destream","destream_driver_belt",
                 new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -444,7 +444,7 @@ public class Revice_Rider_Items {
 					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(GIANT_SPIDER_VISTAMP.get(),1));
 
 	public static final DeferredItem<Item> CROCODILE_VISTAMP = ITEMS.register("crocodile_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_crocodile","destream","destream_driver_belt_c",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_crocodile","destream","destream_driver_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -460,7 +460,7 @@ public class Revice_Rider_Items {
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).addNeedForm(GIANT_SPIDER_VISTAMP.get(),1));
 
 	public static final DeferredItem<Item> KOMODO_DRAGON_VISTAMP = ITEMS.register("komodo_dragon_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_komodo_dragon","destream","destream_driver_belt_d",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"_komodo_dragon","destream","destream_driver_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),

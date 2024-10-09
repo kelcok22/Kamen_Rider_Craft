@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:queen_bee_vistamp"
+			  "kamenridercraft:proto_ore_ghost_eyecon"
 			]
 		  }
 		]
@@ -21,9 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/week_endriver",
-	  "kamenridercraft:revice/needle_kunai",
-	  "kamenridercraft:revice/king_cobra_vistamp"
+	  "kamenridercraft:ghost/zero_ghost_driver"
 	]
   },
   "sends_telemetry_event": false
