@@ -54,11 +54,23 @@ public class GameCreator extends MachineBlock {
         return PushReaction.PUSH_ONLY;
      }
 
-     private Item getgashatDrop(int num) {
+     private Item getgashatDrop(int num, Player player) {
  		Random generator = new Random();
+
+		 List<Item> BLANK_GASHAT_PLUS= new ArrayList<Item>();
+		 BLANK_GASHAT_PLUS.clear();
+		 BLANK_GASHAT_PLUS.addAll (BLANK_GASHAT);
+
+		 if (player.getInventory().countItem(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get())!=0){
+			 for (int i = 0; i < 2; i++) {
+				 BLANK_GASHAT_PLUS.add(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get());
+				 BLANK_GASHAT_PLUS.add(Ex_Aid_Rider_Items.TOKI_MEKTI_BRIDAL_GASHAT.get());
+			 }
+			 	 }
+
  		if (num==1){
- 			int rand = generator.nextInt(BLANK_GASHAT.size());
- 			return BLANK_GASHAT.get(rand);
+ 			int rand = generator.nextInt(BLANK_GASHAT_PLUS.size());
+ 			return BLANK_GASHAT_PLUS.get(rand);
  		} else if (num==2){
  			int rand = generator.nextInt(BLANK_DOUBLE_GASHAT.size());
  			return BLANK_DOUBLE_GASHAT.get(rand);
@@ -77,19 +89,19 @@ public class GameCreator extends MachineBlock {
 
 		if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT.get()) {
-				process(player, level, pos, hand, getgashatDrop(0));
+				process(player, level, pos, hand, getgashatDrop(0, player));
 				return ItemInteractionResult.SUCCESS;
 			}
 			else if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.BLANK_GASHAT.get()) {
-				process(player, level, pos, hand, getgashatDrop(1));
+				process(player, level, pos, hand, getgashatDrop(1, player));
 				return ItemInteractionResult.SUCCESS;
 			}
 			else if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_UNFINISHED_GASHAT.get()){
-				process(player, level, pos, hand, getgashatDrop(2));
+				process(player, level, pos, hand, getgashatDrop(2, player));
 				return ItemInteractionResult.SUCCESS;
 			}
 			else if (player.getItemInHand(hand).getItem() == Ex_Aid_Rider_Items.UNFINISHED_HYPER_MUTEKI_GASHAT.get()){
-				process(player, level, pos, hand, getgashatDrop(3));
+				process(player, level, pos, hand, getgashatDrop(3, player));
 				return ItemInteractionResult.SUCCESS;
 			}
 			else if (player.getItemInHand(hand).getItem() == Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()) {
