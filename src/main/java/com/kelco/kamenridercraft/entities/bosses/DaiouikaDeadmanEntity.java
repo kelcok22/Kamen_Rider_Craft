@@ -17,35 +17,32 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class DaiouikaDeadmanEntity extends BaseHenchmenEntity {
-	
 
 
-	
+
+
     public DaiouikaDeadmanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="daiouika_deadman";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Revice_Rider_Items.PARANEGRO.get()));
     }
-    public void remove(Entity.RemovalReason p_149847_) {
+    public void remove(RemovalReason reason) {
+        if (reason == RemovalReason.KILLED) {
+            BaseHenchmenEntity boss = MobsCore.ANOMALOCARIS_DEADMAN.get().create(this.level());
+            if (this.getLastAttacker()instanceof Player playerIn){
+                if (playerIn.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.asItem())!=0) {
 
-        if ( this.isDeadOrDying()) {
-
-            if (this.random.nextInt(10) == 1) {
-                BaseHenchmenEntity boss = MobsCore.ANOMALOCARIS_DEADMAN.get().create(this.level());
-                if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
-                    if (this.getLastAttacker()instanceof Player playerIn) {
-                        playerIn.sendSystemMessage(Component.translatable("<Olteca> And now, I have transcended even Lord Giff himself!").withStyle(ChatFormatting.DARK_GREEN));
-                    }
+
+                    playerIn.sendSystemMessage(Component.translatable("<Olteca> And now, I have transcended even Lord Giff himself!").withStyle(ChatFormatting.DARK_GREEN));
                 }
             }
 
-
         }
-        super.remove(p_149847_);
+        super.remove(reason);
     }
- 
+
 
     public static AttributeSupplier.Builder setAttributes() {
 
@@ -56,6 +53,6 @@ public class DaiouikaDeadmanEntity extends BaseHenchmenEntity {
         		.add(Attributes.ARMOR, 4.0D)
         		.add(Attributes.MAX_HEALTH, 120.0D);
      }
-    
+
 
 }
