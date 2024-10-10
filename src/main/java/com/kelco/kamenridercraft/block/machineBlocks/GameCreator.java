@@ -59,7 +59,7 @@ public class GameCreator extends MachineBlock {
 		 BLANK_GASHAT_PLUS.addAll (BLANK_GASHAT);
 
 		 if (player.getInventory().countItem(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get())!=0){
-			 for (int i = 0; i < 2; i++) {
+			 for (int i = 0; i < 20; i++) {
 				 BLANK_GASHAT_PLUS.add(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get());
 				 BLANK_GASHAT_PLUS.add(Ex_Aid_Rider_Items.TOKI_MEKTI_BRIDAL_GASHAT.get());
 			 }
