@@ -117,5 +117,4 @@ public class GhostDriverItem extends RiderDriverItem {
 		}
 		return false;
 	}
-
 }
