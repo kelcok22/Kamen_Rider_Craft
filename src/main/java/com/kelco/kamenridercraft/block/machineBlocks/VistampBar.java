@@ -84,8 +84,21 @@ public class VistampBar extends MachineBlock {
                 if (player.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.get())!=0){
                     for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
                 }
+                if (player.getInventory().countItem(Revice_Rider_Items.PROTO_CHAMELEON_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.CHAMELEON_VISTAMP.get());
+                }
+                if (player.getInventory().countItem(Revice_Rider_Items.PROTO_PLANARIAN_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.PLANARIAN_VISTAMP.get());
+                }
+                if (player.getInventory().countItem(Revice_Rider_Items.PROTO_QUEEN_BEE_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.QUEEN_BEE_VISTAMP.get());
+                }
+                if (player.getInventory().countItem(Revice_Rider_Items.DAIOUIKA_VISTAMP.get())!=0){
+                    for (int i = 0; i < 4; i++)PROTO_VISTAMP.add(Revice_Rider_Items.KRAKEN_VISTAMP.get());
+                }
                 process(player, level, pos, hand, getVistampDrop(0));
-                PROTO_VISTAMP.removeIf(item -> item == Revice_Rider_Items.VOLCANO_VISTAMP.get() || item == Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
+                PROTO_VISTAMP.removeIf(item -> item == Revice_Rider_Items.VOLCANO_VISTAMP.get() || item == Revice_Rider_Items.THUNDER_GALE_VISTAMP.get()|| item == Revice_Rider_Items.PROTO_PLANARIAN_VISTAMP.get()||
+                        item == Revice_Rider_Items.PROTO_CHAMELEON_VISTAMP.get()|| item == Revice_Rider_Items.PROTO_QUEEN_BEE_VISTAMP.get()|| item == Revice_Rider_Items.DAIOUIKA_VISTAMP.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }
