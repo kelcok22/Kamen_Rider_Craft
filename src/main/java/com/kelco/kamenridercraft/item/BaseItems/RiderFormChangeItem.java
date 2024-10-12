@@ -63,6 +63,9 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem alsoChange2ndSlot;
     private RiderFormChangeItem alsoChange3rdSlot;
 
+    private Boolean hasIncompatibleForms = false;
+    private List<RiderFormChangeItem> incompatibleForms= new ArrayList<RiderFormChangeItem>();
+
     public String[] compatibilityList= new String[] {""};
     private Boolean HAS_NEED_ITEM_LIST = false;
     public List<Item> needItemList;
@@ -152,6 +155,12 @@ public class RiderFormChangeItem extends BaseItem {
     }
     public Boolean HasWingsIfFlying() {
         return FLYING_TEXT;
+    }
+
+    public RiderFormChangeItem AddIncompatibleForm(Item item) {
+        incompatibleForms.add((RiderFormChangeItem) item);
+       hasIncompatibleForms=true;
+        return this;
     }
 
     public RiderFormChangeItem alsoChange1stSlot(Item item) {
@@ -300,6 +309,14 @@ public class RiderFormChangeItem extends BaseItem {
 
         if (this == Modded_item_core.BLANK_FORM.get()) {
             return true;
+        }
+        else if(hasIncompatibleForms) {
+            for (int i = 0; i < incompatibleForms.size(); i++)
+            {
+                if (incompatibleForms.get(i)==RiderDriverItem.get_Form_Item(stack, 1)){
+                    return false;
+                }
+            }
         }
      else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
             return false;
