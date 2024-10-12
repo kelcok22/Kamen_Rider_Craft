@@ -17,6 +17,12 @@ public class BugEffect extends MobEffect {
 	}
 
 	@Override
+	public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
+		return true;
+	}
+
+
+	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
 
 		BaseHenchmenEntity boss  =   MobsCore.BUGSTERVIRUS.get().create(pLivingEntity.level());
@@ -30,7 +36,7 @@ public class BugEffect extends MobEffect {
 				break;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }
