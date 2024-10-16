@@ -122,7 +122,8 @@ public class KamenRiderCraftCore
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-        modEventBus.addListener(KamenRiderCraftCore::entityAttributeEvent);
+        modEventBus.addListener(ModCommonEvents::entityAttributeEvent);
+        modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -133,142 +134,6 @@ public class KamenRiderCraftCore
     {
     }
 
-	private static void entityAttributeEvent(EntityAttributeCreationEvent event) {
-		event.put(MobsCore.SHOCKER_COMBATMAN.get(), ShockerCombatmanEntity.setAttributes().build());
-		event.put(MobsCore.SHOCKER_RIDER.get(), ShockerRidersEntity.setAttributes().build());
-		event.put(MobsCore.DESTRON_COMBATMAN.get(), DestronCombatmanEntity.setAttributes().build());
-		event.put(MobsCore.GOD_WARFARE_AGENT.get(), GODWarfareAgentEntity.setAttributes().build());
-		event.put(MobsCore.RED_FOLLWER.get(), RedFollowerEntity.setAttributes().build());
-		event.put(MobsCore.BLACK_SATAN_SOLDIER.get(), BlackSatanSoldierEntity.setAttributes().build());
-		event.put(MobsCore.ARI_COMMANDO.get(), AriCommandoEntity.setAttributes().build());
-		event.put(MobsCore.DOGMA_FIGHTER.get(), DogmaFighterEntity.setAttributes().build());
-		event.put(MobsCore.COMBAT_ROID.get(), CombatRoidEntity.setAttributes().build());
-		event.put(MobsCore.CHAP.get(), ChapEntity.setAttributes().build());
-		event.put(MobsCore.CHAP_GREY.get(), ChapGreyEntity.setAttributes().build());
-		event.put(MobsCore.SHADOWMOON.get(), ShadowmoonEntity.setAttributes().build());
-
-		event.put(MobsCore.ZU_GUMUN_BA.get(), ZuGumunBaEntity.setAttributes().build());
-
-		event.put(MobsCore.PANTHERAS_LUTEUS.get(), PantherasLuteusEntity.setAttributes().build());
-		event.put(MobsCore.EL_OF_THE_WATER.get(), ElOfTheWaterEntity.setAttributes().build());
-		event.put(MobsCore.ANGUIS_MASCULUS.get(), AnguisMasculusEntity.setAttributes().build());
-		event.put(MobsCore.ANOTHER_AGITO.get(), AnotherAgitoEntity.setAttributes().build());
-
-		event.put(MobsCore.RIOTROOPER.get(), RiotrooperEntity.setAttributes().build());
-		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
-
-		event.put(MobsCore.ZECTROOPER.get(), ZectrooperEntity.setAttributes().build());
-		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());
-		event.put(MobsCore.NEOTROOPER.get(), NeotrooperEntity.setAttributes().build());
-		event.put(MobsCore.CAUCASUS.get(), CaucasusEntity.setAttributes().build());
-
-		event.put(MobsCore.NEW_MOLE_IMAGIN.get(), NewMoleImaginEntity.setAttributes().build());
-		event.put(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandEntity.setAttributes().build());
-		event.put(MobsCore.GAOH.get(), GaohEntity.setAttributes().build());
-		event.put(MobsCore.MOMOTAROS.get(), MomotarosEntity.setAttributes().build());
-		event.put(MobsCore.URATAROS.get(), UratarosEntity.setAttributes().build());
-		event.put(MobsCore.KINTAROS.get(), KintarosEntity.setAttributes().build());
-		event.put(MobsCore.RYUTAROS.get(), RyutarosEntity.setAttributes().build());
-
-		event.put(MobsCore.MASQUERADE.get(), MasqueradeEntity.setAttributes().build());
-		event.put(MobsCore.CLAYDOLL_DOPANT.get(), ClayDollDopantEntity.setAttributes().build());
-		event.put(MobsCore.TERROR_DOPANT.get(), TerrorDopantEntity.setAttributes().build());
-		event.put(MobsCore.NASCA_DOPANT.get(), NazcaDopantEntity.setAttributes().build());
-		// event.put(MobsCore.RED_NASCA_DOPANT.get(),RedNazcaDopantEntity.setAttributes().build());
-		event.put(MobsCore.SMILODON_DOPANT.get(), SmilodonDopantEntity.setAttributes().build());
-		event.put(MobsCore.WEATHER_DOPANT.get(), WeatherDopantEntity.setAttributes().build());
-
-		event.put(MobsCore.FOUNDATION_X_MASQUERADE.get(), FoundationXMasqueradeEntity.setAttributes().build());
-		event.put(MobsCore.COMMANDER_DOPANT.get(), CommanderDopantEntity.setAttributes().build());
-		event.put(MobsCore.ETERNAL.get(), EternalEntity.setAttributes().build());
-
-		event.put(MobsCore.MUCHIRI.get(), MuchiriEntity.setAttributes().build());
-		event.put(MobsCore.YUMMY.get(), YummyEntity.setAttributes().build());
-		event.put(MobsCore.KNIGHT_SOLDIER.get(), KnightSoldierEntity.setAttributes().build());
-		event.put(MobsCore.ANKH.get(), AnkhEntity.setAttributes().build());
-
-		event.put(MobsCore.ANKHCOMPLETE.get(), AnkhCompleteEntity.setAttributes().build());
-		event.put(MobsCore.ANKH_LOST.get(), AnkhLostEntity.setAttributes().build());
-		event.put(MobsCore.UVA.get(), UvaEntity.setAttributes().build());
-		event.put(MobsCore.KAZARI.get(), KazariEntity.setAttributes().build());
-		event.put(MobsCore.MEZOOL.get(), MezoolEntity.setAttributes().build());
-		event.put(MobsCore.GAMEL.get(), GamelEntity.setAttributes().build());
-		event.put(MobsCore.POSEIDON.get(), PoseidonEntity.setAttributes().build());
-		event.put(MobsCore.CORE.get(), CoreEntity.setAttributes().build());
-		event.put(MobsCore.POWERED_UP_CORE.get(), PoweredUpCoreEntity.setAttributes().build());
-		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
-		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
-
-        event.put(MobsCore.GHOULS.get(), GhoulsEntity.setAttributes().build());
-        event.put(MobsCore.MEDUSA_PHANTOM.get(), MedusaPhantomEntity.setAttributes().build());
-        event.put(MobsCore.PHOENIX_PHANTOM.get(), PhoenixPhantomEntity.setAttributes().build());
-        event.put(MobsCore.GREMLIN_PHANTOM.get(), GremlinPhantomEntity.setAttributes().build());
-        event.put(MobsCore.MAGE_FOOTSOLDIER.get(), MageFootsoldierEntity.setAttributes().build());
-        event.put(MobsCore.MAGE_CAPTAIN.get(), MageCaptainEntity.setAttributes().build());
-        event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
-        event.put(MobsCore.WISEMAN.get(), WisemanEntity.setAttributes().build());
-
-		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
-
-		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
-		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.BANG_BANG_BUGSTER.get(), GodaEntity.setAttributes().build());
-	//	event.put(MobsCore.LOVELY_BUGSTER.get(), LovelyBugsterEntity.setAttributes().build());
-		//event.put(MobsCore.SALTY_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.CHARLIE_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.VERNIER_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.GATTON_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.KAIDEN_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.MOTORS_BUGSTER.get(), GodaEntity.setAttributes().build());
-		event.put(MobsCore.GRAPHITE_BUGSTER.get(), GraphiteBugsterEntity.setAttributes().build());
-		//event.put(MobsCore.ARANBURA_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.REVOL_BUGSTER.get(), GodaEntity.setAttributes().build());
-		//event.put(MobsCore.LOVELICA_BUGSTER.get(), LovelicaBugsterEntity.setAttributes().build());
-		event.put(MobsCore.GENM.get(), GenmEntity.setAttributes().build());
-		event.put(MobsCore.POPPY_RED.get(), PoppyRedEntity.setAttributes().build());
-		event.put(MobsCore.RIDEPLAYER.get(), RideplayerEntity.setAttributes().build());
-		event.put(MobsCore.PARADX.get(), ParaDxEntity.setAttributes().build());
-		event.put(MobsCore.CRONUS.get(), CronusEntity.setAttributes().build());
-
-		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
-		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());
-		event.put(MobsCore.BATTLE_RAIDER.get(), BattleRaiderEntity.setAttributes().build());
-		event.put(MobsCore.ABADDON.get(), AbaddonEntity.setAttributes().build());
-		event.put(MobsCore.MAGIA.get(), MagiaEntity.setAttributes().build());
-		event.put(MobsCore.GIGER.get(), GigerEntity.setAttributes().build());
-		event.put(MobsCore.HOROBI.get(), HorobiEntity.setAttributes().build());
-		event.put(MobsCore.JIN.get(), JinEntity.setAttributes().build());
-		event.put(MobsCore.IKAZUCHI.get(), IkazuchiEntity.setAttributes().build());
-		event.put(MobsCore.NAKI.get(), NakiEntity.setAttributes().build());
-		event.put(MobsCore.DODO_MAGIA.get(), DodoMagiaEntity.setAttributes().build());
-		event.put(MobsCore.RAIDER.get(), RaiderEntity.setAttributes().build());
-		event.put(MobsCore.ARK_ZERO.get(), ArkZeroEntity.setAttributes().build());
-		event.put(MobsCore.ABADDON_COMMANDER.get(), AbaddonCommanderEntity.setAttributes().build());
-		event.put(MobsCore.EDEN.get(), EdenEntity.setAttributes().build());
-		event.put(MobsCore.ZAIA.get(), ZaiaEntity.setAttributes().build());
-		event.put(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), DireWolfSoldMagiaEntity.setAttributes().build());
-		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
-
-		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
-		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
-		event.put(MobsCore.DAIOUIKA_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
-        event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), AnomalocarisDeadmanEntity.setAttributes().build());
-        event.put(MobsCore.QUEEN_BEE_DEADMAN.get(), QueenBeeDeadmanEntity.setAttributes().build());
-        event.put(MobsCore.WOLF_DEADMAN.get(), WolfDeadmanEntity.setAttributes().build());
-
-		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
-		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
-		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
-
-		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
-		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
-		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
-
-		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
-		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
-
-	}
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)

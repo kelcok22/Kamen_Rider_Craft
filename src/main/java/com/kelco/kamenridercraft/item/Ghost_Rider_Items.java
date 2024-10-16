@@ -474,12 +474,14 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> GHOST_GHOST_EYECON = ITEMS.register("ghost_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ore_damashii","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_GHOST_EYECON = ITEMS.register("ex_aid_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"ex_aid_damashii","ghost","ghostdriver_belt",
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Eyecons).ChangeModel("damashii.geo.json").ChangeSlot(2).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_FOURTYFIVE_HEISEI_GHOST_EYECON  = ITEMS.register("unfinished_fourtyfive_heisei_ghost_eyecon",
