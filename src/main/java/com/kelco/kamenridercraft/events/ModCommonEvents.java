@@ -6,6 +6,12 @@ import java.util.Objects;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.allies.*;
+import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
+import com.kelco.kamenridercraft.entities.bosses.*;
+import com.kelco.kamenridercraft.entities.footSoldiers.*;
+import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -29,6 +35,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
@@ -36,6 +43,7 @@ import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEv
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
+
 
 
 public class ModCommonEvents {
@@ -164,219 +172,358 @@ public class ModCommonEvents {
 
 	public static class CommonEvents {
 
-			@SubscribeEvent
-			public void addCustomWandererTrades(WandererTradesEvent event) {
-				List<ItemListing> trades = event.getGenericTrades();
-				ItemStack stack = new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1);
-				trades.add((trader, rand) -> new MerchantOffer(
-						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
+		@SubscribeEvent
+		public void addCustomWandererTrades(WandererTradesEvent event) {
+			List<ItemListing> trades = event.getGenericTrades();
+			ItemStack stack = new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1);
+			trades.add((trader, rand) -> new MerchantOffer(
+					new ItemCost(Items.EMERALD, 2),
+					stack, 10, 8, 0.02F));
 
-				trades.add((trader, rand) -> new MerchantOffer(
-						new ItemCost(Items.EMERALD, 2),
-						new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
-			}
+			trades.add((trader, rand) -> new MerchantOffer(
+					new ItemCost(Items.EMERALD, 2),
+					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
+		}
 
 
 		@SubscribeEvent
 		public void addCustomTrades(VillagerTradesEvent event) {
-			if(event.getType() == VillagerProfession.LIBRARIAN) {
+			if (event.getType() == VillagerProfession.LIBRARIAN) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == VillagerProfession.LIBRARIAN) {
+			if (event.getType() == VillagerProfession.LIBRARIAN) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Kuuga_Rider_Items.KUUGA_MANGA.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == VillagerProfession.LIBRARIAN) {
+			if (event.getType() == VillagerProfession.LIBRARIAN) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Modded_item_core.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
 
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.PREFECTER.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
 
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.J_STONE.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
 
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.ZO_STONE.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.GORO_WINE_BOTTLE.get(), 1);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
-			} 
+						stack, 10, 8, 0.02F));
+			}
 
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1);
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
-			} 
+						stack, 10, 8, 0.02F));
+			}
 
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.NOPHOON_CORE.get(), 1);
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
-			} 
-			
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+						stack, 10, 8, 0.02F));
+			}
+
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Ichigo_Rider_Items.SHIN_STONE.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 4),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			
-			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
+
+			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Zero_One_Rider_Items.BLANK_PROGRISEKEY.get(), 3);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Items.EMERALD, 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Zero_One_Rider_Items.HIDEN_METAL.get(), 3),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 3);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
+			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Zero_One_Rider_Items.THOUSAND_KEY.get(), 1);
 				int villagerLevel = 3;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 12),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			
-			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
+
+			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 3);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
+			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get(), 1);
 				int villagerLevel = 1;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
+			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.GASHA_TICKET.get(), 1);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 6),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
-			if(event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
+			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
 				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.ENERGY_DRINK.get(), 1);
 				int villagerLevel = 2;
 
 				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack,10,8,0.02F));
+						stack, 10, 8, 0.02F));
 			}
 
 		}
-		}
+
+	}
+
+	@SubscribeEvent
+    public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
+		event.put(MobsCore.SHOCKER_COMBATMAN.get(), ShockerCombatmanEntity.setAttributes().build());
+		event.put(MobsCore.SHOCKER_RIDER.get(), ShockerRidersEntity.setAttributes().build());
+		event.put(MobsCore.DESTRON_COMBATMAN.get(), DestronCombatmanEntity.setAttributes().build());
+		event.put(MobsCore.GOD_WARFARE_AGENT.get(), GODWarfareAgentEntity.setAttributes().build());
+		event.put(MobsCore.RED_FOLLWER.get(), RedFollowerEntity.setAttributes().build());
+		event.put(MobsCore.BLACK_SATAN_SOLDIER.get(), BlackSatanSoldierEntity.setAttributes().build());
+		event.put(MobsCore.ARI_COMMANDO.get(), AriCommandoEntity.setAttributes().build());
+		event.put(MobsCore.DOGMA_FIGHTER.get(), DogmaFighterEntity.setAttributes().build());
+		event.put(MobsCore.COMBAT_ROID.get(), CombatRoidEntity.setAttributes().build());
+		event.put(MobsCore.CHAP.get(), ChapEntity.setAttributes().build());
+		event.put(MobsCore.CHAP_GREY.get(), ChapGreyEntity.setAttributes().build());
+		event.put(MobsCore.SHADOWMOON.get(), ShadowmoonEntity.setAttributes().build());
+
+		event.put(MobsCore.ZU_GUMUN_BA.get(), ZuGumunBaEntity.setAttributes().build());
+
+		event.put(MobsCore.PANTHERAS_LUTEUS.get(), PantherasLuteusEntity.setAttributes().build());
+		event.put(MobsCore.EL_OF_THE_WATER.get(), ElOfTheWaterEntity.setAttributes().build());
+		event.put(MobsCore.ANGUIS_MASCULUS.get(), AnguisMasculusEntity.setAttributes().build());
+		event.put(MobsCore.ANOTHER_AGITO.get(), AnotherAgitoEntity.setAttributes().build());
+
+		event.put(MobsCore.RIOTROOPER.get(), RiotrooperEntity.setAttributes().build());
+		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
+
+		event.put(MobsCore.ZECTROOPER.get(), ZectrooperEntity.setAttributes().build());
+		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());
+		event.put(MobsCore.NEOTROOPER.get(), NeotrooperEntity.setAttributes().build());
+		event.put(MobsCore.CAUCASUS.get(), CaucasusEntity.setAttributes().build());
+
+		event.put(MobsCore.NEW_MOLE_IMAGIN.get(), NewMoleImaginEntity.setAttributes().build());
+		event.put(MobsCore.NEW_MOLE_IMAGIN_SAND.get(), NewMoleImaginSandEntity.setAttributes().build());
+		event.put(MobsCore.GAOH.get(), GaohEntity.setAttributes().build());
+		event.put(MobsCore.MOMOTAROS.get(), MomotarosEntity.setAttributes().build());
+		event.put(MobsCore.URATAROS.get(), UratarosEntity.setAttributes().build());
+		event.put(MobsCore.KINTAROS.get(), KintarosEntity.setAttributes().build());
+		event.put(MobsCore.RYUTAROS.get(), RyutarosEntity.setAttributes().build());
+
+		event.put(MobsCore.MASQUERADE.get(), MasqueradeEntity.setAttributes().build());
+		event.put(MobsCore.CLAYDOLL_DOPANT.get(), ClayDollDopantEntity.setAttributes().build());
+		event.put(MobsCore.TERROR_DOPANT.get(), TerrorDopantEntity.setAttributes().build());
+		event.put(MobsCore.NASCA_DOPANT.get(), NazcaDopantEntity.setAttributes().build());
+		// event.put(MobsCore.RED_NASCA_DOPANT.get(),RedNazcaDopantEntity.setAttributes().build());
+		event.put(MobsCore.SMILODON_DOPANT.get(), SmilodonDopantEntity.setAttributes().build());
+		event.put(MobsCore.WEATHER_DOPANT.get(), WeatherDopantEntity.setAttributes().build());
+
+		event.put(MobsCore.FOUNDATION_X_MASQUERADE.get(), FoundationXMasqueradeEntity.setAttributes().build());
+		event.put(MobsCore.COMMANDER_DOPANT.get(), CommanderDopantEntity.setAttributes().build());
+		event.put(MobsCore.ETERNAL.get(), EternalEntity.setAttributes().build());
+
+		event.put(MobsCore.MUCHIRI.get(), MuchiriEntity.setAttributes().build());
+		event.put(MobsCore.YUMMY.get(), YummyEntity.setAttributes().build());
+		event.put(MobsCore.KNIGHT_SOLDIER.get(), KnightSoldierEntity.setAttributes().build());
+		event.put(MobsCore.ANKH.get(), AnkhEntity.setAttributes().build());
+
+		event.put(MobsCore.ANKHCOMPLETE.get(), AnkhCompleteEntity.setAttributes().build());
+		event.put(MobsCore.ANKH_LOST.get(), AnkhLostEntity.setAttributes().build());
+		event.put(MobsCore.UVA.get(), UvaEntity.setAttributes().build());
+		event.put(MobsCore.KAZARI.get(), KazariEntity.setAttributes().build());
+		event.put(MobsCore.MEZOOL.get(), MezoolEntity.setAttributes().build());
+		event.put(MobsCore.GAMEL.get(), GamelEntity.setAttributes().build());
+		event.put(MobsCore.POSEIDON.get(), PoseidonEntity.setAttributes().build());
+		event.put(MobsCore.CORE.get(), CoreEntity.setAttributes().build());
+		event.put(MobsCore.POWERED_UP_CORE.get(), PoweredUpCoreEntity.setAttributes().build());
+		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
+		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
+
+		event.put(MobsCore.GHOULS.get(), GhoulsEntity.setAttributes().build());
+		event.put(MobsCore.MEDUSA_PHANTOM.get(), MedusaPhantomEntity.setAttributes().build());
+		event.put(MobsCore.PHOENIX_PHANTOM.get(), PhoenixPhantomEntity.setAttributes().build());
+		event.put(MobsCore.GREMLIN_PHANTOM.get(), GremlinPhantomEntity.setAttributes().build());
+		event.put(MobsCore.MAGE_FOOTSOLDIER.get(), MageFootsoldierEntity.setAttributes().build());
+		event.put(MobsCore.MAGE_CAPTAIN.get(), MageCaptainEntity.setAttributes().build());
+		event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
+		event.put(MobsCore.WISEMAN.get(), WisemanEntity.setAttributes().build());
+
+		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
+
+		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
+		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.BANG_BANG_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//	event.put(MobsCore.LOVELY_BUGSTER.get(), LovelyBugsterEntity.setAttributes().build());
+		//event.put(MobsCore.SALTY_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.CHARLIE_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.VERNIER_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.GATTON_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.KAIDEN_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.MOTORS_BUGSTER.get(), GodaEntity.setAttributes().build());
+		event.put(MobsCore.GRAPHITE_BUGSTER.get(), GraphiteBugsterEntity.setAttributes().build());
+		//event.put(MobsCore.ARANBURA_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.REVOL_BUGSTER.get(), GodaEntity.setAttributes().build());
+		//event.put(MobsCore.LOVELICA_BUGSTER.get(), LovelicaBugsterEntity.setAttributes().build());
+		event.put(MobsCore.GENM.get(), GenmEntity.setAttributes().build());
+		event.put(MobsCore.POPPY_RED.get(), PoppyRedEntity.setAttributes().build());
+		event.put(MobsCore.RIDEPLAYER.get(), RideplayerEntity.setAttributes().build());
+		event.put(MobsCore.PARADX.get(), ParaDxEntity.setAttributes().build());
+		event.put(MobsCore.CRONUS.get(), CronusEntity.setAttributes().build());
+
+		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
+		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());
+		event.put(MobsCore.BATTLE_RAIDER.get(), BattleRaiderEntity.setAttributes().build());
+		event.put(MobsCore.ABADDON.get(), AbaddonEntity.setAttributes().build());
+		event.put(MobsCore.MAGIA.get(), MagiaEntity.setAttributes().build());
+		event.put(MobsCore.GIGER.get(), GigerEntity.setAttributes().build());
+		event.put(MobsCore.HOROBI.get(), HorobiEntity.setAttributes().build());
+		event.put(MobsCore.JIN.get(), JinEntity.setAttributes().build());
+		event.put(MobsCore.IKAZUCHI.get(), IkazuchiEntity.setAttributes().build());
+		event.put(MobsCore.NAKI.get(), NakiEntity.setAttributes().build());
+		event.put(MobsCore.DODO_MAGIA.get(), DodoMagiaEntity.setAttributes().build());
+		event.put(MobsCore.RAIDER.get(), RaiderEntity.setAttributes().build());
+		event.put(MobsCore.ARK_ZERO.get(), ArkZeroEntity.setAttributes().build());
+		event.put(MobsCore.ABADDON_COMMANDER.get(), AbaddonCommanderEntity.setAttributes().build());
+		event.put(MobsCore.EDEN.get(), EdenEntity.setAttributes().build());
+		event.put(MobsCore.ZAIA.get(), ZaiaEntity.setAttributes().build());
+		event.put(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), DireWolfSoldMagiaEntity.setAttributes().build());
+		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
+
+		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
+		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
+		event.put(MobsCore.DAIOUIKA_DEADMAN.get(), DaiouikaDeadmanEntity.setAttributes().build());
+		event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), AnomalocarisDeadmanEntity.setAttributes().build());
+		event.put(MobsCore.QUEEN_BEE_DEADMAN.get(), QueenBeeDeadmanEntity.setAttributes().build());
+		event.put(MobsCore.WOLF_DEADMAN.get(), WolfDeadmanEntity.setAttributes().build());
+
+		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
+		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
+		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
+
+		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
+
+		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
+		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
+
+	}
 
 	@SubscribeEvent
 	public static void entitySpawnRestriction(RegisterSpawnPlacementsEvent event) {
-
 		event.register(MobsCore.SHOCKER_COMBATMAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
 
 		event.register(MobsCore.DESTRON_COMBATMAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
@@ -412,9 +559,9 @@ public class ModCommonEvents {
 		event.register(MobsCore.GAMMA_COMMANDO.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.BUGSTERVIRUS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-	//	event.register(MobsCore.LOVELY_BUGSTER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		//	event.register(MobsCore.LOVELY_BUGSTER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.RIDEPLAYER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-		
+
 		event.register(MobsCore.TRILOBITE_MAGIA.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.DODO_MAGIA_CHICK.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.BATTLE_RAIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
@@ -426,8 +573,9 @@ public class ModCommonEvents {
 		event.register(MobsCore.JYAMATO_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.GM_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
-		/*
+
 		event.register(MobsCore.ANKH.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, AnkhEntity::checkAnkhSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-	 **/
+
+
 	}
 }

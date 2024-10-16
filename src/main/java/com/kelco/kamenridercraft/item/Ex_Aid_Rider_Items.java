@@ -700,12 +700,14 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> KAIGEN_GHOST_GASHAT_LV_1 = ITEMS.register("kaigan_ghost_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost_lv1","ex_aid","gamer_driver_kaigan_ghost_lv_1",
-					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)).ChangeModel("lv_1.geo.json").ChangeBeltModel("geo/lv_1_belt.geo.json").alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()));
 
 	public static final DeferredItem<Item> KAIGEN_GHOST_GASHAT = ITEMS.register("kaigan_ghost_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","ex_aid","gamer_driver_kaigan_ghost",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addSwitchForm(KAIGEN_GHOST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)).addSwitchForm(KAIGEN_GHOST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULL_THROTTLE_DRIVE_GASHAT = ITEMS.register("full_throttle_drive_gashat",
