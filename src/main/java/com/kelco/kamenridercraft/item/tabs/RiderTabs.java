@@ -132,6 +132,10 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_wizard_items.png"))
                     .title(Component.literal("Wizard Rider Items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> GAIMTab = CREATIVE_MODE_TABS.register("krc_350_gaim_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Gaim_Rider_Items.GAIM_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_gaim_items.png"))
+                    .title(Component.literal("Gaim Rider Items")).build());
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> DRIVETab = CREATIVE_MODE_TABS.register("krc_360_drive_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Drive_Rider_Items.DRIVE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_drive_items.png"))
                     .title(Component.literal("Drive Rider Items")).build());
@@ -219,9 +223,10 @@ public class RiderTabs {
     public static List<Item> OOO_TAB_ITEM= new ArrayList<Item>();
 
     public static List<Item> WIZARD_TAB_ITEM= new ArrayList<Item>();
-    public static List<Item> GHOST_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> GAIM_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> DRIVE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> GHOST_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> BUILD_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> ZERO_ONE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> REVICE_TAB_ITEM= new ArrayList<Item>();
@@ -403,6 +408,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.WIZARD_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.WIZARD_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.GAIMTab.get()) {
+            for (int i = 0; i < RiderTabs.GAIM_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.GAIM_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.DRIVETab.get()) {
