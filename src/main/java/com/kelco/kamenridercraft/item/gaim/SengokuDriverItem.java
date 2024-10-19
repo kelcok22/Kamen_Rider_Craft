@@ -48,7 +48,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 
-			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
+			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,1).getFormName(fly);
 
