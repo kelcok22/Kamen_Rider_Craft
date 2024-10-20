@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Gaim_Rider_Items;
 import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -47,13 +48,22 @@ public class SengokuDriverItem extends RiderDriverItem {
 	{
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
-
+			if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
 			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,1).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.CHEST)
+			if (get_Form_Item(itemstack,2)== Gaim_Rider_Items.JIMBER_GAIM_CORE.get()){
+				return"jimbar_arms_"+riderName;
+			}else return"blank";
 
 		else {
-			return riderName + get_Form_Item(itemstack, 2).getFormName(fly);
+			if (riderName=="duke"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
+			if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
+			if (riderName=="gridon"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.LYCHEE_LOCKSEED.get()) return "gridon_lychee";
+			if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.FRESH_ORANGE_LOCKSEED.get()) return "gaim_fresh";
+			if (riderName=="bravo"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KING_DURIAN_LOCKSEED.get()) return "bravo_king";
+			else return riderName + get_Form_Item(itemstack, 2).getFormName(fly);
 		}
 	}
 
@@ -62,7 +72,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-		if (slot== EquipmentSlot.HEAD) {
+		if (slot== EquipmentSlot.HEAD||slot== EquipmentSlot.CHEST) {
  		if (get_Form_Item(itemstack, 1).get_Model()=="default.geo.json") {
 	 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
  			}
@@ -79,7 +89,8 @@ public class SengokuDriverItem extends RiderDriverItem {
 
 			}
 			case CHEST -> {
-
+				if (part =="head") return true;
+				if (part =="body") return true;
 			}
             default -> {}
 		}
