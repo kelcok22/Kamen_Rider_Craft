@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_food",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:candy_wrapper"
+	}, 
+	{
+	  "item": "minecraft:potato"
+	} 
+  ],
+  "result": {
+	"id": "kamenridercraft:potato_snacks"
+  }
+}

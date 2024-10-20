@@ -38,6 +38,25 @@ public class Modded_item_core {
     public static final DeferredItem<Item>  DONUT = ITEMS.register("donut",
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item>  CANDY_WRAPPER = ITEMS.register("candy_wrapper",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item>  GUMMI_CANDY = ITEMS.register("gummi_candy",
+            () -> new BaseItem(new Item.Properties().food(Foods.SWEET_BERRIES)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item>  POTATO_SNACKS = ITEMS.register("potato_snacks",
+            () -> new BaseItem(new Item.Properties().food(Foods.POTATO)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item>  LOLLIPOP = ITEMS.register("lollipop",
+            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item>  CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item>  MARSHMALLOW = ITEMS.register("marshmallow",
+            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
