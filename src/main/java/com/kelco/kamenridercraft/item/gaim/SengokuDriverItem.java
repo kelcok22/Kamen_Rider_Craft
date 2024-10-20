@@ -49,6 +49,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "belts/sengoku_driver_belt_zangetsu_w";
+			if (riderName=="ryugen"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "belts/sengoku_driver_belt_ryugen_y";
 			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
 		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,1).getFormName(fly);
@@ -58,11 +59,15 @@ public class SengokuDriverItem extends RiderDriverItem {
 			}else return"blank";
 
 		else {
-			if (riderName=="duke"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
-			if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
-			if (riderName=="gridon"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.LYCHEE_LOCKSEED.get()) return "gridon_lychee";
-			if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.FRESH_ORANGE_LOCKSEED.get()) return "gaim_fresh";
-			if (riderName=="bravo"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KING_DURIAN_LOCKSEED.get()) return "bravo_king";
+			if (riderName=="ryugen"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
+			else if (riderName=="duke"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
+			else if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
+			else if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get()) return "zangetsu_kachidoki";
+			else if (riderName=="gridon"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.LYCHEE_LOCKSEED.get()) return "gridon_lychee";
+			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.FRESH_ORANGE_LOCKSEED.get()) return "gaim_fresh";
+			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get()) return "gaim_kachidoki";
+			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KIWAMI_LOCKSEED.get()) return "gaim_kiwami";
+			else if (riderName=="bravo"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KING_DURIAN_LOCKSEED.get()) return "bravo_king";
 			else return riderName + get_Form_Item(itemstack, 2).getFormName(fly);
 		}
 	}
