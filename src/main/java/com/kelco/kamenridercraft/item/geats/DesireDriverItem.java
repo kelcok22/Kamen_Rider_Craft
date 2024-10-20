@@ -236,7 +236,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 	public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {
 
 		switch (currentSlot) {
-		case HEAD ->{ 
+		case HEAD, LEGS ->{
 			if (part =="head") return true;
 			if (part =="body") return true;
 			if (part =="rightArm") return true;
@@ -252,18 +252,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 			if (part =="leftArm") return true;
 			
 		}
-		case LEGS -> {
-
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
-			
-		
-		}
-		default -> {}
+            default -> {}
 		}
 		return false;
 	}
