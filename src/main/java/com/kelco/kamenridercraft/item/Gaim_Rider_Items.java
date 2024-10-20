@@ -29,16 +29,15 @@ public class Gaim_Rider_Items {
 
 	public static String[] Can_use_Basic_lockseed = new String[] {"gaim","baron","ryugen","zangetsu","gridon","kurokage"
 			,"bravo","knuckle","bujin_gaim","fifteen","mars","kamuro","jam","kurokage_troopers","idunn","sengoku_duke","baron_black",
-	"savior","maja","proto_gaim","proto_ryugen","proto_baron","proto_gridon","proto_bravo","sylphi","gaim_natsumikan"};
+	"saver","maja","proto_gaim","proto_ryugen","proto_baron","proto_gridon","proto_bravo","sylphi","gaim_natsumikan"};
 
 	public static String[] Can_use_Energy_lockseed = new String[] {"zangetsu_shin","baron_shin","ryugen_shin","duke","sigurd","marika","kurokage_shin"
 	,"tyrant"};
 
 	public static String[] Can_use_Legend_lockseed = new String[] {"gaim","baron","ryugen","zangetsu","gridon","kurokage"
 			,"bravo","knuckle","bujin_gaim","fifteen","mars","kamuro","jam","kurokage_troopers","idunn","sengoku_duke","baron_black",
-			"savior","maja","proto_gaim","proto_ryugen","proto_baron","proto_gridon","proto_bravo","sylphi","gaim_natsumikan"
-	,"zangetsu_shin","baron_shin","ryugen_shin","duke","sigurd","marika","kurokage_shin"
-			,"tyrant"};
+			"saver","maja","proto_gaim","proto_ryugen","proto_baron","proto_gridon","proto_bravo","sylphi","gaim_natsumikan"
+	,"zangetsu_shin","baron_shin","ryugen_shin","duke","sigurd","marika","kurokage_shin","tyrant"};
 
 	public static String[] Can_use_Jimber_Arms = new String[] {"gaim","ryugen","zangetsu","bravo","knuckle"};
 
@@ -180,10 +179,26 @@ public class Gaim_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Jimber_Arms).ResetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
-	//kachidoki_lockseed
-	//zangetsu_kachidoki_lockseed
-	//kiwami_lockseed
-	//yomotsu_heguri_lockseed
+
+	public static final DeferredItem<Item> KACHIDOKI_LOCKSEED = ITEMS.register("kachidoki_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kachidoki_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> ZANGETSU_KACHIDOKI_LOCKSEED = ITEMS.register("zangetsu_kachidoki_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"zangetsu_kachidoki_arms","zangetsu","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> KIWAMI_LOCKSEED = ITEMS.register("kiwami_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kiwami_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ResetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(),1).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"yomotsu_heguri_arms","ryugen","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLOOD_ORANGE_LOCKSEED = ITEMS.register("blood_orange_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"blood_orange_arms","gaim","sengoku_driver_belt",
@@ -235,8 +250,10 @@ public class Gaim_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
-	public static final DeferredItem<Item> BLCK_BARRON_LOCKSEED = ITEMS.register("black_baron_lockseed",
-			() -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+	public static final DeferredItem<Item> KABI_ORANGE_LOCKSEED = ITEMS.register("kabi_orange_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kabi_orange_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> FRESH_ORANGE_LOCKSEED = ITEMS.register("fresh_orange_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"fresh_orange_arms","gaim","sengoku_driver_belt",
@@ -256,16 +273,84 @@ public class Gaim_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
+	public static final DeferredItem<Item> HELEIM_LOCKSEED = ITEMS.register("helheim_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"hells_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> NATSUMIKAN_LOCKSEED = ITEMS.register("natsumikan_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"natsumikan_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_DONGURI_LOCKSEED = ITEMS.register("proto_donguri_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_donguri_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_ORANGE_LOCKSEED = ITEMS.register("proto_orange_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_orange_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_BANANA_LOCKSEED = ITEMS.register("proto_banana_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_banana_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_BUDOU_LOCKSEED = ITEMS.register("proto_budou_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_budou_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTO_DURIAN_LOCKSEED = ITEMS.register("proto_durian_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_durian_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Basic_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> DARK_ORANGE_LOCKSEED = ITEMS.register("dark_orange_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> GAIM_YAMI_CORE = ITEMS.register("gaim_yami",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yami","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+	public static final DeferredItem<Item> DARK_LEMON_ENERGY_LOCKSEED = ITEMS.register("dark_lemon_energy_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"jimbar_black_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ResetFormToBase().alsoChange2ndSlot(GAIM_YAMI_CORE.get()).addNeedItem(DARK_ORANGE_LOCKSEED.get()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHISTMAS_LOCKSEED = ITEMS.register("christmas_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROULETTE_LOCKSEED = ITEMS.register("roulette_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> FAKE_DONGURI_LOCKSEED = ITEMS.register("fake_donguri_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> SID_LOCKSEED = ITEMS.register("sid_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> XIAOLONGBAO_LOCKSEED = ITEMS.register("xiaolongbao_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> HSIAO_LUNG_PAO_LOCKSEED = ITEMS.register("hsiao_lung_pao_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> TOM_YUM_KUNG_LOCKSEED = ITEMS.register("tom_yum_kung_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> YUMMY_LOCKSEED = ITEMS.register("yummy_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> HERO_LOCKSEED = ITEMS.register("hero_lockseed",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 	/**
-	 king_durian_lockseed
-	 helheim_lockseed
-
-	dark_orange_lockseed
-	dark_lemon_energy_lockseed
-
-	natsumikan_lockseed
-
 	drive_lockseed
+	 gaim_lockseed
+	 gaim_lockseed_movie_special
 	wizard_lockseed
 	fourze_lockseed
 	ooo_lockseed
@@ -280,30 +365,15 @@ public class Gaim_Rider_Items {
 	ryuki_lockseed agito_lockseed
 	kuuga_lockseed
 
-	gaim_lockseed
-	gaim_lockseed_movie_special
-
 	rider_ichigo_lockseed
 
 	showa_rider_lockseed
 	heisei_rider_lockseed
 
-
 	sakura_hurricane
 	rose_attacker
 	dandeliner
 	tulip_hopper
-
-	christmas_lockseed
-	roulette_lockseed
-	fake_donguri_lockseed
-	sid_lockseed
-
-	xiaolongbao_lockseed
-	hsiao_lung_pao_lockseed
-	tom_yum_kung_lockseed
-	yummy_lockseed
-	hero_lockseed
 **/
 	public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
@@ -364,7 +434,7 @@ public class Gaim_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","bravo","sengoku_driver_belt_bravo",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
 
-	public static final DeferredItem<Item> SENGOKU_BRAVO_KUROKAGE = ITEMS.register("sengoku_driver_bravo",
+	public static final DeferredItem<Item> SENGOKU_DRIVER_BRAVO = ITEMS.register("sengoku_driver_bravo",
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"bravo",DURIAN_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_BRAVO_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
@@ -448,13 +518,13 @@ public class Gaim_Rider_Items {
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"black_baron",BANANA_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_BLACK_BARON_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-	public static final DeferredItem<Item> BASIC_SAVIOR_CORE= ITEMS.register("basic_savior_core",
+	public static final DeferredItem<Item> BASIC_SAVER_CORE= ITEMS.register("basic_saver_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saver","sengoku_driver_belt_saver",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
 
-	public static final DeferredItem<Item> SENGOKU_DRIVER_SAVIOR= ITEMS.register("sengoku_driver_savior",
+	public static final DeferredItem<Item> SENGOKU_DRIVER_SAVER= ITEMS.register("sengoku_driver_saver",
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"saver",ZAKURO_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(BASIC_SAVIOR_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+					.Add_Extra_Base_Form_Items(BASIC_SAVER_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 	public static final DeferredItem<Item> BASIC_MAJA_CORE= ITEMS.register("basic_maja_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","maja","sengoku_driver_belt_maja",
@@ -464,18 +534,59 @@ public class Gaim_Rider_Items {
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"maja",MAJA_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_MAJA_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
+	public static final DeferredItem<Item> BASIC_SYLPHI_CORE= ITEMS.register("basic_sylphi_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","sylphi","sengoku_driver_belt_sylphi",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
 
-	/**
-	sengoku_driver_proto_gaim
-	sengoku_driver_proto_ryugen
-	sengoku_driver_proto_baron
-	sengoku_driver_proto_gridon
-	sengoku_driver_proto_barvo
+	public static final DeferredItem<Item> SENGOKU_DRIVER_SYLPHI= ITEMS.register("sengoku_driver_sylphi",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"sylphi",HELEIM_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_SYLPHI_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-	sengoku_driver_sylphi
-	sengoku_driver_gaim_natsumikan
+	public static final DeferredItem<Item> SENGOKU_DRIVER_GAIM_NATSUMIKAN = ITEMS.register("sengoku_driver_gaim_natsumikan",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"gaim_natsumikan",NATSUMIKAN_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_GAIM_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-		**/
+	public static final DeferredItem<Item> BASIC_PROTO_GAIM_CORE = ITEMS.register("basic_proto_gaim_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","proto_gaim","sengoku_driver_belt_proto_gaim",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+	public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GAIM = ITEMS.register("sengoku_driver_proto_gaim",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"proto_gaim",PROTO_ORANGE_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_PROTO_GAIM_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
+	public static final DeferredItem<Item> BASIC_PROTO_BARON_CORE = ITEMS.register("basic_proto_baron_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","proto_baron","sengoku_driver_belt_proto_baron",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+	public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_BARON = ITEMS.register("sengoku_driver_proto_baron",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"proto_baron",PROTO_BANANA_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_PROTO_BARON_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
+	public static final DeferredItem<Item> BASIC_PROTO_RYUGEN_CORE= ITEMS.register("basic_proto_ryugen_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","proto_ryugen","sengoku_driver_belt_proto_ryugen",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+	public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_RYUGEN = ITEMS.register("sengoku_driver_proto_ryugen",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"proto_ryugen",PROTO_BUDOU_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_PROTO_RYUGEN_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
+	public static final DeferredItem<Item> BASIC_PROTO_GRIDON_CORE= ITEMS.register("basic_proto_gridon_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","proto_gridon","sengoku_driver_belt_proto_gridon",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+	public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GRIDON = ITEMS.register("sengoku_driver_proto_gridon",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"proto_gridon",PROTO_DONGURI_LOCKSEED, GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_PROTO_GRIDON_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
+	public static final DeferredItem<Item> BASIC_PROTO_BRAVO_CORE= ITEMS.register("basic_proto_bravo_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","proto_bravo","sengoku_driver_belt_proto_bravo",
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false)).ChangeSlot(2));
+
+
+	public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_KUROKAGE = ITEMS.register("sengoku_driver_proto_bravo",
+			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"proto_bravo",PROTO_DURIAN_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_PROTO_BRAVO_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
 
 	public static final DeferredItem<Item> GENESIS_CORE= ITEMS.register("genesis_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","duke","genesis_driver_belt",
