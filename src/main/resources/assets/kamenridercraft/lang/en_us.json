@@ -1399,7 +1399,7 @@
   "item.kamenridercraft.sengoku_driver_sylphi": "Sengoku Driver (Sylphi)",
   "item.kamenridercraft.sengoku_driver_gaim_natsumikan": "Sengoku Driver (Gaim Natsumikan)",
   "item.kamenridercraft.sengoku_driver_proto_gaim": "Sengoku Driver (Proto Gaim)",
-  "item.kamenridercraft.sengoku_driver_proto_baron": "Sengoku Driver (Proto Baro)",
+  "item.kamenridercraft.sengoku_driver_proto_baron": "Sengoku Driver (Proto Baron)",
   "item.kamenridercraft.sengoku_driver_proto_ryugen": "Sengoku Driver (Proto Ryugen)",
   "item.kamenridercraft.sengoku_driver_proto_gridon": "Sengoku Driver (Proto Gridon)",
   "item.kamenridercraft.sengoku_driver_proto_bravo": "Sengoku Driver (Proto Bravo)",
@@ -1427,7 +1427,7 @@
   "item.kamenridercraft.mango_lockseed": "Mango Lockseed",
   "item.kamenridercraft.durian_lockseed": "Durian Lockseed",
   "item.kamenridercraft.kiwi_lockseed": "Kiwi Lockseed",
-  "item.kamenridercraft.lemon_lockseed,": "Lemon Lockseed",
+  "item.kamenridercraft.lemon_lockseed": "Lemon Lockseed",
 
 
   "item.kamenridercraft.lemon_energy_lockseed": "Lemon Energy Lockseed",
@@ -1464,7 +1464,7 @@
   "item.kamenridercraft.proto_budou_lockseed": "Proto Budou Lockseed",
   "item.kamenridercraft.proto_durian_lockseed": "Proto Durian Lockseed",
   "item.kamenridercraft.dark_orange_lockseed": "Black Orange Lockseed",
-  "item.kamenridercraft.dark_lemon_energy_lockseed": "Black Lemon Energy",
+  "item.kamenridercraft.dark_lemon_energy_lockseed": "Black Lemon Energy Lockseed",
   "item.kamenridercraft.christmas_lockseed": "Christmas Lockseed",
   "item.kamenridercraft.roulette_lockseed": "Roulette Lockseed",
   "item.kamenridercraft.fake_donguri_lockseed": "Donguri Lockseed",
@@ -1481,7 +1481,7 @@
   "item.kamenridercraft.gaim_lockseed_movie_special": "Gaim Lockseed (Movie Special Clear Ver.)",
   "item.kamenridercraft.wizard_lockseed": "Wizard Lockseed",
   "item.kamenridercraft.fourze_lockseed": "Fourze Lockseed",
-  "item.kamenridercraft.ooo_lockseed": "OOO Lockseed ",
+  "item.kamenridercraft.ooo_lockseed": "OOO Lockseed",
   "item.kamenridercraft.w_lockseed": "Double Lockseed",
   "item.kamenridercraft.decade_lockseed": "Decade Lockseed",
   "item.kamenridercraft.kiva_lockseed": "Kiva Lockseed",
@@ -1502,7 +1502,7 @@
   "item.kamenridercraft.sakura_hurricane": "Sakura Hurricane Lockseed",
   "item.kamenridercraft.rose_attacker": "Rose Attacker Lockseed",
   "item.kamenridercraft.dandeliner": "Dandeliner Lockseed",
-  "item.kamenridercraft.tulip_hopper,": "Tulip Hopper Lockseed",
+  "item.kamenridercraft.tulip_hopper": "Tulip Hopper Lockseed",
 
   "item.kamenridercraft.drive_logo": "Drive Logo",
   "item.kamenridercraft.drive_head": "Drive Helmet",
@@ -2829,6 +2829,7 @@
 "item.kamenridercraft.gavv_legs": "Gavv Leggings",
 "item.kamenridercraft.henshin_belt_gavv": "Henshin Belt Gavv",
 
+"item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.poppingummy_gochizo": "Poppingummy Gochizo",
 "item.kamenridercraft.punchingummy_gochizo": "Punchingummy Gochizo",
 "item.kamenridercraft.kickingummy_gochizo": "Kickingummy Gochizo",
