@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:sengoku_driver_baron"
+	},
+	"title": "Knight of Spear",
+	"description": "Transform into Kamen Rider Baron",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gaim/gaim",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gaimhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gaimtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gaimlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:sengoku_driver_baron"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

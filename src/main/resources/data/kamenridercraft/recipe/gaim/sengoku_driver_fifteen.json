@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fifteen",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    }, "C": {
+      "item": "kamenridercraft:fifteen_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sengoku_driver_fifteen"
+  }
+}

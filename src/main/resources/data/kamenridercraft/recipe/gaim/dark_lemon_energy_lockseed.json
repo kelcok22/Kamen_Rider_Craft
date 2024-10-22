@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gaim_yami",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:lemon_energy_lockseed"
+    }, 
+    {
+      "item": "minecraft:black_dye"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:dark_lemon_energy_lockseed"
+  }
+}

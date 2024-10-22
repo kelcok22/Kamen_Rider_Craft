@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ryugen",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    }, "C": {
+      "item": "kamenridercraft:budou_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sengoku_driver_ryugen"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:lemon_energy_lockseed"
+	},
+	"title": "Toki no Hana",
+	"description": "Transform into a Jimber Arms form",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gaim/gaim",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gaimhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gaimtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gaimlegs"
+			  ]
+			},
+			"feet": {
+			  "items": "#kamenridercraft:belts/gaim_armor",
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:jimber_gaim_core\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

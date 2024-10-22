@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:genesis_driver_marika"
+	},
+	"title": "Momo-Rider",
+	"description": "Transform into Kamen Rider Marika",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gaim/zangetsu_shin",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gaimhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gaimtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gaimlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:genesis_driver_marika"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

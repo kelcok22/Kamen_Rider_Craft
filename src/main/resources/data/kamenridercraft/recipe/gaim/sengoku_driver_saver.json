@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "saver",
+  "pattern": [
+    "XXX",
+    "XCB",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    }, "C": {
+      "item": "kamenridercraft:zakuro_lockseed"
+    }, "B": {
+      "item": "kamenridercraft:blood_orange_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sengoku_driver_saver"
+  }
+}

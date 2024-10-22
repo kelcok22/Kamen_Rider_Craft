@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:genesis_driver_kurokage_shin"
+	},
+	"title": "The other Peko-Chan",
+	"description": "Transform into Kamen Rider Kurokage Shin",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gaim/kurokage",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gaimhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gaimtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gaimlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:genesis_driver_kurokage_shin"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

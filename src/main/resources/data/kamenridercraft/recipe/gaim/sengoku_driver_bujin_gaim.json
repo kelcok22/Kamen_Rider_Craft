@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bujin_gaim",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    }, "C": {
+      "item": "kamenridercraft:blood_orange_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sengoku_driver_bujin_gaim"
+  }
+}

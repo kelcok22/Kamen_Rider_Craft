@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:whitewizardriver"
+	},
+	"title": "You did well not to lose hope!",
+	"description": "Defeat Kamen Rider Wiseman",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:wizard/infinity",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:wiseman"
+		}
+	  }
+	}
+  }
+}
