@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gaim_kachidoki",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:lemon_energy_lockseed"
+    }, 
+    {
+      "item": "kamenridercraft:peach_energy_lockseed"
+    } , 
+    {
+      "item": "kamenridercraft:melon_energy_lockseed"
+    } , 
+    {
+      "item": "kamenridercraft:cherry_energy_lockseed"
+    } , 
+    {
+      "item": "kamenridercraft:orange_lockseed"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:kachidoki_lockseed"
+  }
+}

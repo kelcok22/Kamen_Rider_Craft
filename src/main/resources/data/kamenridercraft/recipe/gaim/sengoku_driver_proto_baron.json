@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "proto_baron",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    }, "C": {
+      "item": "kamenridercraft:proto_banana_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sengoku_driver_proto_baron"
+  }
+}
