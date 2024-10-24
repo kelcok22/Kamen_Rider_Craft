@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
+import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
@@ -194,6 +195,27 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> VISTAMP_BAR = registerBlock("vistamp_bar",
 			() -> new VistampBar(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
+			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> HELHEIM_WOOD = registerBlock("helheim_wood",
+			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> STRIPPED_HELHEIM_LOG = registerBlock("stripped_helheim_log",
+			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> STRIPPED_HELHEIM_WOOD = registerBlock("stripped_helheim_wood",
+			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> HELHEIM_PLANKS = registerBlock("helheim_planks",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
