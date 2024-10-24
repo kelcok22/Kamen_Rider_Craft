@@ -3,6 +3,9 @@
 
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 
+  "painting.kamenridercraft.kindness.title":"Kindness",
+  "painting.kamenridercraft.kindness.author":"Suetsugu Egawa",
+
 "painting.kamenridercraft.mighty.title":"Mighty",
 "painting.kamenridercraft.mighty.author":"Kelco",
 
@@ -1443,6 +1446,7 @@
   "item.kamenridercraft.kiwami_lockseed": "Kiwami Lockseed",
   "item.kamenridercraft.yomotsu_heguri_lockseed": "Yomotsuheguri Lockseed",
   "item.kamenridercraft.blood_orange_lockseed": "Blood Orange Lockseed",
+  "item.kamenridercraft.blood_orange_lockseed_ochimusha": "Ochimusha Lockseed",
   "item.kamenridercraft.fifteen_lockseed": "Fifteen Lockseed",
   "item.kamenridercraft.golden_ringo_lockseed": "Golden Ringo Lockseed",
   "item.kamenridercraft.silver_ringo_lockseed": "Silver Ringo Lockseed",
