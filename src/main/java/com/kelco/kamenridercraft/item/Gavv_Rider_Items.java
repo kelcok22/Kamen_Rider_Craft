@@ -33,16 +33,28 @@ public class Gavv_Rider_Items {
 					.AddToList(GiveGochizoFoodItem.GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNCHINGUMMY_GOCHIZO = ITEMS.register("punchingummy_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_punchin","gavv","henshin_belt_gavv_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_punchin","gavv","henshin_belt_gavv_belt_punchin",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(GiveGochizoFoodItem.GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICKINGUMMY_GOCHIZO = ITEMS.register("kickingummy_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin","gavv","henshin_belt_gavv_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin","gavv","henshin_belt_gavv_belt_kickin",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(GiveGochizoFoodItem.GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO = ITEMS.register("zakuzakuchips_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_zakuzaku",
+					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddToList(GiveGochizoFoodItem.GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> HIRIHIRICHIPS_GOCHIZO = ITEMS.register("hirihirichips_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_hirihiri",
+					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddToList(GiveGochizoFoodItem.GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAVV_HELMET = ITEMS.register("gavv_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
