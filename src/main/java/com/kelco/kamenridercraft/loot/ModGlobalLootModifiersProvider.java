@@ -41,5 +41,6 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/jungle_temple")).build(),
                 LootItemRandomChanceCondition.randomChance(0.9f).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
+        
     }
 }

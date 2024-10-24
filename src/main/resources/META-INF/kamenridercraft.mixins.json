@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.kelco.kamenridercraft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "structure.JigsawPlacementExpansion",
+    "structure.JigsawExpansion",
+    "structure.PlaceCommandUnlimit",
+    "structure.packet.ClientUpdateStructureBlockExpansion"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

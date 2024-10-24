@@ -56,6 +56,8 @@ public class KamenRiderCraftCore
      public static final String MOD_ID = "kamenridercraft";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final int NEW_STRUCTURE_SIZE = 512;
+
     private static final ResourceLocation BLOCKING_PROPERTY_RESLOC =  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "blocking");
 
     public static List<Item> CHANGE_SWORD_ITEM= new ArrayList<Item>();
