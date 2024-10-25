@@ -1,5 +1,16 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/helheim_wood"}
+  "variants": {
+    "axis=x": {
+      "model": "kamenridercraft:block/helheim_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kamenridercraft:block/helheim_wood"
+    },
+    "axis=z": {
+      "model": "kamenridercraft:block/helheim_wood",
+      "x": 90
+    }
   }
- }
+}
