@@ -1,5 +1,16 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/stripped_helheim_log"}
+  "variants": {
+    "axis=x": {
+      "model": "kamenridercraft:block/stripped_helheim_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kamenridercraft:block/stripped_helheim_log"
+    },
+    "axis=z": {
+      "model": "kamenridercraft:block/stripped_helheim_log",
+      "x": 90
+    }
   }
- }
+}
