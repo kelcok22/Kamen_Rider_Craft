@@ -52,13 +52,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 			if (riderName=="ryugen"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "belts/sengoku_driver_belt_ryugen_y";
 			return "belts/"+get_Form_Item(itemstack,2).getBeltTex();
 		}
-		else if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,1).getFormName(fly);
-		else if (equipmentSlot == EquipmentSlot.CHEST)
-			if (get_Form_Item(itemstack,2)== Gaim_Rider_Items.JIMBER_GAIM_CORE.get()){
-				return"jimbar_arms_"+riderName;
-			}else return"blank";
-
-		else {
+		else if (equipmentSlot == EquipmentSlot.HEAD) {
 			if (riderName=="ryugen"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.YOMOTSU_HEGURI_LOCKSEED.get()) return "ryugen_yomi";
 			else if (riderName=="duke"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get()) return "duke_hex";
 			else if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.WATERMELON_LOCKSEED.get()) return "zangetsu_watermelon";
@@ -71,6 +65,12 @@ public class SengokuDriverItem extends RiderDriverItem {
 			else if (riderName=="bujin_gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.OCHIMUSHA_LOCKSEED.get()) return "bujin_gaim_ochimusha";
 			else return riderName + get_Form_Item(itemstack, 2).getFormName(fly);
 		}
+		else if (equipmentSlot == EquipmentSlot.CHEST)
+			if (get_Form_Item(itemstack,2)== Gaim_Rider_Items.JIMBER_GAIM_CORE.get()){
+				return"jimbar_arms_"+riderName;
+			}else return"blank";
+
+		else return get_Form_Item(itemstack,1).getFormName(fly);
 	}
 
 
@@ -78,7 +78,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-		if (slot== EquipmentSlot.HEAD||slot== EquipmentSlot.CHEST) {
+		if (slot== EquipmentSlot.LEGS||slot== EquipmentSlot.CHEST) {
  		if (get_Form_Item(itemstack, 1).get_Model()=="default.geo.json") {
 	 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
  			}
