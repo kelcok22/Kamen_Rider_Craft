@@ -2,7 +2,9 @@ package com.kelco.kamenridercraft.events;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -18,7 +20,9 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
@@ -26,6 +30,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
@@ -100,6 +105,44 @@ public class ModCommonEvents {
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
 
 			//event.getEntity().setInvisible(false);
+		}
+
+
+		private Item getGochizoDrop(ItemStack itemstack) {
+			Random generator = new Random();
+
+			if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/gummy")))){
+				int rand = generator.nextInt(Gavv_Rider_Items.GUMMY.size());
+				return Gavv_Rider_Items.GUMMY.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/marshmallow")))){
+				int rand = generator.nextInt(Gavv_Rider_Items.MARSHMALLOW.size());
+				return Gavv_Rider_Items.MARSHMALLOW.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/snack")))){
+				int rand = generator.nextInt(Gavv_Rider_Items.SNACK.size());
+				return Gavv_Rider_Items.SNACK.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/cookie")))){
+				return Gavv_Rider_Items.COOKIEKIE_GOCHIZO.get();
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/doughnut")))){
+				return Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
+			}
+			return Items.APPLE;
+		}
+
+		@SubscribeEvent
+		public void Give_Gochizo(LivingEntityUseItemEvent.Finish event) {
+
+			Item GOCHIZO = getGochizoDrop(event.getItem());
+			 if (GOCHIZO!=Items.APPLE) {
+
+				 if (event.getEntity() instanceof Player player) {
+					 if (player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+						 player.getInventory().removeItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get()));
+						 player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+
+						 player.drop(new ItemStack(GOCHIZO), true);
+					 }
+				 }
+			 }
 		}
 
 /*

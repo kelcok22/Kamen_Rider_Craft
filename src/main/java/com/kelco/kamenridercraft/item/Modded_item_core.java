@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.gavv.GiveGochizoFoodItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -43,7 +42,7 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  GUMMI_CANDY = ITEMS.register("gummi_candy",
-            () -> new GiveGochizoFoodItem(new Item.Properties().food(Foods.SWEET_BERRIES)).AddToList(RiderTabs.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.SWEET_BERRIES)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  POTATO_SNACKS = ITEMS.register("potato_snacks",
             () -> new BaseItem(new Item.Properties().food(Foods.POTATO)).AddToList(RiderTabs.Misc_TAB_ITEM));
