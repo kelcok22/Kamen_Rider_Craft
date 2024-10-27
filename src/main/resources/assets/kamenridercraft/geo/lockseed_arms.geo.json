@@ -20,7 +20,7 @@
 					"parent": "bipedHead",
 					"pivot": [0, 24, 0],
 					"cubes": [
-						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.52, "uv": [0, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.55, "uv": [0, 0]},
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 1, "uv": [32, 0]}
 					]
 				},
@@ -35,7 +35,7 @@
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.55, "uv": [16, 16]},
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 1, "uv": [16, 32]},
-						{"origin": [-8, 5.5, -5.101], "size": [16, 16, 7], "inflate": -5, "uv": [18, 73], "mirror": true}
+						{"origin": [-8, 5.5, -5.15], "size": [16, 16, 7], "inflate": -5, "uv": [18, 73], "mirror": true}
 
 					]
 				},
