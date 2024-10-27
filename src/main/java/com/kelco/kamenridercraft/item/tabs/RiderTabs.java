@@ -500,6 +500,14 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.RIDER_DECOR.get(i));
             }
+            event.accept(Rider_Blocks.BLUE_ROSE);
+
+            event.accept(Rider_Blocks.HELHEIM_PLANT);
+            event.accept(Rider_Blocks.HELHEIM_PLANT_2);
+            event.accept(Rider_Blocks.HELHEIM_PLANT_3);
+            event.accept(Rider_Blocks.HELHEIM_PLANT_4);
+
+
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 
