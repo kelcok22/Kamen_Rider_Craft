@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gavv",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gochizo"
+	},
+	"M": {
+	  "item": "kamenridercraft:poppingummy_gochizo"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:henshin_belt_gavv"
+  }	
+}
