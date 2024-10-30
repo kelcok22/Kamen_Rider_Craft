@@ -1,6 +1,7 @@
 {
   "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
+"travelerstitles.kamenridercraft.helheim": "Helheim",
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 
   "painting.kamenridercraft.kindness.title":"Kindness",
@@ -1379,6 +1380,63 @@
   "item.kamenridercraft.gaimhead": "Gaim Helmet",
   "item.kamenridercraft.gaimtroso": "Gaim Chestplate",
   "item.kamenridercraft.gaimlegs": "Gaim Leggings",
+
+  "item.kamenridercraft.musou_saber": "Musou Saber",
+  
+  "item.kamenridercraft.musou_saber_naginata": "Musou Saber (Naginata Mode)",
+  "item.kamenridercraft.blood_musou_saber_naginata": "Musou Saber (Naginata Mode)",
+  "item.kamenridercraft.musou_saber_kusarigama": "Musou Saber (Kusarigama Mode)",
+  "item.kamenridercraft.dj_gun": "DJ Gun",
+  "item.kamenridercraft.dj_gun_taiken_mode": "DJ Gun (Taiken Mode)",
+  "item.kamenridercraft.kachidoki_bata": "Kachidoki Bata",
+  
+  "item.kamenridercraft.zangetsu_dj_gun": "DJ Gun (Zangetsu)",
+  "item.kamenridercraft.zangetsu_dj_gun_taiken_mode": "DJ Gun (Zangetsu) (Taiken Mode)",
+  "item.kamenridercraft.zangetsu_kachidoki_bata": "Kachidoki Bata (Zangetsu)",
+  
+  "item.kamenridercraft.kagematsu": "Kagematsu",
+  "item.kamenridercraft.donkachi": "Donkachi",
+  "item.kamenridercraft.melon_defender": "Melon Defender",
+  "item.kamenridercraft.pine_iron": "Pine Iron",
+  "item.kamenridercraft.ichigo_kunai": "Ichigo Kunai",
+  "item.kamenridercraft.daidaimaru": "Daidaimaru",
+  "item.kamenridercraft.blood_daidaimaru": "Daidaimaru (Blood Orange Ver)",
+  "item.kamenridercraft.banana_spear": "Banana Spear",
+  
+  "item.kamenridercraft.joeshuimu": "Joeshuimu",
+  "item.kamenridercraft.sheimu": "Sheimu",
+  "item.kamenridercraft.dau": "Dau",
+  "item.kamenridercraft.guronbaryamu": "Guronbaryamu",
+
+  "item.kamenridercraft.budou_ryuhou": "Budou Ryuhou",
+  "item.kamenridercraft.mango_punisher": "Mango Punisher",
+  "item.kamenridercraft.duri_noko": "Duri Noko",
+  "item.kamenridercraft.kiwi_gekirin": "Kiwi Gekirin",
+
+  "item.kamenridercraft.shine_donkachi": "Shine Donkachi",
+  "item.kamenridercraft.hells_cane": "Hells Cane",
+  "item.kamenridercraft.shine_lychee_sword": "Shine Lychee Sword",
+  "item.kamenridercraft.king_duri_noko": "Giga Duri Noko",
+  
+  "item.kamenridercraft.kabi_daidaimaru": "Kabi Daidaimaru",
+  "item.kamenridercraft.maja_yomimaru": "Maja's Sword",
+  
+  "item.kamenridercraft.sonic_arrow": "Sonic Arrow",
+  "item.kamenridercraft.kagematsu_shin": "Kagematsu Shin",
+  
+  "item.kamenridercraft.suika_sojinto": "Suika Sojinto",
+  "item.kamenridercraft.suika_sojinto_baron_ver": "Suika Sojinto (Baron ver.)",
+  "item.kamenridercraft.suika_sojinto_knuckle_ver": "Suika Sojinto (Knuckle ver.)",
+  
+  "item.kamenridercraft.yomimaru": "Yomimaru",
+  "item.kamenridercraft.sword_bringer": "Sword Bringer",
+  "item.kamenridercraft.apple_reflecter": "Apple Reflecter",
+  "item.kamenridercraft.souginjou": "Souginjou",
+  "item.kamenridercraft.dark_daidaimaru": "Dark Daidaimaru",
+  "item.kamenridercraft.watermelon_defender": "Watermelon Defender",
+
+  "item.kamenridercraft.saver_arrow": "Saver Arrow",
+  "item.kamenridercraft.lemon_rapier": "Lemon Rapier",
 
   "item.kamenridercraft.sengoku_driver_gaim": "Sengoku Driver (Gaim)",
   "item.kamenridercraft.sengoku_driver_baron": "Sengoku Driver (Baron)",
@@ -3041,6 +3099,11 @@
 "entity.kamenridercraft.mage_captain": "Imperial Captain",
 "entity.kamenridercraft.sorcerer": "Kamen Rider Sorcerer",
 "entity.kamenridercraft.wiseman": "Kamen Rider Wiseman",
+"entity.kamenridercraft.kurokage_trooper": "Kurokage Trooper",
+"entity.kamenridercraft.zangetsu_shin": "Kamen Rider Zangetsu Shin",
+"entity.kamenridercraft.marika": "Kamen Rider Marika",
+"entity.kamenridercraft.duke": "Kamen Rider Duke",
+"entity.kamenridercraft.sigurd": "Kamen Rider Sigurd",
 "entity.kamenridercraft.gamma_commandos": "Gamma Commando",
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -3164,6 +3227,12 @@
 "item.kamenridercraft.mage_footsoldier_spawn_egg": "Imperial Guard Spawn Egg",
 "item.kamenridercraft.sorcerer_spawn_egg": "Sorcerer Spawn Egg",
   "item.kamenridercraft.wiseman_spawn_egg": "Wiseman Spawn Egg",
+
+  "item.kamenridercraft.kurokage_trooper_spawn_egg": "Kurokage Trooper Spawn Egg",
+  "item.kamenridercraft.zangetsu_shin_spawn_egg": "Zangetsu Shin Spawn Egg",
+  "item.kamenridercraft.marika_spawn_egg": "Marika Spawn Egg",
+  "item.kamenridercraft.duke_spawn_egg": "Duke Spawn Egg",
+  "item.kamenridercraft.sigurd_spawn_egg": "Sigurd Spawn Egg",
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
 

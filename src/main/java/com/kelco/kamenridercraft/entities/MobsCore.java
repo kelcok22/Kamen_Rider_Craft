@@ -451,6 +451,37 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(WISEMAN,  0xffffff,0xd79e0b, new Item.Properties()));
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<KurokageTrooperEntity>> KUROKAGE_TROOPER = MOBLIST.register("kurokage_trooper",
+                  () -> EntityType.Builder.of(KurokageTrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kurokage_trooper"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> KUROKAGE_TROOPER_SPAWN_EGG = ITEMS.register("kurokage_trooper_spawn_egg",
+                  () -> new DeferredSpawnEggItem(KUROKAGE_TROOPER, 0x6a4916, 0x333333, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZangetsuShinEntity>> ZANGETSU_SHIN = MOBLIST.register("zangetsu_shin",
+                  () -> EntityType.Builder.of(ZangetsuShinEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zangetsu_shin"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> ZANGETSU_SHIN_SPAWN_EGG = ITEMS.register("zangetsu_shin_spawn_egg",
+                  () -> new DeferredSpawnEggItem(ZANGETSU_SHIN, 0xa0ffa9, 0xfefefe, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MarikaEntity>> MARIKA = MOBLIST.register("marika",
+                  () -> EntityType.Builder.of(MarikaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":marika"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> MARIKA_SPAWN_EGG = ITEMS.register("marika_spawn_egg",
+                  () -> new DeferredSpawnEggItem(MARIKA, 0xfcfb81, 0xff84ac, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DukeEntity>> DUKE = MOBLIST.register("duke",
+                  () -> EntityType.Builder.of(DukeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":duke"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> DUKE_SPAWN_EGG = ITEMS.register("duke_spawn_egg",
+                  () -> new DeferredSpawnEggItem(DUKE, 0xe5ec25, 0x25c1ec, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<SigurdEntity>> SIGURD = MOBLIST.register("sigurd",
+                  () -> EntityType.Builder.of(SigurdEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":sigurd"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> SIGURD_SPAWN_EGG = ITEMS.register("sigurd_spawn_egg",
+                  () -> new DeferredSpawnEggItem(SIGURD, 0xff0000, 0xd2f3e8, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<GammaCommandoEntity>> GAMMA_COMMANDO = MOBLIST.register("gamma_commandos",
                   () -> EntityType.Builder.of(GammaCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamma_commandos"));
           

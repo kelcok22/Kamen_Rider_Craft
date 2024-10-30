@@ -1,5 +1,5 @@
 {
-    "parent": "kamenridercraft4th:block/hellrock_lockseedblock",
+    "parent": "kamenridercraftblock/hellrock_lockseedblock",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

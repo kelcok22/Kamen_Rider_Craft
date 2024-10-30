@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:orange_lockseed"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gaim/sengoku_driver_gaim",
+	  "kamenridercraft:gaim/daidaimaru",
+	  "kamenridercraft:gaim/kabi_orange_lockseed",
+	  "kamenridercraft:gaim/fresh_orange_lockseed",
+	  "kamenridercraft:gaim/dark_orange_lockseed",
+	  "kamenridercraft:ghost/gaim_ghost_eyecon",
+	  "kamenridercraft:geats/sengoku_driver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zangetsu_kachidoki",
+  "pattern": [
+    "XXX",
+    "XSX",
+    "XMX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:zangetsu_kachidoki_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:zangetsu_kachidoki_bata"
+  }    
+}
+

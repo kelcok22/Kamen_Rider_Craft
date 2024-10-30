@@ -585,6 +585,12 @@ public class RiderTabs {
             event.accept(MobsCore.SORCERER_SPAWN_EGG);
             event.accept(MobsCore.WISEMAN_SPAWN_EGG);
 
+            event.accept(MobsCore.KUROKAGE_TROOPER_SPAWN_EGG);
+            event.accept(MobsCore.ZANGETSU_SHIN_SPAWN_EGG);
+            event.accept(MobsCore.MARIKA_SPAWN_EGG);
+            event.accept(MobsCore.DUKE_SPAWN_EGG);
+            event.accept(MobsCore.SIGURD_SPAWN_EGG);
+
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
