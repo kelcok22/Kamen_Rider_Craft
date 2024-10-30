@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:suika_lockseed"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gaim/suika_sojinto",
+	  "kamenridercraft:gaim/suika_sojinto_baron_ver",
+	  "kamenridercraft:gaim/suika_sojinto_knuckle_ver"
+	]
+  },
+  "sends_telemetry_event": false
+}

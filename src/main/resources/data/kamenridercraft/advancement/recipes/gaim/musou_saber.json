@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:musou_saber"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gaim/musou_saber_naginata",
+	  "kamenridercraft:gaim/blood_musou_saber_naginata",
+	  "kamenridercraft:gaim/musou_saber_kusarigama"
+	]
+  },
+  "sends_telemetry_event": false
+}

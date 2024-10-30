@@ -1,5 +1,5 @@
 {
-    "parent": "kamenridercraft4th:block/himawari_lockseedblock",
+    "parent": "kamenridercraftblock/himawari_lockseedblock",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

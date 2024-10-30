@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gaim_jinba",
+  "pattern": [
+    "XMX",
+    "XSX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": [
+      {
+        "item": "kamenridercraft:lemon_energy_lockseed"
+      },
+      {
+        "item": "kamenridercraft:peach_energy_lockseed"
+      },
+      {
+        "item": "kamenridercraft:cherry_energy_lockseed"
+      },
+      {
+        "item": "kamenridercraft:melon_energy_lockseed"
+      }
+    ]
+  },
+  "result": {
+    "id": "kamenridercraft:sonic_arrow"
+  }    
+}
+

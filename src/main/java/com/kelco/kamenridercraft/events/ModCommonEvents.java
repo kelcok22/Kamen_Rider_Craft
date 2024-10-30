@@ -506,6 +506,12 @@ public class ModCommonEvents {
 		event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
 		event.put(MobsCore.WISEMAN.get(), WisemanEntity.setAttributes().build());
 
+		event.put(MobsCore.KUROKAGE_TROOPER.get(), KurokageTrooperEntity.setAttributes().build());
+		event.put(MobsCore.ZANGETSU_SHIN.get(), ZangetsuShinEntity.setAttributes().build());
+		event.put(MobsCore.MARIKA.get(), MarikaEntity.setAttributes().build());
+		event.put(MobsCore.DUKE.get(), DukeEntity.setAttributes().build());
+		event.put(MobsCore.SIGURD.get(), SigurdEntity.setAttributes().build());
+
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());

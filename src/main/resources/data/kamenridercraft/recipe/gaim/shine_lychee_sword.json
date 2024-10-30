@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gridon_lychee",
+  "pattern": [
+    "XXX",
+    "XSX",
+    "XMX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:himawari_lockseed"
+    },
+    "S": {
+      "item": "kamenridercraft:base_sword"
+    },
+    "M": {
+      "item": "kamenridercraft:lychee_lockseed"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:shine_lychee_sword"
+  }    
+}
+

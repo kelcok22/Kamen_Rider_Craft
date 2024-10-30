@@ -337,6 +337,12 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WISEMAN.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.KUROKAGE_TROOPER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZANGETSU_SHIN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MARIKA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DUKE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SIGURD.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
