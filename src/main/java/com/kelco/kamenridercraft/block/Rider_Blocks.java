@@ -19,11 +19,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -216,6 +212,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> HELHEIM_PLANKS = registerBlock("helheim_planks",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> HELHEIM_VINE = registerBlock("helheim_vine",
+			() -> new VineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.VINE)
+					));
 
 	public static final DeferredBlock<Block>HELHEIM_PLANT = registerBlock("helheim_plant",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
