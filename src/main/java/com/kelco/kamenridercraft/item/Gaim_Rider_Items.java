@@ -8,10 +8,7 @@ import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -769,6 +766,11 @@ public class Gaim_Rider_Items {
 
 	public static final DeferredItem<Item> MAJAS_SWORD = ITEMS.register("maja_yomimaru",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
+	public static final DeferredItem<Item> GAIM_HORSE_ARMOR = ITEMS.register("gaim_horse_armor",
+			() -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
+					false, new Item.Properties().stacksTo(1)).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
