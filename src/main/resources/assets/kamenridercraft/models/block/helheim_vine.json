@@ -1,7 +1,6 @@
 {
-
     "ambientocclusion": false,
-
+    "render_type": "minecraft:cutout",
     "textures": {
         "particle": "kamenridercraft:block/helheim_vine",
         "vine": "kamenridercraft:block/helheim_vine"
