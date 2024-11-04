@@ -243,9 +243,18 @@ public class Gotchard_Rider_Items {
      * mackraken
      * jyamatanoorochi
      * ninetail
-     * ufo_x
-     * 
-     * nanmonite
+     */
+
+
+	public static final DeferredItem<Item> UFO_X_RIDE_CHEMY_CARD = ITEMS.register("ufo_x_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_cross_ufo_x","gotchard","gotchardriver_belt_s",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 2, true, false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+     /* nanmonite
      * akumanocaris
      * pakuraptor
      * ojilacanth
