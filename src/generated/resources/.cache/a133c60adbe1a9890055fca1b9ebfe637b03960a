@@ -1,0 +1,4 @@
+// 1.21.1	2024-11-04T10:10:36.8963741	Tags for minecraft:block mod id kamenridercraft
+1cb6816b51f4d7e4b381ce2ec344da6e6456ee44 data/minecraft/tags/block/fences.json
+68c8d1bcef00ca8b21b1523cbc560f6c13d28fcb data/minecraft/tags/block/fence_gates.json
+dbe2f8ef53ff571e1e3259b4f2476ae33968fafa data/minecraft/tags/block/mineable/axe.json

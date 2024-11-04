@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "kamenridercraft:block/helheim_door_bottom",
+    "top": "kamenridercraft:block/helheim_door_top"
+  }
+}

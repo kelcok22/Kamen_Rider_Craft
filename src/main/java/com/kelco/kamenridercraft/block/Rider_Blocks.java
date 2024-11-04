@@ -21,7 +21,9 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -213,43 +215,70 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
-	public static final DeferredBlock<Block> HELHEIM_VINE = registerBlock("helheim_vine",
+	public static final DeferredBlock<StairBlock> HELHEIM_STAIRS = registerBlock("helheim_stairs",
+			() -> new StairBlock(Rider_Blocks.HELHEIM_PLANKS.get().defaultBlockState(),
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+	public static final DeferredBlock<SlabBlock> HELHEIM_SLAB = registerBlock("helheim_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+	public static final DeferredBlock<PressurePlateBlock> HELHEIM_PRESSURE_PLATE = registerBlock("helheim_pressure_plate",
+			() -> new PressurePlateBlock(BlockSetType.OAK,
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+	public static final DeferredBlock<ButtonBlock> HELHEIM_BUTTON = registerBlock("helheim_button",
+			() -> new ButtonBlock(BlockSetType.OAK,20,
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+
+	public static final DeferredBlock<FenceBlock> HELHEIM_FENCE = registerBlock("helheim_fence",
+			() -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+	public static final DeferredBlock<FenceGateBlock> HELHEIM_FENCE_GATE = registerBlock("helheim_fence_gate",
+			() -> new FenceGateBlock(WoodType.OAK,BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+	public static final DeferredBlock<DoorBlock> HELHEIM_DOOR = registerBlock("helheim_door",
+			() -> new DoorBlock(BlockSetType.OAK,
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+	public static final DeferredBlock<TrapDoorBlock> HELHEIM_TRAPDOOR = registerBlock("helheim_trapdoor",
+			() -> new TrapDoorBlock(BlockSetType.OAK,
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
+
+
+	public static final DeferredBlock<VineBlock> HELHEIM_VINE = registerBlock("helheim_vine",
 			() -> new VineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.VINE)
 					));
 
-	public static final DeferredBlock<Block>HELHEIM_PLANT = registerBlock("helheim_plant",
+	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT = registerBlock("helheim_plant",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final DeferredBlock<Block> POTTED_HELHEIM_PLANT = registerBlock("potted_helheim_plant",
+	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT = registerBlock("potted_helheim_plant",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
-	public static final DeferredBlock<Block>HELHEIM_PLANT_1 = registerBlock("helheim_plant_1",
+	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_1 = registerBlock("helheim_plant_1",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final DeferredBlock<Block> POTTED_HELHEIM_PLANT_1 = registerBlock("potted_helheim_plant_1",
+	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_1 = registerBlock("potted_helheim_plant_1",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_1.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
-	public static final DeferredBlock<Block>HELHEIM_PLANT_2 = registerBlock("helheim_plant_2",
+	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_2 = registerBlock("helheim_plant_2",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final DeferredBlock<Block> POTTED_HELHEIM_PLANT_2 = registerBlock("potted_helheim_plant_2",
+	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_2 = registerBlock("potted_helheim_plant_2",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_2.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
-	public static final DeferredBlock<Block>HELHEIM_PLANT_3 = registerBlock("helheim_plant_3",
+	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_3 = registerBlock("helheim_plant_3",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final DeferredBlock<Block> POTTED_HELHEIM_PLANT_3 = registerBlock("potted_helheim_plant_3",
+	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_3 = registerBlock("potted_helheim_plant_3",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_3.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
-	public static final DeferredBlock<Block>HELHEIM_PLANT_4 = registerBlock("helheim_plant_4",
+	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_4 = registerBlock("helheim_plant_4",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
 
-	public static final DeferredBlock<Block> POTTED_HELHEIM_PLANT_4 = registerBlock("potted_helheim_plant_4",
+	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_4 = registerBlock("potted_helheim_plant_4",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_4.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
 
