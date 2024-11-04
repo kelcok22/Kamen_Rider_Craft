@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/daybreak_steamliner_ride_chemy_card"
+    "layer0": "kamenridercraft:item/steamliner_daybreak_chemy_card"
   }
 }
