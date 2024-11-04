@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kamenridercraft:block/helheim_slab"
+    },
+    "type=double": {
+      "model": "kamenridercraft:block/helheim_planks"
+    },
+    "type=top": {
+      "model": "kamenridercraft:block/helheim_slab_top"
+    }
+  }
+}
