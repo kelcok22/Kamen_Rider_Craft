@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "v3",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",tag:{slot_tex1:\"double_typhoon_core\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:double_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:v3/items/double_typhoon_core)Double Typhoon Core$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blue_version",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",tag:{slot_tex1:\"blue_double_typhoon_core\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:blue_double_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
 			"name": "Blue Version",
 			"text": "Accessed with the $(l:v3/items/blue_double_typhoon_core)Blue Double Typhoon Core$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blue_metallic_color",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",tag:{slot_tex1:\"double_typhoon_core_artist\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:double_typhoon_core_artist\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
 			"name": "Blue Metallic Color",
 			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flaresalamander_v3",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",tag:{slot_tex1:\"flaresalamander\"},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaresalamander\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
 			"name": "Flaresalamander",
 			"text": "Accessed with the $(l:v3/items/flaresalamander)Flaresalamander Card Warrior Card$(/l)"
 		},

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tackle",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",tag:{slot_tex1:\"tackle_core\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:tackle_core\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:stronger/items/tackle_core)Tackle Core$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "white_color",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",tag:{slot_tex1:\"tackle_core_artist\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:tackle_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": "White Color",
 			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "perfecter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",tag:{slot_tex1:\"perfecter\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:perfecter\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": "Tackle w/ Perfecter",
 			"text": "Accessed with the $(l:x/items/perfecter)Perfecter$(/l)"
 		},

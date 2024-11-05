@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kaixa",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kaixa_driver\",tag:{slot_tex1:\"kaixa_mission_memory\"},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kaixa_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaixa_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:faiz/items/kaixa_mission_memory)Kaixa Mission Memory$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chaosdile",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kaixa_driver\",tag:{slot_tex1:\"chaosdile\"},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kaixa_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chaosdile\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
 			"name": "Chaosdile",
 			"text": "Accessed with the $(l:faiz/items/chaosdile)Chaosdile Card Warrior Card$(/l)"
 		},

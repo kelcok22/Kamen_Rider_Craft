@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blank",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",tag:{slot_tex1:\"advent_card\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:advent_card\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": "Blank Form",
 			"text": "Accessed with the $(l:ryuki/items/advent_card)Contract Card$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ouja",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",tag:{slot_tex1:\"venosnaker_advent\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:venosnaker_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:ryuki/items/venosnaker_advent)Venosnaker Advent Card$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "survive",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",tag:{slot_tex1:\"survive_mugen\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_mugen\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": "Ouja Survive",
 			"text": "Accessed with the $(l:ryuki/items/survive_mugen)Survive Card (Mugen)$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "survive_sic",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",tag:{slot_tex1:\"survive_shippu_ouja\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu_ouja\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": "Ouja Survive",
 			"text": "Accessed with the $(l:ryuki/items/survive_shippu)Survive Card (Shippu)$(/l)"
 		},

@@ -1,0 +1,19 @@
+{
+	"name": "Ancient OOO' Greeed Sword",
+	"icon": "kamenridercraft:ancient_ooo_greeed_sword",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used by Ancient OOO's $(l:ooo/riders/ancient_ooo#greeed_absorption)Greeed Absorption$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_ooo_greeed_sword",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		}
+	]
+}

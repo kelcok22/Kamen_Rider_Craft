@@ -1,0 +1,16 @@
+{
+	"name": "Rebirth Driver",
+	"icon": "kamenridercraft:rebirth_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/rebirth)Kamen Rider Rebirth"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/rebirth_driver"
+		}
+	]
+}

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "masked",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",tag:{slot_tex1:\"kabuto_zecter_mask\"},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"name": "Masked Form",
 			"text": "Accessed with the $(l:kabuto/items/kabuto_zecter)Kabuto Zecter$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rider",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",tag:{slot_tex1:\"kabuto_zecter\"},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"name": "Rider Form",
 			"text": "Accessed with the $(l:kabuto/items/kabuto_zecter)Kabuto Zecter$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hyper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",tag:{slot_tex1:\"hyper_zecter\"},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"name": "Hyper Form",
 			"text": "Accessed with the $(l:kabuto/items/hyper_zecter)Hyper Zecter$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "exbeeter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",tag:{slot_tex1:\"exbeeter\"},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kabuto_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:exbeeter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"name": "Rider Form w/ Exbeeter",
 			"text": "Accessed with the $(l:kabuto/items/exbeeter)Exbeeter Card Warrior Card$(/l)"
 		},

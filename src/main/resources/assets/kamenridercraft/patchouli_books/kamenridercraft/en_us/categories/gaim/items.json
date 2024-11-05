@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Rider Items",
+    "description": "All Gaim-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:orange_lockseed",
+    "sortnum": 2
+}

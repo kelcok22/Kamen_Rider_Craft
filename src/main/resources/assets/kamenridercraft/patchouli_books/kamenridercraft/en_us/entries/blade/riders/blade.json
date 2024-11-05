@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"change_beetle\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:change_beetle\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:blade/items/change_beetle)Change Beetle Rouze Card$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jack",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"fusion_eagle\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:fusion_eagle\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": "Jack Form",
 			"text": "Accessed with the $(l:blade/items/fusion_eagle)Fusion Eagle Rouze Card$(/l) while having the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and the $(l:blade/items/absorb_capricorn)Absorb Capricorn Rouze Card$(/l) in your inventory"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "king",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"evolution_caucasus\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:evolution_caucasus\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": "King Form",
 			"text": "Accessed with the $(l:blade/items/evolution_caucasus)Evolution Caucasus Rouze Card$(/l) while having the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and the $(l:blade/items/absorb_capricorn)Absorb Capricorn Rouze Card$(/l) in your inventory"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "silver_king",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"silver_evolution_caucasus\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:silver_evolution_caucasus\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": "King Form (Silver Version)",
 			"text": "Accessed with the $(l:blade/items/silver_evolution_caucasus)Silver Evolution Caucasus Rouze Card$(/l) while having the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l) and the $(l:blade/items/absorb_capricorn)Absorb Capricorn Rouze Card$(/l) in your inventory"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "herculespader",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"herculespader\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:herculespader\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": "Herculespader",
 			"text": "Accessed with the $(l:blade/items/herculespader)Herculespader Card Warrior Card$(/l)"
 		},
@@ -67,7 +67,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jinrai_no_senshi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",tag:{slot_tex1:\"jinrai_no_senshi\"},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"name": "Jack Form (Jinrai no Senshi)",
 			"text": "Accessed with the $(l:misc/items/jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
 		},

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Gaim.",
+    "icon": "kamenridercraft:gaimhead",
+    "sortnum": 0
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Tajanityspinner",
+	"icon": "kamenridercraft:tajaspinner_eternity",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used by OOO's $(l:ooo/riders/ooo#tajadol_eternity)Tajadol Combo Eternity$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tajaspinner_eternity"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "OOO Armor",
+	"icon": "kamenridercraft:ooohead",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside an OOO Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooohead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/oootroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooolegs"
+		}
+	]
+}

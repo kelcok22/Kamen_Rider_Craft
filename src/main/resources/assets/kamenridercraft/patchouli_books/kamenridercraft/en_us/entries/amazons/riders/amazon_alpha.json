@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:amazons_driver_alpha\",tag:{slot_tex1:\"condorer_core_alpha\"},Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:amazons_driver_alpha\",components:{custom_data:{slot_tex1:\"kamenridercraft:condorer_core_alpha\"}},Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:amazons/items/condorer_core_alpha)Condorer Core (Alpha)$(/l)"
 		},
@@ -18,7 +18,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blind_alpha",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:amazons_driver_alpha\",tag:{slot_tex1:\"condorer_core_alpha_blind\"},Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:amazons_driver_alpha\",components:{custom_data:{slot_tex1:\"kamenridercraft:condorer_core_alpha_blind\"}},Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
 			"name": "Blind Alpha",
 			"text": "Accessed with the $(l:amazons/items/condorer_core_alpha_blind)Condorer Core (Blind Alpha)$(/l)"
 		},

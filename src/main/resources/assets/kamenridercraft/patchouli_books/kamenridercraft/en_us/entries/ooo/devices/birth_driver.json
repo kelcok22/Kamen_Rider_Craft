@@ -1,0 +1,16 @@
+{
+	"name": "Birth Driver",
+	"icon": "kamenridercraft:birth_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/birth)Kamen Rider Birth"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/birth_driver"
+		}
+	]
+}

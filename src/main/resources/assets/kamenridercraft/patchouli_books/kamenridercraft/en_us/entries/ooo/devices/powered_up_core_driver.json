@@ -1,0 +1,19 @@
+{
+	"name": "Powered Up Gaia Core Typhoon",
+	"icon": "kamenridercraft:powered_up_core_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/powered_up_core)Powered Up Core"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:powered_up_core_driver",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Core$(/l)"
+		}
+	]
+}

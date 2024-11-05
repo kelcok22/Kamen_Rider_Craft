@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Transformation Devices",
+    "description": "The transformation devices used by the Gaim Riders.",
+    "icon": "kamenridercraft:sengoku_driver_gaim",
+    "sortnum": 1
+}

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stronger",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",tag:{slot_tex1:\"electrer_core\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:stronger/items/electrer_core)Electrer Core$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "white_color",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",tag:{slot_tex1:\"electrer_core_artist\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": "White Color",
 			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "charge_up",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",tag:{slot_tex1:\"charge_up\"},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_up\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": "Charge Up",
 			"text": "Accessed with the $(l:stronger/items/charge_up)Super Electronic Dynamo$(/l)"
 		},

@@ -1,0 +1,16 @@
+{
+	"name": "Birth Buster",
+	"icon": "kamenridercraft:birth_buster",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by Kamen Riders $(l:ooo/riders/birth)Birth$(/l) and $(l:ooo/riders/birth_proto_type)Birth·Proto Type$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/birth_buster"
+		}
+	]
+}
