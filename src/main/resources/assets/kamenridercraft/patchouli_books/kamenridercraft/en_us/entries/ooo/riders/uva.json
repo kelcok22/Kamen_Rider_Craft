@@ -1,0 +1,19 @@
+{
+	"name": "Uva",
+	"icon": "kamenridercraft:greeed_blet_uva",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:greeed_blet_uva\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Uva",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_blet_uva)Greeed Belt (Uva)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost III"
+		}
+	]
+}

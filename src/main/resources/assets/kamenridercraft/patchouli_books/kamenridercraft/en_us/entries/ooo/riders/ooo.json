@@ -26,7 +26,259 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "latorartar",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:cheetah_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Latorartar Combo",
+			"text": "Accessed with the $(l:ooo/items/lion_medal)Lion$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/cheetah_medal)Cheetah Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Lion Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Tora Medal Effects:$(li)Haste II$(br2)Cheetah Medal Effects:$(li)Speed II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Speed VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sagohzo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_medal\",slot_tex2:\"kamenridercraft:gorilla_medal\",slot_tex3:\"kamenridercraft:zou_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Sagohzo Combo",
+			"text": "Accessed with the $(l:ooo/items/sai_medal)Sai$(/l), $(l:ooo/items/gorilla_medal)Gorilla$(/l), and $(l:ooo/items/zou_medal)Zou Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Sai Medal Effects:$(li)Slowness II$(br2)Gorilla Medal Effects:$(li)Strength$(li)Slowness II$(br2)Zou Medal Effects:$(li)Resistance$(li)Slowness II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Punch VI$(li)Strength IX (with empty hand)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shauta",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shachi_medal\",slot_tex2:\"kamenridercraft:unagi_medal\",slot_tex3:\"kamenridercraft:tako_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Shauta Combo",
+			"text": "Accessed with the $(l:ooo/items/shachi_medal)Shachi$(/l), $(l:ooo/items/unagi_medal)Unagi$(/l), and $(l:ooo/items/tako_medal)Tako Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shachi Medal Effects:$(li)Night Vision$(br2)Unagi Medal Effects:$(li)Water Breathing$(br2)Tako Medal Effects:$(li)Speed II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Dolphin's Grace"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tajadol Combo",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "putotyra",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ptera_medal\",slot_tex2:\"kamenridercraft:tricera_medal\",slot_tex3:\"kamenridercraft:tyranno_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Putotyra Combo",
+			"text": "Accessed with the $(l:ooo/items/ptera_medal)Ptera$(/l), $(l:ooo/items/tricera_medal)Tricera$(/l), and $(l:ooo/items/tyranno_medal)Tyranno Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ptera Medal Effects:$(li)Jump Boost III$(br2)Tricera Medal Effects:$(li)Resistance IV$(br2)Tyranno Medal Effects:$(li)Strength III$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burakawani",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_medal\",slot_tex2:\"kamenridercraft:kame_medal\",slot_tex3:\"kamenridercraft:wani_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Burakawani Combo",
+			"text": "Accessed with the $(l:ooo/items/cobra_medal)Cobra$(/l), $(l:ooo/items/kame_medal)Kame$(/l), and $(l:ooo/items/wani_medal)Wani Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Cobra Medal Effects:$(li)Regeneration$(br2)Kame Medal Effects:$(li)Resistance III$(br2)Wani Medal Effects:$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol_final",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_ankh_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tajadol Combo (Final Episode ver.)",
+			"text": "Accessed with the $(l:ooo/items/taka_ankh_medal)Cracked Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Cracked Taka Medal Effects:$(li)Regeneration$(li)Jump Boost$(li)Flying$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tamashiy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:imagin_medal\",slot_tex3:\"kamenridercraft:shocker_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tamashiy Combo",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/imagin_medal)Imagin$(/l), and $(l:ooo/items/shocker_medal)Shocker Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Imagin Medal Effects:$(li)Strength II$(li)Fire Resistance$(br2)Shocker Medal Effects:$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mukachiri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mukade_medal\",slot_tex2:\"kamenridercraft:hachi_medal\",slot_tex3:\"kamenridercraft:ari_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Mukachiri Combo",
+			"text": "Accessed with the $(l:ooo/items/mukade_medal)Mukade$(/l), $(l:ooo/items/hachi_medal)Hachi$(/l), and $(l:ooo/items/ari_medal)Ari Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Mukade Medal Effects:$(li)Resistance II$(br2)Hachi Medal Effects:$(li)Jump Boost III$(br2)Ari Medal Effects:$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bikaso",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ebi_new_medal\",slot_tex2:\"kamenridercraft:kani_new_medal\",slot_tex3:\"kamenridercraft:sasori_new_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Bikaso Combo",
+			"text": "Accessed with the $(l:ooo/items/ebi_new_medal)Ebi$(/l), $(l:ooo/items/kani_new_medal)Kani$(/l), and $(l:ooo/items/sasori_new_medal)Sasori Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ebi Medal Effects:$(li)Speed II$(br2)Kani Medal Effects:$(li)Strength II$(br2)Sasori Medal Effects:$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "saramiuo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_medal\",slot_tex2:\"kamenridercraft:kujira_medal\",slot_tex3:\"kamenridercraft:ookamiuo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Saramiuo Combo",
+			"text": "Accessed with the $(l:ooo/items/same_medal)Same$(/l), $(l:ooo/items/kujira_medal)Kujira$(/l), and $(l:ooo/items/ookamiuo_medal)Ookamiuo Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Same Medal Effects:$(li)Water Breathing$(br2)Kujira Medal Effects:$(li)Strength II$(br2)Ookamiuo Medal Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shigazeshi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_medal\",slot_tex2:\"kamenridercraft:gazelle_medal\",slot_tex3:\"kamenridercraft:ushi_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Shigazeshi Combo",
+			"text": "Accessed with the $(l:ooo/items/shika_medal)Shika$(/l), $(l:ooo/items/gazelle_medal)Gazelle$(/l), and $(l:ooo/items/ushi_medal)Ushi Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shika Medal Effects:$(li)Night Vision$(br2)Gazelle Medal Effects:$(li)Haste II$(br2)Ushi Medal Effects:$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "seishirogin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:seiuchi_medal\",slot_tex2:\"kamenridercraft:shirokuma_medal\",slot_tex3:\"kamenridercraft:penguin_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Seishirogin Combo",
+			"text": "Accessed with the $(l:ooo/items/seiuchi_medal)Seiuchi$(/l), $(l:ooo/items/shirokuma_medal)Shirokuma$(/l), and $(l:ooo/items/penguin_medal)Penguin Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Seiuchi Medal Effects:$(li)Saturation II$(br2)Shirokuma Medal Effects:$(li)Strength II$(br2)Penguin Medal Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takapanba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:panda_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Takapanba",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/panda_medal)Panda$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Panda Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takagaruba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kangaroo_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Takagaruba",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kangaroo_medal)Kangaroo$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kangaroo Medal Effects:$(li)Strength II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takatoragaru",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:kangaroo_medal_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Takatoragaru",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/kangaroo_medal)Kangaroo Medals$(/l) (while sneaking)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Kangaroo Medal Effects:$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takayadoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:yadokari_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Takayadoba",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/yadokari_medal)Yadokari$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Yadokari Medal Effects:$(li)Strength III$(br2)Batta Medal Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_taka_medal\",slot_tex2:\"kamenridercraft:super_tora_medal\",slot_tex3:\"kamenridercraft:super_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Super Tatoba Combo",
+			"text": "Accessed with the $(l:ooo/items/super_taka_medal)Super Taka$(/l), $(l:ooo/items/super_tora_medal)Super Tora$(/l), and $(l:ooo/items/super_batta_medal)Super Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Super Taka Medal Effects:$(li)Night Vision$(li)Fire Resistance$(li)Regeneration IV$(li)Strength V$(li)Boost$(br2)Super Tora Medal Effects:$(li)Strength VI$(li)Haste IV$(li)Resistance IV$(br2)Super Batta Medal Effects:$(li)Speed III$(li)Jump Boost V$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol_eternity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_eternity_medal\",slot_tex2:\"kamenridercraft:kujaku_eternity_medal\",slot_tex3:\"kamenridercraft:condor_eternity_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tajadol Combo Eternity",
+			"text": "Accessed with the $(l:ooo/items/taka_eternity_medal)Taka Eternity$(/l), $(l:ooo/items/kujaku_eternity_medal)Kujaku Eternity$(/l), and $(l:ooo/items/condor_eternity_medal)Condor Eternity Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Eternity Medal Effects:$(li)Saturation II$(br2)Kujaku Eternity Medal Effects:$(li)Strength II$(br2)Condor Eternity Medal Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "renai",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:love_core_medal\",slot_tex2:\"kamenridercraft:love_core2_medal\",slot_tex3:\"kamenridercraft:love_core3_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Renai Combo",
+			"text": "Accessed with the $(l:ooo/items/love_core_medal)Love (Head)$(/l), $(l:ooo/items/love_core2_medal)Love (Torso)$(/l), and $(l:ooo/items/love_core3_medal)Love (Legs) Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Love Medal (Head) Effects:$(li)Regeneration II$(br2)Love Medal (Torso) Effects:$(li)Haste II$(br2)Love Medal (Legs) Effects:$(li)Saturation II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legend_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:habataki_medal\",slot_tex2:\"kamenridercraft:taiga_medal\",slot_tex3:\"kamenridercraft:ichigo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Legend Tatoba Combo",
+			"text": "Accessed with the $(l:ooo/items/habataki_medal)Habataki$(/l), $(l:ooo/items/taiga_medal)Tiger$(/l), and $(l:ooo/items/ichigo_medal)Ichigo Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Habataki Medal Effects:$(li)Resistance II$(br2)Tiger Medal Effects:$(li)Strength III$(br2)Ichigo Medal Effects:$(li)Jump Boost III"
 		}
 	]
 }
