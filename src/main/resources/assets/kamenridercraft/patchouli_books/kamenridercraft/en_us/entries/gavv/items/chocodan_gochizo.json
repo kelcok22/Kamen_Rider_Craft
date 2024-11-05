@@ -1,0 +1,19 @@
+{
+	"name": "Chocodan Gochizo",
+	"icon": "kamenridercraft:chocodan_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chocodan_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Gaim.",
+    "icon": "kamenridercraft:gaim_logo",
+    "sortnum": 4
+}

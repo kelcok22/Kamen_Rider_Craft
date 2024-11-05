@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "accel",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",tag:{slot_tex1:\"accel_memory\"},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:accel_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:w/items/accel_memory)Accel Memory$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "trial",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",tag:{slot_tex1:\"trial_memory\"},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trial_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"name": "Accel Trial",
 			"text": "Accessed with the $(l:w/items/trial_memory)Trial Memory$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "booster",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",tag:{slot_tex1:\"accel_booster_memory\"},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:accel_booster_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"name": "AccelBooster",
 			"text": "Accessed with the $(l:w/items/accel_booster_memory)Accel Booster Memory$(/l)"
 		},

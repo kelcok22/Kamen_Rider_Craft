@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "save",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",tag:{slot_tex1:\"knucklefuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:knucklefuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Save Mode",
 			"text": "Accessed with the $(l:kiva/items/knucklefuestle)Knuckle Fuestle$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "burst",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",tag:{slot_tex1:\"knucklefuestle_burst\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:knucklefuestle_burst\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Burst Mode",
 			"text": "Accessed with the $(l:kiva/items/knucklefuestle)Knuckle Fuestle$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",tag:{slot_tex1:\"risingfuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ixa_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:risingfuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Rising Ixa",
 			"text": "Accessed with the $(l:kiva/items/risingfuestle)Riser Fuestle$(/l)"
 		},

@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider OOO",
+	"icon": "kamenridercraft:ooodriver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "tatoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tatoba Combo",
+			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gatakiriba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuwagata_medal\",slot_tex2:\"kamenridercraft:kamakiri_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Gatakiriba Combo",
+			"text": "Accessed with the $(l:ooo/items/kuwagata_medal)Kuwagata$(/l), $(l:ooo/items/kamakiri_medal)Kamakiri$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+		}
+	]
+}

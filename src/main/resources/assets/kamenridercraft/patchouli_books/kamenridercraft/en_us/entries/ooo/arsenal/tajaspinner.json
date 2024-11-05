@@ -1,0 +1,16 @@
+{
+	"name": "Tajaspinner",
+	"icon": "kamenridercraft:tajaspinner",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by OOO's $(l:ooo/riders/ooo#tajadol)Tajadol Combo$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tajaspinner"
+		}
+	]
+}

@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "masked",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hercus_rider_belt\",tag:{slot_tex1:\"hercus_zecter_mask\"},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hercus_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:hercus_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
 			"name": "Masked Form",
 			"text": "Accessed with the $(l:kabuto/items/hercus_zecter)Hercus Zecter$(/l)"
 		},

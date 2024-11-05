@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"wakeupfuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wakeupfuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Kiva Form",
 			"text": "Accessed with the $(l:kiva/items/wakeupfuestle)Wake Up Fuestle (Kiva)$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "garulu",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"garulufuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garulufuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Garulu Form",
 			"text": "Accessed with the $(l:kiva/items/garulufuestle)Garulu Fuestle$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "basshaa",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"basshaafuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:basshaafuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Basshaa Form",
 			"text": "Accessed with the $(l:kiva/items/basshaafuestle)Basshaa Fuestle$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dogga",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"doggafuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doggafuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Dogga Form",
 			"text": "Accessed with the $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l)"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dogabaki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"dogabaki\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dogabaki\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "DoGaBaKi Form",
 			"text": "Accessed by shift-clicking the $(l:kiva/items/wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/garulufuestle)Garulu,$(/l) $(l:kiva/items/basshaafuestle)Basshaa,$(/l) or $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l) with the other three in your inventory"
 		},
@@ -67,7 +67,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "emperor",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"tatsulot\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tatsulot\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Emperor Form",
 			"text": "Accessed with $(l:kiva/items/tatsulot)Tatsulot$(/l)"
 		},
@@ -79,7 +79,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dogabaki_emperor",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"dogabaki_emperor\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dogabaki_emperor\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "DoGaBaKi Emperor Form",
 			"text": "Accessed by shift-clicking $(l:kiva/items/tatsulot)Tatsulot$(/l) with the $(l:kiva/items/wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/garulufuestle)Garulu,$(/l) $(l:kiva/items/basshaafuestle)Basshaa,$(/l) and $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l) in your inventory"
 		},
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "red_emperor",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",tag:{slot_tex1:\"kiva_says_fuestle\"},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_says_fuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
 			"name": "Emperor Form (Red Version)",
 			"text": "Accessed with the $(l:kiva/items/kiva_says_fuestle)Kivatte Fuestle$(/l)"
 		},

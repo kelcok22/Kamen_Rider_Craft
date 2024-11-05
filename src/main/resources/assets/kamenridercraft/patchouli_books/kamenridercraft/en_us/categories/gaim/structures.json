@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Structures",
+    "description": "All structures related to the show, Kamen Rider Gaim.",
+    "icon": "kamenridercraft:helheim_plant_2",
+    "sortnum": 6
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Greeed Belt (Lost Ankh)",
+	"icon": "kamenridercraft:greeed_blet_ankh_lost",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/lost_ankh)Ankh (Lost)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_ankh_lost",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l)"
+		}
+	]
+}

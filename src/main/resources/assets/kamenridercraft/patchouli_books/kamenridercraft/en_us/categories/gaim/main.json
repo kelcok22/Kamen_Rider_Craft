@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Gaim",
+    "description": "Everything related to the show, Kamen Rider Gaim.",
+    "icon": "kamenridercraft:gaim_logo",
+    "sortnum": 29
+}

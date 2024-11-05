@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "growing",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_growing\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_growing\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Growing Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadam$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mighty",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_mighty\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Mighty Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_mighty)Kuuga Mighty Amadam$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dragon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_dragon\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_dragon\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Dragon Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_dragon)Kuuga Dragon Amadam$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "pegasus",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_pegasus\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_pegasus\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Pegasus Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_pegasus)Kuuga Pegasus Amadam$(/l)"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "titan",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_titan\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_titan\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Titan Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_titan)Kuuga Titan Amadam$(/l)"
 		},
@@ -67,7 +67,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_mighty",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_rising_mighty\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Mighty Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_mighty)Kuuga Rising Mighty Amadam$(/l)"
 		},
@@ -79,7 +79,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_dragon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_rising_dragon\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_dragon\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Dragon Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_dragon)Kuuga Rising Dragon Amadam$(/l)"
 		},
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_pegasus",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_rising_pegasus\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Pegasus Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_pegasus)Kuuga Rising Pegasus Amadam$(/l)"
 		},
@@ -103,7 +103,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_titan",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_rising_titan\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_titan\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Titan Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_titan)Kuuga Rising Titan Amadam$(/l)"
 		},
@@ -115,7 +115,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "amazing_mighty",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_amazing_mighty\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Amazing Mighty Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_amazing_mighty)Kuuga Amazing Mighty Amadam$(/l)"
 		},
@@ -127,7 +127,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ultimate",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_ultimate\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Ultimate Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_ultimate)Kuuga Ultimate Amadam$(/l)"
 		},
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_ultimate",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_rising_ultimate\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Ultimate Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_ultimate)Kuuga Rising Ultimate Amadam$(/l)"
 		},
@@ -151,7 +151,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_rising_ultimate",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_super_rising_ultimate\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_super_rising_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Super Rising Ultimate Form",
 			"text": "Accessed with the $(l:kuuga/items/kuuga_super_rising_ultimate)Kuuga Super Rising Ultimate Amadam$(/l)"
 		},
@@ -163,7 +163,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jinrai_no_senshi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"jinrai_no_senshi\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Rising Mighty (Jinrai no Senshi)",
 			"text": "Accessed with the $(l:misc/items/jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
 		},
@@ -175,7 +175,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "amazing_mighty_artist_color",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"kuuga_amazing_mighty_artist\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty_artist\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Amazing Mighty (Artist Color)",
 			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
 		},
@@ -187,7 +187,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "grandgouram",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",tag:{slot_tex1:\"grandgouram\"},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:grandgouram\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Amazing Mighty w/ GrandGouram",
 			"text": "Accessed with the $(l:kuuga/items/grandgouram)GrandGouram Card Warrior Card$(/l)"
 		},

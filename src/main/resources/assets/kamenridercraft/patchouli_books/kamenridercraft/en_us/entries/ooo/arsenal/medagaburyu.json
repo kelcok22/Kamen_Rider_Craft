@@ -1,0 +1,16 @@
+{
+	"name": "Medagaburyu",
+	"icon": "kamenridercraft:medagaburyu",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by OOO's $(l:ooo/riders/ooo#putotyra)Putotyra Combo$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/medagaburyu"
+		}
+	]
+}

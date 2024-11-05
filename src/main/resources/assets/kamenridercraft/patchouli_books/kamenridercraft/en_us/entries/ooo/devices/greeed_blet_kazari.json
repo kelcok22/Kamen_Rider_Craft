@@ -1,0 +1,19 @@
+{
+	"name": "Greeed Belt (Kazari)",
+	"icon": "kamenridercraft:greeed_blet_kazari",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/kazari)Kazari's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_kazari",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+		}
+	]
+}

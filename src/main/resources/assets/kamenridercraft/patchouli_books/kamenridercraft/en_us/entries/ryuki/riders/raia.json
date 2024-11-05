@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "raia",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",tag:{slot_tex1:\"evildiver_advent\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:evildiver_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:ryuki/items/evildiver_advent)Evildiver Advent Card$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "survive",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",tag:{slot_tex1:\"survive_shippu_raia\"},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu_raia\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"name": "Raia Survive",
 			"text": "Accessed with the $(l:ryuki/items/survive_shippu)Survive Card (Shippu)$(/l)"
 		},

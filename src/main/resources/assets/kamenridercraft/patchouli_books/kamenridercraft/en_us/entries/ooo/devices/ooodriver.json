@@ -1,0 +1,16 @@
+{
+	"name": "OOO Driver",
+	"icon": "kamenridercraft:ooodriver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ooo)Kamen Rider OOO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooo_driver"
+		}
+	]
+}

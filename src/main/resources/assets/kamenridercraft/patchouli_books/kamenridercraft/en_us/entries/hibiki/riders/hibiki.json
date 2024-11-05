@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",tag:{slot_tex1:\"henshin_onsa\"},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"name": " ",
 			"text": "Accessed with the $(l:hibiki/items/henshin_onsa)Henshin Onsa Onkaku$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kurenai",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",tag:{slot_tex1:\"henshin_onsa_kurenai\"},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_kurenai\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"name": "Hibiki Kurenai",
 			"text": "Accessed with the $(l:hibiki/items/henshin_onsa_kurenai)Henshin Onsa Onkaku (Kurenai)$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "armed",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",tag:{slot_tex1:\"henshin_onsa_armed\"},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"name": "Armed Hibiki",
 			"text": "Accessed with the $(l:hibiki/arsenal/armed_saber)Armed Saber$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "akanetaka",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",tag:{slot_tex1:\"akanetaka\"},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:akanetaka\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"name": "Akanetaka",
 			"text": "Accessed with the $(l:hibiki/items/akanetaka)Akanetaka Card Warrior Card$(/l)"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bakuen_no_senshi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",tag:{slot_tex1:\"bakuen_no_senshi_hibiki\"},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi_hibiki\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
 			"name": "Hibiki Kurenai (Bakuen no Senshi)",
 			"text": "Accessed with the $(l:misc/items/bakuen_no_senshi)Bakuen no senshi Card Warrior Card$(/l)"
 		},

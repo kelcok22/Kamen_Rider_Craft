@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ground",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_ground\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ground\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Ground Form",
 			"text": "Accessed with the $(l:agito/items/agito_ground)Agito Ground Philosopher's Stone$(/l)"
 		},
@@ -19,7 +19,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "storm",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_storm\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_storm\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Storm Form",
 			"text": "Accessed with the $(l:agito/items/agito_storm)Agito Storm Philosopher's Stone$(/l)"
 		},
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flame",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_flame\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_flame\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Flame Form",
 			"text": "Accessed with the $(l:agito/items/agito_flame)Agito Flame Philosopher's Stone$(/l)"
 		},
@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "trinity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_trinity\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_trinity\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Trinity Form",
 			"text": "Accessed with the $(l:agito/items/agito_trinity)Agito Trinity Philosopher's Stone$(/l)"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "burning",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_burning\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_burning\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Burning Form",
 			"text": "Accessed with the $(l:agito/items/agito_burning)Agito Burning Philosopher's Stone$(/l)"
 		},
@@ -67,7 +67,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shining",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"agito_shining\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_shining\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Shining Form",
 			"text": "Accessed with the $(l:agito/items/agito_shining)Agito Shining Philosopher's Stone$(/l)"
 		},
@@ -79,7 +79,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "stagtornador",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",tag:{slot_tex1:\"stagtornador\"},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:stagtornador\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
 			"name": "Ground Form w/ Stagtornador",
 			"text": "Accessed with the $(l:agito/items/stagtornador)Stagtornador Card Warrior Card$(/l)"
 		},

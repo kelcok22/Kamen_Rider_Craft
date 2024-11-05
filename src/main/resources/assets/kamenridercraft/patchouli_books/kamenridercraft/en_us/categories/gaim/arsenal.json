@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "Gaim Arsenal",
+    "description": "Every weapon and tool used by the Gaim Riders.",
+    "icon": "kamenridercraft:musou_saber",
+    "sortnum": 3
+}

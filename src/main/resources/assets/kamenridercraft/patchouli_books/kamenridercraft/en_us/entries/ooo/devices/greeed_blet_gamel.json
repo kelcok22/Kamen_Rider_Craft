@@ -1,0 +1,19 @@
+{
+	"name": "Greeed Belt (Gamel)",
+	"icon": "kamenridercraft:greeed_blet_gamel",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/gamel)Gamel's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_gamel",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		}
+	]
+}
