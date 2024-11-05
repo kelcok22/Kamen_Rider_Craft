@@ -1,0 +1,44 @@
+{
+	"name": "Ancient OOO",
+	"icon": "kamenridercraft:ancient_ooodriver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "tatoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ancient_taka_medal\",slot_tex2:\"kamenridercraft:ancient_tora_medal\",slot_tex3:\"kamenridercraft:ancient_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Tatoba Combo",
+			"text": "Accessed with the $(l:ooo/items/ancient_taka_medal)Ancient Taka$(/l), $(l:ooo/items/ancient_tora_medal)Ancient Tora$(/l), and $(l:ooo/items/ancient_batta_medal)Ancient Batta Medals$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ancient OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ancient Taka Medal Effects:$(li)Night Vision$(li)Strength VII$(li)Flying VII$(br2)Ancient Tora Medal Effects:$(li)Haste II$(li)Resistance IV$(br2)Ancient Batta Medal Effects:$(li)Speed IV$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ancient_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:ancient_tora_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:ooo/items/ancient_tora_medal)Ancient Tora Medal$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ancient OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Transforms with the $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Strength VII$(li)Flying VII$(li)Haste II$(li)Resistance IV$(li)Speed IV$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "greeed_absorption",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:greeed_absorption_core\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": "Greeed Absorption",
+			"text": "Accessed with the $(l:ooo/items/greeed_absorption_core)Greeed Absorption Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ancient OOO",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Transforms with the $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Strength VII$(li)Flying VII$(li)Speed IV$(li)Jump Boost III"
+		}
+	]
+}

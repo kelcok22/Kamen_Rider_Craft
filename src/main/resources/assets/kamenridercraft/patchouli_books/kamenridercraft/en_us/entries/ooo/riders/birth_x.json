@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Birth X",
+	"icon": "kamenridercraft:birth_driver_x",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver_x\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Birth X",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinext film)$(br2)Transforms with the $(l:ooo/devices/birth_driver_x)Birth Driver with X-Unit$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Strength II"
+		}
+	]
+}

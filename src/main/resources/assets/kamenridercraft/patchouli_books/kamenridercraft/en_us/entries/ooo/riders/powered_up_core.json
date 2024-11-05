@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Core (Reinforced)",
+	"icon": "kamenridercraft:powered_up_core_driver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:powered_up_core_driver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Core (Reinforced)",
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Transforms with the $(l:ooo/devices/powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Fire Resistance III$(li)Strength"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Lost Ankh",
+	"icon": "kamenridercraft:greeed_blet_ankh_lost",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:greeed_blet_ankh_lost\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Lost Ankh",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Fire Resistance$(li)Strength II"
+		}
+	]
+}
