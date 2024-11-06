@@ -1,0 +1,19 @@
+{
+	"name": "Panda Core Medal",
+	"icon": "kamenridercraft:panda_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#takapanba)Takapanba$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+		}
+	]
+}

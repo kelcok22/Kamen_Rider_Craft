@@ -1,0 +1,16 @@
+{
+	"name": "Kujaku Eternity Core Medal",
+	"icon": "kamenridercraft:kujaku_eternity_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol_eternity)Tajadol Combo Eternity$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/kujaku_eternity"
+		}
+	]
+}

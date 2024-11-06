@@ -1,0 +1,16 @@
+{
+	"name": "Habataki Core Medal",
+	"icon": "kamenridercraft:habataki_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 100,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access OOO's $(l:ooo/riders/ooo#legend_tatoba)Legend Tatoba Combo$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/habataki_medal"
+		}
+	]
+}

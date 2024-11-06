@@ -1,0 +1,16 @@
+{
+	"name": "Stronger Core Medal",
+	"icon": "kamenridercraft:stronger_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 99,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/stronger_medal"
+		}
+	]
+}

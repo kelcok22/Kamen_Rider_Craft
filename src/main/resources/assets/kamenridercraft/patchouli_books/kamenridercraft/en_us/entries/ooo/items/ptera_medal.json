@@ -1,0 +1,19 @@
+{
+	"name": "Ptera Core Medal",
+	"icon": "kamenridercraft:ptera_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Putotyra Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/items/purple_medals_sealed)Sealed Medal Containers$(/l)"
+		}
+	]
+}

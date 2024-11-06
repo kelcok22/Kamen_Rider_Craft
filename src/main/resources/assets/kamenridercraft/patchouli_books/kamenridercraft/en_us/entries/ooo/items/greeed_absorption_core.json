@@ -1,0 +1,19 @@
+{
+	"name": "Greeed Absorption Core",
+	"icon": "kamenridercraft:greeed_absorption_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 122,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#greeed_absorption)Greeed Absorption$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_absorption_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		}
+	]
+}

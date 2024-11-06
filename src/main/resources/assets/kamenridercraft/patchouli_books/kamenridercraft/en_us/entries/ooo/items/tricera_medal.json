@@ -1,0 +1,19 @@
+{
+	"name": "Tricera Core Medal",
+	"icon": "kamenridercraft:tricera_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Putotyra Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/items/purple_medals_sealed)Sealed Medal Containers$(/l)"
+		}
+	]
+}

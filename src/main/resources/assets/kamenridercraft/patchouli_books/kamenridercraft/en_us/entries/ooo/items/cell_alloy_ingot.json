@@ -1,0 +1,16 @@
+{
+	"name": "Cell Alloy Ingot",
+	"icon": "kamenridercraft:cell_alloy_ingot",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used as the base item for $(l:ooo/riders/birth)Kamen Rider Birth$(/l)'s items"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:ooo/cell_alloy_ingot"
+		}
+	]
+}

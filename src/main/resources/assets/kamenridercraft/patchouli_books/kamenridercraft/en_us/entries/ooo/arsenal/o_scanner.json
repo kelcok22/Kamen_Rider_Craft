@@ -1,0 +1,16 @@
+{
+	"name": "O Scanner",
+	"icon": "kamenridercraft:o_scanner",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Keep this in your inventory to gain extra status effects for $(l:ooo/riders/ooo#tatoba)OOO's$(/l) main combos"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/o_scanner"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Zeus Kujaku Core Medal",
+	"icon": "kamenridercraft:zeus_kujaku_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 77,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Tajadol Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kujaku_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

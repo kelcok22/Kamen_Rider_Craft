@@ -1,0 +1,19 @@
+{
+	"name": "Zou Core Medal",
+	"icon": "kamenridercraft:zou_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Sagohzo Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zou_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		}
+	]
+}

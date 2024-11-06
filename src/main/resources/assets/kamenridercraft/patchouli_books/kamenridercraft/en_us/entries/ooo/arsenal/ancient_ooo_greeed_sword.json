@@ -2,7 +2,7 @@
 	"name": "Ancient OOO' Greeed Sword",
 	"icon": "kamenridercraft:ancient_ooo_greeed_sword",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

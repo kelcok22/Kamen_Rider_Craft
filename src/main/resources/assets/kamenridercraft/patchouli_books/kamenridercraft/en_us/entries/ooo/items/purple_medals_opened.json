@@ -1,0 +1,16 @@
+{
+	"name": "Opened Medal Container",
+	"icon": "kamenridercraft:purple_medals_opened",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 125,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Releases the purple medals when in your inventory"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/purple_medals_crafted"
+		}
+	]
+}

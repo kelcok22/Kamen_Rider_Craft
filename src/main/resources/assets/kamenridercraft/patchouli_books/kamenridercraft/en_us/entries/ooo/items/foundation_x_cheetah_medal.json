@@ -1,0 +1,19 @@
+{
+	"name": "Foundation X Cheetah Core Medal",
+	"icon": "kamenridercraft:foundation_x_cheetah_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 66,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Latorartar Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_cheetah_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Tajaspinner",
 	"icon": "kamenridercraft:tajaspinner",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

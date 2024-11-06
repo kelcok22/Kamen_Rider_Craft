@@ -1,0 +1,19 @@
+{
+	"name": "Seiuchi Core Medal",
+	"icon": "kamenridercraft:seiuchi_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#seishirogin)Seishirogin Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:seiuchi_medal",
+			"title": " ",
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+		}
+	]
+}

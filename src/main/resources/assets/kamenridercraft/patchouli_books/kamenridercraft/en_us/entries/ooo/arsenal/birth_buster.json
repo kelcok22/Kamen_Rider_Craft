@@ -2,7 +2,7 @@
 	"name": "Birth Buster",
 	"icon": "kamenridercraft:birth_buster",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

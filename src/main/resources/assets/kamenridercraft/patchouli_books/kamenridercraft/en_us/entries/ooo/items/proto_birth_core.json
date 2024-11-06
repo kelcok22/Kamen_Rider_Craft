@@ -1,0 +1,16 @@
+{
+	"name": "Proto Birth Core",
+	"icon": "kamenridercraft:proto_birth_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 114,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Birth·Proto Type's $(l:ooo/devices/proto_birth_driver)Proto Birth Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/proto_birth_core"
+		}
+	]
+}

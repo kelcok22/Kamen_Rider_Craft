@@ -1,0 +1,19 @@
+{
+	"name": "Zeus Kamakiri Core Medal",
+	"icon": "kamenridercraft:zeus_kamakiri_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 83,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Gatakiriba Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kamakiri_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

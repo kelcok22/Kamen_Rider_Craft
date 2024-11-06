@@ -1,0 +1,19 @@
+{
+	"name": "Ancient Tora Core Medal",
+	"icon": "kamenridercraft:ancient_tora_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 53,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ancient_ooo#ancient_tatoba)Ancient Tatoba$(/l) combos"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_tora_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		}
+	]
+}

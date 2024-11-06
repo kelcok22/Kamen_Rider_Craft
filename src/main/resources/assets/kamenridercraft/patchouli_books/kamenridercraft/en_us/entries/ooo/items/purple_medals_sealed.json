@@ -1,0 +1,19 @@
+{
+	"name": "Sealed Medal Container",
+	"icon": "kamenridercraft:purple_medals_sealed",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 124,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Place this in your crafting grid to release the purple medals"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:purple_medals_sealed",
+			"title": " ",
+			"text": "Found inside nether fortresses"
+		}
+	]
+}

@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Lion Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Tora Medal Effects:$(li)Haste II$(br2)Cheetah Medal Effects:$(li)Speed II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Speed VII"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Lion Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Tora Medal Effects:$(li)Haste II$(br2)Cheetah Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Speed VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -50,7 +50,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Sai Medal Effects:$(li)Slowness II$(br2)Gorilla Medal Effects:$(li)Strength$(li)Slowness II$(br2)Zou Medal Effects:$(li)Resistance$(li)Slowness II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Punch VI$(li)Strength IX (with empty hand)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Sai Medal Effects:$(li)Slowness II$(br2)Gorilla Medal Effects:$(li)Strength$(li)Slowness II$(br2)Zou Medal Effects:$(li)Resistance$(li)Slowness II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Punch VI$(li)Strength IX (with empty hand)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shachi Medal Effects:$(li)Night Vision$(br2)Unagi Medal Effects:$(li)Water Breathing$(br2)Tako Medal Effects:$(li)Speed II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Dolphin's Grace"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shachi Medal Effects:$(li)Night Vision$(br2)Unagi Medal Effects:$(li)Water Breathing$(br2)Tako Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Dolphin's Grace"
 		},
 		{
 			"type": "patchouli:entity",
@@ -74,7 +74,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ptera Medal Effects:$(li)Jump Boost III$(br2)Tricera Medal Effects:$(li)Resistance IV$(br2)Tyranno Medal Effects:$(li)Strength III$(br2)With $(l:ooo/items/o_scanner)O Scanner$(/l):$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ptera Medal Effects:$(li)Jump Boost III$(br2)Tricera Medal Effects:$(li)Resistance IV$(br2)Tyranno Medal Effects:$(li)Strength III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
