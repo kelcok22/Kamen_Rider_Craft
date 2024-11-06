@@ -2892,6 +2892,7 @@
 "item.kamenridercraft.gavv_troso": "Gavv Chestplate",
 "item.kamenridercraft.gavv_legs": "Gavv Leggings",
 "item.kamenridercraft.henshin_belt_gavv": "Henshin Belt Gavv",
+  "item.kamenridercraft.valenbuckle": "Valenbuckle",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.poppingummy_gochizo": "Poppingummy Gochizo",
@@ -3385,6 +3386,7 @@
 "block.kamenridercraft.wooden_panel": "Dark Wood Panel Block",
 "block.kamenridercraft.wooden_panel2": "Light Wood Panel Block",
 "block.kamenridercraft.ichigo_chair": "Ichigo Chair",
+  "block.kamenridercraft.red_ichigo_chair": "Aka-Rider Chair",
 
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",
