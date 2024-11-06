@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/red_ichigo_chair" },
+    "facing=south": { "model": "kamenridercraft:block/red_ichigo_chair", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/red_ichigo_chair", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/red_ichigo_chair", "y": 90 }
+  }
+ }

@@ -39,6 +39,11 @@ public class Rider_Blocks {
 			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).lightLevel((p_152632_) -> {
 			      return 1;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> RED_ICHIGO_CHAIR = registerBlock("red_ichigo_chair",
+			() -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> {
+				return 1;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
 	public static final DeferredBlock<Block> SHOCKER_MONITOR = registerBlock("shocker_monitor",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));

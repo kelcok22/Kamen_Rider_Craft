@@ -25,6 +25,7 @@ public class Gavv_Rider_Items {
 	public static List<Item> GUMMY= new ArrayList<Item>();
 	public static List<Item> SNACK= new ArrayList<Item>();
 	public static List<Item> MARSHMALLOW= new ArrayList<Item>();
+	public static List<Item> CHOCO= new ArrayList<Item>();
 
 
 	public static final DeferredItem<Item> GAVV_LOGO = ITEMS.register("gavv_logo",
@@ -79,13 +80,19 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chocodan","gavv","henshin_belt_gavv_belt_chocodan",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
-					.AddToList(MARSHMALLOW,2).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(CHOCO,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHOCODON_GOCHIZO = ITEMS.register("chocodon_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valen","valenbuckle_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
+					.AddToList(CHOCO,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_doumaru","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(MARSHMALLOW,2).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));
@@ -100,6 +107,11 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> HENSHIN_BELT_GAVV = ITEMS.register("henshin_belt_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gavv",POPPINGGUMMY_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+
+	//.Override_belt_text("valenbuckle_belt")
+	public static final DeferredItem<Item> VALENBUCKLE = ITEMS.register("valenbuckle",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM));
