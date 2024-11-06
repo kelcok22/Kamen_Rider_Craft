@@ -1,0 +1,19 @@
+{
+	"name": "Foundation X Kujaku Core Medal",
+	"icon": "kamenridercraft:foundation_x_kujaku_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 62,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Tajadol Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kujaku_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Aqua Core",
+	"icon": "kamenridercraft:aqua_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 123,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to craft Aqua's $(l:ooo/devices/aqua_driver)Aqua Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aqua_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Poseidon$(/l)"
+		}
+	]
+}

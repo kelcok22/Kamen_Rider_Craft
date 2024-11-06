@@ -1,0 +1,19 @@
+{
+	"name": "G.O.D. Core Medal",
+	"icon": "kamenridercraft:god_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 107,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:god_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

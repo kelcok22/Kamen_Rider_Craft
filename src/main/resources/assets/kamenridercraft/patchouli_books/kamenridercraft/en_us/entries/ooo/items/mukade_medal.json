@@ -1,0 +1,19 @@
+{
+	"name": "Mukade Core Medal",
+	"icon": "kamenridercraft:mukade_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Mukachiri Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mukade_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+		}
+	]
+}

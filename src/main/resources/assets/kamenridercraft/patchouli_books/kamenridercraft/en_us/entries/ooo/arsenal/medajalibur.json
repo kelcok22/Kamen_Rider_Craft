@@ -2,7 +2,7 @@
 	"name": "Medajalibur",
 	"icon": "kamenridercraft:medajalibur",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 0,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

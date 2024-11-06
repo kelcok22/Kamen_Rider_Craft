@@ -1,0 +1,19 @@
+{
+	"name": "Batta Core Medal",
+	"icon": "kamenridercraft:batta_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ooo#gatakiriba)Gatakiriba$(/l) Combos"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/uva)Uva$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		}
+	]
+}

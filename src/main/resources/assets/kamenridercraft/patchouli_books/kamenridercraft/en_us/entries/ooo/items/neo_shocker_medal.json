@@ -1,0 +1,19 @@
+{
+	"name": "Neo Shocker Core Medal",
+	"icon": "kamenridercraft:neo_shocker_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 110,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_shocker_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

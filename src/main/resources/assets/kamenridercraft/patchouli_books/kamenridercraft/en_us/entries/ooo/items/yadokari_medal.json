@@ -1,0 +1,19 @@
+{
+	"name": "Yadokari Core Medal",
+	"icon": "kamenridercraft:yadokari_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#takayadoba)Takayadoba$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yadokari_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+		}
+	]
+}

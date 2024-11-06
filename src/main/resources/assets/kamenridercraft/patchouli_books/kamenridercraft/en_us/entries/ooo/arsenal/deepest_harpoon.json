@@ -2,7 +2,7 @@
 	"name": "Deepest Harpoon",
 	"icon": "kamenridercraft:deepest_harpoon",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

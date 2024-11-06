@@ -1,0 +1,19 @@
+{
+	"name": "Condor Core Medal",
+	"icon": "kamenridercraft:condor_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Tajadol Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condor_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Complete Ankh$(/l)$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l)"
+		}
+	]
+}

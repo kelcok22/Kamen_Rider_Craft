@@ -1,0 +1,19 @@
+{
+	"name": "Zeus Ptera Core Medal",
+	"icon": "kamenridercraft:zeus_ptera_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 91,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Putotyra Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_ptera_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

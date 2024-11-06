@@ -1,0 +1,19 @@
+{
+	"name": "Goda Hachi Core Medal",
+	"icon": "kamenridercraft:hachi_goda_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_goda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Goda$(/l)"
+		}
+	]
+}

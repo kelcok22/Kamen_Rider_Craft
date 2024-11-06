@@ -1,0 +1,16 @@
+{
+	"name": "Birth Core",
+	"icon": "kamenridercraft:birth_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 113,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Birth's $(l:ooo/devices/birth_driver)Birth Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/birth_core"
+		}
+	]
+}

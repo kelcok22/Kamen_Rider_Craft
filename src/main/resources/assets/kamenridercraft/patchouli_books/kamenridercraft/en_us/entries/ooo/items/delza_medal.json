@@ -1,0 +1,19 @@
+{
+	"name": "Delza Core Medal",
+	"icon": "kamenridercraft:delza_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 109,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:delza_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

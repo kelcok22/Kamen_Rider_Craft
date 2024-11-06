@@ -1,0 +1,19 @@
+{
+	"name": "Badan Core Medal",
+	"icon": "kamenridercraft:badan_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 112,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:badan_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

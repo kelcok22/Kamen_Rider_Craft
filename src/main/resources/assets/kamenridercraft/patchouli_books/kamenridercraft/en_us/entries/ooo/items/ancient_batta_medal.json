@@ -1,0 +1,19 @@
+{
+	"name": "Ancient Batta Core Medal",
+	"icon": "kamenridercraft:ancient_batta_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 54,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_batta_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		}
+	]
+}

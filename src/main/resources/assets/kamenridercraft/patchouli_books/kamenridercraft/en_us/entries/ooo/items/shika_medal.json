@@ -1,0 +1,19 @@
+{
+	"name": "Shika Core Medal",
+	"icon": "kamenridercraft:shika_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shigazeshi)Shigazeshi Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shika_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+		}
+	]
+}

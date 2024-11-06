@@ -1,0 +1,19 @@
+{
+	"name": "Sasori Core Medal",
+	"icon": "kamenridercraft:sasori_new_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#bikaso)Bikaso Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_new_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Core$(/l)"
+		}
+	]
+}

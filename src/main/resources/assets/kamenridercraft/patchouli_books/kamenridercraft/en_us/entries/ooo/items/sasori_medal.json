@@ -1,0 +1,19 @@
+{
+	"name": "Sasori Core Medal",
+	"icon": "kamenridercraft:sasori_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Core$(/l)"
+		}
+	]
+}

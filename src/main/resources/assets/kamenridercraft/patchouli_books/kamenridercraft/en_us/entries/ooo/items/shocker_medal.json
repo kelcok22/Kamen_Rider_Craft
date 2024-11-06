@@ -1,0 +1,16 @@
+{
+	"name": "Shocker Core Medal",
+	"icon": "kamenridercraft:shocker_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 104,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Tamashiy Combo$(/l)$(br2)Can also be used as a leg medal by sneaking"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/shocker_medal"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Empty Medal Container",
+	"icon": "kamenridercraft:purple_medals_empty",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 126,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:purple_medals_empty",
+			"title": " ",
+			"text": "Obtained after releasing the purple medals from a $(l:ooo/items/purple_medals_sealed)Sealed Medal Container$(/l)"
+		}
+	]
+}

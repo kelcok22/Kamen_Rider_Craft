@@ -1,0 +1,19 @@
+{
+	"name": "Tako Core Medal",
+	"icon": "kamenridercraft:tako_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Shauta Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tako_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+		}
+	]
+}

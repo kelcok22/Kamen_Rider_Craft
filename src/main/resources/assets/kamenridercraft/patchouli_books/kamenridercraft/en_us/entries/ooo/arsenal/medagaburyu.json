@@ -2,7 +2,7 @@
 	"name": "Medagaburyu",
 	"icon": "kamenridercraft:medagaburyu",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

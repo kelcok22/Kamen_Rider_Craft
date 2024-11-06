@@ -2,7 +2,7 @@
 	"name": "Tajanityspinner",
 	"icon": "kamenridercraft:tajaspinner_eternity",
 	"category": "kamenridercraft:ooo/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",
