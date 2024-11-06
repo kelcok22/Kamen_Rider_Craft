@@ -1,0 +1,19 @@
+{
+	"name": "Prototype Ore Ghost Eyecon",
+	"icon": "kamenridercraft:proto_ore_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost: ~Memories of the Future~ (2017, Novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/zero_ghost_driver)Ghost Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from $(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

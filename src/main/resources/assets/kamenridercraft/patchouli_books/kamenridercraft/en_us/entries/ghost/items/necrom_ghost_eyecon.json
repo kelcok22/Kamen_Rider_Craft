@@ -1,0 +1,19 @@
+{
+	"name": "Necrom Ghost Eyecon",
+	"icon": "kamenridercraft:necrom_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Necrom's $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)Used to access Necrom's $(l:ghost/riders/necrom#necrom)Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:necrom_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from $(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

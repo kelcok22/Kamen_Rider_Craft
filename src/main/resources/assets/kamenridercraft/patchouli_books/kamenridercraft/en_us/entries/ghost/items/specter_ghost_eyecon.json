@@ -1,0 +1,19 @@
+{
+	"name": "Specter Ghost Eyecon",
+	"icon": "kamenridercraft:specter_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Specter's $(l:ghost/devices/specter_driver)Ghost Driver$(/l)$(br2)Used to access Specter's $(l:ghost/riders/specter#specter)Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		}
+	]
+}

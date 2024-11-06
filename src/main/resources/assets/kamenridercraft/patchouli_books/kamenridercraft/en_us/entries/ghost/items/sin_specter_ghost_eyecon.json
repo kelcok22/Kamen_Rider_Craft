@@ -1,0 +1,19 @@
+{
+	"name": "Sin Specter Ghost Eyecon",
+	"icon": "kamenridercraft:sin_specter_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Specter's $(l:ghost/riders/specter#sin_specter)Sin Specter$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sin_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

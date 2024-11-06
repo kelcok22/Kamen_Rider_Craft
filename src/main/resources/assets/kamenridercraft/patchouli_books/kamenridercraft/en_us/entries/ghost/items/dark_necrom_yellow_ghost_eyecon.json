@@ -1,0 +1,19 @@
+{
+	"name": "Dark Necrom Ghost Eyecon (Yellow)",
+	"icon": "kamenridercraft:dark_necrom_yellow_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2015, movie)$(br2)Used to craft Dark Necrom Yellow's $(l:ghost/devices/proto_mega_ulorder_yellow)Proto Mega Ulorder$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_necrom_yellow_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from $(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}
