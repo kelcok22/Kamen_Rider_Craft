@@ -245,7 +245,6 @@ public class Gotchard_Rider_Items {
      * ninetail
      */
 
-
 	public static final DeferredItem<Item> UFO_X_RIDE_CHEMY_CARD = ITEMS.register("ufo_x_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_cross_ufo_x","gotchard","gotchardriver_belt_s",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -263,9 +262,15 @@ public class Gotchard_Rider_Items {
      * gigalodon
      * tricera
      * blizzammoth
-     * x_rex
-     * 
-     * mercurin
+     */
+
+	public static final DeferredItem<Item> X_REX_RIDE_CHEMY_CARD = ITEMS.register("x_rex_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_cross_x_rex","gotchard","gotchardriver_belt_s",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+     /* mercurin
      * kinkiravina
      * gokigenmeteon
      * neminemoon
