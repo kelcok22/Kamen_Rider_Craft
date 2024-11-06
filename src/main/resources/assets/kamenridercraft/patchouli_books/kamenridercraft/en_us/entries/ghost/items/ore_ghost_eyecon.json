@@ -1,0 +1,19 @@
+{
+	"name": "Ore Ghost Eyecon",
+	"icon": "kamenridercraft:ore_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver)Ghost Driver$(/l)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		}
+	]
+}

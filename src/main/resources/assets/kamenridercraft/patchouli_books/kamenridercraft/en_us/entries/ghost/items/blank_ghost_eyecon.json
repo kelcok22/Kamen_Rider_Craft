@@ -1,0 +1,19 @@
+{
+	"name": "Blank Ghost Eyecon",
+	"icon": "kamenridercraft:blank_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used as the base item for most Ghost items"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blank_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from: $(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		}
+	]
+}

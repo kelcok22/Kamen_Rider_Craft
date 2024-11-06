@@ -1,0 +1,12 @@
+{
+	"name": "Ghost Logo",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_logo"
+		}
+	]
+}
