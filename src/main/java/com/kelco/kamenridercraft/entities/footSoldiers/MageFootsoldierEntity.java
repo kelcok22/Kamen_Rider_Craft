@@ -15,7 +15,7 @@ public class MageFootsoldierEntity extends BaseHenchmenEntity{
 
     public MageFootsoldierEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="mage_footsoldier";
+        NAME="mage_foot_soldier";
 		BOW_COOLDOWN=35;
 		HARD_BOW_COOLDOWN=15;
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
