@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:nazca_dopant",
-			"text": "Has an 10% chance to spawn from a $(l:w/mobs/masquerade)Masquerade$(/l)"
+			"text": "Has a 2.5% chance to spawn from a $(l:w/mobs/masquerade)Masquerade$(/l)"
 		},
 		{
 			"type": "patchouli:text",
