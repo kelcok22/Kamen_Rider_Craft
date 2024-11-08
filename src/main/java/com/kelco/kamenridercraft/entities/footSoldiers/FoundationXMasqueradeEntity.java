@@ -23,37 +23,43 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.ETERNAL.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+			int bossChance = this.random.nextInt(30);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.ETERNAL.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("<Kamen Rider Eternal>Henshin!").withStyle(ChatFormatting.YELLOW));
-						playerIn.sendSystemMessage(Component.translatable("Eternal!"));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("<Kamen Rider Eternal>Henshin!").withStyle(ChatFormatting.YELLOW));
+							playerIn.sendSystemMessage(Component.translatable("Eternal!"));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.COMMANDER_DOPANT.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.COMMANDER_DOPANT.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Commander!").withStyle(ChatFormatting.GREEN));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Commander!").withStyle(ChatFormatting.GREEN));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.MUCHIRI.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.MUCHIRI.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.YELLOW));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.YELLOW));
+						}
 					}
-				}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

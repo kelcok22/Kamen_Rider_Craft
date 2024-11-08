@@ -24,31 +24,36 @@ public class TrilobiteMagiaEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.MAGIA.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Zetsumerise!").withStyle(ChatFormatting.DARK_RED));
+			int bossChance = this.random.nextInt(30);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.MAGIA.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Zetsumerise!").withStyle(ChatFormatting.DARK_RED));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.JIN.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Forcerise! Flying Falcon! Break down.").withStyle(ChatFormatting.LIGHT_PURPLE));
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.JIN.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Forcerise! Flying Falcon! Break down.").withStyle(ChatFormatting.LIGHT_PURPLE));
+						}
 					}
-				}
-			} else if (this.random.nextInt(8) == 1) {
-			 	BaseHenchmenEntity boss = MobsCore.GIGER.get().create(this.level());
-			 	if (boss != null) {
-			 		boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-			 		this.level().addFreshEntity(boss);
-			 	}
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.GIGER.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
+					}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

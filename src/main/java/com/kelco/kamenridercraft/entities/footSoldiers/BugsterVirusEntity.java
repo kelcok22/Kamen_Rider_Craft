@@ -34,43 +34,43 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
+			int bossChance = this.random.nextInt(20);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.GENM.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
 
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.GENM.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+						for (int n = 0; n < 40; n++)
+						{
 
-					for (int n = 0; n < 40; n++)
-					{
+							Random generator = new Random();
+
+							 int posX = (this.blockPosition().getX()-10)+generator.nextInt(20);
+							 int posY = this.blockPosition().getY()+generator.nextInt(6);
+							 int posZ = (this.blockPosition().getZ()-10)+generator.nextInt(20);
+							BlockPos pos1 = new BlockPos(posX,posY,posZ);
+							if (this.level().isEmptyBlock(pos1))this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
 						
-						Random generator = new Random();
-						
-						 int posX = (this.blockPosition().getX()-10)+generator.nextInt(20);
-						 int posY = this.blockPosition().getY()+generator.nextInt(6);
-						 int posZ = (this.blockPosition().getZ()-10)+generator.nextInt(20);
-						BlockPos pos1 = new BlockPos(posX,posY,posZ);
-						if (this.level().isEmptyBlock(pos1))this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
-			 
-					}
-					
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Gachan! Level up! Mighty jump! Mighty kick! Mighty Action X!").withStyle(ChatFormatting.DARK_PURPLE));
-					}
-				}
-			}
+						}
 
-
-			else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.GRAPHITE_BUGSTER.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!").withStyle(ChatFormatting.DARK_GREEN));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Gachan! Level up! Mighty jump! Mighty kick! Mighty Action X!").withStyle(ChatFormatting.DARK_PURPLE));
+						}
 					}
-					
-				}
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.GRAPHITE_BUGSTER.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!").withStyle(ChatFormatting.DARK_GREEN));
+						}
+					}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

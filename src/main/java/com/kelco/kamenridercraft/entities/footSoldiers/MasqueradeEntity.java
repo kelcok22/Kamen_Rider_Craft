@@ -23,46 +23,53 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.NASCA_DOPANT.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+			int bossChance = this.random.nextInt(40);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.NASCA_DOPANT.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Nasca!").withStyle(ChatFormatting.BLUE));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Nasca!").withStyle(ChatFormatting.BLUE));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.CLAYDOLL_DOPANT.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.CLAYDOLL_DOPANT.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Claydoll!").withStyle(ChatFormatting.GOLD));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Claydoll!").withStyle(ChatFormatting.GOLD));
+						}
 					}
-				}
-			}else if (this.random.nextInt(8) == 1) {
-				BaseHenchmenEntity boss = MobsCore.SMILODON_DOPANT.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.SMILODON_DOPANT.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Smilodon!").withStyle(ChatFormatting.GOLD));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Smilodon!").withStyle(ChatFormatting.GOLD));
+						}
 					}
-				}
-			}else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.WEATHER_DOPANT.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
+					break;
+				case 3:
+					BaseHenchmenEntity boss4 = MobsCore.WEATHER_DOPANT.get().create(this.level());
+					if (boss4 != null) {
+						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss4);
 
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Weather!").withStyle(ChatFormatting.GRAY));
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Weather!").withStyle(ChatFormatting.GRAY));
+						}
 					}
-				}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

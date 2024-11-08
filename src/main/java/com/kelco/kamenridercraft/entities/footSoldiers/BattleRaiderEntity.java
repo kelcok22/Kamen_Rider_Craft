@@ -46,53 +46,60 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.RAIDER.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Raidrise!").withStyle(ChatFormatting.DARK_RED));
+			int bossChance = this.random.nextInt(50);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.RAIDER.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Raidrise!").withStyle(ChatFormatting.DARK_RED));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.NAKI.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Forcerise! Japanese Wolf! Break down.").withStyle(ChatFormatting.WHITE));
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.NAKI.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Forcerise! Japanese Wolf! Break down.").withStyle(ChatFormatting.WHITE));
+						}
 					}
-				}
-			} else if (this.random.nextInt(8) == 1) {
-				BaseHenchmenEntity boss = MobsCore.ZAIA.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Perfectrise! When the five weapons cross, the jet-black soldier ZAIA is born!").withStyle(ChatFormatting.RED));
-						playerIn.sendSystemMessage(Component.translatable("I AM THE PRESIDENT!").withStyle(ChatFormatting.RED));
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.ZAIA.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Perfectrise! When the five weapons cross, the jet-black soldier ZAIA is born!").withStyle(ChatFormatting.RED));
+							playerIn.sendSystemMessage(Component.translatable("I AM THE PRESIDENT!").withStyle(ChatFormatting.RED));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.DIRE_WOLF_SOLD_MAGIA.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Dire Wolf!").withStyle(ChatFormatting.BLUE));
+					break;
+				case 3:
+					BaseHenchmenEntity boss4 = MobsCore.DIRE_WOLF_SOLD_MAGIA.get().create(this.level());
+					if (boss4 != null) {
+						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss4);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Dire Wolf!").withStyle(ChatFormatting.BLUE));
+						}
 					}
-				}
-			} else if (this.random.nextInt(8) == 1) {
-				BaseHenchmenEntity boss = MobsCore.SERVAL_TIGER_SOLD_MAGIA.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Serval Tiger!").withStyle(ChatFormatting.GOLD));
+					break;
+				case 4:
+					BaseHenchmenEntity boss5 = MobsCore.SERVAL_TIGER_SOLD_MAGIA.get().create(this.level());
+					if (boss5 != null) {
+						boss5.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss5);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Serval Tiger!").withStyle(ChatFormatting.GOLD));
+						}
 					}
-				}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);
