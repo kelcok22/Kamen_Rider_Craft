@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.block;
 
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -9,10 +10,12 @@ import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
+import com.kelco.kamenridercraft.data.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.ChatFormatting;
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -20,6 +23,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -244,6 +248,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<TrapDoorBlock> HELHEIM_TRAPDOOR = registerBlock("helheim_trapdoor",
 			() -> new TrapDoorBlock(BlockSetType.OAK,
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
+	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
+			() -> new SaplingBlock(new TreeGrower("helheim_tree", Optional.of(ModConfiguredFeatures.HELHEIM_TREE_KEY), Optional.empty(), Optional.empty()),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
 
 

@@ -27,9 +27,14 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootItemRandomChanceCondition.randomChance(0.1f).build()},
                 W_Rider_Items.EGG_CHICKEN_MEMORY.get()));
 
+        add("wizard_stone",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("entities/phantom")).build(),
+                LootItemRandomChanceCondition.randomChance(0.1f).build()},
+                Wizard_Rider_Items.WIZARD_GEM.get()));
+
         add("purple_medals_nether",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/nether_bridge")).build(),
-                LootItemRandomChanceCondition.randomChance(0.05f).build()},
+                LootItemRandomChanceCondition.randomChance(0.2f).build()},
                 OOO_Rider_Items.PURPLE_MEDALS_SEALED.get()));
 
         add("beast_rings_pyramid",new AddItemModifier(new LootItemCondition[]{
