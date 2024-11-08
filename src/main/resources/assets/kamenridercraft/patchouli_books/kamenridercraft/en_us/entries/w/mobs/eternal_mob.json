@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:eternal_mob",
-			"text": "Has an 10% chance to spawn from a $(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+			"text": "Has a 3.3% chance to spawn from a $(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
 		},
 		{
 			"type": "patchouli:text",

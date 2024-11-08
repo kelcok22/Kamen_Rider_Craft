@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:kazari_mob",
-			"text": "Has an 11% chance to spawn from a $(l:ooo/mobs/yummy)Yummy$(/l)"
+			"text": "Has a 2% chance to spawn from a $(l:ooo/mobs/yummy)Yummy$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)2 $(l:ooo/items/lion_medal)Lion Medals$(/l) (40%)$(li)1 $(l:ooo/items/taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/batta_medal)Batta Medal$(/l) (20%)$(br2)Bosses$(li)$(l:ooo/mobs/kazari)Kazari$(/l) (10%)$(li)$(l:ooo/mobs/uva)Uva$(/l) (11%)$(li)$(l:ooo/mobs/gamel)Gamel$(/l) (13%)$(li)$(l:ooo/mobs/mezool)Mezool$(/l) (11%)$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l) (13%)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_blet_kazari)Greeed Belt (Kazari)$(/l) (10%)$(li)1 $(l:ooo/items/lion_medal)Lion Medal$(/l) (40%)$(li)1 $(l:ooo/items/tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/cheetah_medal)Cheetah Medal$(/l) (40%)"
 		}
 	]
 }
