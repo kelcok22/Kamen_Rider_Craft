@@ -65,43 +65,49 @@ public class KurokageTrooperEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.ZANGETSU_SHIN.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Soda! Melon Energy Arms!").withStyle(ChatFormatting.GREEN));
+			int bossChance = this.random.nextInt(40);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.ZANGETSU_SHIN.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Soda! Melon Energy Arms!").withStyle(ChatFormatting.GREEN));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.MARIKA.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Soda! Peach Energy Arms!").withStyle(ChatFormatting.LIGHT_PURPLE));
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.MARIKA.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Soda! Peach Energy Arms!").withStyle(ChatFormatting.LIGHT_PURPLE));
+						}
 					}
-				}
-			} else if (this.random.nextInt(8) == 1) {
-				BaseHenchmenEntity boss = MobsCore.DUKE.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Soda! Lemon Energy Arms!").withStyle(ChatFormatting.YELLOW));
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.DUKE.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Soda! Lemon Energy Arms!").withStyle(ChatFormatting.YELLOW));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.SIGURD.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Soda! Cherry Energy Arms!").withStyle(ChatFormatting.RED));
+					break;
+				case 3:
+					BaseHenchmenEntity boss4 = MobsCore.SIGURD.get().create(this.level());
+					if (boss4 != null) {
+						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss4);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Soda! Cherry Energy Arms!").withStyle(ChatFormatting.RED));
+						}
 					}
-				}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

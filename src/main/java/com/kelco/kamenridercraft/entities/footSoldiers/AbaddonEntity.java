@@ -65,25 +65,29 @@ public class AbaddonEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.ABADDON_COMMANDER.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("ThinkNet Rise! Crowding Hopper!").withStyle(ChatFormatting.GOLD));
+			int bossChance = this.random.nextInt(20);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.ABADDON_COMMANDER.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("ThinkNet Rise! Crowding Hopper!").withStyle(ChatFormatting.GOLD));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.EDEN.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Progrise Ark! Imagine! Ideal! Illusion! Eden the Kamen Rider!").withStyle(ChatFormatting.RED));
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.EDEN.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Progrise Ark! Imagine! Ideal! Illusion! Eden the Kamen Rider!").withStyle(ChatFormatting.RED));
+						}
 					}
-				}
+					break;
+				default:
 			}
 		}
 		super.remove(p_149847_);

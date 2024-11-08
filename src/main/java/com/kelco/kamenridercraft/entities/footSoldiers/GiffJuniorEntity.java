@@ -29,47 +29,50 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			
-			if (this.random.nextInt(10) == 1) {
-				BaseHenchmenEntity boss = MobsCore.EVIL.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Versus Up!\nMadness! Hopeless! Darkness! Bat! Hehe! Kamen Rider Evil! Yeah-haha!").withStyle(ChatFormatting.AQUA));
+			int bossChance = this.random.nextInt(40);
+			switch (bossChance) {
+				case 0:
+					BaseHenchmenEntity boss = MobsCore.EVIL.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Versus Up!\nMadness! Hopeless! Darkness! Bat! Hehe! Kamen Rider Evil! Yeah-haha!").withStyle(ChatFormatting.AQUA));
+						}
 					}
-				}
-			} else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.DAIOUIKA_DEADMAN.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Daiouika!").withStyle(ChatFormatting.LIGHT_PURPLE));
+					break;
+				case 1:
+					BaseHenchmenEntity boss2 = MobsCore.DAIOUIKA_DEADMAN.get().create(this.level());
+					if (boss2 != null) {
+						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss2);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Daiouika!").withStyle(ChatFormatting.LIGHT_PURPLE));
+						}
 					}
-				}
-
-		} else if (this.random.nextInt(9) == 1) {
-			BaseHenchmenEntity boss = MobsCore.WOLF_DEADMAN.get().create(this.level());
-			if (boss != null) {
-				boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-				this.level().addFreshEntity(boss);
-				if (this.getLastAttacker()instanceof Player playerIn) {
-					playerIn.sendSystemMessage(Component.translatable("Wolf!").withStyle(ChatFormatting.LIGHT_PURPLE));
-				}
+					break;
+				case 2:
+					BaseHenchmenEntity boss3 = MobsCore.WOLF_DEADMAN.get().create(this.level());
+					if (boss3 != null) {
+						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss3);
+						if (this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Wolf!").withStyle(ChatFormatting.LIGHT_PURPLE));
+						}
+					}
+					break;
+				case 3:
+					BaseHenchmenEntity boss4 = MobsCore.QUEEN_BEE_DEADMAN.get().create(this.level());
+					if (boss4 != null) {
+						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+						this.level().addFreshEntity(boss4);
+						if (this.getLastAttacker() instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("Queen Bee!").withStyle(ChatFormatting.GOLD));
+						}
+					}
+					break;
+				default:
 			}
-		}
-		else if (this.random.nextInt(9) == 1) {
-				BaseHenchmenEntity boss = MobsCore.QUEEN_BEE_DEADMAN.get().create(this.level());
-				if (boss != null) {
-					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker() instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Queen Bee!").withStyle(ChatFormatting.GOLD));
-					}
-				}
-			}
-
 		}
 		super.remove(p_149847_);
 	}

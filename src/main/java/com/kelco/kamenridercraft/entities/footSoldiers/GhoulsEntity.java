@@ -18,25 +18,31 @@ public class GhoulsEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason removalReason) {
 
         if ( this.isDeadOrDying()) {
-            if (this.random.nextInt(10) == 1) {
-                BaseHenchmenEntity boss = MobsCore.GREMLIN_PHANTOM.get().create(this.level());
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-                }
-            } else if (this.random.nextInt(9) == 1) {
-                BaseHenchmenEntity boss = MobsCore.MEDUSA_PHANTOM.get().create(this.level());
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-                }
-            }else if (this.random.nextInt(8) == 1) {
-                BaseHenchmenEntity boss = MobsCore.PHOENIX_PHANTOM.get().create(this.level());
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-                }
-            }
+			int bossChance = this.random.nextInt(30);
+			switch (bossChance) {
+				case 0:
+                    BaseHenchmenEntity boss = MobsCore.GREMLIN_PHANTOM.get().create(this.level());
+                    if (boss != null) {
+                        boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                        this.level().addFreshEntity(boss);
+                    }
+					break;
+				case 1:
+                    BaseHenchmenEntity boss2 = MobsCore.MEDUSA_PHANTOM.get().create(this.level());
+                    if (boss2 != null) {
+                        boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                        this.level().addFreshEntity(boss2);
+                    }
+					break;
+                case 2:
+                    BaseHenchmenEntity boss3 = MobsCore.PHOENIX_PHANTOM.get().create(this.level());
+                    if (boss3 != null) {
+                        boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                        this.level().addFreshEntity(boss3);
+                    }
+					break;
+				default:
+			}
         }
         super.remove(removalReason);
     }
