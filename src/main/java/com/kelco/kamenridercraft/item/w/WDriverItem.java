@@ -54,6 +54,13 @@ public class WDriverItem extends RiderDriverItem {
 				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
 			}
 		}
+		if (get_Form_Item(belt, 2)==W_Rider_Items.CYCLONE_SKULL_MEMORY.get()) {
+			if (get_Form_Item(belt, 1)!=W_Rider_Items.CYCLONE_MEMORY.get()) {
+				tag.putString("slot_tex" + 2, (W_Rider_Items.JOKER_MEMORY.get()).toString());
+				tag.putInt("slot" + 2, Item.getId(W_Rider_Items.JOKER_MEMORY.get()));
+				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
+			}
+		}
 	}
 
 	@Override
@@ -64,7 +71,10 @@ public class WDriverItem extends RiderDriverItem {
 			
 			return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
 		}
-		else if (equipmentSlot == EquipmentSlot.HEAD) return riderName+get_Form_Item(itemstack,1).getFormName(fly);
+		else if (equipmentSlot == EquipmentSlot.HEAD){
+			if (get_Form_Item(itemstack,2).getFormName(fly)=="_skull") return riderName+get_Form_Item(itemstack,1).getFormName(fly)+"_skull";
+			else return riderName+get_Form_Item(itemstack,1).getFormName(fly);
+		}
 			
 		
 		else {
