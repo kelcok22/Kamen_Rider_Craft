@@ -1,0 +1,17 @@
+{
+	"name": "Muchiri",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:muchiri_mob",
+			"text": "Has a 3.3% chance to spawn from a $(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_blet_muchiri)Greeed Belt (Muchiri)$(/l) (10%)$(li)1 $(l:ooo/items/mukade_medal)Mukade Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/hachi_medal)Hachi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/ari_medal)Ari Medal$(/l) (33.3%)"
+		}
+	]
+}

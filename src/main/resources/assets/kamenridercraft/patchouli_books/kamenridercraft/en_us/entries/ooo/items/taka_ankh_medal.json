@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taka_ankh_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Complete Ankh$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
 		}
 	]
 }

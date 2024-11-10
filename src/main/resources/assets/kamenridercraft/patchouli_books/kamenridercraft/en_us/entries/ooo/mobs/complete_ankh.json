@@ -1,0 +1,17 @@
+{
+	"name": "Ankh (Complete)",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ankh_complete_mob",
+			"text": "Spawns when $(l:ooo/mobs/ankh)Ankh$(/l) is right-clicked with a $(l:ooo/devices/greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 250$(br2)Drops$(li)5-7 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/devices/greeed_blet_ankh)Greeed Belt (Ankh)$(/l)$(li)1 $(l:ooo/items/taka_ankh_medal)Cracked Taka Core Medal$(/l)$(li)1 $(l:ooo/items/taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/kujaku_medal)Kujaku Medal$(/l) (40%)$(li)1 $(l:ooo/items/condor_medal)Condor Medal$(/l) (40%)"
+		}
+	]
+}

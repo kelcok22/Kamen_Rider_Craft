@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kujaku_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Complete Ankh$(/l)$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
 		}
 	]
 }

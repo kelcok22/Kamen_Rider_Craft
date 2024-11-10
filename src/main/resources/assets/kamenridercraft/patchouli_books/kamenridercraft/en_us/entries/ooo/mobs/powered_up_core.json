@@ -1,0 +1,17 @@
+{
+	"name": "Powered Up Core",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:powered_up_core",
+			"text": "Summoned from a $(l:misc/blocks/powered_up_core_boss_block)Powered Up Core Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Health: 300$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/ebi_new_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/kani_new_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/sasori_new_medal)Sasori Medal$(/l)$(li)1 $(l:ooo/devices/powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)"
+		}
+	]
+}
