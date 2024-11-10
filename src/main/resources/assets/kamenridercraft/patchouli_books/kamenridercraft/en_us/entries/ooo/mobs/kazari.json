@@ -1,8 +1,8 @@
 {
 	"name": "Kazari",
-	"icon": "kamenridercraft:tora_medal",
+	"icon": "kamenridercraft:ooo_logo",
 	"category": "kamenridercraft:ooo/mobs",
-	"sortnum": 1,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

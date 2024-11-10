@@ -1,6 +1,6 @@
 {
 	"name": "Yummy",
-	"icon": "kamenridercraft:cellmedal",
+	"icon": "kamenridercraft:ooo_logo",
 	"category": "kamenridercraft:ooo/mobs",
 	"sortnum": 0,
 	"pages": [
@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (40%)$(li)1 $(l:ooo/items/taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/batta_medal)Batta Medal$(/l) (20%)$(br2)Bosses$(li)$(l:ooo/mobs/kazari)Kazari$(/l) (2%)$(li)$(l:ooo/mobs/uva)Uva$(/l) (2%)$(li)$(l:ooo/mobs/gamel)Gamel$(/l) (2%)$(li)$(l:ooo/mobs/mezool)Mezool$(/l) (2%)$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l) (2%)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (40%)$(li)1 $(l:ooo/items/taka_medal)Taka Medal$(/l) (20%)$(li)1 $(l:ooo/items/tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/batta_medal)Batta Medal$(/l) (20%)$(br2)Bosses$(li)$(l:ooo/mobs/kazari)Kazari$(/l) (2%)$(li)$(l:ooo/mobs/uva)Uva$(/l) (2%)$(li)$(l:ooo/mobs/gamel)Gamel$(/l) (2%)$(li)$(l:ooo/mobs/mezool)Mezool$(/l) (2%)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l) (2%)"
 		}
 	]
 }

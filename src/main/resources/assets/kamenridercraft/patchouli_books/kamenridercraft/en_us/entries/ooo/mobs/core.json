@@ -1,0 +1,17 @@
+{
+	"name": "Core",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:core",
+			"text": "Summoned from a $(l:misc/blocks/core_boss_block)Core Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Health: 180$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)3-6 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)$(li)1 $(l:ooo/items/ebi_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/kani_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/sasori_medal)Sasori Medal$(/l)$(li)1 $(l:w/items/memory_memory)Memory Memory$(/l)$(li)1 $(l:ooo/devices/core_driver)Gaia Core Typhoon$(/l)"
+		}
+	]
+}

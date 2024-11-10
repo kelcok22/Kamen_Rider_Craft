@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:greeed_blet_ankh",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Complete Ankh$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
 		}
 	]
 }

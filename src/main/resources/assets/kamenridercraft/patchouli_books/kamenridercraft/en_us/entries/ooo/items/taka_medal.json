@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taka_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/ankh)Ankh$(/l)$(li)$(l:ooo/mobs/complete_ankh)Complete Ankh$(/l)$(li)$(l:ooo/mobs/lost_ankh)Lost Ankh$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/ankh)Ankh$(/l)$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
 		}
 	]
 }

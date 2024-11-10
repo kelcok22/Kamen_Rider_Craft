@@ -1,0 +1,17 @@
+{
+	"name": "Ancient OOO",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ancient_ooo",
+			"text": "Summoned from a $(l:misc/blocks/ancient_ooo_boss_block)Ancient OOO Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Health: 300$(br2)Drops$(li)10-15 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/ancient_taka_medal)Ancient Taka Medal$(/l)$(li)1 $(l:ooo/items/ancient_tora_medal)Ancient Tora Medal$(/l)$(li)1 $(l:ooo/items/ancient_batta_medal)Ancient Batta Medal$(/l)$(li)1 $(l:ooo/items/greeed_absorption_core)Greeed Absorption Core$(/l)$(li)1 $(l:ooo/arsenal/ancient_ooo_greeed_sword)Ancient OOO' Greeed Sword$(/l)"
+		}
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"name": "Lost Ankh",
+	"name": "Ankh (Lost)",
 	"icon": "kamenridercraft:greeed_blet_ankh_lost",
 	"category": "kamenridercraft:ooo/riders",
 	"sortnum": 12,
@@ -12,7 +12,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Lost Ankh",
+			"title": "Ankh (Lost)",
 			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Fire Resistance$(li)Strength II"
 		}
 	]
