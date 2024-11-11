@@ -3302,6 +3302,8 @@
 "item.kamenridercraft.rider_summon_spawn_egg": "Rider Summon Spawn Egg",
 "item.kamenridercraft.paradx_summon_spawn_egg": "Para-DX Summon Spawn Egg",
 
+
+
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",
 "block.kamenridercraft.deepslate_stone_kuuga": "Deepslate Kuuga Ore",
@@ -3331,6 +3333,7 @@
 "block.kamenridercraft.quartz_block_gold_trim": "Gold Trim Quartz Block",
 "block.kamenridercraft.spruce_flooring": "Spruce Flooring",
 "block.kamenridercraft.stone_flooring": "Stone Flooring",
+
 "block.kamenridercraft.denliner_interior": "DenLiner Interior",
 "block.kamenridercraft.denliner_interior_darker": "DenLiner Interior (Dark)",
 "block.kamenridercraft.denliner_interior_with_line": "DenLiner Interior (Line)",
@@ -3379,6 +3382,27 @@
 "block.kamenridercraft.gaohliner_logo_side": "GaohLiner Logo (Left Side)",
 "block.kamenridercraft.gaohliner_logo_sider": "GaohLiner Logo (Right Side)",
 "block.kamenridercraft.zero_liner_green": "ZeroLiner Green",
+
+  "block.kamenridercraft.helheim_log": "Helheim Log",
+  "block.kamenridercraft.stripped_helheim_log": "Stripped Helheim Log",
+  "block.kamenridercraft.helheim_wood": "Helheim Wood",
+  "block.kamenridercraft.stripped_helheim_wood": "Stripped Helheim Wood",
+  "block.kamenridercraft.helheim_planks": "Helheim Planks",
+  "block.kamenridercraft.helheim_stairs": "Helheim Stairs",
+  "block.kamenridercraft.helheim_slab": "Helheim Slab",
+  "block.kamenridercraft.helheim_button": "Helheim Button",
+  "block.kamenridercraft.helheim_pressure_plate": "Helheim Pressure Plate",
+  "block.kamenridercraft.helheim_fence": "Helheim Fence",
+  "block.kamenridercraft.helheim_fence_gate": "Helheim Fence Gate",
+  "block.kamenridercraft.helheim_door": "Helheim Door",
+  "block.kamenridercraft.helheim_trapdoor": "Helheim Wood Trapdoor",
+  "block.kamenridercraft.helheim_sapling": "Helheim Sapling",
+  "block.kamenridercraft.helheim_vine": "Helheim Vine",
+  "block.kamenridercraft.helheim_plant": "Purple Helheim Fern",
+  "block.kamenridercraft.helheim_plant2": "Helheim Flower",
+  "block.kamenridercraft.helheim_plant3": "Helheim Pitcher Plant",
+  "block.kamenridercraft.helheim_plant4": "Green Helheim Fern",
+
 "block.kamenridercraft.taddle_brick": "Taddle Quest Brick",
 "block.kamenridercraft.taddle_wall": "Taddle Quest Wall",
 "block.kamenridercraft.wallplate": "Wallplate",
