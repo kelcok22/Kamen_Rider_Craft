@@ -506,6 +506,17 @@ public class RiderTabs {
             event.accept(Rider_Blocks.HELHEIM_PLANT_2);
             event.accept(Rider_Blocks.HELHEIM_PLANT_3);
             event.accept(Rider_Blocks.HELHEIM_PLANT_4);
+            event.accept(Rider_Blocks.HELHEIM_STAIRS);
+            event.accept(Rider_Blocks.HELHEIM_SLAB);
+            event.accept(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
+            event.accept(Rider_Blocks.HELHEIM_BUTTON);
+            event.accept(Rider_Blocks.HELHEIM_FENCE);
+            event.accept(Rider_Blocks.HELHEIM_FENCE_GATE);
+            event.accept(Rider_Blocks.HELHEIM_DOOR);
+            event.accept(Rider_Blocks.HELHEIM_TRAPDOOR);
+            event.accept(Rider_Blocks.HELHEIM_SAPLING);
+            event.accept(Rider_Blocks.HELHEIM_VINE);
+
 
 
 
