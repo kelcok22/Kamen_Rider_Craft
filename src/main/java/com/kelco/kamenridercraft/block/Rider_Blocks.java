@@ -250,7 +250,7 @@ public class Rider_Blocks {
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
-			() -> new SaplingBlock(new TreeGrower("helheim_tree", Optional.of(ModConfiguredFeatures.HELHEIM_TREE_KEY), Optional.empty(), Optional.empty()),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+			() -> new SaplingBlock(new TreeGrower("helheim_tree", Optional.empty(), Optional.of(ModConfiguredFeatures.HELHEIM_TREE_KEY), Optional.empty()),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
 
 
