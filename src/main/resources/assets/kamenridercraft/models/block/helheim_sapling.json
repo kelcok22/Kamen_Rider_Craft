@@ -2,6 +2,6 @@
     "parent": "block/cross",
     "render_type": "minecraft:cutout",
     "textures": {
-        "cross": "kamenridercraft:block/horobi_boss_block"
+        "cross": "kamenridercraft:block/helheim_sapling"
     }
 }
