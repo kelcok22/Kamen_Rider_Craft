@@ -2,7 +2,7 @@
 	"name": "Amazon Cell Mutator",
 	"icon": "kamenridercraft:amazon_cell_mutator",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

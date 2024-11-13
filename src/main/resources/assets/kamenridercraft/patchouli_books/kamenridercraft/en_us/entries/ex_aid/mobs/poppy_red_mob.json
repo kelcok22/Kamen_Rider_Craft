@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Poppy",
+	"icon": "kamenridercraft:ex_aid_logo",
+	"category": "kamenridercraft:ex_aid/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:poppy_red_mob",
+			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/rideplayer)Ride-Player$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 45$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1-2 $(l:ex_aid/items/mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l)$(li)1 $(l:ex_aid/items/doremifa_beat_gasha_trophy)DoReMiFa Beat Gasha Trophy$(/l) (30.8%)$(li)1 $(l:ex_aid/items/toki_meki_crisis_gasha_trophy)Toki Meki Crisis Gasha Trophy$(/l) (30.8%)$(li)1 $(l:ex_aid/items/toki_meki_crisis_gashat)Toki Meki Crisis Gashat$(/l) (30.8%)$(li)1 $(l:ex_aid/items/poppy_doremifa_beat_gashat)DoReMiFa Beat Gashat (Poppy Ver.)$(/l) (7.7%)"
+		}
+	]
+}

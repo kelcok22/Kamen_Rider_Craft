@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Duke",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:duke",
+			"text": "Has a 2.5% chance to spawn from a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 200$(br2)Drops$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/lemon_energy_lockseed)Lemon Energy Lockseed$(/l)$(li)1 $(l:gaim/items/lemon_lockseed)Lemon Lockseed$(/l) (12.5%)$(li)1 $(l:gaim/items/dragon_fruits_energy_lockseed)Dragon Fruits Energy Lockseed$(/l) (12.5%)"
+		}
+	]
+}

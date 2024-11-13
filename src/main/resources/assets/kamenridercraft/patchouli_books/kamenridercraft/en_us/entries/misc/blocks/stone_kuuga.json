@@ -2,7 +2,7 @@
 	"name": "Kuuga Ore",
 	"icon": "kamenridercraft:stone_kuuga",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

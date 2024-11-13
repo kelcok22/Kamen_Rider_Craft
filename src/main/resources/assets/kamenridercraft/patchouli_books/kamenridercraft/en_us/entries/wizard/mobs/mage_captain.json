@@ -1,0 +1,17 @@
+{
+	"name": "Imperial Captain",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mage_captain",
+			"text": "Spawn locations: Warped Forest"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Health: 45$(br2)Drops$(li)1-3 $(l:wizard/items/wizardgem)Orange Magic Stones$(/l)$(li)1 $(l:wizard/items/wizardgem_cyan)Cyan Magic Stone$(/l)$(li)1 $(l:wizard/devices/magewizardriver_captain)Mage's Belt (Imperial Captain)$(/l) (40%)$(br2)Bosses$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l) (10%)"
+		}
+	]
+}

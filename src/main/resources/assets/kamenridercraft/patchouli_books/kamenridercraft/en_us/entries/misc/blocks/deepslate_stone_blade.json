@@ -2,7 +2,7 @@
 	"name": "Deepslate Blade Ore",
 	"icon": "kamenridercraft:deepslate_stone_blade",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

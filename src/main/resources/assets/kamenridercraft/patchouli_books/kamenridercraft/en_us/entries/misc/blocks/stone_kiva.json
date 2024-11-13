@@ -2,7 +2,7 @@
 	"name": "Fuestle Ore",
 	"icon": "kamenridercraft:stone_kiva",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

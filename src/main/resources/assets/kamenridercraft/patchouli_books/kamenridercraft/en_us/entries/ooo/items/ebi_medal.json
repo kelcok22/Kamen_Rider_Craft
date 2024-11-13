@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ebi_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/core)Core$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
 		}
 	]
 }

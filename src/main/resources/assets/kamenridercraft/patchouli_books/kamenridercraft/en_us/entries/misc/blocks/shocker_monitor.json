@@ -2,7 +2,7 @@
 	"name": "Shocker Monitor",
 	"icon": "kamenridercraft:shocker_monitor",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,8 +1,8 @@
 {
 	"name": "Gaia Memory Block",
 	"icon": "kamenridercraft:pure_gaia_memory_block",
-	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 17,
+	"category": "kamenridercraft:misc/decor",
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

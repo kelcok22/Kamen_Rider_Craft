@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Sorcerer",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:sorcerer",
+			"text": "Has a 10% chance to spawn from an $(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l) or an $(l:wizard/mobs/mage_captain)Imperial Captain$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Health: 45$(br2)Drops$(li)2-6 $(l:wizard/items/wizardgem)Orange Magic Stones$(/l)$(li)1-3 $(l:wizard/items/wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/wizardgem_black)Black Magic Stone$(/l)"
+		}
+	]
+}

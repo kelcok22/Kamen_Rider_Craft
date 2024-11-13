@@ -2,7 +2,7 @@
 	"name": "Blade Ore",
 	"icon": "kamenridercraft:stone_blade",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

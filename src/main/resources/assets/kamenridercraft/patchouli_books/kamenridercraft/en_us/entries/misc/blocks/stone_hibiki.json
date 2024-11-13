@@ -2,7 +2,7 @@
 	"name": "Oni Ore",
 	"icon": "kamenridercraft:stone_hibiki",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",
