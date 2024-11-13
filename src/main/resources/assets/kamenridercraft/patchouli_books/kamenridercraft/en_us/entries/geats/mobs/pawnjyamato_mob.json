@@ -1,0 +1,17 @@
+{
+	"name": "Pawn Jyamato",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:pawnjyamato_mob",
+			"text": "Spawn locations: Jungle, Dark Forest, Old Growth Birch Forest, Old Growth Spruce Taiga"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (50%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (50%)$(br2)Bosses$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l) (10%)"
+		}
+	]
+}

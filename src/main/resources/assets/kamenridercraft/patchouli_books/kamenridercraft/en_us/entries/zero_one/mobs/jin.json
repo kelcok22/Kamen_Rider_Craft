@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Jin",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jin",
+			"text": "Has a 3.3% chance to spawn from a $(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 80$(br2)Drops$(li)3-6 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)2-4 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l)$(li)1 $(l:zero_one/items/jin_progrisekey)Jin Progrisekey$(/l)$(li)1 $(l:zero_one/items/burning_falcon_progrisekey)Burning Falcon Progrisekey$(/l) (20%)"
+		}
+	]
+}
