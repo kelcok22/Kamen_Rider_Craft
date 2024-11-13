@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "tries": 96,
+    "xz_spread": 6,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_provider",
+            "seed": 2345,
+            "noise": {
+              "firstOctave": 0,
+              "amplitudes": [
+                1
+              ]
+            },
+            "scale": 0.020833334,
+            "states": [
+              {
+                "Name": "kamenridercraft:helheim_plant"
+              },
+              {
+                "Name": "kamenridercraft:helheim_plant_2"
+              },
+              {
+                "Name": "kamenridercraft:helheim_plant_3"
+              },
+              {
+                "Name": "kamenridercraft:helheim_plant_4"
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    }
+  }
+}
