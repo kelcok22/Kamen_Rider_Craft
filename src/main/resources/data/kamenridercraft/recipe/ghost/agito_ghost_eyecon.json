@@ -1,19 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "legend_rider_eyecons",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
-	},
-	"M": {
+	"type": "minecraft:crafting_shapeless",
+	"group": "legend_rider_eyecons",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blank_ghost_eyecon"
+		},
+		{
 	  "item": "kamenridercraft:agito_ground"
-	}
-  },
+  }
+	],
   "result": {
 	"id": "kamenridercraft:agito_ghost_eyecon"
   }	

@@ -1,19 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "legend_rider_eyecons",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
-  ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
-	},
-	"M": {
+  "ingredients": [
+    {
+      "item": "kamenridercraft:blank_ghost_eyecon"
+    },
+    {
 	  "item": "kamenridercraft:rider_ticket_sword"
-    } 
-  },
+    }
+  ],
   "result": {
     "id": "kamenridercraft:den_o_ghost_eyecon"
   }	
