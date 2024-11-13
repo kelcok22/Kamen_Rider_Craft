@@ -2,7 +2,7 @@
 	"name": "Amazon Cell Extractor",
 	"icon": "kamenridercraft:amazon_cell_extractor",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

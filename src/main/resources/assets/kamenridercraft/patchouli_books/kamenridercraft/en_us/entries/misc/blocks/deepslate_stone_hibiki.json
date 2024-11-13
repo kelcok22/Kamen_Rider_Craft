@@ -2,7 +2,7 @@
 	"name": "Deepslate Oni Ore",
 	"icon": "kamenridercraft:deepslate_stone_hibiki",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

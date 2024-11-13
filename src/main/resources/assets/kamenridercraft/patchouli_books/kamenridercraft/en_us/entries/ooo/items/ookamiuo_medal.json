@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ookamiuo_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Poseidon$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
 		}
 	]
 }

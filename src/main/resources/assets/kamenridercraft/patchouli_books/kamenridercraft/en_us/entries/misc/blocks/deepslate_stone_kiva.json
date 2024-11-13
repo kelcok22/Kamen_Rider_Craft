@@ -2,7 +2,7 @@
 	"name": "Deepslate Fuestle Ore",
 	"icon": "kamenridercraft:deepslate_stone_kiva",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 15,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

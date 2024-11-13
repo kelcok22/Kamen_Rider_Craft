@@ -2,7 +2,7 @@
 	"name": "Deepslate Advent Glass",
 	"icon": "kamenridercraft:deepslate_glass_ryuki",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

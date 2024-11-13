@@ -2,7 +2,7 @@
 	"name": "Deepslate Kuuga Ore",
 	"icon": "kamenridercraft:deepslate_stone_kuuga",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

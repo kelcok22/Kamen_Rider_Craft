@@ -1,8 +1,8 @@
 {
 	"name": "Blue Rose",
 	"icon": "kamenridercraft:blue_rose",
-	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 120,
+	"category": "kamenridercraft:misc/decor",
+	"sortnum": 85,
 	"pages": [
 		{
 			"type": "patchouli:text",

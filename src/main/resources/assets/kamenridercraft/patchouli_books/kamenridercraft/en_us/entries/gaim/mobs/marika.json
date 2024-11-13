@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Marika",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:marika",
+			"text": "Has a 2.5% chance to spawn from a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 200$(br2)Drops$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/peach_energy_lockseed)Peach Energy Lockseed$(/l)$(li)1 $(l:gaim/items/marron_energy_lockseed)Marron Energy Lockseed$(/l) (25%)"
+		}
+	]
+}

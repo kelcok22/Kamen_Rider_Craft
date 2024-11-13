@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:aqua_core",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Poseidon$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
 		}
 	]
 }

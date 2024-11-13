@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Cronus",
+	"icon": "kamenridercraft:ex_aid_logo",
+	"category": "kamenridercraft:ex_aid/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:cronus",
+			"text": "Summoned from a $(l:misc/blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 300$(br2)Special moves:$(li)Can use Pause to freeze the player$(li)Transforms into $(l:ex_aid/riders/cronus#gamedeus)Gamedeus Cronus$(/l) at under 100 health$(li)As Gamedeus Cronus, can use Reset to force the player back to their base form (unless they have the Save effect)$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1-2 $(l:ex_aid/items/mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l)$(li)1 $(l:ex_aid/items/kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)$(li)1 $(l:ex_aid/items/blank_gashat)Blank Gashat$(/l) (80%)$(li)1 $(l:ex_aid/items/kamen_rider_chronicle_gashat_gamedeus)Kamen Rider Chronicle Gashat (Gamedeus)$(/l) (20%)"
+		}
+	]
+}

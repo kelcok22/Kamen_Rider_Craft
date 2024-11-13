@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sasori_new_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Core$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Fangire Glass",
 	"icon": "kamenridercraft:fangire_glass",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

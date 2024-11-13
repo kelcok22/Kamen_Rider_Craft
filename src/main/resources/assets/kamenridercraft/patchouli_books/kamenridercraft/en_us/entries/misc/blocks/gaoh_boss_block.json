@@ -2,7 +2,7 @@
 	"name": "Gaoh Boss Block",
 	"icon": "kamenridercraft:gaoh_boss_block",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 110,
+	"sortnum": 37,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "G-Chip Programmer",
 	"icon": "kamenridercraft:g_chip_programer",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

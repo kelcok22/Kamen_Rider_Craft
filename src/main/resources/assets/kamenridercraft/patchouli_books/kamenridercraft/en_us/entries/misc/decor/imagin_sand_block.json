@@ -1,8 +1,8 @@
 {
 	"name": "Imagin Sand Block",
 	"icon": "kamenridercraft:imagin_sand_block",
-	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 121,
+	"category": "kamenridercraft:misc/decor",
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

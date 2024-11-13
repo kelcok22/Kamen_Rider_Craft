@@ -2,7 +2,7 @@
 	"name": "Deepslate Gaia Memory Ore",
 	"icon": "kamenridercraft:deepslate_gaiamemoryblock",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kaijin Stone Generator",
 	"icon": "kamenridercraft:kaijin_stone_generator",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

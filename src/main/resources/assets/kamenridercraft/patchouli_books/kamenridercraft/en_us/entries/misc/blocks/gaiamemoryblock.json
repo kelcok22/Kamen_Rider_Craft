@@ -2,7 +2,7 @@
 	"name": "Gaia Memory Ore",
 	"icon": "kamenridercraft:gaiamemoryblock",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Sigurd",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:sigurd",
+			"text": "Has a 2.5% chance to spawn from a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 200$(br2)Drops$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/cherry_energy_lockseed)Cherry Energy Lockseed$(/l)$(li)1 $(l:gaim/items/sid_lockseed)Sid Lockseed$(/l) (25%)"
+		}
+	]
+}
