@@ -1,19 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "legend_rider_eyecons",
-  "pattern": [
-	"XXX",
-	"XMX",
-	"XXX"
+  "ingredients": [
+    {
+      "item": "kamenridercraft:blank_ghost_eyecon"
+    },
+    {
+      "item": "kamenridercraft:joker_memory"
+    }
   ],
-  "key": {
-	"X": {
-	  "item": "kamenridercraft:blank_ghost_eyecon"
-	},
-	"M": {
-	  "item": "kamenridercraft:joker_memory"
-    } 
-  },
   "result": {
     "id": "kamenridercraft:double_ghost_eyecon"
   }	
