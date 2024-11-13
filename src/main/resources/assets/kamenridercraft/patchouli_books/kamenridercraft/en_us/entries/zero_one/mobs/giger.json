@@ -1,0 +1,17 @@
+{
+	"name": "Giger",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:giger",
+			"text": "Has a 3.3% chance to spawn from a $(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 60$(br2)Drops$(li)0-2 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/mammoth_zetsumerisekey)Mammoth Zetsumerisekey$(/l) (50%)$(li)1 $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l) (50%)"
+		}
+	]
+}

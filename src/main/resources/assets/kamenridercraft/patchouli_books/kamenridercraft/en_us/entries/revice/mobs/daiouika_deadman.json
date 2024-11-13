@@ -1,0 +1,17 @@
+{
+	"name": "Daiouika Deadman",
+	"icon": "kamenridercraft:revice_logo",
+	"category": "kamenridercraft:revice/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:daiouika_deadman",
+			"text": "Has a 2.5% chance to spawn from a $(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 120$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/daiouika_vistamp)Daiouika Proto Vistamp$(/l)$(li)1 $(l:revice/items/rolling_vistamp)Rolling Vistamp$(/l) (20%)$(li)1 $(l:revice/items/proto_chameleon_vistamp)Chameleon Proto Vistamp$(/l) (60%)$(li)1 $(l:revice/arsenal/paranegro)Paranegro$(/l) (20%)$(br2)Bosses$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l) (if you have the $(l:revice/items/rolling_vistamp)Rolling Vistamp$(/l))"
+		}
+	]
+}

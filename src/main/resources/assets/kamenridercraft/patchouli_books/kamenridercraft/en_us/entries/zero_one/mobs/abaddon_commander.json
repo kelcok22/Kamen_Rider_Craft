@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Abaddon (Commander's Type)",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:abaddon_commander",
+			"text": "Has a 5% chance to spawn from $(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Health: 45$(br2)Drops$(li)3-5 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/crowding_hopper_progrisekey)Crowding Hopper Progrisekey$(/l)"
+		}
+	]
+}

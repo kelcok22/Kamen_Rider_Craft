@@ -1,0 +1,17 @@
+{
+	"name": "Jyamato Rider",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jyamatorider",
+			"text": "Has a 10% chance to spawn from a $(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Health: 60$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (50%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (50%)$(li)1 $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) (50%)$(li)1 $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (18.8%)$(li)1 $(l:geats/items/discore_id)DisCore ID$(/l) (18.8%)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (12.5%)"
+		}
+	]
+}

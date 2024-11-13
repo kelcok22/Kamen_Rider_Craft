@@ -1,0 +1,17 @@
+{
+	"name": "Wolf Deadman",
+	"icon": "kamenridercraft:revice_logo",
+	"category": "kamenridercraft:revice/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:wolf_deadman",
+			"text": "Has a 2.5% chance to spawn from a $(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 120$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_wolf_vistamp)Wolf Proto Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (26.7%)$(li)1 $(l:revice/items/buffalo_vistamp)Buffalo Vistamp$(/l) (20%)$(li)1 $(l:revice/items/kuwagata_vistamp)Kuwagata Vistamp$(/l) (13.3%)$(li)1 $(l:revice/items/rex_vistamp_theme)Rex Vistamp (Theme Song)$(/l) (6.7%)$(li)1 $(l:revice/items/sabertiger_vistamp)Sabertiger Proto Vistamp$(/l) (6.7%)$(li)1 $(l:revice/items/cheetah_vistamp)Cheetah Proto Vistamp$(/l) (6.7%)$(li)1 $(l:revice/items/giraffa_vistamp)Giraffa Vistamp$(/l) (6.7%)"
+		}
+	]
+}

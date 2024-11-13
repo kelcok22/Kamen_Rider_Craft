@@ -1,0 +1,17 @@
+{
+	"name": "Raider",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:raider",
+			"text": "Has a 2% chance to spawn from a $(l:zero_one/mobs/battle_raider)Battle Raider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 40$(br2)Drops$(li)2-4 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l)$(li)1 Progrisekey depending on type (50%)"
+		}
+	]
+}

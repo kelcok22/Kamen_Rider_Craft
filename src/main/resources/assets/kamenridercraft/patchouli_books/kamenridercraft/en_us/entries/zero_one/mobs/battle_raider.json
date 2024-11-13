@@ -1,0 +1,17 @@
+{
+	"name": "Battle Raider",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:battle_raider",
+			"text": "Spawn locations: Basalt Deltas"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 30$(br2)Drops$(li)1-3 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l)$(li)1 $(l:zero_one/items/invading_horseshoe_crab_progrisekey)Invading Horseshoe Crab Progrisekey$(/l) (20%)$(br2)Bosses$(li)$(l:zero_one/mobs/raider)Raider$(/l) (2%)$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l) (2%)$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l) (2%)$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)Dire Wolf Sold Magia$(/l) (2%)$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)Serval Tiger Sold Magia$(/l) (2%)"
+		}
+	]
+}
