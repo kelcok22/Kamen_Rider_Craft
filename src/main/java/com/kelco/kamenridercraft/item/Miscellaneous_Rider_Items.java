@@ -15,6 +15,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.UseAnim;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -251,7 +252,7 @@ public class Miscellaneous_Rider_Items {
 		    
 		    public static final DeferredItem<Item> ENERGY_DRINK = ITEMS.register("energy_drink",
 					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
-							.AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+							.SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

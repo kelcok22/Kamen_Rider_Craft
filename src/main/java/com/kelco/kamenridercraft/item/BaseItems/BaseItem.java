@@ -4,12 +4,14 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.util.List;
 
 
-
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.UseAnim;
+
 public class BaseItem extends Item {
 
-
+    public UseAnim Animation;
     private Item craftingRemainingItem = null;
 
     public BaseItem(Properties prop) {
@@ -39,12 +41,22 @@ public class BaseItem extends Item {
         } else  return new ItemStack(this.getCraftingRemainingItem());
     }
 
+    public BaseItem SetItemAnimation(UseAnim Anim) {
+        Animation=Anim;
+        return this;
+    }
+
 
     public boolean hasCraftingRemainingItem(ItemStack stack)
     {
         return ((BaseItem)stack.getItem()).craftingRemainingItem!=null;
     }
 
+    @Override
+    public UseAnim getUseAnimation(ItemStack stack) {
+        if (Animation != null)  return Animation;
+        else return stack.has(DataComponents.FOOD) ? UseAnim.EAT : UseAnim.NONE;
+    }
 
     public BaseItem AddToList(List<Item> TabList, int num) {
         for (int i = 0; i < num; i++)
