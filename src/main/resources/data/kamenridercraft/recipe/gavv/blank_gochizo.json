@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:rider_circuit"
+	}, 
+	{
+	  "item": "kamenridercraft:candy_wrapper"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:blank_gochizo"
+  }
+}
