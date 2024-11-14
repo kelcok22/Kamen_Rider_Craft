@@ -1,0 +1,16 @@
+{
+	"name": "Chocodangun",
+	"icon": "kamenridercraft:chocodangun",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/chocodangun"
+		}
+	]
+}

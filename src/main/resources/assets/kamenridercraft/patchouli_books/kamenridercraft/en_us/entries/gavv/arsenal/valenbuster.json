@@ -1,0 +1,16 @@
+{
+	"name": "Valenbuster",
+	"icon": "kamenridercraft:valenbuster",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by $(l:gavv/riders/valen#chocodon)Kamen Rider Valen$(/l)$(br2)Used to obtain Valen's $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/valenbuster"
+		}
+	]
+}
