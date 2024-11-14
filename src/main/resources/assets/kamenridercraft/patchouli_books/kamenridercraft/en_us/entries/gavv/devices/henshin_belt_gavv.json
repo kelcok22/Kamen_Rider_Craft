@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/gavv)Kamen Rider Gavv"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:henshin_belt_gavv",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/henshin_belt_gavv"
 		}
 	]
 }

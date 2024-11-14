@@ -1,0 +1,19 @@
+{
+	"name": "Valenbuckle",
+	"icon": "kamenridercraft:valenbuckle",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/valen)Kamen Rider Valen"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:valenbuckle",
+			"title": " ",
+			"text": "Obtained by firing the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) without any foot armor"
+		}
+	]
+}
