@@ -1,0 +1,16 @@
+{
+	"name": "Chocodongun",
+	"icon": "kamenridercraft:chocodongun",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's Chocodon Assist"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/chocodongun"
+		}
+	]
+}
