@@ -1248,6 +1248,23 @@
 "item.kamenridercraft.birth_core_catepillar_leg": "Birth Cell Medal (Caterpillar Leg)",
 "item.kamenridercraft.birth_core_cutter_wing": "Birth Cell Medal (Cutter Wing)",
 
+  "item.kamenridercraft.fourze_logo": "Fourze Logo",
+  "item.kamenridercraft.fourze_head": "Fourze Helmet",
+  "item.kamenridercraft.fourze_troso": "Fourze Chestplate",
+  "item.kamenridercraft.fourze_legs": "Fourze Leggings",
+  "item.kamenridercraft.fourze_driver": "Fourze Driver",
+
+  "item.kamenridercraft.astroswitch": "Blank Switch",
+  "item.kamenridercraft.rocket_switch": "Rocket Switch",
+  "item.kamenridercraft.launcher_switch": "Launcher Switch",
+  "item.kamenridercraft.drill_switch": "Drill Switch",
+  "item.kamenridercraft.radar_switch": "Radar Switch",
+  "item.kamenridercraft.magic_hand_switch": "Magichand Switch",
+  "item.kamenridercraft.camera_switch": "Camera Switch",
+  "item.kamenridercraft.parachute_switch": "Parachute Switch",
+  "item.kamenridercraft.chainsaw_switch": "Chainsaw Switch",
+  "item.kamenridercraft.hopping_switch": "Hopping Switch",
+  "item.kamenridercraft.elek_switch": "Elek Switch",
 
   "item.kamenridercraft.wizard_logo": "Wizard Logo",
   "item.kamenridercraft.wizard_head": "Wizard Helmet",

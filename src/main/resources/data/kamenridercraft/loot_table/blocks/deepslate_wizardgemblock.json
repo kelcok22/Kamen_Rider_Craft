@@ -10,7 +10,7 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"name": "kamenridercraft:wizardgemblock",
+							"name": "kamenridercraft:deepslate_wizardgemblock",
 							"conditions": [
 								{
 									"condition": "minecraft:match_tool",
@@ -149,5 +149,5 @@
 			]
 		}
 	],
-	"random_sequence": "kamenridercraft:wizardgemblock"
+	"random_sequence": "kamenridercraft:deepslate_wizardgemblock"
 }
