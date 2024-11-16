@@ -30,6 +30,20 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> BLANK_ASTROSWITCH = ITEMS.register("astroswitch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
+
+	public static final DeferredItem<Item> FOURZE_BASE_STATES = ITEMS.register("fourze_basestates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeSlot(5));
+
+	public static final DeferredItem<Item> FOURZE_ELEK_STATES = ITEMS.register("fourze_elekstates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_elek","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeSlot(5));
+
+
 	public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -48,9 +62,7 @@ public class Fourze_Rider_Items {
 					.ChangeSlot(4));
 
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_astroswitch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
@@ -68,15 +80,42 @@ public class Fourze_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_radar_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
-	/**
-	radar_switch
-	magic_hand_switch
-	camera_switch
-	parachute_switch
-	chainsaw_switch
-	hopping_switch
 
-	elek_swich
+	public static final DeferredItem<Item> MAGIC_HAND_ASTROSWITCH = ITEMS.register("magic_hand_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magichand_module","fourze","fourze_driver_belt"
+					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CAMERA_ASTROSWITCH = ITEMS.register("camera_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_camera_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false))
+					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> PARACHUTE_ASTROSWITCH = ITEMS.register("parachute_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_parachute_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false))
+					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHAINSAW_ASTROSWITCH = ITEMS.register("chainsaw_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chainsaw_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> HOPPING_ASTROSWITCH = ITEMS.register("hopping_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hopping_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ELEK_ASTROSWITCH = ITEMS.register("elek_astroswitch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_elek_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ELEK_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
+
+	/**
 	scissors_switch
 	beat_switch
 	chain_array_switch
