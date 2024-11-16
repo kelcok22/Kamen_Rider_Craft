@@ -1,5 +1,10 @@
 package com.kelco.kamenridercraft.item.client;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
@@ -13,6 +18,8 @@ import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
+import java.util.List;
+
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
 
     private static LivingEntity RIDER;
@@ -24,8 +31,17 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
             if (belt.getGlowForSlot(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot,livingEntity))addRenderLayer(new AutoGlowingGeoLayer<>(this));
 
-        }
 
+            if (belt.Unlimited_Textures!=0&equipmentSlot==EquipmentSlot.CHEST){
+                for (int n = 0; n < belt.Unlimited_Textures; n++) {
+                    {
+                        addRenderLayer(new RiderRenderLayer<>(this, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/armor/"+
+                                belt.getUnlimitedTextures(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER, belt.Rider, n + 1)+".png")));
+                    }
+                }
+            }
+
+        }
         RIDER =  livingEntity;
     }
     

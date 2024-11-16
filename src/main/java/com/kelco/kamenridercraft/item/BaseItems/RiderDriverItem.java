@@ -39,6 +39,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public int Num_Base_Form_Item = 1;
     public String BELT_TEXT;
 
+    public int Unlimited_Textures = 0;
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
@@ -139,6 +140,10 @@ public class RiderDriverItem extends RiderArmorItem {
 
     }
 
+    public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName ,int num)
+    {
+        return "blank";
+    }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Belt_Model());

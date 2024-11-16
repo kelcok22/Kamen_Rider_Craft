@@ -62,6 +62,8 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem alsoChange1stSlot;
     private RiderFormChangeItem alsoChange2ndSlot;
     private RiderFormChangeItem alsoChange3rdSlot;
+    private RiderFormChangeItem alsoChange4thSlot;
+    private RiderFormChangeItem alsoChange5thSlot;
 
     private Boolean hasIncompatibleForms = false;
     private List<RiderFormChangeItem> incompatibleForms= new ArrayList<RiderFormChangeItem>();
@@ -175,6 +177,16 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem alsoChange3rdSlot(Item item) {
         alsoChange3rdSlot=  (RiderFormChangeItem) item;
+        return this;
+    }
+
+    public RiderFormChangeItem alsoChange4thSlot(Item item) {
+        alsoChange4thSlot=  (RiderFormChangeItem) item;
+        return this;
+    }
+
+    public RiderFormChangeItem alsoChange5thSlot(Item item) {
+        alsoChange5thSlot=  (RiderFormChangeItem) item;
         return this;
     }
 
@@ -364,6 +376,8 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
+                    if (alsoChange4thSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange4thSlot, 4);
+                    if (alsoChange5thSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange5thSlot, 5);
                     if (SET_TO_ARMOR_FORM)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),belt.Armor_Form_Item, 1);
 
                     int SLOT = Slot;
