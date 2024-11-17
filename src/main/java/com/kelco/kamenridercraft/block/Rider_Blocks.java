@@ -543,6 +543,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ZERO_LINER_GREEN = registerBlock("zero_liner_green",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
+
 					
 	public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
@@ -615,6 +618,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> WALLPLATE = registerBlock("wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> GHOST_LINER_WHEEL = registerBlock("ghostliner_wheel",
+			() -> new StairBlock(Rider_Blocks.WALLPLATE.get().defaultBlockState(),
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 	
 	public static final DeferredBlock<Block> WHITE_WALLPLATE = registerBlock("white_wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
