@@ -66,8 +66,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		{
 			if (get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ELEK_STATES.get()) {
 				if (get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get()) {
-					tag.putString("slot_tex" + 1, (Fourze_Rider_Items.FOURZE_BASE_STATES.get()).toString());
-					tag.putInt("slot" + 1, Item.getId(Fourze_Rider_Items.FOURZE_BASE_STATES.get()));
+					tag.putString("slot_tex" + 5, (Fourze_Rider_Items.FOURZE_BASE_STATES.get()).toString());
+					tag.putInt("slot" + 5, Item.getId(Fourze_Rider_Items.FOURZE_BASE_STATES.get()));
 					CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
 				}
 			}
