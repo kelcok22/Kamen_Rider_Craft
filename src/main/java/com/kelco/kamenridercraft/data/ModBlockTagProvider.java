@@ -33,6 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Rider_Blocks.HELHEIM_LOG.get())
                 .add(Rider_Blocks.HELHEIM_TRAPDOOR.get());
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(Rider_Blocks.GHOST_LINER_WHEEL.get());
+
 
 
         tag(BlockTags.FENCES).add(Rider_Blocks.HELHEIM_FENCE.get());
