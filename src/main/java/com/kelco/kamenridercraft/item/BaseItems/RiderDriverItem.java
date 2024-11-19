@@ -78,7 +78,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
+                if (tag.getBoolean("Update_form")&!level.isClientSide()) OnformChange(stack, player, tag);
             }
 
             if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {

@@ -56,14 +56,14 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		}
 
 		@Override
-		public void OnformChange(ItemStack belt, LivingEntity player, CompoundTag tag) {
-			if ((get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
+		public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
+		{
+			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
 			//  ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_FIRE_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.FIRE_ASTROSWITCH.get())
 				) {
-				tag.putString("slot_tex" + 5, (Fourze_Rider_Items.FOURZE_BASE_STATES.get()).toString());
-				tag.putInt("slot" + 5, Item.getId(Fourze_Rider_Items.FOURZE_BASE_STATES.get()));
+				set_Form_Item(belt,Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
 			}
-			super.OnformChange(belt, player, tag);
+
 		}
 
 		@Override
