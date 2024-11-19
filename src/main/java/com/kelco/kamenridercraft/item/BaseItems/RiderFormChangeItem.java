@@ -377,7 +377,7 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
                     if (alsoChange4thSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange4thSlot, 4);
-                    if (alsoChange5thSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange5thSlot, 5);
+
                     if (SET_TO_ARMOR_FORM)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),belt.Armor_Form_Item, 1);
 
                     int SLOT = Slot;
@@ -385,6 +385,7 @@ public class RiderFormChangeItem extends BaseItem {
 
                     if (SWITCH_ITEM!=null&RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), SLOT)==this) RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),SWITCH_ITEM, SLOT);
                     else RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),this, SLOT);
+                    if (alsoChange5thSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange5thSlot, 5);
 
                 }else if(!alternative.isEmpty()){
 
