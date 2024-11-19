@@ -110,6 +110,7 @@ public class KamenRiderCraftCore
         Ex_Aid_Rider_Items.register(modEventBus);
         Build_Rider_Items.register(modEventBus);
         Zero_One_Rider_Items.register(modEventBus);
+        Saber_Rider_Items.register(modEventBus);
         Revice_Rider_Items.register(modEventBus);
         Geats_Rider_Items.register(modEventBus);
         Gotchard_Rider_Items.register(modEventBus);

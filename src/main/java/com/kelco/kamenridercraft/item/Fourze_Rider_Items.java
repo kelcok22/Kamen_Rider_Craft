@@ -156,8 +156,36 @@ public class Fourze_Rider_Items {
 
 	clear_drill_swich
 	fusion_swich
-	meteor_swich
-	meteor_storm_swich
+	 **/
+
+	public static final DeferredItem<Item> METEOR_ASTROSWITCH = ITEMS.register("meteor_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","meteor","meteor_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","meteor","meteor_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","nadeshiko","nadeshiko_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
+	/**
 
 	nadeshiko_switch
 
@@ -206,11 +234,16 @@ public class Fourze_Rider_Items {
 			() -> new FourzeDriverItem(ArmorMaterials.DIAMOND,"fourze",BLANK_CIRCLE_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BLANK_CROSS_ASTROSWITCH,BLANK_TRIANGLE_ASTROSWITCH,BLANK_SPUARE_ASTROSWITCH).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
+	public static final DeferredItem<Item> METEOR_DRIVER = ITEMS.register("meteor_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"meteor",METEOR_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
+					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+	public static final DeferredItem<Item> NADESHIKO_DRIVER = ITEMS.register("nadeshiko_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nadeshiko",NADESHIKO_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
+					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+
 	/**
-Fourzedriver
-	meteor_driver
-	nadeshikodriver
-	ikarosdriver
 		ginga_oh_driver
 **/
 

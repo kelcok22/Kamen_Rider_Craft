@@ -36,19 +36,19 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		{
 			boolean fly = rider instanceof Player player && player.getAbilities().flying;
 			if (num == 1){
-				if (get_Form_Item(itemstack,1)!= Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.get()){
+				if (get_Form_Item(itemstack,1)!= Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.get()&get_Form_Item(itemstack,1)!=null){
 					return riderName + get_Form_Item(itemstack, 1).getFormName(fly);
 				}else return"blank";
 			}if (num == 2){
-				if (get_Form_Item(itemstack,2)!= Fourze_Rider_Items.BLANK_CROSS_ASTROSWITCH.get()){
+				if (get_Form_Item(itemstack,2)!= Fourze_Rider_Items.BLANK_CROSS_ASTROSWITCH.get()&get_Form_Item(itemstack,2)!=null){
 					return riderName + get_Form_Item(itemstack, 2).getFormName(fly);
 				}else return"blank";
 			}else 	if (num == 3){
-				if (get_Form_Item(itemstack,3)!= Fourze_Rider_Items.BLANK_TRIANGLE_ASTROSWITCH.get()){
+				if (get_Form_Item(itemstack,3)!= Fourze_Rider_Items.BLANK_TRIANGLE_ASTROSWITCH.get()&get_Form_Item(itemstack,3)!=null){
 					return riderName + get_Form_Item(itemstack, 3).getFormName(fly);
 				}else return"blank";
 			} else 	if (num == 4){
-				if (get_Form_Item(itemstack,4)!= Fourze_Rider_Items.BLANK_SPUARE_ASTROSWITCH.get()){
+				if (get_Form_Item(itemstack,4)!= Fourze_Rider_Items.BLANK_SPUARE_ASTROSWITCH.get()&get_Form_Item(itemstack,4)!=null){
 					return riderName + get_Form_Item(itemstack, 4).getFormName(fly);
 				}else return"blank";
 			}
