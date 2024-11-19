@@ -176,8 +176,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 		
 		if (get_Form_Item(belt,2)==Geats_Rider_Items.REVICE_DRIVER_RAISE_BUCKLE.get()&get_Form_Item(belt,3)!=Modded_item_core.BLANK_FORM.get())set_Form_Item(belt, Modded_item_core.BLANK_FORM.get(), 2);
 		if (get_Form_Item(belt,2)==Geats_Rider_Items.REVICE_DRIVER_RAISE_BUCKLE_VICE.get()&get_Form_Item(belt,3)!=Modded_item_core.BLANK_FORM.get())set_Form_Item(belt, Modded_item_core.BLANK_FORM.get(), 2);
-		player.setInvisible(false);
-		tag.putBoolean("Update_form", false);
+		super.OnformChange(belt, player, tag);
 	}
 
 

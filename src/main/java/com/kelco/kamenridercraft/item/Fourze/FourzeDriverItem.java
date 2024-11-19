@@ -1,14 +1,14 @@
 package com.kelco.kamenridercraft.item.Fourze;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
-import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
+
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -56,19 +56,14 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		}
 
 		@Override
-		public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-			super.inventoryTick(stack,level,entity,slotId,isSelected);
-
-		}
-
-		@Override
 		public void OnformChange(ItemStack belt, LivingEntity player, CompoundTag tag) {
-
-			if (get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ELEK_STATES.get()) {
-				if (get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get()) {
-					set_Form_Item(belt, Fourze_Rider_Items.FOURZE_BASE_STATES.get(), 5);
-				}
+			if ((get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
+			//  ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_FIRE_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.FIRE_ASTROSWITCH.get())
+				) {
+				tag.putString("slot_tex" + 5, (Fourze_Rider_Items.FOURZE_BASE_STATES.get()).toString());
+				tag.putInt("slot" + 5, Item.getId(Fourze_Rider_Items.FOURZE_BASE_STATES.get()));
 			}
+			super.OnformChange(belt, player, tag);
 		}
 
 		@Override

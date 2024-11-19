@@ -9,6 +9,7 @@
 	"kamenridercraft:parachute_switch",
 	"kamenridercraft:chainsaw_switch",
 	"kamenridercraft:hopping_switch",
-	"kamenridercraft:elek_switch"
+	"kamenridercraft:elek_switch",
+	"#kamenridercraft:gear/form_items/meteor"
   ]
 }
