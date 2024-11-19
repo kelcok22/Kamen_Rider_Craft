@@ -32,7 +32,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
             if (belt.getGlowForSlot(livingEntity.getItemBySlot(EquipmentSlot.FEET), equipmentSlot,livingEntity))addRenderLayer(new AutoGlowingGeoLayer<>(this));
 
 
-            if (belt.Unlimited_Textures!=0&equipmentSlot==EquipmentSlot.CHEST){
+            if (belt.Unlimited_Textures!=0&equipmentSlot==EquipmentSlot.HEAD){
                 for (int n = 0; n < belt.Unlimited_Textures; n++) {
                     {
                         addRenderLayer(new RiderRenderLayer<>(this, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/armor/"+
