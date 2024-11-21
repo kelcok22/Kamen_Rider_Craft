@@ -20,10 +20,14 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Monster;
@@ -52,7 +56,7 @@ import net.neoforged.neoforge.event.entity.player.ItemFishedEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
-
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 
 public class ModCommonEvents {
@@ -67,13 +71,20 @@ public class ModCommonEvents {
 			if (entity == null) return;
 
 			if (!event.getEntity().level().isClientSide()){
-			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false) {
+
+
+				//MobEffect SS_FLY = BuiltInRegistries.MOB_EFFECT.get(ResourceLocation.fromNamespaceAndPath("supersentaicraft","flying"));
+
+
+			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING): false) {
+
 				if (entity instanceof Player _player) {
 					_player.getAbilities().mayfly = (true);
 					_player.onUpdateAbilities();
 				}
 			}
-			else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false)) {
+
+				else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false)) {
 				if (entity instanceof Player _player) {
 
 					boolean checkGamemode = false;

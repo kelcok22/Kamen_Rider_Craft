@@ -44,6 +44,26 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> STORM_EAGLE_WONDER_RIDE_BOOK = ITEMS.register("storm_eagle_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"storm_eagle","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(2).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> SAIYUU_JOURNEY_WONDER_RIDE_BOOK = ITEMS.register("saiyuu_journey_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saiyuu_journey","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> LION_SENKI_WONDER_RIDE_BOOK = ITEMS.register("lion_senki_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"lion_senki","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(2).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> LAMP_DO_ALNGINA_WONDER_RIDE_BOOK = ITEMS.register("lamp_do_alngina_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"lamp_do_alngina","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
@@ -55,9 +75,17 @@ public class Saber_Rider_Items {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
-	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER = ITEMS.register("seiken_swordriver_saber",
+	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_SABER = ITEMS.register("seiken_swordriver_saber",
 			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"saber",BRAVE_DRAGON_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(SABER_BLANK_2,SABER_BLANK_3).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_BLADES = ITEMS.register("seiken_swordriver_blades",
+			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"blades",SABER_BLANK_1 ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(LION_SENKI_WONDER_RIDE_BOOK,SABER_BLANK_3).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_ESPADA = ITEMS.register("seiken_swordriver_espada",
+			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"espada",SABER_BLANK_1 ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(SABER_BLANK_3,LAMP_DO_ALNGINA_WONDER_RIDE_BOOK).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
