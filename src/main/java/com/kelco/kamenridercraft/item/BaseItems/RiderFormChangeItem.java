@@ -55,6 +55,7 @@ public class RiderFormChangeItem extends BaseItem {
     private Item STIFT_ITEM = Items.APPLE;
     private Item SWITCH_ITEM;
     private Boolean RESET_FORM = false;
+    private Boolean RESET_FORM_MAIN = false;
 
     private Boolean SET_TO_ARMOR_FORM = false;
 
@@ -243,7 +244,10 @@ public class RiderFormChangeItem extends BaseItem {
         RESET_FORM=true;
         return this;
     }
-
+    public RiderFormChangeItem ResetFormToBaseIfMain() {
+        RESET_FORM_MAIN=true;
+        return this;
+    }
     public RiderFormChangeItem SetFormToArmor() {
         SET_TO_ARMOR_FORM=true;
         return this;
@@ -373,6 +377,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
+                    if (RESET_FORM_MAIN&RIDER_NAME==belt.Rider)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);

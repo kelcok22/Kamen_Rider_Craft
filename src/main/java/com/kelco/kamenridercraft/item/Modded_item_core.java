@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -37,6 +38,11 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item>  DONUT = ITEMS.register("donut",
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item> MAYO= ITEMS.register("mayo",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 500, 2), 1.0F).build()))
+                    .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
+
 
     public static final DeferredItem<Item>  CANDY_WRAPPER = ITEMS.register("candy_wrapper",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

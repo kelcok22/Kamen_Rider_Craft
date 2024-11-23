@@ -86,8 +86,6 @@ public class KamenRiderCraftCore
         NeoForge.EVENT_BUS.register(this);
         Effect_core.register(modEventBus);
 
-
-
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
@@ -109,6 +107,7 @@ public class KamenRiderCraftCore
         Ghost_Rider_Items.register(modEventBus);
         Ex_Aid_Rider_Items.register(modEventBus);
         Build_Rider_Items.register(modEventBus);
+        Zi_O_Rider_Items.register(modEventBus);
         Zero_One_Rider_Items.register(modEventBus);
         Saber_Rider_Items.register(modEventBus);
         Revice_Rider_Items.register(modEventBus);

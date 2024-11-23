@@ -156,6 +156,11 @@ public class RiderTabs {
             CreativeModeTab.builder().icon(() -> new ItemStack(Build_Rider_Items.BUILD_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_build_items.png"))
                     .title(Component.literal("Build Rider Items")).build());
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZI_OTab = CREATIVE_MODE_TABS.register("krc_400_zi_o_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(Zi_O_Rider_Items.ZI_O_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_zi_o_items.png"))
+                    .title(Component.literal("Zi-O Rider Items")).build());
+
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> Zero_OneTab = CREATIVE_MODE_TABS.register("krc_410_zero_one_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Zero_One_Rider_Items.ZERO_ONE_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_zero_one_items.png"))
                     .title(Component.literal("Zero-One Rider Items")).build());
@@ -236,6 +241,7 @@ public class RiderTabs {
     public static List<Item> EX_AID_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> GHOST_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> BUILD_TAB_ITEM= new ArrayList<Item>();
+    public static List<Item> ZI_O_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> ZERO_ONE_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> SABER_TAB_ITEM= new ArrayList<Item>();
     public static List<Item> REVICE_TAB_ITEM= new ArrayList<Item>();
@@ -441,6 +447,12 @@ public class RiderTabs {
             for (int i = 0; i < RiderTabs.BUILD_TAB_ITEM.size(); i++)
             {
                 event.accept( RiderTabs.BUILD_TAB_ITEM.get(i));
+            }
+
+        }else if(event.getTab() == RiderTabs.ZI_OTab.get()) {
+            for (int i = 0; i < RiderTabs.ZI_O_TAB_ITEM.size(); i++)
+            {
+                event.accept( RiderTabs.ZI_O_TAB_ITEM.get(i));
             }
 
         }else if(event.getTab() == RiderTabs.Zero_OneTab.get()) {
