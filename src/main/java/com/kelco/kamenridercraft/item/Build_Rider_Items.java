@@ -130,7 +130,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> LOCK_FULL_BOTTLE = ITEMS.register("lock_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_lock","build","build_driver_belt")
-					.CanHazard().BestMatch(DRAGON_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.CanHazard().BestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
