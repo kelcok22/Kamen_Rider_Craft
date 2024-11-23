@@ -1253,6 +1253,8 @@
   "item.kamenridercraft.fourze_troso": "Fourze Chestplate",
   "item.kamenridercraft.fourze_legs": "Fourze Leggings",
   "item.kamenridercraft.fourze_driver": "Fourze Driver",
+  "item.kamenridercraft.meteor_driver": "Meteor Driver",
+  "item.kamenridercraft.nadeshiko_driver": "Nadeshiko Driver",
 
   "item.kamenridercraft.astroswitch": "Blank Switch",
   "item.kamenridercraft.rocket_switch": "Rocket Switch",
@@ -1265,6 +1267,10 @@
   "item.kamenridercraft.chainsaw_switch": "Chainsaw Switch",
   "item.kamenridercraft.hopping_switch": "Hopping Switch",
   "item.kamenridercraft.elek_switch": "Elek Switch",
+
+  "item.kamenridercraft.meteor_switch": "Meteor Switch",
+  "item.kamenridercraft.meteor_storm_switch": "Meteor Storm Switch",
+  "item.kamenridercraft.nadeshiko_switch": "Nadeshiko Switch",
 
   "item.kamenridercraft.wizard_logo": "Wizard Logo",
   "item.kamenridercraft.wizard_head": "Wizard Helmet",
@@ -2380,13 +2386,25 @@
   "item.kamenridercraft.seiken_swordriver_blades": "Seiken Swordriver (Blades)",
   "item.kamenridercraft.seiken_swordriver_espada": "Seiken Swordriver (Espada)",
 
+  "item.kamenridercraft.kaenken_rekka": "Kaenken Rekka",
+  "item.kamenridercraft.suiseiken_nagare": "Suiseiken Nagare",
+  "item.kamenridercraft.raimeiken_ikazuchi": "Raimeiken Ikazuchi",
+
   "item.kamenridercraft.blank_wonder_ride_book": "Blank Wonder Rider Book",
   "item.kamenridercraft.brave_dragon_wonder_ride_book": "Brave Dragon Wonder Ride Book",
   "item.kamenridercraft.storm_eagle_wonder_ride_book": "Storm Eagle Wonder Ride Book",
   "item.kamenridercraft.saiyuu_journey_wonder_ride_book": "Saiyuu Journey Wonder Ride Book",
+  "item.kamenridercraft.tenkuu_no_pegasus_wonder_ride_book": "Tenkuu no Pegasus Wonder Ride Book",
   "item.kamenridercraft.lion_senki_wonder_ride_book": "Lion Senki Wonder Ride Book",
-
+  "item.kamenridercraft.peter_fantasista_wonder_ride_book": "Peter Fantasista Wonder Ride Book",
+  "item.kamenridercraft.tri_cerberus_wonder_ride_book": "Tri Cerberus Wonder Rider Book",
+  "Item.kamenridercraft.needle_hedgehog_wonder_ride_book": "Needle Hedgehog Wonder Ride Book",
   "item.kamenridercraft.lamp_do_alngina_wonder_ride_book": "Lamp Do Alangina Wonder Ride Book",
+  "item.kamenridercraft.genbu_shinwa_wonder_ride_book": "Genbu Shinwa Wonder Ride Book",
+  "item.kamenridercraft.jackun_to_domamenoki_wonder_ride_book": "Jackun to Domamenoki Wonder Ride Book",
+  "item.kamenridercraft.jaaku_dragon_wonder_ride_book": "Jaaku Dragon Wonder Ride Book",
+  "item.kamenridercraft.eternal_phoenix_wonder_ride_book": "Eternal Phoenix Wonder Ride Book",
+  "item.kamenridercraft.king_of_arthur_wonder_ride_book": "King of Arthur Wonder Ride Book",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
