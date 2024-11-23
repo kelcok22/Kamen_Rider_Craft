@@ -2,15 +2,14 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -105,10 +104,14 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR = ITEMS.register("jaaku_dragon_wonder_ride_book_calibur",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","calibur","jaken_caliburdriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)));
+
 	public static final DeferredItem<Item> JAAKU_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("jaaku_dragon_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"jaaku_dragon","blades","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
-					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+					.addAlternative(JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR.get()).AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ETERNAL_PHOENIX_WONDER_RIDE_BOOK = ITEMS.register("eternal_phoenix_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"eternal_phoenix","blades","seiken_saikou_driver_belt"
@@ -125,6 +128,11 @@ public class Saber_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_dragonic_knight","saber","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> TELEVI_KUN_WONDER_RIDE_BOOK = ITEMS.register("televi_kun_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"televi_kun","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
@@ -147,6 +155,31 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_ESPADA = ITEMS.register("seiken_swordriver_espada",
 			() -> new SeikenSwordriverItem(ArmorMaterials.DIAMOND,"espada",SABER_BLANK_1 ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(SABER_BLANK_2,LAMP_DO_ALNGINA_WONDER_RIDE_BOOK).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> JAKEN_CALIBURDRIVER = ITEMS.register("jaken_caliburdriver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"calibur",JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+
+	public static final DeferredItem<Item> KEANKEN_REKKA = ITEMS.register("kaenken_rekka",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> KINGEXCALIBUR = ITEMS.register("kingexcalibur",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> SUISEIKEN_NAGARE = ITEMS.register("suiseiken_nagare",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> RAIMEIKEN_IKAZUCHI = ITEMS.register("raimeiken_ikazuchi",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	public static final DeferredItem<Item> ANKOKUKEN_KURAYAMI = ITEMS.register("ankokuken_kurayami",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
