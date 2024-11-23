@@ -26,7 +26,7 @@ public class Zi_O_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zi_o","ziku_driver_zi_o_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+            .AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> ZI_O_HELMET = ITEMS.register("zi_o_head",
