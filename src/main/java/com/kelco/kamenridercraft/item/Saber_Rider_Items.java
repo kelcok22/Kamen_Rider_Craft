@@ -55,16 +55,62 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK = ITEMS.register("tenkuu_no_pegasus_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"tenkuu_no_pegasus","blades","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades","espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> LION_SENKI_WONDER_RIDE_BOOK = ITEMS.register("lion_senki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"lion_senki","blades","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ResetFormToBaseIfMain().AddCompatibilityList(new String[] {"saber","espada"}).ChangeSlot(2).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> PETER_FANTASISTA_WONDER_RIDE_BOOK = ITEMS.register("peter_fantasista_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"peter_fantasista","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> TRI_CERBERUS_WONDER_RIDE_BOOK = ITEMS.register("tri_cerberus_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"tri_cerberus","blades","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK = ITEMS.register("needle_hedgehog_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"needle_hedgehog","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"espada"}).ChangeSlot(2).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 	public static final DeferredItem<Item> LAMP_DO_ALNGINA_WONDER_RIDE_BOOK = ITEMS.register("lamp_do_alngina_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"lamp_do_alngina","espada","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ResetFormToBaseIfMain().AddCompatibilityList(new String[] {"blades","saber"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> GENBU_SHINWA_WONDER_RIDE_BOOK = ITEMS.register("genbu_shinwa_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"genbu_shinwa","blades","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK = ITEMS.register("jackun_to_domamenoki_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"jackun_to_domamenoki","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> JAAKU_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("jaaku_dragon_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"jaaku_dragon","blades","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> ETERNAL_PHOENIX_WONDER_RIDE_BOOK = ITEMS.register("eternal_phoenix_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"eternal_phoenix","blades","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> KING_OF_ARTHUR_WONDER_RIDE_BOOK = ITEMS.register("king_of_arthur_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"king_of_arthur","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
