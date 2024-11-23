@@ -1,5 +1,8 @@
 {
   "values": [
-	"kamenridercraft:seiken_swordriver_saber"
+	"kamenridercraft:seiken_swordriver_saber",
+	"kamenridercraft:seiken_swordriver_blades",
+	"kamenridercraft:seiken_swordriver_espada",
+	"kamenridercraft:jaken_caliburdriver"
   ]
 }
