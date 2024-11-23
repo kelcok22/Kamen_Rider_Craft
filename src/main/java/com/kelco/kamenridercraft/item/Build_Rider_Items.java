@@ -91,6 +91,17 @@ public class Build_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
 					.BestMatch(PANDA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> HARINEZUMI_FULL_BOTTLE = ITEMS.register("harinezumi_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_harinezumi","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHOUBOUSHA_FULL_BOTTLE = ITEMS.register("shoubousha_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_shoubousha","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.BestMatch(HARINEZUMI_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
