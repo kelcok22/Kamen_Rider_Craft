@@ -90,8 +90,18 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
-	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK = ITEMS.register("jackun_to_domamenoki_ride_book",
+	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK = ITEMS.register("jackun_to_domamenoki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"jackun_to_domamenoki","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> SARUTOBI_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("sarutobi_ninjaden_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"sarutobi_ninjaden","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK = ITEMS.register("kobuta_3_kyoudai_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kobuta_3_kyoudai","saber","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
@@ -111,6 +121,10 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> DRAGONIC_KNIGHT_WONDER_RIDE_BOOK = ITEMS.register("dragonic_knight_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_dragonic_knight","saber","seiken_saikou_driver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)

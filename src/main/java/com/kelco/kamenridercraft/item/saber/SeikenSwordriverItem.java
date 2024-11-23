@@ -3,7 +3,10 @@ package com.kelco.kamenridercraft.item.saber;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
+import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -31,6 +34,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
         //return riderName + get_Form_Item(itemstack, 4).getFormName(fly);
 
+        if (get_Form_Item(itemstack,1).get_Stored_num()==2) return"blank";
         if(num==2) return get_Form_Item(itemstack,1).getFormName(fly);
         else if(num==3) return get_Form_Item(itemstack,2).getFormName(fly);
         else if(num==4) return get_Form_Item(itemstack,3).getFormName(fly);
@@ -40,6 +44,17 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         super.inventoryTick(stack,level,entity,slotId,isSelected);
+
+    }
+    @Override
+    public void Extra_set_Form_Item(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag)
+    {
+        if (belt.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get()){
+        if (get_Form_Item(belt, 1).get_Stored_num()==2 && get_Form_Item(belt, 2)!= Saber_Rider_Items.SABER_BLANK_2.get()
+        ||(get_Form_Item(belt, 1).get_Stored_num()==2&get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get())) {
+            set_Form_Item(belt, Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK.asItem(), 1);
+        }
+    }
 
     }
 
