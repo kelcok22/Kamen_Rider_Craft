@@ -114,13 +114,20 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.BestMatch(LION_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
-	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE = ITEMS.register("dragon_full_bottle",
+	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE_BUILD = ITEMS.register("dragon_full_bottle_build",
 			() -> new FullBottleItem(new Item.Properties(),0,"_dragon","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE = ITEMS.register("dragon_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","cross_z","build_driver_belt_cross_z",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
+					.addAlternative(DRAGON_FULL_BOTTLE_BUILD.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOCK_FULL_BOTTLE = ITEMS.register("lock_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_lock","build","build_driver_belt")
@@ -162,6 +169,8 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> BUILD_DRIVER = ITEMS.register("build_driver",
 			() -> new BuildDriverItem(ArmorMaterials.DIAMOND,"build",RABBIT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties())
 			.Add_Extra_Base_Form_Items(TANK_FULL_BOTTLE,FULL_BOTTLE).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_CROSS_Z = ITEMS.register("build_driver_cross_z",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z", DRAGON_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 
 	public static void register(IEventBus eventBus) {
