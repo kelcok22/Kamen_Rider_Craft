@@ -2028,7 +2028,7 @@
 
 "item.kamenridercraft.taka_full_bottle": "Taka Fullbottle",
 "item.kamenridercraft.harinezumi_full_bottle": "Harinezumi Fullbottle",
-"item.kamenridercraft.ninjya_full_bottle": "Ninjya Fullbottle",
+"item.kamenridercraft.ninja_full_bottle": "Ninja Fullbottle",
 "item.kamenridercraft.panda_full_bottle": "Panda Fullbottle",
 "item.kamenridercraft.lion_full_bottle": "Lion Fullbottle",
 "item.kamenridercraft.dragon_full_bottle": "Dragon Fullbottle",
@@ -2405,12 +2405,14 @@
   "item.kamenridercraft.genbu_shinwa_wonder_ride_book": "Genbu Shinwa Wonder Ride Book",
   "item.kamenridercraft.jackun_to_domamenoki_wonder_ride_book": "Jackun to Domamenoki Wonder Ride Book",
   "item.kamenridercraft.sarutobi_ninjaden_wonder_ride_book": "Sarutobi Ninjaden Wonder Ride Book",
-  "item.kamenridercraft.kobuta_3_kyoudai_wonder_ride_book": "Kobuta 3 Kyoudai Wonder Ride Book",
+  "item.kamenridercraft.kobuta_3_kyoudai_wonder_ride_book": "Kobuta 3Kyoudai Wonder Ride Book",
   "item.kamenridercraft.hanselnuts_to_gretel_wonder_ride_book": "Hanselnuts to Gretel Wonder Ride Book",
   "item.kamenridercraft.bremen_no_rock_band_wonder_ride_book": "Bremen no Rock Band Wonder Ride Book",
   "item.kamenridercraft.jaaku_dragon_wonder_ride_book": "Jaaku Dragon Wonder Ride Book",
   "item.kamenridercraft.eternal_phoenix_wonder_ride_book": "Eternal Phoenix Wonder Ride Book",
   "item.kamenridercraft.king_of_arthur_wonder_ride_book": "King of Arthur Wonder Ride Book",
+
+  "item.kamenridercraft.dragonic_knight_wonder_ride_book": "Dragonic Knight Wonder Ride Book",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
