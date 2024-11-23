@@ -184,6 +184,14 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
+	public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ikaros","ikaros_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
 
 	/**
 
@@ -240,6 +248,10 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> NADESHIKO_DRIVER = ITEMS.register("nadeshiko_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nadeshiko",NADESHIKO_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
+					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+	public static final DeferredItem<Item> IKAROS_DRIVER = ITEMS.register("ikaros_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ikaros",IKAROS_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
 					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
