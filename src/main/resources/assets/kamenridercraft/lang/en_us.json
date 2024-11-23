@@ -1393,6 +1393,8 @@
   "item.kamenridercraft.unknown_cyan_ring": "Unknown Wizard Ring",
   "item.kamenridercraft.unknown_beast_ring": "Unknown Wizard Ring",
 
+  "item.kamenridercraft.mayo": "Mayo",
+
   "item.kamenridercraft.gaim_logo": "Gaim Logo",
   "item.kamenridercraft.gaimhead": "Gaim Helmet",
   "item.kamenridercraft.gaimtroso": "Gaim Chestplate",
@@ -2166,6 +2168,15 @@
 "item.kamenridercraft.wizard_full_bottle": "Wizard Fullbottle",
 "item.kamenridercraft.fourze_full_bottle": "Fourze Fullbottle",
 
+  "item.kamenridercraft.zi_o_logo": "Zi-O Logo",
+  "item.kamenridercraft.zi_o_head": "Zi-O Helmet",
+  "item.kamenridercraft.zi_o_troso": "Zi-O Chestplate",
+  "item.kamenridercraft.zi_o_legs": "Zi-O Leggings",
+
+  "item.kamenridercraft.ziku_driver_zi_o": "Ziku Driver (Zi-O)",
+
+  "item.kamenridercraft.blank_watch": "Blank Ridewatch",
+  "item.kamenridercraft.zi_o_ridewatch": "Zi-O Ridewatch",
 
 "item.kamenridercraft.zero_one_logo": "Zero-One Logo",
 "item.kamenridercraft.zero_onehead": "Zero-One Helmet",
@@ -2359,7 +2370,23 @@
 "item.kamenridercraft.merry_hopper_progrisekey": "Christmas Rising Hopper Progrisekey",
 
 "item.kamenridercraft.hiden_risephone": "Hiden Risephone",
-          
+
+"item.kamenridercraft.saber_logo": "Saber Logo",
+  "item.kamenridercraft.saberhead": "Saber Helmet",
+  "item.kamenridercraft.sabertroso": "Saber Chestplate",
+  "item.kamenridercraft.saberlegs": "Saber Leggings",
+
+"item.kamenridercraft.seiken_swordriver_saber": "Seiken Swordriver (Saber)",
+  "item.kamenridercraft.seiken_swordriver_blades": "Seiken Swordriver (Blades)",
+  "item.kamenridercraft.seiken_swordriver_espada": "Seiken Swordriver (Espada)",
+
+  "item.kamenridercraft.blank_wonder_ride_book": "Blank Wonder Rider Book",
+  "item.kamenridercraft.brave_dragon_wonder_ride_book": "Brave Dragon Wonder Ride Book",
+  "item.kamenridercraft.storm_eagle_wonder_ride_book": "Storm Eagle Wonder Ride Book",
+  "item.kamenridercraft.saiyuu_journey_wonder_ride_book": "Saiyuu Journey Wonder Ride Book",
+  "item.kamenridercraft.lion_senki_wonder_ride_book": "Lion Senki Wonder Ride Book",
+
+  "item.kamenridercraft.lamp_do_alngina_wonder_ride_book": "Lamp Do Alangina Wonder Ride Book",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
