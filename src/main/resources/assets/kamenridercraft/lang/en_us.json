@@ -1255,6 +1255,7 @@
   "item.kamenridercraft.fourze_driver": "Fourze Driver",
   "item.kamenridercraft.meteor_driver": "Meteor Driver",
   "item.kamenridercraft.nadeshiko_driver": "Nadeshiko Driver",
+  "item.kamenridercraft.ikaros_driver": "Ikaros Driver",
 
   "item.kamenridercraft.astroswitch": "Blank Switch",
   "item.kamenridercraft.rocket_switch": "Rocket Switch",
@@ -1271,6 +1272,7 @@
   "item.kamenridercraft.meteor_switch": "Meteor Switch",
   "item.kamenridercraft.meteor_storm_switch": "Meteor Storm Switch",
   "item.kamenridercraft.nadeshiko_switch": "Nadeshiko Switch",
+  "item.kamenridercraft.ikaros_switch": "Ikaros Switch",
 
   "item.kamenridercraft.wizard_logo": "Wizard Logo",
   "item.kamenridercraft.wizard_head": "Wizard Helmet",
