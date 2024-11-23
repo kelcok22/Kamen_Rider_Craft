@@ -80,6 +80,17 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
 					.BestMatch(NINJA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> PANDA_FULL_BOTTLE = ITEMS.register("panda_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_panda","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROCKET_FULL_BOTTLE = ITEMS.register("rocket_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_rocket","build","build_driver_belt",
+					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					.BestMatch(PANDA_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
