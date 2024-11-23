@@ -68,7 +68,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> LAUNCHER_ASTROSWITCH = ITEMS.register("launcher_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_launcher_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRILL_ASTROSWITCH = ITEMS.register("drill_switch",
@@ -78,12 +78,12 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> RADAR_ASTROSWITCH = ITEMS.register("radar_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_radar_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.RADAR, 40, 0,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGIC_HAND_ASTROSWITCH = ITEMS.register("magic_hand_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magichand_module","fourze","fourze_driver_belt"
-					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAMERA_ASTROSWITCH = ITEMS.register("camera_switch",
@@ -93,7 +93,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> PARACHUTE_ASTROSWITCH = ITEMS.register("parachute_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_parachute_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 3,true,false))
+					new MobEffectInstance(Effect_core.LOW_GRAVITY, 40, 6,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAINSAW_ASTROSWITCH = ITEMS.register("chainsaw_switch",

@@ -44,6 +44,13 @@ public class Effect_core {
             () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final Holder<MobEffect> LONG_ARM= EFFECT.register("long_arm",
+            () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+                    .addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.long_arm"), 1F, AttributeModifier.Operation.ADD_VALUE));
+
+    public static final Holder<MobEffect> RADAR= EFFECT.register("radar",
+            () -> new RadarEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
+
 
     public static final Holder<MobEffect> SMALL= EFFECT.register("small",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
@@ -86,6 +93,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  EXPLOSION_PUNCH= EFFECT.register("explosion_punch",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
+    public static final Holder<MobEffect>  EXPLOSION_SLASH= EFFECT.register("explosion_slash",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+
     public static final Holder<MobEffect>  FIRE_SHOT= EFFECT.register("fire_shot",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
@@ -94,6 +104,10 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  FIRE_ARMOR= EFFECT.register("fire_armor",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
+
+    public static final Holder<MobEffect> CANNON= EFFECT.register("cannon",
+            () -> new CannonEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
+
 
     public static final Holder<MobEffect>  REFLECT= EFFECT.register("reflect",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
