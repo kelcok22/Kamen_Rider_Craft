@@ -132,6 +132,18 @@ public class Build_Rider_Items {
 			() -> new FullBottleItem(new Item.Properties(),0,"_lock","build","build_driver_belt")
 					.CanHazard().BestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> KAIZOKU_FULL_BOTTLE = ITEMS.register("kaizoku_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_kaizoku","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> DENSHA_FULL_BOTTLE = ITEMS.register("densha_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_densha","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
+					.CanHazard().BestMatch(KAIZOKU_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
