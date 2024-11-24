@@ -83,7 +83,11 @@
   "effect.kamenridercraft.return":"Return",
   "effect.kamenridercraft.connect":"Connect",
   "effect.kamenridercraft.ghost":"Ghost",
-
+  "effect.kamenridercraft.cannon":"Cannon",
+  "effect.kamenridercraft.long_arm":"Long Arm",
+  "effect.kamenridercraft.radar":"Radar",
+  "effect.kamenridercraft.stealth":"Stealth",
+  "effect.kamenridercraft.explosion_slash":"Explosive Slash",
 
 "item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",

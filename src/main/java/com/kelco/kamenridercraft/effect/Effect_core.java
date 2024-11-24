@@ -45,7 +45,7 @@ public class Effect_core {
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> LONG_ARM= EFFECT.register("long_arm",
-            () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
+            () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0xe60052)
                     .addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.long_arm"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> RADAR= EFFECT.register("radar",
