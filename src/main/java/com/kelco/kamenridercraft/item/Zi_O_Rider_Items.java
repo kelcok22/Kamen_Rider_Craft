@@ -92,7 +92,7 @@ public class Zi_O_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gaim","zi_o","ziku_driver_zi_o_belt_gaim",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					.ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> DRIVE_RIDEWATCH = ITEMS.register("drive_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drive","geiz","ziku_driver_geiz_belt_drive",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
