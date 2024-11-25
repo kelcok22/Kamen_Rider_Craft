@@ -1,5 +1,10 @@
 {
   "values": [
-	"kamenridercraft:geiz_ridewatch"
+	"kamenridercraft:geiz_ridewatch",
+  "kamenridercraft:wizard_ridewatch",
+  "kamenridercraft:drive_ridewatch",
+  "kamenridercraft:ghost_ridewatch",
+  "kamenridercraft:ex_aid_ridewatch",
+  "kamenridercraft:build_ridewatch"
   ]
 }
