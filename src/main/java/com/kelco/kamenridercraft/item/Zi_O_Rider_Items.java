@@ -214,6 +214,12 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> BIBIRU_GEIZ_RIDEWATCH = ITEMS.register("bibiru_geiz_ridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bibiru","geiz","ziku_driver_geiz_belt_bibiru",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> RYUSOULGER_RIDEWATCH = ITEMS.register("ryusoulger_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 		
