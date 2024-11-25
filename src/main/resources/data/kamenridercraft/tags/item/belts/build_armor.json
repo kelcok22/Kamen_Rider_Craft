@@ -1,6 +1,7 @@
 {
   "values": [
 	"kamenridercraft:build_driver",
-	"kamenridercraft:build_driver_cross_z"
+	"kamenridercraft:build_driver_cross_z",
+	"kamenridercraft:transteam_gun_night_rogue"
   ]
 }
