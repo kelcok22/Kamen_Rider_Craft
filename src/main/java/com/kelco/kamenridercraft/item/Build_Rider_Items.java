@@ -155,6 +155,66 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 					.BestMatch(OCTOPUS_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> PHOENIX_FULL_BOTTLE = ITEMS.register("phoenix_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_phoenix","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+					.ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROBOT_FULL_BOTTLE = ITEMS.register("robot_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_robot","build","build_driver_belt",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.BestMatch(PHOENIX_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> WOLF_FULL_BOTTLE = ITEMS.register("wolf_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_wolf","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SMAPHO_FULL_BOTTLE = ITEMS.register("smapho_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_smapho","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+					.CanHazard().BestMatch(WOLF_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> UNICORN_FULL_BOTTLE = ITEMS.register("unicorn_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_unicorn","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> KESHIGOMU_FULL_BOTTLE = ITEMS.register("keshigomu_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_keshigomu","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.BestMatch(UNICORN_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROSE_FULL_BOTTLE = ITEMS.register("rose_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_rose","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> HELICOPTER_FULL_BOTTLE = ITEMS.register("helicopter_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_helicopter","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.BestMatch(ROSE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> TURTLE_FULL_BOTTLE = ITEMS.register("turtle_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_turtle","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> WATCH_FULL_BOTTLE = ITEMS.register("watch_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_watch","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+					.BestMatch(TURTLE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MEDAL_FULL_BOTTLE = ITEMS.register("medal_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_medal","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
