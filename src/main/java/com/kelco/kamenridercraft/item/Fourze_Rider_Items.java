@@ -51,6 +51,12 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeSlot(5));
 
+	public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeSlot(5));
+
 	public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -268,15 +274,16 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
 					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("net_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_net_module","fourze","fourze_driver_belt",
+	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("super_rocket_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_rocket_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
-					.ChangeSlot(2).alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.ChangeSlot(2).alsoChange5thSlot(FOURZE_ROCKET_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> SUPER_DRILL_ASTROSWITCH = ITEMS.register("super_drill_switch",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	/**
-	super_rocket_swich
 	super_launcher_swich
-	super_drill_swich
 
 	clear_drill_swich
 	fusion_swich
@@ -325,11 +332,21 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH_CHRISTMAS_VER = ITEMS.register("rocket_swich_christmas_ver",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	/**
-	gate_switch
 
-	rider1_switch
-	rider2_switch
+	//gate_switch
+
+	public static final DeferredItem<Item> RIDER_1_ASTROSWITCH = ITEMS.register("rider1_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rider1_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> RIDER_2_ASTROSWITCH = ITEMS.register("rider2_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rider2_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
+	/**
 	v3_switch
 	riderman_switch
 	x_switch
