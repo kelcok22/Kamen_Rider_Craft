@@ -455,6 +455,8 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SPUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
+	public static final DeferredItem<Item> ZODIARTS_SWITCH = ITEMS.register("zodiarts_switch",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FOURZE_HELMET = ITEMS.register("fourze_head",
