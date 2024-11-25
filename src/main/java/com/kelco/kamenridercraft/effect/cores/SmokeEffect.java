@@ -20,7 +20,6 @@ public class SmokeEffect extends InstantenousMobEffect {
 
 	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-
 						pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+1.5,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
 						pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+1,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
 						pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+0.5,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
