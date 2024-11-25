@@ -178,19 +178,19 @@ public class AttackRideCardItem extends BaseItem {
 							p_41128_.playSound((Player)null, new BlockPos((int) p_41129_.getX(), (int) p_41129_.getY(), (int) p_41129_.getZ()), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, 1.0F, (p_41128_.getRandom().nextFloat() - p_41128_.getRandom().nextFloat()) * 0.2F + 1.0F);
 							break;
 						case "ore_sanjou":
-							Decade_Rider_Items.DEN_O_SWORD_CRAD.get().use(p_41128_, p_41129_, p_41130_);
+							Decade_Rider_Items.DEN_O_SWORD_CARD.get().use(p_41128_, p_41129_, p_41130_);
 							p_41129_.sendSystemMessage(Component.translatable("I... have arrived!").withStyle(ChatFormatting.RED));
 							break;
 						case "bokuni_tsurarete_miru":
-							Decade_Rider_Items.DEN_O_ROD_CRAD.get().use(p_41128_, p_41129_, p_41130_);
+							Decade_Rider_Items.DEN_O_ROD_CARD.get().use(p_41128_, p_41129_, p_41130_);
 							p_41129_.sendSystemMessage(Component.translatable("Mind if I reel you in?").withStyle(ChatFormatting.BLUE));
 							break;
 						case "nakerude":
-							Decade_Rider_Items.DEN_O_AX_CRAD.get().use(p_41128_, p_41129_, p_41130_);
+							Decade_Rider_Items.DEN_O_AX_CARD.get().use(p_41128_, p_41129_, p_41130_);
 							p_41129_.sendSystemMessage(Component.translatable("You cried!").withStyle(ChatFormatting.YELLOW));
 							break;
 						case "kotaewa_kiite_nai":
-							Decade_Rider_Items.DEN_O_GUN_CRAD.get().use(p_41128_, p_41129_, p_41130_);
+							Decade_Rider_Items.DEN_O_GUN_CARD.get().use(p_41128_, p_41129_, p_41130_);
 							p_41129_.sendSystemMessage(Component.translatable("I can't hear your answer!").withStyle(ChatFormatting.DARK_PURPLE));
 							break;
 					}
