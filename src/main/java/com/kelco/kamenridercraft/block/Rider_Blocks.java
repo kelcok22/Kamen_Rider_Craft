@@ -545,6 +545,27 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 
+	public static final DeferredBlock<Block> RABBIT_HUTCH_LIGHT = registerBlock("rabbit_hutch_light",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN = registerBlock("rabbit_hutch_cyan",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN_LIGHT = registerBlock("rabbit_hutch_cyan_light",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN2 = registerBlock("rabbit_hutch_cyan2",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> RABBIT_HUTCH_COMPUTER_STAIRS = registerBlock("rabbit_hutch_computer_stairs",
+			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
 
 					
 	public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",

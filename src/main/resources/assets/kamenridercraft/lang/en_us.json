@@ -3583,6 +3583,17 @@
 "block.kamenridercraft.zero_liner_green": "ZeroLiner Green",
   "block.kamenridercraft.ghostliner_wheel": "GhostLiner Wheel",
 
+  "block.kamenridercraft.rabbit_hutch_light": "Rabbit Hutch Light",
+  "block.kamenridercraft.rabbit_hutch_cyan": "Rabbit Hutch Hull",
+  "block.kamenridercraft.rabbit_hutch_cyan_light": "Rabbit Hutch Lamp",
+  "block.kamenridercraft.rabbit_hutch_cyan2": "Rabbit Hutch Panel",
+  "block.kamenridercraft.rabbit_hutch_computer_stairs": "Rabbit Hutch Computer",
+
+  "block.kamenridercraft.rabbit_hutch_light": "Rabbit Hutch Light",
+  "block.kamenridercraft.rabbit_hutch_cyan": "Rabbit Hutch Hull",
+  "block.kamenridercraft.rabbit_hutch_cyan_light": "Rabbit Hutch Lamp",
+  "block.kamenridercraft.rabbit_hutch_cyan2": "Rabbit Hutch Panel",
+  "block.kamenridercraft.rabbit_hutch_computer_stairs": "Rabbit Hutch Computer",
   "block.kamenridercraft.helheim_log": "Helheim Log",
   "block.kamenridercraft.stripped_helheim_log": "Stripped Helheim Log",
   "block.kamenridercraft.helheim_wood": "Helheim Wood",
