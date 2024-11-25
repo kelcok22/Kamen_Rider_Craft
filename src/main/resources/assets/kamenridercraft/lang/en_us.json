@@ -2256,12 +2256,34 @@
   "item.kamenridercraft.ziku_driver_geiz": "Ziku Driver (Geiz)",
   "item.kamenridercraft.ziku_driver_tsukuyomi": "Ziku Driver (Tsukuyomi)",
   "item.kamenridercraft.beyondriver": "Beyondriver",
+  "item.kamenridercraft.ziku_driver_zi_o_mirror": "Ziku Driver (Mirror Zi-O)",
+  "item.kamenridercraft.ziku_driver_barlckxs": "Ziku Driver (Barlckxs)",
+  "item.kamenridercraft.ziku_driver_zonjis": "Ziku Driver (Zonjis)",
+  "item.kamenridercraft.ziku_driver_zamonas": "Ziku Driver (Zamonas)",
 
   "item.kamenridercraft.blank_watch": "Blank Ridewatch",
   "item.kamenridercraft.zi_o_ridewatch": "Zi-O Ridewatch",
   "item.kamenridercraft.geiz_ridewatch": "Geiz Ridewatch",
   "item.kamenridercraft.tsukuyomi_ridewatch": "Tsukuyomi Ridewatch",
   "item.kamenridercraft.woz_miridewatch": "Woz Miridewatch",
+  "item.kamenridercraft.zi_o_mirror_ridewatch": "Mirror Zi-O Ridewatch",
+  "item.kamenridercraft.barlckxs_ridewatch": "Barlckxs Ridewatch",
+  "item.kamenridercraft.zonjis_ridewatch": "Zonjis Ridewatch",
+  "item.kamenridercraft.zamonas_ridewatch": "Zamonas Ridewatch",
+
+  "item.kamenridercraft.ichigo_ridewatch": "Ichigo Ridewatch",
+  "item.kamenridercraft.nigo_ridewatch": "Nigo Ridewatch",
+  "item.kamenridercraft.v3_ridewatch": "V3 Ridewatch",
+  "item.kamenridercraft.riderman_ridewatch": "Riderman Ridewatch",
+  "item.kamenridercraft.x_ridewatch": "X Ridewatch",
+  "item.kamenridercraft.amazon_ridewatch": "Amazon Ridewatch",
+  "item.kamenridercraft.stronger_ridewatch": "Stronger Ridewatch",
+  "item.kamenridercraft.black_rx_ridewatch": "Black RX Ridewatch",
+  "item.kamenridercraft.bio_rider_ridewatch": "Bio Rider Ridewatch",
+  "item.kamenridercraft.robo_rider_ridewatch": "Robo Rider Ridewatch",
+  "item.kamenridercraft.shin_ridewatch": "Shin Ridewatch",
+  "item.kamenridercraft.zo_ridewatch": "ZO Ridewatch",
+  "item.kamenridercraft.j_ridewatch": "J Ridewatch",
 
   "item.kamenridercraft.kuuga_ridewatch": "Kuuga Ridewatch",
   "item.kamenridercraft.agito_ridewatch": "Agito Ridewatch",
@@ -2282,6 +2304,18 @@
   "item.kamenridercraft.ghost_ridewatch": "Ghost Ridewatch",
   "item.kamenridercraft.ex_aid_ridewatch": "Ex-Aid Ridewatch",
   "item.kamenridercraft.build_ridewatch": "Build Ridewatch",
+
+  "item.kamenridercraft.zero_one_ridewatch": "Zero-One Ridewatch",
+  "item.kamenridercraft.saber_ridewatch": "Saber Ridewatch",
+  "item.kamenridercraft.revi_ridewatch": "Revi Ridewatch",
+  "item.kamenridercraft.vice_ridewatch": "Vice Ridewatch",
+  "item.kamenridercraft.geats_ridewatch": "Geats Ridewatch",
+  "item.kamenridercraft.gotchard_ridewatch": "Gotchard Ridewatch",
+
+  "item.kamenridercraft.amazon_alpha_ridewatch": "Amazon Alpha Ridewatch",
+  "item.kamenridercraft.amazon_omega_ridewatch": "Amazon Omega Ridewatch",
+  "item.kamenridercraft.amazon_neo_ridewatch": "Amazon Neo Ridewatch",
+
   "item.kamenridercraft.genm_ridewatch": "Genm Ridewatch",
   "item.kamenridercraft.woz_ridewatch": "Woz Ridewatch",
 
@@ -2306,6 +2340,7 @@
 
   "item.kamenridercraft.bibiru_geiz_ridewatch": "Bibiru Geiz Ridewatch",
   "item.kamenridercraft.ryusoulger_ridewatch": "Ryusoulger Ridewatch",
+  "item.kamenridercraft.christmas_ridewatch": "Zi-O Ridewatch (Christmas ver.)",
 
 "item.kamenridercraft.zero_one_logo": "Zero-One Logo",
 "item.kamenridercraft.zero_onehead": "Zero-One Helmet",
