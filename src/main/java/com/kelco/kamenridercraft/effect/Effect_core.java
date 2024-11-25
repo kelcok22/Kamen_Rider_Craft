@@ -51,6 +51,8 @@ public class Effect_core {
     public static final Holder<MobEffect> RADAR= EFFECT.register("radar",
             () -> new RadarEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
 
+    public static final Holder<MobEffect>  SMOKE= EFFECT.register("smoke",
+            () -> new SmokeEffect(MobEffectCategory.NEUTRAL, 0x292929));
 
     public static final Holder<MobEffect> SMALL= EFFECT.register("small",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
