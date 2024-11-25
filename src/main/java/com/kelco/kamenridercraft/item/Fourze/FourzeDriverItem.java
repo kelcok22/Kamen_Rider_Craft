@@ -48,7 +48,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 					return riderName + get_Form_Item(itemstack, 3).getFormName(fly);
 				}else return"blank";
 			} else 	if (num == 4){
-				if (get_Form_Item(itemstack,4)!= Fourze_Rider_Items.BLANK_SPUARE_ASTROSWITCH.get()&get_Form_Item(itemstack,4)!=null){
+				if (get_Form_Item(itemstack,4)!= Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.get()&get_Form_Item(itemstack,4)!=null){
 					return riderName + get_Form_Item(itemstack, 4).getFormName(fly);
 				}else return"blank";
 			}

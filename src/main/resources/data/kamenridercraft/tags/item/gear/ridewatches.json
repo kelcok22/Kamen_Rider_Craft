@@ -1,6 +1,8 @@
 {
   "values": [
 	"kamenridercraft:zi_o_ridewatch",
-	"kamenridercraft:geiz_ridewatch"
+	"kamenridercraft:geiz_ridewatch",
+	"kamenridercraft:tsukuyomi_ridewatch",
+	"#kamenridercraft:gear/legend_rider/ridewatches"
   ]
 }
