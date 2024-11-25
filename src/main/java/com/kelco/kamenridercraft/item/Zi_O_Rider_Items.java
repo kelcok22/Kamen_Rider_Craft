@@ -133,7 +133,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
-    
+
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
