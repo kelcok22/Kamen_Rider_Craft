@@ -10,13 +10,9 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Fourze_Rider_Items {
 
@@ -49,6 +45,11 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeSlot(5));
 
+	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeSlot(5));
 
 	public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt",
@@ -211,8 +212,8 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SCHOP_ASTROSWITCH = ITEMS.register("schop_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_schop_module","fourze","fourze_driver_belt"
+	public static final DeferredItem<Item> SCHOOP_ASTROSWITCH = ITEMS.register("scoop_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_scoop_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
@@ -260,9 +261,19 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
 					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	/**
-	cosmic_swich
+	public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("net_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_net_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
+					.ChangeSlot(2).alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	/**
 	super_rocket_swich
 	super_launcher_swich
 	super_drill_swich
