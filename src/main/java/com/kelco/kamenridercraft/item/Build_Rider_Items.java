@@ -201,7 +201,7 @@ public class Build_Rider_Items {
 			() -> new FullBottleItem(new Item.Properties(),0,"_helicopter","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.BestMatch(ROSE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.BestMatch(ROSE_FULL_BOTTLE.get()).ChangeModel("default_rider_plusbelt_and_wings.geo.json").ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURTLE_FULL_BOTTLE = ITEMS.register("turtle_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_turtle","build","build_driver_belt",
