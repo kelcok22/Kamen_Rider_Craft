@@ -96,7 +96,10 @@ public class BuildDriverItem extends RiderDriverItem {
 	 if (isBestMatch(itemstack)&isLegend(itemstack)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
 		else if (get_Form_Item(itemstack, num).get_Model()=="default.geo.json") {
 			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
-		}else return super.getModelResource(itemstack, animatable, slot,rider);
+		}
+		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying){
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel());
+		}else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
 	}
 	
 	@Override
