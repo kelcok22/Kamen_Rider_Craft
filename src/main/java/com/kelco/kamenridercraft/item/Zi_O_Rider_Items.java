@@ -28,7 +28,7 @@ public class Zi_O_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-            .AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geiz","ziku_driver_geiz_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
@@ -164,10 +164,13 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
-
-	/**
-	 * decade_ridewatch
-	 **/
+	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_w","zi_o","ziku_driver_zi_o_belt_w",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
