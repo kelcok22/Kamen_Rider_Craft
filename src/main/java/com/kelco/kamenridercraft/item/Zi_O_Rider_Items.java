@@ -414,7 +414,11 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIO_RIDER_RIDEWATCH = ITEMS.register("bio_rider_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_biorider","barlckxs","ziku_driver_barlckxs_belt_biorider",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
+					.SetPalyerModelInvisible().IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROBO_RIDER_RIDEWATCH = ITEMS.register("robo_rider_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
