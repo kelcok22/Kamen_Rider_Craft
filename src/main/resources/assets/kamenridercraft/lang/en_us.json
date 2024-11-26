@@ -2173,7 +2173,7 @@
 "item.kamenridercraft.mic_full_bottle": "Mic Fullbottle",
 "item.kamenridercraft.cake_full_bottle": "Cake Fullbottle",
 "item.kamenridercraft.televi_full_bottle": "Televi Fullbottle",
-"item.kamenridercraft.smartphone_full_bottle": "Smartphone Fullbottle",
+"item.kamenridercraft.smapho_full_bottle": "Smartphone Fullbottle",
 "item.kamenridercraft.camera_full_bottle": "Camera Fullbottle",
 
 "item.kamenridercraft.pandora_bottle": "Pandora Bottle",
@@ -2336,6 +2336,7 @@
   "item.kamenridercraft.gaim_kiwami_ridewatch": "Gaim Kiwami Arms Ridewatch",
   "item.kamenridercraft.drive_tridoron_ridewatch": "Drive Type Tridoron Rdiewatch",
   "item.kamenridercraft.ghost_mugen_ridewatch": "Ghost Mugen Damashii Ridewatch",
+  "item.kamenridercraft.ex_aid_muteki_ridewatch": "Ex-Aid Muteki Gamer Ridewatch",
   "item.kamenridercraft.build_genius_ridewatch": "Build Genius Form Ridewatch",
 
   "item.kamenridercraft.bibiru_geiz_ridewatch": "Bibiru Geiz Ridewatch",
@@ -2563,7 +2564,7 @@
   "item.kamenridercraft.lion_senki_wonder_ride_book": "Lion Senki Wonder Ride Book",
   "item.kamenridercraft.peter_fantasista_wonder_ride_book": "Peter Fantasista Wonder Ride Book",
   "item.kamenridercraft.tri_cerberus_wonder_ride_book": "Tri Cerberus Wonder Rider Book",
-  "Item.kamenridercraft.needle_hedgehog_wonder_ride_book": "Needle Hedgehog Wonder Ride Book",
+  "item.kamenridercraft.needle_hedgehog_wonder_ride_book": "Needle Hedgehog Wonder Ride Book",
   "item.kamenridercraft.lamp_do_alngina_wonder_ride_book": "Lamp Do Alangina Wonder Ride Book",
   "item.kamenridercraft.genbu_shinwa_wonder_ride_book": "Genbu Shinwa Wonder Ride Book",
   "item.kamenridercraft.jackun_to_domamenoki_wonder_ride_book": "Jackun to Domamenoki Wonder Ride Book",
