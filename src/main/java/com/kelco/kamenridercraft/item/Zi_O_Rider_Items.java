@@ -226,7 +226,7 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-							.addAlternative(DECADE_BUILD_RIDEWATCH.get()));
+							.addAlternative(DECADE_GHOST_RIDEWATCH.get()));
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","geiz","ziku_driver_geiz_belt_ghost",
