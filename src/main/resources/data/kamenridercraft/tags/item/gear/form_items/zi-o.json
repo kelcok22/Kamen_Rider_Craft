@@ -1,12 +1,21 @@
 {
   "values": [
 	"kamenridercraft:zi_o_ridewatch",
+  "kamenridercraft:kuuga_ridewatch",
+  "kamenridercraft:agito_ridewatch",
+  "kamenridercraft:ryuki_ridewatch",
+  "kamenridercraft:blade_ridewatch",
+  "kamenridercraft:hibiki_ridewatch",
+  "kamenridercraft:kabuto_ridewatch",
+  "kamenridercraft:den_o_ridewatch",
+  "kamenridercraft:kiva_ridewatch",
   "kamenridercraft:w_ridewatch",
   "kamenridercraft:ooo_ridewatch",
   "kamenridercraft:fourze_ridewatch",
   "kamenridercraft:gaim_ridewatch",
   "kamenridercraft:ghost_ridewatch",
   "kamenridercraft:ex_aid_ridewatch",
-  "kamenridercraft:build_ridewatch"
+  "kamenridercraft:build_ridewatch",
+  "kamenridercraft:woz_ridewatch"
   ]
 }
