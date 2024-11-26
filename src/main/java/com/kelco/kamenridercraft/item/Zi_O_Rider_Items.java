@@ -264,7 +264,8 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).AddIncompatibleForm(DECADE_BUILD_RIDEWATCH.asItem())
+							.addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_RIDEWATCH = ITEMS.register("zero_one_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
