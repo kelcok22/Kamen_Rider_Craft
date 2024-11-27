@@ -260,7 +260,7 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> BUILD_RIDEWATCH_GEIZ = ITEMS.register("build_ridewatch_geiz",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","geiz","ziku_driver_geiz_belt_build",
+					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build2","geiz","ziku_driver_geiz_belt_build",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -268,7 +268,7 @@ public class Zi_O_Rider_Items {
 							.addAlternative(DECADE_BUILD_RIDEWATCH.get()));
 
 			public static final DeferredItem<Item> BUILD_RIDEWATCH = ITEMS.register("build_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","zi_o","ziku_driver_zi_o_belt_build",
+					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build1","zi_o","ziku_driver_zi_o_belt_build",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
