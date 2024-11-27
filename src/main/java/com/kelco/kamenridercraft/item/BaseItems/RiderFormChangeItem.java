@@ -326,7 +326,7 @@ public class RiderFormChangeItem extends BaseItem {
         if (this == Modded_item_core.BLANK_FORM.get()) {
             return true;
         }
-        else if(hasIncompatibleForms) {
+        if(hasIncompatibleForms) {
             for (int i = 0; i < incompatibleForms.size(); i++)
             {
                 if (incompatibleForms.get(i)==RiderDriverItem.get_Form_Item(stack, 1)){
@@ -334,7 +334,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
             }
         }
-     else if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
+     if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {
