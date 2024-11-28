@@ -1,6 +1,10 @@
 {
   "values": [
+  "kamenridercraft:momotaros_full_bottle",
+  "kamenridercraft:rider_card_full_bottle",
 	"kamenridercraft:medal_full_bottle",
-	"kamenridercraft:mahoutsukai_full_bottle"
+	"kamenridercraft:yuujou_full_bottle",
+	"kamenridercraft:mahoutsukai_full_bottle",
+	"kamenridercraft:orange_full_bottle"
   ]
 }
