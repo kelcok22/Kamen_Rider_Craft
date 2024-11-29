@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "minecraft:translucent",
 	"textures": {
 		"0": "kamenridercraft:block/astroswitch_programmer_bottom",
 		"1": "kamenridercraft:block/astroswitch_programmer_base",
