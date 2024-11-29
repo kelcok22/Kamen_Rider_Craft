@@ -144,7 +144,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> SMOKE_ASTROSWITCH = ITEMS.register("smoke_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_smoke_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.SMOKE, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> SPIKE_ASTROSWITCH = ITEMS.register("spike_switch",
