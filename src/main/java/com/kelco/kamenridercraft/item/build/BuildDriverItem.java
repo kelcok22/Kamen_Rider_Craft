@@ -78,8 +78,10 @@ public class BuildDriverItem extends RiderDriverItem {
 	}
 
 	public static boolean CanHazard(ItemStack itemstack) {
-
-		if (isBestMatch(itemstack)){
+		if (get_Form_Item(itemstack,1) instanceof FullBottleItem form) {
+			if (form.get_Is_Legend())return false;
+		}
+				if (isBestMatch(itemstack)){
 			if (get_Form_Item(itemstack,2) instanceof FullBottleItem form){
 				if (!form.get_Is_Legend()){
 					return form.Get_Can_Hazard();
