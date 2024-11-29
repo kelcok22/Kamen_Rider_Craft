@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "zi_o_ii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:zi_o_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:zi_o_mirror_ridewatch"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:zi_o_ii_ridewatch"
+  }
+}

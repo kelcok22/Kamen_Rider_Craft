@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fourze_super",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:rocket_switch"
+    }, 
+    {
+      "item": "kamenridercraft:solu_switch"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:super_rocket_switch"
+  }
+}

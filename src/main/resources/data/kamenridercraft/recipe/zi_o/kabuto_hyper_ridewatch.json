@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:kabuto_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:hyper_zecter"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:kabuto_hyper_ridewatch"
+  }
+}

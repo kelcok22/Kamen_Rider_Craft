@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:fourze_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:cosmic_switch"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:fourze_cosmic_ridewatch"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:fourze/rocket_switch"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:fourze/fourze_logo",
+	  "kamenridercraft:fourze/fourze_driver",
+	  "kamenridercraft:fourze/super_rocket_switch",
+	  "kamenridercraft:ghost/fourze_ghost_eyecon",
+	  "kamenridercraft:zi_o/fourze_ridewatch",
+	  "kamenridercraft:geats/fourze_driver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

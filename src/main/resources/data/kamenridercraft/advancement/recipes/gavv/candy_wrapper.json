@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gavv/candy_wrapper"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gavv/blank_gochizo",
+	  "kamenridercraft:misc/gummi_candy",
+	  "kamenridercraft:misc/potato_snacks",
+	  "kamenridercraft:misc/marshmallow",
+	  "kamenridercraft:misc/lollipop",
+	  "kamenridercraft:misc/chocolate_bar"
+	]
+  },
+  "sends_telemetry_event": false
+}

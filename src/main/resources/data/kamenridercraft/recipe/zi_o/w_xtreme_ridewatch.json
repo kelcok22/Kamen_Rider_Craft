@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:w_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:xtreme_memory"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:w_xtreme_ridewatch"
+  }
+}

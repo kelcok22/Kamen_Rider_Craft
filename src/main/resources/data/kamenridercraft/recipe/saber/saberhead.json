@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kr_saber",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_wonder_ride_book"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:saberhead"
+  }
+}

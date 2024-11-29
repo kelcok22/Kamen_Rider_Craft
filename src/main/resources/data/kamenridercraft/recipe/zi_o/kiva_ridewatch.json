@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:wakeupfuestle"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:kiva_ridewatch"
+  }
+}

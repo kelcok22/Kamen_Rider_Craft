@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:wakeupfuestle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kiva_switch"
+  }
+}

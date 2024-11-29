@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:typhoon_core_nigo"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:rider2_switch"
+  }
+}

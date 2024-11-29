@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/libera_driver"
+	  "kamenridercraft:revice/libera_driver",
+	  "kamenridercraft:geats/libera_driver_raise_buckle"
 	]
   },
   "sends_telemetry_event": false

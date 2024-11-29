@@ -26,7 +26,8 @@
 	  "kamenridercraft:zx/zx_legs",
 	  "kamenridercraft:zx/zx_belt",
 	  "kamenridercraft:zx/zx_logo",
-	  "kamenridercraft:decade/zx_card"
+	  "kamenridercraft:decade/zx_card",
+	  "kamenridercraft:fourze/zx_switch"
 	]
   },
   "sends_telemetry_event": false

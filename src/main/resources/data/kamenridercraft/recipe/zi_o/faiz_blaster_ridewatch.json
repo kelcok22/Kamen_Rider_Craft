@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:faiz_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:faiz_blaster_mission_memory"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:faiz_blaster_ridewatch"
+  }
+}

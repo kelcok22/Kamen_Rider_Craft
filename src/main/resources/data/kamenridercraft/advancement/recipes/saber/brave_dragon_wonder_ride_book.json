@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:saber/brave_dragon_wonder_ride_book"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:saber/saber_logo",
+	  "kamenridercraft:saber/seiken_swordriver_saber",
+	  "kamenridercraft:saber/kaenken_rekka",
+	  "kamenridercraft:geats/seiken_swordriver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}

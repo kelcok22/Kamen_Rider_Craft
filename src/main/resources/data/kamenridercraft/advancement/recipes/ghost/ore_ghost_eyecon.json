@@ -24,7 +24,9 @@
 	  "kamenridercraft:ghost/ghost_driver",
 	  "kamenridercraft:ghost/ghost_ghost_eyecon",
 	  "kamenridercraft:ghost/ghost_logo",
-	  "kamenridercraft:ghost/gan_gun_saber_blade"
+	  "kamenridercraft:ghost/gan_gun_saber_blade",
+	  "kamenridercraft:zi_o/ghost_ridewatch",
+	  "kamenridercraft:geats/ghost_driver_raise_buckle"
 	]
   },
   "sends_telemetry_event": false
