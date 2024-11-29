@@ -6,14 +6,13 @@ import java.util.List;
 import java.util.Random;
 
 
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
-
-import net.minecraft.world.ItemInteractionResult;
+import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -29,14 +28,14 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 
-public class VistampBar extends MachineBlock {
+public class AstroswitchProgrammer extends MachineBlock {
 	
-	  public static List<Item> PROTO_VISTAMP= new ArrayList<Item>();
+	  public static List<Item> ASTROSWITCH = new ArrayList<Item>();
     public static VoxelShape SHAPE = Block.box(1, 0, 1, 14,15, 14);
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public VistampBar(Properties properties) {
+    public AstroswitchProgrammer(Properties properties) {
         super(properties);
     }
 
@@ -65,25 +64,10 @@ public class VistampBar extends MachineBlock {
         return PushReaction.PUSH_ONLY;
      }
 
-     private Item getgashatDrop(Player player) {
+     private Item getSwitchDrop(Player player) {
  		Random generator = new Random();
-
-         List<Item> PROTO_VISTAMP_PLUS= new ArrayList<Item>();
-         PROTO_VISTAMP_PLUS.clear();
-         PROTO_VISTAMP_PLUS.addAll (PROTO_VISTAMP);
-
-         if (player.getInventory().countItem(Revice_Rider_Items.BARID_REX_VISTAMP.get())!=0){
-             for (int i = 0; i < 20; i++) {
-                 PROTO_VISTAMP_PLUS.add(Revice_Rider_Items.VOLCANO_VISTAMP.get());
-             }
-         }
-         if (player.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.get())!=0){
-             for (int i = 0; i < 20; i++) {
-                 PROTO_VISTAMP_PLUS.add(Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
-             }
-         }
- 			int rand = generator.nextInt(PROTO_VISTAMP_PLUS.size());
- 			return PROTO_VISTAMP_PLUS.get(rand);
+ 		 int rand = generator.nextInt(ASTROSWITCH.size());
+ 		 return ASTROSWITCH.get(rand);
 
  	}
 
@@ -91,24 +75,8 @@ public class VistampBar extends MachineBlock {
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_VISTAMP.get()){
-                process(player, level, pos, hand, getgashatDrop( player));
-                return ItemInteractionResult.SUCCESS;
-            }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_QUEEN_BEE_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.QUEEN_BEE_VISTAMP.get());
-                return ItemInteractionResult.SUCCESS;
-            }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_PLANARIAN_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.PLANARIAN_VISTAMP.get());
-                return ItemInteractionResult.SUCCESS;
-            }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.PROTO_CHAMELEON_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.CHAMELEON_VISTAMP.get());
-                return ItemInteractionResult.SUCCESS;
-            }
-            else if (player.getItemInHand(hand).getItem() == Revice_Rider_Items.DAIOUIKA_VISTAMP.get()) {
-                process(player, level, pos, hand,  Revice_Rider_Items.KRAKEN_VISTAMP.get());
+            if (player.getItemInHand(hand).getItem() == Fourze_Rider_Items.BLANK_ASTROSWITCH.get()){
+                process(player, level, pos, hand, getSwitchDrop( player));
                 return ItemInteractionResult.SUCCESS;
             }
         }
@@ -117,7 +85,7 @@ public class VistampBar extends MachineBlock {
 
 
 
-	public VistampBar AddToTabList(List<Block> TabList) {
+	public AstroswitchProgrammer AddToTabList(List<Block> TabList) {
 		TabList.add(this);
 		return this;
 	}
