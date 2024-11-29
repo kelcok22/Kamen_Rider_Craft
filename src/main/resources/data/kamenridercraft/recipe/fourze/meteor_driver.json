@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "meteor",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:astroswitch"
+    }, "C": {
+      "item": "kamenridercraft:meteor_switch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:meteor_driver"
+  }
+}

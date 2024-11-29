@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:mighty_action_x_gashat"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:ex_aid_ridewatch"
+  }
+}

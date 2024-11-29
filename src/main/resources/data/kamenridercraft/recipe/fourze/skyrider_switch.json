@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:tornado_core"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:skyrider_switch"
+  }
+}

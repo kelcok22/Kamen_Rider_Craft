@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:den_o_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:denkamen_sword"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:den_o_liner_ridewatch"
+  }
+}

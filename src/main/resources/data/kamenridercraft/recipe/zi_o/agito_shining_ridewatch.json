@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:agito_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:agito_shining"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:agito_shining_ridewatch"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:drive_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:tridoronshift"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:drive_tridoron_ridewatch"
+  }
+}

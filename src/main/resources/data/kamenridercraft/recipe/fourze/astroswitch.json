@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "astroswitch",
+  "ingredients": [
+{
+    
+      "item": "minecraft:lever"
+    }, 
+    {
+      "item": "kamenridercraft:rider_circuit"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:astroswitch"
+  }
+}

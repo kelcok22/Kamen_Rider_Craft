@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cross_z",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "C": {
+      "item": "kamenridercraft:dragon_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:build_driver_cross_z"
+  }
+}

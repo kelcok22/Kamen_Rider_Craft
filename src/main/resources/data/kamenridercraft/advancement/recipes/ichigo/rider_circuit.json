@@ -23,6 +23,9 @@
 	"recipes": [
 	  "kamenridercraft:misc/base_sword",
 	  "kamenridercraft:misc/monitor",
+	  "kamenridercraft:fourze/astroswitch",
+	  "kamenridercraft:zi_o/blank_watch",
+	  "kamenridercraft:ride_kamens/contract_chaostone",
 	  "kamenridercraft:misc/patchouli_guide",
 	  "kamenridercraft:ichigo/ichigohead",
 	  "kamenridercraft:ichigo/ichigotroso",

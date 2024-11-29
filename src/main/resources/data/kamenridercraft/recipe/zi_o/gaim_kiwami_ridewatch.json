@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:gaim_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kiwami_lockseed"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:gaim_kiwami_ridewatch"
+  }
+}

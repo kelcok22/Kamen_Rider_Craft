@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blade_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:evolution_caucasus"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:blade_king_ridewatch"
+  }
+}

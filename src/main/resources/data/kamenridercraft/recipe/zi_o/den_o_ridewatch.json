@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:rider_ticket_sword"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:den_o_ridewatch"
+  }
+}

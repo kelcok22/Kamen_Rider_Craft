@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zamonas",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_watch"
+    }, "C": {
+      "item": "kamenridercraft:zamonas_ridewatch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:ziku_driver_zamonas"
+  }
+}

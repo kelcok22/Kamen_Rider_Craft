@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "build_sparkling",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:pandora_bottle"
+    }, 
+    {
+      "item": "kamenridercraft:rabbit_full_bottle"
+    }, 
+    {
+      "item": "kamenridercraft:tank_full_bottle"
+    }  
+    ],
+  "result": {
+    "id": "kamenridercraft:rabbittank_sparkling_full_bottle"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:rider_ticket_sword"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:den_o_switch"
+  }
+}

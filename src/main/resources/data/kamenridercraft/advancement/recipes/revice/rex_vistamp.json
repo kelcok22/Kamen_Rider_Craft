@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:revice/revice_logo",
 	  "kamenridercraft:revice/revice_driver",
-	  "kamenridercraft:revice/ohin_buster_50"
+	  "kamenridercraft:revice/ohin_buster_50",
+	  "kamenridercraft:geats/revice_driver_raise_buckle"
 	]
   },
   "sends_telemetry_event": false

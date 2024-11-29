@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "zonjis",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_watch"
+    }, "C": {
+      "item": "kamenridercraft:zonjis_ridewatch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:ziku_driver_zonjis"
+  }
+}

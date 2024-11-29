@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:kuuga_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kuuga_ultimate"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:kuuga_ultimate_ridewatch"
+  }
+}

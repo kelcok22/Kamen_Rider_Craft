@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blades",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_wonder_ride_book"
+    }, "C": {
+      "item": "kamenridercraft:lion_senki_wonder_ride_book"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:seiken_swordriver_blades"
+  }
+}

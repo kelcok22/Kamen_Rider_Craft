@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:kiva_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:tatsulot"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:kiva_emperor_ridewatch"
+  }
+}

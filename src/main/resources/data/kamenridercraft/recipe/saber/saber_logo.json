@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:paper"
+	}, 
+	{
+	  "item": "kamenridercraft:brave_dragon_wonder_ride_book"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:saber_logo"
+  }
+}

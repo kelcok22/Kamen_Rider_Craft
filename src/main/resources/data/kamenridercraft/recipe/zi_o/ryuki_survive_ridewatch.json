@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_watch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:ryuki_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:survive_rekka"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:ryuki_survive_ridewatch"
+  }
+}

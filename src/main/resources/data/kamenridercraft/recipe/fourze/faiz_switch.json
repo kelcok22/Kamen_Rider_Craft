@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:faiz_mission_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:faiz_switch"
+  }
+}

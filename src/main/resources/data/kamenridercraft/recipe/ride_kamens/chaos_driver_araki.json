@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "araki",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:contract_chaostone"
+	}, "C": {
+	  "item": "kamenridercraft:chaos_ring_araki"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:chaos_driver_araki"
+  }
+}

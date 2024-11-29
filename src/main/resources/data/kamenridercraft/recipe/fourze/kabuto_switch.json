@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_switches",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:astroswitch"
+	}, 
+	{
+	  "item": "kamenridercraft:kabuto_zecter"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kabuto_switch"
+  }
+}

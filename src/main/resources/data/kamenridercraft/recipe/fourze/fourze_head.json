@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "kr_fourze",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:astroswitch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:fourze_head"
+  }
+}

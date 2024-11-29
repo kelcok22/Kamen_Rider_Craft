@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:build/rabbit_full_bottle"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:build/build_logo",
+	  "kamenridercraft:build/build_driver",
+	  "kamenridercraft:zi_o/build_ridewatch",
+	  "kamenridercraft:geats/build_driver_raise_buckle"
+	]
+  },
+  "sends_telemetry_event": false
+}
