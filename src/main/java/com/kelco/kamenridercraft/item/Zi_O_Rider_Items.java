@@ -435,6 +435,41 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHURIKEN_STARTER = ITEMS.register("shuriken_starter",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shinobi","shinobi_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHURIKEN_STARTER_HATTARI = ITEMS.register("shuriken_starter_hattari",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hattari","hattari_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","quiz","quiz_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> SPANNERDER_SCREWDER = ITEMS.register("spannerder_screwder",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kikai","kikai_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> GINGA_SCOPE = ITEMS.register("ginga_scope",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ginga","ginga_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 		
 		
 	public static final DeferredItem<Item> ZI_O_HELMET = ITEMS.register("zi_o_head",
@@ -470,6 +505,21 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_ZAMONAS = ITEMS.register("ziku_driver_zamonas",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zamonas",ZAMONAS_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> SHINOBIDRIVER = ITEMS.register("shinobi_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shinobi",SHURIKEN_STARTER ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> HATTARIDRIVER = ITEMS.register("hattari_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hattari",SHURIKEN_STARTER_HATTARI ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> QUIZDRIVER = ITEMS.register("quiz_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"quiz",QUIZ_TOPPER ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> KIKAIDRIVER = ITEMS.register("kikai_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kikai",SPANNERDER_SCREWDER ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> GINGADRIVER = ITEMS.register("ginga_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ginga",GINGA_SCOPE ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 
 	public static void register(IEventBus eventBus) {

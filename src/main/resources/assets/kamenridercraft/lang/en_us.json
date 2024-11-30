@@ -2261,6 +2261,11 @@
   "item.kamenridercraft.ziku_driver_barlckxs": "Ziku Driver (Barlckxs)",
   "item.kamenridercraft.ziku_driver_zonjis": "Ziku Driver (Zonjis)",
   "item.kamenridercraft.ziku_driver_zamonas": "Ziku Driver (Zamonas)",
+  "item.kamenridercraft.shinobi_driver": "Shinobi Driver",
+  "item.kamenridercraft.hattari_driver": "Hattari Driver",
+  "item.kamenridercraft.quiz_driver": "Quiz Driver",
+  "item.kamenridercraft.kikai_driver": "Kikai Driver",
+  "item.kamenridercraft.ginga_driver": "Ginga Driver",
 
   "item.kamenridercraft.blank_watch": "Blank Ridewatch",
   "item.kamenridercraft.zi_o_ridewatch": "Zi-O Ridewatch",
@@ -2343,6 +2348,12 @@
   "item.kamenridercraft.bibiru_geiz_ridewatch": "Bibiru Geiz Ridewatch",
   "item.kamenridercraft.ryusoulger_ridewatch": "Ryusoulger Ridewatch",
   "item.kamenridercraft.christmas_ridewatch": "Zi-O Ridewatch (Christmas ver.)",
+
+  "item.kamenridercraft.shuriken_starter": "Shuriken Starter (Shinobi)",
+  "item.kamenridercraft.shuriken_starter_hattari": "Shuriken Starter (Hattari)",
+  "item.kamenridercraft.quiz_topper": "Quiz Topper",
+  "item.kamenridercraft.spannerder_screwder": "Spannerder and Screwder",
+  "item.kamenridercraft.ginga_scope": "Ginga Scope",
 
 "item.kamenridercraft.zero_one_logo": "Zero-One Logo",
 "item.kamenridercraft.zero_onehead": "Zero-One Helmet",
