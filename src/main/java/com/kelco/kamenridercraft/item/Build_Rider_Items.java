@@ -382,6 +382,18 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.BestMatch(OBAKE_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> SCORPION_FULL_BOTTLE = ITEMS.register("scorpion_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_scorpion","build","build_driver_belt",
+					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GOLD_FULL_BOTTLE = ITEMS.register("gold_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_gold","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.BestMatch(SCORPION_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MOMOTAROS_FULL_BOTTLE = ITEMS.register("momotaros_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_momotaros","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -477,6 +489,47 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
 					.addSwitchForm(FULLFULL_TANK_BOTTLE.get()).alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).addNeedItem(HAZARD_TRIGGER.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GENIUS_FULL_BOTTLE = ITEMS.register("genius_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_genius","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
+					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GOLD_RABBIT_FULL_BOTTLE = ITEMS.register("gold_rabbit_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_gold_rabbit","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SILVER_DRAGON_FULL_BOTTLE = ITEMS.register("silver_dragon_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_silver_dragon","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+					.BestMatch(GOLD_RABBIT_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> CROSS_Z_BUILD_CAN = ITEMS.register("cross_z_build_can",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cross_z","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
+					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
