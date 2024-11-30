@@ -51,7 +51,6 @@ public class GateSwitchItem extends BaseItem {
 		 double X=get_XYZ(itemstack,"x",respawn.pos().x());
 		 double Y=get_XYZ(itemstack,"y",respawn.pos().y());
 		 double Z=get_XYZ(itemstack,"z",respawn.pos().z());
-		 entity.sendSystemMessage(Component.translatable("X"+X+",Y"+Y+",Z"+Z).withStyle(ChatFormatting.RED));
 		 entity.teleportTo(otherDim, X,Y,Z, new HashSet<>(), 0, 0);
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 		 entity.randomTeleport(X, Y, Z, false);
@@ -72,8 +71,7 @@ public class GateSwitchItem extends BaseItem {
 					double X=player.position().x;
 					double Y=player.position().y;
 					double Z=player.position().z;
-					player.sendSystemMessage(Component.translatable("X"+X+",Y"+Y+",Z"+Z).withStyle(ChatFormatting.RED));
-					Save_XYZ(itemstack,X,Y,Z,p_41129_);
+					Save_XYZ(itemstack,X,Y,Z);
 					teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 				}
 				p_41129_.getCooldowns().addCooldown(this, TIME);
@@ -90,7 +88,7 @@ public class GateSwitchItem extends BaseItem {
 		return respawn;
 	}
 
-	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,Player p_41129_ )
+	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z)
 	{
 		if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -98,8 +96,6 @@ public class GateSwitchItem extends BaseItem {
 			CompoundTag tag = new CompoundTag();
 			Consumer<CompoundTag> data = form ->
 			{
-				p_41129_.sendSystemMessage(Component.translatable("X"+X+",Y"+Y+",Z"+Z).withStyle(ChatFormatting.RED));
-
 				form.putDouble("x", X);
 				form.putDouble("y", Y);
 				form.putDouble("z", Z);
