@@ -460,6 +460,24 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
 					.ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> FULLFULL_TANK_BOTTLE = ITEMS.register("fullfull_tank_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"_tank","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false))
+					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3));
+
+	public static final DeferredItem<Item> FULLFULL_RABBIT_TANK_BOTTLE = ITEMS.register("fullfull_rabbit_tank_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
+					.addSwitchForm(FULLFULL_TANK_BOTTLE.get()).alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).addNeedItem(HAZARD_TRIGGER.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
