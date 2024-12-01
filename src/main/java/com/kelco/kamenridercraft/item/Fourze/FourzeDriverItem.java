@@ -60,10 +60,24 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		{
 			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
 			  ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_FIRE_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.FIRE_ASTROSWITCH.get())
-			 ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ROCKET_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ROCKET_ASTROSWITCH.get()&& get_Form_Item(belt, 2)!=Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get()))
+					||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_MAGNET_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get())
+					||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_MAGNET_STATES.get() && get_Form_Item(belt, 4)!=Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get())
+			 ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ROCKET_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ROCKET_ASTROSWITCH.get())
+					||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_ROCKET_STATES.get() && get_Form_Item(belt, 4)!=Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get()))
 				 {
 				set_Form_Item(belt,Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
 			}
+if ((get_Form_Item(belt, 1)!=Fourze_Rider_Items.ROCKET_ASTROSWITCH.get() && get_Form_Item(belt, 4)==Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get())){
+	set_Form_Item(belt,Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
+		}
+
+			if ((get_Form_Item(belt, 1) ==Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get()
+					&& get_Form_Item(belt, 4)==Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get())
+			&&(get_Form_Item(belt, 5) !=Fourze_Rider_Items.FOURZE_MAGNET_STATES.get() ))
+			{
+				set_Form_Item(belt,Fourze_Rider_Items.FOURZE_MAGNET_STATES.asItem(), 5);
+			}
+
 
 		}
 
