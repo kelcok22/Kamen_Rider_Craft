@@ -580,6 +580,38 @@ public class Build_Rider_Items {
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> ROBOT_SCLASH_JELLY = ITEMS.register("robot_sclash_jelly",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease","sclash_driver_belt_grease",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease_blizzard","build_driver_belt_blizzard",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GREASE_FULL_BOTTLE = ITEMS.register("grease_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -603,9 +635,13 @@ public class Build_Rider_Items {
 			.Add_Extra_Base_Form_Items(TANK_FULL_BOTTLE,FULL_BOTTLE).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_DRIVER_CROSS_Z = ITEMS.register("build_driver_cross_z",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z", DRAGON_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_GREASE = ITEMS.register("build_driver_grease",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease_blizzard", NORTH_BLIZZARD_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> SCLASH_DRIVER_GREASE = ITEMS.register("sclash_driver_grease",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease", ROBOT_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> TRANSTEAM_GUN_NIGHT_ROGUE = ITEMS.register("transteam_gun_night_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"night_rogue",LOST_BAT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
