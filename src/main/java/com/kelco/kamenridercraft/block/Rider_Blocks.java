@@ -7,6 +7,7 @@ import java.util.function.Supplier;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
+import com.kelco.kamenridercraft.block.custom.ArtificialGravityBlock;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
@@ -195,6 +196,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GINGA_METEOR = registerBlock("ginga_meteor",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
+	public static final DeferredBlock<Block> ARTIFICIAL_GRAVITY_BLOCK = registerBlock("artificial_gravity_block",
+			() -> new ArtificialGravityBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> HIDEN_3D_PRINTER = registerBlock("hiden_3d_printer",
 			() -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)

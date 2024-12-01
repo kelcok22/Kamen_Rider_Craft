@@ -25,6 +25,7 @@ public class RadarEffect extends InstantenousMobEffect {
 		if (!pLivingEntity.level().isClientSide()) {
 			if (pLivingEntity.level() instanceof ServerLevel level) {
 				if (pLivingEntity instanceof Player player) {
+
 					List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
 																	(entity instanceof Player && entity != player)
 																	|| (entity instanceof Mob mob));
