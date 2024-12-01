@@ -118,6 +118,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	// gaikotsu_ninjaden
 
 	public static final DeferredItem<Item> KING_OF_ARTHUR_WONDER_RIDE_BOOK = ITEMS.register("king_of_arthur_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"king_of_arthur","saber","seiken_saikou_driver_belt"
@@ -160,6 +161,8 @@ public class Saber_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"calibur",JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
+	// seiken_swordriver_desast
+
 
 	public static final DeferredItem<Item> KEANKEN_REKKA = ITEMS.register("kaenken_rekka",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
@@ -180,6 +183,8 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> ANKOKUKEN_KURAYAMI = ITEMS.register("ankokuken_kurayami",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
+	// kokuranken_shikkoku
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
