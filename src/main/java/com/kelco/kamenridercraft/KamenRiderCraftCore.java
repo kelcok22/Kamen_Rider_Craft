@@ -367,6 +367,13 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.PARADX.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CRONUS.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.TOUTOGUARDIAN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.HOKUTOGUARDIAN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SEITOGUARDIAN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BLOOD_STALK.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GREASE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BUILD.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.TRILOBITE_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DODO_MAGIA_CHICK.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BATTLE_RAIDER.get(), BasicEntityRenderer::new);

@@ -650,6 +650,13 @@ public class RiderTabs {
             event.accept(MobsCore.PARADX_SPAWN_EGG);
             event.accept(MobsCore.CRONUS_SPAWN_EGG);
 
+            event.accept(MobsCore.GUARDIAN_SPAWN_EGG);
+            event.accept(MobsCore.HOKUTO_GUARDIAN_SPAWN_EGG);
+            event.accept(MobsCore.SEITO_GUARDIAN_SPAWN_EGG);
+            event.accept(MobsCore.BLOOD_STALK_SPAWN_EGG);
+            event.accept(MobsCore.GREASE_SPAWN_EGG);
+            event.accept(MobsCore.BUILD_SPAWN_EGG);
+
             event.accept(MobsCore.TRILOBITE_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.DODO_MAGIA_CHICK_SPAWN_EGG);
             event.accept(MobsCore.BATTLE_RAIDER_SPAWN_EGG);

@@ -583,6 +583,13 @@ public class ModCommonEvents {
 		event.put(MobsCore.PARADX.get(), ParaDxEntity.setAttributes().build());
 		event.put(MobsCore.CRONUS.get(), CronusEntity.setAttributes().build());
 
+		event.put(MobsCore.HOKUTOGUARDIAN.get(), HokutoGuardianEntity.setAttributes().build());
+		event.put(MobsCore.TOUTOGUARDIAN.get(), GuardianEntity.setAttributes().build());
+		event.put(MobsCore.SEITOGUARDIAN.get(), SeitoGuardianEntity.setAttributes().build());
+		event.put(MobsCore.BLOOD_STALK.get(), BloodStalkEntity.setAttributes().build());
+		event.put(MobsCore.GREASE.get(), GreaseEntity.setAttributes().build());
+		event.put(MobsCore.BUILD.get(), BuildEntity.setAttributes().build());
+
 		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
 		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());
 		event.put(MobsCore.BATTLE_RAIDER.get(), BattleRaiderEntity.setAttributes().build());
