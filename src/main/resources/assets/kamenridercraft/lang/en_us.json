@@ -3386,6 +3386,14 @@
 "entity.kamenridercraft.para-dx": "Kamen Rider Para-DX",
 "entity.kamenridercraft.rideplayer": "Ride-Player",
 "entity.kamenridercraft.cronus": "Kamen Rider Chronos",
+
+  "entity.kamenridercraft.touto_guardian": "Touto Guardian",
+  "entity.kamenridercraft.hokuto_guardian": "Hokuto Guardian",
+  "entity.kamenridercraft.seito_guardian": "Seito Guardian",
+  "entity.kamenridercraft.blood_stalk_mob": "Blood Stalk",
+  "entity.kamenridercraft.grease_mob": "Kamen Rider Grease",
+  "entity.kamenridercraft.build_mob": "Kamen Rider Build (Katsuragi Shinobu)",
+
 "entity.kamenridercraft.trilobite_magia": "Trilobite Magia",
 "entity.kamenridercraft.dodo_magia_chick": "Dodo Magia Chick",
 "entity.kamenridercraft.battle_raider": "Battle Raider",
@@ -3517,6 +3525,13 @@
 "item.kamenridercraft.paradx_spawn_egg": "Kamen Rider Para-DX Spawn Egg",
 "item.kamenridercraft.rideplayer_spawn_egg": "Ride-Player Spawn Egg",
 "item.kamenridercraft.cronus_spawn_egg": "Kamen Rider Cronus Spawn Egg",
+
+  "item.kamenridercraft.touto_guardian_spawn_egg": "Touto Guardian Spawn Egg",
+  "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
+  "item.kamenridercraft.seito_guardian_spawn_egg": "Seito Guardian Spawn Egg",
+  "item.kamenridercraft.blood_stalk_spawn_egg": "Blood Stalk Spawn Egg",
+  "item.kamenridercraft.grease_spawn_egg": "Kamen Rider Grease Spawn Egg",
+  "item.kamenridercraft.build_spawn_egg": "Kamen Rider Build Spawn Egg",
 
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",
