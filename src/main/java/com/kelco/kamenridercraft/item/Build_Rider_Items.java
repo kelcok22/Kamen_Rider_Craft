@@ -20,9 +20,15 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Build_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
+
+	public static List<Item> NEED_ITEM_BI_KAISER= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_HELL_BROS= new ArrayList<Item>();
 
 	public static final DeferredItem<Item> BUILD_LOGO = ITEMS.register("build_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
@@ -689,6 +695,33 @@ public class Build_Rider_Items {
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.hasFlyingWings(null));
 
+	public static final DeferredItem<Item> KILLBUS_SPIDER_FULL_BOTTLE = ITEMS.register("killbus_spider_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","killbus","build_driver_belt_killbus",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> METAL_TANK_TANK_FULL_BOTTLE = ITEMS.register("metal_tank_tank_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","metal_build","build_driver_belt_metal",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> METAL_FULL_BOTTLE = ITEMS.register("metal_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","phantom_build","build_driver_belt_metal",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> LOST_BAT_FULL_BOTTLE = ITEMS.register("lost_bat_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"","night_rogue","blank",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -698,6 +731,77 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.hasFlyingWings(null).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> LOST_COBRA_FULL_BOTTLE = ITEMS.register("lost_cobra_full_bottle",
+			() -> new FullBottleItem(new Item.Properties(),0,"","blood_stalk","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_COBRA_FULL_BOTTLE = ITEMS.register("black_lost_cobra_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","blood","build_driver_belt_blood",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GEAR_BI_KAISER = ITEMS.register("gear_bi_kaiser",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bi","kaiser","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 4,true,false)).AddNeedItemList(NEED_ITEM_BI_KAISER));
+
+	public static final DeferredItem<Item> GEAR_ENGINE_RED = ITEMS.register("gear_engine_red",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_reverse","kaiser","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GEAR_REMOCON_BLUE = ITEMS.register("gear_remocon_blue",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kaiser","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
+					.addShiftForm(GEAR_BI_KAISER.get()).AddToList(NEED_ITEM_BI_KAISER).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GEAR_HELL_BROS = ITEMS.register("gear_hell_bros",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","hell_bros","blank",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).AddNeedItemList(NEED_ITEM_HELL_BROS));
+
+	public static final DeferredItem<Item> GEAR_ENGINE = ITEMS.register("gear_engine",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_engine","hell_bros","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GEAR_REMOCON = ITEMS.register("gear_remocon",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_remocon","hell_bros","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
@@ -716,6 +820,14 @@ public class Build_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease_blizzard", NORTH_BLIZZARD_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_DRIVER_ROGUE = ITEMS.register("build_driver_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "prime_rogue", PRIME_ROGUE_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_BLOOD = ITEMS.register("build_driver_blood",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blood", BLACK_LOST_COBRA_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_KILLBUS = ITEMS.register("build_driver_killbus",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "killbus", KILLBUS_SPIDER_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_METAL = ITEMS.register("build_driver_metal",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "metal_build", METAL_TANK_TANK_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> BUILD_DRIVER_PHANTOM = ITEMS.register("build_driver_phantom",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "phantom_build", METAL_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
@@ -731,6 +843,13 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> TRANSTEAM_GUN_NIGHT_ROGUE = ITEMS.register("transteam_gun_night_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"night_rogue",LOST_BAT_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> TRANSTEAM_GUN_BLOOD_STALK = ITEMS.register("transteam_gun_blood_stalk",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_stalk",LOST_COBRA_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> NEBULA_STEAM_GUN_KAISER = ITEMS.register("nebula_steam_gun_kaiser",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kaiser",GEAR_REMOCON_BLUE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
