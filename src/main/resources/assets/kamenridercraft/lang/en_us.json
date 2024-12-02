@@ -96,8 +96,7 @@
   "effect.kamenridercraft.drill":"Drill" ,
   "effect.kamenridercraft.swift_swim":"Swift Swim" ,
 
-
-  "item.kamenridercraft.rider_circuit": "Rider Circuit",
+"item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",
 
 "item.kamenridercraft.base_sword": "Base Weapon",
@@ -2059,15 +2058,16 @@
 "item.kamenridercraft.sclash_driver_rogue": "Sclash Driver (Rogue)",
 "item.kamenridercraft.sclash_driver": "Sclash Driver (Cross-Z Charge)",
 "item.kamenridercraft.transteam_gun_night_rogue": "Transteam Gun (Night Rogue)",
-"item.kamenridercraft.transteamgun_2": "Transteam Gun (Belt)",
-"item.kamenridercraft.nebulasteamgun_2": "Nebula Steam Gun (Belt)",
+"item.kamenridercraft.transteam_gun_blood_stalk": "Transteam Gun (Blood Stalk)",
+"item.kamenridercraft.nebula_steam_gun_kaiser": "Nebulasteam Gun (Kaiser)",
+"item.kamenridercraft.nebula_steam_gun_hell_bros": "Nebulasteam Gun (Hell Bro's)",
 "item.kamenridercraft.build_driver_grease": "Build Driver (Grease)",
 "item.kamenridercraft.build_driver_rogue": "Build Driver (Rogue)",
-"item.kamenridercraft.build_driver_killbas": "Build Driver (Killbas)",
-"item.kamenridercraft.build_driver_build_metal": "Build Driver (Metal Build)",
-"item.kamenridercraft.build_driver_build_phantom": "Build Driver (Phantom Build)",
+"item.kamenridercraft.build_driver_killbus": "Build Driver (Killbus)",
+"item.kamenridercraft.build_driver_metal": "Build Driver (Metal Build)",
+"item.kamenridercraft.build_driver_phantom": "Build Driver (Phantom Build)",
 
-"item.kamenridercraft.evol_driver_evol": "Evol Driver (Evol)",
+"item.kamenridercraft.evol_driver": "Evol Driver",
 "item.kamenridercraft.evol_driver_mad_rogue": "Evol Driver (Mad Rogue)",
 
 "item.kamenridercraft.drill_crusher": "Drill Crusher",
@@ -2201,12 +2201,12 @@
 "item.kamenridercraft.muscle_galaxy_full_bottle": "Muscle Galaxy Fullbottle",
 "item.kamenridercraft.killbus_spider_full_bottle": "Killbus Spider Fullbottle",
 "item.kamenridercraft.grease_full_bottle": "Grease Fullbottle",
-"item.kamenridercraft.metal_tanktank_full_bottle": "Metal TankTank Fullbottle",
+"item.kamenridercraft.metal_tank_tank_full_bottle": "Metal TankTank Fullbottle",
 
 "item.kamenridercraft.gear_engine": "Gear Engine",
 "item.kamenridercraft.gear_remocon": "Gear Remocon",
-"item.kamenridercraft.gear_red": "Gear Remocon Red",
-"item.kamenridercraft.gear_blue": "Gear Engine Blue",
+"item.kamenridercraft.gear_engine_red": "Gear Engine (Red)",
+"item.kamenridercraft.gear_remocon_blue": "Gear Remocon (Blue)",
 
 "item.kamenridercraft.lost_bat_full_bottle": "Lost Bat Fullbottle",
 "item.kamenridercraft.lost_cobra_full_bottle": "Lost Cobra Fullbottle",
