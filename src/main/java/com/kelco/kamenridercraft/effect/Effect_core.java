@@ -36,6 +36,13 @@ public class Effect_core {
     public static final Holder<MobEffect> FLYING= EFFECT.register("flying",
             () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0x1d8519) );
 
+    public static final Holder<MobEffect> PULL= EFFECT.register("pull",
+            () -> new 	PullEffect(MobEffectCategory.BENEFICIAL, 0xcb3e3e) );
+
+    public static final Holder<MobEffect> PUSH= EFFECT.register("push",
+            () -> new 	PushEffect(MobEffectCategory.BENEFICIAL, 0x3ecbcb) );
+
+
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
