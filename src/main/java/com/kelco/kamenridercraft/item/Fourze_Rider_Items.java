@@ -119,7 +119,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> CHAINSAW_ASTROSWITCH = ITEMS.register("chainsaw_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chainsaw_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
 	public static final DeferredItem<Item> HOPPING_ASTROSWITCH = ITEMS.register("hopping_switch",
@@ -141,12 +141,12 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> BEAT_ASTROSWITCH = ITEMS.register("beat_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_beat_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.NOTE, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> CHAIN_ARRAY_ASTROSWITCH = ITEMS.register("chain_array_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chain_array_module","fourze","fourze_driver_belt"
-					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> SMOKE_ASTROSWITCH = ITEMS.register("smoke_switch",
@@ -166,7 +166,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> FLASH_ASTROSWITCH = ITEMS.register("flash_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flash_module","fourze","fourze_driver_belt"
-					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
+					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> SHIELD_ASTROSWITCH = ITEMS.register("shield_switch",
@@ -188,7 +188,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> STEALTH_ASTROSWITCH = ITEMS.register("stealth_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_stealth_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.STEALTH, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 	public static final DeferredItem<Item> HAMMER_ASTROSWITCH = ITEMS.register("hammer_switch",
@@ -228,7 +228,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> SCHOOP_ASTROSWITCH = ITEMS.register("scoop_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_scoop_module","fourze","fourze_driver_belt"
-					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_swich_n",
@@ -249,7 +249,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> CLAW_ASTROSWITCH = ITEMS.register("claw_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_claw_module","fourze","fourze_driver_belt"
-					,new MobEffectInstance(Effect_core.LONG_ARM, 40, 2,true,false))
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
 	public static final DeferredItem<Item> BOARD_ASTROSWITCH = ITEMS.register("board_switch",
@@ -259,7 +259,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> GIANTFOOT_ASTROSWITCH = ITEMS.register("giantfoot_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_giantfoot_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.GRAVITY, 40, 4,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
 	public static final DeferredItem<Item> AERO_ASTROSWITCH = ITEMS.register("aero_switch",
