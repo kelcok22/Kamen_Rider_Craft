@@ -92,8 +92,12 @@
   "effect.kamenridercraft.smoke":"Smoke" ,
   "effect.kamenridercraft.push":"Push" ,
   "effect.kamenridercraft.pull":"Pull" ,
+  "effect.kamenridercraft.note":"Note" ,
+  "effect.kamenridercraft.drill":"Drill" ,
+  "effect.kamenridercraft.swift_swim":"Swift Swim" ,
 
-"item.kamenridercraft.rider_circuit": "Rider Circuit",
+
+  "item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",
 
 "item.kamenridercraft.base_sword": "Base Weapon",

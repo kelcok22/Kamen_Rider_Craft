@@ -367,7 +367,7 @@ public class Geats_Rider_Items {
 
 	public static final DeferredItem<Item> DRILL_RAISE_BUCKLE_FEVER = ITEMS.register("drill_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drill_slot","geats","desire_driver_belt_geats",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false))
 			.ChangeSlot(2).SetOffhandSlot(3).ChangeModel("geats_rider_drill.geo.json")
 			.AddCompatibilityList(BaseDesireDriverUsers).AddToList(FeverSlotItem.FEVER_SLOT));
 
@@ -554,7 +554,7 @@ public class Geats_Rider_Items {
 
 	public static final DeferredItem<Item> DRILL_RAISE_BUCKLE = ITEMS.register("drill_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drill","geats","desire_driver_belt_geats",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false))
 			.ChangeSlot(2).SetOffhandSlot(3).ChangeModel("geats_rider_drill.geo.json").AddCompatibilityList(BaseDesireDriverUsers).AddToList(MissionBoxItem.RAISE_BUCKLE, 5).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROPELLER_RAISE_BUCKLE = ITEMS.register("propeller_raise_buckle",

@@ -602,7 +602,8 @@ public class OOO_Rider_Items {
 
 			public static final DeferredItem<Item> BIRTH_CORE_DRILL_ARM = ITEMS.register("birth_core_drill_arm",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
-							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+							new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false))
 					.ChangeSlot(6).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 

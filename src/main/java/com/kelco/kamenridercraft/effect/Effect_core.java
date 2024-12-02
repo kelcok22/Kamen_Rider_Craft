@@ -21,6 +21,10 @@ public class Effect_core {
     public static final Holder<MobEffect>BOOST = EFFECT.register("boost",
             () -> new BoostEffect(MobEffectCategory.BENEFICIAL, 0xff0015));
 
+    public static final Holder<MobEffect>SWIFT_SWIM = EFFECT.register("swift_swim",
+            () -> new SwiftSwimEffect(MobEffectCategory.BENEFICIAL, 0x00ffff));
+
+
     public static final Holder<MobEffect> ANTIPOISON = EFFECT.register("anti_poison",
             () -> new AntiPoisonEffect(MobEffectCategory.BENEFICIAL, 0x8532a8));
 
@@ -42,6 +46,11 @@ public class Effect_core {
     public static final Holder<MobEffect> PUSH= EFFECT.register("push",
             () -> new 	PushEffect(MobEffectCategory.BENEFICIAL, 0x3ecbcb) );
 
+    public static final Holder<MobEffect> NOTE= EFFECT.register("note",
+            () -> new 	NoteEffect(MobEffectCategory.BENEFICIAL, 0x2d2d2d) );
+
+    public static final Holder<MobEffect> DRILL= EFFECT.register("drill",
+            () -> new 	DrillEffect(MobEffectCategory.BENEFICIAL, 0xe5d90e) );
 
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
