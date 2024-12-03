@@ -1,15 +1,14 @@
 package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.BuildDriverItem;
 import com.kelco.kamenridercraft.item.build.FullBottleItem;
 import com.kelco.kamenridercraft.item.build.HazardTriggerItem;
+import com.kelco.kamenridercraft.item.build.TransteamGunItem;
+import com.kelco.kamenridercraft.item.build.NebulasteamGunItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.item.w.MetalShaftItem;
-import com.kelco.kamenridercraft.item.w.WDriverItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -850,6 +849,16 @@ public class Build_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kaiser",GEAR_REMOCON_BLUE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	/*
+	public static final DeferredItem<Item> TRANSTEAM_GUN = ITEMS.register("transteam_gun",
+			() -> new TransteamGunItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
+			.ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> NEBULASTEAM_GUN = ITEMS.register("nebulasteam_gun",
+			() -> new NebulasteamGunItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
+			.ChangeRepairItem(FULL_BOTTLE.get()));
+	*/
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
