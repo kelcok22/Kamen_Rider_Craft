@@ -231,12 +231,12 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
-	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_swich_n",
+	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_switch_n",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magnet_n_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.PULL, 40, 2,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
-	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_S = ITEMS.register("magnet_swich_s",
+	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_S = ITEMS.register("magnet_switch_s",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magnet_s_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.PUSH, 40, 2,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
@@ -344,7 +344,7 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> CORE_ASTROSWITCH = ITEMS.register("core_switch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	public static final DeferredItem<Item> ROCKET_ASTROSWITCH_CHRISTMAS_VER = ITEMS.register("rocket_swich_christmas_ver",
+	public static final DeferredItem<Item> ROCKET_ASTROSWITCH_CHRISTMAS_VER = ITEMS.register("rocket_switch_christmas_ver",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GATE_SWITCH = ITEMS.register("gate_switch",
