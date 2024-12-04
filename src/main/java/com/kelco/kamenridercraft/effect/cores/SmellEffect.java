@@ -8,7 +8,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 
 
@@ -27,7 +27,7 @@ public class SmellEffect extends InstantenousMobEffect {
 				if (pLivingEntity instanceof Player player) {
 					List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(10), entity ->
 																	(entity instanceof Player && entity != player)
-																	|| (entity instanceof Mob mob && mob.getTarget() == pLivingEntity));
+																	|| (entity instanceof Monster));
 					for (LivingEntity enemy : nearbyEnemies) {
 						enemy.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 0,true,true));
 						enemy.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1,true,true));
