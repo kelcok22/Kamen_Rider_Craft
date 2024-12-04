@@ -44,27 +44,20 @@ import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.StructureManager;
-import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.*;
-import net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer;
-import net.minecraft.world.level.levelgen.structure.placement.StructurePlacement;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.event.entity.item.ItemEvent;
-import net.neoforged.neoforge.event.entity.item.ItemExpireEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
-import net.neoforged.neoforge.event.entity.player.ItemFishedEvent;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 
 public class ModCommonEvents {
@@ -73,63 +66,41 @@ public class ModCommonEvents {
 	public static class EventHandler {
 
 		@SubscribeEvent
-		public void ChunkGen( ChunkEvent.Load event) {
+		public void ChunkGen(ChunkEvent.Load event) {
 			ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
 			ResourceKey<Structure> structure = ResourceKey.create(Registries.STRUCTURE, ResourceLocation.parse("kamenridercraft:earth_core"));
 
-			if (event.isNewChunk()&event.getChunk().getPos().x==40&event.getChunk().getPos().z==40&event.getChunk().getLevel().dimension()==MOON){
+			if (event.isNewChunk() & event.getChunk().getPos().x == 40 & event.getChunk().getPos().z == 40 & event.getChunk().getLevel().dimension() == MOON) {
 
 			}
 
 		}
 
 
-			@SubscribeEvent
+		@SubscribeEvent
+		public void EffectEnd(MobEffectEvent.Remove event) {
+			if (!event.getEntity().level().isClientSide()) {
+				boolean checkGamemode = true;
+				if (event.getEntity() instanceof Player _player) {
+					if (_player instanceof ServerPlayer _serverPlayer) {
+						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE ||
+								_serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
+					}
+					_player.getAbilities().mayfly = (!checkGamemode);
+
+				}
+			}
+		}
+
+
+		@SubscribeEvent
 		public void onPlayerTick(PlayerTickEvent.Post event) {
 
 			ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
-
-			if (event.getEntity().level().dimension()==MOON){
-					event.getEntity().addEffect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 30, 7, false, false));
-
+			if (event.getEntity().level().dimension() == MOON) {
+				event.getEntity().addEffect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 30, 7, false, false));
 			}
-
-			Entity entity=event.getEntity();
-
-			if (entity == null) return;
-
-			if (!event.getEntity().level().isClientSide()){
-
-
-				//MobEffect SS_FLY = BuiltInRegistries.MOB_EFFECT.get(ResourceLocation.fromNamespaceAndPath("supersentaicraft","flying"));
-
-
-			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING): false) {
-
-				if (entity instanceof Player _player) {
-					_player.getAbilities().mayfly = (true);
-					_player.onUpdateAbilities();
-				}
-			}
-
-				else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(Effect_core.FLYING) : false)) {
-				if (entity instanceof Player _player) {
-
-					boolean checkGamemode = false;
-
-					if (_player instanceof ServerPlayer _serverPlayer) {
-						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE & _serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
-					} else if (entity.level().isClientSide()) {
-						checkGamemode = Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
-								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.SPECTATOR && Minecraft.getInstance()
-								.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() != GameType.CREATIVE;
-					}
-
-					_player.getAbilities().mayfly = (!checkGamemode);
-					_player.onUpdateAbilities();
-				}
-			}
-			}
+			Entity entity = event.getEntity();
 		}
 
 		@SubscribeEvent
