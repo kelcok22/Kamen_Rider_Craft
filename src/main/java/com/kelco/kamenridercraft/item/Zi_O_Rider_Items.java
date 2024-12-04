@@ -171,6 +171,14 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
+	public static final DeferredItem<Item> DECADE_OOO_RIDEWATCH = ITEMS.register("decade_ooo_ridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade_ooo","zi_o","ziku_driver_zi_o_belt_decade_ooo",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+
 	public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ooo","zi_o","ziku_driver_zi_o_belt_ooo",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
