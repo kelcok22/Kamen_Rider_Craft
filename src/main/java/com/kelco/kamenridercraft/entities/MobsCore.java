@@ -633,6 +633,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> SEITO_GUARDIAN_SPAWN_EGG = ITEMS.register("seito_guardian_spawn_egg",
             () -> new DeferredSpawnEggItem(SEITOGUARDIAN, 0xa6a6a6, 0xd10f25, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<SmashEntity>> SMASH = MOBLIST.register("needle_smash",
+            () -> EntityType.Builder.of(SmashEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":needle_smash"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> SMASH_SPAWN_EGG = ITEMS.register("needle_smash_spawn_egg",
+            () -> new DeferredSpawnEggItem(SMASH, 0xa6a6a6, 0xa1bfba, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<BloodStalkEntity>> BLOOD_STALK = MOBLIST.register("blood_stalk",
             () -> EntityType.Builder.of(BloodStalkEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":blood_stalk_mob"));
 
