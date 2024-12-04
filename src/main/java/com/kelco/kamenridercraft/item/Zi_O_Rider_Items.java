@@ -186,7 +186,7 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_RIDEWATCH = ITEMS.register("fourze_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_fourze","zi_o","ziku_driver_zi_o_belt_fourze",
