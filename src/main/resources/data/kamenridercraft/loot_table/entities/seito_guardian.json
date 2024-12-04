@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:tora_full_bottle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:ufo_full_bottle"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 8,
+		  "name": "kamenridercraft:full_bottle"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

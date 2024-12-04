@@ -37,6 +37,9 @@ public class Build_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","build_driver_belt")
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> SMASH_BOTTLE = ITEMS.register("smash_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> RABBIT_FULL_BOTTLE = ITEMS.register("rabbit_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",

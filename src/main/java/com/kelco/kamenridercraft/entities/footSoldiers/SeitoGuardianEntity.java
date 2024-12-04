@@ -52,7 +52,7 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 						}
 					}
 					break;
-		/*		case 1:
+				case 1:
 					BaseHenchmenEntity boss2 = MobsCore.SMASH.get().create(this.level());
 					if (boss2 != null) {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
@@ -61,7 +61,7 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 							playerIn.sendSystemMessage(Component.translatable("<Sento>It's a Smash, a transformed human!").withStyle(ChatFormatting.BLUE));
 						}
 					}
-					break; */
+					break;
 				default:
 			}
 		}
