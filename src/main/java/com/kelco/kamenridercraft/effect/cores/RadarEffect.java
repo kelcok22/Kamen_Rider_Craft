@@ -28,7 +28,7 @@ public class RadarEffect extends InstantenousMobEffect {
 
 					List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
 																	(entity instanceof Player && entity != player)
-																	|| (entity instanceof Mob mob));
+																	|| (entity instanceof Mob));
 					for (LivingEntity enemy : nearbyEnemies) {
 						enemy.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0,true,true));
 					}
