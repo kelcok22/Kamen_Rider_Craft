@@ -38,7 +38,7 @@ public class Effect_core {
             () -> new PunchEffect(MobEffectCategory.BENEFICIAL, 0x1d8519));
 
     public static final Holder<MobEffect> FLYING= EFFECT.register("flying",
-            () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0x1d8519) );
+            () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0xffffff) );
 
     public static final Holder<MobEffect> PULL= EFFECT.register("pull",
             () -> new 	PullEffect(MobEffectCategory.BENEFICIAL, 0xcb3e3e) );
