@@ -126,8 +126,14 @@ public class Effect_core {
     public static final Holder<MobEffect> CANNON= EFFECT.register("cannon",
             () -> new CannonEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
 
+    public static final Holder<MobEffect> WARP= EFFECT.register("warp",
+            () -> new WarpEffect(MobEffectCategory.NEUTRAL, 0x267d07));
+
     public static final Holder<MobEffect> STEALTH= EFFECT.register("stealth",
             () -> new StealthEffect(MobEffectCategory.BENEFICIAL, 0x8f62e8));
+
+    public static final Holder<MobEffect> FISH= EFFECT.register("fish",
+            () -> new FishEffect(MobEffectCategory.NEUTRAL, 0x267d07));
 
 
     public static final Holder<MobEffect>  REFLECT= EFFECT.register("reflect",
