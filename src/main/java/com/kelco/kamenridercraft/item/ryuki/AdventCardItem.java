@@ -71,7 +71,6 @@ public class AdventCardItem extends BaseItem {
 										RiderSummonEntity trick = MobsCore.RIDER_SUMMON.get().create(p_41128_);
 										if (trick != null) {
 											trick.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-											trick.bindToPlayer(p_41129_);
 											trick.getAttribute(Attributes.MAX_HEALTH).setBaseValue(10.0D);
 											trick.setHealth(10.0F);
 											trick.NAME = "ryuki_trick_vent";
@@ -95,6 +94,7 @@ public class AdventCardItem extends BaseItem {
 											}
 
 											p_41128_.addFreshEntity(trick);
+											trick.bindToPlayer(p_41129_);
 										}
 									}
 						 			break;
@@ -103,7 +103,6 @@ public class AdventCardItem extends BaseItem {
 										RiderSummonEntity trick = MobsCore.RIDER_SUMMON.get().create(p_41128_);
 										if (trick != null) {
 											trick.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-											trick.bindToPlayer(p_41129_);
 											trick.getAttribute(Attributes.MAX_HEALTH).setBaseValue(10.0D);
 											trick.setHealth(10.0F);
 											trick.NAME = "knight_trick_vent";
@@ -123,6 +122,7 @@ public class AdventCardItem extends BaseItem {
 											} else trick.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ryuki_Rider_Items.DARK_VISOR.get()));
 
 											p_41128_.addFreshEntity(trick);
+											trick.bindToPlayer(p_41129_);
 										}
 									}
 						 			break;
