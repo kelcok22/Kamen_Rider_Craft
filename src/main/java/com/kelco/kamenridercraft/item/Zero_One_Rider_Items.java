@@ -662,9 +662,6 @@ public class Zero_One_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
 			.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
-	public static final DeferredItem<Item> CHRISTMAS_RISING_HOPPER_PROGRISEKEY = ITEMS.register("christmas_rising_hopper_progrisekey",
-			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
-
 	public static final DeferredItem<Item> IS_PROGRISEKEY = ITEMS.register("is_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HUMAGEAR_PROGRISEKEY));
 	public static final DeferredItem<Item> UCHUYARO_SUBARU_PROGRISEKEY = ITEMS.register("uchuyaro_subaru_progrisekey",
@@ -712,7 +709,7 @@ public class Zero_One_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MERRY_HOPPER_PROGRISEKEY = ITEMS.register("merry_hopper_progrisekey",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY));
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZERO_ONE_HELMET = ITEMS.register("zero_onehead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));

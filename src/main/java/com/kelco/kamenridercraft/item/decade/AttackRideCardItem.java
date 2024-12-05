@@ -104,7 +104,6 @@ public class AttackRideCardItem extends BaseItem {
 								RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(p_41128_);
 								if (illusion != null) {
 									illusion.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-									illusion.bindToPlayer(p_41129_);
 									illusion.setMeleeOnly(true);
 									illusion.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
 									illusion.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
@@ -119,6 +118,7 @@ public class AttackRideCardItem extends BaseItem {
 									}
 									
 									p_41128_.addFreshEntity(illusion);
+									illusion.bindToPlayer(p_41129_);
 								}
 							}
 							break;
@@ -127,7 +127,6 @@ public class AttackRideCardItem extends BaseItem {
 								RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(p_41128_);
 								if (illusion != null) {
 									illusion.moveTo(p_41129_.getX(), p_41129_.getY()+1, p_41129_.getZ(), p_41129_.getYRot(), p_41129_.getXRot());
-									illusion.bindToPlayer(p_41129_);
 									illusion.NAME = "diend_illusion";
 									illusion.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Decade_Rider_Items.DECADEHELMET.get()));
 									illusion.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Decade_Rider_Items.DECADECHESTPLATE.get()));
@@ -136,6 +135,7 @@ public class AttackRideCardItem extends BaseItem {
 									illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Decade_Rider_Items.DIENDRIVER.get()));
 									RiderDriverItem.set_Form_Item(illusion.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(p_41129_.getItemBySlot(EquipmentSlot.FEET),1), 1);
 									p_41128_.addFreshEntity(illusion);
+									illusion.bindToPlayer(p_41129_);
 								}
 							}
 							break;

@@ -57,7 +57,6 @@ public class WizardRingItem extends BaseItem {
 							RiderSummonEntity copy = MobsCore.RIDER_SUMMON.get().create(level);
 							if (copy != null) {
 								copy.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-								copy.bindToPlayer(player);
 								copy.NAME = "wizard_copy";
 								copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Wizard_Rider_Items.WIZARD_HEAD.get()));
 								copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Wizard_Rider_Items.WIZARD_CHESTPLATE.get()));
@@ -66,6 +65,7 @@ public class WizardRingItem extends BaseItem {
 								RiderDriverItem.set_Form_Item(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),1), 1);
 								
 								level.addFreshEntity(copy);
+								copy.bindToPlayer(player);
 							}
 							break;
 					}

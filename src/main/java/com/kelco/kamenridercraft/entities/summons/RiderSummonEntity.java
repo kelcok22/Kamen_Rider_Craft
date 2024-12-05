@@ -4,9 +4,12 @@ import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
+
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
@@ -113,6 +116,12 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
 
     public void setMeleeOnly(boolean p_21840_) {
        this.swordgunMeleeOnly = p_21840_;
+    }
+
+    @Override
+    public void bindToPlayer(Player player) {
+      if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
+      super.bindToPlayer(player);
     }
 
 	protected SoundEvent getAmbientSound() {

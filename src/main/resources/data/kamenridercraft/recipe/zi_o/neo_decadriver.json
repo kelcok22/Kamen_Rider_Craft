@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "neo_decade",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:decade_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:decadriver"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:neo_decadriver"
+  }
+}
