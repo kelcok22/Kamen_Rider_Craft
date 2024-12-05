@@ -293,7 +293,7 @@ public class Geats_Rider_Items {
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shark","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false))
+					new MobEffectInstance(Effect_core.FISH, 40, 4,true,false))
 			.ChangeSlot(2).AddCompatibilityList(BaseDesireDriverUsers).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	

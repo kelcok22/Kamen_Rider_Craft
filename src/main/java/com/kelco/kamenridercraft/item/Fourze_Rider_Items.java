@@ -161,7 +161,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> WINCH_ASTROSWITCH = ITEMS.register("winch_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_winch_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.LONG_ARM, 40, 3,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> FLASH_ASTROSWITCH = ITEMS.register("flash_switch",
@@ -171,7 +171,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> SHIELD_ASTROSWITCH = ITEMS.register("shield_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shield_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> GATLING_ASTROSWITCH = ITEMS.register("gatling_switch",
