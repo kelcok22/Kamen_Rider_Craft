@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.ProgrisekeyPrinter;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.zero_one.ShotriserItem;
 import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
@@ -41,7 +42,8 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> RISING_HOPPER_PROGRISEKEY_VULCAN = ITEMS.register("rising_hopper_progrisekey_vulcan",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_hopper","vulcan","aims_shot_riser_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)));
-	
+
+
 	public static final DeferredItem<Item> RISING_HOPPER_PROGRISEKEY = ITEMS.register("rising_hopper_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
@@ -659,6 +661,9 @@ public class Zero_One_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","ichigata","cyclone_riser_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
 			.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHRISTMAS_RISING_HOPPER_PROGRISEKEY = ITEMS.register("christmas_rising_hopper_progrisekey",
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IS_PROGRISEKEY = ITEMS.register("is_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HUMAGEAR_PROGRISEKEY));

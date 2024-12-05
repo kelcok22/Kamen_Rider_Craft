@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.ride_kamens.GashaTicketItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -253,6 +254,10 @@ public class Miscellaneous_Rider_Items {
 		    public static final DeferredItem<Item> ENERGY_DRINK = ITEMS.register("energy_drink",
 					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
 							.SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
+			() -> new GiftItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

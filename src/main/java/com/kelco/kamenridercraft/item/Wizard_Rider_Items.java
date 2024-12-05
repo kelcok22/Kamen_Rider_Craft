@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.wizard.UnknownWizardRingItem;
 import com.kelco.kamenridercraft.item.wizard.WizardRingItem;
@@ -431,7 +432,7 @@ public class Wizard_Rider_Items {
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXTAND_WIZARD_RING = ITEMS.register("extend_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.STRETCH, 500,1,true,true))
+			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.LONG_ARM, 500,4,true,true))
 					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMELL_WIZARD_RING = ITEMS.register("smell_ring",
@@ -440,7 +441,7 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> CHRISTMAS_WIZARD_RING = ITEMS.register("merry_christmas_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.CHRISTMAS, 500,0,true,true))
-					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIME_WIZARD_RING = ITEMS.register("time_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.TIME, 500,0,true,true))

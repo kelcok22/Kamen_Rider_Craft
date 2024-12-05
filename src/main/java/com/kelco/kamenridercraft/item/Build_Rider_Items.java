@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.build.FullBottleItem;
 import com.kelco.kamenridercraft.item.build.HazardTriggerItem;
 import com.kelco.kamenridercraft.item.build.TransteamGunItem;
 import com.kelco.kamenridercraft.item.build.NebulasteamGunItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -282,12 +283,12 @@ public class Build_Rider_Items {
 			() -> new FullBottleItem(new Item.Properties(),0,"_santa_claus","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.AddToList(GiftItem.GIFTS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKE_FULL_BOTTLE = ITEMS.register("cake_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_cake","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false))
-					.BestMatch(SANTA_CLAUS_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.BestMatch(SANTA_CLAUS_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TORA_FULL_BOTTLE = ITEMS.register("tora_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_tora","build","build_driver_belt",

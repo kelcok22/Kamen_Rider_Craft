@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -43,6 +44,7 @@ public class Saber_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"brave_dragon","saber","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ResetFormToBaseIfMain().AddCompatibilityList(new String[] {"blades","espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> STORM_EAGLE_WONDER_RIDE_BOOK = ITEMS.register("storm_eagle_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"storm_eagle","saber","seiken_saikou_driver_belt"
@@ -134,6 +136,10 @@ public class Saber_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"televi_kun","saber","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> HAPPY_BRAVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("happy_brave_dragon_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)

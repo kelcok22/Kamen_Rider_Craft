@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gaim.SengokuDriverItem;
 import com.kelco.kamenridercraft.item.ghost.GhostDriverItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -326,7 +327,7 @@ public class Gaim_Rider_Items {
 					.ResetFormToBase().alsoChange2ndSlot(GAIM_YAMI_CORE.get()).addNeedItem(DARK_ORANGE_LOCKSEED.get()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHISTMAS_LOCKSEED = ITEMS.register("christmas_lockseed",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROULETTE_LOCKSEED = ITEMS.register("roulette_lockseed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));

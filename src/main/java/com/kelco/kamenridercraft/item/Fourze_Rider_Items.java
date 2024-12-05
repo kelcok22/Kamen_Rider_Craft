@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
 import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -274,7 +275,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> NET_ASTROSWITCH = ITEMS.register("net_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_net_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.FISH, 40, 0,true,false))
 					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
 	public static final DeferredItem<Item> STAMPER_ASTROSWITCH = ITEMS.register("stamper_switch",
@@ -345,7 +346,7 @@ public class Fourze_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH_CHRISTMAS_VER = ITEMS.register("rocket_switch_christmas_ver",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GATE_SWITCH = ITEMS.register("gate_switch",
 			() -> new GateSwitchItem(new Item.Properties(),10).AddToList(RiderTabs.FOURZE_TAB_ITEM));

@@ -123,6 +123,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  FIRE_ARMOR= EFFECT.register("fire_armor",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
+    public static final Holder<MobEffect> GATLING= EFFECT.register("gatling",
+            () -> new GatlingEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
+
     public static final Holder<MobEffect> CANNON= EFFECT.register("cannon",
             () -> new CannonEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
 
