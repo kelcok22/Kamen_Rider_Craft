@@ -1,36 +1,28 @@
 package com.kelco.kamenridercraft.effect.cores;
 
-
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
-import net.minecraft.core.BlockPos;
+import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.InstantenousMobEffect;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.Snowball;
-import net.minecraft.world.entity.projectile.ThrownEgg;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 
 
-public class ChristmasEffect extends MobEffect {
+public class GatlingEffect extends InstantenousMobEffect {
 
 
-	public ChristmasEffect(MobEffectCategory mobEffectCategory, int color) {
+	public GatlingEffect(MobEffectCategory mobEffectCategory, int color) {
 		super(mobEffectCategory, color);
 	}
 
-	@Override
-	public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
-		return true;
-	}
 
 	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
@@ -39,8 +31,12 @@ public class ChristmasEffect extends MobEffect {
 				if (pLivingEntity instanceof Player player) {
 
 					if (player.isShiftKeyDown()&pAmplifier!=9){
-						player.drop(new ItemStack(Miscellaneous_Rider_Items.GIFT.get(),pAmplifier+1),true);
-						player.addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 120, 9,false,false));
+						Vec3 vec3 = player.getLookAngle();
+						Arrow fireball = new Arrow(player.level(),player, new ItemStack(Blocks.AIR), null);
+						fireball.setPos(fireball.getX(), player.getY(0.5) + 0.5, fireball.getZ());
+						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						player.level().addFreshEntity(fireball);
+
 					}
 
 

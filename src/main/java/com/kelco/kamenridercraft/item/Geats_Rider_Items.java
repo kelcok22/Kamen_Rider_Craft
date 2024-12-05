@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.item.geats.DesireDriverItem;
 import com.kelco.kamenridercraft.item.geats.FeverSlotItem;
 import com.kelco.kamenridercraft.item.geats.LaserRaiseRiserItem;
 import com.kelco.kamenridercraft.item.geats.MissionBoxItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -590,7 +591,7 @@ public class Geats_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.GIGANT_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_BUCKLE = ITEMS.register("christmas_buckle",
-			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_HAMMER_RAISE_BUCKLE = ITEMS.register("golden_hammer_raise_buckle",
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));

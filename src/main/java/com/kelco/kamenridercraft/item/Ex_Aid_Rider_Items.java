@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ex_aid.ExAidEnergyItem;
 import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -1059,7 +1060,8 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> SHRINK_ENERGY_ITEM = ITEMS.register("shrink_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.SMALL, 500, 2,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
-	//christmas_energy_item
+	public static final DeferredItem<Item> CHRISTMAS_ENERGY_ITEM = ITEMS.register("christmas_energy_item",
+			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.CHRISTMAS, 500, 0,true,false)).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> STRETCH_ENERGY_ITEM = ITEMS.register("stretch_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.STRETCH, 500, 2,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
@@ -1082,7 +1084,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> REFLECT_ENERGY_ITEM = ITEMS.register("reflect_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.REFLECT, 500, 0,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
-	//reflect_energy_item
+
 	public static final DeferredItem<Item> SAVE_ENERGY_ITEM = ITEMS.register("save_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.MUTEKI, 500, 0,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
@@ -1125,7 +1127,6 @@ public class Ex_Aid_Rider_Items {
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.EXPLODE, 500, 1,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	//random_energy_item
-	//bug_energy_item
 	public static final DeferredItem<Item> BUG_ENERGY_ITEM = ITEMS.register("bug_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.BUGSTER, 500, 1,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
