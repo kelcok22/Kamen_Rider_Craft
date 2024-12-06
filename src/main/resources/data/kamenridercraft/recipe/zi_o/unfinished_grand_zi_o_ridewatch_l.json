@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "grand_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:kuuga_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:agito_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ryuki_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:faiz_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:blade_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:hibiki_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kabuto_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:den_o_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kiva_ridewatch"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_grand_zi_o_ridewatch_l"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "grand_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:w_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ooo_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:fourze_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:wizard_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:gaim_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:drive_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ghost_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ex_aid_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:build_ridewatch"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_grand_zi_o_ridewatch_r"
+  }
+}
