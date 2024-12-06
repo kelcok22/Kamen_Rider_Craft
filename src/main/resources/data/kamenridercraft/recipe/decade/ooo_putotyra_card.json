@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ooo_card"
+	}, 
+	{
+	  "item": "kamenridercraft:ptera_medal"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ooo_putotyra_card"
+  }
+}

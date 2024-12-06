@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:ghost_card"
+	}, 
+	{
+	  "item": "kamenridercraft:mugen_ghost_eyecon"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ghost_mugen_card"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:w_card"
+	}, 
+	{
+	  "item": "kamenridercraft:xtreme_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:w_xtreme_card"
+  }
+}

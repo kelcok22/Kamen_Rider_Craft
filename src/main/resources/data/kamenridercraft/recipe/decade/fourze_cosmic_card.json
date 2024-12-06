@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:fourze_card"
+	}, 
+	{
+	  "item": "kamenridercraft:cosmic_switch"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:fourze_cosmic_card"
+  }
+}

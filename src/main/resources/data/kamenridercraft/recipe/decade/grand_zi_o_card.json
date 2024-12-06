@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:zi_o_card"
+	}, 
+	{
+	  "item": "kamenridercraft:grand_zi_o_ridewatch"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:grand_zi_o_card"
+  }
+}
