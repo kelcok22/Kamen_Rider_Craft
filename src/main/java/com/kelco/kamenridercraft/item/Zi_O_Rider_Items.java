@@ -544,6 +544,11 @@ public class Zi_O_Rider_Items {
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
+	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_L = ITEMS.register("unfinished_grand_zi_o_ridewatch_l",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_R = ITEMS.register("unfinished_grand_zi_o_ridewatch_r",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
 	public static final DeferredItem<Item> SHURIKEN_STARTER = ITEMS.register("shuriken_starter",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shinobi","shinobi_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
