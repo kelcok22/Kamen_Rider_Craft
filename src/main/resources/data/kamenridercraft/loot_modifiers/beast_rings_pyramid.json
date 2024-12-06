@@ -3,7 +3,7 @@
 	"conditions": [
 	{
 		"condition": "neoforge:loot_table_id",
-		"loot_table_id": "minecraft:chests/desert_temple"
+		"loot_table_id": "minecraft:chests/desert_pyrammid"
 	},{
 		"condition": "minecraft:random_chance",
 		"chance": 0.5
