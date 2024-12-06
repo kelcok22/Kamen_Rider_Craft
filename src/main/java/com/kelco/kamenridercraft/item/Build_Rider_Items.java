@@ -443,6 +443,9 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
 					.addSwitchForm(FULLFULL_TANK_BOTTLE.get()).alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).addNeedItem(HAZARD_TRIGGER.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> UNFINISHED_GENIUS_FULL_BOTTLE = ITEMS.register("unfinished_genius_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> GENIUS_FULL_BOTTLE = ITEMS.register("genius_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_genius","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
