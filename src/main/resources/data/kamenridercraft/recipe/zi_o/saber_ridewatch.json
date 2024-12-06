@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:brave_dragon_wonder_ride_book"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:saber_ridewatch"
+  }
+}

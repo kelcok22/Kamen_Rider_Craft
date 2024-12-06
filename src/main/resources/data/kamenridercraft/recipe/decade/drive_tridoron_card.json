@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:drive_card"
+	}, 
+	{
+	  "item": "kamenridercraft:tridoronshift"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:drive_tridoron_card"
+  }
+}

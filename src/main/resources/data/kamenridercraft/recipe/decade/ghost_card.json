@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_card"
+	}, 
+	{
+	  "item": "kamenridercraft:ore_ghost_eyecon"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ghost_card"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:gaim_card"
+	}, 
+	{
+	  "item": "kamenridercraft:kiwami_lockseed"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:gaim_kiwami_card"
+  }
+}

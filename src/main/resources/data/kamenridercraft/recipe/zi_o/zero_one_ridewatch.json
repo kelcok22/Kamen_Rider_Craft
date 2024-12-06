@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:rising_hopper_progrisekey"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:zero_one_ridewatch"
+  }
+}
