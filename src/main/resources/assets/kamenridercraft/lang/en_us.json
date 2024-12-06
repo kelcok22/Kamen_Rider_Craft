@@ -116,6 +116,7 @@
   "item.kamenridercraft.potato_snacks": "Potato Snacks",
   "item.kamenridercraft.candy_wrapper": "Candy Wrapper",
 "item.kamenridercraft.energy_item_holder": "Energy Item Holder",
+  "item.kamenridercraft.gift": "Gift",
 
 
 "item.kamenridercraft.kamen_rider_logo": "Kamen Rider Logo",
@@ -1355,6 +1356,7 @@
   "item.kamenridercraft.super_drill_switch": "Super Drill Switch",
   "item.kamenridercraft.super_launcher_switch": "Super Launcher Switch",
   "item.kamenridercraft.clear_drill_switch": "Clear Drill Switch",
+  "item.kamenridercraft.gate_switch": "Gate Switch",
 
   "item.kamenridercraft.rider1_switch": "Ichigo Switch",
   "item.kamenridercraft.rider2_switch": "Nigo Switch",
@@ -2078,6 +2080,7 @@
 "item.kamenridercraft.halt_energy_item": "Halt Energy Item",
 "item.kamenridercraft.end_energy_item": "End Energy Item",
 "item.kamenridercraft.bug_energy_item": "Bug Energy Item",
+"item.kamenridercraft.christmas_energy_item": "Christmas Energy Item",
         
 "item.kamenridercraft.build_logo": "Build Logo",
 "item.kamenridercraft.buildhead": "Build Helmet",
@@ -2155,7 +2158,7 @@
 "item.kamenridercraft.shika_full_bottle": "Shika Fullbottle",
 "item.kamenridercraft.penguin_full_bottle": "Penguin Fullbottle",
 "item.kamenridercraft.spider_full_bottle": "Spider Fullbottle",
-"item.kamenridercraft.rabbit_gold_full_bottle": "Gold Rabbit Fullbottle",
+"item.kamenridercraft.gold_rabbit_full_bottle": "Gold Rabbit Fullbottle",
 "item.kamenridercraft.bat_full_bottle": "Bat Fullbottle",
 "item.kamenridercraft.same_full_bottle": "Same Fullbottle",
 "item.kamenridercraft.hachi_full_bottle": "Hachi Fullbottle",
@@ -2166,6 +2169,7 @@
 "item.kamenridercraft.hazard_trigger": "Hazard Trigger",
 "item.kamenridercraft.fullfull_bottle_rabbit": "FullFull Rabbit Tank Bottle (Rabbit)",
 "item.kamenridercraft.fullfull_bottle_tank": "FullFull Rabbit Tank Bottle (Tank)",
+"item.kamenridercraft.fullfull_rabbit_tank_bottle": "FullFull Rabbit Tank Bottle",
 "item.kamenridercraft.genius_full_bottle": "Genius Fullbottle",
 "item.kamenridercraft.cross_z_build_can": "Cross-Z Build Can",
         
@@ -2202,7 +2206,7 @@
 "item.kamenridercraft.pyramid_full_bottle": "Pyramid Fullbottle",
 "item.kamenridercraft.skebo_full_bottle": "Skebo Fullbottle",
 "item.kamenridercraft.reizouko_full_bottle": "Reizouko Fullbottle",
-"item.kamenridercraft.dragon_silver_full_bottle": "Silver Dragon Fullbottle",
+"item.kamenridercraft.silver_dragon_full_bottle": "Silver Dragon Fullbottle",
 "item.kamenridercraft.engine_full_bottle": "Engine Fullbottle",
 "item.kamenridercraft.bike_full_bottle": "Bike Fullbottle",
 "item.kamenridercraft.magnet_full_bottle": "Magnet Fullbottle",
@@ -2641,6 +2645,8 @@
   "item.kamenridercraft.televi_kun_wonder_ride_book": "Televi-Kun Wonder Ride Book",
 
   "item.kamenridercraft.dragonic_knight_wonder_ride_book": "Dragonic Knight Wonder Ride Book",
+
+  "item.kamenridercraft.happy_brave_dragon_wonder_ride_book": "Happy Brave Dragon Wonder Ride Book",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
@@ -3711,6 +3717,7 @@
   "block.kamenridercraft.rabbit_hutch_cyan_light": "Rabbit Hutch Lamp",
   "block.kamenridercraft.rabbit_hutch_cyan2": "Rabbit Hutch Panel",
   "block.kamenridercraft.rabbit_hutch_computer_stairs": "Rabbit Hutch Computer",
+  "block.kamenridercraft.artificial_gravity_block": "Artificial Gravity Block",
   
   "block.kamenridercraft.helheim_log": "Helheim Log",
   "block.kamenridercraft.stripped_helheim_log": "Stripped Helheim Log",
