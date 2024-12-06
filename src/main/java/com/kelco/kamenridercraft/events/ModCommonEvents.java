@@ -557,10 +557,13 @@ public class ModCommonEvents {
 		event.put(MobsCore.HOKUTOGUARDIAN.get(), HokutoGuardianEntity.setAttributes().build());
 		event.put(MobsCore.TOUTOGUARDIAN.get(), GuardianEntity.setAttributes().build());
 		event.put(MobsCore.SEITOGUARDIAN.get(), SeitoGuardianEntity.setAttributes().build());
-		event.put(MobsCore.SMASH.get(), SeitoGuardianEntity.setAttributes().build());
+		event.put(MobsCore.HARD_GUARDIAN.get(), HardGuardianEntity.setAttributes().build());
+		event.put(MobsCore.SMASH.get(), SmashEntity.setAttributes().build());
 		event.put(MobsCore.BLOOD_STALK.get(), BloodStalkEntity.setAttributes().build());
+		event.put(MobsCore.NIGHT_ROGUE.get(), NightRogueEntity.setAttributes().build());
 		event.put(MobsCore.GREASE.get(), GreaseEntity.setAttributes().build());
 		event.put(MobsCore.BUILD.get(), BuildEntity.setAttributes().build());
+		event.put(MobsCore.EVOL.get(), EvolEntity.setAttributes().build());
 
 		event.put(MobsCore.TRILOBITE_MAGIA.get(), TrilobiteMagiaEntity.setAttributes().build());
 		event.put(MobsCore.DODO_MAGIA_CHICK.get(), DodoMagiaChickEntity.setAttributes().build());
