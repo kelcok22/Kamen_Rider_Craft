@@ -3435,9 +3435,12 @@
   "entity.kamenridercraft.touto_guardian": "Touto Guardian",
   "entity.kamenridercraft.hokuto_guardian": "Hokuto Guardian",
   "entity.kamenridercraft.seito_guardian": "Seito Guardian",
+  "entity.kamenridercraft.hard_guardian": "Hard Guardian",
   "entity.kamenridercraft.blood_stalk_mob": "Blood Stalk",
+  "entity.kamenridercraft.night_rogue_mob": "Blood Stalk",
   "entity.kamenridercraft.grease_mob": "Kamen Rider Grease",
   "entity.kamenridercraft.build_mob": "Kamen Rider Build (Katsuragi Shinobu)",
+  "entity.kamenridercraft.evol_mob": "Kamen Rider Evol",
 
 "entity.kamenridercraft.trilobite_magia": "Trilobite Magia",
 "entity.kamenridercraft.dodo_magia_chick": "Dodo Magia Chick",
@@ -3574,10 +3577,13 @@
   "item.kamenridercraft.touto_guardian_spawn_egg": "Touto Guardian Spawn Egg",
   "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
   "item.kamenridercraft.seito_guardian_spawn_egg": "Seito Guardian Spawn Egg",
+  "item.kamenridercraft.hard_guardian_spawn_egg": "Hard Guardian Spawn Egg",
   "item.kamenridercraft.needle_smash_spawn_egg": "Needle Smash Spawn Egg",
   "item.kamenridercraft.blood_stalk_spawn_egg": "Blood Stalk Spawn Egg",
+  "item.kamenridercraft.night_rogue_spawn_egg": "Night Rogue Spawn Egg",
   "item.kamenridercraft.grease_spawn_egg": "Kamen Rider Grease Spawn Egg",
   "item.kamenridercraft.build_spawn_egg": "Kamen Rider Build Spawn Egg",
+  "item.kamenridercraft.evol_spawn_egg": "Kamen Rider Evol Spawn Egg",
 
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",
@@ -3735,6 +3741,8 @@
 "block.kamenridercraft.ichigo_chair": "Ichigo Chair",
   "block.kamenridercraft.red_ichigo_chair": "Aka-Rider Chair",
 
+  "block.kamenridercraft.pandora_box": "Pandora Box",
+
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",
 "block.kamenridercraft.bakusou_trophy": "Bakusou Trophy",
@@ -3792,6 +3800,8 @@
 "block.kamenridercraft.ancient_ooo_boss_block": "Ancient OOO Boss Block",
   "block.kamenridercraft.wiseman_boss_block": "Wiseman Boss Block",
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
+  "block.kamenridercraft.night_rogue_boss_block": "Night Rogue Boss Block",
+  "block.kamenridercraft.evol_boss_block": "Evol Boss Block",
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
 "block.kamenridercraft.ark_one_boss_block": "Ark-One Boss Block"

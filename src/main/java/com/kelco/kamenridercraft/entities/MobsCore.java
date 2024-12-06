@@ -639,11 +639,23 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> SMASH_SPAWN_EGG = ITEMS.register("needle_smash_spawn_egg",
             () -> new DeferredSpawnEggItem(SMASH, 0xa6a6a6, 0xa1bfba, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<HardGuardianEntity>> HARD_GUARDIAN = MOBLIST.register("hard_guardian",
+            () -> EntityType.Builder.of(HardGuardianEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":hard_guardian"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> HARD_GUARDIAN_SPAWN_EGG = ITEMS.register("hard_guardian_spawn_egg",
+            () -> new DeferredSpawnEggItem(HARD_GUARDIAN, 0x0c9132, 0xe5f22e, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<BloodStalkEntity>> BLOOD_STALK = MOBLIST.register("blood_stalk",
             () -> EntityType.Builder.of(BloodStalkEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":blood_stalk_mob"));
 
     public static final DeferredItem<DeferredSpawnEggItem> BLOOD_STALK_SPAWN_EGG = ITEMS.register("blood_stalk_spawn_egg",
             () -> new DeferredSpawnEggItem(BLOOD_STALK, 0x7a0714, 0x49f2bd, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<NightRogueEntity>> NIGHT_ROGUE = MOBLIST.register("night_rogue",
+            () -> EntityType.Builder.of(NightRogueEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":night_rogue_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> NIGHT_ROGUE_SPAWN_EGG = ITEMS.register("night_rogue_spawn_egg",
+            () -> new DeferredSpawnEggItem(NIGHT_ROGUE, 0x3d3d36, 0xe5f22e, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<GreaseEntity>> GREASE = MOBLIST.register("grease",
             () -> EntityType.Builder.of(GreaseEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":grease_mob"));
@@ -656,6 +668,12 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> BUILD_SPAWN_EGG = ITEMS.register("build_spawn_egg",
             () -> new DeferredSpawnEggItem(BUILD, 0xff0000, 0x2a00ff, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<EvolEntity>> EVOL = MOBLIST.register("evol",
+            () -> EntityType.Builder.of(EvolEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":evol_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> EVOL_SPAWN_EGG = ITEMS.register("evol_spawn_egg",
+            () -> new DeferredSpawnEggItem(EVOL, 0x8f091f, 0xe8c70c, new Item.Properties()));
 
 
           public static final DeferredHolder<EntityType<?>, EntityType<TrilobiteMagiaEntity>> TRILOBITE_MAGIA = MOBLIST.register("trilobite_magia",
