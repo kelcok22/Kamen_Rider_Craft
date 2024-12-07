@@ -4,6 +4,7 @@ import java.util.*;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -47,6 +48,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.*;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
@@ -65,16 +67,6 @@ public class ModCommonEvents {
 
 	public static class EventHandler {
 
-		@SubscribeEvent
-		public void ChunkGen(ChunkEvent.Load event) {
-			ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
-			ResourceKey<Structure> structure = ResourceKey.create(Registries.STRUCTURE, ResourceLocation.parse("kamenridercraft:earth_core"));
-
-			if (event.isNewChunk() & event.getChunk().getPos().x == 40 & event.getChunk().getPos().z == 40 & event.getChunk().getLevel().dimension() == MOON) {
-
-			}
-
-		}
 
 
 		@SubscribeEvent

@@ -1,7 +1,9 @@
 {
-    "temperature": 2,
+    "temperature": 10,
     "downfall": 0,
     "has_precipitation": false,
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0,
     "effects": {
       "sky_color": 197379,
       "fog_color": 0,
