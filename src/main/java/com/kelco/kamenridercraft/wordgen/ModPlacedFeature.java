@@ -24,7 +24,9 @@ public class ModPlacedFeature {
         register(context, HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELHEIM_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f, 2),
                         Rider_Blocks.HELHEIM_SAPLING.get()));
+
     }
+
     private static ResourceKey<PlacedFeature> registerKey(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }

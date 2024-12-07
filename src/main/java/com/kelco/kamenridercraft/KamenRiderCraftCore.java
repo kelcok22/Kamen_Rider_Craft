@@ -164,6 +164,7 @@ public class KamenRiderCraftCore
             event.register(custom_dimension_effect.MOON_EFFECTS,new custom_dimension_effect.MoonEffects());
         }
 
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {

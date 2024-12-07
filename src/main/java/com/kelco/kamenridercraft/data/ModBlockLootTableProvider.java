@@ -14,7 +14,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
-
     @Override
     protected void generate() {
         dropSelf(Rider_Blocks.HELHEIM_BUTTON.get());

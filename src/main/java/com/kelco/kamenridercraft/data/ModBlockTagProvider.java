@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        /**
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(Rider_Blocks.HELHEIM_DOOR.get())
                 .add(Rider_Blocks.HELHEIM_SLAB.get())
@@ -35,7 +36,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Rider_Blocks.GHOST_LINER_WHEEL.get());
-
+**/
 
 
         tag(BlockTags.FENCES).add(Rider_Blocks.HELHEIM_FENCE.get());
