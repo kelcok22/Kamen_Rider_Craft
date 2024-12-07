@@ -1,25 +1,16 @@
 package com.kelco.kamenridercraft.item.Fourze;
 
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.mojang.datafixers.util.Pair;
-import net.minecraft.ChatFormatting;
-import net.minecraft.commands.arguments.ResourceOrTagKeyArgument;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderSet;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.StructureTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -51,18 +42,34 @@ public class GateSwitchItem extends BaseItem {
 
 	 if (dim==1) {
 
-		 BlockPos blockpos = otherDim.findNearestMapStructure(TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","rabbit_hutch")), entity.blockPosition(), 10000, false);
-		 if (blockpos==null)blockpos= new BlockPos(40, 60, 40);
-
-		 entity.teleportTo(otherDim, 40, Mth.clamp(respawn.pos().y(), (double)otherDim.getMinBuildHeight(), (double)(otherDim.getMinBuildHeight() + ((ServerLevel)otherDim).getLogicalHeight() - 1)), 40, new HashSet<>(), 0, 0);
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 entity.randomTeleport(blockpos.getX(), blockpos.getY(), blockpos.getZ(), false);
+		 BlockPos blockpos= new BlockPos(40, 60, 40);
+
+		 if (get_has_moon(itemstack)){
+			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
+			 double Y = get_XYZ(itemstack, "y1", respawn.pos().y());
+			 int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
+			 blockpos= new BlockPos( X, 60, Z);
+		 }
+		 else{
+			 TagKey<Structure>tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","rabbit_hutch"));
+			 blockpos = otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, false);
+
+			 double X=blockpos.getX();
+			 double Y=blockpos.getY();
+			 double Z=blockpos.getZ();
+			 Save_XYZ(itemstack,X,Y,Z,1);
+			 }
+
+
+		 entity.teleportTo(otherDim, blockpos.getX(),60, blockpos.getZ(), new HashSet<>(), 0, 0);
+
 
 		 }else {
 
-		 double X=get_XYZ(itemstack,"x",respawn.pos().x());
-		 double Y=get_XYZ(itemstack,"y",respawn.pos().y());
-		 double Z=get_XYZ(itemstack,"z",respawn.pos().z());
+		 double X=get_XYZ(itemstack,"x0",respawn.pos().x());
+		 double Y=get_XYZ(itemstack,"y0",respawn.pos().y());
+		 double Z=get_XYZ(itemstack,"z0",respawn.pos().z());
 		 entity.teleportTo(otherDim, X,Y,Z, new HashSet<>(), 0, 0);
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
 		 entity.randomTeleport(X, Y, Z, false);
@@ -83,13 +90,21 @@ public class GateSwitchItem extends BaseItem {
 					double X=player.position().x;
 					double Y=player.position().y;
 					double Z=player.position().z;
-					Save_XYZ(itemstack,X,Y,Z);
+					Save_XYZ(itemstack,X,Y,Z,0);
 					teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 				}
 				p_41129_.getCooldowns().addCooldown(this, TIME);
 			}
 		}
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
+	}
+
+	public static boolean get_has_moon(ItemStack itemstack) {
+		if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+			return tag.getBoolean("has_moon");
+		}
+		return false;
 	}
 
 	public static double get_XYZ(ItemStack itemstack, String slot,double respawn) {
@@ -100,7 +115,7 @@ public class GateSwitchItem extends BaseItem {
 		return respawn;
 	}
 
-	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z)
+	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num)
 	{
 		if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -108,10 +123,10 @@ public class GateSwitchItem extends BaseItem {
 			CompoundTag tag = new CompoundTag();
 			Consumer<CompoundTag> data = form ->
 			{
-				form.putDouble("x", X);
-				form.putDouble("y", Y);
-				form.putDouble("z", Z);
-
+				form.putDouble("x"+num, X);
+				form.putDouble("y"+num, Y);
+				form.putDouble("z"+num, Z);
+				if(num==1)form.putBoolean("has_moon", true);
 			};
 			data.accept(tag);
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
