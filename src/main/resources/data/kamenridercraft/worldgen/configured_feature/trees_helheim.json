@@ -1,7 +1,0 @@
-{
-    "type": "minecraft:simple_random_selector",
-    "config": {
-      "features": "kamenridercraft:helheim_tree"
-    }
-  }
-  

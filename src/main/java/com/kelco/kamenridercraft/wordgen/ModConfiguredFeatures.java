@@ -46,7 +46,7 @@ public class ModConfiguredFeatures {
 
 
 
-        public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
+    public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }
 
