@@ -1,23 +1,22 @@
-package com.kelco.kamenridercraft.data;
+package com.kelco.kamenridercraft.wordgen;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import net.minecraft.client.Minecraft;
+
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
@@ -38,10 +37,10 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(Rider_Blocks.HELHEIM_LOG.get()),
                 new StraightTrunkPlacer(7, 4, 3),
 
-                BlockStateProvider.simple(Blocks.SPRUCE_LEAVES),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                BlockStateProvider.simple(Rider_Blocks.HELHEIM_LEAVES.get()),
+                new SpruceFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), UniformInt.of(3, 4)),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(2, 0, 4)).build());
 
     }
 
