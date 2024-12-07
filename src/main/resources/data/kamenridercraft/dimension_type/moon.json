@@ -1,14 +1,15 @@
 {
-    "ambient_light": 0,
+    "ambient_light": 0.7,
     "bed_works": true,
     "coordinate_scale": 1,
-    "effects": "minecraft:the_nether",
+    "effects": "kamenridercraft:moon",
     "has_ceiling": false,
     "has_raids": true,
     "has_skylight": true,
     "height": 384,
     "infiniburn": "#minecraft:infiniburn_overworld",
     "logical_height": 96,
+    "fixed_time": 18000,
     "min_y": -64,
     "monster_spawn_block_light_limit": 0,
     "monster_spawn_light_level": {

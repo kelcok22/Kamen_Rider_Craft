@@ -59,13 +59,13 @@ public class ArtificialGravityBlock extends BaseBlock {
 
 			if (!level.isClientSide()) {
 
-				AABB Effect_pos = new AABB(pos).inflate(15);
+				AABB Effect_pos = new AABB(pos).inflate(20);
 
 				List<LivingEntity> nearbyEntities = level.getEntitiesOfClass(LivingEntity.class, Effect_pos, entity ->
 						(entity instanceof Player)
 								|| (entity instanceof Mob mob));
 				for (LivingEntity enemy : nearbyEntities) {
-					enemy.addEffect(new MobEffectInstance(Effect_core.GRAVITY, 70, 5, true, true));
+					enemy.addEffect(new MobEffectInstance(Effect_core.GRAVITY, 70, 3, true, true));
 				}
 			}
 		}

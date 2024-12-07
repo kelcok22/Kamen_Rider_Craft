@@ -2,7 +2,12 @@ package com.kelco.kamenridercraft.item.Fourze;
 
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.ChatFormatting;
+import net.minecraft.commands.arguments.ResourceOrTagKeyArgument;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderSet;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -12,6 +17,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.StructureTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -19,6 +26,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
 import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
@@ -42,9 +50,13 @@ public class GateSwitchItem extends BaseItem {
 		if (entity.isPassenger()) entity.stopRiding();
 
 	 if (dim==1) {
+
+		 BlockPos blockpos = otherDim.findNearestMapStructure(TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","rabbit_hutch")), entity.blockPosition(), 10000, false);
+		 if (blockpos==null)blockpos= new BlockPos(40, 60, 40);
+
 		 entity.teleportTo(otherDim, 40, Mth.clamp(respawn.pos().y(), (double)otherDim.getMinBuildHeight(), (double)(otherDim.getMinBuildHeight() + ((ServerLevel)otherDim).getLogicalHeight() - 1)), 40, new HashSet<>(), 0, 0);
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 entity.randomTeleport(40, 60, 40, false);
+		 entity.randomTeleport(blockpos.getX(), blockpos.getY(), blockpos.getZ(), false);
 
 		 }else {
 

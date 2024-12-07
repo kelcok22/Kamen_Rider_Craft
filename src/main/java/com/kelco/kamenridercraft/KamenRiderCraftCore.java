@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
 import com.kelco.kamenridercraft.client.renderer.BikeRenderer;
 import com.kelco.kamenridercraft.client.renderer.NewMoleImaginSandRenderer;
 import com.kelco.kamenridercraft.client.renderer.SummonedEntityRenderer;
+import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -26,6 +27,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -136,6 +138,7 @@ public class KamenRiderCraftCore
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+
     }
 
 
@@ -149,12 +152,18 @@ public class KamenRiderCraftCore
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
+
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
+        @SubscribeEvent
+        public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
+            event.register(custom_dimension_effect.MOON_EFFECTS,new custom_dimension_effect.MoonEffects());
+        }
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
