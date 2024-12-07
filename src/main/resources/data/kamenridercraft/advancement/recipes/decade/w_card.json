@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:zi_o/ghost_ridewatch"
+			  "kamenridercraft:w_card"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/ghost_mugen_ridewatch",
-	  "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_r"
+	  "kamenridercraft:decade/w_xtreme_card"
 	]
   },
   "sends_telemetry_event": false
