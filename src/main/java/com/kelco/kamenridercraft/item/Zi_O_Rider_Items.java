@@ -75,21 +75,20 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 20));
 
+	public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_shippu","geiz","ziku_driver_geiz_belt_revive",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)));
+
 	public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
-
-	public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_shippu","geiz","ziku_driver_geiz_belt_revive",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addSwitchForm(GEIZ_REVIVE_RIDEWATCH.get()));
+					.addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_MAJESTY_RIDEWATCH = ITEMS.register("geiz_majesty_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_majesty","geiz","ziku_driver_geiz_belt_majesty",
