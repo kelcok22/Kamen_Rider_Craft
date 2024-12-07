@@ -24,7 +24,8 @@
 	  "kamenridercraft:gotchard/gotchardriver",
 	  "kamenridercraft:gotchard/gotchard_logo",
 	  "kamenridercraft:gotchard/gotcharge_gun",
-	  "kamenridercraft:gotchard/chemy_riser"
+	  "kamenridercraft:gotchard/chemy_riser",
+	  "kamenridercraft:zi_o/gotchard_ridewatch"
 	]
   },
   "sends_telemetry_event": false
