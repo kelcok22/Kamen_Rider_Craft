@@ -210,11 +210,11 @@ public class Decade_Rider_Items {
 					.AddCompatibilityList(BaseDecadeUsers).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_CARD = ITEMS.register("drive_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","neo_decadriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drive","decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("drive").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.AddCompatibilityList(BaseDecadeUsers).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_CARD = ITEMS.register("ghost_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","decade","neo_decadriver_belt",
