@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:geats/geats_logo",
-	  "kamenridercraft:geats/desire_driver_geats"
+	  "kamenridercraft:geats/desire_driver_geats",
+	  "kamenridercraft:zi_o/geats_ridewatch"
 	]
   },
   "sends_telemetry_event": false

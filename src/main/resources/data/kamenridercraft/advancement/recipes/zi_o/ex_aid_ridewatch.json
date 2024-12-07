@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/ex_aid_muteki_ridewatch"
+	  "kamenridercraft:zi_o/ex_aid_muteki_ridewatch",
+	  "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_r"
 	]
   },
   "sends_telemetry_event": false
