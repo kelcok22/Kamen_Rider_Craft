@@ -36,20 +36,6 @@ public class GuardianEntity extends BaseHenchmenEntity {
 					if (boss != null) {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
-
-						for (int n = 0; n < 40; n++)
-						{
-
-							Random generator = new Random();
-
-							 int posX = (this.blockPosition().getX()-10)+generator.nextInt(20);
-							 int posY = this.blockPosition().getY()+generator.nextInt(6);
-							 int posZ = (this.blockPosition().getZ()-10)+generator.nextInt(20);
-							BlockPos pos1 = new BlockPos(posX,posY,posZ);
-							if (this.level().isEmptyBlock(pos1))this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
-						
-						}
-
 						if (this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("Mist Match!").withStyle(ChatFormatting.DARK_RED));
 						}
