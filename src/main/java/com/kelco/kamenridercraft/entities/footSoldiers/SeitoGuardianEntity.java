@@ -48,7 +48,8 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 						}
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Rabbit, Tank, Best Match!").withStyle(ChatFormatting.DARK_RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_2"));
 						}
 					}
 					break;
