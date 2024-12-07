@@ -52,6 +52,15 @@ public class Effect_core {
     public static final Holder<MobEffect> DRILL= EFFECT.register("drill",
             () -> new 	DrillEffect(MobEffectCategory.BENEFICIAL, 0xe5d90e) );
 
+    public static final Holder<MobEffect> STEP= EFFECT.register("step",
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x9d3443)
+                    .addAttributeModifier(Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.step"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
+    public static final Holder<MobEffect> HEAVY_SWING= EFFECT.register("heavy_swing",
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xffc646)
+                    .addAttributeModifier(Attributes.SWEEPING_DAMAGE_RATIO, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.heavy_swing"), 2F, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.gravity"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
