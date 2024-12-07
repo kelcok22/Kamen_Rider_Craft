@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/agito_shining_ridewatch"
+	  "kamenridercraft:zi_o/agito_shining_ridewatch",
+	  "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_l"
 	]
   },
   "sends_telemetry_event": false

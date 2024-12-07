@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/vice_belt"
+	  "kamenridercraft:revice/vice_belt",
+	  "kamenridercraft:zi_o/vice_ridewatch"
 	]
   },
   "sends_telemetry_event": false
