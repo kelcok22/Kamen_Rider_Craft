@@ -56,8 +56,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false))
 					.ChangeSlot(5));
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
@@ -265,7 +264,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> AERO_ASTROSWITCH = ITEMS.register("aero_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_aero_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
 					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
 	public static final DeferredItem<Item> GYRO_ASTROSWITCH = ITEMS.register("gyro_switch",
@@ -285,9 +284,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
 					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
 
 	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("super_rocket_switch",

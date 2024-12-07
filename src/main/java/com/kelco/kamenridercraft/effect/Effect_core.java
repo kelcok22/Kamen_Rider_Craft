@@ -24,7 +24,6 @@ public class Effect_core {
     public static final Holder<MobEffect>SWIFT_SWIM = EFFECT.register("swift_swim",
             () -> new SwiftSwimEffect(MobEffectCategory.BENEFICIAL, 0x00ffff));
 
-
     public static final Holder<MobEffect> ANTIPOISON = EFFECT.register("anti_poison",
             () -> new AntiPoisonEffect(MobEffectCategory.BENEFICIAL, 0x8532a8));
 
@@ -55,7 +54,6 @@ public class Effect_core {
     public static final Holder<MobEffect> STEP= EFFECT.register("step",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x9d3443)
                     .addAttributeModifier(Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.step"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-
 
     public static final Holder<MobEffect> GRAVITY= EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
@@ -176,6 +174,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect>  GREEED= EFFECT.register("greeed",
             () -> new 	GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
+
+    public static final Holder<MobEffect>  COSMIC_ENERGY= EFFECT.register("cosmic_energy",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x55FFFF));
 
     public static final Holder<MobEffect>  FLOWER= EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
