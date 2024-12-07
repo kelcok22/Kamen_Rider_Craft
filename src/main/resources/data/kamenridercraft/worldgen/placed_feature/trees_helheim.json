@@ -1,5 +1,5 @@
 {
-	"feature": "kamenridercraft:trees_helheim",
+	"feature": "kamenridercraft:helheim_tree_placed",
 	"placement": [
 	  {
 		"type": "minecraft:count",

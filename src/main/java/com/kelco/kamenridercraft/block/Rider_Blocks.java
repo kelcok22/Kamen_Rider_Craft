@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.block;
 
 
-import java.util.Optional;
 import java.util.function.Supplier;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -11,21 +10,23 @@ import com.kelco.kamenridercraft.block.custom.ArtificialGravityBlock;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
-import com.kelco.kamenridercraft.data.ModConfiguredFeatures;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;
 import net.minecraft.ChatFormatting;
-import net.minecraft.data.worldgen.features.TreeFeatures;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -264,7 +265,24 @@ public class Rider_Blocks {
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
-			() -> new SaplingBlock(new TreeGrower("helheim_tree", Optional.empty(), Optional.of(ModConfiguredFeatures.HELHEIM_TREE_KEY), Optional.empty()),BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+			() -> new SaplingBlock(ModTreeGrowers.HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
+	public static final DeferredBlock<LeavesBlock> HELHEIM_LEAVES = registerBlock("helheim_leaves",
+			() -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
+			@Override
+				public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+				return true;
+			}
+
+			@Override
+			public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+				return 60;
+			}
+			@Override
+			public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+				return 30;
+			}
+			});
 
 
 

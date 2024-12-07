@@ -30,13 +30,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(Rider_Blocks.HELHEIM_DOOR.get(),modLoc("block/helheim_door_bottom"),modLoc("block/helheim_door_top"), "cutout");
         trapdoorBlockWithRenderType(Rider_Blocks.HELHEIM_TRAPDOOR.get(),modLoc("block/helheim_trapdoor"),true,"cutout");
 
+
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
 
         blockItem(Rider_Blocks.HELHEIM_FENCE_GATE);
         blockItem(Rider_Blocks.HELHEIM_SLAB);
         blockItem(Rider_Blocks.HELHEIM_TRAPDOOR, "_bottom");
-
 
 
     }
