@@ -106,7 +106,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> DRILL_ASTROSWITCH = ITEMS.register("drill_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drill_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.DRILL, 40, 0,true,false))
 					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
 	public static final DeferredItem<Item> RADAR_ASTROSWITCH = ITEMS.register("radar_switch",
