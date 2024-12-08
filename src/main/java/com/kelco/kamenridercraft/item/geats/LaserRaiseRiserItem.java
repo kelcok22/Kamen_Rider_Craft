@@ -18,9 +18,7 @@ public class LaserRaiseRiserItem extends BaseBlasterItem {
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
         super.releaseUsing(stack, level, entityLiving, timeLeft);
 		if (entityLiving instanceof Player player && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
-			if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.ZIIN_RAISE_RISER_CARD.get())
-                player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get(), 1));
-			else if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.KEKERA_RAISE_RISER_CARD.get() || player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.KEKERA_BLACK_RAISE_RISER_CARD.get()) {
+			if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.KEKERA_RAISE_RISER_CARD.get() || player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.KEKERA_BLACK_RAISE_RISER_CARD.get()) {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.RAISE_RISER_BELT_KEKERA.get(), 1));
                 player.getItemBySlot(EquipmentSlot.OFFHAND).use(level, player, InteractionHand.OFF_HAND);
             } else if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.KYUUN_RAISE_RISER_CARD.get())
@@ -28,7 +26,7 @@ public class LaserRaiseRiserItem extends BaseBlasterItem {
 			else if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.BEROBA_RAISE_RISER_CARD.get() || player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Geats_Rider_Items.BEROBA_BLACK_RAISE_RISER_CARD.get()) {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.RAISE_RISER_BELT_BEROBA.get(), 1));
                 player.getItemBySlot(EquipmentSlot.OFFHAND).use(level, player, InteractionHand.OFF_HAND);
-            }
+            } else player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get(), 1));
 		}
 	}
 }

@@ -857,15 +857,49 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
-	/*
+    public static final DeferredItem<Item> DRILL_CRUSHER = ITEMS.register("drill_crusher",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+    public static final DeferredItem<Item> HAWK_GATLINGER = ITEMS.register("hawk_gatlinger",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> KOMA_NINPOUTOU = ITEMS.register("4koma_ninpoutou",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+    public static final DeferredItem<Item> KAIZOKU_HASSYAR = ITEMS.register("kaizoku_hassyar",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+    public static final DeferredItem<Item> TWIN_BREAKER = ITEMS.register("twin_breaker",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> BEAT_CROSSER = ITEMS.register("beat_crosser",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+    public static final DeferredItem<Item> FULLBOTTLE_BUSTER = ITEMS.register("fullbottle_buster",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> MAGMA_KNUCKLE = ITEMS.register("magma_knuckle",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> BLIZZARD_KNUCKLE = ITEMS.register("blizzard_knuckle",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
 	public static final DeferredItem<Item> TRANSTEAM_GUN = ITEMS.register("transteam_gun",
-			() -> new TransteamGunItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
+			() -> new TransteamGunItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
 			.ChangeRepairItem(FULL_BOTTLE.get()));
 
+    public static final DeferredItem<Item> TRANSTEAM_GUN_RIFLE_MODE = ITEMS.register("transteam_gun_rifle",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> STEAM_BLADE = ITEMS.register("steam_blade",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
 	public static final DeferredItem<Item> NEBULASTEAM_GUN = ITEMS.register("nebulasteam_gun",
-			() -> new NebulasteamGunItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
+			() -> new NebulasteamGunItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)
 			.ChangeRepairItem(FULL_BOTTLE.get()));
-	*/
+
+    public static final DeferredItem<Item> NEBULASTEAM_GUN_RIFLE_MODE = ITEMS.register("nebulasteam_gun_rifle",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
