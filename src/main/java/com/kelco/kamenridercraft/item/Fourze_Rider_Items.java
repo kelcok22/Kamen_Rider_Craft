@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -515,13 +516,21 @@ public class Fourze_Rider_Items {
 		ginga_oh_driver
 **/
 
-	/**
-	billytherod
-	hee_hackgun
-	barizun_sword
-	shield_module
-		meteor_storm_shaft
-	**/
+	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+    public static final DeferredItem<Item> HEE_HACKGUN = ITEMS.register("hee_hackgun",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectileFireball().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+	public static final DeferredItem<Item> SHIELD_MODULE = ITEMS.register("shield_module",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM)
+			.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
+	public static final DeferredItem<Item> METEOR_STORM_SHAFT = ITEMS.register("meteor_storm_shaft",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

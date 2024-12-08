@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "kamenridercraft:item/zikan_jaclaw"
+  },   "overrides": [
+       
+        {
+            "predicate": {
+                "pull": 1
+            },
+            "model": "kamenridercraft:item/zikan_jaclaw_saw"
+        }
+    ]
+}
