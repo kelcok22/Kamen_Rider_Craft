@@ -290,17 +290,13 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> BAT_VISTAMP_EVIL = ITEMS.register("bat_vistamp_evil",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","evil","two_sidriver_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)));
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)));
 
 	public static final DeferredItem<Item> BAT_VISTAMP = ITEMS.register("bat_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","live","two_sidriver_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)).addAlternative(BAT_VISTAMP_EVIL.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).addAlternative(BAT_VISTAMP_EVIL.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROW_VISTAMP = ITEMS.register("crow_vistamp",
 			() -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
