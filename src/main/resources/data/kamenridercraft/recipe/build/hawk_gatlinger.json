@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "build_hawkgatling",
+  "pattern": [
+    "XXX",
+    "LZR",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "L": {
+      "item": "kamenridercraft:taka_full_bottle"
+    }, "R": {
+     "item": "kamenridercraft:gatling_full_bottle"
+    }, "Z": {
+      "item": "kamenridercraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hawk_gatlinger"
+  }
+}

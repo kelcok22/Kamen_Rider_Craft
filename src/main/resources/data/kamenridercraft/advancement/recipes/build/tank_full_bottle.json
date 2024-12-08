@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:build/tank_full_bottle"
+			  "kamenridercraft:tank_full_bottle"
 			]
 		  }
 		]
@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:build/build_logo",
-	  "kamenridercraft:build/build_driver"
+	  "kamenridercraft:build/build_driver",
+	  "kamenridercraft:build/drill_crusher"
 	]
   },
   "sends_telemetry_event": false

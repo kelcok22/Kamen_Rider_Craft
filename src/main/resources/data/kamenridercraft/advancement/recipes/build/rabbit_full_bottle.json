@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:build/rabbit_full_bottle"
+			  "kamenridercraft:rabbit_full_bottle"
 			]
 		  }
 		]
@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:build/build_logo",
 	  "kamenridercraft:build/build_driver",
+	  "kamenridercraft:build/drill_crusher",
 	  "kamenridercraft:decade/build_card",
 	  "kamenridercraft:zi_o/build_ridewatch",
 	  "kamenridercraft:geats/build_driver_raise_buckle"

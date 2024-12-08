@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:zi_o/zi_o_ridewatch"
+			  "kamenridercraft:zi_o_ridewatch"
 			]
 		  }
 		]
@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:zi_o/zi_o_logo",
 	  "kamenridercraft:zi_o/ziku_driver_zi_o",
+	  "kamenridercraft:zi_o/zikan_girade",
 	  "kamenridercraft:zi_o/zi_o_mirror_ridewatch",
 	  "kamenridercraft:geats/zikuu_driver_raise_buckle"
 	]

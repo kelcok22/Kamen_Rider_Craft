@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "woz",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:zikan_despear"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:zikan_despear_kama"
+  }
+}

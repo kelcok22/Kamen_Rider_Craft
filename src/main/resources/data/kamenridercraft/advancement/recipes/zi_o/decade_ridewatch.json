@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:zi_o/decade_ridewatch"
+			  "kamenridercraft:decade_ridewatch"
 			]
 		  }
 		]
@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/decade_complete_ridewatch"
+	  "kamenridercraft:zi_o/decade_complete_ridewatch",
+	  "kamenridercraft:zi_o/ride_heisaber"
 	]
   },
   "sends_telemetry_event": false

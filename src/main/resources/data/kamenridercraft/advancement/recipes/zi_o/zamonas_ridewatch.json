@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:zi_o/zamonas_ridewatch"
+			  "kamenridercraft:zamonas_ridewatch"
 			]
 		  }
 		]
@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/ziku_driver_zamonas"
+	  "kamenridercraft:zi_o/ziku_driver_zamonas",
+	  "kamenridercraft:zi_o/zamonas_bow"
 	]
   },
   "sends_telemetry_event": false

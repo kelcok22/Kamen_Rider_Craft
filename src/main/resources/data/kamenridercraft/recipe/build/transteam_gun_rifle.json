@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "blood_stalk",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:transteam_gun"
+    }, 
+    {
+      "item": "kamenridercraft:steam_blade"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:transteam_gun_rifle"
+  }
+}
