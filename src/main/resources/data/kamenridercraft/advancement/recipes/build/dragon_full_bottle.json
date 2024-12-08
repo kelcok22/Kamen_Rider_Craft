@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:build/dragon_full_bottle"
+			  "kamenridercraft:dragon_full_bottle"
 			]
 		  }
 		]
@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/build_driver_cross_z"
+	  "kamenridercraft:build/build_driver_cross_z",
+	  "kamenridercraft:build/beat_crosser"
 	]
   },
   "sends_telemetry_event": false

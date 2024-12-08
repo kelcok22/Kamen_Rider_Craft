@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cross_z_charge",
+  "pattern": [
+    "XCX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:sclash_jelly"
+    }, "C": [
+	{
+      "item": "kamenridercraft:dragon_sclash_jelly"
+	},
+	{
+      "item": "kamenridercraft:robot_sclash_jelly"
+    }
+	], "Z": {
+      "item": "kamenridercraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:twin_breaker"
+  }
+}

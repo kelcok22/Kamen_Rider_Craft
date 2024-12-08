@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "build_ninnincomic",
+  "pattern": [
+    "XXX",
+    "LZR",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "L": {
+      "item": "kamenridercraft:ninja_full_bottle"
+    }, "R": {
+     "item": "kamenridercraft:comic_full_bottle"
+    }, "Z": {
+      "item": "kamenridercraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:4koma_ninpoutou"
+  }
+}

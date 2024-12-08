@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rogue",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:nebulasteam_gun"
+    }, 
+    {
+      "item": "kamenridercraft:steam_blade"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:nebulasteam_gun_rifle"
+  }
+}

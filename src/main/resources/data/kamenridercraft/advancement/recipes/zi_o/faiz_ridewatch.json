@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:zi_o/faiz_ridewatch"
+			  "kamenridercraft:faiz_ridewatch"
 			]
 		  }
 		]
@@ -22,6 +22,7 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:zi_o/faiz_blaster_ridewatch",
+	  "kamenridercraft:zi_o/faiz_phone_x",
 	  "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_l"
 	]
   },

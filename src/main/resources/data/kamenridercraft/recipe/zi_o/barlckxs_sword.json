@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "barlckxs",
+  "pattern": [
+    "XCX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_watch"
+    }, "C": {
+      "item": "kamenridercraft:barlckxs_ridewatch"
+    }, "Z": {
+      "item": "kamenridercraft:base_sword"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:barlckxs_sword"
+  }
+}
