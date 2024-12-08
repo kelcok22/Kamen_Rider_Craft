@@ -121,6 +121,11 @@ public class RiderDriverItem extends RiderArmorItem {
         Num_Base_Form_Item=4;
         return this;
     }
+    public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item,DeferredItem<Item> item2,DeferredItem<Item> item3,DeferredItem<Item> item4) {
+        Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem)item.get(),(RiderFormChangeItem)item2.get(),(RiderFormChangeItem)item3.get(),(RiderFormChangeItem)item4.get());
+        Num_Base_Form_Item=5;
+        return this;
+    }
 
 
     public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName)

@@ -166,6 +166,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  THUNDER_PUNCH= EFFECT.register("thunder_punch",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
 
+    public static final Holder<MobEffect>  THUNDER_SLASH= EFFECT.register("thunder_slash",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
+
     public static final Holder<MobEffect>  THUNDER_SHOT= EFFECT.register("thunder_shot",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
 

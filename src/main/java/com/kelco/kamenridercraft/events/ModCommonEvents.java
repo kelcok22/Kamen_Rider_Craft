@@ -184,6 +184,14 @@ public class ModCommonEvents {
 						}
 
 					}
+					if (_livEnt.hasEffect(Effect_core.THUNDER_SLASH)) {
+						if (_livEnt.getMainHandItem().getItem()instanceof SwordItem||_livEnt.getMainHandItem().getItem()instanceof BaseBlasterItem) {
+							LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,_livEnt.level());
+							thunder.setPos(   event.getEntity().getX(),   event.getEntity().getY(),   event.getEntity().getZ());
+							event.getEntity().level().addFreshEntity(thunder);
+						}
+
+					}
 
 					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
 						_livEnt.igniteForSeconds(event.getEntity().getEffect(Effect_core.FIRE_ARMOR).getAmplifier()+1);
