@@ -337,10 +337,6 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false))
 					.addNeedItem(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ROCKET_DRILL_STATES.get()).alsoChange3rdSlot(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
-	/**
-	super_launcher_swich
-	 **/
-
 	public static final DeferredItem<Item> METEOR_ASTROSWITCH = ITEMS.register("meteor_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","meteor","meteor_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
