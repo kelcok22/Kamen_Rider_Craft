@@ -52,9 +52,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		@Override
 		public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
 		{
-			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get() && ITEM !=Fourze_Rider_Items.FUSION_ASTROSWITCH.asItem())){
-
-		}
 
 
 			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
