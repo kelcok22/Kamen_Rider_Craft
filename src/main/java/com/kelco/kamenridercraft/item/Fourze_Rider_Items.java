@@ -116,10 +116,21 @@ public class Fourze_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","fourze","fourze_driver_belt")
 					.ChangeSlot(4));
 
+
+	public static final DeferredItem<Item> NADESHIKO_ROCKET_ASTROSWITCH = ITEMS.register("rocket_nadeshiko_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket","nadeshiko","nadeshiko_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
+					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false)));
+
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false))
-					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ELEK_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 20));
+					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ELEK_STATES.get())
+					.addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM)
+					.AddToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
 	public static final DeferredItem<Item> LAUNCHER_ASTROSWITCH = ITEMS.register("launcher_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_launcher_module","fourze","fourze_driver_belt",
@@ -533,7 +544,9 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get()).addSwitchForm(FOURZE_BASE_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get())
+					.ResetFormToBase().addSwitchForm(FOURZE_BASE_STATES.get())
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> ZODIARTS_SWITCH = ITEMS.register("zodiarts_switch",
