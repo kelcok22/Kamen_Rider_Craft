@@ -93,7 +93,6 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
 					.ChangeSlot(5));
 
-
 	public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_drill","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -325,11 +324,12 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> SUPER_LAUNCHER_ASTROSWITCH = ITEMS.register("super_launcher_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_launcher_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false))
+					new MobEffectInstance(Effect_core.CANNON, 40, 6,true,false))
 					.ChangeSlot(2).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).ResetFormToBase().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_DRILL_ASTROSWITCH = ITEMS.register("super_drill_switch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> CLEAR_DRILL_ASTROSWITCH = ITEMS.register("clear_drill_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_drill_module","fourze","fourze_driver_belt",

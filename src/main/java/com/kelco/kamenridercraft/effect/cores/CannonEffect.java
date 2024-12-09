@@ -35,7 +35,7 @@ public class CannonEffect extends InstantenousMobEffect {
 						SmallFireball smallfireball = new SmallFireball(player.level(), player, vec3.normalize());
 						smallfireball.setPos(smallfireball.getX(), player.getY(0.5) + 0.5, smallfireball.getZ());
 						player.level().addFreshEntity(smallfireball);
-						player.addEffect(new MobEffectInstance(Effect_core.CANNON, 120, 9,false,false));
+						player.addEffect(new MobEffectInstance(Effect_core.CANNON, 120/pAmplifier, 9,false,false));
 					}
 
 
