@@ -40,8 +40,10 @@
 	"kamenridercraft:net_switch",
 	"kamenridercraft:stamper_switch",
 	"kamenridercraft:cosmic_switch",
+	"kamenridercraft:fusion_switch",
 	"kamenridercraft:super_rocket_switch",
 	"kamenridercraft:clear_drill_switch",
-	"#kamenridercraft:gear/legend_rider/astroswitches"
+	"#kamenridercraft:gear/legend_rider/astroswitches",
+	"kamenridercraft:shin_chan_switch"
   ]
 }
