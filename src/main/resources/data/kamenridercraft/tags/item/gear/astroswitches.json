@@ -40,6 +40,7 @@
 	"kamenridercraft:net_switch",
 	"kamenridercraft:stamper_switch",
 	"kamenridercraft:cosmic_switch",
+	"kamenridercraft:fusion_switch",
 	"kamenridercraft:super_rocket_switch",
 	"kamenridercraft:clear_drill_switch",
 	"#kamenridercraft:gear/form_items/meteor",
@@ -50,6 +51,7 @@
 	"kamenridercraft:rocket_switch_christmas_ver",
 	"kamenridercraft:gate_switch",
 	"#kamenridercraft:gear/legend_rider/astroswitches",
-	"kamenridercraft:zodiarts_switch"
+	"kamenridercraft:zodiarts_switch",
+	"kamenridercraft:shin_chan_switch"
   ]
 }
