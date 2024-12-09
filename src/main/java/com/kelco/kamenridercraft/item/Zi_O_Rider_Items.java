@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.zi_o.BlankRidewatchItem;
+import com.kelco.kamenridercraft.item.zi_o.OhmaAdventCalendarItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -181,7 +182,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
+					.addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_faiz","geiz","ziku_driver_geiz_belt_faiz",
@@ -583,8 +584,11 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",
+    		() -> new OhmaAdventCalendarItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));		
 		
-		
+
 	public static final DeferredItem<Item> ZI_O_HELMET = ITEMS.register("zi_o_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
