@@ -112,10 +112,14 @@ import net.neoforged.neoforge.registries.DeferredItem;
 			{
 				set_Form_Item(belt,Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.asItem(), 1);
 			}
-			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.SHIN_CHAN_ASTROSWITCH.get())
-					&&(get_Form_Item(belt, 4) !=Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.get() ))
+			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.SHIN_CHAN_ASTROSWITCH.get()))
 			{
-				set_Form_Item(belt,Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
+				if (get_Form_Item(belt, 1) !=Fourze_Rider_Items.BLANK_CIRCLE_ASTROSWITCH.get()
+						||get_Form_Item(belt, 4) !=Fourze_Rider_Items.BLANK_SQUARE_ASTROSWITCH.get()
+						||get_Form_Item(belt, 3) !=Fourze_Rider_Items.BLANK_TRIANGLE_ASTROSWITCH.get()
+						||get_Form_Item(belt, 2) !=Fourze_Rider_Items.BLANK_CROSS_ASTROSWITCH.get()) {
+					set_Form_Item(belt, Fourze_Rider_Items.FOURZE_BASE_STATES.asItem(), 5);
+				}
 			}
 
 
