@@ -71,6 +71,23 @@ public class Fourze_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeSlot(5));
 
+	public static final DeferredItem<Item> FOURZE_FUSION_STATES = ITEMS.register("fourze_meteor_fusionstates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_meteor_fusion","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					.ChangeSlot(5));
+
+	public static final DeferredItem<Item> FOURZE_METEOR_NADESHIKO_FUSION_STATES = ITEMS.register("fourze_meteor_nadeshiko_fusionstates",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_meteor_nadeshiko_fusion","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					.ChangeSlot(5));
+
+
 	public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_drill","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -311,7 +328,6 @@ public class Fourze_Rider_Items {
 
 	/**
 	super_launcher_swich
-	fusion_swich
 	 **/
 
 	public static final DeferredItem<Item> METEOR_ASTROSWITCH = ITEMS.register("meteor_switch",
@@ -349,7 +365,30 @@ public class Fourze_Rider_Items {
 					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","super_gingaoh","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+	public static final DeferredItem<Item> FUSION_ASTROSWITCH_OG = ITEMS.register("fusion_switch_og",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fusion_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
+					.ChangeSlot(4).ResetFormToBase().alsoChange5thSlot(FOURZE_FUSION_STATES.get()));
+
+	public static final DeferredItem<Item> FUSION_ASTROSWITCH = ITEMS.register("fusion_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fusion_nadeshiko_module","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
+					.ChangeSlot(4).ResetFormToBase()
+					.alsoChange5thSlot(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get())
+					.addNeedItem(METEOR_ASTROSWITCH.get())
+					.addNeedItem(NADESHIKO_ASTROSWITCH.get())
+					.addAlternative(FUSION_ASTROSWITCH_OG.get())
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM)
+					.AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
+
+
 
 	public static final DeferredItem<Item> CORE_ASTROSWITCH = ITEMS.register("core_switch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
@@ -481,6 +520,15 @@ public class Fourze_Rider_Items {
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHIN_CHAN_ASTROSWITCH = ITEMS.register("shin_chan_switch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shin_chan","fourze","fourze_driver_belt",
+					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeSlot(5).alsoChange4thSlot(BLANK_SQUARE_ASTROSWITCH.get()).addSwitchForm(FOURZE_BASE_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> ZODIARTS_SWITCH = ITEMS.register("zodiarts_switch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
@@ -512,9 +560,10 @@ public class Fourze_Rider_Items {
 					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
-	/**
-		ginga_oh_driver
-**/
+	public static final DeferredItem<Item> GINGA_OH_DRIVER = ITEMS.register("ginga_oh_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_gingaoh",SOLU_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
+					new Item.Properties()).Add_Extra_Base_Form_Items(OOO_Rider_Items.SAME_MEDAL,OOO_Rider_Items.KUJIRA_MEDAL,OOO_Rider_Items.OOKAMIUO_MEDAL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+
 
 	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
