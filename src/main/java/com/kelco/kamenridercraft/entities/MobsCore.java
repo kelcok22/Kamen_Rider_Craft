@@ -645,6 +645,18 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> HARD_GUARDIAN_SPAWN_EGG = ITEMS.register("hard_guardian_spawn_egg",
             () -> new DeferredSpawnEggItem(HARD_GUARDIAN, 0x0c9132, 0xe5f22e, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DownfallGuardianEntity>> DOWNFALL_GUARDIAN = MOBLIST.register("downfall_guardian",
+            () -> EntityType.Builder.of(DownfallGuardianEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":downfall_guardian"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DOWNFALL_GUARDIAN_SPAWN_EGG = ITEMS.register("downfall_guardian_spawn_egg",
+            () -> new DeferredSpawnEggItem(DOWNFALL_GUARDIAN, 0x0f03fc, 0xe5f22e, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PhantomCrusherEntity>> PHANTOM_CRUSHER = MOBLIST.register("phantom_crusher",
+            () -> EntityType.Builder.of(PhantomCrusherEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":phantom_crusher"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PHANTOM_CRUSHER_SPAWN_EGG = ITEMS.register("phantom_crusher_spawn_egg",
+            () -> new DeferredSpawnEggItem(PHANTOM_CRUSHER, 0x0c9132, 0xcdcdd1, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<BloodStalkEntity>> BLOOD_STALK = MOBLIST.register("blood_stalk",
             () -> EntityType.Builder.of(BloodStalkEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":blood_stalk_mob"));
 

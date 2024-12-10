@@ -2185,6 +2185,8 @@
 
 "item.kamenridercraft.full_bottle": "Empty Bottle",
 "item.kamenridercraft.smash_bottle": "Smash Bottle",
+  "item.kamenridercraft.sclash_jelly": "Sclash Jelly",
+  "item.kamenridercraft.golden_bangle": "Misora's Bangle",
 
 "item.kamenridercraft.pandora_panel_green": "Pandora Panel (Green)",
 "item.kamenridercraft.pandora_panel_red": "Pandora Panel (Red)",
@@ -3532,6 +3534,8 @@
   "entity.kamenridercraft.grease": "Kamen Rider Grease",
   "entity.kamenridercraft.build": "Kamen Rider Build (Katsuragi Shinobu)",
   "entity.kamenridercraft.evol": "Kamen Rider Evol",
+  "entity.kamenridercraft.downfall_guardian": "Downfall Guardian",
+  "entity.kamenridercraft.phantom_crusher": "Phantom Crusher",
 
 "entity.kamenridercraft.trilobite_magia": "Trilobite Magia",
 "entity.kamenridercraft.dodo_magia_chick": "Dodo Magia Chick",
@@ -3669,6 +3673,8 @@
   "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
   "item.kamenridercraft.seito_guardian_spawn_egg": "Seito Guardian Spawn Egg",
   "item.kamenridercraft.hard_guardian_spawn_egg": "Hard Guardian Spawn Egg",
+  "item.kamenridercraft.downfall_guardian_spawn_egg": "Downfall Guardian Spawn Egg",
+  "item.kamenridercraft.phantom_crusher_spawn_egg": "Phantom Crusher Spawn Egg",
   "item.kamenridercraft.needle_smash_spawn_egg": "Needle Smash Spawn Egg",
   "item.kamenridercraft.blood_stalk_spawn_egg": "Blood Stalk Spawn Egg",
   "item.kamenridercraft.night_rogue_spawn_egg": "Night Rogue Spawn Egg",
@@ -3880,7 +3886,9 @@
 "block.kamenridercraft.astroswitch_programmer": "Astroswitch Programmer",
 "block.kamenridercraft.gamecreator": "Game Creator",
 "block.kamenridercraft.ganbarizing_machine": "Ganbarizing Machine",
-"block.kamenridercraft.hiden_3d_printer": "HIDEN 3D Printer",
+  "block.kamenridercraft.fullbottle_refiner": "Fullbottle Refiner",
+  "block.kamenridercraft.fullbottle_solidifier": "Fullbottle Solidifier",
+  "block.kamenridercraft.hiden_3d_printer": "HIDEN 3D Printer",
 "block.kamenridercraft.zaia_3d_printer": "ZAIA 3D Printer",
 "block.kamenridercraft.vistamp_bar": "Vistamp Bar",
 "block.kamenridercraft.kamen_cafe_counter": "Kamen Cafe Counter",
