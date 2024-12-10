@@ -68,23 +68,6 @@ public class ModCommonEvents {
 	public static class EventHandler {
 
 
-
-		@SubscribeEvent
-		public void EffectEnd(MobEffectEvent.Remove event) {
-			if (!event.getEntity().level().isClientSide()) {
-				boolean checkGamemode = false;
-				if (event.getEntity() instanceof Player _player) {
-					if (_player instanceof ServerPlayer _serverPlayer) {
-						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE &&
-								_serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
-					}
-					_player.getAbilities().mayfly = (!checkGamemode);
-
-				}
-			}
-		}
-
-
 		@SubscribeEvent
 		public void onPlayerTick(PlayerTickEvent.Post event) {
 
