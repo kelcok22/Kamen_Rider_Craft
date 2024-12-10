@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.zi_o.BlankRidewatchItem;
 import com.kelco.kamenridercraft.item.zi_o.OhmaAdventCalendarItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -541,6 +542,54 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> CROSS_Z_RIDEWATCH = ITEMS.register("cross_z_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHINOBI_MIRIDEWATCH = ITEMS.register("shinobi_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shinobi","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> QUIZ_MIRIDEWATCH = ITEMS.register("quiz_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_quiz","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> KIKAI_MIRIDEWATCH = ITEMS.register("kikai_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kikai","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	/*
+	public static final DeferredItem<Item> GINGA_TAIYO_MIRIDEWATCH = ITEMS.register("ginga_taiyo_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_taiyo","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					.addSwitchForm(Zi_O_Rider_Items.GINGA_MIRIDEWATCH.get()));
+
+	public static final DeferredItem<Item> GINGA_WAKUSEI_MIRIDEWATCH = ITEMS.register("ginga_wakusei_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_wakusei","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.addSwitchForm(GINGA_TAIYO_MIRIDEWATCH.get()));
+
+	public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_finaly","woz","beyondriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					.addSwitchForm(GINGA_WAKUSEI_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	*/
 
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
