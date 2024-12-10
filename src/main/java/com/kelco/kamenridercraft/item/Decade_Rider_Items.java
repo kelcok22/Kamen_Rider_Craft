@@ -739,57 +739,78 @@ public class Decade_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
     public static final DeferredItem<Item> DECADE_BLAST_CARD = ITEMS.register("decade_blast_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"})
+			.addEffects(new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item>DECADE_SLASH_CARD = ITEMS.register("decade_slash_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(Effect_core.SLASH, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"})
+			.addEffects(new MobEffectInstance(Effect_core.SLASH, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DECADE_ILLUSION_CARD = ITEMS.register("decade_illusion_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, "illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"})
+			.addSpecial("illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DECADE_INVISIBLE_CARD = ITEMS.register("decade_invisible_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"}, new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade"})
+			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_BLAST_CARD = ITEMS.register("diend_blast_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			.addEffects(new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_INVISIBLE_CARD = ITEMS.register("diend_invisible_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_CROSSATTACK_CARD = ITEMS.register("diend_crossattack_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "crossattack").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			.addSpecial("crossattack").AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_BARRIER_CARD = ITEMS.register("diend_barrier_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "barrier").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			.addSpecial("barrier").AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DIEND_ILLUSION_CARD = ITEMS.register("diend_illusion_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"}, "diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			.addSpecial("diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
     //public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",
 	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan"}, ForgeRegistries.ITEMS.getValue(new ResourceLocation("supersentaicraft:rekka_daizantou")), 30).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> G4_GIGANT_CARD = ITEMS.register("g4_gigant_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade_violent_emotion"}, Agito_Rider_Items.G4_GIGANT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade_violent_emotion"})
+			.addItem(Agito_Rider_Items.G4_GIGANT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> RYUKI_STRIKE_VENT_CARD = ITEMS.register("ryuki_strike_vent_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"ryuki","decade_violent_emotion"}, Ryuki_Rider_Items.DRAG_CLAW.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"ryuki","decade_violent_emotion"})
+			.addItem(Ryuki_Rider_Items.DRAG_CLAW.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> BLADE_METAL_CARD = ITEMS.register("blade_metal_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"blade","decade_violent_emotion"}, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300,1,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"blade","decade_violent_emotion"})
+			.addEffects(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300,1,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> BLADE_MACH_CARD = ITEMS.register("blade_mach_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"blade","decade_violent_emotion"},
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300,3,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 300,3,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"blade","decade_violent_emotion"})
+			.addEffects(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300,3,true,false),
+						new MobEffectInstance(MobEffects.DIG_SPEED, 300,3,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> HIBIKI_ONGEKIBOU_REKKA_CARD = ITEMS.register("hibiki_ongekibou_rekka_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"hibiki","decade_violent_emotion"}, Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"hibiki","decade_violent_emotion"})
+			.addItem(Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> HIBIKI_ONIBI_CARD = ITEMS.register("hibiki_onibi_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"hibiki","decade_violent_emotion"}, "onibi").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"hibiki","decade_violent_emotion"})
+			.addSpecial("onibi").AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> KABUTO_CLOCK_UP_CARD = ITEMS.register("kabuto_clock_up_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"kabuto","decade_violent_emotion"}, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250,20,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"kabuto","decade_violent_emotion"})
+			.addEffects(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250,20,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_ORE_SANJOU_CARD = ITEMS.register("den_o_ore_sanjou_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"}, "ore_sanjou").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"})
+			.addSpecial("ore_sanjou").AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_BOKU_NI_TSURARETE_MIRU_CARD = ITEMS.register("den_o_bokuni_tsurarete_miru_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"}, "bokuni_tsurarete_miru").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"})
+			.addSpecial("bokuni_tsurarete_miru").AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_NAKERUDE_CARD = ITEMS.register("den_o_nakerude_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"}, "nakerude").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"})
+			.addSpecial("nakerude").AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_KOTAE_WA_KIITENAI_CARD = ITEMS.register("den_o_kotaewa_kiite_nai_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"}, "kotaewa_kiite_nai").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o","den_o_rod","den_o_axe","den_o_gun","den_o_wing","den_o_climax","decade_violent_emotion"})
+			.addSpecial("kotaewa_kiite_nai").AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DEN_O_TSUPPARI_CARD = ITEMS.register("den_o_tsuppari_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o_axe","decade_violent_emotion"}, new MobEffectInstance(Effect_core.PUNCH, 300,1,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o_axe","decade_violent_emotion"})
+			.addEffects(new MobEffectInstance(Effect_core.PUNCH, 300,1,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> DEN_O_UTCHARI_CARD = ITEMS.register("den_o_utchari_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o_axe","decade_violent_emotion"},
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300,2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 300,3,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"den_o_axe","decade_violent_emotion"})
+			.addEffects(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300,2,true,false),
+						new MobEffectInstance(MobEffects.JUMP, 300,3,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
     public static final DeferredItem<Item> AMAZON_GAGA_NO_UDEWA_CARD = ITEMS.register("amazon_gaga_no_udewa_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"amazon","decade_complete","decade_violent_emotion"}, Ichigo_Rider_Items.GAGA_ARMLET.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"amazon","decade_complete","decade_violent_emotion"})
+			.addItem(Ichigo_Rider_Items.GAGA_ARMLET.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
