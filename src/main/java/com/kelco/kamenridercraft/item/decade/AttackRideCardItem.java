@@ -47,31 +47,31 @@ public class AttackRideCardItem extends BaseItem {
 
 	public String[] FORMS = new String[] {""};
 	private List<MobEffectInstance> EFFECTS;
-	public Item ITEM;
+	private List<Item> ITEMS = Lists.newArrayList();
 	public String SPECIAL;
 
-	public AttackRideCardItem (Properties properties, String[] forms, MobEffectInstance... effects)
+	public AttackRideCardItem (Properties properties, String[] forms)
 	{
 		super(properties);
-		
 		FORMS = forms;
+	}
+
+	public AttackRideCardItem addEffects(MobEffectInstance... effects)
+	{
 		EFFECTS = Lists.newArrayList(effects);
+		return this;
 	}
 
-	public AttackRideCardItem (Properties properties, String[] forms, Item item)
+	public AttackRideCardItem addItem(Item item)
 	{
-		super(properties);
-		
-		FORMS = forms;
-		ITEM = item;
+		ITEMS.add(item);
+		return this;
 	}
 
-	public AttackRideCardItem (Properties properties, String[] forms, String special)
+	public AttackRideCardItem addSpecial(String special)
 	{
-		super(properties);
-		
-		FORMS = forms;
 		SPECIAL = special;
+		return this;
 	}
 
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
@@ -88,16 +88,19 @@ public class AttackRideCardItem extends BaseItem {
 					for (int i = 0; i < EFFECTS.size(); i++) {
 						p_41129_.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,false));
 					}
-				} else if (ITEM != null) {
-					ItemStack item = new ItemStack(ITEM, 1);
-					if (item != null) {
+				}
+				if (ITEMS.size() != 0) {
+					for (int i = 0; i < ITEMS.size(); i++) {
+						ItemStack item = new ItemStack(ITEMS.get(i), 1);
+						item.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + " " + ITEMS.get(i).getName(item).getString()));
 						if (item.isDamageableItem() && Config.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, Config.summonedItemDurability);
 
 						ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
 						entity.setPickUpDelay(0);
 						p_41128_.addFreshEntity(entity);
 					}
-				} else {
+				}
+				if (SPECIAL != null) {
 					switch (SPECIAL) {
 						case "illusion":
 							for (int i = 0; i < 2; i++) {
