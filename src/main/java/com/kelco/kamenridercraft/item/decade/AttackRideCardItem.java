@@ -80,9 +80,8 @@ public class AttackRideCardItem extends BaseItem {
 		
 		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt){
 			if (belt.isTransformed(p_41129_)
-				&& (p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DECADRIVER.get()
-				|| p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get()
-				|| p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DARK_DECADRIVER.get())
+				&& (belt == Decade_Rider_Items.DECADRIVER.get() || belt == Decade_Rider_Items.NEO_DECADRIVER.get()
+				|| belt == Decade_Rider_Items.DIEND_BELT.get() || belt == Decade_Rider_Items.DARK_DECADRIVER.get())
 				&& ArrayUtils.contains(FORMS, belt.GET_TEXT(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.Rider))) {
 				if (EFFECTS != null) {
 					for (int i = 0; i < EFFECTS.size(); i++) {
@@ -92,7 +91,7 @@ public class AttackRideCardItem extends BaseItem {
 				if (ITEMS.size() != 0) {
 					for (int i = 0; i < ITEMS.size(); i++) {
 						ItemStack item = new ItemStack(ITEMS.get(i), 1);
-						item.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + " " + ITEMS.get(i).getName(item).getString()));
+						item.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + ITEMS.get(i).getName(item).getString()));
 						if (item.isDamageableItem() && Config.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, Config.summonedItemDurability);
 
 						ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
