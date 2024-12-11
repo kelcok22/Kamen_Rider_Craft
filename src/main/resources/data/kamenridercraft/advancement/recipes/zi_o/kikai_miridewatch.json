@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:woz_miridewatch"
+			  "kamenridercraft:kikai_miridewatch"
 			]
 		  }
 		]
@@ -21,9 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/woz_ridewatch",
-	  "kamenridercraft:zi_o/zikan_despear",
-	  "kamenridercraft:zi_o/ohma_advent_calendar"
+	  "kamenridercraft:zi_o/geiz_revive_ridewatch"
 	]
   },
   "sends_telemetry_event": false

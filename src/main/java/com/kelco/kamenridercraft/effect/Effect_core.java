@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.NeoForgeMod;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Effect_core {
@@ -37,7 +38,8 @@ public class Effect_core {
             () -> new PunchEffect(MobEffectCategory.BENEFICIAL, 0x1d8519));
 
     public static final Holder<MobEffect> FLYING= EFFECT.register("flying",
-            () -> new 	FlyingEffect(MobEffectCategory.BENEFICIAL, 0xffffff) );
+            () -> new 	BasicEffect(MobEffectCategory.BENEFICIAL, 0xffffff)
+            .addAttributeModifier(NeoForgeMod.CREATIVE_FLIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flying"), 1, AttributeModifier.Operation.ADD_VALUE) );
 
     public static final Holder<MobEffect> PULL= EFFECT.register("pull",
             () -> new 	PullEffect(MobEffectCategory.BENEFICIAL, 0xcb3e3e) );

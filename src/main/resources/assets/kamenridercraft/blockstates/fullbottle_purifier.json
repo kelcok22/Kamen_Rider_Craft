@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/fullbottle_purifier" },
+    "facing=south": { "model": "kamenridercraft:block/fullbottle_purifier", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/fullbottle_purifier", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/fullbottle_purifier", "y": 90 }
+  }
+ }

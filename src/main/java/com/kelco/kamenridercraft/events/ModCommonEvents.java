@@ -68,23 +68,6 @@ public class ModCommonEvents {
 	public static class EventHandler {
 
 
-
-		@SubscribeEvent
-		public void EffectEnd(MobEffectEvent.Remove event) {
-			if (!event.getEntity().level().isClientSide()) {
-				boolean checkGamemode = false;
-				if (event.getEntity() instanceof Player _player) {
-					if (_player instanceof ServerPlayer _serverPlayer) {
-						checkGamemode = _serverPlayer.gameMode.getGameModeForPlayer() != GameType.CREATIVE &&
-								_serverPlayer.gameMode.getGameModeForPlayer() != GameType.SPECTATOR;
-					}
-					_player.getAbilities().mayfly = (!checkGamemode);
-
-				}
-			}
-		}
-
-
 		@SubscribeEvent
 		public void onPlayerTick(PlayerTickEvent.Post event) {
 
@@ -558,6 +541,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.TOUTOGUARDIAN.get(), GuardianEntity.setAttributes().build());
 		event.put(MobsCore.SEITOGUARDIAN.get(), SeitoGuardianEntity.setAttributes().build());
 		event.put(MobsCore.HARD_GUARDIAN.get(), HardGuardianEntity.setAttributes().build());
+		event.put(MobsCore.DOWNFALL_GUARDIAN.get(), DownfallGuardianEntity.setAttributes().build());
+		event.put(MobsCore.PHANTOM_CRUSHER.get(), PhantomCrusherEntity.setAttributes().build());
 		event.put(MobsCore.SMASH.get(), SmashEntity.setAttributes().build());
 		event.put(MobsCore.BLOOD_STALK.get(), BloodStalkEntity.setAttributes().build());
 		event.put(MobsCore.NIGHT_ROGUE.get(), NightRogueEntity.setAttributes().build());
@@ -651,6 +636,8 @@ public class ModCommonEvents {
 		event.register(MobsCore.TOUTOGUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.SEITOGUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.HOKUTOGUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.DOWNFALL_GUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.HARD_GUARDIAN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 
 		event.register(MobsCore.TRILOBITE_MAGIA.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
