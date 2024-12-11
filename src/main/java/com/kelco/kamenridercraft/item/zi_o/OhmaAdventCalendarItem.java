@@ -41,13 +41,10 @@ public class OhmaAdventCalendarItem extends BaseItem {
                     } else if (form == Zi_O_Rider_Items.ZI_O_II_RIDEWATCH.get()) {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_ii"));
                         if (!player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_ii_2"));
-                    } else if (form == Zi_O_Rider_Items.ZI_O_TRINITY_RIDEWATCH.get()) {
-                        player.sendSystemMessage(player.isShiftKeyDown() ? Component.translatable("message.kamenridercraft.zi_o_trinity_2") : Component.translatable("message.kamenridercraft.zi_o_trinity"));
-                    } else if (form == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) {
-                        player.sendSystemMessage(Component.translatable("message.kamenridercraft.grand_zi_o"));
-                    } else if (form == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get()) {
-                        player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_ohma_form"));
-                    } else if (form == Zi_O_Rider_Items.BUILD_RIDEWATCH.get()) {
+                    } else if (form == Zi_O_Rider_Items.ZI_O_TRINITY_RIDEWATCH.get()) player.sendSystemMessage(player.isShiftKeyDown() ? Component.translatable("message.kamenridercraft.zi_o_trinity_2") : Component.translatable("message.kamenridercraft.zi_o_trinity"));
+                    else if (form == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.grand_zi_o"));
+                    else if (form == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_ohma_form"));
+                    else if (form == Zi_O_Rider_Items.BUILD_RIDEWATCH.get()) {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_build"));
                         if (player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_build_2"));
                     } else {
@@ -82,6 +79,13 @@ public class OhmaAdventCalendarItem extends BaseItem {
                     } else if (form == Zi_O_Rider_Items.GEIZ_MAJESTY_RIDEWATCH.get()) {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.geiz_majesty"));
                         if (!player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.geiz_majesty_2"));
+                    }
+                } else if (belt == Zi_O_Rider_Items.BEYONDRIVER.get()) {
+                    if (form == Zi_O_Rider_Items.GINGA_FINALY_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_WAKUSEI_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_MIRIDEWATCH.get()) {
+                        player.sendSystemMessage(Component.translatable("message.kamenridercraft.wozgingafinaly"));
+                    } else {
+                        player.sendSystemMessage(Component.translatable("message.kamenridercraft.woz"));
+                        if (player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_2"));
                     }
                 //} else if (belt == Zi_O_Rider_Items.OHMA_ZIKU_DRIVER.get()) {
                 //    player.sendSystemMessage(Component.translatable("message.kamenridercraft.ohma_zi_o"));
