@@ -586,7 +586,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.addNeedForm(GINGA_WAKUSEI_MIRIDEWATCH.get(), 1).addAlternative(GINGA_WAKUSEI_MIRIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+					.addNeedForm(GINGA_WAKUSEI_MIRIDEWATCH.get(), 1).addAlternative(GINGA_WAKUSEI_MIRIDEWATCH.get()));
 
 	public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.ZI_O_TAB_ITEM));

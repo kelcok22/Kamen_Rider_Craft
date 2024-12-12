@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:black_rx_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:bio_core"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:bio_rider_ridewatch"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:riderman_belt_core"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:riderman_ridewatch"
+  }
+}
