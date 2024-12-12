@@ -3890,6 +3890,7 @@
 "block.kamenridercraft.spruce_flooring": "Spruce Flooring",
 "block.kamenridercraft.stone_flooring": "Stone Flooring",
 
+
 "block.kamenridercraft.denliner_interior": "DenLiner Interior",
 "block.kamenridercraft.denliner_interior_darker": "DenLiner Interior (Dark)",
 "block.kamenridercraft.denliner_interior_with_line": "DenLiner Interior (Line)",
@@ -3946,6 +3947,9 @@
   "block.kamenridercraft.rabbit_hutch_cyan2": "Rabbit Hutch Panel",
   "block.kamenridercraft.rabbit_hutch_computer_stairs": "Rabbit Hutch Computer",
   "block.kamenridercraft.artificial_gravity_block": "Artificial Gravity Block",
+
+  "block.kamenridercraft.steel_ladder": "Steel Ladder",
+  "block.kamenridercraft.rabbit_hutch_ladder": "Rabbit Hutch Ladder",
 
   "block.kamenridercraft.helheim_leaves": "Helheim Leaves",
   "block.kamenridercraft.helheim_log": "Helheim Log",
