@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kamenridercraft:block/steel_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kamenridercraft:block/steel_ladder"
+    },
+    "facing=south": {
+      "model": "kamenridercraft:block/steel_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamenridercraft:block/steel_ladder",
+      "y": 270
+    }
+  }
+}

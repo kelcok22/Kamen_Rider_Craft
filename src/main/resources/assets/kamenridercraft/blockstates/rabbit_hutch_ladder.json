@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kamenridercraft:block/rabbit_hutch_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kamenridercraft:block/rabbit_hutch_ladder"
+    },
+    "facing=south": {
+      "model": "kamenridercraft:block/rabbit_hutch_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamenridercraft:block/rabbit_hutch_ladder",
+      "y": 270
+    }
+  }
+}

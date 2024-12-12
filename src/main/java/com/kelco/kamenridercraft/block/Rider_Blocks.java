@@ -75,6 +75,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> POTTED_BLUE_ROSE = registerBlock("potted_blue_rose",
 			() -> new FlowerPotBlock(Rider_Blocks.BLUE_ROSE.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
+	public static final DeferredBlock<LadderBlock> STEEL_LADDER = registerBlock("steel_ladder",
+			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
+
 
 	public static final DeferredBlock<Block> KUUGA_ORE = registerBlock("stone_kuuga",
 			() -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
@@ -607,6 +610,8 @@ public class Rider_Blocks {
 			() -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(),BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<LadderBlock> RABBIT_HUTCH_LADDER = registerBlock("rabbit_hutch_ladder",
+			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
 
 					
