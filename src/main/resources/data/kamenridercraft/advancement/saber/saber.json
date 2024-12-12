@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:seiken_swordriver_saber"
+	},
+	"title": "I'll decide how this story ends!",
+	"description": "Transform into Kamen Rider Saber",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:seiken_swordriver_saber"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

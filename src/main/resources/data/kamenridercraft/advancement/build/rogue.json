@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:sclash_driver_rogue"
+	},
+	"title": "Become a sacrifice for the greater good!",
+	"description": "Transform into Kamen Rider Rogue",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/night_rogue",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:sclash_driver_rogue"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

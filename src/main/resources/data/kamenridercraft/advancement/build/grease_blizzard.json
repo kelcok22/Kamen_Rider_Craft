@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:build_driver_grease"
+	},
+	"title": "Freezing Soul Fire",
+	"description": "Transform into Grease Blizzard",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/grease",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver_grease"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

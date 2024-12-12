@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shinobi_driver"
+	},
+	"title": "IZANAGI",
+	"description": "Transform into Kamen Rider Shinobi",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zi-o/woz",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zi_o_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zi_o_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zi_o_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:shinobi_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

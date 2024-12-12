@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:jaken_caliburdriver"
+	},
+	"title": "Your story ends here.",
+	"description": "Transform into Kamen Rider Calibur",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/espada",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:jaken_caliburdriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

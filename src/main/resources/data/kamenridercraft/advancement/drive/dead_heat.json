@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:formulashift"
+	  "id": "kamenridercraft:deadheatshift"
 	},
-	"title": "This Standby rocks!",
-	"description": "Transform into Drive type Formula",
+	"title": "Don't lose your mind",
+	"description": "Transform into Drive type Dead Heat",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dead_heat",
+  "parent": "kamenridercraft:drive/drive",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -37,7 +37,7 @@
 				"kamenridercraft:drivedriver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:formulashift\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:deadheatshift\"}"
               }
 			}
 		  }

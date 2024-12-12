@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:gingaoh_driver"
+	},
+	"title": "GanGanGiGin GingaOh",
+	"description": "Defeat Super GingaOh",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:fourze/nadeshiko",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:super_gingaoh"
+		}
+	  }
+	}
+  }
+}

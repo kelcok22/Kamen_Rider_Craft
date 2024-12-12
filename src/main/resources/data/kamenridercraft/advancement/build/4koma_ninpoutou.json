@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:4koma_ninpoutou"
+	},
+	"title": "The Shinobi Entertainer",
+	"description": "Obtain the 4koma Ninpoutou",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/hawk_gatlinger",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:4koma_ninpoutou"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

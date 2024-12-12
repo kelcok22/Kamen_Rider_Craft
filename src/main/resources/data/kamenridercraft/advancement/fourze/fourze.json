@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:fourze_driver"
+	},
+	"title": "It's Space Time!",
+	"description": "Transform into Kamen Rider Fourze",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:root",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:fourze_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:fourze_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:fourze_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:fourze_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

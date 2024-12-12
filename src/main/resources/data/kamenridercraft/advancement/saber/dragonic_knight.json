@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:formulashift"
+	  "id": "kamenridercraft:dragonic_knight_wonder_ride_book"
 	},
-	"title": "This Standby rocks!",
-	"description": "Transform into Drive type Formula",
+	"title": "Don't miss it!",
+	"description": "Transform into Saber Dragonic Knight",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dead_heat",
+  "parent": "kamenridercraft:saber/saber",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,25 +19,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:saberhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:sabertroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:saberlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:drivedriver"
+				"kamenridercraft:seiken_swordriver_saber"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:formulashift\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dragonic_knight_wonder_ride_book\"}"
               }
 			}
 		  }

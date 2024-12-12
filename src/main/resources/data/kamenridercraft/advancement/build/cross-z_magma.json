@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:formulashift"
+	  "id": "kamenridercraft:magma_knuckle"
 	},
-	"title": "This Standby rocks!",
-	"description": "Transform into Drive type Formula",
-	"frame": "task",
+	"title": "My magma is surging",
+	"description": "Transform into Cross-Z Magma",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dead_heat",
+  "parent": "kamenridercraft:build/cross-z_charge",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,25 +19,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:buildhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:buildtroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:buildlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:drivedriver"
+				"kamenridercraft:build_driver_cross_z"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:formulashift\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dragon_magma_full_bottle\"}"
               }
 			}
 		  }

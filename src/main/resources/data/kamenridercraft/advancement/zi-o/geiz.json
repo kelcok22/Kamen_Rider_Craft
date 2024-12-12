@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ziku_driver_geiz"
+	},
+	"title": "I won't let anyone beat you but me!",
+	"description": "Transform into Kamen Rider Geiz",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zi-o/zi-o",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zi_o_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zi_o_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zi_o_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ziku_driver_geiz"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

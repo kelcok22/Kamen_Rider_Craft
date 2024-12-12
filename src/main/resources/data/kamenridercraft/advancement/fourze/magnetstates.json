@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:formulashift"
+	  "id": "kamenridercraft:magnet_switch_n"
 	},
-	"title": "This Standby rocks!",
-	"description": "Transform into Drive type Formula",
+	"title": "Bounce Back",
+	"description": "Transform into Fourze Magnetstates",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dead_heat",
+  "parent": "kamenridercraft:fourze/hee_hackgun",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,25 +19,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:fourze_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:fourze_troso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:fourze_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:drivedriver"
+				"kamenridercraft:fourze_driver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:formulashift\"}"
+                "minecraft:custom_data": "{slot_tex5:\"kamenridercraft:fourze_magnetstates\"}"
               }
 			}
 		  }

@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:beat_crosser"
+	},
+	"title": "Special Tune!",
+	"description": "Obtain the Beat Crosser",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/cross-z",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:beat_crosser"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}
