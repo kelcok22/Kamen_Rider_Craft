@@ -32,7 +32,7 @@ public class TrilobiteMagiaEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Zetsumerise!").withStyle(ChatFormatting.DARK_RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.magia"));
 						}
 					}
 					break;
@@ -42,7 +42,7 @@ public class TrilobiteMagiaEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Forcerise! Flying Falcon! Break down.").withStyle(ChatFormatting.LIGHT_PURPLE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.jin"));
 						}
 					}
 					break;

@@ -106,9 +106,9 @@ public class UratarosEntity extends BaseAllyEntity {
 	            return InteractionResult.SUCCESS;
 	         } else {
 	            if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
-	            	p_30412_.sendSystemMessage(Component.translatable("<Urataros> Henshin!").withStyle(ChatFormatting.BLUE));
-	            	p_30412_.sendSystemMessage(Component.translatable("Rod Form!").withStyle(ChatFormatting.BLUE));
-	            	p_30412_.sendSystemMessage(Component.translatable("<Urataros> Mind if I reel you in?").withStyle(ChatFormatting.BLUE));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
+	            	p_30412_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_sword_1"));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_sword_2").getString()));
 	            	this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
 	            	this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
 	            	this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));

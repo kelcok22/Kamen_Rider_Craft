@@ -13,7 +13,6 @@ import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -181,19 +180,19 @@ public class AttackRideCardItem extends BaseItem {
 							break;
 						case "ore_sanjou":
 							Decade_Rider_Items.DEN_O_SWORD_CARD.get().use(p_41128_, p_41129_, p_41130_);
-							p_41129_.sendSystemMessage(Component.translatable("I... have arrived!").withStyle(ChatFormatting.RED));
+							p_41129_.sendSystemMessage(Component.translatable("attack.kamenridercraft.ore_sanjou"));
 							break;
 						case "bokuni_tsurarete_miru":
 							Decade_Rider_Items.DEN_O_ROD_CARD.get().use(p_41128_, p_41129_, p_41130_);
-							p_41129_.sendSystemMessage(Component.translatable("Mind if I reel you in?").withStyle(ChatFormatting.BLUE));
+							p_41129_.sendSystemMessage(Component.translatable("attack.kamenridercraft.bokuni_tsurarete_miru"));
 							break;
 						case "nakerude":
 							Decade_Rider_Items.DEN_O_AX_CARD.get().use(p_41128_, p_41129_, p_41130_);
-							p_41129_.sendSystemMessage(Component.translatable("You cried!").withStyle(ChatFormatting.YELLOW));
+							p_41129_.sendSystemMessage(Component.translatable("attack.kamenridercraft.nakerude"));
 							break;
 						case "kotaewa_kiite_nai":
 							Decade_Rider_Items.DEN_O_GUN_CARD.get().use(p_41128_, p_41129_, p_41130_);
-							p_41129_.sendSystemMessage(Component.translatable("I can't hear your answer!").withStyle(ChatFormatting.DARK_PURPLE));
+							p_41129_.sendSystemMessage(Component.translatable("attack.kamenridercraft.kotaewa_kiite_nai"));
 							break;
 					}
 				}

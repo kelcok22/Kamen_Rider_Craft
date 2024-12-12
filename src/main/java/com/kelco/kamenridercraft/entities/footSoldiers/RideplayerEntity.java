@@ -75,7 +75,7 @@ public class RideplayerEntity extends BaseHenchmenEntity {
                   boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                   this.level().addFreshEntity(boss);
                   if (this.getLastAttacker()instanceof Player playerIn) {
-                     playerIn.sendSystemMessage(Component.translatable("Dual Up! Get the glory in the chain! Perfect Puzzle!").withStyle(ChatFormatting.BLUE));
+                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_1"));
                   }
                }
 					break;
@@ -85,8 +85,7 @@ public class RideplayerEntity extends BaseHenchmenEntity {
 				   	boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 				   	this.level().addFreshEntity(boss2);
 				   	if (this.getLastAttacker()instanceof Player playerIn) {
-				   		playerIn.sendSystemMessage(Component.translatable("Buggle Up! Dreaming girl! Koi no simulation!").withStyle(ChatFormatting.YELLOW));
-				   		playerIn.sendSystemMessage(Component.translatable("Otome wa itsumo Toki Meki Crisis!").withStyle(ChatFormatting.LIGHT_PURPLE));
+				   		playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
 				   	}
 				   }
 					break;

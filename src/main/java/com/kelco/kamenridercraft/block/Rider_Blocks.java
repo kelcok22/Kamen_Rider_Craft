@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.block;
 
 import java.util.function.Supplier;
 
+import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
@@ -701,75 +702,75 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GAOH
-					,Component.translatable("Gaoh Form!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.gaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					, MobsCore.POSEIDON
-					, Component.translatable("Same! Kujira! Ookamiuo!").withStyle(ChatFormatting.AQUA)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					, Component.translatable("henshin.kamenridercraft.poseidon")).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
 	public static final DeferredBlock<Block> CORE_BOSS_BLOCK = registerBlock("core_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CORE
-					,Component.translatable("Henshin!").withStyle(ChatFormatting.RED)
+					,Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.RED)
 					,1,Blocks.FIRE).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
 	
 	public static final DeferredBlock<Block> POWERED_UP_CORE_BOSS_BLOCK = registerBlock("powered_up_core_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.POWERED_UP_CORE
-					,Component.translatable("Henshin!").withStyle(ChatFormatting.DARK_PURPLE)
+					,Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.DARK_PURPLE)
 					,1,Blocks.FIRE).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> ANCIENT_OOO_BOSS_BLOCK = registerBlock("ancient_ooo_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ANCIENT_OOO
-					,Component.translatable("Taka! Tora! Batta!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.ancient_ooo")).AddToTabList(RiderTabs.RIDER_BLOCK));
 	
 	public static final DeferredBlock<Block> GODA_BOSS_BLOCK = registerBlock("goda_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.GODA
-					,Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.goda")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> WISEMAN_BOSS_BLOCK = registerBlock("wiseman_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WISEMAN
-					,Component.translatable("Change, NOW!").withStyle(ChatFormatting.GOLD)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.wiseman")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.CRONUS
-					,Component.translatable("Buggle Up! Ten wo tsukame Rider! Kizame chronicle! Ima koso toki wa kiwamareri!").withStyle(ChatFormatting.GREEN)
+					,Component.translatable("henshin.kamenridercraft.cronus")
 					,1,MIGHTY_BLOCK.get(),BANG_BANG_DRUM.get(),BAKUSOU_TROPHY.get()).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> NIGHT_ROGUE_BOSS_BLOCK = registerBlock("night_rogue_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.NIGHT_ROGUE
-					,Component.translatable("Mist Match! Bat!").withStyle(ChatFormatting.YELLOW)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.night_rogue")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> EVOL_BOSS_BLOCK = registerBlock("evol_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.EVOL
-					,Component.translatable("Cobra, Rider system, Evolution!").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Lists.newArrayList(Component.translatable("henshin.kamenridercraft.evol_1"), Component.translatable("henshin.kamenridercraft.evol_2"))).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 
 	public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.HOROBI
-					,Component.translatable("Forcerise! Sting Scorpion! Break down.").withStyle(ChatFormatting.DARK_PURPLE)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.horobi")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> IKAZUCHI_BOSS_BLOCK = registerBlock("ikazuchi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.IKAZUCHI
-					,Component.translatable("Forcerise! Break down.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.ikazuchi")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ARK_ZERO
-					,Component.translatable("Arkrise! All zero.").withStyle(ChatFormatting.DARK_RED)).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,Component.translatable("henshin.kamenridercraft.ark_zero")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

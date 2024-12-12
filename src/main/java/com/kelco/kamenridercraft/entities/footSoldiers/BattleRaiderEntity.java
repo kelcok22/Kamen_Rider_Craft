@@ -54,7 +54,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Raidrise!").withStyle(ChatFormatting.DARK_RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.raider"));
 						}
 					}
 					break;
@@ -64,7 +64,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Forcerise! Japanese Wolf! Break down.").withStyle(ChatFormatting.WHITE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.naki"));
 						}
 					}
 					break;
@@ -74,8 +74,8 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss3);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Perfectrise! When the five weapons cross, the jet-black soldier ZAIA is born!").withStyle(ChatFormatting.RED));
-							playerIn.sendSystemMessage(Component.translatable("I AM THE PRESIDENT!").withStyle(ChatFormatting.RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_2"));
 						}
 					}
 					break;
@@ -85,7 +85,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss4);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Dire Wolf!").withStyle(ChatFormatting.BLUE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dire_wolf_sold_magia"));
 						}
 					}
 					break;
@@ -95,7 +95,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 						boss5.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss5);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Serval Tiger!").withStyle(ChatFormatting.GOLD));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.serval_tiger_sold_magia"));
 						}
 					}
 					break;

@@ -32,8 +32,8 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("<Kamen Rider Eternal>Henshin!").withStyle(ChatFormatting.YELLOW));
-							playerIn.sendSystemMessage(Component.translatable("Eternal!"));
+							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.eternal_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.eternal_2"));
 						}
 					}
 					break;
@@ -44,7 +44,7 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss2);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Commander!").withStyle(ChatFormatting.GREEN));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.commander_dopant"));
 						}
 					}
 					break;
@@ -55,7 +55,7 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss3);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Mukade! Hachi! Ari!").withStyle(ChatFormatting.YELLOW));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.muchiri"));
 						}
 					}
 					break;

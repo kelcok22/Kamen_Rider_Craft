@@ -97,7 +97,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 			if (RiderDriverItem.get_Form_Item(belt,1)==Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
-				this.bossEvent.setName(Component.translatable(getDisplayName().getString()+"(Gamedeus)").withStyle(ChatFormatting.GOLD));;
+				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.cronus_gamedeus").withStyle(ChatFormatting.GOLD));;
 			}
 		}
 		this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
@@ -224,14 +224,14 @@ public class CronusEntity extends BaseHenchmenEntity {
 										if (RiderDriverItem.get_Form_Item(this.Cronus.getItemBySlot(EquipmentSlot.FEET),1)!=Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
 											livingentity.addEffect(new MobEffectInstance(Effect_core.PAUSE,150,0));
 											if (livingentity instanceof Player playerIn){
-												playerIn.sendSystemMessage(Component.translatable("Pause!").withStyle(ChatFormatting.GREEN));
+												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.pause"));
 											}
 
 										}
 										else {
 											livingentity.addEffect(new MobEffectInstance(Effect_core.RESET,30,0));
 											if (livingentity instanceof Player playerIn){
-												playerIn.sendSystemMessage(Component.translatable("Reset!").withStyle(ChatFormatting.RED));
+												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.reset"));
 											}
 										
 									}

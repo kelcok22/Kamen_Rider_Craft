@@ -32,7 +32,7 @@ public class Item_Purple_Medals extends BaseItem
 				if (entity instanceof Player ) {
 					Player playerIn = ((Player)entity);
 					if(world.isClientSide) {
-					playerIn.sendSystemMessage(Component.translatable("You released the purple medals!").withStyle(ChatFormatting.DARK_PURPLE));
+					playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.purple_medals"));
 					}
 					playerIn.drop(new ItemStack(OOO_Rider_Items.PURPLE_MEDALS_EMPTY.get(), 1), true);
 					playerIn.drop(new ItemStack(OOO_Rider_Items.PTERA_MEDAL.get(), rand2), true);

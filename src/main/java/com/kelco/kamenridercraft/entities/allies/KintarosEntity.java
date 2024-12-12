@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
+import com.kelco.kamenridercraft.Config;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
@@ -107,9 +108,9 @@ public class KintarosEntity extends BaseAllyEntity {
 	            return InteractionResult.SUCCESS;
 	         } else {
 	            if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
-	            	p_30412_.sendSystemMessage(Component.translatable("<Kintaros> Henshin!").withStyle(ChatFormatting.YELLOW));
-	            	p_30412_.sendSystemMessage(Component.translatable("Ax Form!").withStyle(ChatFormatting.YELLOW));
-	            	p_30412_.sendSystemMessage(Component.translatable("<Kintaros> My strength has made you cry!").withStyle(ChatFormatting.YELLOW));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
+	            	p_30412_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_ax_1"));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_ax_2").getString()));
 	            	this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
 	            	this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
 	            	this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
@@ -119,10 +120,12 @@ public class KintarosEntity extends BaseAllyEntity {
 					if (!p_30412_.getAbilities().instabuild) {
 					   itemstack.shrink(1);
 					}
-					for (int i = 0; i < 10; i++) {
-						ItemEntity tissue = new ItemEntity(p_30412_.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
-						tissue.setPickUpDelay(40);
-						p_30412_.level().addFreshEntity(tissue);
+					if (Config.kintarosTissueDrop) {
+						for (int i = 0; i < 10; i++) {
+							ItemEntity tissue = new ItemEntity(p_30412_.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
+							tissue.setPickUpDelay(40);
+							p_30412_.level().addFreshEntity(tissue);
+						}
 					}
 					return InteractionResult.SUCCESS;
 	            }

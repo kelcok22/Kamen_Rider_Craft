@@ -135,9 +135,9 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
 	            return InteractionResult.SUCCESS;
 	         } else {
 	            if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
-	            	p_30412_.sendSystemMessage(Component.translatable("<Ryutaros> Henshin!").withStyle(ChatFormatting.DARK_PURPLE));
-	            	p_30412_.sendSystemMessage(Component.translatable("Gun Form!").withStyle(ChatFormatting.DARK_PURPLE));
-	            	p_30412_.sendSystemMessage(Component.translatable("<Ryutaros> Mind if I defeat you? I can't hear your answer!").withStyle(ChatFormatting.DARK_PURPLE));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
+	            	p_30412_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_gun_1"));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_gun_2").getString()));
 	            	this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
 	            	this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
 	            	this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));

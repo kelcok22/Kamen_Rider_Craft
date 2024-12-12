@@ -61,7 +61,7 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 			ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 			if (RiderDriverItem.get_Form_Item(belt,2)==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()&this.bossEvent.getColor()!=BossEvent.BossBarColor.RED) {
 				this.bossEvent.setColor(BossEvent.BossBarColor.RED);
-				this.bossEvent.setName(Component.translatable(getDisplayName().getString()+" (Greeed Absorption Form)").withStyle(ChatFormatting.GOLD));;
+				this.bossEvent.setName(Component.translatable("entity.kamenridercraft.ancient_ooo_greeed_absorption").withStyle(ChatFormatting.GOLD));;
 			}
 		}
 		this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());

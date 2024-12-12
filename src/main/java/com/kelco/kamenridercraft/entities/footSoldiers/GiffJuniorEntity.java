@@ -37,7 +37,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Versus Up!\nMadness! Hopeless! Darkness! Bat! Hehe! Kamen Rider Evil! Yeah-haha!").withStyle(ChatFormatting.AQUA));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evil"));
 						}
 					}
 					break;
@@ -47,7 +47,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Daiouika!").withStyle(ChatFormatting.LIGHT_PURPLE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.daiouika_deadman"));
 						}
 					}
 					break;
@@ -57,7 +57,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss3);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Wolf!").withStyle(ChatFormatting.LIGHT_PURPLE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.wolf_deadman"));
 						}
 					}
 					break;
@@ -67,7 +67,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss4);
 						if (this.getLastAttacker() instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Queen Bee!").withStyle(ChatFormatting.GOLD));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.queen_bee_deadman"));
 						}
 					}
 					break;

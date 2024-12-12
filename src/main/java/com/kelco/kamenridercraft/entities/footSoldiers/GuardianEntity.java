@@ -37,7 +37,7 @@ public class GuardianEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Mist Match!").withStyle(ChatFormatting.DARK_RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.blood_stalk"));
 						}
 					}
 					break;
@@ -47,7 +47,7 @@ public class GuardianEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("<Sento>It's a Smash, a transformed human!").withStyle(ChatFormatting.BLUE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.smash"));
 						}
 					}
 					break;

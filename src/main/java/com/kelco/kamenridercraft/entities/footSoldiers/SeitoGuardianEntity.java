@@ -45,7 +45,7 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("<Sento>It's a Smash, a transformed human!").withStyle(ChatFormatting.BLUE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.smash"));
 						}
 					}
 					break;

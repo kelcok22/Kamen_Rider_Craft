@@ -32,7 +32,7 @@ public class AnguisMasculusEntity extends BaseHenchmenEntity {
 					this.level().addFreshEntity(boss);
 
 					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("<Another Agito>Henshin!").withStyle(ChatFormatting.DARK_GREEN));
+						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_agito"));
 					}
 				}
 			}
