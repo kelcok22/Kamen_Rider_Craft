@@ -31,7 +31,7 @@ public class NewMoleImaginSandEntity extends BaseHenchmenEntity {
 					this.level().addFreshEntity(boss);
 
 					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Say your wish. I can grant any wish. You can pay me with one thing only.").withStyle(ChatFormatting.WHITE));
+						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.new_mole_imagin"));
 					}
 				}
 			}

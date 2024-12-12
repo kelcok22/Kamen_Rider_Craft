@@ -35,7 +35,7 @@ public class DaiouikaDeadmanEntity extends BaseHenchmenEntity {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
 
-                    playerIn.sendSystemMessage(Component.translatable("<Olteca> And now, I have transcended even Lord Giff himself!").withStyle(ChatFormatting.DARK_GREEN));
+                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.anomalocaris_deadman"));
                 }
             }
 

@@ -73,7 +73,8 @@ public class AbaddonEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("ThinkNet Rise! Crowding Hopper!").withStyle(ChatFormatting.GOLD));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.abaddon_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.abaddon_2"));
 						}
 					}
 					break;
@@ -83,7 +84,8 @@ public class AbaddonEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Progrise Ark! Imagine! Ideal! Illusion! Eden the Kamen Rider!").withStyle(ChatFormatting.RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eden_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eden_2"));
 						}
 					}
 					break;

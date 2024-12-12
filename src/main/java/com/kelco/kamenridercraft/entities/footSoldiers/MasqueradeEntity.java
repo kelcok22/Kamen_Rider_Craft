@@ -32,7 +32,7 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Nasca!").withStyle(ChatFormatting.BLUE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nasca_dopant"));
 						}
 					}
 					break;
@@ -43,7 +43,7 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss2);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Claydoll!").withStyle(ChatFormatting.GOLD));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.claydoll_dopant"));
 						}
 					}
 					break;
@@ -54,7 +54,7 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss3);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Smilodon!").withStyle(ChatFormatting.GOLD));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.smilodon_dopant"));
 						}
 					}
 					break;
@@ -65,7 +65,7 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss4);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Weather!").withStyle(ChatFormatting.GRAY));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.weather_dopant"));
 						}
 					}
 					break;

@@ -26,7 +26,7 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
 
-					if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("<Shocker Rider> Henshin!").withStyle(ChatFormatting.YELLOW));
+					if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shocker_rider"));
 				}
 			}
 		}

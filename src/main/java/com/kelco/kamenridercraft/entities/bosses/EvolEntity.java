@@ -32,7 +32,7 @@ public class EvolEntity extends BaseHenchmenEntity {
     	if (this.getItemBySlot(EquipmentSlot.FEET).getItem()==Build_Rider_Items.EVOL_DRIVER.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
     		if (this.getHealth()<100) {
     			if(this.getLastAttacker() instanceof Player playerIn) {
-					playerIn.sendSystemMessage(Component.translatable("Ready, go! Feverflow! Fuhahahahahaha! Fuhahahahahahahaha!").withStyle(ChatFormatting.WHITE));
+					playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
     				
     				this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
     				this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);

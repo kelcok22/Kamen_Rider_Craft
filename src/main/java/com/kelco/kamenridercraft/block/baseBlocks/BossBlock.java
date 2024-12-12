@@ -19,23 +19,34 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 public class BossBlock extends BaseBlock {
 
-	private Component TEXT;
+	private List<Component> TEXT;
 	private Supplier<? extends EntityType<? extends BaseHenchmenEntity>> BOSS;
 	private List<Block>  BLOCK;
 	private int NUM;
 	
-
-	
 	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,Component text) {
 		super(prop);
-		TEXT=text;
+		TEXT = Lists.newArrayList(text);
 		BOSS =boss;
-		
+	}
+
+	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,List<Component> text) {
+		super(prop);
+		TEXT = text;
+		BOSS =boss;
 	}
 
 	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,Component text,int nun,Block... block) {
 		super(prop);
-		TEXT=text;
+		TEXT = Lists.newArrayList(text);
+		BOSS =boss;
+		BLOCK = Lists.newArrayList(block);
+		
+	}
+
+	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,List<Component> text,int nun,Block... block) {
+		super(prop);
+		TEXT = text;
 		BOSS =boss;
 		BLOCK = Lists.newArrayList(block);
 		
@@ -75,8 +86,9 @@ public class BossBlock extends BaseBlock {
 		if (boss != null) {
 			boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
 			wolrd.addFreshEntity(boss);
-			player.sendSystemMessage(TEXT);
-		
+			for (int i = 0; i < TEXT.size(); i++) {
+				player.sendSystemMessage(TEXT.get(i));
+			}		
 	}
 	     
 	}

@@ -73,7 +73,7 @@ public class KurokageTrooperEntity extends BaseHenchmenEntity {
 						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Soda! Melon Energy Arms!").withStyle(ChatFormatting.GREEN));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zangetsu_shin"));
 						}
 					}
 					break;
@@ -83,7 +83,7 @@ public class KurokageTrooperEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Soda! Peach Energy Arms!").withStyle(ChatFormatting.LIGHT_PURPLE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.marika"));
 						}
 					}
 					break;
@@ -93,7 +93,7 @@ public class KurokageTrooperEntity extends BaseHenchmenEntity {
 						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss3);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Soda! Lemon Energy Arms!").withStyle(ChatFormatting.YELLOW));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.duke"));
 						}
 					}
 					break;
@@ -103,7 +103,7 @@ public class KurokageTrooperEntity extends BaseHenchmenEntity {
 						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss4);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Soda! Cherry Energy Arms!").withStyle(ChatFormatting.RED));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.sigurd"));
 						}
 					}
 					break;

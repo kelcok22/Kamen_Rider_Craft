@@ -56,7 +56,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 						}
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Gachan! Level up! Mighty jump! Mighty kick! Mighty Action X!").withStyle(ChatFormatting.DARK_PURPLE));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm"));
 						}
 					}
 					break;
@@ -66,7 +66,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!").withStyle(ChatFormatting.DARK_GREEN));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.graphite"));
 						}
 					}
 					break;

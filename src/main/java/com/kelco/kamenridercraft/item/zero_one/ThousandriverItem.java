@@ -42,7 +42,7 @@ public class ThousandriverItem extends RiderDriverItem {
 				ItemEntity key = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1), 0, 0, 0);
 				key.setPickUpDelay(0);
 				level.addFreshEntity(key);
-        	    player.sendSystemMessage(Component.translatable("President Dan Kuroto!").withStyle(ChatFormatting.LIGHT_PURPLE));
+        	    player.sendSystemMessage(Component.translatable("loot.kamenridercraft.dan_kuroto_progrisekey"));
         	    player.removeEffect(Effect_core.BUGSTER);
 			}
 		}

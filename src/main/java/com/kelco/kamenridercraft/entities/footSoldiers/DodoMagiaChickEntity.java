@@ -31,7 +31,7 @@ public class DodoMagiaChickEntity extends BaseHenchmenEntity {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
 					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("Zetsumerise!").withStyle(ChatFormatting.DARK_RED));
+						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.magia"));
 					}
 				}
 			}

@@ -41,7 +41,7 @@ public class EvilEntity extends BaseHenchmenEntity {
                 ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Revice_Rider_Items.HOLY_WING_VISTAMP.get(), 1), 0, 0, 0);
                 stamp.setPickUpDelay(0);
                 this.level().addFreshEntity(stamp);
-                player.sendSystemMessage(Component.translatable("Holy Wing!").withStyle(ChatFormatting.AQUA));
+                player.sendSystemMessage(Component.translatable("loot.kamenridercraft.holy_wing"));
 		}
 		super.remove(p_149847_);
 	}

@@ -27,7 +27,7 @@ public class CaucasusEntity extends BaseHenchmenEntity {
     public void aiStep() {
     	if (this.getHealth()<50 && this.getAttributeValue(Attributes.MOVEMENT_SPEED) != 1) {
     		if(this.getLastAttacker() instanceof Player playerIn) {
-                playerIn.sendSystemMessage(Component.translatable("Hyper Clock Up!").withStyle(ChatFormatting.GOLD));
+                playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.hyper_clock_up"));
 			
     			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
     			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);

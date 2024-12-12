@@ -40,7 +40,7 @@ public class ParaDxEntity extends BaseHenchmenEntity {
 				if (RiderDriverItem.get_Form_Item(belt,1)!=Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get()) {
 					RiderDriverItem.set_Form_Item(belt, Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_GASHAT.get(), 1);
 					if (this.getTarget() instanceof Player playerIn){
-						playerIn.sendSystemMessage(Component.translatable("Dual Up! Explosion hit! Knock Out Fighter!").withStyle(ChatFormatting.RED));
+						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_2"));
 						
 					}
 				}

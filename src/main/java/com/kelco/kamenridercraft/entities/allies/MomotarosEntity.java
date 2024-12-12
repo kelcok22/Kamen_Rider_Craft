@@ -105,9 +105,9 @@ public class MomotarosEntity extends BaseAllyEntity {
 	            return InteractionResult.SUCCESS;
 	         } else {
 	            if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
-	            	p_30412_.sendSystemMessage(Component.translatable("<Momotaros> Henshin!").withStyle(ChatFormatting.RED));
-	            	p_30412_.sendSystemMessage(Component.translatable("Sword Form!").withStyle(ChatFormatting.RED));
-	            	p_30412_.sendSystemMessage(Component.translatable("<Momotaros> I... have arrived!").withStyle(ChatFormatting.RED));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
+	            	p_30412_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_sword_1"));
+	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_sword_2").getString()));
 	            	this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
 	            	this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
 	            	this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
