@@ -1,0 +1,74 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ziku_driver_zamonas"
+	},
+	"title": "Over \"Quartzer\"",
+	"description": "Transform into Kamen Rider Zonjis and Zamonas",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:zi-o/barlckxs",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zi_o_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zi_o_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zi_o_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ziku_driver_zonjis"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:zi_o_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:zi_o_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:zi_o_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:ziku_driver_zamonas"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

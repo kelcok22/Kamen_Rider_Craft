@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:hee_hackgun"
+	},
+	"title": "Try not to get burned",
+	"description": "Obtain the Hee-Hackgun",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:fourze/billy_the_rod",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hee_hackgun"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

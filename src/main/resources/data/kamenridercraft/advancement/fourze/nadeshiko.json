@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:nadeshiko_driver"
+	},
+	"title": "Astrogirl",
+	"description": "Transform into Kamen Rider Nadeshiko",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:fourze/meteor",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:fourze_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:fourze_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:fourze_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:nadeshiko_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

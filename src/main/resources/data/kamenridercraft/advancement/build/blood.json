@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:build_driver_blood"
+	},
+	"title": "There will be Blood",
+	"description": "Transform into Kamen Rider Blood",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/blood_stalk",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver_blood"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

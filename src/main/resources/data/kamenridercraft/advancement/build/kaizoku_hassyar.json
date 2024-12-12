@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kaizoku_hassyar"
+	},
+	"title": "The Punctual Rebel",
+	"description": "Obtain the Kaizoku Hassyar",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/4koma_ninpoutou",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kaizoku_hassyar"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:hawk_gatlinger"
+	},
+	"title": "The Rampage of the Skies",
+	"description": "Obtain the Hawk Gatlinger",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/drill_crusher",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hawk_gatlinger"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

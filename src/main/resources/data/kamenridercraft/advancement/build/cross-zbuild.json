@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:formulashift"
+	  "id": "kamenridercraft:cross_z_build_can"
 	},
-	"title": "This Standby rocks!",
-	"description": "Transform into Drive type Formula",
-	"frame": "task",
+	"title": "Be the One!",
+	"description": "Transform into Cross-ZBuild",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dead_heat",
+  "parent": "kamenridercraft:build/genius",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,25 +19,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:buildhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:buildtroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:buildlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:drivedriver"
+				"kamenridercraft:build_driver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:formulashift\"}"
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:cross_z_build_can\"}"
               }
 			}
 		  }

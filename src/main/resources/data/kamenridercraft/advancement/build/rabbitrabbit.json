@@ -1,0 +1,86 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:fullfull_rabbit_tank_bottle"
+	},
+	"title": "Haei! Tuei!",
+	"description": "Transform into Build RabbitRabbit or TankTank",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/hazard",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}"
+              }
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:build_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "1",
+	  "2"
+	]
+  ]
+}
