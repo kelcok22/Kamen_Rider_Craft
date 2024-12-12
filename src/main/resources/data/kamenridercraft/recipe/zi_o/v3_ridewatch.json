@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ridewatch",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:double_typhoon_core"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:v3_ridewatch"
+  }
+}
