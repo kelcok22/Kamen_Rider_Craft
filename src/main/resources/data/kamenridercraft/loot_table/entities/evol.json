@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:cobra_evol_bottle"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:evol_trigger"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:rabbit_evol_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:dragon_evol_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 8,
+				  "name": "kamenridercraft:rider_system_evol_bottle"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

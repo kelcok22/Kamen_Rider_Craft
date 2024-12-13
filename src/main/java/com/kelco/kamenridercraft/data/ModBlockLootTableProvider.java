@@ -28,6 +28,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));
         dropSelf(Rider_Blocks.ICHIGO_CHAIR.get());
         dropSelf(Rider_Blocks.HELHEIM_SAPLING.get());
+        add(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),
+                block -> createDoorTable(Rider_Blocks.RABBIT_HUTCH_DOOR.get()));
 
     }
 

@@ -14,10 +14,20 @@
 		  "weight": 1,
 		  "name": "kamenridercraft:gorilla_full_bottle"
 		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:tank_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:rabbit_full_bottle"
+		  },
 		{
 		  "type": "minecraft:item",
-		  "weight": 8,
-		  "name": "kamenridercraft:full_bottle"
+		  "weight": 5,
+		  "name": "kamenridercraft:nebula_gas_sample"
 		}
 	  ]
 	},
