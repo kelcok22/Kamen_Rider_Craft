@@ -197,6 +197,9 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHIFT_HOLY_CHRISTMAS = ITEMS.register("holy_christmas",
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
