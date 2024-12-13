@@ -3,7 +3,7 @@
 	"icon": {
 	  "id": "kamenridercraft:ginga_miridewatch"
 	},
-	"title": "A long time ago in a galaxy far, far away...",
+	"title": "It's just a meteor, or is it?",
 	"description": "Defeat Kamen Rider Ginga",
 	"frame": "task",
 	"show_toast": true,

@@ -3,7 +3,7 @@
 	"icon": {
 	  "id": "kamenridercraft:woz_miridewatch"
 	},
-	"title": "Ridewatches are not part of a healthy diet",
+	"title": "Don't eat the Ridewatches",
 	"description": "Defeat White Woz",
 	"frame": "task",
 	"show_toast": true,

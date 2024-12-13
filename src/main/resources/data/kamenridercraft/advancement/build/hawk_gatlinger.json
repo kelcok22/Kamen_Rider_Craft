@@ -10,7 +10,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:build/drill_crusher",
+  "parent": "kamenridercraft:build/build",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

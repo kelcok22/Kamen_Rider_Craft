@@ -10,7 +10,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:zi-o/zi-o",
+  "parent": "kamenridercraft:zi-o/geiz",
   "criteria": {
 	"1": {
 	  "trigger": "minecraft:inventory_changed",
