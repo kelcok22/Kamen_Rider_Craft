@@ -36,6 +36,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Rider_Blocks.GHOST_LINER_WHEEL.get());
+                .add(Rider_Blocks.RABBIT_HUTCH_DOOR.get())
 **/
 
 

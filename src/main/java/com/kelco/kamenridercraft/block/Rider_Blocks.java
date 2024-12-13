@@ -16,6 +16,7 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -170,6 +171,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ASTROSWITCH_PROGRAMMER = registerBlock("astroswitch_programmer",
 			() -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
+			() -> new DoorBlock(BlockSetType.IRON,
+					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
 	public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
 			() -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)

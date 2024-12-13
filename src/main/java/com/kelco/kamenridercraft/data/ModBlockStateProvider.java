@@ -38,6 +38,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.HELHEIM_SLAB);
         blockItem(Rider_Blocks.HELHEIM_TRAPDOOR, "_bottom");
 
+        doorBlockWithRenderType(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),modLoc("block/rabbit_hutch_door_bottom"),modLoc("block/rabbit_hutch_door_top"), "cutout");
 
     }
 
