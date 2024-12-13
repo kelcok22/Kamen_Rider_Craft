@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:rx/bio_blade"
+	  "kamenridercraft:rx/bio_blade",
+	  "kamenridercraft:zi_o/bio_rider_ridewatch"
 	]
   },
   "sends_telemetry_event": false

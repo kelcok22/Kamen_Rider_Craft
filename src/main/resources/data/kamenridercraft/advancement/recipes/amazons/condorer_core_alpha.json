@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:riderman_belt_core"
+			  "kamenridercraft:condorer_core_alpha"
 			]
 		  }
 		]
@@ -21,11 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:v3/riderman_belt",
-	  "kamenridercraft:v3/riderman_logo",
-	  "kamenridercraft:decade/riderman_card",
-	  "kamenridercraft:fourze/riderman_switch",
-	  "kamenridercraft:zi_o/riderman_ridewatch"
+	  "kamenridercraft:zi_o/amazon_alpha_ridewatch" 
 	]
   },
   "sends_telemetry_event": false

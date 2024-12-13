@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:ichigo/typhoon_nigo",
 	  "kamenridercraft:decade/nigo_card",
-	  "kamenridercraft:fourze/rider2_switch"
+	  "kamenridercraft:fourze/rider2_switch",
+	  "kamenridercraft:zi_o/nigo_ridewatch"
 	]
   },
   "sends_telemetry_event": false

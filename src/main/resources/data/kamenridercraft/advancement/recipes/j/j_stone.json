@@ -26,7 +26,8 @@
 	  "kamenridercraft:j/jlegs",
 	  "kamenridercraft:j/j_spirit",
 	  "kamenridercraft:j/j_logo",
-	  "kamenridercraft:decade/j_card"
+	  "kamenridercraft:decade/j_card",
+	  "kamenridercraft:zi_o/j_ridewatch"
 	]
   },
   "sends_telemetry_event": false

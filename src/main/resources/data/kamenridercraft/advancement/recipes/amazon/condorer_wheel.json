@@ -27,7 +27,8 @@
 	  "kamenridercraft:amazon/condorer",
 	  "kamenridercraft:amazon/amazon_logo",
 	  "kamenridercraft:decade/amazon_card",
-	  "kamenridercraft:fourze/amazon_switch"
+	  "kamenridercraft:fourze/amazon_switch",
+	  "kamenridercraft:zi_o/amazon_ridewatch"
 	]
   },
   "sends_telemetry_event": false

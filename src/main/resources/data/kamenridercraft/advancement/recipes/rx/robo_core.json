@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:rx/vortech_shooter"
+	  "kamenridercraft:rx/vortech_shooter",
+	  "kamenridercraft:zi_o/robo_rider_ridewatch"
 	]
   },
   "sends_telemetry_event": false
