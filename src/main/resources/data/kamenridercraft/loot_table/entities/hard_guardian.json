@@ -7,13 +7,48 @@
 		{
 		  "type": "minecraft:item",
 		  "weight": 1,
-		  "name": "kamenridercraft:phoenix_full_bottle"
+		  "name": "kamenridercraft:black_lost_bat_full_bottle"
 		},
 		{
 		  "type": "minecraft:item",
 		  "weight": 1,
-		  "name": "kamenridercraft:robo_full_bottle"
+		  "name": "kamenridercraft:black_lost_cd_full_bottle"
 		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_castle_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_fukurou_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_kuwagata_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_shimauma_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_hammer_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_spanner_full_bottle"
+		  },
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_hasami_full_bottle"
+		  },
 		{
 		  "type": "minecraft:item",
 		  "weight": 8,

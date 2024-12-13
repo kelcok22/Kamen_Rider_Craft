@@ -16,8 +16,8 @@
 		},
 		{
 		  "type": "minecraft:item",
-		  "weight": 8,
-		  "name": "kamenridercraft:full_bottle"
+		  "weight": 5,
+		  "name": "kamenridercraft:nebula_gas_sample"
 		}
 	  ]
 	},

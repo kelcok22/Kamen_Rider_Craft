@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:lost_cobra_full_bottle"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:hazard_trigger"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 3,
+				  "name": "kamenridercraft:golden_bangle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 8,
+				  "name": "kamenridercraft:nebula_gas_sample"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

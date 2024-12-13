@@ -36,6 +36,8 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> BUILD_LOGO = ITEMS.register("build_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> NEBULA_GAS_SAMPLE = ITEMS.register("nebula_gas_sample",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULL_BOTTLE= ITEMS.register("full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","build_driver_belt")
@@ -434,6 +436,9 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
 					.ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> LOW_RABBIT_FULL_BOTTLE = ITEMS.register("low_rabbit_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.BANGLE_REFINED));
+
 	public static final DeferredItem<Item> FULLFULL_TANK_BOTTLE = ITEMS.register("fullfull_tank_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_tank","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -765,6 +770,42 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_BAT_FULL_BOTTLE= ITEMS.register("black_lost_bat_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_CD_FULL_BOTTLE= ITEMS.register("black_lost_cd_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_CASTLE_FULL_BOTTLE= ITEMS.register("black_lost_castle_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_KUWAGATA_FULL_BOTTLE= ITEMS.register("black_lost_kuwagata_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_FUKUROU_FULL_BOTTLE= ITEMS.register("black_lost_fukurou_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_SHIMAUMA_FULL_BOTTLE= ITEMS.register("black_lost_shimauma_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_SPANNER_FULL_BOTTLE= ITEMS.register("black_lost_spanner_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_HAMMER_FULL_BOTTLE= ITEMS.register("black_lost_hammer_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLACK_LOST_HASAMI_FULL_BOTTLE= ITEMS.register("black_lost_hasami_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> LOST_CASTLE_FULL_BOTTLE= ITEMS.register("lost_castle_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> LOST_KUWAGATA_FULL_BOTTLE= ITEMS.register("lost_kuwagata_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> LOST_FUKUROU_FULL_BOTTLE= ITEMS.register("lost_fukurou_full_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEAR_BI_KAISER = ITEMS.register("gear_bi_kaiser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bi","kaiser","blank",
