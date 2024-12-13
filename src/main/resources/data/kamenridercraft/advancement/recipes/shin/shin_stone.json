@@ -26,7 +26,8 @@
 	  "kamenridercraft:shin/shinlegs",
 	  "kamenridercraft:shin/grasshopper_dna",
 	  "kamenridercraft:shin/shin_logo",
-	  "kamenridercraft:decade/shin_card"
+	  "kamenridercraft:decade/shin_card",
+	  "kamenridercraft:zi_o/shin_ridewatch"
 	]
   },
   "sends_telemetry_event": false
