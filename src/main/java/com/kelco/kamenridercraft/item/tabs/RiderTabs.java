@@ -526,6 +526,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.RIDER_BLOCK.get(i));
             }
+            event.accept(Rider_Blocks.RABBIT_HUTCH_DOOR);
            // event.accept(Rider_Blocks.BLUE_ROSE.get());
 
         }else if(event.getTab() == RiderTabs.RiderdecorTab.get()) {

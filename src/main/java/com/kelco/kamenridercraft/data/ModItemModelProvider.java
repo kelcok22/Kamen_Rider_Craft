@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(Rider_Blocks.HELHEIM_FENCE, Rider_Blocks.HELHEIM_PLANKS);
 
         basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
+        basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
