@@ -390,6 +390,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.BUILD.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EVOL.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.TRILOBITE_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DODO_MAGIA_CHICK.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BATTLE_RAIDER.get(), BasicEntityRenderer::new);
