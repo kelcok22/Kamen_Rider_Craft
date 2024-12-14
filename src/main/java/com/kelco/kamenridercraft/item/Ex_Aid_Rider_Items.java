@@ -957,7 +957,7 @@ public class Ex_Aid_Rider_Items {
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",
