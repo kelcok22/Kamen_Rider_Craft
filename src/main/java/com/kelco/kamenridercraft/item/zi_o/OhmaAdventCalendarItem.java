@@ -81,7 +81,7 @@ public class OhmaAdventCalendarItem extends BaseItem {
                         if (!player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.geiz_majesty_2"));
                     }
                 } else if (belt == Zi_O_Rider_Items.BEYONDRIVER.get()) {
-                    if (form == Zi_O_Rider_Items.GINGA_FINALY_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_WAKUSEI_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_MIRIDEWATCH.get()) {
+                    if (form == Zi_O_Rider_Items.GINGA_FINALY_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_TAIYO_MIRIDEWATCH.get() || form == Zi_O_Rider_Items.GINGA_MIRIDEWATCH.get()) {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.wozgingafinaly"));
                     } else {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.woz"));
