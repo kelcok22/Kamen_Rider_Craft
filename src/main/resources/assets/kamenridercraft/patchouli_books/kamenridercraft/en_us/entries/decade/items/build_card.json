@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Build",
+	"icon": "kamenridercraft:build_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#build)Build$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/build_card"
+		}
+	]
+}

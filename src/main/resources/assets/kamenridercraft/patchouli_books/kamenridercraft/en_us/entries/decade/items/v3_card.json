@@ -2,7 +2,7 @@
 	"name": "KamenRide V3",
 	"icon": "kamenridercraft:v3_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 49,
+	"sortnum": 79,
 	"pages": [
 		{
 			"type": "patchouli:text",

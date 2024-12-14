@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide OOO Putotyra Combo",
+	"icon": "kamenridercraft:ooo_putotyra_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 104,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ooo_putotyra_card"
+		}
+	]
+}

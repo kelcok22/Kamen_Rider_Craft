@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used as the base item for most Gavv items"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:blank_gochizo",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/blank_gochizo"
 		}
 	]
 }

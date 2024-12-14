@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "Zi-O Arsenal",
+    "description": "Every weapon and tool used by the Zi-O Riders.",
+    "icon": "kamenridercraft:zikan_girade",
+    "sortnum": 3
+}

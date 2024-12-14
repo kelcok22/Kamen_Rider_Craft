@@ -2,7 +2,7 @@
 	"name": "KamenRide ZO",
 	"icon": "kamenridercraft:zo_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 60,
+	"sortnum": 90,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "KamenRide Shin",
 	"icon": "kamenridercraft:shin_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 59,
+	"sortnum": 89,
 	"pages": [
 		{
 			"type": "patchouli:text",

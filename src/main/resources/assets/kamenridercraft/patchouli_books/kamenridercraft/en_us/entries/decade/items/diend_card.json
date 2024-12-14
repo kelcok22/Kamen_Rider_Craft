@@ -2,7 +2,7 @@
 	"name": "KamenRide Diend",
 	"icon": "kamenridercraft:diend_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

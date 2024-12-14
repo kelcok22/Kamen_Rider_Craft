@@ -2,7 +2,7 @@
 	"name": "KamenRide Kuuga",
 	"icon": "kamenridercraft:kuuga_mighty_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

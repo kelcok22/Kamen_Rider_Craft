@@ -1,0 +1,16 @@
+{
+	"name": "Herculespader Sword",
+	"icon": "kamenridercraft:herculespader_sword",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Used by Blade's $(l:blade/riders/blade#herculespader)Herculespader$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/herculespader_sword"
+		}
+	]
+}

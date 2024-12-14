@@ -2,7 +2,7 @@
 	"name": "FormRide Den-O Gun Form",
 	"icon": "kamenridercraft:den_o_gun_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 40,
+	"sortnum": 70,
 	"pages": [
 		{
 			"type": "patchouli:text",

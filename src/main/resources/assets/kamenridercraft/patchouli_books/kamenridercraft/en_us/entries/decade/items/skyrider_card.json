@@ -2,7 +2,7 @@
 	"name": "KamenRide Skyrider",
 	"icon": "kamenridercraft:skyrider_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 54,
+	"sortnum": 84,
 	"pages": [
 		{
 			"type": "patchouli:text",

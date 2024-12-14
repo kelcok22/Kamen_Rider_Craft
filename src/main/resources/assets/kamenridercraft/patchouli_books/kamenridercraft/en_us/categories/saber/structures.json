@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Saber Structures",
+    "description": "All structures related to the show, Kamen Rider Saber.",
+    "icon": "kamenridercraft:sword_of_logos_bookshelf",
+    "sortnum": 6
+}

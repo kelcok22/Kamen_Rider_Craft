@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide Ghost Mugen Damashii",
+	"icon": "kamenridercraft:ghost_mugen_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 109,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ghost_mugen_card"
+		}
+	]
+}

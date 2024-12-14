@@ -1,0 +1,16 @@
+{
+	"name": "Candy Wrapper",
+	"icon": "kamenridercraft:candy_wrapper",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used to craft $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/candy_wrapper"
+		}
+	]
+}

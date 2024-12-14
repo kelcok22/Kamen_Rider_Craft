@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Agito Shining Form",
 	"icon": "kamenridercraft:agito_shining_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 65,
+	"sortnum": 95,
 	"pages": [
 		{
 			"type": "patchouli:text",

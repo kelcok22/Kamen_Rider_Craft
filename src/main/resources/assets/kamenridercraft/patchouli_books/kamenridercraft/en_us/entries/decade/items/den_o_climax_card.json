@@ -2,7 +2,7 @@
 	"name": "FormRide Den-O Climax Form",
 	"icon": "kamenridercraft:den_o_climax_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 42,
+	"sortnum": 72,
 	"pages": [
 		{
 			"type": "patchouli:text",

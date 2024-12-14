@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/reiwa",
+    "name": "Kamen Rider Saber",
+    "description": "Everything related to the show, Kamen Rider Saber.",
+    "icon": "kamenridercraft:saber_logo",
+    "sortnum": 1
+}

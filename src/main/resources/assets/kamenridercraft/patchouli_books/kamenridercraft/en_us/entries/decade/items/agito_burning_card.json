@@ -2,7 +2,7 @@
 	"name": "FormRide Agito Burning Form",
 	"icon": "kamenridercraft:agito_burning_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 31,
+	"sortnum": 61,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Wizard",
+	"icon": "kamenridercraft:wizard_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#wizard)Wizard$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/wizard_card"
+		}
+	]
+}

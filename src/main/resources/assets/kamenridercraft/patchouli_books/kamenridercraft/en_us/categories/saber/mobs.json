@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Saber Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Saber.",
+    "icon": "kamenridercraft:saber_logo",
+    "sortnum": 4
+}

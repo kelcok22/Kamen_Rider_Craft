@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Faiz Blaster Form",
 	"icon": "kamenridercraft:faiz_blaster_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 67,
+	"sortnum": 97,
 	"pages": [
 		{
 			"type": "patchouli:text",

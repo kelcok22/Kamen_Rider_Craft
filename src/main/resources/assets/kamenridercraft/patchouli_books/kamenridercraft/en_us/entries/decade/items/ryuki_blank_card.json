@@ -2,7 +2,7 @@
 	"name": "FormRide Ryuki Blank Form",
 	"icon": "kamenridercraft:ryuki_blank_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 32,
+	"sortnum": 62,
 	"pages": [
 		{
 			"type": "patchouli:text",

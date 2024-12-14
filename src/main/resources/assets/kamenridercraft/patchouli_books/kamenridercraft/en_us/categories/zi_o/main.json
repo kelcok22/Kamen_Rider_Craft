@@ -1,0 +1,7 @@
+{ 
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Zi-O",
+    "description": "Everything related to the show, Kamen Rider Zi-O.",
+    "icon": "kamenridercraft:zi_o_logo",
+    "sortnum": 34
+}

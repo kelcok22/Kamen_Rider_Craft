@@ -1,0 +1,19 @@
+{
+	"name": "Boonboomger Gochizo",
+	"icon": "kamenridercraft:boonboomger_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boonboomger_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

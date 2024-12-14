@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Ryuki Survive",
 	"icon": "kamenridercraft:ryuki_survive_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 66,
+	"sortnum": 96,
 	"pages": [
 		{
 			"type": "patchouli:text",

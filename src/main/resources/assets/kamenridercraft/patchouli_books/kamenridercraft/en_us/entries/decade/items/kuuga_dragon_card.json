@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Dragon Form",
 	"icon": "kamenridercraft:kuuga_dragon_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 20,
+	"sortnum": 50,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "KamenRide Hibiki",
 	"icon": "kamenridercraft:hibiki_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 15,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "FormRide Hibiki Kurenai",
 	"icon": "kamenridercraft:hibiki_kurenai_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 35,
+	"sortnum": 65,
 	"pages": [
 		{
 			"type": "patchouli:text",

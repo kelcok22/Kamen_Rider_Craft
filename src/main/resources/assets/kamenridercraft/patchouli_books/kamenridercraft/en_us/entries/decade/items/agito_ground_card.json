@@ -2,7 +2,7 @@
 	"name": "KamenRide Agito",
 	"icon": "kamenridercraft:agito_ground_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

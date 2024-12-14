@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Growing Form",
 	"icon": "kamenridercraft:kuuga_growing_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 19,
+	"sortnum": 49,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "KamenRide Riderman",
 	"icon": "kamenridercraft:riderman_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 50,
+	"sortnum": 80,
 	"pages": [
 		{
 			"type": "patchouli:text",

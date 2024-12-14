@@ -2,7 +2,7 @@
 	"name": "KamenRide Blade",
 	"icon": "kamenridercraft:blade_ace_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

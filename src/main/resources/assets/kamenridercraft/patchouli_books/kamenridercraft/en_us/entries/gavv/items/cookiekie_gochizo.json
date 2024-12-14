@@ -2,7 +2,7 @@
 	"name": "Cookiekie Gochizo",
 	"icon": "kamenridercraft:cookiekie_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cookiekie_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating cookies with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		}
 	]
 }

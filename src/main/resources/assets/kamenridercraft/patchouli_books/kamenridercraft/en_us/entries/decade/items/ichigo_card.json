@@ -2,7 +2,7 @@
 	"name": "KamenRide Ichigo",
 	"icon": "kamenridercraft:ichigo_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 47,
+	"sortnum": 77,
 	"pages": [
 		{
 			"type": "patchouli:text",

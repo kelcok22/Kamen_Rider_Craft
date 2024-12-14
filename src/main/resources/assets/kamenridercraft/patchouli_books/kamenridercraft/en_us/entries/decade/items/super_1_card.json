@@ -2,7 +2,7 @@
 	"name": "KamenRide Super-1",
 	"icon": "kamenridercraft:super_1_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 55,
+	"sortnum": 85,
 	"pages": [
 		{
 			"type": "patchouli:text",

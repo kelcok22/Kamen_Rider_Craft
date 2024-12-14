@@ -1,0 +1,19 @@
+{
+	"name": "Gift",
+	"icon": "kamenridercraft:gift",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Gives random Christmas items when opened"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gift",
+			"title": " ",
+			"text": "Obtained by sneaking with the Merry Christmas effect"
+		}
+	]
+}

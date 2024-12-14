@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide Ex-Aid Muteki Gamer",
+	"icon": "kamenridercraft:ex_aid_muteki_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 110,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ex_aid_muteki_card"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Rising Mighty",
 	"icon": "kamenridercraft:kuuga_rising_mighty_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 23,
+	"sortnum": 53,
 	"pages": [
 		{
 			"type": "patchouli:text",

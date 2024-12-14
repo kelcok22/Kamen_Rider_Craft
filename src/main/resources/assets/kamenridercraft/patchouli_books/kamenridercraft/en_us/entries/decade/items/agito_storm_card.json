@@ -2,7 +2,7 @@
 	"name": "FormRide Agito Storm Form",
 	"icon": "kamenridercraft:agito_storm_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 28,
+	"sortnum": 58,
 	"pages": [
 		{
 			"type": "patchouli:text",

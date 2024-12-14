@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide W",
+	"icon": "kamenridercraft:w_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#w)W$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/w_card"
+		}
+	]
+}

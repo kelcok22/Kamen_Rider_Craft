@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Rising Pegasus",
 	"icon": "kamenridercraft:kuuga_rising_pegasus_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 25,
+	"sortnum": 55,
 	"pages": [
 		{
 			"type": "patchouli:text",

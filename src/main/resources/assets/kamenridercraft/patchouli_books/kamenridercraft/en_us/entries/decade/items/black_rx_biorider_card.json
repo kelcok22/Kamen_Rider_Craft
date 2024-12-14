@@ -2,7 +2,7 @@
 	"name": "FormRide Black RX Bio Rider",
 	"icon": "kamenridercraft:black_rx_biorider_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 63,
+	"sortnum": 93,
 	"pages": [
 		{
 			"type": "patchouli:text",

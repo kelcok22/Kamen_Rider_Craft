@@ -2,7 +2,7 @@
 	"name": "KamenRide Glaive",
 	"icon": "kamenridercraft:glaive_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 76,
+	"sortnum": 117,
 	"pages": [
 		{
 			"type": "patchouli:text",

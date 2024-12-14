@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Kiva Emperor Form",
 	"icon": "kamenridercraft:kiva_emperor_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 72,
+	"sortnum": 102,
 	"pages": [
 		{
 			"type": "patchouli:text",

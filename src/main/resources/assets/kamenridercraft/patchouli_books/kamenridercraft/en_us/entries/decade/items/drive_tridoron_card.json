@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide Drive Type Tridoron",
+	"icon": "kamenridercraft:drive_tridoron_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 108,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/drive_tridoron_card"
+		}
+	]
+}
