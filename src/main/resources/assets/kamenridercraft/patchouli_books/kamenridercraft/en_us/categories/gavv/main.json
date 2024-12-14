@@ -1,7 +1,7 @@
 {
     "parent": "kamenridercraft:main/reiwa",
     "name": "Kamen Rider Gavv",
-    "description": "Everything related to the show, Kamen Rider Gavv. NOT YET OBTAINABLE!",
+    "description": "Everything related to the show, Kamen Rider Gavv.",
     "icon": "kamenridercraft:gavv_logo",
     "sortnum": 5
 }

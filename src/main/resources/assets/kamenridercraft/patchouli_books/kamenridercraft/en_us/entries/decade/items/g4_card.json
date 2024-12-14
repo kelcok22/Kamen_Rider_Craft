@@ -2,7 +2,7 @@
 	"name": "KamenRide G4",
 	"icon": "kamenridercraft:g4_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 73,
+	"sortnum": 114,
 	"pages": [
 		{
 			"type": "patchouli:text",

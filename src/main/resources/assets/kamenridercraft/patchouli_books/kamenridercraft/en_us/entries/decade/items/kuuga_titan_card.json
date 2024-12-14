@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Titan Form",
 	"icon": "kamenridercraft:kuuga_titan_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 22,
+	"sortnum": 52,
 	"pages": [
 		{
 			"type": "patchouli:text",

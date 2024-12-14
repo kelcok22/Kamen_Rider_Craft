@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Saber Arsenal",
+    "description": "Every weapon and tool used by the Saber Riders.",
+    "icon": "kamenridercraft:kaenken_rekka",
+    "sortnum": 3
+}

@@ -2,7 +2,7 @@
 	"name": "KamenRide Den-O",
 	"icon": "kamenridercraft:den_o_sword_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

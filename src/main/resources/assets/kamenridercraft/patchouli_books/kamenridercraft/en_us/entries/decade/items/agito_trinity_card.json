@@ -2,7 +2,7 @@
 	"name": "FormRide Agito Trinity Form",
 	"icon": "kamenridercraft:agito_trinity_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 30,
+	"sortnum": 60,
 	"pages": [
 		{
 			"type": "patchouli:text",

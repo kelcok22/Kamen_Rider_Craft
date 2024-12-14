@@ -2,7 +2,7 @@
 	"name": "KamenRide Kiva",
 	"icon": "kamenridercraft:kiva_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

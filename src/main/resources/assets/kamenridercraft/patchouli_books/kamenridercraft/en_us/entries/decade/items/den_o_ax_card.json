@@ -2,7 +2,7 @@
 	"name": "FormRide Den-O Ax Form",
 	"icon": "kamenridercraft:den_o_ax_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 39,
+	"sortnum": 69,
 	"pages": [
 		{
 			"type": "patchouli:text",

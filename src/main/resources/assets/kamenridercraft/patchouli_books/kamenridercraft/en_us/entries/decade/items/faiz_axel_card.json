@@ -2,7 +2,7 @@
 	"name": "FormRide Faiz Axel Form",
 	"icon": "kamenridercraft:faiz_axel_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 33,
+	"sortnum": 63,
 	"pages": [
 		{
 			"type": "patchouli:text",

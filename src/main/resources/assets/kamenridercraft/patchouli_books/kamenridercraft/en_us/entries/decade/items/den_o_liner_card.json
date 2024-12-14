@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Den-O Liner Form",
 	"icon": "kamenridercraft:den_o_liner_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 71,
+	"sortnum": 101,
 	"pages": [
 		{
 			"type": "patchouli:text",

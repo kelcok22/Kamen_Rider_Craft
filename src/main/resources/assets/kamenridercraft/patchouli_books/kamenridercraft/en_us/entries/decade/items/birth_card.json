@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Birth",
+	"icon": "kamenridercraft:birth_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/birth_card"
+		}
+	]
+}

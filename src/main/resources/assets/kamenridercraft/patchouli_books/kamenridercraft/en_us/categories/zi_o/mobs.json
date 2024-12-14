@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "Zi-O Mobs",
+    "description": "Every mob from or relating to the show, Kamen Rider Zi-O.",
+    "icon": "kamenridercraft:zi_o_logo",
+    "sortnum": 4
+}

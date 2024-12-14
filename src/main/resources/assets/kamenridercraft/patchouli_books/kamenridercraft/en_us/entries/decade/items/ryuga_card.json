@@ -2,7 +2,7 @@
 	"name": "KamenRide Ryuga",
 	"icon": "kamenridercraft:ryuga_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 74,
+	"sortnum": 115,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Saber Transformation Devices",
+    "description": "The transformation devices used by the Saber Riders.",
+    "icon": "kamenridercraft:seiken_swordriver_saber",
+    "sortnum": 1
+}

@@ -2,7 +2,7 @@
 	"name": "KamenRide Dark Decade",
 	"icon": "kamenridercraft:dark_decade_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

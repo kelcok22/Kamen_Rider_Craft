@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide Build Genius Form",
+	"icon": "kamenridercraft:build_genius_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 111,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/build_genius_card"
+		}
+	]
+}

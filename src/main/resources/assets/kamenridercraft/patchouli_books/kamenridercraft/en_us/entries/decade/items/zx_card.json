@@ -2,7 +2,7 @@
 	"name": "KamenRide ZX",
 	"icon": "kamenridercraft:zx_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 56,
+	"sortnum": 86,
 	"pages": [
 		{
 			"type": "patchouli:text",

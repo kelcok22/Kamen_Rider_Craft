@@ -2,7 +2,7 @@
 	"name": "FormRide Den-O Rod Form",
 	"icon": "kamenridercraft:den_o_rod_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 38,
+	"sortnum": 68,
 	"pages": [
 		{
 			"type": "patchouli:text",

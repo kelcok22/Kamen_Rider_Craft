@@ -2,7 +2,7 @@
 	"name": "Bakuen no senshi Card Warrior Card",
 	"icon": "kamenridercraft:bakuen_no_senshi",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 9,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

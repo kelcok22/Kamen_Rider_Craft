@@ -2,7 +2,7 @@
 	"name": "FormRide Kiva DoGaBaKi Form",
 	"icon": "kamenridercraft:kiva_dogabaki_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 46,
+	"sortnum": 76,
 	"pages": [
 		{
 			"type": "patchouli:text",

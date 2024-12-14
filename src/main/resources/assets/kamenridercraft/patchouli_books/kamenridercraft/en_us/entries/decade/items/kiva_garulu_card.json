@@ -2,7 +2,7 @@
 	"name": "FormRide Kiva Garulu Form",
 	"icon": "kamenridercraft:kiva_garulu_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 43,
+	"sortnum": 73,
 	"pages": [
 		{
 			"type": "patchouli:text",

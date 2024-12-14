@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "Zi-O Rider Items",
+    "description": "All Zi-O-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:zi_o_ridewatch",
+    "sortnum": 2
+}

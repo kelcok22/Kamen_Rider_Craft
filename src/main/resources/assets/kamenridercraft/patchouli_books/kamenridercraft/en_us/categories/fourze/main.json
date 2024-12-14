@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "Kamen Rider Fourze",
+    "description": "Everything related to the show, Kamen Rider Fourze.",
+    "icon": "kamenridercraft:fourze_logo",
+    "sortnum": 27
+}

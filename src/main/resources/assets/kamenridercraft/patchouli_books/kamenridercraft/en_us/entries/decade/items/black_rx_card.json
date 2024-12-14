@@ -2,7 +2,7 @@
 	"name": "KamenRide Black RX",
 	"icon": "kamenridercraft:black_rx_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 58,
+	"sortnum": 88,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "KamenRide J",
 	"icon": "kamenridercraft:j_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 61,
+	"sortnum": 91,
 	"pages": [
 		{
 			"type": "patchouli:text",

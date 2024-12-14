@@ -2,7 +2,7 @@
 	"name": "FormRide Kuuga Pegasus Form",
 	"icon": "kamenridercraft:kuuga_pegasus_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 21,
+	"sortnum": 51,
 	"pages": [
 		{
 			"type": "patchouli:text",

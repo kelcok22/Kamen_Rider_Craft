@@ -1,0 +1,19 @@
+{
+	"name": "Final Kamen Terminal K-Touch 21",
+	"icon": "kamenridercraft:k_touch_21",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!- (2021, web series)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#complete_21)Complete Form 21$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:k_touch_21",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

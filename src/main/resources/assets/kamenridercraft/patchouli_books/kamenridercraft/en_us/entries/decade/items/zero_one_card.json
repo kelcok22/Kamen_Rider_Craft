@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Zero-One",
+	"icon": "kamenridercraft:zero_one_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX K-Touch 21 (2021, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/zero_one_card"
+		}
+	]
+}

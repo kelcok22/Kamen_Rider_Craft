@@ -99,6 +99,18 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boonboomger",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:boonboomger_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"name": "Boonboomger Form",
+			"text": "Accessed with the $(l:gavv/items/boonboomger_gochizo)Boonboomger Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gavv",
+			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost II"
 		}
 	]
 }

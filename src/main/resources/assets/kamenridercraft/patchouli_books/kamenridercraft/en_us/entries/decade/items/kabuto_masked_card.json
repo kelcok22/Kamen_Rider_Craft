@@ -2,7 +2,7 @@
 	"name": "FormRide Kabuto Masked Form",
 	"icon": "kamenridercraft:kabuto_masked_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 36,
+	"sortnum": 66,
 	"pages": [
 		{
 			"type": "patchouli:text",

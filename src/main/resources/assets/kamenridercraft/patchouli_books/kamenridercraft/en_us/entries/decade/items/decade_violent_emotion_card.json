@@ -2,7 +2,7 @@
 	"name": "KamenRide Decade Violent Emotion",
 	"icon": "kamenridercraft:decade_violent_emotion_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

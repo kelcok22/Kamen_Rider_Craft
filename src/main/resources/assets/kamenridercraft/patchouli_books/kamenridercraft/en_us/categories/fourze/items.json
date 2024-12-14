@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:fourze/main",
+    "name": "Fourze Rider Items",
+    "description": "All Fourze-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:rocket_switch",
+    "sortnum": 2
+}

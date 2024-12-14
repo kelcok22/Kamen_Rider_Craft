@@ -2,18 +2,18 @@
 	"name": "Doumaru Gochizo",
 	"icon": "kamenridercraft:doumaru_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Valen's $(l:gavv/riders/valen#doumaru)Doumaru$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:doumaru_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating $(l:misc/items/donut)Donuts$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		}
 	]
 }

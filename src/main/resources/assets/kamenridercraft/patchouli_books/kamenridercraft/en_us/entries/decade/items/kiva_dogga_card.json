@@ -2,7 +2,7 @@
 	"name": "FormRide Kiva Dogga Form",
 	"icon": "kamenridercraft:kiva_dogga_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 45,
+	"sortnum": 75,
 	"pages": [
 		{
 			"type": "patchouli:text",

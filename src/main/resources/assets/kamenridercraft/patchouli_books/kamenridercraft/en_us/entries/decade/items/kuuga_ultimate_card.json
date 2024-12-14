@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Kuuga Ultimate Form",
 	"icon": "kamenridercraft:kuuga_ultimate_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 64,
+	"sortnum": 94,
 	"pages": [
 		{
 			"type": "patchouli:text",

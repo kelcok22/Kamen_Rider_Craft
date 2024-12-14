@@ -2,7 +2,7 @@
 	"name": "KamenRide Ryuki",
 	"icon": "kamenridercraft:ryuki_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

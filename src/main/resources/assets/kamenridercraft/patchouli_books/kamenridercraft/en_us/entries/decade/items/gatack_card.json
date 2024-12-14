@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Gatack",
+	"icon": "kamenridercraft:gatack_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/gatack_card"
+		}
+	]
+}

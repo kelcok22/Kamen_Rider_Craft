@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide Wizard Infinity Style",
+	"icon": "kamenridercraft:wizard_infinity_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 106,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/wizard_infinity_card"
+		}
+	]
+}

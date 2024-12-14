@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide Ghost",
+	"icon": "kamenridercraft:ghost_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ghost)Ghost$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ghost_card"
+		}
+	]
+}

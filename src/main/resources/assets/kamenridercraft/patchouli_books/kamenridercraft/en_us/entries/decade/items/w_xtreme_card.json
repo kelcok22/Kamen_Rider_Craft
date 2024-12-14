@@ -1,0 +1,16 @@
+{
+	"name": "Final KamenRide W CycloneJokerXtreme",
+	"icon": "kamenridercraft:w_xtreme_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 103,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/w_xtreme_card"
+		}
+	]
+}

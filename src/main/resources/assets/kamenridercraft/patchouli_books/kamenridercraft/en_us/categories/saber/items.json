@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Saber Rider Items",
+    "description": "All Saber-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:brave_dragon_wonder_ride_book",
+    "sortnum": 2
+}

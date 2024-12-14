@@ -2,7 +2,7 @@
 	"name": "FormRide Kiva Basshaa Form",
 	"icon": "kamenridercraft:kiva_basshaa_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 44,
+	"sortnum": 74,
 	"pages": [
 		{
 			"type": "patchouli:text",

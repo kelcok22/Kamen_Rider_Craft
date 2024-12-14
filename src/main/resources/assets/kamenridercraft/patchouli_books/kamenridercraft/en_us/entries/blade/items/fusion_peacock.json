@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:fusion_eagle",
+			"item": "kamenridercraft:fusion_peacock",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
 		}

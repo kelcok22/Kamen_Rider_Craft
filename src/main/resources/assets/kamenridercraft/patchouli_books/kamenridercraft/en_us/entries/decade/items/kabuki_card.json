@@ -2,7 +2,7 @@
 	"name": "KamenRide Kabuki",
 	"icon": "kamenridercraft:kabuki_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 77,
+	"sortnum": 118,
 	"pages": [
 		{
 			"type": "patchouli:text",

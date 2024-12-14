@@ -2,7 +2,7 @@
 	"name": "FormRide Blade Jack Form",
 	"icon": "kamenridercraft:blade_jack_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 34,
+	"sortnum": 64,
 	"pages": [
 		{
 			"type": "patchouli:text",

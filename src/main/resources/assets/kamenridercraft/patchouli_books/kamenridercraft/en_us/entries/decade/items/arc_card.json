@@ -2,7 +2,7 @@
 	"name": "KamenRide Arc",
 	"icon": "kamenridercraft:arc_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 79,
+	"sortnum": 120,
 	"pages": [
 		{
 			"type": "patchouli:text",

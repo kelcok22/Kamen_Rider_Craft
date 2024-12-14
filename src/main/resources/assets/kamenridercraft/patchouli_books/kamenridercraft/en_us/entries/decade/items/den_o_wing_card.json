@@ -2,7 +2,7 @@
 	"name": "FormRide Den-O Wing Form",
 	"icon": "kamenridercraft:den_o_wing_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 41,
+	"sortnum": 71,
 	"pages": [
 		{
 			"type": "patchouli:text",

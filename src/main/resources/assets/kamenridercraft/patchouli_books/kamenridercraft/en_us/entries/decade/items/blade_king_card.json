@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Blade King Form",
 	"icon": "kamenridercraft:blade_king_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 68,
+	"sortnum": 98,
 	"pages": [
 		{
 			"type": "patchouli:text",

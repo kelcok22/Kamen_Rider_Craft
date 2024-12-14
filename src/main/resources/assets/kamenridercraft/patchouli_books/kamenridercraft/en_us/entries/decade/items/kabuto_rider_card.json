@@ -2,7 +2,7 @@
 	"name": "KamenRide Kabuto",
 	"icon": "kamenridercraft:kabuto_rider_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

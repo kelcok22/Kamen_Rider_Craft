@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "Zi-O Transformation Devices",
+    "description": "The transformation devices used by the Zi-O Riders.",
+    "icon": "kamenridercraft:ziku_driver_zi_o",
+    "sortnum": 1
+}

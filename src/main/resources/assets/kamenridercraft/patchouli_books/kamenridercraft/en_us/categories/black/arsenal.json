@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black/main",
+    "name": "Satansaber",
+    "description": "",
+    "icon": "kamenridercraft:satansaber",
+    "sortnum": 3
+}

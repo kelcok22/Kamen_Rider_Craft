@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "Northern Base",
+    "description": "",
+    "icon": "kamenridercraft:blank_wonder_ride_book",
+    "sortnum": 5
+}

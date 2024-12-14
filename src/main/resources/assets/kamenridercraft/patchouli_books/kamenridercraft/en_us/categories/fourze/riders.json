@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:fourze/main",
+    "name": "Fourze Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the show, Kamen Rider Fourze.",
+    "icon": "kamenridercraft:fourze_head",
+    "sortnum": 0
+}

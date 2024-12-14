@@ -2,7 +2,7 @@
 	"name": "KamenRide Skull",
 	"icon": "kamenridercraft:skull_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 80,
+	"sortnum": 121,
 	"pages": [
 		{
 			"type": "patchouli:text",

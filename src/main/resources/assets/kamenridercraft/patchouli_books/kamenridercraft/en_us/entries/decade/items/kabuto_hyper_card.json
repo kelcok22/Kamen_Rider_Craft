@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Kabuto Hyper Form",
 	"icon": "kamenridercraft:kabuto_hyper_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 70,
+	"sortnum": 100,
 	"pages": [
 		{
 			"type": "patchouli:text",

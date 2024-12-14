@@ -2,7 +2,7 @@
 	"name": "KamenRide Amazon",
 	"icon": "kamenridercraft:amazon_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 52,
+	"sortnum": 82,
 	"pages": [
 		{
 			"type": "patchouli:text",

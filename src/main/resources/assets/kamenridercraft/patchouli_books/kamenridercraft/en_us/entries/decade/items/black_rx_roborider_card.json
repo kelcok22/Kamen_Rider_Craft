@@ -2,7 +2,7 @@
 	"name": "FormRide Black RX Robo Rider",
 	"icon": "kamenridercraft:black_rx_roborider_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 62,
+	"sortnum": 92,
 	"pages": [
 		{
 			"type": "patchouli:text",

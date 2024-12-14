@@ -1,0 +1,16 @@
+{
+	"name": "KamenRide OOO",
+	"icon": "kamenridercraft:ooo_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ooo)OOO$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ooo_card"
+		}
+	]
+}

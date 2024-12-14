@@ -2,7 +2,7 @@
 	"name": "Final KamenRide Armed Hibiki",
 	"icon": "kamenridercraft:armed_hibiki_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 69,
+	"sortnum": 99,
 	"pages": [
 		{
 			"type": "patchouli:text",

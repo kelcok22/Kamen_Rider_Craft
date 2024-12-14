@@ -1,0 +1,152 @@
+{
+	"name": "Kamen Rider Decade",
+	"icon": "kamenridercraft:neo_decadriver",
+	"category": "kamenridercraft:decade/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:decade/items/decade_card)KamenRide Decade$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "complete_21",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_21\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Complete Form 21",
+			"text": "Accessed with the $(l:decade/items/k_touch_21)Final Kamen Terminal K-Touch 21$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!- (2021, web series)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "w",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade W",
+			"text": "Accessed with the $(l:decade/items/w_card)KamenRide W$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade OOO",
+			"text": "Accessed with the $(l:decade/items/ooo_card)KamenRide OOO$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Fourze",
+			"text": "Accessed with the $(l:decade/items/fourze_card)KamenRide Fourze$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Wizard",
+			"text": "Accessed with the $(l:decade/items/wizard_card)KamenRide Wizard$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Gaim",
+			"text": "Accessed with the $(l:decade/items/gaim_card)KamenRide Gaim$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Drive",
+			"text": "Accessed with the $(l:decade/items/drive_card)KamenRide Drive$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Ghost",
+			"text": "Accessed with the $(l:decade/items/ghost_card)KamenRide Ghost$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ex-aid",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Ex-Aid",
+			"text": "Accessed with the $(l:decade/items/ex_aid_card)KamenRide Ex-Aid$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "build",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Build",
+			"text": "Accessed with the $(l:decade/items/build_card)KamenRide Build$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zi-o",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"name": "Decade Zi-O",
+			"text": "Accessed with the $(l:decade/items/zi_o_card)KamenRide Zi-O$(/l) card"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Decade",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		}
+	]
+}
