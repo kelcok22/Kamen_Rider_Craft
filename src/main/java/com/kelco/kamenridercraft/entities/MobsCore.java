@@ -687,6 +687,7 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> EVOL_SPAWN_EGG = ITEMS.register("evol_spawn_egg",
             () -> new DeferredSpawnEggItem(EVOL, 0x8f091f, 0xe8c70c, new Item.Properties()));
 
+
     public static final DeferredHolder<EntityType<?>, EntityType<GingaEntity>> GINGA = MOBLIST.register("ginga",
             () -> EntityType.Builder.of(GingaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ginga_mob"));
 
