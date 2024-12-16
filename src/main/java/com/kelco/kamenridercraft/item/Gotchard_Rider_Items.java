@@ -278,15 +278,26 @@ public class Gotchard_Rider_Items {
      * neminemoon
      * firemars
      * grandsaturn
-     * the_sun
-     * jupitta
+     */
+
+	 public static final DeferredItem<Item> THE_SUN_RIDE_CHEMY_CARD = ITEMS.register("the_sun_ride_chemy_card",
+			 () -> new RiderFormChangeItem(new Item.Properties(),0,"","majade","alchemisdriver_belt",
+					 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					 new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+     /* jupitta
      * kuroana
      * gaiard
      * 
      * gigabaham
      * macentaurus
-     * unicon
-     * vanfenrir
+     */
+
+	public static final DeferredItem<Item> UNICON_RIDE_CHEMY_CARD = ITEMS.register("unicon_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),THE_SUN_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	/* vanfenrir
      * inphoenix
      * yoacerberus
      * haodin
@@ -396,6 +407,9 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> GOTCHARDRIVER_DAYBREAK = ITEMS.register("gotchardriver_daybreak",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gotchard_daybreak", HOPPER1_RIDE_CHEMY_CARD_DAYBREAK ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+	public static final DeferredItem<Item> ALCHEMISDRIVER = ITEMS.register("alchemisdriver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"majade", THE_SUN_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> VALVARADRAW_BUCKLE = ITEMS.register("valvaradraw_buckle",
     		() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
