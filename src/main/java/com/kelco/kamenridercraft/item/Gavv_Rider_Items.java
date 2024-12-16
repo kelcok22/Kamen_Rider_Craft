@@ -26,7 +26,7 @@ public class Gavv_Rider_Items {
 	public static List<Item> SNACK= new ArrayList<Item>();
 	public static List<Item> MARSHMALLOW= new ArrayList<Item>();
 	public static List<Item> CHOCO= new ArrayList<Item>();
-	
+	public static List<Item> CANDY= new ArrayList<Item>();
     	  
 	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<Item>();
 
@@ -102,10 +102,17 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
-					.AddToList(MARSHMALLOW,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(CANDY,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> BUSHEL_GOCHIZO = ITEMS.register("bushel_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bushel","valen","henshin_belt_gavv_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
+					.AddCompatibilityList(new String[] {"gavv"}).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_doumaru","do_not_work","valenbuckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_doumaru","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
@@ -113,6 +120,19 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHARAPAKI_GOCHIZO = ITEMS.register("charapaki_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_charapaki","gavv","henshin_belt_gavv_belt_chocodan",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHARAPAKI_GOCHIZO_SPECIAL = ITEMS.register("charapaki_gochizo_special",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_charapaki_special","gavv","henshin_belt_gavv_belt_chocodan",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> BOONBOOMGER_GOCHIZO = ITEMS.register("boonboomger_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boonboomger","gavv","henshin_belt_gavv_belt",
@@ -135,10 +155,10 @@ public class Gavv_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gavv",POPPINGUMMY_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
-	//.Override_belt_text("valenbuckle_belt")
+
 	public static final DeferredItem<Item> VALENBUCKLE = ITEMS.register("valenbuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+					.Override_belt_text("valenbuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
