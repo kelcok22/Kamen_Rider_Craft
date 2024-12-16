@@ -38,9 +38,10 @@ public class ChristmasEffect extends MobEffect {
 			if (pLivingEntity.level() instanceof ServerLevel level) {
 				if (pLivingEntity instanceof Player player) {
 
-					if (player.isShiftKeyDown()&pAmplifier!=9){
-						player.drop(new ItemStack(Miscellaneous_Rider_Items.GIFT.get(),pAmplifier+1),true);
-						player.addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 120, 9,false,false));
+					if (pAmplifier!=9){
+						//player.drop(new ItemStack(Miscellaneous_Rider_Items.GIFT.get(),pAmplifier+1),true);
+						player.addItem(new ItemStack(Miscellaneous_Rider_Items.GIFT.get(),pAmplifier+1));
+						player.addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 5200, 9,false,false));
 					}
 
 

@@ -164,7 +164,15 @@ public class DesireDriverItem  extends RiderDriverItem {
 		if (get_Form_Item(belt,2)==Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get())set_Form_Item(belt, Modded_item_core.BLANK_FORM.get(), 2);
 		
 		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_OSAKA.get()&get_Form_Item(belt,2)!=Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
-		
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_FUKUOKA.get()&get_Form_Item(belt,2)!=Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_NAGOYA.get()&get_Form_Item(belt,2)!=Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_TOKYO.get()&get_Form_Item(belt,2)!=Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_OSAKA.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_FUKUOKA.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_NAGOYA.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+		if (get_Form_Item(belt,1)==Geats_Rider_Items.GEATS_CORE_ID_TOKYO.get()&get_Form_Item(belt,3)!=Geats_Rider_Items.BOOST_RAISE_BUCKLE.get())set_Form_Item(belt, Geats_Rider_Items.GEATS_CORE_ID.get(), 1);
+
 		Boolean isBujin= true;
 		if (get_Form_Item(belt,2)==Geats_Rider_Items.BOOST_RAISE_BUCKLE.get()) isBujin = false;
 		else if (get_Form_Item(belt,2)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get())  isBujin = false;
