@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.ex_aid;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.Config;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
@@ -94,6 +95,11 @@ public class GamerDriverItem extends RiderDriverItem {
 
 		else {
 			RiderDriverItem belt = ((RiderDriverItem)itemstack.getItem());
+			if (belt==Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()&get_Form_Item(itemstack,1)==Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT_LV_1.get()
+			&rider.hasEffect(Effect_core.CHRISTMAS)) {
+				return riderName+"_lv1_christmas";
+			}
+
 			if (belt==Ex_Aid_Rider_Items.GAMER_DRIVER_SNIPE.get()) {
 				if (get_Form_Item(itemstack,2)==Ex_Aid_Rider_Items.JET_COMBAT_GASHAT.get()||
 						get_Form_Item(itemstack,2)==Ex_Aid_Rider_Items.BANG_BANG_TANK_GASHAT.get()||
