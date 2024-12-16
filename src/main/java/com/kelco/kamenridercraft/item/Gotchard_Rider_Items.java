@@ -6,7 +6,9 @@ import java.util.List;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.geats.MissionBoxItem;
 import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -316,6 +318,12 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> TONAKAILINER_RIDE_CHEMY_CARD = ITEMS.register("tonakailiner_ride_chemy_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty","gotchard","gotchardriver_belt",
