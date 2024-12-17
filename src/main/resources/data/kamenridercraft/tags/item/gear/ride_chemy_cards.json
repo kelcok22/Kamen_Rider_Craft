@@ -2,8 +2,11 @@
   "values": [
 	"#kamenridercraft:gear/form_items/gotchard",
 	"kamenridercraft:madwheel_ride_chemy_card",
+	"#kamenridercraft:gear/form_items/majade",
 	"#kamenridercraft:gear/form_items/valvarad",
 	"#kamenridercraft:gear/replichemy_cards",
-	"#kamenridercraft:gear/form_items/gotchard_daybreak"
+	"#kamenridercraft:gear/form_items/gotchard_daybreak",
+	"kamenridercraft:santaclaus_ride_chemy_card",
+	"kamenridercraft:tonakailiner_ride_chemy_card"
   ]
 }
