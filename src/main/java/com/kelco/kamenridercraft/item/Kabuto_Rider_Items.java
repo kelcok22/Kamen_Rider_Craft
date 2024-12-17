@@ -222,11 +222,11 @@ public class Kabuto_Rider_Items {
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
                     
         public static final DeferredItem<Item> KABUTOHELMET = ITEMS.register("kabutohead",
-                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> KABUTOCHESTPLATE = ITEMS.register("kabutotroso",
-                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> KABUTOLEGGINGS = ITEMS.register("kabutolegs",
-                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
 
             
         public static final DeferredItem<Item> KABUTO_RIDER_BELT = ITEMS.register("kabuto_rider_belt",
