@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:metal_tank_tank_full_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:metal_full_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 5,
+				  "name": "kamenridercraft:full_bottle"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
