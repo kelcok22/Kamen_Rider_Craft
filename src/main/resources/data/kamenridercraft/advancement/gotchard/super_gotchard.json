@@ -1,0 +1,86 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:ufo_x_ride_chemy_card"
+	},
+	"title": "Rising Fighter",
+	"description": "Transform into a Super Gotchard form",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/gotchard",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gotchard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gotchard_torso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gotchard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gotchardriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:ufo_x_ride_chemy_card\"}"
+              }
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gotchard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gotchard_torso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gotchard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gotchardriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:x_rex_ride_chemy_card\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  },
+  "requirements": [
+    [
+      "1",
+      "2"
+    ]
+  ]
+}

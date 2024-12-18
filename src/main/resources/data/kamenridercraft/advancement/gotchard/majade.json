@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:valvarusher"
+	  "id": "kamenridercraft:alchemisdriver"
 	},
-	"title": "What a ridiculous joke.",
-	"description": "Transform into Valvarad",
+	"title": "As Above, So Below",
+	"description": "Transform into Kamen Rider Majade",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/majade",
+  "parent": "kamenridercraft:gotchard/gotchard",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:valvaradraw_buckle"
+				"kamenridercraft:alchemisdriver"
 			  ]
 			}
 		  }
