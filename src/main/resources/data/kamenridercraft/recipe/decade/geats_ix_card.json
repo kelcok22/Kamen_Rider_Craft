@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:geats_card"
+	}, 
+	{
+	  "item": "kamenridercraft:boost_markiii_raise_buckle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:geats_ix_card"
+  }
+}
