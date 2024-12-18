@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:touto_guardian",
+  "spawners": {
+	"type": "kamenridercraft:touto_guardian",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 6
+  }
+}
