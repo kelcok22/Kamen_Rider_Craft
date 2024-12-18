@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft.events;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoField;
 import java.util.*;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -42,9 +44,12 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CakeBlock;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.*;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -56,6 +61,7 @@ import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
@@ -75,6 +81,14 @@ public class ModCommonEvents {
 			if (event.getEntity().level().dimension() == MOON) {
 				event.getEntity().addEffect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 30, 7, false, false));
 			}
+
+			LocalDate localdate = LocalDate.now();
+			int i = localdate.get(ChronoField.DAY_OF_MONTH);
+			int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+			if (j == 12 && i > 22 && i < 28 ) {
+				event.getEntity().addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 30, 0, false, false));
+			}
+
 			Entity entity = event.getEntity();
 		}
 
@@ -112,6 +126,12 @@ public class ModCommonEvents {
 				return Gavv_Rider_Items.COOKIEKIE_GOCHIZO.get();
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/doughnut")))){
 				return Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_type_for_gochizo/candy")))){
+				int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
+				return Gavv_Rider_Items.CANDY.get(rand);
+			}else if (itemstack.is(Blocks.CAKE.asItem())){
+				int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
+				return Gavv_Rider_Items.CANDY.get(rand);
 			}
 			return Items.APPLE;
 		}
@@ -133,7 +153,10 @@ public class ModCommonEvents {
 			 }
 		}
 
-/*
+
+
+
+		/*
 		@SubscribeEvent
 		// Heals an entity by half a heart every time they jump.
 		public void onLivingJump(LivingEvent.LivingJumpEvent event) {
