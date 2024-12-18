@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,10 @@ public class GiftItem extends BaseItem {
 	public GiftItem(Properties properties)
 	{
 		super(properties);
+		GIFTS.add(Blocks.CAKE.asItem());
+		GIFTS.add(Items.COAL.asItem());
+		GIFTS.add(Items.COAL.asItem());
+		GIFTS.add(Items.COAL.asItem());
 	}
 
 	 private Item  GiftDrop() {
