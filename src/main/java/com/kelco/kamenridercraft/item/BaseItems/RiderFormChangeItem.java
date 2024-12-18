@@ -6,14 +6,9 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import org.checkerframework.checker.units.qual.radians;
-
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.mojang.brigadier.StringReader;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 
 import net.minecraft.resources.ResourceLocation;
@@ -79,6 +74,8 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem NEED_FORM_SLOT_3;
     private RiderFormChangeItem NEED_FORM_SLOT_4;
 
+    private Boolean IGNORE_BELT_TEXT = false;
+
     private int Store_num =1;
 
     public RiderFormChangeItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
@@ -115,6 +112,10 @@ public class RiderFormChangeItem extends BaseItem {
 
     public String getBeltTex() {
         return BELT_TEX;
+    }
+
+    public Boolean getIgnoreOverrideBeltText() {
+        return IGNORE_BELT_TEXT;
     }
 
     public String get_Belt_Model() {
@@ -273,6 +274,10 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem  ignoreOverrideBeltText() {
+        IGNORE_BELT_TEXT =true;
+        return this;
+    }
     public RiderFormChangeItem addNeedForm(Item  item, int slot) {
 
         if (slot==1)NEED_FORM_SLOT_1=((RiderFormChangeItem)item);

@@ -135,7 +135,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem)itemstack.getItem()).BELT_TEXT;
-            if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
+            if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null||get_Form_Item(itemstack,1).getIgnoreOverrideBeltText()) {
                 belt = get_Form_Item(itemstack,1).getBeltTex();
             }
             return "belts/"+belt;
