@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:hokuto_guardian",
+  "spawners": {
+	"type": "kamenridercraft:hokuto_guardian",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 6
+  }
+}

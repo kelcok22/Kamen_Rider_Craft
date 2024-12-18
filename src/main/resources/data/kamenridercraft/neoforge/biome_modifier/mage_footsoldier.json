@@ -3,7 +3,7 @@
   "biomes": "minecraft:warped_forest",
   "spawners": {
 	"type": "kamenridercraft:mage_footsoldier",
-	"weight": 15,
+	"weight": 7,
 	"minCount": 1,
 	"maxCount": 4
   }
