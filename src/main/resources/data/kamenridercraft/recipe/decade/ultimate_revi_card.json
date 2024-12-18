@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:revi_card"
+	}, 
+	{
+	  "item": "kamenridercraft:giffard_rex_vistamp"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:ultimate_revi_card"
+  }
+}

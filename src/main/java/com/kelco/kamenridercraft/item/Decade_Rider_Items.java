@@ -247,6 +247,24 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> ZERO_ONE_CARD = ITEMS.register("zero_one_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SABER_CARD = ITEMS.register("saber_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> REVI_CARD = ITEMS.register("revi_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> VICE_CARD = ITEMS.register("vice_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> GEATS_CARD = ITEMS.register("geats_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> GOTCHARD_CARD = ITEMS.register("gotchard_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> GAVV_CARD = ITEMS.register("gavv_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
 	public static final DeferredItem<Item> G3_CARD = ITEMS.register("g3_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
@@ -682,6 +700,16 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> GRAND_ZI_O_CARD = ITEMS.register("grand_zi_o_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ZERO_TWO_CARD = ITEMS.register("zero_two_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> XROSS_SABER_CARD = ITEMS.register("xross_saber_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> ULTIMATE_REVI_CARD = ITEMS.register("ultimate_revi_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> ULTIMATE_VICE_CARD = ITEMS.register("ultimate_vice_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> GEATS_IX_CARD = ITEMS.register("geats_ix_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> RAINBOW_GOTCHARD_CARD = ITEMS.register("rainbow_gotchard_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> G4_CARD = ITEMS.register("g4_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
