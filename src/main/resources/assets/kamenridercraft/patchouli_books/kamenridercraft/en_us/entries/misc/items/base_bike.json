@@ -2,7 +2,7 @@
 	"name": "Base Bike",
 	"icon": "kamenridercraft:base_bike",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

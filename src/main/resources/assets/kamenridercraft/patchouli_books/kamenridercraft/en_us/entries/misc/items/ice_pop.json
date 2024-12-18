@@ -2,7 +2,7 @@
 	"name": "Ice Pops",
 	"icon": "kamenridercraft:icepop1",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

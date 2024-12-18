@@ -26,6 +26,10 @@ public class Modded_item_core {
     public static final DeferredItem<Item>  RIDER_CIRCUIT = ITEMS.register("rider_circuit",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item>  VIENNA_COFFEE= ITEMS.register("vienna_coffee",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).alwaysEdible().build()))
+                    .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
+
     public static final DeferredItem<Item>  ICE_POP = ITEMS.register("icepop1",
             () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
@@ -40,7 +44,7 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MAYO= ITEMS.register("mayo",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(Effect_core.LOW_GRAVITY, 500, 2), 1.0F).build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(Effect_core.LOW_GRAVITY, 500, 2), 1.0F).build()))
                     .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
