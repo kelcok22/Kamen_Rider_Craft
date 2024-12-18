@@ -3491,6 +3491,9 @@
 "item.kamenridercraft.charapaki_gochizo": "Charapaki Gochizo",
 "item.kamenridercraft.charapaki_gochizo_special": "Charapaki Gochizo (Special Ver.)",
 "item.kamenridercraft.bushel_gochizo": "Bushel Gochizo",
+  "item.kamenridercraft.caking_gochizo": "Caking Gochizo",
+
+  "item.kamenridercraft.poppingummy_gochizo_charadeco_ver": "Poppingummy Gochizo (Charadeco ver.)",
 
   "item.kamenridercraft.boonboomger_gochizo": "Boonboomger Gochizo",
 
@@ -4001,6 +4004,7 @@
 
   "block.kamenridercraft.steel_ladder": "Steel Ladder",
   "block.kamenridercraft.rabbit_hutch_ladder": "Rabbit Hutch Ladder",
+  "block.kamenridercraft.rabbit_hutch_door": "Rabbit Hutch Door",
 
   "block.kamenridercraft.helheim_leaves": "Helheim Leaves",
   "block.kamenridercraft.helheim_log": "Helheim Log",
