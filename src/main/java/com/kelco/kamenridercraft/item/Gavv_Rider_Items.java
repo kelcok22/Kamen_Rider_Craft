@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -105,6 +106,15 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
 					.AddToList(CANDY,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> VROCAN_GOCHIZO = ITEMS.register("vrocan_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gurucan","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> BAKUCAN_GOCHIZO = ITEMS.register("bakucan_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bakucan","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> BUSHEL_GOCHIZO = ITEMS.register("bushel_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bushel","valen","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -138,6 +148,10 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
 					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO_CHARADECO = ITEMS.register("poppingummy_gochizo_charadeco_ver",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_gavv_belt")
+					.AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BOONBOOMGER_GOCHIZO = ITEMS.register("boonboomger_gochizo",
