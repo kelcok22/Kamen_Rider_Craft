@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "majade",
+  "pattern": [
+	"XXX",
+	"HXS",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"H": {
+	  "item": "kamenridercraft:unicon_ride_chemy_card"
+	},
+	"S": {
+	  "item": "kamenridercraft:the_sun_ride_chemy_card"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:alchemisdriver"
+  }
+}
