@@ -2,7 +2,7 @@
 	"name": "Gift",
 	"icon": "kamenridercraft:gift",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

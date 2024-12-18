@@ -248,11 +248,11 @@ public class Miscellaneous_Rider_Items {
 		    		() -> new GashaTicketItem(new Item.Properties()).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> CANDY = ITEMS.register("candy",
-					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(MobEffects.DIG_SPEED, 500, 0), 1.0F).build()))
+					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 0), 1.0F).build()))
 					.AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 		    
 		    public static final DeferredItem<Item> ENERGY_DRINK = ITEMS.register("energy_drink",
-					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
+					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
 							.SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 

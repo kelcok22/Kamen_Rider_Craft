@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.Config;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import net.minecraft.ChatFormatting;
@@ -95,7 +96,7 @@ public class KintarosEntity extends BaseAllyEntity {
 	      ItemStack itemstack = p_30412_.getItemInHand(p_30413_);
 		  Level level = this.level();
 		  if (level.isClientSide) {
-	         boolean flag = this.isOwnedBy(p_30412_) || this.isTame() || itemstack.is(Items.PUMPKIN_PIE) && !this.isTame() && !this.isAngry();
+	         boolean flag = this.isOwnedBy(p_30412_) || this.isTame() || itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isTame() && !this.isAngry();
 	         return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
 	      } else if (this.isTame()) {
 	         if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
@@ -140,7 +141,7 @@ public class KintarosEntity extends BaseAllyEntity {
 	               return interactionresult;
 	            }
 	         }
-	      } else if (itemstack.is(Items.PUMPKIN_PIE) && !this.isAngry()) {
+	      } else if (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isAngry()) {
 	         if (!p_30412_.getAbilities().instabuild) {
 	            itemstack.shrink(1);
 	         }
@@ -188,6 +189,6 @@ public class KintarosEntity extends BaseAllyEntity {
 	   public boolean isFood(ItemStack p_30440_) {
 		      Item item = p_30440_.getItem();
 
-		      return item ==Items.PUMPKIN_PIE;
+		      return item ==Modded_item_core.VIENNA_COFFEE.get();
 		   }
 }

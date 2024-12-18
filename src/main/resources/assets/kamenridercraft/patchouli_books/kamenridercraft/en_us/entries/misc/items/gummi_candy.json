@@ -2,7 +2,7 @@
 	"name": "Gummi Candy",
 	"icon": "kamenridercraft:gummi_candy",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,19 @@
+{
+	"name": "Vienna Coffee",
+	"icon": "kamenridercraft:vienna_coffee",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Restores 2 hunger points when drank$(br2)Can be used to tame $(l:den_o/mobs/momotaros)th$(/l)$(l:den_o/mobs/urataros)e T$(/l)$(l:den_o/mobs/kintaros)ar$(/l)$(l:den_o/mobs/ryutaros)os$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vienna_coffee",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
