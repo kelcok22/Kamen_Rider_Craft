@@ -1,24 +1,30 @@
 {
-  "display": {
-	"icon": {
-	  "id": "kamenridercraft:woz_miridewatch"
-	},
-	"title": "Don't eat the Ridewatches",
-	"description": "Defeat White Woz",
-	"frame": "task",
-	"show_toast": true,
-	"announce_to_chat": true,
-	"hidden": false
-  },
   "parent": "kamenridercraft:zi-o/geiz",
   "criteria": {
-	"requirement": {
-	  "trigger": "minecraft:player_killed_entity",
-	  "conditions": {
-		"entity": {
-		  "type": "kamenridercraft:woz"
-		}
-	  }
-	}
+    "requirement": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "kamenridercraft:woz"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": "Defeat White Woz",
+    "icon": {
+      "id": "kamenridercraft:woz_miridewatch"
+    },
+    "title": "Don't eat the Ridewatches",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
   }
 }
