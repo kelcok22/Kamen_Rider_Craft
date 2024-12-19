@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:caking_gochizo"
+	},
+	"title": "A Feast Fit for a King",
+	"description": "Transform into Gavv Caking",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gavv/gavv",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gavv_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gavv_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gavv_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:henshin_belt_gavv"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:caking_gochizo\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
