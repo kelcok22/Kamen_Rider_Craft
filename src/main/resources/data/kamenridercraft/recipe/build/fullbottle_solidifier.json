@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amazons",
+  "pattern": [
+	"IXI",
+	"XMX",
+	"IXI"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:sclash_jelly"
+	},"I": {
+	  "item": "minecraft:iron_ingot"
+	},"M": {
+	  "item": "kamenridercraft:monitor"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:fullbottle_solidifier"
+  }
+}
