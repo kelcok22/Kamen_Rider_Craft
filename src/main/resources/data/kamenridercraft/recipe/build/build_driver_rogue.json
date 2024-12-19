@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rogue",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "C": {
+      "item": "kamenridercraft:prime_rogue_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:build_driver_rogue"
+  }
+}

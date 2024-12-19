@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "evol",
+  "pattern": [
+	"XXX",
+	"RXT",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:full_bottle"
+	},
+	"R": {
+	  "item": "kamenridercraft:bat_full_bottle"
+	},
+	"T": {
+	  "item": "kamenridercraft:engine_full_bottle"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:evol_driver"
+  }	
+}

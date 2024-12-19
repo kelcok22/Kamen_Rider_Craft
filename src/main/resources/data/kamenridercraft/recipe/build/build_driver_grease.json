@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grease",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "C": {
+      "item": "kamenridercraft:north_blizzard_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:build_driver_grease"
+  }
+}
