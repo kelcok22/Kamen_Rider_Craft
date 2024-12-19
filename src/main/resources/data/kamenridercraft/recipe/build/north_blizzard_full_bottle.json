@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grease_blizzard",
+  "pattern": [
+    "XCX",
+    "XBX",
+    "WXG"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:snowball"
+    }, "C": {
+      "item": "kamenridercraft:lost_fukurou_full_bottle"
+    }, "W": {
+      "item": "kamenridercraft:lost_castle_full_bottle"
+    }, "G": {
+      "item": "kamenridercraft:lost_kuwagata_full_bottle"
+    }, "B": {
+      "item": "kamenridercraft:robot_sclashjelly"
+    }
+  },
+  "result": {
+    "item": "kamenridercraft:north_blizzard_full_bottle"
+  }
+}
