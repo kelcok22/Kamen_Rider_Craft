@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:unfinished_genius_full_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 6,
+				  "name": "kamenridercraft:ninja_full_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 6,
+				  "name": "kamenridercraft:comic_full_bottle"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
