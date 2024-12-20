@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:woz_miridewatch"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:shinobi_miridewatch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:quiz_miridewatch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 4,
+				  "name": "kamenridercraft:kikai_miridewatch"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_watch",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

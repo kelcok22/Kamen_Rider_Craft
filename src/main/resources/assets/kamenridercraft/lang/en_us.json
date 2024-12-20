@@ -3730,6 +3730,7 @@
   "entity.kamenridercraft.phantom_crusher": "Phantom Crusher",
 
   "entity.kamenridercraft.ginga": "Kamen Rider Ginga",
+  "entity.kamenridercraft.woz": "Kamen Rider Woz (White Woz)",
 
 "entity.kamenridercraft.trilobite_magia": "Trilobite Magia",
 "entity.kamenridercraft.dodo_magia_chick": "Dodo Magia Chick",
@@ -3878,6 +3879,7 @@
   "item.kamenridercraft.killbus_spawn_egg": "Kamen Rider Killbus Spawn Egg",
 
   "item.kamenridercraft.ginga_spawn_egg": "Kamen Rider Ginga Spawn Egg",
+  "item.kamenridercraft.woz_spawn_egg": "Kamen Rider Woz Spawn Egg",
 
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",
@@ -4043,8 +4045,6 @@
   "block.kamenridercraft.red_ichigo_chair": "Aka-Rider Chair",
 
   "block.kamenridercraft.pandora_box": "Pandora Box",
-  "block.kamenridercraft.fullbottle_purifier": "Fullbottle Purifier",
-  "block.kamenridercraft.fullbottle_solidifier": "Fullbottle Solidifier",
 
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",
@@ -4107,7 +4107,9 @@
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
   "block.kamenridercraft.night_rogue_boss_block": "Night Rogue Boss Block",
   "block.kamenridercraft.evol_boss_block": "Evol Boss Block",
+  "block.kamenridercraft.woz_boss_block": "White Woz Boss Block",
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
-"block.kamenridercraft.ark_one_boss_block": "Ark-One Boss Block"
+"block.kamenridercraft.ark_one_boss_block": "Ark-One Boss Block",
+  "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!"
 }
