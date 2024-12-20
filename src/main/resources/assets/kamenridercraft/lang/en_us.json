@@ -3873,6 +3873,8 @@
   "item.kamenridercraft.build_spawn_egg": "Kamen Rider Build Spawn Egg",
   "item.kamenridercraft.evol_spawn_egg": "Kamen Rider Evol Spawn Egg",
 
+  "item.kamenridercraft.ginga_spawn_egg": "Kamen Rider Ginga Spawn Egg",
+
 "item.kamenridercraft.trilobite_magia_spawn_egg": "Trilobite Magia Spawn Egg",
 "item.kamenridercraft.dodo_magia_chick_spawn_egg": "Dodo Magia Chick Spawn Egg",
 "item.kamenridercraft.battle_raider_spawn_egg": "Battle Raider Spawn Egg",
@@ -4082,7 +4084,7 @@
 "block.kamenridercraft.astroswitch_programmer": "Astroswitch Programmer",
 "block.kamenridercraft.gamecreator": "Game Creator",
 "block.kamenridercraft.ganbarizing_machine": "Ganbarizing Machine",
-  "block.kamenridercraft.fullbottle_refiner": "Fullbottle Refiner",
+  "block.kamenridercraft.fullbottle_purifier": "Fullbottle Refiner",
   "block.kamenridercraft.fullbottle_solidifier": "Fullbottle Solidifier",
   "block.kamenridercraft.hiden_3d_printer": "HIDEN 3D Printer",
 "block.kamenridercraft.zaia_3d_printer": "ZAIA 3D Printer",

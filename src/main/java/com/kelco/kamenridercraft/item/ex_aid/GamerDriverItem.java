@@ -91,7 +91,13 @@ public class GamerDriverItem extends RiderDriverItem {
 			
 			return "belts/"+belt;
 		}
-		else if (equipmentSlot == EquipmentSlot.CHEST) return get_Form_Item(itemstack,2).getFormName(false);
+		else if (equipmentSlot == EquipmentSlot.CHEST){
+			RiderDriverItem belt = ((RiderDriverItem)itemstack.getItem());
+			if (belt==Ex_Aid_Rider_Items.GAMER_DRIVER_BRAVE.get()&get_Form_Item(itemstack,2)==Ex_Aid_Rider_Items.DOREMIFA_BEAT_GASHAT.get()
+					&rider.hasEffect(Effect_core.CHRISTMAS)) {
+				return "beat_gamer_christmas";
+			}else return get_Form_Item(itemstack,2).getFormName(false);
+		}
 
 		else {
 			RiderDriverItem belt = ((RiderDriverItem)itemstack.getItem());
