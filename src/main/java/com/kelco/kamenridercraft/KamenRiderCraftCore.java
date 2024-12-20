@@ -389,6 +389,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.GREASE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BUILD.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EVOL.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.KILLBUS.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
 

@@ -687,12 +687,18 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> EVOL_SPAWN_EGG = ITEMS.register("evol_spawn_egg",
             () -> new DeferredSpawnEggItem(EVOL, 0x8f091f, 0xe8c70c, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<KillbusEntity>> KILLBUS = MOBLIST.register("killbus",
+            () -> EntityType.Builder.of(KillbusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":killbus_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KILLBUS_SPAWN_EGG = ITEMS.register("killbus_spawn_egg",
+            () -> new DeferredSpawnEggItem(KILLBUS, 0xed220c, 0x000000, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<GingaEntity>> GINGA = MOBLIST.register("ginga",
             () -> EntityType.Builder.of(GingaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ginga_mob"));
 
     public static final DeferredItem<DeferredSpawnEggItem> GINGA_SPAWN_EGG = ITEMS.register("ginga_spawn_egg",
-            () -> new DeferredSpawnEggItem(GINGA, 0x8f091f, 0xe8c70c, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(GINGA, 0x5e36a3, 0x969696, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<TrilobiteMagiaEntity>> TRILOBITE_MAGIA = MOBLIST.register("trilobite_magia",

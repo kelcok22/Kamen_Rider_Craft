@@ -205,6 +205,8 @@
   "henshin.kamenridercraft.evol_1":"§4Cobra! §8Rider System! §cEvolution! Are You Ready?",
   "henshin.kamenridercraft.evol_2":"§4Cobra! Cobra! Evol Cobra! §6Fuhahahahahahahaha!",
   "henshin.kamenridercraft.evolto":"Ready, go! Feverflow! Fuhahahahahaha! Fuhahahahahahahaha!",
+  "henshin.kamenridercraft.killbus1":"§cKillbus Spider! Are You Ready?",
+  "henshin.kamenridercraft.killbus2":"§cSpider! Spider! Killbus Spider!",
   "henshin.kamenridercraft.magia":"§4Zetsumerise!",
   "henshin.kamenridercraft.horobi":"§5Forcerise! Sting Scorpion! Break down.",
   "henshin.kamenridercraft.jin":"§dForcerise! Flying Falcon! Break down.",
@@ -3723,6 +3725,7 @@
   "entity.kamenridercraft.grease": "Kamen Rider Grease",
   "entity.kamenridercraft.build": "Kamen Rider Build (Katsuragi Shinobu)",
   "entity.kamenridercraft.evol": "Kamen Rider Evol",
+  "entity.kamenridercraft.killbus": "Kamen Rider Killbus",
   "entity.kamenridercraft.downfall_guardian": "Downfall Guardian",
   "entity.kamenridercraft.phantom_crusher": "Phantom Crusher",
 
@@ -3872,6 +3875,7 @@
   "item.kamenridercraft.grease_spawn_egg": "Kamen Rider Grease Spawn Egg",
   "item.kamenridercraft.build_spawn_egg": "Kamen Rider Build Spawn Egg",
   "item.kamenridercraft.evol_spawn_egg": "Kamen Rider Evol Spawn Egg",
+  "item.kamenridercraft.killbus_spawn_egg": "Kamen Rider Killbus Spawn Egg",
 
   "item.kamenridercraft.ginga_spawn_egg": "Kamen Rider Ginga Spawn Egg",
 
