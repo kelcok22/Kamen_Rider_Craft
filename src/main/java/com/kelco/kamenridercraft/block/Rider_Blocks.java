@@ -766,6 +766,11 @@ public class Rider_Blocks {
 					,Lists.newArrayList(Component.translatable("henshin.kamenridercraft.evol_1"), Component.translatable("henshin.kamenridercraft.evol_2"))).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
+	public static final DeferredBlock<Block> WOZ_BOSS_BLOCK = registerBlock("woz_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.WOZ
+					,Component.translatable("henshin.kamenridercraft.woz")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)

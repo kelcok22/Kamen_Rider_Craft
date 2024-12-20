@@ -700,6 +700,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GINGA_SPAWN_EGG = ITEMS.register("ginga_spawn_egg",
             () -> new DeferredSpawnEggItem(GINGA, 0x5e36a3, 0x969696, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<WozEntity>> WOZ = MOBLIST.register("woz",
+            () -> EntityType.Builder.of(WozEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":woz_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> WOZ_SPAWN_EGG = ITEMS.register("woz_spawn_egg",
+            () -> new DeferredSpawnEggItem(WOZ, 0xffffff, 0x05ff09, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<TrilobiteMagiaEntity>> TRILOBITE_MAGIA = MOBLIST.register("trilobite_magia",
                   () -> EntityType.Builder.of(TrilobiteMagiaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":trilobite_magia"));

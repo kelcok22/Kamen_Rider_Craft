@@ -667,6 +667,7 @@ public class RiderTabs {
             event.accept(MobsCore.PHANTOM_CRUSHER_SPAWN_EGG);
 
             event.accept(MobsCore.GINGA_SPAWN_EGG);
+            event.accept(MobsCore.WOZ_SPAWN_EGG);
 
             event.accept(MobsCore.TRILOBITE_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.DODO_MAGIA_CHICK_SPAWN_EGG);
