@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:north_blizzard_full_bottle"
+			  "kamenridercraft:low_rabbit_full_bottle"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/blizzard_knuckle",
-	  "kamenridercraft:build/build_driver_grease"
+	  "kamenridercraft:build/fullfull_rabbit_tank_bottle"
 	]
   },
   "sends_telemetry_event": false

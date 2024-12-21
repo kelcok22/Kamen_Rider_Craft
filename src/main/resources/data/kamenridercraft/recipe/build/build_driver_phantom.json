@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "phantom_build",
+  "pattern": [
+    "RXX",
+    "LML",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "L": {
+      "item": "kamenridercraft:metal_tank_tank_full_bottle"
+    }, "R": {
+      "item": "kamenridercraft:hazard_trigger"
+    }, "M": {
+      "item": "kamenridercraft:metal_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:build_driver_phantom"
+  }
+}

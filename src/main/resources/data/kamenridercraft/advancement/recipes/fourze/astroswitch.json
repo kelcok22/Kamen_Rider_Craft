@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:fourze/fourze_head",
 	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs"
+	  "kamenridercraft:fourze/fourze_legs",
+	  "kamenridercraft:fourze/gate_switch"
 	]
   },
   "sends_telemetry_event": false

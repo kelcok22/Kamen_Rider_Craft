@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rogue",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:sclash_jelly"
+    }, "C": {
+      "item": "kamenridercraft:crocodile_crack_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sclash_driver_rogue"
+  }
+}

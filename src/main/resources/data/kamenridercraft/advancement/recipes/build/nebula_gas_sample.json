@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:north_blizzard_full_bottle"
+			  "kamenridercraft:nebula_gas_sample"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/blizzard_knuckle",
-	  "kamenridercraft:build/build_driver_grease"
+	  "kamenridercraft:build/fullbottle_purifier"
 	]
   },
   "sends_telemetry_event": false

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cross_z_charge",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:sclash_jelly"
+    }, "C": {
+      "item": "kamenridercraft:dragon_sclash_jelly"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sclash_driver"
+  }
+}

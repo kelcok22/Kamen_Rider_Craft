@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ooo/power_up_core_boss_block"
+			"recipe": "kamenridercraft:ooo/powered_up_core_boss_block"
 		}
 	]
 }
