@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blood",
+  "pattern": [
+    "XHX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "H": {
+      "item": "kamenridercraft:hazard_trigger"
+    }, "C": {
+      "item": "kamenridercraft:lost_cobra_full_bottle"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:build_driver_blood"
+  }
+}

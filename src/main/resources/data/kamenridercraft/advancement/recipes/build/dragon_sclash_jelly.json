@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/twin_breaker"
+	  "kamenridercraft:build/twin_breaker",
+	  "kamenridercraft:build/sclash_driver"
 	]
   },
   "sends_telemetry_event": false

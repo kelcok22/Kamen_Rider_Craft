@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/steam_blade"
+	  "kamenridercraft:build/steam_blade",
+	  "kamenridercraft:build/build_driver_blood"
 	]
   },
   "sends_telemetry_event": false

@@ -205,8 +205,8 @@
   "henshin.kamenridercraft.evol_1":"§4Cobra! §8Rider System! §cEvolution! Are You Ready?",
   "henshin.kamenridercraft.evol_2":"§4Cobra! Cobra! Evol Cobra! §6Fuhahahahahahahaha!",
   "henshin.kamenridercraft.evolto":"Ready, go! Feverflow! Fuhahahahahaha! Fuhahahahahahahaha!",
-  "henshin.kamenridercraft.killbus1":"§cKillbus Spider! Are You Ready?",
-  "henshin.kamenridercraft.killbus2":"§cSpider! Spider! Killbus Spider!",
+  "henshin.kamenridercraft.killbus_1":"§cKillbus Spider! Are You Ready?",
+  "henshin.kamenridercraft.killbus_2":"§cSpider! Spider! Killbus Spider!",
   "henshin.kamenridercraft.magia":"§4Zetsumerise!",
   "henshin.kamenridercraft.horobi":"§5Forcerise! Sting Scorpion! Break down.",
   "henshin.kamenridercraft.jin":"§dForcerise! Flying Falcon! Break down.",
@@ -3098,6 +3098,7 @@
 "item.kamenridercraft.vision_driver_jyamato_glare": "Vision Driver (Jyamato Gazer)",
 "item.kamenridercraft.zillion_driver": "Zillion Driver",
 "item.kamenridercraft.zillion_driver_gazer_zero": "Zillion Driver (Gazer Zero)",
+"item.kamenridercraft.laser_raise_driver": "Laser Raise Driver",
 
 "item.kamenridercraft.magnum_shooter_40x": "Magnum Shooter 40X",
 "item.kamenridercraft.magnum_shooter_40x_rifle": "Magnum Shooter 40X (Rifle)",

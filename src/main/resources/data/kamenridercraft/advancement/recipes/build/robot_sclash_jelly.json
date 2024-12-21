@@ -21,7 +21,9 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/twin_breaker"
+	  "kamenridercraft:build/twin_breaker",
+	  "kamenridercraft:build/sclash_driver_grease",
+	  "kamenridercraft:build/north_blizzard_full_bottle"
 	]
   },
   "sends_telemetry_event": false

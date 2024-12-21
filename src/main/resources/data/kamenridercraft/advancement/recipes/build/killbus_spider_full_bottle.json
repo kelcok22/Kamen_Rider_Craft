@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:north_blizzard_full_bottle"
+			  "kamenridercraft:killbus_spider_full_bottle"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/blizzard_knuckle",
-	  "kamenridercraft:build/build_driver_grease"
+	  "kamenridercraft:build/build_driver_killbus"
 	]
   },
   "sends_telemetry_event": false

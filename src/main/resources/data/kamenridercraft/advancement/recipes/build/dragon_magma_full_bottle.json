@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/magma_knuckle"
+	  "kamenridercraft:build/magma_knuckle",
+	  "kamenridercraft:build/muscle_galaxy_full_bottle"
 	]
   },
   "sends_telemetry_event": false

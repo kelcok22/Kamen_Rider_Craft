@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:north_blizzard_full_bottle"
+			  "kamenridercraft:crocodile_crack_full_bottle"
 			]
 		  }
 		]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:build/blizzard_knuckle",
-	  "kamenridercraft:build/build_driver_grease"
+	  "kamenridercraft:build/sclash_driver_rogue",
+	  "kamenridercraft:build/prime_rogue_full_bottle"
 	]
   },
   "sends_telemetry_event": false

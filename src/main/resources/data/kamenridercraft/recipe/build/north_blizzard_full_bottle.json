@@ -16,10 +16,10 @@
     }, "G": {
       "item": "kamenridercraft:lost_kuwagata_full_bottle"
     }, "B": {
-      "item": "kamenridercraft:robot_sclashjelly"
+      "item": "kamenridercraft:robot_sclash_jelly"
     }
   },
   "result": {
-    "item": "kamenridercraft:north_blizzard_full_bottle"
+    "id": "kamenridercraft:north_blizzard_full_bottle"
   }
 }
