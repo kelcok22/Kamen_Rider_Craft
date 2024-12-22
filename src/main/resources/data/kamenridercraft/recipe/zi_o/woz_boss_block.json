@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "woz",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:geiz_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:blank_watch"
+    }, 
+    {
+      "item": "kamenridercraft:rider_circuit"
+    }, 
+    {
+      "item": "kamenridercraft:rider_circuit"
+    }, 
+    {
+      "item": "minecraft:book"
+    }  
+    ],
+  "result": {
+    "id": "kamenridercraft:woz_boss_block"
+  }
+}
