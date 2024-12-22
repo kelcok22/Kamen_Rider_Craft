@@ -32,8 +32,8 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 						this.level().addFreshEntity(boss);
 
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.eternal_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.eternal_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal_2"));
 						}
 					}
 					break;
