@@ -85,7 +85,7 @@ public class ModCommonEvents {
 			LocalDate localdate = LocalDate.now();
 			int i = localdate.get(ChronoField.DAY_OF_MONTH);
 			int j = localdate.get(ChronoField.MONTH_OF_YEAR);
-			if (j == 12 && i > 22 && i < 28 ) {
+			if (j == 12 && i >= 22 && i <= 28 ) {
 				event.getEntity().addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 30, 0, false, false));
 			}
 
