@@ -17,6 +17,11 @@ public class SlashEffect extends MobEffect {
 	}
 
 	@Override
+	public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
+		return true;
+	}
+
+	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
 	 if (!pLivingEntity.level().isClientSide()) {
 
