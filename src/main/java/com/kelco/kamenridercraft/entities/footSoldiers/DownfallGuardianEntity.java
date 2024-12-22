@@ -37,8 +37,8 @@ public class DownfallGuardianEntity extends BaseHenchmenEntity {
 						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 						this.level().addFreshEntity(boss2);
 						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.killbus_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin,kamenridercraft.killbus_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.killbus_1"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.killbus_2"));
 						}
 					}
 					break;
