@@ -39,7 +39,7 @@ public class Effect_core {
 
     public static final Holder<MobEffect> FLYING= EFFECT.register("flying",
             () -> new 	BasicEffect(MobEffectCategory.BENEFICIAL, 0xffffff)
-            .addAttributeModifier(NeoForgeMod.CREATIVE_FLIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flying"), 1, AttributeModifier.Operation.ADD_VALUE) );
+            .addAttributeModifier(NeoForgeMod.CREATIVE_FLIGHT, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.flying"), 1F, AttributeModifier.Operation.ADD_VALUE) );
 
     public static final Holder<MobEffect> PULL= EFFECT.register("pull",
             () -> new 	PullEffect(MobEffectCategory.BENEFICIAL, 0xcb3e3e) );
