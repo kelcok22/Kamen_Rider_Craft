@@ -38,6 +38,16 @@
 					]
 				},
 				{
+					"name": "Shape1",
+					"parent": "armorBody",
+					"pivot": [0, 23.5, -2],
+					"rotation": [45, 0, 45],
+					"mirror": true,
+					"cubes": [
+						{"origin": [0, 15.5, -7], "size": [4, 10, 10], "inflate": 0.2, "uv": [100, 44]}
+					]
+				},
+				{
 					"name": "bipedRightArm",
 					"pivot":  [-5, 22, 0]
 				},
