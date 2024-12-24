@@ -21,8 +21,8 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> DRIVE_LOGO = ITEMS.register("drive_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_SPEED_TIRE = ITEMS.register("speed_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"type_speed_tire","drive","drivedriver_belt",
+	public static final DeferredItem<Item> BASIC_TIRE = ITEMS.register("basic_tire",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"no_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.ChangeSlot(2));
 
@@ -30,80 +30,55 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(SHIFT_SPEED_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_WILD_TIRE = ITEMS.register("wild_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"wild_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
 
 	public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wild","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(SHIFT_WILD_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
-
-	public static final DeferredItem<Item> SHIFT_TECHNIC_TIRE = ITEMS.register("technic_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"technic_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("techniqueshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_technic","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(SHIFT_TECHNIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_TIRE = ITEMS.register("dead_heat_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"dead_heat_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT = ITEMS.register("deadheatshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dead_heat","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_DEAD_HEAT_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_FORMULA_TIRE = ITEMS.register("formula_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"formula_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
 
 	public static final DeferredItem<Item> SHIFT_FORMULA= ITEMS.register("formulashift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_formula","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive_formula.geo.json").alsoChange2ndSlot(SHIFT_FORMULA_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeModel("drive_formula.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
-	public static final DeferredItem<Item> SHIFT_HIGH_SPEED_TIRE = ITEMS.register("high_speed_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"type_high_speed_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
 
 	public static final DeferredItem<Item> SHIFT_HIGH_SPEED = ITEMS.register("high_speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_high_speed","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_HIGH_SPEED_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_FRUITS_TIRE = ITEMS.register("fruits_tire",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"fruits_tire","drive","drivedriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
 
 	public static final DeferredItem<Item> SHIFT_FRUITS = ITEMS.register("fruitsshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fruits","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_FRUITS_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED_WILD_TECHNIC = ITEMS.register("speedwildtechnicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_speed_wild_technic","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(SHIFT_SPEED_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
@@ -210,7 +185,7 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> DRIVE_DRIVER = ITEMS.register("drivedriver",
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"drive",SHIFT_SPEED , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(SHIFT_SPEED_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 
