@@ -108,7 +108,7 @@ public class Effect_core {
             () -> new SmellEffect(MobEffectCategory.HARMFUL, 0x853d1b));
 
     public static final Holder<MobEffect>  CHRISTMAS= EFFECT.register("christmas",
-            () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL, 0x4eff00));
+            () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL,0x4eff00));
 
     public static final Holder<MobEffect>  FIRE_PUNCH= EFFECT.register("fire_punch",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
