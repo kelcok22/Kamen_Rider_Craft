@@ -36,7 +36,7 @@ public class BlankRidewatchItem extends BaseItem {
 		public InteractionResultHolder<ItemStack> use(Level world, Player playerIn, InteractionHand p_41434_) {
 			ItemStack itemstack = playerIn.getItemInHand(p_41434_);
 		
-			playerIn.drop(new ItemStack(WatchDrop(), 1), true);
+			playerIn.drop(new ItemStack(WatchDrop(), 1), false);
 		    if (!playerIn.isCreative()) itemstack.shrink(1);
 			return InteractionResultHolder.consume(itemstack);
 		}

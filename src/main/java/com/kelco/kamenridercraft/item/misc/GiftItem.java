@@ -36,7 +36,7 @@ public class GiftItem extends BaseItem {
 
 	public void  useEnergyItem (ItemStack itemstack, Level world,Player playerIn) {
 		
-			playerIn.drop(new ItemStack(GiftDrop(), 1), true);
+			playerIn.drop(new ItemStack(GiftDrop(), 1), false);
 			
 		if	(!playerIn.isCreative()) {
 			itemstack.shrink(1);

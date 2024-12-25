@@ -147,7 +147,7 @@ public class ModCommonEvents {
 						 player.getInventory().removeItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get()));
 						 player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 
-						 player.drop(new ItemStack(GOCHIZO), true);
+						 player.drop(new ItemStack(GOCHIZO), false);
 					 }
 				 }
 			 }
