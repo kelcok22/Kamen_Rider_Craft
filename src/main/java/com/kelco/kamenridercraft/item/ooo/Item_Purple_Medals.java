@@ -34,10 +34,10 @@ public class Item_Purple_Medals extends BaseItem
 					if(world.isClientSide) {
 					playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.purple_medals"));
 					}
-					playerIn.drop(new ItemStack(OOO_Rider_Items.PURPLE_MEDALS_EMPTY.get(), 1), true);
-					playerIn.drop(new ItemStack(OOO_Rider_Items.PTERA_MEDAL.get(), rand2), true);
-					playerIn.drop(new ItemStack(OOO_Rider_Items.TRICERA_MEDAL.get(), rand), true);
-					playerIn.drop(new ItemStack(OOO_Rider_Items.TYRANNO_MEDAL.get(), rand1), true);
+					playerIn.drop(new ItemStack(OOO_Rider_Items.PURPLE_MEDALS_EMPTY.get(), 1), false);
+					playerIn.drop(new ItemStack(OOO_Rider_Items.PTERA_MEDAL.get(), rand2), false);
+					playerIn.drop(new ItemStack(OOO_Rider_Items.TRICERA_MEDAL.get(), rand), false);
+					playerIn.drop(new ItemStack(OOO_Rider_Items.TYRANNO_MEDAL.get(), rand1), false);
 					itemstack.shrink(1);	
 		}
 	}

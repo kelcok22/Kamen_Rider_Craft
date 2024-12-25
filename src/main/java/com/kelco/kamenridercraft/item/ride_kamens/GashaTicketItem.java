@@ -30,7 +30,7 @@ public class GashaTicketItem extends BaseItem {
 
 	public void  useEnergyItem (ItemStack itemstack, Level world,Player playerIn) {
 		
-			playerIn.drop(new ItemStack(RingDrop(), 1), true);
+			playerIn.drop(new ItemStack(RingDrop(), 1), false);
 			
 		if	(!playerIn.isCreative()) {
 			itemstack.shrink(1);

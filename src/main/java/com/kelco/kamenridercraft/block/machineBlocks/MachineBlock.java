@@ -46,7 +46,7 @@ public class MachineBlock extends HorizontalDirectionalBlock {
 
      public void process(Player player, Level world, BlockPos pos, InteractionHand hand, Item... items) {
         // world.playSound((double)pos.getX() + 0.5D, (double)pos.getY(), (double)pos.getZ() + 0.5D, SoundEvents.BLOCK_NOTE_BELL, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
-         for(Item item : items) player.drop(new ItemStack(item), true);
+         for(Item item : items) player.drop(new ItemStack(item), false);
          player.getItemInHand(hand).shrink(1);
      }
      

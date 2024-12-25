@@ -32,7 +32,7 @@ public class FishEffect extends InstantenousMobEffect {
 						Item fish = Items.SALMON;
 						if (player.isOnFire())fish = Items.COOKED_SALMON;
 
-						player.drop(new ItemStack(fish,pAmplifier+1),true);
+						player.drop(new ItemStack(fish,pAmplifier+1),false);
 						player.addEffect(new MobEffectInstance(Effect_core.FISH, 120, 9,false,false));
 					}
 

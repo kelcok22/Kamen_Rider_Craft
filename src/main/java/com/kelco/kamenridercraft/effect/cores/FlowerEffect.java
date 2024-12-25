@@ -27,7 +27,7 @@ public class FlowerEffect extends InstantenousMobEffect {
 		if (!pLivingEntity.level().isClientSide()) {
 			if (pLivingEntity.level() instanceof ServerLevel) {
 				if (pLivingEntity instanceof Player player) {
-					player.drop(new ItemStack(Items.POPPY), true);
+					player.drop(new ItemStack(Items.POPPY), false);
 				}
 			}
 		}
