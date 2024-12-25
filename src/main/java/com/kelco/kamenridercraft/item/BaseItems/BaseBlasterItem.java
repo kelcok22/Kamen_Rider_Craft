@@ -206,6 +206,11 @@ public class BaseBlasterItem extends BowItem {
 		return true;
 	}
 
+    @Override
+    public void postHurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
+    }
+
 	public static ItemAttributeModifiers createAttributes(Tier tier, int attackDamage, float attackSpeed) {
 		return createAttributes(tier, (float)attackDamage, attackSpeed);
 	}
