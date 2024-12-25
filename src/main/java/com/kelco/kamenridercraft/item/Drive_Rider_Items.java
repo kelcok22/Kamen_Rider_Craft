@@ -176,6 +176,14 @@ public class Drive_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
+	public static final DeferredItem<Item> SIGNAL_MACH = ITEMS.register("signal_mach",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mach","mach_driver_honoh_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+
+
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 	public static final DeferredItem<Item> DRIVE_CHESTPLATE = ITEMS.register("drive_troso",
@@ -187,6 +195,9 @@ public class Drive_Rider_Items {
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"drive",SHIFT_SPEED , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> MACH_DRIVER_HONOH = ITEMS.register("mach_driver_honoh",
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"mach",SIGNAL_MACH , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
