@@ -4,9 +4,8 @@
   "_comment": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
   "values": [
     "#c:is_forest",
-	"minecraft:forest",
-	"minecraft:plains",
-	"minecraft:savanna",
-	"minecraft:swamp"
+	"#c:is_plains",
+	"#c:is_savanna",
+	"#c:is_swamp"
   ]
 }

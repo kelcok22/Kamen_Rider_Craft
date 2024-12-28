@@ -1,10 +1,10 @@
 {
   "values": [
 	"minecraft:forest",
-	"minecraft:swamp",
-	"minecraft:snowy_plains",
+	"#c:is_swamp",
+	"#c:is_snowy_plains",
 	"minecraft:beach",
-	"minecraft:desert",
+	"#c:is_desert",
 	"minecraft:taiga",
 	"minecraft:windswept_hills",
 	"minecraft:jungle",

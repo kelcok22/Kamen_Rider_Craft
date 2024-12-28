@@ -1,7 +1,6 @@
 {
   "values": [
-	"minecraft:desert",
-	"minecraft:beach",
+	"#c:is_sandy",
 	"minecraft:taiga"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "values": [
-	"minecraft:plains",
-	"minecraft:stony_shore",
+	"#c:is_plains",
+	"#c:is_stony_shores",
   "minecraft:snowy_beach"
   ]
 }

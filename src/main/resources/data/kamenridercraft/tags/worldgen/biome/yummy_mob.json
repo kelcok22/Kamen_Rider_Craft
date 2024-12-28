@@ -1,6 +1,6 @@
 {
   "values": [
-	"minecraft:desert",
+	"#c:is_desert",
 	"minecraft:windswept_hills"
   ]
 }

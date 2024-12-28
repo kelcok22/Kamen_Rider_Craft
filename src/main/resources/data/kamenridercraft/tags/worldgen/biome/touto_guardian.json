@@ -1,8 +1,8 @@
 {
   "values": [
-	"minecraft:plains",
+	"#c:is_plains",
 	"minecraft:meadow",
-	"#minecraft:is_forest",
+	"#c:is_forest",
 	"minecraft:river"
   ]
 }
