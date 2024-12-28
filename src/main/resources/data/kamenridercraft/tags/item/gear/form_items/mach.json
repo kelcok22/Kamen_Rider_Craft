@@ -1,5 +1,10 @@
 {
   "values": [
-	"kamenridercraft:signal_mach"
+	"kamenridercraft:signal_mach",
+	"kamenridercraft:deadheatshift",
+	"kamenridercraft:signal_magarl",
+	"kamenridercraft:signal_kaksarn",
+	"kamenridercraft:signal_tomarle",
+	"kamenridercraft:signal_kikern"
   ]
 }
