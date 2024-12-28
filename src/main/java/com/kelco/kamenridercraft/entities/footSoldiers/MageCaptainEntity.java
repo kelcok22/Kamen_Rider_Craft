@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
 import net.minecraft.ChatFormatting;
@@ -27,7 +28,7 @@ public class MageCaptainEntity extends BaseHenchmenEntity{
     
 	public void remove(RemovalReason p_149847_) {
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(10) == 1) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
 				BaseHenchmenEntity boss = MobsCore.SORCERER.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

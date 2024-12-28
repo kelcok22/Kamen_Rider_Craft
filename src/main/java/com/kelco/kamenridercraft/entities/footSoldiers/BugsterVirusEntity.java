@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import java.util.Random;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
@@ -22,6 +23,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 public class BugsterVirusEntity extends BaseHenchmenEntity {
+	
+	private BaseHenchmenEntity boss;
 
 	public BugsterVirusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
@@ -34,43 +37,39 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			int bossChance = this.random.nextInt(20);
-			switch (bossChance) {
-				case 0:
-					BaseHenchmenEntity boss = MobsCore.GENM.get().create(this.level());
-					if (boss != null) {
-						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss);
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+				int bossChoice = this.random.nextInt(2);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.GENM.get().create(this.level());
+						if (boss != null) {
+							for (int n = 0; n < 40; n++) {
+								Random generator = new Random();
 
-						for (int n = 0; n < 40; n++)
-						{
+								 int posX = (this.blockPosition().getX()-10)+generator.nextInt(20);
+								 int posY = this.blockPosition().getY()+generator.nextInt(6);
+								 int posZ = (this.blockPosition().getZ()-10)+generator.nextInt(20);
+								BlockPos pos1 = new BlockPos(posX,posY,posZ);
+								if (this.level().isEmptyBlock(pos1))this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
+							}
 
-							Random generator = new Random();
-
-							 int posX = (this.blockPosition().getX()-10)+generator.nextInt(20);
-							 int posY = this.blockPosition().getY()+generator.nextInt(6);
-							 int posZ = (this.blockPosition().getZ()-10)+generator.nextInt(20);
-							BlockPos pos1 = new BlockPos(posX,posY,posZ);
-							if (this.level().isEmptyBlock(pos1))this.level().setBlockAndUpdate(pos1, Rider_Blocks.MIGHTY_BLOCK.get().defaultBlockState());
-						
+							if (this.getLastAttacker()instanceof Player playerIn) {
+								playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm"));
+							}
 						}
-
-						if (this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm"));
-						}
-					}
-					break;
-				case 1:
-					BaseHenchmenEntity boss2 = MobsCore.GRAPHITE_BUGSTER.get().create(this.level());
-					if (boss2 != null) {
-						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss2);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 1:
+						boss = MobsCore.GRAPHITE_BUGSTER.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.graphite"));
 						}
-					}
-					break;
-				default:
+						break;
+					default:
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
 			}
 		}
 		super.remove(p_149847_);

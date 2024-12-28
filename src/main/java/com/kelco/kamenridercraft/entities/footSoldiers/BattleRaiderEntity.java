@@ -4,6 +4,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
@@ -31,7 +32,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 
 public class BattleRaiderEntity extends BaseHenchmenEntity {
 	
-
+	private BaseHenchmenEntity boss;
 	
     public BattleRaiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -46,60 +47,46 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			int bossChance = this.random.nextInt(50);
-			switch (bossChance) {
-				case 0:
-					BaseHenchmenEntity boss = MobsCore.RAIDER.get().create(this.level());
-					if (boss != null) {
-						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+				int bossChoice = this.random.nextInt(5);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.RAIDER.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.raider"));
 						}
-					}
-					break;
-				case 1:
-					BaseHenchmenEntity boss2 = MobsCore.NAKI.get().create(this.level());
-					if (boss2 != null) {
-						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss2);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 1:
+						boss = MobsCore.NAKI.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.naki"));
 						}
-					}
-					break;
-				case 2:
-					BaseHenchmenEntity boss3 = MobsCore.ZAIA.get().create(this.level());
-					if (boss3 != null) {
-						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss3);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 2:
+						boss = MobsCore.ZAIA.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_1"));
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_2"));
 						}
-					}
-					break;
-				case 3:
-					BaseHenchmenEntity boss4 = MobsCore.DIRE_WOLF_SOLD_MAGIA.get().create(this.level());
-					if (boss4 != null) {
-						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss4);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 3:
+						boss = MobsCore.DIRE_WOLF_SOLD_MAGIA.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dire_wolf_sold_magia"));
 						}
-					}
-					break;
-				case 4:
-					BaseHenchmenEntity boss5 = MobsCore.SERVAL_TIGER_SOLD_MAGIA.get().create(this.level());
-					if (boss5 != null) {
-						boss5.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss5);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 4:
+						boss = MobsCore.SERVAL_TIGER_SOLD_MAGIA.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.serval_tiger_sold_magia"));
 						}
-					}
-					break;
-				default:
+						break;
+					default:
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
 			}
 		}
 		super.remove(p_149847_);

@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 
@@ -18,6 +19,8 @@ import net.minecraft.world.level.Level;
 
 public class GiffJuniorEntity extends BaseHenchmenEntity {
 	
+	private BaseHenchmenEntity boss;
+	
     public GiffJuniorEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="giff_junior";
@@ -29,49 +32,39 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			int bossChance = this.random.nextInt(40);
-			switch (bossChance) {
-				case 0:
-					BaseHenchmenEntity boss = MobsCore.EVIL.get().create(this.level());
-					if (boss != null) {
-						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+				int bossChoice = this.random.nextInt(4);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.EVIL.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evil"));
 						}
-					}
-					break;
-				case 1:
-					BaseHenchmenEntity boss2 = MobsCore.DAIOUIKA_DEADMAN.get().create(this.level());
-					if (boss2 != null) {
-						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss2);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 1:
+						boss = MobsCore.DAIOUIKA_DEADMAN.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.daiouika_deadman"));
 						}
-					}
-					break;
-				case 2:
-					BaseHenchmenEntity boss3 = MobsCore.WOLF_DEADMAN.get().create(this.level());
-					if (boss3 != null) {
-						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss3);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 2:
+						boss = MobsCore.WOLF_DEADMAN.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.wolf_deadman"));
 						}
-					}
-					break;
-				case 3:
-					BaseHenchmenEntity boss4 = MobsCore.QUEEN_BEE_DEADMAN.get().create(this.level());
-					if (boss4 != null) {
-						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss4);
-						if (this.getLastAttacker() instanceof Player playerIn) {
+						break;
+					case 3:
+						boss = MobsCore.QUEEN_BEE_DEADMAN.get().create(this.level());
+						if (boss != null && this.getLastAttacker() instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.queen_bee_deadman"));
 						}
-					}
-					break;
-				default:
+						break;
+					default:
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
 			}
 		}
 		super.remove(p_149847_);
