@@ -2,9 +2,11 @@ package com.kelco.kamenridercraft.entities.summons;
 
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.BugsterVirusEntity;
+import com.kelco.kamenridercraft.entities.footSoldiers.RideplayerEntity;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
@@ -76,6 +78,7 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 			}else return false;
 		}));
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, BugsterVirusEntity.class, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, RideplayerEntity.class, false));
       	this.targetSelector.addGoal(5, new ResetUniversalAngerTargetGoal<>(this, true));
 
 	}
@@ -88,19 +91,22 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 				if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1)!=Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()) {
 					this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_PARA_DX.get()));
 					RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get(), 1);
+					this.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
 				}
 			} else if(RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()) {
 				if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1)!=Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()) {
 					this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()));
 					RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get(), 1);
+					this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
 				}
 			} else if(RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()) {
 				if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1)!=Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()) {
 					this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()));
 					RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);
+					this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
 				}
 			} else this.setHealth(0);
-		}
+		} else this.setHealth(0);
 	}
 
 

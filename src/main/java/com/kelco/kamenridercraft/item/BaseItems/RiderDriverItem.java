@@ -93,6 +93,9 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
+    public void OnTransform(ItemStack itemstack, LivingEntity player) {
+    }
+
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         player.setInvisible(false);
        tag.putBoolean("Update_form", false);

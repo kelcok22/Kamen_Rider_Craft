@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.ex_aid;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.Config;
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -40,6 +40,18 @@ public class GamerDriverItem extends RiderDriverItem {
 		Num_Base_Form_Item=2;
 	}
 
+    public void summonParaDX(Player player) {
+		ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());
+		if (paradx != null) {
+			paradx.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+			if (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()) {
+				paradx.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_PARA_DX.get()));
+				RiderDriverItem.set_Form_Item(paradx.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get(), 1);
+			} else paradx.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
+			player.level().addFreshEntity(paradx);
+			paradx.bindToPlayer(player);
+		}
+    }
 
     public static boolean paradxSummoned(Player player) {
 		for (ParaDXSummonEntity entity : player.level().getEntitiesOfClass(ParaDXSummonEntity.class,
@@ -49,22 +61,23 @@ public class GamerDriverItem extends RiderDriverItem {
         return false;
     }
 
-	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (Config.mightyBrotherSpawning && entity instanceof Player player && !paradxSummoned(player)
+	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
+		if (entity instanceof Player player && CommonConfig.mightyBrotherSpawning && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
-		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) {
-			ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());
-			if (paradx != null) {
-				paradx.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-				if (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()) {
-					paradx.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_PARA_DX.get()));
-					RiderDriverItem.set_Form_Item(paradx.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get(), 1);
-				}
-				player.level().addFreshEntity(paradx);
-				paradx.bindToPlayer(player);
-			}
-		}
+		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
+		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
+			summonParaDX(player);
+	}
+
+	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+		if (entity instanceof Player player && isTransformed(player)
+		&& CommonConfig.mightyBrotherSpawning && !paradxSummoned(player)
+		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
+		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
+		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
+		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) 
+			summonParaDX(player);
 		super.OnformChange(itemstack, entity, tag);
 	}
 

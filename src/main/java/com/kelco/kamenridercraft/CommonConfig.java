@@ -15,13 +15,17 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
 @EventBusSubscriber(modid = KamenRiderCraftCore.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
-public class Config
+public class CommonConfig
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
     private static final ModConfigSpec.IntValue SUMMONED_ITEM_DAMAGE = BUILDER.push("General Settings")
-            .comment(" How much durability should a weapon/tool have when summoned rather than obtained normally? Set to 0 for the tool's normal durability.")
+            .comment(" (default: 100) How much durability should a weapon/tool have when summoned rather than obtained normally? Set to 0 for the tool's normal durability.")
             .defineInRange("summonedItemDurability", 100, 0, Integer.MAX_VALUE);
+
+    private static final ModConfigSpec.IntValue BOSS_SPAWN_RATE = BUILDER
+            .comment(" (default: 10, i.e. 1 in 10) A boss should spawn from 1 in how many mobs?")
+            .defineInRange("bossSpawnRate", 10, 1, Integer.MAX_VALUE);
 
     private static final ModConfigSpec.BooleanValue KINTAROS_TISSUE_DROP = BUILDER.pop().push("Series-Specific Settings")
             .comment(" (default: true) Should Kintaros drop paper (tissues) when transformed into his Den-O form?")
@@ -30,6 +34,10 @@ public class Config
     private static final ModConfigSpec.BooleanValue MIGHTY_BROTHER_SPAWNING = BUILDER
             .comment(" (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?")
             .define("mightyBrotherSpawning", true);
+
+    private static final ModConfigSpec.BooleanValue VICE_SPAWNING = BUILDER
+            .comment(" (default: true) Should Vice spawn if you are playing as Kamen Rider Revi?")
+            .define("viceSpawning", true);
 
     /*public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
             .comment("What you want the introduction message to be for the magic number")
@@ -43,8 +51,10 @@ public class Config
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static int summonedItemDurability;
+    public static int bossSpawnRate;
     public static boolean kintarosTissueDrop;
     public static boolean mightyBrotherSpawning;
+    public static boolean viceSpawning;
     /*public static String magicNumberIntroduction;
     public static Set<Item> items;
 
@@ -57,8 +67,10 @@ public class Config
     static void onLoad(final ModConfigEvent event)
     {
         summonedItemDurability = SUMMONED_ITEM_DAMAGE.get();
+        bossSpawnRate = BOSS_SPAWN_RATE.get();
         kintarosTissueDrop = KINTAROS_TISSUE_DROP.get();
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
+        viceSpawning = VICE_SPAWNING.get();
         BUILDER.pop();
 
         /* convert the list of strings into a set of items
