@@ -10,15 +10,16 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class DodoMagiaChickEntity extends BaseHenchmenEntity {
+public class YummyEntity extends BaseHenchmenEntity {
 	
-    public DodoMagiaChickEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+	private BaseHenchmenEntity boss;
+
+    public YummyEntity(EntityType<? extends BaseHenchmenEntity > type, Level level) {
         super(type, level);
-        NAME="dodo_magia_chick";
+        NAME="yummy";
     }
 
 
@@ -26,13 +27,28 @@ public class DodoMagiaChickEntity extends BaseHenchmenEntity {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
-				BaseHenchmenEntity boss = MobsCore.DODO_MAGIA.get().create(this.level());
+				int bossChoice = this.random.nextInt(5);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.KAZARI.get().create(this.level());
+						break;
+					case 1:
+						boss = MobsCore.UVA.get().create(this.level());
+						break;
+					case 2:
+						boss = MobsCore.GAMEL.get().create(this.level());
+						break;
+					case 3:
+						boss = MobsCore.MEZOOL.get().create(this.level());
+						break;
+					case 4:
+						boss = MobsCore.ANKH_LOST.get().create(this.level());
+						break;
+					default:
+				}
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker()instanceof Player playerIn) {
-						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.magia"));
-					}
 				}
 			}
 		}
@@ -46,7 +62,6 @@ public class DodoMagiaChickEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 4.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 30.0D)
-        		.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        		.add(Attributes.MAX_HEALTH, 30.0D);
      }
 }

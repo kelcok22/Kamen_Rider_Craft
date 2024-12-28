@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 
 import net.minecraft.ChatFormatting;
@@ -24,7 +25,7 @@ public class NewMoleImaginSandEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(10) == 1) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
 				BaseHenchmenEntity boss = MobsCore.NEW_MOLE_IMAGIN.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

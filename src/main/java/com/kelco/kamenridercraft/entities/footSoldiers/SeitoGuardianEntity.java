@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.ChatFormatting;
@@ -15,6 +16,8 @@ import net.minecraft.world.level.Level;
 import java.util.Random;
 
 public class SeitoGuardianEntity extends BaseHenchmenEntity {
+	
+	private BaseHenchmenEntity boss;
 
 	public SeitoGuardianEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
@@ -26,30 +29,28 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			int bossChance = this.random.nextInt(20);
-			switch (bossChance) {
-				case 0:
-					BaseHenchmenEntity boss = MobsCore.BUILD.get().create(this.level());
-					if (boss != null) {
-						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+				int bossChoice = this.random.nextInt(2);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.BUILD.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_1"));
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_2"));
 						}
-					}
-					break;
-				case 1:
-					BaseHenchmenEntity boss2 = MobsCore.SMASH.get().create(this.level());
-					if (boss2 != null) {
-						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss2);
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 1:
+						boss = MobsCore.SMASH.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.smash"));
 						}
-					}
-					break;
-				default:
+						break;
+					default:
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
 			}
 		}
 		super.remove(p_149847_);

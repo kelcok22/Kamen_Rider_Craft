@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 
 import net.minecraft.ChatFormatting;
@@ -14,6 +15,8 @@ import net.minecraft.world.level.Level;
 
 public class MasqueradeEntity extends BaseHenchmenEntity {
 	
+	private BaseHenchmenEntity boss;
+	
     public MasqueradeEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="masquerade";
@@ -23,53 +26,39 @@ public class MasqueradeEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			int bossChance = this.random.nextInt(40);
-			switch (bossChance) {
-				case 0:
-					BaseHenchmenEntity boss = MobsCore.NASCA_DOPANT.get().create(this.level());
-					if (boss != null) {
-						boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss);
-
-						if (this.getLastAttacker()instanceof Player playerIn) {
+			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+				int bossChoice = this.random.nextInt(4);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.NASCA_DOPANT.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nasca_dopant"));
 						}
-					}
-					break;
-				case 1:
-					BaseHenchmenEntity boss2 = MobsCore.CLAYDOLL_DOPANT.get().create(this.level());
-					if (boss2 != null) {
-						boss2.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss2);
-
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 1:
+						boss = MobsCore.CLAYDOLL_DOPANT.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.claydoll_dopant"));
 						}
-					}
-					break;
-				case 2:
-					BaseHenchmenEntity boss3 = MobsCore.SMILODON_DOPANT.get().create(this.level());
-					if (boss3 != null) {
-						boss3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss3);
-
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 2:
+						boss = MobsCore.SMILODON_DOPANT.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.smilodon_dopant"));
 						}
-					}
-					break;
-				case 3:
-					BaseHenchmenEntity boss4 = MobsCore.WEATHER_DOPANT.get().create(this.level());
-					if (boss4 != null) {
-						boss4.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-						this.level().addFreshEntity(boss4);
-
-						if (this.getLastAttacker()instanceof Player playerIn) {
+						break;
+					case 3:
+						boss = MobsCore.WEATHER_DOPANT.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.weather_dopant"));
 						}
-					}
-					break;
-				default:
+						break;
+					default:
+				}
+				if (boss != null) {
+					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+					this.level().addFreshEntity(boss);
+				}
 			}
 		}
 		super.remove(p_149847_);
