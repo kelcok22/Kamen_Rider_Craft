@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.commons.lang3.ArrayUtils;
 
 import com.google.common.collect.Lists;
-import com.kelco.kamenridercraft.Config;
+import com.kelco.kamenridercraft.CommonConfig;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
@@ -91,7 +91,7 @@ public class AttackRideCardItem extends BaseItem {
 					for (int i = 0; i < ITEMS.size(); i++) {
 						ItemStack item = new ItemStack(ITEMS.get(i), 1);
 						item.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + ITEMS.get(i).getName(item).getString()));
-						if (item.isDamageableItem() && Config.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, Config.summonedItemDurability);
+						if (item.isDamageableItem() && CommonConfig.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, CommonConfig.summonedItemDurability);
 
 						ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
 						entity.setPickUpDelay(0);

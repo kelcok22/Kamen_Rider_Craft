@@ -901,6 +901,12 @@ public class MobsCore {
 
           public static final DeferredItem<DeferredSpawnEggItem> PARADX_SUMMON_SPAWN_EGG = ITEMS.register("paradx_summon_spawn_egg",
                   () -> new DeferredSpawnEggItem(PARADX_SUMMON, 0xffa500, 0x00bccf, new Item.Properties()));
+          
+          public static final DeferredHolder<EntityType<?>, EntityType<ViceEntity>> VICE = MOBLIST.register("vice",
+                  () -> EntityType.Builder.of(ViceEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":vice"));
+
+          public static final DeferredItem<DeferredSpawnEggItem> VICE_SPAWN_EGG = ITEMS.register("vice_spawn_egg",
+                  () -> new DeferredSpawnEggItem(VICE, 0xeaeaea, 0xd9a900, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

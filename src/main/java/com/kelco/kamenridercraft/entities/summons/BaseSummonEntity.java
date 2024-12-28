@@ -113,7 +113,8 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob {
 		if (!level.isClientSide) {
 		   this.updatePersistentAnger((ServerLevel)this.level(), true);
 			if ( this.getOwner() instanceof Player owner) {		
-				if(owner.getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
+				if(!owner.isAlive()
+				||owner.getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
 				||owner.getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
 				||owner.getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
 				||owner.getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) this.setHealth(0);

@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.VistampBar;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
+import com.kelco.kamenridercraft.item.revice.ReviceDriverItem;
 import com.kelco.kamenridercraft.item.revice.DemonsDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -716,7 +717,7 @@ public class Revice_Rider_Items {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER = ITEMS.register("revice_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"revi",REX_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+			() -> new ReviceDriverItem(ArmorMaterials.DIAMOND,"revi",REX_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> BUDDY_BUCKLE = ITEMS.register("vice_belt",

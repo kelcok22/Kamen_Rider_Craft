@@ -132,7 +132,7 @@ public class KamenRiderCraftCore
         modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
     }
 
 
@@ -430,6 +430,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
 
         }
     }
