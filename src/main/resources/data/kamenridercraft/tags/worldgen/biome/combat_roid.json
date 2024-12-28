@@ -1,17 +1,17 @@
 {
   "values": [
-	"minecraft:plains",
+	"#c:is_plains",
 	"minecraft:forest",
 	"minecraft:taiga",
-	"minecraft:swamp",
-	"minecraft:frozen_ocean",
+	"#c:is_swamp",
+	"#c:is_aquatic_icy",
 	"minecraft:beach",
-	"minecraft:desert",
+	"#c:is_desert",
 	"minecraft:windswept_hills",
 	"minecraft:birch_forest",
 	"minecraft:dark_forest",
 	"minecraft:snowy_taiga",
-	"minecraft:savanna",
-	"minecraft:badlands"
+	"#c:is_savanna",
+	"#c:is_badlands"
   ]
 }

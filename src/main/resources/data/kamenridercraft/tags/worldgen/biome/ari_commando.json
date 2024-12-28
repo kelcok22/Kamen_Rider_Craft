@@ -1,13 +1,13 @@
 {
   "values": [
 	"minecraft:windswept_hills",
-	"minecraft:snowy_plains",
-	"minecraft:desert",
+	"#c:is_snowy_plains",
+	"#c:is_desert",
 	"minecraft:forest",
 	"minecraft:snowy_slopes",
 	"minecraft:dark_forest",
 	"minecraft:old_growth_pine_taiga",
 	"minecraft:windswept_forest",
-	"minecraft:badlands"
+	"#c:is_badlands"
   ]
 }

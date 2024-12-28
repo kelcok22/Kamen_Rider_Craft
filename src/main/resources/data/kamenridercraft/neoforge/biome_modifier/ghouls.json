@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#kamenridercraft:ghouls",
+  "spawners": {
+	"type": "kamenridercraft:ghouls",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}
