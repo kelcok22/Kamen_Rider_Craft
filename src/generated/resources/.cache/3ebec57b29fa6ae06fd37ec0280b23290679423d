@@ -1,5 +1,11 @@
-// 1.21.1	2024-12-13T19:40:23.2459453	Item Models: kamenridercraft
+// 1.21.1	2024-12-29T17:58:31.1036283	Item Models: kamenridercraft
 769c40204716b79903a33a0f47bf83daf86b30bb assets/kamenridercraft/models/item/helheim_button.json
 f86d141373dc18bc1d67980dd839817c41b040f1 assets/kamenridercraft/models/item/helheim_door.json
 2374b04a8f7183e8405c43bfbde70e70e8470c4e assets/kamenridercraft/models/item/helheim_fence.json
+527b763f714c5019ec81620945074f47085a3915 assets/kamenridercraft/models/item/holy_christmas.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
+06e20afd7e8b6beb96b9a14a7710c510ce9bba47 assets/kamenridercraft/models/item/signal_kaksarn.json
+81774cf98b125d485ea4a873afafd790b9fe7025 assets/kamenridercraft/models/item/signal_kikern.json
+3ffa4bf7ef99e41305c480d62faf1f2cde5cc017 assets/kamenridercraft/models/item/signal_mach.json
+e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/signal_magarl.json
+1f9aa6cc1d4b212b7ea117aaa80e69a182bcfd29 assets/kamenridercraft/models/item/signal_tomarle.json
