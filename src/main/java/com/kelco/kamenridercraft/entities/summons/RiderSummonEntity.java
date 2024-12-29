@@ -53,24 +53,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackMob {
-   private boolean swordgunMelee = false;
-   private final RangedBowAttackGoal<RiderSummonEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
-   private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.2D, false) {
-      public void stop() {
-         super.stop();
-         RiderSummonEntity.this.stopBeingAngry();
-         RiderSummonEntity.this.startPersistentAngerTimer();
-		 RiderSummonEntity.this.setAggressive(false);
-      }
-
-      public void start() {
-         super.start();
-		 RiderSummonEntity.this.setAggressive(true);
-      }
-   };
-   private boolean swordgunMeleeOnly;
-
+public class RiderSummonEntity extends BaseSummonEntity {
 	public RiderSummonEntity(EntityType<? extends RiderSummonEntity> type, Level level) {
 		super(type, level);
 		NAME="decade_illusion";
@@ -84,10 +67,10 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
 
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1.0D, 20.0F, 2.0F));
-		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1.0D, 20.0F, 2.0F));
+		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+		this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseAllyEntity.class, BaseSummonEntity.class)).setAlertOthers());
 		this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
@@ -99,24 +82,6 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
       	this.targetSelector.addGoal(4, new ResetUniversalAngerTargetGoal<>(this, true));
 
 	}
-
-	public void aiStep() {
-		ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-		if (this.getTarget() != null && (itemstack.getItem() instanceof BowItem && itemstack.getItem() instanceof SwordItem || itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns"))))) {
-         boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
-         || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
-         || this.getTarget().distanceToSqr(this) < 40.0D));
-
-         if (swordgunMeleeOnly) this.setSwordgunMelee(true);
-         else if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
-      }
-
-		super.aiStep();
-	}
-
-    public void setMeleeOnly(boolean p_21840_) {
-       this.swordgunMeleeOnly = p_21840_;
-    }
 
     @Override
     public void bindToPlayer(Player player) {
@@ -140,81 +105,6 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
 		return SoundEvents.VILLAGER_HURT;
 	}
 
-    public void reassessWeaponGoal() {
-       if (this.level() != null && !this.level().isClientSide) {
-          this.goalSelector.removeGoal(this.meleeGoal);
-          this.goalSelector.removeGoal(this.bowGoal);
-          ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
-          if (itemstack.getItem() instanceof BowItem) {
-             this.bowGoal.setMinAttackInterval(30);
-             this.goalSelector.addGoal(2, this.bowGoal);
-          } else {
-             this.goalSelector.addGoal(2, this.meleeGoal);
-          }
-
-       }
-    }
-
-    public void setSwordgunMelee(boolean melee) {
-       if (this.level() != null && !this.level().isClientSide) {
-         if (melee) {
-           this.goalSelector.removeGoal(this.bowGoal);
-           this.goalSelector.addGoal(2, this.meleeGoal);
-         } else {
-           int i = 30;
-
-           this.bowGoal.setMinAttackInterval(i);
-			  this.goalSelector.removeGoal(this.meleeGoal);
-           this.goalSelector.addGoal(2, this.bowGoal);
-         }
-         swordgunMelee = melee;
-		}
-    }
-
-    public void addAdditionalSaveData(CompoundTag p_30418_) {
-       super.addAdditionalSaveData(p_30418_);
-       p_30418_.putBoolean("SwordgunMeleeOnly", this.swordgunMeleeOnly);
-    }
-
-    public void readAdditionalSaveData(CompoundTag p_32152_) {
-       super.readAdditionalSaveData(p_32152_);
-       this.reassessWeaponGoal();
-       this.swordgunMeleeOnly = p_32152_.getBoolean("SwordgunMeleeOnly");
-    }
-	
-    public void setItemSlot(EquipmentSlot p_32138_, ItemStack p_32139_) {
-       super.setItemSlot(p_32138_, p_32139_);
-       if (this.level() != null && !this.level().isClientSide) this.reassessWeaponGoal();
-    }
-
-    public void performRangedAttack(LivingEntity target, float distanceFactor) {
-       ItemStack weapon = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, (item) -> {
-          return item instanceof BowItem;
-       }));
-       ItemStack itemstack1 = this.getProjectile(weapon);
-       AbstractArrow abstractarrow = this.getArrow(itemstack1, distanceFactor, weapon);
-       Item var7 = weapon.getItem();
-       if (var7 instanceof ProjectileWeaponItem weaponItem) {
-          abstractarrow = weaponItem.customArrow(abstractarrow, itemstack1, weapon);
-       }
- 
-       double d0 = target.getX() - this.getX();
-       double d1 = target.getY(0.3333333333333333) - abstractarrow.getY();
-       double d2 = target.getZ() - this.getZ();
-       double d3 = Math.sqrt(d0 * d0 + d2 * d2);
-       abstractarrow.shoot(d0, d1 + d3 * 0.20000000298023224, d2, 1.6F, (float)(14 - this.level().getDifficulty().getId() * 4));
-       this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));
-       this.level().addFreshEntity(abstractarrow);
-    }
-
-    protected AbstractArrow getArrow(ItemStack arrow, float velocity, @Nullable ItemStack weapon) {
-        return ProjectileUtil.getMobArrow(this, arrow, velocity, weapon);
-    }
-
-   public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
-      return p_32144_ instanceof BowItem;
-   }
-
 	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
 		if (!(p_30389_ instanceof Creeper)&&!(p_30389_ instanceof Ghast)) {
             if (p_30389_ instanceof BaseAllyEntity) {
@@ -232,7 +122,7 @@ public class RiderSummonEntity extends BaseSummonEntity implements RangedAttackM
 		    }
         } else if (this.getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof BowItem) {
             if (this.getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof SwordItem
-            || this.getItemBySlot(EquipmentSlot.MAINHAND).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) return !this.swordgunMeleeOnly;
+            || this.getItemBySlot(EquipmentSlot.MAINHAND).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) return !this.getMeleeOnly();
             else return true;
         } else return false;
 	}

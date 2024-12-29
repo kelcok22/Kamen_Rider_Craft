@@ -1,9 +1,13 @@
 {
   "values": [
-	  "kamenridercraft:kurokage_trooper",
-	  "kamenridercraft:zangetsu_shin",
-	  "kamenridercraft:marika",
-	  "kamenridercraft:duke",
-	  "kamenridercraft:sigurd"
+	"kamenridercraft:kurokage_trooper",
+	"kamenridercraft:zangetsu_shin",
+	"kamenridercraft:marika",
+	"kamenridercraft:duke",
+	"kamenridercraft:sigurd",
+	"kamenridercraft:roshuo",
+	"kamenridercraft:redyue",
+	"kamenridercraft:demushu",
+	"kamenridercraft:lord_baron"
   ]
 }

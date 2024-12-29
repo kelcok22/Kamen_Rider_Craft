@@ -19,40 +19,26 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 public class BossBlock extends BaseBlock {
 
-	private List<Component> TEXT;
+	private List<Component> TEXT = Lists.newArrayList();
 	private Supplier<? extends EntityType<? extends BaseHenchmenEntity>> BOSS;
 	private List<Block>  BLOCK;
 	private int NUM;
 	
-	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,Component text) {
+	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss) {
 		super(prop);
-		TEXT = Lists.newArrayList(text);
 		BOSS =boss;
 	}
 
-	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,List<Component> text) {
+	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,Block... block) {
 		super(prop);
-		TEXT = text;
-		BOSS =boss;
-	}
-
-	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,Component text,int nun,Block... block) {
-		super(prop);
-		TEXT = Lists.newArrayList(text);
 		BOSS =boss;
 		BLOCK = Lists.newArrayList(block);
-		
-	}
-
-	public BossBlock(Properties prop,Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss,List<Component> text,int nun,Block... block) {
-		super(prop);
-		TEXT = text;
-		BOSS =boss;
-		BLOCK = Lists.newArrayList(block);
-		
 	}
 	
-	
+	public BossBlock addLine(Component text) {
+		TEXT.add(text);
+		return this;
+	}
 	
 	@Override
 	public void playerDestroy(Level wolrd, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity p_49831_, ItemStack stack) {
@@ -86,9 +72,7 @@ public class BossBlock extends BaseBlock {
 		if (boss != null) {
 			boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
 			wolrd.addFreshEntity(boss);
-			for (int i = 0; i < TEXT.size(); i++) {
-				player.sendSystemMessage(TEXT.get(i));
-			}		
+			if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
 	}
 	     
 	}
