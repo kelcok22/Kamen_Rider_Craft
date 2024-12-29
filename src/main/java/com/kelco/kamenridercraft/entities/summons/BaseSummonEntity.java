@@ -120,10 +120,10 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
 		this.goalSelector.addGoal(1, new PanicGoal(this, 1.4D));
-		this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F));
-		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-		this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F));
+		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseAllyEntity.class, BaseSummonEntity.class)).setAlertOthers());
 		this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
@@ -186,9 +186,9 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
           ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
           if (itemstack.getItem() instanceof BowItem) {
              this.bowGoal.setMinAttackInterval(30);
-             this.goalSelector.addGoal(3, this.bowGoal);
+             this.goalSelector.addGoal(2, this.bowGoal);
           } else {
-             this.goalSelector.addGoal(3, this.meleeGoal);
+             this.goalSelector.addGoal(2, this.meleeGoal);
           }
 
        }
@@ -198,13 +198,13 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
        if (this.level() != null && !this.level().isClientSide) {
          if (melee) {
            this.goalSelector.removeGoal(this.bowGoal);
-           this.goalSelector.addGoal(3, this.meleeGoal);
+           this.goalSelector.addGoal(2, this.meleeGoal);
          } else {
            int i = 30;
 
            this.bowGoal.setMinAttackInterval(i);
 			  this.goalSelector.removeGoal(this.meleeGoal);
-           this.goalSelector.addGoal(3, this.bowGoal);
+           this.goalSelector.addGoal(2, this.bowGoal);
          }
          swordgunMelee = melee;
 		}
