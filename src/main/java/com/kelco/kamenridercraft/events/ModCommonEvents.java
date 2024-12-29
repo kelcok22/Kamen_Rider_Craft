@@ -13,9 +13,7 @@ import com.kelco.kamenridercraft.entities.allies.*;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
-import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
-import com.kelco.kamenridercraft.entities.summons.ViceEntity;
+import com.kelco.kamenridercraft.entities.summons.*;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
@@ -540,6 +538,10 @@ public class ModCommonEvents {
 		event.put(MobsCore.MARIKA.get(), MarikaEntity.setAttributes().build());
 		event.put(MobsCore.DUKE.get(), DukeEntity.setAttributes().build());
 		event.put(MobsCore.SIGURD.get(), SigurdEntity.setAttributes().build());
+		event.put(MobsCore.ROSYUO.get(), RosyuoEntity.setAttributes().build());
+		event.put(MobsCore.REDYUE.get(), RedyueEntity.setAttributes().build());
+		event.put(MobsCore.DEMUSHU.get(), DemushuEntity.setAttributes().build());
+		event.put(MobsCore.LORD_BARON.get(), LordBaronEntity.setAttributes().build());
 
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
@@ -617,6 +619,7 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
+		event.put(MobsCore.DECADE_ARMOR_EX_AID.get(), DecadeArmorExAidEntity.setAttributes().build());
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());
 
 	}

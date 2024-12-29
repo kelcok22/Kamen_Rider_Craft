@@ -35,6 +35,10 @@ public class CommonConfig
             .comment(" (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?")
             .define("mightyBrotherSpawning", true);
 
+    private static final ModConfigSpec.BooleanValue DECADE_ARMOR_EX_AID_SPAWNING = BUILDER
+            .comment(" (default: true) Should using a DecadeArmor Ex-Aid form spawn the other side?")
+            .define("decadeExAidSpawning", true);
+
     private static final ModConfigSpec.BooleanValue VICE_SPAWNING = BUILDER
             .comment(" (default: true) Should Vice spawn if you are playing as Kamen Rider Revi?")
             .define("viceSpawning", true);
@@ -54,6 +58,7 @@ public class CommonConfig
     public static int bossSpawnRate;
     public static boolean kintarosTissueDrop;
     public static boolean mightyBrotherSpawning;
+    public static boolean decadeExAidSpawning;
     public static boolean viceSpawning;
     /*public static String magicNumberIntroduction;
     public static Set<Item> items;
@@ -70,6 +75,7 @@ public class CommonConfig
         bossSpawnRate = BOSS_SPAWN_RATE.get();
         kintarosTissueDrop = KINTAROS_TISSUE_DROP.get();
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
+        decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();
         BUILDER.pop();
 

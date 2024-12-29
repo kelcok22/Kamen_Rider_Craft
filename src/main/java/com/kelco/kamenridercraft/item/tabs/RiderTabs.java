@@ -8,6 +8,10 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.bosses.DemushuEntity;
+import com.kelco.kamenridercraft.entities.bosses.LordBaronEntity;
+import com.kelco.kamenridercraft.entities.bosses.RedyueEntity;
+import com.kelco.kamenridercraft.entities.bosses.RosyuoEntity;
 import com.kelco.kamenridercraft.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -636,6 +640,10 @@ public class RiderTabs {
             event.accept(MobsCore.MARIKA_SPAWN_EGG);
             event.accept(MobsCore.DUKE_SPAWN_EGG);
             event.accept(MobsCore.SIGURD_SPAWN_EGG);
+		    event.accept(MobsCore.ROSYUO_SPAWN_EGG);
+		    event.accept(MobsCore.REDYUE_SPAWN_EGG);
+		    event.accept(MobsCore.DEMUSHU_SPAWN_EGG);
+		    event.accept(MobsCore.LORD_BARON_SPAWN_EGG);
 
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 

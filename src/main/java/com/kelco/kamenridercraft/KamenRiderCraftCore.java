@@ -353,6 +353,10 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.MARIKA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DUKE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SIGURD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ROSYUO.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.REDYUE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DEMUSHU.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.LORD_BARON.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
@@ -430,6 +434,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DECADE_ARMOR_EX_AID.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
 
         }

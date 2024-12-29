@@ -1921,6 +1921,10 @@
   "item.kamenridercraft.dandeliner": "Dandeliner Lockseed",
   "item.kamenridercraft.tulip_hopper": "Tulip Hopper Lockseed",
 
+  "item.kamenridercraft.lord_baron_fragment": "Lord Baron Fragment",
+  "item.kamenridercraft.lord_baron_fragment_2": "Lord Baron Fragment",
+  "item.kamenridercraft.lord_baron_fragment_3": "Lord Baron Fragment",
+
   "item.kamenridercraft.gaim_horse_armor": "Gaim Horse Armor",
 
   "item.kamenridercraft.drive_logo": "Drive Logo",
@@ -3698,6 +3702,10 @@
 "entity.kamenridercraft.marika": "Kamen Rider Marika",
 "entity.kamenridercraft.duke": "Kamen Rider Duke",
 "entity.kamenridercraft.sigurd": "Kamen Rider Sigurd",
+"entity.kamenridercraft.rosyuo": "Rosyuo",
+"entity.kamenridercraft.redyue": "Redyue",
+"entity.kamenridercraft.demushu": "Demushu",
+"entity.kamenridercraft.lord_baron": "Lord Baron",
 "entity.kamenridercraft.gamma_commandos": "Gamma Commando",
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -3774,6 +3782,8 @@
 
 "entity.kamenridercraft.rider_summon": "Rider Summon",
 "entity.kamenridercraft.paradx_summon": "Para-DX Summon",
+"entity.kamenridercraft.decade_armor_ex_aid": "DecadeArmor Ex-Aid Form",
+"entity.kamenridercraft.vice": "Vice",
 
 "item.kamenridercraft.shocker_combatman_spawn_egg": "Shocker Combatman Spawn Egg",
 "item.kamenridercraft.shocker_riders_spawn_egg": "Shocker Rider Spawn Egg",
@@ -3846,6 +3856,10 @@
   "item.kamenridercraft.marika_spawn_egg": "Marika Spawn Egg",
   "item.kamenridercraft.duke_spawn_egg": "Duke Spawn Egg",
   "item.kamenridercraft.sigurd_spawn_egg": "Sigurd Spawn Egg",
+  "item.kamenridercraft.rosyuo_spawn_egg": "Rosyuo Spawn Egg",
+  "item.kamenridercraft.redyue_spawn_egg": "Redyue Spawn Egg",
+  "item.kamenridercraft.demushu_spawn_egg": "Demushu Spawn Egg",
+  "item.kamenridercraft.lord_baron_spawn_egg": "Lord Baron Spawn Egg",
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
 
@@ -4110,6 +4124,10 @@
 "block.kamenridercraft.powered_up_core_boss_block": "Powered Up Core Boss Block",
 "block.kamenridercraft.ancient_ooo_boss_block": "Ancient OOO Boss Block",
   "block.kamenridercraft.wiseman_boss_block": "Wiseman Boss Block",
+  "block.kamenridercraft.rosyuo_boss_block": "Rosyuo Boss Block",
+  "block.kamenridercraft.redyue_boss_block": "Redyue Boss Block",
+  "block.kamenridercraft.demushu_boss_block": "Demushu Boss Block",
+  "block.kamenridercraft.lord_baron_boss_block": "Lord Baron Boss Block",
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
   "block.kamenridercraft.night_rogue_boss_block": "Night Rogue Boss Block",
   "block.kamenridercraft.evol_boss_block": "Evol Boss Block",

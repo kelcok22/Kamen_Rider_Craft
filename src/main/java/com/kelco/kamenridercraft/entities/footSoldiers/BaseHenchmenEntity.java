@@ -38,6 +38,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
+    public double BOW_DISTANCE = 40.0D;
     private boolean swordgunMelee = false;
     private final RangedBowAttackGoal<RiotrooperEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
@@ -89,7 +90,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
         if (this.getTarget() != null && itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) {
             boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
                     || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
-                    || this.getTarget().distanceToSqr(this) < 40.0D));
+                    || this.getTarget().distanceToSqr(this) < BOW_DISTANCE));
             if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
         }
         super.aiStep();
@@ -180,9 +181,6 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
         }
     }
 
-
-
-
     public void setSwordgunMelee(boolean melee) {
         if (this.level() != null && !this.level().isClientSide) {
             if (melee) {
@@ -195,6 +193,10 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
             }
             swordgunMelee = melee;
         }
+    }
+
+    public boolean getSwordgunMelee() {
+        return this.swordgunMelee;
     }
 
     public void readAdditionalSaveData(CompoundTag p_32152_) {

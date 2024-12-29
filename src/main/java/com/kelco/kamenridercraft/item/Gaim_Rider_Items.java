@@ -352,6 +352,15 @@ public class Gaim_Rider_Items {
 
 	public static final DeferredItem<Item> HERO_LOCKSEED = ITEMS.register("hero_lockseed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT = ITEMS.register("lord_baron_fragment",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_2 = ITEMS.register("lord_baron_fragment_2",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_3 = ITEMS.register("lord_baron_fragment_3",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 	/**
 	drive_lockseed
 	 gaim_lockseed
