@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.util.List;
 
 
+import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -29,6 +30,10 @@ public class BaseItem extends Item {
         return this;
     }
 
+    public BaseItem has_basic_model() {
+        ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
+        return this;
+    }
 
     public ItemStack getCraftingRemainingItem(ItemStack stack)
     {

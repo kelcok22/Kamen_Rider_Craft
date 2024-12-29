@@ -187,27 +187,27 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_MAGARL = ITEMS.register("signal_magarl",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_magarl_tire","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_KAKSARN = ITEMS.register("signal_kaksarn",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_kaksarn_tire","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_TOMARLE = ITEMS.register("signal_tomarle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_tomarle_tire","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_KIKERN= ITEMS.register("signal_kikern",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kourin_kikern_tire","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
