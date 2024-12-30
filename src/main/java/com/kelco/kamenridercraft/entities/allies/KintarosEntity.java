@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
@@ -121,7 +121,7 @@ public class KintarosEntity extends BaseAllyEntity {
 					if (!p_30412_.getAbilities().instabuild) {
 					   itemstack.shrink(1);
 					}
-					if (CommonConfig.kintarosTissueDrop) {
+					if (ServerConfig.kintarosTissueDrop) {
 						for (int i = 0; i < 10; i++) {
 							ItemEntity tissue = new ItemEntity(p_30412_.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
 							tissue.setPickUpDelay(40);

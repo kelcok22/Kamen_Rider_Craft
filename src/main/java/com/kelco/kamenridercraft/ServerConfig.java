@@ -15,7 +15,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
 @EventBusSubscriber(modid = KamenRiderCraftCore.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
-public class CommonConfig
+public class ServerConfig
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
@@ -23,9 +23,9 @@ public class CommonConfig
             .comment(" (default: 100) How much durability should a weapon/tool have when summoned rather than obtained normally? Set to 0 for the tool's normal durability.")
             .defineInRange("summonedItemDurability", 100, 0, Integer.MAX_VALUE);
 
-    private static final ModConfigSpec.IntValue BOSS_SPAWN_RATE = BUILDER
-            .comment(" (default: 10, i.e. 1 in 10) A boss should spawn from 1 in how many mobs?")
-            .defineInRange("bossSpawnRate", 10, 1, Integer.MAX_VALUE);
+    private static final ModConfigSpec.DoubleValue BOSS_SPAWN_RATE = BUILDER
+            .comment(" (default: 10.0%) How often should the mobs spawn bosses when killed?")
+            .defineInRange("bossSpawnRate", 10.0, 0.0, 100.0);
 
     private static final ModConfigSpec.BooleanValue KINTAROS_TISSUE_DROP = BUILDER.pop().push("Series-Specific Settings")
             .comment(" (default: true) Should Kintaros drop paper (tissues) when transformed into his Den-O form?")
@@ -55,7 +55,7 @@ public class CommonConfig
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static int summonedItemDurability;
-    public static int bossSpawnRate;
+    public static double bossSpawnRate;
     public static boolean kintarosTissueDrop;
     public static boolean mightyBrotherSpawning;
     public static boolean decadeExAidSpawning;
@@ -77,7 +77,6 @@ public class CommonConfig
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();
-        BUILDER.pop();
 
         /* convert the list of strings into a set of items
         items = ITEM_STRINGS.get().stream()

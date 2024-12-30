@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wonder_ride_book",
+  "pattern": [
+    "RIR",
+    "IGI",
+    "RIR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:iron_ingot"
+    }, "I": {
+      "item": "minecraft:redstone"
+    }, "G": {
+      "item": "kamenridercraft:blank_wonder_ride_book"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:sword_of_logos_book_analyzer"
+  }
+}

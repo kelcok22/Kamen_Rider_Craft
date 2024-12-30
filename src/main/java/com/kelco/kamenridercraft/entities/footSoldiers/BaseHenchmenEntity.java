@@ -40,7 +40,7 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
     private boolean swordgunMelee = false;
-    private final RangedBowAttackGoal<RiotrooperEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+    private final RangedBowAttackGoal<BaseHenchmenEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
         public void stop() {
             super.stop();

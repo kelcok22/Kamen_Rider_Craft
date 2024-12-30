@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
 import net.minecraft.ChatFormatting;
@@ -29,7 +29,7 @@ public class NeotrooperEntity extends BaseHenchmenEntity{
     
 	public void remove(RemovalReason p_149847_) {
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				BaseHenchmenEntity boss = MobsCore.CAUCASUS.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

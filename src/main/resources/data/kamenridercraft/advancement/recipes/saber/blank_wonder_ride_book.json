@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:saber/saberhead",
 	  "kamenridercraft:saber/sabertroso",
-	  "kamenridercraft:saber/saberlegs"
+	  "kamenridercraft:saber/saberlegs",
+	  "kamenridercraft:saber/sword_of_logos_book_analyzer"
 	]
   },
   "sends_telemetry_event": false

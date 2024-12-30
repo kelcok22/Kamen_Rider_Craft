@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:sarutobi_ninjaden_wonder_ride_book"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:saber/sword_of_logos_buckle_kenzan",
+	  "kamenridercraft:saber/fuusouken_hayate_ittouryu",
+	  "kamenridercraft:saber/fuusouken_hayate_ittouryu2",
+	  "kamenridercraft:saber/fuusouken_hayate_nitouryu",
+	  "kamenridercraft:saber/fuusouken_hayate_nitouryu2",
+	  "kamenridercraft:saber/fuusouken_hayate_shuriken"
+	]
+  },
+  "sends_telemetry_event": false
+}

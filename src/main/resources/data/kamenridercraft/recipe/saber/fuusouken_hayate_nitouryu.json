@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kenzan",
+  "ingredients": [ 
+    {
+      "item": "kamenridercraft:fuusouken_hayate_ittouryu"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:fuusouken_hayate_nitouryu"
+  }
+}

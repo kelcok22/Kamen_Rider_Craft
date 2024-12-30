@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.ChatFormatting;
@@ -29,7 +29,7 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:

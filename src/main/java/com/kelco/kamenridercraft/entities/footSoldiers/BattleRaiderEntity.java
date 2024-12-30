@@ -4,7 +4,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
@@ -47,7 +47,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
 					case 0:
