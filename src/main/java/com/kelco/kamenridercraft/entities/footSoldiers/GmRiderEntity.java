@@ -52,7 +52,6 @@ public class GmRiderEntity extends BaseHenchmenEntity {
 		case 0:
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.MAGNUM_RAISE_BUCKLE.get(), 2);
 			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.MAGNUM_SHOOTER_40X.get()));
-			this.reassessWeaponGoal();
 			break;
 		case 1:
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.BOOST_RAISE_BUCKLE.get(), 2);
@@ -76,12 +75,10 @@ public class GmRiderEntity extends BaseHenchmenEntity {
 		case 6:
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.ARROW_RAISE_BUCKLE.get(), 2);
 			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_ARROW.get()));
-			this.reassessWeaponGoal();
 			break;
 		case 7:
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.WATER_RAISE_BUCKLE.get(), 2);
 			this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Geats_Rider_Items.RAISE_WATER.get()));
-			this.reassessWeaponGoal();
 			break;
 		case 8:
 			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Geats_Rider_Items.HAMMER_RAISE_BUCKLE.get(), 2);

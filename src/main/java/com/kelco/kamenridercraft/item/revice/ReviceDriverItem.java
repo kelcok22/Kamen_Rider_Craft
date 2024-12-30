@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.revice;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.ViceEntity;
@@ -49,7 +49,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 
 	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
-		if (entity instanceof Player player && CommonConfig.viceSpawning && !viceSummoned(player)
+		if (entity instanceof Player player && ServerConfig.viceSpawning && !viceSummoned(player)
 		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
@@ -58,7 +58,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
 		if (entity instanceof Player player && isTransformed(player)
-		&& CommonConfig.viceSpawning && !viceSummoned(player)
+		&& ServerConfig.viceSpawning && !viceSummoned(player)
 		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);

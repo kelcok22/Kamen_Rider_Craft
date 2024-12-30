@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
@@ -70,7 +70,7 @@ public class RideplayerEntity extends BaseHenchmenEntity {
 	public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 			   	case 0:

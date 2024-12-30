@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.zi_o;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.DecadeArmorExAidEntity;
@@ -43,7 +43,7 @@ public class ZikuDriverItem extends RiderDriverItem {
     }
 
 	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
-		if (entity instanceof Player player && CommonConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
+		if (entity instanceof Player player && ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
 		&& itemstack.getItem() == Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get()))
@@ -52,7 +52,7 @@ public class ZikuDriverItem extends RiderDriverItem {
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		if (entity instanceof Player player && isTransformed(player)
-		&& CommonConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
+		&& ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
 		&& itemstack.getItem() == Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()
 		&& RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get())
 			summonDecadeExAid(player);

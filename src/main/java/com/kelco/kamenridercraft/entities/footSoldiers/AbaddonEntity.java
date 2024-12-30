@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import javax.annotation.Nullable;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
@@ -68,7 +68,7 @@ public class AbaddonEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
 					case 0:
@@ -117,7 +117,6 @@ public class AbaddonEntity extends BaseHenchmenEntity {
 	  if (p_34297_.getRandom().nextInt(2) == 1) {
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.SLASH_ABADDO_RISER.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()));
-		this.reassessWeaponGoal();
 	  }
       return p_34300_;
    }

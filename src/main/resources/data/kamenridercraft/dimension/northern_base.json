@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "kamenridercraft:northern_base",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "kamenridercraft:northern_base"
+    }
+  }
+}

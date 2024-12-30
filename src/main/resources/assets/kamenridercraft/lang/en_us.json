@@ -2859,6 +2859,9 @@
 "item.kamenridercraft.seiken_swordriver_saber": "Seiken Swordriver (Saber)",
   "item.kamenridercraft.seiken_swordriver_blades": "Seiken Swordriver (Blades)",
   "item.kamenridercraft.seiken_swordriver_espada": "Seiken Swordriver (Espada)",
+  "item.kamenridercraft.sword_of_logos_buckle_buster": "Sword of Logos Buckle (Buster)",
+  "item.kamenridercraft.sword_of_logos_buckle_kenzan": "Sword of Logos Buckle (Kenzan)",
+  "item.kamenridercraft.sword_of_logos_buckle_slash": "Sword of Logos Buckle (Slash)",
 
   "item.kamenridercraft.jaken_caliburdriver": "Jaken Caliburdriver",
 
@@ -2866,7 +2869,10 @@
   "item.kamenridercraft.suiseiken_nagare": "Suiseiken Nagare",
   "item.kamenridercraft.raimeiken_ikazuchi": "Raimeiken Ikazuchi",
   "item.kamenridercraft.dogouken_gekido": "Dogouken Gekido",
-  "item.kamenridercraft.fuusouken_hayate": "Fuusouken Hayate",
+  "item.kamenridercraft.fuusouken_hayate_ittouryu": "Fuusouken Hayate (Ittouryu Mode)",
+  "item.kamenridercraft.fuusouken_hayate_nitouryu": "Fuusouken Hayate (Nitouryu Mode)",
+  "item.kamenridercraft.fuusouken_hayate_nitouryu2": "Fuusouken Hayate (Nitouryu Mode)",
+  "item.kamenridercraft.fuusouken_hayate_shuriken": "Fuusouken Hayate (Shuriken Mode)",
   "item.kamenridercraft.onjuuken_suzune": "Onjuuken Suzune",
   "item.kamenridercraft.ankokuken_kurayami": "Ankokuken Kurayami",
   "item.kamenridercraft.kingexcalibur": "Kingexcalibur",
@@ -2895,6 +2901,8 @@
   "item.kamenridercraft.dragonic_knight_wonder_ride_book": "Dragonic Knight Wonder Ride Book",
 
   "item.kamenridercraft.happy_brave_dragon_wonder_ride_book": "Happy Brave Dragon Wonder Ride Book",
+
+  "item.kamenridercraft.book_gate_wonder_ride_book": "Book Gate Wonder Ride Book",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
@@ -3301,7 +3309,8 @@
 "item.kamenridercraft.valvaradriver": "Valvaradriver",
 "item.kamenridercraft.dreadriver": "Dreadriver",
 "item.kamenridercraft.legendriver": "Legendriver",
-"item.kamenridercraft.eldoradriver": "Eldoradriver",
+"item.kamenridercraft.eldoradriver": "Eldoradriver (Dorado)",
+"item.kamenridercraft.eldoradriver_eld": "Eldoradriver (Eld)",
 
 "item.kamenridercraft.gotcharge_gun": "Gotcharge Gun",
 "item.kamenridercraft.gotchar_tornado": "Gotchartornado",
@@ -4114,6 +4123,7 @@
   "block.kamenridercraft.fullbottle_solidifier": "Fullbottle Solidifier",
   "block.kamenridercraft.hiden_3d_printer": "HIDEN 3D Printer",
 "block.kamenridercraft.zaia_3d_printer": "ZAIA 3D Printer",
+"block.kamenridercraft.sword_of_logos_book_analyzer": "Sword of Logos Book Analyzer",
 "block.kamenridercraft.vistamp_bar": "Vistamp Bar",
 "block.kamenridercraft.kamen_cafe_counter": "Kamen Cafe Counter",
 

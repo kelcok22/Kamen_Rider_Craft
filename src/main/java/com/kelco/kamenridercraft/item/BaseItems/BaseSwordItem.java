@@ -23,6 +23,7 @@ public class BaseSwordItem extends SwordItem {
 	private Boolean Change_sword = false;
 	private Boolean Form_item = false;
 	private Boolean Henshin_item = false;
+    private Item craftingRemainingItem = null;
 
 
 	public BaseSwordItem(Tier toolTier, int Atk, float Spd, Properties prop) {
@@ -79,6 +80,33 @@ public class BaseSwordItem extends SwordItem {
 		CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 		tag.putInt("item_mode", Get_Mode(itemstack)==0? 1:0);
 	}
+
+    public BaseSwordItem KeepDifItem(Item Dif) {
+        craftingRemainingItem=Dif;
+        return this;
+    }
+
+    public BaseSwordItem KeepItem() {
+        craftingRemainingItem=this;
+        return this;
+    }
+
+    public ItemStack getCraftingRemainingItem(ItemStack stack)
+    {
+        if (stack.getItem() instanceof BaseSwordItem) {
+            if (!hasCraftingRemainingItem(stack))
+            {
+                return ItemStack.EMPTY;
+            }
+            return new ItemStack(craftingRemainingItem);
+        } else  return new ItemStack(this.getCraftingRemainingItem());
+    }
+
+
+    public boolean hasCraftingRemainingItem(ItemStack stack)
+    {
+        return ((BaseSwordItem)stack.getItem()).craftingRemainingItem!=null;
+    }
 
 
 

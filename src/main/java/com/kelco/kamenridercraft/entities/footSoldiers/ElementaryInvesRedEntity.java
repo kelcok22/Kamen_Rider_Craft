@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;

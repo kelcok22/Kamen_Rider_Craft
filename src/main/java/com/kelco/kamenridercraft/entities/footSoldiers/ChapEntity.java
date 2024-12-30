@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
 
-import com.kelco.kamenridercraft.CommonConfig;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -23,7 +23,7 @@ public class ChapEntity extends BaseHenchmenEntity {
 
 	public void remove(RemovalReason reason) {
 		if (reason == RemovalReason.KILLED) {
-			if (this.random.nextInt(CommonConfig.bossSpawnRate) == 0) {
+			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				BaseHenchmenEntity boss = MobsCore.SHADOWMOON.get().create(this.level());
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
