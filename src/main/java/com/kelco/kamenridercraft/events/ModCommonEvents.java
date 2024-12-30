@@ -6,6 +6,7 @@ import java.util.*;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -52,6 +53,7 @@ import net.minecraft.world.level.block.CakeBlock;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.*;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
@@ -456,6 +458,10 @@ public class ModCommonEvents {
 		}
 
 	}
+	@SubscribeEvent
+	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(ElementaryInvesModel.LAYER_LOCATION, ElementaryInvesModel::createBodyLayer);
+	}
 
 	@SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
@@ -533,6 +539,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.SORCERER.get(), SorcererEntity.setAttributes().build());
 		event.put(MobsCore.WISEMAN.get(), WisemanEntity.setAttributes().build());
 
+		event.put(MobsCore.ELEMENTARY_INVES_RED.get(), ElementaryInvesRedEntity.setAttributes().build());
 		event.put(MobsCore.KUROKAGE_TROOPER.get(), KurokageTrooperEntity.setAttributes().build());
 		event.put(MobsCore.ZANGETSU_SHIN.get(), ZangetsuShinEntity.setAttributes().build());
 		event.put(MobsCore.MARIKA.get(), MarikaEntity.setAttributes().build());
@@ -661,6 +668,8 @@ public class ModCommonEvents {
 
 		event.register(MobsCore.MAGE_FOOTSOLDIER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.MAGE_CAPTAIN.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+		event.register(MobsCore.ELEMENTARY_INVES_RED.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.GAMMA_COMMANDO.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

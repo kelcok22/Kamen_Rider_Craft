@@ -1,12 +1,7 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.client.renderer.AllyEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.AnkhRenderer;
-import com.kelco.kamenridercraft.client.renderer.BasicEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.BikeRenderer;
-import com.kelco.kamenridercraft.client.renderer.NewMoleImaginSandRenderer;
-import com.kelco.kamenridercraft.client.renderer.SummonedEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.*;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -128,6 +123,7 @@ public class KamenRiderCraftCore
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(ModCommonEvents::registerLayers);
         modEventBus.addListener(ModCommonEvents::entityAttributeEvent);
         modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
@@ -348,6 +344,7 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SORCERER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WISEMAN.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.ELEMENTARY_INVES_RED.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.KUROKAGE_TROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ZANGETSU_SHIN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MARIKA.get(), BasicEntityRenderer::new);
