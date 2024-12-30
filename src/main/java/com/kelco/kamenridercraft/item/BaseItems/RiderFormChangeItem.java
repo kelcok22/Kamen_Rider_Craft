@@ -302,7 +302,7 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public BaseItem AddNeedItemList(List<Item> NEED_ITEM) {
+    public RiderFormChangeItem AddNeedItemList(List<Item> NEED_ITEM) {
         needItemList=NEED_ITEM;
         HAS_NEED_ITEM_LIST=true;
         return this;
