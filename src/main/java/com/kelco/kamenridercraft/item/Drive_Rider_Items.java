@@ -95,6 +95,11 @@ public class Drive_Rider_Items {
 					.ChangeModel("drive.geo.json").AddCompatibilityList(new String[] {"protodrive"})
 					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHIFT_HEARTRON = ITEMS.register("heartronshift",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","heart","drivedriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SHIFT_HIGH_SPEED = ITEMS.register("high_speedshift",
@@ -127,21 +132,21 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> ATTACK_123 = ITEMS.register("attack123_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddNeedItemList(NEED_ITEM_ATTACK_123).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123).ChangeSlot(2));
 
 	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<Item>();
 
 	public static final DeferredItem<Item> PEOPLE_SAVER = ITEMS.register("people_saver_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"people_saver_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER).ChangeSlot(2));
 
 	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<Item>();
 
 	public static final DeferredItem<Item> KOUJI_GENBAR = ITEMS.register("kouji_genbar_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"kouji_genbar_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR).ChangeSlot(2));
 
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
@@ -312,6 +317,9 @@ public class Drive_Rider_Items {
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"protodrive",SHIFT_PROTO_SPEED , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> DRIVE_DRIVER_HEART = ITEMS.register("drivedriver_heart",
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"heart",SHIFT_HEARTRON , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
