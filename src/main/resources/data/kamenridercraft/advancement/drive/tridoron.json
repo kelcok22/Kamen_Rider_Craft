@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:tridoronshift"
+	},
+	"title": "Unlimited Drive",
+	"description": "Transform into Drive type Tridoron",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:drive/formula",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:drive_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:drive_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:drive_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:drivedriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tridoronshift_not_all\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

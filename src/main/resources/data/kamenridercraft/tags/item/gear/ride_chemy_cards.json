@@ -1,11 +1,16 @@
 {
   "values": [
 	"#kamenridercraft:gear/form_items/gotchard",
-	"kamenridercraft:madwheel_ride_chemy_card",
 	"#kamenridercraft:gear/form_items/majade",
 	"#kamenridercraft:gear/form_items/valvarad",
 	"#kamenridercraft:gear/replichemy_cards",
 	"#kamenridercraft:gear/form_items/gotchard_daybreak",
+	"kamenridercraft:beetlx_ride_chemy_card",
+	"kamenridercraft:x_wizard_ride_chemy_card",
+	"kamenridercraft:exceedfighter_ride_chemy_card",
+	"kamenridercraft:lixion_ride_chemy_card",
+	"kamenridercraft:x_fortress_ride_chemy_card",
+	"kamenridercraft:xeggdrasil_ride_chemy_card",
 	"kamenridercraft:santaclaus_ride_chemy_card",
 	"kamenridercraft:tonakailiner_ride_chemy_card"
   ]

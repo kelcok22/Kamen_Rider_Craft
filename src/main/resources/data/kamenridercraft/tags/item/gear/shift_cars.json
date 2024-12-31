@@ -2,7 +2,12 @@
   "values": [
 	"kamenridercraft:speedshift",
 	"kamenridercraft:wildshift",
+	"kamenridercraft:techniqueshift",
+	"kamenridercraft:deadheatshift",
+	"kamenridercraft:formulashift",
+	"kamenridercraft:tridoronshift",
 	"kamenridercraft:high_speedshift",
+	"kamenridercraft:specialshift",
 	"kamenridercraft:fruitsshift",
 	"kamenridercraft:maxflare",
 	"kamenridercraft:funkyspike",
@@ -15,9 +20,13 @@
 	"kamenridercraft:rumble_dump",
 	"kamenridercraft:mad_doctor",
 	"kamenridercraft:hooking_wrecker",
+	"kamenridercraft:burning_solar",
+	"kamenridercraft:colorful_commercial",
 	"kamenridercraft:fire_braver",
 	"kamenridercraft:rolling_gravity",
+	"kamenridercraft:deco_traveller",
 	"kamenridercraft:road_winter",
+	"kamenridercraft:amazing_circus",
 	"kamenridercraft:mega_maxflare",
 	"kamenridercraft:holy_christmas"
   ]
