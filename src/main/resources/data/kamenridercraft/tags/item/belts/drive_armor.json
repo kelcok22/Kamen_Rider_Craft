@@ -1,6 +1,8 @@
 {
   "values": [
 	  "kamenridercraft:drivedriver",
-	  "kamenridercraft:mach_driver_honoh"
+	  "kamenridercraft:mach_driver_honoh",
+	  "kamenridercraft:drivedriver_protodrive",
+	  "kamenridercraft:drivedriver_heart"
   ]
 }
