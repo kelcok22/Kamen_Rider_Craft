@@ -455,7 +455,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(ElementaryInvesRedEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":elementary_inves_red"));
 
     public static final DeferredItem<DeferredSpawnEggItem> ELEMENTARY_INVES_RED_SPAWN_EGG = ITEMS.register("elementary_inves_red_spawn_egg",
-            () -> new DeferredSpawnEggItem(ELEMENTARY_INVES_RED, 0x6a4916, 0x333333, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(ELEMENTARY_INVES_RED, 0xd6d5d0, 0xfc4130, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<KurokageTrooperEntity>> KUROKAGE_TROOPER = MOBLIST.register("kurokage_trooper",

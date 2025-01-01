@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottleSolidifier;
 import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
+import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.BuildDriverItem;
@@ -423,6 +424,9 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
 					.BestMatch(SCORPION_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+
+	public static final DeferredItem<Item> PANDORA_BOTTLE = ITEMS.register("pandora_bottle",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
 
 	public static final DeferredItem<Item> RABBIT_TANK_SPARKLING = ITEMS.register("rabbittank_sparkling_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_sparkling","build","build_driver_belt",
