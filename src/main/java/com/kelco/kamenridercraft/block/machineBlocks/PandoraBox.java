@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.block.machineBlocks;
 
 
+import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.BlockPos;
@@ -26,7 +27,7 @@ import java.util.Random;
 
 public class PandoraBox extends MachineBlock {
 
-    public static List<Item> PAANDORA_BOTTLE= new ArrayList<Item>();
+    public static List<Item> PANDORA_BOTTLE= new ArrayList<Item>();
     public static List<Item> PANDORA_PANEL_R= new ArrayList<Item>();
     public static List<Item> PANDORA_PANEL_G= new ArrayList<Item>();
     public static List<Item> PANDORA_PANEL_B= new ArrayList<Item>();
@@ -53,7 +54,32 @@ public class PandoraBox extends MachineBlock {
         return PushReaction.PUSH_ONLY;
     }
 
+    private Item getBottleDrop(int num) {
+        Random generator = new Random();
+        if (num==1){
+            int rand = generator.nextInt(PANDORA_PANEL_R.size());
+            return PANDORA_PANEL_R.get(rand);
+        } else {
+            int rand = generator.nextInt(PANDORA_BOTTLE.size());
+            return PANDORA_BOTTLE.get(rand);
+        }
+    }
 
+    @Override
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+
+        if (!level.isClientSide()) {
+            if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
+                process(player, level, pos, hand, getBottleDrop(0));
+                return ItemInteractionResult.SUCCESS;
+            }
+
+
+
+
+        }
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
 
     public PandoraBox AddToTabList(List<Block> TabList) {
         TabList.add(this);

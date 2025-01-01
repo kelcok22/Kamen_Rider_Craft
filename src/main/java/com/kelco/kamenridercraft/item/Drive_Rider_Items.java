@@ -112,7 +112,7 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_special","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_FRUITS = ITEMS.register("fruitsshift",
@@ -212,10 +212,10 @@ public class Drive_Rider_Items {
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_BURNING_SOLAR = ITEMS.register("burning_solar",
-			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_COLOR_COMMERCIAL = ITEMS.register("colorful_commercial",
-			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_FIRE_BRAVER = ITEMS.register("fire_braver",
@@ -231,7 +231,7 @@ public class Drive_Rider_Items {
 					.addAlternative(KOUJI_GENBAR.get()).ChangeSlot(2).AddToList(NEED_ITEM_KOUJI_GENBAR).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_DECO_TRAVELLER = ITEMS.register("deco_traveller",
-			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_ROAD_WINTER = ITEMS.register("road_winter",
@@ -240,7 +240,7 @@ public class Drive_Rider_Items {
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_AMAZING_CIRCUS= ITEMS.register("amazing_circus",
-			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MANTARN_F01 = ITEMS.register("mantarn_f01",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"f01_tire","drive","drivedriver_belt",

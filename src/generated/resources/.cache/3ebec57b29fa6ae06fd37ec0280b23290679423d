@@ -1,11 +1,16 @@
-// 1.21.1	2024-12-30T15:54:34.3592843	Item Models: kamenridercraft
+// 1.21.1	2025-01-01T23:26:32.8814758	Item Models: kamenridercraft
+feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
+597b835e5301cc9880ab4fe6fa14382e5d95267f assets/kamenridercraft/models/item/burning_solar.json
+78198f20d9d7b7aab8c7d82954077ba2f82427d7 assets/kamenridercraft/models/item/colorful_commercial.json
+352b7ba3793a7a69f55ff6ec3cc843e1f7a39d56 assets/kamenridercraft/models/item/deco_traveller.json
 769c40204716b79903a33a0f47bf83daf86b30bb assets/kamenridercraft/models/item/helheim_button.json
 f86d141373dc18bc1d67980dd839817c41b040f1 assets/kamenridercraft/models/item/helheim_door.json
 2374b04a8f7183e8405c43bfbde70e70e8470c4e assets/kamenridercraft/models/item/helheim_fence.json
+67a66157892dcc82a50867ac72c90e0c2701795b assets/kamenridercraft/models/item/pandora_bottle.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
 06e20afd7e8b6beb96b9a14a7710c510ce9bba47 assets/kamenridercraft/models/item/signal_kaksarn.json
 81774cf98b125d485ea4a873afafd790b9fe7025 assets/kamenridercraft/models/item/signal_kikern.json
 3ffa4bf7ef99e41305c480d62faf1f2cde5cc017 assets/kamenridercraft/models/item/signal_mach.json
 e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/signal_magarl.json
 1f9aa6cc1d4b212b7ea117aaa80e69a182bcfd29 assets/kamenridercraft/models/item/signal_tomarle.json
-ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/tridoronshift.json
+25c8b1a3f42e4225db92660b862e0ec7fe1c0a2a assets/kamenridercraft/models/item/specialshift.json
