@@ -1,0 +1,19 @@
+{
+	"name": "Poppingummy Gochizo (Charadeco ver.)",
+	"icon": "kamenridercraft:poppingummy_gochizo_charadeco_ver",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv Charadeco Cake (2024, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:poppingummy_gochizo_charadeco_ver",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		}
+	]
+}
