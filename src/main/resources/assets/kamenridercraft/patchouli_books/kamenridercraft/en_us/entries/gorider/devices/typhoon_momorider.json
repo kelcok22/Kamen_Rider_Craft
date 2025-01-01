@@ -1,0 +1,19 @@
+{
+	"name": "Typhoon (Momorider)",
+	"icon": "kamenridercraft:typhoon_momorider",
+	"category": "kamenridercraft:gorider/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(li)Kamen Sentai Gorider (2017, web series)$(br2)Used alongside the $(l:gorider/devices/armor)Gorider armor$(/l) to transform into $(l:gorider/riders/momorider)Momorider"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_momorider",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Gorider Armor",
+	"icon": "kamenridercraft:akariderhead",
+	"category": "kamenridercraft:gorider/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside a Gorider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akariderhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akaridertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akariderlegs"
+		}
+	]
+}

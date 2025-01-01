@@ -1,0 +1,19 @@
+{
+	"name": "Typhoon (Aorider)",
+	"icon": "kamenridercraft:typhoon_aorider",
+	"category": "kamenridercraft:gorider/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(li)Kamen Sentai Gorider (2017, web series)$(br2)Used alongside the $(l:gorider/devices/armor)Gorider armor$(/l) to transform into $(l:gorider/riders/aorider)Aorider"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_aorider",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Chaos Ring (Saigo)",
+	"icon": "kamenridercraft:chaos_ring_saigo",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used to craft Saigo's $(l:ride_kamens/devices/chaos_driver_saigo)Chaos Driver (Saigo)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chaos_ring_saigo",
+			"title": " ",
+			"text": "Drops from $(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
+		}
+	]
+}

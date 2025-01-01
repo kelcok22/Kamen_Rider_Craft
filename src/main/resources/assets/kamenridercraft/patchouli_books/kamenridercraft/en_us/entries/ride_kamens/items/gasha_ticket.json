@@ -1,0 +1,16 @@
+{
+	"name": "Gasha Ticket",
+	"icon": "kamenridercraft:gasha_ticket",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Drops $(l:ride_kamens/items/chaos_ring_saigo)Chaos$(/l) $(l:ride_kamens/items/chaos_ring_araki)Rings$(/l) when right-clicked"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ride_kamens/gasha_ticket"
+		}
+	]
+}

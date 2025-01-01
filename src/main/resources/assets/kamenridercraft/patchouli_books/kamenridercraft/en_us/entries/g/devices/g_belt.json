@@ -1,0 +1,16 @@
+{
+	"name": "G Belt",
+	"icon": "kamenridercraft:g_belt",
+	"category": "kamenridercraft:g/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider G (2009, TV special)$(br2)Used alongside the $(l:g/devices/armor)G armor$(/l) to transform into $(l:g/riders/g)Kamen Rider G"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/g_belt"
+		}
+	]
+}

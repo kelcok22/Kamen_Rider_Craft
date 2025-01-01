@@ -1,0 +1,19 @@
+{
+	"name": "Energy Drink",
+	"icon": "kamenridercraft:energy_drink",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Restores 1 hunger point when drank$(br2)Gives Speed III for 25 seconds"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:energy_drink",
+			"title": " ",
+			"text": "Traded by an apprentice Kamen Cafe Butler"
+		}
+	]
+}

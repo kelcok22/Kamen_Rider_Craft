@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item for most Decade items"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item for most Decade items$(br2)Drops $(l:decade/items/decade_card)Decade$(/l) and $(l:decade/items/diend_card)Diend's$(/l) Rider Cards when right-clicked"
 		},
 		{
 			"type": "patchouli:crafting",
