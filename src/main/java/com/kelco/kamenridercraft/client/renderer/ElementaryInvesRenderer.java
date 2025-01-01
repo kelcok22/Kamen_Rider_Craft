@@ -25,7 +25,7 @@ public class ElementaryInvesRenderer  extends  HumanoidMobRenderer<ElementaryInv
 
 
 	public ElementaryInvesRenderer(EntityRendererProvider.Context ctx, ModelLayerLocation ModelLayer) {
-		super(ctx, new ElementaryInvesModel<>(ctx.bakeLayer(ElementaryInvesModel.LAYER_LOCATION)),1,1,1,1);
+		super(ctx, new ElementaryInvesModel<>(ctx.bakeLayer(ElementaryInvesModel.LAYER_LOCATION)), 0.25f);
 
 	}
 
