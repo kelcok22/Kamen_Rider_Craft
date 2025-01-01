@@ -709,6 +709,17 @@ public class Build_Rider_Items {
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
 					.addShiftForm(EVOL_TRIGGER_KAIJIN.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> EVOL_X_FULL_BOTTLE = ITEMS.register("evol_x_full_bottle",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x","evol","evol_driver_belt_evol_x",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 	public static final DeferredItem<Item> MAD_ROGUE_BOTTLES = ITEMS.register("mad_rogue_bottles",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mad_rogue","evol_driver_belt_mad_rogue",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
