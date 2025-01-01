@@ -5,7 +5,7 @@
 	},
 	"title": "Initialize!",
 	"description": "Transform into Zero-One Realizing Hopper",
-	"frame": "challenge",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

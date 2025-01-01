@@ -5,7 +5,7 @@
 	},
 	"title": "Is There Arc?",
 	"description": "Transform into Kamen Rider Zero-Three",
-	"frame": "goal",
+	"frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
