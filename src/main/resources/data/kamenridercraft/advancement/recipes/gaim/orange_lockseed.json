@@ -21,6 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
+	  "kamenridercraft:gaim/gaim_logo",
 	  "kamenridercraft:gaim/sengoku_driver_gaim",
 	  "kamenridercraft:gaim/daidaimaru",
 	  "kamenridercraft:gaim/kabi_orange_lockseed",

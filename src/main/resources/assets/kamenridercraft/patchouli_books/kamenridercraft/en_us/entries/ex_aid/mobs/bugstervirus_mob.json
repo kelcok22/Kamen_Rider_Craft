@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:bugstervirus_mob",
-			"text": "Spawn locations: Plains, Forest, Taiga, Swamp, Birch Forest, Dark Forest, Snowy Taiga, Badlands"
+			"text": "Spawn locations: Plains, Sunflower Plains, Forest, Taiga, Swamp, Mangrove Swamp, Birch Forest, Dark Forest, Snowy Taiga, Badlands, Eroded Badlands, Wooded Badlands"
 		},
 		{
 			"type": "patchouli:text",

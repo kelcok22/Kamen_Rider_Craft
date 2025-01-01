@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:chap_grey",
-			"text": "Spawn locations: Plains, Forest, Taiga, Swamp, Frozen Ocean, Beach, Desert, Windswept Hills, Birch Forest, Dark Forest, Snowy Taiga, Savanna, Badlands"
+			"text": "Spawn locations: Plains, Sunflower Plains, Forest, Taiga, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Beach, Desert, Windswept Hills, Birch Forest, Dark Forest, Snowy Taiga, Savanna, Savanna Plateau, Windswept Savanna, Badlands, Eroded Badlands, Wooded Badlands"
 		},
 		{
 			"type": "patchouli:text",

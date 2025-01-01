@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:pantheras_luteus",
-			"text": "Spawn locations: Beach, Badlands, Wooded Badlands, $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
+			"text": "Spawn locations: Beach, Badlands, Eroded Badlands, Wooded Badlands, $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
 		},
 		{
 			"type": "patchouli:text",

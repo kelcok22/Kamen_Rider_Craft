@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:full_bottle",
 			"title": " ",
-			"text": "Drops from: TBD"
+			"text": "Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l)$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)"
 		}
 	]
 }

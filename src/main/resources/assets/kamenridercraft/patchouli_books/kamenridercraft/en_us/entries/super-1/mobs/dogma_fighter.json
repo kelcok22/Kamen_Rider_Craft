@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:dogma_fighter",
-			"text": "Spawn locations: Forest, Swamp, Snowy Plains, Beach, Desert, Taiga, Windswept Hills, Jungle, Birch Forest, Snowy Taiga"
+			"text": "Spawn locations: Forest, Swamp, Mangrove Swamp, Snowy Plains, Beach, Desert, Taiga, Windswept Hills, Jungle, Birch Forest, Snowy Taiga"
 		},
 		{
 			"type": "patchouli:text",
