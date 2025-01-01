@@ -25,17 +25,14 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class ElementaryInvesModel<T extends Mob> extends BasicMobModel<T> {
+public class ElementaryInvesModel<T extends Mob> extends PlayerModel<T> {
 	public static final ModelLayerLocation LAYER_LOCATION =
 			new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "elementary_inves_red"), "main");
 
-	private final ModelPart body3;
-	private final ModelPart body2;
 
 	public ElementaryInvesModel(ModelPart p_170810_) {
-		super(null);
-		this.body3 = this.head.getChild("body3");
-		this.body2 = this.head.getChild("body2");
+		super(p_170810_,false);
+
 
 	}
 
@@ -52,10 +49,6 @@ public class ElementaryInvesModel<T extends Mob> extends BasicMobModel<T> {
 		return LayerDefinition.create(meshdefinition, 128, 64);
 	}
 
-
-	protected Iterable<ModelPart> bodyParts() {
-		return Iterables.concat(super.bodyParts(), ImmutableList.of(this.body3, this.body2));
-	}
 
 	public static void addHead(MeshDefinition mesh) {
 		PartDefinition partdefinition = mesh.getRoot();
