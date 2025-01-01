@@ -15,6 +15,30 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Valen",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) and $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "doumaru",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:doumaru_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"name": "Doumaru Form",
+			"text": "Accessed with the $(l:gavv/items/doumaru_gochizo)Doumaru Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valen",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) and $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bushel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:bushel_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"name": "Bushel Form",
+			"text": "Accessed with the $(l:gavv/items/bushel_gochizo)Bushel Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valen",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) and $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
 		}
 	]
 }

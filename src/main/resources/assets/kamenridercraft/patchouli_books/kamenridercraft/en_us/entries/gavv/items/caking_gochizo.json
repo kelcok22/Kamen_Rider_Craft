@@ -1,0 +1,19 @@
+{
+	"name": "Caking Gochizo",
+	"icon": "kamenridercraft:caking_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#caking)Caking$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caking_gochizo",
+			"title": " ",
+			"text": "Obtained by eating cake with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

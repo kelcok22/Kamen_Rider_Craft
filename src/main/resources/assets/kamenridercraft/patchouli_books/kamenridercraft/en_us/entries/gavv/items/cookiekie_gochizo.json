@@ -1,8 +1,8 @@
 {
-	"name": "Cookiekie Gochizo",
+	"name": "Cookikkie Gochizo",
 	"icon": "kamenridercraft:cookiekie_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 12,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",
