@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:red_follower",
-			"text": "Spawn locations: Desert, Jungle, Savanna, Savanna Plateau, Beach, Badlands, Wooded Badlands"
+			"text": "Spawn locations: Desert, Jungle, Savanna, Savanna Plateau, Windswept Savanna, Beach, Badlands, Eroded Badlands, Wooded Badlands"
 		},
 		{
 			"type": "patchouli:text",

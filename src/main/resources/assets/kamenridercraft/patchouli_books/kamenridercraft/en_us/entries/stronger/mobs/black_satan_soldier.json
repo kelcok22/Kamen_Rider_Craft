@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:black_satan_soldier",
-			"text": "Spawn locations: Plains, Windswept Hills, Swamp, Frozen Ocean, Snowy Plains, Jungle, Birch Forest, Dark Forest, Windswept Forest, Savanna Plateau, Badlands"
+			"text": "Spawn locations: Plains, Sunflower Plains, Windswept Hills, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains, Jungle, Birch Forest, Dark Forest, Windswept Forest, Savanna, Savanna Plateau, Windswept Savanna, Badlands, Eroded Badlands, Wooded Badlands"
 		},
 		{
 			"type": "patchouli:text",

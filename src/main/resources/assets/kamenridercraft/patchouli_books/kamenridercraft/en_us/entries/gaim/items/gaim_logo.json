@@ -1,0 +1,12 @@
+{
+	"name": "Gaim Logo",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaim_logo"
+		}
+	]
+}

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:destron_combatman",
-			"text": "Spawn locations: Desert, Windswept Hills, Forest, Swamp, Frozen Ocean, Birch Forest, Snowy Taiga, Old Growth Pine Taiga, Windswept Forest, Badlands"
+			"text": "Spawn locations: Desert, Windswept Hills, Forest, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Birch Forest, Snowy Taiga, Old Growth Pine Taiga, Windswept Forest, Badlands, Eroded Badlands, Wooded Badlands"
 		},
 		{
 			"type": "patchouli:text",

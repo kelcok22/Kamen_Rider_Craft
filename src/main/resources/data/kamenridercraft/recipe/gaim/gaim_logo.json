@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rider_logo",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:paper"
+	}, 
+	{
+	  "item": "kamenridercraft:orange_lockseed"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:gaim_logo"
+  }
+}

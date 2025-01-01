@@ -1,0 +1,12 @@
+{
+	"name": "Saber Logo",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saber_logo"
+		}
+	]
+}

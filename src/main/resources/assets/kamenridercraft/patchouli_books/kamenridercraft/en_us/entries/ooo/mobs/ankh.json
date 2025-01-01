@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ankh_mob",
-			"text": "Spawn locations: Plains, Desert, Windswept Hills, Forest, Taiga, Swamp, River, Frozen Ocean, Frozen River, Snowy Plains"
+			"text": "Spawn locations: Plains, Sunflower Plains, Desert, Windswept Hills, Forest, Taiga, Swamp, Mangrove Swamp, River, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains"
 		},
 		{
 			"type": "patchouli:text",
