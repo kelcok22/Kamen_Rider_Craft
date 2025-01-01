@@ -1,0 +1,19 @@
+{
+	"name": "Nourishing Candy S",
+	"icon": "kamenridercraft:candy",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Restores 1 hunger point when eaten$(br2)Gives the Haste effect for 25 seconds$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into candy Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:candy",
+			"title": " ",
+			"text": "Traded by a novice Kamen Cafe Butler"
+		}
+	]
+}

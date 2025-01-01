@@ -1,0 +1,16 @@
+{
+	"name": "Contract Chaostone",
+	"icon": "kamenridercraft:contract_chaostone",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used as the base item for most Ride Kamens items"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ride_kamens/contract_chaostone"
+		}
+	]
+}

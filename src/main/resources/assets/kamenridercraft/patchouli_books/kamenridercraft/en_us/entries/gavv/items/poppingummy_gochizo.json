@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#poppingummy)Poppingummy$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Gavv's $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#poppingummy)Poppingummy$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

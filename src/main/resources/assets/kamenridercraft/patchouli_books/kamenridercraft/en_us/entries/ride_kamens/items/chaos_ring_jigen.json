@@ -1,0 +1,19 @@
+{
+	"name": "Chaos Ring (Jigen)",
+	"icon": "kamenridercraft:chaos_ring_jigen",
+	"category": "kamenridercraft:ride_kamens/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Used to craft Jigen's $(l:ride_kamens/devices/chaos_driver_jigen)Chaos Driver (Jigen)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chaos_ring_jigen",
+			"title": " ",
+			"text": "Drops from $(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
+		}
+	]
+}

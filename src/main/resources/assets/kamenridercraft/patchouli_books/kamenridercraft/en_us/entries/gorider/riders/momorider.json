@@ -1,0 +1,19 @@
+{
+	"name": "Momorider",
+	"icon": "kamenridercraft:typhoon_momorider",
+	"category": "kamenridercraft:gorider/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:typhoon_momorider\",Count:1b},{id:\"kamenridercraft:akariderlegs\",Count:1b},{id:\"kamenridercraft:akaridertroso\",Count:1b},{id:\"kamenridercraft:akariderhead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Momorider",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(li)Kamen Sentai Gorider (2017, web series)$(br2)Transforms with the $(l:gorider/devices/typhoon_momorider)Typhoon (Momorider)$(/l)$(br2)Status Effects:$(li)Punch V$(li)Speed II$(li)Jump Boost III$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)"
+		}
+	]
+}
