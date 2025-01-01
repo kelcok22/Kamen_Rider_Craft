@@ -7,7 +7,6 @@ import net.minecraft.world.level.Level;
 
 public class ElementaryInvesRedEntity extends BaseHenchmenEntity {
 
-	private BaseHenchmenEntity boss;
 
     public ElementaryInvesRedEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
