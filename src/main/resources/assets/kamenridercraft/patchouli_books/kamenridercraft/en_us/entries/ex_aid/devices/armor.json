@@ -1,0 +1,24 @@
+{
+	"name": "Ex-Aid Armor",
+	"icon": "kamenridercraft:ex_aidhead",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside an Ex-Aid Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidlegs"
+		}
+	]
+}

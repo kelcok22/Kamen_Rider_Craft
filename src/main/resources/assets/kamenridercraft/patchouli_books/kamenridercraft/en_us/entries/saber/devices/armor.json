@@ -1,0 +1,24 @@
+{
+	"name": "Saber Armor",
+	"icon": "kamenridercraft:saberhead",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside a Saber Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saberhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/sabertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saberlegs"
+		}
+	]
+}
