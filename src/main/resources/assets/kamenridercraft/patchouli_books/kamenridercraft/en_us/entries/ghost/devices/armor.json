@@ -1,0 +1,24 @@
+{
+	"name": "Ghost Armor",
+	"icon": "kamenridercraft:ghost_head",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside a Ghost Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_legs"
+		}
+	]
+}

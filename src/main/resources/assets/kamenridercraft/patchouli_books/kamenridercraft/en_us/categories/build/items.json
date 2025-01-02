@@ -2,6 +2,6 @@
 	"parent": "kamenridercraft:build/main",
     "name": "Build Rider Items",
     "description": "All Build-related items that are neither an armor piece nor part of an arsenal.",
-    "icon": "kamenridercraft:rabbit_fullbottle",
+    "icon": "kamenridercraft:rabbit_full_bottle",
     "sortnum": 2
 }

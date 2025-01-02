@@ -1,0 +1,24 @@
+{
+	"name": "Zi-O Armor",
+	"icon": "kamenridercraft:zi_o_head",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used alongside a Zi-O Rider's transformation device to transform into that Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_legs"
+		}
+	]
+}
