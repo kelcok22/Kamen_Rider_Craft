@@ -739,6 +739,11 @@ public class Rider_Blocks {
 					,MobsCore.GODA).addLine(Component.translatable("henshin.kamenridercraft.goda")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
+	public static final DeferredBlock<Block> SUPER_GINGAOH_BOSS_BLOCK = registerBlock("super_gingaoh_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.SUPER_GINGAOH).addLine(Component.translatable("henshin.kamenridercraft.super_gingaoh")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
 	public static final DeferredBlock<Block> WISEMAN_BOSS_BLOCK = registerBlock("wiseman_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WISEMAN).addLine(Component.translatable("henshin.kamenridercraft.wiseman")).AddToTabList(RiderTabs.RIDER_BLOCK));

@@ -335,6 +335,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.ANCIENT_OOO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.SUPER_GINGAOH.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.GHOULS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MEDUSA_PHANTOM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.PHOENIX_PHANTOM.get(), BasicEntityRenderer::new);

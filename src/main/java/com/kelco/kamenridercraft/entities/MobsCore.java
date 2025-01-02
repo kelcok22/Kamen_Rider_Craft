@@ -401,6 +401,13 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> GODA_SPAWN_EGG = ITEMS.register("goda_spawn_egg",
                    () -> new DeferredSpawnEggItem(GODA, 0x000000, 0xB200FF, new Item.Properties()));
 
+          
+          public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
+                  () -> EntityType.Builder.of(SuperGingaOhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":super_gingaoh"));
+
+          public static final DeferredItem<DeferredSpawnEggItem> SUPER_GINGAOH_SPAWN_EGG = ITEMS.register("super_gingaoh_spawn_egg",
+                   () -> new DeferredSpawnEggItem(SUPER_GINGAOH, 0x191b32, 0x9e6f00, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<GhoulsEntity>> GHOULS = MOBLIST.register("ghouls",
             () -> EntityType.Builder.of(GhoulsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ghouls"));

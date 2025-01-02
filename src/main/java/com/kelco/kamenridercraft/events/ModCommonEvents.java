@@ -541,7 +541,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.CORE.get(), CoreEntity.setAttributes().build());
 		event.put(MobsCore.POWERED_UP_CORE.get(), PoweredUpCoreEntity.setAttributes().build());
 		event.put(MobsCore.ANCIENT_OOO.get(), AncientOOOEntity.setAttributes().build());
+
 		event.put(MobsCore.GODA.get(), GodaEntity.setAttributes().build());
+		event.put(MobsCore.SUPER_GINGAOH.get(), SuperGingaOhEntity.setAttributes().build());
 
 		event.put(MobsCore.GHOULS.get(), GhoulsEntity.setAttributes().build());
 		event.put(MobsCore.MEDUSA_PHANTOM.get(), MedusaPhantomEntity.setAttributes().build());
