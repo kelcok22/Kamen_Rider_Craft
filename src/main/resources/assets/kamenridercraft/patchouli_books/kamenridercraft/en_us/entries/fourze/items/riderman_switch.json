@@ -1,0 +1,16 @@
+{
+	"name": "Riderman Switch",
+	"icon": "kamenridercraft:riderman_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#riderman)Riderman Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/riderman_switch"
+		}
+	]
+}

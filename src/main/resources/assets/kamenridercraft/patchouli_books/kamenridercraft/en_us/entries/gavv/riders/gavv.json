@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Slash II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Slash II$(li)Jump Boost II$(li)Strength II (with sword)"
 		},
 		{
 			"type": "patchouli:entity",

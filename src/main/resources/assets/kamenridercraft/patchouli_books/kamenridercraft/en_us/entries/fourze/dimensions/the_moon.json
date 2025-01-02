@@ -1,0 +1,21 @@
+{
+	"name": "The Moon",
+	"icon": "kamenridercraft:gate_switch",
+	"category": "kamenridercraft:fourze/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "The Moon",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Accessed with a $(l:fourze/arsenal/gate_switch)Gate Switch$(/l)$(br2)Structures:$(li)$(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)$(li)$(l:fourze/structures/m_bus)M-BUS$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/the_moon.png"
+			],
+			"title": " "
+		}
+	]
+}

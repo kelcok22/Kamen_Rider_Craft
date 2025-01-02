@@ -1,0 +1,19 @@
+{
+	"name": "Ikaros Switch",
+	"icon": "kamenridercraft:ikaros_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Used to craft Ikaros's $(l:fourze/devices/ikaros_driver)Ikaros Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikaros_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

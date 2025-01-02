@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Switch",
+	"icon": "kamenridercraft:faiz_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 68,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#faiz)Faiz Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/faiz_switch"
+		}
+	]
+}

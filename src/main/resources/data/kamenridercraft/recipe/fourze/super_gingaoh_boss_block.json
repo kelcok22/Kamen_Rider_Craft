@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "super_ginga_oh",
+  "pattern": [
+    "A1A",
+    "2B3",
+    "A4A"
+  ],
+  "key": {
+    "B": {
+      "item": "kamenridercraft:rider_circuit"
+    }, "A": {
+      "item": "kamenridercraft:cell_alloy_ingot"
+    }, "1": {
+      "item": "kamenridercraft:solu_switch"
+    }, "2": {
+      "item": "kamenridercraft:same_medal"
+    }, "3": {
+      "item": "kamenridercraft:kujira_medal"
+    }, "4": {
+      "item": "kamenridercraft:ookamiuo_medal"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:super_gingaoh_boss_block"
+  }
+}

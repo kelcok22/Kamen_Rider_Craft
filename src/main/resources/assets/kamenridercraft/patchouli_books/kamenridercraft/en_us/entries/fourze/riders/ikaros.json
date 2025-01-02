@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Ikaros",
+	"icon": "kamenridercraft:ikaros_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ikaros_driver\",Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ikaros",
+			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Transforms with the $(l:fourze/devices/ikaros_driver)Ikaros Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste III$(li)Jump Boost III$(li)Strength II"
+		}
+	]
+}

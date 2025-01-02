@@ -1,0 +1,19 @@
+{
+	"name": "Hand Switch",
+	"icon": "kamenridercraft:hand_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#hand)Hand Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hand_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		}
+	]
+}

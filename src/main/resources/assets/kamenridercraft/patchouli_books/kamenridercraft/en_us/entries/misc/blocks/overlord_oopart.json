@@ -2,7 +2,7 @@
 	"name": "Overlord OOPArt Block",
 	"icon": "kamenridercraft:overlord_oopart",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 33,
+	"sortnum": 39,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",

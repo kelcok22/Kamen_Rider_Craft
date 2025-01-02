@@ -1,0 +1,16 @@
+{
+	"name": "Stronger Switch",
+	"icon": "kamenridercraft:stronger_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 59,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#stronger)Stronger Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/stronger_switch"
+		}
+	]
+}

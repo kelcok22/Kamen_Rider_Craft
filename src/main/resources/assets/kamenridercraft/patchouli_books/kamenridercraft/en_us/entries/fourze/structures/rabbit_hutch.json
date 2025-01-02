@@ -1,0 +1,21 @@
+{
+	"name": "Rabbit Hutch",
+	"icon": "kamenridercraft:fourze_logo",
+	"category": "kamenridercraft:fourze/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Rabbit Hutch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rabbit_hutch.png"
+			],
+			"title": " "
+		}
+	]
+}
