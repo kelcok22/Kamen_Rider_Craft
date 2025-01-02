@@ -1,8 +1,8 @@
 {
 	"name": "Powered Up Core Boss Block",
 	"icon": "kamenridercraft:powered_up_core_boss_block",
-	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 40,
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

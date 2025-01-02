@@ -1,0 +1,21 @@
+{
+	"name": "M-BUS",
+	"icon": "kamenridercraft:fourze_logo",
+	"category": "kamenridercraft:fourze/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "M-BUS",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)$(br2)Chest loot:$(li)14 $(l:fourze/items/astroswitch)Blank Switches$(/l)$(li)1 $(l:fourze/items/meteor_switch)Meteor Switch$(/l)$(li)3 $(l:misc/items/rider_circuit)Rider Circuits$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/m_bus.png"
+			],
+			"title": " "
+		}
+	]
+}

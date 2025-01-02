@@ -1,0 +1,16 @@
+{
+	"name": "SOLU Switch",
+	"icon": "kamenridercraft:solu_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:fourze/solu_switch"
+		}
+	]
+}

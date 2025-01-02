@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used by most $(l:den_o/riders)Den-O Riders$(/l)$(br2)Used to access the Sands of Time"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used by most $(l:den_o/riders)Den-O Riders$(/l)$(br2)Used to access the $(l:den_o/structures/sands_of_time)Sands of Time$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

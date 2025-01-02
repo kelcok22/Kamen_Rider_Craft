@@ -2,7 +2,7 @@
 	"name": "Gaia Memory Refiner",
 	"icon": "kamenridercraft:gaia_memory_refiner",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 25,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

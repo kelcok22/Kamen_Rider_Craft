@@ -1,8 +1,8 @@
 {
 	"name": "Core Boss Block",
 	"icon": "kamenridercraft:core_boss_block",
-	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 39,
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

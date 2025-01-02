@@ -1,0 +1,19 @@
+{
+	"name": "Nadeshiko Switch",
+	"icon": "kamenridercraft:nadeshiko_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to craft Nadeshiko's $(l:fourze/devices/nadeshiko_driver)Nadeshiko Driver$(/l)$(br2)Used to access Nadeshiko's $(l:fourze/riders/nadeshiko#nadeshiko)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nadeshiko_switch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Blank Switch",
+	"icon": "kamenridercraft:astroswitch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used as the base item for most Fourze items"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/astroswitch",
+			"text": "Found inside the $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l) and $(l:fourze/structures/m_bus)M-BUS$(/l)$(br2)Drops from:$(li)$(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:misc/blocks",
+    "name": "Boss Blocks",
+    "description": "These are blocks that spawn bosses when mined.",
+    "icon": "kamenridercraft:ark_one_boss_block",
+    "sortnum": 0
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Core Switch",
+	"icon": "kamenridercraft:core_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:core_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

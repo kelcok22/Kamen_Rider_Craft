@@ -1,0 +1,16 @@
+{
+	"name": "Gate Switch",
+	"icon": "kamenridercraft:gate_switch",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access the $(l:fourze/dimensions/the_moon)Moon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/gate_switch"
+		}
+	]
+}

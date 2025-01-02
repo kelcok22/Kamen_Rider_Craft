@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:stone_hibiki",
+			"item": "kamenridercraft:deepslate_stone_hibiki",
 			"title": " ",
 			"text": "Drops:$(li)$(l:hibiki/items/oni_ore)Akane Taka Disk Animal$(/l) (26.1%)$(li)$(l:hibiki/items/henshin_onsa)Henshin Onsa Onkaku$(/l) (6%)$(li)$(l:hibiki/items/henshin_onsa_kurenai)Henshin Onsa Onkaku (Kurenai)$(/l) (2.6%)$(li)$(l:hibiki/items/unfinished_armed_saber)Unfinished Armed Saber$(/l) (0.1%)$(li)$(l:hibiki/items/henshin_onibue_ibuki)Henshin Onibue Onteki$(/l) (3.4%)$(li)$(l:hibiki/items/henshin_kigen_todoroki)Henshin Kigen Onjo$(/l) (3.4%)$(li)$(l:hibiki/items/henshin_kigen_zanki)Henshin Kigen Onka$(/l) (3.4%)$(li)$(l:hibiki/items/henshin_kigen_shuki)Henshin Kigen (Shuki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onsa_danki)Henshin Onsa (Danki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onsa_eiki)Henshin Onsa (Eiki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onibue_shouki)Henshin Onibue (Shouki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onibue_amaki)Henshin Onibue (Amaki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onsa_kyoki)Henshin Onsa (Kyoki)$(/l) (2.6%)$(li)$(l:hibiki/items/oni_orehell)Asagi Washi Disk Animal$(/l) (17.3%)$(li)$(l:hibiki/items/henshin_kigen_banki)Henshin Kigen (Banki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onibue_toki)Henshin Onibue (Toki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_onsa_gouki)Henshin Onsa (Gouki)$(/l) (2.6%)$(li)$(l:hibiki/items/henshin_kigen_sabaki)Henshin Kigen (Sabaki)$(/l) (2.6%)"
 		},

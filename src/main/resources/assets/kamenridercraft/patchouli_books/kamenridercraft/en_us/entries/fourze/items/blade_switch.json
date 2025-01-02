@@ -1,0 +1,16 @@
+{
+	"name": "Blade Switch",
+	"icon": "kamenridercraft:blade_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 69,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#blade)Blade Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/blade_switch"
+		}
+	]
+}

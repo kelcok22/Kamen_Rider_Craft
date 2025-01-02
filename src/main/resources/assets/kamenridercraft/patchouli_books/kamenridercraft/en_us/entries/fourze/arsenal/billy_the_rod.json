@@ -1,0 +1,16 @@
+{
+	"name": "Elek Module Billy The Rod",
+	"icon": "kamenridercraft:billy_the_rod",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used by Fourze's $(l:fourze/riders/fourze#elekstates)Elekstates$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/billy_the_rod"
+		}
+	]
+}

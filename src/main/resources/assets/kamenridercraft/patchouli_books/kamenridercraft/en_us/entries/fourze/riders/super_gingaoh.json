@@ -1,0 +1,19 @@
+{
+	"name": "Super GingaOh",
+	"icon": "kamenridercraft:ginga_oh_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ginga_oh_driver\",Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Super GingaOh",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Transforms with the $(l:fourze/devices/ginga_oh_driver)GingaOh Driver$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Strength II (with weapon)$(li)Speed III$(li)Water Breathing$(li)Haste"
+		}
+	]
+}
