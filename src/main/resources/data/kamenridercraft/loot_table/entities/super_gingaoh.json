@@ -1,0 +1,64 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:cellmedal",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": 9,
+				"add": false
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:astroswitch",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": 9,
+				"add": false
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:nadeshiko_switch"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:nadeshiko_driver"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:ginga_oh_driver"
+		  }
+		]
+	  }
+	]
+  }

@@ -1,0 +1,17 @@
+{
+	"name": "Nadeshiko Driver",
+	"icon": "kamenridercraft:nadeshiko_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/nadeshiko#nadeshiko)Kamen Rider Nadeshiko"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/nadeshiko_driver",
+            "text": "Drops from:$(li)$(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		}
+	]
+}

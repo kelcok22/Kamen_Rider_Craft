@@ -183,6 +183,7 @@
   "henshin.kamenridercraft.poseidon":"§bSame! §9Kujira! §4Ookamiuo!",
   "henshin.kamenridercraft.ancient_ooo":"§cTaka! §eTora! §aBatta! §6Ta-to-ba! Tatoba Ta-to-ba!",
   "henshin.kamenridercraft.goda":"§5Mukade! §eHachi! §8Ari! §5Goda! Goda! Go-da!",
+  "henshin.kamenridercraft.super_gingaoh":"§bSame! §9Kujira! §4Ookamiuo!",
   "henshin.kamenridercraft.wiseman":"§6Change, Now!",
   "henshin.kamenridercraft.sorcerer_1": "<Kamen Rider Sorcerer> §6Henshin!",
   "henshin.kamenridercraft.sorcerer_2": "§6Change, Now!",
@@ -3855,6 +3856,8 @@
 "item.kamenridercraft.ancient_ooo_spawn_egg": "Ancient OOO Spawn Egg",
 "item.kamenridercraft.goda_spawn_egg": "Goda Spawn Egg",
 
+"item.kamenridercraft.super_gingaoh_spawn_egg": "Super GingaOh Spawn Egg",
+
 "item.kamenridercraft.ghouls_spawn_egg": "Ghoul Spawn Egg",
 "item.kamenridercraft.medusa_phantom_spawn_egg": "Medusa Phantom Spawn Egg",
 "item.kamenridercraft.phoenix_phantom_spawn_egg": "Phoenix Phantom Spawn Egg",
@@ -4138,6 +4141,7 @@
 "block.kamenridercraft.core_boss_block": "Core Boss Block",
 "block.kamenridercraft.powered_up_core_boss_block": "Powered Up Core Boss Block",
 "block.kamenridercraft.ancient_ooo_boss_block": "Ancient OOO Boss Block",
+"block.kamenridercraft.super_gingaoh_boss_block": "Super GingaOh Boss Block",
   "block.kamenridercraft.wiseman_boss_block": "Wiseman Boss Block",
   "block.kamenridercraft.rosyuo_boss_block": "Rosyuo Boss Block",
   "block.kamenridercraft.redyue_boss_block": "Redyue Boss Block",

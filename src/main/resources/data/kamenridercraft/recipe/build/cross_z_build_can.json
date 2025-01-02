@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cross_z_build",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:unfinished_genius_full_bottle"
+    }, 
+    {
+      "item": "kamenridercraft:gold_rabbit_full_bottle"
+    }, 
+    {
+      "item": "kamenridercraft:silver_dragon_full_bottle"
+    }  
+    ],
+  "result": {
+    "id": "kamenridercraft:cross_z_build_can"
+  }
+}

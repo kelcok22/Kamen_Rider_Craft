@@ -1,0 +1,16 @@
+{
+	"name": "Meteor Driver",
+	"icon": "kamenridercraft:meteor_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used alongside the $(l:fourze/devices/armor)Fourze armor$(/l) to transform into $(l:fourze/riders/meteor#meteor)Kamen Rider Meteor"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/meteor_driver"
+		}
+	]
+}
