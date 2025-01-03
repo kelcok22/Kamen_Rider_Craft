@@ -297,6 +297,18 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gold_drive","banno_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROIMUDE_CORE_003 = ITEMS.register("roidmude_core_003",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brain","banno_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
@@ -319,6 +331,18 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> DRIVE_DRIVER_HEART = ITEMS.register("drivedriver_heart",
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"heart",SHIFT_HEARTRON , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BANNO_DRIVER_GORD_DRIVE = ITEMS.register("banno_driver_gord_drive",
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"gold_drive", BANNO_TABLET, DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BANNO_DRIVER_BRONZE_DRIVE = ITEMS.register("banno_driver_bronze_drive",
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"bronze_drive", BANNO_TABLET, DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BRIAN_DRIVER = ITEMS.register("brain_driver",
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"brain", ROIMUDE_CORE_003, DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
