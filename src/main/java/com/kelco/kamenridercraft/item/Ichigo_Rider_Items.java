@@ -561,29 +561,6 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item>  GRASSHOPPER_DNA = ITEMS.register("grasshopper_dna",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin",SHIN_STONE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.SHIN_TAB_ITEM));
 
-    // J
-    public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.J_TAB_ITEM));
-
-    public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-                    ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-                    .AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
-
-
-    public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
-    public static final DeferredItem<Item>  JCHESTPLATE = ITEMS.register("jtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
-    public static final DeferredItem<Item>  JLEGGINGS = ITEMS.register("jlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
-
-    public static final DeferredItem<Item>  J_SPIRIT = ITEMS.register("j_spirit",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"j",J_STONE ,JHELMET,JCHESTPLATE,JLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
-
     // ZO
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZO_TAB_ITEM));
@@ -606,6 +583,37 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item>  ZO_CORE = ITEMS.register("zo_core",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zo",ZO_STONE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZO_TAB_ITEM));
+
+    // J
+    public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.J_TAB_ITEM));
+
+    public static final DeferredItem<Item>  J_STONE_JUMBO_FORMATION = ITEMS.register("j_stone_jumbo_formation",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+                    ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)));
+
+    public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
+                    .addSwitchForm(J_STONE_JUMBO_FORMATION.get()).AddToList(RiderTabs.J_TAB_ITEM).KeepItem());
+
+
+    public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
+    public static final DeferredItem<Item>  JCHESTPLATE = ITEMS.register("jtroso",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
+    public static final DeferredItem<Item>  JLEGGINGS = ITEMS.register("jlegs",
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
+
+    public static final DeferredItem<Item>  J_SPIRIT = ITEMS.register("j_spirit",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"j",J_STONE ,JHELMET,JCHESTPLATE,JLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.J_TAB_ITEM));
 
 
 

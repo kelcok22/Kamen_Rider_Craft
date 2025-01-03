@@ -6,14 +6,27 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:j_spirit\",Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
+			"anchor": "j",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
 			"name": " ",
-			"text": ""
+			"text": "Accessed with the $(l:j/items/j_stone)J Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider J",
 			"text": "Appears in:$(li)Kamen Rider J (1994, movie)$(br2)Transforms with the $(l:j/devices/j_spirit)J-Spirit$(/l)$(br2)Status Effects:$(li)Punch II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jumbo_formation",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone_jumbo_formation\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
+			"name": "Jumbo Formation",
+			"text": "Accessed with the $(l:j/items/j_stone)J Stone$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider J",
+			"text": "Appears in:$(li)Kamen Rider J (1994, movie)$(br2)Transforms with the $(l:j/devices/j_spirit)J-Spirit$(/l)$(br2)Status Effects:$(li)Punch II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)$(li)Giant III"
 		}
 	]
 }
