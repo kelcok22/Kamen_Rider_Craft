@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "kamenridercraft:helheim",
-  "features": "kamenridercraft:helheim_tree_placed",
-  "step": "vegetal_decoration"
-}

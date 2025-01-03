@@ -22,12 +22,12 @@ public class ModBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
 
-
+/**
         context.register(ADD_HELHEIM_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.parse("kamenridercraft:helheim")))),
+                HolderSet.direct(biomes.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"helheim")))),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeature.HELHEIM_TREE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-
+**/
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

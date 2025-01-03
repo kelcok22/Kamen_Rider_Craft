@@ -1,7 +1,7 @@
 {
   "type": "minecraft:flower",
   "config": {
-    "tries": 96,
+    "tries": 5,
     "xz_spread": 6,
     "y_spread": 2,
     "feature": {
@@ -10,7 +10,7 @@
         "config": {
           "to_place": {
             "type": "minecraft:noise_provider",
-            "seed": 2345,
+            "seed": 250131213,
             "noise": {
               "firstOctave": 0,
               "amplitudes": [
