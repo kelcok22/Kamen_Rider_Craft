@@ -217,6 +217,12 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("gaikotsu_ninjaden_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","desast","seiken_saikou_driver_belt_desast"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> TELEVI_KUN_WONDER_RIDE_BOOK = ITEMS.register("televi_kun_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"televi_kun","saber","seiken_saikou_driver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
@@ -267,8 +273,9 @@ public class Saber_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"calibur",JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
-	// seiken_swordriver_desast
-
+	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_DESAST = ITEMS.register("seiken_swordriver_desast",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"desast",GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> KAENKEN_REKKA = ITEMS.register("kaenken_rekka",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
