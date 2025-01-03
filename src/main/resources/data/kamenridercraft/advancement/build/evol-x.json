@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:evol_x_full_bottle"
+	},
+	"title": "Not Phase 10, Phase \"X\"",
+	"description": "Transform into Evol-X",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/evol",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:buildhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:buildtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:buildlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:evol_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evol_x_full_bottle\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
