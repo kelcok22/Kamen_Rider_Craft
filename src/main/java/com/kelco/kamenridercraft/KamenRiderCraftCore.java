@@ -18,11 +18,14 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
+import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
+import net.neoforged.neoforge.event.level.BlockGrowFeatureEvent;
+import net.neoforged.neoforge.network.event.RegisterConfigurationTasksEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -82,7 +85,7 @@ public class KamenRiderCraftCore
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         Effect_core.register(modEventBus);
-
+        ModConfiguredFeatures.register(modEventBus);
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
@@ -155,10 +158,13 @@ public class KamenRiderCraftCore
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
+
+
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
             event.register(custom_dimension_effect.MOON_EFFECTS,new custom_dimension_effect.MoonEffects());
         }
+
 
 
         @SubscribeEvent

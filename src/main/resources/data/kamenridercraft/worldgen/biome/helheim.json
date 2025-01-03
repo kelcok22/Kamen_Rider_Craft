@@ -3,10 +3,14 @@
   "downfall": 0.9,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 61183,
-    "fog_color": 10810622,
+    "precipitation": "none",
+    "sky_color": 9822180,
+    "fog_color": 15005947,
     "water_color": 4159204,
     "water_fog_color": 329011,
+    "grass_color": 4358934,
+    "foliage_color": 4358934,
+
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -24,20 +28,14 @@
     "ambient": [],
     "axolotls": [],
     "creature": [
-      {
-        "type": "minecraft:sheep",
-        "weight": 12,
-        "minCount": 4,
-        "maxCount": 4
-      }
     ],
     "misc": [],
     "monster": [
       {
-        "type": "minecraft:zombie",
+        "type": "kamenridercraft:elementary_inves_red",
         "weight": 95,
-        "minCount": 4,
-        "maxCount": 4
+        "minCount": 1,
+        "maxCount": 3
       }
     ],
     "underground_water_creature": [],
@@ -55,8 +53,6 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
     ],
     [],
     [],
@@ -72,23 +68,26 @@
       "minecraft:ore_andesite_upper",
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff",
-      "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+
     ],
     [
       "kamenridercraft:flower_helheim",
+      "kamenridercraft:helheim_vine",
       "minecraft:flower_default",
-      "minecraft:patch_grass_forest"
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_large_fern",
+      "minecraft:twisting_vines",
+      "minecraft:patch_berry_bush",
+      "minecraft:patch_dead_bush"
     ],
     [
-      "minecraft:freeze_top_layer"
     ]
   ]
 }
