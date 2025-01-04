@@ -1,0 +1,16 @@
+{
+	"name": "Finish Strike Wizard Ring",
+	"icon": "kamenridercraft:finish_strike_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#infinity_dragon)Infinity Dragon$(/l) and $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/finish_strike_ring"
+		}
+	]
+}

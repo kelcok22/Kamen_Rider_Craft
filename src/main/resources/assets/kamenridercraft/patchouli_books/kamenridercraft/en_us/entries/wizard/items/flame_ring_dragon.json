@@ -1,0 +1,19 @@
+{
+	"name": "Flame Dragon Wizard Ring",
+	"icon": "kamenridercraft:flame_ring_dragon",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flame_ring_dragon",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		}
+	]
+}

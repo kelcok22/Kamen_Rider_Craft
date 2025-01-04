@@ -1,0 +1,16 @@
+{
+	"name": "Unknown Wizard Ring",
+	"icon": "kamenridercraft:unknown_amber_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 63,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/special_rush_ring)Wizard Rings$(/l) when obtained"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/unknown_amber_ring"
+		}
+	]
+}

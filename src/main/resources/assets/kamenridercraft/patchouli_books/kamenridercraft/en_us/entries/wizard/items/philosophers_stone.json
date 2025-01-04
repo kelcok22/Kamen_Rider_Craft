@@ -1,0 +1,19 @@
+{
+	"name": "Philosophers Stone",
+	"icon": "kamenridercraft:philosophers_stone",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft the $(l:wizard/items/hope_ring)Hope Wizard Ring$(/l)$(br2)Note: This stone cannot be used for alchemy or the power of Agito"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:philosophers_stone",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		}
+	]
+}

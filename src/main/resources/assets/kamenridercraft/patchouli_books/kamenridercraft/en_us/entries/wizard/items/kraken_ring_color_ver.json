@@ -1,0 +1,19 @@
+{
+	"name": "Kraken Wizard Ring (Color Ver.)",
+	"icon": "kamenridercraft:kraken_ring_color_ver",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(br2)Used to access Wizard's $(l:wizard/riders/wizard#kraken)Kraken Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_ring_color_ver",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Hyper Wizard Ring",
+	"icon": "kamenridercraft:hyper_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#hyper)Hyper$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		}
+	]
+}

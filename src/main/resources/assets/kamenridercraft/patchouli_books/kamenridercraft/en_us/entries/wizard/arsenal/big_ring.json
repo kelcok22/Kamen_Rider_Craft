@@ -1,0 +1,19 @@
+{
+	"name": "Big Wizard Ring",
+	"icon": "kamenridercraft:big_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Giant III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:big_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

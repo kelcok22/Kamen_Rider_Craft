@@ -1,0 +1,16 @@
+{
+	"name": "AxCalibur",
+	"icon": "kamenridercraft:axcalibur",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used by Wizard's $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/axcalibur"
+		}
+	]
+}

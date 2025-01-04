@@ -1,0 +1,19 @@
+{
+	"name": "Orange Magic Stone",
+	"icon": "kamenridercraft:wizardgem",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used as the base item for most Wizard items"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/wizardgemblock)Wizard Gem Stone Ore$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)Deepslate Wizard Gem Stone Ore$(/l)$(li)$(l:wizard/mobs/ghouls)Ghouls$(/l)$(li)$(l:wizard/mobs/medusa_phantom)Medusa Phantom$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)Phoenix Phantom$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)Gremlin Phantom$(/l)$(li)$(l:wizard/mobs/mage_footsoldier)Imperial Guard$(/l)$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		}
+	]
+}

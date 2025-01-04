@@ -1,0 +1,19 @@
+{
+	"name": "White Garuda Wizard Ring",
+	"icon": "kamenridercraft:white_garuda_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 53,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_garuda_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Cyan Magic Stone",
+	"icon": "kamenridercraft:wizardgem_cyan",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft the $(l:wizard/items/infinity_ring)Infinity$(/l) and $(l:wizard/items/finish_strike_ring)Finish Strike$(/l) Rings"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_cyan",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		}
+	]
+}

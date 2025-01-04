@@ -1,0 +1,272 @@
+{
+	"name": "Kamen Rider Wizard",
+	"icon": "kamenridercraft:wizardriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Flame Style",
+			"text": "Accessed with the $(l:wizard/items/flame_ring)Flame Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Water Style",
+			"text": "Accessed with the $(l:wizard/items/water_ring)Water Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Hurricane Style",
+			"text": "Accessed with the $(l:wizard/items/hurricane_ring)Hurricane Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Land Style",
+			"text": "Accessed with the $(l:wizard/items/land_ring)Land Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Flame Dragon",
+			"text": "Accessed with the $(l:wizard/items/flame_ring_dragon)Flame Dragon Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Water Dragon",
+			"text": "Accessed with the $(l:wizard/items/water_ring_dragon)Water Dragon Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Hurricane Dragon",
+			"text": "Accessed with the $(l:wizard/items/hurricane_ring_dragon)Hurricane Dragon Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Land Dragon",
+			"text": "Accessed with the $(l:wizard/items/land_ring_dragon)Land Dragon Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II$(li)Resistance III$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength II (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Flame Dragon w/ Drago Skull",
+			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flame Body III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Water Dragon w/ Drago Tail",
+			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#water_dragon)Water Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance$(li)Dolphin's Grace"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Hurricane Dragon w/ Drago Wings",
+			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#hurricane_dragon)Hurricane Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Land Dragon w/ Drago Hell Claws",
+			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#land_dragon)Land Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Resistance$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "all_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drago_timer\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "All Dragon",
+			"text": "Accessed with the $(l:wizard/items/drago_timer)Drago Timer$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "special_rush",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_rush_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Special Rush",
+			"text": "Accessed with the $(l:wizard/items/special_rush_ring)Special Rush Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:infinity_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Infinity Style",
+			"text": "Accessed with the $(l:wizard/items/infinity_ring)Infinity Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring_no_hope\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Infinity Dragon",
+			"text": "Accessed with the $(l:wizard/items/finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity_dragon_gold",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Infinity Dragon Gold",
+			"text": "Accessed with the $(l:wizard/items/finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l) with the $(l:wizard/items/hope_ring)Hope Wizard Ring$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "falco",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Falco Mantle",
+			"text": "Accessed with the $(l:wizard/items/falco_ring)Falco Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beast",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Beast Mantle",
+			"text": "Accessed with the $(l:wizard/items/buffa_ring)Buffa Wizard Ring$(/l) as $(l:wizard/riders/wizard#falco)Falco Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength II$(li)Resistance$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dress_up",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dress_up_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Flame Style (Dress Up)",
+			"text": "Accessed with the $(l:wizard/items/dress_up_ring)Dress Up Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "garuda",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garuda_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Garuda Style",
+			"text": "Accessed with the $(l:wizard/items/garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)S.I.C Vol. 70 Kamen Rider Wizard Flame Style (2014, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Fire Resistance$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kraken",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kraken_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Kraken Style",
+			"text": "Accessed with the $(l:wizard/items/kraken_ring_color_ver)Kraken Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#water)Water Style$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wizard",
+			"text": "Appears in:$(li)S.I.C Kamen Rider Wizard Water Style (2015, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Dolphin's Grace$(li)Water Breathing$(li)Night Vision"
+		}
+	]
+}

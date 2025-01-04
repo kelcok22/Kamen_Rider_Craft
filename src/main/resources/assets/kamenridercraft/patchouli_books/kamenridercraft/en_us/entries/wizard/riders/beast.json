@@ -1,0 +1,80 @@
+{
+	"name": "Kamen Rider Beast",
+	"icon": "kamenridercraft:beastdriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "beast",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:beast_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:wizard/items/beast_ring)Beast Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "falco",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Falco Mantle",
+			"text": "Accessed with the $(l:wizard/items/falco_ring)Falco Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Resistance$(li)Strength$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chameleo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chameleo_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Chameleo Mantle",
+			"text": "Accessed with the $(l:wizard/items/chameleo_ring)Chameleo Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost V$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "buffa",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Buffa Mantle",
+			"text": "Accessed with the $(l:wizard/items/buffa_ring)Buffa Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dolphi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dolphi_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Dolphi Mantle",
+			"text": "Accessed with the $(l:wizard/items/dolphi_ring)Dolphi Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Water Breathing$(li)Dolphin's Grace$(li)Anti Poison"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hyper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": "Beast Hyper",
+			"text": "Accessed with the $(l:wizard/items/hyper_ring)Hyper Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Beast",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Haste III$(li)Jump Boost VI$(li)Resistance III$(li)Strength IV"
+		}
+	]
+}

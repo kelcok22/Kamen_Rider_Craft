@@ -1,0 +1,19 @@
+{
+	"name": "Chameleo Wizard Ring",
+	"icon": "kamenridercraft:chameleo_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#chameleo)Chameleo Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chameleo_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		}
+	]
+}

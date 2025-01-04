@@ -1,0 +1,19 @@
+{
+	"name": "Create Wizard Ring",
+	"icon": "kamenridercraft:create_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:create_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		}
+	]
+}

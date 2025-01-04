@@ -1,0 +1,16 @@
+{
+	"name": "Wise Driver (Koyomi)",
+	"icon": "kamenridercraft:whitewizardriver_f",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/wiseman#koyomi)Kamen Rider Wiseman"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/whitewizardriver_f"
+		}
+	]
+}

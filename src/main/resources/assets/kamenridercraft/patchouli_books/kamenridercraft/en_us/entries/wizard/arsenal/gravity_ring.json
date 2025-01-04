@@ -1,0 +1,19 @@
+{
+	"name": "Gravity Wizard Ring",
+	"icon": "kamenridercraft:gravity_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Gravity III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gravity_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		}
+	]
+}

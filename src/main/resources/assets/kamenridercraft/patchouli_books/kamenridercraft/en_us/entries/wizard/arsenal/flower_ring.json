@@ -1,0 +1,19 @@
+{
+	"name": "Flower Wizard Ring",
+	"icon": "kamenridercraft:flower_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Gives you a poppy"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flower_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

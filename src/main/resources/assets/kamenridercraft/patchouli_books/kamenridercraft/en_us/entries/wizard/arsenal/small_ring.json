@@ -1,0 +1,19 @@
+{
+	"name": "Small Wizard Ring",
+	"icon": "kamenridercraft:small_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Shrink XXI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:small_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Mage (Imperial Captain)",
+	"icon": "kamenridercraft:magewizardriver_captain",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:magewizardriver_captain\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mage",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/magewizardriver_captain)Mage's Belt (Imperial Captain)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
+		}
+	]
+}

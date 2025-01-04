@@ -1,0 +1,19 @@
+{
+	"name": "Eclipse Wizard Ring",
+	"icon": "kamenridercraft:eclipse_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Turns time to night"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eclipse_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+		}
+	]
+}

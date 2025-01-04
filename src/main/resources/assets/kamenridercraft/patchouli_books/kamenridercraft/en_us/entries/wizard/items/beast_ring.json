@@ -1,0 +1,19 @@
+{
+	"name": "Beast Wizard Ring",
+	"icon": "kamenridercraft:beast_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Beast's $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Used to access Beast's $(l:wizard/riders/beast#beast)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beast_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		}
+	]
+}
