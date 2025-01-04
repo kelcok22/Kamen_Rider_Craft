@@ -1,12 +1,13 @@
 {
-  "temperature": 0.9,
-  "downfall": 0.9,
-  "has_precipitation": false,
+  "temperature": 0.25,
+  "downfall": 0.8,
+  "precipitation": "rain",
+  "has_precipitation": true,
+  "temperature_modifier": "none",
   "effects": {
-    "precipitation": "none",
     "sky_color": 9822180,
     "fog_color": 15005947,
-    "water_color": 4159204,
+    "water_color": 6862267,
     "water_fog_color": 329011,
     "grass_color": 4358934,
     "foliage_color": 4358934,
@@ -70,22 +71,32 @@
       "minecraft:ore_tuff",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel"
-    ],
-    [],
-    [
+      "minecraft:disk_gravel",
+      "minecraft:disk_grass"
 
     ],
     [
+
+      "kamenridercraft:trees_old_growth_helheim",
+      "kamenridercraft:pile_mossy_cobblestone",
       "kamenridercraft:flower_helheim",
       "kamenridercraft:helheim_vine",
       "minecraft:flower_default",
       "minecraft:patch_grass_forest",
       "minecraft:patch_tall_grass",
+      "minecraft:patch_tall_grass_2",
       "minecraft:patch_large_fern",
       "minecraft:twisting_vines",
       "minecraft:patch_berry_bush",
-      "minecraft:patch_dead_bush"
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_dead_bush_2",
+      "minecraft:patch_sugar_cane",
+      "minecraft:glow_lichen",
+      "minecraft:patch_grass_taiga",
+      "minecraft:patch_berry_common",
+      "minecraft:forest_rock",
+      "minecraft:forest_flowers",
+      "minecraft:desert_well"
     ],
     [
     ]

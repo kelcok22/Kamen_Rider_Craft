@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "kamenridercraft:helheim_tree_checked",
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": "kamenridercraft:helheim_mega_tree_checked"
+      },
+      {
+        "chance": 0.33333334,
+        "feature": "kamenridercraft:helheim_pine_checked"
+      }
+    ]
+  }
+}
