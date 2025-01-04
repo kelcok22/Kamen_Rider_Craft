@@ -1,0 +1,19 @@
+{
+	"name": "Land Wizard Ring",
+	"icon": "kamenridercraft:land_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#land)Land Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:land_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		}
+	]
+}

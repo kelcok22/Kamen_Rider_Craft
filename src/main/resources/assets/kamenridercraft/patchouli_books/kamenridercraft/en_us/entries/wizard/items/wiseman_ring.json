@@ -1,0 +1,19 @@
+{
+	"name": "Wiseman Wizard Ring",
+	"icon": "kamenridercraft:wiseman_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver)Wise Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wiseman_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		}
+	]
+}

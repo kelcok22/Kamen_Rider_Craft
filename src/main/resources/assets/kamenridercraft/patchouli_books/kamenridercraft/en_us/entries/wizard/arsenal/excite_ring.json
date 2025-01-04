@@ -1,0 +1,19 @@
+{
+	"name": "Excite Wizard Ring",
+	"icon": "kamenridercraft:excite_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives Strength II"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:excite_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

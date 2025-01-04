@@ -1,0 +1,19 @@
+{
+	"name": "Dark Wizard Ring",
+	"icon": "kamenridercraft:dark_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Used to craft Dark Wizard's $(l:wizard/devices/dark_wizardriver)Wizardriver (Dark Wizard)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+		}
+	]
+}

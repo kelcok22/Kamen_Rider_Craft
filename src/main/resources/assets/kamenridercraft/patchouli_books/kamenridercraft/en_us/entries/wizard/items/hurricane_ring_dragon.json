@@ -1,0 +1,19 @@
+{
+	"name": "Hurricane Dragon Wizard Ring",
+	"icon": "kamenridercraft:hurricane_ring_dragon",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#hurricane_dragon)Hurricane Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hurricane_ring_dragon",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_green_ring)green Unknown Wizard Rings$(/l)"
+		}
+	]
+}

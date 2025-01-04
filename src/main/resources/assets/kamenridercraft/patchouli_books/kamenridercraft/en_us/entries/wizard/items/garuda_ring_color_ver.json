@@ -1,0 +1,19 @@
+{
+	"name": "Garuda Wizard Ring (Color Ver.)",
+	"icon": "kamenridercraft:garuda_ring_color_ver",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 55,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Garuda Wizard Ring Hero Quest 2013 Original Color ver. (2013, toyline)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#garuda)Garuda Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garuda_ring_color_ver",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		}
+	]
+}

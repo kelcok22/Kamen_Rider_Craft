@@ -1,0 +1,24 @@
+{
+	"name": "WizarSwordGun (Mage Ver)",
+	"icon": "kamenridercraft:wizarswordgun_mage",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used by $(l:wizard/riders/mage)Kamen Rider Mage$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage2"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Falco Wizard Ring",
+	"icon": "kamenridercraft:falco_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#falco)Falco Mantle$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#falco)Falco Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:falco_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		}
+	]
+}

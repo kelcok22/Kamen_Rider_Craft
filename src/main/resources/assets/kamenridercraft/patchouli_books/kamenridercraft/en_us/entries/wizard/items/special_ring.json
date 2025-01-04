@@ -1,0 +1,19 @@
+{
+	"name": "Special Wizard Ring",
+	"icon": "kamenridercraft:special_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame_dragon_special)Flame Dragon w/ Drago Skull$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#water_dragon_special)Water Dragon w/ Drago Wings$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#hurricane_dragon_special)Hurricane Dragon w/ Drago Tail$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#land_dragon_special)Land Dragon w/ Drago Hell Claws$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:special_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		}
+	]
+}

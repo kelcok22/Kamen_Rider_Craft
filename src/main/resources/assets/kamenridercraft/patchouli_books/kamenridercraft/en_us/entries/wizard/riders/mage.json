@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Mage",
+	"icon": "kamenridercraft:magewizardriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "amber",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:magewizardriver\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mage",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/magewizardriver)Mage's Belt (Mage)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blue",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:magewizardriver_b\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mage",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/magewizardriver)Mage's Belt (Blue Mage)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "green",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:magewizardriver_g\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mage",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/magewizardriver)Mage's Belt (Green Mage)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
+		}
+	]
+}

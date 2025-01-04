@@ -1,0 +1,16 @@
+{
+	"name": "Unknown Wizard Ring",
+	"icon": "kamenridercraft:unknown_cyan_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 70,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/arsenal/fall_ring)Wizard Rings$(/l) when obtained"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/unknown_cyan_ring"
+		}
+	]
+}

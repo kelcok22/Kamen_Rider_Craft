@@ -1,0 +1,16 @@
+{
+	"name": "Hope Wizard Ring",
+	"icon": "kamenridercraft:hope_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver_f)Wise Driver (Koyomi)$(/l)$(br2)Used with the $(l:wizard/items/finish_strike_ring)Finish Strike Wizard Ring$(/l) to access Wizard's $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/hope_ring"
+		}
+	]
+}

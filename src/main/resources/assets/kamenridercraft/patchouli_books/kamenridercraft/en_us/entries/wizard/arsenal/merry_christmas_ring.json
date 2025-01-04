@@ -1,0 +1,19 @@
+{
+	"name": "Merry Christmas Wizard Ring",
+	"icon": "kamenridercraft:merry_christmas_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Gives the Merry Christmas effect"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:merry_christmas_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Sorcerer Wizard Ring",
+	"icon": "kamenridercraft:sorcerer_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 34,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used to craft Sorcerer's $(l:wizard/devices/sorcererdriver)Sorcerer's Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sorcerer_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		}
+	]
+}

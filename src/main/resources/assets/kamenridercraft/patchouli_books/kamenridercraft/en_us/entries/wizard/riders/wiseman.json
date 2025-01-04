@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Wiseman",
+	"icon": "kamenridercraft:whitewizardriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "wiseman",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:whitewizardriver\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wiseman",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/whitewizardriver)Wise Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Strength V$(li)Haste II$(li)Resistance IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "koyomi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:whitewizardriver_f\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Wiseman",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:wizard/devices/whitewizardriver_f)Wise Driver (Koyomi)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Strength V$(li)Haste II$(li)Resistance IV"
+		}
+	]
+}

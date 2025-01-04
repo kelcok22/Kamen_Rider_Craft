@@ -1,0 +1,19 @@
+{
+	"name": "Black Wizard Ring",
+	"icon": "kamenridercraft:black_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Used to craft Black Wizard's $(l:wizard/devices/black_wizardriver)Wizardriver (Black Wizard)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		}
+	]
+}

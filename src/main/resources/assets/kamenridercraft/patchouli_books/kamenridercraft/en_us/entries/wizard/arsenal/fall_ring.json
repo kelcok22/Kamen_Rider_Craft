@@ -1,0 +1,19 @@
+{
+	"name": "Fall Wizard Ring",
+	"icon": "kamenridercraft:fall_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Creates a hole in the ground, making you fall through"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fall_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_cyan_ring)cyan Unknown Wizard Rings$(/l)"
+		}
+	]
+}

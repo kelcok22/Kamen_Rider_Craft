@@ -1,0 +1,16 @@
+{
+	"name": "Infinity Wizard Ring",
+	"icon": "kamenridercraft:infinity_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/infinity_ring"
+		}
+	]
+}

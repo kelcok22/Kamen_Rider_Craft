@@ -1,0 +1,19 @@
+{
+	"name": "Golem Wizard Ring",
+	"icon": "kamenridercraft:golem_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golem_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+		}
+	]
+}

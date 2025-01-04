@@ -1,0 +1,19 @@
+{
+	"name": "Dress Up Wizard Ring",
+	"icon": "kamenridercraft:dress_up_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to $(l:wizard/riders/wizard#dress_up)dress Wizard up$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dress_up_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		}
+	]
+}

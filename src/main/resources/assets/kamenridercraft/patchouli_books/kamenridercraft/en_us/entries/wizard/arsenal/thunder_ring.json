@@ -1,0 +1,19 @@
+{
+	"name": "Thunder Wizard Ring",
+	"icon": "kamenridercraft:thunder_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Causes a lightning strike in the direction you're facing"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thunder_ring",
+			"title": " ",
+			"text": "Drops from $(l:wizard/items/unknown_green_ring)green Unknown Wizard Rings$(/l)"
+		}
+	]
+}

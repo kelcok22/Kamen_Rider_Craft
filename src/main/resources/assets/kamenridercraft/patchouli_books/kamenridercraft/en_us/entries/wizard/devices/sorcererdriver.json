@@ -1,0 +1,16 @@
+{
+	"name": "Sorcerer's Belt",
+	"icon": "kamenridercraft:sorcererdriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/sorcerer)Kamen Rider Sorcerer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/sorcererdriver"
+		}
+	]
+}

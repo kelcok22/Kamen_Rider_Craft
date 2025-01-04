@@ -1,0 +1,19 @@
+{
+	"name": "Super Sentai Wizard Ring",
+	"icon": "kamenridercraft:super_sentai_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 62,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai × Space Sheriff: Super Hero Taisen Z (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_sentai_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
