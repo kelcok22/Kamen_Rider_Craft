@@ -96,7 +96,10 @@
       "minecraft:patch_berry_common",
       "minecraft:forest_rock",
       "minecraft:forest_flowers",
-      "minecraft:desert_well"
+      "minecraft:desert_well",
+      "minecraft:classic_vines_cave_feature",
+      "minecraft:grass_bonemeal",
+      "minecraft:seagrass_deep_cold"
     ],
     [
     ]
