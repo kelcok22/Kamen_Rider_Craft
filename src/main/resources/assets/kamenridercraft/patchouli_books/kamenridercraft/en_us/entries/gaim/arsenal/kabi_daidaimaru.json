@@ -1,0 +1,16 @@
+{
+	"name": "Kabi Daidaimaru",
+	"icon": "kamenridercraft:kabi_daidaimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used by Gaim's $(l:gaim/riders/gaim#kabi_orange)Kabi Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kabi_daidaimaru"
+		}
+	]
+}

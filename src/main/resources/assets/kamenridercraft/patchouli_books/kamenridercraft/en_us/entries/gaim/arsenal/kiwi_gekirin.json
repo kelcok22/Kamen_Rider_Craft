@@ -1,0 +1,16 @@
+{
+	"name": "Kiwi Gekirin",
+	"icon": "kamenridercraft:kiwi_gekirin",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Ryugen's $(l:gaim/riders/ryugen#kiwi)Kiwi Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kiwi_gekirin"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Sengoku Driver (Baron)",
+	"icon": "kamenridercraft:sengoku_driver_baron",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/baron#banana)Kamen Rider Baron"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_baron"
+		}
+	]
+}

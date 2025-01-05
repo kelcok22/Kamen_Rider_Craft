@@ -1,0 +1,16 @@
+{
+	"name": "Watermelon Defender",
+	"icon": "kamenridercraft:watermelon_defender",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 41,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Used by Zangetsu's $(l:gaim/riders/zangetsu#watermelon)Watermelon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/watermelon_defender"
+		}
+	]
+}

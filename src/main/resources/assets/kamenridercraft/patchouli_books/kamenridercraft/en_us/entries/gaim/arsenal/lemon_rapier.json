@@ -1,0 +1,16 @@
+{
+	"name": "Lemon Rapier",
+	"icon": "kamenridercraft:lemon_rapier",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used by Duke's $(l:gaim/riders/duke#lemon)Lemon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/lemon_rapier"
+		}
+	]
+}

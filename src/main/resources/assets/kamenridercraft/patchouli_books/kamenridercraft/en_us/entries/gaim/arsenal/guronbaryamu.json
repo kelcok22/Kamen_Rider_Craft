@@ -1,0 +1,19 @@
+{
+	"name": "Guronbaryamu",
+	"icon": "kamenridercraft:guronbaryamu",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:guronbaryamu",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		}
+	]
+}

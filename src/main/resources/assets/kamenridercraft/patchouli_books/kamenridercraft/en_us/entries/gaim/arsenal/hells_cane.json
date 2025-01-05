@@ -1,0 +1,16 @@
+{
+	"name": "Hells Cane",
+	"icon": "kamenridercraft:hells_cane",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used by $(l:gaim/riders/sylphi)Kamen Rider Sylphi$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/hells_cane"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Shine Lychee Sword",
+	"icon": "kamenridercraft:shine_lychee_sword",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used by Gridon's $(l:gaim/riders/gridon#lychee)Lychee Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/shine_lychee_sword"
+		}
+	]
+}

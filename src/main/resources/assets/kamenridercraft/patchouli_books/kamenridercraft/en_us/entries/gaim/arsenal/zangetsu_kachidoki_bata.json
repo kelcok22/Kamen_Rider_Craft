@@ -1,0 +1,16 @@
+{
+	"name": "Kachidoki Bata (Zangetsu)",
+	"icon": "kamenridercraft:zangetsu_kachidoki_bata",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used by Zangetsu's $(l:gaim/riders/zangetsu#kachidoki)Kachidoki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/zangetsu_kachidoki_bata"
+		}
+	]
+}

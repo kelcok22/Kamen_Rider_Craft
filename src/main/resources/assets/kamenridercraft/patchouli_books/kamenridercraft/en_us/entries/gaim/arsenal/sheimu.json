@@ -1,0 +1,19 @@
+{
+	"name": "Sheimu",
+	"icon": "kamenridercraft:sheimu",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sheimu",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Saver Arrow",
+	"icon": "kamenridercraft:saver_arrow",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used by $(l:gaim/riders/saver)Kamen Rider Saver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/saver_arrow"
+		}
+	]
+}
