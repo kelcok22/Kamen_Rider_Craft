@@ -2,10 +2,16 @@
   "values": [
 	  "kamenridercraft:drivedriver",
 	  "kamenridercraft:mach_driver_honoh",
+	  "kamenridercraft:mach_driver_honoh_chaser",
+	  "kamenridercraft:mach_driver_honoh_drive",
 	  "kamenridercraft:drivedriver_protodrive",
+	  "kamenridercraft:break_gunner_belt",
+	  "kamenridercraft:lupin_belt",
 	  "kamenridercraft:drivedriver_heart",
+	  "kamenridercraft:drivedriver_darkdrive",
 	  "kamenridercraft:banno_driver_gord_drive",
 	  "kamenridercraft:banno_driver_bronze_drive",
+	  "kamenridercraft:metro_pd_driver_honoh",
 	  "kamenridercraft:brain_driver"
   ]
 }
