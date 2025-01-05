@@ -9,6 +9,7 @@
 	"kamenridercraft:proto_speedshift",
 	"kamenridercraft:heartronshift",
 	"kamenridercraft:high_speedshift",
+	"kamenridercraft:nextshift",
 	"kamenridercraft:specialshift",
 	"kamenridercraft:fruitsshift",
 	"kamenridercraft:maxflare",
@@ -30,6 +31,7 @@
 	"kamenridercraft:road_winter",
 	"kamenridercraft:amazing_circus",
 	"kamenridercraft:mega_maxflare",
+	"kamenridercraft:shift_ride_crosser",
 	"kamenridercraft:holy_christmas"
   ]
 }
