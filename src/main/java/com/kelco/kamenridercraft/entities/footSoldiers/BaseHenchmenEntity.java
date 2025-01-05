@@ -34,7 +34,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
+public abstract class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
 
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
@@ -237,4 +237,5 @@ public class BaseHenchmenEntity extends  Monster implements RangedAttackMob {
     public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
         return p_32144_ instanceof BowItem;
     }
+
 }
