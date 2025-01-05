@@ -2,7 +2,7 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
+    "settings": "kamenridercraft:helheim",
     "biome_source": {
       "type": "minecraft:fixed",
       "biome": "kamenridercraft:helheim"
