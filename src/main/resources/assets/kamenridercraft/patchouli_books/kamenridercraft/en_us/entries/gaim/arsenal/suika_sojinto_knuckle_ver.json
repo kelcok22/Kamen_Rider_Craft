@@ -1,0 +1,16 @@
+{
+	"name": "Suika Sojinto (Knuckle ver.)",
+	"icon": "kamenridercraft:suika_sojinto_knuckle_ver",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Knuckle's $(l:gaim/riders/knuckle#suika)Suika Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/suika_sojinto_knuckle_ver"
+		}
+	]
+}

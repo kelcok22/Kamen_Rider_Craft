@@ -1,0 +1,16 @@
+{
+	"name": "Daidaimaru (Blood Orange Ver)",
+	"icon": "kamenridercraft:blood_daidaimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 34,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used by $(l:gaim/riders/bujin_gaim)Kamen Rider Bujin Gaim$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/blood_daidaimaru"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Mango Punisher",
+	"icon": "kamenridercraft:mango_punisher",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Baron's $(l:gaim/riders/baron#mango)Mango Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/mango_punisher"
+		}
+	]
+}

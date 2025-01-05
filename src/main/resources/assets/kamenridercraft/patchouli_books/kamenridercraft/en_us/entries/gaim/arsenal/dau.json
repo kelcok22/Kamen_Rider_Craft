@@ -1,0 +1,19 @@
+{
+	"name": "Dau",
+	"icon": "kamenridercraft:dau",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/mobs/redyue)Redyue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dau",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/redyue)Redyue$(/l)"
+		}
+	]
+}

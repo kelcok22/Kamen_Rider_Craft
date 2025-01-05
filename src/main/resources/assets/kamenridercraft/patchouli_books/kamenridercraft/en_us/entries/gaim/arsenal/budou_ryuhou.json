@@ -1,0 +1,16 @@
+{
+	"name": "Budou Ryuhou",
+	"icon": "kamenridercraft:budou_ryuhou",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/riders/ryugen#budou)Kamen Rider Ryugen$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/budou_ryuhou"
+		}
+	]
+}

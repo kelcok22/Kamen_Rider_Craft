@@ -1,0 +1,16 @@
+{
+	"name": "Sengoku Driver (Knuckle)",
+	"icon": "kamenridercraft:sengoku_driver_knuckle",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/knuckle#kurumi)Kamen Rider Knuckle"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_knuckle"
+		}
+	]
+}

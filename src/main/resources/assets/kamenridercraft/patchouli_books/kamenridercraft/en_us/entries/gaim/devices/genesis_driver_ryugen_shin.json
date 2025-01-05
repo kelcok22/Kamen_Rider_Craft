@@ -1,0 +1,16 @@
+{
+	"name": "Genesis Driver (Ryugen)",
+	"icon": "kamenridercraft:genesis_driver_ryugen_shin",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 34,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Unused files of Kamen Rider: Battride War II (2014, PS3 game)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/ryugen#melon_energy)Kamen Rider Ryugen"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/genesis_driver_ryugen_shin"
+		}
+	]
+}

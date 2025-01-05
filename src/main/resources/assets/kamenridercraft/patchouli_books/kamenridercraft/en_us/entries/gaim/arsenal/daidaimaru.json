@@ -1,0 +1,16 @@
+{
+	"name": "Daidaimaru",
+	"icon": "kamenridercraft:daidaimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Gaim's $(l:gaim/riders/gaim#orange)Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/daidaimaru"
+		}
+	]
+}

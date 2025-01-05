@@ -1,0 +1,16 @@
+{
+	"name": "Musou Saber",
+	"icon": "kamenridercraft:musou_saber",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by the Armored Riders"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/musou_saber"
+		}
+	]
+}

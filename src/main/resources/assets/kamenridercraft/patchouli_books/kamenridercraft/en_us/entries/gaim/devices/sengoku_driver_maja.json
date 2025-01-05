@@ -1,0 +1,16 @@
+{
+	"name": "Sengoku Driver (Maja)",
+	"icon": "kamenridercraft:sengoku_driver_maja",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/maja)Kamen Rider Maja"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_maja"
+		}
+	]
+}

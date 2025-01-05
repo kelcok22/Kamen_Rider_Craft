@@ -1,0 +1,16 @@
+{
+	"name": "Suika Sojinto (Baron ver.)",
+	"icon": "kamenridercraft:suika_sojinto_baron_ver",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Baron's $(l:gaim/riders/baron#suika)Suika Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/suika_sojinto_baron_ver"
+		}
+	]
+}

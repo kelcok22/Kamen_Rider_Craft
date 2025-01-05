@@ -1,0 +1,16 @@
+{
+	"name": "Banana Spear",
+	"icon": "kamenridercraft:banana_spear",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by $(l:gaim/riders/baron#banana)Kamen Rider Baron$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/banana_spear"
+		}
+	]
+}

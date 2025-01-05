@@ -1,0 +1,16 @@
+{
+	"name": "Sword Bringer",
+	"icon": "kamenridercraft:sword_bringer",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Used by $(l:gaim/riders/idunn)Kamen Rider Idunn$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sword_bringer"
+		}
+	]
+}

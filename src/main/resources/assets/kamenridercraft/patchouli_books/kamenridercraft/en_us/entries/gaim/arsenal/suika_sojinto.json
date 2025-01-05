@@ -1,0 +1,16 @@
+{
+	"name": "Suika Sojinto",
+	"icon": "kamenridercraft:suika_sojinto",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Gaim's $(l:gaim/riders/gaim#suika)Suika Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/suika_sojinto"
+		}
+	]
+}

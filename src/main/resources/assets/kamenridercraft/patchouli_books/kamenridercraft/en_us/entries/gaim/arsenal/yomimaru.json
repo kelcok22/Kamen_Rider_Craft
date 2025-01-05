@@ -1,0 +1,16 @@
+{
+	"name": "Yomimaru",
+	"icon": "kamenridercraft:yomimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used by $(l:gaim/riders/fifteen)Kamen Rider Fifteen$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/yomimaru"
+		}
+	]
+}

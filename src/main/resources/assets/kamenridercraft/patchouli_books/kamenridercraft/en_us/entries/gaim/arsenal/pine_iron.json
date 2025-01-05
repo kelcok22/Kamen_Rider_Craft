@@ -1,0 +1,16 @@
+{
+	"name": "Pine Iron",
+	"icon": "kamenridercraft:pine_iron",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Gaim's $(l:gaim/riders/gaim#pine)Pine Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/pine_iron"
+		}
+	]
+}
