@@ -219,8 +219,7 @@ public class Saber_Rider_Items {
 
 	public static final DeferredItem<Item> GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("gaikotsu_ninjaden_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","desast","seiken_saikou_driver_belt_desast"
-					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false))
-					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> TELEVI_KUN_WONDER_RIDE_BOOK = ITEMS.register("televi_kun_wonder_ride_book",
