@@ -711,6 +711,14 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> WOODEN_PANEL2 = registerBlock("wooden_panel2",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+//	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
+//			() -> new BaseFacingBlockNotCube(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
+//					,Shape()).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> PAVEMENT = registerBlock("pavement",
+			() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)
+					.strength(2f)));
 	
 
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
