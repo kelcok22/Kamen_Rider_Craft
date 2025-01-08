@@ -207,6 +207,9 @@ public class Effect_core {
                     .addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "effect.pause"), (double)100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
+    public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",
+            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
+
 
     public static void register(IEventBus eventBus) {
         EFFECT.register(eventBus);
