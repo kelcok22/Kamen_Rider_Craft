@@ -68,7 +68,8 @@ public class RiderDriverItem extends RiderArmorItem {
     public boolean isTransformed(LivingEntity player) {
         return HEAD.asItem()==player.getItemBySlot(EquipmentSlot.HEAD).getItem()
         &&TORSO.asItem()==player.getItemBySlot(EquipmentSlot.CHEST).getItem()
-        &&LEGS.asItem()==player.getItemBySlot(EquipmentSlot.LEGS).getItem();
+        &&LEGS.asItem()==player.getItemBySlot(EquipmentSlot.LEGS).getItem()
+        &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
 @Override

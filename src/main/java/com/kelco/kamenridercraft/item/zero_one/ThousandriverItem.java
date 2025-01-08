@@ -1,15 +1,10 @@
 package com.kelco.kamenridercraft.item.zero_one;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.Container;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -34,11 +29,11 @@ public class ThousandriverItem extends RiderDriverItem {
 		super.inventoryTick(stack, level, entity,slotId, isSelected);
 
 		if (entity instanceof Player player && !level.isClientSide) {
-			if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET).getItem() == this
-			&& player.hasEffect(Effect_core.BUGSTER)
-        	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())!=0
-        	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())!=0) {
-        	    player.getInventory().clearOrCountMatchingItems(ItemStack -> ItemStack.getItem() == Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 1, player.getInventory());
+			if (isTransformed(player) && player.hasEffect(Effect_core.BUGSTER)
+        	&& player.getInventory().countItem(Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get())>0
+        	&& player.getInventory().countItem(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())>0) {
+        	    if (player.getInventory().getItem(40).getItem()==Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get()) player.getInventory().removeItem(40, 1);
+				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get())), 1);
 				ItemEntity key = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), new ItemStack(Zero_One_Rider_Items.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get(), 1), 0, 0, 0);
 				key.setPickUpDelay(0);
 				level.addFreshEntity(key);
