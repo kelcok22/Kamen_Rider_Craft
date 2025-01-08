@@ -81,7 +81,7 @@
       "kamenridercraft:trees_old_growth_helheim",
       "kamenridercraft:pile_mossy_cobblestone",
       "kamenridercraft:flower_helheim",
-      "kamenridercraft:helheim_vine",
+
       "minecraft:flower_default",
       "minecraft:patch_grass_forest",
       "minecraft:patch_tall_grass",
@@ -98,6 +98,7 @@
       "minecraft:forest_rock",
       "minecraft:forest_flowers",
       "minecraft:desert_well",
+      "kamenridercraft:helheim_vine",
       "minecraft:cave_vines",
       "minecraft:classic_vines_cave_feature",
       "minecraft:kelp_cold",

@@ -351,7 +351,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
 			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().lightLevel((p_152632_) -> {
-				return 1;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+				return 7;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
@@ -403,8 +403,6 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
 					.strength(0.5f)).AddToTabList(RiderTabs.RIDER_DECOR));
-			// () -> new ColoredFallingBlock(new ColorRGBA(13224123),
-			// BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR = registerBlock("denliner_interior",
