@@ -1,0 +1,33 @@
+{
+    "render_type": "minecraft:cutout",
+	"textures": {
+		"bottom": "kamenridercraft:block/helheim_crack_bottom",
+		"top": "kamenridercraft:block/helheim_crack_top",
+		"particle": "kamenridercraft:block/helheim_crack_bottom"
+	},
+	
+    "elements": [
+        {
+            "from": [0, 0, 14],
+            "to": [16, 16, 14],
+            "faces": {
+                "north": {"uv": [0, 0, 16, 16], "texture": "bottom"},
+                "east": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+                "south": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+                "up": {"uv": [0, 0, 1, 1], "rotation": 90, "texture": "#missing"},
+                "down": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#missing"}
+            }
+        },
+        {
+            "from": [0, 16, 14],
+            "to": [16, 32, 14],
+            "faces": {
+                "north": {"uv": [0, 0, 16, 16], "texture": "#top"},
+                "east": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+                "south": {"uv": [0, 0, 16, 16], "texture": "#top"},
+                "up": {"uv": [0, 0, 1, 1], "texture": "#missing"},
+                "down": {"uv": [0, 0, 1, 1], "texture": "#missing"}
+            }
+        }
+    ]
+}
