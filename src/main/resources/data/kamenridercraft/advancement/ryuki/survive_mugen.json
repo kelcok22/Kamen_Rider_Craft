@@ -4,7 +4,7 @@
 	  "id": "kamenridercraft:survive_mugen"
 	},
 	"title": "You irritated me…",
-	"description": "Use the Survive Mugen card to access Ouja's Survive form",
+	"description": "Transform into Ouja Survive",
 	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
@@ -15,33 +15,68 @@
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
 	  "conditions": {
-		"player": {
-		  "equipment": {
-			"head": {
-			  "items": [
-				"kamenridercraft:ryukihead"
-			  ]
-			},
-			"chest": {
-			  "items": [
-				"kamenridercraft:ryukitroso"
-			  ]
-			},
-			"legs": {
-			  "items": [
-				"kamenridercraft:ryukilegs"
-			  ]
-			},
-			"feet": {
-			  "items": [
-				"kamenridercraft:v_buckle_ouja"
-			  ],
-              "predicates": {
+		"player": [
+		  {
+			"condition": "minecraft:any_of",
+			"terms": [
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_ouja"
+					  ],
+					  "predicates": {
                 "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_mugen\"}"
               }
+					}
+				  }
+				}
+			  },
+			  {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+				  "equipment": {
+					"feet": {
+					  "items": [
+						"kamenridercraft:v_buckle_ouja"
+					  ],
+					  "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_shippu_ouja\"}"
+              }
+					}
+				  }
+				}
+			  }
+			]
+		  },
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:ryukihead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:ryukitroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:ryukilegs"
+				  ]
+				}
+			  }
 			}
 		  }
-		}
+		]
 	  }
 	}
   }

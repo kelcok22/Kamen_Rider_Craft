@@ -185,7 +185,7 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> SPARKING_GIRAFFE_PROGRISEKEY = ITEMS.register("sparking_giraffe_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_giraffe","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-            		new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
+            		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
             .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 5));
 	

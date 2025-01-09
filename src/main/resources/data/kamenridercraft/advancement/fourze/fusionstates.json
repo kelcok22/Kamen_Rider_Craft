@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:fusion_switch"
+	},
+	"title": "3 + 2 + 1",
+	"description": "Transform into Fourze Meteor Nadeshiko Fusionstates",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:fourze/cosmicstates",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:fourze_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:fourze_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:fourze_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:fourze_driver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex5:\"kamenridercraft:fourze_meteor_nadeshiko_fusionstates\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

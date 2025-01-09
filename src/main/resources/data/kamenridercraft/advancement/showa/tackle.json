@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	  "id": "kamenridercraft:tackle_belt"
 	},
-	"title": "World's Worst Dad",
-	"description": "Transform into §mGord§r Gold Drive",
+	"title": "First Lady(bug)",
+	"description": "Transform into Electromagnetic Wave Human Tackle",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dark_drive",
+  "parent": "kamenridercraft:showa/stronger",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:strongerhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:strongertroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:strongerlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
+				"kamenridercraft:tackle_belt"
 			  ]
 			}
 		  }

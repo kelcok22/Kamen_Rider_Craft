@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	  "id": "kamenridercraft:mach_driver_honoh_chaser"
 	},
-	"title": "World's Worst Dad",
-	"description": "Transform into §mGord§r Gold Drive",
+	"title": "He who fights for the freedom of all living things",
+	"description": "Transform into Kamen Rider Chaser",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dark_drive",
+  "parent": "kamenridercraft:drive/mach",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
+				"kamenridercraft:mach_driver_honoh_chaser"
 			  ]
 			}
 		  }
