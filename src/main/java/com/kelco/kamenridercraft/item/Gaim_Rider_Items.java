@@ -465,29 +465,131 @@ public class Gaim_Rider_Items {
 
 	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_3 = ITEMS.register("lord_baron_fragment_3",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRIVE_LOCKSEED = ITEMS.register("drive_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"drive_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> GAIM_LOCKSEED = ITEMS.register("gaim_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"gaim_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> WIZARD_LOCKSEED = ITEMS.register("wizard_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"wizard_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> FOURZE_LOCKSEED = ITEMS.register("fourze_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"fourze_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> OOO_LOCKSEED = ITEMS.register("ooo_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ooo_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> W_LOCKSEED = ITEMS.register("w_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"w_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> DECADE_LOCKSEED = ITEMS.register("decade_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"decade_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> KIVA_LOCKSEED = ITEMS.register("kiva_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kiva_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> DEN_O_LOCKSEED = ITEMS.register("den_o_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"den_o_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> KABUTO_LOCKSEED = ITEMS.register("kabuto_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kabuto_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> HIBIKI_LOCKSEED = ITEMS.register("hibiki_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"hibiki_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLADE_LOCKSEED = ITEMS.register("blade_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"blade_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> FAIZ_LOCKSEED = ITEMS.register("faiz_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"faiz_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> RYUKI_LOCKSEED = ITEMS.register("ryuki_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"ryuki_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> AGITO_LOCKSEED = ITEMS.register("agito_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"agito_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> KUUGA_LOCKSEED = ITEMS.register("kuuga_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kuuga_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> RIDER_ICHIGO_LOCKSEED = ITEMS.register("rider_ichigo_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"rider_ichigo_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHOWA_RIDER_LOCKSEED = ITEMS.register("showa_rider_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"rider_ichigo_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> HEISEI_RIDER_LOCKSEED = ITEMS.register("heisei_rider_lockseed",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"gaim_arms","gaim","sengoku_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddCompatibilityList(Can_use_Legend_lockseed).ResetFormToBase().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
 	/**
-	drive_lockseed
-	 gaim_lockseed
-	 gaim_lockseed_movie_special
-	wizard_lockseed
-	fourze_lockseed
-	ooo_lockseed
-	w_lockseed
-	decade_lockseed
-	kiva_lockseed
-	den_o_lockseed
-	kaubuto_lockseed
-	hibiki_lockseed
-	blade_lockseed
-	faiz_lockseed
-	ryuki_lockseed agito_lockseed
-	kuuga_lockseed
-
-	rider_ichigo_lockseed
-
-	showa_rider_lockseed
-	heisei_rider_lockseed
-
 	sakura_hurricane
 	rose_attacker
 	dandeliner
