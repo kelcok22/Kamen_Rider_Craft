@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kamenridercraft:block/pavement"
+    },
+    "type=double": {
+      "model": "block/black_concrete_powder"
+    },
+    "type=top": {
+      "model": "kamenridercraft:block/pavement_top"
+    }
+  }
+}
