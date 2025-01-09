@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	  "id": "kamenridercraft:lupin_belt"
 	},
-	"title": "World's Worst Dad",
-	"description": "Transform into §mGord§r Gold Drive",
+	"title": "Mr Steal your Treasure",
+	"description": "Transform into Kamen Rider Lupin",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dark_drive",
+  "parent": "kamenridercraft:drive/chaser",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
+				"kamenridercraft:lupin_belt"
 			  ]
 			}
 		  }

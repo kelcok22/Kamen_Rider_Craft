@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:taka_eternity_medal"
+	},
+	"title": "Core Medals of Revival",
+	"description": "Obtain the Taka Eternity, Kujaku Eternity, and Condor Eternity Core Medals",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/tajadol",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:taka_eternity_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kujaku_eternity_medal"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:condor_eternity_medal"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

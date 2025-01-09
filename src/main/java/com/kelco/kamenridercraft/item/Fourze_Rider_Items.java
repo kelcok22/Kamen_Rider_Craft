@@ -154,7 +154,7 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> CAMERA_ASTROSWITCH = ITEMS.register("camera_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_camera_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
 	public static final DeferredItem<Item> PARACHUTE_ASTROSWITCH = ITEMS.register("parachute_switch",

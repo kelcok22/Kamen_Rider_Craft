@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	  "id": "kamenridercraft:neo_amazons_driver_neo_alpha"
 	},
-	"title": "World's Worst Dad",
-	"description": "Transform into §mGord§r Gold Drive",
+	"title": "Chainsaw Ma(zo)n",
+	"description": "Transform into Kamen Rider Amazon Neo Alpha",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dark_drive",
+  "parent": "kamenridercraft:extras/amazon_new_omega",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:amazonshead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:amazonstroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:amazonslegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
+				"kamenridercraft:neo_amazons_driver_neo_alpha"
 			  ]
 			}
 		  }

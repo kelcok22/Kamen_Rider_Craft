@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:banno_driver_gord_drive"
+	  "id": "kamenridercraft:build_driver_metal"
 	},
-	"title": "World's Worst Dad",
-	"description": "Transform into §mGord§r Gold Drive",
+	"title": "There is no fair play in war…",
+	"description": "Transform into Kamen Rider Metal Build",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/dark_drive",
+  "parent": "kamenridercraft:build/madrogue",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:buildhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:buildtroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:buildlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:banno_driver_gord_drive"
+				"kamenridercraft:build_driver_metal"
 			  ]
 			}
 		  }

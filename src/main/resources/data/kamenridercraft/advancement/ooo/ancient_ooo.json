@@ -5,7 +5,7 @@
 	},
 	"title": "Out with the Old",
 	"description": "Defeat Ancient OOO",
-	"frame": "challenge",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
