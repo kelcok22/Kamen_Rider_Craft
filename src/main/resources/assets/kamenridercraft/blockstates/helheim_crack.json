@@ -1,0 +1,8 @@
+{
+    "variants":{
+      "facing=north": { "model": "kamenridercraft:block/helheim_crack" },
+      "facing=south": { "model": "kamenridercraft:block/helheim_crack", "y": 180 },
+      "facing=west": { "model": "kamenridercraft:block/helheim_crack", "y": 270 },
+      "facing=east": { "model": "kamenridercraft:block/helheim_crack", "y": 90 }
+  }
+}

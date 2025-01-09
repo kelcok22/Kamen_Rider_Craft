@@ -3,10 +3,10 @@
 	"conditions": [
 	{
 		"condition": "neoforge:loot_table_id",
-		"loot_table_id": "minecraft:chests/desert_pyrammid"
+		"loot_table_id": "minecraft:chests/desert_pyramid"
 	},{
 		"condition": "minecraft:random_chance",
-		"chance": 0.5
+		"chance": 1
 	}
 ],
 	"item": "kamenridercraft:unknown_beast_ring"

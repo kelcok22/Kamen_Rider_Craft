@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.ArtificialGravityBlock;
 import com.kelco.kamenridercraft.block.custom.ChairBlock;
+import com.kelco.kamenridercraft.block.custom.HelheimCrack;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -175,6 +176,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
 			() -> new DoorBlock(BlockSetType.IRON,
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
 
 	public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
 			() -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
@@ -347,6 +349,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_4 = registerBlock("potted_helheim_plant_4",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_4.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
+	public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
+			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().lightLevel((p_152632_) -> {
+				return 7;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,10, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
@@ -397,8 +403,6 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
 					.strength(0.5f)).AddToTabList(RiderTabs.RIDER_DECOR));
-			// () -> new ColoredFallingBlock(new ColorRGBA(13224123),
-			// BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
 
 
 	public static final DeferredBlock<Block> DENLINER_INTERIOR = registerBlock("denliner_interior",
