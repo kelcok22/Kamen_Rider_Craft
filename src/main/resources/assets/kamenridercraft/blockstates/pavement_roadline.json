@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "type=bottom": {
+      "facing=north": { "model": "kamenridercraft:block/pavement_roadline" },
+      "facing=south": { "model": "kamenridercraft:block/pavement_roadline", "y": 180 },
+      "facing=west":  { "model": "kamenridercraft:block/pavement_roadline", "y": 270 },
+      "facing=east":  { "model": "kamenridercraft:block/pavement_roadline", "y": 90 }
+    },
+    "type=double": {
+      "model": "block/black_concrete_powder"
+    },
+    "type=top": {
+      "facing=north": { "model": "kamenridercraft:block/pavement_roadline_top" },
+      "facing=south": { "model": "kamenridercraft:block/pavement_roadline_top", "y": 180 },
+      "facing=west":  { "model": "kamenridercraft:block/pavement_roadline_top", "y": 270 },
+      "facing=east":  { "model": "kamenridercraft:block/pavement_roadline_top", "y": 90 }
+    }
+  }
+}
