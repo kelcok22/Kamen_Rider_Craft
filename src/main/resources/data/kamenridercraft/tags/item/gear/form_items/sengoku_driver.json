@@ -31,6 +31,25 @@
     "kamenridercraft:proto_orange_lockseed",
     "kamenridercraft:proto_banana_lockseed",
     "kamenridercraft:proto_budou_lockseed",
-    "kamenridercraft:proto_durian_lockseed"
+    "kamenridercraft:proto_durian_lockseed",
+	  "kamenridercraft:drive_lockseed",
+	  "kamenridercraft:gaim_lockseed",
+	  "kamenridercraft:wizard_lockseed",
+	  "kamenridercraft:fourze_lockseed",
+	  "kamenridercraft:ooo_lockseed",
+	  "kamenridercraft:w_lockseed",
+	  "kamenridercraft:decade_lockseed",
+	  "kamenridercraft:kiva_lockseed",
+	  "kamenridercraft:den_o_lockseed",
+	  "kamenridercraft:kabuto_lockseed",
+	  "kamenridercraft:hibiki_lockseed",
+	  "kamenridercraft:blade_lockseed",
+	  "kamenridercraft:faiz_lockseed",
+	  "kamenridercraft:ryuki_lockseed",
+	  "kamenridercraft:agito_lockseed",
+	  "kamenridercraft:kuuga_lockseed",
+  	"kamenridercraft:rider_ichigo_lockseed",
+  	"kamenridercraft:showa_rider_lockseed",
+  	"kamenridercraft:heisei_rider_lockseed"
   ]
 }

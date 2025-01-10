@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:charge_up"
+	},
+	"title": "I'm Strongest now",
+	"description": "Transform into Stronger Charge Up",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/stronger",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:strongerhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:strongertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:strongerlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:electrer"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:charge_up\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
