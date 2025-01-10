@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:boost_raise_buckle"
+    }, 
+    {
+      "item": "kamenridercraft:boost_mkii_wish_card"
+    },
+    {
+      "item": "kamenridercraft:boost_mkii_wish_card"
+    },
+    {
+      "item": "kamenridercraft:boost_mkii_wish_card"
+    },
+    {
+      "item": "kamenridercraft:boost_mkii_wish_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:boost_mkii_raise_buckle"
+  }
+}

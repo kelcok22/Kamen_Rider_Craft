@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "build",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:nebula_gas_sample"
+    }, 
+    {
+      "item": "kamenridercraft:full_bottle"
+    },
+    {
+      "item": "kamenridercraft:full_bottle"
+    },
+    {
+      "item": "kamenridercraft:full_bottle"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:smash_bottle",
+    "count": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:gigant_mission_box"
+    }, 
+    {
+      "item": "kamenridercraft:gya_go_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:fantasy_wish_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:fantasy_raise_buckle"
+  }
+}
