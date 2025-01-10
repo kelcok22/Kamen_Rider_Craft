@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "legend_rider_buckles",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:ninja_raise_buckle"
+    }, 
+    {
+      "item": "kamenridercraft:shuriken_starter"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:shinobi_raise_buckle"
+  }
+}

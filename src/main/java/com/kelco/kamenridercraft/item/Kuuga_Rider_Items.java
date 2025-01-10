@@ -145,6 +145,9 @@ public class Kuuga_Rider_Items {
 	public static final DeferredItem<Item> TITAN_SWORD = ITEMS.register("titan_sword",
 	        () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 
+	public static final DeferredItem<Item> KUUGA_PHONE = ITEMS.register("kuuga_phone",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KUUGA_TAB_ITEM));
+
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

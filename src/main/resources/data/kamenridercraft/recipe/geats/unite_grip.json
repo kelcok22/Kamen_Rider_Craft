@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:gigant_mission_box"
+    }, 
+    {
+      "item": "kamenridercraft:ziin_raise_riser_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unite_grip"
+  }
+}

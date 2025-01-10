@@ -35,10 +35,9 @@ public class Miscellaneous_Rider_Items {
 						,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 						,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-	            .AddToList(RiderTabs.G_TAB_ITEM).KeepItem());
+						.AddToList(RiderTabs.G_TAB_ITEM).KeepItem());
 
-	    
-	    public static final DeferredItem<Item> GHELMET = ITEMS.register("ghead",
+	public static final DeferredItem<Item> GHELMET = ITEMS.register("ghead",
 	            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));
 	    public static final DeferredItem<Item> GCHESTPLATE = ITEMS.register("gtroso",
 	            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));

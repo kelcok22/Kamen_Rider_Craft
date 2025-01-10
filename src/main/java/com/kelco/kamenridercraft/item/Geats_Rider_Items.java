@@ -289,7 +289,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(Effect_core.REFLECT, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-			.ChangeSlot(2).SetOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.ChangeSlot(2).SetOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shark","geats","desire_driver_belt_geats",
@@ -421,7 +421,8 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 3,true,false),
-					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false))
 			.ChangeSlot(2).AddCompatibilityList(new String[] {"tycoon"}).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNITE_GRIP = ITEMS.register("unite_grip",
@@ -591,7 +592,7 @@ public class Geats_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.GIGANT_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_BUCKLE = ITEMS.register("christmas_buckle",
-			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_HAMMER_RAISE_BUCKLE = ITEMS.register("golden_hammer_raise_buckle",
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
@@ -1240,6 +1241,9 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
 			.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
+	public static final DeferredItem<Item> BOOST_MKII_WISH_CARD = ITEMS.register("boost_mkii_wish_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+
 	public static final DeferredItem<Item> JYAMASHIN_WISH_CARD = ITEMS.register("jyamashin_wish_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jyamashin","buffa","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -1248,6 +1252,8 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
+	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static void register(net.neoforged.bus.api.IEventBus eventBus) {
 		ITEMS.register(eventBus);
