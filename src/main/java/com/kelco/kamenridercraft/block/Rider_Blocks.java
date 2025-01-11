@@ -174,8 +174,7 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
-			() -> new DoorBlock(BlockSetType.IRON,
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+			() -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 
 	public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
@@ -260,33 +259,31 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> HELHEIM_PLANKS = registerBlock("helheim_planks",
-			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
-					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<StairBlock> HELHEIM_STAIRS = registerBlock("helheim_stairs",
-			() -> new StairBlock(Rider_Blocks.HELHEIM_PLANKS.get().defaultBlockState(),
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+			() -> new StairBlock(Rider_Blocks.HELHEIM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<SlabBlock> HELHEIM_SLAB = registerBlock("helheim_slab",
-			() -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+			() -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f)));
 
 	public static final DeferredBlock<PressurePlateBlock> HELHEIM_PRESSURE_PLATE = registerBlock("helheim_pressure_plate",
-			() -> new PressurePlateBlock(BlockSetType.OAK,
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+			() -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<ButtonBlock> HELHEIM_BUTTON = registerBlock("helheim_button",
-			() -> new ButtonBlock(BlockSetType.OAK,20,
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+			() -> new ButtonBlock(BlockSetType.OAK,20, BlockBehaviour.Properties.of().strength(2f).noCollission()));
 
 	public static final DeferredBlock<FenceBlock> HELHEIM_FENCE = registerBlock("helheim_fence",
-			() -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+			() -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<FenceGateBlock> HELHEIM_FENCE_GATE = registerBlock("helheim_fence_gate",
-			() -> new FenceGateBlock(WoodType.OAK,BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+			() -> new FenceGateBlock(WoodType.OAK,BlockBehaviour.Properties.of().strength(2f)));
 
 	public static final DeferredBlock<DoorBlock> HELHEIM_DOOR = registerBlock("helheim_door",
-			() -> new DoorBlock(BlockSetType.OAK,
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
 	public static final DeferredBlock<TrapDoorBlock> HELHEIM_TRAPDOOR = registerBlock("helheim_trapdoor",
-			() -> new TrapDoorBlock(BlockSetType.OAK,
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+			() -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
 
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
 			() -> new SaplingBlock(ModTreeGrowers.HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));

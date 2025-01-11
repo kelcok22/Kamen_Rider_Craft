@@ -20,15 +20,19 @@
 	  "kamenridercraft:sword_of_logos_wood",
     "kamenridercraft:wooden_panel",
 	  "kamenridercraft:wooden_panel2",
-	  "kamenridercraft:gaoh_boss_block",
-	  "kamenridercraft:poseidon_boss_block",
-	  "kamenridercraft:core_boss_block",
-	  "kamenridercraft:powered_up_core_boss_block",
-	  "kamenridercraft:ancient_ooo_boss_block",
-	  "kamenridercraft:goda_boss_block",
-	  "kamenridercraft:cronus_boss_block",
-	  "kamenridercraft:horobi_boss_block",
-	  "kamenridercraft:ikazuchi_boss_block",
-	  "kamenridercraft:ark_one_boss_block"
+	  "kamenridercraft:helheim_log",
+	  "kamenridercraft:helheim_wood",
+	  "kamenridercraft:stripped_helheim_log",
+	  "kamenridercraft:stripped_helheim_wood",
+	  "kamenridercraft:helheim_planks",
+	  "kamenridercraft:helheim_stairs",
+	  "kamenridercraft:helheim_pressure_plate",
+	  "kamenridercraft:helheim_fence",
+	  "kamenridercraft:helheim_door",
+	  "kamenridercraft:helheim_sapling",
+	  "kamenridercraft:helheim_button",
+	  "kamenridercraft:helheim_fence_gate",
+	  "kamenridercraft:helheim_slab"
+
   ]
 }
