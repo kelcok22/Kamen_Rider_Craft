@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.entities.villager;
+package com.kelco.kamenridercraft.entities;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.SynchedEntityData;

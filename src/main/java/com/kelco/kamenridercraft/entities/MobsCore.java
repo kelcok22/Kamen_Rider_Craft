@@ -9,10 +9,7 @@ import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.summons.*;
 
-import com.kelco.kamenridercraft.entities.villager.ChairEntity;
-import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
