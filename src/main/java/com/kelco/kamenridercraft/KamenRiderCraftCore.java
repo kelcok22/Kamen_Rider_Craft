@@ -442,6 +442,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.DECADE_ARMOR_EX_AID.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
+
         }
     }
 }
