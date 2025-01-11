@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Kurokage",
+	"icon": "kamenridercraft:sengoku_driver_kurokage",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "matsubokkuri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kurokage\",components:{custom_data:{slot_tex1:\"kamenridercraft:matsubokkuri_lockseed\",slot_tex2:\"kamenridercraft:basic_kurokage_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Matsubokkuri Arms",
+			"text": "Accessed with the $(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kurokage",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kurokage)Sengoku Driver (Kurokage)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "donguri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kurokage\",components:{custom_data:{slot_tex1:\"kamenridercraft:donguri_lockseed\",slot_tex2:\"kamenridercraft:basic_kurokage_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Donguri Arms",
+			"text": "Accessed with the $(l:gaim/items/donguri_lockseed)Donguri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kurokage",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kurokage)Sengoku Driver (Kurokage)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kurumi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kurokage\",components:{custom_data:{slot_tex1:\"kamenridercraft:kurumi_lockseed\",slot_tex2:\"kamenridercraft:basic_kurokage_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kurumi Arms",
+			"text": "Accessed with the $(l:gaim/items/kurumi_lockseed)Kurumi Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kurokage",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kurokage)Sengoku Driver (Kurokage)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kurokage\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_lockseed\",slot_tex2:\"kamenridercraft:basic_kurokage_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Blade Arms",
+			"text": "Accessed with the $(l:gaim/items/blade_lockseed)Blade Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kurokage",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kurokage)Sengoku Driver (Kurokage)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength II"
+		}
+	]
+}

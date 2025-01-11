@@ -1,0 +1,128 @@
+{
+	"name": "Kamen Rider Zangetsu",
+	"icon": "kamenridercraft:sengoku_driver_zangetsu",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "melon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Melon Arms",
+			"text": "Accessed with the $(l:gaim/items/melon_lockseed)Melon Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Ichigo Arms",
+			"text": "Accessed with the $(l:gaim/items/ichigo_lockseed)Ichigo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "budou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:budou_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Budou Arms",
+			"text": "Accessed with the $(l:gaim/items/budou_lockseed)Budou Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mango",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:mango_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Mango Arms",
+			"text": "Accessed with the $(l:gaim/items/mango_lockseed)Mango Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "watermelon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:watermelon_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Watermelon Arms",
+			"text": "Accessed with the $(l:gaim/items/watermelon_lockseed)Watermelon Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "suika",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Suika Arms",
+			"text": "Accessed with the $(l:gaim/items/suika_lockseed)Suika Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_melon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_melon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Jimber Melon Arms",
+			"text": "Accessed with the $(l:gaim/items/melon_energy_lockseed)Melon Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kabuto Arms",
+			"text": "Accessed with the $(l:gaim/items/kabuto_lockseed)Kabuto Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Decade Arms",
+			"text": "Accessed with the $(l:gaim/items/decade_lockseed)Decade Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Haste III$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Fourze Arms",
+			"text": "Accessed with the $(l:gaim/items/fourze_lockseed)Fourze Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Bravo",
+	"icon": "kamenridercraft:sengoku_driver_bravo",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "durian",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:durian_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Durian Arms",
+			"text": "Accessed with the $(l:gaim/items/durian_lockseed)Durian Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bravo",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bravo)Sengoku Driver (Bravo)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kingdurian",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_durian_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kingdurian Arms",
+			"text": "Accessed with the $(l:gaim/items/king_durian_lockseed)Kingdurian Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bravo",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bravo)Sengoku Driver (Bravo)$(/l)$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_melon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_melon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Jimber Melon Arms",
+			"text": "Accessed with the $(l:gaim/items/melon_energy_lockseed)Melon Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bravo",
+			"text": "Appears in:$(li)S.I.C. Hero Saga (2017, toyline)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bravo)Sengoku Driver (Bravo)$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Hibiki Arms",
+			"text": "Accessed with the $(l:gaim/items/hibiki_lockseed)Hibiki Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bravo",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bravo)Sengoku Driver (Bravo)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Saturation$(li)Strength"
+		}
+	]
+}

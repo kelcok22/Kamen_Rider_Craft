@@ -1,0 +1,80 @@
+{
+	"name": "Kamen Rider Knuckle",
+	"icon": "kamenridercraft:sengoku_driver_knuckle",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "kurumi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kurumi_lockseed\",slot_tex2:\"kamenridercraft:basic_knuckle_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kurumi Arms",
+			"text": "Accessed with the $(l:gaim/items/kurumi_lockseed)Kurumi Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "suika",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_knuckle_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Suika Arms",
+			"text": "Accessed with the $(l:gaim/items/suika_lockseed)Suika Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "donguri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:donguri_lockseed\",slot_tex2:\"kamenridercraft:basic_knuckle_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Donguri Arms",
+			"text": "Accessed with the $(l:gaim/items/donguri_lockseed)Donguri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "matsubokkuri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:matsubokkuri_lockseed\",slot_tex2:\"kamenridercraft:basic_knuckle_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Matsubokkuri Arms",
+			"text": "Accessed with the $(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_marron",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:marron_energy_lockseed\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Jimber Marron Arms",
+			"text": "Accessed with the $(l:gaim/items/marron_energy_lockseed)Marron Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Speed II$(li)Haste II$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_knuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_lockseed\",slot_tex2:\"kamenridercraft:basic_knuckle_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kuuga Arms",
+			"text": "Accessed with the $(l:gaim/items/kuuga_lockseed)Kuuga Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Knuckle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Saturation"
+		}
+	]
+}

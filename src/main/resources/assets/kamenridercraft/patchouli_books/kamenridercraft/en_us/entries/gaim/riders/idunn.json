@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Idunn",
+	"icon": "kamenridercraft:sengoku_driver_idunn",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_idunn\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_idunn_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Ringo Arms",
+			"text": "Accessed with the $(l:gaim/items/forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Idunn",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_idunn)Sengoku Driver (Idunn)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed III$(li)Regeneration II$(li)Haste II$(li)Saturation$(li)Strength IV"
+		}
+	]
+}

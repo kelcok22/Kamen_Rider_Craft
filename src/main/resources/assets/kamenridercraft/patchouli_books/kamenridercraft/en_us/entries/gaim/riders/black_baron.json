@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Black Baron",
+	"icon": "kamenridercraft:sengoku_driver_black_baron",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_black_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_black_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Banana Arms",
+			"text": "Accessed with the $(l:gaim/items/banana_lockseed)Banana Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Black Baron",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_black_baron)Sengoku Driver (Black Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+		}
+	]
+}

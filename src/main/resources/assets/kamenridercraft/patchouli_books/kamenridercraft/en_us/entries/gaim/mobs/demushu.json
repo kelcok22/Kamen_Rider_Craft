@@ -1,0 +1,17 @@
+{
+	"name": "Demushu",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:demushu",
+			"text": "Summoned from a $(l:misc/blocks/demushu_boss_block)Demushu Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 300$(br2)Drops$(li)1 $(l:gaim/items/black_ringo_lockseed)Black Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/blood_orange_lockseed)Blood Orange Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragment_3)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/zakuro_lockseed)Zakuro Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/sheimu)Sheimu$(/l) (33.3%)"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Marika",
+	"icon": "kamenridercraft:genesis_driver_marika",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "peach_energy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_marika\",components:{custom_data:{slot_tex1:\"kamenridercraft:peach_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Peach Energy Arms",
+			"text": "Accessed with the $(l:gaim/items/peach_energy_lockseed)Peach Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Marika",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_marika)Genesis Driver (Marika)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_marika\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Fourze Arms",
+			"text": "Accessed with the $(l:gaim/items/fourze_lockseed)Fourze Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Marika",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_marika)Genesis Driver (Marika)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
+		}
+	]
+}

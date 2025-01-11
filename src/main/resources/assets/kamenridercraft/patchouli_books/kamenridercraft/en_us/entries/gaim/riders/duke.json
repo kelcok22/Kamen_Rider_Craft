@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Duke",
+	"icon": "kamenridercraft:genesis_driver_duke",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lemon_energy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Lemon Energy Arms",
+			"text": "Accessed with the $(l:gaim/items/lemon_energy_lockseed)Lemon Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Duke",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_duke)Genesis Driver (Duke)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lemon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_lockseed\",slot_tex2:\"kamenridercraft:basic_duke_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Lemon Arms",
+			"text": "Accessed with the $(l:gaim/items/lemon_lockseed)Lemon Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Duke",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_duke)Sengoku Driver (Duke)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Wizard Arms",
+			"text": "Accessed with the $(l:gaim/items/wizard_lockseed)Wizard Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Duke",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_duke)Genesis Driver (Duke)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Fire Resistance"
+		}
+	]
+}

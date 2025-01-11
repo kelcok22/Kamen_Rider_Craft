@@ -1,16 +1,21 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.footSoldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
@@ -34,11 +39,14 @@ import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
@@ -87,68 +95,73 @@ public class MomotarosEntity extends BaseAllyEntity {
 	   this.setHealth(40.0F);
 	   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.MOMOTAROSWORD.get()));
     }
-	
-	public final InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
-	      ItemStack itemstack = p_30412_.getItemInHand(p_30413_);
-		  Level level = this.level();
-		  if (level.isClientSide) {
-	         boolean flag = this.isOwnedBy(p_30412_) || this.isTame() || (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isTame() && !this.isAngry());
-	         return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
-	      } else if (this.isTame()) {
-	         if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
-	            this.heal((float)itemstack.getFoodProperties(this).nutrition());
-	            if (!p_30412_.getAbilities().instabuild) {
-	               itemstack.shrink(1);
-	            }
 
-	            this.gameEvent(GameEvent.EAT, this);
-	            return InteractionResult.SUCCESS;
-	         } else {
-	            if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
-	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
-	            	p_30412_.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_sword_1"));
-	            	p_30412_.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_sword_2").getString()));
-	            	this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
-	            	this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
-	            	this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
-	            	this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Den_O_Rider_Items.DEN_O_BELT.get()));
-	            	this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.DEN_GASHER_SWORD.get()));
-					if (!p_30412_.getAbilities().instabuild) {
-					   itemstack.shrink(1);
+    @Override
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        if (!this.level().isClientSide || this.isBaby() && this.isFood(itemstack)) {
+            if (this.isTame()) {
+                if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+                    FoodProperties foodproperties = itemstack.getFoodProperties(this);
+                    float f = foodproperties != null ? (float)foodproperties.nutrition() : 1.0F;
+                    this.heal(2.0F * f);
+                    itemstack.consume(1, player);
+                    this.gameEvent(GameEvent.EAT);
+                    return InteractionResult.sidedSuccess(this.level().isClientSide());
+                } else {
+					if (itemstack.is(Den_O_Rider_Items.RIDER_PASS.get())) {
+						player.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.henshin").getString()));
+						player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.den_o_sword_1"));
+						player.sendSystemMessage(Component.literal("<" + this.getName().getString() + "> " + Component.translatable("henshin.kamenridercraft.den_o_sword_2").getString()));
+						this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Den_O_Rider_Items.DEN_OHELMET.get()));
+						this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Den_O_Rider_Items.DEN_OCHESTPLATE.get()));
+						this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Den_O_Rider_Items.DEN_OLEGGINGS.get()));
+						this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Den_O_Rider_Items.DEN_O_BELT.get()));
+						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Den_O_Rider_Items.DEN_GASHER_SWORD.get()));
+						if (!player.getAbilities().instabuild) {
+						   itemstack.shrink(1);
+						}
+						return InteractionResult.SUCCESS;
 					}
-					return InteractionResult.SUCCESS;
-	            }
-	            InteractionResult interactionresult = super.mobInteract(p_30412_, p_30413_);
-	            if ((!interactionresult.consumesAction() || this.isBaby()) && this.isOwnedBy(p_30412_)) {
-	               this.setOrderedToSit(!this.isOrderedToSit());
-	               this.jumping = false;
-	               this.navigation.stop();
-	               this.setTarget((LivingEntity)null);
-	               return InteractionResult.SUCCESS;
-	            } else {
-	               return interactionresult;
-	            }
-	         }
-	      } else if (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isAngry()) {
-	         if (!p_30412_.getAbilities().instabuild) {
-	            itemstack.shrink(1);
-	         }
+                    InteractionResult interactionresult = super.mobInteract(player, hand);
+                    if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
+                        this.setOrderedToSit(!this.isOrderedToSit());
+                        this.jumping = false;
+                        this.navigation.stop();
+                        this.setTarget(null);
+                        return InteractionResult.SUCCESS_NO_ITEM_USED;
+                    } else {
+                        return interactionresult;
+                    }
+                }
+            } else if (itemstack.is(Modded_item_core.PUDDING) && !this.isAngry()) {
+                itemstack.consume(1, player);
+                this.tryToTame(player, 2);
+                return InteractionResult.SUCCESS;
+            } else if (itemstack.is(Modded_item_core.VIENNA_COFFEE) && !this.isAngry()) {
+                itemstack.consume(1, player);
+                this.tryToTame(player, 3);
+                return InteractionResult.SUCCESS;
+            } else {
+                return super.mobInteract(player, hand);
+            }
+        } else {
+            boolean flag = this.isOwnedBy(player) || this.isTame() || (itemstack.is(Modded_item_core.VIENNA_COFFEE)||itemstack.is(Modded_item_core.PUDDING)) && !this.isTame() && !this.isAngry();
+            return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
+        }
+    }
 
-	         if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, p_30412_)) {
-	            this.tame(p_30412_);
-	            this.navigation.stop();
-	            this.setTarget((LivingEntity)null);
-	            this.setOrderedToSit(true);
-	            this.level().broadcastEntityEvent(this, (byte)7);
-	         } else {
-	            this.level().broadcastEntityEvent(this, (byte)6);
-	         }
-
-	         return InteractionResult.SUCCESS;
-	      } else {
-	         return super.mobInteract(p_30412_, p_30413_);
-	      }
-	   }
+    private void tryToTame(Player player, int chance) {
+        if (this.random.nextInt(chance) == 0  && !net.neoforged.neoforge.event.EventHooks.onAnimalTame(this, player)) {
+            this.tame(player);
+            this.navigation.stop();
+            this.setTarget(null);
+            this.setOrderedToSit(true);
+            this.level().broadcastEntityEvent(this, (byte)7);
+        } else {
+            this.level().broadcastEntityEvent(this, (byte)6);
+        }
+    }
 
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
@@ -175,8 +188,6 @@ public class MomotarosEntity extends BaseAllyEntity {
 	   }
 	   
 	   public boolean isFood(ItemStack p_30440_) {
-		      Item item = p_30440_.getItem();
-
-		      return item ==Modded_item_core.VIENNA_COFFEE.get();
-		   }
+        return p_30440_.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/taros")));
+		}
 }

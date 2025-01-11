@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bujin_gaim",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:blood_orange_lockseed"
+    }, 
+    {
+      "item": "kamenridercraft:kuuga_amazing_mighty_artist"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:blood_orange_lockseed_ochimusha"
+  }
+}

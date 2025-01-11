@@ -1,0 +1,17 @@
+{
+	"name": "Lord Baron",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:lord_baron",
+			"text": "Summoned from a $(l:misc/blocks/lord_baron_boss_block)Lord Baron Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 400$(br2)Drops$(li)1 $(l:gaim/items/forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/fifteen_lockseed)Fifteen Lockseed$(/l)$(li)1 $(l:gaim/arsenal/guronbaryamu)Guronbaryamu$(/l)$(li)1 $(l:gaim/items/maja_lockseed)Maja Lockseed$(/l) (20%)"
+		}
+	]
+}

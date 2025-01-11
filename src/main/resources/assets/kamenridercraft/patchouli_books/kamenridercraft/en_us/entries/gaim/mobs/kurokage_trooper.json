@@ -2,7 +2,7 @@
 	"name": "Kurokage Trooper",
 	"icon": "kamenridercraft:gaim_logo",
 	"category": "kamenridercraft:gaim/mobs",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:entity",

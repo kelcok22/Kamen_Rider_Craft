@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Jam",
+	"icon": "kamenridercraft:sengoku_driver_jam",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_jam\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_jam_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Darkness Arms",
+			"text": "Accessed with the $(l:gaim/items/black_ringo_lockseed)Black Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Jam",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_jam)Sengoku Driver (Jam)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed III$(li)Regeneration III$(li)Haste II$(li)Saturation$(li)Strength IV"
+		}
+	]
+}

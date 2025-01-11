@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Saver",
+	"icon": "kamenridercraft:sengoku_driver_saver",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "blood_zakuro",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zakuro_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Blood Zakuro Arms",
+			"text": "Accessed with the $(l:gaim/items/zakuro_lockseed)Zakuro Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saver",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Blindness$(li)Speed$(li)Haste$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "golden",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Golden Arms",
+			"text": "Accessed with the $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saver",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Regeneration II$(li)Haste$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "darkness",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Darkness Arms",
+			"text": "Accessed with the $(l:gaim/items/black_ringo_lockseed)Black Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saver",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed III$(li)Regeneration III$(li)Haste II$(li)Saturation$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:maja_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Maja Arms",
+			"text": "Accessed with the $(l:gaim/items/maja_lockseed)Maja Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saver",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Saturation$(li)Strength III"
+		}
+	]
+}
