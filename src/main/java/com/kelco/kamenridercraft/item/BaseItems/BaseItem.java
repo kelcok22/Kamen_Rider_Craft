@@ -4,16 +4,20 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.util.List;
 
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 
 public class BaseItem extends Item {
 
     public UseAnim Animation;
     private Item craftingRemainingItem = null;
+    private Boolean hasHoverText = false;
 
     public BaseItem(Properties prop) {
         super(prop);
@@ -30,6 +34,10 @@ public class BaseItem extends Item {
         return this;
     }
 
+    public BaseItem HasHoverTex() {
+        hasHoverText=true;
+        return this;
+    }
     public BaseItem has_basic_model() {
         ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
         return this;
@@ -76,6 +84,12 @@ public class BaseItem extends Item {
         return this;
     }
 
-
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if (hasHoverText) {
+            tooltipComponents.add(Component.translatable("tooltip."+stack.getItem().toString()));
+        }
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 
 }
