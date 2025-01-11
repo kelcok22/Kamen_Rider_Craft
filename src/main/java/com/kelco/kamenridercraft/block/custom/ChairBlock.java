@@ -3,10 +3,16 @@ package com.kelco.kamenridercraft.block.custom;
 
 import java.util.List;
 
+import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.villager.ChairEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -18,9 +24,14 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import javax.annotation.Nullable;
+
 public class ChairBlock extends Block {
 
 	public static VoxelShape SHAPE = Block.box(4, 0, 6, 12,16, 10);
@@ -31,6 +42,30 @@ public class ChairBlock extends Block {
 	      this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 			SHAPE =shape;
 	}
+
+	@Override
+	protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+		if(!level.isClientSide()) {
+			Entity entity = null;
+			List<ChairEntity> entities = level.getEntities(MobsCore.CHAIR_ENTITY.get(), new AABB(pos), chair -> true);
+			if(entities.isEmpty()) {
+				entity = MobsCore.CHAIR_ENTITY.get().spawn(((ServerLevel) level), pos, MobSpawnType.TRIGGERED);
+			} else {
+				entity = entities.get(0);
+			}
+
+			player.startRiding(entity);
+		}
+
+		return InteractionResult.SUCCESS;
+	}
+
+	@Override
+	protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+		return SHAPE;
+	}
+
+
 
 	 public void fallOn(Level p_152169_, BlockState p_152170_, BlockPos p_152171_, Entity p_152172_, float p_152173_) {
 	      super.fallOn(p_152169_, p_152170_, p_152171_, p_152172_, p_152173_ * 0.5F);
@@ -69,11 +104,7 @@ public class ChairBlock extends Block {
 	     public BlockState rotate(BlockState p_48722_, Rotation p_48723_) {
 	        return p_48722_.setValue(FACING, p_48723_.rotate(p_48722_.getValue(FACING)));
 	     }
-	 	
-		   @Override
-		    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-		        return SHAPE;
-		    }
+
 
 		    @Override
 		    public RenderShape getRenderShape(BlockState pState) {

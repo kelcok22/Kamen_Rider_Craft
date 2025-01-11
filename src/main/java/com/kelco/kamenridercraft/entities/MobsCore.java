@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
 import com.kelco.kamenridercraft.entities.summons.*;
 
+import com.kelco.kamenridercraft.entities.villager.ChairEntity;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffect;
@@ -951,6 +952,9 @@ public class MobsCore {
 
           public static final DeferredItem<DeferredSpawnEggItem> VICE_SPAWN_EGG = ITEMS.register("vice_spawn_egg",
                   () -> new DeferredSpawnEggItem(VICE, 0xeaeaea, 0xd9a900, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ChairEntity>>CHAIR_ENTITY = MOBLIST.register("chair_entity",
+                    () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC).sized(0.5f, 0.6f).build("chair_entity"));
 
 
     public static void register(IEventBus eventBus) {
