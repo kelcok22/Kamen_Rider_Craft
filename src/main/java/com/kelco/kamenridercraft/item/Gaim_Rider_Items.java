@@ -7,13 +7,17 @@ import com.kelco.kamenridercraft.item.gaim.SengokuDriverItem;
 import com.kelco.kamenridercraft.item.gaim.SidLockseedItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class Gaim_Rider_Items {
 
@@ -988,9 +992,11 @@ public class Gaim_Rider_Items {
 			() -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
 					false, new Item.Properties().stacksTo(1)).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
+
+
 	public static final DeferredItem<Item>  HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
 			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
-					.AddToList(RiderTabs.GAIM_TAB_ITEM));
+					.HasHoverTex().AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

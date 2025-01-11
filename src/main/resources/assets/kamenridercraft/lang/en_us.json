@@ -303,6 +303,7 @@
 "item.kamenridercraft.base_bike": "Base Bike",
 "item.kamenridercraft.shocker_emblem": "Shocker Emblem",
 "item.kamenridercraft.donut": "Donut",
+  "item.kamenridercraft.pudding": "Pudding",
 "item.kamenridercraft.heat_heaven": "Heat Heaven",
 "item.kamenridercraft.icepop1": "Ice Pop",
 "item.kamenridercraft.icepop2": "Ice Pop",
@@ -502,6 +503,8 @@
 "item.kamenridercraft.dragon_rod": "Dragon Rod",
 "item.kamenridercraft.pegasus_bowgun": "Pegasus Bowgun",
 "item.kamenridercraft.titan_sword": "Titan Sword",
+
+  "item.kamenridercraft.kuuga_phone": "Kuuga's Phone",
 
 "item.kamenridercraft.agitohead": "Agito Helmet",
 "item.kamenridercraft.agitotroso": "Agito Chestplate",
@@ -1857,6 +1860,7 @@
   "item.kamenridercraft.dragon_fruits_energy_lockseed": "Dragon Fruits Energy Lockseed",
   "item.kamenridercraft.proto_dragon_fruits_energy_lockseed": "Proto Dragon Fruits Energy Lockseed",
   "item.kamenridercraft.marron_energy_lockseed": "Marron Energy Lockseed",
+
   "item.kamenridercraft.kachidoki_lockseed": "Kachidoki Lockseed",
   "item.kamenridercraft.zangetsu_kachidoki_lockseed": "Shin Kachidoki Lockseed",
   "item.kamenridercraft.kiwami_lockseed": "Kiwami Lockseed",
@@ -1929,6 +1933,9 @@
   "item.kamenridercraft.lord_baron_fragment_3": "Lord Baron Fragment",
 
   "item.kamenridercraft.gaim_horse_armor": "Gaim Horse Armor",
+
+  "item.kamenridercraft.helheim_fruit": "§5Helheim Fruit",
+  "tooltip.kamenridercraft:helheim_fruit": "§4DO NOT EAT",
 
   "item.kamenridercraft.drive_logo": "Drive Logo",
   "item.kamenridercraft.drive_head": "Drive Helmet",
@@ -2010,6 +2017,12 @@
   "item.kamenridercraft.sparner_f03": "Sparner F03",
 
   "item.kamenridercraft.holy_christmas": "Shift Holy Christmas",
+
+  "item.kamenridercraft.banno_tablet": "Banno Tablet",
+  "item.kamenridercraft.roidmude_core_003": "Roidmude Core 003",
+  "item.kamenridercraft.protozero_core": "Roidmude Core Protozero",
+  "item.kamenridercraft.cyberoid_zzz_core": "Cyberoid Core ZZZ",
+
 
   "item.kamenridercraft.ghost_logo": "Ghost Logo",
   "item.kamenridercraft.ghost_head": "Ghost Helmet",
@@ -3174,6 +3187,8 @@
 "item.kamenridercraft.zombie_raise_buckle": "Zombie Buckle",
 "item.kamenridercraft.jyamato_buckle": "Jyamato Buckle",
 "item.kamenridercraft.jyamashin_wish_card": "Jyamashin Desire Card",
+  "item.kamenridercraft.fantasy_wish_card": "Fantasy Desire Card",
+  "item.kamenridercraft.boost_mkii_wish_card": "Boost MKII Desire Card",
 "item.kamenridercraft.plosion_rage_raise_buckle": "Plosion Rage Buckle",
 
 "item.kamenridercraft.monster_raise_buckle": "Monster Buckle",
@@ -4127,6 +4142,7 @@
 "block.kamenridercraft.sword_of_logos_wood_trim": "Sword of Logos Trimmed Dark Wood Block",
 "block.kamenridercraft.sword_of_logos_wood2": "Sword of Logos Wood Block",
 
+  "block.kamenridercraft.helheim_crack": "Helheim Crack",
 "block.kamenridercraft.ginga_meteor": "Ginga Meteor Rock",
 
 "block.kamenridercraft.gaia_memory_refiner": "Gaia Memory Refiner",
