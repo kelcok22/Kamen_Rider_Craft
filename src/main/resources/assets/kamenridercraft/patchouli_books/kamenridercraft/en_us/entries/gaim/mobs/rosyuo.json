@@ -1,0 +1,17 @@
+{
+	"name": "Rosyuo",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rosyuo",
+			"text": "Summoned from a $(l:misc/blocks/rosyuo_boss_block)Rosyuo Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 250$(br2)Drops$(li)1 $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/kiwami_lockseed)Kiwami Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragment)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/king_durian_lockseed)Kingdurian Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/joeshuimu)Joeshuimu$(/l) (33.3%)"
+		}
+	]
+}

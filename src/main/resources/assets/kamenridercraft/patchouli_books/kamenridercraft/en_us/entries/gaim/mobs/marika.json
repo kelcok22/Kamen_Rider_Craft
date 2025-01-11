@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Marika",
 	"icon": "kamenridercraft:gaim_logo",
 	"category": "kamenridercraft:gaim/mobs",
-	"sortnum": 4,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:entity",

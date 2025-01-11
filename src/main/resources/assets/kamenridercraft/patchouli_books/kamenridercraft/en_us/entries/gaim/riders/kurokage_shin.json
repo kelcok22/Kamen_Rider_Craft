@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Kurokage Shin",
+	"icon": "kamenridercraft:genesis_driver_kurokage_shin",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_kurokage_shin\",components:{custom_data:{slot_tex1:\"kamenridercraft:matsubokkuri_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Matsubokkuri Energy Arms",
+			"text": "Accessed with the $(l:gaim/items/matsubokkuri_energy_lockseed)Matsubokkuri Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kurokage Shin",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_kurokage_shin)Genesis Driver (Kurokage Shin)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		}
+	]
+}

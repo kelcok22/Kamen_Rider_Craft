@@ -1,0 +1,17 @@
+{
+	"name": "Elementary Inves",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:elementary_inves_red",
+			"text": "Spawn locations: $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 45$(br2)Spawns in red, blue, and green variants$(br2)Drops$(li)1-3 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/orange_lockseed)Orange Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/ichigo_lockseed)Ichigo Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/pine_lockseed)Pine Lockseed$(/l) (6.7%)"
+		}
+	]
+}

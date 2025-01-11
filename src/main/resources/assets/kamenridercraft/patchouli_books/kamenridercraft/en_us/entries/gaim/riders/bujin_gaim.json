@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Bujin Gaim",
+	"icon": "kamenridercraft:sengoku_driver_bujin_gaim",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "blood_orange",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Blood Orange Arms",
+			"text": "Accessed with the $(l:gaim/items/blood_orange_lockseed)Blood Orange Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bujin Gaim",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bujin_gaim)Sengoku Driver (Bujin Gaim)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ochimusha",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed_ochimusha\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Ochimusha Arms",
+			"text": "Accessed with the $(l:gaim/items/blood_orange_lockseed_ochimusha)Ochimusha Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bujin Gaim",
+			"text": "Appears in:$(li)S.I.C. Hero Saga (2018, toyline)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_bujin_gaim)Sengoku Driver (Bujin Gaim)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Saturation$(li)Strength II"
+		}
+	]
+}

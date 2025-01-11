@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)S.I.C Vol. 70 Kamen Rider Wizard Flame Style (2014, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Fire Resistance$(li)Flying"
+			"text": "Appears in:$(li)S.I.C. Vol. 70 Kamen Rider Wizard Flame Style (2014, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Fire Resistance$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",

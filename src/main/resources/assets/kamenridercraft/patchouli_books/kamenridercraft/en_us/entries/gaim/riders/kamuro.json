@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Kamuro",
+	"icon": "kamenridercraft:sengoku_driver_kamuro",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kamuro\",components:{custom_data:{slot_tex1:\"kamenridercraft:silver_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_kamuro_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Silver Arms",
+			"text": "Accessed with the $(l:gaim/items/silver_ringo_lockseed)Silver Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kamuro",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kamuro)Sengoku Driver (Kamuro)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Haste$(li)Saturation$(li)Strength III"
+		}
+	]
+}

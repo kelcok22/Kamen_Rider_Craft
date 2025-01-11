@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Maja",
+	"icon": "kamenridercraft:sengoku_driver_maja",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_maja\",components:{custom_data:{slot_tex1:\"kamenridercraft:maja_lockseed\",slot_tex2:\"kamenridercraft:basic_maja_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Maja Arms",
+			"text": "Accessed with the $(l:gaim/items/maja_lockseed)Maja Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Maja",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_maja)Sengoku Driver (Maja)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Saturation$(li)Strength III"
+		}
+	]
+}

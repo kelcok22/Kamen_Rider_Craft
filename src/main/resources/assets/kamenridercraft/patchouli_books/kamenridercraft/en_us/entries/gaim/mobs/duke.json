@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Duke",
 	"icon": "kamenridercraft:gaim_logo",
 	"category": "kamenridercraft:gaim/mobs",
-	"sortnum": 5,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:entity",

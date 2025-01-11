@@ -1,0 +1,19 @@
+{
+	"name": "Kurokage Trooper",
+	"icon": "kamenridercraft:sengoku_driver_kurokage_troopers",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_kurokage_troopers\",components:{custom_data:{slot_tex1:\"kamenridercraft:matsubokkuri_lockseed\",slot_tex2:\"kamenridercraft:basic_kurokage_troopers_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Matsubokkuri Arms",
+			"text": "Accessed with the $(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kurokage Trooper",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_kurokage_troopers)Sengoku Driver (Kurokage Troopers)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation"
+		}
+	]
+}

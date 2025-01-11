@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used by Gaim's $(l:gaim/riders/gaim#ichigo)Ichigo Arms$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used with $(l:gaim/riders/gaim#ichigo)Ichigo Arms$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Sigurd",
 	"icon": "kamenridercraft:gaim_logo",
 	"category": "kamenridercraft:gaim/mobs",
-	"sortnum": 7,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:entity",

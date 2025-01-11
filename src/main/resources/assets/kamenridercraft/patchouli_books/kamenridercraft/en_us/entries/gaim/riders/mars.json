@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Mars",
+	"icon": "kamenridercraft:sengoku_driver_mars",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_mars\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_mars_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Golden Arms",
+			"text": "Accessed with the $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mars",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_mars)Sengoku Driver (Mars)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Regeneration II$(li)Haste$(li)Saturation$(li)Strength III"
+		}
+	]
+}

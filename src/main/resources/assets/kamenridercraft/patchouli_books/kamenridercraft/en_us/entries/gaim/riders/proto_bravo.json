@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Proto Bravo",
+	"icon": "kamenridercraft:sengoku_driver_proto_bravo",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_proto_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_durian_lockseed\",slot_tex2:\"kamenridercraft:basic_proto_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Durian Arms",
+			"text": "Accessed with the $(l:gaim/items/proto_durian_lockseed)Proto Durian Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Proto Bravo",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_proto_bravo)Sengoku Driver (Proto Bravo)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength II"
+		}
+	]
+}

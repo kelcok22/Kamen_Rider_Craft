@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Proto Gaim",
+	"icon": "kamenridercraft:sengoku_driver_proto_gaim",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_proto_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_proto_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Orange Arms",
+			"text": "Accessed with the $(l:gaim/items/proto_orange_lockseed)Proto Orange Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Proto Gaim",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_proto_gaim)Sengoku Driver (Proto Gaim)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+		}
+	]
+}

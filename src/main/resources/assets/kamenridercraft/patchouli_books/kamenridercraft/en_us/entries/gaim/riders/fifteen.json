@@ -1,0 +1,68 @@
+{
+	"name": "Kamen Rider Fifteen",
+	"icon": "kamenridercraft:sengoku_driver_fifteen",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "fifteen",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fifteen_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Fifteen Arms",
+			"text": "Accessed with the $(l:gaim/items/fifteen_lockseed)Fifteen Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fifteen",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Decade Arms",
+			"text": "Accessed with the $(l:gaim/items/decade_lockseed)Decade Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fifteen",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Haste III$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Fourze Arms",
+			"text": "Accessed with the $(l:gaim/items/fourze_lockseed)Fourze Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fifteen",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Wizard Arms",
+			"text": "Accessed with the $(l:gaim/items/wizard_lockseed)Wizard Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fifteen",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_fifteen\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_lockseed\",slot_tex2:\"kamenridercraft:basic_fifteen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Gaim Arms",
+			"text": "Accessed with the $(l:gaim/items/gaim_lockseed)Gaim Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fifteen",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+		}
+	]
+}

@@ -1,0 +1,140 @@
+{
+	"name": "Kamen Rider Ryugen",
+	"icon": "kamenridercraft:sengoku_driver_ryugen",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "budou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:budou_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Budou Arms",
+			"text": "Accessed with the $(l:gaim/items/budou_lockseed)Budou Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiwi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiwi_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kiwi Arms",
+			"text": "Accessed with the $(l:gaim/items/kiwi_lockseed)Kiwi Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "melon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Melon Arms",
+			"text": "Accessed with the $(l:gaim/items/melon_lockseed)Melon Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "banana",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Banana Arms",
+			"text": "Accessed with the $(l:gaim/items/banana_lockseed)Banana Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pine",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:pine_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Pine Arms",
+			"text": "Accessed with the $(l:gaim/items/pine_lockseed)Pine Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_dragon_fruits",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_dragon_fruits_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Jimber Dragon Fruits Arms",
+			"text": "Accessed with the $(l:gaim/items/dragon_fruits_energy_lockseed)Dragon Fruits Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gaim",
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Haste II$(li)Saturation$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "yomotsuheguri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:yomotsu_heguri_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Yomotsuheguri Arms",
+			"text": "Accessed with the $(l:gaim/items/yomotsu_heguri_lockseed)Yomotsuheguri Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen Yomi",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed IV$(li)Wither VI$(li)Water Breathing$(li)Night Vision$(li)Haste IV$(li)Saturation$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "melon_energy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:genesis_driver_ryugen_shin\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Melon Energy Arms",
+			"text": "Accessed with the $(l:gaim/items/melon_energy_lockseed)Melon Energy Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Unused files of Kamen Rider: Battride War II (2014, PS3 game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_ryugen_shin)Genesis Driver (Ryugen)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Faiz Arms",
+			"text": "Accessed with the $(l:gaim/items/faiz_lockseed)Faiz Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "w",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "W Arms",
+			"text": "Accessed with the $(l:gaim/items/w_lockseed)Double Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Saturation$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_ryugen\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_ryugen_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Fourze Arms",
+			"text": "Accessed with the $(l:gaim/items/fourze_lockseed)Fourze Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ryugen",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
+		}
+	]
+}
