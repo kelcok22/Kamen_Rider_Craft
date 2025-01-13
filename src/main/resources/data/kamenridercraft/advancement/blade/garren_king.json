@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:fusion_peacock"
+	  "id": "kamenridercraft:evolution_giraffa"
 	},
-	"title": "rebirth",
-	"description": "Transform into Garren Jack Form",
-	"frame": "task",
+	"title": "I have no fear!",
+	"description": "Transform into Garren King Form",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:blade/rouze_absorber",
+  "parent": "kamenridercraft:blade/garren_jack",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -37,7 +37,7 @@
 				"kamenridercraft:garren_buckle"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fusion_peacock\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:evolution_giraffa\"}"
               }
 			}
 		  }

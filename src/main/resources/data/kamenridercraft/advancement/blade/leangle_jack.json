@@ -1,10 +1,10 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:fusion_peacock"
+	  "id": "kamenridercraft:fusion_elephant"
 	},
-	"title": "rebirth",
-	"description": "Transform into Garren Jack Form",
+	"title": "More like Jacked Form",
+	"description": "Transform into Leangle Jack Form",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
@@ -34,10 +34,10 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:garren_buckle"
+				"kamenridercraft:leangle_buckle"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fusion_peacock\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fusion_elephant\"}"
               }
 			}
 		  }

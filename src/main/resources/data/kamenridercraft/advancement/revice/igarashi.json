@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "kamenridercraft:holy_wing_vistamp"
+        "id": "kamenridercraft:fifty_gale_vistamp"
       },
-      "title": "WINGS TO FRY! WINGS TO FRY!",
-      "description": "Transform into Kamen Rider Holy Live",
+      "title": "Dance Dance",
+      "description": "Transform into Kamen Rider Igarashi",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kamenridercraft:revice/live",
+    "parent": "kamenridercraft:revice/ultimate",
     "criteria": {
       "1": {
         "trigger": "minecraft:inventory_changed",
@@ -34,10 +34,10 @@
               },
               "feet": {
                 "items": [
-                  "kamenridercraft:two_sidriver_live"
+                  "kamenridercraft:revice_driver"
                 ],
                 "predicates": {
-                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:holy_wing_vistamp\"}"
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:fifty_gale_vistamp\"}"
                 }
               }
             }

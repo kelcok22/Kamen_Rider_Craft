@@ -1,0 +1,64 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:lovekov_kujaku"
+	},
+	"title": "All kuzu eliminated",
+	"description": "Obtain all Lovekov Genomes",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:revice/jeanne",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:lovekov_kujaku"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:lovekov_turtle"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:lovekov_hashibiroko"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:lovekov_tricera"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

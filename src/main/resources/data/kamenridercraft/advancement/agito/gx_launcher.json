@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:billy_the_rod"
+	  "id": "kamenridercraft:gx_launcher"
 	},
-	"title": "Don't tase me, bro!",
-	"description": "Obtain the Billy the Rod",
+	"title": "Rocket Jumping not included",
+	"description": "Obtain the GX Launcher",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:fourze/fourze",
+  "parent": "kamenridercraft:agito/g3x_weapons",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -18,7 +18,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:billy_the_rod"
+			  "kamenridercraft:gx_launcher"
 			]
 		  }
 		]

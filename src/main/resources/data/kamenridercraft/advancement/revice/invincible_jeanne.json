@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kamenridercraft:revice/jeanne",
+    "parent": "kamenridercraft:revice/lovekov",
     "criteria": {
       "1": {
         "trigger": "minecraft:inventory_changed",

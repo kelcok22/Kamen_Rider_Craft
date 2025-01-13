@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "kamenridercraft:holy_wing_vistamp"
+        "id": "kamenridercraft:crimson_vail_vistamp"
       },
-      "title": "WINGS TO FRY! WINGS TO FRY!",
-      "description": "Transform into Kamen Rider Holy Live",
-      "frame": "task",
+      "title": "The blood red curtain falls...",
+      "description": "Transform into Crimson Vail",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kamenridercraft:revice/live",
+    "parent": "kamenridercraft:revice/vail",
     "criteria": {
       "1": {
         "trigger": "minecraft:inventory_changed",
@@ -34,11 +34,8 @@
               },
               "feet": {
                 "items": [
-                  "kamenridercraft:two_sidriver_live"
-                ],
-                "predicates": {
-                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:holy_wing_vistamp\"}"
-                }
+                  "kamenridercraft:vail_belt"
+                ]
               }
             }
           }
