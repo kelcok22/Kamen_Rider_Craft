@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -459,7 +460,7 @@ public class Drive_Rider_Items {
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"protodrive",SHIFT_PROTO_SPEED , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner_belt",
+	public static final DeferredItem<Item> BREAK_GUNNER_BELT = ITEMS.register("break_gunner_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mashin_chaser",PROTOZERO_CORE , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
@@ -490,6 +491,33 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> BRAIN_DRIVER = ITEMS.register("brain_driver",
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"brain", ROIDMUDE_CORE_003, DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BLADE_GUNNER = ITEMS.register("blade_gunner",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
