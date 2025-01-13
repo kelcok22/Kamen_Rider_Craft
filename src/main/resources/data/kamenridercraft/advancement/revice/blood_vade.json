@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "kamenridercraft:holy_wing_vistamp"
+        "id": "kamenridercraft:blood_vade_vistamp"
       },
-      "title": "WINGS TO FRY! WINGS TO FRY!",
-      "description": "Transform into Kamen Rider Holy Live",
+      "title": "Invader of the Simulation",
+      "description": "Transform into Blood Vade",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "kamenridercraft:revice/live",
+    "parent": "kamenridercraft:revice/crimson_vail",
     "criteria": {
       "1": {
         "trigger": "minecraft:inventory_changed",
@@ -34,11 +34,8 @@
               },
               "feet": {
                 "items": [
-                  "kamenridercraft:two_sidriver_live"
-                ],
-                "predicates": {
-                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:holy_wing_vistamp\"}"
-                }
+                  "kamenridercraft:vade_belt"
+                ]
               }
             }
           }

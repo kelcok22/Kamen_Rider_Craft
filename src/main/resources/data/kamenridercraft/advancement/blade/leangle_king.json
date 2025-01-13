@@ -3,14 +3,14 @@
 	"icon": {
 	  "id": "kamenridercraft:evolution_tarantula"
 	},
-	"title": "Shima San’s Sacrifice",
+	"title": "Round 20 begins now...",
 	"description": "Transform into Leangle King Form",
 	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:blade/rouze_absorber",
+  "parent": "kamenridercraft:blade/leangle_jack",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

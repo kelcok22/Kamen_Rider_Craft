@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-  	  "id": "kamenridercraft:boost_mkiii_raise_buckle"
+  	  "id": "kamenridercraft:unite_grip"
     },
-    "title": "Wish",
-    "description": "Transform into Kamen Rider GeatsIX",
-    "frame": "goal",
+    "title": "Oshi no Kitsune",
+    "description": "Transform into Geats LaserBoost",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "kamenridercraft:geats/laserboost",
+  "parent": "kamenridercraft:geats/boost_markii",
   "criteria": {
     "requirement": {
   	"trigger": "minecraft:inventory_changed",
@@ -37,7 +37,7 @@
   			  "kamenridercraft:desire_driver_geats"
   			],
   		  "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}"
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:unite_grip\",slot_tex3:\"kamenridercraft:boost_mkii_raise_buckle\"}"
               }
   		  }
   		}
