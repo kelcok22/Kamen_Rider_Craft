@@ -1,0 +1,16 @@
+{
+	"name": "Chimera Driver (Chimera)",
+	"icon": "kamenridercraft:chimera_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/chimera)Kamen Rider Chimera"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/chimera_driver"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Break Gunner (Belt)",
+	"icon": "kamenridercraft:break_gunner_belt",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/mashin_chaser)Mashin Chaser"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:break_gunner_belt",
+			"title": " ",
+			"text": "Obtained by firing the $(l:drive/arsenal/break_gunner)Break Gunner$(/l) without any foot armor"
+		}
+	]
+}

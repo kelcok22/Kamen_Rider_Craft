@@ -1,0 +1,16 @@
+{
+	"name": "Drive Driver (Dark Drive)",
+	"icon": "kamenridercraft:drivedriver_darkdrive",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/dark_drive)Kamen Rider Dark Drive"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drivedriver_darkdrive"
+		}
+	]
+}

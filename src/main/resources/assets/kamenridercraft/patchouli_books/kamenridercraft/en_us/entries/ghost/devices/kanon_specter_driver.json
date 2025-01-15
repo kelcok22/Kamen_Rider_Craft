@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Driver (Kanon Specter)",
+	"icon": "kamenridercraft:kanon_specter_driver",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/kanon_specter)Kamen Rider Kanon Specter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/kanon_specter_driver"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Dreadriver",
+	"icon": "kamenridercraft:dreadriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/dread)Kamen Rider Dread"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/dreadriver"
+		}
+	]
+}

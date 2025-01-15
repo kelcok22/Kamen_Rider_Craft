@@ -1,0 +1,16 @@
+{
+	"name": "Two Sidriver (Live)",
+	"icon": "kamenridercraft:two_sidriver_live",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/live)Kamen Rider Live"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/two_sidriver_live"
+		}
+	]
+}

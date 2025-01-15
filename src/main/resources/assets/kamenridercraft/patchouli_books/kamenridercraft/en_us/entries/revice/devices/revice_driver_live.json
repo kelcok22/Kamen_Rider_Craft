@@ -1,0 +1,16 @@
+{
+	"name": "Revice Driver (Live)",
+	"icon": "kamenridercraft:revice_driver_live",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/live#marvelous)Kamen Rider Live"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_driver_live"
+		}
+	]
+}

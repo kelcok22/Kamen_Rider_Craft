@@ -1,0 +1,16 @@
+{
+	"name": "Build Driver (Cross-Z)",
+	"icon": "kamenridercraft:build_driver_cross_z",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/cross-z)Kamen Rider Cross-Z"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_driver_cross_z"
+		}
+	]
+}

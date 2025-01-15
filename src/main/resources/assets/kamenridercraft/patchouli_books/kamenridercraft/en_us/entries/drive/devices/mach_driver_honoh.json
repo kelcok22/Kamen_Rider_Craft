@@ -1,0 +1,16 @@
+{
+	"name": "Mach Driver Honoh",
+	"icon": "kamenridercraft:mach_driver_honoh",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/mach)Kamen Rider Mach"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/mach_driver_honoh"
+		}
+	]
+}

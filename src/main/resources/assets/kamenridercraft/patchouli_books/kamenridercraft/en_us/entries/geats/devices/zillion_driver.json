@@ -1,0 +1,16 @@
+{
+	"name": "Zillion Driver",
+	"icon": "kamenridercraft:zillion_driver",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/regad)Kamen Rider Regad"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/zillion_driver"
+		}
+	]
+}

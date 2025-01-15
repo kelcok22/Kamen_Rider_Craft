@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Driver (Specter)",
+	"icon": "kamenridercraft:specter_driver",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/specter)Kamen Rider Specter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/specter_driver"
+		}
+	]
+}

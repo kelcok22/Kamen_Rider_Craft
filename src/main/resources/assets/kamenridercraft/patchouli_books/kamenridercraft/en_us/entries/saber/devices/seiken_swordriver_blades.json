@@ -1,0 +1,16 @@
+{
+	"name": "Seiken Swordriver (Blades)",
+	"icon": "kamenridercraft:seiken_swordriver_blades",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/blades)Kamen Rider Blades"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/seiken_swordriver_blades"
+		}
+	]
+}

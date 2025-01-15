@@ -1,0 +1,16 @@
+{
+	"name": "Build Driver (Rogue)",
+	"icon": "kamenridercraft:build_driver_rogue",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/rogue#prime_rogue)Kamen Rider Rogue"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_driver_rogue"
+		}
+	]
+}

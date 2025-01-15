@@ -1,0 +1,16 @@
+{
+	"name": "Desire Driver (XGeats)",
+	"icon": "kamenridercraft:desire_driver_x_geats",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/xgeats)Kamen Rider XGeats"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/desire_driver_x_geats"
+		}
+	]
+}

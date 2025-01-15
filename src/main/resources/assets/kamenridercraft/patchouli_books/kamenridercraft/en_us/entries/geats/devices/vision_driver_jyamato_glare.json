@@ -1,0 +1,16 @@
+{
+	"name": "Vision Driver (Jyamato Gazer)",
+	"icon": "kamenridercraft:vision_driver_jyamato_glare",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/jyamato_gazer)Kamen Rider Jyamato Gazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/vision_driver_jyamato_glare"
+		}
+	]
+}

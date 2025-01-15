@@ -1,0 +1,19 @@
+{
+	"name": "Raise Riser Belt (Kyuun)",
+	"icon": "kamenridercraft:raise_riser_belt_kyuun",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kyuun)Kamen Rider Kyuun"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raise_riser_belt_kyuun",
+			"title": " ",
+			"text": "Obtained by firing the $(l:geats/arsenal/laser_raise_riser)Laser Raise Riser$(/l) without any foot armor and with the $(l:geats/items/kyuun_raise_riser_card)Raise Riser Card (Kyuun)$(/l) in your off-hand"
+		}
+	]
+}

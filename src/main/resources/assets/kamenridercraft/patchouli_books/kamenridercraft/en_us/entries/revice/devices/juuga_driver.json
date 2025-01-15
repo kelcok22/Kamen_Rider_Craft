@@ -1,0 +1,16 @@
+{
+	"name": "Juuga Driver",
+	"icon": "kamenridercraft:juuga_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/juuga)Kamen Rider Juuga"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/juuga_driver"
+		}
+	]
+}

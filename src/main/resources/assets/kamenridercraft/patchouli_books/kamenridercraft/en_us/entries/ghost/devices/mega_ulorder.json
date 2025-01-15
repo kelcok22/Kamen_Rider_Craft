@@ -1,0 +1,16 @@
+{
+	"name": "Mega Ulorder",
+	"icon": "kamenridercraft:mega_ulorder",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/necrom)Kamen Rider Necrom"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/mega_ulorder"
+		}
+	]
+}

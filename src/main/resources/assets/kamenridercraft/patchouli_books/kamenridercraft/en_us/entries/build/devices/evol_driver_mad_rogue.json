@@ -1,0 +1,16 @@
+{
+	"name": "Evol Driver (Mad Rogue)",
+	"icon": "kamenridercraft:evol_driver_mad_rogue",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/madrogue)Kamen Rider MadRogue"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/evol_driver_mad_rogue"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Buddy Buckle (Vice)",
+	"icon": "kamenridercraft:vice_belt",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/vice)Kamen Rider Vice"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/vice_belt"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Chimera Driver (Daimon)",
+	"icon": "kamenridercraft:chimera_driver_daimon",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/daimon)Kamen Rider Daimon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/chimera_driver_daimon"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Ark Driver-Zero (Thousand Ark)",
+	"icon": "kamenridercraft:ark_driver_zero_thousand_ark",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/thousand_ark)Kamen Rider Thousand Ark"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/ark_driver_zero_thousand_ark"
+		}
+	]
+}

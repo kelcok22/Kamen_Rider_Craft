@@ -1,0 +1,16 @@
+{
+	"name": "Gamer Driver (Ex-Aid)",
+	"icon": "kamenridercraft:gamer_driver_ex_aid",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/ex-aid)Kamen Rider Ex-Aid"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gamer_driver_ex_aid"
+		}
+	]
+}

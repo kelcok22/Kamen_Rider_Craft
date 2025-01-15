@@ -1,0 +1,16 @@
+{
+	"name": "Giger Belt",
+	"icon": "kamenridercraft:giger_belt",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/giger)Giger"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/giger_belt"
+		}
+	]
+}

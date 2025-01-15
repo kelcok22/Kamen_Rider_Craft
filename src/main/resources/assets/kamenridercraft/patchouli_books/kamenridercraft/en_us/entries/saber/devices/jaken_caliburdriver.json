@@ -1,0 +1,16 @@
+{
+	"name": "Jaken Caliburdriver",
+	"icon": "kamenridercraft:jaken_caliburdriver",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/calibur)Kamen Rider Calibur"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/jaken_caliburdriver"
+		}
+	]
+}

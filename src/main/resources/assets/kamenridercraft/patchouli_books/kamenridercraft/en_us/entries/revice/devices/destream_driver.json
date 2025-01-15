@@ -1,0 +1,16 @@
+{
+	"name": "Destream Driver",
+	"icon": "kamenridercraft:destream_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/destream)Kamen Rider Destream"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/destream_driver"
+		}
+	]
+}

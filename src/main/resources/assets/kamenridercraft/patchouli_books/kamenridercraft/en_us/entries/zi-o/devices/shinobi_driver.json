@@ -1,0 +1,16 @@
+{
+	"name": "Shinobi Driver",
+	"icon": "kamenridercraft:shinobi_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/shinobi)Kamen Rider Shinobi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/shinobi_driver"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Desire Driver (Jyamato)",
+	"icon": "kamenridercraft:desire_driver_jyamato",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/jyamato_rider)Jyamato Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/desire_driver_jyamato"
+		}
+	]
+}
