@@ -1,0 +1,16 @@
+{
+	"name": "Demons Driver (Orteca)",
+	"icon": "kamenridercraft:demons_driver_orteca",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/orteca)Kamen Rider Orteca"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/demons_driver_orteca"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Desire Driver (Gya-Go)",
+	"icon": "kamenridercraft:desire_driver_gya_go",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gya-go)Kamen Rider Gya-Go"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/desire_driver_gya_go"
+		}
+	]
+}

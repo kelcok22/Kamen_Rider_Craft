@@ -1,0 +1,16 @@
+{
+	"name": "Legendriver",
+	"icon": "kamenridercraft:legendriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/legend)Kamen Rider Legend"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/legendriver"
+		}
+	]
+}

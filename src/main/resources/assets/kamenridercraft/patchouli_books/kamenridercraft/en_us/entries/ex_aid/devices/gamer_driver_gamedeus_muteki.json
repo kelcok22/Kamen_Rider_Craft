@@ -1,0 +1,16 @@
+{
+	"name": "Gamer Driver (Gamedeus Muteki)",
+	"icon": "kamenridercraft:gamer_driver_gamedeus_muteki",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/gamedeus_muteki)Gamedeus Muteki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gamer_driver_gamedeus_muteki"
+		}
+	]
+}

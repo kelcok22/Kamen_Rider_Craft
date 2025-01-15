@@ -1,0 +1,16 @@
+{
+	"name": "ShotAbaddoriser (Grey)",
+	"icon": "kamenridercraft:shot_abaddo_riser_g",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#mua)Kamen Rider Abaddon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_riser_g"
+		}
+	]
+}

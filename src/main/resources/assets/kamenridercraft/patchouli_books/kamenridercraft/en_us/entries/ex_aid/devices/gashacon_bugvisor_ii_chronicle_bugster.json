@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Bugvisor II (Chronicle Bugster)",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii_chronicle_bugster",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Muteki Gamer on the Last Stage! (2017, stage show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/chronicle_bugster)Chronicle Bugster"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_chronicle_bugster"
+		}
+	]
+}

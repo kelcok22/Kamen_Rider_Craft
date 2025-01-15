@@ -1,0 +1,16 @@
+{
+	"name": "Vision Driver (Gazer)",
+	"icon": "kamenridercraft:vision_driver_gazer",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/gazer)Kamen Rider Gazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/vision_driver_gazer"
+		}
+	]
+}

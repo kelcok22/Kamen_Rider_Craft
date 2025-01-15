@@ -1,0 +1,16 @@
+{
+	"name": "Brain Driver",
+	"icon": "kamenridercraft:brain_driver",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Brain (2019, web series)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/brain)Kamen Rider Brain"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/brain_driver"
+		}
+	]
+}

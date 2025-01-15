@@ -1,0 +1,16 @@
+{
+	"name": "Para-DX Buckle",
+	"icon": "kamenridercraft:paradoxbelt",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/para-dx)Kamen Rider Para-DX"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/paradoxbelt"
+		}
+	]
+}

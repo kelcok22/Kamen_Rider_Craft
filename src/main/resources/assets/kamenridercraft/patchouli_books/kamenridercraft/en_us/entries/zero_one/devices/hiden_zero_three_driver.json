@@ -1,0 +1,16 @@
+{
+	"name": "Hiden Zero-Three Driver",
+	"icon": "kamenridercraft:hiden_zero_three_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zero-three)Kamen Rider Zero-Three"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/hiden_zero_three_driver"
+		}
+	]
+}

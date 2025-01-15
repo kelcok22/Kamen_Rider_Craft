@@ -1,0 +1,16 @@
+{
+	"name": "Sword of Logos Buckle (Slash)",
+	"icon": "kamenridercraft:sword_of_logos_buckle_slash",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/slash)Kamen Rider Slash"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/sword_of_logos_buckle_slash"
+		}
+	]
+}

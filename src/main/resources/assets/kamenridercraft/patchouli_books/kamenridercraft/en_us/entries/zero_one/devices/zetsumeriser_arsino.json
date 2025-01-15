@@ -1,0 +1,16 @@
+{
+	"name": "Zetsumeriser (Arsino Magia)",
+	"icon": "kamenridercraft:zetsumeriser_arsino",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#arsino)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_arsino"
+		}
+	]
+}

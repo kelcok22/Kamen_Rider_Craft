@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Specter's $(l:ghost/riders/specter#sin_specter)Sin Specter$(/l) form"
+			"text": "Appears in:$(li)Ghost RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Used to access Specter's $(l:ghost/riders/specter#sin_specter)Sin Specter$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

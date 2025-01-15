@@ -1,0 +1,16 @@
+{
+	"name": "Eyecon Driver G",
+	"icon": "kamenridercraft:eyecon_driver_g",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used alongside the $(l:ghost/devices/armor)Ghost armor$(/l) to transform into $(l:ghost/riders/ghost#grateful)Kamen Rider Ghost"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/eyecon_driver_g"
+		}
+	]
+}

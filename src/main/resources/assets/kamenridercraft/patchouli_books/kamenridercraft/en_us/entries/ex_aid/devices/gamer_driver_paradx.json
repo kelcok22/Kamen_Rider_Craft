@@ -1,0 +1,16 @@
+{
+	"name": "Gamer Driver (Para-DX)",
+	"icon": "kamenridercraft:gamer_driver_paradx",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/para-dx#perfect_knock_out)Kamen Rider Para-DX"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gamer_driver_paradx"
+		}
+	]
+}

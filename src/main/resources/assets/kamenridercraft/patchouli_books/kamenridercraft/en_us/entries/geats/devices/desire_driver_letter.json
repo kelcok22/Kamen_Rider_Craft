@@ -1,0 +1,16 @@
+{
+	"name": "Desire Driver (Letter)",
+	"icon": "kamenridercraft:desire_driver_letter",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/letter)Kamen Rider Letter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/desire_driver_letter"
+		}
+	]
+}

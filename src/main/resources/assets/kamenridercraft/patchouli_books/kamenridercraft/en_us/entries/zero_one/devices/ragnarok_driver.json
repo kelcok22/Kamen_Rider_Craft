@@ -1,0 +1,16 @@
+{
+	"name": "Ragnarok Driver",
+	"icon": "kamenridercraft:ragnarok_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2022, comic)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ragnarok)Ragnarok"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/ragnarok_driver"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Vail Driver",
+	"icon": "kamenridercraft:vail_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/vail)Kamen Rider Vail"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/vail_driver"
+		}
+	]
+}

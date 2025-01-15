@@ -1,0 +1,16 @@
+{
+	"name": "Desire Driver (Na-Go)",
+	"icon": "kamenridercraft:desire_driver_na_go",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/na-go)Kamen Rider Na-Go"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/desire_driver_na_go"
+		}
+	]
+}

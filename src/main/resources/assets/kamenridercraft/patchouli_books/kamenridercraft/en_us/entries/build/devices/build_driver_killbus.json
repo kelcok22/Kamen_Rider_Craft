@@ -1,0 +1,16 @@
+{
+	"name": "Build Driver (Killbus)",
+	"icon": "kamenridercraft:build_driver_killbus",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/killbus)Kamen Rider Killbus"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_driver_killbus"
+		}
+	]
+}

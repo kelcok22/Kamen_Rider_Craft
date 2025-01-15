@@ -1,0 +1,19 @@
+{
+	"name": "Week Endriver (Dark Aguilera)",
+	"icon": "kamenridercraft:dark_week_endriver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Jeanne & Kamen Rider Aguilera with Girls Remix (2022, web series)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/dark_aguilera)Kamen Rider Dark Aguilera"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_week_endriver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

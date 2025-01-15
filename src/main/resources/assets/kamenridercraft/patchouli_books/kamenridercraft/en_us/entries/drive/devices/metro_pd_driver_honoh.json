@@ -1,0 +1,16 @@
+{
+	"name": "Metro PD Driver Honoh",
+	"icon": "kamenridercraft:metro_pd_driver_honoh",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/mach_production_model)Kamen Rider Mach Production Model"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/metro_pd_driver_honoh"
+		}
+	]
+}

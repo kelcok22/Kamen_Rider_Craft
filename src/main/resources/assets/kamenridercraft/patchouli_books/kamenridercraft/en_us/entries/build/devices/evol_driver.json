@@ -1,0 +1,16 @@
+{
+	"name": "Evol Driver",
+	"icon": "kamenridercraft:evol_driver",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/evol)Kamen Rider Evol"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/evol_driver"
+		}
+	]
+}

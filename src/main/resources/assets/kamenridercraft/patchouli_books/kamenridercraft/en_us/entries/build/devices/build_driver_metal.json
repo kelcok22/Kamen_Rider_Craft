@@ -1,0 +1,16 @@
+{
+	"name": "Build Driver (Metal Build)",
+	"icon": "kamenridercraft:build_driver_metal",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/metal_build)Kamen Rider Metal Build"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_driver_metal"
+		}
+	]
+}
