@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Saber (Rifle Mode)",
+	"icon": "kamenridercraft:gan_gun_saber_rifle",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/ghost#billy_the_kid)Billy the Kid Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_saber_rifle"
+		}
+	]
+}

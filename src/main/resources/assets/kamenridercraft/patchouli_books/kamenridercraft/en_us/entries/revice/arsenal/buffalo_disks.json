@@ -1,0 +1,16 @@
+{
+	"name": "Buffalo Gekirin",
+	"icon": "kamenridercraft:buffalo_disks",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Jeanne & Kamen Rider Aguilera with Girls Remix (2022, web series)$(br2)Used by $(l:revice/riders/aguilera)Kamen Rider Aguilera$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/buffalo_disks"
+		}
+	]
+}

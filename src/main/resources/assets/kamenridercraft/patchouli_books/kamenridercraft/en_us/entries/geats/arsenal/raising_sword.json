@@ -1,0 +1,16 @@
+{
+	"name": "Raising Sword",
+	"icon": "kamenridercraft:raising_sword",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with $(l:geats/riders/geats#raising)Raising Form$(/l) or $(l:geats/riders/geats#command)Command Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/raising_sword"
+		}
+	]
+}

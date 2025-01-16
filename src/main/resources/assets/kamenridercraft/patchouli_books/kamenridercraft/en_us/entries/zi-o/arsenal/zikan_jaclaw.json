@@ -1,0 +1,16 @@
+{
+	"name": "Zikan Jaclaw",
+	"icon": "kamenridercraft:zikan_jaclaw",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by $(l:zi_o/riders/geiz#revive_goretsu)Kamen Rider GeizRevive$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_jaclaw"
+		}
+	]
+}

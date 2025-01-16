@@ -1,0 +1,20 @@
+{
+	"name": "Zikan Despear",
+	"icon": "kamenridercraft:zikan_despear",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by $(l:zi_o/riders/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_despear"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_despear2"
+		}
+	]
+}

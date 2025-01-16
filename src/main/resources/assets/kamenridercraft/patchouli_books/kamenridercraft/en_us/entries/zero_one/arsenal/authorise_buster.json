@@ -1,0 +1,16 @@
+{
+	"name": "Authorise Buster",
+	"icon": "kamenridercraft:authorise_buster",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used by Zero-One's $(l:zero_one/riders/zero-one#shining_hopper)Shining $(/l)$(l:zero_one/riders/zero-one#shining_assault_hopper)(Assault)$(/l)$(l:zero_one/riders/zero-one#shining_hopper) Hopper$(/l) form and Vulcan's $(l:zero_one/riders/vulcan#assault_wolf)Assault Wolf$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/authorise_buster"
+		}
+	]
+}

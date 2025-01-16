@@ -1,0 +1,16 @@
+{
+	"name": "Kamakiric Arrow",
+	"icon": "kamenridercraft:kamakiric_arrow",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used by Revi's $(l:revice/riders/revi#kamakiri)Kamakiri Genome$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/kamakiric_arrow"
+		}
+	]
+}

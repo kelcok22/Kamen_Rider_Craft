@@ -1,0 +1,16 @@
+{
+	"name": "Kingexcalibur",
+	"icon": "kamenridercraft:kingexcalibur",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used with an $(l:saber/riders/saber#arthur)Arthur$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/kingexcalibur"
+		}
+	]
+}

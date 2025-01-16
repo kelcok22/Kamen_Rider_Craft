@@ -1,0 +1,16 @@
+{
+	"name": "Gotcharge Gun",
+	"icon": "kamenridercraft:gotcharge_gun",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by $(l:gotchard/riders/gotchard)Kamen Rider Gotchard$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotcharge_gun"
+		}
+	]
+}

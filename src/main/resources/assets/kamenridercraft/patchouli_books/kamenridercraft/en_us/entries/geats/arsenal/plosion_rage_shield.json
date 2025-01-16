@@ -1,0 +1,16 @@
+{
+	"name": "Plosion Rage Shield",
+	"icon": "kamenridercraft:plosion_rage_shield",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Used by Buffa's $(l:geats/riders/buffa#plosion_rage)Plosion Rage$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/plosion_rage_shield"
+		}
+	]
+}

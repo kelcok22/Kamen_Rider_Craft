@@ -1,0 +1,20 @@
+{
+	"name": "Fuusouken Hayate (Ittouryu Mode)",
+	"icon": "kamenridercraft:fuusouken_hayate_ittouryu",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/kenzan)Kamen Rider Kenzan$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/fuusouken_hayate_ittouryu"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/fuusouken_hayate_ittouryu2"
+		}
+	]
+}

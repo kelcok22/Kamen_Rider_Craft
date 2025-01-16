@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Magnum",
+	"icon": "kamenridercraft:gashacon_magnum_gun",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by $(l:ex_aid/riders/snipe)Kamen Rider Snipe$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_magnum_gn"
+		}
+	]
+}

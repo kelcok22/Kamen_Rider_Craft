@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Hand",
+	"icon": "kamenridercraft:gan_gun_hand_rod",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/specter#specter)Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_hand_rod"
+		}
+	]
+}

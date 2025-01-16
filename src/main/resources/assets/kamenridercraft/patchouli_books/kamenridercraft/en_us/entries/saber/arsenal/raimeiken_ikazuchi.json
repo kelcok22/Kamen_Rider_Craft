@@ -1,0 +1,16 @@
+{
+	"name": "Raimeiken Ikazuchi",
+	"icon": "kamenridercraft:raimeiken_ikazuchi",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/espada)Kamen Rider Espada$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/raimeiken_ikazuchi"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Sunglasseslasher",
+	"icon": "kamenridercraft:sunglasseslasher_sword",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used by Ghost's $(l:ghost/riders/ghost#toucon_boost)Toucon Boost Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/sunglasseslasher_sword"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Raise Chain Array",
+	"icon": "kamenridercraft:raise_chain_array",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with an $(l:geats/riders/mary#chain_array)Armed Chain Array$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/raise_chain_array"
+		}
+	]
+}

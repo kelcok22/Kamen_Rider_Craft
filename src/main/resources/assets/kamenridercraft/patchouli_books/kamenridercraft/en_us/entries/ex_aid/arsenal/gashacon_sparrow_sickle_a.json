@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Sparrow Sickle A",
+	"icon": "kamenridercraft:gashacon_sparrow_sickle_a",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by Lazer's $(l:ex_aid/riders/lazer#chambara_bike)Chambara Bike Gamer Level 3$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_sparrow_sickle_a"
+		}
+	]
+}

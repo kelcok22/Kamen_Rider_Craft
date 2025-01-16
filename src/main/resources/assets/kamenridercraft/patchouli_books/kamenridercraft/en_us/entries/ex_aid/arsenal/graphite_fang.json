@@ -1,0 +1,19 @@
+{
+	"name": "Graphite Fang",
+	"icon": "kamenridercraft:graphite_fang",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by $(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:graphite_fang",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		}
+	]
+}

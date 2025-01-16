@@ -1,0 +1,19 @@
+{
+	"name": "Giff Junior Sword",
+	"icon": "kamenridercraft:giff_junior_sword",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used by $(l:revice/mobs/giff_junior)Giff Juniors$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_junior_sword",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Juniors$(/l)"
+		}
+	]
+}

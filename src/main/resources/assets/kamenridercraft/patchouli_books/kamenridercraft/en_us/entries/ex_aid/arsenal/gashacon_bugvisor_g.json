@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Bugvisor G",
+	"icon": "kamenridercraft:gashacon_bugvisor_g",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Used by Saiko Yaotome"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_g"
+		}
+	]
+}

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/genm#zombie_lv_x)Kamen Rider Genm"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/genm#zombie_x)Kamen Rider Genm"
 		},
 		{
 			"type": "patchouli:crafting",

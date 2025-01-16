@@ -1,0 +1,16 @@
+{
+	"name": "Attache Calibur",
+	"icon": "kamenridercraft:attache_calibur",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used by $(l:zero_one/riders/zero-one)Kamen Rider Zero-One$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/attache_calibur"
+		}
+	]
+}
