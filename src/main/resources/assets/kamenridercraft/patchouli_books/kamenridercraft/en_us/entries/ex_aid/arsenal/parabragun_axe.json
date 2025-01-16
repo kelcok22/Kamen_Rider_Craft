@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:exaid/parabragun_axe"
+			"recipe": "kamenridercraft:exaid/parabragun"
 		}
 	]
 }
