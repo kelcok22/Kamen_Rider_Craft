@@ -1,0 +1,19 @@
+{
+	"name": "Machina Slasher",
+	"icon": "kamenridercraft:deus_rusher_red",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used by Gamedeus Machina"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deus_rusher_red",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

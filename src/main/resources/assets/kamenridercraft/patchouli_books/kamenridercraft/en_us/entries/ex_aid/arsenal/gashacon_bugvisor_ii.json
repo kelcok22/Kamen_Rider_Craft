@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Bugvisor II",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by $(l:ex_aid/riders/poppy)Kamen Rider Poppy$(/l) and $(l:ex_aid/riders/cronus)Kamen Rider Cronus$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii"
+		}
+	]
+}

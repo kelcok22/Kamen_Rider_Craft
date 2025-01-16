@@ -1,0 +1,16 @@
+{
+	"name": "Raise Propeller",
+	"icon": "kamenridercraft:raise_propeller",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with an $(l:geats/riders/letter#propeller)Armed Propeller$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/raise_propeller"
+		}
+	]
+}

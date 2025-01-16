@@ -1,0 +1,16 @@
+{
+	"name": "Bujin",
+	"icon": "kamenridercraft:bujin",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used by Tycoon's $(l:geats/riders/tycoon#bujin_sword)Bujin Sword$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bujin"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Barid Shield",
+	"icon": "kamenridercraft:egg_shield",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used by Vice's $(l:revice/riders/vice#barid_rex)Barid Rex$(/l) and $(l:revice/riders/vice#volcano_rex)Volcano Rex$(/l) Genomes"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/egg_shield"
+		}
+	]
+}

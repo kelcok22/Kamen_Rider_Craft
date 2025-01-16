@@ -1,0 +1,16 @@
+{
+	"name": "Magnum Shooter 40X (Rifle)",
+	"icon": "kamenridercraft:magnum_shooter_40x_rifle",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with a $(l:geats/riders/geats#magnum)Magnum$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/magnum_shooter_40x_rifle"
+		}
+	]
+}

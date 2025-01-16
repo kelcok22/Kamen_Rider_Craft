@@ -1,0 +1,16 @@
+{
+	"name": "X Raising Sword",
+	"icon": "kamenridercraft:x_raising_sword",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used by $(l:geats/riders/xgeats)Kamen Rider XGeats$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/x_raising_sword"
+		}
+	]
+}

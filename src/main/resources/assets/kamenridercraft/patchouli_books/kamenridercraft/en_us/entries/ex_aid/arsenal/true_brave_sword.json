@@ -1,0 +1,16 @@
+{
+	"name": "Flamber Saber",
+	"icon": "kamenridercraft:true_brave_sword",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Used by $(l:ex_aid/riders/true_brave)Kamen Rider True Brave$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/true_brave_sword"
+		}
+	]
+}

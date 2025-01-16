@@ -1,0 +1,16 @@
+{
+	"name": "Thousand Jacker",
+	"icon": "kamenridercraft:thousand_jacker",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used by Kamen Riders $(l:zero_one/riders/thouser)Thouser,$(/l) $(l:zero_one/riders/eden)Eden,$(/l) and $(l:zero_one/riders/lucifer)Lucifer$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/thousand_jacker"
+		}
+	]
+}

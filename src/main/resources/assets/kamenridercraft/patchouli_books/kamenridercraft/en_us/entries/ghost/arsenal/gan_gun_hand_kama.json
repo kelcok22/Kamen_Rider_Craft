@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Hand (Kama Mode)",
+	"icon": "kamenridercraft:gan_gun_hand_kama",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/specter#tutankhamun)Tutankhamun Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_hand_kama"
+		}
+	]
+}

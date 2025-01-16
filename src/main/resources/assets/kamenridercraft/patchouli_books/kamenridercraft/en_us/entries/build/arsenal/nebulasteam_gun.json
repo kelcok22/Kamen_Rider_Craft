@@ -1,0 +1,19 @@
+{
+	"name": "Nebulasteam Gun",
+	"icon": "kamenridercraft:nebulasteam_gun",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by the $(l:build/riders/kaiser)Kaisers$(/l), $(l:build/riders/bros)Bros$(/l), and $(l:build/riders/rogue)Kamen Rider Rogue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nebulasteam_gun",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

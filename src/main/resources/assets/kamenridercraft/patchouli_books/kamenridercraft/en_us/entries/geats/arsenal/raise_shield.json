@@ -1,0 +1,16 @@
+{
+	"name": "Raise Shield",
+	"icon": "kamenridercraft:raise_shield",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with an $(l:geats/riders/mary#shield)Armed Shield$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/raise_shield"
+		}
+	]
+}

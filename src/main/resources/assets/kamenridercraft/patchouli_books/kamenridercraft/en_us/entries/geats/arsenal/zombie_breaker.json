@@ -1,0 +1,16 @@
+{
+	"name": "Zombie Breaker",
+	"icon": "kamenridercraft:zombie_breaker",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with a $(l:geats/riders/buffa#zombie)Zombie$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/zombie_breaker"
+		}
+	]
+}

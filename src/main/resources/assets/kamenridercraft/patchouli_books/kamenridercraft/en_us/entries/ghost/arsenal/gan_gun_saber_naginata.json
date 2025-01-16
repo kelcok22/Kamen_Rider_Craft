@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Saber (Naginata Mode)",
+	"icon": "kamenridercraft:gan_gun_saber_naginata",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/ghost#ore)Ore$(/l) or $(l:ghost/riders/ghost#musashi)Musashi Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_saber_naginata"
+		}
+	]
+}

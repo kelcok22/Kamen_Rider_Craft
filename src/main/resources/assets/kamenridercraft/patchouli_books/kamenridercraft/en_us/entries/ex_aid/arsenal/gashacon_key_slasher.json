@@ -1,0 +1,16 @@
+{
+	"name": "Gashacon Key Slasher",
+	"icon": "kamenridercraft:gashacon_key_slasher",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by Ex-Aid's $(l:ex_aid/riders/ex-aid#double_action_x)Double Action Gamer Level X$(/l)$(l:ex_aid/riders/ex-aid#double_action_xx_l)/XX$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_key_slasher"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "AIMS Shotriser",
+	"icon": "kamenridercraft:shot_riser_gun",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used by $(l:zero_one/riders/vulcan)Kamen Rider Vulcan$(/l) and $(l:zero_one/riders/valkyrie)Kamen Rider Valkyrie$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/shot_riser_gun"
+		}
+	]
+}

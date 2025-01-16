@@ -1,0 +1,16 @@
+{
+	"name": "Blizzard Knuckle",
+	"icon": "kamenridercraft:blizzard_knuckle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by $(l:build/riders/grease#blizzard)Grease Blizzard$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/blizzard_knuckle"
+		}
+	]
+}

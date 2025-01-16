@@ -1,0 +1,16 @@
+{
+	"name": "Laser Raise Riser",
+	"icon": "kamenridercraft:laser_raise_riser",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used by Kamen Riders $(l:geats/riders/ziin)Ziin,$(/l) $(l:geats/riders/kekera)Kekera,$(/l) $(l:geats/riders/kyuun)Kyuun,$(/l) and $(l:geats/riders/beroba)Beroba$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/laser_raise_riser"
+		}
+	]
+}

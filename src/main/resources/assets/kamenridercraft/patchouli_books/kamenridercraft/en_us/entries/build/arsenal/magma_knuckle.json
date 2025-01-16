@@ -1,0 +1,16 @@
+{
+	"name": "Magma Knuckle",
+	"icon": "kamenridercraft:magma_knuckle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by $(l:build/riders/cross-z#magma)Cross-Z Magma$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/magma_knuckle"
+		}
+	]
+}

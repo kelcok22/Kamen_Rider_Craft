@@ -1,0 +1,16 @@
+{
+	"name": "Ride Weapon",
+	"icon": "kamenridercraft:ride_weapon",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by $(l:ex_aid/riders/ride-player)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ride_weapon"
+		}
+	]
+}

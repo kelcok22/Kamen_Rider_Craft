@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Catcher",
+	"icon": "kamenridercraft:gan_gun_catcher_rod",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/necrom#sanzo)Sanzo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_catcher_rod"
+		}
+	]
+}

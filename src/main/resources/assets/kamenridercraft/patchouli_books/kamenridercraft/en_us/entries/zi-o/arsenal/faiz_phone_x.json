@@ -1,0 +1,16 @@
+{
+	"name": "Faizphone X",
+	"icon": "kamenridercraft:faiz_phone_x",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by Tsukuyomi and Geiz"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/faiz_phone_x"
+		}
+	]
+}

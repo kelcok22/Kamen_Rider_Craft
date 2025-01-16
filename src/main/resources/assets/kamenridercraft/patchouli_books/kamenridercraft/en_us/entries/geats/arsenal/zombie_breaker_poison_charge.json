@@ -1,0 +1,16 @@
+{
+	"name": "Zombie Breaker (Poison Charge)",
+	"icon": "kamenridercraft:zombie_breaker_poison_charge",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used with a $(l:geats/riders/buffa#zombie)Zombie$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/zombie_breaker_poison_charge"
+		}
+	]
+}

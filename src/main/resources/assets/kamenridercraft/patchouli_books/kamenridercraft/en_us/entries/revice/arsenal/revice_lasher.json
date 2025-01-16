@@ -1,0 +1,16 @@
+{
+	"name": "Revicelasher",
+	"icon": "kamenridercraft:revice_lasher",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used by $(l:revice/riders/revi)Kamen Rider Revi$(/l) and $(l:revice/riders/vice)Kamen Rider Vice$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_lasher"
+		}
+	]
+}

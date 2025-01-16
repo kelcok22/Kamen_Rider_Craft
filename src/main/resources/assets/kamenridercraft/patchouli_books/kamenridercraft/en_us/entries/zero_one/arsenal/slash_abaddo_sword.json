@@ -1,0 +1,16 @@
+{
+	"name": "SlashAbaddoriser",
+	"icon": "kamenridercraft:slash_abaddo_sword",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used by $(l:zero_one/riders/abaddon)Kamen Rider Abaddon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_sword"
+		}
+	]
+}

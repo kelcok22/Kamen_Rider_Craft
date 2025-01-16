@@ -1,0 +1,19 @@
+{
+	"name": "Machina Rampart",
+	"icon": "kamenridercraft:machina_rampart",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used by Gamedeus Machina"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:machina_rampart",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Blade Gunner",
+	"icon": "kamenridercraft:blade_gunner",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used by $(l:drive/riders/dark_drive)Kamen Rider Dark Drive$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/blade_gunner"
+		}
+	]
+}

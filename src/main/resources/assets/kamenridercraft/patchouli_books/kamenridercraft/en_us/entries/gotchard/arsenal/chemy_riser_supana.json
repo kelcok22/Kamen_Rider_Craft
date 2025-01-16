@@ -1,0 +1,16 @@
+{
+	"name": "Chemy Riser (Supana Kurogane Ver.)",
+	"icon": "kamenridercraft:chemy_riser_supana",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by Supana Kurogane"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/chemy_riser_supana"
+		}
+	]
+}

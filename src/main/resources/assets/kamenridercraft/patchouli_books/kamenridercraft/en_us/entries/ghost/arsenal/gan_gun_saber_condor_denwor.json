@@ -1,0 +1,16 @@
+{
+	"name": "Gan Gun Saber (Condor Denwor Mode)",
+	"icon": "kamenridercraft:gan_gun_saber_condor_denwor",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used with $(l:ghost/riders/ghost#robin)Robin Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_saber_condor_denwor"
+		}
+	]
+}

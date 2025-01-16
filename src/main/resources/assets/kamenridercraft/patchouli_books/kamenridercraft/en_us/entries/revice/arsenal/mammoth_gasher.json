@@ -1,0 +1,16 @@
+{
+	"name": "Mammoth Gasher",
+	"icon": "kamenridercraft:mammoth_gasher",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used by Revi's $(l:revice/riders/revi#mammoth)Mammoth Genome$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/mammoth_gasher"
+		}
+	]
+}
