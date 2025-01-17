@@ -25,7 +25,6 @@ public class MageCaptainEntity extends BaseHenchmenEntity{
     }
 
 
-    
 	public void remove(RemovalReason p_149847_) {
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
