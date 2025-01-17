@@ -125,7 +125,8 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
-					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DRAGO_TIMER = ITEMS.register("drago_timer",
@@ -190,7 +191,8 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING  = ITEMS.register("finish_strike_ring",
@@ -202,7 +204,8 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 0,true,false)
-					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json")
 					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 

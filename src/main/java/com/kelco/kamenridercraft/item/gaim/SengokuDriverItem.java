@@ -59,6 +59,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 			else if (riderName=="zangetsu"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get()) return "zangetsu_kachidoki";
 			else if (riderName=="gridon"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.LYCHEE_LOCKSEED.get()) return "gridon_lychee";
 			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.FRESH_ORANGE_LOCKSEED.get()) return "gaim_fresh";
+			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.DRIVE_LOCKSEED.get()) return "gaim_drive";
 			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get()) return "gaim_kachidoki";
 			else if (riderName=="gaim"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KIWAMI_LOCKSEED.get()) return "gaim_kiwami";
 			else if (riderName=="bravo"&get_Form_Item(itemstack,1)== Gaim_Rider_Items.KING_DURIAN_LOCKSEED.get()) return "bravo_king";

@@ -428,6 +428,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)));
 	
 	public static final DeferredItem<Item> BURNING_FALCON_PROGRISEKEY = ITEMS.register("burning_falcon_progrisekey",

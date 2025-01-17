@@ -3,6 +3,8 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.gaim.FakeLockseedItem;
+import com.kelco.kamenridercraft.item.gaim.RouletteLockseedItem;
 import com.kelco.kamenridercraft.item.gaim.SengokuDriverItem;
 import com.kelco.kamenridercraft.item.gaim.SidLockseedItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
@@ -439,10 +441,10 @@ public class Gaim_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROULETTE_LOCKSEED = ITEMS.register("roulette_lockseed",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+			() -> new RouletteLockseedItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAKE_DONGURI_LOCKSEED = ITEMS.register("fake_donguri_lockseed",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+			() -> new FakeLockseedItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> SID_LOCKSEED = ITEMS.register("sid_lockseed",
 			() -> new SidLockseedItem(new Item.Properties(),500).AddToList(RiderTabs.GAIM_TAB_ITEM));
@@ -462,14 +464,6 @@ public class Gaim_Rider_Items {
 	public static final DeferredItem<Item> HERO_LOCKSEED = ITEMS.register("hero_lockseed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
-	public static final DeferredItem<Item> LORD_BARON_FRAGMENT = ITEMS.register("lord_baron_fragment",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
-
-	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_2 = ITEMS.register("lord_baron_fragment_2",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
-
-	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_3 = ITEMS.register("lord_baron_fragment_3",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_LOCKSEED = ITEMS.register("drive_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"drive_arms","gaim","sengoku_driver_belt",
@@ -988,11 +982,19 @@ public class Gaim_Rider_Items {
 	public static final DeferredItem<Item> MAJAS_SWORD = ITEMS.register("maja_yomimaru",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT = ITEMS.register("lord_baron_fragment",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_2 = ITEMS.register("lord_baron_fragment_2",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LORD_BARON_FRAGMENT_3 = ITEMS.register("lord_baron_fragment_3",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> GAIM_HORSE_ARMOR = ITEMS.register("gaim_horse_armor",
 			() -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
 					false, new Item.Properties().stacksTo(1)).AddToList(RiderTabs.GAIM_TAB_ITEM));
-
-
 
 	public static final DeferredItem<Item>  HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
 			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
