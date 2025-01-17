@@ -61,6 +61,6 @@ public class SigurdEntity extends BaseHenchmenEntity {
         		.add(Attributes.MOVEMENT_SPEED,(double)0.23F)
         		.add(Attributes.ATTACK_DAMAGE, 10.0D)
         		.add(Attributes.ARMOR, 3.0D)
-        		.add(Attributes.MAX_HEALTH, 200.0D);
+        		.add(Attributes.MAX_HEALTH, 60.0D);
      }
 }
