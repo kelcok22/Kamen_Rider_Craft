@@ -110,6 +110,9 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         		.add(Attributes.MAX_HEALTH, 45.0D);
      }
 
+    public int getMaxSpawnClusterSize() {
+        return 2;
+    }
 
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
     	RandomSource randomsource = level.getRandom();
