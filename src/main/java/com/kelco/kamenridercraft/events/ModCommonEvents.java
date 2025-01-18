@@ -646,6 +646,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());

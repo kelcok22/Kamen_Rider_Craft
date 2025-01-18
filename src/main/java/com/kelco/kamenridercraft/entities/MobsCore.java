@@ -925,8 +925,14 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> SKULLBOILER_SPAWN_EGG = ITEMS.register("skullboilder_spawn_egg",
                  () -> new DeferredSpawnEggItem(SKULLBOILER, 0xffffff, 0x151515, new Item.Properties()));
 
-                  
-          public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
+    public static final DeferredHolder<EntityType<?>, EntityType<BikeGamerEntity>> BIKE_GAMER = MOBLIST.register("bike_gamer",
+            () -> EntityType.Builder.of(BikeGamerEntity::new, MobCategory.MONSTER).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":bike_gamer"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BIKE_GAMER_SPAWN_EGG = ITEMS.register("bike_gamer_spawn_egg",
+            () -> new DeferredSpawnEggItem(BIKE_GAMER, 0xffffff, 0x151515, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
                   () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));
 
           public static final DeferredItem<DeferredSpawnEggItem> RIDER_SUMMON_SPAWN_EGG = ITEMS.register("rider_summon_spawn_egg",
