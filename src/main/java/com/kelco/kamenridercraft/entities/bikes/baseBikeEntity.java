@@ -120,7 +120,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 					setRot(getYRot(), getXRot());
 					this.yBodyRot = this.getYRot();
 					this.yHeadRot = this.yBodyRot;
-					this.playSound(SoundEvents.SKELETON_HORSE_AMBIENT_WATER, 1.0F, 0F);
+					//this.playSound(SoundEvents.SKELETON_HORSE_AMBIENT_WATER, 1.0F, 0F);
 				}
 				this.setSpeed(0.6f);
 				super.travel(new Vec3(x, pos.y, z));
