@@ -307,9 +307,8 @@
 					"name": "Shape32",
 					"pivot": [4, 14, 0],
 					"rotation": [10.68893, 0, 0],
-					"mirror": true,
 					"cubes": [
-						{"origin": [2, 10, 0], "size": [1, 4, 7], "uv": [0, 20]}
+						{"origin": [2, 10, 0], "size": [1, 4, 7], "uv": [0, 20], "mirror": true}
 					]
 				},
 				{
