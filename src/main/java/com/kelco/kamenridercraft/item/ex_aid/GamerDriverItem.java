@@ -71,7 +71,7 @@ public class GamerDriverItem extends RiderDriverItem {
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (entity instanceof Player player && isTransformed(player)
+		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()

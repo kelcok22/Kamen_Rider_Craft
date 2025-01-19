@@ -51,7 +51,7 @@ public class ZikuDriverItem extends RiderDriverItem {
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
-		if (entity instanceof Player player && isTransformed(player)
+		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.decadeExAidSpawning && !decadeExAidSummoned(player)
 		&& itemstack.getItem() == Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()
 		&& RiderDriverItem.get_Form_Item(itemstack, 1) == Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get())

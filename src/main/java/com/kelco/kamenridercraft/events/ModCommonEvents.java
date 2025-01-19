@@ -106,7 +106,7 @@ public class ModCommonEvents {
 		@SubscribeEvent
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
 			ItemStack stack = event.getEntity().getItemBySlot(EquipmentSlot.FEET);
-			if (event.getSlot() != EquipmentSlot.MAINHAND && event.getSlot() != EquipmentSlot.OFFHAND
+			if (!event.getEntity().level().isClientSide() && event.getSlot() != EquipmentSlot.MAINHAND && event.getSlot() != EquipmentSlot.OFFHAND
 			&& stack.getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) belt.OnTransform(stack, event.getEntity());
 
 			//event.getEntity().setInvisible(false);
