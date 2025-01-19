@@ -1,10 +1,10 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:rider_ticket_g"
+	  "id": "kamenridercraft:rider_ticket_yuuki"
 	},
-	"title": "For complete control of all time",
-	"description": "Transform into Kamen Rider G Den-O",
+	"title": "Hundreds of years, I think",
+	"description": "Transform into Kamen Rider Yuuki",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
