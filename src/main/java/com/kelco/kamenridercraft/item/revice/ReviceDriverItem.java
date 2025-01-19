@@ -57,7 +57,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
-		if (entity instanceof Player player && isTransformed(player)
+		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
 		&& ServerConfig.viceSpawning && !viceSummoned(player)
 		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
