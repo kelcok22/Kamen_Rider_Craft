@@ -1,22 +1,22 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:ginga_oh_driver"
+	  "id": "kamenridercraft:goda_boss_block"
 	},
-	"title": "GanGanGiGin GingaOh",
-	"description": "Defeat Super GingaOh",
-	"frame": "task",
+	"title": "Core Medals of Strongest Power",
+	"description": "Defeat Kamen Rider Goda",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:fourze/nadeshiko",
+  "parent": "kamenridercraft:ooo/ancient_ooo",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:player_killed_entity",
 	  "conditions": {
 		"entity": {
-		  "type": "kamenridercraft:super_gingaoh"
+		  "type": "kamenridercraft:goda"
 		}
 	  }
 	}

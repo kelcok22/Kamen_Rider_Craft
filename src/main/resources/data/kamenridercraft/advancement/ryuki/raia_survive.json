@@ -1,0 +1,54 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:survive_shippu"
+	},
+	"title": "Rapid Raging Rajiformes",
+	"description": "Transform into Raia Survive",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ryuki/raia",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": [
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+			  "equipment": {
+				"head": {
+				  "items": [
+					"kamenridercraft:ryukihead"
+				  ]
+				},
+				"chest": {
+				  "items": [
+					"kamenridercraft:ryukitroso"
+				  ]
+				},
+				"legs": {
+				  "items": [
+					"kamenridercraft:ryukilegs"
+				  ]
+				},
+				"feet": {
+				  "items": [
+					"kamenridercraft:v_buckle_raia"
+				  ],
+				  "predicates": {
+					"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:survive_shippu_raia\"}"
+				  }
+				}
+			  }
+			}
+		  }
+		]
+	  }
+	}
+  }
+}

@@ -296,14 +296,9 @@
   "message.kamenridercraft.wozgingafinaly":"§aThe universe's strongest GingaFinaly! Since it's an emergency, I'll keep it short.",
   "message.kamenridercraft.zero_one":"§aHe is the symbol of the new Reiwa Era. And his name is Kamen Rider Zero-One!",
 
-  "message.kamenridercraft.1":"Number:§41",
-  "message.kamenridercraft.2":"Number:§c2",
-  "message.kamenridercraft.3":"Number:§63",
-  "message.kamenridercraft.4":"Number:§e4",
-  "message.kamenridercraft.5":"Number:§25",
-  "message.kamenridercraft.0":"Number:§a6",
+  "message.kamenridercraft.roulette":"Number: §a",
 
-  "message.kamenridercraft.fake":"§6NINCOMPOOP! Never Give Up!",
+  "message.kamenridercraft.fake":"§2NINCOMPOOP! Shame on you! §6Never Give Up!",
 
   "item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",
