@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:rider_ticket_yuuki"
+	  "id": "kamenridercraft:ank_point_burning"
 	},
-	"title": "Hundreds of years, I think",
-	"description": "Transform into Kamen Rider Yuuki",
+	"title": "We Didn't Start the Fire",
+	"description": "Transform into Kamen Rider Another Agito (Kouji Majima)",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:den-o/nega",
+  "parent": "kamenridercraft:agito/another_agito",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:den_ohead"
+				"kamenridercraft:agitohead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:den_otroso"
+				"kamenridercraft:agitotroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:den_olegs"
+				"kamenridercraft:agitolegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:yuuki_belt"
+				"kamenridercraft:ank_point_burning"
 			  ]
 			}
 		  }

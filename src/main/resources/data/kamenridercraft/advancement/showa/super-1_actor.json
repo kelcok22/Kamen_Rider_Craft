@@ -4,11 +4,7 @@
 		"id": "minecraft:emerald"
 	  },
 	  "title": "I Sure Do Love Paying My Taxes!",
-	  "description": [
-		{
-		  "text": "As Super-1, loot a bastion remnant"
-		}
-	  ],
+	  "description": "As Super-1, loot a bastion remnant",
 	  "frame": "challenge",
 	  "show_toast": true,
 	  "announce_to_chat": true,

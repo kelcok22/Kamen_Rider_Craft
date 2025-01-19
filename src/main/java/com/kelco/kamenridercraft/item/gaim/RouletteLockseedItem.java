@@ -40,7 +40,7 @@ public class RouletteLockseedItem extends BaseItem {
 			int rand = generator.nextInt(6);
 
                     p_41129_.getCooldowns().addCooldown(this, TIME);
-			p_41129_.sendSystemMessage(Component.translatable("message.kamenridercraft."+rand));
+			p_41129_.sendSystemMessage(Component.literal(Component.translatable("message.kamenridercraft.roulette").getString() + (rand + 1)));
 
 		}
 
