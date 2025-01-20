@@ -3824,6 +3824,7 @@
 "entity.kamenridercraft.machine_tornador": "Machine Tornador",
 "entity.kamenridercraft.hardboilder": "Hardboilder",
 "entity.kamenridercraft.skullboilder": "Skullboilder",
+  "entity.kamenridercraft.bike_gamer": "Bike Gamer",
 
 "entity.kamenridercraft.rider_summon": "Rider Summon",
 "entity.kamenridercraft.paradx_summon": "Para-DX Summon",
@@ -3984,6 +3985,7 @@
 "item.kamenridercraft.machine_tornador_spawn_egg": "Machine Tornador Spawn Egg",
 "item.kamenridercraft.hardboilder_spawn_egg": "Hardboilder Spawn Egg",
 "item.kamenridercraft.skullboilder_spawn_egg": "Skullboilder Spawn Egg",
+  "item.kamenridercraft.bike_gamer_spawn_egg": "Bike Gamer Spawn Egg",
 
 "item.kamenridercraft.rider_summon_spawn_egg": "Rider Summon Spawn Egg",
 "item.kamenridercraft.paradx_summon_spawn_egg": "Para-DX Summon Spawn Egg",
