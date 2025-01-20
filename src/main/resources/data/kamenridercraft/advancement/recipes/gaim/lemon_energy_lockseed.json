@@ -21,6 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
+	  "kamenridercraft:gaim/genesis_driver_duke",
+	  "kamenridercraft:gaim/genesis_driver_baron_shin",
 	  "kamenridercraft:gaim/sonic_arrow",
 	  "kamenridercraft:gaim/kachidoki_lockseed",
 	  "kamenridercraft:gaim/zangetsu_kachidoki_lockseed",

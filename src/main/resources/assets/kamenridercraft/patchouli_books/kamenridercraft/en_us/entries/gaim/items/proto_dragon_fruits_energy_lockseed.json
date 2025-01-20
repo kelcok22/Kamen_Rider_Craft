@@ -1,0 +1,19 @@
+{
+	"name": "Proto Dragon Fruits Energy Lockseed",
+	"icon": "kamenridercraft:proto_dragon_fruits_energy_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Baron (2015, V-Cinema film)$(br2)Used to craft Tyrant's $(l:gaim/devices/genesis_driver_tyrant)Genesis Driver (Tyrant)$(/l)$(br2)Used to access $(l:gaim/riders/tyrant)Dragon Energy Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_dragon_fruits_energy_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

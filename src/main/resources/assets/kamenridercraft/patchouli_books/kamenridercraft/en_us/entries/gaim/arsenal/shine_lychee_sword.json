@@ -2,7 +2,7 @@
 	"name": "Shine Lychee Sword",
 	"icon": "kamenridercraft:shine_lychee_sword",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 15,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

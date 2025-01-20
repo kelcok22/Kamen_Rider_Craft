@@ -1,0 +1,21 @@
+{
+	"name": "Helheim",
+	"icon": "kamenridercraft:sid_lockseed",
+	"category": "kamenridercraft:gaim/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Helheim",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Accessed by going through a $(l:misc/blocks/helheim_crack)Helheim Crack$(/l)$(br2)Structures:$(li)$(l:gaim/structures/yggdrasil_base)Yggdrasil Base$(/l)$(li)$(l:gaim/structures/rosyuo_helheim_city)Rosyuo's Helheim City$(/l)$(li)$(l:gaim/structures/redyue_helheim_city)Redyue's Helheim City$(/l)$(li)$(l:gaim/structures/demushu_helheim_city)Demushu's Helheim City$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/helheim.png"
+			],
+			"title": " "
+		}
+	]
+}

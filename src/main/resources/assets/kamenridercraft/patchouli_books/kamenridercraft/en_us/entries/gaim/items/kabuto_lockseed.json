@@ -1,0 +1,16 @@
+{
+	"name": "Kabuto Lockseed",
+	"icon": "kamenridercraft:kabuto_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 68,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/zangetsu#kabuto)Kabuto Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kabuto_lockseed"
+		}
+	]
+}

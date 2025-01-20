@@ -1,0 +1,19 @@
+{
+	"name": "Black Ringo Lockseed",
+	"icon": "kamenridercraft:black_ringo_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Jam's $(l:gaim/devices/sengoku_driver_jam)Sengoku Driver (Jam)$(/l)$(br2)Used to access $(l:gaim/riders/jam)Darkness Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_ringo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		}
+	]
+}

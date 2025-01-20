@@ -2,7 +2,7 @@
 	"name": "Duri Noko",
 	"icon": "kamenridercraft:duri_noko",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 26,
+	"sortnum": 27,
 	"pages": [
 		{
 			"type": "patchouli:text",

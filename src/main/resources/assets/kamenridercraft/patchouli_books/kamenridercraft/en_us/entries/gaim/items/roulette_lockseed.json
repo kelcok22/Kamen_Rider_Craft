@@ -1,0 +1,19 @@
+{
+	"name": "Roulette Lockseed",
+	"icon": "kamenridercraft:roulette_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim Roulette Battle (2013, board game)$(br2)Outputs a number between 1-6 when right clicked"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roulette_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

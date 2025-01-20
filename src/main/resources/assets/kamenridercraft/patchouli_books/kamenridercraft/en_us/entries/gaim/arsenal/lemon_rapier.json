@@ -2,7 +2,7 @@
 	"name": "Lemon Rapier",
 	"icon": "kamenridercraft:lemon_rapier",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 38,
+	"sortnum": 39,
 	"pages": [
 		{
 			"type": "patchouli:text",

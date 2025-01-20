@@ -2,7 +2,7 @@
 	"name": "Kabi Daidaimaru",
 	"icon": "kamenridercraft:kabi_daidaimaru",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 43,
+	"sortnum": 44,
 	"pages": [
 		{
 			"type": "patchouli:text",

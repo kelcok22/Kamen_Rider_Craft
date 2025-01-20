@@ -2,7 +2,7 @@
 	"name": "Ichigo Kunai",
 	"icon": "kamenridercraft:ichigo_kunai",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 21,
+	"sortnum": 22,
 	"pages": [
 		{
 			"type": "patchouli:text",

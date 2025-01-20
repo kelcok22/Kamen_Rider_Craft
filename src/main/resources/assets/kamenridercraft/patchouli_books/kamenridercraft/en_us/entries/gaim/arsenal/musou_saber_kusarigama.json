@@ -2,7 +2,7 @@
 	"name": "Musou Saber (Kusarigama Mode)",
 	"icon": "kamenridercraft:musou_saber_kusarigama",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

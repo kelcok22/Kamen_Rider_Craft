@@ -1,0 +1,21 @@
+{
+	"name": "Redyue's Helheim City",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/structures",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Redyue's Helheim City",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:misc/blocks/redyue_boss_block)Redyue Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/redyue_helheim_city.png"
+			],
+			"title": " "
+		}
+	]
+}

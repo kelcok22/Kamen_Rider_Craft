@@ -1,0 +1,19 @@
+{
+	"name": "Ochimusha Lockseed",
+	"icon": "kamenridercraft:blood_orange_lockseed_ochimusha",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)S.I.C. Hero Saga (2018, toyline)$(br2)Used to access Bujin Gaim's $(l:gaim/riders/bujin_gaim#ochimusha)Ochimusha Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_orange_lockseed_ochimusha",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Fifteen Lockseed",
+	"icon": "kamenridercraft:fifteen_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to craft Fifteen's $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)Used to access $(l:gaim/riders/fifteen#fifteen)Fifteen Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fifteen_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		}
+	]
+}

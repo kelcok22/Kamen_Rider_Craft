@@ -2,7 +2,7 @@
 	"name": "Melon Defender",
 	"icon": "kamenridercraft:melon_defender",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

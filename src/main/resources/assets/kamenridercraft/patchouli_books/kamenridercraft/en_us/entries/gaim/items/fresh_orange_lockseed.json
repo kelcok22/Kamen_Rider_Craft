@@ -1,0 +1,16 @@
+{
+	"name": "Fresh Orange Lockseed",
+	"icon": "kamenridercraft:fresh_orange_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Used to access $(l:gaim/riders/gaim#fresh_orange)Fresh Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/fresh_orange_lockseed"
+		}
+	]
+}

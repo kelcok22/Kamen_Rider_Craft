@@ -1,0 +1,19 @@
+{
+	"name": "Budou Lockseed",
+	"icon": "kamenridercraft:budou_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Ryugen's $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)Used to access $(l:gaim/riders/ryugen#budou)Budou Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:budou_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)"
+		}
+	]
+}

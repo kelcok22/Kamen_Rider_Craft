@@ -2,7 +2,7 @@
 	"name": "Kachidoki Bata",
 	"icon": "kamenridercraft:kachidoki_bata",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

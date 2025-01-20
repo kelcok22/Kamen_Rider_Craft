@@ -2,7 +2,7 @@
 	"name": "DJ Gun",
 	"icon": "kamenridercraft:dj_gun",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

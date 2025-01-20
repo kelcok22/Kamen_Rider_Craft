@@ -2,7 +2,7 @@
 	"name": "Kachidoki Bata (Zangetsu)",
 	"icon": "kamenridercraft:zangetsu_kachidoki_bata",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

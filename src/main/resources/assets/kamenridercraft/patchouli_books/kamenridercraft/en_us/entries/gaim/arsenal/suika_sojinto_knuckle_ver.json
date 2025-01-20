@@ -2,7 +2,7 @@
 	"name": "Suika Sojinto (Knuckle ver.)",
 	"icon": "kamenridercraft:suika_sojinto_knuckle_ver",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 32,
+	"sortnum": 33,
 	"pages": [
 		{
 			"type": "patchouli:text",

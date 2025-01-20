@@ -1,0 +1,19 @@
+{
+	"name": "Hero Lockseed",
+	"icon": "kamenridercraft:hero_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 58,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hero_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

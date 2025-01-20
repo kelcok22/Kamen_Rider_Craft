@@ -2,7 +2,7 @@
 	"name": "Kagematsu",
 	"icon": "kamenridercraft:kagematsu",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

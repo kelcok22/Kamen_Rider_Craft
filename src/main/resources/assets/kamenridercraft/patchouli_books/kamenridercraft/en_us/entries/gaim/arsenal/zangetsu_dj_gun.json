@@ -2,7 +2,7 @@
 	"name": "DJ Gun (Zangetsu)",
 	"icon": "kamenridercraft:zangetsu_dj_gun",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

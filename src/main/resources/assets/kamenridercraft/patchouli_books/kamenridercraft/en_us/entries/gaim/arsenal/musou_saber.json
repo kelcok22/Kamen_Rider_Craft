@@ -2,7 +2,7 @@
 	"name": "Musou Saber",
 	"icon": "kamenridercraft:musou_saber",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 0,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Suika Sojinto (Baron ver.)",
 	"icon": "kamenridercraft:suika_sojinto_baron_ver",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 31,
+	"sortnum": 32,
 	"pages": [
 		{
 			"type": "patchouli:text",

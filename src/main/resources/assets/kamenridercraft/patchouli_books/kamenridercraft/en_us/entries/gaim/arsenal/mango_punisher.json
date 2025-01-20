@@ -2,7 +2,7 @@
 	"name": "Mango Punisher",
 	"icon": "kamenridercraft:mango_punisher",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 25,
+	"sortnum": 26,
 	"pages": [
 		{
 			"type": "patchouli:text",

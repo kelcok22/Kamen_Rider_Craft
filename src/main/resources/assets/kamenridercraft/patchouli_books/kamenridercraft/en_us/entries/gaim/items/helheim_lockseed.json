@@ -1,0 +1,19 @@
+{
+	"name": "Helheim Lockseed",
+	"icon": "kamenridercraft:helheim_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used to craft Sylphi's $(l:gaim/devices/sengoku_driver_sylphi)Sengoku Driver (Sylphi)$(/l)$(br2)Used to access $(l:gaim/riders/sylphi)Hells Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/redyue)Redyue$(/l)"
+		}
+	]
+}

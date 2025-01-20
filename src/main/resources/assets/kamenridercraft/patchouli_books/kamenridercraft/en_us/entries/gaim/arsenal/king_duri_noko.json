@@ -2,7 +2,7 @@
 	"name": "Giga Duri Noko",
 	"icon": "kamenridercraft:king_duri_noko",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 33,
+	"sortnum": 34,
 	"pages": [
 		{
 			"type": "patchouli:text",

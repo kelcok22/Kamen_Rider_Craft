@@ -1,0 +1,16 @@
+{
+	"name": "Shin Kachidoki Lockseed",
+	"icon": "kamenridercraft:zangetsu_kachidoki_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to access Zangetsu's $(l:gaim/riders/zangetsu#kachidoki)Kachidoki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/zangetsu_kachidoki_lockseed"
+		}
+	]
+}

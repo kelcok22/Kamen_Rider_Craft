@@ -2,7 +2,7 @@
 	"name": "DJ Gun (Taiken Mode)",
 	"icon": "kamenridercraft:dj_gun_taiken_mode",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

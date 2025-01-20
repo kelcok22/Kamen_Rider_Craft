@@ -1,0 +1,19 @@
+{
+	"name": "Heisei Rider Lockseed",
+	"icon": "kamenridercraft:heisei_rider_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 77,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heisei_rider_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Suika Sojinto",
 	"icon": "kamenridercraft:suika_sojinto",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 30,
+	"sortnum": 31,
 	"pages": [
 		{
 			"type": "patchouli:text",
