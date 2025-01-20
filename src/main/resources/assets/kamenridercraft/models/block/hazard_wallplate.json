@@ -1,0 +1,24 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "kamenridercraft:block/wallplate",
+        "0": "kamenridercraft:block/hazard_edging",
+        "1": "kamenridercraft:block/hazard_edging_left",
+        "2": "kamenridercraft:block/hazard_edging"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ],
+            "to": [ 16.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#1", "uv": [ 16.0, 16.0, 0.0, 0.0 ]},
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

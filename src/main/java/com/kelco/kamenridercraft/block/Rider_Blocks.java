@@ -700,6 +700,10 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> HAZARD_WALLPLATE = registerBlock("hazard_wallplate",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 	public static final DeferredBlock<Block> GHOST_LINER_WHEEL = registerBlock("ghostliner_wheel",
 			() -> new StairBlock(Rider_Blocks.WALLPLATE.get().defaultBlockState(),
 					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
