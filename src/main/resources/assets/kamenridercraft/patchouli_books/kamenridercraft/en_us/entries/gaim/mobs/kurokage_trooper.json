@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:kurokage_trooper",
-			"text": "Spawn locations: $(l:gaim/structures/yggdrasill_base)Yggdrasil Base$(/l)"
+			"text": "Spawn locations: $(l:gaim/structures/yggdrasil_base)Yggdrasil Research Camp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
