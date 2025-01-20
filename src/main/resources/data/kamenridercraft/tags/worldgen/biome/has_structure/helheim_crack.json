@@ -6,6 +6,7 @@
     "#c:is_forest",
 	"#c:is_plains",
 	"#c:is_swamp",
-    "#c:is_jungle"
+    "#c:is_jungle",
+    "kamenridercraft:helheim"
   ]
 }
