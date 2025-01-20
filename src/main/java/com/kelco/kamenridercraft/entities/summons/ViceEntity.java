@@ -130,6 +130,12 @@ public class ViceEntity extends BaseSummonEntity {
 	            	    case "_kangaroo":
 						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KANGAROO_VISTAMP_VICE.get(), 1);
 	            	        break;
+	            	    case "_kirin":
+						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KIRIN_VISTAMP_VICE.get(), 1);
+	            	        break;
+	            	    case "_niwatori":
+						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.NIWATORI_VISTAMP_VICE.get(), 1);
+	            	        break;
 	            	    case "_condor":
 						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.CONDOR_VISTAMP_VICE.get(), 1);
 	            	        break;
