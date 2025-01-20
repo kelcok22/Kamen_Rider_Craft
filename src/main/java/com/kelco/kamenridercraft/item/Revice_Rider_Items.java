@@ -274,10 +274,16 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false)).addAlternative(KANGAROO_VISTAMP_VICE.get())
 				.AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+	public static final DeferredItem<Item> KIRIN_VISTAMP_VICE = ITEMS.register("kirin_vistamp_vice",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kirin","vice","buddy_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)));
+
 	public static final DeferredItem<Item> KIRIN_VISTAMP = ITEMS.register("kirin_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_kirin","revi","revice_driver_belt_ki",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+				.addAlternative(KIRIN_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> NIWATORI_VISTAMP = ITEMS.register("niwatori_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_niwatori","revi","revice_driver_belt_ni",
