@@ -201,7 +201,7 @@
 			"anchor": "rider_ichigo",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Ichigo Arms",
-			"text": "Accessed with the $(l:gaim/items/rider_ichigo_lockseed)Ichigo Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/rider_ichigo_lockseed)Ichigo Lockseed$(/l) or the $(l:gaim/items/heisei_rider_lockseed)Heisei Rider Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
