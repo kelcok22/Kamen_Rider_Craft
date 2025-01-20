@@ -1,0 +1,19 @@
+{
+	"name": "Suika Lockseed",
+	"icon": "kamenridercraft:suika_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/gaim#suika)Suika Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:suika_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)"
+		}
+	]
+}

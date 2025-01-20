@@ -2,7 +2,7 @@
 	"name": "Souginjou",
 	"icon": "kamenridercraft:souginjou",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 39,
+	"sortnum": 40,
 	"pages": [
 		{
 			"type": "patchouli:text",

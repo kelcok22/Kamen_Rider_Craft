@@ -2,7 +2,7 @@
 	"name": "Dark Daidaimaru",
 	"icon": "kamenridercraft:dark_daidaimaru",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 40,
+	"sortnum": 41,
 	"pages": [
 		{
 			"type": "patchouli:text",

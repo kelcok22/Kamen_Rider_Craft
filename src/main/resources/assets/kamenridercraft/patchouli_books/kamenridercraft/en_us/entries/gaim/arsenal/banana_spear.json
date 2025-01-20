@@ -2,7 +2,7 @@
 	"name": "Banana Spear",
 	"icon": "kamenridercraft:banana_spear",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 23,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

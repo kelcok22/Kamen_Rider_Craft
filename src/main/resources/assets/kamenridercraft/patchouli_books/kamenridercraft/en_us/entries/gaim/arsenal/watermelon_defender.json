@@ -2,7 +2,7 @@
 	"name": "Watermelon Defender",
 	"icon": "kamenridercraft:watermelon_defender",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 41,
+	"sortnum": 42,
 	"pages": [
 		{
 			"type": "patchouli:text",

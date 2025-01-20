@@ -1,0 +1,16 @@
+{
+	"name": "Kabi Orange Lockseed",
+	"icon": "kamenridercraft:kabi_orange_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used to access $(l:gaim/riders/gaim#kabi_orange)Kabi Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kabi_orange_lockseed"
+		}
+	]
+}

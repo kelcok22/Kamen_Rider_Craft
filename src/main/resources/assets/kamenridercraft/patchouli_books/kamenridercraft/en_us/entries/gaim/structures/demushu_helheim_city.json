@@ -1,0 +1,29 @@
+{
+	"name": "Demushu's Helheim City",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/structures",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Demushu's Helheim City",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:misc/blocks/demushu_boss_block)Demushu Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city_2.png"
+			],
+			"title": " "
+		}
+	]
+}

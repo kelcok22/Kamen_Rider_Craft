@@ -1,0 +1,19 @@
+{
+	"name": "Kurumi Lockseed",
+	"icon": "kamenridercraft:kurumi_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Knuckle's $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)Used to access $(l:gaim/riders/knuckle#kurumi)Kurumi Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kurumi_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)"
+		}
+	]
+}

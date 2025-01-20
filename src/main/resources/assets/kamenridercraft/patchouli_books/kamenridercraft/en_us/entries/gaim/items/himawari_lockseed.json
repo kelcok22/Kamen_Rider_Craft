@@ -1,0 +1,19 @@
+{
+	"name": "Himawari Lockseed",
+	"icon": "kamenridercraft:himawari_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used as the base item for most Gaim items"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:himawari_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l)"
+		}
+	]
+}

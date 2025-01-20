@@ -1,0 +1,19 @@
+{
+	"name": "Helheim Fruit",
+	"icon": "kamenridercraft:helheim_fruit",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 79,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Gives Poison III when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_fruit",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/decor/helheim_leaves)Helheim Leaves$(/l)"
+		}
+	]
+}

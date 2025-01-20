@@ -1,0 +1,19 @@
+{
+	"name": "Blood Orange Lockseed",
+	"icon": "kamenridercraft:blood_orange_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to craft Bujin Gaim's $(l:gaim/devices/sengoku_driver_bujin_gaim)Sengoku Driver (Bujin Gaim)$(/l)$(br2)Used to access $(l:gaim/riders/bujin_gaim#blood_orange)Blood Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_orange_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		}
+	]
+}

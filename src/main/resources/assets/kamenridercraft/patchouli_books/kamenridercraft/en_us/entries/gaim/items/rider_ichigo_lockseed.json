@@ -1,0 +1,16 @@
+{
+	"name": "Ichigo Lockseed",
+	"icon": "kamenridercraft:rider_ichigo_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 75,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#rider_ichigo)Ichigo Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/rider_ichigo_lockseed"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Proto Banana Lockseed",
+	"icon": "kamenridercraft:proto_banana_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Baron's $(l:gaim/devices/sengoku_driver_proto_baron)Sengoku Driver (Proto Baron)$(/l)$(br2)Used to access $(l:gaim/riders/proto_baron)Banana Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_banana_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

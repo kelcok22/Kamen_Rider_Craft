@@ -90,6 +90,18 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "kachidoki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:zangetsu_kachidoki_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Kachidoki Arms",
+			"text": "Accessed with the $(l:gaim/items/zangetsu_kachidoki_lockseed)Shin Kachidoki Lockseed$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zangetsu",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Saturation$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "kabuto",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
 			"name": "Kabuto Arms",

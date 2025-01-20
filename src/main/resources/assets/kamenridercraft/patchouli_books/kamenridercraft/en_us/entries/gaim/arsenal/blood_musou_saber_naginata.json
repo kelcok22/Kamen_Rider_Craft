@@ -2,7 +2,7 @@
 	"name": "Musou Saber (Naginata Mode)",
 	"icon": "kamenridercraft:blood_musou_saber_naginata",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Apple Reflecter",
 	"icon": "kamenridercraft:apple_reflecter",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 37,
+	"sortnum": 38,
 	"pages": [
 		{
 			"type": "patchouli:text",

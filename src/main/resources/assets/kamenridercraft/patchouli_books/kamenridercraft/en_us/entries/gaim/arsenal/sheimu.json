@@ -2,7 +2,7 @@
 	"name": "Sheimu",
 	"icon": "kamenridercraft:sheimu",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

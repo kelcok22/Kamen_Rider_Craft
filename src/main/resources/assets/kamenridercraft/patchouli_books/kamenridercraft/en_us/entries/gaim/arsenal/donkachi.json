@@ -2,7 +2,7 @@
 	"name": "Donkachi",
 	"icon": "kamenridercraft:donkachi",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

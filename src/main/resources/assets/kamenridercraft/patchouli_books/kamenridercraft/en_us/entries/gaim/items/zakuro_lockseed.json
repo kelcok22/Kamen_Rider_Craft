@@ -1,0 +1,19 @@
+{
+	"name": "Zakuro Lockseed",
+	"icon": "kamenridercraft:zakuro_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used to craft Saver's $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)Used to access $(l:gaim/riders/saver#blood_zakuro)Blood Zakuro Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zakuro_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		}
+	]
+}

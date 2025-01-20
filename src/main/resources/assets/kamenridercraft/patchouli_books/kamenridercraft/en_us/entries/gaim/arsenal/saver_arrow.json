@@ -2,7 +2,7 @@
 	"name": "Saver Arrow",
 	"icon": "kamenridercraft:saver_arrow",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 42,
+	"sortnum": 43,
 	"pages": [
 		{
 			"type": "patchouli:text",

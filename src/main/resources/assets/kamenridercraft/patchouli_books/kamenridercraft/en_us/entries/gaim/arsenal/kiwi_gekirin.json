@@ -2,7 +2,7 @@
 	"name": "Kiwi Gekirin",
 	"icon": "kamenridercraft:kiwi_gekirin",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 27,
+	"sortnum": 28,
 	"pages": [
 		{
 			"type": "patchouli:text",

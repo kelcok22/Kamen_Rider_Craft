@@ -2,7 +2,7 @@
 	"name": "Budou Ryuhou",
 	"icon": "kamenridercraft:budou_ryuhou",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 24,
+	"sortnum": 25,
 	"pages": [
 		{
 			"type": "patchouli:text",

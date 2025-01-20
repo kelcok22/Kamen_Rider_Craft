@@ -2,7 +2,7 @@
 	"name": "Guronbaryamu",
 	"icon": "kamenridercraft:guronbaryamu",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

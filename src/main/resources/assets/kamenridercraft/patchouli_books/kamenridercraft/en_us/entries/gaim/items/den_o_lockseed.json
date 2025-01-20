@@ -1,0 +1,16 @@
+{
+	"name": "Den-O Lockseed",
+	"icon": "kamenridercraft:den_o_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 67,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#den-o)Den-O Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/den_o_lockseed"
+		}
+	]
+}

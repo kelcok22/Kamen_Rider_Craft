@@ -1,0 +1,19 @@
+{
+	"name": "Gaim Horse Armor",
+	"icon": "kamenridercraft:gaim_horse_armor",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Can be equipped on a horse"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaim_horse_armor",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

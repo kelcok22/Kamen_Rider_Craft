@@ -21,6 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
+	  "kamenridercraft:gaim/genesis_driver_kurokage_shin",
 	  "kamenridercraft:gaim/kagematsu_shin"
 	]
   },

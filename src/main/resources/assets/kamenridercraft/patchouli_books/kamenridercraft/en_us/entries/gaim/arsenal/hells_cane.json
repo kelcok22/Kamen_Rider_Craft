@@ -2,7 +2,7 @@
 	"name": "Hells Cane",
 	"icon": "kamenridercraft:hells_cane",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

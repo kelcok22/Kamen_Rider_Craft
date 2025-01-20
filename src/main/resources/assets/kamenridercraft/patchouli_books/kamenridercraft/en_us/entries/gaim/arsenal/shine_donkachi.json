@@ -2,7 +2,7 @@
 	"name": "Shine Donkachi",
 	"icon": "kamenridercraft:shine_donkachi",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

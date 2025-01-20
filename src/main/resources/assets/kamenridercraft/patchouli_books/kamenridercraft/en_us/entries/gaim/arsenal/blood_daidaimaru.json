@@ -2,7 +2,7 @@
 	"name": "Daidaimaru (Blood Orange Ver)",
 	"icon": "kamenridercraft:blood_daidaimaru",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 34,
+	"sortnum": 35,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Maja's Sword",
 	"icon": "kamenridercraft:maja_yomimaru",
 	"category": "kamenridercraft:gaim/arsenal",
-	"sortnum": 44,
+	"sortnum": 45,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,16 @@
+{
+	"name": "Hibiki Lockseed",
+	"icon": "kamenridercraft:hibiki_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 69,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/bravo#hibiki)Hibiki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/hibiki_lockseed"
+		}
+	]
+}

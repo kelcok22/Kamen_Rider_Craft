@@ -1,0 +1,16 @@
+{
+	"name": "Kachidoki Lockseed",
+	"icon": "kamenridercraft:kachidoki_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access Gaim's $(l:gaim/riders/gaim#kachidoki)Kachidoki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kachidoki_lockseed"
+		}
+	]
+}

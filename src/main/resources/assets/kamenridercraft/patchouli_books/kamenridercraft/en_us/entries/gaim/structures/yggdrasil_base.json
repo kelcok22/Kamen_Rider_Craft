@@ -1,0 +1,21 @@
+{
+	"name": "Yggdrasil Base",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Yggdrasil Base",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l) spawner"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_base.png"
+			],
+			"title": " "
+		}
+	]
+}
