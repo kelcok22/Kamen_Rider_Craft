@@ -288,6 +288,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
 			() -> new SaplingBlock(ModTreeGrowers.HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+	public static final DeferredBlock<Block> POTTED_HELHEIM_SAPLING = registerBlock("potted_helheim_sapling",
+			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+
 	public static final DeferredBlock<LeavesBlock> HELHEIM_LEAVES = registerBlock("helheim_leaves",
 			() -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
 			@Override
@@ -713,9 +716,9 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
-	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
-			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
-					.strength(2f)));
+//	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
+//			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
+//					.strength(2f)));
 
 	public static final DeferredBlock<Block> PAVEMENT = registerBlock("pavement",
 			() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
