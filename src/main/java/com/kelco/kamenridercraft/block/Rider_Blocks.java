@@ -320,13 +320,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT = registerBlock("potted_helheim_plant",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
-
-	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_1 = registerBlock("helheim_plant_1",
-			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
-					BlockBehaviour.Properties.ofFullCopy(Blocks.DANDELION).noOcclusion().noCollission()));
-
-	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT_1 = registerBlock("potted_helheim_plant_1",
-			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT_1.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+	
 
 	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_2 = registerBlock("helheim_plant_2",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
