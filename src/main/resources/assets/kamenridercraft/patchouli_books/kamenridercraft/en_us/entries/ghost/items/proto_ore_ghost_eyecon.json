@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/zero_ghost_driver)Ghost Driver$(/l)"
+			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/zero_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_ghost)Zero Ghost Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

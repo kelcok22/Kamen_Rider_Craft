@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Dark Ghost",
+	"icon": "kamenridercraft:dark_ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_ghost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Dark Damashii",
+			"text": "Accessed with the $(l:ghost/items/dark_ghost_eyecon)Dark Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/dark_ghost_driver)Ghost Driver (Dark Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance IV$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "napoleon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:napoleon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Napoleon Damashii",
+			"text": "Accessed with the $(l:ghost/items/napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/dark_ghost_driver)Ghost Driver (Dark Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Water Breathing II$(li)Resistance IV$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ikkyu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ikkyu Damashii",
+			"text": "Accessed with the $(l:ghost/items/ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/dark_ghost_driver)Ghost Driver (Dark Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Resistance IV$(li)Strength V$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pythagoras",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Pythagoras Damashii",
+			"text": "Accessed with the $(l:ghost/items/pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/dark_ghost_driver)Ghost Driver (Dark Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Regeneration II$(li)Resistance IV$(li)Strength V"
+		}
+	]
+}

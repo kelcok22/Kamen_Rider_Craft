@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider New Ghost",
+	"icon": "kamenridercraft:new_ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:new_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:new_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "New Ore Damashii",
+			"text": "Accessed with the $(l:ghost/items/new_ore_ghost_eyecon)New Ore Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider New Ghost",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Final Stage (2017, stage show)$(br2)Transforms with the $(l:ghost/devices/new_ghost_driver)Ghost Driver (New Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance IV$(li)Strength V"
+		}
+	]
+}

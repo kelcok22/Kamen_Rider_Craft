@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Used to craft Kanon Specter's $(l:ghost/devices/kanon_specter_driver)Ghost Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Used to craft Kanon Specter's $(l:ghost/devices/kanon_specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/kanon_specter)Kanon Specter Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

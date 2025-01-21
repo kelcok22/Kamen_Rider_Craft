@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver)Ghost Driver$(/l)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

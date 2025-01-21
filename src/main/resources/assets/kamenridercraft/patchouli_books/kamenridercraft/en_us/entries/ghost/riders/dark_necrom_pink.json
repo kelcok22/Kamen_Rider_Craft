@@ -1,0 +1,20 @@
+{
+	"name": "Kamen Rider Dark Necrom Pink",
+	"icon": "kamenridercraft:proto_mega_ulorder_pink",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_necrom_pink",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_pink\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_pink_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Dark Necrom Pink Damashii",
+			"text": "Accessed with the $(l:ghost/items/dark_necrom_pink_ghost_eyecon)Dark Necrom Ghost Eyecon (Pink)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Necrom Pink",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder (Dark Necrom Pink)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+		}
+	]
+}
