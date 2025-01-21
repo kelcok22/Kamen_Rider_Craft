@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Zero Ghost",
+	"icon": "kamenridercraft:zero_ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zero_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:proto_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Proto Ore Damashii",
+			"text": "Accessed with the $(l:ghost/items/proto_ore_ghost_eyecon)Prototype Ore Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero Ghost",
+			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Transforms with the $(l:ghost/devices/zero_ghost_driver)Ghost Driver (Zero Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance IV$(li)Strength V"
+		}
+	]
+}

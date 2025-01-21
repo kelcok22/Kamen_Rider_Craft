@@ -1,0 +1,344 @@
+{
+	"name": "Kamen Rider Necrom",
+	"icon": "kamenridercraft:mega_ulorder",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "necrom",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:necrom_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Necrom Damashii",
+			"text": "Accessed with the $(l:ghost/items/necrom_ghost_eyecon)Necrom Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "grimm",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Grimm Damashii",
+			"text": "Accessed with the $(l:ghost/items/grimm_ghost_eyecon)Grimm Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Regeneration III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sanzo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:sanzo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Sanzo Damashii",
+			"text": "Accessed with the $(l:ghost/items/sanzo_ghost_eyecon)Sanzo Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost VI$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "yujou_burst",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:yujou_burst_ghost_eyecon\",slot_tex2:\"kamenridercraft:yujou_burst_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Yujou Burst Damashii",
+			"text": "Accessed with the $(l:ghost/items/yujou_burst_ghost_eyecon)Yujou Burst Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Ghost RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "musashi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:musashi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Musashi Damashii",
+			"text": "Accessed with the $(l:ghost/items/musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Slash II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "edison",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:edison_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Edison Damashii",
+			"text": "Accessed with the $(l:ghost/items/edison_ghost_eyecon)Edison Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "robin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:robin_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Robin Damashii",
+			"text": "Accessed with the $(l:ghost/items/robin_ghost_eyecon)Robin Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Jump Boost$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "newton",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:newton_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Newton Damashii",
+			"text": "Accessed with the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Low Gravity VIII$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "billy_the_kid",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:billy_the_kid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Billy the Kid Damashii",
+			"text": "Accessed with the $(l:ghost/items/billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beethoven",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:beethoven_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Beethoven Damashii",
+			"text": "Accessed with the $(l:ghost/items/beethoven_ghost_eyecon)Beethoven Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "benkei",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Benkei Damashii",
+			"text": "Accessed with the $(l:ghost/items/benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "goemon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:goemon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Goemon Damashii",
+			"text": "Accessed with the $(l:ghost/items/goemon_ghost_eyecon)Goemon Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryoma",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryoma_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ryoma Damashii",
+			"text": "Accessed with the $(l:ghost/items/ryoma_ghost_eyecon)Ryoma Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Jump Boost$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "himiko",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:himiko_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Himiko Damashii",
+			"text": "Accessed with the $(l:ghost/items/himiko_ghost_eyecon)Himiko Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Regeneration IV$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tutankhamun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:tutankhamun_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Tutankhamun Damashii",
+			"text": "Accessed with the $(l:ghost/items/tutankhamun_ghost_eyecon)Tutankhamun Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nobunaga",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:nobunaga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Nobunaga Damashii",
+			"text": "Accessed with the $(l:ghost/items/nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Jump Boost$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "houdini",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:houdini_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Houdini Damashii",
+			"text": "Accessed with the $(l:ghost/items/houdini_ghost_eyecon)Houdini Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Jump Boost VI$(li)Strength II$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pythagoras",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Pythagoras Damashii",
+			"text": "Accessed with the $(l:ghost/items/pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Regeneration II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ikkyu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ikkyu Damashii",
+			"text": "Accessed with the $(l:ghost/items/ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Jump Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "santa",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:santa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Santa Damashii",
+			"text": "Accessed with the $(l:ghost/items/santa_ghost_eyecon)Santa Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Regeneration II$(li)Saturation II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kamehameha",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:kamehameha_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Kamehameha Damashii",
+			"text": "Accessed with the $(l:ghost/items/kamehameha_ghost_eyecon)Kamehameha Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Jump Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "galileo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:galileo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Galileo Damashii",
+			"text": "Accessed with the $(l:ghost/items/galileo_ghost_eyecon)Galileo Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision II$(li)Haste II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shakespeare",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:shakespeare_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Shakespeare Damashii",
+			"text": "Accessed with the $(l:ghost/items/shakespeare_ghost_eyecon)Shakespeare Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Nausea II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "columbus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:columbus_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Columbus Damashii",
+			"text": "Accessed with the $(l:ghost/items/columbus_ghost_eyecon)Columbus Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nightingale",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:nightingale_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Nightingale Damashii",
+			"text": "Accessed with the $(l:ghost/items/nightingale_ghost_eyecon)Nightingale Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Regeneration II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "special_ore",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_ore_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Special Ore Damashii",
+			"text": "Accessed with the $(l:ghost/items/special_ore_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Jump Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tenkatoitsu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Tenka Toitsu Damashii",
+			"text": "Accessed with the $(l:ghost/items/tenkatoitsu_ghost_eyecon)Tenka Toitsu Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ghost",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "showa",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mega_ulorder\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Showa Damashii",
+			"text": "Accessed with the $(l:ghost/items/showa_ghost_eyecon)Showa Rider 45 Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Necrom",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Fire Resistance$(li)Strength II"
+		}
+	]
+}

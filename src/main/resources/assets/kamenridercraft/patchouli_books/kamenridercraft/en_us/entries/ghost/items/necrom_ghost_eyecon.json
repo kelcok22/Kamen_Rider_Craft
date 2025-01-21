@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Necrom's $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)Used to access Necrom's $(l:ghost/riders/necrom#necrom)Necrom Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Necrom's $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/necrom#necrom)Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

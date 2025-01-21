@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Dark Necrom Blue",
+	"icon": "kamenridercraft:proto_mega_ulorder_blue",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_necrom_blue",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_blue\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_blue_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Dark Necrom Blue Damashii",
+			"text": "Accessed with the $(l:ghost/items/dark_necrom_blue_ghost_eyecon)Dark Necrom Ghost Eyecon (Blue)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Necrom Blue",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_blue)Proto Mega Ulorder (Dark Necrom Blue)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "billy_the_kid",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_blue\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:billy_the_kid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Billy the Kid Damashii",
+			"text": "Accessed with the $(l:ghost/items/billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dark Necrom Blue",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_blue)Proto Mega Ulorder (Dark Necrom Blue)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Strength II"
+		}
+	]
+}

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Dark Necrom Pink's $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Dark Necrom Pink's $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_pink)Dark Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

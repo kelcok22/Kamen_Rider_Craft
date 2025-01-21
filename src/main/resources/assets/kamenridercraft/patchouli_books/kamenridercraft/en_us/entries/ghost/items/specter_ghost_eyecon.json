@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Specter's $(l:ghost/devices/specter_driver)Ghost Driver$(/l)$(br2)Used to access Specter's $(l:ghost/riders/specter#specter)Specter Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Specter's $(l:ghost/devices/specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/specter#specter)Specter Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
