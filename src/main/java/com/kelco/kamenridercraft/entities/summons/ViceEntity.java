@@ -91,80 +91,81 @@ public class ViceEntity extends BaseSummonEntity {
 	public void aiStep() {
 		super.aiStep();
 
-		if (!this.level().isClientSide()) {
-			if ( this.getOwner() instanceof Player owner && owner.getItemBySlot(EquipmentSlot.FEET).getItem()==Revice_Rider_Items.REVICE_DRIVER.get()) {
-				if (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false) != RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)
-				|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.BARID_REX_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get())
-				|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.VOLCANO_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get())) {
-	            	switch (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)) {
-	            	    case "":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.REX_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_eagle":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.EAGLE_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_mammoth":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.MAMMOTH_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_megalodon":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.MEGALODON_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_lion":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.LION_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_jackal":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.JACKAL_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_kong":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KONG_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_kamakiri":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KAMAKIRI_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_brachio":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.BRACHIO_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_neo_batta":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.NEO_BATTA_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_kangaroo":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KANGAROO_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_kirin":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KIRIN_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_niwatori":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.NIWATORI_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_condor":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.CONDOR_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_white_leo":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.WHITE_LEO_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_barid_rex":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_volcano_rex":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_ultimate":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    case "_gold_spino":
-						    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GOLD_SPINO_VISTAMP_VICE.get(), 1);
-	            	        break;
-	            	    default:
-							owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+0.5, this.getZ(), 0.0D, 0.0D, 0.0D);
-							owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+1.0, this.getZ(), 0.0D, 0.0D, 0.0D);
-							owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+1.5, this.getZ(), 0.0D, 0.0D, 0.0D);
-							this.discard();
-	            	        break;
-	            	}
-					if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.JACKAL_VISTAMP_VICE.get()) this.ejectPassengers();
-					this.setItemSlot(EquipmentSlot.OFFHAND, (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get()
-						|| RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get()) ? new ItemStack(Revice_Rider_Items.BARID_SHIELD.get()) : ItemStack.EMPTY);
-				}
+		if ( this.getOwner() instanceof Player owner && owner.getItemBySlot(EquipmentSlot.FEET).getItem()==Revice_Rider_Items.REVICE_DRIVER.get()) {
+			if (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false) != RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)
+			|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.BARID_REX_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get())
+			|| (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.VOLCANO_VISTAMP.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get())) {
+	        	switch (RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), 1).getFormName(false)) {
+	        	    case "":
+						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.REX_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_eagle":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.EAGLE_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_mammoth":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.MAMMOTH_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_megalodon":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.MEGALODON_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_lion":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.LION_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_jackal":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.JACKAL_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_kong":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KONG_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_kamakiri":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KAMAKIRI_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_brachio":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.BRACHIO_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_neo_batta":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.NEO_BATTA_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_kangaroo":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KANGAROO_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_kirin":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.KIRIN_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_niwatori":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.NIWATORI_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_funkorogashi":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.FUNKOROGASHI_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_condor":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.CONDOR_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_white_leo":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.WHITE_LEO_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_barid_rex":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_volcano_rex":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_ultimate":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GIFFARD_REX_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    case "_gold_spino":
+					    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Revice_Rider_Items.GOLD_SPINO_VISTAMP_VICE.get(), 1);
+	        	        break;
+	        	    default:
+						owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+0.5, this.getZ(), 0.0D, 0.0D, 0.0D);
+						owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+1.0, this.getZ(), 0.0D, 0.0D, 0.0D);
+						owner.level().addParticle(new DustParticleOptions(new Vector3f(0.4f, 0.7f, 0.9f), 4f), this.getX(), this.getY()+1.5, this.getZ(), 0.0D, 0.0D, 0.0D);
+						this.discard();
+	        	        break;
+	        	}
+				if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) != Revice_Rider_Items.JACKAL_VISTAMP_VICE.get()) this.ejectPassengers();
+				this.setItemSlot(EquipmentSlot.OFFHAND, (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.BARID_REX_VISTAMP_VICE.get()
+					|| RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.VOLCANO_VISTAMP_VICE.get()) ? new ItemStack(Revice_Rider_Items.BARID_SHIELD.get()) : ItemStack.EMPTY);
 			}
 		}
 	}
