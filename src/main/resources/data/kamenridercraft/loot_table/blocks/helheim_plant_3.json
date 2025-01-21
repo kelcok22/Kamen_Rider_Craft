@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:helheim_plant3"
+          "name": "kamenridercraft:helheim_plant_3"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "kamenridercraft:blocks/helheim_plant3"
+  "random_sequence": "kamenridercraft:blocks/helheim_plant_3"
 }
