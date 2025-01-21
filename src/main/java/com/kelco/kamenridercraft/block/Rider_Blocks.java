@@ -17,7 +17,6 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -320,7 +319,6 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<FlowerPotBlock> POTTED_HELHEIM_PLANT = registerBlock("potted_helheim_plant",
 			() -> new FlowerPotBlock(Rider_Blocks.HELHEIM_PLANT.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
-	
 
 	public static final DeferredBlock<FlowerBlock>HELHEIM_PLANT_2 = registerBlock("helheim_plant_2",
 			() -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
@@ -346,7 +344,6 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
 			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().lightLevel((p_152632_) -> {
 				return 10;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,30, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
-
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
