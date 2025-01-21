@@ -297,10 +297,17 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
 				.addAlternative(NIWATORI_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
+	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP_VICE = ITEMS.register("funkorogashi_vistamp_vice",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","vice","buddy_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.ChangeModel("vice_funkorogashi.geo.json","vice_funkorogashi.animation.json").SetPalyerModelInvisible().SetPalyerModelInvisible());
+
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","revi","revice_driver_belt_fu",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+				.addAlternative(FUNKOROGASHI_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BAT_VISTAMP_EVIL = ITEMS.register("bat_vistamp_evil",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","evil","two_sidriver_belt",
