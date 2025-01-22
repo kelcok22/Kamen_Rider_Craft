@@ -1,0 +1,476 @@
+{
+  "name": "Kamen Rider Drive",
+  "icon": "kamenridercraft:drivedriver",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed",
+      "text": "Accessed with the $(l:drive/items/speedshift)Speed Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "max_flare",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Flare",
+      "text": "Accessed with the $(l:drive/items/maxflare)Max Flare Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "funky_spike",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:funkyspike\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Spike",
+      "text": "Accessed with the $(l:drive/items/funkyspike)Funky Spike Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "midnight_shadow",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:midnightshadow\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Shadow",
+      "text": "Accessed with the $(l:drive/items/midnightshadow)Midnight Shadow Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "justice_hunter",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:justice_hunter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Hunter",
+      "text": "Accessed with the $(l:drive/items/justice_hunter)Justice Hunter Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dream_vegas",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Vegas",
+      "text": "Accessed with the $(l:drive/items/dream_vegas)Dream Vegas Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "spin_mixer",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Mixer",
+      "text": "Accessed with the $(l:drive/items/spin_mixer)Spin Mixer Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "massive_monster",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:massive_monster\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Monster",
+      "text": "Accessed with the $(l:drive/items/massive_monster)Massive Monster Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dimension_cab",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dimension_cab\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Cab",
+      "text": "Accessed with the $(l:drive/items/dimension_cab)Dimension Cab Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "rumble_dump_speed",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Dump",
+      "text": "Accessed with the $(l:drive/items/rumble_dump)Rumble Dump Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mad_doctor_speed",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed Doctor",
+      "text": "Accessed with the $(l:drive/items/mad_doctor)Mad Doctor Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "wild",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Wild",
+      "text": "Accessed with the $(l:drive/items/wildshift)Wild Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "rumble_dump",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Wild Dump",
+      "text": "Accessed with the $(l:drive/items/rumble_dump)Rumble Dump Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "hooking_wrecker",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:hooking_wrecker\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Wild Wrecker",
+      "text": "Accessed with the $(l:drive/items/hooking_wrecker)Hooking Wrecker Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mad_doctor",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Wild Doctor",
+      "text": "Accessed with the $(l:drive/items/mad_doctor)Mad Doctor Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "technic",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Technic",
+      "text": "Accessed with the $(l:drive/items/techniqueshift)Technic Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "fire_braver",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Technic Braver",
+      "text": "Accessed with the $(l:drive/items/fire_braver)Fire Braver Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "rolling_gravity",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Technic Gravity",
+      "text": "Accessed with the $(l:drive/items/rolling_gravity)Rolling Gravity Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "road_winter",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Technic Winter",
+      "text": "Accessed with the $(l:drive/items/road_winter)Road Winter Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dead_heat",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Dead Heat",
+      "text": "Accessed with the $(l:drive/items/deadheatshift)Dead Heat Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "max_flare_dead_heat",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Dead Heat Flare",
+      "text": "Accessed with the $(l:drive/items/maxflare)Max Flare Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "formula",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Formula",
+      "text": "Accessed with the $(l:drive/items/formulashift)Formula Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mantarn_f01",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:mantarn_f01\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Formula Mantarn",
+      "text": "Accessed with the $(l:drive/items/mantarn_f01)Mantarn F01 Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "jacky_f02",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:jacky_f02\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Formula Jacky",
+      "text": "Accessed with the $(l:drive/items/jacky_f02)Jacky F02 Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "sparner_f03",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:sparner_f03\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Formula Sparner",
+      "text": "Accessed with the $(l:drive/items/sparner_f03)Sparner F03 Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "tridoron",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Tridoron",
+      "text": "Accessed with the $(l:drive/items/tridoronshift)Tridoron Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "attack_123",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:attack123_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Tridoron Attack 1.2.3",
+      "text": "Accessed with $(l:drive/items/maxflare)Max Flare$(/l), $(l:drive/items/funkyspike)Funky Spike$(/l), or $(l:drive/items/midnightshadow)Midnight Shadow$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "people_saver",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:people_saver_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Tridoron People Saver",
+      "text": "Accessed with $(l:drive/items/justice_hunter)Justice Hunter$(/l), $(l:drive/items/mad_doctor)Mad Doctor$(/l), or $(l:drive/items/fire_braver)Fire Braver$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "kouji_genbar",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:kouji_genbar_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Tridoron Kouji Genbar",
+      "text": "Accessed with $(l:drive/items/rumble_dump)Rumble Dump$(/l), $(l:drive/items/spin_mixer)Spin Mixer$(/l), or $(l:drive/items/rolling_gravity)Rolling Gravity$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "all_tire",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:tridoron_all_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Tridoron Tire All Kakimazerl",
+      "text": "Accessed with all Tire Koukan Shift Cars in your inventory"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "chou_dead_heat",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoron_key\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Super Dead Heat",
+      "text": "Accessed with the $(l:drive/items/tridoron_key)Tridoron Key$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh_drive)Mach Driver Honoh (Drive)"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dead_heat_mach",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Dead Heat",
+      "text": "Accessed with the $(l:drive/items/deadheatshift)Dead Heat Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh_drive)Mach Driver Honoh (Drive)"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "fruits",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fruitsshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Fruits",
+      "text": "Accessed with the $(l:drive/items/fruitsshift)Fruits Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "high_speed",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type High Speed",
+      "text": "Accessed with the $(l:drive/items/high_speedshift)High Speed Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mega_max_flare",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:mega_maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type High Speed Flare",
+      "text": "Accessed with the $(l:drive/items/mega_maxflare)Mega Max Flare Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dream_vegas_high",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type High Speed Begas",
+      "text": "Accessed with the $(l:drive/items/dream_vegas)Dream Vegas Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "special",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specialshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Special",
+      "text": "Accessed with the $(l:drive/items/specialshift)Special Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "zero_drive",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed",
+      "text": "Accessed with the $(l:drive/items/proto_speedshift)Proto Speed Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Zero Drive",
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed_wild_technic",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedwildtechnicshift\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "name": "Type Speed",
+      "text": "Accessed with the $(l:drive/items/speedwildtechnicshift)Speed Wild Technic Shift Car$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, special)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+    }
+  ]
+}
