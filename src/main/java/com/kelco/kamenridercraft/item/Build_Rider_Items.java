@@ -722,7 +722,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAD_ROGUE_BOTTLES = ITEMS.register("mad_rogue_bottles",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mad_rogue","evol_driver_belt_mad_rogue",
