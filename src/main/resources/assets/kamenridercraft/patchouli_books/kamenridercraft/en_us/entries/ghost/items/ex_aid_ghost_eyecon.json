@@ -1,0 +1,16 @@
+{
+	"name": "Ex-Aid Ghost Eyecon",
+	"icon": "kamenridercraft:ex_aid_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 68,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access $(l:ghost/riders/ghost#ex_aid)Ex-Aid Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ex_aid_ghost_eyecon"
+		}
+	]
+}

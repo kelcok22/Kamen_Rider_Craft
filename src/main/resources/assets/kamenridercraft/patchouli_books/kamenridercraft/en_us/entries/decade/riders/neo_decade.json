@@ -114,7 +114,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "ex-aid",
+			"anchor": "ex_aid",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
 			"name": "Decade Ex-Aid",
 			"text": "Accessed with the $(l:decade/items/ex_aid_card)KamenRide Ex-Aid$(/l) card"

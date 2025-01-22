@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blizzard_ring",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
 		}
 	]
 }

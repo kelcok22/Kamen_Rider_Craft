@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hurricane_ring_dragon",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_green_ring)green Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_green_ring)green Unknown Wizard Rings$(/l)"
 		}
 	]
 }

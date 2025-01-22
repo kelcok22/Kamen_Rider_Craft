@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ex-aid)Ex-Aid$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ex_aid)Ex-Aid$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",

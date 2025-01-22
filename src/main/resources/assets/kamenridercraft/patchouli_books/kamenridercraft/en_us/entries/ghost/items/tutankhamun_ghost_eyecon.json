@@ -1,0 +1,19 @@
+{
+	"name": "Tutankhamun Ghost Eyecon",
+	"icon": "kamenridercraft:tutankhamun_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/specter#tutankhamun)Tutankhamun Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tutankhamun_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

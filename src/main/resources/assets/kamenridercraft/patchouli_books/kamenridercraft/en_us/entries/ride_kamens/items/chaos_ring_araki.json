@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chaos_ring_araki",
 			"title": " ",
-			"text": "Drops from $(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
+			"text": "Drops from:$(li)$(l:ride_kamens/items/gasha_ticket)Gasha Tickets$(/l)"
 		}
 	]
 }

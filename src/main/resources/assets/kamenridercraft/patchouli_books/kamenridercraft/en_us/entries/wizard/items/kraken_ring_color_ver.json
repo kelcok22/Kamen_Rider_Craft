@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kraken_ring_color_ver",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
 		}
 	]
 }

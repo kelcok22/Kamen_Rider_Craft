@@ -1,0 +1,19 @@
+{
+	"name": "Ikkyu Ghost Eyecon",
+	"icon": "kamenridercraft:ikkyu_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/ghost#ikkyu)Ikkyu Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikkyu_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

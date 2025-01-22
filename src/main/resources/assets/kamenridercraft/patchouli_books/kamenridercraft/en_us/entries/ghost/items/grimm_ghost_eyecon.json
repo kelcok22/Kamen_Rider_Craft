@@ -1,0 +1,19 @@
+{
+	"name": "Grimm Ghost Eyecon",
+	"icon": "kamenridercraft:grimm_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/necrom#grimm)Grimm Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:grimm_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Tenkatoitsu Ghost Eyecon",
+	"icon": "kamenridercraft:tenkatoitsu_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access $(l:ghost/riders/ghost#tenkatoitsu)Tenkatoitsu Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tenkatoitsu_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kamehameha Ghost Eyecon",
+	"icon": "kamenridercraft:kamehameha_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#kamehameha)Kamehameha Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamehameha_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

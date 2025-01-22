@@ -1,0 +1,19 @@
+{
+	"name": "Special Ore Ghost Eyecon",
+	"icon": "kamenridercraft:special_ore_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#special_ore)Special Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:special_ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

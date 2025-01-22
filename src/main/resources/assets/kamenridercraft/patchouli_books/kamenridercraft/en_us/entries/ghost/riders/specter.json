@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Specter",
-			"text": "Appears in:$(li)Ghost RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Strength VI"
+			"text": "Appears in: RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -331,14 +331,26 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "special_ore",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_ore_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"name": "Special Ore Damashii",
-			"text": "Accessed with the $(l:ghost/items/special_ore_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/special_specter_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Specter",
 			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ore_specter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ore_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ore Specter Damashii",
+			"text": "Accessed with the $(l:ghost/items/ore_specter_ghost_eyecon)Ore Specter Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -355,14 +367,26 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tenkatoitsu",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"name": "Tenka Toitsu Damashii",
 			"text": "Accessed with the $(l:ghost/items/tenkatoitsu_ghost_eyecon)Tenka Toitsu Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourtyfive_showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ichigo Damashii",
+			"text": "Accessed with the $(l:ghost/items/fourtyfive_showa_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Ichigou Side)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -374,7 +398,199 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Specter",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kuuga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Kuuga Damashii",
+			"text": "Accessed with the $(l:ghost/items/kuuga_ghost_eyecon)Kuuga Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Punch III$(li)Strength VI (with empty hand)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "agito",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:agito_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Agito Damashii",
+			"text": "Accessed with the $(l:ghost/items/agito_ghost_eyecon)Agito Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryuki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Ryuki Damashii",
+			"text": "Accessed with the $(l:ghost/items/ryuki_ghost_eyecon)Ryuki Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:faiz_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Faiz Damashii",
+			"text": "Accessed with the $(l:ghost/items/faiz_ghost_eyecon)Faiz Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:blade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Blade Damashii",
+			"text": "Accessed with the $(l:ghost/items/blade_ghost_eyecon)Blade Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Haste II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:hibiki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Hibiki Damashii",
+			"text": "Accessed with the $(l:ghost/items/hibiki_ghost_eyecon)Hibiki Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kabuto_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Kabuto Damashii",
+			"text": "Accessed with the $(l:ghost/items/kabuto_ghost_eyecon)Kabuto Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed IV$(li)Haste IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:den_o_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Den-O Damashii",
+			"text": "Accessed with the $(l:ghost/items/den_o_ghost_eyecon)Den-O Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kiva_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Kiva Damashii",
+			"text": "Accessed with the $(l:ghost/items/kiva_ghost_eyecon)Kiva Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:decade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Decade Damashii",
+			"text": "Accessed with the $(l:ghost/items/decade_ghost_eyecon)Decade Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:double_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Double Damashii",
+			"text": "Accessed with the $(l:ghost/items/double_ghost_eyecon)Double Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ooo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "OOO Damashii",
+			"text": "Accessed with the $(l:ghost/items/ooo_ghost_eyecon)OOO Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourze_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Fourze Damashii",
+			"text": "Accessed with the $(l:ghost/items/fourze_ghost_eyecon)Fourze Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:wizard_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Wizard Damashii",
+			"text": "Accessed with the $(l:ghost/items/wizard_ghost_eyecon)Wizard Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:gaim_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Gaim Damashii",
+			"text": "Accessed with the $(l:ghost/items/gaim_ghost_eyecon)Gaim Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:drive_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"name": "Drive Damashii",
+			"text": "Accessed with the $(l:ghost/items/drive_ghost_eyecon)Drive Ghost Eyecon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Specter",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/specter_driver)Ghost Driver (Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		}
 	]
 }
