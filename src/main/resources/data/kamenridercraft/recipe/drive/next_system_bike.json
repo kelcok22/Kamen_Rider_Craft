@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "drive_system",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:rider_circuit"
+	},{
+
+		  "item": "kamenridercraft:rider_circuit"
+	  },
+	{
+	  "item": "kamenridercraft:shift_alloy"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:next_system_bike"
+  }
+}
