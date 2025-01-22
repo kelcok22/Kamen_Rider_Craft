@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chimarise_ring",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
 		}
 	]
 }

@@ -1,0 +1,19 @@
+{
+	"name": "Santa Ghost Eyecon",
+	"icon": "kamenridercraft:santa_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#santa)Santa Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:santa_ghost_eyecon",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

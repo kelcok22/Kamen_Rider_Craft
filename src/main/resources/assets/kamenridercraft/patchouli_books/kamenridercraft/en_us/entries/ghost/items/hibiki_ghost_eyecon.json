@@ -1,0 +1,16 @@
+{
+	"name": "Hibiki Ghost Eyecon",
+	"icon": "kamenridercraft:hibiki_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#hibiki)Hibiki Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/hibiki_ghost_eyecon"
+		}
+	]
+}

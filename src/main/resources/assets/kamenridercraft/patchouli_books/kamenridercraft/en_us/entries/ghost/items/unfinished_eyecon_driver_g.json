@@ -1,0 +1,16 @@
+{
+	"name": "Unfinished Eyecon Driver G",
+	"icon": "kamenridercraft:unfinished_eyecon_driver_g",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 78,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/eyecon_driver_g)Eyecon Driver G$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/unfinished_eyecon_driver_g"
+		}
+	]
+}

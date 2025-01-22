@@ -1,0 +1,19 @@
+{
+	"name": "Showa Rider 45 Ghost Eyecon",
+	"icon": "kamenridercraft:showa_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Showa Rider 45 Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#showa)Showa Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:showa_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

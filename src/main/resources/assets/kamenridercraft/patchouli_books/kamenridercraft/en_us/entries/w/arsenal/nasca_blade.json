@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nasca_blade",
 			"title": " ",
-			"text": "Drops from the $(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)"
+			"text": "Drops from:$(li)the $(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)"
 		}
 	]
 }

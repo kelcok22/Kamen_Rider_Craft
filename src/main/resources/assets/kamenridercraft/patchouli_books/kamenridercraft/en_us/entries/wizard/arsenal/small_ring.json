@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:small_ring",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
 		}
 	]
 }

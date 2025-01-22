@@ -1,0 +1,19 @@
+{
+	"name": "Galileo Ghost Eyecon",
+	"icon": "kamenridercraft:galileo_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#galileo)Galileo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:galileo_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

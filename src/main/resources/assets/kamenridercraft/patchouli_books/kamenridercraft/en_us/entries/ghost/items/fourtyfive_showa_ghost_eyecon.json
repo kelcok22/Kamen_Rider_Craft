@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider 45 Ghost Eyecon (Ichigou Side)",
+	"icon": "kamenridercraft:fourtyfive_showa_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 71,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#ichigo)Ichigo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fourtyfive_showa_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

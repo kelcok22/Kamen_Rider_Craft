@@ -1,0 +1,19 @@
+{
+	"name": "Musashi Ghost Eyecon",
+	"icon": "kamenridercraft:musashi_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#musashi)Musashi Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:musashi_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		}
+	]
+}

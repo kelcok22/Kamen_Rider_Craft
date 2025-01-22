@@ -1,0 +1,19 @@
+{
+	"name": "Tousan Ghost Eyecon",
+	"icon": "kamenridercraft:tousan_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 72,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#toucon_boost)Toucon Boost Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tousan_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

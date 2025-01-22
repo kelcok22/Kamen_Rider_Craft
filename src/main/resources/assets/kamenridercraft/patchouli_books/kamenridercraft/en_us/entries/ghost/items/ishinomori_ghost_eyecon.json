@@ -1,0 +1,19 @@
+{
+	"name": "Ishinomori Ghost Eyecon",
+	"icon": "kamenridercraft:ishinomori_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Ishinomori Ghost Eyecon (2016, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ishinomori_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

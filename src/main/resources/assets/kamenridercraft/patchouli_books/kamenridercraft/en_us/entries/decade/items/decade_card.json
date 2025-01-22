@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:decade_card",
 			"title": " ",
-			"text": "Drops from $(l:decade/items/blank_card)Blank Rider Cards$(/l)"
+			"text": "Drops from:$(li)$(l:decade/items/blank_card)Blank Rider Cards$(/l)"
 		}
 	]
 }

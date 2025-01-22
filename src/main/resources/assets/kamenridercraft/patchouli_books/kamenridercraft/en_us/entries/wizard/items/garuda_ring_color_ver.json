@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:garuda_ring_color_ver",
 			"title": " ",
-			"text": "Drops from $(l:wizard/items/unknown_red_ring)red Unknown Wizard Rings$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_red_ring)red Unknown Wizard Rings$(/l)"
 		}
 	]
 }

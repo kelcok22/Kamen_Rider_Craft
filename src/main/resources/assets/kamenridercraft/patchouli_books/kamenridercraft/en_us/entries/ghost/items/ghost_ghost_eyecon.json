@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Ghost Eyecon",
+	"icon": "kamenridercraft:ghost_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 67,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Ghost Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_ghost_eyecon"
+		}
+	]
+}

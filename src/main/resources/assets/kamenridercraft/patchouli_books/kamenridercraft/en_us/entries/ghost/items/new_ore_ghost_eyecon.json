@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:new_ore_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from $(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
 		}
 	]
 }
