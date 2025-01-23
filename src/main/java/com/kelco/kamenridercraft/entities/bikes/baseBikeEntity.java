@@ -6,6 +6,9 @@ import javax.annotation.Nullable;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
@@ -21,8 +24,10 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.entity.vehicle.VehicleEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -33,14 +38,15 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 public class baseBikeEntity extends Mob implements GeoEntity {
 
 
-
-	
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String NAME ="skullboilder";
 	public String NAME_MODEL ="hardboilder";
 	
 	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
 		super(entityType, level);
+	}
+	boolean shouldSourceDestroy(DamageSource source) {
+		return false;
 	}
 
 
@@ -69,6 +75,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public static boolean canVehicleCollide(Entity vehicle, Entity entity) {
 		return (entity.canBeCollidedWith() || entity.isPushable()) && !vehicle.isPassengerOfSameVehicle(entity);
 	}
+
 
 	public boolean canBeCollidedWith() {
 		return true;
@@ -135,11 +142,14 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 		return getFirstPassenger() instanceof LivingEntity entity ? entity : null;
 	}
 
+	protected Entity.MovementEmission getMovementEmission() {
+		return MovementEmission.EVENTS;
+	}
+
 	@Override
 	public boolean isControlledByLocalInstance() {
 		return true;
 	}
-
 
 	
 	   
@@ -176,7 +186,6 @@ protected SoundEvent getDeathSound() {
 		public boolean shouldDropExperience() {
 			return false;
 		}
-
 
 
 	// Add our idle/moving animation controller
