@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Poppy",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii_poppy",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "toki_meki_crisis",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Toki Meki Crisis Gamer Level X",
+			"text": "Accessed with the $(l:ex_aid/items/toki_meki_crisis_gashat)Toki Meki Crisis Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Poppy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "toki_meki_crisis_red",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat_red_eyes\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Toki Meki Crisis Gamer Level X",
+			"text": "Accessed with the $(l:ex_aid/items/toki_meki_crisis_gashat)Toki Meki Crisis Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Poppy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Jump Boost III$(li)Strength IV"
+		}
+	]
+}

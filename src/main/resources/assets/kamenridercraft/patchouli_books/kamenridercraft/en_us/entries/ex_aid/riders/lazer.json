@@ -1,0 +1,140 @@
+{
+	"name": "Kamen Rider Lazer",
+	"icon": "kamenridercraft:gamer_driver_lazer",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "bike_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Bike Gamer Level 1",
+			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bike_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Bike Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chambara",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_under\",slot_tex2:\"kamenridercraft:giri_giri_chambara_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Chambara Bike Gamer Level 3",
+			"text": "Accessed with the $(l:ex_aid/items/giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_under\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_claw\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Bike Gamer Level 5",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bike_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Bike Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat_turbo)Bakusou Bike Gashat (Lazer Turbo)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer Turbo",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sports_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\",slot_tex2:\"kamenridercraft:proto_shakariki_sports_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Sports Bike Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer Turbo",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Bugster Virus$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "combat_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Combat Bike Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer Turbo",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Bugster Virus$(li)Jump Boost III$(li)Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lazer_x",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_lazer\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Level X",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer X",
+			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_lazer)Gashacon Bugvisor II (Lazer)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_chambara",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_under\",slot_tex2:\"kamenridercraft:proto_giri_giri_chambara_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Chambara Bike Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Bugster Virus II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_under\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_claw\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Hunter Bike Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Bugster Virus II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_bike_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bakusou_bike_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Bike Gamer Level 1 (Proto)",
+			"text": "Accessed with the $(l:ex_aid/items/proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Lazer",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Bugster Virus$(li)Jump Boost IV"
+		}
+	]
+}

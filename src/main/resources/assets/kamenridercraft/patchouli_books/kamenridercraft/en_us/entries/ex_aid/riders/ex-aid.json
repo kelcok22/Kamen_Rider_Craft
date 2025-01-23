@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "robot_3",
+			"anchor": "robot",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Robot Action Gamer Level 3",
 			"text": "Accessed with the $(l:ex_aid/items/gekitotsu_robots_gashat)Gekitotsu Robots Gashat$(/l)"
@@ -42,7 +42,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "sports_3",
+			"anchor": "sports",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:shakariki_sports_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Sports Action Gamer Level 3",
 			"text": "Accessed with the $(l:ex_aid/items/shakariki_sports_gashat)Shakariki Sports Gashat$(/l)"
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "burger_4",
+			"anchor": "burger",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:ju_ju_burger_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Burger Action Gamer Level 4",
 			"text": "Accessed with the $(l:ex_aid/items/ju_ju_burger_gashat)Ju Ju Burger Gashat$(/l)"
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_5_full",
+			"anchor": "hunter_full",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Hunter Action Gamer Level 5 (Full Dragon)",
 			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
@@ -78,7 +78,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_5",
+			"anchor": "hunter",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_fang\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Hunter Action Gamer Level 5",
 			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
@@ -126,7 +126,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "maximum_99",
+			"anchor": "maximum",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Maximum Gamer Level 99",
 			"text": "Accessed with the $(l:ex_aid/items/maximum_mighty_x_gashat)Maximum Mighty X Gashat$(/l)"
@@ -138,7 +138,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "maximum_99_unequipped",
+			"anchor": "maximum_unequipped",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat_lv_2\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Maximum Gamer Level 99 (Unequipped)",
 			"text": "Accessed with the $(l:ex_aid/items/maximum_mighty_x_gashat)Maximum Mighty X Gashat$(/l)"
@@ -153,7 +153,7 @@
 			"anchor": "muteki",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_muteki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Muteki Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l) as $(l:ex_aid/riders/ex-aid#maximum_99)Maximum Gamer Level 99$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l) as $(l:ex_aid/riders/ex-aid#maximum)Maximum Gamer Level 99$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -198,7 +198,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "double_fighter_39",
+			"anchor": "double_fighter",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:knock_out_fighter_2_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Double Fighter Gamer Level 39",
 			"text": "Accessed with the $(l:ex_aid/items/knock_out_fighter_2_gashat)Knock Out Fighter 2 Gashat$(/l)"
@@ -210,7 +210,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "novel_x",
+			"anchor": "novel",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_novel_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Novel Gamer Level X",
 			"text": "Accessed with the $(l:ex_aid/items/mighty_novel_x_gashat)Mighty Novel X Gashat$(/l)"
@@ -222,7 +222,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "proto_robot_0",
+			"anchor": "proto_robot",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Proto Robot Action Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l)"
@@ -234,7 +234,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "proto_hunter_0",
+			"anchor": "proto_hunter",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Proto Hunter Action Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
@@ -246,7 +246,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "ichigo_2",
+			"anchor": "ichigo",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:lets_go_ichigou_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Ichigo Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/lets_go_ichigou_gashat)Let's Go Ichigou Gashat$(/l)"
@@ -258,7 +258,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "kuuga_2",
+			"anchor": "kuuga",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:adventure_guy_kuuga_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Kuuga Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/adventure_guy_kuuga_gashat)Adventure Guy Kuuga Gashat$(/l)"
@@ -270,7 +270,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "ryuki_2",
+			"anchor": "ryuki",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mirror_labryinth_ryuki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Ryuki Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/mirror_labryinth_ryuki_gashat)Mirror Labyrinth Ryuki Gashat$(/l)"
@@ -282,7 +282,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "kabuto_2",
+			"anchor": "kabuto",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:insect_wars_kabuto_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Kabuto Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/insect_wars_kabuto_gashat)Insect Wars Kabuto Gashat$(/l)"
@@ -294,7 +294,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "kiva_2",
+			"anchor": "kiva",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:dokidoki_makai_castle_kiva_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Kiva Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/dokidoki_makai_castle_kiva_gashat)Doki Doki Makai Castle Kiva Gashat$(/l)"
@@ -306,7 +306,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "decade_2",
+			"anchor": "decade",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:barcode_warrior_decade_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Decade Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l)"
@@ -318,7 +318,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "double_2",
+			"anchor": "double",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:detective_double_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Double Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/detective_double_gashat)Detective Double Gashat$(/l)"
@@ -330,7 +330,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "gaim_2",
+			"anchor": "gaim",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:toukenden_gaim_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Gaim Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/toukenden_gaim_gashat)Toukenden Gaim Gashat$(/l)"
@@ -342,7 +342,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "drive_2",
+			"anchor": "drive",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:full_throttle_drive_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Drive Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/full_throttle_drive_gashat)Full Throttle Drive Gashat$(/l)"

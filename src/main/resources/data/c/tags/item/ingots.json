@@ -1,5 +1,7 @@
 {
   "values": [
-	"kamenridercraft:cell_alloy_ingot"
+	"kamenridercraft:cell_alloy_ingot",
+	"kamenridercraft:shift_alloy",
+	"kamenridercraft:hiden_metal"
   ]
 }

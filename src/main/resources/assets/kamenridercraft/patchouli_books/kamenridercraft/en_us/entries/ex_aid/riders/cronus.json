@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Cronus",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii_chronos",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "chronicle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Chronicle Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Cronus",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gamedeus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronos\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat_gamedeus\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Gamedeus Cronus",
+			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat_gamedeus)Kamen Rider Chronicle Gashat (Gamedeus)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Cronus",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chronicle_gamer_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamen_rider_chronicle_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Chronicle Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Cronus",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_gamedeus_muteki)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+		}
+	]
+}

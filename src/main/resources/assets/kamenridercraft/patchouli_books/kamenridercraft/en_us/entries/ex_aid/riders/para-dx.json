@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Para-DX",
+	"icon": "kamenridercraft:gamer_driver_paradx",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "puzzle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:paradoxbelt\",components:{custom_data:{slot_tex1:\"kamenridercraft:perfect_puzzle_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Puzzle Gamer Level 50",
+			"text": "Accessed with the $(l:ex_aid/items/perfect_puzzle_gashat)Perfect Puzzle Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Para-DX",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Night Vision$(li)Haste III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fighter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:paradoxbelt\",components:{custom_data:{slot_tex1:\"kamenridercraft:knock_out_fighter_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Fighter Gamer Level 50",
+			"text": "Accessed with the $(l:ex_aid/items/knock_out_fighter_gashat)Knock Out Fighter Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Para-DX",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Night Vision$(li)Haste$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "perfect_knock_out",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_paradx\",components:{custom_data:{slot_tex1:\"kamenridercraft:gashat_gear_dual\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Perfect Knock Out Gamer Level 99",
+			"text": "Accessed with the $(l:ex_aid/items/perfect_puzzle_gashat)Perfect Puzzle$(/l) or $(l:ex_aid/items/knock_out_fighter_gashat)Knock Out Fighter Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Para-DX",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_paradx)Gamer Driver (Para-DX)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_fighter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_paradx\",components:{custom_data:{slot_tex1:\"kamenridercraft:knock_out_fighter_2_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Fighter Gamer Level 39",
+			"text": "Accessed with the $(l:ex_aid/items/knock_out_fighter_2_gashat)Knock Out Fighter 2 Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Para-DX",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_paradx)Gamer Driver (Para-DX)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Haste$(li)Strength IV"
+		}
+	]
+}

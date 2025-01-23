@@ -1,0 +1,176 @@
+{
+	"name": "Kamen Rider Brave",
+	"icon": "kamenridercraft:gamer_driver_brave",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "quest_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Quest Gamer Level 1",
+			"text": "Accessed with the $(l:ex_aid/items/taddle_quest_gashat)Taddle Quest Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "quest_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Quest Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/taddle_quest_gashat)Taddle Quest Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:doremifa_beat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Beat Quest Gamer Level 3",
+			"text": "Accessed with the $(l:ex_aid/items/doremifa_beat_gashat)DoReMiFa Beat Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter_full",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Quest Gamer Level 5 (Full Dragon)",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_blade\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Quest Gamer Level 5",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Slash III$(li)Strength III (with sword)$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fantasy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:taddle_fantasy_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Fantasy Gamer Level 50",
+			"text": "Accessed with the $(l:ex_aid/items/taddle_fantasy_gashat)Taddle Fantasy Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed II$(li)Resistance III$(li)Haste III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legacy",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:taddle_legacy_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Legacy Gamer Level 100",
+			"text": "Accessed with the $(l:ex_aid/items/taddle_legacy_gashat)Taddle Legacy Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed III$(li)Resistance IV$(li)Haste III$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "famista",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:famitsa_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Famista Quest Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/famitsa_gashat)Famista Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "safari",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:night_of_safari_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Safari Quest Gamer Level 4",
+			"text": "Accessed with the $(l:ex_aid/items/night_of_safari_gashat)Night of Safari Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Brave: ~Let's Survive! Revival of the Beast Rider Squad!~ (2017, TTFC special)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed II$(li)Haste III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "galaxian",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:galaxian_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Galaxian Quest Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/galaxian_gashat)Galaxian Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_beat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:proto_doremifa_beat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Beat Quest Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed$(li)Haste III$(li)Bugster Virus II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:taddle_quest_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_blade\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Hunter Quest Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed III$(li)Bugster Virus III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_quest_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_taddle_quest_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Quest Gamer Level 1 (Proto)",
+			"text": "Accessed with the $(l:ex_aid/items/proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Bugster Virus$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_quest_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_brave\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_taddle_quest_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Quest Gamer Level 2 (Proto)",
+			"text": "Accessed with the $(l:ex_aid/items/proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Brave",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Status Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Speed$(li)Bugster Virus"
+		}
+	]
+}
