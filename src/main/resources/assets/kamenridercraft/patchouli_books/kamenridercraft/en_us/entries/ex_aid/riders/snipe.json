@@ -1,0 +1,152 @@
+{
+	"name": "Kamen Rider Snipe",
+	"icon": "kamenridercraft:gamer_driver_snipe",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Shooting Gamer Level 1",
+			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Shooting Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "combat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Combat Shooting Gamer Level 3",
+			"text": "Accessed with the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed$(li)Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter_full",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Shooting Gamer Level 5 (Full Dragon)",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Shooting Gamer Level 5",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "simulation",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Simulation Gamer Level 50",
+			"text": "Accessed with the $(l:ex_aid/items/bang_bang_simulation_gashat)Bang Bang Simulations Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "xevious",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:xevious_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Xevious Shooting Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/xevious_gashat)Xevious Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tank",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_tank_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Tank Shooting Gamer Level 4",
+			"text": "Accessed with the $(l:ex_aid/items/bang_bang_tank_gashat)Bang Bang Tank Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)DX Mighty Novel X Gashat & Bang Bang Tank Gashat (2022, toyline)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_combat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Combat Shooting Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed$(li)Boost II$(li)Bugster Virus II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Hunter Shooting Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed III$(li)Bugster Virus III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_shooting_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Shooting Gamer Level 1 (Proto)",
+			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Snipe: Episode ZERO (2017, miniseries)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Bugster Virus$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_shooting_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Shooting Gamer Level 2 (Proto)",
+			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Snipe",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Speed$(li)Bugster Virus"
+		}
+	]
+}

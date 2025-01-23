@@ -1,0 +1,19 @@
+{
+	"name": "Gamedeus Muteki",
+	"icon": "kamenridercraft:gamer_driver_gamedeus_muteki",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_gamedeus_muteki\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gamedeus Muteki",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_gamedeus_muteki)Gamer Driver (Gamedeus Muteki)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance VII$(li)Night Vision$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V$(li)Save"
+		}
+	]
+}

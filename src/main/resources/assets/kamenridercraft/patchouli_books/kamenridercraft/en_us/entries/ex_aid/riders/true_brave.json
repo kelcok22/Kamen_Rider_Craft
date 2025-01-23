@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider True Brave",
+	"icon": "kamenridercraft:gamer_driver_truebrave",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_truebrave\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Legacy Gamer Level 50",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider True Brave",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_truebrave)Gamer Driver (True Brave)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Haste III$(li)Strength VI"
+		}
+	]
+}
