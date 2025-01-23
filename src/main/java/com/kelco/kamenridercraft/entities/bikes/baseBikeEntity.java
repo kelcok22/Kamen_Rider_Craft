@@ -44,6 +44,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	
 	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
 		super(entityType, level);
+		this.setPersistenceRequired();
 	}
 	boolean shouldSourceDestroy(DamageSource source) {
 		return false;

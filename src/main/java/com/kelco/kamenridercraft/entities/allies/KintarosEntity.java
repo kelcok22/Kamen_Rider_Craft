@@ -63,6 +63,7 @@ public class KintarosEntity extends BaseAllyEntity {
 	public KintarosEntity(EntityType<? extends KintarosEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME = "kintaros";
+		this.setPersistenceRequired();
 		
 		}
 

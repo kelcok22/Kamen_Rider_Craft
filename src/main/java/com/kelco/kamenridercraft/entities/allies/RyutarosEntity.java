@@ -84,6 +84,7 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
 	public RyutarosEntity(EntityType<? extends RyutarosEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME = "ryutaros";
+		this.setPersistenceRequired();
         this.reassessWeaponGoal();
         
 		}
