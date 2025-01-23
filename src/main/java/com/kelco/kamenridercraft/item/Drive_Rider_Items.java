@@ -454,13 +454,13 @@ public class Drive_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> VIRAL_CORE_NEO_COBARA = ITEMS.register("viral_core_neo_cobara",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> VIRAL_CORE_NEO_SPIDER = ITEMS.register("viral_core_neo_spider",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> VIRAL_CORE_NEO_BAT = ITEMS.register("viral_core_neo_bat",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_VIRAL_CORE = ITEMS.register("shift_viral_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_deadheat","mach","mach_driver_honoh_belt",
