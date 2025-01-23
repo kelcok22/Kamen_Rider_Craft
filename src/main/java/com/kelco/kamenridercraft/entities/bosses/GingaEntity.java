@@ -49,6 +49,7 @@ public class GingaEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.GINGADRIVER.get()));
+		this.setPersistenceRequired();
 
     }
 

@@ -58,6 +58,7 @@ public class MomotarosEntity extends BaseAllyEntity {
 	public MomotarosEntity(EntityType<? extends MomotarosEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME = "momotaros";
+		this.setPersistenceRequired();
 		
 		}
 

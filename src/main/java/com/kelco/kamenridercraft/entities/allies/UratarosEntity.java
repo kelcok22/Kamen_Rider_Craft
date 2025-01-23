@@ -58,6 +58,7 @@ public class UratarosEntity extends BaseAllyEntity {
 	public UratarosEntity(EntityType<? extends UratarosEntity> entityType, Level level) {
 		super(entityType, level);
 		NAME = "urataros";
+		this.setPersistenceRequired();
 		
 		}
 
