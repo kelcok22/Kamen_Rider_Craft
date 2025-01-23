@@ -37,7 +37,7 @@
   			  "kamenridercraft:desire_driver_buffa"
   			],
   		  "predicates": {
-                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:jyamashin_wish_card\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:zombie_raise_buckle\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:jyamashin_wish_card\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:zombie_raise_buckle\"}"
               }
   		  }
   		}
