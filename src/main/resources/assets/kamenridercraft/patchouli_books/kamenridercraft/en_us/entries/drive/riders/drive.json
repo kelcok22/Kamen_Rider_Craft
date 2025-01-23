@@ -379,7 +379,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "dead_heat_mach",
-      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_drive_mach\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Dead Heat",
       "text": "Accessed with the $(l:drive/items/deadheatshift)Dead Heat Shift Car$(/l)"
     },
