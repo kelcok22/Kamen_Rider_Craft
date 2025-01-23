@@ -713,14 +713,14 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> FULL_THROTTLE_DRIVE_GASHAT = ITEMS.register("full_throttle_drive_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drive","ex_aid","gamer_driver_full_throttle_drive",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOUKENDEN_GAIM_GASHAT = ITEMS.register("toukenden_gaim_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gaim","ex_aid","gamer_driver_toukenden_gaim",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT_LV_1 = ITEMS.register("magic_the_wizard_gashat_lv_1",
@@ -729,92 +729,100 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT = ITEMS.register("magic_the_wizard_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wizard","genm","gamer_driver_magic_the_wizard",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addSwitchForm(MAGIC_THE_WIZARD_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).addSwitchForm(MAGIC_THE_WIZARD_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPACE_GALAXY_FOUZE_GASHAT = ITEMS.register("space_galaxy_fourze_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fourze","genm","gamer_driver_space_galaxy_fourze",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUNGLE_OOO_GASHAT = ITEMS.register("jungle_ooo_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ooo","genm","gamer_driver_jungle_ooo",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> DETECTICE_DOUBLE_GASHAT = ITEMS.register("detective_double_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_w","ex_aid","gamer_driver_detective_double",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+			new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+			new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+			new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+			new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> BERCODE_WARRIOR_DECADE_GASHAT = ITEMS.register("barcode_warrior_decade_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade","ex_aid","gamer_driver_barcode_warrior_decade",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddCompatibilityList(new String[] {"genm"})
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddCompatibilityList(new String[] {"genm"})
 			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOKIDOKI_MAKAI_CASTLE_KIVA_GASHAT = ITEMS.register("dokidoki_makai_castle_kiva_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kiva","ex_aid","gamer_driver_dokidoki_makai_castle_kiva",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIME_EXPRESS_DEN_O_GASHAT = ITEMS.register("time_express_den_o_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_den_o","genm","gamer_driver_mighty_novel_x",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> INSECT_WARS_KABUTO_GASHAT = ITEMS.register("insect_wars_kabuto_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kabuto","ex_aid","gamer_driver_full_throttle_drive",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIKO_MASTER_HIBIKI_GASHAT = ITEMS.register("taiko_master_hibiki_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hibiki","genm","gamer_driver_proto_mighty_action_x",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_OF_POKER_BLADE_GASHAT = ITEMS.register("king_of_poker_blade_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blade","genm","gamer_driver_king_of_poker_blade",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> MOSHI_MOSHI_FAIZ_GASHAT = ITEMS.register("moshi_moshi_faiz_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_faiz","genm","gamer_driver_moshi_moshi_faiz",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIRROR_LABRYINTH_RYUKI_GASHAT = ITEMS.register("mirror_labryinth_ryuki_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ryuki","ex_aid","gamer_driver_mirror_labyrinth_ryuki",
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_OF_THE_SUN_GASHAT = ITEMS.register("agito_of_the_sun_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_agito","genm","gamer_driver_agito_of_the_sun",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> ADVENTURE_GUY_KUUGA_GASHAT = ITEMS.register("adventure_guy_kuuga_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kuuga","ex_aid","gamer_driver_adventure_guy_kuuga",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> LETS_GO_ICHIGOU_GASHAT = ITEMS.register("lets_go_ichigou_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ichigou","ex_aid","gamer_driver_lets_go_ichigou",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
 			.AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 

@@ -1,0 +1,380 @@
+{
+	"name": "Kamen Rider Ex-Aid",
+	"icon": "kamenridercraft:gamer_driver_ex_aid",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "action_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Action Gamer Level 1",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_action_x_gashat)Mighty Action X Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "action_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Action Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_action_x_gashat)Mighty Action X Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "robot_3",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Robot Action Gamer Level 3",
+			"text": "Accessed with the $(l:ex_aid/items/gekitotsu_robots_gashat)Gekitotsu Robots Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sports_3",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:shakariki_sports_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Sports Action Gamer Level 3",
+			"text": "Accessed with the $(l:ex_aid/items/shakariki_sports_gashat)Shakariki Sports Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burger_4",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:ju_ju_burger_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Burger Action Gamer Level 4",
+			"text": "Accessed with the $(l:ex_aid/items/ju_ju_burger_gashat)Ju Ju Burger Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed V$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_5_full",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Action Gamer Level 5 (Full Dragon)",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_5",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_fang\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Hunter Action Gamer Level 5",
+			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_x",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Action Gamer Level X",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_brothers_xx_gashat)Mighty Brothers XX Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_xx_l",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat_l\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Action Gamer Level XX",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_brothers_xx_gashat)Mighty Brothers XX Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste II$(li)Strength III$(br2)Spawns a $(l:ex_aid/mobs/paradx_summon)Para-DX Summon$(/l) when used"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_xx_r",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat_r\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Action Gamer Level XX",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_brothers_xx_gashat)Mighty Brothers XX Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste II$(li)Strength III$(br2)Spawns a $(l:ex_aid/mobs/paradx_summon)Para-DX Summon$(/l) when used"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maximum_99",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Maximum Gamer Level 99",
+			"text": "Accessed with the $(l:ex_aid/items/maximum_mighty_x_gashat)Maximum Mighty X Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Slowness II$(li)Resistance IV$(li)Night Vision$(li)Haste II$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maximum_99_unequipped",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat_lv_2\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Maximum Gamer Level 99 (Unequipped)",
+			"text": "Accessed with the $(l:ex_aid/items/maximum_mighty_x_gashat)Maximum Mighty X Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "muteki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_muteki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Muteki Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l) as $(l:ex_aid/riders/ex-aid#maximum_99)Maximum Gamer Level 99$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance VII$(li)Night Vision$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V$(li)Save"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pac",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:pac_adventure_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Pac Action Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/pac_adventure_gashat)Pac Adventure Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bike_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Bike Action Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_bakusou_bike_combi_fukkatsu_gashat)Proto Bakusou Bike (Combi Fukkatsu) Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Lazer (2016, Hyper Battle Video)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Bugster Virus II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "creator",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_creator_vrx_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Creator Gamer",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_creator_vrx_gashat)Mighty Creator VRX Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Night Vision III$(li)Haste V$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_fighter_39",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:knock_out_fighter_2_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Fighter Gamer Level 39",
+			"text": "Accessed with the $(l:ex_aid/items/knock_out_fighter_2_gashat)Knock Out Fighter 2 Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid$(/l) and $(l:ex_aid/riders/para-dx)Para-DX$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Night Vision III$(li)Haste V$(li)Strength III$(br2)Spawns a $(l:ex_aid/mobs/paradx_summon)Para-DX Summon$(/l) when used"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "novel_x",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_novel_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Novel Gamer Level X",
+			"text": "Accessed with the $(l:ex_aid/items/mighty_novel_x_gashat)Mighty Novel X Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Novel: Kamen Rider Ex-Aid: ~Mighty Novel X~ (2018, novel)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Night Vision III$(li)Haste V$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_robot_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Robot Action Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter_0",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Proto Hunter Action Gamer Level 0",
+			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) $(l:ex_aid/riders/lazer)Lazer,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:lets_go_ichigou_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Ichigo Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/lets_go_ichigou_gashat)Let's Go Ichigou Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:adventure_guy_kuuga_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Kuuga Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/adventure_guy_kuuga_gashat)Adventure Guy Kuuga Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mirror_labryinth_ryuki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Ryuki Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/mirror_labryinth_ryuki_gashat)Mirror Labyrinth Ryuki Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:insect_wars_kabuto_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Kabuto Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/insect_wars_kabuto_gashat)Insect Wars Kabuto Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:dokidoki_makai_castle_kiva_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Kiva Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/dokidoki_makai_castle_kiva_gashat)Doki Doki Makai Castle Kiva Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:barcode_warrior_decade_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Decade Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:detective_double_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Double Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/detective_double_gashat)Detective Double Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:toukenden_gaim_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Gaim Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/toukenden_gaim_gashat)Toukenden Gaim Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:full_throttle_drive_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Drive Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/full_throttle_drive_gashat)Full Throttle Drive Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_1",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaigan_ghost_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Ghost Gamer Level 1",
+			"text": "Accessed with the $(l:ex_aid/items/kaigan_ghost_gashat)Kaigan Ghost Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Ghost$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_2",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaigan_ghost_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"name": "Ghost Gamer Level 2",
+			"text": "Accessed with the $(l:ex_aid/items/kaigan_ghost_gashat)Kaigan Ghost Gashat$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ex-Aid",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
+		}
+	]
+}
