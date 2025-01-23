@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-22T21:57:41.3612786	Item Models: kamenridercraft
+// 1.21.1	2025-01-23T00:07:40.3041412	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
 597b835e5301cc9880ab4fe6fa14382e5d95267f assets/kamenridercraft/models/item/burning_solar.json
@@ -39,4 +39,7 @@ abcf1ca9bffbdda5d7d44e2b9537414827175300 assets/kamenridercraft/models/item/vira
 bb127edca05f4e89b84e9e5219275a9a0f99ba36 assets/kamenridercraft/models/item/viral_core_chaser_cobara.json
 d6fe3bd7fce24c74a1eb963a364634c055d2220f assets/kamenridercraft/models/item/viral_core_chaser_spider.json
 52193efd5b60cc59e084b49ed40feb1d7d86f9dd assets/kamenridercraft/models/item/viral_core_cobara.json
+a21efa2aac8261aecd4150cb3befa96f022e939e assets/kamenridercraft/models/item/viral_core_neo_bat.json
+b143b4600fb84607bff98f9aa6dafb11f1eed4d6 assets/kamenridercraft/models/item/viral_core_neo_cobara.json
+a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/viral_core_neo_spider.json
 34adffabf84514bc51f5e6f1380e79cdebae1f3e assets/kamenridercraft/models/item/viral_core_spider.json
