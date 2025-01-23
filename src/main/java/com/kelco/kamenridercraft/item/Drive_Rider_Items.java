@@ -54,7 +54,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
 					.alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("techniqueshift",
+	public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("technicshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_technic","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
