@@ -187,9 +187,9 @@
     {
       "type": "patchouli:entity",
       "anchor": "technic",
-      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Technic",
-      "text": "Accessed with the $(l:drive/items/techniqueshift)Technic Shift Car$(/l)"
+      "text": "Accessed with the $(l:drive/items/technicshift)Technic Shift Car$(/l)"
     },
     {
       "type": "patchouli:text",
@@ -199,7 +199,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "fire_braver",
-      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Technic Braver",
       "text": "Accessed with the $(l:drive/items/fire_braver)Fire Braver Shift Car$(/l)"
     },
@@ -211,7 +211,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "rolling_gravity",
-      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Technic Gravity",
       "text": "Accessed with the $(l:drive/items/rolling_gravity)Rolling Gravity Shift Car$(/l)"
     },
@@ -223,7 +223,7 @@
     {
       "type": "patchouli:entity",
       "anchor": "road_winter",
-      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:techniqueshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Technic Winter",
       "text": "Accessed with the $(l:drive/items/road_winter)Road Winter Shift Car$(/l)"
     },
