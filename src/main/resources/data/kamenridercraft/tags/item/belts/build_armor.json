@@ -2,6 +2,20 @@
   "values": [
 	"kamenridercraft:build_driver",
 	"kamenridercraft:build_driver_cross_z",
-	"kamenridercraft:transteam_gun_night_rogue"
+	"kamenridercraft:build_driver_blood",
+	"kamenridercraft:sclash_driver_grease",
+	"kamenridercraft:sclash_driver_rogue",
+	"kamenridercraft:sclash_driver",
+	"kamenridercraft:transteam_gun_night_rogue",
+	"kamenridercraft:transteam_gun_blood_stalk",
+	"kamenridercraft:nebula_steam_gun_kaiser",
+	"kamenridercraft:nebula_steam_gun_hell_bros",
+	"kamenridercraft:build_driver_grease",
+	"kamenridercraft:build_driver_rogue",
+	"kamenridercraft:build_driver_killbus",
+	"kamenridercraft:build_driver_metal",
+	"kamenridercraft:build_driver_phantom",
+	"kamenridercraft:evol_driver",
+	"kamenridercraft:evol_driver_mad_rogue"
   ]
 }
