@@ -1,0 +1,19 @@
+{
+	"name": "Moshi Moshi Faiz Gashat",
+	"icon": "kamenridercraft:moshi_moshi_faiz_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 79,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#faiz)Faiz Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:moshi_moshi_faiz_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

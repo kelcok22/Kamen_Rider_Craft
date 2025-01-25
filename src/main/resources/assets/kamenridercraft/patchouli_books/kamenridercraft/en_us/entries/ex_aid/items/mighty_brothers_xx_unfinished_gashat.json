@@ -1,0 +1,19 @@
+{
+	"name": "Unfinished XX Gashat",
+	"icon": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Mighty Novel X Gashat",
+	"icon": "kamenridercraft:mighty_novel_x_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Novel: Kamen Rider Ex-Aid: ~Mighty Novel X~ (2018, novel)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#novel)Novel Gamer Level X$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_novel_x_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}

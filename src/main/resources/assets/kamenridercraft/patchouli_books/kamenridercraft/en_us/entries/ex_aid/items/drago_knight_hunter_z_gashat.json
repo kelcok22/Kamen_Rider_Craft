@@ -1,0 +1,19 @@
+{
+	"name": "Drago Knight Hunter Z Gashat",
+	"icon": "kamenridercraft:drago_knight_hunter_z_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex-aid#hunter_full)Hunter Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drago_knight_hunter_z_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		}
+	]
+}

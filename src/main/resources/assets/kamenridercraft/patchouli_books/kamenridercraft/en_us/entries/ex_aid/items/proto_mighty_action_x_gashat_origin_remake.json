@@ -1,0 +1,19 @@
+{
+	"name": "Proto Mighty Action X Gashat Noir",
+	"icon": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+		}
+	]
+}

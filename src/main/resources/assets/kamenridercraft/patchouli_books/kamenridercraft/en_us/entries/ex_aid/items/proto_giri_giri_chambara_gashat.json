@@ -1,0 +1,19 @@
+{
+	"name": "Proto Giri Giri Chambara Gashat",
+	"icon": "kamenridercraft:proto_giri_giri_chambara_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#proto_chambara)Proto Chambara Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_giri_giri_chambara_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		}
+	]
+}

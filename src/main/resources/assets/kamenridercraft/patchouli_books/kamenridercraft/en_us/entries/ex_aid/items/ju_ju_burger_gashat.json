@@ -1,0 +1,19 @@
+{
+	"name": "Ju Ju Burger Gashat",
+	"icon": "kamenridercraft:ju_ju_burger_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex-aid#burger)Burger Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ju_ju_burger_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}

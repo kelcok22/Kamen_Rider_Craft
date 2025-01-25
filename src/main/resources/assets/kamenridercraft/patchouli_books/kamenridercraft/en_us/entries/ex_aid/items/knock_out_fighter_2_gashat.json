@@ -1,0 +1,19 @@
+{
+	"name": "Knock Out Fighter 2 Gashat",
+	"icon": "kamenridercraft:knock_out_fighter_2_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#double_fighter)Double Fighter Gamer Level 39$(/l)$(br)Used to access Para-DX's $(l:ex_aid/riders/para-dx#double_fighter)Double Fighter Gamer Level 39$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knock_out_fighter_2_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}

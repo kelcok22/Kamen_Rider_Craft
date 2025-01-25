@@ -1,0 +1,19 @@
+{
+	"name": "Maximum Zombie Gashat",
+	"icon": "kamenridercraft:maximum_zombie_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 59,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#fumetsu)Hyper Fumetsu Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maximum_zombie_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
