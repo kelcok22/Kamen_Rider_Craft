@@ -1,0 +1,19 @@
+{
+	"name": "Drago Knight Hunter Z Gasha Trophy",
+	"icon": "kamenridercraft:drago_knight_hunter_z_gasha_trophy",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 94,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drago_knight_hunter_z_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		}
+	]
+}

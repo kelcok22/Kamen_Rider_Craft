@@ -1,0 +1,19 @@
+{
+	"name": "Proto Gekitotsu Robots Gashat",
+	"icon": "kamenridercraft:proto_gekitotsu_robots_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex-aid#proto_robot)Proto Robot Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_gekitotsu_robots_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Giri Giri Chambara Gasha Trophy",
+	"icon": "kamenridercraft:giri_giri_chambara_gasha_trophy",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 92,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giri_giri_chambara_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		}
+	]
+}

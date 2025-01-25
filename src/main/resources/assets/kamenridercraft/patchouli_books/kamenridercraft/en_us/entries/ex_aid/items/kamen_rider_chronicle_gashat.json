@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Chronicle Gashat",
+	"icon": "kamenridercraft:kamen_rider_chronicle_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Cronus's $(l:ex_aid/devices/gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br)Used to craft a Ride-Player's $(l:ex_aid/devices/rideplayerbelt)Ride-Player Buckle$(/l)$(br)Used to craft Nico Saiba's $(l:ex_aid/devices/rideplayerbelt_nico)Ride-Player Buckle (Nico)$(/l) and $(l:ex_aid/devices/gamer_driver_nico_snipe)Gamer Driver (Snipe Nico)$(/l)$(br2)Used to access Cronus's $(l:ex_aid/riders/cronus#chronicle)Chronicle Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_chronicle_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		}
+	]
+}

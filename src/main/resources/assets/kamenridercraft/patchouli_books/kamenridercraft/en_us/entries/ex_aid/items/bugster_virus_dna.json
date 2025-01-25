@@ -1,0 +1,19 @@
+{
+	"name": "Bugster Virus DNA",
+	"icon": "kamenridercraft:bugster_virus_dna",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bugster_virus_dna",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		}
+	]
+}

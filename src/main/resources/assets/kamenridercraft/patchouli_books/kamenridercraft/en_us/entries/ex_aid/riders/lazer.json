@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "sports_0",
+			"anchor": "proto_sports",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\",slot_tex2:\"kamenridercraft:proto_shakariki_sports_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Proto Sports Bike Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l)"
@@ -78,7 +78,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "combat_0",
+			"anchor": "proto_combat",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_lazer\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Proto Combat Bike Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"

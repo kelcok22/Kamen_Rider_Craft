@@ -1,0 +1,19 @@
+{
+	"name": "Proto Bakusou Bike (Combi Fukkatsu) Gashat",
+	"icon": "kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Lazer (2016, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#bike_0)Bike Action Gamer Level 0$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

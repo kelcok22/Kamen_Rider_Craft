@@ -1,0 +1,19 @@
+{
+	"name": "Kaigan Ghost Gashat",
+	"icon": "kamenridercraft:kaigan_ghost_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 66,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#ghost_2)Ghost Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaigan_ghost_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

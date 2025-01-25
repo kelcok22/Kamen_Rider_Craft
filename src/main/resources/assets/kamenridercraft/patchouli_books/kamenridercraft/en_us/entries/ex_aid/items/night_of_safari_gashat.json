@@ -1,0 +1,19 @@
+{
+	"name": "Night of Safari Gashat",
+	"icon": "kamenridercraft:night_of_safari_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Brave: ~Let's Survive! Revival of the Beast Rider Squad!~ (2017, TTFC special)$(br2)Used to access $(l:ex_aid/riders/brave#safari)Safari Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:night_of_safari_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}
