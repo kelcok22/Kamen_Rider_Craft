@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-22T16:33:52.0098782	Block States: kamenridercraft
+// 1.21.1	2025-01-26T20:10:45.4866468	Block States: kamenridercraft
 2c461bc92a016bdbe4e486401c206c3461cd0ed3 assets/kamenridercraft/blockstates/helheim_button.json
 d1826779a0998dd8aa4a506b91c7cd4c22aab284 assets/kamenridercraft/blockstates/helheim_door.json
 a4e2f32b1f6573460c96dfe37a472f79f5583560 assets/kamenridercraft/blockstates/helheim_fence.json
@@ -7,6 +7,7 @@ a4e2f32b1f6573460c96dfe37a472f79f5583560 assets/kamenridercraft/blockstates/helh
 7deb98e09f418003b6434319d09498ce3b2e89e2 assets/kamenridercraft/blockstates/helheim_slab.json
 c438e3f5e5ce0f52857edbb4e2ed8e26403ae1d4 assets/kamenridercraft/blockstates/helheim_stairs.json
 073aca452d3c9de2c3f2054ba4987d7bfe666d40 assets/kamenridercraft/blockstates/helheim_trapdoor.json
+59f7313b4c4f527a9df91e7d008029fc32135790 assets/kamenridercraft/blockstates/kuruma_brick.json
 be48f9a874aa39e1d5bb9078d645c8538c633580 assets/kamenridercraft/blockstates/rabbit_hutch_door.json
 1c6a56075b8515ffe443ee6a45541f75bbf5938f assets/kamenridercraft/models/block/helheim_button.json
 c5f442cde32791c6a3ef5037b124bee85ed31786 assets/kamenridercraft/models/block/helheim_button_pressed.json
@@ -34,6 +35,7 @@ ee18942d2431056fcbf058b01a08c6e0d41ca7ed assets/kamenridercraft/models/block/hel
 1ab11a9b1155c0d5a4e8a4ce1c2e62d24d6508a8 assets/kamenridercraft/models/block/helheim_trapdoor_bottom.json
 92ae3b61591c6fe3fbb19c3bcbf36f566716d149 assets/kamenridercraft/models/block/helheim_trapdoor_open.json
 f83310a28f916adac4eafd005c60f4db48c10268 assets/kamenridercraft/models/block/helheim_trapdoor_top.json
+d7049a72d99426cc1e6c6faafeb20f6494f59c6e assets/kamenridercraft/models/block/kuruma_brick.json
 af47c82a98d870b14bbe58db42e05acbcc0bee11 assets/kamenridercraft/models/block/rabbit_hutch_door_bottom_left.json
 885175240bcaf04950f01261c2e5502840edfd05 assets/kamenridercraft/models/block/rabbit_hutch_door_bottom_left_open.json
 4eae979cb9a27428bc59f0c47fd3c917aefc006a assets/kamenridercraft/models/block/rabbit_hutch_door_bottom_right.json
@@ -47,4 +49,5 @@ ab7d45dc641325cf33a956529e3e1558d6879ec3 assets/kamenridercraft/models/item/helh
 b22abe5476640fa7dbf39f56a43bd13a90c4b73e assets/kamenridercraft/models/item/helheim_slab.json
 648d66f2dac675db6c8fe4f2b9054332392f76ee assets/kamenridercraft/models/item/helheim_stairs.json
 995848446a308a962e5f4da36edbd055751b5797 assets/kamenridercraft/models/item/helheim_trapdoor.json
+7c82f9ef52b887318e1e0fa9c5738d6c476cff6d assets/kamenridercraft/models/item/kuruma_brick.json
 d2838fbd2d7b47219746540d102cfd17382ec22a assets/kamenridercraft/models/item/pavement.json

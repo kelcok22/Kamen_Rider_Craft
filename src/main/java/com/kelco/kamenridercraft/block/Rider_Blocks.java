@@ -244,6 +244,13 @@ public class Rider_Blocks {
 			() -> new VistampBar(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+
+	public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
+
 	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
 			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
