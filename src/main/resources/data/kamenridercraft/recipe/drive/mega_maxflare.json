@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "high_speedshift",
+  "ingredients": [
+{
+	
+	  "item": "minecraft:diamond"
+	}, 
+	{
+	  "item": "kamenridercraft:maxflare"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:mega_maxflare"
+  }
+}

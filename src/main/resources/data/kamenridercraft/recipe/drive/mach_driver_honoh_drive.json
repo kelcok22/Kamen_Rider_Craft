@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mach_driver_honoh_drive",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:deadheatshift"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:mach_driver_honoh_drive"
+  }
+}

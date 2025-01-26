@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fruitsshift",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:orange_lockseed"
+	}, 
+	{
+	  "item": "kamenridercraft:drive_system_car"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:fruitsshift"
+  }
+}
