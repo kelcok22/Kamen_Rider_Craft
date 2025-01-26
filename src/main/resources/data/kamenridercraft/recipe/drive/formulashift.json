@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "formula",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:mantarn_f01"
+	}, 
+	{
+	  "item": "kamenridercraft:jacky_f02"
+	},
+	  {
+		  "item": "kamenridercraft:sparner_f03"
+	  }
+	],
+  "result": {
+	"id": "kamenridercraft:formulashift"
+  }
+}

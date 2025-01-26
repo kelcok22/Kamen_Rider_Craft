@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "shift_ride_crosser",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:signal_mach"
+		},
+		{
+			"item": "kamenridercraft:next_system_car"
+		},
+		{
+			"item": "kamenridercraft:signal_chaser"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:shift_ride_crosser"
+	}
+}

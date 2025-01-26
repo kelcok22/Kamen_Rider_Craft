@@ -5,13 +5,13 @@
 {
 	
 	  "item": "kamenridercraft:rider_circuit"
-	},{
-
-		  "item": "kamenridercraft:rider_circuit"
-	  },
+	},
 	{
 	  "item": "kamenridercraft:shift_alloy"
-	}
+	},
+	  {
+		  "item": "kamenridercraft:shift_alloy"
+	  }
 	],
   "result": {
 	"id": "kamenridercraft:next_system_bike"

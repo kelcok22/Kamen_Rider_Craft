@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brain",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:roidmude_core_003"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:brain_driver"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mach",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:signal_mach"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:mach_driver_honoh"
+  }
+}

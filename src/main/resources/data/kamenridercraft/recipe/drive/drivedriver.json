@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "drive",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:speedshift"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:drivedriver"
+  }
+}

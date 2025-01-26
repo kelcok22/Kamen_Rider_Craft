@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "speedwildtechnicshift",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:speedshift"
+	}, 
+	{
+	  "item": "kamenridercraft:wildshift"
+	},
+	  {
+		  "item": "kamenridercraft:technicshift"
+	  }
+	],
+  "result": {
+	"id": "kamenridercraft:speedwildtechnicshift"
+  }
+}

@@ -3,6 +3,12 @@
   "values": [
 	"kamenridercraft:viral_core_chaser_cobara",
 	"kamenridercraft:viral_core_chaser_spider",
-	"kamenridercraft:viral_core_chaser_bat"
+	"kamenridercraft:viral_core_chaser_bat",
+	  "kamenridercraft:signal_mach",
+	  "kamenridercraft:signal_magarl",
+	  "kamenridercraft:signal_kaksarn",
+	  "kamenridercraft:signal_tomarle",
+	  "kamenridercraft:signal_kikern",
+	  "kamenridercraft:signal_chaser"
   ]
 }

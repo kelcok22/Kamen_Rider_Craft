@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "metro_pd_driver_honoh",
+  "pattern": [
+	"XXX",
+	"XCX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:tokujoka_key"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:metro_pd_driver_honoh"
+  }
+}
