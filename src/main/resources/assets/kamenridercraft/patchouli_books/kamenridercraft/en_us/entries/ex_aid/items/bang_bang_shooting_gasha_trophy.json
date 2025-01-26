@@ -1,0 +1,19 @@
+{
+	"name": "Bang Bang Shooting Gasha Trophy",
+	"icon": "kamenridercraft:bang_bang_shooting_gasha_trophy",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 86,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bang_bang_shooting_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		}
+	]
+}

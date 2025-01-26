@@ -1,0 +1,19 @@
+{
+	"name": "Proto Bakusou Bike Gashat",
+	"icon": "kamenridercraft:proto_bakusou_bike_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#proto_bike_1)Bike Gamer Level 1 (Proto)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_bakusou_bike_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		}
+	]
+}

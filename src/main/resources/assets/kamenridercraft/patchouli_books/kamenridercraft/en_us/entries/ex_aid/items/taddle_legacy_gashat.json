@@ -1,0 +1,19 @@
+{
+	"name": "Taddle Legacy Gashat",
+	"icon": "kamenridercraft:taddle_legacy_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft True Brave's $(l:ex_aid/devices/gamer_driver_truebrave)Gamer Driver (True Brave)$(/l)$(br2)Used to access $(l:ex_aid/riders/brave#legacy)Legacy Gamer Level 100$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_legacy_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}
