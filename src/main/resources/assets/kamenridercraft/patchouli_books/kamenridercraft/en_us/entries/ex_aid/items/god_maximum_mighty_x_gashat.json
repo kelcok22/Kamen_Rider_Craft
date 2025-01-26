@@ -1,0 +1,19 @@
+{
+	"name": "God Maximum Mighty X Gashat",
+	"icon": "kamenridercraft:god_maximum_mighty_x_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 58,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#god_maximum)God Maximum Gamer Level Billion$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:god_maximum_mighty_x_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}

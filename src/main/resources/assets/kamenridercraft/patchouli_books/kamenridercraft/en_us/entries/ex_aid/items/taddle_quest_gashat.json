@@ -1,0 +1,19 @@
+{
+	"name": "Taddle Quest Gashat",
+	"icon": "kamenridercraft:taddle_quest_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Brave's $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Used to access Brave's $(l:ex_aid/riders/brave#quest_2)Quest Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_quest_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Doki Doki Makai Castle Kiva Gashat",
+	"icon": "kamenridercraft:dokidoki_makai_castle_kiva_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 74,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#kiva)Kiva Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dokidoki_makai_castle_kiva_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

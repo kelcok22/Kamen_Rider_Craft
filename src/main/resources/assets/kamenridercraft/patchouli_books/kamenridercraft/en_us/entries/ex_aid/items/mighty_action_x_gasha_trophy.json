@@ -1,0 +1,19 @@
+{
+	"name": "Mighty Action X Gasha Trophy",
+	"icon": "kamenridercraft:mighty_action_x_gasha_trophy",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 84,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_action_x_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		}
+	]
+}

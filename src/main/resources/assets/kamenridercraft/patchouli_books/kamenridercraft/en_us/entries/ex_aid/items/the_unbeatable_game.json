@@ -1,0 +1,19 @@
+{
+	"name": "The Unbeatable Game Gashat",
+	"icon": "kamenridercraft:the_unbeatable_game",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Sentai Gorider (2017, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#totema)Totema Exterior$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_unbeatable_game",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Chronus Clock",
+	"icon": "kamenridercraft:chronus_clock",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 98,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/chronus_clock"
+		}
+	]
+}

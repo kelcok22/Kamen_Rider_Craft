@@ -1,0 +1,19 @@
+{
+	"name": "Genm Musou Gashat",
+	"icon": "kamenridercraft:genm_musou_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 55,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#musou)Musou Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:genm_musou_gashat",
+			"title": " ",
+			"text": "Obtained by using the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		}
+	]
+}

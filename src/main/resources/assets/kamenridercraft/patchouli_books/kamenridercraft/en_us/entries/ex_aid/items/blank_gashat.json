@@ -1,0 +1,17 @@
+{
+	"name": "Unfinished Gashat",
+	"icon": "kamenridercraft:blank_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used as the base item for most Ex-Aid items"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/blank_gashat",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Hyper Fumetsu Gashat",
+	"icon": "kamenridercraft:hyper_fumetsu_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 63,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#fumetsu)Hyper Fumetsu Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_fumetsu_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

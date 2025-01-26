@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Build Gashat",
+	"icon": "kamenridercraft:kamen_rider_build_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 65,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_build_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

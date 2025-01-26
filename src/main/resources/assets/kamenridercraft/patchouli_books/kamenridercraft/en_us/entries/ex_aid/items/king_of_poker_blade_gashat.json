@@ -1,0 +1,19 @@
+{
+	"name": "King of Poker Blade Gashat",
+	"icon": "kamenridercraft:king_of_poker_blade_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 78,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#blade)Blade Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_of_poker_blade_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

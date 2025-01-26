@@ -1,0 +1,16 @@
+{
+	"name": "Proto Mighty Action X Origin Gashat",
+	"icon": "kamenridercraft:proto_mighty_action_x_gashat_origin",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#action_0)Action Gamer Level 0 (Proto Origin)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/proto_mighty_action_x_gashat_origin"
+		}
+	]
+}

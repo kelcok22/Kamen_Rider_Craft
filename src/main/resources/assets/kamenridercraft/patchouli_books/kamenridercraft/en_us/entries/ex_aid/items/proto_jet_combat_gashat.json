@@ -1,0 +1,19 @@
+{
+	"name": "Proto Jet Combat Gashat",
+	"icon": "kamenridercraft:proto_jet_combat_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/snipe#proto_combat)Proto Combat Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_jet_combat_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		}
+	]
+}
