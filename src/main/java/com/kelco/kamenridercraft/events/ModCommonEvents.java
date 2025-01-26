@@ -564,6 +564,8 @@ public class ModCommonEvents {
 		event.put(MobsCore.DEMUSHU.get(), DemushuEntity.setAttributes().build());
 		event.put(MobsCore.LORD_BARON.get(), LordBaronEntity.setAttributes().build());
 
+		event.put(MobsCore.MASHIN_CHASER.get(), MashinChaserEntity.setAttributes().build());
+
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());

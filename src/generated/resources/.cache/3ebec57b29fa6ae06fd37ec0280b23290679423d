@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-23T00:07:40.3041412	Item Models: kamenridercraft
+// 1.21.1	2025-01-26T21:57:38.3378173	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
 597b835e5301cc9880ab4fe6fa14382e5d95267f assets/kamenridercraft/models/item/burning_solar.json
@@ -33,6 +33,7 @@ e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/sign
 1f9aa6cc1d4b212b7ea117aaa80e69a182bcfd29 assets/kamenridercraft/models/item/signal_tomarle.json
 25c8b1a3f42e4225db92660b862e0ec7fe1c0a2a assets/kamenridercraft/models/item/specialshift.json
 f9b7fe4f92272fdcf7821733b8d7adc20957cc21 assets/kamenridercraft/models/item/tokujoka_key.json
+0d406ca45c988584e03baa112550de5559042fba assets/kamenridercraft/models/item/tridoronshift_core.json
 15de1a14d31fe7f1f079b53ec696d175ab766da2 assets/kamenridercraft/models/item/tridoron_key.json
 6cbb2623ed74342f2d941a48f08bf249dd3afa1f assets/kamenridercraft/models/item/viral_core_bat.json
 abcf1ca9bffbdda5d7d44e2b9537414827175300 assets/kamenridercraft/models/item/viral_core_chaser_bat.json

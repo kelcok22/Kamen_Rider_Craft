@@ -558,6 +558,9 @@ public class RiderTabs {
             event.accept(Rider_Blocks.STEEL_LADDER);
             event.accept(Rider_Blocks.RABBIT_HUTCH_LADDER);
 
+            event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
+            event.accept(Rider_Blocks.WALLPLATE_GRATE);
+
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 
@@ -647,6 +650,8 @@ public class RiderTabs {
 		    event.accept(MobsCore.REDYUE_SPAWN_EGG);
 		    event.accept(MobsCore.DEMUSHU_SPAWN_EGG);
 		    event.accept(MobsCore.LORD_BARON_SPAWN_EGG);
+
+            event.accept(MobsCore.MASHIN_CHASER_SPAWN_EGG);
 
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 

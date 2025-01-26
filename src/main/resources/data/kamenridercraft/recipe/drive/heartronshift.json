@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "heartron",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:tridoronshift_core"
+	},
+	  {
+		  "item": "kamenridercraft:viral_core_neo_spider"
+	  },
+	  {
+		  "item": "kamenridercraft:viral_core_neo_cobara"
+	  },
+	  {
+		  "item": "kamenridercraft:viral_core_neo_bat"
+	  }
+	],
+  "result": {
+	"id": "kamenridercraft:heartronshift"
+  }
+}
