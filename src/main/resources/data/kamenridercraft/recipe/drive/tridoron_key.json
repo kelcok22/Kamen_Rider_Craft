@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tridoron_key",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:tridoronshift_core"
+	}, 
+	{
+	  "item": "kamenridercraft:rider_circuit"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:tridoron_key"
+  }
+}

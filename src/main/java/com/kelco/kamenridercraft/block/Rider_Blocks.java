@@ -249,6 +249,8 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LADDER = registerBlock("drive_pit_ladder",
+			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
 
 	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
@@ -688,7 +690,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD2 = registerBlock("sword_of_logos_wood2",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
-	
+
+	public static final DeferredBlock<Block> SWORD_OF_LOGOS_ARCH = registerBlock("sword_of_logos_arch",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
 	public static final DeferredBlock<Block> TADDLE_BRICK = registerBlock("taddle_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_BLOCK));

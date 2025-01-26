@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tridoron",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:tridoronshift_core"
+	}, 
+	{
+	  "item": "kamenridercraft:speedshift"
+	},
+	  {
+		  "item": "kamenridercraft:wildshift"
+	  },
+	  {
+		  "item": "kamenridercraft:technicshift"
+	  },
+	  {
+		  "item": "kamenridercraft:deadheatshift"
+	  },
+	  {
+		  "item": "kamenridercraft:formulashift"
+	  },
+	  {
+		  "item": "kamenridercraft:proto_speedshift"
+	  },
+	  {
+		  "item": "kamenridercraft:signal_mach"
+	  },
+	  {
+		  "item": "kamenridercraft:signal_chaser"
+	  }
+	],
+  "result": {
+	"id": "kamenridercraft:tridoronshift"
+  }
+}

@@ -365,6 +365,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.DEMUSHU.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LORD_BARON.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.MASHIN_CHASER.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);

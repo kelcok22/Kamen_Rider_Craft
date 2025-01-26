@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "shift_chassis_assembler",
+  "pattern": [
+	"III",
+	"ICI",
+	"XRX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	}, "C": {
+	  "item": "kamenridercraft:proto_speedshift"
+	}, "R": {
+		  "item": "kamenridercraft:rider_circuit"
+	  }, "I": {
+		  "item": "minecraft:iron_ingot"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:shift_chassis_assembler"
+  }
+}
