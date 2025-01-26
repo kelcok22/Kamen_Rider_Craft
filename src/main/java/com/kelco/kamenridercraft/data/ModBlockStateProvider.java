@@ -38,6 +38,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
 
+        blockItem(Rider_Blocks.PAVEMENT);
+
         blockItem(Rider_Blocks.HELHEIM_FENCE_GATE);
         blockItem(Rider_Blocks.HELHEIM_SLAB);
         blockItem(Rider_Blocks.HELHEIM_TRAPDOOR, "_bottom");
