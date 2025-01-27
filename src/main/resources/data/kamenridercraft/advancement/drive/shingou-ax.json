@@ -1,0 +1,28 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:shingouax"
+	},
+	"title": "Wait a Sec! ...Now Off You Go!",
+	"description": "Obtain the Shingou-Ax",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:drive/chaser",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:shingouax"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}
