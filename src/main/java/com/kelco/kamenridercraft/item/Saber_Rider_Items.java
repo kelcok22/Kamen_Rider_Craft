@@ -235,8 +235,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.INVISIBILITY, 2, 0,true,false))
 					.addSwitchForm(KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW.get()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 3));
 
-	public static final DeferredItem<Item> X_SWORD_MAN_WONDER_RIDE_BOOK_COLORFUL = ITEMS.register("x_sword_man_wonder_ride_book_colorful",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_sword_man","saikou","seiken_saikou_driver_belt_x"
+	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL = ITEMS.register("x_swordman_wonder_ride_book_colorful",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_swordman","saikou","seiken_saikou_driver_belt_x"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
@@ -245,8 +245,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)));
 
-	public static final DeferredItem<Item> X_SWORD_MAN_WONDER_RIDE_BOOK_POWERFUL = ITEMS.register("x_sword_man_wonder_ride_book_powerful",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_sword_man_powerful","saikou","seiken_saikou_driver_belt_p"
+	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL = ITEMS.register("x_swordman_wonder_ride_book_powerful",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_swordman_powerful","saikou","seiken_saikou_driver_belt_p"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
@@ -254,10 +254,10 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-					.addNeedForm(X_SWORD_MAN_WONDER_RIDE_BOOK_COLORFUL.get(), 1).addAlternative(X_SWORD_MAN_WONDER_RIDE_BOOK_COLORFUL.get()));
+					.addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get()));
 
-	public static final DeferredItem<Item> X_SWORD_MAN_WONDER_RIDE_BOOK = ITEMS.register("x_sword_man_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_sword_man_wonderful","saikou","seiken_saikou_driver_belt_w"
+	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK = ITEMS.register("x_swordman_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_swordman_wonderful","saikou","seiken_saikou_driver_belt_w"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
@@ -265,7 +265,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-					.addNeedForm(X_SWORD_MAN_WONDER_RIDE_BOOK_POWERFUL.get(), 1).addAlternative(X_SWORD_MAN_WONDER_RIDE_BOOK_POWERFUL.get()).AddToList(RiderTabs.SABER_TAB_ITEM));
+					.addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL.get()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KONCHUU_DAIHYAKKA_WONDER_RIDE_BOOK = ITEMS.register("konchuu_daihyakka_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","sabela","royal_sword_of_logos_buckle_belt"
