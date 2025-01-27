@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "durendal",
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_wonder_ride_book"
+    }, "C": {
+      "item": "kamenridercraft:ocean_history_wonder_ride_book"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:royal_sword_of_logos_buckle_durendal"
+  }
+}
