@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:lupin_belt"
+	  "id": "kamenridercraft:seiken_saikou_driver"
 	},
-	"title": "Mr Steal your Treasure",
-	"description": "Transform into Kamen Rider Lupin",
+	"title": "Let There Be Light!",
+	"description": "Transform into Kamen Rider Saikou",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/mashin_chaser",
+  "parent": "kamenridercraft:saber/calibur",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:drive_head"
+				"kamenridercraft:saberhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:drive_troso"
+				"kamenridercraft:sabertroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:drive_legs"
+				"kamenridercraft:saberlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:lupin_belt"
+				"kamenridercraft:seiken_saikou_driver"
 			  ]
 			}
 		  }

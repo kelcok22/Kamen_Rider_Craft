@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "id": "kamenridercraft:break_gunner"
+      },
+      "title": "The Advanced Reaper",
+      "description": "Transform into Mashin Chaser",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "kamenridercraft:drive/mach",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:drive_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:drive_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:drive_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:break_gunner_belt"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
