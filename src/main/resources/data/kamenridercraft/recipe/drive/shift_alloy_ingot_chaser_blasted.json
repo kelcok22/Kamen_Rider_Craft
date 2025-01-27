@@ -2,7 +2,7 @@
   "type": "minecraft:blasting",
   "group": "drive_system",
   "ingredient": {
-    "tag": "kamenridercraft:gear/shift_alloy_chaser_neo"
+    "tag": "kamenridercraft:gear/shift_alloy_smelt_chaser"
   },
   "result": {
     "id": "kamenridercraft:shift_alloy",
