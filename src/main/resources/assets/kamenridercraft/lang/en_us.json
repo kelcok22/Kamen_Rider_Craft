@@ -193,6 +193,7 @@
   "henshin.kamenridercraft.marika":"§cSoda! §dPeach Energy Arms!",
   "henshin.kamenridercraft.duke":"§cSoda! §eLemon Energy Arms!",
   "henshin.kamenridercraft.sigurd":"§cSoda! Cherry Energy Arms!",
+  "henshin.kamenridercraft.mashin_chaser":"§5Break Your Body!",
   "henshin.kamenridercraft.genm":"§5Gachan! Level Up! Mighty jump! Mighty kick! Mighty Action X!",
   "henshin.kamenridercraft.graphite":"§2Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!",
   "henshin.kamenridercraft.poppy":"§bBuggle Up! §eDreaming girl! Koi no simulation! §6Otome wa itsumo Toki Meki Crisis!",
@@ -3776,6 +3777,10 @@
 "entity.kamenridercraft.demushu": "Demushu",
 "entity.kamenridercraft.lord_baron": "Lord Baron",
 "entity.kamenridercraft.gamma_commandos": "Gamma Commando",
+
+  "entity.kamenridercraft.roidmude": "Roidmude",
+  "entity.kamenridercraft.mashin_chaser": "Mashin Chaser",
+
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
 "entity.kamenridercraft.taddle_bugster_mob": "Taddle Bugster",
@@ -3936,6 +3941,9 @@
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
 
+  "item.kamenridercraft.roidmude_spawn_egg": "Roidmude Spawn Egg",
+  "item.kamenridercraft.mashin_chaser_spawn_egg": "Mashin Chaser Spawn Egg",
+
 "item.kamenridercraft.bugstervirus_spawn_egg": "Bugster Spawn Egg",
 "item.kamenridercraft.mighty_bugster_spawn_egg": "Mighty Bugster Spawn Egg",
 "item.kamenridercraft.taddle_bugster_spawn_egg": "Taddle Bugster Spawn Egg",
@@ -3956,6 +3964,9 @@
 "item.kamenridercraft.paradx_spawn_egg": "Kamen Rider Para-DX Spawn Egg",
 "item.kamenridercraft.rideplayer_spawn_egg": "Ride-Player Spawn Egg",
 "item.kamenridercraft.cronus_spawn_egg": "Kamen Rider Cronus Spawn Egg",
+
+  "item.kamenridercraft.roidmude_spawn_egg": "Roidmude Spawn Egg",
+  "item.kamenridercraft.mashin_chaser_spawn_egg": "Mashin Chaser Spawn Egg",
 
   "item.kamenridercraft.touto_guardian_spawn_egg": "Touto Guardian Spawn Egg",
   "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
@@ -4129,6 +4140,8 @@
   "block.kamenridercraft.helheim_plant_3": "Helheim Pitcher Plant",
   "block.kamenridercraft.helheim_plant_4": "Green Helheim Fern",
 
+  "block.kamenridercraft.kuruma_brick": "Kuruma Senter Brick",
+
 "block.kamenridercraft.taddle_brick": "Taddle Quest Brick",
 "block.kamenridercraft.taddle_wall": "Taddle Quest Wall",
 "block.kamenridercraft.wallplate": "Wallplate",
@@ -4213,5 +4226,6 @@
 "block.kamenridercraft.horobi_boss_block": "Horobi Boss Block",
 "block.kamenridercraft.ikazuchi_boss_block": "Ikazuchi Boss Block",
 "block.kamenridercraft.ark_one_boss_block": "Ark-One Boss Block",
-  "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!"
+  "henshin.kamenridercraft.woz": "Woz! Action! Toei Future Time!",
+  "henshin.mashin_chaser": "§5Break Your Body!"
 }
