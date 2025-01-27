@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:shift_alloy"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:drive/drive_head",
+	  "kamenridercraft:drive/drive_troso",
+	  "kamenridercraft:drive/drive_legs",
+	  "kamenridercraft:drive/shift_chassis_assembler",
+	  "kamenridercraft:drive/drive_system_car",
+	  "kamenridercraft:drive/next_system_bike"
+	]
+  },
+  "sends_telemetry_event": false
+}

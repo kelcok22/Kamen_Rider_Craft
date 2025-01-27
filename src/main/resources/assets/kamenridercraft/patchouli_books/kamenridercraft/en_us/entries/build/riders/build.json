@@ -1,0 +1,104 @@
+{
+	"name": "Kamen Rider Build",
+	"icon": "kamenridercraft:build_driver",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 0,
+	"pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbittank",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RabbitTank",
+            "text": "Accessed with the $(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) and $(l:build/items/tank_full_bottle)Tank Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Rabbit Fullbottle Effects:$(li)Speed II$(li)Jump Boost$(br2)Tank Fullbottle Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "sparkling",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RabbitTank Sparkling",
+            "text": "Accessed with the $(l:build/items/rabbittank_sparkling_full_bottle)RabbitTank Sparkling Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Resistance II$(li)Jump Boost III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbittank_hazard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RabbitTank Hazard",
+            "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#rabbittank)RabbitTank$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed III$(li)Hunger II$(li)Resistance II$(li)Jump Boost III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbitrabbit",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RabbitRabbit",
+            "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength III (with weapon)$(li)Speed IV$(li)Resistance II$(li)Regeneration II$(li)Jump Boost IV$(li)Strength III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "tanktank",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "TankTank",
+            "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed II$(li)Resistance IV$(li)Regeneration$(li)Jump Boost"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "genius",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:genius_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Genius Form",
+            "text": "Accessed with the $(l:build/items/genius_full_bottle)Genius Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Jump Boost V$(li)Fire Resistance$(li)Flying"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbitdragon",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_rabbit_full_bottle\",slot_tex2:\"kamenridercraft:silver_dragon_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RabbitDragon",
+            "text": "Accessed with the $(l:build/items/gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) and $(l:build/items/silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Gold Rabbit Fullbottle Effects:$(li)Jump Boost IV$(br2)Silver Dragon Fullbottle Effects:$(li)Strength IV$(li)Haste IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "cross_zbuild",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:cross_z_build_can\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Cross-ZBuild",
+            "text": "Accessed with the $(l:build/items/cross_z_build_can)Cross-Z Build Can$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed V$(li)Resistance V$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation II$(li)Jump Boost VI$(li)Fire Resistance$(li)Flying"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"name": "Kaiser",
+	"icon": "kamenridercraft:nebula_steam_gun_kaiser",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "kaiser",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon_blue\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kaiser",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Water Breathing$(li)Night Vision$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "reverse",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine_red\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kaiser Reverse",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bikaiser",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_kaiser\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed by shift-clicking the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l) or $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l) with the other Gear in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Bikaiser",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Fire Fist V$(li)Fire Resistance$(li)Strength V"
+		}
+	]
+}
