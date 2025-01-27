@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:signal_mach"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:drive/mach_driver_honoh",
+	  "kamenridercraft:drive/zenrin_shooter",
+	  "kamenridercraft:zi_o/mach_ridewatch"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_drive",
+  "pattern": [
+	"XMX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:nextshift"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:blade_gunner"
+  }	
+}
+

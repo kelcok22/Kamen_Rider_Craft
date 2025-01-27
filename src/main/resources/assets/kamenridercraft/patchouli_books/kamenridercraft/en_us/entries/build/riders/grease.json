@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Grease",
+	"icon": "kamenridercraft:sclash_driver_grease",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+            "anchor": "grease",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sclash_driver_grease\",Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Grease",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver_grease)Sclash Driver (Grease)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Night Vision$(li)Haste$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+            "anchor": "blizzard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver_grease\",components:{custom_data:{slot_tex1:\"kamenridercraft:north_blizzard_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Grease Blizzard",
+			"text": "Accessed with the $(l:build/items/north_blizzard_full_bottle)North Blizzard Fullbottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Grease",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver_grease)Build Driver (Grease)$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Strength VII (with empty hand)$(li)Strength IV (with weapon)$(li)Speed III$(li)Resistance II$(li)Night Vision$(li)Haste II$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+            "anchor": "perfect",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver_grease\",components:{custom_data:{slot_tex1:\"kamenridercraft:grease_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Grease Perfect Kingdom",
+			"text": "Accessed with the $(l:build/items/grease_full_bottle)Grease Fullbottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Grease",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver_grease)Build Driver (Grease)$(/l)$(br2)Status Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength V (with weapon)$(li)Speed IV$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost III$(li)Flying"
+		}
+	]
+}

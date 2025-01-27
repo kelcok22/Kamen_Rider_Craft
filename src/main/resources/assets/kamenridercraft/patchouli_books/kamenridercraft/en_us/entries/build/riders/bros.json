@@ -1,0 +1,44 @@
+{
+	"name": "Bro's",
+	"icon": "kamenridercraft:nebula_steam_gun_hell_bros",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "remocon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:build/items/gear_remocon)Gear Remocon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Remocon Bro's",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_hell_bros)Nebulasteam Gun (Hell Bro's)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance II$(li)Haste II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "engine",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:build/items/gear_engine)Gear Engine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Engine Bro's",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_hell_bros)Nebulasteam Gun (Hell Bro's)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hell",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_hell_bros\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed by shift-clicking the $(l:build/items/gear_engine)Gear Engine$(/l) or $(l:build/items/gear_remocon)Gear Remocon$(/l) with the other Gear in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Hell Bro's",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebula_steam_gun_hell_bros)Nebulasteam Gun (Hell Bro's)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Strength IV"
+		}
+	]
+}

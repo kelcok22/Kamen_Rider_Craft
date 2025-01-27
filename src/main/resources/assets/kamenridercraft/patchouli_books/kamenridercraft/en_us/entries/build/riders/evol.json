@@ -1,0 +1,80 @@
+{
+	"name": "Kamen Rider Evol",
+	"icon": "kamenridercraft:evol_driver",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "cobra",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Cobra Form",
+			"text": "Accessed with the $(l:build/items/cobra_evol_bottle)Cobra Evol Bottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evol",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Jump Boost III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Dragon Form",
+			"text": "Accessed with the $(l:build/items/dragon_evol_bottle)Dragon Evol Bottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evol",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost II$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rabbit",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Rabbit Form",
+			"text": "Accessed with the $(l:build/items/rabbit_evol_bottle)Rabbit Evol Bottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evol",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance II$(li)Jump Boost IV$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_hole",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Black Hole Form",
+			"text": "Accessed with the $(l:build/items/evol_trigger)Evol Trigger$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evol",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength V$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "phantom_state",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_trigger_kaijin\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Phantom State",
+			"text": "Accessed with the $(l:build/items/evol_trigger)Evol Trigger$(/l) while sneaking"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Evolto",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength V$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_x_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"name": "Evol-X",
+			"text": "Accessed with the $(l:build/items/evol_x_full_bottle)Evol-X Fullbottle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evol",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength V$(li)Flying"
+		}
+	]
+}
