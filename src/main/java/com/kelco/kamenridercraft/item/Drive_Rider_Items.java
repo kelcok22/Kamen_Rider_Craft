@@ -616,6 +616,26 @@ public class Drive_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> JUSTICE_CAGE = ITEMS.register("justice_cage",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRUM_SHIELD_RED = ITEMS.register("drum_shield_red",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRUM_SHIELD_GREEN = ITEMS.register("drum_shield_green",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> MONSTER_TOP = ITEMS.register("monster_top",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> MONSTER_BOTTOM = ITEMS.register("monster_bottom",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
