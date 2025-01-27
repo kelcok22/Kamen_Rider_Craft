@@ -517,6 +517,13 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> LORD_BARON_SPAWN_EGG = ITEMS.register("lord_baron_spawn_egg",
                   () -> new DeferredSpawnEggItem(LORD_BARON, 0x970000, 0xb3a500, new Item.Properties()));
 
+
+    public static final DeferredHolder<EntityType<?>, EntityType<RoidmudeEntity>> ROIDMUDE = MOBLIST.register("roidmude",
+            () -> EntityType.Builder.of(RoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":roidmude"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ROIDMUDE_SPAWN_EGG = ITEMS.register("roidmude_spawn_egg",
+            () -> new DeferredSpawnEggItem(ROIDMUDE, 0x9c9c9c, 0x1f1f1f, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<MashinChaserEntity>> MASHIN_CHASER = MOBLIST.register("mashin_chaser",
             () -> EntityType.Builder.of(MashinChaserEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_baron"));
 
