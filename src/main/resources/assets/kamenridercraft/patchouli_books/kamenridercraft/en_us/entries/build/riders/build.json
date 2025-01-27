@@ -42,6 +42,54 @@
 		},
         {
             "type": "patchouli:entity",
+            "anchor": "smaphowolf_hazard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "SmaphoWolf Hazard",
+            "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#smaphowolf)SmaphoWolf$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build ~The 7 Best Matches Raising the Hazard Level~ (2018, web series)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Hunger II$(li)Resistance II$(li)Night Vision$(li)Jump Boost III$(li)Strength V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hawkgatling_hazard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "HawkGatling Hazard",
+            "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#hawkgatling)HawkGatling$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Hunger II$(li)Resistance II$(li)Night Vision$(li)Jump Boost III$(li)Strength V$(li)Flying"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kaizokuressya_hazard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KaizokuRessya Hazard",
+            "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#kaizokuressya)KaizokuRessya$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Hunger II$(li)Resistance II$(li)Haste IV$(li)Jump Boost III$(li)Strength V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "keydragon_hazard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KeyDragon Hazard",
+            "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#keydragon)KeyDragon$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Hunger II$(li)Wither$(li)Resistance II$(li)Haste IV$(li)Jump Boost III$(li)Strength V"
+		},
+        {
+            "type": "patchouli:entity",
             "anchor": "rabbitrabbit",
             "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
             "name": "RabbitRabbit",
@@ -99,6 +147,474 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Build",
 			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength V$(li)Speed V$(li)Resistance V$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation II$(li)Jump Boost VI$(li)Fire Resistance$(li)Flying"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "gorillamond",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorilla_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "GorillaMond",
+            "text": "Accessed with the $(l:build/items/gorilla_full_bottle)Gorilla Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Gorilla Fullbottle Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength II (with weapon)$(br2)Diamond Fullbottle Effects:$(li)Resistance II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hawkgatling",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "HawkGatling",
+            "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/gatling_full_bottle)Gatling Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Taka Fullbottle Effects:$(li)Jump Boost III$(li)Speed III$(li)Night Vision$(li)Flying$(br2)Gatling Fullbottle Effects:$(li)Strength II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "ninnincomic",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ninja_full_bottle\",slot_tex2:\"kamenridercraft:comic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "NinninComic",
+            "text": "Accessed with the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l) and $(l:build/items/comic_full_bottle)Comic Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Ninja Fullbottle Effects:$(li)Stealth II$(li)Speed IV$(br2)Comic Fullbottle Effects:$(li)Jump Boost III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rocketpanda",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:panda_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RocketPanda",
+            "text": "Accessed with the $(l:build/items/panda_full_bottle)Panda Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Panda Fullbottle Effects:$(li)Strength$(li)Haste II$(br2)Rocket Fullbottle Effects:$(li)Boost"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "firehedgehog",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:harinezumi_full_bottle\",slot_tex2:\"kamenridercraft:shoubousha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "FireHedgehog",
+            "text": "Accessed with the $(l:build/items/harinezumi_full_bottle)Harinezumi Fullbottle$(/l) and $(l:build/items/shoubousha_full_bottle)Shoubousha Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Harinezumi Fullbottle Effects:$(li)Strength II$(li)Haste II$(br2)Shoubousha Fullbottle Effects:$(li)Fire Resistance"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "lioncleaner",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_full_bottle\",slot_tex2:\"kamenridercraft:soujiki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "LionCleaner",
+            "text": "Accessed with the $(l:build/items/lion_full_bottle)Lion Fullbottle$(/l) and $(l:build/items/soujiki_full_bottle)Soujiki Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Lion Fullbottle Effects:$(li)Strength IV$(li)Haste II$(li)Night Vision$(br2)Soujiki Fullbottle Effects:$(li)Fire Resistance"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "keydragon",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KeyDragon",
+            "text": "Accessed with the $(l:build/items/dragon_full_bottle)Dragon Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Dragon Fullbottle Effects:$(li)Strength IV$(li)Haste IV$(li)Wither$(li)Speed III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kaizokuressya",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KaizokuRessya",
+            "text": "Accessed with the $(l:build/items/kaizoku_full_bottle)Kaizoku Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Kaizoku Fullbottle Effects:$(li)Strength II$(li)Haste IV$(li)Speed VI$(br2)Densha Fullbottle Effects:$(li)Speed IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "octopuslight",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:octopus_full_bottle\",slot_tex2:\"kamenridercraft:light_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "OctopusLight",
+            "text": "Accessed with the $(l:build/items/octopus_full_bottle)Octopus Fullbottle$(/l) and $(l:build/items/light_full_bottle)Light Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Octopus Fullbottle Effects:$(li)Water Breathing$(li)Speed II$(br2)Light Fullbottle Effects:$(li)Night Vision"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "phoenixrobo",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:phoenix_full_bottle\",slot_tex2:\"kamenridercraft:robot_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "PhoenixRobo",
+            "text": "Accessed with the $(l:build/items/phoenix_full_bottle)Phoenix Fullbottle$(/l) and $(l:build/items/robot_full_bottle)Robot Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Phoenix Fullbottle Effects:$(li)Fire Resistance$(li)Strength II$(li)Resistance II$(br2)Robot Fullbottle Effects:$(li)Punch III$(li)Strength VI (with empty hand)"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "smaphowolf",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "SmaphoWolf",
+            "text": "Accessed with the $(l:build/items/wolf_full_bottle)Wolf Fullbottle$(/l) and $(l:build/items/smapho_full_bottle)Smapho Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Wolf Fullbottle Effects:$(li)Speed III$(li)Night Vision$(br2)Smapho Fullbottle Effects:$(li)Resistance II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "uniraser",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:unicorn_full_bottle\",slot_tex2:\"kamenridercraft:keshigomu_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "UniRaser",
+            "text": "Accessed with the $(l:build/items/unicorn_full_bottle)Unicorn Fullbottle$(/l) and $(l:build/items/keshigomu_full_bottle)Keshigomu Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Unicorn Fullbottle Effects:$(li)Strength III$(li)Speed IV$(li)Haste IV$(li)Jump Boost III$(br2)Keshigomu Fullbottle Effects:$(li)Haste II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rosecopter",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rose_full_bottle\",slot_tex2:\"kamenridercraft:helicopter_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "RoseCopter",
+            "text": "Accessed with the $(l:build/items/rose_full_bottle)Rose Fullbottle$(/l) and $(l:build/items/helicopter_full_bottle)Helicopter Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Rose Fullbottle Effects:$(li)Strength III$(li)Speed III$(br2)Helicopter Fullbottle Effects:$(li)Speed II$(li)Flying"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "turtlewatch",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:turtle_full_bottle\",slot_tex2:\"kamenridercraft:watch_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "TurtleWatch",
+            "text": "Accessed with the $(l:build/items/turtle_full_bottle)Turtle Fullbottle$(/l) and $(l:build/items/watch_full_bottle)Watch Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Turtle Fullbottle Effects:$(li)Strength IV$(li)Water Breathing$(li)Slowness II$(br2)Watch Fullbottle Effects:$(li)Haste IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kumatv",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuma_full_bottle\",slot_tex2:\"kamenridercraft:televi_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KumaTV",
+            "text": "Accessed with the $(l:build/items/kuma_full_bottle)Kuma Fullbottle$(/l) and $(l:build/items/televi_full_bottle)Televi Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build: Birth! KumaTV!! VS Kamen Rider Grease (2017, Hyper Battle Video)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Kuma Fullbottle Effects:$(li)Haste III$(li)Strength III$(br2)Televi Fullbottle Effects:$(li)Night Vision"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "beetlecamera",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabutomushi_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "BeetleCamera",
+            "text": "Accessed with the $(l:build/items/kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Kabutomushi Fullbottle Effects:$(li)Strength III$(li)Resistance II$(br2)Camera Fullbottle Effects:$(li)Night Vision"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "spidercooler",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_full_bottle\",slot_tex2:\"kamenridercraft:reizouko_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "SpiderCooler",
+            "text": "Accessed with the $(l:build/items/spider_full_bottle)Spider Fullbottle$(/l) and $(l:build/items/reizouko_full_bottle)Reizouko Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)DX Pandora Panel Blue (2018, toyline)$(li)DX Pandora Panel Red (2018, toyline)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Spider Fullbottle Effects:$(li)Jump Boost II$(li)Haste II$(br2)Reizouko Fullbottle Effects:$(li)Resistance II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "dogmic",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dog_full_bottle\",slot_tex2:\"kamenridercraft:mic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "DogMic",
+            "text": "Accessed with the $(l:build/items/dog_full_bottle)Dog Fullbottle$(/l) and $(l:build/items/mic_full_bottle)Mic Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Dog Fullbottle Effects:$(li)Speed III$(li)Haste IV$(li)Strength II$(br2)Mic Fullbottle Effects:$(li)Punch II$(li)Strength V (with empty hand)"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "merrychristmas",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:santa_claus_full_bottle\",slot_tex2:\"kamenridercraft:cake_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "MerryChristmas",
+            "text": "Accessed with the $(l:build/items/santa_claus_full_bottle)Santa Claus Fullbottle$(/l) and $(l:build/items/cake_full_bottle)Cake Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Santa Claus Fullbottle Effects:$(li)Jump Boost III$(li)Speed III$(br2)Cake Fullbottle Effects:$(li)Saturation II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "toraufo",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tora_full_bottle\",slot_tex2:\"kamenridercraft:ufo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "ToraUFO",
+            "text": "Accessed with the $(l:build/items/tora_full_bottle)Tora Fullbottle$(/l) and $(l:build/items/ufo_full_bottle)UFO Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Tora Fullbottle Effects:$(li)Speed IV$(li)Strength III$(br2)UFO Fullbottle Effects:$(li)Jump Boost III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kujirajet",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kujira_full_bottle\",slot_tex2:\"kamenridercraft:jet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KujiraJet",
+            "text": "Accessed with the $(l:build/items/kujira_full_bottle)Kujira Fullbottle$(/l) and $(l:build/items/jet_full_bottle)Jet Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Kujira Fullbottle Effects:$(li)Water Breathing$(li)Dolphin's Grace$(br2)Jet Fullbottle Effects:$(li)Flying"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "shikamid",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_full_bottle\",slot_tex2:\"kamenridercraft:pyramid_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "ShikaMid",
+            "text": "Accessed with the $(l:build/items/shika_full_bottle)Shika Fullbottle$(/l) and $(l:build/items/pyramid_full_bottle)Pyramid Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Shika Fullbottle Effects:$(li)Speed III$(li)Jump Boost II$(br2)Pyramid Fullbottle Effects:$(li)Resistance II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kirincyclone",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_full_bottle\",slot_tex2:\"kamenridercraft:senpuuki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "KirinCyclone",
+            "text": "Accessed with the $(l:build/items/kirin_full_bottle)Kirin Fullbottle$(/l) and $(l:build/items/senpuuki_full_bottle)Senpuuki Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Kirin Fullbottle Effects:$(li)Strength III$(br2)Senpuuki Fullbottle Effects:$(li)Speed III$(li)Jump Boost III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "penguinskater",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:penguin_full_bottle\",slot_tex2:\"kamenridercraft:skebo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "PenguinSkater",
+            "text": "Accessed with the $(l:build/items/penguin_full_bottle)Penguin Fullbottle$(/l) and $(l:build/items/skebo_full_bottle)Skebo Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Penguin Fullbottle Effects:$(li)Water Breathing$(li)Dolphin's Grace$(br2)Skebo Fullbottle Effects:$(li)Speed III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "samebike",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_full_bottle\",slot_tex2:\"kamenridercraft:bike_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "SameBike",
+            "text": "Accessed with the $(l:build/items/same_full_bottle)Same Fullbottle$(/l) and $(l:build/items/bike_full_bottle)Bike Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Build ~The 7 Best Matches Raising the Hazard Level~ (2018, web series)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Same Fullbottle Effects:$(li)Water Breathing$(li)Dolphin's Grace$(br2)Bike Fullbottle Effects:$(li)Speed III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hachimarine",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hachi_full_bottle\",slot_tex2:\"kamenridercraft:sensuikan_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "HachiMarine",
+            "text": "Accessed with the $(l:build/items/hachi_full_bottle)Hachi Fullbottle$(/l) and $(l:build/items/sensuikan_full_bottle)Sensuikan Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)DX HachiMarine Fullbottle Set (2018, toyline)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Hachi Fullbottle Effects:$(li)Speed III$(li)Jump Boost II$(br2)Sensuikan Fullbottle Effects:$(li)Water Breathing$(li)Dolphin's Grace"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "saidryer",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_full_bottle\",slot_tex2:\"kamenridercraft:dryer_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "SaiDryer",
+            "text": "Accessed with the $(l:build/items/sai_full_bottle)Sai Fullbottle$(/l) and $(l:build/items/dryer_full_bottle)Dryer Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)DX SaiDryer Fullbottle Set (2018, toyline)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Sai Fullbottle Effects:$(li)Strength III$(li)Resistance II$(br2)Dryer Fullbottle Effects:$(li)Fire Resistance"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "batengine",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_full_bottle\",slot_tex2:\"kamenridercraft:engine_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "BatEngine",
+            "text": "Accessed with the $(l:build/items/bat_full_bottle)Bat Fullbottle$(/l) and $(l:build/items/engine_full_bottle)Engine Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Bat Fullbottle Effects:$(li)Speed II$(li)Jump Boost III$(br2)Engine Fullbottle Effects:$(li)Strength II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "magghost",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:magnet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "MagGhost",
+            "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/magnet_full_bottle)Magnet Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Obake Fullbottle Effects:$(li)Ghost$(li)Stealth$(br2)Magnet Fullbottle Effects:$(li)Strength II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "goldscorpion",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scorpion_full_bottle\",slot_tex2:\"kamenridercraft:gold_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "GoldScorpion",
+            "text": "Accessed with the $(l:build/items/scorpion_full_bottle)Scorpion Fullbottle$(/l) and $(l:build/items/gold_full_bottle)Gold Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)DX GoldScorpion Fullbottle Set (2018, toyline)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Scorpion Fullbottle Effects:$(li)Anti Poison$(li)Haste II$(br2)Gold Fullbottle Effects:$(li)Resistance II$(li)Strength II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:momotaros_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Den-O Form",
+            "text": "Accessed with the $(l:build/items/momotaros_full_bottle)Momotaros Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Momotaros Fullbottle Effects:$(li)Strength II$(li)Haste$(br2)Densha Fullbottle Effects:$(li)Speed IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "decade",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_card_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Decade Form",
+            "text": "Accessed with the $(l:build/items/rider_card_full_bottle)Rider Card Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Rider Card Fullbottle Effects:$(li)Strength$(li)Haste III$(br2)Camera Fullbottle Effects:$(li)Night Vision"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "double",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tantei_full_bottle\",slot_tex2:\"kamenridercraft:usb_memory_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Double Form",
+            "text": "Accessed with the $(l:build/items/tantei_full_bottle)Tantei Fullbottle$(/l) and $(l:build/items/usb_memory_full_bottle)USB Memory Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Tantei Fullbottle Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(br2)USB Memory Fullbottle Effects:$(li)Speed II$(li)Jump Boost"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "ooo",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:medal_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "OOO Form",
+            "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/medal_full_bottle)Medal Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Taka Fullbottle Effects:$(li)Jump Boost III$(li)Speed III$(li)Night Vision$(li)Flying$(br2)Medal Fullbottle Effects:$(li)Slowness II$(li)Punch II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "fourze",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yuujou_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Fourze Form",
+            "text": "Accessed with the $(l:build/items/yuujou_full_bottle)Yuujou Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Yuujou Fullbottle Effects:$(li)Speed$(li)Jump Boost II$(br2)Rocket Fullbottle Effects:$(li)Boost"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "wizard",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mahoutsukai_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Wizard Form",
+            "text": "Accessed with the $(l:build/items/mahoutsukai_full_bottle)Mahoutsukai Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Mahoutsukai Fullbottle Effects:$(li)Speed$(li)Fire Resistance$(br2)Diamond Fullbottle Effects:$(li)Resistance II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "gaim",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:orange_full_bottle\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Gaim Form",
+            "text": "Accessed with the $(l:build/items/orange_full_bottle)Orange Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Orange Fullbottle Effects:$(li)Speed$(li)Saturation"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "ghost",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:parka_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Ghost Form",
+            "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/parka_full_bottle)Parka Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Obake Fullbottle Effects:$(li)Ghost$(li)Stealth$(br2)Parka Fullbottle Effects:$(li)Speed"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "ex_aid",
+            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doctor_full_bottle\",slot_tex2:\"kamenridercraft:game_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "name": "Ex-Aid Form",
+            "text": "Accessed with the $(l:build/items/doctor_full_bottle)Doctor Fullbottle$(/l) and $(l:build/items/game_full_bottle)Game Fullbottle$(/l)"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Build",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Doctor Fullbottle Effects:$(li)Saturation$(br2)Game Fullbottle Effects:$(li)Speed$(li)Haste"
 		}
 	]
 }
