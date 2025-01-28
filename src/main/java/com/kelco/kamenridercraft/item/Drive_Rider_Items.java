@@ -410,7 +410,7 @@ public class Drive_Rider_Items {
 					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM).AddToList(ShiftChassisAssembler.NEXT_BIKE,5).has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_CHASER_MACH= ITEMS.register("signal_chaser_mach",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chaser","mach","mach_driver_honoh_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chaser","mach","mach_driver_honoh_belt_chaser",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
@@ -418,7 +418,7 @@ public class Drive_Rider_Items {
 					.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()));
 
 	public static final DeferredItem<Item> SIGNAL_CHASER= ITEMS.register("signal_chaser",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
