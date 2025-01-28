@@ -2,8 +2,6 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.ShiftChassisAssembler;
-import com.kelco.kamenridercraft.data.DataGenerators;
-import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
