@@ -1,0 +1,19 @@
+{
+	"name": "Gear Engine (Red)",
+	"icon": "kamenridercraft:gear_engine_red",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 121,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine_red",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

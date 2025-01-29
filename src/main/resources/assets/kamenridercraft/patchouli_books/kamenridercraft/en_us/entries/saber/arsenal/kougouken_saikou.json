@@ -1,0 +1,16 @@
+{
+	"name": "Kougouken Saikou",
+	"icon": "kamenridercraft:kougouken_saikou",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/saikou)Kamen Rider Saikou$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/kougouken_saikou"
+		}
+	]
+}

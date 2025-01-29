@@ -1,0 +1,19 @@
+{
+	"name": "Lost Fukurou Fullbottle",
+	"icon": "kamenridercraft:lost_fukurou_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 120,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_fukurou_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Dragon Magma Fullbottle",
+	"icon": "kamenridercraft:dragon_magma_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 89,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Cross-Z's $(l:build/riders/cross-z#magma)Magma$(/l) form"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:build/dragon_magma_full_bottle"
+		}
+	]
+}

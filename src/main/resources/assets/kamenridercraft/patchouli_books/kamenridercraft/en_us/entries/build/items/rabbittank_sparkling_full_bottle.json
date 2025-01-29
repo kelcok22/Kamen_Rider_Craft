@@ -1,0 +1,16 @@
+{
+	"name": "Rabbit Tank Sparkling Fullbottle",
+	"icon": "kamenridercraft:rabbittank_sparkling_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 68,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#sparkling)RabbitTank Sparkling$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/rabbittank_sparkling_full_bottle"
+		}
+	]
+}

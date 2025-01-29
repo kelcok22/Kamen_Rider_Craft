@@ -1,0 +1,17 @@
+{
+	"name": "Smash Bottle",
+	"icon": "kamenridercraft:smash_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l) to obtain Fullbottles"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/smash",
+			"text": "Drops from:$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)"
+		}
+	]
+}

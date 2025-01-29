@@ -1,0 +1,19 @@
+{
+	"name": "Rider System Evol Bottle",
+	"icon": "kamenridercraft:rider_system_evol_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 98,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Evol's $(l:build/devices/evol_driver)Evol Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_system_evol_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		}
+	]
+}

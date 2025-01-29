@@ -1,0 +1,19 @@
+{
+	"name": "Empty Sclashjelly",
+	"icon": "kamenridercraft:sclash_jelly",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used as the base item for the Sclash Driver system"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sclash_jelly",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
+		}
+	]
+}

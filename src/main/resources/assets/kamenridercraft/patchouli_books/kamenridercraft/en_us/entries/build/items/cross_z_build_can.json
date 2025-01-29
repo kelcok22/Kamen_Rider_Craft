@@ -1,0 +1,16 @@
+{
+	"name": "Cross-Z Build Can",
+	"icon": "kamenridercraft:cross_z_build_can",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 76,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build: Be The One (2018, movie)$(br2)Used to access Build's $(l:build/riders/build#cross_zbuild)Cross-ZBuild$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/cross_z_build_can"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Low Rabbit Fullbottle",
+	"icon": "kamenridercraft:low_rabbit_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 70,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:low_rabbit_full_bottle",
+			"title": " ",
+			"text": "Obtained by using the $(l:build/items/golden_bangle)Golden Bangle$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		}
+	]
+}

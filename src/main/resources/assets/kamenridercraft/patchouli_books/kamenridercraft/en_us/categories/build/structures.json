@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "Build Structures",
+    "description": "All structures related to the show, Kamen Rider Build.",
+    "icon": "kamenridercraft:fullbottle_purifier",
+    "sortnum": 6
+}

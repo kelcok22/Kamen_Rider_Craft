@@ -1,0 +1,19 @@
+{
+	"name": "Diamond Fullbottle",
+	"icon": "kamenridercraft:diamond_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#gorillamond)Diamond$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:diamond_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Royal Sword of Logos Buckle (Sabela)",
+	"icon": "kamenridercraft:royal_sword_of_logos_buckle_sabela",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/sabela)Kamen Rider Sabela"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/royal_sword_of_logos_buckle_sabela"
+		}
+	]
+}

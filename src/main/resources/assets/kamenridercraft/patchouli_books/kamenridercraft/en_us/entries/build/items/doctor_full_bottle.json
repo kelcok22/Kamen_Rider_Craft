@@ -1,0 +1,19 @@
+{
+	"name": "Doctor Fullbottle",
+	"icon": "kamenridercraft:doctor_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 86,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access Build's $(l:build/riders/build#ex_aid)Doctor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doctor_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

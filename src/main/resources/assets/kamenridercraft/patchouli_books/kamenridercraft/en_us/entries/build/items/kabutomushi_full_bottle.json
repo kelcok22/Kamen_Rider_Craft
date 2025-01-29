@@ -1,0 +1,19 @@
+{
+	"name": "Kabutomushi Fullbottle",
+	"icon": "kamenridercraft:kabutomushi_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#beetlecamera)Kabutomushi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabutomushi_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		}
+	]
+}

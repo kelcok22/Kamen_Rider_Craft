@@ -1,0 +1,19 @@
+{
+	"name": "Robot Sclashjelly",
+	"icon": "kamenridercraft:robot_sclash_jelly",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 92,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/sclash_driver_grease)Sclash Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:robot_sclash_jelly",
+			"title": " ",
+			"text": "Obtained by using the $(l:build/items/robot_full_bottle)Robot Fullbottle$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)"
+		}
+	]
+}

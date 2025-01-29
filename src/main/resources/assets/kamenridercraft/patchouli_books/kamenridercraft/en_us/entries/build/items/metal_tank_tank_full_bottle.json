@@ -1,0 +1,19 @@
+{
+	"name": "Metal TankTank Fullbottle",
+	"icon": "kamenridercraft:metal_tank_tank_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 104,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_metal)Build Driver (Metal Build)$(/l) and $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_tank_tank_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)"
+		}
+	]
+}

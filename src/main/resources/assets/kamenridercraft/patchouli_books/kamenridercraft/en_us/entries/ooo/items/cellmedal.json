@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used as the base item for most OOO items$(br2)Gives one level of the Greeed effect for every stack in your inventory"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used as the base item for most OOO items$(br2)Used on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l) to obtain medals for the Birth CLAWs$(br2)Gives one level of the Greeed effect for every stack in your inventory"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,0 +1,16 @@
+{
+	"name": "Royal Sword of Logos Buckle (Durendal)",
+	"icon": "kamenridercraft:royal_sword_of_logos_buckle_durendal",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/durendal)Kamen Rider Durendal"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/royal_sword_of_logos_buckle_durendal"
+		}
+	]
+}
