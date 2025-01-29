@@ -1,0 +1,19 @@
+{
+	"name": "Hazard Trigger",
+	"icon": "kamenridercraft:hazard_trigger",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 69,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Blood's $(l:build/devices/build_driver_blood)Build Driver (Blood)$(/l)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_metal)Build Driver (Metal Build)$(/l) and $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank_hazard)Hazard$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hazard_trigger",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l)"
+		}
+	]
+}

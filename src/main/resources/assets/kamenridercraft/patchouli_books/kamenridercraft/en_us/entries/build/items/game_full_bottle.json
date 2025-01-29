@@ -1,0 +1,19 @@
+{
+	"name": "Game Fullbottle",
+	"icon": "kamenridercraft:game_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 87,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access Build's $(l:build/riders/build#ex_aid)Game$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:game_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

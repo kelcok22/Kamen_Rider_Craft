@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used as the base item for most Fourze items"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used as the base item for most Fourze items$(br2)Used on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l) to obtain Astroswitches"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -1,0 +1,19 @@
+{
+	"name": "Sai Fullbottle",
+	"icon": "kamenridercraft:sai_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 59,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX SaiDryer Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#saidryer)Sai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sai_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		}
+	]
+}

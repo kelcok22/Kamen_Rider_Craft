@@ -1,0 +1,19 @@
+{
+	"name": "Medal Fullbottle",
+	"icon": "kamenridercraft:medal_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 81,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#ooo)Medal$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:medal_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

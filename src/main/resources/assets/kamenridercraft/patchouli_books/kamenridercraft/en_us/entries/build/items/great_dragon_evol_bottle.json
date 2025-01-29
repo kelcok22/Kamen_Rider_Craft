@@ -1,0 +1,19 @@
+{
+	"name": "Great Dragon Evol Bottle",
+	"icon": "kamenridercraft:great_dragon_evol_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 90,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Cross-Z's $(l:build/riders/cross-z#great)Great Cross-Z$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:great_dragon_evol_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)"
+		}
+	]
+}

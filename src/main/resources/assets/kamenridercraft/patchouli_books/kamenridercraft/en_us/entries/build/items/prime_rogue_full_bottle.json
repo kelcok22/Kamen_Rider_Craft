@@ -1,0 +1,16 @@
+{
+	"name": "Prime Rogue Fullbottle",
+	"icon": "kamenridercraft:prime_rogue_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 96,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used to craft Rogue's $(l:build/devices/build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#prime)Prime Rogue$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/prime_rogue_full_bottle"
+		}
+	]
+}

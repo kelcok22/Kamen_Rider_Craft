@@ -1,0 +1,19 @@
+{
+	"name": "Pandora Bottle",
+	"icon": "kamenridercraft:pandora_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 67,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pandora_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/full_bottle)Empty Bottles$(/l) on the $(l:misc/blocks/pandora_box)Pandora Box$(/l)"
+		}
+	]
+}

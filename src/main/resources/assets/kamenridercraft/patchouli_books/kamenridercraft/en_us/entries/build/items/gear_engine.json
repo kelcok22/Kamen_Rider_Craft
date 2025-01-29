@@ -1,0 +1,19 @@
+{
+	"name": "Gear Engine",
+	"icon": "kamenridercraft:gear_engine",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 123,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

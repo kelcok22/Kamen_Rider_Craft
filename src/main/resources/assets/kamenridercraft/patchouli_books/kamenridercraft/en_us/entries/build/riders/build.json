@@ -21,7 +21,7 @@
             "anchor": "sparkling",
             "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
             "name": "RabbitTank Sparkling",
-            "text": "Accessed with the $(l:build/items/rabbittank_sparkling_full_bottle)RabbitTank Sparkling Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,16 @@
+{
+	"name": "Seiken Saikou Driver",
+	"icon": "kamenridercraft:seiken_saikou_driver",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/saikou)Kamen Rider Saikou"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/seiken_saikou_driver"
+		}
+	]
+}

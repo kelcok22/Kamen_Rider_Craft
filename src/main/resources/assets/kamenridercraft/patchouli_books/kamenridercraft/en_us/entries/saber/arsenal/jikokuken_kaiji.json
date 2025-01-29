@@ -1,0 +1,16 @@
+{
+	"name": "Jikokuken Kaiji",
+	"icon": "kamenridercraft:jikokuken_kaiji",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/durendal)Kamen Rider Durendal$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/jikokuken_kaiji"
+		}
+	]
+}

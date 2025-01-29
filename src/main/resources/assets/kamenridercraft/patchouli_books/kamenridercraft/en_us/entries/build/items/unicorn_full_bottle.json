@@ -1,0 +1,19 @@
+{
+	"name": "Unicorn Fullbottle",
+	"icon": "kamenridercraft:unicorn_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#uniraser)Unicorn$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		}
+	]
+}
