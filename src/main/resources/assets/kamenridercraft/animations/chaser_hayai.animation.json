@@ -1,0 +1,77 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		},
+		"walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		},
+		"fly": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		},"sneak": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		},
+		"swing_l": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		},
+		"swing_r": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shape2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 620]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
