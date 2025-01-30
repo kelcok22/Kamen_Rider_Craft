@@ -2,7 +2,9 @@ package com.kelco.kamenridercraft.data;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -13,6 +15,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -29,11 +32,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         for (int i = 0; i < SIMPLE_BLOCK.size(); i++)
         {
             simpleBlock(SIMPLE_BLOCK.get(i));
-
+            blockItem(SIMPLE_BLOCK.get(i));
 
         }
 
-        //lockItem(Rider_Blocks.SWORD_OF_LOGOS_GOLD_BLOCK.get());
+
 
 
         simpleBlock(Rider_Blocks.KURUMA_BRICK.get());
@@ -72,7 +75,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockItem(Block block) {
-        simpleBlockItem(block, new ModelFile.UncheckedModelFile("kamenridercraft:block/" + block.getName()));
+        ResourceLocation BLOCK = (ResourceLocation) Objects.requireNonNull(BuiltInRegistries.BLOCK.getKey(block));
+        simpleBlockItem(block, new ModelFile.UncheckedModelFile("kamenridercraft:block/"+BLOCK.getPath()));
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
