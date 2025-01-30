@@ -57,7 +57,7 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeModel("drive.geo.json").AddCompatibilityList(new String[] {"protodrive"})
-					.alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASR.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPEED = ITEMS.register("speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","drive","drivedriver_belt",
