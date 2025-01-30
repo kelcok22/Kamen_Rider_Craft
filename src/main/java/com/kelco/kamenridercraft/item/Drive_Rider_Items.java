@@ -44,7 +44,7 @@ public class Drive_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.ChangeSlot(2));
 
-	public static final DeferredItem<Item> SHIFT_PROTO_SPEED_CHASR = ITEMS.register("proto_speedshift_chaser",
+	public static final DeferredItem<Item> SHIFT_PROTO_SPEED_CHASER = ITEMS.register("proto_speedshift_chaser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 8,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
