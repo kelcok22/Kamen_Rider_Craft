@@ -2,7 +2,7 @@
 	"name": "Seiken Swordriver (Desast)",
 	"icon": "kamenridercraft:seiken_swordriver_desast",
 	"category": "kamenridercraft:saber/devices",
-	"sortnum": 11,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

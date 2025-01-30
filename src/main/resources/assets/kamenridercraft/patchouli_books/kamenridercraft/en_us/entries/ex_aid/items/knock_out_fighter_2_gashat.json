@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#double_fighter)Double Fighter Gamer Level 39$(/l)$(br)Used to access Para-DX's $(l:ex_aid/riders/para-dx#double_fighter)Double Fighter Gamer Level 39$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#double_fighter)Double Fighter Gamer Level 39$(/l)$(br)Used to access Para-DX's $(l:ex_aid/riders/para_dx#double_fighter)Double Fighter Gamer Level 39$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

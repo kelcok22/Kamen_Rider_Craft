@@ -1,0 +1,21 @@
+{
+	"name": "Downfall Warehouse",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Downfall Warehouse",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Spawns throughout the Nether$(br2)Includes 3 $(l:build/mobs/downfall_guardian)Downfall Guardian$(/l) spawners"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/build_warehouse.png"
+			],
+			"title": " "
+		}
+	]
+}

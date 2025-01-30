@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Hattari",
+	"icon": "kamenridercraft:hattari_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hattari_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Hattari",
+			"text": "Appears in:$(li)Kamen Rider Shinobi $(m)(2022, TV show)/$ (2019, web series)$(br2)Transforms with the $(l:zi-o/devices/hattari_driver)Hattari Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength"
+		}
+	]
+}

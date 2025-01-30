@@ -2,7 +2,7 @@
 	"name": "Jikokuken Kaiji",
 	"icon": "kamenridercraft:jikokuken_kaiji",
 	"category": "kamenridercraft:saber/arsenal",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

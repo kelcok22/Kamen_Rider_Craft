@@ -111,6 +111,18 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Double",
 			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Transforms with the $(l:w/devices/wdriver)Doubledriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cycloneskull",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:skull_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"name": "CycloneSkull",
+			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/skull_memory)Skull Memory$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Double",
+			"text": "Appears in:$(li)Fuuto PI: The Portrait of Kamen Rider Skull (2024, movie)$(br2)Transforms with the $(l:w/devices/wdriver)Doubledriver$(/l)$(br2)Cyclone Memory Effects:$(li)Speed II$(li)Jump Boost$(br2)Skull Memory Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
 		}
 	]
 }

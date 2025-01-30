@@ -1,0 +1,17 @@
+{
+	"name": "Hard Guardian",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:hard_guardian",
+			"text": "Spawn locations: Warped Forest, $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/full_bottle)Empty Bottle$(/l) (47.1%)$(li)1 $(l:build/items/black_lost_bat_full_bottle)Lost Bat Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_cd_full_bottle)Lost CD Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_castle_full_bottle)Lost Castle Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_fukurou_full_bottle)Lost Fukurou Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_kuwagata_full_bottle)Lost Kuwagata Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_shimauma_full_bottle)Lost Shimauma Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_hammer_full_bottle)Lost Hammer Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_spanner_full_bottle)Lost Spanner Fullbottle$(/l) (5.9%)$(li)1 $(l:build/items/black_lost_hasami_full_bottle)Lost Hasami Fullbottle$(/l) (5.9%)"
+		}
+	]
+}

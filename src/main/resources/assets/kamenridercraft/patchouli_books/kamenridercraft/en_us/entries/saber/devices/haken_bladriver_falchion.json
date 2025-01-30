@@ -1,0 +1,16 @@
+{
+	"name": "Haken Bladriver (Falchion)",
+	"icon": "kamenridercraft:haken_bladriver_falchion",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/falchion)Kamen Rider Falchion"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/haken_bladriver_falchion"
+		}
+	]
+}

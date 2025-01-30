@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#double_action_x)Double Action Gamer Level X/XX$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#double_action_x)Double Action Gamer Level X/XX$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

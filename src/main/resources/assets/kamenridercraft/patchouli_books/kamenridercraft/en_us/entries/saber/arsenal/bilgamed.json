@@ -1,0 +1,19 @@
+{
+	"name": "Bilgamed",
+	"icon": "kamenridercraft:bilgamed",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/storious)Kamen Rider Storious$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bilgamed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

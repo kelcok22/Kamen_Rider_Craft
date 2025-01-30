@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Grease",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:grease",
+			"text": "Has a 5% chance to spawn from a $(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/sclash_jelly)Empty Sclashjelly$(/l) (66.7%)$(li)1 $(l:build/items/lost_castle_full_bottle)Lost Castle Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/lost_kuwagata_full_bottle)Lost Kuwagata Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/lost_fukurou_full_bottle)Lost Fukurou Fullbottle$(/l) (11.1%)"
+		}
+	]
+}

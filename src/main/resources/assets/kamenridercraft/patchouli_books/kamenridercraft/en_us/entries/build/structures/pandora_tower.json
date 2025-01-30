@@ -1,0 +1,21 @@
+{
+	"name": "Pandora Tower",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Pandora Tower",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Spawn locations: Birch Forest, Dark Forest, Forest, Flower Forest, Grove, Mangrove Swamp, Old Growth Birch Forest, Plains, Savanna, Savanna Plateau, Sunflower Plains, Swamp, Windswept Savanna$(br2)Includes a $(l:build/mobs/touto_guardian)Touto Guardian$(/l) spawner$(br)Includes a $(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l) spawner$(br)Includes a $(l:build/mobs/seito_guardian)Seito Guardian$(/l) spawner$(br)Includes a $(l:build/mobs/hard_guardian)Hard Guardian$(/l) spawner$(br2)Includes a $(l:misc/blocks/evol_boss_block)Evol Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower.png"
+			],
+			"title": " "
+		}
+	]
+}

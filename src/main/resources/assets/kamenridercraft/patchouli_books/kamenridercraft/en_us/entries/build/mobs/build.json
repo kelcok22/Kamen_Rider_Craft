@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Build (Full Potential)",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:build",
+			"text": "Has a 5% chance to spawn from a $(l:build/mobs/seito_guardian)Seito Guardian$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 100$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l) (46.2%)$(li)1 $(l:build/items/comic_full_bottle)Comic Fullbottle$(/l) (46.2%)$(li)1 $(l:build/items/unfinished_genius_full_bottle)Unfinished Genius Fullbottle$(/l) (7.6%)"
+		}
+	]
+}
