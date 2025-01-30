@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-26T21:57:38.3378173	Item Models: kamenridercraft
+// 1.21.1	2025-01-30T20:55:59.8170352	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
 597b835e5301cc9880ab4fe6fa14382e5d95267f assets/kamenridercraft/models/item/burning_solar.json
@@ -12,6 +12,7 @@ feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amaz
 769c40204716b79903a33a0f47bf83daf86b30bb assets/kamenridercraft/models/item/helheim_button.json
 f86d141373dc18bc1d67980dd839817c41b040f1 assets/kamenridercraft/models/item/helheim_door.json
 2374b04a8f7183e8405c43bfbde70e70e8470c4e assets/kamenridercraft/models/item/helheim_fence.json
+b5e3ef354eb31b4c4b57b719c51988adc151f0ee assets/kamenridercraft/models/item/jimber_lemon_energy.json
 3ab66c2eff2332e9f2dd7fe186619f50c79ddce3 assets/kamenridercraft/models/item/nextshift.json
 d781ea726585a7a5db075fb7970a3a392180d0ed assets/kamenridercraft/models/item/next_builder.json
 f8b7d5745dafd95960f9ef58738b3b6599e5d239 assets/kamenridercraft/models/item/next_hunter.json

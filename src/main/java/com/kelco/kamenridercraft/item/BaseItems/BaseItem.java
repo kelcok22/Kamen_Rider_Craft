@@ -4,7 +4,6 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.util.List;
 
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -18,6 +17,7 @@ public class BaseItem extends Item {
     public UseAnim Animation;
     private Item craftingRemainingItem = null;
     private Boolean hasHoverText = false;
+    public String Model_Name = null;
 
     public BaseItem(Properties prop) {
         super(prop);
@@ -40,6 +40,10 @@ public class BaseItem extends Item {
     }
     public BaseItem has_basic_model() {
         ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
+        return this;
+    }
+    public BaseItem model_has_different_name(String Name) {
+        Model_Name=Name;
         return this;
     }
 

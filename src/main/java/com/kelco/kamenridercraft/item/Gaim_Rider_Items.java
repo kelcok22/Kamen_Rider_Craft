@@ -9,17 +9,13 @@ import com.kelco.kamenridercraft.item.gaim.SengokuDriverItem;
 import com.kelco.kamenridercraft.item.gaim.SidLockseedItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 public class Gaim_Rider_Items {
 
@@ -142,7 +138,8 @@ public class Gaim_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"jimbar_lemon_arms","gaim","sengoku_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-					.AddCompatibilityList(Can_use_Jimber_Arms).ResetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()));
+					.AddCompatibilityList(Can_use_Jimber_Arms).ResetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+					.model_has_different_name("lemon_energy_lockseed").has_basic_model());
 
 	public static final DeferredItem<Item> LEMON_ENERGY_LOCKSEED = ITEMS.register("lemon_energy_lockseed",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"energy_lemon_arms","zangetsu_shin","sengoku_driver_belt",
