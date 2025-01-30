@@ -2,7 +2,7 @@
 	"name": "Royal Sword of Logos Buckle (Durendal)",
 	"icon": "kamenridercraft:royal_sword_of_logos_buckle_durendal",
 	"category": "kamenridercraft:saber/devices",
-	"sortnum": 10,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access $(l:ex_aid/riders/ex-aid#pac)Pac Gamer$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access $(l:ex_aid/riders/ex_aid#pac)Pac Gamer$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

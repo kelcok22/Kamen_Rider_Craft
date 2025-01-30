@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Para-DX's $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Used to access Para-DX's $(l:ex_aid/riders/para-dx#fighter)Fighter Gamer Level 50$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Para-DX's $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Used to access Para-DX's $(l:ex_aid/riders/para_dx#fighter)Fighter Gamer Level 50$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

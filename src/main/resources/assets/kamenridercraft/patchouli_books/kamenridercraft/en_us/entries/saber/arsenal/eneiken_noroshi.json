@@ -2,7 +2,7 @@
 	"name": "Eneiken Noroshi",
 	"icon": "kamenridercraft:eneiken_noroshi",
 	"category": "kamenridercraft:saber/arsenal",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

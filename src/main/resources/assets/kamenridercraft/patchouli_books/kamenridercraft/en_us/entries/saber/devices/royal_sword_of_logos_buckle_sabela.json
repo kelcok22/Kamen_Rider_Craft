@@ -2,7 +2,7 @@
 	"name": "Royal Sword of Logos Buckle (Sabela)",
 	"icon": "kamenridercraft:royal_sword_of_logos_buckle_sabela",
 	"category": "kamenridercraft:saber/devices",
-	"sortnum": 9,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

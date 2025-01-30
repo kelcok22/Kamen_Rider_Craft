@@ -1,0 +1,17 @@
+{
+	"name": "Phantom Crusher",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:phantom_crusher",
+			"text": "Has a 5% chance to spawn from a $(l:build/mobs/downfall_guardian)Downfall Guardian$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/full_bottle)Empty Bottle$(/l) (50%)$(li)1 $(l:build/items/metal_full_bottle)Metal Fullbottle$(/l) (40%)$(li)1 $(l:build/items/metal_tank_tank_full_bottle)Metal TankTank Fullbottle$(/l) (10%)"
+		}
+	]
+}

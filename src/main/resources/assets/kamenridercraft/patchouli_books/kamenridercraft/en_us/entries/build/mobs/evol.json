@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Evol",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:evol",
+			"text": "Summoned from an $(l:misc/blocks/evol_boss_block)Evol Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 200$(br2)Special moves:$(li)Transforms into $(l:build/riders/evol#phantom_state)Evolto Phantom State$(/l) at under 100 health$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/cobra_evol_bottle)Cobra Evol Bottle$(/l)$(li)1 $(l:build/items/rider_system_evol_bottle)Rider System Evol Bottle$(/l) (47.1%)$(li)1 $(l:build/items/dragon_evol_bottle)Dragon Evol Bottle$(/l) (23.5%)$(li)1 $(l:build/items/rabbit_evol_bottle)Rabbit Evol Bottle$(/l) (23.5%)$(li)1 $(l:build/items/evol_trigger)Evol Trigger$(/l) (5.9%)"
+		}
+	]
+}

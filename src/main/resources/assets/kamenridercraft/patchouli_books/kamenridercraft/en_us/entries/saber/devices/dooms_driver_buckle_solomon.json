@@ -1,0 +1,19 @@
+{
+	"name": "Dooms Driver Buckle (Solomon)",
+	"icon": "kamenridercraft:dooms_driver_buckle_solomon",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/solomon)Kamen Rider Solomon"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_driver_buckle_solomon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

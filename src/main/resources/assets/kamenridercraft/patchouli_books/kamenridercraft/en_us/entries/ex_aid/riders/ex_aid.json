@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -50,7 +50,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed V$(li)Haste"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed V$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -74,7 +74,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/lazer)Lazer$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Jump Boost III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -153,7 +153,7 @@
 			"anchor": "muteki",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_muteki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
 			"name": "Muteki Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l) as $(l:ex_aid/riders/ex-aid#maximum)Maximum Gamer Level 99$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l) as $(l:ex_aid/riders/ex_aid#maximum)Maximum Gamer Level 99$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -206,7 +206,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid$(/l) and $(l:ex_aid/riders/para-dx)Para-DX$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Night Vision III$(li)Haste V$(li)Strength III$(br2)Spawns a $(l:ex_aid/mobs/paradx_summon)Para-DX Summon$(/l) when used"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l) and $(l:ex_aid/riders/para_dx)Para-DX$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Night Vision III$(li)Haste V$(li)Strength III$(br2)Spawns a $(l:ex_aid/mobs/paradx_summon)Para-DX Summon$(/l) when used"
 		},
 		{
 			"type": "patchouli:entity",
@@ -230,7 +230,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -242,7 +242,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) $(l:ex_aid/riders/lazer)Lazer,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) $(l:ex_aid/riders/lazer)Lazer,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Bugster Virus III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -314,7 +314,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex-aid)Ex-Aid$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",

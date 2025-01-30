@@ -1,0 +1,152 @@
+{
+	"name": "Kamen Rider Geiz",
+	"icon": "kamenridercraft:ziku_driver_geiz",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "geiz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:zi-o/items/geiz_ridewatch)Geiz Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "FaizArmor",
+			"text": "Accessed with the $(l:zi-o/items/faiz_ridewatch)Faiz Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "WizardArmor",
+			"text": "Accessed with the $(l:zi-o/items/wizard_ridewatch)Wizard Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DriveArmor",
+			"text": "Accessed with the $(l:zi-o/items/drive_ridewatch)Drive Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GhostArmor",
+			"text": "Accessed with the $(l:zi-o/items/ghost_ridewatch)Ghost Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ex_aid",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ridewatch_geiz\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Ex-AidArmor",
+			"text": "Accessed with the $(l:zi-o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genm",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:genm_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GenmArmor",
+			"text": "Accessed with the $(l:zi-o/items/genm_ridewatch)Genm Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "build",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ridewatch_geiz\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "BuildArmor",
+			"text": "Accessed with the $(l:zi-o/items/build_ridewatch)Build Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "revive_goretsu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_revive_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GeizRevive Goretsu",
+			"text": "Accessed with the $(l:zi-o/items/geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "revive_shippu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_revive_shippu_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GeizRevive Shippu",
+			"text": "Accessed with the $(l:zi-o/items/geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "majesty",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_majesty_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GeizMajesty",
+			"text": "Accessed with the $(l:zi-o/items/geiz_majesty_ridewatch)Geiz Majesty Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Saturation$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bibill",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:bibiru_geiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "BibillArmor",
+			"text": "Accessed with the $(l:zi-o/items/bibiru_geiz_ridewatch)Bibiru Geiz Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geiz",
+			"text": "Appears in:$(li)Kamen Rider BiBiBi no BibillGeiz (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+		}
+	]
+}

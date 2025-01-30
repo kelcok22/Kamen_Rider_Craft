@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#creator)Creator Gamer$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#creator)Creator Gamer$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

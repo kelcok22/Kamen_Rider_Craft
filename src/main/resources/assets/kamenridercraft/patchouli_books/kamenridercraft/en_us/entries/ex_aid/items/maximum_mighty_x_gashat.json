@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#maximum)Maximum Gamer Level 99$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#maximum)Maximum Gamer Level 99$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

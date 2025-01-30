@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Ex-Aid's $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex-aid#action_2)Action Gamer Level 1/2$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Ex-Aid's $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#action_2)Action Gamer Level 1/2$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

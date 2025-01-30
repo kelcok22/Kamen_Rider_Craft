@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by Para-DX's $(l:ex_aid/riders/para-dx#perfect_knock_out)Perfect Knock Out Gamer Level 99$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used by Para-DX's $(l:ex_aid/riders/para_dx#perfect_knock_out)Perfect Knock Out Gamer Level 99$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

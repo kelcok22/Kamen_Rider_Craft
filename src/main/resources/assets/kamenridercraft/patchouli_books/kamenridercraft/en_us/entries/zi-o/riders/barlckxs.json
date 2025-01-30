@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Barlckxs",
+	"icon": "kamenridercraft:ziku_driver_barlckxs",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "barlckxs",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_barlckxs\",components:{custom_data:{slot_tex1:\"kamenridercraft:barlckxs_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:zi-o/items/barlckxs_ridewatch)Barlckxs Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Barlckxs",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_barlckxs)Ziku Driver (Barlckxs)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "giant",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_barlckxs\",components:{custom_data:{slot_tex1:\"kamenridercraft:bio_rider_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Giant Barlckxs",
+			"text": "Accessed with the $(l:zi-o/items/bio_rider_ridewatch)Bio Rider Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Barlckxs",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_barlckxs)Ziku Driver (Barlckxs)$(/l)$(br2)Status Effects:$(li)Giant III$(li)Haste II$(li)Strength"
+		}
+	]
+}

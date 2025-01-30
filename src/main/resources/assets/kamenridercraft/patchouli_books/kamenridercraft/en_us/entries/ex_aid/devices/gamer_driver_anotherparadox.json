@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/another_para-dx)Kamen Rider Another Para-DX"
+			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/another_para_dx)Kamen Rider Another Para-DX"
 		},
 		{
 			"type": "patchouli:crafting",

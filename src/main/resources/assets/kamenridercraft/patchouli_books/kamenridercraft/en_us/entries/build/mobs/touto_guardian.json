@@ -1,0 +1,17 @@
+{
+	"name": "Touto Guardian",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:touto_guardian",
+			"text": "Spawn locations: $(l:build/structures/pandora_tower)Pandora Tower$(/l), Birch Forest, Dark Forest, Forest, Flower Forest, Grove, Meadow, Old Growth Birch Forest, Plains, River, Sunflower Plains"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (55.6%)$(li)1 $(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/tank_full_bottle)Tank Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/gorilla_full_bottle)Gorilla Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l) (11.1%)$(br2)Bosses$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l) (5%)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l) (5%)"
+		}
+	]
+}

@@ -1,0 +1,368 @@
+{
+	"name": "Kamen Rider Zi-O",
+	"icon": "kamenridercraft:ziku_driver_zi_o",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "zi_o",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:zi-o/items/zi_o_ridewatch)Zi-O Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "KuugaArmor",
+			"text": "Accessed with the $(l:zi-o/items/kuuga_ridewatch)Kuuga Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "agito",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "AgitoArmor",
+			"text": "Accessed with the $(l:zi-o/items/agito_ridewatch)Agito Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Agito Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "RyukiArmor",
+			"text": "Accessed with the $(l:zi-o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Ryuki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "BladeArmor",
+			"text": "Accessed with the $(l:zi-o/items/blade_ridewatch)Blade Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Blade Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste$(li)Saturation VI$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "HibikiArmor",
+			"text": "Accessed with the $(l:zi-o/items/hibiki_ridewatch)Hibiki Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Hibiki Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "KabutoArmor",
+			"text": "Accessed with the $(l:zi-o/items/kabuto_ridewatch)Kabuto Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Kabuto Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Den-OArmor",
+			"text": "Accessed with the $(l:zi-o/items/den_o_ridewatch)Den-O Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "KivaArmor",
+			"text": "Accessed with the $(l:zi-o/items/kiva_ridewatch)Kiva Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)DX Kiva Ridewatch (2018, toyline)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "w",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "WArmor",
+			"text": "Accessed with the $(l:zi-o/items/w_ridewatch)W Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "OOOArmor",
+			"text": "Accessed with the $(l:zi-o/items/ooo_ridewatch)OOO Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "FourzeArmor",
+			"text": "Accessed with the $(l:zi-o/items/fourze_ridewatch)Fourze Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GaimArmor",
+			"text": "Accessed with the $(l:zi-o/items/gaim_ridewatch)Gaim Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste$(li)Saturation VI$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ridewatch_zi_o\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GhostArmor",
+			"text": "Accessed with the $(l:zi-o/items/ghost_ridewatch)Ghost Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ex_aid",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Ex-AidArmor",
+			"text": "Accessed with the $(l:zi-o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "build",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "BuildArmor",
+			"text": "Accessed with the $(l:zi-o/items/build_ridewatch)Build Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor",
+			"text": "Accessed with the $(l:zi-o/items/decade_ridewatch)Decade Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_ryuki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Ryuki Form",
+			"text": "Accessed with the $(l:zi-o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_faiz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_faiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Faiz Form",
+			"text": "Accessed with the $(l:zi-o/items/faiz_ridewatch)Faiz Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_ooo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor OOO Form",
+			"text": "Accessed with the $(l:zi-o/items/ooo_ridewatch)OOO Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_ghost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ghost_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Ghost Form",
+			"text": "Accessed with the $(l:zi-o/items/ghost_ridewatch)Ghost Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_ex_aid_l",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_l\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Ex-Aid Form",
+			"text": "Accessed with the $(l:zi-o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_ex_aid_r",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_r\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Ex-Aid Form",
+			"text": "Accessed with the $(l:zi-o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III$(br2)Spawns a $(l:zi_o/mobs/decade_armor_ex_aid)DecadeArmor Ex-Aid Form summon$(/l) when used"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_build",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Build Form",
+			"text": "Accessed with the $(l:zi-o/items/build_ridewatch)Build Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade_saber",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "DecadeArmor Saber Form",
+			"text": "Accessed with the $(l:zi-o/items/saber_ridewatch)Saber Ridewatch$(/l) as $(l:zi-o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!- (2021, web series)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ii",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ii_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Zi-O II",
+			"text": "Accessed with the $(l:zi-o/items/zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Haste II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "trinity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_trinity_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "Zi-OTrinity",
+			"text": "Accessed with the $(l:zi-o/items/zi_o_trinity_ridewatch)Zi-O Trinity Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "grandzi_o",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "GrandZi-O",
+			"text": "Accessed with the $(l:zi-o/items/grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ohmaform",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ohma_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "OhmaForm",
+			"text": "Accessed with the $(l:zi-o/items/ohma_zi_o_ridewatch)Ohma Zi-O Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration IV$(li)Haste VII$(li)Saturation$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "woz",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:woz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"name": "WozArmor",
+			"text": "Accessed with the $(l:zi-o/items/woz_ridewatch)Woz Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zi-O",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Transforms with the $(l:zi-o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength (with weapon)$(li)Speed II$(li)Haste$(li)Boost"
+		}
+	]
+}

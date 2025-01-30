@@ -1,0 +1,21 @@
+{
+	"name": "Faust Base",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Faust Base",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Spawn locations: Forest, Mangrove Swamp, Plains, Savanna, Savanna Plateau, Sunflower Plains, Swamp, Windswept Savanna$(br2)Includes a $(l:misc/blocks/night_rogue_boss_block)Night Rogue Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rogue_base.png"
+			],
+			"title": " "
+		}
+	]
+}
