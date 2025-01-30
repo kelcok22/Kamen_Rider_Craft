@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -36,6 +37,7 @@ public class FakeLockseedItem extends BaseItem {
 					p_41129_.sendSystemMessage(Component.translatable("message.kamenridercraft.fake"));
 					itemstack.consume(1,p_41129_);
 				}
+				p_41129_.awardStat(Stats.ITEM_USED.get(this));
 			}
 
 		}
