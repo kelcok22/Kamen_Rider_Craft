@@ -12,6 +12,7 @@ import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.custom.HelheimCrack;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
+import com.kelco.kamenridercraft.data.ModBlockStateProvider;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -642,7 +643,12 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_BRICK = registerBlock("sword_of_logos_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
 					.strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RiderTabs.RIDER_DECOR));
-	
+
+	public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_BLOCK = registerBlock("sword_of_logos_gold_block",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
+					.strength(2.0F, 6.0F).sound(SoundType.STONE))
+					.is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
+
 
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_TRIM = registerBlock("sword_of_logos_gold_trim",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
