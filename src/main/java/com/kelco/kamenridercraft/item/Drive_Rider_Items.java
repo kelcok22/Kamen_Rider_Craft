@@ -42,7 +42,7 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> BASIC_TIRE = ITEMS.register("basic_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"no_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.ChangeSlot(2));
+					.ChangeSlot(2).model_has_different_name("speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED_CHASER = ITEMS.register("proto_speedshift_chaser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
@@ -50,7 +50,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("chaser.geo.json","chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get()));
+					.ChangeModel("chaser.geo.json","chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get())
+					.ChangeSlot(2).model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zero","drive","drivedriver_belt",
@@ -89,7 +90,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_MACH = ITEMS.register("deadheatshift_mach",
@@ -98,7 +99,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get()));
+					.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get())
+					.ChangeSlot(2).model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT = ITEMS.register("deadheatshift",
@@ -136,7 +138,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
-					.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2));
+					.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2)
+					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_NOT_ALL = ITEMS.register("tridoronshift_not_all",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tridoron","drive","drivedriver_belt",
@@ -145,7 +148,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()));
+					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON = ITEMS.register("tridoronshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tridoron","drive","drivedriver_belt",
@@ -208,7 +211,8 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123).ChangeSlot(2)
+					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<Item>();
 
@@ -219,7 +223,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER).ChangeSlot(2)
+					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<Item>();
 
@@ -229,7 +234,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 5, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 4,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR).ChangeSlot(2));
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR).ChangeSlot(2)
+					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"max_flare_tire","drive","drivedriver_belt",
@@ -297,7 +303,8 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> SHIFT_MAD_DOCTOR_MACH = ITEMS.register("mad_doctor_mach",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","mach","drivedriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-					.addAlternative(PEOPLE_SAVER.get()).addNeedForm(SHIFT_DEAD_HEAT_MACH.get(),1).ChangeSlot(2));
+					.addAlternative(PEOPLE_SAVER.get()).addNeedForm(SHIFT_DEAD_HEAT_MACH.get(),1).ChangeSlot(2)
+					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("mad_doctor").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAD_DOCTOR = ITEMS.register("mad_doctor",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","drive","drivedriver_belt",
@@ -426,7 +433,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()));
+					.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("signal_chaser").has_basic_model());
 
 	public static final DeferredItem<Item> SIGNAL_CHASER= ITEMS.register("signal_chaser",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chaser","mach_driver_honoh_belt_chaser",
@@ -509,7 +516,8 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()));
+					.ChangeModel("chaser.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+					.model_has_different_name("rhino_super_viral_core").has_basic_model());
 
 	public static final DeferredItem<Item> RHINO_SUPER_VIRAL_CORE = ITEMS.register("rhino_super_viral_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chou","mashin_chaser","blank",

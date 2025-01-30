@@ -594,7 +594,8 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
-                    ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false)));
+                    ,new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
+                    .model_has_different_name("j_stone").has_basic_model());
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",

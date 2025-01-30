@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/hanselnuts_to_gretel_wonder_ride_book"
+  }
+}
