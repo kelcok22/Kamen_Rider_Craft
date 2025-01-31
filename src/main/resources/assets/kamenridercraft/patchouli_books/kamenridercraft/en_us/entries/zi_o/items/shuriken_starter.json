@@ -1,0 +1,19 @@
+{
+	"name": "Shuriken Starter (Shinobi)",
+	"icon": "kamenridercraft:shuriken_starter",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 93,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Shinobi's $(l:zi_o/devices/shinobi_driver)Shinobi Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shuriken_starter",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

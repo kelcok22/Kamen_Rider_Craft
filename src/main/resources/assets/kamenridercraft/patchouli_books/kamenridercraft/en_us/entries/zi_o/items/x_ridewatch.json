@@ -1,0 +1,16 @@
+{
+	"name": "X Ridewatch",
+	"icon": "kamenridercraft:x_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 72,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/x_ridewatch"
+		}
+	]
+}

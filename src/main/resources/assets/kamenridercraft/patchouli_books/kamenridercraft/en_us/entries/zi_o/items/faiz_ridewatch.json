@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Ridewatch",
+	"icon": "kamenridercraft:faiz_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#faiz)FaizArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/faiz_ridewatch"
+		}
+	]
+}

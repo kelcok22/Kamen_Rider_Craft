@@ -1,0 +1,16 @@
+{
+	"name": "W CycloneJokerXtreme Ridewatch",
+	"icon": "kamenridercraft:w_xtreme_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 58,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX W CycloneJokerXtreme Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/w_xtreme_ridewatch"
+		}
+	]
+}

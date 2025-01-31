@@ -1,0 +1,16 @@
+{
+	"name": "Ohma Advent Calendar",
+	"icon": "kamenridercraft:ohma_advent_calendar",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 98,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Does something special when right-clicked as $(l:zi_o/riders/zi_o)Zi-O$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/ohma_advent_calendar"
+		}
+	]
+}

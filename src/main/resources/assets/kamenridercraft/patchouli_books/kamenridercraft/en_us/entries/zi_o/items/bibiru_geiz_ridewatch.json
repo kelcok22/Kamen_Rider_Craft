@@ -1,0 +1,19 @@
+{
+	"name": "Bibiru Geiz Ridewatch",
+	"icon": "kamenridercraft:bibiru_geiz_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider BiBiBi no BibillGeiz (2019, Hyper Battle Video)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#bibill)BibillArmor$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bibiru_geiz_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
