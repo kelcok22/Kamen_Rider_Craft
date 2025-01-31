@@ -101,7 +101,8 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.model_has_different_name("geiz_revive_ridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
@@ -329,7 +330,8 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get()));
+							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get())
+							.model_has_different_name("ghost_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","geiz","ziku_driver_geiz_belt_ghost",
@@ -360,7 +362,8 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)));
+							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+							.model_has_different_name("ex_aid_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH = ITEMS.register("ex_aid_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ex_aid","zi_o","ziku_driver_zi_o_belt_ex_aid",
@@ -385,7 +388,8 @@ public class Zi_O_Rider_Items {
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-							.addAlternative(DECADE_BUILD_RIDEWATCH.get()));
+							.addAlternative(DECADE_BUILD_RIDEWATCH.get())
+							.model_has_different_name("build_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> BUILD_RIDEWATCH = ITEMS.register("build_ridewatch",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","zi_o","ziku_driver_zi_o_belt_build",
@@ -594,7 +598,8 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					.model_has_different_name("ginga_miridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GINGA_TAIYO_MIRIDEWATCH = ITEMS.register("ginga_taiyo_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_taiyo","woz","beyondriver_belt",
@@ -602,7 +607,8 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get()));
+					.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get())
+					.model_has_different_name("ginga_miridewatch").has_basic_model());
 	
 	public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_wakusei","woz","beyondriver_belt",
