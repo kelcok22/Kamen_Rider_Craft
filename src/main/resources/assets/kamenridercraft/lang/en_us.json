@@ -1970,6 +1970,12 @@
   "item.kamenridercraft.lupin_gunner": "Lupin Gunner",
   "item.kamenridercraft.blade_gunner": "Blade Gunner",
   "item.kamenridercraft.brain_sword": "Brain Megane Blade",
+  "item.kamenridercraft.justice_cage": "Justice Cage",
+  "item.kamenridercraft.drum_shield_red": "Red Drum Shield",
+  "item.kamenridercraft.drum_shield_green": "Green Drum Shield",
+  "item.kamenridercraft.monster_top": "Monster (Rush Face)",
+  "item.kamenridercraft.monster_bottom": "Monster (Rush Fang)",
+  "item.kamenridercraft.rumble_smasher": "Rumble Smasher",
 
   "item.kamenridercraft.drive_system_car": "Drive System Car",
   "item.kamenridercraft.proto_speedshift": "Proto Shift Speed",
@@ -4153,10 +4159,12 @@
   "block.kamenridercraft.helheim_plant_4": "Green Helheim Fern",
 
   "block.kamenridercraft.kuruma_brick": "Kuruma Senter Brick",
+  "block.kamenridercraft.drive_pit_ladder": "Drive Pit Ladder",
 
 "block.kamenridercraft.taddle_brick": "Taddle Quest Brick",
 "block.kamenridercraft.taddle_wall": "Taddle Quest Wall",
 "block.kamenridercraft.wallplate": "Wallplate",
+  "block.kamenridercraft.wallplate_grate_slab": "White Wallplate Grate Slab",
   "block.kamenridercraft.hazard_wallplate": "Hazard Stripe Wallplate",
 "block.kamenridercraft.white_wallplate": "White Wallplate",
 "block.kamenridercraft.wooden_panel": "Dark Wood Panel Block",
@@ -4198,6 +4206,7 @@
 "block.kamenridercraft.sword_of_logos_wood": "Sword of Logos Dark Wood Block",
 "block.kamenridercraft.sword_of_logos_wood_trim": "Sword of Logos Trimmed Dark Wood Block",
 "block.kamenridercraft.sword_of_logos_wood2": "Sword of Logos Wood Block",
+  "block.kamenridercraft.sword_of_logos_arch": "Sword of Logos Arch Block",
 
   "block.kamenridercraft.helheim_crack": "Helheim Crack",
 "block.kamenridercraft.ginga_meteor": "Ginga Meteor Rock",
