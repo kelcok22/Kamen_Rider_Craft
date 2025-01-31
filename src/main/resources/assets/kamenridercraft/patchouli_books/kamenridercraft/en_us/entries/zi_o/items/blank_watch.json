@@ -1,0 +1,17 @@
+{
+	"name": "Blank Ridewatch",
+	"icon": "kamenridercraft:blank_watch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used as the base item for most Zi-O items$(br2)Right-click to obtain the $(l:zi_o/items/zi_o_ridewatch)Zi-O,$(/l) $(l:zi_o/items/geiz_ridewatch)Geiz,$(/l) and $(l:zi_o/items/tsukuyomi_ridewatch)Tsukuyomi$(/l) Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/blank_watch",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		}
+	]
+}

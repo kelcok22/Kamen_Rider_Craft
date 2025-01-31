@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Ginga",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ginga",
+			"text": "Found inside $(l:zi_o/structures/ginga_meteor)Ginga's Meteor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Health: 100$(br2)Can only be damaged during the day$(br2)Drops$(li)1 $(l:zi_o/items/ginga_miridewatch)Ginga Miridewatch$(/l)"
+		}
+	]
+}

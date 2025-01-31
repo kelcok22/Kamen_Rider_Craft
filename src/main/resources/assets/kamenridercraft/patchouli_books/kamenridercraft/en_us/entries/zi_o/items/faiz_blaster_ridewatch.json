@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Blaster Form Ridewatch",
+	"icon": "kamenridercraft:faiz_blaster_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 51,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 2 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/faiz_blaster_ridewatch"
+		}
+	]
+}

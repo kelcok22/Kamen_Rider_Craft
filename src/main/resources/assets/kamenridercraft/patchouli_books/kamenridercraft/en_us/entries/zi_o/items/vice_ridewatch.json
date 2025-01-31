@@ -1,0 +1,16 @@
+{
+	"name": "Vice Ridewatch",
+	"icon": "kamenridercraft:vice_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/vice_ridewatch"
+		}
+	]
+}

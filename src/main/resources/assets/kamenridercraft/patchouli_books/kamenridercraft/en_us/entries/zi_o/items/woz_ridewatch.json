@@ -1,0 +1,16 @@
+{
+	"name": "Woz Ridewatch",
+	"icon": "kamenridercraft:woz_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#woz)WozArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/woz_ridewatch"
+		}
+	]
+}

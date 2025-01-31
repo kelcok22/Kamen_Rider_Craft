@@ -1,0 +1,16 @@
+{
+	"name": "Genm Ridewatch",
+	"icon": "kamenridercraft:genm_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#genm)GenmArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/genm_ridewatch"
+		}
+	]
+}

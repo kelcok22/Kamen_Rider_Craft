@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "Ginga's Meteor",
+    "description": "",
+    "icon": "kamenridercraft:ginga_meteor",
+    "sortnum": 5
+}

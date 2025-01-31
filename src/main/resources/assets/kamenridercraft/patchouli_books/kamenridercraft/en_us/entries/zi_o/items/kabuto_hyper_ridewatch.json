@@ -1,0 +1,16 @@
+{
+	"name": "Kabuto Hyper Form Ridewatch",
+	"icon": "kamenridercraft:kabuto_hyper_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 54,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Kabuto Hyper Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/kabuto_hyper_ridewatch"
+		}
+	]
+}

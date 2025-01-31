@@ -1,0 +1,19 @@
+{
+	"name": "Woz Miridewatch",
+	"icon": "kamenridercraft:woz_miridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Woz's $(l:zi_o/devices/beyondriver)Beyondriver$(/l)$(br2)Used to access Woz's $(l:zi_o/riders/woz#woz)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:woz_miridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		}
+	]
+}

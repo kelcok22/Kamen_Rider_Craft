@@ -1,0 +1,16 @@
+{
+	"name": "Fourze Cosmicstates Ridewatch",
+	"icon": "kamenridercraft:fourze_cosmic_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 60,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Fourze Cosmicstates Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/fourze_cosmic_ridewatch"
+		}
+	]
+}
