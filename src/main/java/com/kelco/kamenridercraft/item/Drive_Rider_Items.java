@@ -655,6 +655,10 @@ public class Drive_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> RUMBLE_SMASHER = ITEMS.register("rumble_smasher",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

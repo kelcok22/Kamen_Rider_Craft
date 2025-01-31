@@ -1,0 +1,16 @@
+{
+	"name": "Black RX Ridewatch",
+	"icon": "kamenridercraft:black_rx_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 75,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/black_rx_ridewatch"
+		}
+	]
+}

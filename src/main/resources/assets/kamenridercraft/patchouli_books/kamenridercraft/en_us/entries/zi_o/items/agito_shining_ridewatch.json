@@ -1,0 +1,16 @@
+{
+	"name": "Agito Shining Form Ridewatch",
+	"icon": "kamenridercraft:agito_shining_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 1 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/agito_shining_ridewatch"
+		}
+	]
+}

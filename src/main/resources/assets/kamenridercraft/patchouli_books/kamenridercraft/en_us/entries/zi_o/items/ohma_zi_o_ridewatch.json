@@ -1,0 +1,19 @@
+{
+	"name": "Ohma Zi-O Ridewatch",
+	"icon": "kamenridercraft:ohma_zi_o_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ohma_zi_o_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

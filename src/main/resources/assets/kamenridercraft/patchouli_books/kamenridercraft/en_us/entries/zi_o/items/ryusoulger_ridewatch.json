@@ -1,0 +1,19 @@
+{
+	"name": "Ryusoulger Ridewatch",
+	"icon": "kamenridercraft:ryusoulger_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 67,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O UT (2019, apparel)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ryusoulger_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

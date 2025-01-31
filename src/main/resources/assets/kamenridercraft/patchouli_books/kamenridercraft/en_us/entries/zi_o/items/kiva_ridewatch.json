@@ -1,0 +1,16 @@
+{
+	"name": "Kiva Ridewatch",
+	"icon": "kamenridercraft:kiva_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kiva)KivaArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/kiva_ridewatch"
+		}
+	]
+}

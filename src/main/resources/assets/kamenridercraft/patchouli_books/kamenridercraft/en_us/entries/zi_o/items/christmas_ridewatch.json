@@ -1,0 +1,19 @@
+{
+	"name": "Zi-O Ridewatch (Christmas ver.)",
+	"icon": "kamenridercraft:christmas_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 90,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O Charadeco Cake (2018, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_ridewatch",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		}
+	]
+}

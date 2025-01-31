@@ -1,0 +1,16 @@
+{
+	"name": "Saber Ridewatch",
+	"icon": "kamenridercraft:saber_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!-$(br2)Used to access $(l:zi_o/riders/zi_o#decade_saber)DecadeArmor Saber Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/saber_ridewatch"
+		}
+	]
+}

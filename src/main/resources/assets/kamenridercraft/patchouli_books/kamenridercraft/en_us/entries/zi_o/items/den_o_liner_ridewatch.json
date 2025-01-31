@@ -1,0 +1,16 @@
+{
+	"name": "Den-O Liner Form Ridewatch",
+	"icon": "kamenridercraft:den_o_liner_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 55,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Den-O Liner Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/den_o_liner_ridewatch"
+		}
+	]
+}
