@@ -158,19 +158,13 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
             .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> KIVA_CARD_NEO = ITEMS.register("kiva_card_neo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","neo_decadriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva"));
 
     public static final DeferredItem<Item> KIVA_CARD = ITEMS.register("kiva_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").addAlternative(KIVA_CARD_NEO.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_CARD = ITEMS.register("w_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_w","neo_decade","neo_decadriver_belt",

@@ -166,7 +166,8 @@ public class W_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addNeedForm(CYCLONE_MEMORY.get(),1).ChangeSlot(2));
+					.addNeedForm(CYCLONE_MEMORY.get(),1).ChangeSlot(2)
+					.model_has_different_name("skull_memory").has_basic_model());
 	
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
