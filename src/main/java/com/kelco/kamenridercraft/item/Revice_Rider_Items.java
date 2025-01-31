@@ -277,7 +277,8 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> KIRIN_VISTAMP_VICE = ITEMS.register("kirin_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kirin","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.model_has_different_name("kirin_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> KIRIN_VISTAMP = ITEMS.register("kirin_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_kirin","revi","revice_driver_belt_ki",
@@ -289,7 +290,7 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_niwatori","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-					.SetPalyerModelInvisible());
+					.SetPalyerModelInvisible().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> NIWATORI_VISTAMP = ITEMS.register("niwatori_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_niwatori","revi","revice_driver_belt_ni",
@@ -301,7 +302,8 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","vice","buddy_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-					.ChangeModel("vice_funkorogashi.geo.json","vice_funkorogashi.animation.json").SetPalyerModelInvisible().SetPalyerModelInvisible());
+					.ChangeModel("vice_funkorogashi.geo.json","vice_funkorogashi.animation.json")
+					.SetPalyerModelInvisible().model_has_different_name("niwatori_vistamp").has_basic_model());
 
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_funkorogashi","revi","revice_driver_belt_fu",
