@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "bonus_rolls": 0.0,
+	  "conditions": [
+		{
+		  "condition": "minecraft:survives_explosion"
+		}
+	  ],
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:kamen_cafe_counter"
+		}
+	  ],
+	  "rolls": 1.0
+	}
+  ],
+  "random_sequence": "kamenridercraft:kamen_cafe_counter"
+}
