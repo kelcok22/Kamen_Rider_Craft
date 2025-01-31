@@ -85,7 +85,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("default_wings_armor.geo.json"));
+					.ChangeModel("default_wings_armor.geo.json").model_has_different_name("taka_full_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE = ITEMS.register("taka_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","build","build_driver_belt",
@@ -150,7 +150,8 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.WITHER, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
+					.model_has_different_name("dragon_full_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE = ITEMS.register("dragon_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","cross_z","build_driver_belt_cross_z",
@@ -455,7 +456,8 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false))
-					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3));
+					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3)
+					.model_has_different_name("fullfull_rabbit_tank_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> FULLFULL_RABBIT_TANK_BOTTLE = ITEMS.register("fullfull_rabbit_tank_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",
@@ -700,7 +702,8 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)));
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.model_has_different_name("evol_trigger").has_basic_model());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_black_hole","evol","evol_driver_belt_b",
@@ -834,7 +837,8 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 4,true,false)).AddNeedItemList(NEED_ITEM_BI_KAISER));
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 4,true,false))
+					.AddNeedItemList(NEED_ITEM_BI_KAISER).model_has_different_name("gear_engine_red").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE_RED = ITEMS.register("gear_engine_red",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_reverse","kaiser","blank",
@@ -860,7 +864,8 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).AddNeedItemList(NEED_ITEM_HELL_BROS));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
+					.AddNeedItemList(NEED_ITEM_HELL_BROS).model_has_different_name("gear_engine").has_basic_model());
 
 	public static final DeferredItem<Item> GEAR_ENGINE = ITEMS.register("gear_engine",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_engine","hell_bros","blank",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/fullfull_rabbit_tank_bottle"
+  }
+}
