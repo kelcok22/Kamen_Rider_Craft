@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Woz",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:woz",
+			"text": "Summoned from a $(l:misc/blocks/woz_boss_block)Woz Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Health: 100$(br2)Special moves:$(li)Uses a $(l:zi_o/riders/woz#shinobi)Futurering form$(/l) at under 50 health$(br2)Drops$(li)2-4 $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l)$(li)1 $(l:zi_o/items/woz_miridewatch)Woz Miridewatch$(/l)$(li)1 $(l:zi_o/items/shinobi_miridewatch)Shinobi Miridewatch$(/l) (33.3%)$(li)1 $(l:zi_o/items/quiz_miridewatch)Quiz Miridewatch$(/l) (33.3%)$(li)1 $(l:zi_o/items/kikai_miridewatch)Kikai Miridewatch$(/l) (33.3%)"
+		}
+	]
+}

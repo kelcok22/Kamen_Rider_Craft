@@ -1,0 +1,16 @@
+{
+	"name": "Ex-Aid Ridewatch",
+	"icon": "kamenridercraft:ex_aid_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ex_aid)Ex-AidArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/ex_aid_ridewatch"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Ginga Scope",
+	"icon": "kamenridercraft:ginga_scope",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 97,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Ginga's $(l:zi_o/devices/ginga_driver)Ginga Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_scope",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

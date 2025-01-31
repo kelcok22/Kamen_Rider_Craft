@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Mugen Damashii Ridewatch",
+	"icon": "kamenridercraft:ghost_mugen_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Ghost Mugen Damashii Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/ghost_mugen_ridewatch"
+		}
+	]
+}

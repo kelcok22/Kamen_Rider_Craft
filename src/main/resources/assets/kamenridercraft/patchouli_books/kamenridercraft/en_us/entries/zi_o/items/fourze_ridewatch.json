@@ -1,0 +1,16 @@
+{
+	"name": "Fourze Ridewatch",
+	"icon": "kamenridercraft:fourze_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#fourze)FourzeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/fourze_ridewatch"
+		}
+	]
+}

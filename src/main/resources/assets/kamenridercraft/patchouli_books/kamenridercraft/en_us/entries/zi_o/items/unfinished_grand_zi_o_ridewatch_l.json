@@ -1,0 +1,16 @@
+{
+	"name": "Unfinished Grand Zi-O Ridewatch Part",
+	"icon": "kamenridercraft:unfinished_grand_zi_o_ridewatch_l",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 91,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft the $(l:zi_o/items/grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_l"
+		}
+	]
+}

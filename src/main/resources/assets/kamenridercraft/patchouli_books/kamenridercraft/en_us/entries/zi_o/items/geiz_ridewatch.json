@@ -1,0 +1,19 @@
+{
+	"name": "Geiz Ridewatch",
+	"icon": "kamenridercraft:geiz_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Geiz's $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#geiz)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geiz_ridewatch",
+			"title": " ",
+			"text": "Obtained by right-clicking a $(l:zi_o/items/blank_watch)Blank Ridewatch$(/l)"
+		}
+	]
+}

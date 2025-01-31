@@ -1,0 +1,16 @@
+{
+	"name": "ZO Ridewatch",
+	"icon": "kamenridercraft:zo_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 79,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zo_ridewatch"
+		}
+	]
+}

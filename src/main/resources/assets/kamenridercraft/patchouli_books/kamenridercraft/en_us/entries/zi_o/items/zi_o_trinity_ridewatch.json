@@ -1,0 +1,16 @@
+{
+	"name": "Zi-O Trinity Ridewatch",
+	"icon": "kamenridercraft:zi_o_trinity_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#trinity)Zi-OTrinity$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_trinity_ridewatch"
+		}
+	]
+}
