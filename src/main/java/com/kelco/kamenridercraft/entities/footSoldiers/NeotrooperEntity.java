@@ -23,6 +23,7 @@ public class NeotrooperEntity extends BaseHenchmenEntity{
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kabuto_Rider_Items.NEOTROOPER_BELT.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.MACHINEGUN_BLADE.get()));
+        this.setMeleeOnSpawn(50.0D);
     }
 
 

@@ -2,11 +2,16 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
+import java.util.Iterator;
+
 import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.ServerConfig;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -39,7 +44,8 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
-    private boolean swordgunMelee = false;
+    private boolean swordgunMelee;
+    private boolean swordgunMeleeOnly = false;
     private final RangedBowAttackGoal<BaseHenchmenEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
         public void stop() {
@@ -62,6 +68,9 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         this.reassessWeaponGoal();
     }
 
+    public void setMeleeOnSpawn(double chance) {
+        if (this.random.nextDouble() * 100.0 < chance) this.setMeleeOnly(true);
+    }
     
     @Override
     protected void registerGoals() {
@@ -91,7 +100,8 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
             boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
                     || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
                     || this.getTarget().distanceToSqr(this) < BOW_DISTANCE));
-            if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
+        	if (swordgunMeleeOnly) this.setSwordgunMelee(true);
+            else if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
         }
         super.aiStep();
         if (this.swinging) this.updateSwingTime();
@@ -172,7 +182,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     public void reassessWeaponGoal() {
         if (this.level() != null && !this.level().isClientSide) {
             ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-            if (itemstack.getItem() instanceof BowItem) {
+            if (itemstack.getItem() instanceof BowItem && !this.swordgunMeleeOnly) {
                 this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
                 this.goalSelector.removeGoal(this.meleeGoal);
                 this.goalSelector.addGoal(2, this.bowGoal);
@@ -198,13 +208,23 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         }
     }
 
-    public boolean getSwordgunMelee() {
-        return this.swordgunMelee;
+    public void setMeleeOnly(boolean p_21840_) {
+       this.swordgunMeleeOnly = p_21840_;
     }
+
+    public boolean getMeleeOnly() {
+       return this.swordgunMeleeOnly;
+    }
+
+   public void addAdditionalSaveData(CompoundTag p_30418_) {
+      super.addAdditionalSaveData(p_30418_);
+	  p_30418_.putBoolean("SwordgunMeleeOnly", this.swordgunMeleeOnly);
+   }
 
     public void readAdditionalSaveData(CompoundTag p_32152_) {
         super.readAdditionalSaveData(p_32152_);
         this.reassessWeaponGoal();
+        this.swordgunMeleeOnly = p_32152_.getBoolean("SwordgunMeleeOnly");
     }
 
     public void setItemSlot(EquipmentSlot p_32138_, ItemStack p_32139_) {

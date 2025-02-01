@@ -65,6 +65,7 @@ public class RideplayerEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Ex_Aid_Rider_Items.EX_AIDLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.RIDE_PLAYER_BELT.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.RIDE_WEAPON.get()));
+        this.setMeleeOnSpawn(75.0D);
     }
     
 	public void remove(Entity.RemovalReason p_149847_) {

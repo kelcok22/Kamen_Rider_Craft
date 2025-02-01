@@ -24,6 +24,7 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Faiz_Rider_Items.FAIZLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Faiz_Rider_Items.SMARTBUCKLE.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Faiz_Rider_Items.AXEL_RAY_GUN.get()));
+		this.setMeleeOnSpawn(40.0D);
     }
 
 
