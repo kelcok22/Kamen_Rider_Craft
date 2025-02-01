@@ -2,7 +2,7 @@
 	"name": "Shimi Lot",
 	"icon": "kamenridercraft:shimi_lot",
 	"category": "kamenridercraft:saber/arsenal",
-	"sortnum": 18,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",
