@@ -1,0 +1,19 @@
+{
+	"name": "Drum Shield Red",
+	"icon": "kamenridercraft:drum_shield_red",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#dream_vegas)Type Speed Vegas$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drum_shield_red",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
