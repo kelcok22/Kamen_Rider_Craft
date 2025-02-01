@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+	  "id": "kamenridercraft:emotional_dragon_wonder_ride_book"
 	},
-	"title": "To protect the people I love!",
-	"description": "Transform into Blades Tategami Hyoujuu Senki",
-	"frame": "goal",
+	"title": "Emotions overflowing",
+	"description": "Transform into Saber Emotional Dragon",
+	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:saber/king_lion_daisenki",
+  "parent": "kamenridercraft:saber/dragonic_knight",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,10 +34,10 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:seiken_swordriver_blades"
+				"kamenridercraft:seiken_swordriver_saber"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:emotional_dragon_wonder_ride_book\"}"
               }
 			}
 		  }
