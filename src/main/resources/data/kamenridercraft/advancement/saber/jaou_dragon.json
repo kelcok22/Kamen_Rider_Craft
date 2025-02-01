@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:jaou_dragon_wonder_ride_book"
+	},
+	"title": "The fear of the darkness...",
+	"description": "Transform into Calibur Jaou Dragon",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/calibur",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:jaken_caliburdriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:jaou_dragon_wonder_ride_book\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

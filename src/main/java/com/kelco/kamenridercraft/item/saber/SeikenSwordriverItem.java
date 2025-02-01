@@ -53,6 +53,14 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         if (get_Form_Item(belt, 1).get_Stored_num()==2 && get_Form_Item(belt, 2)!= Saber_Rider_Items.SABER_BLANK_2.get()
         ||(get_Form_Item(belt, 1).get_Stored_num()==2&get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get())) {
             set_Form_Item(belt, Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK.asItem(), 1);
+        }}else if (belt.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_BLADES.get()){
+        if (get_Form_Item(belt, 2).get_Stored_num()==2 && get_Form_Item(belt, 1)!= Saber_Rider_Items.SABER_BLANK_1.get()
+        ||(get_Form_Item(belt, 2).get_Stored_num()==2&get_Form_Item(belt, 3)!= Saber_Rider_Items.SABER_BLANK_3.get())) {
+            set_Form_Item(belt, Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK.asItem(), 2);
+        }}else if (belt.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_ESPADA.get()){
+        if (get_Form_Item(belt, 3).get_Stored_num()==2 && get_Form_Item(belt, 1)!= Saber_Rider_Items.SABER_BLANK_1.get()
+        ||(get_Form_Item(belt, 3).get_Stored_num()==2&get_Form_Item(belt, 2)!= Saber_Rider_Items.SABER_BLANK_2.get())) {
+            set_Form_Item(belt, Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.asItem(), 3);
         }
     }
 

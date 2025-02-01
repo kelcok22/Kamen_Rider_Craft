@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/tategami_hyoujuu_senki_wonder_ride_book"
+    }
+}
