@@ -18,5 +18,6 @@ public class ShadowTrooperEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Kabuto_Rider_Items.KABUTOLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kabuto_Rider_Items.SHADOW_TROOPER_BELT.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Kabuto_Rider_Items.MACHINEGUN_BLADE.get()));
+        this.setMeleeOnSpawn(50.0D);
     }
 }
