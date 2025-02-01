@@ -121,9 +121,17 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
 				if (z <= 0) z *= 0.25f;
 
-				if (z !=0) {
+				if (z>0) {
 					setYRot(yRotO - passenger.xxa * 5F);
 					setXRot(passenger.getXRot() * 3f);
+
+					setRot(getYRot(), getXRot());
+					this.yBodyRot = this.getYRot();
+					this.yHeadRot = this.yBodyRot;
+					//this.playSound(SoundEvents.SKELETON_HORSE_AMBIENT_WATER, 1.0F, 0F);
+				}else if (z<0) {
+					setYRot(yRotO + passenger.xxa * 5F);
+					setXRot(-passenger.getXRot() * 3f);
 
 					setRot(getYRot(), getXRot());
 					this.yBodyRot = this.getYRot();
@@ -195,10 +203,13 @@ protected SoundEvent getDeathSound() {
 
 		RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 		RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
+		RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
 
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
 			if (state.isMoving() && getControllingPassenger() != null) {
-				return state.setAndContinue(DRIVE);
+				if (getControllingPassenger().zza>0)return state.setAndContinue(DRIVE);
+				else return state.setAndContinue(DRIVE_BACKWARDS);
+
 			}
 			else {
 				return state.setAndContinue(IDLE);
