@@ -1,0 +1,19 @@
+{
+	"name": "Haouken Xross Saber",
+	"icon": "kamenridercraft:haouken_xross_saber",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by Saber's $(l:saber/riders/saber#xross_saber)Xross Saber$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:haouken_xross_saber",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
