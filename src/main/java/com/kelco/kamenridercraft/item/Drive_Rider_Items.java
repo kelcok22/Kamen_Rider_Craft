@@ -51,7 +51,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeModel("chaser.geo.json","chaser_hayai.animation.json").alsoChange2ndSlot(BASIC_TIRE.get())
-					.ChangeSlot(2).model_has_different_name("proto_speedshift").has_basic_model());
+					.model_has_different_name("proto_speedshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_PROTO_SPEED = ITEMS.register("proto_speedshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zero","drive","drivedriver_belt",
@@ -100,7 +100,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.addAlternative(SHIFT_DEAD_HEAT_DRIVE_MACH.get()).alsoChange2ndSlot(BASIC_TIRE.get())
-					.ChangeSlot(2).model_has_different_name("dead_heat").has_basic_model());
+					.model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT = ITEMS.register("deadheatshift",
@@ -139,7 +139,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
 					.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2)
-					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
+					.model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_NOT_ALL = ITEMS.register("tridoronshift_not_all",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tridoron","drive","drivedriver_belt",
@@ -148,7 +148,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
+					.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON = ITEMS.register("tridoronshift",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tridoron","drive","drivedriver_belt",
@@ -304,7 +304,7 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","mach","drivedriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
 					.addAlternative(PEOPLE_SAVER.get()).addNeedForm(SHIFT_DEAD_HEAT_MACH.get(),1).ChangeSlot(2)
-					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("mad_doctor").has_basic_model());
+					.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("mad_doctor").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAD_DOCTOR = ITEMS.register("mad_doctor",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"mad_doctor_tire","drive","drivedriver_belt",
@@ -656,6 +656,14 @@ public class Drive_Rider_Items {
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> RUMBLE_SMASHER = ITEMS.register("rumble_smasher",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CURE_QUICKER = ITEMS.register("cure_quicker",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> TEN_TON_WEIGHT = ITEMS.register("ten_ton_weight",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
