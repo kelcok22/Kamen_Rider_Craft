@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:thebee_zecter"
+	  "id": "kamenridercraft:rebirth_driver"
 	},
-	"title": "Sting like TheBee",
-	"description": "Transform into Kamen Rider TheBee",
+	"title": "Karamiso?",
+	"description": "Transform into Kamen Rider Rebirth",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:kabuto/kabuto",
+  "parent": "kamenridercraft:ooo/proto_birth",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:kabutohead"
+				"kamenridercraft:ooohead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:kabutotroso"
+				"kamenridercraft:oootroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:kabutolegs"
+				"kamenridercraft:ooolegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:thebee_rider_belt"
+				"kamenridercraft:rebirth_driver"
 			  ]
 			}
 		  }

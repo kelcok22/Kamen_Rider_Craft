@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:sin_specter_ghost_eyecon"
+	  "id": "kamenridercraft:haouken_xross_saber"
 	},
-	"title": "Lucky Number 7 of Hell",
-	"description": "Transform into Sin Specter",
+	"title": "Rewrite the Story",
+	"description": "Transform into Xross Saber",
 	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/deep_specter",
+  "parent": "kamenridercraft:saber/elemental_primitive_dragon",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,25 +19,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:saberhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:sabertroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:saberlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:specter_driver"
+				"kamenridercraft:seiken_swordriver_saber"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:sin_specter_ghost_eyecon\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book_xross\"}"
               }
 			}
 		  }
