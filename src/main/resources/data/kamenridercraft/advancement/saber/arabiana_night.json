@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:arabiana_night_wonder_ride_book"
+	},
+	"title": "Sparkle Night!",
+	"description": "Transform into Espada Arabiana Night",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/espada",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:seiken_swordriver_espada"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex3:\"kamenridercraft:arabiana_night_wonder_ride_book\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+	},
+	"title": "Long Get!",
+	"description": "Transform into Blades Tategami Hyoujuu Senki",
+	"frame": "goal",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/king_lion_daisenki",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:seiken_swordriver_blades"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

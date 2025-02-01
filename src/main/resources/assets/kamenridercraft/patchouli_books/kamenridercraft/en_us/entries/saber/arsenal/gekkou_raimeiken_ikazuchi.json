@@ -1,0 +1,16 @@
+{
+	"name": "Gekkou Raimeiken Ikazuchi",
+	"icon": "kamenridercraft:gekkou_raimeiken_ikazuchi",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Used by Espada's $(l:saber/riders/espada#arabiana_night)Arabiana Night$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/gekkou_raimeiken_ikazuchi"
+		}
+	]
+}
