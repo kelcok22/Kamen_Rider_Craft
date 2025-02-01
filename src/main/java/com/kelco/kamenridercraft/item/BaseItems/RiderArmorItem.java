@@ -101,8 +101,10 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     }
 
 
-
-
+    public RiderArmorItem has_basic_model() {
+        ModItemModelProvider.BASIC_ITEM_MODEL2.add(this);
+        return this;
+    }
 
 
 }

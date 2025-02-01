@@ -27,6 +27,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public static List<BaseItem> BASIC_ITEM_MODEL= new ArrayList<BaseItem>();
+    public static List<Item> BASIC_ITEM_MODEL2= new ArrayList<Item>();
 
     @Override
     protected void registerModels() {
@@ -39,6 +40,11 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ((ItemModelBuilder) ((ItemModelBuilder) this.getBuilder(item.toString())).parent(new ModelFile.UncheckedModelFile("item/generated"))).texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), "item/" + item2));
 
             }
+
+        for (int i = 0; i < BASIC_ITEM_MODEL2.size(); i++)
+        {
+                 basicItem(BASIC_ITEM_MODEL2.get(i));
+        }
 
 
 

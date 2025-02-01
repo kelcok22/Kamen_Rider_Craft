@@ -90,7 +90,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.alsoChange2ndSlot(BASIC_TIRE.get()).ChangeSlot(2).model_has_different_name("dead_heat").has_basic_model());
+					.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("dead_heat").has_basic_model());
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT_MACH = ITEMS.register("deadheatshift_mach",
@@ -211,7 +211,7 @@ public class Drive_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123).ChangeSlot(2)
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_PEOPLE_SAVER= new ArrayList<Item>();
@@ -223,7 +223,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER).ChangeSlot(2)
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_PEOPLE_SAVER)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static List<Item> NEED_ITEM_KOUJI_GENBAR= new ArrayList<Item>();
@@ -234,7 +234,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 5, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 5, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 4,true,false))
-					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR).ChangeSlot(2)
+					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_KOUJI_GENBAR)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MAX_FLARE = ITEMS.register("maxflare",
