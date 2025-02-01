@@ -1,0 +1,19 @@
+{
+	"name": "Destruction Shield",
+	"icon": "kamenridercraft:destruction_shield",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Used by Saber's $(l:saber/riders/saber#emotional_dragon)Emotional Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:destruction_shield",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

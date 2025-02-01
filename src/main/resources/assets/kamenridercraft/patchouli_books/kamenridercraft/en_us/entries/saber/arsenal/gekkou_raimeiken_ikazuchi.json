@@ -2,7 +2,7 @@
 	"name": "Gekkou Raimeiken Ikazuchi",
 	"icon": "kamenridercraft:gekkou_raimeiken_ikazuchi",
 	"category": "kamenridercraft:saber/arsenal",
-	"sortnum": 17,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",
