@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-01T22:15:16.5733458	Item Models: kamenridercraft
+// 1.21.1	2025-02-01T23:29:38.313378	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
@@ -116,7 +116,12 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/shif
 2135ee3580824c0697060d3bf97c2c1e67d09e92 assets/kamenridercraft/models/item/shin_ichigohead.json
 d3071505948eb09483e6f6cfedec4ce17ead052d assets/kamenridercraft/models/item/shin_ichigolegs.json
 c4270e728e581fa7f4123e4aee54287afc7bcce3 assets/kamenridercraft/models/item/shin_ichigotroso.json
+54094e252c1ac442d9377cfdecd2bc3a1b1ecedf assets/kamenridercraft/models/item/shin_typhoon_2_1.json
+674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core.json
+674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core2.json
+674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core_2_1.json
 6bf8dd85dfec5afb45d259939b9bf7fbaffa9974 assets/kamenridercraft/models/item/shin_typhoon_ichigo.json
+27cfbf8eaa819232a58a4f780ffa210a011f07c9 assets/kamenridercraft/models/item/shin_typhoon_nigo.json
 24f2ffcf76355d111bef77bd6024537b383963db assets/kamenridercraft/models/item/signal_chaser.json
 24f2ffcf76355d111bef77bd6024537b383963db assets/kamenridercraft/models/item/signal_chaser_mach.json
 06e20afd7e8b6beb96b9a14a7710c510ce9bba47 assets/kamenridercraft/models/item/signal_kaksarn.json

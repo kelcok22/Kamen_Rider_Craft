@@ -199,8 +199,21 @@ public class Reboot_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+					.has_basic_model().AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2 = ITEMS.register("shin_typhoon_core2",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_nigo","shin_typhoon_belt2",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2_1 = ITEMS.register("shin_typhoon_core_2_1",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_2_1","shin_typhoon_belt2",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.has_basic_model().model_has_different_name("shin_typhoon_core").AddToList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1))
@@ -215,8 +228,16 @@ public class Reboot_Rider_Items {
 					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
-	public static final DeferredItem<Item> TYPHOON_ICHIGO = ITEMS.register("shin_typhoon_ichigo",
+	public static final DeferredItem<Item> TYPHOON_1 = ITEMS.register("shin_typhoon_ichigo",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_ichigo", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
+					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+	public static final DeferredItem<Item> TYPHOON_2 = ITEMS.register("shin_typhoon_nigo",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_nigo", SHIN_TYPHOON_CORE_2,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
+					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
+
+	public static final DeferredItem<Item> TYPHOON_2_1 = ITEMS.register("shin_typhoon_2_1",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_2_1", SHIN_TYPHOON_CORE_2_1,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
 					.has_basic_model().AddToTabList(RiderTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
