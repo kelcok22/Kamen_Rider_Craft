@@ -1,0 +1,19 @@
+{
+	"name": "Monster (Rush Fang)",
+	"icon": "kamenridercraft:monster_bottom",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#massive_monster)Type Speed Monster$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:monster_bottom",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

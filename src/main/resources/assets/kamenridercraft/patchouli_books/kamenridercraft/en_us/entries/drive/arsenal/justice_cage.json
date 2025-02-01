@@ -1,0 +1,19 @@
+{
+	"name": "Justice Cage",
+	"icon": "kamenridercraft:justice_cage",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#justice_hunter)Type Speed Hunter$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:justice_cage",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

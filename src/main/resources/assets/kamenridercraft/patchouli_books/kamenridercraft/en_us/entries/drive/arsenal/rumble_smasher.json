@@ -1,0 +1,19 @@
+{
+	"name": "Rumble Smasher",
+	"icon": "kamenridercraft:rumble_smasher",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#rumble_dump)Type Wild Dump$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rumble_smasher",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
