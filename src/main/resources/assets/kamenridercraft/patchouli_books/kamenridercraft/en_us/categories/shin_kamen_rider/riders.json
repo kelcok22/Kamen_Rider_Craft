@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin_kamen_rider/main",
+    "name": "Shin Kamen Rider Riders",
+    "description": "Every Rider and pseudo-Rider from or relating to the movie, Shin Kamen Rider.",
+    "icon": "kamenridercraft:shin_ichigohead",
+    "sortnum": 0
+}

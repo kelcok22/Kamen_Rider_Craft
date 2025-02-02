@@ -1,0 +1,19 @@
+{
+	"name": "Typhoon Energy Converter (No. 2+1)",
+	"icon": "kamenridercraft:shin_typhoon_core_2_1",
+	"category": "kamenridercraft:shin_kamen_rider/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 2+1's $(l:shin_kamen_rider/devices/shin_typhoon_2_1)Shin Typhoon (No. 2+1)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_typhoon_core_2_1",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin_kamen_rider/main",
+    "name": "Shin Kamen Rider Transformation Devices",
+    "description": "The transformation devices used by the Shin Kamen Rider Riders.",
+    "icon": "kamenridercraft:shin_typhoon_ichigo",
+    "sortnum": 1
+}
