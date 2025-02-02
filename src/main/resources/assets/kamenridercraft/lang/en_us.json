@@ -48,6 +48,7 @@
 "tab.kamenridercraft.ride_kamens_items": "Ride Kamens Rider Items",
 "tab.kamenridercraft.amazons_items": "Amazons Rider Items",
 "tab.kamenridercraft.black_sun_items": "Black Sun Rider Items",
+"tab.kamenridercraft.shin_ichigo_items": "Shin Kamen Rider Items",
 
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 "travelerstitles.kamenridercraft.moon": "The Moon",
@@ -3702,6 +3703,16 @@
 "item.kamenridercraft.satansabre": "Satansaber (Black Sun)",
 "item.kamenridercraft.kaijin_stone": "Kaijin Stone",
 "item.kamenridercraft.creation_king_extract_vial": "Creation King Extract Vial",
+
+  "item.kamenridercraft.shin_ichigohead": "Shin Kamen Rider Helmet",
+  "item.kamenridercraft.shin_ichigotroso": "Shin Kamen Rider Chestplate",
+  "item.kamenridercraft.shin_ichigolegs": "Shin Kamen Rider Leggings",
+  "item.kamenridercraft.shin_typhoon_core": "Typhoon Energy Converter (No. 1)",
+  "item.kamenridercraft.shin_typhoon_core2": "Typhoon Energy Converter (No. 2)",
+  "item.kamenridercraft.shin_typhoon_core_2_1": "Typhoon Energy Converter (No. 2+1)",
+  "item.kamenridercraft.shin_typhoon_ichigo": "Shin Typhoon (No. 1)",
+  "item.kamenridercraft.shin_typhoon_nigo": "Shin Typhoon (No. 2)",
+  "item.kamenridercraft.shin_typhoon_2_1": "Shin Typhoon (No. 2+1)",
 
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
