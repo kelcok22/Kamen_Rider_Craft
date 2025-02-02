@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider No. 2+1",
+	"icon": "kamenridercraft:shin_typhoon_2_1",
+	"category": "kamenridercraft:shin_kamen_rider/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shin_typhoon_2_1\",Count:1b},{id:\"kamenridercraft:shin_ichigolegs\",Count:1b},{id:\"kamenridercraft:shin_ichigotroso\",Count:1b},{id:\"kamenridercraft:shin_ichigohead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider No. 2+1",
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Transforms with the $(l:shin_kamen_rider/devices/shin_typhoon_2_1)Shin Typhoon (No. 2+1)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		}
+	]
+}
