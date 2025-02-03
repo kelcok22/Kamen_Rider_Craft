@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "saber_super_hero_senki",
+    "ingredients": [
+  {
+      
+        "item": "kamenridercraft:rekka_daizantou_card"
+      }, 
+      {
+        "item": "kamenridercraft:super_sentai_ring"
+      } , 
+      {
+        "item": "kamenridercraft:super_sentai_full_bottle"
+      } , 
+      {
+        "item": "kamenridercraft:ryusoulger_ridewatch"
+      } , 
+      {
+        "item": "supersentaicraft:drive_shuriken"
+      } , 
+      {
+        "item": "supersentaicraft:den_o_ressha"
+      } , 
+      {
+        "item": "supersentaicraft:ooo_key"
+      } , 
+      {
+        "item": "supersentaicraft:ex_aid_kyutama"
+      } , 
+      {
+        "item": "supersentaicraft:saber_gear"
+      } 
+      ],
+    "result": {
+      "id": "kamenridercraft:super_hero_senki_wonder_ride_book"
+    }
+  }

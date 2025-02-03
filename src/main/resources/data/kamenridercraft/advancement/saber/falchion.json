@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:haken_bladriver_falchion"
+	},
+	"title": "「                 」",
+	"description": "Transform into Kamen Rider Falchion",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/saikou",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:saberhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:sabertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:saberlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:haken_bladriver_falchion"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
