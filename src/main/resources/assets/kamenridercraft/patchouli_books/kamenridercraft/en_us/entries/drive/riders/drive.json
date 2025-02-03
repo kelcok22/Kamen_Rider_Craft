@@ -428,7 +428,7 @@
       "type": "patchouli:entity",
       "anchor": "dream_vegas_high",
       "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
-      "name": "Type High Speed Begas",
+      "name": "Type High Speed Vegas",
       "text": "Accessed with the $(l:drive/items/dream_vegas)Dream Vegas Shift Car$(/l)"
     },
     {
