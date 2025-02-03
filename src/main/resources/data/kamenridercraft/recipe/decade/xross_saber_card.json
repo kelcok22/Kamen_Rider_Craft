@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "final_form_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:saber_card"
+	}, 
+	{
+	  "item": "kamenridercraft:haouken_xross_saber"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:xross_saber_card"
+  }
+}
