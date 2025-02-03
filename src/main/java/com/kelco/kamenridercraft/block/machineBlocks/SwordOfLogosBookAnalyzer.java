@@ -31,6 +31,7 @@ import javax.annotation.Nullable;
 public class SwordOfLogosBookAnalyzer extends MachineBlock {
 	
 	  public static List<Item> BLANK_BOOK= new ArrayList<Item>();
+	  public static List<Item> WONDER_WORLD_BOOK= new ArrayList<Item>();
 		 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -54,17 +55,26 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
 
      private Item getBookDrop(int num) {
  		Random generator = new Random();
+ 		if (num==1){
  			int rand = generator.nextInt(BLANK_BOOK.size());
  			return BLANK_BOOK.get(rand);
- 		}
+        } else {
+ 			int rand = generator.nextInt(WONDER_WORLD_BOOK.size());
+ 			return WONDER_WORLD_BOOK.get(rand);
+        }
+ 	}
 
 
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_RIDE_BOOK.get()) {
+            if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_WORLD_STORY_WONDER_RIDE_BOOK.get()) {
                 process(player, level, pos, hand, getBookDrop(0));
+                return ItemInteractionResult.SUCCESS;
+            }
+            if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_RIDE_BOOK.get()) {
+                process(player, level, pos, hand, getBookDrop(1));
                 return ItemInteractionResult.SUCCESS;
             }
         }

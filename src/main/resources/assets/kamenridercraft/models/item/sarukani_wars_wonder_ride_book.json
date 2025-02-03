@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamenridercraft:item/sarukani_wars_wonder_ride_book"
+    }
+}

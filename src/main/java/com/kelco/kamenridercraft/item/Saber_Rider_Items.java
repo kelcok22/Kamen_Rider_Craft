@@ -30,6 +30,9 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> BLANK_WONDER_RIDE_BOOK = ITEMS.register("blank_wonder_ride_book",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> BLANK_WONDER_WORLD_STORY_WONDER_RIDE_BOOK = ITEMS.register("blank_wonder_world_story_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 
 
 	public static final DeferredItem<Item> SABER_BLANK_1 = ITEMS.register("saber_blank_1",
@@ -402,6 +405,68 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> KIRIN_NO_ONGAESHI_WONDER_RIDE_BOOK = ITEMS.register("kirin_no_ongaeshi_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"kirin_no_ongaeshi","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> SARUKANI_WARS_WONDER_RIDE_BOOK = ITEMS.register("sarukani_wars_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"sarukani_wars","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> BAKUSOU_USAGI_TO_KAME_WONDER_RIDE_BOOK = ITEMS.register("bakusou_usagi_to_kame_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"bakusou_usagi_to_kame","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> HOUSHIN_KAMEN_ENGI_WONDER_RIDE_BOOK = ITEMS.register("houshin_kamen_engi_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"houshin_kamen_engi","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> TSUKI_NO_HIME_KAGUYAN_WONDER_RIDE_BOOK = ITEMS.register("tsuki_no_hime_kaguyan_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"tsuki_no_hime_kaguyan","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> OSHA_JIZOU_SAN_WONDER_RIDE_BOOK = ITEMS.register("osha_jizou_san_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"osha_jizou_san","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.LUCK, 40, 2,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> ISSUN_BUSHI_WONDER_RIDE_BOOK = ITEMS.register("issun_bushi_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"issun_bushi","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> DAISHOUGUN_MOMOICHIROU_WONDER_RIDE_BOOK = ITEMS.register("daishougun_momoichirou_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"daishougun_momoichirou","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> DAIKENGOU_URASHIMAJIROU_WONDER_RIDE_BOOK = ITEMS.register("daikengou_urashimajirou_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"daikengou_urashimajirou","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
+	public static final DeferredItem<Item> DAIYOKOZUNA_KINZABUROU_WONDER_RIDE_BOOK = ITEMS.register("daiyokozuna_kinzaburou_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"daiyokozuna_kinzaburou","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
+					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
+
 	public static final DeferredItem<Item> KING_OF_ARTHUR_WONDER_RIDE_BOOK = ITEMS.register("king_of_arthur_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"king_of_arthur","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
@@ -449,6 +514,20 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.addNeedForm(PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get(), 1).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	// wonder_almighty_wonder_ride_book
+
+	public static final DeferredItem<Item> SUPER_HERO_SENKI_WONDER_RIDE_BOOK = ITEMS.register("super_hero_senki_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_super_hero_senki","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_LION_DAISENKI_WONDER_RIDE_BOOK = ITEMS.register("king_lion_daisenki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"blades_king_lion_daisenki","blades","seiken_swordriver_belt"
@@ -498,8 +577,67 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK));
 
+	public static final DeferredItem<Item> ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK = ITEMS.register("ultimate_bahamut_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_ultimate_bahamut","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_KAENKEN_REKKA_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_kaenken_rekka_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_SUISEIKEN_NAGARE_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_suiseiken_nagare_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_ANKOKUKEN_KURAYAMI_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_ankokuken_kurayami_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_DOGOUKEN_GEKIDO_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_dogouken_gekido_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_FUUSOUKEN_HAYATE_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_fuusouken_hayate_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_ONJUUKEN_SUZUNE_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_onjuuken_suzune_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_KOUGOUKEN_SAIKOU_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_kougouken_saikou_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_MUMEIKEN_KYOMU_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_mumeiken_kyomu_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_ENEIKEN_NOROSHI_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_eneiken_noroshi_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
+	public static final DeferredItem<Item> WONDER_WORLD_STORY_OF_JIKOKUKEN_KAIJI_WONDER_RIDE_BOOK = ITEMS.register("wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.WONDER_WORLD_BOOK));
+
 	public static final DeferredItem<Item> HAPPY_BRAVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("happy_brave_dragon_wonder_ride_book",
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> GHOST_IJINROKU_WONDER_RIDE_BOOK = ITEMS.register("ghost_ijinroku_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_ghost_ijinroku","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
+					,new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> SPECTER_GEKIKOU_SENKI_WONDER_RIDE_BOOK = ITEMS.register("specter_gekikou_senki_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"blades_specter_gekikou_senki","blades","seiken_swordriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
+					.AddNum(2).ChangeSlot(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	//public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",
 	//		() -> new BookGateItem(new Item.Properties(),10).AddToList(RiderTabs.SABER_TAB_ITEM));

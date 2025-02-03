@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:deep_specter_ghost_eyecon"
+			  "kamenridercraft:wonder_world_story_of_kougouken_saikou_wonder_ride_book"
 			]
 		  }
 		]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:ghost/deep_slasher_sword",
-	  "kamenridercraft:saber/specter_gekikou_senki_wonder_ride_book"
+	  "kamenridercraft:saber/x_swordman_wonder_ride_book"
 	]
   },
   "sends_telemetry_event": false
