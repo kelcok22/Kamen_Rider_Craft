@@ -405,8 +405,7 @@ public class Fourze_Rider_Items {
 					.addNeedItem(METEOR_ASTROSWITCH.get())
 					.addNeedItem(NADESHIKO_ASTROSWITCH.get())
 					.addAlternative(FUSION_ASTROSWITCH_OG.get())
-					.AddToList(RiderTabs.FOURZE_TAB_ITEM)
-					.AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
+					.AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 
 
