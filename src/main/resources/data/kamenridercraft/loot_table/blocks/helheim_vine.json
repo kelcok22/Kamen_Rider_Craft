@@ -45,8 +45,19 @@
       "rolls": 1
     },
     {
+      "rolls": 1,
       "bonus_rolls": 0,
-      "conditions": [],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:shears"
+            }
+          }
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -146,8 +157,7 @@
           "functions": [],
           "name": "kamenridercraft:kiwi_lockseed"
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "kamenridercraft:helheim_vine"
