@@ -285,14 +285,14 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK_SHADOW = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book_shadow",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt_saikou"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 					.model_has_different_name("kin_no_buki_gin_no_buki_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt_saikou"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
