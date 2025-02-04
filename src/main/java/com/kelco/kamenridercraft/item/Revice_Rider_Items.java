@@ -831,6 +831,11 @@ public class Revice_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"orteca",KRAKEN_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
+	/*
+	public static final DeferredItem<Item> VISTAMP_HOLDER = ITEMS.register("vistamp_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+	 */
+
 
 
     public static final DeferredItem<Item> OHINBUSTER_50 = ITEMS.register("ohin_buster_50",

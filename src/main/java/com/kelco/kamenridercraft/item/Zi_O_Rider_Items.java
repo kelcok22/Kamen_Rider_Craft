@@ -714,6 +714,11 @@ public class Zi_O_Rider_Items {
 	public static final DeferredItem<Item> GINGADRIVER = ITEMS.register("ginga_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ginga",GINGA_SCOPE ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
+	/*
+	public static final DeferredItem<Item> RIDEWATCH_HOLDER = ITEMS.register("ridewatch_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
+	 */
+
 
     public static final DeferredItem<Item> ZIKAN_GIRADE = ITEMS.register("zikan_girade",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));

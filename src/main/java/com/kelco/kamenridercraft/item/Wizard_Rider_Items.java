@@ -662,6 +662,14 @@ public class Wizard_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
+	/*
+	public static final DeferredItem<Item> WIZARD_RING_HOLDER = ITEMS.register("wizard_ring_holder",
+			() -> new GimmickCarrierItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> BEAST_RING_HOLDER = ITEMS.register("beast_ring_holder",
+			() -> new GimmickCarrierItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+	*/
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

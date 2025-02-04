@@ -837,6 +837,11 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> GIGER_BELT = ITEMS.register("giger_belt",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"giger",BREAKING_MAMMOTH_PROGRISEKEY,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties())
     		.Override_belt_text("giger_belt_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+
+	/*
+	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM));
+	 */
 	 
     public static final DeferredItem<Item> ATTACHE_CALIBUR = ITEMS.register("attache_calibur",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
