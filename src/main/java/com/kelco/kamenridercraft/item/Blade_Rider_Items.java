@@ -195,6 +195,15 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> LARCROUZER = ITEMS.register("larcrouzer",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
+	/*
+	public static final DeferredItem<Item> CHALICE_DECK = ITEMS.register("card_deck_chalice",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM));
+	public static final DeferredItem<Item> LEANGLE_DECK = ITEMS.register("card_deck_leangle",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM));
+	public static final DeferredItem<Item> ROUSE_BANK = ITEMS.register("rouse_bank",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM));
+	 */
+
 	public static final DeferredItem<Item> CHALICE_ARROW = ITEMS.register("chalice_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_SLASHER = ITEMS.register("wild_slasher",

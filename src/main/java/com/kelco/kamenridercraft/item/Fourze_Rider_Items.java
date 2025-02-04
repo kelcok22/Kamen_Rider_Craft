@@ -584,6 +584,11 @@ public class Fourze_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_gingaoh",SOLU_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
 					new Item.Properties()).Add_Extra_Base_Form_Items(OOO_Rider_Items.SAME_MEDAL,OOO_Rider_Items.KUJIRA_MEDAL,OOO_Rider_Items.OOKAMIUO_MEDAL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
+	/*
+	public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",
+            () -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM));
+	 */
+
 
 	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));

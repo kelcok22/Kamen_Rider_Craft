@@ -713,6 +713,11 @@ public class Saber_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"desast",GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
+	/*
+	public static final DeferredItem<Item> HISSATSUHOLDER = ITEMS.register("hissatsuholder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM));
+	 */
+
 	public static final DeferredItem<Item> KAENKEN_REKKA = ITEMS.register("kaenken_rekka",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));

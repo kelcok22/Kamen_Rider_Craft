@@ -872,6 +872,11 @@ public class Gaim_Rider_Items {
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"ryugen_shin",MELON_ENERGY_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(GENESIS_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
+	/*
+	public static final DeferredItem<Item> LOCKSEED_HOLDER = ITEMS.register("lockseed_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM));
+	 */
+
 
 	public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));

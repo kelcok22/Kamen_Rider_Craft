@@ -599,6 +599,11 @@ public class Drive_Rider_Items {
 			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"brain", ROIDMUDE_CORE_003, DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+	/*
+	public static final DeferredItem<Item> SHIFT_CAR_HOLDER = ITEMS.register("shift_car_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+	 */
+
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
