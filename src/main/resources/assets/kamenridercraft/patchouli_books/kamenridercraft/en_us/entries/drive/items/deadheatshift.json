@@ -1,0 +1,16 @@
+{
+	"name": "Shift Dead Heat",
+	"icon": "kamenridercraft:deadheatshift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#dead_heat)Type Dead Heat$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#dead_heat)Dead Heat$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/deadheat"
+		}
+	]
+}

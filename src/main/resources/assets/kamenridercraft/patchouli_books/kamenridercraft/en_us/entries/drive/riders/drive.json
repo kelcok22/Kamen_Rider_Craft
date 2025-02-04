@@ -357,7 +357,7 @@
       "anchor": "all_tire",
       "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:tridoron_all_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
       "name": "Type Tridoron Tire All Kakimazerl",
-      "text": "Accessed with all Tire Koukan Shift Cars in your inventory"
+      "text": "Accessed with the $(l:drive/items/tridoronshift)Tridoron Shift Car$(/l) while having all Tire Koukan Shift Cars in your inventory"
     },
     {
       "type": "patchouli:text",
@@ -470,7 +470,7 @@
     {
       "type": "patchouli:text",
       "title": "Kamen Rider Drive",
-      "text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, special)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
+      "text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Transforms with the $(l:drive/devices/drivedriver)Drive Driver"
     }
   ]
 }

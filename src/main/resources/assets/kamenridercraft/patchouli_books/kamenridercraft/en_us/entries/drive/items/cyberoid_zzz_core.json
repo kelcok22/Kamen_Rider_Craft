@@ -1,0 +1,19 @@
+{
+	"name": "Cyberoid Core ZZZ",
+	"icon": "kamenridercraft:cyberoid_zzz_core",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 68,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to craft Lupin's $(l:drive/arsenal/lupin_gunner)Lupin Gunner$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyberoid_zzz_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

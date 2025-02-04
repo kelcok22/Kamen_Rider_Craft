@@ -1,0 +1,19 @@
+{
+	"name": "Signal Tomarle",
+	"icon": "kamenridercraft:signal_tomarle",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#tomarle)Tomarle$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_tomarle",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Tokujoka Key",
+	"icon": "kamenridercraft:tokujoka_key",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 69,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Mach Production Model's $(l:drive/devices/metro_pd_driver_honoh)Metro PD Driver Honoh$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tokujoka_key",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

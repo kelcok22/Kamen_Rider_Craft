@@ -1,0 +1,19 @@
+{
+	"name": "Shift Speed",
+	"icon": "kamenridercraft:speedshift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:speedshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmudes)Roidmudes$(/l)"
+		}
+	]
+}

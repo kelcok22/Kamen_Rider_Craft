@@ -1,0 +1,16 @@
+{
+	"name": "NEXT System Bike",
+	"icon": "kamenridercraft:next_system_bike",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l) to obtain Signal Bikes"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/next_system_bike"
+		}
+	]
+}

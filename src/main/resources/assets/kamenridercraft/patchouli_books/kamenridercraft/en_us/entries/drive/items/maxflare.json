@@ -1,0 +1,19 @@
+{
+	"name": "Max Flare",
+	"icon": "kamenridercraft:maxflare",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#max_flare)Max Flare$(/l) Shift Tire and $(l:drive/riders/drive#all_tire)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maxflare",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		}
+	]
+}

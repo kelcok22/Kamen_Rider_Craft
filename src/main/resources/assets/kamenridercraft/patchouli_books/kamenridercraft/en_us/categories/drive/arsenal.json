@@ -2,6 +2,6 @@
 	"parent": "kamenridercraft:drive/main",
     "name": "Drive Arsenal",
     "description": "Every weapon and tool used by the Drive Riders.",
-    "icon": "kamenridercraft:drive_logo",
+    "icon": "kamenridercraft:handle_sword",
     "sortnum": 3
 }

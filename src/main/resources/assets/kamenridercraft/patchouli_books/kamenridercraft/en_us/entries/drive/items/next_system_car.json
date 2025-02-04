@@ -1,0 +1,19 @@
+{
+	"name": "NEXT System Car",
+	"icon": "kamenridercraft:next_system_car",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l) to obtain NEXT System Shift Cars"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_system_car",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
