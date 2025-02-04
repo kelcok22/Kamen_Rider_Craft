@@ -1,0 +1,19 @@
+{
+	"name": "Signal Magarl",
+	"icon": "kamenridercraft:signal_magarl",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#magarl)Magarl$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_magarl",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		}
+	]
+}

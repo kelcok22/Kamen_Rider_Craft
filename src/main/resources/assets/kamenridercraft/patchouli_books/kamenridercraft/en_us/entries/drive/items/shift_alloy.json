@@ -1,0 +1,27 @@
+{
+	"name": "Shift Alloy",
+	"icon": "kamenridercraft:shift_alloy",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used as the base item for most Drive items"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:drive/shift_alloy_ingot",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:drive/shift_alloy_ingot_chaser",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:drive/shift_alloy_ingot_neo",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		}
+	]
+}

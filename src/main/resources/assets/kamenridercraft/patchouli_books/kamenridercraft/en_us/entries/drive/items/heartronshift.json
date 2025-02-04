@@ -1,0 +1,16 @@
+{
+	"name": "Shift Heartron",
+	"icon": "kamenridercraft:heartronshift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used to craft Heart's $(l:drive/devices/drivedriver_heart)Drive Driver (Heart)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/heartronshift"
+		}
+	]
+}

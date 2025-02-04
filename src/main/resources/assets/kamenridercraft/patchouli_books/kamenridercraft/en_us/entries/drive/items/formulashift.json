@@ -1,0 +1,16 @@
+{
+	"name": "Shift Formula",
+	"icon": "kamenridercraft:formulashift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#formula)Type Formula$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/formulashift"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Tridoron Key",
+	"icon": "kamenridercraft:tridoron_key",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 54,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used to access Drive's $(l:drive/riders/drive#chou_dead_heat)Super Dead Heat$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/tridoron_key"
+		}
+	]
+}

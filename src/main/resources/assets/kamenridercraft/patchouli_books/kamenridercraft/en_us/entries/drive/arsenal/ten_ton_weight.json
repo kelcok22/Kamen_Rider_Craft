@@ -1,0 +1,19 @@
+{
+	"name": "Ten Ton Weight",
+	"icon": "kamenridercraft:ten_ton_weight",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#rolling_gravity)Type Technic Gravity$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ten_ton_weight",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

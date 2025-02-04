@@ -1,0 +1,19 @@
+{
+	"name": "Shift Next Traveller",
+	"icon": "kamenridercraft:next_traveller",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_traveller",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		}
+	]
+}

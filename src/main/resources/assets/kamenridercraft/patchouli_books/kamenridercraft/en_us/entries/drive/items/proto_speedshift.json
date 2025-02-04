@@ -1,0 +1,19 @@
+{
+	"name": "Proto Shift Speed",
+	"icon": "kamenridercraft:proto_speedshift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Protodrive's $(l:drive/devices/drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Used to access Zero Drive's $(l:drive/riders/drive#zero_drive)Type Speed$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#hayai)Hayai$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_speedshift",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		}
+	]
+}

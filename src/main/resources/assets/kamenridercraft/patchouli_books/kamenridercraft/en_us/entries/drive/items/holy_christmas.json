@@ -1,0 +1,19 @@
+{
+	"name": "Shift Holy Christmas",
+	"icon": "kamenridercraft:holy_christmas",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive Charadeco Cake (2014, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_christmas",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Roidmude Core 003",
+	"icon": "kamenridercraft:roidmude_core_003",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Brain's $(l:drive/devices/brain_driver)Drive Driver (Brain)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_003",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

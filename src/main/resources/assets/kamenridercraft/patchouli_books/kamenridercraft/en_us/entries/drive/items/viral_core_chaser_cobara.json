@@ -1,0 +1,19 @@
+{
+	"name": "Chaser Cobra Viral Core",
+	"icon": "kamenridercraft:viral_core_chaser_cobara",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 61,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_cobara",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		}
+	]
+}

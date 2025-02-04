@@ -1,0 +1,16 @@
+{
+	"name": "Drive System Car",
+	"icon": "kamenridercraft:drive_system_car",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l) to obtain Shift Cars"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_system_car"
+		}
+	]
+}
