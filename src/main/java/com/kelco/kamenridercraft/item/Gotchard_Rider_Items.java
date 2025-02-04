@@ -443,6 +443,11 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> LEGENDRIVER = ITEMS.register("legendriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"legend", LEGEND_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
+	/*
+	public static final DeferredItem<Item> GOTCHANDRAW_HOLDER = ITEMS.register("gotchandraw_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM));
+	 */
+
 
 	public static final DeferredItem<Item> GOTCHARGE_GUN = ITEMS.register("gotcharge_gun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));

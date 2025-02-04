@@ -1109,6 +1109,11 @@ public class Geats_Rider_Items {
 	 public static final DeferredItem<Item> ZILLION_DRIVER_GAZER_ZERO = ITEMS.register("zillion_driver_gazer_zero",
              () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
            		  new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+
+	 /*
+	public static final DeferredItem<Item> RAISE_BUCKLE_HOLDER = ITEMS.register("raise_buckle_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+	 */
  
  
 	

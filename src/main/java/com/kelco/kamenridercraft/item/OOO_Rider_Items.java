@@ -725,6 +725,13 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",
 					() -> new oScannerItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
+			/*
+			public static final DeferredItem<Item> O_MEDAL_HOLDER = ITEMS.register("o_medal_holder",
+					() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+			public static final DeferredItem<Item> O_MEDAL_NEST = ITEMS.register("o_medal_nest",
+					() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+			 */
+
 
 			public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
 					() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
