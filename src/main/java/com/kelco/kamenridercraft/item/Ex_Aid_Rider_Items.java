@@ -20,6 +20,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.function.IntSupplier;
+
 public class Ex_Aid_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -1044,6 +1046,13 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> MACHINA_RAMPART = ITEMS.register("machina_rampart",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
+
+	/*
+	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+	*/
 
 
 	public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
