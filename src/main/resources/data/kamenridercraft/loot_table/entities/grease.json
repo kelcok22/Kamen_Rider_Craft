@@ -32,7 +32,7 @@
 	  "entries": [
 		{
 		  "type": "minecraft:item",
-		  "name": "kamenridercraft:full_bottle",
+		  "name": "kamenridercraft:sclash_jelly",
 		  "functions": [
 			{
 			  "function": "minecraft:set_count",
