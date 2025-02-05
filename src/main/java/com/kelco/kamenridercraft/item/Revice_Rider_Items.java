@@ -425,7 +425,7 @@ public class Revice_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRICERA_VISTAMP = ITEMS.register("tricera_vistamp",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_COBRA_VISTAMP = ITEMS.register("king_cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_invincible","jeanne","libera_driver_belt_k",

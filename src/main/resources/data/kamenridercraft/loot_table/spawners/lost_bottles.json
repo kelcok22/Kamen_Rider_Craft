@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+        		  "type": "minecraft:item",
+        		  "weight": 1,
+        		  "name": "kamenridercraft:black_lost_bat_full_bottle"
+        		},
+        		{
+        		  "type": "minecraft:item",
+        		  "weight": 1,
+        		  "name": "kamenridercraft:black_lost_cd_full_bottle"
+        		},
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_castle_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_fukurou_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_kuwagata_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_shimauma_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_hammer_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_spanner_full_bottle"
+        		  },
+        		  {
+        			  "type": "minecraft:item",
+        			  "weight": 1,
+        			  "name": "kamenridercraft:black_lost_hasami_full_bottle"
+        		  }
+        		  ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "kamenridercraft:spawners/lost_bottles"
+}
