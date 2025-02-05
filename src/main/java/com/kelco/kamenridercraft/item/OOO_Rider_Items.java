@@ -7,15 +7,16 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.BundleContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class OOO_Rider_Items {
 
@@ -754,6 +755,12 @@ public class OOO_Rider_Items {
 
 			public static final DeferredItem<Item> BIRTH_BUSTER = ITEMS.register("birth_buster",
 					() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
+
+
+	public static final BundleContents EMPTY = new BundleContents(List.of());
+
+	public static final DeferredItem<Item>MILK_CAN = ITEMS.register("milk_can",
+			() -> new MilkCanItem(new Item.Properties().stacksTo(1).component(DataComponents.BUNDLE_CONTENTS, EMPTY)));
 
 
 	public static void register(IEventBus eventBus) {

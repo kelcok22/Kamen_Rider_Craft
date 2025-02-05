@@ -358,6 +358,12 @@ public class Rider_Blocks {
 			() -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> {
 				return 10;}).strength(2f).dynamicShape(),Block.box(2, 0, 1, 14,30, 15)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> PANDORA_FIRE = registerBlock("pandora_fire",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
+					.strength(2.0F, 6.0F).sound(SoundType.AMETHYST).noCollission().noOcclusion()
+					.noLootTable().lightLevel((p_152632_) -> {return 10;})).AddToTabList(RiderTabs.RIDER_DECOR));
+
+
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
