@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:bat_full_bottle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:smash_bottl",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:great_dragon_evol_bottle",
+          "weight": 2
+        },
+        {
+                "type": "minecraft:item",
+                   "functions": [
+                     {
+                       "add": false,
+                       "count": {
+                         "type": "minecraft:uniform",
+                         "max": 1.0,
+                         "min": 1.0
+                       },
+                       "function": "minecraft:set_count"
+                     }
+                   ],
+                   "name": "kamenridercraft:dragon_evol_bottle",
+                   "weight": 2
+                 },
+                          {
+                            "type": "minecraft:item",
+                            "functions": [
+                              {
+                                "add": false,
+                                "count": {
+                                  "type": "minecraft:uniform",
+                                  "max": 1.0,
+                                  "min": 1.0
+                                },
+                                "function": "minecraft:set_count"
+                              }
+                            ],
+                            "name": "kamenridercraft:evol_trigger",
+                            "weight": 1
+                          }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "kamenridercraft:spawners/pandora_tower_a"
+}
