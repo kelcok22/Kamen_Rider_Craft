@@ -24,12 +24,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.HELHEIM_FENCE.get());
         dropSelf(Rider_Blocks.HELHEIM_FENCE_GATE.get());
         dropSelf(Rider_Blocks.HELHEIM_TRAPDOOR.get());
+        dropSelf(Rider_Blocks.CORNERSTORE_SIGN.get());
         add(Rider_Blocks.HELHEIM_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));
         dropSelf(Rider_Blocks.ICHIGO_CHAIR.get());
         dropSelf(Rider_Blocks.HELHEIM_SAPLING.get());
         add(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.RABBIT_HUTCH_DOOR.get()));
+        add(Rider_Blocks.GLASS_DOOR.get(),
+                block -> createDoorTable(Rider_Blocks.GLASS_DOOR.get()));
 
     }
 

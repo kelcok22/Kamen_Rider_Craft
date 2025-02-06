@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+"textures": {
+"top": "minecraft:block/quartz_block_bottom",
+"front": "kamenridercraft:block/cornerstore_sign",
+"side": "kamenridercraft:block/cornerstore_sign",
+"bottom": "minecraft:block/quartz_block_bottom"
+}
+}

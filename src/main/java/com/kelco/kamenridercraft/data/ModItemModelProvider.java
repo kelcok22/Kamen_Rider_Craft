@@ -53,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
         basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
+        basicItem(Rider_Blocks.GLASS_DOOR.asItem());
     }
 
 
