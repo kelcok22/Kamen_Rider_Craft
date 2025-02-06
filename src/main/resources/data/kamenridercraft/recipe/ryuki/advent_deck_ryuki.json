@@ -2,17 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "group": "ryuki",
   "pattern": [
-	"XCX",
+	"XXX",
 	"XZX",
 	"XXX"
   ],
   "key": {
 	"X": {
 	  "item": "kamenridercraft:advent_card"
-	}, "C": {
-	  "item": "kamenridercraft:dragreder_advent"
 	}, "Z": {
-	  "item": "minecraft:chest"
+	  "item": "kamenridercraft:dragreder_advent"
 	}
   },
   "result": {

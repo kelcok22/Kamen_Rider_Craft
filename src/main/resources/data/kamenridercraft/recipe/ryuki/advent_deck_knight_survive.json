@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "gai",
+  "group": "ryuki",
   "pattern": [
 	"XXX",
-	"XMX",
+	"XZX",
 	"XXX"
   ],
   "key": {
 	"X": {
 	  "item": "kamenridercraft:advent_card"
-	},
-	"M": {
-	  "item": "kamenridercraft:advent_deck_gai"
+	}, "Z": {
+	  "item": "kamenridercraft:survive_shippu"
 	}
   },
   "result": {
-	"id": "kamenridercraft:v_buckle_gai"
-  }	
+	"id": "kamenridercraft:advent_deck_knight_survive"
+  }
 }
