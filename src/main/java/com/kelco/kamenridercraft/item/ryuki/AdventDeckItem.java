@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.item.ryuki;
 
+import com.kelco.kamenridercraft.procedures.OpenAdventDeckProcedure;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -53,6 +54,8 @@ public class AdventDeckItem extends Item {
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
+		OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
+
 }
