@@ -572,6 +572,8 @@ public class RiderTabs {
             event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
             event.accept(Rider_Blocks.WALLPLATE_GRATE);
 
+            event.accept(Rider_Blocks.GLASS_DOOR);
+
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 

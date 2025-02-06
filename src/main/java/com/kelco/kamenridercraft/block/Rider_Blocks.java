@@ -745,6 +745,13 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<DoorBlock> GLASS_DOOR = registerBlock("glass_door",
+			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
+	public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 //	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
 //			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
 //					.strength(2f)));

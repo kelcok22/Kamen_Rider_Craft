@@ -55,6 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(Rider_Blocks.HELHEIM_TRAPDOOR.get(),modLoc("block/helheim_trapdoor"),true,"cutout");
 
         blockItem(Rider_Blocks.KURUMA_BRICK);
+        blockItem(Rider_Blocks.CORNERSTORE_SIGN);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
@@ -67,6 +68,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
      //   blockItem(Rider_Blocks.PAVEMENT_ROADLINE);
 
         doorBlockWithRenderType(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),modLoc("block/rabbit_hutch_door_bottom"),modLoc("block/rabbit_hutch_door_top"), "cutout");
+        doorBlockWithRenderType(Rider_Blocks.GLASS_DOOR.get(),modLoc("block/glass_door_bottom"),modLoc("block/glass_door_top"), "cutout");
 
     }
 
