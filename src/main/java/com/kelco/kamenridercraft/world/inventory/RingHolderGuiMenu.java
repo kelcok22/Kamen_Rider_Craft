@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.init.ModMenus;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -25,8 +26,6 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
-
-import com.kelco.kamenridercraft.init.ModMenus;
 
 public class RingHolderGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
