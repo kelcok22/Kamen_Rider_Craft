@@ -60,7 +60,7 @@ public class RingHolderGuiScreen extends AbstractContainerScreen<RingHolderGuiMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.kamenridercraft.ring_holder_gui.label_ring_holder"), 7, 7, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.kamenridercraft.ring_holder_gui"), 7, 7, -12829636, false);
 	}
 
 	@Override
