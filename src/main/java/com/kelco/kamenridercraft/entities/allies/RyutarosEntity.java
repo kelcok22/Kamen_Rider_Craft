@@ -151,13 +151,6 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
 						if (!player.getAbilities().instabuild) {
 						   itemstack.shrink(1);
 						}
-						if (ServerConfig.kintarosTissueDrop) {
-							for (int i = 0; i < 10; i++) {
-								ItemEntity tissue = new ItemEntity(player.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
-								tissue.setPickUpDelay(40);
-								player.level().addFreshEntity(tissue);
-							}
-						}
 						return InteractionResult.SUCCESS;
 					}
                     InteractionResult interactionresult = super.mobInteract(player, hand);
