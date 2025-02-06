@@ -716,6 +716,8 @@ public class RiderTabs {
             event.accept(MobsCore.DIRE_WOLF_SOLD_MAGIA_SPAWN_EGG);
             event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
 
+            event.accept(MobsCore.SHIMI_SPAWN_EGG);
+
             event.accept(MobsCore.GIFF_JUNIOR_SPAWN_EGG);
             event.accept(MobsCore.EVIL_SPAWN_EGG);
             event.accept(MobsCore.DAIOUIKA_DEADMAN_SPAWN_EGG);

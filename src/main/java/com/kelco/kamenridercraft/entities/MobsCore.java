@@ -865,6 +865,13 @@ public class MobsCore {
                   () -> new DeferredSpawnEggItem(ARK_ZERO, 0x161616, 0xC40000, new Item.Properties()));
 
 
+          public static final DeferredHolder<EntityType<?>, EntityType<ShimiEntity>> SHIMI = MOBLIST.register("shimi",
+                  () -> EntityType.Builder.of(ShimiEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shimi"));
+          
+          public static final DeferredItem<DeferredSpawnEggItem> SHIMI_SPAWN_EGG = ITEMS.register("shimi_spawn_egg",
+                  () -> new DeferredSpawnEggItem(SHIMI, 0x282828, 0xe2e2e2, new Item.Properties()));
+
+
           public static final DeferredHolder<EntityType<?>, EntityType<GiffJuniorEntity>> GIFF_JUNIOR = MOBLIST.register("giff_junior",
                   () -> EntityType.Builder.of(GiffJuniorEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":giff_junior"));
           

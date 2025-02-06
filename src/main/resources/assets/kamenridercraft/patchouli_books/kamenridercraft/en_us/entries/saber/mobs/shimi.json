@@ -1,0 +1,17 @@
+{
+	"name": "Shimi",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shimi",
+			"text": "Spawn locations: Frozen Peaks, Grove, Ice Spikes, Jagged Peaks, Savanna, Savanna Plateau, Snowy Beach, Snowy Plains, Snowy Slopes, Snowy Taiga, Windswept Savanna"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 45$(br2)Drops$(li)1-3 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp Do Alangina Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book$(/l) (10%)"
+		}
+	]
+}

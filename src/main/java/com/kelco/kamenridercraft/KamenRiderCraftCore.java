@@ -431,6 +431,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.DIRE_WOLF_SOLD_MAGIA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.SHIMI.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.GIFF_JUNIOR.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EVIL.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DAIOUIKA_DEADMAN.get(), BasicEntityRenderer::new);
