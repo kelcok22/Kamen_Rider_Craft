@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ryuki.AdventCardItem;
+import com.kelco.kamenridercraft.item.ryuki.AdventDeckItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -179,45 +180,44 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 			.AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
-	/*	public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+	public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RYUKI_DECK = ITEMS.register("advent_deck_ryuki",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_DECK = ITEMS.register("advent_deck_knight",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> ZOLDA_DECK = ITEMS.register("advent_deck_zolda",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> OUJA_DECK = ITEMS.register("advent_deck_ouja",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> SCISSORS_DECK = ITEMS.register("advent_deck_scissors",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RAIA_DECK = ITEMS.register("advent_deck_raia",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> GAI_DECK = ITEMS.register("advent_deck_gai",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> TIGER_DECK = ITEMS.register("advent_deck_tiger",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> IMPERER_DECK = ITEMS.register("advent_deck_imperer",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> VERDE_DECK = ITEMS.register("advent_deck_verde",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> FEMME_DECK = ITEMS.register("advent_deck_femme",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RYUGA_DECK = ITEMS.register("advent_deck_ryuga",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> ODIN_DECK = ITEMS.register("advent_deck_odin",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> ABYSS_DECK = ITEMS.register("advent_deck_abyss",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> ALTERNATIVE_DECK = ITEMS.register("advent_deck_alternative",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RYUKI_SURVIVE_DECK = ITEMS.register("advent_deck_ryuki_survive",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_SURVIVE_DECK = ITEMS.register("advent_deck_knight_survive",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> OUJA_SURVIVE_DECK = ITEMS.register("advent_deck_ouja_survive",
-			() -> new GimmickCarrierItem(10, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
-*/
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> RYUKIHELMET = ITEMS.register("ryukihead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));

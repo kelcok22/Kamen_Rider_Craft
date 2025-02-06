@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
-import com.kelco.kamenridercraft.client.gui.RingHolderGuiScreen;
+import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
@@ -459,6 +459,8 @@ public class KamenRiderCraftCore
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
+            event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
+
         }
     }
 }
