@@ -1,7 +1,6 @@
 
-package com.kelco.kamenridercraft.item.ryuki;
+package com.kelco.kamenridercraft.item.decade;
 
-/*import com.kelco.kamenridercraft.procedures.OpenAdventDeckProcedure;*/
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -18,28 +17,18 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import io.netty.buffer.Unpooled;
 
-import com.kelco.kamenridercraft.world.inventory.AdventDeckGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
 
 import java.util.List;
 
-public class AdventDeckItem extends Item {
-	public AdventDeckItem() {
+public class RideBookerItem extends Item {
+	public RideBookerItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
-	public AdventDeckItem AddToTabList(List<Item> TabList) {
+	public RideBookerItem AddToTabList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(this);
 	}
 
 	@Override
@@ -49,7 +38,7 @@ public class AdventDeckItem extends Item {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Advent Deck");
+					return Component.literal("Ride Booker");
 				}
 
 				@Override
@@ -57,15 +46,13 @@ public class AdventDeckItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new AdventDeckGuiMenu(id, inventory, packetBuffer);
+					return new RideBookerGuiMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
-		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
 		return ar;
 	}
-
 }

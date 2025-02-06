@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.decade.BlankCardItem;
+import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -730,6 +731,9 @@ public class Decade_Rider_Items {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADELEGGINGS = ITEMS.register("decadelegs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
+
+	public static final DeferredItem<Item> RIDE_BOOKER_BOOK = ITEMS.register("ride_booker_book",
+			() -> new RideBookerItem().AddToTabList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADRIVER = ITEMS.register("decadriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"decade",DECADE_CARD ,DECADEHELMET, DECADECHESTPLATE,DECADELEGGINGS , new Item.Properties())
