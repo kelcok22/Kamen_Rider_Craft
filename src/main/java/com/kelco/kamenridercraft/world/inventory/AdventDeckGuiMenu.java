@@ -81,52 +81,52 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu implements Supplier
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 22) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 33, 21) {
 			private final int slot = 0;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 48, 21) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 56, 21) {
 			private final int slot = 1;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 75, 22) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 21) {
 			private final int slot = 2;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 101, 20) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 103, 21) {
 			private final int slot = 3;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 130, 20) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 126, 21) {
 			private final int slot = 4;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 26, 49) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 33, 44) {
 			private final int slot = 5;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 48, 49) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 56, 44) {
 			private final int slot = 6;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 76, 48) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 80, 44) {
 			private final int slot = 7;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 102, 47) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 103, 44) {
 			private final int slot = 8;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 130, 47) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 126, 44) {
 			private final int slot = 9;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
