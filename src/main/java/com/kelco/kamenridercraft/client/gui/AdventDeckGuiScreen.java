@@ -60,7 +60,6 @@ public class AdventDeckGuiScreen extends AbstractContainerScreen<AdventDeckGuiMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.kamenridercraft.advent_deck_gui"), 5, 7, -12829636, false);
 	}
 
 	@Override

@@ -81,52 +81,52 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu implements Supplier
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 33, 21) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 22) {
 			private final int slot = 0;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 56, 21) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 48, 21) {
 			private final int slot = 1;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 21) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 75, 22) {
 			private final int slot = 2;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 103, 20) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 101, 20) {
 			private final int slot = 3;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 126, 20) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 130, 20) {
 			private final int slot = 4;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 33, 44) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 26, 49) {
 			private final int slot = 5;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 56, 44) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 48, 49) {
 			private final int slot = 6;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 80, 44) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 76, 48) {
 			private final int slot = 7;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 103, 44) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 102, 47) {
 			private final int slot = 8;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 126, 44) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 130, 47) {
 			private final int slot = 9;
 			private int x = AdventDeckGuiMenu.this.x;
 			private int y = AdventDeckGuiMenu.this.y;
@@ -248,12 +248,52 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu implements Supplier
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 0)
+						continue;
+					if (j == 1)
+						continue;
+					if (j == 2)
+						continue;
+					if (j == 3)
+						continue;
+					if (j == 4)
+						continue;
+					if (j == 5)
+						continue;
+					if (j == 6)
+						continue;
+					if (j == 7)
+						continue;
+					if (j == 8)
+						continue;
+					if (j == 9)
+						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 0)
+						continue;
+					if (i == 1)
+						continue;
+					if (i == 2)
+						continue;
+					if (i == 3)
+						continue;
+					if (i == 4)
+						continue;
+					if (i == 5)
+						continue;
+					if (i == 6)
+						continue;
+					if (i == 7)
+						continue;
+					if (i == 8)
+						continue;
+					if (i == 9)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
