@@ -26,7 +26,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import com.kelco.kamenridercraft.init.KamenridercraftModMenus;
+import com.kelco.kamenridercraft.init.ModMenus;
 
 public class RingHolderGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
@@ -42,7 +42,7 @@ public class RingHolderGuiMenu extends AbstractContainerMenu implements Supplier
 	private BlockEntity boundBlockEntity = null;
 
 	public RingHolderGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(KamenridercraftModMenus.RING_HOLDER_GUI.get(), id);
+		super(ModMenus.RING_HOLDER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(7);
