@@ -3939,6 +3939,7 @@
 "entity.kamenridercraft.dire_wolf_sold_magia": "Dire Wolf Sold Magia",
 "entity.kamenridercraft.serval_tiger_sold_magia": "Serval Tiger Sold Magia",
 "entity.kamenridercraft.is": "Is",
+"entity.kamenridercraft.shimi": "Shimi",
 "entity.kamenridercraft.giff_junior": "Giff Junior",
 "entity.kamenridercraft.evil": "Kamen Rider Evil",
 "entity.kamenridercraft.daiouika_deadman": "Daiouika Deadman",
@@ -4101,6 +4102,8 @@
 "item.kamenridercraft.dire_wolf_sold_magia_spawn_egg": "Dire Wolf Sold Magia Spawn Egg",
 "item.kamenridercraft.serval_tiger_sold_magia_spawn_egg": "Serval Tiger Sold Magia Spawn Egg",
 "item.kamenridercraft.is_spawn_egg": "Is Spawn Egg",
+
+"item.kamenridercraft.shimi_spawn_egg": "Shimi Spawn Egg",
 
 "item.kamenridercraft.giff_junior_spawn_egg": "Giff Junior Spawn Egg",
 "item.kamenridercraft.evil_spawn_egg": "Kamen Rider Evil Spawn Egg",
