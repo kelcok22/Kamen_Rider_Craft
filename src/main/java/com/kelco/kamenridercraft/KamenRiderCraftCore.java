@@ -462,6 +462,7 @@ public class KamenRiderCraftCore
         public static void menuScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
+            event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
 
         }
     }
