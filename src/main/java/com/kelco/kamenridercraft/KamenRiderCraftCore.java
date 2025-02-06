@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.client.gui.RingHolderGuiScreen;
 import com.kelco.kamenridercraft.client.renderer.*;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
@@ -26,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.event.level.BlockGrowFeatureEvent;
 import net.neoforged.neoforge.network.event.RegisterConfigurationTasksEvent;
 import org.slf4j.Logger;
@@ -452,6 +454,11 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
 
+        }
+
+        @SubscribeEvent
+        public static void menuScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
         }
     }
 }
