@@ -14,6 +14,7 @@ import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
+import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -87,6 +88,7 @@ public class KamenRiderCraftCore
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         Effect_core.register(modEventBus);
+        ModMenus.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
