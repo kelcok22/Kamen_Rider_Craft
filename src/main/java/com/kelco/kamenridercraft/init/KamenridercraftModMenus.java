@@ -1,7 +1,3 @@
-
-/*
- *	MCreator note: This file will be REGENERATED on each build.
- */
 package com.kelco.kamenridercraft.init;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
