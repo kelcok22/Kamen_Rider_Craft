@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "falchion",
+    "ingredients": [
+  {
+      
+      "item": "minecraft:book"
+      }, 
+      {
+        "item":  "kamenridercraft:wonder_world_story_of_mumeiken_kyomu_wonder_ride_book"
+      } 
+      ],
+    "result": {
+      "id": "kamenridercraft:book_of_ruin"
+    }
+  }

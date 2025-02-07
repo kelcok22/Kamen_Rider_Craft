@@ -65,8 +65,7 @@ public class BattleRaiderEntity extends BaseHenchmenEntity {
 					case 2:
 						boss = MobsCore.ZAIA.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.zaia"));
 						}
 						break;
 					case 3:

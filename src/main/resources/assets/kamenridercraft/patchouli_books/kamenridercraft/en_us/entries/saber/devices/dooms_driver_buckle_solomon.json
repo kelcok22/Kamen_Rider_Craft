@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dooms_driver_buckle_solomon",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
 		}
 	]
 }

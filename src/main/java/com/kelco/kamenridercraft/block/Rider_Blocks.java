@@ -829,7 +829,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> EVOL_BOSS_BLOCK = registerBlock("evol_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-					,MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol_1")).addLine(Component.translatable("henshin.kamenridercraft.evol_2")).AddToTabList(RiderTabs.RIDER_BLOCK));
+					,MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> WOZ_BOSS_BLOCK = registerBlock("woz_boss_block",
@@ -848,6 +848,23 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.ARK_ZERO).addLine(Component.translatable("henshin.kamenridercraft.ark_zero")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+
+	public static final DeferredBlock<Block> SABELA_BOSS_BLOCK = registerBlock("sabela_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.SABELA).addLine(Component.translatable("henshin.kamenridercraft.sabela")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> DURENDAL_BOSS_BLOCK = registerBlock("durendal_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.DURENDAL).addLine(Component.translatable("henshin.kamenridercraft.durendal")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> SOLOMON_BOSS_BLOCK = registerBlock("solomon_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.SOLOMON).addLine(Component.translatable("henshin.kamenridercraft.solomon")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> STORIOUS_BOSS_BLOCK = registerBlock("storious_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

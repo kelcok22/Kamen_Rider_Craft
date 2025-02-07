@@ -32,8 +32,7 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
 					case 0:
 						boss = MobsCore.ETERNAL.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal"));
 						}
 						break;
 					case 1:

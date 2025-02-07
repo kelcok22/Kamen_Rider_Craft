@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "solomon",
+    "ingredients": [
+  {
+      
+        "item": "kamenridercraft:brave_dragon_wonder_ride_book"
+      }, 
+      {
+        "item": "kamenridercraft:dragonic_knight_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:emotional_dragon_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:primitive_dragon_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:elemental_dragon_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:lion_senki_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:king_lion_daisenki_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:lamp_do_alngina_wonder_ride_book"
+      } 
+      ],
+    "result": {
+      "id": "kamenridercraft:omni_force_wonder_ride_book_part"
+    }
+  }

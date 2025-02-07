@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:crimson_forest",
+  "spawners": {
+	"type": "kamenridercraft:charybdis",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

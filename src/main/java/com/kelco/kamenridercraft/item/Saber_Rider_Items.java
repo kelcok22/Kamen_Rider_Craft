@@ -623,6 +623,37 @@ public class Saber_Rider_Items {
 	public static final DeferredItem<Item> HAPPY_BRAVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("happy_brave_dragon_wonder_ride_book",
 			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.SABER_TAB_ITEM));
 
+	public static final DeferredItem<Item> DESAST_ALTER_RIDE_BOOK = ITEMS.register("desast_alter_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHARYBDIS_ALTER_RIDE_BOOK = ITEMS.register("charybdis_alter_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> LEGEIEL_ALTER_RIDE_BOOK = ITEMS.register("legeiel_alter_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> ZOOOUS_ALTER_RIDE_BOOK = ITEMS.register("zooous_alter_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> STORIOUS_ALTER_RIDE_BOOK = ITEMS.register("storious_alter_ride_book",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK_PART = ITEMS.register("omni_force_wonder_ride_book_part",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK_PART_2 = ITEMS.register("omni_force_wonder_ride_book_part_2",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> BOOK_OF_RUIN = ITEMS.register("book_of_ruin",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+			//() -> new BookOfRuinItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> FORBIDDEN_TOME = ITEMS.register("forbidden_tome",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
+	public static final DeferredItem<Item> GREAT_BOOK_FRAGMENT = ITEMS.register("great_book_fragment",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+
 	public static final DeferredItem<Item> GHOST_IJINROKU_WONDER_RIDE_BOOK = ITEMS.register("ghost_ijinroku_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_ghost_ijinroku","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)

@@ -35,8 +35,7 @@ public class SeitoGuardianEntity extends BaseHenchmenEntity {
 					case 0:
 						boss = MobsCore.BUILD.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.build"));
 						}
 						break;
 					case 1:
