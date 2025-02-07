@@ -12,6 +12,7 @@ import com.kelco.kamenridercraft.block.custom.ChairBlock;
 import com.kelco.kamenridercraft.block.custom.HelheimCrack;
 import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
+import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;
 import com.kelco.kamenridercraft.data.ModBlockStateProvider;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
@@ -172,6 +173,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ASTROSWITCH_PROGRAMMER = registerBlock("astroswitch_programmer",
 			() -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> ASTROSWITCH_PANEL = registerBlock("astroswitch_panel",
+			() -> new AstroswitchPanelBlock().AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
 			() -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
