@@ -627,6 +627,20 @@ public class ModCommonEvents {
 		event.put(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), ServalTigerSoldMagiaEntity.setAttributes().build());
 
 		event.put(MobsCore.SHIMI.get(), ShimiEntity.setAttributes().build());
+		event.put(MobsCore.CALIBUR.get(), CaliburEntity.setAttributes().build());
+		event.put(MobsCore.FALCHION.get(), FalchionEntity.setAttributes().build());
+		event.put(MobsCore.SABELA.get(), SabelaEntity.setAttributes().build());
+		event.put(MobsCore.DURENDAL.get(), DurendalEntity.setAttributes().build());
+		event.put(MobsCore.SOLOMON.get(), SolomonEntity.setAttributes().build());
+		event.put(MobsCore.STORIOUS_RIDER.get(), StoriousRiderEntity.setAttributes().build());
+		event.put(MobsCore.LEGEIEL.get(), LegeielEntity.setAttributes().build());
+		event.put(MobsCore.LEGEIEL_FORBIDDEN.get(), LegeielForbiddenEntity.setAttributes().build());
+		event.put(MobsCore.ZOOOUS.get(), ZooousEntity.setAttributes().build());
+		event.put(MobsCore.ZOOOUS_PREDATOR.get(), ZooousPredatorEntity.setAttributes().build());
+		event.put(MobsCore.STORIOUS.get(), StoriousEntity.setAttributes().build());
+		event.put(MobsCore.DESAST.get(), DesastEntity.setAttributes().build());
+		event.put(MobsCore.CHARYBDIS.get(), CharybdisEntity.setAttributes().build());
+		event.put(MobsCore.CHARYBDIS_HERCULES.get(), CharybdisHerculesEntity.setAttributes().build());
 
 		event.put(MobsCore.GIFF_JUNIOR.get(), GiffJuniorEntity.setAttributes().build());
 		event.put(MobsCore.EVIL.get(), EvilEntity.setAttributes().build());
@@ -712,6 +726,7 @@ public class ModCommonEvents {
 		event.register(MobsCore.ABADDON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.SHIMI.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.CHARYBDIS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		
 		event.register(MobsCore.GIFF_JUNIOR.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

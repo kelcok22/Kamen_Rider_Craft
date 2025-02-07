@@ -9,8 +9,11 @@
 			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by $(l:saber/riders/durendal)Kamen Rider Durendal$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/jikokuken_kaiji"
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jikokuken_kaiji",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)"
 		}
 	]
 }

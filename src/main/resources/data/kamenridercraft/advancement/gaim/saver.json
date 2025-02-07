@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:sengoku_driver_saver"
+	},
+	"title": "Fake Fruit Jesus",
+	"description": "Transform into Kamen Rider Saver",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gaim/idunn",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gaimhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gaimtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gaimlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:sengoku_driver_saver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

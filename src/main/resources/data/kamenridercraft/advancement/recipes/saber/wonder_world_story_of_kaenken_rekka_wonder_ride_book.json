@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:wonder_world_story_of_kaenken_rekka_wonder_ride_book"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:saber/primitive_dragon_wonder_ride_book"
+	]
+  },
+  "sends_telemetry_event": false
+}

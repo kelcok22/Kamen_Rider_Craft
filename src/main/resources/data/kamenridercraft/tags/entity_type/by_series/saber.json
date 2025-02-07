@@ -1,5 +1,19 @@
 {
   "values": [
-    "kamenridercraft:shimi"
+	"kamenridercraft:shimi",
+	"kamenridercraft:calibur",
+	"kamenridercraft:falchion",
+	"kamenridercraft:sabela",
+	"kamenridercraft:durendal",
+	"kamenridercraft:solomon",
+	"kamenridercraft:legeiel",
+	"kamenridercraft:legeiel_forbidden",
+	"kamenridercraft:zooous",
+	"kamenridercraft:zooous_predator",
+	"kamenridercraft:storious",
+	"kamenridercraft:storious_rider",
+	"kamenridercraft:desast",
+	"kamenridercraft:charybdis",
+	"kamenridercraft:charybdis_hercules"
   ]
 }

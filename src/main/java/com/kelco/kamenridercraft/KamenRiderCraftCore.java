@@ -433,6 +433,20 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.SERVAL_TIGER_SOLD_MAGIA.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.SHIMI.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.CALIBUR.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.FALCHION.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SABELA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DURENDAL.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SOLOMON.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.STORIOUS_RIDER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.LEGEIEL.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.LEGEIEL_FORBIDDEN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZOOOUS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZOOOUS_PREDATOR.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.STORIOUS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DESAST.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.CHARYBDIS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.CHARYBDIS_HERCULES.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GIFF_JUNIOR.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.EVIL.get(), BasicEntityRenderer::new);

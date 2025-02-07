@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:jaaku_dragon_wonder_ride_book"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:jaou_dragon_wonder_ride_book"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:random_chance",
+		  "chance": 0.25
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_wonder_ride_book",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_wonder_world_story_wonder_ride_book"
+		}
+	  ]
+	}
+  ]
+}

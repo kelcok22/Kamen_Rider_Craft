@@ -34,8 +34,7 @@ public class DownfallGuardianEntity extends BaseHenchmenEntity {
 					case 1:
 						boss = MobsCore.KILLBUS.get().create(this.level());
 						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.killbus_1"));
-							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.killbus_2"));
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.killbus"));
 						}
 						break;
 

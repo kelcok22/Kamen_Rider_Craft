@@ -719,6 +719,20 @@ public class RiderTabs {
             event.accept(MobsCore.SERVAL_TIGER_SOLD_MAGIA_SPAWN_EGG);
 
             event.accept(MobsCore.SHIMI_SPAWN_EGG);
+            event.accept(MobsCore.CALIBUR_SPAWN_EGG);
+            event.accept(MobsCore.FALCHION_SPAWN_EGG);
+            event.accept(MobsCore.SABELA_SPAWN_EGG);
+            event.accept(MobsCore.DURENDAL_SPAWN_EGG);
+            event.accept(MobsCore.SOLOMON_SPAWN_EGG);
+            event.accept(MobsCore.STORIOUS_RIDER_SPAWN_EGG);
+            event.accept(MobsCore.LEGEIEL_SPAWN_EGG);
+            event.accept(MobsCore.LEGEIEL_FORBIDDEN_SPAWN_EGG);
+            event.accept(MobsCore.ZOOOUS_SPAWN_EGG);
+            event.accept(MobsCore.ZOOOUS_PREDATOR_SPAWN_EGG);
+            event.accept(MobsCore.STORIOUS_SPAWN_EGG);
+            event.accept(MobsCore.DESAST_SPAWN_EGG);
+            event.accept(MobsCore.CHARYBDIS_SPAWN_EGG);
+            event.accept(MobsCore.CHARYBDIS_HERCULES_SPAWN_EGG);
 
             event.accept(MobsCore.GIFF_JUNIOR_SPAWN_EGG);
             event.accept(MobsCore.EVIL_SPAWN_EGG);

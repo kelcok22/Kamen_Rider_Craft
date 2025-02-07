@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:konchuu_daihyakka_wonder_ride_book"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:royal_sword_of_logos_buckle_sabela"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:eneiken_noroshi"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_wonder_ride_book",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:blank_wonder_world_story_wonder_ride_book"
+		}
+	  ]
+	}
+  ]
+}

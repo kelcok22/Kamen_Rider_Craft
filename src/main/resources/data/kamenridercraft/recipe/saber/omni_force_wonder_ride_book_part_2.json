@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "solomon",
+    "ingredients": [
+  {
+      
+        "item": "kamenridercraft:genbu_shinwa_wonder_ride_book"
+      }, 
+      {
+        "item": "kamenridercraft:sarutobi_ninjaden_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:jaaku_dragon_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:jaou_dragon_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:x_swordman_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:konchuu_daihyakka_wonder_ride_book"
+      } , 
+      {
+        "item": "kamenridercraft:ocean_history_wonder_ride_book"
+      } 
+      ],
+    "result": {
+      "id": "kamenridercraft:omni_force_wonder_ride_book_part_2"
+    }
+  }

@@ -1,0 +1,24 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:storious_boss_block"
+	},
+	"title": "More like Ceased to Existorious",
+	"description": "Defeat Kamen Rider Storious",
+	"frame": "challenge",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:saber/solomon",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:storious"
+		}
+	  }
+	}
+  }
+}

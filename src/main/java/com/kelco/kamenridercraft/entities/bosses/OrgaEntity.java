@@ -28,8 +28,7 @@ public class OrgaEntity extends BaseHenchmenEntity {
     	if (this.getItemBySlot(EquipmentSlot.FEET).getItem()!=Faiz_Rider_Items.ORGA_DRIVER.get()) {
     		if (this.getHealth()<50) {
     			if(this.getLastAttacker() instanceof Player playerIn) {
-					playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga_1"));
-    				playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga_2"));
+					playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
     				
     				this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
     				this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);

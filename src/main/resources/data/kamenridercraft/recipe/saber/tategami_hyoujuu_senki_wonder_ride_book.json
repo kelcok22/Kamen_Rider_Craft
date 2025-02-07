@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "blades_tategami_hyoujuu_senki",
+    "ingredients": [
+  {
+      
+      "item": "kamenridercraft:wonder_world_story_of_suiseiken_nagare_wonder_ride_book"
+      }, 
+      {
+        "item":  "kamenridercraft:great_book_fragment"
+      } 
+      ],
+    "result": {
+      "id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
+    }
+  }

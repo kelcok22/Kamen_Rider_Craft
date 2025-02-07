@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:caladbolg",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
 		}
 	]
 }
