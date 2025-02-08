@@ -2,11 +2,9 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
-
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
@@ -18,7 +16,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.common.damagesource.DamageContainer;
 
 public class FalchionEntity extends BaseHenchmenEntity {
 
@@ -34,11 +31,13 @@ public class FalchionEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.MUMEIKEN_KYOMU.get()));
     }
 
-    public void onDamageTaken(DamageContainer damage) {
-    	if(this.getLastAttacker() instanceof Player playerIn) {
-			if (playerIn.getInventory().countItem(Saber_Rider_Items.EMOTIONAL_DRAGON_WONDER_RIDE_BOOK.get())==0) {
-				this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 3,true,false));
-			}
+	@Override
+    public void actuallyHurt(DamageSource source, float amount) {
+		if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && playerIn.getInventory().countItem(Saber_Rider_Items.EMOTIONAL_DRAGON_WONDER_RIDE_BOOK.get())==0) {
+			this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 3,true,false));
+		}
+        super.actuallyHurt(source, amount);
+    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
 			if (playerIn.getInventory().countItem(Saber_Rider_Items.WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get()) {
 				playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion_siren"));
     			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
@@ -47,7 +46,6 @@ public class FalchionEntity extends BaseHenchmenEntity {
     	        RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
 			}
     	}
-        super.onDamageTaken(damage);
     }
 
 	public void remove(RemovalReason p_149847_) {
@@ -58,11 +56,6 @@ public class FalchionEntity extends BaseHenchmenEntity {
 			    key.setPickUpDelay(0);
 			    playerIn.level().addFreshEntity(key);
 		        playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.emotional_dragon"));
-    		}
-            if(playerIn.getInventory().countItem(Saber_Rider_Items.ARABIANA_NIGHT_WONDER_RIDE_BOOK.get())!=0){
-                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
-			    key.setPickUpDelay(0);
-			    playerIn.level().addFreshEntity(key);
     		}
             if(playerIn.getInventory().countItem(Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get())!=0
             &&playerIn.getInventory().countItem(Saber_Rider_Items.WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK.get())!=0){

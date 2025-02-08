@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Kabuto_Rider_Items;
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -24,17 +24,17 @@ public class CaucasusEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Kabuto_Rider_Items.CAUCASUS_RIDER_BELT.get()));
     }
 
-    public void aiStep() {
-    	if (this.getHealth()<50 && this.getAttributeValue(Attributes.MOVEMENT_SPEED) != 1) {
-    		if(this.getLastAttacker() instanceof Player playerIn) {
-                playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.hyper_clock_up"));
-			
-    			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
-    			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
-    			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-    		}
+	@Override
+    public void actuallyHurt(DamageSource source, float amount) {
+        super.actuallyHurt(source, amount);
+    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<50
+		&& this.getAttributeValue(Attributes.MOVEMENT_SPEED) != 1) {
+			playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.hyper_clock_up"));
+		
+			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
+			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
+			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
     	}
-       super.aiStep();
     }
 
 	public static AttributeSupplier.Builder setAttributes() {

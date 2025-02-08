@@ -1,41 +1,63 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:eternal_phoenix_wonder_ride_book"
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_wonder_ride_book",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 4,
-				"max": 6
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:eternal_phoenix_wonder_ride_book"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:amazing_siren_wonder_ride_book"
+		  }
+		],
+		"conditions": [
+		  {
+			"condition": "minecraft:entity_properties",
+			"entity": "attacking_player",
+			"predicate": {
+			  "slots": {
+				"container.*": {
+				  "items": "kamenridercraft:arabiana_night_wonder_ride_book"
+				}
 			  }
 			}
-		  ]
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_wonder_world_story_wonder_ride_book"
-		}
-	  ]
-	}
-  ]
-}
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_wonder_ride_book",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 4,
+				  "max": 6
+				}
+			  }
+			]
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_wonder_world_story_wonder_ride_book"
+		  }
+		]
+	  }
+	]
+  }
