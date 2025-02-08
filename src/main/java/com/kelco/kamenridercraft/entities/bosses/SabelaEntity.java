@@ -1,25 +1,18 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
-import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
-
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.common.damagesource.DamageContainer;
 
 public class SabelaEntity extends BaseHenchmenEntity {
 
@@ -44,16 +37,16 @@ public class SabelaEntity extends BaseHenchmenEntity {
        super.aiStep();
     }
 
-    public void onDamageTaken(DamageContainer damage) {
-    	if(this.getHealth()<100 && this.getLastAttacker() instanceof Player playerIn && this.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() != 0.5) {
+	@Override
+    public void actuallyHurt(DamageSource source, float amount) {
+        super.actuallyHurt(source, amount);
+    	if(!this.level().isClientSide() && this.getHealth()<100 && this.getLastAttacker() instanceof Player playerIn && this.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() != 0.5) {
 			playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.noroshi_muchuu"));
     		this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
     		this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
     		this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
     	}
-        super.onDamageTaken(damage);
-    }
-    
+    }    
 
     public static AttributeSupplier.Builder setAttributes() {
 
