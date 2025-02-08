@@ -15,7 +15,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class ModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, KamenRiderCraftCore.MOD_ID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> ASTROSWITCH_PANEL = register("astroswitch_panel", Rider_Blocks.ASTROSWITCH_PANEL, AstroswitchPanelBlockEntity::new);
