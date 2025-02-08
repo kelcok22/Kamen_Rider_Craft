@@ -59,6 +59,11 @@ public class FalchionEntity extends BaseHenchmenEntity {
 			    playerIn.level().addFreshEntity(key);
 		        playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.emotional_dragon"));
     		}
+            if(playerIn.getInventory().countItem(Saber_Rider_Items.ARABIANA_NIGHT_WONDER_RIDE_BOOK.get())!=0){
+                ItemEntity key = new ItemEntity(playerIn.level(), playerIn.getX(), playerIn.getY(), playerIn.getZ(), new ItemStack(Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
+			    key.setPickUpDelay(0);
+			    playerIn.level().addFreshEntity(key);
+    		}
             if(playerIn.getInventory().countItem(Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get())!=0
             &&playerIn.getInventory().countItem(Saber_Rider_Items.WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK.get())!=0){
         	    if (playerIn.getInventory().getItem(40).getItem()==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get()) playerIn.getInventory().removeItem(40, 1);
