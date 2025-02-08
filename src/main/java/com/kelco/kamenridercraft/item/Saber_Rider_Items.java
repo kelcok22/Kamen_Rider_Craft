@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.saber.BookGateItem;
+import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;
 import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffects;
@@ -645,8 +646,7 @@ public class Saber_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOK_OF_RUIN = ITEMS.register("book_of_ruin",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
-			//() -> new BookOfRuinItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+			() -> new BookOfRuinItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> FORBIDDEN_TOME = ITEMS.register("forbidden_tome",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
