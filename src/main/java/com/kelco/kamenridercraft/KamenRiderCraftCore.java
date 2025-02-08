@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft;
 
+import com.google.common.io.Closer;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
@@ -15,7 +16,7 @@ import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
-import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.init.*;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -128,6 +129,7 @@ public class KamenRiderCraftCore
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
+        ModBlockEntities.REGISTRY.register(modEventBus);
 
         LootModifierCore.register(modEventBus);
 
@@ -479,6 +481,7 @@ public class KamenRiderCraftCore
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
             event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
 
         }
     }

@@ -1110,6 +1110,8 @@
 "item.kamenridercraft.dark_decadriver": "Dark Decadriver",
 "item.kamenridercraft.neo_decadriver": "NeoDecadriver",
 
+  "item.kamenridercraft.ride_booker_book": "Ride Booker (Book)",
+
 "item.kamenridercraft.blank_card": "Blank Rider Card",
 "item.kamenridercraft.decade_card": "KamenRide Decade",
 "item.kamenridercraft.decade_violent_emotion_card": "KamenRide Decade Violent Emotion",
@@ -4179,7 +4181,7 @@
 "item.kamenridercraft.rider_summon_spawn_egg": "Rider Summon Spawn Egg",
 "item.kamenridercraft.paradx_summon_spawn_egg": "Para-DX Summon Spawn Egg",
 
-
+"block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
 
 "block.kamenridercraft.monitor": "Monitor",
 "block.kamenridercraft.stone_kuuga": "Kuuga Ore",
@@ -4311,6 +4313,7 @@
   "block.kamenridercraft.cornerstore_sign": "Cornerstore Sign Block",
 
   "block.kamenridercraft.pandora_box": "Pandora Box",
+  "block.kamenridercraft.pandora_fire": "Pandora Tower Fire",
 
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",
