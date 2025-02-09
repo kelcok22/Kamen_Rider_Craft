@@ -23,7 +23,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.*;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -129,7 +129,7 @@ public class KamenRiderCraftCore
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
-        ModBlockEntities.REGISTRY.register(modEventBus);
+        /*ModBlockEntities.REGISTRY.register(modEventBus);*/
 
         LootModifierCore.register(modEventBus);
 
@@ -477,11 +477,11 @@ public class KamenRiderCraftCore
 
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
-            event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
+            /*event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);*/
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
-            event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
+            /*event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
-            event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);*/
 
         }
     }

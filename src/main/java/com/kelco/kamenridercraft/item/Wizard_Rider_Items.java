@@ -5,9 +5,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.item.wizard.UnknownWizardRingItem;
-import com.kelco.kamenridercraft.item.wizard.WizardRingItem;
-import com.kelco.kamenridercraft.item.wizard.RingHolderItem;
+import com.kelco.kamenridercraft.item.wizard.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -664,10 +662,10 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 
-	public static final DeferredItem<Item> WIZARD_RING_HOLDER = ITEMS.register("wizard_ring_holder",
+	/*public static final DeferredItem<Item> WIZARD_RING_HOLDER = ITEMS.register("wizard_ring_holder",
 			() -> new RingHolderItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 	public static final DeferredItem<Item> BEAST_RING_HOLDER = ITEMS.register("beast_ring_holder",
-			() -> new RingHolderItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RingHolderItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));*/
 
 
 
