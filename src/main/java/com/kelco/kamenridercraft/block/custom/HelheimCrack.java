@@ -3,9 +3,7 @@ package com.kelco.kamenridercraft.block.custom;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.baseBlocks.BaseBlock;
-import com.kelco.kamenridercraft.block.machineBlocks.MachineBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -13,18 +11,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -34,17 +25,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.neoforged.neoforge.server.ServerLifecycleHooks;
-
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Random;
 
 
 public class HelheimCrack extends BaseBlock {
@@ -107,11 +92,9 @@ public class HelheimCrack extends BaseBlock {
 
 	@Override
 	protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-		if (entity.canUsePortal(false)) {
-			if (entity instanceof Player player){
-				if (!player.hasEffect(Effect_core.PORTAL_COOLDOWN)){
+		if (entity.canUsePortal(false) && entity instanceof Player player && !player.hasEffect(Effect_core.PORTAL_COOLDOWN)){
 			ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
-			MinecraftServer Server = ServerLifecycleHooks.getCurrentServer();
+			MinecraftServer Server = player.getServer();
 
 			if (!level.isClientSide()) {
 				List<TamableAnimal> nearbyAllies = level.getEntitiesOfClass(TamableAnimal.class, entity.getBoundingBox().inflate(30), entity2 ->
@@ -122,8 +105,6 @@ public class HelheimCrack extends BaseBlock {
 				} else {
 					for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.getLevel(HELHEIM), ally,pos);
 					teleportToDimension(Server.getLevel(HELHEIM), player,pos);
-				}
-			}
 				}
 			}
 		}

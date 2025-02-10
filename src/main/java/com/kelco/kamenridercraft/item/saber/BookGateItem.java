@@ -19,7 +19,6 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
-import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
 import java.util.HashSet;
 import java.util.function.Consumer;
@@ -81,20 +80,18 @@ public class BookGateItem extends BaseItem {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 
 		ResourceKey<Level> NORTHERN_BASE = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:northern_base"));
-		MinecraftServer Server = ServerLifecycleHooks.getCurrentServer();
-		if (p_41129_ instanceof ServerPlayer player) {
-			if (!p_41128_.isClientSide()) {
-				if (p_41128_.dimension() == NORTHERN_BASE) {
-					teleportToDimension(itemstack,Server.overworld(), player,0);
-				} else {
-					double X=player.position().x;
-					double Y=player.position().y;
-					double Z=player.position().z;
-					Save_XYZ(itemstack,X,Y,Z,0);
-					teleportToDimension(itemstack,Server.getLevel(NORTHERN_BASE), player,1);
-				}
-				p_41129_.getCooldowns().addCooldown(this, TIME);
+		if (p_41129_ instanceof ServerPlayer player && !p_41128_.isClientSide()) {
+			MinecraftServer Server = player.getServer();
+			if (p_41128_.dimension() == NORTHERN_BASE) {
+				teleportToDimension(itemstack,Server.overworld(), player,0);
+			} else {
+				double X=player.position().x;
+				double Y=player.position().y;
+				double Z=player.position().z;
+				Save_XYZ(itemstack,X,Y,Z,0);
+				teleportToDimension(itemstack,Server.getLevel(NORTHERN_BASE), player,1);
 			}
+			p_41129_.getCooldowns().addCooldown(this, TIME);
 		}
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
 	}
