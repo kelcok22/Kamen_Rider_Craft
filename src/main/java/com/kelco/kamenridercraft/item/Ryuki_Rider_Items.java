@@ -218,6 +218,10 @@ public class Ryuki_Rider_Items {
 			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> OUJA_SURVIVE_DECK = ITEMS.register("advent_deck_ouja_survive",
 			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+	public static final DeferredItem<Item> RAIA_SURVIVE_DECK = ITEMS.register("advent_deck_raia_survive",
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
+	public static final DeferredItem<Item> RYUGA_SURVIVE_DECK = ITEMS.register("advent_deck_ryuga_survive",
+			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> RYUKIHELMET = ITEMS.register("ryukihead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
