@@ -2,6 +2,7 @@
 package com.kelco.kamenridercraft.item.ryuki;
 
 /*import com.kelco.kamenridercraft.procedures.OpenAdventDeckProcedure;*/
+import net.minecraft.world.Container;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -57,7 +58,7 @@ public class AdventDeckItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new AdventDeckGuiMenu(id, inventory, packetBuffer);
+					return new AdventDeckGuiMenu(id, inventory, (Container) packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());

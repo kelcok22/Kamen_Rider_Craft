@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.init;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.IContainerFactory;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
