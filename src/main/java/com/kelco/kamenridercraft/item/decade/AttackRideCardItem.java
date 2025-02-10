@@ -20,7 +20,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -36,9 +35,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.server.ServerLifecycleHooks;
 import net.minecraft.server.level.ServerLevel;
 
 
@@ -99,6 +98,7 @@ public class AttackRideCardItem extends BaseItem {
 					}
 				}
 				if (SPECIAL != null) {
+					Vec3 look = p_41129_.getLookAngle();
 					switch (SPECIAL) {
 						case "illusion":
 							for (int i = 0; i < 2; i++) {
@@ -153,28 +153,23 @@ public class AttackRideCardItem extends BaseItem {
 							}
 							break;
 						case "barrier":
-        					int placeX = Mth.floor(p_41129_.getX() + (-Math.sin(Math.toRadians(p_41129_.getYRot())) * Math.cos(Math.toRadians(p_41129_.getXRot())) * 2));
-        					int placeZ = Mth.floor(p_41129_.getZ() + (Math.cos(Math.toRadians(p_41129_.getYRot())) * Math.cos(Math.toRadians(p_41129_.getXRot())) * 2));
-        					BlockPos placePos = new BlockPos(placeX, (int) p_41129_.getY(), placeZ);
-							
+							BlockPos pos = new BlockPos((int)(Math.floor(p_41129_.getX()+ look.x*3)), (int)(Math.floor(p_41129_.getEyeY() + look.y*3)), (int)(Math.floor(p_41129_.getZ() + look.z*3)));
+
 							for (int i = 0; i < 2; i++)	{
-								if (p_41128_.isEmptyBlock(placePos)) p_41128_.setBlock(placePos, Blocks.LIGHT_BLUE_STAINED_GLASS.defaultBlockState(), 3);
-								placePos = placePos.above(1);
+								if (p_41128_.getBlockState(pos).getDestroySpeed(p_41128_, pos) < 0.2) p_41128_.destroyBlock(pos, true);
+								if (p_41128_.isEmptyBlock(pos) || p_41128_.getFluidState(pos)!=Fluids.EMPTY.defaultFluidState()) p_41128_.setBlock(pos, Blocks.LIGHT_BLUE_STAINED_GLASS.defaultBlockState(), 3);
+								pos = pos.below(1);
 							}
 							break;
 						case "onibi":
-							ServerLevel level = ServerLifecycleHooks.getCurrentServer().getLevel(p_41128_.dimension());
-        					Vec3 look = p_41129_.getViewVector(1.0f);
         					Vec3 playerPos = p_41129_.getEyePosition(1.0f);
-        					Vec3 endPos = playerPos.add(look.x * 5.0, look.y * 5.0, look.z * 5.0);
-
-							List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, new AABB(playerPos.x, playerPos.y, playerPos.z, endPos.x, endPos.y, endPos.z).inflate(0.65), entity ->
+							List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, new AABB(playerPos, playerPos.add(look.scale(6))).inflate(0.2), entity ->
 																			  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
 							for (Entity toIgnite : nearbyTargets) toIgnite.setRemainingFireTicks(200);
 							
 							for (double distX = 0; distX < 8; distX += 0.5) {
 								double distY = -(Math.pow(distX, 2) / 50) - 0.3;
-								level.sendParticles(ParticleTypes.FLAME, playerPos.x + (look.x * distX), (playerPos.y + distY) + (look.y * distX), playerPos.z + (look.z * distX), 3, 0.0, 0.0, 0.0, 0.01);
+								if (p_41128_ instanceof ServerLevel level) level.sendParticles(ParticleTypes.FLAME, playerPos.x + (look.x * distX), (playerPos.y + distY) + (look.y * distX), playerPos.z + (look.z * distX), 3, 0.0, 0.0, 0.0, 0.01);
 							}
 							p_41128_.playSound((Player)null, new BlockPos((int) p_41129_.getX(), (int) p_41129_.getY(), (int) p_41129_.getZ()), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, 1.0F, (p_41128_.getRandom().nextFloat() - p_41128_.getRandom().nextFloat()) * 0.2F + 1.0F);
 							break;
