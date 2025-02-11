@@ -45,7 +45,9 @@ public class AdventDeckItem extends Item {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		if (entity instanceof ServerPlayer serverPlayer) {
+		ItemStack itemstack = entity.getItemInHand(hand);
+
+		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
@@ -57,7 +59,7 @@ public class AdventDeckItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new AdventDeckGuiMenu(id, inventory, (Container) packetBuffer);
+					return new AdventDeckGuiMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());
@@ -65,7 +67,7 @@ public class AdventDeckItem extends Item {
 			});
 		}
 		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
-		return super.use(world, entity, hand);
+		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
 	}
 
 }
