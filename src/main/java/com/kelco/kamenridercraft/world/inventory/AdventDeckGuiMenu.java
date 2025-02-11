@@ -1,6 +1,8 @@
 
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.init.ModMenus;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
@@ -14,30 +16,36 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 	private static final int CONTAINER_SIZE = 10;
 	private final Container container;
 
-	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, RegistryFriendlyByteBuf registryFriendlyByteBuf) {
+	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
 		this(containerId, playerInventory, new SimpleContainer(10));
 	}
 
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, Container container) {
-		super(MenuType.SHULKER_BOX, containerId);
+		super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
 		checkContainerSize(container, 10);
 		this.container = container;
 		container.startOpen(playerInventory.player);
-		int i = 2;
-		int j = 5;
+		int i = 3;
+		int j = 9;
 
-		for (int k = 0; k < 2; k++) {
-			for (int l = 0; l < 5; l++) {
-				this.addSlot(new ShulkerBoxSlot(container, l + k * 9, 8 + l * 18, 18 + k * 18));
-			}
-		}
+		this.addSlot(new Slot(container,0,28,19));
+		this.addSlot(new Slot(container,1,54,19));
+		this.addSlot(new Slot(container,2,80,19));
+		this.addSlot(new Slot(container,3,106,19));
+		this.addSlot(new Slot(container,4,132,19));
+		this.addSlot(new Slot(container,5,28,45));
+		this.addSlot(new Slot(container,6,54,45));
+		this.addSlot(new Slot(container,7,80,45));
+		this.addSlot(new Slot(container,8,106,45));
+		this.addSlot(new Slot(container,9,132,45));
 
-		for (int i1 = 0; i1 < 3; i1++) {
-			for (int k1 = 0; k1 < 9; k1++) {
+		for(int i1 = 0; i1 < 3; ++i1) {
+			for(int k1 = 0; k1 < 9; ++k1) {
 				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18));
 			}
 		}
-		for (int j1 = 0; j1 < 9; j1++) {
+
+		for(int j1 = 0; j1 < 9; ++j1) {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142));
 		}
 	}

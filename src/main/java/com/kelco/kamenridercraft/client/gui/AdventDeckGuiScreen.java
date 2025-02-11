@@ -7,7 +7,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.ShulkerBoxMenu;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
+@OnlyIn(Dist.CLIENT)
 public class AdventDeckGuiScreen extends AbstractContainerScreen<AdventDeckGuiMenu> {
 	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.withDefaultNamespace("kamenridercraft:textures/gui/container/advent_deck_gui.png");
 
