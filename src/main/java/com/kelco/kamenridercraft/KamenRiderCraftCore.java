@@ -1,8 +1,10 @@
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
+import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -17,6 +19,8 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -114,6 +118,7 @@ public class KamenRiderCraftCore
         Reboot_Rider_Items.register(modEventBus);
         Miscellaneous_Rider_Items.register(modEventBus);
         Rider_Blocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
@@ -168,6 +173,7 @@ public class KamenRiderCraftCore
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            Sheets.addWoodType(ModWoodTypes.HELHEIM);
             NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
 
 
@@ -461,6 +467,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), SignRenderer::new);
 
         }
 

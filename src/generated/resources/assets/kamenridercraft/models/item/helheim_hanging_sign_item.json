@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/firemars_ride_chemy_card"
+    "layer0": "kamenridercraft:item/helheim_hanging_sign_item"
   }
 }

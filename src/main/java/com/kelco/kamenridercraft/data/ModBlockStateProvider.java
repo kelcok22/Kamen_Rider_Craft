@@ -3,10 +3,14 @@ package com.kelco.kamenridercraft.data;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.StandingSignBlock;
+import net.minecraft.world.level.block.WallSignBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -54,6 +58,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(Rider_Blocks.HELHEIM_DOOR.get(),modLoc("block/helheim_door_bottom"),modLoc("block/helheim_door_top"), "cutout");
         trapdoorBlockWithRenderType(Rider_Blocks.HELHEIM_TRAPDOOR.get(),modLoc("block/helheim_trapdoor"),true,"cutout");
 
+        signBlock(((StandingSignBlock) Rider_Blocks.HELHEIM_SIGN.get()), ((WallSignBlock) Rider_Blocks.HELHEIM_WALL_SIGN.get()),
+                blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
+
+
         blockItem(Rider_Blocks.KURUMA_BRICK);
         blockItem(Rider_Blocks.CORNERSTORE_SIGN);
 
@@ -70,6 +78,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),modLoc("block/rabbit_hutch_door_bottom"),modLoc("block/rabbit_hutch_door_top"), "cutout");
         doorBlockWithRenderType(Rider_Blocks.GLASS_DOOR.get(),modLoc("block/glass_door_bottom"),modLoc("block/glass_door_top"), "cutout");
 
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock),texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+    
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+    
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+    // might be wrong
+    private ResourceLocation key(Block block) {
+        return Registries.BLOCK.registry();
     }
 
         private void blockWithItem(DeferredBlock<?> deferredBlock) {
