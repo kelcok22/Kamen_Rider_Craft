@@ -40,7 +40,7 @@ public class SabelaEntity extends BaseHenchmenEntity {
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-    	if(!this.level().isClientSide() && this.getHealth()<100 && this.getLastAttacker() instanceof Player playerIn && this.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() != 0.5) {
+    	if(!this.level().isClientSide() && this.getHealth()<100 && source.getEntity() instanceof Player playerIn && this.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() != 0.5) {
 			playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.noroshi_muchuu"));
     		this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
     		this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(7.0D);
