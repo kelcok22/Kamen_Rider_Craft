@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kamenridercraft:item/inphoenix_ride_chemy_card_televikun"
-  }
-}

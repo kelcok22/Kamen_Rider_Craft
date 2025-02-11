@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.data;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -54,6 +55,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
         basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
         basicItem(Rider_Blocks.GLASS_DOOR.asItem());
+
+        basicItem(Modded_item_core.HELHEIM_SIGN_ITEM.asItem());
+        basicItem(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.asItem());
     }
 
 

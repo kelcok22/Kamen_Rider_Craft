@@ -563,6 +563,8 @@ public class RiderTabs {
             event.accept(Rider_Blocks.HELHEIM_FENCE_GATE);
             event.accept(Rider_Blocks.HELHEIM_DOOR);
             event.accept(Rider_Blocks.HELHEIM_TRAPDOOR);
+            event.accept(Modded_item_core.HELHEIM_SIGN_ITEM);
+            event.accept(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM);
             event.accept(Rider_Blocks.HELHEIM_SAPLING);
             event.accept(Rider_Blocks.HELHEIM_VINE);
 

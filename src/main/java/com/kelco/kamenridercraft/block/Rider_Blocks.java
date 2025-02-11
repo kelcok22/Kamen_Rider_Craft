@@ -7,17 +7,16 @@ import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
-import com.kelco.kamenridercraft.block.custom.ArtificialGravityBlock;
-import com.kelco.kamenridercraft.block.custom.ChairBlock;
-import com.kelco.kamenridercraft.block.custom.HelheimCrack;
-import com.kelco.kamenridercraft.block.custom.ModFlammableRotatedPillarBlock;
+import com.kelco.kamenridercraft.block.custom.*;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
 import com.kelco.kamenridercraft.data.ModBlockStateProvider;
+import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -26,6 +25,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
@@ -38,6 +38,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Rider_Blocks {
@@ -300,6 +301,16 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<TrapDoorBlock> HELHEIM_TRAPDOOR = registerBlock("helheim_trapdoor",
 			() -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
+	public static final DeferredBlock<Block> HELHEIM_SIGN = registerBlock("helheim_sign",
+			() -> new ModStandingSignBlock(ModWoodTypes.HELHEIM,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+	public static final DeferredBlock<Block> HELHEIM_WALL_SIGN = registerBlock("helheim_wall_sign",
+			() -> new ModWallSignBlock(ModWoodTypes.HELHEIM,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN)));
+	public static final DeferredBlock<Block> HELHEIM_HANGING_SIGN = registerBlock("helheim_hanging_sign",
+			() -> new ModHangingSignBlock(ModWoodTypes.HELHEIM,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+	public static final DeferredBlock<Block> HELHEIM_WALL_HANGING_SIGN = registerBlock("helheim_wall_hanging_sign",
+			() -> new ModWallHangingSignBlock(ModWoodTypes.HELHEIM,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
+
 
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
 			() -> new SaplingBlock(ModTreeGrowers.HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
