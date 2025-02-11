@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.BossEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -36,38 +37,31 @@ public class WozEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.BEYONDRIVER.get()));
     }
 
-    public void tick() {
-        if (this.getHealth()<51) {
-            if(getItemBySlot(EquipmentSlot.FEET).getItem()==Zi_O_Rider_Items.BEYONDRIVER.get()){
-                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-                if (RiderDriverItem.get_Form_Item(belt,1)==Zi_O_Rider_Items.WOZ_MIRIDEWATCH.get()) {
-
-
-                    Random generator = new Random();
-                    int rand = generator.nextInt(3);
-                     if (rand==1){
-                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.QUIZ_MIRIDEWATCH.get(), 1);
-                          this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_TSUE.get()));
-                         if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_quiz"));
-
-                     }
-                    else if (rand==2){
-                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.SHINOBI_MIRIDEWATCH.get(), 1);
-                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_KAMA.get()));
-                         if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_shinobi"));
-
-                     }else {
+    public void actuallyHurt(DamageSource source, float amount) {
+        super.actuallyHurt(source, amount);
+        if (!this.level().isClientSide() && this.getHealth()<51 && source.getEntity() instanceof Player playerIn
+        && getItemBySlot(EquipmentSlot.FEET).getItem()==Zi_O_Rider_Items.BEYONDRIVER.get()){
+            ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+            if (RiderDriverItem.get_Form_Item(belt,1)==Zi_O_Rider_Items.WOZ_MIRIDEWATCH.get()) {
+                int rand = this.random.nextInt(3);
+                switch (rand) {
+                    case 1:
+                        RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.QUIZ_MIRIDEWATCH.get(), 1);
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_TSUE.get()));
+                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_quiz"));
+                        break;
+                    case 2:
+                        RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.SHINOBI_MIRIDEWATCH.get(), 1);
+                        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_DESPEAR_KAMA.get()));
+                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_shinobi"));
+                        break;
+                    default:
                         RiderDriverItem.set_Form_Item(belt, (RiderFormChangeItem) Zi_O_Rider_Items.KIKAI_MIRIDEWATCH.get(), 1);
-                         if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_kikai"));
-
-                     }
-
-
-
+                        playerIn.sendSystemMessage(Component.translatable("message.kamenridercraft.woz_kikai"));
+                        break;
                 }
             }
         }
-        super.tick();
     }
 
 

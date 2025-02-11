@@ -45,7 +45,6 @@ public class AdventDeckItem extends Item {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		if (entity instanceof ServerPlayer serverPlayer) {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
@@ -66,7 +65,7 @@ public class AdventDeckItem extends Item {
 			});
 		}
 		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
-		return ar;
+		return super.use(world, entity, hand);
 	}
 
 }
