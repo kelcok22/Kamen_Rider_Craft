@@ -210,12 +210,18 @@ public class CronusEntity extends BaseHenchmenEntity {
 				} else if (d0 < this.getFollowDistance() * this.getFollowDistance() && flag) {
 					if (this.attackTime <= 0) {
 						++this.attackStep;
-						switch (this.attackStep) {
-							case 1:
-								this.attackTime = 60;
-								this.Cronus.setCharged(true);
-								break;
-							case 2:
+						if (this.attackStep == 1) {
+							this.attackTime = 60;
+							this.Cronus.setCharged(true);
+						} else if (this.attackStep <= 2) {
+							this.attackTime = 6;
+						} else {
+							this.attackTime = 100;
+							this.attackStep = 0;
+							this.Cronus.setCharged(false);
+						}
+
+						if (this.attackStep > 1) {
 								if (!this.Cronus.isSilent()) {
 									this.Cronus.level().levelEvent((Player)null, 1018, this.Cronus.blockPosition(), 0);
 								}
@@ -236,12 +242,6 @@ public class CronusEntity extends BaseHenchmenEntity {
 										
 									}
 								}
-								break;
-							default:
-								this.attackTime = 240;
-								this.attackStep = 0;
-								this.Cronus.setCharged(false);
-								break;
 						}
 					}
 
