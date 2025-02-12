@@ -30,9 +30,9 @@
     "erosion": 6,
     "depth": 0,
     "ridges": 0,
-    "initial_density_without_jaggedness": 48,
+    "initial_density_without_jaggedness": 1,
     "final_density": {
-      "type": "minecraft:mul",
+      "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:constant",
         "argument": 1
@@ -41,7 +41,7 @@
         "type": "minecraft:add",
         "argument1": {
           "type": "minecraft:y_clamped_gradient",
-          "from_y": 48,
+          "from_y": 40,
           "to_y": 64,
           "from_value": 1,
           "to_value": -1
