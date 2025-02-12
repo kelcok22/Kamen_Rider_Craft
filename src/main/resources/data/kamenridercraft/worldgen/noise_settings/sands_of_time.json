@@ -32,10 +32,10 @@
     "ridges": 0,
     "initial_density_without_jaggedness": 40,
     "final_density": {
-      "type": "minecraft:mul",
+      "type": "minecraft:add",
       "argument1": {
         "type": "minecraft:constant",
-        "argument": 1
+        "argument": 0.1
       },
       "argument2": {
         "type": "minecraft:add",
