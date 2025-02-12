@@ -2,6 +2,8 @@
 package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -11,33 +13,43 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.component.ItemContainerContents;
 
 public class AdventDeckGuiMenu extends AbstractContainerMenu {
 	private static final int CONTAINER_SIZE = 10;
 	private final Container container;
-
+	private final ItemContainerContents containerItem;
+	private final ItemStack stack;
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory, new SimpleContainer(10));
+		this(containerId, playerInventory,new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get()));
 	}
 
-	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, Container container) {
+	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
+
+		this(containerId, playerInventory,itemstack);
+	}
+
+	public AdventDeckGuiMenu(int containerId, Inventory playerInventory,ItemStack itemstack) {
 		super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
-		checkContainerSize(container, 10);
-		this.container = container;
+		stack=itemstack;
+		containerItem=stack.get(DataComponents.CONTAINER);
+
+
+		this.container = new SimpleContainer(10);
 		container.startOpen(playerInventory.player);
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new Slot(container,0,28,19));
-		this.addSlot(new Slot(container,1,54,19));
-		this.addSlot(new Slot(container,2,80,19));
-		this.addSlot(new Slot(container,3,106,19));
-		this.addSlot(new Slot(container,4,132,19));
-		this.addSlot(new Slot(container,5,28,45));
-		this.addSlot(new Slot(container,6,54,45));
-		this.addSlot(new Slot(container,7,80,45));
-		this.addSlot(new Slot(container,8,106,45));
-		this.addSlot(new Slot(container,9,132,45));
+		this.addSlot(new Slot(container,0,33,21));
+		this.addSlot(new Slot(container,1,56,21));
+		this.addSlot(new Slot(container,2,80,21));
+		this.addSlot(new Slot(container,3,103,21));
+		this.addSlot(new Slot(container,4,126,21));
+		this.addSlot(new Slot(container,5,33,44));
+		this.addSlot(new Slot(container,6,56,44));
+		this.addSlot(new Slot(container,7,80,44));
+		this.addSlot(new Slot(container,8,103,44));
+		this.addSlot(new Slot(container,9,126,44));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
@@ -49,6 +61,9 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142));
 		}
 	}
+
+
+
 
 	/**
 	 * Determines whether supplied player can use this container
