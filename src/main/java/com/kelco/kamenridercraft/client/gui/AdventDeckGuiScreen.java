@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.client.gui;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.AdventDeckGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -12,7 +13,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class AdventDeckGuiScreen extends AbstractContainerScreen<AdventDeckGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.withDefaultNamespace("kamenridercraft:textures/gui/container/advent_deck_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/advent_deck_gui.png");
 
 	public AdventDeckGuiScreen(AdventDeckGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
