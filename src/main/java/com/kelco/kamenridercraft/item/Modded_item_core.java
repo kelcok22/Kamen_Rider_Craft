@@ -308,8 +308,8 @@ public class Modded_item_core {
 
     public static final DeferredItem<SignItem> HELHEIM_SIGN_ITEM = ITEMS.register("helheim_sign_item",
             () -> new SignItem(new Item.Properties().stacksTo(16), Rider_Blocks.HELHEIM_SIGN.get(), Rider_Blocks.HELHEIM_WALL_SIGN.get()));
-    public static final DeferredItem<HangingSignItem> HELHEIM_HANGING_SIGN_ITEM = ITEMS.register("helheim_hanging_sign_item",
-            () -> new HangingSignItem(Rider_Blocks.HELHEIM_HANGING_SIGN.get(), Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<SignItem> HELHEIM_HANGING_SIGN_ITEM = ITEMS.register("helheim_hanging_sign_item",
+            () -> new SignItem(new Item.Properties().stacksTo(16), Rider_Blocks.HELHEIM_HANGING_SIGN.get(), Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()));
 
 public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);
