@@ -309,7 +309,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> HELHEIM_HANGING_SIGN = registerBlock("helheim_hanging_sign",
 			() -> new ModCeilingHangingSignBlock(ModWoodTypes.HELHEIM,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
 	public static final DeferredBlock<Block> HELHEIM_WALL_HANGING_SIGN = registerBlock("helheim_wall_hanging_sign",
-			() -> new ModWallHangingSignBlock(ModWoodTypes.HELHEIM, wallVariant(HELHEIM_HANGING_SIGN, true), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
+			() -> new ModWallHangingSignBlock(ModWoodTypes.HELHEIM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
 
 
 	public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
