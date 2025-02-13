@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider ZeroZero-One",
+	"icon": "kamenridercraft:forceriser_001",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:forceriser_001\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider ZeroZero-One",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Transforms with the $(l:zero_one/devices/forceriser_001)MetsubouJinrai Forceriser (ZeroZero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+		}
+	]
+}

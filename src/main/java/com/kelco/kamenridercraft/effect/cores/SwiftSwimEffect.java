@@ -27,8 +27,7 @@ public class SwiftSwimEffect extends MobEffect {
 		if (pLivingEntity.isSwimming()) {
 			if (!pLivingEntity.level().isClientSide()) {
 				pLivingEntity.fallDistance = 0.0f;
-				Vec3 look = pLivingEntity.getLookAngle();
-				pLivingEntity.setDeltaMovement(pLivingEntity.getDeltaMovement().add(look.x*(0.1*(1+pAmplifier)), look.y*(0.1*(1+pAmplifier))+pLivingEntity.getGravity(), look.z*(0.1*(1+pAmplifier))));
+				pLivingEntity.addDeltaMovement(pLivingEntity.getLookAngle().scale(0.1*(1+pAmplifier)));
 				if ( pLivingEntity instanceof Player) {
 					((Player)pLivingEntity).hurtMarked=true;
 				}

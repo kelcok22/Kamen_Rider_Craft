@@ -31,10 +31,9 @@ public class GatlingEffect extends InstantenousMobEffect {
 				if (pLivingEntity instanceof Player player) {
 
 					if (player.isShiftKeyDown()&pAmplifier!=9){
-						Vec3 vec3 = player.getLookAngle();
 						Arrow fireball = new Arrow(player.level(),player, new ItemStack(Blocks.AIR), null);
 						fireball.setPos(fireball.getX(), player.getY(0.5) + 0.5, fireball.getZ());
-						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						fireball.addDeltaMovement(player.getLookAngle().scale(3));
 						player.level().addFreshEntity(fireball);
 
 					}

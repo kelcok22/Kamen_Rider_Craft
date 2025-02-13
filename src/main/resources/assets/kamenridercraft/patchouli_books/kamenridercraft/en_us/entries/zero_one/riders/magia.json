@@ -1,0 +1,152 @@
+{
+	"name": "Magia",
+	"icon": "kamenridercraft:zetsumeriser_berotha",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "berotha",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_berotha\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Berotha Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_berotha)Zetsumeriser (Berotha Magia)$(/l)$(br2)Status Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuehne",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_kuehne\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kuehne Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_kuehne)Zetsumeriser (Kuehne Magia)$(/l)$(br2)Status Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ekal",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_ekal\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ekal Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_ekal)Zetsumeriser (Ekal Magia)$(/l)$(br2)Status Effects:$(li)Resistance III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "neohi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_neohi\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Neohi Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_neohi)Zetsumeriser (Neohi Magia)$(/l)$(br2)Status Effects:$(li)Water Breathing III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "onycho",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_onycho\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Onycho Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_onycho)Zetsumeriser (Onycho Magia)$(/l)$(br2)Status Effects:$(li)Resistance III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "vicarya",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_vicarya\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Vicarya Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_vicarya)Zetsumeriser (Vicarya Magia)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaeru",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_gaeru\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gaeru Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_gaeru)Zetsumeriser (Gaeru Magia)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mammoth",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_mammoth\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Mammoth Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_mammoth)Zetsumeriser (Mammoth Magia)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dodo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_dodo\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Dodo Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_dodo)Zetsumeriser (Dodo Magia)$(/l)$(br2)Status Effects:$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dodo_custom",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_dodo_custom\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Dodo Magia Custom",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_dodo_custom)Zetsumeriser (Dodo Magia Custom)$(/l)$(br2)Status Effects:$(li)Resistance III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dodo_custom_two",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_dodo_custom_two\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Dodo Magia Custom Two",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_dodo_custom_two)Zetsumeriser (Dodo Magia Custom Two)$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arsino",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zetsumeriser_arsino\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Arsino Magia",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser_arsino)Zetsumeriser (Arsino Magia)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
+		}
+	]
+}
