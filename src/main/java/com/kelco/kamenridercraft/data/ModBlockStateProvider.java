@@ -8,9 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.StandingSignBlock;
-import net.minecraft.world.level.block.WallSignBlock;
+import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -61,6 +59,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         signBlock(((StandingSignBlock) Rider_Blocks.HELHEIM_SIGN.get()), ((WallSignBlock) Rider_Blocks.HELHEIM_WALL_SIGN.get()),
                 blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
 
+        hangingSignBlock(((CeilingHangingSignBlock) Rider_Blocks.HELHEIM_HANGING_SIGN.get()), ((WallHangingSignBlock) Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()),
+                blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
+
 
         blockItem(Rider_Blocks.KURUMA_BRICK);
         blockItem(Rider_Blocks.CORNERSTORE_SIGN);
@@ -80,23 +81,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     }
 
-    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
-        ModelFile sign = models().sign(name(signBlock),texture);
-        hangingSignBlock(signBlock, wallSignBlock, sign);
-    }
-    
-    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
-        simpleBlock(signBlock, sign);
-        simpleBlock(wallSignBlock, sign);
-    }
-    
-    private String name(Block block) {
-        return key(block).getPath();
-    }
-    // might be wrong
-    private ResourceLocation key(Block block) {
-        return Registries.BLOCK.registry();
-    }
 
         private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
