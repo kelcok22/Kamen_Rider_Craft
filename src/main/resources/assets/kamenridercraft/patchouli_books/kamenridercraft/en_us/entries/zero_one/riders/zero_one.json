@@ -1,0 +1,392 @@
+{
+	"name": "Kamen Rider Zero-One",
+	"icon": "kamenridercraft:hiden_zero_one_driver",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Rising Hopper",
+			"text": "Accessed with the $(l:zero_one/items/rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shining_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Shining Hopper",
+			"text": "Accessed with the $(l:zero_one/items/shining_hopper_progrisekey)Shining Hopper Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost VI$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shining_assault_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_assault_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Shining Assault Hopper",
+			"text": "Accessed with the $(l:zero_one/items/shining_assault_hopper_progrisekey)Shining Assault Hopper Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance II$(li)Night Vision$(li)Haste$(li)Jump Boost VII$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "metalcluster_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:metalcluster_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "MetalCluster Hopper",
+			"text": "Accessed with the $(l:zero_one/items/metalcluster_hopper_progrisekey)MetalCluster Hopper Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost VII$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "realizing_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:realize_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Realizing Hopper",
+			"text": "Accessed with the $(l:zero_one/items/realize_rising_hopper_progrisekey)Rising Hopper Progrisekey (Realize Ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste III$(li)Jump Boost V$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hellrising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hellrise_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Hellrising Hopper",
+			"text": "Accessed with the $(l:zero_one/items/hellrise_progrisekey)Hellrise Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "red_rising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Red Rising Hopper",
+			"text": "Accessed with the $(l:zero_one/items/red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Hiden Zero-One Driver Limited Red Version (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "biting_shark",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:biting_shark_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Biting Shark",
+			"text": "Accessed with the $(l:zero_one/items/biting_shark_progrisekey)Biting Shark Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flying_falcon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Flying Falcon",
+			"text": "Accessed with the $(l:zero_one/items/flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flaming_tiger",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Flaming Tiger",
+			"text": "Accessed with the $(l:zero_one/items/flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "freezing_bear",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:freezing_bear_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Freezing Bear",
+			"text": "Accessed with the $(l:zero_one/items/freezing_bear_progrisekey)Freezing Bear Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "breaking_mammoth",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:breaking_mammoth_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Breaking Mammoth",
+			"text": "Accessed with the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Giant III$(li)Resistance III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hopping_kangaroo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopping_kangaroo_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Hopping Kangaroo",
+			"text": "Accessed with the $(l:zero_one/items/hopping_kangaroo_progrisekey)Hopping Kangaroo Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It On You-roo-wn! Now, It's Aruto or Nothing!! (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dynamaiting_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dynamaiting_lion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Dynamaiting Lion",
+			"text": "Accessed with the $(l:zero_one/items/dynamaiting_lion_progrisekey)Dynamaiting Lion Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Televi-Kun manga (2019, manga)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_wolf",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Shooting Wolf",
+			"text": "Accessed with the $(l:zero_one/items/shooting_wolf_progrisekey)Shooting Wolf Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "punching_kong",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Punching Kong",
+			"text": "Accessed with the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rushing_cheetah",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Rushing Cheetah",
+			"text": "Accessed with the $(l:zero_one/items/rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sparking_giraffe",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sparking_giraffe_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Sparking Giraffe",
+			"text": "Accessed with the $(l:zero_one/items/sparking_giraffe_progrisekey)Sparking Giraffe Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Sparking Giraffe Progrisekey (2019, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_hercules",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_hercules_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Amazing Hercules",
+			"text": "Accessed with the $(l:zero_one/items/amazing_hercules_progrisekey)Amazing Hercules Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sting_scorpion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sting_scorpion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Sting Scorpion",
+			"text": "Accessed with the $(l:zero_one/items/sting_scorpion_progrisekey)Sting Scorpion Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightning_hornet",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Lightning Hornet",
+			"text": "Accessed with the $(l:zero_one/items/lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gatling_hedgehog",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatling_hedgehog_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Gatling Hedgehog",
+			"text": "Accessed with the $(l:zero_one/items/gatling_hedgehog_progrisekey)Gatling Hedgehog Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "exciting_stag",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:exciting_stag_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Exciting Stag",
+			"text": "Accessed with the $(l:zero_one/items/exciting_stag_progrisekey)Exciting Stag Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "crushing_buffalo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crushing_buffalo_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Crushing Buffalo",
+			"text": "Accessed with the $(l:zero_one/items/crushing_buffalo_progrisekey)Crushing Buffalo Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "trapping_spider",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trapping_spider_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Trapping Spider",
+			"text": "Accessed with the $(l:zero_one/items/trapping_spider_progrisekey)Trapping Spider Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Progrisekey Set 03 (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "storming_penguin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:storming_penguin_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Storming Penguin",
+			"text": "Accessed with the $(l:zero_one/items/storming_penguin_progrisekey)Storming Penguin Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "splashing_whale",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:splashing_whale_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Splashing Whale",
+			"text": "Accessed with the $(l:zero_one/items/splashing_whale_progrisekey)Splashing Whale Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Resistance II$(li)Water Breathing$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_caucasus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_caucasus_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Amazing Caucasus",
+			"text": "Accessed with the $(l:zero_one/items/amazing_caucasus_progrisekey)Amazing Caucasus Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "scouting_panda",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scouting_panda_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Scouting Panda",
+			"text": "Accessed with the $(l:zero_one/items/scouting_panda_progrisekey)Scouting Panda Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Scouting Panda Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burning_falcon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:burning_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Burning Falcon",
+			"text": "Accessed with the $(l:zero_one/items/burning_falcon_progrisekey)Burning Falcon Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength III$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fighting_jackal",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fighting_jackal_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Fighting Jackal",
+			"text": "Accessed with the $(l:zero_one/items/fighting_jackal_progrisekey)Fighting Jackal Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "invading_horseshoe_crab",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Invading Horseshoe Crab",
+			"text": "Accessed with the $(l:zero_one/items/invading_horseshoe_crab_progrisekey)Invading Horseshoe Crab Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zero-One",
+			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
+		}
+	]
+}

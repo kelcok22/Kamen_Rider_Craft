@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Ikazuchi",
+	"icon": "kamenridercraft:forceriser_ikazuchi",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:forceriser_ikazuchi\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Ikazuchi",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/forceriser_ikazuchi)MetsubouJinrai Forceriser (Ikazuchi)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost IV$(li)Strength III"
+		}
+	]
+}
