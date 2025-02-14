@@ -126,6 +126,9 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/candy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
 				return Gavv_Rider_Items.CANDY.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))){ // For compat with mods that add cake slice items
+				int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
+				return Gavv_Rider_Items.CAKE.get(rand);
 			}
 			return Items.APPLE;
 		}
@@ -156,9 +159,8 @@ public class ModCommonEvents {
 			if (cake instanceof CakeBlock && event.getUseBlock().isDefault() && (!event.getItemStack().is(ItemTags.CANDLES) || event.getLevel().getBlockState(event.getPos()) != Blocks.CAKE.defaultBlockState())
 			|| (cake instanceof CandleCakeBlock && !event.getItemStack().is(Items.FLINT_AND_STEEL) && !event.getItemStack().is(Items.FIRE_CHARGE))) {
 				if (event.getEntity() instanceof Player player && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
-					if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()){
-						player.getInventory().removeItem(40, 1);
-					}else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+					if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
+					else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 
 					player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
 				}
