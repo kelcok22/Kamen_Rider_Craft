@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-13T13:14:23.3746193	Item Models: kamenridercraft
+// 1.21.1	2025-02-14T13:28:24.3888239	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
@@ -76,6 +76,7 @@ b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ging
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter.json
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_as.json
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_aw.json
+b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_db.json
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_em.json
 32655110d30c5057f5a117cfd6224a47fedd3e31 assets/kamenridercraft/models/item/hanselnuts_to_gretel_wonder_ride_book_slash.json
 769c40204716b79903a33a0f47bf83daf86b30bb assets/kamenridercraft/models/item/helheim_button.json

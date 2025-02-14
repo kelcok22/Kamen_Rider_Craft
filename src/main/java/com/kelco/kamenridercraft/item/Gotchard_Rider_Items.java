@@ -439,6 +439,15 @@ public class Gotchard_Rider_Items {
 			() -> new CopyFormChangeItem(new Item.Properties(),FOURZE_RIDE_CHEMY_CARD.get()).AddToList(NEED_ITEM_FullFullRocket)
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
+	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fire","gotchard_daybreak","gotchardriver_belt_daybreak_fire",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
+					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,3,true,false))
+					.AddNeedItemList(NEED_ITEM_SteamHopper_daybreak).ChangeModel("default_cape.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_EM = ITEMS.register("gotchar_igniter_em",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty_fire","gotchard","gotchardriver_belt_fire",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -446,7 +455,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,3,true,false))
-					.AddNeedItemList(NEED_ITEM_ExceedMighty).ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					.addAlternative(GOTCHAR_IGNITER_DB.get()).AddNeedItemList(NEED_ITEM_ExceedMighty).ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_AW = ITEMS.register("gotchar_igniter_aw",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ant_wrestler_fire","gotchard","gotchardriver_belt_fire",
