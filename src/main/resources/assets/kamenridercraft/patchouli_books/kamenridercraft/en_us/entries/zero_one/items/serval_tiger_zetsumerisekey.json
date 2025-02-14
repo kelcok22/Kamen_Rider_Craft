@@ -1,0 +1,19 @@
+{
+	"name": "Serval Tiger Zetsumerisekey",
+	"icon": "kamenridercraft:serval_tiger_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Vulcan & Valkyrie (2021, V-Cinema film)$(br2)Used to access Valkyrie's $(l:zero_one/riders/valkyrie#justice_serval)Justice serval$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:serval_tiger_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)Serval Tiger Sold Magia$(/l)"
+		}
+	]
+}

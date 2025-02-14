@@ -1,0 +1,19 @@
+{
+	"name": "Amazing Caucasus Progrisekey",
+	"icon": "kamenridercraft:amazing_caucasus_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Thouser's $(l:zero_one/devices/zaia_thousandriver)ZAIA Thousandriver (Thouser)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#amazing_caucasus)Amazing Caucasus$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazing_caucasus_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer"
+		}
+	]
+}

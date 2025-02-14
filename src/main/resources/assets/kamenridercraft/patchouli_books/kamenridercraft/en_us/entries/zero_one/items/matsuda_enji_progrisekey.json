@@ -1,0 +1,19 @@
+{
+	"name": "Matsuda Enji Progrisekey",
+	"icon": "kamenridercraft:matsuda_enji_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 75,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:matsuda_enji_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+		}
+	]
+}

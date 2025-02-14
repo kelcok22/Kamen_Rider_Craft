@@ -1,0 +1,19 @@
+{
+	"name": "Berotha Zetsumerisekey",
+	"icon": "kamenridercraft:berotha_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 54,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Berotha Magia's $(l:zero_one/devices/zetsumeriser_berotha)Zetsumeriser (Berotha Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:berotha_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		}
+	]
+}

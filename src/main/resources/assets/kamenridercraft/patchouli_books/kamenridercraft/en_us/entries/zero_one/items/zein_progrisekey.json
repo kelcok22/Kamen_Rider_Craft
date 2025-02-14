@@ -1,0 +1,19 @@
+{
+	"name": "Zein Progrisekey",
+	"icon": "kamenridercraft:zein_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Zein's $(l:zero_one/devices/zein_driver)Zein Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zein_progrisekey",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
