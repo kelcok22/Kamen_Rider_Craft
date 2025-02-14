@@ -1,0 +1,19 @@
+{
+	"name": "Scouting Panda Progrisekey",
+	"icon": "kamenridercraft:scouting_panda_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Scouting Panda Raider's $(l:zero_one/devices/raidriser_panda)Raidriser (Scouting Panda Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#scouting_panda)Scouting Panda$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scouting_panda_progrisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)"
+		}
+	]
+}

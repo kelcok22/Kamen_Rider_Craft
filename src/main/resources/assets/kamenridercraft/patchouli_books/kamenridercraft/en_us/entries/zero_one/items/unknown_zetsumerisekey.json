@@ -1,0 +1,19 @@
+{
+	"name": "Unknown Zetsumerisekey",
+	"icon": "kamenridercraft:unknown_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It On You-roo-wn! Now, It's Aruto or Nothing!! (2019, Hyper Battle Video)$(br2)Used to craft the Onycho Magia's $(l:zero_one/devices/zetsumeriser_onycho)Zetsumeriser (Onycho Magia)$(/l)$(br2)Used to craft the Vicarya Magia's $(l:zero_one/devices/zetsumeriser_vicarya)Zetsumeriser (Vicarya Magia)$(/l)$(br2)Used to craft the Gaeru Magia's $(l:zero_one/devices/zetsumeriser_gaeru)Zetsumeriser (Gaeru Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unknown_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		}
+	]
+}

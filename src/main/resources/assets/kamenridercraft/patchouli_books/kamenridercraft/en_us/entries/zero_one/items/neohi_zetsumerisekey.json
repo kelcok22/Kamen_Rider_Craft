@@ -1,0 +1,19 @@
+{
+	"name": "Neohi Zetsumerisekey",
+	"icon": "kamenridercraft:neohi_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 57,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Neohi Magia's $(l:zero_one/devices/zetsumeriser_neohi)Zetsumeriser (Neohi Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neohi_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		}
+	]
+}

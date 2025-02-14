@@ -1,0 +1,19 @@
+{
+	"name": "Flying Falcon Progrisekey",
+	"icon": "kamenridercraft:flying_falcon_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Jin's $(l:zero_one/devices/forceriser_jin)MetsubouJinrai Forceriser (Jin)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#flying_falcon)Flying Falcon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flying_falcon_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)"
+		}
+	]
+}

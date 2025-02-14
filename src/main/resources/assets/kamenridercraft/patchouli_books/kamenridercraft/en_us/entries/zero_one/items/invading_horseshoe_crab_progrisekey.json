@@ -1,0 +1,19 @@
+{
+	"name": "Invading Horseshoe Crab Progrisekey",
+	"icon": "kamenridercraft:invading_horseshoe_crab_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Battle Raider's $(l:zero_one/devices/raidriser_battle)Raidriser (Battle Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#invading_horseshoe_crab)Invading Horseshoe Crab$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:invading_horseshoe_crab_progrisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/raider)Raider$(/l)"
+		}
+	]
+}
