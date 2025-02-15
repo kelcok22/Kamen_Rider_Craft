@@ -12,7 +12,7 @@
 	}, "C": {
 	  "item": "kamenridercraft:pyron_mission_memory"
 	}, "D": {
-	  "item": "minecraft:red_dye"
+	  "tag": "c:dyes/red"
 	}
   },
   "result": {

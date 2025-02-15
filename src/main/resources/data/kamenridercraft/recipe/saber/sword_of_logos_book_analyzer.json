@@ -8,9 +8,9 @@
   ],
   "key": {
     "R": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }, "I": {
-      "item": "minecraft:redstone"
+      "tag": "c:dusts/redstone"
     }, "G": {
       "item": "kamenridercraft:blank_wonder_ride_book"
     }

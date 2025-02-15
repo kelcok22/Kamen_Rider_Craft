@@ -11,7 +11,7 @@
 	  "item": "kamenridercraft:denliner_glass"
     },
 	"d": {
-      "item": "minecraft:black_dye"
+      "tag": "c:dyes/black"
 	}
   },
   "result": {

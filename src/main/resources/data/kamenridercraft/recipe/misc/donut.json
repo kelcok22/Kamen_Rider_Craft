@@ -8,7 +8,7 @@
   ],
   "key": {
 	"X": {
-	  "item": "minecraft:wheat"
+	  "tag": "c:crops/wheat"
 	}, "C": {
 	  "item": "minecraft:sugar"
 	}

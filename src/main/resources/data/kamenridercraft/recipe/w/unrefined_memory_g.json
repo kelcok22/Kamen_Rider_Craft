@@ -7,7 +7,7 @@
 	  "item": "kamenridercraft:gaiamemory"
 	}, 
 	{
-	  "item": "minecraft:gold_ingot"
+	  "tag": "c:ingots/gold"
 	} 
 	],
   "result": {

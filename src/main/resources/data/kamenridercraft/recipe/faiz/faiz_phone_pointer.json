@@ -13,7 +13,7 @@
 	  "item": "kamenridercraft:faiz_phone"
 	},
 	"X": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	}
   },
   "result": {

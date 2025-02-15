@@ -8,9 +8,9 @@
   ],
   "key": {
 	"X": {
-	  "item": "minecraft:redstone"
+	  "tag": "c:dusts/redstone"
 	}, "Z": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	}, "G": {
 	  "item": "kamenridercraft:rider_circuit"
 	}

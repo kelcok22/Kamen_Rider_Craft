@@ -14,7 +14,7 @@
 	}, "R": {
 		  "item": "kamenridercraft:rider_circuit"
 	  }, "I": {
-		  "item": "minecraft:iron_ingot"
+		  "tag": "c:ingots/iron"
 	  }
   },
   "result": {

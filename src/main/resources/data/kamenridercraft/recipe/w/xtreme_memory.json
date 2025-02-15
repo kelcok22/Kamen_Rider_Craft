@@ -8,7 +8,7 @@
   ],
   "key": {
 	"I": {
-	  "item": "minecraft:gold_ingot"
+	  "tag": "c:ingots/gold"
 	}, "E": {
 	  "item": "kamenridercraft:gaiamemory"
 	}, "S": {
