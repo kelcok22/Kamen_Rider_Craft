@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-14T13:28:24.3888239	Item Models: kamenridercraft
+// 1.21.1	2025-02-15T13:33:34.8244633	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
 001ee40afe7ce4aa6238fff36ed44b8b26a4aa97 assets/kamenridercraft/models/item/banno_tablet.json
@@ -36,6 +36,7 @@ da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/circ
 78198f20d9d7b7aab8c7d82954077ba2f82427d7 assets/kamenridercraft/models/item/colorful_commercial.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/cross_astroswitch.json
 77b7d7489941a9987268709e464fc2b21fe90a2f assets/kamenridercraft/models/item/cyberoid_zzz_core.json
+d550ff0edafc122c552b0a54ef88ced7083debf2 assets/kamenridercraft/models/item/daiohni_ride_chemy_card.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_drive_mach.json
 661ad6956af7348b4ebbd654e2d9c06fadbdb92e assets/kamenridercraft/models/item/deadheatshift_mach.json
 7d163395d25fb9622ac7cdb5dceb6da1fb0a9bd4 assets/kamenridercraft/models/item/deadheat_bike.json
@@ -102,6 +103,7 @@ d81d60c8104e926f816a0a71a5a25c604b1da127 assets/kamenridercraft/models/item/kick
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_kenzan.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_slash.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/kouji_genbar_tire.json
+0dc660dbe37d4932b8dc7585219e39d159a1fec9 assets/kamenridercraft/models/item/machwheel_ride_chemy_card.json
 223d1aaf4667d69193f4b4d66d48b551d712ddc8 assets/kamenridercraft/models/item/mad_doctor_mach.json
 3ab66c2eff2332e9f2dd7fe186619f50c79ddce3 assets/kamenridercraft/models/item/nextshift.json
 d781ea726585a7a5db075fb7970a3a392180d0ed assets/kamenridercraft/models/item/next_builder.json
@@ -151,6 +153,7 @@ da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/tria
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/tridoronshift_not_all.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/tridoron_all_tire.json
 15de1a14d31fe7f1f079b53ec696d175ab766da2 assets/kamenridercraft/models/item/tridoron_key.json
+c19a0f725e304e48d94731f7601028278a872c68 assets/kamenridercraft/models/item/valvaradriver.json
 6cbb2623ed74342f2d941a48f08bf249dd3afa1f assets/kamenridercraft/models/item/viral_core_bat.json
 abcf1ca9bffbdda5d7d44e2b9537414827175300 assets/kamenridercraft/models/item/viral_core_chaser_bat.json
 bb127edca05f4e89b84e9e5219275a9a0f99ba36 assets/kamenridercraft/models/item/viral_core_chaser_cobara.json
