@@ -10,7 +10,7 @@
 	"X": {
 	  "item": "kamenridercraft:rider_circuit"
 	}, "Z": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	}
   },
   "result": {

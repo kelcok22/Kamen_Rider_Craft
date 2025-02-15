@@ -8,13 +8,13 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }, "B": {
       "item": "kamenridercraft:low_rabbit_full_bottle"
     }, "C": {
       "item": "kamenridercraft:rabbit_full_bottle"
     }, "D": {
-      "item": "minecraft:gold_ingot"
+      "tag": "c:ingots/gold"
     }
   },
   "result": {

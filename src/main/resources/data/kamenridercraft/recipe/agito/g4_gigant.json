@@ -14,7 +14,7 @@
 	}, "G": {
 	  "item": "kamenridercraft:base_sword"
 	}, "C": {
-	  "item": "minecraft:gunpowder"
+	  "tag": "c:gunpowders"
 	}
   },
   "result": {

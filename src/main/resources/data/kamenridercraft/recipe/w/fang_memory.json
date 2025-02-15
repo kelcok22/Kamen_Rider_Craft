@@ -8,7 +8,7 @@
   ],
   "key": {
 	"X": {
-	  "item": "minecraft:bone"
+	  "tag": "c:bones"
 	}, "C": {
 	  "item": "kamenridercraft:fang_memory_un"
 	}

@@ -9,13 +9,13 @@
 	  "item": "kamenridercraft:bakusou_bike_gashat"
 	}, 
 	{
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	} , 
 	{
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	} , 
 	{
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	} , 
 	{
 	  "item": "kamenridercraft:rider_circuit"

@@ -8,7 +8,7 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:gold_ingot"
+      "tag": "c:ingots/gold"
     }, "Z": {
       "item": "kamenridercraft:zi_o_ridewatch"
     }, "D": {

@@ -8,11 +8,11 @@
   ],
   "key": {
     "R": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }, "I": {
       "item": "kamenridercraft:imagin_sand"
     }, "G": {
-      "item": "minecraft:lime_dye"
+      "tag": "c:dyes/lime"
     }
   },
   "result": {

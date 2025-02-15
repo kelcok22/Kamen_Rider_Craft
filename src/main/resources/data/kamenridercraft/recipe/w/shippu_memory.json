@@ -9,7 +9,7 @@
 	  "item": "kamenridercraft:cyclone_memory"
 	},
 	{
-	  "item": "minecraft:ink_sac"
+	  "tag": "c:dyes/black"
 	}
   ],
   "result": {

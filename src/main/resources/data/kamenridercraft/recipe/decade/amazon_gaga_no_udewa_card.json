@@ -7,13 +7,13 @@
 	  "item": "kamenridercraft:amazon_card"
 	}, 
 	{
-	  "item": "minecraft:gold_ingot"
+	  "tag": "c:ingots/gold"
 	}, 
 	{
-	  "item": "minecraft:gold_ingot"
+	  "tag": "c:ingots/gold"
 	}, 
 	{
-	  "item": "minecraft:gold_ingot"
+	  "tag": "c:ingots/gold"
 	}
 	],
   "result": {

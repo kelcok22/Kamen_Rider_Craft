@@ -8,13 +8,13 @@
   ],
   "key": {
 	"R": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	  }, "I": {
 	  "item": "kamenridercraft:gm_01_scorpion"
 	}, "G": {
 	  "item": "kamenridercraft:gx_05_kerberos"
 	}, "C": {
-	  "item": "minecraft:gunpowder"
+	  "tag": "c:gunpowders"
 	}
   },
   "result": {

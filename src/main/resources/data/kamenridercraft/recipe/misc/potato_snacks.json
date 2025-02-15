@@ -7,7 +7,7 @@
 	  "item": "kamenridercraft:candy_wrapper"
 	}, 
 	{
-	  "item": "minecraft:potato"
+	  "tag": "c:crops/potato"
 	} 
   ],
   "result": {
