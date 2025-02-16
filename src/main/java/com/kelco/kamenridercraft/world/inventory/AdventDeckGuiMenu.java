@@ -2,6 +2,8 @@
 package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.item.BaseItems.comonent.BasicContainer;
+import com.kelco.kamenridercraft.item.BaseItems.comonent.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.FriendlyByteBuf;
@@ -18,8 +20,7 @@ import net.minecraft.world.item.component.ItemContainerContents;
 public class AdventDeckGuiMenu extends AbstractContainerMenu {
 	private static final int CONTAINER_SIZE = 10;
 	private final Container container;
-	private final ItemContainerContents containerItem;
-	private final ItemStack stack;
+
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
 		this(containerId, playerInventory,new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get()));
 	}
@@ -31,25 +32,22 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory,ItemStack itemstack) {
 		super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
-		stack=itemstack;
-		containerItem=stack.get(DataComponents.CONTAINER);
-
-
-		this.container = new SimpleContainer(10);
+		this.container = new BasicContainer(itemstack,10);
 		container.startOpen(playerInventory.player);
+
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new Slot(container,0,33,21));
-		this.addSlot(new Slot(container,1,56,21));
-		this.addSlot(new Slot(container,2,80,21));
-		this.addSlot(new Slot(container,3,103,21));
-		this.addSlot(new Slot(container,4,126,21));
-		this.addSlot(new Slot(container,5,33,44));
-		this.addSlot(new Slot(container,6,56,44));
-		this.addSlot(new Slot(container,7,80,44));
-		this.addSlot(new Slot(container,8,103,44));
-		this.addSlot(new Slot(container,9,126,44));
+		this.addSlot(new SlotByTag(container,0,33,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,1,56,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,2,80,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,3,103,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,4,126,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,5,33,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,6,56,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,7,80,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,8,103,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,9,126,44,"gear/advent_cards"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
@@ -61,8 +59,6 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142));
 		}
 	}
-
-
 
 
 	/**
