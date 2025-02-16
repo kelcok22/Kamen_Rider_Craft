@@ -108,6 +108,8 @@
 		"kamenridercraft:kouji_genbar_tire",
 		"kamenridercraft:signal_chaser_mach",
 		"kamenridercraft:shift_viral_core",
+		"kamenridercraft:proto_speedshift_chaser",
+		"kamenridercraft:mad_doctor_mach",
 		"kamenridercraft:ore_damashii",
 		"kamenridercraft:boost_damashii",
 		"kamenridercraft:mugen_damashii",
@@ -200,6 +202,11 @@
 		"kamenridercraft:saber_blank_1",
 		"kamenridercraft:saber_blank_2",
 		"kamenridercraft:saber_blank_3",
+		"kamenridercraft:brave_dragon_wonder_ride_book_xross",
+		"kamenridercraft:storm_eagle_wonder_ride_book_xross",
+		"kamenridercraft:saiyuu_journey_wonder_ride_book_xross",
+		"kamenridercraft:lion_senki_wonder_ride_book_xross",
+		"kamenridercraft:lamp_do_alngina_wonder_ride_book_xross",
 		"kamenridercraft:genbu_shinwa_wonder_ride_book_buster",
 		"kamenridercraft:jackun_to_domamenoki_wonder_ride_book_kenzan",
 		"kamenridercraft:jackun_to_domamenoki_wonder_ride_book_buster",
@@ -213,6 +220,7 @@
 		"kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book_shadow",
 		"kamenridercraft:x_swordman_wonder_ride_book_colorful",
 		"kamenridercraft:x_swordman_wonder_ride_book_powerful",
+		"kamenridercraft:eternal_phoenix_wonder_ride_book_falchion",
 		"kamenridercraft:rex_vistamp_vice",
 		"kamenridercraft:barid_rex_vistamp_vice",
 		"kamenridercraft:volcano_vistamp_vice",
@@ -270,7 +278,9 @@
 		"kamenridercraft:electrer_core_artist",
 		"kamenridercraft:tackle_core_artist",
 		"kamenridercraft:rider_summon_spawn_egg",
-		"kamenridercraft:paradx_summon_spawn_egg"
+		"kamenridercraft:paradx_summon_spawn_egg",
+		"kamenridercraft:decade_armor_ex_aid_spawn_egg",
+		"kamenridercraft:vice_spawn_egg"
 	]
 }
   

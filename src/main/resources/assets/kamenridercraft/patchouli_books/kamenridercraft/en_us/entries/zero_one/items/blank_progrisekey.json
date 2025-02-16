@@ -1,0 +1,17 @@
+{
+	"name": "Blank Progrisekey",
+	"icon": "kamenridercraft:blank_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l) to obtain Zero-One's Progrisekeys$(br2)Used on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l) to obtain ZAIA Japan's Progrisekeys"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/blank_progrisekey",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)$(li)$(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)$(li)$(l:zero_one/mobs/giger)Giger$(/l)$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)$(li)$(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Zero-Three Progrisekey",
+	"icon": "kamenridercraft:zero_three_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Zero-Three's $(l:zero_one/devices/hiden_zero_three_driver)Hiden Zero-Three Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_three_progrisekey"
+		}
+	]
+}

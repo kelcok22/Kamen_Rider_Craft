@@ -8,7 +8,7 @@
   ],
   "key": {
 	"R": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	  }, "I": {
 	  "item": "kamenridercraft:g3"
 	}, "G": {
@@ -16,7 +16,7 @@
 	}, "C": {
 	  "item": "kamenridercraft:rider_circuit"
 	}, "S": {
-	  "item": "minecraft:string"
+	  "tag": "c:strings"
 	}
   },
   "result": {

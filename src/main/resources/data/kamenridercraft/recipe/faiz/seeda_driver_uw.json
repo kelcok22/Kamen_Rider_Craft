@@ -12,7 +12,7 @@
 	}, "C": {
 	  "item": "kamenridercraft:seeda_mission_memory"
 	}, "D": {
-	  "item": "minecraft:white_dye"
+	  "tag": "c:dyes/white"
 	}
   },
   "result": {

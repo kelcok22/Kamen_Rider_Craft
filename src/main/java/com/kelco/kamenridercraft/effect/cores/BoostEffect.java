@@ -27,12 +27,10 @@ public class BoostEffect extends MobEffect {
 		if (pLivingEntity.isCrouching()) {
 			if (!pLivingEntity.level().isClientSide()) {
 				pLivingEntity.fallDistance = 0.0f;
-				Vec3 look = pLivingEntity.getLookAngle();
-				pLivingEntity.setDeltaMovement(pLivingEntity.getDeltaMovement().add(look.x*(0.1*(1+pAmplifier)), look.y*(0.1*(1+pAmplifier))+pLivingEntity.getGravity(), look.z*(0.1*(1+pAmplifier))));
-				if ( pLivingEntity instanceof Player) {
-					((Player)pLivingEntity).hurtMarked=true;
-				}
-				}	
+				Vec3 look = new Vec3(pLivingEntity.getLookAngle().x*0.1, pLivingEntity.getLookAngle().y*0.04, pLivingEntity.getLookAngle().z*0.1).scale(1+pAmplifier);
+				pLivingEntity.push(look.x, look.y+pLivingEntity.getGravity(), look.z);
+				if ( pLivingEntity instanceof Player player) player.hurtMarked=true;
+			}
 			pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY(),pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
 			pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+1,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);
 			pLivingEntity.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,pLivingEntity.getX(), pLivingEntity.getY()+0.5,pLivingEntity.getZ(), 0.0D, 0.0D, 0.0D);

@@ -10,7 +10,7 @@
 	  "item": "minecraft:sugar"
 	} ,
 	  {
-		  "item": "minecraft:sweet_berries"
+		  "tag": "c:foods/berry"
 	  }
   ],
   "result": {

@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Calibur",
+	"icon": "kamenridercraft:jaken_caliburdriver",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaaku_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:jaken_caliburdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaaku_dragon_wonder_ride_book_calibur\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Jaaku Dragon",
+			"text": "Accessed with the $(l:saber/items/jaaku_dragon_wonder_ride_book)Jaaku Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Calibur",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/jaken_caliburdriver)Jaken Caliburdriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaou_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:jaken_caliburdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaou_dragon_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Jaou Dragon",
+			"text": "Accessed with the $(l:saber/items/jaou_dragon_wonder_ride_book)Jaou Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Calibur",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/jaken_caliburdriver)Jaken Caliburdriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed III$(li)Haste II$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength II"
+		}
+	]
+}

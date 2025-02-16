@@ -10,7 +10,7 @@
     "C": {
       "item": "minecraft:stick"
     }, "I": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }, "X": {
       "item": "kamenridercraft:wizardgem"
     }

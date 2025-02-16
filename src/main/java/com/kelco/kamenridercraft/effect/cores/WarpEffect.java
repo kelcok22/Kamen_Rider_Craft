@@ -27,10 +27,9 @@ public class WarpEffect extends InstantenousMobEffect {
 				if (pLivingEntity instanceof Player player) {
 
 					if (player.isShiftKeyDown()&pAmplifier!=9){
-						Vec3 vec3 = player.getLookAngle();
 						ThrownEnderpearl fireball = new ThrownEnderpearl(player.level(),player);
 						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						fireball.addDeltaMovement(player.getLookAngle().scale(3));
 						player.level().addFreshEntity(fireball);
 						player.addEffect(new MobEffectInstance(Effect_core.WARP, 120, 9,false,false));
 					}

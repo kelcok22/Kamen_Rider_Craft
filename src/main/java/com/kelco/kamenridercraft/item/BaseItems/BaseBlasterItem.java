@@ -98,7 +98,7 @@ public class BaseBlasterItem extends BowItem {
 					}else if (CK) {
 						ThrownEgg fireball = new ThrownEgg(player.level(),player);
 						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						fireball.addDeltaMovement(vec3.scale(3));
 						player.level().addFreshEntity(fireball);
 						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 					}else if (WS) {
@@ -110,7 +110,7 @@ public class BaseBlasterItem extends BowItem {
 					else if (EP) {
 						ThrownEnderpearl fireball = new ThrownEnderpearl(player.level(),player);
 						fireball.setPos(fireball.getX(), player.getY(0.5D) + 0.5D, fireball.getZ());
-						fireball.setDeltaMovement( fireball.getDeltaMovement().add(vec3.x*3, vec3.y*3, vec3.z*3));
+						fireball.addDeltaMovement(vec3.scale(3));
 						player.level().addFreshEntity(fireball);
 						stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 					}

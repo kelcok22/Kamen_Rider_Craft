@@ -1,0 +1,19 @@
+{
+	"name": "Trapping Spider Progrisekey",
+	"icon": "kamenridercraft:trapping_spider_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#trapping_spider)Trapping Spider$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:trapping_spider_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+		}
+	]
+}

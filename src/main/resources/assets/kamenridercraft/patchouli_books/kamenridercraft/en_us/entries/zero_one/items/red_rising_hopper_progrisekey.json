@@ -1,0 +1,19 @@
+{
+	"name": "Red Rising Hopper Progrisekey",
+	"icon": "kamenridercraft:red_rising_hopper_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Hiden Zero-One Driver Limited Red Version (2020, toyline)$(br2)Used to craft Ragnarok's $(l:zero_one/devices/ragnarok_driver)Ragnarok Driver$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#red_rising_hopper)Red Rising Hopper$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:red_rising_hopper_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+		}
+	]
+}

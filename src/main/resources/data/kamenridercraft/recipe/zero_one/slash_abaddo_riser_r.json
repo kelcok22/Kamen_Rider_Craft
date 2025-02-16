@@ -12,7 +12,7 @@
     }, "C": {
       "item": "kamenridercraft:crowding_hopper_progrisekey"
     }, "D": {
-      "item": "minecraft:red_dye"
+      "tag": "c:dyes/red"
     }
   },
   "result": {

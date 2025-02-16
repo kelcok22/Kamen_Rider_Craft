@@ -4,7 +4,7 @@
   "ingredients": [
 {
     
-      "item": "minecraft:iron_ingot"
+      "tag": "c:ingots/iron"
     }, 
     {
       "item": "kamenridercraft:wizardgem_cyan"

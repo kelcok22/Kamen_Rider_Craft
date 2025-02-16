@@ -10,7 +10,7 @@
 	"X": {
 	  "item": "kamenridercraft:nebula_gas_sample"
 	},"I": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	},"M": {
 	  "item": "kamenridercraft:monitor"
 	}
