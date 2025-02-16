@@ -1,0 +1,19 @@
+{
+	"name": "Rocking Hopper Zetsumerisekey",
+	"icon": "kamenridercraft:rocking_hopper_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 66,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Used to craft Ichi-Gata's $(l:zero_one/devices/cycloneriser)Cycloneriser$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocking_hopper_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
+		}
+	]
+}

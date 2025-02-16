@@ -1,0 +1,92 @@
+{
+	"name": "Raider",
+	"icon": "kamenridercraft:raidriser_battle",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "battle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_battle\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Battle Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_battle)Raidriser (Battle Raider)$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "buffalo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_buffalo\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Crushing Buffalo Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_buffalo)Raidriser (Crushing Buffalo Raider)$(/l)$(br2)Status Effects:$(li)Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "whale",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_whale\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Splashing Whale Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_whale)Raidriser (Splashing Whale Raider)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Resistance II$(li)Water Breathing$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_lion\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Dynamaiting Lion Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_lion)Raidriser (Dynamaiting Lion Raider)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "penguin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_penguin\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Storming Penguin Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_penguin)Raidriser (Storming Penguin Raider)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "panda",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_panda\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Scouting Panda Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_panda)Raidriser (Scouting Panda Raider)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raidriser_jackal\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Fighting Jackal Raider",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/raidriser_jackal)Raidriser (Fighting Jackal Raider)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength III"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Punching Kong Progrisekey",
+	"icon": "kamenridercraft:punching_kong_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#punching_kong)Punching Kong$(/l) form$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#punching_kong)Punching Kong$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:punching_kong_progrisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(br2)$(/l)Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
+		}
+	]
+}

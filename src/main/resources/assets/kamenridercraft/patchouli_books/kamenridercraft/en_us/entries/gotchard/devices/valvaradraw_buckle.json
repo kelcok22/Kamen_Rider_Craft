@@ -2,7 +2,7 @@
 	"name": "Valvaradraw Buckle",
 	"icon": "kamenridercraft:valvaradraw_buckle",
 	"category": "kamenridercraft:gotchard/devices",
-	"sortnum": 4,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

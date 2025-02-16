@@ -1,0 +1,16 @@
+{
+	"name": "Valvaradriver",
+	"icon": "kamenridercraft:valvaradriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/valvarad_rider)Kamen Rider Valvarad"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/valvaradriver"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Humagear Progrisekey",
+	"icon": "kamenridercraft:humagear_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l) to obtain the Progrisekeys of different Humagears"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:humagear_progrisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)$(li)$(l:zero_one/mobs/battle_raider)Battle Raider$(/l)$(li)$(l:zero_one/mobs/magia)Magia$(/l)$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)$(li)$(l:zero_one/mobs/raider)Raider$(/l)"
+		}
+	]
+}

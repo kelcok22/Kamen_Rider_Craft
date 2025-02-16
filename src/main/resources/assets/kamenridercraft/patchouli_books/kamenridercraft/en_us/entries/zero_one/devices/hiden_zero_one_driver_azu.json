@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ark-zero-one)Kamen Rider Ark-Zero-One"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ark_zero_one)Kamen Rider Ark-Zero-One"
 		},
 		{
 			"type": "patchouli:crafting",

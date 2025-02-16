@@ -1,0 +1,368 @@
+{
+	"name": "Kamen Rider Blades",
+	"icon": "kamenridercraft:seiken_swordriver_blades",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_senki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Senki",
+			"text": "Accessed with the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_fantasista",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Fantasista",
+			"text": "Accessed with the $(l:saber/items/peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_pegasus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenkuu_no_pegasus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Pegasus",
+			"text": "Accessed with the $(l:saber/items/tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fantastic_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenkuu_no_pegasus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Fantastic Lion",
+			"text": "Accessed with the $(l:saber/items/tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus$(/l) and $(l:saber/items/peter_fantasista_wonder_ride_book)Peter Fantasista$(/l) Wonder Ride Books"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king_lion_daisenki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:king_lion_daisenki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "King Lion Daisenki",
+			"text": "Accessed with the $(l:saber/items/king_lion_daisenki_wonder_ride_book)King Lion Daisenki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Water Breathing$(li)Haste II$(li)Jump Boost III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tategami_hyoujuusenki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Tategami Hyoujuusenki",
+			"text": "Accessed with the $(l:saber/items/tategami_hyoujuu_senki_wonder_ride_book)Tategami Hyoujuusenki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Strength IV$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "specter_gekikou_senki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:specter_gekikou_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Specter Gekikou Senki",
+			"text": "Accessed with the $(l:saber/items/specter_gekikou_senki_wonder_ride_book)Specter Gekikou Senki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed$(li)Resistance III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Lion",
+			"text": "Accessed with the $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cerberus_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Cerberus Lion",
+			"text": "Accessed with the $(l:saber/items/tri_cerberus_wonder_ride_book)Tri Cerberus Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genbu_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:genbu_shinwa_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Genbu Lion",
+			"text": "Accessed with the $(l:saber/items/genbu_shinwa_wonder_ride_book)Genbu Shinwa Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaaku_dragon_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaaku_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Jaaku Dragon Lion",
+			"text": "Accessed with the $(l:saber/items/jaaku_dragon_wonder_ride_book)Jaaku Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "phoenix_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_phoenix_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Phoenix Lion",
+			"text": "Accessed with the $(l:saber/items/eternal_phoenix_wonder_ride_book)Eternal Phoenix Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_saiyuu",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Saiyuu",
+			"text": "Accessed with the $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Saiyuu Journey Effects:$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Alangina",
+			"text": "Accessed with the $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_arthur",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:king_of_arthur_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Arthur",
+			"text": "Accessed with the $(l:saber/items/king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)King of Arthur Effects:$(li)Speed III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_jackun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:jackun_to_domamenoki_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Jackun",
+			"text": "Accessed with the $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Jackun to Domamenoki Effects:$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_ninja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:sarutobi_ninjaden_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Ninja",
+			"text": "Accessed with the $(l:saber/items/sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarutobi Ninjaden Effects:$(li)Speed III$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_butasan",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Butasan",
+			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3 Kyoudai Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kobuta 3 Kyoudai Effects:$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_hansel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Hansel",
+			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Hanselnuts to Gretel Effects:$(li)Speed II$(li)Haste III$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_bremen",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Bremen",
+			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bremen no Rock Band Effects:$(li)Speed V$(li)Haste V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_kirin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:kirin_no_ongaeshi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Kirin",
+			"text": "Accessed with the $(l:saber/items/kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kirin no Ongaeshi Effects:$(li)Speed III$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_sarukani",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:sarukani_wars_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Sarukani",
+			"text": "Accessed with the $(l:saber/items/sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarukani Wars Effects:$(li)Resistance II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_usakame",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Usakame",
+			"text": "Accessed with the $(l:saber/items/bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bakusou Usagi to Kame Effects:$(li)Speed VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_houshin_engi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:houshin_kamen_engi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Houshin Engi",
+			"text": "Accessed with the $(l:saber/items/houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Houshin Kamen Engi Effects:$(li)Speed II$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_kaguyan",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Kaguyan",
+			"text": "Accessed with the $(l:saber/items/tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Tsuki no Hime Kaguyan Effects:$(li)Night Vision II$(li)Haste III$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_jizou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:osha_jizou_san_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Jizou",
+			"text": "Accessed with the $(l:saber/items/osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Osha Jizou San Effects:$(li)Saturation II$(li)Luck III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_issun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:issun_bushi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Issun",
+			"text": "Accessed with the $(l:saber/items/issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Issun Bushi Effects:$(li)Haste V$(li)Speed V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_momoichirou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daishougun_momoichirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Momoichirou",
+			"text": "Accessed with the $(l:saber/items/daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daishougun Momoichirou Effects:$(li)Saturation III$(li)Haste II$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_urashimajirou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daikengou_urashimajirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Urashimajirou",
+			"text": "Accessed with the $(l:saber/items/daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daikengou Urashimajirou Effects:$(li)Saturation III$(li)Resistance II$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_kinzaburou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Kinzaburou",
+			"text": "Accessed with the $(l:saber/items/daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blades",
+			"text": "Appears in:$(li)SG08 Daiyokozuna Kinzaburou Wonder Ride Book (2021, toyline)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daiyokozuna Kinzaburou Effects:$(li)Haste II$(li)Strength II"
+		}
+	]
+}

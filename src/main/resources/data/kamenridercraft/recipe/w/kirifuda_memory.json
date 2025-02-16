@@ -9,7 +9,7 @@
 	  "item": "kamenridercraft:joker_memory"
 	},
 	{
-	  "item": "minecraft:ink_sac"
+	  "tag": "c:dyes/black"
 	}
   ],
   "result": {

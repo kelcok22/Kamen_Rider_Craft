@@ -1,0 +1,19 @@
+{
+	"name": "Ekal Zetsumerisekey",
+	"icon": "kamenridercraft:ekal_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Ekal Magia's $(l:zero_one/devices/zetsumeriser_ekal)Zetsumeriser (Ekal Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ekal_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		}
+	]
+}

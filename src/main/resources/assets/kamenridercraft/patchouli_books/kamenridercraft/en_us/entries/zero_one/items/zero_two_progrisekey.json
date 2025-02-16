@@ -1,0 +1,16 @@
+{
+	"name": "Zero-Two Progrisekey",
+	"icon": "kamenridercraft:zero_two_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Zero-Two's $(l:zero_one/devices/hiden_zero_two_driver)Hiden Zero-Two Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_two_progrisekey"
+		}
+	]
+}

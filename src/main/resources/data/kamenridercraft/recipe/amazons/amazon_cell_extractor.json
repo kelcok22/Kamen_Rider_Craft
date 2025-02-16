@@ -10,7 +10,7 @@
 	"X": {
 	  "item": "kamenridercraft:empty_vial"
 	},"I": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	},"M": {
 	  "item": "kamenridercraft:monitor"
 	}, "C": {

@@ -1,0 +1,19 @@
+{
+	"name": "Ark Zero-One Progrisekey",
+	"icon": "kamenridercraft:ark_zero_one_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used to craft Ark-Zero-One's $(l:zero_one/devices/hiden_zero_one_driver_azu)Hiden Zero-One Driver (Ark Zero-One)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ark_zero_one_progrisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)"
+		}
+	]
+}

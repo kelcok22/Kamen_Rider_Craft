@@ -10,7 +10,7 @@
 	  "item": "minecraft:sugar"
 	} ,
 	  {
-		  "item": "minecraft:cocoa_beans"
+		  "tag": "c:crops/cocoa_bean"
 	  }
   ],
   "result": {

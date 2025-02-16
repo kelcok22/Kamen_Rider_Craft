@@ -20,6 +20,7 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -468,7 +469,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
-            event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), SignRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
 
         }
 

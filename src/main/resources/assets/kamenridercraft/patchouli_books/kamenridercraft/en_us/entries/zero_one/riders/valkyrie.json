@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Valkyrie",
+	"icon": "kamenridercraft:shotriser_valkyrie",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rushing_cheetah",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Rushing Cheetah",
+			"text": "Accessed with the $(l:zero_one/items/rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valkyrie",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/shotriser_valkyrie)AIMS Shotriser (Valkyrie)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightning_hornet",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Lightning Hornet",
+			"text": "Accessed with the $(l:zero_one/items/lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valkyrie",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/shotriser_valkyrie)AIMS Shotriser (Valkyrie)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "justice_serval",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:serval_tiger_zetsumerisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": "Justice Serval",
+			"text": "Accessed with the $(l:zero_one/items/serval_tiger_zetsumerisekey)Serval Tiger Zetsumerisekey$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valkyrie",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Valkyrie & Valkyrie (2021, V-Cinema film)$(br2)Transforms with the $(l:zero_one/devices/shotriser_valkyrie)AIMS Shotriser (Valkyrie)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Strength IV"
+		}
+	]
+}

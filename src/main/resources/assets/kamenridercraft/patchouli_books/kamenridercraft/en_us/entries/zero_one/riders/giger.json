@@ -1,0 +1,19 @@
+{
+	"name": "Giger",
+	"icon": "kamenridercraft:giger_belt",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:giger_belt\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Giger",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/giger_belt)Giger Belt$(/l)$(br2)Status Effects:$(li)Giant III$(li)Resistance III$(li)Strength III"
+		}
+	]
+}

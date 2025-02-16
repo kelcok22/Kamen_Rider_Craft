@@ -8,7 +8,7 @@
   ],
   "key": {
 	"B": {
-	  "item": "minecraft:redstone"
+	  "tag": "c:dusts/redstone"
 	}, "A": {
 	  "item": "kamenridercraft:cell_alloy_ingot"
 	}, "C": {

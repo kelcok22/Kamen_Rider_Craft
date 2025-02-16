@@ -8,9 +8,9 @@
   ],
   "key": {
 	"X": {
-	  "item": "minecraft:iron_ingot"
+	  "tag": "c:ingots/iron"
 	}, "C": {
-	  "item": "minecraft:redstone"
+	  "tag": "c:dusts/redstone"
 	}, "Z": {
 	  "item": "kamenridercraft:gaiamemory"
 	}

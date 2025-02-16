@@ -1,0 +1,19 @@
+{
+	"name": "Carnotaurus Zetsumerisekey",
+	"icon": "kamenridercraft:carnotaurus_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 51,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Used to craft Zaia's $(l:zero_one/devices/zaia_thousandriver_zaia)ZAIA Thousandriver (Zaia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:carnotaurus_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)"
+		}
+	]
+}
