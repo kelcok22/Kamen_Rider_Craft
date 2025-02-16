@@ -1,0 +1,68 @@
+{
+	"name": "Kamen Rider Saikou",
+	"icon": "kamenridercraft:seiken_saikou_driver",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "saikou",
+			"entity": "minecraft:armor_stand{Invisible:1b,HandItems:[{id:\"kamenridercraft:kougouken_saikou\",Count:1b},{}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:saber/items/kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saikou",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste III$(li)Invisibility"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shadow",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book_shadow\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Saikou Shadow",
+			"text": "Accessed with the $(l:saber/items/kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saikou",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x_swordman",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_colorful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "X-Swordman",
+			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saikou",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance II$(li)Regeneration$(li)Haste III$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x_swordman_powerful",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book_powerful\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "X-Swordman Powerful",
+			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saikou",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance IV$(li)Regeneration$(li)Haste III$(li)Jump Boost III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x_swordman_wonderful",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_saikou_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_swordman_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "X-Swordman Wonderful",
+			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saikou",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance III$(li)Regeneration$(li)Haste III$(li)Jump Boost V$(li)Strength II"
+		}
+	]
+}

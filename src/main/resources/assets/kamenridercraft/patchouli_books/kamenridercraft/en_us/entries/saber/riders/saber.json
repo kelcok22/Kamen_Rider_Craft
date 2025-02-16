@@ -1,0 +1,428 @@
+{
+	"name": "Kamen Rider Saber",
+	"icon": "kamenridercraft:seiken_swordriver_saber",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "brave_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Brave Dragon",
+			"text": "Accessed with the $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_eagle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Eagle",
+			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Storm Eagle Effects:$(li)Night Vision$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "saiyuu_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Saiyuu Dragon",
+			"text": "Accessed with the $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Saiyuu Journey Effects:$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "crimson_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Crimson Dragon",
+			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Storm Eagle Effects:$(li)Night Vision$(li)Flying$(br2)Saiyuu Journey Effects:$(li)Jump Boost III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragonic_knight",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragonic_knight_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragonic Knight",
+			"text": "Accessed with the $(l:saber/items/dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Haste II$(li)Jump Boost V$(li)Fire Resistance$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "emotional_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:emotional_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Emotional Dragon",
+			"text": "Accessed with the $(l:saber/items/emotional_dragon_wonder_ride_book)Emotional Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance III$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength (with sword)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "primitive_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:primitive_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Primitive Dragon",
+			"text": "Accessed with the $(l:saber/items/primitive_dragon_wonder_ride_book)Primitive Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Haste III$(li)Jump Boost V$(li)Fire Resistance$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "elemental_primitive_dragon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:elemental_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Elemental Primitive Dragon",
+			"text": "Accessed with the $(l:saber/items/elemental_dragon_wonder_ride_book)Elemental Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Fire Resistance$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "xross_saber",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book_xross\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Xross Saber",
+			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Fire Resistance$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "crimson_saber",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book_xross\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book_xross\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book_xross\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Crimson Saber",
+			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "featuring_saber",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book_xross\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book_xross\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book_xross\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Featuring Saber",
+			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki$(/l) and $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Books"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste V$(li)Jump Boost V$(li)Fire Resistance$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultimate_bahamut",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_bahamut_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Ultimate Bahamut",
+			"text": "Accessed with the $(l:saber/items/ultimate_bahamut_wonder_ride_book)Ultimate Bahamut Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed IV$(li)Resistance IV$(li)Haste VI$(li)Jump Boost VI$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_ijinroku",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ijinroku_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Ghost Ijinroku",
+			"text": "Accessed with the $(l:saber/items/ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber × Ghost (2021, TTFC special)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Ghost$(li)Jump Boost III$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_hero_senki",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_hero_senki_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Super Hero Senki",
+			"text": "Accessed with the $(l:saber/items/super_hero_senki_wonder_ride_book)Super Hero Senki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Saber + Zenkaiger: Superhero Senki (2021, movie)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_tvkun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:televi_kun_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon TVKun",
+			"text": "Accessed with the $(l:saber/items/televi_kun_wonder_ride_book)Televi-Kun Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber: Gather! Hero!! The Out-of-Nowhere Dragon TV-Kun (2021, Hyper Battle Video)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed III$(li)Haste III$(li)Fire Resistance$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Lion",
+			"text": "Accessed with the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_hedgehog",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Hedgehog",
+			"text": "Accessed with the $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_jackun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:jackun_to_domamenoki_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Jackun",
+			"text": "Accessed with the $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Jackun to Domamenoki Effects:$(li)Haste$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_peter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Peter",
+			"text": "Accessed with the $(l:saber/items/peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Peter Fantasista Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_arthur",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:king_of_arthur_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Arthur",
+			"text": "Accessed with the $(l:saber/items/king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)King of Arthur Effects:$(li)Speed III$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_bremen",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Bremen",
+			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Bremen no Rock Band Effects:$(li)Speed V$(li)Haste V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Alangina",
+			"text": "Accessed with the $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_ninja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:sarutobi_ninjaden_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Ninja",
+			"text": "Accessed with the $(l:saber/items/sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Sarutobi Ninjaden Effects:$(li)Speed III$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_butasan",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Butasan",
+			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3 Kyoudai Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Kobuta 3 Kyoudai Effects:$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_hansel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Hansel",
+			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Hanselnuts to Gretel Effects:$(li)Speed II$(li)Haste III$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_kirin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:kirin_no_ongaeshi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Kirin",
+			"text": "Accessed with the $(l:saber/items/kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)DX Kirin no Ongaeshi Wonder Ride Book (2020, toyline)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Kirin no Ongaeshi Effects:$(li)Speed III$(li)Haste III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_sarukani",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:sarukani_wars_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Sarukani",
+			"text": "Accessed with the $(l:saber/items/sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Super Televi-Kun (December 2020, magazine)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Sarukani Wars Effects:$(li)Resistance II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_usakame",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Usakame",
+			"text": "Accessed with the $(l:saber/items/bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Bakusou Usagi to Kame Effects:$(li)Speed VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_houshin_engi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:houshin_kamen_engi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Houshin Engi",
+			"text": "Accessed with the $(l:saber/items/houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)DX Houshin Kamen Engi Wonder Ride Book (2020, toyline)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Houshin Kamen Engi Effects:$(li)Speed II$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_kaguyan",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Kaguyan",
+			"text": "Accessed with the $(l:saber/items/tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Tsuki no Hime Kaguyan Effects:$(li)Night Vision II$(li)Haste III$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_jizou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:osha_jizou_san_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Jizou",
+			"text": "Accessed with the $(l:saber/items/osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Osha Jizou San Effects:$(li)Saturation II$(li)Luck III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_issun",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:issun_bushi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Issun",
+			"text": "Accessed with the $(l:saber/items/issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Issun Bushi Effects:$(li)Haste V$(li)Speed V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_momoichirou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daishougun_momoichirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Momoichirou",
+			"text": "Accessed with the $(l:saber/items/daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Daishougun Momoichirou Effects:$(li)Saturation III$(li)Haste II$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_urashimajirou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daikengou_urashimajirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Urashimajirou",
+			"text": "Accessed with the $(l:saber/items/daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Daikengou Urashimajirou Effects:$(li)Saturation III$(li)Resistance II$(li)Speed II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_kinzaburou",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Kinzaburou",
+			"text": "Accessed with the $(l:saber/items/daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Daiyokozuna Kinzaburou Effects:$(li)Haste II$(li)Strength II"
+		}
+	]
+}

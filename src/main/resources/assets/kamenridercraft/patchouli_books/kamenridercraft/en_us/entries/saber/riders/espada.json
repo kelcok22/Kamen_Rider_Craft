@@ -1,0 +1,164 @@
+{
+	"name": "Kamen Rider Espada",
+	"icon": "kamenridercraft:seiken_swordriver_espada",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lamp_do_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lamp do Alangina",
+			"text": "Accessed with the $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lamp_do_hedgehog",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lamp do Hedgehog",
+			"text": "Accessed with the $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lamp_do_cerberus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lamp do Cerberus",
+			"text": "Accessed with the $(l:saber/items/tri_cerberus_wonder_ride_book)Tri Cerberus Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "golden_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Golden Alangina",
+			"text": "Accessed with the $(l:saber/items/tri_cerberus_wonder_ride_book)Tri Cerberus$(/l) and $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog$(/l) Wonder Ride Books"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arabiana_night",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:arabiana_night_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Arabiana Night",
+			"text": "Accessed with the $(l:saber/items/arabiana_night_wonder_ride_book)Arabiana Night Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Haste VI$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Dragon Alangina",
+			"text": "Accessed with the $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cerberus_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Cerberus Alangina",
+			"text": "Accessed with the $(l:saber/items/tri_cerberus_wonder_ride_book)Tri Cerberus Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genbu_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:genbu_shinwa_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Genbu Alangina",
+			"text": "Accessed with the $(l:saber/items/genbu_shinwa_wonder_ride_book)Genbu Shinwa Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaaku_dragon_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaaku_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Jaaku Dragon Alangina",
+			"text": "Accessed with the $(l:saber/items/jaaku_dragon_wonder_ride_book)Jaaku Dragon Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "phoenix_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_phoenix_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Phoenix Alangina",
+			"text": "Accessed with the $(l:saber/items/eternal_phoenix_wonder_ride_book)Eternal Phoenix Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "eagle_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Eagle Alangina",
+			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Storm Eagle Effects:$(li)Night Vision$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Lion Alangina",
+			"text": "Accessed with the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hedgehog_alangina",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Hedgehog Alangina",
+			"text": "Accessed with the $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Espada",
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+		}
+	]
+}

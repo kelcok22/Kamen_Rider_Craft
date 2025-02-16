@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Slash",
+	"icon": "kamenridercraft:sword_of_logos_buckle_slash",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "hanselnuts_to_gretel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Hanselnuts to Gretel",
+			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Slash",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed II$(li)Haste III$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bremen_no_rock_band",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Hansel Bremen",
+			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Slash",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed V$(li)Haste V$(li)Saturation"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kobuta_3_kyoudai",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Hansel Butasan",
+			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3 Kyoudai Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Slash",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Speed II$(li)Resistance II$(li)Haste III$(li)Saturation"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "valvarad_rider",
+  "pattern": [
+	"XXX",
+	"HIS",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"H": {
+	  "item": "kamenridercraft:machwheel_ride_chemy_card"
+	},
+	"S": {
+	  "item": "kamenridercraft:daiohni_ride_chemy_card"
+	},
+	"I": {
+	  "item": "kamenridercraft:gotchar_igniter"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:valvaradriver"
+  }
+}
