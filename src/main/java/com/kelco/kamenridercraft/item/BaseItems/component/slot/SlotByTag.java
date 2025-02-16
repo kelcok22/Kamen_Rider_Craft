@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.item.BaseItems.comonent.slot;
+package com.kelco.kamenridercraft.item.BaseItems.component.slot;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import net.minecraft.resources.ResourceLocation;

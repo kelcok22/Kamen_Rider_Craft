@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.world.inventory.AdventDeckGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -11,22 +11,14 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class AdventDeckGuiScreen extends AbstractContainerScreen<AdventDeckGuiMenu> {
+public class RideBookerGuiScreen extends AbstractContainerScreen<RideBookerGuiMenu> {
 	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/advent_deck_gui.png");
 
-	public AdventDeckGuiScreen(AdventDeckGuiMenu menu, Inventory playerInventory, Component title) {
+	public RideBookerGuiScreen(RideBookerGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageHeight++;
 	}
 
-	/**
-	 * Renders the graphical user interface (GUI) element.
-	 *
-	 * @param guiGraphics the GuiGraphics object used for rendering.
-	 * @param mouseX      the x-coordinate of the mouse cursor.
-	 * @param mouseY      the y-coordinate of the mouse cursor.
-	 * @param partialTick the partial tick time.
-	 */
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
 		super.render(guiGraphics, mouseX, mouseY, partialTick);

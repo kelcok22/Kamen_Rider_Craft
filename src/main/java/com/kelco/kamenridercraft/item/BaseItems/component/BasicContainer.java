@@ -1,11 +1,9 @@
-package com.kelco.kamenridercraft.item.BaseItems.comonent;
+package com.kelco.kamenridercraft.item.BaseItems.component;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemContainerContents;
-
-import java.util.Iterator;
 
 public class BasicContainer extends SimpleContainer {
 
