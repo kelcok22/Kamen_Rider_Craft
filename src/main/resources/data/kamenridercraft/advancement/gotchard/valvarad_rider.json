@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:valvaradriver"
+	},
+	"title": "Speed Demon",
+	"description": "Transform into Kamen Rider Valvarad",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/valvarad",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gotchard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gotchard_torso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gotchard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:valvaradriver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

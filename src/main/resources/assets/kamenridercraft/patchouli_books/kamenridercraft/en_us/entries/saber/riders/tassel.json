@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Tassel",
+	"icon": "kamenridercraft:haken_bladriver_tassel",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:haken_bladriver_tassel\",Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Tassel",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)$(br2)Transforms with the $(l:saber/devices/haken_bladriver_tassel)Haken Bladriver (Tassel)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Haste IV$(li)Jump Boost VIII$(li)Strength VII"
+		}
+	]
+}
