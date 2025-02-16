@@ -7,11 +7,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.build.BuildDriverItem;
-import com.kelco.kamenridercraft.item.build.FullBottleItem;
-import com.kelco.kamenridercraft.item.build.HazardTriggerItem;
-import com.kelco.kamenridercraft.item.build.TransteamGunItem;
-import com.kelco.kamenridercraft.item.build.NebulasteamGunItem;
+import com.kelco.kamenridercraft.item.build.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -979,6 +975,8 @@ public class Build_Rider_Items {
 
     public static final DeferredItem<Item> NEBULASTEAM_GUN_RIFLE_MODE = ITEMS.register("nebulasteam_gun_rifle",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+
+	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
