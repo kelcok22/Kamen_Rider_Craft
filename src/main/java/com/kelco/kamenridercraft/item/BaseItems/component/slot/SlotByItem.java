@@ -1,8 +1,5 @@
-package com.kelco.kamenridercraft.item.BaseItems.comonent.slot;
+package com.kelco.kamenridercraft.item.BaseItems.component.slot;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
