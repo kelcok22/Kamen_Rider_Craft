@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.comonent.BasicContainer;
-import com.kelco.kamenridercraft.item.BaseItems.comonent.slot.SlotByItem;
 import com.kelco.kamenridercraft.item.BaseItems.comonent.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import net.minecraft.core.component.DataComponents;
@@ -16,7 +15,6 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemContainerContents;
 
 public class AdventDeckGuiMenu extends AbstractContainerMenu {
@@ -49,7 +47,7 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 		this.addSlot(new SlotByTag(container,6,56,44,"gear/advent_cards"));
 		this.addSlot(new SlotByTag(container,7,80,44,"gear/advent_cards"));
 		this.addSlot(new SlotByTag(container,8,103,44,"gear/advent_cards"));
-		this.addSlot(new SlotByItem(container,9,126,44, Items.APPLE));
+		this.addSlot(new SlotByTag(container,9,126,44,"gear/advent_cards"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
