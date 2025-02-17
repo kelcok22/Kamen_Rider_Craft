@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_eagle",
+			"anchor": "storm_eagle",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Eagle",
 			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book"
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "saiyuu_dragon",
+			"anchor": "saiyuu_journey",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Saiyuu Dragon",
 			"text": "Accessed with the $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book"
@@ -186,7 +186,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_tvkun",
+			"anchor": "televi_kun",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:televi_kun_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon TVKun",
 			"text": "Accessed with the $(l:saber/items/televi_kun_wonder_ride_book)Televi-Kun Wonder Ride Book"
@@ -198,7 +198,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_lion",
+			"anchor": "lion_senki",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Lion",
 			"text": "Accessed with the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
@@ -210,7 +210,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_hedgehog",
+			"anchor": "needle_hedgehog",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Hedgehog",
 			"text": "Accessed with the $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
@@ -222,7 +222,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_jackun",
+			"anchor": "jackun_to_domamenoki",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:jackun_to_domamenoki_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Jackun",
 			"text": "Accessed with the $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
@@ -234,7 +234,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_peter",
+			"anchor": "peter_fantasista",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Peter",
 			"text": "Accessed with the $(l:saber/items/peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book"
@@ -246,7 +246,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_arthur",
+			"anchor": "king_of_arthur",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:king_of_arthur_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Arthur",
 			"text": "Accessed with the $(l:saber/items/king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book"
@@ -258,7 +258,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_bremen",
+			"anchor": "bremen_no_rock_band",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Bremen",
 			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
@@ -270,7 +270,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_alangina",
+			"anchor": "lamp_do_alangina",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Alangina",
 			"text": "Accessed with the $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
@@ -282,7 +282,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_ninja",
+			"anchor": "sarutobi_ninjaden",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:sarutobi_ninjaden_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Ninja",
 			"text": "Accessed with the $(l:saber/items/sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book"
@@ -294,19 +294,19 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_butasan",
+			"anchor": "kobuta_3_kyoudai",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Butasan",
-			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3 Kyoudai Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Saber",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Kobuta 3 Kyoudai Effects:$(li)Resistance II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Kobuta 3Kyoudai Effects:$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_hansel",
+			"anchor": "hanselnuts_to_gretel",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Hansel",
 			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
@@ -318,7 +318,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_kirin",
+			"anchor": "kirin_no_ongaeshi",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:kirin_no_ongaeshi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Kirin",
 			"text": "Accessed with the $(l:saber/items/kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book"
@@ -330,7 +330,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_sarukani",
+			"anchor": "sarukani_wars",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:sarukani_wars_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Sarukani",
 			"text": "Accessed with the $(l:saber/items/sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book"
@@ -342,7 +342,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_usakame",
+			"anchor": "bakusou_usagi_to_kame",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Usakame",
 			"text": "Accessed with the $(l:saber/items/bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book"
@@ -354,7 +354,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_houshin_engi",
+			"anchor": "houshin_kamen_engi",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:houshin_kamen_engi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Houshin Engi",
 			"text": "Accessed with the $(l:saber/items/houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book"
@@ -366,7 +366,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_kaguyan",
+			"anchor": "tsuki_no_hime_kaguyan",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Kaguyan",
 			"text": "Accessed with the $(l:saber/items/tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book"
@@ -378,7 +378,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_jizou",
+			"anchor": "osha_jizou_san",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:osha_jizou_san_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Jizou",
 			"text": "Accessed with the $(l:saber/items/osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book"
@@ -390,7 +390,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_issun",
+			"anchor": "issun_bushi",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:issun_bushi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Issun",
 			"text": "Accessed with the $(l:saber/items/issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book"
@@ -402,7 +402,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_momoichirou",
+			"anchor": "daishougun_momoichirou",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daishougun_momoichirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Momoichirou",
 			"text": "Accessed with the $(l:saber/items/daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book"
@@ -414,7 +414,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_urashimajirou",
+			"anchor": "daikengou_urashimajirou",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daikengou_urashimajirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Urashimajirou",
 			"text": "Accessed with the $(l:saber/items/daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book"
@@ -426,7 +426,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "dragon_kinzaburou",
+			"anchor": "daiyokozuna_kinzaburou",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Dragon Kinzaburou",
 			"text": "Accessed with the $(l:saber/items/daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book"

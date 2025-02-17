@@ -21,7 +21,7 @@
 			"anchor": "kobuta_3_kyoudai",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_kenzan\",components:{custom_data:{slot_tex1:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book_kenzan\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Ninja Butasan",
-			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3 Kyoudai Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
