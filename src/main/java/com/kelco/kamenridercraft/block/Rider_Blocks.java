@@ -259,6 +259,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LADDER = registerBlock("drive_pit_ladder",
 			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
+	public static final DeferredBlock<LadderBlock> DRIVE_PIT_LOGO = registerBlock("drive_pit_logo",
+			() -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).lightLevel((p_152632_) -> {return 100;})));
+
 
 	public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
 			() -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
