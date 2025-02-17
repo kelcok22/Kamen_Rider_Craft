@@ -138,6 +138,18 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "wonder_almighty",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:wonder_almighty_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"name": "Wonder Almighty",
+			"text": "Accessed with the $(l:saber/items/wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Saber",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Water Breathing$(li)Haste VI$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "ultimate_bahamut",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_bahamut_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
 			"name": "Ultimate Bahamut",

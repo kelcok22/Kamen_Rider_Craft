@@ -70,6 +70,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
 
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+        if (itemstack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get() && get_Form_Item(itemstack, 1) == Saber_Rider_Items.WONDER_ALMIGHTY_WONDER_RIDE_BOOK.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/saber_wonder_almighty.geo.json");
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/rider_plusbelt.geo.json");
     }
 
