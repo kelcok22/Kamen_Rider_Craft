@@ -516,7 +516,18 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.addNeedForm(PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get(), 1).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
-	// wonder_almighty_wonder_ride_book
+	public static final DeferredItem<Item> WONDER_ALMIGHTY_WONDER_RIDE_BOOK = ITEMS.register("wonder_almighty_wonder_ride_book",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_wonder_almighty","saber","seiken_swordriver_belt"
+					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false)
+					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_HERO_SENKI_WONDER_RIDE_BOOK = ITEMS.register("super_hero_senki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_super_hero_senki","saber","seiken_swordriver_belt"
