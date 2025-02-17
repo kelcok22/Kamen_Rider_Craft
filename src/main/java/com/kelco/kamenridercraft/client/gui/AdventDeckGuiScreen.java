@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.AdventDeckGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;

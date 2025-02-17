@@ -559,7 +559,6 @@ public class Ryuki_Rider_Items {
 
 	 public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
 			 () -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
-
 	public static final DeferredItem<Item> RYUKI_DECK = ITEMS.register("advent_deck_ryuki",
 			() -> new AdventDeckItem().AddToTabList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_DECK = ITEMS.register("advent_deck_knight",
