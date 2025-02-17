@@ -27,7 +27,7 @@ public class StoriousRiderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Saber_Rider_Items.DOOMS_DRIVER_BUCKLE_STORIOUS.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Saber_Rider_Items.BILGAMED.get()));
     }
-    /*
+
 	public void remove(RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
@@ -39,9 +39,7 @@ public class StoriousRiderEntity extends BaseHenchmenEntity {
     		}
     	}
 		super.remove(p_149847_);
-	}
-    */
-    
+	}    
 
     public static AttributeSupplier.Builder setAttributes() {
 
