@@ -29,6 +29,8 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelGuiMenu>> ASTROSWITCH_PANEL_GUI = REGISTRY.register("astroswitch_panel_gui", () -> IMenuTypeExtension.create(AstroswitchPanelGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelDoubleGuiMenu>> ASTROSWITCH_PANEL_DOUBLE_GUI = REGISTRY.register("astroswitch_panel_double_gui", () -> IMenuTypeExtension.create(AstroswitchPanelDoubleGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<PandoraPanelGuiMenu>> PANDORA_PANEL_GUI = REGISTRY.register("pandora_panel_gui", () -> IMenuTypeExtension.create(PandoraPanelGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GotchandrawHolderGuiMenu>> GOTCHANDRAW_HOLDER_GUI = REGISTRY.register("gotchandraw_holder_gui", () -> IMenuTypeExtension.create(GotchandrawHolderGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
 
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 
