@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ohma_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:kuuga_ultimate_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:agito_shining_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ryuki_survive_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:faiz_blaster_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:blade_king_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:hibiki_armed_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kabuto_hyper_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:den_o_liner_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:kiva_emperor_ridewatch"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_ohma_zi_o_driver_l"
+  }
+}
