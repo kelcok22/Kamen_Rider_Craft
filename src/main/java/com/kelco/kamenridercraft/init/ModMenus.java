@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.init;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.*;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.network.IContainerFactory;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -25,7 +27,12 @@ public class ModMenus {
 	//public static final DeferredHolder<MenuType<?>, MenuType<FueslotGuiMenu>> FUESLOT_GUI = REGISTRY.register("fueslot_gui", () -> IMenuTypeExtension.create(FueslotGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RideBookerGuiMenu>> RIDE_BOOKER_GUI = REGISTRY.register("ride_booker_gui", () -> IMenuTypeExtension.create(RideBookerGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelGuiMenu>> ASTROSWITCH_PANEL_GUI = REGISTRY.register("astroswitch_panel_gui", () -> IMenuTypeExtension.create(AstroswitchPanelGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelDoubleGuiMenu>> ASTROSWITCH_PANEL_DOUBLE_GUI = REGISTRY.register("astroswitch_panel_double_gui", () -> IMenuTypeExtension.create(AstroswitchPanelDoubleGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<PandoraPanelGuiMenu>> PANDORA_PANEL_GUI = REGISTRY.register("pandora_panel_gui", () -> IMenuTypeExtension.create(PandoraPanelGuiMenu::new));
 
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
+
+	public static AbstractContainerMenu ASTROSWITCH_PANEL_DOUBLE_GUI(int p51622, Inventory p51623) {
+        return null;
+    }
 }

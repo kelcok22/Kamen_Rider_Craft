@@ -1,5 +1,8 @@
 package com.kelco.kamenridercraft.block.entity;
 
+import net.minecraft.world.level.block.ChestBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,6 +23,7 @@ import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
+import java.util.function.Supplier;
 import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
@@ -27,12 +31,16 @@ import io.netty.buffer.Unpooled;
 import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelGuiMenu;
 
 public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(40, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(20, ItemStack.EMPTY);
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public AstroswitchPanelBlockEntity(BlockPos position, BlockState state) {
 		super(ModBlockEntities.ASTROSWITCH_PANEL.get(), position, state);
 	}
+
+	public static Supplier<BlockEntityType<? extends AstroswitchPanelBlockEntity>> get() {
+        return null;
+    }
 
 	@Override
 	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
@@ -60,6 +68,8 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 		return this.saveWithFullMetadata(lookupProvider);
 	}
 
+
+
 	@Override
 	public int getContainerSize() {
 		return stacks.size();
@@ -71,6 +81,12 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 			if (!itemstack.isEmpty())
 				return false;
 		return true;
+	}
+
+	public static void swapContents(AstroswitchPanelBlockEntity chest, AstroswitchPanelBlockEntity otherChest) {
+		NonNullList<ItemStack> nonnulllist = chest.getItems();
+		chest.setItems(otherChest.getItems());
+		otherChest.setItems(nonnulllist);
 	}
 
 	@Override
@@ -88,9 +104,10 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 		return new AstroswitchPanelGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
+
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Astroswitch Panel");
+		return Component.literal("Astroswitch Rack");
 	}
 
 	@Override
@@ -205,5 +222,13 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 
 	public SidedInvWrapper getItemHandler() {
 		return handler;
+	}
+
+	public void setBlockState(BlockState p_155251_) {
+		BlockState oldState = this.getBlockState();
+		super.setBlockState(p_155251_);
+		if (oldState.getValue(ChestBlock.FACING) != p_155251_.getValue(ChestBlock.FACING) || oldState.getValue(ChestBlock.TYPE) != p_155251_.getValue(ChestBlock.TYPE)) {
+			this.invalidateCapabilities();
+		}
 	}
 }
