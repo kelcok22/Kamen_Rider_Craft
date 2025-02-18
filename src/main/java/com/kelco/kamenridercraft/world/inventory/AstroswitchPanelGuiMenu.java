@@ -45,7 +45,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 		super(ModMenus.ASTROSWITCH_PANEL_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(40);
+		this.internal = new ItemStackHandler(20);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -282,206 +282,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 				return Fourze_Rider_Items.FIRE_ASTROSWITCH.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 14, 67) {
-			private final int slot = 20;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
 
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.STEALTH_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 37, 67) {
-			private final int slot = 21;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.HAMMER_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 59, 67) {
-			private final int slot = 22;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.WATER_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 82, 67) {
-			private final int slot = 23;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.MEDICAL_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 104, 67) {
-			private final int slot = 24;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.PEN_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 127, 67) {
-			private final int slot = 25;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.WHEEL_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 149, 67) {
-			private final int slot = 26;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SCREW_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 172, 67) {
-			private final int slot = 27;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.HAND_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 194, 67) {
-			private final int slot = 28;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SCHOOP_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 217, 67) {
-			private final int slot = 29;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 14, 89) {
-			private final int slot = 30;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 37, 89) {
-			private final int slot = 31;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.FREEZE_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 59, 89) {
-			private final int slot = 32;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.CLAW_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 82, 89) {
-			private final int slot = 33;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.BOARD_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 104, 89) {
-			private final int slot = 34;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.GIANTFOOT_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 127, 89) {
-			private final int slot = 35;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.AERO_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 149, 89) {
-			private final int slot = 36;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.GYRO_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 172, 89) {
-			private final int slot = 37;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.NET_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 194, 89) {
-			private final int slot = 38;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.STAMPER_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 217, 89) {
-			private final int slot = 39;
-			private int x = AstroswitchPanelGuiMenu.this.x;
-			private int y = AstroswitchPanelGuiMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.COSMIC_ASTROSWITCH.get() == stack.getItem();
-			}
-		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 37 + 8 + sj * 18, 45 + 84 + si * 18));
@@ -510,15 +311,15 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
 			if (index < 40) {
-				if (!this.moveItemStackTo(itemstack1, 40, this.slots.size(), true))
+				if (!this.moveItemStackTo(itemstack1, 20, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
 			} else if (!this.moveItemStackTo(itemstack1, 0, 40, false)) {
 				if (index < 40 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 40 + 27, this.slots.size(), true))
+					if (!this.moveItemStackTo(itemstack1, 20 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 40, 40 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 20, 20 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -639,46 +440,6 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 						continue;
 					if (j == 19)
 						continue;
-					if (j == 20)
-						continue;
-					if (j == 21)
-						continue;
-					if (j == 22)
-						continue;
-					if (j == 23)
-						continue;
-					if (j == 24)
-						continue;
-					if (j == 25)
-						continue;
-					if (j == 26)
-						continue;
-					if (j == 27)
-						continue;
-					if (j == 28)
-						continue;
-					if (j == 29)
-						continue;
-					if (j == 30)
-						continue;
-					if (j == 31)
-						continue;
-					if (j == 32)
-						continue;
-					if (j == 33)
-						continue;
-					if (j == 34)
-						continue;
-					if (j == 35)
-						continue;
-					if (j == 36)
-						continue;
-					if (j == 37)
-						continue;
-					if (j == 38)
-						continue;
-					if (j == 39)
-						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
 						ihm.setStackInSlot(j, ItemStack.EMPTY);
@@ -724,46 +485,6 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 					if (i == 18)
 						continue;
 					if (i == 19)
-						continue;
-					if (i == 20)
-						continue;
-					if (i == 21)
-						continue;
-					if (i == 22)
-						continue;
-					if (i == 23)
-						continue;
-					if (i == 24)
-						continue;
-					if (i == 25)
-						continue;
-					if (i == 26)
-						continue;
-					if (i == 27)
-						continue;
-					if (i == 28)
-						continue;
-					if (i == 29)
-						continue;
-					if (i == 30)
-						continue;
-					if (i == 31)
-						continue;
-					if (i == 32)
-						continue;
-					if (i == 33)
-						continue;
-					if (i == 34)
-						continue;
-					if (i == 35)
-						continue;
-					if (i == 36)
-						continue;
-					if (i == 37)
-						continue;
-					if (i == 38)
-						continue;
-					if (i == 39)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)

@@ -1,7 +1,8 @@
 package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelDoubleGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -11,10 +12,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class RideBookerGuiScreen extends AbstractContainerScreen<RideBookerGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_10_item_gui.png");
+public class AstroswitchPanelDoubleGuiScreen extends AbstractContainerScreen<AstroswitchPanelDoubleGuiMenu> {
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/astroswitch_panel_double_gui.png");
 
-	public RideBookerGuiScreen(RideBookerGuiMenu menu, Inventory playerInventory, Component title) {
+	public AstroswitchPanelDoubleGuiScreen(AstroswitchPanelDoubleGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageHeight++;
 	}

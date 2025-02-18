@@ -2622,6 +2622,12 @@
 "item.kamenridercraft.wizard_full_bottle": "Wizard Fullbottle",
 "item.kamenridercraft.fourze_full_bottle": "Fourze Fullbottle",
 
+  "item.kamenridercraft.pandora_panel_touto": "Pandora Panel (Touto)",
+  "item.kamenridercraft.pandora_panel_hokuto": "Pnadora Panel (Hokuto)",
+  "item.kamenridercraft.pandora_panel_seito": "Pandora Panel (Seito)",
+  "item.kamenridercraft.last_pandora_panel_black": "Last Pandora Panel (Black)",
+  "item.kamenridercraft.last_pandora_panel_white": "Last Pandora Panel (White)",
+
   "item.kamenridercraft.zi_o_logo": "Zi-O Logo",
   "item.kamenridercraft.zi_o_head": "Zi-O Helmet",
   "item.kamenridercraft.zi_o_troso": "Zi-O Chestplate",
@@ -3670,6 +3676,9 @@
 
 "item.kamenridercraft.gotchar_igniter": "Gotcharigniter",
 
+  "item.kamenridercraft.gotchandraw_holder": "Gotchandraw Holder",
+  "item.kamenridercraft.gotchancollection_panel": "Gotchancollection Panel",
+
 "item.kamenridercraft.gavv_logo": "Gavv Logo",
 "item.kamenridercraft.gavv_head": "Gavv Helmet",
 "item.kamenridercraft.gavv_troso": "Gavv Chestplate",
@@ -4413,5 +4422,6 @@
 "block.kamenridercraft.sabela_boss_block": "Sabela Boss Block",
 "block.kamenridercraft.durendal_boss_block": "Durendal Boss Block",
 "block.kamenridercraft.solomon_boss_block": "Solomon Boss Block",
-"block.kamenridercraft.storious_boss_block": "Storious Boss Block"
+"block.kamenridercraft.storious_boss_block": "Storious Boss Block",
+  "container.astroswitchPanel": "Astroswitch Rack"
 }
