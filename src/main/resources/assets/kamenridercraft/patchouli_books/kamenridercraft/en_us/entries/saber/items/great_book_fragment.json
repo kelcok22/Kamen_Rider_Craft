@@ -1,0 +1,19 @@
+{
+	"name": "Great Book Fragment",
+	"icon": "kamenridercraft:great_book_fragment",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 72,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:great_book_fragment",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/zooous)Zooous$(/l)"
+		}
+	]
+}

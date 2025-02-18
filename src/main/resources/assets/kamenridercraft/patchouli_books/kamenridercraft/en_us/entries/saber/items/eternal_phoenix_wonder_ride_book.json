@@ -1,0 +1,19 @@
+{
+	"name": "Eternal Phoenix Wonder Ride Book",
+	"icon": "kamenridercraft:eternal_phoenix_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Used to craft Falchion's $(l:saber/devices/haken_bladriver_falchion)Haken Bladriver (Falchion)$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#eternal_phoenix)Eternal Phoenix$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#eternal_phoenix)Eternal Phoenix$(/l) form$(br)Used to access Falchion's $(l:saber/riders/falchion#eternal_phoenix)Eternal Phoenix$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eternal_phoenix_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		}
+	]
+}

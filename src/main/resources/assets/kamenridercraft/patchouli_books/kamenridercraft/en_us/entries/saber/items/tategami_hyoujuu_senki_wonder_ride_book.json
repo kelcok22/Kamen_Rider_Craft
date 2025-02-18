@@ -1,0 +1,16 @@
+{
+	"name": "Tategami Hyoujuusenki Wonder Ride Book",
+	"icon": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 47,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Blades's $(l:saber/riders/blades#tategami_hyoujuusenki)Tategami Hyoujuusenki$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/tategami_hyoujuu_senki_wonder_ride_book"
+		}
+	]
+}

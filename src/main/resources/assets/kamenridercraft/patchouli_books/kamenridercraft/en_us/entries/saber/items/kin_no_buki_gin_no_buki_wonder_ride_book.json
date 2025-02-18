@@ -1,0 +1,19 @@
+{
+	"name": "Kin no Buki Gin no Buki Wonder Ride Book",
+	"icon": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Saikou's $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Used to access Saikou's $(l:saber/riders/saikou#saikou)base form$(/l) and $(l:saber/riders/saikou#shadow)Saikou Shadow$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		}
+	]
+}

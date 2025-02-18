@@ -1,0 +1,19 @@
+{
+	"name": "Ultimate Bahamut Wonder Ride Book",
+	"icon": "kamenridercraft:ultimate_bahamut_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)$(br2)Used to access Saber's $(l:saber/riders/saber#ultimate_bahamut)Ultimate Bahamut$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ultimate_bahamut_wonder_ride_book",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

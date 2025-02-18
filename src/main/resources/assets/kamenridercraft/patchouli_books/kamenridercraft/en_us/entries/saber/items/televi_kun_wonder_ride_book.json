@@ -1,0 +1,19 @@
+{
+	"name": "Televi-Kun Wonder Ride Book",
+	"icon": "kamenridercraft:televi_kun_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: Gather! Hero!! The Out-of-Nowhere Dragon TV-Kun (2021, Hyper Battle Video)$(br2)Used to access Saber's $(l:saber/riders/saber#televi_kun)Televi-Kun$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:televi_kun_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		}
+	]
+}

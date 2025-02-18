@@ -1,0 +1,19 @@
+{
+	"name": "Amazing Siren Wonder Ride Book",
+	"icon": "kamenridercraft:amazing_siren_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Used to access Falchion's $(l:saber/riders/falchion#amazing_siren)Amazing Siren$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazing_siren_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		}
+	]
+}

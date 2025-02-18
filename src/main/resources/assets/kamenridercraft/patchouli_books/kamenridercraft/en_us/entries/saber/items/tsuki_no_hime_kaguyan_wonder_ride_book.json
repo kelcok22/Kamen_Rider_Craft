@@ -1,0 +1,19 @@
+{
+	"name": "Tsuki no Hime Kaguyan Wonder Ride Book",
+	"icon": "kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#tsuki_no_hime_kaguyan)Tsuki no Hime Kaguyan$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#tsuki_no_hime_kaguyan)Tsuki no Hime Kaguyan$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		}
+	]
+}

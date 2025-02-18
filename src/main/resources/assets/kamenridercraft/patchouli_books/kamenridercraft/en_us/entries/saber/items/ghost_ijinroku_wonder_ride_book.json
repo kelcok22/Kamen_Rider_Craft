@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Ijinroku Wonder Ride Book",
+	"icon": "kamenridercraft:ghost_ijinroku_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 73,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber × Ghost (2021, TTFC special)$(br2)Used to access Saber's $(l:saber/riders/saber#ghost_ijinroku)Ghost Ijinroku$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/ghost_ijinroku_wonder_ride_book"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Jackun to Domamenoki Wonder Ride Book",
+	"icon": "kamenridercraft:jackun_to_domamenoki_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jackun_to_domamenoki_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		}
+	]
+}

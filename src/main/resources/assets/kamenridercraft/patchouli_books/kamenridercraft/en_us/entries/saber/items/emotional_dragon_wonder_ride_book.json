@@ -1,0 +1,19 @@
+{
+	"name": "Emotional Dragon Wonder Ride Book",
+	"icon": "kamenridercraft:emotional_dragon_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 41,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Used to access Saber's $(l:saber/riders/saber#emotional_dragon)Emotional Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:emotional_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		}
+	]
+}

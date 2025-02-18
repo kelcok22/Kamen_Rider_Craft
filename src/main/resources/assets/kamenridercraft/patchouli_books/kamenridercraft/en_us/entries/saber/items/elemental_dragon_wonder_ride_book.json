@@ -1,0 +1,19 @@
+{
+	"name": "Elemental Dragon Wonder Ride Book",
+	"icon": "kamenridercraft:elemental_dragon_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#elemental_primitive_dragon)Elemental Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elemental_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)"
+		}
+	]
+}
