@@ -1,0 +1,19 @@
+{
+	"name": "Lamp do Alangina Wonder Ride Book",
+	"icon": "kamenridercraft:lamp_do_alngina_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Espada's $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lamp_do_alangina)Lamp do Alangina$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lamp_do_alngina_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		}
+	]
+}

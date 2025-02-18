@@ -1,0 +1,19 @@
+{
+	"name": "Issun Bushi Wonder Ride Book",
+	"icon": "kamenridercraft:issun_bushi_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#issun_bushi)Issun Bushi$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#issun_bushi)Issun Bushi$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:issun_bushi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		}
+	]
+}

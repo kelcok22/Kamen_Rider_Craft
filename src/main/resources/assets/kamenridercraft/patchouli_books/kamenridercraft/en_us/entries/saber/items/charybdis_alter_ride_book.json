@@ -1,0 +1,19 @@
+{
+	"name": "Charybdis Alter Ride Book",
+	"icon": "kamenridercraft:charybdis_alter_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:charybdis_alter_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l)"
+		}
+	]
+}

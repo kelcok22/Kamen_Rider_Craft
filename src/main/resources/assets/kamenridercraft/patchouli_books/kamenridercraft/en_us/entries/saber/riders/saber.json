@@ -138,9 +138,9 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "wonder_almighty",
+			"anchor": "almighty_saber",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:wonder_almighty_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
-			"name": "Wonder Almighty",
+			"name": "Almighty Saber",
 			"text": "Accessed with the $(l:saber/items/wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book"
 		},
 		{

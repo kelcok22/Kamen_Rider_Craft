@@ -1,0 +1,19 @@
+{
+	"name": "Tassel Dark Wonder Ride Book",
+	"icon": "kamenridercraft:tassel_dark_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tassel_dark_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
+		}
+	]
+}
