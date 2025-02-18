@@ -2,35 +2,145 @@
 package com.kelco.kamenridercraft.block.storageBlock;
 
 import com.kelco.kamenridercraft.block.entity.AstroswitchPanelBlockEntity;
+import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelDoubleGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelGuiMenu;
+import com.mojang.serialization.MapCodec;
 import io.netty.buffer.Unpooled;
+import it.unimi.dsi.fastutil.floats.Float2FloatFunction;
+import net.minecraft.core.Direction;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.Containers;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.MenuProvider;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.*;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.ChestBlockEntity;
+import net.minecraft.world.level.block.entity.LidBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
+import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.function.BiPredicate;
+import java.util.function.Supplier;
 
 public class AstroswitchPanelBlock extends Block {
-	public AstroswitchPanelBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-				.strength(5.0F,6.0F).sound(SoundType.METAL));
+	private AstroswitchPanelDoubleGuiMenu blockEntityType;
+
+	public static final DirectionProperty FACING;
+	public static final EnumProperty<ChestType> TYPE;
+	protected static final int AABB_OFFSET = 1;
+	protected static final int AABB_HEIGHT = 14;
+	protected static final VoxelShape NORTH_AABB;
+	protected static final VoxelShape SOUTH_AABB;
+	protected static final VoxelShape WEST_AABB;
+	protected static final VoxelShape EAST_AABB;
+	protected static final VoxelShape AABB;
+	private static final DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<Container>> CHEST_COMBINER;
+	private static final DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<MenuProvider>> MENU_PROVIDER_COMBINER;
+
+
+	public AstroswitchPanelBlock(Properties properties, Supplier<BlockEntityType<? extends AstroswitchPanelBlockEntity>> blockEntityType) {
+		super(properties);
+		this.registerDefaultState((BlockState)((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(TYPE, ChestType.SINGLE)));
+	}
+
+	public static DoubleBlockCombiner.BlockType getBlockType(BlockState state) {
+		ChestType chesttype = (ChestType)state.getValue(TYPE);
+		if (chesttype == ChestType.SINGLE) {
+			return DoubleBlockCombiner.BlockType.SINGLE;
+		} else {
+			return chesttype == ChestType.RIGHT ? DoubleBlockCombiner.BlockType.FIRST : DoubleBlockCombiner.BlockType.SECOND;
+		}
+	}
+
+
+	protected BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
+
+		if (facingState.is(this) && facing.getAxis().isHorizontal()) {
+			ChestType chesttype = (ChestType)facingState.getValue(TYPE);
+			if (state.getValue(TYPE) == ChestType.SINGLE && chesttype != ChestType.SINGLE && state.getValue(FACING) == facingState.getValue(FACING) && getConnectedDirection(facingState) == facing.getOpposite()) {
+				return (BlockState)state.setValue(TYPE, chesttype.getOpposite());
+			}
+		} else if (getConnectedDirection(state) == facing) {
+			return (BlockState)state.setValue(TYPE, ChestType.SINGLE);
+		}
+
+		return super.updateShape(state, facing, facingState, level, currentPos, facingPos);
+	}
+
+	protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+		if (state.getValue(TYPE) == ChestType.SINGLE) {
+			return AABB;
+		} else {
+			switch (getConnectedDirection(state)) {
+				case NORTH:
+				default:
+					return NORTH_AABB;
+				case SOUTH:
+					return SOUTH_AABB;
+				case WEST:
+					return WEST_AABB;
+				case EAST:
+					return EAST_AABB;
+			}
+		}
+	}
+
+	public static Direction getConnectedDirection(BlockState state) {
+		Direction direction = (Direction)state.getValue(FACING);
+		return state.getValue(TYPE) == ChestType.LEFT ? direction.getClockWise() : direction.getCounterClockWise();
+	}
+
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		ChestType chesttype = ChestType.SINGLE;
+		Direction direction = context.getHorizontalDirection().getOpposite();
+		boolean flag = context.isSecondaryUseActive();
+		Direction direction1 = context.getClickedFace();
+		if (direction1.getAxis().isHorizontal() && flag) {
+			Direction direction2 = this.candidatePartnerFacing(context, direction1.getOpposite());
+			if (direction2 != null && direction2.getAxis() != direction1.getAxis()) {
+				direction = direction2;
+				chesttype = direction2.getCounterClockWise() == direction1.getOpposite() ? ChestType.RIGHT : ChestType.LEFT;
+			}
+		}
+
+		if (chesttype == ChestType.SINGLE && !flag) {
+			if (direction == this.candidatePartnerFacing(context, direction.getClockWise())) {
+				chesttype = ChestType.LEFT;
+			} else if (direction == this.candidatePartnerFacing(context, direction.getCounterClockWise())) {
+				chesttype = ChestType.RIGHT;
+			}
+		}
+
+		return (BlockState)((BlockState)((BlockState)this.defaultBlockState().setValue(FACING, direction)).setValue(TYPE, chesttype));
+	}
+
+	@Nullable
+	private Direction candidatePartnerFacing(BlockPlaceContext context, Direction direction) {
+		BlockState blockstate = context.getLevel().getBlockState(context.getClickedPos().relative(direction));
+		return blockstate.is(this) && blockstate.getValue(TYPE) == ChestType.SINGLE ? (Direction)blockstate.getValue(FACING) : null;
 	}
 
 	public AstroswitchPanelBlock AddToTabList(List<Block> TabList) {
@@ -62,15 +172,54 @@ public class AstroswitchPanelBlock extends Block {
 				return InteractionResult.SUCCESS;
 	}
 
-	@Override
-	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
-		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+
+
+
+    public DoubleBlockCombiner.NeighborCombineResult<? extends AstroswitchPanelBlockEntity> combine(BlockState state, Level level, BlockPos pos, boolean override) {
+		BiPredicate bipredicate = null;
+		if (override) {
+			bipredicate = (p_51578_, p_51579_) -> {
+				return false;
+			};
+		}
+
+		return DoubleBlockCombiner.combineWithNeigbour((BlockEntityType)this.blockEntityType.get(), ChestBlock::getBlockType, ChestBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
 	}
 
-	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new AstroswitchPanelBlockEntity(pos, state);
+	@Nullable
+	protected MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
+		return (MenuProvider)((Optional)this.combine(state, level, pos, false).apply(MENU_PROVIDER_COMBINER)).orElse((Object)null);
 	}
+
+	public static DoubleBlockCombiner.Combiner<ChestBlockEntity, Float2FloatFunction> opennessCombiner(final LidBlockEntity lid) {
+		return new DoubleBlockCombiner.Combiner<ChestBlockEntity, Float2FloatFunction>() {
+			public Float2FloatFunction acceptDouble(ChestBlockEntity p_51633_, ChestBlockEntity p_51634_) {
+				return (p_51638_) -> {
+					return Math.max(p_51633_.getOpenNess(p_51638_), p_51634_.getOpenNess(p_51638_));
+				};
+			}
+
+			public Float2FloatFunction acceptSingle(ChestBlockEntity p_51631_) {
+				Objects.requireNonNull(p_51631_);
+				return p_51631_::getOpenNess;
+			}
+
+			public Float2FloatFunction acceptNone() {
+				LidBlockEntity var10000 = lid;
+				Objects.requireNonNull(var10000);
+				return var10000::getOpenNess;
+			}
+		};
+	}
+
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new ChestBlockEntity(pos, state);
+    }
+
+
+	private Object blockEntityType() {
+        return null;
+    }
 
 	@Override
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
@@ -103,5 +252,82 @@ public class AstroswitchPanelBlock extends Block {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+	protected BlockState rotate(BlockState state, Rotation rotation) {
+		return (BlockState)state.setValue(FACING, rotation.rotate((Direction)state.getValue(FACING)));
+	}
+
+	protected BlockState mirror(BlockState state, Mirror mirror) {
+		BlockState rotated = state.rotate(mirror.getRotation((Direction)state.getValue(FACING)));
+		return mirror == Mirror.NONE ? rotated : (BlockState)rotated.setValue(TYPE, ((ChestType)rotated.getValue(TYPE)).getOpposite());
+	}
+
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(new Property[]{FACING, TYPE});
+	}
+
+	protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		BlockEntity blockentity = level.getBlockEntity(pos);
+		if (blockentity instanceof ChestBlockEntity) {
+			((ChestBlockEntity)blockentity).recheckOpen();
+		}
+
+	}
+
+	static {
+		FACING = HorizontalDirectionalBlock.FACING;
+		TYPE = BlockStateProperties.CHEST_TYPE;
+		NORTH_AABB = Block.box(1.0, 0.0, 0.0, 15.0, 14.0, 15.0);
+		SOUTH_AABB = Block.box(1.0, 0.0, 1.0, 15.0, 14.0, 16.0);
+		WEST_AABB = Block.box(0.0, 0.0, 1.0, 15.0, 14.0, 15.0);
+		EAST_AABB = Block.box(1.0, 0.0, 1.0, 16.0, 14.0, 15.0);
+		AABB = Block.box(1.0, 0.0, 1.0, 15.0, 14.0, 15.0);
+		CHEST_COMBINER = new DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<Container>>() {
+			public Optional<Container> acceptDouble(AstroswitchPanelBlockEntity p_51591_, AstroswitchPanelBlockEntity p_51592_) {
+				return Optional.of(new CompoundContainer(p_51591_, p_51592_));
+			}
+
+			public Optional<Container> acceptSingle(AstroswitchPanelBlockEntity p_51589_) {
+				return Optional.of(p_51589_);
+			}
+
+			public Optional<Container> acceptNone() {
+				return Optional.empty();
+			}
+		};
+
+		MENU_PROVIDER_COMBINER = new DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<MenuProvider>>() {
+			public Optional<MenuProvider> acceptDouble(final AstroswitchPanelBlockEntity p_51604_, final AstroswitchPanelBlockEntity p_51605_) {
+				final Container container = new CompoundContainer(p_51604_, p_51605_);
+				return Optional.of(new MenuProvider() {
+					@Nullable
+					public AbstractContainerMenu createMenu(int p_51622_, Inventory p_51623_, Player p_51624_) {
+						if (p_51604_.canOpen(p_51624_) && p_51605_.canOpen(p_51624_)) {
+							p_51604_.unpackLootTable(p_51623_.player);
+							p_51605_.unpackLootTable(p_51623_.player);
+							return ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI(p_51622_, p_51623_);
+						} else {
+							return null;
+						}
+					}
+
+					public Component getDisplayName() {
+						if (p_51604_.hasCustomName()) {
+							return p_51604_.getDisplayName();
+						} else {
+							return (Component)(p_51605_.hasCustomName() ? p_51605_.getDisplayName() : Component.translatable("container.astroswitchPanel"));
+						}
+					}
+				});
+			}
+
+			public Optional<MenuProvider> acceptSingle(AstroswitchPanelBlockEntity p_51602_) {
+				return Optional.of(p_51602_);
+			}
+
+			public Optional<MenuProvider> acceptNone() {
+				return Optional.empty();
+			}
+		};
 	}
 }

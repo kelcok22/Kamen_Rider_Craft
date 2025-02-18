@@ -4413,5 +4413,6 @@
 "block.kamenridercraft.sabela_boss_block": "Sabela Boss Block",
 "block.kamenridercraft.durendal_boss_block": "Durendal Boss Block",
 "block.kamenridercraft.solomon_boss_block": "Solomon Boss Block",
-"block.kamenridercraft.storious_boss_block": "Storious Boss Block"
+"block.kamenridercraft.storious_boss_block": "Storious Boss Block",
+  "container.astroswitchPanel": "Astroswitch Rack"
 }
