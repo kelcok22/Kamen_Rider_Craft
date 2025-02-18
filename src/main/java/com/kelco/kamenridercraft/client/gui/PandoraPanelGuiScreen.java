@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class PandoraPanelGuiScreen extends AbstractContainerScreen<PandoraPanelGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/panel_green_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/panel_black_gui.png");
 
 	public PandoraPanelGuiScreen(PandoraPanelGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);

@@ -475,13 +475,16 @@ public class KamenRiderCraftCore
 
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
-            /*event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);*/
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
             /*event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);*/
-            event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
             event.register(ModMenus.RIDE_BOOKER_GUI.get(), RideBookerGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI.get(), AstroswitchPanelDoubleGuiScreen::new);
+            /*event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);*/
             event.register(ModMenus.PANDORA_PANEL_GUI.get(), PandoraPanelGuiScreen::new);
+            event.register(ModMenus.GOTCHANDRAW_HOLDER_GUI.get(), GotchandrawHolderGuiScreen::new);
+            event.register(ModMenus.GOTCHANCOLLECTION_PANEL_GUI.get(), GotchancollectionPanelGuiScreen::new);
 
         }
     }

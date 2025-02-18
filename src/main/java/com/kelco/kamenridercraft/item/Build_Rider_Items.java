@@ -977,6 +977,10 @@ public class Build_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_HOKUTO = ITEMS.register("pandora_panel_hokuto", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

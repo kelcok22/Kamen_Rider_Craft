@@ -1,7 +1,7 @@
 
-package com.kelco.kamenridercraft.item.build;
+package com.kelco.kamenridercraft.item.gotchard;
 
-import com.kelco.kamenridercraft.world.inventory.PandoraPanelGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.GotchancollectionPanelGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -24,14 +24,14 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class PandoraPanelItem extends Item {
+public class GotchancollectionPanelItem extends Item {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-	public PandoraPanelItem() {
+	public GotchancollectionPanelItem() {
 		super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 	}
 
-	public PandoraPanelItem AddToTabList(List<Item> TabList) {
+	public GotchancollectionPanelItem AddToTabList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
 	}
@@ -54,7 +54,7 @@ public class PandoraPanelItem extends Item {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Pandora Panel");
+					return Component.literal("Gotchancollection Panel");
 				}
 
 				@Override
@@ -62,7 +62,7 @@ public class PandoraPanelItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new PandoraPanelGuiMenu(id, inventory, packetBuffer,itemstack);
+					return new GotchancollectionPanelGuiMenu(id, inventory, packetBuffer,itemstack);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());
