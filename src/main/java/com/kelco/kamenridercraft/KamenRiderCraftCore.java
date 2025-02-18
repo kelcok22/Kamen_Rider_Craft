@@ -476,7 +476,7 @@ public class KamenRiderCraftCore
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
-            /*event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);*/
+            event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
             event.register(ModMenus.RIDE_BOOKER_GUI.get(), RideBookerGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
