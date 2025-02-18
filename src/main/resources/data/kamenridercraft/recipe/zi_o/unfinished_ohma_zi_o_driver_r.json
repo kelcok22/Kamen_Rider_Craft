@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ohma_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:w_xtreme_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ooo_putotyra_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:fourze_cosmic_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:wizard_infinity_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:gaim_kiwami_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:drive_tridoron_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ghost_mugen_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:ex_aid_muteki_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:build_genius_ridewatch"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_ohma_zi_o_driver_r"
+  }
+}

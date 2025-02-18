@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ohma_zi_o",
+  "pattern": [
+    "SBW",
+    "ULG",
+    "RDZ"
+  ],
+  "key": {
+    "L": {
+      "item": "kamenridercraft:ziku_driver_zi_o"
+    },"R": {
+      "item": "kamenridercraft:tsukuyomi_ridewatch"
+    },"W": {
+      "item": "kamenridercraft:ginga_miridewatch"
+    },"S": {
+      "item": "kamenridercraft:geiz_revive_ridewatch"
+    }, "Z": {
+      "item": "kamenridercraft:ohma_advent_calendar"
+    }, "D": {
+      "item": "kamenridercraft:decade_complete_ridewatch"
+    }, "U": {
+      "item": "kamenridercraft:unfinished_ohma_zi_o_driver_l"
+    }, "G": {
+      "item": "kamenridercraft:unfinished_ohma_zi_o_driver_r"
+    }, "B": {
+      "item": "kamenridercraft:grand_zi_o_ridewatch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:ohma_zi_o_driver"
+  }
+}

@@ -2647,6 +2647,7 @@
   "item.kamenridercraft.quiz_driver": "Quiz Driver",
   "item.kamenridercraft.kikai_driver": "Kikai Driver",
   "item.kamenridercraft.ginga_driver": "Ginga Driver",
+  "item.kamenridercraft.ohma_zi_o_driver": "Ohma Zi-O Driver",
 
   "item.kamenridercraft.zikan_girade": "Zikan Girade",
   "item.kamenridercraft.zikan_zax": "Zikan Zax",
@@ -2758,6 +2759,8 @@
 
   "item.kamenridercraft.unfinished_grand_zi_o_ridewatch_l": "Unfinished Grand Zi-O Ridewatch Part",
   "item.kamenridercraft.unfinished_grand_zi_o_ridewatch_r": "Unfinished Grand Zi-O Ridewatch Part",
+  "item.kamenridercraft.unfinished_ohma_zi_o_driver_l": "Unfinished Ohma Zi-O Driver Part",
+  "item.kamenridercraft.unfinished_ohma_zi_o_driver_r": "Unfinished Ohma Zi-O Driver Part",
 
   "item.kamenridercraft.shinobi_miridewatch": "Shinobi Miridewatch",
   "item.kamenridercraft.quiz_miridewatch": "Quiz Miridewatch",

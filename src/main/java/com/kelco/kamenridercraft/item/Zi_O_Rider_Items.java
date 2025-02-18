@@ -625,6 +625,22 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_R = ITEMS.register("unfinished_grand_zi_o_ridewatch_r",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_L = ITEMS.register("unfinished_ohma_zi_o_driver_l",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ohma_zi_o","ohma_zi_o_driver_belt",
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 6,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
+					.hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHURIKEN_STARTER = ITEMS.register("shuriken_starter",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shinobi","shinobi_driver_belt",
@@ -677,6 +693,9 @@ public class Zi_O_Rider_Items {
     
     public static final DeferredItem<Item> ZIKU_DRIVER_ZI_O = ITEMS.register("ziku_driver_zi_o",
     		() -> new ZikuDriverItem(ArmorMaterials.DIAMOND,"zi_o",ZI_O_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+
+	public static final DeferredItem<Item> OHMA_ZI_O_DRIVER = ITEMS.register("ohma_zi_o_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ohma_zi_o",UNFINISHED_OHMA_ZI_O_DRIVER_L ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_GEIZ = ITEMS.register("ziku_driver_geiz",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"geiz",GEIZ_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
