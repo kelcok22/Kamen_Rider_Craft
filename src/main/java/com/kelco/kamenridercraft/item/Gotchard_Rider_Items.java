@@ -7,6 +7,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.geats.MissionBoxItem;
+import com.kelco.kamenridercraft.item.gotchard.GotchancollectionPanelItem;
+import com.kelco.kamenridercraft.item.gotchard.GotchandrawHolderItem;
 import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -530,10 +532,11 @@ public class Gotchard_Rider_Items {
 			() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
-	/*
+
 	public static final DeferredItem<Item> GOTCHANDRAW_HOLDER = ITEMS.register("gotchandraw_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM));
-	 */
+			() -> new GotchandrawHolderItem().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM));
+	public static final DeferredItem<Item> GOTCHANCOLLECTION_PANEL = ITEMS.register("gotchancollection_panel",
+			() -> new GotchancollectionPanelItem().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GOTCHARGE_GUN = ITEMS.register("gotcharge_gun",

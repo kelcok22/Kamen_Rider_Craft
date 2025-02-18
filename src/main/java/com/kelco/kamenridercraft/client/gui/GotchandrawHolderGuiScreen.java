@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -11,10 +11,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class RideBookerGuiScreen extends AbstractContainerScreen<RideBookerGuiMenu> {
+public class GotchandrawHolderGuiScreen extends AbstractContainerScreen<GotchandrawHolderGuiMenu> {
 	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_10_item_gui.png");
 
-	public RideBookerGuiScreen(RideBookerGuiMenu menu, Inventory playerInventory, Component title) {
+	public GotchandrawHolderGuiScreen(GotchandrawHolderGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageHeight++;
 	}
