@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 /*import com.kelco.kamenridercraft.item.kiva.FueslotItem;*/
+import com.kelco.kamenridercraft.item.kiva.FueslotItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -203,8 +204,8 @@ public class Kiva_Rider_Items {
     public static final DeferredItem<Item> KIVALEGGINGS = ITEMS.register("kivalegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
-	/*public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
-			() -> new FueslotItem().AddToTabList(RiderTabs.KIVA_TAB_ITEM));*/
+	public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
+			() -> new FueslotItem().AddToTabList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
