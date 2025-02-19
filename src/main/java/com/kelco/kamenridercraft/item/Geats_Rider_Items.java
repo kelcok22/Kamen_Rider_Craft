@@ -7,10 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.geats.DesireDriverItem;
-import com.kelco.kamenridercraft.item.geats.FeverSlotItem;
-import com.kelco.kamenridercraft.item.geats.LaserRaiseRiserItem;
-import com.kelco.kamenridercraft.item.geats.MissionBoxItem;
+import com.kelco.kamenridercraft.item.geats.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -1110,10 +1107,10 @@ public class Geats_Rider_Items {
              () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
            		  new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
-	 /*
+
 	public static final DeferredItem<Item> RAISE_BUCKLE_HOLDER = ITEMS.register("raise_buckle_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
-	 */
+			() -> new RaiseBuckleHolderItem().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+
  
  
 	

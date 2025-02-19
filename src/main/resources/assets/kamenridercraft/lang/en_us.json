@@ -1997,6 +1997,7 @@
   "tooltip.kamenridercraft:helheim_fruit": "§4DO NOT EAT",
 
   "item.kamenridercraft.lockseed_holder": "Lockseed Holder",
+  "item.kamenridercraft.kiwami_lockseed_holder": "Lockseed Holder (Kiwami Arms)",
 
   "item.kamenridercraft.shift_alloy": "Shift Alloy",
   "item.kamenridercraft.drive_logo": "Drive Logo",
@@ -2782,6 +2783,11 @@
 
   "item.kamenridercraft.ohma_advent_calendar": "Ohma Advent Calendar",
 
+  "item.kamenridercraft.ridewatch_holder": "Ridewatch Holder",
+  "item.kamenridercraft.ridewatch_holder_gold": "Ridewatch Holder (Ohma Zi-O)",
+  "item.kamenridercraft.ridewatch_holder_silver": "Ridewatch Holder (Tsukuyomi)",
+  "item.kamenridercraft.miridewatch_holder": "Miridewatch Holder",
+
 "item.kamenridercraft.zero_one_logo": "Zero-One Logo",
 "item.kamenridercraft.zero_onehead": "Zero-One Helmet",
 "item.kamenridercraft.zero_onetroso": "Zero-One Chestplate",
@@ -2975,6 +2981,9 @@
 
 "item.kamenridercraft.hiden_risephone": "Hiden Risephone",
 
+  "item.kamenridercraft.progrise_holder": "Progrise Holder",
+  "item.kamenridercraft.ikazuchi_progrise_holder": "Ikazuchi's Progrise Holder",
+
 "item.kamenridercraft.saber_logo": "Saber Logo",
   "item.kamenridercraft.saberhead": "Saber Helmet",
   "item.kamenridercraft.sabertroso": "Saber Chestplate",
@@ -3102,6 +3111,8 @@
   "item.kamenridercraft.forbidden_tome": "Forbidden Tome",
   "item.kamenridercraft.great_book_fragment": "Great Book Fragment",
   "item.kamenridercraft.book_gate_wonder_ride_book": "Book Gate Wonder Ride Book",
+
+  "item.kamenridercraft.hissatsuholder": "Hissatsuholder",
 
 "item.kamenridercraft.revice_logo": "Revice Logo",
 "item.kamenridercraft.revice_head": "Revice Helmet",
@@ -3266,6 +3277,9 @@
 
 "item.kamenridercraft.giff_eye": "Giff's eye",
 
+"item.kamenridercraft.vistamp_holder": "Vistamp Holder",
+  "item.kamenridercraft.vistamp_holder_grey": "Vistamp Holder (Grey)",
+  "item.kamenridercraft.vistamp_holder_silver": "Vistamp Holder (Silver)",
 
 "item.kamenridercraft.geats_logo": "Geats Logo",
 "item.kamenridercraft.geatshead": "Geats Helmet",
@@ -3496,6 +3510,8 @@
 "item.kamenridercraft.bikkuri_mission_box": "Bikkuri Mission Box",
 "item.kamenridercraft.hatena_mission_box": "Hatena Mission Box",
 "item.kamenridercraft.gigant_mission_box": "Support Mission Box Type Geats",
+
+  "item.kamenridercraft.raise_buckle_holder": "Raise Buckle Holder",
 
 "item.kamenridercraft.gotchard_logo": "Gotchard Logo",
 "item.kamenridercraft.gotchard_head": "Gotchard Helmet",
@@ -3733,6 +3749,8 @@
 "item.kamenridercraft.chocodangun": "Chocodangun",
 "item.kamenridercraft.gavvwhipir": "Gavvwhipir",
 "item.kamenridercraft.valenbuster": "Valenbuster",
+
+  "item.kamenridercraft.gochizo_holder": "Gochizo Holder",
 
 
 "item.kamenridercraft.g_logo": "G Logo",

@@ -872,6 +872,8 @@ public class Gaim_Rider_Items {
 
 	public static final DeferredItem<Item> LOCKSEED_HOLDER = ITEMS.register("lockseed_holder",
 			() -> new LockseedHolderItem().AddToTabList(RiderTabs.GAIM_TAB_ITEM));
+	public static final DeferredItem<Item> KIWAMI_LOCKSEED_HOLDER = ITEMS.register("kiwami_lockseed_holder",
+			() -> new KiwamiLockseedHolderItem().AddToTabList(RiderTabs.GAIM_TAB_ITEM));
 
 
 

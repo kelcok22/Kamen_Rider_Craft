@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.revice.ReviceDriverItem;
 import com.kelco.kamenridercraft.item.revice.DemonsDriverItem;
+import com.kelco.kamenridercraft.item.revice.VistampHolderItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -831,11 +832,13 @@ public class Revice_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"orteca",KRAKEN_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
-	/*
-	public static final DeferredItem<Item> VISTAMP_HOLDER = ITEMS.register("vistamp_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM));
-	 */
 
+	public static final DeferredItem<Item> VISTAMP_HOLDER = ITEMS.register("vistamp_holder",
+			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+	public static final DeferredItem<Item> VISTAMP_HOLDER_GREY = ITEMS.register("vistamp_holder_grey",
+			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+	public static final DeferredItem<Item> VISTAMP_HOLDER_SILVER = ITEMS.register("vistamp_holder_silver",
+			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> OHINBUSTER_50 = ITEMS.register("ohin_buster_50",
