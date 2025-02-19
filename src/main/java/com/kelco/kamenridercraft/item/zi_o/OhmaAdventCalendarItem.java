@@ -72,6 +72,9 @@ public class OhmaAdventCalendarItem extends BaseItem {
                          else if (form == Zi_O_Rider_Items.DECADE_RYUKI_RIDEWATCH.get()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_decade_ryuki"));
                         if (player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.zi_o_rider_2"));
                     }
+                } else if (belt == Zi_O_Rider_Items.OHMA_ZI_O_DRIVER.get()) {
+                    player.sendSystemMessage(Component.translatable("message.kamenridercraft.ohma_zi_o"));
+                    if (!player.isShiftKeyDown()) player.sendSystemMessage(Component.translatable("message.kamenridercraft.ohma_zi_o_2"));
                 } else if (belt == Zi_O_Rider_Items.ZIKU_DRIVER_GEIZ.get()) {
                     if (form == Zi_O_Rider_Items.GEIZ_REVIVE_RIDEWATCH.get() || form == Zi_O_Rider_Items.GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()) {
                         player.sendSystemMessage(Component.translatable("message.kamenridercraft.geiz_revive"));
