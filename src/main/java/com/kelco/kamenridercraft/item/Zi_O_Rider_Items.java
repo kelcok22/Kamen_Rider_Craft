@@ -4,9 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
-import com.kelco.kamenridercraft.item.zi_o.BlankRidewatchItem;
-import com.kelco.kamenridercraft.item.zi_o.OhmaAdventCalendarItem;
-import com.kelco.kamenridercraft.item.zi_o.ZikuDriverItem;
+import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import net.minecraft.world.effect.MobEffectInstance;
@@ -733,10 +731,16 @@ public class Zi_O_Rider_Items {
 	public static final DeferredItem<Item> GINGADRIVER = ITEMS.register("ginga_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ginga",GINGA_SCOPE ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
-	/*
+
 	public static final DeferredItem<Item> RIDEWATCH_HOLDER = ITEMS.register("ridewatch_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
-	 */
+			() -> new RidewatchHolderItem().AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> RIDEWATCH_HOLDER_GOLD = ITEMS.register("ridewatch_holder_gold",
+			() -> new RidewatchHolderItem().AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> RIDEWATCH_HOLDER_SILVER = ITEMS.register("ridewatch_holder_silver",
+			() -> new RidewatchHolderItem().AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> MIRIDEWATCH_HOLDER = ITEMS.register("miridewatch_holder",
+			() -> new MiridewatchHolderItem().AddToTabList(RiderTabs.ZI_O_TAB_ITEM));
+
 
 
     public static final DeferredItem<Item> ZIKAN_GIRADE = ITEMS.register("zikan_girade",

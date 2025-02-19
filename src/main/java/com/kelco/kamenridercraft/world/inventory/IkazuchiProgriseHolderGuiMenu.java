@@ -4,7 +4,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,30 +13,35 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
-public class KimewazaSlotHolderGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 3;
+public class IkazuchiProgriseHolderGuiMenu extends AbstractContainerMenu {
+	private static final int CONTAINER_SIZE = 8;
 	private final Container container;
 
-	public KimewazaSlotHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Ex_Aid_Rider_Items.KIMEWAZA_SLOT_HOLDER.get()));
+	public IkazuchiProgriseHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
+		this(containerId, playerInventory,new ItemStack(Zero_One_Rider_Items.IKAZUCHI_PROGRISE_HOLDER.get()));
 	}
 
-	public KimewazaSlotHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
+	public IkazuchiProgriseHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
 
 		this(containerId, playerInventory,itemstack);
 	}
 
-	public KimewazaSlotHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
-		super(ModMenus.KIMEWAZA_SLOT_HOLDER_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,3);
+	public IkazuchiProgriseHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
+		super(ModMenus.IKAZUCHI_PROGRISE_HOLDER_GUI.get(), containerId);
+		this.container = new BasicContainer(itemstack,8);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,80,16,"gear/gashats"));
-		this.addSlot(new SlotByTag(container,1,80,34,"gear/gashats"));
-		this.addSlot(new SlotByTag(container,2,80,52,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,0,26,26,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,1,26,44,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,2,62,26,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,3,62,44,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,4,98,26,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,5,98,44,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,6,134,26,"gear/progrisekeys"));
+		this.addSlot(new SlotByTag(container,7,134,44,"gear/progrisekeys"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
