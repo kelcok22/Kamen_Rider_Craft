@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottlePurifier;
 import com.kelco.kamenridercraft.block.machineBlocks.FullbottleSolidifier;
-import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.block.machineBlocks.PandoraBox;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
@@ -927,10 +926,9 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
-	/*
+
 	public static final DeferredItem<Item> FULL_BOTTLE_HOLDER = ITEMS.register("full_bottle_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM));
-	 */
+			() -> new FullBottleHolderItem().AddToTabList(RiderTabs.BUILD_TAB_ITEM));
 
     public static final DeferredItem<Item> DRILL_CRUSHER = ITEMS.register("drill_crusher",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));

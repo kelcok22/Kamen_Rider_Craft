@@ -1996,6 +1996,8 @@
   "item.kamenridercraft.helheim_fruit": "§5Helheim Fruit",
   "tooltip.kamenridercraft:helheim_fruit": "§4DO NOT EAT",
 
+  "item.kamenridercraft.lockseed_holder": "Lockseed Holder",
+
   "item.kamenridercraft.shift_alloy": "Shift Alloy",
   "item.kamenridercraft.drive_logo": "Drive Logo",
   "item.kamenridercraft.drive_head": "Drive Helmet",
@@ -2105,6 +2107,8 @@
   "item.kamenridercraft.roidmude_core_003": "Roidmude Core 003",
   "item.kamenridercraft.protozero_core": "Roidmude Core Protozero",
   "item.kamenridercraft.cyberoid_zzz_core": "Cyberoid Core ZZZ",
+
+  "item.kamenridercraft.shift_car_holder": "Shift Car Holder",
 
   "item.kamenridercraft.ghost_logo": "Ghost Logo",
   "item.kamenridercraft.ghost_head": "Ghost Helmet",
@@ -2386,6 +2390,8 @@
 "item.kamenridercraft.rideplayerbelt_nico": "Ride-Player Buckle (Nico)",
 "item.kamenridercraft.ninjaplayerbelt": "Ninja Player Buckle",
 
+  "item.kamenridercraft.kimewaza_slot_holder": "Kimewaza Slot Holder",
+
 "item.kamenridercraft.speed_energy_item": "Speed Energy Item",
 "item.kamenridercraft.iron_energy_item": "Iron Energy Item",
 "item.kamenridercraft.instigate_energy_item": "Instigate Energy Item",
@@ -2623,6 +2629,7 @@
 "item.kamenridercraft.wizard_full_bottle": "Wizard Fullbottle",
 "item.kamenridercraft.fourze_full_bottle": "Fourze Fullbottle",
 
+  "item.kamenridercraft.full_bottle_holder": "Fullbottle Holder",
   "item.kamenridercraft.pandora_panel_touto": "Pandora Panel (Touto)",
   "item.kamenridercraft.pandora_panel_hokuto": "Pnadora Panel (Hokuto)",
   "item.kamenridercraft.pandora_panel_seito": "Pandora Panel (Seito)",
