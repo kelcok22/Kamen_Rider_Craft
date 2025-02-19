@@ -3,10 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.gaim.FakeLockseedItem;
-import com.kelco.kamenridercraft.item.gaim.RouletteLockseedItem;
-import com.kelco.kamenridercraft.item.gaim.SengokuDriverItem;
-import com.kelco.kamenridercraft.item.gaim.SidLockseedItem;
+import com.kelco.kamenridercraft.item.gaim.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -872,10 +869,10 @@ public class Gaim_Rider_Items {
 			() -> new SengokuDriverItem(ArmorMaterials.DIAMOND,"ryugen_shin",MELON_ENERGY_LOCKSEED , GAIM_HELMET,GAIM_CHESTPLATE,GAIM_LEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(GENESIS_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
-	/*
+
 	public static final DeferredItem<Item> LOCKSEED_HOLDER = ITEMS.register("lockseed_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM));
-	 */
+			() -> new LockseedHolderItem().AddToTabList(RiderTabs.GAIM_TAB_ITEM));
+
 
 
 	public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",

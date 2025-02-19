@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ex_aid.ExAidEnergyItem;
 import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
+import com.kelco.kamenridercraft.item.ex_aid.KimewazaSlotHolderItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -1047,9 +1048,10 @@ public class Ex_Aid_Rider_Items {
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
-	/*
+
 	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+			() -> new KimewazaSlotHolderItem().AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+	/*
 	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
 			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
 	*/
