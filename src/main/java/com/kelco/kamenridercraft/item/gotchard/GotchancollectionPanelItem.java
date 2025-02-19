@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.item.gotchard;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.GotchancollectionPanelGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -24,26 +25,11 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class GotchancollectionPanelItem extends Item {
+public class GotchancollectionPanelItem extends BaseItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
 	public GotchancollectionPanelItem() {
 		super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
-
-	public GotchancollectionPanelItem AddToTabList(List<Item> TabList) {
-		TabList.add(this);
-		return this;
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(this);
 	}
 
 	@Override

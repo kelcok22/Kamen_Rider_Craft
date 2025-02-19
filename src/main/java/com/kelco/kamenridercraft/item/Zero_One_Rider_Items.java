@@ -734,9 +734,9 @@ public class Zero_One_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
-			() -> new ProgriseHolderItem().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			() -> new ProgriseHolderItem().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	public static final DeferredItem<Item> IKAZUCHI_PROGRISE_HOLDER = ITEMS.register("ikazuchi_progrise_holder",
-			() -> new IkazuchiProgriseHolderItem().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			() -> new IkazuchiProgriseHolderItem().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
     
     public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER = ITEMS.register("hiden_zero_one_driver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));

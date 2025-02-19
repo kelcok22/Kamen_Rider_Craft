@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.wizard;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -23,26 +24,11 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class RingHolderItem extends Item {
+public class RingHolderItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
     public RingHolderItem() {
         super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-    }
-
-    public RingHolderItem AddToTabList(List<Item> TabList) {
-        TabList.add(this);
-        return this;
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        return new ItemStack(this);
     }
 
     @Override
@@ -53,7 +39,7 @@ public class RingHolderItem extends Item {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Ring Holder");
+                    return Component.translatable("ring_holder_gui.text");
                 }
 
                 @Override

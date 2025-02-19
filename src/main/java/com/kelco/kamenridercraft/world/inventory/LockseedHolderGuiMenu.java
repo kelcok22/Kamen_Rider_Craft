@@ -34,9 +34,9 @@ public class LockseedHolderGuiMenu extends AbstractContainerMenu {
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,80,16,"gear/lockseeds"));
-		this.addSlot(new SlotByTag(container,1,62,52,"gear/lockseeds"));
-		this.addSlot(new SlotByTag(container,2,98,52,"gear/lockseeds"));
+		this.addSlot(new SlotByTag(container,0,125,14,"gear/lockseeds"));
+		this.addSlot(new SlotByTag(container,1,107,47,"gear/lockseeds"));
+		this.addSlot(new SlotByTag(container,2,143,47,"gear/lockseeds"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

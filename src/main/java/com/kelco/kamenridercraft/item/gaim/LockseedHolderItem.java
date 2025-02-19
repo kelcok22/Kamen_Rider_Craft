@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.gaim;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -23,26 +24,11 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class LockseedHolderItem extends Item {
+public class LockseedHolderItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
     public LockseedHolderItem() {
         super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-    }
-
-    public LockseedHolderItem AddToTabList(List<Item> TabList) {
-        TabList.add(this);
-        return this;
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        return new ItemStack(this);
     }
 
     @Override
@@ -53,7 +39,7 @@ public class LockseedHolderItem extends Item {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Lockseed Holder");
+                    return Component.translatable("lockseed_holder.text");
                 }
 
                 @Override

@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.item.blade;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.RouseBankGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -24,7 +25,7 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class RouseBankItem extends Item {
+public class RouseBankItem extends BaseItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
 	public RouseBankItem() {
@@ -34,16 +35,6 @@ public class RouseBankItem extends Item {
 	public RouseBankItem AddToTabList(List<Item> TabList) {
 		TabList.add(this);
 		return this;
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(this);
 	}
 
 	@Override

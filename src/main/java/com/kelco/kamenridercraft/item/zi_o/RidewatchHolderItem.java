@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.zi_o;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.RidewatchHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -23,26 +24,11 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class RidewatchHolderItem extends Item {
+public class RidewatchHolderItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
     public RidewatchHolderItem() {
         super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-    }
-
-    public RidewatchHolderItem AddToTabList(List<Item> TabList) {
-        TabList.add(this);
-        return this;
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        return new ItemStack(this);
     }
 
     @Override

@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.item.decade;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.RideBookerGuiMenu;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -25,26 +26,11 @@ import io.netty.buffer.Unpooled;
 import java.util.Iterator;
 import java.util.List;
 
-public class RideBookerItem extends Item {
+public class RideBookerItem extends BaseItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
 	public RideBookerItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
-
-	public RideBookerItem AddToTabList(List<Item> TabList) {
-		TabList.add(this);
-		return this;
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(this);
 	}
 
 	@Override

@@ -1050,7 +1050,7 @@ public class Ex_Aid_Rider_Items {
 
 
 	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
-			() -> new KimewazaSlotHolderItem().AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+			() -> new KimewazaSlotHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
 	/*
 	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
 			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));

@@ -663,9 +663,9 @@ public class Wizard_Rider_Items {
 
 
 	public static final DeferredItem<Item> WIZARD_RING_HOLDER = ITEMS.register("wizard_ring_holder",
-			() -> new RingHolderItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RingHolderItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 	public static final DeferredItem<Item> BEAST_RING_HOLDER = ITEMS.register("beast_ring_holder",
-			() -> new RingHolderItem().AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new RingHolderItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 

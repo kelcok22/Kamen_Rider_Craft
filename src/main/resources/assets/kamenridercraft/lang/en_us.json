@@ -321,7 +321,8 @@
   "message.kamenridercraft.fake":"§2NINCOMPOOP! Shame on you! §6Never Give Up!",
 
   "advent_deck_blank.text":"Advent Deck",
-
+  "ring_holder_gui.text":"Ring Holder",
+  "lockseed_holder.text":"Lockseed Holder",
 
   "item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",
