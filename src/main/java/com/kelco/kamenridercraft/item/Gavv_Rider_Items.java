@@ -184,7 +184,7 @@ public class Gavv_Rider_Items {
 
 
 	public static final DeferredItem<Item> GOCHIZO_HOLDER = ITEMS.register("gochizo_holder",
-			() -> new GochizoHolderItem().AddToTabList(RiderTabs.GAVV_TAB_ITEM));
+			() -> new GochizoHolderItem().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",

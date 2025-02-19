@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.ex_aid;
 
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.world.inventory.KimewazaSlotHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
@@ -23,26 +24,11 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class KimewazaSlotHolderItem extends Item {
+public class KimewazaSlotHolderItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
     public KimewazaSlotHolderItem() {
         super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-    }
-
-    public KimewazaSlotHolderItem AddToTabList(List<Item> TabList) {
-        TabList.add(this);
-        return this;
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-        return new ItemStack(this);
     }
 
     @Override

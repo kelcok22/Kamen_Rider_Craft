@@ -28,22 +28,18 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 
 	public AdventDeckGuiMenu(int containerId, Inventory playerInventory,ItemStack itemstack) {
 		super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,10);
+		this.container = new BasicContainer(itemstack,6);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,33,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,1,56,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,2,80,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,3,103,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,4,126,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,5,33,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,6,56,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,7,80,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,8,103,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,9,126,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,0,94,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,1,117,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,2,140,21,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,3,94,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,4,117,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,5,140,44,"gear/advent_cards"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

@@ -205,7 +205,7 @@ public class Kiva_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
-			() -> new FueslotItem().AddToTabList(RiderTabs.KIVA_TAB_ITEM));
+			() -> new FueslotItem().AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));

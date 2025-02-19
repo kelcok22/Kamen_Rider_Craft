@@ -30,7 +30,6 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelDoubleGuiMenu>> ASTROSWITCH_PANEL_DOUBLE_GUI = REGISTRY.register("astroswitch_panel_double_gui", () -> IMenuTypeExtension.create(AstroswitchPanelDoubleGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RingHolderGuiMenu>> RING_HOLDER_GUI = REGISTRY.register("ring_holder_gui", () -> IMenuTypeExtension.create(RingHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<LockseedHolderGuiMenu>> LOCKSEED_HOLDER_GUI = REGISTRY.register("lockseed_holder_gui", () -> IMenuTypeExtension.create(LockseedHolderGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<KiwamiLockseedHolderGuiMenu>> KIWAMI_LOCKSEED_HOLDER_GUI = REGISTRY.register("kiwami_lockseed_holder_gui", () -> IMenuTypeExtension.create(KiwamiLockseedHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ShiftCarHolderGuiMenu>> SHIFT_CAR_HOLDER_GUI = REGISTRY.register("shift_car_holder_gui", () -> IMenuTypeExtension.create(ShiftCarHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<KimewazaSlotHolderGuiMenu>> KIMEWAZA_SLOT_HOLDER_GUI = REGISTRY.register("kimewaza_slot_holder_gui", () -> IMenuTypeExtension.create(KimewazaSlotHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FullBottleHolderGuiMenu>> FULL_BOTTLE_HOLDER_GUI = REGISTRY.register("full_bottle_holder_gui", () -> IMenuTypeExtension.create(FullBottleHolderGuiMenu::new));

@@ -602,7 +602,7 @@ public class Drive_Rider_Items {
 
 
 	public static final DeferredItem<Item> SHIFT_CAR_HOLDER = ITEMS.register("shift_car_holder",
-			() -> new ShiftCarHolderItem().AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+			() -> new ShiftCarHolderItem().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",

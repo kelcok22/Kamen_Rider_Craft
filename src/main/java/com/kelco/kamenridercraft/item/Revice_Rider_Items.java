@@ -834,11 +834,11 @@ public class Revice_Rider_Items {
 
 
 	public static final DeferredItem<Item> VISTAMP_HOLDER = ITEMS.register("vistamp_holder",
-			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new VistampHolderItem().AddToList(RiderTabs.REVICE_TAB_ITEM));
 	public static final DeferredItem<Item> VISTAMP_HOLDER_GREY = ITEMS.register("vistamp_holder_grey",
-			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new VistampHolderItem().AddToList(RiderTabs.REVICE_TAB_ITEM));
 	public static final DeferredItem<Item> VISTAMP_HOLDER_SILVER = ITEMS.register("vistamp_holder_silver",
-			() -> new VistampHolderItem().AddToTabList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new VistampHolderItem().AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> OHINBUSTER_50 = ITEMS.register("ohin_buster_50",

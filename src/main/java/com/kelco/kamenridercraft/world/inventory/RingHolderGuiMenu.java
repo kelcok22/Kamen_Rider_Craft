@@ -35,13 +35,13 @@ public class RingHolderGuiMenu extends AbstractContainerMenu {
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,8,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,1,26,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,2,44,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,3,62,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,4,80,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,5,98,34,"gear/wizard_rings"));
-		this.addSlot(new SlotByTag(container,6,116,34,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,0,94,6,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,1,94,28,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,2,94,50,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,3,116,59,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,4,138,50,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,5,138,28,"gear/wizard_rings"));
+		this.addSlot(new SlotByTag(container,6,138,6,"gear/wizard_rings"));
 
 
 		for(int i1 = 0; i1 < 3; ++i1) {

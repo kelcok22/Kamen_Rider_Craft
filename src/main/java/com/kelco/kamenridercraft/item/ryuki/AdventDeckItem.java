@@ -2,6 +2,7 @@
 package com.kelco.kamenridercraft.item.ryuki;
 
 /*import com.kelco.kamenridercraft.procedures.OpenAdventDeckProcedure;*/
+import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.Container;
@@ -28,26 +29,11 @@ import com.kelco.kamenridercraft.world.inventory.AdventDeckGuiMenu;
 import java.util.Iterator;
 import java.util.List;
 
-public class AdventDeckItem extends Item {
+public class AdventDeckItem extends BaseItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
 	public AdventDeckItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
-	}
-
-	public AdventDeckItem AddToTabList(List<Item> TabList) {
-		TabList.add(this);
-		return this;
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(this);
 	}
 
 	@Override
@@ -58,7 +44,7 @@ public class AdventDeckItem extends Item {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Advent Deck");
+					return Component.translatable("advent_deck_blank.text");
 				}
 
 				@Override
