@@ -1,7 +1,6 @@
-package com.kelco.kamenridercraft.item.w;
+package com.kelco.kamenridercraft.item.BaseItems;
 
-import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
-import com.kelco.kamenridercraft.world.inventory.WDriverCaseGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RiderCaseGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -23,10 +22,10 @@ import net.minecraft.world.level.Level;
 import java.util.Iterator;
 import java.util.List;
 
-public class WDriverCaseItem extends BaseItem {
+public class RiderCaseItem extends BaseItem {
     private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-    public WDriverCaseItem() {
+    public RiderCaseItem() {
         super(new Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
     }
 
@@ -38,7 +37,7 @@ public class WDriverCaseItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("W Driver Case");
+                    return Component.literal("Rider Case");
                 }
 
                 @Override
@@ -46,7 +45,7 @@ public class WDriverCaseItem extends BaseItem {
                     FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
                     packetBuffer.writeBlockPos(entity.blockPosition());
                     packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-                    return new WDriverCaseGuiMenu(id, inventory, packetBuffer,itemstack);
+                    return new RiderCaseGuiMenu(id, inventory, packetBuffer,itemstack);
                 }
             }, buf -> {
                 buf.writeBlockPos(entity.blockPosition());

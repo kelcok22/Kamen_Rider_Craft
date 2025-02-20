@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.W_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -12,33 +12,37 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
-public class WDriverCaseGuiMenu extends AbstractContainerMenu {
-    private static final int CONTAINER_SIZE = 6;
+public class RiderCaseGuiMenu extends AbstractContainerMenu {
+    private static final int CONTAINER_SIZE = 10;
     private final Container container;
 
-    public WDriverCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(W_Rider_Items.W_DRIVER_CASE.get()));
+    public RiderCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
+        this(containerId, playerInventory,new ItemStack(Modded_item_core.GENERIC_RIDER_CASE.get()));
     }
 
-    public WDriverCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
+    public RiderCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
 
         this(containerId, playerInventory,itemstack);
     }
 
-    public WDriverCaseGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
-        super(ModMenus.W_DRIVER_CASE_GUI.get(), containerId);
-        this.container = new BasicContainer(itemstack,6);
+    public RiderCaseGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
+        super(ModMenus.RIDER_CASE_GUI.get(), containerId);
+        this.container = new BasicContainer(itemstack,10);
         container.startOpen(playerInventory.player);
 
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,26,39,"gear/gaia_memories"));
-        this.addSlot(new SlotByTag(container,1,44,39,"gear/gaia_memories"));
-        this.addSlot(new SlotByTag(container,2,62,39,"gear/gaia_memories"));
-        this.addSlot(new SlotByTag(container,3,98,39,"gear/gaia_memories"));
-        this.addSlot(new SlotByTag(container,4,116,39,"gear/gaia_memories"));
-        this.addSlot(new SlotByTag(container,5,134,39,"gear/gaia_memories"));
+        this.addSlot(new SlotByTag(container,0,26,16,"rider_head_armor"));
+        this.addSlot(new SlotByTag(container,1,26,34,"rider_chest_armor"));
+        this.addSlot(new SlotByTag(container,2,26,52,"rider_leg_armor"));
+        this.addSlot(new SlotByTag(container,3,80,34,"rider_foot_armor"));
+        this.addSlot(new Slot(container,4,116,16));
+        this.addSlot(new Slot(container,5,134,16));
+        this.addSlot(new Slot(container,6,116,34));
+        this.addSlot(new Slot(container,7,134,34));
+        this.addSlot(new Slot(container,8,116,52));
+        this.addSlot(new Slot(container,9,134,52));
 
 
         for(int i1 = 0; i1 < 3; ++i1) {
