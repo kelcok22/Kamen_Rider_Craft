@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.block.entity;
 
+import com.kelco.kamenridercraft.block.storageBlock.AstroswitchPanelBlock;
 import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
@@ -36,6 +37,7 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 
 	public AstroswitchPanelBlockEntity(BlockPos position, BlockState state) {
 		super(ModBlockEntities.ASTROSWITCH_PANEL.get(), position, state);
+
 	}
 
 	public static Supplier<BlockEntityType<? extends AstroswitchPanelBlockEntity>> get() {
@@ -227,7 +229,7 @@ public class AstroswitchPanelBlockEntity extends RandomizableContainerBlockEntit
 	public void setBlockState(BlockState p_155251_) {
 		BlockState oldState = this.getBlockState();
 		super.setBlockState(p_155251_);
-		if (oldState.getValue(ChestBlock.FACING) != p_155251_.getValue(ChestBlock.FACING) || oldState.getValue(ChestBlock.TYPE) != p_155251_.getValue(ChestBlock.TYPE)) {
+		if (oldState.getValue(AstroswitchPanelBlock.FACING) != p_155251_.getValue(AstroswitchPanelBlock.FACING) || oldState.getValue(AstroswitchPanelBlock.TYPE) != p_155251_.getValue(AstroswitchPanelBlock.TYPE)) {
 			this.invalidateCapabilities();
 		}
 	}
