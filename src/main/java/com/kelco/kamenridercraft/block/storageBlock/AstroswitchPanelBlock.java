@@ -1,6 +1,7 @@
 
 package com.kelco.kamenridercraft.block.storageBlock;
 
+import com.kelco.kamenridercraft.block.baseBlocks.BaseFacingBlock;
 import com.kelco.kamenridercraft.block.entity.AstroswitchPanelBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.world.inventory.AstroswitchPanelDoubleGuiMenu;
@@ -45,7 +46,7 @@ import java.util.Optional;
 import java.util.function.BiPredicate;
 import java.util.function.Supplier;
 
-public class AstroswitchPanelBlock extends Block {
+public class AstroswitchPanelBlock extends BaseFacingBlock {
 	private AstroswitchPanelDoubleGuiMenu blockEntityType;
 
 	public static final DirectionProperty FACING;
@@ -240,9 +241,6 @@ public class AstroswitchPanelBlock extends Block {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
-	}
-	protected BlockState rotate(BlockState state, Rotation rotation) {
-		return (BlockState)state.setValue(FACING, rotation.rotate((Direction)state.getValue(FACING)));
 	}
 
 	protected BlockState mirror(BlockState state, Mirror mirror) {
