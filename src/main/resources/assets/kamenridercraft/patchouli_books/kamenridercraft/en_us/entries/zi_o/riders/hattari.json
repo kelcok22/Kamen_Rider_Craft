@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Hattari",
 	"icon": "kamenridercraft:hattari_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",

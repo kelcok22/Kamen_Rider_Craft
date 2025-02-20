@@ -2,7 +2,7 @@
 	"name": "Ziku Driver (Barlckxs)",
 	"icon": "kamenridercraft:ziku_driver_barlckxs",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",
