@@ -1,7 +1,6 @@
 
 package com.kelco.kamenridercraft.item.ryuki;
 
-/*import com.kelco.kamenridercraft.procedures.OpenAdventDeckProcedure;*/
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -59,7 +58,6 @@ public class AdventDeckItem extends BaseItem {
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
-		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
 		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
 	}
 
