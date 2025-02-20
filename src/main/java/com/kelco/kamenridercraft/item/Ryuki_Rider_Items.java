@@ -558,37 +558,37 @@ public class Ryuki_Rider_Items {
 	**/
 
 	 public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
-			 () -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			 () -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUKI_DECK = ITEMS.register("advent_deck_ryuki",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> KNIGHT_DECK = ITEMS.register("advent_deck_knight",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ZOLDA_DECK = ITEMS.register("advent_deck_zolda",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> OUJA_DECK = ITEMS.register("advent_deck_ouja",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> SCISSORS_DECK = ITEMS.register("advent_deck_scissors",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RAIA_DECK = ITEMS.register("advent_deck_raia",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> GAI_DECK = ITEMS.register("advent_deck_gai",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> TIGER_DECK = ITEMS.register("advent_deck_tiger",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> IMPERER_DECK = ITEMS.register("advent_deck_imperer",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> VERDE_DECK = ITEMS.register("advent_deck_verde",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> FEMME_DECK = ITEMS.register("advent_deck_femme",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUGA_DECK = ITEMS.register("advent_deck_ryuga",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ODIN_DECK = ITEMS.register("advent_deck_odin",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ABYSS_DECK = ITEMS.register("advent_deck_abyss",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ALTERNATIVE_DECK = ITEMS.register("advent_deck_alternative",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUKI_SURVIVE_DECK = ITEMS.register("advent_deck_ryuki_survive",
 			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_SURVIVE_DECK = ITEMS.register("advent_deck_knight_survive",
