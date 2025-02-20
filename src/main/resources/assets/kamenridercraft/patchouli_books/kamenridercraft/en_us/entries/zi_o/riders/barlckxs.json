@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Barlckxs",
 	"icon": "kamenridercraft:ziku_driver_barlckxs",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

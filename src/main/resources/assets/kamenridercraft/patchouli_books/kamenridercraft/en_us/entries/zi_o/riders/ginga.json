@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Ginga",
 	"icon": "kamenridercraft:ginga_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:entity",

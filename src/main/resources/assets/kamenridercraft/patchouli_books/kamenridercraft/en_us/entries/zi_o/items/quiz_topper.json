@@ -2,7 +2,7 @@
 	"name": "Quiz Topper",
 	"icon": "kamenridercraft:quiz_topper",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 95,
+	"sortnum": 97,
 	"pages": [
 		{
 			"type": "patchouli:text",

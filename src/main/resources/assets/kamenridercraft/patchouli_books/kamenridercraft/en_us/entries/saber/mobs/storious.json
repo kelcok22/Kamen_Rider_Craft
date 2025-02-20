@@ -1,0 +1,17 @@
+{
+	"name": "Storious",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:storious",
+			"text": "Has a 2% chance to spawn from a $(l:saber/mobs/shimi)Shimi$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 100$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/forbidden_tome)Forbidden Tome$(/l)$(li)1 $(l:saber/items/storious_alter_ride_book)Storious Alter Ride Book$(/l)"
+		}
+	]
+}

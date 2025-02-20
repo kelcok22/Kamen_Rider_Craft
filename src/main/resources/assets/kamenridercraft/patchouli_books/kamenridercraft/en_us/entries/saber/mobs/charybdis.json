@@ -1,0 +1,17 @@
+{
+	"name": "Charybdis Megid",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:charybdis",
+			"text": "Spawn locations: Crimson Forest"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 45$(br2)Drops$(li)2-4 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(br2)Bosses$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l) (10%)"
+		}
+	]
+}

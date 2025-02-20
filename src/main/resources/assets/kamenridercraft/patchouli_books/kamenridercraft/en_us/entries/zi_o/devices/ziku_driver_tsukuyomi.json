@@ -2,7 +2,7 @@
 	"name": "Ziku Driver (Tsukuyomi)",
 	"icon": "kamenridercraft:ziku_driver_tsukuyomi",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",
