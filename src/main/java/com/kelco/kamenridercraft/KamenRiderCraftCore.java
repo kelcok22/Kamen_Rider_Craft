@@ -479,6 +479,7 @@ public class KamenRiderCraftCore
             event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
             event.register(ModMenus.RIDE_BOOKER_GUI.get(), RideBookerGuiScreen::new);
+            event.register(ModMenus.W_DRIVER_CASE_GUI.get(), WDriverCaseGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI.get(), AstroswitchPanelDoubleGuiScreen::new);
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
