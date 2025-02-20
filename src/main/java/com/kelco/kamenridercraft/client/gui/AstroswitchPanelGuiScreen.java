@@ -17,7 +17,8 @@ public class AstroswitchPanelGuiScreen extends AbstractContainerScreen<Astroswit
 
 	public AstroswitchPanelGuiScreen(AstroswitchPanelGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
-		this.imageHeight++;
+		imageWidth = 250;
+		imageHeight = 169;
 	}
 
 	@Override

@@ -1,7 +1,8 @@
 {
-  "variants": {
-    "": {
-      "model": "kamenridercraft:block/astroswitch_panel"
-    }
+  "variants":{
+    "facing=north": { "model": "kamenridercraft:block/astroswitch_panel" },
+    "facing=south": { "model": "kamenridercraft:block/astroswitch_panel", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/astroswitch_panel", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/astroswitch_panel", "y": 90 }
   }
 }
