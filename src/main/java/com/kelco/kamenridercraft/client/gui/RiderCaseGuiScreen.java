@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.gui;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.world.inventory.WDriverCaseGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RiderCaseGuiMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
@@ -11,10 +11,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class WDriverCaseGuiScreen extends AbstractContainerScreen<WDriverCaseGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/fueslot_gui.png");
+public class RiderCaseGuiScreen extends AbstractContainerScreen<RiderCaseGuiMenu> {
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/rider_case_gui.png");
 
-	public WDriverCaseGuiScreen(WDriverCaseGuiMenu menu, Inventory playerInventory, Component title) {
+	public RiderCaseGuiScreen(RiderCaseGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageHeight++;
 	}
