@@ -52,11 +52,6 @@ public class AstroswitchPanelBlock extends Block {
 	public static final EnumProperty<ChestType> TYPE;
 	protected static final int AABB_OFFSET = 1;
 	protected static final int AABB_HEIGHT = 14;
-	protected static final VoxelShape NORTH_AABB;
-	protected static final VoxelShape SOUTH_AABB;
-	protected static final VoxelShape WEST_AABB;
-	protected static final VoxelShape EAST_AABB;
-	protected static final VoxelShape AABB;
 	private static final DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<Container>> CHEST_COMBINER;
 	private static final DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<MenuProvider>> MENU_PROVIDER_COMBINER;
 
@@ -88,24 +83,6 @@ public class AstroswitchPanelBlock extends Block {
 		}
 
 		return super.updateShape(state, facing, facingState, level, currentPos, facingPos);
-	}
-
-	protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-		if (state.getValue(TYPE) == ChestType.SINGLE) {
-			return AABB;
-		} else {
-			switch (getConnectedDirection(state)) {
-				case NORTH:
-				default:
-					return NORTH_AABB;
-				case SOUTH:
-					return SOUTH_AABB;
-				case WEST:
-					return WEST_AABB;
-				case EAST:
-					return EAST_AABB;
-			}
-		}
 	}
 
 	public static Direction getConnectedDirection(BlockState state) {
@@ -175,15 +152,23 @@ public class AstroswitchPanelBlock extends Block {
 
 
 
-    public DoubleBlockCombiner.NeighborCombineResult<? extends AstroswitchPanelBlockEntity> combine(BlockState state, Level level, BlockPos pos, boolean override) {
+
+	@Nullable
+	public static Container getContainer(AstroswitchPanelBlock chest, BlockState state, Level level, BlockPos pos, boolean override) {
+		return (Container)((Optional)chest.combine(state, level, pos, override).apply(CHEST_COMBINER)).orElse((Object)null);
+	}
+
+	public DoubleBlockCombiner.NeighborCombineResult<? extends AstroswitchPanelBlockEntity> combine(BlockState state, Level level, BlockPos pos, boolean override) {
 		BiPredicate bipredicate = null;
 		if (override) {
 			bipredicate = (p_51578_, p_51579_) -> {
 				return false;
 			};
+		} else {
+
 		}
 
-		return DoubleBlockCombiner.combineWithNeigbour((BlockEntityType)this.blockEntityType.get(), ChestBlock::getBlockType, ChestBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
+		return DoubleBlockCombiner.combineWithNeigbour((BlockEntityType)this.blockEntityType.get(), AstroswitchPanelBlock::getBlockType, AstroswitchPanelBlock::getConnectedDirection, FACING, state, level, pos, bipredicate);
 	}
 
 	@Nullable
@@ -191,12 +176,15 @@ public class AstroswitchPanelBlock extends Block {
 		return (MenuProvider)((Optional)this.combine(state, level, pos, false).apply(MENU_PROVIDER_COMBINER)).orElse((Object)null);
 	}
 
-	public static DoubleBlockCombiner.Combiner<ChestBlockEntity, Float2FloatFunction> opennessCombiner(final LidBlockEntity lid) {
-		return new DoubleBlockCombiner.Combiner<ChestBlockEntity, Float2FloatFunction>() {
-			public Float2FloatFunction acceptDouble(ChestBlockEntity p_51633_, ChestBlockEntity p_51634_) {
-				return (p_51638_) -> {
-					return Math.max(p_51633_.getOpenNess(p_51638_), p_51634_.getOpenNess(p_51638_));
-				};
+	public static DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Float2FloatFunction> opennessCombiner(final LidBlockEntity lid) {
+		return new DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Float2FloatFunction>() {
+			public Float2FloatFunction acceptDouble(AstroswitchPanelBlockEntity p_51633_, AstroswitchPanelBlockEntity p_51634_) {
+                return null;
+            }
+
+			@Override
+			public Float2FloatFunction acceptSingle(AstroswitchPanelBlockEntity astroswitchPanelBlockEntity) {
+				return null;
 			}
 
 			public Float2FloatFunction acceptSingle(ChestBlockEntity p_51631_) {
@@ -277,11 +265,6 @@ public class AstroswitchPanelBlock extends Block {
 	static {
 		FACING = HorizontalDirectionalBlock.FACING;
 		TYPE = BlockStateProperties.CHEST_TYPE;
-		NORTH_AABB = Block.box(1.0, 0.0, 0.0, 15.0, 14.0, 15.0);
-		SOUTH_AABB = Block.box(1.0, 0.0, 1.0, 15.0, 14.0, 16.0);
-		WEST_AABB = Block.box(0.0, 0.0, 1.0, 15.0, 14.0, 15.0);
-		EAST_AABB = Block.box(1.0, 0.0, 1.0, 16.0, 14.0, 15.0);
-		AABB = Block.box(1.0, 0.0, 1.0, 15.0, 14.0, 15.0);
 		CHEST_COMBINER = new DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<Container>>() {
 			public Optional<Container> acceptDouble(AstroswitchPanelBlockEntity p_51591_, AstroswitchPanelBlockEntity p_51592_) {
 				return Optional.of(new CompoundContainer(p_51591_, p_51592_));
@@ -296,38 +279,38 @@ public class AstroswitchPanelBlock extends Block {
 			}
 		};
 
-		MENU_PROVIDER_COMBINER = new DoubleBlockCombiner.Combiner<AstroswitchPanelBlockEntity, Optional<MenuProvider>>() {
-			public Optional<MenuProvider> acceptDouble(final AstroswitchPanelBlockEntity p_51604_, final AstroswitchPanelBlockEntity p_51605_) {
-				final Container container = new CompoundContainer(p_51604_, p_51605_);
-				return Optional.of(new MenuProvider() {
-					@Nullable
-					public AbstractContainerMenu createMenu(int p_51622_, Inventory p_51623_, Player p_51624_) {
-						if (p_51604_.canOpen(p_51624_) && p_51605_.canOpen(p_51624_)) {
-							p_51604_.unpackLootTable(p_51623_.player);
-							p_51605_.unpackLootTable(p_51623_.player);
-							return ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI(p_51622_, p_51623_);
-						} else {
-							return null;
-						}
-					}
+		MENU_PROVIDER_COMBINER = new DoubleBlockCombiner.Combiner<>() {
+            public Optional<MenuProvider> acceptDouble(final AstroswitchPanelBlockEntity p_51604_, final AstroswitchPanelBlockEntity p_51605_) {
+                final Container container = new CompoundContainer(p_51604_, p_51605_);
+                return Optional.of(new MenuProvider() {
+                    @Nullable
+                    public AbstractContainerMenu createMenu(int p_51622_, Inventory p_51623_, Player p_51624_) {
+                        if (p_51604_.canOpen(p_51624_) && p_51605_.canOpen(p_51624_)) {
+                            p_51604_.unpackLootTable(p_51623_.player);
+                            p_51605_.unpackLootTable(p_51623_.player);
+                            return ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI(p_51622_, p_51623_);
+                        } else {
+                            return null;
+                        }
+                    }
 
-					public Component getDisplayName() {
-						if (p_51604_.hasCustomName()) {
-							return p_51604_.getDisplayName();
-						} else {
-							return (Component)(p_51605_.hasCustomName() ? p_51605_.getDisplayName() : Component.translatable("container.astroswitchPanel"));
-						}
-					}
-				});
-			}
+                    public Component getDisplayName() {
+                        if (p_51604_.hasCustomName()) {
+                            return p_51604_.getDisplayName();
+                        } else {
+                            return (Component) (p_51605_.hasCustomName() ? p_51605_.getDisplayName() : Component.translatable("container.astroswitchPanel"));
+                        }
+                    }
+                });
+            }
 
-			public Optional<MenuProvider> acceptSingle(AstroswitchPanelBlockEntity p_51602_) {
-				return Optional.of(p_51602_);
-			}
+            public Optional<MenuProvider> acceptSingle(AstroswitchPanelBlockEntity p_51602_) {
+                return Optional.of(p_51602_);
+            }
 
-			public Optional<MenuProvider> acceptNone() {
-				return Optional.empty();
-			}
-		};
+            public Optional<MenuProvider> acceptNone() {
+                return Optional.empty();
+            }
+        };
 	}
 }
