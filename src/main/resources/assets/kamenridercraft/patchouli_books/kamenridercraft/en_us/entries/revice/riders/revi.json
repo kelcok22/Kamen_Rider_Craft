@@ -1,0 +1,320 @@
+{
+	"name": "Kamen Rider Revi",
+	"icon": "kamenridercraft:revice_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rex_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Rex Genome",
+			"text": "Accessed with the $(l:revice/items/rex_vistamp)Rex Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "eagle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:eagle_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Eagle Genome",
+			"text": "Accessed with the $(l:revice/items/eagle_vistamp)Eagle Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mammoth",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mammoth_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Mammoth Genome",
+			"text": "Accessed with the $(l:revice/items/mammoth_vistamp)Mammoth Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "megalodon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:megalodon_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Megalodon Genome",
+			"text": "Accessed with the $(l:revice/items/megalodon_vistamp)Megalodon Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ptera",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ptera_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Ptera Genome",
+			"text": "Accessed with the $(l:revice/items/ptera_vistamp)Ptera Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Lion Genome",
+			"text": "Accessed with the $(l:revice/items/lion_vistamp)Lion Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackal_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Jackal Genome",
+			"text": "Accessed with the $(l:revice/items/jackal_vistamp)Jackal Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kong",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kong_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Kong Genome",
+			"text": "Accessed with the $(l:revice/items/kong_vistamp)Kong Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kamakiri",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamakiri_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Kamakiri Genome",
+			"text": "Accessed with the $(l:revice/items/kamakiri_vistamp)Kamakiri Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "brachio",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:brachio_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Brachio Genome",
+			"text": "Accessed with the $(l:revice/items/brachio_vistamp)Brachio Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "barid_rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:barid_rex_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Barid Rex Genome",
+			"text": "Accessed with the $(l:revice/items/barid_rex_vistamp)Barid Rex Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost VI$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "volcano_rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:volcano_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Volcano Rex Genome",
+			"text": "Accessed with the $(l:revice/items/volcano_vistamp)Volcano Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance II$(li)Night Vision$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jack_revice",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rolling_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Jack Revice",
+			"text": "Accessed with the $(l:revice/items/rolling_vistamp)Rolling Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revice",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Jump Boost VI$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "thunder_gale",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:thunder_gale_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Thunder Gale",
+			"text": "Accessed with the $(l:revice/items/thunder_gale_vistamp)Thunder Gale Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revice",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fifty_gale",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fifty_gale_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Fifty Gale",
+			"text": "Accessed with the $(l:revice/items/fifty_gale_vistamp)Fifty Gale Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Igarashi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength IV$(li)Speed VI$(li)Anti Poison$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VII$(li)Fire Resistance$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultimate",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giffard_rex_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Ultimate Revi",
+			"text": "Accessed with the $(l:revice/items/giffard_rex_vistamp)Giffard Rex Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Punch IX$(li)Strength XII (with empty hand)$(li)Strength V (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "true_rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:true_rex_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "True Rex Genome",
+			"text": "Accessed with the $(l:revice/items/true_rex_vistamp)True Rex Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VII$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gold_spino",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_spino_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Gold Spino Genome",
+			"text": "Accessed with the $(l:revice/items/gold_spino_vistamp)Gold Spino Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Becoming Rider No. 2~♪ (2022, Hyper Battle Video)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Fire Resistance VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "neo_batta",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:neo_batta_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Neo Batta Genome",
+			"text": "Accessed with the $(l:revice/items/neo_batta_vistamp)Neo Batta Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider: Beyond Generations (2021, movie)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kangaroo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kangaroo_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Kangaroo Genome",
+			"text": "Accessed with the $(l:revice/items/kangaroo_vistamp)Kangaroo Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Shrink VII$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kirin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Kirin Genome",
+			"text": "Accessed with the $(l:revice/items/kirin_vistamp)Kirin Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "niwatori",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:niwatori_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Niwatori Genome",
+			"text": "Accessed with the $(l:revice/items/niwatori_vistamp)Niwatori Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "funkorogashi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:funkorogashi_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Funkorogashi Genome",
+			"text": "Accessed with the $(l:revice/items/funkorogashi_vistamp)Funkorogashi Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "condor",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:condor_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Condor Genome",
+			"text": "Accessed with the $(l:revice/items/condor_vistamp)Condor Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)DX Condor Vistamp (2021, toyline)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Jump Boost IV$(li)Strength III$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "white_leo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:white_leo_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "White Leo Genome",
+			"text": "Accessed with the $(l:revice/items/white_leo_vistamp)White Leo Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Punch VIII$(li)Strength XI (with empty hand)$(li)Strength III (with weapon)$(li)Night Vision$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "quetzalcoatlus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:quetzalcoatlus_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Quetzalcoatlus Genome",
+			"text": "Accessed with the $(l:revice/items/quetzalcoatlus_vistamp)Quetzalcoatlus Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength III$(li)Flying"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Vail",
+	"icon": "kamenridercraft:vail_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:vail_driver\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vail",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/vail_driver)Vail Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Strength III"
+		}
+	]
+}
