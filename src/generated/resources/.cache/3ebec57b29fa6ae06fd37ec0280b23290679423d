@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-20T18:18:13.3596495	Item Models: kamenridercraft
+// 1.21.1	2025-02-21T12:32:09.0093783	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
@@ -110,6 +110,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/kouj
 77f447c9cb46495adf9018cc93e5638e077d137e assets/kamenridercraft/models/item/lockseed_holder.json
 0dc660dbe37d4932b8dc7585219e39d159a1fec9 assets/kamenridercraft/models/item/machwheel_ride_chemy_card.json
 223d1aaf4667d69193f4b4d66d48b551d712ddc8 assets/kamenridercraft/models/item/mad_doctor_mach.json
+1b98bff5d969053bc92c8451684d6a6873b30f1c assets/kamenridercraft/models/item/neminemoon_ride_chemy_card.json
 3ab66c2eff2332e9f2dd7fe186619f50c79ddce3 assets/kamenridercraft/models/item/nextshift.json
 d781ea726585a7a5db075fb7970a3a392180d0ed assets/kamenridercraft/models/item/next_builder.json
 f8b7d5745dafd95960f9ef58738b3b6599e5d239 assets/kamenridercraft/models/item/next_hunter.json
@@ -170,3 +171,4 @@ a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/vira
 34adffabf84514bc51f5e6f1380e79cdebae1f3e assets/kamenridercraft/models/item/viral_core_spider.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_colorful.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_powerful.json
+b48590b84c67fd15e919d7a10d34f7e67e6db147 assets/kamenridercraft/models/item/yoacerberus_ride_chemy_card.json

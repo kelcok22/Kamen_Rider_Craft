@@ -39,6 +39,9 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_MarsPhoenix= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_MarsPhoenix2= new ArrayList<Item>();
 
+	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<Item>();
+
 	public static List<Item> NEED_ITEM_Valvarad= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<Item>();
@@ -332,8 +335,12 @@ public class Gotchard_Rider_Items {
      /* mercurin
      * kinkiravina
      * gokigenmeteon
-     * neminemoon
-	 */
+     */
+
+	public static final DeferredItem<Item> NEMINEMOON_RIDE_CHEMY_CARD = ITEMS.register("neminemoon_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_moon_cerberus","majade","alchemisdriver_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
+					.AddNeedItemList(NEED_ITEM_MoonCerberus).AddToList(NEED_ITEM_MoonCerberus).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> FIREMARS_RIDE_CHEMY_CARD = ITEMS.register("firemars_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mars_phoenix","gotchard","gotchardriver_belt",
@@ -348,7 +355,8 @@ public class Gotchard_Rider_Items {
 
 	 public static final DeferredItem<Item> THE_SUN_RIDE_CHEMY_CARD = ITEMS.register("the_sun_ride_chemy_card",
 			 () -> new RiderFormChangeItem(new Item.Properties(),0,"","majade","alchemisdriver_belt",
-					 new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					 new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
+					 .AddNeedItemList(NEED_ITEM_SunUnicorn).AddToList(NEED_ITEM_SunUnicorn).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
      /* jupitta
      * kuroana
@@ -359,7 +367,8 @@ public class Gotchard_Rider_Items {
      */
 
 	public static final DeferredItem<Item> UNICON_RIDE_CHEMY_CARD = ITEMS.register("unicon_ride_chemy_card",
-			() -> new CopyFormChangeItem(new Item.Properties(),THE_SUN_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+			() -> new CopyFormChangeItem(new Item.Properties(),THE_SUN_RIDE_CHEMY_CARD.get())
+					.AddToList(NEED_ITEM_SunUnicorn).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	/* vanfenrir
      */
@@ -367,8 +376,11 @@ public class Gotchard_Rider_Items {
 	public static final DeferredItem<Item> INPHOENIX_RIDE_CHEMY_CARD = ITEMS.register("inphoenix_ride_chemy_card",
 			() -> new CopyFormChangeItem(new Item.Properties(),FIREMARS_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
-    /* yoacerberus
-     * haodin
+	public static final DeferredItem<Item> YOACERBERUS_RIDE_CHEMY_CARD = ITEMS.register("yoacerberus_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),NEMINEMOON_RIDE_CHEMY_CARD.get())
+					.AddToList(NEED_ITEM_MoonCerberus).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	/* haodin
      * gingriffon
      * donposeidon
      * dragonalos
