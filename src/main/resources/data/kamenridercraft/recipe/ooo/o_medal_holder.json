@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ooo",
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:cellmedal"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:o_medal_holder"
+  }
+}

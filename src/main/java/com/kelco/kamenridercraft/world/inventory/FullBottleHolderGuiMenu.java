@@ -19,7 +19,7 @@ public class FullBottleHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public FullBottleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Build_Rider_Items.FULL_BOTTLE_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Build_Rider_Items.FULLBOTTLE_HOLDER.get()));
 	}
 
 	public FullBottleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

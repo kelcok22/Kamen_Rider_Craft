@@ -929,7 +929,7 @@ public class Build_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 
-	public static final DeferredItem<Item> FULL_BOTTLE_HOLDER = ITEMS.register("full_bottle_holder",
+	public static final DeferredItem<Item> FULLBOTTLE_HOLDER = ITEMS.register("fullbottle_holder",
 			() -> new FullBottleHolderItem().AddToList(RiderTabs.BUILD_TAB_ITEM));
 
     public static final DeferredItem<Item> DRILL_CRUSHER = ITEMS.register("drill_crusher",

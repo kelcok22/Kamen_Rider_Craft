@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.decade.BlankCardItem;
-/*import com.kelco.kamenridercraft.item.decade.RideBookerItem;*/
 import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
