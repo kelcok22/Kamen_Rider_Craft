@@ -289,9 +289,9 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 37 + 8 + sj * 18, 45 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 37 + 8 + sj * 18, 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 37 + 8 + si * 18, 45 + 142));
+			this.addSlot(new Slot(inv, si, 37 + 8 + si * 18, 142));
 	}
 
 	@Override
