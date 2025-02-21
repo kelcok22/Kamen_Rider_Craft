@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-/*import com.kelco.kamenridercraft.item.blade.RouseBankItem;*/
 import com.kelco.kamenridercraft.item.blade.RouseBankItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;

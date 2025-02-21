@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ex_aid",
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_gashat"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:kimewaza_slot_holder"
+  }
+}

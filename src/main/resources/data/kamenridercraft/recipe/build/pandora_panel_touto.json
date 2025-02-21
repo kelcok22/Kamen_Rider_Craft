@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "build",
+  "pattern": [
+    "XTX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:full_bottle"
+    }, "Z": {
+      "tag": "c:chests"
+    }, "T": {
+      "tag": "kamenridercraft:gear/touto_fullbottles"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:pandora_panel_touto"
+  }
+}

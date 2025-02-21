@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "eternal",
+  "pattern": [
+    "XEX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:gaiamemory"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }, "E": {
+      "tag": "kamenridercraft:gear/t2_gaia_memories"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:t2_memory_case"
+  }
+}

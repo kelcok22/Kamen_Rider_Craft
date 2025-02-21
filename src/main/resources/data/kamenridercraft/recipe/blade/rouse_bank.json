@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blade",
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:bladecard"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:rouse_bank"
+  }
+}

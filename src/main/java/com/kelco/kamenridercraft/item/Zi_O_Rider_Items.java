@@ -6,7 +6,6 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;

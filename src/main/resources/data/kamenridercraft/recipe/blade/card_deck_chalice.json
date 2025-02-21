@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chalice",
+  "pattern": [
+    "XRX",
+    "XMX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:bladecard"
+    },
+    "M": {
+      "item": "kamenridercraft:rider_case"
+    },
+    "R": {
+      "item": "kamenridercraft:change_mantis"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:card_deck_chalice"
+  }
+}

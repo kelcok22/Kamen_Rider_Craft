@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tsukuyomi",
+  "pattern": [
+    "XTX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_watch"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }, "T": {
+      "item": "kamenridercraft:tsukuyomi_ridewatch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:ridewatch_holder_silver"
+  }
+}

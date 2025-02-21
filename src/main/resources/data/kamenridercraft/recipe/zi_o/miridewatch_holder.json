@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "woz",
+  "pattern": [
+    "XWX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_watch"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }, "W": {
+      "item": "kamenridercraft:woz_miridewatch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:miridewatch_holder"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "saber",
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:blank_wonder_ride_book"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:hissatsuholder"
+  }
+}

@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "gashat",
-  "ingredients": [
-	{ 
-	  "tag": "kamenridercraft:gear/energy_items"
-	}, 
-	{
-	  "tag": "kamenridercraft:gear/energy_items"
-	} , 
-	{
-	  "tag": "kamenridercraft:gear/energy_items"
-	} , 
-	{
-	  "tag": "kamenridercraft:gear/energy_items"
-	} 
+	"type": "minecraft:crafting_shaped",
+	"group": "gashat",
+	"pattern": [
+		"XEX",
+		"XZX",
+		"XXX"
 	],
-  "result": {
-	"id": "kamenridercraft:energy_item_holder"
-  }
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		}, "Z": {
+			"item": "kamenridercraft:rider_case"
+		}, "E": {
+			"tag": "kamenridercraft:gear/energy_items"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:energy_item_holder"
+	}
 }
