@@ -33,40 +33,40 @@ public class OMedalHolderGuiMenu extends AbstractContainerMenu {
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,8,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,1,26,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,2,44,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,3,62,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,4,98,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,5,116,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,6,134,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,7,152,16,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,8,8,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,9,26,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,10,44,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,11,62,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,12,98,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,13,116,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,14,134,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,15,152,34,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,16,8,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,17,26,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,18,44,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,19,62,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,20,98,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,21,116,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,22,134,52,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,23,152,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,0,26,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,1,44,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,2,62,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,3,26,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,4,44,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,5,62,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,6,26,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,7,44,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,8,62,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,9,26,70,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,10,44,70,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,11,62,70,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,12,98,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,13,116,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,14,134,16,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,15,98,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,16,116,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,17,134,34,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,18,98,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,19,116,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,20,134,52,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,21,98,70,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,22,116,70,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,23,134,70,"gear/o_medals"));
 
 
         for(int i1 = 0; i1 < 3; ++i1) {
             for(int k1 = 0; k1 < 9; ++k1) {
-                this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18));
+                this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 102 + i1 * 18));
             }
         }
 
         for(int j1 = 0; j1 < 9; ++j1) {
-            this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142));
+            this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 160));
         }
     }
 
