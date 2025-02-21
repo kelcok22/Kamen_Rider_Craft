@@ -475,17 +475,20 @@ public class KamenRiderCraftCore
 
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenus.RIDER_CASE_GUI.get(), RiderCaseGuiScreen::new);
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
             event.register(ModMenus.ROUSE_BANK_GUI.get(), RouseBankGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
             event.register(ModMenus.RIDE_BOOKER_GUI.get(), RideBookerGuiScreen::new);
-            event.register(ModMenus.RIDER_CASE_GUI.get(), RiderCaseGuiScreen::new);
+            event.register(ModMenus.T2_MEMORY_CASE_GUI.get(), T2MemoryCaseGuiScreen::new);
+            event.register(ModMenus.O_MEDAL_HOLDER_GUI.get(), OMedalHolderGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI.get(), AstroswitchPanelDoubleGuiScreen::new);
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
             event.register(ModMenus.LOCKSEED_HOLDER_GUI.get(), LockseedHolderGuiScreen::new);
             event.register(ModMenus.SHIFT_CAR_HOLDER_GUI.get(), ShiftCarHolderGuiScreen::new);
             event.register(ModMenus.KIMEWAZA_SLOT_HOLDER_GUI.get(), KimewazaSlotHolderGuiScreen::new);
+            event.register(ModMenus.ENERGY_ITEM_HOLDER_GUI.get(), EnergyItemHolderGuiScreen::new);
             event.register(ModMenus.FULL_BOTTLE_HOLDER_GUI.get(), FullBottleHolderGuiScreen::new);
             event.register(ModMenus.PANDORA_PANEL_GUI.get(), PandoraPanelGuiScreen::new);
             event.register(ModMenus.RIDEWATCH_HOLDER_GUI.get(), RidewatchHolderGuiScreen::new);

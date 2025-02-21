@@ -323,6 +323,8 @@
   "advent_deck_blank.text":"Advent Deck",
   "ring_holder_gui.text":"Ring Holder",
   "lockseed_holder.text":"Lockseed Holder",
+  "energy_item_holder_gui.text": "Energy Item Holder",
+  "o_medal_holder_gui.text": "O Medal Holder",
 
   "item.kamenridercraft.rider_circuit": "Rider Circuit",
 "item.kamenridercraft.sinister_pachinko_ball": "Sinister Pachinko Ball",
@@ -342,7 +344,6 @@
   "item.kamenridercraft.lollipop": "Lollipop",
   "item.kamenridercraft.potato_snacks": "Potato Snacks",
   "item.kamenridercraft.candy_wrapper": "Candy Wrapper",
-"item.kamenridercraft.energy_item_holder": "Energy Item Holder",
   "item.kamenridercraft.gift": "Gift",
 
 
@@ -1398,7 +1399,7 @@
 "item.kamenridercraft.frog_memory": "Frog Gadget Memory",
 "item.kamenridercraft.denden_memory": "Denden Gadget Memory",
 
-  "item.kamenridercraft.w_driver_case": "W Driver Case",
+  "item.kamenridercraft.t2_memory_case": "T2 Memory Case",
 
 "item.kamenridercraft.ooo_logo": "OOO Logo",
 "item.kamenridercraft.ooohead": "OOO Helmet",
@@ -1563,8 +1564,10 @@
 "item.kamenridercraft.birth_core_crane_arm": "Birth Cell Medal (Crane Arm)",
 "item.kamenridercraft.birth_core_drill_arm": "Birth Cell Medal (Drill Arm)",
 "item.kamenridercraft.birth_core_shovel_arm": "Birth Cell Medal (Shovel Arm)",
-"item.kamenridercraft.birth_core_catepillar_leg": "Birth Cell Medal (Caterpillar Leg)",
+"item.kamenridercraft.birth_core_caterpillar_leg": "Birth Cell Medal (Caterpillar Leg)",
 "item.kamenridercraft.birth_core_cutter_wing": "Birth Cell Medal (Cutter Wing)",
+
+  "item.kamenridercraft.o_medal_holder": "O Medal Holder",
 
   "item.kamenridercraft.fourze_logo": "Fourze Logo",
   "item.kamenridercraft.fourze_head": "Fourze Helmet",
@@ -2395,6 +2398,7 @@
 "item.kamenridercraft.ninjaplayerbelt": "Ninja Player Buckle",
 
   "item.kamenridercraft.kimewaza_slot_holder": "Kimewaza Slot Holder",
+  "item.kamenridercraft.energy_item_holder": "Energy Item Holder",
 
 "item.kamenridercraft.speed_energy_item": "Speed Energy Item",
 "item.kamenridercraft.iron_energy_item": "Iron Energy Item",
