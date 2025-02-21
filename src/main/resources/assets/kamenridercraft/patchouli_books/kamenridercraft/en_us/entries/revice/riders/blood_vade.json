@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Blood Vade",
+	"icon": "kamenridercraft:vade_belt",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:vade_belt\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Blood Vade",
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Transforms with the $(l:revice/devices/vade_belt)Blood Vade Belt$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Jump Boost VI$(li)Strength IV"
+		}
+	]
+}

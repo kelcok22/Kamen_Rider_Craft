@@ -474,7 +474,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 400, 5,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false))
 					.addAlternative(CROCODILE_VISTAMP_DEMONS.get()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KOMODO_DRAGON_VISTAMP_DEMONS = ITEMS.register("komodo_vistamp_demons",
@@ -490,7 +490,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(Effect_core.FIRE_PUNCH, 400, 2,true,false))
+					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 2,true,false))
 					.addAlternative(KOMODO_DRAGON_VISTAMP_DEMONS.get()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLOOD_VADE_VISTAMP = ITEMS.register("blood_vade_vistamp",

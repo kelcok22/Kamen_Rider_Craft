@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Evil",
+	"icon": "kamenridercraft:two_sidriver_evil",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "bat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:two_sidriver_evil\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_vistamp_evil\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Bat Genome",
+			"text": "Accessed with the $(l:revice/items/bat_vistamp)Bat Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evil",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:two_sidriver_evil\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackal_vistamp_evil\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Jackal Genome",
+			"text": "Accessed with the $(l:revice/items/jackal_vistamp)Jackal Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evil",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marvelous",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver_evil\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": "Evil Marvelous",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Evil",
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/revice_driver_evil)Revice Driver (Evil)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Strength VII"
+		}
+	]
+}
