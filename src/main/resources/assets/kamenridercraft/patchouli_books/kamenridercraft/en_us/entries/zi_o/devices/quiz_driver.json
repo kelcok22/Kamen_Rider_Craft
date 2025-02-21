@@ -2,7 +2,7 @@
 	"name": "Quiz Driver",
 	"icon": "kamenridercraft:quiz_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

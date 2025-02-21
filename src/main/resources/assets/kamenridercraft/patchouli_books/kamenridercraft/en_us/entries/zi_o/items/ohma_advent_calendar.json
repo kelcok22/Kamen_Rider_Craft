@@ -2,7 +2,7 @@
 	"name": "Ohma Advent Calendar",
 	"icon": "kamenridercraft:ohma_advent_calendar",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 98,
+	"sortnum": 100,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -8,11 +8,12 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 
 
@@ -31,7 +32,8 @@ public class GatlingEffect extends InstantenousMobEffect {
 				if (pLivingEntity instanceof Player player) {
 
 					if (player.isShiftKeyDown()&pAmplifier!=9){
-						Arrow fireball = new Arrow(player.level(),player, new ItemStack(Blocks.AIR), null);
+						Arrow fireball = new Arrow(player.level(),player, new ItemStack(Items.ARROW), null);
+						fireball.pickup = AbstractArrow.Pickup.DISALLOWED;
 						fireball.setPos(fireball.getX(), player.getY(0.5) + 0.5, fireball.getZ());
 						fireball.addDeltaMovement(player.getLookAngle().scale(3));
 						player.level().addFreshEntity(fireball);

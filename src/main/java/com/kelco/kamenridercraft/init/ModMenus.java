@@ -19,7 +19,7 @@ public class ModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, KamenRiderCraftCore.MOD_ID);
 
 
-
+	public static final DeferredHolder<MenuType<?>, MenuType<RiderCaseGuiMenu>> RIDER_CASE_GUI = REGISTRY.register("rider_case_gui", () -> IMenuTypeExtension.create(RiderCaseGuiMenu::new));
 	public static final Supplier<MenuType<AdventDeckGuiMenu>> ADVENT_DECK_GUI = REGISTRY.register("advent_deck_gui",
 			() -> IMenuTypeExtension.create(AdventDeckGuiMenu::new));
 
