@@ -198,14 +198,14 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "true_rex",
+			"anchor": "revice_shin",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:revice_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:true_rex_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
-			"name": "True Rex Genome",
+			"name": "Revice Shin",
 			"text": "Accessed with the $(l:revice/items/true_rex_vistamp)True Rex Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Kamen Rider Revi",
+			"title": "Kamen Rider Revice",
 			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Transforms with the $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VII$(li)Strength V"
 		},
 		{
