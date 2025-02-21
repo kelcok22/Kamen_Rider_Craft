@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "revice",
+  "pattern": [
+    "XVX",
+    "XZX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:proto_vistamp"
+    }, "Z": {
+      "item": "kamenridercraft:rider_case"
+    }, "V": {
+      "item": "kamenridercraft:bat_vistamp"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:vistamp_holder_grey"
+  }
+}

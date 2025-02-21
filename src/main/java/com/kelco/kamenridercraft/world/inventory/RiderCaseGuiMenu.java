@@ -36,13 +36,13 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
         this.addSlot(new SlotByTag(container,0,26,16,"rider_head_armor"));
         this.addSlot(new SlotByTag(container,1,26,34,"rider_chest_armor"));
         this.addSlot(new SlotByTag(container,2,26,52,"rider_leg_armor"));
-        this.addSlot(new SlotByTag(container,3,80,34,"rider_foot_armor"));
-        this.addSlot(new Slot(container,4,116,16));
-        this.addSlot(new Slot(container,5,134,16));
-        this.addSlot(new Slot(container,6,116,34));
-        this.addSlot(new Slot(container,7,134,34));
-        this.addSlot(new Slot(container,8,116,52));
-        this.addSlot(new Slot(container,9,134,52));
+        this.addSlot(new SlotByTag(container,3,71,34,"rider_foot_armor"));
+        this.addSlot(new SlotByTag(container,4,116,16,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,5,134,16,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,6,116,34,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,7,134,34,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,8,116,52,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,9,134,52,"gear/all_items"));
 
 
         for(int i1 = 0; i1 < 3; ++i1) {
