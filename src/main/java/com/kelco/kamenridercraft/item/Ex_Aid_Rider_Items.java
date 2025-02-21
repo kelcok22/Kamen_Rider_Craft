@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.GameCreator;
 import com.kelco.kamenridercraft.block.machineBlocks.GanbarizingMachine;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.ex_aid.EnergyItemHolderItem;
 import com.kelco.kamenridercraft.item.ex_aid.ExAidEnergyItem;
 import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
 import com.kelco.kamenridercraft.item.ex_aid.KimewazaSlotHolderItem;
@@ -1058,7 +1059,7 @@ public class Ex_Aid_Rider_Items {
 
 
 	public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			() -> new EnergyItemHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SPEED_ENERGY_ITEM = ITEMS.register("speed_energy_item",

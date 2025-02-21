@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderCaseItem;
+import com.kelco.kamenridercraft.item.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.w.WDriverItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -482,6 +483,9 @@ public class W_Rider_Items {
 
 	public static final DeferredItem<Item> NASCA_BLADE = ITEMS.register("nasca_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
+
+	public static final DeferredItem<Item> T2_MEMORY_CASE = ITEMS.register("t2_memory_case",
+			() -> new T2MemoryCaseItem().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

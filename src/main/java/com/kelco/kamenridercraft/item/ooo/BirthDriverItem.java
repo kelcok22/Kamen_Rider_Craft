@@ -97,7 +97,7 @@ public class BirthDriverItem extends RiderDriverItem {
 			if (part =="body") return get_Form_Item(itemstack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get();
 			if (part =="rightArm") return get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get();
 			if (part =="leftArm") return get_Form_Item(itemstack, 4)==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get();
-			if (part =="leftLeg"||part =="rightLeg") return get_Form_Item(itemstack, 5)==OOO_Rider_Items.BIRTH_CORE_CATEPTLLAR_LEG.get();
+			if (part =="leftLeg"||part =="rightLeg") return get_Form_Item(itemstack, 5)==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get();
 		
 		}
 		case LEGS -> {

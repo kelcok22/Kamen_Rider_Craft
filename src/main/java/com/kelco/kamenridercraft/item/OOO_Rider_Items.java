@@ -595,7 +595,7 @@ public class OOO_Rider_Items {
 					.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
-			public static final DeferredItem<Item> BIRTH_CORE_CATEPTLLAR_LEG = ITEMS.register("birth_core_catepillar_leg",
+			public static final DeferredItem<Item> BIRTH_CORE_CATERPILLAR_LEG = ITEMS.register("birth_core_caterpillar_leg",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
 					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get())
@@ -726,9 +726,10 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",
 					() -> new oScannerItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
-			/*
+
 			public static final DeferredItem<Item> O_MEDAL_HOLDER = ITEMS.register("o_medal_holder",
-					() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new OMedalHolderItem().AddToList(RiderTabs.OOO_TAB_ITEM));
+			/*
 			public static final DeferredItem<Item> O_MEDAL_NEST = ITEMS.register("o_medal_nest",
 					() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 			 */
