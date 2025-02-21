@@ -1398,6 +1398,8 @@
 "item.kamenridercraft.frog_memory": "Frog Gadget Memory",
 "item.kamenridercraft.denden_memory": "Denden Gadget Memory",
 
+  "item.kamenridercraft.w_driver_case": "W Driver Case",
+
 "item.kamenridercraft.ooo_logo": "OOO Logo",
 "item.kamenridercraft.ooohead": "OOO Helmet",
 "item.kamenridercraft.oootroso": "OOO Chestplate",
@@ -2458,6 +2460,7 @@
 "item.kamenridercraft.fullbottle_buster": "Fullbottle Buster",
 "item.kamenridercraft.magma_knuckle": "Magma Knuckle",  
 "item.kamenridercraft.blizzard_knuckle": "Blizzard Knuckle",
+  "item.kamenridercraft.nanba_walking_stick": "Nanba's Walking Stick",
 
 "item.kamenridercraft.build_phone": "Build Phone",
 
@@ -3713,6 +3716,8 @@
 "item.kamenridercraft.gavv_legs": "Gavv Leggings",
 "item.kamenridercraft.henshin_belt_gavv": "Henshin Belt Gavv",
   "item.kamenridercraft.valenbuckle": "Valenbuckle",
+  "item.kamenridercraft.vrastumgear": "Vrastumgear",
+  "item.kamenridercraft.henshin_belt_bitter_gavv": "Henshin Belt Bitter Gavv",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.poppingummy_gochizo": "Poppingummy Gochizo",
@@ -3728,16 +3733,25 @@
 "item.kamenridercraft.chocodon_gochizo": "Chocodon Gochizo",
 "item.kamenridercraft.chocodan_gochizo": "Chocodan Gochizo",
 "item.kamenridercraft.doumaru_gochizo": "Doumaru Gochizo",
+"item.kamenridercraft.bushel_gochizo": "Bushel Gochizo",
+"item.kamenridercraft.caking_gochizo": "Caking Gochizo",
+"item.kamenridercraft.chocold_gochizo": "Chocold Gochizo",
+"item.kamenridercraft.doppudding_gochizo": "Doppudding Gochizo",
+"item.kamenridercraft.purujelly_gochizo": "Purujelly Gochizo",
+"item.kamenridercraft.sparkingummy_gochizo": "Sparkingummy Gochizo",
+"item.kamenridercraft.vrocan_spicy_gochizo": "Vrocan Spicy Gochizo",
+"item.kamenridercraft.bakibaki_stick_gochizo": "Bakibaki Stick Gochizo",
 "item.kamenridercraft.cookiekie_gochizo": "Cookikkie Gochizo",
 "item.kamenridercraft.byunbei_gochizo": "Byunbei Gochizo",
 "item.kamenridercraft.bubble_ramune_gochizo": "Bubble Ramune Gochizo",
 "item.kamenridercraft.eleganmacaron_gochizo": "Eleganmacaron Gochizo",
 "item.kamenridercraft.popburn_gochizo": "Popburn Gochizo",
 "item.kamenridercraft.caramelmel_gochizo": "Caramelmel Gochizo",
+"item.kamenridercraft.kungfu_ramen_gochizo": "Kungfu Ramen Gochizo",
+"item.kamenridercraft.choco_treasure_gochizo": "Choco Treasure Gochizo",
 "item.kamenridercraft.charapaki_gochizo": "Charapaki Gochizo",
 "item.kamenridercraft.charapaki_gochizo_special": "Charapaki Gochizo (Special Ver.)",
-"item.kamenridercraft.bushel_gochizo": "Bushel Gochizo",
-  "item.kamenridercraft.caking_gochizo": "Caking Gochizo",
+"item.kamenridercraft.umaibo_gochizo": "Umaibo Gochizo",
 
   "item.kamenridercraft.poppingummy_gochizo_charadeco_ver": "Poppingummy Gochizo (Charadeco ver.)",
 
@@ -3748,8 +3762,11 @@
 "item.kamenridercraft.vrocangatling": "Vrocangatling",
 "item.kamenridercraft.chocodongun": "Chocodongun",
 "item.kamenridercraft.chocodangun": "Chocodangun",
+"item.kamenridercraft.xmax": "Xmax",
 "item.kamenridercraft.gavvwhipir": "Gavvwhipir",
 "item.kamenridercraft.valenbuster": "Valenbuster",
+"item.kamenridercraft.vrambreaker": "Vrambreaker",
+"item.kamenridercraft.bitter_gavvgablade": "Bitter Gavvgablade",
 
   "item.kamenridercraft.gochizo_holder": "Gochizo Holder",
 

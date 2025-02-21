@@ -68,6 +68,22 @@
                    "name": "kamenridercraft:dragon_evol_bottle",
                    "weight": 2
                  },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:nanba_walking_stick",
+          "weight": 2
+        },
                           {
                             "type": "minecraft:item",
                             "functions": [

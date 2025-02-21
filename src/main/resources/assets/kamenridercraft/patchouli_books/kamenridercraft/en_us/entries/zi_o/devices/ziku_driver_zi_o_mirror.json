@@ -2,7 +2,7 @@
 	"name": "Ziku Driver (Mirror Zi-O)",
 	"icon": "kamenridercraft:ziku_driver_zi_o_mirror",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

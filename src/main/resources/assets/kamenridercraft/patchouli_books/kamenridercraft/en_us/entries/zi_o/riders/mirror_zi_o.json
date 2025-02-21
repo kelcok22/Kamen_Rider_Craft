@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Zi-O (Mirror World version)",
 	"icon": "kamenridercraft:ziku_driver_zi_o_mirror",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:entity",

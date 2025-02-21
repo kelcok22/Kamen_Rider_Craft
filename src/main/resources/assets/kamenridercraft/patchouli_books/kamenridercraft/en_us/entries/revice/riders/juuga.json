@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Juuga",
+	"icon": "kamenridercraft:juuga_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:juuga_driver\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Juuga",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/juuga_driver)Juuga Driver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength IV (with weapon)$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste III$(li)Jump Boost"
+		}
+	]
+}

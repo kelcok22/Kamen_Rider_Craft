@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Shinobi",
 	"icon": "kamenridercraft:shinobi_driver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 8,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Woz",
 	"icon": "kamenridercraft:beyondriver",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:entity",

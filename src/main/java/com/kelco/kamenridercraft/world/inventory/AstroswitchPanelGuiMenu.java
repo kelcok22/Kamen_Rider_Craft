@@ -1,8 +1,11 @@
 
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -82,6 +85,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 				}
 			}
 		}
+
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 14, 22) {
 			private final int slot = 0;
 			private int x = AstroswitchPanelGuiMenu.this.x;
@@ -89,7 +93,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.ROCKET_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 37, 22) {
@@ -99,7 +103,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.LAUNCHER_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 59, 22) {
@@ -109,7 +113,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.DRILL_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 82, 22) {
@@ -119,7 +123,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.RADAR_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 104, 22) {
@@ -129,7 +133,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.MAGIC_HAND_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 127, 22) {
@@ -139,7 +143,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.CAMERA_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 149, 22) {
@@ -149,7 +153,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.PARACHUTE_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 172, 22) {
@@ -159,7 +163,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.CHAINSAW_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 194, 22) {
@@ -169,7 +173,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.HOPPING_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 217, 22) {
@@ -179,7 +183,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.ELEK_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 14, 44) {
@@ -189,7 +193,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SCISSORS_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 37, 44) {
@@ -199,7 +203,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.BEAT_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 59, 44) {
@@ -209,7 +213,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.CHAIN_ARRAY_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 82, 44) {
@@ -219,7 +223,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SMOKE_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 104, 44) {
@@ -229,7 +233,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SPIKE_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 127, 44) {
@@ -239,7 +243,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.WINCH_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 149, 44) {
@@ -249,7 +253,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.FLASH_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 172, 44) {
@@ -259,7 +263,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.SHIELD_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 194, 44) {
@@ -269,7 +273,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.GATLING_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 217, 44) {
@@ -279,7 +283,7 @@ public class AstroswitchPanelGuiMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Fourze_Rider_Items.FIRE_ASTROSWITCH.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/astroswitches")));
 			}
 		}));
 

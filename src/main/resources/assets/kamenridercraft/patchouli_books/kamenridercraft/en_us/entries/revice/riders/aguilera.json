@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Aguilera",
+	"icon": "kamenridercraft:week_endriver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:week_endriver\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Aguilera",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/week_endriver)Week Endriver (Aguilera)$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Speed II$(li)Anti Poison$(li)Haste II$(li)Flying"
+		}
+	]
+}

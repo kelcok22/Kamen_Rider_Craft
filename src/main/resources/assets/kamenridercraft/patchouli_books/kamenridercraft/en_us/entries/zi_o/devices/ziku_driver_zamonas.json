@@ -2,7 +2,7 @@
 	"name": "Ziku Driver (Zamonas)",
 	"icon": "kamenridercraft:ziku_driver_zamonas",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 8,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:text",

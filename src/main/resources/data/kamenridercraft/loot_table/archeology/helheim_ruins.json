@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gaim_horse_armor",
+          "weight": 1
+        },
+    {
+      "type": "minecraft:item",
+      "name": "kamenridercraft:kabi_orange_lockseed",
+      "weight": 1
+    },
+    {
+      "type": "minecraft:item",
+      "name": "kamenridercraft:helheim_fruit",
+      "weight": 2
+    },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:himawari_lockseed",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

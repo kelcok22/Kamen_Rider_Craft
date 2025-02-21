@@ -23,6 +23,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -180,8 +181,10 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<AstroswitchPanelBlock> ASTROSWITCH_PANEL = registerBlock("astroswitch_panel",
-			() -> new AstroswitchPanelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).strength(5.0F, 6.0F).sound(SoundType.METAL),
-					AstroswitchPanelBlockEntity.get()).AddToTabList(RiderTabs.RIDER_BLOCK));
+			() -> new AstroswitchPanelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.lightLevel((p_152632_) -> {return 100;}).strength(5.0F, 6.0F).noOcclusion()
+					.sound(SoundType.METAL), AstroswitchPanelBlockEntity.get())
+					.AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 

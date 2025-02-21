@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Zamonas",
 	"icon": "kamenridercraft:ziku_driver_zamonas",
 	"category": "kamenridercraft:zi_o/riders",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:entity",
