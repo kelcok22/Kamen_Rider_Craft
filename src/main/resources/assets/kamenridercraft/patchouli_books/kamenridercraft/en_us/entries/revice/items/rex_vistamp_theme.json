@@ -1,0 +1,19 @@
+{
+	"name": "Rex Vistamp (Theme Song)",
+	"icon": "kamenridercraft:rex_vistamp_theme",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 92,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Rex Vistamp (Theme Song ver.) (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_theme",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		}
+	]
+}

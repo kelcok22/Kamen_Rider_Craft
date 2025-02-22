@@ -1,0 +1,16 @@
+{
+	"name": "Gold Spino Vistamp",
+	"icon": "kamenridercraft:gold_spino_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Becoming Rider No. 2~♪ (2022, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#gold_spino)Gold Spino Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#gold_spino)Gold Spino Genome$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/gold_spino_vistamp"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Oomukade Vistamp",
+	"icon": "kamenridercraft:oomukade_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 65,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Vistamp Selection 04 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oomukade_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

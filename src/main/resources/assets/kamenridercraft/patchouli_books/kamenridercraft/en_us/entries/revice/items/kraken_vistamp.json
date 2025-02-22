@@ -1,0 +1,19 @@
+{
+	"name": "Kraken Vistamp",
+	"icon": "kamenridercraft:kraken_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used to craft Orteca's $(l:revice/devices/demons_driver_orteca)Demons Driver (Orteca)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_vistamp",
+			"title": " ",
+			"text": "Obtained by using a $(l:revice/items/daiouika_vistamp)Daiouika Proto Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

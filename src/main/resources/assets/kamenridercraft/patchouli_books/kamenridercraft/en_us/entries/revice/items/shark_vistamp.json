@@ -1,0 +1,19 @@
+{
+	"name": "Shark Proto Vistamp",
+	"icon": "kamenridercraft:shark_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 76,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shark_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kangaroo Vistamp",
+	"icon": "kamenridercraft:kangaroo_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#kangaroo)Kangaroo Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kangaroo)Kangaroo Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kangaroo_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

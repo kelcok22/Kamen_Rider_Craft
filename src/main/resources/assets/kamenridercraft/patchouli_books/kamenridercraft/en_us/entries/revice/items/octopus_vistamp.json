@@ -1,0 +1,19 @@
+{
+	"name": "Octopus Vistamp",
+	"icon": "kamenridercraft:octopus_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:octopus_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Inves Stamp",
+	"icon": "kamenridercraft:inves_stamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 82,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:inves_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

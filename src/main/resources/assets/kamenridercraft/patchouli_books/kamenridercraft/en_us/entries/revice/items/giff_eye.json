@@ -1,0 +1,19 @@
+{
+	"name": "Giff's eye",
+	"icon": "kamenridercraft:giff_eye",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 99,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_eye",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

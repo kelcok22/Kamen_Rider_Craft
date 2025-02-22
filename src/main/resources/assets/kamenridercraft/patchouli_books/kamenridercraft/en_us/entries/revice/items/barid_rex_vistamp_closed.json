@@ -1,0 +1,16 @@
+{
+	"name": "Unfinished Barid Rex Vistamp",
+	"icon": "kamenridercraft:barid_rex_vistamp_closed",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/barid_rex_vistamp_closed"
+		}
+	]
+}

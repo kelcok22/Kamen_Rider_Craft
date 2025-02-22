@@ -1,0 +1,19 @@
+{
+	"name": "Hedgehog Vistamp",
+	"icon": "kamenridercraft:hedgehog_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 61,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Hedgehog Vistamp (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hedgehog_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

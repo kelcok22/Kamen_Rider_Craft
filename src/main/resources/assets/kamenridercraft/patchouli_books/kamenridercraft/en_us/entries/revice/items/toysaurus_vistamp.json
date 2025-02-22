@@ -1,0 +1,19 @@
+{
+	"name": "Toysaurus Vistamp",
+	"icon": "kamenridercraft:toysaurus_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 93,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Toysaurus Vistamp (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toysaurus_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

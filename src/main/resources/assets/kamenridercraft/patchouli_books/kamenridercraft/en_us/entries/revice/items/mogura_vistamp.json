@@ -1,0 +1,19 @@
+{
+	"name": "Mogura Vistamp",
+	"icon": "kamenridercraft:mogura_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#mogura)Mogura Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mogura_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

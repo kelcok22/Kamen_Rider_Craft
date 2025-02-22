@@ -1,0 +1,19 @@
+{
+	"name": "Blank Vistamp",
+	"icon": "kamenridercraft:proto_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used as the base item for most Revice items"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		}
+	]
+}

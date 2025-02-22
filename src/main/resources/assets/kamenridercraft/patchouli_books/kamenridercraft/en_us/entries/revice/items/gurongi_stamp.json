@@ -1,0 +1,19 @@
+{
+	"name": "Gurongi Stamp",
+	"icon": "kamenridercraft:gurongi_stamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 86,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gurongi_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

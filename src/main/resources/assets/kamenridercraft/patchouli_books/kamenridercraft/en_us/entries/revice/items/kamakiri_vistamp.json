@@ -1,0 +1,19 @@
+{
+	"name": "Kamakiri Vistamp",
+	"icon": "kamenridercraft:kamakiri_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#kamakiri)Kamakiri Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kamakiri)Kamakiri Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamakiri_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

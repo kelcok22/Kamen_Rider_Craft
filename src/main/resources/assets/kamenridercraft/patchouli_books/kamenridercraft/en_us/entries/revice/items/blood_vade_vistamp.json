@@ -1,0 +1,19 @@
+{
+	"name": "Blood Vade Vistamp",
+	"icon": "kamenridercraft:blood_vade_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Used to craft Blood Vade's $(l:revice/devices/vade_belt)Blood Vade Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_vade_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

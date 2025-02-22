@@ -1,0 +1,19 @@
+{
+	"name": "Rex Vistamp (Glitter)",
+	"icon": "kamenridercraft:telemag_rex_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 94,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Rex Vistamp (Telemaga Original Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:telemag_rex_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
