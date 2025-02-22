@@ -13,6 +13,7 @@ public class LootModifierCore {
     public static DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT_MODIFIERS = DeferredRegister.create(NeoForgeRegistries.GLOBAL_LOOT_MODIFIER_SERIALIZERS, KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredHolder<MapCodec<? extends IGlobalLootModifier>, MapCodec<AddItemModifier>> ADD_ITEM_MODIFIER = LOOT_MODIFIERS.register("add_item", AddItemModifier.CODEC_SUPPLIER);
+    public static final DeferredHolder<MapCodec<? extends IGlobalLootModifier>, MapCodec<AddSusSandItemModifier>> ADD_SUS_SAND_ITEM_MODIFIER = LOOT_MODIFIERS.register("add_sus_sand_item", AddSusSandItemModifier.CODEC_SUPPLIER);
 
     public static void register(IEventBus eventBus) {
         LOOT_MODIFIERS.register(eventBus);
