@@ -4,11 +4,7 @@
 	{
 		"condition": "neoforge:loot_table_id",
 		"loot_table_id": "minecraft:archaeology/desert_pyramid"
-	},
-		{
-			"condition": "neoforge:can_item_perform_ability",
-			"ability": "brush_brush"
-		}
+	}
 ],
 	"item": "kamenridercraft:unknown_beast_ring"
 }

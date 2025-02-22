@@ -48,7 +48,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
 
         add("beast_rings_pyramid_archeology",new AddItemModifier(new LootItemCondition[]{
-                LootTableIdCondition.builder(ResourceLocation.parse("archaeology/desert_pyramid")).build(),
+                LootTableIdCondition.builder(ResourceLocation.parse("minecraft:archaeology/desert_pyramid")).build(),
                 LootItemRandomChanceCondition.randomChance(0.9f).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
         
