@@ -39,17 +39,16 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
         add("beast_rings_pyramid",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/desert_pyramid")).build(),
-                LootItemRandomChanceCondition.randomChance(0.9f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
 
         add("beast_rings_jungle",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("chests/jungle_temple")).build(),
-                LootItemRandomChanceCondition.randomChance(0.9f).build()},
+                LootItemRandomChanceCondition.randomChance(0.5f).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
 
-        add("beast_rings_pyramid_archeology",new AddItemModifier(new LootItemCondition[]{
-                LootTableIdCondition.builder(ResourceLocation.parse("minecraft:archaeology/desert_pyramid")).build(),
-                LootItemRandomChanceCondition.randomChance(0.9f).build()},
+        add("beast_rings_pyramid_archeology",new AddSusSandItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("archaeology/desert_pyramid")).build()},
                 Wizard_Rider_Items.UNKNOWN_BEAST_RING.get()));
         
     }
