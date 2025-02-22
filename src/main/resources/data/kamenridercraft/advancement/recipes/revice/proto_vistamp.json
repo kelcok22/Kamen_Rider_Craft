@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:revice/revice_head",
 	  "kamenridercraft:revice/revice_troso",
-	  "kamenridercraft:revice/revice_legs"
+	  "kamenridercraft:revice/revice_legs",
+	  "kamenridercraft:revice/vistamp_holder"
 	]
   },
   "sends_telemetry_event": false

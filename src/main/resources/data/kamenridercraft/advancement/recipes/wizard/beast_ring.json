@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:wizard/beastdriver",
-	  "kamenridercraft:wizard/dice_saber"
+	  "kamenridercraft:wizard/dice_saber",
+	  "kamenridercraft:wizard/beast_ring_holder"
 	]
   },
   "sends_telemetry_event": false

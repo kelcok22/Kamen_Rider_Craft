@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:revice/juuga_driver"
+	  "kamenridercraft:revice/juuga_driver",
+	  "kamenridercraft:revice/vistamp_holder_silver"
 	]
   },
   "sends_telemetry_event": false

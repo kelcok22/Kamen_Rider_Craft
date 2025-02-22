@@ -21,6 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
+	  "kamenridercraft:blade/card_deck_chalice",
 	  "kamenridercraft:blade/chalice_rouzer",
 	  "kamenridercraft:blade/chalice_arrow"
 	]

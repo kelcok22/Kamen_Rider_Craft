@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:build/buildhead",
 	  "kamenridercraft:build/buildtroso",
-	  "kamenridercraft:build/buildlegs"
+	  "kamenridercraft:build/buildlegs",
+	  "kamenridercraft:build/fullbottle_holder"
 	]
   },
   "sends_telemetry_event": false

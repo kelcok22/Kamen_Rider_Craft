@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:gavv/gavv_head",
 	  "kamenridercraft:gavv/gavv_troso",
-	  "kamenridercraft:gavv/gavv_legs"
+	  "kamenridercraft:gavv/gavv_legs",
+	  "kamenridercraft:gavv/gochizo_holder"
 	]
   },
   "sends_telemetry_event": false

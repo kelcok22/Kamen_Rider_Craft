@@ -23,7 +23,9 @@
 	"recipes": [
 	  "kamenridercraft:gotchard/gotchard_head",
 	  "kamenridercraft:gotchard/gotchard_torso",
-	  "kamenridercraft:gotchard/gotchard_legs"
+	  "kamenridercraft:gotchard/gotchard_legs",
+	  "kamenridercraft:gotchard/gotchancollection_panel",
+	  "kamenridercraft:gotchard/gotchandraw_holder"
 	]
   },
   "sends_telemetry_event": false

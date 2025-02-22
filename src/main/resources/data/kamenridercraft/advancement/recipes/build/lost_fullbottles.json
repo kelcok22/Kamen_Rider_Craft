@@ -6,9 +6,7 @@
 	  "conditions": {
 		"items": [
 		  {
-			"items": [
-			  "kamenridercraft:astroswitch"
-			]
+			"items": "#kamenridercraft:gear/lost_fullbottles"
 		  }
 		]
 	  }
@@ -21,11 +19,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:fourze/fourze_head",
-	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs",
-	  "kamenridercraft:fourze/astroswitch_panel",
-	  "kamenridercraft:fourze/gate_switch"
+	  "kamenridercraft:build/last_pandora_panel_black"
 	]
   },
   "sends_telemetry_event": false
