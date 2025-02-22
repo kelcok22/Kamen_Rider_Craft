@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zi_o/ziku_driver_tsukuyomi"
+	  "kamenridercraft:zi_o/ziku_driver_tsukuyomi",
+	  "kamenridercraft:zi_o/ridewatch_holder_silver"
 	]
   },
   "sends_telemetry_event": false

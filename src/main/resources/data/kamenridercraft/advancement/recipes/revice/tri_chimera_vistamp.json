@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:revice/chimera_driver_daimon",
-	  "kamenridercraft:revice/juuga_vistamp"
+	  "kamenridercraft:revice/juuga_vistamp",
+	  "kamenridercraft:revice/vistamp_holder_silver"
 	]
   },
   "sends_telemetry_event": false

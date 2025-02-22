@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:astroswitch"
+			  "kamenridercraft:progrise_holder"
 			]
 		  }
 		]
@@ -21,11 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:fourze/fourze_head",
-	  "kamenridercraft:fourze/fourze_troso",
-	  "kamenridercraft:fourze/fourze_legs",
-	  "kamenridercraft:fourze/astroswitch_panel",
-	  "kamenridercraft:fourze/gate_switch"
+	  "kamenridercraft:zero_one/ikazuchi_progrise_holder"
 	]
   },
   "sends_telemetry_event": false
