@@ -674,9 +674,6 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
-	public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",
-    		() -> new OhmaAdventCalendarItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));		
-		
 
 	public static final DeferredItem<Item> ZI_O_HELMET = ITEMS.register("zi_o_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));

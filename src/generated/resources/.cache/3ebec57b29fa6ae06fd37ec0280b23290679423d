@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-22T02:54:43.6535665	Item Models: kamenridercraft
+// 1.21.1	2025-02-22T16:40:55.2952673	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
@@ -130,6 +130,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 ec5fd7d93fc06a2708b266545e140c5aefaac96d assets/kamenridercraft/models/item/proto_speedshift_chaser.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhino_super_viral_core.json
+8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/rider_case.json
 e4e1930700e61ef1158f1323ba920596aa3b3421 assets/kamenridercraft/models/item/rocket_nadeshiko_switch.json
 d92d46060722aa296f05c34c90633b1df9dd4bfc assets/kamenridercraft/models/item/roidmude_core_003.json
 5231dba052763b41f0d36703c0bf841af234c069 assets/kamenridercraft/models/item/saber_blank_1.json
