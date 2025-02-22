@@ -1,16 +1,21 @@
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
+import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.items.SlotItemHandler;
 
 public class RiderCaseGuiMenu extends AbstractContainerMenu {
     private static final int CONTAINER_SIZE = 10;
@@ -33,17 +38,46 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,26,16,"rider_head_armor"));
-        this.addSlot(new SlotByTag(container,1,26,34,"rider_chest_armor"));
-        this.addSlot(new SlotByTag(container,2,26,52,"rider_leg_armor"));
-        this.addSlot(new SlotByTag(container,3,71,34,"rider_foot_armor"));
-        this.addSlot(new SlotByTag(container,4,116,16,"gear/all_items"));
-        this.addSlot(new SlotByTag(container,5,134,16,"gear/all_items"));
-        this.addSlot(new SlotByTag(container,6,116,34,"gear/all_items"));
-        this.addSlot(new SlotByTag(container,7,134,34,"gear/all_items"));
-        this.addSlot(new SlotByTag(container,8,116,52,"gear/all_items"));
-        this.addSlot(new SlotByTag(container,9,134,52,"gear/all_items"));
 
+        this.addSlot(new Slot(container, 0,90,16) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "rider_head_armor")));
+            }
+        });
+
+
+        this.addSlot(new Slot(container, 1,90,34) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "rider_chest_armor")));
+            }
+        });
+
+        this.addSlot(new Slot(container, 2,90,52) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "rider_leg_armor")));
+            }
+        });
+        this.addSlot(new Slot(container, 3,108,34) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "rider_foot_armor")));
+            }
+        });
+
+        this.addSlot(new SlotByTag(container,4,126,16,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,5,144,16,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,6,126,34,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,7,144,34,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,8,126,52,"gear/all_items"));
+        this.addSlot(new SlotByTag(container,9,144,52,"gear/all_items"));
+
+        this.addSlot(new Slot(playerInventory, 39,26,16));
+        this.addSlot(new Slot(playerInventory, 38,26,34));
+        this.addSlot(new Slot(playerInventory, 37,26,52));
+        this.addSlot(new Slot(playerInventory, 36,44,34));
 
         for(int i1 = 0; i1 < 3; ++i1) {
             for(int k1 = 0; k1 < 9; ++k1) {

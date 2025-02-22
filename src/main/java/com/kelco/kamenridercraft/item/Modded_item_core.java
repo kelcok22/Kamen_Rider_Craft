@@ -79,7 +79,7 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  GENERIC_RIDER_CASE = ITEMS.register("rider_case",
-            () -> new RiderCaseItem().AddToList(RiderTabs.Misc_TAB_ITEM));
+            () -> new RiderCaseItem().has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item>  SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

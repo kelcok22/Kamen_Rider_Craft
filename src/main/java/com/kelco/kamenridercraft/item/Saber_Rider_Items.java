@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
-import com.kelco.kamenridercraft.item.saber.BookGateItem;
 import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;
 import com.kelco.kamenridercraft.item.saber.HissatsuHolderItem;
 import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
