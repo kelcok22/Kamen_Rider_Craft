@@ -1,0 +1,19 @@
+{
+	"name": "Spider Vistamp",
+	"icon": "kamenridercraft:spider_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons's $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Used to access Demons's $(l:revice/riders/demons#spider)Spider Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

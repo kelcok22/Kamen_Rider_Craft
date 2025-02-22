@@ -1,0 +1,19 @@
+{
+	"name": "Giff Junior Vistamp",
+	"icon": "kamenridercraft:giff_junior_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 96,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_junior_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		}
+	]
+}

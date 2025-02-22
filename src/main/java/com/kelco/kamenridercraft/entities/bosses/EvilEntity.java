@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.entities.bosses;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -37,7 +36,8 @@ public class EvilEntity extends BaseHenchmenEntity {
 		if ( this.isDeadOrDying() && !this.level().isClientSide
             && this.getLastAttacker() instanceof Player player
             && player.getInventory().countItem(Revice_Rider_Items.CROW_VISTAMP.get())!=0) {
-                player.getInventory().clearOrCountMatchingItems(ItemStack -> ItemStack.getItem() == Revice_Rider_Items.CROW_VISTAMP.get(), 1, player.getInventory());
+        	    if (player.getInventory().getItem(40).getItem()==Revice_Rider_Items.CROW_VISTAMP.get()) player.getInventory().removeItem(40, 1);
+				else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Revice_Rider_Items.CROW_VISTAMP.get())), 1);
                 ItemEntity stamp = new ItemEntity(this.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(Revice_Rider_Items.HOLY_WING_VISTAMP.get(), 1), 0, 0, 0);
                 stamp.setPickUpDelay(0);
                 this.level().addFreshEntity(stamp);

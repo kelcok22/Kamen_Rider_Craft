@@ -1,0 +1,19 @@
+{
+	"name": "Kirin Vistamp",
+	"icon": "kamenridercraft:kirin_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#kirin)Kirin Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kirin)Kirin Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirin_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

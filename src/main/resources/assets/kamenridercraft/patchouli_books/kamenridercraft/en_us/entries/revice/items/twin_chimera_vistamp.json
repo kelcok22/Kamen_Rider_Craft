@@ -1,0 +1,16 @@
+{
+	"name": "Twin Chimera Vistamp",
+	"icon": "kamenridercraft:twin_chimera_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 53,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used to craft Chimera's $(l:revice/devices/chimera_driver)Chimera Driver (Chimera)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/twin_chimera_vistamp"
+		}
+	]
+}

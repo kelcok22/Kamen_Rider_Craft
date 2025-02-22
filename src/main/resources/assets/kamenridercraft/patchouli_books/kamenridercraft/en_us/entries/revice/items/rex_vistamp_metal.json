@@ -1,0 +1,19 @@
+{
+	"name": "Rex Vistamp (Black Metal Plating)",
+	"icon": "kamenridercraft:rex_vistamp_metal",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 90,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Rex Vistamp (Black Metal Plating ver.) (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_metal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		}
+	]
+}

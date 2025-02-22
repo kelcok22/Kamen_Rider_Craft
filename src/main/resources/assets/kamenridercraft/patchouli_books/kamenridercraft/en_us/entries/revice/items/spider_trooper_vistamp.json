@@ -1,0 +1,19 @@
+{
+	"name": "Trooper Spider Vistamp",
+	"icon": "kamenridercraft:spider_trooper_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper a's $(l:revice/devices/demons_driver_demons_trooper_a)Demons Driver (Trooper a)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_trooper_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

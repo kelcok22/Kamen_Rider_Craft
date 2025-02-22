@@ -1,0 +1,19 @@
+{
+	"name": "Deadman Stamp",
+	"icon": "kamenridercraft:deadman_stamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 80,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deadman_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

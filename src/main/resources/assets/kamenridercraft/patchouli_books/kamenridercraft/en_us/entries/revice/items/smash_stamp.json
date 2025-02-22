@@ -1,0 +1,19 @@
+{
+	"name": "Smash Stamp",
+	"icon": "kamenridercraft:smash_stamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 84,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smash_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

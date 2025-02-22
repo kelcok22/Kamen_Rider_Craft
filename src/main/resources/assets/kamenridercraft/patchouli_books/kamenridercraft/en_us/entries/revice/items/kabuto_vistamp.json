@@ -1,0 +1,19 @@
+{
+	"name": "Kabuto Vistamp",
+	"icon": "kamenridercraft:kabuto_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Vail's $(l:revice/devices/vail_driver)Vail Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

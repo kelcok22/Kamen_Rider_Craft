@@ -1,0 +1,19 @@
+{
+	"name": "Volcano Vistamp",
+	"icon": "kamenridercraft:volcano_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#volcano_rex)Volcano Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#volcano_rex)Volcano Rex Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:volcano_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Ptera Vistamp",
+	"icon": "kamenridercraft:ptera_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#ptera)Ptera Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		}
+	]
+}

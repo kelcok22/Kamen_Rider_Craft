@@ -1,0 +1,19 @@
+{
+	"name": "Holy Wing Vistamp",
+	"icon": "kamenridercraft:holy_wing_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Live's $(l:revice/riders/live#holy_live)Holy Live$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_wing_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)"
+		}
+	]
+}

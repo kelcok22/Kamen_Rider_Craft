@@ -1,0 +1,19 @@
+{
+	"name": "Quetzalcoatlus Vistamp",
+	"icon": "kamenridercraft:quetzalcoatlus_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 59,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Used to access Revi's $(l:revice/riders/revi#quetzalcoatlus)Quetzalcoatlus Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
