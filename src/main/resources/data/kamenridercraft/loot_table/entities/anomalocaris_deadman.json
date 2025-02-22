@@ -21,11 +21,6 @@
           },
           {
             "type": "minecraft:item",
-            "name": "kamenridercraft:thunder_gale_vistamp",
-            "weight": 1
-          },
-          {
-            "type": "minecraft:item",
             "name": "kamenridercraft:paranegro",
             "weight": 1
           }
@@ -46,6 +41,28 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:thunder_gale_vistamp"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "attacking_player",
+            "predicate": {
+              "slots": {
+                "container.*": {
+                  "items": "kamenridercraft:rolling_vistamp"
+                }
+              }
+            }
           }
         ]
       }
