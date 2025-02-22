@@ -1,0 +1,20 @@
+{
+	"name": "Nanba's Walking Stick",
+	"icon": "kamenridercraft:nanba_walking_stick",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by Juzaburo Nanba"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nanba_walking_stick",
+			"title": " ",
+			"text": "Item is currently unobtainable",
+			"future_text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		}
+	]
+}
