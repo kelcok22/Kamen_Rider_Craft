@@ -77,11 +77,6 @@ public class VistampBar extends MachineBlock {
                  PROTO_VISTAMP_PLUS.add(Revice_Rider_Items.VOLCANO_VISTAMP.get());
              }
          }
-         if (player.getInventory().countItem(Revice_Rider_Items.ROLLING_VISTAMP.get())!=0){
-             for (int i = 0; i < 20; i++) {
-                 PROTO_VISTAMP_PLUS.add(Revice_Rider_Items.THUNDER_GALE_VISTAMP.get());
-             }
-         }
  			int rand = generator.nextInt(PROTO_VISTAMP_PLUS.size());
  			return PROTO_VISTAMP_PLUS.get(rand);
 
