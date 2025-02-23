@@ -124,6 +124,8 @@ public class ModCommonEvents {
 				return Gavv_Rider_Items.COOKIE.get(rand);
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/doughnut_gochizo")))){
 				return Gavv_Rider_Items.DOUMARU_GOCHIZO.get();
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/tarakomentaiko_gochizo")))){
+				return Gavv_Rider_Items.TARAKOMENTAIKO_GOCHIZO.get();
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/candy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
 				return Gavv_Rider_Items.CANDY.get(rand);
