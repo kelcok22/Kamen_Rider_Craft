@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Dooms Geats",
+	"icon": "kamenridercraft:desire_driver_dooms_geats",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_dooms_geats\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dooms Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver_dooms_geats)Desire Driver (Dooms Geats)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+		}
+	]
+}

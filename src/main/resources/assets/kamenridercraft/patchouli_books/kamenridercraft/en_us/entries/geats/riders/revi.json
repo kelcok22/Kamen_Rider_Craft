@@ -1,0 +1,56 @@
+{
+	"name": "Kamen Rider Revi",
+	"icon": "kamenridercraft:desire_driver_revi",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/revi_rider_core_id)Revi Rider Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Beat Form",
+			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat_propeller",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:propeller_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Beat Armed Propeller",
+			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) in your main hand and the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) in your main hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:revice_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Rex Genome",
+			"text": "Accessed with the $(l:geats/items/revice_driver_raise_buckle)Revice Driver Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Revi",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Revice Driver Buckle Effects:$(li)Speed$(li)Jump Boost"
+		}
+	]
+}

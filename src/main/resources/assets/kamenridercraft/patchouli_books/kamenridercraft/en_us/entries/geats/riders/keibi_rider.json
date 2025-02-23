@@ -1,0 +1,19 @@
+{
+	"name": "Keibi Rider",
+	"icon": "kamenridercraft:desire_driver_keibi_riders",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_keibi_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Keibi Rider",
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Transforms with the $(l:geats/devices/desire_driver_keibi_riders)Desire Driver (Keibi Riders)$(/l)$(br2)Core ID Effects:$(li)Speed"
+		}
+	]
+}

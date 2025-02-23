@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Regad",
+	"icon": "kamenridercraft:zillion_driver",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "regad",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zillion_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sirius_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:geats/items/sirius_card)Sirius Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Regad",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "regad_omega",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zillion_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sirius_card_omega\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:geats/items/sirius_card)Sirius Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Regad Omega",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+		}
+	]
+}

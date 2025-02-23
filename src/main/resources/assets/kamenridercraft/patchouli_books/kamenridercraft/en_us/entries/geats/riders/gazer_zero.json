@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Gazer Zero",
+	"icon": "kamenridercraft:zillion_driver_gazer_zero",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 39,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zillion_driver_gazer_zero\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gazer Zero",
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider Gazer (2024, TTFC special)$(br2)Transforms with the $(l:geats/devices/zillion_driver_gazer_zero)Zillion Driver (Gazer Zero)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+		}
+	]
+}

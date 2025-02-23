@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Da.Paan",
+	"icon": "kamenridercraft:desire_driver_da_paan",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_da_paan\",components:{custom_data:{slot_tex1:\"kamenridercraft:da_paan_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/da_paan_rider_core_id)Da.Paan Rider Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Da.Paan",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)Core ID Effects:$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnum",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_da_paan\",components:{custom_data:{slot_tex1:\"kamenridercraft:da_paan_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Magnum Form",
+			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Da.Paan",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnumbeat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_da_paan\",components:{custom_data:{slot_tex1:\"kamenridercraft:da_paan_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBeat Form",
+			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Da.Paan",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+		}
+	]
+}
