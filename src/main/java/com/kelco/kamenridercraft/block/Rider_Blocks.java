@@ -854,7 +854,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> EVOL_BOSS_BLOCK = registerBlock("evol_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol")).AddToTabList(RiderTabs.RIDER_BLOCK));
-
+	
 
 	public static final DeferredBlock<Block> WOZ_BOSS_BLOCK = registerBlock("woz_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
