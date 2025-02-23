@@ -45,7 +45,7 @@ public class RideBookerItem extends BaseBlasterItem {
 
 	@Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
-		if ((stack.getDamageValue() + amount) <= stack.getMaxDamage()) {
+		if ((stack.getDamageValue() + amount) >= stack.getMaxDamage()) {
 			for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
 				ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
     	        itementity.setDefaultPickUpDelay();
