@@ -749,7 +749,7 @@ public class Decade_Rider_Items {
 			.Override_belt_text("dark_decadriver_belt").AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> RIDE_BOOKER = ITEMS.register("ride_booker",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.DECADE_TAB_ITEM)
+			() -> new RideBookerItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.DECADE_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DIENDRIVER = ITEMS.register("diendriver",
