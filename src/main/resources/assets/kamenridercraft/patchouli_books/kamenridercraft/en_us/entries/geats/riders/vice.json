@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Vice",
+	"icon": "kamenridercraft:desire_driver_vice",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_vice\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/vice_rider_core_id)Vice Rider Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vice",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_vice)Desire Driver (Vice)$(/l)$(br2)Core ID Effects:$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "monster",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_vice\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_rider_core_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Monster Form",
+			"text": "Accessed with the $(l:geats/items/monster_raise_buckle)Monster Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vice",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_vice)Desire Driver (Vice)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Monster Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rex",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_vice\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_rider_core_id\",slot_tex2:\"kamenridercraft:revice_driver_raise_buckle_vice\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Rex Genome",
+			"text": "Accessed with the $(l:geats/items/revice_driver_raise_buckle)Revice Driver Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vice",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_vice)Desire Driver (Vice)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Revice Driver Buckle Effects:$(li)Speed$(li)Jump Boost"
+		}
+	]
+}

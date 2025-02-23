@@ -1,5 +1,9 @@
 package com.kelco.kamenridercraft.item.gotchard;
 
+import java.util.function.Consumer;
+
+import org.jetbrains.annotations.Nullable;
+
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
@@ -21,6 +25,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -42,6 +47,18 @@ public class ValvaradItem extends RiderDriverItem {
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
 		Num_Base_Form_Item=3;
 	}
+
+	@Override
+    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
+		if ((stack.getDamageValue() + amount) >= stack.getMaxDamage() && (entity == null || !entity.hasInfiniteMaterials())) {
+			for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
+				ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
+    	        itementity.setDefaultPickUpDelay();
+    	        entity.level().addFreshEntity(itementity);
+			}
+		}
+        return amount;
+    }
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {

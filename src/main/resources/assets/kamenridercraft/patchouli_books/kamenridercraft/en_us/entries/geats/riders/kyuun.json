@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Kyuun",
+	"icon": "kamenridercraft:raise_riser_belt_kyuun",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_kyuun\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kyuun",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt_kyuun)Raise Riser Belt (Kyuun)$(/l)$(br2)Status Effects:$(li)Giant II$(li)Speed III$(li)Night Vision$(li)Haste$(li)Flying"
+		}
+	]
+}

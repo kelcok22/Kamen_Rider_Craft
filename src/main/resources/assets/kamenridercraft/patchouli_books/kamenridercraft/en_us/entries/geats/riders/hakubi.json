@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Hakubi",
+	"icon": "kamenridercraft:desire_driver_hakubi",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_hakubi\",components:{custom_data:{slot_tex1:\"kamenridercraft:hakubi_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/hakubi_rider_core_id)Hakubi Rider Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Hakubi",
+			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_hakubi)Desire Driver (Hakubi)$(/l)$(br2)Core ID Effects:$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "claw",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_hakubi\",components:{custom_data:{slot_tex1:\"kamenridercraft:hakubi_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Claw",
+			"text": "Accessed with the $(l:geats/items/claw_raise_buckle)Claw Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Hakubi",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_hakubi)Desire Driver (Hakubi)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Claw Buckle Effects:$(li)Slash$(li)Strength (with sword)"
+		}
+	]
+}

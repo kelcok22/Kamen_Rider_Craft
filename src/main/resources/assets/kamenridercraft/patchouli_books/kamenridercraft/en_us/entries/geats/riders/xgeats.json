@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider XGeats",
+	"icon": "kamenridercraft:desire_driver_x_geats",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_x_geats\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider XGeats",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_x_geats)Desire Driver (XGeats)$(/l)$(br2)Status Effects:$(li)Slash V$(li)Speed VII$(li)Luck$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost VI$(li)Boost V$(li)Strength VI"
+		}
+	]
+}
