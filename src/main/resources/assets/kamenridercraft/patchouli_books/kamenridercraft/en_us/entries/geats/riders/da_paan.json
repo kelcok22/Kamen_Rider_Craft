@@ -9,7 +9,7 @@
 			"anchor": "entry",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_da_paan\",components:{custom_data:{slot_tex1:\"kamenridercraft:da_paan_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/da_paan_rider_core_id)Da.Paan Rider Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/da_paan_rider_core_id)Kamen Rider Da.Paan Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Da.Paan",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Da.Paan",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
 		}
 	]
 }

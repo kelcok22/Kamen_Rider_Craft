@@ -1,0 +1,20 @@
+{
+	"name": "Kamen Rider Legend",
+	"icon": "kamenridercraft:legendriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "legend",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legend_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:gotchard/items/legend_ride_chemy_card)Legend Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Legend",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength"
+		}
+	]
+}

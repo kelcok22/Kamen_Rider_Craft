@@ -1,0 +1,56 @@
+{
+	"name": "Valvarad",
+	"icon": "kamenridercraft:valvaradraw_buckle",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "madwheel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) and $(l:gotchard/devices/valvaradraw_buckle)Valvaradraw Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gutsshovel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Gutsshovel Custom",
+			"text": "Accessed with the $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) and $(l:gotchard/devices/valvaradraw_buckle)Valvaradraw Buckle$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength (with weapon)$(li)Speed$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gekiocopter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Gekiocopter Custom",
+			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) and $(l:gotchard/devices/valvaradraw_buckle)Valvaradraw Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost$(li)Flying II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tri_custom",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Tri Custom",
+			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter Ride Chemy Card$(/l) and $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) and $(l:gotchard/devices/valvaradraw_buckle)Valvaradraw Buckle$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength (with weapon)$(li)Speed$(li)Jump Boost$(li)Flying II"
+		}
+	]
+}

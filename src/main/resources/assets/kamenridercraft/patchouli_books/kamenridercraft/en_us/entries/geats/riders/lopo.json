@@ -9,7 +9,7 @@
 			"anchor": "entry",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_lopo\",components:{custom_data:{slot_tex1:\"kamenridercraft:lopo_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/lopo_rider_core_id)Lopo Rider Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/lopo_rider_core_id)Kamen Rider Lopo Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lopo",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed III$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed III$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lopo",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed III$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed III$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -50,7 +50,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lopo",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lopo",
-			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
 		}
 	]
 }

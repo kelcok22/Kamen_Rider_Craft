@@ -1,0 +1,44 @@
+{
+	"name": "Kamen Rider Valvarad",
+	"icon": "kamenridercraft:valvaradriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "valvarad",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:gotchard/items/machwheel_ride_chemy_card)Machwheel$(/l) or $(l:gotchard/items/daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "orochishovel",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gutsshovel_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Orochishovel Custom",
+			"text": "Accessed with the $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel$(/l) or $(l:gotchard/items/jyamatanoorochi_ride_chemy_card)Jyamatanoorochi$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "angecopter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gekiocopter_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Angecopter Custom",
+			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter$(/l) or $(l:gotchard/items/angelead_ride_chemy_card)Angelead$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valvarad",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/valvaradriver)Valvaradriver$(/l)$(br2)Status Effects:$(li)Jump Boost$(li)Strength$(li)Flying II"
+		}
+	]
+}

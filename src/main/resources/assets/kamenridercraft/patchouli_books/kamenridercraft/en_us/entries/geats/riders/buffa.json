@@ -1,0 +1,200 @@
+{
+	"name": "Kamen Rider Buffa",
+	"icon": "kamenridercraft:desire_driver_buffa",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/buffa_rider_core_id)Kamen Rider Buffa Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombie",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Zombie Form",
+			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombieboost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "ZombieBoost Form",
+			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombie_drill",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle\",slot_tex3:\"kamenridercraft:drill_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Zombie Armed Drill",
+			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Drill Buckle Effects:$(li)Drill"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnum",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Magnum Form",
+			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ninja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:ninja_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ninja Form",
+			"text": "Accessed with the $(l:geats/items/ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Beat Form",
+			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:water_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Water",
+			"text": "Accessed with the $(l:geats/items/water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Water Buckle Effects:$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Shield",
+			"text": "Accessed with the $(l:geats/items/shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Shield Buckle Effects:$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_zombie",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:zombie_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Fever Zombie Form",
+			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jyamato",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id_cracked\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Jyamato Form",
+			"text": "Accessed with the $(l:geats/items/buffa_rider_core_id_cracked)Kamen Rider Buffa Core ID (Cracked)$(/l) and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "raisingjyamato",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id_cracked\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "RaisingJyamato Form",
+			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Jet Buckle Effects:$(li)Slash III$(li)Strength III (with sword)$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "command",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id_cracked\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:command_twin_buckle_cannon_l\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Command Form Jet Mode",
+			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Form Effects:$(li)Slash III$(li)Strength II$(li)Strength III (with sword)$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jyamashin",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:jyamashin_wish_card\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:zombie_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Fever Zombie Form (Jyamashin)",
+			"text": "Accessed with the $(l:geats/items/jyamashin_wish_card)Jyamashin Desire Card$(/l), the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand, and the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(li)Resistance III$(li)Jump Boost II$(li)Strength IV$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Resistance V$(li)Jump Boost IV$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "plosion_rage",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:plosion_rage_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Plosion Rage",
+			"text": "Accessed with the $(l:geats/items/plosion_rage_raise_buckle)Plosion Rage Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Plosion Rage Effects:$(li)Speed III$(li)Resistance IV$(li)Jump Boost II$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ouja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_buffa\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_rider_core_id\",slot_tex2:\"kamenridercraft:ouja_v_buckle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ouja Form",
+			"text": "Accessed with the $(l:geats/items/ouja_v_buckle_raise_buckle)V Buckle Buckle (Ouja)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Buffa",
+			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Transforms with the $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)V Buckle Buckle Effects:$(li)Speed$(li)Strength III"
+		}
+	]
+}
