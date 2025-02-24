@@ -253,7 +253,9 @@ public class Gavv_Rider_Items {
 					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TIROLCHOCOLATE_GOCHIZO_VARIETY = ITEMS.register("tirolchocolate_gochizo_variety",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tirolchocolate","valen","valenbuckle_belt")
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tirolchocolate","valen","valenbuckle_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
 					.AddToList(CHOCO,2).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> STRAWBERRYJELLYTIROL_GOCHIZO = ITEMS.register("strawberryjellytirol_gochizo",
@@ -282,7 +284,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> MERRYCHRISTMAS_GOCHIZO = ITEMS.register("merrychristmas_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_merrychristmas","do_not_work","valenbuckle_belt")
-					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+					.AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> KAMENRIDERGUMMY_GOCHIZO = ITEMS.register("kamenridergummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kamenridergummy","do_not_work","valenbuckle_belt")
