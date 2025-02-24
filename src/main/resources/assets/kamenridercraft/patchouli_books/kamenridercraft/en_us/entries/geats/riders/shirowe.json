@@ -9,7 +9,7 @@
 			"anchor": "entry",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_shirowe\",components:{custom_data:{slot_tex1:\"kamenridercraft:shirowe_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/shirowe_rider_core_id)Shirowe Rider Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/shirowe_rider_core_id)Kamen Rider Shirowe Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Shirowe",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_shirowe)Desire Driver (Shirowe)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Arrow Buckle Effects:$(li)Explosive Shot"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_shirowe)Desire Driver (Shirowe)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Arrow Buckle Effects:$(li)Explosive Shot"
 		}
 	]
 }

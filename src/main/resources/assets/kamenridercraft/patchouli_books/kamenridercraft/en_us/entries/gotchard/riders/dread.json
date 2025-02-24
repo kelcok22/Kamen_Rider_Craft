@@ -1,0 +1,20 @@
+{
+	"name": "Kamen Rider Dread",
+	"icon": "kamenridercraft:dreadriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_zero",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:steamliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Type Zero",
+			"text": "Accessed with the $(l:gotchard/items/steamliner_repli_chemy_card)Steamliner Replichemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Dread",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/dreadriver)Dreadriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost$(li)Strength II"
+		}
+	]
+}

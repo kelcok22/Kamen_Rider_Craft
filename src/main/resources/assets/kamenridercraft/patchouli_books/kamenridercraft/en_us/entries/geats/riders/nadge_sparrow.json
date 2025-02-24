@@ -9,7 +9,7 @@
 			"anchor": "entry",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_nudge_sparrow\",components:{custom_data:{slot_tex1:\"kamenridercraft:nudge_sparrow_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/nudge_sparrow_rider_core_id)Nadge-Sparrow Rider Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/nudge_sparrow_rider_core_id)Kamen Rider Nadge-Sparrow Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nadge-Sparrow",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Monster Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Monster Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nadge-Sparrow",
-			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)This form can be used by any Desire Driver user except $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Arrow Buckle Effects:$(li)Explosive Shot"
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Night Vision$(br2)Arrow Buckle Effects:$(li)Explosive Shot"
 		}
 	]
 }

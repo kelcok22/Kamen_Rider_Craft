@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Majade",
+	"icon": "kamenridercraft:alchemisdriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "sununicorn",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_sun_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Sununicorn",
+			"text": "Accessed with the $(l:gotchard/items/unicon_ride_chemy_card)Unicon$(/l) or $(l:gotchard/items/the_sun_ride_chemy_card)The Sun$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Majade",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/alchemisdriver)Alchemisdriver (Majade)$(/l)$(br2)Status Effects:$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mooncerberus",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:neminemoon_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Mooncerberus",
+			"text": "Accessed with the $(l:gotchard/items/yoacerberus_ride_chemy_card)Yoacerberus$(/l) or $(l:gotchard/items/neminemoon_ride_chemy_card)Neminemoon$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Majade",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/alchemisdriver)Alchemisdriver (Majade)$(/l)$(br2)Status Effects:$(li)Jump Boost"
+		}
+	]
+}

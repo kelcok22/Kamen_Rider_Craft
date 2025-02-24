@@ -1,0 +1,692 @@
+{
+	"name": "Kamen Rider Geats",
+	"icon": "kamenridercraft:desire_driver_geats",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Entry Form",
+			"text": "Accessed with the $(l:geats/items/geats_rider_core_id)Kamen Rider Geats Core ID$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnum",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Magnum Form",
+			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnumboost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBoost Form",
+			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombie",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Zombie Form",
+			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ninja",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ninja_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ninja Form",
+			"text": "Accessed with the $(l:geats/items/ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Beat Form",
+			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Beat Raise Buckle (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arrow",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:arrow_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Arrow",
+			"text": "Accessed with the $(l:geats/items/arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Arrow Buckle Effects:$(li)Explosive Shot"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:water_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Water",
+			"text": "Accessed with the $(l:geats/items/water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Water Buckle Effects:$(li)Water Breathing"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hammer",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Hammer",
+			"text": "Accessed with the $(l:geats/items/hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Shield",
+			"text": "Accessed with the $(l:geats/items/shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Shield Buckle Effects:$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "claw",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Claw",
+			"text": "Accessed with the $(l:geats/items/claw_raise_buckle)Claw Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Chain Array & Claw Raise Buckle Set (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Claw Buckle Effects:$(li)Slash$(li)Strength (with sword)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drill",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:drill_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Drill",
+			"text": "Accessed with the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Drill Buckle Effects:$(li)Drill"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "propeller",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Armed Propeller",
+			"text": "Accessed with the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_boost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Fever Boost Form",
+			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Speed$(br2)Boost Form Effects:$(li)Speed III$(li)Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_magnum",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle_fever\",slot_tex3:\"kamenridercraft:magnum_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Fever Magnum Form",
+			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Speed$(br2)Magnum Form Effects:$(li)Speed III$(li)Flame Shot III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "raising",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Raising Form",
+			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Command Jet Buckle Effects:$(li)Slash III$(li)Strength III (with sword)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "command_cannon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_cannon\",slot_tex3:\"kamenridercraft:command_twin_buckle_jet\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Command Form Cannon Mode",
+			"text": "Accessed with the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Command Form Effects:$(li)Slash III$(li)Strength III$(li)Speed IV$(li)Resistance IV$(li)Haste III$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "command_jet",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:command_twin_buckle_cannon_l\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Command Form Jet Mode",
+			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Command Form Effects:$(li)Slash III$(li)Strength II$(li)Strength III (with sword)$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost_mkii",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkii_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Boost Form MarkII",
+			"text": "Accessed with the $(l:geats/items/boost_mkii_raise_buckle)Boost MarkII Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkII Buckle Effects:$(li)Speed V$(li)Hunger III$(li)Resistance IV$(li)Haste III$(li)Fire Fist IV$(li)Jump Boost IV$(li)Boost III$(li)Fire Resistance$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "laserboost",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:unite_grip\",slot_tex3:\"kamenridercraft:boost_mkii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "LaserBoost Form",
+			"text": "Accessed with the $(l:geats/items/boost_mkii_raise_buckle)Boost MarkII Buckle$(/l) and the $(l:geats/items/unite_grip)Unite Grip$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)LaserBoost Form Effects:$(li)Speed V$(li)Hunger III$(li)Resistance IV$(li)Haste III$(li)Fire Fist IV$(li)Flame Shot IV$(li)Jump Boost IV$(li)Boost III$(li)Fire Resistance$(li)Strength V$(li)Flying IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost_mkiii",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Boost Form MarkIII",
+			"text": "Accessed with the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkIII Buckle Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "geatsix",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "GeatsIX",
+			"text": "Accessed with the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in both hands"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkIII Buckle Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "oneness",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:oneness_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Geats Oneness",
+			"text": "Accessed with the $(l:geats/items/oneness_raise_buckle)Oneness Buckle$(/l) in your main hand and the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in your off-hand while having the $(l:geats/items/geats_oneness_rider_core_id)Kamen Rider Geats Oneness Core ID$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Oneness Buckle Effects:$(li)Speed VIII$(li)Luck II$(li)Anti Poison$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Slow Falling$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shark",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:shark_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Shark Form",
+			"text": "Accessed with the $(l:geats/items/shark_raise_buckle)Shark Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Televi Magazine (May 2023, magazine)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Shark Buckle Effects:$(li)Fish! V$(li)Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "osaka",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_osaka\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBoost Form",
+			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_osaka)Kamen Rider Osaka Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Osaka Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(li)Saturation$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fukuoka",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_fukuoka\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBoost Form",
+			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_fukuoka)Kamen Rider Fukuoka Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Fukuoka Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(li)Saturation$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nagoya",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_nagoya\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBoost Form",
+			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_nagoya)Kamen Rider Nagoya Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Nagoya Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(li)Saturation$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tokyo",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_tokyo\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "MagnumBoost Form",
+			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_tokyo)Kamen Rider Tokyo Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Tokyo Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Core ID Effects:$(li)Speed$(li)Saturation$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Boost Buckle Effects:$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost_revice",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle\",slot_tex3:\"kamenridercraft:revice_driver_raise_buckle_geats\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "BoostRevice Form",
+			"text": "Accessed with the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your main hand and the $(l:geats/items/revice_driver_raise_buckle)Revice Driver Buckle$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost$(br2)Revice Driver Buckle Effects:$(li)Speed$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "typhoon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:typhoon_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ichigo Form",
+			"text": "Accessed with the $(l:geats/items/typhoon_raise_buckle)Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Typhoon Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_typhoon",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:double_typhoon_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "V3 Form",
+			"text": "Accessed with the $(l:geats/items/double_typhoon_raise_buckle)Double Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Double Typhoon Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)$(li)Resistance II$(li)Speed II$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king_stone",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:king_stone_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Black Form",
+			"text": "Accessed with the $(l:geats/items/king_stone_raise_buckle)Kingstone Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Kingstone Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arcle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:arcle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Kuuga Form",
+			"text": "Accessed with the $(l:geats/items/arcle_raise_buckle)Arcle Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Arcle Buckle (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Arcle Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "altering",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:alter_ring_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Agito Form",
+			"text": "Accessed with the $(l:geats/items/alter_ring_raise_buckle)Altering Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Altering Buckle Effects:$(li)Speed$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "v_buckle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:v_buckle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ryuki Form",
+			"text": "Accessed with the $(l:geats/items/v_buckle_raise_buckle)V Buckle Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)V Buckle Buckle Effects:$(li)Speed$(li)Fire Resistance$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:faiz_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Faiz Form",
+			"text": "Accessed with the $(l:geats/items/faiz_driver_raise_buckle)Faiz Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Faiz Driver Buckle Effects:$(li)Strength II$(li)Resistance$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blay_buckle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:blay_buckle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Blade Form",
+			"text": "Accessed with the $(l:geats/items/blay_buckle_raise_buckle)Blay Buckle Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Blay Buckle Buckle Effects:$(li)Strength II$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ongekiko_kaentsuzumi",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ongekiko_kaentsuzumi_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Hibiki Form",
+			"text": "Accessed with the $(l:geats/items/ongekiko_kaentsuzumi_raise_buckle)Ongekiko Kaentsuzumi Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Ongekiko Kaentsuzumi Buckle Effects:$(li)Strength$(li)Haste II$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto_zecter",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:kabuto_zector_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Kabuto Form",
+			"text": "Accessed with the $(l:geats/items/kabuto_zector_raise_buckle)Kabuto Zecter Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Kabuto Zecter Buckle Effects:$(li)Speed IV$(li)Haste IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o_belt",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:den_o_belt_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Den-O Form",
+			"text": "Accessed with the $(l:geats/items/den_o_belt_raise_buckle)Den-O Belt Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Den-O Belt Buckle (2023, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Den-O Belt Buckle Effects:$(li)Strength II$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kivat_belt",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:kivat_belt_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Kiva Form",
+			"text": "Accessed with the $(l:geats/items/kivat_belt_raise_buckle)Kivat Belt Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Kivat Belt Buckle Effects:$(li)Speed$(li)Strength$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decadriver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:deca_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Decade Form",
+			"text": "Accessed with the $(l:geats/items/deca_driver_raise_buckle)Decadriver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Decadriver Buckle Effects:$(li)Strength II$(li)Resistance$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "doubledriver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:double_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Double Form",
+			"text": "Accessed with the $(l:geats/items/double_driver_raise_buckle)Doubledriver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Doubledriver Buckle Effects:$(li)Speed II$(li)Jump Boost$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ooo_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "OOO Form",
+			"text": "Accessed with the $(l:geats/items/ooo_driver_raise_buckle)OOO Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)OOO Driver Buckle Effects:$(li)Night Vision$(li)Haste II$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:fourze_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Fourze Form",
+			"text": "Accessed with the $(l:geats/items/fourze_driver_raise_buckle)Fourze Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Fourze Driver Buckle Effects:$(li)Strength$(li)Jump Boost II$(li)Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizardriver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:wizardriver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Wizard Form",
+			"text": "Accessed with the $(l:geats/items/wizardriver_raise_buckle)Wizardriver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Wizardriver Buckle Effects:$(li)Speed$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sengoku_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:sengoku_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Gaim Form",
+			"text": "Accessed with the $(l:geats/items/sengoku_driver_raise_buckle)Sengoku Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)GP Raise Buckle 3 (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Sengoku Driver Buckle Effects:$(li)Speed$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:drive_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Drive Form",
+			"text": "Accessed with the $(l:geats/items/drive_driver_raise_buckle)Drive Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Drive Driver Buckle Effects:$(li)Speed II$(li)Haste II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ghost_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ghost Form",
+			"text": "Accessed with the $(l:geats/items/ghost_driver_raise_buckle)Ghost Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Ghost Driver Buckle Effects:$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gamer_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:gamer_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Ex-Aid Form",
+			"text": "Accessed with the $(l:geats/items/gamer_driver_raise_buckle)Gamer Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Gamer Driver Buckle Effects:$(li)Speed$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "build_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:build_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Build Form",
+			"text": "Accessed with the $(l:geats/items/build_driver_raise_buckle)Build Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)DX Build Driver Raise Buckle (2023, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Build Driver Buckle Effects:$(li)Jump Boost III$(li)Speed$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ziku_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zikuu_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Zi-O Form",
+			"text": "Accessed with the $(l:geats/items/zikuu_driver_raise_buckle)Ziku-Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)GP Raise Buckle 2 (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Ziku-Driver Buckle Effects:$(li)Speed II$(li)Haste$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zero_one_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zero_one_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Zero-One Form",
+			"text": "Accessed with the $(l:geats/items/zero_one_driver_raise_buckle)Zero-One Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Zero-One Driver Buckle Effects:$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "seiken_swordriver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:seiken_swordriver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Saber Form",
+			"text": "Accessed with the $(l:geats/items/seiken_swordriver_raise_buckle)Seiken Swordriver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Seiken Swordriver Buckle Effects:$(li)Fire Resistance$(li)Haste"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "two_si_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:two_si_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Live Form",
+			"text": "Accessed with the $(l:geats/items/two_si_driver_raise_buckle)Two Sidriver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Two Sidriver Buckle Effects:$(li)Strength$(li)Speed$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "libera_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:libera_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Jeanne Form",
+			"text": "Accessed with the $(l:geats/items/libera_driver_raise_buckle)Libera Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Libera Driver Buckle Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Haste II$(li)Speed II$(li)Anti Poison"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "demons_driver",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:demons_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"name": "Demons Form",
+			"text": "Accessed with the $(l:geats/items/demons_driver_raise_buckle)Demons Driver Buckle$(/l) (use in your off-hand to switch sides)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Geats",
+			"text": "Appears in:$(li)GP Raise Buckle 1 (2022, toyline)$(br2)Transforms with the $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Demons Driver Buckle Effects:$(li)Poison$(li)Speed II$(li)Strength III$(li)Resistance II"
+		}
+	]
+}

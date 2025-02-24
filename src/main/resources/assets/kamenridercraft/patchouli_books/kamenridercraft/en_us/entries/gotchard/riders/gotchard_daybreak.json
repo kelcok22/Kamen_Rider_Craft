@@ -1,0 +1,32 @@
+{
+	"name": "Kamen Rider Gotchard Daybreak",
+	"icon": "kamenridercraft:gotchardriver_daybreak",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:daybreak_hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Steamhopper",
+			"text": "Accessed with the $(l:gotchard/items/daybreak_hopper1_ride_chemy_card)Daybreak Hopper1$(/l) or $(l:gotchard/items/daybreak_steamliner_ride_chemy_card)Daybreak Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard Daybreak",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost II$(li)Fire Resistance$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter_db\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"name": "Fire Gotchard Daybreak",
+			"text": "Accessed with the $(l:gotchard/items/gotchar_igniter)Gotcharigniter$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard Daybreak",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Fire Fist III$(li)Jump Boost II$(li)Boost V$(li)Fire Resistance$(li)Strength III"
+		}
+	]
+}
