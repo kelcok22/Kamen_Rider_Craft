@@ -1,0 +1,19 @@
+{
+	"name": "PukuPuku Tai Gochizo",
+	"icon": "kamenridercraft:pukupukutai_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv Gavvgavv Campaign (2024, promo contest)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pukupukutai_gochizo",
+			"title": " ",
+			"text": "Obtained by eating cookies with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

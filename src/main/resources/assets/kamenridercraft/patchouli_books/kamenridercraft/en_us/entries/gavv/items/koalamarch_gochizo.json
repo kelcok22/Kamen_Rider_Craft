@@ -1,0 +1,19 @@
+{
+	"name": "Koala March Gochizo",
+	"icon": "kamenridercraft:koalamarch_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv Gavvgavv Campaign (2024, promo contest)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:koalamarch_gochizo",
+			"title": " ",
+			"text": "Obtained by eating cookies with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

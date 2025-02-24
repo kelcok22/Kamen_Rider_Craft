@@ -1,0 +1,19 @@
+{
+	"name": "Tarako Mentaiko Gochizo",
+	"icon": "kamenridercraft:tarakomentaiko_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv Gavvgavv Campaign (2024, promo contest)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tarakomentaiko_gochizo",
+			"title": " ",
+			"text": "Obtained by eating raw cod with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

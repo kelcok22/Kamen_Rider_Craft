@@ -1,0 +1,19 @@
+{
+	"name": "Caramelmel Gochizo",
+	"icon": "kamenridercraft:caramelmel_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Caramelmel Gochizo (2024, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caramelmel_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}
