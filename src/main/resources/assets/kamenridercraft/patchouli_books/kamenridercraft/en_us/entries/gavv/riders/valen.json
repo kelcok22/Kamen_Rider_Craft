@@ -39,6 +39,18 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Valen",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) and $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tirol",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"name": "Tirol Form",
+			"text": "Accessed with the $(l:gavv/items/tirolchocolate_gochizo_variety)Tirol Chocolate Gochizo (Variety Pack ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valen",
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Transforms with the $(l:gavv/arsenal/valenbuster)Valenbuster$(/l) and $(l:gavv/devices/valenbuckle)Valenbuckle$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
 		}
 	]
 }

@@ -1,0 +1,19 @@
+{
+	"name": "Bubble Ramune Gochizo (Peach ver.)",
+	"icon": "kamenridercraft:bubbleramune_gochizo_peach",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 03 (2024, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bubbleramune_gochizo_peach",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}

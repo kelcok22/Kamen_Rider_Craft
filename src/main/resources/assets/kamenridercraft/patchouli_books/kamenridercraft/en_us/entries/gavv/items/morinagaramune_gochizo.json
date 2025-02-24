@@ -1,0 +1,19 @@
+{
+	"name": "Morinaga Ramune Gochizo",
+	"icon": "kamenridercraft:morinagaramune_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv Gavvgavv Campaign (2024, promo contest)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:morinagaramune_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		}
+	]
+}
