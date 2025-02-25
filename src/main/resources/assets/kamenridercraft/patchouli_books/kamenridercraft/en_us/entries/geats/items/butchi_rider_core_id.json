@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Butchi Core ID",
+	"icon": "kamenridercraft:butchi_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used to craft Butchi's $(l:geats/devices/desire_driver_butchi)Desire Driver (Butchi)$(/l)$(br2)Used to revert $(l:geats/riders/butchi)Kamen Rider Butchi$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:butchi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

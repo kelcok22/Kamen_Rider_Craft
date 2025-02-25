@@ -2,7 +2,7 @@
 	"name": "Beat Buckle",
 	"icon": "kamenridercraft:beat_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 45,
+	"sortnum": 46,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Boost Buckle",
 	"icon": "kamenridercraft:boost_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 41,
+	"sortnum": 42,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Command Cannon Buckle",
 	"icon": "kamenridercraft:command_twin_buckle_cannon",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 51,
+	"sortnum": 52,
 	"pages": [
 		{
 			"type": "patchouli:text",

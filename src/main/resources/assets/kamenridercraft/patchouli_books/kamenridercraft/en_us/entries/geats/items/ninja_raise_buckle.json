@@ -2,7 +2,7 @@
 	"name": "Ninja Buckle",
 	"icon": "kamenridercraft:ninja_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 43,
+	"sortnum": 44,
 	"pages": [
 		{
 			"type": "patchouli:text",

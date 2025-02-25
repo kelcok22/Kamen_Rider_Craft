@@ -2,7 +2,7 @@
 	"name": "Powered Builder Buckle",
 	"icon": "kamenridercraft:powered_builder_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 46,
+	"sortnum": 47,
 	"pages": [
 		{
 			"type": "patchouli:text",

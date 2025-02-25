@@ -2,7 +2,7 @@
 	"name": "Monster Buckle",
 	"icon": "kamenridercraft:monster_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 44,
+	"sortnum": 45,
 	"pages": [
 		{
 			"type": "patchouli:text",

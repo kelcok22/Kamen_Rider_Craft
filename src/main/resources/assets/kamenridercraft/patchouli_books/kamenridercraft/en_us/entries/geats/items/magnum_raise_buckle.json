@@ -2,7 +2,7 @@
 	"name": "Magnum Buckle",
 	"icon": "kamenridercraft:magnum_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 40,
+	"sortnum": 41,
 	"pages": [
 		{
 			"type": "patchouli:text",

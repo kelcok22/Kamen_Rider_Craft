@@ -2,7 +2,7 @@
 	"name": "Fantasy Buckle",
 	"icon": "kamenridercraft:fantasy_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 47,
+	"sortnum": 48,
 	"pages": [
 		{
 			"type": "patchouli:text",

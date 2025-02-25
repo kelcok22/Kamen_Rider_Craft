@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Garun Core ID",
 	"icon": "kamenridercraft:garun_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 34,
+	"sortnum": 35,
 	"pages": [
 		{
 			"type": "patchouli:text",

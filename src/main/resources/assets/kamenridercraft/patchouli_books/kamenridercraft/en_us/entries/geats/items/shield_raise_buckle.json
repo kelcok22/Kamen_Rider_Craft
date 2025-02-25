@@ -2,7 +2,7 @@
 	"name": "Shield Buckle",
 	"icon": "kamenridercraft:shield_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 64,
+	"sortnum": 65,
 	"pages": [
 		{
 			"type": "patchouli:text",

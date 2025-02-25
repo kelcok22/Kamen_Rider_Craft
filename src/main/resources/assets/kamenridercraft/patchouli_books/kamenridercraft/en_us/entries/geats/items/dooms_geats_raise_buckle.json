@@ -2,7 +2,7 @@
 	"name": "Dooms Geats Raise Buckle",
 	"icon": "kamenridercraft:dooms_geats_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 57,
+	"sortnum": 58,
 	"pages": [
 		{
 			"type": "patchouli:text",

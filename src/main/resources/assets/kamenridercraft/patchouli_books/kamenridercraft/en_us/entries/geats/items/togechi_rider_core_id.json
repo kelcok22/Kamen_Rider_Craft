@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Togetchi Core ID",
 	"icon": "kamenridercraft:togechi_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 32,
+	"sortnum": 33,
 	"pages": [
 		{
 			"type": "patchouli:text",

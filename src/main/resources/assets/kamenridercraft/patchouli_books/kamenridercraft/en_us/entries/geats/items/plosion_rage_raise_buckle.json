@@ -2,7 +2,7 @@
 	"name": "Plosion Rage Buckle",
 	"icon": "kamenridercraft:plosion_rage_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 59,
+	"sortnum": 60,
 	"pages": [
 		{
 			"type": "patchouli:text",

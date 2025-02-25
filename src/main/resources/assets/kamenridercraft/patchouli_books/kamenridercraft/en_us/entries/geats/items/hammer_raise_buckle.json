@@ -2,7 +2,7 @@
 	"name": "Hammer Buckle",
 	"icon": "kamenridercraft:hammer_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 63,
+	"sortnum": 64,
 	"pages": [
 		{
 			"type": "patchouli:text",
