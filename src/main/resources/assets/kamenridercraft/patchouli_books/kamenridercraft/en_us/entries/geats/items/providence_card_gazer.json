@@ -1,0 +1,19 @@
+{
+	"name": "Providence Card (Gazer)",
+	"icon": "kamenridercraft:providence_card_gazer",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 121,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Gazer's $(l:geats/devices/vision_driver_gazer)Vision Driver (Gazer)$(/l)$(br2)Used to craft Suel Gazer's $(l:geats/devices/vision_driver_gazer_suel)Vision Driver (Suel Gazer)$(/l)$(br2)Used to craft Jyamato Gazer's $(l:geats/devices/vision_driver_jyamato_glare)Vision Driver (Jyamato Gazer)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:providence_card_gazer",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

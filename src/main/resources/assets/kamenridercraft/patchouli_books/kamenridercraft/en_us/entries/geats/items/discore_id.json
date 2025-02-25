@@ -1,0 +1,19 @@
+{
+	"name": "DisCore ID",
+	"icon": "kamenridercraft:discore_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft a Jyamato Rider's $(l:geats/devices/desire_driver_jyamato)Desire Driver (Jyamato)$(/l)$(br2)Used to revert a $(l:geats/riders/jyamato_rider)Jyamato Rider$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:discore_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		}
+	]
+}

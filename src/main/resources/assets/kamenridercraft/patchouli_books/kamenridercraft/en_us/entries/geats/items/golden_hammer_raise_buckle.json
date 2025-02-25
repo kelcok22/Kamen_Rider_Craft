@@ -1,0 +1,19 @@
+{
+	"name": "Hammer Buckle (Gold Plating ver)",
+	"icon": "kamenridercraft:golden_hammer_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 79,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Hammer Raise Buckle (Gold Plated Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golden_hammer_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		}
+	]
+}

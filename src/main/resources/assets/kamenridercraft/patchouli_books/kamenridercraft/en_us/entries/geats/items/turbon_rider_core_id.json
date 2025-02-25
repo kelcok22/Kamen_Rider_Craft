@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Turbon Core ID",
+	"icon": "kamenridercraft:turbon_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Turbon's $(l:geats/devices/desire_driver_turbon)Desire Driver (Turbon)$(/l)$(br2)Used to revert $(l:geats/riders/turbon)Kamen Rider Turbon$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turbon_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

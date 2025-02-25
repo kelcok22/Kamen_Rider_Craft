@@ -1,0 +1,19 @@
+{
+	"name": "Hatena Mission Box",
+	"icon": "kamenridercraft:hatena_mission_box",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Raise Buckle when right-clicked"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hatena_mission_box",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		}
+	]
+}

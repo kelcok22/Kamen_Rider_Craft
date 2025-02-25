@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by $(l:gotchard/riders/valvarad)Valvarad$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by $(l:gotchard/riders/valvarad)Valvarad$(/l)$(br2)Used to obtain Valvarad's $(l:gotchard/devices/valvaradraw_buckle)Valvaradraw Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -1,0 +1,19 @@
+{
+	"name": "Arrow Buckle (Silver Plating ver)",
+	"icon": "kamenridercraft:silver_arrow_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 79,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Arrow Raise Buckle (Silver Plated Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_arrow_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Geats Oneness Core ID",
+	"icon": "kamenridercraft:geats_oneness_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to access Geats's $(l:geats/riders/geats#oneness)Oneness$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_oneness_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

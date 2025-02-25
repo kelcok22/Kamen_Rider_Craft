@@ -1,0 +1,19 @@
+{
+	"name": "Gigant Sword Buckle",
+	"icon": "kamenridercraft:gigant_sword_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 71,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_sword_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Black Raise Riser Card (Beroba)",
+	"icon": "kamenridercraft:beroba_black_raise_riser_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 116,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Beroba's $(l:geats/riders/beroba#premium)Premium Beroba$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_black_raise_riser_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

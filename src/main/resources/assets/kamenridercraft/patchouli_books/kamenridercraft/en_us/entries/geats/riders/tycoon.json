@@ -122,7 +122,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Tycoon",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_tycoon)Desire Driver (Tycoon)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Luck$(br2)Ninja Form Effects:$(li)Speed V$(li)Luck III$(li)Haste IV$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_tycoon)Desire Driver (Tycoon)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Luck$(br2)Ninja Form Effects:$(li)Speed V$(li)Luck III$(li)Haste IV$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",

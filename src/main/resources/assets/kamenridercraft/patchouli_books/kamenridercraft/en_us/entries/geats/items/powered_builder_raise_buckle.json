@@ -1,0 +1,19 @@
+{
+	"name": "Powered Builder Buckle",
+	"icon": "kamenridercraft:powered_builder_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to access a Desire Driver user's $(l:geats/riders/seeker#powered_builder)Powered Builder$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:powered_builder_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		}
+	]
+}

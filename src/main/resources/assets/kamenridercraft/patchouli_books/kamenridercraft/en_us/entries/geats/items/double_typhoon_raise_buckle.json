@@ -1,0 +1,16 @@
+{
+	"name": "Double Typhoon Buckle",
+	"icon": "kamenridercraft:double_typhoon_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 110,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#double_typhoon)V3$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/double_typhoon_raise_buckle"
+		}
+	]
+}

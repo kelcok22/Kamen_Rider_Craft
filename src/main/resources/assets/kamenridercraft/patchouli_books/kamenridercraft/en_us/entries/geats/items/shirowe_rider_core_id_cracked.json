@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Shirowe Core ID (Cracked)",
+	"icon": "kamenridercraft:shirowe_rider_core_id_cracked",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 38,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirowe_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		}
+	]
+}

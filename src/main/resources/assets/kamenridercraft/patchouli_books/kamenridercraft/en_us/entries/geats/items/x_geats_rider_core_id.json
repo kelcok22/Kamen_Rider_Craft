@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider XGeats Core ID",
+	"icon": "kamenridercraft:x_geats_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to craft XGeats's $(l:geats/devices/desire_driver_x_geats)Desire Driver (XGeats)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
