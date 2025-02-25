@@ -1,0 +1,19 @@
+{
+	"name": "BeetlX Ride Chemy Card",
+	"icon": "kamenridercraft:beetlx_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beetlx_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

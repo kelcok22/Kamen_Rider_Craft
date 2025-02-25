@@ -1,0 +1,19 @@
+{
+	"name": "Daybreak Steamliner Ride Chemy Card",
+	"icon": "kamenridercraft:daybreak_steamliner_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard Daybreak's $(l:gotchard/devices/gotchardriver_daybreak)Gotchardriver (Daybreak Ver.)$(/l)$(br2)Used to access Gotchard Daybreak's $(l:gotchard/riders/gotchard_daybreak#steamhopper)Steamhopper$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daybreak_steamliner_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

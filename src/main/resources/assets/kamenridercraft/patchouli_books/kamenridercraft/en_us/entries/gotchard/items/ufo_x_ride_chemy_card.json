@@ -1,0 +1,19 @@
+{
+	"name": "UFO-X Ride Chemy Card",
+	"icon": "kamenridercraft:ufo_x_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 34,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_ufo_x)Super Gotchard Cross UFO-X$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ufo_x_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

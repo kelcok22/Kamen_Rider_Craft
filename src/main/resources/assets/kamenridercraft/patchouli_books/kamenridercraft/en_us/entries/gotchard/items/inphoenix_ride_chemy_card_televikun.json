@@ -1,0 +1,19 @@
+{
+	"name": "Inphoenix Ride Chemy Card (Televi-Kun ver.)",
+	"icon": "kamenridercraft:inphoenix_ride_chemy_card_televikun",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:inphoenix_ride_chemy_card_televikun",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

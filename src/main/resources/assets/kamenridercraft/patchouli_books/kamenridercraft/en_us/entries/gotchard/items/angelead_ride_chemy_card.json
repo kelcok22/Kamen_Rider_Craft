@@ -1,0 +1,19 @@
+{
+	"name": "Angelead Ride Chemy Card",
+	"icon": "kamenridercraft:angelead_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#angecopter)Angecopter Custom$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:angelead_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Skebows Ride Chemy Card",
+	"icon": "kamenridercraft:skebows_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#appareskebow)Appareskebow$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skebows_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
