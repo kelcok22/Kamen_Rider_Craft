@@ -2,7 +2,7 @@
 	"name": "Feverslot Buckle",
 	"icon": "kamenridercraft:fever_slot_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 49,
+	"sortnum": 50,
 	"pages": [
 		{
 			"type": "patchouli:text",

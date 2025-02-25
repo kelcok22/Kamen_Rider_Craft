@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Chuta Core ID",
 	"icon": "kamenridercraft:chuta_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 27,
+	"sortnum": 28,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Dooms Geats Core ID",
 	"icon": "kamenridercraft:dooms_geats_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 30,
+	"sortnum": 31,
 	"pages": [
 		{
 			"type": "patchouli:text",

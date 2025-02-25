@@ -2,7 +2,7 @@
 	"name": "Shark Buckle",
 	"icon": "kamenridercraft:shark_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 48,
+	"sortnum": 49,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Water Buckle",
 	"icon": "kamenridercraft:water_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 62,
+	"sortnum": 63,
 	"pages": [
 		{
 			"type": "patchouli:text",

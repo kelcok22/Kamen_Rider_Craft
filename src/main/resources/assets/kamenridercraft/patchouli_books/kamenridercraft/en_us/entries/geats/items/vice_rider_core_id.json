@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Vice Core ID",
 	"icon": "kamenridercraft:vice_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 26,
+	"sortnum": 27,
 	"pages": [
 		{
 			"type": "patchouli:text",

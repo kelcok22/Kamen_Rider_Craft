@@ -2,7 +2,7 @@
 	"name": "Unite Grip",
 	"icon": "kamenridercraft:unite_grip",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 53,
+	"sortnum": 54,
 	"pages": [
 		{
 			"type": "patchouli:text",

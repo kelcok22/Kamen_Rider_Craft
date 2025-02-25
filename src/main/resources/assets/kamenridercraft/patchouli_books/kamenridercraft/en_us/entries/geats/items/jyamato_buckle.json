@@ -2,7 +2,7 @@
 	"name": "Jyamato Buckle",
 	"icon": "kamenridercraft:jyamato_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 60,
+	"sortnum": 61,
 	"pages": [
 		{
 			"type": "patchouli:text",

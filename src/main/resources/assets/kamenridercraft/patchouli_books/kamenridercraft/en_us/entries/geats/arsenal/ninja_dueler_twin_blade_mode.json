@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:geats/ninja_dueler_twin_blade_mode"
+			"recipe": "kamenridercraft:geats/ninja_dueler"
 		}
 	]
 }

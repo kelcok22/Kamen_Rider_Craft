@@ -2,7 +2,7 @@
 	"name": "Oneness Buckle",
 	"icon": "kamenridercraft:oneness_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 55,
+	"sortnum": 56,
 	"pages": [
 		{
 			"type": "patchouli:text",

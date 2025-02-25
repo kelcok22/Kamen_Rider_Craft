@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Gessy Core ID",
 	"icon": "kamenridercraft:gesshi_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 28,
+	"sortnum": 29,
 	"pages": [
 		{
 			"type": "patchouli:text",

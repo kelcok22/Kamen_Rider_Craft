@@ -2,7 +2,7 @@
 	"name": "Kamen Rider XGeats Core ID",
 	"icon": "kamenridercraft:x_geats_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 29,
+	"sortnum": 30,
 	"pages": [
 		{
 			"type": "patchouli:text",

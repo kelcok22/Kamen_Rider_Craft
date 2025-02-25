@@ -2,7 +2,7 @@
 	"name": "Boost MarkII Buckle",
 	"icon": "kamenridercraft:boost_mkii_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 52,
+	"sortnum": 53,
 	"pages": [
 		{
 			"type": "patchouli:text",

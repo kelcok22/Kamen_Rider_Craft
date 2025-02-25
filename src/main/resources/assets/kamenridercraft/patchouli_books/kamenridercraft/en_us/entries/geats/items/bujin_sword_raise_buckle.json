@@ -2,7 +2,7 @@
 	"name": "Bujin Sword Buckle",
 	"icon": "kamenridercraft:bujin_sword_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 58,
+	"sortnum": 59,
 	"pages": [
 		{
 			"type": "patchouli:text",

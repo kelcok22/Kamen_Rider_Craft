@@ -2,7 +2,7 @@
 	"name": "Command Jet Buckle",
 	"icon": "kamenridercraft:command_twin_buckle_jet",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 50,
+	"sortnum": 51,
 	"pages": [
 		{
 			"type": "patchouli:text",

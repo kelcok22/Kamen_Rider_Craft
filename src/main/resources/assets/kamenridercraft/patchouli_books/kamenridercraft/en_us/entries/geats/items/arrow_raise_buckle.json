@@ -2,7 +2,7 @@
 	"name": "Arrow Buckle",
 	"icon": "kamenridercraft:arrow_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 61,
+	"sortnum": 62,
 	"pages": [
 		{
 			"type": "patchouli:text",

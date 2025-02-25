@@ -2,7 +2,7 @@
 	"name": "XGeats Raise Buckle",
 	"icon": "kamenridercraft:x_geats_raise_buckle",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 56,
+	"sortnum": 57,
 	"pages": [
 		{
 			"type": "patchouli:text",

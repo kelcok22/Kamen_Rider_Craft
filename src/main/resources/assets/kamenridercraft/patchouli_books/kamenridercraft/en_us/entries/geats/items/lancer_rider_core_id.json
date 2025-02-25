@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Lancer Core ID",
 	"icon": "kamenridercraft:lancer_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 33,
+	"sortnum": 34,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "DisCore ID",
 	"icon": "kamenridercraft:discore_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 31,
+	"sortnum": 32,
 	"pages": [
 		{
 			"type": "patchouli:text",
