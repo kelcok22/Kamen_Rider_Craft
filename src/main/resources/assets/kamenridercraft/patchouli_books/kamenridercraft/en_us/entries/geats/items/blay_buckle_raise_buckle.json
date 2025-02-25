@@ -1,0 +1,16 @@
+{
+	"name": "Blay Buckle Buckle",
+	"icon": "kamenridercraft:blay_buckle_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 104,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#blay_buckle)Blade$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/blay_buckle_raise_buckle"
+		}
+	]
+}

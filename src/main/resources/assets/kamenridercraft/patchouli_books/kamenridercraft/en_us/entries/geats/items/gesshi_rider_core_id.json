@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Gessy Core ID",
+	"icon": "kamenridercraft:gesshi_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft a GM Rider's $(l:geats/devices/desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)Used to revert Glare2's $(l:geats/riders/gm_rider_chirami)GM Riders$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gesshi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		}
+	]
+}

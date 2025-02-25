@@ -1,0 +1,19 @@
+{
+	"name": "Ninja Dueler Buckle",
+	"icon": "kamenridercraft:ninja_dueler_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 75,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Support Mission Box Type Geats & DX Weapon Raise Buckle Set (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_dueler_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		}
+	]
+}

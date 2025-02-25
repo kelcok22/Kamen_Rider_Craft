@@ -1,0 +1,16 @@
+{
+	"name": "Zero-One Driver Buckle",
+	"icon": "kamenridercraft:zero_one_driver_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 88,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#zero_one_driver)Zero-One$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/zero_one_driver_raise_buckle"
+		}
+	]
+}

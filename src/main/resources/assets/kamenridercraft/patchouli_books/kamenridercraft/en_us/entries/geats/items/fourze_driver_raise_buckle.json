@@ -1,0 +1,16 @@
+{
+	"name": "Fourze Driver Buckle",
+	"icon": "kamenridercraft:fourze_driver_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 96,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#fourze_driver)Fourze$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/fourze_driver_raise_buckle"
+		}
+	]
+}

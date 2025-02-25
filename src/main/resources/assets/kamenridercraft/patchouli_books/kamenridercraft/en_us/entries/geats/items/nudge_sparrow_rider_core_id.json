@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Nadge-Sparrow Core ID",
+	"icon": "kamenridercraft:nudge_sparrow_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Nadge-Sparrow's $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)Used to revert $(l:geats/riders/nudge_sparrow)Kamen Rider Nadge-Sparrow$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nudge_sparrow_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

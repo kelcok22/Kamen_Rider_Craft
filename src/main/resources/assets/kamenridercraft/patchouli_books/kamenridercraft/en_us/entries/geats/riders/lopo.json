@@ -50,7 +50,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Lopo",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any DGP player Rider$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost Buckle Effects:$(li)Boost"
 		},
 		{
 			"type": "patchouli:entity",

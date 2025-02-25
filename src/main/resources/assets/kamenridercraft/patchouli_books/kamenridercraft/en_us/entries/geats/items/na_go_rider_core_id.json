@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Na-Go Core ID",
+	"icon": "kamenridercraft:na_go_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Na-Go's $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)Used to revert $(l:geats/riders/na_go)Kamen Rider Na-Go$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:na_go_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

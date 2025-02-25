@@ -1,0 +1,19 @@
+{
+	"name": "XGeats Raise Buckle",
+	"icon": "kamenridercraft:x_geats_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

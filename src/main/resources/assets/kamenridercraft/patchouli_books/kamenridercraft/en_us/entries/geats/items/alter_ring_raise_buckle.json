@@ -1,0 +1,16 @@
+{
+	"name": "Altering Buckle",
+	"icon": "kamenridercraft:alter_ring_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 107,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#altering)Agito$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/alter_ring_raise_buckle"
+		}
+	]
+}

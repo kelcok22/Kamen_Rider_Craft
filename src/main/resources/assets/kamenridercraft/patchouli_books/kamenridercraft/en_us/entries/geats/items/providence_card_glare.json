@@ -1,0 +1,19 @@
+{
+	"name": "Providence Card (Glare)",
+	"icon": "kamenridercraft:providence_card_glare",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 120,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Glare's $(l:geats/devices/vision_driver_glare)Vision Driver (Glare)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:providence_card_glare",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

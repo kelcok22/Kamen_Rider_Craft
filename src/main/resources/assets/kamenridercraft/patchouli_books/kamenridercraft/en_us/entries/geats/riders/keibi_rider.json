@@ -8,7 +8,7 @@
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_keibi_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/blank_rider_core_id)Kamen Rider Blank Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",

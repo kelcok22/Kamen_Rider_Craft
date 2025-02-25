@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Dooms Geats Core ID",
+	"icon": "kamenridercraft:dooms_geats_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Used to craft Dooms Geats's $(l:geats/devices/desire_driver_dooms_geats)Desire Driver (Dooms Geats)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

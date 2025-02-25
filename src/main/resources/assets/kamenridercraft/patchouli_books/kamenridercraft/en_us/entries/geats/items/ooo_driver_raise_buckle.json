@@ -1,0 +1,16 @@
+{
+	"name": "OOO Driver Buckle",
+	"icon": "kamenridercraft:ooo_driver_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 97,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#ooo_driver)OOO$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/ooo_driver_raise_buckle"
+		}
+	]
+}

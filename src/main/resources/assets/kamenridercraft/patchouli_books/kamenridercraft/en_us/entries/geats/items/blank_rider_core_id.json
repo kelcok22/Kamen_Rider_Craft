@@ -1,0 +1,19 @@
+{
+	"name": "Blank Rider Core ID",
+	"icon": "kamenridercraft:blank_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used as the base item for most Geats items$(br2)Used to revert a $(l:geats/riders/keibi_rider)Keibi Rider$(/l) to Entry Form$(br2)Used to revert a $(l:geats/riders/the_end_rider)The End Rider$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blank_rider_core_id",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		}
+	]
+}

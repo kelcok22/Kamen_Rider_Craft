@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Driver Buckle",
+	"icon": "kamenridercraft:faiz_driver_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 105,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#faiz_driver)Faiz$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/faiz_driver_raise_buckle"
+		}
+	]
+}

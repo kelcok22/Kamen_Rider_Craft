@@ -1,0 +1,19 @@
+{
+	"name": "Raise Riser Card (Beroba)",
+	"icon": "kamenridercraft:beroba_raise_riser_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 115,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Beroba's $(l:geats/riders/beroba#beroba)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_raise_riser_card",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		}
+	]
+}

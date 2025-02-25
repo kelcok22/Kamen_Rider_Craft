@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Hakubi Core ID",
+	"icon": "kamenridercraft:hakubi_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Hakubi's $(l:geats/devices/desire_driver_hakubi)Desire Driver (Hakubi)$(/l)$(br2)Used to revert $(l:geats/riders/hakubi)Kamen Rider Hakubi$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hakubi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

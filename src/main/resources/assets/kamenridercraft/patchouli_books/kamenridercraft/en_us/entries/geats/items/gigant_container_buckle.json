@@ -1,0 +1,16 @@
+{
+	"name": "Gigant Container Buckle",
+	"icon": "kamenridercraft:gigant_container_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 70,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to access a Desire Driver user's $(l:geats/riders/seeker#powered_builder)Gigant Container$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/gigant_container_buckle"
+		}
+	]
+}

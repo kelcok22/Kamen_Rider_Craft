@@ -1,0 +1,19 @@
+{
+	"name": "Dooms Geats Raise Buckle",
+	"icon": "kamenridercraft:dooms_geats_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 57,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

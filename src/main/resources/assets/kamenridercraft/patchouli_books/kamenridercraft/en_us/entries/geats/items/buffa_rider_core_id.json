@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Buffa Core ID",
+	"icon": "kamenridercraft:buffa_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Buffa's $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Used to revert $(l:geats/riders/buffa)Kamen Rider Buffa$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

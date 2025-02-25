@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Fukuoka Geats Core ID",
+	"icon": "kamenridercraft:geats_rider_core_id_fukuoka",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 125,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used to transform into $(l:geats/riders/geats#fukuoka)Kamen Rider Fukuoka Geats$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_fukuoka",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Keilow Core ID",
+	"icon": "kamenridercraft:keirou_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Keilow's $(l:geats/devices/desire_driver_keirou)Desire Driver (Keilow)$(/l)$(br2)Used to revert $(l:geats/riders/keirou)Kamen Rider Keilow$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keirou_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		}
+	]
+}

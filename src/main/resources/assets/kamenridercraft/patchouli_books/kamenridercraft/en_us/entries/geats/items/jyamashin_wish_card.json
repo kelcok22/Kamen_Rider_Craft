@@ -1,0 +1,19 @@
+{
+	"name": "Jyamashin Desire Card",
+	"icon": "kamenridercraft:jyamashin_wish_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 129,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to revert $(l:geats/riders/buffa)Kamen Rider Buffa$(/l) to Entry Form and unlock $(l:geats/riders/buffa#jyamashin)Jyamashin$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamashin_wish_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

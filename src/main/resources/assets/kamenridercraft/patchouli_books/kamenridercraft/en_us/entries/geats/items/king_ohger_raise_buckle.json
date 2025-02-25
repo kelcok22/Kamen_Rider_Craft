@@ -1,0 +1,19 @@
+{
+	"name": "King-Ohger Buckle",
+	"icon": "kamenridercraft:king_ohger_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 113,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)SG Raise Buckle Set 05 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_ohger_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

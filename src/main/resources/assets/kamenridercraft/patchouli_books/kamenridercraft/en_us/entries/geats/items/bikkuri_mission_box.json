@@ -1,0 +1,16 @@
+{
+	"name": "Bikkuri Mission Box",
+	"icon": "kamenridercraft:bikkuri_mission_box",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Rider Core ID when right-clicked"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bikkuri_mission_box"
+		}
+	]
+}
