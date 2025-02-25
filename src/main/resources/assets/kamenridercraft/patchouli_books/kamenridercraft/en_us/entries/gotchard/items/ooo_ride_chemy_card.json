@@ -1,0 +1,19 @@
+{
+	"name": "OOO Ride Chemy Card",
+	"icon": "kamenridercraft:ooo_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 54,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ooo_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

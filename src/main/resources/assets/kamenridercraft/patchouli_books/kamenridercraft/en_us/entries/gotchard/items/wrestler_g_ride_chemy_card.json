@@ -1,0 +1,19 @@
+{
+	"name": "Wrestler G Ride Chemy Card",
+	"icon": "kamenridercraft:wrestler_g_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wrestler_g_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

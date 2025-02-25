@@ -1,0 +1,19 @@
+{
+	"name": "Faiz Ride Chemy Card",
+	"icon": "kamenridercraft:faiz_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:faiz_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

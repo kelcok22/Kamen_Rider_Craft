@@ -1,0 +1,19 @@
+{
+	"name": "Madwheel Ride Chemy Card",
+	"icon": "kamenridercraft:madwheel_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:madwheel_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

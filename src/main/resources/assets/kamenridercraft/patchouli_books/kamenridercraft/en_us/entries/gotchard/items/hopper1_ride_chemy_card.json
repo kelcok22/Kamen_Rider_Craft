@@ -1,0 +1,19 @@
+{
+	"name": "Hopper1 Ride Chemy Card",
+	"icon": "kamenridercraft:hopper1_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Gotchard's $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#steamhopper)Steamhopper$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopper1_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
