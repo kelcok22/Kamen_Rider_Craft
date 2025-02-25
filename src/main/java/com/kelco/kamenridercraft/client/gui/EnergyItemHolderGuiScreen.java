@@ -18,6 +18,7 @@ public class EnergyItemHolderGuiScreen extends AbstractContainerScreen<EnergyIte
 		super(menu, playerInventory, title);
 		imageWidth = 176;
 		imageHeight = 184;
+        this.inventoryLabelY = this.imageHeight - 94;
 	}
 
 	/**

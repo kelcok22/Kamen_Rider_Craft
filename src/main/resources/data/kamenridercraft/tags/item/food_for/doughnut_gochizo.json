@@ -1,5 +1,77 @@
 {
   "values": [
-	"kamenridercraft:donut"
+	  "kamenridercraft:donut",
+    {
+        "id": "#c:doughnuts",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:plaindonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:chocolatedonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:powdereddonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:sprinklesdonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:appledonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:chorusdonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:glowberrydonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:melondonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:sweetberrydonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:carameldonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:carrotdonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:honeyglazeddonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:pumpkindonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2fantasy:slimedonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:cinnamonsugardonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:frosteddonutitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:powdereddonutitem",
+        "required": false
+    }
   ]
 }

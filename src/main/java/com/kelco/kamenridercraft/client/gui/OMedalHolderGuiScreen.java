@@ -18,6 +18,7 @@ public class OMedalHolderGuiScreen extends AbstractContainerScreen<OMedalHolderG
 		super(menu, playerInventory, title);
 		imageWidth = 176;
 		imageHeight = 184;
+        this.inventoryLabelY = this.imageHeight - 94;
 	}
 
 	/**

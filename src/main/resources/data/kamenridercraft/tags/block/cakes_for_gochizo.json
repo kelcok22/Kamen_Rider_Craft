@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+        "id": "farmersdelight:sweet_berry_cheesecake",
+        "required": false
+    },
+    {
+        "id": "ubesdelight:ube_cake",
+        "required": false
+    }
+  ]
+}

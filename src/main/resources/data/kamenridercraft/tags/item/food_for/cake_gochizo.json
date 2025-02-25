@@ -1,3 +1,80 @@
 {
-  "values": []
+  "values": [
+    {
+        "id": "farmersdelight:cake_slice",
+        "required": false
+    },
+    {
+        "id": "farmersdelight:sweet_berry_cheesecake_slice",
+        "required": false
+    },
+    {
+        "id": "fruitsdelight:mangosteen_cake",
+        "required": false
+    },
+    {
+        "id": "ubesdelight:ube_cake_slice",
+        "required": false
+    },
+    {
+        "id": "croptopia:cheese_cake",
+        "required": false
+    },
+    {
+        "id": "croptopia:tres_leche_cake",
+        "required": false
+    },
+    {
+        "id": "croptopia:fruit_cake",
+        "required": false
+    },
+    {
+        "id": "croptopia:nether_star_cake",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:chocolatecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:cheesecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:pumpkincheesecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:carrotcakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2fantasy:slimecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chocolatesprinklecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:fruitcakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:holidaycakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:lemondrizzlecakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:mochicakeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:pineappleupsidedowncakeitem",
+        "required": false
+    }
+  ]
 }
