@@ -1,5 +1,81 @@
 {
   "values": [
-	"#c:foods/cookie"
+	  "#c:foods/cookie",
+    {
+        "id": "pamhc2foodcore:cookiesandmilkitem",
+        "required": false
+    },
+    {
+        "id": "ends_delight:chorus_cookie",
+        "required": false
+    },
+    {
+        "id": "fruitsdelight:persimmon_cookie",
+        "required": false
+    },
+    {
+        "id": "fruitsdelight:lemon_cookie",
+        "required": false
+    },
+    {
+        "id": "fruitsdelight:cranberry_cookie",
+        "required": false
+    },
+    {
+        "id": "fruitsdelight:bayberry_cookie",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:fortunecookieitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:meringuecookieitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:oatmealraisincookiesitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:peanutbuttercookiesitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:sugarcookieitem",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_flesh",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_spidereye",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_slimeapple",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_slime",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_cobweb",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_ghast_tear",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_soul_berry",
+        "required": false
+    },
+    {
+        "id": "frightsdelight:cookie_wither_berry",
+        "required": false
+    }
   ]
 }

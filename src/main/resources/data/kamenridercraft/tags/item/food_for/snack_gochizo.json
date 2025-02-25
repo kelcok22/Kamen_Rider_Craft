@@ -1,5 +1,69 @@
 {
   "values": [
-	"kamenridercraft:potato_snacks"
+	  "kamenridercraft:potato_snacks",
+    {
+        "id": "croptopia:saucy_chips",
+        "required": false
+    },
+    {
+        "id": "croptopia:kale_chips",
+        "required": false
+    },
+    {
+        "id": "#c:potato_chips",
+        "required": false
+    },
+    {
+        "id": "corn_delight:tortilla_chip",
+        "required": false
+    },
+    {
+        "id": "corn_delight:nachos_bowl",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chipsandsalsaitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:nachoesitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:tortillachipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:bbqpotatochipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:cheddarandsourcreampotatochipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chipsanddipitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:cornchipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:sourcreamandonionpotatochipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:kalechipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:okrachipsitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:cheesytacotortillachipsitem",
+        "required": false
+    }
   ]
 }

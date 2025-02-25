@@ -28,6 +28,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffect;
@@ -159,8 +160,9 @@ public class ModCommonEvents {
 		public void Give_Cake_Gochizo(PlayerInteractEvent.RightClickBlock event) {
 			Block cake = event.getLevel().getBlockState(event.getPos()).getBlock();
 
-			if (cake instanceof CakeBlock && event.getUseBlock().isDefault() && (!event.getItemStack().is(ItemTags.CANDLES) || event.getLevel().getBlockState(event.getPos()) != Blocks.CAKE.defaultBlockState())
-			|| (cake instanceof CandleCakeBlock && !event.getItemStack().is(Items.FLINT_AND_STEEL) && !event.getItemStack().is(Items.FIRE_CHARGE))) {
+			if ((cake instanceof CakeBlock || event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("c:cakes")))) && event.getUseBlock().isDefault() && (!event.getItemStack().is(ItemTags.CANDLES) || event.getLevel().getBlockState(event.getPos()) != cake.defaultBlockState())
+			|| ((event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("minecraft:candle_cakes"))) || event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("c:candle_cakes")))) && !event.getItemStack().is(Items.FLINT_AND_STEEL) && !event.getItemStack().is(Items.FIRE_CHARGE))
+			|| event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "cakes_for_gochizo"))) && event.getUseBlock().isDefault()) {
 				if (event.getEntity() instanceof Player player && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
 					if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
 					else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);

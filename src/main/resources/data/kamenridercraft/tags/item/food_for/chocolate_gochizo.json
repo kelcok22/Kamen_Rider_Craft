@@ -1,5 +1,41 @@
 {
   "values": [
-	"kamenridercraft:chocolate_bar"
+	  "kamenridercraft:chocolate_bar",
+    {
+        "id": "#c:chocolatebar",
+        "required": false
+    },
+    {
+        "id": "#c:chocolates",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodcore:chocolatecaramelfudgeitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chilichocolateitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chocolatecoconutbaritem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:chocolatepeanutbaritem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:cherrycoconutchocolatebaritem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:peanutchocolatebaritem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:honeycombchocolatebaritem",
+        "required": false
+    }
   ]
 }
