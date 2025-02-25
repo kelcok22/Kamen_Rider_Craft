@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wizardgem_cyan",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/mobs/mage_captain)Imperial Captain$(/l)$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
 		}
 	]
 }

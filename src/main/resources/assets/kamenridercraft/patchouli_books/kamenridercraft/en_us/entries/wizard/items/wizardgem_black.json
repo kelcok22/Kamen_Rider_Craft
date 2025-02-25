@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wizardgem_black",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+			"text": "Drops from:$(li)$(l:wizard/mobs/sorcerer)Kamen Rider Sorcerer$(/l)"
 		}
 	]
 }
