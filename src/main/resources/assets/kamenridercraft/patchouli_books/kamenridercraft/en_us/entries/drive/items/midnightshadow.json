@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#midnight_shadow)Midnight Shadow$(/l) Shift Tire and $(l:drive/riders/drive#all_tire)Tire All Kakimazerl$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#midnight_shadow)Midnight Shadow$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

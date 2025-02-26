@@ -1,0 +1,19 @@
+{
+	"name": "Kamen Rider Mach Production Model",
+	"icon": "kamenridercraft:metro_pd_driver_honoh",
+	"category": "kamenridercraft:drive/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:metro_pd_driver_honoh\",Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach Production Model",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/metro_pd_driver_honoh)Metro PD Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		}
+	]
+}

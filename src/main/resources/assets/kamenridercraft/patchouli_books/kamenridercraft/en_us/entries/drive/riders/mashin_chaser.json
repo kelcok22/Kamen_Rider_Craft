@@ -1,0 +1,32 @@
+{
+	"name": "Mashin Chaser",
+	"icon": "kamenridercraft:break_gunner_belt",
+	"category": "kamenridercraft:drive/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "mashin_chaser",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:protozero_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:drive/items/protozero_core)Roidmude Core Protozero$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Mashin Chaser",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/arsenal/break_gunner)Break Gunner$(/l) and $(l:drive/devices/break_gunner_belt)Break Gunner (Belt)$(/l)$(br2)Status Effects:$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_mashin_chaser",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rhino_super_viral_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Super Mashin Chaser",
+			"text": "Accessed with the $(l:drive/items/rhino_super_viral_core)Rhino Super Viral Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Mashin Chaser",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Chaser (2016, V-Cinema film)$(br2)Transforms with the $(l:drive/arsenal/break_gunner)Break Gunner$(/l) and $(l:drive/devices/break_gunner_belt)Break Gunner (Belt)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Strength V"
+		}
+	]
+}
