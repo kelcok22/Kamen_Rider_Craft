@@ -2,7 +2,7 @@
 	"name": "AttackRide Den-O Kotaewa Kiite Nai",
 	"icon": "kamenridercraft:den_o_kotaewa_kiite_nai_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 26,
+	"sortnum": 27,
 	"pages": [
 		{
 			"type": "patchouli:text",

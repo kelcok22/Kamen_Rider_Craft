@@ -2,7 +2,7 @@
 	"name": "Ongekibo Rekka (Diend)",
 	"icon": "kamenridercraft:ongekibo_rekka_diend",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

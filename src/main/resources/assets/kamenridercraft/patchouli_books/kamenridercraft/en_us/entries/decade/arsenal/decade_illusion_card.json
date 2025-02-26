@@ -2,7 +2,7 @@
 	"name": "AttackRide Decade Illusion",
 	"icon": "kamenridercraft:decade_illusion_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 8,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:text",

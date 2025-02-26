@@ -2,7 +2,7 @@
 	"name": "AttackRide Diend Barrier",
 	"icon": "kamenridercraft:diend_barrier_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

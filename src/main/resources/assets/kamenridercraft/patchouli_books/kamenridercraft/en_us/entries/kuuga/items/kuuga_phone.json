@@ -1,0 +1,19 @@
+{
+	"name": "Kuuga's Phone",
+	"icon": "kamenridercraft:kuuga_phone",
+	"category": "kamenridercraft:kuuga/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_phone",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

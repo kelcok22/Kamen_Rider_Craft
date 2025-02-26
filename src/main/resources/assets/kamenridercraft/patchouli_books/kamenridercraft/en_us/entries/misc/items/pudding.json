@@ -1,0 +1,19 @@
+{
+	"name": "Pudding",
+	"icon": "kamenridercraft:pudding",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pudding",
+			"title": " ",
+			"text": "Found on the $(l:den_o/structures/denliner_isurugi)DenLiner Isurugi$(/l)"
+		}
+	]
+}

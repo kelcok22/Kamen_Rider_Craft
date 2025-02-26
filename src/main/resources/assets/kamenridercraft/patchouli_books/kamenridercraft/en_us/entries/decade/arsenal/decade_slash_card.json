@@ -2,7 +2,7 @@
 	"name": "AttackRide Decade Slash",
 	"icon": "kamenridercraft:decade_slash_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "KamenRide Caucasus",
 	"icon": "kamenridercraft:caucasus_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 119,
+	"sortnum": 123,
 	"pages": [
 		{
 			"type": "patchouli:text",

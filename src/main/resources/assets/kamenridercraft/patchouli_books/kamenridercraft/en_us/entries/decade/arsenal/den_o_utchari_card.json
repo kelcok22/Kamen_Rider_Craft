@@ -2,7 +2,7 @@
 	"name": "AttackRide Den-O Utchari",
 	"icon": "kamenridercraft:den_o_utchari_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 28,
+	"sortnum": 29,
 	"pages": [
 		{
 			"type": "patchouli:text",

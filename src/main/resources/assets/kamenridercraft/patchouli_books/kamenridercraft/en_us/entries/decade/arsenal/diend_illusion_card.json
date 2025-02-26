@@ -2,7 +2,7 @@
 	"name": "AttackRide Diend Illusion",
 	"icon": "kamenridercraft:diend_illusion_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

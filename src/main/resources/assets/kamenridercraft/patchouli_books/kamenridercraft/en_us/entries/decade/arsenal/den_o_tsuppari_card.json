@@ -2,7 +2,7 @@
 	"name": "AttackRide Den-O Tsuppari",
 	"icon": "kamenridercraft:den_o_tsuppari_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 27,
+	"sortnum": 28,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Sinister Pachinko Ball",
 	"icon": "kamenridercraft:sinister_pachinko_ball",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

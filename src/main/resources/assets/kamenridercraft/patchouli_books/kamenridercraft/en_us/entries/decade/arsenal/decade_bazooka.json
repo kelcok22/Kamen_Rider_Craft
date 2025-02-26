@@ -2,7 +2,7 @@
 	"name": "Decade Bazooka",
 	"icon": "kamenridercraft:decade_bazooka",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

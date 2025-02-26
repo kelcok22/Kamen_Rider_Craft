@@ -2,7 +2,7 @@
 	"name": "Ongekibo Rekka (Decade)",
 	"icon": "kamenridercraft:ongekibo_rekka_decade",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

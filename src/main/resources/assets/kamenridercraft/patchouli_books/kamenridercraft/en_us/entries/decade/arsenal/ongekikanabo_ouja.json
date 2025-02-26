@@ -2,7 +2,7 @@
 	"name": "Ongekikanabo (Ouja)",
 	"icon": "kamenridercraft:ongekikanabo_ouja",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

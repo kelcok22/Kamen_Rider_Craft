@@ -2,7 +2,7 @@
 	"name": "AttackRide Blade Mach",
 	"icon": "kamenridercraft:blade_mach_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

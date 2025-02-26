@@ -2,7 +2,7 @@
 	"name": "Base Weapon",
 	"icon": "kamenridercraft:base_sword",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

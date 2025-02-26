@@ -1,8 +1,8 @@
 {
-	"name": "Final KamenRide Wizard Infinity Style",
-	"icon": "kamenridercraft:wizard_infinity_card",
+	"name": "Final KamenRide Xross Saber",
+	"icon": "kamenridercraft:xross_saber_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 106,
+	"sortnum": 114,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:decade/wizard_infinity_card"
+			"recipe": "kamenridercraft:decade/xross_saber_card"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "AttackRide Ryuki Strike Vent",
 	"icon": "kamenridercraft:ryuki_strike_vent_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

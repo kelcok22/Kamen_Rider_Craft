@@ -2,7 +2,7 @@
 	"name": "KamenRide Orga",
 	"icon": "kamenridercraft:orga_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 116,
+	"sortnum": 120,
 	"pages": [
 		{
 			"type": "patchouli:text",
