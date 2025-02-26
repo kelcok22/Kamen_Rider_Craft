@@ -1,0 +1,164 @@
+{
+	"name": "Kamen Rider Mach",
+	"icon": "kamenridercraft:mach_driver_honoh",
+	"category": "kamenridercraft:drive/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "mach",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": " ",
+			"text": "Accessed with the $(l:drive/items/signal_mach)Signal Mach$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magarl",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_magarl\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Magarl",
+			"text": "Accessed with the $(l:drive/items/signal_magarl)Signal Magarl$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Signal Effects:$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kaksarn",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_kaksarn\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Kaksarn",
+			"text": "Accessed with the $(l:drive/items/signal_kaksarn)Signal Kaksarn$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Signal Effects:$(li)Speed III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tomarle",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_tomarle\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Tomarle",
+			"text": "Accessed with the $(l:drive/items/signal_tomarle)Signal Tomarle$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Signal Effects:$(li)Slowness X"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kikern",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_kikern\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Kikern",
+			"text": "Accessed with the $(l:drive/items/signal_kikern)Signal Kikern$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Signal Effects:$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "moerl",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Moerl",
+			"text": "Accessed with the $(l:drive/items/maxflare)Max Flare$(/l) Shift Car"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Tire Effects:$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arabull",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Arabull",
+			"text": "Accessed with the $(l:drive/items/rumble_dump)Rumble Dump$(/l) Shift Car"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Tire Effects:$(li)Slowness$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mazerl",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Mazerl",
+			"text": "Accessed with the $(l:drive/items/spin_mixer)Spin Mixer$(/l) Shift Car"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength$(br2)Tire Effects:$(li)Slowness$(li)Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "deadheat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Deadheat Mach",
+			"text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) Shift Car"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed III$(li)Nausea II$(li)Jump Boost III$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "naorl",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_mach\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Deadheat Mach Naorl",
+			"text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) and $(l:drive/items/mad_doctor)Mad Doctor$(/l) Shift Cars"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Type Effects:$(li)Speed III$(li)Nausea II$(li)Jump Boost III$(li)Strength IV$(br2)Tire Effects:$(li)Regeneration II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chaser_mach",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_chaser_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Chaser Mach",
+			"text": "Accessed with the $(l:drive/items/signal_chaser)Signal Chaser$(/l) Signal Bike"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Jump Boost II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mach_chaser",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:shift_ride_crosser\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Mach Chaser",
+			"text": "Accessed with the $(l:drive/items/shift_ride_crosser)Shift Ride Crosser$(/l) Shift Car"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Mach (2016, V-Cinema film)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Regeneration$(li)Jump Boost III$(li)Strength V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_deadheat",
+			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:shift_viral_core\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"name": "Super Deadheat Mach",
+			"text": "Accessed with the $(l:drive/items/rhino_super_viral_core)Rhino Super Viral Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Mach",
+			"text": "Appears in:$(li)Novel: Kamen Rider Drive: ~Mach Saga~ (2016, novel)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Regeneration II$(li)Jump Boost III$(li)Strength VI"
+		}
+	]
+}
