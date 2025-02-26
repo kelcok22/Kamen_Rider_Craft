@@ -2,7 +2,7 @@
 	"name": "AttackRide Diend Crossattack",
 	"icon": "kamenridercraft:diend_crossattack_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

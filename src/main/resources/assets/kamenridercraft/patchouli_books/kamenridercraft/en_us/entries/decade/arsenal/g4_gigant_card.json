@@ -2,7 +2,7 @@
 	"name": "AttackRide G4 Gigant",
 	"icon": "kamenridercraft:g4_gigant_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "AttackRide Hibiki Ongekibou Rekka",
 	"icon": "kamenridercraft:hibiki_ongekibou_rekka_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 20,
+	"sortnum": 21,
 	"pages": [
 		{
 			"type": "patchouli:text",

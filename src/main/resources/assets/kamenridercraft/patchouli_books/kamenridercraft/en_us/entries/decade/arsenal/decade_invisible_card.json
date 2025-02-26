@@ -2,7 +2,7 @@
 	"name": "AttackRide Decade Invisible",
 	"icon": "kamenridercraft:decade_invisible_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

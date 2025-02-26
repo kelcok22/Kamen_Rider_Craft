@@ -2,7 +2,7 @@
 	"name": "AttackRide Hibiki Onibi",
 	"icon": "kamenridercraft:hibiki_onibi_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 21,
+	"sortnum": 22,
 	"pages": [
 		{
 			"type": "patchouli:text",

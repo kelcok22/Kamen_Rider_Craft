@@ -2,7 +2,7 @@
 	"name": "Potato Snacks",
 	"icon": "kamenridercraft:potato_snacks",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

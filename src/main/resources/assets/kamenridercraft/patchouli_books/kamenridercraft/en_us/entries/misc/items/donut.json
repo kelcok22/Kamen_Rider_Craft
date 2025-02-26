@@ -2,7 +2,7 @@
 	"name": "Donut",
 	"icon": "kamenridercraft:donut",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

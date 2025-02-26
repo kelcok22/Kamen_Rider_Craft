@@ -2,7 +2,7 @@
 	"name": "AttackRide Blade Metal",
 	"icon": "kamenridercraft:blade_metal_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

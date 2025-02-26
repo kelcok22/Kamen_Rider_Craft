@@ -2,7 +2,7 @@
 	"name": "AttackRide Den-O Ore Sanjou!",
 	"icon": "kamenridercraft:den_o_ore_sanjou_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 23,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

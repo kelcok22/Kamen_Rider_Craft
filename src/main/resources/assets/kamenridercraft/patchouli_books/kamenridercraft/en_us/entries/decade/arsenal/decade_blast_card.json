@@ -2,7 +2,7 @@
 	"name": "AttackRide Decade Blast",
 	"icon": "kamenridercraft:decade_blast_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

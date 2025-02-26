@@ -2,7 +2,7 @@
 	"name": "AttackRide Den-O Nakerude",
 	"icon": "kamenridercraft:den_o_nakerude_card",
 	"category": "kamenridercraft:decade/arsenal",
-	"sortnum": 25,
+	"sortnum": 26,
 	"pages": [
 		{
 			"type": "patchouli:text",
