@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:deus_rampart",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Cronus Gamedeus$(/l)"
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

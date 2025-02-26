@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:egg_chicken_memory",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)Chickens"
 		}
 	]
 }
