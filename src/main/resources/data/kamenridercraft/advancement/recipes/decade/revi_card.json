@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:haouken_xross_saber"
+			  "kamenridercraft:giffard_rex_vistamp"
 			]
 		  }
 		]
@@ -21,7 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:decade/xross_saber_card"
+	  "kamenridercraft:decade/ultimate_revi_card"
 	]
   },
   "sends_telemetry_event": false

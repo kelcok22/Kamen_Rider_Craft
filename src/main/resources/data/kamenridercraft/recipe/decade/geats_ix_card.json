@@ -2,10 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "group": "final_form_ride_card",
   "ingredients": [
-{
-	
-	  "item": "kamenridercraft:geats_card"
+	{
+		"item": "kamenridercraft:blank_card"
 	}, 
+	{
+	  "item": "kamenridercraft:geats_rider_core_id"
+	},
 	{
 	  "item": "kamenridercraft:boost_mkiii_raise_buckle"
 	}

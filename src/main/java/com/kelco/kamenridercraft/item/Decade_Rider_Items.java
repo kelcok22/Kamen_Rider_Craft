@@ -239,7 +239,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> ZERO_ONE_CARD = ITEMS.register("zero_one_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
-
+/*
 	public static final DeferredItem<Item> SABER_CARD = ITEMS.register("saber_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
@@ -251,7 +251,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> GEATS_CARD = ITEMS.register("geats_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
-/*
+
 	public static final DeferredItem<Item> GOTCHARD_CARD = ITEMS.register("gotchard_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 

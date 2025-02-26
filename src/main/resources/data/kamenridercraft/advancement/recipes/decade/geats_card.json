@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:haouken_xross_saber"
+			  "kamenridercraft:boost_mkiii_raise_buckle"
 			]
 		  }
 		]
@@ -21,7 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:decade/xross_saber_card"
+	  "kamenridercraft:decade/geats_ix_card"
 	]
   },
   "sends_telemetry_event": false
