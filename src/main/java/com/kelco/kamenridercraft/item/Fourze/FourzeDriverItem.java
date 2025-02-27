@@ -2,17 +2,25 @@ package com.kelco.kamenridercraft.item.Fourze;
 
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+
+import java.util.List;
+
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 	public class FourzeDriverItem extends RiderDriverItem {
@@ -24,6 +32,27 @@ import net.neoforged.neoforge.registries.DeferredItem;
 			super(material, rider, baseFormItem, head, torso, legs, properties);
 			Unlimited_Textures=4;
 		}
+
+		@Override
+    	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+
+    	    if (entity instanceof LivingEntity player) {
+
+    	        if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+    	            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+    	            if (tag.getBoolean("Update_form")&!level.isClientSide()) OnformChange(stack, player, tag);
+    	        }
+
+    	        if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+    	            for (int n = 0; n < Num_Base_Form_Item; n++) {
+    	                List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
+    	                for (MobEffectInstance effect : potionEffectList) {
+    	                    player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier() + (player.hasEffect(Effect_core.COSMIC_ENERGY) && !effect.is(Effect_core.COSMIC_ENERGY) ? 1 : 0), true, false));
+    	                }
+    	            }
+    	        }
+    	    }
+    	}
 
 		@Override
 		public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName, int num)
