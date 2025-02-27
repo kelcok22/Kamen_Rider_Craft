@@ -24,11 +24,9 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
 
     @Override
     public ResourceLocation getModelResource(RiderArmorItem animatable) {
-        if (slot== EquipmentSlot.FEET) {
-            RiderDriverItem BELT = (RiderDriverItem)RIDER.getItemBySlot(EquipmentSlot.FEET).getItem();
-            return BELT.getBeltModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
-        } else if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
-            return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
+        if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
+            if (slot== EquipmentSlot.FEET) return BELT.getBeltModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
+            else return BELT.getModelResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot,RIDER);
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default.geo.json");
     }
@@ -48,13 +46,9 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     public ResourceLocation getAnimationResource(RiderArmorItem animatable) {
         if (slot== EquipmentSlot.FEET) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/riderbelt.animation.json");
-        }else {
-
-            if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
-                return BELT.getAnimationResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot);
-
-            }else return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/ichigo.animation.json");
+        } else if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT) {
+            return BELT.getAnimationResource(RIDER.getItemBySlot(EquipmentSlot.FEET),animatable,slot);
         }
-
+        return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/ichigo.animation.json");
     }
 }

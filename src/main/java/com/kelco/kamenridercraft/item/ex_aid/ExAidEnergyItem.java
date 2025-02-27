@@ -30,9 +30,9 @@ public class ExAidEnergyItem extends BaseItem {
 
 	public void  useEnergyItem (ItemStack itemstack, Level world,Player playerIn) {
 		if (!world.isClientSide()) {
-			for (int i = 0; i < potionEffectList.size(); i++)
+			for (MobEffectInstance effect : potionEffectList)
 			{
-				playerIn.addEffect(new MobEffectInstance(potionEffectList.get(i).getEffect(),potionEffectList.get(i).getDuration(),potionEffectList.get(i).getAmplifier(),true,false));
+				playerIn.addEffect(new MobEffectInstance(effect.getEffect(),effect.getDuration(),effect.getAmplifier(),true,false));
 			}
 			itemstack.shrink(1);	
 			playerIn.awardStat(Stats.ITEM_USED.get(this));
