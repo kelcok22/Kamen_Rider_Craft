@@ -60,9 +60,9 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.COSMIC_ENERGY, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 					.ChangeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
