@@ -7,7 +7,6 @@ import java.util.*;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
-import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -21,17 +20,13 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
@@ -45,28 +40,20 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CakeBlock;
-import net.minecraft.world.level.block.CandleCakeBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.levelgen.structure.*;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
-import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
-import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
-import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
@@ -130,7 +117,7 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/candy_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CANDY.size());
 				return Gavv_Rider_Items.CANDY.get(rand);
-			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))){ // For compat with mods that add cake slice items
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
 				return Gavv_Rider_Items.CAKE.get(rand);
 			}
@@ -158,16 +145,22 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void Give_Cake_Gochizo(PlayerInteractEvent.RightClickBlock event) {
-			Block cake = event.getLevel().getBlockState(event.getPos()).getBlock();
+			if (!event.getLevel().isClientSide) {
+				BlockState state = event.getLevel().getBlockState(event.getPos());
+				Player player = event.getEntity();
 
-			if ((cake instanceof CakeBlock || event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("c:cakes")))) && event.getUseBlock().isDefault() && (!event.getItemStack().is(ItemTags.CANDLES) || event.getLevel().getBlockState(event.getPos()) != cake.defaultBlockState())
-			|| ((event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("minecraft:candle_cakes"))) || event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.parse("c:candle_cakes")))) && !event.getItemStack().is(Items.FLINT_AND_STEEL) && !event.getItemStack().is(Items.FIRE_CHARGE))
-			|| event.getLevel().getBlockState(event.getPos()).is(BlockTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "cakes_for_gochizo"))) && event.getUseBlock().isDefault()) {
-				if (event.getEntity() instanceof Player player && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
-					if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
-					else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+				boolean fdKnife = (state.getBlock() instanceof CakeBlock || state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "drops_cake_slice")))) && event.getItemStack().is(ItemTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "tools/knives")));
+				boolean jmcSpatula = player.isShiftKeyDown() && event.getItemStack().is(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("jmc", "cake_spatula")));
+				boolean jmcTieredCake = ModList.get().isLoaded("jmc") && state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "cakes"))) && event.getItemStack().is(state.getBlock().asItem());
 
-					player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
+				if (!fdKnife && !jmcSpatula && !jmcTieredCake && !(state.getBlock() instanceof CakeBlock)
+				&& (state.is(BlockTags.create(ResourceLocation.parse("c:cakes"))) || state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "cakes_for_gochizo"))))) {
+					if (player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+						if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
+						else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
+
+						player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
+					}
 				}
 			}
 		}
