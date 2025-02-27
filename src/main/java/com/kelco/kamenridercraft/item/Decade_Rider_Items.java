@@ -8,6 +8,9 @@ import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.decade.BlankCardItem;
 import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -807,7 +810,8 @@ public class Decade_Rider_Items {
 			.addSpecial("diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     //public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",
-	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan"}, ForgeRegistries.ITEMS.getValue(new ResourceLocation("supersentaicraft:rekka_daizantou")), 30).AddToTabList(RiderTabs.DECADE_TAB_ITEM));
+	//		() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan"})
+	//		.addItem(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("supersentaicraft", "rekka_daizantou"))).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> G4_GIGANT_CARD = ITEMS.register("g4_gigant_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade_violent_emotion"})
