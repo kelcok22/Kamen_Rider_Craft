@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

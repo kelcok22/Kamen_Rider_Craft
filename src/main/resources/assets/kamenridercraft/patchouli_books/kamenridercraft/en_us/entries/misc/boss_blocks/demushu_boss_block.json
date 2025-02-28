@@ -1,0 +1,19 @@
+{
+	"name": "Demushu Boss Block",
+	"icon": "kamenridercraft:demushu_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:demushu_boss_block",
+			"title": " ",
+			"text": "Found inside $(l:gaim/structures/demushu_helheim_city)Demushu's Cave$(/l)"
+		}
+	]
+}

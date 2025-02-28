@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:storious_rider",
-			"text": "Summoned from a $(l:misc/blocks/storious_boss_block)Storious Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/storious_boss_block)Storious Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

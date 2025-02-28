@@ -1,0 +1,16 @@
+{
+	"name": "Ark-One Boss Block",
+	"icon": "kamenridercraft:ark_one_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/ark_one_boss_block"
+		}
+	]
+}

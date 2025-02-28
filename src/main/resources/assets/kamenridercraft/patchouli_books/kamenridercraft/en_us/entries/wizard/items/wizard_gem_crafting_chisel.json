@@ -2,7 +2,7 @@
 	"name": "Gem Chisel",
 	"icon": "kamenridercraft:wizard_gem_crafting_chisel",
 	"category": "kamenridercraft:wizard/items",
-	"sortnum": 71,
+	"sortnum": 72,
 	"pages": [
 		{
 			"type": "patchouli:text",

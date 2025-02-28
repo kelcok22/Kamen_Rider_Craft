@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Earth's Core",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Spawn locations: Lush Caves, Dripstone Caves, Deep Dark$(br2)Includes a $(l:misc/blocks/core_boss_block)Core Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Spawn locations: Lush Caves, Dripstone Caves, Deep Dark$(br2)Includes a $(l:misc/boss_blocks/core_boss_block)Core Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:image",

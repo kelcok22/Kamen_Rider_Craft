@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:sabela",
-			"text": "Summoned from a $(l:misc/blocks/sabela_boss_block)Sabela Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/sabela_boss_block)Sabela Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

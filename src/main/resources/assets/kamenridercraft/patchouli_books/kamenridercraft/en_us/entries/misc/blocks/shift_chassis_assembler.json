@@ -1,0 +1,21 @@
+{
+	"name": "Shift Chassis Assembler",
+	"icon": "kamenridercraft:shift_chassis_assembler",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use $(l:drive/items/drive_system_cars)cars$(/l) and $(l:drive/items/next_system_bikes)bikes$(/l) from the Drive System on this block to obtain Shift Cars and Signal Bikes$(br2)Drops with a $(l:drive/items/drive_system_car)Drive System Car$(/l):$(li)$(l:drive/items/speedshift)Shift Speed$(/l) (11.6%)$(li)$(l:drive/items/wildshift)Shift Wild$(/l) (4.7%)$(li)$(l:drive/items/technicshift)Shift Technic$(/l) (3.9%)$(li)$(l:drive/items/deadheat_car)Shift Dead Heat Car$(/l) (2.3%)$(li)$(l:drive/items/tridoronshift_core)Unfinished Shift Tridoron$(/l) (3.9%)$(li)$(l:drive/items/maxflare)Max Flare$(/l) (5.4%)$(li)$(l:drive/items/funkyspike)Funky Spike$(/l) (5.4%)$(li)$(l:drive/items/midnightshadow)Midnight Shadow$(/l) (5.4%)$(li)$(l:drive/items/justice_hunter)Justice Hunter$(/l) (4.7%)$(li)$(l:drive/items/dream_vegas)Dream Vegas$(/l) (4.7%)$(li)$(l:drive/items/dimension_cab)Dimension Cab$(/l) (4.7%)$(li)$(l:drive/items/massive_monster)Massive Monster$(/l) (4.7%)$(li)$(l:drive/items/spin_mixer)Spin Mixer$(/l) (4.7%)$(li)$(l:drive/items/rumble_dump)Rumble Dump$(/l) (3.9%)$(li)$(l:drive/items/mad_doctor)Mad Doctor$(/l) (3.9%)$(li)$(l:drive/items/hooking_wrecker)Hooking Wrecker$(/l) (3.9%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/shift_chassis_assembler",
+			"text": "$(li)$(l:drive/items/burning_solar)Burning Solar$(/l) (3.1%)$(li)$(l:drive/items/colorful_commercial)Colorful Commercial$(/l) (3.1%)$(li)$(l:drive/items/fire_braver)Fire Braver$(/l) (3.1%)$(li)$(l:drive/items/rolling_gravity)Rolling Gravity$(/l) (3.1%)$(li)$(l:drive/items/deco_traveller)Deco Traveller$(/l) (3.1%)$(li)$(l:drive/items/road_winter)Road Winter$(/l) (2.3%)$(li)$(l:drive/items/amazing_circus)Amazing Circus$(/l) (2.3%)$(li)$(l:drive/items/mantarn_f01)Mantarn F01$(/l) (0.8%)$(li)$(l:drive/items/jacky_f02)Jacky F02$(/l) (0.8%)$(li)$(l:drive/items/sparner_f03)Sparner F03$(/l) (0.8%)$(br2)More drops on next page"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops with a $(l:drive/items/next_system_bike)NEXT System Bike$(/l):$(li)$(l:drive/items/deadheat_bike)Shift Dead Heat Bike$(/l) (5.7%)$(li)$(l:drive/items/signal_mach)Signal Mach$(/l) (28.6%)$(li)$(l:drive/items/signal_magarl)Signal Magarl$(/l) (14.3%)$(li)$(l:drive/items/signal_kaksarn)Signal Kaksarn$(/l) (14.3%)$(li)$(l:drive/items/signal_tomarle)Signal Tomarle$(/l) (14.3%)$(li)$(l:drive/items/signal_kikern)Signal Kikern$(/l) (14.3%)$(li)$(l:drive/items/signal_chaser)Signal Chaser$(/l) (8.6%)$(br2)Drops with a $(l:drive/items/next_system_car)NEXT System Car$(/l):$(li)$(l:drive/items/nextshift)Shift Next$(/l) (20%)$(li)$(l:drive/items/specialshift)Shift Special$(/l) (20%)$(li)$(l:drive/items/next_hunter)Shift Next Hunter$(/l) (20%)$(li)$(l:drive/items/next_traveller)Shift Next Traveller$(/l) (20%)$(li)$(l:drive/items/next_builder)Shift Next Builder$(/l) (20%)"
+		}
+	]
+}

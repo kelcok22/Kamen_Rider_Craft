@@ -1,0 +1,16 @@
+{
+	"name": "Storious Boss Block",
+	"icon": "kamenridercraft:storious_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/storious_boss_block"
+		}
+	]
+}

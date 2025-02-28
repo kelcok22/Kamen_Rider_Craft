@@ -1,0 +1,17 @@
+{
+	"name": "Cell Medal Programmer",
+	"icon": "kamenridercraft:cell_medal_programer",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use $(l:ooo/items/cellmedal)normal Cell Medals$(/l) on this block to obtain Birth's Cell Medals$(br2)Drops with a $(l:ooo/items/cellmedal)Cell Medal$(/l):$(li)$(l:ooo/items/birth_core_eyes)Birth Core (Powered)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_breast_cannon)Birth Cell Medal (Breast Cannon)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_crane_arm)Birth Cell Medal (Crane Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_shovel_arm)Birth Cell Medal (Shovel Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_catepillar_leg)Birth Cell Medal (Caterpillar Leg)$(/l) (14.3%)$(li)$(l:ooo/items/birth_core_cutter_wing)Birth Cell Medal (Cutter Wing)$(/l) (14.3%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/cell_medal_programer",
+			"text": "Drops with packed ice:$(li)$(l:ooo/items/seiuchi_medal)Seiuchi Core Medal$(/l) (33.3%)$(li)$(l:ooo/items/shirokuma_medal)Shirokuma Core Medal$(/l) (33.3%)$(li)$(l:ooo/items/penguin_medal)Penguin Core Medal$(/l) (33.3%)"
+		}
+	]
+}

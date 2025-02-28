@@ -49,19 +49,12 @@ public class AmazonCellExtractor extends MachineBlock {
         return PushReaction.PUSH_ONLY;
      }
 
-     private Item getvialDrop(int num) {
- 		Random generator = new Random();
- 			int rand = generator.nextInt(CELL_EXTRACTOR.size());
- 			return CELL_EXTRACTOR.get(rand);
- 		}
-
-
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Reboot_Rider_Items.EMPTY_VIAL.get()) {
-                process(player, level, pos, hand,  getvialDrop(0));
+                process(player, level, pos, hand,  Reboot_Rider_Items.AMAZON_CELL_VIAL.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }

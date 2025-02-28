@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/water_ring)Wizard Rings$(/l) when obtained"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/water_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/water_ring)Water Wizard Ring$(/l) (55.6%)$(li)$(l:wizard/items/water_ring_dragon)Water Dragon Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/mage_b_ring)Mage Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/blizzard_ring)Blizzard Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/unicorn_ring)Unicorn Wizard Ring$(/l) (11.1%)"
 		},
 		{
 			"type": "patchouli:crafting",

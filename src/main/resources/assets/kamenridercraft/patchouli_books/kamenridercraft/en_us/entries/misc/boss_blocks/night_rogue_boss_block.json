@@ -1,0 +1,19 @@
+{
+	"name": "Night Rogue Boss Block",
+	"icon": "kamenridercraft:night_rogue_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:build/mobs/night_rogue)Night Rogue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:night_rogue_boss_block",
+			"title": " ",
+			"text": "Found inside a $(l:build/structures/rogue_base)Faust Base$(/l)"
+		}
+	]
+}

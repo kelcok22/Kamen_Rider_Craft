@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:woz",
-			"text": "Summoned from a $(l:misc/blocks/woz_boss_block)Woz Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/woz_boss_block)Woz Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

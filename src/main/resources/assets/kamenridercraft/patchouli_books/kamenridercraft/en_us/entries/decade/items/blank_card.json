@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item for most Decade items$(br2)Drops $(l:decade/items/decade_card)Decade$(/l) and $(l:decade/items/diend_card)Diend's$(/l) Rider Cards when right-clicked"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item for most Decade items$(br2)Drops different Rider Cards when right-clicked"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:decade/blank_card"
+			"recipe": "kamenridercraft:decade/blank_card",
+			"text": "Drops:$(li)$(l:decade/items/decade_card)KamenRide Decade$(/l) (62.5%)$(li)$(l:decade/items/diend_card)KamenRide Diend$(/l) (31.3%)$(li)$(l:decade/items/dark_decade_card)KamenRide Dark Decade$(/l) (6.3%)"
 		}
 	]
 }
