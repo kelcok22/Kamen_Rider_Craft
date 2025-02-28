@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:rosyuo",
-			"text": "Summoned from a $(l:misc/blocks/rosyuo_boss_block)Rosyuo Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/rosyuo_boss_block)Rosyuo Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

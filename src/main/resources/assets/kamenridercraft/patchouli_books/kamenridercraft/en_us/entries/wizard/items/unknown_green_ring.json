@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/hurricane_ring)Wizard Rings$(/l) when obtained"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/hurricane_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/hurricane_ring)Hurricane Wizard Ring$(/l) (62.5%)$(li)$(l:wizard/items/hurricane_ring_dragon)Hurricane Dragon Wizard Ring$(/l) (12.5%)$(li)$(l:wizard/items/mage_g_ring)Mage Wizard Ring$(/l) (12.5%)$(li)$(l:wizard/items/thunder_ring)Thunder Wizard Ring$(/l) (12.5%)"
 		},
 		{
 			"type": "patchouli:crafting",

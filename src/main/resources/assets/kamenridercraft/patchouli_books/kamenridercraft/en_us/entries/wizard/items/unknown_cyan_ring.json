@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/arsenal/fall_ring)Wizard Rings$(/l) when obtained"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/arsenal/fall_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/fall_ring)Fall Wizard Ring$(/l) (33.3%)$(li)$(l:wizard/items/time_ring)Time Wizard Ring$(/l) (33.3%)$(li)$(l:wizard/items/miracle_ring)Miracle Wizard Ring$(/l) (33.3%)"
 		},
 		{
 			"type": "patchouli:crafting",

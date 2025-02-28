@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Demushu's Cave",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:misc/blocks/demushu_boss_block)Demushu Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:misc/boss_blocks/demushu_boss_block)Demushu Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:image",

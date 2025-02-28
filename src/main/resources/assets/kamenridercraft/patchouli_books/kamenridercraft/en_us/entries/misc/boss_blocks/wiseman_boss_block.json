@@ -1,0 +1,16 @@
+{
+	"name": "Wiseman Boss Block",
+	"icon": "kamenridercraft:wiseman_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wiseman_boss_block"
+		}
+	]
+}

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Mega Bloks BASIC STANDARD 3500 Kamen Rider Shocker Base Set (toyline)$(br2)Used as the job block for a Shocker Villager"
+			"text": "Appears in:$(li)Mega Bloks BASIC STANDARD 3500 Kamen Rider Shocker Base Set (toyline)$(br2)Used as the job block for a $(l:misc/villagers/shocker_villager)Shocker Villager$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

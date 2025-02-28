@@ -1,0 +1,16 @@
+{
+	"name": "Solomon Boss Block",
+	"icon": "kamenridercraft:solomon_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/solomon_boss_block"
+		}
+	]
+}

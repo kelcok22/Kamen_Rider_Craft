@@ -1,0 +1,16 @@
+{
+	"name": "White Woz Boss Block",
+	"icon": "kamenridercraft:woz_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/woz_boss_block"
+		}
+	]
+}

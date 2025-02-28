@@ -1,0 +1,16 @@
+{
+	"name": "Lord Baron Boss Block",
+	"icon": "kamenridercraft:lord_baron_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/lord_baron_boss_block"
+		}
+	]
+}

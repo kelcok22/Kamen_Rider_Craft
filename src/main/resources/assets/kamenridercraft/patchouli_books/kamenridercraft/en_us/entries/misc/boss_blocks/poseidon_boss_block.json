@@ -1,0 +1,16 @@
+{
+	"name": "Poseidon Boss Block",
+	"icon": "kamenridercraft:poseidon_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/poseidon_boss_block"
+		}
+	]
+}

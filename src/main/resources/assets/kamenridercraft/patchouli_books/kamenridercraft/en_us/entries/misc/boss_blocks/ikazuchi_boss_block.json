@@ -1,0 +1,19 @@
+{
+	"name": "Ikazuchi Boss Block",
+	"icon": "kamenridercraft:ikazuchi_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikazuchi_boss_block",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)"
+		}
+	]
+}

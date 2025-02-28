@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mukade_goda_medal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Goda$(/l)"
+			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
 		}
 	]
 }

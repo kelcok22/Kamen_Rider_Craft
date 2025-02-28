@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/flame_ring)Wizard Rings$(/l) when obtained"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Drops $(l:wizard/items/flame_ring)Wizard Rings$(/l) when obtained$(br2)Drops:$(li)$(l:wizard/items/flame_ring)Flame Wizard Ring$(/l) (55.6%)$(li)$(l:wizard/items/flame_ring_dragon)Flame Dragon Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/special_ring)Special Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/garuda_ring)Garuda Wizard Ring$(/l) (11.1%)$(li)$(l:wizard/items/garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) (11.1%)"
 		},
 		{
 			"type": "patchouli:crafting",

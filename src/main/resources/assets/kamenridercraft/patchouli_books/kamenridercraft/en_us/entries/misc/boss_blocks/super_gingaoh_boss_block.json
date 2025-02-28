@@ -1,0 +1,16 @@
+{
+	"name": "Super GingaOh Boss Block",
+	"icon": "kamenridercraft:super_gingaoh_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/super_gingaoh_boss_block"
+		}
+	]
+}

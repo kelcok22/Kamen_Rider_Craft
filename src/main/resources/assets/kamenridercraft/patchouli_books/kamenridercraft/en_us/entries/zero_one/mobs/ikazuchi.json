@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ikazuchi",
-			"text": "Summoned from a $(l:misc/blocks/ikazuchi_boss_block)Ikazuchi Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/ikazuchi_boss_block)Ikazuchi Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

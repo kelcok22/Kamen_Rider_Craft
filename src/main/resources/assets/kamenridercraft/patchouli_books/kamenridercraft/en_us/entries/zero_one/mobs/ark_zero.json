@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ark_zero",
-			"text": "Summoned from a $(l:misc/blocks/ark_one_boss_block)Ark-One Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/boss_blocks/ark_one_boss_block)Ark-One Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",
