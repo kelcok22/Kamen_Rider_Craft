@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "block.GochizoCakeBlock",
+    "compat.JMCGochizoCakeBlock",
     "structure.JigsawPlacementExpansion",
     "structure.JigsawExpansion",
     "structure.PlaceCommandUnlimit",
