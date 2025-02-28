@@ -144,23 +144,17 @@ public class ModCommonEvents {
 		}
 
 		@SubscribeEvent
-		public void Give_Cake_Gochizo(PlayerInteractEvent.RightClickBlock event) {
-			if (!event.getLevel().isClientSide) {
+		public void Farmers_Delight_Cake_Gochizo(PlayerInteractEvent.RightClickBlock event) {
+			if (ModList.get().isLoaded("farmersdelight") && !event.getLevel().isClientSide) {
 				BlockState state = event.getLevel().getBlockState(event.getPos());
 				Player player = event.getEntity();
 
-				boolean fdKnife = (state.getBlock() instanceof CakeBlock || state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "drops_cake_slice")))) && event.getItemStack().is(ItemTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "tools/knives")));
-				boolean jmcSpatula = player.isShiftKeyDown() && event.getItemStack().is(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("jmc", "cake_spatula")));
-				boolean jmcTieredCake = ModList.get().isLoaded("jmc") && state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "cakes"))) && event.getItemStack().is(state.getBlock().asItem());
+				if (state.is(BlockTags.create(ResourceLocation.parse("kamenridercraft:fd_cakes_for_gochizo"))) && !event.getItemStack().is(ItemTags.create(ResourceLocation.fromNamespaceAndPath("farmersdelight", "tools/knives")))
+				&& player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+					if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
+					else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 
-				if (!fdKnife && !jmcSpatula && !jmcTieredCake && !(state.getBlock() instanceof CakeBlock)
-				&& (state.is(BlockTags.create(ResourceLocation.parse("c:cakes"))) || state.is(BlockTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "cakes_for_gochizo"))))) {
-					if (player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
-						if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
-						else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
-
-						player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
-					}
+					player.drop(new ItemStack(Gavv_Rider_Items.CAKE.get(new Random().nextInt(Gavv_Rider_Items.CAKE.size()))), false);
 				}
 			}
 		}
