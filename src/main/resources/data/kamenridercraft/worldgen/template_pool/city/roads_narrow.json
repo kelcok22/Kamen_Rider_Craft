@@ -4,7 +4,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 10,
+      "weight": 1,
       "element": {
         "location": "kamenridercraft:city/roads/road_narrow_straight",
         "processors": "minecraft:empty",
@@ -13,16 +13,16 @@
       }
     },
     {
-      "weight": 7,
+      "weight": 1,
       "element": {
-        "location": "kamenridercraft:city/roads/road_narrow_cross",
+        "location": "kamenridercraft:city/roads/road_narrow_intersection",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 6,
+      "weight": 1,
       "element": {
         "location": "kamenridercraft:city/roads/road_narrow_t",
         "processors": "minecraft:empty",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "weight": 6,
+      "weight": 1,
       "element": {
         "location": "kamenridercraft:city/roads/road_narrow_turn",
         "processors": "minecraft:empty",
@@ -42,7 +42,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "kamenridercraft:city/roads/road_transition_t",
+        "location": "kamenridercraft:city/roads/road_narrow_extension_2",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
@@ -51,7 +51,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "kamenridercraft:city/roads/road_transition_straight",
+        "location": "kamenridercraft:city/roads/road_narrow_extension_1",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
