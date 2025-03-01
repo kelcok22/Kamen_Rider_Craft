@@ -2,14 +2,13 @@ package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
+import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
-import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
-import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.*;
@@ -19,7 +18,6 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
-import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -27,6 +25,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
@@ -76,6 +75,7 @@ public class KamenRiderCraftCore
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer)
     {
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
        NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
@@ -174,9 +174,6 @@ public class KamenRiderCraftCore
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            Sheets.addWoodType(ModWoodTypes.HELHEIM);
-            NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
-
 
 
                 for (int i = 0; i < SHIELD_ITEM.size(); i++)
@@ -477,6 +474,11 @@ public class KamenRiderCraftCore
         }
 
         @SubscribeEvent
+        public static void registerKeys(RegisterKeyMappingsEvent event) {
+            event.register(KeyBindings.INSTANCE.BeltKey);
+        }
+
+        @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenus.RIDER_CASE_GUI.get(), RiderCaseGuiScreen::new);
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
@@ -507,6 +509,8 @@ public class KamenRiderCraftCore
 
         }
     }
+
+
 }
 
 
