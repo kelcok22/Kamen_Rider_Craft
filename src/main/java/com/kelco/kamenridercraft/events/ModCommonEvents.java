@@ -6,6 +6,7 @@ import java.util.*;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -19,9 +20,14 @@ import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.KeyMapping;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -47,7 +53,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.neoforge.common.util.Lazy;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
@@ -57,6 +66,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
+import org.lwjgl.glfw.GLFW;
 
 
 public class ModCommonEvents {
@@ -64,6 +74,16 @@ public class ModCommonEvents {
 
 	public static class EventHandler {
 
+		@SubscribeEvent
+		public void clientTick(ClientTickEvent.Post event) {
+			Minecraft minecraft = Minecraft.getInstance();
+			if(KeyBindings.INSTANCE.BeltKey.consumeClick() && minecraft.player != null) {
+				if (minecraft.player.getItemBySlot(EquipmentSlot.FEET).getItem()==Gotchard_Rider_Items.VALVARADRAW_BUCKLE.get()) {
+					minecraft.player.displayClientMessage(Component.literal("Test").withStyle(ChatFormatting.RED), true);
+				}
+			}
+
+		}
 
 		@SubscribeEvent
 		public void onPlayerTick(PlayerTickEvent.Post event) {
