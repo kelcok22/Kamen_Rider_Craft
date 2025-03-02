@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:card_warrior_kamen_rider_manga",
 			"title": " ",
-			"text": "Traded by an apprentice Librarian"
+			"text": "Traded by an apprentice $(l:misc/villagers#librarian)Librarian$(/l)"
 		}
 	]
 }

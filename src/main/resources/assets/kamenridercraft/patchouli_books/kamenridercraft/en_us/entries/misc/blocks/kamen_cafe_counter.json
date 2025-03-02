@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used as the job block for a $(l:misc/villagers/kamen_cafe_butler)Kamen Cafe Butler$(/l)"
+			"text": "Used as the job block for a $(l:misc/villagers#kamen_cafe_butler)Kamen Cafe Butler$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

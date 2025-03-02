@@ -21,7 +21,7 @@
 			"anchor": "white_color",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:tackle_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:tackle_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
 			"name": "White Color",
-			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
+			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rider3_vs_the_demon_of_general_black",
 			"title": " ",
-			"text": "Traded by a novice Librarian"
+			"text": "Traded by a novice $(l:misc/villagers#librarian)Librarian$(/l)"
 		}
 	]
 }

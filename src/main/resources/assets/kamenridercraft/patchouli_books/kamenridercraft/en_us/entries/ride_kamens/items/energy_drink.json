@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:energy_drink",
 			"title": " ",
-			"text": "Traded by an apprentice Kamen Cafe Butler"
+			"text": "Traded by an apprentice $(l:misc/villagers#kamen_cafe_butler)Kamen Cafe Butler$(/l)"
 		}
 	]
 }

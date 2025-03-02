@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_amazing_mighty_artist",
 			"title": " ",
-			"text": "Traded by a Wandering Trader"
+			"text": "Traded by a $(l:misc/villagers#wandering_trader)Wandering Trader$(/l)"
 		}
 	]
 }

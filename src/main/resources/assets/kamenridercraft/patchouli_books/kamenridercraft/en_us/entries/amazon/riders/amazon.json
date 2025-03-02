@@ -21,7 +21,7 @@
 			"anchor": "pre_amazon",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:condorer\",components:{custom_data:{slot_tex1:\"kamenridercraft:condorer_wheel_pre_amazon\"}},Count:1b},{id:\"kamenridercraft:amazonlegs\",Count:1b},{id:\"kamenridercraft:amazontroso\",Count:1b},{id:\"kamenridercraft:amazonhead\",Count:1b}]}",
 			"name": "Pre Amazon",
-			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
+			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
 		},
 		{
 			"type": "patchouli:text",

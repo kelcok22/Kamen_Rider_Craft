@@ -1,6 +1,7 @@
 {
+	"parent": "kamenridercraft:misc/misc",
     "name": "Rider Blocks",
     "description": "Every block currently available in Kamen Rider Craft.",
     "icon": "kamenridercraft:ichigo_chair",
-    "sortnum": 100
+    "sortnum": 1
 }
