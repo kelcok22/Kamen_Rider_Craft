@@ -7,10 +7,6 @@
 		{
 			"type": "patchouli:text",
 			"text": "Status effects that are unique to Kamen Rider Craft."
-		},
-		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/bakuen_no_senshi"
 		}
 	]
 }
