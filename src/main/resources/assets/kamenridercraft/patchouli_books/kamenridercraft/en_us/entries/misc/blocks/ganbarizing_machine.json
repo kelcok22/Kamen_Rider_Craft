@@ -2,7 +2,7 @@
 	"name": "Ganbarizing Machine",
 	"icon": "kamenridercraft:ganbarizing_machine",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 33,
+	"sortnum": 34,
 	"pages": [
 		{
 			"type": "patchouli:text",

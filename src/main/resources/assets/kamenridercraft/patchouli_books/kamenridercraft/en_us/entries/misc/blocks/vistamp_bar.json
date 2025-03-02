@@ -2,7 +2,7 @@
 	"name": "Vistamp Bar",
 	"icon": "kamenridercraft:vistamp_bar",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 40,
+	"sortnum": 41,
 	"pages": [
 		{
 			"type": "patchouli:text",

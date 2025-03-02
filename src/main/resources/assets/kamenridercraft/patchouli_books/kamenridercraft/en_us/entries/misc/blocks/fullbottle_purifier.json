@@ -2,7 +2,7 @@
 	"name": "Fullbottle Purifier",
 	"icon": "kamenridercraft:fullbottle_purifier",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 35,
+	"sortnum": 36,
 	"pages": [
 		{
 			"type": "patchouli:text",

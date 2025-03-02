@@ -1,0 +1,16 @@
+{
+	"name": "Kamen Cafe Counter",
+	"icon": "kamenridercraft:kamen_cafe_counter",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used as the job block for a $(l:misc/villagers/kamen_cafe_butler)Kamen Cafe Butler$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ride_kamens/kamen_cafe_counter"
+		}
+	]
+}

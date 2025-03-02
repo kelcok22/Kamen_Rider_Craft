@@ -2,7 +2,7 @@
 	"name": "Fullbottle Solidifier",
 	"icon": "kamenridercraft:fullbottle_solidifier",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 36,
+	"sortnum": 37,
 	"pages": [
 		{
 			"type": "patchouli:text",

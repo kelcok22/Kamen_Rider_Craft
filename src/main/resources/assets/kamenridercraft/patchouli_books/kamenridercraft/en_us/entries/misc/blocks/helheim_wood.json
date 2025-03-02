@@ -1,0 +1,76 @@
+{
+	"name": "Helheim Wood",
+	"icon": "kamenridercraft:helheim_log",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_log",
+			"text": "Helheim wood and Helheim trees are found throughout the forest of $(l:gaim/dimensions/helheim)Helheim$(/l). This wood type can be used just like any other type of wood."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stripped_helheim_log"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_wood"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stripped_helheim_wood"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_planks"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_pressure_plate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_button"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_fence"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_fence_gate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_door"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_trapdoor"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_sign_item",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_hanging_sign_item",
+			"text": "Block is currently unobtainable"
+		}
+	]
+}

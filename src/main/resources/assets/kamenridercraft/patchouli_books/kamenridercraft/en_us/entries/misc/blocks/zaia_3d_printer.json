@@ -2,7 +2,7 @@
 	"name": "ZAIA 3D Printer",
 	"icon": "kamenridercraft:zaia_3d_printer",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 38,
+	"sortnum": 39,
 	"pages": [
 		{
 			"type": "patchouli:text",

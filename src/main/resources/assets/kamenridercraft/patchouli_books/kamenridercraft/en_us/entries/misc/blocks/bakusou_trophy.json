@@ -2,7 +2,7 @@
 	"name": "Bakusou Trophy",
 	"icon": "kamenridercraft:bakusou_trophy",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 31,
+	"sortnum": 32,
 	"pages": [
 		{
 			"type": "patchouli:text",

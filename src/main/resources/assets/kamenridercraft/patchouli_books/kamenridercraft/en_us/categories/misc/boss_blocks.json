@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:misc/blocks",
     "name": "Boss Blocks",
-    "description": "These are blocks that spawn bosses when broken. Using a silk touch pickaxe will allow you to keep the blocks after breaking.",
+    "description": "These blocks will spawn a boss when mined by a player. Using a silk touch pickaxe will allow you to keep the blocks after breaking.",
     "icon": "kamenridercraft:ark_one_boss_block",
     "sortnum": 0
 }

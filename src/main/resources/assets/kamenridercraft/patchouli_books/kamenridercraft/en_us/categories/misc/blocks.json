@@ -1,6 +1,6 @@
 {
     "name": "Rider Blocks",
-    "description": "Every non-decor block that the mod currently adds.",
+    "description": "Every block currently available in Kamen Rider Craft.",
     "icon": "kamenridercraft:ichigo_chair",
-    "sortnum": 1000
+    "sortnum": 100
 }
