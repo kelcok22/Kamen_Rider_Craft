@@ -22,8 +22,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.kelco.kamenridercraft.item.Reboot_Rider_Items.EMPTY_VIAL;
-
 public class Build_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -42,7 +40,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SCLASH_JELLY= ITEMS.register("sclash_jelly",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottleSolidifier.BOTTLE_SOLIDIFIED));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMASH_BOTTLE = ITEMS.register("smash_bottle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
@@ -581,7 +579,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottleSolidifier.CROSSZ_SOLIDIFIED));
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_MAGMA_FULL_BOTTLE = ITEMS.register("dragon_magma_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magma","cross_z","build_driver_belt_magma",
@@ -620,7 +618,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottleSolidifier.GREASE_SOLIDIFIED));
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease_blizzard","build_driver_belt_blizzard",
@@ -652,7 +650,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottleSolidifier.ROGUE_SOLIDIFIED));
+					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIME_ROGUE_FULL_BOTTLE = ITEMS.register("prime_rogue_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","prime_rogue","build_driver_belt_prime",

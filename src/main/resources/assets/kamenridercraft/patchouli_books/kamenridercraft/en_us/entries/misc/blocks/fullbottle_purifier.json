@@ -1,0 +1,25 @@
+{
+	"name": "Fullbottle Purifier",
+	"icon": "kamenridercraft:fullbottle_purifier",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use $(l:build/items/smash_bottle)Smash Bottles$(/l) on this block to obtain Fullbottles$(br2)Drops on next page"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/fullbottle_purifier",
+			"text": "Found inside a $(l:build/structures/rogue_base)Faust Base$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops:$(li)$(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) (1.6%)$(li)$(l:build/items/tank_full_bottle)Tank Fullbottle$(/l) (1.6%)$(li)$(l:build/items/gorilla_full_bottle)Gorilla Fullbottle$(/l) (1.6%)$(li)$(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l) (1.6%)$(li)$(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) (1.6%)$(li)$(l:build/items/gatling_full_bottle)Gatling Fullbottle$(/l) (1.6%)$(li)$(l:build/items/harinezumi_full_bottle)Harinezumi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/shoubousha_full_bottle)Shoubousha Fullbottle$(/l) (1.6%)$(li)$(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l) (1.6%)$(li)$(l:build/items/comic_full_bottle)Comic Fullbottle$(/l) (1.6%)$(li)$(l:build/items/panda_full_bottle)Panda Fullbottle$(/l) (1.6%)$(li)$(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l) (1.6%)$(li)$(l:build/items/lion_full_bottle)Lion Fullbottle$(/l) (1.6%)$(li)$(l:build/items/soujiki_full_bottle)Soujiki Fullbottle$(/l) (1.6%)$(li)$(l:build/items/dragon_full_bottle)Dragon Fullbottle$(/l) (1.6%)$(li)$(l:build/items/lock_full_bottle)Lock Fullbottle$(/l) (1.6%)$(li)$(l:build/items/kaizoku_full_bottle)Kaizoku Fullbottle$(/l) (1.6%)$(li)$(l:build/items/densha_full_bottle)Densha Fullbottle$(/l) (1.6%)$(li)$(l:build/items/octopus_full_bottle)Octopus Fullbottle$(/l) (1.6%)$(li)$(l:build/items/light_full_bottle)Light Fullbottle$(/l) (1.6%)$(li)$(l:build/items/phoenix_full_bottle)Phoenix Fullbottle$(/l) (1.6%)$(li)$(l:build/items/robot_full_bottle)Robot Fullbottle$(/l) (1.6%)$(li)$(l:build/items/wolf_full_bottle)Wolf Fullbottle$(/l) (1.6%)$(li)$(l:build/items/smapho_full_bottle)Smapho Fullbottle$(/l) (1.6%)$(li)$(l:build/items/unicorn_full_bottle)Unicorn Fullbottle$(/l) (1.6%)$(li)$(l:build/items/keshigomu_full_bottle)Keshigomu Fullbottle$(/l) (1.6%)$(li)$(l:build/items/rose_full_bottle)Rose Fullbottle$(/l) (1.6%)$(li)$(l:build/items/helicopter_full_bottle)Helicopter Fullbottle$(/l) (1.6%)$(li)$(l:build/items/turtle_full_bottle)Turtle Fullbottle$(/l) (1.6%)$(li)$(l:build/items/watch_full_bottle)Watch Fullbottle$(/l) (1.6%)$(li)$(l:build/items/kuma_full_bottle)Kuma Fullbottle$(/l) (1.6%)$(li)$(l:build/items/televi_full_bottle)Televi Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:build/items/kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/camera_full_bottle)Camera Fullbottle$(/l) (1.6%)$(li)$(l:build/items/spider_full_bottle)Spider Fullbottle$(/l) (1.6%)$(li)$(l:build/items/reizouko_full_bottle)Reizouko Fullbottle$(/l) (1.6%)$(li)$(l:build/items/dog_full_bottle)Dog Fullbottle$(/l) (1.6%)$(li)$(l:build/items/mic_full_bottle)Mic Fullbottle$(/l) (1.6%)$(li)$(l:build/items/santa_claus_full_bottle)Santa Claus Fullbottle$(/l) (1.6%)$(li)$(l:build/items/cake_full_bottle)Cake Fullbottle$(/l) (1.6%)$(li)$(l:build/items/tora_full_bottle)Tora Fullbottle$(/l) (1.6%)$(li)$(l:build/items/ufo_full_bottle)Ufo Fullbottle$(/l) (1.6%)$(li)$(l:build/items/kujira_full_bottle)Kujira Fullbottle$(/l) (1.6%)$(li)$(l:build/items/jet_full_bottle)Jet Fullbottle$(/l) (1.6%)$(li)$(l:build/items/shika_full_bottle)Shika Fullbottle$(/l) (1.6%)$(li)$(l:build/items/pyramid_full_bottle)Pyramid Fullbottle$(/l) (1.6%)$(li)$(l:build/items/kirin_full_bottle)Kirin Fullbottle$(/l) (1.6%)$(li)$(l:build/items/senpuuki_full_bottle)Senpuuki Fullbottle$(/l) (1.6%)$(li)$(l:build/items/penguin_full_bottle)Penguin Fullbottle$(/l) (1.6%)$(li)$(l:build/items/skebo_full_bottle)Skebo Fullbottle$(/l) (1.6%)$(li)$(l:build/items/same_full_bottle)Same Fullbottle$(/l) (1.6%)$(li)$(l:build/items/bike_full_bottle)Bike Fullbottle$(/l) (1.6%)$(li)$(l:build/items/hachi_full_bottle)Hachi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/sensuikan_full_bottle)Sensuikan Fullbottle$(/l) (1.6%)$(li)$(l:build/items/sai_full_bottle)Sai Fullbottle$(/l) (1.6%)$(li)$(l:build/items/dryer_full_bottle)Dryer Fullbottle$(/l) (1.6%)$(li)$(l:build/items/bat_full_bottle)Bat Fullbottle$(/l) (1.6%)$(li)$(l:build/items/engine_full_bottle)Engine Fullbottle$(/l) (1.6%)$(li)$(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) (1.6%)$(li)$(l:build/items/magnet_full_bottle)Magnet Fullbottle$(/l) (1.6%)$(li)$(l:build/items/scorpion_full_bottle)Scorpion Fullbottle$(/l) (1.6%)$(li)$(l:build/items/gold_full_bottle)Gold Fullbottle$(/l) (1.6%)$(li)$(l:build/items/gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) (1.6%)$(li)$(l:build/items/silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l) (1.6%)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Artificial Gravity Block",
+	"icon": "kamenridercraft:artificial_gravity_block",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Gives Gravity IV to nearby entities when powered with redstone"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:artificial_gravity_block",
+			"title": " ",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		}
+	]
+}

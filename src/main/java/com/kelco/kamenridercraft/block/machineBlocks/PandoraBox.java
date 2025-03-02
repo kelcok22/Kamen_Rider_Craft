@@ -54,29 +54,14 @@ public class PandoraBox extends MachineBlock {
         return PushReaction.PUSH_ONLY;
     }
 
-    private Item getBottleDrop(int num) {
-        Random generator = new Random();
-        if (num==1){
-            int rand = generator.nextInt(PANDORA_PANEL_R.size());
-            return PANDORA_PANEL_R.get(rand);
-        } else {
-            int rand = generator.nextInt(PANDORA_BOTTLE.size());
-            return PANDORA_BOTTLE.get(rand);
-        }
-    }
-
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
-                process(player, level, pos, hand, getBottleDrop(0));
+                process(player, level, pos, hand, Build_Rider_Items.PANDORA_BOTTLE.get());
                 return ItemInteractionResult.SUCCESS;
             }
-
-
-
-
         }
         return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }

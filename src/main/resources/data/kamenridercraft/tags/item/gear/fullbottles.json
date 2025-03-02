@@ -1,11 +1,5 @@
-{
-  "values": [
 	"kamenridercraft:rabbit_full_bottle",
 	"kamenridercraft:tank_full_bottle",
-	"kamenridercraft:rabbittank_sparkling_full_bottle",
-	"kamenridercraft:fullfull_rabbit_tank_bottle",
-	"kamenridercraft:genius_full_bottle",
-	"kamenridercraft:cross_z_build_can",
 	"kamenridercraft:gorilla_full_bottle",
 	"kamenridercraft:diamond_full_bottle",
 	"kamenridercraft:taka_full_bottle",
@@ -68,17 +62,3 @@
 	"kamenridercraft:gold_full_bottle",
 	"kamenridercraft:gold_rabbit_full_bottle",
 	"kamenridercraft:silver_dragon_full_bottle",
-	"#kamenridercraft:gear/legend_rider/fullbottles",
-	"kamenridercraft:dragon_magma_full_bottle",
-	"kamenridercraft:muscle_galaxy_full_bottle",
-	"kamenridercraft:north_blizzard_full_bottle",
-	"kamenridercraft:grease_full_bottle",
-	"kamenridercraft:crocodile_crack_full_bottle",
-	"kamenridercraft:prime_rogue_full_bottle",
-    "kamenridercraft:evol_x_full_bottle",
-	"kamenridercraft:killbus_spider_full_bottle",
-	"kamenridercraft:metal_tank_tank_full_bottle",
-	"kamenridercraft:metal_full_bottle",
-	"#kamenridercraft:gear/lost_fullbottles"
-  ]
-}

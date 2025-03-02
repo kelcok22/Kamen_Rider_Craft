@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)"
+			"text": "Mine this block to obtain $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

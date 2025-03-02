@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sclash_jelly",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
+			"text": "Obtained by using $(l:build/items/full_bottle)Empty Bottles$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
 		}
 	]
 }

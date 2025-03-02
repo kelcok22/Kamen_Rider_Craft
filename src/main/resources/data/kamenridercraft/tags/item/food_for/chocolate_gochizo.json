@@ -10,6 +10,10 @@
         "required": false
     },
     {
+        "id": "create:bar_of_chocolate",
+        "required": false
+    },
+    {
         "id": "pamhc2foodcore:chocolatecaramelfudgeitem",
         "required": false
     },

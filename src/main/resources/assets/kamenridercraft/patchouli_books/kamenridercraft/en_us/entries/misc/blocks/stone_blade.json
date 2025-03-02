@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get Blade's $(l:blade/items/bladecard)Rouze Cards$(/l)$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain Blade's $(l:blade/items/bladecard)Rouze Cards$(/l)$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",

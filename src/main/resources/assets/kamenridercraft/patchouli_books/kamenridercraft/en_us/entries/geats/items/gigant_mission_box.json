@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Gigant Buckle when right-clicked"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Gigant Buckle when right-clicked$(br2)Drops:$(li)$(l:geats/items/powered_builder_raise_buckle)Powered Builder Buckle$(/l) (12.5%)$(li)$(l:geats/items/gigant_sword_buckle)Gigant Sword Buckle$(/l) (12.5%)$(li)$(l:geats/items/gigant_hammer_buckle)Gigant Hammer Buckle$(/l) (12.5%)$(li)$(l:geats/items/gigant_blaster_buckle)Gigant Blaster Buckle$(/l) (12.5%)$(li)$(l:geats/items/magnum_shooter_40x_raise_buckle)Magnum Shooter 40X Buckle$(/l) (12.5%)$(li)$(l:geats/items/ninja_dueler_raise_buckle)Ninja Dueler Buckle$(/l) (12.5%)$(li)$(l:geats/items/zombie_breaker_raise_buckle)Zombie Breaker Buckle$(/l) (12.5%)$(li)$(l:geats/items/beat_axe_raise_buckle)Beat Axe Buckle$(/l) (12.5%)"
 		},
 		{
 			"type": "patchouli:spotlight",
