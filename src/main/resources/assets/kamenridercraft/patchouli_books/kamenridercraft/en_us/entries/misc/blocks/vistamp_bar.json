@@ -1,0 +1,24 @@
+{
+	"name": "Vistamp Bar",
+	"icon": "kamenridercraft:vistamp_bar",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use blank Vistamps on this block to obtain different Vistamps$(br2)Drops on next page"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/vistamp_bar"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops with a $(l:revice/items/proto_vistamp)Blank Vistamp$(/l):$(li)$(l:revice/items/rex_vistamp)Rex Vistamp$(/l) (8.6%)$(li)$(l:revice/items/eagle_vistamp)Eagle Vistamp$(/l) (6.4%)$(li)$(l:revice/items/mammoth_vistamp)Mammoth Vistamp$(/l) (6.4%)$(li)$(l:revice/items/megalodon_vistamp)Megalodon Vistamp$(/l) (6.4%)$(li)$(l:revice/items/ptera_vistamp)Ptera Vistamp$(/l) (3.6%)$(li)$(l:revice/items/lion_vistamp)Lion Vistamp$(/l) (5.7%)$(li)$(l:revice/items/jackal_vistamp)Jackal Vistamp$(/l) (5.7%)$(li)$(l:revice/items/kong_vistamp)Kong Vistamp$(/l) (5.7%)$(li)$(l:revice/items/kamakiri_vistamp)Kamakiri Vistamp$(/l) (5.7%)$(li)$(l:revice/items/brachio_vistamp)Brachio Vistamp$(/l) (5.7%)$(li)$(l:revice/items/neo_batta_vistamp)Neo Batta Vistamp$(/l) (3.6%)$(li)$(l:revice/items/kangaroo_vistamp)Kangaroo Vistamp$(/l) (2.9%)$(li)$(l:revice/items/crow_vistamp)Crow Vistamp$(/l) (0.7%)$(li)$(l:revice/items/spider_vistamp)Spider Vistamp$(/l) (4.3%)$(li)$(l:revice/items/batta_vistamp)Batta Vistamp$(/l) (2.9%)$(li)$(l:revice/items/mogura_vistamp)Mogura Vistamp$(/l) (2.9%)$(li)$(l:revice/items/scorpion_vistamp)Scorpion Vistamp$(/l) (2.9%)$(li)$(l:revice/items/anomalocaris_vistamp)Anomalocaris Vistamp$(/l) (2.1%)$(li)$(l:revice/items/cobra_vistamp)Cobra Vistamp$(/l) (3.6%)$(li)$(l:revice/items/turtle_vistamp)Turtle Vistamp$(/l) (2.1%)$(li)$(l:revice/items/kujaku_vistamp)Kujaku Vistamp$(/l) (2.1%)$(li)$(l:revice/items/hashibiroko_vistamp)Hashibiroko Vistamp$(/l) (2.1%)$(li)$(l:revice/items/tricera_vistamp)Tricera Vistamp$(/l) (2.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:revice/items/crocodile_vistamp)Crocodile Vistamp$(/l) (0.7%)$(li)$(l:revice/items/komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l) (0.7%)$(li)$(l:revice/items/kajiki_vistamp)Kajiki Vistamp$(/l) (0.7%)$(li)$(l:revice/items/hedgehog_vistamp)Hedgehog Vistamp$(/l) (0.7%)$(li)$(l:revice/items/king_crab_vistamp)King Crab Vistamp$(/l) (0.7%)$(li)$(l:revice/items/kurosai_vistamp)Kurosai Vistamp$(/l) (0.7%)$(li)$(l:revice/items/octopus_vistamp)Octopus Vistamp$(/l) (0.7%)$(li)$(l:revice/items/oomukade_vistamp)Oomukade Vistamp$(/l) (0.7%)$(br)With a $(l:revice/items/barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory:$(li)$(l:revice/items/volcano_vistamp)Volcano Vistamp$(/l) (0.7%)$(br2)Drops with a $(l:revice/items/proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l):$(li)$(l:revice/items/queen_bee_vistamp)Queen Bee Vistamp$(/l)$(br2)Drops with a $(l:revice/items/proto_planarian_vistamp)Planarian Proto Vistamp$(/l):$(li)$(l:revice/items/planarian_vistamp)Planarian Vistamp$(/l)$(br2)Drops with a $(l:revice/items/proto_chameleon_vistamp)Chameleon Proto Vistamp$(/l):$(li)$(l:revice/items/chameleon_vistamp)Chameleon Vistamp$(/l)$(br2)Drops with a $(l:revice/items/daiouika_vistamp)Daiouika Proto Vistamp$(/l):$(li)$(l:revice/items/kraken_vistamp)Kraken Vistamp$(/l)"
+		}
+	]
+}

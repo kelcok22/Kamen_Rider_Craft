@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Use $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on this block to mutate the cells into different variants$(br2)Drops:$(li)$(l:amazons/items/omega_amazon_cell_vial)Amazon Cell Vial (Omega)$(/l) (38.5%)$(li)$(l:amazons/items/alpha_amazon_cell_vial)Amazon Cell Vial (Alpha)$(/l) (38.5%)$(li)$(l:amazons/items/sigma_amazon_cell_vial)Amazon Cell Vial (Sigma)$(/l) (15.4%)$(li)$(l:amazons/items/neo_amazon_cell_vial)Amazon Cell Vial (Neo)$(/l) (7.7%)"
+			"text": "Use $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on this block to obtain different Amazon Cell variants$(br2)Drops:$(li)$(l:amazons/items/omega_amazon_cell_vial)Amazon Cell Vial (Omega)$(/l) (38.5%)$(li)$(l:amazons/items/alpha_amazon_cell_vial)Amazon Cell Vial (Alpha)$(/l) (38.5%)$(li)$(l:amazons/items/sigma_amazon_cell_vial)Amazon Cell Vial (Sigma)$(/l) (15.4%)$(li)$(l:amazons/items/neo_amazon_cell_vial)Amazon Cell Vial (Neo)$(/l) (7.7%)"
 		},
 		{
 			"type": "patchouli:crafting",

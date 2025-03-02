@@ -1,0 +1,19 @@
+{
+	"name": "Wizard Gem Stome Ore",
+	"icon": "kamenridercraft:wizardgemblock",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to obtain $(l:wizard/items/wizardgem)Magic Stones$(/l)$(br2)Requires an iron pickaxe or better"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgemblock",
+			"title": " ",
+			"text": "Drops:$(li)$(l:wizard/items/wizardgem)Orange Magic Stone$(/l) (50%)$(li)$(l:wizard/items/wizardgem_red)Red Magic Stone$(/l) (11.9%)$(li)$(l:wizard/items/wizardgem_blue)Blue Magic Stone$(/l) (11.9%)$(li)$(l:wizard/items/wizardgem_green)Green Magic Stone$(/l) (11.9%)$(li)$(l:wizard/items/wizardgem_yellow)Yellow Magic Stone$(/l) (11.9%)$(li)$(l:wizard/items/wizardgem_violet)Violet Magic Stone$(/l) (2.4%)"
+		}
+	]
+}

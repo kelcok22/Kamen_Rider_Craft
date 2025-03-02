@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get Kuuga's $(l:kuuga/items/kuuga_mighty)Amadam$(/l) stones$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain Kuuga's $(l:kuuga/items/kuuga_mighty)Amadam$(/l) stones$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",

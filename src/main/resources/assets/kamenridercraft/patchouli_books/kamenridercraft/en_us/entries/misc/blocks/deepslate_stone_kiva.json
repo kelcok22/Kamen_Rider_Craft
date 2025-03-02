@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get Kiva's $(l:kiva/items/wakeupfuestle)Fuestles$(/l)$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain Kiva's $(l:kiva/items/wakeupfuestle)Fuestles$(/l)$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",

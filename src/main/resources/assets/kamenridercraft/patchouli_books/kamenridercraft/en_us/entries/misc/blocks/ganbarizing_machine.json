@@ -1,0 +1,16 @@
+{
+	"name": "Ganbarizing Machine",
+	"icon": "kamenridercraft:ganbarizing_machine",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use $(l:ex_aid/items/blank_gashat)unfinished Gashats$(/l) on this block to obtain Legend Rider Gashats$(br2)Drops:$(li)$(l:ex_aid/items/kamen_rider_build_gashat)Kamen Rider Build Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/kaigan_ghost_gashat)Kaigan Ghost Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/full_throttle_drive_gashat)Full Throttle Drive Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/toukenden_gaim_gashat)Toukenden Gaim Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/magic_the_wizard_gashat)Magic The Wizard Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/space_galaxy_fourze_gashat)Space Galaxy Fourze Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/jungle_ooo_gashat)Jungle OOO Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/detective_double_gashat)Detective Double Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/dokidoki_makai_castle_kiva_gashat)Doki Doki Makai Castle Kiva Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/time_express_den_o_gashat)Time Express Den-O Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/insect_wars_kabuto_gashat)Insect Wars Kabuto Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/taiko_master_hibiki_gashat)Taiko Master Hibiki Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/king_of_poker_blade_gashat)King of Poker Blade Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/moshi_moshi_faiz_gashat)Moshi Moshi Faiz Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/mirror_labryinth_ryuki_gashat)Mirror Labyrinth Ryuki Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/agito_of_the_sun_gashat)Agito of the Sun Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/adventure_guy_kuuga_gashat)Adventure Guy Kuuga Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/lets_go_ichigou_gashat)Let's Go Ichigou Gashat$(/l) (5.3%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ganbarizing_machine"
+		}
+	]
+}

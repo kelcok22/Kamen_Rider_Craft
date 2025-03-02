@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get Hibiki's $(l:hibiki/items/henshin_onsa)Henshin Onsa$(/l), $(l:hibiki/items/henshin_onibue_ibuki)Henshin Onibue$(/l), and $(l:hibiki/items/henshin_kigen_todoroki)Henshin Kigen$(/l)$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain Hibiki's $(l:hibiki/items/henshin_onsa)Henshin Onsa$(/l), $(l:hibiki/items/henshin_onibue_ibuki)Henshin Onibue$(/l), and $(l:hibiki/items/henshin_kigen_todoroki)Henshin Kigen$(/l)$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -38,7 +38,7 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> REX_VISTAMP = ITEMS.register("rex_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","revi","revice_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).addAlternative(REX_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).addAlternative(REX_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 12).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_BARID_REX_VISTAMP = ITEMS.register("barid_rex_vistamp_closed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
@@ -180,7 +180,7 @@ public class Revice_Rider_Items {
 	public static final DeferredItem<Item> PTERA_VISTAMP = ITEMS.register("ptera_vistamp",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_ptera","revi","revice_driver_belt_p",
                 new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).AddToList(VistampBar.PROTO_VISTAMP, 8).AddToList(RiderTabs.REVICE_TAB_ITEM));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> LION_VISTAMP_VICE = ITEMS.register("lion_vistamp_vice",
         () -> new RiderFormChangeItem(new Item.Properties(),0,"_lion","vice","buddy_buckle_belt",
@@ -405,7 +405,7 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_anomalocaris","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
-					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",

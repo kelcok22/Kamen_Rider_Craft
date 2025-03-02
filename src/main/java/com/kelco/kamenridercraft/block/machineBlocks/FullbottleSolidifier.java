@@ -6,7 +6,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
@@ -18,17 +17,10 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 
 public class FullbottleSolidifier extends MachineBlock {
-
-	  public static List<Item> GREASE_SOLIDIFIED= new ArrayList<Item>();
-	  public static List<Item> CROSSZ_SOLIDIFIED= new ArrayList<Item>();
-      public static List<Item> ROGUE_SOLIDIFIED= new ArrayList<Item>();
-    public static List<Item> BOTTLE_SOLIDIFIED= new ArrayList<Item>();
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
@@ -50,41 +42,24 @@ public class FullbottleSolidifier extends MachineBlock {
         return PushReaction.PUSH_ONLY;
      }
 
-     private Item getjellyDrop(int num) {
- 		Random generator = new Random();
- 		if (num==1){
- 			int rand = generator.nextInt(GREASE_SOLIDIFIED.size());
- 			return GREASE_SOLIDIFIED.get(rand);
- 		} else if (num==2){
-            int rand = generator.nextInt(CROSSZ_SOLIDIFIED.size());
-            return CROSSZ_SOLIDIFIED.get(rand);
-        } else if (num==3){
-            int rand = generator.nextInt(ROGUE_SOLIDIFIED.size());
-            return ROGUE_SOLIDIFIED.get(rand);
-        } else{
-            int rand = generator.nextInt(BOTTLE_SOLIDIFIED.size());
-            return BOTTLE_SOLIDIFIED.get(rand);
-        }
- 	}
-
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 
         if (!level.isClientSide()) {
            if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
-                process(player, level, pos, hand, getjellyDrop(0));
+                process(player, level, pos, hand, Build_Rider_Items.SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
            else  if (player.getItemInHand(hand).getItem() == Build_Rider_Items.ROBOT_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, getjellyDrop(1));
+                process(player, level, pos, hand, Build_Rider_Items.ROBOT_SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
 			else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.DRAGON_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, getjellyDrop(2));
+                process(player, level, pos, hand, Build_Rider_Items.DRAGON_SCLASH_JELLY.get());
                 return ItemInteractionResult.SUCCESS;
             }
             else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.LOST_BAT_FULL_BOTTLE.get()){
-                process(player, level, pos, hand, getjellyDrop(3));
+                process(player, level, pos, hand, Build_Rider_Items.CROCODILE_CRACK_FULL_BOTTLE.get());
                 return ItemInteractionResult.SUCCESS;
             }
 

@@ -1,0 +1,16 @@
+{
+	"name": "Fullbottle Solidifier",
+	"icon": "kamenridercraft:fullbottle_solidifier",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Use different Fullbottles on this block to obtain Sclashjellies$(br2)Drops:$(li)$(l:build/items/sclash_jelly)Empty Sclashjelly$(/l) (from an $(l:build/items/full_bottle)Empty Bottle$(/l))$(li)$(l:build/items/dragon_sclash_jelly)Dragon Sclashjelly$(/l) (from a $(l:build/items/dragon_full_bottle)Dragon Fullbottle$(/l))$(li)$(l:build/items/robot_sclash_jelly)Robot Sclashjelly$(/l) (from a $(l:build/items/robot_full_bottle)Robot Fullbottle$(/l))$(li)$(l:build/items/crocodile_crack_full_bottle)Crocodile Crack Fullbottle$(/l) (from a $(l:build/items/lost_bat_full_bottle)Lost Bat Fullbottle$(/l))"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/fullbottle_solidifier"
+		}
+	]
+}

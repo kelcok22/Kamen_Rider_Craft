@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to get various Advent Cards$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain various Advent Cards$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",
