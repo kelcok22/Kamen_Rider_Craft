@@ -2,7 +2,7 @@
 	"name": "Pandora Box",
 	"icon": "kamenridercraft:pandora_box",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 34,
+	"sortnum": 35,
 	"pages": [
 		{
 			"type": "patchouli:text",

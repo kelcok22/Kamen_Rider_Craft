@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:orange_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
 		}
 	]
 }

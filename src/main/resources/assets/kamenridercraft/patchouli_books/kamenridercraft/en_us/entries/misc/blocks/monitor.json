@@ -1,8 +1,8 @@
 {
 	"name": "Monitor",
 	"icon": "kamenridercraft:monitor",
-	"category": "kamenridercraft:misc/decor",
-	"sortnum": 10,
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

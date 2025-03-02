@@ -2,7 +2,7 @@
 	"name": "HIDEN 3D Printer",
 	"icon": "kamenridercraft:hiden_3d_printer",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 37,
+	"sortnum": 38,
 	"pages": [
 		{
 			"type": "patchouli:text",

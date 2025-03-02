@@ -1,0 +1,19 @@
+{
+	"name": "Helheim Sapling",
+	"icon": "kamenridercraft:helheim_sapling",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used to plant Helheim trees (can be grown outside of Helheim)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_sapling",
+			"title": " ",
+			"text": "Found on Helheim trees"
+		}
+	]
+}

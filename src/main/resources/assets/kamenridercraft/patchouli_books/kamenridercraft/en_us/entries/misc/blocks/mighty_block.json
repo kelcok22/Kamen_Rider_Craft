@@ -1,8 +1,8 @@
 {
-	"name": "Bang Bang Drum",
-	"icon": "kamenridercraft:bang_bang_drum",
+	"name": "Mighty Block",
+	"icon": "kamenridercraft:mighty_block",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 31,
+	"sortnum": 30,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -11,9 +11,9 @@
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:bang_bang_drum",
+			"item": "kamenridercraft:mighty_block",
 			"title": " ",
-			"text": "$(li)$(l:ex_aid/arsenal/reverse_energy_item)Reverse Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/giant_energy_item)Giant Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/liquid_energy_item)Liquid Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/dark_energy_item)Dark Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/balloon_energy_item)Balloon Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/end_energy_item)End Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/halt_energy_item)Halt Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/lucky_energy_item)Lucky Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/recover_energy_item)Recover Energy Item$(/l) (4%)$(br2)Spawns when $(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l) is summoned"
+			"text": "$(li)$(l:ex_aid/arsenal/reverse_energy_item)Reverse Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/giant_energy_item)Giant Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/liquid_energy_item)Liquid Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/dark_energy_item)Dark Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/balloon_energy_item)Balloon Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/end_energy_item)End Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/halt_energy_item)Halt Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/lucky_energy_item)Lucky Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/recover_energy_item)Recover Energy Item$(/l) (4%)$(br2)Spawns when $(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l) is summoned$(br)Spawns when $(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l) is summoned"
 		}
 	]
 }

@@ -1,0 +1,645 @@
+{
+	"name": "Decor Blocks",
+	"icon": "kamenridercraft:planks_light_blue",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 999,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Kamen Rider Craft also includes a selection of decorational blocks, many of which are used in the various structures in the mod."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "overlord_oopart",
+			"link_recipe": true,
+			"item": "kamenridercraft:overlord_oopart",
+			"text": "Found inside an $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "overlord_oopart2",
+			"link_recipe": true,
+			"item": "kamenridercraft:overlord_oopart2",
+			"text": "Found inside an $(l:agito/structures/overlord_oopart)Overlord's Out-of-place Artifact$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "taddle_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_brick",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "taddle_wall",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_wall",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_door",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)$(br2)Only opens when powered with redstone"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "pure_gaia_memory_block",
+			"recipe": "kamenridercraft:w/pure_gaia_memory_block",
+			"text": "Found inside the $(l:w/structures/earths_core)Earth's Core$(/l)$(br2)Drops $(l:w/items/gaiamemory)Gaia Memory Shards$(/l) when broken"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "ginga_meteor",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_meteor",
+			"text": "Makes up the entirety of $(l:zi_o/structures/ginga_meteor)Ginga's Meteor$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "counter_95do",
+			"link_recipe": true,
+			"item": "kamenridercraft:counter_95do",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "kuruma_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuruma_brick",
+			"text": "Makes up the walls of the Kuruma Center",
+			"future_text": "Makes up the walls of the $(l:misc/city/kuruma_center)Kuruma Center$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_big_oak_golden_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_big_oak_golden_trim",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_brown",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_brown",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_dark_blue",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_dark_blue",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_light_blue",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_light_blue",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_white",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_white",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "quartz_block_gold_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:quartz_block_gold_trim",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "spruce_flooring",
+			"link_recipe": true,
+			"item": "kamenridercraft:spruce_flooring",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "imagin_sand_block",
+			"link_recipe": true,
+			"item": "kamenridercraft:imagin_sand_block",
+			"text": "Found throughout the $(l:den_o/dimensions/sands_of_time)Sands of Time$(/l)$(br2)Drops $(l:den_o/items/imagin_sand)Imagin Sand$(/l) when broken"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior",
+			"recipe": "kamenridercraft:den_o/denliner_interior"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_darker",
+			"recipe": "kamenridercraft:den_o/denliner_interior_darker"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_with_line",
+			"recipe": "kamenridercraft:den_o/denliner_interior_with_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_windo",
+			"recipe": "kamenridercraft:den_o/denliner_interior_windo"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_start_line",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_start_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line_ikazuchi",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line_ikazuchi"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line_rekkou",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line_rekkou"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_roof",
+			"recipe": "kamenridercraft:den_o/denliner_roof"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_top",
+			"recipe": "kamenridercraft:den_o/denliner_logo_top"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/denliner_logo_bottom"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_side",
+			"recipe": "kamenridercraft:den_o/denliner_logo_side"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_sider",
+			"recipe": "kamenridercraft:den_o/denliner_logo_sider"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass",
+			"recipe": "kamenridercraft:den_o/denliner_glass"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass2",
+			"recipe": "kamenridercraft:den_o/denliner_glass2"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass3",
+			"recipe": "kamenridercraft:den_o/denliner_glass3"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass_ikazuchi",
+			"recipe": "kamenridercraft:den_o/denliner_glass_ikazuchi"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass_rekkou",
+			"recipe": "kamenridercraft:den_o/denliner_glass_rekkou"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "nega_denliner_glass",
+			"recipe": "kamenridercraft:den_o/nega_denliner_glass"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_gold",
+			"recipe": "kamenridercraft:den_o/denliner_gold"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel",
+			"recipe": "kamenridercraft:den_o/denliner_matel"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_top",
+			"recipe": "kamenridercraft:den_o/denliner_matel_top"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_top2",
+			"recipe": "kamenridercraft:den_o/denliner_matel_top2"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_side",
+			"recipe": "kamenridercraft:den_o/denliner_matel_side"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_dark",
+			"recipe": "kamenridercraft:den_o/denliner_matel_dark"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_dark_line",
+			"recipe": "kamenridercraft:den_o/denliner_matel_dark_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_interior",
+			"recipe": "kamenridercraft:den_o/new_denliner_interior"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_side_with_line",
+			"recipe": "kamenridercraft:den_o/new_denliner_side_with_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_side_with_start_line",
+			"recipe": "kamenridercraft:den_o/new_denliner_side_with_start_line"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_logo_top",
+			"recipe": "kamenridercraft:den_o/new_denliner_logo_top"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/new_denliner_logo_bottom"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_top",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_top"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_top2",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_top2"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_side",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_side"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_red",
+			"recipe": "kamenridercraft:den_o/king_liner_red"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_top",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_top"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_bottom"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_side",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_side"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_sider",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_sider"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_windo",
+			"recipe": "kamenridercraft:den_o/king_liner_windo"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_gold",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_gold"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_green",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_green"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_windo",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_windo"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_top",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_top",
+			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_bottom",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_bottom",
+			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_side",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_side",
+			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_sider",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_sider",
+			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)"
+        },
+		{
+			"type": "patchouli:crafting",
+			"anchor": "zero_liner_green",
+			"recipe": "kamenridercraft:den_o/zero_liner_green"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_light",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_light",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan_light",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan_light",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan2",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan2",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_computer_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_computer_stairs",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "stone_flooring",
+			"link_recipe": true,
+			"item": "kamenridercraft:stone_flooring",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_bookshelf",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_bookshelf",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_brick",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_stairs",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_trim",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_block",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_block",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_logo",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_logo",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_tabel_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_tabel_stairs",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_tabel_top",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_tabel_top",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood_stairs",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_stairs",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_sword_blade",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_sword_blade",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood_trim",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood2",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood2",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_arch",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_arch",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:wallplate",
+			"text": "Found inside several structures, notably $(l:fourze/structures/m_bus)M-BUS$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "hazard_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:hazard_wallplate",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "white_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_wallplate",
+			"text": "Found inside several structures, notably $(l:fourze/structures/m_bus)M-BUS$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wooden_panel",
+			"link_recipe": true,
+			"item": "kamenridercraft:wooden_panel",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wooden_panel2",
+			"link_recipe": true,
+			"item": "kamenridercraft:wooden_panel2",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cornerstore_sign",
+			"link_recipe": true,
+			"item": "kamenridercraft:cornerstore_sign",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "blue_rose",
+			"link_recipe": true,
+			"item": "kamenridercraft:blue_rose",
+			"text": "Drops from:$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)$(br2)A flower for decoration"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant",
+			"text": "Found throughout $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_2",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_2",
+			"text": "Found throughout $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_3",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_3",
+			"text": "Found throughout $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_4",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_4",
+			"text": "Found throughout $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "steel_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:steel_ladder",
+			"text": "Found outside the $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_ladder",
+			"text": "Found inside the $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "drive_pit_logo",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_pit_logo",
+			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "drive_pit_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_pit_ladder",
+			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wallplate_grate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:wallplate_grate_slab",
+			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "glass_door",
+			"link_recipe": true,
+			"item": "kamenridercraft:glass_door",
+			"text": "Found inside various $(l:misc/city/city)city buildings$(/l)"
+		}
+	]
+}

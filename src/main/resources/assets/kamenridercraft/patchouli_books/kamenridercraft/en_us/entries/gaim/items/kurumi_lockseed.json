@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kurumi_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/decor/helheim_vine)Helheim Vine$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
 		}
 	]
 }

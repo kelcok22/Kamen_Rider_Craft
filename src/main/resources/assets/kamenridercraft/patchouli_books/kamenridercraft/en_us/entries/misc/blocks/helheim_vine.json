@@ -1,0 +1,19 @@
+{
+	"name": "Helheim Vine",
+	"icon": "kamenridercraft:helheim_vine",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine these vines to obtain $(l:gaim/items/orange_lockseed)Lockseeds$(/l)$(br2)Drops:$(li)$(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (18.8%)$(li)$(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l) (12.5%)$(li)$(l:gaim/items/kurumi_lockseed)Kurumi Lockseed$(/l) (12.5%)$(li)$(l:gaim/items/donguri_lockseed)Donguri Lockseed$(/l) (12.5%)$(li)$(l:gaim/items/melon_lockseed)Melon Lockseed$(/l) (6.3%)$(li)$(l:gaim/items/pine_lockseed)Pine Lockseed$(/l) (6.3%)$(li)$(l:gaim/items/ichigo_lockseed)Ichigo Lockseed$(/l) (4.4%)$(li)$(l:gaim/items/orange_lockseed)Orange Lockseed$(/l) (6.3%)$(li)$(l:gaim/items/banana_lockseed)Banana Lockseed$(/l) (6.3%)$(li)$(l:gaim/items/budou_lockseed)Budou Lockseed$(/l) (6.3%)$(li)$(l:gaim/items/suika_lockseed)Suika Lockseed$(/l) (0.6%)$(li)$(l:gaim/items/mango_lockseed)Mango Lockseed$(/l) (1.9%)$(li)$(l:gaim/items/durian_lockseed)Durian Lockseed$(/l) (3.8%)$(li)$(l:gaim/items/kiwi_lockseed)Kiwi Lockseed$(/l) (1.9%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_vine",
+			"title": " ",
+			"text": "Found on Helheim trees"
+		}
+	]
+}

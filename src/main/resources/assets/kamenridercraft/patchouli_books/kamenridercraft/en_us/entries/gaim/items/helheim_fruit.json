@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:helheim_fruit",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/decor/helheim_leaves)Helheim Leaves$(/l)"
+			"text": "Drops from:$(li)Helheim Leaves"
 		}
 	]
 }

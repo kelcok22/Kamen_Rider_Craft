@@ -2,7 +2,7 @@
 	"name": "Sword of Logos Book Analyzer",
 	"icon": "kamenridercraft:sword_of_logos_book_analyzer",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 39,
+	"sortnum": 40,
 	"pages": [
 		{
 			"type": "patchouli:text",
