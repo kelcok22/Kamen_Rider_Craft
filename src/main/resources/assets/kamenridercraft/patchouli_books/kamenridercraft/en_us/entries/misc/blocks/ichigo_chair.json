@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ichigo_chair",
 			"title": " ",
-			"text": "The greatest block to ever exist, this block is traded by a journeyman Shocker Villager"
+			"text": "Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
 		}
 	]
 }

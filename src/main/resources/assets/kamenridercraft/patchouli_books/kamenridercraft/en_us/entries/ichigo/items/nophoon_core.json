@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nophoon_core",
 			"title": " ",
-			"text": "Traded by a journeyman Shocker Villager"
+			"text": "Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
 		}
 	]
 }

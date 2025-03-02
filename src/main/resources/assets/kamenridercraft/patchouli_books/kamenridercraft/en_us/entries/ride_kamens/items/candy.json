@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:candy",
 			"title": " ",
-			"text": "Traded by a novice Kamen Cafe Butler"
+			"text": "Traded by a novice $(l:misc/villagers#kamen_cafe_butler)Kamen Cafe Butler$(/l)"
 		}
 	]
 }

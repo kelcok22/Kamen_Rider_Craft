@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zo_stone",
 			"title": " ",
-			"text": "Traded by a novice Shocker Villager"
+			"text": "Traded by a novice $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
 		}
 	]
 }

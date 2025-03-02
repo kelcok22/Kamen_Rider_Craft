@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sinister_pachinko_ball",
 			"title": " ",
-			"text": "Traded by an apprentice Shocker Villager"
+			"text": "Traded by an apprentice $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
 		}
 	]
 }

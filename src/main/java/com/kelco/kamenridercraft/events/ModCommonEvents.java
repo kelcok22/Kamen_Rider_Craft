@@ -274,15 +274,12 @@ public class ModCommonEvents {
 		@SubscribeEvent
 		public void addCustomWandererTrades(WandererTradesEvent event) {
 			List<ItemListing> trades = event.getGenericTrades();
-			ItemStack stack = new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1);
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
-					stack, 10, 8, 0.02F));
-
+					new ItemStack(Rider_Blocks.GINGA_METEOR.get(), 1), 10, 8, 0.02F));
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
 					new ItemStack(Rider_Blocks.HELHEIM_SAPLING.get(), 1), 10, 8, 0.02F));
-
 			trades.add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Items.EMERALD, 2),
 					new ItemStack(Miscellaneous_Rider_Items.KUUGA_AMAZING_MIGHTY_ARTIST.get(), 1), 10, 8, 0.02F));
@@ -291,196 +288,75 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void addCustomTrades(VillagerTradesEvent event) {
+			Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
 			if (event.getType() == VillagerProfession.LIBRARIAN) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == VillagerProfession.LIBRARIAN) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Kuuga_Rider_Items.KUUGA_MANGA.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Ichigo_Rider_Items.RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == VillagerProfession.LIBRARIAN) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Modded_item_core.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Kuuga_Rider_Items.KUUGA_MANGA.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.PREFECTER.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Modded_item_core.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1), 10, 8, 0.02F));
+			} 
+			else if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Ichigo_Rider_Items.PREFECTER.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.J_STONE.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Modded_item_core.SHOCKER_EMBLEM.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.ZO_STONE.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Ichigo_Rider_Items.SHIN_STONE.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.GORO_WINE_BOTTLE.get(), 1);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Ichigo_Rider_Items.ZO_STONE.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1);
-				int villagerLevel = 3;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Ichigo_Rider_Items.J_STONE.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.NOPHOON_CORE.get(), 1);
-				int villagerLevel = 3;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Ichigo_Rider_Items.SHIN_STONE.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Miscellaneous_Rider_Items.GORO_WINE_BOTTLE.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 4),
-						stack, 10, 8, 0.02F));
+						new ItemStack(Modded_item_core.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						new ItemStack(Rider_Blocks.ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 2),
+						new ItemStack(Ichigo_Rider_Items.NOPHOON_CORE.get(), 1), 10, 8, 0.02F));
 			}
-
-			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Zero_One_Rider_Items.BLANK_PROGRISEKEY.get(), 3);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+			else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Items.EMERALD, 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Zero_One_Rider_Items.BLANK_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Zero_One_Rider_Items.HIDEN_METAL.get(), 3),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 3);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Items.EMERALD, 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Zero_One_Rider_Items.THOUSAND_KEY.get(), 1);
-				int villagerLevel = 3;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Zero_One_Rider_Items.HUMAGEAR_PROGRISEKEY.get(), 3), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 12),
-						stack, 10, 8, 0.02F));
+						new ItemStack(Zero_One_Rider_Items.THOUSAND_KEY.get(), 1), 10, 8, 0.02F));
 			}
-
-			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 3);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+			else if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get(), 1);
-				int villagerLevel = 1;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 3), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.GASHA_TICKET.get(), 1);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Miscellaneous_Rider_Items.CONTRACT_CHAOSTONE.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 6),
-						stack, 10, 8, 0.02F));
-			}
-			if (event.getType() == RiderVillagers.KAMEN_CAFE_BUTLER.get()) {
-				Int2ObjectMap<List<ItemListing>> trades = event.getTrades();
-				ItemStack stack = new ItemStack(Miscellaneous_Rider_Items.ENERGY_DRINK.get(), 1);
-				int villagerLevel = 2;
-
-				trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+						new ItemStack(Miscellaneous_Rider_Items.GASHA_TICKET.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
-						stack, 10, 8, 0.02F));
+						new ItemStack(Miscellaneous_Rider_Items.ENERGY_DRINK.get(), 1), 10, 8, 0.02F));
 			}
-
 		}
 
 	}

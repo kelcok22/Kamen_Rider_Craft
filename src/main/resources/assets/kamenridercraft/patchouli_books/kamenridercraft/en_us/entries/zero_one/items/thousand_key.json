@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:thousand_key",
 			"title": " ",
-			"text": "Traded by a journeyman Humagear Villager"
+			"text": "Traded by a journeyman $(l:misc/villagers#humagear_villager)Humagear Villager$(/l)"
 		}
 	]
 }

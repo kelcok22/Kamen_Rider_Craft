@@ -177,7 +177,7 @@
 			"anchor": "amazing_mighty_artist_color",
 			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty_artist\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"name": "Amazing Mighty (Artist Color)",
-			"text": "Accessed with the $(l:misc/items/sic_hero_saga)S.I.C. Hero Saga$(/l)"
+			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_manga",
 			"title": " ",
-			"text": "Traded by a novice Librarian"
+			"text": "Traded by a novice $(l:misc/villagers#librarian)Librarian$(/l)"
 		}
 	]
 }
