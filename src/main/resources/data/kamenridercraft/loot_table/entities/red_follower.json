@@ -19,6 +19,21 @@
 	  "entries": [
 		{
 		  "type": "minecraft:item",
+		  "name": "kamenridercraft:clear_drill_switch"
+		}
+	  ],
+	  "conditions": [
+		{
+		  "condition": "minecraft:random_chance",
+		  "chance": 0.04
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
 		  "name": "kamenridercraft:rider_circuit",
 		  "functions": [
 			{
