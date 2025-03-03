@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Health: 300$(br2)Special moves:$(li)Uses his $(l:ooo/riders/ancient_ooo#greeed_absorption)Greeed Absorption$(/l) form at under 150 health$(br2)Drops$(li)10-15 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/ancient_taka_medal)Ancient Taka Medal$(/l)$(li)1 $(l:ooo/items/ancient_tora_medal)Ancient Tora Medal$(/l)$(li)1 $(l:ooo/items/ancient_batta_medal)Ancient Batta Medal$(/l)$(li)1 $(l:ooo/items/greeed_absorption_core)Greeed Absorption Core$(/l)$(li)1 $(l:ooo/arsenal/ancient_ooo_greeed_sword)Ancient OOO' Greeed Sword$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Health: 300$(br2)Special moves:$(li)Uses his $(l:ooo/riders/ancient_ooo#greeed_absorption)Greeed Absorption$(/l) form at under 150 health$(br2)Drops$(li)115 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/ancient_taka_medal)Ancient Taka Medal$(/l)$(li)1 $(l:ooo/items/ancient_tora_medal)Ancient Tora Medal$(/l)$(li)1 $(l:ooo/items/ancient_batta_medal)Ancient Batta Medal$(/l)$(li)1 $(l:ooo/items/greeed_absorption_core)Greeed Absorption Core$(/l)$(li)1 $(l:ooo/arsenal/ancient_ooo_greeed_sword)Ancient OOO' Greeed Sword$(/l)"
 		}
 	]
 }
