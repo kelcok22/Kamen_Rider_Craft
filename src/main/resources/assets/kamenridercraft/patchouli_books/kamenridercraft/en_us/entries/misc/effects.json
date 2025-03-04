@@ -49,7 +49,7 @@
 			"type": "patchouli:text",
 			"anchor": "punch",
 			"title": "Punch",
-			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 4 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
+			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 3 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
