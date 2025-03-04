@@ -1,9 +1,9 @@
 {
-    "name": "(WIP) Kamen Rider Craft",
-    "landing_text": "Everything you need to know about the Kamen Rider Craft mod is in this guide.$(br)However, as you flip through the pages of Rider history, you notice that some chapters have been lost! $(l)This guide is a work in progress.",
+    "name": "Kamen Rider Craft",
+    "landing_text": "Everything you need to know about the Kamen Rider Craft mod is in this guide.$(br2)Details regarding the mod's blocks, effects, and villager professions are in the Misc. Rider Info section.",
     "subtitle": "Mod Documentation",
     "creative_tab": "kamenridercraft:krc_997_misc_tab",
-	"model": "patchouli:book_cyan",
-	"book_texture": "patchouli:textures/gui/book_cyan.png",
+	"model": "kamenridercraft:patchouli_guide",
+	"book_texture": "patchouli:textures/gui/book_brown.png",
     "use_resource_pack": true
 }
