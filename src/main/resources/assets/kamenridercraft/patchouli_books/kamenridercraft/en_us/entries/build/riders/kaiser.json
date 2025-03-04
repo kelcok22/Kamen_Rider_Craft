@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kaiser",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon_blue\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon_blue\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "reverse",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine_red\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine_red\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bikaiser",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_kaiser\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_kaiser\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed by shift-clicking the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l) or $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l) with the other Gear in your inventory"
 		},

@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cyclonejoker",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneJoker",
 			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "heatmetal",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:heat_memory\",slot_tex2:\"kamenridercraft:metal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:heat_memory\",slot_tex2:\"kamenridercraft:metal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "HeatMetal",
 			"text": "Accessed with the $(l:w/items/heat_memory)Heat Memory$(/l) and $(l:w/items/metal_memory)Metal Memory$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lunatrigger",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:luna_memory\",slot_tex2:\"kamenridercraft:trigger_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:luna_memory\",slot_tex2:\"kamenridercraft:trigger_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "LunaTrigger",
 			"text": "Accessed with the $(l:w/items/luna_memory)Luna Memory$(/l) and $(l:w/items/trigger_memory)Trigger Memory$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fangjoker",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fang_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fang_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "FangJoker",
 			"text": "Accessed with the $(l:w/items/fang_memory)Fang Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "xtreme",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneJokerXtreme",
 			"text": "Accessed with the $(l:w/items/xtreme_memory)Xtreme Memory$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gold_xtreme",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_gold_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_gold_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneJokerGoldXtreme",
 			"text": "Accessed by falling 10 blocks as $(l:w/riders/double#xtreme)CycloneJokerXtreme$(/l) or with the $(l:w/items/xtreme_gold_memory)Gold Xtreme Memory$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "accel_xtreme",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_accel_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_accel_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneAccelXtreme",
 			"text": "Accessed with the $(l:w/items/xtreme_accel_memory)Cyclone Accel Xtreme Memory$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cyclonecyclone",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:cyclone_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:cyclone_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneCyclone",
 			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/cyclone_cyclone_memory)Cyclone Cyclone Memory$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jokerjoker",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:joker_joker_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:joker_joker_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "JokerJoker",
 			"text": "Accessed with the $(l:w/items/joker_joker_memory)Joker Joker Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cycloneskull",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:skull_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:skull_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "CycloneSkull",
 			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/skull_memory)Skull Memory$(/l)"
 		},

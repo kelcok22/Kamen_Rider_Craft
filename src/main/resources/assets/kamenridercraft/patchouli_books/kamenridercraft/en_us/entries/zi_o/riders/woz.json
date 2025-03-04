@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "woz",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:woz_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:woz_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:zi_o/items/woz_miridewatch)Woz Miridewatch$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shinobi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shinobi_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shinobi_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Futurering Shinobi",
 			"text": "Accessed with the $(l:zi_o/items/shinobi_miridewatch)Shinobi Miridewatch$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "quiz",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:quiz_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:quiz_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Futurering Quiz",
 			"text": "Accessed with the $(l:zi_o/items/quiz_miridewatch)Quiz Miridewatch$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kikai",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kikai_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kikai_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Futurering Kikai",
 			"text": "Accessed with the $(l:zi_o/items/kikai_miridewatch)Kikai Miridewatch$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gingafinaly",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_finaly_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_finaly_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "WozGingaFinaly",
 			"text": "Accessed with the $(l:zi_o/items/ginga_miridewatch)Ginga Miridewatch$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gingataiyo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_taiyo_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_taiyo_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "WozGingaTaiyo",
 			"text": "Accessed with the $(l:zi_o/items/ginga_miridewatch)Ginga Miridewatch$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gingawakusei",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beyondriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ginga_miridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "WozGingaWakusei",
 			"text": "Accessed with the $(l:zi_o/items/ginga_miridewatch)Ginga Miridewatch$(/l)"
 		},

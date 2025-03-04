@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beroba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:geats/items/beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "premium",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_black_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_black_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:geats/items/beroba_black_raise_riser_card)Black Raise Riser Card (Beroba)$(/l)"
 		},

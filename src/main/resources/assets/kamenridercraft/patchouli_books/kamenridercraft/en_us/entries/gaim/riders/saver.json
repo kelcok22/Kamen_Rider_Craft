@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blood_zakuro",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zakuro_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zakuro_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Blood Zakuro Arms",
 			"text": "Accessed with the $(l:gaim/items/zakuro_lockseed)Zakuro Lockseed$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "golden",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Golden Arms",
 			"text": "Accessed with the $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "darkness",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Darkness Arms",
 			"text": "Accessed with the $(l:gaim/items/black_ringo_lockseed)Black Ringo Lockseed$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "maja",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:maja_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_saver\",components:{custom_data:{slot_tex1:\"kamenridercraft:maja_lockseed\",slot_tex2:\"kamenridercraft:basic_saver_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Maja Arms",
 			"text": "Accessed with the $(l:gaim/items/maja_lockseed)Maja Lockseed$(/l)"
 		},

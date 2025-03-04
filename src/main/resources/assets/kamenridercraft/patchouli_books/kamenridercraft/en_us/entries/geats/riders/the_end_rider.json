@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "entry",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Entry Form",
 			"text": "Accessed with the $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "arrow",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:arrow_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:arrow_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Arrow",
 			"text": "Accessed with the $(l:geats/items/arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "water",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:water_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:water_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Water",
 			"text": "Accessed with the $(l:geats/items/water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hammer",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Hammer",
 			"text": "Accessed with the $(l:geats/items/hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shield",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Shield",
 			"text": "Accessed with the $(l:geats/items/shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chain_array",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:chain_array_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:chain_array_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Chain Array",
 			"text": "Accessed with the $(l:geats/items/chain_array_raise_buckle)Chain Array Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "claw",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Claw",
 			"text": "Accessed with the $(l:geats/items/claw_raise_buckle)Claw Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drill",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:drill_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:drill_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Drill",
 			"text": "Accessed with the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "propeller",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_the_end_riders\",components:{custom_data:{slot_tex1:\"kamenridercraft:blank_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Armed Propeller",
 			"text": "Accessed with the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
 		},

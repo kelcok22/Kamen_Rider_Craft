@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hanselnuts_to_gretel",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hanselnuts to Gretel",
 			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bremen_no_rock_band",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hansel Bremen",
 			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kobuta_3_kyoudai",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hansel Butasan",
 			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
 		},

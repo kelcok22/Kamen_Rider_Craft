@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shooting_1",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shooting Gamer Level 1",
 			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shooting_2",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shooting Gamer Level 2",
 			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "combat",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Combat Shooting Gamer Level 3",
 			"text": "Accessed with the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hunter_full",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hunter Shooting Gamer Level 5 (Full Dragon)",
 			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hunter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hunter Shooting Gamer Level 5",
 			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "simulation",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Simulation Gamer Level 50",
 			"text": "Accessed with the $(l:ex_aid/items/bang_bang_simulation_gashat)Bang Bang Simulations Gashat$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "xevious",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:xevious_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:xevious_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Xevious Shooting Gamer",
 			"text": "Accessed with the $(l:ex_aid/items/xevious_gashat)Xevious Gashat$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tank",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_tank_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_tank_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tank Shooting Gamer Level 4",
 			"text": "Accessed with the $(l:ex_aid/items/bang_bang_tank_gashat)Bang Bang Tank Gashat$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "proto_combat",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Proto Combat Shooting Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "proto_hunter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Proto Hunter Shooting Gamer Level 0",
 			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "proto_shooting_1",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shooting Gamer Level 1 (Proto)",
 			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "proto_shooting_2",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shooting Gamer Level 2 (Proto)",
 			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
 		},

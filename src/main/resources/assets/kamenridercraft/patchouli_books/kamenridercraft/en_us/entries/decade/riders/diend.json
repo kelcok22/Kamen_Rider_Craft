@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "diend",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:decade/items/diend_card)KamenRide Diend$(/l) card"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "power_up",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_power_up_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_power_up_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Powered Up",
 			"text": "Accessed with the $(l:decade/items/diend_power_up_card)KamenRide Diend (Power Up)$(/l) card"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "complete",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_diend\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_diend\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Complete Form",
 			"text": "Accessed with the $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "green",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_green_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_green_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Green Version",
 			"text": "Accessed with the $(l:decade/items/decade_card)KamenRide Decade$(/l) card"
 		},

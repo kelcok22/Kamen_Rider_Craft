@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zolda",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnugiga_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnugiga_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:ryuki/items/magnugiga_advent)Magnugiga Advent Card$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gigacannon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:giga_cannon_vent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:giga_cannon_vent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Zolda w/ Gigacannon",
 			"text": "Accessed with the $(l:ryuki/items/giga_cannon_vent)Gigacannon Shoot Vent Card$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gigatector",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:giga_tector_vent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",components:{custom_data:{slot_tex1:\"kamenridercraft:giga_tector_vent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Zolda w/ Gigatector",
 			"text": "Accessed with the $(l:ryuki/items/giga_tector_vent)Gigatector Guard Vent Card$(/l)"
 		},

@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dark_necrom_red",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_red_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_red_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Dark Necrom Red Damashii",
 			"text": "Accessed with the $(l:ghost/items/dark_necrom_red_ghost_eyecon)Dark Necrom Ghost Eyecon (Red)$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "benkei",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Benkei Damashii",
 			"text": "Accessed with the $(l:ghost/items/benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l)"
 		},

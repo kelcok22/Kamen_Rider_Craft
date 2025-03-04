@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "spider",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Spider Genome",
 			"text": "Accessed with the $(l:revice/items/spider_vistamp)Spider Vistamp$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "batta",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex5:\"kamenridercraft:batta_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex5:\"kamenridercraft:batta_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Batta Genomix",
 			"text": "Accessed with the $(l:revice/items/batta_vistamp)Batta Vistamp$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mogura",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:mogura_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:mogura_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Mogura Genomix",
 			"text": "Accessed with the $(l:revice/items/mogura_vistamp)Mogura Vistamp$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "condor",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex3:\"kamenridercraft:batta_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex3:\"kamenridercraft:batta_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Condor Genomix",
 			"text": "Accessed with the $(l:revice/items/condor_vistamp)Condor Vistamp$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "scorpion",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex4:\"kamenridercraft:scorpion_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex4:\"kamenridercraft:scorpion_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Scorpion Genomix",
 			"text": "Accessed with the $(l:revice/items/scorpion_vistamp)Scorpion Vistamp$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "anomalocaris",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:anomalocaris_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:anomalocaris_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Anomalocaris Genomix",
 			"text": "Accessed with the $(l:revice/items/anomalocaris_vistamp)Anomalocaris Vistamp$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "imperial",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Imperial Demons",
 			"text": "Accessed with the $(l:revice/items/giant_spider_vistamp)Giant Spider Vistamp$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "crocodile",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\",slot_tex3:\"kamenridercraft:crocodile_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\",slot_tex3:\"kamenridercraft:crocodile_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Crocodile Genomix",
 			"text": "Accessed with the $(l:revice/items/crocodile_vistamp)Crocodile Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "komodo_dragon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\",slot_tex2:\"kamenridercraft:komodo_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:giant_spider_vistamp\",slot_tex2:\"kamenridercraft:komodo_vistamp_demons\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Komodo Dragon Genomix",
 			"text": "Accessed with the $(l:revice/items/komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
 		},

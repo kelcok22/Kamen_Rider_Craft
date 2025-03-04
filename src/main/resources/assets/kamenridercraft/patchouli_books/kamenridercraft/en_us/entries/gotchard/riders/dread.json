@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "type_zero",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:steamliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:steamliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Type Zero",
 			"text": "Accessed with the $(l:gotchard/items/steamliner_repli_chemy_card)Steamliner Replichemy Card$(/l)"
 		},

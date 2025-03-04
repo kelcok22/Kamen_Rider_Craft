@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "riderman",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_belt_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_belt_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:v3/items/riderman_belt_core)Rider Buckle Core$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "perfecter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:perfecter\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:perfecter\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Riderman w/ Perfecter",
 			"text": "Accessed with the $(l:x/items/perfecter)Perfecter$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "artist_color",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_belt_core_artist\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:riderman_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_belt_core_artist\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Artist Color",
 			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
 		},

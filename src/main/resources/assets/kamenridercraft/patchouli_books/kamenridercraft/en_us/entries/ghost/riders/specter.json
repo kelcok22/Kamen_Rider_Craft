@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "specter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Specter Damashii",
 			"text": "Accessed with the $(l:ghost/items/specter_ghost_eyecon)Specter Ghost Eyecon$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tutankhamun",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tutankhamun_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tutankhamun_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tutankhamun Damashii",
 			"text": "Accessed with the $(l:ghost/items/tutankhamun_ghost_eyecon)Tutankhamun Ghost Eyecon$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "nobunaga",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:nobunaga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:nobunaga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Nobunaga Damashii",
 			"text": "Accessed with the $(l:ghost/items/nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "houdini",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:houdini_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:houdini_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Houdini Damashii",
 			"text": "Accessed with the $(l:ghost/items/houdini_ghost_eyecon)Houdini Ghost Eyecon$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "edison",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:edison_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:edison_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Edison Damashii",
 			"text": "Accessed with the $(l:ghost/items/edison_ghost_eyecon)Edison Ghost Eyecon$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "deep_specter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deep_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:deep_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deep_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:deep_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Deep Specter",
 			"text": "Accessed with the $(l:ghost/items/deep_specter_ghost_eyecon)Deep Specter Ghost Eyecon$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sin_specter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sin_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:sin_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sin_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:sin_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sin Specter",
 			"text": "Accessed with the $(l:ghost/items/sin_specter_ghost_eyecon)Sin Specter Ghost Eyecon$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "musashi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:musashi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:musashi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Musashi Damashii",
 			"text": "Accessed with the $(l:ghost/items/musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "robin",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:robin_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:robin_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Robin Damashii",
 			"text": "Accessed with the $(l:ghost/items/robin_ghost_eyecon)Robin Ghost Eyecon$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "newton",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:newton_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:newton_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Newton Damashii",
 			"text": "Accessed with the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "billy_the_kid",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:billy_the_kid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:billy_the_kid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Billy the Kid Damashii",
 			"text": "Accessed with the $(l:ghost/items/billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beethoven",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:beethoven_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:beethoven_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Beethoven Damashii",
 			"text": "Accessed with the $(l:ghost/items/beethoven_ghost_eyecon)Beethoven Ghost Eyecon$(/l)"
 		},
@@ -151,7 +175,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "benkei",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Benkei Damashii",
 			"text": "Accessed with the $(l:ghost/items/benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l)"
 		},
@@ -163,7 +189,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "goemon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:goemon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:goemon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Goemon Damashii",
 			"text": "Accessed with the $(l:ghost/items/goemon_ghost_eyecon)Goemon Ghost Eyecon$(/l)"
 		},
@@ -175,7 +203,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryoma",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryoma_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryoma_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ryoma Damashii",
 			"text": "Accessed with the $(l:ghost/items/ryoma_ghost_eyecon)Ryoma Ghost Eyecon$(/l)"
 		},
@@ -187,7 +217,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "himiko",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:himiko_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:himiko_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Himiko Damashii",
 			"text": "Accessed with the $(l:ghost/items/himiko_ghost_eyecon)Himiko Ghost Eyecon$(/l)"
 		},
@@ -199,7 +231,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "grimm",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Grimm Damashii",
 			"text": "Accessed with the $(l:ghost/items/grimm_ghost_eyecon)Grimm Ghost Eyecon$(/l)"
 		},
@@ -211,7 +245,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sanzo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:sanzo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:sanzo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sanzo Damashii",
 			"text": "Accessed with the $(l:ghost/items/sanzo_ghost_eyecon)Sanzo Ghost Eyecon$(/l)"
 		},
@@ -223,7 +259,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "pythagoras",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Pythagoras Damashii",
 			"text": "Accessed with the $(l:ghost/items/pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
 		},
@@ -235,7 +273,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "necrom",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:necrom_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:necrom_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Necrom Damashii",
 			"text": "Accessed with the $(l:ghost/items/necrom_ghost_eyecon)Necrom Ghost Eyecon$(/l)"
 		},
@@ -247,7 +287,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ikkyu",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ikkyu Damashii",
 			"text": "Accessed with the $(l:ghost/items/ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
 		},
@@ -259,7 +301,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "santa",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:santa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:santa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Santa Damashii",
 			"text": "Accessed with the $(l:ghost/items/santa_ghost_eyecon)Santa Ghost Eyecon$(/l)"
 		},
@@ -271,7 +315,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kamehameha",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kamehameha_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kamehameha_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Kamehameha Damashii",
 			"text": "Accessed with the $(l:ghost/items/kamehameha_ghost_eyecon)Kamehameha Ghost Eyecon$(/l)"
 		},
@@ -283,7 +329,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "galileo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:galileo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:galileo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Galileo Damashii",
 			"text": "Accessed with the $(l:ghost/items/galileo_ghost_eyecon)Galileo Ghost Eyecon$(/l)"
 		},
@@ -295,7 +343,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shakespeare",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:shakespeare_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:shakespeare_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shakespeare Damashii",
 			"text": "Accessed with the $(l:ghost/items/shakespeare_ghost_eyecon)Shakespeare Ghost Eyecon$(/l)"
 		},
@@ -307,7 +357,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "columbus",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:columbus_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:columbus_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Columbus Damashii",
 			"text": "Accessed with the $(l:ghost/items/columbus_ghost_eyecon)Columbus Ghost Eyecon$(/l)"
 		},
@@ -319,7 +371,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "nightingale",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:nightingale_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:nightingale_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Nightingale Damashii",
 			"text": "Accessed with the $(l:ghost/items/nightingale_ghost_eyecon)Nightingale Ghost Eyecon$(/l)"
 		},
@@ -331,7 +385,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "special_ore",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Special Ore Damashii",
 			"text": "Accessed with the $(l:ghost/items/special_specter_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
 		},
@@ -343,7 +399,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ore_specter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ore_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ore_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ore Specter Damashii",
 			"text": "Accessed with the $(l:ghost/items/ore_specter_ghost_eyecon)Ore Specter Ghost Eyecon$(/l)"
 		},
@@ -355,7 +413,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shinsengumi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:shinsengumi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:shinsengumi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shinsengumi Damashii",
 			"text": "Accessed with the $(l:ghost/items/shinsengumi_ghost_eyecon)Shinsengumi Ghost Eyecon$(/l)"
 		},
@@ -367,7 +427,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tenkatoitsu",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tenka Toitsu Damashii",
 			"text": "Accessed with the $(l:ghost/items/tenkatoitsu_ghost_eyecon)Tenka Toitsu Ghost Eyecon$(/l)"
 		},
@@ -379,7 +441,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ichigo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourtyfive_showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourtyfive_showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ichigo Damashii",
 			"text": "Accessed with the $(l:ghost/items/fourtyfive_showa_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Ichigou Side)$(/l)"
 		},
@@ -391,7 +455,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "showa",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Showa Damashii",
 			"text": "Accessed with the $(l:ghost/items/showa_ghost_eyecon)Showa Rider 45 Ghost Eyecon$(/l)"
 		},
@@ -403,7 +469,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kuuga",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kuuga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kuuga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Kuuga Damashii",
 			"text": "Accessed with the $(l:ghost/items/kuuga_ghost_eyecon)Kuuga Ghost Eyecon$(/l)"
 		},
@@ -415,7 +483,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "agito",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:agito_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:agito_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Agito Damashii",
 			"text": "Accessed with the $(l:ghost/items/agito_ghost_eyecon)Agito Ghost Eyecon$(/l)"
 		},
@@ -427,7 +497,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryuki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryuki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ryuki Damashii",
 			"text": "Accessed with the $(l:ghost/items/ryuki_ghost_eyecon)Ryuki Ghost Eyecon$(/l)"
 		},
@@ -439,7 +511,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "faiz",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:faiz_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:faiz_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Faiz Damashii",
 			"text": "Accessed with the $(l:ghost/items/faiz_ghost_eyecon)Faiz Ghost Eyecon$(/l)"
 		},
@@ -451,7 +525,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:blade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:blade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Blade Damashii",
 			"text": "Accessed with the $(l:ghost/items/blade_ghost_eyecon)Blade Ghost Eyecon$(/l)"
 		},
@@ -463,7 +539,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:hibiki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:hibiki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hibiki Damashii",
 			"text": "Accessed with the $(l:ghost/items/hibiki_ghost_eyecon)Hibiki Ghost Eyecon$(/l)"
 		},
@@ -475,7 +553,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kabuto",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kabuto_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kabuto_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Kabuto Damashii",
 			"text": "Accessed with the $(l:ghost/items/kabuto_ghost_eyecon)Kabuto Ghost Eyecon$(/l)"
 		},
@@ -487,7 +567,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "den_o",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:den_o_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:den_o_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Den-O Damashii",
 			"text": "Accessed with the $(l:ghost/items/den_o_ghost_eyecon)Den-O Ghost Eyecon$(/l)"
 		},
@@ -499,7 +581,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kiva_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kiva_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Kiva Damashii",
 			"text": "Accessed with the $(l:ghost/items/kiva_ghost_eyecon)Kiva Ghost Eyecon$(/l)"
 		},
@@ -511,7 +595,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:decade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:decade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Damashii",
 			"text": "Accessed with the $(l:ghost/items/decade_ghost_eyecon)Decade Ghost Eyecon$(/l)"
 		},
@@ -523,7 +609,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "double",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:double_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:double_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Double Damashii",
 			"text": "Accessed with the $(l:ghost/items/double_ghost_eyecon)Double Ghost Eyecon$(/l)"
 		},
@@ -535,7 +623,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ooo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:ooo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "OOO Damashii",
 			"text": "Accessed with the $(l:ghost/items/ooo_ghost_eyecon)OOO Ghost Eyecon$(/l)"
 		},
@@ -547,7 +637,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourze_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourze_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Fourze Damashii",
 			"text": "Accessed with the $(l:ghost/items/fourze_ghost_eyecon)Fourze Ghost Eyecon$(/l)"
 		},
@@ -559,7 +651,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:wizard_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:wizard_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Wizard Damashii",
 			"text": "Accessed with the $(l:ghost/items/wizard_ghost_eyecon)Wizard Ghost Eyecon$(/l)"
 		},
@@ -571,7 +665,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:gaim_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:gaim_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gaim Damashii",
 			"text": "Accessed with the $(l:ghost/items/gaim_ghost_eyecon)Gaim Ghost Eyecon$(/l)"
 		},
@@ -583,7 +679,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drive",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:drive_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:drive_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Drive Damashii",
 			"text": "Accessed with the $(l:ghost/items/drive_ghost_eyecon)Drive Ghost Eyecon$(/l)"
 		},

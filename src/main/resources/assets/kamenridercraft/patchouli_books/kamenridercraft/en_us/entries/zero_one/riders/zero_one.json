@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rising_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Rising Hopper",
 			"text": "Accessed with the $(l:zero_one/items/rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shining_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shining Hopper",
 			"text": "Accessed with the $(l:zero_one/items/shining_hopper_progrisekey)Shining Hopper Progrisekey$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shining_assault_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_assault_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_assault_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shining Assault Hopper",
 			"text": "Accessed with the $(l:zero_one/items/shining_assault_hopper_progrisekey)Shining Assault Hopper Progrisekey$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "metalcluster_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:metalcluster_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:metalcluster_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "MetalCluster Hopper",
 			"text": "Accessed with the $(l:zero_one/items/metalcluster_hopper_progrisekey)MetalCluster Hopper Progrisekey$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "realizing_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:realize_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:realize_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Realizing Hopper",
 			"text": "Accessed with the $(l:zero_one/items/realize_rising_hopper_progrisekey)Rising Hopper Progrisekey (Realize Ver.)$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hellrising_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hellrise_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hellrise_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hellrising Hopper",
 			"text": "Accessed with the $(l:zero_one/items/hellrise_progrisekey)Hellrise Progrisekey$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "red_rising_hopper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Red Rising Hopper",
 			"text": "Accessed with the $(l:zero_one/items/red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "biting_shark",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:biting_shark_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:biting_shark_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Biting Shark",
 			"text": "Accessed with the $(l:zero_one/items/biting_shark_progrisekey)Biting Shark Progrisekey$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flying_falcon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Flying Falcon",
 			"text": "Accessed with the $(l:zero_one/items/flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flaming_tiger",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Flaming Tiger",
 			"text": "Accessed with the $(l:zero_one/items/flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l)"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "freezing_bear",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:freezing_bear_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:freezing_bear_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Freezing Bear",
 			"text": "Accessed with the $(l:zero_one/items/freezing_bear_progrisekey)Freezing Bear Progrisekey$(/l)"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "breaking_mammoth",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:breaking_mammoth_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:breaking_mammoth_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Breaking Mammoth",
 			"text": "Accessed with the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
 		},
@@ -151,7 +175,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hopping_kangaroo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopping_kangaroo_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopping_kangaroo_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Hopping Kangaroo",
 			"text": "Accessed with the $(l:zero_one/items/hopping_kangaroo_progrisekey)Hopping Kangaroo Progrisekey$(/l)"
 		},
@@ -163,7 +189,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dynamaiting_lion",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dynamaiting_lion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dynamaiting_lion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Dynamaiting Lion",
 			"text": "Accessed with the $(l:zero_one/items/dynamaiting_lion_progrisekey)Dynamaiting Lion Progrisekey$(/l)"
 		},
@@ -175,7 +203,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shooting_wolf",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shooting Wolf",
 			"text": "Accessed with the $(l:zero_one/items/shooting_wolf_progrisekey)Shooting Wolf Progrisekey$(/l)"
 		},
@@ -187,7 +217,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "punching_kong",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Punching Kong",
 			"text": "Accessed with the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
@@ -199,7 +231,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rushing_cheetah",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Rushing Cheetah",
 			"text": "Accessed with the $(l:zero_one/items/rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
 		},
@@ -211,7 +245,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sparking_giraffe",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sparking_giraffe_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sparking_giraffe_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sparking Giraffe",
 			"text": "Accessed with the $(l:zero_one/items/sparking_giraffe_progrisekey)Sparking Giraffe Progrisekey$(/l)"
 		},
@@ -223,7 +259,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "amazing_hercules",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_hercules_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_hercules_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Amazing Hercules",
 			"text": "Accessed with the $(l:zero_one/items/amazing_hercules_progrisekey)Amazing Hercules Progrisekey$(/l)"
 		},
@@ -235,7 +273,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sting_scorpion",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sting_scorpion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sting_scorpion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sting Scorpion",
 			"text": "Accessed with the $(l:zero_one/items/sting_scorpion_progrisekey)Sting Scorpion Progrisekey$(/l)"
 		},
@@ -247,7 +287,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lightning_hornet",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Lightning Hornet",
 			"text": "Accessed with the $(l:zero_one/items/lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
 		},
@@ -259,7 +301,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gatling_hedgehog",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatling_hedgehog_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatling_hedgehog_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gatling Hedgehog",
 			"text": "Accessed with the $(l:zero_one/items/gatling_hedgehog_progrisekey)Gatling Hedgehog Progrisekey$(/l)"
 		},
@@ -271,7 +315,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "exciting_stag",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:exciting_stag_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:exciting_stag_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Exciting Stag",
 			"text": "Accessed with the $(l:zero_one/items/exciting_stag_progrisekey)Exciting Stag Progrisekey$(/l)"
 		},
@@ -283,7 +329,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "crushing_buffalo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crushing_buffalo_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crushing_buffalo_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Crushing Buffalo",
 			"text": "Accessed with the $(l:zero_one/items/crushing_buffalo_progrisekey)Crushing Buffalo Progrisekey$(/l)"
 		},
@@ -295,7 +343,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "trapping_spider",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trapping_spider_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trapping_spider_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Trapping Spider",
 			"text": "Accessed with the $(l:zero_one/items/trapping_spider_progrisekey)Trapping Spider Progrisekey$(/l)"
 		},
@@ -307,7 +357,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "storming_penguin",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:storming_penguin_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:storming_penguin_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Storming Penguin",
 			"text": "Accessed with the $(l:zero_one/items/storming_penguin_progrisekey)Storming Penguin Progrisekey$(/l)"
 		},
@@ -319,7 +371,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "splashing_whale",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:splashing_whale_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:splashing_whale_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Splashing Whale",
 			"text": "Accessed with the $(l:zero_one/items/splashing_whale_progrisekey)Splashing Whale Progrisekey$(/l)"
 		},
@@ -331,7 +385,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "amazing_caucasus",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_caucasus_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_caucasus_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Amazing Caucasus",
 			"text": "Accessed with the $(l:zero_one/items/amazing_caucasus_progrisekey)Amazing Caucasus Progrisekey$(/l)"
 		},
@@ -343,7 +399,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "scouting_panda",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scouting_panda_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scouting_panda_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Scouting Panda",
 			"text": "Accessed with the $(l:zero_one/items/scouting_panda_progrisekey)Scouting Panda Progrisekey$(/l)"
 		},
@@ -355,7 +413,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "burning_falcon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:burning_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:burning_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Burning Falcon",
 			"text": "Accessed with the $(l:zero_one/items/burning_falcon_progrisekey)Burning Falcon Progrisekey$(/l)"
 		},
@@ -367,7 +427,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fighting_jackal",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fighting_jackal_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fighting_jackal_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Fighting Jackal",
 			"text": "Accessed with the $(l:zero_one/items/fighting_jackal_progrisekey)Fighting Jackal Progrisekey$(/l)"
 		},
@@ -379,7 +441,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "invading_horseshoe_crab",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Invading Horseshoe Crab",
 			"text": "Accessed with the $(l:zero_one/items/invading_horseshoe_crab_progrisekey)Invading Horseshoe Crab Progrisekey$(/l)"
 		},

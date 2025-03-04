@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "birth",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": ""
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "powered",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Powered",
 			"text": "Accessed with the $(l:ooo/items/birth_core_eyes)Birth Core Medal (Powered)$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "crane_arm",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex3:\"kamenridercraft:birth_core_crane_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex3:\"kamenridercraft:birth_core_crane_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Crane Arm",
 			"text": "Accessed with the $(l:ooo/items/birth_core_crane_arm)Birth Core Medal (Crane Arm)$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "breast_cannon",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:birth_core_breast_cannon\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:birth_core_breast_cannon\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Breast Cannon",
 			"text": "Accessed with the $(l:ooo/items/birth_core_breast_cannon)Birth Core Medal (Breast Cannon)$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drill_arm",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex6:\"kamenridercraft:birth_core_drill_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex6:\"kamenridercraft:birth_core_drill_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Drill Arm",
 			"text": "Accessed with the $(l:ooo/items/birth_core_drill_arm)Birth Core Medal (Drill Arm)$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "caterpillar_leg",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Caterpillar Leg",
 			"text": "Accessed with the $(l:ooo/items/birth_core_catepillar_leg)Birth Core Medal (Caterpillar Leg)$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shovel_arm",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex4:\"kamenridercraft:birth_core_shovel_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex4:\"kamenridercraft:birth_core_shovel_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shovel Arm",
 			"text": "Accessed with the $(l:ooo/items/birth_core_shovel_arm)Birth Core Medal (Shovel Arm)$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cutter_wing",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Cutter Wing",
 			"text": "Accessed with the $(l:ooo/items/birth_core_cutter_wing)Birth Core Medal (Cutter Wing)$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "birth_day",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\",slot_tex2:\"kamenridercraft:birth_core_breast_cannon\",slot_tex3:\"kamenridercraft:birth_core_crane_arm\",slot_tex4:\"kamenridercraft:birth_core_shovel_arm\",slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\",slot_tex6:\"kamenridercraft:birth_core_drill_arm\",slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\",slot_tex2:\"kamenridercraft:birth_core_breast_cannon\",slot_tex3:\"kamenridercraft:birth_core_crane_arm\",slot_tex4:\"kamenridercraft:birth_core_shovel_arm\",slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\",slot_tex6:\"kamenridercraft:birth_core_drill_arm\",slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Birth·Day",
 			"text": "Accessed with all seven $(l:ooo/items/birth_core_eyes)Birth Core Medals$(/l)"
 		},

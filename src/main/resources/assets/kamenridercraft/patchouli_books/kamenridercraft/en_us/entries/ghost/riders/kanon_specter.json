@@ -6,7 +6,9 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:kanon_specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kanon_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kanon_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kanon_specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kanon_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kanon_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Kanon Specter Damashii",
 			"text": "Accessed with the $(l:ghost/items/kanon_specter_ghost_eyecon)Kanon Specter Ghost Eyecon$(/l)"
 		},

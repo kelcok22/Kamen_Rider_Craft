@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cobra",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Cobra Genome",
 			"text": "Accessed with the $(l:revice/items/cobra_vistamp)Cobra Vistamp$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "invincible",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Invincible Jeanne",
 			"text": "Accessed with the $(l:revice/items/king_cobra_vistamp)King Cobra Vistamp$(/l)"
 		},

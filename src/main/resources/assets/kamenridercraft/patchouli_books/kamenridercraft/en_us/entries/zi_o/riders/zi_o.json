@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zi_o",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:zi_o/items/zi_o_ridewatch)Zi-O Ridewatch$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kuuga",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "KuugaArmor",
 			"text": "Accessed with the $(l:zi_o/items/kuuga_ridewatch)Kuuga Ridewatch$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "agito",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "AgitoArmor",
 			"text": "Accessed with the $(l:zi_o/items/agito_ridewatch)Agito Ridewatch$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "RyukiArmor",
 			"text": "Accessed with the $(l:zi_o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "BladeArmor",
 			"text": "Accessed with the $(l:zi_o/items/blade_ridewatch)Blade Ridewatch$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "HibikiArmor",
 			"text": "Accessed with the $(l:zi_o/items/hibiki_ridewatch)Hibiki Ridewatch$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kabuto",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "KabutoArmor",
 			"text": "Accessed with the $(l:zi_o/items/kabuto_ridewatch)Kabuto Ridewatch$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "den_o",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Den-OArmor",
 			"text": "Accessed with the $(l:zi_o/items/den_o_ridewatch)Den-O Ridewatch$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "KivaArmor",
 			"text": "Accessed with the $(l:zi_o/items/kiva_ridewatch)Kiva Ridewatch$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "w",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "WArmor",
 			"text": "Accessed with the $(l:zi_o/items/w_ridewatch)W Ridewatch$(/l)"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "OOOArmor",
 			"text": "Accessed with the $(l:zi_o/items/ooo_ridewatch)OOO Ridewatch$(/l)"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "FourzeArmor",
 			"text": "Accessed with the $(l:zi_o/items/fourze_ridewatch)Fourze Ridewatch$(/l)"
 		},
@@ -151,7 +175,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "GaimArmor",
 			"text": "Accessed with the $(l:zi_o/items/gaim_ridewatch)Gaim Ridewatch$(/l)"
 		},
@@ -163,7 +189,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ghost",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ridewatch_zi_o\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ridewatch_zi_o\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "GhostArmor",
 			"text": "Accessed with the $(l:zi_o/items/ghost_ridewatch)Ghost Ridewatch$(/l)"
 		},
@@ -175,7 +203,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ex_aid",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ex-AidArmor",
 			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
 		},
@@ -187,7 +217,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "build",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "BuildArmor",
 			"text": "Accessed with the $(l:zi_o/items/build_ridewatch)Build Ridewatch$(/l)"
 		},
@@ -199,7 +231,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor",
 			"text": "Accessed with the $(l:zi_o/items/decade_ridewatch)Decade Ridewatch$(/l)"
 		},
@@ -211,7 +245,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_ryuki",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ryuki_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Ryuki Form",
 			"text": "Accessed with the $(l:zi_o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -223,7 +259,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_faiz",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_faiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_faiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Faiz Form",
 			"text": "Accessed with the $(l:zi_o/items/faiz_ridewatch)Faiz Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -235,7 +273,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_ooo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ooo_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor OOO Form",
 			"text": "Accessed with the $(l:zi_o/items/ooo_ridewatch)OOO Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -247,7 +287,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_ghost",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ghost_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ghost_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Ghost Form",
 			"text": "Accessed with the $(l:zi_o/items/ghost_ridewatch)Ghost Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -259,7 +301,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_ex_aid_l",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_l\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_l\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Ex-Aid Form",
 			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -271,7 +315,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_ex_aid_r",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_r\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ex_aid_ridewatch_r\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Ex-Aid Form",
 			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -283,7 +329,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_build",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_build_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Build Form",
 			"text": "Accessed with the $(l:zi_o/items/build_ridewatch)Build Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -295,7 +343,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade_saber",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "DecadeArmor Saber Form",
 			"text": "Accessed with the $(l:zi_o/items/saber_ridewatch)Saber Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
@@ -307,7 +357,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ii",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ii_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ii_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Zi-O II",
 			"text": "Accessed with the $(l:zi_o/items/zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l)"
 		},
@@ -319,7 +371,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "trinity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_trinity_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_trinity_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Zi-OTrinity",
 			"text": "Accessed with the $(l:zi_o/items/zi_o_trinity_ridewatch)Zi-O Trinity Ridewatch$(/l)"
 		},
@@ -331,7 +385,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "grandzi_o",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "GrandZi-O",
 			"text": "Accessed with the $(l:zi_o/items/grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l)"
 		},
@@ -343,7 +399,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ohmaform",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ohma_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:ohma_zi_o_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "OhmaForm",
 			"text": "Accessed with the $(l:zi_o/items/ohma_zi_o_ridewatch)Ohma Zi-O Ridewatch$(/l)"
 		},
@@ -355,7 +413,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "woz",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:woz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o\",components:{custom_data:{slot_tex1:\"kamenridercraft:woz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "WozArmor",
 			"text": "Accessed with the $(l:zi_o/items/woz_ridewatch)Woz Ridewatch$(/l)"
 		},

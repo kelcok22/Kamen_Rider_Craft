@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "plat",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Plat Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket)Rider Ticket$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sword",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_sword\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_sword\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sword Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_sword)Rider Ticket Momotaros$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rod",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_rod\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_rod\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Rod Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_rod)Rider Ticket Urataros$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ax",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_ax\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_ax\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ax Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_ax)Rider Ticket Kintaros$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gun",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_gun\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_gun\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gun Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_gun)Rider Ticket Ryutaros$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wing",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Wing Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_wing)Rider Ticket Sieg$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "climax",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Climax Form",
 			"text": "Accessed with the $(l:den_o/items/ktaros)K-Taros$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "liner",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_form\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_form\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Liner Form",
 			"text": "Accessed with the $(l:den_o/items/denkamen_sword)DenKamen Sword$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "cho_climax",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Cho Climax Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_wing)Rider Ticket Sieg$(/l) while both the $(l:den_o/items/rider_pass)Rider Pass$(/l) and the $(l:den_o/items/ktaros)K-Taros$(/l) is in your inventory"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "pudding",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_pudding\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_pudding\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Pudding Form",
 			"text": "Accessed with the $(l:den_o/items/rider_ticket_pudding)Rider Ticket Pudding$(/l)"
 		},

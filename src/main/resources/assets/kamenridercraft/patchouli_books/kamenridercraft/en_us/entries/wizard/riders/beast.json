@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "beast",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:beast_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:beast_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:wizard/items/beast_ring)Beast Wizard Ring$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "falco",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Falco Mantle",
 			"text": "Accessed with the $(l:wizard/items/falco_ring)Falco Wizard Ring$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chameleo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chameleo_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chameleo_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Chameleo Mantle",
 			"text": "Accessed with the $(l:wizard/items/chameleo_ring)Chameleo Wizard Ring$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "buffa",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Buffa Mantle",
 			"text": "Accessed with the $(l:wizard/items/buffa_ring)Buffa Wizard Ring$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dolphi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dolphi_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dolphi_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Dolphi Mantle",
 			"text": "Accessed with the $(l:wizard/items/dolphi_ring)Dolphi Wizard Ring$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hyper",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beastdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Beast Hyper",
 			"text": "Accessed with the $(l:wizard/items/hyper_ring)Hyper Wizard Ring$(/l)"
 		},

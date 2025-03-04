@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:decade/items/decade_card)KamenRide Decade$(/l) card"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "complete_21",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_21\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_21\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Complete Form 21",
 			"text": "Accessed with the $(l:decade/items/k_touch_21)Final Kamen Terminal K-Touch 21$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "w",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade W",
 			"text": "Accessed with the $(l:decade/items/w_card)KamenRide W$(/l) card"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade OOO",
 			"text": "Accessed with the $(l:decade/items/ooo_card)KamenRide OOO$(/l) card"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Fourze",
 			"text": "Accessed with the $(l:decade/items/fourze_card)KamenRide Fourze$(/l) card"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Wizard",
 			"text": "Accessed with the $(l:decade/items/wizard_card)KamenRide Wizard$(/l) card"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Gaim",
 			"text": "Accessed with the $(l:decade/items/gaim_card)KamenRide Gaim$(/l) card"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "drive",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Drive",
 			"text": "Accessed with the $(l:decade/items/drive_card)KamenRide Drive$(/l) card"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ghost",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Ghost",
 			"text": "Accessed with the $(l:decade/items/ghost_card)KamenRide Ghost$(/l) card"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ex_aid",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Ex-Aid",
 			"text": "Accessed with the $(l:decade/items/ex_aid_card)KamenRide Ex-Aid$(/l) card"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "build",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Build",
 			"text": "Accessed with the $(l:decade/items/build_card)KamenRide Build$(/l) card"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zi-o",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Decade Zi-O",
 			"text": "Accessed with the $(l:decade/items/zi_o_card)KamenRide Zi-O$(/l) card"
 		},

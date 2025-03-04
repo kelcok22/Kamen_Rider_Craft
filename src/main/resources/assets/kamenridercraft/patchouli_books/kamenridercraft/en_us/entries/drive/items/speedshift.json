@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:speedshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmudes)Roidmudes$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
 		}
 	]
 }

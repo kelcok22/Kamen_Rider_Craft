@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "toki_meki_crisis",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Toki Meki Crisis Gamer Level X",
 			"text": "Accessed with the $(l:ex_aid/items/toki_meki_crisis_gashat)Toki Meki Crisis Gashat$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "toki_meki_crisis_red",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat_red_eyes\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_poppy\",components:{custom_data:{slot_tex1:\"kamenridercraft:toki_meki_crisis_gashat_red_eyes\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Toki Meki Crisis Gamer Level X",
 			"text": "Accessed with the $(l:ex_aid/items/toki_meki_crisis_gashat)Toki Meki Crisis Gashat$(/l)"
 		},

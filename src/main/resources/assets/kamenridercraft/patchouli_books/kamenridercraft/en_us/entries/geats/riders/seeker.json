@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "entry",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_seeker\",components:{custom_data:{slot_tex1:\"kamenridercraft:seeker_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_seeker\",components:{custom_data:{slot_tex1:\"kamenridercraft:seeker_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Entry Form",
 			"text": "Accessed with the $(l:geats/items/seeker_rider_core_id)Kamen Rider Seeker Core ID$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "powered_builder",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_seeker\",components:{custom_data:{slot_tex1:\"kamenridercraft:seeker_rider_core_id\",slot_tex2:\"kamenridercraft:powered_builder_raise_buckle\",slot_tex3:\"kamenridercraft:gigant_container_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_seeker\",components:{custom_data:{slot_tex1:\"kamenridercraft:seeker_rider_core_id\",slot_tex2:\"kamenridercraft:powered_builder_raise_buckle\",slot_tex3:\"kamenridercraft:gigant_container_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Powered Builder Form",
 			"text": "Accessed with the $(l:geats/items/powered_builder_raise_buckle)Powered Builder Buckle$(/l) in your main hand and the $(l:geats/items/gigant_container_buckle)Gigant Container Buckle$(/l) in your off-hand"
 		},

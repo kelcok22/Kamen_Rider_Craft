@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ragnarok",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:zero_one/items/red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "flaming_tiger",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Flaming Tiger",
 			"text": "Accessed with the $(l:zero_one/items/flaming_tiger_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "apocalypse_reboot",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_apocalypse_reboot\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ragnarok_apocalypse_reboot\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Apocalypse Reboot",
 			"text": "Accessed with the $(l:zero_one/items/red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l) while having the $(l:zero_one/items/thousand_key)Thousand Key$(/l) in your inventory"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "supreme",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:thousand_key\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ragnarok_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:thousand_key\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ragnarok Supreme",
 			"text": "Accessed with the $(l:zero_one/items/thousand_key)Thousand Key$(/l)"
 		},
