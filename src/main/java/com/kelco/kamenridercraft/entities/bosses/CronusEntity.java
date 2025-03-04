@@ -59,7 +59,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 
 	protected void addBehaviourGoals() {
 
-		this.goalSelector.addGoal(3, new CronusEntityAttackGoal(this, 1.0D, false));
+		this.goalSelector.addGoal(1, new CronusEntityAttackGoal(this, 1.0D, false));
 		this.goalSelector.addGoal(5, new MoveTowardsRestrictionGoal(this, 1.0D));
 		this.goalSelector.addGoal(6, new MoveThroughVillageGoal(this, 1.0D, true, 4, this::canBreakDoors));
 		this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D, 0.0F));
