@@ -6,7 +6,9 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_mars\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_mars_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_mars\",components:{custom_data:{slot_tex1:\"kamenridercraft:golden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_mars_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Golden Arms",
 			"text": "Accessed with the $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
 		},

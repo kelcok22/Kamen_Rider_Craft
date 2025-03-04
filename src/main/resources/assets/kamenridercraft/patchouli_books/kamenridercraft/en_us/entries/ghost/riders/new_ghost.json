@@ -6,7 +6,9 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:new_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:new_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:new_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:new_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "New Ore Damashii",
 			"text": "Accessed with the $(l:ghost/items/new_ore_ghost_eyecon)New Ore Ghost Eyecon$(/l)"
 		},

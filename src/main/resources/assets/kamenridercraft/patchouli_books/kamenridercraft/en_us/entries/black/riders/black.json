@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "black",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:black/items/red_king_stone)Red Kingstone$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "batta_man",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:batta_man_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:batta_man_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Batta Man",
 			"text": "Accessed with the $(l:black/items/batta_man_king_stone)Batta Man Kingstone$(/l)"
 		},

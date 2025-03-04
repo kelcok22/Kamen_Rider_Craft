@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "valvarad",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:gotchard/items/machwheel_ride_chemy_card)Machwheel$(/l) or $(l:gotchard/items/daiohni_ride_chemy_card)Daiohni$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "orochishovel",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gutsshovel_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gutsshovel_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Orochishovel Custom",
 			"text": "Accessed with the $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel$(/l) or $(l:gotchard/items/jyamatanoorochi_ride_chemy_card)Jyamatanoorochi$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "angecopter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gekiocopter_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gekiocopter_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Angecopter Custom",
 			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter$(/l) or $(l:gotchard/items/angelead_ride_chemy_card)Angelead$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},

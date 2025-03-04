@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mashin_chaser",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:protozero_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:protozero_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:drive/items/protozero_core)Roidmude Core Protozero$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_mashin_chaser",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rhino_super_viral_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rhino_super_viral_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Super Mashin Chaser",
 			"text": "Accessed with the $(l:drive/items/rhino_super_viral_core)Rhino Super Viral Core$(/l)"
 		},

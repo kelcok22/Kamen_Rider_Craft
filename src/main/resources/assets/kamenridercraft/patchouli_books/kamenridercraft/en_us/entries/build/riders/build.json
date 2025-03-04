@@ -7,7 +7,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rabbittank",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RabbitTank",
             "text": "Accessed with the $(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) and $(l:build/items/tank_full_bottle)Tank Fullbottle$(/l)"
         },
@@ -19,7 +21,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "sparkling",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RabbitTank Sparkling",
             "text": "Accessed with the $(l:build/items/rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
         },
@@ -31,7 +35,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rabbittank_hazard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RabbitTank Hazard",
             "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#rabbittank)RabbitTank$(/l)"
         },
@@ -43,7 +49,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "smaphowolf_hazard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "SmaphoWolf Hazard",
             "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#smaphowolf)SmaphoWolf$(/l)"
         },
@@ -55,7 +63,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "hawkgatling_hazard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "HawkGatling Hazard",
             "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#hawkgatling)HawkGatling$(/l)"
         },
@@ -67,7 +77,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "kaizokuressya_hazard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KaizokuRessya Hazard",
             "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#kaizokuressya)KaizokuRessya$(/l)"
         },
@@ -79,7 +91,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "keydragon_hazard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KeyDragon Hazard",
             "text": "Accessed with the $(l:build/items/hazard_trigger)Hazard Trigger$(/l) as $(l:build/riders/build#keydragon)KeyDragon$(/l)"
         },
@@ -91,7 +105,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rabbitrabbit",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RabbitRabbit",
             "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
         },
@@ -103,7 +119,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "tanktank",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "TankTank",
             "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
         },
@@ -115,7 +133,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "genius",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:genius_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:genius_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Genius Form",
             "text": "Accessed with the $(l:build/items/genius_full_bottle)Genius Fullbottle$(/l)"
         },
@@ -127,7 +147,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rabbitdragon",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_rabbit_full_bottle\",slot_tex2:\"kamenridercraft:silver_dragon_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_rabbit_full_bottle\",slot_tex2:\"kamenridercraft:silver_dragon_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RabbitDragon",
             "text": "Accessed with the $(l:build/items/gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) and $(l:build/items/silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l)"
         },
@@ -139,7 +161,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "cross_zbuild",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:cross_z_build_can\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:cross_z_build_can\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Cross-ZBuild",
             "text": "Accessed with the $(l:build/items/cross_z_build_can)Cross-Z Build Can$(/l)"
         },
@@ -151,7 +175,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "gorillamond",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorilla_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorilla_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "GorillaMond",
             "text": "Accessed with the $(l:build/items/gorilla_full_bottle)Gorilla Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
         },
@@ -163,7 +189,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "hawkgatling",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "HawkGatling",
             "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/gatling_full_bottle)Gatling Fullbottle$(/l)"
         },
@@ -175,7 +203,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "ninnincomic",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ninja_full_bottle\",slot_tex2:\"kamenridercraft:comic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ninja_full_bottle\",slot_tex2:\"kamenridercraft:comic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "NinninComic",
             "text": "Accessed with the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l) and $(l:build/items/comic_full_bottle)Comic Fullbottle$(/l)"
         },
@@ -187,7 +217,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rocketpanda",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:panda_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:panda_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RocketPanda",
             "text": "Accessed with the $(l:build/items/panda_full_bottle)Panda Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
         },
@@ -199,7 +231,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "firehedgehog",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:harinezumi_full_bottle\",slot_tex2:\"kamenridercraft:shoubousha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:harinezumi_full_bottle\",slot_tex2:\"kamenridercraft:shoubousha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "FireHedgehog",
             "text": "Accessed with the $(l:build/items/harinezumi_full_bottle)Harinezumi Fullbottle$(/l) and $(l:build/items/shoubousha_full_bottle)Shoubousha Fullbottle$(/l)"
         },
@@ -211,7 +245,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "lioncleaner",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_full_bottle\",slot_tex2:\"kamenridercraft:soujiki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_full_bottle\",slot_tex2:\"kamenridercraft:soujiki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "LionCleaner",
             "text": "Accessed with the $(l:build/items/lion_full_bottle)Lion Fullbottle$(/l) and $(l:build/items/soujiki_full_bottle)Soujiki Fullbottle$(/l)"
         },
@@ -223,7 +259,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "keydragon",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KeyDragon",
             "text": "Accessed with the $(l:build/items/dragon_full_bottle)Dragon Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
         },
@@ -235,7 +273,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "kaizokuressya",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KaizokuRessya",
             "text": "Accessed with the $(l:build/items/kaizoku_full_bottle)Kaizoku Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
         },
@@ -247,7 +287,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "octopuslight",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:octopus_full_bottle\",slot_tex2:\"kamenridercraft:light_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:octopus_full_bottle\",slot_tex2:\"kamenridercraft:light_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "OctopusLight",
             "text": "Accessed with the $(l:build/items/octopus_full_bottle)Octopus Fullbottle$(/l) and $(l:build/items/light_full_bottle)Light Fullbottle$(/l)"
         },
@@ -259,7 +301,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "phoenixrobo",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:phoenix_full_bottle\",slot_tex2:\"kamenridercraft:robot_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:phoenix_full_bottle\",slot_tex2:\"kamenridercraft:robot_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "PhoenixRobo",
             "text": "Accessed with the $(l:build/items/phoenix_full_bottle)Phoenix Fullbottle$(/l) and $(l:build/items/robot_full_bottle)Robot Fullbottle$(/l)"
         },
@@ -271,7 +315,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "smaphowolf",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "SmaphoWolf",
             "text": "Accessed with the $(l:build/items/wolf_full_bottle)Wolf Fullbottle$(/l) and $(l:build/items/smapho_full_bottle)Smapho Fullbottle$(/l)"
         },
@@ -283,7 +329,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "uniraser",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:unicorn_full_bottle\",slot_tex2:\"kamenridercraft:keshigomu_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:unicorn_full_bottle\",slot_tex2:\"kamenridercraft:keshigomu_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "UniRaser",
             "text": "Accessed with the $(l:build/items/unicorn_full_bottle)Unicorn Fullbottle$(/l) and $(l:build/items/keshigomu_full_bottle)Keshigomu Fullbottle$(/l)"
         },
@@ -295,7 +343,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "rosecopter",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rose_full_bottle\",slot_tex2:\"kamenridercraft:helicopter_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rose_full_bottle\",slot_tex2:\"kamenridercraft:helicopter_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "RoseCopter",
             "text": "Accessed with the $(l:build/items/rose_full_bottle)Rose Fullbottle$(/l) and $(l:build/items/helicopter_full_bottle)Helicopter Fullbottle$(/l)"
         },
@@ -307,7 +357,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "turtlewatch",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:turtle_full_bottle\",slot_tex2:\"kamenridercraft:watch_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:turtle_full_bottle\",slot_tex2:\"kamenridercraft:watch_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "TurtleWatch",
             "text": "Accessed with the $(l:build/items/turtle_full_bottle)Turtle Fullbottle$(/l) and $(l:build/items/watch_full_bottle)Watch Fullbottle$(/l)"
         },
@@ -319,7 +371,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "kumatv",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuma_full_bottle\",slot_tex2:\"kamenridercraft:televi_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuma_full_bottle\",slot_tex2:\"kamenridercraft:televi_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KumaTV",
             "text": "Accessed with the $(l:build/items/kuma_full_bottle)Kuma Fullbottle$(/l) and $(l:build/items/televi_full_bottle)Televi Fullbottle$(/l)"
         },
@@ -331,7 +385,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "beetlecamera",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabutomushi_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabutomushi_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "BeetleCamera",
             "text": "Accessed with the $(l:build/items/kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
         },
@@ -343,7 +399,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "spidercooler",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_full_bottle\",slot_tex2:\"kamenridercraft:reizouko_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_full_bottle\",slot_tex2:\"kamenridercraft:reizouko_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "SpiderCooler",
             "text": "Accessed with the $(l:build/items/spider_full_bottle)Spider Fullbottle$(/l) and $(l:build/items/reizouko_full_bottle)Reizouko Fullbottle$(/l)"
         },
@@ -355,7 +413,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "dogmic",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dog_full_bottle\",slot_tex2:\"kamenridercraft:mic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dog_full_bottle\",slot_tex2:\"kamenridercraft:mic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "DogMic",
             "text": "Accessed with the $(l:build/items/dog_full_bottle)Dog Fullbottle$(/l) and $(l:build/items/mic_full_bottle)Mic Fullbottle$(/l)"
         },
@@ -367,7 +427,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "merrychristmas",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:santa_claus_full_bottle\",slot_tex2:\"kamenridercraft:cake_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:santa_claus_full_bottle\",slot_tex2:\"kamenridercraft:cake_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "MerryChristmas",
             "text": "Accessed with the $(l:build/items/santa_claus_full_bottle)Santa Claus Fullbottle$(/l) and $(l:build/items/cake_full_bottle)Cake Fullbottle$(/l)"
         },
@@ -379,7 +441,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "toraufo",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tora_full_bottle\",slot_tex2:\"kamenridercraft:ufo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tora_full_bottle\",slot_tex2:\"kamenridercraft:ufo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "ToraUFO",
             "text": "Accessed with the $(l:build/items/tora_full_bottle)Tora Fullbottle$(/l) and $(l:build/items/ufo_full_bottle)UFO Fullbottle$(/l)"
         },
@@ -391,7 +455,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "kujirajet",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kujira_full_bottle\",slot_tex2:\"kamenridercraft:jet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kujira_full_bottle\",slot_tex2:\"kamenridercraft:jet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KujiraJet",
             "text": "Accessed with the $(l:build/items/kujira_full_bottle)Kujira Fullbottle$(/l) and $(l:build/items/jet_full_bottle)Jet Fullbottle$(/l)"
         },
@@ -403,7 +469,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "shikamid",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_full_bottle\",slot_tex2:\"kamenridercraft:pyramid_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_full_bottle\",slot_tex2:\"kamenridercraft:pyramid_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "ShikaMid",
             "text": "Accessed with the $(l:build/items/shika_full_bottle)Shika Fullbottle$(/l) and $(l:build/items/pyramid_full_bottle)Pyramid Fullbottle$(/l)"
         },
@@ -415,7 +483,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "kirincyclone",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_full_bottle\",slot_tex2:\"kamenridercraft:senpuuki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_full_bottle\",slot_tex2:\"kamenridercraft:senpuuki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "KirinCyclone",
             "text": "Accessed with the $(l:build/items/kirin_full_bottle)Kirin Fullbottle$(/l) and $(l:build/items/senpuuki_full_bottle)Senpuuki Fullbottle$(/l)"
         },
@@ -427,7 +497,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "penguinskater",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:penguin_full_bottle\",slot_tex2:\"kamenridercraft:skebo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:penguin_full_bottle\",slot_tex2:\"kamenridercraft:skebo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "PenguinSkater",
             "text": "Accessed with the $(l:build/items/penguin_full_bottle)Penguin Fullbottle$(/l) and $(l:build/items/skebo_full_bottle)Skebo Fullbottle$(/l)"
         },
@@ -439,7 +511,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "samebike",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_full_bottle\",slot_tex2:\"kamenridercraft:bike_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_full_bottle\",slot_tex2:\"kamenridercraft:bike_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "SameBike",
             "text": "Accessed with the $(l:build/items/same_full_bottle)Same Fullbottle$(/l) and $(l:build/items/bike_full_bottle)Bike Fullbottle$(/l)"
         },
@@ -451,7 +525,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "hachimarine",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hachi_full_bottle\",slot_tex2:\"kamenridercraft:sensuikan_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hachi_full_bottle\",slot_tex2:\"kamenridercraft:sensuikan_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "HachiMarine",
             "text": "Accessed with the $(l:build/items/hachi_full_bottle)Hachi Fullbottle$(/l) and $(l:build/items/sensuikan_full_bottle)Sensuikan Fullbottle$(/l)"
         },
@@ -463,7 +539,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "saidryer",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_full_bottle\",slot_tex2:\"kamenridercraft:dryer_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_full_bottle\",slot_tex2:\"kamenridercraft:dryer_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "SaiDryer",
             "text": "Accessed with the $(l:build/items/sai_full_bottle)Sai Fullbottle$(/l) and $(l:build/items/dryer_full_bottle)Dryer Fullbottle$(/l)"
         },
@@ -475,7 +553,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "batengine",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_full_bottle\",slot_tex2:\"kamenridercraft:engine_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_full_bottle\",slot_tex2:\"kamenridercraft:engine_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "BatEngine",
             "text": "Accessed with the $(l:build/items/bat_full_bottle)Bat Fullbottle$(/l) and $(l:build/items/engine_full_bottle)Engine Fullbottle$(/l)"
         },
@@ -487,7 +567,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "magghost",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:magnet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:magnet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "MagGhost",
             "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/magnet_full_bottle)Magnet Fullbottle$(/l)"
         },
@@ -499,7 +581,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "goldscorpion",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scorpion_full_bottle\",slot_tex2:\"kamenridercraft:gold_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scorpion_full_bottle\",slot_tex2:\"kamenridercraft:gold_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "GoldScorpion",
             "text": "Accessed with the $(l:build/items/scorpion_full_bottle)Scorpion Fullbottle$(/l) and $(l:build/items/gold_full_bottle)Gold Fullbottle$(/l)"
         },
@@ -511,7 +595,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "den_o",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:momotaros_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:momotaros_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Den-O Form",
             "text": "Accessed with the $(l:build/items/momotaros_full_bottle)Momotaros Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
         },
@@ -523,7 +609,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "decade",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_card_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_card_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Decade Form",
             "text": "Accessed with the $(l:build/items/rider_card_full_bottle)Rider Card Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
         },
@@ -535,7 +623,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "double",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tantei_full_bottle\",slot_tex2:\"kamenridercraft:usb_memory_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tantei_full_bottle\",slot_tex2:\"kamenridercraft:usb_memory_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Double Form",
             "text": "Accessed with the $(l:build/items/tantei_full_bottle)Tantei Fullbottle$(/l) and $(l:build/items/usb_memory_full_bottle)USB Memory Fullbottle$(/l)"
         },
@@ -547,7 +637,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "ooo",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:medal_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:medal_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "OOO Form",
             "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/medal_full_bottle)Medal Fullbottle$(/l)"
         },
@@ -559,7 +651,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "fourze",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yuujou_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yuujou_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Fourze Form",
             "text": "Accessed with the $(l:build/items/yuujou_full_bottle)Yuujou Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
         },
@@ -571,7 +665,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "wizard",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mahoutsukai_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mahoutsukai_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Wizard Form",
             "text": "Accessed with the $(l:build/items/mahoutsukai_full_bottle)Mahoutsukai Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
         },
@@ -583,7 +679,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "gaim",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:orange_full_bottle\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:orange_full_bottle\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Gaim Form",
             "text": "Accessed with the $(l:build/items/orange_full_bottle)Orange Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
         },
@@ -595,7 +693,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "ghost",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:parka_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:parka_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Ghost Form",
             "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/parka_full_bottle)Parka Fullbottle$(/l)"
         },
@@ -607,7 +707,9 @@
         {
             "type": "patchouli:entity",
             "anchor": "ex_aid",
-            "entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doctor_full_bottle\",slot_tex2:\"kamenridercraft:game_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doctor_full_bottle\",slot_tex2:\"kamenridercraft:game_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
             "name": "Ex-Aid Form",
             "text": "Accessed with the $(l:build/items/doctor_full_bottle)Doctor Fullbottle$(/l) and $(l:build/items/game_full_bottle)Game Fullbottle$(/l)"
         },

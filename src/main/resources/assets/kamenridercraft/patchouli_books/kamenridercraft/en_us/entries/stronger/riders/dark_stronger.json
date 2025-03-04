@@ -7,6 +7,8 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:shocker_riders{ArmorItems:[{id:\"kamenridercraft:dark_electrer\",Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " "
 		},
 		{

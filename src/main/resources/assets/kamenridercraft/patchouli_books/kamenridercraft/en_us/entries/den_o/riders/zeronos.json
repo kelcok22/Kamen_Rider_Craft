@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "plat",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_plat_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_plat_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Plat Form",
 			"text": "Accessed with the $(l:den_o/items/zeronos_plat_card)Zeronos Plat Card$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "altair",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_altair_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_altair_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Altair Form",
 			"text": "Accessed with the $(l:den_o/items/zeronos_altair_card)Zeronos Altair Card$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "vega",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_vega_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_vega_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Vega Form",
 			"text": "Accessed with the $(l:den_o/items/zeronos_vega_card)Zeronos Vega Card$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "zero",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_zero_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_zero_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Zero Form",
 			"text": "Accessed with the $(l:den_o/items/zeronos_zero_card)Zeronos Zero Card$(/l)"
 		},

@@ -13,14 +13,7 @@
 			"type": "patchouli:image",
 			"border": true,
 			"images": [
-				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city.png"
-			],
-			"title": " "
-		},
-		{
-			"type": "patchouli:image",
-			"border": true,
-			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city.png",
 				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city_2.png"
 			],
 			"title": " "

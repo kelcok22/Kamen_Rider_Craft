@@ -6,7 +6,9 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:sengoku_driver_idunn\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_idunn_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_idunn\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_idunn_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Ringo Arms",
 			"text": "Accessed with the $(l:gaim/items/forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)"
 		},

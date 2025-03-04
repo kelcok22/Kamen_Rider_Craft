@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tatoba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tatoba Combo",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gatakiriba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuwagata_medal\",slot_tex2:\"kamenridercraft:kamakiri_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuwagata_medal\",slot_tex2:\"kamenridercraft:kamakiri_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gatakiriba Combo",
 			"text": "Accessed with the $(l:ooo/items/kuwagata_medal)Kuwagata$(/l), $(l:ooo/items/kamakiri_medal)Kamakiri$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "latorartar",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:cheetah_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:cheetah_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Latorartar Combo",
 			"text": "Accessed with the $(l:ooo/items/lion_medal)Lion$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/cheetah_medal)Cheetah Medals$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sagohzo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_medal\",slot_tex2:\"kamenridercraft:gorilla_medal\",slot_tex3:\"kamenridercraft:zou_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_medal\",slot_tex2:\"kamenridercraft:gorilla_medal\",slot_tex3:\"kamenridercraft:zou_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sagohzo Combo",
 			"text": "Accessed with the $(l:ooo/items/sai_medal)Sai$(/l), $(l:ooo/items/gorilla_medal)Gorilla$(/l), and $(l:ooo/items/zou_medal)Zou Medals$(/l)"
 		},
@@ -55,7 +63,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shauta",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shachi_medal\",slot_tex2:\"kamenridercraft:unagi_medal\",slot_tex3:\"kamenridercraft:tako_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shachi_medal\",slot_tex2:\"kamenridercraft:unagi_medal\",slot_tex3:\"kamenridercraft:tako_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shauta Combo",
 			"text": "Accessed with the $(l:ooo/items/shachi_medal)Shachi$(/l), $(l:ooo/items/unagi_medal)Unagi$(/l), and $(l:ooo/items/tako_medal)Tako Medals$(/l)"
 		},
@@ -67,7 +77,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tajadol",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tajadol Combo",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
 		},
@@ -79,7 +91,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "putotyra",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ptera_medal\",slot_tex2:\"kamenridercraft:tricera_medal\",slot_tex3:\"kamenridercraft:tyranno_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ptera_medal\",slot_tex2:\"kamenridercraft:tricera_medal\",slot_tex3:\"kamenridercraft:tyranno_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Putotyra Combo",
 			"text": "Accessed with the $(l:ooo/items/ptera_medal)Ptera$(/l), $(l:ooo/items/tricera_medal)Tricera$(/l), and $(l:ooo/items/tyranno_medal)Tyranno Medals$(/l)"
 		},
@@ -91,7 +105,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "burakawani",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_medal\",slot_tex2:\"kamenridercraft:kame_medal\",slot_tex3:\"kamenridercraft:wani_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_medal\",slot_tex2:\"kamenridercraft:kame_medal\",slot_tex3:\"kamenridercraft:wani_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Burakawani Combo",
 			"text": "Accessed with the $(l:ooo/items/cobra_medal)Cobra$(/l), $(l:ooo/items/kame_medal)Kame$(/l), and $(l:ooo/items/wani_medal)Wani Medals$(/l)"
 		},
@@ -103,7 +119,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tajadol_final",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_ankh_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_ankh_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tajadol Combo (Final Episode ver.)",
 			"text": "Accessed with the $(l:ooo/items/taka_ankh_medal)Cracked Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
 		},
@@ -115,7 +133,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tamashiy",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:imagin_medal\",slot_tex3:\"kamenridercraft:shocker_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:imagin_medal\",slot_tex3:\"kamenridercraft:shocker_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tamashiy Combo",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/imagin_medal)Imagin$(/l), and $(l:ooo/items/shocker_medal)Shocker Medals$(/l)"
 		},
@@ -127,7 +147,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mukachiri",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mukade_medal\",slot_tex2:\"kamenridercraft:hachi_medal\",slot_tex3:\"kamenridercraft:ari_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mukade_medal\",slot_tex2:\"kamenridercraft:hachi_medal\",slot_tex3:\"kamenridercraft:ari_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Mukachiri Combo",
 			"text": "Accessed with the $(l:ooo/items/mukade_medal)Mukade$(/l), $(l:ooo/items/hachi_medal)Hachi$(/l), and $(l:ooo/items/ari_medal)Ari Medals$(/l)"
 		},
@@ -139,7 +161,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "bikaso",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ebi_new_medal\",slot_tex2:\"kamenridercraft:kani_new_medal\",slot_tex3:\"kamenridercraft:sasori_new_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ebi_new_medal\",slot_tex2:\"kamenridercraft:kani_new_medal\",slot_tex3:\"kamenridercraft:sasori_new_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Bikaso Combo",
 			"text": "Accessed with the $(l:ooo/items/ebi_new_medal)Ebi$(/l), $(l:ooo/items/kani_new_medal)Kani$(/l), and $(l:ooo/items/sasori_new_medal)Sasori Medals$(/l)"
 		},
@@ -151,7 +175,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "saramiuo",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_medal\",slot_tex2:\"kamenridercraft:kujira_medal\",slot_tex3:\"kamenridercraft:ookamiuo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_medal\",slot_tex2:\"kamenridercraft:kujira_medal\",slot_tex3:\"kamenridercraft:ookamiuo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Saramiuo Combo",
 			"text": "Accessed with the $(l:ooo/items/same_medal)Same$(/l), $(l:ooo/items/kujira_medal)Kujira$(/l), and $(l:ooo/items/ookamiuo_medal)Ookamiuo Medals$(/l)"
 		},
@@ -163,7 +189,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "shigazeshi",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_medal\",slot_tex2:\"kamenridercraft:gazelle_medal\",slot_tex3:\"kamenridercraft:ushi_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_medal\",slot_tex2:\"kamenridercraft:gazelle_medal\",slot_tex3:\"kamenridercraft:ushi_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Shigazeshi Combo",
 			"text": "Accessed with the $(l:ooo/items/shika_medal)Shika$(/l), $(l:ooo/items/gazelle_medal)Gazelle$(/l), and $(l:ooo/items/ushi_medal)Ushi Medals$(/l)"
 		},
@@ -175,7 +203,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "seishirogin",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:seiuchi_medal\",slot_tex2:\"kamenridercraft:shirokuma_medal\",slot_tex3:\"kamenridercraft:penguin_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:seiuchi_medal\",slot_tex2:\"kamenridercraft:shirokuma_medal\",slot_tex3:\"kamenridercraft:penguin_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Seishirogin Combo",
 			"text": "Accessed with the $(l:ooo/items/seiuchi_medal)Seiuchi$(/l), $(l:ooo/items/shirokuma_medal)Shirokuma$(/l), and $(l:ooo/items/penguin_medal)Penguin Medals$(/l)"
 		},
@@ -187,7 +217,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "takapanba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:panda_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:panda_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Takapanba",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/panda_medal)Panda$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
 		},
@@ -199,7 +231,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "takagaruba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kangaroo_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kangaroo_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Takagaruba",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kangaroo_medal)Kangaroo$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
 		},
@@ -211,7 +245,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "takatoragaru",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:kangaroo_medal_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:kangaroo_medal_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Takatoragaru",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/kangaroo_medal)Kangaroo Medals$(/l) (while sneaking)"
 		},
@@ -223,7 +259,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "takayadoba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:yadokari_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:yadokari_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Takayadoba",
 			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/yadokari_medal)Yadokari$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
 		},
@@ -235,7 +273,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "super_tatoba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_taka_medal\",slot_tex2:\"kamenridercraft:super_tora_medal\",slot_tex3:\"kamenridercraft:super_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_taka_medal\",slot_tex2:\"kamenridercraft:super_tora_medal\",slot_tex3:\"kamenridercraft:super_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Super Tatoba Combo",
 			"text": "Accessed with the $(l:ooo/items/super_taka_medal)Super Taka$(/l), $(l:ooo/items/super_tora_medal)Super Tora$(/l), and $(l:ooo/items/super_batta_medal)Super Batta Medals$(/l)"
 		},
@@ -247,7 +287,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tajadol_eternity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_eternity_medal\",slot_tex2:\"kamenridercraft:kujaku_eternity_medal\",slot_tex3:\"kamenridercraft:condor_eternity_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_eternity_medal\",slot_tex2:\"kamenridercraft:kujaku_eternity_medal\",slot_tex3:\"kamenridercraft:condor_eternity_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tajadol Combo Eternity",
 			"text": "Accessed with the $(l:ooo/items/taka_eternity_medal)Taka Eternity$(/l), $(l:ooo/items/kujaku_eternity_medal)Kujaku Eternity$(/l), and $(l:ooo/items/condor_eternity_medal)Condor Eternity Medals$(/l)"
 		},
@@ -259,7 +301,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "renai",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:love_core_medal\",slot_tex2:\"kamenridercraft:love_core2_medal\",slot_tex3:\"kamenridercraft:love_core3_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:love_core_medal\",slot_tex2:\"kamenridercraft:love_core2_medal\",slot_tex3:\"kamenridercraft:love_core3_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Renai Combo",
 			"text": "Accessed with the $(l:ooo/items/love_core_medal)Love (Head)$(/l), $(l:ooo/items/love_core2_medal)Love (Torso)$(/l), and $(l:ooo/items/love_core3_medal)Love (Legs) Medals$(/l)"
 		},
@@ -271,7 +315,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "legend_tatoba",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:habataki_medal\",slot_tex2:\"kamenridercraft:taiga_medal\",slot_tex3:\"kamenridercraft:ichigo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:habataki_medal\",slot_tex2:\"kamenridercraft:taiga_medal\",slot_tex3:\"kamenridercraft:ichigo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Legend Tatoba Combo",
 			"text": "Accessed with the $(l:ooo/items/habataki_medal)Habataki$(/l), $(l:ooo/items/taiga_medal)Tiger$(/l), and $(l:ooo/items/ichigo_medal)Ichigo Medals$(/l)"
 		},

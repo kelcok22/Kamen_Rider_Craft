@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jyamato",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "boost",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "BoostJyamato Form",
 			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "monster",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "MonsterJyamato Form",
 			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},

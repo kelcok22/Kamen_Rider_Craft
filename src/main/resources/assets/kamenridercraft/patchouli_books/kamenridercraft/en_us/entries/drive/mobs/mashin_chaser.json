@@ -1,0 +1,17 @@
+{
+	"name": "Mashin Chaser",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mashin_chaser",
+			"text": "Has a 10% chance to spawn from a $(l:drive/mobs/roidmude)Roidmude$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_core_chaser_cobara)Chaser Cobra Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_core_chaser_spider)Chaser Spider Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_core_chaser_bat)Chaser Bat Viral Core$(/l) (20%)$(li)1 $(l:drive/items/protozero_core)Roidmude Core Protozero$(/l) (10%)$(li)1 $(l:drive/items/proto_speedshift)Shift Proto Speed$(/l) (30%)"
+		}
+	]
+}

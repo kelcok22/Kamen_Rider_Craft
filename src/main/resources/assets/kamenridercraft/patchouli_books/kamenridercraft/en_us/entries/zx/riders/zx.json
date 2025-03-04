@@ -6,7 +6,9 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:zx_belt\",Count:1b},{id:\"kamenridercraft:zxlegs\",Count:1b},{id:\"kamenridercraft:zxtroso\",Count:1b},{id:\"kamenridercraft:zxhead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zx_belt\",Count:1b},{id:\"kamenridercraft:zxlegs\",Count:1b},{id:\"kamenridercraft:zxtroso\",Count:1b},{id:\"kamenridercraft:zxhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": ""
 		},

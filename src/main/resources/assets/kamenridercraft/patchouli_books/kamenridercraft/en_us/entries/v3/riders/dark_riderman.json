@@ -7,6 +7,8 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:destron_combatman{ArmorItems:[{id:\"kamenridercraft:dark_riderman_belt\",Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " "
 		},
 		{

@@ -7,6 +7,8 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:shocker_riders{ArmorItems:[{id:\"kamenridercraft:typhoon_dark_ichigo\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " "
 		},
 		{

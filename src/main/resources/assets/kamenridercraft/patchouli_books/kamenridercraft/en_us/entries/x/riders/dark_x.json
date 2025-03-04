@@ -7,6 +7,8 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:god_warfare_agent{ArmorItems:[{id:\"kamenridercraft:dark_ridol\",Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " "
 		},
 		{

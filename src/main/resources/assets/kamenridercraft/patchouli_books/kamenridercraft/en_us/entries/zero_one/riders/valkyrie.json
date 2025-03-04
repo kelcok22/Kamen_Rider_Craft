@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "rushing_cheetah",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Rushing Cheetah",
 			"text": "Accessed with the $(l:zero_one/items/rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "lightning_hornet",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Lightning Hornet",
 			"text": "Accessed with the $(l:zero_one/items/lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "justice_serval",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:serval_tiger_zetsumerisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:serval_tiger_zetsumerisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Justice Serval",
 			"text": "Accessed with the $(l:zero_one/items/serval_tiger_zetsumerisekey)Serval Tiger Zetsumerisekey$(/l)"
 		},

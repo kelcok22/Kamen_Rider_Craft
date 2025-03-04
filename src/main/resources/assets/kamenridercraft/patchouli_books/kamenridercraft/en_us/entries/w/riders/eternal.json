@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "red_flare",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Red Flare",
 			"text": "Accessed with the $(l:w/items/eternal_memory)Eternal Memory$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blue_flare",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Blue Flare",
 			"text": "Accessed with the $(l:w/items/eternal_t2_memory)Eternal T2 Memory$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "strengthening_armament",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:zone_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:zone_t2_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Strengthening Armament",
 			"text": "Accessed with the $(l:w/items/zone_t2_memory)Zone T2 Memory$(/l)"
 		},

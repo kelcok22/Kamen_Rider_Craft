@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "sununicorn",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_sun_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_sun_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Sununicorn",
 			"text": "Accessed with the $(l:gotchard/items/unicon_ride_chemy_card)Unicon$(/l) or $(l:gotchard/items/the_sun_ride_chemy_card)The Sun$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "mooncerberus",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:neminemoon_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:neminemoon_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Mooncerberus",
 			"text": "Accessed with the $(l:gotchard/items/yoacerberus_ride_chemy_card)Yoacerberus$(/l) or $(l:gotchard/items/neminemoon_ride_chemy_card)Neminemoon$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},

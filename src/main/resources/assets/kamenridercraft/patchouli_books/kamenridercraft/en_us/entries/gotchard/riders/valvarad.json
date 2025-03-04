@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "madwheel",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": ""
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gutsshovel",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gutsshovel Custom",
 			"text": "Accessed with the $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel Ride Chemy Card$(/l)"
 		},
@@ -31,7 +35,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "gekiocopter",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Gekiocopter Custom",
 			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter Ride Chemy Card$(/l)"
 		},
@@ -43,7 +49,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "tri_custom",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradraw_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:madwheel_ride_chemy_card\",slot_tex2:\"kamenridercraft:gekiocopter_ride_chemy_card\",slot_tex3:\"kamenridercraft:gutsshovel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Tri Custom",
 			"text": "Accessed with the $(l:gotchard/items/gekiocopter_ride_chemy_card)Gekiocopter Ride Chemy Card$(/l) and $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel Ride Chemy Card$(/l)"
 		},

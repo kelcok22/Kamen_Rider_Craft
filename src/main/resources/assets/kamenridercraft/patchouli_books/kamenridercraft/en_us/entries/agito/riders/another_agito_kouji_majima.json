@@ -7,7 +7,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "another_agito",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_agito_koji\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_agito_koji\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": " ",
 			"text": "Accessed with the $(l:agito/items/another_agito_koji)Another Agito Philosopher's Stone (Kouji Majima)$(/l)"
 		},
@@ -19,7 +21,9 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "burning",
-			"entity": "kamenridercraft:shocker_combatman{ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_agito_burning_form\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alter_ring\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_agito_burning_form\"}},Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
 			"name": "Burning Form",
 			"text": "Accessed with the $(l:agito/items/another_agito_burning_form)Another Agito Burning Philosopher's Stone$(/l)"
 		},
