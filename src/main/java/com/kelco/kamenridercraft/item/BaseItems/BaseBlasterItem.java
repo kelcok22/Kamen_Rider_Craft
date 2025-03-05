@@ -62,6 +62,11 @@ public class BaseBlasterItem extends BowItem {
 		return this;
 	}
 
+    @Override
+    public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
+        return !player.isCreative();
+    }
+
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
 		if (entityLiving instanceof Player player) {
 			ItemStack itemstack = new ItemStack(Items.ARROW, 1);

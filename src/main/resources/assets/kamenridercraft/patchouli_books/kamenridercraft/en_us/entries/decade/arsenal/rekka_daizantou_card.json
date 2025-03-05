@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:decade/rekka_daizantou_card",
-			"text": "Item is currently unobtainable (in the future, a recipe will be added but you will have to install the Super Sentai Craft mod for it to work)"
+			"text": "If you do not see a recipe here, you need to install the Super Sentai Craft mod"
 		}
 	]
 }
