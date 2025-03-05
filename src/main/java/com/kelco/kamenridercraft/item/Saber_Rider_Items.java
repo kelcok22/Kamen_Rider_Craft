@@ -5,10 +5,7 @@ import com.kelco.kamenridercraft.block.machineBlocks.SwordOfLogosBookAnalyzer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
-import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;
-import com.kelco.kamenridercraft.item.saber.HissatsuHolderItem;
-import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
-import com.kelco.kamenridercraft.item.saber.SwordOfLogosBuckleItem;
+import com.kelco.kamenridercraft.item.saber.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -682,8 +679,8 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.AddNum(2).ChangeSlot(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
-	//public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",
-	//		() -> new BookGateItem(new Item.Properties(),10).AddToList(RiderTabs.SABER_TAB_ITEM));
+	public static final DeferredItem<Item> BOOK_GATE_WONDER_RIDE_BOOK = ITEMS.register("book_gate_wonder_ride_book",
+			() -> new BookGateItem(new Item.Properties(),10).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",
