@@ -16,7 +16,9 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -38,6 +40,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.fml.ModList;
 import net.minecraft.server.level.ServerLevel;
 
 
@@ -188,6 +191,17 @@ public class AttackRideCardItem extends BaseItem {
 						case "kotaewa_kiite_nai":
 							Decade_Rider_Items.DEN_O_GUN_CARD.get().use(p_41128_, p_41129_, p_41130_);
 							p_41129_.sendSystemMessage(Component.translatable("attack.kamenridercraft.kotaewa_kiite_nai"));
+							break;
+						case "rekka_daizantou":
+							if (ModList.get().isLoaded("supersentaicraft")) {
+								Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou"));
+								ItemStack stack = new ItemStack(item, 1);
+								stack.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + item.getName(stack).getString()));
+								
+								ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), stack, 0, 0, 0);
+								entity.setPickUpDelay(0);
+								p_41128_.addFreshEntity(entity);
+							}
 							break;
 					}
 				}
