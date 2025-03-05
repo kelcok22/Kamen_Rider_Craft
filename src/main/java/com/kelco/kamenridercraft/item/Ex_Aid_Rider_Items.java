@@ -1050,17 +1050,6 @@ public class Ex_Aid_Rider_Items {
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 
-	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
-			() -> new KimewazaSlotHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
-	/*
-	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
-			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
-	*/
-
-
-	public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
-			() -> new EnergyItemHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
-
 
 	public static final DeferredItem<Item> SPEED_ENERGY_ITEM = ITEMS.register("speed_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 20,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
@@ -1253,6 +1242,18 @@ public class Ex_Aid_Rider_Items {
 	//Thunder
 
 	// Ghost x Ex-Aid maybe use for the Ex-Aid Ghost Eyecon
+
+	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
+			() -> new KimewazaSlotHolderItem());
+	/*
+	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
+			() -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.EX_AID_TAB_ITEM));
+	*/
+
+
+	public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
+			() -> new EnergyItemHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 

@@ -732,13 +732,13 @@ public class Zi_O_Rider_Items {
 
 
 	public static final DeferredItem<Item> RIDEWATCH_HOLDER = ITEMS.register("ridewatch_holder",
-			() -> new RidewatchHolderItem().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new RidewatchHolderItem());
 	public static final DeferredItem<Item> RIDEWATCH_HOLDER_GOLD = ITEMS.register("ridewatch_holder_gold",
-			() -> new RidewatchHolderItem().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new RidewatchHolderItem());
 	public static final DeferredItem<Item> RIDEWATCH_HOLDER_SILVER = ITEMS.register("ridewatch_holder_silver",
-			() -> new RidewatchHolderItem().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new RidewatchHolderItem());
 	public static final DeferredItem<Item> MIRIDEWATCH_HOLDER = ITEMS.register("miridewatch_holder",
-			() -> new MiridewatchHolderItem().AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new MiridewatchHolderItem());
 
 
 

@@ -10,7 +10,6 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.item.zero_one.IkazuchiProgriseHolderItem;
 import com.kelco.kamenridercraft.item.zero_one.ProgriseHolderItem;
 import com.kelco.kamenridercraft.item.zero_one.ShotriserItem;
 import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
@@ -734,9 +733,7 @@ public class Zero_One_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
-			() -> new ProgriseHolderItem().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
-	public static final DeferredItem<Item> IKAZUCHI_PROGRISE_HOLDER = ITEMS.register("ikazuchi_progrise_holder",
-			() -> new IkazuchiProgriseHolderItem().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			() -> new ProgriseHolderItem());
 
     public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER = ITEMS.register("hiden_zero_one_driver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));

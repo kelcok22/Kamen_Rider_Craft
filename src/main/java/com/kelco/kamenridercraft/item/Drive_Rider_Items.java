@@ -601,10 +601,6 @@ public class Drive_Rider_Items {
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 
-	public static final DeferredItem<Item> SHIFT_CAR_HOLDER = ITEMS.register("shift_car_holder",
-			() -> new ShiftCarHolderItem().AddToList(RiderTabs.DRIVE_TAB_ITEM));
-
-
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
@@ -673,6 +669,9 @@ public class Drive_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
+
+	public static final DeferredItem<Item> SHIFT_CAR_HOLDER = ITEMS.register("shift_car_holder",
+			() -> new ShiftCarHolderItem());
 
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}

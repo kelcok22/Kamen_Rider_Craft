@@ -499,7 +499,6 @@ public class KamenRiderCraftCore
             event.register(ModMenus.RIDEWATCH_HOLDER_GUI.get(), RidewatchHolderGuiScreen::new);
             event.register(ModMenus.MIRIDEWATCH_HOLDER_GUI.get(), MiridewatchHolderGuiScreen::new);
             event.register(ModMenus.PROGRISE_HOLDER_GUI.get(), ProgriseHolderGuiScreen::new);
-            event.register(ModMenus.IKAZUCHI_PROGRISE_HOLDER_GUI.get(), IkazuchiProgriseHolderGuiScreen::new);
             event.register(ModMenus.HISSATSU_HOLDER_GUI.get(), HissatsuHolderGuiScreen::new);
             event.register(ModMenus.VISTAMP_HOLDER_GUI.get(), VistampHolderGuiScreen::new);
             event.register(ModMenus.RAISE_BUCKLE_HOLDER_GUI.get(), RaiseBuckleHolderGuiScreen::new);

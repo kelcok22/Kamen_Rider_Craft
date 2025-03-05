@@ -870,11 +870,6 @@ public class Gaim_Rider_Items {
 					.Add_Extra_Base_Form_Items(GENESIS_CORE).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
-	public static final DeferredItem<Item> LOCKSEED_HOLDER = ITEMS.register("lockseed_holder",
-			() -> new LockseedHolderItem().has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
-
-
-
 	public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
@@ -1030,6 +1025,10 @@ public class Gaim_Rider_Items {
 	public static final DeferredItem<Item>  HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
 			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
 					.HasHoverTex().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
+	public static final DeferredItem<Item> LOCKSEED_HOLDER = ITEMS.register("lockseed_holder",
+			() -> new LockseedHolderItem().has_basic_model().AddToList(RiderTabs.GAIM_TAB_ITEM));
+
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

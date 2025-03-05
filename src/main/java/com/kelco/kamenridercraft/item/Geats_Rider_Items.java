@@ -1109,9 +1109,7 @@ public class Geats_Rider_Items {
 
 
 	public static final DeferredItem<Item> RAISE_BUCKLE_HOLDER = ITEMS.register("raise_buckle_holder",
-			() -> new RaiseBuckleHolderItem().AddToList(RiderTabs.GEATS_TAB_ITEM));
-
- 
+			() -> new RaiseBuckleHolderItem());
  
 	
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",

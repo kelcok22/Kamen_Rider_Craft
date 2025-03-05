@@ -755,7 +755,7 @@ public class Saber_Rider_Items {
 
 
 	public static final DeferredItem<Item> HISSATSUHOLDER = ITEMS.register("hissatsuholder",
-			() -> new HissatsuHolderItem().AddToList(RiderTabs.SABER_TAB_ITEM));
+			() -> new HissatsuHolderItem());
 
 
 	public static final DeferredItem<Item> KAENKEN_REKKA = ITEMS.register("kaenken_rekka",
