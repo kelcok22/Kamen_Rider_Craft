@@ -53,7 +53,10 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
 	            this.holdWeaponHigh(p_103366_);
 	         }
 
-		  if (p_103366_ instanceof TamableAnimal sittingMob && sittingMob.isInSittingPose()) {
+		  if (p_103366_.isPassenger()) {
+			this.head.y -= -10.0F;
+			for( ModelPart part : this.bodyParts() ) part.y -= -10.0F;
+		  } else if (p_103366_ instanceof TamableAnimal sittingMob && sittingMob.isInSittingPose()) {
 		  	this.rightArm.xRot += (-(float)Math.PI / 5F);
 		  	this.leftArm.xRot += (-(float)Math.PI / 5F);
 		  	this.rightLeg.xRot = -1.4137167F;
@@ -63,9 +66,7 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
 		  	this.leftLeg.yRot = (-(float)Math.PI / 10F);
 		  	this.leftLeg.zRot = -0.07853982F;
 			this.head.y -= -10.0F;
-			for( ModelPart part : this.bodyParts() ){ 
-				part.y -= -10.0F;
-			}
+			for( ModelPart part : this.bodyParts() ) part.y -= -10.0F;
 		  }
 
 	      this.leftPants.copyFrom(this.leftLeg);
