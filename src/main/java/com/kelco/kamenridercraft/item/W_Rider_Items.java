@@ -485,7 +485,7 @@ public class W_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).ChangeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> T2_MEMORY_CASE = ITEMS.register("t2_memory_case",
-			() -> new T2MemoryCaseItem().AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new T2MemoryCaseItem().has_basic_model().model_has_different_name("rider_case").AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
