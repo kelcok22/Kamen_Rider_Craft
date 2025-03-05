@@ -389,7 +389,7 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> PANDORA_FIRE = registerBlock("pandora_fire",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
 					.strength(2.0F, 6.0F).sound(SoundType.AMETHYST).noCollission().noOcclusion()
-					.noLootTable().lightLevel((p_152632_) -> {return 10;})).AddToTabList(RiderTabs.RIDER_DECOR));
+					.noLootTable().lightLevel((p_152632_) -> {return 10;})));
 
 
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
