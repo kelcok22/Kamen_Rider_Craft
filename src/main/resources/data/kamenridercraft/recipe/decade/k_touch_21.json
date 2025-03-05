@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "decade_complete_21",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:k_touch"
+	}, 
+	{
+	  "item": "kamenridercraft:complete_card_decade_21"
+	}, 
+	{
+	  "item": "kamenridercraft:grand_zi_o_card"
+	}, 
+	{
+	  "item": "kamenridercraft:zero_two_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:k_touch_21"
+  }
+}

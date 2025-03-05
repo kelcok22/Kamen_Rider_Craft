@@ -65,12 +65,13 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> K_TOUCH_21 = ITEMS.register("k_touch_21",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_complete_21","neo_decade","decadriver_belt_k_touch_21",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.ignoreOverrideBeltText().AddToList(RiderTabs.DECADE_TAB_ITEM));
 					
@@ -726,7 +727,8 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> SKULL_CARD = ITEMS.register("skull_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
-
+	public static final DeferredItem<Item> COMPLETE_CARD_DECADE_21 = ITEMS.register("complete_card_decade_21",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
