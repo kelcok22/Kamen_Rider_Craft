@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.saber.BookOfRuinItem;
 import com.kelco.kamenridercraft.item.saber.HissatsuHolderItem;
 import com.kelco.kamenridercraft.item.saber.SeikenSwordriverItem;
+import com.kelco.kamenridercraft.item.saber.SwordOfLogosBuckleItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -708,7 +709,7 @@ public class Saber_Rider_Items {
 					.Add_Extra_Base_Form_Items(SABER_BLANK_2,LAMP_DO_ALNGINA_WONDER_RIDE_BOOK).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SWORD_OF_LOGOS_BUCKLE_BUSTER = ITEMS.register("sword_of_logos_buckle_buster",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"buster",GENBU_SHINWA_WONDER_RIDE_BOOK_BUSTER ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+			() -> new SwordOfLogosBuckleItem(ArmorMaterials.DIAMOND,"buster",GENBU_SHINWA_WONDER_RIDE_BOOK_BUSTER ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SWORD_OF_LOGOS_BUCKLE_KENZAN = ITEMS.register("sword_of_logos_buckle_kenzan",
