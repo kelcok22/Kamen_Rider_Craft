@@ -38,7 +38,7 @@ public class T2MemoryCaseItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("T2 Memory Case");
+                    return Component.translatable("t2_memory_case.text");
                 }
 
                 @Override

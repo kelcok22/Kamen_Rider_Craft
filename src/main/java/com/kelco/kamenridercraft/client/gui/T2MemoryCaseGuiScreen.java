@@ -17,6 +17,9 @@ public class T2MemoryCaseGuiScreen extends AbstractContainerScreen<T2MemoryCaseG
 	public T2MemoryCaseGuiScreen(T2MemoryCaseGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageHeight++;
+		imageWidth = 176;
+		imageHeight = 179;
+		this.inventoryLabelY = this.imageHeight - 94;
 	}
 
 	/**

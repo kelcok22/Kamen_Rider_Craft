@@ -7,7 +7,9 @@ import java.util.function.Consumer;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -99,6 +101,12 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         player.setInvisible(false);
+        Level level = player.level();
+        if(!level.isClientSide()) {
+            ((ServerLevel) level).sendParticles(ParticleTypes.GUST,
+                    player.getX() , player.getY() + 1.0,
+                    player.getZ(), 1, 0, 0, 0, 1);
+        }
        tag.putBoolean("Update_form", false);
     }
 
