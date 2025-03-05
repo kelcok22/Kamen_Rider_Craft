@@ -723,16 +723,6 @@ public class OOO_Rider_Items {
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"muchiri_complete",MUKADE_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(HACHI_MEDAL,ARI_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
-			public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",
-					() -> new oScannerItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
-
-
-			public static final DeferredItem<Item> O_MEDAL_HOLDER = ITEMS.register("o_medal_holder",
-					() -> new OMedalHolderItem().AddToList(RiderTabs.OOO_TAB_ITEM));
-			/*
-			public static final DeferredItem<Item> O_MEDAL_NEST = ITEMS.register("o_medal_nest",
-					() -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
-			 */
 
 
 			public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
@@ -757,6 +747,18 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> BIRTH_BUSTER = ITEMS.register("birth_buster",
 					() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));
 
+
+	public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",
+			() -> new oScannerItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> O_MEDAL_HOLDER = ITEMS.register("o_medal_holder",
+			() -> new OMedalHolderItem().AddToList(RiderTabs.OOO_TAB_ITEM));
+
+	/*
+    public static final DeferredItem<Item> O_MEDAL_NEST = ITEMS.register("o_medal_nest",
+            () -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+     */
 
 	public static final BundleContents EMPTY = new BundleContents(List.of());
 

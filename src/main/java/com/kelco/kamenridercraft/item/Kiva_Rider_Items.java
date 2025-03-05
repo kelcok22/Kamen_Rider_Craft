@@ -204,9 +204,6 @@ public class Kiva_Rider_Items {
     public static final DeferredItem<Item> KIVALEGGINGS = ITEMS.register("kivalegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
-	public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
-			() -> new FueslotItem().AddToList(RiderTabs.KIVA_TAB_ITEM));
-
     public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
@@ -276,6 +273,9 @@ public class Kiva_Rider_Items {
     
 	public static final DeferredItem<Item> FANGIRE_BUSTER = ITEMS.register("fangire_buster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+
+	public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
+			() -> new FueslotItem());
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

@@ -926,10 +926,6 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> NEBULA_STEAM_GUN_HELL_BROS = ITEMS.register("nebula_steam_gun_hell_bros",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"hell_bros",GEAR_REMOCON ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
-
-	public static final DeferredItem<Item> FULLBOTTLE_HOLDER = ITEMS.register("fullbottle_holder",
-			() -> new FullBottleHolderItem().AddToList(RiderTabs.BUILD_TAB_ITEM));
-
     public static final DeferredItem<Item> DRILL_CRUSHER = ITEMS.register("drill_crusher",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
@@ -982,6 +978,9 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem().AddToList(RiderTabs.BUILD_TAB_ITEM));
 	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem().AddToList(RiderTabs.BUILD_TAB_ITEM));
 	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> FULLBOTTLE_HOLDER = ITEMS.register("fullbottle_holder",
+			() -> new FullBottleHolderItem());
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
