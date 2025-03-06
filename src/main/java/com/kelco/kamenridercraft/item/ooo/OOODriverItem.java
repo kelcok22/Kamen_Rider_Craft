@@ -5,7 +5,9 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,7 +15,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -21,7 +26,38 @@ public class OOODriverItem extends RiderDriverItem {
 	public OOODriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
+		Has_basic_belt_info=false;
+	}
 
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+
+		Item formItem = this.get_Form_Item(stack, 1);
+		Item formItem2 = this.get_Form_Item(stack, 2);
+		Item formItem3 = this.get_Form_Item(stack, 3);
+
+
+			tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+			tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
+
+	public String getCombo (Item formItem,Item formItem2,Item formItem3) {
+		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "tatoba";
+		if (formItem==OOO_Rider_Items.SUPER_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.SUPER_TORA_MEDAL.get()&formItem3==OOO_Rider_Items.SUPER_BATTA_MEDAL.get() )return "super_tatoba";
+		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "tatoba";
+		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_MEDAL.get() )return "tajadol";
+		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_MEDAL.get() )return "tajadol_fe";
+		if (formItem==OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get() )return "tajadol_eternity";
+		if (formItem==OOO_Rider_Items.LION_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.CHEETAH_MEDAL.get() )return "latorartar";
+		if (formItem==OOO_Rider_Items.KUWAGATA_MEDAL.get()&formItem2==OOO_Rider_Items.KAMAKIRI_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "gatakiriba";
+		return "false";
 	}
 
 	@Override

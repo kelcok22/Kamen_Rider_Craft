@@ -41,6 +41,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public int Unlimited_Textures = 0;
 
+    public Boolean Has_basic_belt_info = true;
+
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
         super(material, ArmorItem.Type.BOOTS, properties);
@@ -272,9 +274,11 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
-            tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
-            Item formItem = this.get_Form_Item(stack,1);
-        tooltipComponents.add(Component.translatable(formItem.toString()+".form"));
+            if (Has_basic_belt_info) {
+                tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+                Item formItem = this.get_Form_Item(stack, 1);
+                tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+            }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
