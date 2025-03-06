@@ -9,8 +9,10 @@ import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -22,10 +24,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 
@@ -271,7 +269,14 @@ public class RiderDriverItem extends RiderArmorItem {
         return false;
     }
 
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
+            tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+            Item formItem = this.get_Form_Item(stack,1);
+        tooltipComponents.add(Component.translatable(formItem.toString()+".form"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 
 
     public static RiderFormChangeItem get_Form_Item(ItemStack itemstack,int SLOT) {
