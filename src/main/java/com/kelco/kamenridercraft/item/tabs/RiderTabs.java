@@ -760,7 +760,7 @@ public class RiderTabs {
             {
                 event.accept( RiderTabs.Misc_TAB_ITEM.get(i));
             }
-
+            event.accept(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC);
         }
 
 
