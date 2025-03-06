@@ -17,6 +17,7 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
+import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -88,6 +89,7 @@ public class KamenRiderCraftCore
         Effect_core.register(modEventBus);
         ModMenus.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
+        ModSounds.register(modEventBus);
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);

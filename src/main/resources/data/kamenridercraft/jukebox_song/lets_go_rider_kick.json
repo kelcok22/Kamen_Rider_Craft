@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.lets_go_rider_kick.desc"
+  },
+  "length_in_seconds": 77.0,
+  "sound_event": "kamenridercraft:lets_go_rider_kick"
+}

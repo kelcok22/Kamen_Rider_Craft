@@ -1,0 +1,10 @@
+{
+  "lets_go_rider_kick": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:lets_go_rider_kick",
+        "stream": true
+      }
+    ]
+  }
+}
