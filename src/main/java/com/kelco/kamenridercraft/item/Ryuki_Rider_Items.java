@@ -535,7 +535,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-			.ChangeModel("geo/ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			.ChangeModel("ryuki_drag_shield.geo.json").AddToList(RiderTabs.RYUKI_TAB_ITEM));
     
     public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI_VENT = ITEMS.register("black_drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuga", BLACK_DRAG_VISOR.get(), BLACK_DRAG_VISOR_ZWEI.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
