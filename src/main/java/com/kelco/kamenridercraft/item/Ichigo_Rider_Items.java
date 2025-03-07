@@ -115,59 +115,59 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yongo",TYPHOON_CORE_YONGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_1 = ITEMS.register("typhoon_shocker_rider_1",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_2 = ITEMS.register("typhoon_shocker_rider_2",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_3 = ITEMS.register("typhoon_shocker_rider_3",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_4 = ITEMS.register("typhoon_shocker_rider_4",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_5 = ITEMS.register("typhoon_shocker_rider_5",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_6 = ITEMS.register("typhoon_shocker_rider_6",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_7 = ITEMS.register("typhoon_shocker_rider_7",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_7",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_7",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_8 = ITEMS.register("typhoon_shocker_rider_8",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_8",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_8",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_9 = ITEMS.register("typhoon_shocker_rider_9",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_9",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_9",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_10 = ITEMS.register("typhoon_shocker_rider_10",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_10",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_10",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_11 = ITEMS.register("typhoon_shocker_rider_11",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_11",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_11",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_12 = ITEMS.register("typhoon_shocker_rider_12",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_12",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_12",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NOPHOON_KAMEN_NORIDER = ITEMS.register("nophoon_kamen_norider",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_norider",NOPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_norider",NOPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_DARK_ICHIGO = ITEMS.register("typhoon_dark_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_typhoon_belt").AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_DARK_NIGO = ITEMS.register("typhoon_dark_nigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_nigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_nigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_typhoon_belt").AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     //V3
@@ -206,15 +206,15 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_BELT = ITEMS.register("riderman_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("riderman_belt").AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_DOUBLE_TYPHOON = ITEMS.register("dark_double_typhoon",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_double_typhoon_belt").AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_RIDERMAN_BELT = ITEMS.register("dark_riderman_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_riderman_belt").AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     //X
@@ -241,10 +241,10 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL = ITEMS.register("ridol",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_RIDOL = ITEMS.register("dark_ridol",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_ridol_belt").AddToTabList(RiderTabs.X_TAB_ITEM));
 
 
@@ -278,10 +278,10 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> CONDORER = ITEMS.register("condorer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_CONDORER = ITEMS.register("dark_condorer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_condorer_belt").AddToTabList(RiderTabs.AMAZON_TAB_ITEM));
 
 
@@ -321,12 +321,12 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_ELECTRER = ITEMS.register("dark_electrer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_stronger",ELECTRER_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_electrer_belt").AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TACKLE_BELT = ITEMS.register("tackle_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
 
     //Skyrider
@@ -351,7 +351,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  TORNADO = ITEMS.register("tornado",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     //Super 1
     public static final DeferredItem<Item>  SUPER_1_LOGO = ITEMS.register("super_1_logo",
@@ -374,7 +374,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
 
     public static final DeferredItem<Item>  CYCLODE = ITEMS.register("cyclode",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
 
     //ZX
     public static final DeferredItem<Item>  ZX_LOGO = ITEMS.register("zx_logo",
@@ -396,16 +396,16 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item>  ZX_BELT = ITEMS.register("zx_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SUSANOO_BELT = ITEMS.register("susanoo_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"susanoo_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"susanoo_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  TSUKUYOMI_BELT = ITEMS.register("tsukuyomi_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tsukuyomi_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tsukuyomi_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZX_TAB_ITEM));
 
     public static final DeferredItem<Item>  AMATERASU_BELT = ITEMS.register("amaterasu_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaterasu_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amaterasu_zx",ZX_BELT_CORE ,ZXHELMET,ZXCHESTPLATE,ZXLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZX_TAB_ITEM));
 
     //Black
 
@@ -522,7 +522,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_rx",RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  MOON_RISER = ITEMS.register("moon_riser",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"white_rx",MOON_RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.RX_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"white_rx",MOON_RX_CORE ,RXHELMET,RXCHESTPLATE,RXLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>REVOLCANE = ITEMS.register("revolcane",
@@ -559,7 +559,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.SHIN_TAB_ITEM));
 
     public static final DeferredItem<Item>  GRASSHOPPER_DNA = ITEMS.register("grasshopper_dna",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin",SHIN_STONE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.SHIN_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin",SHIN_STONE ,SHINHELMET,SHINCHESTPLATE,SHINLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.SHIN_TAB_ITEM));
 
     // ZO
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",
@@ -582,7 +582,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZO_CORE = ITEMS.register("zo_core",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zo",ZO_STONE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zo",ZO_STONE ,ZOHELMET,ZOCHESTPLATE,ZOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZO_TAB_ITEM));
 
     // J
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
