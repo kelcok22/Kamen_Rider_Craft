@@ -323,6 +323,7 @@
   "message.kamenridercraft.fake":"§2NINCOMPOOP! Shame on you! §6Never Give Up!",
 
   "kamenridercraft.name.form":"Form:",
+  "kamenridercraft:base.form": "Form: Base Form",
 
   "advent_deck_blank.text":"Advent Deck",
   "ring_holder_gui.text":"Ring Holder",
@@ -563,7 +564,7 @@
 "item.kamenridercraft.kuugalegs": "Kuuga Leggings",
 
 "item.kamenridercraft.arcle": "Arcle",
-  "kamenridercraft.name.kuuga":"Rider: §cKamen Rider Kuuga",
+  "kamenridercraft.name.kuuga":"Rider: Kamen Rider Kuuga",
 
   "item.kamenridercraft.manga_arcle": "Arcle",
   "kamenridercraft.name.kuuga_manga":"Rider: Kamen Rider Kuuga (Manga)",
@@ -585,18 +586,18 @@
 "item.kamenridercraft.kuuga_manga": "Kuuga Manga",
 
   "kamenridercraft:kuuga_growing.form": "Form: Growing Form",
-  "kamenridercraft:kuuga_mighty.form": "Form: §cMighty Form",
-  "kamenridercraft:kuuga_dragon.form": "Form: §9Dragon Form",
-  "kamenridercraft:kuuga_pegasus.form": "Form: §2Pegasus Form",
-  "kamenridercraft:kuuga_titan.form": "Form: §dTitan Form",
-  "kamenridercraft:kuuga_rising_mighty.form": "Form: §6Rising §cMighty Form",
-  "kamenridercraft:kuuga_rising_dragon.form": "Form: §6Rising §9Dragon Form",
-  "kamenridercraft:kuuga_rising_pegasus.form": "Form: §6Rising §2Pegasus Form",
-  "kamenridercraft:kuuga_rising_titan.form": "Form: §6Rising §dTitan Form",
-  "kamenridercraft:kuuga_amazing_mighty.form": "Form: §6Amazing Mighty Form",
-  "kamenridercraft:kuuga_ultimate.form": "Form: §6Ultimate Form",
-  "kamenridercraft:kuuga_rising_ultimate.form": "Form: §6Rising Ultimate Form",
-  "kamenridercraft:kuuga_super_rising_ultimate.form": "Form: §6Super Rising Ultimate Form",
+  "kamenridercraft:kuuga_mighty.form": "Form: Mighty Form",
+  "kamenridercraft:kuuga_dragon.form": "Form: Dragon Form",
+  "kamenridercraft:kuuga_pegasus.form": "Form: Pegasus Form",
+  "kamenridercraft:kuuga_titan.form": "Form: Titan Form",
+  "kamenridercraft:kuuga_rising_mighty.form": "Form: Rising Mighty Form",
+  "kamenridercraft:kuuga_rising_dragon.form": "Form: Rising Dragon Form",
+  "kamenridercraft:kuuga_rising_pegasus.form": "Form: Rising Pegasus Form",
+  "kamenridercraft:kuuga_rising_titan.form": "Form: Rising Titan Form",
+  "kamenridercraft:kuuga_amazing_mighty.form": "Form: Amazing Mighty Form",
+  "kamenridercraft:kuuga_ultimate.form": "Form: Ultimate Form",
+  "kamenridercraft:kuuga_rising_ultimate.form": "Form: Rising Ultimate Form",
+  "kamenridercraft:kuuga_super_rising_ultimate.form": "Form: Super Rising Ultimate Form",
   "kamenridercraft:kuuga_manga.form": "Form: Manga Mighty Form",
 
   "item.kamenridercraft.dragon_rod": "Dragon Rod",
@@ -614,16 +615,16 @@
 "item.kamenridercraft.g3core": "Blank G-System Chip",
 
 "item.kamenridercraft.alter_ring": "Altering",
-  "kamenridercraft.name.agito":"Rider: §eKamen Rider Agito",
+  "kamenridercraft.name.agito":"Rider: Kamen Rider Agito",
 
 "item.kamenridercraft.alter_ring_reiko": "Altering",
-  "kamenridercraft.name.female_agito":"Rider: §1Kamen Rider Agito§c(Reiko Takano)",
+  "kamenridercraft.name.female_agito":"Rider: Kamen Rider Agito(Reiko Takano)",
 
 "item.kamenridercraft.meta_factor": "Meta Factor",
-  "kamenridercraft.name.gills":"Rider: §2Kamen Rider Gills",
+  "kamenridercraft.name.gills":"Rider: Kamen Rider Gills",
 
 "item.kamenridercraft.ank_point": "Ank Point",
-  "kamenridercraft.name.another_agito":"Rider: §2Kamen Rider Another §6Agito",
+  "kamenridercraft.name.another_agito":"Rider: Kamen Rider Another Agito",
 
 "item.kamenridercraft.g3_belt": "G-Buckle (G3)",
 "item.kamenridercraft.g3_x_belt": "G-Buckle (G3-X)",
@@ -633,13 +634,13 @@
 "item.kamenridercraft.g1_belt": "G-Buckle (G1)",
 "item.kamenridercraft.v1_belt": "V1 Belt",
 
-  "kamenridercraft.name.g3":"Rider: §1Kamen Rider G3",
-  "kamenridercraft.name.g3_x":"Rider: §1Kamen Rider §eG3_X",
-  "kamenridercraft.name.g3_mild":"Rider: §1Kamen Rider G3 §cMild",
-  "kamenridercraft.name.g4":"Rider: §7Kamen Rider §eG4",
-  "kamenridercraft.name.g4_x":"Rider: §1Kamen Rider §eG4-X",
-  "kamenridercraft.name.g1":"Rider: §cKamen Rider G1",
-  "kamenridercraft.name.v1":"Debatable Rider: §7V1",
+  "kamenridercraft.name.g3":"Rider: Kamen Rider G3",
+  "kamenridercraft.name.g3_x":"Rider: Kamen Rider G3_X",
+  "kamenridercraft.name.g3_mild":"Rider: Kamen Rider G3 Mild",
+  "kamenridercraft.name.g4":"Rider: Kamen Rider G4",
+  "kamenridercraft.name.g4_x":"Rider: Kamen Rider G4-X",
+  "kamenridercraft.name.g1":"Rider: Kamen Rider G1",
+  "kamenridercraft.name.v1":"Debatable Rider: V1",
 
 "item.kamenridercraft.alter_ring_miracle": "Altering (Mirage Agito)",
   "kamenridercraft.name.mirage_agito":"Rider: Kamen Rider Mirage Agito",
@@ -685,22 +686,22 @@
 "item.kamenridercraft.agito_miracle": "Mirage Agito Philosopher's Stone",
 "item.kamenridercraft.another_agito_burning_form": "Another Agito Burning Philosopher's Stone",
 
-  "kamenridercraft:agito_ground.form": "Form: §eGround Form",
-  "kamenridercraft:agito_storm.form": "Form: §1Storm Form",
-  "kamenridercraft:agito_flame.form": "Form: §cFlame Form",
-  "kamenridercraft:agito_trinity.form": "Form: §1Trinity §cForm",
-  "kamenridercraft:agito_burning.form": "Form: §4Burning Form",
-  "kamenridercraft:agito_shining.form": "Form: §4Shining §7Form",
+  "kamenridercraft:agito_ground.form": "Form: Ground Form",
+  "kamenridercraft:agito_storm.form": "Form: Storm Form",
+  "kamenridercraft:agito_flame.form": "Form: Flame Form",
+  "kamenridercraft:agito_trinity.form": "Form: Trinity Form",
+  "kamenridercraft:agito_burning.form": "Form: Burning Form",
+  "kamenridercraft:agito_shining.form": "Form: Shining Form",
 
   "kamenridercraft:gills.form": "Form: Base Form",
-  "kamenridercraft:exceed_gills.form": "Form: §4Exceed Form",
-  "kamenridercraft:gold_exceed_gills.form": "Form: §6Gold Exceed Form",
+  "kamenridercraft:exceed_gills.form": "Form: Exceed Form",
+  "kamenridercraft:gold_exceed_gills.form": "Form: Gold Exceed Form",
 
   "kamenridercraft:another_agito.form": "Form: Base Form",
   "kamenridercraft:another_agito_koji.form": "Form: Base Form",
 
-  "kamenridercraft:agito_miracle.form": "Form: §7Mirage Form",
-  "kamenridercraft:another_agito_burning_form.form": "Form: §dBurning Form",
+  "kamenridercraft:agito_miracle.form": "Form: Mirage Form",
+  "kamenridercraft:another_agito_burning_form.form": "Form: Burning Form",
 
   "item.kamenridercraft.g3": "G3 Chip",
 "item.kamenridercraft.g3x": "G3-X Chip",
@@ -1833,9 +1834,26 @@
   "kamenridercraft:tajadol_fe.form": "Form: Tajadol Combo(Final Episode ver.)",
   "kamenridercraft:latorartar.form": "Form: Latorartar Combo",
   "kamenridercraft:gatakiriba.form": "Form: Gatakiriba Combo",
+  "kamenridercraft:sagohzo.form": "Form: Sagohzo Combo",
+  "kamenridercraft:shauta.form": "Form: Shauta Combo",
+  "kamenridercraft:putotyra.form": "Form: Putotyra Combo",
+  "kamenridercraft:burakawani.form": "Form: Burakawani Combo",
+  "kamenridercraft:love.form": "Form: Renai Combo",
+  "kamenridercraft:saramiuo.form": "Form: Saramiuo Combo",
+  "kamenridercraft:bikaso.form": "Form: Bikaso Combo",
+  "kamenridercraft:shigazeshi.form": "Form: Shigazeshi Combo",
+  "kamenridercraft:mukachiri.form": "Form: Mukachiri Combo",
+  "kamenridercraft:seishirogin.form": "Form: Seishirogin Combo",
+  "kamenridercraft:tamashiy.form": "Form: Tamashiy Combo",
+  "kamenridercraft:legend_tatoba.form": "Form: Legend Tatoba Combo",
+  "kamenridercraft:sokabi.form": "Form: SoKaBi!",
 
-  "kamenridercraft:tatoba_super.form": "Form: Super Tatoba Combo",
+  "kamenridercraft:super_tatoba.form": "Form: Super Tatoba Combo",
   "kamenridercraft:tajadol_eternity.form": "Form: Tajadol Combo Eternity",
+
+  "kamenridercraft:ancient_tatoba.form": "Form: Ancient Tatoba Combo",
+  "kamenridercraft:ancient_tatoba_greed.form": "Form: Greeed Absorption Form",
+  "kamenridercraft:goda.form": "Form: Goda Combo",
 
   "kamenridercraft:taka_medal.form": "Taka",
   "kamenridercraft:kujaku_medal.form": "Kujaku",
@@ -1860,10 +1878,6 @@
   "kamenridercraft:kame_medal.form": "Kame",
   "kamenridercraft:wani_medal.form": "Wani",
 
-  "kamenridercraft:sasori_medal.form": "Sasori Core Medal",
-  "kamenridercraft:kani_medal.form": "Kani Core Medal",
-  "kamenridercraft:ebi_medal.form": "Ebi Core Medal",
-
   "kamenridercraft:mukade_medal.form": "Mukade",
   "kamenridercraft:hachi_medal.form": "Hachi",
   "kamenridercraft:ari_medal.form": "Ari",
@@ -1881,6 +1895,7 @@
   "kamenridercraft:penguin_medal.form": "Penguin",
   "kamenridercraft:panda_medal.form": "Panda",
   "kamenridercraft:kangaroo_medal.form": "Kangaroo",
+  "kamenridercraft:kangaroo_medal_leg.form": "Kangaroo",
   "kamenridercraft:yadokari_medal.form": "Yadokari",
   "kamenridercraft:super_taka_medal.form": "Super Taka",
   "kamenridercraft:super_tora_medal.form": "Super Tora",
@@ -1889,9 +1904,22 @@
   "kamenridercraft:kujaku_eternity_medal.form": "Kujaku Eternity",
   "kamenridercraft:condor_eternity_medal.form": "Condor Eternity",
 
+  "kamenridercraft:sasori_medal.form": "Sasori Core Medal",
+  "kamenridercraft:kani_medal.form": "Kani Core Medal",
+  "kamenridercraft:ebi_medal.form": "Ebi Core Medal",
+
   "kamenridercraft:ancient_taka_medal.form": "Ancient Taka",
   "kamenridercraft:ancient_tora_medal.form": "Ancient Tora",
   "kamenridercraft:ancient_batta_medal.form": "Ancient Batta",
+
+  "kamenridercraft:habataki_medal.form": "Habataki",
+  "kamenridercraft:taiga_medal.form": "Tiger",
+  "kamenridercraft:ichigo_medal.form": "Ichigo",
+
+  "kamenridercraft:imagin_medal.form": "Imagin",
+  "kamenridercraft:shocker_medal.form": "Shocker",
+  "kamenridercraft:gel_shocker_medal.form": "Gel Shocker",
+  "kamenridercraft:destron_medal.form": "Destron",
 
   "kamenridercraft:mukade_goda_medal.form": "Goda Mukade",
   "kamenridercraft:hachi_goda_medal.form": "Goda Hachi",
@@ -1900,6 +1928,16 @@
   "kamenridercraft:love_core_medal.form": "Love",
   "kamenridercraft:love_core2_medal.form": "Love",
   "kamenridercraft:love_core3_medal.form": "Love",
+
+  "kamenridercraft:birthday.form": "Form: Birth·Day",
+
+  "kamenridercraft:claws.form": "CLAWs:",
+  "kamenridercraft:birth_core_breast_cannon.form": "Breast Cannon",
+  "kamenridercraft:birth_core_crane_arm.form": "Crane Arm",
+  "kamenridercraft:birth_core_drill_arm.form": "Drill Arm",
+  "kamenridercraft:birth_core_shovel_arm.form": "Shovel Arm",
+  "kamenridercraft:birth_core_catepillar_leg.form": "Caterpillar Leg",
+  "kamenridercraft:birth_core_cutter_wing.form": "Cutter Wing",
 
   "item.kamenridercraft.fourze_logo": "Fourze Logo",
   "item.kamenridercraft.fourze_head": "Fourze Helmet",
@@ -4523,7 +4561,7 @@
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
 
-  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: §6S.I.C. Amazing Mighty Form",
+  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: S.I.C. Amazing Mighty Form",
 
 "item.kamenridercraft.card_warrior_kamen_rider_manga": "Card Warrior Kamen Rider Manga",
 
@@ -4550,7 +4588,7 @@
 "item.kamenridercraft.herculespader_sword": "Herculespader Sword",
 
   "kamenridercraft:stagtornador.form": "Form: §eGround Form w/ Stagtornador",
-  "kamenridercraft:grandgouram.form": "Form: §6Amazing Mighty Form w/ GrandGouram",
+  "kamenridercraft:grandgouram.form": "Form: Amazing Mighty Form w/ GrandGouram",
   "kamenridercraft:cyclonehopper.form": "Form: Cyclonehopper",
   "kamenridercraft:flaresalamander.form": "Form: Flaresalamander",
   "kamenridercraft:herculespader.form": "Form: Herculespader",
@@ -4565,13 +4603,13 @@
   "kamenridercraft:akanetaka.form": "Form: Akanetaka",
   "kamenridercraft:shadowmantis.form": "Form: Shadowmantis",
 
-  "kamenridercraft:jinrai_no_senshi.form_dark_kabuto": "Form: §eJinrai no senshi §6Rising",
-  "kamenridercraft:jinrai_no_senshi.form_blade": "Form: §eJinrai no senshi §6Rising",
-  "kamenridercraft:jinrai_no_senshi.form": "Form: §6Rising §cMighty Form §e(Jinrai no senshi)",
+  "kamenridercraft:jinrai_no_senshi.form_dark_kabuto": "Form: Jinrai no senshi Rising",
+  "kamenridercraft:jinrai_no_senshi.form_blade": "Form: Jinrai no senshi Rising",
+  "kamenridercraft:jinrai_no_senshi.form": "Form: Rising §cMighty Form (Jinrai no senshi)",
 
-  "kamenridercraft:bakuen_no_senshi.form_hibiki": "Form: §6Bakuen no senshi",
-  "kamenridercraft:bakuen_no_senshi.form_ryuga": "Form: §6Bakuen no senshi",
-  "kamenridercraft:bakuen_no_senshi.form": "Form: §6Bakuen no senshi",
+  "kamenridercraft:bakuen_no_senshi.form_hibiki": "Form: Bakuen no senshi",
+  "kamenridercraft:bakuen_no_senshi.form_ryuga": "Form: Bakuen no senshi",
+  "kamenridercraft:bakuen_no_senshi.form": "Form: Bakuen no senshi",
 
 
 "entity.kamenridercraft.shocker_combatman":"Shocker Combatman",
