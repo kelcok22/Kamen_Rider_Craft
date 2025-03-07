@@ -364,6 +364,7 @@
   "kamenridercraft:typhoon_core.form": "Form: Base Form",
 "item.kamenridercraft.original_typhoon_core": "Typhoon Core (Original)",
   "kamenridercraft:original_typhoon_core.form": "Form: Original Edition",
+  "kamenridercraft:typhoon_core_artist.form": "Form: Base Form (SIC Artist Series)",
 "item.kamenridercraft.typhoon_core_nigo": "Typhoon Core (Nigo)",
   "kamenridercraft:typhoon_core_nigo.form": "Form: Base Form",
 "item.kamenridercraft.sakurajima_typhoon_core": "Typhoon Core (Sakurajima)",
@@ -427,8 +428,11 @@
 "item.kamenridercraft.double_typhoon_core": "Double Typhoon Core",
   "kamenridercraft:double_typhoon_core.form": "Form: Base Form",
 "item.kamenridercraft.blue_double_typhoon_core": "Blue Double Typhoon Core",
-  "kamenridercraft:double_typhoon_core.form": "Form: Blue Form",
+  "kamenridercraft:blue_double_typhoon_core.form": "Form: Blue Form",
+  "kamenridercraft:double_typhoon_core_artist.form": "Form: Base Form (SIC Artist Series)",
 "item.kamenridercraft.riderman_belt_core": "Rider Buckle Core",
+  "kamenridercraft:riderman_belt_core.form": "Form: Base Form",
+  "kamenridercraft:riderman_belt_core_artist.form": "Form: Base Form (SIC Artist Series)",
 
 "item.kamenridercraft.double_typhoon": "Double Typhoon",
 "kamenridercraft.name.v3": "Rider: Kamen Rider V3",
@@ -446,7 +450,8 @@
 "item.kamenridercraft.xtroso": "X Chestplate",
 "item.kamenridercraft.xlegs": "X Leggings",
 "item.kamenridercraft.ridol_core": "Ridol Core",
-"item.kamenridercraft.perfecter": "Perfecter",
+"item.kamenridercraft.perfecter": "Perfector",
+  "kamenridercraft:perfecter.form": "Form: Perfector Equipped",
 "item.kamenridercraft.ridol": "Ridol",
 "kamenridercraft.name.x": "Rider: Kamen Rider X",
 "item.kamenridercraft.dark_ridol": "Ridol (Dark X)",
@@ -457,6 +462,8 @@
 "item.kamenridercraft.amazontroso": "Amazon Chestplate",
 "item.kamenridercraft.amazonlegs": "Amazon Leggings",
 "item.kamenridercraft.condorer_wheel": "Condorer Wheel",
+  "kamenridercraft:condorer_wheel.form": "Form: Base Form",
+  "kamenridercraft:condorer_wheel_pre_amazon.form": "Form: Pre-Amazon",
 "item.kamenridercraft.condorer": "Condorer",
 "kamenridercraft.name.amazon": "Rider: Kamen Rider Amazon",
 "item.kamenridercraft.gigi_armlet": "GiGi Armlet",
@@ -470,15 +477,18 @@
 "item.kamenridercraft.strongerlegs": "Stronger Leggings",
 "item.kamenridercraft.electrer_core": "Electrer Core",
   "kamenridercraft:electrer_core.form": "Form: Base Form",
+  "kamenridercraft:electrer_core_artist.form": "Form: Base Form (SIC Artist Series)",
 "item.kamenridercraft.charge_up": "Super Electronic Dynamo",
   "kamenridercraft:charge_up.form": "Form: Charge Up Form",
 "item.kamenridercraft.tackle_core": "Tackle Core",
+  "kamenridercraft:tackle_core.form": "Form: Base Form",
 "item.kamenridercraft.electrer": "Electrer",
 "kamenridercraft.name.stronger": "Rider: Kamen Rider Stronger",
 "item.kamenridercraft.tackle_belt": "Tackle Belt",
 "kamenridercraft.name.tackle": "Debatable Rider: Electronic Wave Humanoid Tackle",
 "item.kamenridercraft.dark_electrer": "Electrer (Dark Stronger)",
 "kamenridercraft.name.dark_stronger": "Rider: Dark Stronger",
+  "kamenridercraft:tackle_core_artist.form": "Form: Base Form (SIC Artist Series)",
 
 "item.kamenridercraft.skyrider_logo": "Skyrider Logo",
 "item.kamenridercraft.skyriderhead": "Skyrider Helmet",
@@ -943,6 +953,8 @@
   "kamenridercraft:survive_rekka_ryuga.form": "Form: Survive",
   "kamenridercraft:survive_mugen.form": "Form: Survive",
   "kamenridercraft:survive_black.form": "Form: Survive (Black)",
+  "kamenridercraft:drag_shield_vent_form.form": "Form: Shield Vent",
+  "kamenridercraft:drag_shield_vent_form_ryuga.form": "Form: Shield Vent",
 
 
 "item.kamenridercraft.faiz_logo": "Faiz Logo",
@@ -4684,7 +4696,7 @@
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. Hero Saga",
 
-  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Form: S.I.C. Amazing Mighty Form",
+  "kamenridercraft:kuuga_amazing_mighty_artist.form": "Amazing Mighty Form (SIC Artist Series)",
 
 "item.kamenridercraft.card_warrior_kamen_rider_manga": "Card Warrior Kamen Rider Manga",
 
