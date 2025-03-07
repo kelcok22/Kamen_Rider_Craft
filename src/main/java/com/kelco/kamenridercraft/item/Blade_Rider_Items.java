@@ -55,7 +55,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).addNeedItem(FUSION_EAGLE.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
@@ -64,7 +64,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).addNeedItem(FUSION_EAGLE.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
@@ -92,7 +92,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addNeedItem(FUSION_PEACOCK.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
@@ -133,7 +133,7 @@ public class Blade_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false))
-					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get()).addNeedItem(FUSION_ELEPHANT.get())
+					.addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get())
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHANGE_KERBEROS_GLAIVE = ITEMS.register("change_kerberos_glaive",
@@ -174,11 +174,11 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> LEANGLEBUCKLE = ITEMS.register("leangle_buckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GLAIVEBUCKLE = ITEMS.register("glaive_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LANCEBUCKLE = ITEMS.register("lance_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LARCBUCKLE = ITEMS.register("larc_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 
 
 	public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
