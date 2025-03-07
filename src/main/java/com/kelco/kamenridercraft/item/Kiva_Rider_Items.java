@@ -103,7 +103,7 @@ public class Kiva_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+					.addNeedItem(TATSULOT.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> KNUCKLE_FUESTLE_BURST = ITEMS.register("knucklefuestle_burst",
@@ -211,22 +211,22 @@ public class Kiva_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
     public static final DeferredItem<Item> SAGARC_BELT = ITEMS.register("sagarc_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
     public static final DeferredItem<Item> DARK_KIVAT_BELT = ITEMS.register("darkkivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kiva", WAKE_UP_FUESTLE_DARK_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kiva", WAKE_UP_FUESTLE_DARK_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> NEW_KIVAT_BELT = ITEMS.register("newkivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> REY_KIVAT_BELT = ITEMS.register("reydriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> ARC_KIVAT_BELT = ITEMS.register("arcdriver",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"arc", WAKE_UP_FUESTLE_ARC,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> KIVALA_BELT = ITEMS.register("kivaladriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kivala", WAKE_UP_FUESTLE_KIVALA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kivala", WAKE_UP_FUESTLE_KIVALA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     
     public static final DeferredItem<Item> GARULU_SABER = ITEMS.register("garulu_saber",
