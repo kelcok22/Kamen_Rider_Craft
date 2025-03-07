@@ -1075,6 +1075,18 @@
 "item.kamenridercraft.evolution_paradoxa": "Evolution Paradoxa Rouze Card",
 "item.kamenridercraft.evolution_tarantula": "Evolution Tarantula Rouze Card",
 
+  "kamenridercraft:change_beetle.form": "Form: Base Form",
+  "kamenridercraft:change_stag.form": "Form: Base Form",
+  "kamenridercraft:change_spider.form": "Form: Base Form",
+  "kamenridercraft:change_mantis.form": "Form: Base Form",
+
+  "kamenridercraft:fusion_eagle.form": "Form: Jack Form",
+  "kamenridercraft:fusion_peacock.form": "Form: Jack Form",
+  "kamenridercraft:evolution_caucasus.form": "Form: King Form",
+  "kamenridercraft:silver_evolution_caucasus.form": "Form: Silver King Form",
+  "kamenridercraft:evolution_giraffa.form": "Form: King Form",
+  "kamenridercraft:evolution_paradoxa.form": "Form: Wild Form",
+  "kamenridercraft:evolution_tarantula.form": "Form: King Form",
 
 "item.kamenridercraft.hibiki_logo": "Hibiki Logo",
 "item.kamenridercraft.hibikihead": "Hibiki Helmet",
