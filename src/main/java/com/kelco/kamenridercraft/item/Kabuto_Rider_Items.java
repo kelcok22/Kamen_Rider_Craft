@@ -254,13 +254,13 @@ public class Kabuto_Rider_Items {
         public static final DeferredItem<Item> LADY_RIDER_BELT = ITEMS.register("lady_rider_belt",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lady",LADY_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> ZECTROOPER_BELT = ITEMS.register("zectrooper_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zectrooper",ZECTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zectrooper",ZECTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> SHADOW_TROOPER_BELT = ITEMS.register("shadow_trooper_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_trooper",ZECTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_trooper",ZECTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> BRIGHTROOPER_BELT = ITEMS.register("brightrooper_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"brightrooper",BRIGHTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"brightrooper",BRIGHTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> NEOTROOPER_BELT = ITEMS.register("neotrooper_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neotrooper",NEOTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neotrooper",NEOTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
 	    
         public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
                 () -> new ClockUpPadItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
