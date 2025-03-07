@@ -9,13 +9,17 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class BirthDriverItem extends RiderDriverItem {
 
@@ -26,6 +30,37 @@ public class BirthDriverItem extends RiderDriverItem {
  
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
 		Num_Base_Form_Item=7;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Has_basic_belt_info=false;
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+		if (get_Form_Item(stack, 2)== OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get()&get_Form_Item(stack, 3)
+				==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get()&get_Form_Item(stack, 4)
+				==OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get()&get_Form_Item(stack, 5)
+				==OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get()&get_Form_Item(stack, 6)
+				==OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get()&get_Form_Item(stack, 7)
+				==OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:birthday.form"));
+
+else {
+			tooltipComponents.add(Component.translatable( "kamenridercraft:claws.form"));
+
+			if (get_Form_Item(stack, 2) == OOO_Rider_Items.BIRTH_CORE_BREAST_CANNON.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_breast_cannon.form"));
+			if (get_Form_Item(stack, 3) == OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_crane_arm.form"));
+			if (get_Form_Item(stack, 4) == OOO_Rider_Items.BIRTH_CORE_SHOVEL_ARM.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_shovel_arm.form"));
+			if (get_Form_Item(stack, 5) == OOO_Rider_Items.BIRTH_CORE_CATERPILLAR_LEG.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_catepillar_leg.form"));
+			if (get_Form_Item(stack, 6) == OOO_Rider_Items.BIRTH_CORE_DRILL_ARM.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_drill_arm.form"));
+			if (get_Form_Item(stack, 7) == OOO_Rider_Items.BIRTH_CORE_CUTTER_WING.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:birth_core_cutter_wing.form"));
+		}
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
 	@Override

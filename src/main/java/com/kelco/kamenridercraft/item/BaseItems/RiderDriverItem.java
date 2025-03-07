@@ -42,6 +42,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public int Unlimited_Textures = 0;
 
     public Boolean Has_basic_belt_info = true;
+    public Boolean Show_belt_form_info = true;
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
@@ -114,6 +115,11 @@ public class RiderDriverItem extends RiderArmorItem {
     public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item) {
         Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem)item.get());
         Num_Base_Form_Item=2;
+        return this;
+    }
+
+    public RiderDriverItem Dont_show_belt_form_info() {
+        Show_belt_form_info=false;
         return this;
     }
 
@@ -276,8 +282,12 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (Has_basic_belt_info) {
                 tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
-                Item formItem = this.get_Form_Item(stack, 1);
-                tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+                if (Show_belt_form_info) {
+                    {
+                        Item formItem = this.get_Form_Item(stack, 1);
+                        tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+                    }
+                }
             }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

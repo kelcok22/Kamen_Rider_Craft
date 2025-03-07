@@ -45,7 +45,7 @@ public class Miscellaneous_Rider_Items {
 	            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));
 	    
 	    public static final DeferredItem<Item> G_BELT = ITEMS.register("g_belt",
-		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.G_TAB_ITEM));
+		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.G_TAB_ITEM));
 
 //Gorider
 		public static final DeferredItem<Item> AKARIDER_CARD = ITEMS.register("akarider_card",
@@ -97,15 +97,15 @@ public class Miscellaneous_Rider_Items {
 	            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 
 		public static final DeferredItem<Item> TYPHOON_AKARIDER = ITEMS.register("typhoon_akarider",
-				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aka_rider",AKARIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
+				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aka_rider",AKARIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 		public static final DeferredItem<Item> TYPHOON_AORIDER = ITEMS.register("typhoon_aorider",
-				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ao_rider",AORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
+				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ao_rider",AORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 		public static final DeferredItem<Item> TYPHOON_KIRIDER = ITEMS.register("typhoon_kirider",
-				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ki_rider",KIRIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
+				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ki_rider",KIRIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 		public static final DeferredItem<Item> TYPHOON_MOMORIDER = ITEMS.register("typhoon_momorider",
-				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"momo_rider",MOMORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
+				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"momo_rider",MOMORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 		public static final DeferredItem<Item> TYPHOON_MIDORIDER = ITEMS.register("typhoon_midorider",
-				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mido_rider",MIDORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
+				() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mido_rider",MIDORIDER_CARD ,AKARIDERHELMET,AKARIDERCHESTPLATE,AKARIDERLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GORIDER_TAB_ITEM));
 			 
 		
 		//SIC artist
@@ -217,31 +217,31 @@ public class Miscellaneous_Rider_Items {
 		    
 		    public static final DeferredItem<Item> CHAOS_DRIVER_SAIGO = ITEMS.register("chaos_driver_saigo",
 			           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saigo",CHAOS_RING_SAIGO ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-			           .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+							   .Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> CHAOS_DRIVER_HARUMA = ITEMS.register("chaos_driver_haruma",
 			           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"haruma",CHAOS_RING_HARUMA ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-			           .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+							   .Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> CHAOS_DRIVER_SHION = ITEMS.register("chaos_driver_shion",
 			           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shion",CHAOS_RING_SHION ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-			           .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+							   .Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> CHAOS_DRIVER_JIGEN = ITEMS.register("chaos_driver_jigen",
 			           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jigen",CHAOS_RING_JIGEN ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-			           .AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+							   .Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAOS_DRIVER_ARAKI = ITEMS.register("chaos_driver_araki",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"araki",CHAOS_RING_ARAKI ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAOS_DRIVER_KAMUI = ITEMS.register("chaos_driver_kamui",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamui",CHAOS_RING_KAMUI ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAOS_DRIVER_AGATA = ITEMS.register("chaos_driver_agata",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agata",CHAOS_RING_AGATA ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
 		    		() -> new GashaTicketItem(new Item.Properties()).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));

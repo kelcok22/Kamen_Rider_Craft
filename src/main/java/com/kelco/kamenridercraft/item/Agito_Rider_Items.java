@@ -189,28 +189,36 @@ public class Agito_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gills",GILLS ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
  
     public static final DeferredItem<Item> ANK_POINT = ITEMS.register("ank_point",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito",ANOTHER_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get())); 
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito",ANOTHER_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	
     public static final DeferredItem<Item> G_BUCKLE_G3 = ITEMS.register("g3_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3",G3_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3",G3_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G3_X = ITEMS.register("g3_x_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     	
     public static final DeferredItem<Item> G_BUCKLE_G3_MILD = ITEMS.register("g3_mild_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_mild",G3_MILD_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_mild",G3_MILD_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G4 = ITEMS.register("g4_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 	
     public static final DeferredItem<Item> G_BUCKLE_G4_X = ITEMS.register("g4_x_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g1",G1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 	
     public static final DeferredItem<Item> V1_BELT = ITEMS.register("v1_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v1",V1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v1",V1_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     
     public static final DeferredItem<Item> ALTERING_MIRAGE = ITEMS.register("alter_ring_miracle",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));

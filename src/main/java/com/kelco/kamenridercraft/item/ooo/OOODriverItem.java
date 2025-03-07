@@ -39,12 +39,13 @@ public class OOODriverItem extends RiderDriverItem {
 		Item formItem2 = this.get_Form_Item(stack, 2);
 		Item formItem3 = this.get_Form_Item(stack, 3);
 
-
-			tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+if (getCombo(formItem,formItem2,formItem3)!="false")tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+	else{
+			tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 			tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
-
+		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
@@ -57,6 +58,24 @@ public class OOODriverItem extends RiderDriverItem {
 		if (formItem==OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get()&formItem2==OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get()&formItem3==OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get() )return "tajadol_eternity";
 		if (formItem==OOO_Rider_Items.LION_MEDAL.get()&formItem2==OOO_Rider_Items.TORA_MEDAL.get()&formItem3==OOO_Rider_Items.CHEETAH_MEDAL.get() )return "latorartar";
 		if (formItem==OOO_Rider_Items.KUWAGATA_MEDAL.get()&formItem2==OOO_Rider_Items.KAMAKIRI_MEDAL.get()&formItem3==OOO_Rider_Items.BATTA_MEDAL.get() )return "gatakiriba";
+		if (formItem==OOO_Rider_Items.SAI_MEDAL.get()&formItem2==OOO_Rider_Items.GORILLA_MEDAL.get()&formItem3==OOO_Rider_Items.ZOU_MEDAL.get() )return "sagohzo";
+		if (formItem==OOO_Rider_Items.SHACHI_MEDAL.get()&formItem2==OOO_Rider_Items.UNAGI_MEDAL.get()&formItem3==OOO_Rider_Items.TAKO_MEDAL.get() )return "shauta";
+		if (formItem==OOO_Rider_Items.PTERA_MEDAL.get()&formItem2==OOO_Rider_Items.TRICERA_MEDAL.get()&formItem3==OOO_Rider_Items.TYRANNO_MEDAL.get() )return "putotyra";
+		if (formItem==OOO_Rider_Items.COBRA_MEDAL.get()&formItem2==OOO_Rider_Items.KAME_MEDAL.get()&formItem3==OOO_Rider_Items.WANI_MEDAL.get() )return "burakawani";
+		if (formItem==OOO_Rider_Items.LOVE_CORE_MEDAL.get()&formItem2==OOO_Rider_Items.LOVE_CORE2_MEDAL.get()&formItem3==OOO_Rider_Items.LOVE_CORE3_MEDAL.get() )return "love";
+		if (formItem==OOO_Rider_Items.SAME_MEDAL.get()&formItem2==OOO_Rider_Items.KUJIRA_MEDAL.get()&formItem3==OOO_Rider_Items.OOKAMIUO_MEDAL.get() )return "saramiuo";
+		if (formItem==OOO_Rider_Items.EBI_NEW_MEDAL.get()&formItem2==OOO_Rider_Items.KANI_NEW_MEDAL.get()&formItem3==OOO_Rider_Items.SASORI_NEW_MEDAL.get() )return "bikaso";
+		if (formItem==OOO_Rider_Items.SHIKA_MEDAL.get()&formItem2==OOO_Rider_Items.GAZELLE_MEDAL.get()&formItem3==OOO_Rider_Items.USHI_MEDAL.get() )return "shigazeshi";
+		if (formItem==OOO_Rider_Items.MUKADE_MEDAL.get()&formItem2==OOO_Rider_Items.HACHI_MEDAL.get()&formItem3==OOO_Rider_Items.ARI_MEDAL.get() )return "mukachiri";
+		if (formItem==OOO_Rider_Items.SEIUCHI_MEDAL.get()&formItem2==OOO_Rider_Items.SHIROKUMA_MEDAL.get()&formItem3==OOO_Rider_Items.PENGUIN_MEDAL.get() )return "seishirogin";
+		if (formItem==OOO_Rider_Items.TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.IMAGIN_MEDAL.get()&formItem3==OOO_Rider_Items.SHOCKER_MEDAL.get() )return "tamashiy";
+		if (formItem==OOO_Rider_Items.TAKA_ANKH_MEDAL.get()&formItem2==OOO_Rider_Items.IMAGIN_MEDAL.get()&formItem3==OOO_Rider_Items.SHOCKER_MEDAL.get() )return "tamashiy";
+		if (formItem==OOO_Rider_Items.HABATAKI_MEDAL.get()&formItem2==OOO_Rider_Items.TAIGA_MEDAL.get()&formItem3==OOO_Rider_Items.ICHIGO_MEDAL.get() )return "legend_tatoba";
+		if (formItem==OOO_Rider_Items.MUKADE_GODA_MEDAL.get()&formItem2==OOO_Rider_Items.HACHI_GODA_MEDAL.get()&formItem3==OOO_Rider_Items.ARI_GODA_MEDAL.get() )return "goda";
+
+		if (formItem==OOO_Rider_Items.ANCIENT_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.ANCIENT_TORA_MEDAL.get()&formItem3==OOO_Rider_Items.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba";
+		if (formItem==OOO_Rider_Items.ANCIENT_TAKA_MEDAL.get()&formItem2==OOO_Rider_Items.GREEED_ABSORPTION_CORE.get()&formItem3==OOO_Rider_Items.ANCIENT_BATTA_MEDAL.get() )return "ancient_tatoba_greed";
+
 		return "false";
 	}
 

@@ -8,10 +8,16 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.BundleContents;
+import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -625,7 +631,7 @@ public class OOO_Rider_Items {
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","aqua","aqua_driver_belt",
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 							,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false))
-					.AddToList(RiderTabs.OOO_TAB_ITEM));
+							.AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 
@@ -659,20 +665,31 @@ public class OOO_Rider_Items {
 
 			public static final DeferredItem<Item> BIRTH_DRIVER_X = ITEMS.register("birth_driver_x",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"birth_x",EBI_NEW_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KANI_NEW_MEDAL, SASORI_NEW_MEDAL).Override_belt_text("birth_driver_x_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					{
+						@Override
+						public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+							Has_basic_belt_info=false;
+							tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+							tooltipComponents.add(Component.translatable( "kamenridercraft:sokabi.form"));
+
+							super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+						}
+
+					}.Add_Extra_Base_Form_Items(KANI_NEW_MEDAL, SASORI_NEW_MEDAL).Override_belt_text("birth_driver_x_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> REBIRTH_DRIVER_X = ITEMS.register("rebirth_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"re_birth",Modded_item_core.BLANK_FORM ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Override_belt_text("rebirth_driver_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+							.Dont_show_belt_form_info().Override_belt_text("rebirth_driver_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 
 			public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aqua",AQUA_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+							.Dont_show_belt_form_info().ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> POSEIDONDRIVER = ITEMS.register("poseidon_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"poseidon",SAME_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KUJIRA_MEDAL,OOKAMIUO_MEDAL).Override_belt_text("poseidon_driver_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+							.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KUJIRA_MEDAL,OOKAMIUO_MEDAL).Override_belt_text("poseidon_driver_belt")
+							.ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> ANCIENT_OOODRIVER = ITEMS.register("ancient_ooodriver",
 					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"ooo_ancient",ANCIENT_TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
@@ -688,40 +705,40 @@ public class OOO_Rider_Items {
 
 			public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KANI_MEDAL,SASORI_MEDAL,Modded_item_core.BLANK_FORM).Override_belt_text("gaia_core_typhoon_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KANI_MEDAL,SASORI_MEDAL,Modded_item_core.BLANK_FORM).Override_belt_text("gaia_core_typhoon_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> POWERED_UP_CORE_DRIVER = ITEMS.register("powered_up_core_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"powered_up_core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KANI_MEDAL,SASORI_MEDAL).Override_belt_text("powered_up_gaia_core_typhoon_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KANI_MEDAL,SASORI_MEDAL).Override_belt_text("powered_up_gaia_core_typhoon_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 
 			public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ankh_lost",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KUJAKU_MEDAL,CONDOR_MEDAL).Override_belt_text("ankh_lost_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KUJAKU_MEDAL,CONDOR_MEDAL).Override_belt_text("ankh_lost_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_ANKH = ITEMS.register("greeed_blet_ankh",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ankh_complete",TAKA_ANKH_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KUJAKU_MEDAL,CONDOR_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KUJAKU_MEDAL,CONDOR_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_UVA = ITEMS.register("greeed_blet_uva",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"uva_complete",KUWAGATA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(KAMAKIRI_MEDAL,BATTA_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KAMAKIRI_MEDAL,BATTA_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_KAZARI = ITEMS.register("greeed_blet_kazari",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kazari_complete",LION_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(TORA_MEDAL,CHEETAH_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(TORA_MEDAL,CHEETAH_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_MEZOOL = ITEMS.register("greeed_blet_mezool",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mezool_complete",SHACHI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(UNAGI_MEDAL,TAKO_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(UNAGI_MEDAL,TAKO_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_GAMEL = ITEMS.register("greeed_blet_gamel",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gamel_complete",SAI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(GORILLA_MEDAL,ZOU_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(GORILLA_MEDAL,ZOU_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> GREEED_BLET_MUCHIRI = ITEMS.register("greeed_blet_muchiri",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"muchiri_complete",MUKADE_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.Add_Extra_Base_Form_Items(HACHI_MEDAL,ARI_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
+					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(HACHI_MEDAL,ARI_MEDAL).Override_belt_text("ankh_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
 
 
