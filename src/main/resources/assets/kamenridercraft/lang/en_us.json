@@ -980,6 +980,19 @@
 "item.kamenridercraft.pyron_mission_memory": "Pyron Mission Memory",
 "item.kamenridercraft.seeda_mission_memory": "Seeda Mission Memory",
 
+  "kamenridercraft:blank_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:faiz_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:kaixa_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:delta_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:psyga_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:orga_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:neo_alpa_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:pyron_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:seeda_mission_memory.form": "Form: Base Form",
+  "kamenridercraft:faiz_axel_mission_memory.form": "Form: Axel Form",
+  "kamenridercraft:faiz_blaster_mission_memory.form": "Form: Blaster Form",
+  "kamenridercraft:faiz_gold_blaster_mission_memory.form": "Form: Gold Blaster Form",
+
 
 "item.kamenridercraft.blade_logo": "Blade Logo",
 "item.kamenridercraft.bladehead": "Blade Helmet",
