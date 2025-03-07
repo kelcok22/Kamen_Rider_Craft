@@ -1381,6 +1381,31 @@
 "item.kamenridercraft.zeronos_vega_card": "Zeronos Vega Card",
 "item.kamenridercraft.zeronos_zero_card": "Zeronos Zero Card",
 
+  "kamenridercraft:rider_ticket.form": "Form: Plat Form",
+  "kamenridercraft:rider_ticket_new_den_o.form": "Form: Plat Form",
+  "kamenridercraft:rider_ticket_sword.form": "Form: Sword Form",
+  "kamenridercraft:rider_ticket_pretty_den_o.form": "Form: Pretty Sword Form",
+  "kamenridercraft:rider_ticket_rod.form": "Form: Rod Form",
+  "kamenridercraft:rider_ticket_ax.form": "Form: Axe Form",
+  "kamenridercraft:rider_ticket_gun.form": "Form: Gun Form",
+  "kamenridercraft:rider_ticket_wing.form": "Form: Wing Form",
+  "kamenridercraft:rider_ticket_pudding.form": "Form: Pudding Form",
+  "kamenridercraft:ktaros.form": "Form: Climax Form",
+  "kamenridercraft:super_ktaros.form": "Form: Chou Climax Form",
+  "kamenridercraft:den_o_liner_form.form": "Form: Liner Form",
+  "kamenridercraft:rider_ticket_strike.form": "Form: Strike Form",
+  "kamenridercraft:rider_ticket_nega.form": "Form: Nega Form",
+  "kamenridercraft:rider_ticket_yuuki.form": "Form: Skull Form",
+  "kamenridercraft:rider_ticket_yuuki_hijack.form": "Form: Hijack Form",
+  "kamenridercraft:rider_ticket_g.form": "Form: Basic Form",
+  "kamenridercraft:rider_ticket_gaoh.form": "Form: Gaoh Form",
+  "kamenridercraft:zeronos_plat_card.form": "Form: Plat Form",
+  "kamenridercraft:zeronos_vega_card.form": "Form: Vega Form",
+  "kamenridercraft:zeronos_altair_card.form": "Form: Altair Form",
+  "kamenridercraft:zeronos_zero_card.form": "Form: Zero Form",
+  "kamenridercraft:new_den_o_vega_card.form": "Form: Vega Form",
+
+
 "item.kamenridercraft.vienna_coffee": "Vienna Coffee",
 
 
