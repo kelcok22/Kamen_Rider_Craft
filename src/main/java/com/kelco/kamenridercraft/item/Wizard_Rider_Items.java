@@ -592,43 +592,43 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER = ITEMS.register("magewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_B = ITEMS.register("magewizardriver_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_G = ITEMS.register("magewizardriver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_FOOT_SOLDIERS = ITEMS.register("magewizardriver_foot_soldiers",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_CAPTAIN = ITEMS.register("magewizardriver_captain",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_DRIVER = ITEMS.register("sorcererdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER_F = ITEMS.register("whitewizardriver_f",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARDRIVER = ITEMS.register("dark_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARDRIVER = ITEMS.register("black_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
+					.Dont_show_belt_form_info().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
 			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
