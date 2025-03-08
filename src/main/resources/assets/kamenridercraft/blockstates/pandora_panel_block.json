@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "kamenridercraft:block/pandora_panel_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "kamenridercraft:block/pandora_panel_block"
+    },
+    "facing=south": {
+      "model": "kamenridercraft:block/pandora_panel_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kamenridercraft:block/pandora_panel_block",
+      "y": 270
+    }
+  }
+}

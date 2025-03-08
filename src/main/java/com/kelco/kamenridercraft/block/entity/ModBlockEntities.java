@@ -5,14 +5,9 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.function.Supplier;
-
-import static net.neoforged.neoforgespi.Environment.build;
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
@@ -32,6 +27,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("astroswitch_panel", () ->
                     BlockEntityType.Builder.of(AstroswitchPanelBlockEntity::new,
                             Rider_Blocks.ASTROSWITCH_PANEL.get()).build(null));
+
+    public static final Supplier<BlockEntityType<PandoraPanelBlockEntity>> PANDORA_PANEL_BE =
+            BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
+                    PandoraPanelBlockEntity::new, Rider_Blocks.PANDORA_PANEL_BLOCK.get()).build(null));
+
 
     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}
 }
