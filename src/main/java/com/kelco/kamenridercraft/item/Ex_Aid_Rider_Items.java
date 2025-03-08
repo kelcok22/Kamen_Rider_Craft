@@ -953,15 +953,15 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> RIDE_PLAYER_BELT = ITEMS.register("rideplayerbelt",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> RIDE_PLAYER_BELT_NICO = ITEMS.register("rideplayerbelt_nico",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player_nico",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> NINjA_PLAYER_BELT = ITEMS.register("ninjaplayerbelt",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ninja_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.Override_belt_text("ninja_player_belt").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().Override_belt_text("ninja_player_belt").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 
 	public static final DeferredItem<Item> GASHACON_BREAKER = ITEMS.register("gashacon_breaker",
