@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
+import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.*;
@@ -25,9 +26,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.client.event.RegisterDimensionSpecialEffectsEvent;
-import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
-import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.event.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,7 +41,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -160,11 +158,38 @@ public class KamenRiderCraftCore
         NeoForge.EVENT_BUS.register(new ModServerEvents.ServerEvents());
     }
 
+    @SubscribeEvent
+    public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
+
+        if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
+                event.getEntity().setInvisible(belt.isTransformed(event.getEntity()));
+        }
+
+        float size = 1;
+        boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
+
+        if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
+            size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) +1f);
+        }
+
+        float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
+
+        if (event.getEntity().hasEffect(Effect_core.FLAT)) {
+            size2 = 0.1f;
+        }
+        float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
+        if (event.getEntity().hasEffect(Effect_core.WIDE)) {
+            size2 = (float) (size2 * 3);
+            size3 = (float) (size3 * 3);
+        }
+        event.getPoseStack().scale(size3, size, size2);
+    }
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
-
 
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {

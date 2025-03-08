@@ -3,37 +3,31 @@ package com.kelco.kamenridercraft.block;
 
 import java.util.function.Supplier;
 
-import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.*;
 import com.kelco.kamenridercraft.block.entity.AstroswitchPanelBlockEntity;
-import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
 import com.kelco.kamenridercraft.block.storageBlock.AstroswitchPanelBlock;
-import com.kelco.kamenridercraft.data.ModBlockStateProvider;
+import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.wordgen.tree.ModTreeGrowers;
-import com.mojang.serialization.MapCodec;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -43,7 +37,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Rider_Blocks {
@@ -891,7 +884,12 @@ public class Rider_Blocks {
 					,MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
-private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+	public static final DeferredBlock<PandoraPanelBlock> PANDORA_PANEL_BLOCK = registerBlock("pandora_panel_block",
+			() -> new PandoraPanelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
+
+
+
+	private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
 	DeferredBlock<T> toReturn = BLOCKS.register(name, block);
 	registerBlockItem(name, toReturn);
 	return toReturn;
