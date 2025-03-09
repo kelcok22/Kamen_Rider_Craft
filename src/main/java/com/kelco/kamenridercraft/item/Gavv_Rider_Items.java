@@ -136,6 +136,12 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> DOPPUDDING_GOCHIZO = ITEMS.register("doppudding_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","vram","vrastumgear_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
 					.AddToList(COOKIE,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
@@ -316,6 +322,9 @@ public class Gavv_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.Override_belt_text("valenbuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vram",DOPPUDDING_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GOCHIZO_HOLDER = ITEMS.register("gochizo_holder",
 			() -> new GochizoHolderItem());
