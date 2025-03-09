@@ -2335,6 +2335,8 @@
   "item.kamenridercraft.clear_drill_switch": "Clear Drill Switch",
   "item.kamenridercraft.gate_switch": "Gate Switch",
 
+  "item.kamenridercraft.astroswitch_case": "Astroswitch Case",
+
   "item.kamenridercraft.rider1_switch": "Ichigo Switch",
   "item.kamenridercraft.rider2_switch": "Nigo Switch",
   "item.kamenridercraft.v3_switch": "V3 Switch",
@@ -3388,6 +3390,7 @@
 
   "item.kamenridercraft.kimewaza_slot_holder": "Kimewaza Slot Holder",
   "item.kamenridercraft.energy_item_holder": "Energy Item Holder",
+  "item.kamenridercraft.rider_gashat_case": "Rider Gashat Case",
 
 "item.kamenridercraft.speed_energy_item": "Speed Energy Item",
 "item.kamenridercraft.iron_energy_item": "Iron Energy Item",

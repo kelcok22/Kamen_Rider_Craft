@@ -4,42 +4,48 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
-import net.minecraft.world.inventory.*;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
 
-public class AdventDeckGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 6;
+public class RiderGashatCaseGuiMenu extends AbstractContainerMenu {
+	private static final int CONTAINER_SIZE = 11;
 	private final Container container;
 
-	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Ryuki_Rider_Items.BLANK_DECK.get()));
+	public RiderGashatCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
+		this(containerId, playerInventory,new ItemStack(Ex_Aid_Rider_Items.RIDER_GASHAT_CASE.get()));
 	}
 
-	public AdventDeckGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
+	public RiderGashatCaseGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
 
 		this(containerId, playerInventory,itemstack);
 	}
 
-	public AdventDeckGuiMenu(int containerId, Inventory playerInventory,ItemStack itemstack) {
-		super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,6);
+	public RiderGashatCaseGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
+		super(ModMenus.RIDER_GASHAT_CASE_GUI.get(), containerId);
+		this.container = new BasicContainer(itemstack,11);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,94,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,1,117,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,2,140,21,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,3,94,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,4,117,44,"gear/advent_cards"));
-		this.addSlot(new SlotByTag(container,5,140,44,"gear/advent_cards"));
+		this.addSlot(new SlotByTag(container,0,36,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,1,54,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,2,72,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,3,90,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,4,108,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,5,126,26,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,6,45,44,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,7,63,44,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,8,81,44,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,9,99,44,"gear/gashats"));
+		this.addSlot(new SlotByTag(container,10,117,44,"gear/gashats"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

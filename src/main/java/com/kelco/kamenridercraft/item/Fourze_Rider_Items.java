@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.AstroswitchProgrammer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.Fourze.AstroswitchCaseItem;
 import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
 import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
@@ -584,10 +585,10 @@ public class Fourze_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_gingaoh",SOLU_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
 					new Item.Properties()).Add_Extra_Base_Form_Items(OOO_Rider_Items.SAME_MEDAL,OOO_Rider_Items.KUJIRA_MEDAL,OOO_Rider_Items.OOKAMIUO_MEDAL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
-	/*
+
 	public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",
-            () -> new GimmickCarrierItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM));
-	 */
+            () -> new AstroswitchCaseItem().has_basic_model().AddToList(RiderTabs.FOURZE_TAB_ITEM));
+
 
 
 	public static final DeferredItem<Item> BILLY_THE_ROD = ITEMS.register("billy_the_rod",
