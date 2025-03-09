@@ -85,7 +85,10 @@ public class RiderCardItem extends RiderFormChangeItem {
 		    	level.addFreshEntity(summon);
 		    	summon.bindToPlayer(player);
 		    	player.displayClientMessage(Component.literal(Component.translatable("attack.kamenridercraft.kamenride").getString() + Component.translatable(this.toString() + ".name").getString()), true);
-                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 750);
+                if (!player.isCreative()) {
+                    summon.takeSummonItem(player.getItemInHand(usedHand));
+                    player.getCooldowns().addCooldown(this, 750);
+                }
 		    }
             return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
         }
