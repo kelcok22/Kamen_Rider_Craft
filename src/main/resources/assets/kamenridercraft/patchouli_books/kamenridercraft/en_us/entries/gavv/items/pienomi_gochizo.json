@@ -2,7 +2,7 @@
 	"name": "Pie No Mi Gochizo",
 	"icon": "kamenridercraft:pienomi_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 40,
+	"sortnum": 41,
 	"pages": [
 		{
 			"type": "patchouli:text",

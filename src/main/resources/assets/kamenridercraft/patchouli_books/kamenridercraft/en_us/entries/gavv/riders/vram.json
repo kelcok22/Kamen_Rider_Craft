@@ -1,0 +1,22 @@
+{
+	"name": "Kamen Rider Vram",
+	"icon": "kamenridercraft:doppudding_gochizo",
+	"category": "kamenridercraft:gavv/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "doppudding",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear\",components:{custom_data:{slot_tex1:\"kamenridercraft:doppudding_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Pudding Custom",
+			"text": "Accessed with the $(l:gavv/items/doppudding_gochizo)Doppudding Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vram",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/vrastumgear)Vrastumgear$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+		}
+	]
+}

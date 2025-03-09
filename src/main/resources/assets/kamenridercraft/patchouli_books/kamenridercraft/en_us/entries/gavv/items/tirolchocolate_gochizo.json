@@ -2,7 +2,7 @@
 	"name": "Tirol Chocolate Gochizo",
 	"icon": "kamenridercraft:tirolchocolate_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 45,
+	"sortnum": 46,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Ottotto Gochizo",
 	"icon": "kamenridercraft:ottotto_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 39,
+	"sortnum": 40,
 	"pages": [
 		{
 			"type": "patchouli:text",

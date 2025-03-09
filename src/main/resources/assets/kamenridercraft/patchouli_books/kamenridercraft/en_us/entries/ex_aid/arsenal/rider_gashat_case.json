@@ -1,0 +1,16 @@
+{
+	"name": "Rider Gashat Case",
+	"icon": "kamenridercraft:rider_gashat_case",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 47,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Can store up to 11 stacks of Rider Gashats"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ex_aid/rider_gashat_case"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Ghana Chocolate Gochizo",
 	"icon": "kamenridercraft:ghana_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 33,
+	"sortnum": 34,
 	"pages": [
 		{
 			"type": "patchouli:text",

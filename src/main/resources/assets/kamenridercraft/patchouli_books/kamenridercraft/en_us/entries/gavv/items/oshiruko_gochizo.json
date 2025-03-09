@@ -2,7 +2,7 @@
 	"name": "Oshiruko Gochizo",
 	"icon": "kamenridercraft:oshiruko_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 22,
+	"sortnum": 23,
 	"pages": [
 		{
 			"type": "patchouli:text",

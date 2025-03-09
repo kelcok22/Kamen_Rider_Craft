@@ -2,7 +2,7 @@
 	"name": "Bonchi-Age Gochizo",
 	"icon": "kamenridercraft:bonchiage_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 28,
+	"sortnum": 29,
 	"pages": [
 		{
 			"type": "patchouli:text",

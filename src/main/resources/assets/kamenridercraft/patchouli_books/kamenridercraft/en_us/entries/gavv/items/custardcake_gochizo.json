@@ -2,7 +2,7 @@
 	"name": "Custard Cake Gochizo",
 	"icon": "kamenridercraft:custardcake_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 32,
+	"sortnum": 33,
 	"pages": [
 		{
 			"type": "patchouli:text",

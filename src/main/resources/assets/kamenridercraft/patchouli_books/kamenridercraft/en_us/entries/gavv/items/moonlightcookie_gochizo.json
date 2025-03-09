@@ -2,7 +2,7 @@
 	"name": "Moonlight Cookie Gochizo",
 	"icon": "kamenridercraft:moonlightcookie_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 38,
+	"sortnum": 39,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Gummy Gochizo",
 	"icon": "kamenridercraft:kamenridergummy_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 53,
+	"sortnum": 54,
 	"pages": [
 		{
 			"type": "patchouli:text",
