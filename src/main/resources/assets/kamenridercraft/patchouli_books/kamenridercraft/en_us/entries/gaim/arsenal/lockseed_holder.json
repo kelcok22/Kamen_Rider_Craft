@@ -1,0 +1,16 @@
+{
+	"name": "Lockseed Holder",
+	"icon": "kamenridercraft:lockseed_holder",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Can store up to 3 stacks of Lockseeds"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/lockseed_holder"
+		}
+	]
+}

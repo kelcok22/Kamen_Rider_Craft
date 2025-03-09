@@ -2,11 +2,11 @@
 	"name": "Empty Vial",
 	"icon": "kamenridercraft:empty_vial",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Can be filled with Amazon Cells or Creation King Extract"
+			"text": "Used on the $(l:misc/blocks/amazon_cell_extractor)Amazon Cell Extractor$(/l) to obtain Amazon Cell Vials$(br2)Can be crafted into Creation King Extract using a $(l:black/items/red_kingstone)Red Kingstone$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

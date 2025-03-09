@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)"
+			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Can be used to summon $(l:agito/riders/g3)Kamen Rider G3$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

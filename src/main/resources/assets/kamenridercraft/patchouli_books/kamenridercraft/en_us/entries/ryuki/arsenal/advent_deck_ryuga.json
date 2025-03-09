@@ -1,0 +1,16 @@
+{
+	"name": "Advent Deck (Ryuga)",
+	"icon": "kamenridercraft:advent_deck_ryuga",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 99,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Can store up to 6 stacks of Advent Cards"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ryuga"
+		}
+	]
+}

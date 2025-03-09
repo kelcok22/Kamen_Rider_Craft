@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#blade)Blade$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#blade)Blade$(/l) form$(br2)Can be used to summon $(l:blade/riders/blade)Kamen Rider Blade$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

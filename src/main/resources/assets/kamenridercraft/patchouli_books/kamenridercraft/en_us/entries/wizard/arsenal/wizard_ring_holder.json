@@ -1,0 +1,16 @@
+{
+	"name": "Wizard Ring Holder",
+	"icon": "kamenridercraft:wizard_ring_holder",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Can store up to 7 stacks of Wizard Rings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_ring_holder"
+		}
+	]
+}

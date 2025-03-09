@@ -1,16 +1,19 @@
 package com.kelco.kamenridercraft.item;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.decade.BlankCardItem;
+import com.kelco.kamenridercraft.item.decade.RiderSummonCardItem;
 import com.kelco.kamenridercraft.item.decade.RideBookerItem;
+import com.kelco.kamenridercraft.item.decade.RiderCardItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -24,6 +27,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class Decade_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
+	public static List<Item> NEO_DIEND_SUMMON_BELTS = new ArrayList<Item>();
+	public static List<Item> NEO_DIEND_SUMMON_FORMS = new ArrayList<Item>();
+	public static List<Item> NEO_DIEND_SUMMON_WEAPONS = new ArrayList<Item>();
 
 	public static final DeferredItem<Item> DECADE_LOGO = ITEMS.register("decade_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -114,132 +120,132 @@ public class Decade_Rider_Items {
 	public static String[] BaseDecadeUsers = new String[] {"decade","dark_decade","neo_decade"};
 
     public static final DeferredItem<Item> KUUGA_MIGHTY_CARD = ITEMS.register("kuuga_mighty_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
             		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kuuga").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_GROUND_CARD = ITEMS.register("agito_ground_card",
-	        () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+	        () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	        		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 	        		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-	        .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+	        .setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_CARD = ITEMS.register("ryuki_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.DRAG_CLAW.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ryuki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_CARD = ITEMS.register("faiz_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-            .IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.FAIZ_EDGE.get()).IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_ACE_CARD = ITEMS.register("blade_ace_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("blade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_CARD = ITEMS.register("hibiki_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("hibiki").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_RIDER_CARD = ITEMS.register("kabuto_rider_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kabuto").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()).addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kabuto").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_SWORD_CARD = ITEMS.register("den_o_sword_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("den_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KIVA_CARD = ITEMS.register("kiva_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("kiva").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_CARD = ITEMS.register("w_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_w","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_w","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(0).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_CARD = ITEMS.register("ooo_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ooo","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_ooo","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(3).addSummonWeapon(2).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_CARD = ITEMS.register("fourze_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("fourze").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(5).ChangeRiderName("fourze").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_CARD = ITEMS.register("wizard_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("wizard").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(7).addSummonWeapon(4).ChangeRiderName("wizard").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIM_CARD = ITEMS.register("gaim_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gaim","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_gaim","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(9).addSummonWeapon(7).addSummonWeapon(6).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_CARD = ITEMS.register("drive_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_drive","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_drive","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(11).addSummonWeapon(9).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_CARD = ITEMS.register("ghost_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_ghost","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(13).addSummonWeapon(11).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_CARD = ITEMS.register("ex_aid_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("ex_aid").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(15).setSummonForm(0).addSummonWeapon(13).ChangeRiderName("ex_aid").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_CARD = ITEMS.register("build_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"_build","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(17).addSummonWeapon(15).ChangeRiderName("decade").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_CARD = ITEMS.register("zi_o_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
+			() -> new RiderCardItem(new Item.Properties(),0,"","neo_decade","neo_decadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.ChangeRiderName("zi_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.setSummonBelt(19).addSummonWeapon(17).ChangeRiderName("zi_o").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_CARD = ITEMS.register("zero_one_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -263,58 +269,58 @@ public class Decade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 */
 	public static final DeferredItem<Item> G3_CARD = ITEMS.register("g3_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Agito_Rider_Items.G_BUCKLE_G3.get()).addSummonWeapon(Agito_Rider_Items.GM_01_SCORPION.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIGHT_CARD = ITEMS.register("knight_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.KNIGHTDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.WING_LANCER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAIXA_CARD = ITEMS.register("kaixa_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.KAIXA_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.KAIXA_BLAYGUN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARREN_CARD = ITEMS.register("garren_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.GARRENBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.GARRENROUZER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IBUKI_CARD = ITEMS.register("ibuki_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.IBUKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIKAN_REPPUU.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GATACK_CARD = ITEMS.register("gatack_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.GATACK_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.GATACK_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.GATACK_DOUBLE_CALIBUR.get()).addSummonWeapon(Kabuto_Rider_Items.GATACK_DOUBLE_CALIBUR_MINUS.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_CARD = ITEMS.register("zeronos_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Den_O_Rider_Items.ZERONOS_BELT.get()).addSummonWeapon(Den_O_Rider_Items.ZEROGASHER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IXA_CARD = ITEMS.register("ixa_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.IXA_BELT.get()).addSummonWeapon(Kiva_Rider_Items.IXA_CALIBER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_CARD = ITEMS.register("accel_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(1).addSummonWeapon(1).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_CARD = ITEMS.register("birth_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(4).addSummonWeapon(3).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> METEOR_CARD = ITEMS.register("meteor_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(6).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_CARD = ITEMS.register("beast_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(8).addSummonWeapon(5).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BARON_CARD = ITEMS.register("baron_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(10).addSummonWeapon(8).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MACH_CARD = ITEMS.register("mach_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(12).addSummonWeapon(10).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECTER_CARD = ITEMS.register("specter_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(14).addSummonWeapon(12).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRAVE_CARD = ITEMS.register("brave_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(16).setSummonForm(1).addSummonWeapon(14).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROSS_Z_CARD = ITEMS.register("cross_z_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(18).addSummonWeapon(16).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_CARD = ITEMS.register("geiz_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(20).addSummonWeapon(18).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_GROWING_CARD = ITEMS.register("kuuga_growing_card",
 	        () -> new RiderFormChangeItem(new Item.Properties(),0,"_growing","decade","decadriver_belt",
@@ -526,121 +532,121 @@ public class Decade_Rider_Items {
 
 
     public static final DeferredItem<Item> ICHIGO_CARD = ITEMS.register("ichigo_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("ichigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGO_CARD = ITEMS.register("nigo_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("nigo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> V3_CARD = ITEMS.register("v3_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("v3").AddToList(RiderTabs.DECADE_TAB_ITEM));
+    		.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.DOUBLE_TYPHOON.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("v3").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_CARD = ITEMS.register("riderman_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false),
 	            		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("riderman").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> X_CARD = ITEMS.register("x_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("x").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDOL.get()).addSummonWeapon(Ichigo_Rider_Items.RIDOL_STICK.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("x").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_CARD = ITEMS.register("amazon_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("amazon").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CONDORER.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("amazon").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> STRONGER_CARD = ITEMS.register("stronger_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ELECTRER.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("stronger").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SKYRIDER_CARD = ITEMS.register("skyrider_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 						new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TORNADO.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("skyrider").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_1_CARD = ITEMS.register("super_1_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("super_1").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CYCLODE.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("super_1").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZX_CARD = ITEMS.register("zx_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 						new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("zx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ZX_BELT.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("zx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_CARD = ITEMS.register("black_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 						new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.VITAL_CHARGER.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_CARD = ITEMS.register("black_rx_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 						new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_CARD = ITEMS.register("shin_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 						new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("shin").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("shin").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZO_CARD = ITEMS.register("zo_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 						new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("zo").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ZO_CORE.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("zo").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> J_CARD = ITEMS.register("j_card",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","decade","decadriver_belt",
+            () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 						new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 						new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("j").AddToList(RiderTabs.DECADE_TAB_ITEM));
+            .setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.J_SPIRIT.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.J_STONE_JUMBO_FORMATION.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("j").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_ROBORIDER_CARD = ITEMS.register("black_rx_roborider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_robo","decade","decadriver_belt",
@@ -711,21 +717,21 @@ public class Decade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	*/
 	public static final DeferredItem<Item> G4_CARD = ITEMS.register("g4_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Agito_Rider_Items.G_BUCKLE_G4.get()).addSummonWeapon(Agito_Rider_Items.G4_GIGANT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> RYUGA_CARD = ITEMS.register("ryuga_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUGADRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.DRAG_CLAW_RYUGA.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ORGA_CARD = ITEMS.register("orga_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.ORGA_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.ORGA_STLANZER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GLAIVE_CARD = ITEMS.register("glaive_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.GLAIVEBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.GLAIVEROUZER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> KABUKI_CARD = ITEMS.register("kabuki_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.KABUKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ECHO_SWORD_ONSAKEN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> CAUCASUS_CARD = ITEMS.register("caucasus_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.CAUCASUS_RIDER_BELT.get()).addSummonWeapon(Rider_Blocks.BLUE_ROSE.asItem()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ARC_CARD = ITEMS.register("arc_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.ARC_KIVAT_BELT.get()).addSummonWeapon(Kiva_Rider_Items.ARC_TRIDENT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> SKULL_CARD = ITEMS.register("skull_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(2).addSummonWeapon(0).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> COMPLETE_CARD_DECADE_21 = ITEMS.register("complete_card_decade_21",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));

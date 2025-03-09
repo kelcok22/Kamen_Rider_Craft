@@ -53,7 +53,7 @@ public class Ex_Aid_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).addSwitchForm(MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 20));
+			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 20));
 
 	public static final DeferredItem<Item> TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("taddle_quest_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","brave","gamer_driver_taddle_quest_lv_1",
@@ -65,7 +65,7 @@ public class Ex_Aid_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brave","gamer_driver_taddle_quest",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)).addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get())
-			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 15));
+			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS).AddToList(GameCreator.BLANK_GASHAT, 15));
 
 	public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("bang_bang_shooting_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","snipe","gamer_driver_bang_bang_shooting_lv_1",
@@ -883,11 +883,11 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> GAMER_DRIVER_EX_AID = ITEMS.register("gamer_driver_ex_aid",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ex_aid",MIGHTY_ACTION_X_GASHAT_LV_1,MIGHTY_ACTION_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_BRAVE = ITEMS.register("gamer_driver_brave",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"brave",TADDLE_QUEST_GASHAT_LV_1,TADDLE_QUEST_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_SNIPE = ITEMS.register("gamer_driver_snipe",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe",BANG_BANG_SHOOTING_GASHAT_LV_1,BANG_BANG_SHOOTING_GASHAT,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
@@ -965,7 +965,7 @@ public class Ex_Aid_Rider_Items {
 
 
 	public static final DeferredItem<Item> GASHACON_BREAKER = ITEMS.register("gashacon_breaker",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
@@ -973,7 +973,7 @@ public class Ex_Aid_Rider_Items {
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_MAGNUM = ITEMS.register("gashacon_magnum_gun",

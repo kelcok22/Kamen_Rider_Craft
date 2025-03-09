@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:w/riders/skull)Kamen Rider Skull$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -2,7 +2,7 @@
 	"name": "Card Warrior Kamen Rider Manga",
 	"icon": "kamenridercraft:card_warrior_kamen_rider_manga",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 15,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",
