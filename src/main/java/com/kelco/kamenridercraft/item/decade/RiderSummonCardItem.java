@@ -90,7 +90,6 @@ public class RiderSummonCardItem extends BaseItem {
 			    	if (!player.isCreative()) {
                         summon.takeSummonItem(player.getItemInHand(usedHand));
                         player.getCooldowns().addCooldown(this, 750);
-                        
                     }
 			    }
             }
