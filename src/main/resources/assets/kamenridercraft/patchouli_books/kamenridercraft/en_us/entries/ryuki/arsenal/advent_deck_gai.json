@@ -1,0 +1,16 @@
+{
+	"name": "Advent Deck (Gai)",
+	"icon": "kamenridercraft:advent_deck_gai",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 94,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Can store up to 6 stacks of Advent Cards"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/advent_deck_gai"
+		}
+	]
+}

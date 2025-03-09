@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.summons;
 
 
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.UUID;
 
@@ -50,6 +51,7 @@ import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.player.Player;
@@ -61,6 +63,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -86,11 +89,12 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
    private static final EntityDataAccessor<Integer> DATA_REMAINING_ANGER_TIME = SynchedEntityData.defineId(BaseSummonEntity.class, EntityDataSerializers.INT);
    private static final UniformInt PERSISTENT_ANGER_TIME = TimeUtil.rangeOfSeconds(20, 39);
    private final NonNullList<ItemStack> REQUIRED_ARMOR = NonNullList.withSize(4, ItemStack.EMPTY);
+   private ItemStack SUMMON_ITEM = ItemStack.EMPTY;
 
    @Nullable
    private UUID persistentAngerTarget;
 	
-	public String NAME = "decade_illusion";
+	public String NAME = "rider_summon";
 
 	public int Scale=1;
 
@@ -151,12 +155,15 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		
 		if (!level.isClientSide) {
 		   this.updatePersistentAnger((ServerLevel)this.level(), true);
-			if ( this.getOwner() instanceof Player owner) {		
+			if ( this.getOwner() instanceof Player owner && this.isAlive()) {		
 				if(!owner.isAlive()
 				||owner.getItemBySlot(EquipmentSlot.HEAD).getItem()!=this.getRequiredArmor(EquipmentSlot.HEAD).getItem()
 				||owner.getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
 				||owner.getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
-				||owner.getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) this.setHealth(0);
+				||owner.getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) {
+					this.setHealth(0);
+					if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);
+				}
 			}
 		}
 		if (this.swinging) this.updateSwingTime();
@@ -166,8 +173,9 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 
 	@Override
 	public void die(DamageSource p_21809_) {
-		  this.setOwnerUUID(null);
-      super.die(p_21809_);
+		this.setOwnerUUID(null);
+		super.die(p_21809_);
+		if (!this.SUMMON_ITEM.isEmpty() && !this.level().isClientSide()) this.spawnAtLocation(this.SUMMON_ITEM);
  
 	}
 
@@ -262,6 +270,11 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	  this.setRequiredArmor();
    }
 
+   public void takeSummonItem(ItemStack stack) {
+	this.SUMMON_ITEM = new ItemStack(stack.getItem(), 1);
+	stack.shrink(1);
+   }
+
 	   protected SoundEvent getAmbientSound() {
 		         return SoundEvents.VILLAGER_AMBIENT;
 		   }
@@ -310,6 +323,10 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
 	   return p_32144_ instanceof BowItem;
 	}
+
+	   public boolean shouldDropExperience() {
+		      return false;
+		   }
 
 	   public boolean isBaby() {
 		      return false;

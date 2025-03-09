@@ -1,0 +1,16 @@
+{
+	"name": "T2 Memory Case",
+	"icon": "kamenridercraft:t2_memory_case",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Can store up to 26 stacks of T2 Gaia Memories"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/t2_memory_case"
+		}
+	]
+}

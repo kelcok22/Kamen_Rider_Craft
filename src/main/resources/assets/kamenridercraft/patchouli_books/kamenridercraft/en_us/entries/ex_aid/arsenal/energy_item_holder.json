@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to hold Energy Items in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Can store up to 10 stacks of Energy Items$(br2)Having this in your inventory prevents Energy Items from automatically activating when picked up"
 		},
 		{
 			"type": "patchouli:crafting",

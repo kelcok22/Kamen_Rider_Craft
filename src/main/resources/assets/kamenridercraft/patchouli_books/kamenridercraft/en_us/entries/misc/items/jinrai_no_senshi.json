@@ -2,7 +2,7 @@
 	"name": "Jinrai no senshi Card Warrior Card",
 	"icon": "kamenridercraft:jinrai_no_senshi",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

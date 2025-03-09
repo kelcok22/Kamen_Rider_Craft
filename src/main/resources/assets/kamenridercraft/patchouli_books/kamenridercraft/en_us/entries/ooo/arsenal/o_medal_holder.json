@@ -1,0 +1,16 @@
+{
+	"name": "O Medal Holder",
+	"icon": "kamenridercraft:o_medal_holder",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Can store up to 24 stacks of Core Medals"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/o_medal_holder"
+		}
+	]
+}
