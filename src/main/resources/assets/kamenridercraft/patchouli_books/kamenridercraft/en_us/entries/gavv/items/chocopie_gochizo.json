@@ -2,7 +2,7 @@
 	"name": "Choco Pie Gochizo",
 	"icon": "kamenridercraft:chocopie_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 30,
+	"sortnum": 31,
 	"pages": [
 		{
 			"type": "patchouli:text",

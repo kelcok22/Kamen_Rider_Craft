@@ -2,7 +2,7 @@
 	"name": "Eleganmacaron Gochizo",
 	"icon": "kamenridercraft:eleganmacaron_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

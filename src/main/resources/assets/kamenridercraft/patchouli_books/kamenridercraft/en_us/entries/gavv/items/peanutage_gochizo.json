@@ -2,7 +2,7 @@
 	"name": "Peanut-Age Gochizo",
 	"icon": "kamenridercraft:peanutage_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 41,
+	"sortnum": 42,
 	"pages": [
 		{
 			"type": "patchouli:text",

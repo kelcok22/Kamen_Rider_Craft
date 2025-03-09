@@ -2,7 +2,7 @@
 	"name": "Papa Bubble Art Candy Gochizo",
 	"icon": "kamenridercraft:artcandy_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 27,
+	"sortnum": 28,
 	"pages": [
 		{
 			"type": "patchouli:text",

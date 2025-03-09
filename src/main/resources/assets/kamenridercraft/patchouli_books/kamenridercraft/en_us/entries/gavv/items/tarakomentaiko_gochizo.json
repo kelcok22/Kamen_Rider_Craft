@@ -2,7 +2,7 @@
 	"name": "Tarako Mentaiko Gochizo",
 	"icon": "kamenridercraft:tarakomentaiko_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 43,
+	"sortnum": 44,
 	"pages": [
 		{
 			"type": "patchouli:text",

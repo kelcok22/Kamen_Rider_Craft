@@ -2,7 +2,7 @@
 	"name": "Charapaki Gochizo (Special Ver.)",
 	"icon": "kamenridercraft:charapaki_gochizo_special",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 50,
+	"sortnum": 51,
 	"pages": [
 		{
 			"type": "patchouli:text",

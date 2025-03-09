@@ -2,7 +2,7 @@
 	"name": "Bubble Ramune Gochizo",
 	"icon": "kamenridercraft:bubbleramune_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 23,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

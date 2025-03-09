@@ -2,7 +2,7 @@
 	"name": "Happyturn Gochizo",
 	"icon": "kamenridercraft:happyturn_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 34,
+	"sortnum": 35,
 	"pages": [
 		{
 			"type": "patchouli:text",

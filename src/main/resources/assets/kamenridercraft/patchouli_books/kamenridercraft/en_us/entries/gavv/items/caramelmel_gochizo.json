@@ -2,7 +2,7 @@
 	"name": "Caramelmel Gochizo",
 	"icon": "kamenridercraft:caramelmel_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 20,
+	"sortnum": 21,
 	"pages": [
 		{
 			"type": "patchouli:text",

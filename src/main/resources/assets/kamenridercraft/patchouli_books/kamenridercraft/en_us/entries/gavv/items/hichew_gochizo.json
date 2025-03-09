@@ -2,7 +2,7 @@
 	"name": "Hi-Chew Gummy Gochizo",
 	"icon": "kamenridercraft:hichew_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 35,
+	"sortnum": 36,
 	"pages": [
 		{
 			"type": "patchouli:text",

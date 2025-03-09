@@ -2,7 +2,7 @@
 	"name": "Charapaki Gochizo",
 	"icon": "kamenridercraft:charapaki_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 49,
+	"sortnum": 50,
 	"pages": [
 		{
 			"type": "patchouli:text",

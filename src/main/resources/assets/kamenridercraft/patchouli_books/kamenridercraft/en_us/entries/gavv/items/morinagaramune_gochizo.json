@@ -2,7 +2,7 @@
 	"name": "Morinaga Ramune Gochizo",
 	"icon": "kamenridercraft:morinagaramune_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 25,
+	"sortnum": 26,
 	"pages": [
 		{
 			"type": "patchouli:text",

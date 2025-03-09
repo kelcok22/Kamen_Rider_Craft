@@ -1,0 +1,19 @@
+{
+	"name": "Music Discs",
+	"icon": "kamenridercraft:lets_go_rider_kick_music_disc",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "An assortment of music discs featuring note block renditions of popular songs from the Kamen Rider Series."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lets_go_rider_kick_music_disc",
+			"title": " ",
+			"text": "Song:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)Type:$(li)Opening theme (OP)$(br2)Appears in:$(li)Kamen Rider (1971, TV show)"
+		}
+	]
+}

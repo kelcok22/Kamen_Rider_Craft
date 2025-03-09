@@ -2,7 +2,7 @@
 	"name": "Crunky Gochizo",
 	"icon": "kamenridercraft:crunky_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 31,
+	"sortnum": 32,
 	"pages": [
 		{
 			"type": "patchouli:text",
