@@ -516,10 +516,12 @@ public class KamenRiderCraftCore
             event.register(ModMenus.O_MEDAL_HOLDER_GUI.get(), OMedalHolderGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_GUI.get(), AstroswitchPanelGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PANEL_DOUBLE_GUI.get(), AstroswitchPanelDoubleGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_CASE_GUI.get(), AstroswitchCaseGuiScreen::new);
             event.register(ModMenus.RING_HOLDER_GUI.get(), RingHolderGuiScreen::new);
             event.register(ModMenus.LOCKSEED_HOLDER_GUI.get(), LockseedHolderGuiScreen::new);
             event.register(ModMenus.SHIFT_CAR_HOLDER_GUI.get(), ShiftCarHolderGuiScreen::new);
             event.register(ModMenus.KIMEWAZA_SLOT_HOLDER_GUI.get(), KimewazaSlotHolderGuiScreen::new);
+            event.register(ModMenus.RIDER_GASHAT_CASE_GUI.get(), RiderGashatCaseGuiScreen::new);
             event.register(ModMenus.ENERGY_ITEM_HOLDER_GUI.get(), EnergyItemHolderGuiScreen::new);
             event.register(ModMenus.FULL_BOTTLE_HOLDER_GUI.get(), FullBottleHolderGuiScreen::new);
             event.register(ModMenus.PANDORA_PANEL_GUI.get(), PandoraPanelGuiScreen::new);
