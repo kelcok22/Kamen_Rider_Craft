@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-05T22:00:49.5752635	Item Models: kamenridercraft
+// 1.21.1	2025-03-09T01:14:57.3490042	Item Models: kamenridercraft
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
 1645b17a76bdd7b4bbdf8dc28307785b7a88f8af assets/kamenridercraft/models/item/angelpie_gochizo.json
@@ -203,6 +203,7 @@ a21efa2aac8261aecd4150cb3befa96f022e939e assets/kamenridercraft/models/item/vira
 b143b4600fb84607bff98f9aa6dafb11f1eed4d6 assets/kamenridercraft/models/item/viral_core_neo_cobara.json
 a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/viral_core_neo_spider.json
 34adffabf84514bc51f5e6f1380e79cdebae1f3e assets/kamenridercraft/models/item/viral_core_spider.json
+f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vrastumgear.json
 932ad803be78c3de72bd7ac706c2f7379879a4f7 assets/kamenridercraft/models/item/whiteandcookiestirol_gochizo.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_colorful.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_powerful.json
