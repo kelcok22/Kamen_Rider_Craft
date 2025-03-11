@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:gaim/sengoku_driver_baron",
-	  "kamenridercraft:gaim/banana_spear"
+	  "kamenridercraft:gaim/banana_spear",
+	  "kamenridercraft:decade/baron_card"
 	]
   },
   "sends_telemetry_event": false

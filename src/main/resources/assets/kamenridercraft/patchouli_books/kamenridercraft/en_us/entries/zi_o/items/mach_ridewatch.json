@@ -2,7 +2,7 @@
 	"name": "Mach Ridewatch",
 	"icon": "kamenridercraft:mach_ridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 84,
+	"sortnum": 85,
 	"pages": [
 		{
 			"type": "patchouli:text",

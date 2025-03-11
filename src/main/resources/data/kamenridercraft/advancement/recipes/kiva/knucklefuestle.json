@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kiva/ixa_knuckle"
+	  "kamenridercraft:kiva/ixa_knuckle",
+	  "kamenridercraft:decade/ixa_card"
 	]
   },
   "sends_telemetry_event": false

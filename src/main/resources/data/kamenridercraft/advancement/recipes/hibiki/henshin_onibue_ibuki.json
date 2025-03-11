@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:hibiki/ibukidriver",
 	  "kamenridercraft:hibiki/ongekikan_reppuu",
-	  "kamenridercraft:hibiki/ongekibo_yamase"
+	  "kamenridercraft:hibiki/ongekibo_yamase",
+	  "kamenridercraft:decade/ibuki_card"
 	]
   },
   "sends_telemetry_event": false

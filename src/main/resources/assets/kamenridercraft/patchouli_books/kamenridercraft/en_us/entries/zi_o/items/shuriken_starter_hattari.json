@@ -2,7 +2,7 @@
 	"name": "Shuriken Starter (Hattari)",
 	"icon": "kamenridercraft:shuriken_starter_hattari",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 96,
+	"sortnum": 97,
 	"pages": [
 		{
 			"type": "patchouli:text",

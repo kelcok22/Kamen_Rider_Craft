@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:zi_o/decade_complete_ridewatch",
-	  "kamenridercraft:zi_o/ride_heisaber"
+	  "kamenridercraft:zi_o/ride_heisaber",
+	  "kamenridercraft:zi_o/neo_decadriver"
 	]
   },
   "sends_telemetry_event": false

@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:den_o/zeronos_zero_card",
-	  "kamenridercraft:den_o/zerogasher"
+	  "kamenridercraft:den_o/zerogasher",
+	  "kamenridercraft:decade/zeronos_card"
 	]
   },
   "sends_telemetry_event": false

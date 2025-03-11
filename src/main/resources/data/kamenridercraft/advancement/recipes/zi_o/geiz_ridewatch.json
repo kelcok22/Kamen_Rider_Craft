@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:zi_o/ziku_driver_geiz",
-	  "kamenridercraft:zi_o/zikan_zax"
+	  "kamenridercraft:zi_o/zikan_zax",
+	  "kamenridercraft:decade/geiz_card"
 	]
   },
   "sends_telemetry_event": false

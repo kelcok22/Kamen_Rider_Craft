@@ -2,7 +2,7 @@
 	"name": "Shuriken Starter (Shinobi)",
 	"icon": "kamenridercraft:shuriken_starter",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 95,
+	"sortnum": 96,
 	"pages": [
 		{
 			"type": "patchouli:text",
