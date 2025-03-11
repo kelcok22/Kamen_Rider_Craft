@@ -739,10 +739,10 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
    
     public static final DeferredItem<Item> HIDEN_ZERO_TWO_DRIVER = ITEMS.register("hiden_zero_two_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_two",ZERO_TWO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_two",ZERO_TWO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
  
     public static final DeferredItem<Item> HIDEN_ZERO_THREE_DRIVER = ITEMS.register("hiden_zero_three_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_three",ZERO_THREE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_three",ZERO_THREE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
  
     public static final DeferredItem<Item> SHOTRISER_VULCAN = ITEMS.register("shotriser_vulcan",
     		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"vulcan",SHOOTING_WOLF_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
@@ -752,26 +752,26 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> ZAIA_THOUSANDRIVER = ITEMS.register("zaia_thousandriver",
     		() -> new ThousandriverItem(ArmorMaterials.DIAMOND,"thouser",AMAZING_CAUCASUS_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> ZAIA_THOUSANDRIVER_ZAIA = ITEMS.register("zaia_thousandriver_zaia",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zaia",TRICERATOPS_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zaia",TRICERATOPS_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> FORCERISER_HOROBI = ITEMS.register("forceriser_horobi",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi",STING_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi",STING_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> FORCERISER_NAKI = ITEMS.register("forceriser_naki",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"naki",JAPANESE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"naki",JAPANESE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> FORCERISER_JIN = ITEMS.register("forceriser_jin",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jin",FLYING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jin",FLYING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> FORCERISER_IKAZUCHI = ITEMS.register("forceriser_ikazuchi",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ikazuchi",DODO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ikazuchi",DODO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> FORCERISER_001 = ITEMS.register("forceriser_001",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Override_belt_text("force_riser_belt_001").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().Override_belt_text("force_riser_belt_001").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZAIA_SLASHRISER = ITEMS.register("zaia_slashriser",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"jin_burning",BURNING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"jin_burning",BURNING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZETSUMETSU_DRIVER = ITEMS.register("zetsumetsu_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi_ark_scorpion",ARK_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi_ark_scorpion",ARK_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> METSUBOUJINRAI_DRIVER = ITEMS.register("metsuboujinrai_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metsuboujinrai",MASSBRAIN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metsuboujinrai",MASSBRAIN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ARK_DRIVER_ZERO = ITEMS.register("ark_driver_zero",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero",ARK_ZERO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
@@ -781,28 +781,28 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero_one",ARK_ZERO_ONE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> CYCLONERISER = ITEMS.register("cycloneriser",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigata",ROCKING_HOPPER_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigata",ROCKING_HOPPER_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> EDEN_DRIVER = ITEMS.register("eden_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eden",EDEN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eden",EDEN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> EDEN_DRIVER_LUCIFER = ITEMS.register("eden_driver_lucifer",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lucifer",EDEN_ZETSUMERISEKEY_LUCIFER ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lucifer",EDEN_ZETSUMERISEKEY_LUCIFER ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> SLASH_ABADDO_RISER = ITEMS.register("slash_abaddo_riser",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon",CROWDING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon",CROWDING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SHOT_ABADDO_RISER = ITEMS.register("shot_abaddo_riser",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_shot",CROWDING_HOPPER_PROGRISEKEY_SHOT ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_shot",CROWDING_HOPPER_PROGRISEKEY_SHOT ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SLASH_ABADDO_RISER_R = ITEMS.register("slash_abaddo_riser_r",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_r",CROWDING_HOPPER_PROGRISEKEY_R ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_r",CROWDING_HOPPER_PROGRISEKEY_R ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SHOT_ABADDO_RISER_G = ITEMS.register("shot_abaddo_riser_g",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_g",CROWDING_HOPPER_PROGRISEKEY_G ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_g",CROWDING_HOPPER_PROGRISEKEY_G ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SHOT_ABADDO_RISER_B = ITEMS.register("shot_abaddo_riser_b",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_b",CROWDING_HOPPER_PROGRISEKEY_G ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_b",CROWDING_HOPPER_PROGRISEKEY_G ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().Override_belt_text("shot_abaddo_riser_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SLASH_ABADDO_RISER_O = ITEMS.register("slash_abaddo_riser_o",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_o",CROWDING_HOPPER_PROGRISEKEY_R ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"abaddon_o",CROWDING_HOPPER_PROGRISEKEY_R ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER_VULCAN = ITEMS.register("hiden_zero_one_driver_vulcan",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vulcan_lone",DIRE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vulcan_lone",DIRE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZEIN_DRIVER = ITEMS.register("zein_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zein",ZEIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
@@ -812,47 +812,47 @@ public class Zero_One_Rider_Items {
 	  		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ragnarok",RAGNAROK_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	
 	public static final DeferredItem<Item> ZETSUMERISER_BEROTHA = ITEMS.register("zetsumeriser_berotha",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"berotha_magia",BEROTHA_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"berotha_magia",BEROTHA_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_KUEHNE = ITEMS.register("zetsumeriser_kuehne",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kuehne_magia",KUEHNE_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kuehne_magia",KUEHNE_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_EKAL = ITEMS.register("zetsumeriser_ekal",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ekal_magia",EKAL_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ekal_magia",EKAL_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_NEOHI = ITEMS.register("zetsumeriser_neohi",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neohi_magia",NEOHI_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neohi_magia",NEOHI_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_ONYCHO = ITEMS.register("zetsumeriser_onycho",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"onycho_magia",ONYCHO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"onycho_magia",ONYCHO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_VICARYA = ITEMS.register("zetsumeriser_vicarya",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vicarya_magia",VICARYA_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vicarya_magia",VICARYA_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_GAERU = ITEMS.register("zetsumeriser_gaeru",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaeru_magia",GAERU_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaeru_magia",GAERU_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_MAMMOTH = ITEMS.register("zetsumeriser_mammoth",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mammoth_magia",MAMMOTH_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mammoth_magia",MAMMOTH_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_DODO = ITEMS.register("zetsumeriser_dodo",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia",DODO_ZETSUMERISEKEY_MAGIA ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia",DODO_ZETSUMERISEKEY_MAGIA ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_DODO_CUSTOM = ITEMS.register("zetsumeriser_dodo_custom",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia_custom",DODO_CUSTOM_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia_custom",DODO_CUSTOM_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_DODO_CUSTOM_TWO = ITEMS.register("zetsumeriser_dodo_custom_two",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia_custom_two",DODO_CUSTOM_TWO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dodo_magia_custom_two",DODO_CUSTOM_TWO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ZETSUMERISER_ARSINO = ITEMS.register("zetsumeriser_arsino",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"arsino_magia",ARSINO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"arsino_magia",ARSINO_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_BATTLE = ITEMS.register("raidriser_battle",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_horseshoe_crab",INVADING_HORSESHOE_CRAB_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_horseshoe_crab",INVADING_HORSESHOE_CRAB_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_BUFFALO = ITEMS.register("raidriser_buffalo",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_buffalo",CRUSHING_BUFFALO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_buffalo",CRUSHING_BUFFALO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_WHALE = ITEMS.register("raidriser_whale",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_whale",SPLASHING_WHALE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_whale",SPLASHING_WHALE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_LION = ITEMS.register("raidriser_lion",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_lion",DYNAMAITING_LION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_lion",DYNAMAITING_LION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_PENGUIN = ITEMS.register("raidriser_penguin",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_penguin",STORMING_PENGUIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_penguin",STORMING_PENGUIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_PANDA = ITEMS.register("raidriser_panda",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_panda",SCOUTING_PANDA_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_panda",SCOUTING_PANDA_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> RAIDRISER_JACKAL = ITEMS.register("raidriser_jackal",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_jackal",FIGHTING_JACKAL_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raider_jackal",FIGHTING_JACKAL_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> GIGER_BELT = ITEMS.register("giger_belt",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"giger",BREAKING_MAMMOTH_PROGRISEKEY,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties())
-    		.Override_belt_text("giger_belt_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+					.Dont_show_belt_form_info().Override_belt_text("giger_belt_belt").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	/*
 	public static final DeferredItem<Item> PROGRISE_HOLDER = ITEMS.register("progrise_holder",
