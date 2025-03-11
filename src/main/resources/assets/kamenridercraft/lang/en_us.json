@@ -4039,6 +4039,17 @@
 "item.kamenridercraft.hellrise_progrisekey": "Hellrise Progrisekey",
 "item.kamenridercraft.zero_three_progrisekey": "Zero-Three Progrisekey",
 
+  "kamenridercraft:rising_hopper_progrisekey.form": "Form: Rising Hopper",
+  "kamenridercraft:rising_hopper_progrisekey_vulcan.form": "Form: Rising Hopper",
+  "kamenridercraft:shining_hopper_progrisekey.form": "Form: Shining Hopper",
+  "kamenridercraft:shining_assault_hopper_progrisekey.form": "Form: Shining Assault Hopper",
+  "kamenridercraft:metalcluster_hopper_progrisekey.form": "Form: Metalcluster Hopper",
+  "kamenridercraft:zero_two_progrisekey.form": "Form: Zero-Two",
+  "kamenridercraft:red_rising_hopper_progrisekey.form": "Form: Red Rising Hopper",
+  "kamenridercraft:realize_rising_hopper_progrisekey.form": "Form: Realizing Hopper",
+  "kamenridercraft:hellrise_progrisekey.form": "Form: Hellrising Hopper",
+  "kamenridercraft:zero_three_progrisekey.form": "Form: Zero-Three",
+
 "item.kamenridercraft.biting_shark_progrisekey": "Biting Shark Progrisekey",
 "item.kamenridercraft.flaming_tiger_progrisekey": "Flaming Tiger Progrisekey",
 "item.kamenridercraft.freezing_bear_progrisekey": "Freezing Bear Progrisekey",
@@ -4056,29 +4067,75 @@
 "item.kamenridercraft.scouting_panda_progrisekey": "Scouting Panda Progrisekey",
 "item.kamenridercraft.invading_horseshoe_crab_progrisekey": "Invading Horseshoe Crab Progrisekey",
 
+  "kamenridercraft:biring_shark_progrisekey.form": "Form: Biting Shark",
+  "kamenridercraft:flaming_tiger_progrisekey.form": "Form: Flaming Tiger",
+  "kamenridercraft:ragnarok_flaming_tiger_progrisekey.form": "Form: Flaming Tiger",
+  "kamenridercraft:freezing_bear_progrisekey.form": "Form: Freezing Bear",
+  "kamenridercraft:breaking_mammoth_progrisekey.form": "Form: Breaking Mammoth",
+  "kamenridercraft:sparking_giraffe_progrisekey.form": "Form: Sparking Giraffe",
+  "kamenridercraft:amazing_hercules_progrisekey.form": "Form: Amazing Hercules",
+  "kamenridercraft:crushing_buffalo_progrisekey_zero_one.form": "Form: Crushing Buffalo",
+  "kamenridercraft:exciting_stag_progrisekey.form": "Form: Exciting Stag",
+  "kamenridercraft:gatling_hedgehog_progrisekey.form": "Form: Gatling Hedgehog",
+  "kamenridercraft:trapping_spider_progrisekey.form": "Form: Trapping Spider",
+  "kamenridercraft:storming_penguin_progrisekey_zero_one.form": "Form: Storming Penguin",
+  "kamenridercraft:hopping_kangaroo_progrisekey.form": "Form: Hopping Kangaroo",
+  "kamenridercraft:splashing_whale_progrisekey_zero_one.form": "Form: Splashing Whale",
+  "kamenridercraft:dynamiting_lion_progrisekey_zero_one.form": "Form: Dynamiting Lion",
+  "kamenridercraft:scouting_panda_progrisekey_zero_one.form": "Form: Scouting Panda",
+  "kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one.form": "Form: Invading Horseshoe Crab",
+
 "item.kamenridercraft.shooting_wolf_progrisekey": "Shooting Wolf Progrisekey",
 "item.kamenridercraft.assault_wolf_progrisekey": "Assault Wolf Progrisekey",
 "item.kamenridercraft.rampage_gatling_progrisekey": "Rampage Gatling Progrisekey",
 "item.kamenridercraft.punching_kong_progrisekey": "Punching Kong Progrisekey",
 "item.kamenridercraft.dire_wolf_zetsumerisekey": "Dire Wolf Zetsumerisekey",
 
+  "kamenridercraft:shooting_wolf_progrisekey.form": "Form: Shooting Wolf",
+  "kamenridercraft:shooting_wolf_progrisekey_zero_one.form": "Form: Shooting Wolf",
+  "kamenridercraft:assault_wolf_progrisekey.form": "Form: Assault Wolf",
+  "kamenridercraft:rampage_gatling_progrisekey.form": "Form: Rampage",
+  "kamenridercraft:punching_kong_progrisekey.form": "Form: Punching Kong",
+  "kamenridercraft:punching_kong_progrisekey_zero_one.form": "Form: Punching Kong",
+  "kamenridercraft:dire_wolf_progrisekey.form": "Form: Lone Wolf",
+
 "item.kamenridercraft.rushing_cheetah_progrisekey": "Rushing Cheetah Progrisekey",
 "item.kamenridercraft.lightning_hornet_progrisekey": "Lightning Hornet Progrisekey",
 "item.kamenridercraft.fighting_jackal_progrisekey": "Fighting Jackal Progrisekey",
 "item.kamenridercraft.serval_tiger_zetsumerisekey": "Serval Tiger Zetsumerisekey",
 
+  "kamenridercraft:rushing_cheetah_progrisekey.form": "Form: Rushing Cheetah",
+  "kamenridercraft:rushing_cheetah_progrisekey_zero_one.form": "Form: Rushing Cheetah",
+  "kamenridercraft:lightning_hornet_progrisekey.form": "Form: Lightning Hornet",
+  "kamenridercraft:lightning_hornet_progrisekey_zero_one.form": "Form: Lightning Hornet",
+  "kamenridercraft:serval_tiger_progrisekey.form": "Form: Serval",
+  "kamenridercraft:fighting_jackal_progrisekey_zero_one.form": "Form: Fighting Jackal",
+
 "item.kamenridercraft.sting_scorpion_progrisekey": "Sting Scorpion Progrisekey",
 "item.kamenridercraft.ark_scorpion_progrisekey": "Ark Scorpion Progrisekey",
+
+  "kamenridercraft:sting_scorpion_progrisekey_zero_one.form": "Form: Sting Scorpion",
 
 "item.kamenridercraft.flying_falcon_progrisekey": "Flying Falcon Progrisekey",
 "item.kamenridercraft.burning_falcon_progrisekey": "Burning Falcon Progrisekey",
 
+  "kamenridercraft:flying_falcon_progrisekey_zero_one.form": "Form: Flying Falcon",
+  "kamenridercraft:burning_falcon_progrisekey_zero_one.form": "Form: Burning Falcon",
+
 "item.kamenridercraft.amazing_caucasus_progrisekey": "Amazing Caucasus Progrisekey",
 "item.kamenridercraft.awaking_arsino_zetsumerisekey": "Awaking Arsino Zetsumerisekey",
+
+  "kamenridercraft:amazing_caucasus_progrisekey.form": "Form: Base Form",
+  "kamenridercraft:amazing_caucasus_progrisekey_zero_one.form": "Form: Amazing Caucasus",
 
 "item.kamenridercraft.ark_one_progrisekey": "Ark-One Progrisekey",
 "item.kamenridercraft.ark_zero_one_progrisekey": "Ark Zero-One Progrisekey",
 "item.kamenridercraft.thousand_ark_progrisekey": "Thousand Ark Progrisekey",
+
+  "kamenridercraft:ark_zero_progrisekey.form": "Form: Ark-Zero",
+  "kamenridercraft:ark_one_progrisekey.form": "Form: Ark-One",
+  "kamenridercraft:ark_zero_one_progrisekey.form": "Form: Ark-Zero-One",
+  "kamenridercraft:thousand_ark_progrisekey.form": "Form: Thousand Ark",
 
 "item.kamenridercraft.eden_zetsumerisekey": "Eden Zetsumerisekey",
 "item.kamenridercraft.crowding_hopper_progrisekey": "Crowding Hopper Progrisekey",
@@ -4086,9 +4143,16 @@
 "item.kamenridercraft.carnotaurus_zetsumerisekey": "Carnotaurus Zetsumerisekey",
 "item.kamenridercraft.massbrain_zetsumerisekey": "Massbrain Zetsumerisekey",
 
+  "kamenridercraft:triceratops_zetsumerisekey.form": "Form: Bugster Virus",
+
 "item.kamenridercraft.zein_progrisekey": "Zein Progrisekey",
+  "kamenridercraft:zein_progrisekey.form": "Form: Base Form",
 
 "item.kamenridercraft.thousand_key": "Thousand Key",
+
+  "kamenridercraft:thousand_key.form": "Form: Supreme",
+  "kamenridercraft:ragnarok_progrisekey.form": "Form: Ragnarok",
+  "kamenridercraft:ragnarok_apocalypse_reboot.form": "Form: Black Rider",
 
 "item.kamenridercraft.berotha_zetsumerisekey": "Berotha Zetsumerisekey",
 "item.kamenridercraft.kuehne_zetsumerisekey": "Kuehne Zetsumerisekey",
@@ -4104,6 +4168,8 @@
 
 "item.kamenridercraft.japanese_wolf_zetsumerisekey": "Japanese Wolf Zetsumerisekey",
 "item.kamenridercraft.rocking_hopper_zetsumerisekey": "Rocking Hopper Zetsumerisekey",
+
+  "kamenridercraft:japanese_wolf_zetsumerisekey.form": "Form: Orthoros",
 
 "item.kamenridercraft.is_progrisekey": "Is Progrisekey",
 "item.kamenridercraft.uchuyaro_subaru_progrisekey": "Uchuyaro Subaru Progrisekey",
