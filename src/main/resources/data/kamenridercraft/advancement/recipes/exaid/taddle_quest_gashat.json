@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:exaid/gamer_driver_brave",
-	  "kamenridercraft:exaid/gashacon_sword"
+	  "kamenridercraft:exaid/gashacon_sword",
+	  "kamenridercraft:decade/brave_card"
 	]
   },
   "sends_telemetry_event": false

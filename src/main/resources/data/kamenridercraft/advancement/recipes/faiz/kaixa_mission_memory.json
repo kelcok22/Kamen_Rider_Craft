@@ -24,7 +24,8 @@
 	  "kamenridercraft:faiz/kaixa_driver",
 	  "kamenridercraft:faiz/kaixa_phone",
 	  "kamenridercraft:faiz/kaixa_blaygun",
-	  "kamenridercraft:faiz/kaixa_shot"
+	  "kamenridercraft:faiz/kaixa_shot",
+	  "kamenridercraft:decade/kaixa_card"
 	]
   },
   "sends_telemetry_event": false

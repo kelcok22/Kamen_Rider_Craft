@@ -2,7 +2,7 @@
 	"name": "Zi-O Ridewatch (Christmas ver.)",
 	"icon": "kamenridercraft:christmas_ridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 90,
+	"sortnum": 91,
 	"pages": [
 		{
 			"type": "patchouli:text",

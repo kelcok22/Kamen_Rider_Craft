@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:ryuki/v_buckle_knight",
-	  "kamenridercraft:ryuki/dark_visor"
+	  "kamenridercraft:ryuki/dark_visor",
+	  "kamenridercraft:decade/knight_card"
 	]
   },
   "sends_telemetry_event": false

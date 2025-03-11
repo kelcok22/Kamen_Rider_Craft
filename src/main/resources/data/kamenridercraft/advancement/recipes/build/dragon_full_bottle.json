@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:build/build_driver_cross_z",
-	  "kamenridercraft:build/beat_crosser"
+	  "kamenridercraft:build/beat_crosser",
+	  "kamenridercraft:decade/cross_z_card"
 	]
   },
   "sends_telemetry_event": false

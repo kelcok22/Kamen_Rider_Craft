@@ -163,6 +163,7 @@
 
 
   "owner.kamenridercraft.decade":"Decade's ",
+  "owner.kamenridercraft.zein":"Zein's ",
 
   "henshin.kamenridercraft.henshin":"Henshin!",
   "henshin.kamenridercraft.shocker_rider":"<Shocker Rider> §eHenshin!",
@@ -257,6 +258,7 @@
   "attack.kamenridercraft.reset":"§cReset!",
   "attack.kamenridercraft.noroshi_muchuu":"§4Noroshi Muchuu!",
   "attack.kamenridercraft.kaiji_masshou":"§bKaiji Masshou!\n§bSai Kaiji!",
+  "attack.kamenridercraft.justice_order":"Shikkou! §bJustice Order!",
 
   "loot.kamenridercraft.purple_medals":"§5You released the purple medals!",
   "loot.kamenridercraft.dan_kuroto_progrisekey":"§5President Dan Kuroto!",
@@ -1806,6 +1808,9 @@
 "item.kamenridercraft.ryuki_survive_card": "Final KamenRide Ryuki Survive",
 "item.kamenridercraft.agito_shining_card": "Final KamenRide Agito Shining Form",
 "item.kamenridercraft.kuuga_ultimate_card": "Final KamenRide Kuuga Ultimate Form",
+
+"item.kamenridercraft.rideplayer_card": "KamenRide Ride-Player",
+"item.kamenridercraft.dimension_card": "Multiverse Dimension",
 
 "item.kamenridercraft.k_touch": "Final Kamen Terminal K-Touch",
 "item.kamenridercraft.k_touch_diend": "Final Kamen Terminal K-Touch (Diend)",
@@ -3842,6 +3847,7 @@
 
   "item.kamenridercraft.knight_ridewatch": "Knight Ridewatch",
   "item.kamenridercraft.chalice_ridewatch": "Chalice Ridewatch",
+  "item.kamenridercraft.diend_ridewatch": "Diend Ridewatch",
   "item.kamenridercraft.beast_ridewatch": "Beast Ridewatch",
   "item.kamenridercraft.mach_ridewatch": "Mach Ridewatch",
   "item.kamenridercraft.cross_z_ridewatch": "Cross-Z Ridewatch",

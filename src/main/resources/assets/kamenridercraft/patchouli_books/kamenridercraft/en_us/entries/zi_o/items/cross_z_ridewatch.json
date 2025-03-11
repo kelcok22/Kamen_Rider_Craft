@@ -2,7 +2,7 @@
 	"name": "Cross-Z Ridewatch",
 	"icon": "kamenridercraft:cross_z_ridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 85,
+	"sortnum": 86,
 	"pages": [
 		{
 			"type": "patchouli:text",
