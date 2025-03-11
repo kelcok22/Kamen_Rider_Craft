@@ -15,10 +15,10 @@
 	"salt": 1973,
 
 	  // The average distance apart in chunks for spawn attempts
-	"spacing": 32,
+	"spacing": 60,
 
 	  // Minimum distance apart in chunks for spawn attempts
 	  // MUST ALWAYS BE SMALLER THAN spacing ABOVE
-	"separation": 16
+	"separation": 30
   }
 }
