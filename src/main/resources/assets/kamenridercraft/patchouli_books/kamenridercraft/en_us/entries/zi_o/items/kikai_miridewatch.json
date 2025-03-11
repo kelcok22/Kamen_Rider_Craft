@@ -2,7 +2,7 @@
 	"name": "Kikai Miridewatch",
 	"icon": "kamenridercraft:kikai_miridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 88,
+	"sortnum": 89,
 	"pages": [
 		{
 			"type": "patchouli:text",

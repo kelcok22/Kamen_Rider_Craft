@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_card"
+	}, 
+	{
+	  "item": "kamenridercraft:zeronos_altair_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:zeronos_card"
+  }
+}

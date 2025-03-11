@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:drive/mach_driver_honoh",
 	  "kamenridercraft:drive/zenrin_shooter",
+	  "kamenridercraft:decade/mach_card",
 	  "kamenridercraft:zi_o/mach_ridewatch"
 	]
   },

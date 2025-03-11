@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "neo_diend",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:diend_ridewatch"
+    }, 
+    {
+      "item": "kamenridercraft:diendriver"
+    } 
+    ],
+  "result": {
+    "id": "kamenridercraft:neo_diendriver"
+  }
+}

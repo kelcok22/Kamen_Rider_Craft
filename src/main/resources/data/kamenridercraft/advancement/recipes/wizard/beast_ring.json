@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:wizard/beastdriver",
 	  "kamenridercraft:wizard/dice_saber",
-	  "kamenridercraft:wizard/beast_ring_holder"
+	  "kamenridercraft:wizard/beast_ring_holder",
+	  "kamenridercraft:decade/beast_card"
 	]
   },
   "sends_telemetry_event": false

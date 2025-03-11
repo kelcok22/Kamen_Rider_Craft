@@ -26,7 +26,8 @@
 	  "kamenridercraft:agito/gm_01_scorpion",
 	  "kamenridercraft:agito/gs_03_destroyer",
 	  "kamenridercraft:agito/ga_04_antares",
-	  "kamenridercraft:agito/g3_shield"
+	  "kamenridercraft:agito/g3_shield",
+	  "kamenridercraft:decade/g3_card"
 	]
   },
   "sends_telemetry_event": false

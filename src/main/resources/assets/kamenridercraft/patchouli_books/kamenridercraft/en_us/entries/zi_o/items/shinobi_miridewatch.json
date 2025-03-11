@@ -2,7 +2,7 @@
 	"name": "Shinobi Miridewatch",
 	"icon": "kamenridercraft:shinobi_miridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 86,
+	"sortnum": 87,
 	"pages": [
 		{
 			"type": "patchouli:text",

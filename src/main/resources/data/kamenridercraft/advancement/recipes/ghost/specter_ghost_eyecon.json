@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:ghost/specter_driver",
-	  "kamenridercraft:ghost/gan_gun_hand_rod"
+	  "kamenridercraft:ghost/gan_gun_hand_rod",
+	  "kamenridercraft:decade/specter_card"
 	]
   },
   "sends_telemetry_event": false

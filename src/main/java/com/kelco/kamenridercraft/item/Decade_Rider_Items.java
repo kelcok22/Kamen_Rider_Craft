@@ -735,7 +735,12 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> COMPLETE_CARD_DECADE_21 = ITEMS.register("complete_card_decade_21",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
-
+	/*
+	public static final DeferredItem<Item> RIDE_PLAYER_CARD = ITEMS.register("rideplayer_card",
+			() -> new ZeinCardItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	public static final DeferredItem<Item> DIMENSION_CARD = ITEMS.register("dimension_card",
+			() -> new ZeinCardItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	*/
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADECHESTPLATE = ITEMS.register("decadetroso",

@@ -2,7 +2,7 @@
 	"name": "Ginga Miridewatch",
 	"icon": "kamenridercraft:ginga_miridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 89,
+	"sortnum": 90,
 	"pages": [
 		{
 			"type": "patchouli:text",
