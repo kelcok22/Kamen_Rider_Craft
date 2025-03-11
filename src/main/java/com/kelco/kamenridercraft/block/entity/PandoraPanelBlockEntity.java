@@ -1,6 +1,9 @@
 package com.kelco.kamenridercraft.block.entity;
 
+import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -11,6 +14,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +33,31 @@ public class PandoraPanelBlockEntity extends BlockEntity {
             }
         }
     };
+
+    private float rotation;
+
+    public float getRenderingRotation(PandoraPanelBlockEntity pBlockEntity) {
+        rotation += 0f;
+        if (pBlockEntity.level.getBlockState(pBlockEntity.getBlockPos()).getBlock()== Rider_Blocks.PANDORA_PANEL_BLOCK.get()){
+            BlockState state = pBlockEntity.level.getBlockState(pBlockEntity.getBlockPos());
+
+            switch ((Direction)state.getValue(PandoraPanelBlock.FACING)) {
+                case NORTH:
+                    return 0;
+                case EAST:
+                    return 90;
+                case SOUTH:
+                    return 180;
+                case WEST:
+                default:
+                    return 270;
+            }
+        }
+
+
+        rotation += 0.5f;
+        return rotation;
+    }
 
     public PandoraPanelBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.PANDORA_PANEL_BE.get(), pos, blockState);
