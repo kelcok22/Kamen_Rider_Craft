@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:decade/diendriver",
 	  "kamenridercraft:decade/diend_power_up_card",
-	  "kamenridercraft:decade/ongekibo_rekka_diend"
+	  "kamenridercraft:decade/ongekibo_rekka_diend",
+	  "kamenridercraft:zi_o/diend_ridewatch"
 	]
   },
   "sends_telemetry_event": false

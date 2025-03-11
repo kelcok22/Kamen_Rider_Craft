@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:blade/garren_buckle",
-	  "kamenridercraft:blade/garrenrouzer"
+	  "kamenridercraft:blade/garrenrouzer",
+	  "kamenridercraft:decade/garren_card"
 	]
   },
   "sends_telemetry_event": false

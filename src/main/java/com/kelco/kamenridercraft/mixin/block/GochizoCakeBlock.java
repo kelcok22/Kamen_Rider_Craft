@@ -22,8 +22,7 @@ public class GochizoCakeBlock {
 
     @Inject(method = "eat", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/food/FoodData;eat(IF)V"))
     private static void eat(LevelAccessor level, BlockPos pos, BlockState state, Player player, CallbackInfoReturnable<InteractionResult> cir) {
-        if (!player.level().isClientSide && state.getBlock() instanceof CakeBlock
-        && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+        if (!player.level().isClientSide && player.canEat(false) && player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
             if (player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()) player.getInventory().removeItem(40, 1);
             else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 

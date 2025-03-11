@@ -2,7 +2,7 @@
 	"name": "Beast Ridewatch",
 	"icon": "kamenridercraft:beast_ridewatch",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 83,
+	"sortnum": 84,
 	"pages": [
 		{
 			"type": "patchouli:text",

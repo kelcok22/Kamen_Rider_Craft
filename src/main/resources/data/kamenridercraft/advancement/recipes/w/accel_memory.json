@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:w/acceldriver"
+	  "kamenridercraft:w/acceldriver",
+	  "kamenridercraft:decade/accel_card"
 	]
   },
   "sends_telemetry_event": false

@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:ooo/birth_driver",
 	  "kamenridercraft:ooo/birth_buster",
-	  "kamenridercraft:ooo/proto_birth_core"
+	  "kamenridercraft:ooo/proto_birth_core",
+	  "kamenridercraft:decade/birth_card"
 	]
   },
   "sends_telemetry_event": false

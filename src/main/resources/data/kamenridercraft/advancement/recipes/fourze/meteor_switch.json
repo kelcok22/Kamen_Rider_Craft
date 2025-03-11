@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:fourze/meteor_driver",
-	  "kamenridercraft:fourze/meteor_storm_switch"
+	  "kamenridercraft:fourze/meteor_storm_switch",
+	  "kamenridercraft:decade/meteor_card"
 	]
   },
   "sends_telemetry_event": false
