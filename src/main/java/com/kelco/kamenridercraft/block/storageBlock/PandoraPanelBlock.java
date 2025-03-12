@@ -176,11 +176,7 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
 											  Player player, InteractionHand hand, BlockHitResult hitResult) {
 		if(level.getBlockEntity(pos) instanceof PandoraPanelBlockEntity PanelBlockEntity) {
-			if(PanelBlockEntity.inventory.getStackInSlot(0).isEmpty() && !stack.isEmpty()) {
-				PanelBlockEntity.inventory.insertItem(0, stack.copy(), false);
-				stack.shrink(1);
-				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
-			} else if(stack.isEmpty()) {
+
 				if(!PanelBlockEntity.inventory.getStackInSlot(0).isEmpty()) {
 					if (PanelBlockEntity.inventory.getStackInSlot(0).getItem() instanceof PandoraPanelItem) {
 						ItemStack itemstack =PanelBlockEntity.inventory.getStackInSlot(0);
@@ -205,7 +201,6 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 							});
 					}
 					}
-				}
 			}
 		}
 
