@@ -578,12 +578,12 @@ public class Fourze_Rider_Items {
 
 	public static final DeferredItem<Item> IKAROS_DRIVER = ITEMS.register("ikaros_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ikaros",IKAROS_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
 	public static final DeferredItem<Item> GINGA_OH_DRIVER = ITEMS.register("ginga_oh_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_gingaoh",SOLU_ASTROSWITCH ,FOURZE_HELMET,FOURZE_CHESTPLATE,FOURZE_LEGGINGS  ,
-					new Item.Properties()).Add_Extra_Base_Form_Items(OOO_Rider_Items.SAME_MEDAL,OOO_Rider_Items.KUJIRA_MEDAL,OOO_Rider_Items.OOKAMIUO_MEDAL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+					new Item.Properties()).Dont_show_belt_form_info().Add_Extra_Base_Form_Items(OOO_Rider_Items.SAME_MEDAL,OOO_Rider_Items.KUJIRA_MEDAL,OOO_Rider_Items.OOKAMIUO_MEDAL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
 	public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",

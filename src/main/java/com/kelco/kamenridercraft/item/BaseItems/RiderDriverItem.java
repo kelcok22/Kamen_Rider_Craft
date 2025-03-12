@@ -107,6 +107,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ((ServerLevel) level).sendParticles(ParticleTypes.GUST,
                     player.getX() , player.getY() + 1.0,
                     player.getZ(), 1, 0, 0, 0, 1);
+
         }
        tag.putBoolean("Update_form", false);
     }
