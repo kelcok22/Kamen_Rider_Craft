@@ -45,16 +45,12 @@ import net.minecraft.server.level.ServerLevel;
 
 
 public class ZeinCardItem extends BaseItem {
-
-	public String[] FORMS = new String[] {""};
 	private List<MobEffectInstance> EFFECTS;
 	private List<Item> ITEMS = Lists.newArrayList();
 	public String SPECIAL;
 
-	public ZeinCardItem (Properties properties, String[] forms)
-	{
+	public ZeinCardItem (Properties properties) {
 		super(properties);
-		FORMS = forms;
 	}
 
 	public ZeinCardItem addEffects(MobEffectInstance... effects)
