@@ -39,12 +39,17 @@ public class OOODriverItem extends RiderDriverItem {
 		Item formItem2 = this.get_Form_Item(stack, 2);
 		Item formItem3 = this.get_Form_Item(stack, 3);
 
-if (getCombo(formItem,formItem2,formItem3)!="false")tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
-	else{
+	if (getCombo(formItem,formItem2,formItem3)!="false")tooltipComponents.add(Component.translatable("kamenridercraft:"+getCombo(formItem,formItem2,formItem3)+".form"));
+		else if (!OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem2) || !OOO_Rider_Items.SPECIAL_NAME_MEDALS.contains(formItem3)) {
 			tooltipComponents.add(Component.translatable("kamenridercraft:" + getCombo(formItem, formItem2, formItem3) + ".form"));
 			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 			tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+		} else {
+			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft:false.form_special").getString()
+			+ Component.translatable(formItem.toString() + ".form_special").getString()
+			+ (formItem3 == OOO_Rider_Items.CHEETAH_MEDAL.get() ? Component.translatable(formItem2.toString() + ".form_cheetah").getString() : Component.translatable(formItem2.toString() + ".form_special").getString())
+			+ Component.translatable(formItem3.toString() + ".form_special").getString()));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}

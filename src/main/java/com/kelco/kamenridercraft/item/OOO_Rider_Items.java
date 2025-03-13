@@ -22,11 +22,13 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OOO_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
+	public static List<Item> SPECIAL_NAME_MEDALS = new ArrayList<Item>();
 
 	public static final DeferredItem<Item> OOO_LOGO = ITEMS.register("ooo_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
@@ -41,17 +43,17 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> TAKA_MEDAL = ITEMS.register("taka_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false))
-			.AddToList(RiderTabs.OOO_TAB_ITEM));
+			.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJAKU_MEDAL = ITEMS.register("kujaku_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujaku","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-			.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).hasFlyingWings( "ooo_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKA_ANKH_MEDAL = ITEMS.register("taka_ankh_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","ooo","ooodriver_belt",
@@ -65,221 +67,221 @@ public class OOO_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lion","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-			.AddToList(RiderTabs.OOO_TAB_ITEM));
+			.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TORA_MEDAL = ITEMS.register("tora_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tora","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CHEETAH_MEDAL = ITEMS.register("cheetah_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cheetah","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> KUWAGATA_MEDAL = ITEMS.register("kuwagata_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kuwagata","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-			.AddToList(RiderTabs.OOO_TAB_ITEM));
+			.AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KAMAKIRI_MEDAL = ITEMS.register("kamakiri_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kamakiri","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BATTA_MEDAL = ITEMS.register("batta_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_batta","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SAI_MEDAL = ITEMS.register("sai_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sai","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GORILLA_MEDAL = ITEMS.register("gorilla_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gorilla","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> ZOU_MEDAL = ITEMS.register("zou_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zou","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SHACHI_MEDAL = ITEMS.register("shachi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shachi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> UNAGI_MEDAL = ITEMS.register("unagi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_unagi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TAKO_MEDAL = ITEMS.register("tako_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tako","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					)
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> PTERA_MEDAL = ITEMS.register("ptera_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ptera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TRICERA_MEDAL = ITEMS.register("tricera_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tricera","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40	, 3,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> TYRANNO_MEDAL = ITEMS.register("tyranno_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tyranno","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> COBRA_MEDAL = ITEMS.register("cobra_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cobra","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KAME_MEDAL = ITEMS.register("kame_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kame","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> WANI_MEDAL = ITEMS.register("wani_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wani","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SASORI_MEDAL = ITEMS.register("sasori_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_MEDAL = ITEMS.register("kani_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 2,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> EBI_MEDAL = ITEMS.register("ebi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","core","core_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.IsGlowing().ChangeSlot(1).SetPalyerModelInvisible().AddToList(RiderTabs.OOO_TAB_ITEM));
+			.IsGlowing().ChangeSlot(1).SetPalyerModelInvisible().AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mukade","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> HACHI_MEDAL = ITEMS.register("hachi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hachi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> ARI_MEDAL = ITEMS.register("ari_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ari","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> EBI_NEW_MEDAL = ITEMS.register("ebi_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ebi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-			.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.IsGlowing().ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kani","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SASORI_NEW_MEDAL = ITEMS.register("sasori_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_sasori","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SAME_MEDAL = ITEMS.register("same_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_same","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KUJIRA_MEDAL = ITEMS.register("kujira_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kujira","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> OOKAMIUO_MEDAL = ITEMS.register("ookamiuo_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ookamiuo","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SHIKA_MEDAL = ITEMS.register("shika_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shika","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> GAZELLE_MEDAL = ITEMS.register("gazelle_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_gazelle","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> USHI_MEDAL = ITEMS.register("ushi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ushi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SEIUCHI_MEDAL = ITEMS.register("seiuchi_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_seiuchi","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false))
-			.ChangeSlot(1).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> SHIROKUMA_MEDAL = ITEMS.register("shirokuma_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shirokuma","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> PENGUIN_MEDAL = ITEMS.register("penguin_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_penguin","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
-			.ChangeSlot(3).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(CellMedalProgramer.SEISHIROGIN).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> PANDA_MEDAL = ITEMS.register("panda_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_panda","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> KANGAROO_MEDAL_LEG = ITEMS.register("kangaroo_medal_leg",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo_leg","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(3));
+			.ChangeSlot(3).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> KANGAROO_MEDAL = ITEMS.register("kangaroo_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kangaroo","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			.ChangeSlot(2).addShiftForm(KANGAROO_MEDAL_LEG.get()).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).addShiftForm(KANGAROO_MEDAL_LEG.get()).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> YADOKARI_MEDAL = ITEMS.register("yadokari_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yadokari","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> SUPER_TAKA_MEDAL = ITEMS.register("super_taka_medal",
@@ -367,17 +369,17 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> LOVE_CORE_MEDAL = ITEMS.register("love_core_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_love_1","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false))
-			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(1).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> LOVE_CORE2_MEDAL = ITEMS.register("love_core2_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_love_2","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> LOVE_CORE3_MEDAL = ITEMS.register("love_core3_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_love_3","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false))
-			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+			.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> FOUNDATION_X_TAKA_MEDAL = ITEMS.register("foundation_x_taka_medal",
@@ -498,13 +500,13 @@ public class OOO_Rider_Items {
 
 
 			public static final DeferredItem<Item> X_MEDAL = ITEMS.register("x_medal",
-					() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new ShowaMedalItem(new Item.Properties(), (RiderDriverItem)Ichigo_Rider_Items.RIDOL.get(), Ichigo_Rider_Items.RIDOL_STICK.get()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> AMAZON_MEDAL = ITEMS.register("amazon_medal",
-					() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new ShowaMedalItem(new Item.Properties(), (RiderDriverItem)Ichigo_Rider_Items.CONDORER.get(), null).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> STRONGER_MEDAL = ITEMS.register("stronger_medal",
-					() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new ShowaMedalItem(new Item.Properties(), (RiderDriverItem)Ichigo_Rider_Items.ELECTRER.get(), null).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 
 			public static final DeferredItem<Item> HABATAKI_MEDAL = ITEMS.register("habataki_medal",
@@ -527,12 +529,12 @@ public class OOO_Rider_Items {
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_imagin","ooo","ooodriver_belt",
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeSlot(2).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 			public static final DeferredItem<Item> SHOCKER_MEDAL = ITEMS.register("shocker_medal",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_shocker","ooo","ooodriver_belt",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeSlot(3).AddToList(RiderTabs.OOO_TAB_ITEM).AddToList(SPECIAL_NAME_MEDALS));
 
 			public static final DeferredItem<Item> GEL_SHOCKER_MEDAL = ITEMS.register("gel_shocker_medal",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"_gel_shocker","shocker_ooo","ooodriver_belt",
