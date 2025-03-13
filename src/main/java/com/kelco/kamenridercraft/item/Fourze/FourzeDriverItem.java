@@ -49,10 +49,18 @@ this.Has_basic_belt_info=false;
 			Item formItem5 = this.get_Form_Item(stack, 5);
 
 			tooltipComponents.add(Component.translatable(formItem5.toString() + ".form"));
-				tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-				tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+
+			if (formItem5==Fourze_Rider_Items.FOURZE_FUSION_STATES.asItem()||formItem5==Fourze_Rider_Items.FOURZE_METEOR_NADESHIKO_FUSION_STATES.asItem()
+			) tooltipComponents.add(Component.translatable("kamenridercraft:meteor_switch_fourze.form"));
+			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+
+			if (formItem5==Fourze_Rider_Items.FOURZE_METEOR_NADESHIKO_FUSION_STATES.asItem()) tooltipComponents.add(Component.translatable( "kamenridercraft:nadeshiko_switch_fourze.form"));
+			else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
-			tooltipComponents.add(Component.translatable(formItem4.toString() + ".form"));
+
+			if (formItem5==Fourze_Rider_Items.SHIN_CHAN_ASTROSWITCH.asItem()) tooltipComponents.add(Component.translatable( "kamenridercraft:name_shin_chan.form"));
+			else tooltipComponents.add(Component.translatable(formItem4.toString() + ".form"));
 
 			super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 		}
