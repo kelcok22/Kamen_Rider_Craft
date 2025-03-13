@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -68,7 +69,7 @@ public class RiderSummonCardItem extends BaseItem {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (!level.isClientSide() && BELT.getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)
-        && (this.summonNeoBelt == null || player.getInventory().countItem(Decade_Rider_Items.NEO_DIENDRIVER.get()) != 0)) {
+        && ((this.summonNeoBelt == null && player.getInventory().countItem(Decade_Rider_Items.DIENDRIVER.get()) != 0) || player.getInventory().countItem(Decade_Rider_Items.NEO_DIENDRIVER.get()) != 0)) {
             if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
             
             for (int i = 0; i < summonAmount; i++) {
@@ -91,6 +92,7 @@ public class RiderSummonCardItem extends BaseItem {
                         summon.takeSummonItem(player.getItemInHand(usedHand));
                         player.getCooldowns().addCooldown(this, 750);
                     }
+                    player.awardStat(Stats.ITEM_USED.get(this));
 			    }
             }
         }
