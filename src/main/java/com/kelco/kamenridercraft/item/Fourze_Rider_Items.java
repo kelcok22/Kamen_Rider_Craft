@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.Fourze.AstroswitchCaseItem;
 import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
 import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
+import com.kelco.kamenridercraft.item.Fourze.ShowaSwitchItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -421,24 +422,24 @@ public class Fourze_Rider_Items {
 
 
 	public static final DeferredItem<Item> RIDER_1_ASTROSWITCH = ITEMS.register("rider1_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rider_1_module","fourze","fourze_driver_belt",
+			() -> new ShowaSwitchItem(new Item.Properties(),0,"_rider_1_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).ChangeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_2_ASTROSWITCH = ITEMS.register("rider2_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rider_2_module","fourze","fourze_driver_belt",
+			() -> new ShowaSwitchItem(new Item.Properties(),0,"_rider_2_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
-					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.ORIGINAL_TYPHOON_CORE_NIGO.get()).ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> V3_ASTROSWITCH = ITEMS.register("v3_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_v3_module","fourze","fourze_driver_belt",
+			() -> new ShowaSwitchItem(new Item.Properties(),0,"_v3_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false))
-					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.DOUBLE_TYPHOON.get()).ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDERMAN_ASTROSWITCH = ITEMS.register("riderman_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_riderman_module","fourze","fourze_driver_belt",
+			() -> new ShowaSwitchItem(new Item.Properties(),0,"_riderman_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.LONG_ARM, 40, 4,true,false))
-					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_ASTROSWITCH = ITEMS.register("x_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_module","fourze","fourze_driver_belt",
