@@ -879,6 +879,37 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
 					.addShiftForm(GEAR_HELL_BROS.get()).AddToList(NEED_ITEM_HELL_BROS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> BUTTOBASOUL_FULL_BOTTLE= ITEMS.register("buttobasoul_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GANBARIZING_FULL_BOTTLE= ITEMS.register("ganbarizing_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> KAMEN_RIDER_FULL_BOTTLE= ITEMS.register("kamen_rider_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SUPER_SENTAI_FULL_BOTTLE= ITEMS.register("super_sentai_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> EX_AID_FULL_BOTTLE= ITEMS.register("ex_aid_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GHOST_FULL_BOTTLE= ITEMS.register("ghost_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> DRIVE_FULL_BOTTLE= ITEMS.register("drive_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> GAIM_FULL_BOTTLE= ITEMS.register("gaim_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> WIZARD_FULL_BOTTLE= ITEMS.register("wizard_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+	public static final DeferredItem<Item> FOURZE_FULL_BOTTLE= ITEMS.register("fourze_full_bottle",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.BUILD_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 	public static final DeferredItem<Item> BUILD_CHESTPLATE = ITEMS.register("buildtroso",
