@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#muteki)Kamen Rider Ex-Aid Muteki Gamer$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

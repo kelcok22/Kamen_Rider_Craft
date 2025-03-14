@@ -552,6 +552,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
+		event.put(MobsCore.COMPLETE_SUMMON.get(), CompleteSummonEntity.setAttributes().build());
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
 		event.put(MobsCore.DECADE_ARMOR_EX_AID.get(), DecadeArmorExAidEntity.setAttributes().build());
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());

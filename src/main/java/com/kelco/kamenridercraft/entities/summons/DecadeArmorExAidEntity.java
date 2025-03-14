@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.entities.footSoldiers.RideplayerEntity;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
 
 import net.minecraft.core.BlockPos;
@@ -54,6 +55,8 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.RIDE_HEISABER.get()));
 		RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -95,8 +98,8 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.DECADE_EX_AID_RIDEWATCH_L.get(), 1);
 						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Zi_O_Rider_Items.ZIKAN_GIRADE.get()));
 					}
-				} else this.setHealth(0);
-			} else this.setHealth(0);
+				}
+			}
 		}
 	}
 
@@ -106,22 +109,6 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 		super.setTame(p_30443_, p_30444_);
 		this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20.0D);
 		this.setHealth(20.0F);
-	}
-
-	protected SoundEvent getAmbientSound() {
-		return SoundEvents.VILLAGER_AMBIENT;
-	}
-
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
 	}
 
 	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
@@ -142,13 +129,5 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 		} else {
 			return false;
 		}
-	}
-
-	public boolean isBaby() {
-		return false;
-	}
-
-	public boolean canMate(Animal p_30392_) {
-		return false;
 	}
 }

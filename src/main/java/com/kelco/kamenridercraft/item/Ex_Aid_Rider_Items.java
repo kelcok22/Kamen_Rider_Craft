@@ -654,7 +654,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.MUTEKI, 40, 0,true,false))
-			.addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_HYPER_GASHAT, 20));
+			.addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(GameCreator.BLANK_HYPER_GASHAT, 20));
 
 	public static final DeferredItem<Item> GEMEDEUS_HYPER_MUTEKI_GASHAT = ITEMS.register("gamedeus_hyper_muteki_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gamedeus_muteki","gamer_driver_gamedeus_hyper_muteki",
@@ -966,7 +966,7 @@ public class Ex_Aid_Rider_Items {
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.EX_AID_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
 			.ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",

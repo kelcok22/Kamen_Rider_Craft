@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#ichigo)Ichigo Module$(/l)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#ichigo)Ichigo Module$(/l)$(br2)Can be used to summon $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l) when right-clicked as $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

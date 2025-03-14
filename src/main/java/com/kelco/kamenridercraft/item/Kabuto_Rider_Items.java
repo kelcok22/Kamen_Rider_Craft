@@ -272,7 +272,7 @@ public class Kabuto_Rider_Items {
                 () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                 .ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> ZECT_MIZER = ITEMS.register("zect_mizer",
-                () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectileFireball().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+                () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                 .ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> PERFECT_ZECTER = ITEMS.register("perfect_zecter",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)

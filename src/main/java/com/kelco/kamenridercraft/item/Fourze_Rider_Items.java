@@ -329,7 +329,7 @@ public class Fourze_Rider_Items {
 	public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
-					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
+					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
 
 	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("super_rocket_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_rocket_module","fourze","fourze_driver_belt",
@@ -596,10 +596,10 @@ public class Fourze_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
     public static final DeferredItem<Item> HEE_HACKGUN = ITEMS.register("hee_hackgun",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectileFireball().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> SHIELD_MODULE = ITEMS.register("shield_module",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM)

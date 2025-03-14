@@ -77,14 +77,6 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
 	      this.hat.copyFrom(this.head);
 	   }
 
-	   protected void setupAttackAnimation(T p_103363_, float p_103364_) {
-	      if (this.attackTime > 0.0F) {
-	         AnimationUtils.swingWeaponDown(this.rightArm, this.leftArm, p_103363_, this.attackTime, p_103364_);
-	      } else {
-	         super.setupAttackAnimation(p_103363_, p_103364_);
-	      }
-	   }
-
 	   private void holdWeaponHigh(T p_103361_) {
 	      if (p_103361_.isLeftHanded()) {
 	         this.leftArm.xRot = leftArm.xRot-1F;

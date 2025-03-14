@@ -125,7 +125,7 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.WIZARD_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 
 	public static final DeferredItem<Item> DRAGO_TIMER = ITEMS.register("drago_timer",
@@ -638,7 +638,7 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
-		() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+		() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
 				.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",
@@ -646,7 +646,7 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).setProjectileFireball().AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN_MAGE = ITEMS.register("wizarswordgun_mage",

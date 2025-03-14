@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:drive/riders/drive#tridoron)Kamen Rider Drive type Tridoron$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

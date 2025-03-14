@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
 import com.kelco.kamenridercraft.item.decade.BlankCardItem;
+import com.kelco.kamenridercraft.item.decade.FinalKamenRideCardItem;
 import com.kelco.kamenridercraft.item.decade.RiderSummonCardItem;
 import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import com.kelco.kamenridercraft.item.decade.RiderCardItem;
@@ -30,6 +31,8 @@ public class Decade_Rider_Items {
 	public static List<Item> NEO_DIEND_SUMMON_BELTS = new ArrayList<Item>();
 	public static List<Item> NEO_DIEND_SUMMON_FORMS = new ArrayList<Item>();
 	public static List<Item> NEO_DIEND_SUMMON_WEAPONS = new ArrayList<Item>();
+	public static List<Item> COMPLETE_21_FORMS = new ArrayList<Item>();
+	public static List<Item> COMPLETE_21_WEAPONS = new ArrayList<Item>();
 
 	public static final DeferredItem<Item> DECADE_LOGO = ITEMS.register("decade_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -665,45 +668,45 @@ public class Decade_Rider_Items {
             .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("black_rx").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_CARD = ITEMS.register("kuuga_ultimate_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get()).setSummonForm((RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_ULTIMATE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> AGITO_SHINING_CARD = ITEMS.register("agito_shining_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).setSummonForm((RiderFormChangeItem)Agito_Rider_Items.AGITO_SHINING.get()).addSummonWeapon(Agito_Rider_Items.SHINING_CALIBER_TWIN.get()).addSummonWeapon(Agito_Rider_Items.SHINING_CALIBER_TWIN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> RYUKI_SURVIVE_CARD = ITEMS.register("ryuki_survive_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get()).setSummonForm((RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_REKKA.get()).addSummonWeapon(Ryuki_Rider_Items.DRAG_BLADE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> FAIZ_BLASTER_CARD = ITEMS.register("faiz_blaster_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get()).setSummonForm((RiderFormChangeItem)Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get()).addSummonWeapon(Faiz_Rider_Items.FAIZ_BLASTER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> BLADE_KING_CARD = ITEMS.register("blade_king_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get()).setSummonForm((RiderFormChangeItem)Blade_Rider_Items.EVOLUTION_CAUCASUS.get()).addSummonWeapon(Blade_Rider_Items.KINGROUZER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ARMED_HIBIKI_CARD = ITEMS.register("armed_hibiki_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get()).setSummonForm((RiderFormChangeItem)Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get()).addSummonWeapon(Hibiki_Rider_Items.ARMED_SABER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> KABUTO_HYPER_CARD = ITEMS.register("kabuto_hyper_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.HYPER_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.PERFECT_ZECTER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DEN_O_LINER_CARD = ITEMS.register("den_o_liner_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get()).setSummonForm((RiderFormChangeItem)Den_O_Rider_Items.DEN_O_LINER_FORM.get()).addSummonWeapon(Den_O_Rider_Items.DENKAMEN_SWORD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> KIVA_EMPEROR_CARD = ITEMS.register("kiva_emperor_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get()).setSummonForm((RiderFormChangeItem)Kiva_Rider_Items.TATSULOT.get()).addSummonWeapon(Kiva_Rider_Items.ZANVAT_SWORD.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> W_XTREME_CARD = ITEMS.register("w_xtreme_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(0).setSummonForm(0, 1).addSummonWeapon(0).addSummonWeapon(1).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> OOO_PUTOTYRA_CARD = ITEMS.register("ooo_putotyra_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(3).setSummonForm(1, 1).addSummonWeapon(2).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> FOURZE_COSMIC_CARD = ITEMS.register("fourze_cosmic_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(5).setSummonForm(2, 1).addSummonWeapon(3).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> WIZARD_INFINITY_CARD = ITEMS.register("wizard_infinity_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(7).setSummonForm(3, 1).addSummonWeapon(4).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GAIM_KIWAMI_CARD = ITEMS.register("gaim_kiwami_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(9).setSummonForm(4, 1).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> DRIVE_TRIDORON_CARD = ITEMS.register("drive_tridoron_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(11).setSummonForm(5, 1).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GHOST_MUGEN_CARD = ITEMS.register("ghost_mugen_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(13).setSummonForm(6, 2).addSummonWeapon(16).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> EX_AID_MUTEKI_CARD = ITEMS.register("ex_aid_muteki_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(15).setSummonForm(7, 1).addSummonWeapon(17).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> BUILD_GENIUS_CARD = ITEMS.register("build_genius_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(17).setSummonForm(8, 3).addSummonWeapon(18).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> GRAND_ZI_O_CARD = ITEMS.register("grand_zi_o_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(19).setSummonForm(9, 1).addSummonWeapon(19).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ZERO_TWO_CARD = ITEMS.register("zero_two_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new FinalKamenRideCardItem(new Item.Properties()).setSummonBelt(21).addSummonWeapon(20).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> XROSS_SABER_CARD = ITEMS.register("xross_saber_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> ULTIMATE_REVI_CARD = ITEMS.register("ultimate_revi_card",

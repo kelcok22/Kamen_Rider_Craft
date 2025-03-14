@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
