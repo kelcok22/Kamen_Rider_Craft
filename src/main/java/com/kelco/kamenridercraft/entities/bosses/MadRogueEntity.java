@@ -10,16 +10,16 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class NightRogueEntity extends BaseHenchmenEntity {
+public class MadRogueEntity extends BaseHenchmenEntity {
 
-		public NightRogueEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+		public MadRogueEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="night_rogue";
+        NAME="mad_rogue";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Build_Rider_Items.BUILD_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Build_Rider_Items.BUILD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Build_Rider_Items.BUILD_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Build_Rider_Items.STEAM_BLADE.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.TRANSTEAM_GUN_NIGHT_ROGUE.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.EVOL_DRIVER_MAD_ROGUE.get()));
     }
 
 

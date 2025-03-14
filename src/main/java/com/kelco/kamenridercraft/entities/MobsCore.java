@@ -756,7 +756,20 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<CastleLostSmashEntity>> CASTLE_LOST_SMASH = MOBLIST.register("castle_lost_smash",
             () -> EntityType.Builder.of(CastleLostSmashEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":castle_lost_smash"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<EngineBrosEntity>> ENGINE_BROS = MOBLIST.register("engine_bros",
+            () -> EntityType.Builder.of(EngineBrosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":engine_bros"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<RemoconBrosEntity>> REMOCON_BROS = MOBLIST.register("remocon_bros",
+            () -> EntityType.Builder.of(RemoconBrosEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":remocon_bros"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> HELL_BROS_SPAWN_EGG = ITEMS.register("hell_bros_spawn_egg",
+            () -> new DeferredSpawnEggItem(ENGINE_BROS, 0x7ec1c2, 0xd3e3e3, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MadRogueEntity>> MAD_ROGUE = MOBLIST.register("mad_rogue",
+            () -> EntityType.Builder.of(MadRogueEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mad_rogue"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MAD_ROGUE_SPAWN_EGG = ITEMS.register("mad_rogue_spawn_egg",
+            () -> new DeferredSpawnEggItem(MAD_ROGUE, 0xf0f7f7, 0x9e21c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<GingaEntity>> GINGA = MOBLIST.register("ginga",
             () -> EntityType.Builder.of(GingaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ginga_mob"));
