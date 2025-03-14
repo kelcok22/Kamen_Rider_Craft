@@ -172,6 +172,7 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 		super.onRemove(state, level, pos, newState, movedByPiston);
 	}
 
+
 	@Override
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
 											  Player player, InteractionHand hand, BlockHitResult hitResult) {

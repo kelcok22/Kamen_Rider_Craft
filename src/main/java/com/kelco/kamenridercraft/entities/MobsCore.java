@@ -753,14 +753,8 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<OwlLostSmashEntity>> OWL_LOST_SMASH = MOBLIST.register("owl_lost_smash",
             () -> EntityType.Builder.of(OwlLostSmashEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":owl_lost_smash"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> OWL_LOST_SMASH_SPAWN_EGG = ITEMS.register("owl_lost_smash_spawn_egg",
-            () -> new DeferredSpawnEggItem(OWL_LOST_SMASH, 0x000000, 0xae9524, new Item.Properties()));
-
     public static final DeferredHolder<EntityType<?>, EntityType<CastleLostSmashEntity>> CASTLE_LOST_SMASH = MOBLIST.register("castle_lost_smash",
             () -> EntityType.Builder.of(CastleLostSmashEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":castle_lost_smash"));
-
-    public static final DeferredItem<DeferredSpawnEggItem> CASTLE_LOST_SMASH_SPAWN_EGG = ITEMS.register("castle_lost_smash_spawn_egg",
-            () -> new DeferredSpawnEggItem(CASTLE_LOST_SMASH, 0x000000, 0xc50505, new Item.Properties()));
 
 
 
