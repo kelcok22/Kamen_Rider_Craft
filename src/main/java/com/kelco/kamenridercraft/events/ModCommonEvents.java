@@ -496,6 +496,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.STAG_LOST_SMASH.get(), StagLostSmashEntity.setAttributes().build());
 		event.put(MobsCore.OWL_LOST_SMASH.get(), OwlLostSmashEntity.setAttributes().build());
 		event.put(MobsCore.CASTLE_LOST_SMASH.get(), CastleLostSmashEntity.setAttributes().build());
+		event.put(MobsCore.ENGINE_BROS.get(), EngineBrosEntity.setAttributes().build());
+		event.put(MobsCore.REMOCON_BROS.get(), RemoconBrosEntity.setAttributes().build());
+		event.put(MobsCore.MAD_ROGUE.get(), MadRogueEntity.setAttributes().build());
 
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), GingaEntity.setAttributes().build());

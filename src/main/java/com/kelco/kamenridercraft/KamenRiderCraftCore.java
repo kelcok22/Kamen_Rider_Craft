@@ -439,6 +439,9 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.STAG_LOST_SMASH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.OWL_LOST_SMASH.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CASTLE_LOST_SMASH.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ENGINE_BROS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.REMOCON_BROS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MAD_ROGUE.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);

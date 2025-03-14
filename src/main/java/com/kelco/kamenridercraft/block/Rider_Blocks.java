@@ -844,6 +844,18 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.NIGHT_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.night_rogue")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> HOKUTO_TRIO_BOSS_BLOCK = registerBlock("hokuto_trio_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.STAG_LOST_SMASH).addLine(Component.translatable("henshin.kamenridercraft.hokuto_trio")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> HELL_BROS_BOSS_BLOCK = registerBlock("hell_bros_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.ENGINE_BROS).addLine(Component.translatable("henshin.kamenridercraft.hell_bros")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
+	public static final DeferredBlock<Block> MAD_ROGUE_BOSS_BLOCK = registerBlock("mad_rogue_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.MAD_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.mad_rogue")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 	public static final DeferredBlock<Block> EVOL_BOSS_BLOCK = registerBlock("evol_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol")).AddToTabList(RiderTabs.RIDER_BLOCK));

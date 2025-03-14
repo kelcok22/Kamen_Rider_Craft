@@ -699,6 +699,8 @@ public class RiderTabs {
             event.accept(MobsCore.DOWNFALL_GUARDIAN_SPAWN_EGG);
             event.accept(MobsCore.PHANTOM_CRUSHER_SPAWN_EGG);
             event.accept(MobsCore.STAG_LOST_SMASH_SPAWN_EGG);
+            event.accept(MobsCore.HELL_BROS_SPAWN_EGG);
+            event.accept(MobsCore.MAD_ROGUE_SPAWN_EGG);
 
             event.accept(MobsCore.GINGA_SPAWN_EGG);
             event.accept(MobsCore.WOZ_SPAWN_EGG);
