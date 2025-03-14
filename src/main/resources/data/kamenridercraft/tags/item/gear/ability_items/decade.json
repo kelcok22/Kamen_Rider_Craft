@@ -18,6 +18,49 @@
     "kamenridercraft:blade_metal_card",
     "kamenridercraft:ryuki_strike_vent_card",
     "kamenridercraft:g4_gigant_card",
-    "kamenridercraft:amazon_gaga_no_udewa_card"
+    "kamenridercraft:amazon_gaga_no_udewa_card"{
+  "values": [
+    "kamenridercraft:decade_invisible_card",
+    "kamenridercraft:decade_illusion_card",
+    "kamenridercraft:decade_slash_card",
+    "kamenridercraft:decade_blast_card",
+    "kamenridercraft:rekka_daizantou_card",
+    "kamenridercraft:den_o_utchari_card",
+    "kamenridercraft:den_o_tsuppari_card",
+    "kamenridercraft:den_o_kotaewa_kiite_nai_card",
+    "kamenridercraft:den_o_nakerude_card",
+    "kamenridercraft:den_o_bokuni_tsurarete_miru_card",
+    "kamenridercraft:den_o_ore_sanjou_card",
+    "kamenridercraft:kabuto_clock_up_card",
+    "kamenridercraft:hibiki_ongekibou_rekka_card",
+    "kamenridercraft:hibiki_onibi_card",
+    "kamenridercraft:blade_mach_card",
+    "kamenridercraft:blade_metal_card",
+    "kamenridercraft:ryuki_strike_vent_card",
+    "kamenridercraft:g4_gigant_card",
+    "kamenridercraft:amazon_gaga_no_udewa_card",
+    "kamenridercraft:zero_two_card",
+    "kamenridercraft:grand_zi_o_card",
+    "kamenridercraft:build_genius_card",
+    "kamenridercraft:ex_aid_muteki_card",
+    "kamenridercraft:ghost_mugen_card",
+    "kamenridercraft:drive_tridoron_card",
+    "kamenridercraft:gaim_kiwami_card",
+    "kamenridercraft:wizard_infinity_card",
+    "kamenridercraft:fourze_cosmic_card",
+    "kamenridercraft:ooo_putotyra_card",
+    "kamenridercraft:w_xtreme_card",
+    "kamenridercraft:kiva_emperor_card",
+    "kamenridercraft:den_o_liner_card",
+    "kamenridercraft:kabuto_hyper_card",
+    "kamenridercraft:armed_hibiki_card",
+    "kamenridercraft:blade_king_card",
+    "kamenridercraft:faiz_blaster_card",
+    "kamenridercraft:ryuki_survive_card",
+    "kamenridercraft:agito_shining_card",
+    "kamenridercraft:kuuga_ultimate_card"
+  ]
+}
+
   ]
 }
