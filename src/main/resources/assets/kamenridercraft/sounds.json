@@ -6,5 +6,21 @@
         "stream": true
       }
     ]
+  },
+  "justifaiz": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:justifaiz",
+        "stream": true
+      }
+    ]
+  },
+  "kamen_rider_black": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_black",
+        "stream": true
+      }
+    ]
   }
 }

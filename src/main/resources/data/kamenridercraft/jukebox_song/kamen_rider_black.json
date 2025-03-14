@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.kamen_rider_black.desc"
+  },
+  "length_in_seconds": 80.0,
+  "sound_event": "kamenridercraft:kamen_rider_black"
+}
