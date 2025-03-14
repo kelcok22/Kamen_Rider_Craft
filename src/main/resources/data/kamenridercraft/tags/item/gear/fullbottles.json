@@ -79,6 +79,16 @@
 	  "kamenridercraft:killbus_spider_full_bottle",
 	  "kamenridercraft:metal_tank_tank_full_bottle",
 	  "kamenridercraft:metal_full_bottle",
-	  "#kamenridercraft:gear/lost_fullbottles"
+	  "#kamenridercraft:gear/lost_fullbottles",
+		"kamenridercraft:buttobasoul_full_bottle",
+		"kamenridercraft:ganbarizing_full_bottle",
+		"kamenridercraft:kamen_rider_full_bottle",
+		"kamenridercraft:super_sentai_full_bottle",
+		"kamenridercraft:ex_aid_full_bottle",
+		"kamenridercraft:ghost_full_bottle",
+		"kamenridercraft:drive_full_bottle",
+		"kamenridercraft:gaim_full_bottle",
+		"kamenridercraft:wizard_full_bottle",
+		"kamenridercraft:fourze_full_bottle"
 	]
   }
