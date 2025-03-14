@@ -19,6 +19,8 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
+import com.kelco.kamenridercraft.particle.HitParticles;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
@@ -126,6 +128,7 @@ public class KamenRiderCraftCore
         MobsCore.MOBLIST.register(modEventBus);
         RiderTabs.register(modEventBus);
         RiderVillagers.register(modEventBus);
+        ModParticles.register(modEventBus);
         /*ModBlockEntities.REGISTRY.register(modEventBus);*/
 
         LootModifierCore.register(modEventBus);
@@ -139,7 +142,6 @@ public class KamenRiderCraftCore
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
     }
-
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
@@ -509,6 +511,11 @@ public class KamenRiderCraftCore
 
         }
 
+        @SubscribeEvent
+        public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
+        }
+        
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
