@@ -761,6 +761,8 @@ public class RiderTabs {
                 event.accept( RiderTabs.Misc_TAB_ITEM.get(i));
             }
             event.accept(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC);
+            event.accept(Modded_item_core.KAMEN_RIDER_BLACK_MUSIC_DISC);
+            event.accept(Modded_item_core.JUSTIFAIZ_MUSIC_DISC);
         }
 
 

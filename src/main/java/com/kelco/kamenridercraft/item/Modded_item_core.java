@@ -319,6 +319,12 @@ public class Modded_item_core {
     public static final DeferredItem<Item> LETS_GO_RIDER_MUSIC_DISC = ITEMS.register("lets_go_rider_kick_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.LETS_GO_RIDER_KICK_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> JUSTIFAIZ_MUSIC_DISC = ITEMS.register("justifaiz_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.JUSTIFAIZ_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> KAMEN_RIDER_BLACK_MUSIC_DISC = ITEMS.register("kamen_rider_black_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.KAMEN_RIDER_BLACK_KEY).stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);
