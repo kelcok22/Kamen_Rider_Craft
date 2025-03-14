@@ -4705,7 +4705,7 @@
 
   "kamenridercraft:rex_vistamp.form": "Form: Rex Genome",
   "kamenridercraft:barid_rex_vistamp.form": "Form: Barid Rex Genome",
-  "kamenridercraft:vulcano_vistamp.form": "Form: Vulcano Rex Genome",
+  "kamenridercraft:volcano_vistamp.form": "Form: Volcano Rex Genome",
   "kamenridercraft:rolling_vistamp.form": "Form: Jack Revice",
   "kamenridercraft:thunder_gale_vistamp.form": "Form: Revice",
   "kamenridercraft:gold_spino_vistamp.form": "Form: Gold Spino Genome",
@@ -4781,6 +4781,7 @@
   "kamenridercraft:quetzalcoatlus_vistamp_vice.form": "Form: Quetzalcoatlus Genome",
 
   "kamenridercraft:bat_vistamp.form": "Form: Bat Genome",
+  "kamenridercraft:bat_vistamp_evil.form": "Form: Bat Genome",
   "kamenridercraft:mega_bat_vistamp.form": "Form: Marvelous",
   "kamenridercraft:spider_vistamp.form": "Form: Spider Genome",
   "kamenridercraft:giant_spider_vistamp.form": "Form: Imperial Demons",
@@ -4817,11 +4818,27 @@
   "kamenridercraft:king_crab_vistamp.form": "Form: King Crab Genome",
   "kamenridercraft:kurosai_vistamp.form": "Form: Kurosai Genome",
   "kamenridercraft:octopus_vistamp.form": "Form: Octopus Genome",
-  "kamenridercraft:oomukade_vistamp.form": "Form: Bat Genome",
+  "kamenridercraft:oomukade_vistamp.form": "Form: Oomukade Genome",
+  "kamenridercraft:hedgehog_vistamp.form": "Form: Hedgehog Genome",
+  "kamenridercraft:komodo_dragon_vistamp.form": "Form: Komodo Dragon Genomix",
+
+  "kamenridercraft:giffard_rex_vistamp_vice.form": "Form: Ultimate Revi",
+  "kamenridercraft:king_crab_vistamp_vice.form": "Form: King Crab Genome",
+  "kamenridercraft:kurosai_vistamp_vice.form": "Form: Kurosai Genome",
+  "kamenridercraft:octopus_vistamp_vice.form": "Form: Octopus Genome",
+  "kamenridercraft:oomukade_vistamp_vice.form": "Form: Oomukade Genome",
+  "kamenridercraft:hedgehog_vistamp_vice.form": "Form: Hedgehog Genome",
 
 "item.kamenridercraft.kirin_vistamp": "Kirin Vistamp",
 "item.kamenridercraft.niwatori_vistamp": "Niwatori Vistamp",
 "item.kamenridercraft.funkorogashi_vistamp": "Funkorogashi Vistamp",
+
+  "kamenridercraft:kirin_vistamp.form": "Form: Kirin Genome",
+  "kamenridercraft:niwatori_vistamp.form": "Form: Niwatori Genome",
+  "kamenridercraft:funkorogashi_vistamp.form": "Form: Funkorogashi Genome",
+  "kamenridercraft:kirin_vistamp_vice.form": "Form: Kirin Genome",
+  "kamenridercraft:niwatori_vistamp_vice.form": "Form: Niwatori Genome",
+  "kamenridercraft:funkorogashi_vistamp_vice.form": "Form: Funkorogashi Genome",
 
 "item.kamenridercraft.queen_bee_vistamp": "Queen Bee Vistamp",
 "item.kamenridercraft.buffalo_vistamp": "Buffalo Vistamp",
@@ -4834,6 +4851,19 @@
 "item.kamenridercraft.kraken_vistamp": "Kraken Vistamp",
 "item.kamenridercraft.planarian_vistamp": "Planarian Vistamp",
 "item.kamenridercraft.chameleon_vistamp": "Chameleon Vistamp",
+
+  "kamenridercraft:queen_bee_vistamp.form": "Form: Queen Bee Genome",
+  "kamenridercraft:buffalo_vistamp.form": "Form: Buffalo Genome",
+  "kamenridercraft:crocodile_vistamp.form": "Form: Crocodile Genomix",
+  "kamenridercraft:kuwagata_vistamp.form": "Form: Kuwagata Genome",
+  "kamenridercraft:kabuto_vistamp.form": "Form: Kabuto Genome",
+  "kamenridercraft:anomalocaris_vistamp.form": "Form: Anomalocaris Genomix",
+  "kamenridercraft:kraken_vistamp.form": "Form: Kraken Genome",
+  "kamenridercraft:planarian_vistamp.form": "Form: Planarian Genome",
+  "kamenridercraft:chameleon_vistamp.form": "Form: Chameleon Genome",
+
+  "kamenridercraft:cyclotron_drive_core.form": "Form: Base Form",
+  "kamenridercraft:cyclotron_drive_core_break.form": "Form: Break",
 
 "item.kamenridercraft.proto_queen_bee_vistamp": "Queen Bee Proto Vistamp",
 "item.kamenridercraft.cheetah_vistamp": "Cheetah Proto Vistamp",

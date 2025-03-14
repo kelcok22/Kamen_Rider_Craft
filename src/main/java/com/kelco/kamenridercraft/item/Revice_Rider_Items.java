@@ -774,11 +774,11 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_DEMONS_TROOPER_A = ITEMS.register("demons_driver_demons_trooper_a",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"demons_trooper_alpha",TROOPER_SPIDER_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_DEMONS_TROOPER_B = ITEMS.register("demons_driver_demons_trooper_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"demons_trooper_beta",TROOPER_KUWAGATA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VAIL_DRIVER = ITEMS.register("vail_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vail",KABUTO_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
@@ -790,11 +790,11 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> VAIL_BELT = ITEMS.register("vail_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"crimson_vail",CRIMSON_VAIL_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VADE_BELT = ITEMS.register("vade_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_vade",BLOOD_VADE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> WEEK_ENDRIVER = ITEMS.register("week_endriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aguilera",QUEEN_BEE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
@@ -806,15 +806,15 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER = ITEMS.register("chimera_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chimera",TWIN_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER_DAIMON = ITEMS.register("chimera_driver_daimon",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"daimon",TRI_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> JUUGA_DRIVER = ITEMS.register("juuga_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"juuga",JUUGA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CYCLOTRON_DRIVER = ITEMS.register("cyclotron_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"century",CYCLOTRON_DRIVER_CORE ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
@@ -822,15 +822,15 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> REVICE_DRIVER_LIVE = ITEMS.register("revice_driver_live",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"live_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_EVIL = ITEMS.register("revice_driver_evil",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"evil_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_ORTECA = ITEMS.register("demons_driver_orteca",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"orteca",KRAKEN_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> VISTAMP_HOLDER = ITEMS.register("vistamp_holder",
