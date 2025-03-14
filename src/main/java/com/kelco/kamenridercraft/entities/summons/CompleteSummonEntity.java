@@ -47,7 +47,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
 	public CompleteSummonEntity(EntityType<? extends CompleteSummonEntity> type, Level level) {
 		super(type, level);
 		NAME="rider_summon";
-        this.addRequiredForm((RiderFormChangeItem)Decade_Rider_Items.K_TOUCH.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem)Decade_Rider_Items.K_TOUCH_21.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
