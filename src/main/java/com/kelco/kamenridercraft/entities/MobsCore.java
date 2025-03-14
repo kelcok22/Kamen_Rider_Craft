@@ -1062,6 +1062,12 @@ public class MobsCore {
 
           public static final DeferredItem<DeferredSpawnEggItem> RIDER_SUMMON_SPAWN_EGG = ITEMS.register("rider_summon_spawn_egg",
                   () -> new DeferredSpawnEggItem(RIDER_SUMMON, 0xEC008C, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<CompleteSummonEntity>> COMPLETE_SUMMON = MOBLIST.register("complete_summon",
+                  () -> EntityType.Builder.of(CompleteSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":complete_summon"));
+
+          public static final DeferredItem<DeferredSpawnEggItem> COMPLETE_SUMMON_SPAWN_EGG = ITEMS.register("complete_summon_spawn_egg",
+                  () -> new DeferredSpawnEggItem(RIDER_SUMMON, 0xEC008C, 0x222222, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
                   () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));

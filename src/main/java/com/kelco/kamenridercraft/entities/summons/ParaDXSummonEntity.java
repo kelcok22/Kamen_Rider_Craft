@@ -6,12 +6,7 @@ import com.kelco.kamenridercraft.entities.footSoldiers.RideplayerEntity;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-import com.kelco.kamenridercraft.item.ex_aid.GamerDriverItem;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.damagesource.DamageSource;
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -24,7 +19,6 @@ import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -32,7 +26,6 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
-import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.horse.AbstractHorse;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Enemy;
@@ -41,7 +34,6 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 
 public class ParaDXSummonEntity extends BaseSummonEntity {
 
@@ -54,6 +46,9 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()));
 		RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);
 		RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Modded_item_core.BLANK_FORM.get(), 2);
+		this.addRequiredForm((RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem)Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -105,8 +100,8 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 						RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);
 						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get()));
 					}
-				} else this.setHealth(0);
-			} else this.setHealth(0);
+				}
+			}
 		}
 	}
 
@@ -116,22 +111,6 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 		super.setTame(p_30443_, p_30444_);
 		this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20.0D);
 		this.setHealth(20.0F);
-	}
-
-	protected SoundEvent getAmbientSound() {
-		return SoundEvents.VILLAGER_AMBIENT;
-	}
-
-	protected void playStepSound(BlockPos p_30415_, BlockState p_30416_) {
-
-	}
-
-	protected SoundEvent getHurtSound(DamageSource p_30424_) {
-		return SoundEvents.VILLAGER_HURT;
-	}
-
-	protected SoundEvent getDeathSound() {
-		return SoundEvents.VILLAGER_HURT;
 	}
 
 	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
@@ -152,13 +131,5 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 		} else {
 			return false;
 		}
-	}
-
-	public boolean isBaby() {
-		return false;
-	}
-
-	public boolean canMate(Animal p_30392_) {
-		return false;
 	}
 }

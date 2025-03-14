@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:zero_one/riders/zero_two)Kamen Rider Zero-Two$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
