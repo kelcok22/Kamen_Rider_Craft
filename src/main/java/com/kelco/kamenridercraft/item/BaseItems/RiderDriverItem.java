@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
@@ -104,9 +105,11 @@ public class RiderDriverItem extends RiderArmorItem {
         player.setInvisible(false);
         Level level = player.level();
         if(!level.isClientSide()) {
+            //ParticleTypes.GUST
             ((ServerLevel) level).sendParticles(ParticleTypes.GUST,
                     player.getX() , player.getY() + 1.0,
                     player.getZ(), 1, 0, 0, 0, 1);
+
 
         }
        tag.putBoolean("Update_form", false);
