@@ -29,19 +29,28 @@ public class DriveDriverItem extends RiderDriverItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Item belt= stack.getItem();
+		if (belt!=Drive_Rider_Items.BANNO_DRIVER_BRONZE_DRIVE.get()&
+				belt!=Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()&
+				belt!=Drive_Rider_Items.METRO_PD_DRIVER_HONOH.get()&
+				belt!=Drive_Rider_Items.BRAIN_DRIVER.get()) {
 
-		this.Has_basic_belt_info=false;
-		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+			this.Has_basic_belt_info = false;
+			Item formItem = this.get_Form_Item(stack, 1);
+			Item formItem2 = this.get_Form_Item(stack, 2);
 
+			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Rider == "drive")
+				tooltipComponents.add(Component.translatable("kamenridercraft.name.zero_drive"));
+			else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
-		Item formItem = this.get_Form_Item(stack, 1);
-		Item formItem2 = this.get_Form_Item(stack, 2);
+			if (formItem == Drive_Rider_Items.SHIFT_PROTO_SPEED.get() & Rider == "drive")
+				tooltipComponents.add(Component.translatable(formItem.toString() + ".zero_drive.form"));
+			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 
-			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-
-			if (formItem2 == Drive_Rider_Items.BASIC_TIRE.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".tire.form"));
+			if (formItem2 == Drive_Rider_Items.BASIC_TIRE.get())
+				tooltipComponents.add(Component.translatable(formItem.toString() + ".tire.form"));
 			else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
-
+		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 	@Override
