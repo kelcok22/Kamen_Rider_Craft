@@ -19,7 +19,6 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
-
 import java.util.HashSet;
 import java.util.function.Consumer;
 
@@ -42,13 +41,13 @@ public class BookGateItem extends BaseItem {
 	 if (dim==1) {
 
 		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 BlockPos blockpos= new BlockPos(40, 60, 40);
+		 BlockPos blockpos= new BlockPos(40, 64, 40);
 
 		 if (get_has_base(itemstack)){
 			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
 			 double Y = get_XYZ(itemstack, "y1", respawn.pos().y());
 			 int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
-			 blockpos= new BlockPos( X, 60, Z);
+			 blockpos= new BlockPos( X, 64, Z);
 		 }
 		 else{
 			 TagKey<Structure>tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","northern_base"));
@@ -61,7 +60,7 @@ public class BookGateItem extends BaseItem {
 			 }
 
 
-		 entity.teleportTo(otherDim, blockpos.getX(),60, blockpos.getZ(), new HashSet<>(), 0, 0);
+		 entity.teleportTo(otherDim, blockpos.getX(),64, blockpos.getZ(), new HashSet<>(), 0, 0);
 
 
 		 }else {
@@ -79,17 +78,17 @@ public class BookGateItem extends BaseItem {
 	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 
-		ResourceKey<Level> NORTHERN_BASE = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:northern_base"));
+		ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:northern_base"));
 		if (p_41129_ instanceof ServerPlayer player && !p_41128_.isClientSide()) {
 			MinecraftServer Server = player.getServer();
-			if (p_41128_.dimension() == NORTHERN_BASE) {
+			if (p_41128_.dimension() == MOON) {
 				teleportToDimension(itemstack,Server.overworld(), player,0);
 			} else {
 				double X=player.position().x;
 				double Y=player.position().y;
 				double Z=player.position().z;
 				Save_XYZ(itemstack,X,Y,Z,0);
-				teleportToDimension(itemstack,Server.getLevel(NORTHERN_BASE), player,1);
+				teleportToDimension(itemstack,Server.getLevel(MOON), player,1);
 			}
 			p_41129_.getCooldowns().addCooldown(this, TIME);
 		}

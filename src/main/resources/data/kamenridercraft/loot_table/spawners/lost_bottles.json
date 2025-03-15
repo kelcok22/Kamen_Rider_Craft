@@ -4,11 +4,7 @@
     {
       "bonus_rolls": 0.0,
       "entries": [
-        {
-        		  "type": "minecraft:item",
-        		  "weight": 1,
-        		  "name": "kamenridercraft:black_lost_bat_full_bottle"
-        		},
+
         		{
         		  "type": "minecraft:item",
         		  "weight": 1,
@@ -17,32 +13,7 @@
         		  {
         			  "type": "minecraft:item",
         			  "weight": 1,
-        			  "name": "kamenridercraft:black_lost_castle_full_bottle"
-        		  },
-        		  {
-        			  "type": "minecraft:item",
-        			  "weight": 1,
-        			  "name": "kamenridercraft:black_lost_fukurou_full_bottle"
-        		  },
-        		  {
-        			  "type": "minecraft:item",
-        			  "weight": 1,
-        			  "name": "kamenridercraft:black_lost_kuwagata_full_bottle"
-        		  },
-        		  {
-        			  "type": "minecraft:item",
-        			  "weight": 1,
         			  "name": "kamenridercraft:black_lost_shimauma_full_bottle"
-        		  },
-        		  {
-        			  "type": "minecraft:item",
-        			  "weight": 1,
-        			  "name": "kamenridercraft:black_lost_hammer_full_bottle"
-        		  },
-        		  {
-        			  "type": "minecraft:item",
-        			  "weight": 1,
-        			  "name": "kamenridercraft:black_lost_spanner_full_bottle"
         		  },
         		  {
         			  "type": "minecraft:item",
