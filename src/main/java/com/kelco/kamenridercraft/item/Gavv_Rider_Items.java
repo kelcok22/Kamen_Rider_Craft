@@ -268,8 +268,32 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_strawberryjellytirol","do_not_work","valenbuckle_belt")
 					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> NOUGATTIROL_GOCHIZO = ITEMS.register("nougattirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_nougattirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> MILKTIROL_GOCHIZO = ITEMS.register("milktirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_milktirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> BISPINKTIROL_GOCHIZO = ITEMS.register("bispinktirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bispinktirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 	public static final DeferredItem<Item> WHITEANDCOOKIESTIROL_GOCHIZO = ITEMS.register("whiteandcookiestirol_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_whiteandcookiestirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> CRUNCHTIROL_GOCHIZO = ITEMS.register("crunchtirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_crunchtirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> ALMONDTIROL_GOCHIZO = ITEMS.register("almondtirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_almondtirol","do_not_work","valenbuckle_belt")
+					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> BISBLUETIROL_GOCHIZO = ITEMS.register("bisbluetirol_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bisbluetirol","do_not_work","valenbuckle_belt")
 					.AddToList(CHOCO,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> CHARAPAKI_GOCHIZO = ITEMS.register("charapaki_gochizo",
