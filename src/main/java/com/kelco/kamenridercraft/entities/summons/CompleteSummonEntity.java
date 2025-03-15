@@ -115,7 +115,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
             if (this.tamable.getOwner() instanceof Player player) {
                 if (player.swinging) {
                     this.tamable.swing(player.getUsedItemHand());
-                    if (player.getLastHurtMob()!=null && this.tamable.isWithinMeleeAttackRange(player.getLastHurtMob())) this.tamable.doHurtTarget(player.getLastHurtMob());
+                    if (player.getLastHurtMob()!=null && player.getLastHurtMob()!=this.tamable && this.tamable.isWithinMeleeAttackRange(player.getLastHurtMob())) this.tamable.doHurtTarget(player.getLastHurtMob());
                     else if (player.getLastHurtByMob()!=null && this.tamable.isWithinMeleeAttackRange(player.getLastHurtByMob())) this.tamable.doHurtTarget(player.getLastHurtByMob());
                 }
 
