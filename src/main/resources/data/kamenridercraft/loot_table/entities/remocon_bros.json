@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:gear_remocon"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:gear_remocon_blue"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:full_bottle",
+				  "weight": 3
+			  }
+		  ]
+	  },
+
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 3
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

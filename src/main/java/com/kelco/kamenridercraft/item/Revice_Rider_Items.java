@@ -796,6 +796,7 @@ public class Revice_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_vade",BLOOD_VADE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
+	
 	public static final DeferredItem<Item> WEEK_ENDRIVER = ITEMS.register("week_endriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aguilera",QUEEN_BEE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
