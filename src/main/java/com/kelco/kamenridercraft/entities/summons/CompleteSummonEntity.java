@@ -9,6 +9,8 @@ import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
+import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
@@ -124,6 +126,12 @@ public class CompleteSummonEntity extends BaseSummonEntity {
                 }
             }
         }
+    }
+
+    @Override
+    public void bindToPlayer(Player player) {
+      if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
+      super.bindToPlayer(player);
     }
 
     public void performRangedAttack(float distanceFactor) {
