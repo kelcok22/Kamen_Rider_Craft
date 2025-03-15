@@ -4,11 +4,13 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.Ghost_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -17,9 +19,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class GhostDriverItem extends RiderDriverItem {
 
@@ -36,6 +41,25 @@ public class GhostDriverItem extends RiderDriverItem {
 		Wisp_Horn=wisp_horn;
 	}
 
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Item belt= stack.getItem();
+
+
+			this.Has_basic_belt_info = false;
+			Item formItem = this.get_Form_Item(stack, 1);
+			Item formItem2 = this.get_Form_Item(stack, 2);
+			String rider=Rider;
+if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
+		tooltipComponents.add(Component.translatable("kamenridercraft.name." + rider));
+		if (Rider=="ghost"||Rider=="specter"||Rider=="necrom") {
+			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+		}
+
+		 tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 		super.inventoryTick(stack,level,entity,slotId,isSelected);
