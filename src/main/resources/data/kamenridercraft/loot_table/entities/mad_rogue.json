@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:bat_full_bottle"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:engine_full_bottle"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:black_lost_bat_full_bottle"
+			  }
+		  ]
+	  },
+
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 5
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:engine_gear"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:black_lost_spanner_full_bottle"
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:remocon_gear"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:black_lost_hammer_full_bottle",
+				  "weight": 3
+			  }
+		  ]
+	  },
+
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:full_bottle",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 3
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
