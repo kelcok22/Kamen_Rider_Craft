@@ -605,7 +605,7 @@ public class Ghost_Rider_Items {
 
 	public static final DeferredItem<Item> EXTREMER_DRIVER = ITEMS.register("extremer_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"extremer",UNFINISHED_EXTREMER_DRIVER , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GHOST_TAB_ITEM).ChangeRepairItem(BLANK_GHOST_EYECON.get()));
 
 
 	public static final DeferredItem<Item> ZERO_SPECTER_DRIVER = ITEMS.register("zero_specter_driver",
