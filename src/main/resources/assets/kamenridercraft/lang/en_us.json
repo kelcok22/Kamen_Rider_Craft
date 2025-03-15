@@ -103,7 +103,13 @@
   "item.kamenridercraft.lets_go_rider_kick_music_disc": "Let's Go!! Rider Kick Music Disc",
   "item.kamenridercraft.lets_go_rider_kick.desc": "HosephHoestar - Let's Go!! Rider Kick",
 
-"effect.kamenridercraft.boost":"Boost",
+  "item.kamenridercraft.justifaiz_music_disc": "Justiφ's Music Disc",
+  "item.kamenridercraft.justifaiz.desc": "HosephHoestar - Justiφ's",
+
+  "item.kamenridercraft.kamen_rider_black_music_disc": "Kamen Rider Black Music Disc",
+  "item.kamenridercraft.kamen_rider_black.desc": "HosephHoestar - Kamen Rider Black",
+
+  "effect.kamenridercraft.boost":"Boost",
 "effect.kamenridercraft.anti_poison":"Anti Poison",
 "effect.kamenridercraft.slash":"Slash",
 "effect.kamenridercraft.shot_boost":"Shot Boost",

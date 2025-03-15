@@ -20,6 +20,12 @@ public class ModSounds {
     public static final Supplier<SoundEvent> LETS_GO_RIDER_KICK = registerSoundEvent("lets_go_rider_kick");
     public static final ResourceKey<JukeboxSong> LETS_GO_RIDER_KICK_KEY = createSong("lets_go_rider_kick");
 
+    public static final Supplier<SoundEvent> JUSTIFAIZ= registerSoundEvent("justifaiz");
+    public static final ResourceKey<JukeboxSong> JUSTIFAIZ_KEY = createSong("justifaiz");
+
+    public static final Supplier<SoundEvent> KAMEN_RIDER_BLACK= registerSoundEvent("kamen_rider_black");
+    public static final ResourceKey<JukeboxSong> KAMEN_RIDER_BLACK_KEY = createSong("kamen_rider_black");
+
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }
