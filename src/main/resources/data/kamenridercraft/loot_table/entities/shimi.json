@@ -23,6 +23,11 @@
 		  "type": "minecraft:item",
 		  "weight": 1,
 		  "name": "kamenridercraft:jackun_to_domamenoki_wonder_ride_book"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 1,
+		  "name": "kamenridercraft:book_gate_wonder_ride_book"
 		}
 	  ],
 	  "conditions": [
