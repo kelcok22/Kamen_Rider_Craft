@@ -4,9 +4,12 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Build_Rider_Items;
+import com.kelco.kamenridercraft.item.Drive_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
@@ -16,8 +19,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class BuildDriverItem extends RiderDriverItem {
 
@@ -27,6 +33,35 @@ public class BuildDriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 	}
 
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Item belt= stack.getItem();
+		if (belt!= Drive_Rider_Items.BANNO_DRIVER_BRONZE_DRIVE.get()&
+				belt!=Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()&
+				belt!=Drive_Rider_Items.METRO_PD_DRIVER_HONOH.get()&
+				belt!=Drive_Rider_Items.BRAIN_DRIVER.get()) {
+
+			this.Has_basic_belt_info = false;
+			Item formItem = this.get_Form_Item(stack, 1);
+			Item formItem2 = this.get_Form_Item(stack, 2);
+			Item formItem3 = this.get_Form_Item(stack, 3);
+
+			tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
+
+			if (isBestMatch(stack)&formItem3== Build_Rider_Items.HAZARD_TRIGGER.get())tooltipComponents.add(Component.translatable("kamenridercraft.name.best_match_hazard"));
+			else if (isBestMatch(stack))tooltipComponents.add(Component.translatable("kamenridercraft.name.best_match"));
+
+			if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
+				tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+			}else {
+				tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+				tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+				if (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get())
+					tooltipComponents.add(Component.translatable("kamenridercraft.name.hazard"));
+			}
+			}
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 	
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
