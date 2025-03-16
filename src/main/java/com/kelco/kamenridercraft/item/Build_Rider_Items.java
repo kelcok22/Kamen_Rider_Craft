@@ -49,6 +49,12 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> GOLDEN_BANGLE= ITEMS.register("golden_bangle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
+	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_HOKUTO = ITEMS.register("pandora_panel_hokuto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> RABBIT_FULL_BOTTLE = ITEMS.register("rabbit_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",
@@ -699,7 +705,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.model_has_different_name("evol_trigger").has_basic_model());
+					.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).model_has_different_name("evol_trigger").has_basic_model());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_black_hole","evol","evol_driver_belt_b",
@@ -1035,11 +1041,6 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> NANBA_WALKING_STICK = ITEMS.register("nanba_walking_stick",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
-	public static final DeferredItem<Item> PANDORA_PANEL_TOUTO = ITEMS.register("pandora_panel_touto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> PANDORA_PANEL_HOKUTO = ITEMS.register("pandora_panel_hokuto", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> PANDORA_PANEL_SEITO = ITEMS.register("pandora_panel_seito", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> LAST_PANDORA_PANEL_BLACK = ITEMS.register("last_pandora_panel_black", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
-	public static final DeferredItem<Item> LAST_PANDORA_PANEL_WHITE = ITEMS.register("last_pandora_panel_white", () -> new PandoraPanelItem(Rider_Blocks.PANDORA_PANEL_BLOCK.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULLBOTTLE_HOLDER = ITEMS.register("fullbottle_holder",
 			() -> new FullBottleHolderItem());

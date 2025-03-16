@@ -6,7 +6,36 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
-				  "name": "kamenridercraft:cobra_evol_bottle"
+				  "name": "kamenridercraft:cobra_evol_bottle",
+				  "weight": 3
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:rider_system_evol_bottle",
+				  "weight": 1
+			  }
+		  ]
+	  },
+
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:evol_trigger"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "attacking_player",
+				  "predicate": {
+					  "slots": {
+						  "container.*": {
+							  "items": "kamenridercraft:pandora_box"
+						  }
+					  }
+				  }
 			  }
 		  ]
 	  },
@@ -15,23 +44,26 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
-				  "weight": 1,
-				  "name": "kamenridercraft:evol_trigger"
+				  "name": "kamenridercraft:silver_dragon_full_bottle",
+				  "weight": 1
 			  },
 			  {
 				  "type": "minecraft:item",
-				  "weight": 4,
-				  "name": "kamenridercraft:rabbit_evol_bottle"
-			  },
+				  "name": "kamenridercraft:gold_rabbit_full_bottle",
+				  "weight": 1
+			  }
+		  ],
+		  "conditions": [
 			  {
-				  "type": "minecraft:item",
-				  "weight": 4,
-				  "name": "kamenridercraft:dragon_evol_bottle"
-			  },
-			  {
-				  "type": "minecraft:item",
-				  "weight": 8,
-				  "name": "kamenridercraft:rider_system_evol_bottle"
+				  "condition": "minecraft:entity_properties",
+				  "entity": "attacking_player",
+				  "predicate": {
+					  "slots": {
+						  "container.*": {
+							  "items": "kamenridercraft:last_pandora_panel_black"
+						  }
+					  }
+				  }
 			  }
 		  ]
 	  },
