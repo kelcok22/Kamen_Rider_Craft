@@ -2,17 +2,15 @@ package com.kelco.kamenridercraft.entities.footSoldiers;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
-import java.util.Iterator;
-
 import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.ServerConfig;
+import com.kelco.kamenridercraft.entities.ai.RangedSwordgunAttackGoal;
+import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.ListTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -30,7 +28,6 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
-import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -45,8 +42,8 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
-    private boolean swordgunMelee;
     private boolean swordgunMeleeOnly = false;
+    private final RangedSwordgunAttackGoal<BaseHenchmenEntity> swordgunGoal = new RangedSwordgunAttackGoal<>(this, 1.0D, 20, 15.0F, 40);
     private final RangedBowAttackGoal<BaseHenchmenEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
     private final MeleeAttackGoal meleeGoal = new  MeleeAttackGoal(this, 1.0D, false) {
         public void stop() {
@@ -66,11 +63,12 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
 	
     public BaseHenchmenEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
+        this.goalSelector.addGoal(2, this.swordgunGoal);
         this.reassessWeaponGoal();
     }
 
     public void setMeleeOnSpawn(double chance) {
-        if (this.random.nextDouble() * 100.0 < chance) this.setMeleeOnly(true);
+        if (this.random.nextDouble() * 100.0 <= chance) this.swordgunMeleeOnly = true;
     }
     
     @Override
@@ -91,21 +89,8 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
-        //this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, BaseSummonEntity.class, true));
      }
-
-
-    public void aiStep() {
-        ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-        if (this.getTarget() != null && itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) {
-            boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
-                    || (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
-                    || this.getTarget().distanceToSqr(this) < BOW_DISTANCE));
-        	if (swordgunMeleeOnly) this.setSwordgunMelee(true);
-            else if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
-        }
-        super.aiStep();
-    }
 
     public boolean canBreakDoors() {
         return true;
@@ -181,35 +166,17 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
 
     public void reassessWeaponGoal() {
         if (this.level() != null && !this.level().isClientSide) {
+            this.swordgunGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
+            this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
+            this.goalSelector.removeGoal(this.meleeGoal);
+            this.goalSelector.removeGoal(this.bowGoal);
             ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-            if (itemstack.getItem() instanceof BowItem && !this.swordgunMeleeOnly) {
-                this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
-                this.goalSelector.removeGoal(this.meleeGoal);
-                this.goalSelector.addGoal(2, this.bowGoal);
+            if (itemstack.getItem() instanceof BowItem && !itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) {
+                this.goalSelector.addGoal(3, this.bowGoal);
             } else {
-                this.goalSelector.removeGoal(this.bowGoal);
-                this.goalSelector.addGoal(2, this.meleeGoal);
+                this.goalSelector.addGoal(3, this.meleeGoal);
             }
-
         }
-    }
-
-    public void setSwordgunMelee(boolean melee) {
-        if (this.level() != null && !this.level().isClientSide) {
-            if (melee) {
-                this.goalSelector.removeGoal(this.bowGoal);
-                this.goalSelector.addGoal(2, this.meleeGoal);
-            } else {
-                this.bowGoal.setMinAttackInterval(this.level().getDifficulty() == Difficulty.HARD ? HARD_BOW_COOLDOWN : BOW_COOLDOWN);
-                this.goalSelector.removeGoal(this.meleeGoal);
-                this.goalSelector.addGoal(2, this.bowGoal);
-            }
-            swordgunMelee = melee;
-        }
-    }
-
-    public void setMeleeOnly(boolean p_21840_) {
-       this.swordgunMeleeOnly = p_21840_;
     }
 
     public boolean getMeleeOnly() {

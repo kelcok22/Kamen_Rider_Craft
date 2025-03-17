@@ -2,7 +2,7 @@
 	"name": "Solomon Boss Block",
 	"icon": "kamenridercraft:solomon_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 21,
+	"sortnum": 24,
 	"pages": [
 		{
 			"type": "patchouli:text",

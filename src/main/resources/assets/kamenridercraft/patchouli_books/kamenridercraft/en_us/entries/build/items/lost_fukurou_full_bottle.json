@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lost_fukurou_full_bottle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/owl_lost_smash)Fukuro Lost Smash$(/l)"
 		}
 	]
 }

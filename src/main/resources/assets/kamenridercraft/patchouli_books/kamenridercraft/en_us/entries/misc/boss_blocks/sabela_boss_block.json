@@ -2,7 +2,7 @@
 	"name": "Sabela Boss Block",
 	"icon": "kamenridercraft:sabela_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 19,
+	"sortnum": 22,
 	"pages": [
 		{
 			"type": "patchouli:text",

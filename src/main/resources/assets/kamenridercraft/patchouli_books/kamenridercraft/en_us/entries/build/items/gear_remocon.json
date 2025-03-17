@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gear_remocon",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
 		}
 	]
 }

@@ -6,7 +6,7 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
-				  "name": "kamenridercraft:engine_gear"
+				  "name": "kamenridercraft:gear_engine"
 			  }
 		  ]
 	  },
@@ -15,7 +15,7 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
-				  "name": "kamenridercraft:engine_gear_red"
+				  "name": "kamenridercraft:gear_engine_red"
 			  },
 			  {
 				  "type": "minecraft:item",

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rabbit_evol_bottle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

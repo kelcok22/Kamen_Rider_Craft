@@ -2,7 +2,7 @@
 	"name": "Ikazuchi Boss Block",
 	"icon": "kamenridercraft:ikazuchi_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 17,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,19 @@
+{
+	"name": "Hell Bros. Boss Block",
+	"icon": "kamenridercraft:hell_bros_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:build/mobs/engine_bros)Engine Bros$(/l) and $(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hell_bros_boss_block",
+			"title": " ",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		}
+	]
+}

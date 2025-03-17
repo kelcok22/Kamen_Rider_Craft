@@ -2,7 +2,7 @@
 	"name": "White Woz Boss Block",
 	"icon": "kamenridercraft:woz_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 15,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

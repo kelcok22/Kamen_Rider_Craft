@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blank_wonder_world_story_wonder_ride_book",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l)$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)$(li)$(l:saber/mobs/zooous)Zooous$(/l)$(li)$(l:saber/mobs/zooous_predator)Zooous Predator$(/l)$(li)$(l:saber/mobs/storious)Storious$(/l)$(li)$(l:saber/mobs/desast)Desast$(/l)$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l)"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l)$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)$(li)$(l:saber/mobs/zooous)Zooous$(/l)$(li)$(l:saber/mobs/zooous_predator)Zooous Predator$(/l)$(li)$(l:saber/mobs/storious)Storious$(/l)$(li)$(l:saber/mobs/desast)Desast$(/l)$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l)"
 		}
 	]
 }

@@ -10,6 +10,12 @@
     "kamenridercraft:orange_full_bottle",
     "kamenridercraft:parka_full_bottle",
     "kamenridercraft:doctor_full_bottle",
-    "kamenridercraft:game_full_bottle"
+    "kamenridercraft:game_full_bottle",
+		"kamenridercraft:ex_aid_full_bottle",
+		"kamenridercraft:ghost_full_bottle",
+		"kamenridercraft:drive_full_bottle",
+		"kamenridercraft:gaim_full_bottle",
+		"kamenridercraft:wizard_full_bottle",
+		"kamenridercraft:fourze_full_bottle"
   ]
 }

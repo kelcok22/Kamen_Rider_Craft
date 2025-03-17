@@ -7,6 +7,7 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entities.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -30,7 +31,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.FlyingMob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
@@ -60,13 +60,12 @@ import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileWeaponItem;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 
 public class BaseSummonEntity extends TamableAnimal implements NeutralMob, RangedAttackMob {
-	private boolean swordgunMelee = false;
+    private final RangedSwordgunAttackGoal<BaseSummonEntity> swordgunGoal = new RangedSwordgunAttackGoal<>(this, 1.0D, 20, 15.0F, 40);
 	private final RangedBowAttackGoal<BaseSummonEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 	private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.2D, false) {
 	   public void stop() {
@@ -82,6 +81,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	   }
 	};
 	private boolean swordgunMeleeOnly;
+    public int BOW_COOLDOWN = 40;
 
    private static final EntityDataAccessor<Integer> DATA_REMAINING_ANGER_TIME = SynchedEntityData.defineId(BaseSummonEntity.class, EntityDataSerializers.INT);
    private static final UniformInt PERSISTENT_ANGER_TIME = TimeUtil.rangeOfSeconds(20, 39);
@@ -106,6 +106,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		this.setDropChance(EquipmentSlot.FEET, 0.0f);
 		this.setDropChance(EquipmentSlot.MAINHAND, 0.0f);
 		this.setDropChance(EquipmentSlot.OFFHAND, 0.0f);
+        this.goalSelector.addGoal(2, this.swordgunGoal);
 	}
    
 	public static AttributeSupplier.Builder setAttributes() {
@@ -122,10 +123,10 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
 		this.goalSelector.addGoal(1, new PanicGoal(this, 1.4D));
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F));
-		this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F));
+		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+		this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, BaseAllyEntity.class, BaseSummonEntity.class)).setAlertOthers());
 		this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
@@ -140,17 +141,6 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
    
 	public void aiStep() {
 		Level level = this.level();
-		ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
-		if (this.getTarget() != null && (itemstack.getItem() instanceof BowItem && itemstack.getItem() instanceof SwordItem
-		|| itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns"))))) {
-			boolean swordgunMeleeCheck = (((this.getTarget() instanceof Player player && player.getAbilities().flying && player.distanceToSqr(this) < 10.0D)
-			|| (this.getTarget() instanceof FlyingMob fly && fly.distanceToSqr(this) < 20.0D)
-			|| this.getTarget().distanceToSqr(this) < BOW_DISTANCE));
-   
-			if (swordgunMeleeOnly) this.setSwordgunMelee(true);
-			else if (swordgunMelee != swordgunMeleeCheck) this.setSwordgunMelee(swordgunMeleeCheck);
-			}
-		
 		if (!level.isClientSide) {
 		   this.updatePersistentAnger((ServerLevel)this.level(), true);
 			if ( this.getOwner() instanceof Player owner && this.isAlive()) {
@@ -191,44 +181,28 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	
 	}
    
-	   public void setMeleeOnly(boolean p_21840_) {
-		  this.swordgunMeleeOnly = p_21840_;
-	   }
-   
 	   public boolean getMeleeOnly() {
 		  return this.swordgunMeleeOnly;
 	   }
-   
-	   public void reassessWeaponGoal() {
-		  if (this.level() != null && !this.level().isClientSide) {
-			 this.goalSelector.removeGoal(this.meleeGoal);
-			 this.goalSelector.removeGoal(this.bowGoal);
-			 ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
-			 if (itemstack.getItem() instanceof BowItem) {
-				this.bowGoal.setMinAttackInterval(30);
-				this.goalSelector.addGoal(2, this.bowGoal);
-			 } else {
-				this.goalSelector.addGoal(2, this.meleeGoal);
-			 }
-   
-		  }
-	   }
-   
-	   public void setSwordgunMelee(boolean melee) {
-		  if (this.level() != null && !this.level().isClientSide) {
-			if (melee) {
-			  this.goalSelector.removeGoal(this.bowGoal);
-			  this.goalSelector.addGoal(2, this.meleeGoal);
-			} else {
-			  int i = 30;
-   
-			  this.bowGoal.setMinAttackInterval(i);
-			  this.goalSelector.removeGoal(this.meleeGoal);
-			  this.goalSelector.addGoal(2, this.bowGoal);
-			}
-			swordgunMelee = melee;
-		}
-	   }
+
+    public void reassessWeaponGoal() {
+        if (this.level() != null && !this.level().isClientSide) {
+            this.swordgunGoal.setMinAttackInterval(this.BOW_COOLDOWN);
+            this.bowGoal.setMinAttackInterval(this.BOW_COOLDOWN);
+            this.goalSelector.removeGoal(this.meleeGoal);
+            this.goalSelector.removeGoal(this.bowGoal);
+            ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof BowItem));
+            if (itemstack.getItem() instanceof BowItem && !itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) {
+                this.goalSelector.addGoal(3, this.bowGoal);
+            } else {
+                this.goalSelector.addGoal(3, this.meleeGoal);
+            }
+        }
+    }
+
+    public void setMeleeOnSpawn(double chance) {
+        if (this.random.nextDouble() * 100.0 <= chance) this.swordgunMeleeOnly = true;
+    }
    
 	  public void addAdditionalSaveData(CompoundTag p_30418_) {
 		super.addAdditionalSaveData(p_30418_);

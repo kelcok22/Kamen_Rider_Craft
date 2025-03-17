@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lost_castle_full_bottle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/castle_lost_smash)Castle Lost Smash$(/l)"
 		}
 	]
 }

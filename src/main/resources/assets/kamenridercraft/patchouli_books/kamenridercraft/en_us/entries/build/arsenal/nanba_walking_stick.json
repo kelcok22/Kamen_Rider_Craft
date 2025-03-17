@@ -13,8 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nanba_walking_stick",
 			"title": " ",
-			"text": "Item is currently unobtainable",
-			"future_text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
 		}
 	]
 }

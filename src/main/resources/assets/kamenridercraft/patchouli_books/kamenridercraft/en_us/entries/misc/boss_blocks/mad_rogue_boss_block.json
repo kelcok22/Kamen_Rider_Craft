@@ -1,0 +1,19 @@
+{
+	"name": "Mad Rogue Boss Block",
+	"icon": "kamenridercraft:mad_rogue_boss_block",
+	"category": "kamenridercraft:misc/boss_blocks",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine this block to summon $(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mad_rogue_boss_block",
+			"title": " ",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		}
+	]
+}

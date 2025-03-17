@@ -12,8 +12,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:lets_go_rider_kick_music_disc",
-			"title": " ",
-			"text": "Song:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)Type:$(li)Opening theme (OP)$(br2)Appears in:$(li)Kamen Rider (1971, TV show)"
+			"text": "Song:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)Based on:$(li)Hiroshi Fujioka/Koichi Fuji - Let's Go!! Rider Kick$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider (1971, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_black_music_disc",
+			"text": "Song:$(li)HosephHoestar - Kamen Rider Black$(br2)Based on:$(li)Tetsuo Kurata - Kamen Rider Black$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Black (1987, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:justifaiz_music_disc",
+			"text": "Song:$(li)HosephHoestar - Justiφ's$(br2)Based on:$(li)ISSA - Justiφ's$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider 555 (2003, TV show)"
 		}
 	]
 }

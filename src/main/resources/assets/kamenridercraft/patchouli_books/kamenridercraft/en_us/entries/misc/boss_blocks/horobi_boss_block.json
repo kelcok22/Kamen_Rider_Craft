@@ -2,7 +2,7 @@
 	"name": "Horobi Boss Block",
 	"icon": "kamenridercraft:horobi_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 16,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:text",

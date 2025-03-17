@@ -1,0 +1,17 @@
+{
+	"name": "Remocon Bros",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:remocon_bros",
+			"text": "Summoned from a $(l:misc/boss_blocks/hell_bros_boss_block)Hell Bros. Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 60$(br2)Drops$(li)2-3 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/gear_remocon)Gear Remocon$(/l)$(li)1 $(l:build/items/full_bottle)Empty Bottle$(/l) (75%)$(li)1 $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l) (25%)"
+		}
+	]
+}
