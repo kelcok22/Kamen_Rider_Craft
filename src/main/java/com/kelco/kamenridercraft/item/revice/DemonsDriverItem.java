@@ -6,10 +6,12 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,8 +19,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class DemonsDriverItem extends RiderDriverItem {
 
@@ -30,7 +35,43 @@ public class DemonsDriverItem extends RiderDriverItem {
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
 		Num_Base_Form_Item=5;
 	}
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Has_basic_belt_info=false;
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
 
+		if (get_Form_Item(stack, 2)== Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get()&get_Form_Item(stack, 5)
+				==Revice_Rider_Items.BATTA_VISTAMP.get()&get_Form_Item(stack, 4)
+				==Revice_Rider_Items.SCORPION_VISTAMP.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:full_genomix.form"));
+
+		else if (get_Form_Item(stack, 1)== Revice_Rider_Items.GIANT_SPIDER_VISTAMP.get()) tooltipComponents.add(Component.translatable( "kamenridercraft:giant_genomix.form"));
+
+		else {
+			tooltipComponents.add(Component.translatable( "kamenridercraft:genomix.form"));
+
+			if (get_Form_Item(stack, 2) == Revice_Rider_Items.ANOMALOCARIS_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:anomalocaris_vistamp.form"));
+			if (get_Form_Item(stack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:komodo_dragon_vistamp.form"));
+			if (get_Form_Item(stack, 2) == Revice_Rider_Items.KOMODO_DRAGON_VISTAMP_DEMONS.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:komodo_dragon_vistamp.form"));
+			if (get_Form_Item(stack, 2) == Revice_Rider_Items.MOGURA_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:mogura_vistamp.form"));
+			if (get_Form_Item(stack, 3) == Revice_Rider_Items.BATTA_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:batta_vistamp.form"));
+			if (get_Form_Item(stack, 3) == Revice_Rider_Items.CONDOR_VISTAMP_DEMONS.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:condor_vistamp_demons.form"));
+			if (get_Form_Item(stack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:crocodile_vistamp.form"));
+			if (get_Form_Item(stack, 3) == Revice_Rider_Items.CROCODILE_VISTAMP_DEMONS.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:crocodile_vistamp_demons.form"));
+			if (get_Form_Item(stack, 4) == Revice_Rider_Items.SCORPION_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:scorpion_vistamp.form"));
+			if (get_Form_Item(stack, 5) == Revice_Rider_Items.BATTA_VISTAMP.get())
+				tooltipComponents.add(Component.translatable("kamenridercraft:batta_vistamp.form"));
+		}
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+	}
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
