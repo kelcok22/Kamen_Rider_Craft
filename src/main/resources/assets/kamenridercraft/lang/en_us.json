@@ -4679,6 +4679,7 @@
 
 "item.kamenridercraft.seiken_swordriver_saber": "Seiken Swordriver (Saber)",
 "kamenridercraft.name.saber": "Rider: Kamen Rider Saber",
+  "kamenridercraft.name.saber_xross": "Rider: Kamen Rider Xross Saber",
   "item.kamenridercraft.seiken_swordriver_blades": "Seiken Swordriver (Blades)",
   "kamenridercraft.name.blades": "Rider: Kamen Rider Blades",
   "item.kamenridercraft.seiken_swordriver_espada": "Seiken Swordriver (Espada)",
@@ -4848,6 +4849,14 @@
   "kamenridercraft:daishougun_momoichirou_wonder_ride_book.form": "Daishougun Momoichirou",
   "kamenridercraft:daikengou_urashimajirou_wonder_ride_book.form": "Daikengou Urashimajirou",
   "kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book.form": "Daiyokozuna Kinzaburou",
+
+  "kamenridercraft:brave_dragon_wonder_ride_book_xross.form": "Brave Dragon",
+  "kamenridercraft:storm_eagle_wonder_ride_book_xross.form": "Storm Eagle",
+  "kamenridercraft:saiyuu_journey_wonder_ride_book_xross.form": "Saiyuu Journey",
+  "kamenridercraft:tenkuu_no_pegasus_wonder_ride_book_xross.form": "Tenkuu no Pegasus",
+  "kamenridercraft:lion_senki_wonder_ride_book_xross.form": "Lion Senki",
+  "kamenridercraft:lamp_do_alngina_wonder_ride_book_xross.form": "Lamp Do Alangina",
+
 
   "kamenridercraft:jaaku_dragon_wonder_ride_book_calibur.form": "Form: Jaaku Dragon",
   "kamenridercraft:jaou_dragon_wonder_ride_book.form": "Form: Jaou Dragon",

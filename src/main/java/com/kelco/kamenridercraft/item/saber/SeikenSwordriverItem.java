@@ -37,15 +37,17 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
         Has_basic_belt_info=false;
-        tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
 
         Item formItem = this.get_Form_Item(stack, 1);
         Item formItem2 = this.get_Form_Item(stack, 2);
         Item formItem3 = this.get_Form_Item(stack, 3);
 
-        //if(formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-        //else{
-          tooltipComponents.add(Component.translatable("kamenridercraft.wonder_ride_book"));
+        if(formItem==Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+"_xross"));
+        else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+        tooltipComponents.add(Component.translatable("kamenridercraft.wonder_ride_book"));
+
         if (formItem!=Saber_Rider_Items.SABER_BLANK_1.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
         if (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
         if (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
