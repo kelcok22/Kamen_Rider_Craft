@@ -799,11 +799,11 @@ public class Revice_Rider_Items {
 	
 	public static final DeferredItem<Item> WEEK_ENDRIVER = ITEMS.register("week_endriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aguilera",QUEEN_BEE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> DARK_WEEK_ENDRIVER = ITEMS.register("dark_week_endriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_aguilera",QUEEN_BEE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER = ITEMS.register("chimera_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chimera",TWIN_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
