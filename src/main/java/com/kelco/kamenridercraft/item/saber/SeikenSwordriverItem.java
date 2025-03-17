@@ -5,8 +5,10 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
+import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -15,8 +17,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.List;
 
 public class SeikenSwordriverItem extends RiderDriverItem {
 
@@ -26,6 +31,26 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     {
         super(material, rider, baseFormItem, head, torso, legs, properties);
         Unlimited_Textures=4;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
+        Has_basic_belt_info=false;
+        tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+        Item formItem = this.get_Form_Item(stack, 1);
+        Item formItem2 = this.get_Form_Item(stack, 2);
+        Item formItem3 = this.get_Form_Item(stack, 3);
+
+        //if(formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+        //else{
+          tooltipComponents.add(Component.translatable("kamenridercraft.wonder_ride_book"));
+        if (formItem!=Saber_Rider_Items.SABER_BLANK_1.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+        if (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+        if (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+        //}
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
     @Override
