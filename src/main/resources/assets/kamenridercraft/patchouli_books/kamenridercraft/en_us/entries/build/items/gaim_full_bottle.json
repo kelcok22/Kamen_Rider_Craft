@@ -1,0 +1,19 @@
+{
+	"name": "Gaim Fullbottle",
+	"icon": "kamenridercraft:gaim_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 132,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaim_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

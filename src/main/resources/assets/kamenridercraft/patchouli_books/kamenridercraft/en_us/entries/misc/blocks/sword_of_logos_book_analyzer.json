@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/sword_of_logos_book_analyzer"
+			"recipe": "kamenridercraft:saber/sword_of_logos_book_analyzer",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Durendal Boss Block",
 	"icon": "kamenridercraft:durendal_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 20,
+	"sortnum": 23,
 	"pages": [
 		{
 			"type": "patchouli:text",

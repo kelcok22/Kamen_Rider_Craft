@@ -1,0 +1,19 @@
+{
+	"name": "Book Gate Wonder Ride Book",
+	"icon": "kamenridercraft:book_gate_wonder_ride_book",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used by the Sword of Logos$(br2)Used to access $(l:saber/dimensions/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:book_gate_wonder_ride_book",
+			"title": " ",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		}
+	]
+}

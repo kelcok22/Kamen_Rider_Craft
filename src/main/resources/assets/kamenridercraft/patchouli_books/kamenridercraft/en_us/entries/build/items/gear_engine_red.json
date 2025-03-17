@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gear_engine_red",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)"
 		}
 	]
 }

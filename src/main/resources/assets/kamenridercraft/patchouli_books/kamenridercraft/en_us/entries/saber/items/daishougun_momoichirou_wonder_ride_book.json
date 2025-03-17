@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daishougun_momoichirou_wonder_ride_book",
 			"title": " ",
-			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
 		}
 	]
 }

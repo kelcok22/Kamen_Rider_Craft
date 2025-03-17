@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:black_lost_bat_full_bottle",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
 		}
 	]
 }

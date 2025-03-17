@@ -4,13 +4,9 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
-import com.kelco.kamenridercraft.item.Revice_Rider_Items;
-import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.MobSpawnType;
@@ -46,7 +42,7 @@ public class EngineBrosEntity extends BaseHenchmenEntity {
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Saber_Rider_Items.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
+                RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.GEAR_HELL_BROS.get(), 1);
             }
         }
     }

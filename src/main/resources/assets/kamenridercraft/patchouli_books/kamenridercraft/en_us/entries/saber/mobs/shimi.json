@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 45$(br2)Drops$(li)1-3 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp Do Alangina Wonder Ride Book$(/l) (30%)$(li)1 $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book$(/l) (10%)$(br2)Bosses$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l) (2%)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l) (2%)$(li)$(l:saber/mobs/zooous)Zooous$(/l) (2%)$(li)$(l:saber/mobs/storious)Storious$(/l) (2%)$(li)$(l:saber/mobs/desast)Desast$(/l) (2%)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 45$(br2)Drops$(li)1-3 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book$(/l) (27.3%)$(li)1 $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book$(/l) (27.3%)$(li)1 $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp Do Alangina Wonder Ride Book$(/l) (27.3%)$(li)1 $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book$(/l) (9.1%)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (9.1%)$(br2)Bosses$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l) (2%)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l) (2%)$(li)$(l:saber/mobs/zooous)Zooous$(/l) (2%)$(li)$(l:saber/mobs/storious)Storious$(/l) (2%)$(li)$(l:saber/mobs/desast)Desast$(/l) (2%)"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Ark-One Boss Block",
 	"icon": "kamenridercraft:ark_one_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 18,
+	"sortnum": 21,
 	"pages": [
 		{
 			"type": "patchouli:text",

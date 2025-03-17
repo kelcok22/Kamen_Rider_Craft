@@ -13,6 +13,7 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -113,12 +114,6 @@ public class CompleteSummonEntity extends BaseSummonEntity {
             }
 
             if (this.tamable.getOwner() instanceof Player player) {
-                if (player.swinging) {
-                    this.tamable.swing(player.getUsedItemHand());
-                    if (player.getLastHurtMob()!=null && player.getLastHurtMob()!=this.tamable && this.tamable.isWithinMeleeAttackRange(player.getLastHurtMob())) this.tamable.doHurtTarget(player.getLastHurtMob());
-                    else if (player.getLastHurtByMob()!=null && this.tamable.isWithinMeleeAttackRange(player.getLastHurtByMob())) this.tamable.doHurtTarget(player.getLastHurtByMob());
-                }
-
                 if (player.isUsingItem() && player.getUseItem().getItem() instanceof BowItem) this.tamable.startUsingItem(this.tamable.getUsedItemHand());
                 else if (this.tamable.isUsingItem()) {
                     if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(2);
@@ -126,6 +121,12 @@ public class CompleteSummonEntity extends BaseSummonEntity {
                 }
             }
         }
+    }
+
+    public void mimicSwing(Player player, InteractionHand hand) {
+        this.swing(hand);
+        if (player.getLastHurtMob()!=null && player.getLastHurtMob()!=this && this.isWithinMeleeAttackRange(player.getLastHurtMob())) this.doHurtTarget(player.getLastHurtMob());
+        else if (player.getLastHurtByMob()!=null && this.isWithinMeleeAttackRange(player.getLastHurtByMob())) this.doHurtTarget(player.getLastHurtByMob());
     }
 
     @Override

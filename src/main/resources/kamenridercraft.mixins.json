@@ -5,6 +5,7 @@
   "mixins": [
     "block.GochizoCakeBlock",
     "compat.JMCGochizoCakeBlock",
+    "player.CompleteSummonSwing",
     "structure.JigsawPlacementExpansion",
     "structure.JigsawExpansion",
     "structure.PlaceCommandUnlimit",

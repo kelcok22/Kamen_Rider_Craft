@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider MadRogue",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mad_rogue",
+			"text": "Summoned from a $(l:misc/boss_blocks/mad_rogue_boss_block)Mad Rogue Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/bat_full_bottle)Bat Fullbottle$(/l)$(li)1 $(l:build/items/engine_full_bottle)Engine Fullbottle$(/l) (50%)$(li)1 $(l:build/items/black_lost_bat_full_bottle)Lost Bat Fullbottle$(/l) (50%)"
+		}
+	]
+}

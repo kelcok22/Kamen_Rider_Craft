@@ -1,0 +1,21 @@
+{
+	"name": "Northern Base",
+	"icon": "kamenridercraft:book_gate_wonder_ride_book",
+	"category": "kamenridercraft:saber/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Northern Base",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Accessed with a $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l)$(br2)Structures:$(li)$(l:saber/structures/northern_base)Northern Base$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base.png"
+			],
+			"title": " "
+		}
+	]
+}

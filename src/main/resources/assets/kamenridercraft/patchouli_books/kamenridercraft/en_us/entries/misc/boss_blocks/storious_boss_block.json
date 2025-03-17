@@ -2,7 +2,7 @@
 	"name": "Storious Boss Block",
 	"icon": "kamenridercraft:storious_boss_block",
 	"category": "kamenridercraft:misc/boss_blocks",
-	"sortnum": 22,
+	"sortnum": 25,
 	"pages": [
 		{
 			"type": "patchouli:text",

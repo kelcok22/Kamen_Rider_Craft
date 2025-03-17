@@ -33,22 +33,22 @@ public class EvolEntity extends BaseHenchmenEntity {
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<100)
-        if (playerIn.getInventory().countItem(Item.byBlock(Rider_Blocks.PANDORA_BOX.get()))!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER.get()) {
-            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
-			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
-			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
-			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-			RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER.get(), 1);
-    	}
-        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<50)
-            if (playerIn.getInventory().countItem(Build_Rider_Items.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER.get()) {
+    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
+            if (this.getHealth()<100 && playerIn.getInventory().countItem(Rider_Blocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER.get()
+            && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
+                playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
+		    	this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
+		    	this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
+		    	this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
+		    	RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER.get(), 1);
+    	    } else if(this.getHealth()<50 && playerIn.getInventory().countItem(Build_Rider_Items.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get()) {
                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(15.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
                 RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Build_Rider_Items.EVOL_TRIGGER_KAIJIN.get(), 1);
             }
+        }
     }
 
 
