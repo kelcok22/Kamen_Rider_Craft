@@ -19,7 +19,7 @@ import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
-
+import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.ChatFormatting;
@@ -62,6 +62,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 
 public class ModCommonEvents {
@@ -71,13 +72,9 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void clientTick(ClientTickEvent.Post event) {
-			Minecraft minecraft = Minecraft.getInstance();
-			if(KeyBindings.INSTANCE.BeltKey.consumeClick() && minecraft.player != null) {
-				if (minecraft.player.getItemBySlot(EquipmentSlot.FEET).getItem()==Gotchard_Rider_Items.VALVARADRAW_BUCKLE.get()) {
-					minecraft.player.displayClientMessage(Component.literal("Test").withStyle(ChatFormatting.RED), true);
-				}
+			if (Minecraft.getInstance().player != null) {
+				while (KeyBindings.INSTANCE.BeltKey.consumeClick()) PacketDistributor.sendToServer(new BeltKeyPayload(0));
 			}
-
 		}
 
 		@SubscribeEvent
@@ -94,8 +91,6 @@ public class ModCommonEvents {
 			if (j == 12 && i >= 22 && i <= 28 ) {
 				event.getEntity().addEffect(new MobEffectInstance(Effect_core.CHRISTMAS, 30, 0, false, false));
 			}
-
-			Entity entity = event.getEntity();
 		}
 
 		@SubscribeEvent

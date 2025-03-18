@@ -22,7 +22,7 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
-import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
+import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.HitParticles;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
@@ -577,9 +577,14 @@ public class KamenRiderCraftCore
 		        CompleteSwingPayload.TYPE,
 		        CompleteSwingPayload.STREAM_CODEC,
 		        new DirectionalPayloadHandler<>(
-		            ClientPayloadHandler::handleDataOnMain,
-		            ServerPayloadHandler::handleDataOnMain
+		            ClientPayloadHandler::handleCompleteSwing,
+		            ServerPayloadHandler::handleCompleteSwing
 		        )
+		    );
+		    registrar.playToServer(
+		        BeltKeyPayload.TYPE,
+		        BeltKeyPayload.STREAM_CODEC,
+		        ServerPayloadHandler::handleBeltKeyPress
 		    );
 		}
     }
