@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.block.entity.renderer.PandoraPanelBlockEntityRe
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.gui.*;
 import com.kelco.kamenridercraft.client.renderer.*;
+import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -19,14 +20,20 @@ import com.kelco.kamenridercraft.item.BaseItems.BaseSwordItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.loot.LootModifierCore;
+import com.kelco.kamenridercraft.network.ClientPayloadHandler;
+import com.kelco.kamenridercraft.network.ServerPayloadHandler;
+import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
 import com.kelco.kamenridercraft.particle.HitParticles;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
+
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.*;
@@ -39,6 +46,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
@@ -48,6 +56,11 @@ import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
+import net.neoforged.neoforge.network.registration.HandlerThread;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +94,7 @@ public class KamenRiderCraftCore
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+       NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
        NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
         NeoForge.EVENT_BUS.register(new ModCommonEvents.EventHandler());
 
@@ -188,7 +202,6 @@ public class KamenRiderCraftCore
         }
         event.getPoseStack().scale(size3, size, size2);
     }
-
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
@@ -301,7 +314,7 @@ public class KamenRiderCraftCore
                  });
                  }
 
-
+            if (ModList.get().isLoaded("bettercombat")) BetterCombatAttackListener.register();
         }
 
         @SubscribeEvent
@@ -554,7 +567,22 @@ public class KamenRiderCraftCore
         }
     }
 
-
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+    public static class CommonModEvents {
+		@SubscribeEvent
+		public static void register(final RegisterPayloadHandlersEvent event) {
+		    PayloadRegistrar registrar = event.registrar("kamenridercraft");
+			registrar = registrar.executesOn(HandlerThread.MAIN);
+		    registrar.playBidirectional(
+		        CompleteSwingPayload.TYPE,
+		        CompleteSwingPayload.STREAM_CODEC,
+		        new DirectionalPayloadHandler<>(
+		            ClientPayloadHandler::handleDataOnMain,
+		            ServerPayloadHandler::handleDataOnMain
+		        )
+		    );
+		}
+    }
 }
 
 
