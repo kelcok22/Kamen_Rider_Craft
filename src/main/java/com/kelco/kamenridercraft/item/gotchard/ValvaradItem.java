@@ -60,29 +60,31 @@ public class ValvaradItem extends RiderDriverItem {
         return amount;
     }
 
+
+	public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+		player.openMenu(new MenuProvider() {
+			@Override
+			public Component getDisplayName() {
+				return Component.translatable("valvaradraw_buckle.text");
+			}
+
+			@Override
+			public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+				FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+				packetBuffer.writeBlockPos(player.blockPosition());
+				packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+				return new GotchandrawHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+			}
+		}, buf -> {
+			buf.writeBlockPos(player.blockPosition());
+			buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+		});
+	}
+
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		ItemStack itemstack = entity.getItemInHand(hand);
-
-		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) {
-			serverPlayer.openMenu(new MenuProvider() {
-				@Override
-				public Component getDisplayName() {
-					return Component.translatable("valvaradraw_buckle.text");
-				}
-
-				@Override
-				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-					packetBuffer.writeBlockPos(entity.blockPosition());
-					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new GotchandrawHolderGuiMenu(id, inventory, packetBuffer,itemstack);
-				}
-			}, buf -> {
-				buf.writeBlockPos(entity.blockPosition());
-				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-			});
-		}
+		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) openInventory(serverPlayer, hand, itemstack);
 		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
 		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
 	}
