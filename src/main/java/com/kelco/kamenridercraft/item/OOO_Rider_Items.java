@@ -779,12 +779,6 @@ public class OOO_Rider_Items {
             () -> new GimmickCarrierItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
      */
 
-	public static final BundleContents EMPTY = new BundleContents(List.of());
-
-	public static final DeferredItem<Item>MILK_CAN = ITEMS.register("milk_can",
-			() -> new MilkCanItem(new Item.Properties().stacksTo(1).component(DataComponents.BUNDLE_CONTENTS, EMPTY)));
-
-
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

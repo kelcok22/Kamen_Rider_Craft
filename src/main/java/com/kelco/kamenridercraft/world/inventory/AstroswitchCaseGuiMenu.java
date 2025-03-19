@@ -35,24 +35,16 @@ public class AstroswitchCaseGuiMenu extends AbstractContainerMenu {
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,17,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,1,42,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,2,67,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,3,92,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,4,117,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,5,142,17,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,6,17,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,7,42,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,8,67,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,9,92,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,10,117,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,11,142,35,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,12,17,53,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,13,42,53,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,14,67,53,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,15,92,53,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,16,117,53,"gear/astroswitches"));
-		this.addSlot(new SlotByTag(container,17,142,53,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,0,36,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,1,54,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,2,72,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,3,90,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,4,108,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,5,126,26,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,6,45,44,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,7,63,44,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,8,99,44,"gear/astroswitches"));
+		this.addSlot(new SlotByTag(container,9,117,44,"gear/astroswitches"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

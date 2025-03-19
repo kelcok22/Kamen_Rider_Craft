@@ -33,31 +33,31 @@ public class EnergyItemHolderGuiMenu extends AbstractContainerMenu {
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,26,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,1,44,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,2,62,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,3,26,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,4,44,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,5,62,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,6,26,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,7,44,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,8,62,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,9,26,70,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,10,44,70,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,11,62,70,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,12,98,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,13,116,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,14,134,16,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,15,98,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,16,116,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,17,134,34,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,18,98,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,19,116,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,20,134,52,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,21,98,70,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,22,116,70,"gear/energy_items"));
-        this.addSlot(new SlotByTag(container,23,134,70,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,0,30,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,1,48,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,2,66,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,3,30,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,4,48,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,5,66,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,6,30,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,7,48,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,8,66,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,9,30,71,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,10,48,71,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,11,66,71,"gear/energy_items"));
 
+        this.addSlot(new SlotByTag(container,12,94,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,13,112,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,14,130,17,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,15,94,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,16,112,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,17,130,35,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,18,94,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,19,112,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,20,130,53,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,21,94,71,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,22,112,71,"gear/energy_items"));
+        this.addSlot(new SlotByTag(container,23,130,71,"gear/energy_items"));
 
         for(int i1 = 0; i1 < 3; ++i1) {
             for(int k1 = 0; k1 < 9; ++k1) {

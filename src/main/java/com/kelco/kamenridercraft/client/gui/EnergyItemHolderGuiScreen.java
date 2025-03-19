@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class EnergyItemHolderGuiScreen extends AbstractContainerScreen<EnergyItemHolderGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_24_item_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/o_medal_holder_item_gui.png");
 
 	public EnergyItemHolderGuiScreen(EnergyItemHolderGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
