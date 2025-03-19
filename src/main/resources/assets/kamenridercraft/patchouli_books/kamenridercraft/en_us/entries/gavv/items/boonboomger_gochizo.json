@@ -2,7 +2,7 @@
 	"name": "Boonboomger Gochizo",
 	"icon": "kamenridercraft:boonboomger_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 55,
+	"sortnum": 61,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.Geats_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -47,9 +48,9 @@ public class WDriverItem extends RiderDriverItem {
 		Item formItem2 = this.get_Form_Item(stack, 2);
 		if(formItem==W_Rider_Items.XTREME_MEMORY.get()||formItem==W_Rider_Items.XTREME_GOLD_MEMORY.get()||formItem==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
 		else{
-			tooltipComponents.add(Component.translatable("kamenridercraft.name.form"));
-			tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-			tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+			+ Component.translatable(formItem.toString() + ".form").getString()
+			+ Component.translatable(formItem2.toString() + ".form").getString()));
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}

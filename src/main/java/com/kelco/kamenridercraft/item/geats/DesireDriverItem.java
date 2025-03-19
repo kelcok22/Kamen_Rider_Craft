@@ -7,10 +7,16 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Geats_Rider_Items;
+import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
+import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
+import com.kelco.kamenridercraft.item.OOO_Rider_Items;
+import com.kelco.kamenridercraft.item.Saber_Rider_Items;
+
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -20,6 +26,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -29,7 +36,76 @@ public class DesireDriverItem  extends RiderDriverItem {
 	public DesireDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Item.Properties properties)
 	{
 		super(material, rider, baseFormItem, head, torso, legs, properties);
-		
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        Has_basic_belt_info=false;
+		Item formItem = this.get_Form_Item(stack, 1);
+		Item formItem2 = this.get_Form_Item(stack, 2);
+		Item formItem3 = this.get_Form_Item(stack, 3);
+
+		if(formItem2==Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.geats_oneness"));
+		else if(formItem==Geats_Rider_Items.GEATS_CORE_ID_OSAKA.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.osaka_"+Rider));
+		else if(formItem==Geats_Rider_Items.GEATS_CORE_ID_FUKUOKA.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.fukuoka_"+Rider));
+		else if(formItem==Geats_Rider_Items.GEATS_CORE_ID_NAGOYA.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.nagoya_"+Rider));
+		else if(formItem==Geats_Rider_Items.GEATS_CORE_ID_TOKYO.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.tokyo_"+Rider));
+		else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+			// To the person who tries to decipher this code: good luck :P
+		if (Show_belt_form_info && formItem2!=Geats_Rider_Items.ONENESS_RAISE_BUCKLE.get()) {
+			if((formItem2==Modded_item_core.BLANK_FORM.get()||formItem2==Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get())&&(formItem3==Modded_item_core.BLANK_FORM.get()||formItem3==Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get())) {
+    	        tooltipComponents.add(Component.literal(Component.translatable(formItem.toString() + ".form").getString()
+					+ (formItem==Geats_Rider_Items.JYAMASHIN_WISH_CARD.get() ? " " + Component.translatable("kamenridercraft:form.jyamashin").getString() : "")));
+    	    } else if (isFever(stack, Rider)||isGoldenFever(stack, Rider)) {
+    	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+					+ (Component.translatable("kamenridercraft:feverslot_raise_buckle.form").getString() + " ")
+					+ (isArmedBuckle(formItem3)? Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
+					+ (formItem3!=Modded_item_core.BLANK_FORM.get() ? Component.translatable(formItem3.toString() + ".form").getString() + " " : " ")
+					+ Component.translatable("kamenridercraft:form.form").getString()
+					+ (formItem==Geats_Rider_Items.JYAMASHIN_WISH_CARD.get() ? " " + Component.translatable("kamenridercraft:form.jyamashin").getString() : "")));
+    	    } else if (isRaising(stack, Rider)) {
+				if (formItem3==Geats_Rider_Items.COMMAND_TWIN_BUCKLE_CANNON_l.get())
+    	        	tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+						+ Component.translatable("kamenridercraft:command_twin_buckle_cannon.form_jet_mode").getString()));
+				else if (formItem2==Geats_Rider_Items.COMMAND_TWIN_BUCKLE_CANNON.get())
+    	        	tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+						+ Component.translatable("kamenridercraft:command_twin_buckle_cannon.form_cannon_mode").getString()));
+				else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+						+ Component.translatable("kamenridercraft:command_twin_buckle_jet.form").getString() + (isArmedBuckle(formItem2)||isArmedBuckle(formItem3)? " " + Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
+						+ (formItem2==Modded_item_core.BLANK_FORM.get()||formItem3==Modded_item_core.BLANK_FORM.get() ? " "
+						: (formItem2==Geats_Rider_Items.COMMAND_TWIN_BUCKLE_JET.get() ? Component.translatable(formItem3.toString() + ".form").getString() + " "
+						: Component.translatable(formItem2.toString() + ".form").getString() + " "))
+						+ Component.translatable("kamenridercraft:form.form").getString()));
+    	    } else if (formItem2==Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkii_raise_buckle.form").getString()));
+    	    else if (formItem2==Geats_Rider_Items.UNITE_GRIP.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:unite_grip.form").getString()));
+    	    else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&formItem3==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form_ix").getString()));
+			else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()||formItem3==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) {
+				if (formItem2==Modded_item_core.BLANK_FORM.get()||formItem3==Modded_item_core.BLANK_FORM.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
+				else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "
+					+(isArmedBuckle(formItem3)? Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
+					+Component.translatable(formItem3.toString() + ".form").getString()
+					+(isArmedBuckle(formItem3)? " " : "")+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
+				else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "
+					+(isArmedBuckle(formItem2)? Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
+					+Component.translatable(formItem2.toString() + ".form").getString()
+					+(isArmedBuckle(formItem2)? " " : "")+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
+    	    } else if (formItem3==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()){
+    	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+					+ (formItem2!=Modded_item_core.BLANK_FORM.get() ? (Component.translatable("kamenridercraft:bujin_sword_raise_buckle.form_r").getString()+" "+Component.translatable(formItem2.toString() + ".form").getString())
+					: Component.translatable(formItem3.toString() + ".form").getString())
+					+ " " + Component.translatable("kamenridercraft:form.form").getString()));
+    	    } else {
+    	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+					+ (isArmedBuckle(formItem2)? Component.translatable("kamenridercraft:form.armed").getString() + " " : "")
+					+ (formItem2!=Modded_item_core.BLANK_FORM.get()&&formItem2!=Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get() ? (Component.translatable(formItem2.toString() + ".form").getString() + (formItem3==Modded_item_core.BLANK_FORM.get()||formItem3==Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get()||isArmedBuckle(formItem3)||isArmedBuckle(formItem2)? " " : "")) : "")
+					+ (isArmedBuckle(formItem3)&&!isArmedBuckle(formItem2) ? Component.translatable("kamenridercraft:form.armed").getString() + " ":"")
+					+ (formItem3!=Modded_item_core.BLANK_FORM.get()&&formItem3!=Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get() ? Component.translatable(formItem3.toString() + ".form").getString() + " " : "")
+					+ Component.translatable("kamenridercraft:form.form").getString()
+					+ (formItem==Geats_Rider_Items.JYAMASHIN_WISH_CARD.get() ? " " + Component.translatable("kamenridercraft:form.jyamashin").getString() : "")));
+    	    } 
+		}
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
 	@Override
@@ -106,6 +182,42 @@ public class DesireDriverItem  extends RiderDriverItem {
 		else if (equipmentSlot == EquipmentSlot.CHEST) return "geats_rider"+get_Form_Item(itemstack,2).getFormName(fly);
 		else return "geats_rider"+get_Form_Item(itemstack,3).getFormName(fly);
 
+	}
+
+	public  boolean isArmedBuckle(Item item) {
+		return (item==Geats_Rider_Items.HAMMER_RAISE_BUCKLE.get() || item==Geats_Rider_Items.WATER_RAISE_BUCKLE.get()
+		|| item==Geats_Rider_Items.ARROW_RAISE_BUCKLE.get() || item==Geats_Rider_Items.SHIELD_RAISE_BUCKLE.get()
+		|| item==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get() || item==Geats_Rider_Items.DRILL_RAISE_BUCKLE.get()
+		|| item==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE.get() || item==Geats_Rider_Items.CLAW_RAISE_BUCKLE.get()
+		|| item==Geats_Rider_Items.HAMMER_RAISE_BUCKLE_FEVER.get() || item==Geats_Rider_Items.WATER_RAISE_BUCKLE_FEVER.get()
+		|| item==Geats_Rider_Items.ARROW_RAISE_BUCKLE_FEVER.get() || item==Geats_Rider_Items.SHIELD_RAISE_BUCKLE_FEVER.get()
+		|| item==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE_FEVER.get() || item==Geats_Rider_Items.DRILL_RAISE_BUCKLE_FEVER.get()
+		|| item==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE_FEVER.get() || item==Geats_Rider_Items.CLAW_RAISE_BUCKLE_FEVER.get());
+	}
+
+	public  boolean isGoldenFever(ItemStack itemstack,String riderName) {
+		
+		if (CanFever(riderName)) {
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.HAMMER_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.HAMMER_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.WATER_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.WATER_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.ARROW_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.ARROW_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.SHIELD_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.SHIELD_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CLAW_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CLAW_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.DRILL_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.DRILL_RAISE_BUCKLE.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE_FEVER.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get()) return true;
+			
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.HAMMER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.HAMMER_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.WATER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.WATER_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.ARROW_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.ARROW_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.SHIELD_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.SHIELD_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CHAIN_ARRAY_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.CLAW_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.CLAW_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.DRILL_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.DRILL_RAISE_BUCKLE_FEVER.get()) return true;
+			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.PROPELLER_RAISE_BUCKLE_FEVER.get()) return true;
+
+		}
+		return false;
 	}
 
 	public  boolean isFever(ItemStack itemstack,String riderName) {
