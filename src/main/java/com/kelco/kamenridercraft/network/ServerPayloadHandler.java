@@ -54,7 +54,7 @@ public class ServerPayloadHandler {
     private static void handleBeltKeyPress(ServerPlayer player) {
 
 		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            belt.openInventory(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
+            if (belt.Has_Inventory) belt.openInventory(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
         }
     }
 }

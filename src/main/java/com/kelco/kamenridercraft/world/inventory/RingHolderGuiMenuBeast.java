@@ -4,7 +4,6 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
-import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
 import com.kelco.kamenridercraft.item.Wizard_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -14,21 +13,21 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
-public class RingHolderGuiMenu extends AbstractContainerMenu {
+public class RingHolderGuiMenuBeast extends AbstractContainerMenu {
 	private static final int CONTAINER_SIZE = 7;
 	private final Container container;
 
-	public RingHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Wizard_Rider_Items.WIZARDRIVER.get()));
+	public RingHolderGuiMenuBeast(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
+		this(containerId, playerInventory,new ItemStack(Wizard_Rider_Items.BEAST_DRIVER.get()));
 	}
 
-	public RingHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
+	public RingHolderGuiMenuBeast(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
 
 		this(containerId, playerInventory,itemstack);
 	}
 
-	public RingHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
-		super(ModMenus.RING_HOLDER_GUI.get(), containerId);
+	public RingHolderGuiMenuBeast(int containerId, Inventory playerInventory, ItemStack itemstack) {
+		super(ModMenus.RING_HOLDER_GUI_BEAST.get(), containerId);
 		this.container = new BasicContainer(itemstack,7);
 		container.startOpen(playerInventory.player);
 
