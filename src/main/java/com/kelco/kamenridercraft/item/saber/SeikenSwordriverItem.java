@@ -43,15 +43,53 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         Item formItem2 = this.get_Form_Item(stack, 2);
         Item formItem3 = this.get_Form_Item(stack, 3);
 
-        if(formItem==Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+"_xross"));
-        else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+        if(formItem==Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS.get()) {
+            tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+"_xross"));
 
-        tooltipComponents.add(Component.translatable("kamenridercraft.wonder_ride_book"));
-
-        if (formItem!=Saber_Rider_Items.SABER_BLANK_1.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-        if (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
-        if (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
-        //}
+            if (formItem2==Saber_Rider_Items.SABER_BLANK_2.get()&&formItem3==Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+            else if (formItem2==Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK_XROSS.get()&&formItem3==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK_XROSS.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form_featuring"));
+            else if (formItem2==Saber_Rider_Items.STORM_EAGLE_WONDER_RIDE_BOOK_XROSS.get()&&formItem3==Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK_XROSS.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form_crimson"));
+            else {
+                tooltipComponents.add(Component.translatable(formItem.toString() + ".form_hybrid"));
+                if (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+                if (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+            }
+        } else {
+            tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+            if (stack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get()) {
+                if (formItem==Saber_Rider_Items.BRAVE_DRAGON_WONDER_RIDE_BOOK.get()) {
+                    if (formItem2==Saber_Rider_Items.SABER_BLANK_2.get()&&formItem3==Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form_basic"));
+                    else if (formItem2==Saber_Rider_Items.SABER_BLANK_2.get()&&formItem3==Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form_saiyuu"));
+                    else if (formItem2==Saber_Rider_Items.STORM_EAGLE_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.SAIYUU_JOURNEY_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form_combo"));
+                    else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+                    + Component.translatable(formItem.toString() + ".form").getString()
+                    + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? " " + Component.translatable(formItem2.toString() + ".form").getString() : "")
+                    + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
+                } else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+            } else if (stack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_BLADES.get()) {
+                if (formItem2==Saber_Rider_Items.LION_SENKI_WONDER_RIDE_BOOK.get()) {
+                    if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem3==Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_basic"));
+                    else if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem3==Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_peter"));
+                    else if (formItem==Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.SABER_BLANK_3.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_pegasus"));
+                    else if (formItem==Saber_Rider_Items.TENKUU_NO_PEGASUS_WONDER_RIDE_BOOK.get()&&formItem3==Saber_Rider_Items.PETER_FANTASISTA_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form_combo"));
+                    else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+                    + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
+                    + Component.translatable(formItem2.toString() + ".form").getString()
+                    + (formItem3!=Saber_Rider_Items.SABER_BLANK_3.get() ? " " + Component.translatable(formItem3.toString() + ".form").getString() : "")));
+                } else tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+            } else if (stack.getItem()==Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_ESPADA.get()) {
+                if (formItem3==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get()) {
+                    if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem2==Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_basic"));
+                    else if (formItem==Saber_Rider_Items.SABER_BLANK_1.get()&&formItem2==Saber_Rider_Items.NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_hedgehog"));
+                    else if (formItem==Saber_Rider_Items.TRI_CERBERUS_WONDER_RIDE_BOOK.get()&&formItem2==Saber_Rider_Items.SABER_BLANK_2.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_cerberus"));
+                    else if (formItem==Saber_Rider_Items.TRI_CERBERUS_WONDER_RIDE_BOOK.get()&&formItem2==Saber_Rider_Items.NEEDLE_HEDGEHOG_WONDER_RIDE_BOOK.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form_combo"));
+                    else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+                    + (formItem!=Saber_Rider_Items.SABER_BLANK_1.get() ? Component.translatable(formItem.toString() + ".form").getString() + " " : "")
+                    + (formItem2!=Saber_Rider_Items.SABER_BLANK_2.get() ? Component.translatable(formItem2.toString() + ".form").getString() + " " : "")
+                    + Component.translatable(formItem3.toString() + ".form").getString()));
+                } else tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+            }
+        }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
@@ -59,7 +97,7 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName, int num)
     {
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
-        //return riderName + get_Form_Item(itemstack, 4).getFormName(fly);
+        //return riderName + get_Form_Item(itemstack, 4).getFormName(fly);v8
 
         if (get_Form_Item(itemstack,1).get_Stored_num()==2) return"blank";
         if(num==2) return get_Form_Item(itemstack,1).getFormName(fly);

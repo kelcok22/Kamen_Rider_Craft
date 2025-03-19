@@ -36,30 +36,27 @@ public class BuildDriverItem extends RiderDriverItem {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 		Item belt= stack.getItem();
-		if (belt!= Drive_Rider_Items.BANNO_DRIVER_BRONZE_DRIVE.get()&
-				belt!=Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()&
-				belt!=Drive_Rider_Items.METRO_PD_DRIVER_HONOH.get()&
-				belt!=Drive_Rider_Items.BRAIN_DRIVER.get()) {
+		this.Has_basic_belt_info = false;
+		Item formItem = this.get_Form_Item(stack, 1);
+		Item formItem2 = this.get_Form_Item(stack, 2);
+		Item formItem3 = this.get_Form_Item(stack, 3);
 
-			this.Has_basic_belt_info = false;
-			Item formItem = this.get_Form_Item(stack, 1);
-			Item formItem2 = this.get_Form_Item(stack, 2);
-			Item formItem3 = this.get_Form_Item(stack, 3);
+		tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
-			tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
-			if (isBestMatch(stack)&formItem3== Build_Rider_Items.HAZARD_TRIGGER.get())tooltipComponents.add(Component.translatable("kamenridercraft.name.best_match_hazard"));
-			else if (isBestMatch(stack))tooltipComponents.add(Component.translatable("kamenridercraft.name.best_match"));
+		if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
+			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+		}else if (isBestMatch(stack)) {
+			tooltipComponents.add(Component.literal(
+			(get_Form_Item(stack, 2) == Build_Rider_Items.MEDAL_FULL_BOTTLE.get() || get_Form_Item(stack, 2) == Build_Rider_Items.PARKA_FULL_BOTTLE.get() ? Component.translatable(formItem.toString() + ".form_legend").getString() : Component.translatable(formItem.toString() + ".form_match").getString())
 
-			if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
-				tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
-			}else {
-				tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
-				tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
-				if (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get())
-					tooltipComponents.add(Component.translatable("kamenridercraft.name.hazard"));
-			}
-			}
+			+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
+			tooltipComponents.add(formItem3== Build_Rider_Items.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
+		}else {
+			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
+			+ Component.translatable(formItem.toString() + ".form").getString()
+			+ Component.translatable(formItem2.toString() + ".form").getString()));
+		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 	
