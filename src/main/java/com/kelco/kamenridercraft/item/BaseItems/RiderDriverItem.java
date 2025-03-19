@@ -5,14 +5,23 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
+import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -26,6 +35,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -41,6 +51,8 @@ public class RiderDriverItem extends RiderArmorItem {
     public String BELT_TEXT;
 
     public int Unlimited_Textures = 0;
+
+    public Boolean Has_Inventory = false;
 
     public Boolean Has_basic_belt_info = true;
     public Boolean Show_belt_form_info = true;
@@ -124,6 +136,11 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem Dont_show_belt_form_info() {
         Show_belt_form_info=false;
+        return this;
+    }
+
+    public RiderDriverItem Has_Inventory_Gui() {
+        Has_Inventory=true;
         return this;
     }
 
@@ -258,6 +275,20 @@ public class RiderDriverItem extends RiderArmorItem {
             return false;
         }
         return false;
+    }
+    public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+    }
+
+    @Override
+    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
+        if ((stack.getDamageValue() + amount) >= stack.getMaxDamage() && (entity == null || !entity.hasInfiniteMaterials())) {
+            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
+                ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
+                itementity.setDefaultPickUpDelay();
+                entity.level().addFreshEntity(itementity);
+            }
+        }
+        return amount;
     }
 
     public  boolean getPartsForSlot(ItemStack itemstack,EquipmentSlot currentSlot,String  part) {

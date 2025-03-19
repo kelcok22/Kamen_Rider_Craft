@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.network;
 
 import com.kelco.kamenridercraft.entities.summons.CompleteSummonEntity;
+import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.gotchard.ValvaradItem;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.CompleteSwingPayload;
@@ -51,8 +52,9 @@ public class ServerPayloadHandler {
     }
 
     private static void handleBeltKeyPress(ServerPlayer player) {
-		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ValvaradItem valvarad) {
-            valvarad.openInventory(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
+
+		if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            belt.openInventory(player, player.getUsedItemHand(), player.getItemBySlot(EquipmentSlot.FEET));
         }
     }
 }
