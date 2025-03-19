@@ -36,11 +36,6 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:sengoku_driver_kurokage_troopers",
           "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:lockseed_holder",
-          "weight": 2
         }
       ],
       "conditions": [
