@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.annotation.Nullable;
@@ -11,6 +12,9 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 
+import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -20,6 +24,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.cache.GeckoLibCache;
 
@@ -346,7 +351,26 @@ public class RiderFormChangeItem extends BaseItem {
             for (int i = 0; i < NEEDITEM.size(); i++)
             {
                 if (player.getInventory().countItem(NEEDITEM.get(i))==0){
-                    return false;
+                    if (belt.Has_Inventory) {
+                        int J = 0;
+                        Iterator var7 = ((ItemContainerContents) stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
+
+                        while (var7.hasNext()) {
+                            ItemStack itemstack = (ItemStack) var7.next();
+                            ++J;
+                            if (itemstack.getItem() == NEEDITEM.get(i)) {
+                                J = 100;
+                            }
+
+                        }
+                        if (J >= 99) {
+
+                        } else {
+                            return false;
+                        }
+                    }
+
+
                 }
             }
         }

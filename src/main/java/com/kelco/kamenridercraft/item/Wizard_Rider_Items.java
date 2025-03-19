@@ -6,12 +6,23 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.wizard.*;
+import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenuBeast;
+import io.netty.buffer.Unpooled;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -583,12 +594,55 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS,
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("ring_holder_gui.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new RingHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+					});
+				}
+
+			}.Has_Inventory_Gui().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties()){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.translatable("ring_holder_gui.text");
+					}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+						packetBuffer.writeBlockPos(player.blockPosition());
+						packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+						return new RingHolderGuiMenuBeast(id, inventory, packetBuffer,itemstack);
+					}
+				}, buf -> {
+					buf.writeBlockPos(player.blockPosition());
+					buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+				});
+			}
+			}
+					.Has_Inventory_Gui().ChangeRepairItem(WIZARD_GEM.get()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
@@ -660,12 +714,6 @@ public class Wizard_Rider_Items {
 	public static final DeferredItem<Item> DIS_HALBERD = ITEMS.register("dis_halberd",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
-
-
-	public static final DeferredItem<Item> WIZARD_RING_HOLDER = ITEMS.register("wizard_ring_holder",
-			() -> new RingHolderItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
-	public static final DeferredItem<Item> BEAST_RING_HOLDER = ITEMS.register("beast_ring_holder",
-			() -> new RingHolderItem().AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 
