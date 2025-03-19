@@ -45,22 +45,12 @@ public class ValvaradItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties.stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
+		Has_Inventory=true;
 		Num_Base_Form_Item=3;
 	}
 
-	@Override
-    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
-		if ((stack.getDamageValue() + amount) >= stack.getMaxDamage() && (entity == null || !entity.hasInfiniteMaterials())) {
-			for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
-				ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
-    	        itementity.setDefaultPickUpDelay();
-    	        entity.level().addFreshEntity(itementity);
-			}
-		}
-        return amount;
-    }
 
-
+@Override
 	public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 		player.openMenu(new MenuProvider() {
 			@Override
@@ -85,7 +75,6 @@ public class ValvaradItem extends RiderDriverItem {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		ItemStack itemstack = entity.getItemInHand(hand);
 		if (!world.isClientSide && entity instanceof ServerPlayer serverPlayer) openInventory(serverPlayer, hand, itemstack);
-		/*OpenAdventDeckProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);*/
 		return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
 	}
 
