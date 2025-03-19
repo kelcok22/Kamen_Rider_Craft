@@ -2,7 +2,7 @@
 	"name": "Poppingummy Gochizo (Charadeco ver.)",
 	"icon": "kamenridercraft:poppingummy_gochizo_charadeco_ver",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 52,
+	"sortnum": 58,
 	"pages": [
 		{
 			"type": "patchouli:text",

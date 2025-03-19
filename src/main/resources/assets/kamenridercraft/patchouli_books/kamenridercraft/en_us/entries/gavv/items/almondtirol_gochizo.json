@@ -1,17 +1,17 @@
 {
-	"name": "Charapaki Gochizo",
-	"icon": "kamenridercraft:charapaki_gochizo",
+	"name": "Almond Tirol Chocolate Gochizo",
+	"icon": "kamenridercraft:almondtirol_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 56,
+	"sortnum": 54,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocohone)Chocohone$(/l) form"
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:charapaki_gochizo",
+			"item": "kamenridercraft:almondtirol_gochizo",
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		}
