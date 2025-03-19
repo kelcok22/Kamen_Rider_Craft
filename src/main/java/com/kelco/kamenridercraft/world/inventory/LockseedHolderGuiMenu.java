@@ -18,7 +18,7 @@ public class LockseedHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public LockseedHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Gaim_Rider_Items.LOCKSEED_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.get()));
 	}
 
 	public LockseedHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
