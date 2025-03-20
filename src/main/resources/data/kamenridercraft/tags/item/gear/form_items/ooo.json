@@ -62,7 +62,7 @@
 	"kamenridercraft:shocker_medal",
 	"kamenridercraft:gel_shocker_medal",
 	"kamenridercraft:destron_medal",
-	"#kamenridercraft:gear/foundation_x_core_medals",
-	"#kamenridercraft:gear/zeus_core_medals"
+	"#kamenridercraft:gear/core_medals/foundation_x",
+	"#kamenridercraft:gear/core_medals/zeus"
   ]
 }

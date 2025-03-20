@@ -35,32 +35,32 @@ public class T2MemoryCaseGuiMenu extends AbstractContainerMenu {
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,8,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,1,26,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,2,44,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,3,62,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,4,80,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,5,98,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,6,116,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,7,134,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,8,152,26,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,9,8,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,10,26,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,11,44,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,12,62,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,13,80,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,14,98,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,15,116,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,16,134,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,17,152,44,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,18,17,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,19,35,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,20,53,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,21,71,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,22,89,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,23,107,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,24,125,62,"gear/t2_gaia_memories"));
-        this.addSlot(new SlotByTag(container,25,143,62,"gear/t2_gaia_memories"));
+        this.addSlot(new SlotByTag(container,0,8,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,1,26,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,2,44,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,3,62,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,4,80,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,5,98,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,6,116,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,7,134,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,8,152,26,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,9,8,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,10,26,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,11,44,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,12,62,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,13,80,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,14,98,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,15,116,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,16,134,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,17,152,44,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,18,17,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,19,35,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,20,53,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,21,71,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,22,89,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,23,107,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,24,125,62,"gear/gaia_memories/t2"));
+        this.addSlot(new SlotByTag(container,25,143,62,"gear/gaia_memories/t2"));
 
 
         for(int i1 = 0; i1 < 3; ++i1) {

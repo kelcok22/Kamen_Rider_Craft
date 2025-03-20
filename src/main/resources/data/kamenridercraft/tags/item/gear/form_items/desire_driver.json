@@ -1,9 +1,9 @@
 {
     "values": [
-      "#kamenridercraft:gear/large_raise_buckles",
+      "#kamenridercraft:gear/raise_buckles/large",
       "kamenridercraft:powered_builder_raise_buckle",
       "kamenridercraft:fever_slot_raise_buckle",
-      "#kamenridercraft:gear/armed_raise_buckles",
+      "#kamenridercraft:gear/raise_buckles/armed",
       "kamenridercraft:gigant_container_buckle",
       "#kamenridercraft:gear/legend_rider/raise_buckles"
     ]

@@ -33,10 +33,6 @@ public class BossBlockHellBros extends BaseBlock {
 	
 	@Override
 	public void playerDestroy(Level wolrd, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity p_49831_, ItemStack stack) {
-		player.awardStat(Stats.BLOCK_MINED.get(this));
-		player.causeFoodExhaustion(0.005F);
-		dropResources(state, wolrd, pos, p_49831_, player, stack);
-
 		BaseHenchmenEntity boss = MobsCore.ENGINE_BROS.get().create(wolrd);
 		BaseHenchmenEntity boss2 = MobsCore.REMOCON_BROS.get().create(wolrd);
 		if (boss != null&boss2 != null) {
@@ -45,8 +41,8 @@ public class BossBlockHellBros extends BaseBlock {
 			wolrd.addFreshEntity(boss);
 			wolrd.addFreshEntity(boss2);
 			if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
-	}
-	     
+		}
+		super.playerDestroy(wolrd, player, pos, state, p_49831_, stack);	     
 	}
 
 }

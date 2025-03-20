@@ -6,7 +6,7 @@
 	  "conditions": {
 		"items": [
 		  {
-			"items": "#kamenridercraft:gear/humagear_progrisekeys"
+			"items": "#kamenridercraft:gear/progrisekeys/humagear"
 		  }
 		]
 	  }

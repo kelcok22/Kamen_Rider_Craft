@@ -1,11 +1,8 @@
 {
   "values": [
-	"#kamenridercraft:gear/form_items/double",
-	"#kamenridercraft:gear/form_items/accel",
-	"kamenridercraft:skull_memory",
-	"#kamenridercraft:gear/form_items/eternal",
-	"#kamenridercraft:gear/t2_gaia_memories",
-	"#kamenridercraft:gear/dopant_memories",
-	"#kamenridercraft:gear/gadget_memories"
+	"#kamenridercraft:gear/gaia_memories/t1",
+	"#kamenridercraft:gear/gaia_memories/t2",
+	"#kamenridercraft:gear/gaia_memories/dopant",
+	"#kamenridercraft:gear/gaia_memories/gadget"
   ]
 }

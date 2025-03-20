@@ -6,7 +6,7 @@
 		"conditions": {
 		  "items": [
 			{
-			  "items": "#kamenridercraft:gear/t2_gaia_memories"
+			  "items": "#kamenridercraft:gear/gaia_memories/t2"
 			}
 		  ]
 		}

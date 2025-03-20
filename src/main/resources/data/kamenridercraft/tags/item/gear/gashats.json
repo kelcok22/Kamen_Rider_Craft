@@ -1,15 +1,11 @@
 {
   "values": [
-	"#kamenridercraft:gear/form_items/ex-aid",
-	"#kamenridercraft:gear/form_items/brave",
-	"#kamenridercraft:gear/form_items/snipe",
-	"#kamenridercraft:gear/form_items/lazer",
-	"#kamenridercraft:gear/form_items/genm",
-	"#kamenridercraft:gear/form_items/para-dx",
-	"kamenridercraft:toki_meki_crisis_gashat",
-	"kamenridercraft:hurricane_ninja_gashat",
-	"kamenridercraft:gashat_gear_dual_another",
-	"kamenridercraft:gamedeus_hyper_muteki_gashat",
-	  "#kamenridercraft:gear/legend_rider/gashats"
+	"#kamenridercraft:gear/gashats/normal",
+	"#kamenridercraft:gear/gashats/proto",
+	"#kamenridercraft:gear/gashats/dual",
+	"#kamenridercraft:gear/gashats/double",
+	"#kamenridercraft:gear/gashats/maximum",
+	"#kamenridercraft:gear/gashats/muteki",
+	"#kamenridercraft:gear/legend_rider/gashats"
   ]
 }

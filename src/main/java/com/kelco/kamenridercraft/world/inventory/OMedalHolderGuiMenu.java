@@ -33,31 +33,31 @@ public class OMedalHolderGuiMenu extends AbstractContainerMenu {
         int i = 3;
         int j = 9;
 
-        this.addSlot(new SlotByTag(container,0,30,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,1,48,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,2,66,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,3,30,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,4,48,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,5,66,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,6,30,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,7,48,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,8,66,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,9,30,71,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,10,48,71,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,11,66,71,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,0,30,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,1,48,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,2,66,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,3,30,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,4,48,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,5,66,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,6,30,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,7,48,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,8,66,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,9,30,71,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,10,48,71,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,11,66,71,"gear/core_medals"));
 
-        this.addSlot(new SlotByTag(container,12,94,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,13,112,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,14,130,17,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,15,94,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,16,112,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,17,130,35,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,18,94,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,19,112,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,20,130,53,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,21,94,71,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,22,112,71,"gear/o_medals"));
-        this.addSlot(new SlotByTag(container,23,130,71,"gear/o_medals"));
+        this.addSlot(new SlotByTag(container,12,94,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,13,112,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,14,130,17,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,15,94,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,16,112,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,17,130,35,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,18,94,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,19,112,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,20,130,53,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,21,94,71,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,22,112,71,"gear/core_medals"));
+        this.addSlot(new SlotByTag(container,23,130,71,"gear/core_medals"));
 
 
         for(int i1 = 0; i1 < 3; ++i1) {
