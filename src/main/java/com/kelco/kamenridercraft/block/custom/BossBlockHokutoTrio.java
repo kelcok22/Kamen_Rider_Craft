@@ -37,10 +37,6 @@ public class BossBlockHokutoTrio extends BaseBlock {
 	
 	@Override
 	public void playerDestroy(Level wolrd, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity p_49831_, ItemStack stack) {
-		player.awardStat(Stats.BLOCK_MINED.get(this));
-		player.causeFoodExhaustion(0.005F);
-		dropResources(state, wolrd, pos, p_49831_, player, stack);
-
 		BaseHenchmenEntity boss = MobsCore.OWL_LOST_SMASH.get().create(wolrd);
 		BaseHenchmenEntity boss2 = MobsCore.STAG_LOST_SMASH.get().create(wolrd);
 		BaseHenchmenEntity boss3 = MobsCore.CASTLE_LOST_SMASH.get().create(wolrd);
@@ -52,8 +48,8 @@ public class BossBlockHokutoTrio extends BaseBlock {
 			wolrd.addFreshEntity(boss2);
 			wolrd.addFreshEntity(boss3);
 			if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
-	}
-	     
+		}
+		super.playerDestroy(wolrd, player, pos, state, p_49831_, stack);	     
 	}
 
 }

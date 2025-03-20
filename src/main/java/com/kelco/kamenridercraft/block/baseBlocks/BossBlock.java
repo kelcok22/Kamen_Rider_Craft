@@ -42,9 +42,6 @@ public class BossBlock extends BaseBlock {
 	
 	@Override
 	public void playerDestroy(Level wolrd, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity p_49831_, ItemStack stack) {
-		player.awardStat(Stats.BLOCK_MINED.get(this));
-		player.causeFoodExhaustion(0.005F);
-		dropResources(state, wolrd, pos, p_49831_, player, stack);
 		if (BLOCK!=null) {
 				if(NUM==1) {
 					for (int n = 0; n < 40; n++)
@@ -73,8 +70,8 @@ public class BossBlock extends BaseBlock {
 			boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
 			wolrd.addFreshEntity(boss);
 			if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
-	}
-	     
+		}
+		super.playerDestroy(wolrd, player, pos, state, p_49831_, stack);
 	}
 
 }

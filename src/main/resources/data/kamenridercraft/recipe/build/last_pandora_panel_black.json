@@ -12,7 +12,7 @@
     }, "Z": {
       "tag": "c:chests"
     }, "T": {
-      "tag": "kamenridercraft:gear/lost_fullbottles"
+      "tag": "kamenridercraft:gear/fullbottles/lost"
     }
   },
   "result": {

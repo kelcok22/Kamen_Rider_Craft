@@ -6,7 +6,7 @@
 	  "conditions": {
 		"items": [
 		  {
-			"items": "#kamenridercraft:gear/hokuto_fullbottles"
+			"items": "#kamenridercraft:gear/fullbottles/hokuto"
 		  }
 		]
 	  }
