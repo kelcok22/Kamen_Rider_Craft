@@ -1,6 +1,7 @@
 {
   "values": [
 	"#kamenridercraft:arsenal/all_swordguns",
+	"kamenridercraft:century_king_black_blade",
 	"kamenridercraft:century_king_shadow_blade",
 	"kamenridercraft:satansabre",
 	"kamenridercraft:flaresalamander_sword",
@@ -93,7 +94,6 @@
 	"kamenridercraft:den_gasher_sword",
 	"kamenridercraft:den_gasher_rod",
 	"kamenridercraft:den_gasher_ax",
-	"kamenridercraft:den_gasher_gun",
 	"kamenridercraft:den_gasher_handax",
 	"kamenridercraft:den_gasher_boomerang",
 	"kamenridercraft:nega_den_gasher",
