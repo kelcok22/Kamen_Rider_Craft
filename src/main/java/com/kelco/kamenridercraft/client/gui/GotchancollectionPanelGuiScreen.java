@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class GotchancollectionPanelGuiScreen extends AbstractContainerScreen<GotchancollectionPanelGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_10_item_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/gotchancollection_panel_gui.png");
 
 	public GotchancollectionPanelGuiScreen(GotchancollectionPanelGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
