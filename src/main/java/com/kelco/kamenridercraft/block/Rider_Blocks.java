@@ -7,10 +7,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.*;
-import com.kelco.kamenridercraft.block.entity.AstroswitchPanelBlockEntity;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
-import com.kelco.kamenridercraft.block.storageBlock.AstroswitchPanelBlock;
 import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -172,12 +170,6 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> ASTROSWITCH_PROGRAMMER = registerBlock("astroswitch_programmer",
 			() -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
-
-	public static final DeferredBlock<AstroswitchPanelBlock> ASTROSWITCH_PANEL = registerBlock("astroswitch_panel",
-			() -> new AstroswitchPanelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-					.lightLevel((p_152632_) -> {return 100;}).strength(5.0F, 6.0F).noOcclusion()
-					.sound(SoundType.METAL), AstroswitchPanelBlockEntity.get())
-					.AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 

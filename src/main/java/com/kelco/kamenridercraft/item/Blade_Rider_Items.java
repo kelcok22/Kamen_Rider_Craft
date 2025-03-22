@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.blade.RouseBankItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -202,14 +201,7 @@ public class Blade_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
-
-	public static final DeferredItem<Item> CHALICE_DECK = ITEMS.register("card_deck_chalice",
-			() -> new RouseBankItem());
-	public static final DeferredItem<Item> LEANGLE_DECK = ITEMS.register("card_deck_leangle",
-			() -> new RouseBankItem());
-	public static final DeferredItem<Item> ROUSE_BANK = ITEMS.register("rouse_bank",
-			() -> new RouseBankItem());
-
+	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

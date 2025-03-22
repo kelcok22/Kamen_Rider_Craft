@@ -18,7 +18,7 @@ public class ShiftCarHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public ShiftCarHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Drive_Rider_Items.SHIFT_CAR_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Drive_Rider_Items.DRIVE_DRIVER.get()));
 	}
 
 	public ShiftCarHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

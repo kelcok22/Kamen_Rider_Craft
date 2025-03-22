@@ -23,13 +23,10 @@ public class ModMenus {
 	public static final Supplier<MenuType<AdventDeckGuiMenu>> ADVENT_DECK_GUI = REGISTRY.register("advent_deck_gui",
 			() -> IMenuTypeExtension.create(AdventDeckGuiMenu::new));
 
-	public static final DeferredHolder<MenuType<?>, MenuType<RouseBankGuiMenu>> ROUSE_BANK_GUI = REGISTRY.register("rouse_bank_gui", () -> IMenuTypeExtension.create(RouseBankGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FueslotGuiMenu>> FUESLOT_GUI = REGISTRY.register("fueslot_gui", () -> IMenuTypeExtension.create(FueslotGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RideBookerGuiMenu>> RIDE_BOOKER_GUI = REGISTRY.register("ride_booker_gui", () -> IMenuTypeExtension.create(RideBookerGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<T2MemoryCaseGuiMenu>> T2_MEMORY_CASE_GUI = REGISTRY.register("t2_memory_case_gui", () -> IMenuTypeExtension.create(T2MemoryCaseGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<OMedalHolderGuiMenu>> O_MEDAL_HOLDER_GUI = REGISTRY.register("o_medal_holder_gui", () -> IMenuTypeExtension.create(OMedalHolderGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelGuiMenu>> ASTROSWITCH_PANEL_GUI = REGISTRY.register("astroswitch_panel_gui", () -> IMenuTypeExtension.create(AstroswitchPanelGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchPanelDoubleGuiMenu>> ASTROSWITCH_PANEL_DOUBLE_GUI = REGISTRY.register("astroswitch_panel_double_gui", () -> IMenuTypeExtension.create(AstroswitchPanelDoubleGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchCaseGuiMenu>> ASTROSWITCH_CASE_GUI = REGISTRY.register("astroswitch_case_gui", () -> IMenuTypeExtension.create(AstroswitchCaseGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RingHolderGuiMenu>> RING_HOLDER_GUI = REGISTRY.register("ring_holder_gui", () -> IMenuTypeExtension.create(RingHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RingHolderGuiMenuBeast>> RING_HOLDER_GUI_BEAST = REGISTRY.register("ring_holder_gui_beast", () -> IMenuTypeExtension.create(RingHolderGuiMenuBeast::new));
@@ -48,7 +45,6 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<RaiseBuckleHolderGuiMenu>> RAISE_BUCKLE_HOLDER_GUI = REGISTRY.register("raise_buckle_holder_gui", () -> IMenuTypeExtension.create(RaiseBuckleHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchandrawHolderGuiMenu>> GOTCHANDRAW_HOLDER_GUI = REGISTRY.register("gotchandraw_holder_gui", () -> IMenuTypeExtension.create(GotchandrawHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<GochizoHolderGuiMenu>> GOCHIZO_HOLDER_GUI = REGISTRY.register("gochizo_holder_gui", () -> IMenuTypeExtension.create(GochizoHolderGuiMenu::new));
 
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 

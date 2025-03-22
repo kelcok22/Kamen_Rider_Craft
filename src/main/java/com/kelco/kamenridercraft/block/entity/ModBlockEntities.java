@@ -23,10 +23,6 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             Rider_Blocks.HELHEIM_HANGING_SIGN.get(), Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()).build(null));
 
-    public static final Supplier<BlockEntityType<AstroswitchPanelBlockEntity>> ASTROSWITCH_PANEL =
-            BLOCK_ENTITIES.register("astroswitch_panel", () ->
-                    BlockEntityType.Builder.of(AstroswitchPanelBlockEntity::new,
-                            Rider_Blocks.ASTROSWITCH_PANEL.get()).build(null));
 
     public static final Supplier<BlockEntityType<PandoraPanelBlockEntity>> PANDORA_PANEL_BE =
             BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
