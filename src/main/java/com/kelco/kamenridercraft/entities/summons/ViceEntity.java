@@ -278,12 +278,4 @@ public class ViceEntity extends BaseSummonEntity {
 			return false;
 		}
 	}
-
-	public boolean isBaby() {
-		return false;
-	}
-
-	public boolean canMate(Animal p_30392_) {
-		return false;
-	}
 }
