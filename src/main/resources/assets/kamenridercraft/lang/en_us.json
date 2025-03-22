@@ -5533,7 +5533,7 @@
 "kamenridercraft:boost_raise_buckle.form": "Boost",
 "kamenridercraft:boost_mkii_raise_buckle.form": "Boost Form MarkII",
 "kamenridercraft:unite_grip.form": "LaserBoost Form",
-"kamenridercraft:boost_mkiii_raise_buckle.form": "Boost Form MarkIII",
+"kamenridercraft:boost_mkiii_raise_buckle.form": "Boost",
 "kamenridercraft:boost_mkiii_raise_buckle.form_ix": "GeatsIX",
 "kamenridercraft:oneness_raise_buckle.form": "Geats Oneness",
 
@@ -5626,6 +5626,7 @@
 
 "kamenridercraft:form.armed": "Armed",
 "kamenridercraft:form.form": "Form",
+"kamenridercraft:form.mkiii": "MarkIII",
 "kamenridercraft:form.jyamashin": "(Jyamashin)",
 
 "kamenridercraft:blank_rider_core_id.form": "Form: Entry Form",

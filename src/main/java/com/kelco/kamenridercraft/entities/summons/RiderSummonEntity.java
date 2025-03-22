@@ -114,12 +114,4 @@ public class RiderSummonEntity extends BaseSummonEntity {
             else return true;
         } else return false;
 	}
-
-	public boolean isBaby() {
-		return false;
-	}
-
-	public boolean canMate(Animal p_30392_) {
-		return false;
-	}
 }

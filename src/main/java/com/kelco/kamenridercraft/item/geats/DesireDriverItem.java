@@ -80,17 +80,7 @@ public class DesireDriverItem  extends RiderDriverItem {
     	    } else if (formItem2==Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkii_raise_buckle.form").getString()));
     	    else if (formItem2==Geats_Rider_Items.UNITE_GRIP.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:unite_grip.form").getString()));
     	    else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&formItem3==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form_ix").getString()));
-			else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()||formItem3==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) {
-				if (formItem2==Modded_item_core.BLANK_FORM.get()||formItem3==Modded_item_core.BLANK_FORM.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
-				else if (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "
-					+(isArmedBuckle(formItem3)? Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
-					+Component.translatable(formItem3.toString() + ".form").getString()
-					+(isArmedBuckle(formItem3)? " " : "")+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
-				else tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString()+" "
-					+(isArmedBuckle(formItem2)? Component.translatable("kamenridercraft:form.armed").getString() + " ": "")
-					+Component.translatable(formItem2.toString() + ".form").getString()
-					+(isArmedBuckle(formItem2)? " " : "")+Component.translatable("kamenridercraft:boost_mkiii_raise_buckle.form").getString()));
-    	    } else if (formItem3==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()){
+			else if (formItem3==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()){
     	        tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 					+ (formItem2!=Modded_item_core.BLANK_FORM.get() ? (Component.translatable("kamenridercraft:bujin_sword_raise_buckle.form_r").getString()+" "+Component.translatable(formItem2.toString() + ".form").getString())
 					: Component.translatable(formItem3.toString() + ".form").getString())
@@ -102,6 +92,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 					+ (isArmedBuckle(formItem3)&&!isArmedBuckle(formItem2) ? Component.translatable("kamenridercraft:form.armed").getString() + " ":"")
 					+ (formItem3!=Modded_item_core.BLANK_FORM.get()&&formItem3!=Geats_Rider_Items.GIGANT_CONTAINER_BUCKLE.get() ? Component.translatable(formItem3.toString() + ".form").getString() + " " : "")
 					+ Component.translatable("kamenridercraft:form.form").getString()
+					+ (formItem2==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()||formItem3==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get() ? " " + Component.translatable("kamenridercraft:form.mkiii").getString() : "")
 					+ (formItem==Geats_Rider_Items.JYAMASHIN_WISH_CARD.get() ? " " + Component.translatable("kamenridercraft:form.jyamashin").getString() : "")));
     	    } 
 		}
