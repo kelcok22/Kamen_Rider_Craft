@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.gavv.GochizoHolderItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -349,9 +348,6 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vram",DOPPUDDING_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
-
-	public static final DeferredItem<Item> GOCHIZO_HOLDER = ITEMS.register("gochizo_holder",
-			() -> new GochizoHolderItem());
 
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",

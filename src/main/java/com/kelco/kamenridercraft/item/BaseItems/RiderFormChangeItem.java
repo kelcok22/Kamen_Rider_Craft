@@ -283,6 +283,11 @@ public class RiderFormChangeItem extends BaseItem {
         IGNORE_BELT_TEXT =true;
         return this;
     }
+
+    public RiderFormChangeItem addNeedForm(Item  item) {
+    NEED_FORM_SLOT_1=((RiderFormChangeItem)item);
+        return this;
+    }
     public RiderFormChangeItem addNeedForm(Item  item, int slot) {
 
         if (slot==1)NEED_FORM_SLOT_1=((RiderFormChangeItem)item);
