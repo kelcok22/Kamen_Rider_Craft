@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -21,6 +22,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -210,7 +212,7 @@ public class Kiva_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -234,7 +236,7 @@ public class Kiva_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> IXA_BELT = ITEMS.register("ixa_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -261,7 +263,7 @@ public class Kiva_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
     public static final DeferredItem<Item> DARK_KIVAT_BELT = ITEMS.register("darkkivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kiva", WAKE_UP_FUESTLE_DARK_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_kiva", WAKE_UP_FUESTLE_DARK_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -285,7 +287,7 @@ public class Kiva_Rider_Items {
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> NEW_KIVAT_BELT = ITEMS.register("newkivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {

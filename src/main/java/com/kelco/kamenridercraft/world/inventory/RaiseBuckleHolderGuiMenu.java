@@ -15,11 +15,11 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class RaiseBuckleHolderGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 3;
+	private static final int CONTAINER_SIZE = 2;
 	private final Container container;
 
 	public RaiseBuckleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Geats_Rider_Items.RAISE_BUCKLE_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Geats_Rider_Items.DESIRE_DRIVER_GEATS.get()));
 	}
 
 	public RaiseBuckleHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
@@ -29,15 +29,14 @@ public class RaiseBuckleHolderGuiMenu extends AbstractContainerMenu {
 
 	public RaiseBuckleHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
 		super(ModMenus.RAISE_BUCKLE_HOLDER_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,3);
+		this.container = new BasicContainer(itemstack,2);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,80,16,"gear/raise_buckles"));
-		this.addSlot(new SlotByTag(container,1,80,34,"gear/raise_buckles"));
-		this.addSlot(new SlotByTag(container,2,80,52,"gear/raise_buckles"));
+		this.addSlot(new SlotByTag(container,0,44,35,"gear/raise_buckles"));
+		this.addSlot(new SlotByTag(container,1,116,35,"gear/raise_buckles"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

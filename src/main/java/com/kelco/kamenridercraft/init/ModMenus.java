@@ -32,7 +32,6 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<RingHolderGuiMenuBeast>> RING_HOLDER_GUI_BEAST = REGISTRY.register("ring_holder_gui_beast", () -> IMenuTypeExtension.create(RingHolderGuiMenuBeast::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<LockseedHolderGuiMenu>> LOCKSEED_HOLDER_GUI = REGISTRY.register("lockseed_holder_gui", () -> IMenuTypeExtension.create(LockseedHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ShiftCarHolderGuiMenu>> SHIFT_CAR_HOLDER_GUI = REGISTRY.register("shift_car_holder_gui", () -> IMenuTypeExtension.create(ShiftCarHolderGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<KimewazaSlotHolderGuiMenu>> KIMEWAZA_SLOT_HOLDER_GUI = REGISTRY.register("kimewaza_slot_holder_gui", () -> IMenuTypeExtension.create(KimewazaSlotHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RiderGashatCaseGuiMenu>> RIDER_GASHAT_CASE_GUI = REGISTRY.register("rider_gashat_case_gui", () -> IMenuTypeExtension.create(RiderGashatCaseGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<EnergyItemHolderGuiMenu>> ENERGY_ITEM_HOLDER_GUI = REGISTRY.register("energy_item_holder_gui", () -> IMenuTypeExtension.create(EnergyItemHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FullBottleHolderGuiMenu>> FULL_BOTTLE_HOLDER_GUI = REGISTRY.register("full_bottle_holder_gui", () -> IMenuTypeExtension.create(FullBottleHolderGuiMenu::new));

@@ -39,7 +39,7 @@ public class RaiseBuckleHolderItem extends BaseItem {
             serverPlayer.openMenu(new MenuProvider() {
                 @Override
                 public Component getDisplayName() {
-                    return Component.literal("Raise Buckle Holder");
+                    return Component.translatable("raise_buckle_holder.text");
                 }
 
                 @Override

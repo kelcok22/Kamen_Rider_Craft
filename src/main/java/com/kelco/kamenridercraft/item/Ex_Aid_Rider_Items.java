@@ -1240,13 +1240,8 @@ public class Ex_Aid_Rider_Items {
 
 	// Ghost x Ex-Aid maybe use for the Ex-Aid Ghost Eyecon
 
-	public static final DeferredItem<Item> KIMEWAZA_SLOT_HOLDER = ITEMS.register("kimewaza_slot_holder",
-			() -> new KimewazaSlotHolderItem());
-
 	public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
 			() -> new RiderGashatCaseItem().has_basic_model().AddToList(RiderTabs.EX_AID_TAB_ITEM));
-
-
 
 	public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
 			() -> new EnergyItemHolderItem().AddToList(RiderTabs.EX_AID_TAB_ITEM));
