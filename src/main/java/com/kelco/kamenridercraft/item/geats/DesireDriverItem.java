@@ -67,7 +67,6 @@ public class DesireDriverItem  extends RiderDriverItem {
 			}
 		}, buf -> {
 			buf.writeBlockPos(player.blockPosition());
-			buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 		});
 	}
 

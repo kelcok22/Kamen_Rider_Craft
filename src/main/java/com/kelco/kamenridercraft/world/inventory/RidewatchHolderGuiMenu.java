@@ -19,7 +19,7 @@ public class RidewatchHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public RidewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Zi_O_Rider_Items.RIDEWATCH_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
 	}
 
 	public RidewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
