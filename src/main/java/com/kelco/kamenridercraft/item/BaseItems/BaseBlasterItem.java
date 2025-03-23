@@ -38,6 +38,9 @@ public class BaseBlasterItem extends BowItem {
 	private Item FormChangeItem = null;
 	private Item HenshinBeltItem = null;
 	private static int LFBB = 1;
+	private Item craftingRemainingItem = null;
+
+
 	public enum BlasterProjectile {
 		ARROW,
 		SMALL_FIREBALL {
@@ -98,7 +101,35 @@ public class BaseBlasterItem extends BowItem {
 		return this;
 	}
 
-    @Override
+	public BaseBlasterItem KeepDifItem(Item Dif) {
+		craftingRemainingItem=Dif;
+		return this;
+	}
+
+	public BaseBlasterItem KeepItem() {
+		craftingRemainingItem=this;
+		return this;
+	}
+
+	public ItemStack getCraftingRemainingItem(ItemStack stack)
+	{
+		if (stack.getItem() instanceof BaseBlasterItem) {
+			if (!hasCraftingRemainingItem(stack))
+			{
+				return ItemStack.EMPTY;
+			}
+			return new ItemStack(craftingRemainingItem);
+		} else  return new ItemStack(this.getCraftingRemainingItem());
+	}
+
+
+	public boolean hasCraftingRemainingItem(ItemStack stack)
+	{
+		return ((BaseBlasterItem)stack.getItem()).craftingRemainingItem!=null;
+	}
+
+
+	@Override
     public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
         return !player.isCreative();
     }
