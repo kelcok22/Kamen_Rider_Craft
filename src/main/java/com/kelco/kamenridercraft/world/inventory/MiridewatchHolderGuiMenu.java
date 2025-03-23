@@ -18,7 +18,7 @@ public class MiridewatchHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public MiridewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Zi_O_Rider_Items.MIRIDEWATCH_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Zi_O_Rider_Items.BEYONDRIVER.get()));
 	}
 
 	public MiridewatchHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

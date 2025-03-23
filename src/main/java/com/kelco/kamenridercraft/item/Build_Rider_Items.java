@@ -10,12 +10,22 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.build.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
+import com.kelco.kamenridercraft.world.inventory.FullBottleHolderGuiMenu;
+import io.netty.buffer.Unpooled;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -931,32 +941,172 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> BUILD_DRIVER_CROSS_Z = ITEMS.register("build_driver_cross_z",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z", DRAGON_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS)
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS)
 					.ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_GREASE = ITEMS.register("build_driver_grease",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease_blizzard", NORTH_BLIZZARD_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_ROGUE = ITEMS.register("build_driver_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "prime_rogue", PRIME_ROGUE_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_BLOOD = ITEMS.register("build_driver_blood",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "blood", BLACK_LOST_COBRA_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_KILLBUS = ITEMS.register("build_driver_killbus",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "killbus", KILLBUS_SPIDER_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_METAL = ITEMS.register("build_driver_metal",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "metal_build", METAL_TANK_TANK_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_PHANTOM = ITEMS.register("build_driver_phantom",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "phantom_build", METAL_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fullbottle_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FullBottleHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1041,9 +1191,6 @@ public class Build_Rider_Items {
 	public static final DeferredItem<Item> NANBA_WALKING_STICK = ITEMS.register("nanba_walking_stick",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
-
-	public static final DeferredItem<Item> FULLBOTTLE_HOLDER = ITEMS.register("fullbottle_holder",
-			() -> new FullBottleHolderItem());
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
