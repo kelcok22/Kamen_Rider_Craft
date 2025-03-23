@@ -348,11 +348,13 @@
   "kamenridercraft:base.form": "Form: Base Form",
 
   "advent_deck_blank.text":"Advent Deck",
+  "fueslot_gui.text": "Fueslot",
   "ring_holder_gui.text":"Ring Holder",
   "lockseed_holder.text":"Lockseed Holder",
   "energy_item_holder_gui.text": "Energy Item Holder",
   "t2_memory_case.text": "T2 Memory Case",
   "o_medal_holder_gui.text": "O Medal Holder",
+  "shift_car_holder.text": "Shift Car Holder",
   "valvaradraw_buckle.text": "Valvaradraw Buckle",
 
   "item.kamenridercraft.rider_circuit": "Rider Circuit",
