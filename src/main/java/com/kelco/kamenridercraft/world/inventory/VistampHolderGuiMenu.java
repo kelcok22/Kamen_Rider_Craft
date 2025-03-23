@@ -15,11 +15,11 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class VistampHolderGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 3;
+	private static final int CONTAINER_SIZE = 2;
 	private final Container container;
 
 	public VistampHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Revice_Rider_Items.VISTAMP_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Revice_Rider_Items.REVICE_DRIVER.get()));
 	}
 
 	public VistampHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
@@ -29,15 +29,14 @@ public class VistampHolderGuiMenu extends AbstractContainerMenu {
 
 	public VistampHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
 		super(ModMenus.VISTAMP_HOLDER_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,3);
+		this.container = new BasicContainer(itemstack,2);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,80,16,"gear/vistamps"));
-		this.addSlot(new SlotByTag(container,1,80,34,"gear/vistamps"));
-		this.addSlot(new SlotByTag(container,2,80,52,"gear/vistamps"));
+		this.addSlot(new SlotByTag(container,0,44,35,"gear/raise_buckles"));
+		this.addSlot(new SlotByTag(container,1,116,35,"gear/raise_buckles"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

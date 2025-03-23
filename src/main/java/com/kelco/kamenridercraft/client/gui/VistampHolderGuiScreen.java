@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class VistampHolderGuiScreen extends AbstractContainerScreen<VistampHolderGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_3_item_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_2_item_gui.png");
 
 	public VistampHolderGuiScreen(VistampHolderGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);

@@ -228,9 +228,6 @@ public class Kiva_Rider_Items {
 							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							return new FueslotGuiMenu(id, inventory, packetBuffer,itemstack);
 						}
-					}, buf -> {
-						buf.writeBlockPos(player.blockPosition());
-						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
