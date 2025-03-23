@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/lockseed_holder"
+    "layer0": "kamenridercraft:item/bispinktirol_gochizo"
   }
 }

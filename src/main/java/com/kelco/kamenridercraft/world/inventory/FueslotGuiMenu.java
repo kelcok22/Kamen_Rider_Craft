@@ -17,7 +17,7 @@ public class FueslotGuiMenu extends AbstractContainerMenu {
     private final Container container;
 
     public FueslotGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(Kiva_Rider_Items.FUESLOT.get()));
+        this(containerId, playerInventory,new ItemStack(Kiva_Rider_Items.KIVAT_BELT.get()));
     }
 
     public FueslotGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

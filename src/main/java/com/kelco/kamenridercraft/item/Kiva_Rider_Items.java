@@ -7,15 +7,20 @@ import java.util.List;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-/*import com.kelco.kamenridercraft.item.kiva.FueslotItem;*/
-import com.kelco.kamenridercraft.item.kiva.FueslotItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
+import io.netty.buffer.Unpooled;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -205,7 +210,28 @@ public class Kiva_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> KIVAT_BELT = ITEMS.register("kivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fueslot_gui.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FueslotGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+					});
+				}
+			}.AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> IXA_BELT = ITEMS.register("ixa_belt",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
@@ -274,8 +300,6 @@ public class Kiva_Rider_Items {
 	public static final DeferredItem<Item> FANGIRE_BUSTER = ITEMS.register("fangire_buster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
-	public static final DeferredItem<Item> FUESLOT = ITEMS.register("fueslot",
-			() -> new FueslotItem());
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

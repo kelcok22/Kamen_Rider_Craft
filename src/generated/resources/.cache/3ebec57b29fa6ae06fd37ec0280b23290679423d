@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-21T23:25:27.714401	Item Models: kamenridercraft
+// 1.21.1	2025-03-22T23:42:00.7548068	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -60,6 +60,7 @@ d550ff0edafc122c552b0a54ef88ced7083debf2 assets/kamenridercraft/models/item/daio
 7d163395d25fb9622ac7cdb5dceb6da1fb0a9bd4 assets/kamenridercraft/models/item/deadheat_bike.json
 077705301f8af97fc456048af95349cd456b0c97 assets/kamenridercraft/models/item/deadheat_car.json
 352b7ba3793a7a69f55ff6ec3cc843e1f7a39d56 assets/kamenridercraft/models/item/deco_traveller.json
+7664325c7fcad7a2b5686972d3b784641e3bc458 assets/kamenridercraft/models/item/doppudding_gochizo.json
 da23850151ba6b5f79815846f2796ca667788c70 assets/kamenridercraft/models/item/dragon_full_bottle_build.json
 96aaa11663cdea3fc204bee7964dec0b078f28c5 assets/kamenridercraft/models/item/drive_full_bottle.json
 426b4fcdb718ca395876918bfef9c122203c5e71 assets/kamenridercraft/models/item/drive_system_car.json
