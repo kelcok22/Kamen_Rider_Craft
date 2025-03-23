@@ -1107,10 +1107,6 @@ public class Geats_Rider_Items {
              () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
            		  new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
-
-	public static final DeferredItem<Item> RAISE_BUCKLE_HOLDER = ITEMS.register("raise_buckle_holder",
-			() -> new RaiseBuckleHolderItem());
- 
 	
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)

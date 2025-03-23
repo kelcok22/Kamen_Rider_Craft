@@ -355,6 +355,8 @@
   "t2_memory_case.text": "T2 Memory Case",
   "o_medal_holder_gui.text": "O Medal Holder",
   "shift_car_holder.text": "Shift Car Holder",
+  "raise_buckle_holder.text": "Raise Buckle Holder",
+  "gotchandraw_holder.text": "Gotchandraw Holder",
   "valvaradraw_buckle.text": "Valvaradraw Buckle",
 
   "item.kamenridercraft.rider_circuit": "Rider Circuit",
@@ -6735,6 +6737,7 @@
 
   "block.kamenridercraft.pandora_box": "Pandora Box",
   "block.kamenridercraft.pandora_fire": "Pandora Flare",
+  "block.kamenridercraft.pandora_panel_block": "Pandora Panel",
 
 "block.kamenridercraft.mighty_block": "Mighty Block",
 "block.kamenridercraft.bang_bang_drum": "Bang Bang Drum",

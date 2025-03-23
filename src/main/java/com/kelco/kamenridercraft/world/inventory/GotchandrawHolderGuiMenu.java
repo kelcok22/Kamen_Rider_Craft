@@ -19,7 +19,7 @@ public class GotchandrawHolderGuiMenu extends AbstractContainerMenu {
 	private final Container container;
 
 	public GotchandrawHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Gotchard_Rider_Items.GOTCHANDRAW_HOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Gotchard_Rider_Items.GOTCHARDRIVER.get()));
 	}
 
 	public GotchandrawHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {

@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class RaiseBuckleHolderGuiScreen extends AbstractContainerScreen<RaiseBuckleHolderGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_3_item_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_2_item_gui.png");
 
 	public RaiseBuckleHolderGuiScreen(RaiseBuckleHolderGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
