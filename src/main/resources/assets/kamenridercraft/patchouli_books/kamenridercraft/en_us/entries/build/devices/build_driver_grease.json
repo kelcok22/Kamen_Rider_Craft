@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/grease)Kamen Rider Grease"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/grease)Kamen Rider Grease$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",

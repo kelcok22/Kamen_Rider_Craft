@@ -32,6 +32,7 @@ import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.Monster;
@@ -114,9 +115,9 @@ public class CompleteSummonEntity extends BaseSummonEntity {
             }
 
             if (this.tamable.getOwner() instanceof Player player) {
-                if (player.isUsingItem() && player.getUseItem().getItem() instanceof BowItem) this.tamable.startUsingItem(this.tamable.getUsedItemHand());
+                if (player.isUsingItem() && player.getUseItem().getItem() instanceof BowItem) this.tamable.startUsingItem(ProjectileUtil.getWeaponHoldingHand(this.tamable, item -> item instanceof BowItem));
                 else if (this.tamable.isUsingItem()) {
-                    if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(2);
+                    if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(20);
                     this.tamable.releaseUsingItem();
                 }
             }
@@ -124,9 +125,12 @@ public class CompleteSummonEntity extends BaseSummonEntity {
     }
 
     public void mimicSwing(Player player, InteractionHand hand) {
+        final TargetingConditions targeting = TargetingConditions.forCombat().range(16).selector(entity ->
+        entity != this.getOwner() && (!(entity instanceof Player) || entity == this.getOwner().getLastHurtMob()));
+        LivingEntity target = this.level().getNearestEntity(LivingEntity.class, targeting, this, this.getX(), this.getY(), this.getZ(), this.getBoundingBox().inflate(1.0));
+
         this.swing(hand);
-        if (player.getLastHurtMob()!=null && player.getLastHurtMob()!=this && this.isWithinMeleeAttackRange(player.getLastHurtMob())) this.doHurtTarget(player.getLastHurtMob());
-        else if (player.getLastHurtByMob()!=null && this.isWithinMeleeAttackRange(player.getLastHurtByMob())) this.doHurtTarget(player.getLastHurtByMob());
+        if (target != null) this.doHurtTarget(target);
     }
 
     @Override
@@ -149,7 +153,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
            abstractarrow = weaponItem.customArrow(abstractarrow, itemstack1, weapon);
         }
        
-        abstractarrow.shoot(this.getOwner().getLookAngle().x, this.getOwner().getLookAngle().y, this.getOwner().getLookAngle().z, 1.6F, (float)(14 - this.level().getDifficulty().getId() * 4));
+        abstractarrow.shoot(this.getLookAngle().x, this.getLookAngle().y, this.getLookAngle().z, 2.0F, (float)(14 - this.level().getDifficulty().getId() * 4));
         this.level().addFreshEntity(abstractarrow);
        }
        this.playSound(SoundEvents.BLAZE_SHOOT, 1.0F, 1.0F / (this.getRandom().nextFloat() * 0.4F + 0.8F));

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/keibi_rider)Keibi Rider"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/keibi_rider)Keibi Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -31,7 +31,7 @@ public class BasicMobModel<T extends Mob> extends PlayerModel<T> {
       this.rightArmPose = ArmPose.EMPTY;
       this.leftArmPose = ArmPose.EMPTY;
       ItemStack itemstack = p_103793_.getItemInHand(InteractionHand.MAIN_HAND);
-      if (itemstack.getItem() instanceof BowItem && p_103793_.isAggressive() && p_103793_.isUsingItem()) {
+      if (itemstack.getItem() instanceof BowItem && p_103793_.isUsingItem()) {
          if (p_103793_.getMainArm() == HumanoidArm.RIGHT) {
             this.rightArmPose = ArmPose.BOW_AND_ARROW;
          } else {

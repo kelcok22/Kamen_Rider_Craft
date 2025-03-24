@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/beast#beast)Kamen Rider Beast"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used alongside the $(l:wizard/devices/armor)Wizard armor$(/l) to transform into $(l:wizard/riders/beast#beast)Kamen Rider Beast$(/l)$(br2)Can store up to 7 stacks of Wizard Rings"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/vice)Kamen Rider Vice"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/vice)Kamen Rider Vice$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",

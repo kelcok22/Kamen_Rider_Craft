@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider_chirami)GM Rider"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into a $(l:geats/riders/gm_rider_chirami)GM Rider$(/l)$(br2)Can store up to 2 stacks of Raise Buckles"
 		},
 		{
 			"type": "patchouli:crafting",
