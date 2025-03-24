@@ -11,7 +11,7 @@
 	{
 
 		// How likely out of all the element for this one to be chosen.
-	  "weight": 1,
+	  "weight": 4,
 	  "element": {
 
 		  // The Identifier of the nbt file itself of the structure piece.
@@ -33,6 +33,25 @@
 		  // It's only for old Vanilla Jigsaw Structures so don't use it. Stick with non-legacy.
 		"element_type": "minecraft:single_pool_element"
 	  }
-	}
+	},
+	  {
+		  "weight": 1,
+		  "element": {
+			  "location": "kamenridercraft:city/origin/pandora_tower",
+			  "processors": "minecraft:empty",
+			  "projection": "rigid",
+			  "element_type": "minecraft:single_pool_element"
+		  }
+	  },
+	  {
+		  "weight": 4,
+		  "element": {
+			  "location": "kamenridercraft:city/origin/tokyo_tower",
+			  "processors": "minecraft:empty",
+			  "projection": "rigid",
+			  "element_type": "minecraft:single_pool_element"
+		  }
+	  }
+
   ]
 }
