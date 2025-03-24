@@ -1,12 +1,15 @@
 
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -15,11 +18,11 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class HissatsuHolderGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 3;
+	private static final int CONTAINER_SIZE = 4;
 	private final Container container;
 
 	public HissatsuHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-		this(containerId, playerInventory,new ItemStack(Saber_Rider_Items.HISSATSUHOLDER.get()));
+		this(containerId, playerInventory,new ItemStack(Saber_Rider_Items.SEIKEN_SWORDRIVER_DRIVER_SABER.get()));
 	}
 
 	public HissatsuHolderGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
@@ -29,15 +32,21 @@ public class HissatsuHolderGuiMenu extends AbstractContainerMenu {
 
 	public HissatsuHolderGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
 		super(ModMenus.HISSATSU_HOLDER_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,3);
+		this.container = new BasicContainer(itemstack,4);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
 		int j = 9;
 
+		this.addSlot(new Slot(container, 3,116,44) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/by_series/saber")));
+			}
+		});
 		this.addSlot(new SlotByTag(container,0,44,26,"gear/wonder_ride_books"));
 		this.addSlot(new SlotByTag(container,1,44,44,"gear/wonder_ride_books"));
-		this.addSlot(new SlotByTag(container,2,116,35,"gear/wonder_ride_books"));
+		this.addSlot(new SlotByTag(container,2,116,26,"gear/wonder_ride_books"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
