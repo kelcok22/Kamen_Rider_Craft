@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/killbus)Kamen Rider Killbus"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/killbus)Kamen Rider Killbus$(/l)$(br2)Can store up to 3 stacks of Fullbottles"
 		},
 		{
 			"type": "patchouli:crafting",

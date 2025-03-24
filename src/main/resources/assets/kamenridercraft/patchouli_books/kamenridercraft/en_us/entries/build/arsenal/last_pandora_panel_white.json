@@ -1,0 +1,19 @@
+{
+	"name": "Pandora Panel",
+	"icon": "kamenridercraft:last_pandora_panel_white",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Can store up to 10 stacks of Fullbottles"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:last_pandora_panel_white",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

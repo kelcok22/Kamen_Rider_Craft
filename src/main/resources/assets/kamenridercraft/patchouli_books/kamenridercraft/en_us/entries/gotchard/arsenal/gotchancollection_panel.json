@@ -1,0 +1,16 @@
+{
+	"name": "Gotchancollection Panel",
+	"icon": "kamenridercraft:gotchancollection_panel",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Can store up to 10 stacks of Ride Chemy Cards"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchancollection_panel"
+		}
+	]
+}

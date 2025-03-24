@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Can store up to 18 stacks of Astroswitches"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Can store up to 10 stacks of Astroswitches"
 		},
 		{
 			"type": "patchouli:crafting",
