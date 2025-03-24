@@ -22,5 +22,37 @@
         "stream": true
       }
     ]
+  },
+  "be_the_one": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:be_the_one",
+        "stream": true
+      }
+    ]
+  },
+  "excite": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:excite",
+        "stream": true
+      }
+    ]
+  },
+  "realxeyez": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:realxeyez",
+        "stream": true
+      }
+    ]
+  },
+  "alive_a_life": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:alive_a_life",
+        "stream": true
+      }
+    ]
   }
 }

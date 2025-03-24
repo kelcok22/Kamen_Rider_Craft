@@ -35,8 +35,8 @@ public class VistampHolderGuiMenu extends AbstractContainerMenu {
 		int i = 3;
 		int j = 9;
 
-		this.addSlot(new SlotByTag(container,0,44,35,"gear/raise_buckles"));
-		this.addSlot(new SlotByTag(container,1,116,35,"gear/raise_buckles"));
+		this.addSlot(new SlotByTag(container,0,44,35,"gear/vistamps"));
+		this.addSlot(new SlotByTag(container,1,116,35,"gear/vistamps"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
