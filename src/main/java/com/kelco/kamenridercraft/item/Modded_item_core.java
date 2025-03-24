@@ -319,12 +319,23 @@ public class Modded_item_core {
     public static final DeferredItem<Item> LETS_GO_RIDER_MUSIC_DISC = ITEMS.register("lets_go_rider_kick_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.LETS_GO_RIDER_KICK_KEY).stacksTo(1)));
 
-    public static final DeferredItem<Item> JUSTIFAIZ_MUSIC_DISC = ITEMS.register("justifaiz_music_disc",
-            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.JUSTIFAIZ_KEY).stacksTo(1)));
-
     public static final DeferredItem<Item> KAMEN_RIDER_BLACK_MUSIC_DISC = ITEMS.register("kamen_rider_black_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.KAMEN_RIDER_BLACK_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> ALIVE_A_LIFE_MUSIC_DISC = ITEMS.register("alive_a_life_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ALIVE_A_LIFE_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> JUSTIFAIZ_MUSIC_DISC = ITEMS.register("justifaiz_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.JUSTIFAIZ_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> EXCITE_KEY_MUSIC_DISC = ITEMS.register("excite_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.EXCITE_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> BE_THE_ONE_MUSIC_DISC = ITEMS.register("be_the_one_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BE_THE_ONE_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> REAL_X_EYEZ_MUSIC_DISC = ITEMS.register("realxeyez_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.REAL_X_EYEZ_KEY).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);
