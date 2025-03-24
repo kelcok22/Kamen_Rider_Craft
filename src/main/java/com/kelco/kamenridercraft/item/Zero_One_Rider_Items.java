@@ -750,7 +750,7 @@ public class Zero_One_Rider_Items {
     		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"valkyrie",RUSHING_CHEETAH_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZAIA_THOUSANDRIVER = ITEMS.register("zaia_thousandriver",
-    		() -> new ThousandriverItem(ArmorMaterials.DIAMOND,"thouser",AMAZING_CAUCASUS_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ThousandriverItem(ArmorMaterials.DIAMOND,"thouser",AMAZING_CAUCASUS_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> ZAIA_THOUSANDRIVER_ZAIA = ITEMS.register("zaia_thousandriver_zaia",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zaia",TRICERATOPS_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
@@ -776,9 +776,9 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> ARK_DRIVER_ZERO = ITEMS.register("ark_driver_zero",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero",ARK_ZERO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ARK_DRIVER_ZERO_THOUSAND_ARK = ITEMS.register("ark_driver_zero_thousand_ark",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"thousand_ark",THOUSAND_ARK_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"thousand_ark",THOUSAND_ARK_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER_AZU = ITEMS.register("hiden_zero_one_driver_azu",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero_one",ARK_ZERO_ONE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero_one",ARK_ZERO_ONE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> CYCLONERISER = ITEMS.register("cycloneriser",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigata",ROCKING_HOPPER_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
@@ -805,7 +805,7 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vulcan_lone",DIRE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZEIN_DRIVER = ITEMS.register("zein_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zein",ZEIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zein",ZEIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 
 	public static final DeferredItem<Item> RAGNAROK_DRIVER = ITEMS.register("ragnarok_driver",

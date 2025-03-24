@@ -53,7 +53,7 @@
 		  {
 			"condition": "minecraft:match_tool",
 			"predicate": {
-			  "tag": "minecraft:music_discs"
+			  "tag": "c:music_discs"
 			}
 		  }
 		]

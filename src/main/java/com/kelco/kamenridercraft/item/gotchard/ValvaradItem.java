@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.gotchard;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 import org.jetbrains.annotations.Nullable;
@@ -10,6 +11,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
@@ -33,6 +35,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -47,6 +50,20 @@ public class ValvaradItem extends RiderDriverItem {
 		Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem) Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get(),(RiderFormChangeItem)Modded_item_core.BLANK_FORM.get());
 		Has_Inventory=true;
 		Num_Base_Form_Item=3;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		Item formItem = this.get_Form_Item(stack, 1);
+		Item formItem2 = this.get_Form_Item(stack, 2);
+		Item formItem3 = this.get_Form_Item(stack, 3);
+
+		tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+
+		if (formItem2!=Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!=Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+		else if (formItem2==Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3!=Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form"));
+		else if (formItem2!=Gotchard_Rider_Items.GEKIOCOPTER_RIDE_CHEMY_CARD.get()&&formItem3==Gotchard_Rider_Items.GUTSSHOVEL_RIDE_CHEMY_CARD.get()) tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
+		else tooltipComponents.add(Component.translatable("kamenridercraft:tri_custom.form"));
 	}
 
 

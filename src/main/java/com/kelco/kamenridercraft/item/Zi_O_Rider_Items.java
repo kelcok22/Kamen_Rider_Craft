@@ -748,7 +748,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_GEIZ = ITEMS.register("ziku_driver_geiz",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"geiz",GEIZ_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -796,7 +796,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> BEYONDRIVER = ITEMS.register("beyondriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"woz",WOZ_MIRIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -844,7 +844,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_BARLCKXS = ITEMS.register("ziku_driver_barlckxs",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"barlckxs",BARLCKXS_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -868,7 +868,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_ZONJIS = ITEMS.register("ziku_driver_zonjis",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zonjis",ZONJIS_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -892,7 +892,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_ZAMONAS = ITEMS.register("ziku_driver_zamonas",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zamonas",ZAMONAS_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -916,7 +916,7 @@ public class Zi_O_Rider_Items {
 						buf.writeBlockPos(player.blockPosition());
 					});
 				}
-			}.Has_Inventory_Gui().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> SHINOBIDRIVER = ITEMS.register("shinobi_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shinobi",SHURIKEN_STARTER ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
