@@ -12,7 +12,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class HissatsuHolderGuiScreen extends AbstractContainerScreen<HissatsuHolderGuiMenu> {
-	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/hissatsu_holder_gui.png");
+	private static final ResourceLocation CONTAINER_TEXTURE = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/container/basic_4_item_gui.png");
 
 	public HissatsuHolderGuiScreen(HissatsuHolderGuiMenu menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
