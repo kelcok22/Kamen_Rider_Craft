@@ -23,8 +23,32 @@
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
+			"item": "kamenridercraft:alive_a_life_music_disc",
+			"text": "Song:$(li)HosephHoestar - Alive A life$(br2)Based on:$(li)Rica Matsumoto - Alive A life$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Ryuki (2002, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
 			"item": "kamenridercraft:justifaiz_music_disc",
 			"text": "Song:$(li)HosephHoestar - Justiφ's$(br2)Based on:$(li)ISSA - Justiφ's$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider 555 (2003, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:excite_music_disc",
+			"text": "Song:$(li)HosephHoestar - EXCITE$(br2)Based on:$(li)Daichi Miura - EXCITE$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:be_the_one_music_disc",
+			"text": "Song:$(li)HosephHoestar - Be The One$(br2)Based on:$(li)PANDORA feat. Beverly - Be The One$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:realxeyez_music_disc",
+			"text": "Song:$(li)HosephHoestar - REAL×EYEZ$(br2)Based on:$(li)J×Takanori Nishikawa - REAL×EYEZ$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Zero-One (2019, TV show)"
 		}
 	]
 }
