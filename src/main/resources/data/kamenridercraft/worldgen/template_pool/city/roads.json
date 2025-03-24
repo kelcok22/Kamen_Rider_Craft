@@ -1,12 +1,12 @@
 {
-  "name": "kamenridercraft:city/roads_wide",
+  "name": "kamenridercraft:city/roads",
   
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 10,
       "element": {
-        "location": "kamenridercraft:city/roads/road_wide_straight",
+        "location": "kamenridercraft:city/roads/road_straight",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
@@ -15,7 +15,7 @@
     {
       "weight": 7,
       "element": {
-        "location": "kamenridercraft:city/roads/road_wide_cross",
+        "location": "kamenridercraft:city/roads/road_intersection",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
@@ -24,7 +24,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "kamenridercraft:city/roads/road_wide_t",
+        "location": "kamenridercraft:city/roads/road_t",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
@@ -33,7 +33,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "kamenridercraft:city/roads/road_wide_turn",
+        "location": "kamenridercraft:city/roads/road_turn",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
@@ -42,25 +42,7 @@
     {
       "weight": 6,
       "element": {
-        "location": "kamenridercraft:city/roads/road_wide_extension",
-        "processors": "minecraft:empty",
-        "projection": "terrain_matching",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 1,
-      "element": {
-        "location": "kamenridercraft:city/roads/road_transition_t",
-        "processors": "minecraft:empty",
-        "projection": "terrain_matching",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 1,
-      "element": {
-        "location": "kamenridercraft:city/roads/road_transition_straight",
+        "location": "kamenridercraft:city/roads/road_extension",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"

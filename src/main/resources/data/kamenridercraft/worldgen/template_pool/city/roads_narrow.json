@@ -42,16 +42,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "kamenridercraft:city/roads/road_narrow_extension_2",
-        "processors": "minecraft:empty",
-        "projection": "terrain_matching",
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 1,
-      "element": {
-        "location": "kamenridercraft:city/roads/road_narrow_extension_1",
+        "location": "kamenridercraft:city/roads/road_narrow_extension",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
