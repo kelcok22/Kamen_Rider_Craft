@@ -1110,7 +1110,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER_GREASE = ITEMS.register("sclash_driver_grease",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease", ROBOT_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,

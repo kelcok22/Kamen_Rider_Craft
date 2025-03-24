@@ -569,7 +569,7 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> BREAK_GUNNER_BELT = ITEMS.register("break_gunner_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mashin_chaser",PROTOZERO_CORE , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> LUPIN_BELT = ITEMS.register("lupin_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lupin",CYBEROID_ZZZ_CORE , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())

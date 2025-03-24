@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.revice.ReviceDriverItem;
+import com.kelco.kamenridercraft.item.revice.CyclotronDriverItem;
 import com.kelco.kamenridercraft.item.revice.DemonsDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.VistampHolderGuiMenu;
@@ -1091,7 +1092,7 @@ public class Revice_Rider_Items {
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> CYCLOTRON_DRIVER = ITEMS.register("cyclotron_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"century",CYCLOTRON_DRIVER_CORE ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+			() -> new CyclotronDriverItem(ArmorMaterials.DIAMOND,"century",CYCLOTRON_DRIVER_CORE ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> REVICE_DRIVER_LIVE = ITEMS.register("revice_driver_live",
