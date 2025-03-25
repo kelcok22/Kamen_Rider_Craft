@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.masked_rider.desc"
+  },
+  "length_in_seconds": 55,
+  "sound_event": "kamenridercraft:masked_rider"
+}
