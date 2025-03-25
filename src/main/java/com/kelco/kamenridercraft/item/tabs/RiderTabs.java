@@ -767,6 +767,8 @@ public class RiderTabs {
             event.accept(Modded_item_core.EXCITE_KEY_MUSIC_DISC);
             event.accept(Modded_item_core.BE_THE_ONE_MUSIC_DISC);
             event.accept(Modded_item_core.REAL_X_EYEZ_MUSIC_DISC);
+
+            event.accept(Modded_item_core.MASKED_RIDER_MUSIC_DISC);
         }
 
 

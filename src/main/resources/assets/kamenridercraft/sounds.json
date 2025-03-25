@@ -54,5 +54,13 @@
         "stream": true
       }
     ]
+  },
+  "masked_rider": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:masked_rider",
+        "stream": true
+      }
+    ]
   }
 }
