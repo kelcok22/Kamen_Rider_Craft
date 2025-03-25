@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft.item.BaseItems;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoField;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -49,6 +51,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public Item LEGS;
     public int Num_Base_Form_Item = 1;
     public String BELT_TEXT;
+    private Boolean A1 = false;
 
     public int Unlimited_Textures = 0;
 
@@ -149,6 +152,10 @@ public class RiderDriverItem extends RiderArmorItem {
         return this;
     }
 
+    public RiderDriverItem IsA1() {
+        A1=true;
+        return this;
+    }
     public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item,DeferredItem<Item> item2) {
         Extra_Base_Form_Item= Lists.newArrayList((RiderFormChangeItem)item.get(),(RiderFormChangeItem)item2.get());
         Num_Base_Form_Item=3;
@@ -315,12 +322,21 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
 
+        Boolean isDateA1 = false;
+        LocalDate localdate = LocalDate.now();
+        int i = localdate.get(ChronoField.DAY_OF_MONTH);
+        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+        if (j == 4 && i == 1) {
+            isDateA1=true;
+        }
             if (Has_basic_belt_info) {
-                tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
+                if (A1&isDateA1) tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider+".a1"));
+                else tooltipComponents.add(Component.translatable("kamenridercraft.name."+Rider));
                 if (Show_belt_form_info) {
                     {
-                        Item formItem = this.get_Form_Item(stack, 1);
-                        tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+                        RiderFormChangeItem formItem = this.get_Form_Item(stack, 1);
+                        if (formItem.get_a1()&isDateA1)tooltipComponents.add(Component.translatable(formItem.toString() + ".form.a1"));
+                        else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
                     }
                 }
             }

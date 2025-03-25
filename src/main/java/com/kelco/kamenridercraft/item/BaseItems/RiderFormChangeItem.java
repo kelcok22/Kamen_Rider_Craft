@@ -51,6 +51,8 @@ public class RiderFormChangeItem extends BaseItem {
     private String UPDATED_MODEL_ANIMATION;
     private Boolean SET_PLAYER_MODEL_INVISIBLE = false;
 
+    private Boolean A1 = false;
+
     private Boolean FLYING_TEXT = false;
     private Item STIFT_ITEM = Items.APPLE;
     private Item SWITCH_ITEM;
@@ -143,6 +145,10 @@ public class RiderFormChangeItem extends BaseItem {
 
     public Boolean get_Is_Glowing() {
         return IS_GLOWING;
+    }
+
+    public Boolean get_a1() {
+        return A1;
     }
 
     public Boolean get_Is_Belt_Glowing() {
@@ -264,6 +270,11 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem IsA1() {
+        A1=true;
+        return this;
+    }
+
     public RiderFormChangeItem IsBeltGlowing() {
         IS_BELT_GLOWING=true;
         return this;
@@ -335,8 +346,22 @@ public class RiderFormChangeItem extends BaseItem {
         return false;
     }
 
+    public Boolean Check_Inventory(ItemStack stack,Item item) {
 
-    public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
+            int J = 0;
+            Iterator var7 = ((ItemContainerContents) stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
+
+            while (var7.hasNext()) {
+                ItemStack itemstack = (ItemStack) var7.next();
+                ++J;
+                if (itemstack.getItem() == item) {
+                    return true;
+                } else return false;
+            }
+        return false;
+    }
+
+        public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
 
         if (this == Modded_item_core.BLANK_FORM.get()) {
             return true;
@@ -357,25 +382,10 @@ public class RiderFormChangeItem extends BaseItem {
             {
                 if (player.getInventory().countItem(NEEDITEM.get(i))==0){
                     if (belt.Has_Inventory) {
-                        int J = 0;
-                        Iterator var7 = ((ItemContainerContents) stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
+                        if (Check_Inventory(stack,NEEDITEM.get(i))){
 
-                        while (var7.hasNext()) {
-                            ItemStack itemstack = (ItemStack) var7.next();
-                            ++J;
-                            if (itemstack.getItem() == NEEDITEM.get(i)) {
-                                J = 100;
-                            }
-
-                        }
-                        if (J >= 99) {
-
-                        } else {
-                            return false;
-                        }
-                    }
-
-
+                        }else return false;
+                    }else return false;
                 }
             }
         }

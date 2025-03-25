@@ -4,8 +4,10 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
+import com.kelco.kamenridercraft.item.Fourze.AstroswitchCaseItem;
 import com.kelco.kamenridercraft.item.Fourze_Rider_Items;
 import com.kelco.kamenridercraft.item.Ryuki_Rider_Items;
+import com.kelco.kamenridercraft.item.ryuki.AdventDeckItem;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -48,12 +50,24 @@ public class AstroswitchCaseGuiMenu extends AbstractContainerMenu {
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {
-				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18));
+				this.addSlot(new Slot(playerInventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18){
+					@Override
+					public boolean mayPickup(Player player) {
+						if (this.getItem().getItem() instanceof AstroswitchCaseItem)return false;
+						else return true;
+					}
+				});
 			}
 		}
 
 		for(int j1 = 0; j1 < 9; ++j1) {
-			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142));
+			this.addSlot(new Slot(playerInventory, j1, 8 + j1 * 18, 142){
+				@Override
+				public boolean mayPickup(Player player) {
+					if (this.getItem().getItem() instanceof AstroswitchCaseItem)return false;
+					else return true;
+				}
+			});
 		}
 	}
 

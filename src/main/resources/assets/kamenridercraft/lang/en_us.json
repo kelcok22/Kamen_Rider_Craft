@@ -427,8 +427,10 @@
 
 "item.kamenridercraft.typhoon_ichigo": "Typhoon (Ichigo)",
 "kamenridercraft.name.ichigo": "Rider: Kamen Rider Ichigo",
+  "kamenridercraft.name.ichigo.a1": "Rider: Masked Rider Warrior Leader",
 "item.kamenridercraft.typhoon_nigo": "Typhoon (Nigo)",
 "kamenridercraft.name.nigo": "Rider: Kamen Rider Nigo",
+  "kamenridercraft.name.nigo.a1": "Rider: Unnamed Masked Rider Warrior #1",
 "item.kamenridercraft.typhoon_sango": "Typhoon (Sango)",
 "kamenridercraft.name.sango": "Rider: Kamen Rider Sango",
 "item.kamenridercraft.typhoon_yongo": "Typhoon (Yongo)",
@@ -481,8 +483,10 @@
 
 "item.kamenridercraft.double_typhoon": "Double Typhoon",
 "kamenridercraft.name.v3": "Rider: Kamen Rider V3",
+  "kamenridercraft.name.v3.a1": "Rider: Masked Rider Warrior Commander",
 "item.kamenridercraft.riderman_belt": "Rider Buckle",
 "kamenridercraft.name.riderman": "Rider: Riderman",
+  "kamenridercraft.name.riderman.a1": "Rider: Unnamed Masked Rider Warrior #2",
 
 "item.kamenridercraft.dark_double_typhoon": "Double Typhoon (Dark V3)",
 "kamenridercraft.name.dark_v3": "Rider: Dark V3",
@@ -499,6 +503,7 @@
   "kamenridercraft:perfecter.form": "Form: Perfector Equipped",
 "item.kamenridercraft.ridol": "Ridol",
 "kamenridercraft.name.x": "Rider: Kamen Rider X",
+  "kamenridercraft.name.x.a1": "Rider: Masked Rider V3",
 "item.kamenridercraft.dark_ridol": "Ridol (Dark X)",
 "kamenridercraft.name.dark_x": "Rider: Dark X",
 
@@ -511,6 +516,7 @@
   "kamenridercraft:condorer_wheel_pre_amazon.form": "Form: Pre-Amazon",
 "item.kamenridercraft.condorer": "Condorer",
 "kamenridercraft.name.amazon": "Rider: Kamen Rider Amazon",
+  "kamenridercraft.name.amazon.a1": "Rider: Riderman",
 "item.kamenridercraft.gigi_armlet": "GiGi Armlet",
 "item.kamenridercraft.gaga_armlet": "GaGa Armlet",
 "item.kamenridercraft.dark_condorer": "Condorer (Dark Amazon)",
@@ -529,6 +535,7 @@
   "kamenridercraft:tackle_core.form": "Form: Base Form",
 "item.kamenridercraft.electrer": "Electrer",
 "kamenridercraft.name.stronger": "Rider: Kamen Rider Stronger",
+  "kamenridercraft.name.stronger.a1": "Rider: Masked Rider X",
 "item.kamenridercraft.tackle_belt": "Tackle Belt",
 "kamenridercraft.name.tackle": "Debatable Rider: Electronic Wave Humanoid Tackle",
 "item.kamenridercraft.dark_electrer": "Electrer (Dark Stronger)",
@@ -542,6 +549,7 @@
 "item.kamenridercraft.tornado_core": "Tornado Core",
 "item.kamenridercraft.tornado": "Tornado",
 "kamenridercraft.name.skyrider": "Rider: Skyrider",
+  "kamenridercraft.name.skyrider.a1": "Rider: Masked Rider Amazon",
 
 "item.kamenridercraft.super_1_logo": "Super-1 Logo",
 "item.kamenridercraft.super_1head": "Super-1 Helmet",
@@ -550,6 +558,7 @@
 "item.kamenridercraft.cyclode_core": "Cyclode Core",
 "item.kamenridercraft.cyclode": "Cyclode",
 "kamenridercraft.name.super_1": "Rider: Kamen Rider Super-1",
+  "kamenridercraft.name.super_1.a1": "Rider: Strongman",
 
 "item.kamenridercraft.zx_logo": "ZX Logo",
 "item.kamenridercraft.zxhead": "ZX Helmet",
@@ -558,6 +567,7 @@
 "item.kamenridercraft.zx_belt_core": "ZX Belt Core",
 "item.kamenridercraft.zx_belt": "ZX Belt",
 "kamenridercraft.name.zx": "Rider: Kamen Rider ZX",
+  "kamenridercraft.name.zx.a1": "Rider: Masked Rider Z-Cross",
 "item.kamenridercraft.susanoo_belt": "Susanoo Belt",
 "kamenridercraft.name.susanoo_zx": "Debatable Rider: Susanoo",
 "item.kamenridercraft.tsukuyomi_belt": "Tsukuyomi Belt",
@@ -579,6 +589,7 @@
   "kamenridercraft:green_king_stone_hajime_sorayama.form": "Form: Base Form (Hajime Sorayama Ver.)",
 "item.kamenridercraft.shadow_charger": "Shadow Charger",
 "kamenridercraft.name.shadow_moon": "Debatable Rider: Shadow Moon",
+  "kamenridercraft.name.shadow_moon.a1": "Rider: Roborider",
 "item.kamenridercraft.batta_man_belt": "Batta Man Belt",
 "item.kamenridercraft.creation_king_stone": "Creation King Stone",
   "kamenridercraft:creation_king_stone.form": "Form: Creation King",
@@ -610,6 +621,13 @@
   "kamenridercraft:bio_core.form": "Form: Biorider",
 "item.kamenridercraft.shadow_blade": "Shadow Blade",
 "item.kamenridercraft.shadow_blade_short": "Shadow Blade (short)",
+
+  "kamenridercraft.name.black_rx.a1": "Rider: Masked Rider",
+  "kamenridercraft:split_king_stone.form.a1": "Form: Base Form",
+  "kamenridercraft:rx_core.form.a1": "Form: Base Form",
+  "kamenridercraft:robo_core.form.a1": "Form: Super Gold",
+  "kamenridercraft:bio_core.form.a1": "Form: Super Blue",
+
 
 "item.kamenridercraft.shin_logo": "Shin Logo",
 "item.kamenridercraft.shinhead": "Shin Helmet",
