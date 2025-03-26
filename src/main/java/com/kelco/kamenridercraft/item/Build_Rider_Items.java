@@ -100,7 +100,7 @@ public class Build_Rider_Items {
 					.ChangeModel("default_wings_armor.geo.json").model_has_different_name("taka_full_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE = ITEMS.register("taka_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_taka","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties(),0,"_taka","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),

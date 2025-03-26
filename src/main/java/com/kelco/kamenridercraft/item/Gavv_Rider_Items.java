@@ -141,6 +141,12 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> PURUJELLY_GOCHIZO = ITEMS.register("purujelly_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jelly","vram","vrastumgear_belt_jelly",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
 					.AddToList(COOKIE,5).AddToList(RiderTabs.GAVV_TAB_ITEM));

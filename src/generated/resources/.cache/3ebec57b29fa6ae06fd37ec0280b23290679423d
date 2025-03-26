@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T23:42:00.7548068	Item Models: kamenridercraft
+// 1.21.1	2025-03-26T18:06:52.1218077	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -165,6 +165,7 @@ a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popb
 43bda8c5bf518c60593a57b61622246185ad2d39 assets/kamenridercraft/models/item/protozero_core.json
 ec5fd7d93fc06a2708b266545e140c5aefaac96d assets/kamenridercraft/models/item/proto_speedshift_chaser.json
 129f007fb3ce3d4aaa9f4aea3ea2a289fafcb20f assets/kamenridercraft/models/item/pukupukutai_gochizo.json
+5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhino_super_viral_core.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/rider_case.json
