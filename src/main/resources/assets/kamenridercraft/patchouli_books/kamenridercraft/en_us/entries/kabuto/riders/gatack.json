@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rider Form w/ Scissorbeeter",
-			"text": "Accessed with the $(l:kabuto/items/scissorbeeter)Scissorbeeter Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#scissorbeeter)Scissorbeeter Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

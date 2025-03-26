@@ -2,7 +2,7 @@
 	"name": "Vienna Coffee",
 	"icon": "kamenridercraft:vienna_coffee",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

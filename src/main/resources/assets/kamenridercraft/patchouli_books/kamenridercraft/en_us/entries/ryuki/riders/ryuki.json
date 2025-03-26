@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragreder",
-			"text": "Accessed with the $(l:ryuki/items/dragreder)Dragreder Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#dragreder)Dragreder Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Survive w/ Dragranzer",
-			"text": "Accessed with the $(l:ryuki/items/dragranzer)Dragranzer Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#dragranzer)Dragranzer Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

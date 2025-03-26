@@ -2,7 +2,7 @@
 	"name": "Pudding",
 	"icon": "kamenridercraft:pudding",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",
