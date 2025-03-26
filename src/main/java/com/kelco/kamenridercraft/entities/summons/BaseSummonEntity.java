@@ -80,6 +80,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		  BaseSummonEntity.this.setAggressive(true);
 	   }
 	};
+	private boolean matchAllForms;
 	private boolean swordgunMeleeOnly;
     public int BOW_COOLDOWN = 40;
 
@@ -154,11 +155,20 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 				} else {
 					if (!this.REQUIRED_FORMS.isEmpty() && owner.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
-						for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
+						if (!this.matchAllForms) for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
 							CompoundTag tag = new CompoundTag();
 							tag.putInt("Slot", i + 1);
 							tag.putString("Form", RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 							if (this.REQUIRED_FORMS.contains(tag)) formFound = true;
+						} else {
+							ListTag OWNER_FORMS = new ListTag();
+							for (int i = 0; i < belt.Num_Base_Form_Item; i++) {
+								CompoundTag tag = new CompoundTag();
+								tag.putInt("Slot", i + 1);
+								tag.putString("Form", RiderDriverItem.get_Form_Item(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
+								OWNER_FORMS.add(tag);
+							}
+							if (this.REQUIRED_FORMS.equals(OWNER_FORMS)) formFound = true;
 						}
 						if (!formFound) {
 							this.setHealth(0);
@@ -221,6 +231,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
    
 		p_30418_.put("RequiredArmorItems", armor);
 		p_30418_.put("RequiredForms", this.REQUIRED_FORMS);
+	  	p_30418_.putBoolean("MatchAllForms", this.matchAllForms);
 	  	p_30418_.putBoolean("SwordgunMeleeOnly", this.swordgunMeleeOnly);
 	  }
    
@@ -235,8 +246,9 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 			}
 		 }
 		 if (p_30402_.contains("RequiredForms", 9)) this.REQUIRED_FORMS = p_30402_.getList("RequiredForms", 10);
-		 this.reassessWeaponGoal();
+		 this.matchAllForms = p_30402_.getBoolean("MatchAllForms");
 		 this.swordgunMeleeOnly = p_30402_.getBoolean("SwordgunMeleeOnly");
+		 this.reassessWeaponGoal();
 	  }
    
 	  public void setRequiredArmor(Player player) {
@@ -251,14 +263,13 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	public void setRequiredForms(Player player) {
 	  if (this.getOwner() == player && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {	
 		this.REQUIRED_FORMS.clear();
-		for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
-			CompoundTag items = new CompoundTag();
-			items.putInt("Slot", n + 1);
-			items.putString("Form", RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).toString());
-			this.REQUIRED_FORMS.add(items);
-		}
+		for (int n = 0; n < belt.Num_Base_Form_Item; n++) addRequiredForm(RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n+1), n+1);
 	  }
    }
+   
+	public void mustMatchAllForms(boolean setting) {
+	  this.matchAllForms = setting;
+   	}
 
 	public void addRequiredForm(RiderFormChangeItem formItem, int slot) {
 		CompoundTag item = new CompoundTag();

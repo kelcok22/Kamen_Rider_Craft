@@ -6,11 +6,20 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Keep this in your inventory to gain extra status effects for $(l:ooo/riders/ooo#tatoba)OOO's$(/l) main combos"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Gives extra status effects for $(l:ooo/riders/ooo#tatoba)Kamen Rider OOO$(/l)'s main combos$(br2)Can be right-clicked while using one of OOO's combos to trigger a special ability"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ooo/o_scanner"
+			"recipe": "kamenridercraft:ooo/o_scanner",
+			"text": "Right-click effects on next page"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Right-click effects:$(li)Gatakiriba Combo: Creates a clone of the user. If you shift-click with the Latorartar, Sagohzo, Shauta, Tajadol, Putotyra, and Burakawani medals in your inventory and at least 7 clones summoned, the 7 clones will assume a different combo using those medals$(li)Latorartar Combo: Blinds all mobs within a 6 block radius and ignites all mobs within a 3 block radius$(li)Sagohzo Combo: Creates a shockwave that carries all mobs within a 5 block radius upward$(li)Shauta Combo: Electric attack that stuns all mobs within a 5 block radius$(li)Tajadol Combo: Shoots an explosive fireball$(li)Putotyra Combo: Freezes all mobs within a 5 block radius as if they were stuck in powder snow"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Burakawani Combo: Cures the Poison and Wither effects$(li)Super Tatoba Combo: Negates Slowness, Mining Fatigue, and the Pause effect$(li)Tajadol Combo Eternity: Shoots a more powerful explosive fireball"
 		}
 	]
 }
