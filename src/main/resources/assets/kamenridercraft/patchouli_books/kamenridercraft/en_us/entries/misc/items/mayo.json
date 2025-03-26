@@ -2,7 +2,7 @@
 	"name": "Mayo",
 	"icon": "kamenridercraft:mayo",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

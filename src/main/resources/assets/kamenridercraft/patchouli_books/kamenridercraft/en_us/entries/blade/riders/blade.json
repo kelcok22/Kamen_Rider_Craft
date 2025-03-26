@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Herculespader",
-			"text": "Accessed with the $(l:blade/items/herculespader)Herculespader Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#herculespader)Herculespader Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jack Form (Jinrai no Senshi)",
-			"text": "Accessed with the $(l:misc/items/jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

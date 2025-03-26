@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Darkwing",
-			"text": "Accessed with the $(l:ryuki/items/darkwing)Darkwing Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#darkwing)Darkwing Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

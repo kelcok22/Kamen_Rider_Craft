@@ -1,0 +1,176 @@
+{
+	"name": "Rider Logos",
+	"icon": "kamenridercraft:kamen_rider_logo",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The logos of each installment of the Kamen Rider Series, plus a couple extras."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/ichigo_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/v3_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/riderman_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/x_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazon/amazon_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:stronger/stronger_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/skyrider_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:super_1/super1_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/black_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/black_rx_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:shin/shin_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zo_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:j/j_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuuga_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/agito_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ryuki_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/blade_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/hibiki_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabuto_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_o_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kiva_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/decade_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/g_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/w_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooo_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaim_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aid_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_one_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saber_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchard_logo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavv_logo"
+		}
+	]
+}

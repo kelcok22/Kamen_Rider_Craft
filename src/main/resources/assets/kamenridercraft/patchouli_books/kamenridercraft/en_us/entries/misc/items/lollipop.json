@@ -2,7 +2,7 @@
 	"name": "Lollipop",
 	"icon": "kamenridercraft:lollipop",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

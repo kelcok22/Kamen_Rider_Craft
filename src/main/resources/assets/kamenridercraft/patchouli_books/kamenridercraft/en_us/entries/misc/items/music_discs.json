@@ -49,6 +49,12 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:realxeyez_music_disc",
 			"text": "Song:$(li)HosephHoestar - REAL×EYEZ$(br2)Based on:$(li)J×Takanori Nishikawa - REAL×EYEZ$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Zero-One (2019, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:masked_rider_music_disc",
+			"text": "Song:$(li)HosephHoestar - Masked Rider$(br2)Based on:$(li)Idk you figure it out$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)[REDACTED]"
 		}
 	]
 }

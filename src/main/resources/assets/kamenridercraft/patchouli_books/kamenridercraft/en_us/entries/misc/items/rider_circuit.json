@@ -2,7 +2,7 @@
 	"name": "Rider Circuit",
 	"icon": "kamenridercraft:rider_circuit",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 0,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

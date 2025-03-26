@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Greywolch",
-			"text": "Accessed with the $(l:faiz/items/greywolch)Greywolch Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#greywolch)Greywolch Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blaster Form (Bakuen no Senshi)",
-			"text": "Accessed with the $(l:misc/items/bakuen_no_senshi)Bakuen no senshi Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#bakuen_no_senshi)Bakuen no senshi Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

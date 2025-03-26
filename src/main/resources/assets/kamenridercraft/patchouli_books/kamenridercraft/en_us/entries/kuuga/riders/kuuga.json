@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Mighty (Jinrai no Senshi)",
-			"text": "Accessed with the $(l:misc/items/jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#jinrai_no_senshi)Jinrai no senshi Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazing Mighty w/ GrandGouram",
-			"text": "Accessed with the $(l:kuuga/items/grandgouram)GrandGouram Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#grandgouram)GrandGouram Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

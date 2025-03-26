@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chaosdile",
-			"text": "Accessed with the $(l:faiz/items/chaosdile)Chaosdile Card Warrior Card$(/l)"
+			"text": "Accessed with the $(l:misc/items/card_warrior_cards#chaosdile)Chaosdile Card Warrior Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
