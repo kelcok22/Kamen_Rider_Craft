@@ -51,7 +51,6 @@ public class BuildDriverItem extends RiderDriverItem {
 			public Component getDisplayName() {
 				return Component.translatable("fullbottle_holder.text");
 			}
-
 			@Override
 			public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 				FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
@@ -83,7 +82,7 @@ public class BuildDriverItem extends RiderDriverItem {
 
 			+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
 			tooltipComponents.add(formItem3== Build_Rider_Items.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
-		}else {
+		}{
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 			+ Component.translatable(formItem.toString() + ".form").getString()
 			+ Component.translatable(formItem2.toString() + ".form").getString()));
@@ -176,17 +175,14 @@ public class BuildDriverItem extends RiderDriverItem {
 			if (part =="body") return true;
 			if (part =="rightArm") return true;
 			if (part =="leftLeg") return true;
-			
 		}
 		case CHEST -> {
-
 		}
 		case LEGS -> {
 			if (part =="head") return true;
 			if (part =="body") return true;
 			if (part =="leftArm") return true;
 			if (part =="rightLeg") return true;
-		
 		}
 		default -> {}
 		}
