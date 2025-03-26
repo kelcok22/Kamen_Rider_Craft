@@ -169,7 +169,10 @@ public class AttackRideCardItem extends BaseItem {
         					Vec3 playerPos = p_41129_.getEyePosition(1.0f);
 							List<LivingEntity> nearbyTargets = p_41128_.getEntitiesOfClass(LivingEntity.class, new AABB(playerPos, playerPos.add(look.scale(6))).inflate(0.2), entity ->
 																			  entity != p_41129_ && !(entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
-							for (Entity toIgnite : nearbyTargets) toIgnite.setRemainingFireTicks(200);
+							for (Entity target : nearbyTargets) {
+								target.hurt(p_41129_.damageSources().playerAttack(p_41129_), 5.0F);
+								target.setRemainingFireTicks(200);
+							}
 							
 							for (double distX = 0; distX < 8; distX += 0.5) {
 								double distY = -(Math.pow(distX, 2) / 50) - 0.3;

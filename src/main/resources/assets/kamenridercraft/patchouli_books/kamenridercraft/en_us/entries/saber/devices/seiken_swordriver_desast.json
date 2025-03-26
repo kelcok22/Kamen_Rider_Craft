@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/desast)Kamen Rider Desast$(/l)$(br2)Can store up to 4 stacks of Wonder Ride Books"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/desast)Kamen Rider Desast$(/l)$(br2)Can store 1 Seiken and up to 3 stacks of Wonder Ride Books "
 		},
 		{
 			"type": "patchouli:crafting",
