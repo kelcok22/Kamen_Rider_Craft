@@ -10,6 +10,11 @@
         		  "weight": 1,
         		  "name": "kamenridercraft:black_lost_cd_full_bottle"
         		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:black_lost_cobra_full_bottle"
+		  },
         		  {
         			  "type": "minecraft:item",
         			  "weight": 1,
