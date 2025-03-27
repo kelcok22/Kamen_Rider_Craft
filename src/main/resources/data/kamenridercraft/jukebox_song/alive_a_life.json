@@ -1,7 +1,7 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "item.kamenridercraft.be_the_one.desc"
+    "translate": "item.kamenridercraft.alive_a_life.desc"
   },
   "length_in_seconds": 77,
   "sound_event": "kamenridercraft:alive_a_life"

@@ -1235,7 +1235,7 @@ public class Geats_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tokyo","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-			.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).AddToList(MissionBoxItem.CORE_ID).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKII_WISH_CARD = ITEMS.register("boost_mkii_wish_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
