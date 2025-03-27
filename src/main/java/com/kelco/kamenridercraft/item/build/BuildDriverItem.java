@@ -74,7 +74,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
 
 
-		if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
+		if(formItem3!= Build_Rider_Items.HAZARD_TRIGGER.get()&&formItem3!= Build_Rider_Items.FULL_BOTTLE.get()){
 			tooltipComponents.add(Component.translatable(formItem3.toString() + ".form"));
 		}else if (isBestMatch(stack)) {
 			tooltipComponents.add(Component.literal(
@@ -82,7 +82,7 @@ public class BuildDriverItem extends RiderDriverItem {
 
 			+ (get_Form_Item(stack, 3) == Build_Rider_Items.HAZARD_TRIGGER.get() ? " " + Component.translatable("kamenridercraft.name.hazard").getString() : "")));
 			tooltipComponents.add(formItem3== Build_Rider_Items.HAZARD_TRIGGER.get() ? Component.translatable("kamenridercraft.name.best_match_hazard") : Component.translatable("kamenridercraft.name.best_match"));
-		}{
+		} else {
 			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " "
 			+ Component.translatable(formItem.toString() + ".form").getString()
 			+ Component.translatable(formItem2.toString() + ".form").getString()));
