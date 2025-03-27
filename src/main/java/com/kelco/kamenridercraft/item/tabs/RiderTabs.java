@@ -751,6 +751,8 @@ public class RiderTabs {
             event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);
             event.accept(MobsCore.GM_RIDER_SPAWN_EGG);
 
+            event.accept(MobsCore.AGENT_SPAWN_EGG);
+
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);
             event.accept(MobsCore.SKULLBOILER_SPAWN_EGG);

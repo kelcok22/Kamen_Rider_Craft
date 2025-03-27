@@ -1,11 +1,8 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.ServerConfig;
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.variants.RoidmudeVariant;
+import com.kelco.kamenridercraft.entities.variants.AgentVariant;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -13,36 +10,21 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
 
-public class RoidmudeEntity extends BaseHenchmenEntity {
+public class AgentEntity extends BaseHenchmenEntity {
 
     private static final EntityDataAccessor<Integer> VARIANT =
-        SynchedEntityData.defineId(RoidmudeEntity.class, EntityDataSerializers.INT);
+        SynchedEntityData.defineId(AgentEntity.class, EntityDataSerializers.INT);
 
-    public RoidmudeEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+    public AgentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="roidmude";
+        NAME="agent";
     }
 
-    public void remove(RemovalReason reason) {
-        if (reason == RemovalReason.KILLED) {
-            if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                BaseHenchmenEntity boss = MobsCore.MASHIN_CHASER.get().create(this.level());
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-
-                    if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.mashin_chaser"));
-                }
-            }
-        }
-        super.remove(reason);
-    }
     //variants below
 
     @Override
@@ -55,11 +37,11 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
         return this.entityData.get(VARIANT);
     }
 
-    public RoidmudeVariant getVariant() {
-        return RoidmudeVariant.byId(this.getTypeVariant() & 255);
+    public AgentVariant getVariant() {
+        return AgentVariant.byId(this.getTypeVariant() & 255);
     }
 
-    private void setVariant(RoidmudeVariant variant) {
+    private void setVariant(AgentVariant variant) {
         this.entityData.set(VARIANT, variant.getId() & 255);
     }
 
@@ -83,7 +65,7 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
     @Override
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty,
                                         MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
-        RoidmudeVariant variant = Util.getRandom(RoidmudeVariant.values(), this.random);
+        AgentVariant variant = Util.getRandom(AgentVariant.values(), this.random);
         this.setVariant(variant);
         return super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
     }

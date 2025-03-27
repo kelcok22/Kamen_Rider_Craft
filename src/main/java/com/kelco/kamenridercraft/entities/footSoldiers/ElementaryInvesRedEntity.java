@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
-import com.kelco.kamenridercraft.entities.InvesVariant;
+import com.kelco.kamenridercraft.entities.variants.InvesVariant;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
