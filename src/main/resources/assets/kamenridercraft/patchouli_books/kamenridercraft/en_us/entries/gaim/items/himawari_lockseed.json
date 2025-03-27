@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:himawari_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l)"
+			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l)"
 		}
 	]
 }
