@@ -183,6 +183,8 @@ public class oScannerItem extends BaseItem {
 						RiderDriverItem.set_Form_Item(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOO_Rider_Items.TAKA_MEDAL.get(), 1);
 						RiderDriverItem.set_Form_Item(clones.get(6).getItemBySlot(EquipmentSlot.FEET), OOO_Rider_Items.TORA_MEDAL.get(), 2);
 						p_41129_.playSound(SoundEvents.PLAYER_LEVELUP, 1.0F, 1.35F);
+						if (!p_41129_.isCreative()) p_41129_.getCooldowns().addCooldown(this, 200);
+						p_41129_.awardStat(Stats.ITEM_USED.get(this));
 					}
 				}
 			} else if (RiderDriverItem.get_Form_Item(Belt,1).getFormName(false)=="_lion"&
