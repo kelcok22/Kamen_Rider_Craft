@@ -1,0 +1,19 @@
+{
+	"name": "Purujelly Gochizo",
+	"icon": "kamenridercraft:purujelly_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Vram's $(l:gavv/riders/vram#purujelly)Jelly Custom$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:purujelly_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
