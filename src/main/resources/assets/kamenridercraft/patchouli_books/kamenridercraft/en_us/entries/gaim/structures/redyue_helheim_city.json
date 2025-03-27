@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Redyue's Ruins",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes a $(l:misc/boss_blocks/redyue_boss_block)Redyue Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/boss_blocks/redyue_boss_block)Redyue Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:image",
@@ -15,7 +15,8 @@
 			"images": [
 				"kamenridercraft:patchouli_books/kamenridercraft/images/redyue_helheim_city.png"
 			],
-			"title": " "
+			"title": " ",
+			"text": "Suspicious gravel drops:$(li)1 $(l:gaim/arsenal/gaim_horse_armor)Gaim Horse Armor$(/l) (16.7%)$(li)1 $(l:gaim/items/kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (16.7%)$(li)1 $(l:gaim/items/helheim_fruit)Helheim Fruit$(/l) (33.3%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (33.3%)"
 		}
 	]
 }
