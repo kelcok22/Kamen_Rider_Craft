@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rabbit_evol_bottle",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
 		}
 	]
 }

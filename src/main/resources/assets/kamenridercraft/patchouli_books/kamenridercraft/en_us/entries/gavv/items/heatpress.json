@@ -1,0 +1,19 @@
+{
+	"name": "Heatpress",
+	"icon": "kamenridercraft:heatpress",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to trade with a $(l:misc/villagers#agent_villager)Stomach Inc. Agent"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heatpress",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
