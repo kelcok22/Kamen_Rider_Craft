@@ -16,7 +16,7 @@
 	  "trigger": "minecraft:player_killed_entity",
 	  "conditions": {
 		"entity": {
-		  "type": "kamenridercraft:storious"
+		  "type": "kamenridercraft:storious_rider"
 		}
 	  }
 	}
