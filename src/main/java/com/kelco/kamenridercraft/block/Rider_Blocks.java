@@ -245,6 +245,10 @@ public class Rider_Blocks {
 			() -> new VistampBar(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> HEATPRESS_EXTRACTOR = registerBlock("heatpress_extractor",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 
 	public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)

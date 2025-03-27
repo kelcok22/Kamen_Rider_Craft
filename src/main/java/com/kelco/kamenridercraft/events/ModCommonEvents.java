@@ -355,6 +355,14 @@ public class ModCommonEvents {
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(Miscellaneous_Rider_Items.ENERGY_DRINK.get(), 1), 10, 8, 0.02F));
 			}
+			else if (event.getType() == RiderVillagers.AGENT_VILLAGER.get()) {
+			trades.get(1).add((trader, rand) -> new MerchantOffer(
+					new ItemCost(Gavv_Rider_Items.HEATPRESS, 1),
+					new ItemStack(Gavv_Rider_Items.DOPPUDDING_GOCHIZO.get(), 1), 10, 8, 0.02F));
+			trades.get(1).add((trader, rand) -> new MerchantOffer(
+					new ItemCost(Gavv_Rider_Items.HEATPRESS, 2),
+					new ItemStack(Gavv_Rider_Items.PURUJELLY_GOCHIZO.get(), 1), 10, 8, 0.02F));
+		}
 		}
 
 	}
