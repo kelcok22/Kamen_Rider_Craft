@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.client.renderer;
 import com.google.common.collect.Maps;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.BasicMobModel;
-import com.kelco.kamenridercraft.entities.InvesVariant;
 import com.kelco.kamenridercraft.entities.variants.RoidmudeVariant;
 import com.kelco.kamenridercraft.entities.footSoldiers.RoidmudeEntity;
 import net.minecraft.Util;
