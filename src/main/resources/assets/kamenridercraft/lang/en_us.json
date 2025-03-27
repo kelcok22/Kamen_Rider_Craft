@@ -6101,10 +6101,11 @@
 "item.kamenridercraft.vrambreaker": "Vrambreaker",
 "item.kamenridercraft.bitter_gavvgablade": "Bitter Gavvgablade",
 "item.kamenridercraft.bakemagnum": "Bakemagnum",
+  "item.kamenridercraft.agent_blaster": "Stomach Inc. Blaster",
 
   "item.kamenridercraft.gochizo_holder": "Gochizo Holder",
 
-  "item.kamenridercraft.heatpress": "Heatpress",
+  "item.kamenridercraft.heatpress": "Hitpress",
 
 
   "item.kamenridercraft.zeztz_logo": "Zeztz Logo",
@@ -6462,6 +6463,8 @@
 "entity.kamenridercraft.jyamatorider": "Jyamato Rider",
 "entity.kamenridercraft.gmrider": "GM Rider",
 
+  "entity.kamenridercraft.agent": "Agent",
+
 "entity.kamenridercraft.denbird": "DenBird",
 "entity.kamenridercraft.machine_tornador": "Machine Tornador",
 "entity.kamenridercraft.hardboilder": "Hardboilder",
@@ -6645,6 +6648,8 @@
 "item.kamenridercraft.pawnjyamato_spawn_egg": "Pawn Jyamato Spawn Egg",
 "item.kamenridercraft.jyamatorider_spawn_egg": "Jyamato Rider Spawn Egg",
 "item.kamenridercraft.gmrider_spawn_egg": "GM Rider Spawn Egg",
+
+  "item.kamenridercraft.agent_spawn_egg": "Agent Spawn Egg",
 
 "item.kamenridercraft.denbird_spawn_egg": "DenBird Spawn Egg",
 "item.kamenridercraft.machine_tornador_spawn_egg": "Machine Tornador Spawn Egg",
@@ -6855,7 +6860,7 @@
 "block.kamenridercraft.sword_of_logos_book_analyzer": "Sword of Logos Book Analyzer",
 "block.kamenridercraft.vistamp_bar": "Vistamp Bar",
 "block.kamenridercraft.kamen_cafe_counter": "Kamen Cafe Counter",
-  "block.kamenridercraft.heatpress_extractor": "Heatpress Extractor",
+  "block.kamenridercraft.heatpress_extractor": "Hitpress Extractor",
 
 "block.kamenridercraft.gaoh_boss_block": "Gaoh Boss Block",
 "block.kamenridercraft.poseidon_boss_block": "Poseidon Boss Block",

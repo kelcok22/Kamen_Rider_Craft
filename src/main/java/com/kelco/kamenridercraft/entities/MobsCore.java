@@ -1033,10 +1033,16 @@ public class MobsCore {
                   () -> new DeferredSpawnEggItem(JYAMATO_RIDER, 0x0F100F, 0x22A215, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<GmRiderEntity>> GM_RIDER = MOBLIST.register("gmrider",
-                  () -> EntityType.Builder.of(GmRiderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":jyamatorider"));
+                  () -> EntityType.Builder.of(GmRiderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gmrider"));
  
           public static final DeferredItem<DeferredSpawnEggItem> GM_RIDER_SPAWN_EGG = ITEMS.register("gmrider_spawn_egg",
                   () -> new DeferredSpawnEggItem(GM_RIDER, 0x0F100F, 0x9B0E52, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
+            () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> AGENT_SPAWN_EGG = ITEMS.register("agent_spawn_egg",
+            () -> new DeferredSpawnEggItem(AGENT, 0x000000, 0xfa1100, new Item.Properties()));
           
 
           public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",

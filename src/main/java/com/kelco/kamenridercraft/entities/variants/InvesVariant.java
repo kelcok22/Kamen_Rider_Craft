@@ -1,4 +1,4 @@
-package com.kelco.kamenridercraft.entities;
+package com.kelco.kamenridercraft.entities.variants;
 
 import java.util.Arrays;
 import java.util.Comparator;

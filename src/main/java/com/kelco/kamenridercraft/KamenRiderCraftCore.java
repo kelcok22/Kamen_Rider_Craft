@@ -507,6 +507,8 @@ public class KamenRiderCraftCore
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GM_RIDER.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.AGENT.get(), AgentRenderer::new);
+
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);
