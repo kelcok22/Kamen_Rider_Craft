@@ -51,6 +51,17 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "agent_villager",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:agent_villager\",level:1},Xp:1}",
+			"name": "Stomach Inc. Agent",
+			"text": "Uses the $(l:misc/blocks/heatpress_extractor)Heatpress Extractor$(/l) as a job block"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Novice Trades:$(li)1 $(l:gavv/items/doppudding_gochizo)Doppudding Gochizo$(/l) for 1 $(l:gavv/items/heatpress)Heatpress$(/l)$(li)1 $(l:gavv/items/purujelly_gochizo)Purujelly Gochizo$(/l) for 2 $(l:gavv/items/heatpress)Heatpresses$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "librarian",
 			"entity": "minecraft:villager{VillagerData:{profession:\"minecraft:librarian\",level:1},Xp:1}",
 			"name": "Librarian"

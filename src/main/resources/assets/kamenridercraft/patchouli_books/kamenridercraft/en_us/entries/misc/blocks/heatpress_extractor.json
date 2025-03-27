@@ -1,0 +1,18 @@
+{
+	"name": "Heatpress Extractor",
+	"icon": "kamenridercraft:heatpress_extractor",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Used as the job block for a $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heatpress_extractor",
+			"text": "Block is currently unobtainable"
+		}
+	]
+}
