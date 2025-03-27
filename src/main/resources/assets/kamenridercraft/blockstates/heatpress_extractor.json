@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/heatpress_extractor" },
+    "facing=south": { "model": "kamenridercraft:block/heatpress_extractor", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/heatpress_extractor", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/heatpress_extractor", "y": 90 }
+  }
+ }

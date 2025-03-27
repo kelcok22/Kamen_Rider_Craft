@@ -42,6 +42,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:rabbit_evol_bottle",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
           "name": "kamenridercraft:nanba_walking_stick",
           "weight": 2
         },

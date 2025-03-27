@@ -49,6 +49,15 @@ public class RiderVillagers {
                     (X) -> {return X.is(KAMEN_CAFE_COUNTER_POI);}, ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
+    public static final DeferredHolder<PoiType,PoiType> HEATPRESS_EXTRACTOR_POI = POI_TYPES.register("heatpress_extractor_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.HEATPRESS_EXTRACTOR.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> AGENT_VILLAGER = VILLAGER_PROFESSIONS.register("agent_villager",
+            () -> new VillagerProfession("agent_villager",(X) -> {return X.is(HEATPRESS_EXTRACTOR_POI);},
+                    (X) -> {return X.is(HEATPRESS_EXTRACTOR_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_ARMORER));
+
 
     
 
@@ -60,6 +69,8 @@ public class RiderVillagers {
                     "registerBlockStates", PoiType.class).invoke(null, HIDEN_3D_PRINTER_POI.get());
             ObfuscationReflectionHelper.findMethod(PoiType.class,
                     "registerBlockStates", PoiType.class).invoke(null, KAMEN_CAFE_COUNTER_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, HEATPRESS_EXTRACTOR_POI.get());
         } catch (InvocationTargetException | IllegalAccessException exception) {
             exception.printStackTrace();
         }

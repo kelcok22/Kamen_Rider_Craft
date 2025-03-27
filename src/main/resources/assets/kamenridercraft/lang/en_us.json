@@ -6104,6 +6104,8 @@
 
   "item.kamenridercraft.gochizo_holder": "Gochizo Holder",
 
+  "item.kamenridercraft.heatpress": "Heatpress",
+
 
   "item.kamenridercraft.zeztz_logo": "Zeztz Logo",
   "item.kamenridercraft.zeztz_head": "Zeztz Helmet",
@@ -6290,6 +6292,7 @@
 "entity.minecraft.villager.kamenridercraft.shocker_villager":"Shocker",
 "entity.minecraft.villager.kamenridercraft.humagear_villager":"Humagear",
 "entity.minecraft.villager.kamenridercraft.kamen_cafe_butler":"Kamen Cafe Butler",
+  "entity.minecraft.villager.kamenridercraft.agent_villager":"Stomach Inc. Agent",
 "entity.kamenridercraft.shocker_riders":"Shocker Rider",
 "entity.kamenridercraft.destron_combatman":"Destron Combatman",
 "entity.kamenridercraft.god_warfare_agent":"G.O.D. Warfare Agent",
@@ -6852,6 +6855,7 @@
 "block.kamenridercraft.sword_of_logos_book_analyzer": "Sword of Logos Book Analyzer",
 "block.kamenridercraft.vistamp_bar": "Vistamp Bar",
 "block.kamenridercraft.kamen_cafe_counter": "Kamen Cafe Counter",
+  "block.kamenridercraft.heatpress_extractor": "Heatpress Extractor",
 
 "block.kamenridercraft.gaoh_boss_block": "Gaoh Boss Block",
 "block.kamenridercraft.poseidon_boss_block": "Poseidon Boss Block",

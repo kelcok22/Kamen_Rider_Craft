@@ -1,0 +1,24 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "kamenridercraft:block/purifyersides",
+        "0": "kamenridercraft:block/purifyersides",
+        "1": "kamenridercraft:block/heatpress_extractor_front",
+        "2": "kamenridercraft:block/heatpress_extractor_side"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0.0, 0.0, 0.0 ],
+            "to": [ 16.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 16.0, 16.0, 0.0, 0.0 ]},
+                "west": { "texture": "2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

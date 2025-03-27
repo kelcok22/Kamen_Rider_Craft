@@ -40,6 +40,9 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> BLANK_GOCHIZO = ITEMS.register("blank_gochizo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> HEATPRESS = ITEMS.register("heatpress",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO = ITEMS.register("poppingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
