@@ -99,6 +99,10 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:kekera_raise_riser_card"
         },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kyuun_raise_riser_card"
+        },
    
         {
           "type": "minecraft:item",
