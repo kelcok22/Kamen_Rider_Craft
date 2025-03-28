@@ -1,0 +1,17 @@
+{
+	"name": "Agent",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:agent",
+			"text": "Spawn locations:"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Health: 45$(br2)Spawns in blue and white striped variants$(br2)Drops"
+		}
+	]
+}
