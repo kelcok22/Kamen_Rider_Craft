@@ -1,7 +1,7 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:ohma_ziku_driver"
+	  "id": "kamenridercraft:ohma_zi_o_driver"
 	},
 	"title": "Ohma's Day",
 	"description": "Transform into Ohma Zi-O",
@@ -10,7 +10,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:zi-o/grand_zi_o",
+  "parent": "kamenridercraft:zi-o/grand_zi-o",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:ohma_ziku_driver"
+				"kamenridercraft:ohma_zi_o_driver"
 			  ]
 			}
 		  }
