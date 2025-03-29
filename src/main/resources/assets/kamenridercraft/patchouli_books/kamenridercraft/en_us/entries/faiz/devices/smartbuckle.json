@@ -7,6 +7,13 @@
 		{
 			"type": "patchouli:text",
 			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into a $(l:faiz/riders/riotrooper)Riotrooper"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smartbuckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
 		}
 	]
 }

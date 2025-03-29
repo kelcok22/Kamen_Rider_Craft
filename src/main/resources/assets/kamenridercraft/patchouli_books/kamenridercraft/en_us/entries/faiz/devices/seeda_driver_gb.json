@@ -2,7 +2,7 @@
 	"name": "Seeda Driver (Guardian Blue)",
 	"icon": "kamenridercraft:seeda_driver_gb",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 12,
+	"sortnum": 16,
 	"pages": [
 		{
 			"type": "patchouli:text",

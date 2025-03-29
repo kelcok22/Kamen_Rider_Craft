@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:muez_driver"
+	},
+	"title": "The Devil is in the DetAIls",
+	"description": "Transform into Kamen Rider Muez",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:555/orga",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:faizhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:faiztroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:faizlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:muez_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

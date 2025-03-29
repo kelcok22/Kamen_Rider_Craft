@@ -2,7 +2,7 @@
 	"name": "Neo-Alpa Driver",
 	"icon": "kamenridercraft:neo_alpa_driver",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 7,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

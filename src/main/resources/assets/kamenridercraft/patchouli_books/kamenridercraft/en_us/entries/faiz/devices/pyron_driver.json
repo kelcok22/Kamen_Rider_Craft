@@ -2,7 +2,7 @@
 	"name": "Pyron Driver (Grand Prix Blue)",
 	"icon": "kamenridercraft:pyron_driver",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 8,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,16 @@
+{
+	"name": "Muez Driver",
+	"icon": "kamenridercraft:muez_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/muez)Kamen Rider Muez"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/muez_driver"
+		}
+	]
+}

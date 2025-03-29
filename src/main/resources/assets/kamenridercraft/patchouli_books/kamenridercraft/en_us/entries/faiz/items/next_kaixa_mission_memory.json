@@ -1,0 +1,19 @@
+{
+	"name": "Next Kaixa Mission Memory",
+	"icon": "kamenridercraft:next_kaixa_mission_memory",
+	"category": "kamenridercraft:faiz/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_kaixa_mission_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,10 +1,14 @@
 package com.kelco.kamenridercraft.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.faiz.FaizDriverItem;
+import com.kelco.kamenridercraft.item.faiz.MuezDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -37,13 +41,29 @@ public class Faiz_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 			.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	    
+	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","next_kaixa","next_kaixa_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing());
+	    
+	public static final DeferredItem<Item> NEXT_FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("next_faiz_axel_mission_memory",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","next_faiz","faiz_driver_next_belt_a",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().addAlternative(NEXT_KAIXA_AXEL_MISSION_MEMORY.get()));
+	    
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_axel","faiz","faiz_driver_belt_a",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().addAlternative(NEXT_FAIZ_AXEL_MISSION_MEMORY.get()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	    
 	public static final DeferredItem<Item> FAIZ_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blaster","faiz","faiz_driver_belt_b",
@@ -95,6 +115,29 @@ public class Faiz_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
 	        
 	
+	public static final DeferredItem<Item> NEXT_FAIZ_MISSION_MEMORY = ITEMS.register("next_faiz_mission_memory",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","next_faiz","faiz_driver_next_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+
+	public static final DeferredItem<Item> NEXT_KAIXA_MISSION_MEMORY = ITEMS.register("next_kaixa_mission_memory",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","next_kaixa","next_kaixa_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+	
+	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","muez","muez_driver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.IsGlowing().AddToList(RiderTabs.FAIZ_TAB_ITEM));
+	        
+	
 	public static final DeferredItem<Item> NEO_ALPA_MISSION_MEMORY = ITEMS.register("neo_alpa_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","neo_alpa","neo_alpa_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -143,6 +186,15 @@ public class Faiz_Rider_Items {
 	public static final DeferredItem<Item> SMARTBUCKLE_V2 = ITEMS.register("smartbuckle_v2",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper_v2",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
 					.Override_belt_text("smart_buckle_v2_belt").Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
+	public static final DeferredItem<Item> FAIZ_DRIVER_NEXT = ITEMS.register("faiz_driver_next",
+			() -> new FaizDriverItem(ArmorMaterials.DIAMOND,"next_faiz",NEXT_FAIZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
+	public static final DeferredItem<Item> NEXT_KAIXA_DRIVER = ITEMS.register("next_kaixa_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"next_kaixa",NEXT_KAIXA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
+	public static final DeferredItem<Item> MUEZ_DRIVER = ITEMS.register("muez_driver",
+			() -> new MuezDriverItem(ArmorMaterials.DIAMOND,"muez",MUEZ_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> NEO_ALPA_DRIVER = ITEMS.register("neo_alpa_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neo_alpa",NEO_ALPA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
@@ -197,6 +249,9 @@ public class Faiz_Rider_Items {
 	   
 	public static final DeferredItem<Item> ORGA_STLANZER = ITEMS.register("orga_stlanzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
+	public static final DeferredItem<Item> MUEZ_EDGE = ITEMS.register("muez_edge",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 	public static final DeferredItem<Item> AXEL_RAY_GUN = ITEMS.register("axel_ray_gun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));

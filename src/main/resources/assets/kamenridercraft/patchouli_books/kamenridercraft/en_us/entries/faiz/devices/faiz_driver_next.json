@@ -1,0 +1,16 @@
+{
+	"name": "Faiz Driver NEXT",
+	"icon": "kamenridercraft:faiz_driver_next",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/next_faiz)Kamen Rider Next Faiz"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_driver_next"
+		}
+	]
+}

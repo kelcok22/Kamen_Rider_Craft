@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:next_kaixa_driver"
+	},
+	"title": "My phone runs Android 20",
+	"description": "Transform into Kamen Rider Next Kaixa",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:555/kaixa",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:faizhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:faiztroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:faizlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:next_kaixa_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

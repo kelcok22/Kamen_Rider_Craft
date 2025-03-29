@@ -2,7 +2,7 @@
 	"name": "Seeda Driver (Rescue Orange)",
 	"icon": "kamenridercraft:seeda_driver_ro",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 13,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

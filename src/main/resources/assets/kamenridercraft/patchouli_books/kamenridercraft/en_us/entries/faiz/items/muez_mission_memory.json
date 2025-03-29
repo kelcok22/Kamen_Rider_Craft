@@ -1,0 +1,19 @@
+{
+	"name": "Muez Mission Memory",
+	"icon": "kamenridercraft:muez_mission_memory",
+	"category": "kamenridercraft:faiz/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:muez_mission_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

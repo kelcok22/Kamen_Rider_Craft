@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Neo-Alpa",
 	"icon": "kamenridercraft:neo_alpa_driver",
 	"category": "kamenridercraft:faiz/riders",
-	"sortnum": 6,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",
