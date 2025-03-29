@@ -1,0 +1,10 @@
+{
+  "values": [
+	"minecraft:cherry_grove",
+	"#c:has_structure/village_desert",
+	  "#c:has_structure/village_plains",
+	  "#c:has_structure/village_savanna",
+	  "#c:has_structure/village_snowy",
+	  "#c:has_structure/village_taiga"
+  ]
+}
