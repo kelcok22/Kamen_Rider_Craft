@@ -2,7 +2,7 @@
 	"name": "Seeda Mission Memory",
 	"icon": "kamenridercraft:seeda_mission_memory",
 	"category": "kamenridercraft:faiz/items",
-	"sortnum": 12,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:text",

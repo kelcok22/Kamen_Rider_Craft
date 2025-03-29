@@ -2,7 +2,7 @@
 	"name": "Seeda Driver (Urban White)",
 	"icon": "kamenridercraft:seeda_driver_uw",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 14,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:text",

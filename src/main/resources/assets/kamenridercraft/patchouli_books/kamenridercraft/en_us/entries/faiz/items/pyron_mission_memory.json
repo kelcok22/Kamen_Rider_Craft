@@ -2,7 +2,7 @@
 	"name": "Pyron Mission Memory",
 	"icon": "kamenridercraft:pyron_mission_memory",
 	"category": "kamenridercraft:faiz/items",
-	"sortnum": 11,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

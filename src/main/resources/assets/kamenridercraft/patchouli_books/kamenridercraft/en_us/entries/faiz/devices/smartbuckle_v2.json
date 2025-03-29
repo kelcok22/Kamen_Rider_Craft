@@ -1,0 +1,19 @@
+{
+	"name": "Smart Buckle (Riotrooper V2)",
+	"icon": "kamenridercraft:smartbuckle_v2",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Lost World (2005, S.I.C. Hero Saga)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into a $(l:faiz/riders/riotrooper_v2)Riotrooper V2"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smartbuckle_v2",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

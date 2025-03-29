@@ -2,7 +2,7 @@
 	"name": "Pyron Driver (Midnight Black)",
 	"icon": "kamenridercraft:pyron_driver_mb",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 10,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Pyron",
 	"icon": "kamenridercraft:pyron_driver",
 	"category": "kamenridercraft:faiz/riders",
-	"sortnum": 7,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:entity",

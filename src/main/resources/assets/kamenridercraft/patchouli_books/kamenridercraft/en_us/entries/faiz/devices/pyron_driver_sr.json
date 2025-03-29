@@ -2,7 +2,7 @@
 	"name": "Pyron Driver (Sonia Red)",
 	"icon": "kamenridercraft:pyron_driver_sr",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 9,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

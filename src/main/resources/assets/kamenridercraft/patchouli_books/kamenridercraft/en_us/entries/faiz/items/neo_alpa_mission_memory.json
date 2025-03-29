@@ -2,7 +2,7 @@
 	"name": "Neo-Alpa Mission Memory",
 	"icon": "kamenridercraft:neo_alpa_mission_memory",
 	"category": "kamenridercraft:faiz/items",
-	"sortnum": 10,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",
