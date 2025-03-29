@@ -140,6 +140,10 @@ public class Faiz_Rider_Items {
 	public static final DeferredItem<Item> SMARTBUCKLE = ITEMS.register("smartbuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
+	public static final DeferredItem<Item> SMARTBUCKLE_V2 = ITEMS.register("smartbuckle_v2",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riotrooper_v2",BLANK_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
+					.Override_belt_text("smart_buckle_v2_belt").Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
+
 	public static final DeferredItem<Item> NEO_ALPA_DRIVER = ITEMS.register("neo_alpa_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neo_alpa",NEO_ALPA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.FAIZ_TAB_ITEM).ChangeRepairItem(BLANK_MISSION_MEMORY.get()));
 
