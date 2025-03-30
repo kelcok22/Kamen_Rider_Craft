@@ -2,7 +2,7 @@
 	"name": "Kuuga Manga",
 	"icon": "kamenridercraft:kuuga_manga",
 	"category": "kamenridercraft:kuuga/items",
-	"sortnum": 14,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

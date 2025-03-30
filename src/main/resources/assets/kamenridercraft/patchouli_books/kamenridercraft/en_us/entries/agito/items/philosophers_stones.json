@@ -1,0 +1,169 @@
+{
+	"name": "Philosopher's Stones",
+	"icon": "kamenridercraft:agito_ground",
+	"category": "kamenridercraft:agito/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_ground",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#ground)Ground Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_ground",
+			"text": "Drops from:$(li)$(l:agito/mobs/pantheras_luteus)Pantheras Luteus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_storm",
+			"title": "Agito Storm Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to access Agito's $(l:agito/riders/agito#storm)Storm Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_storm",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:agito/mobs/pantheras_luteus)Pantheras Luteus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_flame",
+			"title": "Agito Flame Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to access Agito's $(l:agito/riders/agito#flame)Flame Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_flame",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:agito/mobs/pantheras_luteus)Pantheras Luteus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_trinity",
+			"title": "Agito Trinity Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/alter_ring_reiko)Altering (Reiko Takano)$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#trinity)Trinity Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/agito_trinity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_burning",
+			"title": "Agito Burning Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to access Agito's $(l:agito/riders/agito#burning)Burning Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_burning",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:agito/mobs/el_of_the_water)El of the Water$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_shining",
+			"title": "Agito Shining Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to access Agito's $(l:agito/riders/agito#shining)Shining Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/agito_shining"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gills",
+			"title": "Gills Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Gills's $(l:agito/devices/meta_factor)Meta Factor$(/l)$(br2)Used to access Gills's $(l:agito/riders/gills#gills)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gills",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:agito/mobs/anguis_masculus)Anguis Masculus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exceed_gills",
+			"title": "Exceed Gills Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to access Gills's $(l:agito/riders/gills#exceed_gills)Exceed Gills$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/exceed_gills"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_exceed_gills",
+			"title": "Gold Exceed Gills Philosopher's Stone",
+			"text": "Appears in:$(li)Rider Hero Series (2001, toyline)$(br2)Used to access Gills's $(l:agito/riders/gills#exceed_gills)Exceed Gills$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_exceed_gills",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito",
+			"title": "Another Agito Philosopher's Stone",
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point)Ank Point$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:agito/mobs/another_agito)Another Agito$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_miracle",
+			"title": "Mirage Agito Philosopher's Stone",
+			"text": "Appears in:$(li)Heaven's Door (2003, S.I.C. Hero Saga)$(br2)Used to craft Mirage Agito's $(l:agito/devices/alter_ring_miracle)Altering$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_miracle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_koji",
+			"title": "Another Agito Philosopher's Stone (Kouji Majima)",
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point_burning)Ank Point (Kouji Majima)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_koji",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_burning_form",
+			"title": "Another Agito Burning Philosopher's Stone",
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Used to access Another Agito's $(l:agito/riders/another_agito_kouji_majima#burning)Burning Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_burning_form",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

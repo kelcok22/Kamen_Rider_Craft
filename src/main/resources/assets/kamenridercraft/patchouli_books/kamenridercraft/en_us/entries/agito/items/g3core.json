@@ -2,7 +2,7 @@
 	"name": "Blank G-System Chip",
 	"icon": "kamenridercraft:g3core",
 	"category": "kamenridercraft:agito/items",
-	"sortnum": 15,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:agent",
-			"text": "Spawn locations:"
+			"text": "Spawn locations: Cherry Grove, Desert, Meadow, Plains, Savanna, Snowy Plains, Taiga"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Health: 45$(br2)Spawns in blue and white striped variants$(br2)Drops"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Health: 45$(br2)Spawns in blue and white striped variants$(br2)Drops$(li)1 $(l:gavv/items/heatpress)Hitpress$(/l) (10%)$(li)1 $(l:misc/items/candy_wrapper)Candy Wrapper$(/l) (50%)$(li)1 $(l:gavv/items/poppingummy_gochizo)Poppingummy Gochizo$(/l) (40%)$(br)$(li)2-4 $(l:misc/items/candy_wrapper)Candy Wrappers$(/l) (50%)$(li)1-3 $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) (50%)"
 		}
 	]
 }

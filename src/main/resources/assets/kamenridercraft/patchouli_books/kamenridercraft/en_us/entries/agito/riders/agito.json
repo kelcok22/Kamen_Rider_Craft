@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ground Form",
-			"text": "Accessed with the $(l:agito/items/agito_ground)Agito Ground Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_ground)Agito Ground Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Storm Form",
-			"text": "Accessed with the $(l:agito/items/agito_storm)Agito Storm Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_storm)Agito Storm Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Form",
-			"text": "Accessed with the $(l:agito/items/agito_flame)Agito Flame Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_flame)Agito Flame Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Trinity Form",
-			"text": "Accessed with the $(l:agito/items/agito_trinity)Agito Trinity Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_trinity)Agito Trinity Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burning Form",
-			"text": "Accessed with the $(l:agito/items/agito_burning)Agito Burning Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_burning)Agito Burning Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shining Form",
-			"text": "Accessed with the $(l:agito/items/agito_shining)Agito Shining Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#agito_shining)Agito Shining Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",

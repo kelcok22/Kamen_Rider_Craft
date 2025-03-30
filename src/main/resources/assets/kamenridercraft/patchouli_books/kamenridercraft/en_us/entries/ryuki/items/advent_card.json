@@ -2,7 +2,7 @@
 	"name": "Contract Card",
 	"icon": "kamenridercraft:advent_card",
 	"category": "kamenridercraft:ryuki/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

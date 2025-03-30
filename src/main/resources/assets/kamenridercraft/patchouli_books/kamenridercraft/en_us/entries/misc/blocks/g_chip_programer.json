@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Use $(l:agito/items/g3core)Blank G-System Chips$(/l) on this block to obtain different G-Chips$(br2)Drops:$(li)$(l:agito/items/g3)G3 Chip$(/l) (27.8%)$(li)$(l:agito/items/g3x)G3-X Chip$(/l) (8.3%)$(li)$(l:agito/items/g3mild)G3 Mild Chip$(/l) (5.6%)$(li)$(l:agito/items/g4)G4 Chip$(/l) (2.8%)$(li)$(l:agito/items/g1)G1 Chip$(/l) (27.8%)$(li)$(l:agito/items/v1)V1 Chip$(/l) (27.8%)"
+			"text": "Use $(l:agito/items/g3core)Blank G-System Chips$(/l) on this block to obtain different G-Chips$(br2)Drops:$(li)$(l:agito/items/g_system_chips#g3)G3 Chip$(/l) (27.8%)$(li)$(l:agito/items/g_system_chips#g3x)G3-X Chip$(/l) (8.3%)$(li)$(l:agito/items/g_system_chips#g3mild)G3 Mild Chip$(/l) (5.6%)$(li)$(l:agito/items/g_system_chips#g4)G4 Chip$(/l) (2.8%)$(li)$(l:agito/items/g_system_chips#g1)G1 Chip$(/l) (27.8%)$(li)$(l:agito/items/g_system_chips#v1)V1 Chip$(/l) (27.8%)"
 		},
 		{
 			"type": "patchouli:crafting",

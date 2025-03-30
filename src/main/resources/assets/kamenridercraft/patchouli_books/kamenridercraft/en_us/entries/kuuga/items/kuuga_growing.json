@@ -2,7 +2,7 @@
 	"name": "Kuuga Growing Amadam",
 	"icon": "kamenridercraft:kuuga_growing",
 	"category": "kamenridercraft:kuuga/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

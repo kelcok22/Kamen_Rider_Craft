@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:ryuki/items/darkwing_advent)Darkwing Advent Card$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/contract_advent_cards#darkwing_advent)Darkwing Advent Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Knight w/ Wingwall",
-			"text": "Accessed with the $(l:ryuki/items/wing_wall_vent)Wingwall Guard Vent Card$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/other_form_advent_cards#wing_wall_vent)Wingwall Guard Vent Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Knight Survive",
-			"text": "Accessed with the $(l:ryuki/items/survive_shippu)Survive Card (Shippu)$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/survive_cards#survive_shippu)Survive Card (Shippu)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

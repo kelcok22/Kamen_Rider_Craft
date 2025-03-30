@@ -1,5 +1,5 @@
 {
-	"name": "Heatpress",
+	"name": "Hitpress",
 	"icon": "kamenridercraft:heatpress",
 	"category": "kamenridercraft:gavv/items",
 	"sortnum": 1,
@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:heatpress",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		}
 	]
 }

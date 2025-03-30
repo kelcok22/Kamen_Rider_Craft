@@ -1,0 +1,175 @@
+{
+	"name": "Sword Vent Cards",
+	"icon": "kamenridercraft:ride_saber_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ride_saber_vent",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#blank)Ryuki Blank Form$(/l) with the $(l:ryuki/arsenal/ride_visor)Ridevisor$(/l) to obtain the $(l:ryuki/arsenal/ride_saber)Ridesaber$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ride_saber_vent",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_saber_vent",
+			"title": "Dragsaber Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#ryuki)Kamen Rider Ryuki$(/l) with the $(l:ryuki/arsenal/drag_visor)Dragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_saber)Dragsaber$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_saber_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_blade_vent",
+			"title": "Dragblade Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#survive)Ryuki Survive Form$(/l) with the $(l:ryuki/arsenal/drag_visor)Dragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_blade)Dragblade$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_blade_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_lancer_vent",
+			"title": "Winglancer Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/knight#knight)Kamen Rider Knight$(/l) with the $(l:ryuki/arsenal/dark_visor)Darkvisor$(/l) to obtain the $(l:ryuki/arsenal/wing_lancer)Winglancer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_lancer_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_blade_vent",
+			"title": "Darkblade Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/knight#survive)Knight Survive Form$(/l) with the $(l:ryuki/arsenal/dark_visor)Darkvisor$(/l) to obtain the $(l:ryuki/arsenal/dark_blade)Darkblade$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_blade_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "veno_saber_vent",
+			"title": "Venosaber Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ouja#ouja)Kamen Rider Ouja$(/l) with the $(l:ryuki/arsenal/veno_visor)Venovisor$(/l) to obtain the $(l:ryuki/arsenal/veno_saber)Venosaber$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:veno_saber_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "veno_visor_zwei_vent",
+			"title": "Venovisorzwei Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used by $(l:ryuki/riders/ouja#survive)Ouja Survive Form$(/l) with the $(l:ryuki/arsenal/veno_visor)Venovisor$(/l) to obtain the $(l:ryuki/arsenal/veno_visor_zwei)Venovisorzwei$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:veno_visor_zwei_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_saber_vent",
+			"title": "Goldsaber Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/odin)Kamen Rider Odin$(/l) with the $(l:ryuki/arsenal/gold_visor)Goldvisor$(/l) to obtain the $(l:ryuki/arsenal/gold_saber)Goldsaber$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_saber_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_slasher_vent",
+			"title": "Wingslasher Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used by $(l:ryuki/riders/femme)Kamen Rider Femme$(/l) with the $(l:ryuki/arsenal/blanc_visor)Blancvisor$(/l) to obtain the $(l:ryuki/arsenal/wing_slasher)Wingslasher$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_slasher_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_saber_vent_ryuga",
+			"title": "Dragsaber Sword Vent Card (Ryuga)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used by $(l:ryuki/riders/ryuga#ryuga)Kamen Rider Ryuga$(/l) with the $(l:ryuki/arsenal/black_drag_visor)Blackdragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_saber_ryuga)Dragsaber (Ryuga)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_saber_vent_ryuga",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_drag_visor_zwei_vent",
+			"title": "Blackdragvisorzwei Sword Vent Card",
+			"text": "Appears in:$(li)World of If (2005, S.I.C. Hero Saga)$(br2)Used by $(l:ryuki/riders/ryuga#survive)Ryuga Survive Form$(/l) with the $(l:ryuki/arsenal/black_drag_visor)Blackdragvisor$(/l) to obtain the $(l:ryuki/arsenal/black_drag_visor_zwei)Blackdragvisorzwei$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_drag_visor_zwei_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_dagger_vent",
+			"title": "Slashdagger Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/alternative)Alternative$(/l) and $(l:ryuki/riders/alternative_zero)Alternative Zero$(/l) with the $(l:ryuki/arsenal/slash_visor)Slashvisor$(/l) to obtain the $(l:ryuki/arsenal/slash_dagger)Slashdagger$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:slash_dagger_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "abyss_saber_vent",
+			"title": "Abysssaber Sword Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:ryuki/riders/abyss)Kamen Rider Abyss$(/l) with the $(l:ryuki/arsenal/abyss_visor)Abyssvisor$(/l) to obtain the $(l:ryuki/arsenal/abyss_saber)Abysssaber$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:abyss_saber_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		}
+	]
+}

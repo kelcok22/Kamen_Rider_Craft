@@ -1,0 +1,71 @@
+{
+	"name": "Other Form Advent Cards",
+	"icon": "kamenridercraft:drag_shield_vent_form",
+	"category": "kamenridercraft:ryuki/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent_form",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to access Ryuki's $(l:ryuki/riders/ryuki#dragshield)base form w/ Dragshields$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent_form",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_wall_vent",
+			"title": "Wingwall Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to access Knight's $(l:ryuki/riders/knight#wingwall)base form w/ Wingwall$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_wall_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_cannon_vent",
+			"title": "Gigacannon Shoot Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to access Zolda's $(l:ryuki/riders/zolda#gigacannon)base form w/ Gigacannon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_cannon_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_tector_vent",
+			"title": "Gigatector Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used to access Zolda's $(l:ryuki/riders/zolda#gigatector)base form w/ Gigatector$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_tector_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent_form_ryuga",
+			"title": "Dragshield Guard Vent Card (Ryuga)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used to access Ryuga's $(l:ryuki/riders/ryuga#dragshield)base form w/ Dragshields$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent_form_ryuga",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		}
+	]
+}

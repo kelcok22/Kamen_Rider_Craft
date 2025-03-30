@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/candy_wrapper"
+			"recipe": "kamenridercraft:misc/candy_wrapper",
+			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		}
 	]
 }

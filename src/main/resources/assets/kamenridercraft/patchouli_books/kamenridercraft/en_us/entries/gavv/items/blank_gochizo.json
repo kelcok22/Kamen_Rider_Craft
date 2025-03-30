@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gavv/blank_gochizo"
+			"recipe": "kamenridercraft:gavv/blank_gochizo",
+			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		}
 	]
 }

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:agito/items/another_agito_koji)Another Agito Philosopher's Stone (Kouji Majima)$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#another_agito_koji)Another Agito Philosopher's Stone (Kouji Majima)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burning Form",
-			"text": "Accessed with the $(l:agito/items/another_agito_burning_form)Another Agito Burning Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#another_agito_burning_form)Another Agito Burning Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
