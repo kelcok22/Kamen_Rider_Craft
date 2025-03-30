@@ -2,7 +2,7 @@
 	"name": "Evilwhip Swing Vent Card",
 	"icon": "kamenridercraft:evil_whip_vent",
 	"category": "kamenridercraft:ryuki/arsenal",
-	"sortnum": 67,
+	"sortnum": 55,
 	"pages": [
 		{
 			"type": "patchouli:text",

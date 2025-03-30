@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:agito/items/gills)Gills Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#gills)Gills Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Exceed Gills",
-			"text": "Accessed with the $(l:agito/items/exceed_gills)Exceed Gills Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#exceed_gills)Exceed Gills Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gold Exceed Gills",
-			"text": "Accessed with the $(l:agito/items/gold_exceed_gills)Gold Exceed Gills Philosopher's Stone$(/l)"
+			"text": "Accessed with the $(l:agito/items/philosophers_stones#gold_exceed_gills)Gold Exceed Gills Philosopher's Stone$(/l)"
 		},
 		{
 			"type": "patchouli:text",

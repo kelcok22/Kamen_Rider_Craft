@@ -7,7 +7,7 @@
 	  "item": "kamenridercraft:blade_ace_card"
 	}, 
 	{
-	  "item": "minecraft:iron_boots"
+	  "tag": "minecraft:foot_armor"
 	}
 	],
   "result": {

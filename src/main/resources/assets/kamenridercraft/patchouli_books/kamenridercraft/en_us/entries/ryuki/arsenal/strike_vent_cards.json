@@ -1,0 +1,97 @@
+{
+	"name": "Strike Vent Cards",
+	"icon": "kamenridercraft:drag_claw_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 51,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_claw_vent",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#ryuki)Kamen Rider Ryuki$(/l) with the $(l:ryuki/arsenal/drag_visor)Dragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_claw)Dragclaw$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_claw_vent",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scissors_pinch_vent",
+			"title": "Scissorspinch Strike Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/scissors)Kamen Rider Scissors$(/l) with the $(l:ryuki/arsenal/scissors_visor)Scissorsvisor$(/l) to obtain the $(l:ryuki/arsenal/scissors_pinch)Scissorspinch$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scissors_pinch_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_horn_vent",
+			"title": "Gigahorn Strike Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/zolda#zolda)Kamen Rider Zolda$(/l) with the $(l:ryuki/arsenal/magna_visor)Magnavisor$(/l) to obtain the $(l:ryuki/arsenal/giga_horn)Gigahorn$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_horn_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_horn_vent",
+			"title": "Metalhorn Strike Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/gai)Kamen Rider Gai$(/l) with the $(l:ryuki/arsenal/metal_visor)Metalvisor$(/l) to obtain the $(l:ryuki/arsenal/metal_horn)Metalhorn$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_horn_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dest_claw_vent",
+			"title": "Destclaw Strike Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/tiger)Kamen Rider Tiger$(/l) with the $(l:ryuki/arsenal/dest_visor)Destvisor$(/l) to obtain the $(l:ryuki/arsenal/dest_claw)Destclaws$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dest_claw_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_claw_vent_ryuga",
+			"title": "Dragclaw Strike Vent Card (Ryuga)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used by $(l:ryuki/riders/ryuga#ryuga)Kamen Rider Ryuga$(/l) with the $(l:ryuki/arsenal/black_drag_visor)Blackdragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_claw_ryuga)Dragclaw (Ryuga)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_claw_vent_ryuga",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "abyss_claw_vent",
+			"title": "Abyssclaw Strike Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:ryuki/riders/abyss)Kamen Rider Abyss$(/l) with the $(l:ryuki/arsenal/abyss_visor)Abyssvisor$(/l) to obtain the $(l:ryuki/arsenal/abyss_claw)Abyssclaw$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:abyss_claw_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		}
+	]
+}

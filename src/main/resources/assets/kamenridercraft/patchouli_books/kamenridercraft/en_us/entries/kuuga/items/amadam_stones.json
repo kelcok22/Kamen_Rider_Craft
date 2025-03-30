@@ -1,0 +1,147 @@
+{
+	"name": "Amadam Stones",
+	"icon": "kamenridercraft:kuuga_mighty",
+	"category": "kamenridercraft:kuuga/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_mighty",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft Kuuga's $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_mighty",
+			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_dragon",
+			"title": "Kuuga Dragon Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#dragon)Dragon Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_dragon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_pegasus",
+			"title": "Kuuga Pegasus Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#pegasus)Pegasus Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_pegasus",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_titan",
+			"title": "Kuuga Titan Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#titan)Titan Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_titan",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_mighty",
+			"title": "Kuuga Rising Mighty Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_mighty)Rising Mighty Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_mighty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_dragon",
+			"title": "Kuuga Rising Dragon Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_dragon)Rising Dragon Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_dragon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_pegasus",
+			"title": "Kuuga Rising Pegasus Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_pegasus)Rising Pegasus Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_pegasus"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_titan",
+			"title": "Kuuga Rising Titan Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_titan)Rising Titan Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_titan"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_amazing_mighty",
+			"title": "Kuuga Amazing Mighty Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#amazing_mighty)Amazing Mighty Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_amazing_mighty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ultimate",
+			"title": "Kuuga Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#ultimate)Ultimate Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_ultimate"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_ultimate",
+			"title": "Kuuga Rising Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_ultimate)Rising Ultimate Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_ultimate"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_super_rising_ultimate",
+			"title": "Kuuga Super Rising Ultimate Amadam",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#super_rising_ultimate)Super Rising Ultimate Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_super_rising_ultimate",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -803,7 +803,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> DECADE_INVISIBLE_CARD = ITEMS.register("decade_invisible_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","dark_decade","neo_decade_complete_21"})
-			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 200,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_BLAST_CARD = ITEMS.register("diend_blast_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
@@ -811,7 +811,7 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> DIEND_INVISIBLE_CARD = ITEMS.register("diend_invisible_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
-			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 300,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 200,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_CROSSATTACK_CARD = ITEMS.register("diend_crossattack_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})

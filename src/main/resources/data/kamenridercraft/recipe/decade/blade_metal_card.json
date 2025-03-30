@@ -7,7 +7,7 @@
 	  "item": "kamenridercraft:blade_ace_card"
 	}, 
 	{
-	  "item": "minecraft:iron_helmet"
+	  "tag": "minecraft:head_armor"
 	}
 	],
   "result": {

@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:poppingummy_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		}
 	]
 }

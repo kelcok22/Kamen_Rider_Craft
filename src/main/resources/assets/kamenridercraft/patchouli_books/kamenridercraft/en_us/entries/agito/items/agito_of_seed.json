@@ -2,7 +2,7 @@
 	"name": "Seed of Agito",
 	"icon": "kamenridercraft:agito_of_seed",
 	"category": "kamenridercraft:agito/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

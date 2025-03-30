@@ -1,0 +1,97 @@
+{
+	"name": "Guard Vent Cards",
+	"icon": "kamenridercraft:drag_shield_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/ryuki#ryuki)Kamen Rider Ryuki$(/l) with the $(l:ryuki/arsenal/drag_visor)Dragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_shield)Dragshield$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_visor_zwei_vent",
+			"title": "Darkvisorzwei Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/knight#survive)Knight Survive Form$(/l) with the $(l:ryuki/arsenal/dark_visor)Darkvisor$(/l) to obtain the $(l:ryuki/arsenal/dark_visor_zwei)Darkvisorzwei$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_visor_zwei_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shell_defense_vent",
+			"title": "Shelldefense Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/scissors)Kamen Rider Scissors$(/l) with the $(l:ryuki/arsenal/scissors_visor)Scissorsvisor$(/l) to obtain the $(l:ryuki/arsenal/shell_defense)Shelldefense$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shell_defense_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_armor_vent",
+			"title": "Gigaarmor Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/zolda#zolda)Kamen Rider Zolda$(/l) with the $(l:ryuki/arsenal/magna_visor)Magnavisor$(/l) to obtain the $(l:ryuki/arsenal/giga_armor)Gigaarmor$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_armor_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/glass_ryuki)Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_shield_vent",
+			"title": "Goldshield Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used by $(l:ryuki/riders/odin)Kamen Rider Odin$(/l) with the $(l:ryuki/arsenal/gold_visor)Goldvisor$(/l) to obtain the $(l:ryuki/arsenal/gold_shield)Goldshield$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_shield_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_shield_vent",
+			"title": "Wingshield Guard Vent Card",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used by $(l:ryuki/riders/femme)Kamen Rider Femme$(/l) with the $(l:ryuki/arsenal/blanc_visor)Blancvisor$(/l) to obtain the $(l:ryuki/arsenal/wing_shield)Wingshield$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_shield_vent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent_ryuga",
+			"title": "Dragshield Guard Vent Card (Ryuga)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used by $(l:ryuki/riders/ryuga#ryuga)Kamen Rider Ryuga$(/l) with the $(l:ryuki/arsenal/black_drag_visor)Blackdragvisor$(/l) to obtain the $(l:ryuki/arsenal/drag_shield_ryuga)Dragshield (Ryuga)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent_ryuga",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_glass_ryuki)Deepslate Advent Glass$(/l)"
+		}
+	]
+}

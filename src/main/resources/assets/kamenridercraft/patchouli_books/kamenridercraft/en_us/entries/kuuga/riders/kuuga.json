@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mighty Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_mighty)Kuuga Mighty Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Mighty Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_dragon)Kuuga Dragon Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Dragon Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Pegasus Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_pegasus)Kuuga Pegasus Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Pegasus Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Titan Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_titan)Kuuga Titan Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Titan Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Mighty Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_mighty)Kuuga Rising Mighty Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_mighty)Kuuga Rising Mighty Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Dragon Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_dragon)Kuuga Rising Dragon Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_dragon)Kuuga Rising Dragon Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Pegasus Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_pegasus)Kuuga Rising Pegasus Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_pegasus)Kuuga Rising Pegasus Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Titan Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_titan)Kuuga Rising Titan Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_titan)Kuuga Rising Titan Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazing Mighty Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_amazing_mighty)Kuuga Amazing Mighty Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_amazing_mighty)Kuuga Amazing Mighty Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ultimate Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_ultimate)Kuuga Ultimate Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_ultimate)Kuuga Ultimate Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Ultimate Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_rising_ultimate)Kuuga Rising Ultimate Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate)Kuuga Rising Ultimate Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Rising Ultimate Form",
-			"text": "Accessed with the $(l:kuuga/items/kuuga_super_rising_ultimate)Kuuga Super Rising Ultimate Amadam$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_super_rising_ultimate)Kuuga Super Rising Ultimate Amadam$(/l)"
 		},
 		{
 			"type": "patchouli:text",

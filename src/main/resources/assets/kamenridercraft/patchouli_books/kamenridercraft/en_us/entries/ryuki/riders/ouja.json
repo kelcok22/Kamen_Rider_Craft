@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:ryuki/items/venosnaker_advent)Venosnaker Advent Card$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/contract_advent_cards#venosnaker_advent)Venosnaker Advent Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ouja Survive",
-			"text": "Accessed with the $(l:ryuki/items/survive_mugen)Survive Card (Mugen)$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/survive_cards#survive_mugen)Survive Card (Mugen)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ouja Survive",
-			"text": "Accessed with the $(l:ryuki/items/survive_shippu)Survive Card (Shippu)$(/l)"
+			"text": "Accessed with the $(l:ryuki/items/survive_cards#survive_shippu)Survive Card (Shippu)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

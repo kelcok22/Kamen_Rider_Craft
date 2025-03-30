@@ -2,7 +2,7 @@
 	"name": "Kuuga's Phone",
 	"icon": "kamenridercraft:kuuga_phone",
 	"category": "kamenridercraft:kuuga/items",
-	"sortnum": 15,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

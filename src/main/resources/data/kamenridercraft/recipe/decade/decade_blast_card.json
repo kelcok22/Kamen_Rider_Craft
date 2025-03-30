@@ -7,7 +7,7 @@
 	  "item": "kamenridercraft:decade_card"
 	}, 
 	{
-	  "item": "minecraft:bow"
+	  "tag": "c:tools/bow"
 	}
 	],
   "result": {
