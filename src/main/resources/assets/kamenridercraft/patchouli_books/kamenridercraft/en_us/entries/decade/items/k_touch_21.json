@@ -2,7 +2,7 @@
 	"name": "Final Kamen Terminal K-Touch 21",
 	"icon": "kamenridercraft:k_touch_21",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

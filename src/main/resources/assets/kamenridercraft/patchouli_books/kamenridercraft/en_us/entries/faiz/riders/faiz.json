@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:faiz/items/faiz_mission_memory)Faiz Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#faiz_mission_memory)Faiz Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Axel Form",
-			"text": "Accessed with the $(l:faiz/items/faiz_axel_mission_memory)Faiz Axel Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#faiz_axel_mission_memory)Faiz Axel Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blaster Form",
-			"text": "Accessed with the $(l:faiz/items/faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blaster Form (Gold Version)",
-			"text": "Accessed with the $(l:faiz/items/faiz_gold_blaster_mission_memory)Faiz Gold Blaster Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#faiz_gold_blaster_mission_memory)Faiz Gold Blaster Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",

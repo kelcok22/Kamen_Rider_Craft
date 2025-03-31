@@ -2,7 +2,7 @@
 	"name": "Final Kamen Terminal K-Touch (Diend)",
 	"icon": "kamenridercraft:k_touch_diend",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 9,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

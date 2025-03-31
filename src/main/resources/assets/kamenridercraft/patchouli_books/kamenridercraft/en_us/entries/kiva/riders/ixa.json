@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Save Mode",
-			"text": "Accessed with the $(l:kiva/items/knucklefuestle)Knuckle Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#knucklefuestle)Knuckle Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burst Mode",
-			"text": "Accessed with the $(l:kiva/items/knucklefuestle)Knuckle Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#knucklefuestle)Knuckle Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Ixa",
-			"text": "Accessed with the $(l:kiva/items/risingfuestle)Riser Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#risingfuestle)Riser Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

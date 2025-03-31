@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.kelco.kamenridercraft.item.Revice_Rider_Items;
 import com.kelco.kamenridercraft.item.Saber_Rider_Items;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -53,11 +54,20 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
         return PushReaction.PUSH_ONLY;
      }
 
-     private Item getBookDrop(int num) {
+     private Item getBookDrop(int num, Player player) {
  		Random generator = new Random();
+
+         List<Item> BLANK_BOOK_PLUS= new ArrayList<Item>();
+         BLANK_BOOK_PLUS.clear();
+         BLANK_BOOK_PLUS.addAll(BLANK_BOOK);
+         if (player.getInventory().countItem(Saber_Rider_Items.TASSEL_DARK_WONDER_RIDE_BOOK.get())!=0){
+             for (int i = 0; i < 2; i++) {
+                 BLANK_BOOK_PLUS.add(Saber_Rider_Items.ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK.get());
+             }
+         }
  		if (num==1){
- 			int rand = generator.nextInt(BLANK_BOOK.size());
- 			return BLANK_BOOK.get(rand);
+            int rand = generator.nextInt(BLANK_BOOK_PLUS.size());
+            return BLANK_BOOK_PLUS.get(rand);
         } else {
  			int rand = generator.nextInt(WONDER_WORLD_BOOK.size());
  			return WONDER_WORLD_BOOK.get(rand);
@@ -70,11 +80,11 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
 
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_WORLD_STORY_WONDER_RIDE_BOOK.get()) {
-                process(player, level, pos, hand, getBookDrop(0));
+                process(player, level, pos, hand, getBookDrop(0, player));
                 return ItemInteractionResult.SUCCESS;
             }
             if (player.getItemInHand(hand).getItem() == Saber_Rider_Items.BLANK_WONDER_RIDE_BOOK.get()) {
-                process(player, level, pos, hand, getBookDrop(1));
+                process(player, level, pos, hand, getBookDrop(1, player));
                 return ItemInteractionResult.SUCCESS;
             }
         }

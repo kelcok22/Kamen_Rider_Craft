@@ -55,7 +55,7 @@
 			"type": "patchouli:text",
 			"anchor": "flying",
 			"title": "Flying",
-			"text": "This effect will allow you to fly as if you were in creative mode.$(br2)Examples for how to get this effect:$(li)Transform into $(l:skyrider/riders/skyrider)Skyrider$(/l)$(li)Use the $(l:den_o/items/rider_ticket_wing)Rider Ticket Sieg$(/l)$(li)Use the $(l:revice/items/ptera_vistamp)Ptera Vistamp$(/l)"
+			"text": "This effect will allow you to fly as if you were in creative mode.$(br2)Examples for how to get this effect:$(li)Transform into $(l:skyrider/riders/skyrider)Skyrider$(/l)$(li)Use the $(l:den_o/items/rider_tickets#rider_ticket_wing)Rider Ticket Sieg$(/l)$(li)Use the $(l:revice/items/ptera_vistamp)Ptera Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",

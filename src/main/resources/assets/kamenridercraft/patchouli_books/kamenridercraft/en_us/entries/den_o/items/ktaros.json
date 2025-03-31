@@ -2,7 +2,7 @@
 	"name": "K-Taros",
 	"icon": "kamenridercraft:ktaros",
 	"category": "kamenridercraft:den_o/items",
-	"sortnum": 7,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

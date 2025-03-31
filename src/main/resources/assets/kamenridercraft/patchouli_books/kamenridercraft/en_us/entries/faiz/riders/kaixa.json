@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:faiz/items/kaixa_mission_memory)Kaixa Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#kaixa_mission_memory)Kaixa Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Form",
-			"text": "Accessed with the $(l:kiva/items/wakeupfuestle)Wake Up Fuestle (Kiva)$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle (Kiva)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Garulu Form",
-			"text": "Accessed with the $(l:kiva/items/garulufuestle)Garulu Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Basshaa Form",
-			"text": "Accessed with the $(l:kiva/items/basshaafuestle)Basshaa Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dogga Form",
-			"text": "Accessed with the $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DoGaBaKi Form",
-			"text": "Accessed by shift-clicking the $(l:kiva/items/wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/garulufuestle)Garulu,$(/l) $(l:kiva/items/basshaafuestle)Basshaa,$(/l) or $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l) with the other three in your inventory"
+			"text": "Accessed by shift-clicking the $(l:kiva/items/fuestles#wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/fuestles#garulufuestle)Garulu,$(/l) $(l:kiva/items/fuestles#basshaafuestle)Basshaa,$(/l) or $(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) with the other three in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Emperor Form",
-			"text": "Accessed with $(l:kiva/items/tatsulot)Tatsulot$(/l)"
+			"text": "Accessed with $(l:kiva/items/fuestles#tatsulot)Tatsulot$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DoGaBaKi Emperor Form",
-			"text": "Accessed by shift-clicking $(l:kiva/items/tatsulot)Tatsulot$(/l) with the $(l:kiva/items/wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/garulufuestle)Garulu,$(/l) $(l:kiva/items/basshaafuestle)Basshaa,$(/l) and $(l:kiva/items/doggafuestle)Dogga Fuestle$(/l) in your inventory"
+			"text": "Accessed by shift-clicking $(l:kiva/items/fuestles#tatsulot)Tatsulot$(/l) with the $(l:kiva/items/fuestles#wakeupfuestle)Wake Up,$(/l) $(l:kiva/items/fuestles#garulufuestle)Garulu,$(/l) $(l:kiva/items/fuestles#basshaafuestle)Basshaa,$(/l) and $(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Emperor Form (Red Version)",
-			"text": "Accessed with the $(l:kiva/items/kiva_says_fuestle)New Kivatte Fuestle$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#kiva_says_fuestle)New Kivatte Fuestle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Complete Card (Decade 21)",
 	"icon": "kamenridercraft:complete_card_decade_21",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 126,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

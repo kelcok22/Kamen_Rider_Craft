@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:kiva/items/keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l)"
+			"text": "Accessed with the $(l:kiva/items/fuestles#keyfuestle)Wake Up Fuestle (Rey/Arc)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

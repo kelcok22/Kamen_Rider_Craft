@@ -1,0 +1,70 @@
+{
+	"name": "Henshin Kigen",
+	"icon": "kamenridercraft:henshin_kigen_todoroki",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_todoroki",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Todoroki's $(l:hibiki/devices/todorokidriver)Ongekishin Raigou$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_kigen_todoroki",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_zanki",
+			"title": "Henshin Kigen (Zanki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Zanki's $(l:hibiki/devices/zankidriver)Ongekishin Zantetsu$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_kigen_zanki",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_shuki",
+			"title": "Henshin Kigen (Shuki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shuki's $(l:hibiki/devices/shukidriver)Ongekishin (Shuki)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_kigen_shuki",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_hibiki)Oni Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_banki",
+			"title": "Henshin Kigen (Banki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Banki's $(l:hibiki/devices/bankidriver)Ongekishin Jigoku$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_kigen_banki",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_sabaki",
+			"title": "Henshin Kigen (Sabaki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Sabaki's $(l:hibiki/devices/sabakidriver)Ongekishin Gokuraku$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_kigen_sabaki",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_hibiki)Deepslate Oni Ore$(/l)"
+		}
+	]
+}

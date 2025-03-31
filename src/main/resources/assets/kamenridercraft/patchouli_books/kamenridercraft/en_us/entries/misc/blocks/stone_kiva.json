@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to obtain Kiva's $(l:kiva/items/wakeupfuestle)Fuestles$(/l)$(br2)Requires an iron pickaxe or better"
+			"text": "Mine this block to obtain Kiva's $(l:kiva/items/fuestles#wakeupfuestle)Fuestles$(/l)$(br2)Requires an iron pickaxe or better"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:stone_kiva",
 			"title": " ",
-			"text": "Drops:$(li)$(l:kiva/items/fuestle)Fuestle$(/l) (65%)$(li)$(l:kiva/items/wakeupfuestle)Wake Up Fuestle (Kiva)$(/l) (9%)$(li)$(l:kiva/items/garulufuestle)Garulu Fuestle$(/l) (7%)$(li)$(l:kiva/items/basshaafuestle)Basshaa Fuestle$(/l) (7%)$(li)$(l:kiva/items/doggafuestle)Dogga Fuestle$(/l) (7%)$(li)$(l:kiva/items/tatsulot)Tatsulot$(/l) (2%)$(li)$(l:kiva/items/kiva_says_fuestle)Kivatte Fuestle$(/l) (2%)$(li)$(l:kiva/items/darkwakeupfuestle)Wake Up Fuestle (Dark Kiva)$(/l) (2%)"
+			"text": "Drops:$(li)$(l:kiva/items/fuestle)Fuestle$(/l) (65%)$(li)$(l:kiva/items/fuestles#wakeupfuestle)Wake Up Fuestle (Kiva)$(/l) (9%)$(li)$(l:kiva/items/fuestles#garulufuestle)Garulu Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#basshaafuestle)Basshaa Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#doggafuestle)Dogga Fuestle$(/l) (7%)$(li)$(l:kiva/items/fuestles#tatsulot)Tatsulot$(/l) (2%)$(li)$(l:kiva/items/fuestles#kiva_says_fuestle)Kivatte Fuestle$(/l) (2%)$(li)$(l:kiva/items/fuestles#darkwakeupfuestle)Wake Up Fuestle (Dark Kiva)$(/l) (2%)"
 		}
 	]
 }
