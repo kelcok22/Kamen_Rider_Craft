@@ -161,11 +161,11 @@ public class Kiva_Rider_Items {
 	
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_NEW_KIVA = ITEMS.register("newwakeupfuestle",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","kiva","new_kivat_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","new_kiva","new_kivat_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-            .AddToList(RiderTabs.KIVA_TAB_ITEM));
+					.ChangeRiderName("kiva").AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     
     public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
@@ -284,7 +284,7 @@ public class Kiva_Rider_Items {
 			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
     public static final DeferredItem<Item> NEW_KIVAT_BELT = ITEMS.register("newkivadriver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"new_kiva", WAKE_UP_FUESTLE_NEW_KIVA,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
