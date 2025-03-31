@@ -1,0 +1,271 @@
+{
+	"name": "AttackRide Cards",
+	"icon": "kamenridercraft:decade_blast_card",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_blast_card",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#decade)Kamen Rider Decade$(/l) to gain Shot Boost III for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/decade_blast_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_slash_card",
+			"title": "AttackRide Decade Slash",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#decade)Kamen Rider Decade$(/l) to gain Slash III for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/decade_slash_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_illusion_card",
+			"title": "AttackRide Decade Illusion",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#decade)Kamen Rider Decade$(/l) to spawn two copies of himself"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/decade_illusion_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_invisible_card",
+			"title": "AttackRide Decade Invisible",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#decade)Kamen Rider Decade$(/l) to turn invisible for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/decade_invisible_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_blast_card",
+			"title": "AttackRide Diend Blast",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) to gain Shot Boost III for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_blast_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_invisible_card",
+			"title": "AttackRide Diend Invisible",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) to turn invisible for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_invisible_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_crossattack_card",
+			"title": "AttackRide Diend Crossattack",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) to give allied mobs and players Strength IV or Shot Boost IV for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_crossattack_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_barrier_card",
+			"title": "AttackRide Diend Barrier",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) to create a barrier of light blue stained glass"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_barrier_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_illusion_card",
+			"title": "AttackRide Diend Illusion",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) to spawn two copies of himself"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_illusion_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rekka_daizantou_card",
+			"title": "AttackRide Decade Rekka Daizantou",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#complete)Decade Complete Form$(/l) to obtain Shinken Red's Rekka Daizantou"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/rekka_daizantou_card",
+			"text": "If you do not see a recipe here, you need to install the Super Sentai Craft mod"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "g4_gigant_card",
+			"title": "AttackRide G4 Gigant",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used by $(l:decade/riders/decade#violent_emotion)Decade Violent Emotion$(/l) to obtain $(l:agito/riders/g4)Kamen Rider G4$(/l)'s $(l:agito/arsenal/g4_gigant)G4 Gigant$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/g4_gigant_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_strike_vent_card",
+			"title": "AttackRide Ryuki Strike Vent",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#ryuki)Decade Ryuki$(/l) to obtain $(l:ryuki/riders/ryuki#ryuki)Kamen Rider Ryuki$(/l)'s $(l:ryuki/arsenal/drag_claw)Dragclaw$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/ryuki_strike_vent_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_metal_card",
+			"title": "AttackRide Blade Metal",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#blade)Decade Blade$(/l) to gain Resistance II for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/blade_metal_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_mach_card",
+			"title": "AttackRide Blade Mach",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#blade)Decade Blade$(/l) to gain Speed IV for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/blade_mach_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_ongekibou_rekka_card",
+			"title": "AttackRide Hibiki Ongekibou Rekka",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#hibiki)Decade Hibiki$(/l) to obtain $(l:hibiki/riders/hibiki#hibiki)Kamen Rider Hibiki$(/l)'s $(l:hibiki/arsenal/ongekibo_rekka)Ongekibo Rekka$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/hibiki_ongekibou_rekka_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_onibi_card",
+			"title": "AttackRide Hibiki Onibi",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#hibiki)Decade Hibiki$(/l) to shoot a stream of fire down onto enemies"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/hibiki_onibi_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_clock_up_card",
+			"title": "AttackRide Kabuto Clock Up",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#kabuto)Decade Kabuto$(/l) to gain Speed XXI for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kabuto_clock_up_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_ore_sanjou_card",
+			"title": "AttackRide Den-O Ore Sanjou!",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o)Decade Den-O$(/l) to change to Sword Form and put \"I... have arrived!\" in chat"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_ore_sanjou_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_bokuni_tsurarete_miru_card",
+			"title": "AttackRide Den-O Bokuni Tsurarete Miru?",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o)Decade Den-O$(/l) to change to Rod Form and put \"Mind if I reel you in?\" in chat"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_bokuni_tsurarete_miru_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_nakerude_card",
+			"title": "AttackRide Den-O Nakerude",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o)Decade Den-O$(/l) to change to Ax Form and put \"You cried!\" in chat"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_nakerude_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_kotaewa_kiite_nai_card",
+			"title": "AttackRide Den-O Kotaewa Kiite Nai",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o)Decade Den-O$(/l) to change to Gun Form and put \"I can't hear your answer!\" in chat"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_kotaewa_kiite_nai_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_tsuppari_card",
+			"title": "AttackRide Den-O Tsuppari",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o_ax)Decade Den-O Ax$(/l) to gain Punch II for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_tsuppari_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_utchari_card",
+			"title": "AttackRide Den-O Utchari",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#den_o_ax)Decade Den-O Ax$(/l) to gain Jump Boost IV and Strength III for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_utchari_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_gaga_no_udewa_card",
+			"title": "AttackRide Amazon GaGa no Udewa",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/decade#complete)Decade Complete Form$(/l) or $(l:decade/riders/decade#amazon)Decade Amazon$(/l) to obtain $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l)'s $(l:amazon/items/gaga_armlet)GaGa Armlet$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/amazon_gaga_no_udewa_card"
+		}
+	]
+}

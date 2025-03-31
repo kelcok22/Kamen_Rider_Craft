@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:faiz/items/muez_mission_memory)Muez Mission Memory$(/l)"
+			"text": "Accessed with the $(l:faiz/items/mission_memories#muez_mission_memory)Muez Mission Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",

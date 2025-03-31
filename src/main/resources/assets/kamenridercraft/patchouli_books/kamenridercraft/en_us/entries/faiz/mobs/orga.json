@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(li)Kamen Rider 555: Paradise Lost (2003, movie)$(br2)Health: 100$(br2)Special moves:$(li)Starts off as the Horse Orphnoch, then transforms into his Rider form at under 50 health$(br2)Drops$(li)19-21 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/orga_mission_memory)Orga Mission Memory$(/l)$(li)1 $(l:faiz/items/faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
+			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(li)Kamen Rider 555: Paradise Lost (2003, movie)$(br2)Health: 100$(br2)Special moves:$(li)Starts off as the Horse Orphnoch, then transforms into his Rider form at under 50 health$(br2)Drops$(li)19-21 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/mission_memories#orga_mission_memory)Orga Mission Memory$(/l)$(li)1 $(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
 		}
 	]
 }

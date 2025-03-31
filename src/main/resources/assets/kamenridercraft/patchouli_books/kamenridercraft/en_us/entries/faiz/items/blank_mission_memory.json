@@ -2,7 +2,7 @@
 	"name": "Blank Mission Memory",
 	"icon": "kamenridercraft:blank_mission_memory",
 	"category": "kamenridercraft:faiz/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

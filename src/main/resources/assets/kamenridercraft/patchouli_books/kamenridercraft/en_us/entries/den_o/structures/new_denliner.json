@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "New DenLiner",
-			"text": "Appears in:$(li)Farewell Kamen Rider Den-O: Final Countdown (2008, movie)$(br2)Spawns throughout the Sands of Time$(br2)Chest loot:$(li)1 $(l:den_o/items/rider_ticket_strike)Rider Ticket Teddy$(/l)$(li)4-6 $(l:den_o/items/imagin_sand)Imagin Sand$(/l) (16%)$(li)3-7 $(l:den_o/items/rider_ticket)Rider Tickets$(/l) (53%)$(li)1 $(l:den_o/items/rider_ticket_strike)Rider Ticket Teddy$(/l) (31%)"
+			"text": "Appears in:$(li)Farewell Kamen Rider Den-O: Final Countdown (2008, movie)$(br2)Spawns throughout the Sands of Time$(br2)Chest loot:$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_strike)Rider Ticket Teddy$(/l)$(li)4-6 $(l:den_o/items/imagin_sand)Imagin Sand$(/l) (16%)$(li)3-7 $(l:den_o/items/rider_tickets#rider_ticket)Rider Tickets$(/l) (53%)$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_strike)Rider Ticket Teddy$(/l) (31%)"
 		},
 		{
 			"type": "patchouli:image",

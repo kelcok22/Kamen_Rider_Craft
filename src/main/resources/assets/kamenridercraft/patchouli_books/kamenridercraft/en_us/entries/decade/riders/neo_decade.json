@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:decade/items/decade_card)KamenRide Decade$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#decade_card)KamenRide Decade$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade W",
-			"text": "Accessed with the $(l:decade/items/w_card)KamenRide W$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#w_card)KamenRide W$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade OOO",
-			"text": "Accessed with the $(l:decade/items/ooo_card)KamenRide OOO$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#ooo_card)KamenRide OOO$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Fourze",
-			"text": "Accessed with the $(l:decade/items/fourze_card)KamenRide Fourze$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#fourze_card)KamenRide Fourze$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Wizard",
-			"text": "Accessed with the $(l:decade/items/wizard_card)KamenRide Wizard$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#wizard_card)KamenRide Wizard$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Gaim",
-			"text": "Accessed with the $(l:decade/items/gaim_card)KamenRide Gaim$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#gaim_card)KamenRide Gaim$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Drive",
-			"text": "Accessed with the $(l:decade/items/drive_card)KamenRide Drive$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#drive_card)KamenRide Drive$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Ghost",
-			"text": "Accessed with the $(l:decade/items/ghost_card)KamenRide Ghost$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#ghost_card)KamenRide Ghost$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Ex-Aid",
-			"text": "Accessed with the $(l:decade/items/ex_aid_card)KamenRide Ex-Aid$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#ex_aid_card)KamenRide Ex-Aid$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Build",
-			"text": "Accessed with the $(l:decade/items/build_card)KamenRide Build$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#build_card)KamenRide Build$(/l) card"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Zi-O",
-			"text": "Accessed with the $(l:decade/items/zi_o_card)KamenRide Zi-O$(/l) card"
+			"text": "Accessed with the $(l:decade/items/kamenride_cards#zi_o_card)KamenRide Zi-O$(/l) card"
 		},
 		{
 			"type": "patchouli:text",

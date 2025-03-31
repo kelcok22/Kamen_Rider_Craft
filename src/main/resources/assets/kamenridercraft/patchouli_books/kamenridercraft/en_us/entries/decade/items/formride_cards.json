@@ -1,0 +1,336 @@
+{
+	"name": "FormRide Cards",
+	"icon": "kamenridercraft:kuuga_growing_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_growing_card",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_growing)Kuuga Growing$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/kuuga_growing_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_dragon_card",
+			"title": "FormRide Kuuga Dragon Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_dragon)Kuuga Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_dragon_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_pegasus_card",
+			"title": "FormRide Kuuga Pegasus Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_pegasus)Kuuga Pegasus$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_pegasus_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_titan_card",
+			"title": "FormRide Kuuga Titan Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_titan)Kuuga Titan$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_titan_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_mighty_card",
+			"title": "FormRide Kuuga Rising Mighty",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_rising_mighty)Kuuga Rising Mighty$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_rising_mighty_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_dragon_card",
+			"title": "FormRide Kuuga Rising Dragon",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_rising_dragon)Kuuga Rising Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_rising_dragon_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_pegasus_card",
+			"title": "FormRide Kuuga Rising Pegasus",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_rising_pegasus)Kuuga Rising Pegasus$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_rising_pegasus_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_titan_card",
+			"title": "FormRide Kuuga Rising Titan",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_rising_titan)Kuuga Rising Titan$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_rising_titan_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_amazing_mighty_card",
+			"title": "FormRide Kuuga Amazing Mighty",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga_amazing_mighty)Kuuga Amazing Mighty$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kuuga_amazing_mighty_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_storm_card",
+			"title": "FormRide Agito Storm Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito_storm)Agito Storm$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/agito_storm_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_flame_card",
+			"title": "FormRide Agito Flame Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito_flame)Agito Flame$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/agito_flame_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_trinity_card",
+			"title": "FormRide Agito Trinity Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito_trinity)Agito Trinity$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/agito_trinity_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_burning_card",
+			"title": "FormRide Agito Burning Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito_burning)Agito Burning$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/agito_burning_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_blank_card",
+			"title": "FormRide Ryuki Blank Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#ryuki_blank)Ryuki Blank$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/ryuki_blank_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_axel_card",
+			"title": "FormRide Faiz Axel Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#faiz_axel)Faiz Axel$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/faiz_axel_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_jack_card",
+			"title": "FormRide Blade Jack Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#blade_jack)Blade Jack$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/blade_jack_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_kurenai_card",
+			"title": "FormRide Hibiki Kurenai",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#hibiki_kurenai)Hibiki Kurenai$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/hibiki_kurenai_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_masked_card",
+			"title": "FormRide Kabuto Masked Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kabuto_masked)Kabuto Masked$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kabuto_masked_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_plat_card",
+			"title": "FormRide Den-O Plat Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_plat)Den-O Plat$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_plat_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_rod_card",
+			"title": "FormRide Den-O Rod Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_rod)Den-O Rod$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_rod_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_ax_card",
+			"title": "FormRide Den-O Ax Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_ax)Den-O Ax$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_ax_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_gun_card",
+			"title": "FormRide Den-O Gun Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_gun)Den-O Gun$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_gun_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_wing_card",
+			"title": "FormRide Den-O Wing Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_wing)Den-O Wing$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_wing_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_climax_card",
+			"title": "FormRide Den-O Climax Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o_climax)Den-O Climax$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/den_o_climax_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_garulu_card",
+			"title": "FormRide Kiva Garulu Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva_garulu)Kiva Garulu$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kiva_garulu_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_basshaa_card",
+			"title": "FormRide Kiva Basshaa Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva_basshaa)Kiva Basshaa$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kiva_basshaa_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_dogga_card",
+			"title": "FormRide Kiva Dogga Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva_dogga)Kiva Dogga$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kiva_dogga_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_dogabaki_card",
+			"title": "FormRide Kiva DoGaBaKi Form",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva_dogabaki)Kiva DoGaBaKi$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/kiva_dogabaki_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_rx_roborider_card",
+			"title": "FormRide Black RX Robo Rider",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black_rx_roborider)Black RX Robo Rider$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/black_rx_roborider_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_rx_biorider_card",
+			"title": "FormRide Black RX Bio Rider",
+			"text": "Appears in:$(li)CSM Rider Card Set Extra (2022, toyline)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black_rx_biorider)Black RX Bio Rider$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/black_rx_biorider_card"
+		}
+	]
+}

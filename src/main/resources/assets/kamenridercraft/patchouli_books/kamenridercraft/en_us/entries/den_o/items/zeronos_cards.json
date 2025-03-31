@@ -1,0 +1,54 @@
+{
+	"name": "Zeronos Cards",
+	"icon": "kamenridercraft:zeronos_plat_card",
+	"category": "kamenridercraft:den_o/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zeronos_plat_card",
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to craft Zeronos's $(l:den_o/devices/zeronos_belt)Zeronos Belt$(/l)$(br2)Used to access Zeronos's $(l:den_o/riders/zeronos#plat)Plat$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeronos_plat_card",
+			"text": "Found on the $(l:den_o/structures/zeroliner)ZeroLiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeronos_altair_card",
+			"title": "Zeronos Altair Card",
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to access Zeronos's $(l:den_o/riders/zeronos#altair)Altair$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeronos_altair_card",
+			"text": "Found on the $(l:den_o/structures/zeroliner)ZeroLiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeronos_vega_card",
+			"title": "Zeronos Vega Card",
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to access Zeronos's $(l:den_o/riders/zeronos#vega)Vega$(/l) form$(br2)Used to access New Den-O's $(l:den_o/riders/new_den_o#vega)Vega$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeronos_vega_card",
+			"text": "Found on the $(l:den_o/structures/zeroliner)ZeroLiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeronos_zero_card",
+			"title": "Zeronos Zero Card",
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to access Zeronos's $(l:den_o/riders/zeronos#zero)Zero$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:den_o/zeronos_zero_card"
+		}
+	]
+}

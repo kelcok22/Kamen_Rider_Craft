@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ultimate_bahamut_wonder_ride_book",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) while having the $(l:saber/items/tassel_dark_wonder_ride_book)Tassel Dark Wonder Ride Books$(/l) in your inventory"
 		}
 	]
 }

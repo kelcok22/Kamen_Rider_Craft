@@ -1,0 +1,240 @@
+{
+	"name": "Rouze Cards",
+	"icon": "kamenridercraft:change_beetle",
+	"category": "kamenridercraft:blade/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "change_beetle",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Blade's $(l:blade/devices/blay_buckle)Blay Buckle$(/l)$(br2)Used to access Blade's $(l:blade/riders/blade#blade)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_beetle",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_eagle",
+			"title": "Fusion Eagle Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l)$(br2)Used to access Blade's $(l:blade/riders/blade#jack)Jack$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_eagle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_capricorn",
+			"title": "Absorb Capricorn Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to access Blade's $(l:blade/riders/blade#jack)Jack$(/l) and $(l:blade/riders/blade#king)King$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_capricorn",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_caucasus",
+			"title": "Evolution Caucasus Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to access Blade's $(l:blade/riders/blade#king)King$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_caucasus",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_evolution_caucasus",
+			"title": "Silver Evolution Caucasus Rouze Card",
+			"text": "Appears in:$(li)Rider Hero Series (2004, toyline)$(br2)Used to access Blade's $(l:blade/riders/blade#silver_king)King Form (Silver Version)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_evolution_caucasus",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_stag",
+			"title": "Change Stag Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Garren's $(l:blade/devices/garren_buckle)Garren Buckle$(/l)$(br2)Used to access Garren's $(l:blade/riders/garren#garren)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_stag",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_peacock",
+			"title": "Fusion Peacock Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l)$(br2)Used to access Garren's $(l:blade/riders/garren#jack)Jack$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_peacock",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_serpent",
+			"title": "Absorb Serpent Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to access Garren's $(l:blade/riders/garren#jack)Jack$(/l) and $(l:blade/riders/garren#king)King$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_serpent",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_giraffa",
+			"title": "Evolution Giraffa Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Garren's $(l:blade/riders/garren#king)King$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_giraffa",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_mantis",
+			"title": "Change Mantis Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Chalice's $(l:blade/devices/chalice_rouzer)Chalice Rouzer$(/l)$(br2)Used to access Chalice's $(l:blade/riders/chalice#chalice)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_mantis",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_paradoxa",
+			"title": "Evolution Paradoxa Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Chalice's $(l:blade/devices/wild_slasher)Wild Slasher$(/l)$(br2)Used to access Chalice's $(l:blade/riders/chalice#wild)Wild$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_paradoxa",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_spider",
+			"title": "Change Spider Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Leangle's $(l:blade/devices/leangle_buckle)Leangle Buckle$(/l)$(br2)Used to access Leangle's $(l:blade/riders/leangle#leangle)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_spider",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_elephant",
+			"title": "Fusion Elephant Rouze Card",
+			"text": "Appears in:$(li)Special Edition: Clover (2008, S.I.C. Hero Saga)$(br2)Used to craft the $(l:blade/items/rouze_absorber)Rouze Absorber$(/l)$(br2)Used to access Leangle's $(l:blade/riders/leangle#jack)Jack$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_elephant",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_tiger",
+			"title": "Absorb Tiger Rouze Card",
+			"text": "Appears in:$(li)Special Edition: Clover (2008, S.I.C. Hero Saga)$(br2)Used to access Leangle's $(l:blade/riders/leangle#jack)Jack$(/l) and $(l:blade/riders/leangle#king)King$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_tiger",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_tarantula",
+			"title": "Evolution Tarantula Rouze Card",
+			"text": "Appears in:$(li)Kamen Rider Blade 20th Anniversary STAGE&TALK (2024, stage show)$(br2)Used to access Leangle's $(l:blade/riders/leangle#king)King$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_tarantula",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_glaive",
+			"title": "Change Kerberos Rouze Card (Glaive)",
+			"text": "Appears in:$(li)Kamen Rider Blade: Missing Ace (2004, movie)$(br2)Used to craft Glaive's $(l:blade/devices/glaive_buckle)Glaive Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_glaive",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_larc",
+			"title": "Change Kerberos Rouze Card (Larc)",
+			"text": "Appears in:$(li)Kamen Rider Blade: Missing Ace (2004, movie)$(br2)Used to craft Larc's $(l:blade/devices/larc_buckle)Larc Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_larc",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_lance",
+			"title": "Change Kerberos Rouze Card (Lance)",
+			"text": "Appears in:$(li)Kamen Rider Blade: Missing Ace (2004, movie)$(br2)Used to craft Lance's $(l:blade/devices/lance_buckle)Lance Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_lance",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_blade)Blade Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)Deepslate Blade Ore$(/l)"
+		}
+	]
+}

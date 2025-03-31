@@ -1,0 +1,188 @@
+{
+	"name": "Fuestles",
+	"icon": "kamenridercraft:wakeupfuestle",
+	"category": "kamenridercraft:kiva/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "wakeupfuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Kiva's $(l:kiva/devices/kivadriver)Kivat Belt$(/l)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#kiva)Kiva$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wakeupfuestle",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garulufuestle",
+			"title": "Garulu Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#garulu)Garulu$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garulufuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "basshaafuestle",
+			"title": "Basshaa Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#basshaa)Basshaa$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:basshaafuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doggafuestle",
+			"title": "Dogga Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#dogga)Dogga$(/l) and $(l:kiva/riders/kiva#dogabaki)DoGaBaKi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doggafuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tatsulot",
+			"title": "Tatsulot",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#emperor)Emperor$(/l) and $(l:kiva/riders/kiva#dogabaki_emperor)DoGaBaKi Emperor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tatsulot",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_says_fuestle",
+			"title": "Kivatte Fuestle",
+			"text": "Appears in:$(li)Televi-Kun (August 2008, magazine)$(br2)Used to access Kiva's $(l:kiva/riders/kiva#red_emperor)Emperor Form (Red Version)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiva_says_fuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knucklefuestle",
+			"title": "Knuckle Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Ixa's $(l:kiva/devices/ixa_belt)Ixa Belt$(/l)$(br2)Used to access Ixa's $(l:kiva/riders/ixa#save)Save Mode$(/l) and $(l:kiva/riders/ixa#burst)Burst Mode$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knucklefuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "caliburfuestle",
+			"title": "Calibur Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Ixa's $(l:kiva/arsenal/ixa_caliber)Ixa Calibur$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caliburfuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "risingfuestle",
+			"title": "Riser Fuestle",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to access $(l:kiva/riders/ixa#rising)Rising Ixa$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:risingfuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sagafuestle",
+			"title": "Wake Up Fuestle (Saga)",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Saga's $(l:kiva/devices/sagarc_belt)Sagarc Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sagafuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "darkwakeupfuestle",
+			"title": "Wake Up Fuestle (Dark Kiva)",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Dark Kiva's $(l:kiva/devices/darkkivadriver)Dark Kivat Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:darkwakeupfuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/stone_kiva)Fuestle Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "newwakeupfuestle",
+			"title": "Wake Up Fuestle (New Kiva)",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft New Kiva's $(l:kiva/devices/newkivadriver)New Kivat Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:newwakeupfuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "keyfuestle",
+			"title": "Wake Up Fuestle (Rey/Arc)",
+			"text": "Appears in:$(li)Kamen Rider Kiva: King of the Castle in the Demon World (2008, movie)$(br2)Used to craft Rey's $(l:kiva/devices/reydriver)Rey Kivat Belt$(/l)$(br2)Used to craft Arc's $(l:kiva/devices/arcdriver)Arc Kivat Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keyfuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kivalafuestle",
+			"title": "Wake Up Fuestle (Kiva-la)",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Double & Decade: MOVIE War 2010 (2009, movie)$(br2)Used to craft Kiva-la's $(l:kiva/devices/kivaladriver)Kiva-la Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kivalafuestle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_stone_kiva)Deepslate Fuestle Ore$(/l)"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Blank Rider Card",
 	"icon": "kamenridercraft:blank_card",
 	"category": "kamenridercraft:decade/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:decade/blank_card",
-			"text": "Drops:$(li)$(l:decade/items/decade_card)KamenRide Decade$(/l) (62.5%)$(li)$(l:decade/items/diend_card)KamenRide Diend$(/l) (31.3%)$(li)$(l:decade/items/dark_decade_card)KamenRide Dark Decade$(/l) (6.3%)"
+			"text": "Drops:$(li)$(l:decade/items/kamenride_cards#decade_card)KamenRide Decade$(/l) (62.5%)$(li)$(l:decade/items/kamenride_cards#diend_card)KamenRide Diend$(/l) (31.3%)$(li)$(l:decade/items/kamenride_cards#dark_decade_card)KamenRide Dark Decade$(/l) (6.3%)"
 		}
 	]
 }

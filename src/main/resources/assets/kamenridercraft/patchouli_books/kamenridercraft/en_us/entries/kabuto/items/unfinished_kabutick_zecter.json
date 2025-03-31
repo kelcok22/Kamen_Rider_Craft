@@ -2,7 +2,7 @@
 	"name": "Unfinished Kabutick Zecter",
 	"icon": "kamenridercraft:unfinished_kabutick_zecter",
 	"category": "kamenridercraft:kabuto/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

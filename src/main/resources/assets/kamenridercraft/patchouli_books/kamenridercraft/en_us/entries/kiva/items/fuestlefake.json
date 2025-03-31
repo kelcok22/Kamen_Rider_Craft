@@ -2,7 +2,7 @@
 	"name": "Fake Fuestle",
 	"icon": "kamenridercraft:fuestlefake",
 	"category": "kamenridercraft:kiva/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",
