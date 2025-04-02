@@ -49,7 +49,7 @@
 			"type": "patchouli:text",
 			"anchor": "punch",
 			"title": "Punch",
-			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 3 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
+			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 3 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -79,7 +79,7 @@
 			"type": "patchouli:text",
 			"anchor": "drill",
 			"title": "Drill",
-			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l)"
+			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

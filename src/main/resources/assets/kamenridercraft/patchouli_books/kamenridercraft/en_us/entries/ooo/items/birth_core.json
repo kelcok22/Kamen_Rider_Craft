@@ -2,7 +2,7 @@
 	"name": "Birth Core",
 	"icon": "kamenridercraft:birth_core",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 113,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Opened Medal Container",
 	"icon": "kamenridercraft:purple_medals_opened",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 125,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

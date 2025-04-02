@@ -2,7 +2,7 @@
 	"name": "Sealed Medal Container",
 	"icon": "kamenridercraft:purple_medals_sealed",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 124,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

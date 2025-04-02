@@ -128,7 +128,6 @@ public class SeikenSwordriverItem extends RiderDriverItem {
     public String getUnlimitedTextures(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName, int num)
     {
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
-        //return riderName + get_Form_Item(itemstack, 4).getFormName(fly);v8
 
         if (get_Form_Item(itemstack,1).get_Stored_num()==2) return"blank";
         if(num==2) return get_Form_Item(itemstack,1).getFormName(fly);
@@ -137,11 +136,6 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         else return riderName + "_base";
     }
 
-    @Override
-    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        super.inventoryTick(stack,level,entity,slotId,isSelected);
-
-    }
     @Override
     public void Extra_set_Form_Item(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag)
     {

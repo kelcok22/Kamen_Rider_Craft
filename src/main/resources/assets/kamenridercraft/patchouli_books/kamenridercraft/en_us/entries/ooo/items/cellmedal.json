@@ -2,7 +2,7 @@
 	"name": "Cell Medal",
 	"icon": "kamenridercraft:cellmedal",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Greeed Absorption Core",
 	"icon": "kamenridercraft:greeed_absorption_core",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 122,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

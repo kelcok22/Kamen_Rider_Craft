@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tatoba Combo",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#tora_medal)Tora$(/l), and $(l:ooo/items/core_medals#batta_medal)Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gatakiriba Combo",
-			"text": "Accessed with the $(l:ooo/items/kuwagata_medal)Kuwagata$(/l), $(l:ooo/items/kamakiri_medal)Kamakiri$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#kuwagata_medal)Kuwagata$(/l), $(l:ooo/items/core_medals#kamakiri_medal)Kamakiri$(/l), and $(l:ooo/items/core_medals#batta_medal)Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Latorartar Combo",
-			"text": "Accessed with the $(l:ooo/items/lion_medal)Lion$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/cheetah_medal)Cheetah Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#lion_medal)Lion$(/l), $(l:ooo/items/core_medals#tora_medal)Tora$(/l), and $(l:ooo/items/core_medals#cheetah_medal)Cheetah Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sagohzo Combo",
-			"text": "Accessed with the $(l:ooo/items/sai_medal)Sai$(/l), $(l:ooo/items/gorilla_medal)Gorilla$(/l), and $(l:ooo/items/zou_medal)Zou Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#sai_medal)Sai$(/l), $(l:ooo/items/core_medals#gorilla_medal)Gorilla$(/l), and $(l:ooo/items/core_medals#zou_medal)Zou Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shauta Combo",
-			"text": "Accessed with the $(l:ooo/items/shachi_medal)Shachi$(/l), $(l:ooo/items/unagi_medal)Unagi$(/l), and $(l:ooo/items/tako_medal)Tako Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#shachi_medal)Shachi$(/l), $(l:ooo/items/core_medals#unagi_medal)Unagi$(/l), and $(l:ooo/items/core_medals#tako_medal)Tako Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tajadol Combo",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#kujaku_medal)Kujaku$(/l), and $(l:ooo/items/core_medals#condor_medal)Condor Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Putotyra Combo",
-			"text": "Accessed with the $(l:ooo/items/ptera_medal)Ptera$(/l), $(l:ooo/items/tricera_medal)Tricera$(/l), and $(l:ooo/items/tyranno_medal)Tyranno Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#ptera_medal)Ptera$(/l), $(l:ooo/items/core_medals#tricera_medal)Tricera$(/l), and $(l:ooo/items/core_medals#tyranno_medal)Tyranno Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burakawani Combo",
-			"text": "Accessed with the $(l:ooo/items/cobra_medal)Cobra$(/l), $(l:ooo/items/kame_medal)Kame$(/l), and $(l:ooo/items/wani_medal)Wani Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#cobra_medal)Cobra$(/l), $(l:ooo/items/core_medals#kame_medal)Kame$(/l), and $(l:ooo/items/core_medals#wani_medal)Wani Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tajadol Combo (Final Episode ver.)",
-			"text": "Accessed with the $(l:ooo/items/taka_ankh_medal)Cracked Taka$(/l), $(l:ooo/items/kujaku_medal)Kujaku$(/l), and $(l:ooo/items/condor_medal)Condor Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_ankh_medal)Cracked Taka$(/l), $(l:ooo/items/core_medals#kujaku_medal)Kujaku$(/l), and $(l:ooo/items/core_medals#condor_medal)Condor Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tamashiy Combo",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/imagin_medal)Imagin$(/l), and $(l:ooo/items/shocker_medal)Shocker Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#imagin_medal)Imagin$(/l), and $(l:ooo/items/core_medals#shocker_medal)Shocker Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mukachiri Combo",
-			"text": "Accessed with the $(l:ooo/items/mukade_medal)Mukade$(/l), $(l:ooo/items/hachi_medal)Hachi$(/l), and $(l:ooo/items/ari_medal)Ari Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#mukade_medal)Mukade$(/l), $(l:ooo/items/core_medals#hachi_medal)Hachi$(/l), and $(l:ooo/items/core_medals#ari_medal)Ari Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bikaso Combo",
-			"text": "Accessed with the $(l:ooo/items/ebi_new_medal)Ebi$(/l), $(l:ooo/items/kani_new_medal)Kani$(/l), and $(l:ooo/items/sasori_new_medal)Sasori Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#ebi_new_medal)Ebi$(/l), $(l:ooo/items/core_medals#kani_new_medal)Kani$(/l), and $(l:ooo/items/core_medals#sasori_new_medal)Sasori Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Saramiuo Combo",
-			"text": "Accessed with the $(l:ooo/items/same_medal)Same$(/l), $(l:ooo/items/kujira_medal)Kujira$(/l), and $(l:ooo/items/ookamiuo_medal)Ookamiuo Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#same_medal)Same$(/l), $(l:ooo/items/core_medals#kujira_medal)Kujira$(/l), and $(l:ooo/items/core_medals#ookamiuo_medal)Ookamiuo Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shigazeshi Combo",
-			"text": "Accessed with the $(l:ooo/items/shika_medal)Shika$(/l), $(l:ooo/items/gazelle_medal)Gazelle$(/l), and $(l:ooo/items/ushi_medal)Ushi Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#shika_medal)Shika$(/l), $(l:ooo/items/core_medals#gazelle_medal)Gazelle$(/l), and $(l:ooo/items/core_medals#ushi_medal)Ushi Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Seishirogin Combo",
-			"text": "Accessed with the $(l:ooo/items/seiuchi_medal)Seiuchi$(/l), $(l:ooo/items/shirokuma_medal)Shirokuma$(/l), and $(l:ooo/items/penguin_medal)Penguin Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#seiuchi_medal)Seiuchi$(/l), $(l:ooo/items/core_medals#shirokuma_medal)Shirokuma$(/l), and $(l:ooo/items/core_medals#penguin_medal)Penguin Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Takapanba",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/panda_medal)Panda$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#panda_medal)Panda$(/l), and $(l:ooo/items/core_medals#batta_medal)Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Takagaruba",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/kangaroo_medal)Kangaroo$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#kangaroo_medal)Kangaroo$(/l), and $(l:ooo/items/core_medals#batta_medal)Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Takatoragaru",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/tora_medal)Tora$(/l), and $(l:ooo/items/kangaroo_medal)Kangaroo Medals$(/l) (while sneaking)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#tora_medal)Tora$(/l), and $(l:ooo/items/core_medals#kangaroo_medal)Kangaroo Medals$(/l) (while sneaking)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Takayadoba",
-			"text": "Accessed with the $(l:ooo/items/taka_medal)Taka$(/l), $(l:ooo/items/yadokari_medal)Yadokari$(/l), and $(l:ooo/items/batta_medal)Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_medal)Taka$(/l), $(l:ooo/items/core_medals#yadokari_medal)Yadokari$(/l), and $(l:ooo/items/core_medals#batta_medal)Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Tatoba Combo",
-			"text": "Accessed with the $(l:ooo/items/super_taka_medal)Super Taka$(/l), $(l:ooo/items/super_tora_medal)Super Tora$(/l), and $(l:ooo/items/super_batta_medal)Super Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#super_taka_medal)Super Taka$(/l), $(l:ooo/items/core_medals#super_tora_medal)Super Tora$(/l), and $(l:ooo/items/core_medals#super_batta_medal)Super Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tajadol Combo Eternity",
-			"text": "Accessed with the $(l:ooo/items/taka_eternity_medal)Taka Eternity$(/l), $(l:ooo/items/kujaku_eternity_medal)Kujaku Eternity$(/l), and $(l:ooo/items/condor_eternity_medal)Condor Eternity Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#taka_eternity_medal)Taka Eternity$(/l), $(l:ooo/items/core_medals#kujaku_eternity_medal)Kujaku Eternity$(/l), and $(l:ooo/items/core_medals#condor_eternity_medal)Condor Eternity Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Renai Combo",
-			"text": "Accessed with the $(l:ooo/items/love_core_medal)Love (Head)$(/l), $(l:ooo/items/love_core2_medal)Love (Torso)$(/l), and $(l:ooo/items/love_core3_medal)Love (Legs) Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#love_core_medal)Love (Head)$(/l), $(l:ooo/items/core_medals#love_core2_medal)Love (Torso)$(/l), and $(l:ooo/items/core_medals#love_core3_medal)Love (Legs) Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Legend Tatoba Combo",
-			"text": "Accessed with the $(l:ooo/items/habataki_medal)Habataki$(/l), $(l:ooo/items/taiga_medal)Tiger$(/l), and $(l:ooo/items/ichigo_medal)Ichigo Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#habataki_medal)Habataki$(/l), $(l:ooo/items/core_medals#taiga_medal)Tiger$(/l), and $(l:ooo/items/core_medals#ichigo_medal)Ichigo Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",

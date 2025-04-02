@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tatoba Combo",
-			"text": "Accessed with the $(l:ooo/items/ancient_taka_medal)Ancient Taka$(/l), $(l:ooo/items/ancient_tora_medal)Ancient Tora$(/l), and $(l:ooo/items/ancient_batta_medal)Ancient Batta Medals$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#ancient_taka_medal)Ancient Taka$(/l), $(l:ooo/items/core_medals#ancient_tora_medal)Ancient Tora$(/l), and $(l:ooo/items/core_medals#ancient_batta_medal)Ancient Batta Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:ooo/items/ancient_tora_medal)Ancient Tora Medal$(/l)"
+			"text": "Accessed with the $(l:ooo/items/core_medals#ancient_tora_medal)Ancient Tora Medal$(/l)"
 		},
 		{
 			"type": "patchouli:text",

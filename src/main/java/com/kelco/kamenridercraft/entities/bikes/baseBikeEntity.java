@@ -14,6 +14,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
@@ -100,6 +101,11 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 		}
 
 	}
+
+	@Override
+    public boolean hurt(DamageSource source, float amount) {
+		return super.hurt(source, source.is(DamageTypes.PLAYER_ATTACK) && !this.hasControllingPassenger() ? this.getMaxHealth() : amount);
+    }
 
 	// Turn off step sounds since it's a bike
 	@Override

@@ -2,7 +2,7 @@
 	"name": "Proto Birth Core",
 	"icon": "kamenridercraft:proto_birth_core",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 114,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_blet_kazari)Greeed Belt (Kazari)$(/l) (10%)$(li)1 $(l:ooo/items/lion_medal)Lion Medal$(/l) (40%)$(li)1 $(l:ooo/items/tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/cheetah_medal)Cheetah Medal$(/l) (40%)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_blet_kazari)Greeed Belt (Kazari)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#lion_medal)Lion Medal$(/l) (40%)$(li)1 $(l:ooo/items/core_medals#tora_medal)Tora Medal$(/l) (20%)$(li)1 $(l:ooo/items/core_medals#cheetah_medal)Cheetah Medal$(/l) (40%)"
 		}
 	]
 }

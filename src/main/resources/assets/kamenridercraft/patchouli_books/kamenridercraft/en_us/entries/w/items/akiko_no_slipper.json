@@ -2,7 +2,7 @@
 	"name": "Akiko no Slipper",
 	"icon": "kamenridercraft:akiko_no_slipper",
 	"category": "kamenridercraft:w/items",
-	"sortnum": 80,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Gaia Memory Shard",
 	"icon": "kamenridercraft:gaiamemory",
 	"category": "kamenridercraft:w/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",
