@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Maja Arms",
-			"text": "Accessed with the $(l:gaim/items/maja_lockseed)Maja Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#maja_lockseed)Maja Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

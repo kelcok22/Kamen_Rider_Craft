@@ -1,0 +1,676 @@
+{
+	"name": "Wizard Rings",
+	"icon": "kamenridercraft:flame_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "flame_ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wizard's $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flame_ring",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_ring",
+			"title": "Water Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#water)Water Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hurricane_ring",
+			"title": "Hurricane Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#hurricane)Hurricane Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hurricane_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_green_ring)green Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "land_ring",
+			"title": "Land Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#land)Land Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:land_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flame_ring_dragon",
+			"title": "Flame Dragon Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flame_ring_dragon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_ring_dragon",
+			"title": "Water Dragon Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#water_dragon)Water Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_ring_dragon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hurricane_ring_dragon",
+			"title": "Hurricane Dragon Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#hurricane_dragon)Hurricane Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hurricane_ring_dragon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_green_ring)green Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "land_ring_dragon",
+			"title": "Land Dragon Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#land_dragon)Land Dragon$(/l) form$(br2)Used to access Beast's $(l:wizard/riders/beast#wizard)Wizard Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:land_ring_dragon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "infinity_ring",
+			"title": "Infinity Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/infinity_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "special_ring",
+			"title": "Special Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame_dragon_special)Flame Dragon w/ Drago Skull$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#water_dragon_special)Water Dragon w/ Drago Wings$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#hurricane_dragon_special)Hurricane Dragon w/ Drago Tail$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#land_dragon_special)Land Dragon w/ Drago Hell Claws$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:special_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hope_ring",
+			"title": "Hope Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver_f)Wise Driver (Koyomi)$(/l)$(br2)Used with the $(l:wizard/items/wizard_rings#finish_strike_ring)Finish Strike Wizard Ring$(/l) to access Wizard's $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/hope_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "finish_strike_ring",
+			"title": "Finish Strike Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#infinity_dragon)Infinity Dragon$(/l) and $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/finish_strike_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "special_rush_ring",
+			"title": "Special Rush Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#special_rush)Special Rush$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:special_rush_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beast_ring",
+			"title": "Beast Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Beast's $(l:wizard/devices/beastdriver)Beast Driver$(/l)$(br2)Used to access Beast's $(l:wizard/riders/beast#beast)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beast_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "falco_ring",
+			"title": "Falco Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#falco)Falco Mantle$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#falco)Falco Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:falco_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chameleo_ring",
+			"title": "Chameleo Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#chameleo)Chameleo Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chameleo_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffa_ring",
+			"title": "Buffa Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#buffa)Buffa Mantle$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#beast)Beast Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dolphi_ring",
+			"title": "Dolphi Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#dolphi)Dolphi Mantle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dolphi_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hyper_ring",
+			"title": "Hyper Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Beast's $(l:wizard/riders/beast#hyper)Hyper$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wiseman_ring",
+			"title": "Wiseman Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver)Wise Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wiseman_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mage_o_ring",
+			"title": "Mage Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver)Mage's Belt (Mage)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mage_o_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mage_b_ring",
+			"title": "Mage Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver_b)Mage's Belt (Blue Mage)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mage_b_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mage_g_ring",
+			"title": "Mage Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver_g)Mage's Belt (Green Mage)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mage_g_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_green_ring)green Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sorcerer_ring",
+			"title": "Sorcerer Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Used to craft Sorcerer's $(l:wizard/devices/sorcererdriver)Sorcerer's Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sorcerer_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_ring",
+			"title": "Black Wizard Ring",
+			"text": "Appears in:$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Used to craft Black Wizard's $(l:wizard/devices/black_wizardriver)Wizardriver (Black Wizard)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_ring",
+			"title": "Dark Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Used to craft Dark Wizard's $(l:wizard/devices/dark_wizardriver)Wizardriver (Dark Wizard)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dress_up_ring",
+			"title": "Dress Up Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to $(l:wizard/riders/wizard#dress_up)dress Wizard up$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dress_up_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragorise_ring",
+			"title": "Dragorise Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragorise_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "engage_ring",
+			"title": "Engage Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:engage_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "please_ring",
+			"title": "Please Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:please_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "driver_on_ring",
+			"title": "Driver On Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:driver_on_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "driver_on_ring_white_wizard",
+			"title": "Driver On Wizard Ring (Wiseman)",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:driver_on_ring_white_wizard",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "common_wizard_ring",
+			"title": "common Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:common_wizard_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chichin_pui_pui_ring",
+			"title": "Chichin Pui Pui Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chichin_pui_pui_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)amber Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "create_ring",
+			"title": "Create Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:create_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "miracle_ring",
+			"title": "Miracle Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai × Space Sheriff: Super Hero Taisen Z (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:miracle_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_cyan_ring)cyan Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dance_ring",
+			"title": "Dance Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dance_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "holy_ring",
+			"title": "Holy Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garuda_ring",
+			"title": "Garuda Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garuda_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_ring",
+			"title": "Unicorn Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)blue Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kraken_ring",
+			"title": "Kraken Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golem_ring",
+			"title": "Golem Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golem_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)violet Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "white_garuda_ring",
+			"title": "White Garuda Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_garuda_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cerberus_ring",
+			"title": "Cerberus Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cerberus_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_black_ring)black Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garuda_ring_color_ver",
+			"title": "Garuda Wizard Ring (Color Ver.)",
+			"text": "Appears in:$(li)Garuda Wizard Ring Hero Quest 2013 Original Color ver. (2013, toyline)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#garuda)Garuda Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garuda_ring_color_ver",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)red Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kraken_ring_color_ver",
+			"title": "Kraken Wizard Ring (Color Ver.)",
+			"text": "Used to access Wizard's $(l:wizard/riders/wizard#kraken)Kraken Style$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_ring_color_ver",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_yellow_ring)yellow Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beast_engage_ring",
+			"title": "Engage Wizard Ring (Beast)",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beast_engage_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chimarise_ring",
+			"title": "Chimarise Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chimarise_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beast_driver_on_ring",
+			"title": "Driver On Wizard Ring (Beast)",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beast_driver_on_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "griffin_ring",
+			"title": "Griffin Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:griffin_ring",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:wizard/items/unknown_wizard_rings#unknown_beast_ring)Beast's Unknown Wizard Rings$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_engage_ring",
+			"title": "Fourze Engage Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fourze_engage_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_sentai_ring",
+			"title": "Super Sentai Wizard Ring",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai × Space Sheriff: Super Hero Taisen Z (2013, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_sentai_ring",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

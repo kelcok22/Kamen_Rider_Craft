@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Golden Arms",
-			"text": "Accessed with the $(l:gaim/items/golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#golden_ringo_lockseed)Golden Ringo Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

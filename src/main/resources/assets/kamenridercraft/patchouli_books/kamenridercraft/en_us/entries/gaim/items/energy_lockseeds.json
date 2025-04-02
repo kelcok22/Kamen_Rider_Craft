@@ -1,0 +1,121 @@
+{
+	"name": "Energy Lockseeds",
+	"icon": "kamenridercraft:lemon_energy_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lemon_energy_lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Duke's $(l:gaim/devices/genesis_driver_duke)Genesis Driver (Duke)$(/l)$(br2)Used to access $(l:gaim/riders/duke#lemon_energy)Lemon Energy Arms$(/l) or $(l:gaim/riders/gaim#jimber_lemon)Jimber Lemon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lemon_energy_lockseed",
+			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cherry_energy_lockseed",
+			"title": "Cherry Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Sigurd's $(l:gaim/devices/genesis_driver_sigurd)Genesis Driver (Sigurd)$(/l)$(br2)Used to access $(l:gaim/riders/sigurd#cherry_energy)Cherry Energy Arms$(/l) or $(l:gaim/riders/gaim#jimber_cherry)Jimber Cherry Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cherry_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "peach_energy_lockseed",
+			"title": "Peach Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Marika's $(l:gaim/devices/genesis_driver_marika)Genesis Driver (Marika)$(/l)$(br2)Used to access $(l:gaim/riders/marika#peach_energy)Peach Energy Arms$(/l) or $(l:gaim/riders/gaim#jimber_peach)Jimber Peach Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:peach_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "melon_energy_lockseed",
+			"title": "Melon Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Zangetsu Shin's $(l:gaim/devices/genesis_driver_zangetsu_shin)Genesis Driver (Zangetsu Shin)$(/l)$(br2)Used to access $(l:gaim/riders/zangetsu_shin#melon_energy)Melon Energy Arms$(/l) or $(l:gaim/riders/gaim#jimber_melon)Jimber Melon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:melon_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "matsubokkuri_energy_lockseed",
+			"title": "Matsubokkuri Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used to craft Kurokage Shin's $(l:gaim/devices/genesis_driver_kurokage_shin)Genesis Driver (Kurokage Shin)$(/l)$(br2)Used to access $(l:gaim/riders/kurokage_shin)Matsubokkuri Energy Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:matsubokkuri_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_fruits_energy_lockseed",
+			"title": "Dragon Fruits Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to access $(l:gaim/riders/duke#dragon_energy)Dragon Energy Arms$(/l) or $(l:gaim/riders/ryugen#jimber_dragon_fruits)Jimber Dragon Fruits Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_fruits_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_dragon_fruits_energy_lockseed",
+			"title": "Proto Dragon Fruits Energy Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Baron (2015, V-Cinema film)$(br2)Used to craft Tyrant's $(l:gaim/devices/genesis_driver_tyrant)Genesis Driver (Tyrant)$(/l)$(br2)Used to access $(l:gaim/riders/tyrant)Dragon Energy Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_dragon_fruits_energy_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "marron_energy_lockseed",
+			"title": "Marron Energy Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Used to access $(l:gaim/riders/knuckle#jimber_marron)Jimber Marron Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:marron_energy_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_lemon_energy_lockseed",
+			"title": "Dark Lemon Energy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#black_jimber)Black Jimber Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/dark_lemon_energy_lockseed"
+		}
+	]
+}

@@ -1,0 +1,534 @@
+{
+	"name": "Shift Cars",
+	"icon": "kamenridercraft:speedshift",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_speedshift",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Protodrive's $(l:drive/devices/drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Used to access Zero Drive's $(l:drive/riders/drive#zero_drive)Type Speed$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#hayai)Hayai$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_speedshift",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "speedshift",
+			"title": "Shift Speed",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:speedshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wildshift",
+			"title": "Shift Wild",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#wild)Type Wild$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wildshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "technicshift",
+			"title": "Shift Technic",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#technic)Type Technic$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:technicshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deadheat_car",
+			"title": "Shift Dead Heat Car",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deadheat_car",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deadheatshift",
+			"title": "Shift Dead Heat",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#dead_heat)Type Dead Heat$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#deadheat)Dead Heat$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/deadheat"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "formulashift",
+			"title": "Shift Formula",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#formula)Type Formula$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/formulashift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tridoronshift_core",
+			"title": "Unfinished Shift Tridoron",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft $(l:drive/items/shift_cars#tridoronshift)Shift Tridoron$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tridoronshift_core",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tridoronshift",
+			"title": "Shift Tridoron",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#tridoron)Type Tridoron$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/tridoronshift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "heartronshift",
+			"title": "Shift Heartron",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used to craft Heart's $(l:drive/devices/drivedriver_heart)Drive Driver (Heart)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/heartronshift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "high_speedshift",
+			"title": "Shift High Speed",
+			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Used to access Drive's $(l:drive/riders/drive#high_speed)Type High Speed$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/high_speedshift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nextshift",
+			"title": "Shift Next",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used to craft Dark Drive's $(l:drive/devices/drivedriver_darkdrive)Drive Driver (Dark Drive)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nextshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "specialshift",
+			"title": "Shift Special",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used to access Drive's $(l:drive/riders/drive#special)Type Special$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:specialshift",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fruitsshift",
+			"title": "Shift Fruits",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to access Drive's $(l:drive/riders/drive#fruits)Type Fruits$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/fruitsshift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "speedwildtechnicshift",
+			"title": "Shift Speed Wild Technic",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used to access Drive's $(l:drive/riders/drive#speed_wild_technic)Type Speed Wild Technic$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/speedwildtechnicshift"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maxflare",
+			"title": "Max Flare",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#max_flare)Max Flare$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#moerl)Moerl$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maxflare",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "funkyspike",
+			"title": "Funky Spike",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#funky_spike)Funky Spike$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:funkyspike",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "midnightshadow",
+			"title": "Midnight Shadow",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#midnight_shadow)Midnight Shadow$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:midnightshadow",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "justice_hunter",
+			"title": "Justice Hunter",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#justice_hunter)Justice Hunter$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:justice_hunter",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dream_vegas",
+			"title": "Dream Vegas",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#dream_vegas)Dream Vegas$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dream_vegas",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dimension_cab",
+			"title": "Dimension Cab",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#dimension_cab)Dimension Cab$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dimension_cab",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "massive_monster",
+			"title": "Massive Monster",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#massive_monster)Massive Monster$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:massive_monster",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spin_mixer",
+			"title": "Spin Mixer",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#spin_mixer)Spin Mixer$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#mazerl)Mazerl$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spin_mixer",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rumble_dump",
+			"title": "Rumble Dump",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#rumble_dump)Rumble Dump$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#arabull)Arabull$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rumble_dump",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mad_doctor",
+			"title": "Mad Doctor",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#mad_doctor)Mad Doctor$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#naorl)Naorl$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mad_doctor",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hooking_wrecker",
+			"title": "Hooking Wrecker",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#hooking_wrecker)Hooking Wrecker$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hooking_wrecker",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "burning_solar",
+			"title": "Burning Solar",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:burning_solar",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "colorful_commercial",
+			"title": "Colorful Commercial",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:colorful_commercial",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fire_braver",
+			"title": "Fire Braver",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#fire_braver)Fire Braver$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fire_braver",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rolling_gravity",
+			"title": "Rolling Gravity",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#rolling_gravity)Rolling Gravity$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rolling_gravity",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deco_traveller",
+			"title": "Deco Traveller",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deco_traveller",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "road_winter",
+			"title": "Road Winter",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#road_winter)Road Winter$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:road_winter",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazing_circus",
+			"title": "Amazing Circus",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazing_circus",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mantarn_f01",
+			"title": "Mantarn F01",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#mantarn_f01)Mantarn F01$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mantarn_f01",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jacky_f02",
+			"title": "Jacky F02",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#jacky_f02)Jacky F02$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jacky_f02",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sparner_f03",
+			"title": "Sparner F03",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#sparner_f03)Sparner F03$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sparner_f03",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mega_maxflare",
+			"title": "Mega Max Flare",
+			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Used to access Drive's $(l:drive/riders/drive#mega_max_flare)Mega Max Flare$(/l) Shift Tire"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/mega_maxflare"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "next_hunter",
+			"title": "Shift Next Hunter",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_hunter",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "next_traveller",
+			"title": "Shift Next Traveller",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_traveller",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "next_builder",
+			"title": "Shift Next Builder",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_builder",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "holy_christmas",
+			"title": "Shift Holy Christmas",
+			"text": "Appears in:$(li)Kamen Rider Drive Charadeco Cake (2014, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_christmas",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shift_ride_crosser",
+			"title": "Shift Ride Crosser",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Mach (2016, V-Cinema film)$(br2)Used to access Mach's $(l:drive/riders/mach#mach_chaser)Mach Chaser$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/shift_ride_crosser"
+		}
+	]
+}

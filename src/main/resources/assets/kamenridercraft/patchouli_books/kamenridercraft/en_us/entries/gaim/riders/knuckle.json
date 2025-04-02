@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kurumi Arms",
-			"text": "Accessed with the $(l:gaim/items/kurumi_lockseed)Kurumi Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#kurumi_lockseed)Kurumi Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Suika Arms",
-			"text": "Accessed with the $(l:gaim/items/suika_lockseed)Suika Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#suika_lockseed)Suika Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Donguri Arms",
-			"text": "Accessed with the $(l:gaim/items/donguri_lockseed)Donguri Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#donguri_lockseed)Donguri Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Matsubokkuri Arms",
-			"text": "Accessed with the $(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jimber Marron Arms",
-			"text": "Accessed with the $(l:gaim/items/marron_energy_lockseed)Marron Energy Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#marron_energy_lockseed)Marron Energy Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Arms",
-			"text": "Accessed with the $(l:gaim/items/kuuga_lockseed)Kuuga Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#kuuga_lockseed)Kuuga Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

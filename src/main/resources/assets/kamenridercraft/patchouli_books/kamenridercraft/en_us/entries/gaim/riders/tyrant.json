@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Energy Arms",
-			"text": "Accessed with the $(l:gaim/items/dragon_fruits_energy_lockseed)Dragon Fruits Energy Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#dragon_fruits_energy_lockseed)Dragon Fruits Energy Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

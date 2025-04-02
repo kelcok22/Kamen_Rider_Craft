@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:drive/items/protozero_core)Roidmude Core Protozero$(/l)"
+			"text": "Accessed with the $(l:drive/items/roidmude_cores#protozero_core)Roidmude Core Protozero$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Mashin Chaser",
-			"text": "Accessed with the $(l:drive/items/rhino_super_viral_core)Rhino Super Viral Core$(/l)"
+			"text": "Accessed with the $(l:drive/items/viral_cores#rhino_super_viral_core)Rhino Super Viral Core$(/l)"
 		},
 		{
 			"type": "patchouli:text",

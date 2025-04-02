@@ -1,0 +1,136 @@
+{
+	"name": "Viral Cores",
+	"icon": "kamenridercraft:viral_core_cobara",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_cobara",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_cobara",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_spider",
+			"title": "Spider Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_spider",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_bat",
+			"title": "Bat Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_bat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_cobara",
+			"title": "Chaser Cobra Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_cobara",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_spider",
+			"title": "Chaser Spider Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_spider",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_bat",
+			"title": "Chaser Bat Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_bat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_cobara",
+			"title": "Neo Cobra Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_cobara",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_spider",
+			"title": "Neo Spider Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_spider",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_bat",
+			"title": "Neo Bat Viral Core",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_bat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rhino_super_viral_core",
+			"title": "Rhino Super Viral Core",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Chaser (2016, V-Cinema film)$(br2)Used to access Mashin Chaser's $(l:drive/riders/mashin_chaser#super)Super Mashin Chaser$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#chou_dead_heat)Super Dead Heat$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rhino_super_viral_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

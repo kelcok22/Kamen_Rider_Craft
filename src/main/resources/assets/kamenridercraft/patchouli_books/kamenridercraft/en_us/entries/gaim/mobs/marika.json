@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 60$(br2)Drops$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/peach_energy_lockseed)Peach Energy Lockseed$(/l)$(li)1 $(l:gaim/items/marron_energy_lockseed)Marron Energy Lockseed$(/l) (25%)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 60$(br2)Drops$(li)4-6 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/energy_lockseeds#peach_energy_lockseed)Peach Energy Lockseed$(/l)$(li)1 $(l:gaim/items/energy_lockseeds#marron_energy_lockseed)Marron Energy Lockseed$(/l) (25%)"
 		}
 	]
 }

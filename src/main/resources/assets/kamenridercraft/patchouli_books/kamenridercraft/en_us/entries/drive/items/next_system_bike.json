@@ -2,7 +2,7 @@
 	"name": "NEXT System Bike",
 	"icon": "kamenridercraft:next_system_bike",
 	"category": "kamenridercraft:drive/items",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

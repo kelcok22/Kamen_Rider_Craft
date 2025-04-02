@@ -2,7 +2,7 @@
 	"name": "Blank Switch",
 	"icon": "kamenridercraft:astroswitch",
 	"category": "kamenridercraft:fourze/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

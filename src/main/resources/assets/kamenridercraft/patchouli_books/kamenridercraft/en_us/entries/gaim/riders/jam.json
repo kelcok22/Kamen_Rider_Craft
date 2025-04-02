@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Darkness Arms",
-			"text": "Accessed with the $(l:gaim/items/black_ringo_lockseed)Black Ringo Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#black_ringo_lockseed)Black Ringo Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

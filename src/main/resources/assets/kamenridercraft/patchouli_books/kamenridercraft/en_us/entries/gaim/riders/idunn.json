@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ringo Arms",
-			"text": "Accessed with the $(l:gaim/items/forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#forbidden_ringo_lockseed)Forbidden Ringo Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

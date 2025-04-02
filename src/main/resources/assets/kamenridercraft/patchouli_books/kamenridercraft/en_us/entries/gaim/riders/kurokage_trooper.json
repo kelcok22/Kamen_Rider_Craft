@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Matsubokkuri Arms",
-			"text": "Accessed with the $(l:gaim/items/matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#matsubokkuri_lockseed)Matsubokkuri Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Style",
-			"text": "Accessed with the $(l:wizard/items/flame_ring)Flame Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#flame_ring)Flame Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Style",
-			"text": "Accessed with the $(l:wizard/items/water_ring)Water Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#water_ring)Water Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Style",
-			"text": "Accessed with the $(l:wizard/items/hurricane_ring)Hurricane Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#hurricane_ring)Hurricane Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Style",
-			"text": "Accessed with the $(l:wizard/items/land_ring)Land Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#land_ring)Land Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Dragon",
-			"text": "Accessed with the $(l:wizard/items/flame_ring_dragon)Flame Dragon Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#flame_ring_dragon)Flame Dragon Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Dragon",
-			"text": "Accessed with the $(l:wizard/items/water_ring_dragon)Water Dragon Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#water_ring_dragon)Water Dragon Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Dragon",
-			"text": "Accessed with the $(l:wizard/items/hurricane_ring_dragon)Hurricane Dragon Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#hurricane_ring_dragon)Hurricane Dragon Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Dragon",
-			"text": "Accessed with the $(l:wizard/items/land_ring_dragon)Land Dragon Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#land_ring_dragon)Land Dragon Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Dragon w/ Drago Skull",
-			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Dragon w/ Drago Tail",
-			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#water_dragon)Water Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#water_dragon)Water Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hurricane Dragon w/ Drago Wings",
-			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#hurricane_dragon)Hurricane Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#hurricane_dragon)Hurricane Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Land Dragon w/ Drago Hell Claws",
-			"text": "Accessed with the $(l:wizard/items/special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#land_dragon)Land Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#special_ring)Special Wizard Ring$(/l) as $(l:wizard/riders/wizard#land_dragon)Land Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Special Rush",
-			"text": "Accessed with the $(l:wizard/items/special_rush_ring)Special Rush Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#special_rush_ring)Special Rush Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Style",
-			"text": "Accessed with the $(l:wizard/items/infinity_ring)Infinity Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#infinity_ring)Infinity Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Dragon",
-			"text": "Accessed with the $(l:wizard/items/finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Infinity Dragon Gold",
-			"text": "Accessed with the $(l:wizard/items/finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l) with the $(l:wizard/items/hope_ring)Hope Wizard Ring$(/l) in your inventory"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#finish_strike_ring)Finish Strike Wizard Ring$(/l) as $(l:wizard/riders/wizard#infinity)Infinity Style$(/l) with the $(l:wizard/items/wizard_rings#hope_ring)Hope Wizard Ring$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Falco Mantle",
-			"text": "Accessed with the $(l:wizard/items/falco_ring)Falco Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#falco_ring)Falco Wizard Ring$(/l) as $(l:wizard/riders/wizard#flame_dragon)Flame Dragon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beast Mantle",
-			"text": "Accessed with the $(l:wizard/items/buffa_ring)Buffa Wizard Ring$(/l) as $(l:wizard/riders/wizard#falco)Falco Mantle$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#buffa_ring)Buffa Wizard Ring$(/l) as $(l:wizard/riders/wizard#falco)Falco Mantle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flame Style (Dress Up)",
-			"text": "Accessed with the $(l:wizard/items/dress_up_ring)Dress Up Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#dress_up_ring)Dress Up Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Garuda Style",
-			"text": "Accessed with the $(l:wizard/items/garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#garuda_ring_color_ver)Garuda Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kraken Style",
-			"text": "Accessed with the $(l:wizard/items/kraken_ring_color_ver)Kraken Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#water)Water Style$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#kraken_ring_color_ver)Kraken Wizard Ring (Color Ver.)$(/l) as $(l:wizard/riders/wizard#water)Water Style$(/l)"
 		},
 		{
 			"type": "patchouli:text",

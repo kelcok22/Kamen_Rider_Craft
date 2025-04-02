@@ -2,7 +2,7 @@
 	"name": "Helheim Fruit",
 	"icon": "kamenridercraft:helheim_fruit",
 	"category": "kamenridercraft:gaim/items",
-	"sortnum": 79,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

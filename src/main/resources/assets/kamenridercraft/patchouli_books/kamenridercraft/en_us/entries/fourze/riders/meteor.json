@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:fourze/items/meteor_switch)Meteor Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#meteor_switch)Meteor Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Storm",
-			"text": "Accessed with the $(l:fourze/items/meteor_storm_switch)Meteor Storm Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#meteor_storm_switch)Meteor Storm Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",

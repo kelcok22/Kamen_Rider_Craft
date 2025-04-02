@@ -1,0 +1,45 @@
+{
+	"name": "Roidmude Cores",
+	"icon": "kamenridercraft:roidmude_core_003",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_core_003",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Brain's $(l:drive/devices/brain_driver)Drive Driver (Brain)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_003",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "protozero_core",
+			"title": "Roidmude Core Protozero",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Mashin Chaser's $(l:drive/arsenal/break_gunner)Break Gunner$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:protozero_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cyberoid_zzz_core",
+			"title": "Cyberoid Core ZZZ",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to craft Lupin's $(l:drive/arsenal/lupin_gunner)Lupin Gunner$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyberoid_zzz_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

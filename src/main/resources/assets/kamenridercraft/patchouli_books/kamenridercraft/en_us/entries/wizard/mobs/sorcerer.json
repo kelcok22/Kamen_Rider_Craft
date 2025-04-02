@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Health: 45$(br2)Drops$(li)2-6 $(l:wizard/items/wizardgem)Orange Magic Stones$(/l)$(li)1-3 $(l:wizard/items/wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/wizardgem_black)Black Magic Stone$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Health: 45$(br2)Drops$(li)2-6 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)1-3 $(l:wizard/items/magic_stones#wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/magic_stones#wizardgem_black)Black Magic Stone$(/l)"
 		}
 	]
 }

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Health: 100$(br2)Drops$(li)4-5 $(l:wizard/items/wizardgem)Orange Magic Stones$(/l)$(li)1-2 $(l:wizard/items/wizardgem_violet)Violet Magic Stones$(/l)$(li)1 $(l:wizard/items/holy_ring)Holy Wizard Ring$(/l) (20%)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Health: 100$(br2)Drops$(li)4-5 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)1-2 $(l:wizard/items/magic_stones#wizardgem_violet)Violet Magic Stones$(/l)$(li)1 $(l:wizard/items/wizard_rings#holy_ring)Holy Wizard Ring$(/l) (20%)"
 		}
 	]
 }

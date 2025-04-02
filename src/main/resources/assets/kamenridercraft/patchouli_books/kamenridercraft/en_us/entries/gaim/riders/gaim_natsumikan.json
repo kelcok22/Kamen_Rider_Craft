@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Natsumikan Arms",
-			"text": "Accessed with the $(l:gaim/items/natsumikan_lockseed)Natsumikan Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#natsumikan_lockseed)Natsumikan Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
