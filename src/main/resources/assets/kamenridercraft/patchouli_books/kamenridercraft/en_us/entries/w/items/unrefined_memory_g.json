@@ -2,7 +2,7 @@
 	"name": "Unrefined Memory (Gold)",
 	"icon": "kamenridercraft:unrefined_memory_g",
 	"category": "kamenridercraft:w/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

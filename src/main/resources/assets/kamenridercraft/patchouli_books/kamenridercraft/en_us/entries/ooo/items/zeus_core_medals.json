@@ -1,0 +1,279 @@
+{
+	"name": "Zeus Core Medals",
+	"icon": "kamenridercraft:zeus_taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_taka_medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Taka$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_taka_medal",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kujaku_medal",
+			"title": "Zeus Kujaku Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Kujaku$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kujaku_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_condor_medal",
+			"title": "Zeus Condor Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Condor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_condor_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_lion_medal",
+			"title": "Zeus Lion Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Lion$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_lion_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tora_medal",
+			"title": "Zeus Tora Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tora$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tora_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_cheetah_medal",
+			"title": "Zeus Cheetah Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Cheetah$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_cheetah_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kuwagata_medal",
+			"title": "Zeus Kuwagata Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kuwagata$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kuwagata_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kamakiri_medal",
+			"title": "Zeus Kamakiri Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kamakiri$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kamakiri_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_batta_medal",
+			"title": "Zeus Batta Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Batta$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_batta_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_sai_medal",
+			"title": "Zeus Sai Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Sai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_sai_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_gorilla_medal",
+			"title": "Zeus Gorilla Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Gorilla$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_gorilla_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_zou_medal",
+			"title": "Zeus Zou Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Zou$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_zou_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_shachi_medal",
+			"title": "Zeus Shachi Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Shachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_shachi_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_unagi_medal",
+			"title": "Zeus Unagi Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Unagi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_unagi_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tako_medal",
+			"title": "Zeus Tako Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Tako$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tako_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_ptera_medal",
+			"title": "Zeus Ptera Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Ptera$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_ptera_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tricera_medal",
+			"title": "Zeus Tricera Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Tricera$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tricera_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tyranno_medal",
+			"title": "Zeus Tyranno Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Tyranno$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tyranno_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_mukade_medal",
+			"title": "Zeus Mukade Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Mukade$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_mukade_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_hachi_medal",
+			"title": "Zeus Hachi Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Hachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_hachi_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_ari_medal",
+			"title": "Zeus Ari Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Ari$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_ari_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

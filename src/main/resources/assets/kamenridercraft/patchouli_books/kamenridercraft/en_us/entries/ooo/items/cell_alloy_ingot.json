@@ -2,7 +2,7 @@
 	"name": "Cell Alloy Ingot",
 	"icon": "kamenridercraft:cell_alloy_ingot",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Empty Medal Container",
 	"icon": "kamenridercraft:purple_medals_empty",
 	"category": "kamenridercraft:ooo/items",
-	"sortnum": 126,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

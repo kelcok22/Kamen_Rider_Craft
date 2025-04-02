@@ -1,0 +1,227 @@
+{
+	"name": "Dopant Memories",
+	"icon": "kamenridercraft:terror_memory",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "terror_memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/terror_dopant)Terror Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:terror_memory",
+			"text": "Drops from:$(li)$(l:w/mobs/terror_dopant)Terror Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taboo_memory",
+			"title": "Taboo Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/taboo_dopant)Taboo Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taboo_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claydoll_memory",
+			"title": "Claydoll Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claydoll_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nasca_memory",
+			"title": "Nasca Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nasca_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smilodon_memory",
+			"title": "Smilodon Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smilodon_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "weather_memory",
+			"title": "Weather Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the $(l:w/mobs/weather_dopant)Weather Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:weather_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_memory",
+			"title": "Quetzalcoatlus Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the Quetzalcoatlus Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_memory_prototype",
+			"title": "Quetzalcoatlus Memory Prototype",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the Quetzalcoatlus Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_memory_prototype",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "utopia_memory",
+			"title": "Utopia Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the Utopia Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:utopia_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/eternal_mob)Kamen Rider Eternal$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_memory",
+			"title": "Unicorn Memory",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Accel (2011, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_memory_enhancing_adapter",
+			"title": "Unicorn Memory (Enhancing Adapter)",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Accel (2011, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_memory_enhancing_adapter",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magma_memory",
+			"title": "Magma Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by the Magma Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magma_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "commander_memory",
+			"title": "Commander Memory",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Accel (2011, V-Cinema film)$(br2)Used by the Commander Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:commander_memory",
+			"title": " ",
+			"text": "Obtained after crafting the $(l:w/items/gaia_memories#accel_booster_memory)Accel Booster Memory$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "commander_memory_enhancing_adapter",
+			"title": "Commander Memory (Enhancing Adapter)",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Accel (2011, V-Cinema film)$(br2)Used by the Commander Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:commander_memory_enhancing_adapter",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/commander_dopant)Commander Dopant$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "memory_memory",
+			"title": "Memory Memory",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Used by $(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:memory_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "egg_chicken_memory",
+			"title": "Egg Chicken Memory",
+			"text": "Appears in:$(li)Kamen Rider W: Donburi's α/Farewell Beloved Recipe (2010, Hyper Battle Video)$(br2)Used by the Oyakodon Dopant"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:egg_chicken_memory",
+			"title": " ",
+			"text": "Drops from:$(li)Chickens"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "masquerade_memory",
+			"title": "Masquerade Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used by $(l:w/mobs/masquerade)Masquerades$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:masquerade_memory",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+		}
+	]
+}

@@ -1,0 +1,940 @@
+{
+	"name": "Core Medals",
+	"icon": "kamenridercraft:taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Taka$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taka_medal",
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/ankh)Ankh$(/l)$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_medal",
+			"title": "Kujaku Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Kujaku$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujaku_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_medal",
+			"title": "Condor Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Condor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condor_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_ankh_medal",
+			"title": "Cracked Taka Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol_final)Cracked Taka$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taka_ankh_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_medal",
+			"title": "Lion Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Lion$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tora_medal",
+			"title": "Tora Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tora$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tora_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/kazari)Kazari$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cheetah_medal",
+			"title": "Cheetah Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Cheetah$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cheetah_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_medal",
+			"title": "Kuwagata Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kuwagata$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamakiri_medal",
+			"title": "Kamakiri Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kamakiri$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamakiri_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "batta_medal",
+			"title": "Batta Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Batta$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/yummy)Yummy$(/l)$(li)$(l:ooo/mobs/uva)Uva$(/l)$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sai_medal",
+			"title": "Sai Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Sai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sai_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gorilla_medal",
+			"title": "Gorilla Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Gorilla$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gorilla_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zou_medal",
+			"title": "Zou Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Zou$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zou_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shachi_medal",
+			"title": "Shachi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Shachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shachi_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unagi_medal",
+			"title": "Unagi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Unagi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unagi_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tako_medal",
+			"title": "Tako Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Tako$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tako_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ptera_medal",
+			"title": "Ptera Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Ptera$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/items/purple_medals_sealed)Sealed Medal Containers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tricera_medal",
+			"title": "Tricera Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Tricera$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/items/purple_medals_sealed)Sealed Medal Containers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tyranno_medal",
+			"title": "Tyranno Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#putotyra)Tyranno$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tyranno_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/items/purple_medals_sealed)Sealed Medal Containers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_medal",
+			"title": "Cobra Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#burakawani)Cobra$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/structures/gara_edo_village)Gara's Edo Village$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kame_medal",
+			"title": "Kame Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#burakawani)Kame$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kame_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/structures/gara_edo_village)Gara's Edo Village$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wani_medal",
+			"title": "Wani Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#burakawani)Wani$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wani_medal",
+			"title": " ",
+			"text": "Found inside $(l:ooo/structures/gara_edo_village)Gara's Edo Village$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasori_medal",
+			"title": "Sasori Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kani_medal",
+			"title": "Kani Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kani_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ebi_medal",
+			"title": "Ebi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ebi_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mukade_medal",
+			"title": "Mukade Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Mukade$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mukade_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hachi_medal",
+			"title": "Hachi Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Hachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ari_medal",
+			"title": "Ari Core Medal",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#mukachiri)Ari$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ari_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ebi_new_medal",
+			"title": "Ebi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#bikaso)Ebi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ebi_new_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kani_new_medal",
+			"title": "Kani Core Medal",
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#bikaso)Kani$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kani_new_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasori_new_medal",
+			"title": "Sasori Core Medal",
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#bikaso)Sasori$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_new_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "same_medal",
+			"title": "Same Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#saramiuo)Same$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:same_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujira_medal",
+			"title": "Kujira Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#saramiuo)Kujira$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujira_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ookamiuo_medal",
+			"title": "Ookamiuo Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#saramiuo)Ookamiuo$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ookamiuo_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shika_medal",
+			"title": "Shika Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shigazeshi)Shika$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shika_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gazelle_medal",
+			"title": "Gazelle Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shigazeshi)Gazelle$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gazelle_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ushi_medal",
+			"title": "Ushi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shigazeshi)Ushi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ushi_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiuchi_medal",
+			"title": "Seiuchi Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#seishirogin)Seiuchi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:seiuchi_medal",
+			"title": " ",
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirokuma_medal",
+			"title": "Shirokuma Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#seishirogin)Shirokuma$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirokuma_medal",
+			"title": " ",
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "penguin_medal",
+			"title": "Penguin Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#seishirogin)Penguin$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:penguin_medal",
+			"title": " ",
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "panda_medal",
+			"title": "Panda Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access OOO's $(l:ooo/riders/ooo#takapanba)Panda$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kangaroo_medal",
+			"title": "Kangaroo Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Used to access OOO's $(l:ooo/riders/ooo#takagaruba)Kangaroo$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kangaroo_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yadokari_medal",
+			"title": "Yadokari Core Medal",
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Used to access OOO's $(l:ooo/riders/ooo#takayadoba)Yadokari$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yadokari_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/knight_soldier)Knight Soldier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_taka_medal",
+			"title": "Super Taka Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#super_tatoba)Super Taka$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_taka"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_tora_medal",
+			"title": "Super Tora Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#super_tatoba)Super Tora$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_tora"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_batta_medal",
+			"title": "Super Batta Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#super_tatoba)Super Batta$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_batta"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_eternity_medal",
+			"title": "Taka Eternity Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol_eternity)Taka Eternity$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/taka_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_eternity_medal",
+			"title": "Kujaku Eternity Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol_eternity)Kujaku Eternity$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/kujaku_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_eternity_medal",
+			"title": "Condor Eternity Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol_eternity)Condor Eternity$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/condor_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_taka_medal",
+			"title": "Ancient Taka Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_taka_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_tora_medal",
+			"title": "Ancient Tora Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ancient_ooo#ancient_tatoba)Ancient Tatoba$(/l) combos"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_tora_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_batta_medal",
+			"title": "Ancient Batta Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_batta_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mukade_goda_medal",
+			"title": "Goda Mukade Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mukade_goda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hachi_goda_medal",
+			"title": "Goda Hachi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_goda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ari_goda_medal",
+			"title": "Goda Ari Core Medal",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ari_goda_medal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core_medal",
+			"title": "Love Core Medal (Head)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#renai)Love (Head)$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core2_medal",
+			"title": "Love Core Medal (Torso)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#renai)Love (Torso)$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core2_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core3_medal",
+			"title": "Love Core Medal (Legs)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to access OOO's $(l:ooo/riders/ooo#renai)Love (Legs)$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core3_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_medal",
+			"title": "X Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:x/riders/x)Kamen Rider X$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/x_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_medal",
+			"title": "Amazon Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/amazon_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stronger_medal",
+			"title": "Stronger Core Medal",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when right-clicked as $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) while having the $(l:ooo/arsenal/o_scanner)O Scanner$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/stronger_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "habataki_medal",
+			"title": "Habataki Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access OOO's $(l:ooo/riders/ooo#legend_tatoba)Habataki$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/habataki_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taiga_medal",
+			"title": "Tiger Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access OOO's $(l:ooo/riders/ooo#legend_tatoba)Tiger$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/taiga_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ichigo_medal",
+			"title": "Ichigo Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access OOO's $(l:ooo/riders/ooo#legend_tatoba)Ichigo$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ichigo_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "imagin_medal",
+			"title": "Imagin Core Medal",
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Imagin$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/imagin_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shocker_medal",
+			"title": "Shocker Core Medal",
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Shocker$(/l) forms$(br2)Can be used as a leg medal by sneaking"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/shocker_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gel_shocker_medal",
+			"title": "Gel Shocker Core Medal",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gel_shocker_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "destron_medal",
+			"title": "Destron Core Medal",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:destron_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "god_medal",
+			"title": "G.O.D. Core Medal",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:god_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garanda_medal",
+			"title": "Garanda Core Medal",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garanda_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "delza_medal",
+			"title": "Delza Core Medal",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:delza_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_shocker medal",
+			"title": "Neo Shocker Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_shocker_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jin_dogma medal",
+			"title": "Jin Dogma Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jin_dogma_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "badan medal",
+			"title": "Badan Core Medal",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:badan_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

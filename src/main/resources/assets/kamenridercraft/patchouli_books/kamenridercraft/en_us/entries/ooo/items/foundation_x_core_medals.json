@@ -1,0 +1,201 @@
+{
+	"name": "Foundation X Core Medals",
+	"icon": "kamenridercraft:foundation_x_taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_taka_medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Taka$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_taka_medal",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kujaku_medal",
+			"title": "Foundation X Kujaku Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Kujaku$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kujaku_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_condor_medal",
+			"title": "Foundation X Condor Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tajadol)Condor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_condor_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_lion_medal",
+			"title": "Foundation X Lion Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Lion$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_lion_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_tora_medal",
+			"title": "Foundation X Tora Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tora$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_tora_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_cheetah_medal",
+			"title": "Foundation X Cheetah Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#latorartar)Cheetah$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_cheetah_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kuwagata_medal",
+			"title": "Foundation X Kuwagata Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kuwagata$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kuwagata_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kamakiri_medal",
+			"title": "Foundation X Kamakiri Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#gatakiriba)Kamakiri$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kamakiri_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_batta_medal",
+			"title": "Foundation X Batta Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Batta$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_batta_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_sai_medal",
+			"title": "Foundation X Sai Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Sai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_sai_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_gorilla_medal",
+			"title": "Foundation X Gorilla Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Gorilla$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_gorilla_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_zou_medal",
+			"title": "Foundation X Zou Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#sagohzo)Zou$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_zou_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_shachi_medal",
+			"title": "Foundation X Shachi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Shachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_shachi_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_unagi_medal",
+			"title": "Foundation X Unagi Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Unagi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_unagi_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_tako_medal",
+			"title": "Foundation X Tako Core Medal",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access OOO's $(l:ooo/riders/ooo#shauta)Tako$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_tako_medal",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "Unrefined Memory (Silver)",
 	"icon": "kamenridercraft:unrefined_memory_s",
 	"category": "kamenridercraft:w/items",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,670 @@
+{
+	"name": "Gaia Memories",
+	"icon": "kamenridercraft:joker_memory",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "cyclone_memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to craft Double's $(l:w/devices/wdriver)Doubledriver$(/l)$(br2)Used to access Double's $(l:w/riders/double#cyclonejoker)Cyclone$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyclone_memory",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "heat_memory",
+			"title": "Heat Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#heatmetal)Heat$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heat_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "luna_memory",
+			"title": "Luna Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#lunatrigger)Luna$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:luna_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fang_memory",
+			"title": "Fang Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#fangjoker)Fang$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/fang_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "joker_joker_memory",
+			"title": "Joker Joker Memory",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to access Double's $(l:w/riders/double#jokerjoker)JokerJoker$(/l) form, though can be paired with any other right-hand sided Gaia Memory"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_joker_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "joker_memory",
+			"title": "Joker Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to craft Double's $(l:w/devices/wdriver)Doubledriver$(/l)$(br2)Used to access Double's $(l:w/riders/double#cyclonejoker)Joker$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_memory",
+			"title": "Metal Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#heatmetal)Metal$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trigger_memory",
+			"title": "Trigger Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#lunatrigger)Trigger$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:trigger_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cyclone_cyclone_memory",
+			"title": "Cyclone Cyclone Memory",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to access Double's $(l:w/riders/double#cyclonecyclone)CycloneCyclone$(/l) form, though can be paired with any other right-hand sided Gaia Memory"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyclone_cyclone_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_memory",
+			"title": "Xtreme Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#xtreme)CycloneJokerXtreme$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/xtreme_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_gold_memory",
+			"title": "Gold Xtreme Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to access Double's $(l:w/riders/double#gold_xtreme)CycloneJokerGoldXtreme$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xtreme_gold_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_accel_memory",
+			"title": "Cyclone Accel Xtreme Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(li)Kamen Rider: Climax Heroes OOO (2010, video game)$(br2)Used to access Double's $(l:w/riders/double#accel_xtreme)CycloneAccelXtreme$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xtreme_accel_memory",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "accel_memory",
+			"title": "Accel Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to craft Accel's $(l:w/devices/acceldriver)Acceldriver$(/l)$(br2)Used to access Accel's $(l:w/riders/accel#accel)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:accel_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trial_memory",
+			"title": "Trial Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Accel's $(l:w/riders/accel#trial)Trial$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/trial_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "accel_booster_memory",
+			"title": "Accel Booster Memory",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Accel (2011, V-Cinema film)$(br2)Used to access Accel's $(l:w/riders/accel#booster)AccelBooster$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/accel_booster_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skull_memory",
+			"title": "Skull Memory",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Used to craft Skull's $(l:w/devices/lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Used to access Double's $(l:w/riders/double#cycloneskull)CycloneSkull$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skull_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eternal_memory",
+			"title": "Eternal Memory",
+			"text": "Appears in:$(li)Kamen Rider W Returns: Kamen Rider Eternal (2011, V-Cinema film)$(br2)Used to access Eternal's $(l:w/riders/eternal#red_flare)Red Flare$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eternal_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "prism_memory",
+			"title": "Prism Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:prism_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "engine_memory",
+			"title": "Engine Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:engine_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bomb_memory",
+			"title": "Bomb Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bomb_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trial_memory_un",
+			"title": "Unfinished Trial Memory",
+			"text": "Appears in:$(li)Kamen Rider W DX Sound Capsule Gaia Memory (2009, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:trial_memory_un",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fang_memory_un",
+			"title": "Unfinished Fang Memory",
+			"text": "Appears in:$(li)Kamen Rider W DX Sound Capsule Gaia Memory (2009, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fang_memory_un",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_memory_g",
+			"title": "Xtreme Memory (Gold)",
+			"text": "Appears in:$(li)Kamen Rider W DX Sound Capsule Gaia Memory (2009, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xtreme_memory_g",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_memory_s",
+			"title": "Xtreme Memory (Silver)",
+			"text": "Appears in:$(li)Kamen Rider W DX Sound Capsule Gaia Memory (2009, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xtreme_memory_s",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shippu_memory",
+			"title": "Shippu Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#cyclonejoker)Cyclone$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/shippu_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirifuda_memory",
+			"title": "Kirifuda Memory",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used to access Double's $(l:w/riders/double#cyclonejoker)Joker$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/kirifuda_memory"	
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "accel_t2_memory",
+			"title": "Accel T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:accel_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bird_t2_memory",
+			"title": "Bird T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bird_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cyclone_t2_memory",
+			"title": "Cyclone T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W: ~The One Who Continues After Z~ (2012, novel)$(br2)Used to craft Cyclone's $(l:w/devices/lostdriver_cyclone)Lostdriver (Cyclone)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyclone_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dummy_t2_memory",
+			"title": "Dummy T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dummy_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eternal_t2_memory",
+			"title": "Eternal T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Eternal's $(l:w/devices/lostdriver_eternal)Lostdriver (Eternal)$(/l)$(br2)Used to access Eternal's $(l:w/riders/eternal#blue_flare)Blue Flare$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eternal_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fang_t2_memory",
+			"title": "Fang T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fang_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gene_t2_memory",
+			"title": "Gene T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gene_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "heat_t2_memory",
+			"title": "Heat T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heat_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "iceage_t2_memory",
+			"title": "Ice Age T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:iceage_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "joker_t2_memory",
+			"title": "Joker T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Joker's $(l:w/devices/lostdriver_joker)Lostdriver (Joker)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "key_t2_memory",
+			"title": "Key T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:key_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "luna_t2_memory",
+			"title": "Luna T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:luna_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_t2_memory",
+			"title": "Metal T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nasca_t2_memory",
+			"title": "Nasca T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nasca_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ocean_t2_memory",
+			"title": "Ocean T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ocean_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "puppeteer_t2_memory",
+			"title": "Puppeteer T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:puppeteer_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "queen_t2_memory",
+			"title": "Queen T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:queen_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_t2_memory",
+			"title": "Rocket T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skull_t2_memory",
+			"title": "Skull T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skull_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trigger_t2_memory",
+			"title": "Trigger T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:trigger_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_t2_memory",
+			"title": "Unicorn T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "violence_t2_memory",
+			"title": "Violence T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:violence_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "weather_t2_memory",
+			"title": "Weather T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:weather_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xtreme_t2_memory",
+			"title": "Xtreme T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xtreme_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yesterday_t2_memory",
+			"title": "Yesterday T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yesterday_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zone_t2_memory",
+			"title": "Zone T2 Memory",
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to access Eternal's $(l:w/riders/eternal#strengthening_armament)Strengthening Armament$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zone_t2_memory",
+			"title": " ",
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+		}
+	]
+}

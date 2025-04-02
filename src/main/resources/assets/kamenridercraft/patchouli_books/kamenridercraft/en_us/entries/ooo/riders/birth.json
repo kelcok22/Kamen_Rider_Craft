@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Powered",
-			"text": "Accessed with the $(l:ooo/items/birth_core_eyes)Birth Core Medal (Powered)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth Core Medal (Powered)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Crane Arm",
-			"text": "Accessed with the $(l:ooo/items/birth_core_crane_arm)Birth Core Medal (Crane Arm)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_crane_arm)Birth Core Medal (Crane Arm)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Breast Cannon",
-			"text": "Accessed with the $(l:ooo/items/birth_core_breast_cannon)Birth Core Medal (Breast Cannon)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_breast_cannon)Birth Core Medal (Breast Cannon)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Drill Arm",
-			"text": "Accessed with the $(l:ooo/items/birth_core_drill_arm)Birth Core Medal (Drill Arm)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Core Medal (Drill Arm)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Caterpillar Leg",
-			"text": "Accessed with the $(l:ooo/items/birth_core_catepillar_leg)Birth Core Medal (Caterpillar Leg)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_catepillar_leg)Birth Core Medal (Caterpillar Leg)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shovel Arm",
-			"text": "Accessed with the $(l:ooo/items/birth_core_shovel_arm)Birth Core Medal (Shovel Arm)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_shovel_arm)Birth Core Medal (Shovel Arm)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cutter Wing",
-			"text": "Accessed with the $(l:ooo/items/birth_core_cutter_wing)Birth Core Medal (Cutter Wing)$(/l)"
+			"text": "Accessed with the $(l:ooo/items/birth_cell_medals#birth_core_cutter_wing)Birth Core Medal (Cutter Wing)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Birth·Day",
-			"text": "Accessed with all seven $(l:ooo/items/birth_core_eyes)Birth Core Medals$(/l)"
+			"text": "Accessed with all seven $(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth Core Medals$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneJoker",
-			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "HeatMetal",
-			"text": "Accessed with the $(l:w/items/heat_memory)Heat Memory$(/l) and $(l:w/items/metal_memory)Metal Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#heat_memory)Heat Memory$(/l) and $(l:w/items/gaia_memories#metal_memory)Metal Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "LunaTrigger",
-			"text": "Accessed with the $(l:w/items/luna_memory)Luna Memory$(/l) and $(l:w/items/trigger_memory)Trigger Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#luna_memory)Luna Memory$(/l) and $(l:w/items/gaia_memories#trigger_memory)Trigger Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "FangJoker",
-			"text": "Accessed with the $(l:w/items/fang_memory)Fang Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#fang_memory)Fang Memory$(/l) and $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneJokerXtreme",
-			"text": "Accessed with the $(l:w/items/xtreme_memory)Xtreme Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#xtreme_memory)Xtreme Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneJokerGoldXtreme",
-			"text": "Accessed by falling 10 blocks as $(l:w/riders/double#xtreme)CycloneJokerXtreme$(/l) or with the $(l:w/items/xtreme_gold_memory)Gold Xtreme Memory$(/l)"
+			"text": "Accessed by falling 10 blocks as $(l:w/riders/double#xtreme)CycloneJokerXtreme$(/l) or with the $(l:w/items/gaia_memories#xtreme_gold_memory)Gold Xtreme Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneAccelXtreme",
-			"text": "Accessed with the $(l:w/items/xtreme_accel_memory)Cyclone Accel Xtreme Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#xtreme_accel_memory)Cyclone Accel Xtreme Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneCyclone",
-			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/cyclone_cyclone_memory)Cyclone Cyclone Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/gaia_memories#cyclone_cyclone_memory)Cyclone Cyclone Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "JokerJoker",
-			"text": "Accessed with the $(l:w/items/joker_joker_memory)Joker Joker Memory$(/l) and $(l:w/items/joker_memory)Joker Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#joker_joker_memory)Joker Joker Memory$(/l) and $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "CycloneSkull",
-			"text": "Accessed with the $(l:w/items/cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/skull_memory)Skull Memory$(/l)"
+			"text": "Accessed with the $(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) and $(l:w/items/gaia_memories#skull_memory)Skull Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
