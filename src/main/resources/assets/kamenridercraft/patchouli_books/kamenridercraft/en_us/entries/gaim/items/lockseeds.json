@@ -1,0 +1,843 @@
+{
+	"name": "Lockseeds",
+	"icon": "kamenridercraft:orange_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "matsubokkuri_lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Kurokage's $(l:gaim/devices/sengoku_driver_kurokage)Sengoku Driver (Kurokage)$(/l)$(br2)Used to access $(l:gaim/riders/kurokage#matsubokkuri)Matsubokkuri Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:matsubokkuri_lockseed",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kurumi_lockseed",
+			"title": "Kurumi Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Knuckle's $(l:gaim/devices/sengoku_driver_knuckle)Sengoku Driver (Knuckle)$(/l)$(br2)Used to access $(l:gaim/riders/knuckle#kurumi)Kurumi Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kurumi_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "donguri_lockseed",
+			"title": "Donguri Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Gridon's $(l:gaim/devices/sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)Used to access $(l:gaim/riders/gridon#donguri)Donguri Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:donguri_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "melon_lockseed",
+			"title": "Melon Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Zangetsu's $(l:gaim/devices/sengoku_driver_zangetsu)Sengoku Driver (Zangetsu)$(/l)$(br2)Used to access $(l:gaim/riders/zangetsu#melon)Melon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:melon_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pine_lockseed",
+			"title": "Pine Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/gaim#pine)Pine Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pine_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ichigo_lockseed",
+			"title": "ichigo Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/gaim#ichigo)Ichigo Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "orange_lockseed",
+			"title": "Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Gaim's $(l:gaim/devices/sengoku_driver_gaim)Sengoku Driver (Gaim)$(/l)$(br2)Used to access $(l:gaim/riders/gaim#orange)Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:orange_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "banana_lockseed",
+			"title": "Banana Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Baron's $(l:gaim/devices/sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)Used to access $(l:gaim/riders/baron#banana)Banana Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:banana_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "budou_lockseed",
+			"title": "Budou Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Ryugen's $(l:gaim/devices/sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)Used to access $(l:gaim/riders/ryugen#budou)Budou Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:budou_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "suika_lockseed",
+			"title": "Suika Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/gaim#suika)Suika Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:suika_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mango_lockseed",
+			"title": "Mango Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/baron#mango)Mango Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mango_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "durian_lockseed",
+			"title": "Durian Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Bravo's $(l:gaim/devices/sengoku_driver_bravo)Sengoku Driver (Bravo)$(/l)$(br2)Used to access $(l:gaim/riders/bravo#durian)Durian Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:durian_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiwi_lockseed",
+			"title": "Kiwi Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/ryugen#kiwi)Kiwi Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiwi_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lemon_lockseed",
+			"title": "Lemon Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used to craft Duke's $(l:gaim/devices/sengoku_driver_duke)Sengoku Driver (Duke)$(/l)$(br2)Used to access $(l:gaim/riders/duke#lemon)Lemon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lemon_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kachidoki_lockseed",
+			"title": "Kachidoki Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access Gaim's $(l:gaim/riders/gaim#kachidoki)Kachidoki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/kachidoki_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zangetsu_kachidoki_lockseed",
+			"title": "Shin Kachidoki Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to access Zangetsu's $(l:gaim/riders/zangetsu#kachidoki)Kachidoki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/zangetsu_kachidoki_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiwami_lockseed",
+			"title": "Kiwami Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access Gaim's $(l:gaim/riders/gaim#kiwami)Kiwami Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiwami_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/rosyuo)Rosyuo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yomotsu_heguri_lockseed",
+			"title": "Yomotsuheguri Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to access $(l:gaim/riders/ryugen#yomotsuheguri)Yomotsuheguri Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yomotsu_heguri_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/redyue)Redyue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blood_orange_lockseed",
+			"title": "Blood Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to craft Bujin Gaim's $(l:gaim/devices/sengoku_driver_bujin_gaim)Sengoku Driver (Bujin Gaim)$(/l)$(br2)Used to access $(l:gaim/riders/bujin_gaim#blood_orange)Blood Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_orange_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blood_orange_lockseed_ochimusha",
+			"title": "Ochimusha Lockseed",
+			"text": "Appears in:$(li)S.I.C. Hero Saga (2018, toyline)$(br2)Used to access Bujin Gaim's $(l:gaim/riders/bujin_gaim#ochimusha)Ochimusha Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_orange_lockseed_ochimusha",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fifteen_lockseed",
+			"title": "Fifteen Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to craft Fifteen's $(l:gaim/devices/sengoku_driver_fifteen)Sengoku Driver (Fifteen)$(/l)$(br2)Used to access $(l:gaim/riders/fifteen#fifteen)Fifteen Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fifteen_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golden_ringo_lockseed",
+			"title": "Golden Ringo Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used to craft Mars's $(l:gaim/devices/sengoku_driver_mars)Sengoku Driver (Mars)$(/l)$(br2)Used to access $(l:gaim/riders/mars)Golden Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golden_ringo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/rosyuo)Rosyuo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_ringo_lockseed",
+			"title": "Black Ringo Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft Jam's $(l:gaim/devices/sengoku_driver_jam)Sengoku Driver (Jam)$(/l)$(br2)Used to access $(l:gaim/riders/jam)Darkness Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_ringo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_ringo_lockseed",
+			"title": "Silver Ringo Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used to craft Kamuro's $(l:gaim/devices/sengoku_driver_kamuro)Sengoku Driver (Kamuro)$(/l)$(br2)Used to access $(l:gaim/riders/kamuro)Silver Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_ringo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/redyue)Redyue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forbidden_ringo_lockseed",
+			"title": "Forbidden Ringo Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Used to craft Idunn's $(l:gaim/devices/sengoku_driver_idunn)Sengoku Driver (Idunn)$(/l)$(br2)Used to access $(l:gaim/riders/idunn)Ringo Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:forbidden_ringo_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "watermelon_lockseed",
+			"title": "Watermelon Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Used to access Zangetsu's $(l:gaim/riders/zangetsu#watermelon)Watermelon Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:watermelon_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zakuro_lockseed",
+			"title": "Zakuro Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used to craft Saver's $(l:gaim/devices/sengoku_driver_saver)Sengoku Driver (Saver)$(/l)$(br2)Used to access $(l:gaim/riders/saver#blood_zakuro)Blood Zakuro Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zakuro_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maja_lockseed",
+			"title": "Maja Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used to craft Maja's $(l:gaim/devices/sengoku_driver_maja)Sengoku Driver (Maja)$(/l)$(br2)Used to access $(l:gaim/riders/maja)Maja Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maja_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabi_orange_lockseed",
+			"title": "Kabi Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used to access $(l:gaim/riders/gaim#kabi_orange)Kabi Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/kabi_orange_lockseed",
+			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fresh_orange_lockseed",
+			"title": "Fresh Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Used to access $(l:gaim/riders/gaim#fresh_orange)Fresh Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/fresh_orange_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fresh_pine_lockseed",
+			"title": "Fresh Pine Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/fresh_pine_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lychee_lockseed",
+			"title": "Lychee Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used to access Gridon's $(l:gaim/riders/gridon#lychee)Lychee Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lychee_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_durian_lockseed",
+			"title": "Kingdurian Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used to access Bravo's $(l:gaim/riders/bravo#kingdurian)Kingdurian Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_durian_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "helheim_lockseed",
+			"title": "Helheim Lockseed",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used to craft Sylphi's $(l:gaim/devices/sengoku_driver_sylphi)Sengoku Driver (Sylphi)$(/l)$(br2)Used to access $(l:gaim/riders/sylphi)Hells Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/redyue)Redyue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "natsumikan_lockseed",
+			"title": "Natsumikan Lockseed",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to craft Gaim Natsumikan Arms's $(l:gaim/devices/sengoku_driver_gaim_natsumikan)Sengoku Driver (Gaim Natsumikan)$(/l)$(br2)Used to access $(l:gaim/riders/gaim_natsumikan)Natsumikan Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/natsumikan_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_donguri_lockseed",
+			"title": "Proto Donguri Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Gridon's $(l:gaim/devices/sengoku_driver_proto_gridon)Sengoku Driver (Proto Gridon)$(/l)$(br2)Used to access $(l:gaim/riders/proto_gridon)Donguri Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_donguri_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_orange_lockseed",
+			"title": "Proto Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Gaim's $(l:gaim/devices/sengoku_driver_proto_gaim)Sengoku Driver (Proto Gaim)$(/l)$(br2)Used to access $(l:gaim/riders/proto_gaim)Orange Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_orange_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_banana_lockseed",
+			"title": "Proto Banana Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Baron's $(l:gaim/devices/sengoku_driver_proto_baron)Sengoku Driver (Proto Baron)$(/l)$(br2)Used to access $(l:gaim/riders/proto_baron)Banana Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_banana_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_budou_lockseed",
+			"title": "Proto Budou Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Ryugen's $(l:gaim/devices/sengoku_driver_proto_ryugen)Sengoku Driver (Proto Ryugen)$(/l)$(br2)Used to access $(l:gaim/riders/proto_ryugen)Budou Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_budou_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_durian_lockseed",
+			"title": "Proto Durian Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used to craft Proto Bravo's $(l:gaim/devices/sengoku_driver_proto_bravo)Sengoku Driver (Proto Bravo)$(/l)$(br2)Used to access $(l:gaim/riders/proto_bravo)Durian Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_durian_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_orange_lockseed",
+			"title": "Black Orange Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#black_jimber)Black Jimber Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/dark_orange_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "christmas_lockseed",
+			"title": "Christmas Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Charadeco Cake (2013, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_lockseed",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roulette_lockseed",
+			"title": "Roulette Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Roulette Battle (2013, board game)$(br2)Outputs a number between 1-6 when right clicked"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roulette_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_donguri_lockseed",
+			"title": "Donguri Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to \"access Donguri Arms\""
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_donguri_lockseed",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "siu_ron_bou_lockseed",
+			"title": "Xiaolongbao Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xiaolongbao_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hsiao_lung_pao_lockseed",
+			"title": "Hsiao Lung Pao Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hsiao_lung_pao_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tom_yum_kung_lockseed",
+			"title": "Tom Yum Kung Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tom_yum_kung_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yummy_lockseed",
+			"title": "Yummy Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yummy_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hero_lockseed",
+			"title": "Hero Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Connected Lockseed Series (2013, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hero_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_lockseed",
+			"title": "Drive Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Drive & Gaim: Movie War Full Throttle (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#drive)Drive Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/drive_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_lockseed",
+			"title": "Gaim Lockseed",
+			"text": "Appears in:$(li)Kamen Rider Gaim Capsule Lockseed Armored Rider Set (2015, toyline)$(br2)Used to access $(l:gaim/riders/fifteen#gaim)Gaim Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/gaim_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizard_lockseed",
+			"title": "Wizard Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to access $(l:gaim/riders/gaim#wizard)Wizard Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/wizard_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_lockseed",
+			"title": "Fourze Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to access $(l:gaim/riders/zangetsu#fourze)Fourze Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/fourze_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_lockseed",
+			"title": "OOO Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to access $(l:gaim/riders/baron#ooo)OOO Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/ooo_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "w_lockseed",
+			"title": "Double Lockseed",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used to access $(l:gaim/riders/ryugen#w)W Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/w_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_lockseed",
+			"title": "Decade Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/fifteen#decade)Decade Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/decade_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_lockseed",
+			"title": "Kiva Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/sigurd#kiva)Kiva Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/kiva_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_lockseed",
+			"title": "Den-O Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#den_o)Den-O Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/den_o_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_lockseed",
+			"title": "Kabuto Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/zangetsu#kabuto)Kabuto Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/kabuto_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_lockseed",
+			"title": "Hibiki Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/bravo#hibiki)Hibiki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/hibiki_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_lockseed",
+			"title": "Blade Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/kurokage#blade)Blade Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/blade_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_lockseed",
+			"title": "Faiz Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/ryugen#faiz)Faiz Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/faiz_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_lockseed",
+			"title": "Ryuki Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#ryuki)Ryuki Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/ryuki_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_lockseed",
+			"title": "Agito Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/zangetsu_shin#agito)Agito Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/agito_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_lockseed",
+			"title": "Kuuga Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/knuckle#kuuga)Kuuga Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/kuuga_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ichigo_lockseed",
+			"title": "Ichigo Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#rider_ichigo)Ichigo Arms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/rider_ichigo_lockseed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "showa_rider_lockseed",
+			"title": "Showa Rider Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/gaim#rider_ichigo)Ichigo Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:showa_rider_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "heisei_rider_lockseed",
+			"title": "Heisei Rider Lockseed",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used to access $(l:gaim/riders/fifteen#gaim_special)Gaim Arms$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heisei_rider_lockseed",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

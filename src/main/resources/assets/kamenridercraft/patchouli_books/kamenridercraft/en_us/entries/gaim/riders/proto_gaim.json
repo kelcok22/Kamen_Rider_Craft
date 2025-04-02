@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Orange Arms",
-			"text": "Accessed with the $(l:gaim/items/proto_orange_lockseed)Proto Orange Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#proto_orange_lockseed)Proto Orange Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

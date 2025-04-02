@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:drive/items/signal_mach)Signal Mach$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_mach)Signal Mach$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Magarl",
-			"text": "Accessed with the $(l:drive/items/signal_magarl)Signal Magarl$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_magarl)Signal Magarl$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Kaksarn",
-			"text": "Accessed with the $(l:drive/items/signal_kaksarn)Signal Kaksarn$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_kaksarn)Signal Kaksarn$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Tomarle",
-			"text": "Accessed with the $(l:drive/items/signal_tomarle)Signal Tomarle$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_tomarle)Signal Tomarle$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Kikern",
-			"text": "Accessed with the $(l:drive/items/signal_kikern)Signal Kikern$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_kikern)Signal Kikern$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Moerl",
-			"text": "Accessed with the $(l:drive/items/maxflare)Max Flare$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#maxflare)Max Flare$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Arabull",
-			"text": "Accessed with the $(l:drive/items/rumble_dump)Rumble Dump$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#rumble_dump)Rumble Dump$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Mazerl",
-			"text": "Accessed with the $(l:drive/items/spin_mixer)Spin Mixer$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#spin_mixer)Spin Mixer$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Deadheat Mach",
-			"text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Deadheat Mach Naorl",
-			"text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) and $(l:drive/items/mad_doctor)Mad Doctor$(/l) Shift Cars"
+			"text": "Accessed with the $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l) and $(l:drive/items/shift_cars#mad_doctor)Mad Doctor$(/l) Shift Cars"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chaser Mach",
-			"text": "Accessed with the $(l:drive/items/signal_chaser)Signal Chaser$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_chaser)Signal Chaser$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mach Chaser",
-			"text": "Accessed with the $(l:drive/items/shift_ride_crosser)Shift Ride Crosser$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#shift_ride_crosser)Shift Ride Crosser$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Deadheat Mach",
-			"text": "Accessed with the $(l:drive/items/rhino_super_viral_core)Rhino Super Viral Core$(/l)"
+			"text": "Accessed with the $(l:drive/items/viral_cores#rhino_super_viral_core)Rhino Super Viral Core$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Drago Timer",
 	"icon": "kamenridercraft:drago_timer",
 	"category": "kamenridercraft:wizard/items",
-	"sortnum": 19,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

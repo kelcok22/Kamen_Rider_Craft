@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:wizard/items/beast_ring)Beast Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#beast_ring)Beast Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Falco Mantle",
-			"text": "Accessed with the $(l:wizard/items/falco_ring)Falco Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#falco_ring)Falco Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chameleo Mantle",
-			"text": "Accessed with the $(l:wizard/items/chameleo_ring)Chameleo Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#chameleo_ring)Chameleo Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Buffa Mantle",
-			"text": "Accessed with the $(l:wizard/items/buffa_ring)Buffa Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#buffa_ring)Buffa Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dolphi Mantle",
-			"text": "Accessed with the $(l:wizard/items/dolphi_ring)Dolphi Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beast Hyper",
-			"text": "Accessed with the $(l:wizard/items/hyper_ring)Hyper Wizard Ring$(/l)"
+			"text": "Accessed with the $(l:wizard/items/wizard_rings#hyper_ring)Hyper Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",

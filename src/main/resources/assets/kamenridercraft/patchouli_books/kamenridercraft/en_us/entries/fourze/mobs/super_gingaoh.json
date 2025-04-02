@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Health: 300$(br2)Drops$(li)9 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)9 $(l:fourze/items/astroswitch)Blank Switches$(/l)$(li)1 $(l:fourze/items/nadeshiko_switch)Nadeshiko Switch$(/l)$(li)1 $(l:fourze/devices/nadeshiko_driver)Nadeshiko Driver$(/l)$(li)1 $(l:fourze/devices/ginga_oh_driver)GingaOh Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Health: 300$(br2)Drops$(li)9 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)9 $(l:fourze/items/astroswitch)Blank Switches$(/l)$(li)1 $(l:fourze/items/astroswitches#nadeshiko_switch)Nadeshiko Switch$(/l)$(li)1 $(l:fourze/devices/nadeshiko_driver)Nadeshiko Driver$(/l)$(li)1 $(l:fourze/devices/ginga_oh_driver)GingaOh Driver$(/l)"
 		}
 	]
 }

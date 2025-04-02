@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Health: 45$(br2)Drops$(li)4-10 $(l:wizard/items/wizardgem)Orange Magic Stones$(/l)$(li)2-5 $(l:wizard/items/wizardgem_violet)Violet Magic Stones$(/l)$(li)1-3 $(l:wizard/items/wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/philosophers_stone)Philosopher's Stone$(/l)$(li)1 $(l:wizard/items/wiseman_ring)Wiseman Wizard Ring$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Health: 45$(br2)Drops$(li)4-10 $(l:wizard/items/magic_stones#wizardgem)Orange Magic Stones$(/l)$(li)2-5 $(l:wizard/items/magic_stones#wizardgem_violet)Violet Magic Stones$(/l)$(li)1-3 $(l:wizard/items/magic_stones#wizardgem_cyan)Cyan Magic Stones$(/l)$(li)1 $(l:wizard/items/philosophers_stone)Philosopher's Stone$(/l)$(li)1 $(l:wizard/items/wizard_rings#wiseman_ring)Wiseman Wizard Ring$(/l)"
 		}
 	]
 }

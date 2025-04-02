@@ -2,7 +2,7 @@
 	"name": "Tridoron Key",
 	"icon": "kamenridercraft:tridoron_key",
 	"category": "kamenridercraft:drive/items",
-	"sortnum": 54,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

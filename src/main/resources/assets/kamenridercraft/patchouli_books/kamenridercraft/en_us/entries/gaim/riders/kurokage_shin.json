@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Matsubokkuri Energy Arms",
-			"text": "Accessed with the $(l:gaim/items/matsubokkuri_energy_lockseed)Matsubokkuri Energy Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#matsubokkuri_energy_lockseed)Matsubokkuri Energy Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

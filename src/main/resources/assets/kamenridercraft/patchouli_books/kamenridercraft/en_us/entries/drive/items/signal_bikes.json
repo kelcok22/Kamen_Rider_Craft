@@ -1,0 +1,97 @@
+{
+	"name": "Signal Bikes",
+	"icon": "kamenridercraft:signal_mach",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_mach",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Mach's $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#mach)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_mach",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_magarl",
+			"title": "Signal Magarl",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#magarl)Magarl$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_magarl",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_kaksarn",
+			"title": "Signal Kaksarn",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#kaksarn)Kaksarn$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_kaksarn",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_tomarle",
+			"title": "Signal Tomarle",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#tomarle)Tomarle$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_tomarle",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_kikern",
+			"title": "Signal Kikern",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Mach's $(l:drive/riders/mach#kikern)Kikern$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_kikern",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "signal_chaser",
+			"title": "Signal Chaser",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Chaser's $(l:drive/devices/mach_driver_honoh_chaser)Mach Driver Honoh (Chaser)$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#chaser)base$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#chaser_mach)Chaser Mach$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:signal_chaser",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deadheat_bike",
+			"title": "Shift Dead Heat Bike",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deadheat_bike",
+			"title": " ",
+			"text": "Obtained by using $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+		}
+	]
+}

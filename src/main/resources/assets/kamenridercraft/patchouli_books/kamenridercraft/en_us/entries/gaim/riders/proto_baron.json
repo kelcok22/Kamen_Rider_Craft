@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Banana Arms",
-			"text": "Accessed with the $(l:gaim/items/proto_banana_lockseed)Proto Banana Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#proto_banana_lockseed)Proto Banana Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

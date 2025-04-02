@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Donguri Arms",
-			"text": "Accessed with the $(l:gaim/items/proto_donguri_lockseed)Proto Donguri Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#proto_donguri_lockseed)Proto Donguri Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

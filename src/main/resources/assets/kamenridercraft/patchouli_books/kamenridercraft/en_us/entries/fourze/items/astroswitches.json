@@ -1,0 +1,960 @@
+{
+	"name": "Astroswitches",
+	"icon": "kamenridercraft:rocket_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to craft Fourze's $(l:fourze/devices/fourze_driver)Fourze Driver$(/l)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#rocket)Rocket Module$(/l)$(br2)Used to access Nadeshiko's $(l:fourze/riders/nadeshiko#rocket)Rocket Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_switch",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "launcher_switch",
+			"title": "Launcher Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#launcher)Launcher Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:launcher_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_switch",
+			"title": "Drill Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#drill)Drill Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radar_switch",
+			"title": "Radar Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#radar)Radar Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:radar_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magic_hand_switch",
+			"title": "Magichand Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#magichand)Magichand Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magic_hand_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "camera_switch",
+			"title": "Camera Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#camera)Camera Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:camera_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "parachute_switch",
+			"title": "Parachute Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#parachute)Parachute Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:parachute_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chainsaw_switch",
+			"title": "Chainsaw Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#chainsaw)Chainsaw Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chainsaw_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hopping_switch",
+			"title": "Hopping Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#hopping)Hopping Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopping_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "elek_switch",
+			"title": "Elek Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#elek)Elekstates$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elek_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scissors_switch",
+			"title": "Scissors Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#scissors)Scissors Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scissors_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_switch",
+			"title": "Beat Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#beat)Beat Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chain_array_switch",
+			"title": "Chain Array Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#chain_array)Chain Array Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chain_array_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smoke_switch",
+			"title": "Smoke Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#smoke)Smoke Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smoke_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spike_switch",
+			"title": "Spike Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#spike)Spike Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spike_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "winch_switch",
+			"title": "Winch Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#winch)Winch Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:winch_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flash_switch",
+			"title": "Flash Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#flash)Flash Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flash_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shield_switch",
+			"title": "Shield Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#shield)Shield Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shield_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gatling_switch",
+			"title": "Gatling Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#gatling)Gatling Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gatling_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fire_switch",
+			"title": "Fire Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#fire)Firestates$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fire_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stealth_switch",
+			"title": "Stealth Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#stealth)Stealth Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stealth_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hammer_switch",
+			"title": "Hammer Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#hammer)Hammer Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hammer_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_switch",
+			"title": "Water Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#water)Water Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "medical_switch",
+			"title": "Medical Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#medical)Medical Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:medical_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pen_switch",
+			"title": "Pen Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#pen)Pen Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pen_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wheel_switch",
+			"title": "Wheel Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#wheel)Wheel Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wheel_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "screw_switch",
+			"title": "Screw Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#screw)Screw Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:screw_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hand_switch",
+			"title": "Hand Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#hand)Hand Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hand_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scoop_switch",
+			"title": "Scoop Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#scoop)Scoop Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scoop_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_switch_n",
+			"title": "N Magnet Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#magnetstates)Magnetstates$(/l) and $(l:fourze/riders/fourze#n_magnet)N Magnet Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_switch_n",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_switch_s",
+			"title": "S Magnet Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#magnetstates)Magnetstates$(/l) and $(l:fourze/riders/fourze#n_magnet)S Magnet Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_switch_s",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freeze_switch",
+			"title": "Freeze Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#freeze)Freeze Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:freeze_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claw_switch",
+			"title": "Claw Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#claw)Claw Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claw_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "board_switch",
+			"title": "Board Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#board)Board Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:board_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giantfoot_switch",
+			"title": "Giantfoot Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#giantfoot)Giantfoot Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giantfoot_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aero_switch",
+			"title": "Aero Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#aero)Aero Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aero_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gyro_switch",
+			"title": "Gyro Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#gyro)Gyro Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gyro_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "net_switch",
+			"title": "Net Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#net)Net Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:net_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stamper_switch",
+			"title": "Stamper Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#stamper)Stamper Module$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stamper_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cosmic_switch",
+			"title": "Cosmic Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#cosmicstates)Cosmicstates$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cosmic_switch",
+			"title": " ",
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_rocket_switch",
+			"title": "Super Rocket Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#rocketstates)Rocketstates$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_rocket_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_launcher_switch",
+			"title": "Super Launcher Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#launcherstates)Launcherstates$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_launcher_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_drill_switch",
+			"title": "Super Drill Switch",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Super Hero Taisen (2012, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_drill_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clear_drill_switch",
+			"title": "Clear Drill Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze: Rocket Drill States of Friendship (2012, Hyper Battle Video)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#rocket_drill_states)Rocket Drill States$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:clear_drill_switch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:amazon/mobs/red_follower)Red Follower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "meteor_switch",
+			"title": "Meteor Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to craft Meteor's $(l:fourze/devices/meteor_driver)Meteor Driver$(/l)$(br2)Used to access Meteor's $(l:fourze/riders/meteor#meteor)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:meteor_switch",
+			"title": " ",
+			"text": "Found inside the $(l:fourze/structures/m_bus)M-BUS$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "meteor_storm_switch",
+			"title": "Meteor Storm Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Used to transform into $(l:fourze/riders/meteor#meteor_storm)Meteor Storm$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/meteor_storm_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nadeshiko_switch",
+			"title": "Nadeshiko Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to craft Nadeshiko's $(l:fourze/devices/nadeshiko_driver)Nadeshiko Driver$(/l)$(br2)Used to access Nadeshiko's $(l:fourze/riders/nadeshiko#nadeshiko)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nadeshiko_switch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ikaros_switch",
+			"title": "Ikaros Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze: ~Ama High Graduation~ (2014, novel)$(br2)Used to craft Ikaros's $(l:fourze/devices/ikaros_driver)Ikaros Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikaros_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "solu_switch",
+			"title": "SOLU Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)"
+		},
+		{
+			"type": "patchouli:smelting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/solu_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_switch",
+			"title": "Fusion Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze the Movie: Everyone! Let's Feel The Universe! (2012, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#meteor_fusionstates)Meteor$(/l) $(l:fourze/riders/fourze#meteor_nadeshiko_fusionstates)(Nadeshiko)$(/l) $(l:fourze/riders/fourze#meteor_fusionstates)Fusionstates$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/fusion_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "core_switch",
+			"title": "Core Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:core_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_switch_christmas_ver",
+			"title": "Rocket Switch (Christmas Ver.)",
+			"text": "Appears in:$(li)Kamen Rider Fourze Astro Switch Series (2011, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_switch_christmas_ver",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider1_switch",
+			"title": "Ichigo Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#ichigo)Ichigo Module$(/l)$(br2)Can be used to summon $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l) when right-clicked as $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rider1_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider2_switch",
+			"title": "Nigo Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#nigo)Nigo Module$(/l)$(br2)Can be used to summon $(l:nigo/riders/nigo)Kamen Rider Nigo$(/l) when right-clicked as $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rider2_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v3_switch",
+			"title": "V3 Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#v3)V3 Module$(/l)$(br2)Can be used to summon $(l:v3/riders/v3)Kamen Rider V3$(/l) when right-clicked as $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/v3_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "riderman_switch",
+			"title": "Riderman Switch",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#riderman)Riderman Module$(/l)$(br2)Can be used to summon $(l:riderman/riders/riderman)Kamen Rider Riderman$(/l) when right-clicked as $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/riderman_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_switch",
+			"title": "X Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#x)X Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/x_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_switch",
+			"title": "Amazon Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#amazon)Amazon Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/amazon_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stronger_switch",
+			"title": "Stronger Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#stronger)Stronger Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/stronger_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skyrider_switch",
+			"title": "Skyrider Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#skyrider)Skyrider Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/skyrider_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_1_switch",
+			"title": "Super-1 Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#super_1)Super-1 Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_1_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zx_switch",
+			"title": "ZX Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#zx)ZX Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/zx_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_switch",
+			"title": "Black Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#black)Black Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/black_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rx_switch",
+			"title": "Black RX Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#rx)Black RX Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rx_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_switch",
+			"title": "Kuuga Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#kuuga)Kuuga Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kuuga_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_switch",
+			"title": "Agito Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#agito)Agito Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/agito_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_switch",
+			"title": "Ryuki Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#ryuki)Ryuki Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/ryuki_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_switch",
+			"title": "Faiz Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#faiz)Faiz Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/faiz_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_switch",
+			"title": "Blade Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#blade)Blade Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/blade_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_switch",
+			"title": "Hibiki Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#hibiki)Hibiki Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/hibiki_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_switch",
+			"title": "Kabuto Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#kabuto)Kabuto Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kabuto_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_switch",
+			"title": "Den-O Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#den_o)Den-O Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/den_o_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_switch",
+			"title": "Kiva Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#kiva)Kiva Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kiva_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_switch",
+			"title": "Decade Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#decade)Decade Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/decade_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_switch",
+			"title": "W Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#double)W Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/double_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_switch",
+			"title": "OOO Switch",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#ooo)OOO Module$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/ooo_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_chan_switch",
+			"title": "Shin-chan Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze × Crayon Shin-chan (2012, special)$(br2)Used to access Fourze's $(l:fourze/riders/fourze#shin-chan)Basestates (Shin-chan Ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_chan_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zodiarts_switch",
+			"title": "Zodiarts Switch",
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zodiarts_switch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

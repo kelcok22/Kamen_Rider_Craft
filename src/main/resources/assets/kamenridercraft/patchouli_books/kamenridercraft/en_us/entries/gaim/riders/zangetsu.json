@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Melon Arms",
-			"text": "Accessed with the $(l:gaim/items/melon_lockseed)Melon Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#melon_lockseed)Melon Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ichigo Arms",
-			"text": "Accessed with the $(l:gaim/items/ichigo_lockseed)Ichigo Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#ichigo_lockseed)Ichigo Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Budou Arms",
-			"text": "Accessed with the $(l:gaim/items/budou_lockseed)Budou Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#budou_lockseed)Budou Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mango Arms",
-			"text": "Accessed with the $(l:gaim/items/mango_lockseed)Mango Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#mango_lockseed)Mango Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Watermelon Arms",
-			"text": "Accessed with the $(l:gaim/items/watermelon_lockseed)Watermelon Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#watermelon_lockseed)Watermelon Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Suika Arms",
-			"text": "Accessed with the $(l:gaim/items/suika_lockseed)Suika Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#suika_lockseed)Suika Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jimber Melon Arms",
-			"text": "Accessed with the $(l:gaim/items/melon_energy_lockseed)Melon Energy Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/energy_lockseeds#melon_energy_lockseed)Melon Energy Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kachidoki Arms",
-			"text": "Accessed with the $(l:gaim/items/zangetsu_kachidoki_lockseed)Shin Kachidoki Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#zangetsu_kachidoki_lockseed)Shin Kachidoki Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kabuto Arms",
-			"text": "Accessed with the $(l:gaim/items/kabuto_lockseed)Kabuto Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#kabuto_lockseed)Kabuto Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Arms",
-			"text": "Accessed with the $(l:gaim/items/decade_lockseed)Decade Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#decade_lockseed)Decade Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fourze Arms",
-			"text": "Accessed with the $(l:gaim/items/fourze_lockseed)Fourze Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#fourze_lockseed)Fourze Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:drive/items/signal_chaser)Signal Chaser$(/l) Signal Bike"
+			"text": "Accessed with the $(l:drive/items/signal_bikes#signal_chaser)Signal Chaser$(/l) Signal Bike"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chaser Hayai",
-			"text": "Accessed with the $(l:drive/items/proto_speedshift)Proto Shift Speed$(/l) Shift Car"
+			"text": "Accessed with the $(l:drive/items/shift_cars#proto_speedshift)Proto Shift Speed$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",

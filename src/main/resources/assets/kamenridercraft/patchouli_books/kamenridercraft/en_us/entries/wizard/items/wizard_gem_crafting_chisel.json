@@ -2,11 +2,11 @@
 	"name": "Gem Chisel",
 	"icon": "kamenridercraft:wizard_gem_crafting_chisel",
 	"category": "kamenridercraft:wizard/items",
-	"sortnum": 72,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft $(l:wizard/items/unknown_amber_ring)Unknown Wizard Rings$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft $(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)Unknown Wizard Rings$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hells Arms",
-			"text": "Accessed with the $(l:gaim/items/helheim_lockseed)Helheim Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#helheim_lockseed)Helheim Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

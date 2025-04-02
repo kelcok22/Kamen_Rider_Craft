@@ -2,7 +2,7 @@
 	"name": "Banno Tablet",
 	"icon": "kamenridercraft:banno_tablet",
 	"category": "kamenridercraft:drive/items",
-	"sortnum": 55,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

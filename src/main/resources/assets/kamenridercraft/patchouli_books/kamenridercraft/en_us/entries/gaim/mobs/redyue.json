@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 300$(br2)Drops$(li)1 $(l:gaim/items/silver_ringo_lockseed)Silver Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/yomotsu_heguri_lockseed)Yomotsuheguri Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragment_2)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/helheim_lockseed)Helheim Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/dau)Dau$(/l) (33.3%)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 300$(br2)Drops$(li)1 $(l:gaim/items/lockseeds#silver_ringo_lockseed)Silver Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/lockseeds#yomotsu_heguri_lockseed)Yomotsuheguri Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragments#lord_baron_fragment_2)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/lockseeds#helheim_lockseed)Helheim Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/dau)Dau$(/l) (33.3%)"
 		}
 	]
 }

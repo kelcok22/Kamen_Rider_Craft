@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Elekstates",
-			"text": "Accessed with the $(l:fourze/items/elek_switch)Elek Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#elek_switch)Elek Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Firestates",
-			"text": "Accessed with the $(l:fourze/items/fire_switch)Fire Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#fire_switch)Fire Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magnetstates",
-			"text": "Accessed with the $(l:fourze/items/magnet_switch_n)N Magnet$(/l) and $(l:fourze/items/magnet_switch_s)S Magnet$(/l) Switches"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#magnet_switch_n)N Magnet$(/l) and $(l:fourze/items/astroswitches#magnet_switch_s)S Magnet$(/l) Switches"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cosmicstates",
-			"text": "Accessed with the $(l:fourze/items/cosmic_switch)Cosmic Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#cosmic_switch)Cosmic Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocketstates",
-			"text": "Accessed with the $(l:fourze/items/super_rocket_switch)Super Rocket Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#super_rocket_switch)Super Rocket Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocket Drill States",
-			"text": "Accessed with the $(l:fourze/items/clear_drill_switch)Clear Drill Switch$(/l) while having the $(l:fourze/items/rocket_switch)Rocket Switch$(/l) in your inventory"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#clear_drill_switch)Clear Drill Switch$(/l) while having the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Launcherstates",
-			"text": "Accessed with the $(l:fourze/items/super_launcher_switch)Super Launcher Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#super_launcher_switch)Super Launcher Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Fusionstates",
-			"text": "Accessed with the $(l:fourze/items/fusion_switch)Fusion Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#fusion_switch)Fusion Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Meteor Nadeshiko Fusionstates",
-			"text": "Accessed with the $(l:fourze/items/fusion_switch)Fusion Switch$(/l) while having the $(l:fourze/items/meteor_switch)Meteor$(/l) and $(l:fourze/items/nadeshiko_switch)Nadeshiko Switches$(/l) in your inventory"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#fusion_switch)Fusion Switch$(/l) while having the $(l:fourze/items/astroswitches#meteor_switch)Meteor$(/l) and $(l:fourze/items/astroswitches#nadeshiko_switch)Nadeshiko Switches$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Basestates (Shin-chan Ver.)",
-			"text": "Accessed with the $(l:fourze/items/shin_chan_switch)Shin-chan Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rocket Module",
-			"text": "Accessed with the $(l:fourze/items/rocket_switch)Rocket Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Launcher Module",
-			"text": "Accessed with the $(l:fourze/items/launcher_switch)Launcher Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#launcher_switch)Launcher Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Drill Module",
-			"text": "Accessed with the $(l:fourze/items/drill_switch)Drill Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#drill_switch)Drill Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Radar Module",
-			"text": "Accessed with the $(l:fourze/items/radar_switch)Radar Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#radar_switch)Radar Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magichand Module",
-			"text": "Accessed with the $(l:fourze/items/magic_hand_switch)Magichand Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#magic_hand_switch)Magichand Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Camera Module",
-			"text": "Accessed with the $(l:fourze/items/camera_switch)Camera Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#camera_switch)Camera Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Parachute Module",
-			"text": "Accessed with the $(l:fourze/items/parachute_switch)Parachute Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#parachute_switch)Parachute Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chainsaw Module",
-			"text": "Accessed with the $(l:fourze/items/chainsaw_switch)Chainsaw Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#chainsaw_switch)Chainsaw Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hopping Module",
-			"text": "Accessed with the $(l:fourze/items/hopping_switch)Hopping Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#hopping_switch)Hopping Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scissors Module",
-			"text": "Accessed with the $(l:fourze/items/scissors_switch)Scissors Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#scissors_switch)Scissors Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Module",
-			"text": "Accessed with the $(l:fourze/items/beat_switch)Beat Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#beat_switch)Beat Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chain Array Module",
-			"text": "Accessed with the $(l:fourze/items/chain_array_switch)Chain Array Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#chain_array_switch)Chain Array Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Smoke Module",
-			"text": "Accessed with the $(l:fourze/items/smoke_switch)Smoke Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#smoke_switch)Smoke Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Spike Module",
-			"text": "Accessed with the $(l:fourze/items/spike_switch)Spike Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Winch Module",
-			"text": "Accessed with the $(l:fourze/items/winch_switch)Winch Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#winch_switch)Winch Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flash Module",
-			"text": "Accessed with the $(l:fourze/items/flash_switch)Flash Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#flash_switch)Flash Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shield Module",
-			"text": "Accessed with the $(l:fourze/items/shield_switch)Shield Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#shield_switch)Shield Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gatling Module",
-			"text": "Accessed with the $(l:fourze/items/gatling_switch)Gatling Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#gatling_switch)Gatling Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stealth Module",
-			"text": "Accessed with the $(l:fourze/items/stealth_switch)Stealth Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hammer Module",
-			"text": "Accessed with the $(l:fourze/items/hammer_switch)Hammer Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#hammer_switch)Hammer Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Water Module",
-			"text": "Accessed with the $(l:fourze/items/water_switch)Water Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#water_switch)Water Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Medical Module",
-			"text": "Accessed with the $(l:fourze/items/medical_switch)Medical Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#medical_switch)Medical Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Pen Module",
-			"text": "Accessed with the $(l:fourze/items/pen_switch)Pen Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#pen_switch)Pen Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wheel Module",
-			"text": "Accessed with the $(l:fourze/items/wheel_switch)Wheel Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#wheel_switch)Wheel Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Screw Module",
-			"text": "Accessed with the $(l:fourze/items/screw_switch)Screw Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#screw_switch)Screw Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -515,7 +515,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hand Module",
-			"text": "Accessed with the $(l:fourze/items/hand_switch)Hand Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#hand_switch)Hand Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -529,7 +529,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scoop Module",
-			"text": "Accessed with the $(l:fourze/items/scoop_switch)Scoop Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#scoop_switch)Scoop Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -543,7 +543,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "N Magnet Module",
-			"text": "Accessed with the $(l:fourze/items/magnet_switch_n)N Magnet Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#magnet_switch_n)N Magnet Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -557,7 +557,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "S Magnet Module",
-			"text": "Accessed with the $(l:fourze/items/magnet_switch)S Magnet Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#magnet_switch)S Magnet Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -571,7 +571,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Freeze Module",
-			"text": "Accessed with the $(l:fourze/items/freeze_switch)Freeze Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#freeze_switch)Freeze Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Claw Module",
-			"text": "Accessed with the $(l:fourze/items/claw_switch)Claw Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#claw_switch)Claw Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -599,7 +599,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Board Module",
-			"text": "Accessed with the $(l:fourze/items/board_switch)Board Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#board_switch)Board Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -613,7 +613,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Giantfoot Module",
-			"text": "Accessed with the $(l:fourze/items/giantfoot_switch)Giantfoot Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#giantfoot_switch)Giantfoot Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -627,7 +627,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Aero Module",
-			"text": "Accessed with the $(l:fourze/items/aero_switch)Aero Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#aero_switch)Aero Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -641,7 +641,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gyro Module",
-			"text": "Accessed with the $(l:fourze/items/gyro_switch)Gyro Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#gyro_switch)Gyro Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -655,7 +655,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Net Module",
-			"text": "Accessed with the $(l:fourze/items/net_switch)Net Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -669,7 +669,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stamper Module",
-			"text": "Accessed with the $(l:fourze/items/stamper_switch)Stamper Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#stamper_switch)Stamper Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -683,7 +683,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ichigo Module",
-			"text": "Accessed with the $(l:fourze/items/rider1_switch)Ichigo Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#rider1_switch)Ichigo Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -697,7 +697,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Nigo Module",
-			"text": "Accessed with the $(l:fourze/items/rider2_switch)Nigo Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#rider2_switch)Nigo Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -711,7 +711,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "V3 Module",
-			"text": "Accessed with the $(l:fourze/items/v3_switch)V3 Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#v3_switch)V3 Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -725,7 +725,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Riderman Module",
-			"text": "Accessed with the $(l:fourze/items/riderman_switch)Riderman Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#riderman_switch)Riderman Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -739,7 +739,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X Module",
-			"text": "Accessed with the $(l:fourze/items/x_switch)X Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#x_switch)X Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -753,7 +753,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazon Module",
-			"text": "Accessed with the $(l:fourze/items/amazon_switch)Amazon Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#amazon_switch)Amazon Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -767,7 +767,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Stronger Module",
-			"text": "Accessed with the $(l:fourze/items/stronger_switch)Stronger Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#stronger_switch)Stronger Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -781,7 +781,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Skyrider Module",
-			"text": "Accessed with the $(l:fourze/items/skyrider_switch)Skyrider Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#skyrider_switch)Skyrider Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -795,7 +795,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super-1 Module",
-			"text": "Accessed with the $(l:fourze/items/super_1_switch)Super-1 Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#super_1_switch)Super-1 Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -809,7 +809,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "ZX Module",
-			"text": "Accessed with the $(l:fourze/items/zx_switch)ZX Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#zx_switch)ZX Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -823,7 +823,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black Module",
-			"text": "Accessed with the $(l:fourze/items/black_switch)Black Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#black_switch)Black Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -837,7 +837,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black RX Module",
-			"text": "Accessed with the $(l:fourze/items/rx_switch)Black RX Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#rx_switch)Black RX Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -851,7 +851,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Module",
-			"text": "Accessed with the $(l:fourze/items/kuuga_switch)Kuuga Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#kuuga_switch)Kuuga Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -865,7 +865,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Agito Module",
-			"text": "Accessed with the $(l:fourze/items/agito_switch)Agito Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#agito_switch)Agito Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -879,7 +879,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Module",
-			"text": "Accessed with the $(l:fourze/items/ryuki_switch)Ryuki Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#ryuki_switch)Ryuki Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -893,7 +893,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Faiz Module",
-			"text": "Accessed with the $(l:fourze/items/faiz_switch)Faiz Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#faiz_switch)Faiz Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -907,7 +907,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blade Module",
-			"text": "Accessed with the $(l:fourze/items/blade_switch)Blade Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#blade_switch)Blade Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -921,7 +921,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Module",
-			"text": "Accessed with the $(l:fourze/items/hibiki_switch)Hibiki Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#hibiki_switch)Hibiki Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -935,7 +935,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kabuto Module",
-			"text": "Accessed with the $(l:fourze/items/kabuto_switch)Kabuto Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#kabuto_switch)Kabuto Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -949,7 +949,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-O Module",
-			"text": "Accessed with the $(l:fourze/items/den_o_switch)Den-O Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#den_o_switch)Den-O Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -963,7 +963,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Module",
-			"text": "Accessed with the $(l:fourze/items/kiva_switch)Kiva Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#kiva_switch)Kiva Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -977,7 +977,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Module",
-			"text": "Accessed with the $(l:fourze/items/decade_switch)Decade Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#decade_switch)Decade Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -991,7 +991,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "W Module",
-			"text": "Accessed with the $(l:fourze/items/double_switch)W Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#double_switch)W Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1005,7 +1005,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOO Module",
-			"text": "Accessed with the $(l:fourze/items/ooo_switch)OOO Switch$(/l)"
+			"text": "Accessed with the $(l:fourze/items/astroswitches#ooo_switch)OOO Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",

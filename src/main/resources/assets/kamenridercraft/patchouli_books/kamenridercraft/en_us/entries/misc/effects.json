@@ -20,18 +20,18 @@
 			"type": "patchouli:text",
 			"anchor": "boost",
 			"title": "Boost",
-			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l)"
+			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "swift_swim",
 			"title": "Swift Swim",
-			"text": "This effect increases your swimming speed, like Dolphin's Grace but faster still. Higher amplifiers act as a multiplier for your swim speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/screw_switch)Screw Switch$(/l)"
+			"text": "This effect increases your swimming speed, like Dolphin's Grace but faster still. Higher amplifiers act as a multiplier for your swim speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#screw_switch)Screw Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Anti Poison",
-			"text": "This effect prevents you from receiving the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l)"
+			"text": "This effect prevents you from receiving the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -61,79 +61,79 @@
 			"type": "patchouli:text",
 			"anchor": "pull",
 			"title": "Pull",
-			"text": "This effect pulls nearby items toward you. Higher amplifiers increase the force of the pull.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/magnet_switch_n)N Magnet Switch$(/l)"
+			"text": "This effect pulls nearby items toward you. Higher amplifiers increase the force of the pull.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#magnet_switch_n)N Magnet Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "push",
 			"title": "Push",
-			"text": "This effect pushes nearby mobs away from you. Higher amplifiers increase the force of the push and the radius within which mobs will be pushed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/magnet_switch_s)S Magnet Switch$(/l)"
+			"text": "This effect pushes nearby mobs away from you. Higher amplifiers increase the force of the push and the radius within which mobs will be pushed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#magnet_switch_s)S Magnet Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "note",
 			"title": "Note",
-			"text": "This effect causes you to emit a music note every tick.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/beat_switch)Beat Switch$(/l)"
+			"text": "This effect causes you to emit a music note every tick.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#beat_switch)Beat Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "drill",
 			"title": "Drill",
-			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l)"
+			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/astroswitches#drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "step",
 			"title": "Step",
-			"text": "This effect increases your stepping height by one half-block for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/giantfoot_switch)Giantfoot Switch$(/l)"
+			"text": "This effect increases your stepping height by one half-block for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#giantfoot_switch)Giantfoot Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "gravity",
 			"title": "Gravity",
-			"text": "This effect increases the amount of gravity you experience, with higher amplifiers carrying a greater increase.$(br2)Examples for how to get this effect:$(li)ACtivate an $(l:misc/blocks/artificial_gravity_block)Artificial Gravity Block$(/l)$(li)Use the $(l:wizard/arsenal/gravity_ring)Gravity Wizard Ring$(/l)$(li)Use the $(l:gavv/items/gurucan_gochizo)Gurucan Gochizo$(/l)"
+			"text": "This effect increases the amount of gravity you experience, with higher amplifiers carrying a greater increase.$(br2)Examples for how to get this effect:$(li)ACtivate an $(l:misc/blocks/artificial_gravity_block)Artificial Gravity Block$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#gravity_ring)Gravity Wizard Ring$(/l)$(li)Use the $(l:gavv/items/gurucan_gochizo)Gurucan Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "low_gravity",
 			"title": "Low Gravity",
-			"text": "This effect decreases the amount of gravity you experience, with higher amplifiers carrying a greater decrease.$(br2)Examples for how to get this effect:$(li)Travel to $(l:fourze/dimensions/the_moon)the Moon$(/l)$(li)Use the $(l:fourze/items/parachute_switch)Parachute Switch$(/l)$(li)Use the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
+			"text": "This effect decreases the amount of gravity you experience, with higher amplifiers carrying a greater decrease.$(br2)Examples for how to get this effect:$(li)Travel to $(l:fourze/dimensions/the_moon)the Moon$(/l)$(li)Use the $(l:fourze/items/astroswitches#parachute_switch)Parachute Switch$(/l)$(li)Use the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "long_arm",
 			"title": "Long Arm",
-			"text": "This effect increases your block interaction range by one block for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/magichand_switch)Magichand Switch$(/l)$(li)Use the $(l:wizard/arsenal/extend_ring)Extend Wizard Ring$(/l)$(li)Use the $(l:drive/items/hooking_wrecker)Hooking Wrecker$(/l) Shift Car"
+			"text": "This effect increases your block interaction range by one block for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#magichand_switch)Magichand Switch$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#extend_ring)Extend Wizard Ring$(/l)$(li)Use the $(l:drive/items/shift_cars#hooking_wrecker)Hooking Wrecker$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "radar",
 			"title": "Radar",
-			"text": "This effect applies the Glowing effect to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/radar_switch)Radar Switch$(/l)"
+			"text": "This effect applies the Glowing effect to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#radar_switch)Radar Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "smoke",
 			"title": "Smoke",
-			"text": "This effect causes you to emit smoke particles.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/smoke_switch)Smoke Switch$(/l)"
+			"text": "This effect causes you to emit smoke particles.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#smoke_switch)Smoke Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "shrink",
 			"title": "Shrink",
-			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
+			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "giant",
 			"title": "Giant",
-			"text": "This effect causes you to grow in size, with higher amplifiers making you grow further.$(br2)Examples for how to get this effect:$(li)Use the $(l:j/items/j_stone)J Stone$(/l)$(li)Use the $(l:wizard/arsenal/big_ring)Big Wizard Ring$(/l)$(li)Use the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
+			"text": "This effect causes you to grow in size, with higher amplifiers making you grow further.$(br2)Examples for how to get this effect:$(li)Use the $(l:j/items/j_stone)J Stone$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#big_ring)Big Wizard Ring$(/l)$(li)Use the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flatten",
 			"title": "Flatten",
-			"text": "This effect causes you to appear flat, like a 2D character.$(br2)Examples for how to get this effect:$(li)Transform into $(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l)$(li)Use the $(l:fourze/items/shin_chan_switch)Shin-chan Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l)"
+			"text": "This effect causes you to appear flat, like a 2D character.$(br2)Examples for how to get this effect:$(li)Transform into $(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l)$(li)Use the $(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -157,31 +157,31 @@
 			"type": "patchouli:text",
 			"anchor": "explosion",
 			"title": "Explosion",
-			"text": "This effect creates an explosion in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/explosion_ring)Explosion Wizard Ring$(/l)"
+			"text": "This effect creates an explosion in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#explosion_ring)Explosion Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "bind",
 			"title": "Bind",
-			"text": "This effect places cobwebs in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/bind_ring)Bind Wizard Ring$(/l)"
+			"text": "This effect places cobwebs in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#bind_ring)Bind Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "fall",
 			"title": "Fall",
-			"text": "This effect rapidly destroys the blocks beneath you, causing you to fall down.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/fall_ring)Fall Wizard Ring$(/l)"
+			"text": "This effect rapidly destroys the blocks beneath you, causing you to fall down.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#fall_ring)Fall Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "smell",
 			"title": "Smell",
-			"text": "This effect gives Nausea and Slowness II to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/smell_ring)Smell Wizard Ring$(/l)"
+			"text": "This effect gives Nausea and Slowness II to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#smell_ring)Smell Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "merry_christmas",
 			"title": "Merry Christmas",
-			"text": "This effect gives Nausea and Slowness II to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/christmas_energy_item)Christmas Energy Item$(/l)"
+			"text": "This effect gives Nausea and Slowness II to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/christmas_energy_item)Christmas Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -205,7 +205,7 @@
 			"type": "patchouli:text",
 			"anchor": "flame_shot",
 			"title": "Flame Shot",
-			"text": "With this effect, you will ignite any entities you hit with an arrow. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/fire_switch)Fire Switch$(/l)"
+			"text": "With this effect, you will ignite any entities you hit with an arrow. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#fire_switch)Fire Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -223,67 +223,67 @@
 			"type": "patchouli:text",
 			"anchor": "gatling",
 			"title": "Gatling",
-			"text": "This effect allows you to fire a stream of arrows by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/gatling_switch)Gatling Switch$(/l)$(li)Use the $(l:drive/items/midnightshadow)Midnight Shadow$(/l) Shift Car"
+			"text": "This effect allows you to fire a stream of arrows by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#gatling_switch)Gatling Switch$(/l)$(li)Use the $(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cannon",
 			"title": "Cannon",
-			"text": "This effect allows you to shoot a small fireball every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/launcher_switch)Launcher Switch$(/l)"
+			"text": "This effect allows you to shoot a small fireball every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#launcher_switch)Launcher Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warp",
 			"title": "Warp",
-			"text": "This effect allows you to shoot an ender pearl every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:drive/items/dimension_cab)Dimension Cab$(/l) Shift Car"
+			"text": "This effect allows you to shoot an ender pearl every 6 seconds by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:drive/items/shift_cars#dimension_cab)Dimension Cab$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "stealth",
 			"title": "Stealth",
-			"text": "This effect allows you to turn invisible when sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l)"
+			"text": "This effect allows you to turn invisible when sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "fish",
 			"title": "Fish!",
-			"text": "This effect causes you to drop a salmon every 6 seconds when sneaking. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/shark_raise_buckle)Shark Buckle$(/l)"
+			"text": "This effect causes you to drop a salmon every 6 seconds when sneaking. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/shark_raise_buckle)Shark Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "mirror",
 			"title": "Mirror",
-			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/fantasy_raise_buckle)Fantasy Buckle$(/l)"
+			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/fantasy_raise_buckle)Fantasy Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "return",
 			"title": "Return",
-			"text": "This effect causes you to be teleported back to your spawn point.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/teleport_ring)Teleport Wizard Ring$(/l)"
+			"text": "This effect causes you to be teleported back to your spawn point.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#teleport_ring)Teleport Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "sleep",
 			"title": "Sleep",
-			"text": "This effect skips the night, acting as a fast sleep method without setting your spawn.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/sleep_ring)Sleep Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l)"
+			"text": "This effect skips the night, acting as a fast sleep method without setting your spawn.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#sleep_ring)Sleep Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "night",
 			"title": "Night",
-			"text": "This effect is the opposite of the Sleep effect, skipping the day instead.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/eclipse_ring)Eclipse Wizard Ring$(/l)"
+			"text": "This effect is the opposite of the Sleep effect, skipping the day instead.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#eclipse_ring)Eclipse Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blizzard",
 			"title": "Blizzard",
-			"text": "This effect freezes all water beneath you, turning it into ice.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/freeze_switch)Freeze Switch$(/l)$(li)Use the $(l:wizard/arsenal/blizzard_ring)Blizzard Wizard Ring$(/l)$(li)Use the $(l:drive/items/road_winter)Road Winter$(/l) Shift Car"
+			"text": "This effect freezes all water beneath you, turning it into ice.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#freeze_switch)Freeze Switch$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#blizzard_ring)Blizzard Wizard Ring$(/l)$(li)Use the $(l:drive/items/shift_cars#road_winter)Road Winter$(/l) Shift Car"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "thunder",
 			"title": "Thunder",
-			"text": "This effect calls down a lightning bolt in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/thunder_ring)Thunder Wizard Ring$(/l)"
+			"text": "This effect calls down a lightning bolt in the direction you are facing.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#thunder_ring)Thunder Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -295,7 +295,7 @@
 			"type": "patchouli:text",
 			"anchor": "thunder_slash",
 			"title": "Thunder Slash",
-			"text": "With this effect, you will cause any entities you hit with a sword to be struck by lightning.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/elek_switch)Elek Switch$(/l)"
+			"text": "With this effect, you will cause any entities you hit with a sword to be struck by lightning.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#elek_switch)Elek Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,19 +319,19 @@
 			"type": "patchouli:text",
 			"anchor": "cosmic_energy",
 			"title": "Cosmic Energy",
-			"text": "This effect boosts the strength of $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)'s Astroswitches by one.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/cosmic_switch)Cosmic Switch$(/l)"
+			"text": "This effect boosts the strength of $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l)'s Astroswitches by one.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#cosmic_switch)Cosmic Switch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flower",
 			"title": "Flower",
-			"text": "This effect causes you to drop a poppy.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/flower_ring)Flower Wizard Ring$(/l)"
+			"text": "This effect causes you to drop a poppy.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#flower_ring)Flower Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "connect",
 			"title": "Connect",
-			"text": "This effect opens your Ender Chest for you.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/connect_ring)Connect Wizard Ring$(/l)"
+			"text": "This effect opens your Ender Chest for you.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#connect_ring)Connect Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",

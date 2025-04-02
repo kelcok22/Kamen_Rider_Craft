@@ -2,7 +2,7 @@
 	"name": "Drive System Car",
 	"icon": "kamenridercraft:drive_system_car",
 	"category": "kamenridercraft:drive/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

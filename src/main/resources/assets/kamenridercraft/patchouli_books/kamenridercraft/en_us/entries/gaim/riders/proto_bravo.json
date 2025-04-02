@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Durian Arms",
-			"text": "Accessed with the $(l:gaim/items/proto_durian_lockseed)Proto Durian Lockseed$(/l)"
+			"text": "Accessed with the $(l:gaim/items/lockseeds#proto_durian_lockseed)Proto Durian Lockseed$(/l)"
 		},
 		{
 			"type": "patchouli:text",

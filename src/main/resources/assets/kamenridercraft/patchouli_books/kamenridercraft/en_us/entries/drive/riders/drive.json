@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed",
-      "text": "Accessed with the $(l:drive/items/speedshift)Shift Speed$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#speedshift)Shift Speed$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Flare",
-      "text": "Accessed with the $(l:drive/items/maxflare)Max Flare$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#maxflare)Max Flare$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Spike",
-      "text": "Accessed with the $(l:drive/items/funkyspike)Funky Spike$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#funkyspike)Funky Spike$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Shadow",
-      "text": "Accessed with the $(l:drive/items/midnightshadow)Midnight Shadow$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Hunter",
-      "text": "Accessed with the $(l:drive/items/justice_hunter)Justice Hunter$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#justice_hunter)Justice Hunter$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Vegas",
-      "text": "Accessed with the $(l:drive/items/dream_vegas)Dream Vegas$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#dream_vegas)Dream Vegas$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Mixer",
-      "text": "Accessed with the $(l:drive/items/spin_mixer)Spin Mixer$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#spin_mixer)Spin Mixer$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Monster",
-      "text": "Accessed with the $(l:drive/items/massive_monster)Massive Monster$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#massive_monster)Massive Monster$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Cab",
-      "text": "Accessed with the $(l:drive/items/dimension_cab)Dimension Cab$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#dimension_cab)Dimension Cab$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild",
-      "text": "Accessed with the $(l:drive/items/wildshift)Shift Wild$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#wildshift)Shift Wild$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Dump",
-      "text": "Accessed with the $(l:drive/items/rumble_dump)Rumble Dump$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#rumble_dump)Rumble Dump$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Wrecker",
-      "text": "Accessed with the $(l:drive/items/hooking_wrecker)Hooking Wrecker$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#hooking_wrecker)Hooking Wrecker$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Wild Doctor",
-      "text": "Accessed with the $(l:drive/items/mad_doctor)Mad Doctor$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#mad_doctor)Mad Doctor$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic",
-      "text": "Accessed with the $(l:drive/items/technicshift)Shift Technic$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#technicshift)Shift Technic$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Braver",
-      "text": "Accessed with the $(l:drive/items/fire_braver)Fire Braver$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#fire_braver)Fire Braver$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Gravity",
-      "text": "Accessed with the $(l:drive/items/rolling_gravity)Rolling Gravity$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#rolling_gravity)Rolling Gravity$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Technic Winter",
-      "text": "Accessed with the $(l:drive/items/road_winter)Road Winter$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#road_winter)Road Winter$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Dead Heat",
-      "text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula",
-      "text": "Accessed with the $(l:drive/items/formulashift)Shift Formula$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#formulashift)Shift Formula$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Mantarn",
-      "text": "Accessed with the $(l:drive/items/mantarn_f01)Mantarn F01$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#mantarn_f01)Mantarn F01$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Jacky",
-      "text": "Accessed with the $(l:drive/items/jacky_f02)Jacky F02$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#jacky_f02)Jacky F02$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Formula Sparner",
-      "text": "Accessed with the $(l:drive/items/sparner_f03)Sparner F03$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#sparner_f03)Sparner F03$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron",
-      "text": "Accessed with the $(l:drive/items/tridoronshift)Shift Tridoron$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#tridoronshift)Shift Tridoron$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Attack 1.2.3",
-      "text": "Accessed with $(l:drive/items/maxflare)Max Flare$(/l), $(l:drive/items/funkyspike)Funky Spike$(/l), or $(l:drive/items/midnightshadow)Midnight Shadow$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+      "text": "Accessed with $(l:drive/items/shift_cars#maxflare)Max Flare$(/l), $(l:drive/items/shift_cars#funkyspike)Funky Spike$(/l), or $(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
     },
     {
       "type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron People Saver",
-      "text": "Accessed with $(l:drive/items/justice_hunter)Justice Hunter$(/l), $(l:drive/items/mad_doctor)Mad Doctor$(/l), or $(l:drive/items/fire_braver)Fire Braver$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+      "text": "Accessed with $(l:drive/items/shift_cars#justice_hunter)Justice Hunter$(/l), $(l:drive/items/shift_cars#mad_doctor)Mad Doctor$(/l), or $(l:drive/items/shift_cars#fire_braver)Fire Braver$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
     },
     {
       "type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Kouji Genbar",
-      "text": "Accessed with $(l:drive/items/rumble_dump)Rumble Dump$(/l), $(l:drive/items/spin_mixer)Spin Mixer$(/l), or $(l:drive/items/rolling_gravity)Rolling Gravity$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
+      "text": "Accessed with $(l:drive/items/shift_cars#rumble_dump)Rumble Dump$(/l), $(l:drive/items/shift_cars#spin_mixer)Spin Mixer$(/l), or $(l:drive/items/shift_cars#rolling_gravity)Rolling Gravity$(/l) as $(l:drive/riders/drive#tridoron)type Tridoron$(/l) with the other two Shift Cars in your inventory"
     },
     {
       "type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Tridoron Tire All Kakimazerl",
-      "text": "Accessed with the $(l:drive/items/tridoronshift)Shift Tridoron$(/l) Shift Car while having all Tire Koukan Shift Cars in your inventory"
+      "text": "Accessed with the $(l:drive/items/shift_cars#tridoronshift)Shift Tridoron$(/l) Shift Car while having all Tire Koukan Shift Cars in your inventory"
     },
     {
       "type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Dead Heat",
-      "text": "Accessed with the $(l:drive/items/deadheatshift)Shift Dead Heat$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#deadheatshift)Shift Dead Heat$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Fruits",
-      "text": "Accessed with the $(l:drive/items/fruitsshift)Shift Fruits$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#fruitsshift)Shift Fruits$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type High Speed",
-      "text": "Accessed with the $(l:drive/items/high_speedshift)Shift High Speed$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#high_speedshift)Shift High Speed$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type High Speed Flare",
-      "text": "Accessed with the $(l:drive/items/mega_maxflare)Mega Max Flare$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#mega_maxflare)Mega Max Flare$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Special",
-      "text": "Accessed with the $(l:drive/items/specialshift)Shift Special$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#specialshift)Shift Special$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed",
-      "text": "Accessed with the $(l:drive/items/proto_speedshift)Shift Proto Speed$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#proto_speedshift)Shift Proto Speed$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
       "name": "Type Speed Wild Technic",
-      "text": "Accessed with the $(l:drive/items/speedwildtechnicshift)Shift Speed Wild Technic$(/l) Shift Car"
+      "text": "Accessed with the $(l:drive/items/shift_cars#speedwildtechnicshift)Shift Speed Wild Technic$(/l) Shift Car"
     },
     {
       "type": "patchouli:text",
