@@ -1,0 +1,1064 @@
+{
+	"name": "Rider Gashats",
+	"icon": "kamenridercraft:mighty_action_x_gashat",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_action_x_gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Ex-Aid's $(l:ex_aid/devices/gamer_driver_ex_aid)Gamer Driver (Ex-Aid)$(/l)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#action_2)Action Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_action_x_gashat",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taddle_quest_gashat",
+			"title": "Taddle Quest Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Brave's $(l:ex_aid/devices/gamer_driver_brave)Gamer Driver (Brave)$(/l)$(br2)Used to access Brave's $(l:ex_aid/riders/brave#quest_2)Quest Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_quest_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bang_bang_shooting_gashat",
+			"title": "Bang Bang Shooting Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Snipe's $(l:ex_aid/devices/gamer_driver_snipe)Gamer Driver (Snipe)$(/l)$(br2)Used to access Snipe's $(l:ex_aid/riders/snipe#shooting_2)Shooting Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bang_bang_shooting_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakusou_bike_gashat",
+			"title": "Bakusou Bike Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Lazer's $(l:ex_aid/devices/gamer_driver_lazer)Gamer Driver (Lazer)$(/l)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#bike_2)Bike Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakusou_bike_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakusou_bike_gashat_turbo",
+			"title": "Bakusou Bike Gashat (Lazer Turbo)",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Lazer Turbo's $(l:ex_aid/riders/lazer#bike_0)Bike Gamer Level 0$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/bakusou_bike_gashat_turbo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gekitotsu_robots_gashat",
+			"title": "Gekitotsu Robots Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex_aid#robot)Robot Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gekitotsu_robots_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doremifa_beat_gashat",
+			"title": "DoReMiFa Beat Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/brave#beat)Beat Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doremifa_beat_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jet_combat_gashat",
+			"title": "Jet Combat Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/snipe#combat)Combat Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jet_combat_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giri_giri_chambara_gashat",
+			"title": "Giri Giri Chambara Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Lazer X's $(l:ex_aid/devices/gashacon_bugvisor_ii_lazer)Gashacon Bugvisor II (Lazer)$(/l)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#chambara)Chambara Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giri_giri_chambara_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shakariki_sports_gashat",
+			"title": "Shakariki Sports Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/genm#sports)Sports Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shakariki_sports_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drago_knight_hunter_z_gashat",
+			"title": "Drago Knight Hunter Z Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex_aid#hunter_full)Hunter Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drago_knight_hunter_z_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mighty_action_x_gashat",
+			"title": "Proto Mighty Action X Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Genm's $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#action_2)Action Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_mighty_action_x_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_taddle_quest_gashat",
+			"title": "Proto Taddle Quest Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Brave's $(l:ex_aid/riders/brave#proto_quest_2)Quest Gamer Level 1/2 (Proto)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_taddle_quest_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_bang_bang_shooting_gashat",
+			"title": "Proto Bang Bang Shooting Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Snipe's $(l:ex_aid/riders/snipe#proto_shooting_2)Shooting Gamer Level 1/2 (Proto)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_bang_bang_shooting_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_bakusou_bike_gashat",
+			"title": "Proto Bakusou Bike Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#proto_bike_1)Bike Gamer Level 1 (Proto)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_bakusou_bike_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_gekitotsu_robots_gashat",
+			"title": "Proto Gekitotsu Robots Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex_aid#proto_robot)Proto Robot Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_gekitotsu_robots_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_doremifa_beat_gashat",
+			"title": "Proto DoReMiFa Beat Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/brave#proto_beat)Proto Beat Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_doremifa_beat_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_jet_combat_gashat",
+			"title": "Proto Jet Combat Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/snipe#proto_combat)Proto Combat Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_jet_combat_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_giri_giri_chambara_gashat",
+			"title": "Proto Giri Giri Chambara Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Lazer's $(l:ex_aid/riders/lazer#proto_chambara)Proto Chambara Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_giri_giri_chambara_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_shakariki_sports_gashat",
+			"title": "Proto Shakariki Sports Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/lazer#proto_sports)Proto Sports Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_shakariki_sports_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_drago_knight_hunter_z_gashat",
+			"title": "Proto Drago Knight Hunter Z Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex_aid#proto_hunter)Proto Hunter Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_drago_knight_hunter_z_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mighty_action_x_gashat_origin",
+			"title": "Proto Mighty Action X Origin Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#action_0)Action Gamer Level 0 (Proto Origin)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/proto_mighty_action_x_gashat_origin"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_bakusou_bike_combi_fukkatsu_gashat",
+			"title": "Proto Bakusou Bike (Combi Fukkatsu) Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Lazer (2016, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#bike_0)Bike Action Gamer Level 0$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dangerous_zombie_gashat",
+			"title": "Dangerous Zombie Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#zombie_x)Zombie Gamer Level X$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dangerous_zombie_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unfinished_kamen_rider_chronicle_gashat",
+			"title": "Unfinished Chronicle Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used as the base item for the Gashacon Bugvisor (II)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamen_rider_chronicle_gashat_gamedeus",
+			"title": "Kamen Rider Chronicle Gashat (Gamedeus)",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Cronus's $(l:ex_aid/riders/cronus#gamedeus)Gamedeus Cronus$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_chronicle_gashat_gamedeus",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamen_rider_chronicle_gashat",
+			"title": "Kamen Rider Chronicle Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Cronus's $(l:ex_aid/devices/gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br)Used to craft a Ride-Player's $(l:ex_aid/devices/rideplayerbelt)Ride-Player Buckle$(/l)$(br)Used to craft Nico Saiba's $(l:ex_aid/devices/rideplayerbelt_nico)Ride-Player Buckle (Nico)$(/l) and $(l:ex_aid/devices/gamer_driver_nico_snipe)Gamer Driver (Snipe Nico)$(/l)$(br2)Used to access Cronus's $(l:ex_aid/riders/cronus#chronicle)Chronicle Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_chronicle_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toki_meki_crisis_gashat",
+			"title": "Toki Meki Crisis Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Poppy's $(l:ex_aid/devices/gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Used to access Poppy's $(l:ex_aid/riders/poppy#toki_meki_crisis)Toki Meki Crisis Gamer Level X$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toki_meki_crisis_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_creator_vrx_gashat",
+			"title": "Mighty Creator VRX Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#creator)Creator Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_creator_vrx_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_novel_x_gashat",
+			"title": "Mighty Novel X Gashat",
+			"text": "Appears in:$(li)Novel: Kamen Rider Ex-Aid: ~Mighty Novel X~ (2018, novel)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#novel)Novel Gamer Level X$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_novel_x_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ju_ju_burger_gashat",
+			"title": "Ju Ju Burger Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access $(l:ex_aid/riders/ex_aid#burger)Burger Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ju_ju_burger_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "night_of_safari_gashat",
+			"title": "Night of Safari Gashat",
+			"text": "Appears in:$(li)Kamen Rider Brave: ~Let's Survive! Revival of the Beast Rider Squad!~ (2017, TTFC special)$(br2)Used to access $(l:ex_aid/riders/brave#safari)Safari Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:night_of_safari_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bang_bang_tank_gashat",
+			"title": "Bang Bang Tank Gashat",
+			"text": "Appears in:$(li)Kamen Rider Snipe: Episode ZERO (2017, miniseries)$(br2)Used to access $(l:ex_aid/riders/snipe#tank)Tank Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bang_bang_tank_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taddle_legacy_gashat",
+			"title": "Taddle Legacy Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft True Brave's $(l:ex_aid/devices/gamer_driver_truebrave)Gamer Driver (True Brave)$(/l)$(br2)Used to access $(l:ex_aid/riders/brave#legacy)Legacy Gamer Level 100$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_legacy_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hurricane_ninja_gashat",
+			"title": "Hurricane Ninja Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Used to craft Fuma's $(l:ex_aid/devices/gamer_driver_fuuma)Gamer Driver (Fuma)$(/l)$(br2)Used to craft a Ninja Player's $(l:ex_aid/devices/ninjaplayerbelt)Ninja Player Buckle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hurricane_ninja_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pac_adventure_gashat",
+			"title": "Pac Adventure Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access $(l:ex_aid/riders/ex_aid#pac)Pac Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pac_adventure_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "famitsa_gashat",
+			"title": "Famista Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access $(l:ex_aid/riders/brave#famista)Famista Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:famitsa_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xevious_gashat",
+			"title": "Xevious Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access $(l:ex_aid/riders/snipe#xevious)Xevious Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:xevious_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "galaxian_gashat",
+			"title": "Galaxian Gashat",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Used to access $(l:ex_aid/riders/brave#galaxian)Galaxian Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:galaxian_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taiko_no_tatsujin_gashat",
+			"title": "Taiko No Tatsujin Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taiko_no_tatsujin_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ganbarizing_gashat",
+			"title": "Ganbarizing Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ganbarizing_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mighty_action_x_gashat_origin_remake",
+			"title": "Proto Mighty Action X Gashat Noir",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toki_meki_bridal_gashat",
+			"title": "Toki Meki Bridal Gashat",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toki_meki_bridal_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "poppy_doremifa_beat_gashat",
+			"title": "DoReMiFa Beat Gashat (Poppy Ver.)",
+			"text": "Appears in:$(li)DX DoReMiFa Beat Gashat (Poppy Pipopapo ver.) (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:poppy_doremifa_beat_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_brothers_xx_unfinished_gashat",
+			"title": "Unfinished XX Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_brothers_xx_gashat",
+			"title": "Mighty Brothers XX Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#double_action_x)Double Action Gamer Level X/XX$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_brothers_xx_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doctor_mighty_xx_gashat",
+			"title": "Doctor Mighty XX Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doctor_mighty_xx_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knock_out_fighter_2_gashat",
+			"title": "Knock Out Fighter 2 Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Para-DX (2017, Hyper Battle Video)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#double_fighter)Double Fighter Gamer Level 39$(/l)$(br)Used to access Para-DX's $(l:ex_aid/riders/para_dx#double_fighter)Double Fighter Gamer Level 39$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knock_out_fighter_2_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taddle_fantasy_gashat",
+			"title": "Taddle Fantasy Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Brave's $(l:ex_aid/riders/brave#fantasy)Fantasy Gamer Level 50$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_fantasy_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bang_bang_simulation_gashat",
+			"title": "Bang Bang Simulation Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Snipe's $(l:ex_aid/riders/snipe#simulation)Simulation Gamer Level 50$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bang_bang_simulation_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfect_puzzle_gashat",
+			"title": "Perfect Puzzle Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Para-DX's $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Used to access Para-DX's $(l:ex_aid/riders/para_dx#puzzle)Puzzle Gamer Level 50$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfect_puzzle_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knock_out_fighter_gashat",
+			"title": "Knock Out Fighter Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft Para-DX's $(l:ex_aid/devices/paradoxbelt)Para-DX Buckle$(/l)$(br2)Used to access Para-DX's $(l:ex_aid/riders/para_dx#fighter)Fighter Gamer Level 50$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knock_out_fighter_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gashat_gear_dual_another",
+			"title": "Gashat Gear Dual Another",
+			"text": "Appears in:$(li)Kamen Rider Para-DX with Poppy (2018, V-Cinema film)$(br2)Used to craft Another Para-DX's $(l:ex_aid/devices/gamer_driver_anotherparadox)Gamer Driver (Another Para-DX)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gashat_gear_dual_another",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "genm_musou_gashat",
+			"title": "Genm Musou Gashat",
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#musou)Musou Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:genm_musou_gashat",
+			"title": " ",
+			"text": "Obtained by using the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unfinished_maximum_mighty_x_gashat",
+			"title": "Unfinished Maximum Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/unfinished_maximum_mighty_x_gashat"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maximum_mighty_x_gashat",
+			"title": "Maximum Mighty X Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#maximum)Maximum Gamer Level 99$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maximum_mighty_x_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "god_maximum_mighty_x_gashat",
+			"title": "God Maximum Mighty X Gashat",
+			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#god_maximum)God Maximum Gamer Level Billion$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:god_maximum_mighty_x_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maximum_zombie_gashat",
+			"title": "Maximum Zombie Gashat",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#fumetsu)Hyper Fumetsu Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:maximum_zombie_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unfinished_hyper_muteki_gashat",
+			"title": "Unfinished Hyper Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/unfinished_hyper_muteki_gashat"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hyper_muteki_gashat",
+			"title": "Hyper Muteki Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#muteki)Muteki Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_muteki_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamedeus_hyper_muteki_gashat",
+			"title": "Gamedeus Hyper Muteki Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Final Stage (2017, stage show)$(br2)Used to craft Gamedeus Muteki's $(l:ex_aid/devices/gamer_driver_gamedeus_muteki)Gamer Driver (Gamedeus Muteki)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gamedeus_hyper_muteki_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hyper_fumetsu_gashat",
+			"title": "Hyper Fumetsu Gashat",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#fumetsu)Hyper Fumetsu Gamer$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_fumetsu_gashat",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_unbeatable_game",
+			"title": "The Unbeatable Game Gashat",
+			"text": "Appears in:$(li)Kamen Sentai Gorider (2017, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#totema)Totema Exterior$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_unbeatable_game",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamen_rider_build_gashat",
+			"title": "Kamen Rider Build Gashat",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_build_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kaigan_ghost_gashat",
+			"title": "Kaigan Ghost Gashat",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#ghost_2)Ghost Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaigan_ghost_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "full_throttle_drive_gashat",
+			"title": "Full Throttle Drive Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#drive)Drive Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:full_throttle_drive_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toukenden_gaim_gashat",
+			"title": "Toukenden Gaim Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#gaim)Gaim Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toukenden_gaim_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magic_the_wizard_gashat",
+			"title": "Magic The Wizard Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#wizard_2)Wizard Gamer Level 1/2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magic_the_wizard_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "space_galaxy_fourze_gashat",
+			"title": "Space Galaxy Fourze Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#fourze)Fourze Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:space_galaxy_fourze_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jungle_ooo_gashat",
+			"title": "Jungle OOO Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#ooo)OOO Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jungle_ooo_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "detective_double_gashat",
+			"title": "Detective Double Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#double)Double Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:detective_double_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barcode_warrior_decade_gashat",
+			"title": "Barcode Warrior Decade Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#decade)Decade Gamer Level 2$(/l)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#decade)Decade Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:barcode_warrior_decade_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dokidoki_makai_castle_kiva_gashat",
+			"title": "Doki Doki Makai Castle Kiva Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#kiva)Kiva Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dokidoki_makai_castle_kiva_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "time_express_den_o_gashat",
+			"title": "Time Express Den-O Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#den_o)Den-O Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:time_express_den_o_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "insect_wars_kabuto_gashat",
+			"title": "Insect Wars Kabuto Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#kabuto)Kabuto Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:insect_wars_kabuto_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taiko_master_hibiki_gashat",
+			"title": "Taiko Master Hibiki Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#hibiki)Hibiki Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taiko_master_hibiki_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_of_poker_blade_gashat",
+			"title": "King of Poker Blade Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#blade)Blade Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_of_poker_blade_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "moshi_moshi_faiz_gashat",
+			"title": "Moshi Moshi Faiz Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#faiz)Faiz Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:moshi_moshi_faiz_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mirror_labryinth_ryuki_gashat",
+			"title": "Mirror Labyrinth Ryuki Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#ryuki)Ryuki Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mirror_labryinth_ryuki_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_of_the_sun_gashat",
+			"title": "Agito of the Sun Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Genm's $(l:ex_aid/riders/genm#agito)Agito Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_of_the_sun_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "adventure_guy_kuuga_gashat",
+			"title": "Adventure Guy Kuuga Gashat",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#kuuga)Kuuga Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:adventure_guy_kuuga_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lets_go_ichigou_gashat",
+			"title": "Let's Go Ichigou Gashat",
+			"text": "Appears in:$(li)DX Let's Go Ichi Gou! Gashat (2017, toyline)$(br2)Used to access Ex-Aid's $(l:ex_aid/riders/ex_aid#ichigo)Ichigo Gamer Level 2$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lets_go_ichigou_gashat",
+			"title": " ",
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+		}
+	]
+}

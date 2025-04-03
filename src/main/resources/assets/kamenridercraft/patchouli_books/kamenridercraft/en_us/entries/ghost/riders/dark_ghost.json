@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dark Damashii",
-			"text": "Accessed with the $(l:ghost/items/dark_ghost_eyecon)Dark Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)Dark Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Napoleon Damashii",
-			"text": "Accessed with the $(l:ghost/items/napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ikkyu Damashii",
-			"text": "Accessed with the $(l:ghost/items/ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Pythagoras Damashii",
-			"text": "Accessed with the $(l:ghost/items/pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

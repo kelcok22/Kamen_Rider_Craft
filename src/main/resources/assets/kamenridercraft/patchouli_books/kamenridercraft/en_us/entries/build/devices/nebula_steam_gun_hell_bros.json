@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nebula_steam_gun_hell_bros",
 			"title": " ",
-			"text": "Obtained by firing the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) without any foot armor and with $(l:build/items/gear_engine)Gear Engine$(/l) or $(l:build/items/gear_remocon)Gear Remocon$(/l) in your off-hand"
+			"text": "Obtained by firing the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) without any foot armor and with $(l:build/items/gears#gear_engine)Gear Engine$(/l) or $(l:build/items/gears#gear_remocon)Gear Remocon$(/l) in your off-hand"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Unfinished Hyper Gashat",
 	"icon": "kamenridercraft:unfinished_hyper_muteki_gashat",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 60,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

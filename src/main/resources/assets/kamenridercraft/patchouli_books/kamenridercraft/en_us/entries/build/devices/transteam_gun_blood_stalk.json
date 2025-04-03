@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:transteam_gun_blood_stalk",
 			"title": " ",
-			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor and with the $(l:build/items/lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) in your off-hand"
+			"text": "Obtained by firing the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) without any foot armor and with the $(l:build/items/fullbottles#lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) in your off-hand"
 		}
 	]
 }

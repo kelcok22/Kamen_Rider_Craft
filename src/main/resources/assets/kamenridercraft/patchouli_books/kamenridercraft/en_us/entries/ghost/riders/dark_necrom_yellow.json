@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dark Necrom Yellow Damashii",
-			"text": "Accessed with the $(l:ghost/items/dark_necrom_yellow_ghost_eyecon)Dark Necrom Ghost Eyecon (Yellow)$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#dark_necrom_yellow_ghost_eyecon)Dark Necrom Ghost Eyecon (Yellow)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Nobunaga Damashii",
-			"text": "Accessed with the $(l:ghost/items/nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Unfinished XX Gashat",
 	"icon": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 46,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

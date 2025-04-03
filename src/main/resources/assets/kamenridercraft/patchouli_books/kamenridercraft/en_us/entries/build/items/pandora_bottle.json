@@ -2,11 +2,11 @@
 	"name": "Pandora Bottle",
 	"icon": "kamenridercraft:pandora_bottle",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 67,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/fullbottles#rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

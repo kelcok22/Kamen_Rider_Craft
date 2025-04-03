@@ -2,7 +2,7 @@
 	"name": "Hazard Trigger",
 	"icon": "kamenridercraft:hazard_trigger",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 69,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

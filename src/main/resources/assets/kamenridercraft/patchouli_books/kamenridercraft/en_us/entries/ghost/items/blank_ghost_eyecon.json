@@ -2,7 +2,7 @@
 	"name": "Blank Ghost Eyecon",
 	"icon": "kamenridercraft:blank_ghost_eyecon",
 	"category": "kamenridercraft:ghost/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

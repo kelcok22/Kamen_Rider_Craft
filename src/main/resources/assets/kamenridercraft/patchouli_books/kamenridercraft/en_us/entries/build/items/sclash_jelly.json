@@ -2,7 +2,7 @@
 	"name": "Empty Sclashjelly",
 	"icon": "kamenridercraft:sclash_jelly",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

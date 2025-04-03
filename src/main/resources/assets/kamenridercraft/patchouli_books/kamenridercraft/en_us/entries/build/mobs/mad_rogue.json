@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/bat_full_bottle)Bat Fullbottle$(/l)$(li)1 $(l:build/items/engine_full_bottle)Engine Fullbottle$(/l) (50%)$(li)1 $(l:build/items/black_lost_bat_full_bottle)Lost Bat Fullbottle$(/l) (50%)"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/fullbottles#bat_full_bottle)Bat Fullbottle$(/l)$(li)1 $(l:build/items/fullbottles#engine_full_bottle)Engine Fullbottle$(/l) (50%)$(li)1 $(l:build/items/fullbottles#black_lost_bat_full_bottle)Lost Bat Fullbottle$(/l) (50%)"
 		}
 	]
 }

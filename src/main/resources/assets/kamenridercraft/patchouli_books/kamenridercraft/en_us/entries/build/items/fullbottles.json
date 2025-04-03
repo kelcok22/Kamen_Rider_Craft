@@ -1,0 +1,1485 @@
+{
+	"name": "Fullbottles",
+	"icon": "kamenridercraft:rabbit_full_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rabbit_full_bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Rabbit$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_full_bottle",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tank_full_bottle",
+			"title": "Tank Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Tank$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tank_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gorilla_full_bottle",
+			"title": "Gorilla Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#gorillamond)Gorilla$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gorilla_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diamond_full_bottle",
+			"title": "Diamond Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#gorillamond)Diamond$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:diamond_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_full_bottle",
+			"title": "Taka Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#hawkgatling)Taka$(/l) forms$(br2)Used to access Cross-Z Charge's $(l:build/riders/cross-z#taka)Celestial Wings$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taka_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gatling_full_bottle",
+			"title": "Gatling Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#hawkgatling)Gatling$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gatling_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninja_full_bottle",
+			"title": "Ninja Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#ninnincomic)Ninja$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "comic_full_bottle",
+			"title": "Comic Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#ninnincomic)Comic$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:comic_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "panda_full_bottle",
+			"title": "Panda Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rocketpanda)Panda$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panda_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_full_bottle",
+			"title": "Rocket Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rocketpanda)Rocket$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "harinezumi_full_bottle",
+			"title": "Harinezumi Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#firehedgehog)Harinezumi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:harinezumi_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shoubousha_full_bottle",
+			"title": "Shoubousha Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#firehedgehog)Shoubousha$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shoubousha_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_full_bottle",
+			"title": "Lion Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#lioncleaner)Lion$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "soujiki_full_bottle",
+			"title": "Soujiki Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#lioncleaner)Soujiki$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:soujiki_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_full_bottle",
+			"title": "Dragon Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Cross-Z's $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Used to access Build's $(l:build/riders/build#keydragon)Dragon$(/l) forms$(br2)Used to access Cross-Z's $(l:build/riders/cross-z)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lock_full_bottle",
+			"title": "Lock Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#keydragon)Lock$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lock_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kaizoku_full_bottle",
+			"title": "Kaizoku Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kaizokuressya)Kaizoku$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaizoku_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "densha_full_bottle",
+			"title": "Densha Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kaizokuressya)Densha$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:densha_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "octopus_full_bottle",
+			"title": "Octopus Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#octopuslight)Octopus$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:octopus_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "light_full_bottle",
+			"title": "Light Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#octopuslight)Light$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "phoenix_full_bottle",
+			"title": "Phoenix Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#phoenixrobo)Phoenix$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:phoenix_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "robot_full_bottle",
+			"title": "Robot Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#phoenixrobo)Robot$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:robot_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wolf_full_bottle",
+			"title": "Wolf Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#wolfsmapho)Wolf$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wolf_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smapho_full_bottle",
+			"title": "Smapho Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#wolfsmapho)Smapho$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smapho_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_full_bottle",
+			"title": "Unicorn Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#uniraser)Unicorn$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "keshigomu_full_bottle",
+			"title": "Keshigomu Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#uniraser)Keshigomu$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keshigomu_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rose_full_bottle",
+			"title": "Rose Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rosecopter)Rose$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rose_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "helicopter_full_bottle",
+			"title": "Helicopter Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rosecopter)Helicopter$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helicopter_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "turtle_full_bottle",
+			"title": "Turtle Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#turtlewatch)Turtle$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turtle_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "watch_full_bottle",
+			"title": "Watch Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#turtlewatch)Watch$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:watch_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuma_full_bottle",
+			"title": "Kuma Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build: Birth! KumaTV!! VS Kamen Rider Grease (2017, Hyper Battle Video)$(br2)Used to access Build's $(l:build/riders/build#kumatv)Kuma$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuma_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "televi_full_bottle",
+			"title": "Televi Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build: Birth! TeleviTV!! VS Kamen Rider Grease (2017, Hyper Battle Video)$(br2)Used to access Build's $(l:build/riders/build#kumatv)Televi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:televi_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabutomushi_full_bottle",
+			"title": "Kabutomushi Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#beetlecamera)Kabutomushi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabutomushi_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "camera_full_bottle",
+			"title": "Camera Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#beetlecamera)Camera$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:camera_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_full_bottle",
+			"title": "Spider Fullbottle",
+			"text": "Appears in:$(li)DX Pandora Panel Blue (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#spidercooler)Spider$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "reizouko_full_bottle",
+			"title": "Reizouko Fullbottle",
+			"text": "Appears in:$(li)DX Pandora Panel Red (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#spidercooler)Reizouko$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:reizouko_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dog_full_bottle",
+			"title": "Dog Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#dogmic)Dog$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dog_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mic_full_bottle",
+			"title": "Mic Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#dogmic)Mic$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mic_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "santa_claus_full_bottle",
+			"title": "Santa Claus Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#merrychristmas)Santa Claus$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:santa_claus_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cake_full_bottle",
+			"title": "Cake Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#merrychristmas)Cake$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cake_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tora_full_bottle",
+			"title": "Tora Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#toraufo)Tora$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tora_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ufo_full_bottle",
+			"title": "UFO Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#toraufo)UFO$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ufo_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujira_full_bottle",
+			"title": "Kujira Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kujirajet)Kujira$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujira_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jet_full_bottle",
+			"title": "Jet Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kujirajet)Jet$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jet_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shika_full_bottle",
+			"title": "Shika Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#shikamid)Shika$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shika_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pyramid_full_bottle",
+			"title": "Pyramid Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#shikamid)Pyramid$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pyramid_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirin_full_bottle",
+			"title": "Kirin Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kirincyclone)Kirin$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirin_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "senpuuki_full_bottle",
+			"title": "Senpuuki Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#kirincyclone)Senpuuki$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:senpuuki_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "penguin_full_bottle",
+			"title": "Penguin Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#penguinskater)Penguin$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:penguin_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skebo_full_bottle",
+			"title": "Skebo Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#penguinskater)Skebo$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skebo_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "same_full_bottle",
+			"title": "Same Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build ~The 7 Best Matches Raising the Hazard Level~ (2018, web series)$(br2)Used to access Build's $(l:build/riders/build#samebike)Same$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:same_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bike_full_bottle",
+			"title": "Bike Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build ~The 7 Best Matches Raising the Hazard Level~ (2018, web series)$(br2)Used to access Build's $(l:build/riders/build#samebike)Bike$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bike_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hachi_full_bottle",
+			"title": "Hachi Fullbottle",
+			"text": "Appears in:$(li)DX HachiMarine Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#hachimarine)Hachi$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sensuikan_full_bottle",
+			"title": "Sensuikan Fullbottle",
+			"text": "Appears in:$(li)DX HachiMarine Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#hachimarine)Sensuikan$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sensuikan_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sai_full_bottle",
+			"title": "Sai Fullbottle",
+			"text": "Appears in:$(li)DX SaiDryer Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#saidryer)Sai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sai_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dryer_full_bottle",
+			"title": "Dryer Fullbottle",
+			"text": "Appears in:$(li)DX SaiDryer Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#saidryer)Dryer$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dryer_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bat_full_bottle",
+			"title": "Bat Fullbottle",
+			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Bat$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bat_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "engine_full_bottle",
+			"title": "Engine Fullbottle",
+			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Engine$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:engine_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "obake_full_bottle",
+			"title": "Obake Fullbottle",
+			"text": "Appears in:$(li)DX MagGhost Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#magghost)Obake$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:obake_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_full_bottle",
+			"title": "Magnet Fullbottle",
+			"text": "Appears in:$(li)DX GoldScorpion Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#goldscorpion)Magnet$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scorpion_full_bottle",
+			"title": "Scorpion Fullbottle",
+			"text": "Appears in:$(li)DX GoldScorpion Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#goldscorpion)Scorpion$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scorpion_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_full_bottle",
+			"title": "Gold Fullbottle",
+			"text": "Appears in:$(li)DX GoldScorpion Fullbottle Set (2018, toyline)$(br2)Used to access Build's $(l:build/riders/build#goldscorpion)Gold$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rabbittank_sparkling_full_bottle",
+			"title": "Rabbit Tank Sparkling Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#sparkling)RabbitTank Sparkling$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/rabbittank_sparkling_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "low_rabbit_full_bottle",
+			"title": "Low Rabbit Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:low_rabbit_full_bottle",
+			"title": " ",
+			"text": "Obtained by using the $(l:build/items/golden_bangle)Golden Bangle$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fullfull_rabbit_tank_bottle",
+			"title": "FullFull Rabbit Tank Bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rabbitrabbit)RabbitRabbit$(/l) and $(l:build/riders/build#tanktank)TankTank$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/fullfull_rabbit_tank_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unfinished_genius_full_bottle",
+			"title": "Unfinished Genius Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft the $(l:build/items/fullbottles#genius_full_bottle)Genius Fullbottle$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unfinished_genius_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "genius_full_bottle",
+			"title": "Genius Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#genius)Genius$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/genius_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_rabbit_full_bottle",
+			"title": "Gold Rabbit Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rabbitdragon)Gold Rabbit$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_rabbit_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_dragon_full_bottle",
+			"title": "Silver Dragon Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Build's $(l:build/riders/build#rabbitdragon)Silver Dragon$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_dragon_full_bottle",
+			"title": " ",
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "momotaros_full_bottle",
+			"title": "Momotaros Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#den_o)Momotaros$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:momotaros_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_card_full_bottle",
+			"title": "Rider Card Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#decade)Rider Card$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_card_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tantei_full_bottle",
+			"title": "Tantei Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#double)Tantei$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tantei_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "usb_memory_full_bottle",
+			"title": "USB Memory Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#double)USB Memory$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:usb_memory_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "medal_full_bottle",
+			"title": "Medal Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#ooo)Medal$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:medal_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yuujou_full_bottle",
+			"title": "Yuujou Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#fourze)Yuujou$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yuujou_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mahoutsukai_full_bottle",
+			"title": "Mahoutsukai Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#wizard)Mahoutsukai$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mahoutsukai_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "orange_full_bottle",
+			"title": "Orange Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#gaim)Orange$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:orange_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "parka_full_bottle",
+			"title": "Parka Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Build's $(l:build/riders/build#ghost)Parka$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:parka_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doctor_full_bottle",
+			"title": "Doctor Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access Build's $(l:build/riders/build#ex_aid)Doctor$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doctor_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "game_full_bottle",
+			"title": "Game Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Used to access Build's $(l:build/riders/build#ex_aid)Game$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:game_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_magma_full_bottle",
+			"title": "Dragon Magma Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Cross-Z's $(l:build/riders/cross-z#magma)Magma$(/l) form"
+		},
+		{
+			"type": "patchouli:smelting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/dragon_magma_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "muscle_galaxy_full_bottle",
+			"title": "Muscle Galaxy Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used to access Cross-Z's $(l:build/riders/cross-z#cross_zevol)Cross-ZEvol$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/muscle_galaxy_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "north_blizzard_full_bottle",
+			"title": "North Blizzard Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/build_driver_grease)Build Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease#blizzard)Blizzard$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/north_blizzard_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grease_full_bottle",
+			"title": "Grease Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to access Grease's $(l:build/riders/grease#perfect)Perfect Kingdom$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/grease_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crocodile_crack_full_bottle",
+			"title": "Crocodile Crack Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Rogue's $(l:build/devices/sclash_driver_rogue)Sclash Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#rogue)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crocodile_crack_full_bottle",
+			"title": " ",
+			"text": "Obtained by using the $(l:build/items/fullbottles#lost_bat_full_bottle)Lost Bat Fullbottle$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "prime_rogue_full_bottle",
+			"title": "Prime Rogue Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used to craft Rogue's $(l:build/devices/build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#prime)Prime Rogue$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/prime_rogue_full_bottle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evol_x_full_bottle",
+			"title": "Evol-X Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to access Evol's $(l:build/riders/evol#x)Evol-X$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evol_x_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "killbus_spider_full_bottle",
+			"title": "Killbus Spider Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used to craft Killbus's $(l:build/devices/build_driver_killbus)Build Driver (Killbus)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:killbus_spider_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_tank_tank_full_bottle",
+			"title": "Metal TankTank Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_metal)Build Driver (Metal Build)$(/l) and $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_tank_tank_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_full_bottle",
+			"title": "Metal Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/phantom_crusher)Phantom Crushers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lost_bat_full_bottle",
+			"title": "Lost Bat Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Blood Stalk and Night Rogue's $(l:build/arsenal/transteam_gun)Transteam Gun$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_bat_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lost_cobra_full_bottle",
+			"title": "Lost Cobra Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_cobra_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/blood_stalk)Blood Stalk$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_cobra_full_bottle",
+			"title": "Lost Cobra Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_cobra_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_bat_full_bottle",
+			"title": "Lost Bat Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_bat_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_cd_full_bottle",
+			"title": "Lost CD Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_cd_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_castle_full_bottle",
+			"title": "Lost Castle Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_castle_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/castle_lost_smash)Castle Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_kuwagata_full_bottle",
+			"title": "Lost Kuwagata Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_kuwagata_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/stag_lost_smash)Kuwagata Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_fukurou_full_bottle",
+			"title": "Lost Fukurou Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_fukurou_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)$(li)$(l:build/mobs/owl_lost_smash)Fukuro Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_shimauma_full_bottle",
+			"title": "Lost Shimauma Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_shimauma_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_spanner_full_bottle",
+			"title": "Lost Spanner Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_spanner_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_hammer_full_bottle",
+			"title": "Lost Hammer Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_hammer_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_lost_hasami_full_bottle",
+			"title": "Lost Hasami Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_lost_hasami_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hard_guardian)Hard Guardians$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lost_castle_full_bottle",
+			"title": "Lost Castle Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_castle_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/castle_lost_smash)Castle Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lost_kuwagata_full_bottle",
+			"title": "Lost Kuwagata Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_kuwagata_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/stag_lost_smash)Kuwagata Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lost_fukurou_full_bottle",
+			"title": "Lost Fukurou Fullbottle",
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lost_fukurou_full_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)$(li)$(l:build/mobs/owl_lost_smash)Fukuro Lost Smash$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buttobasoul_full_bottle",
+			"title": "Buttobasoul Fullbottle",
+			"text": "Appears in:$(li)Buttobasoul Premium Set (2018, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buttobasoul_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ganbarizing_full_bottle",
+			"title": "Ganbarizing Fullbottle",
+			"text": "Appears in:$(li)Super Televi-Kun (July 2018, magazine)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ganbarizing_full_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamen_rider_full_bottle",
+			"title": "kamen_rider Fullbottle",
+			"text": "Appears in:$(li)Televi-Kun (August 2018, magazine)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_sentai_full_bottle",
+			"title": "super_sentai Fullbottle",
+			"text": "Appears in:$(li)Televi-Kun (September 2018, magazine)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_sentai_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ex_aid_full_bottle",
+			"title": "Ex-Aid Fullbottle",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ex_aid_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_full_bottle",
+			"title": "Ghost Fullbottle",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ghost_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_full_bottle",
+			"title": "Drive Fullbottle",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_full_bottle",
+			"title": "Gaim Fullbottle",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaim_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizard_full_bottle",
+			"title": "Wizard Fullbottle",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizard_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_full_bottle",
+			"title": "Fourze Fullbottle",
+			"text": "Appears in:$(li)DX 5 Legend Rider Fullbottle Set (2017, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fourze_full_bottle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

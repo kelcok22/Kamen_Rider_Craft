@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zero Damashii",
-			"text": "Accessed with the $(l:ghost/items/zero_specter_ghost_eyecon)Zero Specter Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#zero_specter_ghost_eyecon)Zero Specter Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

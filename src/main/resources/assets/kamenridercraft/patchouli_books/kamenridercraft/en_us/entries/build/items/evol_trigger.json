@@ -2,7 +2,7 @@
 	"name": "Evol Trigger",
 	"icon": "kamenridercraft:evol_trigger",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 101,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",
