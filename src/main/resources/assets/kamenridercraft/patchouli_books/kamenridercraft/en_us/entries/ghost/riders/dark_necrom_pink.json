@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dark Necrom Pink Damashii",
-			"text": "Accessed with the $(l:ghost/items/dark_necrom_pink_ghost_eyecon)Dark Necrom Ghost Eyecon (Pink)$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#dark_necrom_pink_ghost_eyecon)Dark Necrom Ghost Eyecon (Pink)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Chronus Clock",
 	"icon": "kamenridercraft:chronus_clock",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 98,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

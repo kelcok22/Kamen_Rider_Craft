@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Ore Damashii",
-			"text": "Accessed with the $(l:ghost/items/proto_ore_ghost_eyecon)Prototype Ore Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#proto_ore_ghost_eyecon)Prototype Ore Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

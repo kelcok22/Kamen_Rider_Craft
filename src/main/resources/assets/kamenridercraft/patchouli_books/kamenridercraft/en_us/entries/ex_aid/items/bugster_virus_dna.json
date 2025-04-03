@@ -2,7 +2,7 @@
 	"name": "Bugster Virus DNA",
 	"icon": "kamenridercraft:bugster_virus_dna",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

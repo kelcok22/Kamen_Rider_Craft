@@ -2,11 +2,11 @@
 	"name": "Nebula Gas Sample",
 	"icon": "kamenridercraft:nebula_gas_sample",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft $(l:build/items/smash)Smash Bottles$(/l) and the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft $(l:build/items/smash_bottle)Smash Bottles$(/l) and the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

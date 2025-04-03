@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by the $(l:build/riders/kaiser)Kaisers$(/l), $(l:build/riders/bros)Bro's$(/l), and $(l:build/riders/rogue)Kamen Rider Rogue$(/l)$(br2)Used to obtain the Kaisers' $(l:build/devices/nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Used with a $(l:build/items/gear_engine)Gear Engine$(/l) or $(l:build/items/gear_remocon)Gear Remocon$(/l) in your off-hand to obtain the Bros' $(l:build/devices/nebula_steam_gun_hell_bros)Nebulasteam Gun (Hell Bro's)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used by the $(l:build/riders/kaiser)Kaisers$(/l), $(l:build/riders/bros)Bro's$(/l), and $(l:build/riders/rogue)Kamen Rider Rogue$(/l)$(br2)Used to obtain the Kaisers' $(l:build/devices/nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Used with a $(l:build/items/gears#gear_engine)Gear Engine$(/l) or $(l:build/items/gears#gear_remocon)Gear Remocon$(/l) in your off-hand to obtain the Bros' $(l:build/devices/nebula_steam_gun_hell_bros)Nebulasteam Gun (Hell Bro's)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

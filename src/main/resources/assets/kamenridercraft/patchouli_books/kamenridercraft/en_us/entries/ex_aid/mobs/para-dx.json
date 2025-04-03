@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 45$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1-2 $(l:ex_aid/items/mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l)$(li)1 $(l:ex_aid/items/mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashat$(/l) (33.3%)$(li)1 $(l:ex_aid/items/perfect_puzzle_gasha_trophy)Perfect Puzzle Gasha Trophy$(/l) (33.3%)$(li)1 $(l:ex_aid/items/knock_out_fighter_gasha_trophy)Knock Out Fighter Gasha Trophy$(/l) (33.3%)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 45$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1-2 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l)$(li)1 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashat$(/l) (33.3%)$(li)1 $(l:ex_aid/items/gashatrophies#perfect_puzzle_gasha_trophy)Perfect Puzzle Gasha Trophy$(/l) (33.3%)$(li)1 $(l:ex_aid/items/gashatrophies#knockout_fighter_gasha_trophy)Knock Out Fighter Gasha Trophy$(/l) (33.3%)"
 		}
 	]
 }

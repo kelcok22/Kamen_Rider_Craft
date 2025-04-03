@@ -10,7 +10,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kanon Specter Damashii",
-			"text": "Accessed with the $(l:ghost/items/kanon_specter_ghost_eyecon)Kanon Specter Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#kanon_specter_ghost_eyecon)Kanon Specter Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

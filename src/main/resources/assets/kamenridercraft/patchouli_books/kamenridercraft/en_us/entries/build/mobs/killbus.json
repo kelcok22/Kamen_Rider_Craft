@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/killbus_spider_full_bottle)Killbus Spider Fullbottle$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (72.7%)$(li)1 $(l:build/items/great_dragon_evol_bottle)Great Dragon Evol Bottle$(/l) (27.3%)"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/fullbottles#killbus_spider_full_bottle)Killbus Spider Fullbottle$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (72.7%)$(li)1 $(l:build/items/evolbottles#great_dragon_evol_bottle)Great Dragon Evol Bottle$(/l) (27.3%)"
 		}
 	]
 }

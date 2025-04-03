@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RabbitTank",
-            "text": "Accessed with the $(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) and $(l:build/items/tank_full_bottle)Tank Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#rabbit_full_bottle)Rabbit Fullbottle$(/l) and $(l:build/items/fullbottles#tank_full_bottle)Tank Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RabbitTank Sparkling",
-            "text": "Accessed with the $(l:build/items/rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#rabbittank_sparkling_full_bottle)Rabbit Tank Sparkling Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RabbitRabbit",
-            "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "TankTank",
-            "text": "Accessed with the $(l:build/items/fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)FullFull Rabbit Tank Bottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Genius Form",
-            "text": "Accessed with the $(l:build/items/genius_full_bottle)Genius Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#genius_full_bottle)Genius Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RabbitDragon",
-            "text": "Accessed with the $(l:build/items/gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) and $(l:build/items/silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) and $(l:build/items/fullbottles#silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "GorillaMond",
-            "text": "Accessed with the $(l:build/items/gorilla_full_bottle)Gorilla Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#gorilla_full_bottle)Gorilla Fullbottle$(/l) and $(l:build/items/fullbottles#diamond_full_bottle)Diamond Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "HawkGatling",
-            "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/gatling_full_bottle)Gatling Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/fullbottles#gatling_full_bottle)Gatling Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "NinninComic",
-            "text": "Accessed with the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l) and $(l:build/items/comic_full_bottle)Comic Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#ninja_full_bottle)Ninja Fullbottle$(/l) and $(l:build/items/fullbottles#comic_full_bottle)Comic Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RocketPanda",
-            "text": "Accessed with the $(l:build/items/panda_full_bottle)Panda Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#panda_full_bottle)Panda Fullbottle$(/l) and $(l:build/items/fullbottles#rocket_full_bottle)Rocket Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "FireHedgehog",
-            "text": "Accessed with the $(l:build/items/harinezumi_full_bottle)Harinezumi Fullbottle$(/l) and $(l:build/items/shoubousha_full_bottle)Shoubousha Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#harinezumi_full_bottle)Harinezumi Fullbottle$(/l) and $(l:build/items/fullbottles#shoubousha_full_bottle)Shoubousha Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "LionCleaner",
-            "text": "Accessed with the $(l:build/items/lion_full_bottle)Lion Fullbottle$(/l) and $(l:build/items/soujiki_full_bottle)Soujiki Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#lion_full_bottle)Lion Fullbottle$(/l) and $(l:build/items/fullbottles#soujiki_full_bottle)Soujiki Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "KeyDragon",
-            "text": "Accessed with the $(l:build/items/dragon_full_bottle)Dragon Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#dragon_full_bottle)Dragon Fullbottle$(/l) and $(l:build/items/fullbottles#lock_full_bottle)Lock Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "KaizokuRessya",
-            "text": "Accessed with the $(l:build/items/kaizoku_full_bottle)Kaizoku Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#kaizoku_full_bottle)Kaizoku Fullbottle$(/l) and $(l:build/items/fullbottles#densha_full_bottle)Densha Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "OctopusLight",
-            "text": "Accessed with the $(l:build/items/octopus_full_bottle)Octopus Fullbottle$(/l) and $(l:build/items/light_full_bottle)Light Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#octopus_full_bottle)Octopus Fullbottle$(/l) and $(l:build/items/fullbottles#light_full_bottle)Light Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "PhoenixRobo",
-            "text": "Accessed with the $(l:build/items/phoenix_full_bottle)Phoenix Fullbottle$(/l) and $(l:build/items/robot_full_bottle)Robot Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#phoenix_full_bottle)Phoenix Fullbottle$(/l) and $(l:build/items/fullbottles#robot_full_bottle)Robot Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "SmaphoWolf",
-            "text": "Accessed with the $(l:build/items/wolf_full_bottle)Wolf Fullbottle$(/l) and $(l:build/items/smapho_full_bottle)Smapho Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#wolf_full_bottle)Wolf Fullbottle$(/l) and $(l:build/items/fullbottles#smapho_full_bottle)Smapho Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "UniRaser",
-            "text": "Accessed with the $(l:build/items/unicorn_full_bottle)Unicorn Fullbottle$(/l) and $(l:build/items/keshigomu_full_bottle)Keshigomu Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#unicorn_full_bottle)Unicorn Fullbottle$(/l) and $(l:build/items/fullbottles#keshigomu_full_bottle)Keshigomu Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "RoseCopter",
-            "text": "Accessed with the $(l:build/items/rose_full_bottle)Rose Fullbottle$(/l) and $(l:build/items/helicopter_full_bottle)Helicopter Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#rose_full_bottle)Rose Fullbottle$(/l) and $(l:build/items/fullbottles#helicopter_full_bottle)Helicopter Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "TurtleWatch",
-            "text": "Accessed with the $(l:build/items/turtle_full_bottle)Turtle Fullbottle$(/l) and $(l:build/items/watch_full_bottle)Watch Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#turtle_full_bottle)Turtle Fullbottle$(/l) and $(l:build/items/fullbottles#watch_full_bottle)Watch Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "KumaTV",
-            "text": "Accessed with the $(l:build/items/kuma_full_bottle)Kuma Fullbottle$(/l) and $(l:build/items/televi_full_bottle)Televi Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#kuma_full_bottle)Kuma Fullbottle$(/l) and $(l:build/items/fullbottles#televi_full_bottle)Televi Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "BeetleCamera",
-            "text": "Accessed with the $(l:build/items/kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) and $(l:build/items/fullbottles#camera_full_bottle)Camera Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "SpiderCooler",
-            "text": "Accessed with the $(l:build/items/spider_full_bottle)Spider Fullbottle$(/l) and $(l:build/items/reizouko_full_bottle)Reizouko Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#spider_full_bottle)Spider Fullbottle$(/l) and $(l:build/items/fullbottles#reizouko_full_bottle)Reizouko Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "DogMic",
-            "text": "Accessed with the $(l:build/items/dog_full_bottle)Dog Fullbottle$(/l) and $(l:build/items/mic_full_bottle)Mic Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#dog_full_bottle)Dog Fullbottle$(/l) and $(l:build/items/fullbottles#mic_full_bottle)Mic Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "MerryChristmas",
-            "text": "Accessed with the $(l:build/items/santa_claus_full_bottle)Santa Claus Fullbottle$(/l) and $(l:build/items/cake_full_bottle)Cake Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#santa_claus_full_bottle)Santa Claus Fullbottle$(/l) and $(l:build/items/fullbottles#cake_full_bottle)Cake Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "ToraUFO",
-            "text": "Accessed with the $(l:build/items/tora_full_bottle)Tora Fullbottle$(/l) and $(l:build/items/ufo_full_bottle)UFO Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#tora_full_bottle)Tora Fullbottle$(/l) and $(l:build/items/fullbottles#ufo_full_bottle)UFO Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "KujiraJet",
-            "text": "Accessed with the $(l:build/items/kujira_full_bottle)Kujira Fullbottle$(/l) and $(l:build/items/jet_full_bottle)Jet Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#kujira_full_bottle)Kujira Fullbottle$(/l) and $(l:build/items/fullbottles#jet_full_bottle)Jet Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "ShikaMid",
-            "text": "Accessed with the $(l:build/items/shika_full_bottle)Shika Fullbottle$(/l) and $(l:build/items/pyramid_full_bottle)Pyramid Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#shika_full_bottle)Shika Fullbottle$(/l) and $(l:build/items/fullbottles#pyramid_full_bottle)Pyramid Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "KirinCyclone",
-            "text": "Accessed with the $(l:build/items/kirin_full_bottle)Kirin Fullbottle$(/l) and $(l:build/items/senpuuki_full_bottle)Senpuuki Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#kirin_full_bottle)Kirin Fullbottle$(/l) and $(l:build/items/fullbottles#senpuuki_full_bottle)Senpuuki Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "PenguinSkater",
-            "text": "Accessed with the $(l:build/items/penguin_full_bottle)Penguin Fullbottle$(/l) and $(l:build/items/skebo_full_bottle)Skebo Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#penguin_full_bottle)Penguin Fullbottle$(/l) and $(l:build/items/fullbottles#skebo_full_bottle)Skebo Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -515,7 +515,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "SameBike",
-            "text": "Accessed with the $(l:build/items/same_full_bottle)Same Fullbottle$(/l) and $(l:build/items/bike_full_bottle)Bike Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#same_full_bottle)Same Fullbottle$(/l) and $(l:build/items/fullbottles#bike_full_bottle)Bike Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -529,7 +529,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "HachiMarine",
-            "text": "Accessed with the $(l:build/items/hachi_full_bottle)Hachi Fullbottle$(/l) and $(l:build/items/sensuikan_full_bottle)Sensuikan Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#hachi_full_bottle)Hachi Fullbottle$(/l) and $(l:build/items/fullbottles#sensuikan_full_bottle)Sensuikan Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -543,7 +543,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "SaiDryer",
-            "text": "Accessed with the $(l:build/items/sai_full_bottle)Sai Fullbottle$(/l) and $(l:build/items/dryer_full_bottle)Dryer Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#sai_full_bottle)Sai Fullbottle$(/l) and $(l:build/items/fullbottles#dryer_full_bottle)Dryer Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -557,7 +557,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "BatEngine",
-            "text": "Accessed with the $(l:build/items/bat_full_bottle)Bat Fullbottle$(/l) and $(l:build/items/engine_full_bottle)Engine Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#bat_full_bottle)Bat Fullbottle$(/l) and $(l:build/items/fullbottles#engine_full_bottle)Engine Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -571,7 +571,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "MagGhost",
-            "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/magnet_full_bottle)Magnet Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/fullbottles#magnet_full_bottle)Magnet Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "GoldScorpion",
-            "text": "Accessed with the $(l:build/items/scorpion_full_bottle)Scorpion Fullbottle$(/l) and $(l:build/items/gold_full_bottle)Gold Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#scorpion_full_bottle)Scorpion Fullbottle$(/l) and $(l:build/items/fullbottles#gold_full_bottle)Gold Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -599,7 +599,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Den-O Form",
-            "text": "Accessed with the $(l:build/items/momotaros_full_bottle)Momotaros Fullbottle$(/l) and $(l:build/items/densha_full_bottle)Densha Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#momotaros_full_bottle)Momotaros Fullbottle$(/l) and $(l:build/items/fullbottles#densha_full_bottle)Densha Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -613,7 +613,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Decade Form",
-            "text": "Accessed with the $(l:build/items/rider_card_full_bottle)Rider Card Fullbottle$(/l) and $(l:build/items/camera_full_bottle)Camera Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#rider_card_full_bottle)Rider Card Fullbottle$(/l) and $(l:build/items/fullbottles#camera_full_bottle)Camera Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -627,7 +627,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Double Form",
-            "text": "Accessed with the $(l:build/items/tantei_full_bottle)Tantei Fullbottle$(/l) and $(l:build/items/usb_memory_full_bottle)USB Memory Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#tantei_full_bottle)Tantei Fullbottle$(/l) and $(l:build/items/fullbottles#usb_memory_full_bottle)USB Memory Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -641,7 +641,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "OOO Form",
-            "text": "Accessed with the $(l:build/items/taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/medal_full_bottle)Medal Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#taka_full_bottle)Taka Fullbottle$(/l) and $(l:build/items/fullbottles#medal_full_bottle)Medal Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -655,7 +655,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Fourze Form",
-            "text": "Accessed with the $(l:build/items/yuujou_full_bottle)Yuujou Fullbottle$(/l) and $(l:build/items/rocket_full_bottle)Rocket Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#yuujou_full_bottle)Yuujou Fullbottle$(/l) and $(l:build/items/fullbottles#rocket_full_bottle)Rocket Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -669,7 +669,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Wizard Form",
-            "text": "Accessed with the $(l:build/items/mahoutsukai_full_bottle)Mahoutsukai Fullbottle$(/l) and $(l:build/items/diamond_full_bottle)Diamond Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#mahoutsukai_full_bottle)Mahoutsukai Fullbottle$(/l) and $(l:build/items/fullbottles#diamond_full_bottle)Diamond Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -683,7 +683,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Gaim Form",
-            "text": "Accessed with the $(l:build/items/orange_full_bottle)Orange Fullbottle$(/l) and $(l:build/items/lock_full_bottle)Lock Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#orange_full_bottle)Orange Fullbottle$(/l) and $(l:build/items/fullbottles#lock_full_bottle)Lock Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -697,7 +697,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Ghost Form",
-            "text": "Accessed with the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/parka_full_bottle)Parka Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l) and $(l:build/items/fullbottles#parka_full_bottle)Parka Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",
@@ -711,7 +711,7 @@
 			"scale": -1,
 			"offset": 0.1,
             "name": "Ex-Aid Form",
-            "text": "Accessed with the $(l:build/items/doctor_full_bottle)Doctor Fullbottle$(/l) and $(l:build/items/game_full_bottle)Game Fullbottle$(/l)"
+            "text": "Accessed with the $(l:build/items/fullbottles#doctor_full_bottle)Doctor Fullbottle$(/l) and $(l:build/items/fullbottles#game_full_bottle)Game Fullbottle$(/l)"
         },
 		{
 			"type": "patchouli:text",

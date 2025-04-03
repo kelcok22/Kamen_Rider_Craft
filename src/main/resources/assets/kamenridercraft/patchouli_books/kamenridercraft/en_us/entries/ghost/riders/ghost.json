@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ore Damashii",
-			"text": "Accessed with the $(l:ghost/items/ore_ghost_eyecon)Ore$(/l) or $(l:ghost/items/ghost_ghost_eyecon)Ghost Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ore$(/l) or $(l:ghost/items/ghost_eyecons#ghost_ghost_eyecon)Ghost Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Musashi Damashii",
-			"text": "Accessed with the $(l:ghost/items/musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Edison Damashii",
-			"text": "Accessed with the $(l:ghost/items/edison_ghost_eyecon)Edison Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)Edison Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Robin Damashii",
-			"text": "Accessed with the $(l:ghost/items/robin_ghost_eyecon)Robin Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)Robin Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Newton Damashii",
-			"text": "Accessed with the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Billy the Kid Damashii",
-			"text": "Accessed with the $(l:ghost/items/billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beethoven Damashii",
-			"text": "Accessed with the $(l:ghost/items/beethoven_ghost_eyecon)Beethoven Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#beethoven_ghost_eyecon)Beethoven Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Benkei Damashii",
-			"text": "Accessed with the $(l:ghost/items/benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#benkei_ghost_eyecon)Benkei Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tutankhamun Damashii",
-			"text": "Accessed with the $(l:ghost/items/tutankhamun_ghost_eyecon)Tutankhamun Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#tutankhamun_ghost_eyecon)Tutankhamun Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Nobunaga Damashii",
-			"text": "Accessed with the $(l:ghost/items/nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#nobunaga_ghost_eyecon)Nobunaga Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Houdini Damashii",
-			"text": "Accessed with the $(l:ghost/items/houdini_ghost_eyecon)Houdini Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#houdini_ghost_eyecon)Houdini Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Grimm Damashii",
-			"text": "Accessed with the $(l:ghost/items/grimm_ghost_eyecon)Grimm Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#grimm_ghost_eyecon)Grimm Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sanzo Damashii",
-			"text": "Accessed with the $(l:ghost/items/sanzo_ghost_eyecon)Sanzo Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#sanzo_ghost_eyecon)Sanzo Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Toucon Boost Damashii",
-			"text": "Accessed with the $(l:ghost/items/boost_ghost_eyecon)Toucon Boost$(/l) or $(l:ghost/items/tousan_ghost_eyecon)Tousan Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)Toucon Boost$(/l) or $(l:ghost/items/ghost_eyecons#tousan_ghost_eyecon)Tousan Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Goemon Damashii",
-			"text": "Accessed with the $(l:ghost/items/goemon_ghost_eyecon)Goemon Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#goemon_ghost_eyecon)Goemon Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryoma Damashii",
-			"text": "Accessed with the $(l:ghost/items/ryoma_ghost_eyecon)Ryoma Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ryoma_ghost_eyecon)Ryoma Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Himiko Damashii",
-			"text": "Accessed with the $(l:ghost/items/himiko_ghost_eyecon)Himiko Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#himiko_ghost_eyecon)Himiko Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mugen Damashii",
-			"text": "Accessed with the $(l:ghost/items/mugen_ghost_eyecon)Mugen Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#mugen_ghost_eyecon)Mugen Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tenkatoitsu Damashii",
-			"text": "Accessed with the $(l:ghost/items/tenkatoitsu_ghost_eyecon)Tenka Toitsu Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#tenkatoitsu_ghost_eyecon)Tenka Toitsu Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ikkyu Damashii",
-			"text": "Accessed with the $(l:ghost/items/ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)Ikkyu Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Darwin Damashii",
-			"text": "Accessed with the $(l:ghost/items/darwin_ghost_eyecon)Darwin Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#darwin_ghost_eyecon)Darwin Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shinsengumi Damashii",
-			"text": "Accessed with the $(l:ghost/items/shinsengumi_ghost_eyecon)Shinsengumi Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#shinsengumi_ghost_eyecon)Shinsengumi Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Pythagoras Damashii",
-			"text": "Accessed with the $(l:ghost/items/pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)Pythagoras Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Santa Damashii",
-			"text": "Accessed with the $(l:ghost/items/santa_ghost_eyecon)Santa Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#santa_ghost_eyecon)Santa Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kamehameha Damashii",
-			"text": "Accessed with the $(l:ghost/items/kamehameha_ghost_eyecon)Kamehameha Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#kamehameha_ghost_eyecon)Kamehameha Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Galileo Damashii",
-			"text": "Accessed with the $(l:ghost/items/galileo_ghost_eyecon)Galileo Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#galileo_ghost_eyecon)Galileo Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shakespeare Damashii",
-			"text": "Accessed with the $(l:ghost/items/shakespeare_ghost_eyecon)Shakespeare Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#shakespeare_ghost_eyecon)Shakespeare Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Columbus Damashii",
-			"text": "Accessed with the $(l:ghost/items/columbus_ghost_eyecon)Columbus Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#columbus_ghost_eyecon)Columbus Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Nightingale Damashii",
-			"text": "Accessed with the $(l:ghost/items/nightingale_ghost_eyecon)Nightingale Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#nightingale_ghost_eyecon)Nightingale Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Special Ore Damashii",
-			"text": "Accessed with the $(l:ghost/items/special_ore_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#special_ore_ghost_eyecon)Special Ore Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ore Specter Damashii",
-			"text": "Accessed with the $(l:ghost/items/ore_specter_ghost_eyecon)Ore Specter Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ore_specter_ghost_eyecon)Ore Specter Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Da Vinci Damashii",
-			"text": "Accessed with the $(l:ghost/items/da_vinci_ghost_eyecon)Da Vinci Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#da_vinci_ghost_eyecon)Da Vinci Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Napoleon Damashii",
-			"text": "Accessed with the $(l:ghost/items/napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)Napoleon Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ichigo Damashii",
-			"text": "Accessed with the $(l:ghost/items/fourtyfive_showa_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Ichigou Side)$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#fourtyfive_showa_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Ichigou Side)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Showa Damashii",
-			"text": "Accessed with the $(l:ghost/items/showa_ghost_eyecon)Showa Rider 45 Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#showa_ghost_eyecon)Showa Rider 45 Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -515,7 +515,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Damashii",
-			"text": "Accessed with the $(l:ghost/items/kuuga_ghost_eyecon)Kuuga Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#kuuga_ghost_eyecon)Kuuga Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -529,7 +529,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Agito Damashii",
-			"text": "Accessed with the $(l:ghost/items/agito_ghost_eyecon)Agito Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#agito_ghost_eyecon)Agito Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -543,7 +543,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Damashii",
-			"text": "Accessed with the $(l:ghost/items/ryuki_ghost_eyecon)Ryuki Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ryuki_ghost_eyecon)Ryuki Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -557,7 +557,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Faiz Damashii",
-			"text": "Accessed with the $(l:ghost/items/faiz_ghost_eyecon)Faiz Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#faiz_ghost_eyecon)Faiz Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -571,7 +571,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blade Damashii",
-			"text": "Accessed with the $(l:ghost/items/blade_ghost_eyecon)Blade Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#blade_ghost_eyecon)Blade Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Damashii",
-			"text": "Accessed with the $(l:ghost/items/hibiki_ghost_eyecon)Hibiki Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#hibiki_ghost_eyecon)Hibiki Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -599,7 +599,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kabuto Damashii",
-			"text": "Accessed with the $(l:ghost/items/kabuto_ghost_eyecon)Kabuto Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#kabuto_ghost_eyecon)Kabuto Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -613,7 +613,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-O Damashii",
-			"text": "Accessed with the $(l:ghost/items/den_o_ghost_eyecon)Den-O Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#den_o_ghost_eyecon)Den-O Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -627,7 +627,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Damashii",
-			"text": "Accessed with the $(l:ghost/items/kiva_ghost_eyecon)Kiva Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#kiva_ghost_eyecon)Kiva Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -641,7 +641,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Damashii",
-			"text": "Accessed with the $(l:ghost/items/decade_ghost_eyecon)Decade Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#decade_ghost_eyecon)Decade Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -655,7 +655,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Double Damashii",
-			"text": "Accessed with the $(l:ghost/items/double_ghost_eyecon)Double Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#double_ghost_eyecon)Double Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -669,7 +669,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOO Damashii",
-			"text": "Accessed with the $(l:ghost/items/ooo_ghost_eyecon)OOO Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ooo_ghost_eyecon)OOO Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -683,7 +683,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fourze Damashii",
-			"text": "Accessed with the $(l:ghost/items/fourze_ghost_eyecon)Fourze Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#fourze_ghost_eyecon)Fourze Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -697,7 +697,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Damashii",
-			"text": "Accessed with the $(l:ghost/items/wizard_ghost_eyecon)Wizard Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#wizard_ghost_eyecon)Wizard Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -711,7 +711,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gaim Damashii",
-			"text": "Accessed with the $(l:ghost/items/gaim_ghost_eyecon)Gaim Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#gaim_ghost_eyecon)Gaim Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -725,7 +725,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Drive Damashii",
-			"text": "Accessed with the $(l:ghost/items/drive_ghost_eyecon)Drive Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#drive_ghost_eyecon)Drive Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -739,7 +739,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Heisei Damashii",
-			"text": "Accessed with the $(l:ghost/items/fourtyfive_heisei_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Heisei Side)$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#fourtyfive_heisei_ghost_eyecon)Kamen Rider 45 Ghost Eyecon (Heisei Side)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -753,7 +753,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ex-Aid Damashii",
-			"text": "Accessed with the $(l:ghost/items/ex_aid_ghost_eyecon)Ex-Aid Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ex_aid_ghost_eyecon)Ex-Aid Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

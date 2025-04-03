@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 35$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)3 $(l:build/items/smash_bottle)Smash Bottles$(/l) (80%)$(li)1 $(l:build/items/rabbit_full_bottle)Rabbit Fullbottle$(/l) (10%)$(li)1 $(l:build/items/tank_full_bottle)Tank Fullbottle$(/l) (10%)"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 35$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)3 $(l:build/items/smash_bottle)Smash Bottles$(/l) (80%)$(li)1 $(l:build/items/fullbottles#rabbit_full_bottle)Rabbit Fullbottle$(/l) (10%)$(li)1 $(l:build/items/fullbottles#tank_full_bottle)Tank Fullbottle$(/l) (10%)"
 		}
 	]
 }

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ore_ghost_eyecon)Ore Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/specter_ghost_eyecon)Specter Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/edison_ghost_eyecon)Edison Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/robin_ghost_eyecon)Robin Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l) (5%)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l)$(li)1 $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecon$(/l) (40%)$(li)1 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ore Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#specter_ghost_eyecon)Specter Ghost Eyecon$(/l) (20%)$(li)1 $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)Edison Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)Robin Ghost Eyecon$(/l) (5%)$(li)1 $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l) (5%)"
 		}
 	]
 }

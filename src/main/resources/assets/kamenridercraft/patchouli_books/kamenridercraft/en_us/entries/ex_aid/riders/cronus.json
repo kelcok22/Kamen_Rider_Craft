@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chronicle Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gamedeus Cronus",
-			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat_gamedeus)Kamen Rider Chronicle Gashat (Gamedeus)$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#kamen_rider_chronicle_gashat_gamedeus)Kamen Rider Chronicle Gashat (Gamedeus)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chronicle Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#kamen_rider_chronicle_gashat)Kamen Rider Chronicle Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

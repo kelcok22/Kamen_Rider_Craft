@@ -1,0 +1,58 @@
+{
+	"name": "Gears",
+	"icon": "kamenridercraft:gear_engine_red",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_engine_red",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine_red",
+			"text": "Drops from:$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_remocon_blue",
+			"title": "Gear Remocon (Blue)",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_remocon_blue",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_engine",
+			"title": "Gear Engine",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/engine_bros)Engine Bros$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_remocon",
+			"title": "Gear Remocon",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_remocon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
+		}
+	]
+}

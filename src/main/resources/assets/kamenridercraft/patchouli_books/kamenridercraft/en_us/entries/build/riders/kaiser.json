@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l)"
+			"text": "Accessed with the $(l:build/items/gears#gear_remocon_blue)Gear Remocon (Blue)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l)"
+			"text": "Accessed with the $(l:build/items/gears#gear_engine_red)Gear Engine (Red)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed by shift-clicking the $(l:build/items/gear_engine_red)Gear Engine (Red)$(/l) or $(l:build/items/gear_remocon_blue)Gear Remocon (Blue)$(/l) with the other Gear in your inventory"
+			"text": "Accessed by shift-clicking the $(l:build/items/gears#gear_engine_red)Gear Engine (Red)$(/l) or $(l:build/items/gears#gear_remocon_blue)Gear Remocon (Blue)$(/l) with the other Gear in your inventory"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dark Necrom Blue Damashii",
-			"text": "Accessed with the $(l:ghost/items/dark_necrom_blue_ghost_eyecon)Dark Necrom Ghost Eyecon (Blue)$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#dark_necrom_blue_ghost_eyecon)Dark Necrom Ghost Eyecon (Blue)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Billy the Kid Damashii",
-			"text": "Accessed with the $(l:ghost/items/billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
+			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#billy_the_kid_ghost_eyecon)Billy the Kid Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",

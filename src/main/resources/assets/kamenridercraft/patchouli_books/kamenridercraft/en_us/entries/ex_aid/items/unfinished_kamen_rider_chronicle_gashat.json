@@ -2,7 +2,7 @@
 	"name": "Unfinished Chronicle Gashat",
 	"icon": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 27,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

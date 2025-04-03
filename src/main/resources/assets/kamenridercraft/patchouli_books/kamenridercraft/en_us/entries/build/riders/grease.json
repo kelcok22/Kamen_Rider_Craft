@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Grease Blizzard",
-			"text": "Accessed with the $(l:build/items/north_blizzard_full_bottle)North Blizzard Fullbottle$(/l)"
+			"text": "Accessed with the $(l:build/items/fullbottles#north_blizzard_full_bottle)North Blizzard Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Grease Perfect Kingdom",
-			"text": "Accessed with the $(l:build/items/grease_full_bottle)Grease Fullbottle$(/l)"
+			"text": "Accessed with the $(l:build/items/fullbottles#grease_full_bottle)Grease Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

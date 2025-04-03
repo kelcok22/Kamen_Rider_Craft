@@ -2,7 +2,7 @@
 	"name": "Empty Bottle",
 	"icon": "kamenridercraft:full_bottle",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

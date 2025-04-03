@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "boost",
 			"title": "Boost",
-			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l)"
+			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -37,7 +37,7 @@
 			"type": "patchouli:text",
 			"anchor": "slash",
 			"title": "Slash",
-			"text": "With this effect, you will gain Strength equal to this effect's amplifier when using a sword.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_slash_card)AttackRide Decade Slash$(/l) card$(li)Use the $(l:ghost/items/musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)$(li)Use the $(l:gavv/items/zakuzakuchips_gochizo)Zakuzakuchips Gochizo$(/l)"
+			"text": "With this effect, you will gain Strength equal to this effect's amplifier when using a sword.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_slash_card)AttackRide Decade Slash$(/l) card$(li)Use the $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)$(li)Use the $(l:gavv/items/zakuzakuchips_gochizo)Zakuzakuchips Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -97,7 +97,7 @@
 			"type": "patchouli:text",
 			"anchor": "low_gravity",
 			"title": "Low Gravity",
-			"text": "This effect decreases the amount of gravity you experience, with higher amplifiers carrying a greater decrease.$(br2)Examples for how to get this effect:$(li)Travel to $(l:fourze/dimensions/the_moon)the Moon$(/l)$(li)Use the $(l:fourze/items/astroswitches#parachute_switch)Parachute Switch$(/l)$(li)Use the $(l:ghost/items/newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
+			"text": "This effect decreases the amount of gravity you experience, with higher amplifiers carrying a greater decrease.$(br2)Examples for how to get this effect:$(li)Travel to $(l:fourze/dimensions/the_moon)the Moon$(/l)$(li)Use the $(l:fourze/items/astroswitches#parachute_switch)Parachute Switch$(/l)$(li)Use the $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)Newton Ghost Eyecon$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -241,7 +241,7 @@
 			"type": "patchouli:text",
 			"anchor": "stealth",
 			"title": "Stealth",
-			"text": "This effect allows you to turn invisible when sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/ninja_full_bottle)Ninja Fullbottle$(/l)"
+			"text": "This effect allows you to turn invisible when sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l)$(li)Use the $(l:build/items/fullbottles#ninja_full_bottle)Ninja Fullbottle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -337,13 +337,13 @@
 			"type": "patchouli:text",
 			"anchor": "ghost",
 			"title": "Ghost",
-			"text": "With this effect, you will be able to float upward slowly by sneaking. You will also never feel hungry, as ghosts can't eat dinner.$(br2)Examples for how to get this effect:$(li)Transform into $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l)$(li)Use the $(l:build/items/obake_full_bottle)Obake Fullbottle$(/l)$(li)Use the $(l:saber/items/ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book$(/l)"
+			"text": "With this effect, you will be able to float upward slowly by sneaking. You will also never feel hungry, as ghosts can't eat dinner.$(br2)Examples for how to get this effect:$(li)Transform into $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l)$(li)Use the $(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l)$(li)Use the $(l:saber/items/ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "bugster_virus",
 			"title": "Bugster Virus",
-			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/proto_mighty_action_x_gashat)Proto Gashat$(/l)"
+			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -355,7 +355,7 @@
 			"type": "patchouli:text",
 			"anchor": "save",
 			"title": "Save",
-			"text": "This effect protects you from negative status effects, include the Explode and Reset effects.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/items/hyper_muteki_gashat)Hyper Muteki Gashat$(/l)"
+			"text": "This effect protects you from negative status effects, include the Explode and Reset effects.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/items/rider_gashats#hyper_muteki_gashat)Hyper Muteki Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

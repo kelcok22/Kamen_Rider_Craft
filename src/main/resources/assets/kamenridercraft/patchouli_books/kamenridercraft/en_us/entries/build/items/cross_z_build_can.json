@@ -2,7 +2,7 @@
 	"name": "Cross-Z Build Can",
 	"icon": "kamenridercraft:cross_z_build_can",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 76,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

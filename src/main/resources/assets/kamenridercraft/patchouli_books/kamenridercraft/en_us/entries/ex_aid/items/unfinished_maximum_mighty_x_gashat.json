@@ -2,7 +2,7 @@
 	"name": "Unfinished Maximum Gashat",
 	"icon": "kamenridercraft:unfinished_maximum_mighty_x_gashat",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 56,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

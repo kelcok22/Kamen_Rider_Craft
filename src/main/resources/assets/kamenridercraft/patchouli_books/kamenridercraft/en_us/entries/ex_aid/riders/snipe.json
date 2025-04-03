@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Gamer Level 1",
-			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Combat Shooting Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hunter Shooting Gamer Level 5 (Full Dragon)",
-			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hunter Shooting Gamer Level 5",
-			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Simulation Gamer Level 50",
-			"text": "Accessed with the $(l:ex_aid/items/bang_bang_simulation_gashat)Bang Bang Simulations Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bang_bang_simulation_gashat)Bang Bang Simulations Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Xevious Shooting Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/xevious_gashat)Xevious Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#xevious_gashat)Xevious Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tank Shooting Gamer Level 4",
-			"text": "Accessed with the $(l:ex_aid/items/bang_bang_tank_gashat)Bang Bang Tank Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bang_bang_tank_gashat)Bang Bang Tank Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Combat Shooting Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Hunter Shooting Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Gamer Level 1 (Proto)",
-			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Gamer Level 2 (Proto)",
-			"text": "Accessed with the $(l:ex_aid/items/proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

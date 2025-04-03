@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bike Gamer Level 1",
-			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bike Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chambara Bike Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hunter Bike Gamer Level 5",
-			"text": "Accessed with the $(l:ex_aid/items/drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bike Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/bakusou_bike_gashat_turbo)Bakusou Bike Gashat (Lazer Turbo)$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat_turbo)Bakusou Bike Gashat (Lazer Turbo)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Sports Bike Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Combat Bike Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Chambara Bike Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Proto Hunter Bike Gamer Level 0",
-			"text": "Accessed with the $(l:ex_aid/items/proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_drago_knight_hunter_z_gashat)Proto Drago Knight Hunter Z Gashat$(/l) while sneaking"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bike Gamer Level 1 (Proto)",
-			"text": "Accessed with the $(l:ex_aid/items/proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

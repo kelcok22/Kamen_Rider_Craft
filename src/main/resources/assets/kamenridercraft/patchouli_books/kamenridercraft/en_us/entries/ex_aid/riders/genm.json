@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Action Gamer Level 1",
-			"text": "Accessed with the $(l:ex_aid/items/proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Action Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sports Action Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/shakariki_sports_gashat)Shakariki Sports Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)Shakariki Sports Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zombie Gamer Level X",
-			"text": "Accessed with the $(l:ex_aid/items/dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Action Gamer Level 0 (Proto Origin)",
-			"text": "Accessed with the $(l:ex_aid/items/proto_mighty_action_x_gashat_origin)Proto Mighty Action X Origin Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin)Proto Mighty Action X Origin Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zombie Action Gamer Level X-0",
-			"text": "Accessed with the $(l:ex_aid/items/dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) as $(l:ex_aid/riders/genm#action_0)Action Gamer Level 0 (Proto Origin)$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) as $(l:ex_aid/riders/genm#action_0)Action Gamer Level 0 (Proto Origin)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Totema Exterior",
-			"text": "Accessed with $(l:ex_aid/items/the_unbeatable_game)The Unbeatable Game Gashat$(/l)"
+			"text": "Accessed with $(l:ex_aid/items/rider_gashats#the_unbeatable_game)The Unbeatable Game Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "God Maximum Gamer Level Billion",
-			"text": "Accessed with the $(l:ex_aid/items/god_maximum_mighty_x_gashat)God Maximum Mighty X Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#god_maximum_mighty_x_gashat)God Maximum Mighty X Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "God Maximum Gamer Level Billion (Unequipped)",
-			"text": "Accessed with the $(l:ex_aid/items/god_maximum_mighty_x_gashat)God Maximum Mighty X Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#god_maximum_mighty_x_gashat)God Maximum Mighty X Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Musou Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/genm_musou_gashat)Genm Musou Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#genm_musou_gashat)Genm Musou Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hyper Fumetsu Gamer",
-			"text": "Accessed with the $(l:ex_aid/items/hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) while having the $(l:ex_aid/items/maximum_zombie_gashat)Maximum Zombie Gashat$(/l) in your inventory"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper Fumetsu Gashat$(/l) while having the $(l:ex_aid/items/rider_gashats#maximum_zombie_gashat)Maximum Zombie Gashat$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Robot Action Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/gekitotsu_robots_gashat)Gekitotsu Robots Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#gekitotsu_robots_gashat)Gekitotsu Robots Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Action Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/doremifa_beat_gashat)DoReMiFa Beat Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#doremifa_beat_gashat)DoReMiFa Beat Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Combat Action Gamer Level 3",
-			"text": "Accessed with the $(l:ex_aid/items/jet_combat_gashat)Jet Combat Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Agito Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/agito_of_the_sun_gashat)Agito of the Sun Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#agito_of_the_sun_gashat)Agito of the Sun Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Faiz Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/moshi_moshi_faiz_gashat)Moshi Moshi Faiz Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#moshi_moshi_faiz_gashat)Moshi Moshi Faiz Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blade Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/king_of_poker_blade_gashat)King of Poker Blade Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#king_of_poker_blade_gashat)King of Poker Blade Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/taiko_master_hibiki_gashat)Taiko Master Hibiki Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#taiko_master_hibiki_gashat)Taiko Master Hibiki Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-O Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/time_express_den_o_gashat)Time Express Den-O Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#time_express_den_o_gashat)Time Express Den-O Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOO Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/jungle_ooo_gashat)Jungle OOO Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#jungle_ooo_gashat)Jungle OOO Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fourze Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/space_galaxy_fourze_gashat)Space Galaxy Fourze Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#space_galaxy_fourze_gashat)Space Galaxy Fourze Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Gamer Level 1",
-			"text": "Accessed with the $(l:ex_aid/items/magic_the_wizard_gashat)Magic The Wizard Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#magic_the_wizard_gashat)Magic The Wizard Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Gamer Level 2",
-			"text": "Accessed with the $(l:ex_aid/items/magic_the_wizard_gashat)Magic The Wizard Gashat$(/l)"
+			"text": "Accessed with the $(l:ex_aid/items/rider_gashats#magic_the_wizard_gashat)Magic The Wizard Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",

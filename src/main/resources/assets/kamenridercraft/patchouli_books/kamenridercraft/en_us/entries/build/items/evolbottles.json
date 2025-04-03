@@ -1,0 +1,71 @@
+{
+	"name": "Evolbottles",
+	"icon": "kamenridercraft:rider_system_evol_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "great_dragon_evol_bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Cross-Z's $(l:build/riders/cross-z#great)Great Cross-Z$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:great_dragon_evol_bottle",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Drops from:$(li)$(l:build/mobs/killbus)Kamen Rider Killbus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_evol_bottle",
+			"title": "Cobra Evol Bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Evol's $(l:build/devices/evol_driver)Evol Driver$(/l)$(br2)Used to access Evol's $(l:build/riders/evol#cobra)Cobra$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_evol_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_system_evol_bottle",
+			"title": "Rider System Evol Bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Evol's $(l:build/devices/evol_driver)Evol Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_system_evol_bottle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_evol_bottle",
+			"title": "Dragon Evol Bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Evol's $(l:build/riders/evol#dragon)Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_evol_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rabbit_evol_bottle",
+			"title": "Rabbit Evol Bottle",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to access Evol's $(l:build/riders/evol#rabbit)Rabbit$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_evol_bottle",
+			"title": " ",
+			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)"
+		}
+	]
+}

@@ -1,0 +1,889 @@
+{
+	"name": "Ghost Eyecons",
+	"icon": "kamenridercraft:ore_ghost_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ore_ghost_eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ore_ghost_eyecon",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_ghost_eyecon",
+			"title": "Toucon Boost Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#toucon_boost)Toucon Boost Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boost_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mugen_ghost_eyecon",
+			"title": "Mugen Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#mugen)Mugen Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mugen_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "specter_ghost_eyecon",
+			"title": "Specter Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Specter's $(l:ghost/devices/specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/specter#specter)Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deep_specter_ghost_eyecon",
+			"title": "Deep Specter Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to access Specter's $(l:ghost/riders/specter#deep_specter)Deep Specter$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deep_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sin_specter_ghost_eyecon",
+			"title": "Sin Specter Ghost Eyecon",
+			"text": "Appears in:$(li)Ghost RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Used to access Specter's $(l:ghost/riders/specter#sin_specter)Sin Specter$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sin_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "necrom_ghost_eyecon",
+			"title": "Necrom Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Necrom's $(l:ghost/devices/mega_ulorder)Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/necrom#necrom)Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:necrom_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yujou_burst_ghost_eyecon",
+			"title": "Yujou Burst Ghost Eyecon",
+			"text": "Appears in:$(li)Ghost RE:BIRTH: Kamen Rider Specter (2017, V-Cinema film)$(br2)Used to access Necrom's $(l:ghost/riders/necrom#yujou_burst)Yujou Burst Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yujou_burst_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_ghost_eyecon",
+			"title": "Dark Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Ghost's $(l:ghost/devices/dark_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/dark_ghost#dark_ghost)Dark Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_specter_ghost_eyecon",
+			"title": "Zero Specter Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Zero Specter's $(l:ghost/devices/zero_specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_specter)Zero Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zero_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_ore_ghost_eyecon",
+			"title": "Prototype Ore Ghost Eyecon",
+			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/zero_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_ghost)Zero Ghost Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kanon_specter_ghost_eyecon",
+			"title": "Kanon Specter Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Used to craft Kanon Specter's $(l:ghost/devices/kanon_specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/kanon_specter)Kanon Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kanon_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_necrom_red_ghost_eyecon",
+			"title": "Dark Necrom Ghost Eyecon (Red)",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Red's $(l:ghost/devices/proto_mega_ulorder_red)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_red)Dark Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_necrom_red_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_necrom_blue_ghost_eyecon",
+			"title": "Dark Necrom Ghost Eyecon (Blue)",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Blue's $(l:ghost/devices/proto_mega_ulorder_blue)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_blue)Dark Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_necrom_blue_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_necrom_yellow_ghost_eyecon",
+			"title": "Dark Necrom Ghost Eyecon (Yellow)",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Yellow's $(l:ghost/devices/proto_mega_ulorder_yellow)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_yellow)Dark Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_necrom_yellow_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_necrom_pink_ghost_eyecon",
+			"title": "Dark Necrom Ghost Eyecon (Pink)",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Dark Necrom Pink's $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_pink)Dark Necrom Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_necrom_pink_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "new_ore_ghost_eyecon",
+			"title": "New Ore Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Final Stage (2017, stage show)$(br2)Used to craft New Ghost's $(l:ghost/devices/new_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/new_ghost)New Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:new_ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "musashi_ghost_eyecon",
+			"title": "Musashi Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#musashi)Musashi Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:musashi_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "edison_ghost_eyecon",
+			"title": "Edison Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#edison)Edison Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:edison_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "robin_ghost_eyecon",
+			"title": "Robin Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#robin)Robin Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:robin_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "newton_ghost_eyecon",
+			"title": "Newton Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#newton)Newton Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:newton_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "billy_the_kid_ghost_eyecon",
+			"title": "Billy the Kid Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#billy_the_kid)Billy the Kid Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:billy_the_kid_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beethoven_ghost_eyecon",
+			"title": "Beethoven Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#beethoven)Beethoven Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beethoven_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "benkei_ghost_eyecon",
+			"title": "Benkei Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#benkei)Benkei Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:benkei_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "goemon_ghost_eyecon",
+			"title": "Goemon Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#goemon)Goemon Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:goemon_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryoma_ghost_eyecon",
+			"title": "Ryoma Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#ryoma)Ryoma Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ryoma_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "himiko_ghost_eyecon",
+			"title": "Himiko Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/ghost#himiko)Himiko Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:himiko_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tutankhamun_ghost_eyecon",
+			"title": "Tutankhamun Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/specter#tutankhamun)Tutankhamun Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tutankhamun_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nobunaga_ghost_eyecon",
+			"title": "Nobunaga Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/specter#nobunaga)Nobunaga Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nobunaga_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "houdini_ghost_eyecon",
+			"title": "Houdini Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/specter#houdini)Houdini Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:houdini_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grimm_ghost_eyecon",
+			"title": "Grimm Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/necrom#grimm)Grimm Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:grimm_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sanzo_ghost_eyecon",
+			"title": "Sanzo Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost (2013, TV show)$(br2)Used to access $(l:ghost/riders/necrom#sanzo)Sanzo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sanzo_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "napoleon_ghost_eyecon",
+			"title": "Napoleon Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to access $(l:ghost/riders/dark_ghost#napoleon)Napoleon Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:napoleon_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "darwin_ghost_eyecon",
+			"title": "Darwin Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to access $(l:ghost/riders/ghost#darwin)Darwin Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:darwin_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ikkyu_ghost_eyecon",
+			"title": "Ikkyu Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/ghost#ikkyu)Ikkyu Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikkyu_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pythagoras_ghost_eyecon",
+			"title": "Pythagoras Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Used to access $(l:ghost/riders/specter#pythagoras)Pythagoras Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pythagoras_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "santa_ghost_eyecon",
+			"title": "Santa Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#santa)Santa Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:santa_ghost_eyecon",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nightingale_ghost_eyecon",
+			"title": "Nightingale Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#nightingale)Nightingale Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nightingale_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "special_ore_ghost_eyecon",
+			"title": "Special Ore Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#special_ore)Special Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:special_ore_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ore_specter_ghost_eyecon",
+			"title": "Ore Specter Ghost Eyecon",
+			"text": "Appears in:$(li)DX Ore Specter Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#ore_specter)Ore Specter Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ore_specter_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ishinomori_ghost_eyecon",
+			"title": "Ishinomori Ghost Eyecon",
+			"text": "Appears in:$(li)DX Ishinomori Ghost Eyecon (2016, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ishinomori_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "columbus_ghost_eyecon",
+			"title": "Columbus Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#columbus)Columbus Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:columbus_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shakespeare_ghost_eyecon",
+			"title": "Shakespeare Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#shakespeare)Shakespeare Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shakespeare_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamehameha_ghost_eyecon",
+			"title": "Kamehameha Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#kamehameha)Kamehameha Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamehameha_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "galileo_ghost_eyecon",
+			"title": "Galileo Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#galileo)Galileo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:galileo_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "da_vinci_ghost_eyecon",
+			"title": "Da Vinci Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Used to access $(l:ghost/riders/ghost#da_vinci)Da Vinci Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:da_vinci_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tenkatoitsu_ghost_eyecon",
+			"title": "Tenkatoitsu Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access $(l:ghost/riders/ghost#tenkatoitsu)Tenkatoitsu Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tenkatoitsu_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinsengumi_ghost_eyecon",
+			"title": "Shinsengumi Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Final Stage (2017, stage show)$(br2)Used to access $(l:ghost/riders/ghost#shinsengumi)Shinsengumi Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shinsengumi_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "showa_ghost_eyecon",
+			"title": "Showa Rider 45 Ghost Eyecon",
+			"text": "Appears in:$(li)Showa Rider 45 Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#showa)Showa Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:showa_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ghost_eyecon",
+			"title": "Kuuga Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#kuuga)Kuuga Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/kuuga_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_ghost_eyecon",
+			"title": "Agito Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#agito)Agito Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/agito_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_ghost_eyecon",
+			"title": "Ryuki Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#ryuki)Ryuki Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/ryuki_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_ghost_eyecon",
+			"title": "Faiz Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#faiz)Faiz Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/faiz_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_ghost_eyecon",
+			"title": "Blade Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#blade)Blade Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/blade_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_ghost_eyecon",
+			"title": "Hibiki Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#hibiki)Hibiki Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/hibiki_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_ghost_eyecon",
+			"title": "Kabuto Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#kabuto)Kabuto Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/kabuto_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_ghost_eyecon",
+			"title": "Den-O Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#den_o)Den-O Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/den_o_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_ghost_eyecon",
+			"title": "Kiva Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#kiva)Kiva Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/kiva_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_ghost_eyecon",
+			"title": "Decade Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#decade)Decade Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/decade_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_ghost_eyecon",
+			"title": "W Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/specter#double)Double Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/double_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_ghost_eyecon",
+			"title": "OOO Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/specter#ooo)OOO Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/ooo_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_ghost_eyecon",
+			"title": "Fourze Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/specter#fourze)Fourze Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/fourze_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizard_ghost_eyecon",
+			"title": "Wizard Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#wizard)Wizard Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/wizard_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_ghost_eyecon",
+			"title": "Gaim Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#gaim)Gaim Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/gaim_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_ghost_eyecon",
+			"title": "Drive Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access $(l:ghost/riders/ghost#drive)Drive Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/drive_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_ghost_eyecon",
+			"title": "Ghost Ghost Eyecon",
+			"text": "Appears in:$(li)DX Ghost Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/ghost_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ex_aid_ghost_eyecon",
+			"title": "Ex-Aid Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Used to access $(l:ghost/riders/ghost#ex_aid)Ex-Aid Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/ex_aid_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unfinished_fourtyfive_heisei_ghost_eyecon",
+			"title": "Unfinished Kamen Rider 45 Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/unfinished_fourtyfive_heisei_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourtyfive_heisei_ghost_eyecon",
+			"title": "Kamen Rider 45 Ghost Eyecon (Heisei Side)",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#heisei)Heisei Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/fourtyfive_heisei_ghost_eyecon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourtyfive_showa_ghost_eyecon",
+			"title": "Kamen Rider 45 Ghost Eyecon (Ichigou Side)",
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#ichigo)Ichigo Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fourtyfive_showa_ghost_eyecon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tousan_ghost_eyecon",
+			"title": "Tousan Ghost Eyecon",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Used to access Ghost's $(l:ghost/riders/ghost#toucon_boost)Toucon Boost Damashii$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tousan_ghost_eyecon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:misc/blocks/deepslate_ghost_eyecon_stone)Deepslate Ghost Eyecon Ore$(/l)"
+		}
+	]
+}

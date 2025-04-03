@@ -2,7 +2,7 @@
 	"name": "Unfinished Gashat",
 	"icon": "kamenridercraft:blank_gashat",
 	"category": "kamenridercraft:ex_aid/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

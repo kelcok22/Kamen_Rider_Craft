@@ -1,0 +1,175 @@
+{
+	"name": "Gashatrophies",
+	"icon": "kamenridercraft:mighty_action_x_gasha_trophy",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_action_x_gasha_trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_action_x_gasha_trophy",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taddle_quest_gasha_trophy",
+			"title": "Taddle Quest Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_quest_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bang_bang_shooting_gasha_trophy",
+			"title": "Bang Bang Shooting Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bang_bang_shooting_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakusou_bike_gasha_trophy",
+			"title": "Bakusou Bike Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakusou_bike_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/rideplayer)Ride-Players$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gekitotsu_robots_gasha_trophy",
+			"title": "Gekitotsu Robots Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gekitotsu_robots_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doremifa_beat_gasha_trophy",
+			"title": "DoReMiFa Beat Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doremifa_beat_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jet_combat_gasha_trophy",
+			"title": "Jet Combat Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jet_combat_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giri_giri_chambara_gasha_trophy",
+			"title": "Giri Giri Chambara Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giri_giri_chambara_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shakariki_sports_gasha_trophy",
+			"title": "Shakariki Sports Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:ex_aid/items/chronus_clock)Chronus Clock$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shakariki_sports_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/genm_mob)Kamen Rider Genm$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drago_knight_hunter_z_gasha_trophy",
+			"title": "Drago Knight Hunter Z Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drago_knight_hunter_z_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfect_puzzle_gasha_trophy",
+			"title": "Perfect Puzzle Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfect_puzzle_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knockout_fighter_gasha_trophy",
+			"title": "Knock Out Fighter Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knockout_fighter_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toki_meki_crisis_gasha_trophy",
+			"title": "Toki Meki Crisis Gasha Trophy",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toki_meki_crisis_gasha_trophy",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l)"
+		}
+	]
+}

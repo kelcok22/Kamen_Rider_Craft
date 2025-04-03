@@ -9,8 +9,11 @@
 			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Can store up to 10 stacks of Fullbottles"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:build/pandora_panel_seito"
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pandora_panel_seito",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

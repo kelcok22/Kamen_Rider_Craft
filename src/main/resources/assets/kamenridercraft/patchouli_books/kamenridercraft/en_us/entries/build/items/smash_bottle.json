@@ -2,7 +2,7 @@
 	"name": "Smash Bottle",
 	"icon": "kamenridercraft:smash_bottle",
 	"category": "kamenridercraft:build/items",
-	"sortnum": 4,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",
