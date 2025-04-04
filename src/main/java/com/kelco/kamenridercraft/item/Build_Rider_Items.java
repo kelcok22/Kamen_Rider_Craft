@@ -39,6 +39,7 @@ public class Build_Rider_Items {
 
 	public static List<Item> NEED_ITEM_BI_KAISER= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_HELL_BROS= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_EVOLTO= new ArrayList<Item>();
 
 	public static final DeferredItem<Item> BUILD_LOGO = ITEMS.register("build_logo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
@@ -715,7 +716,7 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).model_has_different_name("evol_trigger").has_basic_model());
+					.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).AddNeedItemList(NEED_ITEM_EVOLTO).model_has_different_name("evol_trigger").has_basic_model());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_black_hole","evol","evol_driver_belt_b",
@@ -803,34 +804,34 @@ public class Build_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false))
-					.AddToList(RiderTabs.BUILD_TAB_ITEM));
+					.AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_BAT_FULL_BOTTLE= ITEMS.register("black_lost_bat_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_CD_FULL_BOTTLE= ITEMS.register("black_lost_cd_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_CASTLE_FULL_BOTTLE= ITEMS.register("black_lost_castle_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_KUWAGATA_FULL_BOTTLE= ITEMS.register("black_lost_kuwagata_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_FUKUROU_FULL_BOTTLE= ITEMS.register("black_lost_fukurou_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_SHIMAUMA_FULL_BOTTLE= ITEMS.register("black_lost_shimauma_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_SPANNER_FULL_BOTTLE= ITEMS.register("black_lost_spanner_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_HAMMER_FULL_BOTTLE= ITEMS.register("black_lost_hammer_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> BLACK_LOST_HASAMI_FULL_BOTTLE= ITEMS.register("black_lost_hasami_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(NEED_ITEM_EVOLTO));
 
 	public static final DeferredItem<Item> LOST_CASTLE_FULL_BOTTLE= ITEMS.register("lost_castle_full_bottle",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
