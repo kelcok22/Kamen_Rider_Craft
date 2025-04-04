@@ -1,0 +1,1271 @@
+{
+	"name": "Vistamps",
+	"icon": "kamenridercraft:rex_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Revi's $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Used to access Revi's $(l:revice/riders/revi#rex)Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#rex)Rex Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barid_rex_vistamp_closed",
+			"title": "Unfinished Barid Rex Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+            "title": " ",
+			"recipe": "kamenridercraft:revice/barid_rex_vistamp_closed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barid_rex_vistamp",
+			"title": "Barid Rex Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#barid_rex)Barid Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#barid_rex)Barid Rex Genome$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+            "title": " ",
+			"recipe": "kamenridercraft:revice/barid_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "volcano_vistamp",
+			"title": "Volcano Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#volcano_rex)Volcano Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#volcano_rex)Volcano Rex Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:volcano_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rolling_vistamp",
+			"title": "Rolling Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revice's $(l:revice/riders/revi#jack_revice)Jack Revice$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rolling_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thunder_gale_vistamp",
+			"title": "Thunder Gale Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revice's $(l:revice/riders/revi#thunder_gale)Thunder Gale$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thunder_gale_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#rolling_vistamp)Rolling Vistamp$(/l) in your inventory$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giffard_rex_vistamp",
+			"title": "Giffard Rex Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#ultimate)Ultimate Revi$(/l) form$(br2)Used to access Vice's $(l:revice/riders/vice#ultimate)Ultimate Vice$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/giffard_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fifty_gale_vistamp",
+			"title": "Fifty Gale Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used to access Igarashi's $(l:revice/riders/revi#fifty_gale)Fifty Gale$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/fifty_gale_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_spino_vistamp",
+			"title": "Gold Spino Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Becoming Rider No. 2~♪ (2022, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#gold_spino)Gold Spino Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#gold_spino)Gold Spino Genome$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/gold_spino_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "true_rex_vistamp",
+			"title": "True Rex Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Used to access Revice's $(l:revice/riders/revi#revice_shin)Revice Shin$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/true_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eagle_vistamp",
+			"title": "Eagle Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#eagle)Eagle Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#eagle)Eagle Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eagle_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_vistamp",
+			"title": "Mammoth Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#mammoth)Mammoth Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#mammoth)Mammoth Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "megalodon_vistamp",
+			"title": "Megalodon Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#megalodon)Megalodon Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#megalodon)Megalodon Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:megalodon_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ptera_vistamp",
+			"title": "Ptera Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#ptera)Ptera Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_vistamp",
+			"title": "Lion Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#lion)Lion Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#lion)Lion Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jackal_vistamp",
+			"title": "Jackal Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#jackal)Jackal Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#jackal)Jackal Genome$(/l)$(br2)Used to access Live's $(l:revice/riders/live#jackal)Jackal Genome$(/l)$(br2)Used to access Evil's $(l:revice/riders/evil#jackal)Jackal Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jackal_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kong_vistamp",
+			"title": "Kong Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#kong)Kong Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kong)Kong Genome$(/l)$(br2)Used to access Destream's $(l:revice/riders/destream#kong)Kong Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kong_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamakiri_vistamp",
+			"title": "Kamakiri Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#kamakiri)Kamakiri Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kamakiri)Kamakiri Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamakiri_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "brachio_vistamp",
+			"title": "Brachio Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#brachio)Brachio Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#brachio)Brachio Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brachio_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_batta_vistamp",
+			"title": "Neo Batta Vistamp",
+			"text": "Appears in:$(li)Kamen Rider: Beyond Generations (2021, movie)$(br2)Used to access Revi's $(l:revice/riders/revi#neo_batta)Neo Batta Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#neo_batta)Neo Batta Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_batta_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kangaroo_vistamp",
+			"title": "Kangaroo Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#kangaroo)Kangaroo Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kangaroo)Kangaroo Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kangaroo_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirin_vistamp",
+			"title": "Kirin Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#kirin)Kirin Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#kirin)Kirin Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirin_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "niwatori_vistamp",
+			"title": "Niwatori Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#niwatori)Niwatori Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#niwatori)Niwatori Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:niwatori_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "funkorogashi_vistamp",
+			"title": "Funkorogashi Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)$(br2)Used to access Revi's $(l:revice/riders/revi#funkorogashi)Funkorogashi Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#funkorogashi)Funkorogashi Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:funkorogashi_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bat_vistamp",
+			"title": "Bat Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Live's $(l:revice/devices/two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Used to access Live's $(l:revice/riders/live#bat)Bat Genome$(/l)$(br2)Used to access Evil's $(l:revice/riders/evil#bat)Bat Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bat_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crow_vistamp",
+			"title": "Crow Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crow_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "holy_wing_vistamp",
+			"title": "Holy Wing Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Live's $(l:revice/riders/live#holy_live)Holy Live$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_wing_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfect_wing_vistamp",
+			"title": "Perfect Wing Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Live's $(l:revice/riders/live#evilytylive)EvilytyLive$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/perfect_wing_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mega_bat_vistamp",
+			"title": "Mega Bat Vistamp",
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to craft Live's $(l:revice/devices/revice_driver_live)Revice Driver (Live)$(/l)$(br2)Used to craft Evil's $(l:revice/devices/revice_driver_evil)Revice Driver (Evil)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mega_bat_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_vistamp",
+			"title": "Spider Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons's $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Used to access Demons's $(l:revice/riders/demons#spider)Spider Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giant_spider_vistamp",
+			"title": "Giant Spider Vistamp",
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to access Demons's $(l:revice/riders/demons#giant_spider)Giant Spider Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giant_spider_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_vistamp",
+			"title": "Kuwagata Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Over Demons's $(l:revice/devices/over_demons_driver)Demons Driver (Over Demons)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giraffa_vistamp",
+			"title": "Giraffa Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Get Over Demons's $(l:revice/devices/get_over_demons_driver)Demons Driver (Get Over Demons)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giraffa_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "batta_vistamp",
+			"title": "Batta Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#batta)Batta Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mogura_vistamp",
+			"title": "Mogura Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#mogura)Mogura Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mogura_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scorpion_vistamp",
+			"title": "Scorpion Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#scorpion)Scorpion Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scorpion_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "anomalocaris_vistamp",
+			"title": "Anomalocaris Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#anomalocaris)Anomalocaris Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:anomalocaris_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_vistamp",
+			"title": "Cobra Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Jeanne's $(l:revice/devices/libera_driver)Libera Driver$(/l)$(br2)Used to access Jeanne's $(l:revice/riders/jeanne#cobra)Cobra Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_vistamp",
+			"title": "Kujaku Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujaku_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "turtle_vistamp",
+			"title": "Turtle Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turtle_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hashibiroko_vistamp",
+			"title": "Hashibiroko Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hashibiroko_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tricera_vistamp",
+			"title": "Tricera Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Jeanne & Kamen Rider Aguilera with Girls Remix (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_cobra_vistamp",
+			"title": "King Cobra Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Jeanne's $(l:revice/riders/jeanne#invincible)Invincible Jeanne$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/king_cobra_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_vistamp",
+			"title": "Kabuto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Vail's $(l:revice/devices/vail_driver)Vail Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crimson_vail_vistamp",
+			"title": "Crimson Vail Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Crimson Vail's $(l:revice/devices/vail_belt)Crimson Vail Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crimson_vail_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hercules_vistamp",
+			"title": "Hercules Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Destream's $(l:revice/devices/destream_driver)Destream Driver$(/l)$(br2)Used to access Destream's $(l:revice/riders/destream#hercules)Hercules Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hercules_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crocodile_vistamp",
+			"title": "Crocodile Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#crocodile)Crocodile Genomix$(/l)$(br2)Used to access Destream's $(l:revice/riders/destream#crocodile)Crocodile Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crocodile_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "komodo_dragon_vistamp",
+			"title": "Komodo Dragon Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Demons's $(l:revice/riders/demons#komodo_dragon)Komodo Dragon Genomix$(/l)$(br2)Used to access Destream's $(l:revice/riders/destream#komodo_dragon)Komodo Dragon Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:komodo_dragon_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blood_vade_vistamp",
+			"title": "Blood Vade Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Final Stage (2022, stage show)$(br2)Used to craft Blood Vade's $(l:revice/devices/vade_belt)Blood Vade Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_vade_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_trooper_vistamp",
+			"title": "Trooper Spider Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper a's $(l:revice/devices/demons_driver_demons_trooper_a)Demons Driver (Trooper a)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_trooper_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_trooper_vistamp",
+			"title": "Trooper Kuwagata Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper b's $(l:revice/devices/demons_driver_demons_trooper_b)Demons Driver (Trooper b)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_trooper_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "queen_bee_vistamp",
+			"title": "Queen Bee Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Aguilera's $(l:revice/devices/week_endriver)Week Endriver (Aguilera)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:queen_bee_vistamp",
+			"title": " ",
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_queen_bee_vistamp)Proto Queen Bee Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffalo_vistamp",
+			"title": "Buffalo Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Jeanne & Kamen Rider Aguilera with Girls Remix (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffalo_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "twin_chimera_vistamp",
+			"title": "Twin Chimera Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used to craft Chimera's $(l:revice/devices/chimera_driver)Chimera Driver (Chimera)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/twin_chimera_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tri_chimera_vistamp",
+			"title": "Tri Chimera Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used to craft Daimon's $(l:revice/devices/chimera_driver_daimon)Chimera Driver (Daimon)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/tri_chimera_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "juuga_vistamp",
+			"title": "Juuga Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Juuga's $(l:revice/devices/juuga_driver)Juuga Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/juuga_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kraken_vistamp",
+			"title": "Kraken Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used to craft Orteca's $(l:revice/devices/demons_driver_orteca)Demons Driver (Orteca)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_vistamp",
+			"title": " ",
+			"text": "Obtained by using a $(l:revice/items/vistamps#daiouika_vistamp)Daiouika Proto Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_vistamp",
+			"title": "Condor Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access Revi's $(l:revice/riders/revi#condor)Condor Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#condor)Condor Genome$(/l)$(br2)Used to access Demons's $(l:revice/riders/demons#condor)Condor Genomix$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condor_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "white_leo_vistamp",
+			"title": "White Leo Vistamp",
+			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Used to access Revi's $(l:revice/riders/revi#white_leo)White Leo Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#white_leo)White Leo Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_leo_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_vistamp",
+			"title": "Quetzalcoatlus Vistamp",
+			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Used to access Revi's $(l:revice/riders/revi#quetzalcoatlus)Quetzalcoatlus Genome$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kajiki_vistamp",
+			"title": "Kajiki Vistamp",
+			"text": "Appears in:$(li)DX Kajiki Vistamp (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kajiki_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hedgehog_vistamp",
+			"title": "Hedgehog Vistamp",
+			"text": "Appears in:$(li)DX Hedgehog Vistamp (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hedgehog_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_crab_vistamp",
+			"title": "King Crab Vistamp",
+			"text": "Appears in:$(li)DX Vistamp Selection 04 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_crab_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kurosai_vistamp",
+			"title": "Kurosai Vistamp",
+			"text": "Appears in:$(li)DX Vistamp Selection 04 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kurosai_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "octopus_vistamp",
+			"title": "Octopus Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:octopus_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oomukade_vistamp",
+			"title": "Oomukade Vistamp",
+			"text": "Appears in:$(li)DX Vistamp Selection 04 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oomukade_vistamp",
+			"title": " ",
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiouika_vistamp",
+			"title": "Daiouika Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daiouika_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wolf_vistamp",
+			"title": "Wolf Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wolf_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "planarian_vistamp",
+			"title": "Planarian Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:planarian_vistamp",
+			"title": " ",
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chameleon_vistamp",
+			"title": "Chameleon Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chameleon_vistamp",
+			"title": " ",
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_chameleon_vistamp)Proto Chameleon Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_planarian_vistamp",
+			"title": "Planarian Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_planarian_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_chameleon_vistamp",
+			"title": "Chameleon Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_chameleon_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sabertiger_vistamp",
+			"title": "Sabertiger Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sabertiger_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_queen_bee_vistamp",
+			"title": "Queen Bee Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_queen_bee_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cheetah_vistamp",
+			"title": "Cheetah Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cheetah_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "elephant_vistamp",
+			"title": "Elephant Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elephant_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shark_vistamp",
+			"title": "Shark Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shark_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "koala_vistamp",
+			"title": "Koala Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:koala_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raflessia_vistamp",
+			"title": "Rafflesia Proto Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raflessia_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oblivion_stamp",
+			"title": "Oblivian Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oblivion_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deadman_stamp",
+			"title": "Deadman Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deadman_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dopant_stamp",
+			"title": "Dopant Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dopant_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "inves_stamp",
+			"title": "Inves Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:inves_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_stamp",
+			"title": "Roidmude Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smash_stamp",
+			"title": "Smash Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smash_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "worm_stamp",
+			"title": "Worm Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:worm_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gurongi_stamp",
+			"title": "Gurongi Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gurongi_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fangire_stamp",
+			"title": "Fangire Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fangire_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zodiarts_stamp",
+			"title": "Zodiarts Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zodiarts_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "orphnoch_stamp",
+			"title": "Orphnoch Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice: The Mystery (2022, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:orphnoch_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_metal",
+			"title": "Rex Vistamp (Black Metal Plating)",
+			"text": "Appears in:$(li)DX Rex Vistamp (Black Metal Plating ver.) (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_metal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_christmas",
+			"title": "Rex Vistamp (Christmas)",
+			"text": "Appears in:$(li)Kamen Rider Revice Charadeco Cake (2021, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_christmas",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_theme",
+			"title": "Rex Vistamp (Theme Song)",
+			"text": "Appears in:$(li)DX Rex Vistamp (Theme Song ver.) (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_theme",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toysaurus_vistamp",
+			"title": "Toysaurus Vistamp",
+			"text": "Appears in:$(li)DX Toysaurus Vistamp (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toysaurus_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "telemag_rex_vistamp",
+			"title": "Rex Vistamp (Glitter)",
+			"text": "Appears in:$(li)Rex Vistamp (Telemaga Original Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:telemag_rex_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_vistamp_china",
+			"title": "Mammoth Vistamp (Chinese Exclusive)",
+			"text": "Appears in:$(li)DX Mammoth Vistamp (Chinese Exclusive Ver.) (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_vistamp_china",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giff_junior_vistamp",
+			"title": "Giff Junior Vistamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_junior_vistamp",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giff_stamp",
+			"title": "Giff Stamp",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diablo_stamp",
+			"title": "Diablo Stamp",
+			"text": "Appears in:$(li)Kamen Rider: Beyond Generations (2021, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:diablo_stamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"name": "Miridewatches",
+	"icon": "kamenridercraft:woz_miridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "woz_miridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Woz's $(l:zi_o/devices/beyondriver)Beyondriver$(/l)$(br2)Used to access Woz's $(l:zi_o/riders/woz#woz)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:woz_miridewatch",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinobi_miridewatch",
+			"title": "Shinobi Miridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Woz's $(l:zi_o/riders/woz#shinobi)Futurering Shinobi$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shinobi_miridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quiz_miridewatch",
+			"title": "Quiz Miridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Woz's $(l:zi_o/riders/woz#quiz)Futurering Quiz$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quiz_miridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kikai_miridewatch",
+			"title": "Kikai Miridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Woz's $(l:zi_o/riders/woz#kikai)Futurering Kikai$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kikai_miridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginga_miridewatch",
+			"title": "Ginga Miridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Woz's $(l:zi_o/riders/woz#ginga)GingaFinaly$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_miridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)"
+		}
+	]
+}

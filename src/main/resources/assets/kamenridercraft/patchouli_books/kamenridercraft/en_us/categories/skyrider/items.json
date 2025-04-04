@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:skyrider/main",
-    "name": "Skyrider Rider Items",
-    "description": "All Skyrider-related items that are neither an armor piece nor part of an arsenal.",
+    "name": "Tornado Core",
+    "description": "",
     "icon": "kamenridercraft:tornado_core",
     "sortnum": 2
 }

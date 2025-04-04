@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:black_sun/items/king_stone_sun)Sun Kingstone$(/l)"
+			"text": "Accessed with the $(l:black_sun/items/kingstones#king_stone_sun)Sun Kingstone$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Glowing Eyes",
-			"text": "Accessed with the $(l:black_sun/items/glowing_king_stone_sun)Glowing Sun Kingstone$(/l)"
+			"text": "Accessed with the $(l:black_sun/items/kingstones#glowing_king_stone_sun)Glowing Sun Kingstone$(/l)"
 		},
 		{
 			"type": "patchouli:text",

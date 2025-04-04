@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Used to craft the $(l:amazons/devices/armor)Amazons armor$(/l)$(li)Used on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l) to obtain the $(l:amazons/items/omega_amazon_cell_vial)Omega$(/l), $(l:amazons/items/alpha_amazon_cell_vial)Alpha$(/l), $(l:amazons/items/sigma_amazon_cell_vial)Sigma$(/l), or $(l:amazons/items/neo_amazon_cell_vial)Neo$(/l) cell variants"
+			"text": "$(li)Used to craft the $(l:amazons/devices/armor)Amazons armor$(/l)$(li)Used on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l) to obtain the $(l:amazons/items/amazon_cell_vials#omega_amazon_cell_vial)Omega$(/l), $(l:amazons/items/amazon_cell_vials#alpha_amazon_cell_vial)Alpha$(/l), $(l:amazons/items/amazon_cell_vials#sigma_amazon_cell_vial)Sigma$(/l), or $(l:amazons/items/amazon_cell_vials#neo_amazon_cell_vial)Neo$(/l) cell variants"
 		},
 		{
 			"type": "patchouli:spotlight",

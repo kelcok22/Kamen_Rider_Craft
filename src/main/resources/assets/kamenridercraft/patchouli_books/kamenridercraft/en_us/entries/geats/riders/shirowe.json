@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/shirowe_rider_core_id)Kamen Rider Shirowe Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#shirowe_rider_core_id)Kamen Rider Shirowe Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Arrow",
-			"text": "Accessed with the $(l:geats/items/arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",

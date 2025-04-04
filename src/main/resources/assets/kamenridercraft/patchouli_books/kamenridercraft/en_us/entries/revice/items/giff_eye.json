@@ -2,7 +2,7 @@
 	"name": "Giff's eye",
 	"icon": "kamenridercraft:giff_eye",
 	"category": "kamenridercraft:revice/items",
-	"sortnum": 99,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

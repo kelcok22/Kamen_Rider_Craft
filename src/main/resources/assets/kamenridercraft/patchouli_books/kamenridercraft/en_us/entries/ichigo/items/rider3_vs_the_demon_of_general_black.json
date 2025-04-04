@@ -2,7 +2,7 @@
 	"name": "Rider 3 vs. The Demon of General Black Manga",
 	"icon": "kamenridercraft:rider3_vs_the_demon_of_general_black",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 8,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

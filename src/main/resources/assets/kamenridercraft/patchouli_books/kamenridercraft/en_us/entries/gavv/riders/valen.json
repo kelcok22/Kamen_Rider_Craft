@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chocodon Form",
-			"text": "Accessed with the $(l:gavv/items/chocodon_gochizo)Chocodon Gochizo$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#chocodon_gochizo)Chocodon Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Doumaru Form",
-			"text": "Accessed with the $(l:gavv/items/doumaru_gochizo)Doumaru Gochizo$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#doumaru_gochizo)Doumaru Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bushel Form",
-			"text": "Accessed with the $(l:gavv/items/bushel_gochizo)Bushel Gochizo$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#bushel_gochizo)Bushel Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Tirol Form",
-			"text": "Accessed with the $(l:gavv/items/tirolchocolate_gochizo_variety)Tirol Chocolate Gochizo (Variety Pack ver.)$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#tirolchocolate_gochizo_variety)Tirol Chocolate Gochizo (Variety Pack ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

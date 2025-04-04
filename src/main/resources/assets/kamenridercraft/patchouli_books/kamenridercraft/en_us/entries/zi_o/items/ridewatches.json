@@ -1,0 +1,950 @@
+{
+	"name": "Ridewatches",
+	"icon": "kamenridercraft:zi_o_ridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zi_o_ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Zi-O's $(l:zi_o/devices/ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#zi_o)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zi_o_ridewatch",
+			"text": "Obtained by right-clicking a $(l:zi_o/items/blank_watch)Blank Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_ridewatch",
+			"title": "Decade Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Decade's $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/decade_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zi_o_ii_ridewatch",
+			"title": "Zi-O II Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ii)Zi-O II$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/zi_o_ii_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zi_o_trinity_ridewatch",
+			"title": "Zi-O Trinity Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#trinity)Zi-OTrinity$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/zi_o_trinity_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grand_zi_o_ridewatch",
+			"title": "Grand Zi-O Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/grand_zi_o_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ohma_zi_o_ridewatch",
+			"title": "Ohma Zi-O Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ohmaform)OhmaForm$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ohma_zi_o_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geiz_ridewatch",
+			"title": "Geiz Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Geiz's $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#geiz)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geiz_ridewatch",
+			"title": " ",
+			"text": "Obtained by right-clicking a $(l:zi_o/items/blank_watch)Blank Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geiz_revive_ridewatch",
+			"title": "Geiz Revive Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#revive_goretsu)Revive$(/l) $(l:zi_o/riders/geiz#revive_shippu)forms$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/geizrevive_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geiz_majesty_ridewatch",
+			"title": "Geiz Majesty Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#majesty)GeizMajesty$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/geiz_majesty_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tsukuyomi_ridewatch",
+			"title": "Tsukuyomi Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Tsukuyomi's $(l:zi_o/devices/ziku_driver_tsukuyomi)Ziku Driver (Tsukuyomi)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsukuyomi_ridewatch",
+			"title": " ",
+			"text": "Obtained by right-clicking a $(l:zi_o/items/blank_watch)Blank Ridewatch$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zi_o_mirror_ridewatch",
+			"title": "Mirror Zi-O Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Mirror Zi-O's $(l:zi_o/devices/ziku_driver_zi_o_mirror)Ziku Driver (Mirror Zi-O)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/zi_o_mirror_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barlckxs_ridewatch",
+			"title": "Barlckxs Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to craft Barlckxs's $(l:zi_o/devices/ziku_driver_barlckxs)Ziku Driver (Barlckxs)$(/l)$(br2)Used to access Barlckxs's $(l:zi_o/riders/barlckxs#barlckxs)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:barlckxs_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zonjis_ridewatch",
+			"title": "Zonjis Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to craft Zonjis's $(l:zi_o/devices/ziku_driver_zonjis)Ziku Driver (Zonjis)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zonjis_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zamonas_ridewatch",
+			"title": "Zamonas Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to craft Zamonas's $(l:zi_o/devices/ziku_driver_zamonas)Ziku Driver (Zamonas)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zamonas_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ridewatch",
+			"title": "Kuuga Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kuuga)KuugaArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kuuga_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_ridewatch",
+			"title": "Agito Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#agito)AgitoArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/agito_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_ridewatch",
+			"title": "Ryuki Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ryuki)RyukiArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ryuki_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_ridewatch",
+			"title": "Faiz Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#faiz)FaizArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/faiz_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_ridewatch",
+			"title": "Blade Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#blade)BladeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/blade_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_ridewatch",
+			"title": "Hibiki Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#hibiki)HibikiArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/hibiki_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_ridewatch",
+			"title": "Kabuto Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kabuto)KabutoArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kabuto_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_ridewatch",
+			"title": "Den-O Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#den_o)Den-OArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/den_o_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_ridewatch",
+			"title": "Kiva Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kiva)KivaArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kiva_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "w_ridewatch",
+			"title": "W Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#w)WArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/w_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_ridewatch",
+			"title": "OOO Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ooo)OOOArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ooo_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_ridewatch",
+			"title": "Fourze Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#fourze)FourzeArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/fourze_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizard_ridewatch",
+			"title": "Wizard Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#wizard)WizardArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/wizard_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_ridewatch",
+			"title": "Gaim Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#gaim)GaimArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/gaim_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_ridewatch",
+			"title": "Drive Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#drive)DriveArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/drive_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_ridewatch",
+			"title": "Ghost Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ghost)GhostArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ghost_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ex_aid_ridewatch",
+			"title": "Ex-Aid Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ex_aid)Ex-AidArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ex_aid_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_ridewatch",
+			"title": "Build Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#build)BuildArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/build_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_one_ridewatch",
+			"title": "Zero-One Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/zero_one_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saber_ridewatch",
+			"title": "Saber Ridewatch",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Zi-O VS Decade -7 of Zi-O!-$(br2)Used to access $(l:zi_o/riders/zi_o#decade_saber)DecadeArmor Saber Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/saber_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revi_ridewatch",
+			"title": "Revi Ridewatch",
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/revi_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vice_ridewatch",
+			"title": "Vice Ridewatch",
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/vice_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_ridewatch",
+			"title": "Geats Ridewatch",
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/geats_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gotchard_ridewatch",
+			"title": "Gotchard Ridewatch",
+			"text": "Appears in:$(li)DX Gotchard & Geats & Revice Ridewatch (2023, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/gotchard_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_alpha_ridewatch",
+			"title": "Amazon Alpha Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/amazon_alpha_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_omega_ridewatch",
+			"title": "Amazon Omega Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/amazon_omega_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_neo_ridewatch",
+			"title": "Amazon Neo Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/amazon_neo_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "genm_ridewatch",
+			"title": "Genm Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#genm)GenmArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/genm_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "woz_ridewatch",
+			"title": "Woz Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#woz)WozArmor$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/woz_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bibiru_geiz_ridewatch",
+			"title": "Bibiru Geiz Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider BiBiBi no BibillGeiz (2019, Hyper Battle Video)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#bibill)BibillArmor$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bibiru_geiz_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ultimate_ridewatch",
+			"title": "Kuuga Ultimate Form Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 1 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kuuga_ultimate_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_shining_ridewatch",
+			"title": "Agito Shining Form Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 1 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/agito_shining_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_survive_ridewatch",
+			"title": "Ryuki Survive Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 1 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ryuki_survive_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_blaster_ridewatch",
+			"title": "Faiz Blaster Form Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 2 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/faiz_blaster_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_king_ridewatch",
+			"title": "Blade King Form Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 2 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/blade_king_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_armed_ridewatch",
+			"title": "Armed Hibiki Ridewatch",
+			"text": "Appears in:$(li)DX Ridewatch Set Vol. 2 (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/hibiki_armed_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_hyper_ridewatch",
+			"title": "Kabuto Hyper Form Ridewatch",
+			"text": "Appears in:$(li)DX Kabuto Hyper Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kabuto_hyper_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_liner_ridewatch",
+			"title": "Den-O Liner Form Ridewatch",
+			"text": "Appears in:$(li)DX Den-O Liner Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/den_o_liner_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_emperor_ridewatch",
+			"title": "Kiva Emperor Form Ridewatch",
+			"text": "Appears in:$(li)DX Kiva Emperor Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/kiva_emperor_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_complete_ridewatch",
+			"title": "Decade Complete Form Ridewatch",
+			"text": "Appears in:$(li)DX Decade Complete Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/decade_complete_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "w_xtreme_ridewatch",
+			"title": "W CycloneJokerXtreme Ridewatch",
+			"text": "Appears in:$(li)DX W CycloneJokerXtreme Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/w_xtreme_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_putotyra_ridewatch",
+			"title": "OOO Putotyra Combo Ridewatch",
+			"text": "Appears in:$(li)DX OOO Putotyra Combo Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ooo_putotyra_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_cosmic_ridewatch",
+			"title": "Fourze Cosmicstates Ridewatch",
+			"text": "Appears in:$(li)DX Fourze Cosmicstates Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/fourze_cosmic_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizard_infinity_ridewatch",
+			"title": "Wizard Infinity Style Ridewatch",
+			"text": "Appears in:$(li)DX Wizard Infinity Style Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/wizard_infinity_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_kiwami_ridewatch",
+			"title": "Gaim Kiwami Arms Ridewatch",
+			"text": "Appears in:$(li)DX Gaim Kiwami Arms Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/gaim_kiwami_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_tridoron_ridewatch",
+			"title": "Drive Type Tridoron Ridewatch",
+			"text": "Appears in:$(li)DX Drive Type Tridoron Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/drive_tridoron_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_mugen_ridewatch",
+			"title": "Ghost Mugen Damashii Ridewatch",
+			"text": "Appears in:$(li)DX Ghost Mugen Damashii Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ghost_mugen_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ex_aid_muteki_ridewatch",
+			"title": "Ex-Aid Muteki Gamer Ridewatch",
+			"text": "Appears in:$(li)DX Ex-Aid Muteki Gamer Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ex_aid_muteki_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_genius_ridewatch",
+			"title": "Build Genius Form Ridewatch",
+			"text": "Appears in:$(li)DX Build Genius Form Ridewatch (2019, toyline)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/build_genius_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryusoulger_ridewatch",
+			"title": "Ryusoulger Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O UT (2019, apparel)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ryusoulger_ridewatch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ichigo_ridewatch",
+			"title": "Ichigo Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ichigo_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nigo_ridewatch",
+			"title": "Nigo Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/nigo_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v3_ridewatch",
+			"title": "V3 Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/v3_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "riderman_ridewatch",
+			"title": "Riderman Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/riderman_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_ridewatch",
+			"title": "X Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/x_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_ridewatch",
+			"title": "Amazon Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/amazon_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stronger_ridewatch",
+			"title": "Stronger Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/stronger_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_rx_ridewatch",
+			"title": "Black RX Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/black_rx_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bio_rider_ridewatch",
+			"title": "Bio Rider Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to access Barlckxs's $(l:zi_o/riders/barlckxs#giant)giant$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/bio_rider_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "robo_rider_ridewatch",
+			"title": "Robo Rider Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/robo_rider_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_ridewatch",
+			"title": "Shin Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/shin_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zo_ridewatch",
+			"title": "ZO Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/zo_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "j_ridewatch",
+			"title": "J Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/j_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knight_ridewatch",
+			"title": "Knight Ridewatch",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/knight_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chalice_ridewatch",
+			"title": "Chalice Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/chalice_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_ridewatch",
+			"title": "Diend Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Used to craft Diend's $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/diend_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beast_ridewatch",
+			"title": "Beast Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/beast_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mach_ridewatch",
+			"title": "Mach Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/mach_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cross_z_ridewatch",
+			"title": "Cross-Z Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/cross_z_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "christmas_ridewatch",
+			"title": "Zi-O Ridewatch (Christmas ver.)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O Charadeco Cake (2018, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_ridewatch",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		}
+	]
+}

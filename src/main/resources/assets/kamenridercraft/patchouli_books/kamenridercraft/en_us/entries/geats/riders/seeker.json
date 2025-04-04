@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/seeker_rider_core_id)Kamen Rider Seeker Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#seeker_rider_core_id)Kamen Rider Seeker Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Powered Builder Form",
-			"text": "Accessed with the $(l:geats/items/powered_builder_raise_buckle)Powered Builder Buckle$(/l) in your main hand and the $(l:geats/items/gigant_container_buckle)Gigant Container Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#gigant_container_buckle)Gigant Container Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Hiden Metal",
 	"icon": "kamenridercraft:hiden_metal",
 	"category": "kamenridercraft:zero_one/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

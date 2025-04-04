@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Type Zero",
-			"text": "Accessed with the $(l:gotchard/items/steamliner_repli_chemy_card)Steamliner Replichemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/replichemy_cards#steamliner_repli_chemy_card)Steamliner Replichemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

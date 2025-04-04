@@ -1,0 +1,887 @@
+{
+	"name": "Raise Buckles",
+	"icon": "kamenridercraft:magnum_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "magnum_raise_buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#magnum)Magnum$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnum_raise_buckle",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_raise_buckle",
+			"title": "Boost Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#magnumboost)Boost$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boost_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zombie_raise_buckle",
+			"title": "Zombie Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/buffa#zombie)Zombie$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zombie_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninja_raise_buckle",
+			"title": "Ninja Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/tycoon#ninja)Ninja$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "monster_raise_buckle",
+			"title": "Monster Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/punkjack#monster)Monster$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:monster_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_raise_buckle",
+			"title": "Beat Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/na_go#beat)Beat$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "powered_builder_raise_buckle",
+			"title": "Powered Builder Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to access a Desire Driver user's $(l:geats/riders/seeker#powered_builder)Powered Builder$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:powered_builder_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fantasy_raise_buckle",
+			"title": "Fantasy Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/na_go#fantasy)Fantasy$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/fantasy_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shark_raise_buckle",
+			"title": "Shark Buckle",
+			"text": "Appears in:$(li)Televi Magazine (May 2023, magazine)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#shark)Shark$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shark_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fever_slot_raise_buckle",
+			"title": "Feverslot Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#fever_magnum)Fever$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fever_slot_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "command_twin_buckle_jet",
+			"title": "Command Jet Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Geats's $(l:geats/riders/geats#raising)Raising$(/l) and $(l:geats/riders/geats#command_jet)Command$(/l) forms$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#raising)Raising$(/l) and $(l:geats/riders/tycoon#command_jet)Command$(/l) forms$(br2)Used to access Buffa's $(l:geats/riders/buffa#raisingjyamato)Raising$(/l) and $(l:geats/riders/buffa#command)Command$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:command_twin_buckle_jet",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "command_twin_buckle_cannon",
+			"title": "Command Cannon Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Geats's $(l:geats/riders/geats#raising)Raising$(/l) and $(l:geats/riders/geats#command_cannon)Command$(/l) forms$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#raising)Raising$(/l) and $(l:geats/riders/tycoon#command_cannon)Command$(/l) forms$(br2)Used to access Buffa's $(l:geats/riders/buffa#raisingjyamato)Raising$(/l) and $(l:geats/riders/buffa#command)Command$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:command_twin_buckle_cannon",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_mkii_raise_buckle",
+			"title": "Boost MarkII Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Geats's $(l:geats/riders/geats#boost_mkii)Boost Form MarkII$(/l)$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#boost_mkii)Boost Form MarkII$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/boost_mkii_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_mkiii_raise_buckle",
+			"title": "Boost MarkIII Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Geats's $(l:geats/riders/geats#boost_mkiii)Boost Form MarkIII$(/l) and $(l:geats/riders/geats#geatsix)GeatsIX$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boost_mkiii_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oneness_raise_buckle",
+			"title": "Oneness Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to access Geats's $(l:geats/riders/geats#oneness)Oneness$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oneness_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_geats_raise_buckle",
+			"title": "XGeats Raise Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_geats_raise_buckle",
+			"title": "Dooms Geats Raise Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bujin_sword_raise_buckle",
+			"title": "Bujin Sword Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#bujin_sword)Bujin Sword$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bujin_sword_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "plosion_rage_raise_buckle",
+			"title": "Plosion Rage Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Used to access Buffa's $(l:geats/riders/buffa#plosion_rage)Plosion Rage$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:plosion_rage_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jyamato_buckle",
+			"title": "Jyamato Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Jyamato Rider's $(l:geats/riders/jyamato_rider)Jyamato$(/l) forms$(br2)Used to access Buffa's $(l:geats/riders/buffa#jyamato)Jyamato$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamato_buckle",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)$(br2)Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arrow_raise_buckle",
+			"title": "Arrow Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#arrow)Armed Arrow$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:arrow_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_raise_buckle",
+			"title": "Water Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#water)Armed Water$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hammer_raise_buckle",
+			"title": "Hammer Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#hammer)Armed Hammer$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hammer_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shield_raise_buckle",
+			"title": "Shield Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#shield)Armed Shield$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shield_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chain_array_raise_buckle",
+			"title": "Chain Array Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/tycoon#chain_array)Armed Chain Array$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chain_array_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claw_raise_buckle",
+			"title": "Claw Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#claw)Armed Claw$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claw_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_raise_buckle",
+			"title": "Drill Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#drill)Armed Drill$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "propeller_raise_buckle",
+			"title": "Propeller Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#propeller)Armed Propeller$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:propeller_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_container_buckle",
+			"title": "Gigant Container Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to access a Desire Driver user's $(l:geats/riders/seeker#powered_builder)Gigant Container$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/gigant_container_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_sword_buckle",
+			"title": "Gigant Sword Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_sword_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_hammer_buckle",
+			"title": "Gigant Hammer Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_hammer_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_blaster_buckle",
+			"title": "Gigant Blaster Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_blaster_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnum_shooter_40x_raise_buckle",
+			"title": "Magnum Shooter 40X Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnum_shooter_40x_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninja_dueler_raise_buckle",
+			"title": "Ninja Dueler Buckle",
+			"text": "Appears in:$(li)Support Mission Box Type Geats & DX Weapon Raise Buckle Set (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_dueler_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zombie_breaker_raise_buckle",
+			"title": "Zombie Breaker Buckle",
+			"text": "Appears in:$(li)Support Mission Box Type Geats & DX Weapon Raise Buckle Set (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zombie_breaker_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_axe_raise_buckle",
+			"title": "Beat Axe Buckle",
+			"text": "Appears in:$(li)SG Raise Buckle Set 05 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_axe_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/gigant_mission_box)Support Mission Boxes Type Geats$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "christmas_buckle",
+			"title": "Christmas Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Charadeco Cake (2022, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_buckle",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_arrow_raise_buckle",
+			"title": "Arrow Buckle (Silver Plating ver)",
+			"text": "Appears in:$(li)DX Arrow Raise Buckle (Silver Plated Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_arrow_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golden_hammer_raise_buckle",
+			"title": "Hammer Buckle (Gold Plating ver)",
+			"text": "Appears in:$(li)DX Hammer Raise Buckle (Gold Plated Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golden_hammer_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clear_arrow_raise_buckle",
+			"title": "Arrow Buckle (Clear ver)",
+			"text": "Appears in:$(li)DX Arrow Raise Buckle (Clear Color ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:clear_arrow_raise_buckle",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_raise_buckle_theme",
+			"title": "Beat Buckle (Theme Song ver)",
+			"text": "Appears in:$(li)DX Beat Raise Buckle (Theme Song Ver.) (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_raise_buckle_theme",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/hatena_mission_box)Hatena Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinobi_raise_buckle",
+			"title": "Shinobi Buckle",
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider Tycoon meets Kamen Rider Shinobi (2023, TTFC special)$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#shinobi)Shinobi$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/shinobi_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revice_driver_raise_buckle",
+			"title": "Revice Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#boostrevice)Revice$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/revice_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "two_si_driver_raise_buckle",
+			"title": "Two Sidriver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#two_sidriver)Live$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/two_si_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "libera_driver_raise_buckle",
+			"title": "Libera Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#libera_driver)Jeanne$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/libera_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_raise_buckle",
+			"title": "Demons Driver Buckle",
+			"text": "Appears in:$(li)GP Raise Buckle 1 (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#demons_driver)Demons$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/demons_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_raise_buckle",
+			"title": "Seiken Swordriver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#seiken_swordriver)Saber$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/seiken_swordriver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_one_driver_raise_buckle",
+			"title": "Zero-One Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#zero_one_driver)Zero-One$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zero_one_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zikuu_driver_raise_buckle",
+			"title": "Ziku-Driver Buckle",
+			"text": "Appears in:$(li)GP Raise Buckle 2 (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#ziku_driver)Zi-O$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zikuu_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_raise_buckle",
+			"title": "Build Driver Buckle",
+			"text": "Appears in:$(li)DX Build Driver Raise Buckle (2023, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#build_driver)Build$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/build_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_raise_buckle",
+			"title": "Gamer Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#gamer_driver)Ex-Aid$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/gamer_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_driver_raise_buckle",
+			"title": "Ghost Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#ghost_driver)Ghost$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ghost_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_driver_raise_buckle",
+			"title": "Drive Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#drive_driver)Drive$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/drive_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_raise_buckle",
+			"title": "Sengoku Driver Buckle",
+			"text": "Appears in:$(li)GP Raise Buckle 3 (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#sengoku_driver)Gaim$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/sengoku_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardriver_raise_buckle",
+			"title": "Wizardriver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#wizardriver)Wizard$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/wizardriver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_driver_raise_buckle",
+			"title": "Fourze Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#fourze_driver)Fourze$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/fourze_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_driver_raise_buckle",
+			"title": "OOO Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#ooo_driver)OOO$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ooo_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_driver_raise_buckle",
+			"title": "Double Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#double_driver)Double$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/double_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deca_driver_raise_buckle",
+			"title": "Decadriver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#decadriver)Decade$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/deca_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kivat_belt_raise_buckle",
+			"title": "Kivat Belt Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#kivat_belt)Kiva$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/kivat_belt_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_belt_raise_buckle",
+			"title": "Den-O Belt Buckle",
+			"text": "Appears in:$(li)DX Den-O Belt Buckle (2023, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#den_o_belt)Den-O$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/den_o_belt_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_zector_raise_buckle",
+			"title": "Kabuto Zecter Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#kabuto_zecter)Kabuto$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/kabuto_zector_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ongekiko_kaentsuzumi_raise_buckle",
+			"title": "Ongekiko Kaentsuzumi Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#ongekiko_kaentsuzumi)Hibiki$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ongekiko_kaentsuzumi_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blay_buckle_raise_buckle",
+			"title": "Blay Buckle Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#blay_buckle)Blade$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/blay_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_driver_raise_buckle",
+			"title": "Faiz Driver Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#faiz_driver)Faiz$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/faiz_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_raise_buckle",
+			"title": "V Buckle Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#v_buckle)Ryuki$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/v_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring_raise_buckle",
+			"title": "Altering Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#altering)Agito$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/alter_ring_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arcle_raise_buckle",
+			"title": "Arcle Buckle",
+			"text": "Appears in:$(li)Kamen Rider Geats Buckle Simulator (2022, website)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#arcle)Kuuga$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/arcle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_stone_raise_buckle",
+			"title": "Kingstone Buckle",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#king_stone)Black$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/king_stone_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_typhoon_raise_buckle",
+			"title": "Double Typhoon Buckle",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#double_typhoon)V3$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/double_typhoon_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_raise_buckle",
+			"title": "Typhoon Buckle",
+			"text": "Appears in:$(li)DX Typhoon & Double Typhoon & King Stone Raise Buckle Set (2022, toyline)$(br2)Used to access a Desire Driver user's $(l:geats/riders/geats#typhoon)Ichigo$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/typhoon_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ouja_v_buckle_raise_buckle",
+			"title": "V Buckle Buckle (Ouja)",
+			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Used to access a Desire Driver user's $(l:geats/riders/buffa#v_buckle_ouja)Ouja$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ouja_v_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_ohger_raise_buckle",
+			"title": "King-Ohger Buckle",
+			"text": "Appears in:$(li)SG Raise Buckle Set 05 (2022, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_ohger_raise_buckle",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

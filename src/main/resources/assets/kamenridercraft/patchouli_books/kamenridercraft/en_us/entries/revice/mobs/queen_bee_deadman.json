@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 120$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (57.1%)$(li)1 $(l:revice/items/rex_vistamp_christmas)Rex Vistamp (Christmas)$(/l) (14.3%)$(li)1 $(l:revice/items/koala_vistamp)Koala Proto Vistamp$(/l) (14.3%)$(li)1 $(l:revice/items/rafflesia_vistamp)Rafflesia Proto Vistamp$(/l) (14.3%)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 120$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (57.1%)$(li)1 $(l:revice/items/vistamps#rex_vistamp_christmas)Rex Vistamp (Christmas)$(/l) (14.3%)$(li)1 $(l:revice/items/vistamps#koala_vistamp)Koala Proto Vistamp$(/l) (14.3%)$(li)1 $(l:revice/items/vistamps#rafflesia_vistamp)Rafflesia Proto Vistamp$(/l) (14.3%)"
 		}
 	]
 }

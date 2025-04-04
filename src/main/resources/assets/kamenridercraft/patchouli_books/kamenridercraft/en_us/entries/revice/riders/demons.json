@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Spider Genome",
-			"text": "Accessed with the $(l:revice/items/spider_vistamp)Spider Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#spider_vistamp)Spider Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Batta Genomix",
-			"text": "Accessed with the $(l:revice/items/batta_vistamp)Batta Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#batta_vistamp)Batta Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mogura Genomix",
-			"text": "Accessed with the $(l:revice/items/mogura_vistamp)Mogura Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#mogura_vistamp)Mogura Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Condor Genomix",
-			"text": "Accessed with the $(l:revice/items/condor_vistamp)Condor Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#condor_vistamp)Condor Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scorpion Genomix",
-			"text": "Accessed with the $(l:revice/items/scorpion_vistamp)Scorpion Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#scorpion_vistamp)Scorpion Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Anomalocaris Genomix",
-			"text": "Accessed with the $(l:revice/items/anomalocaris_vistamp)Anomalocaris Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#anomalocaris_vistamp)Anomalocaris Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Imperial Demons",
-			"text": "Accessed with the $(l:revice/items/giant_spider_vistamp)Giant Spider Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#giant_spider_vistamp)Giant Spider Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Crocodile Genomix",
-			"text": "Accessed with the $(l:revice/items/crocodile_vistamp)Crocodile Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#crocodile_vistamp)Crocodile Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Komodo Dragon Genomix",
-			"text": "Accessed with the $(l:revice/items/komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l) as $(l:revice/riders/demons#imperial)Imperial Demons$(/l)"
 		},
 		{
 			"type": "patchouli:text",

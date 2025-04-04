@@ -2,7 +2,7 @@
 	"name": "Blank Wonder World Story Wonder Ride Book",
 	"icon": "kamenridercraft:blank_wonder_world_story_wonder_ride_book",
 	"category": "kamenridercraft:saber/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

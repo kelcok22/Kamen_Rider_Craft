@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l)$(li)1 $(l:geats/items/chuta_rider_core_id)Kamen Rider Chuta Core ID$(/l) (10%)$(li)1 $(l:geats/items/gesshi_rider_core_id)Kamen Rider Gessy Core ID$(/l) (10%)$(li)1 $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) (20%)$(li)1 $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) (20%)$(li)1 $(l:geats/devices/desire_driver_gm)Desire Driver (GM)$(/l) (8%)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (12%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (20%)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l)$(li)1 $(l:geats/items/rider_core_ids#chuta_rider_core_id)Kamen Rider Chuta Core ID$(/l) (10%)$(li)1 $(l:geats/items/rider_core_ids#gesshi_rider_core_id)Kamen Rider Gessy Core ID$(/l) (10%)$(li)1 $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) (20%)$(li)1 $(l:geats/items/raise_buckles#command_twin_buckle_cannon)Command Cannon Buckle$(/l) (20%)$(li)1 $(l:geats/devices/desire_driver_gm)Desire Driver (GM)$(/l) (8%)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (12%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (20%)"
 		}
 	]
 }

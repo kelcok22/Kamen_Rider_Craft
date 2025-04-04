@@ -1,0 +1,123 @@
+{
+	"name": "Typhoon Cores",
+	"icon": "kamenridercraft:typhoon_core",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_core",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to craft Ichigo's $(l:ichigo/devices/typhoon_ichigo)Typhoon$(/l)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#new_ichigo)New Ichigo$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_core",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_combatman)Shocker Combatman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "original_typhoon_core",
+			"title": "Typhoon Core (Original)",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br)$(li)Used to access Ichigo's $(l:ichigo/riders/ichigo#original_ichigo)Original Ichigo$(/l) form$(li)Used to access Nigo's $(l:ichigo/riders/nigo#original_nigo)Original Nigo$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:original_typhoon_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_combatman)Shocker Combatman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sakurajima_typhoon_core",
+			"title": "Typhoon Core (Sakurajima)",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#sakurajima_ichigo)Sakurajima Ichigo$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sakurajima_typhoon_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_combatman)Shocker Combatman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "new_typhoon_core",
+			"title": "Power Up Typhoon Core",
+			"text": "Appears in:$(li)Kamen Rider 1 (2016, movie)$(br2)Used to access Ichigo's $(l:ichigo/riders/ichigo#power_up_ichigo)Power Up$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:new_typhoon_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_core_nigo",
+			"title": "Typhoon Core (Nigo)",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)$(br2)Used to craft Nigo's $(l:ichigo/devices/typhoon_nigo)Typhoon$(/l)$(br2)Used to access Nigo's $(l:ichigo/riders/nigo#new_nigo)New Nigo$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_core_nigo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_combatman)Shocker Combatman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_core_sango",
+			"title": "Typhoon Core (Sango)",
+			"text": "Appears in:$(li)Super Hero Taisen GP: Kamen Rider 3 (2015, movie)$(br2)Used to craft Sango's $(l:ichigo/devices/typhoon_sango)Typhoon$(/l)$(br2)Used to access Sango's $(l:ichigo/riders/sango#movie_sango)movie$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_core_sango",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_core_yongo",
+			"title": "Typhoon Core (Yongo)",
+			"text": "Appears in:$(li)D-Video Special: Kamen Rider 4 (2015, web series)$(br2)Used to craft Yongo's $(l:ichigo/devices/typhoon_yongo)Typhoon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_core_yongo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ichigo/mobs/shocker_rider)Shocker Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shocker_rider_typhoon_core",
+			"title": "Shocker Rider Typhoon Core",
+			"text": "Appears in:$(li)Kamen Rider (1971, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shocker_rider_typhoon_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nophoon_core",
+			"title": "Nophoon Core",
+			"text": "Appears in:$(li)Kamen Norider (1988, TV show)$(br2)Used to craft Kamen Norider's $(l:ichigo/devices/nophoon_kamen_norider)Nophoon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nophoon_core",
+			"title": " ",
+			"text": "Traded by a journeyman $(l:misc/villagers#shocker_villager)Shocker Villager$(/l)"
+		}
+	]
+}

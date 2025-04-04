@@ -2,7 +2,7 @@
 	"name": "Blank Ride Chemy Card",
 	"icon": "kamenridercraft:blank_ride_chemy_card",
 	"category": "kamenridercraft:gotchard/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

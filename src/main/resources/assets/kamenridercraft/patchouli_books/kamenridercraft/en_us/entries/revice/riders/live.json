@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Bat Genome",
-			"text": "Accessed with the $(l:revice/items/bat_vistamp)Bat Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#bat_vistamp)Bat Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jackal Genome",
-			"text": "Accessed with the $(l:revice/items/jackal_vistamp)Jackal Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#jackal_vistamp)Jackal Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Holy Live",
-			"text": "Accessed with the $(l:revice/items/holy_wing_vistamp)Holy Wing Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#holy_wing_vistamp)Holy Wing Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "EvilytyLive",
-			"text": "Accessed with the $(l:revice/items/perfect_wing_vistamp)Perfect Wing Vistamp$(/l)"
+			"text": "Accessed with the $(l:revice/items/vistamps#perfect_wing_vistamp)Perfect Wing Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",

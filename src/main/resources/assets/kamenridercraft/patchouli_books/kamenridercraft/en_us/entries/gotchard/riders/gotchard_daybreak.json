@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Steamhopper",
-			"text": "Accessed with the $(l:gotchard/items/daybreak_hopper1_ride_chemy_card)Daybreak Hopper1$(/l) or $(l:gotchard/items/daybreak_steamliner_ride_chemy_card)Daybreak Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#daybreak_hopper1_ride_chemy_card)Daybreak Hopper1$(/l) or $(l:gotchard/items/ride_chemy_cards#daybreak_steamliner_ride_chemy_card)Daybreak Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",

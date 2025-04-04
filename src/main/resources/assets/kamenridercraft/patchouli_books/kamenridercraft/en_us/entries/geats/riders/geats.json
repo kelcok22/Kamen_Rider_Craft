@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/geats_rider_core_id)Kamen Rider Geats Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#geats_rider_core_id)Kamen Rider Geats Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magnum Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBoost Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zombie Form",
-			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ninja Form",
-			"text": "Accessed with the $(l:geats/items/ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Form",
-			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Arrow",
-			"text": "Accessed with the $(l:geats/items/arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#arrow_raise_buckle)Arrow Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Water",
-			"text": "Accessed with the $(l:geats/items/water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Hammer",
-			"text": "Accessed with the $(l:geats/items/hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Shield",
-			"text": "Accessed with the $(l:geats/items/shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Claw",
-			"text": "Accessed with the $(l:geats/items/claw_raise_buckle)Claw Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#claw_raise_buckle)Claw Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Drill",
-			"text": "Accessed with the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#drill_raise_buckle)Drill Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Propeller",
-			"text": "Accessed with the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fever Boost Form",
-			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fever Magnum Form",
-			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Raising Form",
-			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Command Form Cannon Mode",
-			"text": "Accessed with the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Command Form Jet Mode",
-			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Boost Form MarkII",
-			"text": "Accessed with the $(l:geats/items/boost_mkii_raise_buckle)Boost MarkII Buckle$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#boost_mkii_raise_buckle)Boost MarkII Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "LaserBoost Form",
-			"text": "Accessed with the $(l:geats/items/boost_mkii_raise_buckle)Boost MarkII Buckle$(/l) and the $(l:geats/items/unite_grip)Unite Grip$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#boost_mkii_raise_buckle)Boost MarkII Buckle$(/l) and the $(l:geats/items/unite_grip)Unite Grip$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Boost Form MarkIII",
-			"text": "Accessed with the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GeatsIX",
-			"text": "Accessed with the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in both hands"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in both hands"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Geats Oneness",
-			"text": "Accessed with the $(l:geats/items/oneness_raise_buckle)Oneness Buckle$(/l) in your main hand and the $(l:geats/items/boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in your off-hand while having the $(l:geats/items/geats_oneness_rider_core_id)Kamen Rider Geats Oneness Core ID$(/l) in your inventory"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#oneness_raise_buckle)Oneness Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)Boost MarkIII Buckle$(/l) in your off-hand while having the $(l:geats/items/rider_core_ids#geats_oneness_rider_core_id)Kamen Rider Geats Oneness Core ID$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shark Form",
-			"text": "Accessed with the $(l:geats/items/shark_raise_buckle)Shark Buckle$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#shark_raise_buckle)Shark Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBoost Form",
-			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_osaka)Kamen Rider Osaka Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)Kamen Rider Osaka Geats Core ID$(/l), the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBoost Form",
-			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_fukuoka)Kamen Rider Fukuoka Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)Kamen Rider Fukuoka Geats Core ID$(/l), the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBoost Form",
-			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_nagoya)Kamen Rider Nagoya Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)Kamen Rider Nagoya Geats Core ID$(/l), the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBoost Form",
-			"text": "Accessed with the $(l:geats/items/geats_rider_core_id_tokyo)Kamen Rider Tokyo Geats Core ID$(/l), the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)Kamen Rider Tokyo Geats Core ID$(/l), the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BoostRevice Form",
-			"text": "Accessed with the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your main hand and the $(l:geats/items/revice_driver_raise_buckle)Revice Driver Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#revice_driver_raise_buckle)Revice Driver Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ichigo Form",
-			"text": "Accessed with the $(l:geats/items/typhoon_raise_buckle)Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#typhoon_raise_buckle)Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "V3 Form",
-			"text": "Accessed with the $(l:geats/items/double_typhoon_raise_buckle)Double Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#double_typhoon_raise_buckle)Double Typhoon Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Black Form",
-			"text": "Accessed with the $(l:geats/items/king_stone_raise_buckle)Kingstone Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#king_stone_raise_buckle)Kingstone Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kuuga Form",
-			"text": "Accessed with the $(l:geats/items/arcle_raise_buckle)Arcle Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#arcle_raise_buckle)Arcle Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Agito Form",
-			"text": "Accessed with the $(l:geats/items/alter_ring_raise_buckle)Altering Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#alter_ring_raise_buckle)Altering Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuki Form",
-			"text": "Accessed with the $(l:geats/items/v_buckle_raise_buckle)V Buckle Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#v_buckle_raise_buckle)V Buckle Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Faiz Form",
-			"text": "Accessed with the $(l:geats/items/faiz_driver_raise_buckle)Faiz Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#faiz_driver_raise_buckle)Faiz Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -515,7 +515,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Blade Form",
-			"text": "Accessed with the $(l:geats/items/blay_buckle_raise_buckle)Blay Buckle Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#blay_buckle_raise_buckle)Blay Buckle Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -529,7 +529,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hibiki Form",
-			"text": "Accessed with the $(l:geats/items/ongekiko_kaentsuzumi_raise_buckle)Ongekiko Kaentsuzumi Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ongekiko_kaentsuzumi_raise_buckle)Ongekiko Kaentsuzumi Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -543,7 +543,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kabuto Form",
-			"text": "Accessed with the $(l:geats/items/kabuto_zector_raise_buckle)Kabuto Zecter Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#kabuto_zector_raise_buckle)Kabuto Zecter Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -557,7 +557,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-O Form",
-			"text": "Accessed with the $(l:geats/items/den_o_belt_raise_buckle)Den-O Belt Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#den_o_belt_raise_buckle)Den-O Belt Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -571,7 +571,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Kiva Form",
-			"text": "Accessed with the $(l:geats/items/kivat_belt_raise_buckle)Kivat Belt Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#kivat_belt_raise_buckle)Kivat Belt Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Decade Form",
-			"text": "Accessed with the $(l:geats/items/deca_driver_raise_buckle)Decadriver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#deca_driver_raise_buckle)Decadriver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -599,7 +599,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Double Form",
-			"text": "Accessed with the $(l:geats/items/double_driver_raise_buckle)Doubledriver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#double_driver_raise_buckle)Doubledriver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -613,7 +613,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOO Form",
-			"text": "Accessed with the $(l:geats/items/ooo_driver_raise_buckle)OOO Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ooo_driver_raise_buckle)OOO Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -627,7 +627,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fourze Form",
-			"text": "Accessed with the $(l:geats/items/fourze_driver_raise_buckle)Fourze Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fourze_driver_raise_buckle)Fourze Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -641,7 +641,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Wizard Form",
-			"text": "Accessed with the $(l:geats/items/wizardriver_raise_buckle)Wizardriver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#wizardriver_raise_buckle)Wizardriver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -655,7 +655,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gaim Form",
-			"text": "Accessed with the $(l:geats/items/sengoku_driver_raise_buckle)Sengoku Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#sengoku_driver_raise_buckle)Sengoku Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -669,7 +669,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Drive Form",
-			"text": "Accessed with the $(l:geats/items/drive_driver_raise_buckle)Drive Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#drive_driver_raise_buckle)Drive Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -683,7 +683,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ghost Form",
-			"text": "Accessed with the $(l:geats/items/ghost_driver_raise_buckle)Ghost Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ghost_driver_raise_buckle)Ghost Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -697,7 +697,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ex-Aid Form",
-			"text": "Accessed with the $(l:geats/items/gamer_driver_raise_buckle)Gamer Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#gamer_driver_raise_buckle)Gamer Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -711,7 +711,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Build Form",
-			"text": "Accessed with the $(l:geats/items/build_driver_raise_buckle)Build Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#build_driver_raise_buckle)Build Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -725,7 +725,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zi-O Form",
-			"text": "Accessed with the $(l:geats/items/zikuu_driver_raise_buckle)Ziku-Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zikuu_driver_raise_buckle)Ziku-Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -739,7 +739,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zero-One Form",
-			"text": "Accessed with the $(l:geats/items/zero_one_driver_raise_buckle)Zero-One Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zero_one_driver_raise_buckle)Zero-One Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -753,7 +753,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Saber Form",
-			"text": "Accessed with the $(l:geats/items/seiken_swordriver_raise_buckle)Seiken Swordriver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#seiken_swordriver_raise_buckle)Seiken Swordriver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -767,7 +767,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Live Form",
-			"text": "Accessed with the $(l:geats/items/two_si_driver_raise_buckle)Two Sidriver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#two_si_driver_raise_buckle)Two Sidriver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -781,7 +781,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jeanne Form",
-			"text": "Accessed with the $(l:geats/items/libera_driver_raise_buckle)Libera Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#libera_driver_raise_buckle)Libera Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -795,7 +795,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Demons Form",
-			"text": "Accessed with the $(l:geats/items/demons_driver_raise_buckle)Demons Driver Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#demons_driver_raise_buckle)Demons Driver Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Cyclotron Driver Core",
 	"icon": "kamenridercraft:cyclotron_driver_core",
 	"category": "kamenridercraft:revice/items",
-	"sortnum": 98,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 50$(br2)Special moves:$(li)Uses his $(l:saber/riders/calibur#jaou_dragon)Jaou Dragon$(/l) form at under 30 health$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/jaaku_dragon_wonder_ride_book)Jaaku Dragon Wonder Ride Book$(/l)$(li)1 $(l:saber/items/jaou_dragon_wonder_ride_book)Jaou Dragon Wonder Ride Book$(/l) (25%)$(li)1 $(l:saber/items/dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book$(/l) (with the $(l:saber/items/king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book$(/l) in your inventory)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 50$(br2)Special moves:$(li)Uses his $(l:saber/riders/calibur#jaou_dragon)Jaou Dragon$(/l) form at under 30 health$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#jaaku_dragon_wonder_ride_book)Jaaku Dragon Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#jaou_dragon_wonder_ride_book)Jaou Dragon Wonder Ride Book$(/l) (25%)$(li)1 $(l:saber/items/wonder_ride_books#dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book$(/l) in your inventory)"
 		}
 	]
 }

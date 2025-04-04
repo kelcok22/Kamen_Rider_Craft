@@ -1,0 +1,52 @@
+{
+	"name": "Condorer Core (Omega)",
+	"icon": "kamenridercraft:condorer_core_omega",
+	"category": "kamenridercraft:amazons/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_omega",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 1 (2016, web series)$(br2)Used to craft Amazon Omega's $(l:amazons/devices/amazons_driver_omega)Amazons Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/condorer_core_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_alpha",
+			"title": "Condorer Core (Alpha)",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 1 (2016, web series)$(br2)Used to craft Amazon Alpha's $(l:amazons/devices/amazons_driver_alpha)Amazons Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/condorer_core_alpha"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_alpha_blind",
+			"title": "Condorer Core (Blind Alpha)",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 1 (2016, web series)$(br2)Used to access Amazon Alpha's $(l:amazons/riders/amazon_alpha#blind_alpha)blinded$(/l) state"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condorer_core_alpha_blind",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_sigma",
+			"title": "Condorer Core (Sigma)",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 1 (2016, web series)$(br2)Used to craft Amazon Sigma's $(l:amazons/devices/amazons_driver_sigma)Amazons Driver$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/condorer_core_sigma"
+		}
+	]
+}

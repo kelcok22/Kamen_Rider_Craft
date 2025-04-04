@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Hopper",
-			"text": "Accessed with the $(l:zero_one/items/rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shining Hopper",
-			"text": "Accessed with the $(l:zero_one/items/shining_hopper_progrisekey)Shining Hopper Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#shining_hopper_progrisekey)Shining Hopper Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shining Assault Hopper",
-			"text": "Accessed with the $(l:zero_one/items/shining_assault_hopper_progrisekey)Shining Assault Hopper Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#shining_assault_hopper_progrisekey)Shining Assault Hopper Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MetalCluster Hopper",
-			"text": "Accessed with the $(l:zero_one/items/metalcluster_hopper_progrisekey)MetalCluster Hopper Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#metalcluster_hopper_progrisekey)MetalCluster Hopper Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Realizing Hopper",
-			"text": "Accessed with the $(l:zero_one/items/realize_rising_hopper_progrisekey)Rising Hopper Progrisekey (Realize Ver.)$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#realize_rising_hopper_progrisekey)Rising Hopper Progrisekey (Realize Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hellrising Hopper",
-			"text": "Accessed with the $(l:zero_one/items/hellrise_progrisekey)Hellrise Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#hellrise_progrisekey)Hellrise Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Red Rising Hopper",
-			"text": "Accessed with the $(l:zero_one/items/red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Biting Shark",
-			"text": "Accessed with the $(l:zero_one/items/biting_shark_progrisekey)Biting Shark Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#biting_shark_progrisekey)Biting Shark Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flying Falcon",
-			"text": "Accessed with the $(l:zero_one/items/flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flaming Tiger",
-			"text": "Accessed with the $(l:zero_one/items/flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Freezing Bear",
-			"text": "Accessed with the $(l:zero_one/items/freezing_bear_progrisekey)Freezing Bear Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#freezing_bear_progrisekey)Freezing Bear Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Breaking Mammoth",
-			"text": "Accessed with the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hopping Kangaroo",
-			"text": "Accessed with the $(l:zero_one/items/hopping_kangaroo_progrisekey)Hopping Kangaroo Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#hopping_kangaroo_progrisekey)Hopping Kangaroo Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dynamaiting Lion",
-			"text": "Accessed with the $(l:zero_one/items/dynamaiting_lion_progrisekey)Dynamaiting Lion Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#dynamaiting_lion_progrisekey)Dynamaiting Lion Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Shooting Wolf",
-			"text": "Accessed with the $(l:zero_one/items/shooting_wolf_progrisekey)Shooting Wolf Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#shooting_wolf_progrisekey)Shooting Wolf Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Punching Kong",
-			"text": "Accessed with the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rushing Cheetah",
-			"text": "Accessed with the $(l:zero_one/items/rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#rushing_cheetah_progrisekey)Rushing Cheetah Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sparking Giraffe",
-			"text": "Accessed with the $(l:zero_one/items/sparking_giraffe_progrisekey)Sparking Giraffe Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#sparking_giraffe_progrisekey)Sparking Giraffe Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazing Hercules",
-			"text": "Accessed with the $(l:zero_one/items/amazing_hercules_progrisekey)Amazing Hercules Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#amazing_hercules_progrisekey)Amazing Hercules Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sting Scorpion",
-			"text": "Accessed with the $(l:zero_one/items/sting_scorpion_progrisekey)Sting Scorpion Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#sting_scorpion_progrisekey)Sting Scorpion Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Lightning Hornet",
-			"text": "Accessed with the $(l:zero_one/items/lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gatling Hedgehog",
-			"text": "Accessed with the $(l:zero_one/items/gatling_hedgehog_progrisekey)Gatling Hedgehog Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#gatling_hedgehog_progrisekey)Gatling Hedgehog Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Exciting Stag",
-			"text": "Accessed with the $(l:zero_one/items/exciting_stag_progrisekey)Exciting Stag Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#exciting_stag_progrisekey)Exciting Stag Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Crushing Buffalo",
-			"text": "Accessed with the $(l:zero_one/items/crushing_buffalo_progrisekey)Crushing Buffalo Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#crushing_buffalo_progrisekey)Crushing Buffalo Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Trapping Spider",
-			"text": "Accessed with the $(l:zero_one/items/trapping_spider_progrisekey)Trapping Spider Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#trapping_spider_progrisekey)Trapping Spider Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Storming Penguin",
-			"text": "Accessed with the $(l:zero_one/items/storming_penguin_progrisekey)Storming Penguin Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#storming_penguin_progrisekey)Storming Penguin Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Splashing Whale",
-			"text": "Accessed with the $(l:zero_one/items/splashing_whale_progrisekey)Splashing Whale Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#splashing_whale_progrisekey)Splashing Whale Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazing Caucasus",
-			"text": "Accessed with the $(l:zero_one/items/amazing_caucasus_progrisekey)Amazing Caucasus Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#amazing_caucasus_progrisekey)Amazing Caucasus Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Scouting Panda",
-			"text": "Accessed with the $(l:zero_one/items/scouting_panda_progrisekey)Scouting Panda Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#scouting_panda_progrisekey)Scouting Panda Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burning Falcon",
-			"text": "Accessed with the $(l:zero_one/items/burning_falcon_progrisekey)Burning Falcon Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#burning_falcon_progrisekey)Burning Falcon Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fighting Jackal",
-			"text": "Accessed with the $(l:zero_one/items/fighting_jackal_progrisekey)Fighting Jackal Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#fighting_jackal_progrisekey)Fighting Jackal Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Invading Horseshoe Crab",
-			"text": "Accessed with the $(l:zero_one/items/invading_horseshoe_crab_progrisekey)Invading Horseshoe Crab Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#invading_horseshoe_crab_progrisekey)Invading Horseshoe Crab Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",

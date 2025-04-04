@@ -2,7 +2,7 @@
 	"name": "Omni Force Wonder Ride Book Part",
 	"icon": "kamenridercraft:omni_force_wonder_ride_book_part",
 	"category": "kamenridercraft:saber/items",
-	"sortnum": 68,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

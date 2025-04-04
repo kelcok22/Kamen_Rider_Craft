@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:zi_o/items/barlckxs_ridewatch)Barlckxs Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#barlckxs_ridewatch)Barlckxs Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Giant Barlckxs",
-			"text": "Accessed with the $(l:zi_o/items/bio_rider_ridewatch)Bio Rider Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#bio_rider_ridewatch)Bio Rider Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",

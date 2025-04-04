@@ -1,0 +1,71 @@
+{
+	"name": "Gorider Cards",
+	"icon": "kamenridercraft:akarider_card",
+	"category": "kamenridercraft:gorider/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "akarider_card",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:akarider_card",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aorider_card",
+			"title": "Aorider Card",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aorider_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirider_card",
+			"title": "Kirider Card",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirider_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "momorider_card",
+			"title": "Momorider Card",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:momorider_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "midorider_card",
+			"title": "Midorider Card",
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:midorider_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

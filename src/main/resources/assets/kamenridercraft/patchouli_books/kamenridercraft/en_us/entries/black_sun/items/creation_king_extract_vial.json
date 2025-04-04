@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used on the $(l:misc/blocks/kaijin_stone_generator)Kaijin Stone Generator$(/l) to obtain $(l:black_sun/items/kaijin_stone)Kaijin Stones$(/l), as well as $(l:black_sun/items/king_stone_sun)Sun$(/l) and $(l:black_sun/items/king_stone_moon)Moon$(/l) Kingstones"
+			"text": "Used on the $(l:misc/blocks/kaijin_stone_generator)Kaijin Stone Generator$(/l) to obtain $(l:black_sun/items/kaijin_stone)Kaijin Stones$(/l), as well as $(l:black_sun/items/kingstones#king_stone_sun)Sun$(/l) and $(l:black_sun/items/kingstones#king_stone_moon)Moon$(/l) Kingstones"
 		},
 		{
 			"type": "patchouli:crafting",

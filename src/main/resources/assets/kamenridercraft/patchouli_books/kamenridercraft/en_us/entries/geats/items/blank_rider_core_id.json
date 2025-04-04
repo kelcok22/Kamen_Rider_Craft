@@ -2,7 +2,7 @@
 	"name": "Blank Rider Core ID",
 	"icon": "kamenridercraft:blank_rider_core_id",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 4,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

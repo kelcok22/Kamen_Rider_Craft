@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:geats/items/kekera_raise_riser_card)Raise Riser Card (Kekera)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_riser_cards#kekera_raise_riser_card)Raise Riser Card (Kekera)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:geats/items/kekera_black_raise_riser_card)Black Raise Riser Card (Kekera)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_riser_cards#kekera_black_raise_riser_card)Black Raise Riser Card (Kekera)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

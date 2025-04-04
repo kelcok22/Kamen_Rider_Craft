@@ -1,0 +1,539 @@
+{
+	"name": "Rider Core IDs",
+	"icon": "kamenridercraft:geats_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Geats's $(l:geats/devices/desire_driver_geats)Desire Driver (Geats)$(/l)$(br2)Used to revert $(l:geats/riders/geats)Kamen Rider Geats$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_oneness_rider_core_id",
+			"title": "Kamen Rider Geats Oneness Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to access Geats's $(l:geats/riders/geats#oneness)Oneness$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_oneness_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tycoon_rider_core_id",
+			"title": "Kamen Rider Tycoon Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Tycoon's $(l:geats/devices/desire_driver_tycoon)Desire Driver (Tycoon)$(/l)$(br2)Used to revert $(l:geats/riders/tycoon)Kamen Rider Tycoon$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tycoon_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "na_go_rider_core_id",
+			"title": "Kamen Rider Na-Go Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Na-Go's $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)Used to revert $(l:geats/riders/na_go)Kamen Rider Na-Go$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:na_go_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffa_rider_core_id",
+			"title": "Kamen Rider Buffa Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Buffa's $(l:geats/devices/desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Used to revert $(l:geats/riders/buffa)Kamen Rider Buffa$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffa_rider_core_id_cracked",
+			"title": "Kamen Rider Buffa Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to revert $(l:geats/riders/buffa)Kamen Rider Buffa$(/l) to Entry Form and unlock $(l:geats/riders/buffa#jyamato)Jyamato$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_rider_core_id_cracked",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "punkjack_rider_core_id",
+			"title": "Kamen Rider Punkjack Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Punkjack's $(l:geats/devices/desire_driver_punkjack)Desire Driver (Punkjack)$(/l)$(br2)Used to revert $(l:geats/riders/punkjack)Kamen Rider Punkjack$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:punkjack_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nudge_sparrow_rider_core_id",
+			"title": "Kamen Rider Nadge-Sparrow Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Nadge-Sparrow's $(l:geats/devices/desire_driver_nudge_sparrow)Desire Driver (Nadge-Sparrow)$(/l)$(br2)Used to revert $(l:geats/riders/nudge_sparrow)Kamen Rider Nadge-Sparrow$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nudge_sparrow_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirowe_rider_core_id",
+			"title": "Kamen Rider Shirowe Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Shirowe's $(l:geats/devices/desire_driver_shirowe)Desire Driver (Shirowe)$(/l)$(br2)Used to revert $(l:geats/riders/shirowe)Kamen Rider Shirowe$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirowe_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginpen_rider_core_id",
+			"title": "Kamen Rider Ginpen Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Ginpen's $(l:geats/devices/desire_driver_ginpen)Desire Driver (Ginpen)$(/l)$(br2)Used to revert $(l:geats/riders/ginpen)Kamen Rider Ginpen$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginpen_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mary_rider_core_id",
+			"title": "Kamen Rider Mary Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Mary's $(l:geats/devices/desire_driver_mary)Desire Driver (Mary)$(/l)$(br2)Used to revert $(l:geats/riders/mary)Kamen Rider Mary$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mary_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "da_paan_rider_core_id",
+			"title": "Kamen Rider Da.Paan Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Da.Paan's $(l:geats/devices/desire_driver_da_paan)Desire Driver (Da.Paan)$(/l)$(br2)Used to revert $(l:geats/riders/da_paan)Kamen Rider Da.Paan$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:da_paan_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "keirou_rider_core_id",
+			"title": "Kamen Rider Keilow Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Keilow's $(l:geats/devices/desire_driver_keirou)Desire Driver (Keilow)$(/l)$(br2)Used to revert $(l:geats/riders/keirou)Kamen Rider Keilow$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keirou_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "letter_rider_core_id",
+			"title": "Kamen Rider Letter Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Letter's $(l:geats/devices/desire_driver_letter)Desire Driver (Letter)$(/l)$(br2)Used to revert $(l:geats/riders/letter)Kamen Rider Letter$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:letter_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lopo_rider_core_id",
+			"title": "Kamen Rider Lopo Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Lopo's $(l:geats/devices/desire_driver_lopo)Desire Driver (Lopo)$(/l)$(br2)Used to revert $(l:geats/riders/lopo)Kamen Rider Lopo$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lopo_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "groovy_rider_core_id",
+			"title": "Kamen Rider Groovy Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Groovy's $(l:geats/devices/desire_driver_groovy)Desire Driver (Groovy)$(/l)$(br2)Used to revert $(l:geats/riders/groovy)Kamen Rider Groovy$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:groovy_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hakubi_rider_core_id",
+			"title": "Kamen Rider Hakubi Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Hakubi's $(l:geats/devices/desire_driver_hakubi)Desire Driver (Hakubi)$(/l)$(br2)Used to revert $(l:geats/riders/hakubi)Kamen Rider Hakubi$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hakubi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "turbon_rider_core_id",
+			"title": "Kamen Rider Turbon Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Turbon's $(l:geats/devices/desire_driver_turbon)Desire Driver (Turbon)$(/l)$(br2)Used to revert $(l:geats/riders/turbon)Kamen Rider Turbon$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turbon_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "brali_rider_core_id",
+			"title": "Kamen Rider Brali Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Brali's $(l:geats/devices/desire_driver_brali)Desire Driver (Brali)$(/l)$(br2)Used to revert $(l:geats/riders/brali)Kamen Rider Brali$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brali_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gya_go_rider_core_id",
+			"title": "Kamen Rider Gya-Go Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Gya-Go's $(l:geats/devices/desire_driver_gya_go)Desire Driver (Gya-Go)$(/l)$(br2)Used to revert $(l:geats/riders/gya_go)Kamen Rider Gya-Go$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gya_go_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seeker_rider_core_id",
+			"title": "Kamen Rider Seeker Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Seeker's $(l:geats/devices/desire_driver_seeker)Desire Driver (Seeker)$(/l)$(br2)Used to revert $(l:geats/riders/seeker)Kamen Rider Seeker$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:seeker_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "butchi_rider_core_id",
+			"title": "Kamen Rider Butchi Core ID",
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Used to craft Butchi's $(l:geats/devices/desire_driver_butchi)Desire Driver (Butchi)$(/l)$(br2)Used to revert $(l:geats/riders/butchi)Kamen Rider Butchi$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:butchi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revi_rider_core_id",
+			"title": "Kamen Rider Revi Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Revi's $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Used to revert $(l:geats/riders/revi)Kamen Rider Revi$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:revi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vice_rider_core_id",
+			"title": "Kamen Rider Vice Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Vice's $(l:geats/devices/desire_driver_vice)Desire Driver (Vice)$(/l)$(br2)Used to revert $(l:geats/riders/vice)Kamen Rider Vice$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vice_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/items/bikkuri_mission_box)Bikkuri Mission Boxes$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chuta_rider_core_id",
+			"title": "Kamen Rider Chuta Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft a GM Rider's $(l:geats/devices/desire_driver_gm)Desire Driver (GM)$(/l)$(br2)Used to revert Glare's $(l:geats/riders/gm_rider)GM Riders$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chuta_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gesshi_rider_core_id",
+			"title": "Kamen Rider Gessy Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft a GM Rider's $(l:geats/devices/desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)Used to revert Glare2's $(l:geats/riders/gm_rider_chirami)GM Riders$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gesshi_rider_core_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_geats_rider_core_id",
+			"title": "Kamen Rider XGeats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: 4 Aces and the Black Fox (2023, movie)$(br2)Used to craft XGeats's $(l:geats/devices/desire_driver_x_geats)Desire Driver (XGeats)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_geats_rider_core_id",
+			"title": "Kamen Rider Dooms Geats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Used to craft Dooms Geats's $(l:geats/devices/desire_driver_dooms_geats)Desire Driver (Dooms Geats)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_rider_core_id",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "discore_id",
+			"title": "DisCore ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft a Jyamato Rider's $(l:geats/devices/desire_driver_jyamato)Desire Driver (Jyamato)$(/l)$(br2)Used to revert a $(l:geats/riders/jyamato_rider)Jyamato Rider$(/l) to Entry Form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:discore_id",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "togechi_rider_core_id",
+			"title": "Kamen Rider Togetchi Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:togechi_rider_core_id",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lancer_rider_core_id",
+			"title": "Kamen Rider Lancer Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lancer_rider_core_id",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garun_rider_core_id",
+			"title": "Kamen Rider Garun Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garun_rider_core_id",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "togechi_rider_core_id_cracked",
+			"title": "Kamen Rider Togetchi Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:togechi_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "letter_rider_core_id_cracked",
+			"title": "Kamen Rider Letter Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:letter_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginpen_rider_core_id_cracked",
+			"title": "Kamen Rider Ginpen Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginpen_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirowe_rider_core_id_cracked",
+			"title": "Kamen Rider Shirowe Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirowe_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nudge_sparrow_rider_core_id_cracked",
+			"title": "Kamen Rider Nadge-Sparrow Core ID (Cracked)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nudge_sparrow_rider_core_id_cracked",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_osaka",
+			"title": "Kamen Rider Osaka Geats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used to transform into $(l:geats/riders/geats#osaka)Kamen Rider Osaka Geats$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_osaka",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_fukuoka",
+			"title": "Kamen Rider Fukuoka Geats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used to transform into $(l:geats/riders/geats#fukuoka)Kamen Rider Fukuoka Geats$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_fukuoka",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_nagoya",
+			"title": "Kamen Rider Nagoya Geats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used to transform into $(l:geats/riders/geats#nagoya)Kamen Rider Nagoya Geats$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_nagoya",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_tokyo",
+			"title": "Kamen Rider Tokyo Geats Core ID",
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Used to transform into $(l:geats/riders/geats#tokyo)Kamen Rider Tokyo Geats$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_tokyo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

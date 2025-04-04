@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Restores 5 hunger points when eaten$(br2)Plain sugar flavor (probably)$(br2)Converts a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) into the $(l:gavv/items/doumaru_gochizo)Doumaru Gochizo$(/l) when eaten"
+			"text": "Restores 5 hunger points when eaten$(br2)Plain sugar flavor (probably)$(br2)Converts a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) into the $(l:gavv/items/gochizo#doumaru_gochizo)Doumaru Gochizo$(/l) when eaten"
 		},
 		{
 			"type": "patchouli:crafting",

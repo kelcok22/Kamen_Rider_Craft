@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Brave Dragon",
-			"text": "Accessed with the $(l:saber/items/brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Eagle",
-			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Saiyuu Dragon",
-			"text": "Accessed with the $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Crimson Dragon",
-			"text": "Accessed with the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragonic Knight",
-			"text": "Accessed with the $(l:saber/items/dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#dragonic_knight_wonder_ride_book)Dragonic Knight Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Emotional Dragon",
-			"text": "Accessed with the $(l:saber/items/emotional_dragon_wonder_ride_book)Emotional Dragon Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#emotional_dragon_wonder_ride_book)Emotional Dragon Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Primitive Dragon",
-			"text": "Accessed with the $(l:saber/items/primitive_dragon_wonder_ride_book)Primitive Dragon Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#primitive_dragon_wonder_ride_book)Primitive Dragon Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Elemental Primitive Dragon",
-			"text": "Accessed with the $(l:saber/items/elemental_dragon_wonder_ride_book)Elemental Dragon Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#elemental_dragon_wonder_ride_book)Elemental Dragon Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Crimson Saber",
-			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
+			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)Storm Eagle$(/l) and $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Featuring Saber",
-			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki$(/l) and $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Books"
+			"text": "Accessed with the $(l:saber/arsenal/haouken_xross_saber)Haouken Xross Saber$(/l) and the $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki$(/l) and $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Almighty Saber",
-			"text": "Accessed with the $(l:saber/items/wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ultimate Bahamut",
-			"text": "Accessed with the $(l:saber/items/ultimate_bahamut_wonder_ride_book)Ultimate Bahamut Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#ultimate_bahamut_wonder_ride_book)Ultimate Bahamut Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ghost Ijinroku",
-			"text": "Accessed with the $(l:saber/items/ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Hero Senki",
-			"text": "Accessed with the $(l:saber/items/super_hero_senki_wonder_ride_book)Super Hero Senki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#super_hero_senki_wonder_ride_book)Super Hero Senki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon TVKun",
-			"text": "Accessed with the $(l:saber/items/televi_kun_wonder_ride_book)Televi-Kun Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#televi_kun_wonder_ride_book)Televi-Kun Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Lion",
-			"text": "Accessed with the $(l:saber/items/lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Hedgehog",
-			"text": "Accessed with the $(l:saber/items/needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Jackun",
-			"text": "Accessed with the $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Peter",
-			"text": "Accessed with the $(l:saber/items/peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Arthur",
-			"text": "Accessed with the $(l:saber/items/king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Bremen",
-			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Alangina",
-			"text": "Accessed with the $(l:saber/items/lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)Lamp do Alangina Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Ninja",
-			"text": "Accessed with the $(l:saber/items/sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Butasan",
-			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Hansel",
-			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Kirin",
-			"text": "Accessed with the $(l:saber/items/kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Sarukani",
-			"text": "Accessed with the $(l:saber/items/sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Usakame",
-			"text": "Accessed with the $(l:saber/items/bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Houshin Engi",
-			"text": "Accessed with the $(l:saber/items/houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -431,7 +431,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Kaguyan",
-			"text": "Accessed with the $(l:saber/items/tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -445,7 +445,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Jizou",
-			"text": "Accessed with the $(l:saber/items/osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -459,7 +459,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Issun",
-			"text": "Accessed with the $(l:saber/items/issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -473,7 +473,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Momoichirou",
-			"text": "Accessed with the $(l:saber/items/daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -487,7 +487,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Urashimajirou",
-			"text": "Accessed with the $(l:saber/items/daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dragon Kinzaburou",
-			"text": "Accessed with the $(l:saber/items/daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",

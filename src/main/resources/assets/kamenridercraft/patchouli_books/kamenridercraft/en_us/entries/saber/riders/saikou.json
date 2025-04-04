@@ -9,7 +9,7 @@
 			"anchor": "saikou",
 			"entity": "minecraft:armor_stand{Invisible:1b,HandItems:[{id:\"kamenridercraft:kougouken_saikou\",Count:1b},{}]}",
 			"name": " ",
-			"text": "Accessed with the $(l:saber/items/kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,7 +23,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Saikou Shadow",
-			"text": "Accessed with the $(l:saber/items/kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -37,7 +37,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman",
-			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -51,7 +51,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman Powerful",
-			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "X-Swordman Wonderful",
-			"text": "Accessed with the $(l:saber/items/x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#x_swordman_wonder_ride_book)X-Swordman Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",

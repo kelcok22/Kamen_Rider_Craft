@@ -2,7 +2,7 @@
 	"name": "Humagear Progrisekey",
 	"icon": "kamenridercraft:humagear_progrisekey",
 	"category": "kamenridercraft:zero_one/items",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

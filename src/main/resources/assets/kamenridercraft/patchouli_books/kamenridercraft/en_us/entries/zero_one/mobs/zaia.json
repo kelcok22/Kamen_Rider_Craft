@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/carnotaurus_zetsumerisekey)Carnotaurus Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/triceratops_zetsumerisekey)Triceratops Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/massbrain_zetsumerisekey)Massbrain Zetsumerisekey$(/l) (20%)"
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#carnotaurus_zetsumerisekey)Carnotaurus Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#triceratops_zetsumerisekey)Triceratops Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#massbrain_zetsumerisekey)Massbrain Zetsumerisekey$(/l) (20%)"
 		}
 	]
 }

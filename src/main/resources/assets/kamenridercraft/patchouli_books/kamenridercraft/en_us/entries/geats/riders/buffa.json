@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/buffa_rider_core_id)Kamen Rider Buffa Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#buffa_rider_core_id)Kamen Rider Buffa Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zombie Form",
-			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "ZombieBoost Form",
-			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zombie Armed Drill",
-			"text": "Accessed with the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#drill_raise_buckle)Drill Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magnum Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ninja Form",
-			"text": "Accessed with the $(l:geats/items/ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ninja_raise_buckle)Ninja Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Form",
-			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Water",
-			"text": "Accessed with the $(l:geats/items/water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#water_raise_buckle)Water Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Shield",
-			"text": "Accessed with the $(l:geats/items/shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#shield_raise_buckle)Shield Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fever Zombie Form",
-			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jyamato Form",
-			"text": "Accessed with the $(l:geats/items/buffa_rider_core_id_cracked)Kamen Rider Buffa Core ID (Cracked)$(/l) and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#buffa_rider_core_id_cracked)Kamen Rider Buffa Core ID (Cracked)$(/l) and the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "RaisingJyamato Form",
-			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Command Form Jet Mode",
-			"text": "Accessed with the $(l:geats/items/command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#command_twin_buckle_jet)Command Jet Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#command_twin_buckle_cannon)Command Cannon Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Fever Zombie Form (Jyamashin)",
-			"text": "Accessed with the $(l:geats/items/jyamashin_wish_card)Jyamashin Desire Card$(/l), the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand, and the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/desire_cards#jyamashin_wish_card)Jyamashin Desire Card$(/l), the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand, and the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Plosion Rage",
-			"text": "Accessed with the $(l:geats/items/plosion_rage_raise_buckle)Plosion Rage Buckle$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#plosion_rage_raise_buckle)Plosion Rage Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ouja Form",
-			"text": "Accessed with the $(l:geats/items/ouja_v_buckle_raise_buckle)V Buckle Buckle (Ouja)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ouja_v_buckle_raise_buckle)V Buckle Buckle (Ouja)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
