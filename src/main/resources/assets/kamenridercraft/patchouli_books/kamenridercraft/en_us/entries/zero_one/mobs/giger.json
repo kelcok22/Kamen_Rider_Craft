@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 60$(br2)Drops$(li)0-2 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/mammoth_zetsumerisekey)Mammoth Zetsumerisekey$(/l) (50%)$(li)1 $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l) (50%)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 60$(br2)Drops$(li)0-2 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#mammoth_zetsumerisekey)Mammoth Zetsumerisekey$(/l) (50%)$(li)1 $(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l) (50%)"
 		}
 	]
 }

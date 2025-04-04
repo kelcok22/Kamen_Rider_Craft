@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Use $(l:black_sun/items/creation_king_extract_vial)Creation King Extract Vials$(/l) on this block to obtain Kaijin Stones$(br2)Drops:$(li)$(l:black_sun/items/kaijin_stone)Kaijin Stone$(/l) (54.1%)$(li)$(l:black_sun/items/king_stone_sun)Sun Kingstone$(/l) (27%)$(li)$(l:black_sun/items/glowing_king_stone_sun)Glowing Sun Kingstone$(/l) (2.7%)$(li)$(l:black_sun/items/king_stone_moon)Moon Kingstone$(/l) (13.5%)$(li)$(l:black_sun/items/glowing_king_stone_moon)Glowing Moon Kingstone$(/l) (2.7%)"
+			"text": "Use $(l:black_sun/items/creation_king_extract_vial)Creation King Extract Vials$(/l) on this block to obtain Kaijin Stones$(br2)Drops:$(li)$(l:black_sun/items/kaijin_stone)Kaijin Stone$(/l) (54.1%)$(li)$(l:black_sun/items/kingstones#king_stone_sun)Sun Kingstone$(/l) (27%)$(li)$(l:black_sun/items/kingstones#glowing_king_stone_sun)Glowing Sun Kingstone$(/l) (2.7%)$(li)$(l:black_sun/items/kingstones#king_stone_moon)Moon Kingstone$(/l) (13.5%)$(li)$(l:black_sun/items/kingstones#glowing_king_stone_moon)Glowing Moon Kingstone$(/l) (2.7%)"
 		},
 		{
 			"type": "patchouli:crafting",

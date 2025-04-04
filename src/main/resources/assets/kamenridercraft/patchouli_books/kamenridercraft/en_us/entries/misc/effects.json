@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "boost",
 			"title": "Boost",
-			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/boost_raise_buckle)Boost Buckle$(/l)"
+			"text": "With this effect, you will be able to boost yourself forward and off the ground by sneaking. Higher amplifiers act as a multiplier for the boost speed.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l)$(li)Use the $(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l)$(li)Use the $(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -31,31 +31,31 @@
 		{
 			"type": "patchouli:text",
 			"title": "Anti Poison",
-			"text": "This effect prevents you from receiving the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/zombie_raise_buckle)Zombie Buckle$(/l)"
+			"text": "This effect prevents you from receiving the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "slash",
 			"title": "Slash",
-			"text": "With this effect, you will gain Strength equal to this effect's amplifier when using a sword.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_slash_card)AttackRide Decade Slash$(/l) card$(li)Use the $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)$(li)Use the $(l:gavv/items/zakuzakuchips_gochizo)Zakuzakuchips Gochizo$(/l)"
+			"text": "With this effect, you will gain Strength equal to this effect's amplifier when using a sword.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_slash_card)AttackRide Decade Slash$(/l) card$(li)Use the $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)Musashi Ghost Eyecon$(/l)$(li)Use the $(l:gavv/items/gochizo#zakuzakuchips_gochizo)Zakuzakuchips Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "shot_boost",
 			"title": "Shot Boost",
-			"text": "This effect boosts the power of your projectile attacks.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_blast_card)AttackRide Decade Blast$(/l) card$(li)Use the $(l:gavv/items/chocodan_gochizo)Chocodan Gochizo$(/l)"
+			"text": "This effect boosts the power of your projectile attacks.$(br2)Examples for how to get this effect:$(li)Use the $(l:decade/arsenal/decade_blast_card)AttackRide Decade Blast$(/l) card$(li)Use the $(l:gavv/items/gochizo#chocodan_gochizo)Chocodan Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "punch",
 			"title": "Punch",
-			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 3 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
+			"text": "With this effect, you will gain Strength equal to this effect's amplifier plus 3 when fighting with an empty hand. (Punch II gives Strength V, Punch III gives Strength VI, and so on)$(br2)Examples for how to get this effect:$(li)Use any of Kuuga's $(l:kuuga/riders/kuuga#mighty)Mighty$(/l) or $(l:kuuga/riders/kuuga#ultimate)Ultimate$(/l) forms$(li)Use the $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l)$(li)Use the $(l:zero_one/items/progrisekeys#punching_kong_progrisekey)Punching Kong Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flying",
 			"title": "Flying",
-			"text": "This effect will allow you to fly as if you were in creative mode.$(br2)Examples for how to get this effect:$(li)Transform into $(l:skyrider/riders/skyrider)Skyrider$(/l)$(li)Use the $(l:den_o/items/rider_tickets#rider_ticket_wing)Rider Ticket Sieg$(/l)$(li)Use the $(l:revice/items/ptera_vistamp)Ptera Vistamp$(/l)"
+			"text": "This effect will allow you to fly as if you were in creative mode.$(br2)Examples for how to get this effect:$(li)Transform into $(l:skyrider/riders/skyrider)Skyrider$(/l)$(li)Use the $(l:den_o/items/rider_tickets#rider_ticket_wing)Rider Ticket Sieg$(/l)$(li)Use the $(l:revice/items/vistamps#ptera_vistamp)Ptera Vistamp$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -79,7 +79,7 @@
 			"type": "patchouli:text",
 			"anchor": "drill",
 			"title": "Drill",
-			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/astroswitches#drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/drill_raise_buckle)Drill Buckle$(/l)"
+			"text": "With this effect, you will be able to destroy any stone or netherrack blocks directly under you by sneaking.$(br2)Examples for how to get this effect:$(li)Use the $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l)$(li)Use the $(l:fourze/items/astroswitches#drill_switch)Drill Switch$(/l)$(li)Use the $(l:geats/items/raise_buckles#drill_raise_buckle)Drill Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"type": "patchouli:text",
 			"anchor": "gravity",
 			"title": "Gravity",
-			"text": "This effect increases the amount of gravity you experience, with higher amplifiers carrying a greater increase.$(br2)Examples for how to get this effect:$(li)ACtivate an $(l:misc/blocks/artificial_gravity_block)Artificial Gravity Block$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#gravity_ring)Gravity Wizard Ring$(/l)$(li)Use the $(l:gavv/items/gurucan_gochizo)Gurucan Gochizo$(/l)"
+			"text": "This effect increases the amount of gravity you experience, with higher amplifiers carrying a greater increase.$(br2)Examples for how to get this effect:$(li)ACtivate an $(l:misc/blocks/artificial_gravity_block)Artificial Gravity Block$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#gravity_ring)Gravity Wizard Ring$(/l)$(li)Use the $(l:gavv/items/gochizo#gurucan_gochizo)Gurucan Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -121,13 +121,13 @@
 			"type": "patchouli:text",
 			"anchor": "shrink",
 			"title": "Shrink",
-			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
+			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/vistamps#kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "giant",
 			"title": "Giant",
-			"text": "This effect causes you to grow in size, with higher amplifiers making you grow further.$(br2)Examples for how to get this effect:$(li)Use the $(l:j/items/j_stone)J Stone$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#big_ring)Big Wizard Ring$(/l)$(li)Use the $(l:zero_one/items/breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
+			"text": "This effect causes you to grow in size, with higher amplifiers making you grow further.$(br2)Examples for how to get this effect:$(li)Use the $(l:j/items/j_stone)J Stone$(/l)$(li)Use the $(l:wizard/arsenal/wizard_rings#big_ring)Big Wizard Ring$(/l)$(li)Use the $(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -187,7 +187,7 @@
 			"type": "patchouli:text",
 			"anchor": "fire_fist",
 			"title": "Fire Fist",
-			"text": "With this effect, you will ignite any entities you hit with an empty hand. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Transform into $(l:build/riders/kaiser#bikaiser)Bikaiser$(/l)$(li)Use the $(l:revice/items/komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l)$(li)Use the $(l:geats/items/powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
+			"text": "With this effect, you will ignite any entities you hit with an empty hand. Entities will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Transform into $(l:build/riders/kaiser#bikaiser)Bikaiser$(/l)$(li)Use the $(l:revice/items/vistamps#komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l)$(li)Use the $(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -211,13 +211,13 @@
 			"type": "patchouli:text",
 			"anchor": "explosive_shot",
 			"title": "Explosive Shot",
-			"text": "With this effect, you will cause any entities you hit with an arrow to explode. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Use the $(l:geats/items/powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
+			"text": "With this effect, you will cause any entities you hit with an arrow to explode. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Use the $(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flame_body",
 			"title": "Flame Body",
-			"text": "With this effect, any entities that hit you will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/drago_timer)Drago Timer$(/l)$(li)Use the $(l:gavv/items/hirihirichips_gochizo)Hirihirichips Gochizo$(/l)"
+			"text": "With this effect, any entities that hit you will ignite for one second for every level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/drago_timer)Drago Timer$(/l)$(li)Use the $(l:gavv/items/gochizo#hirihirichips_gochizo)Hirihirichips Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,13 +247,13 @@
 			"type": "patchouli:text",
 			"anchor": "fish",
 			"title": "Fish!",
-			"text": "This effect causes you to drop a salmon every 6 seconds when sneaking. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/shark_raise_buckle)Shark Buckle$(/l)"
+			"text": "This effect causes you to drop a salmon every 6 seconds when sneaking. Higher amplifiers increase the amount of salmon, and being on fire will cause the salmon to come out cooked.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#net_switch)Net Switch$(/l)$(li)Use the $(l:geats/items/raise_buckles#shark_raise_buckle)Shark Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "mirror",
 			"title": "Mirror",
-			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/fantasy_raise_buckle)Fantasy Buckle$(/l)"
+			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/raise_buckles#fantasy_raise_buckle)Fantasy Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -289,7 +289,7 @@
 			"type": "patchouli:text",
 			"anchor": "thunder_punch",
 			"title": "Thunder Punch",
-			"text": "With this effect, you will cause any entities you hit with an empty hand to be struck by lightning.$(br2)Examples for how to get this effect:$(li)Use the $(l:gotchard/items/x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l)"
+			"text": "With this effect, you will cause any entities you hit with an empty hand to be struck by lightning.$(br2)Examples for how to get this effect:$(li)Use the $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -337,7 +337,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost",
 			"title": "Ghost",
-			"text": "With this effect, you will be able to float upward slowly by sneaking. You will also never feel hungry, as ghosts can't eat dinner.$(br2)Examples for how to get this effect:$(li)Transform into $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l)$(li)Use the $(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l)$(li)Use the $(l:saber/items/ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book$(/l)"
+			"text": "With this effect, you will be able to float upward slowly by sneaking. You will also never feel hungry, as ghosts can't eat dinner.$(br2)Examples for how to get this effect:$(li)Transform into $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l)$(li)Use the $(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l)$(li)Use the $(l:saber/items/wonder_ride_books#ghost_ijinroku_wonder_ride_book)Ghost Ijinroku Wonder Ride Book$(/l)"
 		},
 		{
 			"type": "patchouli:text",

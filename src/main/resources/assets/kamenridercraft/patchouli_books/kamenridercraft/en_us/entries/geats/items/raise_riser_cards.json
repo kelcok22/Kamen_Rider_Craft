@@ -1,0 +1,84 @@
+{
+	"name": "Raise Riser Cards",
+	"icon": "kamenridercraft:ziin_raise_riser_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ziin_raise_riser_card",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ziin_raise_riser_card",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beroba_raise_riser_card",
+			"title": "Raise Riser Card (Beroba)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Beroba's $(l:geats/riders/beroba#beroba)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_raise_riser_card",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beroba_black_raise_riser_card",
+			"title": "Black Raise Riser Card (Beroba)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Beroba's $(l:geats/riders/beroba#premium)Premium Beroba$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_black_raise_riser_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kekera_raise_riser_card",
+			"title": "Raise Riser Card (Kekera)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Kekera's $(l:geats/riders/kekera#kekera)base$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kekera_raise_riser_card",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kyuun_raise_riser_card",
+			"title": "Raise Riser Card (Kyuun)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kyuun_raise_riser_card",
+			"title": " ",
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kekera_black_raise_riser_card",
+			"title": "Black Raise Riser Card (Kekera)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Kekera's $(l:geats/riders/kekera#premium)Premium Kekera$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kekera_black_raise_riser_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

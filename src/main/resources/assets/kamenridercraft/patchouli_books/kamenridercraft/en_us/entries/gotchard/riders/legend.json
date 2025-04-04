@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:gotchard/items/legend_ride_chemy_card)Legend Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#legend_ride_chemy_card)Legend Ride Chemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",

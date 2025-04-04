@@ -13,6 +13,8 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
+
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -72,8 +74,7 @@ public class RiderFormChangeItem extends BaseItem {
     private List<RiderFormChangeItem> incompatibleForms= new ArrayList<RiderFormChangeItem>();
 
     public String[] compatibilityList= new String[] {""};
-    private Boolean HAS_NEED_ITEM_LIST = false;
-    public List<Item> needItemList;
+    public List<Item> needItemList = new ArrayList<Item>();
 
     private Boolean NEED_BASE_FORM = false;
     private RiderFormChangeItem NEED_FORM_SLOT_1;
@@ -329,7 +330,6 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem AddNeedItemList(List<Item> NEED_ITEM) {
         needItemList=NEED_ITEM;
-        HAS_NEED_ITEM_LIST=true;
         return this;
     }
 
@@ -350,20 +350,21 @@ public class RiderFormChangeItem extends BaseItem {
         return false;
     }
 
-    public Boolean Check_Inventory(ItemStack stack,Item item) {
+	public boolean inventoryOrHolderContains(Player player, Item item) {
+		NonNullList<ItemStack> inv = NonNullList.create();
+		inv.addAll(player.getInventory().items);
+		inv.addAll(player.getInventory().armor);
+		inv.add(player.getInventory().offhand.getFirst());
 
-            int J = 0;
-            Iterator var7 = ((ItemContainerContents) stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
-
-            while (var7.hasNext()) {
-                ItemStack itemstack = (ItemStack) var7.next();
-                ++J;
-                if (itemstack.getItem() == item) {
-                    return true;
-                } else return false;
-            }
-        return false;
-    }
+		if (player.getInventory().countItem(item)!=0) return true;
+		else for (int i = 0; i < inv.size(); i++) {
+			if (inv.get(i).has(DataComponents.CONTAINER)) {
+				for (ItemStack stack : inv.get(i).getComponents().get(DataComponents.CONTAINER).nonEmptyItems()) if (stack.getItem() == item) return true;
+			} else if (inv.get(i).has(DataComponents.BUNDLE_CONTENTS))
+				for (ItemStack stack : inv.get(i).getComponents().get(DataComponents.BUNDLE_CONTENTS).items()) if (stack.getItem() == item) return true;
+		}
+		return false;
+	}
 
         public Boolean CanChange(Player player,RiderDriverItem belt, ItemStack stack) {
 
@@ -382,15 +383,9 @@ public class RiderFormChangeItem extends BaseItem {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {
-            for (int i = 0; i < NEEDITEM.size(); i++)
+            for (Item item : NEEDITEM)
             {
-                if (player.getInventory().countItem(NEEDITEM.get(i))==0){
-                    if (belt.Has_Inventory) {
-                        if (Check_Inventory(stack,NEEDITEM.get(i))){
-
-                        }else return false;
-                    }else return false;
-                }
+                if (!inventoryOrHolderContains(player, item)) return false;
             }
         }
         if (NEED_BASE_FORM )if (RiderDriverItem.get_Form_Item(stack, 1)!=belt.Base_Form_Item)return false;
@@ -399,12 +394,10 @@ public class RiderFormChangeItem extends BaseItem {
         if (NEED_FORM_SLOT_3!=null )if (RiderDriverItem.get_Form_Item(stack, 3)!=NEED_FORM_SLOT_3)return false;
         if (NEED_FORM_SLOT_4!=null )if (RiderDriverItem.get_Form_Item(stack, 4)!=NEED_FORM_SLOT_4)return false;
 
-        if  (HAS_NEED_ITEM_LIST) {
-            for (int i = 0; i < needItemList.size(); i++)
+        if  (!needItemList.isEmpty()) {
+            for (Item item : needItemList)
             {
-                if (player.getInventory().countItem(needItemList.get(i))==0){
-                    return false;
-                }
+                if (!inventoryOrHolderContains(player, item)) return false;
             }
         }
         return true;

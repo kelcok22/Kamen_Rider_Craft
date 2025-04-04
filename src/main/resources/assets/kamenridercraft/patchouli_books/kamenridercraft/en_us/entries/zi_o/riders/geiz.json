@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:zi_o/items/geiz_ridewatch)Geiz Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#geiz_ridewatch)Geiz Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "FaizArmor",
-			"text": "Accessed with the $(l:zi_o/items/faiz_ridewatch)Faiz Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#faiz_ridewatch)Faiz Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "WizardArmor",
-			"text": "Accessed with the $(l:zi_o/items/wizard_ridewatch)Wizard Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#wizard_ridewatch)Wizard Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DriveArmor",
-			"text": "Accessed with the $(l:zi_o/items/drive_ridewatch)Drive Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#drive_ridewatch)Drive Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GhostArmor",
-			"text": "Accessed with the $(l:zi_o/items/ghost_ridewatch)Ghost Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ghost_ridewatch)Ghost Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ex-AidArmor",
-			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GenmArmor",
-			"text": "Accessed with the $(l:zi_o/items/genm_ridewatch)Genm Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#genm_ridewatch)Genm Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BuildArmor",
-			"text": "Accessed with the $(l:zi_o/items/build_ridewatch)Build Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#build_ridewatch)Build Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GeizRevive Goretsu",
-			"text": "Accessed with the $(l:zi_o/items/geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GeizRevive Shippu",
-			"text": "Accessed with the $(l:zi_o/items/geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#geiz_revive_ridewatch)Geiz Revive Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GeizMajesty",
-			"text": "Accessed with the $(l:zi_o/items/geiz_majesty_ridewatch)Geiz Majesty Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#geiz_majesty_ridewatch)Geiz Majesty Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BibillArmor",
-			"text": "Accessed with the $(l:zi_o/items/bibiru_geiz_ridewatch)Bibiru Geiz Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#bibiru_geiz_ridewatch)Bibiru Geiz Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",

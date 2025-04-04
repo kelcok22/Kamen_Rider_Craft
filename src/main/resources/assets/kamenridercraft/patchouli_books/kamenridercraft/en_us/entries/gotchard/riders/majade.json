@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Sununicorn",
-			"text": "Accessed with the $(l:gotchard/items/unicon_ride_chemy_card)Unicon$(/l) or $(l:gotchard/items/the_sun_ride_chemy_card)The Sun$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#unicon_ride_chemy_card)Unicon$(/l) or $(l:gotchard/items/ride_chemy_cards#the_sun_ride_chemy_card)The Sun$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Mooncerberus",
-			"text": "Accessed with the $(l:gotchard/items/yoacerberus_ride_chemy_card)Yoacerberus$(/l) or $(l:gotchard/items/neminemoon_ride_chemy_card)Neminemoon$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#yoacerberus_ride_chemy_card)Yoacerberus$(/l) or $(l:gotchard/items/ride_chemy_cards#neminemoon_ride_chemy_card)Neminemoon$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",

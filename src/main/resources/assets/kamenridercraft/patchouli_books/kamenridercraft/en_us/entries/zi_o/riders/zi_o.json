@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:zi_o/items/zi_o_ridewatch)Zi-O Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#zi_o_ridewatch)Zi-O Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "KuugaArmor",
-			"text": "Accessed with the $(l:zi_o/items/kuuga_ridewatch)Kuuga Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#kuuga_ridewatch)Kuuga Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "AgitoArmor",
-			"text": "Accessed with the $(l:zi_o/items/agito_ridewatch)Agito Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#agito_ridewatch)Agito Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "RyukiArmor",
-			"text": "Accessed with the $(l:zi_o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ryuki_ridewatch)Ryuki Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BladeArmor",
-			"text": "Accessed with the $(l:zi_o/items/blade_ridewatch)Blade Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#blade_ridewatch)Blade Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "HibikiArmor",
-			"text": "Accessed with the $(l:zi_o/items/hibiki_ridewatch)Hibiki Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#hibiki_ridewatch)Hibiki Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "KabutoArmor",
-			"text": "Accessed with the $(l:zi_o/items/kabuto_ridewatch)Kabuto Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#kabuto_ridewatch)Kabuto Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Den-OArmor",
-			"text": "Accessed with the $(l:zi_o/items/den_o_ridewatch)Den-O Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#den_o_ridewatch)Den-O Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "KivaArmor",
-			"text": "Accessed with the $(l:zi_o/items/kiva_ridewatch)Kiva Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#kiva_ridewatch)Kiva Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "WArmor",
-			"text": "Accessed with the $(l:zi_o/items/w_ridewatch)W Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#w_ridewatch)W Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OOOArmor",
-			"text": "Accessed with the $(l:zi_o/items/ooo_ridewatch)OOO Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ooo_ridewatch)OOO Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "FourzeArmor",
-			"text": "Accessed with the $(l:zi_o/items/fourze_ridewatch)Fourze Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#fourze_ridewatch)Fourze Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GaimArmor",
-			"text": "Accessed with the $(l:zi_o/items/gaim_ridewatch)Gaim Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#gaim_ridewatch)Gaim Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GhostArmor",
-			"text": "Accessed with the $(l:zi_o/items/ghost_ridewatch)Ghost Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ghost_ridewatch)Ghost Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ex-AidArmor",
-			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ex_aid_ridewatch)Ex-Aid Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BuildArmor",
-			"text": "Accessed with the $(l:zi_o/items/build_ridewatch)Build Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#build_ridewatch)Build Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor",
-			"text": "Accessed with the $(l:zi_o/items/decade_ridewatch)Decade Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#decade_ridewatch)Decade Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Ryuki Form",
-			"text": "Accessed with the $(l:zi_o/items/ryuki_ridewatch)Ryuki Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ryuki_ridewatch)Ryuki Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Faiz Form",
-			"text": "Accessed with the $(l:zi_o/items/faiz_ridewatch)Faiz Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#faiz_ridewatch)Faiz Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor OOO Form",
-			"text": "Accessed with the $(l:zi_o/items/ooo_ridewatch)OOO Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ooo_ridewatch)OOO Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Ghost Form",
-			"text": "Accessed with the $(l:zi_o/items/ghost_ridewatch)Ghost Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ghost_ridewatch)Ghost Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -305,7 +305,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Ex-Aid Form",
-			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -319,7 +319,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Ex-Aid Form",
-			"text": "Accessed with the $(l:zi_o/items/ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ex_aid_ridewatch)Ex-Aid Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -333,7 +333,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Build Form",
-			"text": "Accessed with the $(l:zi_o/items/build_ridewatch)Build Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#build_ridewatch)Build Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -347,7 +347,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "DecadeArmor Saber Form",
-			"text": "Accessed with the $(l:zi_o/items/saber_ridewatch)Saber Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#saber_ridewatch)Saber Ridewatch$(/l) as $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,7 +361,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zi-O II",
-			"text": "Accessed with the $(l:zi_o/items/zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#zi_o_ii_ridewatch)Zi-O II Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Zi-OTrinity",
-			"text": "Accessed with the $(l:zi_o/items/zi_o_trinity_ridewatch)Zi-O Trinity Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#zi_o_trinity_ridewatch)Zi-O Trinity Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "GrandZi-O",
-			"text": "Accessed with the $(l:zi_o/items/grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#grand_zi_o_ridewatch)Grand Zi-O Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "OhmaForm",
-			"text": "Accessed with the $(l:zi_o/items/ohma_zi_o_ridewatch)Ohma Zi-O Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#ohma_zi_o_ridewatch)Ohma Zi-O Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "WozArmor",
-			"text": "Accessed with the $(l:zi_o/items/woz_ridewatch)Woz Ridewatch$(/l)"
+			"text": "Accessed with the $(l:zi_o/items/ridewatches#woz_ridewatch)Woz Ridewatch$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hanselnuts to Gretel",
-			"text": "Accessed with the $(l:saber/items/hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hansel Bremen",
-			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hansel Butasan",
-			"text": "Accessed with the $(l:saber/items/kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",

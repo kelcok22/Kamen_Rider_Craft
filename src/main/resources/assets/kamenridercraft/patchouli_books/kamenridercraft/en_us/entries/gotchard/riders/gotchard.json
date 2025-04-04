@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Steamhopper",
-			"text": "Accessed with the $(l:gotchard/items/hopper1_ride_chemy_card)Hopper1$(/l) or $(l:gotchard/items/steamliner_ride_chemy_card)Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)Hopper1$(/l) or $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Appareskebow",
-			"text": "Accessed with the $(l:gotchard/items/skebows_ride_chemy_card)Skebows$(/l) or $(l:gotchard/items/apparebushido_ride_chemy_card)Apparebushido$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#skebows_ride_chemy_card)Skebows$(/l) or $(l:gotchard/items/ride_chemy_cards#apparebushido_ride_chemy_card)Apparebushido$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Antwrestler",
-			"text": "Accessed with the $(l:gotchard/items/antrooper_ride_chemy_card)Antrooper$(/l) or $(l:gotchard/items/wrestler_g_ride_chemy_card)Wrestler G$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#antrooper_ride_chemy_card)Antrooper$(/l) or $(l:gotchard/items/ride_chemy_cards#wrestler_g_ride_chemy_card)Wrestler G$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Needlehawk",
-			"text": "Accessed with the $(l:gotchard/items/hawkstar_ride_chemy_card)Hawkstar$(/l) or $(l:gotchard/items/saboneedle_ride_chemy_card)Saboneedle$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hawkstar_ride_chemy_card)Hawkstar$(/l) or $(l:gotchard/items/ride_chemy_cards#saboneedle_ride_chemy_card)Saboneedle$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Goldmechanichor",
-			"text": "Accessed with the $(l:gotchard/items/golddash_ride_chemy_card)Golddash$(/l) or $(l:gotchard/items/mechanichani_ride_chemy_card)Mechanichani$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#golddash_ride_chemy_card)Golddash$(/l) or $(l:gotchard/items/ride_chemy_cards#mechanichani_ride_chemy_card)Mechanichani$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Lightningjungle",
-			"text": "Accessed with the $(l:gotchard/items/raidenji_ride_chemy_card)Raidenji$(/l) or $(l:gotchard/items/junglejan_ride_chemy_card)Junglejan$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#raidenji_ride_chemy_card)Raidenji$(/l) or $(l:gotchard/items/ride_chemy_cards#junglejan_ride_chemy_card)Junglejan$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -95,7 +95,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Venommariner",
-			"text": "Accessed with the $(l:gotchard/items/deepmariner_ride_chemy_card)Deepmariner$(/l) or $(l:gotchard/items/venomdake_ride_chemy_card)Venomdake$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#deepmariner_ride_chemy_card)Deepmariner$(/l) or $(l:gotchard/items/ride_chemy_cards#venomdake_ride_chemy_card)Venomdake$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -109,7 +109,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Burninggorilla",
-			"text": "Accessed with the $(l:gotchard/items/gorillasensei_ride_chemy_card)Gorillasensei$(/l) or $(l:gotchard/items/burningnero_ride_chemy_card)Burningnero$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#gorillasensei_ride_chemy_card)Gorillasensei$(/l) or $(l:gotchard/items/ride_chemy_cards#burningnero_ride_chemy_card)Burningnero$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Dokkirishovel",
-			"text": "Accessed with the $(l:gotchard/items/dokkirimajin_ride_chemy_card)Dokkirimajin$(/l) or $(l:gotchard/items/gutsshovel_ride_chemy_card)Gutsshovel$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#dokkirimajin_ride_chemy_card)Dokkirimajin$(/l) or $(l:gotchard/items/ride_chemy_cards#gutsshovel_ride_chemy_card)Gutsshovel$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Hiikesurose",
-			"text": "Accessed with the $(l:gotchard/items/hiikescue_ride_chemy_card)Hiikescue$(/l) or $(l:gotchard/items/flayrose_ride_chemy_card)Flayrose$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hiikescue_ride_chemy_card)Hiikescue$(/l) or $(l:gotchard/items/ride_chemy_cards#flayrose_ride_chemy_card)Flayrose$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Gotchard Cross UFO-X",
-			"text": "Accessed with the $(l:gotchard/items/ufo_x_ride_chemy_card)UFO-X Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X Ride Chemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Super Gotchard Cross X-Rex",
-			"text": "Accessed with the $(l:gotchard/items/x_rex_ride_chemy_card)X-Rex Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_rex_ride_chemy_card)X-Rex Ride Chemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Star Gotchard",
-			"text": "Accessed with the $(l:gotchard/items/x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X Assemble Ride Chemy Card$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Marsphoenix",
-			"text": "Accessed with the $(l:gotchard/items/firemars_ride_chemy_card)Firemars$(/l) or $(l:gotchard/items/inphoenix_ride_chemy_card)Inphoenix$(/l) Ride Chemy Card (both cards must be in your inventory. the Televi-Kun variants can also be used)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card)Firemars$(/l) or $(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card)Inphoenix$(/l) Ride Chemy Card (both cards must be in your inventory. the Televi-Kun variants can also be used)"
 		},
 		{
 			"type": "patchouli:text",
@@ -249,7 +249,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Exceed Mighty",
-			"text": "Accessed with the $(l:gotchard/items/kuuga_ride_chemy_card)Kuuga$(/l) or $(l:gotchard/items/faiz_ride_chemy_card)Faiz$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kuuga_ride_chemy_card)Kuuga$(/l) or $(l:gotchard/items/ride_chemy_cards#faiz_ride_chemy_card)Faiz$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -277,7 +277,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Cyclone Tatoba",
-			"text": "Accessed with the $(l:gotchard/items/w_ride_chemy_card)Double$(/l) or $(l:gotchard/items/ooo_ride_chemy_card)OOO$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#w_ride_chemy_card)Double$(/l) or $(l:gotchard/items/ride_chemy_cards#ooo_ride_chemy_card)OOO$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "FullFull Rocket",
-			"text": "Accessed with the $(l:gotchard/items/fourze_ride_chemy_card)Fourze$(/l) or $(l:gotchard/items/build_ride_chemy_card)Build$(/l) Ride Chemy Card (both cards must be in your inventory)"
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#fourze_ride_chemy_card)Fourze$(/l) or $(l:gotchard/items/ride_chemy_cards#build_ride_chemy_card)Build$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
 			"type": "patchouli:text",

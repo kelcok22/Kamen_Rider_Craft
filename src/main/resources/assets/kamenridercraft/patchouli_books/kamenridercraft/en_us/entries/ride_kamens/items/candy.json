@@ -2,7 +2,7 @@
 	"name": "Nourishing Candy S",
 	"icon": "kamenridercraft:candy",
 	"category": "kamenridercraft:ride_kamens/items",
-	"sortnum": 9,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

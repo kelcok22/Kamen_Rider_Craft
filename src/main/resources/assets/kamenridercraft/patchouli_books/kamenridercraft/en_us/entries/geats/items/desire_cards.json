@@ -1,0 +1,45 @@
+{
+	"name": "Desire Cards",
+	"icon": "kamenridercraft:boost_mkii_wish_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_mkii_wish_card",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boost_mkii_wish_card",
+			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jyamashin_wish_card",
+			"title": "Jyamashin Desire Card",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to revert $(l:geats/riders/buffa)Kamen Rider Buffa$(/l) to Entry Form and unlock $(l:geats/riders/buffa#jyamashin)Jyamashin$(/l) forms"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamashin_wish_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fantasy_wish_card",
+			"title": "Fantasy Desire Card",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fantasy_wish_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

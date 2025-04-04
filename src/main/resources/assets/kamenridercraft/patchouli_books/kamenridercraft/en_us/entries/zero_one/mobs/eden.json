@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/eden_zetsumerisekey)Eden Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/hellrise_progrisekey)Hellrise Progrisekey$(/l) (20%)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Health: 200$(br2)Drops$(li)2-4 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#eden_zetsumerisekey)Eden Zetsumerisekey$(/l)$(li)1 $(l:zero_one/items/progrisekeys#hellrise_progrisekey)Hellrise Progrisekey$(/l) (20%)"
 		}
 	]
 }

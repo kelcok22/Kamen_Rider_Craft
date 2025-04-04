@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/legeiel_alter_ride_book)Legeiel Alter Ride Book$(/l)$(li)1 $(l:saber/items/elemental_dragon_wonder_ride_book)Elemental Dragon Wonder Ride Book$(/l) (with the $(l:saber/items/primitive_dragon_wonder_ride_book)Primitive Dragon Wonder Ride Book$(/l) in your inventory)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/alter_ride_books#legeiel_alter_ride_book)Legeiel Alter Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#elemental_dragon_wonder_ride_book)Elemental Dragon Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#primitive_dragon_wonder_ride_book)Primitive Dragon Wonder Ride Book$(/l) in your inventory)"
 		}
 	]
 }

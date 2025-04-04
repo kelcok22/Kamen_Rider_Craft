@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/da_paan_rider_core_id)Kamen Rider Da.Paan Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#da_paan_rider_core_id)Kamen Rider Da.Paan Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Magnum Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumBeat Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",

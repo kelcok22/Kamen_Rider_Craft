@@ -25,7 +25,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)$(l:x/items/perfecter)Perfecter$(/l) for 1 $(l:x/items/ridol_core)Ridol Core$(/l)$(li)$(l:ichigo/items/shocker_emblem)Shocker Emblem$(/l) for 2 emeralds$(li)$(l:shin/items/shin_stone)Shin Stone$(/l) for 2 emeralds$(li)$(l:zo/items/zo_stone)ZO Stone$(/l) for 2 emeralds$(li)$(l:j/items/j_stone)J Stone$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:g/items/goro_wine_bottle)Goro Wine Bottle$(/l) for 2 emeralds$(li)$(l:misc/items/sinister_pachinko_ball)Sinister Pachinko Ball$(/l) for 4 emeralds$(br2)Journeyman Trades:$(li)$(l:misc/blocks/ichigo_chair)Ichigo Chair$(/l) for 2 emeralds$(li)$(l:ichigo/items/nophoon_core)Nophoon Core$(/l) for 2 emeralds"
+			"text": "Novice Trades:$(li)$(l:x/items/perfecter)Perfecter$(/l) for 1 $(l:x/items/ridol_core)Ridol Core$(/l)$(li)$(l:ichigo/items/shocker_emblem)Shocker Emblem$(/l) for 2 emeralds$(li)$(l:shin/items/shin_stone)Shin Stone$(/l) for 2 emeralds$(li)$(l:zo/items/zo_stone)ZO Stone$(/l) for 2 emeralds$(li)$(l:j/items/j_stone)J Stone$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:g/items/goro_wine_bottle)Goro Wine Bottle$(/l) for 2 emeralds$(li)$(l:misc/items/sinister_pachinko_ball)Sinister Pachinko Ball$(/l) for 4 emeralds$(br2)Journeyman Trades:$(li)$(l:misc/blocks/ichigo_chair)Ichigo Chair$(/l) for 2 emeralds$(li)$(l:ichigo/items/typhoon_cores#nophoon_core)Nophoon Core$(/l) for 2 emeralds"
 		},
 		{
 			"type": "patchouli:entity",
@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)$(l:zero_one/items/blank_progrisekey)Blank Progrisekey$(/l) for 1 emerald$(li)1 emerald for 3 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(br2)Apprentice Trades:$(li)3 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) for 2 emeralds$(br2)Journeyman Trades:$(li)$(l:zero_one/items/thousand_key)Thousand Key$(/l) for 12 emeralds"
+			"text": "Novice Trades:$(li)$(l:zero_one/items/blank_progrisekey)Blank Progrisekey$(/l) for 1 emerald$(li)1 emerald for 3 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(br2)Apprentice Trades:$(li)3 $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) for 2 emeralds$(br2)Journeyman Trades:$(li)$(l:zero_one/items/progrisekeys#thousand_key)Thousand Key$(/l) for 12 emeralds"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)1 $(l:gavv/items/doppudding_gochizo)Doppudding Gochizo$(/l) for 1 $(l:gavv/items/heatpress)Hitpress$(/l)$(li)1 $(l:gavv/items/purujelly_gochizo)Purujelly Gochizo$(/l) for 2 $(l:gavv/items/heatpress)Hitpresses$(/l)"
+			"text": "Novice Trades:$(li)1 $(l:gavv/items/gochizo#doppudding_gochizo)Doppudding Gochizo$(/l) for 1 $(l:gavv/items/heatpress)Hitpress$(/l)$(li)1 $(l:gavv/items/gochizo#purujelly_gochizo)Purujelly Gochizo$(/l) for 2 $(l:gavv/items/heatpress)Hitpresses$(/l)"
 		},
 		{
 			"type": "patchouli:entity",

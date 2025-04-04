@@ -1,0 +1,266 @@
+{
+	"name": "Zetsumerisekeys",
+	"icon": "kamenridercraft:dire_wolf_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "dire_wolf_zetsumerisekey",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Vulcan & Valkyrie (2021, V-Cinema film)$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#lone_wolf)Lone Wolf$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dire_wolf_zetsumerisekey",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)Dire Wolf Sold Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "serval_tiger_zetsumerisekey",
+			"title": "Serval Tiger Zetsumerisekey",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider Vulcan & Valkyrie (2021, V-Cinema film)$(br2)Used to access Valkyrie's $(l:zero_one/riders/valkyrie#justice_serval)Justice serval$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:serval_tiger_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)Serval Tiger Sold Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "awaking_arsino_zetsumerisekey",
+			"title": "Awaking Arsino Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Thouser's $(l:zero_one/devices/zaia_thousandriver)ZAIA Thousandriver (Thouser)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:awaking_arsino_zetsumerisekey",
+			"title": " ",
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eden_zetsumerisekey",
+			"title": "Eden Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used to craft Eden's $(l:zero_one/devices/eden_driver)Eden Driver (Eden)$(/l)$(br2)Used to craft Lucifer's $(l:zero_one/devices/eden_driver_lucifer)Eden Driver (Lucifer)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eden_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/eden)Kamen Rider Eden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "triceratops_zetsumerisekey",
+			"title": "Triceratops Zetsumerisekey",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Used to craft Zaia's $(l:zero_one/devices/zaia_thousandriver_zaia)ZAIA Thousandriver (Zaia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:triceratops_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "carnotaurus_zetsumerisekey",
+			"title": "Carnotaurus Zetsumerisekey",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Used to craft Zaia's $(l:zero_one/devices/zaia_thousandriver_zaia)ZAIA Thousandriver (Zaia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:carnotaurus_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "massbrain_zetsumerisekey",
+			"title": "Massbrain Zetsumerisekey",
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Used to craft MetsubouJinrai's $(l:zero_one/devices/metsuboujinrai_driver)MetsubouJinrai Driver$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:massbrain_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "berotha_zetsumerisekey",
+			"title": "Berotha Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Berotha Magia's $(l:zero_one/devices/zetsumeriser_berotha)Zetsumeriser (Berotha Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:berotha_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuehne_zetsumerisekey",
+			"title": "Kuehne Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Kuehne Magia's $(l:zero_one/devices/zetsumeriser_kuehne)Zetsumeriser (Kuehne Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuehne_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ekal_zetsumerisekey",
+			"title": "Ekal Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Ekal Magia's $(l:zero_one/devices/zetsumeriser_ekal)Zetsumeriser (Ekal Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ekal_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neohi_zetsumerisekey",
+			"title": "Neohi Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Neohi Magia's $(l:zero_one/devices/zetsumeriser_neohi)Zetsumeriser (Neohi Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neohi_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "onycho_zetsumerisekey",
+			"title": "Onycho Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Onycho Magia's $(l:zero_one/devices/zetsumeriser_onycho)Zetsumeriser (Onycho Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:onycho_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vicarya_zetsumerisekey",
+			"title": "Vicarya Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Vicarya Magia's $(l:zero_one/devices/zetsumeriser_vicarya)Zetsumeriser (Vicarya Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vicarya_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaeru_zetsumerisekey",
+			"title": "Gaeru Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Gaeru Magia's $(l:zero_one/devices/zetsumeriser_gaeru)Zetsumeriser (Gaeru Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaeru_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_zetsumerisekey",
+			"title": "Mammoth Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Mammoth Magia's $(l:zero_one/devices/zetsumeriser_mammoth)Zetsumeriser (Mammoth Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dodo_zetsumerisekey",
+			"title": "Dodo Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Dodo Magia's $(l:zero_one/devices/zetsumeriser_dodo)Zetsumeriser (Dodo Magia)$(/l)$(br2)Used to craft the Dodo Magia Custom's $(l:zero_one/devices/zetsumeriser_dodo_custom)Zetsumeriser (Dodo Magia Custom)$(/l)$(br2)Used to craft the Dodo Magia Custom Two's $(l:zero_one/devices/zetsumeriser_dodo_custom_two)Zetsumeriser (Dodo Magia Custom Two)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dodo_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arsino_zetsumerisekey",
+			"title": "Arsino Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Arsino Magia's $(l:zero_one/devices/zetsumeriser_arsino)Zetsumeriser (Arsino Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:arsino_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_zetsumerisekey",
+			"title": "Unknown Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It On You-roo-wn! Now, It's Aruto or Nothing!! (2019, Hyper Battle Video)$(br2)Used to craft the Onycho Magia's $(l:zero_one/devices/zetsumeriser_onycho)Zetsumeriser (Onycho Magia)$(/l)$(br2)Used to craft the Vicarya Magia's $(l:zero_one/devices/zetsumeriser_vicarya)Zetsumeriser (Vicarya Magia)$(/l)$(br2)Used to craft the Gaeru Magia's $(l:zero_one/devices/zetsumeriser_gaeru)Zetsumeriser (Gaeru Magia)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unknown_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/magia)Magia$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "japanese_wolf_zetsumerisekey",
+			"title": "Japanese Wolf Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Naki's $(l:zero_one/devices/forceriser_naki)MetsubouJinrai Forceriser (Naki)$(/l)$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#orthros)Orthros Vulcan$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:japanese_wolf_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocking_hopper_zetsumerisekey",
+			"title": "Rocking Hopper Zetsumerisekey",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Used to craft Ichi-Gata's $(l:zero_one/devices/cycloneriser)Cycloneriser$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocking_hopper_zetsumerisekey",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
+		}
+	]
+}

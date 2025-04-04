@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/revi_rider_core_id)Kamen Rider Revi Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#revi_rider_core_id)Kamen Rider Revi Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Form",
-			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Beat Armed Propeller",
-			"text": "Accessed with the $(l:geats/items/beat_raise_buckle)Beat Buckle$(/l) in your main hand and the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) in your main hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#propeller_raise_buckle)Propeller Buckle$(/l) in your main hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rex Genome",
-			"text": "Accessed with the $(l:geats/items/revice_driver_raise_buckle)Revice Driver Buckle$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#revice_driver_raise_buckle)Revice Driver Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",

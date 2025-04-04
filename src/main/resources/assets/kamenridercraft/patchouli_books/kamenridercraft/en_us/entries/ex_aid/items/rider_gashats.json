@@ -542,7 +542,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -555,7 +555,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:toki_meki_bridal_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -698,7 +698,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:genm_musou_gashat",
 			"title": " ",
-			"text": "Obtained by using the $(l:zero_one/items/president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",

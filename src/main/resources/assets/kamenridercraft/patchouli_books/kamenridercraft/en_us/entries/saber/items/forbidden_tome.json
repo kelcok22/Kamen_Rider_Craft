@@ -2,7 +2,7 @@
 	"name": "Forbidden Tome",
 	"icon": "kamenridercraft:forbidden_tome",
 	"category": "kamenridercraft:saber/items",
-	"sortnum": 71,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

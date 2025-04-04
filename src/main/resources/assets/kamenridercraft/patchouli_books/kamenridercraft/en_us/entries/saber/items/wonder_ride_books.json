@@ -1,0 +1,815 @@
+{
+	"name": "Wonder Ride Books",
+	"icon": "kamenridercraft:brave_dragon_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "brave_dragon_wonder_ride_book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Saber's $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#brave_dragon)Brave Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brave_dragon_wonder_ride_book",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "storm_eagle_wonder_ride_book",
+			"title": "Storm Eagle Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#storm_eagle)Storm Eagle$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#storm_eagle)Storm Eagle$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:storm_eagle_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saiyuu_journey_wonder_ride_book",
+			"title": "Saiyuu Journey Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#saiyuu_journey)Saiyuu Journey$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#saiyuu_journey)Saiyuu Journey$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:saiyuu_journey_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tenkuu_no_pegasus_wonder_ride_book",
+			"title": "Tenkuu no Pegasus Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Blades's $(l:saber/riders/blades#tenkuu_no_pegasus)Tenkuu no Pegasus$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#tenkuu_no_pegasus)Tenkuu no Pegasus$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tenkuu_no_pegasus_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_senki_wonder_ride_book",
+			"title": "Lion Senki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Blades's $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lion_senki)Lion Senki$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lion_senki)Lion Senki$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lion_senki)Lion Senki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_senki_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "peter_fantasista_wonder_ride_book",
+			"title": "Peter Fantasista Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#peter_fantasista)Peter Fantasista$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#peter_fantasista)Peter Fantasista$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:peter_fantasista_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tri_cerberus_wonder_ride_book",
+			"title": "Tri Cerberus Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Blades's $(l:saber/riders/blades#tri_cerberus)Tri Cerberus$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#tri_cerberus)Tri Cerberus$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tri_cerberus_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "needle_hedgehog_wonder_ride_book",
+			"title": "Needle Hedgehog Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#needle_hedgehog)Needle Hedgehog$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#needle_hedgehog)Needle Hedgehog$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:needle_hedgehog_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lamp_do_alngina_wonder_ride_book",
+			"title": "Lamp do Alangina Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Espada's $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lamp_do_alangina)Lamp do Alangina$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lamp_do_alngina_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "genbu_shinwa_wonder_ride_book",
+			"title": "Genbu Shinwa Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Buster's $(l:saber/devices/sword_of_logos_buckle_buster)Sword of Logos Buckle (Buster)$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#genbu_shinwa)Genbu Shinwa$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:genbu_shinwa_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jackun_to_domamenoki_wonder_ride_book",
+			"title": "Jackun to Domamenoki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#jackun_to_domamenoki)Jackun to Domamenoki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jackun_to_domamenoki_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sarutobi_ninjaden_wonder_ride_book",
+			"title": "Sarutobi Ninjaden Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Kenzan's $(l:saber/devices/sword_of_logos_buckle_kenzan)Sword of Logos Buckle (Kenzan)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sarutobi_ninjaden_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kobuta_3_kyoudai_wonder_ride_book",
+			"title": "Kobuta 3Kyoudai Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#kobuta_3_kyoudai)Kobuta 3Kyoudai$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#kobuta_3_kyoudai)Kobuta 3Kyoudai$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#kobuta_3_kyoudai)Kobuta 3Kyoudai$(/l) form$(br)Used to access Slash's $(l:saber/riders/slash#kobuta_3_kyoudai)Kobuta 3Kyoudai$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kobuta_3_kyoudai_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hanselnuts_to_gretel_wonder_ride_book",
+			"title": "Hanselnuts to Gretel Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Slash's $(l:saber/devices/sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Slash's $(l:saber/riders/slash#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bremen_no_rock_band_wonder_ride_book",
+			"title": "Bremen no Rock Band Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#bremen_no_rock_band)Bremen no Rock Band$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#bremen_no_rock_band)Bremen no Rock Band$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#bremen_no_rock_band)Bremen no Rock Band$(/l) form$(br)Used to access Slash's $(l:saber/riders/slash#bremen_no_rock_band)Bremen no Rock Band$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bremen_no_rock_band_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jaaku_dragon_wonder_ride_book",
+			"title": "Jaaku Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Calibur's $(l:saber/devices/jaken_caliburdriver)Jaken Caliburdriver$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#jaaku_dragon)Jaaku Dragon$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#jaaku_dragon)Jaaku Dragon$(/l) form$(br)Used to access Calibur's $(l:saber/riders/calibur#jaaku_dragon)Jaaku Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jaaku_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jaou_dragon_wonder_ride_book",
+			"title": "Jaou Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Calibur's $(l:saber/riders/calibur#jaou_dragon)Jaou Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jaou_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kin_no_buki_gin_no_buki_wonder_ride_book",
+			"title": "Kin no Buki Gin no Buki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Saikou's $(l:saber/devices/seiken_saikou_driver)Seiken Saikou Driver$(/l)$(br2)Used to access Saikou's $(l:saber/riders/saikou#saikou)base form$(/l) and $(l:saber/riders/saikou#shadow)Saikou Shadow$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kin_no_buki_gin_no_buki_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_swordman_wonder_ride_book",
+			"title": "X-Swordman Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saikou's $(l:saber/riders/saikou#x_swordman)X-Swordman$(/l) forms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/x_swordman_wonder_ride_book"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "konchuu_daihyakka_wonder_ride_book",
+			"title": "Konchuu Daihyakka Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:konchuu_daihyakka_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ocean_history_wonder_ride_book",
+			"title": "Ocean History Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ocean_history_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "omni_force_wonder_ride_book",
+			"title": "Omni Force Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:omni_force_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grimoire_wonder_ride_book",
+			"title": "Grimoire Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:grimoire_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tassel_dark_wonder_ride_book",
+			"title": "Tassel Dark Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tassel_dark_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eternal_phoenix_wonder_ride_book",
+			"title": "Eternal Phoenix Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Used to craft Falchion's $(l:saber/devices/haken_bladriver_falchion)Haken Bladriver (Falchion)$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#eternal_phoenix)Eternal Phoenix$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#eternal_phoenix)Eternal Phoenix$(/l) form$(br)Used to access Falchion's $(l:saber/riders/falchion#eternal_phoenix)Eternal Phoenix$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eternal_phoenix_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazing_siren_wonder_ride_book",
+			"title": "Amazing Siren Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Used to access Falchion's $(l:saber/riders/falchion#amazing_siren)Amazing Siren$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazing_siren_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirin_no_ongaeshi_wonder_ride_book",
+			"title": "Kirin no Ongaeshi Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#kirin_no_ongaeshi)Kirin no Ongaeshi$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#kirin_no_ongaeshi)Kirin no Ongaeshi$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirin_no_ongaeshi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sarukani_wars_wonder_ride_book",
+			"title": "Sarukani Wars Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#sarukani_wars)Sarukani Wars$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#sarukani_wars)Sarukani Wars$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sarukani_wars_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakusou_usagi_to_kame_wonder_ride_book",
+			"title": "Bakusou Usagi to Kame Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#bakusou_usagi_to_kame)Bakusou Usagi to Kame$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#bakusou_usagi_to_kame)Bakusou Usagi to Kame$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "houshin_kamen_engi_wonder_ride_book",
+			"title": "Houshin Kamen Engi Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#houshin_kamen_engi)Houshin Kamen Engi$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#houshin_kamen_engi)Houshin Kamen Engi$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:houshin_kamen_engi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tsuki_no_hime_kaguyan_wonder_ride_book",
+			"title": "Tsuki no Hime Kaguyan Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#tsuki_no_hime_kaguyan)Tsuki no Hime Kaguyan$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#tsuki_no_hime_kaguyan)Tsuki no Hime Kaguyan$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "osha_jizou_san_wonder_ride_book",
+			"title": "Osha Jizou San Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#osha_jizou_san)Osha Jizou San$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#osha_jizou_san)Osha Jizou San$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:osha_jizou_san_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "issun_bushi_wonder_ride_book",
+			"title": "Issun Bushi Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#issun_bushi)Issun Bushi$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#issun_bushi)Issun Bushi$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:issun_bushi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daishougun_momoichirou_wonder_ride_book",
+			"title": "Daishougun Momoichirou Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#daishougun_momoichirou)Daishougun Momoichirou$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#daishougun_momoichirou)Daishougun Momoichirou$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daishougun_momoichirou_wonder_ride_book",
+			"title": " ",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daikengou_urashimajirou_wonder_ride_book",
+			"title": "Daikengou Urashimajirou Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#daikengou_urashimajirou)Daikengou Urashimajirou$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#daikengou_urashimajirou)Daikengou Urashimajirou$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daikengou_urashimajirou_wonder_ride_book",
+			"title": " ",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiyokozuna_kinzaburou_wonder_ride_book",
+			"title": "Daiyokozuna Kinzaburou Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#daiyokozuna_kinzaburou)Daiyokozuna Kinzaburou$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#daiyokozuna_kinzaburou)Daiyokozuna Kinzaburou$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book",
+			"title": " ",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_of_arthur_wonder_ride_book",
+			"title": "King of Arthur Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#king_of_arthur)King of Arthur$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#king_of_arthur)King of Arthur$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_of_arthur_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragonic_knight_wonder_ride_book",
+			"title": "Dragonic Knight Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#dragonic_knight)Dragonic Knight$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragonic_knight_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "emotional_dragon_wonder_ride_book",
+			"title": "Emotional Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Used to access Saber's $(l:saber/riders/saber#emotional_dragon)Emotional Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:emotional_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "primitive_dragon_wonder_ride_book",
+			"title": "Primitive Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#primitive_dragon)Primitive Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/primitive_dragon_wonder_ride_book"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "elemental_dragon_wonder_ride_book",
+			"title": "Elemental Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#elemental_primitive_dragon)Elemental Dragon$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elemental_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_almighty_wonder_ride_book",
+			"title": "Wonder Almighty Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Saber's $(l:saber/riders/saber#almighty_saber)Almighty Saber$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_almighty_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_hero_senki_wonder_ride_book",
+			"title": "Super Hero Senki Wonder Ride Book",
+			"text": "Appears in:$(li)Saber + Zenkaiger: Superhero Senki (2021, movie)$(br2)Used to access Saber's $(l:saber/riders/saber#super_hero_senki)Super Hero Senki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_hero_senki_wonder_ride_book",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_lion_daisenki_wonder_ride_book",
+			"title": "King Lion Daisenki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Blades's $(l:saber/riders/blades#king_lion_daisenki)King Lion Daisenki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_lion_daisenki_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/zooous)Zooous$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tategami_hyoujuu_senki_wonder_ride_book",
+			"title": "Tategami Hyoujuusenki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to access Blades's $(l:saber/riders/blades#tategami_hyoujuusenki)Tategami Hyoujuusenki$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/tategami_hyoujuu_senki_wonder_ride_book"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arabiana_night_wonder_ride_book",
+			"title": "Arabiana Night Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Used to access Espada's $(l:saber/riders/espada#arabiana_night)Arabiana Night$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:arabiana_night_wonder_ride_book",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaikotsu_ninjaden_wonder_ride_book",
+			"title": "Gaikotsu Ninjaden Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Desast's $(l:saber/devices/seiken_swordriver_desast)Seiken Swordriver (Desast)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaikotsu_ninjaden_wonder_ride_book",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "televi_kun_wonder_ride_book",
+			"title": "Televi-Kun Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: Gather! Hero!! The Out-of-Nowhere Dragon TV-Kun (2021, Hyper Battle Video)$(br2)Used to access Saber's $(l:saber/riders/saber#televi_kun)Televi-Kun$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:televi_kun_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ultimate_bahamut_wonder_ride_book",
+			"title": "Ultimate Bahamut Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber: Final Stage (2021, stage show)$(br2)Used to access Saber's $(l:saber/riders/saber#ultimate_bahamut)Ultimate Bahamut$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ultimate_bahamut_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) while having the $(l:saber/items/wonder_ride_books#tassel_dark_wonder_ride_book)Tassel Dark Wonder Ride Books$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_kaenken_rekka_wonder_ride_book",
+			"title": "Wonder World Story of Kaenken Rekka Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_kaenken_rekka_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_suiseiken_nagare_wonder_ride_book",
+			"title": "Wonder World Story of Suiseiken Nagare Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_suiseiken_nagare_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book",
+			"title": "Wonder World Story of Raimeiken Ikazuchi Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_ankokuken_kurayami_wonder_ride_book",
+			"title": "Wonder World Story of Ankokuken Kurayami Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_ankokuken_kurayami_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_dogouken_gekido_wonder_ride_book",
+			"title": "Wonder World Story of Dogouken Gekido Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_dogouken_gekido_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_fuusouken_hayate_wonder_ride_book",
+			"title": "Wonder World Story of Fuusouken Hayate Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_fuusouken_hayate_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_onjuuken_suzune_wonder_ride_book",
+			"title": "Wonder World Story of Onjuuken Suzune Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_onjuuken_suzune_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_kougouken_saikou_wonder_ride_book",
+			"title": "Wonder World Story of Kougouken Saikou Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_kougouken_saikou_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_mumeiken_kyomu_wonder_ride_book",
+			"title": "Wonder World Story of Mumeiken Kyomu Wonder Ride Book",
+			"text": "Appears in:$(li)GP12 Wonder World Story of Mumeiken Kyomu Wonder Ride Book (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_mumeiken_kyomu_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_eneiken_noroshi_wonder_ride_book",
+			"title": "Wonder World Story of Eneiken Noroshi Wonder Ride Book",
+			"text": "Appears in:$(li)SG08 Wonder World Story of Eneiken Noroshi Wonder Ride Book (2021, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_eneiken_noroshi_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
+			"title": "Wonder World Story of Jikokuken Kaiji Wonder Ride Book",
+			"text": ""
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by using $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "happy_brave_dragon_wonder_ride_book",
+			"title": "Happy Brave Dragon Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber Charadeco Cake (2020, pastry line)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:happy_brave_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_ijinroku_wonder_ride_book",
+			"title": "Ghost Ijinroku Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Saber × Ghost (2021, TTFC special)$(br2)Used to access Saber's $(l:saber/riders/saber#ghost_ijinroku)Ghost Ijinroku$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/ghost_ijinroku_wonder_ride_book"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "specter_gekikou_senki_wonder_ride_book",
+			"title": "Specter Gekikou Senki Wonder Ride Book",
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Used to access Blades's $(l:saber/riders/blades#specter_gekikou_senki)Specter Gekikou Senki$(/l) form"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/specter_gekikou_senki_wonder_ride_book"
+		}
+	]
+}

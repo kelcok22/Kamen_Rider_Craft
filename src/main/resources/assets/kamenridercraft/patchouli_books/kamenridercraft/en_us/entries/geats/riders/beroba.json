@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:geats/items/beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:geats/items/beroba_black_raise_riser_card)Black Raise Riser Card (Beroba)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)Black Raise Riser Card (Beroba)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:ichigo/items/typhoon_core_sango)Typhoon Core (Sango)$(/l)"
+			"text": "Accessed with the $(l:ichigo/items/typhoon_cores#typhoon_core_sango)Typhoon Core (Sango)$(/l)"
 		},
 		{
 			"type": "patchouli:text",

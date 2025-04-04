@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (50%)$(li)1 $(l:revice/items/rex_vistamp)Rex Vistamp$(/l) (25%)$(li)1 $(l:revice/items/megalodon_vistamp)Megalodon Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/eagle_vistamp)Eagle Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/giff_junior_vistamp)Giff Junior Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/rex_vistamp_metal)Rex Vistamp (Black Metal Plating)$(/l) (6.3%)$(br2)Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2.5%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2.5%)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (50%)$(li)1 $(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l) (25%)$(li)1 $(l:revice/items/vistamps#megalodon_vistamp)Megalodon Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#eagle_vistamp)Eagle Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#giff_junior_vistamp)Giff Junior Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#rex_vistamp_metal)Rex Vistamp (Black Metal Plating)$(/l) (6.3%)$(br2)Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2.5%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2.5%)"
 		}
 	]
 }

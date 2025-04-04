@@ -2,7 +2,7 @@
 	"name": "Blank Vistamp",
 	"icon": "kamenridercraft:proto_vistamp",
 	"category": "kamenridercraft:revice/items",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",

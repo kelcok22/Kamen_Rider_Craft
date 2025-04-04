@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": "Accessed with the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "BoostJyamato Form",
-			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MonsterJyamato Form",
-			"text": "Accessed with the $(l:geats/items/fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",

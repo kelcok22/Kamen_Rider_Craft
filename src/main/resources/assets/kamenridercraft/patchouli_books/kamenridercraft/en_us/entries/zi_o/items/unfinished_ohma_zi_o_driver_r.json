@@ -2,11 +2,11 @@
 	"name": "Unfinished Ohma Zi-O Driver Part",
 	"icon": "kamenridercraft:unfinished_ohma_zi_o_driver_r",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 95,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft the $(l:zi_o/items/ohma_zi_o_driver)Ohma Zi-O Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft the $(l:zi_o/devices/ohma_zi_o_driver)Ohma Zi-O Driver$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

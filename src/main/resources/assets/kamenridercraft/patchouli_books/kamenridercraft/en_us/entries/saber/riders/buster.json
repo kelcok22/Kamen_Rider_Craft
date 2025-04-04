@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Genbu Shinwa",
-			"text": "Accessed with the $(l:saber/items/genbu_shinwa_wonder_ride_book)Genbu Shinwa Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)Genbu Shinwa Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Genbu Jackun",
-			"text": "Accessed with the $(l:saber/items/jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Genbu Bremen",
-			"text": "Accessed with the $(l:saber/items/bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
+			"text": "Accessed with the $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book"
 		},
 		{
 			"type": "patchouli:text",

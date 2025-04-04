@@ -2,7 +2,7 @@
 	"name": "Energy Drink",
 	"icon": "kamenridercraft:energy_drink",
 	"category": "kamenridercraft:ride_kamens/items",
-	"sortnum": 10,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

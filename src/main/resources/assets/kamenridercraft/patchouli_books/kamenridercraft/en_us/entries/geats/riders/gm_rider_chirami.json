@@ -11,7 +11,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Entry Form",
-			"text": "Accessed with the $(l:geats/items/gesshi_rider_core_id)Kamen Rider Gessy Core ID$(/l)"
+			"text": "Accessed with the $(l:geats/items/rider_core_ids#gesshi_rider_core_id)Kamen Rider Gessy Core ID$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Monster Form",
-			"text": "Accessed with the $(l:geats/items/monster_raise_buckle)Monster Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#monster_raise_buckle)Monster Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Hammer",
-			"text": "Accessed with the $(l:geats/items/hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#hammer_raise_buckle)Hammer Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Armed Propeller",
-			"text": "Accessed with the $(l:geats/items/propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#propeller_raise_buckle)Propeller Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jyamato Rider",
-			"text": "Accessed with the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (use in your off-hand to switch sides)"
 		},
 		{
 			"type": "patchouli:text",
@@ -81,7 +81,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "MagnumJyamato Form",
-			"text": "Accessed with the $(l:geats/items/magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) in your main hand and the $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) in your off-hand"
 		},
 		{
 			"type": "patchouli:text",

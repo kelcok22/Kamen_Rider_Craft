@@ -2,7 +2,7 @@
 	"name": "Book of Ruin",
 	"icon": "kamenridercraft:book_of_ruin",
 	"category": "kamenridercraft:saber/items",
-	"sortnum": 70,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

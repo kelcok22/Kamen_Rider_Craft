@@ -2,7 +2,7 @@
 	"name": "Blank Progrisekey",
 	"icon": "kamenridercraft:blank_progrisekey",
 	"category": "kamenridercraft:zero_one/items",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

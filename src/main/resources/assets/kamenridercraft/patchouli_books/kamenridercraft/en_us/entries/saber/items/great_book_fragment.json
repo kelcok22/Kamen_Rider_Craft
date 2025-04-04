@@ -2,7 +2,7 @@
 	"name": "Great Book Fragment",
 	"icon": "kamenridercraft:great_book_fragment",
 	"category": "kamenridercraft:saber/items",
-	"sortnum": 72,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",
