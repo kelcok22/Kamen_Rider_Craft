@@ -42,7 +42,7 @@ public class Kuuga_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_pegasus","kuuga","arcle_belt_p",
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-            .AddToList(RiderTabs.KUUGA_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_TITAN = ITEMS.register("kuuga_titan",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_titan","kuuga","arcle_belt_t",
@@ -117,8 +117,9 @@ public class Kuuga_Rider_Items {
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
             		new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
     		.AddToList(RiderTabs.KUUGA_TAB_ITEM));
-    
-    public static final DeferredItem<Item> KUUGA_MANGA = ITEMS.register("kuuga_manga",
+
+
+	public static final DeferredItem<Item> KUUGA_MANGA = ITEMS.register("kuuga_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kuuga_manga","arcle_belt_manga",
             		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
             		,new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false)).AddToList(RiderTabs.KUUGA_TAB_ITEM));

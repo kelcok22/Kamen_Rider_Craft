@@ -217,6 +217,10 @@ public class RiderFormChangeItem extends BaseItem {
         UPDATED_MODEL_ANIMATION=animation;
         return this;
     }
+    public RiderFormChangeItem ChangeAnimation(String animation) {
+        UPDATED_MODEL_ANIMATION=animation;
+        return this;
+    }
     public RiderFormChangeItem SetPalyerModelInvisible() {
         SET_PLAYER_MODEL_INVISIBLE = true;
         return this;
