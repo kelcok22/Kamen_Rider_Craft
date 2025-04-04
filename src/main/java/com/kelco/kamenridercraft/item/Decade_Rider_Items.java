@@ -744,6 +744,11 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> DIMENSION_CARD = ITEMS.register("dimension_card",
 			() -> new ZeinCardItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 	*/
+	public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ball","kuuga","blank",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.IsGlowing().ChangeModel("kuuga_ball.geo.json","kuuga_ball.animation.json").SetPalyerModelInvisible().AddToList(RiderTabs.DECADE_TAB_ITEM));
+
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 	public static final DeferredItem<Item> DECADECHESTPLATE = ITEMS.register("decadetroso",
