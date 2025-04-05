@@ -210,6 +210,8 @@ public class Effect_core {
     public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
 
+    public static final Holder<MobEffect>  RIDER_KICK= EFFECT.register("rider_kick",
+            () -> new RiderKickEffect(MobEffectCategory.BENEFICIAL, 0x565656));
 
     public static void register(IEventBus eventBus) {
         EFFECT.register(eventBus);
