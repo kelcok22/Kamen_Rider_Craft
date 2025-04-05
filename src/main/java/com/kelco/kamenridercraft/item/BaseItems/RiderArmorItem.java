@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
+import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.Entity;
@@ -66,19 +67,30 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
         RawAnimation SNEAK = RawAnimation.begin().thenLoop("sneak");
+        RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
+
 
         controllerRegistrar.add(new AnimationController<RiderArmorItem>(this, "Walk/Idle", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
 
             Boolean IsWaking = false;
+            Boolean IsKicking = false;
+
             if (entity instanceof Player player) {
 
                 if(player.getDeltaMovement().x!=0||player.getDeltaMovement().z!=0)IsWaking=true;
+
+                if(player.hasEffect(Effect_core.RIDER_KICK)){
+                    if(player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5)IsKicking =true;
+                }
+
             }
 
-            state.setAndContinue(IsWaking ? WALK:IDLE);
 
-            state.setAndContinue(entity.isShiftKeyDown() ? SNEAK:IsWaking ? WALK:IDLE);
+            if (IsKicking){
+                state.setAndContinue(KICK);
+            }else state.setAndContinue(IsWaking ? WALK:IDLE);
+
             return PlayState.CONTINUE;
         }));
 
