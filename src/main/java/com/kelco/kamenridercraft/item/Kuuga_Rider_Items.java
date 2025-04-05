@@ -29,7 +29,8 @@ public class Kuuga_Rider_Items {
 	
     public static final DeferredItem<Item> KUUGA_MIGHTY = ITEMS.register("kuuga_mighty",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kuuga","arcle_belt",
-            		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+            		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_DRAGON = ITEMS.register("kuuga_dragon",

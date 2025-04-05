@@ -6,18 +6,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.level.GameRules;
+import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import com.google.common.collect.Lists;
@@ -83,14 +96,66 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
-@Override
+    public void riderKick(ItemStack stack, Level level, Entity entity,CompoundTag tag) {
+        if (tag.getBoolean("rider_kick")) {
+            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY(),entity.getZ(), 0.0D, 0.0D, 0.0D);
+            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY()+1,entity.getZ(), 0.0D, 0.0D, 0.0D);
+            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY()+0.5,entity.getZ(), 0.0D, 0.0D, 0.0D);
+
+            if (level instanceof ServerLevel slevel) {
+                if (entity instanceof Player player) {
+
+                            Vec3 look = new Vec3(player.getLookAngle().x*0.1, player.getLookAngle().y*0.04, player.getLookAngle().z*0.1).scale(2);
+                        double y= look.y+player.getGravity();
+                        if (y>-0.1)y=-0.1;
+                        player.push(look.x, y, look.z);
+                        player.hurtMarked=true;
+
+                        if (player.onGround()||player.isInWater()) {tag.putBoolean("rider_kick", false);}
+
+
+                        List<LivingEntity> nearbyEnemies = slevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
+                                (sentity instanceof Player && sentity != player)
+                                        || (sentity instanceof Mob));
+                        for (LivingEntity enemy : nearbyEnemies) {
+                            //level.explode(player, enemy.getX(), enemy.getY() + 2, enemy.getZ(), player.fallDistance, false, Level.ExplosionInteraction.TRIGGER);
+
+                            DamageSource damageSource = new DamageSource(
+                                    // The damage type holder to use. Query from the registry. This is the only required parameter.
+                                    level.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),
+                                    player,
+                                    player,
+                                    player.position());
+                            float at = (float) (player.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+player.fallDistance);
+                            enemy.hurt(damageSource, at);
+                            player.sendSystemMessage(Component.literal("power="+at));
+                            level.addParticle(ParticleTypes.EXPLOSION, entity.getX(), entity.getY() + 0.5, entity.getZ(), 0.0D, 0.0D, 0.0D);
+                            tag.putBoolean("rider_kick", false);
+                        }
+                    }
+                }
+            }
+    }
+
+        @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 
-        if (entity instanceof LivingEntity player) {
 
+            if (entity instanceof LivingEntity player) {
             if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form")&!level.isClientSide()) OnformChange(stack, player, tag);
+                if (tag.getBoolean("Update_form") & !level.isClientSide()) OnformChange(stack, player, tag);
+
+                /**
+                if (!level.isClientSide) {
+                    if (player.isShiftKeyDown() & !tag.getBoolean("rider_kick")&!player.onGround()&!player.isInWater()) {
+                        player.push(0, 1, 0);
+                        player.hurtMarked = true;
+                        tag.putBoolean("rider_kick", true);
+                    }
+                 }
+                 riderKick(stack, level, entity,tag);
+                 **/
             }
 
             if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
@@ -109,15 +174,14 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
+
         player.setInvisible(false);
         Level level = player.level();
-        if(!level.isClientSide()) {
+        if(!level.isClientSide()&isTransformed(player)) {
             //ParticleTypes.GUST
             ((ServerLevel) level).sendParticles(ParticleTypes.GUST,
                     player.getX() , player.getY() + 1.0,
                     player.getZ(), 1, 0, 0, 0, 1);
-
-
         }
        tag.putBoolean("Update_form", false);
     }
@@ -313,6 +377,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+
 
         Boolean isDateA1 = false;
         LocalDate localdate = LocalDate.now();
