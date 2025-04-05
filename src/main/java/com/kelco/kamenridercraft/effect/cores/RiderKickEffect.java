@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.effect.cores;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.Decade_Rider_Items;
+import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -110,7 +112,7 @@ public class RiderKickEffect extends MobEffect {
 											pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
 											pLivingEntity.getZ(), 500, 0, 0, 0, 1);
 								}
-								pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4,false,false));
+								pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4,false,true));
 							}
 						}
 					}

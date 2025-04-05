@@ -28,13 +28,18 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
+import com.mojang.math.Axis;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.HumanoidArm;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.*;
 import org.slf4j.Logger;
@@ -179,8 +184,14 @@ public class KamenRiderCraftCore
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible())
+
+            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()){
                 event.getEntity().setInvisible(belt.isTransformed(event.getEntity()));
+        }
+                if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
+                    if(event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5) event.getEntity().setInvisible(true);
+                }
+
         }
 
         float size = 1;
@@ -202,6 +213,25 @@ public class KamenRiderCraftCore
         }
         event.getPoseStack().scale(size3, size, size2);
     }
+
+    /**
+    @SubscribeEvent
+    public void addRenderPlayerEvent(RenderPlayerEvent.Pre event) {
+        //if (event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
+
+            event.getRenderer().getModel().head.yScale =2;
+        event.getRenderer().getModel().head.zScale =2;
+        event.getRenderer().getModel().head.xScale =2;
+
+        ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
+        ItemStack stack = new ItemStack(W_Rider_Items.METAL_SHAFT.get());
+        event.getPoseStack().translate(2, 0.5f, 44);
+        event.getPoseStack().scale(3f, 3f, 1f);
+
+
+
+    }
+**/
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents

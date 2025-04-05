@@ -102,6 +102,7 @@ public class ModCommonEvents {
 		}
 
 
+
 		private Item getGochizoDrop(ItemStack itemstack) {
 			Random generator = new Random();
 

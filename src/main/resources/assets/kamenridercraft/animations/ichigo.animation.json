@@ -7,6 +7,59 @@
 		"walk": {
 			"loop": true
 		},
+		"kick": {
+			"loop": true,
+			"bones": {
+				"bipedHead": {
+					"rotation": {
+						"vector": [6.70532, -12.91735, -1.6541]
+					},
+					"position": {
+						"vector": [1, 1, 5]
+					}
+				},
+				"bipedBody": {
+					"rotation": {
+						"vector": [-52.09694, -31.20657, 10.00117]
+					},
+					"position": {
+						"vector": [0, 1, 6]
+					}
+				},
+				"bipedRightArm": {
+					"rotation": {
+						"vector": [-42.5, 7.5, 0]
+					},
+					"position": {
+						"vector": [2, 3, 2]
+					}
+				},
+				"bipedLeftArm": {
+					"rotation": {
+						"vector": [-100.19002, -25.71543, -10.09541]
+					},
+					"position": {
+						"vector": [-1, 0, 7]
+					}
+				},
+				"bipedLeftLeg": {
+					"rotation": {
+						"vector": [-85, 0, 0]
+					},
+					"position": {
+						"vector": [5, 5, 2]
+					}
+				},
+				"bipedRightLeg": {
+					"rotation": {
+						"vector": [-67.5, 0, 0]
+					},
+					"position": {
+						"vector": [4, 6, -3]
+					}
+				}
+			}
+		},
 		"fly": {
 			"loop": true
 		},"sneak": {
