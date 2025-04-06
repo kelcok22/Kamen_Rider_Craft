@@ -39,6 +39,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.HumanoidArm;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.*;
@@ -183,15 +184,14 @@ public class KamenRiderCraftCore
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
+
+        if (event.getEntity() instanceof Player){
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
-            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()){
+            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
                 event.getEntity().setInvisible(belt.isTransformed(event.getEntity()));
+            }
         }
-                if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
-                    if(event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5) event.getEntity().setInvisible(true);
-                }
-
         }
 
         float size = 1;
@@ -214,24 +214,50 @@ public class KamenRiderCraftCore
         event.getPoseStack().scale(size3, size, size2);
     }
 
-    /**
+
     @SubscribeEvent
     public void addRenderPlayerEvent(RenderPlayerEvent.Pre event) {
-        //if (event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
 
-            event.getRenderer().getModel().head.yScale =2;
-        event.getRenderer().getModel().head.zScale =2;
-        event.getRenderer().getModel().head.xScale =2;
+        if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
+                event.getRenderer().getModel().leftArm.visible=false;
+                event.getRenderer().getModel().rightArm.visible=false;
+                event.getRenderer().getModel().leftLeg.visible=false;
+                event.getRenderer().getModel().rightLeg.visible=false;
 
-        ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
-        ItemStack stack = new ItemStack(W_Rider_Items.METAL_SHAFT.get());
-        event.getPoseStack().translate(2, 0.5f, 44);
-        event.getPoseStack().scale(3f, 3f, 1f);
+                event.getRenderer().getModel().leftSleeve.visible=false;
+                event.getRenderer().getModel().rightSleeve.visible=false;
+                event.getRenderer().getModel().leftPants.visible=false;
+                event.getRenderer().getModel().rightPants.visible=false;
 
+                event.getRenderer().getModel().body.visible=false;
+                event.getRenderer().getModel().jacket.visible=false;
+                event.getRenderer().getModel().head.visible=false;
+                event.getRenderer().getModel().jacket.visible=false;
+            }
+        }
 
+        if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
+            if(event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5){
+                event.getRenderer().getModel().leftArm.visible=false;
+                event.getRenderer().getModel().rightArm.visible=false;
+                event.getRenderer().getModel().leftLeg.visible=false;
+                event.getRenderer().getModel().rightLeg.visible=false;
+
+                event.getRenderer().getModel().leftSleeve.visible=false;
+                event.getRenderer().getModel().rightSleeve.visible=false;
+                event.getRenderer().getModel().leftPants.visible=false;
+                event.getRenderer().getModel().rightPants.visible=false;
+
+                event.getRenderer().getModel().body.visible=false;
+                event.getRenderer().getModel().jacket.visible=false;
+                event.getRenderer().getModel().head.visible=false;
+                event.getRenderer().getModel().hat.visible=false;
+            }
+        }
 
     }
-**/
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
