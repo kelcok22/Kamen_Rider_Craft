@@ -120,6 +120,13 @@ public class Kuuga_Rider_Items {
     		.AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 
+	public static final DeferredItem<Item> KUUGA_BLACK_RISING_MIGHTY = ITEMS.register("kuuga_black_rising_mighty",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_black_rising_mighty","kuuga","arcle_belt_r",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+					.IsGlowing().has_basic_model().model_has_different_name("kuuga_amazing_mighty").AddToList(RiderTabs.KUUGA_TAB_ITEM));
+
 	public static final DeferredItem<Item> KUUGA_MANGA = ITEMS.register("kuuga_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kuuga_manga","arcle_belt_manga",
             		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
