@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+"textures": {
+"top": "kamenridercraft:block/vertical_panel_top",
+"front": "kamenridercraft:block/vertical_panel",
+"side": "kamenridercraft:block/vertical_panel",
+"bottom": "kamenridercraft:block/vertical_panel_top"
+}
+}

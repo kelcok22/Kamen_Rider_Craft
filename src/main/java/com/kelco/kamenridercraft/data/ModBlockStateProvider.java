@@ -42,6 +42,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         simpleBlock(Rider_Blocks.KURUMA_BRICK.get());
+        simpleBlock(Rider_Blocks.YELLOW_WALLPLATE.get());
+        simpleBlock(Rider_Blocks.CHECKERED_TILE.get());
 
         stairsBlock(Rider_Blocks.HELHEIM_STAIRS.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
 
@@ -62,9 +64,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(((CeilingHangingSignBlock) Rider_Blocks.HELHEIM_HANGING_SIGN.get()), ((WallHangingSignBlock) Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get()),
                 blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
 
+        wallBlock(Rider_Blocks.YELLOW_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
+
 
         blockItem(Rider_Blocks.KURUMA_BRICK);
         blockItem(Rider_Blocks.CORNERSTORE_SIGN);
+        blockItem(Rider_Blocks.YELLOW_WALLPLATE);
+        blockItem(Rider_Blocks.CHECKERED_TILE);
+        blockItem(Rider_Blocks.VERTICAL_PANEL);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
