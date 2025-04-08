@@ -99,6 +99,9 @@
 	"kamenridercraft:white_wallplate",
 	"kamenridercraft:cornerstore_sign",
 	"kamenridercraft:wallplate_grate_slab",
-	"kamenridercraft:glass_door"
+	"kamenridercraft:glass_door",
+	  "kamenridercraft:yellow_wallplate",
+	  "kamenridercraft:yellow_wallplate_wall",
+	  "kamenridercraft:checkered_tile"
   ]
 }

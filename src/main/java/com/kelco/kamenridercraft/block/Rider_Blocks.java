@@ -754,6 +754,13 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
 					.strength(2f)));
 
+	public static final DeferredBlock<Block> YELLOW_WALLPLATE = registerBlock("yellow_wallplate",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<WallBlock> YELLOW_WALLPLATE_WALL = registerBlock("yellow_wallplate_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<Block> WOODEN_PANEL = registerBlock("wooden_panel",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
@@ -767,6 +774,14 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> VERTICAL_PANEL = registerBlock("vertical_panel",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> CHECKERED_TILE = registerBlock("checkered_tile",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 //	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",

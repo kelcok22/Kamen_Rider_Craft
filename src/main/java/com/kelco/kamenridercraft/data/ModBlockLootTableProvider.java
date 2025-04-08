@@ -26,6 +26,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.HELHEIM_FENCE_GATE.get());
         dropSelf(Rider_Blocks.HELHEIM_TRAPDOOR.get());
         dropSelf(Rider_Blocks.CORNERSTORE_SIGN.get());
+        dropSelf(Rider_Blocks.YELLOW_WALLPLATE.get());
+        dropSelf(Rider_Blocks.CHECKERED_TILE.get());
+        dropSelf(Rider_Blocks.VERTICAL_PANEL.get());
         add(Rider_Blocks.HELHEIM_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));
         dropSelf(Rider_Blocks.ICHIGO_CHAIR.get());
@@ -43,6 +46,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createSingleItemTable(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.get()));
         add(Rider_Blocks.HELHEIM_WALL_HANGING_SIGN.get(),
                 block -> createSingleItemTable(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.get()));
+        add(Rider_Blocks.YELLOW_WALLPLATE_WALL.get(),
+                block -> createSingleItemTable(Rider_Blocks.YELLOW_WALLPLATE_WALL.get()));
 
     }
 

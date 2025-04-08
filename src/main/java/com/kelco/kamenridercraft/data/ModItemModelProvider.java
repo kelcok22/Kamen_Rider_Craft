@@ -52,6 +52,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(Rider_Blocks.HELHEIM_BUTTON, Rider_Blocks.HELHEIM_PLANKS);
         fenceItem(Rider_Blocks.HELHEIM_FENCE, Rider_Blocks.HELHEIM_PLANKS);
 
+        wallItem(Rider_Blocks.YELLOW_WALLPLATE_WALL, Rider_Blocks.YELLOW_WALLPLATE);
+
         basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
         basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
         basicItem(Rider_Blocks.GLASS_DOOR.asItem());
@@ -70,6 +72,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
     }
 }
