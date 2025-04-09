@@ -142,6 +142,19 @@
 			"item": "kamenridercraft:kuuga_super_rising_ultimate",
 			"title": " ",
 			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_black_rising_mighty",
+			"title": "Kuuga Black Rising Mighty Amadam",
+			"text": "Appears in:$(li)Televi-Kun (January 2001, magazine)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#black_rising_mighty)Rising Mighty Form (Black Version)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_black_rising_mighty",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

@@ -545,6 +545,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the Narumi Detective Office"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "wooden_panel",
 			"link_recipe": true,
 			"item": "kamenridercraft:wooden_panel",
@@ -563,6 +571,22 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cornerstore_sign",
 			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "vertical_panel",
+			"link_recipe": true,
+			"item": "kamenridercraft:vertical_panel",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the Narumi Detective Office"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "checkered_tile",
+			"link_recipe": true,
+			"item": "kamenridercraft:checkered_tile",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the Narumi Detective Office"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -633,6 +657,14 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wallplate_grate_slab",
 			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate_wall",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate_wall",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the Narumi Detective Office"
 		},
 		{
 			"type": "patchouli:spotlight",
