@@ -227,6 +227,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kuuga",
 			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch IX$(li)Speed III$(li)Resistance III$(li)Jump Boost II$(li)Strength XII (with empty hand)$(li)Strength III (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_rising_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_black_rising_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Rising Mighty Form (Black Version)",
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)Kuuga Black Rising Mighty Amadam$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kuuga",
+			"text": "Appears in:$(li)Televi-Kun (January 2001, magazine)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Speed$(li)Resistance$(li)Strength VII (with empty hand)"
 		}
 	]
 }

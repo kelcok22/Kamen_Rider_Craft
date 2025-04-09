@@ -293,7 +293,7 @@ public class Decade_Rider_Items {
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Den_O_Rider_Items.ZERONOS_BELT.get()).addSummonWeapon(Den_O_Rider_Items.ZEROGASHER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IXA_CARD = ITEMS.register("ixa_card",
-			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.IXA_BELT.get()).addSummonWeapon(Kiva_Rider_Items.IXA_CALIBER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.IXA_BELT.get()).setSummonForm((RiderFormChangeItem)Kiva_Rider_Items.KNUCKLE_FUESTLE_BURST.get()).addSummonWeapon(Kiva_Rider_Items.IXA_CALIBER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_CARD = ITEMS.register("accel_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(1).addSummonWeapon(1).AddToList(RiderTabs.DECADE_TAB_ITEM));
