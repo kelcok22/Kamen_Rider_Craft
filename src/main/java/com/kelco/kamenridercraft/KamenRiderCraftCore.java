@@ -185,7 +185,7 @@ public class KamenRiderCraftCore
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
 
-        if (event.getEntity() instanceof Player){
+        if (!(event.getEntity() instanceof Player)){
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
             if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
