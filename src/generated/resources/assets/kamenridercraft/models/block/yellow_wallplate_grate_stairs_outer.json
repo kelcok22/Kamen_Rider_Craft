@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "bottom": "kamenridercraft:block/yellow_wallplate_grate",
+    "side": "kamenridercraft:block/yellow_wallplate",
+    "top": "kamenridercraft:block/yellow_wallplate_grate"
+  }
+}
