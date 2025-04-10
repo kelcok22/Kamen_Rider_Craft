@@ -1,5 +1,5 @@
 {
-	"name": "Kamen Rider Demons Trooper b",
+	"name": "Kamen Rider Demons Trooper ß",
 	"icon": "kamenridercraft:demons_driver_demons_trooper_b",
 	"category": "kamenridercraft:revice/riders",
 	"sortnum": 9,
@@ -14,8 +14,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Kamen Rider Demons Trooper b",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver_demons_trooper_b)Demons Driver (Trooper b)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Strength"
+			"title": "Kamen Rider Demons Trooper ß",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver_demons_trooper_b)Demons Driver (Trooper ß)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Strength"
 		}
 	]
 }
