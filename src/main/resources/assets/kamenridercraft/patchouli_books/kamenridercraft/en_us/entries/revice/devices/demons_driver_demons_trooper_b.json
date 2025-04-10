@@ -1,12 +1,12 @@
 {
-	"name": "Demons Driver (Trooper b)",
+	"name": "Demons Driver (Trooper ß)",
 	"icon": "kamenridercraft:demons_driver_demons_trooper_b",
 	"category": "kamenridercraft:revice/devices",
 	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/demons_trooper_b)Kamen Rider Demons Trooper b"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/demons_trooper_b)Kamen Rider Demons Trooper ß"
 		},
 		{
 			"type": "patchouli:crafting",
