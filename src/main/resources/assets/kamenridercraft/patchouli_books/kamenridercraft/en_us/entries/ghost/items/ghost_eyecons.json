@@ -513,7 +513,7 @@
 			"type": "patchouli:text",
 			"anchor": "ore_specter_ghost_eyecon",
 			"title": "Ore Specter Ghost Eyecon",
-			"text": "Appears in:$(li)DX Ore Specter Ghost Eyecon (2016, toyline)$(br2)Used to access $(l:ghost/riders/ghost#ore_specter)Ore Specter Damashii$(/l)"
+			"text": "Appears in:$(li)DX Ore Specter Ghost Eyecon (2016, toyline)"
 		},
 		{
 			"type": "patchouli:spotlight",
