@@ -440,20 +440,6 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "ore_specter",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ore_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
-			"name": "Ore Specter Damashii",
-			"text": "Accessed with the $(l:ghost/items/ghost_eyecons#ore_specter_ghost_eyecon)Ore Specter Ghost Eyecon$(/l)"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Ghost",
-			"text": "Transforms with the $(l:ghost/devices/ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Ghost$(li)Strength"
-		},
-		{
-			"type": "patchouli:entity",
 			"anchor": "da_vinci",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:da_vinci_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"scale": -1,
