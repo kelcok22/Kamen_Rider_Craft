@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "kamenridercraft:block/kuuga_tomb"},
+      {"model": "kamenridercraft:block/kuuga_tomb1"},
+      {"model": "kamenridercraft:block/kuuga_tomb2"}
+    ]
+  }
+}

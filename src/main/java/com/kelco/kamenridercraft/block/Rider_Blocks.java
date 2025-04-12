@@ -391,6 +391,10 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
 	//.lightLevel((glow) -> { return 15; })
 
+	public static final DeferredBlock<Block> KUUGA_TOMB = registerBlock("kuuga_tomb",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 	public static final DeferredBlock<Block> OVERLORD_OOPART = registerBlock("overlord_oopart",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
