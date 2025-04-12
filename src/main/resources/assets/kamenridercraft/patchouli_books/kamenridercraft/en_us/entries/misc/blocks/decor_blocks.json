@@ -668,6 +668,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate_grate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate_grate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the Narumi Detective Office"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "glass_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:glass_door",
