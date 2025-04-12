@@ -36,13 +36,14 @@ public class Kuuga_Rider_Items {
     public static final DeferredItem<Item> KUUGA_DRAGON = ITEMS.register("kuuga_dragon",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_dragon","kuuga","arcle_belt_d",
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+            		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_PEGASUS = ITEMS.register("kuuga_pegasus",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_pegasus","kuuga","arcle_belt_p",
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-            		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+            		new MobEffectInstance(Effect_core.RADAR, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_TITAN = ITEMS.register("kuuga_titan",
@@ -62,6 +63,7 @@ public class Kuuga_Rider_Items {
     public static final DeferredItem<Item> KUUGA_RISING_DRAGON = ITEMS.register("kuuga_rising_dragon",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_rising_dragon","kuuga","arcle_belt_r",
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+            		new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
@@ -69,7 +71,7 @@ public class Kuuga_Rider_Items {
     public static final DeferredItem<Item> KUUGA_RISING_PEGASUS = ITEMS.register("kuuga_rising_pegasus",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_rising_pegasus","kuuga","arcle_belt_r",
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-            		new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+            		new MobEffectInstance(Effect_core.RADAR, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
