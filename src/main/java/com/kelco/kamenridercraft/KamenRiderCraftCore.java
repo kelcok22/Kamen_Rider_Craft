@@ -112,6 +112,7 @@ public class KamenRiderCraftCore
         ModMenus.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
+        RiderPotPattern.register(modEventBus);
         Modded_item_core.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
@@ -219,24 +220,25 @@ public class KamenRiderCraftCore
     public void addRenderPlayerEvent(RenderPlayerEvent.Pre event) {
 
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
-                event.getRenderer().getModel().leftArm.visible=false;
-                event.getRenderer().getModel().rightArm.visible=false;
-                event.getRenderer().getModel().leftLeg.visible=false;
-                event.getRenderer().getModel().rightLeg.visible=false;
+            if (belt.isTransformed(event.getEntity())) {
+                if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
+                    event.getRenderer().getModel().leftArm.visible = false;
+                    event.getRenderer().getModel().rightArm.visible = false;
+                    event.getRenderer().getModel().leftLeg.visible = false;
+                    event.getRenderer().getModel().rightLeg.visible = false;
 
-                event.getRenderer().getModel().leftSleeve.visible=false;
-                event.getRenderer().getModel().rightSleeve.visible=false;
-                event.getRenderer().getModel().leftPants.visible=false;
-                event.getRenderer().getModel().rightPants.visible=false;
+                    event.getRenderer().getModel().leftSleeve.visible = false;
+                    event.getRenderer().getModel().rightSleeve.visible = false;
+                    event.getRenderer().getModel().leftPants.visible = false;
+                    event.getRenderer().getModel().rightPants.visible = false;
 
-                event.getRenderer().getModel().body.visible=false;
-                event.getRenderer().getModel().jacket.visible=false;
-                event.getRenderer().getModel().head.visible=false;
-                event.getRenderer().getModel().jacket.visible=false;
+                    event.getRenderer().getModel().body.visible = false;
+                    event.getRenderer().getModel().jacket.visible = false;
+                    event.getRenderer().getModel().head.visible = false;
+                    event.getRenderer().getModel().jacket.visible = false;
+                }
             }
         }
-
         if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
             if(event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5){
                 event.getRenderer().getModel().leftArm.visible=false;
@@ -591,6 +593,7 @@ public class KamenRiderCraftCore
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(KeyBindings.INSTANCE.BeltKey);
         }
+
 
         @SubscribeEvent
         public static void menuScreens(RegisterMenuScreensEvent event) {

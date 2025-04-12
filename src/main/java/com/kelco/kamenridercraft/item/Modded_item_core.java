@@ -340,6 +340,10 @@ public class Modded_item_core {
     public static final DeferredItem<Item> MASKED_RIDER_MUSIC_DISC = ITEMS.register("masked_rider_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.MASKED_RIDER_KEY).stacksTo(1)));
 
+   // public static final DeferredItem<Item> WARRIOR_POTTERY_SHERD = ITEMS.register("warrior_pottery_sherd",
+      //      () -> new Item(new Item.Properties().stacksTo(1)));
+
+
     public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);
 }
