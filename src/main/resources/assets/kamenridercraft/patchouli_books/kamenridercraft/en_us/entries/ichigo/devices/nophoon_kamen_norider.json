@@ -2,7 +2,7 @@
 	"name": "Nophoon",
 	"icon": "kamenridercraft:nophoon_kamen_norider",
 	"category": "kamenridercraft:ichigo/devices",
-	"sortnum": 6,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",
