@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "agito_ground",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#ground)Ground Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#ground)Ground Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "agito_trinity",
 			"title": "Agito Trinity Philosopher's Stone",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/alter_ring_reiko)Altering (Reiko Takano)$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#trinity)Trinity Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Agito's $(l:agito/devices/altering#alter_ring_reiko)Altering (Reiko Takano)$(/l)$(br2)Used to access Agito's $(l:agito/riders/agito#trinity)Trinity Form$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -117,7 +117,7 @@
 			"type": "patchouli:text",
 			"anchor": "another_agito",
 			"title": "Another Agito Philosopher's Stone",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point)Ank Point$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point#ank_point)Ank Point$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -130,7 +130,7 @@
 			"type": "patchouli:text",
 			"anchor": "agito_miracle",
 			"title": "Mirage Agito Philosopher's Stone",
-			"text": "Appears in:$(li)Heaven's Door (2003, S.I.C. Hero Saga)$(br2)Used to craft Mirage Agito's $(l:agito/devices/alter_ring_miracle)Altering$(/l)"
+			"text": "Appears in:$(li)Heaven's Door (2003, S.I.C. Hero Saga)$(br2)Used to craft Mirage Agito's $(l:agito/devices/altering#alter_ring_miracle)Altering$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -143,7 +143,7 @@
 			"type": "patchouli:text",
 			"anchor": "another_agito_koji",
 			"title": "Another Agito Philosopher's Stone (Kouji Majima)",
-			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point_burning)Ank Point (Kouji Majima)$(/l)"
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Used to craft Another Agito's $(l:agito/devices/ank_point#ank_point_burning)Ank Point (Kouji Majima)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

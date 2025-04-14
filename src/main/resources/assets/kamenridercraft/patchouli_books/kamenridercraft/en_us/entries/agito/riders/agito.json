@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost III$(li)Fire Resistance$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost III$(li)Fire Resistance$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed$(li)Strength"
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed$(li)Strength"
 		}
 	]
 }

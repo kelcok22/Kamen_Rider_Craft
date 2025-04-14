@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Another Agito",
-			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost IV$(li)Strength II"
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost IV$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Another Agito",
-			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring)Altering$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength V"
 		}
 	]
 }
