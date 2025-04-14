@@ -105,7 +105,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_xtreme_card",
 			"title": "Final KamenRide W CycloneJokerXtreme",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:w/riders/double#xtreme)Kamen Rider Double CycloneJokerXtreme$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:w/riders/double#xtreme)Kamen Rider Double CycloneJokerXtreme$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -116,7 +116,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_putotyra_card",
 			"title": "Final KamenRide OOO Putotyra Combo",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:ooo/riders/ooo#putotyra)Kamen Rider OOO Putotyra Combo$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:ooo/riders/ooo#putotyra)Kamen Rider OOO Putotyra Combo$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -127,7 +127,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_cosmic_card",
 			"title": "Final KamenRide Fourze Cosmic States",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:fourze/riders/fourze#cosmicstates)Kamen Rider Fourze Cosmicstates$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:fourze/riders/fourze#cosmicstates)Kamen Rider Fourze Cosmicstates$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -138,7 +138,7 @@
 			"type": "patchouli:text",
 			"anchor": "wizard_infinity_card",
 			"title": "Final KamenRide Wizard Infinity Style",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:wizard/riders/wizard#infinity)Kamen Rider Wizard Infinity Style$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:wizard/riders/wizard#infinity)Kamen Rider Wizard Infinity Style$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaim_kiwami_card",
 			"title": "Final KamenRide Gaim Kiwami Arms",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:gaim/riders/gaim#kiwami)Kamen Rider Gaim Kiwami Arms$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:gaim/riders/gaim#kiwami)Kamen Rider Gaim Kiwami Arms$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -160,7 +160,7 @@
 			"type": "patchouli:text",
 			"anchor": "drive_tridoron_card",
 			"title": "Final KamenRide Drive Type Tridoron",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:drive/riders/drive#tridoron)Kamen Rider Drive type Tridoron$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:drive/riders/drive#tridoron)Kamen Rider Drive type Tridoron$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -171,7 +171,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_mugen_card",
 			"title": "Final KamenRide Ghost Mugen Damashii",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:ghost/riders/ghost#mugen)Kamen Rider Ghost Mugen Damashii$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:ghost/riders/ghost#mugen)Kamen Rider Ghost Mugen Damashii$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -182,7 +182,7 @@
 			"type": "patchouli:text",
 			"anchor": "ex_aid_muteki_card",
 			"title": "Final KamenRide Ex-Aid Muteki Gamer",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#muteki)Kamen Rider Ex-Aid Muteki Gamer$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#muteki)Kamen Rider Ex-Aid Muteki Gamer$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -193,7 +193,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_genius_card",
 			"title": "Final KamenRide Build Genius Form",
-			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:build/riders/build#genius)Kamen Rider Build Genius Form$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Can be used to summon $(l:build/riders/build#genius)Kamen Rider Build Genius Form$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -204,7 +204,7 @@
 			"type": "patchouli:text",
 			"anchor": "grand_zi_o_card",
 			"title": "Final KamenRide Grand Zi-O Form",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:zi_o/riders/zi_o#grandzi_o)Kamen Rider GrandZi-O$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:zi_o/riders/zi_o#grandzi_o)Kamen Rider GrandZi-O$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -215,7 +215,7 @@
 			"type": "patchouli:text",
 			"anchor": "zero_two_card",
 			"title": "Final KamenRide Zero-Two",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:zero_one/riders/zero_two)Kamen Rider Zero-Two$(/l) when right-clicked as $(l:decade/riders/neo_decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Can be used to summon $(l:zero_one/riders/zero_two)Kamen Rider Zero-Two$(/l) when right-clicked as $(l:decade/riders/decade#complete_21)Kamen Rider Decade Complete Form 21$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

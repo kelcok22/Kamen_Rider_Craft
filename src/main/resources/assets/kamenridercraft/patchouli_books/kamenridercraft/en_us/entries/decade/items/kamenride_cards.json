@@ -166,7 +166,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_card",
 			"title": "KamenRide W",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#w)W$(/l) form$(br2)Can be used to summon $(l:w/riders/double)Kamen Rider Double$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#w)W$(/l) form$(br2)Can be used to summon $(l:w/riders/double)Kamen Rider Double$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -177,7 +177,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_card",
 			"title": "KamenRide OOO",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ooo)OOO$(/l) form$(br2)Can be used to summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ooo)OOO$(/l) form$(br2)Can be used to summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_card",
 			"title": "KamenRide Fourze",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#fourze)Fourze$(/l) form$(br2)Can be used to summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#fourze)Fourze$(/l) form$(br2)Can be used to summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -199,7 +199,7 @@
 			"type": "patchouli:text",
 			"anchor": "wizard_card",
 			"title": "KamenRide Wizard",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#wizard)Wizard$(/l) form$(br2)Can be used to summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#wizard)Wizard$(/l) form$(br2)Can be used to summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -210,7 +210,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaim_card",
 			"title": "KamenRide Gaim",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#gaim)Gaim$(/l) form$(br2)Can be used to summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#gaim)Gaim$(/l) form$(br2)Can be used to summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -221,7 +221,7 @@
 			"type": "patchouli:text",
 			"anchor": "drive_card",
 			"title": "KamenRide Drive",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#drive)Drive$(/l) form$(br2)Can be used to summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#drive)Drive$(/l) form$(br2)Can be used to summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -232,7 +232,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_card",
 			"title": "KamenRide Ghost",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ghost)Ghost$(/l) form$(br2)Can be used to summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#ghost)Ghost$(/l) form$(br2)Can be used to summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -243,7 +243,7 @@
 			"type": "patchouli:text",
 			"anchor": "ex_aid_card",
 			"title": "KamenRide Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#ex_aid)Ex-Aid$(/l) form$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid)Kamen Rider Ex-Aid$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ex_aid)Ex-Aid$(/l) form$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#action_2)Kamen Rider Ex-Aid$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -254,7 +254,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_card",
 			"title": "KamenRide Build",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#build)Build$(/l) form$(br2)Can be used to summon $(l:build/riders/build)Kamen Rider Build$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#build)Build$(/l) form$(br2)Can be used to summon $(l:build/riders/build)Kamen Rider Build$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -265,7 +265,7 @@
 			"type": "patchouli:text",
 			"anchor": "zi_o_card",
 			"title": "KamenRide Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/neo_decade#zi-o)Zi-O$(/l) form$(br2)Can be used to summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#zi-o)Zi-O$(/l) form$(br2)Can be used to summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:crafting",

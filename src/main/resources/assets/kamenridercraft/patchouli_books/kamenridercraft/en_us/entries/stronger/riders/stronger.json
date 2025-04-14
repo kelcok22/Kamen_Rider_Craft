@@ -16,21 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Stronger",
-			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Transforms with the $(l:stronger/devices/electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength II"
-		},
-		{
-			"type": "patchouli:entity",
-			"anchor": "white_color",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
-			"name": "White Color",
-			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Stronger",
-			"text": "Appears in:$(li)S.I.C. Takumi Damashii Vol. 4 (2004, toyline)$(br2)Transforms with the $(l:stronger/devices/electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Transforms with the $(l:stronger/devices/electrer#electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +30,21 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Stronger",
-			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Transforms with the $(l:stronger/devices/electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Transforms with the $(l:stronger/devices/electrer#electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "white_color",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:electrer\",components:{custom_data:{slot_tex1:\"kamenridercraft:electrer_core_artist\"}},Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "White Color",
+			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Stronger",
+			"text": "Appears in:$(li)S.I.C. Takumi Damashii Vol. 4 (2004, toyline)$(br2)Transforms with the $(l:stronger/devices/electrer#electrer)Electrer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Fire Resistance II$(li)Strength II"
 		}
 	]
 }

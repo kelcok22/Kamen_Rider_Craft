@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Diend",
 	"icon": "kamenridercraft:diend_card",
 	"category": "kamenridercraft:decade/riders",
-	"sortnum": 2,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:entity",

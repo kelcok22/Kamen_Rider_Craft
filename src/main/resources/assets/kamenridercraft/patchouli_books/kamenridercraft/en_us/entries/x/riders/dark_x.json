@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dark x",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:x/devices/dark_ridol)Ridol (Dark X)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:x/devices/ridol#dark_ridol)Ridol (Dark X)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

@@ -6,11 +6,24 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "condorer",
 			"text": "Appears in:$(li)Kamen Rider Amazon (1974, TV show)$(br2)Used alongside the $(l:amazon/devices/armor)Amazon armor$(/l) to transform into $(l:amazon/riders/amazon)Kamen Rider Amazon"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:amazon/condorer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_condorer",
+			"title": "Condorer (Dark Amazon)",
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Used alongside the $(l:amazon/devices/armor)Amazon armor$(/l) to transform into $(l:amazon/riders/dark_amazon)Dark Amazon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazon/dark_condorer"
 		}
 	]
 }

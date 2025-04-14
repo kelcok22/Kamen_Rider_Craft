@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider X",
-			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Transforms with the $(l:x/devices/ridol)Ridol$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Transforms with the $(l:x/devices/ridol#ridol)Ridol$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

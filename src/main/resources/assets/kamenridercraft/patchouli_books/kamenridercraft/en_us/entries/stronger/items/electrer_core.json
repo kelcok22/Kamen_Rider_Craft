@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Used to craft Stronger's $(l:stronger/devices/electrer)Electrer$(/l)$(br2)Used to access Stronger's $(l:stronger/riders/stronger#stronger)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Used to craft Stronger's $(l:stronger/devices/electrer#electrer)Electrer$(/l)$(br2)Used to access Stronger's $(l:stronger/riders/stronger#stronger)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
