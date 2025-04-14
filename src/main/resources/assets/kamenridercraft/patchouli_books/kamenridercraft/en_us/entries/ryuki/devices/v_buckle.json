@@ -1,0 +1,161 @@
+{
+	"name": "V Buckle",
+	"icon": "kamenridercraft:v_buckle_ryuki",
+	"category": "kamenridercraft:ryuki/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ryuki",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/ryuki#ryuki)Kamen Rider Ryuki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ryuki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_knight",
+			"title": "V Buckle (Knight)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/knight#knight)Kamen Rider Knight"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_knight"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_scissors",
+			"title": "V Buckle (Scissors)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/scissors)Kamen Rider Scissors"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_scissors"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_zolda",
+			"title": "V Buckle (Zolda)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/zolda)Kamen Rider Zolda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_zolda"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_raia",
+			"title": "V Buckle (Raia)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/raia#raia)Kamen Rider Raia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_raia"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_gai",
+			"title": "V Buckle (Gai)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/gai)Kamen Rider Gai"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_gai"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ouja",
+			"title": "V Buckle (Ouja)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/ouja#ouja)Kamen Rider Ouja"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ouja"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_odin",
+			"title": "V Buckle (Odin)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/odin)Kamen Rider Odin"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_odin"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_tiger",
+			"title": "V Buckle (Tiger)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/tiger)Kamen Rider Tiger"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_tiger"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_imperer",
+			"title": "V Buckle (Imperer)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/imperer)Kamen Rider Imperer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_imperer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_femme",
+			"title": "V Buckle (Femme)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/femme)Kamen Rider Femme"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_femme"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ryuga",
+			"title": "V Buckle (Ryuga)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/ryuga#ryuga)Kamen Rider Ryuga"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ryuga"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_verde",
+			"title": "V Buckle (Verde)",
+			"text": "Appears in:$(li)Kamen Rider Ryuki Special: 13 Riders (2002, TV special)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/verde)Kamen Rider Verde"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_verde"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_abyss",
+			"title": "V Buckle (Abyss)",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used alongside the $(l:ryuki/devices/armor)Ryuki armor$(/l) to transform into $(l:ryuki/riders/abyss)Kamen Rider Abyss"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_abyss"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"name": "V1 Belt",
 	"icon": "kamenridercraft:v1_belt",
 	"category": "kamenridercraft:agito/devices",
-	"sortnum": 10,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

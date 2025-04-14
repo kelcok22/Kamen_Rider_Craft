@@ -2,15 +2,28 @@
 	"name": "Ank Point",
 	"icon": "kamenridercraft:ank_point",
 	"category": "kamenridercraft:agito/devices",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "ank_point",
 			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/another_agito)Kamen Rider Another Agito"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:agito/ank_point"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ank_point_burning",
+			"title": "Ank Point (Kouji Majima)",
+			"text": "Appears in:$(li)The Man that has Become a Kamen Rider (2012, S.I.C. Hero Saga)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/another_agito_kouji_majima)Another Agito (Kouji Majima)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/ank_point_burning"
 		}
 	]
 }

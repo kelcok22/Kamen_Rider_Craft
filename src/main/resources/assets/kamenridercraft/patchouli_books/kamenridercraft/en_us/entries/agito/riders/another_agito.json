@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Another Agito",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/ank_point)Ank Point$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost IV$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/ank_point#ank_point)Ank Point$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost IV$(li)Strength II"
 		}
 	]
 }
