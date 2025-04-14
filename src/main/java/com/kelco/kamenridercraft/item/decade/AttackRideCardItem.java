@@ -150,9 +150,9 @@ public class AttackRideCardItem extends BaseItem {
 																			|| (entity instanceof OwnableEntity owned && owned.getOwner() == p_41129_));
 							for (LivingEntity ally : nearbyAllies) {
 								if (ally.getMainHandItem().getItem() instanceof BowItem) {
-									ally.addEffect(new MobEffectInstance(Effect_core.SHOT_BOOST, 250, 3,true,true));
+									ally.addEffect(new MobEffectInstance(Effect_core.SHOT_BOOST, 250, 3,false,true));
 								} else {
-									ally.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 250, 3,true,true));
+									ally.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 250, 3,false,true));
 								}
 							}
 							break;

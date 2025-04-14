@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Used to craft Riderman's $(l:v3/devices/riderman_belt)Rider Buckle$(/l)$(br2)Used to access Riderman's $(l:v3/riders/riderman#riderman)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Used to craft Riderman's $(l:v3/devices/rider_buckle#riderman_belt)Rider Buckle$(/l)$(br2)Used to access Riderman's $(l:v3/riders/riderman#riderman)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

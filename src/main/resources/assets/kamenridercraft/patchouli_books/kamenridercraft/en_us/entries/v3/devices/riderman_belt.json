@@ -6,11 +6,24 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "riderman_belt",
 			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Used alongside the $(l:v3/devices/armor)V3 armor$(/l) to transform into $(l:v3/riders/riderman#riderman)Riderman"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:v3/riderman_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_riderman_belt",
+			"title": "Rider Buckle (Dark Riderman)",
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Used alongside the $(l:v3/devices/armor)V3 armor$(/l) to transform into $(l:v3/riders/dark_riderman)Dark Riderman"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:v3/dark_riderman_belt"
 		}
 	]
 }

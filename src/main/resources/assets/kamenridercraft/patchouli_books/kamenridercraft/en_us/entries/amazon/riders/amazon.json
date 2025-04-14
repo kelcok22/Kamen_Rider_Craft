@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Amazon",
-			"text": "Appears in:$(li)Kamen Rider Amazon (1974, TV show)$(br2)Transforms with the $(l:amazon/devices/condorer)Condorer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Amazon (1974, TV show)$(br2)Transforms with the $(l:amazon/devices/condorer#condorer)Condorer$(/l)$(br2)Status Effects:$(li)Speed III$(li)Regeneration II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Pre Amazon",
-			"text": "Appears in:$(li)Pre-Stage (2004, S.I.C. Hero Saga)$(br2)Transforms with the $(l:amazon/devices/condorer)Condorer$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness"
+			"text": "Appears in:$(li)Pre-Stage (2004, S.I.C. Hero Saga)$(br2)Transforms with the $(l:amazon/devices/condorer#condorer)Condorer$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness"
 		}
 	]
 }
