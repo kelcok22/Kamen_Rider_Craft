@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
+import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
@@ -371,6 +372,7 @@ public class ModCommonEvents {
 	@SubscribeEvent
 	public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ElementaryInvesModel.LAYER_LOCATION, ElementaryInvesModel::createBodyLayer);
+		event.registerLayerDefinition(HeartRoidmudeModel.LAYER_LOCATION, HeartRoidmudeModel::createBodyLayer);
 	}
 
 	@SubscribeEvent
@@ -464,6 +466,7 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.ROIDMUDE.get(), RoidmudeEntity.setAttributes().build());
 		event.put(MobsCore.MASHIN_CHASER.get(), MashinChaserEntity.setAttributes().build());
+		event.put(MobsCore.HEART_ROIDMUDE.get(), MashinChaserEntity.setAttributes().build());
 
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 

@@ -222,6 +222,9 @@ public class KamenRiderCraftCore
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
             if (belt.isTransformed(event.getEntity())) {
                 if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
+                    event.getRenderer().getModel().head.visible = false;
+                    event.getRenderer().getModel().hat.visible = false;
+                }
                     event.getRenderer().getModel().leftArm.visible = false;
                     event.getRenderer().getModel().rightArm.visible = false;
                     event.getRenderer().getModel().leftLeg.visible = false;
@@ -234,9 +237,7 @@ public class KamenRiderCraftCore
 
                     event.getRenderer().getModel().body.visible = false;
                     event.getRenderer().getModel().jacket.visible = false;
-                    event.getRenderer().getModel().head.visible = false;
-                    event.getRenderer().getModel().jacket.visible = false;
-                }
+
             }
         }
         if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
@@ -472,6 +473,7 @@ public class KamenRiderCraftCore
 
             event.registerEntityRenderer(MobsCore.ROIDMUDE.get(), RoidmudeRenderer::new);
             event.registerEntityRenderer(MobsCore.MASHIN_CHASER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.HEART_ROIDMUDE.get(), HeartRoidmudeRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
