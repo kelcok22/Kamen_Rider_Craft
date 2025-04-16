@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "henshin_kigen_todoroki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Todoroki's $(l:hibiki/devices/todorokidriver)Ongekishin Raigou$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Todoroki's $(l:hibiki/devices/ongekishin#todorokidriver)Ongekishin Raigou$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_kigen_zanki",
 			"title": "Henshin Kigen (Zanki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Zanki's $(l:hibiki/devices/zankidriver)Ongekishin Zantetsu$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Zanki's $(l:hibiki/devices/ongekishin#zankidriver)Ongekishin Zantetsu$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_kigen_shuki",
 			"title": "Henshin Kigen (Shuki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shuki's $(l:hibiki/devices/shukidriver)Ongekishin (Shuki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shuki's $(l:hibiki/devices/ongekishin#shukidriver)Ongekishin (Shuki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -44,7 +44,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_kigen_banki",
 			"title": "Henshin Kigen (Banki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Banki's $(l:hibiki/devices/bankidriver)Ongekishin Jigoku$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Banki's $(l:hibiki/devices/ongekishin#bankidriver)Ongekishin Jigoku$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -57,7 +57,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_kigen_sabaki",
 			"title": "Henshin Kigen (Sabaki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Sabaki's $(l:hibiki/devices/sabakidriver)Ongekishin Gokuraku$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Sabaki's $(l:hibiki/devices/ongekishin#sabakidriver)Ongekishin Gokuraku$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

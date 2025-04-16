@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Weakness"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Weakness"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost II$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed III$(li)Weakness$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed III$(li)Weakness$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations The Movie: The Onigashima Warship (2009, movie)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations The Movie: The Onigashima Warship (2009, movie)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Den-O",
-			"text": "Appears in:$(li)Imagin Anime 3 (2010, OVA series)$(br2)Transforms with the $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+			"text": "Appears in:$(li)Imagin Anime 3 (2010, OVA series)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
 		}
 	]
 }

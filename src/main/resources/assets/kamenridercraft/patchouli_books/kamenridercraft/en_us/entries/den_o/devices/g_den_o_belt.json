@@ -2,7 +2,7 @@
 	"name": "G Den-O Belt",
 	"icon": "kamenridercraft:g_den_o_belt",
 	"category": "kamenridercraft:den_o/devices",
-	"sortnum": 7,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

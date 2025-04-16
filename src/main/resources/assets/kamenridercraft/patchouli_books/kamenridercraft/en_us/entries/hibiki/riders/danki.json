@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Danki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/dankidriver)Ongekiko Mikageban$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#dankidriver)Ongekiko Mikageban$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II"
 		}
 	]
 }

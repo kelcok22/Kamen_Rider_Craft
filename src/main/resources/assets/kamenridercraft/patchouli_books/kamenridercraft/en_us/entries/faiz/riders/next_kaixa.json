@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Next Kaixa",
-			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Transforms with the $(l:faiz/devices/next_kaixa_driver)Kaixa Driver with Kaixa Phone XX$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Transforms with the $(l:faiz/devices/kaixa_driver#next_kaixa_driver)Kaixa Driver with Kaixa Phone XX$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",

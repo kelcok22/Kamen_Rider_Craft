@@ -2,7 +2,7 @@
 	"name": "Brightrooper Belt",
 	"icon": "kamenridercraft:brightrooper_belt",
 	"category": "kamenridercraft:kabuto/devices",
-	"sortnum": 15,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

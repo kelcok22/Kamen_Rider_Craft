@@ -1,16 +1,39 @@
 {
-	"name": "Pyron Driver (Grand Prix Blue)",
+	"name": "Pyron Driver",
 	"icon": "kamenridercraft:pyron_driver",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 12,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "pyron_driver",
 			"text": "Appears in:$(li)ICON: Tamotsu Shinohara Character Art Works (2006, art book)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/pyron#grand_prix_blue)Kamen Rider Pyron"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:faiz/pyron_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pyron_driver_sr",
+			"title": "Pyron Driver (Sonia Red)",
+			"text": "Appears in:$(li)ICON: Tamotsu Shinohara Character Art Works (2006, art book)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/pyron#sonia_red)Kamen Rider Pyron"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/pyron_driver_sr"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pyron_driver_mb",
+			"title": "Pyron Driver (Midnight Black)",
+			"text": "Appears in:$(li)ICON: Tamotsu Shinohara Character Art Works (2006, art book)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/pyron#midnight_black)Kamen Rider Pyron"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/pyron_driver_mb"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Yuuki Belt",
 	"icon": "kamenridercraft:yuuki_belt",
 	"category": "kamenridercraft:den_o/devices",
-	"sortnum": 6,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

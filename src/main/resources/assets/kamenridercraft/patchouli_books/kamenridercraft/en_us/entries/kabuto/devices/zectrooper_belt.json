@@ -2,7 +2,7 @@
 	"name": "ZECTrooper Belt",
 	"icon": "kamenridercraft:zectrooper_belt",
 	"category": "kamenridercraft:kabuto/devices",
-	"sortnum": 13,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

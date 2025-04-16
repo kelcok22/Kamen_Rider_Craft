@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Transformed Kyosuke",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/kyosukedriver)Ongekiko (Kyoki)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#kyosukedriver)Ongekiko (Kyoki)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
 		}
 	]
 }

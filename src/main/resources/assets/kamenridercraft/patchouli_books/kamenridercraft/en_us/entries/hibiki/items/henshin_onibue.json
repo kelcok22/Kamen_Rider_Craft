@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "henshin_onibue_ibuki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Ibuki's $(l:hibiki/devices/ibukidriver)Ongekimei Narukaze$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Ibuki's $(l:hibiki/devices/ongekimei#ibukidriver)Ongekimei Narukaze$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onibue_toki",
 			"title": "Henshin Onibue (Toki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Touki's $(l:hibiki/devices/tokidriver)Ongekimei (Toki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Touki's $(l:hibiki/devices/ongekimei#tokidriver)Ongekimei (Toki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onibue_shouki",
 			"title": "Henshin Onibue (Shouki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shouki's $(l:hibiki/devices/shoukidriver)Ongekimei Fusoku$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Shouki's $(l:hibiki/devices/ongekimei#shoukidriver)Ongekimei Fusoku$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onibue_amaki",
 			"title": "Henshin Onibue (Amaki)",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Amaki's $(l:hibiki/devices/amakidriver)Ongekimei (Amaki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Amaki's $(l:hibiki/devices/ongekimei#amakidriver)Ongekimei (Amaki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onibue_fubuki",
 			"title": "Henshin Onibue (Fubuki)",
-			"text": "Appears in:$(li)Super Imaginative Chogokin (2005, toyline)$(br2)Used to craft Fubuki's $(l:hibiki/devices/fubukidriver)Ongekimei (Fubuki)$(/l)"
+			"text": "Appears in:$(li)Super Imaginative Chogokin (2005, toyline)$(br2)Used to craft Fubuki's $(l:hibiki/devices/ongekimei#fubukidriver)Ongekimei (Fubuki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

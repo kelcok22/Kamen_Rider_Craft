@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kabuto_zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Kabuto's $(l:kabuto/devices/kabuto_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Kabuto's $(l:kabuto/riders/kabuto#masked)Masked$(/l) and $(l:kabuto/riders/kabuto#rider)Rider$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Kabuto's $(l:kabuto/devices/rider_belt#kabuto_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Kabuto's $(l:kabuto/riders/kabuto#masked)Masked$(/l) and $(l:kabuto/riders/kabuto#rider)Rider$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "thebee_zecter",
 			"title": "TheBee Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft TheBee's $(l:kabuto/devices/thebee_rider_belt)ZECT Buckle$(/l)$(br2)Used to swap between TheBee's $(l:kabuto/riders/thebee#masked)Masked$(/l) and $(l:kabuto/riders/thebee#rider)Rider$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft TheBee's $(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT Buckle$(/l)$(br2)Used to swap between TheBee's $(l:kabuto/riders/thebee#masked)Masked$(/l) and $(l:kabuto/riders/thebee#rider)Rider$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"anchor": "gatack_zecter",
 			"title": "Gatack Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Gatack's $(l:kabuto/devices/gatack_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Gatack's $(l:kabuto/riders/gatack#masked)Masked$(/l) and $(l:kabuto/riders/gatack#rider)Rider$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Gatack's $(l:kabuto/devices/rider_belt#gatack_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Gatack's $(l:kabuto/riders/gatack#masked)Masked$(/l) and $(l:kabuto/riders/gatack#rider)Rider$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "kickhopper_zecter",
 			"title": "Hopper Zecter (KickHopper)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft KickHopper's $(l:kabuto/devices/kickhopper_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft KickHopper's $(l:kabuto/devices/zect_buckle#kickhopper_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "punchhopper_zecter",
 			"title": "Hopper Zecter (PunchHopper)",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft PunchHopper's $(l:kabuto/devices/punchhopper_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft PunchHopper's $(l:kabuto/devices/zect_buckle#punchhopper_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -97,7 +97,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_kabuto_zecter",
 			"title": "Dark Kabuto Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Dark Kabuto's $(l:kabuto/devices/dark_kabuto_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Dark Kabuto's $(l:kabuto/riders/dark_kabuto#masked)Masked$(/l) and $(l:kabuto/riders/dark_kabuto#rider)Rider$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Used to craft Dark Kabuto's $(l:kabuto/devices/rider_belt#dark_kabuto_rider_belt)Rider Belt$(/l)$(br2)Used to swap between Dark Kabuto's $(l:kabuto/riders/dark_kabuto#masked)Masked$(/l) and $(l:kabuto/riders/dark_kabuto#rider)Rider$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "caucasus_zecter",
 			"title": "Caucasus Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Caucasus's $(l:kabuto/devices/caucasus_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Caucasus's $(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "hercus_zecter",
 			"title": "Hercus Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Hercus's $(l:kabuto/devices/hercus_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Hercus's $(l:kabuto/devices/zect_buckle#hercus_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "ketaros_zecter",
 			"title": "Ketaros Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Ketaros's $(l:kabuto/devices/ketaros_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Used to craft Ketaros's $(l:kabuto/devices/zect_buckle#ketaros_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "lady_zecter",
 			"title": "Lady Zecter",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Used to craft Lady's $(l:kabuto/devices/lady_rider_belt)ZECT Buckle$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Used to craft Lady's $(l:kabuto/devices/zect_buckle#lady_rider_belt)ZECT Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

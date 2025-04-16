@@ -2,7 +2,7 @@
 	"name": "Gaoh Belt",
 	"icon": "kamenridercraft:gaoh_belt",
 	"category": "kamenridercraft:den_o/devices",
-	"sortnum": 5,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

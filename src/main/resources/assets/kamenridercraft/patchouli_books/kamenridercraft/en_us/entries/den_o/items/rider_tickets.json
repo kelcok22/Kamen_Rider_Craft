@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rider_ticket",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to craft Den-O's $(l:den_o/devices/den_o_belt)Den-O Belt$(/l)$(br2)Used to access Den-O's $(l:den_o/riders/den_o#plat)Plat$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Used to craft Den-O's $(l:den_o/devices/den_o_belt#den_o_belt)Den-O Belt$(/l)$(br2)Used to access Den-O's $(l:den_o/riders/den_o#plat)Plat$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "rider_ticket_nega",
 			"title": "Rider Ticket Negataros",
-			"text": "Appears in:$(li)Kamen Rider Den-O & Kiva: Climax Cop (2008, movie)$(br2)Used to craft Nega Den-O's $(l:den_o/devices/nega_den_o_belt)Nega Den-O Belt$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Den-O & Kiva: Climax Cop (2008, movie)$(br2)Used to craft Nega Den-O's $(l:den_o/devices/den_o_belt#nega_den_o_belt)Den-O Belt (Nega Den-O)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,0 +1,61 @@
+{
+	"name": "Ongekishin",
+	"icon": "kamenridercraft:todorokidriver",
+	"category": "kamenridercraft:hibiki/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "todorokidriver",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/todoroki)Kamen Rider Todoroki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/todorokidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zankidriver",
+			"title": "Ongekishin Zantetsu",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/zanki)Kamen Rider Zanki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/zankidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sabakidriver",
+			"title": "Ongekishin Gokuraku",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/sabaki)Kamen Rider Sabaki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/sabakidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shukidriver",
+			"title": "Ongekishin (Shuki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/shuki)Kamen Rider Shuki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/shukidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bankidriver",
+			"title": "Ongekishin Jigoku",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/banki)Kamen Rider Banki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/bankidriver"
+		}
+	]
+}

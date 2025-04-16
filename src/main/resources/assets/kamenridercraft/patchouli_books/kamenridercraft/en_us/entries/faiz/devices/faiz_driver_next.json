@@ -2,7 +2,7 @@
 	"name": "Faiz Driver NEXT",
 	"icon": "kamenridercraft:faiz_driver_next",
 	"category": "kamenridercraft:faiz/devices",
-	"sortnum": 8,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",
