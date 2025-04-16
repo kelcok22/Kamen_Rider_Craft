@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider KickHopper",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/kickhopper_rider_belt)ZECT Buckle (KickHopper)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Haste V$(li)Jump Boost VIII$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#kickhopper_rider_belt)ZECT Buckle (KickHopper)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Haste V$(li)Jump Boost VIII$(li)Strength IV"
 		}
 	]
 }

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Eiki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/eikidriver)Ongekiko Hakuryoku$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#eikidriver)Ongekiko Hakuryoku$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Fire Resistance"
 		}
 	]
 }

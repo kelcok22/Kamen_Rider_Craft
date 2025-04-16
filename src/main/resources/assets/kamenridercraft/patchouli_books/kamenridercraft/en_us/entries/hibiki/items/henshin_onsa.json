@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Hibiki's $(l:hibiki/devices/hibikidriver)Ongekiko Kaentsuzumi$(/l)$(br2)Used to access Hibiki's $(l:hibiki/riders/hibiki#hibiki)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Hibiki's $(l:hibiki/devices/ongekiko#hibikidriver)Ongekiko Kaentsuzumi$(/l)$(br2)Used to access Hibiki's $(l:hibiki/riders/hibiki#hibiki)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_danki",
 			"title": "Henshin Onsa (Danki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Danki's $(l:hibiki/devices/dankidriver)Ongekiko Mikageban$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Danki's $(l:hibiki/devices/ongekiko#dankidriver)Ongekiko Mikageban$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -44,7 +44,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_eiki",
 			"title": "Henshin Onsa (Eiki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Eiki's $(l:hibiki/devices/eikidriver)Ongekiko Hakuryoku$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Eiki's $(l:hibiki/devices/ongekiko#eikidriver)Ongekiko Hakuryoku$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -57,7 +57,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_gouki",
 			"title": "Henshin Onsa (Gouki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Gouki's $(l:hibiki/devices/goukidriver)Ongekiko Kongou$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Gouki's $(l:hibiki/devices/ongekiko#goukidriver)Ongekiko Kongou$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -70,7 +70,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_kyoki",
 			"title": "Henshin Onsa (Kyoki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Kyoki's $(l:hibiki/devices/kyosukedriver)Ongekiko (Kyoki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used to craft Kyoki's $(l:hibiki/devices/ongekiko#kyosukedriver)Ongekiko (Kyoki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -83,7 +83,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_kabuki",
 			"title": "Henshin Onsa (Kabuki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Kabuki's $(l:hibiki/devices/kabukidriver)Ongekiko (Kabuki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Kabuki's $(l:hibiki/devices/ongekiko#kabukidriver)Ongekiko (Kabuki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -96,7 +96,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_touki",
 			"title": "Henshin Onsa (Touki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Touki's $(l:hibiki/devices/toukidriver)Ongekiko (Touki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Touki's $(l:hibiki/devices/ongekiko#toukidriver)Ongekiko (Touki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -109,7 +109,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_habataki",
 			"title": "Henshin Onsa (Habataki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Habataki's $(l:hibiki/devices/habatakidriver)Ongekimei (Habataki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Habataki's $(l:hibiki/devices/ongekimei#habatakidriver)Ongekimei (Habataki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -122,7 +122,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_kirameki",
 			"title": "Henshin Onsa (Kirameki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Kirameki's $(l:hibiki/devices/kiramekidriver)Ongekimei (Kirameki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Kirameki's $(l:hibiki/devices/ongekimei#kiramekidriver)Ongekimei (Kirameki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -135,7 +135,7 @@
 			"type": "patchouli:text",
 			"anchor": "henshin_onsa_nishiki",
 			"title": "Henshin Onsa (Nishiki)",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Nishiki's $(l:hibiki/devices/nishikidriver)Ongekiko (Nishiki)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used to craft Nishiki's $(l:hibiki/devices/ongekiko#nishikidriver)Ongekiko (Nishiki)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

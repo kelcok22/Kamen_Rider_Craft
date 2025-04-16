@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ibuki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ibukidriver)Ongekimei Narukaze$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekimei#ibukidriver)Ongekimei Narukaze$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength II"
 		}
 	]
 }

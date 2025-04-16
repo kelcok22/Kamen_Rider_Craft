@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Amaki",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:hibiki/devices/amakidriver)Ongekimei (Amaki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekimei#amakidriver)Ongekimei (Amaki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II$(li)Strength II"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Neotrooper Belt",
 	"icon": "kamenridercraft:neotrooper_belt",
 	"category": "kamenridercraft:kabuto/devices",
-	"sortnum": 16,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

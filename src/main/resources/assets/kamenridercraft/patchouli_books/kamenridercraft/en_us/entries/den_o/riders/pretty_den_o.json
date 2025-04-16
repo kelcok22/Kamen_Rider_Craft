@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Pretty Den-O",
-			"text": "Appears in:$(li)Kamen Rider Den-O: Pretty Den-O Appears! (2020, movie)$(br2)Transforms with the $(l:den_o/devices/pretty_den_o_belt)Pretty Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Den-O: Pretty Den-O Appears! (2020, movie)$(br2)Transforms with the $(l:den_o/devices/den_o_belt#pretty_den_o_belt)Pretty Den-O Belt$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
 		}
 	]
 }

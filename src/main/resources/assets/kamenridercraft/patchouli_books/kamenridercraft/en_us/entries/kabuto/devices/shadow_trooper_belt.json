@@ -2,7 +2,7 @@
 	"name": "Shadow Trooper Belt",
 	"icon": "kamenridercraft:shadow_trooper_belt",
 	"category": "kamenridercraft:kabuto/devices",
-	"sortnum": 14,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

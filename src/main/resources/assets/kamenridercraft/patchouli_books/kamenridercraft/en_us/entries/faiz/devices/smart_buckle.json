@@ -6,6 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "smartbuckle",
 			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into a $(l:faiz/riders/riotrooper)Riotrooper"
 		},
 		{
@@ -14,6 +15,19 @@
 			"item": "kamenridercraft:smartbuckle",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:faiz/mobs/riotrooper)Riotroopers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smartbuckle_v2",
+			"title": "Smart Buckle (Riotrooper V2)",
+			"text": "Appears in:$(li)Lost World (2005, S.I.C. Hero Saga)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into a $(l:faiz/riders/riotrooper_v2)Riotrooper V2"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smartbuckle_v2",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

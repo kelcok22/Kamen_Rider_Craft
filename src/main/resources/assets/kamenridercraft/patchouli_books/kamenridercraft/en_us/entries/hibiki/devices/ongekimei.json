@@ -1,0 +1,83 @@
+{
+	"name": "Ongekimei",
+	"icon": "kamenridercraft:ibukidriver",
+	"category": "kamenridercraft:hibiki/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ibukidriver",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/ibuki)Kamen Rider Ibuki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ibukidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tokidriver",
+			"title": "Ongekimei (Toki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/toki)Kamen Rider Touki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/tokidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shoukidriver",
+			"title": "Ongekimei (Shouki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/shouki)Kamen Rider Shouki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/shoukidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amakidriver",
+			"title": "Ongekimei (Amaki)",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/amaki)Kamen Rider Amaki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/amakidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiramekidriver",
+			"title": "Ongekimei (Kirameki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/kirameki)Kamen Rider Kirameki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/kiramekidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "habatakidriver",
+			"title": "Ongekimei (Habataki)",
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/habataki)Kamen Rider Habataki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/habatakidriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fubukidriver",
+			"title": "Ongekimei (Fubuki)",
+			"text": "Appears in:$(li)Super Imaginative Chogokin (2005, toyline)$(br2)Used alongside the $(l:hibiki/devices/armor)Hibiki armor$(/l) to transform into $(l:hibiki/riders/fubuki)Kamen Rider Fubuki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/fubukidriver"
+		}
+	]
+}

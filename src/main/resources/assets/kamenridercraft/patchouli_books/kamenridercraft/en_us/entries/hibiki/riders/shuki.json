@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Shuki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/shukidriver)Ongekishin (Shuki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Regeneration$(li)Fire Resistance$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Transforms with the $(l:hibiki/devices/ongekishin#shukidriver)Ongekishin (Shuki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Regeneration$(li)Fire Resistance$(li)Strength II"
 		}
 	]
 }
