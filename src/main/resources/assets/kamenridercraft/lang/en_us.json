@@ -229,6 +229,7 @@
   "henshin.kamenridercraft.duke":"§cSoda! §eLemon Energy Arms!",
   "henshin.kamenridercraft.sigurd":"§cSoda! Cherry Energy Arms!",
   "henshin.kamenridercraft.mashin_chaser":"§5Break Up!",
+  "henshin.kamenridercraft.heart_roidmude":"<Heart> §4Seems Fun, Can I Play Too?",
   "henshin.kamenridercraft.genm":"§5Gachan! Level Up! Mighty jump! Mighty kick! Mighty Action X!",
   "henshin.kamenridercraft.graphite":"§2Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!",
   "henshin.kamenridercraft.poppy":"§bBuggle Up! §eDreaming girl! Koi no simulation! §6Otome wa itsumo Toki Meki Crisis!",
@@ -3253,6 +3254,7 @@
   "item.kamenridercraft.holy_christmas": "Shift Holy Christmas",
 
   "item.kamenridercraft.banno_tablet": "Banno Tablet",
+  "item.kamenridercraft.roidmude_core_002": "Roidmude Core 002",
   "item.kamenridercraft.roidmude_core_003": "Roidmude Core 003",
   "item.kamenridercraft.protozero_core": "Roidmude Core Protozero",
   "item.kamenridercraft.cyberoid_zzz_core": "Cyberoid Core ZZZ",
@@ -6405,6 +6407,7 @@
 
   "entity.kamenridercraft.roidmude": "Roidmude",
   "entity.kamenridercraft.mashin_chaser": "Mashin Chaser",
+  "entity.kamenridercraft.heart_roidmude": "Heart Roidmude",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -6613,6 +6616,7 @@
 
   "item.kamenridercraft.roidmude_spawn_egg": "Roidmude Spawn Egg",
   "item.kamenridercraft.mashin_chaser_spawn_egg": "Mashin Chaser Spawn Egg",
+  "item.kamenridercraft.heart_roidmude_spawn_egg": "Heart Roidmude Spawn Egg",
 
   "item.kamenridercraft.touto_guardian_spawn_egg": "Touto Guardian Spawn Egg",
   "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
