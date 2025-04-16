@@ -532,6 +532,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> MASHIN_CHASER_SPAWN_EGG = ITEMS.register("mashin_chaser_spawn_egg",
             () -> new DeferredSpawnEggItem(MASHIN_CHASER, 0x800090, 0xcacaca, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<HeartRoidmudeEntity>> HEART_ROIDMUDE = MOBLIST.register("heart_roidmude",
+            () -> EntityType.Builder.of(HeartRoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_baron"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> HEART_ROIDMUDE_SPAWN_EGG = ITEMS.register("heart_roidmude_spawn_egg",
+            () -> new DeferredSpawnEggItem(HEART_ROIDMUDE, 0xb2a969, 0xba0705, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<GammaCommandoEntity>> GAMMA_COMMANDO = MOBLIST.register("gamma_commandos",
                   () -> EntityType.Builder.of(GammaCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamma_commandos"));
