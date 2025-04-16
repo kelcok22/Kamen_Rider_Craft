@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-16T21:42:38.1581848	Item Models: kamenridercraft
+// 1.21.1	2025-04-17T00:13:23.0574441	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -140,6 +140,7 @@ d81d60c8104e926f816a0a71a5a25c604b1da127 assets/kamenridercraft/models/item/kick
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_kenzan.json
 344e43b85bcf965f6590b2f697238e7f15a76f29 assets/kamenridercraft/models/item/kobuta_3_kyoudai_wonder_ride_book_slash.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/kouji_genbar_tire.json
+72c64001c18363cf47fcd6f8282f0d33c79f0330 assets/kamenridercraft/models/item/kuuga_ball.json
 ee2f4e767a79523b232fb53e835a260fdedec0a3 assets/kamenridercraft/models/item/kuuga_black_rising_mighty.json
 0dc660dbe37d4932b8dc7585219e39d159a1fec9 assets/kamenridercraft/models/item/machwheel_ride_chemy_card.json
 223d1aaf4667d69193f4b4d66d48b551d712ddc8 assets/kamenridercraft/models/item/mad_doctor_mach.json

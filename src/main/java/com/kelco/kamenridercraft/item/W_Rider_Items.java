@@ -170,7 +170,15 @@ public class W_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.addNeedForm(CYCLONE_MEMORY.get(),1).ChangeSlot(2)
 					.model_has_different_name("skull_memory").has_basic_model());
-	
+
+	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_crystal","skulll_crystal","lostdriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.SetPalyerModelInvisible().IsGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).model_has_different_name("skull_memory"));
+
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","skull","lostdriver_belt",
@@ -178,7 +186,8 @@ public class W_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.addAlternative(CYCLONE_SKULL_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
+					.addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
+
 
 	public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_red","eternal","lostdriver_belt_e",
