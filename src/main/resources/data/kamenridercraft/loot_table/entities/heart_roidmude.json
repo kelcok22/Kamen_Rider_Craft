@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 2,
+		  "name": "kamenridercraft:viral_core_chaser_cobara"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:viral_core_neo_spider"
+		},
+		  {
+			  "type": "minecraft:item",
+			  "weight": 1,
+			  "name": "kamenridercraft:roidmude_core_002"
+		  }
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shift_alloy",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 3,
+				"max": 5
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

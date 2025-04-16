@@ -21,6 +21,8 @@ import javax.annotation.Nullable;
 
 public class RoidmudeEntity extends BaseHenchmenEntity {
 
+    private BaseHenchmenEntity boss;
+
     private static final EntityDataAccessor<Integer> VARIANT =
         SynchedEntityData.defineId(RoidmudeEntity.class, EntityDataSerializers.INT);
 
@@ -29,19 +31,33 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
         NAME="roidmude";
     }
 
-    public void remove(RemovalReason reason) {
-        if (reason == RemovalReason.KILLED) {
+    public void remove(RemovalReason p_149847_) {
+
+        if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                BaseHenchmenEntity boss = MobsCore.MASHIN_CHASER.get().create(this.level());
+                int bossChoice = this.random.nextInt(2);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.MASHIN_CHASER.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.mashin_chaser"));
+                        }
+                        break;
+                    case 1:
+                        boss = MobsCore.HEART_ROIDMUDE.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.heart_roidmude"));
+                        }
+                        break;
+                    default:
+                }
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
-
-                    if (this.getLastAttacker()instanceof Player playerIn) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.mashin_chaser"));
                 }
             }
         }
-        super.remove(reason);
+        super.remove(p_149847_);
     }
     //variants below
 
