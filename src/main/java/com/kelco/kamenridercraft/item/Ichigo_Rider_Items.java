@@ -208,7 +208,8 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_BELT = ITEMS.register("riderman_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.V3_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"riderman",RIDERMAN_BELT_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).IsA1()
+                    .Override_belt_text("riderman_belt").AddToTabList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_DOUBLE_TYPHOON = ITEMS.register("dark_double_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
