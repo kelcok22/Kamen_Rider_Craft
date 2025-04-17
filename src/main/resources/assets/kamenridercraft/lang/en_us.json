@@ -702,6 +702,7 @@
   "kamenridercraft:kuuga_ultimate.form": "Form: Ultimate Form",
   "kamenridercraft:kuuga_rising_ultimate.form": "Form: Rising Ultimate Form",
   "kamenridercraft:kuuga_super_rising_ultimate.form": "Form: Super Rising Ultimate Form",
+  "kamenridercraft:kuuga_ball.form": "Form: Kuuga Ball",
   "kamenridercraft:kuuga_manga.form": "Form: Manga Mighty Form",
 
   "item.kamenridercraft.dragon_rod": "Dragon Rod",
@@ -1817,6 +1818,7 @@
 "item.kamenridercraft.kuuga_amazing_mighty_card": "FormRide Kuuga Amazing Mighty",
 "item.kamenridercraft.black_rx_roborider_card": "FormRide Black RX Robo Rider",
 "item.kamenridercraft.black_rx_biorider_card": "FormRide Black RX Bio Rider",
+"item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
 
   "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
   "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
@@ -3319,7 +3321,7 @@
   "kamenridercraft:high_speedshift.tire.form": "Tire: type High Speed",
   "kamenridercraft:formulashift.tire.form": "Tire: type Formula",
   "kamenridercraft:tridoronshift.tire.form": "Tire: type Tridoron",
-  "kamenridercraft:tridoronshift_not_all_tire.form": "Tire: type Tridoron",
+  "kamenridercraft:tridoronshift_not_all.tire.form": "Tire: type Tridoron",
   "kamenridercraft:nextshift.tire.form": "Tire: type Next",
   "kamenridercraft:specialshift.tire.form": "Tire: type Special",
   "kamenridercraft:fruitsshift.tire.form": "Tire: type Fruits",

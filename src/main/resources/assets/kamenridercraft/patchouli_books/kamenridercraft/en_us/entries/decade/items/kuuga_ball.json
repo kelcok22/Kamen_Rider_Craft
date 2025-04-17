@@ -1,0 +1,19 @@
+{
+	"name": "Final FormRide Kuuga Ball",
+	"icon": "kamenridercraft:kuuga_ball",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride Card Battle War (2010, DS game)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#kuuga_ball)Kuuga Ball$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_ball",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
