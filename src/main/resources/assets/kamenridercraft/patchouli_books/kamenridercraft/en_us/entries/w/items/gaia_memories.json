@@ -193,7 +193,7 @@
 			"type": "patchouli:text",
 			"anchor": "skull_memory",
 			"title": "Skull Memory",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Used to craft Skull's $(l:w/devices/lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Used to access Double's $(l:w/riders/double#cycloneskull)CycloneSkull$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Used to craft Skull's $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Used to access Skull's $(l:w/riders/skull#skull)base$(/l) form and $(l:w/riders/skull#skull_crystal)Skull Crystal$(/l)$(br2)Used to access Double's $(l:w/riders/double#cycloneskull)CycloneSkull$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -358,7 +358,7 @@
 			"type": "patchouli:text",
 			"anchor": "cyclone_t2_memory",
 			"title": "Cyclone T2 Memory",
-			"text": "Appears in:$(li)Kamen Rider W: ~The One Who Continues After Z~ (2012, novel)$(br2)Used to craft Cyclone's $(l:w/devices/lostdriver_cyclone)Lostdriver (Cyclone)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider W: ~The One Who Continues After Z~ (2012, novel)$(br2)Used to craft Cyclone's $(l:w/devices/lostdriver#lostdriver_cyclone)Lostdriver (Cyclone)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -384,7 +384,7 @@
 			"type": "patchouli:text",
 			"anchor": "eternal_t2_memory",
 			"title": "Eternal T2 Memory",
-			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Eternal's $(l:w/devices/lostdriver_eternal)Lostdriver (Eternal)$(/l)$(br2)Used to access Eternal's $(l:w/riders/eternal#blue_flare)Blue Flare$(/l)"
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Eternal's $(l:w/devices/lostdriver#lostdriver_eternal)Lostdriver (Eternal)$(/l)$(br2)Used to access Eternal's $(l:w/riders/eternal#blue_flare)Blue Flare$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -449,7 +449,7 @@
 			"type": "patchouli:text",
 			"anchor": "joker_t2_memory",
 			"title": "Joker T2 Memory",
-			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Joker's $(l:w/devices/lostdriver_joker)Lostdriver (Joker)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Used to craft Joker's $(l:w/devices/lostdriver#lostdriver_joker)Lostdriver (Joker)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

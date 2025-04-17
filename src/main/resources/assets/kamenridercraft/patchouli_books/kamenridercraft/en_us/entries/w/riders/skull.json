@@ -6,16 +6,31 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"anchor": "skull",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
-			"text": ""
+			"text": "Accessed with the $(l:w/items/gaia_memories#skull_memory)Skull Memory$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Skull",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:w/devices/lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "skull_crystal",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_skull\",components:{custom_data:{slot_tex1:\"kamenridercraft:skull_memory_crystal\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Skull Crystal",
+			"text": "Accessed with the $(l:w/items/gaia_memories#skull_memory)Skull Memory$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Skull",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
 		}
 	]
 }

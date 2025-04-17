@@ -2,7 +2,7 @@
 	"name": "Break Gunner (Belt)",
 	"icon": "kamenridercraft:break_gunner_belt",
 	"category": "kamenridercraft:drive/devices",
-	"sortnum": 6,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

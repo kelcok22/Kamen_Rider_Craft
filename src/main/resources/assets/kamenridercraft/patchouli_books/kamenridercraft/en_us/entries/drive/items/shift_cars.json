@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "proto_speedshift",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Protodrive's $(l:drive/devices/drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Used to access Zero Drive's $(l:drive/riders/drive#zero_drive)Type Speed$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#hayai)Hayai$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Protodrive's $(l:drive/devices/drive_driver#drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Used to access Zero Drive's $(l:drive/riders/drive#zero_drive)Type Speed$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#hayai)Hayai$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "speedshift",
 			"title": "Shift Speed",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drive_driver#drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "deadheatshift",
 			"title": "Shift Dead Heat",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#dead_heat)Type Dead Heat$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#deadheat)Dead Heat$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#dead_heat)Type Dead Heat$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#deadheat)Dead Heat$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -117,7 +117,7 @@
 			"type": "patchouli:text",
 			"anchor": "heartronshift",
 			"title": "Shift Heartron",
-			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used to craft Heart's $(l:drive/devices/drivedriver_heart)Drive Driver (Heart)$(/l)"
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used to craft Heart's $(l:drive/devices/drive_driver#drivedriver_heart)Drive Driver (Heart)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -139,7 +139,7 @@
 			"type": "patchouli:text",
 			"anchor": "nextshift",
 			"title": "Shift Next",
-			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used to craft Dark Drive's $(l:drive/devices/drivedriver_darkdrive)Drive Driver (Dark Drive)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used to craft Dark Drive's $(l:drive/devices/drive_driver#drivedriver_darkdrive)Drive Driver (Dark Drive)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,18 +1,31 @@
 {
 	"name": "Roidmude Cores",
-	"icon": "kamenridercraft:roidmude_core_003",
+	"icon": "kamenridercraft:roidmude_core_002",
 	"category": "kamenridercraft:drive/items",
 	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "roidmude_core_002",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_002",
+			"text": "Drops from:$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "roidmude_core_003",
+			"title": "Roidmude Core 003",
 			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Brain's $(l:drive/devices/brain_driver)Drive Driver (Brain)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:roidmude_core_003",
+			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
 		{

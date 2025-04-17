@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Kuwagata Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Kamakiri Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Lion Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Tora Medal Effects:$(li)Haste II$(br2)Cheetah Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Speed VII"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Lion Medal Effects:$(li)Speed II$(li)Jump Boost$(br2)Tora Medal Effects:$(li)Haste II$(br2)Cheetah Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Speed VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Sai Medal Effects:$(li)Slowness II$(br2)Gorilla Medal Effects:$(li)Strength$(li)Slowness II$(br2)Zou Medal Effects:$(li)Resistance$(li)Slowness II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Punch VI$(li)Strength IX (with empty hand)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Sai Medal Effects:$(li)Slowness II$(br2)Gorilla Medal Effects:$(li)Strength$(li)Slowness II$(br2)Zou Medal Effects:$(li)Resistance$(li)Slowness II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Punch VI$(li)Strength IX (with empty hand)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shachi Medal Effects:$(li)Night Vision$(br2)Unagi Medal Effects:$(li)Water Breathing$(br2)Tako Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Dolphin's Grace"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Shachi Medal Effects:$(li)Night Vision$(br2)Unagi Medal Effects:$(li)Water Breathing$(br2)Tako Medal Effects:$(li)Speed II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Dolphin's Grace"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ptera Medal Effects:$(li)Jump Boost III$(br2)Tricera Medal Effects:$(li)Resistance IV$(br2)Tyranno Medal Effects:$(li)Strength III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Ptera Medal Effects:$(li)Jump Boost III$(br2)Tricera Medal Effects:$(li)Resistance IV$(br2)Tyranno Medal Effects:$(li)Strength III$(br2)With $(l:ooo/arsenal/o_scanner)O Scanner$(/l):$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Cobra Medal Effects:$(li)Regeneration$(br2)Kame Medal Effects:$(li)Resistance III$(br2)Wani Medal Effects:$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Cobra Medal Effects:$(li)Regeneration$(br2)Kame Medal Effects:$(li)Resistance III$(br2)Wani Medal Effects:$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Cracked Taka Medal Effects:$(li)Regeneration$(li)Jump Boost$(li)Flying$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Cracked Taka Medal Effects:$(li)Regeneration$(li)Jump Boost$(li)Flying$(br2)Kujaku Medal Effects:$(li)Fire Resistance$(br2)Condor Medal Effects:$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Imagin Medal Effects:$(li)Strength II$(li)Fire Resistance$(br2)Shocker Medal Effects:$(li)Speed II"
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Imagin Medal Effects:$(li)Strength II$(li)Fire Resistance$(br2)Shocker Medal Effects:$(li)Speed II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Mukade Medal Effects:$(li)Resistance II$(br2)Hachi Medal Effects:$(li)Jump Boost III$(br2)Ari Medal Effects:$(li)Haste III"
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Mukade Medal Effects:$(li)Resistance II$(br2)Hachi Medal Effects:$(li)Jump Boost III$(br2)Ari Medal Effects:$(li)Haste III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Ebi Medal Effects:$(li)Speed II$(br2)Kani Medal Effects:$(li)Strength II$(br2)Sasori Medal Effects:$(li)Water Breathing"
+			"text": "Appears in:$(li)Kamen Rider City Wars (2017, mobile game)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Ebi Medal Effects:$(li)Speed II$(br2)Kani Medal Effects:$(li)Strength II$(br2)Sasori Medal Effects:$(li)Water Breathing"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Same Medal Effects:$(li)Water Breathing$(br2)Kujira Medal Effects:$(li)Strength II$(br2)Ookamiuo Medal Effects:$(li)Speed III"
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Same Medal Effects:$(li)Water Breathing$(br2)Kujira Medal Effects:$(li)Strength II$(br2)Ookamiuo Medal Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Shika Medal Effects:$(li)Night Vision$(br2)Gazelle Medal Effects:$(li)Haste II$(br2)Ushi Medal Effects:$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Shika Medal Effects:$(li)Night Vision$(br2)Gazelle Medal Effects:$(li)Haste II$(br2)Ushi Medal Effects:$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Seiuchi Medal Effects:$(li)Saturation II$(br2)Shirokuma Medal Effects:$(li)Strength II$(br2)Penguin Medal Effects:$(li)Speed III"
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Seiuchi Medal Effects:$(li)Saturation II$(br2)Shirokuma Medal Effects:$(li)Strength II$(br2)Penguin Medal Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Panda Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Panda Medal Effects:$(li)Haste II$(br2)Batta Medal Effects:$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kangaroo Medal Effects:$(li)Strength II$(br2)Batta Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Kangaroo Medal Effects:$(li)Strength II$(br2)Batta Medal Effects:$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Kangaroo Medal Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider OOO Hyper Battle DVD: Quiz, Dance and Takagarooba (2011, Hyper Battle Video)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Tora Medal Effects:$(li)Haste II$(br2)Kangaroo Medal Effects:$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Yadokari Medal Effects:$(li)Strength III$(br2)Batta Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)CSM OOO Driver Complete Set (2018, toyline)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Medal Effects:$(li)Night Vision II$(br2)Yadokari Medal Effects:$(li)Strength III$(br2)Batta Medal Effects:$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Super Taka Medal Effects:$(li)Night Vision$(li)Fire Resistance$(li)Regeneration IV$(li)Strength V$(li)Boost$(br2)Super Tora Medal Effects:$(li)Strength VI$(li)Haste IV$(li)Resistance IV$(br2)Super Batta Medal Effects:$(li)Speed III$(li)Jump Boost V$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Fourze & OOO: Movie War Mega Max (2011, movie)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Super Taka Medal Effects:$(li)Night Vision$(li)Fire Resistance$(li)Regeneration IV$(li)Strength V$(li)Boost$(br2)Super Tora Medal Effects:$(li)Strength VI$(li)Haste IV$(li)Resistance IV$(br2)Super Batta Medal Effects:$(li)Speed III$(li)Jump Boost V$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Taka Eternity Medal Effects:$(li)Saturation II$(br2)Kujaku Eternity Medal Effects:$(li)Strength II$(br2)Condor Eternity Medal Effects:$(li)Speed III"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Taka Eternity Medal Effects:$(li)Saturation II$(br2)Kujaku Eternity Medal Effects:$(li)Strength II$(br2)Condor Eternity Medal Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Love Medal (Head) Effects:$(li)Regeneration II$(br2)Love Medal (Torso) Effects:$(li)Haste II$(br2)Love Medal (Legs) Effects:$(li)Saturation II"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Love Medal (Head) Effects:$(li)Regeneration II$(br2)Love Medal (Torso) Effects:$(li)Haste II$(br2)Love Medal (Legs) Effects:$(li)Saturation II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider OOO",
-			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Habataki Medal Effects:$(li)Resistance II$(br2)Tiger Medal Effects:$(li)Strength III$(br2)Ichigo Medal Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Habataki Medal Effects:$(li)Resistance II$(br2)Tiger Medal Effects:$(li)Strength III$(br2)Ichigo Medal Effects:$(li)Jump Boost III"
 		}
 	]
 }

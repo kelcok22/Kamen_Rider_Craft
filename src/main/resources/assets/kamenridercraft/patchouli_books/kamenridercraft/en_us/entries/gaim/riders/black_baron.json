@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Black Baron",
-			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_black_baron)Sengoku Driver (Black Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_black_baron)Sengoku Driver (Black Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
 		}
 	]
 }

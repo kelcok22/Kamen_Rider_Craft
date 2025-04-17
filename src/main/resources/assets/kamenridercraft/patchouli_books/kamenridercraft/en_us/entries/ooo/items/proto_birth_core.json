@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Birth·Proto Type's $(l:ooo/devices/proto_birth_driver)Proto Birth Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Birth·Proto Type's $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver (Birth·Proto Type)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

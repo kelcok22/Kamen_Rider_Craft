@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Slash III$(li)Strength III (with sword)$(li)Strength II (with empty hand)$(li)Speed II$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Slash III$(li)Strength III (with sword)$(li)Strength II (with empty hand)$(li)Speed II$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Bugster Virus"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Bugster Virus"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Bugster Virus II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance$(li)Haste II$(li)Bugster Virus II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Regeneration IV$(li)Haste II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Regeneration IV$(li)Haste II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Slowness II$(li)Resistance IV$(li)Night Vision II$(li)Regeneration V$(li)Haste II$(li)Saturation III$(li)Jump Boost IV$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Slowness II$(li)Resistance IV$(li)Night Vision II$(li)Regeneration V$(li)Haste II$(li)Saturation III$(li)Jump Boost IV$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Night Vision II$(li)Regeneration V$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Genm vs. Lazer (2018, V-Cinema film)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Night Vision II$(li)Regeneration V$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance VII$(li)Night Vision II$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength VI$(li)Save"
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance VII$(li)Night Vision II$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength VI$(li)Save"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance VII$(li)Night Vision$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V$(li)Save"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance VII$(li)Night Vision$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V$(li)Save"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Bugster Virus"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Bugster Virus"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus$(li)Boost II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)This form can be used by $(l:ex_aid/riders/ex_aid)Ex-Aid,$(/l) $(l:ex_aid/riders/brave)Brave,$(/l) $(l:ex_aid/riders/snipe)Snipe,$(/l) and $(l:ex_aid/riders/genm)Genm$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Bugster Virus$(li)Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Haste III$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Genm",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid \"Tricks\": Kamen Rider Genm (2016, web series)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)Gamer Driver (Genm)$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		}
 	]
 }

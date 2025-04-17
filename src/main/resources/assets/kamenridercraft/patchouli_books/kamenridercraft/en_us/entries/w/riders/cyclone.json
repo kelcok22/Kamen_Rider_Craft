@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cyclone",
-			"text": "Appears in:$(li)Kamen Rider W: ~The One Who Continues After Z~ (2012, novel)$(br2)Transforms with the $(l:w/devices/lostdriver_cyclone)Lostdriver (Cyclone)$(/l)$(br2)Status Effects:$(li)Punch$(li)Speed II$(li)Jump Boost V$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider W: ~The One Who Continues After Z~ (2012, novel)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_cyclone)Lostdriver (Cyclone)$(/l)$(br2)Status Effects:$(li)Punch$(li)Speed II$(li)Jump Boost V$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
 		}
 	]
 }

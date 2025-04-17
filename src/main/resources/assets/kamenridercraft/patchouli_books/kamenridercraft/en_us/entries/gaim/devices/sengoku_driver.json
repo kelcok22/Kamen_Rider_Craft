@@ -1,0 +1,297 @@
+{
+	"name": "Sengoku Driver",
+	"icon": "kamenridercraft:sengoku_driver_gaim",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_gaim",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/gaim#orange)Kamen Rider Gaim$(/l)$(br2)Can store up to 3 stacks of Lockseeds"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_gaim"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_baron",
+			"title": "Sengoku Driver (Baron)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/baron#banana)Kamen Rider Baron"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_baron"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_ryugen",
+			"title": "Sengoku Driver (Ryugen)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/ryugen#budou)Kamen Rider Ryugen"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_ryugen"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_zangetsu",
+			"title": "Sengoku Driver (Zangetsu)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/zangetsu#melon)Kamen Rider Zangetsu"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_zangetsu"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_gridon",
+			"title": "Sengoku Driver (Gridon)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/gridon#donguri)Kamen Rider Gridon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_gridon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_kurokage",
+			"title": "Sengoku Driver (Kurokage)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/kurokage#matsubokkuri)Kamen Rider Kurokage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_kurokage"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_bravo",
+			"title": "Sengoku Driver (Bravo)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/bravo#durian)Kamen Rider Bravo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_bravo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_knuckle",
+			"title": "Sengoku Driver (Knuckle)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/knuckle#kurumi)Kamen Rider Knuckle"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_knuckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_bujin_gaim",
+			"title": "Sengoku Driver (Bujin Gaim)",
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/bujin_gaim#blood_orange)Kamen Rider Bujin Gaim"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_bujin_gaim"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_fifteen",
+			"title": "Sengoku Driver (Fifteen)",
+			"text": "Appears in:$(li)Heisei Rider vs. Showa Rider: Kamen Rider Taisen feat. Super Sentai (2014, movie)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/fifteen)Kamen Rider Fifteen"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_fifteen"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_mars",
+			"title": "Sengoku Driver (Mars)",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/mars)Kamen Rider Mars"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_mars"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_kamuro",
+			"title": "Sengoku Driver (Kamuro)",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/kamuro)Kamen Rider Kamuro"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_kamuro"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_jam",
+			"title": "Sengoku Driver (Jam)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/jam)Kamen Rider Jam"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_jam"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_kurokage_troopers",
+			"title": "Sengoku Driver (Kurokage Troopers)",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into a $(l:gaim/riders/kurokage_trooper)Kurokage Trooper"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sengoku_driver_kurokage_troopers",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Troopers$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_idunn",
+			"title": "Sengoku Driver (Idunn)",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Zangetsu (2015, V-Cinema film)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/idunn)Kamen Rider Idunn"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_idunn"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_duke",
+			"title": "Sengoku Driver (Duke)",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/duke#lemon)Kamen Rider Duke"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_duke"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_black_baron",
+			"title": "Sengoku Driver (Black Baron)",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Knuckle (2015, V-Cinema film)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/black_baron)Kamen Rider Black Baron"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sengoku_driver_black_baron",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_saver",
+			"title": "Sengoku Driver (Saver)",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Duke (2015, V-Cinema film)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/saver)Kamen Rider Saver"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_saver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_maja",
+			"title": "Sengoku Driver (Maja)",
+			"text": "Appears in:$(li)Kamen Rider Gaim: Final Stage (2014, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/maja)Kamen Rider Maja"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_maja"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_sylphi",
+			"title": "Sengoku Driver (Sylphi)",
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/sylphi)Kamen Rider Sylphi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_sylphi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_gaim_natsumikan",
+			"title": "Sengoku Driver (Gaim Natsumikan)",
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/gaim_natsumikan)Kamen Rider Gaim Natsumikan Arms"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_gaim_natsumikan"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_proto_gaim",
+			"title": "Sengoku Driver (Proto Gaim)",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/proto_gaim)Kamen Rider Proto Gaim"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_gaim"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_proto_baron",
+			"title": "Sengoku Driver (Proto Baron)",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/proto_baron)Kamen Rider Proto Baron"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_baron"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_proto_ryugen",
+			"title": "Sengoku Driver (Proto Ryugen)",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/proto_ryugen)Kamen Rider Proto Ryugen"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_ryugen"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_proto_gridon",
+			"title": "Sengoku Driver (Proto Gridon)",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/proto_gridon)Kamen Rider Proto Gridon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_gridon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_proto_bravo",
+			"title": "Sengoku Driver (Proto Bravo)",
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Used alongside the $(l:gaim/devices/armor)Gaim armor$(/l) to transform into $(l:gaim/riders/proto_bravo)Kamen Rider Proto Bravo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/sengoku_driver_proto_bravo"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"name": "Ziku Driver",
+	"icon": "kamenridercraft:ziku_driver_zi_o",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zi_o",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zi_o"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_geiz",
+			"title": "Ziku Driver (Geiz)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/geiz)Kamen Rider Geiz$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_geiz"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_tsukuyomi",
+			"title": "Ziku Driver (Tsukuyomi)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/tsukuyomi)Kamen Rider Tsukuyomi$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_tsukuyomi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zi_o_mirror",
+			"title": "Ziku Driver (Mirror Zi-O)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/mirror_zi_o)Kamen Rider Zi-O (Mirror World version)$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zi_o_mirror"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_barlckxs",
+			"title": "Ziku Driver (Barlckxs)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/barlckxs)Kamen Rider Barlckxs$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_barlckxs"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zonjis",
+			"title": "Ziku Driver (Zonjis)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/zonjis)Kamen Rider Zonjis$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zonjis"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zamonas",
+			"title": "Ziku Driver (Zamonas)",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/zamonas)Kamen Rider Zamonas$(/l)$(br2)Can store up to 4 stacks of Ridewatches"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zamonas"
+		}
+	]
+}

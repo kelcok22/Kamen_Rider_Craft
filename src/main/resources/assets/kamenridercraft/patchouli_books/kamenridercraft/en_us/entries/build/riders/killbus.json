@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Killbus",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver_killbus)Build Driver (Killbus)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Night Vision$(li)Haste II$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_killbus)Build Driver (Killbus)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Night Vision$(li)Haste II$(li)Jump Boost II$(li)Strength IV"
 		}
 	]
 }

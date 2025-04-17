@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Water Breathing"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Water Breathing"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II$(li)Resistance III$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II$(li)Resistance III$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength II (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flame Body III"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flame Body III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance$(li)Dolphin's Grace"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing II$(li)Strength$(li)Resistance$(li)Dolphin's Grace"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Strength$(li)Resistance$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Resistance$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost VII$(li)Resistance$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Wizard & Fourze: Movie War Ultimatum (2012, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Resistance$(li)Flame Body VI$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Flame Body$(li)Flying$(li)Dolphin's Grace$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength$(li)Resistance$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength II$(li)Resistance$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Wizard: Showtime with the Dance Ring!! (2013, Hyper Battle Video)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Fire Resistance$(li)Strength II$(li)Resistance$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)S.I.C. Vol. 70 Kamen Rider Wizard Flame Style (2014, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Fire Resistance$(li)Flying"
+			"text": "Appears in:$(li)S.I.C. Vol. 70 Kamen Rider Wizard Flame Style (2014, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Fire Resistance$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Wizard",
-			"text": "Appears in:$(li)S.I.C Kamen Rider Wizard Water Style (2015, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Dolphin's Grace$(li)Water Breathing$(li)Night Vision"
+			"text": "Appears in:$(li)S.I.C Kamen Rider Wizard Water Style (2015, toyline)$(br2)Transforms with the $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Dolphin's Grace$(li)Water Breathing$(li)Night Vision"
 		}
 	]
 }

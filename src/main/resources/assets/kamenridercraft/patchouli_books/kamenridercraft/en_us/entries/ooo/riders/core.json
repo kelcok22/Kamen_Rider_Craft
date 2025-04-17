@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Core",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:ooo/devices/core_driver)Gaia Core Typhoon$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Fire Resistance III$(li)Strength$(br2)Right-click the $(l:w/items/dopant_memories#memory_memory)Memory Memory$(/l) to turn giant (Giant III)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:ooo/devices/gaia_core_typhoon#core_driver)Gaia Core Typhoon$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Fire Resistance III$(li)Strength$(br2)Right-click the $(l:w/items/dopant_memories#memory_memory)Memory Memory$(/l) to turn giant (Giant III)"
 		}
 	]
 }

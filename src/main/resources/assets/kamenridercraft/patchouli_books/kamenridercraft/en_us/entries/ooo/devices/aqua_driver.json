@@ -2,7 +2,7 @@
 	"name": "Aqua Driver",
 	"icon": "kamenridercraft:aqua_driver",
 	"category": "kamenridercraft:ooo/devices",
-	"sortnum": 6,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

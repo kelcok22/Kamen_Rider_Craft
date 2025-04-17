@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Necrom Pink",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder (Dark Necrom Pink)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_pink)Proto Mega Ulorder (Dark Necrom Pink)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
 		}
 	]
 }

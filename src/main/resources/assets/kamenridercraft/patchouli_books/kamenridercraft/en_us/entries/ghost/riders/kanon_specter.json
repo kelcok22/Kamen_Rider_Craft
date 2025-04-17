@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kanon Specter",
-			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Transforms with the $(l:ghost/devices/kanon_specter_driver)Ghost Driver (Kanon Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#kanon_specter_driver)Ghost Driver (Kanon Specter)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed"
 		}
 	]
 }

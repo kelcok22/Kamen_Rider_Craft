@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Health: 180$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)3-6 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)$(li)1 $(l:ooo/items/core_medals#ebi_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kani_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/core_medals#sasori_medal)Sasori Medal$(/l)$(li)1 $(l:w/items/dopant_memories#memory_memory)Memory Memory$(/l)$(li)1 $(l:ooo/devices/core_driver)Gaia Core Typhoon$(/l)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Health: 180$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)3-6 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)$(li)1 $(l:ooo/items/core_medals#ebi_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kani_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/core_medals#sasori_medal)Sasori Medal$(/l)$(li)1 $(l:w/items/dopant_memories#memory_memory)Memory Memory$(/l)$(li)1 $(l:ooo/devices/gaia_core_typhoon#core_driver)Gaia Core Typhoon$(/l)"
 		}
 	]
 }

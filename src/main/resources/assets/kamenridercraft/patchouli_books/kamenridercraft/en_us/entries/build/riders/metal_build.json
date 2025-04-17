@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Metal Build",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver_metal)Build Driver (Metal Build)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Jump Boost$(li)Strength V"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_metal)Build Driver (Metal Build)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Jump Boost$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Phantom Build",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Jump Boost II$(li)Strength V$(li)Flying"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_phantom)Build Driver (Phantom Build)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Jump Boost II$(li)Strength V$(li)Flying"
 		}
 	]
 }

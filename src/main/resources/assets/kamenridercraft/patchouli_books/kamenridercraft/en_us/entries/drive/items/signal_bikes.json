@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "signal_mach",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Mach's $(l:drive/devices/mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#mach)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Mach's $(l:drive/devices/mach_driver_honoh#mach_driver_honoh)Mach Driver Honoh$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#mach)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "signal_chaser",
 			"title": "Signal Chaser",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Chaser's $(l:drive/devices/mach_driver_honoh_chaser)Mach Driver Honoh (Chaser)$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#chaser)base$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#chaser_mach)Chaser Mach$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Chaser's $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_chaser)Mach Driver Honoh (Chaser)$(/l)$(br2)Used to access Chaser's $(l:drive/riders/chaser#chaser)base$(/l) form$(br2)Used to access Mach's $(l:drive/riders/mach#chaser_mach)Chaser Mach$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Core (Reinforced)",
-			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Transforms with the $(l:ooo/devices/powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Fire Resistance III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Transforms with the $(l:ooo/devices/gaia_core_typhoon#powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)$(br2)Status Effects:$(li)Night Vision$(li)Fire Resistance III$(li)Strength"
 		}
 	]
 }

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "taka_medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Taka$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Taka$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "tora_medal",
 			"title": "Tora Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tora$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Tora$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "batta_medal",
 			"title": "Batta Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Batta$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft OOO's $(l:ooo/devices/ooo_driver#ooodriver)OOO Driver$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tatoba)Batta$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -631,7 +631,7 @@
 			"type": "patchouli:text",
 			"anchor": "ancient_taka_medal",
 			"title": "Ancient Taka Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -644,7 +644,7 @@
 			"type": "patchouli:text",
 			"anchor": "ancient_tora_medal",
 			"title": "Ancient Tora Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ancient_ooo#ancient_tatoba)Ancient Tatoba$(/l) combos"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba$(/l) and $(l:ooo/riders/ancient_ooo#ancient_tatoba)Ancient Tatoba$(/l) combos"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -657,7 +657,7 @@
 			"type": "patchouli:text",
 			"anchor": "ancient_batta_medal",
 			"title": "Ancient Batta Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used to craft Ancient OOO's $(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO Driver (Ancient OOO)$(/l)$(br2)Used to access Ancient OOO's $(l:ooo/riders/ancient_ooo#tatoba)Tatoba Combo$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -670,7 +670,7 @@
 			"type": "patchouli:text",
 			"anchor": "mukade_goda_medal",
 			"title": "Goda Mukade Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/ooo_driver#goda_ooodriver)OOO Driver (Goda)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -683,7 +683,7 @@
 			"type": "patchouli:text",
 			"anchor": "hachi_goda_medal",
 			"title": "Goda Hachi Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/ooo_driver#goda_ooodriver)OOO Driver (Goda)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -696,7 +696,7 @@
 			"type": "patchouli:text",
 			"anchor": "ari_goda_medal",
 			"title": "Goda Ari Core Medal",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/goda_ooodriver)OOO Driver (Goda)"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used to craft Goda's $(l:ooo/devices/ooo_driver#goda_ooodriver)OOO Driver (Goda)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -825,7 +825,7 @@
 			"type": "patchouli:text",
 			"anchor": "shocker_medal",
 			"title": "Shocker Core Medal",
-			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Shocker$(/l) forms$(br2)Can be used as a leg medal by sneaking"
+			"text": "Appears in:$(li)OOO, Den-O, All Riders: Let's Go Kamen Riders (2011, movie)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Used to access OOO's $(l:ooo/riders/ooo#tamashiy)Shocker$(/l) forms$(br2)Can be used as a leg medal by sneaking"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -836,7 +836,7 @@
 			"type": "patchouli:text",
 			"anchor": "gel_shocker_medal",
 			"title": "Gel Shocker Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -849,7 +849,7 @@
 			"type": "patchouli:text",
 			"anchor": "destron_medal",
 			"title": "Destron Core Medal",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used to craft Shocker OOO's $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -2,7 +2,7 @@
 	"name": "Mega Ulorder",
 	"icon": "kamenridercraft:mega_ulorder",
 	"category": "kamenridercraft:ghost/devices",
-	"sortnum": 4,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

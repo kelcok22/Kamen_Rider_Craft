@@ -2,7 +2,7 @@
 	"name": "Hattari Driver",
 	"icon": "kamenridercraft:hattari_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 11,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

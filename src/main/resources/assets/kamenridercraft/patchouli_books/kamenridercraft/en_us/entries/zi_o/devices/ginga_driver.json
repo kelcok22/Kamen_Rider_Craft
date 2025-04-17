@@ -2,7 +2,7 @@
 	"name": "Ginga Driver",
 	"icon": "kamenridercraft:ginga_driver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 14,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

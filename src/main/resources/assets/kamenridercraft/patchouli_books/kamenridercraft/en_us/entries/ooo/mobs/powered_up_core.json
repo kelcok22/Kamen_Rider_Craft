@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Health: 300$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#ebi_new_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kani_new_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/core_medals#sasori_new_medal)Sasori Medal$(/l)$(li)1 $(l:ooo/devices/powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)"
+			"text": "Appears in:$(li)Kamen Rider: Climax Scramble (2018, Switch game)$(br2)Health: 300$(br2)Drops$(li)3-6 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#ebi_new_medal)Ebi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#kani_new_medal)Kani Medal$(/l)$(li)1 $(l:ooo/items/core_medals#sasori_new_medal)Sasori Medal$(/l)$(li)1 $(l:ooo/devices/gaia_core_typhoon#powered_up_core_driver)Powered Up Gaia Core Typhoon$(/l)"
 		}
 	]
 }

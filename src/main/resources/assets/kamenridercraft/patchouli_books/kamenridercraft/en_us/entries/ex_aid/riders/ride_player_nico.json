@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ride-Player Nico",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/rideplayerbelt_nico)Ride-Player Buckle (Nico)$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/ride_player_buckle#rideplayerbelt_nico)Ride-Player Buckle (Nico)$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		}
 	]
 }

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Rogue",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver_rogue)Sclash Driver (Rogue)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver#sclash_driver_rogue)Sclash Driver (Rogue)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Rogue",
-			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Transforms with the $(l:build/devices/build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost II$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost II$(li)Strength V"
 		}
 	]
 }

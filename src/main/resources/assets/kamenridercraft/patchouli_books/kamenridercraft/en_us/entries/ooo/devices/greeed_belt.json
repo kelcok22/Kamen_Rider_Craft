@@ -1,0 +1,97 @@
+{
+	"name": "Greeed Belt",
+	"icon": "kamenridercraft:greeed_blet_ankh_lost",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_ankh_lost",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/lost_ankh)Ankh (Lost)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_ankh_lost",
+			"text": "Drops from:$(li)$(l:ooo/mobs/lost_ankh)Ankh (Lost)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_ankh",
+			"title": "Greeed Belt (Ankh)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/complete_ankh)Ankh (Complete)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_ankh",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_uva",
+			"title": "Greeed Belt (Uva)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/uva)Uva's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_uva",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/uva)Uva$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_kazari",
+			"title": "Greeed Belt (Kazari)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/kazari)Kazari's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_kazari",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/kazari)Kazari$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_mezool",
+			"title": "Greeed Belt (Mezool)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/mezool)Mezool's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_mezool",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/mezool)Mezool$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_gamel",
+			"title": "Greeed Belt (Gamel)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/gamel)Gamel's Greeed form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_gamel",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/gamel)Gamel$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_muchiri",
+			"title": "Greeed Belt (Muchiri)",
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/muchiri)Muchiri"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_muchiri",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:ooo/mobs/muchiri)Muchiri$(/l)"
+		}
+	]
+}

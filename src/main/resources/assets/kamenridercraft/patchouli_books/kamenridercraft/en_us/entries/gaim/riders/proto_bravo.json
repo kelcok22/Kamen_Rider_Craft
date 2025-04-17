@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Proto Bravo",
-			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_proto_bravo)Sengoku Driver (Proto Bravo)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_proto_bravo)Sengoku Driver (Proto Bravo)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength II"
 		}
 	]
 }

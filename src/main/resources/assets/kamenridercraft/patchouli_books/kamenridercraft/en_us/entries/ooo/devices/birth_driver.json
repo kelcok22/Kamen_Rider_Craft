@@ -6,11 +6,35 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "birth_driver",
 			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/birth)Kamen Rider Birth"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:ooo/birth_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_birth_driver",
+			"title": "Birth Driver (Birth·Proto Type)",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/birth_proto_type)Kamen Rider Birth·Proto Type"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/birth_driver_prototype"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_driver_x",
+			"title": "Birth Driver X",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/birth_x)Kamen Rider Birth X"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/birth_x_driver"
 		}
 	]
 }
