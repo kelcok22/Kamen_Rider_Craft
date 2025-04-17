@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Fuma",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver_fuuma)Gamer Driver (Fuma)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste III$(li)Jump Boost III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: True Ending (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_fuuma)Gamer Driver (Fuma)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste III$(li)Jump Boost III$(li)Strength IV"
 		}
 	]
 }

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ride-Player",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/rideplayerbelt)Ride-Player Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/ride_player_buckle#rideplayerbelt)Ride-Player Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		}
 	]
 }

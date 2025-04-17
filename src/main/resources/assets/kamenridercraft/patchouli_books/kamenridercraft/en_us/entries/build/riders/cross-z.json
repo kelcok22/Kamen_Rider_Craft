@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver#sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Jump Boost II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Jump Boost II$(li)Strength IV$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/sclash_driver#sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Jump Boost II$(li)Strength IV$(li)Flying"
 		},
         {
             "type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Haste III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Haste III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V"
 		},
         {
             "type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste II$(li)Jump Boost II$(li)Strength III"
 		},
         {
             "type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cross-Z",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength V$(li)Flying"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Transforms with the $(l:build/devices/build_driver#build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Strength V$(li)Flying"
 		}
 	]
 }

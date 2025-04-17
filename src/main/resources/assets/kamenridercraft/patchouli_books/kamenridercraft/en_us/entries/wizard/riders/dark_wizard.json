@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Wizard",
-			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Transforms with the $(l:wizard/devices/dark_wizardriver)Wizardriver (Dark Wizard)$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Transforms with the $(l:wizard/devices/wizardriver#dark_wizardriver)Wizardriver (Dark Wizard)$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		}
 	]
 }

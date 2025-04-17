@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Protodrive",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/drive_driver#drivedriver_protodrive)Drive Driver (Proto Drive)$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		}
 	]
 }

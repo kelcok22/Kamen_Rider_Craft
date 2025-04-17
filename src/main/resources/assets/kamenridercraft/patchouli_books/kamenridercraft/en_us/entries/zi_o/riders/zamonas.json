@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zamonas",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_zamonas)Ziku Driver (Zamonas)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zamonas)Ziku Driver (Zamonas)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II$(li)Strength IV"
 		}
 	]
 }

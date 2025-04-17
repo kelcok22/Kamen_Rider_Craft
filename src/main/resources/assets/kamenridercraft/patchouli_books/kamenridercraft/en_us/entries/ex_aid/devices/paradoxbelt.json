@@ -2,7 +2,7 @@
 	"name": "Para-DX Buckle",
 	"icon": "kamenridercraft:paradoxbelt",
 	"category": "kamenridercraft:ex_aid/devices",
-	"sortnum": 17,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

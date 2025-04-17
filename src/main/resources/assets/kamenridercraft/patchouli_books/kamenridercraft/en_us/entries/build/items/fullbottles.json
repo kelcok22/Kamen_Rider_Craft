@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rabbit_full_bottle",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Rabbit$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver#build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Rabbit$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "tank_full_bottle",
 			"title": "Tank Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Tank$(/l) forms"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Build's $(l:build/devices/build_driver#build_driver)Build Driver$(/l)$(br2)Used to access Build's $(l:build/riders/build#rabbittank)Tank$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "dragon_full_bottle",
 			"title": "Dragon Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Cross-Z's $(l:build/devices/build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Used to access Build's $(l:build/riders/build#keydragon)Dragon$(/l) forms$(br2)Used to access Cross-Z's $(l:build/riders/cross-z)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Cross-Z's $(l:build/devices/build_driver#build_driver_cross_z)Build Driver (Cross-Z)$(/l)$(br2)Used to access Build's $(l:build/riders/build#keydragon)Dragon$(/l) forms$(br2)Used to access Cross-Z's $(l:build/riders/cross-z)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -734,7 +734,7 @@
 			"type": "patchouli:text",
 			"anchor": "bat_full_bottle",
 			"title": "Bat Fullbottle",
-			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Bat$(/l) forms"
+			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver#evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Bat$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -747,7 +747,7 @@
 			"type": "patchouli:text",
 			"anchor": "engine_full_bottle",
 			"title": "Engine Fullbottle",
-			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Engine$(/l) forms"
+			"text": "Appears in:$(li)DX BatEngine Fullbottle Set (2018, toyline)$(br2)Used to craft MadRogue's $(l:build/devices/evol_driver#evol_driver_mad_rogue)Evol Driver (MadRogue)$(/l)$(br2)Used to access Build's $(l:build/riders/build#batengine)Engine$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1062,7 +1062,7 @@
 			"type": "patchouli:text",
 			"anchor": "north_blizzard_full_bottle",
 			"title": "North Blizzard Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/build_driver_grease)Build Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease#blizzard)Blizzard$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/build_driver#build_driver_grease)Build Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease#blizzard)Blizzard$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1084,7 +1084,7 @@
 			"type": "patchouli:text",
 			"anchor": "crocodile_crack_full_bottle",
 			"title": "Crocodile Crack Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Rogue's $(l:build/devices/sclash_driver_rogue)Sclash Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#rogue)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Rogue's $(l:build/devices/sclash_driver#sclash_driver_rogue)Sclash Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#rogue)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1097,7 +1097,7 @@
 			"type": "patchouli:text",
 			"anchor": "prime_rogue_full_bottle",
 			"title": "Prime Rogue Fullbottle",
-			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used to craft Rogue's $(l:build/devices/build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#prime)Prime Rogue$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Prime Rogue (2018, Hyper Battle Video)$(br2)Used to craft Rogue's $(l:build/devices/build_driver#build_driver_rogue)Build Driver (Rogue)$(/l)$(br2)Used to access Rogue's $(l:build/riders/rogue#prime)Prime Rogue$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1121,7 +1121,7 @@
 			"type": "patchouli:text",
 			"anchor": "killbus_spider_full_bottle",
 			"title": "Killbus Spider Fullbottle",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used to craft Killbus's $(l:build/devices/build_driver_killbus)Build Driver (Killbus)$(/l)"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Cross-Z (2019, V-Cinema film)$(br2)Used to craft Killbus's $(l:build/devices/build_driver#build_driver_killbus)Build Driver (Killbus)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1134,7 +1134,7 @@
 			"type": "patchouli:text",
 			"anchor": "metal_tank_tank_full_bottle",
 			"title": "Metal TankTank Fullbottle",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_metal)Build Driver (Metal Build)$(/l) and $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver#build_driver_metal)Build Driver (Metal Build)$(/l) and $(l:build/devices/build_driver#build_driver_phantom)Build Driver (Phantom Build)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1147,7 +1147,7 @@
 			"type": "patchouli:text",
 			"anchor": "metal_full_bottle",
 			"title": "Metal Fullbottle",
-			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver_phantom)Build Driver (Phantom Build)$(/l)"
+			"text": "Appears in:$(li)Build NEW WORLD: Kamen Rider Grease (2019, V-Cinema film)$(br2)Used to craft Metal Build's $(l:build/devices/build_driver#build_driver_phantom)Build Driver (Phantom Build)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

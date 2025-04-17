@@ -1,0 +1,51 @@
+{
+	"name": "OOO Driver",
+	"icon": "kamenridercraft:ooodriver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ooodriver",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ooo)Kamen Rider OOO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ooo_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_ooodriver",
+			"title": "OOO Driver (Ancient OOO)",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/ancient_ooo)Ancient OOO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ancient_ooodriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "goda_ooodriver",
+			"title": "OOO Driver (Goda)",
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/goda)Kamen Rider Goda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/goda_ooodriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shocker_ooodriver",
+			"title": "OOO Driver (Shocker OOO)",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/shocker_ooo)Shocker OOO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/shocker_ooodriver"
+		}
+	]
+}

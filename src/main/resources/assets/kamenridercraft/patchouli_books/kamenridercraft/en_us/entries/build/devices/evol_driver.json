@@ -2,15 +2,28 @@
 	"name": "Evol Driver",
 	"icon": "kamenridercraft:evol_driver",
 	"category": "kamenridercraft:build/devices",
-	"sortnum": 12,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "evol_driver",
 			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/evol)Kamen Rider Evol"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:build/evol_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evol_driver_mad_rogue",
+			"title": "Evol Driver (Mad Rogue)",
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used alongside the $(l:build/devices/armor)Build armor$(/l) to transform into $(l:build/riders/madrogue)Kamen Rider MadRogue"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/evol_driver_mad_rogue"
 		}
 	]
 }

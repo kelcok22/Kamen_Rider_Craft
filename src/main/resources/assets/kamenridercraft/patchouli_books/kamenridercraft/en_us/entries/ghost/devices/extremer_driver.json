@@ -2,7 +2,7 @@
 	"name": "Extremer Driver",
 	"icon": "kamenridercraft:extremer_driver",
 	"category": "kamenridercraft:ghost/devices",
-	"sortnum": 6,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

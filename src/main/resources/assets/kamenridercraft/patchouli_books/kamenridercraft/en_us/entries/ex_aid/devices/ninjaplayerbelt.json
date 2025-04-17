@@ -2,7 +2,7 @@
 	"name": "Ninja Player Buckle",
 	"icon": "kamenridercraft:ninjaplayerbelt",
 	"category": "kamenridercraft:ex_aid/devices",
-	"sortnum": 20,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

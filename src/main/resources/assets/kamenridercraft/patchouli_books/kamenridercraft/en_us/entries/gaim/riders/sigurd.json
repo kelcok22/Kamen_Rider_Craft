@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Sigurd",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_sigurd)Genesis Driver (Sigurd)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Fire Resistance$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_sigurd)Genesis Driver (Sigurd)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Fire Resistance$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Sigurd",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver_sigurd)Genesis Driver (Sigurd)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_sigurd)Genesis Driver (Sigurd)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation$(li)Strength"
 		}
 	]
 }

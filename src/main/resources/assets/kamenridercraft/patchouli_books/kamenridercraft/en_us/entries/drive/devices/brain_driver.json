@@ -2,7 +2,7 @@
 	"name": "Brain Driver",
 	"icon": "kamenridercraft:brain_driver",
 	"category": "kamenridercraft:drive/devices",
-	"sortnum": 13,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

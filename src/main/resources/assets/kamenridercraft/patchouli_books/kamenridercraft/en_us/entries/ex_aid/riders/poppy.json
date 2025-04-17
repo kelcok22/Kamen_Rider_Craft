@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Poppy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Haste II$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Poppy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Jump Boost III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_poppy)Gashacon Bugvisor II (Poppy)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Jump Boost III$(li)Strength IV"
 		}
 	]
 }

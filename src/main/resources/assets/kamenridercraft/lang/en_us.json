@@ -2033,6 +2033,7 @@
   "kamenridercraft:skull_cyclone_memory.form": "Skull",
 
   "kamenridercraft:skull_memory.form": "Form: Skull",
+  "kamenridercraft:skull_memory_crystal.form": "Form: Skull Crystal",
   "kamenridercraft:eternal_memory.form": "Form: Eternal Red Flare",
 
   "kamenridercraft:accel_memory.form": "Form: Accel",
@@ -2090,9 +2091,9 @@
 "kamenridercraft.name.shocker_ooo": "Debatable Rider: Shocker OOO",
 "item.kamenridercraft.birth_driver": "Birth Driver",
 "kamenridercraft.name.birth": "Rider: Kamen Rider Birth",
-"item.kamenridercraft.proto_birth_driver": "Proto Birth Driver",
+"item.kamenridercraft.proto_birth_driver": "Birth Driver",
 "kamenridercraft.name.birth_prototype": "Rider: Kamen Rider Birth·Proto Type",
-"item.kamenridercraft.birth_driver_x": "Birth Driver with X-Unit",
+"item.kamenridercraft.birth_driver_x": "Birth Driver X",
 "kamenridercraft.name.birth_x": "Rider: Kamen Rider Birth X",
 "item.kamenridercraft.rebirth_driver": "ReBirth Driver",
 "kamenridercraft.name.re_birth": "Rider: Kamen Rider Rebirth",

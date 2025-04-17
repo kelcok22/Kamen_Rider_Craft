@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gaim",
-			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver_gaim_natsumikan)Sengoku Driver (Gaim Natsumikan)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gaim_natsumikan)Sengoku Driver (Gaim Natsumikan)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
 		}
 	]
 }

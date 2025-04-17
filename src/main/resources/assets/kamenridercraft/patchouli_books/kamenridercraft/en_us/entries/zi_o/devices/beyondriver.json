@@ -2,7 +2,7 @@
 	"name": "Beyondriver",
 	"icon": "kamenridercraft:beyondriver",
 	"category": "kamenridercraft:zi_o/devices",
-	"sortnum": 5,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

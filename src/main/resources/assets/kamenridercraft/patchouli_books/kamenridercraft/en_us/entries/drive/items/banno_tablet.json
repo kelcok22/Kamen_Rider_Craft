@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Gold Drive's $(l:drive/devices/banno_driver_gord_drive)Banno Driver$(/l)$(br2)Used to craft Bronzedrive's $(l:drive/devices/banno_driver_bronze_drive)Banno Driver (Bronze)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Gold Drive's $(l:drive/devices/banno_driver#banno_driver_gord_drive)Banno Driver$(/l)$(br2)Used to craft Bronzedrive's $(l:drive/devices/banno_driver#banno_driver_bronze_drive)Banno Driver (Bronze)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

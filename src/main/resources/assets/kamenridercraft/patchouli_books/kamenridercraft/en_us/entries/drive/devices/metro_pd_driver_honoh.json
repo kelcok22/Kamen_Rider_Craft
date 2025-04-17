@@ -2,7 +2,7 @@
 	"name": "Metro PD Driver Honoh",
 	"icon": "kamenridercraft:metro_pd_driver_honoh",
 	"category": "kamenridercraft:drive/devices",
-	"sortnum": 12,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

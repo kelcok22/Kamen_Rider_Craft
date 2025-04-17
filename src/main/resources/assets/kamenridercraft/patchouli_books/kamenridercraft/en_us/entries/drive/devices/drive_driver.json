@@ -1,0 +1,51 @@
+{
+	"name": "Drive Driver",
+	"icon": "kamenridercraft:drivedriver",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/drive)Kamen Rider Drive$(/l)$(br2)Can store up to 3 stacks of Shift Cars, Signal Bikes, or Viral Cores"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_protodrive",
+			"title": "Drive Driver (Protodrive)",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/protodrive)Kamen Rider Protodrive$(/l)$(br2)Can store up to 3 stacks of Shift Cars, Signal Bikes, or Viral Cores"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_protodrive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_heart",
+			"title": "Drive Driver (Heart)",
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/heart)Kamen Rider Heart"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_heart"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_darkdrive",
+			"title": "Drive Driver (Dark Drive)",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/dark_drive)Kamen Rider Dark Drive$(/l)$(br2)Can store up to 3 stacks of Shift Cars, Signal Bikes, or Viral Cores"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_darkdrive"
+		}
+	]
+}

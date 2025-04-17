@@ -2,7 +2,7 @@
 	"name": "Lupin Belt",
 	"icon": "kamenridercraft:lupin_belt",
 	"category": "kamenridercraft:drive/devices",
-	"sortnum": 7,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

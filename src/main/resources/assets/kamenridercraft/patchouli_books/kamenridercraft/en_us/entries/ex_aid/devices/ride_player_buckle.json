@@ -1,0 +1,29 @@
+{
+	"name": "Ride-Player Buckle",
+	"icon": "kamenridercraft:rideplayerbelt",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rideplayerbelt",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into a $(l:ex_aid/riders/ride_player)Ride-Player"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/rideplayerbelt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rideplayerbelt_nico",
+			"title": "Ride-Player Buckle (Nico)",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used alongside the $(l:ex_aid/devices/armor)Ex-Aid armor$(/l) to transform into $(l:ex_aid/riders/ride_player_nico)Ride-Player Nico"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/rideplayerbelt_nico"
+		}
+	]
+}

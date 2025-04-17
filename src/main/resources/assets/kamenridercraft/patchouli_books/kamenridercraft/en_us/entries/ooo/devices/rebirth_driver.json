@@ -2,7 +2,7 @@
 	"name": "Rebirth Driver",
 	"icon": "kamenridercraft:rebirth_driver",
 	"category": "kamenridercraft:ooo/devices",
-	"sortnum": 5,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

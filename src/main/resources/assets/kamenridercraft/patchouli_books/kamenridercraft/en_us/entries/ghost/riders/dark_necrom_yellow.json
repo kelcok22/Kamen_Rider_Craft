@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Necrom Yellow",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_yellow)Proto Mega Ulorder (Dark Necrom Yellow)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_yellow)Proto Mega Ulorder (Dark Necrom Yellow)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Necrom Yellow",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder_yellow)Proto Mega Ulorder (Dark Necrom Yellow)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Jump Boost$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_yellow)Proto Mega Ulorder (Dark Necrom Yellow)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Night Vision$(li)Jump Boost$(li)Strength II"
 		}
 	]
 }

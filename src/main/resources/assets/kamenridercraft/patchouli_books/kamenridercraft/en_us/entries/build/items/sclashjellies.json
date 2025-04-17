@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "dragon_sclash_jelly",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Cross-Z Charge's $(l:build/devices/sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Used to access Cross-Z Charge's $(l:build/riders/cross-z#charge)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Cross-Z Charge's $(l:build/devices/sclash_driver#sclash_driver)Sclash Driver (Cross-Z Charge)$(/l)$(br2)Used to access Cross-Z Charge's $(l:build/riders/cross-z#charge)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "robot_sclash_jelly",
 			"title": "Robot Sclashjelly",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/sclash_driver_grease)Sclash Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Used to craft Grease's $(l:build/devices/sclash_driver#sclash_driver_grease)Sclash Driver (Grease)$(/l)$(br2)Used to access Grease's $(l:build/riders/grease)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

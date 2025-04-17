@@ -2,7 +2,7 @@
 	"name": "Poseidon Driver",
 	"icon": "kamenridercraft:poseidon_driver",
 	"category": "kamenridercraft:ooo/devices",
-	"sortnum": 7,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste III$(li)Fire Resistance$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Jump Boost II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Jump Boost III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Saturation$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Saturation$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geiz",
-			"text": "Appears in:$(li)Kamen Rider BiBiBi no BibillGeiz (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider BiBiBi no BibillGeiz (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength II"
 		}
 	]
 }

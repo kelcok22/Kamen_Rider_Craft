@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Mage",
-			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/magewizardriver_captain)Mage's Belt (Imperial Captain)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Wizard in Magic Land (2013, movie)$(br2)Transforms with the $(l:wizard/devices/mages_belt#magewizardriver_captain)Mage's Belt (Imperial Captain)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Strength"
 		}
 	]
 }

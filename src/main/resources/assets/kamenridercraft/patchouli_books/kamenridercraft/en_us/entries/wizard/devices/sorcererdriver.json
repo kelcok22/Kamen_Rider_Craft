@@ -2,7 +2,7 @@
 	"name": "Sorcerer's Belt",
 	"icon": "kamenridercraft:sorcererdriver",
 	"category": "kamenridercraft:wizard/devices",
-	"sortnum": 9,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

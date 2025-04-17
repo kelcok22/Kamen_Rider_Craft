@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ore_ghost_eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Ghost's $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/ghost#ore)Ore Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_ghost_eyecon",
 			"title": "Dark Ghost Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Ghost's $(l:ghost/devices/dark_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/dark_ghost#dark_ghost)Dark Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Ghost's $(l:ghost/devices/ghost_driver#dark_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/dark_ghost#dark_ghost)Dark Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "zero_specter_ghost_eyecon",
 			"title": "Zero Specter Ghost Eyecon",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Zero Specter's $(l:ghost/devices/zero_specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_specter)Zero Specter Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Zero Specter's $(l:ghost/devices/ghost_driver#zero_specter_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_specter)Zero Specter Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "proto_ore_ghost_eyecon",
 			"title": "Prototype Ore Ghost Eyecon",
-			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/zero_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_ghost)Zero Ghost Damashii$(/l)"
+			"text": "Appears in:$(li)Novel: Kamen Rider Ghost: ~Memories of the Future~ (2017, novel)$(br2)Used to craft Zero Ghost's $(l:ghost/devices/ghost_driver#zero_ghost_driver)Ghost Driver$(/l)$(br2)Used to access $(l:ghost/riders/zero_ghost)Zero Ghost Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -162,7 +162,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_necrom_red_ghost_eyecon",
 			"title": "Dark Necrom Ghost Eyecon (Red)",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Red's $(l:ghost/devices/proto_mega_ulorder_red)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_red)Dark Necrom Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Red's $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_red)Dark Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -175,7 +175,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_necrom_blue_ghost_eyecon",
 			"title": "Dark Necrom Ghost Eyecon (Blue)",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Blue's $(l:ghost/devices/proto_mega_ulorder_blue)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_blue)Dark Necrom Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Blue's $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_blue)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_blue)Dark Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_necrom_yellow_ghost_eyecon",
 			"title": "Dark Necrom Ghost Eyecon (Yellow)",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Yellow's $(l:ghost/devices/proto_mega_ulorder_yellow)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_yellow)Dark Necrom Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Used to craft Dark Necrom Yellow's $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_yellow)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_yellow)Dark Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -201,7 +201,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_necrom_pink_ghost_eyecon",
 			"title": "Dark Necrom Ghost Eyecon (Pink)",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Dark Necrom Pink's $(l:ghost/devices/proto_mega_ulorder_pink)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_pink)Dark Necrom Damashii$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Used to craft Dark Necrom Pink's $(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_pink)Proto Mega Ulorder$(/l)$(br2)Used to access $(l:ghost/riders/dark_necrom_pink)Dark Necrom Damashii$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

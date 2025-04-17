@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "flame_ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wizard's $(l:wizard/devices/wizardriver)Wizardriver$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wizard's $(l:wizard/devices/wizardriver#wizardriver)Wizardriver$(/l)$(br2)Used to access Wizard's $(l:wizard/riders/wizard#flame)Flame Style$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -134,7 +134,7 @@
 			"type": "patchouli:text",
 			"anchor": "hope_ring",
 			"title": "Hope Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver_f)Wise Driver (Koyomi)$(/l)$(br2)Used with the $(l:wizard/items/wizard_rings#finish_strike_ring)Finish Strike Wizard Ring$(/l) to access Wizard's $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/wise_driver#whitewizardriver_f)Wise Driver (Koyomi)$(/l)$(br2)Used with the $(l:wizard/items/wizard_rings#finish_strike_ring)Finish Strike Wizard Ring$(/l) to access Wizard's $(l:wizard/riders/wizard#infinity_dragon_gold)Infinity Dragon Gold$(/l) form"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -247,7 +247,7 @@
 			"type": "patchouli:text",
 			"anchor": "wiseman_ring",
 			"title": "Wiseman Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/whitewizardriver)Wise Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Wiseman's $(l:wizard/devices/wise_driver#whitewizardriver)Wise Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -260,7 +260,7 @@
 			"type": "patchouli:text",
 			"anchor": "mage_o_ring",
 			"title": "Mage Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver)Mage's Belt (Mage)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/mages_belt#magewizardriver)Mage's Belt (Mage)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -273,7 +273,7 @@
 			"type": "patchouli:text",
 			"anchor": "mage_b_ring",
 			"title": "Mage Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver_b)Mage's Belt (Blue Mage)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/mages_belt#magewizardriver_b)Mage's Belt (Blue Mage)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -286,7 +286,7 @@
 			"type": "patchouli:text",
 			"anchor": "mage_g_ring",
 			"title": "Mage Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/magewizardriver_g)Mage's Belt (Green Mage)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to craft Mage's $(l:wizard/devices/mages_belt#magewizardriver_g)Mage's Belt (Green Mage)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -312,7 +312,7 @@
 			"type": "patchouli:text",
 			"anchor": "black_ring",
 			"title": "Black Wizard Ring",
-			"text": "Appears in:$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Used to craft Black Wizard's $(l:wizard/devices/black_wizardriver)Wizardriver (Black Wizard)$(/l)"
+			"text": "Appears in:$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Used to craft Black Wizard's $(l:wizard/devices/wizardriver#black_wizardriver)Wizardriver (Black Wizard)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -325,7 +325,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_ring",
 			"title": "Dark Wizard Ring",
-			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Used to craft Dark Wizard's $(l:wizard/devices/dark_wizardriver)Wizardriver (Dark Wizard)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Wizard: Final Stage (2013, stage show)$(br2)Used to craft Dark Wizard's $(l:wizard/devices/wizardriver#dark_wizardriver)Wizardriver (Dark Wizard)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
