@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Evil",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Evil",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_evil)Two Sidriver (Evil)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Evil",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/revice_driver_evil)Revice Driver (Evil)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Strength VII"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/revice_driver#revice_driver_evil)Revice Driver (Evil)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Strength VII"
 		}
 	]
 }

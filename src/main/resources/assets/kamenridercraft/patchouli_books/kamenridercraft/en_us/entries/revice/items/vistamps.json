@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rex_vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Revi's $(l:revice/devices/revice_driver)Revice Driver$(/l)$(br2)Used to access Revi's $(l:revice/riders/revi#rex)Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#rex)Rex Genome$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Revi's $(l:revice/devices/revice_driver#revice_driver)Revice Driver$(/l)$(br2)Used to access Revi's $(l:revice/riders/revi#rex)Rex Genome$(/l)$(br2)Used to access Vice's $(l:revice/riders/vice#rex)Rex Genome$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -306,7 +306,7 @@
 			"type": "patchouli:text",
 			"anchor": "bat_vistamp",
 			"title": "Bat Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Live's $(l:revice/devices/two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Used to access Live's $(l:revice/riders/live#bat)Bat Genome$(/l)$(br2)Used to access Evil's $(l:revice/riders/evil#bat)Bat Genome$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Live's $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Used to access Live's $(l:revice/riders/live#bat)Bat Genome$(/l)$(br2)Used to access Evil's $(l:revice/riders/evil#bat)Bat Genome$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -356,7 +356,7 @@
 			"type": "patchouli:text",
 			"anchor": "mega_bat_vistamp",
 			"title": "Mega Bat Vistamp",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to craft Live's $(l:revice/devices/revice_driver_live)Revice Driver (Live)$(/l)$(br2)Used to craft Evil's $(l:revice/devices/revice_driver_evil)Revice Driver (Evil)$(/l)"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to craft Live's $(l:revice/devices/revice_driver#revice_driver_live)Revice Driver (Live)$(/l)$(br2)Used to craft Evil's $(l:revice/devices/revice_driver#revice_driver_evil)Revice Driver (Evil)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -369,7 +369,7 @@
 			"type": "patchouli:text",
 			"anchor": "spider_vistamp",
 			"title": "Spider Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons's $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Used to access Demons's $(l:revice/riders/demons#spider)Spider Genome$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons's $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)Used to access Demons's $(l:revice/riders/demons#spider)Spider Genome$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -395,7 +395,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuwagata_vistamp",
 			"title": "Kuwagata Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Over Demons's $(l:revice/devices/over_demons_driver)Demons Driver (Over Demons)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Over Demons's $(l:revice/devices/demons_driver#over_demons_driver)Demons Driver (Over Demons)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -408,7 +408,7 @@
 			"type": "patchouli:text",
 			"anchor": "giraffa_vistamp",
 			"title": "Giraffa Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Get Over Demons's $(l:revice/devices/get_over_demons_driver)Demons Driver (Get Over Demons)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Get Over Demons's $(l:revice/devices/demons_driver#get_over_demons_driver)Demons Driver (Get Over Demons)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -627,7 +627,7 @@
 			"type": "patchouli:text",
 			"anchor": "spider_trooper_vistamp",
 			"title": "Trooper Spider Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper a's $(l:revice/devices/demons_driver_demons_trooper_a)Demons Driver (Trooper a)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper a's $(l:revice/devices/demons_driver#demons_driver_demons_trooper_a)Demons Driver (Trooper a)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -640,7 +640,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuwagata_trooper_vistamp",
 			"title": "Trooper Kuwagata Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper b's $(l:revice/devices/demons_driver_demons_trooper_b)Demons Driver (Trooper b)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Demons Trooper b's $(l:revice/devices/demons_driver#demons_driver_demons_trooper_b)Demons Driver (Trooper b)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -653,7 +653,7 @@
 			"type": "patchouli:text",
 			"anchor": "queen_bee_vistamp",
 			"title": "Queen Bee Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Aguilera's $(l:revice/devices/week_endriver)Week Endriver (Aguilera)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used to craft Aguilera's $(l:revice/devices/week_endriver#week_endriver)Week Endriver (Aguilera)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -679,7 +679,7 @@
 			"type": "patchouli:text",
 			"anchor": "twin_chimera_vistamp",
 			"title": "Twin Chimera Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used to craft Chimera's $(l:revice/devices/chimera_driver)Chimera Driver (Chimera)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used to craft Chimera's $(l:revice/devices/chimera_driver#chimera_driver)Chimera Driver (Chimera)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -690,7 +690,7 @@
 			"type": "patchouli:text",
 			"anchor": "tri_chimera_vistamp",
 			"title": "Tri Chimera Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used to craft Daimon's $(l:revice/devices/chimera_driver_daimon)Chimera Driver (Daimon)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used to craft Daimon's $(l:revice/devices/chimera_driver#chimera_driver_daimon)Chimera Driver (Daimon)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -712,7 +712,7 @@
 			"type": "patchouli:text",
 			"anchor": "kraken_vistamp",
 			"title": "Kraken Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used to craft Orteca's $(l:revice/devices/demons_driver_orteca)Demons Driver (Orteca)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used to craft Orteca's $(l:revice/devices/demons_driver#demons_driver_orteca)Demons Driver (Orteca)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

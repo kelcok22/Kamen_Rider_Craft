@@ -1,0 +1,40 @@
+{
+	"name": "ShotAbaddoriser",
+	"icon": "kamenridercraft:shot_abaddo_riser",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "shot_abaddo_riser",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#shotabaddoriser)Kamen Rider Abaddon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_riser"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shot_abaddo_riser_g",
+			"title": "ShotAbaddoriser (Abaddon Mua)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#mua)Kamen Rider Abaddon Mua"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_riser_g"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shot_abaddo_riser_b",
+			"title": "ShotAbaddoriser (Abaddon Lugo)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#lugo)Kamen Rider Abaddon Lugo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_riser_b"
+		}
+	]
+}

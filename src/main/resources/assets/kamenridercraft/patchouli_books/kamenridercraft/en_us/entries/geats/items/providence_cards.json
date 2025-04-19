@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "providence_card_glare",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Glare's $(l:geats/devices/vision_driver_glare)Vision Driver (Glare)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Glare's $(l:geats/devices/vision_driver#vision_driver_glare)Vision Driver (Glare)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "providence_card_gazer",
 			"title": "Providence Card (Gazer)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Gazer's $(l:geats/devices/vision_driver_gazer)Vision Driver (Gazer)$(/l)$(br2)Used to craft Suel Gazer's $(l:geats/devices/vision_driver_gazer_suel)Vision Driver (Suel Gazer)$(/l)$(br2)Used to craft Jyamato Gazer's $(l:geats/devices/vision_driver_jyamato_glare)Vision Driver (Jyamato Gazer)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Gazer's $(l:geats/devices/vision_driver#vision_driver_gazer)Vision Driver (Gazer)$(/l)$(br2)Used to craft Suel Gazer's $(l:geats/devices/vision_driver#vision_driver_gazer_suel)Vision Driver (Suel Gazer)$(/l)$(br2)Used to craft Jyamato Gazer's $(l:geats/devices/vision_driver#vision_driver_jyamato_glare)Vision Driver (Jyamato Gazer)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "providence_card_glare2",
 			"title": "Providence Card (Glare2)",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Glare2's $(l:geats/devices/vision_driver_glare2)Vision Driver (Glare2)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Glare2's $(l:geats/devices/vision_driver#vision_driver_glare2)Vision Driver (Glare2)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

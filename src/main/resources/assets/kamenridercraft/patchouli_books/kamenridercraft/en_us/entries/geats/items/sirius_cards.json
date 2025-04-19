@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sirius_card",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Regad's $(l:geats/devices/zillion_driver)Zillion Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to craft Regad's $(l:geats/devices/zillion_driver#zillion_driver)Zillion Driver$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "sirius_card_gazer_zero",
 			"title": "Sirius Card (Gazer Zero)",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider Gazer (2024, TTFC special)$(br2)Used to craft Gazer Zero's $(l:geats/devices/zillion_driver_gazer_zero)Zillion Driver (Gazer Zero)$(/l)"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider Gazer (2024, TTFC special)$(br2)Used to craft Gazer Zero's $(l:geats/devices/zillion_driver#zillion_driver_gazer_zero)Zillion Driver (Gazer Zero)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

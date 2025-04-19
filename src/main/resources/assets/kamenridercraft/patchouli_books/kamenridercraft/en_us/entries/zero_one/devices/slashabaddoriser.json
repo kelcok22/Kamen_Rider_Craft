@@ -1,0 +1,40 @@
+{
+	"name": "SlashAbaddoriser",
+	"icon": "kamenridercraft:slash_abaddo_riser",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon)Kamen Rider Abaddon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser_r",
+			"title": "SlashAbaddoriser (Abaddon Behru)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#behru)Kamen Rider Abaddon Behru"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser_r"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser_o",
+			"title": "SlashAbaddoriser (Abaddon Buga)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/abaddon#buga)Kamen Rider Abaddon Buga"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser_o"
+		}
+	]
+}

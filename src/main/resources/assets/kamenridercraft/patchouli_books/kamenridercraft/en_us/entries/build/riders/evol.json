@@ -67,7 +67,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Phantom State",
-			"text": "Accessed with the $(l:build/items/evol_trigger)Evol Trigger$(/l) while sneaking"
+			"text": "Accessed with the $(l:build/items/evol_trigger)Evol Trigger$(/l) while sneaking with the black $(l:build/arsenal/last_pandora_panel_black)Pandora Panel$(/l) and the 10 $(l:build/items/fullbottles#black_lost_cobra_full_bottle)Black Lost Fullbottles$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

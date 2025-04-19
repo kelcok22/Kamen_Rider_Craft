@@ -1,0 +1,33 @@
+{
+	"name": "Royal Sword of Logos Buckle",
+	"icon": "kamenridercraft:royal_sword_of_logos_buckle_sabela",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "royal_sword_of_logos_buckle_sabela",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/sabela)Kamen Rider Sabela"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:royal_sword_of_logos_buckle_sabela",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "royal_sword_of_logos_buckle_durendal",
+			"title": "Royal Sword of Logos Buckle (Durendal)",
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used alongside the $(l:saber/devices/armor)Saber armor$(/l) to transform into $(l:saber/riders/durendal)Kamen Rider Durendal"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:royal_sword_of_logos_buckle_durendal",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)"
+		}
+	]
+}

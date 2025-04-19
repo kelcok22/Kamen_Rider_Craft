@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)16-20 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)5 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l)$(li)1 $(l:saber/items/wonder_ride_books#grimoire_wonder_ride_book)Grimoire Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book$(/l)$(li)1 $(l:saber/devices/dooms_driver_buckle_storious)Dooms Driver Buckle (Storious)$(/l)$(li)1 $(l:saber/arsenal/bilgamed)Bilgamed$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)16-20 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)5 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l)$(li)1 $(l:saber/items/wonder_ride_books#grimoire_wonder_ride_book)Grimoire Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#wonder_almighty_wonder_ride_book)Wonder Almighty Wonder Ride Book$(/l)$(li)1 $(l:saber/devices/dooms_driver_buckle#dooms_driver_buckle_storious)Dooms Driver Buckle (Storious)$(/l)$(li)1 $(l:saber/arsenal/bilgamed)Bilgamed$(/l)"
 		}
 	]
 }

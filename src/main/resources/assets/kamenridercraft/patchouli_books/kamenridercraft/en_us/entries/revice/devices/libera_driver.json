@@ -2,7 +2,7 @@
 	"name": "Libera Driver",
 	"icon": "kamenridercraft:libera_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 5,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

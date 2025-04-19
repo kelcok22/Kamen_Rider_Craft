@@ -1,0 +1,59 @@
+{
+	"name": "Raise Riser Belt",
+	"icon": "kamenridercraft:raise_riser_belt_ziin",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "raise_riser_belt_ziin",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/ziin)Kamen Rider Ziin"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raise_riser_belt_ziin",
+			"title": " ",
+			"text": "Obtained by firing the $(l:geats/arsenal/laser_raise_riser)Laser Raise Riser$(/l) without any foot armor"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raise_riser_belt_kekera",
+			"title": "Raise Riser Belt (kekera)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kekera)Kamen Rider Kekera"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raise_riser_belt_kekera",
+			"title": " ",
+			"text": "Obtained by firing the $(l:geats/arsenal/laser_raise_riser)Laser Raise Riser$(/l) without any foot armor and with the $(l:geats/items/raise_riser_cards#kekera_raise_riser_card)Raise Riser Card (Kekera)$(/l) or $(l:geats/items/raise_riser_cards#kekera_black_raise_riser_card)Black Raise Riser Card (Kekera)$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raise_riser_belt_kyuun",
+			"title": "Raise Riser Belt (kyuun)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/kyuun)Kamen Rider Kyuun"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raise_riser_belt_kyuun",
+			"title": " ",
+			"text": "Obtained by firing the $(l:geats/arsenal/laser_raise_riser)Laser Raise Riser$(/l) without any foot armor and with the $(l:geats/items/raise_riser_cards#kyuun_raise_riser_card)Raise Riser Card (Kyuun)$(/l) in your off-hand"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raise_riser_belt_beroba",
+			"title": "Raise Riser Belt (Beroba)",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used alongside the $(l:geats/devices/armor)Geats armor$(/l) to transform into $(l:geats/riders/beroba)Kamen Rider Beroba"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raise_riser_belt_beroba",
+			"title": " ",
+			"text": "Obtained by firing the $(l:geats/arsenal/laser_raise_riser)Laser Raise Riser$(/l) without any foot armor and with the $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l) or $(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)Black Raise Riser Card (Beroba)$(/l) in your off-hand"
+		}
+	]
+}

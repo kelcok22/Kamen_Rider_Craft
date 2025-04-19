@@ -2,7 +2,7 @@
 	"name": "Jaken Caliburdriver",
 	"icon": "kamenridercraft:jaken_caliburdriver",
 	"category": "kamenridercraft:saber/devices",
-	"sortnum": 7,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",

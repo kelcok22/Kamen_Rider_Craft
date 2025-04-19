@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Seeker",
-			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_seeker)Desire Driver (Seeker)$(/l)$(br2)Core ID Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_seeker)Desire Driver (Seeker)$(/l)$(br2)Core ID Effects:$(li)Speed"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Seeker",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_seeker)Desire Driver (Seeker)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Powered Builder Buckle Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Resistance II$(li)Explosive Shot$(li)Fire Fist II$(br2)Gigant Container Buckle Effects:$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_seeker)Desire Driver (Seeker)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Powered Builder Buckle Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Resistance II$(li)Explosive Shot$(li)Fire Fist II$(br2)Gigant Container Buckle Effects:$(li)Flying"
 		}
 	]
 }
