@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "shin_typhoon_core",
-			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 1's $(l:shin_kamen_rider/devices/shin_typhoon_ichigo)Shin Typhoon (No. 1)$(/l)"
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 1's $(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_ichigo)Shin Typhoon (No. 1)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "shin_typhoon_core2",
 			"title": "Typhoon Energy Converter (No. 2)",
-			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 2's $(l:shin_kamen_rider/devices/shin_typhoon_nigo)Shin Typhoon (No. 2)$(/l)"
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 2's $(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_nigo)Shin Typhoon (No. 2)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "shin_typhoon_core2_1",
 			"title": "Typhoon Energy Converter (No. 2+1)",
-			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 2+1's $(l:shin_kamen_rider/devices/shin_typhoon_2_1)Shin Typhoon (No. 2+1)$(/l)"
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Used to craft No. 2+1's $(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_2_1)Shin Typhoon (No. 2+1)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

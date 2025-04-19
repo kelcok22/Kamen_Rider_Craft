@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Flaming Tiger",
-			"text": "Accessed with the $(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)Punching Kong Progrisekey$(/l)"
+			"text": "Accessed with the $(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l)"
 		},
 		{
 			"type": "patchouli:text",
