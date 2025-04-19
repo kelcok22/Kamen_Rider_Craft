@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.BaseItems;
 
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.annotation.Nullable;
@@ -12,11 +11,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 
-import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
-
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -26,7 +22,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.cache.GeckoLibCache;
 
@@ -52,6 +47,8 @@ public class RiderFormChangeItem extends BaseItem {
     private String FLYING_MODEL;
     private String UPDATED_MODEL_ANIMATION;
     private Boolean SET_PLAYER_MODEL_INVISIBLE = false;
+    private Boolean SET_SHOW_FACE = false;
+    private Boolean SET_SHOW_LEGS = false;
 
     private Boolean A1 = false;
 
@@ -140,8 +137,12 @@ public class RiderFormChangeItem extends BaseItem {
         return (UPDATED_MODEL_ANIMATION!=null ? "animations/"+UPDATED_MODEL_ANIMATION : "animations/ichigo.animation.json");
     }
 
-    public Boolean get_PalyerModelInvisible() {
-        return SET_PLAYER_MODEL_INVISIBLE;
+    public Boolean get_Show_Face() {
+        return SET_SHOW_FACE;
+    }
+
+    public Boolean get_Show_Legs() {
+        return SET_SHOW_LEGS;
     }
 
     public Boolean get_Is_Glowing() {
@@ -226,6 +227,16 @@ public class RiderFormChangeItem extends BaseItem {
         SET_PLAYER_MODEL_INVISIBLE = true;
         return this;
     }
+
+    public RiderFormChangeItem SetShowFace() {
+        SET_SHOW_FACE = true;
+        return this;
+    }
+    public RiderFormChangeItem SetShowLegs() {
+        SET_SHOW_LEGS = true;
+        return this;
+    }
+
     public RiderFormChangeItem ChangeBeltModel(String model) {
         UPDATED_BELT_MODEL=model;
         return this;
