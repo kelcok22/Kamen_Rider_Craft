@@ -15,6 +15,9 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Kuuga_Rider_Items {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -22,10 +25,16 @@ public class Kuuga_Rider_Items {
 	public static final DeferredItem<Item> KUUGA_LOGO = ITEMS.register("kuuga_logo",
     		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
+
+	public static final DeferredItem<Item> KUUGA_GROWING_AR = ITEMS.register("kuuga_growing_ar",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_growing_ar","kuuga","arcle_belt",
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 2,true,false))
+					.IsBeltGlowing().IsGlowing());
+
 	public static final DeferredItem<Item> KUUGA_GROWING = ITEMS.register("kuuga_growing",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_growing","kuuga","arcle_belt",
             		new MobEffectInstance(MobEffects.WEAKNESS, 40, 2,true,false))
-					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
+					.addSwitchForm(KUUGA_GROWING_AR.get()).IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 	
     public static final DeferredItem<Item> KUUGA_MIGHTY = ITEMS.register("kuuga_mighty",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","kuuga","arcle_belt",

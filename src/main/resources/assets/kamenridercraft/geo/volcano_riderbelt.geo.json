@@ -31,7 +31,7 @@
 					"cubes": [
 						{"origin": [-8, 5.5, -5.099], "size": [16, 16, 7], "inflate": -5, "uv": [18, 73], "mirror": true},
 						{"origin": [-12.5, 5.5, -8.11], "size": [16, 16, 10], "inflate": -5, "uv": [0, 6], "mirror": true},
-						{"origin": [-5, 12, -3], "size": [10, 3, 6], "inflate": -0.2, "uv": [0, 0]}
+						{"origin": [-5, 12, -3], "size": [10, 3, 6], "inflate": -0.4, "uv": [0, 0]}
 					]
 				},
 				{
