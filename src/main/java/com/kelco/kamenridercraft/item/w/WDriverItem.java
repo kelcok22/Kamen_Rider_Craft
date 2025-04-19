@@ -109,7 +109,6 @@ public class WDriverItem extends RiderDriverItem {
 		}
 	}
 
-
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 		
 		if (slot!= EquipmentSlot.HEAD) {

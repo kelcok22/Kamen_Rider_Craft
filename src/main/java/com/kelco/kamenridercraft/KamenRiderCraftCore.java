@@ -28,19 +28,14 @@ import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
-import com.mojang.math.Axis;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
-import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.*;
 import org.slf4j.Logger;
@@ -58,11 +53,9 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
 import net.neoforged.neoforge.network.registration.HandlerThread;
@@ -185,15 +178,31 @@ public class KamenRiderCraftCore
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
-
-        if (!(event.getEntity() instanceof Player)){
-        if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-            if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
-                event.getEntity().setInvisible(belt.isTransformed(event.getEntity()));
+if (event.getRenderer().getModel()instanceof PlayerModel model){
+    if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+        if (belt.isTransformed(event.getEntity())) {
+            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Face()) {
+                model.head.visible = false;
+                model.hat.visible = false;
             }
+            model.leftArm.visible = false;
+            model.rightArm.visible = false;
+            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Face()){
+                model.leftLeg.visible = false;
+                model.rightLeg.visible = false;
+            }
+
+
+            model.leftSleeve.visible = false;
+            model.rightSleeve.visible = false;
+            model.leftPants.visible = false;
+            model.rightPants.visible = false;
+
+            model.body.visible = false;
+            model.jacket.visible = false;
         }
-        }
+    }
+}
 
         float size = 1;
         boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
@@ -205,7 +214,7 @@ public class KamenRiderCraftCore
         float size2 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
 
         if (event.getEntity().hasEffect(Effect_core.FLAT)) {
-            size2 = 0.1f;
+            size2 = 0.04f;
         }
         float size3 = event.getEntity().hasEffect(Effect_core.STRETCH) ? 1 : size;
         if (event.getEntity().hasEffect(Effect_core.WIDE)) {
@@ -218,46 +227,6 @@ public class KamenRiderCraftCore
 
     @SubscribeEvent
     public void addRenderPlayerEvent(RenderPlayerEvent.Pre event) {
-
-        if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-            if (belt.isTransformed(event.getEntity())) {
-                if (RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_PalyerModelInvisible()) {
-                    event.getRenderer().getModel().head.visible = false;
-                    event.getRenderer().getModel().hat.visible = false;
-                }
-                    event.getRenderer().getModel().leftArm.visible = false;
-                    event.getRenderer().getModel().rightArm.visible = false;
-                    event.getRenderer().getModel().leftLeg.visible = false;
-                    event.getRenderer().getModel().rightLeg.visible = false;
-
-                    event.getRenderer().getModel().leftSleeve.visible = false;
-                    event.getRenderer().getModel().rightSleeve.visible = false;
-                    event.getRenderer().getModel().leftPants.visible = false;
-                    event.getRenderer().getModel().rightPants.visible = false;
-
-                    event.getRenderer().getModel().body.visible = false;
-                    event.getRenderer().getModel().jacket.visible = false;
-
-            }
-        }
-        if(event.getEntity().hasEffect(Effect_core.RIDER_KICK)){
-            if(event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&event.getEntity().getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5){
-                event.getRenderer().getModel().leftArm.visible=false;
-                event.getRenderer().getModel().rightArm.visible=false;
-                event.getRenderer().getModel().leftLeg.visible=false;
-                event.getRenderer().getModel().rightLeg.visible=false;
-
-                event.getRenderer().getModel().leftSleeve.visible=false;
-                event.getRenderer().getModel().rightSleeve.visible=false;
-                event.getRenderer().getModel().leftPants.visible=false;
-                event.getRenderer().getModel().rightPants.visible=false;
-
-                event.getRenderer().getModel().body.visible=false;
-                event.getRenderer().getModel().jacket.visible=false;
-                event.getRenderer().getModel().head.visible=false;
-                event.getRenderer().getModel().hat.visible=false;
-            }
-        }
 
     }
 
