@@ -1,0 +1,40 @@
+{
+	"name": "Neo Amazons Driver",
+	"icon": "kamenridercraft:neo_amazons_driver_neo",
+	"category": "kamenridercraft:amazons/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_neo",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used alongside the $(l:amazons/devices/armor)Amazons armor$(/l) to transform into $(l:amazons/riders/amazon_neo)Kamen Rider Amazon Neo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_neo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_omega",
+			"title": "Neo Amazons Driver (New Omega)",
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used alongside the $(l:amazons/devices/armor)Amazons armor$(/l) to transform into $(l:amazons/riders/amazon_new_omega)Kamen Rider Amazon New Omega"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_new_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_neo_alpha",
+			"title": "Neo Amazons Driver (Neo Alpha)",
+			"text": "Appears in:$(li)Kamen Rider Amazons: The Last Judgement (2018, movie)$(br2)Used alongside the $(l:amazons/devices/armor)Amazons armor$(/l) to transform into $(l:amazons/riders/amazon_neo_alpha)Kamen Rider Amazon Neo Alpha"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_neo_alpha"
+		}
+	]
+}
