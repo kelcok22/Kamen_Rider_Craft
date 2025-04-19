@@ -2,7 +2,7 @@
 	"name": "Destream Driver",
 	"icon": "kamenridercraft:destream_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 12,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

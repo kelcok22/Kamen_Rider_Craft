@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons Trooper α",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver_demons_trooper_a)Demons Driver (Trooper α)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver_demons_trooper_a)Demons Driver (Trooper α)$(/l)$(br2)Status Effects:$(li)Resistance$(li)Strength"
 		}
 	]
 }

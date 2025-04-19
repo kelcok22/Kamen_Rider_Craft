@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Naki",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/forceriser_naki)MetsubouJinrai Forceriser (Naki)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance II$(li)Haste III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_naki)MetsubouJinrai Forceriser (Naki)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance II$(li)Haste III$(li)Strength III"
 		}
 	]
 }

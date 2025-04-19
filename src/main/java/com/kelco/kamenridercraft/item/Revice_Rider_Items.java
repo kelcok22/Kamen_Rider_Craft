@@ -422,7 +422,6 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
-					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).needBaseForm()
 					.AddToList(VistampBar.PROTO_VISTAMP, 5).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURTLE_VISTAMP = ITEMS.register("turtle_vistamp",

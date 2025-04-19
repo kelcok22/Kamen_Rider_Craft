@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rising_hopper_progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Zero-One's $(l:zero_one/devices/hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Used to craft ZeroZero-One's $(l:zero_one/devices/forceriser_001)MetsubouJinrai Forceriser (ZeroZero-One)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#rising_hopper)Rising Hopper$(/l) form$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#rising_hopper)Rising Hopper$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Zero-One's $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Used to craft ZeroZero-One's $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_001)MetsubouJinrai Forceriser (ZeroZero-One)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#rising_hopper)Rising Hopper$(/l) form$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#rising_hopper)Rising Hopper$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -191,7 +191,7 @@
 			"type": "patchouli:text",
 			"anchor": "crushing_buffalo_progrisekey",
 			"title": "Crushing Buffalo Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Crushing Buffalo Raider's $(l:zero_one/devices/raidriser_buffalo)Raidriser (Crushing Buffalo Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#crushing_buffalo)Crushing Buffalo$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Crushing Buffalo Raider's $(l:zero_one/devices/raidriser#raidriser_buffalo)Raidriser (Crushing Buffalo Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#crushing_buffalo)Crushing Buffalo$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -243,7 +243,7 @@
 			"type": "patchouli:text",
 			"anchor": "storming_penguin_progrisekey",
 			"title": "Storming Penguin Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Storming Penguin Raider's $(l:zero_one/devices/raidriser_penguin)Raidriser (Storming Penguin Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#storming_penguin)Storming Penguin$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Storming Penguin Raider's $(l:zero_one/devices/raidriser#raidriser_penguin)Raidriser (Storming Penguin Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#storming_penguin)Storming Penguin$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -269,7 +269,7 @@
 			"type": "patchouli:text",
 			"anchor": "splashing_whale_progrisekey",
 			"title": "Splashing Whale Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Splashing Whale Raider's $(l:zero_one/devices/raidriser_whale)Raidriser (Splashing Whale Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#splashing_whale)Splashing Whale$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Splashing Whale Raider's $(l:zero_one/devices/raidriser#raidriser_whale)Raidriser (Splashing Whale Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#splashing_whale)Splashing Whale$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -282,7 +282,7 @@
 			"type": "patchouli:text",
 			"anchor": "dynamaiting_lion_progrisekey",
 			"title": "Dynamaiting Lion Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Dynamaiting Lion Raider's $(l:zero_one/devices/raidriser_lion)Raidriser (Dynamaiting Lion Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#dynamaiting_lion)Dynamaiting Lion$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Dynamaiting Lion Raider's $(l:zero_one/devices/raidriser#raidriser_lion)Raidriser (Dynamaiting Lion Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#dynamaiting_lion)Dynamaiting Lion$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -295,7 +295,7 @@
 			"type": "patchouli:text",
 			"anchor": "scouting_panda_progrisekey",
 			"title": "Scouting Panda Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Scouting Panda Raider's $(l:zero_one/devices/raidriser_panda)Raidriser (Scouting Panda Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#scouting_panda)Scouting Panda$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Scouting Panda Raider's $(l:zero_one/devices/raidriser#raidriser_panda)Raidriser (Scouting Panda Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#scouting_panda)Scouting Panda$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -308,7 +308,7 @@
 			"type": "patchouli:text",
 			"anchor": "invading_horseshoe_crab_progrisekey",
 			"title": "Invading Horseshoe Crab Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Battle Raider's $(l:zero_one/devices/raidriser_battle)Raidriser (Battle Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#invading_horseshoe_crab)Invading Horseshoe Crab$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Battle Raider's $(l:zero_one/devices/raidriser#raidriser_battle)Raidriser (Battle Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#invading_horseshoe_crab)Invading Horseshoe Crab$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -321,7 +321,7 @@
 			"type": "patchouli:text",
 			"anchor": "shooting_wolf_progrisekey",
 			"title": "Shooting Wolf Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Vulcan's $(l:zero_one/devices/shotriser_vulcan)AIMS Shotriser (Vulcan)$(/l)$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#shooting_wolf)Shooting Wolf$(/l) form$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#shooting_wolf)Shooting Wolf$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Vulcan's $(l:zero_one/devices/aims_shotriser#shotriser_vulcan)AIMS Shotriser (Vulcan)$(/l)$(br2)Used to access Vulcan's $(l:zero_one/riders/vulcan#shooting_wolf)Shooting Wolf$(/l) form$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#shooting_wolf)Shooting Wolf$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -371,7 +371,7 @@
 			"type": "patchouli:text",
 			"anchor": "rushing_cheetah_progrisekey",
 			"title": "Rushing Cheetah Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Valkyrie's $(l:zero_one/devices/shotriser_valkyrie)AIMS Shotriser (Valkyrie)$(/l)$(br2)Used to access Valkyrie's $(l:zero_one/riders/valkyrie#rushing_cheetah)Rushing Cheetah$(/l) form$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#rushing_cheetah)Rushing Cheetah$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Valkyrie's $(l:zero_one/devices/aims_shotriser#shotriser_valkyrie)AIMS Shotriser (Valkyrie)$(/l)$(br2)Used to access Valkyrie's $(l:zero_one/riders/valkyrie#rushing_cheetah)Rushing Cheetah$(/l) form$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#rushing_cheetah)Rushing Cheetah$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -397,7 +397,7 @@
 			"type": "patchouli:text",
 			"anchor": "fighting_jackal_progrisekey",
 			"title": "Fighting Jackal Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Fighting Jackal Raider's $(l:zero_one/devices/raidriser_jackal)Raidriser (Fighting Jackal Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#fighting_jackal)Fighting Jackal$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft the Fighting Jackal Raider's $(l:zero_one/devices/raidriser#raidriser_jackal)Raidriser (Fighting Jackal Raider)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#fighting_jackal)Fighting Jackal$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -410,7 +410,7 @@
 			"type": "patchouli:text",
 			"anchor": "sting_scorpion_progrisekey",
 			"title": "Sting Scorpion Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Horobi's $(l:zero_one/devices/forceriser_horobi)MetsubouJinrai Forceriser (Horobi)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#sting_scorpion)Sting Scorpion$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Horobi's $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_horobi)MetsubouJinrai Forceriser (Horobi)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#sting_scorpion)Sting Scorpion$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -436,7 +436,7 @@
 			"type": "patchouli:text",
 			"anchor": "flying_falcon_progrisekey",
 			"title": "Flying Falcon Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Jin's $(l:zero_one/devices/forceriser_jin)MetsubouJinrai Forceriser (Jin)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#flying_falcon)Flying Falcon$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Jin's $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_jin)MetsubouJinrai Forceriser (Jin)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#flying_falcon)Flying Falcon$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -462,7 +462,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazing_caucasus_progrisekey",
 			"title": "Amazing Caucasus Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Thouser's $(l:zero_one/devices/zaia_thousandriver)ZAIA Thousandriver (Thouser)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#amazing_caucasus)Amazing Caucasus$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used to craft Thouser's $(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver)ZAIA Thousandriver (Thouser)$(/l)$(br2)Used to access Zero-One's $(l:zero_one/riders/zero_one#amazing_caucasus)Amazing Caucasus$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -475,7 +475,7 @@
 			"type": "patchouli:text",
 			"anchor": "thousand_ark_progrisekey",
 			"title": "Thousand Ark Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Used to craft Thousand Ark's $(l:zero_one/devices/ark_driver_zero_thousand_ark)Ark Driver-Zero (Thousand Ark)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Used to craft Thousand Ark's $(l:zero_one/devices/ark_driver_zero#ark_driver_zero_thousand_ark)Ark Driver-Zero (Thousand Ark)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -499,7 +499,7 @@
 			"type": "patchouli:text",
 			"anchor": "ark_zero_one_progrisekey",
 			"title": "Ark Zero-One Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used to craft Ark-Zero-One's $(l:zero_one/devices/hiden_zero_one_driver_azu)Hiden Zero-One Driver (Ark Zero-One)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Used to craft Ark-Zero-One's $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver_azu)Hiden Zero-One Driver (Ark Zero-One)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -512,7 +512,7 @@
 			"type": "patchouli:text",
 			"anchor": "crowding_hopper_progrisekey",
 			"title": "Crowding Hopper Progrisekey",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used to craft Abaddon's $(l:zero_one/devices/slash_abaddo_riser)SlashAbaddoriser (Abaddon)$(/l)$(br)Used to craft Abaddon's $(l:zero_one/devices/shot_abaddo_riser)ShotAbaddoriser (Abaddon)$(/l)$(br)Used to craft Abaddon Behru's $(l:zero_one/devices/slash_abaddo_riser_r)SlashAbaddoriser (Red)$(/l)$(br)Used to craft Abaddon Mua's $(l:zero_one/devices/shot_abaddo_riser_g)ShotAbaddoriser (Grey)$(/l)$(br)Used to craft Abaddon Lugo's $(l:zero_one/devices/shot_abaddo_riser_b)ShotAbaddoriser (Blue)$(/l)$(br)Used to craft Abaddon Buga's $(l:zero_one/devices/slash_abaddo_riser_o)SlashAbaddoriser (Orange)$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Used to craft Abaddon's $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser)SlashAbaddoriser (Abaddon)$(/l)$(br)Used to craft Abaddon's $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser)ShotAbaddoriser (Abaddon)$(/l)$(br)Used to craft Abaddon Behru's $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_r)SlashAbaddoriser (Red)$(/l)$(br)Used to craft Abaddon Mua's $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_g)ShotAbaddoriser (Grey)$(/l)$(br)Used to craft Abaddon Lugo's $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_b)ShotAbaddoriser (Blue)$(/l)$(br)Used to craft Abaddon Buga's $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_o)SlashAbaddoriser (Orange)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

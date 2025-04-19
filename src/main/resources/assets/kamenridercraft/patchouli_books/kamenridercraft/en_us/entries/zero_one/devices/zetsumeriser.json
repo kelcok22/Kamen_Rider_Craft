@@ -1,0 +1,139 @@
+{
+	"name": "Zetsumeriser",
+	"icon": "kamenridercraft:zetsumeriser_berotha",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_berotha",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#berotha)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_berotha"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_kuehne",
+			"title": "Zetsumeriser (Kuehne Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#kuehne)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_kuehne"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_ekal",
+			"title": "Zetsumeriser (Ekal Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#ekal)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_ekal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_neohi",
+			"title": "Zetsumeriser (Neohi Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#neohi)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_neohi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_onycho",
+			"title": "Zetsumeriser (Onycho Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#onycho)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_onycho"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_vicarya",
+			"title": "Zetsumeriser (Vicarya Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#vicarya)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_vicarya"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_gaeru",
+			"title": "Zetsumeriser (Gaeru Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#gaeru)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_gaeru"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_mammoth",
+			"title": "Zetsumeriser (Mammoth Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#mammoth)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_mammoth"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo",
+			"title": "Zetsumeriser (Dodo Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#dodo)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo_custom",
+			"title": "Zetsumeriser (Dodo Magia Custom)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#dodo_custom)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo_custom_two",
+			"title": "Zetsumeriser (Dodo Magia Custom Two)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#dodo_custom_two)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom_two"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_arsino",
+			"title": "Zetsumeriser (Arsino Magia)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into a $(l:zero_one/riders/magia#arsino)Magia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_arsino"
+		}
+	]
+}

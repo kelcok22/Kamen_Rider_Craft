@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "brave_dragon_wonder_ride_book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Saber's $(l:saber/devices/seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#brave_dragon)Brave Dragon$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Saber's $(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)Seiken Swordriver (Saber)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#brave_dragon)Brave Dragon$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#brave_dragon)Brave Dragon$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"anchor": "lion_senki_wonder_ride_book",
 			"title": "Lion Senki Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Blades's $(l:saber/devices/seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lion_senki)Lion Senki$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lion_senki)Lion Senki$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lion_senki)Lion Senki$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Blades's $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lion_senki)Lion Senki$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lion_senki)Lion Senki$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lion_senki)Lion Senki$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "lamp_do_alngina_wonder_ride_book",
 			"title": "Lamp do Alangina Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Espada's $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lamp_do_alangina)Lamp do Alangina$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Espada's $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#lamp_do_alangina)Lamp do Alangina$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#lamp_do_alangina)Lamp do Alangina$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "genbu_shinwa_wonder_ride_book",
 			"title": "Genbu Shinwa Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Buster's $(l:saber/devices/sword_of_logos_buckle_buster)Sword of Logos Buckle (Buster)$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#genbu_shinwa)Genbu Shinwa$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Buster's $(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_buster)Sword of Logos Buckle (Buster)$(/l)$(br2)Used to access Blades's $(l:saber/riders/blades#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Espada's $(l:saber/riders/espada#genbu_shinwa)Genbu Shinwa$(/l) form$(br)Used to access Buster's $(l:saber/riders/buster#genbu_shinwa)Genbu Shinwa$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "sarutobi_ninjaden_wonder_ride_book",
 			"title": "Sarutobi Ninjaden Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Kenzan's $(l:saber/devices/sword_of_logos_buckle_kenzan)Sword of Logos Buckle (Kenzan)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Kenzan's $(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_kenzan)Sword of Logos Buckle (Kenzan)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form$(br)Used to access Kenzan's $(l:saber/riders/kenzan#sarutobi_ninjaden)Sarutobi Ninjaden$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -175,7 +175,7 @@
 			"type": "patchouli:text",
 			"anchor": "hanselnuts_to_gretel_wonder_ride_book",
 			"title": "Hanselnuts to Gretel Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Slash's $(l:saber/devices/sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Slash's $(l:saber/riders/slash#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used to craft Slash's $(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_slash)Sword of Logos Buckle (Slash)$(/l)$(br2)Used to access Saber's $(l:saber/riders/saber#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Blades's $(l:saber/riders/blades#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form$(br)Used to access Slash's $(l:saber/riders/slash#hanselnuts_to_gretel)Hanselnuts to Gretel$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -598,7 +598,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaikotsu_ninjaden_wonder_ride_book",
 			"title": "Gaikotsu Ninjaden Wonder Ride Book",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Desast's $(l:saber/devices/seiken_swordriver_desast)Seiken Swordriver (Desast)"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Used to craft Desast's $(l:saber/devices/seiken_swordriver#seiken_swordriver_desast)Seiken Swordriver (Desast)"
 		},
 		{
 			"type": "patchouli:spotlight",

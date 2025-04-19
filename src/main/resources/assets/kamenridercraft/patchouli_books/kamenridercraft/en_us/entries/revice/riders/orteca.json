@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Orteca",
-			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Transforms with the $(l:revice/devices/demons_driver_orteca)Demons Driver (Orteca)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Water Breathing$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver_orteca)Demons Driver (Orteca)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Water Breathing$(li)Strength II"
 		}
 	]
 }

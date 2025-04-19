@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 200$(br2)Special moves:$(li)Transforms into $(l:zero_one/riders/ark-zero#ark-one)Kamen Rider Ark-One$(/l) at under 100 health$(br2)Drops$(li)12-20 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)6-10 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One Progrisekey$(/l)$(li)1 $(l:zero_one/devices/ark_driver_zero)Ark Driver-Zero (Ark-Zero)$(/l)$(li)1 $(l:zero_one/items/progrisekeys#ark_zero_one_progrisekey)Ark Zero-One Progrisekey$(/l) (25%)$(li)1 $(l:zero_one/items/progrisekeys#ark_scorpion_progrisekey)Ark Scorpion Progrisekey$(/l) (25%)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Health: 200$(br2)Special moves:$(li)Transforms into $(l:zero_one/riders/ark-zero#ark-one)Kamen Rider Ark-One$(/l) at under 100 health$(br2)Drops$(li)12-20 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)6-10 $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l)$(li)1 $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One Progrisekey$(/l)$(li)1 $(l:zero_one/devices/ark_driver_zero#ark_driver_zero)Ark Driver-Zero (Ark-Zero)$(/l)$(li)1 $(l:zero_one/items/progrisekeys#ark_zero_one_progrisekey)Ark Zero-One Progrisekey$(/l) (25%)$(li)1 $(l:zero_one/items/progrisekeys#ark_scorpion_progrisekey)Ark Scorpion Progrisekey$(/l) (25%)"
 		}
 	]
 }
