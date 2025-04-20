@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "bottom": "kamenridercraft:block/light_green_wallplate_grate",
+    "side": "kamenridercraft:block/light_green_wallplate",
+    "top": "kamenridercraft:block/light_green_wallplate_grate"
+  }
+}

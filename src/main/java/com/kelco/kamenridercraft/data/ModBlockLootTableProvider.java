@@ -20,6 +20,25 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.HELHEIM_BUTTON.get());
         add(Rider_Blocks.HELHEIM_SLAB.get(),
                 block -> createSlabItemTable(Rider_Blocks.HELHEIM_SLAB.get()));
+        add(Rider_Blocks.WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.WHITE_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.WHITE_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.RED_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.RED_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.GREY_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.GREY_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.GREEN_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.GREEN_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.BLACK_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.BLACK_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.YELLOW_WALLPLATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.YELLOW_WALLPLATE_SLAB.get()));
+        add(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB.get(),
+                block -> createSlabItemTable(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB.get()));
+
         dropSelf(Rider_Blocks.HELHEIM_STAIRS.get());
         dropSelf(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get());
         dropSelf(Rider_Blocks.HELHEIM_FENCE.get());
@@ -27,6 +46,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.HELHEIM_TRAPDOOR.get());
         dropSelf(Rider_Blocks.CORNERSTORE_SIGN.get());
         dropSelf(Rider_Blocks.YELLOW_WALLPLATE.get());
+        dropSelf(Rider_Blocks.GREY_WALLPLATE.get());
+        dropSelf(Rider_Blocks.BLACK_WALLPLATE.get());
+        dropSelf(Rider_Blocks.GREEN_WALLPLATE.get());
+        dropSelf(Rider_Blocks.LIGHT_GREEN_WALLPLATE.get());
+        dropSelf(Rider_Blocks.RED_WALLPLATE.get());
+        dropSelf(Rider_Blocks.YELLOW_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.GREY_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.BLACK_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.GREEN_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.LIGHT_GREEN_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.RED_WALLPLATE_STAIRS.get());
+        dropSelf(Rider_Blocks.WALLPLATE_STAIRS.get());
         dropSelf(Rider_Blocks.CHECKERED_TILE.get());
         dropSelf(Rider_Blocks.VERTICAL_PANEL.get());
         add(Rider_Blocks.HELHEIM_DOOR.get(),

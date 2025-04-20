@@ -1,0 +1,10 @@
+{
+    "parent": "block/orientable",
+    "render_type": "minecraft:cutout_mipped",
+    "textures": {
+        "bottom": "kamenridercraft:block/light_green_wallplate_grate",
+        "front": "kamenridercraft:block/light_green_wallplate",
+        "side": "kamenridercraft:block/light_green_wallplate",
+        "top": "kamenridercraft:block/light_green_wallplate_grate"
+    }
+}
