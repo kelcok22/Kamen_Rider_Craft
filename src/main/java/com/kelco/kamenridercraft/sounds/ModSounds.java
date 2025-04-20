@@ -56,6 +56,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> JUST_LIVE_MORE= registerSoundEvent("just_live_more");
     public static final ResourceKey<JukeboxSong> JUST_LIVE_MORE_KEY = createSong("just_live_more");
 
+    public static final Supplier<SoundEvent> SURPRISE_DRIVE= registerSoundEvent("surprise_drive");
+    public static final ResourceKey<JukeboxSong> SURPRISE_DRIVE_KEY = createSong("surprise_drive");
+
     public static final Supplier<SoundEvent> EXCITE= registerSoundEvent("excite");
     public static final ResourceKey<JukeboxSong> EXCITE_KEY = createSong("excite");
 

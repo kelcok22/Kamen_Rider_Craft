@@ -355,6 +355,9 @@ public class Modded_item_core {
     public static final DeferredItem<Item> JUST_LIVE_MORE_MUSIC_DISC = ITEMS.register("just_live_more_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.JUST_LIVE_MORE_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> SURPRISE_DRIVE_MUSIC_DISC = ITEMS.register("surprise_drive_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.SURPRISE_DRIVE_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> EXCITE_KEY_MUSIC_DISC = ITEMS.register("excite_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.EXCITE_KEY).stacksTo(1)));
 
