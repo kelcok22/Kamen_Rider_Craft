@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "kamenridercraft:block/white_wallplate",
+    "side": "kamenridercraft:block/white_wallplate",
+    "top": "kamenridercraft:block/white_wallplate"
+  }
+}
