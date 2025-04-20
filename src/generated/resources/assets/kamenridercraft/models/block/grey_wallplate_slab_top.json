@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "kamenridercraft:block/grey_wallplate",
+    "side": "kamenridercraft:block/grey_wallplate",
+    "top": "kamenridercraft:block/grey_wallplate"
+  }
+}
