@@ -2,15 +2,72 @@
 	"name": "Demons Driver",
 	"icon": "kamenridercraft:demons_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 6,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "demons_driver",
 			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/demons)Kamen Rider Demons$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:revice/demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "over_demons_driver",
+			"title": "Demons Driver (Over Demons)",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/over_demons)Kamen Rider Over Demons$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/over_demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "get_over_demons_driver",
+			"title": "Demons Driver (Get Over Demons)",
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/get_over_demons)Kamen Rider Get Over Demons$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/get_over_demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_demons_trooper_a",
+			"title": "Demons Driver (Demons Trooper α)",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/demons_trooper_a)Kamen Rider Demons Trooper α"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_demons_trooper_a"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_demons_trooper_b",
+			"title": "Demons Driver (Demons Trooper ß)",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/demons_trooper_b)Kamen Rider Demons Trooper ß"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_demons_trooper_b"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_orteca",
+			"title": "Demons Driver (Orteca)",
+			"text": "Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/orteca)Kamen Rider Orteca"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_orteca"
 		}
 	]
 }

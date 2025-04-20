@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Brali",
-			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver_brali)Desire Driver (Brali)$(/l)$(br2)Core ID Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_brali)Desire Driver (Brali)$(/l)$(br2)Core ID Effects:$(li)Speed"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Brali",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_brali)Desire Driver (Brali)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_brali)Desire Driver (Brali)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
 		}
 	]
 }

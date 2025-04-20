@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Over Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/over_demons_driver)Demons Driver (Over Demons)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Strength III$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#over_demons_driver)Demons Driver (Over Demons)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Strength III$(li)Flying"
 		}
 	]
 }

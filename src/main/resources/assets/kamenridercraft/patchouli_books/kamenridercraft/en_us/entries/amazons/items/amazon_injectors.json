@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "amazon_injector_neo",
-			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used to craft Amazon Neo's $(l:amazons/devices/neo_amazons_driver_neo)Neo Amazons Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used to craft Amazon Neo's $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo Amazons Driver$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_injector_new_omega",
 			"title": "Amazon Injector (New Omega)",
-			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used to craft Amazon New Omega's $(l:amazons/devices/neo_amazons_driver_omega)Neo Amazons Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Used to craft Amazon New Omega's $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_omega)Neo Amazons Driver$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_injector_neo_alpha",
 			"title": "Amazon Injector (Neo Alpha)",
-			"text": "Appears in:$(li)Kamen Rider Amazons: The Last Judgement (2018, movie)$(br2)Used to craft Amazon Neo Alpha's $(l:amazons/devices/neo_amazons_driver_neo_alpha)Neo Amazons Driver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Amazons: The Last Judgement (2018, movie)$(br2)Used to craft Amazon Neo Alpha's $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo_alpha)Neo Amazons Driver$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

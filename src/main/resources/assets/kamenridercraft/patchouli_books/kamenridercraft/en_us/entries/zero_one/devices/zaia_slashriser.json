@@ -2,7 +2,7 @@
 	"name": "ZAIA Slashriser (Jin)",
 	"icon": "kamenridercraft:zaia_slashriser",
 	"category": "kamenridercraft:zero_one/devices",
-	"sortnum": 13,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

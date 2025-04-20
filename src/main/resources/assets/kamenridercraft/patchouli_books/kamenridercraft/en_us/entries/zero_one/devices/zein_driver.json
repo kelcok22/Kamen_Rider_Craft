@@ -2,7 +2,7 @@
 	"name": "Zein Driver",
 	"icon": "kamenridercraft:zein_driver",
 	"category": "kamenridercraft:zero_one/devices",
-	"sortnum": 29,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

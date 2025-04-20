@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Batta Vistamp Effects:$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Batta Vistamp Effects:$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Mogura Vistamp Effects:$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Mogura Vistamp Effects:$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Condor Vistamp Effects:$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Condor Vistamp Effects:$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Scorpion Vistamp Effects:$(li)Speed V"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Scorpion Vistamp Effects:$(li)Speed V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Kamen Rider Revice concept art (2021, concept art)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Anomalocaris Vistamp Effects:$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Revice concept art (2021, concept art)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)This form can be used by $(l:demons/riders/demons)Demons$(/l), $(l:revice/riders/over_demons)Over Demons$(/l), and $(l:revice/riders/get_over_demons)Get Over Demons$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Anomalocaris Vistamp Effects:$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Crocodile Vistamp Effects:$(li)Punch V$(li)Strength IX (with empty hand)"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Crocodile Vistamp Effects:$(li)Punch V$(li)Strength IX (with empty hand)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Demons",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Komodo Dragon Vistamp Effects:$(li)Fire Fist III"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/demons_driver#demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Poison$(li)Resistance II$(li)Strength III$(br2)Komodo Dragon Vistamp Effects:$(li)Fire Fist III"
 		}
 	]
 }

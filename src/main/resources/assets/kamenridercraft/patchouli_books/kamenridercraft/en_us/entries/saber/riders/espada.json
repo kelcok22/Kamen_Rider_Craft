@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Needle Hedgehog Effects:$(li)Speed II$(li)Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Haste VI$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII"
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Haste VI$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Storm Eagle Effects:$(li)Night Vision$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Storm Eagle Effects:$(li)Night Vision$(li)Flying$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Espada",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)Seiken Swordriver (Espada)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		}
 	]
 }

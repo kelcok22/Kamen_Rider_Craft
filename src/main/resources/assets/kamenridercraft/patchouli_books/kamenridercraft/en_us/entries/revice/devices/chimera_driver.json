@@ -1,16 +1,29 @@
 {
-	"name": "Chimera Driver (Chimera)",
+	"name": "Chimera Driver",
 	"icon": "kamenridercraft:chimera_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 17,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "chimera_driver",
 			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/chimera)Kamen Rider Chimera$(/l)$(br2)Can store up to 2 stacks of Vistamps"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:revice/chimera_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chimera_driver_daimon",
+			"title": "Chimera Driver (Daimon)",
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Used alongside the $(l:revice/devices/armor)Revice armor$(/l) to transform into $(l:revice/riders/daimon)Kamen Rider Daimon$(/l)$(br2)Can store up to 2 stacks of Vistamps"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/chimera_driver_daimon"
 		}
 	]
 }

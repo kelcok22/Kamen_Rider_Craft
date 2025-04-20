@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ark-Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver_azu)Hiden Zero-One Driver (Ark Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost V$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: Final Stage (2020, stage show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver_azu)Hiden Zero-One Driver (Ark Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost V$(li)Strength V"
 		}
 	]
 }

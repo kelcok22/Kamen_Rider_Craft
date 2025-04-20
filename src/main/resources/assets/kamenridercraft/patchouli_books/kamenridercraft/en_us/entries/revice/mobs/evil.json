@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 60$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#bat_vistamp)Bat Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (66.7%)$(li)1 $(l:revice/devices/two_sidriver_evil)Two Sidriver (Evil)$(/l) (16.7%)$(li)1 $(l:revice/arsenal/evil_blade)Evilblade$(/l) (16.7%)$(li)1 $(l:revice/items/vistamps#holy_wing_vistamp)Holy Wing Vistamp$(/l) (consumes a $(l:revice/items/vistamps#crow_vistamp)Crow Vistamp$(/l) from your inventory)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 60$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#bat_vistamp)Bat Vistamp$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (66.7%)$(li)1 $(l:revice/devices/two_sidriver#two_sidriver_evil)Two Sidriver (Evil)$(/l) (16.7%)$(li)1 $(l:revice/arsenal/evil_blade)Evilblade$(/l) (16.7%)$(li)1 $(l:revice/items/vistamps#holy_wing_vistamp)Holy Wing Vistamp$(/l) (consumes a $(l:revice/items/vistamps#crow_vistamp)Crow Vistamp$(/l) from your inventory)"
 		}
 	]
 }

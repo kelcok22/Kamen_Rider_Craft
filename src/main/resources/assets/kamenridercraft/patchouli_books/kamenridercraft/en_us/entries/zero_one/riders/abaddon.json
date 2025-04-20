@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slash_abaddo_riser)SlashAbaddoriser (Abaddon)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser)SlashAbaddoriser (Abaddon)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shot_abaddo_riser)ShotAbaddoriser (Abaddon)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser)ShotAbaddoriser (Abaddon)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon Behru",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slash_abaddo_riser_r)SlashAbaddoriser (Red)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_r)SlashAbaddoriser (Red)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon Mua",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shot_abaddo_riser_g)ShotAbaddoriser (Grey)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_g)ShotAbaddoriser (Grey)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon Lugo",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shot_abaddo_riser_b)ShotAbaddoriser (Blue)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_b)ShotAbaddoriser (Blue)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Abaddon Buga",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slash_abaddo_riser_o)SlashAbaddoriser (Orange)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_o)SlashAbaddoriser (Orange)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Jump Boost IV"
 		}
 	]
 }

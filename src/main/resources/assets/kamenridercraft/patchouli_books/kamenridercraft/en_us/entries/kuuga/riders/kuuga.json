@@ -207,7 +207,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Amazing Mighty (Artist Color)",
-			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l)"
+			"text": "Accessed with the $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. Hero Saga$(/l) as $(l:kuuga/riders/kuuga#amazing_mighty)Amazing Mighty$(/l)"
 		},
 		{
 			"type": "patchouli:text",
