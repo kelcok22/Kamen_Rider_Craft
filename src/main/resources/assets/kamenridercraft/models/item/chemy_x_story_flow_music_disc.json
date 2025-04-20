@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/chemy_x_story_flow_music_disc"
+  }
+}
