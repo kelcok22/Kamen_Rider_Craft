@@ -767,7 +767,7 @@ public class Rider_Blocks {
 
 	public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_GRATE_STAIRS = registerBlock("yellow_wallplate_grate_stairs",
 			() -> new StairBlock(Rider_Blocks.YELLOW_WALLPLATE.get().defaultBlockState(),
-					BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+					BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
 
 	public static final DeferredBlock<Block> WOODEN_PANEL = registerBlock("wooden_panel",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
