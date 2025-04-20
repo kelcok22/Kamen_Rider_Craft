@@ -574,8 +574,26 @@ public class RiderTabs {
             event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
             event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
             event.accept(Rider_Blocks.WALLPLATE_GRATE);
+            event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.GREY_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.GREY_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.BLACK_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.BLACK_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.RED_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.RED_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.YELLOW_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.YELLOW_WALLPLATE_SLAB);
             event.accept(Rider_Blocks.YELLOW_WALLPLATE_WALL);
+            event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.GREEN_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.GREEN_WALLPLATE_SLAB);
             event.accept(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS);
+            event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
+
 
             event.accept(Rider_Blocks.GLASS_DOOR);
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "kamenridercraft:block/light_green_wallplate",
+    "side": "kamenridercraft:block/light_green_wallplate",
+    "top": "kamenridercraft:block/light_green_wallplate"
+  }
+}
