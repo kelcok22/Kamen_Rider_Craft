@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Glare",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/vision_driver_glare)Vision Driver (Glare)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/vision_driver#vision_driver_glare)Vision Driver (Glare)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
 		}
 	]
 }

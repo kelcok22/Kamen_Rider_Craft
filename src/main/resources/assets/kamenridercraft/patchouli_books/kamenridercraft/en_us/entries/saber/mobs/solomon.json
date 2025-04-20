@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)112 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)5 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l)$(li)1 $(l:saber/items/wonder_ride_books#omni_force_wonder_ride_book)Omni Force Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#tassel_dark_wonder_ride_book)Tassel Dark Wonder Ride Book$(/l)$(li)1 $(l:saber/devices/dooms_driver_buckle_solomon)Dooms Driver Buckle (Solomon)$(/l)$(li)1 $(l:saber/arsenal/caladbolg)Caladbolg$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 200$(br2)Drops$(li)112 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)5 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l)$(li)1 $(l:saber/items/wonder_ride_books#omni_force_wonder_ride_book)Omni Force Wonder Ride Book$(/l)$(li)1 $(l:saber/items/wonder_ride_books#tassel_dark_wonder_ride_book)Tassel Dark Wonder Ride Book$(/l)$(li)1 $(l:saber/devices/dooms_driver_buckle#dooms_driver_buckle_solomon)Dooms Driver Buckle (Solomon)$(/l)$(li)1 $(l:saber/arsenal/caladbolg)Caladbolg$(/l)"
 		}
 	]
 }

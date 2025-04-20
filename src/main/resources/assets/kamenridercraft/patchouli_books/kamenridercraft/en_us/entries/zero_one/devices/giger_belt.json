@@ -2,7 +2,7 @@
 	"name": "Giger Belt",
 	"icon": "kamenridercraft:giger_belt",
 	"category": "kamenridercraft:zero_one/devices",
-	"sortnum": 50,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:text",

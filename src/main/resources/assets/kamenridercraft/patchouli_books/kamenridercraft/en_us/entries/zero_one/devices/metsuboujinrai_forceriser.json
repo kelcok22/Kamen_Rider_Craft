@@ -1,0 +1,62 @@
+{
+	"name": "MetsubouJinrai Forceriser",
+	"icon": "kamenridercraft:forceriser_horobi",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_horobi",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/horobi)Kamen Rider Horobi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_horobi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_naki",
+			"title": "MetsubouJinrai Forceriser (Naki)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/naki)Kamen Rider Naki"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_naki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_jin",
+			"title": "MetsubouJinrai Forceriser (Jin)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/jin)Kamen Rider Jin"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_jin"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_ikazuchi",
+			"title": "MetsubouJinrai Forceriser (Ikazuchi)",
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/ikazuchi)Kamen Rider Ikazuchi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_ikazuchi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_001",
+			"title": "MetsubouJinrai Forceriser (ZeroZero-One)",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Used alongside the $(l:zero_one/devices/armor)Zero-One armor$(/l) to transform into $(l:zero_one/riders/zerozero-one)Kamen Rider ZeroZero-One"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_001"
+		}
+	]
+}

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)Core ID Effects:$(li)Haste"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)Core ID Effects:$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(br2)Boost Buckle Effects:$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(br2)Boost Buckle Effects:$(li)Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Hammer Buckle Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Hammer Buckle Effects:$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Claw Buckle Effects:$(li)Slash$(li)Strength (with sword)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Claw Buckle Effects:$(li)Slash$(li)Strength (with sword)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Form Effects:$(li)Speed IV$(li)Haste IV$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Beat Form Effects:$(li)Speed IV$(li)Haste IV$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Na-Go",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Fantasy Buckle Effects:$(li)Slash II$(li)Strength II (with weapon)$(li)Resistance II$(li)Mirror II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_na_go)Desire Driver (Na-Go)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Haste$(br2)Fantasy Buckle Effects:$(li)Slash II$(li)Strength II (with weapon)$(li)Resistance II$(li)Mirror II"
 		}
 	]
 }

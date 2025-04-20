@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Regad",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver#zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Regad Omega",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/zillion_driver#zillion_driver)Zillion Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
 		}
 	]
 }

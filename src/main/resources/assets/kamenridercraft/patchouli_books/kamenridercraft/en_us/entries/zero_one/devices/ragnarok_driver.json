@@ -2,7 +2,7 @@
 	"name": "Ragnarok Driver",
 	"icon": "kamenridercraft:ragnarok_driver",
 	"category": "kamenridercraft:zero_one/devices",
-	"sortnum": 30,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Crimson Vail Belt",
 	"icon": "kamenridercraft:vail_belt",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 13,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

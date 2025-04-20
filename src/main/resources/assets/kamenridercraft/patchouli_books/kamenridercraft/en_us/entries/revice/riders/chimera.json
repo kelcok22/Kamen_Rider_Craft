@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Chimera",
-			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Transforms with the $(l:revice/devices/chimera_driver)Chimera Driver (Chimera)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Night Vision$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Revice Movie Spin-Off Delivered Drama: Birth of Chimera (2022, TTFC special)$(br2)Transforms with the $(l:revice/devices/chimera_driver#chimera_driver)Chimera Driver (Chimera)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Night Vision$(li)Strength IV"
 		}
 	]
 }

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Revi",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Revi",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Revi",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Revi",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Revice Driver Buckle Effects:$(li)Speed$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_revi)Desire Driver (Revi)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Revice Driver Buckle Effects:$(li)Speed$(li)Jump Boost"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Cyclotron Driver",
 	"icon": "kamenridercraft:cyclotron_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 20,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Seiken Saikou Driver",
 	"icon": "kamenridercraft:seiken_saikou_driver",
 	"category": "kamenridercraft:saber/devices",
-	"sortnum": 8,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

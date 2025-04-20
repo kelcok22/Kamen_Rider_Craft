@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ikazuchi",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/forceriser_ikazuchi)MetsubouJinrai Forceriser (Ikazuchi)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost IV$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_ikazuchi)MetsubouJinrai Forceriser (Ikazuchi)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost IV$(li)Strength III"
 		}
 	]
 }

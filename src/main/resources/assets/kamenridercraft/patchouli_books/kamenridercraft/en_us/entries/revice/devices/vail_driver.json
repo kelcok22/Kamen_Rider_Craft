@@ -2,7 +2,7 @@
 	"name": "Vail Driver",
 	"icon": "kamenridercraft:vail_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 11,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

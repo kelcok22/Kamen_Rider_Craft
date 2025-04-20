@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "omega_amazon_cell_vial",
-			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_omega)Condorer Core (Omega)$(/l) and the $(l:amazons/devices/amazons_driver_omega)Amazons Driver (Omega)$(/l)"
+			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_omega)Condorer Core (Omega)$(/l) and the $(l:amazons/devices/amazons_driver#amazons_driver_omega)Amazons Driver (Omega)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "alpha_amazon_cell_vial",
 			"title": "Amazon Cell Vial (Alpha)",
-			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_alpha)Condorer Core (Alpha)$(/l) and the $(l:amazons/devices/amazons_driver_alpha)Amazons Driver (Alpha)$(/l)"
+			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_alpha)Condorer Core (Alpha)$(/l) and the $(l:amazons/devices/amazons_driver#amazons_driver_alpha)Amazons Driver (Alpha)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -32,7 +32,7 @@
 			"type": "patchouli:text",
 			"anchor": "sigma_amazon_cell_vial",
 			"title": "Amazon Cell Vial (Sigma)",
-			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_sigma)Condorer Core (Sigma)$(/l) and the $(l:amazons/devices/amazons_driver_sigma)Amazons Driver (Sigma)$(/l)"
+			"text": "Used to craft the $(l:amazons/items/condorer_cores#condorer_core_sigma)Condorer Core (Sigma)$(/l) and the $(l:amazons/devices/amazons_driver#amazons_driver_sigma)Amazons Driver (Sigma)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "neo_amazon_cell_vial",
 			"title": "Amazon Cell Vial (Neo)",
-			"text": "Used to craft the $(l:amazons/items/amazon_injectors#amazon_injector_neo)Amazon$(/l) $(l:amazons/items/amazon_injectors#amazon_injector_new_omega)Injec$(/l)$(l:amazons/items/amazon_injectors#amazon_injector_neo_alpha)tors$(/l) and the $(l:amazons/devices/neo_amazons_driver_neo)Neo$(/l) $(l:amazons/devices/neo_amazons_driver_omega)Amazons$(/l) $(l:amazons/devices/neo_amazons_driver_neo_alpha)Drivers$(/l)"
+			"text": "Used to craft the $(l:amazons/items/amazon_injectors#amazon_injector_neo)Amazon$(/l) $(l:amazons/items/amazon_injectors#amazon_injector_new_omega)Injec$(/l)$(l:amazons/items/amazon_injectors#amazon_injector_neo_alpha)tors$(/l) and the $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo$(/l) $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_omega)Amazons$(/l) $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo_alpha)Drivers$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
