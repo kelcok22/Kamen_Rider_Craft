@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.got_boost.desc"
+  },
+  "length_in_seconds": 80,
+  "sound_event": "kamenridercraft:got_boost"
+}

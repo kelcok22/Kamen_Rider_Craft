@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.journey_through_the_decade.desc"
+  },
+  "length_in_seconds": 70,
+  "sound_event": "kamenridercraft:journey_through_the_decade"
+}

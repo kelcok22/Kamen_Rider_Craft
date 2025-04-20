@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.just_live_more.desc"
+  },
+  "length_in_seconds": 74,
+  "sound_event": "kamenridercraft:just_live_more"
+}

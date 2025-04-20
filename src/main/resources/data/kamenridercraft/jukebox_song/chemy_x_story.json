@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.chemy_x_story.desc"
+  },
+  "length_in_seconds": 85,
+  "sound_event": "kamenridercraft:chemy_x_story"
+}

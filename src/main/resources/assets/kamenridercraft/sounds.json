@@ -55,6 +55,118 @@
       }
     ]
   },
+  "almighty": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:almighty",
+        "stream": true
+      }
+    ]
+  },
+  "anything_goes": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:anything_goes",
+        "stream": true
+      }
+    ]
+  },
+  "dragon_road": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:dragon_road",
+        "stream": true
+      }
+    ]
+  },
+  "journey_through_the_decade": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:journey_through_the_decade",
+        "stream": true
+      }
+    ]
+  },
+  "just_live_more": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:just_live_more",
+        "stream": true
+      }
+    ]
+  },
+  "over_quartzer": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:over_quartzer",
+        "stream": true
+      }
+    ]
+  },
+  "kamen_rider_agito": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_agito",
+        "stream": true
+      }
+    ]
+  },
+  "kamen_rider_black_rx": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_black_rx",
+        "stream": true
+      }
+    ]
+  },
+  "kamen_rider_kuuga": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_kuuga",
+        "stream": true
+      }
+    ]
+  },
+  "tatakae_kamen_rider_v3": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:tatakae_kamen_rider_v3",
+        "stream": true
+      }
+    ]
+  },
+  "w_b_x_w_boiled_xtreme": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:w_b_x_w_boiled_xtreme",
+        "stream": true
+      }
+    ]
+  },
+  "got_boost": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:got_boost",
+        "stream": true
+      }
+    ]
+  },
+  "chemy_x_story": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:chemy_x_story",
+        "stream": true
+      }
+    ]
+  },
+  "chemy_x_story_flow": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:chemy_x_story_flow",
+        "stream": true
+      }
+    ]
+  },
   "masked_rider": {
     "sounds": [
       {

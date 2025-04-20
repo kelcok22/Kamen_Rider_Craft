@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.kamen_rider_agito.desc"
+  },
+  "length_in_seconds": 73,
+  "sound_event": "kamenridercraft:kamen_rider_agito"
+}

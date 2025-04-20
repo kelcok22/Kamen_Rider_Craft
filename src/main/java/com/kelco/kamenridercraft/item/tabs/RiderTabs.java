@@ -766,12 +766,26 @@ public class RiderTabs {
                 event.accept( RiderTabs.Misc_TAB_ITEM.get(i));
             }
             event.accept(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC);
+            event.accept(Modded_item_core.TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC);
+            event.accept(Modded_item_core.DRAGON_ROAD_MUSIC_DISC);
             event.accept(Modded_item_core.KAMEN_RIDER_BLACK_MUSIC_DISC);
+            event.accept(Modded_item_core.KAMEN_RIDER_BLACK_RX_MUSIC_DISC);
+            event.accept(Modded_item_core.KAMEN_RIDER_KUUGA_MUSIC_DISC);
+            event.accept(Modded_item_core.KAMEN_RIDER_AGITO_MUSIC_DISC);
             event.accept(Modded_item_core.ALIVE_A_LIFE_MUSIC_DISC);
             event.accept(Modded_item_core.JUSTIFAIZ_MUSIC_DISC);
+            event.accept(Modded_item_core.JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC);
+            event.accept(Modded_item_core.WBX_MUSIC_DISC);
+            event.accept(Modded_item_core.ANYTHING_GOES_MUSIC_DISC);
+            event.accept(Modded_item_core.JUST_LIVE_MORE_MUSIC_DISC);
             event.accept(Modded_item_core.EXCITE_KEY_MUSIC_DISC);
             event.accept(Modded_item_core.BE_THE_ONE_MUSIC_DISC);
+            event.accept(Modded_item_core.OVER_QUARTZER_MUSIC_DISC);
             event.accept(Modded_item_core.REAL_X_EYEZ_MUSIC_DISC);
+            event.accept(Modded_item_core.ALMIGHTY_MUSIC_DISC);
+            event.accept(Modded_item_core.CHEMY_X_STORY_MUSIC_DISC);
+            event.accept(Modded_item_core.CHEMY_X_STORY_FLOW_MUSIC_DISC);
+            event.accept(Modded_item_core.GOT_BOOST_MUSIC_DISC);
 
             event.accept(Modded_item_core.MASKED_RIDER_MUSIC_DISC);
         }

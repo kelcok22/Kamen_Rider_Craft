@@ -12,6 +12,7 @@ import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
@@ -41,6 +42,7 @@ public class Gaim_Rider_Items {
 	public static String[] Can_use_Basic_lockseed = new String[] {"gaim","baron","ryugen","zangetsu","gridon","kurokage"
 			,"bravo","knuckle","bujin_gaim","fifteen","mars","kamuro","jam","kurokage_troopers","idunn","sengoku_duke","baron_black",
 	"saver","maja","proto_gaim","proto_ryugen","proto_baron","proto_gridon","proto_bravo","sylphi","gaim_natsumikan"};
+
 
 	public static String[] Can_use_Energy_lockseed = new String[] {"zangetsu_shin","baron_shin","ryugen_shin","duke","sigurd","marika","kurokage_shin"
 	,"tyrant"};
