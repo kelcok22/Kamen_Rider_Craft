@@ -796,6 +796,7 @@ public class RiderTabs {
             event.accept(Modded_item_core.WBX_MUSIC_DISC);
             event.accept(Modded_item_core.ANYTHING_GOES_MUSIC_DISC);
             event.accept(Modded_item_core.JUST_LIVE_MORE_MUSIC_DISC);
+            event.accept(Modded_item_core.SURPRISE_DRIVE_MUSIC_DISC);
             event.accept(Modded_item_core.EXCITE_KEY_MUSIC_DISC);
             event.accept(Modded_item_core.BE_THE_ONE_MUSIC_DISC);
             event.accept(Modded_item_core.OVER_QUARTZER_MUSIC_DISC);

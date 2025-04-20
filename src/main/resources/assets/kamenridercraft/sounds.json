@@ -151,6 +151,14 @@
       }
     ]
   },
+  "surprise_drive": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:surprise_drive",
+        "stream": true
+      }
+    ]
+  },
   "chemy_x_story": {
     "sounds": [
       {

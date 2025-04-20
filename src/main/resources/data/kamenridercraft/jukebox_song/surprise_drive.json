@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.surprise_drive.desc"
+  },
+  "length_in_seconds": 77,
+  "sound_event": "kamenridercraft:surprise_drive"
+}
