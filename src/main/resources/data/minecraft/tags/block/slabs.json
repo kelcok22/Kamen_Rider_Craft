@@ -1,5 +1,15 @@
 {
   "values": [
-	  "kamenridercraft:wallplate_grate_slab"
+    "kamenridercraft:helheim_slab",
+    "kamenridercraft:wallplate_grate_slab",
+    "kamenridercraft:red_wallplate_slab",
+    "kamenridercraft:grey_wallplate_slab",
+    "kamenridercraft:green_wallplate_slab",
+    "kamenridercraft:light_green_wallplate_slab",
+    "kamenridercraft:black_wallplate_slab",
+    "kamenridercraft:yellow_wallplate_slab",
+    "kamenridercraft:wallplate_slab",
+    "kamenridercraft:white_wallplate_slab",
+    "kamenridercraft:light_green_wallplate_grate_slab"
   ]
 }

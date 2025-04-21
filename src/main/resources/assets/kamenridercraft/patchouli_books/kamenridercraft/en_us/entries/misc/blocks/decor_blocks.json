@@ -546,10 +546,24 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "black_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_wallplate",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "white_wallplate",
 			"link_recipe": true,
 			"item": "kamenridercraft:white_wallplate",
 			"text": "Found inside several structures, notably $(l:fourze/structures/m_bus)M-BUS$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "grey_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:grey_wallplate",
+			"text": "Block is currently unobtainable"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -558,6 +572,27 @@
 			"item": "kamenridercraft:yellow_wallplate",
 			"text": "Block is currently unobtainable",
 			"future_text": "Found inside the Narumi Detective Office"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "red_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:red_wallplate",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "green_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:green_wallplate",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "light_green_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_green_wallplate",
+			"text": "Block is currently unobtainable"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -668,6 +703,102 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "white_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "white_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "grey_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:grey_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "grey_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:grey_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "black_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "black_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "red_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:red_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "red_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:red_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "yellow_wallplate_wall",
 			"link_recipe": true,
 			"item": "kamenridercraft:yellow_wallplate_wall",
@@ -676,11 +807,51 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "light_green_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_green_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "light_green_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_green_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "green_wallplate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:green_wallplate_stairs",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "green_wallplate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:green_wallplate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "yellow_wallplate_grate_stairs",
 			"link_recipe": true,
 			"item": "kamenridercraft:yellow_wallplate_grate_stairs",
 			"text": "Block is currently unobtainable",
 			"future_text": "Found inside the Narumi Detective Office"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "light_green_wallplate_grate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_green_wallplate_grate_slab",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside idk kuzu"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -107,26 +107,71 @@
   "item.kamenridercraft.lets_go_rider_kick_music_disc": "Let's Go!! Rider Kick Music Disc",
   "item.kamenridercraft.lets_go_rider_kick.desc": "HosephHoestar - Let's Go!! Rider Kick",
 
-  "item.kamenridercraft.justifaiz_music_disc": "Justiφ's Music Disc",
-  "item.kamenridercraft.justifaiz.desc": "HosephHoestar - Justiφ's",
+  "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc": "Tatakae! Kamen Rider V3 Music Disc",
+  "item.kamenridercraft.tatakae_kamen_rider_v3.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
+
+  "item.kamenridercraft.dragon_road_music_disc": "Dragon Road Music Disc",
+  "item.kamenridercraft.dragon_road.desc": "HosephHoestar - Dragon Road",
 
   "item.kamenridercraft.kamen_rider_black_music_disc": "Kamen Rider Black Music Disc",
   "item.kamenridercraft.kamen_rider_black.desc": "HosephHoestar - Kamen Rider Black",
 
-  "item.kamenridercraft.excite_music_disc": "EXCITE Music Disc",
-  "item.kamenridercraft.excite.desc": "HosephHoestar - EXCITE",
+  "item.kamenridercraft.kamen_rider_black_rx_music_disc": "Kamen Rider Black RX Music Disc",
+  "item.kamenridercraft.kamen_rider_black_rx.desc": "HosephHoestar - Kamen Rider Black RX",
+
+  "item.kamenridercraft.masked_rider_music_disc": "Masked Rider Music Disc",
+  "item.kamenridercraft.masked_rider.desc": "HosephHoestar - Masked Rider",
+
+  "item.kamenridercraft.kamen_rider_kuuga_music_disc": "Kamen Rider Kuuga! Music Disc",
+  "item.kamenridercraft.kamen_rider_kuuga.desc": "HosephHoestar - Kamen Rider Kuuga!",
+
+  "item.kamenridercraft.kamen_rider_agito_music_disc": "Kamen Rider AGITO Music Disc",
+  "item.kamenridercraft.kamen_rider_agito.desc": "HosephHoestar - Kamen Rider AGITO",
 
   "item.kamenridercraft.alive_a_life_music_disc": "Alive A life Music Disc",
   "item.kamenridercraft.alive_a_life.desc": "HosephHoestar - Alive A life",
 
+  "item.kamenridercraft.justifaiz_music_disc": "Justiφ's Music Disc",
+  "item.kamenridercraft.justifaiz.desc": "HosephHoestar - Justiφ's",
+
+  "item.kamenridercraft.journey_through_the_decade_music_disc": "Journey Through the Decade Music Disc",
+  "item.kamenridercraft.journey_through_the_decade.desc": "HosephHoestar - Journey Through the Decade",
+
+  "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc": "W-B-X ~W-Boiled Extreme~ Music Disc",
+  "item.kamenridercraft.w_b_x_w_boiled_xtreme.desc": "HosephHoestar - W-B-X ~W-Boiled Extreme~",
+
+  "item.kamenridercraft.anything_goes_music_disc": "Anything Goes! Music Disc",
+  "item.kamenridercraft.anything_goes.desc": "HosephHoestar - Anything Goes!",
+
+  "item.kamenridercraft.just_live_more_music_disc": "JUST LIVE MORE Music Disc",
+  "item.kamenridercraft.just_live_more.desc": "HosephHoestar - JUST LIVE MORE",
+
+  "item.kamenridercraft.surprise_drive_music_disc": "SURPRISE-DRIVE Music Disc",
+  "item.kamenridercraft.surprise_drive.desc": "HosephHoestar - SURPRISE-DRIVE",
+
+  "item.kamenridercraft.excite_music_disc": "EXCITE Music Disc",
+  "item.kamenridercraft.excite.desc": "HosephHoestar - EXCITE",
+
   "item.kamenridercraft.be_the_one_music_disc": "Be The One Music Disc",
   "item.kamenridercraft.be_the_one.desc": "HosephHoestar - Be The One",
+
+  "item.kamenridercraft.over_quartzer_music_disc": "Over \"Quartzer\" Music Disc",
+  "item.kamenridercraft.over_quartzer.desc": "HosephHoestar - Over \"Quartzer\"",
 
   "item.kamenridercraft.realxeyez_music_disc": "REAL×EYEZ Music Disc",
   "item.kamenridercraft.realxeyez.desc": "HosephHoestar - REAL×EYEZ",
 
-  "item.kamenridercraft.masked_rider_music_disc": "Masked Rider Music Disc",
-  "item.kamenridercraft.masked_rider.desc": "HosephHoestar - Masked Rider",
+  "item.kamenridercraft.almighty_music_disc": "ALMIGHTY ~ Kamen no Yakusoku Music Disc",
+  "item.kamenridercraft.almighty.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
+
+  "item.kamenridercraft.chemy_x_story_music_disc": "CHEMY×STORY Music Disc",
+  "item.kamenridercraft.chemy_x_story.desc": "HosephHoestar - CHEMY×STORY",
+
+  "item.kamenridercraft.chemy_x_story_flow_music_disc": "CHEMY×STORY (BACK-ON × FLOW ver.) Music Disc",
+  "item.kamenridercraft.chemy_x_story_flow.desc": "HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)",
+
+  "item.kamenridercraft.got_boost_music_disc": "Got Boost? Music Disc",
+  "item.kamenridercraft.got_boost.desc": "HosephHoestar - Got Boost?",
 
   "effect.kamenridercraft.boost":"Boost",
 "effect.kamenridercraft.anti_poison":"Anti Poison",
@@ -6010,6 +6055,7 @@
 "kamenridercraft.name.vram": "Rider: Kamen Rider Vram",
 "item.kamenridercraft.henshin_belt_bitter_gavv": "Henshin Belt Bitter Gavv",
 "kamenridercraft.name.bitter_gavv": "Rider: Kamen Rider Bitter Gavv",
+"item.kamenridercraft.vrastumgear_valen": "Vrastumgear",
 "kamenridercraft.name.bake": "Rider: Kamen Rider Bake",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
@@ -6030,6 +6076,7 @@
 "item.kamenridercraft.caking_gochizo": "Caking Gochizo",
 "item.kamenridercraft.blizzardsorbei_gochizo": "Blizzardsorbei Gochizo",
 "item.kamenridercraft.chocold_gochizo": "Chocold Gochizo",
+"item.kamenridercraft.frappeis_gochizo": "Frappeis Gochizo",
 "item.kamenridercraft.doppudding_gochizo": "Doppudding Gochizo",
 "item.kamenridercraft.purujelly_gochizo": "Purujelly Gochizo",
 "item.kamenridercraft.sparkingummy_gochizo": "Sparkingummy Gochizo",
@@ -6073,6 +6120,7 @@
 "kamenridercraft:caking_gochizo.form": "Form: Caking Form",
 "kamenridercraft:blizzardsorbei_gochizo.form": "Form: Blizzardsorbei Form",
 "kamenridercraft:chocold_gochizo.form": "Form: Chocold Form",
+"kamenridercraft:frappeis_gochizo.form": "Form: Frappe Custom",
 "kamenridercraft:doppudding_gochizo.form": "Form: Pudding Custom",
 "kamenridercraft:purujelly_gochizo.form": "Form: Jelly Custom",
 "kamenridercraft:sparkingummy_gochizo.form": "Form: Sparkingummy Form",
@@ -6847,7 +6895,7 @@
   "block.kamenridercraft.green_wallplate_slab": "Green Wallplate Slab",
   "block.kamenridercraft.light_green_wallplate_slab": "Light Green Wallplate Slab",
   "block.kamenridercraft.black_wallplate_slab": "Black Wallplate Slab",
-  "block.kamenridercraft.yellow_wallplate_slab": "Red Wallplate Slab",
+  "block.kamenridercraft.yellow_wallplate_slab": "Yellow Wallplate Slab",
   "block.kamenridercraft.wallplate_slab": "Wallplate Slab",
   "block.kamenridercraft.white_wallplate_slab": "White Wallplate Slab",
   "block.kamenridercraft.red_wallplate_stairs": "Red Wallplate Stairs",
@@ -6855,7 +6903,7 @@
   "block.kamenridercraft.green_wallplate_stairs": "Green Wallplate Stairs",
   "block.kamenridercraft.light_green_wallplate_stairs": "Light Green Wallplate Stairs",
   "block.kamenridercraft.black_wallplate_stairs": "Black Wallplate Stairs",
-  "block.kamenridercraft.yellow_wallplate_stairs": "Red Wallplate Stairs",
+  "block.kamenridercraft.yellow_wallplate_stairs": "Yellow Wallplate Stairs",
   "block.kamenridercraft.wallplate_stairs": "Wallplate Stairs",
   "block.kamenridercraft.white_wallplate_stairs": "White Wallplate Stairs",
   "block.kamenridercraft.light_green_wallplate_grate_slab": "Light Green Wallplate Grate Slab",

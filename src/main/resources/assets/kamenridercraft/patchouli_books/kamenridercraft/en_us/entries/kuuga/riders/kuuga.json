@@ -160,6 +160,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "ultimate_dark_eye",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate_black_eyes\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ultimate Form (Dark Eye)",
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_ultimate_black_eyes)Kuuga Ultimate Black Eyes Amadam that still needs lang$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kuuga",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "rising_ultimate",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"scale": -1,
@@ -171,6 +185,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kuuga",
 			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(li)Kamen Rider Wizard (2012, TV show)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed V$(li)Resistance IV$(li)Night Vision$(li)Jump Boost V$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_ultimate_dark_eye",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate_black_eyes\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Rising Ultimate Form (Dark Eye)",
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate_black_eyes)Kuuga Rising Ultimate Black Eyes Amadam that needs lang too ONORE KELCOOOOOOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kuuga",
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed V$(li)Resistance IV$(li)Night Vision$(li)Jump Boost V$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
