@@ -121,6 +121,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "kuuga_ultimate_black_eyes",
+			"future_title": "Kuuga Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#ultimate_dark_eye)Ultimate Form (Dark Eye)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_ultimate_black_eyes",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "kuuga_rising_ultimate",
 			"title": "Kuuga Rising Ultimate Amadam",
 			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(li)Kamen Rider Wizard (2012, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_ultimate)Rising Ultimate Form$(/l)"
@@ -129,6 +142,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_ultimate"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_rising_ultimate_black_eyes",
+			"future_title": "Kuuga Rising Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_ultimate_dark_eye)Rising Ultimate Form (Dark Eye)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_rising_ultimate_black_eyes",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		},
 		{
 			"type": "patchouli:text",
