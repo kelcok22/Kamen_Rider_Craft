@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:durendal",
-			"text": "Summoned from a $(l:misc/boss_blocks/durendal_boss_block)Durendal Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#durendal_boss_block)Durendal Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

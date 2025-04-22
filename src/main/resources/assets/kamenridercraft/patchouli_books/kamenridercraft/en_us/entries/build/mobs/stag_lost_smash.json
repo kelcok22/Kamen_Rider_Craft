@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:stag_lost_smash",
-			"text": "Summoned from a $(l:misc/boss_blocks/hokuto_trio_boss_block)Hokuto Trio Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hokuto_trio_boss_block)Hokuto Trio Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

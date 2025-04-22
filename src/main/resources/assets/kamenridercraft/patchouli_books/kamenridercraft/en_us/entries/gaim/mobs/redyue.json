@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:redyue",
-			"text": "Summoned from a $(l:misc/boss_blocks/redyue_boss_block)Redyue Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#redyue_boss_block)Redyue Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

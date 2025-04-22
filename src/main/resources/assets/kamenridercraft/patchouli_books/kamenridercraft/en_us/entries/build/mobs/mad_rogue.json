@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:mad_rogue",
-			"text": "Summoned from a $(l:misc/boss_blocks/mad_rogue_boss_block)Mad Rogue Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#mad_rogue_boss_block)Mad Rogue Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

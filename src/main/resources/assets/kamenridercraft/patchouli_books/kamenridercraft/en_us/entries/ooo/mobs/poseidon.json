@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:poseidon",
-			"text": "Summoned from a $(l:misc/boss_blocks/poseidon_boss_block)Poseidon Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#poseidon_boss_block)Poseidon Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

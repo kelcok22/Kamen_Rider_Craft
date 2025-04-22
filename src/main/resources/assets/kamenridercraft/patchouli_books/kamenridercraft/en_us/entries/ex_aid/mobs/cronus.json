@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:cronus",
-			"text": "Summoned from a $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

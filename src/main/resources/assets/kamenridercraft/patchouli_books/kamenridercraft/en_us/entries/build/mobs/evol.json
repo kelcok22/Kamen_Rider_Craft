@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:evol",
-			"text": "Summoned from an $(l:misc/boss_blocks/evol_boss_block)Evol Boss Block$(/l)"
+			"text": "Summoned from an $(l:misc/blocks/boss_blocks#evol_boss_block)Evol Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

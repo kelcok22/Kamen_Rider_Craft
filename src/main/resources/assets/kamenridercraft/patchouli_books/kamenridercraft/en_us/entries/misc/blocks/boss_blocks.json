@@ -1,0 +1,180 @@
+{
+	"name": "Boss Blocks",
+	"icon": "kamenridercraft:gaoh_boss_block",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "These blocks will spawn a boss when mined by a player. Using a silk touch pickaxe will allow you to keep the blocks after breaking."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "gaoh_boss_block",
+			"item": "kamenridercraft:gaoh_boss_block",
+			"text": "Found inside a $(l:den_o/structures/gaohliner)GaohLiner$(/l)$(br2)Mine this block to summon $(l:den_o/mobs/gaoh)Kamen Rider Gaoh$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "poseidon_boss_block",
+			"recipe": "kamenridercraft:ooo/poseidon_boss_block",
+			"text": "Mine this block to summon $(l:ooo/mobs/poseidon)Kamen Rider Poseidon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "core_boss_block",
+			"item": "kamenridercraft:core_boss_block",
+			"text": "Found inside the $(l:w/structures/earths_core)Earth's Core$(/l)$(br2)Mine this block to summon $(l:ooo/mobs/core)Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "powered_up_core_boss_block",
+			"recipe": "kamenridercraft:ooo/powered_up_core_boss_block",
+			"text": "Mine this block to summon $(l:ooo/mobs/powered_up_core)Powered Up Kamen Rider Core$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "ancient_ooo_boss_block",
+			"recipe": "kamenridercraft:ooo/ancient_ooo_boss_block",
+			"text": "Mine this block to summon $(l:ooo/mobs/ancient_ooo)Ancient OOO$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "goda_boss_block",
+			"recipe": "kamenridercraft:ooo/goda_boss_block",
+			"text": "Mine this block to summon $(l:ooo/mobs/goda)Kamen Rider Goda$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "super_gingaoh_boss_block",
+			"recipe": "kamenridercraft:fourze/super_gingaoh_boss_block",
+			"text": "Mine this block to summon $(l:fourze/mobs/super_gingaoh)Super GingaOh$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "wiseman_boss_block",
+			"recipe": "kamenridercraft:wizard/wiseman_boss_block",
+			"text": "Mine this block to summon $(l:wizard/mobs/wiseman)Kamen Rider Wiseman$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "rosyuo_boss_block",
+			"item": "kamenridercraft:rosyuo_boss_block",
+			"text": "Found inside $(l:gaim/structures/rosyuo_helheim_city)Rosyuo's Helheim City$(/l)$(br2)Mine this block to summon $(l:gaim/mobs/rosyuo)Rosyuo$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "redyue_boss_block",
+			"item": "kamenridercraft:redyue_boss_block",
+			"text": "Found inside $(l:gaim/structures/redyue_helheim_city)Redyue's Ruins$(/l)$(br2)Mine this block to summon $(l:gaim/mobs/redyue)Redyue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "demushu_boss_block",
+			"item": "kamenridercraft:demushu_boss_block",
+			"text": "Found inside $(l:gaim/structures/demushu_helheim_city)Demushu's Cave$(/l)$(br2)Mine this block to summon $(l:gaim/mobs/demushu)Demushu$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "lord_baron_boss_block",
+			"recipe": "kamenridercraft:gaim/lord_baron_boss_block",
+			"text": "Mine this block to summon $(l:gaim/mobs/lord_baron)Lord Baron$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cronus_boss_block",
+			"recipe": "kamenridercraft:exaid/cronus_block",
+			"text": "Mine this block to summon $(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "night_rogue_boss_block",
+			"item": "kamenridercraft:night_rogue_boss_block",
+			"text": "Found inside a $(l:build/structures/rogue_base)Faust Base$(/l)$(br2)Mine this block to summon $(l:build/mobs/night_rogue)Night Rogue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "hokuto_trio_boss_block",
+			"item": "kamenridercraft:hokuto_trio_boss_block",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon the $(l:build/mobs/stag_lost_smash)Kuwagata,$(/l) $(l:build/mobs/owl_lost_smash)Fukuro,$(/l) and $(l:build/mobs/castle_lost_smash)Castle Lost Smashes$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "hell_bros_boss_block",
+			"item": "kamenridercraft:hell_bros_boss_block",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon $(l:build/mobs/engine_bros)Engine Bros$(/l) and $(l:build/mobs/remocon_bros)Remocon Bros$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "mad_rogue_boss_block",
+			"item": "kamenridercraft:mad_rogue_boss_block",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon $(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "evol_boss_block",
+			"item": "kamenridercraft:evol_boss_block",
+			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon $(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "woz_boss_block",
+			"recipe": "kamenridercraft:zi_o/woz_boss_block",
+			"text": "Mine this block to summon $(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "horobi_boss_block",
+			"item": "kamenridercraft:horobi_boss_block",
+			"text": "Found inside $(l:zero_one/structures/daybreak_town)Daybreak Town$(/l)$(br2)Mine this block to summon $(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "ikazuchi_boss_block",
+			"item": "kamenridercraft:ikazuchi_boss_block",
+			"text": "Drops from:$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)$(br2)Mine this block to summon $(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "ark_one_boss_block",
+			"recipe": "kamenridercraft:zero_one/ark_one_boss_block",
+			"text": "Mine this block to summon $(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "sabela_boss_block",
+			"recipe": "kamenridercraft:saber/sabela_boss_block",
+			"text": "Mine this block to summon $(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "durendal_boss_block",
+			"recipe": "kamenridercraft:saber/durendal_boss_block",
+			"text": "Mine this block to summon $(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "solomon_boss_block",
+			"recipe": "kamenridercraft:saber/solomon_boss_block",
+			"text": "Mine this block to summon $(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "storious_boss_block",
+			"recipe": "kamenridercraft:saber/storious_boss_block",
+			"text": "Mine this block to summon $(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)"
+		}
+	]
+}

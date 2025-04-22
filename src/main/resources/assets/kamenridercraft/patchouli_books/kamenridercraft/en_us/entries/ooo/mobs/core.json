@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:core",
-			"text": "Summoned from a $(l:misc/boss_blocks/core_boss_block)Core Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#core_boss_block)Core Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",
