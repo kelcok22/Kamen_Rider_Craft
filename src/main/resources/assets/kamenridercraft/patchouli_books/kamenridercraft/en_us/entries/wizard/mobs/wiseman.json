@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:wiseman",
-			"text": "Summoned from a $(l:misc/boss_blocks/wiseman_boss_block)Wiseman Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#wiseman_boss_block)Wiseman Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

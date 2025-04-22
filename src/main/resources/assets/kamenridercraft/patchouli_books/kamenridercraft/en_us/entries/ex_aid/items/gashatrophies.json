@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "drago_knight_hunter_z_gasha_trophy",
 			"title": "Drago Knight Hunter Z Gasha Trophy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/boss_blocks#cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "perfect_puzzle_gasha_trophy",
 			"title": "Perfect Puzzle Gasha Trophy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/boss_blocks#cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
 			"type": "patchouli:text",
 			"anchor": "knockout_fighter_gasha_trophy",
 			"title": "Knock Out Fighter Gasha Trophy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/boss_blocks#cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -162,7 +162,7 @@
 			"type": "patchouli:text",
 			"anchor": "toki_meki_crisis_gasha_trophy",
 			"title": "Toki Meki Crisis Gasha Trophy",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/cronus_boss_block)Cronus Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used to craft the $(l:misc/blocks/boss_blocks#cronus_boss_block)Cronus Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

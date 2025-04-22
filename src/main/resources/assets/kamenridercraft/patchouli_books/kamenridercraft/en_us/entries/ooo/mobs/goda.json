@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:goda",
-			"text": "Summoned from a $(l:misc/boss_blocks/goda_boss_block)Goda Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#goda_boss_block)Goda Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

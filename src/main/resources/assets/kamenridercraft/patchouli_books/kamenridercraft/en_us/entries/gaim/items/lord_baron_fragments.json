@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "lord_baron_fragment",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft the $(l:misc/boss_blocks/lord_baron_boss_block)Lord Baron Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used to craft the $(l:misc/blocks/boss_blocks#lord_baron_boss_block)Lord Baron Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

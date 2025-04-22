@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Rosyuo's Helheim City",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/boss_blocks/rosyuo_boss_block)Rosyuo Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/blocks/boss_blocks#rosyuo_boss_block)Rosyuo Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:image",

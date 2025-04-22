@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ancient_ooo",
-			"text": "Summoned from a $(l:misc/boss_blocks/ancient_ooo_boss_block)Ancient OOO Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#ancient_ooo_boss_block)Ancient OOO Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:engine_bros",
-			"text": "Summoned from a $(l:misc/boss_blocks/hell_bros_boss_block)Hell Bros. Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#hell_bros_boss_block)Hell Bros. Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

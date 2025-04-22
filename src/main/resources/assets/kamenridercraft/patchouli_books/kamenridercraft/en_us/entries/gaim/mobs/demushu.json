@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:demushu",
-			"text": "Summoned from a $(l:misc/boss_blocks/demushu_boss_block)Demushu Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#demushu_boss_block)Demushu Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

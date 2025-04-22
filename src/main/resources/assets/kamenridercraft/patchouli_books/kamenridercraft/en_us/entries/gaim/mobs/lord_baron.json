@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:lord_baron",
-			"text": "Summoned from a $(l:misc/boss_blocks/lord_baron_boss_block)Lord Baron Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#lord_baron_boss_block)Lord Baron Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",

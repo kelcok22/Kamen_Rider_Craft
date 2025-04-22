@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:super_gingaoh",
-			"text": "Summoned from a $(l:misc/boss_blocks/super_gingaoh_boss_block)Super GingaOh Boss Block$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#super_gingaoh_boss_block)Super GingaOh Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",
