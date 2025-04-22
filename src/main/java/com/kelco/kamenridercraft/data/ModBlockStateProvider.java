@@ -44,6 +44,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(Rider_Blocks.KURUMA_BRICK.get());
         simpleBlock(Rider_Blocks.YELLOW_WALLPLATE.get());
         simpleBlock(Rider_Blocks.CHECKERED_TILE.get());
+        simpleBlock(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
+        simpleBlock(Rider_Blocks.LIME_CHECKERED_TILE.get());
 
         stairsBlock(Rider_Blocks.HELHEIM_STAIRS.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         stairsBlock(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
@@ -71,9 +73,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         fenceBlock(Rider_Blocks.HELHEIM_FENCE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         fenceGateBlock(Rider_Blocks.HELHEIM_FENCE_GATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
+        fenceBlock(Rider_Blocks.WHITE_FENCE.get(), blockTexture(Rider_Blocks.PLANKS_WHITE.get()));
 
         doorBlockWithRenderType(Rider_Blocks.HELHEIM_DOOR.get(),modLoc("block/helheim_door_bottom"),modLoc("block/helheim_door_top"), "cutout");
         trapdoorBlockWithRenderType(Rider_Blocks.HELHEIM_TRAPDOOR.get(),modLoc("block/helheim_trapdoor"),true,"cutout");
+        doorBlockWithRenderType(Rider_Blocks.WONDERWOOD_DOOR.get(),modLoc("block/wonderwood_door_bottom"),modLoc("block/wonderwood_door_top"), "cutout");
 
         signBlock(((StandingSignBlock) Rider_Blocks.HELHEIM_SIGN.get()), ((WallSignBlock) Rider_Blocks.HELHEIM_WALL_SIGN.get()),
                 blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
@@ -88,6 +92,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.CORNERSTORE_SIGN);
         blockItem(Rider_Blocks.YELLOW_WALLPLATE);
         blockItem(Rider_Blocks.CHECKERED_TILE);
+        blockItem(Rider_Blocks.YELLOW_CHECKERED_TILE);
+        blockItem(Rider_Blocks.LIME_CHECKERED_TILE);
         blockItem(Rider_Blocks.VERTICAL_PANEL);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
