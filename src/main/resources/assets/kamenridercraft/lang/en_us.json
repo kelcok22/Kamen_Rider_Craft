@@ -6873,6 +6873,10 @@
   "item.kamenridercraft.helheim_hanging_sign": "Helheim Hanging Sign",
   "item.kamenridercraft.helheim_wall_hanging_sign": "Helheim Wall Hanging Sign",
 
+  "block.kamenridercraft.wonderwood_door": "Wonderwood Door",
+
+  "block.kamenridercraft.white_fence": "White Fence",
+
   "block.kamenridercraft.kuruma_brick": "Kuruma Senter Brick",
   "block.kamenridercraft.drive_pit_ladder": "Drive Pit Ladder",
 
@@ -6912,6 +6916,8 @@
 "block.kamenridercraft.wooden_panel2": "Light Wood Panel Block",
   "block.kamenridercraft.vertical_panel": "Vertical Panel",
   "block.kamenridercraft.checkered_tile": "Checkered Tiles",
+  "block.kamenridercraft.yellow_checkered_tile": "Yellow Checkered Tiles",
+  "block.kamenridercraft.lime_checkered_tile": "Lime Checkered Tiles",
 "block.kamenridercraft.ichigo_chair": "Ichigo Chair",
   "block.kamenridercraft.red_ichigo_chair": "Aka-Rider Chair",
   "block.kamenridercraft.glass_door": "Glass Door",

@@ -42,6 +42,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.HELHEIM_STAIRS.get());
         dropSelf(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get());
         dropSelf(Rider_Blocks.HELHEIM_FENCE.get());
+        dropSelf(Rider_Blocks.WHITE_FENCE.get());
         dropSelf(Rider_Blocks.HELHEIM_FENCE_GATE.get());
         dropSelf(Rider_Blocks.HELHEIM_TRAPDOOR.get());
         dropSelf(Rider_Blocks.CORNERSTORE_SIGN.get());
@@ -59,6 +60,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.RED_WALLPLATE_STAIRS.get());
         dropSelf(Rider_Blocks.WALLPLATE_STAIRS.get());
         dropSelf(Rider_Blocks.CHECKERED_TILE.get());
+        dropSelf(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
+        dropSelf(Rider_Blocks.LIME_CHECKERED_TILE.get());
         dropSelf(Rider_Blocks.VERTICAL_PANEL.get());
         add(Rider_Blocks.HELHEIM_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));
@@ -68,6 +71,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(Rider_Blocks.RABBIT_HUTCH_DOOR.get()));
         add(Rider_Blocks.GLASS_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.GLASS_DOOR.get()));
+        add(Rider_Blocks.WONDERWOOD_DOOR.get(),
+                block -> createDoorTable(Rider_Blocks.WONDERWOOD_DOOR.get()));
 
         add(Rider_Blocks.HELHEIM_SIGN.get(),
                 block -> createSingleItemTable(Modded_item_core.HELHEIM_SIGN_ITEM.get()));

@@ -51,6 +51,15 @@
     {
       "weight": 3,
       "element": {
+        "location": "kamenridercraft:city/dense_building/cornerpark1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
         "location": "kamenridercraft:city/dense_building/cornershop2",
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -97,6 +106,24 @@
       "weight": 3,
       "element": {
         "location": "kamenridercraft:city/dense_building/shop2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "kamenridercraft:city/dense_building/shop3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:city/dense_building/narumi_detective_agency",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
