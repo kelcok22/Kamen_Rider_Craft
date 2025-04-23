@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:dragon_sclash_jelly",
-			"text": "Obtained by using the $(l:build/items/fullbottles#dragon_full_bottle)Dragon Fullbottle$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)"
+			"text": "Obtained by using the $(l:build/items/fullbottles#dragon_full_bottle)Dragon Fullbottle$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_solidifier)Fullbottle Solidifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:robot_sclash_jelly",
 			"title": " ",
-			"text": "Obtained by using the $(l:build/items/fullbottles#robot_full_bottle)Robot Fullbottle$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)"
+			"text": "Obtained by using the $(l:build/items/fullbottles#robot_full_bottle)Robot Fullbottle$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_solidifier)Fullbottle Solidifier$(/l)"
 		}
 	]
 }

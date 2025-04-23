@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used as the base item for the G-System items$(br2)Used on the $(l:misc/blocks/g_chip_programer)G-Chip Programmer$(/l) to obtain G-Chips"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used as the base item for the G-System items$(br2)Used on the $(l:misc/blocks/machine_blocks#g_chip_programer)G-Chip Programmer$(/l) to obtain G-Chips"
 		},
 		{
 			"type": "patchouli:crafting",

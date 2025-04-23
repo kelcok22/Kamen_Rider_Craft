@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rex_vistamp",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -48,7 +48,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:volcano_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -74,7 +74,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:thunder_gale_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#rolling_vistamp)Rolling Vistamp$(/l) in your inventory$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l) while having the $(l:revice/items/vistamps#rolling_vistamp)Rolling Vistamp$(/l) in your inventory$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -131,7 +131,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:eagle_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -144,7 +144,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mammoth_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -157,7 +157,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:megalodon_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/giff_junior)Giff Junior$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -170,7 +170,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ptera_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -183,7 +183,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lion_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -196,7 +196,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jackal_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -209,7 +209,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kong_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -222,7 +222,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamakiri_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +235,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:brachio_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -248,7 +248,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neo_batta_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -261,7 +261,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kangaroo_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -326,7 +326,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crow_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -376,7 +376,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:spider_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -428,7 +428,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:batta_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -441,7 +441,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mogura_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -454,7 +454,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scorpion_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -467,7 +467,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:anomalocaris_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)$(br2)Drops from:$(li)$(l:revice/mobs/anomalocaris_deadman)Anomalocaris Deadman$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -480,7 +480,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cobra_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -493,7 +493,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kujaku_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -506,7 +506,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:turtle_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -519,7 +519,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hashibiroko_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -532,7 +532,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tricera_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -595,7 +595,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crocodile_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -608,7 +608,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:komodo_dragon_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -660,7 +660,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:queen_bee_vistamp",
 			"title": " ",
-			"text": "Obtained by using a $(l:revice/items/vistamps#proto_queen_bee_vistamp)Proto Queen Bee Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_queen_bee_vistamp)Proto Queen Bee Vistamp$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -719,7 +719,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kraken_vistamp",
 			"title": " ",
-			"text": "Obtained by using a $(l:revice/items/vistamps#daiouika_vistamp)Daiouika Proto Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using a $(l:revice/items/vistamps#daiouika_vistamp)Daiouika Proto Vistamp$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -771,7 +771,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kajiki_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -784,7 +784,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hedgehog_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -797,7 +797,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:king_crab_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -810,7 +810,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kurosai_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -823,7 +823,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:octopus_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -836,7 +836,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:oomukade_vistamp",
 			"title": " ",
-			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -875,7 +875,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:planarian_vistamp",
 			"title": " ",
-			"text": "Obtained by using a $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -888,7 +888,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chameleon_vistamp",
 			"title": " ",
-			"text": "Obtained by using a $(l:revice/items/vistamps#proto_chameleon_vistamp)Proto Chameleon Vistamp$(/l) on the $(l:misc/blocks/vistamp_bar)Vistamp Bar$(/l)"
+			"text": "Obtained by using a $(l:revice/items/vistamps#proto_chameleon_vistamp)Proto Chameleon Vistamp$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",

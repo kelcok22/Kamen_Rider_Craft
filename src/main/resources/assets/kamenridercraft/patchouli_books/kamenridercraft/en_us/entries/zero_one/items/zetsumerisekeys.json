@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:awaking_arsino_zetsumerisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer"
 		},
 		{
 			"type": "patchouli:text",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used on the $(l:misc/blocks/sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) to obtain Wonder World Story Wonder Ride Books"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used on the $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) to obtain Wonder World Story Wonder Ride Books"
 		},
 		{
 			"type": "patchouli:spotlight",

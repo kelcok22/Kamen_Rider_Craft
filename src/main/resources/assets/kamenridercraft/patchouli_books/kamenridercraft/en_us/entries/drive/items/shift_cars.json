@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:speedshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)$(br2)Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wildshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:technicshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:deadheat_car",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -100,7 +100,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tridoronshift_core",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -146,7 +146,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nextshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -159,7 +159,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:specialshift",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -194,7 +194,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:maxflare",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -207,7 +207,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:funkyspike",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -220,7 +220,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:midnightshadow",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -233,7 +233,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:justice_hunter",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -246,7 +246,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dream_vegas",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -259,7 +259,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dimension_cab",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -272,7 +272,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:massive_monster",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -285,7 +285,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:spin_mixer",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -298,7 +298,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rumble_dump",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -311,7 +311,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mad_doctor",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -324,7 +324,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hooking_wrecker",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -337,7 +337,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:burning_solar",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -350,7 +350,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:colorful_commercial",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -363,7 +363,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fire_braver",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -376,7 +376,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rolling_gravity",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -389,7 +389,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:deco_traveller",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -402,7 +402,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:road_winter",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -415,7 +415,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:amazing_circus",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -428,7 +428,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mantarn_f01",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -441,7 +441,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jacky_f02",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -454,7 +454,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sparner_f03",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/drive_system_car)Drive System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -478,7 +478,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:next_hunter",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -491,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:next_traveller",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -504,7 +504,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:next_builder",
 			"title": " ",
-			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l)"
+			"text": "Obtained by using $(l:drive/items/next_system_car)NEXT System Cars$(/l) on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)"
 		},
 		{
 			"type": "patchouli:text",

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l) to obtain Zero-One's Progrisekeys$(br2)Used on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l) to obtain ZAIA Japan's Progrisekeys"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l) to obtain Zero-One's Progrisekeys$(br2)Used on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l) to obtain ZAIA Japan's Progrisekeys"
 		},
 		{
 			"type": "patchouli:crafting",

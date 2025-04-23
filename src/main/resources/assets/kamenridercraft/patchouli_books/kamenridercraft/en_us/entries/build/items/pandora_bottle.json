@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pandora_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/full_bottle)Empty Bottles$(/l) on the $(l:misc/blocks/pandora_box)Pandora Box$(/l)"
+			"text": "Obtained by using $(l:build/items/full_bottle)Empty Bottles$(/l) on the $(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l)"
 		}
 	]
 }

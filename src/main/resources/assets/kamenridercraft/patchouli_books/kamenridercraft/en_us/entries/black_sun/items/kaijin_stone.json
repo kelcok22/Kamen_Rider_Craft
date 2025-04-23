@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kaijin_stone",
 			"title": " ",
-			"text": "Obtained by using $(l:black_sun/items/creation_king_extract_vial)Creation King Extract Vials$(/l) on the $(l:misc/blocks/kaijin_stone_generator)Kaijin Stone Generator$(/l)"
+			"text": "Obtained by using $(l:black_sun/items/creation_king_extract_vial)Creation King Extract Vials$(/l) on the $(l:misc/blocks/machine_blocks#kaijin_stone_generator)Kaijin Stone Generator$(/l)"
 		}
 	]
 }

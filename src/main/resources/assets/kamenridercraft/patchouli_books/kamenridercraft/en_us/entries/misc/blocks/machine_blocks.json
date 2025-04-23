@@ -1,0 +1,326 @@
+{
+	"name": "Machine Blocks",
+	"icon": "kamenridercraft:amazon_cell_extractor",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Machine blocks can be right-clicked with various materials to obtain different Rider items. These blocks play a key part in obtaining certain items used to craft transformation devices and/or access forms."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Table of contents:$(li)$(l:misc/blocks/machine_blocks#amazon_cell_extractor)Amazon Cell Extractor$(/l)$(li)$(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)$(li)$(l:misc/blocks/machine_blocks#kaijin_stone_generator)Kaijin Stone Generator$(/l)$(li)$(l:misc/blocks/machine_blocks#g_chip_programer)G-Chip Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)$(li)$(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)$(li)$(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l)$(li)$(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(li)$(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)$(li)$(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l)$(li)$(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(li)$(l:misc/blocks/machine_blocks#fullbottle_solidifier)Fullbottle Solidifier$(/l)$(li)$(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)$(li)$(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)$(li)$(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(li)$(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_cell_extractor",
+			"title": "Amazon Cell Extractor",
+			"text": "Use $(l:misc/items/empty_vial)Empty Vials$(/l) on this block to obtain $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazon_cell_extractor"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_cell_mutator",
+			"title": "Amazon Cell Mutator",
+			"text": "Use $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on this block to obtain Amazon Cell variants$(br2)Drops:$(li)$(l:amazons/items/amazon_cell_vials#omega_amazon_cell_vial)Amazon Cell Vial (Omega)$(/l) (38.5%)$(li)$(l:amazons/items/amazon_cell_vials#alpha_amazon_cell_vial)Amazon Cell Vial (Alpha)$(/l) (38.5%)$(li)$(l:amazons/items/amazon_cell_vials#sigma_amazon_cell_vial)Amazon Cell Vial (Sigma)$(/l) (15.4%)$(li)$(l:amazons/items/amazon_cell_vials#neo_amazon_cell_vial)Amazon Cell Vial (Neo)$(/l) (7.7%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazon_cell_mutator"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kaijin_stone_generator",
+			"title": "Kaijin Stone Generator",
+			"text": "Use $(l:black_sun/items/creation_king_extract_vial)Creation King Extract Vials$(/l) on this block to obtain Kaijin Stones$(br2)Drops:$(li)$(l:black_sun/items/kaijin_stone)Kaijin Stone$(/l) (54.1%)$(li)$(l:black_sun/items/kingstones#king_stone_sun)Sun Kingstone$(/l) (27%)$(li)$(l:black_sun/items/kingstones#glowing_king_stone_sun)Glowing Sun Kingstone$(/l) (2.7%)$(li)$(l:black_sun/items/kingstones#king_stone_moon)Moon Kingstone$(/l) (13.5%)$(li)$(l:black_sun/items/kingstones#glowing_king_stone_moon)Glowing Moon Kingstone$(/l) (2.7%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:black_sun/kaijin_stone_generator"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "g_chip_programer",
+			"title": "G-Chip Programmer",
+			"text": "Use $(l:agito/items/g3core)Blank G-System Chips$(/l) on this block to obtain G-Chips$(br2)Drops:$(li)$(l:agito/items/g_system_chips#g3)G3 Chip$(/l) (27.8%)$(li)$(l:agito/items/g_system_chips#g3x)G3-X Chip$(/l) (8.3%)$(li)$(l:agito/items/g_system_chips#g3mild)G3 Mild Chip$(/l) (5.6%)$(li)$(l:agito/items/g_system_chips#g4)G4 Chip$(/l) (2.8%)$(li)$(l:agito/items/g_system_chips#g1)G1 Chip$(/l) (27.8%)$(li)$(l:agito/items/g_system_chips#v1)V1 Chip$(/l) (27.8%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/g_chip_programer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_memory_refiner",
+			"title": "Gaia Memory Refiner",
+			"text": "Use $(l:w/items/unrefined_memory_s)unrefined$(/l) $(l:w/items/unrefined_memory_g)Memories$(/l) on this block to obtain Gaia Memories$(br2)Drops with an $(l:w/items/unrefined_memory_s)Unrefined Memory (Silver)$(/l):$(li)$(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) (31.7%)$(li)$(l:w/items/gaia_memories#heat_memory)Heat Memory$(/l) (15.9%)$(li)$(l:w/items/gaia_memories#luna_memory)Luna Memory$(/l) (15.9%)$(li)$(l:w/items/gaia_memories#skull_memory)Skull Memory$(/l) (7.9%)$(li)$(l:w/items/gaia_memories#eternal_memory)Eternal Memory$(/l) (7.9%)$(li)$(l:w/items/gaia_memories#prism_memory)Prism Memory$(/l) (7.9%)$(li)$(l:w/items/gaia_memories#engine_memory)Engine Memory$(/l) (7.9%)$(li)$(l:w/items/gaia_memories#bomb_memory)Bomb Memory$(/l) (1.6%)$(li)$(l:w/items/gaia_memories#fang_memory_un)Unfinished Fang Memory$(/l) (7.9%)$(li)$(l:w/items/gaia_memories#xtreme_memory_s)Xtreme Memory (Silver)$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_memory_refiner",
+			"text": "Drops with an $(l:w/items/unrefined_memory_g)Unrefined Memory (Gold)$(/l):$(li)$(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l) (41.7%)$(li)$(l:w/items/gaia_memories#metal_memory)Metal Memory$(/l) (20.8%)$(li)$(l:w/items/gaia_memories#trigger_memory)Trigger Memory$(/l) (20.8%)$(li)$(l:w/items/gaia_memories#accel_memory)Accel Memory$(/l) (10.4%)$(li)$(l:w/items/gaia_memories#trial_memory_un)Unfinished Trial Memory$(/l) (4.2%)$(li)$(l:w/items/gaia_memories#xtreme_memory_g)Xtreme Memory (Gold)$(/l) (2.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops with an $(l:w/items/unrefined_memory_t2)Unrefined Memory (T2)$(/l):$(li)$(l:w/items/gaia_memories#accel_t2_memory)Accel T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#bird_t2_memory)Bird T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#cyclone_t2_memory)Cyclone T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#dummy_t2_memory)Dummy T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#eternal_t2_memory)Eternal T2 Memory$(/l) (14.7%)$(li)$(l:w/items/gaia_memories#fang_t2_memory)Fang T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#gene_t2_memory)Gene T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#heat_t2_memory)Heat T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#iceage_t2_memory)Ice Age T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#joker_t2_memory)Joker T2 Memory$(/l) (14.7%)$(li)$(l:w/items/gaia_memories#key_t2_memory)Key T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#luna_t2_memory)Luna T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#metal_t2_memory)Metal T2 Memory$(/l) (2.9%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:w/items/gaia_memories#nasca_t2_memory)Nasca T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#ocean_t2_memory)Ocean T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#puppeteer_t2_memory)Puppeteer T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#queen_t2_memory)Queen T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#rocket_t2_memory)Rocket T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#skull_t2_memory)Skull T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#trigger_t2_memory)Trigger T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#unicorn_t2_memory)Unicorn T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#violence_t2_memory)Violence T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#weather_t2_memory)Weather T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#xtreme_t2_memory)Xtreme T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#yesterday_t2_memory)Yesterday T2 Memory$(/l) (2.9%)$(li)$(l:w/items/gaia_memories#zone_t2_memory)Zone T2 Memory$(/l) (2.9%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cell_medal_programer",
+			"title": "Cell Medal Programmer",
+			"text": "Use $(l:ooo/items/cellmedal)normal Cell Medals$(/l) on this block to obtain Birth's Cell Medals$(br2)Drops with a $(l:ooo/items/cellmedal)Cell Medal$(/l):$(li)$(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth Core (Powered)$(/l) (14.3%)$(li)$(l:ooo/items/birth_cell_medals#birth_core_breast_cannon)Birth Cell Medal (Breast Cannon)$(/l) (14.3%)$(li)$(l:ooo/items/birth_cell_medals#birth_core_crane_arm)Birth Cell Medal (Crane Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth Cell Medal (Drill Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_cell_medals#birth_core_shovel_arm)Birth Cell Medal (Shovel Arm)$(/l) (14.3%)$(li)$(l:ooo/items/birth_cell_medals#birth_core_catepillar_leg)Birth Cell Medal (Caterpillar Leg)$(/l) (14.3%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/cell_medal_programer",
+			"text": "$(li)$(l:ooo/items/birth_cell_medals#birth_core_cutter_wing)Birth Cell Medal (Cutter Wing)$(/l) (14.3%)$(br2)Drops with packed ice:$(li)$(l:ooo/items/core_medals#seiuchi_medal)Seiuchi Core Medal$(/l) (33.3%)$(li)$(l:ooo/items/core_medals#shirokuma_medal)Shirokuma Core Medal$(/l) (33.3%)$(li)$(l:ooo/items/core_medals#penguin_medal)Penguin Core Medal$(/l) (33.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "astroswitch_programmer",
+			"title": "Astroswitch Programmer",
+			"text": "Found inside a $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l) or $(l:fourze/structures/m_bus)M-BUS$(/l)$(br2)Use $(l:fourze/items/astroswitch)Blank Switches$(/l) on this block to obtain Astroswitches$(br2)Drops:$(li)$(l:fourze/items/astroswitches#rocket_switch)Rocket Switch$(/l) (5.8%)$(li)$(l:fourze/items/astroswitches#launcher_switch)Launcher Switch$(/l) (5.8%)$(li)$(l:fourze/items/astroswitches#drill_switch)Drill Switch$(/l) (5.8%)$(li)$(l:fourze/items/astroswitches#radar_switch)Radar Switch$(/l) (5.8%)$(li)$(l:fourze/items/astroswitches#magic_hand_switch)Magichand Switch$(/l) (4.4%)$(li)$(l:fourze/items/astroswitches#camera_switch)Camera Switch$(/l) (4.4%)$(li)$(l:fourze/items/astroswitches#parachute_switch)Parachute Switch$(/l) (4.4%)$(li)$(l:fourze/items/astroswitches#chainsaw_switch)Chainsaw Switch$(/l) (4.4%)$(li)$(l:fourze/items/astroswitches#hopping_switch)Hopping Switch$(/l) (4.4%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:astroswitch_programmer",
+			"title": " ",
+			"text": "$(li)$(l:fourze/items/astroswitches#elek_switch)Elek Switch$(/l) (4.4%)$(li)$(l:fourze/items/astroswitches#scissors_switch)Scissors Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#beat_switch)Beat Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#chain_array_switch)Chain Array Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#smoke_switch)Smoke Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#winch_switch)Winch Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#flash_switch)Flash Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#shield_switch)Shield Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#gatling_switch)Gatling Switch$(/l) (2.9%)$(li)$(l:fourze/items/astroswitches#fire_switch)Fire Switch$(/l) (2.9%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:fourze/items/astroswitches#stealth_switch)Stealth Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#hammer_switch)Hammer Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#water_switch)Water Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#medical_switch)Medical Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#pen_switch)Pen Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#wheel_switch)Wheel Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#screw_switch)Screw Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#hand_switch)Hand Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#scoop_switch)Scoop Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#magnet_switch_n)N Magnet Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#magnet_switch_s)S Magnet Switch$(/l) (1.5%)$(li)$(l:fourze/items/astroswitches#freeze_switch)Freeze Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#claw_switch)Claw Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#board_switch)Board Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#giantfoot_switch)Giantfoot Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#aero_switch)Aero Switch$(/l) (0.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:fourze/items/astroswitches#gyro_switch)Gyro Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#net_switch)Net Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#stamper_switch)Stamper Switch$(/l) (0.6%)$(li)$(l:fourze/items/astroswitches#cosmic_switch)Cosmic Switch$(/l) (0.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shift_chassis_assembler",
+			"title": "Shift Chassis Assembler",
+			"text": "Use $(l:drive/items/drive_system_cars)cars$(/l) and $(l:drive/items/next_system_bikes)bikes$(/l) from the Drive System on this block to obtain Shift Cars and Signal Bikes$(br2)Drops with a $(l:drive/items/drive_system_car)Drive System Car$(/l):$(li)$(l:drive/items/shift_cars#speedshift)Shift Speed$(/l) (11.6%)$(li)$(l:drive/items/shift_cars#wildshift)Shift Wild$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#technicshift)Shift Technic$(/l) (3.9%)$(li)$(l:drive/items/shift_cars#deadheat_car)Shift Dead Heat Car$(/l) (2.3%)$(li)$(l:drive/items/shift_cars#tridoronshift_core)Unfinished Shift Tridoron$(/l) (3.9%)$(li)$(l:drive/items/shift_cars#maxflare)Max Flare$(/l) (5.4%)$(li)$(l:drive/items/shift_cars#funkyspike)Funky Spike$(/l) (5.4%)$(li)$(l:drive/items/shift_cars#midnightshadow)Midnight Shadow$(/l) (5.4%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/shift_chassis_assembler",
+			"text": "$(li)$(l:drive/items/shift_cars#justice_hunter)Justice Hunter$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#dream_vegas)Dream Vegas$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#dimension_cab)Dimension Cab$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#massive_monster)Massive Monster$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#spin_mixer)Spin Mixer$(/l) (4.7%)$(li)$(l:drive/items/shift_cars#rumble_dump)Rumble Dump$(/l) (3.9%)$(li)$(l:drive/items/shift_cars#mad_doctor)Mad Doctor$(/l) (3.9%)$(li)$(l:drive/items/shift_cars#hooking_wrecker)Hooking Wrecker$(/l) (3.9%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:drive/items/shift_cars#burning_solar)Burning Solar$(/l) (3.1%)$(li)$(l:drive/items/shift_cars#colorful_commercial)Colorful Commercial$(/l) (3.1%)$(li)$(l:drive/items/shift_cars#fire_braver)Fire Braver$(/l) (3.1%)$(li)$(l:drive/items/shift_cars#rolling_gravity)Rolling Gravity$(/l) (3.1%)$(li)$(l:drive/items/shift_cars#deco_traveller)Deco Traveller$(/l) (3.1%)$(li)$(l:drive/items/shift_cars#road_winter)Road Winter$(/l) (2.3%)$(li)$(l:drive/items/shift_cars#amazing_circus)Amazing Circus$(/l) (2.3%)$(li)$(l:drive/items/shift_cars#mantarn_f01)Mantarn F01$(/l) (0.8%)$(li)$(l:drive/items/shift_cars#jacky_f02)Jacky F02$(/l) (0.8%)$(li)$(l:drive/items/shift_cars#sparner_f03)Sparner F03$(/l) (0.8%)$(br2)Drops with a $(l:drive/items/next_system_bike)NEXT System Bike$(/l):$(li)$(l:drive/items/signal_bikes#deadheat_bike)Shift Dead Heat Bike$(/l) (5.7%)$(li)$(l:drive/items/signal_bikes#signal_mach)Signal Mach$(/l) (28.6%)$(li)$(l:drive/items/signal_bikes#signal_magarl)Signal Magarl$(/l) (14.3%)$(li)$(l:drive/items/signal_bikes#signal_kaksarn)Signal Kaksarn$(/l) (14.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:drive/items/signal_bikes#signal_tomarle)Signal Tomarle$(/l) (14.3%)$(li)$(l:drive/items/signal_bikes#signal_kikern)Signal Kikern$(/l) (14.3%)$(li)$(l:drive/items/signal_bikes#signal_chaser)Signal Chaser$(/l) (8.6%)$(br2)Drops with a $(l:drive/items/next_system_car)NEXT System Car$(/l):$(li)$(l:drive/items/shift_cars#nextshift)Shift Next$(/l) (20%)$(li)$(l:drive/items/shift_cars#specialshift)Shift Special$(/l) (20%)$(li)$(l:drive/items/shift_cars#next_hunter)Shift Next Hunter$(/l) (20%)$(li)$(l:drive/items/shift_cars#next_traveller)Shift Next Traveller$(/l) (20%)$(li)$(l:drive/items/shift_cars#next_builder)Shift Next Builder$(/l) (20%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamecreator",
+			"title": "Game Creator",
+			"text": "Use $(l:ex_aid/items/blank_gashat)unfinished Gashats$(/l) on this block to obtain Rider Gashats$(br2)Drops with an $(l:ex_aid/items/blank_gashat)Unfinished Gashat$(/l):$(li)$(l:ex_aid/items/rider_gashats#mighty_action_x_gashat)Mighty Action X Gashat$(/l) (16.1%)$(li)$(l:ex_aid/items/rider_gashats#taddle_quest_gashat)Taddle Quest Gashat$(/l) (12.1%)$(li)$(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)Bang Bang Shooting Gashat$(/l) (12.1%)$(li)$(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)Bakusou Bike Gashat$(/l) (12.1%)$(li)$(l:ex_aid/items/rider_gashats#gekitotsu_robots_gashat)Gekitotsu Robots Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#doremifa_beat_gashat)DoReMiFa Beat Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#jet_combat_gashat)Jet Combat Gashat$(/l) (8.1%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamecreator",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#giri_giri_chambara_gashat)Giri Giri Chambara Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)Shakariki Sports Gashat$(/l) (8.1%)$(li)$(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)Dangerous Zombie Gashat$(/l) (1.6%)$(li)$(l:ex_aid/items/rider_gashats#mighty_creator_vrx_gashat)Mighty Creator VRX Gashat$(/l) (0.8%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#mighty_novel_x_gashat)Mighty Novel X Gashat$(/l) (0.8%)$(li)$(l:ex_aid/items/rider_gashats#ju_ju_burger_gashat)Ju Ju Burger Gashat$(/l) (4%)$(li)$(l:ex_aid/items/rider_gashats#night_of_safari_gashat)Night of Safari Gashat$(/l) (2.4%)$(li)$(l:ex_aid/items/rider_gashats#bang_bang_tank_gashat)Bang Bang Tank Gashat$(/l) (1.6%)$(li)$(l:ex_aid/items/rider_gashats#taddle_legacy_gashat)Taddle Legacy Gashat$(/l) (1.6%)$(li)$(l:ex_aid/items/rider_gashats#hurricane_ninja_gashat)Hurricane Ninja Gashat$(/l) (1.6%)$(li)$(l:ex_aid/items/rider_gashats#pac_adventure_gashat)Pac Adventure Gashat$(/l) (0.8%)$(li)$(l:ex_aid/items/rider_gashats#famitsa_gashat)Famista Gashat$(/l) (0.8%)$(li)$(l:ex_aid/items/rider_gashats#xevious_gashat)Xevious Gashat$(/l) (0.8%)$(li)$(l:ex_aid/items/rider_gashats#galaxian_gashat)Galaxian Gashat$(/l) (0.8%)$(li)$(l:ex_aid/items/rider_gashats#ganbarizing_gashat)Ganbarizing Gashat$(/l) (1.6%)$(br)With a $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory:$(li)$(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)Proto Mighty Action X Gashat Noir$(/l) (12.2%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)Toki Meki Bridal Gashat$(/l) (12.2%)$(br2)Drops with an $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashat$(/l):$(li)$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)Mighty Brothers XX Gashat$(/l) (23.5%)$(li)$(l:ex_aid/items/rider_gashats#doctor_mighty_xx_gashat)Doctor Mighty XX Gashat$(/l) (5.9%)$(li)$(l:ex_aid/items/rider_gashats#knock_out_fighter_2_gashat)Knock Out Fighter 2 Gashat$(/l) (5.9%)$(li)$(l:ex_aid/items/rider_gashats#taddle_fantasy_gashat)Taddle Fantasy Gashat$(/l) (17.6%)$(li)$(l:ex_aid/items/rider_gashats#bang_bang_simulation_gashat)Bang Bang Simulation Gashat$(/l) (17.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#perfect_puzzle_gashat)Perfect Puzzle Gashat$(/l) (11.8%)$(li)$(l:ex_aid/items/rider_gashats#knock_out_fighter_gashat)Knock Out Fighter Gashat$(/l) (11.8%)$(li)$(l:ex_aid/items/rider_gashats#gashat_gear_dual_another)Gashat Gear Dual Another$(/l) (5.9%)$(br2)Drops with an $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashat$(/l):$(li)$(l:ex_aid/items/rider_gashats#maximum_mighty_x_gashat)Maximum Mighty X Gashat$(/l) (80%)$(li)$(l:ex_aid/items/rider_gashats#god_maximum_mighty_x_gashat)God Maximum Mighty X Gashat$(/l) (20%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops with an $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashat$(/l):$(li)$(l:ex_aid/items/rider_gashats#hyper_muteki_gashat)Hyper Muteki Gashat$(/l) (80%)$(li)$(l:ex_aid/items/rider_gashats#gamedeus_hyper_muteki_gashat)Gamedeus Hyper Muteki Gashat$(/l) (20%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ganbarizing_machine",
+			"title": "Ganbarizing Machine",
+			"text": "Use $(l:ex_aid/items/blank_gashat)unfinished Gashats$(/l) on this block to obtain Legend Rider Gashats$(br2)Drops:$(li)$(l:ex_aid/items/rider_gashats#kamen_rider_build_gashat)Kamen Rider Build Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#kaigan_ghost_gashat)Kaigan Ghost Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#full_throttle_drive_gashat)Full Throttle Drive Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#toukenden_gaim_gashat)Toukenden Gaim Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#magic_the_wizard_gashat)Magic The Wizard Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#space_galaxy_fourze_gashat)Space Galaxy Fourze Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#jungle_ooo_gashat)Jungle OOO Gashat$(/l) (5.3%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/ganbarizing_machine",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#detective_double_gashat)Detective Double Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#barcode_warrior_decade_gashat)Barcode Warrior Decade Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#dokidoki_makai_castle_kiva_gashat)Doki Doki Makai Castle Kiva Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#time_express_den_o_gashat)Time Express Den-O Gashat$(/l) (5.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ex_aid/items/rider_gashats#insect_wars_kabuto_gashat)Insect Wars Kabuto Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#taiko_master_hibiki_gashat)Taiko Master Hibiki Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#king_of_poker_blade_gashat)King of Poker Blade Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#moshi_moshi_faiz_gashat)Moshi Moshi Faiz Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#mirror_labryinth_ryuki_gashat)Mirror Labyrinth Ryuki Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#agito_of_the_sun_gashat)Agito of the Sun Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#adventure_guy_kuuga_gashat)Adventure Guy Kuuga Gashat$(/l) (5.3%)$(li)$(l:ex_aid/items/rider_gashats#lets_go_ichigou_gashat)Let's Go Ichigou Gashat$(/l) (5.3%)"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pandora_box",
+			"title": "Pandora Box",
+			"text": "Use $(l:build/items/full_bottle)Empty Bottles$(/l) on this block to obtain $(l:build/items/pandora_bottle)Pandora Bottles$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pandora_box",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:build/mobs/night_rogue)Night Rogue$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fullbottle_purifier",
+			"title": "Fullbottle Purifier",
+			"text": "Found inside a $(l:build/structures/rogue_base)Faust Base$(/l)$(br2)Use $(l:build/items/smash_bottle)Smash Bottles$(/l) on this block to obtain Fullbottles$(br2)Drops:$(li)$(l:build/items/fullbottles#rabbit_full_bottle)Rabbit Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#tank_full_bottle)Tank Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#gorilla_full_bottle)Gorilla Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#diamond_full_bottle)Diamond Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#taka_full_bottle)Taka Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#gatling_full_bottle)Gatling Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#harinezumi_full_bottle)Harinezumi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#shoubousha_full_bottle)Shoubousha Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#ninja_full_bottle)Ninja Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/fullbottle_purifier",
+			"text": "$(li)$(l:build/items/fullbottles#comic_full_bottle)Comic Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#panda_full_bottle)Panda Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#rocket_full_bottle)Rocket Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#lion_full_bottle)Lion Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#soujiki_full_bottle)Soujiki Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#dragon_full_bottle)Dragon Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#lock_full_bottle)Lock Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#kaizoku_full_bottle)Kaizoku Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:build/items/fullbottles#densha_full_bottle)Densha Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#octopus_full_bottle)Octopus Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#light_full_bottle)Light Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#phoenix_full_bottle)Phoenix Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#robot_full_bottle)Robot Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#wolf_full_bottle)Wolf Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#smapho_full_bottle)Smapho Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#unicorn_full_bottle)Unicorn Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#keshigomu_full_bottle)Keshigomu Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#rose_full_bottle)Rose Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#helicopter_full_bottle)Helicopter Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#turtle_full_bottle)Turtle Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#watch_full_bottle)Watch Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#kuma_full_bottle)Kuma Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#televi_full_bottle)Televi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#kabutomushi_full_bottle)Kabutomushi Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:build/items/fullbottles#camera_full_bottle)Camera Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#spider_full_bottle)Spider Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#reizouko_full_bottle)Reizouko Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#dog_full_bottle)Dog Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#mic_full_bottle)Mic Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#santa_claus_full_bottle)Santa Claus Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#cake_full_bottle)Cake Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#tora_full_bottle)Tora Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#ufo_full_bottle)Ufo Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#kujira_full_bottle)Kujira Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#jet_full_bottle)Jet Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#shika_full_bottle)Shika Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#pyramid_full_bottle)Pyramid Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#kirin_full_bottle)Kirin Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#senpuuki_full_bottle)Senpuuki Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#penguin_full_bottle)Penguin Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:build/items/fullbottles#skebo_full_bottle)Skebo Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#same_full_bottle)Same Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#bike_full_bottle)Bike Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#hachi_full_bottle)Hachi Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#sensuikan_full_bottle)Sensuikan Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#sai_full_bottle)Sai Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#dryer_full_bottle)Dryer Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#bat_full_bottle)Bat Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#engine_full_bottle)Engine Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#obake_full_bottle)Obake Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#magnet_full_bottle)Magnet Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#scorpion_full_bottle)Scorpion Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#gold_full_bottle)Gold Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#gold_rabbit_full_bottle)Gold Rabbit Fullbottle$(/l) (1.6%)$(li)$(l:build/items/fullbottles#silver_dragon_full_bottle)Silver Dragon Fullbottle$(/l) (1.6%)"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fullbottle_solidifier",
+			"title": "Fullbottle Solidifier",
+			"text": "Use different Fullbottles on this block to obtain Sclashjellies$(br2)Drops:$(li)$(l:build/items/sclash_jelly)Empty Sclashjelly$(/l) (from an $(l:build/items/full_bottle)Empty Bottle$(/l))$(li)$(l:build/items/sclashjellies#dragon_sclash_jelly)Dragon Sclashjelly$(/l) (from a $(l:build/items/fullbottles#dragon_full_bottle)Dragon Fullbottle$(/l))$(li)$(l:build/items/sclashjellies#robot_sclash_jelly)Robot Sclashjelly$(/l) (from a $(l:build/items/fullbottles#robot_full_bottle)Robot Fullbottle$(/l))$(li)$(l:build/items/fullbottles#crocodile_crack_full_bottle)Crocodile Crack Fullbottle$(/l) (from a $(l:build/items/fullbottles#lost_bat_full_bottle)Lost Bat Fullbottle$(/l))"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/fullbottle_solidifier"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hiden_3d_printer",
+			"title": "HIDEN 3D Printer",
+			"text": "Use blank Progrisekeys on this block to obtain Zero-One's Progrisekeys$(br2)Used as the job block for a $(l:misc/villagers#humagear_villager)Humagear Villager$(/l)$(br2)Drops with a $(l:zero_one/items/blank_progrisekey)Blank Progrisekey$(/l):$(li)$(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)Rising Hopper Progrisekey$(/l) (26.3%)$(li)$(l:zero_one/items/progrisekeys#shining_hopper_progrisekey)Shining Hopper Progrisekey$(/l) (5.3%)$(li)$(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)Red Rising Hopper Progrisekey$(/l) (2.6%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/hiden_3d_printer",
+			"text": "$(li)$(l:zero_one/items/progrisekeys#biting_shark_progrisekey)Biting Shark Progrisekey$(/l) (13.2%)$(li)$(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)Flaming Tiger Progrisekey$(/l) (13.2%)$(li)$(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)Breaking Mammoth Progrisekey$(/l) (13.2%)$(li)$(l:zero_one/items/progrisekeys#hopping_kangaroo_progrisekey)Hopping Kangaroo Progrisekey$(/l) (13.2%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:zero_one/items/progrisekeys#flying_falcon_progrisekey)Flying Falcon Progrisekey$(/l) (13.2%)$(br2)Drops with a $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekey$(/l):$(li)$(l:zero_one/items/progrisekeys#is_progrisekey)Is Progrisekey$(/l) (1.3%)$(li)$(l:zero_one/items/progrisekeys#uchuyaro_subaru_progrisekey)Uchuyaro Subaru Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#saikyo_takumi_oyakata_progrisekey)Saikyo Takumi Oyakata Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#dr_omigoto_progrisekey)Dr. Omigoto Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#sumida_smile_progrisekey)Sumida Smile Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#mamoru_progrisekey)Mamoru Progrisekey$(/l) (6.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:zero_one/items/progrisekeys#bengoshi_bingo_progrisekey)Bengoshi Bingo Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#ikkan_nigiro_progrisekey)Ikkan Nigiro Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#matsuda_enji_progrisekey)Matsuda Enji Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#morifude_g_pen_progrisekey)Morifude G-Pen Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#fukkinhoukai_taro_progrisekey)Fukkinhoukai Taro Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#shesta_progrisekey)Shesta Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#love_chan_progrisekey)Love-chan Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#hakase_bot_progrisekey)Hakase Bot Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#okureru_progrisekey)Okureru Progrisekey$(/l) (6.6%)$(li)$(l:zero_one/items/progrisekeys#delmo_progrisekey)Delmo Progrisekey$(/l) (6.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zaia_3d_printer",
+			"title": "ZAIA 3D Printer",
+			"text": "Found inside a $(l:zero_one/structures/daybreak_town)Daybreak Town$(/l)$(br2)Use blank Progrisekeys on this block to obtain ZAIA Japan's Progrisekeys$(br2)Drops:$(li)$(l:zero_one/items/progrisekeys#freezing_bear_progrisekey)Freezing Bear Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#sparking_giraffe_progrisekey)Sparking Giraffe Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#amazing_hercules_progrisekey)Amazing Hercules Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#exciting_stag_progrisekey)Exciting Stag Progrisekey$(/l) (8.9%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zaia_3d_printer",
+			"title": " ",
+			"text": "$(li)$(l:zero_one/items/progrisekeys#gatling_hedgehog_progrisekey)Gatling Hedgehog Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#trapping_spider_progrisekey)Trapping Spider Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#assault_wolf_progrisekey)Assault Wolf Progrisekey$(/l) (3.6%)$(li)$(l:zero_one/items/progrisekeys#punching_kong_progrisekey)Punching Kong Progrisekey$(/l) (8.9%)$(li)$(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)Lightning Hornet Progrisekey$(/l) (8.9%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:zero_one/items/progrisekeys#sting_scorpion_progrisekey)Sting Scorpion Progrisekey$(/l) (17.9%)$(li)$(l:zero_one/items/progrisekeys#amazing_caucasus_progrisekey)Amazing Caucasus Progrisekey$(/l) (3.6%)$(li)$(l:zero_one/items/zetsumerisekeys#awaking_arsino_zetsumerisekey)Awaking Arsino Zetsumerisekey$(/l) (3.6%)"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sword_of_logos_book_analyzer",
+			"title": "Sword of Logos Book Analyzer",
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Use blank Wonder Ride Books on this block to obtain different Wonder Ride Books$(br2)Drops with a $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Book$(/l):$(li)$(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)Brave Dragon Wonder Ride Book$(/l) (11%)$(li)$(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)Storm Eagle Wonder Ride Book$(/l) (5.5%)$(li)$(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)Saiyuu Journey Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus Wonder Ride Book$(/l) (1.8%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/sword_of_logos_book_analyzer",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki Wonder Ride Book$(/l) (9.2%)$(li)$(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista Wonder Ride Book$(/l) (5.5%)$(li)$(l:saber/items/wonder_ride_books#tri_cerberus_wonder_ride_book)Tri Cerberus Wonder Rider Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#needle_hedgehog_wonder_ride_book)Needle Hedgehog Wonder Ride Book$(/l) (5.5%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)Lamp Do Alangina Wonder Ride Book$(/l) (9.2%)$(li)$(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)Genbu Shinwa Wonder Ride Book$(/l) (3.7%)$(li)$(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)Jackun to Domamenoki Wonder Ride Book$(/l) (5.5%)$(li)$(l:saber/items/wonder_ride_books#sarutobi_ninjaden_wonder_ride_book)Sarutobi Ninjaden Wonder Ride Book$(/l) (3.7%)$(li)$(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)Kobuta 3Kyoudai Wonder Ride Book$(/l) (5.5%)$(li)$(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)Hanselnuts to Gretel Wonder Ride Book$(/l) (3.7%)$(li)$(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)Bremen no Rock Band Wonder Ride Book$(/l) (5.5%)$(li)$(l:saber/items/wonder_ride_books#kin_no_buki_gin_no_buki_wonder_ride_book)Kin no Buki Gin no Buki Wonder Ride Book$(/l) (1.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#kirin_no_ongaeshi_wonder_ride_book)Kirin no Ongaeshi Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#sarukani_wars_wonder_ride_book)Sarukani Wars Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#bakusou_usagi_to_kame_wonder_ride_book)Bakusou Usagi to Kame Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#houshin_kamen_engi_wonder_ride_book)Houshin Kamen Engi Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#tsuki_no_hime_kaguyan_wonder_ride_book)Tsuki no Hime Kaguyan Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#osha_jizou_san_wonder_ride_book)Osha Jizou San Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#issun_bushi_wonder_ride_book)Issun Bushi Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book$(/l) (1.8%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book$(/l) (1.8%)$(li)$(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)King of Arthur Wonder Ride Book$(/l) (1.1%)$(li)$(l:saber/items/wonder_ride_books#televi_kun_wonder_ride_book)Televi-Kun Wonder Ride Book$(/l) (0.4%)$(br2)Drops with a $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l):$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_kaenken_rekka_wonder_ride_book)Wonder World Story of Kaenken Rekka Wonder Ride Book$(/l) (9.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_suiseiken_nagare_wonder_ride_book)Wonder World Story of Suiseiken Nagare Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)Wonder World Story of Raimeiken Ikazuchi Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_ankokuken_kurayami_wonder_ride_book)Wonder World Story of Ankokuken Kurayami Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_dogouken_gekido_wonder_ride_book)Wonder World Story of Dogouken Gekido Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_fuusouken_hayate_wonder_ride_book)Wonder World Story of Fuusouken Hayate Wonder Ride Book$(/l) (9.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_onjuuken_suzune_wonder_ride_book)Wonder World Story of Onjuuken Suzune Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_kougouken_saikou_wonder_ride_book)Wonder World Story of Kougouken Saikou Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_mumeiken_kyomu_wonder_ride_book)Wonder World Story of Mumeiken Kyomu Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_eneiken_noroshi_wonder_ride_book)Wonder World Story of Eneiken Noroshi Wonder Ride Book$(/l) (9.1%)$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_jikokuken_kaiji_wonder_ride_book)Wonder World Story of Jikokuken Kaiji Wonder Ride Book$(/l) (9.1%)"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vistamp_bar",
+			"title": "Vistamp Bar",
+			"text": "Use blank Vistamps on this block to obtain different Vistamps$(br2)Drops with a $(l:revice/items/proto_vistamp)Blank Vistamp$(/l):$(li)$(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l) (8.6%)$(li)$(l:revice/items/vistamps#eagle_vistamp)Eagle Vistamp$(/l) (6.4%)$(li)$(l:revice/items/vistamps#mammoth_vistamp)Mammoth Vistamp$(/l) (6.4%)$(li)$(l:revice/items/vistamps#megalodon_vistamp)Megalodon Vistamp$(/l) (6.4%)$(li)$(l:revice/items/vistamps#ptera_vistamp)Ptera Vistamp$(/l) (3.6%)$(li)$(l:revice/items/vistamps#lion_vistamp)Lion Vistamp$(/l) (5.7%)$(li)$(l:revice/items/vistamps#jackal_vistamp)Jackal Vistamp$(/l) (5.7%)$(li)$(l:revice/items/vistamps#kong_vistamp)Kong Vistamp$(/l) (5.7%)$(li)$(l:revice/items/vistamps#kamakiri_vistamp)Kamakiri Vistamp$(/l) (5.7%)$(li)$(l:revice/items/vistamps#brachio_vistamp)Brachio Vistamp$(/l) (5.7%)$(li)$(l:revice/items/vistamps#neo_batta_vistamp)Neo Batta Vistamp$(/l) (3.6%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/vistamp_bar",
+            "text": "$(li)$(l:revice/items/vistamps#kangaroo_vistamp)Kangaroo Vistamp$(/l) (2.9%)$(li)$(l:revice/items/vistamps#crow_vistamp)Crow Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#spider_vistamp)Spider Vistamp$(/l) (4.3%)$(li)$(l:revice/items/vistamps#batta_vistamp)Batta Vistamp$(/l) (2.9%)$(li)$(l:revice/items/vistamps#mogura_vistamp)Mogura Vistamp$(/l) (2.9%)$(li)$(l:revice/items/vistamps#scorpion_vistamp)Scorpion Vistamp$(/l) (2.9%)$(li)$(l:revice/items/vistamps#anomalocaris_vistamp)Anomalocaris Vistamp$(/l) (2.1%)$(li)$(l:revice/items/vistamps#cobra_vistamp)Cobra Vistamp$(/l) (3.6%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:revice/items/vistamps#turtle_vistamp)Turtle Vistamp$(/l) (2.1%)$(li)$(l:revice/items/vistamps#kujaku_vistamp)Kujaku Vistamp$(/l) (2.1%)$(li)$(l:revice/items/vistamps#hashibiroko_vistamp)Hashibiroko Vistamp$(/l) (2.1%)$(li)$(l:revice/items/vistamps#tricera_vistamp)Tricera Vistamp$(/l) (2.1%)$(li)$(l:revice/items/vistamps#crocodile_vistamp)Crocodile Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#komodo_dragon_vistamp)Komodo Dragon Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#kajiki_vistamp)Kajiki Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#hedgehog_vistamp)Hedgehog Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#king_crab_vistamp)King Crab Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#kurosai_vistamp)Kurosai Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#octopus_vistamp)Octopus Vistamp$(/l) (0.7%)$(li)$(l:revice/items/vistamps#oomukade_vistamp)Oomukade Vistamp$(/l) (0.7%)$(br)With a $(l:revice/items/vistamps#barid_rex_vistamp)Barid Rex Vistamp$(/l) in your inventory:$(li)$(l:revice/items/vistamps#volcano_vistamp)Volcano Vistamp$(/l) (0.7%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Drops with a $(l:revice/items/vistamps#proto_queen_bee_vistamp)Queen Bee Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#queen_bee_vistamp)Queen Bee Vistamp$(/l)$(br2)Drops with a $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#planarian_vistamp)Planarian Vistamp$(/l)$(br2)Drops with a $(l:revice/items/vistamps#proto_chameleon_vistamp)Chameleon Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#chameleon_vistamp)Chameleon Vistamp$(/l)$(br2)Drops with a $(l:revice/items/vistamps#daiouika_vistamp)Daiouika Proto Vistamp$(/l):$(li)$(l:revice/items/vistamps#kraken_vistamp)Kraken Vistamp$(/l)"
+		}
+	]
+}

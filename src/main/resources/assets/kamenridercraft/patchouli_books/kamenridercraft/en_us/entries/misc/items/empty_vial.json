@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used on the $(l:misc/blocks/amazon_cell_extractor)Amazon Cell Extractor$(/l) to obtain Amazon Cell Vials$(br2)Can be crafted into Creation King Extract using a $(l:black/items/red_kingstone)Red Kingstone$(/l)"
+			"text": "Used on the $(l:misc/blocks/machine_blocks#amazon_cell_extractor)Amazon Cell Extractor$(/l) to obtain Amazon Cell Vials$(br2)Can be crafted into Creation King Extract using a $(l:black/items/red_kingstone)Red Kingstone$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

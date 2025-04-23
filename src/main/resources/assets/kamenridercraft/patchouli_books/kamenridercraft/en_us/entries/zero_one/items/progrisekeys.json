@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rising_hopper_progrisekey",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shining_hopper_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -72,7 +72,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:red_rising_hopper_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -120,7 +120,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:biting_shark_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +133,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:flaming_tiger_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -146,7 +146,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:freezing_bear_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -159,7 +159,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:breaking_mammoth_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/giger)Giger$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/giger)Giger$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -172,7 +172,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sparking_giraffe_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -185,7 +185,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:amazing_hercules_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -211,7 +211,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:exciting_stag_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -224,7 +224,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gatling_hedgehog_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -237,7 +237,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:trapping_spider_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hopping_kangaroo_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -341,7 +341,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:assault_wolf_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -365,7 +365,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:punching_kong_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(br2)$(/l)Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(br2)$(/l)Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -391,7 +391,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lightning_hornet_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(br2)$(/l)Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(br2)$(/l)Drops from:$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sting_scorpion_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -443,7 +443,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:flying_falcon_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)$(br2)Drops from:$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -469,7 +469,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:amazing_caucasus_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer"
+			"text": "Obtained by using $(l:zero_one/items/blank_progrisekey)Blank Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer"
 		},
 		{
 			"type": "patchouli:text",
@@ -558,7 +558,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:is_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -571,7 +571,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:uchuyaro_subaru_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -584,7 +584,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:saikyo_takumi_oyakata_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -597,7 +597,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dr_omigoto_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -610,7 +610,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sumida_smile_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -623,7 +623,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mamoru_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -636,7 +636,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bengoshi_bingo_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -649,7 +649,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ikkan_nigiro_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -662,7 +662,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:matsuda_enji_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -675,7 +675,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:morifude_g_pen_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -688,7 +688,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fukkinhoukai_taro_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -701,7 +701,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shesta_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -714,7 +714,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:love_chan_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -727,7 +727,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hakase_bot_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -740,7 +740,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:okureru_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -753,7 +753,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:delmo_progrisekey",
 			"title": " ",
-			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l)"
+			"text": "Obtained by using $(l:zero_one/items/humagear_progrisekey)Humagear Progrisekeys$(/l) on the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:text",

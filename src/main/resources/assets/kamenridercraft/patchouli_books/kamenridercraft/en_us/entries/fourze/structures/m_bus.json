@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "M-BUS",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)$(br2)Chest loot:$(li)14 $(l:fourze/items/astroswitch)Blank Switches$(/l)$(li)1 $(l:fourze/items/astroswitches#meteor_switch)Meteor Switch$(/l)$(li)3 $(l:misc/items/rider_circuit)Rider Circuits$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)$(br2)Chest loot:$(li)14 $(l:fourze/items/astroswitch)Blank Switches$(/l)$(li)1 $(l:fourze/items/astroswitches#meteor_switch)Meteor Switch$(/l)$(li)3 $(l:misc/items/rider_circuit)Rider Circuits$(/l)"
 		},
 		{
 			"type": "patchouli:image",
