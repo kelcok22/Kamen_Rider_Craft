@@ -4,7 +4,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:city/suburban/house_1",
         "processors": "minecraft:empty",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "weight": 2,
+      "weight": 4,
       "element": {
         "location": "kamenridercraft:city/suburban/house_2",
         "processors": "minecraft:empty",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "weight": 2,
+      "weight": 4,
       "element": {
         "location": "kamenridercraft:city/suburban/house_3",
         "processors": "minecraft:empty",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:city/suburban/house_4",
         "processors": "minecraft:empty",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:city/suburban/playground_1",
         "processors": "minecraft:empty",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "kamenridercraft:city/suburban/shop_1",
         "processors": "minecraft:empty",
@@ -67,9 +67,18 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "location": "kamenridercraft:city/suburban/warehouse_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:city/suburban/fantastic_bookstore_kamiyama",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

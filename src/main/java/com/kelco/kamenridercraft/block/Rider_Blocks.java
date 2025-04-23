@@ -338,6 +338,11 @@ public class Rider_Blocks {
 			});
 
 
+	public static final DeferredBlock<DoorBlock> WONDERWOOD_DOOR = registerBlock("wonderwood_door",
+			() -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
+	public static final DeferredBlock<FenceBlock> WHITE_FENCE = registerBlock("white_fence",
+			() -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)));
 
 	public static final DeferredBlock<VineBlock> HELHEIM_VINE = registerBlock("helheim_vine",
 			() -> new VineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.VINE)
@@ -885,6 +890,14 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> CHECKERED_TILE = registerBlock("checkered_tile",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> YELLOW_CHECKERED_TILE = registerBlock("yellow_checkered_tile",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> LIME_CHECKERED_TILE = registerBlock("lime_checkered_tile",
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
