@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used on the $(l:misc/blocks/shift_chassis_assembler)Shift Chassis Assembler$(/l) to obtain Shift Cars"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used on the $(l:misc/blocks/machine_blocks#shift_chassis_assembler)Shift Chassis Assembler$(/l) to obtain Shift Cars"
 		},
 		{
 			"type": "patchouli:crafting",

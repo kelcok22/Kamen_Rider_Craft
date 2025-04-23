@@ -32,7 +32,7 @@
 			"anchor": "humagear_villager",
 			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:humagear_villager\",level:1},Xp:1}",
 			"name": "Humagear Villager",
-			"text": "Uses the $(l:misc/blocks/hiden_3d_printer)HIDEN 3D Printer$(/l) as a job block"
+			"text": "Uses the $(l:misc/blocks/machine_blocks#hiden_3d_printer)HIDEN 3D Printer$(/l) as a job block"
 		},
 		{
 			"type": "patchouli:text",

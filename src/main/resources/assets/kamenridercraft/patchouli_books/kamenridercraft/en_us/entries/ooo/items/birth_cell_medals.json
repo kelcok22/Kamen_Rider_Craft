@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_eyes",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_breast_cannon",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_crane_arm",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_shovel_arm",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_catepillar_leg",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_drill_arm",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:birth_core_cutter_wing",
 			"title": " ",
-			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using $(l:ooo/items/cellmedal)Cell Medals$(/l) on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		}
 	]
 }

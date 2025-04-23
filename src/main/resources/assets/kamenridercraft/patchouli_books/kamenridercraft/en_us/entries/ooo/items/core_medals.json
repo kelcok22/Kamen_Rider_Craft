@@ -494,7 +494,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:seiuchi_medal",
 			"title": " ",
-			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +507,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shirokuma_medal",
 			"title": " ",
-			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -520,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:penguin_medal",
 			"title": " ",
-			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/cell_medal_programer)Cell Medal Programmer$(/l)"
+			"text": "Obtained by using Packed Ice on the $(l:misc/blocks/machine_blocks#cell_medal_programer)Cell Medal Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",

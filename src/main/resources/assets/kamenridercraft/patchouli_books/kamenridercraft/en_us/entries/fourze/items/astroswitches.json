@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rocket_switch",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:launcher_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drill_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:radar_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magic_hand_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:camera_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:parachute_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chainsaw_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hopping_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:elek_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scissors_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:beat_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chain_array_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:smoke_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:spike_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -208,7 +208,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:winch_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:flash_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -234,7 +234,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shield_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,7 +247,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gatling_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -260,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fire_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -273,7 +273,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:stealth_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -286,7 +286,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hammer_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +299,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:water_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -312,7 +312,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:medical_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -325,7 +325,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pen_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -338,7 +338,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wheel_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -351,7 +351,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:screw_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -364,7 +364,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hand_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -377,7 +377,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scoop_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -390,7 +390,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magnet_switch_n",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magnet_switch_s",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -416,7 +416,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:freeze_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -429,7 +429,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:claw_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -442,7 +442,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:board_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -455,7 +455,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giantfoot_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -468,7 +468,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:aero_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -481,7 +481,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gyro_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -494,7 +494,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:net_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +507,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:stamper_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -520,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cosmic_switch",
 			"title": " ",
-			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Obtained by using $(l:fourze/items/astroswitch)Blank Switches$(/l) on the $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:text",

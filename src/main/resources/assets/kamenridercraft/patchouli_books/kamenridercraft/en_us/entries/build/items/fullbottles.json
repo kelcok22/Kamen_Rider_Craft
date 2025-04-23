@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rabbit_full_bottle",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tank_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l)$(li)$(l:build/mobs/downfall_guardian)Downfall Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gorilla_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:diamond_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/touto_guardian)Touto Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taka_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gatling_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ninja_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:comic_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:panda_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rocket_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:harinezumi_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shoubousha_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lion_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:soujiki_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dragon_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -208,7 +208,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lock_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kaizoku_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -234,7 +234,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:densha_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,7 +247,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:octopus_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -260,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:light_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -273,7 +273,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:phoenix_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -286,7 +286,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:robot_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +299,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wolf_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -312,7 +312,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:smapho_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -325,7 +325,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unicorn_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -338,7 +338,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:keshigomu_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -351,7 +351,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rose_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -364,7 +364,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:helicopter_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -377,7 +377,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:turtle_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -390,7 +390,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:watch_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -403,7 +403,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuma_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -416,7 +416,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:televi_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -429,7 +429,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kabutomushi_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -442,7 +442,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:camera_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -455,7 +455,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:spider_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -468,7 +468,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:reizouko_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -481,7 +481,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dog_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -494,7 +494,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mic_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +507,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:santa_claus_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -520,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cake_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -533,7 +533,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tora_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -546,7 +546,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ufo_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/seito_guardian)Seito Guardians$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -559,7 +559,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kujira_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -572,7 +572,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jet_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +585,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shika_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -598,7 +598,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pyramid_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -611,7 +611,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kirin_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -624,7 +624,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:senpuuki_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -637,7 +637,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:penguin_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -650,7 +650,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:skebo_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -663,7 +663,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:same_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -676,7 +676,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bike_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -689,7 +689,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hachi_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -702,7 +702,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sensuikan_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -715,7 +715,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sai_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -728,7 +728,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dryer_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -741,7 +741,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bat_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -754,7 +754,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:engine_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/mad_rogue)Kamen Rider MadRogue$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -767,7 +767,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:obake_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -780,7 +780,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magnet_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -793,7 +793,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scorpion_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -806,7 +806,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gold_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -830,7 +830,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:low_rabbit_full_bottle",
 			"title": " ",
-			"text": "Obtained by using the $(l:build/items/golden_bangle)Golden Bangle$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)"
+			"text": "Obtained by using the $(l:build/items/golden_bangle)Golden Bangle$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -878,7 +878,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gold_rabbit_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -891,7 +891,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:silver_dragon_full_bottle",
 			"title": " ",
-			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+			"text": "Obtained by using $(l:build/items/smash_bottle)Smash Bottles$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_purifier)Fullbottle Purifier$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1091,7 +1091,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crocodile_crack_full_bottle",
 			"title": " ",
-			"text": "Obtained by using the $(l:build/items/fullbottles#lost_bat_full_bottle)Lost Bat Fullbottle$(/l) on the $(l:misc/blocks/fullbottle_solidifier)Fullbottle Solidifier$(/l)"
+			"text": "Obtained by using the $(l:build/items/fullbottles#lost_bat_full_bottle)Lost Bat Fullbottle$(/l) on the $(l:misc/blocks/machine_blocks#fullbottle_solidifier)Fullbottle Solidifier$(/l)"
 		},
 		{
 			"type": "patchouli:text",

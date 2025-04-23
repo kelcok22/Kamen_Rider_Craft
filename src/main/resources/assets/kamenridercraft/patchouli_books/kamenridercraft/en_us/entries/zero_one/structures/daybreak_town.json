@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Daybreak Town",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Spawn locations: Forest, Plains, Savanna, Swamp$(br2)Includes 2 $(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l) spawners$(br2)Includes a $(l:misc/blocks/boss_blocks#horobi_boss_block)Horobi Boss Block$(/l)$(br2)Includes a $(l:misc/blocks/zaia_3d_printer)ZAIA 3D Printer$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Spawn locations: Forest, Plains, Savanna, Swamp$(br2)Includes 2 $(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l) spawners$(br2)Includes a $(l:misc/blocks/boss_blocks#horobi_boss_block)Horobi Boss Block$(/l)$(br2)Includes a $(l:misc/blocks/machine_blocks#zaia_3d_printer)ZAIA 3D Printer$(/l)"
 		},
 		{
 			"type": "patchouli:image",

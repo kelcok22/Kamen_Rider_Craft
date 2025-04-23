@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:cyclone_memory",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:heat_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:luna_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -76,7 +76,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:joker_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -89,7 +89,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:metal_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -102,7 +102,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:trigger_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -165,7 +165,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:accel_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)$(br2)Drops from:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -200,7 +200,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:skull_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -213,7 +213,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:eternal_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -226,7 +226,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:prism_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -239,7 +239,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:engine_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -252,7 +252,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bomb_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -265,7 +265,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:trial_memory_un",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -278,7 +278,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fang_memory_un",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -291,7 +291,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:xtreme_memory_g",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_g)Gold Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -304,7 +304,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:xtreme_memory_s",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner$(/l)"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_s)Silver Unrefined Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -339,7 +339,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:accel_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -352,7 +352,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bird_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -365,7 +365,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:cyclone_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -378,7 +378,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dummy_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -391,7 +391,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:eternal_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -404,7 +404,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fang_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -417,7 +417,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gene_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -430,7 +430,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:heat_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -443,7 +443,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:iceage_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -456,7 +456,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:joker_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -469,7 +469,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:key_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -482,7 +482,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:luna_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -495,7 +495,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:metal_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -508,7 +508,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nasca_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -521,7 +521,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ocean_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -534,7 +534,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:puppeteer_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -547,7 +547,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:queen_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -560,7 +560,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rocket_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -573,7 +573,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:skull_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -586,7 +586,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:trigger_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -599,7 +599,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unicorn_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -612,7 +612,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:violence_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -625,7 +625,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:weather_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -638,7 +638,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:xtreme_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -651,7 +651,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:yesterday_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		},
 		{
 			"type": "patchouli:text",
@@ -664,7 +664,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zone_t2_memory",
 			"title": " ",
-			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/gaia_memory_refiner)Gaia Memory Refiner"
+			"text": "Obtained by using $(l:w/items/unrefined_memory_t2)Unrefined T2 Memories$(/l) on the $(l:misc/blocks/machine_blocks#gaia_memory_refiner)Gaia Memory Refiner"
 		}
 	]
 }

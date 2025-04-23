@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Rabbit Hutch",
-			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/astroswitch_programmer)Astroswitch Programmer$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Fourze (2011, TV show)$(br2)Spawns on the Moon$(br2)Includes an $(l:misc/blocks/machine_blocks#astroswitch_programmer)Astroswitch Programmer$(/l)"
 		},
 		{
 			"type": "patchouli:image",

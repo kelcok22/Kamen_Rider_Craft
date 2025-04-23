@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:mighty_action_x_gashat",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taddle_quest_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bang_bang_shooting_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bakusou_bike_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -76,7 +76,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gekitotsu_robots_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -89,7 +89,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doremifa_beat_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -102,7 +102,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jet_combat_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -115,7 +115,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giri_giri_chambara_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -128,7 +128,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shakariki_sports_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -141,7 +141,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drago_knight_hunter_z_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)$(br2)Drops from:$(li)$(l:ex_aid/mobs/graphite_bugster_mob)Graphite Bugster$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -308,7 +308,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dangerous_zombie_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -373,7 +373,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mighty_creator_vrx_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -386,7 +386,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mighty_novel_x_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -399,7 +399,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ju_ju_burger_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -412,7 +412,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:night_of_safari_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -425,7 +425,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bang_bang_tank_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -438,7 +438,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taddle_legacy_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -451,7 +451,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hurricane_ninja_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -464,7 +464,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pac_adventure_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -477,7 +477,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:famitsa_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -490,7 +490,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:xevious_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -503,7 +503,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:galaxian_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -516,7 +516,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taiko_no_tatsujin_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -529,7 +529,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ganbarizing_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -542,7 +542,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -555,7 +555,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:toki_meki_bridal_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l) while having the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -594,7 +594,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mighty_brothers_xx_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -607,7 +607,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doctor_mighty_xx_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -620,7 +620,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:knock_out_fighter_2_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -633,7 +633,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taddle_fantasy_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -646,7 +646,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bang_bang_simulation_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -659,7 +659,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:perfect_puzzle_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -672,7 +672,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:knock_out_fighter_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -685,7 +685,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gashat_gear_dual_another",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)Unfinished XX Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -698,7 +698,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:genm_musou_gashat",
 			"title": " ",
-			"text": "Obtained by using the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using the $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)Dan Kuroto Progrisekey$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -722,7 +722,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:maximum_mighty_x_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -735,7 +735,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:god_maximum_mighty_x_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)Unfinished Maximum Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -772,7 +772,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hyper_muteki_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -785,7 +785,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gamedeus_hyper_muteki_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/gamecreator)Game Creator$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)Unfinished Hyper Gashats$(/l) on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -824,7 +824,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_build_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -837,7 +837,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kaigan_ghost_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -850,7 +850,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:full_throttle_drive_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -863,7 +863,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:toukenden_gaim_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -876,7 +876,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magic_the_wizard_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -889,7 +889,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:space_galaxy_fourze_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -902,7 +902,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jungle_ooo_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -915,7 +915,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:detective_double_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -928,7 +928,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:barcode_warrior_decade_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -941,7 +941,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dokidoki_makai_castle_kiva_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -954,7 +954,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:time_express_den_o_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -967,7 +967,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:insect_wars_kabuto_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -980,7 +980,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:taiko_master_hibiki_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -993,7 +993,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:king_of_poker_blade_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1006,7 +1006,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:moshi_moshi_faiz_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1019,7 +1019,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mirror_labryinth_ryuki_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1032,7 +1032,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:agito_of_the_sun_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1045,7 +1045,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:adventure_guy_kuuga_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1058,7 +1058,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lets_go_ichigou_gashat",
 			"title": " ",
-			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/ganbarizing_machine)Ganbarizing Machine$(/l)"
+			"text": "Obtained by using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l) on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l)"
 		}
 	]
 }

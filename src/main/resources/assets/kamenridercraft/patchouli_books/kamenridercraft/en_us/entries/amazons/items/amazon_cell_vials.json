@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:omega_amazon_cell_vial",
-			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l)"
+			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:alpha_amazon_cell_vial",
 			"title": " ",
-			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l)"
+			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sigma_amazon_cell_vial",
 			"title": " ",
-			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l)"
+			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neo_amazon_cell_vial",
 			"title": " ",
-			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/amazon_cell_mutator)Amazon Cell Mutator$(/l)"
+			"text": "Obtained by using $(l:amazons/items/amazon_cell_vial)Amazon Cell Vials$(/l) on the $(l:misc/blocks/machine_blocks#amazon_cell_mutator)Amazon Cell Mutator$(/l)"
 		}
 	]
 }
