@@ -51,6 +51,15 @@
 			  "projection": "rigid",
 			  "element_type": "minecraft:single_pool_element"
 		  }
+	  },
+	  {
+		  "weight": 4,
+		  "element": {
+			  "location": "kamenridercraft:city/origin/fuuto_tower",
+			  "processors": "minecraft:empty",
+			  "projection": "rigid",
+			  "element_type": "minecraft:single_pool_element"
+		  }
 	  }
 
   ]

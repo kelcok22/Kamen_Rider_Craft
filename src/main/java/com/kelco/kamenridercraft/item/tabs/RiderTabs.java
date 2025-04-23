@@ -568,6 +568,10 @@ public class RiderTabs {
             event.accept(Rider_Blocks.HELHEIM_SAPLING);
             event.accept(Rider_Blocks.HELHEIM_VINE);
 
+            event.accept(Rider_Blocks.WONDERWOOD_DOOR);
+
+            event.accept(Rider_Blocks.WHITE_FENCE);
+
             event.accept(Rider_Blocks.STEEL_LADDER);
             event.accept(Rider_Blocks.RABBIT_HUTCH_LADDER);
 
