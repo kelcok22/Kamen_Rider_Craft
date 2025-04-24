@@ -43,15 +43,17 @@ public class RideBookerItem extends BaseBlasterItem {
 		super(toolTier, Atk, Spd, prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 	}
 
-	@Override
+    @Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
-		if ((stack.getDamageValue() + amount) >= stack.getMaxDamage() && (entity == null || !entity.hasInfiniteMaterials())) {
-			for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
-				ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
-    	        itementity.setDefaultPickUpDelay();
-    	        entity.level().addFreshEntity(itementity);
-			}
-		}
+        if (stack.getComponents().has(DataComponents.CONTAINER) && stack.getDamageValue()==stack.getMaxDamage()-1) {
+            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
+                ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
+                itementity.setDefaultPickUpDelay();
+                entity.level().addFreshEntity(itementity);
+            }
+            if (entity instanceof ServerPlayer player) player.closeContainer();
+            stack.remove(DataComponents.CONTAINER);
+        }
         return amount;
     }
 

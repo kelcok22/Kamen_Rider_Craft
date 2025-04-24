@@ -28,6 +28,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.Tags;
@@ -344,12 +345,14 @@ public class RiderDriverItem extends RiderArmorItem {
 
     @Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
-        if ((stack.getDamageValue() + amount) >= stack.getMaxDamage() && (entity == null || !entity.hasInfiniteMaterials())) {
+        if (stack.getComponents().has(DataComponents.CONTAINER) && stack.getDamageValue()==stack.getMaxDamage()-1) {
             for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
                 ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
                 itementity.setDefaultPickUpDelay();
                 entity.level().addFreshEntity(itementity);
             }
+            if (entity instanceof ServerPlayer player) player.closeContainer();
+            stack.remove(DataComponents.CONTAINER);
         }
         return amount;
     }
