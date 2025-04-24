@@ -178,6 +178,26 @@ public class RiderDriverItem extends RiderArmorItem {
     public void OnTransform(ItemStack itemstack, LivingEntity player) {
     }
 
+    public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+        RiderFormChangeItem formitem = get_Form_Item(itemstack,1);
+        formitem.OnRiderKickHit(itemstack,pLivingEntity,enemy);
+
+        DamageSource damageSource = new DamageSource(
+                pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
+        float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
+        enemy.hurt(damageSource, at);
+        pLivingEntity.sendSystemMessage(Component.literal("power="+at));
+        pLivingEntity.fallDistance = 0.0f;
+        if(!pLivingEntity.level().isClientSide()) {
+            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
+                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
+                    pLivingEntity.getZ(), 1, 0, 0, 0, 1);
+            ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.FLAME,
+                    pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
+                    pLivingEntity.getZ(), 500, 0, 0, 0, 1);
+        }
+    }
+
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
 
         player.setInvisible(false);
