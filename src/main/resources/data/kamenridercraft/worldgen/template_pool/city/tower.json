@@ -53,7 +53,7 @@
 		  }
 	  },
 	  {
-		  "weight": 4,
+		  "weight": 3,
 		  "element": {
 			  "location": "kamenridercraft:city/origin/fuuto_tower",
 			  "processors": "minecraft:empty",
