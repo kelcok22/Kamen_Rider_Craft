@@ -604,7 +604,7 @@
 			"type": "patchouli:text",
 			"anchor": "tirolchocolate_gochizo_variety",
 			"title": "Tirol Chocolate Gochizo (Variety Pack ver.)",
-			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Used to access Valen's $(l:gavv/riders/valen#tirol)Tirol$(/l) form"
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#tirol)Tirol$(/l) form$(br2)Used to access Valen's $(l:gavv/riders/valen#tirol)Tirol$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

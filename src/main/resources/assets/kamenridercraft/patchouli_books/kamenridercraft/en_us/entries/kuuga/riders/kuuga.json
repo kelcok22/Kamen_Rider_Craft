@@ -216,6 +216,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "growing_onodera",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_growing_ar\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Growing Form (Onodera)",
+			"text": "Accessed with the $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadam$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kuuga",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Weakness III"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "jinrai_no_senshi",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
 			"scale": -1,

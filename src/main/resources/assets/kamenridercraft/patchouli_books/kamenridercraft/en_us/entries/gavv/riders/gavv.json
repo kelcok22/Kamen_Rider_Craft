@@ -202,6 +202,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "tirol",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Tirol Form",
+			"text": "Accessed with the $(l:gavv/items/gochizo#tirolchocolate_gochizo_variety)Tirol Chocolate Gochizo (Variety Pack ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gavv",
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "boonboomger",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:boonboomger_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,
