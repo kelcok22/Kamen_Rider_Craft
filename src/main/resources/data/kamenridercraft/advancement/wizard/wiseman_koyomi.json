@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:v1_belt"
+	  "id": "kamenridercraft:hope_ring"
 	},
-	"title": "Totally not a Space Sheriff",
-	"description": "Transform into V1",
+	"title": "I'm a wizard with Haruto now...",
+	"description": "Transform into Kamen Rider Wiseman (Koyomi)",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/g1",
+  "parent": "kamenridercraft:wizard/sorcerer",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,23 +19,23 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:agitohead"
+				"kamenridercraft:wizard_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:agitotroso"
+				"kamenridercraft:wizard_troso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:agitolegs"
+				"kamenridercraft:wizard_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:v1_belt"
-			  ]
+				"kamenridercraft:whitewizardriver_f"
+              ]
 			}
 		  }
 		}

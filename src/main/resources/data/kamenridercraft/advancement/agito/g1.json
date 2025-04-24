@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:v1_belt"
+	  "id": "kamenridercraft:g1_belt"
 	},
-	"title": "Totally not a Space Sheriff",
-	"description": "Transform into V1",
+	"title": "Chou Henshin't",
+	"description": "Transform into Kamen Rider G1",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/g1",
+  "parent": "kamenridercraft:agito/g4x",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:v1_belt"
+				"kamenridercraft:g1_belt"
 			  ]
 			}
 		  }

@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:v1_belt"
+	  "id": "kamenridercraft:gashacon_bugvisor_ii_lazer"
 	},
-	"title": "Totally not a Space Sheriff",
-	"description": "Transform into V1",
-	"frame": "task",
+	"title": "I'm on board!",
+	"description": "Transform into Lazer Level X",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/g1",
+  "parent": "kamenridercraft:ex-aid/lazer",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:agitohead"
+				"kamenridercraft:ex_aidhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:agitotroso"
+				"kamenridercraft:ex_aidtroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:agitolegs"
+				"kamenridercraft:ex_aidlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:v1_belt"
+				"kamenridercraft:gashacon_bugvisor_ii_lazer"
 			  ]
 			}
 		  }

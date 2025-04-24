@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:v1_belt"
+	  "id": "kamenridercraft:g4_x_belt"
 	},
-	"title": "Totally not a Space Sheriff",
-	"description": "Transform into V1",
-	"frame": "task",
+	"title": "I'm Blue (Da Ba Dee)",
+	"description": "Transform into Kamen Rider G4-X",
+	"frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:agito/g1",
+  "parent": "kamenridercraft:agito/g4",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -34,7 +34,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:v1_belt"
+				"kamenridercraft:g4_x_belt"
 			  ]
 			}
 		  }

@@ -3,10 +3,13 @@ package com.kelco.kamenridercraft.item.BaseItems;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
+
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -28,6 +31,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.phys.Vec3;
@@ -384,9 +388,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
         Boolean isDateA1 = false;
         LocalDate localdate = LocalDate.now();
-        int i = localdate.get(ChronoField.DAY_OF_MONTH);
-        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
-        if (j == 4 && i == 1) {
+        if (localdate.get(ChronoField.MONTH_OF_YEAR) == 4 && localdate.get(ChronoField.DAY_OF_MONTH) == 1) {
             isDateA1=true;
         }
             if (Has_basic_belt_info) {
@@ -400,6 +402,25 @@ public class RiderDriverItem extends RiderArmorItem {
                     }
                 }
             }
+            
+
+		int i = 0;
+		int j = 0;
+		Iterator var7 = ((ItemContainerContents)stack.getOrDefault(DataComponents.CONTAINER, ItemContainerContents.EMPTY)).nonEmptyItems().iterator();
+        if (var7.hasNext()) tooltipComponents.add(Component.translatable("container.rider_belt"));
+
+		while(var7.hasNext()) {
+			ItemStack itemstack = (ItemStack)var7.next();
+			++j;
+			if (i <= 2) {
+				++i;
+				tooltipComponents.add(Component.translatable("container.shulkerBox.itemCount", new Object[]{itemstack.getHoverName(), itemstack.getCount()}));
+			}
+		}
+
+		if (j - i > 0) {
+			tooltipComponents.add(Component.translatable("container.shulkerBox.more", new Object[]{j - i}).withStyle(ChatFormatting.ITALIC));
+		}
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
