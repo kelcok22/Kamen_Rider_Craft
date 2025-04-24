@@ -1,0 +1,40 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:lost_castle_full_bottle"
+	},
+	"title": "Three Crows, One Knuckle",
+	"description": "Defeat the Hokuto Trio",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:build/blood_stalk",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:castle_lost_smash"
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:stag_lost_smash"
+		}
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:player_killed_entity",
+	  "conditions": {
+		"entity": {
+		  "type": "kamenridercraft:owl_lost_smash"
+		}
+	  }
+	}
+  }
+}

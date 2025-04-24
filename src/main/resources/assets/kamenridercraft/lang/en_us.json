@@ -235,8 +235,8 @@
   "effect.kamenridercraft.portal_cooldown":"§5Portal Cooldown",
 
 
-  "owner.kamenridercraft.decade":"Decade's ",
-  "owner.kamenridercraft.zein":"Zein's ",
+  "owner.kamenridercraft.decade":"Decade's %s",
+  "owner.kamenridercraft.zein":"Zein's %s",
 
   "henshin.kamenridercraft.henshin":"Henshin!",
   "henshin.kamenridercraft.shocker_rider":"<Shocker Rider> §eHenshin!",
@@ -409,6 +409,7 @@
   "kamenridercraft.name.form":"Form:",
   "kamenridercraft:base.form": "Form: Base Form",
 
+  "container.rider_belt":"Storage:",
   "advent_deck_blank.text":"Advent Deck",
   "fueslot_gui.text": "Fueslot",
   "ring_holder_gui.text":"Ring Holder",

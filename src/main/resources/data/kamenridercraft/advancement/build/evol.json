@@ -10,7 +10,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:build/blood_stalk",
+  "parent": "kamenridercraft:build/hell_bros",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:player_killed_entity",

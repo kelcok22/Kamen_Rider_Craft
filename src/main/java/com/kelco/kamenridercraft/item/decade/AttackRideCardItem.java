@@ -92,7 +92,7 @@ public class AttackRideCardItem extends BaseItem {
 				if (ITEMS.size() != 0) {
 					for (int i = 0; i < ITEMS.size(); i++) {
 						ItemStack item = new ItemStack(ITEMS.get(i), 1);
-						item.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + ITEMS.get(i).getName(item).getString()));
+						item.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", ITEMS.get(i).getName(item).getString()));
 						if (item.isDamageableItem() && ServerConfig.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
 
 						ItemEntity entity = new ItemEntity(p_41128_, p_41129_.getX(), p_41129_.getY(), p_41129_.getZ(), item, 0, 0, 0);
