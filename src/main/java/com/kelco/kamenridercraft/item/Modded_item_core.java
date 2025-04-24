@@ -10,11 +10,16 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderCaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.sounds.ModSounds;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -291,8 +296,19 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
-            ).IsBeltGlowing().IsGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
+                    new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)
+            ){
+                public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
+                    if (!pLivingEntity.level().isClientSide()) {
+                        if (pLivingEntity.level() instanceof ServerLevel) {
+                            LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,pLivingEntity.level());
+                            thunder.setPos( enemy.getX(),  -1 + enemy.getY(),  enemy.getZ());
+                            pLivingEntity.level().addFreshEntity(thunder);
+                        }
+                    }
+                }
+            }.IsBeltGlowing().IsGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
