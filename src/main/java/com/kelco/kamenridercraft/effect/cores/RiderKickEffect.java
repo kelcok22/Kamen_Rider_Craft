@@ -23,6 +23,7 @@ import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Stack;
 
 
 public class RiderKickEffect extends MobEffect {
@@ -96,22 +97,7 @@ public class RiderKickEffect extends MobEffect {
 									(sentity instanceof Player && sentity != pLivingEntity)
 											|| (sentity instanceof Mob));
 							for (LivingEntity enemy : nearbyEnemies) {
-
-
-								DamageSource damageSource = new DamageSource(
-										pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
-								float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
-								enemy.hurt(damageSource, at);
-								pLivingEntity.sendSystemMessage(Component.literal("power="+at));
-								pLivingEntity.fallDistance = 0.0f;
-								if(!pLivingEntity.level().isClientSide()) {
-									((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
-											pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-											pLivingEntity.getZ(), 1, 0, 0, 0, 1);
-									((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.FLAME,
-											pLivingEntity.getX(), pLivingEntity.getY() + 1.0,
-											pLivingEntity.getZ(), 500, 0, 0, 0, 1);
-								}
+								belt.OnRiderKickHit(stack,pLivingEntity,enemy);
 								pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4,false,true));
 							}
 						}
