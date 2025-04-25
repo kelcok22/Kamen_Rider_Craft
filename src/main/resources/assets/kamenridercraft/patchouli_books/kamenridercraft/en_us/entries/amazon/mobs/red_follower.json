@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:red_follower",
-			"text": "Spawn locations: Desert, Jungle, Savanna, Savanna Plateau, Windswept Savanna, Beach, Badlands, Eroded Badlands, Wooded Badlands"
+			"text": "Appears in:$(li)Kamen Rider Amazon (1974, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Amazon (1974, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (50%)$(li)1 $(l:amazon/items/condorer_wheel)Condorer Wheel$(/l) (50%)$(li)1 $(l:fourze/items/astroswitches#clear_drill_switch)Clear Drill Switch$(/l) (4%)"
+			"text": "Spawn locations: Desert, Jungle, Savanna, Savanna Plateau, Windswept Savanna, Beach, Badlands, Eroded Badlands, Wooded Badlands$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (50%)$(li)1 $(l:amazon/items/condorer_wheel)Condorer Wheel$(/l) (50%)$(li)1 $(l:fourze/items/astroswitches#clear_drill_switch)Clear Drill Switch$(/l) (4%)"
 		}
 	]
 }

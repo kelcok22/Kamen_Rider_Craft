@@ -7,11 +7,15 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:rideplayer",
-			"text": "Spawn locations: Crimson Forest"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 30$(br2)Drops$(li)3-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/gashatrophies#mighty_action_x_gasha_trophy)Mighty Action X Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#taddle_quest_gasha_trophy)Taddle Quest Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#bang_bang_shooting_gasha_trophy)Bang Bang Shooting Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#bakusou_bike_gasha_trophy)Bakusou Bike Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/rider_gashats#unfinished_kamen_rider_chronicle_gashat)Unfinished Chronicle Gashat$(/l) (33.3%)$(br2)Bosses$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l) (5%)$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l) (5%)"
+			"text": "Spawn locations: Crimson Forest$(br2)Drops$(li)3-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/gashatrophies#mighty_action_x_gasha_trophy)Mighty Action X Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#taddle_quest_gasha_trophy)Taddle Quest Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#bang_bang_shooting_gasha_trophy)Bang Bang Shooting Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/gashatrophies#bakusou_bike_gasha_trophy)Bakusou Bike Gasha Trophy$(/l) (16.7%)$(li)1 $(l:ex_aid/items/rider_gashats#unfinished_kamen_rider_chronicle_gashat)Unfinished Chronicle Gashat$(/l) (33.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Bosses$(li)$(l:ex_aid/mobs/para-dx)Kamen Rider Para-DX$(/l) (5%)$(li)$(l:ex_aid/mobs/poppy_red_mob)Kamen Rider Poppy$(/l) (5%)"
 		}
 	]
 }

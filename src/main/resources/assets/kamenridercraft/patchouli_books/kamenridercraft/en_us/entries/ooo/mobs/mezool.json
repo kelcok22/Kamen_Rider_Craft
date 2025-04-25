@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:mezool_mob",
-			"text": "Has a 2% chance to spawn from a $(l:ooo/mobs/yummy)Yummy$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br)Health: 60"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_mezool)Greeed Belt (Mezool)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#shachi_medal)Shachi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#unagi_medal)Unagi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#tako_medal)Tako Medal$(/l) (33.3%)"
+			"text": "Has a 2% chance to spawn from a $(l:ooo/mobs/yummy)Yummy$(/l)$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_mezool)Greeed Belt (Mezool)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#shachi_medal)Shachi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#unagi_medal)Unagi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#tako_medal)Tako Medal$(/l) (33.3%)"
 		}
 	]
 }

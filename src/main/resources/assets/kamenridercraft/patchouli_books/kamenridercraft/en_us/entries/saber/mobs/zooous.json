@@ -7,11 +7,15 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:zooous",
-			"text": "Has a 2% chance to spawn from a $(l:saber/mobs/shimi)Shimi$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br)Health: 100"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Health: 100$(br2)Special moves:$(li)Evolves into $(l:saber/mobs/zooous_predator)Zooous Predator$(/l) when killed while you have the $(l:saber/items/wonder_ride_books#tategami_hyoujuu_senki_wonder_ride_book)Tategami Hyoujuusenki Wonder Ride Book$(/l) in your inventory$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/great_book_fragment)Great Book Fragment$(/l) (25%)$(li)1 $(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)King Lion Daisenki Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus$(/l), $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki$(/l), and $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista$(/l) Wonder Ride Books in your inventory)"
+			"text": "Has a 2% chance to spawn from a $(l:saber/mobs/shimi)Shimi$(/l)$(br2)Special moves:$(li)Evolves into $(l:saber/mobs/zooous_predator)Zooous Predator$(/l) when killed while you have the $(l:saber/items/wonder_ride_books#tategami_hyoujuu_senki_wonder_ride_book)Tategami Hyoujuusenki Wonder Ride Book$(/l) in your inventory$(br2)Drops$(li)4-6 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l)$(li)1 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Book$(/l)$(li)1 $(l:saber/items/great_book_fragment)Great Book Fragment$(/l) (25%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1 $(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)King Lion Daisenki Wonder Ride Book$(/l) (with the $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)Tenkuu no Pegasus$(/l), $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)Lion Senki$(/l), and $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)Peter Fantasista$(/l) Wonder Ride Books in your inventory)"
 		}
 	]
 }

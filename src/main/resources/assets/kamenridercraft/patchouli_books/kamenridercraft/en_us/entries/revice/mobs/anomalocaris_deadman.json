@@ -2,16 +2,16 @@
 	"name": "Anomalocaris Deadman",
 	"icon": "kamenridercraft:revice_logo",
 	"category": "kamenridercraft:revice/mobs",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:anomalocaris_deadman",
-			"text": "Spawns from the $(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br)Health: 120"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 120$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#anomalocaris_vistamp)Anomalocaris Vistamp$(/l)$(li)1 $(l:revice/items/vistamps#thunder_gale_vistamp)Thunder Gale Vistamp$(/l) (20%)$(li)1 $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l) (60%)$(li)1 $(l:revice/arsenal/paranegro)Paranegro$(/l) (20%)"
+			"text": "Spawns from the $(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l)$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/vistamps#anomalocaris_vistamp)Anomalocaris Vistamp$(/l)$(li)1 $(l:revice/items/vistamps#thunder_gale_vistamp)Thunder Gale Vistamp$(/l) (20%)$(li)1 $(l:revice/items/vistamps#proto_planarian_vistamp)Planarian Proto Vistamp$(/l) (60%)$(li)1 $(l:revice/arsenal/paranegro)Paranegro$(/l) (20%)"
 		}
 	]
 }

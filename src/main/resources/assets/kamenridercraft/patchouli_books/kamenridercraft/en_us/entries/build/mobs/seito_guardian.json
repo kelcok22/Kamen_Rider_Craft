@@ -7,11 +7,15 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:seito_guardian",
-			"text": "Spawn locations: $(l:build/structures/pandora_tower)Pandora Tower$(/l), Badlands, Bamboo Jungle, Desert, Eroded Badlands, Jungle, Mangrove Swamp, Savanna, Savanna Plateau, Sparse Jungle, Stony Peaks, Swamp, Warm Ocean, Windswept Savanna, Wooded Badlands"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (71.4%)$(li)1 $(l:build/items/fullbottles#tora_full_bottle)Tora Fullbottle$(/l) (14.2%)$(li)1 $(l:build/items/fullbottles#ufo_full_bottle)UFO Fullbottle$(/l) (14.2%)$(br2)Bosses$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l) (5%)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l) (5%)"
+			"text": "Spawn locations: $(l:build/structures/pandora_tower)Pandora Tower$(/l), Badlands, Bamboo Jungle, Desert, Eroded Badlands, Jungle, Mangrove Swamp, Savanna, Savanna Plateau, Sparse Jungle, Stony Peaks, Swamp, Warm Ocean, Windswept Savanna, Wooded Badlands$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (71.4%)$(li)1 $(l:build/items/fullbottles#tora_full_bottle)Tora Fullbottle$(/l) (14.2%)$(li)1 $(l:build/items/fullbottles#ufo_full_bottle)UFO Fullbottle$(/l) (14.2%)$(br2)Bosses on next page"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Bosses$(li)$(l:build/mobs/build)Kamen Rider Build (Full Potential)$(/l) (5%)$(li)$(l:build/mobs/needle_smash)Needle Smash$(/l) (5%)"
 		}
 	]
 }

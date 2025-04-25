@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ari_commando",
-			"text": "Spawn locations: Windswept Hills, Snowy Plains, Desert, Forest, Snowy Slopes, Dark Forest, Old Growth Pine Taiga, Windswept Forest, Badlands, Eroded Badlands, Wooded Badlands"
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (50%)$(li)1 $(l:skyrider/items/tornado_core)Tornado Core$(/l) (50%)"
+			"text": "Spawn locations: Windswept Hills, Snowy Plains, Desert, Forest, Snowy Slopes, Dark Forest, Old Growth Pine Taiga, Windswept Forest, Badlands, Eroded Badlands, Wooded Badlands$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (50%)$(li)1 $(l:skyrider/items/tornado_core)Tornado Core$(/l) (50%)"
 		}
 	]
 }

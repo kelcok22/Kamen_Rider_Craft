@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:jyamatorider",
-			"text": "Has a 10% chance to spawn from a $(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br)Health: 60"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Health: 60$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (50%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (50%)$(li)1 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) (44.4%)$(li)1 $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (16.7%)$(li)1 $(l:geats/items/rider_core_ids#discore_id)DisCore ID$(/l) (16.7%)$(li)1 $(l:geats/items/desire_cards#boost_mkii_wish_card)Boost MKII Desire Card$(/l) (11.1%)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (11.1%)"
+			"text": "Has a 10% chance to spawn from a $(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l) (50%)$(li)1 $(l:geats/items/hatena_mission_box)Hatena Mission Box$(/l) (50%)$(li)1 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)Feverslot Buckle$(/l) (44.4%)$(li)1 $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (16.7%)$(li)1 $(l:geats/items/rider_core_ids#discore_id)DisCore ID$(/l) (16.7%)$(li)1 $(l:geats/items/desire_cards#boost_mkii_wish_card)Boost MKII Desire Card$(/l) (11.1%)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (11.1%)"
 		}
 	]
 }

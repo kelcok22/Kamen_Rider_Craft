@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:redyue",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#redyue_boss_block)Redyue Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br)Health: 300"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 300$(br2)Drops$(li)1 $(l:gaim/items/lockseeds#silver_ringo_lockseed)Silver Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/lockseeds#yomotsu_heguri_lockseed)Yomotsuheguri Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragments#lord_baron_fragment_2)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/lockseeds#helheim_lockseed)Helheim Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/dau)Dau$(/l) (33.3%)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#redyue_boss_block)Redyue Boss Block$(/l)$(br2)Drops$(li)1 $(l:gaim/items/lockseeds#silver_ringo_lockseed)Silver Ringo Lockseed$(/l)$(li)1 $(l:gaim/items/lockseeds#yomotsu_heguri_lockseed)Yomotsuheguri Lockseed$(/l)$(li)1 $(l:gaim/items/lord_baron_fragments#lord_baron_fragment_2)Lord Baron Fragment$(/l)$(li)1 $(l:gaim/items/lockseeds#helheim_lockseed)Helheim Lockseed$(/l) (50%)$(li)1 $(l:gaim/arsenal/dau)Dau$(/l) (33.3%)"
 		}
 	]
 }

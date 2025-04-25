@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:goda",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#goda_boss_block)Goda Boss Block$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO 10th: Core Medal of Resurrection (2022, V-Cinema film)$(br2)Health: 350$(br2)Drops$(li)9-11 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#mukade_goda_medal)Goda Mukade Medal$(/l)$(li)1 $(l:ooo/items/core_medals#hachi_goda_medal)Goda Hachi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#ari_goda_medal)Goda Ari Medal$(/l)"
+			"text": "Health: 350$(br2)Summoned from a $(l:misc/blocks/boss_blocks#goda_boss_block)Goda Boss Block$(/l)$(br2)Drops$(li)9-11 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#mukade_goda_medal)Goda Mukade Medal$(/l)$(li)1 $(l:ooo/items/core_medals#hachi_goda_medal)Goda Hachi Medal$(/l)$(li)1 $(l:ooo/items/core_medals#ari_goda_medal)Goda Ari Medal$(/l)"
 		}
 	]
 }

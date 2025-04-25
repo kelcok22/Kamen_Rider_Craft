@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:destron_combatman",
-			"text": "Spawn locations: Desert, Windswept Hills, Forest, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Birch Forest, Snowy Taiga, Old Growth Pine Taiga, Windswept Forest, Badlands, Eroded Badlands, Wooded Badlands"
+			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (33%)$(li)1 $(l:v3/items/double_typhoon_core)Double Typhoon Core$(/l) (33%)$(li)1 $(l:v3/items/riderman_belt_core)Rider Buckle Core$(/l) (26%)$(li)1 $(l:v3/items/blue_double_typhoon_core)Blue Double Typhoon Core$(/l) (6.7%)"
+			"text": "Spawn locations: Desert, Windswept Hills, Forest, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Birch Forest, Snowy Taiga, Old Growth Pine Taiga, Windswept Forest, Badlands, Eroded Badlands, Wooded Badlands$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (33%)$(li)1 $(l:v3/items/double_typhoon_core)Double Typhoon Core$(/l) (33%)$(li)1 $(l:v3/items/riderman_belt_core)Rider Buckle Core$(/l) (26%)$(li)1 $(l:v3/items/blue_double_typhoon_core)Blue Double Typhoon Core$(/l) (6.7%)"
 		}
 	]
 }

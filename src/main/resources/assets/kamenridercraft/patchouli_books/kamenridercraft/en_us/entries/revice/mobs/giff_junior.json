@@ -2,16 +2,20 @@
 	"name": "Giff Junior",
 	"icon": "kamenridercraft:revice_logo",
 	"category": "kamenridercraft:revice/mobs",
-	"sortnum": 0,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:giff_junior",
-			"text": "Spawn locations: Plains, Sunflower Plains, Windswept Hills, Snowy Taiga"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (50%)$(li)1 $(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l) (25%)$(li)1 $(l:revice/items/vistamps#megalodon_vistamp)Megalodon Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#eagle_vistamp)Eagle Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#giff_junior_vistamp)Giff Junior Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#rex_vistamp_metal)Rex Vistamp (Black Metal Plating)$(/l) (6.3%)$(br2)Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2.5%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2.5%)"
+			"text": "Spawn locations: Plains, Sunflower Plains, Windswept Hills, Snowy Taiga$(br2)Drops$(li)2-4 $(l:revice/items/proto_vistamp)Proto Vistamps$(/l)$(li)1 $(l:revice/items/proto_vistamp)Proto Vistamp$(/l) (50%)$(li)1 $(l:revice/items/vistamps#rex_vistamp)Rex Vistamp$(/l) (25%)$(li)1 $(l:revice/items/vistamps#megalodon_vistamp)Megalodon Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#eagle_vistamp)Eagle Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#giff_junior_vistamp)Giff Junior Vistamp$(/l) (6.3%)$(li)1 $(l:revice/items/vistamps#rex_vistamp_metal)Rex Vistamp (Black Metal Plating)$(/l) (6.3%)$(br2)Bosses on next page"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2.5%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2.5%)"
 		}
 	]
 }

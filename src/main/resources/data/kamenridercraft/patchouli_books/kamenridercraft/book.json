@@ -1,6 +1,6 @@
 {
     "name": "Kamen Rider Craft",
-    "landing_text": "Everything you need to know about the Kamen Rider Craft mod is in this guide.$(br2)Details regarding the mod's blocks, effects, and villager professions are in the Misc. Rider Info section.",
+    "landing_text": "Everything you need to know about the Kamen Rider Craft mod is in this guide.",
     "subtitle": "Mod Documentation",
     "creative_tab": "kamenridercraft:krc_997_misc_tab",
 	"model": "kamenridercraft:patchouli_guide",

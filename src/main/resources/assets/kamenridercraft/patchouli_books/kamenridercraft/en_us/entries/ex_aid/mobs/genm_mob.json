@@ -7,11 +7,15 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:genm_mob",
-			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/bugster)Bugster$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br)Health: 45"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Health: 45$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)"
+			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/bugster)Bugster$(/l)$(br2)Drops$(li)2-4 $(l:ex_aid/items/blank_gashat)Blank Gashats$(/l)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)Proto Bang Bang Shooting Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Mighty Action X Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_taddle_quest_gashat)Proto Taddle Quest Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)Proto Gekitotsu Robots Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)Proto Shakariki Sports Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)Proto Jet Combat Gashat$(/l) (10%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)Proto DoReMiFa Beat Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)Proto Bakusou Bike Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)Proto Giri Giri Chambara Gashat$(/l) (10%)$(li)1 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)Shakariki Sports Gasha Trophy$(/l) (10%)"
 		}
 	]
 }
