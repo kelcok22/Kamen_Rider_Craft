@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:roidmude",
-			"text": "Spawn locations: Cold Ocean, Deep Cold Ocean, Deep Frozen Ocean, Frozen Ocean, Frozen Peaks, Frozen River, Grove, Ice Spikes, Jagged Peaks, Old Growth Pine Taiga, Old Growth Spruce Taiga, Snowy Beach, Snowy Plains, Snowy Slopes, Snowy Taiga, Stony Shore, Taiga, Windswept Forest, Windswept Gravelly Hills, Windswept Hills"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Health: 30$(br2)Drops$(li)3 $(l:drive/items/shift_alloy)Shift Alloy$(/l) (50%)$(li)1 $(l:drive/items/shift_cars#speedshift)Shift Speed$(/l) (50%)$(li)1 $(l:drive/items/viral_cores#viral_core_cobara)Cobra Viral Core$(/l) (33.3%)$(li)1 $(l:drive/items/viral_cores#viral_core_spider)Spider Viral Core$(/l) (33.3%)$(li)1 $(l:drive/items/viral_cores#viral_core_bat)Bat Viral Core$(/l) (33.3%)$(br2)Bosses$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l) (5%)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l) (5%)"
+			"text": "Spawn locations: Cold Ocean, Deep Cold Ocean, Deep Frozen Ocean, Frozen Ocean, Frozen Peaks, Frozen River, Grove, Ice Spikes, Jagged Peaks, Old Growth Pine Taiga, Old Growth Spruce Taiga, Snowy Beach, Snowy Plains, Snowy Slopes, Snowy Taiga, Stony Shore, Taiga, Windswept Forest, Windswept Gravelly Hills, Windswept Hills$(br2)Drops$(li)3 $(l:drive/items/shift_alloy)Shift Alloy$(/l) (50%)$(li)1 $(l:drive/items/shift_cars#speedshift)Shift Speed$(/l) (50%)$(li)1 $(l:drive/items/viral_cores#viral_core_cobara)Cobra Viral Core$(/l) (33.3%)$(li)1 $(l:drive/items/viral_cores#viral_core_spider)Spider Viral Core$(/l) (33.3%)$(li)1 $(l:drive/items/viral_cores#viral_core_bat)Bat Viral Core$(/l) (33.3%)$(br2)Bosses$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l) (5%)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l) (5%)"
 		}
 	]
 }

@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:kurokage_trooper",
-			"text": "Spawn locations: $(l:gaim/structures/yggdrasil_base)Yggdrasil Research Camp$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/energy_lockseeds#matsubokkuri_energy_lockseed)Matsubokkuri Energy Lockseed$(/l) (5%)$(li)1 $(l:gaim/items/lockseeds#fake_donguri_lockseed)Donguri Lockseed$(/l) (5%)$(li)1 $(l:gaim/devices/sengoku_driver#sengoku_driver_kurokage_troopers)Sengoku Driver (Kurokage Troopers)$(/l) (15%)$(br2)Bosses$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l) (2.5%)$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l) (2.5%)$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l) (2.5%)$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l) (2.5%)"
+			"text": "Spawns within an $(l:gaim/structures/yggdrasil_base)Yggdrasil Research Camp$(/l)$(br2)Drops$(li)2-4 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/energy_lockseeds#matsubokkuri_energy_lockseed)Matsubokkuri Energy Lockseed$(/l) (5%)$(li)1 $(l:gaim/items/lockseeds#fake_donguri_lockseed)Donguri Lockseed$(/l) (5%)$(li)1 $(l:gaim/devices/sengoku_driver#sengoku_driver_kurokage_troopers)Sengoku Driver (Kurokage Troopers)$(/l) (15%)$(br2)Bosses$(li)$(l:gaim/mobs/zangetsu_shin)Kamen Rider Zangetsu Shin$(/l) (2.5%)$(li)$(l:gaim/mobs/marika)Kamen Rider Marika$(/l) (2.5%)$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l) (2.5%)$(li)$(l:gaim/mobs/sigurd)Kamen Rider Sigurd$(/l) (2.5%)"
 		}
 	]
 }

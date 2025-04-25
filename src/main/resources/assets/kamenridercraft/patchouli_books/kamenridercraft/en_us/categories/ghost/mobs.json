@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ghost/main",
-    "name": "Ghost Mobs",
-    "description": "Every mob from or relating to the show, Kamen Rider Ghost.",
+    "name": "Gamma Commando",
+    "description": "",
     "icon": "kamenridercraft:ghost_logo",
     "sortnum": 4
 }

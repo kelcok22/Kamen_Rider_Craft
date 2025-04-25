@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:mashin_chaser",
-			"text": "Has a 5% chance to spawn from a $(l:drive/mobs/roidmude)Roidmude$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br)Health: 100"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Health: 100$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_cobara)Chaser Cobra Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_spider)Chaser Spider Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_bat)Chaser Bat Viral Core$(/l) (20%)$(li)1 $(l:drive/items/roidmude_cores#protozero_core)Roidmude Core Protozero$(/l) (10%)$(li)1 $(l:drive/items/shift_cars#proto_speedshift)Shift Proto Speed$(/l) (30%)"
+			"text": "Has a 5% chance to spawn from a $(l:drive/mobs/roidmude)Roidmude$(/l)$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_cobara)Chaser Cobra Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_spider)Chaser Spider Viral Core$(/l) (20%)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_bat)Chaser Bat Viral Core$(/l) (20%)$(li)1 $(l:drive/items/roidmude_cores#protozero_core)Roidmude Core Protozero$(/l) (10%)$(li)1 $(l:drive/items/shift_cars#proto_speedshift)Shift Proto Speed$(/l) (30%)"
 		}
 	]
 }

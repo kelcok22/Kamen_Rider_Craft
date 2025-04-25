@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:black_satan_soldier",
-			"text": "Spawn locations: Plains, Sunflower Plains, Windswept Hills, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains, Jungle, Birch Forest, Dark Forest, Windswept Forest, Savanna, Savanna Plateau, Windswept Savanna, Badlands, Eroded Badlands, Wooded Badlands"
+			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br)Health: 30"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Health: 30$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (40%)$(li)1 $(l:stronger/items/electrer_core)Electrer Core$(/l) (40%)$(li)1 $(l:stronger/items/charge_up)Super Electronic Dynamo$(/l) (4%)$(li)1 $(l:stronger/items/tackle_core)Tackle Core$(/l) (16%)"
+			"text": "Spawn locations: Plains, Sunflower Plains, Windswept Hills, Swamp, Mangrove Swamp, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains, Jungle, Birch Forest, Dark Forest, Windswept Forest, Savanna, Savanna Plateau, Windswept Savanna, Badlands, Eroded Badlands, Wooded Badlands$(br2)Drops$(li)2-4 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:misc/items/rider_circuit)Rider Circuit$(/l) (40%)$(li)1 $(l:stronger/items/electrer_core)Electrer Core$(/l) (40%)$(li)1 $(l:stronger/items/charge_up)Super Electronic Dynamo$(/l) (4%)$(li)1 $(l:stronger/items/tackle_core)Tackle Core$(/l) (16%)"
 		}
 	]
 }

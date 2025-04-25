@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:knight_soldier_mob",
-			"text": "Spawns within $(l:ooo/structures/gara_edo_village)Gara's Edo Village$(/l)"
+			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider OOO Wonderful: The Shogun and the 21 Core Medals (2011, movie)$(br2)Health: 50$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#panda_medal)Panda Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#yadokari_medal)Yadokari Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#kangaroo_medal)Kangaroo Medal$(/l) (33.3%)"
+			"text": "Health: 50$(br2)Spawns within $(l:ooo/structures/gara_edo_village)Gara's Edo Village$(/l)$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/core_medals#panda_medal)Panda Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#yadokari_medal)Yadokari Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#kangaroo_medal)Kangaroo Medal$(/l) (33.3%)"
 		}
 	]
 }

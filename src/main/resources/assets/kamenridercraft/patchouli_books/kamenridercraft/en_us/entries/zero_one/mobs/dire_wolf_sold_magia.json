@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:dire_wolf_sold_magia",
-			"text": "Has a 2% chance to spawn from a $(l:zero_one/mobs/battle_raider)Battle Raider$(/l)"
+			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Zero-One Others: Kamen Rider MetsubouJinrai (2021, V-Cinema film)$(br2)Health: 150$(br2)Drops$(li)3-5 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#dire_wolf_zetsumerisekey)Dire Wolf Zetsumerisekey$(/l)"
+			"text": "Health: 150$(br2)Has a 2% chance to spawn from a $(l:zero_one/mobs/battle_raider)Battle Raider$(/l)$(br2)Drops$(li)3-5 $(l:zero_one/items/hiden_metal)Hiden Metal$(/l)$(li)1 $(l:zero_one/items/zetsumerisekeys#dire_wolf_zetsumerisekey)Dire Wolf Zetsumerisekey$(/l)"
 		}
 	]
 }

@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:elementary_inves_red",
-			"text": "Spawn locations: $(l:gaim/dimensions/helheim)Helheim$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br)Health: 45"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Health: 45$(br2)Spawns in red, blue, and green variants$(br2)Drops$(li)1-3 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/lockseeds#orange_lockseed)Orange Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/lockseeds#ichigo_lockseed)Ichigo Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/lockseeds#pine_lockseed)Pine Lockseed$(/l) (6.7%)"
+			"text": "Spawn locations: $(l:gaim/dimensions/helheim)Helheim$(/l)$(br2)Spawns in red, blue, and green variants$(br2)Drops$(li)1-3 $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l)$(li)1 $(l:gaim/items/lockseeds#orange_lockseed)Orange Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/lockseeds#ichigo_lockseed)Ichigo Lockseed$(/l) (6.7%)$(li)1 $(l:gaim/items/lockseeds#pine_lockseed)Pine Lockseed$(/l) (6.7%)"
 		}
 	]
 }

@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:muchiri_mob",
-			"text": "Has a 3.3% chance to spawn from a $(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)"
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br)Health: 60"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Health: 60$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_muchiri)Greeed Belt (Muchiri)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#mukade_medal)Mukade Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#hachi_medal)Hachi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#ari_medal)Ari Medal$(/l) (33.3%)"
+			"text": "Has a 3.3% chance to spawn from a $(l:w/mobs/foundation_x_masquerade)Foundation X Masquerade$(/l)$(br2)Drops$(li)3-5 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (90%)$(li)1 $(l:ooo/devices/greeed_belt#greeed_blet_muchiri)Greeed Belt (Muchiri)$(/l) (10%)$(li)1 $(l:ooo/items/core_medals#mukade_medal)Mukade Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#hachi_medal)Hachi Medal$(/l) (33.3%)$(li)1 $(l:ooo/items/core_medals#ari_medal)Ari Medal$(/l) (33.3%)"
 		}
 	]
 }
