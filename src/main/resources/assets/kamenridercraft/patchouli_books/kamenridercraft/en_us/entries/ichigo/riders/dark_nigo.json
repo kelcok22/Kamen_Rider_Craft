@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dark Nigo",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_dark_nigo)Typhoon (Dark Nigo)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:ichigo/devices/typhoon#typhoon_dark_nigo)Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

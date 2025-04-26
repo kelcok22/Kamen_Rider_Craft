@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider TheBee",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT Buckle (TheBee)$(/l)$(br2)Status Effects:$(li)Slowness$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT Buckle$(/l)$(br2)Status Effects:$(li)Slowness$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider TheBee",
-			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT Buckle (TheBee)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Jump Boost V"
+			"text": "Appears in:$(li)Kamen Rider Kabuto (2006, TV show)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT Buckle$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Jump Boost V"
 		}
 	]
 }

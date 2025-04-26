@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider G3",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/g_buckle#g3_belt)G-Buckle (G3)$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Transforms with the $(l:agito/devices/g_buckle#g3_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
 		}
 	]
 }

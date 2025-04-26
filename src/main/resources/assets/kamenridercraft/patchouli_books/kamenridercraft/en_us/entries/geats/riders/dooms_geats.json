@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dooms Geats",
-			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_dooms_geats)Desire Driver (Dooms Geats)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_dooms_geats)Desire Driver$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
 		}
 	]
 }

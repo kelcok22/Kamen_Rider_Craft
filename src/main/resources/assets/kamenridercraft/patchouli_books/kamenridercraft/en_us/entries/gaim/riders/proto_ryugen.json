@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Proto Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_proto_ryugen)Sengoku Driver (Proto Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Zangetsu: -Gaim Gaiden- (2019, stage show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_proto_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
 		}
 	]
 }

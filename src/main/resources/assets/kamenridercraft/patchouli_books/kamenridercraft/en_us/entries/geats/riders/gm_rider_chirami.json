@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)Core ID Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Monster Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Monster Buckle Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Propeller Buckle Effects:$(li)Slow Falling VII$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "GM Rider",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver (GM)$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_gm_chirami)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
 		}
 	]
 }

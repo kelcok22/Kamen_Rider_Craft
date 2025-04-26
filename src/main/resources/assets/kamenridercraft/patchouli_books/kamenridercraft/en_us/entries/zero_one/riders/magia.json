@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Berotha Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_berotha)Zetsumeriser (Berotha Magia)$(/l)$(br2)Status Effects:$(li)Speed III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_berotha)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kuehne Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_kuehne)Zetsumeriser (Kuehne Magia)$(/l)$(br2)Status Effects:$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_kuehne)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ekal Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_ekal)Zetsumeriser (Ekal Magia)$(/l)$(br2)Status Effects:$(li)Resistance III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_ekal)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Neohi Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_neohi)Zetsumeriser (Neohi Magia)$(/l)$(br2)Status Effects:$(li)Water Breathing III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_neohi)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Water Breathing III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Onycho Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_onycho)Zetsumeriser (Onycho Magia)$(/l)$(br2)Status Effects:$(li)Resistance III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_onycho)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Vicarya Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_vicarya)Zetsumeriser (Vicarya Magia)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_vicarya)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Gaeru Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_gaeru)Zetsumeriser (Gaeru Magia)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_gaeru)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Mammoth Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_mammoth)Zetsumeriser (Mammoth Magia)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_mammoth)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dodo Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo)Zetsumeriser (Dodo Magia)$(/l)$(br2)Status Effects:$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dodo Magia Custom",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom)Zetsumeriser (Dodo Magia Custom)$(/l)$(br2)Status Effects:$(li)Resistance III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dodo Magia Custom Two",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom_two)Zetsumeriser (Dodo Magia Custom Two)$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom_two)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Arsino Magia",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_arsino)Zetsumeriser (Arsino Magia)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/zetsumeriser#zetsumeriser_arsino)Zetsumeriser$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Strength III"
 		}
 	]
 }

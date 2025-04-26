@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kirameki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#kiramekidriver)Ongekiko (Kirameki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Haste III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#kiramekidriver)Ongekiko$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Haste III$(li)Strength II"
 		}
 	]
 }

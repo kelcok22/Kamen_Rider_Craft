@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Sylphi",
-			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_sylphi)Sengoku Driver (Sylphi)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Saturation$(li)Strength III"
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_sylphi)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Saturation$(li)Strength III"
 		}
 	]
 }

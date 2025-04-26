@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Baron (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed III$(li)Regeneration II$(li)Haste II$(li)Saturation$(li)Strength IV"
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Baron (2015, V-Cinema film)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed III$(li)Regeneration II$(li)Haste II$(li)Saturation$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_baron_shin)Genesis Driver (Baron)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_baron_shin)Genesis Driver$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Haste$(li)Saturation$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Saturation$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Saturation$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Baron",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver (Baron)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_baron)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Fire Resistance"
 		}
 	]
 }

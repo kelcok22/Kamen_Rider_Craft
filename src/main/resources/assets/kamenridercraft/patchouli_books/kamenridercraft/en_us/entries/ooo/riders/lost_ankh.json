@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ankh (Lost)",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Fire Resistance$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Fire Resistance$(li)Strength II"
 		}
 	]
 }

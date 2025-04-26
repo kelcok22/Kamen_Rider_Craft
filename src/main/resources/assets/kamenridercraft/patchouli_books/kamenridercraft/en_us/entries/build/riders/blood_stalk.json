@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Blood Stalk",
-			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) and $(l:build/devices/transteam_gun#transteam_gun_blood_stalk)Transteam Gun (Blood Stalk)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Transforms with the $(l:build/arsenal/transteam_gun)Transteam Gun$(/l) and $(l:build/devices/transteam_gun#transteam_gun_blood_stalk)Transteam Gun (Belt)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance$(li)Haste III$(li)Strength"
 		}
 	]
 }

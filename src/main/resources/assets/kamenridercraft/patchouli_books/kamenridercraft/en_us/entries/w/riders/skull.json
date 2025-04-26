@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Skull",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Skull",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver (Skull)$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider OOO & W Featuring Skull: Movie War Core (2010, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_skull)Lostdriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Resistance$(li)Jump Boost III$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)"
 		}
 	]
 }

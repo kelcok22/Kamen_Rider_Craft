@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Get Over Demons",
-			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:revice/devices/demons_driver#get_over_demons_driver)Demons Driver (Get Over Demons)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Strength IV$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Transforms with the $(l:revice/devices/demons_driver#get_over_demons_driver)Demons Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Strength IV$(li)Flying"
 		}
 	]
 }

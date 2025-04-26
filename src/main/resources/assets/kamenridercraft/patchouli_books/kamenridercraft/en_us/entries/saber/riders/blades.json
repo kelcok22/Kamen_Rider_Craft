@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Tenkuu no Pegasus Effects:$(li)Haste III$(li)Jump Boost V$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Peter Fantasista Effects:$(li)Speed III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Water Breathing$(li)Haste II$(li)Jump Boost III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Water Breathing$(li)Haste II$(li)Jump Boost III$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Strength IV$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Strength IV$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed$(li)Resistance III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Specter x Blades (2021, TTFC special)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed$(li)Resistance III$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Brave Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Tri Cerberus Effects:$(li)Haste III$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Genbu Shinwa Effects:$(li)Resistance II$(li)Strength$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Jaaku Dragon Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Eternal Phoenix Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste$(li)Flying$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Saiyuu Journey Effects:$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Saiyuu Journey Effects:$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Lamp do Alangina Effects:$(li)Slash$(li)Strength (with sword)$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)King of Arthur Effects:$(li)Speed III$(li)Strength II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)King of Arthur Effects:$(li)Speed III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Jackun to Domamenoki Effects:$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Jackun to Domamenoki Effects:$(li)Haste$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarutobi Ninjaden Effects:$(li)Speed III$(li)Jump Boost VII"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarutobi Ninjaden Effects:$(li)Speed III$(li)Jump Boost VII"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kobuta 3Kyoudai Effects:$(li)Resistance II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kobuta 3Kyoudai Effects:$(li)Resistance II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Hanselnuts to Gretel Effects:$(li)Speed II$(li)Haste III$(li)Saturation"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Hanselnuts to Gretel Effects:$(li)Speed II$(li)Haste III$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bremen no Rock Band Effects:$(li)Speed V$(li)Haste V"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bremen no Rock Band Effects:$(li)Speed V$(li)Haste V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kirin no Ongaeshi Effects:$(li)Speed III$(li)Haste III"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Kirin no Ongaeshi Effects:$(li)Speed III$(li)Haste III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarukani Wars Effects:$(li)Resistance II$(li)Strength II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Sarukani Wars Effects:$(li)Resistance II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bakusou Usagi to Kame Effects:$(li)Speed VI"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Bakusou Usagi to Kame Effects:$(li)Speed VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Houshin Kamen Engi Effects:$(li)Speed II$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Houshin Kamen Engi Effects:$(li)Speed II$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Tsuki no Hime Kaguyan Effects:$(li)Night Vision II$(li)Haste III$(li)Speed II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Tsuki no Hime Kaguyan Effects:$(li)Night Vision II$(li)Haste III$(li)Speed II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Osha Jizou San Effects:$(li)Saturation II$(li)Luck III"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Osha Jizou San Effects:$(li)Saturation II$(li)Luck III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Issun Bushi Effects:$(li)Haste V$(li)Speed V"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Issun Bushi Effects:$(li)Haste V$(li)Speed V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daishougun Momoichirou Effects:$(li)Saturation III$(li)Haste II$(li)Speed II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daishougun Momoichirou Effects:$(li)Saturation III$(li)Haste II$(li)Speed II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daikengou Urashimajirou Effects:$(li)Saturation III$(li)Resistance II$(li)Speed II"
+			"text": "Appears in:$(li)Draw Sword! Seiken Swordriver Great Encyclopedia (2020, website)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daikengou Urashimajirou Effects:$(li)Saturation III$(li)Resistance II$(li)Speed II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -422,7 +422,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Blades",
-			"text": "Appears in:$(li)SG08 Daiyokozuna Kinzaburou Wonder Ride Book (2021, toyline)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver (Blades)$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daiyokozuna Kinzaburou Effects:$(li)Haste II$(li)Strength II"
+			"text": "Appears in:$(li)SG08 Daiyokozuna Kinzaburou Wonder Ride Book (2021, toyline)$(br2)Transforms with the $(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)Seiken Swordriver$(/l)$(br2)Lion Senki Effects:$(li)Slash$(li)Strength (with sword)$(li)Water Breathing$(li)Haste$(br2)Daiyokozuna Kinzaburou Effects:$(li)Haste II$(li)Strength II"
 		}
 	]
 }

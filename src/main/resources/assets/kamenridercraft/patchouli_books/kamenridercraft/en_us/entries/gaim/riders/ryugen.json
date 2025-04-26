@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Night Vision$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste II$(li)Saturation$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh~ (2014, Hyper Battle Video)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gaim",
-			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Haste II$(li)Saturation$(li)Strength IV"
+			"text": "Appears in:$(li)Novel: Kamen Rider Gaim (2016, novel)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by $(l:gaim/riders/gaim)Gaim,$(/l) $(l:gaim/riders/ryugen)Ryugen,$(/l) $(l:gaim/riders/zangetsu)Zangetsu,$(/l) $(l:gaim/riders/bravo)Bravo,$(/l) and $(l:gaim/riders/knuckle)Knuckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Haste II$(li)Saturation$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen Yomi",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Wither VI$(li)Water Breathing$(li)Night Vision$(li)Haste IV$(li)Saturation$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Wither VI$(li)Water Breathing$(li)Night Vision$(li)Haste IV$(li)Saturation$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Unused files of Kamen Rider: Battride War II (2014, PS3 game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_ryugen_shin)Genesis Driver (Ryugen)$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Unused files of Kamen Rider: Battride War II (2014, PS3 game)$(br2)Transforms with the $(l:gaim/devices/genesis_driver#genesis_driver_ryugen_shin)Genesis Driver$(/l)$(br2)This form can be used by any Genesis Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Night Vision$(li)Haste II$(li)Saturation$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Saturation$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Saturation$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Saturation$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider Gaim & Wizard: The Fateful Sengoku Movie Battle (2013, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Saturation$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryugen",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver (Ryugen)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_ryugen)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Speed$(li)Saturation$(li)Jump Boost II"
 		}
 	]
 }

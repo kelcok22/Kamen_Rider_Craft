@@ -394,7 +394,7 @@
     {
       "type": "patchouli:text",
       "title": "Kamen Rider Drive",
-      "text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost III$(li)Strength VI"
+      "text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)Mach Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost III$(li)Strength VI"
     },
     {
       "type": "patchouli:entity",
@@ -408,7 +408,7 @@
     {
       "type": "patchouli:text",
       "title": "Kamen Rider Drive",
-      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)Mach Driver Honoh (Drive)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Nausea II$(li)Jump Boost III$(li)Strength IV"
+      "text": "Appears in:$(li)Kamen Rider × Kamen Rider Ghost & Drive: Super Movie Wars Genesis (2015, movie)$(br2)Transforms with the $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)Mach Driver Honoh$(/l)$(br2)Status Effects:$(li)Speed III$(li)Nausea II$(li)Jump Boost III$(li)Strength IV"
     },
     {
       "type": "patchouli:entity",

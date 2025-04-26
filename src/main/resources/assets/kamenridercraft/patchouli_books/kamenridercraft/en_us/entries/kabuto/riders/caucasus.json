@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Caucasus",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT Buckle (Caucasus)$(/l)$(br2)Status Effects:$(li)Speed VIII$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost V$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT Buckle$(/l)$(br2)Status Effects:$(li)Speed VIII$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost V$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Caucasus",
-			"text": "Appears in:$(li)Cast Off Rider (2006, toyline)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT Buckle (Caucasus)$(/l)$(br2)Status Effects:$(li)Slowness$(li)Resistance II$(li)Night Vision"
+			"text": "Appears in:$(li)Cast Off Rider (2006, toyline)$(br2)Transforms with the $(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT Buckle$(/l)$(br2)Status Effects:$(li)Slowness$(li)Resistance II$(li)Night Vision"
 		}
 	]
 }

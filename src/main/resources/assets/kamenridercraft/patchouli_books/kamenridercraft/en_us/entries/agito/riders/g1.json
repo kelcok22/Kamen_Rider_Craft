@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Generation 1",
-			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/g_buckle#g1_belt)G-Buckle (G1)$(/l)$(br2)Status Effects:$(li)Weakness"
+			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/g_buckle#g1_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Weakness"
 		}
 	]
 }

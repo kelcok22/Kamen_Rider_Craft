@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Aguilera",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/week_endriver#week_endriver)Week Endriver (Aguilera)$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Speed II$(li)Anti Poison$(li)Haste II$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/week_endriver#week_endriver)Week Endriver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Speed II$(li)Anti Poison$(li)Haste II$(li)Flying"
 		}
 	]
 }

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Barlckxs",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)Ziku Driver (Barlckxs)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Barlckxs",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)Ziku Driver (Barlckxs)$(/l)$(br2)Status Effects:$(li)Giant III$(li)Haste II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)Ziku Driver$(/l)$(br2)Status Effects:$(li)Giant III$(li)Haste II$(li)Strength"
 		}
 	]
 }

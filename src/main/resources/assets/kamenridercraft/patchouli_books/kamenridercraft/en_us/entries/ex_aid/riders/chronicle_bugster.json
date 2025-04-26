@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Chronicle Bugster",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Muteki Gamer on the Last Stage! (2017, stage show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronicle_bugster)Gashacon Bugvisor II (Chronicle Bugster)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid: Muteki Gamer on the Last Stage! (2017, stage show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronicle_bugster)Gashacon Bugvisor II$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
 		}
 	]
 }

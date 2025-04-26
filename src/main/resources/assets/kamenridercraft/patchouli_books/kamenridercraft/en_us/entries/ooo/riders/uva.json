@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Uva",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_uva)Greeed Belt (Uva)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_uva)Greeed Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost III"
 		}
 	]
 }

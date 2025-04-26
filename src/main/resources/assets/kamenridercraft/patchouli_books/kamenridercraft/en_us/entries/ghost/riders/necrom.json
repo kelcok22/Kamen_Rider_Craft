@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",

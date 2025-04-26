@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Weakness"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Weakness"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Haste$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Haste$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Rider Hero Series (2002, toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Rider Hero Series (2002, toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed$(li)Haste$(li)Fire Resistance"
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed$(li)Haste$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle (Ryuki)$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ryuki)V Buckle$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
 		}
 	]
 }

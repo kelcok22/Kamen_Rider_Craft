@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Tsukuyomi",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_tsukuyomi)Ziku Driver (Tsukuyomi)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_tsukuyomi)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Haste III$(li)Strength IV"
 		}
 	]
 }

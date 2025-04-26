@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Durendal",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/royal_sword_of_logos_buckle#royal_sword_of_logos_buckle_durendal)Royal Sword of Logos Buckle (Durendal)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Transforms with the $(l:saber/devices/royal_sword_of_logos_buckle#royal_sword_of_logos_buckle_durendal)Royal Sword of Logos Buckle$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Strength IV"
 		}
 	]
 }

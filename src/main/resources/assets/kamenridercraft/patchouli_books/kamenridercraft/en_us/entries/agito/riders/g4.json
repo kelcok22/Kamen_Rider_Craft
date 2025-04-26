@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider G4",
-			"text": "Appears in:$(li)Kamen Rider Agito: Project G4 (2001, movie)$(br2)Transforms with the $(l:agito/devices/g_buckle#g4_belt)G-Buckle (G4)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Poison$(li)Resistance II"
+			"text": "Appears in:$(li)Kamen Rider Agito: Project G4 (2001, movie)$(br2)Transforms with the $(l:agito/devices/g_buckle#g4_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Speed III$(li)Poison$(li)Resistance II"
 		}
 	]
 }

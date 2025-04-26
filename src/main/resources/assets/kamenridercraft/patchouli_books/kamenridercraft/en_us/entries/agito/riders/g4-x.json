@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider G4-X",
-			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/g_buckle#g4_x_belt)G-Buckle (G4-X)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Strength II"
+			"text": "Appears in:$(li)Project G1 (2007, S.I.C. Hero Saga)$(br2)Transforms with the $(l:agito/devices/g_buckle#g4_x_belt)G-Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Strength II"
 		}
 	]
 }

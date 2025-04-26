@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kaiser",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Water Breathing$(li)Night Vision$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Belt)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Water Breathing$(li)Night Vision$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kaiser Reverse",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Belt)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Bikaiser",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Kaiser)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Fire Fist V$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br2)Transforms with the $(l:build/arsenal/nebulasteam_gun)Nebulasteam Gun$(/l) and $(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)Nebulasteam Gun (Belt)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Fire Fist V$(li)Fire Resistance$(li)Strength V"
 		}
 	]
 }

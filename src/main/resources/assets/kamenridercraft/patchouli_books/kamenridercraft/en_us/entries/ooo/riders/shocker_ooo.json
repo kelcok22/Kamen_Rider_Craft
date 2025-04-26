@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Shocker OOO",
-			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver (Shocker OOO)$(/l)$(br2)Status Effects:$(li)Speed II"
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO Driver$(/l)$(br2)Status Effects:$(li)Speed II"
 		}
 	]
 }

@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Amazon Neo",
-			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Transforms with the $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo Amazons Driver (Neo)$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Speed IV$(li)Resistance II$(li)Regeneration II$(li)Jump Boost IV$(li)Strength X (with empty hand)"
+			"text": "Appears in:$(li)Kamen Rider Amazons Season 2 (2017, web series)$(br2)Transforms with the $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo Amazons Driver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Speed IV$(li)Resistance II$(li)Regeneration II$(li)Jump Boost IV$(li)Strength X (with empty hand)"
 		}
 	]
 }

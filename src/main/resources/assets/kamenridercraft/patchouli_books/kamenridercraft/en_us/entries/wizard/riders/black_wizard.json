@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Black Wizard",
-			"text": "Appears in:$(li)Novel: Kamen Rider Wizard (2014, novel)$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Transforms with the $(l:wizard/devices/wizardriver#black_wizardriver)Wizardriver (Black Wizard)$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Novel: Kamen Rider Wizard (2014, novel)$(li)The Sorcerer's Apprentice (2014, S.I.C. Hero Saga)$(br2)Transforms with the $(l:wizard/devices/wizardriver#black_wizardriver)Wizardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		}
 	]
 }

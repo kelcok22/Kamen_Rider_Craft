@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Nishiki",
-			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#nishikidriver)Ongekiko (Nishiki)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Water Breathing$(li)Haste IV$(li)Fire Resistance$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Hibiki And The 7 Senki (2005, movie)$(br2)Transforms with the $(l:hibiki/devices/ongekiko#nishikidriver)Ongekiko$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Water Breathing$(li)Haste IV$(li)Fire Resistance$(li)Strength"
 		}
 	]
 }

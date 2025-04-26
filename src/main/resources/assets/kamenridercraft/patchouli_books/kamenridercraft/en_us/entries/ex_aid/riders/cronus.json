@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cronus",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cronus",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II (Chronus)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronos)Gashacon Bugvisor II$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Cronus",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_gamedeus_muteki)Gamer Driver (Snipe)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_gamedeus_muteki)Gamer Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Haste IV$(li)Jump Boost IV$(li)Strength IV"
 		}
 	]
 }
