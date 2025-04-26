@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Drive",
-			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Transforms with the $(l:drive/devices/drive_driver#drivedriver_darkdrive)Drive Driver (Dark Drive)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br2)Transforms with the $(l:drive/devices/drive_driver#drivedriver_darkdrive)Drive Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Jump Boost III$(li)Strength IV"
 		}
 	]
 }

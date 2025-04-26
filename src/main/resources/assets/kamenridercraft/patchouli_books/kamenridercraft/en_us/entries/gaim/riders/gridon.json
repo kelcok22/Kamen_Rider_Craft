@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Resistance$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Giant II$(li)Mining Fatigue II$(li)Resistance III$(li)Saturation$(li)Jump Boost IV$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Haste$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Saturation"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Punch II$(li)Strength V (with empty hand)$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Saturation$(li)Strength II"
+			"text": "Appears in:$(li)Gaim Gaiden: Kamen Rider Gridon VS Kamen Rider Bravo (2020, web series)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Saturation$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gridon",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver (Gridon)$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Saturation$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_gridon)Sengoku Driver$(/l)$(br2)This form can be used by any Armored Rider$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Saturation$(li)Jump Boost"
 		}
 	]
 }

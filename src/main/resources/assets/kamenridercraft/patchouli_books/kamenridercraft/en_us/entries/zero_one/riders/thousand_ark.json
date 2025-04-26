@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Thousand Ark",
-			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Transforms with the $(l:zero_one/devices/ark_driver_zero#ark_driver_zero_thousand_ark)Ark Driver-Zero (Thousand Ark)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Genms -Smart Brain and the 1000% Crisis- (2022, TTFC special)$(br2)Transforms with the $(l:zero_one/devices/ark_driver_zero#ark_driver_zero_thousand_ark)Ark Driver-Zero$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost II$(li)Strength III"
 		}
 	]
 }

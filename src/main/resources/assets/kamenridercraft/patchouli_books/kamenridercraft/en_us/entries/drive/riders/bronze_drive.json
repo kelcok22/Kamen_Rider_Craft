@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Bronzedrive",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:drive/devices/banno_driver#banno_driver_bronze_drive)Banno Driver (Bronze)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:drive/devices/banno_driver#banno_driver_bronze_drive)Banno Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II$(li)Strength IV"
 		}
 	]
 }

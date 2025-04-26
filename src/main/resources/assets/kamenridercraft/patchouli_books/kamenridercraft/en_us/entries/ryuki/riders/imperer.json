@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Imperer",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_imperer)V Buckle (Imperer)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_imperer)V Buckle$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength II"
 		}
 	]
 }

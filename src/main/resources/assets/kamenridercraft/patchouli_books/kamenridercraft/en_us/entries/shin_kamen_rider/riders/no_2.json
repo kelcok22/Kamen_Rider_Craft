@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider No. 2",
-			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Transforms with the $(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_nigo)Shin Typhoon (No. 2)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Shin Kamen Rider (2023, movie)$(br2)Transforms with the $(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_nigo)Shin Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

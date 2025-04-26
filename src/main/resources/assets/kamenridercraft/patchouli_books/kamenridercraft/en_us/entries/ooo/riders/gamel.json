@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Gamel",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_gamel)Greeed Belt (Gamel)$(/l)$(br2)Status Effects:$(li)Slowness II$(li)Resistance$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_gamel)Greeed Belt$(/l)$(br2)Status Effects:$(li)Slowness II$(li)Resistance$(li)Strength"
 		}
 	]
 }

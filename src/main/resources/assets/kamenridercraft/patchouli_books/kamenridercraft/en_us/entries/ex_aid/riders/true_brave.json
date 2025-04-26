@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider True Brave",
-			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_truebrave)Gamer Driver (True Brave)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Haste III$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider × Super Sentai: Chou Super Hero Taisen (2017, movie)$(br2)Transforms with the $(l:ex_aid/devices/gamer_driver#gamer_driver_truebrave)Gamer Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Haste III$(li)Strength VI"
 		}
 	]
 }

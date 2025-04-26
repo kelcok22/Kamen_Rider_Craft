@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Dark V3",
-			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:v3/devices/double_typhoon#dark_double_typhoon)Double Typhoon (Dark V3)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Pachinko Kamen Rider: Full Throttle (2015, Pachinko game)$(br2)Transforms with the $(l:v3/devices/double_typhoon#dark_double_typhoon)Double Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost III$(li)Strength II"
 		}
 	]
 }

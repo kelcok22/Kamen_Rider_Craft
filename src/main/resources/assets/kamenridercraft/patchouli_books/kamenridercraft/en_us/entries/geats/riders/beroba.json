@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Beroba",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)Raise Riser Belt (Beroba)$(/l)$(br2)Status Effects:$(li)Giant III$(li)Speed II$(li)Night Vision$(li)Haste$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)Raise Riser Belt$(/l)$(br2)Status Effects:$(li)Giant III$(li)Speed II$(li)Night Vision$(li)Haste$(li)Jump Boost VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Premium Beroba",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)Raise Riser Belt (Beroba)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)Raise Riser Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste$(li)Jump Boost VI"
 		}
 	]
 }

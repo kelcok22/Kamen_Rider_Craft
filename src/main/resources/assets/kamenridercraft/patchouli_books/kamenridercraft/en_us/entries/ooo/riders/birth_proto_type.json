@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Birth·Proto Type",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver (Birth·Proto Type)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Birth·Proto Type",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver (Birth·Proto Type)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Powered Medal Effects:$(li)Night Vision II"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Powered Medal Effects:$(li)Night Vision II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Birth·Proto Type",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver (Birth·Proto Type)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Crane Arm Medal Effects:$(li)Haste III"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Crane Arm Medal Effects:$(li)Haste III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Birth·Proto Type",
-			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver (Birth·Proto Type)$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Breast Cannon Medal Effects:$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Transforms with the $(l:ooo/devices/birth_driver#proto_birth_driver)Birth Driver$(/l)$(br2)Status Effects:$(li)Haste$(li)Strength$(br2)Breast Cannon Medal Effects:$(li)Fire Resistance"
 		}
 	]
 }

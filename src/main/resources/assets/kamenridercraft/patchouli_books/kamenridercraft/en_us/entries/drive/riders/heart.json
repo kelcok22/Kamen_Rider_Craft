@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Heart",
-			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Transforms with the $(l:drive/devices/drive_driver#drivedriver_heart)Drive Driver (Heart)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Jump Boost IV$(li)Boost II$(li)Strength VI"
+			"text": "Appears in:$(li)Drive Saga: Kamen Rider Heart (2016, V-Cinema film)$(br2)Transforms with the $(l:drive/devices/drive_driver#drivedriver_heart)Drive Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance IV$(li)Night Vision$(li)Jump Boost IV$(li)Boost II$(li)Strength VI"
 		}
 	]
 }

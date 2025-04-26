@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Mary",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver (Mary)$(/l)$(br2)Core ID Effects:$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Mary",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver (Mary)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Resistance$(br2)Shield Buckle Effects:$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Resistance$(br2)Shield Buckle Effects:$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Mary",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver (Mary)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Resistance$(br2)Chain Array Buckle Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Mining Fatigue"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_mary)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Resistance$(br2)Chain Array Buckle Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Mining Fatigue"
 		}
 	]
 }

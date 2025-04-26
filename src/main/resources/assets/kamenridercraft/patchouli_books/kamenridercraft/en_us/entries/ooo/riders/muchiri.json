@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Muchiri",
-			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_muchiri)Greeed Belt (Muchiri)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste III$(li)Jump Boost III"
+			"text": "Appears in:$(li)KAMEN RIDER: memory of heroez (2020, PS4 game)$(br2)Transforms with the $(l:ooo/devices/greeed_belt#greeed_blet_muchiri)Greeed Belt$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Haste III$(li)Jump Boost III"
 		}
 	]
 }

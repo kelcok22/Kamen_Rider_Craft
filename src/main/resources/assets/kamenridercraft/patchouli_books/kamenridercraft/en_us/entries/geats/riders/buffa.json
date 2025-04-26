@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Anti Poison"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Boost Buckle Effects:$(li)Boost"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Boost Buckle Effects:$(li)Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Drill Buckle Effects:$(li)Drill"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Buckle Effects:$(li)Anti Poison$(li)Strength II$(br2)Drill Buckle Effects:$(li)Drill"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Magnum Buckle Effects:$(li)Flame Shot$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Ninja Buckle Effects:$(li)Speed III$(li)Haste II$(li)Jump Boost V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Beat Buckle Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Water Buckle Effects:$(li)Water Breathing"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Water Buckle Effects:$(li)Water Breathing"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Shield Buckle Effects:$(li)Resistance"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Shield Buckle Effects:$(li)Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Jet Buckle Effects:$(li)Slash III$(li)Strength III (with sword)$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Jet Buckle Effects:$(li)Slash III$(li)Strength III (with sword)$(br2)Jyamato Buckle Effects:$(li)Resistance II$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Form Effects:$(li)Slash III$(li)Strength II$(li)Strength III (with sword)$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Strength II$(li)Jump Boost II$(li)Anti Poison$(br2)Command Form Effects:$(li)Slash III$(li)Strength II$(li)Strength III (with sword)$(li)Speed IV$(li)Resistance III$(li)Haste III$(li)Jump Boost IV$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(li)Resistance III$(li)Jump Boost II$(li)Strength IV$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Resistance V$(li)Jump Boost IV$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(li)Resistance III$(li)Jump Boost II$(li)Strength IV$(br2)Zombie Form Effects:$(li)Anti Poison III$(li)Resistance V$(li)Jump Boost IV$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Plosion Rage Effects:$(li)Speed III$(li)Resistance IV$(li)Jump Boost II$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats: Jyamato Awaking (2024, V-Cinema film)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)Plosion Rage Effects:$(li)Speed III$(li)Resistance IV$(li)Jump Boost II$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -221,12 +221,12 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ouja Form",
-			"text": "Accessed with the $(l:geats/items/raise_buckles#ouja_v_buckle_raise_buckle)V Buckle Buckle (Ouja)$(/l)"
+			"text": "Accessed with the $(l:geats/items/raise_buckles#ouja_v_buckle_raise_buckle)V Buckle Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Buffa",
-			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver (Buffa)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)V Buckle Buckle Effects:$(li)Speed$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja! (2023, Hyper Battle Video)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_buffa)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Anti Poison$(br2)V Buckle Buckle Effects:$(li)Speed$(li)Strength III"
 		}
 	]
 }

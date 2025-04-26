@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kamuro",
-			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_kamuro)Sengoku Driver (Kamuro)$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Haste$(li)Saturation$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Gaim: Great Soccer Battle! Golden Fruits Cup! (2014, movie)$(br2)Transforms with the $(l:gaim/devices/sengoku_driver#sengoku_driver_kamuro)Sengoku Driver$(/l)$(br2)This form can be used by any Sengoku Driver user$(br2)Status Effects:$(li)Speed$(li)Resistance II$(li)Haste$(li)Saturation$(li)Strength III"
 		}
 	]
 }

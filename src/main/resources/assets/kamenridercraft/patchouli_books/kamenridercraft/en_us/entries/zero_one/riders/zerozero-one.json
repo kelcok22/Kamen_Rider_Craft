@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider ZeroZero-One",
-			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Transforms with the $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_001)MetsubouJinrai Forceriser (ZeroZero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)$(br2)Transforms with the $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_001)MetsubouJinrai Forceriser$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
 		}
 	]
 }

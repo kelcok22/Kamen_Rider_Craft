@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Live",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Live",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Live",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength IV$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength IV$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Live",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver (Live)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength VI$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/two_sidriver#two_sidriver_live)Two Sidriver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength VI$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Live",
-			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Live & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/revice_driver#revice_driver_live)Revice Driver (Live)$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Strength VII"
+			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Live & Demons (2023, V-Cinema film)$(br2)Transforms with the $(l:revice/devices/revice_driver#revice_driver_live)Revice Driver$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Strength VII"
 		}
 	]
 }

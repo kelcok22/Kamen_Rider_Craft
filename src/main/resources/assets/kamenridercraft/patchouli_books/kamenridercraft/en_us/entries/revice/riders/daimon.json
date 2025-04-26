@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Daimon",
-			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Transforms with the $(l:revice/devices/chimera_driver#chimera_driver_daimon)Chimera Driver (Daimon)$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Revice: Battle Familia (2022, movie)$(br2)Transforms with the $(l:revice/devices/chimera_driver#chimera_driver_daimon)Chimera Driver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Strength V"
 		}
 	]
 }

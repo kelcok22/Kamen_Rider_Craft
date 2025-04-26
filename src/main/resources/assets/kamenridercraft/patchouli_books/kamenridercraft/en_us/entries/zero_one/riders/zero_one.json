@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost VI$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost VI$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance II$(li)Night Vision$(li)Haste$(li)Jump Boost VII$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance II$(li)Night Vision$(li)Haste$(li)Jump Boost VII$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost VII$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost VII$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste III$(li)Jump Boost V$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Haste III$(li)Jump Boost V$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength V"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: REAL×TIME (2020, movie)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Jump Boost VI$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Hiden Zero-One Driver Limited Red Version (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+			"text": "Appears in:$(li)DX Hiden Zero-One Driver Limited Red Version (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace$(li)Water Breathing"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Dolphin's Grace$(li)Water Breathing"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Giant III$(li)Resistance III$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Giant III$(li)Resistance III$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It On You-roo-wn! Now, It's Aruto or Nothing!! (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It On You-roo-wn! Now, It's Aruto or Nothing!! (2019, Hyper Battle Video)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Televi-Kun manga (2019, manga)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Televi-Kun manga (2019, manga)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Night Vision"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Punch V$(li)Strength VIII (with empty hand)$(li)Strength II (with weapon)"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Sparking Giraffe Progrisekey (2019, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste II"
+			"text": "Appears in:$(li)DX Sparking Giraffe Progrisekey (2019, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Haste II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Boost II$(li)Strength II"
+			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Boost II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Progrisekey Set 03 (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Jump Boost III"
+			"text": "Appears in:$(li)DX Progrisekey Set 03 (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Anti Poison$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II"
+			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Water Breathing$(li)Haste II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Resistance II$(li)Water Breathing$(li)Strength II"
+			"text": "Appears in:$(li)DX Crushing Buffalo and Splashing Whale Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Dolphin's Grace II$(li)Resistance II$(li)Water Breathing$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost II$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost II$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Scouting Panda Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision"
+			"text": "Appears in:$(li)DX Scouting Panda Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Night Vision"
 		},
 		{
 			"type": "patchouli:entity",
@@ -422,7 +422,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength III$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength III$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Zero-One Research Data (2019, website)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost IV$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -450,7 +450,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zero-One",
-			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver (Zero-One)$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
+			"text": "Appears in:$(li)DX Storming Penguin and Invading Horseshoe Crab Progrisekey (2020, toyline)$(br2)Transforms with the $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)Hiden Zero-One Driver$(/l)$(br2)Status Effects:$(li)Resistance IV$(li)Strength III"
 		}
 	]
 }

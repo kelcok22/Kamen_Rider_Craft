@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle (Ouja)$(/l)$(br2)Status Effects:$(li)Weakness"
+			"text": "Appears in:$(li)Kamen Rider Ryuki: Episode Final (2002, movie)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle$(/l)$(br2)Status Effects:$(li)Weakness"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ouja",
-			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle (Ouja)$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Ryuki (2002, TV show)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle$(/l)$(br2)Status Effects:$(li)Speed$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ouja",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle (Ouja)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ouja",
-			"text": "Appears in:$(li)Advent Calendar (2004, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle (Ouja)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste$(li)Strength VI"
+			"text": "Appears in:$(li)Advent Calendar (2004, S.I.C. Hero Saga)$(br2)Transforms with the $(l:ryuki/devices/v_buckle#v_buckle_ouja)V Buckle$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Night Vision$(li)Haste$(li)Strength VI"
 		}
 	]
 }

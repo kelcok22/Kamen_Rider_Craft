@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Slash II$(li)Strength II (with weapon)$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Slash II$(li)Strength II (with weapon)$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Low Gravity VIII$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Low Gravity VIII$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Ghost$(li)Jump Boost VI$(li)Strength II$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed III$(li)Resistance II$(li)Ghost$(li)Jump Boost VI$(li)Strength II$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance II$(li)Night Vision$(li)Regeneration III$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance II$(li)Night Vision$(li)Regeneration III$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance II$(li)Ghost$(li)Jump Boost VI$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance II$(li)Ghost$(li)Jump Boost VI$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Ghost$(li)Fire Resistance$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Ghost$(li)Fire Resistance$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Haste II$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Haste II$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Night Vision$(li)Ghost$(li)Jump Boost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Night Vision$(li)Ghost$(li)Jump Boost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Regeneration IV$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Regeneration IV$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Ghost$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Ghost (2015, TV show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Ghost$(li)Strength VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance IV$(li)Night Vision$(li)Regeneration III$(li)Haste III$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Resting from the Bottom of my Soul! Awaken, My Quick Wit Power!! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste II$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Regeneration III$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost: The 100 Eyecons and Ghost's Fateful Moment (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance III$(li)Regeneration III$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Final Stage (2017, stage show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance V$(li)Haste III$(li)Ghost$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Final Stage (2017, stage show)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance V$(li)Haste III$(li)Ghost$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Regeneration II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Regeneration II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Regeneration II$(li)Ghost$(li)Saturation II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Regeneration II$(li)Ghost$(li)Saturation II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Nausea II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Nausea II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -422,7 +422,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Regeneration II$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Regeneration II$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -450,7 +450,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Jump Boost III$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Jump Boost III$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -464,7 +464,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Water Breathing II$(li)Ghost$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Water Breathing II$(li)Ghost$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -478,7 +478,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, DVD)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, DVD)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Ghost$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -492,7 +492,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Ghost$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed II$(li)Ghost$(li)Jump Boost III$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -506,7 +506,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -520,7 +520,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -534,7 +534,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -548,7 +548,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Ghost$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Resistance$(li)Night Vision$(li)Ghost$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -562,7 +562,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Ghost$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision$(li)Haste II$(li)Ghost$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -576,7 +576,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Ghost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Ghost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -590,7 +590,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed IV$(li)Haste IV$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -604,7 +604,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste$(li)Ghost$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste$(li)Ghost$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -618,7 +618,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Ghost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Ghost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -632,7 +632,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste III$(li)Ghost$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Haste III$(li)Ghost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -646,7 +646,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Ghost$(li)Jump Boost"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Ghost$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -660,7 +660,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Ghost$(li)Jump Boost III"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Ghost$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -674,7 +674,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -688,7 +688,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
@@ -702,7 +702,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
@@ -716,7 +716,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, web series)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Ghost$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -730,7 +730,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, DVD)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Haste II$(li)Strength II"
+			"text": "Appears in:$(li)Kamen Rider Ghost: Legendary! Riders' Souls! (2016, DVD)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Night Vision$(li)Haste II$(li)Strength II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -744,7 +744,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ghost",
-			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver (Ghost)$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost"
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations: Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016, movie)$(br2)Transforms with the $(l:ghost/devices/ghost_driver#ghost_driver)Ghost Driver$(/l)$(br2)This form can be used by any Ghost Driver or Mega Ulorder user$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Ghost"
 		}
 	]
 }

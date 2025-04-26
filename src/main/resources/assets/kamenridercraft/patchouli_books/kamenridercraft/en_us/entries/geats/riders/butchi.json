@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Butchi",
-			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_butchi)Desire Driver (Butchi)$(/l)$(br2)Core ID Effects:$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Zukan (2019, website)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_butchi)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Butchi",
-			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_butchi)Desire Driver (Butchi)$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
+			"text": "Appears in:$(li)Geats Extra: Kamen Rider PunkJack (2023, TTFC special)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_butchi)Desire Driver$(/l)$(br2)This form can be used by any Desire Driver user apart from $(l:geats/riders/xgeats)XGeats$(/l) and $(l:geats/riders/dooms_geats)Dooms Geats$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Hammer Buckle Effects:$(li)Strength II"
 		}
 	]
 }

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Falchion",
-			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Transforms with the $(l:saber/devices/haken_bladriver#haken_bladriver_falchion)Haken Bladriver (Falchion)$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste III$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Saber: The Phoenix Swordsman and the Book of Ruin (2020, movie)$(br2)Transforms with the $(l:saber/devices/haken_bladriver#haken_bladriver_falchion)Haken Bladriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Regeneration$(li)Haste III$(li)Flying"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Falchion",
-			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Transforms with the $(l:saber/devices/haken_bladriver#haken_bladriver_falchion)Haken Bladriver (Falchion)$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Regeneration$(li)Haste III$(li)Jump Boost VII$(li)Strength III$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Saber: Trio of Deep Sin (2022, V-Cinema film)$(br2)Transforms with the $(l:saber/devices/haken_bladriver#haken_bladriver_falchion)Haken Bladriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed VII$(li)Resistance IV$(li)Regeneration$(li)Haste III$(li)Jump Boost VII$(li)Strength III$(li)Flying"
 		}
 	]
 }

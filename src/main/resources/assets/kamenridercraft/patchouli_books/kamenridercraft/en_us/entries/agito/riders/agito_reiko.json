@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Agito",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2015, manga)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring_reiko)Altering (Reiko Takano)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Fire Resistance$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2015, manga)$(br2)Transforms with the $(l:agito/devices/altering#alter_ring_reiko)Altering$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost$(li)Fire Resistance$(li)Strength"
 		}
 	]
 }

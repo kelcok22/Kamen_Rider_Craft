@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O (Mirror World version)",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o_mirror)Ziku Driver (Mirror Zi-O)$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o_mirror)Ziku Driver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
 		}
 	]
 }
