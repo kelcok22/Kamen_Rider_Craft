@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:ore_ghost_eyecon",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:specter_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -234,7 +234,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:musashi_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,7 +247,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:edison_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -260,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:robin_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -273,7 +273,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:newton_ghost_eyecon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commando)Gamma Commandos$(/l)"
+			"text": "Drops from:$(li)$(l:misc/blocks/ghost_eyecon_stone)Ghost Eyecon Ore$(/l)$(li)$(l:ghost/mobs/gamma_commandos)Gamma Commandos$(/l)"
 		},
 		{
 			"type": "patchouli:text",

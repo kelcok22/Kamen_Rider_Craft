@@ -6,14 +6,18 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Mine this block to obtain $(l:ex_aid/arsenal/speed_energy_item)Energy Items$(/l)$(br2)Drops:$(li)$(l:ex_aid/arsenal/bug_energy_item)Bug Energy Item$(/l) (8%)$(li)$(l:ex_aid/arsenal/speed_energy_item)Speed Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/iron_energy_item)Iron Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/instigate_energy_item)Instigate Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/jump_energy_item)Jump Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/muscle_energy_item)Muscle Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/stretch_energy_item)Stretch Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/invisible_energy_item)Invisible Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/confusion_energy_item)Confusion Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/emission_energy_item)Emission Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/save_energy_item)Save Energy Item$(/l) (4%)"
+			"text": "Mine this block to obtain $(l:ex_aid/arsenal/speed_energy_item)Energy Items$(/l)$(br2)Spawns when $(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l) is summoned$(br2)Drops:$(li)$(l:ex_aid/arsenal/bug_energy_item)Bug Energy Item$(/l) (8%)$(li)$(l:ex_aid/arsenal/speed_energy_item)Speed Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/iron_energy_item)Iron Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/instigate_energy_item)Instigate Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/jump_energy_item)Jump Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/muscle_energy_item)Muscle Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l) (4%)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:bakusou_trophy",
 			"title": " ",
-			"text": "$(li)$(l:ex_aid/arsenal/reverse_energy_item)Reverse Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/giant_energy_item)Giant Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/liquid_energy_item)Liquid Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/dark_energy_item)Dark Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/balloon_energy_item)Balloon Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/end_energy_item)End Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/halt_energy_item)Halt Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/lucky_energy_item)Lucky Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/recover_energy_item)Recover Energy Item$(/l) (4%)$(br2)Spawns when $(l:ex_aid/mobs/cronus)Kamen Rider Cronus$(/l) is summoned"
+			"text": "$(li)$(l:ex_aid/arsenal/stretch_energy_item)Stretch Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/invisible_energy_item)Invisible Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/confusion_energy_item)Confusion Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/emission_energy_item)Emission Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/save_energy_item)Save Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/reverse_energy_item)Reverse Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/giant_energy_item)Giant Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/liquid_energy_item)Liquid Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/dark_energy_item)Dark Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/balloon_energy_item)Balloon Energy Item$(/l) (4%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ex_aid/arsenal/end_energy_item)End Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/halt_energy_item)Halt Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/lucky_energy_item)Lucky Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l) (4%)$(li)$(l:ex_aid/arsenal/recover_energy_item)Recover Energy Item$(/l) (4%)"
 		}
 	]
 }

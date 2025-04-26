@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Gigant Buckle when right-clicked$(br2)Drops:$(li)$(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_sword_buckle)Gigant Sword Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_hammer_buckle)Gigant Hammer Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_blaster_buckle)Gigant Blaster Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#magnum_shooter_40x_raise_buckle)Magnum Shooter 40X Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#ninja_dueler_raise_buckle)Ninja Dueler Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#zombie_breaker_raise_buckle)Zombie Breaker Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#beat_axe_raise_buckle)Beat Axe Buckle$(/l) (12.5%)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Gigant Buckle when right-clicked$(br2)Drops:$(li)$(l:geats/items/raise_buckles#powered_builder_raise_buckle)Powered Builder Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_sword_buckle)Gigant Sword Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_hammer_buckle)Gigant Hammer Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_blaster_buckle)Gigant Blaster Buckle$(/l) (12.5%)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:gigant_mission_box",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+			"text": "$(li)$(l:geats/items/raise_buckles#magnum_shooter_40x_raise_buckle)Magnum Shooter 40X Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#ninja_dueler_raise_buckle)Ninja Dueler Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#zombie_breaker_raise_buckle)Zombie Breaker Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#beat_axe_raise_buckle)Beat Axe Buckle$(/l) (12.5%)$(br2)Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
 		}
 	]
 }

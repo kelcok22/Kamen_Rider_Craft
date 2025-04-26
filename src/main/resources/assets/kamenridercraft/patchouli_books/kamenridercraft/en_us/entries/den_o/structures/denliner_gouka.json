@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "DenLiner Gouka",
-			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Spawns throughout the Sands of Time$(br2)Chance to find $(l:den_o/mobs/momotaros)Momotaros$(/l) inside$(br)Chance to spawn with $(l:den_o/structures/denliner_gouka#sieg_carriage)an extra carriage...$(/l)$(br2)Chest loot:$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_sword)Rider Ticket Momotaros$(/l)$(li)4-6 $(l:den_o/items/imagin_sand)Imagin Sand$(/l) (16%)$(li)3-7 $(l:den_o/items/rider_tickets#rider_ticket)Rider Tickets$(/l) (53%)$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_sword)Rider Ticket Momotaros$(/l) (31%)"
+			"text": "Appears in:$(li)Kamen Rider Den-O (2007, TV show)$(br2)Spawns throughout the Sands of Time$(br2)Chance to find $(l:den_o/mobs/momotaros)Momotaros$(/l) inside$(br)Chance to spawn with $(l:den_o/structures/denliner_gouka#sieg_carriage)an extra carriage...$(/l)$(br2)Chest loot:$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_sword)Rider Ticket Momotaros$(/l)$(li)4-6 $(l:den_o/items/imagin_sand)Imagin Sand$(/l) (16%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -15,7 +15,8 @@
 			"images": [
 				"kamenridercraft:patchouli_books/kamenridercraft/images/denliner_gouka.png"
 			],
-			"title": " "
+			"title": " ",
+			"text": "$(li)3-7 $(l:den_o/items/rider_tickets#rider_ticket)Rider Tickets$(/l) (53%)$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_sword)Rider Ticket Momotaros$(/l) (31%)"
 		},
 		{
 			"type": "patchouli:text",
