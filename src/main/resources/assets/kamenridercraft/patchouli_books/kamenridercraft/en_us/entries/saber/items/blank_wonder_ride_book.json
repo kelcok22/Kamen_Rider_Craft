@@ -6,12 +6,16 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used as the base item for most Saber items$(br2)Used on the $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) to obtain Wonder Ride Books"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Used as the base item for most Saber items$(br2)Used on the $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l) to obtain Wonder Ride Books$(br2)Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:saber/blank_wonder_ride_book",
-			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)$(br2)Drops from:$(li)$(l:saber/mobs/shimi)Shimi$(/l)$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)$(li)$(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l)$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)$(li)$(l:saber/mobs/zooous)Zooous$(/l)$(li)$(l:saber/mobs/zooous_predator)Zooous Predator$(/l)$(li)$(l:saber/mobs/storious)Storious$(/l)$(li)$(l:saber/mobs/desast)Desast$(/l)$(li)$(l:saber/mobs/charybdis)Charybdis Megid$(/l)$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l)"
+			"text": "$(li)$(l:saber/mobs/calibur)Kamen Rider Calibur$(/l)$(li)$(l:saber/mobs/falchion)Kamen Rider Falchion$(/l)$(li)$(l:saber/mobs/sabela)Kamen Rider Sabela$(/l)$(li)$(l:saber/mobs/durendal)Kamen Rider Durendal$(/l)$(li)$(l:saber/mobs/solomon)Kamen Rider Solomon$(/l)$(li)$(l:saber/mobs/storious_rider)Kamen Rider Storious$(/l)$(li)$(l:saber/mobs/legeiel)Legeiel$(/l)$(li)$(l:saber/mobs/legeiel_forbidden)Legeiel Forbidden$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/mobs/zooous)Zooous$(/l)$(li)$(l:saber/mobs/zooous_predator)Zooous Predator$(/l)$(li)$(l:saber/mobs/storious)Storious$(/l)$(li)$(l:saber/mobs/desast)Desast$(/l)$(li)$(l:saber/mobs/charybdis)Charybdis Megid$(/l)$(li)$(l:saber/mobs/charybdis_hercules)Charybdis Hercules Megid$(/l)"
 		}
 	]
 }

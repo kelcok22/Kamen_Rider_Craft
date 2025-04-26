@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used as the base item for most Zero-One items"
+			"text": "Appears in:$(li)Kamen Rider Zero-One (2019, TV show)$(br2)Used as the base item for most Zero-One items$(br2)Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)$(li)$(l:zero_one/mobs/battle_raider)Battle Raider$(/l)$(li)$(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)$(li)$(l:zero_one/mobs/magia)Magia$(/l)$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:hiden_metal",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:zero_one/mobs/trilobite_magia)Trilobite Magia$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)Dodo Magia Chick$(/l)$(li)$(l:zero_one/mobs/battle_raider)Battle Raider$(/l)$(li)$(l:zero_one/mobs/abaddon)Kamen Rider Abaddon$(/l)$(li)$(l:zero_one/mobs/magia)Magia$(/l)$(li)$(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)$(li)$(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)$(li)$(l:zero_one/mobs/raider)Raider$(/l)$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)$(li)$(l:zero_one/mobs/abaddon_commander)Kamen Rider Abaddon (Commander's Type)$(/l)$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)Dire Wolf Sold Magia$(/l)$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)Serval Tiger Sold Magia$(/l)"
+			"text": "$(li)$(l:zero_one/mobs/jin)Kamen Rider Jin$(/l)$(li)$(l:zero_one/mobs/ikazuchi)Kamen Rider Ikazuchi$(/l)$(li)$(l:zero_one/mobs/naki)Kamen Rider Naki$(/l)$(li)$(l:zero_one/mobs/dodo_magia)Dodo Magia$(/l)$(li)$(l:zero_one/mobs/raider)Raider$(/l)$(li)$(l:zero_one/mobs/ark_zero)Kamen Rider Ark-Zero$(/l)$(li)$(l:zero_one/mobs/abaddon_commander)Kamen Rider Abaddon (Commander's Type)$(/l)$(li)$(l:zero_one/mobs/zaia)Kamen Rider Zaia$(/l)$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)Dire Wolf Sold Magia$(/l)$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)Serval Tiger Sold Magia$(/l)"
 		}
 	]
 }

@@ -6,14 +6,18 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Raise Buckle when right-clicked$(br2)Drops:$(li)$(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#ninja_raise_buckle)Ninja Buckle$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#monster_raise_buckle)Monster Buckle$(/l) (3.2%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) (3.2%)$(li)$(l:geats/items/raise_buckles#arrow_raise_buckle)Arrow Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#water_raise_buckle)Water Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#hammer_raise_buckle)Hammer Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#shield_raise_buckle)Shield Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#chain_array_raise_buckle)Chain Array Buckle$(/l) (8.5%)$(li)$(l:geats/items/raise_buckles#claw_raise_buckle)Claw Buckle$(/l) (8.5%)$(li)$(l:geats/items/raise_buckles#drill_raise_buckle)Drill Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#propeller_raise_buckle)Propeller Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#golden_hammer_raise_buckle)Hammer Buckle (Gold Plating ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#silver_arrow_raise_buckle)Arrow Buckle (Silver Plating ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle_theme)Beat Buckle (Theme Song ver)$(/l) (1.1%)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Drops a Raise Buckle when right-clicked$(br2)Drops:$(li)$(l:geats/items/raise_buckles#magnum_raise_buckle)Magnum Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#boost_raise_buckle)Boost Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#ninja_raise_buckle)Ninja Buckle$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#monster_raise_buckle)Monster Buckle$(/l) (3.2%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle)Beat Buckle$(/l) (3.2%)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:hatena_mission_box",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+			"text": "$(li)$(l:geats/items/raise_buckles#arrow_raise_buckle)Arrow Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#water_raise_buckle)Water Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#hammer_raise_buckle)Hammer Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#shield_raise_buckle)Shield Buckle$(/l) (10.6%)$(li)$(l:geats/items/raise_buckles#chain_array_raise_buckle)Chain Array Buckle$(/l) (8.5%)$(li)$(l:geats/items/raise_buckles#claw_raise_buckle)Claw Buckle$(/l) (8.5%)$(li)$(l:geats/items/raise_buckles#drill_raise_buckle)Drill Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#propeller_raise_buckle)Propeller Buckle$(/l) (5.3%)$(li)$(l:geats/items/raise_buckles#golden_hammer_raise_buckle)Hammer Buckle (Gold Plating ver)$(/l) (1.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:geats/items/raise_buckles#silver_arrow_raise_buckle)Arrow Buckle (Silver Plating ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle_theme)Beat Buckle (Theme Song ver)$(/l) (1.1%)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
 		}
 	]
 }

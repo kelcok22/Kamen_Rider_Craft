@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Northern Base",
-			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Spawns in the $(l:saber/dimensions/northern_base)Northern Base dimension$(/l)$(br2)Includes a $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Chest loot:$(li)3-7 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) (25%)$(li)0.4 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) (25%)$(li)4-6 books (12.5%)$(li)1 feather (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (7.5%)"
+			"text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Spawns in the $(l:saber/dimensions/northern_base)Northern Base dimension$(/l)$(br2)Includes a $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)Sword of Logos Book Analyzer$(/l)$(br2)Chest loot:$(li)3-7 $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l) (25%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -16,7 +16,12 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base_structure.png",
 				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base_structure_2.png"
 			],
-			"title": " "
+			"title": " ",
+			"text": "$(li)0.4 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)Blank Wonder World Story Wonder Ride Books$(/l) (25%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)4-6 books (12.5%)$(li)1 feather (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)Daishougun Momoichirou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)Daikengou Urashimajirou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)Daiyokozuna Kinzaburou Wonder Ride Book$(/l) (7.5%)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (7.5%)"
 		}
 	]
 }
