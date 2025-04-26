@@ -2,7 +2,7 @@
 	"name": "Stomach Inc. Blaster",
 	"icon": "kamenridercraft:agent_blaster",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

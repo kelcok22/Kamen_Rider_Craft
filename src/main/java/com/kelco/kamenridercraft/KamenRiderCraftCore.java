@@ -376,6 +376,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
 
             event.registerEntityRenderer(MobsCore.RIOTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ORGA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MUEZ.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ZECTROOPER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHADOW_TROOPER.get(), BasicEntityRenderer::new);

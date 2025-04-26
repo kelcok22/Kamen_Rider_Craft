@@ -87,6 +87,10 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem NEED_FORM_SLOT_3;
     private RiderFormChangeItem NEED_FORM_SLOT_4;
 
+    private int timeoutDuration=0;
+    private int lockDuration=0;
+    private RiderFormChangeItem REVERT_FORM;
+
     private Boolean IGNORE_BELT_TEXT = false;
 
     private int Store_num =1;
@@ -255,6 +259,25 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public int getTimeoutDuration() {
+        return this.timeoutDuration;
+    }
+
+    public int getLockDuration() {
+        return this.lockDuration;
+    }
+
+    public RiderFormChangeItem getRevertForm() {
+        return this.REVERT_FORM;
+    }
+
+    public RiderFormChangeItem hasTimeout(int timeout, int lock, RiderFormChangeItem revertsTo) {
+        timeoutDuration = timeout;
+        lockDuration = lock;
+        REVERT_FORM = revertsTo;
+        return this;
+    }
+
     public RiderFormChangeItem AddNum(int num) {
         Store_num=num;
         return this;
@@ -420,6 +443,11 @@ public class RiderFormChangeItem extends BaseItem {
             }
         }
         return true;
+    }
+
+    public void startTimeout(LivingEntity entity) {
+        entity.addEffect(new MobEffectInstance(Effect_core.FORM_TIMEOUT, this.timeoutDuration, 0, true, false));
+        if (entity instanceof Player player && !player.isCreative()) player.getCooldowns().addCooldown(this, this.lockDuration);
     }
 
     @Override

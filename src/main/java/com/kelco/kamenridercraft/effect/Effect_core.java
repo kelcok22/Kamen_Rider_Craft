@@ -174,6 +174,9 @@ public class Effect_core {
     public static final Holder<MobEffect>  THUNDER_SHOT= EFFECT.register("thunder_shot",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
 
+    public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
+            () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
+
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
 

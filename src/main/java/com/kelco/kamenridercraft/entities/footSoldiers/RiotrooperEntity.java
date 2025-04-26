@@ -14,7 +14,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class RiotrooperEntity extends BaseHenchmenEntity{
-
+	
+	private BaseHenchmenEntity boss;
 	
     public RiotrooperEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -29,15 +30,28 @@ public class RiotrooperEntity extends BaseHenchmenEntity{
 
 
 	public void remove(RemovalReason p_149847_) {
+
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-				BaseHenchmenEntity boss = MobsCore.ORGA.get().create(this.level());
+				int bossChoice = this.random.nextInt(2);
+				switch (bossChoice) {
+					case 0:
+						boss = MobsCore.ORGA.get().create(this.level());
+						if (boss != null && this.getLastAttacker() instanceof Player playerIn){
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.horse_orphnoch"));
+						}
+						break;
+					case 1:
+						boss = MobsCore.MUEZ.get().create(this.level());
+						if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.muez"));
+						}
+						break;
+					default:
+				}
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 					this.level().addFreshEntity(boss);
-					if (this.getLastAttacker() instanceof Player playerIn){
-                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.horse_orphnoch"));
-					}
 				}
 			}
 		}

@@ -20,6 +20,7 @@ import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
+import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -59,6 +60,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
@@ -265,10 +267,29 @@ public class ModCommonEvents {
 				}
 			}
 		}
+
+		@SubscribeEvent
+		public void formTimeout(MobEffectEvent.Expired event) {
+			if (event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
+				LivingEntity entity = event.getEntity();
+                for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
+					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), form.getRevertForm(), n+1);
+                }
+			}
+		}
+
+		@SubscribeEvent
+		public void formTimeout(MobEffectEvent.Remove event) {
+			if (event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
+				LivingEntity entity = event.getEntity();
+                for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
+					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), form.getRevertForm(), n+1);
+                }
+			}
+		}
 	}
-
-
-
 
 	public static class CommonEvents {
 
@@ -399,6 +420,7 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.RIOTROOPER.get(), RiotrooperEntity.setAttributes().build());
 		event.put(MobsCore.ORGA.get(), OrgaEntity.setAttributes().build());
+		event.put(MobsCore.MUEZ.get(), MuezEntity.setAttributes().build());
 
 		event.put(MobsCore.ZECTROOPER.get(), ZectrooperEntity.setAttributes().build());
 		event.put(MobsCore.SHADOW_TROOPER.get(), ShadowTrooperEntity.setAttributes().build());

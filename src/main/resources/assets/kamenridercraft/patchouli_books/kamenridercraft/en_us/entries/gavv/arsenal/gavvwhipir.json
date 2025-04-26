@@ -1,0 +1,16 @@
+{
+	"name": "Gavvwhipir",
+	"icon": "kamenridercraft:gavvwhipir",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavvwhipir"
+		}
+	]
+}

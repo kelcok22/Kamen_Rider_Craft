@@ -53,6 +53,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
+		super.OnTransform(itemstack, entity);
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {

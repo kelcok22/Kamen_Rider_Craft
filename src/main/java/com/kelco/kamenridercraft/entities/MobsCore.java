@@ -161,6 +161,12 @@ public class MobsCore {
 
      public static final DeferredItem<DeferredSpawnEggItem> ORGA_SPAWN_EGG = ITEMS.register("orga_spawn_egg",
              () -> new DeferredSpawnEggItem(ORGA,  0x11110e,0xd5ba4c, new Item.Properties()));
+     
+     public static final DeferredHolder<EntityType<?>, EntityType<MuezEntity>> MUEZ = MOBLIST.register("muez",
+             () -> EntityType.Builder.of(MuezEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":muez"));
+
+     public static final DeferredItem<DeferredSpawnEggItem> MUEZ_SPAWN_EGG = ITEMS.register("muez_spawn_egg",
+             () -> new DeferredSpawnEggItem(MUEZ,  0x0a4de5,0xe8e8e8, new Item.Properties()));
 
 
      public static final DeferredHolder<EntityType<?>, EntityType<ZectrooperEntity>> ZECTROOPER = MOBLIST.register("zectrooper",

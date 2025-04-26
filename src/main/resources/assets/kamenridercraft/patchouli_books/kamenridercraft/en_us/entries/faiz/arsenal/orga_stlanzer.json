@@ -2,7 +2,7 @@
 	"name": "Orga Stlanzer",
 	"icon": "kamenridercraft:orga_stlanzer",
 	"category": "kamenridercraft:faiz/arsenal",
-	"sortnum": 9,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",
