@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(li)2-4 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/blank_mission_memory)Blank Mission Memory$(/l) (80%)$(li)1 $(l:faiz/items/mission_memories#faiz_mission_memory)Faiz Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#kaixa_mission_memory)Kaixa Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#delta_mission_memory)Delta Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#faiz_axel_mission_memory)Faiz Axel Mission Memory$(/l) (10%)$(li)1 $(l:faiz/items/mission_memories#psyga_mission_memory)Psyga Mission Memory$(/l) (10%)$(br2)Bosses$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l) (10%)"
+			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(li)2-4 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/blank_mission_memory)Blank Mission Memory$(/l) (80%)$(li)1 $(l:faiz/items/mission_memories#faiz_mission_memory)Faiz Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#kaixa_mission_memory)Kaixa Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#delta_mission_memory)Delta Mission Memory$(/l) (20%)$(li)1 $(l:faiz/items/mission_memories#faiz_axel_mission_memory)Faiz Axel Mission Memory$(/l) (10%)$(li)1 $(l:faiz/items/mission_memories#psyga_mission_memory)Psyga Mission Memory$(/l) (10%)$(br2)Bosses$(li)$(l:faiz/mobs/orga)Kamen Rider Orga$(/l) (5%)$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l) (5%)"
 		}
 	]
 }

@@ -10,6 +10,7 @@ import java.util.function.Consumer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.font.glyphs.BakedGlyph.Effect;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -95,9 +96,9 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public boolean isTransformed(LivingEntity player) {
-        return HEAD.asItem()==player.getItemBySlot(EquipmentSlot.HEAD).getItem()
-        &&TORSO.asItem()==player.getItemBySlot(EquipmentSlot.CHEST).getItem()
-        &&LEGS.asItem()==player.getItemBySlot(EquipmentSlot.LEGS).getItem()
+        return player.getItemBySlot(EquipmentSlot.HEAD).getItem()==HEAD.asItem()
+        &&player.getItemBySlot(EquipmentSlot.CHEST).getItem()==TORSO.asItem()
+        &&player.getItemBySlot(EquipmentSlot.LEGS).getItem()==LEGS.asItem()
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
@@ -142,11 +143,9 @@ public class RiderDriverItem extends RiderArmorItem {
             }
     }
 
-        @Override
+    @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-
-
-            if (entity instanceof LivingEntity player) {
+        if (entity instanceof LivingEntity player) {
             if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") & !level.isClientSide()) OnformChange(stack, player, tag);
@@ -163,9 +162,11 @@ public class RiderDriverItem extends RiderArmorItem {
                  **/
             }
 
-            if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+            if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
-                    List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
+                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+
+                    List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
                     for (MobEffectInstance effect : potionEffectList) {
                         player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
                     }
@@ -176,6 +177,10 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void OnTransform(ItemStack itemstack, LivingEntity player) {
+        for (int n = 0; n < Num_Base_Form_Item; n++) {
+            RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+            if (form.getTimeoutDuration() != 0) form.startTimeout(player);
+        }
     }
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {

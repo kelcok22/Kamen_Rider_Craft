@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Health: 100$(br2)Has a 10% chance to spawn from a $(l:faiz/mobs/riotrooper)Riotrooper$(/l)$(br2)Special moves:$(li)Starts off as the Horse Orphnoch, then transforms into his Rider form at under 50 health$(br2)Drops$(li)19-21 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/mission_memories#orga_mission_memory)Orga Mission Memory$(/l)$(li)1 $(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
+			"text": "Health: 100$(br2)Has a 5% chance to spawn from a $(l:faiz/mobs/riotrooper)Riotrooper$(/l)$(br2)Special moves:$(li)Starts off as the Horse Orphnoch, then transforms into his Rider form at under 50 health$(br2)Drops$(li)19-21 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/mission_memories#orga_mission_memory)Orga Mission Memory$(/l)$(li)1 $(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz Blaster Mission Memory$(/l)"
 		}
 	]
 }

@@ -627,6 +627,7 @@ public class RiderTabs {
 
             event.accept(MobsCore.RIOTROOPER_SPAWN_EGG);
             event.accept(MobsCore.ORGA_SPAWN_EGG);
+            event.accept(MobsCore.MUEZ_SPAWN_EGG);
 
             event.accept(MobsCore.ZECTROOPER_SPAWN_EGG);
             event.accept(MobsCore.SHADOW_TROOPER_SPAWN_EGG);

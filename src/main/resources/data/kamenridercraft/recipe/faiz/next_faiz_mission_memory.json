@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "next_faiz",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:faiz_mission_memory"
+	}, 
+	{
+	  "item": "kamenridercraft:muez_mission_memory"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:next_faiz_mission_memory"
+  }
+}

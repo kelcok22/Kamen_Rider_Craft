@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Muez",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:muez",
+			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Health: 100$(br2)Has a 5% chance to spawn from a $(l:faiz/mobs/riotrooper)Riotrooper$(/l)$(br2)Special moves:$(li)Activates predictive AI at under 50 health$(br2)Drops$(li)8-10 $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l)$(li)1 $(l:faiz/items/mission_memories#muez_mission_memory)Muez Mission Memory$(/l)"
+		}
+	]
+}

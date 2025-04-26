@@ -68,6 +68,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
 			summonParaDX(player);
+		super.OnTransform(itemstack, entity);
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {

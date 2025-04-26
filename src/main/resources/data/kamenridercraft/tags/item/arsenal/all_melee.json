@@ -57,6 +57,7 @@
 	"kamenridercraft:faiz_edge",
 	"kamenridercraft:faiz_shot",
 	"kamenridercraft:kaixa_shot",
+	"kamenridercraft:kaixa_crosslasher",
 	"kamenridercraft:psyga_tonfa_edge",
 	"kamenridercraft:orga_stlanzer",
 	"kamenridercraft:muez_edge",
@@ -273,6 +274,7 @@
 	"kamenridercraft:raise_chain_array",
 	"kamenridercraft:raise_propeller",
 	"kamenridercraft:gavvgablade",
-	"kamenridercraft:zakuzakuchipslasher"
+	"kamenridercraft:zakuzakuchipslasher",
+	"kamenridercraft:gavvwhipir"
   ]
 }

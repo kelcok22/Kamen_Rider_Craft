@@ -18,6 +18,7 @@
 	"kamenridercraft:faiz_phone",
 	"kamenridercraft:faiz_phone_pointer",
 	"kamenridercraft:kaixa_phone",
+	"kamenridercraft:kaixa_crosslasher",
 	"kamenridercraft:delta_blaster",
 	"kamenridercraft:garrenrouzer",
 	"kamenridercraft:chalice_arrow",
@@ -85,6 +86,7 @@
 	"kamenridercraft:chemy_riser_supana",
 	"kamenridercraft:chocodangun",
 	"kamenridercraft:chocodongun",
-	"kamenridercraft:valenbuster"
+	"kamenridercraft:valenbuster",
+	"kamenridercraft:agent_blaster"
   ]
 }

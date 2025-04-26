@@ -236,6 +236,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 										}
 										else {
 											livingentity.addEffect(new MobEffectInstance(Effect_core.RESET,30,0));
+											livingentity.addEffect(new MobEffectInstance(Effect_core.FORM_LOCK,600,0));
 											if (livingentity instanceof Player playerIn){
 												playerIn.sendSystemMessage(Component.translatable("attack.kamenridercraft.reset"));
 											}

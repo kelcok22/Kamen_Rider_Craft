@@ -113,11 +113,8 @@
 			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:next_faiz_mission_memory",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/next_faiz_mission_memory"
 		},
 		{
 			"type": "patchouli:text",
@@ -126,11 +123,8 @@
 			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:next_kaixa_mission_memory",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/next_kaixa_mission_memory"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +137,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:muez_mission_memory",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:faiz/mobs/muez)Kamen Rider Muez$(/l)"
 		},
 		{
 			"type": "patchouli:text",

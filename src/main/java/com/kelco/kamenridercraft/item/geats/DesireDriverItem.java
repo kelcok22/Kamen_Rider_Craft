@@ -333,7 +333,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 				if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
 			}
 
-			if (isTransformed(player) && player.getItemBySlot(EquipmentSlot.FEET) == stack) {
+			if (isTransformed(player)) {
 				for (int n = 0; n < Num_Base_Form_Item; n++) {
 					List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
 

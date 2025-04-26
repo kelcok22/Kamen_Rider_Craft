@@ -2,7 +2,7 @@
 	"name": "Valenbuster",
 	"icon": "kamenridercraft:valenbuster",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

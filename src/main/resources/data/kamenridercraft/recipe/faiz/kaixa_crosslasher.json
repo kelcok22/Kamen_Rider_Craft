@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "next_kaixa",
+  "pattern": [
+	"XRX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_mission_memory"
+	},
+	"M": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"R": {
+	  "item": "kamenridercraft:next_kaixa_mission_memory"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:kaixa_crosslasher"
+  }	
+}
