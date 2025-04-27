@@ -386,6 +386,12 @@ public class Drive_Rider_Items {
 					.ChangeSlot(2).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
+	public static final DeferredItem<Item> SHIFT_SPEED_GOLD = ITEMS.register("speedshift_gold",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> SHIFT_WILD_GOLD  = ITEMS.register("wildshift_gold",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
 	public static final DeferredItem<Item> SHIFT_NEXT_HUNTER = ITEMS.register("next_hunter",
 			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 

@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-27T18:55:22.9712217	Item Models: kamenridercraft
+// 1.21.1	2025-04-27T23:02:38.0194382	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -204,6 +204,7 @@ e4d8c8aebe830b1e91ce61b729cdae8c533ec686 assets/kamenridercraft/models/item/sign
 1f9aa6cc1d4b212b7ea117aaa80e69a182bcfd29 assets/kamenridercraft/models/item/signal_tomarle.json
 21d66e77283297635e269370c2d6b4a4501388ba assets/kamenridercraft/models/item/skull_cyclone_memory.json
 25c8b1a3f42e4225db92660b862e0ec7fe1c0a2a assets/kamenridercraft/models/item/specialshift.json
+333b59fab71fcbb2e9216d15d0046280c600ae6e assets/kamenridercraft/models/item/speedshift_gold.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/square_astroswitch.json
 ad96f2530fa729165596a9449f306ab0f94307af assets/kamenridercraft/models/item/strawberryjellytirol_gochizo.json
 197544477f86874d1495dd28d8938a7147e22fc4 assets/kamenridercraft/models/item/super_sentai_full_bottle.json
@@ -232,6 +233,7 @@ a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/vira
 f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vrastumgear.json
 932ad803be78c3de72bd7ac706c2f7379879a4f7 assets/kamenridercraft/models/item/whiteandcookiestirol_gochizo.json
 6099f93392eac510c6032fa239a9f9d8d4043844 assets/kamenridercraft/models/item/white_fence.json
+3796122ebf9a7cd7c862fbf81aee8172ad447d57 assets/kamenridercraft/models/item/wildshift_gold.json
 330c0fe93ef2298f767e41f55f0561177ffb9765 assets/kamenridercraft/models/item/wizard_full_bottle.json
 185ece7dbef84a1e307baa559f9673796f39cd85 assets/kamenridercraft/models/item/wonderwood_door.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_colorful.json
