@@ -7,12 +7,12 @@
 		{
 		  "type": "minecraft:item",
 		  "weight": 3,
-		  "name": "kamenridercraft:viral_core_neo_spider"
+		  "name": "kamenridercraft:viral_core_neo_bat"
 		},
 		  {
 			  "type": "minecraft:item",
 			  "weight": 1,
-			  "name": "kamenridercraft:roidmude_core_002"
+			  "name": "kamenridercraft:roidmude_core_003"
 		  }
 	  ]
 	},
