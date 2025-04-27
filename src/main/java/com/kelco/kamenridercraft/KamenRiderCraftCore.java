@@ -444,6 +444,8 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.ROIDMUDE.get(), RoidmudeRenderer::new);
             event.registerEntityRenderer(MobsCore.MASHIN_CHASER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.HEART_ROIDMUDE.get(), HeartRoidmudeRenderer::new);
+            event.registerEntityRenderer(MobsCore.BRAIN_ROIDMUDE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.MEDIC_ROIDMUDE.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 

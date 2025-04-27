@@ -35,7 +35,7 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
 
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                int bossChoice = this.random.nextInt(2);
+                int bossChoice = this.random.nextInt(3);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.MASHIN_CHASER.get().create(this.level());
@@ -47,6 +47,12 @@ public class RoidmudeEntity extends BaseHenchmenEntity {
                         boss = MobsCore.HEART_ROIDMUDE.get().create(this.level());
                         if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.heart_roidmude"));
+                        }
+                        break;
+                    case 2:
+                        boss = MobsCore.BRAIN_ROIDMUDE.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.brain_roidmude"));
                         }
                         break;
                     default:

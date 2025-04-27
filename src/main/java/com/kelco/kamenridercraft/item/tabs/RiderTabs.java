@@ -695,6 +695,8 @@ public class RiderTabs {
             event.accept(MobsCore.ROIDMUDE_SPAWN_EGG);
             event.accept(MobsCore.MASHIN_CHASER_SPAWN_EGG);
             event.accept(MobsCore.HEART_ROIDMUDE_SPAWN_EGG);
+            event.accept(MobsCore.BRAIN_ROIDMUDE_SPAWN_EGG);
+            event.accept(MobsCore.MEDIC_ROIDMUDE_SPAWN_EGG);
 
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 
