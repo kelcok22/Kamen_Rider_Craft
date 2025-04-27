@@ -460,29 +460,6 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 					.ChangeModel("default.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
-	public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gold_drive","banno_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
-					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
-
-	public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
-
-	public static final DeferredItem<Item> ROIDMUDE_CORE_003 = ITEMS.register("roidmude_core_003",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brain","banno_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
-					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
-
-	public static final DeferredItem<Item> PROTOZERO_CORE = ITEMS.register("protozero_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mashin_chaser","blank",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> VIRAL_CORE_COBARA = ITEMS.register("viral_core_cobara",
@@ -529,12 +506,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
 					.addAlternative(SHIFT_VIRAL_CORE.get()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
-	public static final DeferredItem<Item> CYBEROID_ZZZ_CORE = ITEMS.register("cyberoid_zzz_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lupin","lupin_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> TOKUJOKA_KEY = ITEMS.register("tokujoka_key",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mach_metro_pd","metro_pd_driver_honoh_belt",
@@ -542,6 +514,40 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.alsoChange2ndSlot(BASIC_TIRE.get()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+
+	public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gold_drive","banno_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROIDMUDE_CORE_003 = ITEMS.register("roidmude_core_003",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brain","banno_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
+					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROIDMUDE_CORE_009 = ITEMS.register("roidmude_core_009",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTOZERO_CORE = ITEMS.register("protozero_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","mashin_chaser","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
+	public static final DeferredItem<Item> CYBEROID_ZZZ_CORE = ITEMS.register("cyberoid_zzz_core",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","lupin","lupin_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));

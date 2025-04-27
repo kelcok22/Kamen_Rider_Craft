@@ -544,6 +544,17 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> HEART_ROIDMUDE_SPAWN_EGG = ITEMS.register("heart_roidmude_spawn_egg",
             () -> new DeferredSpawnEggItem(HEART_ROIDMUDE, 0xb2a969, 0xba0705, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BrainRoidmudeEntity>> BRAIN_ROIDMUDE = MOBLIST.register("brain_roidmude",
+            () -> EntityType.Builder.of(BrainRoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_baron"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BRAIN_ROIDMUDE_SPAWN_EGG = ITEMS.register("brain_roidmude_spawn_egg",
+            () -> new DeferredSpawnEggItem(BRAIN_ROIDMUDE, 0xd0d0d0, 0x22590a, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MedicRoidmudeEntity>> MEDIC_ROIDMUDE = MOBLIST.register("medic_roidmude",
+            () -> EntityType.Builder.of(MedicRoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_baron"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MEDIC_ROIDMUDE_SPAWN_EGG = ITEMS.register("medic_roidmude_spawn_egg",
+            () -> new DeferredSpawnEggItem(MEDIC_ROIDMUDE, 0xb2a969, 0xba0705, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<GammaCommandoEntity>> GAMMA_COMMANDO = MOBLIST.register("gamma_commandos",
                   () -> EntityType.Builder.of(GammaCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamma_commandos"));
