@@ -442,6 +442,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.LORD_BARON.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ROIDMUDE.get(), RoidmudeRenderer::new);
+            event.registerEntityRenderer(MobsCore.REAPER_LEGION.get(), ReaperRenderer::new);
             event.registerEntityRenderer(MobsCore.MASHIN_CHASER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.HEART_ROIDMUDE.get(), HeartRoidmudeRenderer::new);
             event.registerEntityRenderer(MobsCore.BRAIN_ROIDMUDE.get(), BasicEntityRenderer::new);

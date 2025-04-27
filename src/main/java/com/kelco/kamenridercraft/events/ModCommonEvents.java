@@ -487,6 +487,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.LORD_BARON.get(), LordBaronEntity.setAttributes().build());
 
 		event.put(MobsCore.ROIDMUDE.get(), RoidmudeEntity.setAttributes().build());
+		event.put(MobsCore.REAPER_LEGION.get(), ReaperlegionEntity.setAttributes().build());
 		event.put(MobsCore.MASHIN_CHASER.get(), MashinChaserEntity.setAttributes().build());
 		event.put(MobsCore.HEART_ROIDMUDE.get(), HeartRoidmudeEntity.setAttributes().build());
 		event.put(MobsCore.BRAIN_ROIDMUDE.get(), BrainRoidmudeEntity.setAttributes().build());
@@ -642,6 +643,7 @@ public class ModCommonEvents {
 		event.register(MobsCore.GAMMA_COMMANDO.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.ROIDMUDE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.REAPER_LEGION.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.BUGSTERVIRUS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		//	event.register(MobsCore.LOVELY_BUGSTER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
