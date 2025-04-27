@@ -1,7 +1,10 @@
 {
   "values": [
 	"kamenridercraft:roidmude",
+	  "kamenridercraft:reaper_legion",
 	"kamenridercraft:mashin_chaser",
-	"kamenridercraft:heart_roidmude"
+	"kamenridercraft:heart_roidmude",
+	  "kamenridercraft:brain_roidmude",
+	  "kamenridercraft:medic_roidmude"
   ]
 }

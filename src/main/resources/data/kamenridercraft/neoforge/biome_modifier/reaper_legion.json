@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:soul_sand_valley",
+  "spawners": {
+	"type": "kamenridercraft:reaper_legion",
+	"weight": 20,
+	"minCount": 1,
+	"maxCount": 3
+  }
+}

@@ -550,6 +550,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BRAIN_ROIDMUDE_SPAWN_EGG = ITEMS.register("brain_roidmude_spawn_egg",
             () -> new DeferredSpawnEggItem(BRAIN_ROIDMUDE, 0xd0d0d0, 0x22590a, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<ReaperlegionEntity>> REAPER_LEGION = MOBLIST.register("reaper_legion",
+            () -> EntityType.Builder.of(ReaperlegionEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":reaper_legion"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> REAPER_LEGION_SPAWN_EGG = ITEMS.register("reaper_legion_spawn_egg",
+            () -> new DeferredSpawnEggItem(REAPER_LEGION, 0x9c9c9c, 0x9c611f, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<MedicRoidmudeEntity>> MEDIC_ROIDMUDE = MOBLIST.register("medic_roidmude",
             () -> EntityType.Builder.of(MedicRoidmudeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_baron"));
 
