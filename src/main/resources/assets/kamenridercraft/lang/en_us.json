@@ -754,6 +754,8 @@
 "item.kamenridercraft.kuuga_amazing_mighty": "Kuuga Amazing Mighty Amadam",
 "item.kamenridercraft.kuuga_ultimate": "Kuuga Ultimate Amadam",
 "item.kamenridercraft.kuuga_rising_ultimate": "Kuuga Rising Ultimate Amadam",
+  "item.kamenridercraft.kuuga_ultimate_black_eyes": "Kuuga Ultimate Amadam (Dark Eye)",
+  "item.kamenridercraft.kuuga_rising_ultimate_black_eyes": "Kuuga Rising Ultimate Amadam (Dark Eye)",
 "item.kamenridercraft.kuuga_super_rising_ultimate": "Kuuga Super Rising Ultimate Amadam",
 "item.kamenridercraft.kuuga_manga": "Kuuga Manga",
 
@@ -771,6 +773,8 @@
   "kamenridercraft:kuuga_amazing_mighty.form": "Form: Amazing Mighty Form",
   "kamenridercraft:kuuga_ultimate.form": "Form: Ultimate Form",
   "kamenridercraft:kuuga_rising_ultimate.form": "Form: Rising Ultimate Form",
+  "kamenridercraft:kuuga_ultimate_black_eyes.form": "Form: Ultimate Form (Dark Eye)",
+  "kamenridercraft:kuuga_rising_ultimate_black_eyes.form": "Form: Rising Ultimate Form (Dark Eye)",
   "kamenridercraft:kuuga_super_rising_ultimate.form": "Form: Super Rising Ultimate Form",
   "kamenridercraft:kuuga_ball.form": "Form: Kuuga Ball",
   "kamenridercraft:kuuga_manga.form": "Form: Manga Mighty Form",
@@ -3329,6 +3333,7 @@
   "item.kamenridercraft.banno_tablet": "Banno Tablet",
   "item.kamenridercraft.roidmude_core_002": "Roidmude Core 002",
   "item.kamenridercraft.roidmude_core_003": "Roidmude Core 003",
+  "item.kamenridercraft.roidmude_core_009": "Roidmude Core 009",
   "item.kamenridercraft.protozero_core": "Roidmude Core Protozero",
   "item.kamenridercraft.cyberoid_zzz_core": "Cyberoid Core ZZZ",
 
