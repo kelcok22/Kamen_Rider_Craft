@@ -469,6 +469,32 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "speedshift_gold",
+			"title": "Golden Shift Speed",
+			"text": "Appears in:$(li)Golden Shift Car Set (2014, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:speedshift_gold",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wildshift_gold",
+			"title": "Golden Shift Wild",
+			"text": "Appears in:$(li)Golden Shift Car Set (2014, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wildshift_gold",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "next_hunter",
 			"title": "Shift Next Hunter",
 			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)"

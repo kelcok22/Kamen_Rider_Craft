@@ -8,6 +8,7 @@
     "kamenridercraft:mage_footsoldier",
     "kamenridercraft:kurokage_trooper",
 	"kamenridercraft:roidmude",
+  "kamenridercraft:reaper_legion",
 	"kamenridercraft:gamma_commandos",
 	"kamenridercraft:bugstervirus_mob",
 	"kamenridercraft:rideplayer",
@@ -16,7 +17,6 @@
     "kamenridercraft:hokuto_guardian",
     "kamenridercraft:seito_guardian",
     "kamenridercraft:hard_guardian",
-    "kamenridercraft:downfall_guardian",
-    "kamenridercraft:reaper_legion"
+    "kamenridercraft:downfall_guardian"
   ]
 }

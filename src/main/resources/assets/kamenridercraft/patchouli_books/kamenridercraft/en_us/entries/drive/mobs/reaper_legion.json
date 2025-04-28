@@ -1,0 +1,17 @@
+{
+	"name": "Reaper Legion",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:reaper_legion",
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br)Health: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(br2)Bosses$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l) (10%)"
+		}
+	]
+}

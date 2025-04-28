@@ -165,7 +165,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ultimate Form (Dark Eye)",
-			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_ultimate_black_eyes)Kuuga Ultimate Black Eyes Amadam that still needs lang$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_ultimate_black_eyes)Kuuga Ultimate Amadam (Dark Eye)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -193,7 +193,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Rising Ultimate Form (Dark Eye)",
-			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate_black_eyes)Kuuga Rising Ultimate Black Eyes Amadam that needs lang too ONORE KELCOOOOOOO$(/l)"
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate_black_eyes)Kuuga Rising Ultimate Amadam (Dark Eye)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
