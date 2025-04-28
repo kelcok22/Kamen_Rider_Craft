@@ -900,27 +900,27 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> GAMER_DRIVER_PARA_DX = ITEMS.register("gamer_driver_paradx",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx_lv99",GASHAT_GEAR_DUAL ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_TRUE_BRAVE = ITEMS.register("gamer_driver_truebrave",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"truebrave",TADDLE_LEGACY_GASHAT_TRUE ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_FUMA = ITEMS.register("gamer_driver_fuuma",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"fuma",HURRICANE_NINJA_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_ANOTHER_PARA_DX = ITEMS.register("gamer_driver_anotherparadox",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"another_para_dx",GASHAT_GEAR_DUAL_ANOTHER ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_SNIPE_NICO = ITEMS.register("gamer_driver_nico_snipe",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe_nico",BANG_BANG_SHOOTING_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_GEMEDEUS_MUTEKI = ITEMS.register("gamer_driver_gamedeus_muteki",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"gamedeus_muteki",GEMEDEUS_HYPER_MUTEKI_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 
 	public static final DeferredItem<Item> GASHACON_BUGVISOR_GENM = ITEMS.register("gashacon_bugvisor_genmu",
@@ -933,15 +933,15 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> GASHACON_BUGVISOR_II_POPPY = ITEMS.register("gashacon_bugvisor_ii_poppy",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"poppy",TOKI_MEKI_CRISIS_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_BUGVISOR_II_LAZER = ITEMS.register("gashacon_bugvisor_ii_lazer",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"lazer_lvx_",GIRI_GIRI_CHAMBARA_GASHAT_X ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.Override_belt_text("gashacon_bugvisor_ii_lazer").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().Override_belt_text("gashacon_bugvisor_ii_lazer").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 	public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONICLE_BUGTER = ITEMS.register("gashacon_bugvisor_ii_chronicle_bugster",
 			() -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronicle_bugster",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-			.Override_belt_text("gashacon_bugvisor_ii_chronicle_bugster_belt").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
+					.Dont_show_belt_form_info().Override_belt_text("gashacon_bugvisor_ii_chronicle_bugster_belt").AddToTabList(RiderTabs.EX_AID_TAB_ITEM).ChangeRepairItem(BLANK_GASHAT.get()));
 
 
 	public static final DeferredItem<Item> PARA_DX_BELT = ITEMS.register("paradoxbelt",
