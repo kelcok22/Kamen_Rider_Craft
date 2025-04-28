@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_mighty",
-			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_dragon",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_pegasus",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_titan",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)$(br2)Drops from:$(li)$(l:kuuga/mobs/zu-gumun-ba)Zu-Gumun-Ba$(/l)$(li)$(l:misc/blocks/stone_kuuga)Kuuga Ore$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)Deepslate Kuuga Ore$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -122,7 +122,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kuuga_ultimate_black_eyes",
-			"future_title": "Kuuga Ultimate Amadam",
+			"future_title": "Kuuga Ultimate Amadam (Dark Eye)",
 			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#ultimate_dark_eye)Ultimate Form (Dark Eye)$(/l)"
 		},
 		{
@@ -146,7 +146,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kuuga_rising_ultimate_black_eyes",
-			"future_title": "Kuuga Rising Ultimate Amadam",
+			"future_title": "Kuuga Rising Ultimate Amadam (Dark Eye)",
 			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_ultimate_dark_eye)Rising Ultimate Form (Dark Eye)$(/l)"
 		},
 		{

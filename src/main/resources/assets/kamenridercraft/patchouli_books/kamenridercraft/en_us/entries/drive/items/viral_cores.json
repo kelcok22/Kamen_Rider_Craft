@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:viral_core_neo_cobara",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:viral_core_neo_spider",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:viral_core_neo_bat",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)"
 		},
 		{
 			"type": "patchouli:text",

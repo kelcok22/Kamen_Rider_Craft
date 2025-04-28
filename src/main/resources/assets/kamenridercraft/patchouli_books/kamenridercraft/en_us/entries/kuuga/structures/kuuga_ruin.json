@@ -1,0 +1,23 @@
+{
+	"name": "Kuuga's Tomb",
+	"icon": "kamenridercraft:kuuga_logo",
+	"category": "kamenridercraft:kuuga/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Kuuga's Tomb",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Spawn locations: River, Frozen River$(br2)Includes suspicious gravel$(br2)Suspicious gravel drops:$(li)1 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadam$(/l) (28.6%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Mighty Amadam$(/l) (28.6%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Dragon Amadam$(/l) (14.3%)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/kuuga_ruin.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/kuuga_ruin_2.png"
+			],
+			"title": " ",
+			"text": "$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Pegasus Amadam$(/l) (14.3%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Titan Amadam$(/l) (14.3%)"
+		}
+	]
+}

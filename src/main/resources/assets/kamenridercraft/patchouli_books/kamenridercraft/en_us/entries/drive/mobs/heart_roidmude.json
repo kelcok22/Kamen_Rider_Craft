@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a $(l:drive/mobs/roidmude)Roidmude$(/l)$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_chaser_cobara)Chaser Cobra Viral Core$(/l) (33.3%)$(li)1 $(l:drive/items/viral_cores#viral_core_neo_spider)Neo Spider Viral Core$(/l) (50%)$(li)1 $(l:drive/items/roidmude_cores#roidmude_core_002)Roidmude Core 002$(/l) (16.7%)"
+			"text": "Has a 3.3% chance to spawn from a $(l:drive/mobs/roidmude)Roidmude$(/l)$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_neo_spider)Neo Spider Viral Core$(/l) (75%)$(li)1 $(l:drive/items/roidmude_cores#roidmude_core_002)Roidmude Core 002$(/l) (25%)"
 		}
 	]
 }
