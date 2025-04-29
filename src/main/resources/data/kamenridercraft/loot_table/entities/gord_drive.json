@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:banno_tablet"
+		}
+	  ]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:speedshift_gold"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:wildshift_gold"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:drive_system_car",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 3,
+							  "max": 5
+						  }
+					  }
+				  ]
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:next_system_bike",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 3,
+							  "max": 5
+						  }
+					  }
+				  ]
+			  }
+
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shift_alloy",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

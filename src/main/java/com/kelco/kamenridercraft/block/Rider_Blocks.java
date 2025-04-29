@@ -962,6 +962,9 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.LORD_BARON).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> GORD_DRIVE_BOSS_BLOCK = registerBlock("gord_drive_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.GORD_DRIVE).addLine(Component.translatable("henshin.kamenridercraft.gord_drive")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 	public static final DeferredBlock<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
