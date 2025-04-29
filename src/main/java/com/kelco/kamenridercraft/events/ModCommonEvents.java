@@ -492,6 +492,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.HEART_ROIDMUDE.get(), HeartRoidmudeEntity.setAttributes().build());
 		event.put(MobsCore.BRAIN_ROIDMUDE.get(), BrainRoidmudeEntity.setAttributes().build());
 		event.put(MobsCore.MEDIC_ROIDMUDE.get(), MedicRoidmudeEntity.setAttributes().build());
+		event.put(MobsCore.GORD_DRIVE.get(), GordDriveEntity.setAttributes().build());
 
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
