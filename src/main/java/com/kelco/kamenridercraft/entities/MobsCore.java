@@ -568,6 +568,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GORD_DRIVE_SPAWN_EGG = ITEMS.register("gord_drive_spawn_egg",
             () -> new DeferredSpawnEggItem(GORD_DRIVE, 0xebde2d, 0xeb1026, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DarkDriveEntity>> DARK_DRIVE = MOBLIST.register("dark_drive",
+            () -> EntityType.Builder.of(DarkDriveEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dark_drive"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DARK_DRIVE_SPAWN_EGG = ITEMS.register("dark_drive_spawn_egg",
+            () -> new DeferredSpawnEggItem(DARK_DRIVE, 0x000000, 0x0fefff, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<GammaCommandoEntity>> GAMMA_COMMANDO = MOBLIST.register("gamma_commandos",
                   () -> EntityType.Builder.of(GammaCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gamma_commandos"));
           

@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:nextshift"
+		}
+	  ]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:next_system_car",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 3,
+							  "max": 5
+						  }
+					  }
+				  ]
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 3,
+				  "name": "kamenridercraft:roidmude_core_108"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:shift_alloy",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 4,
+				"max": 6
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

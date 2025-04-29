@@ -36,12 +36,19 @@ public class ReaperlegionEntity extends BaseHenchmenEntity {
 
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                int bossChoice = this.random.nextInt(3);
+                int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.MEDIC_ROIDMUDE.get().create(this.level());
                         if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.medic_roidmude"));
+                        }
+                        break;
+
+                    case 1:
+                        boss = MobsCore.DARK_DRIVE.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_drive"));
                         }
                         break;
                     default:
