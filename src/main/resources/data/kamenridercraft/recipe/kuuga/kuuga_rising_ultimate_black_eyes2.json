@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kuuga_ultimate",
+  "ingredients": [
+	  {
+		  "item": "kamenridercraft:kuuga_ultimate_black_eyes"
+	  },
+	  {
+		  "item": "kamenridercraft:decade_violent_emotion_card"
+	  }
+  ],
+  "result": {
+	"id": "kamenridercraft:kuuga_rising_ultimate_black_eyes"
+  }
+}  

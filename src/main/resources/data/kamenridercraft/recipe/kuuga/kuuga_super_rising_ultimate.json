@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kuuga_ultimate",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:kuuga_rising_ultimate"
+	}, 
+	{
+	  "item": "kamenridercraft:shachi_medal"
+	},
+	  {
+		  "item": "kamenridercraft:unagi_medal"
+	  },
+	  {
+		  "item": "kamenridercraft:tako_medal"
+	  },
+	  {
+		  "item": "kamenridercraft:charge_up"
+	  },
+	  {
+		  "item": "kamenridercraft:kuuga_amazing_mighty_artist"
+	  }
+	],
+  "result": {
+	"id": "kamenridercraft:kuuga_super_rising_ultimate"
+  }
+}  
