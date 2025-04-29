@@ -555,6 +555,9 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
+	public static final DeferredItem<Item> ROIDMUDE_CORE_108 = ITEMS.register("roidmude_core_108",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
+
 	public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 	public static final DeferredItem<Item> DRIVE_CHESTPLATE = ITEMS.register("drive_troso",

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gord_drive",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:protozero_core"
+	}, 
+	{
+	  "item": "kamenridercraft:roidmude_core_002"
+	} , 
+	{
+	  "item": "kamenridercraft:roidmude_core_003"
+	} , 
+	{
+	  "item": "kamenridercraft:roidmude_core_009"
+	} , 
+	{
+	  "item": "kamenridercraft:roidmude_core_108"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:gord_drive_boss_block"
+  }
+}
