@@ -106,72 +106,95 @@
 
   "item.kamenridercraft.lets_go_rider_kick_music_disc": "Let's Go!! Rider Kick Music Disc",
   "item.kamenridercraft.lets_go_rider_kick.desc": "HosephHoestar - Let's Go!! Rider Kick",
+  "item.kamenridercraft.lets_go_rider_kick_music_disc.desc": "HosephHoestar - Let's Go!! Rider Kick",
 
   "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc": "Tatakae! Kamen Rider V3 Music Disc",
   "item.kamenridercraft.tatakae_kamen_rider_v3.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
+  "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
 
   "item.kamenridercraft.dragon_road_music_disc": "Dragon Road Music Disc",
   "item.kamenridercraft.dragon_road.desc": "HosephHoestar - Dragon Road",
+  "item.kamenridercraft.dragon_road_music_disc.desc": "HosephHoestar - Dragon Road",
 
   "item.kamenridercraft.kamen_rider_black_music_disc": "Kamen Rider Black Music Disc",
   "item.kamenridercraft.kamen_rider_black.desc": "HosephHoestar - Kamen Rider Black",
+  "item.kamenridercraft.kamen_rider_black_music_disc.desc": "HosephHoestar - Kamen Rider Black",
 
   "item.kamenridercraft.kamen_rider_black_rx_music_disc": "Kamen Rider Black RX Music Disc",
   "item.kamenridercraft.kamen_rider_black_rx.desc": "HosephHoestar - Kamen Rider Black RX",
+  "item.kamenridercraft.kamen_rider_black_rx_music_disc.desc": "HosephHoestar - Kamen Rider Black RX",
 
   "item.kamenridercraft.masked_rider_music_disc": "Masked Rider Music Disc",
   "item.kamenridercraft.masked_rider.desc": "HosephHoestar - Masked Rider",
+  "item.kamenridercraft.masked_rider_music_disc.desc": "HosephHoestar - Masked Rider",
 
   "item.kamenridercraft.kamen_rider_kuuga_music_disc": "Kamen Rider Kuuga! Music Disc",
   "item.kamenridercraft.kamen_rider_kuuga.desc": "HosephHoestar - Kamen Rider Kuuga!",
+  "item.kamenridercraft.kamen_rider_kuuga_music_disc.desc": "HosephHoestar - Kamen Rider Kuuga!",
 
   "item.kamenridercraft.kamen_rider_agito_music_disc": "Kamen Rider AGITO Music Disc",
   "item.kamenridercraft.kamen_rider_agito.desc": "HosephHoestar - Kamen Rider AGITO",
+  "item.kamenridercraft.kamen_rider_agito_music_disc.desc": "HosephHoestar - Kamen Rider AGITO",
 
   "item.kamenridercraft.alive_a_life_music_disc": "Alive A life Music Disc",
   "item.kamenridercraft.alive_a_life.desc": "HosephHoestar - Alive A life",
+  "item.kamenridercraft.alive_a_life_music_disc.desc": "HosephHoestar - Alive A life",
 
   "item.kamenridercraft.justifaiz_music_disc": "Justiφ's Music Disc",
   "item.kamenridercraft.justifaiz.desc": "HosephHoestar - Justiφ's",
+  "item.kamenridercraft.justifaiz_music_disc.desc": "HosephHoestar - Justiφ's",
 
   "item.kamenridercraft.journey_through_the_decade_music_disc": "Journey Through the Decade Music Disc",
   "item.kamenridercraft.journey_through_the_decade.desc": "HosephHoestar - Journey Through the Decade",
+  "item.kamenridercraft.journey_through_the_decade_music_disc.desc": "HosephHoestar - Journey Through the Decade",
 
   "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc": "W-B-X ~W-Boiled Extreme~ Music Disc",
   "item.kamenridercraft.w_b_x_w_boiled_xtreme.desc": "HosephHoestar - W-B-X ~W-Boiled Extreme~",
+  "item.kamenridercraft.w_b_x_w_boiled_xtreme_music_disc.desc": "HosephHoestar - W-B-X ~W-Boiled Extreme~",
 
   "item.kamenridercraft.anything_goes_music_disc": "Anything Goes! Music Disc",
   "item.kamenridercraft.anything_goes.desc": "HosephHoestar - Anything Goes!",
+  "item.kamenridercraft.anything_goes_music_disc.desc": "HosephHoestar - Anything Goes!",
 
   "item.kamenridercraft.just_live_more_music_disc": "JUST LIVE MORE Music Disc",
   "item.kamenridercraft.just_live_more.desc": "HosephHoestar - JUST LIVE MORE",
+  "item.kamenridercraft.just_live_more_music_disc.desc": "HosephHoestar - JUST LIVE MORE",
 
   "item.kamenridercraft.surprise_drive_music_disc": "SURPRISE-DRIVE Music Disc",
   "item.kamenridercraft.surprise_drive.desc": "HosephHoestar - SURPRISE-DRIVE",
+  "item.kamenridercraft.surprise_drive_music_disc.desc": "HosephHoestar - SURPRISE-DRIVE",
 
   "item.kamenridercraft.excite_music_disc": "EXCITE Music Disc",
   "item.kamenridercraft.excite.desc": "HosephHoestar - EXCITE",
+  "item.kamenridercraft.excite_music_disc.desc": "HosephHoestar - EXCITE",
 
   "item.kamenridercraft.be_the_one_music_disc": "Be The One Music Disc",
   "item.kamenridercraft.be_the_one.desc": "HosephHoestar - Be The One",
+  "item.kamenridercraft.be_the_one_music_disc.desc": "HosephHoestar - Be The One",
 
   "item.kamenridercraft.over_quartzer_music_disc": "Over \"Quartzer\" Music Disc",
   "item.kamenridercraft.over_quartzer.desc": "HosephHoestar - Over \"Quartzer\"",
+  "item.kamenridercraft.over_quartzer_music_disc.desc": "HosephHoestar - Over \"Quartzer\"",
 
   "item.kamenridercraft.realxeyez_music_disc": "REAL×EYEZ Music Disc",
   "item.kamenridercraft.realxeyez.desc": "HosephHoestar - REAL×EYEZ",
+  "item.kamenridercraft.realxeyez_music_disc.desc": "HosephHoestar - REAL×EYEZ",
 
   "item.kamenridercraft.almighty_music_disc": "ALMIGHTY ~ Kamen no Yakusoku Music Disc",
   "item.kamenridercraft.almighty.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
+  "item.kamenridercraft.almighty_music_disc.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
 
   "item.kamenridercraft.chemy_x_story_music_disc": "CHEMY×STORY Music Disc",
   "item.kamenridercraft.chemy_x_story.desc": "HosephHoestar - CHEMY×STORY",
+  "item.kamenridercraft.chemy_x_story_music_disc.desc": "HosephHoestar - CHEMY×STORY",
 
   "item.kamenridercraft.chemy_x_story_flow_music_disc": "CHEMY×STORY (BACK-ON × FLOW ver.) Music Disc",
   "item.kamenridercraft.chemy_x_story_flow.desc": "HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)",
+  "item.kamenridercraft.chemy_x_story_flow_music_disc.desc": "HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)",
 
   "item.kamenridercraft.got_boost_music_disc": "Got Boost? Music Disc",
   "item.kamenridercraft.got_boost.desc": "HosephHoestar - Got Boost?",
+  "item.kamenridercraft.got_boost_music_disc.desc": "HosephHoestar - Got Boost?",
 
   "effect.kamenridercraft.boost":"Boost",
 "effect.kamenridercraft.anti_poison":"Anti Poison",
