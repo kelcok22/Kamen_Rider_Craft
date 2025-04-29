@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kuuga_ultimate",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:kuuga_rising_ultimate"
+	}, 
+	{
+	  "item": "minecraft:ominous_bottle"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:kuuga_rising_ultimate_black_eyes"
+  }
+}  
