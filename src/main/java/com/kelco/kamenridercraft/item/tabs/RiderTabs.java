@@ -700,6 +700,7 @@ public class RiderTabs {
             event.accept(MobsCore.REAPER_LEGION_SPAWN_EGG);
             event.accept(MobsCore.MEDIC_ROIDMUDE_SPAWN_EGG);
             event.accept(MobsCore.GORD_DRIVE_SPAWN_EGG);
+            event.accept(MobsCore.DARK_DRIVE_SPAWN_EGG);
 
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 

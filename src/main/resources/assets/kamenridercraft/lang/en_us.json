@@ -303,6 +303,7 @@
   "henshin.kamenridercraft.brain_roidmude":"<Brain> §2Why do only the most rude and unruly troublemakers seem to evolve?",
   "henshin.kamenridercraft.medic_roidmude":"<Medic> §cGood morning, Master Heart!",
   "henshin.kamenridercraft.gord_drive": "<Banno> §eHenshin!",
+  "henshin.kamenridercraft.dark_drive": "Start Our Mission!\nOK!\n§bDrive! Type: NEXT!",
   "henshin.kamenridercraft.genm":"§5Gachan! Level Up! Mighty jump! Mighty kick! Mighty Action X!",
   "henshin.kamenridercraft.graphite":"§2Infection! Let's Game! Bad Game! Dead Game! What's your name?! The Bugster!",
   "henshin.kamenridercraft.poppy":"§bBuggle Up! §eDreaming girl! Koi no simulation! §6Otome wa itsumo Toki Meki Crisis!",
@@ -3361,6 +3362,7 @@
   "item.kamenridercraft.roidmude_core_002": "Roidmude Core 002",
   "item.kamenridercraft.roidmude_core_003": "Roidmude Core 003",
   "item.kamenridercraft.roidmude_core_009": "Roidmude Core 009",
+  "item.kamenridercraft.roidmude_core_108": "Roidmude Core 108",
   "item.kamenridercraft.protozero_core": "Roidmude Core Protozero",
   "item.kamenridercraft.cyberoid_zzz_core": "Cyberoid Core ZZZ",
 
@@ -6524,6 +6526,7 @@
   "entity.kamenridercraft.medic_roidmude": "Medic Roidmude",
   "entity.kamenridercraft.brain_roidmude": "Brain Roidmude",
   "entity.kamenridercraft.gord_drive": "Gord Drive",
+  "entity.kamenridercraft.dark_drive": "Kamen Rider Dark Drive",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
 "entity.kamenridercraft.mighty_bugster_mob": "Mighty Bugster",
@@ -6715,6 +6718,7 @@
   "item.kamenridercraft.brain_roidmude_spawn_egg": "Brain Roidmude Spawn Egg",
   "item.kamenridercraft.medic_roidmude_spawn_egg": "Medic Roidmude Spawn Egg",
   "item.kamenridercraft.gord_drive_spawn_egg": "Gord Drive Spawn Egg",
+  "item.kamenridercraft.dark_drive_spawn_egg": "Dark Drive Spawn Egg",
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
 

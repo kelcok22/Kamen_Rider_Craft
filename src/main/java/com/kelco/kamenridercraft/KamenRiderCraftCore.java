@@ -448,6 +448,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.BRAIN_ROIDMUDE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MEDIC_ROIDMUDE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GORD_DRIVE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DARK_DRIVE.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
