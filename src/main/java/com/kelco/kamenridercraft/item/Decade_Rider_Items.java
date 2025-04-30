@@ -15,6 +15,9 @@ import com.kelco.kamenridercraft.item.decade.RideBookerItem;
 import com.kelco.kamenridercraft.item.decade.RiderCardItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -35,7 +38,7 @@ public class Decade_Rider_Items {
 	public static List<Item> COMPLETE_21_WEAPONS = new ArrayList<Item>();
 
 	public static final DeferredItem<Item> DECADE_LOGO = ITEMS.register("decade_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/decade")), new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_CAMERA = ITEMS.register("decade_camera",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.DECADE_TAB_ITEM).KeepItem());
