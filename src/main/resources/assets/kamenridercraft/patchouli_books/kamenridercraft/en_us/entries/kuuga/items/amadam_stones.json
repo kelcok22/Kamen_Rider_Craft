@@ -62,6 +62,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_mighty"
 		},
 		{
@@ -122,15 +123,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kuuga_ultimate_black_eyes",
-			"future_title": "Kuuga Ultimate Amadam (Dark Eye)",
+			"title": "Kuuga Ultimate Amadam (Dark Eye)",
 			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#ultimate_dark_eye)Ultimate Form (Dark Eye)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:kuuga_ultimate_black_eyes",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:kuuga/kuuga_ultimate_black_eyes"
 		},
 		{
 			"type": "patchouli:text",
@@ -146,15 +145,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kuuga_rising_ultimate_black_eyes",
-			"future_title": "Kuuga Rising Ultimate Amadam (Dark Eye)",
+			"title": "Kuuga Rising Ultimate Amadam (Dark Eye)",
 			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#rising_ultimate_dark_eye)Rising Ultimate Form (Dark Eye)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:kuuga_rising_ultimate_black_eyes",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:kuuga/kuuga_rising_ultimate_black_eyes"
 		},
 		{
 			"type": "patchouli:text",
@@ -163,11 +160,9 @@
 			"text": "Appears in:$(li)World of OOO (2015, S.I.C. Hero Saga)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#super_rising_ultimate)Super Rising Ultimate Form$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:kuuga_super_rising_ultimate",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:kuuga/kuuga_super_rising_ultimate"
 		},
 		{
 			"type": "patchouli:text",

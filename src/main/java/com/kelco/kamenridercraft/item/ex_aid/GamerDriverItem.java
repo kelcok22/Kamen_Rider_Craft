@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft.item.ex_aid;
 
+import java.util.List;
+
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -9,10 +11,12 @@ import com.kelco.kamenridercraft.entities.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,6 +24,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 public class GamerDriverItem extends RiderDriverItem {
@@ -80,6 +85,23 @@ public class GamerDriverItem extends RiderDriverItem {
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get())) 
 			summonParaDX(player);
 		super.OnformChange(itemstack, entity, tag);
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+		this.Has_basic_belt_info = false;
+		Item formItem = get_Form_Item(stack, 1);
+		Item formItem2 = get_Form_Item(stack, 2);
+
+		if (this == Ex_Aid_Rider_Items.GAMER_DRIVER_SNIPE.get() && formItem == Ex_Aid_Rider_Items.KAMEN_RIDER_CHRONICLE_GASHAT.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.chronos"));
+		else if (formItem == Ex_Aid_Rider_Items.BAKUSOU_BIKE_GASHAT_TURBO.get()) tooltipComponents.add(Component.translatable("kamenridercraft.name.lazer_turbo"));
+		else tooltipComponents.add(Component.translatable("kamenridercraft.name." + Rider));
+
+		if (this.Show_belt_form_info) {
+			if (formItem2!= Modded_item_core.BLANK_FORM.get()) tooltipComponents.add(Component.translatable(formItem2.toString() + ".form", Component.translatable(formItem.toString() + ".form_base")));
+			else tooltipComponents.add(Component.translatable(formItem.toString() + ".form"));
+		}
+		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
 
 	@Override

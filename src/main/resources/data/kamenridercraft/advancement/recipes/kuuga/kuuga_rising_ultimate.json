@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:kuuga_ultimate"
+			  "kamenridercraft:kuuga_rising_ultimate"
 			]
 		  }
 		]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kuuga/kuuga_ultimate_black_eyes",
-	  "kamenridercraft:kuuga/kuuga_rising_ultimate"
+	  "kamenridercraft:kuuga/kuuga_rising_ultimate_black_eyes",
+	  "kamenridercraft:kuuga/kuuga_super_rising_ultimate"
 	]
   },
   "sends_telemetry_event": false

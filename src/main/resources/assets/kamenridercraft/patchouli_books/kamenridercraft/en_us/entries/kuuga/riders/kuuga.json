@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kuuga",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride Card Battle War (2010, DS game)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)"
 		},
 		{
 			"type": "patchouli:entity",

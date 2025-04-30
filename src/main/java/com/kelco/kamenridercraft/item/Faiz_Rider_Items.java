@@ -10,6 +10,10 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.faiz.FaizDriverItem;
 import com.kelco.kamenridercraft.item.faiz.MuezDriverItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -25,7 +29,7 @@ public class Faiz_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item>  FAIZ_LOGO = ITEMS.register("faiz_logo",
-    		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
+    		() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/faiz")), new Item.Properties()).AddToList(RiderTabs.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_MISSION_MEMORY = ITEMS.register("blank_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","riotrooper","smart_buckle_belt",
