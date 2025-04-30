@@ -7,9 +7,12 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.w.MetalShaftItem;
-import com.kelco.kamenridercraft.item.BaseItems.RiderCaseItem;
 import com.kelco.kamenridercraft.item.w.T2MemoryCaseItem;
 import com.kelco.kamenridercraft.item.w.WDriverItem;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -25,7 +28,7 @@ public class W_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> W_LOGO = ITEMS.register("w_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/w")), new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GAIA_MEMORY = ITEMS.register("gaiamemory",
