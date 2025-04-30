@@ -24,10 +24,8 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -206,6 +204,11 @@ public class ModCommonEvents {
 									event.getEntity().getZ() + 0.5, 1, 0, 0, 0, 3);
 						}
 
+						if (_livEnt.hasEffect(Effect_core.RIDER_POISON_HAND)) {
+							if (_livEnt.getMainHandItem().isEmpty()) {
+								event.getEntity().addEffect(new MobEffectInstance(MobEffects.POISON, 500, _livEnt.getEffect(Effect_core.RIDER_POISON_HAND).getAmplifier(),true,true));
+							}
+						}
 					if (_livEnt.hasEffect(Effect_core.FIRE_PUNCH)) {
 						 if (_livEnt.getMainHandItem().isEmpty()) {
 							 event.getEntity().igniteForSeconds(_livEnt.getEffect(Effect_core.FIRE_PUNCH).getAmplifier()+1);
@@ -231,6 +234,7 @@ public class ModCommonEvents {
 					if (event.getEntity().hasEffect(Effect_core.FIRE_ARMOR)) {
 						_livEnt.igniteForSeconds(event.getEntity().getEffect(Effect_core.FIRE_ARMOR).getAmplifier()+1);
 					}
+
 
 					if (_livEnt.hasEffect(Effect_core.EXPLOSION_PUNCH)) {
 						if (_livEnt.getMainHandItem().isEmpty()) {

@@ -128,6 +128,10 @@ public class Effect_core {
     public static final Holder<MobEffect>  FIRE_ARMOR= EFFECT.register("fire_armor",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
+    public static final Holder<MobEffect> RIDER_POISON_HAND = EFFECT.register("rider_poison_hand",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x00b969));
+
+
     public static final Holder<MobEffect> GATLING= EFFECT.register("gatling",
             () -> new GatlingEffect(MobEffectCategory.NEUTRAL, 0x1d8519));
 
@@ -191,6 +195,9 @@ public class Effect_core {
 
     public static final Holder<MobEffect> CONNECT= EFFECT.register("connect",
             () -> new ConnectEffect(MobEffectCategory.BENEFICIAL, 0xad16d5));
+
+    public static final Holder<MobEffect>  HEAVY_ACCELERATION= EFFECT.register("heavy_acceleration",
+            () -> new 	HeavyAccelerationEffect(MobEffectCategory.BENEFICIAL, 0xc38edb));
 
     public static final Holder<MobEffect>  GHOST= EFFECT.register("ghost",
             () -> new 	GhostEffect(MobEffectCategory.BENEFICIAL, 0xf59b14));

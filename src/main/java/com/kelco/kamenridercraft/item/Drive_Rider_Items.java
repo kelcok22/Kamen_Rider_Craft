@@ -536,7 +536,8 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> ROIDMUDE_CORE_003 = ITEMS.register("roidmude_core_003",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","brain","banno_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 0,true,false))
 					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get())
 					.has_basic_model().AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
