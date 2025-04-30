@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride Card Battle War (2010, DS game)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#kuuga_ball)Kuuga Ball$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#kuuga_ball)Kuuga Ball$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

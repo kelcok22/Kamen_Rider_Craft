@@ -65,7 +65,6 @@ public class BuildDriverItem extends RiderDriverItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-		Item belt= stack.getItem();
 		this.Has_basic_belt_info = false;
 		Item formItem = this.get_Form_Item(stack, 1);
 		Item formItem2 = this.get_Form_Item(stack, 2);
