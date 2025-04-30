@@ -187,7 +187,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             }
             model.leftArm.visible = false;
             model.rightArm.visible = false;
-            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Face()){
+            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Legs()){
                 model.leftLeg.visible = false;
                 model.rightLeg.visible = false;
             }
