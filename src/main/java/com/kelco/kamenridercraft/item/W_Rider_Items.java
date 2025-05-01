@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.saber.BookGateItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.w.MetalShaftItem;
 import com.kelco.kamenridercraft.item.w.T2MemoryCaseItem;
@@ -406,7 +407,8 @@ public class W_Rider_Items {
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
 			.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.W_TAB_ITEM));
 
-
+	public static final DeferredItem<Item> ROAD_MEMORY = ITEMS.register("road_memory",
+			() -> new BaseCityItem(new Item.Properties(),10).AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> EGG_CHICKEN_MEMORY = ITEMS.register("egg_chicken_memory",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM));

@@ -1,0 +1,14 @@
+{
+  "structures": [
+	{
+	  "structure": "kamenridercraft:city",
+	  "weight": 1
+	}
+  ],
+  "placement": {
+	"type": "minecraft:random_spread",
+	"salt": 98524,
+	"spacing": 15,
+	"separation": 8
+  }
+}
