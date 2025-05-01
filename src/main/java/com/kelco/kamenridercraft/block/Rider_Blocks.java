@@ -714,7 +714,7 @@ public class Rider_Blocks {
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_TOP = registerBlock("sword_of_logos_tabel_top",
-			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).lightLevel((glow) -> { return 15; })
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_TRIM = registerBlock("sword_of_logos_wood_trim",
