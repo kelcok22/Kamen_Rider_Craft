@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-29T21:31:40.2590777	Item Models: kamenridercraft
+// 1.21.1	2025-05-01T02:55:12.4139044	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -160,6 +160,8 @@ ca60530986bbbcf3edce40d64127a1be9cd76783 assets/kamenridercraft/models/item/next
 2477e8b81020a1affe359aa0047769162046d985 assets/kamenridercraft/models/item/next_traveller.json
 70432d05ad9bbee9ef4984116f8b63f627d1b707 assets/kamenridercraft/models/item/niwatori_vistamp_vice.json
 65c4eae72457297231308ed282a8b8f79067a896 assets/kamenridercraft/models/item/nougattirol_gochizo.json
+7957103a6f30887a45a46112b71717f7b4b6e171 assets/kamenridercraft/models/item/n_daguva_zeba_belt.json
+4e5aa9a3b86ebb5bb55b3d4a31881a6f7d5d2592 assets/kamenridercraft/models/item/n_daguva_zeba_ultimate.json
 ddb65d1705f9d60752ec9c34c8319082d158c5f5 assets/kamenridercraft/models/item/oshiruko_gochizo.json
 b18d4c0aa1f671277fd05e9f3f0f52c3fd56c7e8 assets/kamenridercraft/models/item/ottotto_gochizo.json
 67a66157892dcc82a50867ac72c90e0c2701795b assets/kamenridercraft/models/item/pandora_bottle.json
