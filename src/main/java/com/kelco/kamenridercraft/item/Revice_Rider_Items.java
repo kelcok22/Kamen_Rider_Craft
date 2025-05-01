@@ -12,9 +12,12 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.VistampHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -34,7 +37,7 @@ public class Revice_Rider_Items {
 
 
 	public static final DeferredItem<Item> REVICE_LOGO = ITEMS.register("revice_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/revice")), new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_VISTAMP = ITEMS.register("proto_vistamp",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));

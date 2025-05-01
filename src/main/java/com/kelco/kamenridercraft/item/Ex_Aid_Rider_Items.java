@@ -9,6 +9,10 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ex_aid.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -26,7 +30,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> EX_AID_LOGO = ITEMS.register("ex_aid_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ex_aid")), new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUGSTER_VIRUS_DNA = ITEMS.register("bugster_virus_dna",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.EX_AID_TAB_ITEM));

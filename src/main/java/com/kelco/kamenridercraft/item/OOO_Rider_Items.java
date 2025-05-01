@@ -9,9 +9,12 @@ import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -31,7 +34,7 @@ public class OOO_Rider_Items {
 	public static List<Item> SPECIAL_NAME_MEDALS = new ArrayList<Item>();
 
 	public static final DeferredItem<Item> OOO_LOGO = ITEMS.register("ooo_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ooo")), new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item>CELL_MEDAL = ITEMS.register("cellmedal",
 			() -> new CellMedalItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));

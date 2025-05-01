@@ -10,6 +10,10 @@ import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
 import com.kelco.kamenridercraft.item.Fourze.ShowaSwitchItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ArmorItem;
@@ -27,7 +31,7 @@ public class Fourze_Rider_Items {
 
 
 	public static final DeferredItem<Item> FOURZE_LOGO = ITEMS.register("fourze_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/fourze")), new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_ASTROSWITCH = ITEMS.register("astroswitch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));

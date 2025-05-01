@@ -208,7 +208,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doppudding_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +221,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:purujelly_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
 		},
 		{
 			"type": "patchouli:text",

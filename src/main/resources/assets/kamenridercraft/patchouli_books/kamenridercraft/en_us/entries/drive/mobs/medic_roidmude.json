@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_neo_cobara)Neo Cobra Viral Core$(/l) (75%)$(li)1 $(l:drive/items/roidmude_cores#roidmude_core_009)Roidmude Core 009$(/l) (25%)"
+			"text": "Has a 5% chance to spawn from a $(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(br2)Drops$(li)3-5 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/viral_cores#viral_core_neo_cobara)Neo Cobra Viral Core$(/l) (75%)$(li)1 $(l:drive/items/roidmude_cores#roidmude_core_009)Roidmude Core 009$(/l) (25%)"
 		}
 	]
 }

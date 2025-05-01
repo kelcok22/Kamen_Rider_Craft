@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Dark Drive",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dark_drive",
+			"text": "Appears in:$(li)Kamen Rider Drive: Surprise Future (2015, movie)$(br)Health: 130"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(br2)Drops$(li)4-6 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/roidmude_cores#roidmude_core_108)Roidmude Core 108$(/l) (75%)$(li)3-5 $(l:drive/items/next_system_car)NEXT System Cars$(/l) (25%)$(li)1 $(l:drive/items/shift_cars#nextshift)Shift Next$(/l)"
+		}
+	]
+}

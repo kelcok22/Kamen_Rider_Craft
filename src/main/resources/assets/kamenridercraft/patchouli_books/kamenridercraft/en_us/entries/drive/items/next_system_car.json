@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:next_system_car",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
 		}
 	]
 }

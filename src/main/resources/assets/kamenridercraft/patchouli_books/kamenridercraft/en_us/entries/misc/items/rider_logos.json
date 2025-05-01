@@ -6,171 +6,212 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The logos of each installment of the Kamen Rider Series, plus a couple extras."
+			"text": "The logos of each installment of the Kamen Rider Series, plus a couple extras. These can be used in a loom to emblazon banners with various symbols from their corresponding series."
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ichigo/ichigo_logo"
+			"recipe": "kamenridercraft:ichigo/ichigo_logo",
+			"text": "Banner patterns:$(li)Kamen Rider Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:v3/v3_logo"
+			"recipe": "kamenridercraft:v3/v3_logo",
+			"text": "Banner patterns:$(li)V3 Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:v3/riderman_logo"
+			"recipe": "kamenridercraft:v3/riderman_logo",
+			"text": "Banner patterns:$(li)Riderman Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:x/x_logo"
+			"recipe": "kamenridercraft:x/x_logo",
+			"text": "Banner patterns:$(li)X Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:amazon/amazon_logo"
+			"recipe": "kamenridercraft:amazon/amazon_logo",
+			"text": "Banner patterns:$(li)Amazon Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:stronger/stronger_logo"
+			"recipe": "kamenridercraft:stronger/stronger_logo",
+			"text": "Banner patterns:$(li)Stronger Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:skyrider/skyrider_logo"
+			"recipe": "kamenridercraft:skyrider/skyrider_logo",
+			"text": "Banner patterns:$(li)Skyrider Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:super_1/super1_logo"
+			"recipe": "kamenridercraft:super_1/super1_logo",
+			"text": "Banner patterns:$(li)Super-1 Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zx/zx_logo"
+			"recipe": "kamenridercraft:zx/zx_logo",
+			"text": "Banner patterns:$(li)ZX Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:black/black_logo"
+			"recipe": "kamenridercraft:black/black_logo",
+			"text": "Banner patterns:$(li)Black Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:rx/black_rx_logo"
+			"recipe": "kamenridercraft:rx/black_rx_logo",
+			"text": "Banner patterns:$(li)Black RX Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:shin/shin_logo"
+			"recipe": "kamenridercraft:shin/shin_logo",
+			"text": "Banner patterns:$(li)Shin Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zo/zo_logo"
+			"recipe": "kamenridercraft:zo/zo_logo",
+			"text": "Banner patterns:$(li)ZO Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:j/j_logo"
+			"recipe": "kamenridercraft:j/j_logo",
+			"text": "Banner patterns:$(li)J Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:kuuga/kuuga_logo"
+			"recipe": "kamenridercraft:kuuga/kuuga_logo",
+			"text": "Banner patterns:$(li)Kuuga Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:agito/agito_logo"
+			"recipe": "kamenridercraft:agito/agito_logo",
+			"text": "Banner patterns:$(li)Agito Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ryuki/ryuki_logo"
+			"recipe": "kamenridercraft:ryuki/ryuki_logo",
+			"text": "Banner patterns:$(li)Ryuki Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:faiz/faiz_logo"
+			"recipe": "kamenridercraft:faiz/faiz_logo",
+			"text": "Banner patterns:$(li)Faiz Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:blade/blade_logo"
+			"recipe": "kamenridercraft:blade/blade_logo",
+			"text": "Banner patterns:$(li)Blade Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:hibiki/hibiki_logo"
+			"recipe": "kamenridercraft:hibiki/hibiki_logo",
+			"text": "Banner patterns:$(li)Hibiki Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:kabuto/kabuto_logo"
+			"recipe": "kamenridercraft:kabuto/kabuto_logo",
+			"text": "Banner patterns:$(li)Kabuto Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:den_o/den_o_logo"
+			"recipe": "kamenridercraft:den_o/den_o_logo",
+			"text": "Banner patterns:$(li)Den-O Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:kiva/kiva_logo"
+			"recipe": "kamenridercraft:kiva/kiva_logo",
+			"text": "Banner patterns:$(li)Kiva Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:decade/decade_logo"
+			"recipe": "kamenridercraft:decade/decade_logo",
+			"text": "Banner patterns:$(li)Decade Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:g/g_logo"
+			"recipe": "kamenridercraft:g/g_logo",
+			"text": "Banner patterns:$(li)G Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:w/w_logo"
+			"recipe": "kamenridercraft:w/w_logo",
+			"text": "Banner patterns:$(li)W Logo$(li)W Logo (Body)$(li)W Logo (Soul)"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ooo/ooo_logo"
+			"recipe": "kamenridercraft:ooo/ooo_logo",
+			"text": "Banner patterns:$(li)OOO Logo$(li)OOO Logo (Taka)$(li)OOO Logo (Tora)$(li)OOO Logo (Batta)"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:fourze/fourze_logo"
+			"recipe": "kamenridercraft:fourze/fourze_logo",
+			"text": "Banner patterns:$(li)Fourze Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:wizard/wizard_logo"
+			"recipe": "kamenridercraft:wizard/wizard_logo",
+			"text": "Banner patterns:$(li)Wizard Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gaim/gaim_logo"
+			"recipe": "kamenridercraft:gaim/gaim_logo",
+			"text": "Banner patterns:$(li)Gaim Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:drive/drive_logo"
+			"recipe": "kamenridercraft:drive/drive_logo",
+			"text": "Banner patterns:$(li)Drive Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ghost/ghost_logo"
+			"recipe": "kamenridercraft:ghost/ghost_logo",
+			"text": "Banner patterns:$(li)Ghost Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:exaid/ex_aid_logo"
+			"recipe": "kamenridercraft:exaid/ex_aid_logo",
+			"text": "Banner patterns:$(li)Ex-Aid Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:build/build_logo"
+			"recipe": "kamenridercraft:build/build_logo",
+			"text": "Banner patterns:$(li)Build Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zi_o/zi_o_logo"
+			"recipe": "kamenridercraft:zi_o/zi_o_logo",
+			"text": "Banner patterns:$(li)Zi-O Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zero_one/zero_one_logo"
+			"recipe": "kamenridercraft:zero_one/zero_one_logo",
+			"text": "Banner patterns:$(li)Zero-One Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:saber/saber_logo"
+			"recipe": "kamenridercraft:saber/saber_logo",
+			"text": "Banner patterns:$(li)Saber Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:revice/revice_logo"
+			"recipe": "kamenridercraft:revice/revice_logo",
+			"text": "Banner patterns:$(li)Revice Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:geats/geats_logo"
+			"recipe": "kamenridercraft:geats/geats_logo",
+			"text": "Banner patterns:$(li)Geats Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gotchard/gotchard_logo"
+			"recipe": "kamenridercraft:gotchard/gotchard_logo",
+			"text": "Banner patterns:$(li)Gotchard Logo"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gavv/gavv_logo"
+			"recipe": "kamenridercraft:gavv/gavv_logo",
+			"text": "Banner patterns:$(li)Gavv Logo"
 		}
 	]
 }

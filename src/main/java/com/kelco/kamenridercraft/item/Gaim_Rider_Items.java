@@ -10,10 +10,12 @@ import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -33,7 +35,7 @@ public class Gaim_Rider_Items {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> GAIM_LOGO = ITEMS.register("gaim_logo",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gaim")), new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIMAWRI_LOCKSEED = ITEMS.register("himawari_lockseed",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAIM_TAB_ITEM));

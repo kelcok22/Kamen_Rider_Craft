@@ -4,14 +4,16 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -22,7 +24,7 @@ public class Ichigo_Rider_Items {
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_LOGO = ITEMS.register("kamen_rider_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ichigo")), new Item.Properties()).AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
 
@@ -175,9 +177,9 @@ public class Ichigo_Rider_Items {
     //V3
 
     public static final DeferredItem<Item> V3_LOGO = ITEMS.register("v3_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/v3")), new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
     public static final DeferredItem<Item> RIDERMAN_LOGO = ITEMS.register("riderman_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/riderman")), new Item.Properties()).AddToList(RiderTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE = ITEMS.register("double_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v3","double_typhoon_belt",
@@ -221,7 +223,7 @@ public class Ichigo_Rider_Items {
 
     //X
     public static final DeferredItem<Item> X_LOGO = ITEMS.register("x_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/x")), new Item.Properties()).AddToList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL_CORE = ITEMS.register("ridol_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","x","ridol_belt",
@@ -257,7 +259,7 @@ public class Ichigo_Rider_Items {
     //Amazon
 
     public static final DeferredItem<Item> AMAZON_LOGO = ITEMS.register("amazon_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/amazon")), new Item.Properties()).AddToList(RiderTabs.AMAZON_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CONDORER_WHEEL = ITEMS.register("condorer_wheel",
@@ -289,7 +291,7 @@ public class Ichigo_Rider_Items {
 
     //Stronger
     public static final DeferredItem<Item> STRONGER_LOGO = ITEMS.register("stronger_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.STRONGER_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/stronger")), new Item.Properties()).AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ELECTRER_CORE = ITEMS.register("electrer_core",
@@ -333,7 +335,7 @@ public class Ichigo_Rider_Items {
 
     //Skyrider
     public static final DeferredItem<Item> SKYRIDER_LOGO = ITEMS.register("skyrider_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/skyrider")), new Item.Properties()).AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> TORNADO_CORE = ITEMS.register("tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","skyrider","tornado_belt",
@@ -357,7 +359,7 @@ public class Ichigo_Rider_Items {
 
     //Super 1
     public static final DeferredItem<Item>  SUPER_1_LOGO = ITEMS.register("super_1_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SUPER1_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/super_1")), new Item.Properties()).AddToList(RiderTabs.SUPER1_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  CYCLODE_CORE = ITEMS.register("cyclode_core",
@@ -380,7 +382,7 @@ public class Ichigo_Rider_Items {
 
     //ZX
     public static final DeferredItem<Item>  ZX_LOGO = ITEMS.register("zx_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZX_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zx")), new Item.Properties()).AddToList(RiderTabs.ZX_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  ZX_BELT_CORE = ITEMS.register("zx_belt_core",
@@ -412,7 +414,7 @@ public class Ichigo_Rider_Items {
     //Black
 
     public static final DeferredItem<Item>  BLACK_LOGO = ITEMS.register("black_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLACK_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/black")), new Item.Properties()).AddToList(RiderTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  RED_KING_STONE = ITEMS.register("red_king_stone",
@@ -472,7 +474,7 @@ public class Ichigo_Rider_Items {
 
     //Black RX
     public static final DeferredItem<Item>  BLACK_RX_LOGO = ITEMS.register("black_rx_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/black_rx")), new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
 
     public static final DeferredItem<Item>  SPLIT_KING_STONE = ITEMS.register("split_king_stone",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RX_TAB_ITEM));
@@ -544,7 +546,7 @@ public class Ichigo_Rider_Items {
     // Shin
 
     public static final DeferredItem<Item>  SHIN_LOGO = ITEMS.register("shin_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SHIN_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/shin")), new Item.Properties()).AddToList(RiderTabs.SHIN_TAB_ITEM));
 
     public static final DeferredItem<Item>  SHIN_STONE = ITEMS.register("shin_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shin","blank",
@@ -567,7 +569,7 @@ public class Ichigo_Rider_Items {
 
     // ZO
     public static final DeferredItem<Item>  ZO_LOGO = ITEMS.register("zo_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZO_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zo")), new Item.Properties()).AddToList(RiderTabs.ZO_TAB_ITEM));
 
     public static final DeferredItem<Item>  ZO_STONE = ITEMS.register("zo_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","zo","blank",
@@ -590,7 +592,7 @@ public class Ichigo_Rider_Items {
 
     // J
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.J_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).AddToList(RiderTabs.J_TAB_ITEM));
 
     public static final DeferredItem<Item>  J_STONE_JUMBO_FORMATION = ITEMS.register("j_stone_jumbo_formation",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","j","blank",

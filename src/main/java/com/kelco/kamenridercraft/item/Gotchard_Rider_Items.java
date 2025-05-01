@@ -13,9 +13,12 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -60,7 +63,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_FullFullRocket= new ArrayList<Item>();
 
 	public static final DeferredItem<Item> GOTCHARD_LOGO = ITEMS.register("gotchard_logo",
-    		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+    		() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gotchard")), new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_RIDE_CHEMY_CARD = ITEMS.register("blank_ride_chemy_card",
     		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));

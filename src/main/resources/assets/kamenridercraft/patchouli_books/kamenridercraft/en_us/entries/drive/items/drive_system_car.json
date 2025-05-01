@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:drive/drive_system_car"
+			"recipe": "kamenridercraft:drive/drive_system_car",
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"	
 		}
 	]
 }
