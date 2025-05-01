@@ -60,6 +60,15 @@
 			  "projection": "rigid",
 			  "element_type": "minecraft:single_pool_element"
 		  }
+	  },
+	  {
+		  "weight": 4,
+		  "element": {
+			  "location": "kamenridercraft:city/origin/toei_studios",
+			  "processors": "minecraft:empty",
+			  "projection": "rigid",
+			  "element_type": "minecraft:single_pool_element"
+		  }
 	  }
 
   ]
