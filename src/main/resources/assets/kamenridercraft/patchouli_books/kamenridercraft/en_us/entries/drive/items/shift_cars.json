@@ -478,7 +478,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:speedshift_gold",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -491,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wildshift_gold",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"
 		},
 		{
 			"type": "patchouli:text",

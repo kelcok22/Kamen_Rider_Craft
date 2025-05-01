@@ -176,6 +176,19 @@
 			"item": "kamenridercraft:kuuga_black_rising_mighty",
 			"title": " ",
 			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "n_daguva_zeba_ultimate",
+			"title": "N.Daguva.Zeba Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:n_daguva_zeba_ultimate",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

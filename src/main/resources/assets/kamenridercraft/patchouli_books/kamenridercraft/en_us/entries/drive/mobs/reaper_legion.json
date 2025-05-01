@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(br2)Bosses$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l) (10%)"
+			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(li)1 $(l:drive/items/shift_alloy)Shift Alloy$(/l) (62.5%)$(li)1-2 $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) (37.5%)$(li)2-4 $(l:drive/items/viral_cores#viral_core_cobara)Cobra Viral Cores$(/l) (33.3%)$(li)2-4 $(l:drive/items/viral_cores#viral_core_spider)Spider Viral Cores$(/l) (33.3%)$(li)2-4 $(l:drive/items/viral_cores#viral_core_bat)Bat Viral Cores$(/l) (33.3%)$(br2)Bosses$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l) (5%)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l) (5%)"
 		}
 	]
 }
