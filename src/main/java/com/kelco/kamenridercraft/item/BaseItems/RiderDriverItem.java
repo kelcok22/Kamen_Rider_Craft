@@ -93,55 +93,18 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
-    public void riderKick(ItemStack stack, Level level, Entity entity,CompoundTag tag) {
-        if (tag.getBoolean("rider_kick")) {
-            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY(),entity.getZ(), 0.0D, 0.0D, 0.0D);
-            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY()+1,entity.getZ(), 0.0D, 0.0D, 0.0D);
-            level.addParticle(ParticleTypes.EXPLOSION,entity.getX(), entity.getY()+0.5,entity.getZ(), 0.0D, 0.0D, 0.0D);
-
-            if (level instanceof ServerLevel slevel) {
-                if (entity instanceof Player player) {
-
-                            Vec3 look = new Vec3(player.getLookAngle().x*0.1, player.getLookAngle().y*0.04, player.getLookAngle().z*0.1).scale(2);
-                        double y= look.y+player.getGravity();
-                        if (y>-0.1)y=-0.1;
-                        player.push(look.x, y, look.z);
-                        player.hurtMarked=true;
-
-                        if (player.onGround()||player.isInWater()) {tag.putBoolean("rider_kick", false);}
-
-
-                        List<LivingEntity> nearbyEnemies = slevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(1), sentity ->
-                                (sentity instanceof Player && sentity != player)
-                                        || (sentity instanceof Mob));
-                        for (LivingEntity enemy : nearbyEnemies) {
-                            //level.explode(player, enemy.getX(), enemy.getY() + 2, enemy.getZ(), player.fallDistance, false, Level.ExplosionInteraction.TRIGGER);
-
-                            DamageSource damageSource = new DamageSource(
-                                    // The damage type holder to use. Query from the registry. This is the only required parameter.
-                                    level.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),
-                                    player,
-                                    player,
-                                    player.position());
-                            float at = (float) (player.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+player.fallDistance);
-                            enemy.hurt(damageSource, at);
-                            player.sendSystemMessage(Component.literal("power="+at));
-                            level.addParticle(ParticleTypes.EXPLOSION, entity.getX(), entity.getY() + 0.5, entity.getZ(), 0.0D, 0.0D, 0.0D);
-                            tag.putBoolean("rider_kick", false);
-                        }
-                    }
-                }
-            }
-    }
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
+            if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") & !level.isClientSide()) OnformChange(stack, player, tag);
-                if (tag.getBoolean("isTransformed") & !isTransformed(player)) tag.putBoolean("isTransformed",false);
-            if (player.getItemBySlot(EquipmentSlot.FEET)==stack) tag.putBoolean("isTransformed",false);
-
+                if (tag.getBoolean("isTransformed") & !isTransformed(player)) tag.putBoolean("isTransformed", false);
+                if (player.getItemBySlot(EquipmentSlot.FEET) == stack) tag.putBoolean("isTransformed", false);
+            }else{
+                stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+            }
             if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
@@ -155,6 +118,15 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
+
+        player.setInvisible(false);
+        Level level = player.level();
+        if(!level.isClientSide()&isTransformed(player)) {
+            OnTransformation(itemstack,player);
+        }
+        tag.putBoolean("Update_form", false);
+    }
 
     public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
         for (int n = 0; n < Num_Base_Form_Item; n++) {
@@ -163,12 +135,17 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         tag.putBoolean("isTransformed",true);
         if(isTransformed(player)) {
-            //ParticleTypes.GUST
-            ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST,
-                    player.getX() , player.getY() + 1.0,
-                    player.getZ(), 1, 0, 0, 0, 1);
+         OnTransformation(itemstack,player);
         }
     }
+
+    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+        if(isTransformed(player)) {
+            RiderFormChangeItem formitem = get_Form_Item(itemstack,1);
+            formitem.OnTransformation(itemstack,player);
+        }
+    }
+
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
         RiderFormChangeItem formitem = get_Form_Item(itemstack,1);
@@ -178,7 +155,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 pLivingEntity.registryAccess().lookupOrThrow(Registries.DAMAGE_TYPE).getOrThrow(DamageTypes.PLAYER_ATTACK),pLivingEntity,pLivingEntity,pLivingEntity.position());
         float at = (float) (pLivingEntity.getAttributes().getValue(Attributes.ATTACK_DAMAGE)+pLivingEntity.fallDistance);
         enemy.hurt(damageSource, at);
-        pLivingEntity.sendSystemMessage(Component.literal("power="+at));
+        //pLivingEntity.sendSystemMessage(Component.literal("power="+at));
         pLivingEntity.fallDistance = 0.0f;
         if(!pLivingEntity.level().isClientSide()) {
             ((ServerLevel) pLivingEntity.level()).sendParticles(ParticleTypes.EXPLOSION,
@@ -190,18 +167,6 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
-    public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
-
-        player.setInvisible(false);
-        Level level = player.level();
-        if(!level.isClientSide()&isTransformed(player)) {
-            //ParticleTypes.GUST
-            ((ServerLevel) level).sendParticles(ParticleTypes.GUST,
-                    player.getX() , player.getY() + 1.0,
-                    player.getZ(), 1, 0, 0, 0, 1);
-        }
-       tag.putBoolean("Update_form", false);
-    }
 
 
     public RiderDriverItem Add_Extra_Base_Form_Items(DeferredItem<Item> item) {
@@ -315,9 +280,11 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag  tag = new CompoundTag();
             Consumer<CompoundTag> data = form ->
             {
-                form.putString("slot_tex"+SLOT, ITEM.toString());
-			    form.putInt("slot"+SLOT, Item.getId(ITEM));
-                form.putBoolean("Update_form", true);
+                if (form.getInt("slot" + SLOT)!=Item.getId(ITEM)) {
+                    form.putString("slot_tex" + SLOT, ITEM.toString());
+                    form.putInt("slot" + SLOT, Item.getId(ITEM));
+                    form.putBoolean("Update_form", true);
+                }
             };
 
             data.accept(tag);

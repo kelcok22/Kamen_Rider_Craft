@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderCaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.sounds.ModSounds;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -144,7 +145,8 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false))
+                    new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
                     .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> EXBEETER = ITEMS.register("exbeeter",
@@ -299,6 +301,18 @@ public class Modded_item_core {
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)
             ){
+
+                    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+                    super.OnTransformation(itemstack,player);
+                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                        thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                        player.level().addFreshEntity(thunder);
+
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FIREWORK,
+                            player.getX() , player.getY() + 1.0,
+                            player.getZ(), 100, 0, 0, 0, 0.4);
+                }
+
                 public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
                     if (!pLivingEntity.level().isClientSide()) {
                         if (pLivingEntity.level() instanceof ServerLevel) {

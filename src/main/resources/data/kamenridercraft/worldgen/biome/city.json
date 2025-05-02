@@ -5,10 +5,10 @@
   "temperature_modifier": "frozen",
   "creature_spawn_probability": 0,
     "effects": {
-      "sky_color": 197379,
-      "fog_color": 0,
-      "water_color": 4159204,
+      "sky_color": 9822180,
+      "fog_color": 15005947,
       "water_fog_color": 329011,
+      "water_color": 4159204,
       "grass_color": 7119193,
       "foliage_color": 7119193,
       "mood_sound": {

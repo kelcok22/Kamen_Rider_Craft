@@ -6,6 +6,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent;
 
@@ -20,11 +21,17 @@ public class ModServerEvents {
 			if (!event.getEntity().level().isClientSide()) {
 				ItemStack stack = event.getEntity().getItemBySlot(EquipmentSlot.FEET);
 				if (stack.getItem() instanceof RiderDriverItem) {
+
+					if (!stack.has(DataComponents.CUSTOM_DATA)) {
+						stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+					}
+
 					CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 					if (!tag.getBoolean("isTransformed")) {
 						if (event.getSlot() != EquipmentSlot.MAINHAND && event.getSlot() != EquipmentSlot.OFFHAND
 								&& stack.getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity()))
 							belt.OnTransform(stack, event.getEntity(), tag);
+
 					}
 				}
 			}

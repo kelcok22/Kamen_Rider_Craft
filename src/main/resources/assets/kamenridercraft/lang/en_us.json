@@ -257,7 +257,8 @@
   "effect.kamenridercraft.cosmic_energy":"§bCosmic Energy",
   "effect.kamenridercraft.thunder_slash":"Thunder Slash",
   "effect.kamenridercraft.portal_cooldown":"§5Portal Cooldown",
-
+  "effect.kamenridercraft.rider_kick":"Rider Kick!",
+  "effect.kamenridercraft.rider_poison_hand":"§aRider Dokushu!",
 
   "owner.kamenridercraft.decade":"Decade's %s",
   "owner.kamenridercraft.zein":"Zein's %s",
@@ -3992,7 +3993,8 @@
   "item.kamenridercraft.drivedriver_darkdrive": "Drive Driver",
   "kamenridercraft.name.dark_drive": "Rider: Kamen Rider Dark Drive",
   "item.kamenridercraft.banno_driver_gord_drive": "Banno Driver",
-  "kamenridercraft.name.gold_drive": "Debatable Rider: Gord Drive",
+  "kamenridercraft.name.gold_drive": "Debatable Rider: Gold Drive",
+  "kamenridercraft.name.gold_drive.a1": "Debatable Rider: Gord Drive",
   "item.kamenridercraft.banno_driver_bronze_drive": "Banno Driver",
   "kamenridercraft.name.bronze_drive": "Debatable Rider: Bronzedrive",
   "item.kamenridercraft.drivedriver_heart": "Drive Driver",
@@ -4011,6 +4013,8 @@
   "kamenridercraft.name.mashin_chaser": "Debatable Rider: Mashin Chaser",
   "item.kamenridercraft.lupin_belt": "Lupin Belt",
   "kamenridercraft.name.lupin": "Rider: Kamen Rider Lupin",
+  "item.kamenridercraft.fake_drivedriver": "Drive Driver",
+  "kamenridercraft.name.fake_drive": "Kaijin: Fake Drive",
 
   "item.kamenridercraft.handle_sword": "Handle-Ken",
   "item.kamenridercraft.door_ju": "Door-Ju",
@@ -7282,7 +7286,7 @@
   "entity.kamenridercraft.heart_roidmude": "Heart Roidmude",
   "entity.kamenridercraft.medic_roidmude": "Medic Roidmude",
   "entity.kamenridercraft.brain_roidmude": "Brain Roidmude",
-  "entity.kamenridercraft.gord_drive": "Gord Drive",
+  "entity.kamenridercraft.gord_drive": "Gold Drive",
   "entity.kamenridercraft.dark_drive": "Kamen Rider Dark Drive",
 
 "entity.kamenridercraft.bugstervirus_mob": "Bugster",
@@ -7474,7 +7478,7 @@
   "item.kamenridercraft.heart_roidmude_spawn_egg": "Heart Roidmude Spawn Egg",
   "item.kamenridercraft.brain_roidmude_spawn_egg": "Brain Roidmude Spawn Egg",
   "item.kamenridercraft.medic_roidmude_spawn_egg": "Medic Roidmude Spawn Egg",
-  "item.kamenridercraft.gord_drive_spawn_egg": "Gord Drive Spawn Egg",
+  "item.kamenridercraft.gord_drive_spawn_egg": "Gold Drive Spawn Egg",
   "item.kamenridercraft.dark_drive_spawn_egg": "Dark Drive Spawn Egg",
 
   "item.kamenridercraft.gamma_commandos_spawn_egg": "Gamma Commando Spawn Egg",
@@ -7827,7 +7831,7 @@
   "block.kamenridercraft.redyue_boss_block": "Redyue Boss Block",
   "block.kamenridercraft.demushu_boss_block": "Demushu Boss Block",
   "block.kamenridercraft.lord_baron_boss_block": "Lord Baron Boss Block",
-  "block.kamenridercraft.gord_drive_boss_block": "Gord Drive Boss Block",
+  "block.kamenridercraft.gord_drive_boss_block": "Gold Drive Boss Block",
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
   "block.kamenridercraft.night_rogue_boss_block": "Night Rogue Boss Block",
   "block.kamenridercraft.hokuto_trio_boss_block": "Hokuto Trio Boss Block",
