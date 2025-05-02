@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.ShiftChassisAssembler;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.bosses.GordDriveEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.drive.DriveDriverItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
@@ -141,7 +142,7 @@ public class Drive_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.SATURATION, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
+					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
 					.addAlternative(BASIC_TIRE.get()).AddIncompatibleForm(SHIFT_FORMULA.asItem()).ChangeSlot(2)
 					.model_has_different_name("tridoronshift").has_basic_model());
 
@@ -214,7 +215,7 @@ public class Drive_Rider_Items {
 	public static final DeferredItem<Item> ATTACK_123 = ITEMS.register("attack123_tire",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"attack123_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
+					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
 					.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(),1).AddNeedItemList(NEED_ITEM_ATTACK_123)
 					.ChangeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
@@ -257,7 +258,7 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> SHIFT_MIDNIGHT_SHADOW = ITEMS.register("midnightshadow",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"midnight_shadow_tire","drive","drivedriver_belt",
-					new MobEffectInstance(Effect_core.GATLING, 40, 0,true,false))
+					new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false))
 					.AddIncompatibleForm(SHIFT_FORMULA.asItem()).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.addAlternative(ATTACK_123.get()).ChangeSlot(2).AddToList(NEED_ITEM_ATTACK_123).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE)
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,7).AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -629,11 +630,11 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
@@ -641,15 +642,15 @@ public class Drive_Rider_Items {
 
 	public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(BREAK_GUNNER_BELT.get())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
+					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(LUPIN_BELT.get())
