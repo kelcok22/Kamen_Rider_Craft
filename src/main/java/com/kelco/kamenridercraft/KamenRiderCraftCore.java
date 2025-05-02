@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.compat.BetterCombatAttackListener;
 import com.kelco.kamenridercraft.dimension.custom_dimension_effect;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.footSoldiers.ZuGumunBaEntity;
 import com.kelco.kamenridercraft.entities.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
@@ -34,7 +35,11 @@ import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.client.event.*;
@@ -80,6 +85,7 @@ public class KamenRiderCraftCore
     public static List<Item> SWORD_GUN_ITEM= new ArrayList<Item>();
 
     public static List<Item> KUUGA_CHANGING_ITEM= new ArrayList<Item>();
+    public static List<Item> KUUGA_PHONE= new ArrayList<Item>();
 
     public static List<Item> RAISE_RISER_ITEM= new ArrayList<Item>();
 
@@ -255,7 +261,6 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                     });
                 }
 
-
             for (Item item : KUUGA_CHANGING_ITEM) {
                 ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                             if (p_174637_ == null) {
@@ -268,6 +273,33 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                                     if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_u") return 2;
                                     if (RiderDriverItem.get_Form_Item(belt, 1).getBeltTex() == "arcle_belt_ru") return 2;
                                 } else {
+                                    return 0;
+                                }
+                                return 0;
+                            }
+                            return 0;
+                            //return p_174637_.getUseItem() != p_174635_ ? 0.0F : (float)(p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 1.0F;
+                        }
+                );
+                }
+            for (Item item : KUUGA_PHONE) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET) != null) {
+
+                                if (p_174637_ instanceof Player player) {
+
+                                    List<LivingEntity> nearbyEnemies = player.level().getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(15), entity ->
+                                            (entity instanceof ZuGumunBaEntity));
+                                    for (LivingEntity enemy : nearbyEnemies) {
+                                        if (enemy!=null) {
+                                            return 1;
+                                        } else {
+                                            return 0;
+                                        }
+                                    }
+
                                     return 0;
                                 }
                                 return 0;

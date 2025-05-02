@@ -494,6 +494,13 @@ public class RiderFormChangeItem extends BaseItem {
 
     }
 
+    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+            ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST,
+                    player.getX() , player.getY() + 1.0,
+                    player.getZ(), 1, 0, 0, 0, 1);
+    }
+
+
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {
     }
 

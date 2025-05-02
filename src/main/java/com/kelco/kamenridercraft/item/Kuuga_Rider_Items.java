@@ -6,11 +6,16 @@ import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -64,8 +69,9 @@ public class Kuuga_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_mighty","kuuga","arcle_belt_r",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-            		new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
-					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
+            		new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
+			.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_DRAGON = ITEMS.register("kuuga_rising_dragon",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising_dragon","kuuga","arcle_belt_r",
@@ -96,7 +102,8 @@ public class Kuuga_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-            		new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false))
+            		new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_ULTIMATE = ITEMS.register("kuuga_ultimate",
@@ -106,7 +113,8 @@ public class Kuuga_Rider_Items {
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false))
+					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_BLACK_EYES = ITEMS.register("kuuga_ultimate_black_eyes",
@@ -116,7 +124,8 @@ public class Kuuga_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false))
+					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE = ITEMS.register("kuuga_rising_ultimate",
@@ -128,7 +137,8 @@ public class Kuuga_Rider_Items {
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
             		new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE_BLACK_EYES = ITEMS.register("kuuga_rising_ultimate_black_eyes",
@@ -141,7 +151,8 @@ public class Kuuga_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 5,true,false),
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsGlowing().has_basic_model().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_SUPER_RISING_ULTIMATE = ITEMS.register("kuuga_super_rising_ultimate",
@@ -153,7 +164,8 @@ public class Kuuga_Rider_Items {
             		new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
             		new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 
@@ -161,13 +173,15 @@ public class Kuuga_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_black_rising_mighty","kuuga","arcle_belt_r",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().has_basic_model().model_has_different_name("kuuga_amazing_mighty").AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_MANGA = ITEMS.register("kuuga_manga",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","kuuga_manga","arcle_belt_manga",
             		new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)
-            		,new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false))
+            		,new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> N_DAGUVA_ZEBA = ITEMS.register("n_daguva_zeba_ultimate",
@@ -198,8 +212,8 @@ public class Kuuga_Rider_Items {
 					.rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> N_DAGUVA_ZEBA_BELT = ITEMS.register("n_daguva_zeba_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"n_daguva_zeba",N_DAGUVA_ZEBA ,KUUGAHELMET, KUUGACHESTPLATE,KUUGALEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().AddToTabList(RiderTabs.KUUGA_TAB_ITEM).has_basic_model().ChangeRepairItem(KUUGA_GROWING.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"n_daguva_zeba",N_DAGUVA_ZEBA ,KUUGAHELMET, KUUGACHESTPLATE,KUUGALEGGINGS , new Item.Properties().rarity(Rarity.RARE)
+			).Dont_show_belt_form_info().AddToTabList(RiderTabs.KUUGA_TAB_ITEM).has_basic_model().ChangeRepairItem(KUUGA_GROWING.get()));
 
 
 	public static final DeferredItem<Item> DRAGON_ROD = ITEMS.register("dragon_rod",
@@ -210,7 +224,7 @@ public class Kuuga_Rider_Items {
 	        () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).AddToTabList(RiderTabs.KUUGA_TAB_ITEM).ChangeRepairItem(KUUGA_GROWING.get()));
 
 	public static final DeferredItem<Item> KUUGA_PHONE = ITEMS.register("kuuga_phone",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KUUGA_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(KamenRiderCraftCore.KUUGA_PHONE).AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 
 	public static void register(IEventBus eventBus) {

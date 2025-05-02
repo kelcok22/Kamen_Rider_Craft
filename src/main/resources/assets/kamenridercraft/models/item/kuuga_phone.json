@@ -3,4 +3,14 @@
   "textures": {
     "layer0": "kamenridercraft:item/kuuga_phone"
   }
+,
+  "overrides": [
+
+    {
+      "predicate": {
+        "pull": 1
+      },
+      "model": "kamenridercraft:item/kuuga_phone_2"
+    }
+  ]
 }

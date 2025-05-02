@@ -162,7 +162,8 @@ public class Miscellaneous_Rider_Items {
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-	            		new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false))
+	            		new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
+						new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
 						.IsBeltGlowing().IsGlowing().addNeedForm(Kuuga_Rider_Items.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
 						.AddToList(RiderTabs.Misc_TAB_ITEM));
 		
