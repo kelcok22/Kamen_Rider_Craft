@@ -7,10 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.kelco.kamenridercraft.effect.Effect_core;
 
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.gui.font.glyphs.BakedGlyph.Effect;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -19,13 +17,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
-import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -33,10 +27,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.level.GameRules;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import com.google.common.collect.Lists;
@@ -73,7 +64,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties);
+        super(material, ArmorItem.Type.BOOTS, properties.component(DataComponents.CUSTOM_DATA, CustomData.EMPTY));
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -146,21 +137,10 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
-            if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") & !level.isClientSide()) OnformChange(stack, player, tag);
-
-                /**
-                if (!level.isClientSide) {
-                    if (player.isShiftKeyDown() & !tag.getBoolean("rider_kick")&!player.onGround()&!player.isInWater()) {
-                        player.push(0, 1, 0);
-                        player.hurtMarked = true;
-                        tag.putBoolean("rider_kick", true);
-                    }
-                 }
-                 riderKick(stack, level, entity,tag);
-                 **/
-            }
+                if (tag.getBoolean("isTransformed") & !isTransformed(player)) tag.putBoolean("isTransformed",false);
+            if (player.getItemBySlot(EquipmentSlot.FEET)==stack) tag.putBoolean("isTransformed",false);
 
             if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
@@ -176,10 +156,17 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
-    public void OnTransform(ItemStack itemstack, LivingEntity player) {
+    public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
         for (int n = 0; n < Num_Base_Form_Item; n++) {
             RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
             if (form.getTimeoutDuration() != 0) form.startTimeout(player);
+        }
+        tag.putBoolean("isTransformed",true);
+        if(isTransformed(player)) {
+            //ParticleTypes.GUST
+            ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST,
+                    player.getX() , player.getY() + 1.0,
+                    player.getZ(), 1, 0, 0, 0, 1);
         }
     }
 
