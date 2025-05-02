@@ -1,10 +1,19 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -12,13 +21,23 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class ArkZeroEntity extends BaseHenchmenEntity {
-	
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
-	
+public class ArkZeroEntity extends BaseHenchmenEntity {
+
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AncientOOOEntity.class, EntityDataSerializers.BYTE);
+    private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS));
+
+    public static List<Item> THINGS_AND_STUFF= new ArrayList<Item>();
+
+
     public ArkZeroEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="ark_zero";
@@ -28,20 +47,51 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zero_One_Rider_Items.ARK_DRIVER_ZERO.get()));
     }
 
-	@Override
-    public void actuallyHurt(DamageSource source, float amount) {
-        super.actuallyHurt(source, amount);
-    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<100
-		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()==Zero_One_Rider_Items.ARK_DRIVER_ZERO.get() && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET),1)!=Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get()) {
-			playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.ark_one"));
-    				
-    		this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
-    		this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
-    		this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-    	    RiderDriverItem.set_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), Zero_One_Rider_Items.ARK_ONE_PROGRISEKEY.get(), 1);
-    	}
+    protected void customServerAiStep() {
+        super.customServerAiStep();
+                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.ark_zero").withStyle(ChatFormatting.RED));;
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
     }
-    
+
+    public void readAdditionalSaveData(CompoundTag p_31474_) {
+        super.readAdditionalSaveData(p_31474_);
+        if (this.hasCustomName()) {
+            this.bossEvent.setName(this.getDisplayName());
+        }
+    }
+
+    public void setCustomName(@Nullable Component p_31476_) {
+        super.setCustomName(p_31476_);
+        this.bossEvent.setName(this.getDisplayName());
+    }
+
+    public void startSeenByPlayer(ServerPlayer p_31483_) {
+        super.startSeenByPlayer(p_31483_);
+        this.bossEvent.addPlayer(p_31483_);
+    }
+
+    public void stopSeenByPlayer(ServerPlayer p_31488_) {
+        super.stopSeenByPlayer(p_31488_);
+        this.bossEvent.removePlayer(p_31488_);
+    }
+
+
+
+    public void tick() {
+        if (this.getHealth()<150) {
+            if(getItemBySlot(EquipmentSlot.FEET).getItem()==Zero_One_Rider_Items.ARK_DRIVER_ZERO.get()){
+                ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+
+                Random generator = new Random();
+                int rand = generator.nextInt(THINGS_AND_STUFF.size());
+                int rand2 = generator.nextInt(200);
+                    if (rand2==1)this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(THINGS_AND_STUFF.get(rand)));
+                }
+
+        }
+        super.tick();
+    }
+
 
     public static AttributeSupplier.Builder setAttributes() {
 
