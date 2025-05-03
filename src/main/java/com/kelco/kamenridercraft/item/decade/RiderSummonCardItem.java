@@ -66,27 +66,26 @@ public class RiderSummonCardItem extends BaseItem {
     }
 
     public void summon(ItemStack stack, Level level, Player player) {
-        if (!level.isClientSide()) {
-            if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
+        if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
+        
+        for (int i = 0; i < summonAmount; i++) {
+		    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+		    if (summon != null) {
+		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+		    	summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.HEAD));
+		    	summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
+		    	summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
+		    	summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
+                if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS.get((int) summonWeapons.get(0))));
+                if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS.get((int) summonWeapons.get(1))));
+                if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
+                else if (summonNeoForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS.get(summonNeoForm), 1);
             
-            for (int i = 0; i < summonAmount; i++) {
-			    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
-			    if (summon != null) {
-			    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-			    	summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(summonBelt.HEAD));
-			    	summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(summonBelt.TORSO));
-			    	summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(summonBelt.LEGS));
-			    	summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(summonBelt));
-                    if (!summonWeapons.isEmpty()) summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(summonWeapons.get(0) instanceof Item item ? item : Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS.get((int) summonWeapons.get(0))));
-                    if (summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS.get((int) summonWeapons.get(1))));
-                    if (summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), summonForm, 1);
-                    else if (summonNeoForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Decade_Rider_Items.NEO_DIEND_SUMMON_FORMS.get(summonNeoForm), 1);
-                
-			    	level.addFreshEntity(summon);
-			    	summon.bindToPlayer(player);
-                    player.awardStat(Stats.ITEM_USED.get(this));
-			    }
-            }
+		    	level.addFreshEntity(summon);
+		    	summon.bindToPlayer(player);
+                summon.takeSummonItem(stack);
+                player.awardStat(Stats.ITEM_USED.get(this));
+		    }
         }
     }
 }

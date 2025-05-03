@@ -99,10 +99,9 @@ public class DiendriverItem extends BaseBlasterItem {
 
 			while (inv.hasNext()) {
 				ItemStack card = (ItemStack)inv.next();
+				cardNames.add(Component.translatable(card.getItem().toString() + ".name").getString());
 				if (card.getItem() instanceof RiderCardItem summonCard) summonCard.summon(card, level, player);
 				else if (card.getItem() instanceof RiderSummonCardItem summonCard) summonCard.summon(card, level, player);
-				if (ServerConfig.diendCardEject) player.spawnAtLocation(card);
-				cardNames.add(Component.translatable(card.getItem().toString() + ".name").getString());
 			}
 
 			switch (cardNames.size()) {
@@ -117,7 +116,6 @@ public class DiendriverItem extends BaseBlasterItem {
 					break;
 			}
 			
-			if (ServerConfig.diendCardEject) stack.set(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
 			if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)stack.get(DataComponents.CONTAINER).nonEmptyStream().count());
 			stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 			level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
