@@ -96,6 +96,7 @@ public class DiendriverItem extends BaseBlasterItem {
 		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
 			List<String> cardNames = new ArrayList<String>();
 			Iterator inv = stack.get(DataComponents.CONTAINER).nonEmptyItems().iterator();
+			if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)stack.get(DataComponents.CONTAINER).nonEmptyStream().count());
 
 			while (inv.hasNext()) {
 				ItemStack card = (ItemStack)inv.next();
@@ -115,8 +116,6 @@ public class DiendriverItem extends BaseBlasterItem {
 					player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
 					break;
 			}
-			
-			if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)stack.get(DataComponents.CONTAINER).nonEmptyStream().count());
 			stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 			level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 			player.awardStat(Stats.ITEM_USED.get(this));
