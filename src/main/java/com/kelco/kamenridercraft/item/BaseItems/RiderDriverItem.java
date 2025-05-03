@@ -139,7 +139,7 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         tag.putBoolean("isTransformed",true);
         if(isTransformed(player)) {
-         OnTransformation(itemstack,player);
+            //OnTransformation(itemstack,player);
         }
     }
 
