@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
+import com.kelco.kamenridercraft.item.gavv.GavvwhipirItem;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
@@ -380,7 +381,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VALENBUSTER = ITEMS.register("valenbuster",
@@ -390,6 +391,10 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> AGENT_BLASTER = ITEMS.register("agent_blaster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -1.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(HEATPRESS.get()));
+
+	public static final DeferredItem<Item> WHIPPED_ROD = ITEMS.register("whipped_rod",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

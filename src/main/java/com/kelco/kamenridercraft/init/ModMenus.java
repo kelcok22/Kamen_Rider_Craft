@@ -25,6 +25,8 @@ public class ModMenus {
 
 	public static final DeferredHolder<MenuType<?>, MenuType<FueslotGuiMenu>> FUESLOT_GUI = REGISTRY.register("fueslot_gui", () -> IMenuTypeExtension.create(FueslotGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RideBookerGuiMenu>> RIDE_BOOKER_GUI = REGISTRY.register("ride_booker_gui", () -> IMenuTypeExtension.create(RideBookerGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<DiendriverGuiMenu>> DIENDRIVER_GUI = REGISTRY.register("diendriver_gui", () -> IMenuTypeExtension.create(DiendriverGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<NeoDiendriverGuiMenu>> NEO_DIENDRIVER_GUI = REGISTRY.register("neo_diendriver_gui", () -> IMenuTypeExtension.create(NeoDiendriverGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<T2MemoryCaseGuiMenu>> T2_MEMORY_CASE_GUI = REGISTRY.register("t2_memory_case_gui", () -> IMenuTypeExtension.create(T2MemoryCaseGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<OMedalHolderGuiMenu>> O_MEDAL_HOLDER_GUI = REGISTRY.register("o_medal_holder_gui", () -> IMenuTypeExtension.create(OMedalHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchCaseGuiMenu>> ASTROSWITCH_CASE_GUI = REGISTRY.register("astroswitch_case_gui", () -> IMenuTypeExtension.create(AstroswitchCaseGuiMenu::new));

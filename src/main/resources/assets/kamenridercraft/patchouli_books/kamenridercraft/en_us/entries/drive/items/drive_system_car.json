@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:drive/drive_system_car",
-			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"	
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)"	
 		}
 	]
 }

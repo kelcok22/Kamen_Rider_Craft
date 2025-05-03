@@ -150,8 +150,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 				||owner.getItemBySlot(EquipmentSlot.CHEST).getItem()!=this.getRequiredArmor(EquipmentSlot.CHEST).getItem()
 				||owner.getItemBySlot(EquipmentSlot.LEGS).getItem()!=this.getRequiredArmor(EquipmentSlot.LEGS).getItem()
 				||owner.getItemBySlot(EquipmentSlot.FEET).getItem()!=this.getRequiredArmor(EquipmentSlot.FEET).getItem()) {
-					this.setHealth(0);
-					if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);
+					this.despawn();
 				} else {
 					if (!this.REQUIRED_FORMS.isEmpty() && owner.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
@@ -170,10 +169,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 							}
 							if (this.REQUIRED_FORMS.equals(OWNER_FORMS)) formFound = true;
 						}
-						if (!formFound) {
-							this.setHealth(0);
-							if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);
-						}
+						if (!formFound) this.despawn();
 					}
 				}
 			}
@@ -181,6 +177,11 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		this.updateSwingTime();
    
 		super.aiStep();
+	}
+   
+	public void despawn() {
+		this.setHealth(0);
+		if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);	
 	}
    
 	@Override

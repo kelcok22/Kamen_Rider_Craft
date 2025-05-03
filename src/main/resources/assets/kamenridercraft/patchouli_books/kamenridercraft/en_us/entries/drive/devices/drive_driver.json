@@ -46,6 +46,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:drive/drivedriver_darkdrive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_drivedriver",
+			"title": "Drive Driver (Fake Drive)",
+			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle Video)$(br2)Used alongside the $(l:drive/devices/armor)Drive armor$(/l) to transform into $(l:drive/riders/fake_drive)Fake Drive$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_drivedriver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

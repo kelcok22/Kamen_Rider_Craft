@@ -586,7 +586,8 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DECADE_ARMOR_EX_AID.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
-
+            event.registerEntityRenderer(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierRenderer::new);
+            
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
@@ -610,6 +611,8 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.register(ModMenus.ADVENT_DECK_GUI.get(), AdventDeckGuiScreen::new);
             event.register(ModMenus.FUESLOT_GUI.get(), FueslotGuiScreen::new);
             event.register(ModMenus.RIDE_BOOKER_GUI.get(), RideBookerGuiScreen::new);
+            event.register(ModMenus.DIENDRIVER_GUI.get(), DiendriverGuiScreen::new);
+            event.register(ModMenus.NEO_DIENDRIVER_GUI.get(), NeoDiendriverGuiScreen::new);
             event.register(ModMenus.T2_MEMORY_CASE_GUI.get(), T2MemoryCaseGuiScreen::new);
             event.register(ModMenus.O_MEDAL_HOLDER_GUI.get(), OMedalHolderGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_CASE_GUI.get(), AstroswitchCaseGuiScreen::new);

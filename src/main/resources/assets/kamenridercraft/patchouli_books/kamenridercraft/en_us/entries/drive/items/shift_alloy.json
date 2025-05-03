@@ -11,17 +11,17 @@
 		{
 			"type": "patchouli:smelting",
 			"recipe": "kamenridercraft:drive/shift_alloy_ingot",
-			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
 		},
 		{
 			"type": "patchouli:smelting",
 			"recipe": "kamenridercraft:drive/shift_alloy_ingot_chaser",
-			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
 		},
 		{
 			"type": "patchouli:smelting",
 			"recipe": "kamenridercraft:drive/shift_alloy_ingot_neo",
-			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/roidmude)Roidmudes$(/l)$(li)$(l:drive/mobs/mashin_chaser)Mashin Chaser$(/l)$(li)$(l:drive/mobs/heart_roidmude)Heart Roidmude$(/l)$(li)$(l:drive/mobs/brain_roidmude)Brain Roidmude$(/l)$(li)$(l:drive/mobs/reaper_legion)Reaper Legion$(/l)$(li)$(l:drive/mobs/medic_roidmude)Medic Roidmude$(/l)$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)$(li)$(l:drive/mobs/dark_drive)Kamen Rider Dark Drive$(/l)"
 		}
 	]
 }

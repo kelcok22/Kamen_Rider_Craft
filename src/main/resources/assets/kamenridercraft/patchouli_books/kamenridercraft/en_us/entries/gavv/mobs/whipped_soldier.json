@@ -1,0 +1,17 @@
+{
+	"name": "Whipped Soldier",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:whipped_soldier",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Summoned with a $(l:gavv/arsenal/gavvwhipir)Gavvwhipir$(/l)$(br2)Can be armed with Zakuzakuchipslashers when given a $(l:gavv/items/gochizo#zakuzakuchips_gochizo)Zakuzakuchips Gochizo$(/l)$(br2)Can be armed with a Chocodangun when given a $(l:gavv/items/gochizo#chocodan_gochizo)Chocodan Gochizo$(/l)"
+		}
+	]
+}

@@ -15,6 +15,7 @@ import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -64,12 +65,8 @@ public class RiderSummonCardItem extends BaseItem {
         return this;
     }
 
-    @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
-
-        if (!level.isClientSide() && BELT.getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem) BELT.getItem()).isTransformed(player)
-        && ((this.summonNeoBelt == null && player.getInventory().countItem(Decade_Rider_Items.DIENDRIVER.get()) != 0) || player.getInventory().countItem(Decade_Rider_Items.NEO_DIENDRIVER.get()) != 0)) {
+    public void summon(ItemStack stack, Level level, Player player) {
+        if (!level.isClientSide()) {
             if (this.summonNeoBelt != null) summonBelt = (RiderDriverItem) Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
             
             for (int i = 0; i < summonAmount; i++) {
@@ -87,15 +84,9 @@ public class RiderSummonCardItem extends BaseItem {
                 
 			    	level.addFreshEntity(summon);
 			    	summon.bindToPlayer(player);
-			    	player.displayClientMessage(Component.literal(Component.translatable("attack.kamenridercraft.kamenride").getString() + Component.translatable(this.toString() + ".name").getString()), true);
-			    	if (!player.isCreative()) {
-                        summon.takeSummonItem(player.getItemInHand(usedHand));
-                        player.getCooldowns().addCooldown(this, 750);
-                    }
                     player.awardStat(Stats.ITEM_USED.get(this));
 			    }
             }
         }
-        return InteractionResultHolder.sidedSuccess(player.getItemInHand(usedHand), level.isClientSide());
     }
 }

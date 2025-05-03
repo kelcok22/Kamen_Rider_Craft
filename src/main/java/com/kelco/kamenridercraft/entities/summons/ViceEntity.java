@@ -172,12 +172,11 @@ public class ViceEntity extends BaseSummonEntity {
 
 	@Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
-		if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.JACKAL_VISTAMP_VICE.get()) {
+		if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.JACKAL_VISTAMP_VICE.get()
+		||RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.NIWATORI_VISTAMP_VICE.get()) {
             player.setYRot(this.getYRot());
             player.setXRot(this.getXRot());
 			player.startRiding(this);
-
-			return super.mobInteract(player, hand);
 		}
 
 		return super.mobInteract(player, hand);
@@ -185,7 +184,7 @@ public class ViceEntity extends BaseSummonEntity {
 
 	@Override
     public boolean shouldRiderSit() {
-		return false;
+		return !(this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.JACKAL_VISTAMP_VICE.get());
 	}
     
 	@Override
@@ -228,11 +227,22 @@ public class ViceEntity extends BaseSummonEntity {
 
     @Override
     protected Vec3 getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float partialTick) {
-        return super.getPassengerAttachmentPoint(entity, dimensions, partialTick)
-            .add(
-                new Vec3(0.0, -1.0 * (double)partialTick, 0)
-                    .yRot(-this.getYRot() * (float) (Math.PI / 180.0))
-            );
+        if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+			if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.JACKAL_VISTAMP_VICE.get()) {
+				return super.getPassengerAttachmentPoint(entity, dimensions, partialTick)
+        	    .add(
+        	        new Vec3(0.0, -1.0 * (double)partialTick, 0)
+        	            .yRot(-this.getYRot() * (float) (Math.PI / 180.0))
+        	    );
+			} else if (RiderDriverItem.get_Form_Item(this.getItemBySlot(EquipmentSlot.FEET), 1) == Revice_Rider_Items.NIWATORI_VISTAMP_VICE.get()) {
+				return super.getPassengerAttachmentPoint(entity, dimensions, partialTick)
+        	    .add(
+        	        new Vec3(0.0, -0.45 * (double)partialTick, -0.5)
+        	            .yRot(-this.getYRot() * (float) (Math.PI / 180.0))
+        	    );
+			}
+		}
+        return super.getPassengerAttachmentPoint(entity, dimensions, partialTick);
     }
 
 

@@ -117,7 +117,7 @@ public class CompleteSummonEntity extends BaseSummonEntity {
                 if (player.isUsingItem() && player.getUseItem().getItem() instanceof BowItem) this.tamable.startUsingItem(ProjectileUtil.getWeaponHoldingHand(this.tamable, item -> item instanceof BowItem));
                 else if (this.tamable.isUsingItem()) {
                     if (this.tamable.useItem.getItem() instanceof BowItem) this.tamable.performRangedAttack(20);
-                    this.tamable.releaseUsingItem();
+                    this.tamable.stopUsingItem();
                 }
             }
         }

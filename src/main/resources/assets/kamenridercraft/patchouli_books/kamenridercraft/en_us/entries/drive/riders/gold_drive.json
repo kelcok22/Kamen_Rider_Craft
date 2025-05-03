@@ -1,5 +1,5 @@
 {
-	"name": "Gord Drive",
+	"name": "Gold Drive",
 	"icon": "kamenridercraft:banno_driver_gord_drive",
 	"category": "kamenridercraft:drive/riders",
 	"sortnum": 8,
@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Gord Drive",
+			"title": "Gold Drive",
 			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Transforms with the $(l:drive/devices/banno_driver#banno_driver_gord_drive)Banno Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Jump Boost II$(li)Strength IV"
 		}
 	]

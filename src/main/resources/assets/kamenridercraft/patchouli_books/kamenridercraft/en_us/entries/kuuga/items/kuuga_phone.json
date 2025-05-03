@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Lights up when a $(l:kuuga/mobs/zu_gumun_ba)Zu-Gumun-Ba$(/l) is present within 15 blocks"
 		},
 		{
 			"type": "patchouli:spotlight",
