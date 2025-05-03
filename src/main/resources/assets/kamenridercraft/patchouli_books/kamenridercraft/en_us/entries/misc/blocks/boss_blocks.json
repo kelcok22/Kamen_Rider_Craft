@@ -89,7 +89,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "gord_drive_boss_block",
 			"recipe": "kamenridercraft:drive/gord_drive_boss_block",
-			"text": "Mine this block to summon $(l:drive/mobs/gord_drive)Gord Drive$(/l)"
+			"text": "Mine this block to summon $(l:drive/mobs/gord_drive)Gold Drive$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

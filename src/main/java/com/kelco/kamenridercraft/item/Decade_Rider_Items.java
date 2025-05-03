@@ -7,12 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.decade.AttackRideCardItem;
-import com.kelco.kamenridercraft.item.decade.BlankCardItem;
-import com.kelco.kamenridercraft.item.decade.FinalKamenRideCardItem;
-import com.kelco.kamenridercraft.item.decade.RiderSummonCardItem;
-import com.kelco.kamenridercraft.item.decade.RideBookerItem;
-import com.kelco.kamenridercraft.item.decade.RiderCardItem;
+import com.kelco.kamenridercraft.item.decade.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import net.minecraft.core.registries.Registries;
@@ -781,10 +776,10 @@ public class Decade_Rider_Items {
 			.ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> DIENDRIVER = ITEMS.register("diendriver",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(DIEND_BELT.get()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
+            () -> new DiendriverItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(DIEND_BELT.get()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> NEO_DIENDRIVER = ITEMS.register("neo_diendriver",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(DIEND_BELT.get()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
+			() -> new NeoDiendriverItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(DIEND_BELT.get()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
 
 	public static final DeferredItem<Item> ONGEKIBO_REKKA_DECADE = ITEMS.register("ongekibo_rekka_decade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));

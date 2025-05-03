@@ -1,0 +1,36 @@
+{
+  "name": "Fake Drive",
+  "icon": "kamenridercraft:fake_drivedriver",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+      "name": "Type Speed",
+      "text": "Accessed with the $(l:drive/items/shift_cars#speedshift)Shift Speed$(/l) Shift Car"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:drive/devices/drive_driver#fake_drivedriver)Drive Driver$(/l)$(br2)Type Effects:$(li)Speed$(li)Jump Boost II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "max_flare",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+      "name": "Type Speed Flare",
+      "text": "Accessed with the $(l:drive/items/shift_cars#maxflare)Max Flare$(/l) Shift Car"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kamen Rider Drive",
+      "text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle Video)$(br2)Transforms with the $(l:drive/devices/drive_driver#fake_drivedriver)Drive Driver$(/l)$(br2)Type Effects:$(li)Speed$(li)Jump Boost II$(br2)Tire Effects:$(li)Fire Resistance"
+    }
+  ]
+}

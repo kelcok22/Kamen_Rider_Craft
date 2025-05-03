@@ -368,6 +368,12 @@
 			"anchor": "portal_cooldown",
 			"title": "Portal Cooldown",
 			"text": "This effect prevents you from using a portal.$(br2)Examples for how to get this effect:$(li)Walk through a $(l:misc/blocks/helheim_crack)Helheim Crack$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_poison_hand",
+			"title": "Rider Dokushu!",
+			"text": "This effect poisons any mob you hit with an empty hand.$(br2)Examples for how to get this effect:$(li)Transform into $(l:drive/riders/brain)Kamen Rider Brain$(/l)"
 		}
 	]
 }

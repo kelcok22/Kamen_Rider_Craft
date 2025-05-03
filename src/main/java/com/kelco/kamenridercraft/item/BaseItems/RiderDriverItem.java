@@ -329,13 +329,9 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
         if (stack.getComponents().has(DataComponents.CONTAINER) && stack.getDamageValue()==stack.getMaxDamage()-1) {
-            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
-                ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
-                itementity.setDefaultPickUpDelay();
-                entity.level().addFreshEntity(itementity);
-            }
+            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) entity.spawnAtLocation(card);
             if (entity instanceof ServerPlayer player) player.closeContainer();
-            stack.remove(DataComponents.CONTAINER);
+            stack.set(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
         }
         return amount;
     }
@@ -407,17 +403,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public static RiderFormChangeItem get_Form_Item(ItemStack itemstack,int SLOT) {
 
         RiderDriverItem belt = (RiderDriverItem) itemstack.getItem();
-        RiderFormChangeItem Base_Form_Item = belt.Base_Form_Item;
-
-        if (SLOT == 2) {
-            Base_Form_Item = belt.Extra_Base_Form_Item.get(0);
-        } else if (SLOT == 3) {
-            Base_Form_Item = belt.Extra_Base_Form_Item.get(1);
-        } else if (SLOT == 4) {
-            Base_Form_Item = belt.Extra_Base_Form_Item.get(2);
-        }else if (SLOT == 5) {
-            Base_Form_Item = belt.Extra_Base_Form_Item.get(3);
-        }
+        RiderFormChangeItem Base_Form_Item = (SLOT>=2 ? belt.Extra_Base_Form_Item.get(SLOT-2) : belt.Base_Form_Item);
 
         if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();

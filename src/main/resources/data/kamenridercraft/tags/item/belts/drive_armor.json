@@ -12,6 +12,7 @@
 	  "kamenridercraft:banno_driver_gord_drive",
 	  "kamenridercraft:banno_driver_bronze_drive",
 	  "kamenridercraft:metro_pd_driver_honoh",
-	  "kamenridercraft:brain_driver"
+	  "kamenridercraft:brain_driver",
+	  "kamenridercraft:fake_drivedriver"
   ]
 }

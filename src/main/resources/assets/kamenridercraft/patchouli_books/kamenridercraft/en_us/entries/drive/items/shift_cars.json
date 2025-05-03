@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "speedshift",
 			"title": "Shift Speed",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drive_driver#drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to craft Drive's $(l:drive/devices/drive_driver#drivedriver)Drive Driver$(/l)$(br2)Used to access Drive's $(l:drive/riders/drive#speed)Type Speed$(/l)$(br2)Used to access Fake Drive's $(l:drive/riders/fake_drive#speed)Type Speed$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -128,7 +128,7 @@
 			"type": "patchouli:text",
 			"anchor": "high_speedshift",
 			"title": "Shift High Speed",
-			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Used to access Drive's $(l:drive/riders/drive#high_speed)Type High Speed$(/l)"
+			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle Video)$(br2)Used to access Drive's $(l:drive/riders/drive#high_speed)Type High Speed$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -187,7 +187,7 @@
 			"type": "patchouli:text",
 			"anchor": "maxflare",
 			"title": "Max Flare",
-			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#max_flare)Max Flare$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#moerl)Moerl$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used to access Drive's $(l:drive/riders/drive#max_flare)Max Flare$(/l) Shift Tire and $(l:drive/riders/drive#all_kakimazerl)Tire All Kakimazerl$(/l)$(br2)Used to access Mach's $(l:drive/riders/mach#moerl)Moerl$(/l) form$(br2)Used to access Fake Drive's $(l:drive/riders/fake_drive#max_flare)Max Flare$(/l) Shift Tire"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -460,7 +460,7 @@
 			"type": "patchouli:text",
 			"anchor": "mega_maxflare",
 			"title": "Mega Max Flare",
-			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle DVD)$(br2)Used to access Drive's $(l:drive/riders/drive#mega_max_flare)Mega Max Flare$(/l) Shift Tire"
+			"text": "Appears in:$(li)Type HIGH SPEED! The True Power! Type High Speed is Born! (2015, Hyper Battle Video)$(br2)Used to access Drive's $(l:drive/riders/drive#mega_max_flare)Mega Max Flare$(/l) Shift Tire"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -478,7 +478,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:speedshift_gold",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -491,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wildshift_gold",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gord Drive$(/l)"
+			"text": "Drops from:$(li)$(l:drive/mobs/gord_drive)Gold Drive$(/l)"
 		},
 		{
 			"type": "patchouli:text",

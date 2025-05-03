@@ -11,12 +11,12 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ichigo/ichigo_logo",
-			"text": "Banner patterns:$(li)Kamen Rider Logo"
+			"text": "Banner patterns:$(li)Kamen Rider Logo$(li)Kamen Rider Logo (Frame)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:v3/v3_logo",
-			"text": "Banner patterns:$(li)V3 Logo"
+			"text": "Banner patterns:$(li)V3 Logo$(li)V3 Logo (V)$(li)V3 Logo (3)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:amazon/amazon_logo",
-			"text": "Banner patterns:$(li)Amazon Logo"
+			"text": "Banner patterns:$(li)Amazon Logo$(li)Amazon Logo (Highlights)"
 		},
 		{
 			"type": "patchouli:crafting",

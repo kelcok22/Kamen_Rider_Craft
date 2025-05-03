@@ -67,7 +67,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuuga_card",
 			"title": "KamenRide Kuuga",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga)Kuuga$(/l) form$(br2)Can be used to summon $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kuuga)Kuuga$(/l) form$(br2)Can be used to summon $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -78,7 +78,7 @@
 			"type": "patchouli:text",
 			"anchor": "agito_card",
 			"title": "KamenRide Agito",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito)Agito$(/l) form$(br2)Can be used to summon $(l:agito/riders/agito)Kamen Rider Agito$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#agito)Agito$(/l) form$(br2)Can be used to summon $(l:agito/riders/agito)Kamen Rider Agito$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -89,7 +89,7 @@
 			"type": "patchouli:text",
 			"anchor": "ryuki_card",
 			"title": "KamenRide Ryuki",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#ryuki)Ryuki$(/l) form$(br2)Can be used to summon $(l:ryuki/riders/ryuki)Kamen Rider Ryuki$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#ryuki)Ryuki$(/l) form$(br2)Can be used to summon $(l:ryuki/riders/ryuki)Kamen Rider Ryuki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -100,7 +100,7 @@
 			"type": "patchouli:text",
 			"anchor": "faiz_card",
 			"title": "KamenRide Faiz",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#faiz)Faiz$(/l) form$(br2)Can be used to summon $(l:faiz/riders/faiz)Kamen Rider Faiz$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#faiz)Faiz$(/l) form$(br2)Can be used to summon $(l:faiz/riders/faiz)Kamen Rider Faiz$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -111,7 +111,7 @@
 			"type": "patchouli:text",
 			"anchor": "blade_ace_card",
 			"title": "KamenRide Blade",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#blade)Blade$(/l) form$(br2)Can be used to summon $(l:blade/riders/blade)Kamen Rider Blade$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#blade)Blade$(/l) form$(br2)Can be used to summon $(l:blade/riders/blade)Kamen Rider Blade$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -122,7 +122,7 @@
 			"type": "patchouli:text",
 			"anchor": "hibiki_card",
 			"title": "KamenRide Hibiki",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#hibiki)Hibiki$(/l) form$(br2)Can be used to summon $(l:hibiki/riders/hibiki)Kamen Rider Hibiki$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#hibiki)Hibiki$(/l) form$(br2)Can be used to summon $(l:hibiki/riders/hibiki)Kamen Rider Hibiki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -133,7 +133,7 @@
 			"type": "patchouli:text",
 			"anchor": "kabuto_rider_card",
 			"title": "KamenRide Kabuto",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kabuto)Kabuto$(/l) form$(br2)Can be used to summon $(l:kabuto/riders/kabuto)Kamen Rider Kabuto$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kabuto)Kabuto$(/l) form$(br2)Can be used to summon $(l:kabuto/riders/kabuto)Kamen Rider Kabuto$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -144,7 +144,7 @@
 			"type": "patchouli:text",
 			"anchor": "den_o_sword_card",
 			"title": "KamenRide Den-O",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o)Den-O$(/l) form$(br2)Can be used to summon $(l:den_o/riders/den_o)Kamen Rider Den-O$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#den_o)Den-O$(/l) form$(br2)Can be used to summon $(l:den_o/riders/den_o)Kamen Rider Den-O$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -155,7 +155,7 @@
 			"type": "patchouli:text",
 			"anchor": "kiva_card",
 			"title": "KamenRide Kiva",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva)Kiva$(/l) form$(br2)Can be used to summon $(l:kiva/riders/kiva)Kamen Rider Kiva$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#kiva)Kiva$(/l) form$(br2)Can be used to summon $(l:kiva/riders/kiva)Kamen Rider Kiva$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -166,7 +166,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_card",
 			"title": "KamenRide W",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#w)W$(/l) form$(br2)Can be used to summon $(l:w/riders/double)Kamen Rider Double$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#w)W$(/l) form$(br2)Can be used to summon $(l:w/riders/double)Kamen Rider Double$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -177,7 +177,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_card",
 			"title": "KamenRide OOO",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ooo)OOO$(/l) form$(br2)Can be used to summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ooo)OOO$(/l) form$(br2)Can be used to summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_card",
 			"title": "KamenRide Fourze",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#fourze)Fourze$(/l) form$(br2)Can be used to summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#fourze)Fourze$(/l) form$(br2)Can be used to summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -199,7 +199,7 @@
 			"type": "patchouli:text",
 			"anchor": "wizard_card",
 			"title": "KamenRide Wizard",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#wizard)Wizard$(/l) form$(br2)Can be used to summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#wizard)Wizard$(/l) form$(br2)Can be used to summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -210,7 +210,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaim_card",
 			"title": "KamenRide Gaim",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#gaim)Gaim$(/l) form$(br2)Can be used to summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#gaim)Gaim$(/l) form$(br2)Can be used to summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -221,7 +221,7 @@
 			"type": "patchouli:text",
 			"anchor": "drive_card",
 			"title": "KamenRide Drive",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#drive)Drive$(/l) form$(br2)Can be used to summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#drive)Drive$(/l) form$(br2)Can be used to summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -232,7 +232,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_card",
 			"title": "KamenRide Ghost",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#ghost)Ghost$(/l) form$(br2)Can be used to summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#ghost)Ghost$(/l) form$(br2)Can be used to summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -243,7 +243,7 @@
 			"type": "patchouli:text",
 			"anchor": "ex_aid_card",
 			"title": "KamenRide Ex-Aid",
-			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ex_aid)Ex-Aid$(/l) form$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#action_2)Kamen Rider Ex-Aid$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Battle: Ganbarizing (2013, arcade game)$(br2)Used to access Decade's $(l:decade/riders/decade#ex_aid)Ex-Aid$(/l) form$(br2)Can be used to summon $(l:ex_aid/riders/ex_aid#action_2)Kamen Rider Ex-Aid$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -254,7 +254,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_card",
 			"title": "KamenRide Build",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#build)Build$(/l) form$(br2)Can be used to summon $(l:build/riders/build)Kamen Rider Build$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#build)Build$(/l) form$(br2)Can be used to summon $(l:build/riders/build)Kamen Rider Build$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -265,7 +265,7 @@
 			"type": "patchouli:text",
 			"anchor": "zi_o_card",
 			"title": "KamenRide Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#zi-o)Zi-O$(/l) form$(br2)Can be used to summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Decade's $(l:decade/riders/decade#zi-o)Zi-O$(/l) form$(br2)Can be used to summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -287,7 +287,7 @@
 			"type": "patchouli:text",
 			"anchor": "g3_card",
 			"title": "KamenRide G3",
-			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Can be used to summon $(l:agito/riders/g3)Kamen Rider G3$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Can be used to summon $(l:agito/riders/g3)Kamen Rider G3$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -298,7 +298,7 @@
 			"type": "patchouli:text",
 			"anchor": "knight_card",
 			"title": "KamenRide Knight",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:ryuki/riders/knight)Kamen Rider Knight$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:ryuki/riders/knight)Kamen Rider Knight$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -309,7 +309,7 @@
 			"type": "patchouli:text",
 			"anchor": "kaixa_card",
 			"title": "KamenRide Kaixa",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:faiz/riders/kaixa)Kamen Rider Kaixa$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:faiz/riders/kaixa)Kamen Rider Kaixa$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -320,7 +320,7 @@
 			"type": "patchouli:text",
 			"anchor": "garren_card",
 			"title": "KamenRide Garren",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:blade/riders/garren)Kamen Rider Garren$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:blade/riders/garren)Kamen Rider Garren$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -331,7 +331,7 @@
 			"type": "patchouli:text",
 			"anchor": "ibuki_card",
 			"title": "KamenRide Ibuki",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:hibiki/riders/ibuki)Kamen Rider Ibuki$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:hibiki/riders/ibuki)Kamen Rider Ibuki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "gatack_card",
 			"title": "KamenRide Gatack",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:kabuto/riders/gatack)Kamen Rider Gatack$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:kabuto/riders/gatack)Kamen Rider Gatack$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -353,7 +353,7 @@
 			"type": "patchouli:text",
 			"anchor": "zeronos_card",
 			"title": "KamenRide Zeronos",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:den_o/riders/zeronos)Kamen Rider Zeronos$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:den_o/riders/zeronos)Kamen Rider Zeronos$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -364,7 +364,7 @@
 			"type": "patchouli:text",
 			"anchor": "ixa_card",
 			"title": "KamenRide IXA",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kiva/riders/ixa)Kamen Rider Ixa$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kiva/riders/ixa)Kamen Rider Ixa$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -375,7 +375,7 @@
 			"type": "patchouli:text",
 			"anchor": "accel_card",
 			"title": "KamenRide Accel",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:w/riders/accel)Kamen Rider Accel$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:w/riders/accel)Kamen Rider Accel$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -386,7 +386,7 @@
 			"type": "patchouli:text",
 			"anchor": "birth_card",
 			"title": "KamenRide Birth",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ooo/riders/birth)Kamen Rider Birth$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ooo/riders/birth)Kamen Rider Birth$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -397,7 +397,7 @@
 			"type": "patchouli:text",
 			"anchor": "meteor_card",
 			"title": "KamenRide Meteor",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:fourze/riders/meteor)Kamen Rider Meteor$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:fourze/riders/meteor)Kamen Rider Meteor$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -408,7 +408,7 @@
 			"type": "patchouli:text",
 			"anchor": "beast_card",
 			"title": "KamenRide Beast",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:wizard/riders/beast)Kamen Rider Beast$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:wizard/riders/beast)Kamen Rider Beast$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -419,7 +419,7 @@
 			"type": "patchouli:text",
 			"anchor": "baron_card",
 			"title": "KamenRide Baron",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:gaim/riders/baron)Kamen Rider Baron$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:gaim/riders/baron)Kamen Rider Baron$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -430,7 +430,7 @@
 			"type": "patchouli:text",
 			"anchor": "mach_card",
 			"title": "KamenRide Mach",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:drive/riders/mach)Kamen Rider Mach$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:drive/riders/mach)Kamen Rider Mach$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -441,7 +441,7 @@
 			"type": "patchouli:text",
 			"anchor": "specter_card",
 			"title": "KamenRide Specter",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ghost/riders/specter)Kamen Rider Specter$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ghost/riders/specter)Kamen Rider Specter$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -452,7 +452,7 @@
 			"type": "patchouli:text",
 			"anchor": "brave_card",
 			"title": "KamenRide Brave",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ex_aid/riders/brave)Kamen Rider Brave$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can be used to summon $(l:ex_aid/riders/brave)Kamen Rider Brave$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -463,7 +463,7 @@
 			"type": "patchouli:text",
 			"anchor": "cross_z_card",
 			"title": "KamenRide Cross-Z",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:build/riders/cross-z)Kamen Rider Cross-Z$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:build/riders/cross-z)Kamen Rider Cross-Z$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -474,7 +474,7 @@
 			"type": "patchouli:text",
 			"anchor": "geiz_card",
 			"title": "KamenRide Geiz",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:zi_o/riders/geiz)Kamen Rider Geiz$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:zi_o/riders/geiz)Kamen Rider Geiz$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -485,7 +485,7 @@
 			"type": "patchouli:text",
 			"anchor": "ichigo_card",
 			"title": "KamenRide Ichigo",
-			"text": "Appears in:$(li)Kamen Rider x Super Sentai: Super Hero Taisen (2012, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#ichigo)Ichigo$(/l) form$(br2)Can be used to summon $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider x Super Sentai: Super Hero Taisen (2012, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#ichigo)Ichigo$(/l) form$(br2)Can be used to summon $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -496,7 +496,7 @@
 			"type": "patchouli:text",
 			"anchor": "nigo_card",
 			"title": "KamenRide Nigo",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#nigo)Nigo$(/l) form$(br2)Can be used to summon $(l:ichigo/riders/nigo)Kamen Rider Nigo$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#nigo)Nigo$(/l) form$(br2)Can be used to summon $(l:ichigo/riders/nigo)Kamen Rider Nigo$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -507,7 +507,7 @@
 			"type": "patchouli:text",
 			"anchor": "v3_card",
 			"title": "KamenRide V3",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#v3)V3$(/l) form$(br2)Can be used to summon $(l:v3/riders/v3)Kamen Rider V3$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#v3)V3$(/l) form$(br2)Can be used to summon $(l:v3/riders/v3)Kamen Rider V3$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -518,7 +518,7 @@
 			"type": "patchouli:text",
 			"anchor": "riderman_card",
 			"title": "KamenRide Riderman",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#riderman)Riderman$(/l) form$(br2)Can be used to summon $(l:v3/riders/riderman)Riderman$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#riderman)Riderman$(/l) form$(br2)Can be used to summon $(l:v3/riders/riderman)Riderman$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -529,7 +529,7 @@
 			"type": "patchouli:text",
 			"anchor": "x_card",
 			"title": "KamenRide X",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#x)X$(/l) form$(br2)Can be used to summon $(l:x/riders/x)Kamen Rider X$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#x)X$(/l) form$(br2)Can be used to summon $(l:x/riders/x)Kamen Rider X$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -540,7 +540,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_card",
 			"title": "KamenRide Amazon",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#amazon)Amazon$(/l) form$(br2)Can be used to summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#amazon)Amazon$(/l) form$(br2)Can be used to summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -551,7 +551,7 @@
 			"type": "patchouli:text",
 			"anchor": "stronger_card",
 			"title": "KamenRide Stronger",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#stronger)Stronger$(/l) form$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#stronger)Stronger$(/l) form$(br2)Can be used to summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -562,7 +562,7 @@
 			"type": "patchouli:text",
 			"anchor": "skyrider_card",
 			"title": "KamenRide Skyrider",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#skyrider)Skyrider$(/l) form$(br2)Can be used to summon $(l:skyrider/riders/skyrider)Skyrider$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#skyrider)Skyrider$(/l) form$(br2)Can be used to summon $(l:skyrider/riders/skyrider)Skyrider$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -573,7 +573,7 @@
 			"type": "patchouli:text",
 			"anchor": "super_1_card",
 			"title": "KamenRide Super-1",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#super_1)Super-1$(/l) form$(br2)Can be used to summon $(l:super_1/riders/super_1)Kamen Rider Super-1$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#super_1)Super-1$(/l) form$(br2)Can be used to summon $(l:super_1/riders/super_1)Kamen Rider Super-1$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -584,7 +584,7 @@
 			"type": "patchouli:text",
 			"anchor": "zx_card",
 			"title": "KamenRide ZX",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#zx)ZX$(/l) form$(br2)Can be used to summon $(l:zx/riders/zx)Kamen Rider ZX$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#zx)ZX$(/l) form$(br2)Can be used to summon $(l:zx/riders/zx)Kamen Rider ZX$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -595,7 +595,7 @@
 			"type": "patchouli:text",
 			"anchor": "black_card",
 			"title": "KamenRide Black",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black)Black$(/l) form$(br2)Can be used to summon $(l:black/riders/black)Kamen Rider Black$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black)Black$(/l) form$(br2)Can be used to summon $(l:black/riders/black)Kamen Rider Black$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -606,7 +606,7 @@
 			"type": "patchouli:text",
 			"anchor": "black_rx_card",
 			"title": "KamenRide Black RX",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black_rx)Black RX$(/l) form$(br2)Can be used to summon $(l:black_rx/riders/black_rx)Kamen Rider Black RX$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#black_rx)Black RX$(/l) form$(br2)Can be used to summon $(l:black_rx/riders/black_rx)Kamen Rider Black RX$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -617,7 +617,7 @@
 			"type": "patchouli:text",
 			"anchor": "shin_card",
 			"title": "KamenRide Shin",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#shin)Shin$(/l) form$(br2)Can be used to summon $(l:shin/riders/shin)Kamen Rider Shin$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#shin)Shin$(/l) form$(br2)Can be used to summon $(l:shin/riders/shin)Kamen Rider Shin$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "zo_card",
 			"title": "KamenRide ZO",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#zo)ZO$(/l) form$(br2)Can be used to summon $(l:zo/riders/zo)Kamen Rider ZO$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#zo)ZO$(/l) form$(br2)Can be used to summon $(l:zo/riders/zo)Kamen Rider ZO$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -639,7 +639,7 @@
 			"type": "patchouli:text",
 			"anchor": "j_card",
 			"title": "KamenRide J",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#j)J$(/l) form$(br2)Can be used to summon $(l:j/riders/j)Kamen Rider J$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Used to access (Dark) Decade's $(l:decade/riders/decade#j)J$(/l) form$(br2)Can be used to summon $(l:j/riders/j)Kamen Rider J$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -650,7 +650,7 @@
 			"type": "patchouli:text",
 			"anchor": "g4_card",
 			"title": "KamenRide G4",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:agito/riders/g4)Kamen Rider G4$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:agito/riders/g4)Kamen Rider G4$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -661,7 +661,7 @@
 			"type": "patchouli:text",
 			"anchor": "ryuga_card",
 			"title": "KamenRide Ryuga",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:ryuki/riders/ryuga)Kamen Rider Ryuga$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:ryuki/riders/ryuga)Kamen Rider Ryuga$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -672,7 +672,7 @@
 			"type": "patchouli:text",
 			"anchor": "orga_card",
 			"title": "KamenRide Orga",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:faiz/riders/orga)Kamen Rider Orga$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:faiz/riders/orga)Kamen Rider Orga$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -683,7 +683,7 @@
 			"type": "patchouli:text",
 			"anchor": "glaive_card",
 			"title": "KamenRide Glaive",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:blade/riders/glaive)Kamen Rider Glaive$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:blade/riders/glaive)Kamen Rider Glaive$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -694,7 +694,7 @@
 			"type": "patchouli:text",
 			"anchor": "kabuki_card",
 			"title": "KamenRide Kabuki",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:hibiki/riders/kabuki)Kamen Rider Kabuki$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:hibiki/riders/kabuki)Kamen Rider Kabuki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -705,7 +705,7 @@
 			"type": "patchouli:text",
 			"anchor": "caucasus_card",
 			"title": "KamenRide Caucasus",
-			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:kabuto/riders/caucasus)Kamen Rider Caucasus$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:kabuto/riders/caucasus)Kamen Rider Caucasus$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -716,7 +716,7 @@
 			"type": "patchouli:text",
 			"anchor": "arc_card",
 			"title": "KamenRide Arc",
-			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:kiva/riders/arc)Kamen Rider Arc$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+			"text": "Appears in:$(li)Cho Den-O Trilogy: EPISODE YELLOW: Treasure DE-End Pirates (2010, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:kiva/riders/arc)Kamen Rider Arc$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -727,7 +727,7 @@
 			"type": "patchouli:text",
 			"anchor": "skull_card",
 			"title": "KamenRide Skull",
-			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:w/riders/skull)Kamen Rider Skull$(/l) when right-clicked as $(l:decade/riders/diend)Kamen Rider Diend$(/l) while having the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) in your inventory"
+			"text": "Appears in:$(li)Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009, movie)$(br2)Used to craft Diend's $(l:decade/items/k_touch_diend)Final Kamen Terminal K-Touch (Diend)$(/l)$(br2)Can be used to summon $(l:w/riders/skull)Kamen Rider Skull$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

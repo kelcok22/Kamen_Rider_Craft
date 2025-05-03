@@ -31,6 +31,10 @@ public class ServerConfig
             .comment(" (default: true) Should Kintaros drop paper (tissues) when transformed into his Den-O form?")
             .define("kintarosTissueDrop", true);
 
+    private static final ModConfigSpec.BooleanValue DIENDRIVER_CARD_EJECT = BUILDER
+            .comment(" (default: true) Should the Diendriver eject the cards inside after being used to summon Riders?")
+            .define("diendCardEject", true);
+
     private static final ModConfigSpec.BooleanValue MIGHTY_BROTHER_SPAWNING = BUILDER
             .comment(" (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?")
             .define("mightyBrotherSpawning", true);
@@ -57,6 +61,7 @@ public class ServerConfig
     public static int summonedItemDurability;
     public static double bossSpawnRate;
     public static boolean kintarosTissueDrop;
+    public static boolean diendCardEject;
     public static boolean mightyBrotherSpawning;
     public static boolean decadeExAidSpawning;
     public static boolean viceSpawning;
@@ -74,6 +79,7 @@ public class ServerConfig
         summonedItemDurability = SUMMONED_ITEM_DAMAGE.get();
         bossSpawnRate = BOSS_SPAWN_RATE.get();
         kintarosTissueDrop = KINTAROS_TISSUE_DROP.get();
+        diendCardEject = DIENDRIVER_CARD_EJECT.get();
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();

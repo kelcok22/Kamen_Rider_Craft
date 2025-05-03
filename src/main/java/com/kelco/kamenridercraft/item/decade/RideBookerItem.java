@@ -46,13 +46,9 @@ public class RideBookerItem extends BaseBlasterItem {
     @Override
     public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, @Nullable T entity, Consumer<Item> onBroken) {
         if (stack.getComponents().has(DataComponents.CONTAINER) && stack.getDamageValue()==stack.getMaxDamage()-1) {
-            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) {
-                ItemEntity itementity = new ItemEntity(entity.level(), entity.getX(), entity.getY() + 1, entity.getZ(), card);
-                itementity.setDefaultPickUpDelay();
-                entity.level().addFreshEntity(itementity);
-            }
+            for (ItemStack card : stack.get(DataComponents.CONTAINER).nonEmptyItemsCopy()) entity.spawnAtLocation(card);
             if (entity instanceof ServerPlayer player) player.closeContainer();
-            stack.remove(DataComponents.CONTAINER);
+            stack.set(DataComponents.CONTAINER, ItemContainerContents.EMPTY);
         }
         return amount;
     }

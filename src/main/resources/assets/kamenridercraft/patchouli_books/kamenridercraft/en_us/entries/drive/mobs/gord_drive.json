@@ -1,5 +1,5 @@
 {
-	"name": "Gord Drive",
+	"name": "Gold Drive",
 	"icon": "kamenridercraft:drive_logo",
 	"category": "kamenridercraft:drive/mobs",
 	"sortnum": 6,
@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Summoned from a $(l:misc/blocks/boss_blocks#gord_drive_boss_block)Gord Drive Boss Block$(/l)$(br2)Drops$(li)4-6 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/shift_cars#speedshift_gold)Golden Shift Speed$(/l) (33.3%)$(li)1 $(l:drive/items/shift_cars#wildshift_gold)Golden Shift Wild$(/l) (33.3%)$(li)3-5 $(l:drive/items/drive_system_car)Drive System Cars$(/l) (16.7%)$(li)3-5 $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) (16.7%)$(li)1 $(l:drive/items/banno_tablet)Banno Tablet$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#gord_drive_boss_block)Gold Drive Boss Block$(/l)$(br2)Special moves:$(li)Summons random Drive weapons at under 150 health$(br2)Drops$(li)4-6 $(l:drive/items/shift_alloy)Shift Alloy$(/l)$(li)1 $(l:drive/items/shift_cars#speedshift_gold)Golden Shift Speed$(/l) (33.3%)$(li)1 $(l:drive/items/shift_cars#wildshift_gold)Golden Shift Wild$(/l) (33.3%)$(li)3-5 $(l:drive/items/drive_system_car)Drive System Cars$(/l) (16.7%)$(li)3-5 $(l:drive/items/next_system_bike)NEXT System Bikes$(/l) (16.7%)$(li)1 $(l:drive/items/banno_tablet)Banno Tablet$(/l)"
 		}
 	]
 }
