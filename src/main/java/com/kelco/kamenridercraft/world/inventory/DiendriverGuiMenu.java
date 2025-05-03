@@ -2,7 +2,7 @@
 package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.init.ModMenus;
-import com.kelco.kamenridercraft.item.BaseItems.component.BasicContainer;
+import com.kelco.kamenridercraft.item.BaseItems.component.SingleItemContainer;
 import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import net.minecraft.network.FriendlyByteBuf;
@@ -14,7 +14,6 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class DiendriverGuiMenu extends AbstractContainerMenu {
-	private static final int CONTAINER_SIZE = 3;
 	private final Container container;
 
 	public DiendriverGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
@@ -28,7 +27,7 @@ public class DiendriverGuiMenu extends AbstractContainerMenu {
 
 	public DiendriverGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
 		super(ModMenus.DIENDRIVER_GUI.get(), containerId);
-		this.container = new BasicContainer(itemstack,3);
+		this.container = new SingleItemContainer(itemstack,3);
 		container.startOpen(playerInventory.player);
 
 		int i = 3;
