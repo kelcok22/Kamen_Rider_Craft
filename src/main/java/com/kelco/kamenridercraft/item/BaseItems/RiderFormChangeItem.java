@@ -18,6 +18,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.damagesource.DamageSource;
@@ -495,9 +496,11 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-            ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST,
-                    player.getX() , player.getY() + 1.0,
+        if (player.level() instanceof ServerLevel sl) {
+            sl.sendParticles(ParticleTypes.GUST,
+                    player.getX(), player.getY() + 1.0,
                     player.getZ(), 1, 0, 0, 0, 1);
+        }
     }
 
 
