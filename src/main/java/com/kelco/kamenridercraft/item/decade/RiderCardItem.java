@@ -83,6 +83,7 @@ public class RiderCardItem extends RiderFormChangeItem {
                 
 			    	level.addFreshEntity(summon);
 			    	summon.bindToPlayer(player);
+                    summon.takeSummonItem(stack);
                     player.awardStat(Stats.ITEM_USED.get(this));
 			    }
             }
