@@ -84,6 +84,14 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
                     .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> GAIA_CORE = ITEMS.register("gaia_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","gaia","typhoon_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
+
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","shocker_rider","shocker_rider_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
@@ -173,6 +181,9 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> TYPHOON_DARK_NIGO = ITEMS.register("typhoon_dark_nigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_nigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_typhoon_belt").AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     //V3
 
@@ -345,7 +356,9 @@ public class Ichigo_Rider_Items {
                     ,new MobEffectInstance(Effect_core.FLYING, 40, 4,true,false))
                     .AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
-
+    public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","gangan_g","tornado_belt")
+                    .AddToList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  SKYRIDERHELMET = ITEMS.register("skyriderhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
@@ -356,6 +369,9 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item>  TORNADO = ITEMS.register("tornado",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).IsA1().Dont_show_belt_form_info().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
+
+    public static final DeferredItem<Item>  GANGAN_G_BELT = ITEMS.register("gangan_g_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).IsA1().Dont_show_belt_form_info().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     //Super 1
     public static final DeferredItem<Item>  SUPER_1_LOGO = ITEMS.register("super_1_logo",

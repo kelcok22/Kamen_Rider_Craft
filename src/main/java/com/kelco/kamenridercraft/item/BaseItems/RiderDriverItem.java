@@ -100,7 +100,11 @@ public class RiderDriverItem extends RiderArmorItem {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") && !level.isClientSide()) OnformChange(stack, player, tag);
+                if (!tag.getBoolean("isTransformed") && isTransformed(player)) this.OnTransform(stack, player, tag);
                 if (tag.getBoolean("isTransformed") && !isTransformed(player)) tag.putBoolean("isTransformed", false);
+
+
+
                 if (player.getItemBySlot(EquipmentSlot.FEET) == stack) tag.putBoolean("isTransformed", false);
             }else{
                 stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -128,6 +132,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
+
         for (int n = 0; n < Num_Base_Form_Item; n++) {
             RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
             if (form.getTimeoutDuration() != 0) form.startTimeout(player);

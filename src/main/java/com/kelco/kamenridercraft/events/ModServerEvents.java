@@ -18,6 +18,8 @@ public class ModServerEvents {
 
 		@SubscribeEvent
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
+
+			/**
 			if (!event.getEntity().level().isClientSide()) {
 				ItemStack stack = event.getEntity().getItemBySlot(EquipmentSlot.FEET);
 				if (stack.getItem() instanceof RiderDriverItem) {
@@ -35,6 +37,7 @@ public class ModServerEvents {
 					}
 				}
 			}
+			 **/
 		}
 	}
 }
