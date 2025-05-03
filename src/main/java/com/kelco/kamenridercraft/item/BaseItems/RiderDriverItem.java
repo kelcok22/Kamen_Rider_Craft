@@ -99,8 +99,8 @@ public class RiderDriverItem extends RiderArmorItem {
         if (entity instanceof LivingEntity player) {
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form") & !level.isClientSide()) OnformChange(stack, player, tag);
-                if (tag.getBoolean("isTransformed") & !isTransformed(player)) tag.putBoolean("isTransformed", false);
+                if (tag.getBoolean("Update_form") && !level.isClientSide()) OnformChange(stack, player, tag);
+                if (tag.getBoolean("isTransformed") && !isTransformed(player)) tag.putBoolean("isTransformed", false);
                 if (player.getItemBySlot(EquipmentSlot.FEET) == stack) tag.putBoolean("isTransformed", false);
             }else{
                 stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
@@ -119,7 +119,6 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
-
         player.setInvisible(false);
         Level level = player.level();
         if(!level.isClientSide()&isTransformed(player)) {
