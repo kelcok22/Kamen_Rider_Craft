@@ -33,5 +33,52 @@
         "minecraft:canyon"
       ]
     },
-    "features": []
-  }
+  "features": [
+    [],
+    [
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "minecraft:disk_grass"
+
+    ],
+    [
+
+      "minecraft:trees_birch_and_oak",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+
+      "minecraft:flower_default",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_tall_grass_2",
+      "minecraft:patch_large_fern",
+      "minecraft:twisting_vines",
+      "minecraft:patch_berry_bush",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_grass_taiga",
+      "minecraft:patch_berry_common",
+      "minecraft:forest_rock",
+      "minecraft:forest_flowers",
+      "minecraft:grass_bonemeal"
+    ],
+    [
+    ]
+  ]
+}
