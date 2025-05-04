@@ -6,11 +6,26 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "tackle_belt",
 			"text": "Appears in:$(li)Kamen Rider Stronger (1975, TV show)$(br2)Used alongside the $(l:stronger/devices/armor)Stronger armor$(/l) to transform into $(l:stronger/riders/tackle#tackle)Electronic Wave Humanoid Tackle"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:stronger/tackle_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_tackle_belt",
+			"title": "Black Tackle Belt",
+			"text": "Appears in:$(li)Kamen Rider Jeanne & Kamen Rider Aguilera with Girls Remix (2022, web series)$(br2)Used alongside the $(l:stronger/devices/armor)Stronger armor$(/l) to transform into $(l:stronger/riders/black_tackle)Electronic Wave Humanoid Black Tackle"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_tackle_belt",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }
