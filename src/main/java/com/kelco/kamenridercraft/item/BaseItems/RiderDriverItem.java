@@ -97,18 +97,15 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
+
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") && !level.isClientSide()) OnformChange(stack, player, tag);
-                if (!tag.getBoolean("isTransformed") && isTransformed(player)) this.OnTransform(stack, player, tag);
-                if (tag.getBoolean("isTransformed") && !isTransformed(player)) tag.putBoolean("isTransformed", false);
-
-
-
-                if (player.getItemBySlot(EquipmentSlot.FEET) == stack) tag.putBoolean("isTransformed", false);
-            }else{
-                stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+                if (!tag.getBoolean("isNotTransformed")&!isTransformed(player)&& !level.isClientSide()||
+                        !tag.getBoolean("isNotTransformed")&stack.getEquipmentSlot()!=EquipmentSlot.FEET&& !level.isClientSide()) tag.putBoolean("isNotTransformed", true);
+                if (tag.getBoolean("isNotTransformed") && isTransformed(player)&& !level.isClientSide()) this.OnTransform(stack, player, tag);
             }
+
             if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
@@ -132,15 +129,11 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
-
         for (int n = 0; n < Num_Base_Form_Item; n++) {
             RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
             if (form.getTimeoutDuration() != 0) form.startTimeout(player);
         }
-        tag.putBoolean("isTransformed",true);
-        if(isTransformed(player)) {
-            //OnTransformation(itemstack,player);
-        }
+        tag.putBoolean("isNotTransformed", false);
     }
 
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {

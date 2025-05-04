@@ -169,7 +169,7 @@ public class Reboot_Rider_Items {
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 						,new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 	            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-	            .IsBeltGlowing().IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
+	            .IsGlowing().AddToList(RiderTabs.BLACK_SUN_TAB_ITEM).AddToList(KaijinStoneGenerator.KING_STONE, 1));
 
 	    
 	    public static final DeferredItem<Item> BLACKSUNHELMET = ITEMS.register("blacksunhead",
