@@ -1,7 +1,7 @@
 {
   "name": "kamenridercraft:city/roads_narrow",
   
-  "fallback": "minecraft:empty",
+  "fallback": "kamenridercraft:city/roads_narrow_end",
   "elements": [
     {
       "weight": 1,
