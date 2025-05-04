@@ -305,6 +305,7 @@ public class Modded_item_core {
                     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
                     super.OnTransformation(itemstack,player);
                         LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                        thunder.setVisualOnly(true);
                         thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
                         player.level().addFreshEntity(thunder);
 
