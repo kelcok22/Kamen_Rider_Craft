@@ -1369,6 +1369,8 @@
 "kamenridercraft.name.dark_ichigo": "Rider: Dark Ichigo",
 "item.kamenridercraft.typhoon_dark_nigo": "Typhoon",
 "kamenridercraft.name.dark_nigo": "Rider: Dark Nigo",
+"item.kamenridercraft.typhoon_fake_ichigo": "Typhoon",
+"kamenridercraft.name.fake_ichigo": "Debatable Rider: Fake Ichigo",
 
 "item.kamenridercraft.v3_logo": "V3 Logo",
 "item.kamenridercraft.riderman_logo": "Riderman Logo",
@@ -1442,6 +1444,8 @@
   "kamenridercraft.name.stronger.a1": "Rider: Masked Rider X",
 "item.kamenridercraft.tackle_belt": "Tackle Belt",
 "kamenridercraft.name.tackle": "Debatable Rider: Electronic Wave Humanoid Tackle",
+"item.kamenridercraft.black_tackle_belt": "Black Tackle Belt",
+"kamenridercraft.name.black_tackle": "Debatable Rider: Electronic Wave Humanoid Black Tackle",
 "item.kamenridercraft.dark_electrer": "Electrer",
 "kamenridercraft.name.dark_stronger": "Rider: Dark Stronger",
   "kamenridercraft:tackle_core_artist.form": "Form: Base Form (SIC Artist Series)",
@@ -2972,6 +2976,7 @@
 "item.kamenridercraft.commander_memory_enhancing_adapter": "Commander Memory (Enhancing Adapter)",
 "item.kamenridercraft.magma_memory": "Magma Memory",
 "item.kamenridercraft.memory_memory": "Memory Memory",
+"item.kamenridercraft.road_memory": "Road Memory",
 "item.kamenridercraft.egg_chicken_memory": "Egg Chicken Memory",
 
 "item.kamenridercraft.stag_memory": "Stag Gadget Memory",

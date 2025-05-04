@@ -1,0 +1,45 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:aqua_driver"
+	},
+	"title": "Water Bucket! Release!",
+	"description": "Transform into Kamen Rider Aqua",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:ooo/poseidon",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ooohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:oootroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ooolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:aqua_driver"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

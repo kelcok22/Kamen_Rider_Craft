@@ -349,7 +349,7 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> BLACK_TACKLE_BELT = ITEMS.register("black_tackle_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+                    .Dont_show_belt_form_info().AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
 
     //Skyrider
     public static final DeferredItem<Item> SKYRIDER_LOGO = ITEMS.register("skyrider_logo",

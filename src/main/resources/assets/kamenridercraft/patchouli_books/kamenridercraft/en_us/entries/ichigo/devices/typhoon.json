@@ -224,6 +224,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:ichigo/typhoon_dark_nigo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_fake_ichigo",
+			"title": "Typhoon (Fake Ichigo)",
+			"text": "Appears in:$(li)Kamen Rider Super Live 2017 (2017, stage show)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/fake_ichigo)Fake Ichigo"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_fake_ichigo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

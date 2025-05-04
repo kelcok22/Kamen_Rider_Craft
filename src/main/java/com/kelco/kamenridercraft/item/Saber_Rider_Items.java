@@ -954,6 +954,10 @@ public class Saber_Rider_Items {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
+	public static final DeferredItem<Item> KOKURANKEN_SHIKKOKU = ITEMS.register("kokuranken_shikkoku",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+
 	public static final DeferredItem<Item> SHIMI_LOT = ITEMS.register("shimi_lot",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
