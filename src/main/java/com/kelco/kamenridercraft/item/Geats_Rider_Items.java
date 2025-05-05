@@ -1111,7 +1111,11 @@ public class Geats_Rider_Items {
              () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
            		  new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
-	
+	public static final DeferredItem<Item> LASER_RISE_DRIVER_GAZER_ZERO = ITEMS.register("laser_raise_driver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",ZIIN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
+					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
