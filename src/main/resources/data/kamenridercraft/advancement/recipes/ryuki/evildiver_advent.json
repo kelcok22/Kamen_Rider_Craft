@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:ryuki/v_buckle_raia",
-	  "kamenridercraft:ryuki/evil_visor"
+	  "kamenridercraft:ryuki/evil_visor",
+	  "kamenridercraft:decade/raia_card"
 	]
   },
   "sends_telemetry_event": false

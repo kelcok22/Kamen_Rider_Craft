@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:kiva/sagarc_belt",
-	  "kamenridercraft:kiva/jacorder"
+	  "kamenridercraft:kiva/jacorder",
+	  "kamenridercraft:decade/saga_card"
 	]
   },
   "sends_telemetry_event": false

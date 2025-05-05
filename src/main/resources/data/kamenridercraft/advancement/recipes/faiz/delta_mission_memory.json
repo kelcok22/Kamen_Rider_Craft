@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:faiz/delta_driver",
-	  "kamenridercraft:faiz/delta_blaster"
+	  "kamenridercraft:faiz/delta_blaster",
+	  "kamenridercraft:decade/delta_card"
 	]
   },
   "sends_telemetry_event": false

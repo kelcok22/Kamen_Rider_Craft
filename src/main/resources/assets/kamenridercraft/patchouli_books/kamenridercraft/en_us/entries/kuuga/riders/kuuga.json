@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kuuga",
-			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs. Dai-Shocker (2009, movie)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed V$(li)Resistance IV$(li)Night Vision$(li)Jump Boost V$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)$(li)Rider Kick!"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed V$(li)Resistance IV$(li)Night Vision$(li)Jump Boost V$(li)Strength IX (with empty hand)$(li)Strength VI (with weapon)$(li)Rider Kick!"
 		},
 		{
 			"type": "patchouli:entity",

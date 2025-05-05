@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kabuto/puchhopper_rider_belt"
+	  "kamenridercraft:kabuto/puchhopper_rider_belt",
+	  "kamenridercraft:decade/punchhopper_card"
 	]
   },
   "sends_telemetry_event": false

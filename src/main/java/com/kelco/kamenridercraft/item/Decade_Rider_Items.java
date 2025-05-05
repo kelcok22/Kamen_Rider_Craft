@@ -275,9 +275,33 @@ public class Decade_Rider_Items {
 
 	public static final DeferredItem<Item> KNIGHT_CARD = ITEMS.register("knight_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.KNIGHTDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.WING_LANCER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> SCISSORS_CARD = ITEMS.register("scissors_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.SCISSORSDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.SCISSORS_PINCH.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> RAIA_CARD = ITEMS.register("raia_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RAIADRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.EVIL_WHIP.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> GAI_CARD = ITEMS.register("gai_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.GAIDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.METAL_HORN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> OUJA_CARD = ITEMS.register("ouja_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.OUJADRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.VENO_SABER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> FEMME_CARD = ITEMS.register("femme_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.FEMMEDRIVER.get()).addSummonWeapon(Ryuki_Rider_Items.WING_SLASHER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAIXA_CARD = ITEMS.register("kaixa_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.KAIXA_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.KAIXA_BLAYGUN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DELTA_CARD = ITEMS.register("delta_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.DELTA_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.DELTA_BLASTER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> PSYGA_CARD = ITEMS.register("psyga_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.PSYGA_DRIVER.get()).addSummonWeapon(Faiz_Rider_Items.PSYGA_TONFA_EDGE.get()).addSummonWeapon(Faiz_Rider_Items.PSYGA_TONFA_EDGE.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> RIOTROOPER_CARD = ITEMS.register("riotrooper_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 3).setSummonBelt((RiderDriverItem)Faiz_Rider_Items.SMARTBUCKLE.get()).addSummonWeapon(Faiz_Rider_Items.AXEL_RAY_GUN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARREN_CARD = ITEMS.register("garren_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Blade_Rider_Items.GARRENBUCKLE.get()).addSummonWeapon(Blade_Rider_Items.GARRENROUZER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
@@ -285,14 +309,41 @@ public class Decade_Rider_Items {
 	public static final DeferredItem<Item> IBUKI_CARD = ITEMS.register("ibuki_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.IBUKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIKAN_REPPUU.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> TODOROKI_CARD = ITEMS.register("todoroki_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.TODOROKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKIGEN_RETSURAI.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> ZANKI_CARD = ITEMS.register("zanki_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.ZANKIDRIVER.get()).addSummonWeapon(Hibiki_Rider_Items.ONGEKI_SHINGEN_RETSUZAN.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
 	public static final DeferredItem<Item> GATACK_CARD = ITEMS.register("gatack_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.GATACK_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.GATACK_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.GATACK_DOUBLE_CALIBUR.get()).addSummonWeapon(Kabuto_Rider_Items.GATACK_DOUBLE_CALIBUR_MINUS.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> DRAKE_CARD = ITEMS.register("drake_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.DRAKE_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.DRAKE_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.DRAKE_GLIP.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> SASWORD_CARD = ITEMS.register("sasword_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.SASWORD_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.SASWORD_ZECTER.get()).addSummonWeapon(Kabuto_Rider_Items.SASWORD_YAIVER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> PUNCH_HOPPER_CARD = ITEMS.register("punchhopper_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.PUNCHHOPPER_RIDER_BELT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> HERCUS_CARD = ITEMS.register("hercus_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.HERCUS_RIDER_BELT.get()).addSummonWeapon(Kabuto_Rider_Items.ZECT_KUNAI.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> KETAROS_CARD = ITEMS.register("ketaros_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KETAROS_RIDER_BELT.get()).addSummonWeapon(Kabuto_Rider_Items.ZECT_KUNAI_KUNAI.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_CARD = ITEMS.register("zeronos_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Den_O_Rider_Items.ZERONOS_BELT.get()).addSummonWeapon(Den_O_Rider_Items.ZEROGASHER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IXA_CARD = ITEMS.register("ixa_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.IXA_BELT.get()).addSummonWeapon(Kiva_Rider_Items.IXA_CALIBER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> SAGA_CARD = ITEMS.register("saga_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.SAGARC_BELT.get()).addSummonWeapon(Kiva_Rider_Items.JACORDER.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
+	
+	public static final DeferredItem<Item> REY_CARD = ITEMS.register("rey_card",
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem)Kiva_Rider_Items.REY_KIVAT_BELT.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_CARD = ITEMS.register("accel_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(1).addSummonWeapon(1).AddToList(RiderTabs.DECADE_TAB_ITEM));
