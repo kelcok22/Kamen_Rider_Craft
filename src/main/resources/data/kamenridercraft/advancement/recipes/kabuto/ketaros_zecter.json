@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kabuto/ketaros_rider_belt"
+	  "kamenridercraft:kabuto/ketaros_rider_belt",
+	  "kamenridercraft:decade/ketaros_card"
 	]
   },
   "sends_telemetry_event": false

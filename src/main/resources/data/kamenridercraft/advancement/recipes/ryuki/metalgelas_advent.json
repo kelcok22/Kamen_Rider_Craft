@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:ryuki/v_buckle_gai",
-	  "kamenridercraft:ryuki/metal_visor"
+	  "kamenridercraft:ryuki/metal_visor",
+	  "kamenridercraft:decade/gai_card"
 	]
   },
   "sends_telemetry_event": false

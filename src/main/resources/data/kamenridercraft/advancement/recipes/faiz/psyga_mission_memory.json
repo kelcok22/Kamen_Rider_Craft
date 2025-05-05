@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:faiz/psyga_driver",
-	  "kamenridercraft:faiz/psyga_tonfa_edge"
+	  "kamenridercraft:faiz/psyga_tonfa_edge",
+	  "kamenridercraft:decade/psyga_card"
 	]
   },
   "sends_telemetry_event": false

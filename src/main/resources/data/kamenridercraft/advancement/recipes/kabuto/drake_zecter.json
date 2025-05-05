@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kabuto/drake_grip"
+	  "kamenridercraft:kabuto/drake_grip",
+	  "kamenridercraft:decade/drake_card"
 	]
   },
   "sends_telemetry_event": false
