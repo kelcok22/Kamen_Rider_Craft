@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:hibiki/zankidriver",
-	  "kamenridercraft:hibiki/ongeki_shingen_retsuzan"
+	  "kamenridercraft:hibiki/ongeki_shingen_retsuzan",
+	  "kamenridercraft:decade/zanki_card"
 	]
   },
   "sends_telemetry_event": false

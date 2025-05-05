@@ -24,7 +24,8 @@
 	  "kamenridercraft:kiva/arcdriver",
 	  "kamenridercraft:kiva/reydriver",
 	  "kamenridercraft:kiva/arc_trident",
-	  "kamenridercraft:decade/arc_card"
+	  "kamenridercraft:decade/arc_card",
+	  "kamenridercraft:decade/rey_card"
 	]
   },
   "sends_telemetry_event": false

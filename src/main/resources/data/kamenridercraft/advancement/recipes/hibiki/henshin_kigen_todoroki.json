@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:hibiki/todorokidriver",
 	  "kamenridercraft:hibiki/ongekibo_rakurai",
-	  "kamenridercraft:hibiki/ongekigen_retsurai"
+	  "kamenridercraft:hibiki/ongekigen_retsurai",
+	  "kamenridercraft:decade/todoroki_card"
 	]
   },
   "sends_telemetry_event": false
