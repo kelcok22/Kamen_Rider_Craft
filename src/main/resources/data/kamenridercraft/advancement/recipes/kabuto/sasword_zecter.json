@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kabuto/sasword_yaiver"
+	  "kamenridercraft:kabuto/sasword_yaiver",
+	  "kamenridercraft:decade/sasword_card"
 	]
   },
   "sends_telemetry_event": false

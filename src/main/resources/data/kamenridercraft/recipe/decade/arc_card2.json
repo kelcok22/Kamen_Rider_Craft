@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "kamen_ride_card",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:rey_card"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:arc_card"
+  }
+}

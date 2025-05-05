@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:kabuto/hercus_rider_belt"
+	  "kamenridercraft:kabuto/hercus_rider_belt",
+	  "kamenridercraft:decade/hercus_card"
 	]
   },
   "sends_telemetry_event": false

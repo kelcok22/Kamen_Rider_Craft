@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:faiz_logo"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:faiz/smartbuckle",
+	  "kamenridercraft:faiz/axel_ray_gun",
+	  "kamenridercraft:decade/riotrooper_card"
+	]
+  },
+  "sends_telemetry_event": false
+}

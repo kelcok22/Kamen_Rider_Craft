@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:ryuki/v_buckle_femme",
-	  "kamenridercraft:ryuki/blanc_visor"
+	  "kamenridercraft:ryuki/blanc_visor",
+	  "kamenridercraft:decade/femme_card"
 	]
   },
   "sends_telemetry_event": false

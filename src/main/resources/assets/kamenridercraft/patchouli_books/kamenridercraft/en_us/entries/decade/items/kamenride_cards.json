@@ -307,6 +307,61 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "scissors_card",
+			"title": "KamenRide Scissors",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:ryuki/riders/scissors)Kamen Rider Scissors$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/scissors_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raia_card",
+			"title": "KamenRide Raia",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:ryuki/riders/raia)Kamen Rider Raia$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/raia_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gai_card",
+			"title": "KamenRide Gai",
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Can be used to summon $(l:ryuki/riders/gai)Kamen Rider Gai$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/gai_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ouja_card",
+			"title": "KamenRide Ouja",
+			"text": "Appears in:$(li)Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009, movie)$(br2)Can be used to summon $(l:ryuki/riders/ouja)Kamen Rider Ouja$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/ouja_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "femme_card",
+			"title": "KamenRide Femme",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:ryuki/riders/femme)Kamen Rider Femme$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/femme_card"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "kaixa_card",
 			"title": "KamenRide Kaixa",
 			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:faiz/riders/kaixa)Kamen Rider Kaixa$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
@@ -315,6 +370,39 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:decade/kaixa_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "delta_card",
+			"title": "KamenRide Delta",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:faiz/riders/delta)Kamen Rider Delta$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/delta_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "psyga_card",
+			"title": "KamenRide Psyga",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:faiz/riders/psyga)Kamen Rider Psyga$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/psyga_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "riotrooper_card",
+			"title": "KamenRide Riotrooper",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon 3 $(l:faiz/riders/riotrooper)Riotroopers$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/riotrooper_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -340,6 +428,28 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "todoroki_card",
+			"title": "KamenRide Todoroki",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:hibiki/riders/todoroki)Kamen Rider Todoroki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/todoroki_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zanki_card",
+			"title": "KamenRide Zanki",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:hibiki/riders/zanki)Kamen Rider Zanki$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/zanki_card"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "gatack_card",
 			"title": "KamenRide Gatack",
 			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Can be used to summon $(l:kabuto/riders/gatack)Kamen Rider Gatack$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
@@ -348,6 +458,61 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:decade/gatack_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drake_card",
+			"title": "KamenRide Drake",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kabuto/riders/drake)Kamen Rider Drake$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/drake_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasword_card",
+			"title": "KamenRide Sasword",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kabuto/riders/sasword)Kamen Rider Sasword$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/sasword_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "punchhopper_card",
+			"title": "KamenRide Punch Hopper",
+			"text": "Appears in:$(li)Kamen Rider Decade: All Riders vs Dai-Shocker (2009, movie)$(br2)Can be used to summon $(l:kabuto/riders/punchhopper)Kamen Rider PunchHopper$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/punchhopper_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hercus_card",
+			"title": "KamenRide Hercus",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kabuto/riders/hercus)Kamen Rider Hercus$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/hercus_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ketaros_card",
+			"title": "KamenRide Ketaros",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kabuto/riders/ketaros)Kamen Rider Ketaros$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/ketaros_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -370,6 +535,28 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:decade/ixa_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saga_card",
+			"title": "KamenRide Saga",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kiva/riders/saga)Kamen Rider Saga$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/saga_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rey_card",
+			"title": "KamenRide Rey",
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Can be used to summon $(l:kiva/riders/rey)Kamen Rider Rey$(/l) when inserted into a $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) and fired as $(l:decade/riders/diend)Kamen Rider Diend$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/rey_card"
 		},
 		{
 			"type": "patchouli:text",
