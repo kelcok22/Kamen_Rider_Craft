@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:g_belt"
+	  "id": "kamenridercraft:gangan_g_belt"
 	},
-	"title": "Vintage Approach",
-	"description": "Transform into Kamen Rider G",
+	"title": "gg ez",
+	"description": "Transform into GanGan G",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:root",
+  "parent": "kamenridercraft:showa/skyrider",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghead"
+				"kamenridercraft:skyriderhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:gtroso"
+				"kamenridercraft:skyridertroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:glegs"
+				"kamenridercraft:skyriderlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:g_belt"
+				"kamenridercraft:gangan_g_belt"
 			  ]
 			}
 		  }

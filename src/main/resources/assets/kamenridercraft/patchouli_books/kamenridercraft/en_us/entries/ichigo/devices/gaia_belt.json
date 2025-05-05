@@ -1,0 +1,16 @@
+{
+	"name": "Gaia Typhoon",
+	"icon": "kamenridercraft:gaia_belt",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Eve -Masked Rider Gaia- (2004, novel)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/gaia)Kamen Rider Gaia"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/gaia_belt"
+		}
+	]
+}

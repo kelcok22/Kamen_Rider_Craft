@@ -2,7 +2,7 @@
 	"name": "Shocker Emblem",
 	"icon": "kamenridercraft:shocker_emblem",
 	"category": "kamenridercraft:ichigo/items",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",

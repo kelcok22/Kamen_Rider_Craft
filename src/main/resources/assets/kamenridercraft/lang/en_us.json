@@ -1328,6 +1328,8 @@
   "kamenridercraft:new_typhoon_core.form": "Form: Base Form (2016)",
 "item.kamenridercraft.shocker_rider_typhoon_core": "Shocker Rider Typhoon Core",
 "item.kamenridercraft.nophoon_core": "Nophoon Core",
+"item.kamenridercraft.gaia_core": "Gaia Typhoon Core",
+"kamenridercraft:gaia_core.form": "Form: Base Form",
 
 "item.kamenridercraft.typhoon_ichigo": "Typhoon",
 "kamenridercraft.name.ichigo": "Rider: Kamen Rider Ichigo",
@@ -1371,6 +1373,8 @@
 "kamenridercraft.name.dark_nigo": "Rider: Dark Nigo",
 "item.kamenridercraft.typhoon_fake_ichigo": "Typhoon",
 "kamenridercraft.name.fake_ichigo": "Debatable Rider: Fake Ichigo",
+"item.kamenridercraft.gaia_belt": "Gaia Typhoon",
+"kamenridercraft.name.gaia": "Rider: Kamen Rider Gaia",
 
 "item.kamenridercraft.v3_logo": "V3 Logo",
 "item.kamenridercraft.riderman_logo": "Riderman Logo",
@@ -1455,9 +1459,12 @@
 "item.kamenridercraft.skyridertroso": "Skyrider Chestplate",
 "item.kamenridercraft.skyriderlegs": "Skyrider Leggings",
 "item.kamenridercraft.tornado_core": "Tornado Core",
+"item.kamenridercraft.gg_core": "GanGan G Emblem",
 "item.kamenridercraft.tornado": "Tornado",
 "kamenridercraft.name.skyrider": "Rider: Skyrider",
   "kamenridercraft.name.skyrider.a1": "Rider: Masked Rider Amazon",
+  "item.kamenridercraft.gangan_g_belt": "GanGan G Belt",
+  "kamenridercraft.name.gangan_g": "Debatable Rider: GanGan G",
 
 "item.kamenridercraft.super_1_logo": "Super-1 Logo",
 "item.kamenridercraft.super_1head": "Super-1 Helmet",
@@ -6403,6 +6410,7 @@
 "item.kamenridercraft.zillion_driver_gazer_zero": "Zillion Driver",
 "kamenridercraft.name.gazer_zero": "Rider: Kamen Rider Gazer Zero",
 "item.kamenridercraft.laser_raise_driver": "Laser Raise Driver",
+"kamenridercraft.name.ziingazer": "Rider: Kamen Rider Ziingazer",
 
 "item.kamenridercraft.magnum_shooter_40x": "Magnum Shooter 40X",
 "item.kamenridercraft.magnum_shooter_40x_rifle": "Magnum Shooter 40X (Rifle)",
