@@ -1,0 +1,16 @@
+{
+	"name": "GanGan G Belt",
+	"icon": "kamenridercraft:gangan_g_belt",
+	"category": "kamenridercraft:skyrider/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used alongside the $(l:skyrider/devices/armor)Skyrider armor$(/l) to transform into $(l:skyrider/riders/gangan_g)GanGan G"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/gangan_g_belt"
+		}
+	]
+}

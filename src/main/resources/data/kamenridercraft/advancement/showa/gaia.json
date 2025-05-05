@@ -1,16 +1,16 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:g_belt"
+	  "id": "kamenridercraft:gaia_belt"
 	},
-	"title": "Vintage Approach",
-	"description": "Transform into Kamen Rider G",
+	"title": "Captain Planet",
+	"description": "Transform into Kamen Rider Gaia",
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:root",
+  "parent": "kamenridercraft:showa/nigo",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -19,22 +19,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghead"
+				"kamenridercraft:ichigohead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:gtroso"
+				"kamenridercraft:ichigotroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:glegs"
+				"kamenridercraft:ichigolegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:g_belt"
+				"kamenridercraft:gaia_belt"
 			  ]
 			}
 		  }

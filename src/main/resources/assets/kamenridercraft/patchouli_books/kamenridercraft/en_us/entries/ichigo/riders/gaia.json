@@ -1,0 +1,22 @@
+{
+	"name": "Kamen Rider Gaia",
+	"icon": "kamenridercraft:gaia_core",
+	"category": "kamenridercraft:ichigo/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "new_ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gaia_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaia_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "Accessed with the $(l:ichigo/items/gaia_core)Gaia Typhoon Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gaia",
+			"text": "Appears in:$(li)Kamen Rider Eve -Masked Rider Gaia- (2004, novel)$(br2)Transforms with the $(l:ichigo/devices/gaia_belt)Gaia Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
 	"name": "GanGan G",
-	"icon": "kamenridercraft:gangan_g_belt_core",
+	"icon": "kamenridercraft:gg_core",
 	"category": "kamenridercraft:skyrider/riders",
 	"sortnum": 1,
 	"pages": [
@@ -14,8 +14,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Skyrider",
-			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Transforms with the $(l:skyrider/devices/gangan_g_belt)GanGan G Belt$(/l)$(br2)Status Effects:$(li)Flying V$(li)Speed II$(li)Jump Boost VI$(li)Strength II"
+			"title": "GanGan G",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Transforms with the $(l:skyrider/devices/gangan_g_belt)GanGan G Belt$(/l)"
 		}
 	]
 }

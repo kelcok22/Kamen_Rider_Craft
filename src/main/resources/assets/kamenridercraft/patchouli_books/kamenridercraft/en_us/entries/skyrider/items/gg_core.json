@@ -1,0 +1,19 @@
+{
+	"name": "GanGan G Emblem",
+	"icon": "kamenridercraft:gg_core",
+	"category": "kamenridercraft:skyrider/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used to craft GanGan G's $(l:skyrider/devices/gangan_g_belt)GanGan G Belt$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gg_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}
