@@ -14,19 +14,13 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -57,7 +51,7 @@ public class RiderFormChangeItem extends BaseItem {
     private String UPDATED_MODEL_ANIMATION;
     private Boolean SET_PLAYER_MODEL_INVISIBLE = false;
     private Boolean SET_SHOW_FACE = false;
-    private Boolean SET_SHOW_LEGS = false;
+    private Boolean SET_SHOW_UNDER = false;
 
     private Boolean A1 = false;
 
@@ -154,8 +148,8 @@ public class RiderFormChangeItem extends BaseItem {
         return SET_SHOW_FACE;
     }
 
-    public Boolean get_Show_Legs() {
-        return SET_SHOW_LEGS;
+    public Boolean get_Show_under() {
+        return SET_SHOW_UNDER;
     }
 
     public Boolean get_Is_Glowing() {
@@ -245,8 +239,8 @@ public class RiderFormChangeItem extends BaseItem {
         SET_SHOW_FACE = true;
         return this;
     }
-    public RiderFormChangeItem SetShowLegs() {
-        SET_SHOW_LEGS = true;
+    public RiderFormChangeItem SetShowUnder() {
+        SET_SHOW_UNDER = true;
         return this;
     }
 

@@ -191,11 +191,13 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                 model.head.visible = false;
                 model.hat.visible = false;
             }
-            model.leftArm.visible = false;
-            model.rightArm.visible = false;
-            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Legs()){
+
+            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_under()){
                 model.leftLeg.visible = false;
                 model.rightLeg.visible = false;
+                model.leftArm.visible = false;
+                model.rightArm.visible = false;
+                model.body.visible = false;
             }
 
 
@@ -203,8 +205,6 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             model.rightSleeve.visible = false;
             model.leftPants.visible = false;
             model.rightPants.visible = false;
-
-            model.body.visible = false;
             model.jacket.visible = false;
         }
     }
