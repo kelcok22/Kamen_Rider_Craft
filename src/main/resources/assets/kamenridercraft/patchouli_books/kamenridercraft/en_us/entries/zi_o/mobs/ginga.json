@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:ginga",
-			"text": "Found inside $(l:zi_o/structures/ginga_meteor)Ginga's Meteor$(/l)"
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#ginga_boss_block)Ginga Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:text",
