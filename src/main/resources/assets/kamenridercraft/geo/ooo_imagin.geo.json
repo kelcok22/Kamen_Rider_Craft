@@ -49,9 +49,9 @@
 					"cubes": [
 						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [40, 32]},
 						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [40, 16]},
-						{"origin": [-11, 22, -2], "size": [4, 5, 4], "uv": [73, 20], "mirror": true},
-						{"origin": [-12, 26, -1.5], "size": [4, 3, 3], "uv": [75, 13], "mirror": true},
-						{"origin": [-12, 29, -1], "size": [2, 3, 2], "uv": [81, 7], "mirror": true}
+						{"origin": [-10, 22, -2], "size": [4, 5, 4], "uv": [73, 20], "mirror": true},
+						{"origin": [-11, 26, -1.5], "size": [4, 3, 3], "uv": [75, 13], "mirror": true},
+						{"origin": [-11, 29, -1], "size": [2, 3, 2], "uv": [81, 7], "mirror": true}
 					]
 				},
 				{
@@ -65,9 +65,9 @@
 					"cubes": [
 						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.1, "uv": [32, 48]},
 						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [48, 48]},
-						{"origin": [7, 22, -2], "size": [4, 5, 4], "uv": [97, 20], "mirror": true},
-						{"origin": [8, 26, -1.5], "size": [4, 3, 3], "uv": [97, 13], "mirror": true},
-						{"origin": [10, 29, -1], "size": [2, 3, 2], "uv": [97, 7], "mirror": true}
+						{"origin": [6, 22, -2], "size": [4, 5, 4], "uv": [97, 20], "mirror": true},
+						{"origin": [7, 26, -1.5], "size": [4, 3, 3], "uv": [97, 13], "mirror": true},
+						{"origin": [9, 29, -1], "size": [2, 3, 2], "uv": [97, 7], "mirror": true}
 					]
 				},
 				{

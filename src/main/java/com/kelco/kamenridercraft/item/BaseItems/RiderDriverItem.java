@@ -125,7 +125,6 @@ public class RiderDriverItem extends RiderArmorItem {
         if(!level.isClientSide()&isTransformed(player)) {
             OnTransformation(itemstack,player);
         }
-        tag.putBoolean("Update_form", false);
     }
 
     public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
@@ -280,7 +279,6 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (form.getInt("slot" + SLOT)!=Item.getId(ITEM)) {
                     form.putString("slot_tex" + SLOT, ITEM.toString());
                     form.putInt("slot" + SLOT, Item.getId(ITEM));
-                    form.putBoolean("Update_form", true);
                 }
             };
 
