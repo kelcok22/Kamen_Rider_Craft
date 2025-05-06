@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.rebirth.desc"
+  },
+  "length_in_seconds": 233,
+  "sound_event": "kamenridercraft:rebirth"
+}

@@ -803,6 +803,8 @@ public class RiderTabs {
             event.accept(Modded_item_core.KAMEN_RIDER_AGITO_MUSIC_DISC);
             event.accept(Modded_item_core.ALIVE_A_LIFE_MUSIC_DISC);
             event.accept(Modded_item_core.JUSTIFAIZ_MUSIC_DISC);
+            event.accept(Modded_item_core.REBIRTH_MUSIC_DISC);
+            event.accept(Modded_item_core.NEXT_LEVEL_MUSIC_DISC);
             event.accept(Modded_item_core.JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC);
             event.accept(Modded_item_core.WBX_MUSIC_DISC);
             event.accept(Modded_item_core.ANYTHING_GOES_MUSIC_DISC);
