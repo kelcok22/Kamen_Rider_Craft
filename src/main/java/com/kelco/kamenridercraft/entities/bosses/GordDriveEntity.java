@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
@@ -36,6 +37,8 @@ public class GordDriveEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS));
 
     public static List<Item> THINGS_AND_STUFF= new ArrayList<Item>();
+    private ItemStack STOLEN_MAINHAND_WEAPON = ItemStack.EMPTY;
+    private ItemStack STOLEN_OFFHAND_WEAPON = ItemStack.EMPTY;
 
 
     public GordDriveEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
@@ -73,11 +76,29 @@ public class GordDriveEntity extends BaseHenchmenEntity {
         super.stopSeenByPlayer(p_31488_);
         this.bossEvent.removePlayer(p_31488_);
     }
-
-
-
+   
+	@Override
+	public void die(DamageSource p_21809_) {
+		if (!this.level().isClientSide()) {
+            if (!this.STOLEN_MAINHAND_WEAPON.isEmpty()) this.spawnAtLocation(this.STOLEN_MAINHAND_WEAPON);
+            if (!this.STOLEN_OFFHAND_WEAPON.isEmpty()) this.spawnAtLocation(this.STOLEN_OFFHAND_WEAPON);
+        }
+		super.die(p_21809_);
+	}
+    
     public void tick() {
-        if (this.getHealth()<150) {
+        if (ServerConfig.goldDriveWeaponSteal && this.getHealth()<75 && this.getLastAttacker() != null) {
+            if (this.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()) {
+                this.STOLEN_MAINHAND_WEAPON = this.getLastAttacker().getItemBySlot(EquipmentSlot.MAINHAND);
+                this.setItemSlot(EquipmentSlot.MAINHAND, this.getLastAttacker().getItemBySlot(EquipmentSlot.MAINHAND));
+                this.getLastAttacker().setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+            }
+            if (this.getItemBySlot(EquipmentSlot.OFFHAND).isEmpty()) {
+                this.STOLEN_OFFHAND_WEAPON = this.getLastAttacker().getItemBySlot(EquipmentSlot.OFFHAND);
+                this.setItemSlot(EquipmentSlot.OFFHAND, this.getLastAttacker().getItemBySlot(EquipmentSlot.OFFHAND));
+                this.getLastAttacker().setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
+            }
+        } else if (this.getHealth()<130) {
             if(getItemBySlot(EquipmentSlot.FEET).getItem()==Drive_Rider_Items.BANNO_DRIVER_GORD_DRIVE.get()){
                 ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 
@@ -86,7 +107,6 @@ public class GordDriveEntity extends BaseHenchmenEntity {
                 int rand2 = generator.nextInt(200);
                 if (rand2==1)this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(THINGS_AND_STUFF.get(rand)));
             }
-
         }
         super.tick();
     }
@@ -96,7 +116,7 @@ public class GordDriveEntity extends BaseHenchmenEntity {
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
         		.add(Attributes.MOVEMENT_SPEED,(double)0.30F)
         		.add(Attributes.ATTACK_DAMAGE, 7.0D)
-        		.add(Attributes.MAX_HEALTH, 130.0D);
+        		.add(Attributes.MAX_HEALTH, 150.0D);
      }
     
 

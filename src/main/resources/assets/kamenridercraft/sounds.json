@@ -175,6 +175,22 @@
       }
     ]
   },
+  "next_level": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:next_level",
+        "stream": true
+      }
+    ]
+  },
+  "rebirth": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:rebirth",
+        "stream": true
+      }
+    ]
+  },
   "masked_rider": {
     "sounds": [
       {

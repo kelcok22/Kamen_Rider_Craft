@@ -44,6 +44,12 @@ public class ModSounds {
     public static final Supplier<SoundEvent> JUSTIFAIZ= registerSoundEvent("justifaiz");
     public static final ResourceKey<JukeboxSong> JUSTIFAIZ_KEY = createSong("justifaiz");
 
+    public static final Supplier<SoundEvent> REBIRTH= registerSoundEvent("rebirth");
+    public static final ResourceKey<JukeboxSong> REBIRTH_KEY = createSong("rebirth");
+
+    public static final Supplier<SoundEvent> NEXT_LEVEL= registerSoundEvent("next_level");
+    public static final ResourceKey<JukeboxSong> NEXT_LEVEL_KEY = createSong("next_level");
+
     public static final Supplier<SoundEvent> JOURNEY_THROUGH_THE_DECADE= registerSoundEvent("journey_through_the_decade");
     public static final ResourceKey<JukeboxSong> JOURNEY_THROUGH_THE_DECADE_KEY = createSong("journey_through_the_decade");
 

@@ -31,6 +31,10 @@ public class ServerConfig
             .comment(" (default: true) Should Kintaros drop paper (tissues) when transformed into his Den-O form?")
             .define("kintarosTissueDrop", true);
 
+    private static final ModConfigSpec.BooleanValue GOLD_DRIVE_WEAPON_STEAL = BUILDER
+            .comment(" (default: false) Rather than summoning random weapons, should Gold Drive steal the player's held items like in the show?")
+            .define("gordDriveYoink", false);
+
     private static final ModConfigSpec.BooleanValue MIGHTY_BROTHER_SPAWNING = BUILDER
             .comment(" (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?")
             .define("mightyBrotherSpawning", true);
@@ -57,6 +61,7 @@ public class ServerConfig
     public static int summonedItemDurability;
     public static double bossSpawnRate;
     public static boolean kintarosTissueDrop;
+    public static boolean goldDriveWeaponSteal;
     public static boolean mightyBrotherSpawning;
     public static boolean decadeExAidSpawning;
     public static boolean viceSpawning;
@@ -74,6 +79,7 @@ public class ServerConfig
         summonedItemDurability = SUMMONED_ITEM_DAMAGE.get();
         bossSpawnRate = BOSS_SPAWN_RATE.get();
         kintarosTissueDrop = KINTAROS_TISSUE_DROP.get();
+        goldDriveWeaponSteal = GOLD_DRIVE_WEAPON_STEAL.get();
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();
