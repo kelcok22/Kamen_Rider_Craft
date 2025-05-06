@@ -995,6 +995,10 @@ public class Rider_Blocks {
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
 					,MobsCore.WOZ).addLine(Component.translatable("henshin.kamenridercraft.woz")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<Block> GINGA_BOSS_BLOCK = registerBlock("ginga_boss_block",
+			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+					,MobsCore.GINGA).addLine(Component.translatable("henshin.kamenridercraft.ginga")).AddToTabList(RiderTabs.RIDER_BLOCK));
+
 
 	public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
