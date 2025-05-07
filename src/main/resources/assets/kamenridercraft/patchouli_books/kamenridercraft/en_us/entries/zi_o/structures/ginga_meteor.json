@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ginga's Meteor",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Spawn locations: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks$(br2)$(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l) spawns inside this structure"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Spawn locations: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks$(br2)Includes a $(l:misc/blocks/boss_blocks#ginga_boss_block)Ginga Boss Block$(/l)"
 		},
 		{
 			"type": "patchouli:image",
