@@ -141,6 +141,13 @@
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
+			"anchor": "ginga_boss_block",
+			"item": "kamenridercraft:ginga_boss_block",
+			"text": "Found inside $(l:zi_o/structures/ginga_meteor)Ginga's Meteor$(/l)$(br2)Mine this block to summon $(l:zi_o/mobs/ginga)Kamen Rider Ginga$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
 			"anchor": "horobi_boss_block",
 			"item": "kamenridercraft:horobi_boss_block",
 			"text": "Found inside $(l:zero_one/structures/daybreak_town)Daybreak Town$(/l)$(br2)Mine this block to summon $(l:zero_one/mobs/horobi)Kamen Rider Horobi$(/l)"

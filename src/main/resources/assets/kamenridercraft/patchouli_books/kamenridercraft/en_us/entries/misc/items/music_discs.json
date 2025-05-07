@@ -12,139 +12,151 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:lets_go_rider_kick_music_disc",
-			"text": "Song:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)Based on:$(li)Hiroshi Fujioka/Koichi Fuji - Let's Go!! Rider Kick$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider (1971, TV show)"
+			"text": "Song:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)Based on:$(li)Hiroshi Fujioka/Koichi Fuji - Let's Go!! Rider Kick$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider (1971, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:tatakae_kamen_rider_v3_music_disc",
-			"text": "Song:$(li)HosephHoestar - Tatakae! Kamen Rider V3$(br2)Based on:$(li)Hiroshi Miyauchi & The Swingers - Tatakae! Kamen Rider V3$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider V3 (1973, TV show)"
+			"text": "Song:$(li)HosephHoestar - Tatakae! Kamen Rider V3$(br2)Based on:$(li)Hiroshi Miyauchi & The Swingers - Tatakae! Kamen Rider V3$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider V3 (1973, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:dragon_road_music_disc",
-			"text": "Song:$(li)HosephHoestar - Dragon Road$(br2)Based on:$(li)Akira Kushida - Dragon Road$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Birth of the 10th! Kamen Riders All Together!! (1984, TV special)"
+			"text": "Song:$(li)HosephHoestar - Dragon Road$(br2)Based on:$(li)Akira Kushida - Dragon Road$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Birth of the 10th! Kamen Riders All Together!! (1984, TV special)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_black_music_disc",
-			"text": "Song:$(li)HosephHoestar - Kamen Rider Black$(br2)Based on:$(li)Tetsuo Kurata - Kamen Rider Black$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Black (1987, TV show)"
+			"text": "Song:$(li)HosephHoestar - Kamen Rider Black$(br2)Based on:$(li)Tetsuo Kurata - Kamen Rider Black$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Black (1987, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_black_rx_music_disc",
-			"text": "Song:$(li)HosephHoestar - Kamen Rider Black RX$(br2)Based on:$(li)Takayuki Miyauchi - Kamen Rider Black RX$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Black RX (1988, TV show)"
+			"text": "Song:$(li)HosephHoestar - Kamen Rider Black RX$(br2)Based on:$(li)Takayuki Miyauchi - Kamen Rider Black RX$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Black RX (1988, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_kuuga_music_disc",
-			"text": "Song:$(li)HosephHoestar - Kamen Rider Kuuga!$(br2)Based on:$(li)Masayuki Tanaka - Kamen Rider Kuuga!$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
+			"text": "Song:$(li)HosephHoestar - Kamen Rider Kuuga!$(br2)Based on:$(li)Masayuki Tanaka - Kamen Rider Kuuga!$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_agito_music_disc",
-			"text": "Song:$(li)HosephHoestar - Kamen Rider AGITO$(br2)Based on:$(li)Shinichi Ishihara - Kamen Rider AGITO$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Agito (2001, TV show)"
+			"text": "Song:$(li)HosephHoestar - Kamen Rider AGITO$(br2)Based on:$(li)Shinichi Ishihara - Kamen Rider AGITO$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Agito (2001, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:alive_a_life_music_disc",
-			"text": "Song:$(li)HosephHoestar - Alive A life$(br2)Based on:$(li)Rica Matsumoto - Alive A life$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Ryuki (2002, TV show)"
+			"text": "Song:$(li)HosephHoestar - Alive A life$(br2)Based on:$(li)Rica Matsumoto - Alive A life$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Ryuki (2002, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:justifaiz_music_disc",
-			"text": "Song:$(li)HosephHoestar - Justiφ's$(br2)Based on:$(li)ISSA - Justiφ's$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider 555 (2003, TV show)"
+			"text": "Song:$(li)HosephHoestar - Justiφ's$(br2)Based on:$(li)ISSA - Justiφ's$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider 555 (2003, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rebirth_music_disc",
+			"text": "Song:$(li)HosephHoestar - rebirth$(br2)Based on:$(li)Kousei Amano - rebirth$(br)Type:$(li)Insert song, secondary Rider theme$(br)Appears in:$(li)Kamen Rider Blade (2004, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_level_music_disc",
+			"text": "Song:$(li)HosephHoestar - NEXT LEVEL$(br2)Based on:$(li)YU-KI - NEXT LEVEL$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Kabuto (2006, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:journey_through_the_decade_music_disc",
-			"text": "Song:$(li)HosephHoestar - Journey Through the Decade$(br2)Based on:$(li)Gackt - Journey Through the Decade$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Decade (2009, TV show)"
+			"text": "Song:$(li)HosephHoestar - Journey Through the Decade$(br2)Based on:$(li)Gackt - Journey Through the Decade$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Decade (2009, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:w_b_x_w_boiled_xtreme_music_disc",
-			"text": "Song:$(li)HosephHoestar - W-B-X ~W-Boiled Extreme~$(br2)Based on:$(li)Aya Kamiki w TAKUYA - W-B-X ~W-Boiled Extreme~$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider W (2009, TV show)"
+			"text": "Song:$(li)HosephHoestar - W-B-X ~W-Boiled Extreme~$(br2)Based on:$(li)Aya Kamiki w TAKUYA - W-B-X ~W-Boiled Extreme~$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider W (2009, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:anything_goes_music_disc",
-			"text": "Song:$(li)HosephHoestar - Anything Goes!$(br2)Based on:$(li)Maki Ohguro - Anything Goes!$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider OOO (2010, TV show)"
+			"text": "Song:$(li)HosephHoestar - Anything Goes!$(br2)Based on:$(li)Maki Ohguro - Anything Goes!$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider OOO (2010, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:just_live_more_music_disc",
-			"text": "Song:$(li)HosephHoestar - JUST LIVE MORE$(br2)Based on:$(li)Gaim no Kaze - JUST LIVE MORE$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Gaim (2013, TV show)"
+			"text": "Song:$(li)HosephHoestar - JUST LIVE MORE$(br2)Based on:$(li)Gaim no Kaze - JUST LIVE MORE$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Gaim (2013, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:surprise_drive_music_disc",
-			"text": "Song:$(li)HosephHoestar - SURPRISE-DRIVE$(br2)Based on:$(li)Mitsuru Matsuoka EARNEST DRIVE - SURPRISE-DRIVE$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Drive (2014, TV show)"
+			"text": "Song:$(li)HosephHoestar - SURPRISE-DRIVE$(br2)Based on:$(li)Mitsuru Matsuoka EARNEST DRIVE - SURPRISE-DRIVE$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Drive (2014, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:excite_music_disc",
-			"text": "Song:$(li)HosephHoestar - EXCITE$(br2)Based on:$(li)Daichi Miura - EXCITE$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
+			"text": "Song:$(li)HosephHoestar - EXCITE$(br2)Based on:$(li)Daichi Miura - EXCITE$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:be_the_one_music_disc",
-			"text": "Song:$(li)HosephHoestar - Be The One$(br2)Based on:$(li)PANDORA feat. Beverly - Be The One$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Build (2017, TV show)"
+			"text": "Song:$(li)HosephHoestar - Be The One$(br2)Based on:$(li)PANDORA feat. Beverly - Be The One$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Build (2017, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:over_quartzer_music_disc",
-			"text": "Song:$(li)HosephHoestar - Over \"Quartzer\"$(br2)Based on:$(li)Shuta Sueyoshi feat. ISSA - Over \"Quartzer\"$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Song:$(li)HosephHoestar - Over \"Quartzer\"$(br2)Based on:$(li)Shuta Sueyoshi feat. ISSA - Over \"Quartzer\"$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:realxeyez_music_disc",
-			"text": "Song:$(li)HosephHoestar - REAL×EYEZ$(br2)Based on:$(li)J×Takanori Nishikawa - REAL×EYEZ$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Zero-One (2019, TV show)"
+			"text": "Song:$(li)HosephHoestar - REAL×EYEZ$(br2)Based on:$(li)J×Takanori Nishikawa - REAL×EYEZ$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Zero-One (2019, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:almighty_music_disc",
-			"text": "Song:$(li)HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku$(br2)Based on:$(li)Tokyo Ska Paradise Orchestra with Yoohei Kawakami - ALMIGHTY ~ Kamen no Yakusoku$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Saber (2020, TV show)"
+			"text": "Song:$(li)HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku$(br2)Based on:$(li)Tokyo Ska Paradise Orchestra with Yoohei Kawakami - ALMIGHTY ~ Kamen no Yakusoku$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Saber (2020, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:chemy_x_story_music_disc",
-			"text": "Song:$(li)HosephHoestar - CHEMY×STORY$(br2)Based on:$(li)BACK-ON - CHEMY×STORY$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Song:$(li)HosephHoestar - CHEMY×STORY$(br2)Based on:$(li)BACK-ON - CHEMY×STORY$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:chemy_x_story_flow_music_disc",
-			"text": "Song:$(li)HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)$(br2)Based on:$(li)BACK-ON×FLOW - CHEMY×STORY$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Song:$(li)HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)$(br2)Based on:$(li)BACK-ON×FLOW - CHEMY×STORY$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:got_boost_music_disc",
-			"text": "Song:$(li)HosephHoestar - Got Boost?$(br2)Based on:$(li)FANTASTICS from EXILE TRIBE - Got Boost?$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Song:$(li)HosephHoestar - Got Boost?$(br2)Based on:$(li)FANTASTICS from EXILE TRIBE - Got Boost?$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:masked_rider_music_disc",
-			"text": "Song:$(li)HosephHoestar - Masked Rider$(br2)Based on:$(li)Idk you figure it out$(br)Type:$(li)Opening theme (OP)$(br)Appears in:$(li)[REDACTED]"
+			"text": "Song:$(li)HosephHoestar - Masked Rider$(br2)Based on:$(li)Idk you figure it out$(br)Type:$(li)Opening theme$(br)Appears in:$(li)[REDACTED]"
 		}
 	]
 }
