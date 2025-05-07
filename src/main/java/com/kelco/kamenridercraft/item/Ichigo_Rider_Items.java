@@ -87,7 +87,7 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+                    .has_basic_model().AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
@@ -347,7 +347,7 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item> BLACK_TACKLE_BELT = ITEMS.register("black_tackle_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .Override_belt_text("black_tackle_belt").Dont_show_belt_form_info().AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
+                    .Override_belt_text("black_tackle_belt").Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.STRONGER_TAB_ITEM));
 
     //Skyrider
     public static final DeferredItem<Item> SKYRIDER_LOGO = ITEMS.register("skyrider_logo",

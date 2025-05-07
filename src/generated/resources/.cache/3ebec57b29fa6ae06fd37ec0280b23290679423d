@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-05T00:53:08.0622437	Item Models: kamenridercraft
+// 1.21.1	2025-05-07T00:35:49.3154494	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 bd1dcac1e606a87b6d3542c1bea524ed6644cd5f assets/kamenridercraft/models/item/angelead_ride_chemy_card.json
@@ -35,6 +35,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/atta
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/basic_zangetsu_core.json
 a8480ea5f3ac68d95383b199474b97add1ec8edd assets/kamenridercraft/models/item/bisbluetirol_gochizo.json
 1debe66a518a53e3fcc9980a4466370a8ddc71a2 assets/kamenridercraft/models/item/bispinktirol_gochizo.json
+27d05308b90ff84a48f1c3117e626044a1aa72aa assets/kamenridercraft/models/item/black_tackle_belt.json
 22b89755d4560e0cf2b2eb8a5d7617cb38cb4cd5 assets/kamenridercraft/models/item/bonchiage_gochizo.json
 e9f511e8b4ff01caaf1ea017c3c629c59b5a1f10 assets/kamenridercraft/models/item/bremen_no_rock_band_wonder_ride_book_buster.json
 e9f511e8b4ff01caaf1ea017c3c629c59b5a1f10 assets/kamenridercraft/models/item/bremen_no_rock_band_wonder_ride_book_slash.json
@@ -88,6 +89,7 @@ fc989a7da2361aa925334eccd9d1f5622d8c3ea4 assets/kamenridercraft/models/item/full
 70432d05ad9bbee9ef4984116f8b63f627d1b707 assets/kamenridercraft/models/item/funkorogashi_vistamp_vice.json
 e33c8e730e575e0bffc587414cd2b904de330af3 assets/kamenridercraft/models/item/fusion_switch_og.json
 5aea0959da8314fd68ec2456b11a70dea585b32b assets/kamenridercraft/models/item/gaia_belt.json
+2288b18c5dcdfdfba1102a8b4885d0064260a258 assets/kamenridercraft/models/item/gaia_core.json
 7c5c14623f7cec2e655e7a83129419ad5e17f7c7 assets/kamenridercraft/models/item/gaim_full_bottle.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/gaim_yami.json
 ee625e82bdc5b0ec77a1eb9dab68940a43b3d192 assets/kamenridercraft/models/item/ganbarizing_full_bottle.json
