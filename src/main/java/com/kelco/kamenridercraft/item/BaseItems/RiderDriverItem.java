@@ -102,10 +102,9 @@ public class RiderDriverItem extends RiderArmorItem {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") && stack.getEquipmentSlot()!=EquipmentSlot.FEET) OnformChange(stack, player, tag);
 
-                //player.sendSystemMessage(Component.literal("isNotTransformed"+tag.getBoolean("isNotTransformed")));
+                if (!level.isClientSide)player.sendSystemMessage(Component.literal("isNotTransformed" + tag.getBoolean("isNotTransformed")));
 
-               if (!tag.getBoolean("isNotTransformed")&!isTransformed(player)) tag.putBoolean("isNotTransformed", true);
-
+               if (!tag.getBoolean("isNotTransformed")&&!isTransformed(player)&&!level.isClientSide) tag.putBoolean("isNotTransformed", true);
 
             }
 
@@ -132,10 +131,13 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnTransform(ItemStack itemstack, LivingEntity player) {
-        for (int n = 0; n < Num_Base_Form_Item; n++) {
-            RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-            if (form.getTimeoutDuration() != 0) form.startTimeout(player);
-            OnTransformation(itemstack,player);
+
+        if (player.getItemBySlot(EquipmentSlot.FEET)==itemstack) {
+            for (int n = 0; n < Num_Base_Form_Item; n++) {
+                RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                if (form.getTimeoutDuration() != 0) form.startTimeout(player);
+            }
+            OnTransformation(itemstack, player);
         }
     }
 
