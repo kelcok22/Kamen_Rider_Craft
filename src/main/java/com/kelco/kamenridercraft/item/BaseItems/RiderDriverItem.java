@@ -102,7 +102,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form") && stack.getEquipmentSlot()!=EquipmentSlot.FEET) OnformChange(stack, player, tag);
 
-                if (!level.isClientSide)player.sendSystemMessage(Component.literal("isNotTransformed" + tag.getBoolean("isNotTransformed")));
+                //if (!level.isClientSide)player.sendSystemMessage(Component.literal("isNotTransformed" + tag.getBoolean("isNotTransformed")));
 
                if (!tag.getBoolean("isNotTransformed")&&!isTransformed(player)&&!level.isClientSide) tag.putBoolean("isNotTransformed", true);
 
