@@ -19,25 +19,22 @@ public class ModServerEvents {
 		@SubscribeEvent
 		public void EquipmentChange(LivingEquipmentChangeEvent event) {
 
-			/**
-			if (!event.getEntity().level().isClientSide()) {
 				ItemStack stack = event.getEntity().getItemBySlot(EquipmentSlot.FEET);
 				if (stack.getItem() instanceof RiderDriverItem) {
+					if (stack.has(DataComponents.CUSTOM_DATA)) {
+						CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 
-					if (!stack.has(DataComponents.CUSTOM_DATA)) {
-						stack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-					}
+						if (tag.getBoolean("isNotTransformed") && event.getSlot().isArmor()
+								&& stack.getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())){
+							tag.putBoolean("isNotTransformed", false);
+							belt.OnTransform(stack, event.getEntity());
 
-					CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-					if (!tag.getBoolean("isTransformed")) {
-						if (event.getSlot() != EquipmentSlot.MAINHAND && event.getSlot() != EquipmentSlot.OFFHAND
-								&& stack.getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity()))
-							belt.OnTransform(stack, event.getEntity(), tag);
+						}
 
-					}
+
 				}
 			}
-			 **/
+
 		}
 	}
 }

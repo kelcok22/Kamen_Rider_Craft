@@ -100,10 +100,13 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form") && !level.isClientSide()) OnformChange(stack, player, tag);
-                if (!tag.getBoolean("isNotTransformed")&!isTransformed(player)&& !level.isClientSide()||
-                        !tag.getBoolean("isNotTransformed")&stack.getEquipmentSlot()!=EquipmentSlot.FEET&& !level.isClientSide()) tag.putBoolean("isNotTransformed", true);
-                if (tag.getBoolean("isNotTransformed") && isTransformed(player)&& !level.isClientSide()) this.OnTransform(stack, player, tag);
+                if (tag.getBoolean("Update_form") && stack.getEquipmentSlot()!=EquipmentSlot.FEET) OnformChange(stack, player, tag);
+
+                //player.sendSystemMessage(Component.literal("isNotTransformed"+tag.getBoolean("isNotTransformed")));
+
+               if (!tag.getBoolean("isNotTransformed")&!isTransformed(player)) tag.putBoolean("isNotTransformed", true);
+
+
             }
 
             if (isTransformed(player)) {
@@ -121,24 +124,27 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         player.setInvisible(false);
-        Level level = player.level();
-        if(!level.isClientSide()&isTransformed(player)) {
+        if(isTransformed(player)) {
+            OnTransformation(itemstack,player);
+            tag.putBoolean("Update_form", false);
+        }
+
+    }
+
+    public void OnTransform(ItemStack itemstack, LivingEntity player) {
+        for (int n = 0; n < Num_Base_Form_Item; n++) {
+            RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+            if (form.getTimeoutDuration() != 0) form.startTimeout(player);
             OnTransformation(itemstack,player);
         }
     }
 
-    public void OnTransform(ItemStack itemstack, LivingEntity player, CompoundTag tag) {
-        for (int n = 0; n < Num_Base_Form_Item; n++) {
-            RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-            if (form.getTimeoutDuration() != 0) form.startTimeout(player);
-        }
-        tag.putBoolean("isNotTransformed", false);
-    }
-
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
         if(isTransformed(player)) {
-            RiderFormChangeItem formitem = get_Form_Item(itemstack,1);
-            formitem.OnTransformation(itemstack,player);
+            if (!player.level().isClientSide) {
+                RiderFormChangeItem formitem = get_Form_Item(itemstack, 1);
+                formitem.OnTransformation(itemstack, player);
+            }
         }
     }
 
@@ -276,9 +282,9 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag  tag = new CompoundTag();
             Consumer<CompoundTag> data = form ->
             {
-                if (form.getInt("slot" + SLOT)!=Item.getId(ITEM)) {
+                if (!form.getString("slot_tex" + SLOT).equals(ITEM.toString())) {
                     form.putString("slot_tex" + SLOT, ITEM.toString());
-                    form.putInt("slot" + SLOT, Item.getId(ITEM));
+                    form.putBoolean("Update_form", true);
                 }
             };
 
