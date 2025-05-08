@@ -66,14 +66,14 @@ public class GamerDriverItem extends RiderDriverItem {
         return false;
     }
 
-	public void OnTransform(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
+	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
 		&& (RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_R.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT_L.get()
 		|| RiderDriverItem.get_Form_Item(itemstack, 1)==Ex_Aid_Rider_Items.KNOCK_OUT_FIGHTER_2_GASHAT.get()))
 			summonParaDX(player);
-		super.OnTransform(itemstack, entity,tag);
+		super.OnTransform(itemstack, entity);
 	}
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
