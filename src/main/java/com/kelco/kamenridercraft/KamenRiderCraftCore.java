@@ -319,7 +319,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
  return 0.0F;
  }
  else if (p_174637_.getItemBySlot(EquipmentSlot.FEET)!= null){
- if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get()) {
+ if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_ZIIN.get()||p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.LASER_RISE_DRIVER_GAZER_ZERO.get()) {
  return 1;
  } else if (p_174637_.getItemBySlot(EquipmentSlot.FEET).getItem() == Geats_Rider_Items.RAISE_RISER_BELT_KEKERA.get()) {
  return 2;
