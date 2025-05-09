@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "grand_zi_o",
+  "pattern": [
+    "XZX",
+    "UBG",
+    "XDX"
+  ],
+  "key": {
+    "X": {
+      "tag": "kamenridercraft:blank_card"
+    }, "Z": {
+      "item": "kamenridercraft:geiz_ridewatch"
+    }, "D": {
+      "item": "kamenridercraft:diend_card"
+    }, "U": {
+      "item": "kamenridercraft:unfinished_geiz_majesty_ridewatch_l"
+    }, "G": {
+      "item": "kamenridercraft:unfinished_geiz_majesty_ridewatch_r"
+    }, "B": {
+      "item": "kamenridercraft:blank_watch"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:geiz_majesty_ridewatch"
+  }
+}

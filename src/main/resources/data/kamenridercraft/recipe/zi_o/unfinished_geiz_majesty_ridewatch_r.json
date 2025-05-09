@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "grand_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:accel_card"
+    }, 
+    {
+      "item": "kamenridercraft:birth_card"
+    }, 
+    {
+      "item": "kamenridercraft:meteor_card"
+    }, 
+    {
+      "item": "kamenridercraft:beast_card"
+    }, 
+    {
+      "item": "kamenridercraft:baron_card"
+    }, 
+    {
+      "item": "kamenridercraft:mach_card"
+    }, 
+    {
+      "item": "kamenridercraft:specter_Card"
+    }, 
+    {
+      "item": "kamenridercraft:brave_card"
+    }, 
+    {
+      "item": "kamenridercraft:cross_z_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_geiz_majesty_ridewatch_r"
+  }
+}
