@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "grand_zi_o",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:geiz_card"
+    }, 
+    {
+      "item": "kamenridercraft:g3_card"
+    }, 
+    {
+      "item": "kamenridercraft:knight_card"
+    }, 
+    {
+      "item": "kamenridercraft:kaixa_card"
+    }, 
+    {
+      "item": "kamenridercraft:garren_card"
+    }, 
+    {
+      "item": "kamenridercraft:ibuki_card"
+    }, 
+    {
+      "item": "kamenridercraft:gatack_card"
+    }, 
+    {
+      "item": "kamenridercraft:zeronos_card"
+    }, 
+    {
+      "item": "kamenridercraft:ixa_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:unfinished_geiz_majesty_ridewatch_l"
+  }
+}

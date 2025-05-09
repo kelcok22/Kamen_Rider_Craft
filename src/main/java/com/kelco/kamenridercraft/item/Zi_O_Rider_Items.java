@@ -639,6 +639,10 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_R = ITEMS.register("unfinished_grand_zi_o_ridewatch_r",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_L = ITEMS.register("unfinished_geiz_majesty_ridewatch_l",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+	public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_R = ITEMS.register("unfinished_geiz_majesty_ridewatch_r",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_L = ITEMS.register("unfinished_ohma_zi_o_driver_l",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ohma_zi_o","ohma_zi_o_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
