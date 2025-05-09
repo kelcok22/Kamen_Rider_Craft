@@ -1070,7 +1070,7 @@ public class Ex_Aid_Rider_Items {
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.SMALL, 500, 2,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_ENERGY_ITEM = ITEMS.register("christmas_energy_item",
-			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.CHRISTMAS, 500, 0,true,false)).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.CHRISTMAS, 500, 0,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> STRETCH_ENERGY_ITEM = ITEMS.register("stretch_energy_item",
 			() -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(Effect_core.STRETCH, 500, 2,true,false)).AddToList(RiderTabs.EX_AID_TAB_ITEM));
