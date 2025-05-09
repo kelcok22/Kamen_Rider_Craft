@@ -47,7 +47,9 @@ public class RiderKickEffect extends MobEffect {
 		if (stack.getItem() instanceof RiderDriverItem belt){
 			if (belt.isTransformed(pLivingEntity)){
 
-				if (pAmplifier ==0&pLivingEntity.isShiftKeyDown()){
+				boolean fly = pLivingEntity instanceof Player player && player.getAbilities().flying;
+
+				if (pAmplifier ==0&pLivingEntity.isShiftKeyDown()&!fly){
 
 					pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 5, 1,false,false));
 				}
