@@ -419,7 +419,7 @@ public class Fourze_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH_CHRISTMAS_VER = ITEMS.register("rocket_switch_christmas_ver",
-			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.FOURZE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GATE_SWITCH = ITEMS.register("gate_switch",
 			() -> new GateSwitchItem(new Item.Properties(),10).AddToList(RiderTabs.FOURZE_TAB_ITEM));

@@ -702,7 +702,7 @@ public class Revice_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> REX_VISTAMP_CHRISTMAS = ITEMS.register("rex_vistamp_christmas",
-            () -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.REVICE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> REX_VISTAMP_THEME = ITEMS.register("rex_vistamp_theme",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));

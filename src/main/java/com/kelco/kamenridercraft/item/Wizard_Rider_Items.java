@@ -457,7 +457,7 @@ public class Wizard_Rider_Items {
 
 	public static final DeferredItem<Item> CHRISTMAS_WIZARD_RING = ITEMS.register("merry_christmas_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.CHRISTMAS, 500,0,true,true))
-					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+					.AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIME_WIZARD_RING = ITEMS.register("time_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.TIME, 500,0,true,true))

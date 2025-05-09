@@ -593,7 +593,7 @@ public class Geats_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.GIGANT_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_BUCKLE = ITEMS.register("christmas_buckle",
-			() -> new BaseItem(new Item.Properties()).AddToList(GiftItem.GIFTS).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_HAMMER_RAISE_BUCKLE = ITEMS.register("golden_hammer_raise_buckle",
 			() -> new BaseItem(new Item.Properties()).AddToList(MissionBoxItem.RAISE_BUCKLE).AddToList(RiderTabs.GEATS_TAB_ITEM));
