@@ -137,8 +137,7 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddToList(CAKE,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
