@@ -425,8 +425,7 @@ public class Wizard_Rider_Items {
 
        public static final DeferredItem<Item> KICK_STRIKE_WIZARD_RING = ITEMS.register("kick_strike_ring",
                () -> new WizardRingItem(new Item.Properties()
-                       , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600,2,true,true)
-                       , new MobEffectInstance(MobEffects.JUMP, 600,9,true,true))
+                       , new MobEffectInstance(Effect_core.RIDER_KICK, 5,1,false,false))
 					   .AddToList(UnknownWizardRingItem.amber_wizard_ring, 1).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> ECLIPSE_WIZARD_RING = ITEMS.register("eclipse_ring",
