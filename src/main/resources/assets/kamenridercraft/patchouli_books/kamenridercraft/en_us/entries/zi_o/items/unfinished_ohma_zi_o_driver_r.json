@@ -2,7 +2,7 @@
 	"name": "Unfinished Ohma Zi-O Driver Part",
 	"icon": "kamenridercraft:unfinished_ohma_zi_o_driver_r",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 6,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",
