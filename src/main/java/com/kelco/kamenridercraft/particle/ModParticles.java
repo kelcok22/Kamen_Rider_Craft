@@ -16,6 +16,10 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
             PARTICLE_TYPES.register("hit_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> WIZARD_PARTICLES =
+            PARTICLE_TYPES.register("wizard_particles", () -> new SimpleParticleType(true));
+
+
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
     }
