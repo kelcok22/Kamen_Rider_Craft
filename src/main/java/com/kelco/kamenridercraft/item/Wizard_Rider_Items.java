@@ -6,21 +6,27 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.item.wizard.*;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenuBeast;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -70,6 +76,17 @@ public class Wizard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddToList(UnknownWizardRingItem.red_wizard_ring, 5).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+
+	/**
+	{
+		public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+		super.OnTransformation(itemstack,player);
+		((ServerLevel) player.level()).sendParticles(ModParticles.WIZARD_PARTICLES.get(),
+				player.getX() , player.getY()+1,
+				player.getZ(), 1, 0, 0, 0, 0.4);
+	}
+	}
+	**/
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING = ITEMS.register("water_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water","wizard","wizardriver_belt",

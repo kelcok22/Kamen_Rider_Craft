@@ -26,6 +26,7 @@ import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.particle.HitParticles;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.particle.WizardParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
@@ -597,6 +598,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
         @SubscribeEvent
         public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.WIZARD_PARTICLES.get(), WizardParticles.Provider::new);
         }
         
         @SubscribeEvent
