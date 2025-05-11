@@ -78,6 +78,9 @@ public class Modded_item_core {
     public static final DeferredItem<Item>  MARSHMALLOW = ITEMS.register("marshmallow",
             () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item>  PANCAKE = ITEMS.register("pancake",
+            () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
+
 
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));

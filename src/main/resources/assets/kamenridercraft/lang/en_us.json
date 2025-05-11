@@ -1432,6 +1432,7 @@
   "item.kamenridercraft.lollipop": "Lollipop",
   "item.kamenridercraft.potato_snacks": "Potato Snacks",
   "item.kamenridercraft.candy_wrapper": "Candy Wrapper",
+  "item.kamenridercraft.pancake": "Pancake Stack",
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
@@ -7170,6 +7171,10 @@
 "item.kamenridercraft.charapaki_gochizo": "Charapaki Gochizo",
 "item.kamenridercraft.charapaki_gochizo_special": "Charapaki Gochizo (Special Ver.)",
 "item.kamenridercraft.umaibo_gochizo": "Umaibo Gochizo",
+  "item.kamenridercraft.doranosuke_gochizo": "Doranosuke Gochizo",
+  "item.kamenridercraft.mitaramotti_gochizo": "Mitaramotti Gochizo",
+  "item.kamenridercraft.mogimaru_gochizo": "Mogimaru Gochizo",
+  "item.kamenridercraft.partea_gochizo": "Partea Gochizo",
 
 "kamenridercraft:poppingummy_gochizo.form": "Form: Poppingummy Form",
 "kamenridercraft:punchingummy_gochizo.form": "Form: Punchingummy Assist",
