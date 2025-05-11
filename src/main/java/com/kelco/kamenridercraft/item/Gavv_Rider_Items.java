@@ -438,6 +438,12 @@ public class Gavv_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> XMAX_GAVV = ITEMS.register("xmax_gavv",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
 			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
