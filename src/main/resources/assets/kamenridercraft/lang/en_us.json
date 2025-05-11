@@ -2586,7 +2586,13 @@
 "kamenridercraft.name.dark_kiva": "Rider: Kamen Rider Dark Kiva",
 "item.kamenridercraft.ixa_belt": "Ixa Belt",
 "kamenridercraft.name.ixa": "Rider: Kamen Rider Ixa",
-"item.kamenridercraft.sagarc_belt": "Sagarc Belt",
+  "item.kamenridercraft.proto_ixa_belt": "Ixa Belt",
+  "kamenridercraft.name.proto_ixa": "Rider: Kamen Rider Proto Ixa",
+
+  "item.kamenridercraft.proto_ixa_belt_first": "Ixa Buckle",
+  "kamenridercraft.name.ixa_first": "Rider: Kamen Rider Proto Ixa (The First)",
+
+  "item.kamenridercraft.sagarc_belt": "Sagarc Belt",
 "kamenridercraft.name.saga": "Rider: Kamen Rider Saga",
 "item.kamenridercraft.arcdriver": "Arc Kivat Belt",
 "kamenridercraft.name.arc": "Rider: Kamen Rider Arc",
