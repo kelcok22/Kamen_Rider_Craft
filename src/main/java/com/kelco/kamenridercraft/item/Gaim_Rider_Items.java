@@ -950,6 +950,9 @@ public class Gaim_Rider_Items {
 	public static final DeferredItem<Item> DAU = ITEMS.register("dau",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
+	public static final DeferredItem<Item> DIMUBU = ITEMS.register("dimubu",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
+
 	public static final DeferredItem<Item> GURONBARYAMU = ITEMS.register("guronbaryamu",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAIM_TAB_ITEM).ChangeRepairItem(HIMAWRI_LOCKSEED.get()));
 
