@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.effect.cores;
 
+import com.kelco.kamenridercraft.sounds.ModSounds;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -26,7 +27,7 @@ public class NoteEffect extends InstantenousMobEffect {
 
 		Random generator = new Random();
 		int rand = generator.nextInt(10);
-						pLivingEntity.level().playLocalSound(pLivingEntity, SoundEvents.PIG_STEP, SoundSource.RECORDS, 1,  rand) ;
+						pLivingEntity.level().playLocalSound(pLivingEntity, ModSounds.MASKED_RIDER.get(), SoundSource.RECORDS, 1,  rand) ;
 
 		return true;
 	}
