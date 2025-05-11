@@ -260,8 +260,37 @@ public class Kiva_Rider_Items {
 					});
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
-    
-    public static final DeferredItem<Item> SAGARC_BELT = ITEMS.register("sagarc_belt",
+
+	public static final DeferredItem<Item> PROTO_IXA_BELT = ITEMS.register("proto_ixa_belt",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"proto_ixa", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("fueslot_gui.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new FueslotGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					}, buf -> {
+						buf.writeBlockPos(player.blockPosition());
+						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+					});
+				}
+			}.Has_Inventory_Gui().Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+
+	public static final DeferredItem<Item> PROTO_IXA_BELT_FIRST = ITEMS.register("proto_ixa_belt_first",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ixa_first", KNUCKLE_FUESTLE,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
+		.Has_Inventory_Gui().Override_belt_text("ixa_buckle").Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+
+
+	public static final DeferredItem<Item> SAGARC_BELT = ITEMS.register("sagarc_belt",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saga", WAKE_UP_FUESTLE_SAGA, KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
     public static final DeferredItem<Item> DARK_KIVAT_BELT = ITEMS.register("darkkivadriver",
