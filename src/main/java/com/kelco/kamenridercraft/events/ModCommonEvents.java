@@ -132,6 +132,12 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/cake_gochizo")))){
 				int rand = generator.nextInt(Gavv_Rider_Items.CAKE.size());
 				return Gavv_Rider_Items.CAKE.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pancake_gochizo")))){
+				int rand = generator.nextInt(Gavv_Rider_Items.PANCAKE.size());
+				return Gavv_Rider_Items.PANCAKE.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/mochi_gochizo")))) {
+				int rand = generator.nextInt(Gavv_Rider_Items.MOCHI.size());
+				return Gavv_Rider_Items.MOCHI.get(rand);
 			}
 			return Items.APPLE;
 		}
