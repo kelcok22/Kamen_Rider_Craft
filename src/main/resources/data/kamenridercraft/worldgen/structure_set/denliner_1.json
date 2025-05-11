@@ -2,13 +2,45 @@
   "structures": [
 	{
 	  "structure": "kamenridercraft:denliner_1",
-	  "weight": 1
-	}
+	  "weight": 8
+	},
+	  {
+		  "structure": "kamenridercraft:denliner_ikazuchi",
+		  "weight": 4
+	  },
+	  {
+		  "structure": "kamenridercraft:denliner_isurugi",
+		  "weight": 4
+	  },
+	  {
+		  "structure": "kamenridercraft:denliner_rekkou",
+		  "weight": 4
+	  },
+	  {
+		  "structure": "kamenridercraft:negaliner_1",
+		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:new_denliner",
+		  "weight": 3
+	  },
+	  {
+		  "structure": "kamenridercraft:gaohliner",
+		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:zeroliner",
+		  "weight": 4
+	  },
+	  {
+		  "structure": "kamenridercraft:kingliner",
+		  "weight": 1
+	  }
   ],
   "placement": {
 	"type": "minecraft:random_spread",
 	"salt": 2007,
-	"spacing": 24,
-	"separation": 8
+	"spacing": 15,
+	"separation": 5
   }
 }
