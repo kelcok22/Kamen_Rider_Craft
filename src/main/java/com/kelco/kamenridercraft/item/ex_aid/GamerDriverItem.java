@@ -65,7 +65,7 @@ public class GamerDriverItem extends RiderDriverItem {
 		}
         return false;
     }
-
+	/*
 	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
 		if (entity instanceof Player player && ServerConfig.mightyBrotherSpawning && !paradxSummoned(player)
 		&& itemstack.getItem() == Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get()
@@ -75,6 +75,7 @@ public class GamerDriverItem extends RiderDriverItem {
 			summonParaDX(player);
 		super.OnTransform(itemstack, entity);
 	}
+	*/
 
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
