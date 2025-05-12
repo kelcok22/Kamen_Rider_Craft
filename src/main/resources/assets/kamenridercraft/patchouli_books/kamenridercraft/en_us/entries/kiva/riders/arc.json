@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Arc",
 	"icon": "kamenridercraft:keyfuestle",
 	"category": "kamenridercraft:kiva/riders",
-	"sortnum": 6,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:entity",

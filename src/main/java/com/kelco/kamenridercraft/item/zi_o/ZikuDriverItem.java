@@ -36,7 +36,7 @@ public class ZikuDriverItem extends RiderDriverItem {
 
     public static boolean decadeExAidSummoned(Player player) {
 		for (DecadeArmorExAidEntity entity : player.level().getEntitiesOfClass(DecadeArmorExAidEntity.class,
-						player.getBoundingBox().inflate(30), entity -> entity.getOwner() == player)) {
+						player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
 			if (entity != null) return true;
 		}
         return false;

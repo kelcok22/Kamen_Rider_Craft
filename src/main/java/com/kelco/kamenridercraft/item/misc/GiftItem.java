@@ -32,9 +32,7 @@ public class GiftItem extends BaseItem {
             	.withParameter(LootContextParams.ORIGIN, playerIn.position());
 
         	LootParams lootparams = lootparams$builder.create(LootContextParamSets.GIFT);
-        	loottable.getRandomItems(lootparams, 0L, stack -> {
-				playerIn.spawnAtLocation(stack);
-			});
+        	loottable.getRandomItems(lootparams, 0L, playerIn::spawnAtLocation);
 		}
 			
 		if (!playerIn.isCreative()) itemstack.shrink(1);

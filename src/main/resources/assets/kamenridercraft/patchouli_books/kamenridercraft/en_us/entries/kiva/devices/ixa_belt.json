@@ -6,11 +6,26 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "ixa_belt",
 			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used alongside the $(l:kiva/devices/armor)Kiva armor$(/l) to transform into $(l:kiva/riders/ixa#save)Kamen Rider Ixa$(/l)$(br2)Can store up to 6 stacks of Fuestles"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:kiva/ixa_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_ixa_belt",
+			"title": "Ixa Belt (Proto Ixa)",
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used alongside the $(l:kiva/devices/armor)Kiva armor$(/l) to transform into $(l:kiva/riders/proto_ixa)Kamen Rider Proto Ixa$(/l)$(br2)Can store up to 6 stacks of Fuestles"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ixa_belt",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

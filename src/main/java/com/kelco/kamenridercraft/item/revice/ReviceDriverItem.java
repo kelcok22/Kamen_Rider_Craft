@@ -40,11 +40,8 @@ public class ReviceDriverItem extends RiderDriverItem {
     }
 
     public static boolean viceSummoned(Player player) {
-		for (ViceEntity entity : player.level().getEntitiesOfClass(ViceEntity.class,
-						player.getBoundingBox().inflate(30), entity -> entity.getOwner() == player)) {
-			if (entity != null) return true;
-		}
-        return false;
+		return !player.level().getEntitiesOfClass(ViceEntity.class,
+				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player).isEmpty();
     }
 
 	public void OnTransform(ItemStack itemstack, LivingEntity entity) {

@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Anti Poison",
-			"text": "This effect prevents you from receiving the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l)"
+			"text": "This effect grants immunity to the Poison effect.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/items/wizard_rings#dolphi_ring)Dolphi Wizard Ring$(/l)$(li)Transform into $(l:revice/riders/jeanne)Kamen Rider Jeanne$(/l)$(li)Use the $(l:geats/items/raise_buckles#zombie_raise_buckle)Zombie Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -181,7 +181,7 @@
 			"type": "patchouli:text",
 			"anchor": "merry_christmas",
 			"title": "Merry Christmas",
-			"text": "This effect gives Nausea and Slowness II to nearby mobs and players.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/christmas_energy_item)Christmas Energy Item$(/l)"
+			"text": "This effect causes you to receive a $(l:misc/items/gift)Gift$(/l) every 4 minutes and 20 seconds.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/christmas_energy_item)Christmas Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -259,7 +259,7 @@
 			"type": "patchouli:text",
 			"anchor": "return",
 			"title": "Return",
-			"text": "This effect causes you to be teleported back to your spawn point.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#teleport_ring)Teleport Wizard Ring$(/l)"
+			"text": "This effect teleports you back to your spawn point.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#teleport_ring)Teleport Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -272,6 +272,12 @@
 			"anchor": "night",
 			"title": "Night",
 			"text": "This effect is the opposite of the Sleep effect, skipping the day instead.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#eclipse_ring)Eclipse Wizard Ring$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "time",
+			"title": "Time",
+			"text": "This effect accelerates the day/night cycle by 10 ticks for each level of this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#time_ring)Time Wizard Ring$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -302,6 +308,12 @@
 			"anchor": "thunder_shot",
 			"title": "Thunder Shot",
 			"text": "With this effect, you will cause any entities you hit with an arrow to be struck by lightning.$(br2)Examples for how to get this effect:$(li)Wait for a future update"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "form_timeout",
+			"title": "Form Timeout",
+			"text": "Forms that have this effect will revert to a base form after the duration runs out.$(br2)Examples for how to get this effect:$(li)Use Kamen Rider Faiz's $(l:faiz/riders/faiz#axel)Axel$(/l) form"
 		},
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Saga",
 	"icon": "kamenridercraft:sagafuestle",
 	"category": "kamenridercraft:kiva/riders",
-	"sortnum": 2,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:entity",

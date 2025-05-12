@@ -1,5 +1,10 @@
 {
   "values": [
+    "kamenridercraft:diend_blast_card",
+    "kamenridercraft:diend_invisible_card",
+    "kamenridercraft:diend_crossattack_card",
+    "kamenridercraft:diend_barrier_card",
+    "kamenridercraft:diend_illusion_card",
 	"kamenridercraft:kiva_card",
 	"kamenridercraft:den_o_sword_card",
 	"kamenridercraft:kabuto_rider_card",

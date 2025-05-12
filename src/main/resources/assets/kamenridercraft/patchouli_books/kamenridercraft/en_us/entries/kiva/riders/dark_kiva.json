@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Dark Kiva",
 	"icon": "kamenridercraft:darkwakeupfuestle",
 	"category": "kamenridercraft:kiva/riders",
-	"sortnum": 3,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:entity",

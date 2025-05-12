@@ -2,7 +2,7 @@
 	"name": "Desire Cards",
 	"icon": "kamenridercraft:boost_mkii_wish_card",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:text",

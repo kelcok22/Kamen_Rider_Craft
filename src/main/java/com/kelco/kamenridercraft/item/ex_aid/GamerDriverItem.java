@@ -60,7 +60,7 @@ public class GamerDriverItem extends RiderDriverItem {
 
     public static boolean paradxSummoned(Player player) {
 		for (ParaDXSummonEntity entity : player.level().getEntitiesOfClass(ParaDXSummonEntity.class,
-						player.getBoundingBox().inflate(30), entity -> entity.getOwner() == player)) {
+						player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player)) {
 			if (entity != null) return true;
 		}
         return false;

@@ -491,7 +491,7 @@ public class Decade_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().hasTimeout(400, 1200, (RiderFormChangeItem)DECADE_CARD.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("faiz").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLADE_JACK_CARD = ITEMS.register("blade_jack_card",
@@ -871,23 +871,23 @@ public class Decade_Rider_Items {
 			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 200,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_BLAST_CARD = ITEMS.register("diend_blast_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addEffects(new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_INVISIBLE_CARD = ITEMS.register("diend_invisible_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 200,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_CROSSATTACK_CARD = ITEMS.register("diend_crossattack_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addSpecial("crossattack").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_BARRIER_CARD = ITEMS.register("diend_barrier_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addSpecial("barrier").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_ILLUSION_CARD = ITEMS.register("diend_illusion_card",
-			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend","diend_green"})
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addSpecial("diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",

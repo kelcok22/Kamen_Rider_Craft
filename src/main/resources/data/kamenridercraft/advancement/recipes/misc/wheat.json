@@ -21,7 +21,8 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:misc/donut"
+	  "kamenridercraft:misc/donut",
+	  "kamenridercraft:misc/pancake"
 	]
   },
   "sends_telemetry_event": false

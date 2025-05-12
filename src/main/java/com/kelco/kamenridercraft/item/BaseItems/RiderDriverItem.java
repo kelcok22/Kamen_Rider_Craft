@@ -129,26 +129,20 @@ public class RiderDriverItem extends RiderArmorItem {
         }
 
     }
-
+    /*
     public void OnTransform(ItemStack itemstack, LivingEntity player) {
-
-        if (player.getItemBySlot(EquipmentSlot.FEET)==itemstack) {
-            for (int n = 0; n < Num_Base_Form_Item; n++) {
-                RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-                if (form.getTimeoutDuration() != 0) form.startTimeout(player);
-            }
-            OnTransformation(itemstack, player);
-        }
+        if (player.getItemBySlot(EquipmentSlot.FEET)==itemstack) OnTransformation(itemstack, player);
     }
-
+    */
     public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-        if(isTransformed(player)) {
-            if (!player.level().isClientSide) {
-                RiderFormChangeItem formitem = get_Form_Item(itemstack, 1);
-                formitem.OnTransformation(itemstack, player);
+        if(isTransformed(player) && !player.level().isClientSide()) {
+            for (int n = 0; n < Num_Base_Form_Item; n++) {
+                RiderFormChangeItem form = get_Form_Item(itemstack, n + 1);
+                form.OnTransformation(itemstack, player);
             }
         }
     }
+
 
 
     public void OnRiderKickHit(ItemStack itemstack, LivingEntity pLivingEntity, LivingEntity enemy) {

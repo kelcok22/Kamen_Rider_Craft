@@ -2,7 +2,7 @@
 	"name": "Kamen Rider New Kiva",
 	"icon": "kamenridercraft:wakeupfuestle",
 	"category": "kamenridercraft:kiva/riders",
-	"sortnum": 4,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

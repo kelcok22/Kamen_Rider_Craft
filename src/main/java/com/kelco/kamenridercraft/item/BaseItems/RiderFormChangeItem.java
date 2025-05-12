@@ -440,11 +440,6 @@ public class RiderFormChangeItem extends BaseItem {
         return true;
     }
 
-    public void startTimeout(LivingEntity entity) {
-        entity.addEffect(new MobEffectInstance(Effect_core.FORM_TIMEOUT, this.timeoutDuration, 0, true, false));
-        if (entity instanceof Player player && !player.isCreative()) player.getCooldowns().addCooldown(this, this.lockDuration);
-    }
-
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
@@ -489,11 +484,15 @@ public class RiderFormChangeItem extends BaseItem {
 
     }
 
-    public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-        if (player.level() instanceof ServerLevel sl) {
+    public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
+        if (timeoutDuration != 0) {
+            entity.addEffect(new MobEffectInstance(Effect_core.FORM_TIMEOUT, this.timeoutDuration, 0, true, false));
+            if (entity instanceof Player player && !player.isCreative()) player.getCooldowns().addCooldown(this, this.lockDuration);
+        }
+        if (entity.level() instanceof ServerLevel sl) {
             sl.sendParticles(ParticleTypes.GUST,
-                    player.getX(), player.getY() + 1.0,
-                    player.getZ(), 1, 0, 0, 0, 1);
+                    entity.getX(), entity.getY() + 1.0,
+                    entity.getZ(), 1, 0, 0, 0, 1);
         }
     }
 

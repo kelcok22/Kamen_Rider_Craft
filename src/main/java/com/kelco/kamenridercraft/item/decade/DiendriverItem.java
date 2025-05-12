@@ -39,7 +39,9 @@ import io.netty.buffer.Unpooled;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -94,28 +96,43 @@ public class DiendriverItem extends BaseBlasterItem {
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
 		if (entityLiving instanceof Player player && stack.has(DataComponents.CONTAINER) && stack.get(DataComponents.CONTAINER).nonEmptyStream().count() != 0
 		&& player.getItemBySlot(EquipmentSlot.FEET).getItem() == Decade_Rider_Items.DIEND_BELT.get() && ((RiderDriverItem)player.getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(player)) {
-			List<String> cardNames = new ArrayList<String>();
-			Iterator inv = stack.get(DataComponents.CONTAINER).nonEmptyItems().iterator();
-			if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)stack.get(DataComponents.CONTAINER).nonEmptyStream().count());
+			ItemContainerContents contents = stack.get(DataComponents.CONTAINER);
 
-			while (inv.hasNext()) {
-				ItemStack card = (ItemStack)inv.next();
-				cardNames.add(Component.translatable(card.getItem().toString() + ".name").getString());
-				if (card.getItem() instanceof RiderCardItem summonCard) summonCard.summon(card, level, player);
-				else if (card.getItem() instanceof RiderSummonCardItem summonCard) summonCard.summon(card, level, player);
+			if (contents.nonEmptyStream().anyMatch(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem))) {
+				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200 * (int)contents.nonEmptyStream().filter(item -> (item.getItem() instanceof RiderCardItem || item.getItem() instanceof RiderSummonCardItem)).count());
+				List<String> cardNames = new ArrayList<String>();
+
+				contents.nonEmptyItems().forEach(card -> {
+					if (card.getItem() instanceof RiderCardItem summonCard) {
+						cardNames.add(Component.translatable(card.getItem().toString() + ".name").getString());
+						summonCard.summon(card, level, player);
+					} else if (card.getItem() instanceof RiderSummonCardItem summonCard) {
+						cardNames.add(Component.translatable(card.getItem().toString() + ".name").getString());
+						summonCard.summon(card, level, player);
+					}
+				});
+
+				switch (cardNames.size()) {
+					case 1: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride", cardNames.get(0)), true);
+						break;
+					case 2: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_2", cardNames.get(0), cardNames.get(1)), true);
+						break;
+					default: 
+						player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
+				}
+			} else {
+				if (!player.isCreative()) player.getCooldowns().addCooldown(this.asItem(), 200);
+
+				ItemStack card = contents.nonEmptyItems().iterator().next();
+				if (card.getItem() instanceof AttackRideCardItem attack) {
+					player.displayClientMessage(Component.translatable("attack.kamenridercraft.attackride_diend", Component.translatable(card.getItem().toString() + ".name").getString()), true);
+					if (!level.isClientSide()) attack.attackride(card, level, player);
+					card.shrink(1);
+				}
 			}
 
-			switch (cardNames.size()) {
-				case 1: 
-					player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride", cardNames.get(0)), true);
-					break;
-				case 2: 
-					player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_2", cardNames.get(0), cardNames.get(1)), true);
-					break;
-				default: 
-					player.displayClientMessage(Component.translatable("attack.kamenridercraft.kamenride_3", cardNames.get(0), cardNames.get(1), cardNames.get(2)), true);
-					break;
-			}
 			stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(player.getUsedItemHand()));
 			level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
 			player.awardStat(Stats.ITEM_USED.get(this));
