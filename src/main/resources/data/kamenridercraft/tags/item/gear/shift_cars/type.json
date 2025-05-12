@@ -12,6 +12,9 @@
 	"kamenridercraft:nextshift",
 	"kamenridercraft:specialshift",
 	"kamenridercraft:fruitsshift",
-	"kamenridercraft:speedshift_gold"
+	"kamenridercraft:speedwildtechnicshift",
+	"kamenridercraft:speedshift_gold",
+	"kamenridercraft:wildshift_gold",
+	"kamenridercraft:shift_ride_crosser"
   ]
 }
