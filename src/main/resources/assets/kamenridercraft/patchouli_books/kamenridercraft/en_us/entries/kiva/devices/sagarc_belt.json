@@ -2,7 +2,7 @@
 	"name": "Sagarc Belt",
 	"icon": "kamenridercraft:sagarc_belt",
 	"category": "kamenridercraft:kiva/devices",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

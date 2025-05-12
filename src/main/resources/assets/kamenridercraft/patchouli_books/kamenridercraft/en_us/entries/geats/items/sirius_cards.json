@@ -2,7 +2,7 @@
 	"name": "Sirius Cards",
 	"icon": "kamenridercraft:sirius_card",
 	"category": "kamenridercraft:geats/items",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

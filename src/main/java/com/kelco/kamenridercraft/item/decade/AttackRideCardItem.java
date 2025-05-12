@@ -192,7 +192,7 @@ public class AttackRideCardItem extends BaseItem {
 					if (ModList.get().isLoaded("supersentaicraft")) {
 						Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou"));
 						ItemStack stack = new ItemStack(item, 1);
-						stack.set(DataComponents.ITEM_NAME, Component.literal(Component.translatable("owner.kamenridercraft.decade").getString() + item.getName(stack).getString()));
+						stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", item.getName(stack).getString()));
 						
 						ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 						entity.setPickUpDelay(0);
@@ -200,11 +200,6 @@ public class AttackRideCardItem extends BaseItem {
 					}
 					break;
 			}
-		}
-
-		if (!player.isCreative()) {
-			itemstack.shrink(1);
-			player.getCooldowns().addCooldown(this, 500);
 		}
 		player.awardStat(Stats.ITEM_USED.get(this));
 	}
@@ -214,9 +209,15 @@ public class AttackRideCardItem extends BaseItem {
 		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
 		
 		if (!p_41128_.isClientSide() && p_41129_.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(p_41129_)){
-			if (belt == Decade_Rider_Items.DECADRIVER.get() || belt == Decade_Rider_Items.NEO_DECADRIVER.get() || belt == Decade_Rider_Items.DIEND_BELT.get() || belt == Decade_Rider_Items.DARK_DECADRIVER.get()
+			if ((belt == Decade_Rider_Items.DECADRIVER.get() || belt == Decade_Rider_Items.NEO_DECADRIVER.get() || belt == Decade_Rider_Items.DARK_DECADRIVER.get())
 				&& ArrayUtils.contains(FORMS, belt.GET_TEXT(p_41129_.getItemBySlot(EquipmentSlot.FEET), null, p_41129_, belt.Rider))) {
 				attackride(itemstack, p_41128_, p_41129_);
+
+				if (!p_41129_.isCreative()) {
+					itemstack.shrink(1);
+					p_41129_.getCooldowns().addCooldown(this, 500);
+				}
+				p_41129_.displayClientMessage(Component.translatable("attack.kamenridercraft.attackride_decade", Component.translatable(this.toString() + ".name").getString()), true);
 			}
 		}
 		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());

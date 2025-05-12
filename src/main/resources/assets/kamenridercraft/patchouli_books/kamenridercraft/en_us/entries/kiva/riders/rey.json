@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Rey",
 	"icon": "kamenridercraft:keyfuestle",
 	"category": "kamenridercraft:kiva/riders",
-	"sortnum": 5,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

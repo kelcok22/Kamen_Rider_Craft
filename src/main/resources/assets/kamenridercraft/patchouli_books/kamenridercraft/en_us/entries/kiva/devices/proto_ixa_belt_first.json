@@ -1,0 +1,19 @@
+{
+	"name": "Ixa Buckle",
+	"icon": "kamenridercraft:proto_ixa_belt_first",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)King of Vampire (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:kiva/devices/armor)Kiva armor$(/l) to transform into $(l:kiva/riders/proto_ixa_the_first)Kamen Rider Proto Ixa (The First)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ixa_belt_first",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

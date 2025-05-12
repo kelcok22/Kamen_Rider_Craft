@@ -13,11 +13,7 @@ public class TimeEffect extends InstantenousMobEffect {
 
 	@Override
 	public boolean applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-		if (!pLivingEntity.level().isClientSide()) {
-		     if (pLivingEntity.level() instanceof ServerLevel ) {
-		         ((ServerLevel)pLivingEntity.level()).setDayTime(((ServerLevel)pLivingEntity.level()).dayTime()+10);
-		      }
-		}
+		if (pLivingEntity.level() instanceof ServerLevel level) level.setDayTime(level.dayTime()+10);
 		return true;
 	}
 }

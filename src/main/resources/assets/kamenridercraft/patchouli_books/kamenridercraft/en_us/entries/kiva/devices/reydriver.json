@@ -2,7 +2,7 @@
 	"name": "Rey Kivat Belt",
 	"icon": "kamenridercraft:reydriver",
 	"category": "kamenridercraft:kiva/devices",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

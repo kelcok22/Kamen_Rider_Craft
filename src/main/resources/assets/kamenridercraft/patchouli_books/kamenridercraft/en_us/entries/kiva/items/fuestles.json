@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "knucklefuestle",
 			"title": "Knuckle Fuestle",
-			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Ixa's $(l:kiva/devices/ixa_belt)Ixa Belt$(/l)$(br2)Used to access Ixa's $(l:kiva/riders/ixa#save)Save Mode$(/l) and $(l:kiva/riders/ixa#burst)Burst Mode$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kiva (2008, TV show)$(br2)Used to craft Ixa's $(l:kiva/devices/ixa_belt#ixa_belt)Ixa Belt$(/l)$(br2)Used to access Ixa's $(l:kiva/riders/ixa#save)Save Mode$(/l) and $(l:kiva/riders/ixa#burst)Burst Mode$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

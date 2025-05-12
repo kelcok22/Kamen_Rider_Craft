@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Decade",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:decade/devices/decadriver)Decadriver$(/l)$(br2)Status Effects:$(li)Speed VI$(li)Resistance III$(li)Night Vision$(li)Haste V$(li)Strength III"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Transforms with the $(l:decade/devices/decadriver)Decadriver$(/l)$(br2)Status Effects:$(li)Form Timeout (15 seconds)$(li)Speed VI$(li)Resistance III$(li)Night Vision$(li)Haste V$(li)Strength III"
 		},
 		{
 			"type": "patchouli:entity",

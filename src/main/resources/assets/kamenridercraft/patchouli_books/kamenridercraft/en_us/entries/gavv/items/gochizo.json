@@ -121,6 +121,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "chocold_gochizo",
+			"title": "Chocold Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#chocold)Chocold$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chocold_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "gurucan_gochizo",
 			"title": "Gurucan Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan$(/l) form"
@@ -157,6 +170,19 @@
 			"item": "kamenridercraft:bakucan_gochizo",
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "partea_gochizo",
+			"title": "Partea Scone Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Funny Sweats Tea Party (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#partea_scone)Partea Scone$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:partea_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		},
 		{
 			"type": "patchouli:text",
@@ -326,6 +352,123 @@
 			"item": "kamenridercraft:bubbleramune_gochizo_peach",
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wafusaku_gochizo",
+			"title": "Wafusaku Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 04 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wafusaku_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mofupachi_gochizo",
+			"title": "Mofupachi Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 04 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mofupachi_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hagigoro_gochizo",
+			"title": "Hagigoro Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 04 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hagigoro_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hotcaken_gochizo",
+			"title": "Hotcaken Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 05 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hotcaken_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crepuna_gochizo",
+			"title": "Crepuna Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 05 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crepuna_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amondcokikkie_gochizo",
+			"title": "Amondcokikie Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 05 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amondcokikkie_gochizo",
+			"title": " ",
+			"text": "Obtained by eating cookies with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doranosuke_gochizo",
+			"title": "Doranosuke Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 06 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doranosuke_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mitaramotti_gochizo",
+			"title": "Mitaramotti Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 06 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mitaramotti_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mogimaru_gochizo",
+			"title": "Mogimaru Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Set 06 (2025, toyline)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mogimaru_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		},
 		{
 			"type": "patchouli:text",

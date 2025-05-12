@@ -2,7 +2,7 @@
 	"name": "Music Discs",
 	"icon": "kamenridercraft:lets_go_rider_kick_music_disc",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 22,
+	"sortnum": 23,
 	"pages": [
 		{
 			"type": "patchouli:text",

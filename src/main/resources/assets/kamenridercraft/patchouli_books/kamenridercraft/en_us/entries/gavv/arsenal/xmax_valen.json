@@ -1,0 +1,16 @@
+{
+	"name": "X-Max",
+	"icon": "kamenridercraft:xmax_valen",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Valen's $(l:gavv/riders/valen#bushel)Bushel Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/xmax_valen"
+		}
+	]
+}
