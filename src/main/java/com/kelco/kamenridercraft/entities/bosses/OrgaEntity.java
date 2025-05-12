@@ -1,8 +1,15 @@
 package com.kelco.kamenridercraft.entities.bosses;
 
+import com.kelco.kamenridercraft.ServerConfig;
+import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.Faiz_Rider_Items;
+
+import net.minecraft.core.particles.BlockParticleOption;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -22,6 +29,21 @@ public class OrgaEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Faiz_Rider_Items.FAIZCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Faiz_Rider_Items.FAIZLEGGINGS.get()));
     }
+
+
+	public void remove(RemovalReason p_149847_) {
+
+		if ( this.isDeadOrDying()) {
+			if (this.level() instanceof ServerLevel serverlevel) {
+				BlockParticleOption sand = new BlockParticleOption(ParticleTypes.BLOCK, Rider_Blocks.IMAGIN_SAND_BLOCK.get().defaultBlockState());
+				serverlevel.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);
+				serverlevel.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY()+1, this.getZ(), 30, 0, 0, 0, 0.05);
+				serverlevel.sendParticles(sand, this.getX(), this.getY(), this.getZ(), 30, 0, 0, 0, 0.05);
+				serverlevel.sendParticles(sand, this.getX(), this.getY()+1, this.getZ(), 30, 0, 0, 0, 0.05);
+			}
+		}
+		super.remove(p_149847_);
+	}
 
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
