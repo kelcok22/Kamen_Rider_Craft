@@ -43,17 +43,17 @@ public class ReviceDriverItem extends RiderDriverItem {
 		return !player.level().getEntitiesOfClass(ViceEntity.class,
 				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player).isEmpty();
     }
-	/*
-	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
+	
+	public void OnTransformation(ItemStack itemstack, LivingEntity entity) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
 
 		if (entity instanceof Player player && ServerConfig.viceSpawning && !viceSummoned(player)
 		&& itemstack.getItem() == Revice_Rider_Items.REVICE_DRIVER.get()
 		&& form.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/form_items/vice"))))
 			summonVice(player);
-		super.OnTransform(itemstack, entity);
+		super.OnTransformation(itemstack, entity);
 	}
-	*/
+	
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
