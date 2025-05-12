@@ -43,7 +43,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 		return !player.level().getEntitiesOfClass(ViceEntity.class,
 				player.getBoundingBox().inflate(99), entity -> entity.getOwner() == player).isEmpty();
     }
-
+	/*
 	public void OnTransform(ItemStack itemstack, LivingEntity entity) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
 
@@ -53,7 +53,7 @@ public class ReviceDriverItem extends RiderDriverItem {
 			summonVice(player);
 		super.OnTransform(itemstack, entity);
 	}
-
+	*/
 	public void OnformChange(ItemStack itemstack, LivingEntity entity, CompoundTag tag) {
 		ItemStack form = new ItemStack(RiderDriverItem.get_Form_Item(itemstack, 1));
 		if (entity instanceof Player player && !player.level().isClientSide() && isTransformed(player)
