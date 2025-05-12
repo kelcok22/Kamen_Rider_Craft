@@ -910,7 +910,17 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
-	
+
+	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ziingazer","laser_raise_driver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					.has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> SIRIUS_CARD_OMEGA = ITEMS.register("sirius_card_omega",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_omega","regad","zillion_driver_omega_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -1112,7 +1122,7 @@ public class Geats_Rider_Items {
            		  new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LASER_RISE_DRIVER_GAZER_ZERO = ITEMS.register("laser_raise_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",ZIIN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",PROVIDENCE_CARD_ZIINGAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
 					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
 
