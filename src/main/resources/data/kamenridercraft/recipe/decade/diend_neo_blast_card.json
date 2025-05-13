@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "attack_ride_card",
+  "ingredients": [
+	{
+	  "item": "kamenridercraft:diend_blast_card"
+	}, 
+	{
+	  "item": "kamenridercraft:diend_ridewatch"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:diend_neo_blast_card"
+  }
+}

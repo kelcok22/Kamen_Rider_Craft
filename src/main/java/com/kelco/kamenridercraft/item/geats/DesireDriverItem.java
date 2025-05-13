@@ -328,7 +328,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 		if (entity instanceof LivingEntity player) {
 
-			if (stack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+			if (stack.has(DataComponents.CUSTOM_DATA)) {
 				CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 				if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
 			}

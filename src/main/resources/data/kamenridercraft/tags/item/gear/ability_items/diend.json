@@ -5,6 +5,11 @@
     "kamenridercraft:diend_crossattack_card",
     "kamenridercraft:diend_barrier_card",
     "kamenridercraft:diend_illusion_card",
+    "kamenridercraft:diend_neo_blast_card",
+    "kamenridercraft:diend_neo_invisible_card",
+    "kamenridercraft:diend_neo_crossattack_card",
+    "kamenridercraft:diend_neo_barrier_card",
+    "kamenridercraft:diend_neo_illusion_card",
     "#kamenridercraft:gear/rider_cards/neo_diendriver"
   ]
 }

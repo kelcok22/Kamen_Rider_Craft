@@ -890,6 +890,26 @@ public class Decade_Rider_Items {
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
 			.addSpecial("diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> DIEND_NEO_BLAST_CARD = ITEMS.register("diend_neo_blast_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
+			.addEffects(new MobEffectInstance(Effect_core.SHOT_BOOST, 300,2,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DIEND_NEO_INVISIBLE_CARD = ITEMS.register("diend_neo_invisible_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
+			.addEffects(new MobEffectInstance(MobEffects.INVISIBILITY, 200,0,true,false)).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DIEND_NEO_CROSSATTACK_CARD = ITEMS.register("diend_neo_crossattack_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
+			.addSpecial("crossattack").AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DIEND_NEO_BARRIER_CARD = ITEMS.register("diend_neo_barrier_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
+			.addSpecial("barrier").AddToList(RiderTabs.DECADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> DIEND_NEO_ILLUSION_CARD = ITEMS.register("diend_neo_illusion_card",
+			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"diend"})
+			.addSpecial("diend_illusion").AddToList(RiderTabs.DECADE_TAB_ITEM));
+
     public static final DeferredItem<Item> REKKA_DAIZANTOU_CARD = ITEMS.register("rekka_daizantou_card",
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"decade","decade_complete","decade_violent_emotion","decade_cyan","neo_decade_complete_21"})
 			.addSpecial("rekka_daizantou").AddToList(RiderTabs.DECADE_TAB_ITEM));

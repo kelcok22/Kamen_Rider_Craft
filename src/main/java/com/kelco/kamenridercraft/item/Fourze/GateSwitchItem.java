@@ -96,7 +96,7 @@ public class GateSwitchItem extends BaseItem {
 	}
 
 	public static boolean get_has_moon(ItemStack itemstack) {
-		if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+		if (itemstack.has(DataComponents.CUSTOM_DATA)) {
 			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 			return tag.getBoolean("has_moon");
 		}
@@ -104,7 +104,7 @@ public class GateSwitchItem extends BaseItem {
 	}
 
 	public static double get_XYZ(ItemStack itemstack, String slot,double respawn) {
-		if (itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+		if (itemstack.has(DataComponents.CUSTOM_DATA)) {
 			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 			return tag.getDouble(slot);
 		}
@@ -113,7 +113,7 @@ public class GateSwitchItem extends BaseItem {
 
 	public static void Save_XYZ(ItemStack itemstack,double X,double Y,double Z,int num)
 	{
-		if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+		if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
 		}
 			CompoundTag tag = new CompoundTag();
