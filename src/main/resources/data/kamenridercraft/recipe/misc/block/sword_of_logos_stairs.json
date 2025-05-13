@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_stairs",
+  "key": {
+    "#": {
+      "item": "minecraft:red_wool"
+    },
+    "q": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#q ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kamenridercraft:sword_of_logos_stairs"
+  }
+}

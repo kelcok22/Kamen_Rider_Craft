@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item":"minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "kamenridercraft:wallplate",
+    "count": 1
+  }
+}

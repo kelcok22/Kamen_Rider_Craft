@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wallplate",
+  "key": {
+    "#": {
+      "tag": "kamenridercraft:wallplate"
+    },
+    "¤": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#¤#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "kamenridercraft:light_green_wallplate"
+  }
+}
