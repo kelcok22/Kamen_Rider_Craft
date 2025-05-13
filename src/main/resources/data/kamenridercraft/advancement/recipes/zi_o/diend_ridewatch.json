@@ -21,6 +21,11 @@
   ],
   "rewards": {
 	"recipes": [
+	  "kamenridercraft:decade/diend_neo_blast_card",
+	  "kamenridercraft:decade/diend_neo_invisible_card",
+	  "kamenridercraft:decade/diend_neo_crossattack_card",
+	  "kamenridercraft:decade/diend_neo_barrier_card",
+	  "kamenridercraft:decade/diend_neo_illusion_card",
 	  "kamenridercraft:zi_o/neo_diendriver"
 	]
   },

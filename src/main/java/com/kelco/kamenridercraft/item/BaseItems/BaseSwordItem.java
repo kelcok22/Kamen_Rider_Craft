@@ -47,7 +47,7 @@ public class BaseSwordItem extends SwordItem {
 
 	public static int Get_Mode (ItemStack itemstack)
 	{
-		if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) return  0;
+		if (!itemstack.has(DataComponents.CUSTOM_DATA)) return  0;
 		else{
 			CompoundTag tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();
 			return tag.getInt("item_mode");
@@ -74,7 +74,7 @@ public class BaseSwordItem extends SwordItem {
 
 	public static void Set_Mode(ItemStack itemstack)
 	{
-		if (!itemstack.getComponents().has(DataComponents.CUSTOM_DATA)) {
+		if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
 			itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
 		}
 		CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).getUnsafe();

@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"anchor": "diend_blast_card",
 			"title": "AttackRide Diend Blast",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) to gain Shot Boost III for a short amount of time"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/diendriver)Diendriver$(/l) to gain Shot Boost III for a short amount of time"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -61,7 +61,7 @@
 			"type": "patchouli:text",
 			"anchor": "diend_invisible_card",
 			"title": "AttackRide Diend Invisible",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) to turn invisible for a short amount of time"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/diendriver)Diendriver$(/l) to turn invisible for a short amount of time"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -72,7 +72,7 @@
 			"type": "patchouli:text",
 			"anchor": "diend_crossattack_card",
 			"title": "AttackRide Diend Crossattack",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) to give allied mobs and players Strength IV or Shot Boost IV for a short amount of time"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/diendriver)Diendriver$(/l) to give allied mobs and players Strength IV or Shot Boost IV for a short amount of time"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -83,7 +83,7 @@
 			"type": "patchouli:text",
 			"anchor": "diend_barrier_card",
 			"title": "AttackRide Diend Barrier",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) to create a barrier of light blue stained glass"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/diendriver)Diendriver$(/l) to create a barrier of light blue stained glass"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -94,12 +94,67 @@
 			"type": "patchouli:text",
 			"anchor": "diend_illusion_card",
 			"title": "AttackRide Diend Illusion",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)(Neo)$(/l) $(l:decade/arsenal/diendriver)Diendriver$(/l) to spawn two copies of himself"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/diendriver)Diendriver$(/l) to spawn two copies of himself"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:decade/diend_illusion_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_neo_blast_card",
+			"title": "AttackRide Diend Blast",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) to gain Shot Boost III for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_neo_blast_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_neo_invisible_card",
+			"title": "AttackRide Diend Invisible",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) to turn invisible for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_neo_invisible_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_neo_crossattack_card",
+			"title": "AttackRide Diend Crossattack",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) to give allied mobs and players Strength IV or Shot Boost IV for a short amount of time"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_neo_crossattack_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_neo_barrier_card",
+			"title": "AttackRide Diend Barrier",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) to create a barrier of light blue stained glass"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_neo_barrier_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diend_neo_illusion_card",
+			"title": "AttackRide Diend Illusion",
+			"text": "Appears in:$(li)DX NeoDiendriver (2019, toyline)$(br2)Used by $(l:decade/riders/diend#diend)Kamen Rider Diend$(/l) in the $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l) to spawn two copies of himself"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:decade/diend_neo_illusion_card"
 		},
 		{
 			"type": "patchouli:text",
