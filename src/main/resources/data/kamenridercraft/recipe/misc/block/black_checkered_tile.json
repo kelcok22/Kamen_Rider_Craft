@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "tile",
+  "key": {
+    "#": {
+      "item": "minecraft:black_concrete"
+    },
+    "W": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "pattern": [
+    "W#",
+    "#W"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kamenridercraft:checkered_tile"
+  }
+}

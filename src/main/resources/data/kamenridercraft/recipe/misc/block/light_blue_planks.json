@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "¤": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#¤#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "kamenridercraft:planks_light_blue"
+  }
+}
