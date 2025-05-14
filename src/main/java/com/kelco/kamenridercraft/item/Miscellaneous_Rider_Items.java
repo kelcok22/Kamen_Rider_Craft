@@ -118,7 +118,8 @@ public class Miscellaneous_Rider_Items {
 	    public static final DeferredItem<Item> TYPHOON_CORE_ARTIST = ITEMS.register("typhoon_core_artist",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","ichigo","typhoon_belt_artist",
 						new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-						,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)));
+						,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+						new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)));
 		
 	    public static final DeferredItem<Item> DOUBLE_TYPHOON_CORE_ARTIST = ITEMS.register("double_typhoon_core_artist",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","v3","double_typhoon_belt_artist",
