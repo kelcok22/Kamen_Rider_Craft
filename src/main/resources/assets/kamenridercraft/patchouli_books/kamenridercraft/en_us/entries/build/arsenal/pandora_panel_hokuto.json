@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pandora_panel_hokuto",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/grease)Kamen Rider Grease$(/l)"
 		}
 	]
 }

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a $(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l)$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/sclash_jelly)Empty Sclashjelly$(/l) (66.7%)$(li)1 $(l:build/items/fullbottles#lost_castle_full_bottle)Lost Castle Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/fullbottles#lost_kuwagata_full_bottle)Lost Kuwagata Fullbottle$(/l) (11.1%)$(li)1 $(l:build/items/fullbottles#lost_fukurou_full_bottle)Lost Fukurou Fullbottle$(/l) (11.1%)"
+			"text": "Has a 5% chance to spawn from a $(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l)$(br2)Drops$(li)3-5 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/sclash_jelly)Empty Sclashjelly$(/l) (54.5%)$(li)1 $(l:build/arsenal/pandora_panel_hokuto)Pandora Panel$(/l) (18.2%)$(li)1 $(l:build/items/fullbottles#lost_castle_full_bottle)Lost Castle Fullbottle$(/l) (9.1%)$(li)1 $(l:build/items/fullbottles#lost_kuwagata_full_bottle)Lost Kuwagata Fullbottle$(/l) (9.1%)$(li)1 $(l:build/items/fullbottles#lost_fukurou_full_bottle)Lost Fukurou Fullbottle$(/l) (9.1%)"
 		}
 	]
 }

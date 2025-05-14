@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a $(l:build/mobs/touto_guardian)Touto Guardian$(/l)$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/fullbottles#lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (66.7%)$(li)1 $(l:build/items/golden_bangle)Golden Bangle$(/l) (25%)$(li)1 $(l:build/items/hazard_trigger)Hazard Trigger$(/l) (8.3%)"
+			"text": "Has a 5% chance to spawn from a $(l:build/mobs/touto_guardian)Touto Guardian$(/l)$(br2)Drops$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l)$(li)1 $(l:build/items/fullbottles#lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l)$(li)1 $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l) (57.1%)$(li)1 $(l:build/arsenal/pandora_panel_touto)Pandora Panel$(/l) (14.3%)$(li)1 $(l:build/items/golden_bangle)Golden Bangle$(/l) (21.4%)$(li)1 $(l:build/items/hazard_trigger)Hazard Trigger$(/l) (7.1%)"
 		}
 	]
 }
