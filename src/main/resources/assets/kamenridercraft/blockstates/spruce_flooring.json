@@ -1,5 +1,8 @@
 {
-    "variants":{
-    "": {"model":"kamenridercraft:block/spruce_flooring"}
+  "variants":{
+    "facing=north": { "model": "kamenridercraft:block/spruce_flooring" },
+    "facing=south": { "model": "kamenridercraft:block/spruce_flooring", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/spruce_flooring", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/spruce_flooring", "y": 90 }
   }
- }
+}
