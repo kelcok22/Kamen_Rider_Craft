@@ -24,6 +24,11 @@
 				  "type": "minecraft:item",
 				  "weight": 6,
 				  "name": "kamenridercraft:sclash_jelly"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:pandora_panel_hokuto"
 			  }
 		  ]
 	  },
