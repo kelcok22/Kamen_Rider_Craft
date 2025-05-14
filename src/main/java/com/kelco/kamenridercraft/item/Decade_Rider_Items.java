@@ -972,6 +972,9 @@ public class Decade_Rider_Items {
 			() -> new AttackRideCardItem(new Item.Properties(), new String[]{"amazon","decade_complete","decade_violent_emotion","neo_decade_complete_21"})
 			.addItem(Ichigo_Rider_Items.GAGA_ARMLET.get()).AddToList(RiderTabs.DECADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> GACKT_CARD = ITEMS.register("gackt_card",
+			() -> new BaseItem(new Item.Properties()).KeepItem().has_basic_model().AddToList(BlankCardItem.RIDER_CARD).AddToList(RiderTabs.DECADE_TAB_ITEM));
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

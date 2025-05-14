@@ -1,13 +1,18 @@
 package com.kelco.kamenridercraft.effect.cores;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
+import com.kelco.kamenridercraft.entities.footSoldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Kuuga_Rider_Items;
+import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffect;
@@ -100,6 +105,13 @@ public class RiderKickEffect extends MobEffect {
 											|| (sentity instanceof Mob));
 							for (LivingEntity enemy : nearbyEnemies) {
 								belt.OnRiderKickHit(stack,pLivingEntity,enemy);
+								if (enemy.isDeadOrDying()&enemy instanceof ShockerCombatmanEntity){
+									if (pLivingEntity instanceof Player player) {
+										if (belt.Rider=="ichigo") {
+											player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), pAmplifier + 1), false);
+										}
+									}
+								}
 								pLivingEntity.addEffect(new MobEffectInstance(Effect_core.RIDER_KICK, 100, 4,false,true));
 							}
 						}
