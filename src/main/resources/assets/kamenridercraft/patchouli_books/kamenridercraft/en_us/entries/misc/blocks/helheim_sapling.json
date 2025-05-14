@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:helheim_sapling",
 			"title": " ",
-			"text": "Found on Helheim trees"
+			"text": "Drops from $(l:misc/blocks/helheim_leaves)Helheim Leaves$(/l)"
 		}
 	]
 }
