@@ -12,6 +12,11 @@
 			  },
 			  {
 				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:pandora_panel_seito"
+			  },
+			  {
+				  "type": "minecraft:item",
 				  "weight": 6,
 				  "name": "kamenridercraft:ninja_full_bottle"
 			  },

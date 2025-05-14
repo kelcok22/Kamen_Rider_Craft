@@ -18,6 +18,12 @@
 				  "weight": 1,
 				  "name": "kamenridercraft:hazard_trigger"
 			  },
+			  ,
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:pandora_panel_touto"
+			  },
 			  {
 				  "type": "minecraft:item",
 				  "weight": 3,

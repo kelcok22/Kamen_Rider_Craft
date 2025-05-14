@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.block.machineBlocks;
 import com.kelco.kamenridercraft.item.Build_Rider_Items;
 import com.kelco.kamenridercraft.item.Reboot_Rider_Items;
 import com.kelco.kamenridercraft.item.W_Rider_Items;
+import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -60,6 +61,10 @@ public class PandoraBox extends MachineBlock {
         if (!level.isClientSide()) {
             if (player.getItemInHand(hand).getItem() == Build_Rider_Items.FULL_BOTTLE.get()){
                 process(player, level, pos, hand, Build_Rider_Items.PANDORA_BOTTLE.get());
+                return ItemInteractionResult.SUCCESS;
+            }
+            else if (player.getItemInHand(hand).getItem() == Build_Rider_Items.HAZARD_TRIGGER.get()){
+                process(player, level, pos, hand, Build_Rider_Items.LAST_PANDORA_PANEL_WHITE.get());
                 return ItemInteractionResult.SUCCESS;
             }
         }
