@@ -172,7 +172,7 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 		super.onRemove(state, level, pos, newState, movedByPiston);
 	}
 
-
+/**
 	@Override
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
 											  Player player, InteractionHand hand, BlockHitResult hitResult) {
@@ -197,7 +197,7 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 									return new PandoraPanelGuiMenu(id, inventory, packetBuffer,itemstack);
 								}
 							}, buf -> {
-								buf.writeBlockPos(player.blockPosition());
+								buf.writeBlockPos(pos);
 								buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 							});
 					}
@@ -207,4 +207,5 @@ public class PandoraPanelBlock extends BaseEntityBlock {
 
 		return ItemInteractionResult.SUCCESS;
 	}
+	**/
 }
