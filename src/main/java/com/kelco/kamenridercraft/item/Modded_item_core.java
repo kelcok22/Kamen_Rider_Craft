@@ -231,7 +231,8 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false)
+                    new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)
             ).hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     //Bakuen no senshi
