@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:last_pandora_panel_white",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using a $(l:build/items/hazard_trigger)Hazard Trigger$(/l) on the $(l:misc/blocks/machine_blocks#pandora_box)Pandora Box$(/l)"
 		}
 	]
 }

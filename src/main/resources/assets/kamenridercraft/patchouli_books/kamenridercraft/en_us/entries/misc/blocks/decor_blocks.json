@@ -651,7 +651,8 @@
 			"anchor": "wonderwood_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:wonderwood_door",
-			"text": "Found inside the $(l:misc/city/city#fantastic_bookstore_kamiyama)Fantastic Bookstore Kamiyama$(/l)"
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the $(l:misc/city/city#fantastic_bookstore_kamiyama)Fantastic Bookstore Kamiyama$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -679,21 +680,24 @@
 			"anchor": "drive_pit_logo",
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_pit_logo",
-			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "drive_pit_ladder",
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_pit_ladder",
-			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "wallplate_grate_slab",
 			"link_recipe": true,
 			"item": "kamenridercraft:wallplate_grate_slab",
-			"text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -801,7 +805,8 @@
 			"anchor": "glass_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:glass_door",
-			"text": "Found inside various $(l:misc/city/city)city buildings$(/l)"
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside various $(l:misc/city/city)city buildings$(/l)"
 		}
 	]
 }
