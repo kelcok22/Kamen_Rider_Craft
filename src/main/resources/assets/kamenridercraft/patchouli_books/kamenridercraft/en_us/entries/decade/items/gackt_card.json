@@ -1,0 +1,19 @@
+{
+	"name": "KamenRide Gackt",
+	"icon": "kamenridercraft:gackt_card",
+	"category": "kamenridercraft:decade/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Journey Through the Decade (2009, music video)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gackt_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

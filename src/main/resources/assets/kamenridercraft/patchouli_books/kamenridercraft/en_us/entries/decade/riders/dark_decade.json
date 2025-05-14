@@ -548,7 +548,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Decade",
-			"text": "Appears in:$(li)CSM Rider Card Set -Decade- (2022, toyline)$(br2)Transforms with the $(l:decade/devices/dark_decadriver)Dark Decadriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)CSM Rider Card Set -Decade- (2022, toyline)$(br2)Transforms with the $(l:decade/devices/dark_decadriver)Dark Decadriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -562,7 +562,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Dark Decade",
-			"text": "Appears in:$(li)CSM Rider Card Set -Decade- (2022, toyline)$(br2)Transforms with the $(l:decade/devices/dark_decadriver)Dark Decadriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II"
+			"text": "Appears in:$(li)CSM Rider Card Set -Decade- (2022, toyline)$(br2)Transforms with the $(l:decade/devices/dark_decadriver)Dark Decadriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength II$(li)Rider Kick!"
 		},
 		{
 			"type": "patchouli:entity",

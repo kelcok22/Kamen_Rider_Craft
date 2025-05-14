@@ -1,0 +1,19 @@
+{
+	"name": "Helheim Leaves",
+	"icon": "kamenridercraft:helheim_leaves",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Mine these leaves to obtain $(l:misc/blocks/helheim_sapling)Helheim Saplings$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_leaves",
+			"title": " ",
+			"text": "Found on Helheim trees"
+		}
+	]
+}

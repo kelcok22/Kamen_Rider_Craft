@@ -2,7 +2,7 @@
 	"name": "Helheim Vine",
 	"icon": "kamenridercraft:helheim_vine",
 	"category": "kamenridercraft:misc/blocks",
-	"sortnum": 45,
+	"sortnum": 46,
 	"pages": [
 		{
 			"type": "patchouli:text",
