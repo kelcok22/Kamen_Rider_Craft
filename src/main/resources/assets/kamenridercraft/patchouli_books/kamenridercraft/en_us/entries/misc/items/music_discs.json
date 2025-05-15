@@ -75,9 +75,8 @@
 			"text": "Song:$(li)HosephHoestar - NEXT LEVEL$(br2)Based on:$(li)YU-KI - NEXT LEVEL$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Kabuto (2006, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:journey_through_the_decade_music_disc",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/journey_through_the_decade_music_disc",
 			"text": "Song:$(li)HosephHoestar - Journey Through the Decade$(br2)Based on:$(li)Gackt - Journey Through the Decade$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Decade (2009, TV show)"
 		},
 		{

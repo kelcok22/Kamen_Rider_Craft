@@ -8334,6 +8334,7 @@
   "tag.item.kamenridercraft.gear.astroswitches.cross": "Cross Astroswitches",
   "tag.item.kamenridercraft.gear.astroswitches.square": "Square Astroswitches",
   "tag.item.kamenridercraft.gear.astroswitches.triangle": "Triangle Astroswitches",
+  "tag.item.kamenridercraft.gear.birth_cell_medals": "Birth's Cell Medals",
   "tag.item.kamenridercraft.gear.black_sun_kingstones": "Kingstones (Black Sun)",
   "tag.item.kamenridercraft.gear.books": "Rider Books",
   "tag.item.kamenridercraft.gear.card_warrior_cards": "Card Warrior Cards",
@@ -8359,6 +8360,7 @@
   "tag.item.kamenridercraft.gear.form_items.amazon_alpha": "Amazon Alpha's Form Items",
   "tag.item.kamenridercraft.gear.form_items.ancient_ooo": "Ancient OOO's Form Items",
   "tag.item.kamenridercraft.gear.form_items.another_agito_kouji": "Kouji Majima's Form Items",
+  "tag.item.kamenridercraft.gear.form_items.arc": "Arc's Form Items",
   "tag.item.kamenridercraft.gear.form_items.barlckxs": "Barlckxs's Form Items",
   "tag.item.kamenridercraft.gear.form_items.beast": "Beast's Form Items",
   "tag.item.kamenridercraft.gear.form_items.beroba": "Beroba's Form Items",
@@ -8521,7 +8523,8 @@
 	"tag.item.kamenridercraft.gear.gochizo.cake": "Cake Gochizo",
 	"tag.item.kamenridercraft.gear.gochizo.cookie": "Cookie Gochizo",
 	"tag.item.kamenridercraft.gear.gochizo.pancake": "Pancake Gochizo",
-	"tag.item.kamenridercraft.gear.gochizo.mochi": "Moch Gochizo",
+	"tag.item.kamenridercraft.gear.gochizo.mochi": "Mochi Gochizo",
+	"tag.item.kamenridercraft.gear.gorider_cards": "Gorider Cards",
   "tag.item.kamenridercraft.gear.henshin_kigen": "Henshin Kigen",
   "tag.item.kamenridercraft.gear.henshin_onibue": "Henshin Onibue",
   "tag.item.kamenridercraft.gear.henshin_onsa": "Henshin Onsa",
@@ -8618,5 +8621,6 @@
   "tag.item.kamenridercraft.rider_foot_armor": "Rider Foot Armor",
   "tag.item.kamenridercraft.rider_head_armor": "Rider Head Armor",
   "tag.item.kamenridercraft.rider_leg_armor": "Rider Leg Armor",
-  "tag.item.kamenridercraft.rider_logos": "Rider Logos"
+  "tag.item.kamenridercraft.rider_logos": "Rider Logos",
+  "tag.item.kamenridercraft.wallplate": "Wallplates"
 }

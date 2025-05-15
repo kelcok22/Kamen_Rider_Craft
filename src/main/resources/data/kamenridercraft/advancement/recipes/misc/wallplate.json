@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": "kamenridercraft:wallplate"
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:misc/block/wallplate/black_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/black_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/black_wallplate",
+	  "kamenridercraft:misc/block/wallplate/green_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/green_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/green_wallplate",
+	  "kamenridercraft:misc/block/wallplate/grey_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/grey_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/grey_wallplate",
+	  "kamenridercraft:misc/block/wallplate/light_green_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/light_green_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/light_green_wallplate",
+	  "kamenridercraft:misc/block/wallplate/red_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/red_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/red_wallplate",
+	  "kamenridercraft:misc/block/wallplate/wallplate_from_iron",
+	  "kamenridercraft:misc/block/wallplate/wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/white_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/white_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/white_wallplate",
+	  "kamenridercraft:misc/block/wallplate/yellow_wallplate_slab",
+	  "kamenridercraft:misc/block/wallplate/yellow_wallplate_stairs",
+	  "kamenridercraft:misc/block/wallplate/yellow_wallplate_wall",
+	  "kamenridercraft:misc/block/wallplate/yellow_wallplate"
+	]
+  },
+  "sends_telemetry_event": false
+}
