@@ -32,8 +32,6 @@ import java.util.List;
 import java.util.Random;
 
 public class GordDriveEntity extends BaseHenchmenEntity {
-
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AncientOOOEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS));
 
     public static List<Item> THINGS_AND_STUFF= new ArrayList<Item>();
