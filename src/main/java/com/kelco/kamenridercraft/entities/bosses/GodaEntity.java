@@ -41,9 +41,8 @@ import net.minecraft.world.phys.Vec3;
 
 public class GodaEntity extends BaseHenchmenEntity {
 
-	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS));
-
 	private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(GodaEntity.class, EntityDataSerializers.BYTE);
+	private final ServerBossEvent bossEvent = (ServerBossEvent)(new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.GOLD), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS));
 
 
     public GodaEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {

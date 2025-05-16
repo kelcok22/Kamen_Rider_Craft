@@ -290,8 +290,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
    }
 
    public void takeSummonItem(ItemStack stack) {
-	this.SUMMON_ITEM = stack.copyWithCount(1);
-	stack.shrink(1);
+	this.SUMMON_ITEM = stack.split(1);
    }
 
 	   protected SoundEvent getAmbientSound() {
