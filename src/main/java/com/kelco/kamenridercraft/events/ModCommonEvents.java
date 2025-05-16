@@ -280,7 +280,7 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void formTimeout(MobEffectEvent.Expired event) {
-			if (event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
+			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
 				LivingEntity entity = event.getEntity();
                 for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
@@ -291,7 +291,7 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void formTimeout(MobEffectEvent.Remove event) {
-			if (event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
+			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
 				LivingEntity entity = event.getEntity();
                 for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
                     RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
