@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 10% chance to spawn from a $(l:black_rx/mobs/chap)Chap$(/l)$(br2)Drops$(li)4-6 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:black/items/green_king_stone)Green Kingstone$(/l) (91%)$(li)1 $(l:black_rx/items/moon_rx_core)Another RX Core$(/l) (9%)"
+			"text": "Has a 10% chance to spawn from a $(l:black_rx/mobs/chap)Chap$(/l)$(br2)Drops$(li)4-6 $(l:misc/items/rider_circuit)Rider Circuits$(/l)$(li)1 $(l:black/items/green_king_stone)Green Kingstone$(/l) (91%)$(li)1 $(l:black_rx/items/moon_rx_core)Another RX Core$(/l) (9%)$(li)1 $(l:misc/items/music_discs#masked_rider_music_disc)Masked Rider Music Disc$(/l) (during April Fools')"
 		}
 	]
 }
