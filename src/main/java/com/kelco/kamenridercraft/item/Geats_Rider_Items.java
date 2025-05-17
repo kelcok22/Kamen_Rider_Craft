@@ -422,8 +422,7 @@ public class Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH, 40, 3,true,false),
-					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false))
 			.ChangeSlot(2).AddCompatibilityList(new String[] {"tycoon"}).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNITE_GRIP = ITEMS.register("unite_grip",
