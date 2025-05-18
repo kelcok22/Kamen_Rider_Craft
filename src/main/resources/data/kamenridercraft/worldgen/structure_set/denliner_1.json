@@ -29,6 +29,10 @@
 		  "weight": 2
 	  },
 	  {
+		  "structure": "kamenridercraft:ghostliner",
+		  "weight": 2
+	  },
+	  {
 		  "structure": "kamenridercraft:zeroliner",
 		  "weight": 4
 	  },
