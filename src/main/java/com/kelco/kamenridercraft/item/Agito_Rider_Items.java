@@ -61,7 +61,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_SHINING = ITEMS.register("agito_shining",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","agito","alter_ring_belt_b",
@@ -70,7 +70,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gills","meta_factor_belt",
