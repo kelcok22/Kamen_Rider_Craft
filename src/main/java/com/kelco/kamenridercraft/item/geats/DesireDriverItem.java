@@ -26,6 +26,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -334,12 +335,14 @@ public class DesireDriverItem  extends RiderDriverItem {
 			}
 
 			if (isTransformed(player)) {
+				if (this.get_Form_Item(stack, 2) == Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false));
 				for (int n = 0; n < Num_Base_Form_Item; n++) {
 					List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
 
 					for (MobEffectInstance effect : potionEffectList) {
 						boolean Fever=  isFever(stack,this.Rider);
 						player.addEffect(new MobEffectInstance(effect.getEffect(),effect.getDuration(), effect.getAmplifier() + (Fever ? 2 : 0),true,false));	}
+					
 				}
 			}
 		}

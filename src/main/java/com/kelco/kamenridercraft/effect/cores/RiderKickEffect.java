@@ -107,8 +107,8 @@ public class RiderKickEffect extends MobEffect {
 								belt.OnRiderKickHit(stack,pLivingEntity,enemy);
 								if (enemy.isDeadOrDying()&enemy instanceof ShockerCombatmanEntity){
 									if (pLivingEntity instanceof Player player) {
-										if (belt.Rider=="ichigo") {
-											player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), pAmplifier + 1), false);
+										if (belt.Rider=="ichigo" && !player.level().isClientSide()) {
+											player.drop(new ItemStack(Modded_item_core.LETS_GO_RIDER_MUSIC_DISC.get(), 1), false);
 										}
 									}
 								}
