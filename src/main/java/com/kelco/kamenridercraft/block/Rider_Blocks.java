@@ -21,6 +21,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -248,6 +249,9 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> HEATPRESS_EXTRACTOR = registerBlock("heatpress_extractor",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block>  DARK_TREAT_GLASS = registerBlock("dark_treat",
+			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0,0),DyeColor.BROWN).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
 	public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",

@@ -32,19 +32,19 @@ public class Agito_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","agito","alter_ring_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_STORM = ITEMS.register("agito_storm",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","agito","alter_ring_belt_s",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_FLAME = ITEMS.register("agito_flame",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","agito","alter_ring_belt_f",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_TRINITY = ITEMS.register("agito_trinity",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_trinity","agito","alter_ring_belt",
@@ -52,7 +52,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_BURNING = ITEMS.register("agito_burning",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_burning","agito","alter_ring_belt_b",
