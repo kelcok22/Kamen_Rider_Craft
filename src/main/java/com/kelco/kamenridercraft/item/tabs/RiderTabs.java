@@ -784,6 +784,7 @@ public class RiderTabs {
             event.accept(MobsCore.GM_RIDER_SPAWN_EGG);
 
             event.accept(MobsCore.AGENT_SPAWN_EGG);
+            event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
 
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);

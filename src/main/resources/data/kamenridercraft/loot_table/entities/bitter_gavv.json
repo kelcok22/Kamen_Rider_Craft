@@ -1,0 +1,65 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		  "conditions": [
+			  {
+				  "condition": "minecraft:random_chance",
+				  "chance": 0.5
+			  }
+		  ],
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			  "weight": 2,
+			"name": "kamenridercraft:breacookie_gochizo"
+		  },
+			{
+				"type": "minecraft:item",
+				"weight": 2,
+				"name": "kamenridercraft:spicyvrocan_gochizo"
+			},
+			{
+				"type": "minecraft:item",
+				"weight": 1,
+				"name": "kamenridercraft:bakibakistick_gochizo"
+			},
+			{
+				"type": "minecraft:item",
+				"weight": 1,
+				"name": "kamenridercraft:chocold_gochizo"
+			}
+		]
+
+	  },
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:sparkingummy_gochizo"
+				}
+			]
+		},
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_gochizo",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 3,
+				  "max": 5
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  
