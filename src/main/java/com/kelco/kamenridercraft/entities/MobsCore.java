@@ -1084,9 +1084,15 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> AGENT_SPAWN_EGG = ITEMS.register("agent_spawn_egg",
             () -> new DeferredSpawnEggItem(AGENT, 0x000000, 0xfa1100, new Item.Properties()));
-          
 
-          public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
+    public static final DeferredHolder<EntityType<?>, EntityType<BitterGavvEntity>> BITTER_GAVV = MOBLIST.register("bitter_gavv",
+            () -> EntityType.Builder.of(BitterGavvEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bitter_gavv"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BITTER_GAVV_SPAWN_EGG = ITEMS.register("bitter_gavv_spawn_egg",
+            () -> new DeferredSpawnEggItem(BITTER_GAVV, 0x0d0d0d, 0xfa4d02, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
                   () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
 
           public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_TORADOR_SPAWN_EGG = ITEMS.register("machine_tornador_spawn_egg",

@@ -1,23 +1,26 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.ServerConfig;
+import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.variants.AgentVariant;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
+import java.time.LocalDate;
+import java.time.temporal.ChronoField;
 
 public class AgentEntity extends BaseHenchmenEntity {
 
@@ -28,6 +31,23 @@ public class AgentEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME="agent";
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.AGENT_BLASTER.get()));
+    }
+
+    public void remove(Entity.RemovalReason p_149847_) {
+
+        if ( this.isDeadOrDying()) {
+            if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+                BaseHenchmenEntity boss = MobsCore.BITTER_GAVV.get().create(this.level());
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                    if (this.getLastAttacker()instanceof Player playerIn) {
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_gavv"));
+                    }
+                }
+            }
+        }
+        super.remove(p_149847_);
     }
 
     //variants below
