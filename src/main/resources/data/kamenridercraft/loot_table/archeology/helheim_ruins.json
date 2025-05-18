@@ -23,6 +23,11 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:himawari_lockseed",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:just_live_more_music_disc",
+          "weight": 1
         }
       ]
     }

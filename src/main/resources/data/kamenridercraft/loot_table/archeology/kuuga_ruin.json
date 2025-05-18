@@ -7,27 +7,32 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:kuuga_pegasus",
-          "weight": 1
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:kuuga_titan",
-          "weight": 1
+          "weight": 2
         },
     {
       "type": "minecraft:item",
       "name": "kamenridercraft:kuuga_dragon",
-      "weight": 1
+      "weight": 2
     },
     {
       "type": "minecraft:item",
       "name": "kamenridercraft:kuuga_mighty",
-      "weight": 2
+      "weight": 3
     },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:kuuga_growing",
-          "weight": 2
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kamen_rider_kuuga_music_disc",
+          "weight": 1
         }
       ]
     }
