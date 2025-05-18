@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gavv",
+  "pattern": [
+	"IXI",
+	"XMX",
+	"IXI"
+  ],
+  "key": {
+	"M": {
+	  "item": "kamenridercraft:heatpress"
+	},"X": {
+	  "tag": "c:ingots/iron"
+	},"I": {
+	  "item": "kamenridercraft:rider_circuit"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:heatpress_extractor"
+  }
+}

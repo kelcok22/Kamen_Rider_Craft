@@ -480,6 +480,10 @@ public class Gavv_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> BITTER_GAVVGABLADE = ITEMS.register("bitter_gavvgablade",
+			() -> new GavvgabladeItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+					.ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static final DeferredItem<Item> AGENT_BLASTER = ITEMS.register("agent_blaster",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -1.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(HEATPRESS.get()));
