@@ -396,7 +396,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  TORNADO = ITEMS.register("tornado",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).IsA1().Dont_show_belt_form_info().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).IsA1().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  GANGAN_G_BELT = ITEMS.register("gangan_g_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).IsA1().Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.SKYRIDER_TAB_ITEM));
