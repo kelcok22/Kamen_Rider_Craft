@@ -279,6 +279,8 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info()
                     .Override_belt_text("dark_ridol_belt").AddToTabList(RiderTabs.X_TAB_ITEM));
 
+    public static final DeferredItem<Item> FAKE_RIDOL = ITEMS.register("fake_ridol",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.X_TAB_ITEM));
@@ -427,6 +429,9 @@ public class Ichigo_Rider_Items {
 
     public static final DeferredItem<Item>  CYCLODE = ITEMS.register("cyclode",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).IsA1().Dont_show_belt_form_info().AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
+
+    public static final DeferredItem<Item>  ROBOT_CYCLODE = ITEMS.register("robot_cyclode",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"robot_super_1",CYCLODE_CORE ,SUPER1HELMET,SUPER1CHESTPLATE,SUPER1LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.SUPER1_TAB_ITEM));
 
     //ZX
     public static final DeferredItem<Item>  ZX_LOGO = ITEMS.register("zx_logo",

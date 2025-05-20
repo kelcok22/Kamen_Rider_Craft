@@ -1,21 +1,36 @@
 {
-	"name": "GanGan G",
-	"icon": "kamenridercraft:gangan_g_belt_core",
+	"name": "Skyrider",
+	"icon": "kamenridercraft:tornado_core",
 	"category": "kamenridercraft:skyrider/riders",
-	"sortnum": 1,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gangan_g_belt\",Count:1b},{id:\"kamenridercraft:skyriderlegs\",Count:1b},{id:\"kamenridercraft:skyridertroso\",Count:1b},{id:\"kamenridercraft:skyriderhead\",Count:1b}]}",
+			"anchor": "power_up",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:tornado\",components:{custom_data:{slot_tex1:\"kamenridercraft:tornado_core\"}},Count:1b},{id:\"kamenridercraft:skyriderlegs\",Count:1b},{id:\"kamenridercraft:skyridertroso\",Count:1b},{id:\"kamenridercraft:skyriderhead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": " ",
-			"text": ""
+			"name": "Power Up Skyrider",
+			"text": "Accessed with the $(l:skyrider/items/tornado_cores#tornado_core)Tornado Core$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Skyrider",
-			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Transforms with the $(l:skyrider/devices/gangan_g_belt)GanGan G Belt$(/l)$(br2)Status Effects:$(li)Flying V$(li)Speed II$(li)Jump Boost VI$(li)Strength II"
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Transforms with the $(l:skyrider/devices/tornado#tornado)Tornado$(/l)$(br2)Status Effects:$(li)Flying V$(li)Speed II$(li)Jump Boost VI$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "original",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:tornado\",components:{custom_data:{slot_tex1:\"kamenridercraft:original_tornado_core\"}},Count:1b},{id:\"kamenridercraft:skyriderlegs\",Count:1b},{id:\"kamenridercraft:skyridertroso\",Count:1b},{id:\"kamenridercraft:skyriderhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Original Skyrider",
+			"text": "Accessed with the $(l:skyrider/items/tornado_cores#original_tornado_core)Tornado Core (Original)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Skyrider",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Transforms with the $(l:skyrider/devices/tornado#tornado)Tornado$(/l)$(br2)Status Effects:$(li)Flying V$(li)Speed II$(li)Jump Boost VI$(li)Strength II"
 		}
 	]
 }

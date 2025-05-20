@@ -75,7 +75,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:kamen_rider_kuuga_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found in suspicious gravel around $(l:kuuga/structures/kuuga_ruin)Kuuga's Tomb$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -172,7 +172,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:just_live_more_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)"
 		},
 		{
 			"type": "patchouli:text",

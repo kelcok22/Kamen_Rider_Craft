@@ -24,6 +24,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:v3/dark_double_typhoon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_double_typhoon",
+			"title": "Fake Double Typhoon",
+			"text": "Appears in:$(li)Kamen Rider Fourze Special Event: Amanogawa High School Spring School Festival Special (2012, stage show)$(br2)Used alongside the $(l:v3/devices/armor)V3 armor$(/l) to transform into $(l:v3/riders/fake_v3)Fake V3"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_double_typhoon",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

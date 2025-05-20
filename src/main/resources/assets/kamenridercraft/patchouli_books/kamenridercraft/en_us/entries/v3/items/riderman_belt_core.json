@@ -2,7 +2,7 @@
 	"name": "Rider Buckle Core",
 	"icon": "kamenridercraft:riderman_belt_core",
 	"category": "kamenridercraft:v3/items",
-	"sortnum": 5,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",

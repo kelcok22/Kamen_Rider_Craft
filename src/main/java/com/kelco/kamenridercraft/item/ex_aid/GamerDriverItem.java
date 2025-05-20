@@ -194,13 +194,13 @@ public class GamerDriverItem extends RiderDriverItem {
 
 		if (slot == EquipmentSlot.CHEST) {
 			if (get_Form_Item(itemstack, 2).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel());
-			} else if (get_Form_Item(itemstack, 2).get_Model()=="default.geo.json") {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_FlyingModel(this.Rider));
+			} else if (get_Form_Item(itemstack, 2).get_Model(this.Rider)=="default.geo.json") {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/bigger_rider_plusbelt.geo.json");
 			}
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model());
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 2).get_Model(this.Rider));
 		}
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
+		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
 
 	}
 
@@ -209,25 +209,11 @@ public class GamerDriverItem extends RiderDriverItem {
 
 		switch (currentSlot) {
 		case HEAD ->{ 
-			if (part =="head") return true;
-			if (part =="body") return true;
-			if (part =="rightArm") return true;
-			if (part =="leftArm") return true;
-			if (part =="leftLeg") return true;
-			if (part =="rightLeg") return true;
-
+			return true;
 		}
 		case CHEST -> {
-			if (get_Form_Item(itemstack, 2)!=Modded_item_core.BLANK_FORM.get()) {
-				if (part =="head") return true;
-				if (part =="body") return true;
-				if (part =="rightArm") return true;
-				if (part =="leftArm") return true;
-				if (part =="leftLeg") return true;
-				if (part =="rightLeg") return true;
-			}
+			if (get_Form_Item(itemstack, 2)!=Modded_item_core.BLANK_FORM.get()) return true;
 		}
-		case LEGS -> {}
 		default -> {}
 		}
 		return false;

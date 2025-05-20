@@ -1,17 +1,30 @@
 {
-	"name": "Double Typhoon Core",
+	"name": "Double Typhoon Cores",
 	"icon": "kamenridercraft:double_typhoon_core",
 	"category": "kamenridercraft:v3/items",
-	"sortnum": 2,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "double_typhoon_core",
 			"text": "Appears in:$(li)Kamen Rider V3 (1973, TV show)$(br2)Used to craft V3's $(l:v3/devices/double_typhoon#double_typhoon)Double Typhoon$(/l)$(br2)Used to access V3's $(l:v3/riders/v3#v3)base$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:double_typhoon_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:v3/mobs/destron_combatman)Destron Combatman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blue_double_typhoon_core",
+			"text": "Appears in:$(li)Kamen Rider SPIRITS (2001, manga)$(br2)Used to access V3's $(l:v3/riders/v3#blue_version)Blue Version$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blue_double_typhoon_core",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:v3/mobs/destron_combatman)Destron Combatman$(/l)"
 		}

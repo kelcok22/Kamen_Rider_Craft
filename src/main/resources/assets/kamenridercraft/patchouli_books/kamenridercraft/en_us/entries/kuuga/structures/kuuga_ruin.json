@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kuuga's Tomb",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Spawn locations: River, Frozen River$(br2)Includes suspicious gravel$(br2)Suspicious gravel drops:$(li)1 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadam$(/l) (28.6%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Mighty Amadam$(/l) (28.6%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Dragon Amadam$(/l) (14.3%)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Spawn locations: River, Frozen River$(br2)Includes suspicious gravel$(br2)Suspicious gravel drops:$(li)1 $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadam$(/l) (23.1%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)Kuuga Mighty Amadam$(/l) (23.1%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)Kuuga Dragon Amadam$(/l) (15.4%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -17,7 +17,7 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/kuuga_ruin_2.png"
 			],
 			"title": " ",
-			"text": "$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Pegasus Amadam$(/l) (14.3%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Titan Amadam$(/l) (14.3%)"
+			"text": "$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)Kuuga Pegasus Amadam$(/l) (15.4%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)Kuuga Titan Amadam$(/l) (15.4%)$(li)1 $(l:misc/items/music_discs#kamen_rider_kuuga_music_disc)Kamen Rider Kuuga! Music Disc$(/l) (7.7%)"
 		}
 	]
 }

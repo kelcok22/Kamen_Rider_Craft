@@ -134,10 +134,10 @@ public class RiderFormChangeItem extends BaseItem {
         return (UPDATED_BELT_MODEL!=null ? UPDATED_BELT_MODEL : "geo/riderbelt.geo.json");
     }
 
-    public String get_Model() {
+    public String get_Model(String riderName) {
         if (UPDATED_MODEL!=null) return UPDATED_MODEL;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+RIDER_NAME+FORM_NAME+".geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? RIDER_NAME+FORM_NAME+".geo.json" : (get_Has_Static_Wings() ? "default_wings_armor.geo.json" : "default.geo.json"));
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+getRiderName(riderName)+FORM_NAME+".geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? getRiderName(riderName)+FORM_NAME+".geo.json" : (get_Has_Static_Wings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
     public String get_Animation() {
@@ -172,10 +172,10 @@ public class RiderFormChangeItem extends BaseItem {
         return Store_num;
     }
 
-    public String get_FlyingModel() {
+    public String get_FlyingModel(String riderName) {
         if (FLYING_MODEL!=null) return FLYING_MODEL;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+RIDER_NAME+FORM_NAME+"_wing.geo.json");
-        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? RIDER_NAME+FORM_NAME+"_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+getRiderName(riderName)+FORM_NAME+"_wing.geo.json");
+        return (GeckoLibCache.getBakedModels().get(FORM_MODEL)!=null ? getRiderName(riderName)+FORM_NAME+"_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
     }
     public Boolean HasWingsIfFlying() {
         return FLYING_TEXT;
