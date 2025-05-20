@@ -359,19 +359,19 @@ public class DesireDriverItem  extends RiderDriverItem {
 		if (slot == EquipmentSlot.LEGS)num=3;
 		
 		 if (slot == EquipmentSlot.CHEST) {
-			 if (get_Form_Item(itemstack, num).get_Model()=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats_rider_plusbelt.geo.json");
-			 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
+			 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats_rider_plusbelt.geo.json");
+			 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model("geats_rider"));
 			
 		 }else if (slot == EquipmentSlot.LEGS) {
-			 if (get_Form_Item(itemstack, num).get_Model()=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_geats_rider_plusbelt.geo.json");
-			 else return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_"+get_Form_Item(itemstack, num).get_Model());
+			 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_geats_rider_plusbelt.geo.json");
+			 else return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/revo_"+get_Form_Item(itemstack, num).get_Model("geats_rider"));
 
 			 }else 
 				 
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
 				
-				 if (get_Form_Item(itemstack, num).get_Model()=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
-				 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
+				 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
+				 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 				
 
 	}

@@ -1,0 +1,17 @@
+{
+	"name": "Kamen Rider Bitter Gavv",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bitter_gavv",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 10% chance to spawn from an $(l:gavv/mobs/agent)Agent$(/l)$(br2)Drops$(li)3-5 $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l)$(li)1 $(l:gavv/items/gochizo#sparkingummy_gochizo)Sparkingummy Gochizo$(/l)$(li)1 $(l:gavv/items/gochizo#breacookie_gochizo)Breacookie Gochizo$(/l) (16.7%)$(li)1 $(l:gavv/items/gochizo#vrocanspicy_gochizo)Vrocan Spicy Gochizo$(/l) (16.7%)$(li)1 $(l:gavv/items/gochizo#bakibakistick_gochizo)Bakibaki Stick Gochizo$(/l) (8.3%)$(li)1 $(l:gavv/items/gochizo#chocold_gochizo)Chocold Gochizo$(/l) (8.3%)"
+		}
+	]
+}

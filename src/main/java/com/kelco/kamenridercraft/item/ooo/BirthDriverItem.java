@@ -93,26 +93,19 @@ else {
 	}
 
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-
 		switch (slot) {
-		case HEAD ->{ 
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
+			case CHEST -> {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
+			}
+			case LEGS -> {
+				if (get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get()) 
+					return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
+				else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
+			}
+			default -> {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model(this.Rider));
+			}
 		}
-		case CHEST -> {
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_1.geo.json");
-
-		}
-		case LEGS -> {
-			if (get_Form_Item(itemstack, 3)==OOO_Rider_Items.BIRTH_CORE_CRANE_ARM.get()) 
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2_crane.geo.json");
-			else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/claws_2.geo.json");
-
-		}
-		default -> {}
-		}
-
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, 1).get_Model());
-
 	}
 
 	@Override

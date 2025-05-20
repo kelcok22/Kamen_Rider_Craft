@@ -98,9 +98,9 @@ public class DemonsDriverItem extends RiderDriverItem {
 		if (slot == EquipmentSlot.CHEST||slot == EquipmentSlot.LEGS) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/default_wings_armor.geo.json");
 		
 		if (get_Form_Item(itemstack, num).HasWingsIfFlying() && rider instanceof Player player && player.getAbilities().flying == true){
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel());
+			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_FlyingModel(this.Rider));
 		}
-		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model());
+		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 
 	}
 

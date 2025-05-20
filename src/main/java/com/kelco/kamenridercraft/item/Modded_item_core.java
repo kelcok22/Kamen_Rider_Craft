@@ -29,7 +29,7 @@ public class Modded_item_core {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> BLANK_FORM = ITEMS.register("blank_form",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","",""));
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","","").ChangeModel("default.geo.json"));
 
 
     public static final DeferredItem<Item>  RIDER_CIRCUIT = ITEMS.register("rider_circuit",

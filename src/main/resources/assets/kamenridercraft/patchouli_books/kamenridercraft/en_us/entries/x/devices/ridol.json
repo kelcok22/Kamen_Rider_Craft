@@ -24,6 +24,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:x/dark_ridol"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_ridol",
+			"title": "Ridol (Fake X)",
+			"text": "Appears in:$(li)Kamen Rider X (1974, TV show)$(br2)Used alongside the $(l:x/devices/armor)X armor$(/l) to transform into $(l:x/riders/fake_x)Fake X"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_ridol",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

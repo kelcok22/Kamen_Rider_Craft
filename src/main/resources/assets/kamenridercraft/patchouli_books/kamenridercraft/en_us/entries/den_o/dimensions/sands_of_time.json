@@ -16,7 +16,7 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/sands_of_time.png"
 			],
 			"title": " ",
-			"text": "$(li)$(l:den_o/structures/gaohliner)GaohLiner$(/l)$(li)$(l:den_o/structures/nega_denliner)Nega DenLiner$(/l)"
+			"text": "$(li)$(l:den_o/structures/gaohliner)GaohLiner$(/l)$(li)$(l:den_o/structures/nega_denliner)Nega DenLiner$(/l)$(li)$(l:den_o/structures/ghostliner)Ghost Train$(/l)"
 		}
 	]
 }

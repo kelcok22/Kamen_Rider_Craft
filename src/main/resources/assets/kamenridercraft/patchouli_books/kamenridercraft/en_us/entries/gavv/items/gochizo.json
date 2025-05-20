@@ -130,7 +130,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chocold_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -248,6 +248,58 @@
 			"item": "kamenridercraft:purujelly_gochizo",
 			"title": " ",
 			"text": "Traded by a novice $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sparkingummy_gochizo",
+			"title": "Sparkingummy Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Bitter Gavv's $(l:gavv/riders/bitter_gavv#sparkingummy)Sparkingummy Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sparkingummy_gochizo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "breacookie_gochizo",
+			"title": "Breacookie Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Bake's $(l:gavv/arsenal/bakemagnum)Bakemagnum$(/l)$(br2)Used to access Bitter Gavv's $(l:gavv/riders/bitter_gavv#breacookie)Breacookie Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:breacookie_gochizo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakibakistick_gochizo",
+			"title": "Bakibaki Stick Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakibakistick_gochizo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vrocanspicy_gochizo",
+			"title": "Vrocan Spicy Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vrocanspicy_gochizo",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
 		},
 		{
 			"type": "patchouli:text",

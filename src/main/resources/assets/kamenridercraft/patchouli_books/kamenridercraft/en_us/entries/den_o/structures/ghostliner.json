@@ -1,0 +1,21 @@
+{
+	"name": "Ghost Train",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/structures",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Ghost Train",
+			"text": "Appears in:$(li)Farewell Kamen Rider Den-O: Final Countdown (2008, movie)$(br2)Spawns throughout the Sands of Time$(br2)Chest loot:$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)Rider Ticket Ghost Imagin$(/l)$(li)4-6 $(l:den_o/items/imagin_sand)Imagin Sand$(/l) (15.8%)$(li)3-7 $(l:den_o/items/rider_tickets#rider_ticket)Rider Tickets$(/l) (52.6%)$(li)1 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)Rider Ticket Ghost Imagin$(/l) (31.6%)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/ghostliner.png"
+			],
+			"title": " "
+		}
+	]
+}

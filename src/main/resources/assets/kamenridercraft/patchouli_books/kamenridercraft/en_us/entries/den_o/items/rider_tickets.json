@@ -97,14 +97,14 @@
 			"type": "patchouli:text",
 			"anchor": "rider_ticket_yuuki",
 			"title": "Rider Ticket Ghost Imagin",
-			"text": "Appears in:$(li)Farewell Kamen Rider Den-O: Final Countdown (2008, movie)$(br2)Used to craft Yuuki's $(l:den_o/devices/yuuki_belt)Yuuki Belt$(/l)"
+			"text": "Appears in:$(li)Farewell Kamen Rider Den-O: Final Countdown (2008, movie)$(br2)Used to craft Yuuki's $(l:den_o/devices/yuuki_belt)Yuuki Belt$(/l)$(br2)Used to access Yuuki's $(l:den_o/riders/yuuki#skull)Skull$(/l) and $(l:den_o/riders/yuuki#hijack)Hijack$(/l) forms"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rider_ticket_yuuki",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found on the $(l:den_o/structures/ghostliner)Ghost Train$(/l)"
 		},
 		{
 			"type": "patchouli:text",

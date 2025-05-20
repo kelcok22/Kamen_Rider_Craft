@@ -1,0 +1,20 @@
+{
+	"name": "Fake V3",
+	"icon": "kamenridercraft:fake_double_typhoon",
+	"category": "kamenridercraft:v3/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_double_typhoon\",Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Fake V3",
+			"text": "Appears in:$(li)Kamen Rider Fourze Special Event: Amanogawa High School Spring School Festival Special (2012, stage show)$(br2)Transforms with the $(l:v3/devices/double_typhoon#fake_double_typhoon)Fake Double Typhoon$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance II$(li)Jump Boost III$(li)Strength II"
+		}
+	]
+}

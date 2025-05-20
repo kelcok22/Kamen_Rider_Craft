@@ -80,7 +80,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot== EquipmentSlot.LEGS||slot== EquipmentSlot.CHEST) {
- 		if (get_Form_Item(itemstack, 1).get_Model()=="default.geo.json") {
+ 		if (get_Form_Item(itemstack, 1).get_Model(this.Rider)=="default.geo.json") {
 	 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
  			}
 		}

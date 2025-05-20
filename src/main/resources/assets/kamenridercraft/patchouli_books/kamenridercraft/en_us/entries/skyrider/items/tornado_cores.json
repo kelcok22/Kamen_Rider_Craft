@@ -1,0 +1,32 @@
+{
+	"name": "Tornado Cores",
+	"icon": "kamenridercraft:tornado_core",
+	"category": "kamenridercraft:skyrider/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "tornado_core",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used to craft Skyrider's $(l:skyrider/devices/tornado#tornado)Tornado$(/l)$(br2)Used to access Skyrider's $(l:skyrider/riders/skyrider#power_up)Power Up$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tornado_core",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:skyrider/mobs/ari_commando)Ari Commando$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "original_tornado_core",
+			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used to access Skyrider's $(l:skyrider/riders/skyrider#original)original$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:original_tornado_core",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

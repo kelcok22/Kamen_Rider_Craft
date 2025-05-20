@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Rosyuo's Helheim City",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/blocks/boss_blocks#rosyuo_boss_block)Rosyuo Boss Block$(/l)$(br2)Suspicious gravel drops:$(li)1 $(l:gaim/arsenal/gaim_horse_armor)Gaim Horse Armor$(/l) (16.7%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (16.7%)"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Spawns throughout Helheim$(br2)Includes suspicious gravel$(br2)Includes a $(l:misc/blocks/boss_blocks#rosyuo_boss_block)Rosyuo Boss Block$(/l)$(br2)Suspicious gravel drops:$(li)1 $(l:gaim/arsenal/gaim_horse_armor)Gaim Horse Armor$(/l) (14.3%)$(li)1 $(l:gaim/items/lockseeds#kabi_orange_lockseed)Kabi Orange Lockseed$(/l) (14.3%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -16,7 +16,7 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/rosyuo_helheim_city.png"
 			],
 			"title": " ",
-			"text": "$(li)1 $(l:gaim/items/helheim_fruit)Helheim Fruit$(/l) (33.3%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (33.3%)"
+			"text": "$(li)1 $(l:gaim/items/helheim_fruit)Helheim Fruit$(/l) (28.6%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE Music Disc$(/l) (14.3%)"
 		}
 	]
 }
