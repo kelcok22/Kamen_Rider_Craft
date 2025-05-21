@@ -64,7 +64,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public RiderDriverItem (Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item>torso, DeferredItem<Item> legs, Properties properties)
     {
-        super(material, ArmorItem.Type.BOOTS, properties.component(DataComponents.CUSTOM_DATA, CustomData.EMPTY));
+        super(material, ArmorItem.Type.BOOTS, properties);
         Rider=rider;
         Base_Form_Item=((RiderFormChangeItem)baseFormItem.get());
         Armor_Form_Item=((RiderFormChangeItem)baseFormItem.get());
@@ -100,12 +100,11 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form") && stack.getEquipmentSlot()!=EquipmentSlot.FEET) OnformChange(stack, player, tag);
-
-                //if (!level.isClientSide)player.sendSystemMessage(Component.literal("isNotTransformed" + tag.getBoolean("isNotTransformed")));
-
-               if (!tag.getBoolean("isNotTransformed")&&!isTransformed(player)&&!level.isClientSide) tag.putBoolean("isNotTransformed", true);
-
+                if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
+                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+                if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
+            }else{
+                set_Upadete_Form(stack);
             }
 
             if (isTransformed(player)) {
@@ -122,7 +121,6 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
-        player.setInvisible(false);
         if(isTransformed(player)) {
             OnTransformation(itemstack,player);
             tag.putBoolean("Update_form", false);
@@ -267,7 +265,22 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    public static void set_Upadete_Form(ItemStack itemstack)
+    {
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        }
+        if (itemstack.getItem() instanceof RiderDriverItem driver) {
+            CompoundTag  tag = new CompoundTag();
+            Consumer<CompoundTag> data = form ->
+            {
+                    form.putBoolean("Update_form", true);
+            };
 
+            data.accept(tag);
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
+        }
+    }
 
     public static void set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT)
     {
