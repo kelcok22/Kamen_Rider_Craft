@@ -109,7 +109,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO_KOJI = ITEMS.register("another_agito_koji",
