@@ -134,7 +134,6 @@ public class Modded_item_core {
                     .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
-
     public static final DeferredItem<Item> GREYWOLCH = ITEMS.register("greywolch",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_greywolch","faiz","faiz_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
