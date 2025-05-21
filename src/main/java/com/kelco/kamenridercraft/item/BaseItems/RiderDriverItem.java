@@ -123,7 +123,10 @@ public class RiderDriverItem extends RiderArmorItem {
     public void OnformChange(ItemStack itemstack, LivingEntity player,CompoundTag  tag) {
         if(isTransformed(player)) {
             OnTransformation(itemstack,player);
-            tag.putBoolean("Update_form", false);
+            Consumer<CompoundTag> data = form -> {
+                form.putBoolean("Update_form", false);
+            };
+            CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
 
     }
@@ -270,14 +273,10 @@ public class RiderDriverItem extends RiderArmorItem {
         if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
-        if (itemstack.getItem() instanceof RiderDriverItem driver) {
-            CompoundTag  tag = new CompoundTag();
-            Consumer<CompoundTag> data = form ->
-            {
-                    form.putBoolean("Update_form", true);
+        if (itemstack.getItem() instanceof RiderDriverItem) {
+            Consumer<CompoundTag> data = form -> {
+                form.putBoolean("Update_form", true);
             };
-
-            data.accept(tag);
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
     }
