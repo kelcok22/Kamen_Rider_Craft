@@ -66,7 +66,6 @@ public class RiderCaseGuiMenu extends AbstractContainerMenu {
             }
         });
 
-
         this.addSlot(new Slot(container, 1,90,34) {
             @Override
             public boolean mayPlace(ItemStack stack) {
