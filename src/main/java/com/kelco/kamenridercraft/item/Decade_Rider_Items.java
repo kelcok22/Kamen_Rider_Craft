@@ -131,7 +131,8 @@ public class Decade_Rider_Items {
 	        () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
 	        		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 	        		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-	        .setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+	        .setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get()).AddCompatibilityList(BaseDecadeUsers)
+					.IsGlowing().ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_CARD = ITEMS.register("ryuki_card",
             () -> new RiderCardItem(new Item.Properties(),0,"","decade","decadriver_belt",
@@ -452,13 +453,13 @@ public class Decade_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","decade","decadriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_FLAME_CARD = ITEMS.register("agito_flame_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","decade","decadriver_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_TRINITY_CARD = ITEMS.register("agito_trinity_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_trinity","decade","decadriver_belt",
@@ -466,7 +467,7 @@ public class Decade_Rider_Items {
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_BURNING_CARD = ITEMS.register("agito_burning_card",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_burning","decade","decadriver_belt",
@@ -475,7 +476,7 @@ public class Decade_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-            .AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
+					.IsGlowing().AddCompatibilityList(BaseDecadeUsers).ChangeRiderName("agito").AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RYUKI_BLANK_CARD = ITEMS.register("ryuki_blank_card",
