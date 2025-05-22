@@ -86,6 +86,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
 
         wallBlock(Rider_Blocks.YELLOW_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
+        wallBlock(Rider_Blocks.WHITE_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.WHITE_WALLPLATE.get()));
 
 
         blockItem(Rider_Blocks.KURUMA_BRICK);
