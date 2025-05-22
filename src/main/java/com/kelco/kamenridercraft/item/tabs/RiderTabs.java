@@ -581,6 +581,7 @@ public class RiderTabs {
             event.accept(Rider_Blocks.WALLPLATE_GRATE);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.WHITE_WALLPLATE_WALL);
             event.accept(Rider_Blocks.GREY_WALLPLATE_STAIRS);
             event.accept(Rider_Blocks.GREY_WALLPLATE_SLAB);
             event.accept(Rider_Blocks.WALLPLATE_STAIRS);
