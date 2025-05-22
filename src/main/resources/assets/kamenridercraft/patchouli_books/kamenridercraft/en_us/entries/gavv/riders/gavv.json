@@ -189,30 +189,30 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "chocohone",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:partea_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:charapaki_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chocohone Form",
-			"text": "Accessed with the $(l:gavv/items/gochizo#partea_gochizo)Partea Gochizo$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#charapaki_gochizo)Charapaki Gochizo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
-			"text": "Appears in:$(li)SG Partea Gochizo (2024, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost II"
+			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "chocohone_special",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:partea_gochizo_special\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:charapaki_gochizo_special\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Chocohone Form",
-			"text": "Accessed with the $(l:gavv/items/gochizo#partea_gochizo_special)Partea Gochizo (Special Ver.)$(/l)"
+			"text": "Accessed with the $(l:gavv/items/gochizo#charapaki_gochizo_special)Charapaki Gochizo (Special Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
-			"text": "Appears in:$(li)SG Partea Gochizo (2024, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost II"
+			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Speed V$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
