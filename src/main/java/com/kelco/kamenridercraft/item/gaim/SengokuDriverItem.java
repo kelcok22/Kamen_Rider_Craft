@@ -80,11 +80,14 @@ public class SengokuDriverItem extends RiderDriverItem {
 	public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
 		if (slot== EquipmentSlot.LEGS||slot== EquipmentSlot.CHEST) {
- 		if (get_Form_Item(itemstack, 1).get_Model(this.Rider)=="default.geo.json") {
-	 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
+			if (get_Form_Item(itemstack, 1) == Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get() | get_Form_Item(itemstack, 1) == Gaim_Rider_Items.ZANGETSU_KACHIDOKI_LOCKSEED.get()) {
+				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gaim_kachidoki_arms.geo.json");
+			}
+			else if (get_Form_Item(itemstack, 1).get_Model(this.Rider)=="default.geo.json") {
+				 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/lockseed_arms.geo.json");
  			}
 		}
-			return super.getModelResource(itemstack, animatable, slot,rider);
+		return super.getModelResource(itemstack, animatable, slot,rider);
 	}
 
 	@Override
