@@ -54,6 +54,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(Rider_Blocks.WHITE_FENCE, Rider_Blocks.PLANKS_WHITE);
 
         wallItem(Rider_Blocks.YELLOW_WALLPLATE_WALL, Rider_Blocks.YELLOW_WALLPLATE);
+        wallItem(Rider_Blocks.WHITE_WALLPLATE_WALL, Rider_Blocks.WHITE_WALLPLATE);
 
         basicItem(Rider_Blocks.HELHEIM_DOOR.asItem());
         basicItem(Rider_Blocks.WONDERWOOD_DOOR.asItem());
