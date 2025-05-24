@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-18T21:28:45.3132186	Item Models: kamenridercraft
+// 1.21.1	2025-05-22T22:40:59.7813043	Item Models: kamenridercraft
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 66cc18b30536b699392307c8514f75b518a08913 assets/kamenridercraft/models/item/amondcokikkie_gochizo.json
@@ -262,6 +262,7 @@ f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vras
 2a4cceaf08cd78ab99b736e623de8234f8ecc90e assets/kamenridercraft/models/item/wafusaku_gochizo.json
 932ad803be78c3de72bd7ac706c2f7379879a4f7 assets/kamenridercraft/models/item/whiteandcookiestirol_gochizo.json
 6099f93392eac510c6032fa239a9f9d8d4043844 assets/kamenridercraft/models/item/white_fence.json
+b3fc962f39e8630c37821887d50de498e1f93a66 assets/kamenridercraft/models/item/white_wallplate_wall.json
 3796122ebf9a7cd7c862fbf81aee8172ad447d57 assets/kamenridercraft/models/item/wildshift_gold.json
 330c0fe93ef2298f767e41f55f0561177ffb9765 assets/kamenridercraft/models/item/wizard_full_bottle.json
 185ece7dbef84a1e307baa559f9673796f39cd85 assets/kamenridercraft/models/item/wonderwood_door.json

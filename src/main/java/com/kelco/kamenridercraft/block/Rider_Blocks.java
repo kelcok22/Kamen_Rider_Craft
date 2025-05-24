@@ -793,6 +793,9 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
 					.strength(2f)));
 
+	public static final DeferredBlock<WallBlock> WHITE_WALLPLATE_WALL = registerBlock("white_wallplate_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<Block> GREY_WALLPLATE = registerBlock("grey_wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
