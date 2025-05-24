@@ -14,8 +14,10 @@ import com.kelco.kamenridercraft.item.Modded_item_core;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -375,13 +377,14 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+
     public Boolean iscompatible(RiderDriverItem belt) {
         if (belt.Rider==RIDER_NAME) return true;
         for (String str : compatibilityList) {
             if (str==belt.Rider) return true;
         }
-
-        return false;
+        ItemStack itemstack=new ItemStack(belt);
+        return itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" +RIDER_NAME+FORM_NAME)));
     }
 
 	public boolean inventoryOrHolderContains(Player player, Item item) {
@@ -413,7 +416,8 @@ public class RiderFormChangeItem extends BaseItem {
                 }
             }
         }
-        if(!iscompatible(belt)) {
+
+            if(!iscompatible(belt)) {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {
@@ -452,7 +456,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (RESET_FORM_MAIN&RIDER_NAME==belt.Rider)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
+                    if (RESET_FORM_MAIN&iscompatible(belt))RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);
