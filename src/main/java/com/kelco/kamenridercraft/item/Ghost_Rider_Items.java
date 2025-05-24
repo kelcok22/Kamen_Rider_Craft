@@ -67,7 +67,7 @@ public class Ghost_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.GHOST, 40, 0,true,false))
-					.addAlternative(BOOST_DAMASHII.get()).alsoChange2ndSlot(MUGEN_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
+					.alsoChange2ndSlot(MUGEN_DAMASHII.get()).AddToList(RiderTabs.GHOST_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SPECTER_DAMASHII = ITEMS.register("specter_damashii",

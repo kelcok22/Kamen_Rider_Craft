@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to trade with a $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)$(br2)The villager inside can be released by using a $(l:gavv/arsenal/gavvgablade)Gavvgablade$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to trade with a $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)$(br2)The villager inside can be released by using certain weapons, including:$(li)$(l:gavv/arsenal/gavvgablade)Gavvgablade$(/l)$(li)$(l:gavv/arsenal/gavvwhipir)Gavvwhipir$(/l)$(li)$(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(li)$(l:gavv/arsenal/vrambreaker)Vrambreaker$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:heatpress",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
+			"text": "$(li)$(l:gavv/arsenal/bitter_gavvgablade)Bitter Gavvgablade$(/l)$(li)$(l:gavv/arsenal/bakemagnum)Bakemagnum$(/l)$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		}
 	]
 }

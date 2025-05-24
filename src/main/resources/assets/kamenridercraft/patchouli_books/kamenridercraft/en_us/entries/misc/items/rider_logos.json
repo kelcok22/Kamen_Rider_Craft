@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ichigo/ichigo_logo",
-			"text": "Banner patterns:$(li)Kamen Rider Logo$(li)Kamen Rider Logo (Frame)"
+			"text": "Banner patterns:$(li)Kamen Rider Logo$(li)Kamen Rider Logo (Frame)$(li)Shocker Emblem"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -176,7 +176,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:build/build_logo",
-			"text": "Banner patterns:$(li)Build Logo"
+			"text": "Banner patterns:$(li)Build Logo$(li)Touto Emblem$(li)Hokuto Emblem$(li)Seito Emblem"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -186,12 +186,12 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:zero_one/zero_one_logo",
-			"text": "Banner patterns:$(li)Zero-One Logo"
+			"text": "Banner patterns:$(li)Zero-One Logo$(li)MetsubouJinrai.net Logo"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:saber/saber_logo",
-			"text": "Banner patterns:$(li)Saber Logo"
+			"text": "Banner patterns:$(li)Saber Logo$(li)Sword of Logos Logo$(li)Sword of Logos Logo (Outer)$(li)Sword of Logos Logo (Inner)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -201,7 +201,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:geats/geats_logo",
-			"text": "Banner patterns:$(li)Geats Logo"
+			"text": "Banner patterns:$(li)Geats Logo$(li)Gang Riders Logo"
 		},
 		{
 			"type": "patchouli:crafting",

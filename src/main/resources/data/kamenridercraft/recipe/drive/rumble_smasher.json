@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "drive_rumble_dump",
+  "pattern": [
+	"XMX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:rumble_dump"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:rumble_smasher"
+  }	
+}
+

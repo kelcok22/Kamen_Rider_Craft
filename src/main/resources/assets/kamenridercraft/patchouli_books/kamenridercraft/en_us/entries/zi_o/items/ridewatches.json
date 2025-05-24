@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "decade_ridewatch",
 			"title": "Decade Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Decade's $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Decade's $(l:decade/devices/neo_decadriver)NeoDecadriver$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#decade)DecadeArmor$(/l)$(br2)Can summon $(l:decade/riders/decade)Kamen Rider Decade$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -174,7 +174,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuuga_ridewatch",
 			"title": "Kuuga Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kuuga)KuugaArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kuuga)KuugaArmor$(/l)$(br2)Can summon $(l:kuuga/riders/kuuga)Kamen Rider Kuuga$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -185,7 +185,7 @@
 			"type": "patchouli:text",
 			"anchor": "agito_ridewatch",
 			"title": "Agito Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#agito)AgitoArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#agito)AgitoArmor$(/l)$(br2)Can summon $(l:agito/riders/agito)Kamen Rider Agito$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -196,7 +196,7 @@
 			"type": "patchouli:text",
 			"anchor": "ryuki_ridewatch",
 			"title": "Ryuki Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ryuki)RyukiArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ryuki)RyukiArmor$(/l)$(br2)Can summon $(l:ryuki/riders/ryuki)Kamen Rider Ryuki$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -207,7 +207,7 @@
 			"type": "patchouli:text",
 			"anchor": "faiz_ridewatch",
 			"title": "Faiz Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#faiz)FaizArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#faiz)FaizArmor$(/l)$(br2)Can summon $(l:faiz/riders/faiz)Kamen Rider Faiz$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -218,7 +218,7 @@
 			"type": "patchouli:text",
 			"anchor": "blade_ridewatch",
 			"title": "Blade Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#blade)BladeArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#blade)BladeArmor$(/l)$(br2)Can summon $(l:blade/riders/blade)Kamen Rider Blade$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -229,7 +229,7 @@
 			"type": "patchouli:text",
 			"anchor": "hibiki_ridewatch",
 			"title": "Hibiki Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#hibiki)HibikiArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#hibiki)HibikiArmor$(/l)$(br2)Can summon $(l:hibiki/riders/hibiki)Kamen Rider Hibiki$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -240,7 +240,7 @@
 			"type": "patchouli:text",
 			"anchor": "kabuto_ridewatch",
 			"title": "Kabuto Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kabuto)KabutoArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kabuto)KabutoArmor$(/l)$(br2)Can summon $(l:kabuto/riders/kabuto)Kamen Rider Kabuto$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -251,7 +251,7 @@
 			"type": "patchouli:text",
 			"anchor": "den_o_ridewatch",
 			"title": "Den-O Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#den_o)Den-OArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#den_o)Den-OArmor$(/l)$(br2)Can summon $(l:den_o/riders/den_o)Kamen Rider Den-O$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -262,7 +262,7 @@
 			"type": "patchouli:text",
 			"anchor": "kiva_ridewatch",
 			"title": "Kiva Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kiva)KivaArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#kiva)KivaArmor$(/l)$(br2)Can summon $(l:kiva/riders/kiva)Kamen Rider Kiva$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -273,7 +273,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_ridewatch",
 			"title": "W Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#w)WArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#w)WArmor$(/l)$(br2)Can summon $(l:w/riders/double)Kamen Rider Double$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -284,7 +284,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_ridewatch",
 			"title": "OOO Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ooo)OOOArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#ooo)OOOArmor$(/l)$(br2)Can summon $(l:ooo/riders/ooo)Kamen Rider OOO$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -295,7 +295,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_ridewatch",
 			"title": "Fourze Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#fourze)FourzeArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#fourze)FourzeArmor$(/l)$(br2)Can summon $(l:fourze/riders/fourze)Kamen Rider Fourze$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -306,7 +306,7 @@
 			"type": "patchouli:text",
 			"anchor": "wizard_ridewatch",
 			"title": "Wizard Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#wizard)WizardArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#wizard)WizardArmor$(/l)$(br2)Can summon $(l:wizard/riders/wizard)Kamen Rider Wizard$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -317,7 +317,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaim_ridewatch",
 			"title": "Gaim Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#gaim)GaimArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#gaim)GaimArmor$(/l)$(br2)Can summon $(l:gaim/riders/gaim)Kamen Rider Gaim$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -328,7 +328,7 @@
 			"type": "patchouli:text",
 			"anchor": "drive_ridewatch",
 			"title": "Drive Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#drive)DriveArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#drive)DriveArmor$(/l)$(br2)Can summon $(l:drive/riders/drive)Kamen Rider Drive$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -339,7 +339,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_ridewatch",
 			"title": "Ghost Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ghost)GhostArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ghost)GhostArmor$(/l)$(br2)Can summon $(l:ghost/riders/ghost)Kamen Rider Ghost$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -350,7 +350,7 @@
 			"type": "patchouli:text",
 			"anchor": "ex_aid_ridewatch",
 			"title": "Ex-Aid Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ex_aid)Ex-AidArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#ex_aid)Ex-AidArmor$(/l)$(br2)Can summon $(l:ex_aid/riders/ex_aid)Kamen Rider Ex-Aid$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -361,7 +361,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_ridewatch",
 			"title": "Build Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#build)BuildArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access $(l:zi_o/riders/zi_o#build)BuildArmor$(/l)$(br2)Can summon $(l:build/riders/build)Kamen Rider Build$(/l) when shift-clicked as $(l:zi_o/riders/zi_o#grandzi_o)GrandZi-O$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

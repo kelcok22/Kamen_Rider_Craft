@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "drive_justice_hunter",
+  "pattern": [
+	"XMX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:justice_hunter"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:justice_cage"
+  }	
+}
+

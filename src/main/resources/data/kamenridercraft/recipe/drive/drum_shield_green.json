@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "drive_dream_vegas",
+  "pattern": [
+	"XXX",
+	"XSX",
+	"XMX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:dream_vegas"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:drum_shield_green"
+  }	
+}
+

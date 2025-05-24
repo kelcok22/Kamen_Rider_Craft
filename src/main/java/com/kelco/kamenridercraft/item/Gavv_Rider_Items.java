@@ -4,8 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.gavv.GavvgabladeItem;
-import com.kelco.kamenridercraft.item.gavv.GavvwhipirItem;
+import com.kelco.kamenridercraft.item.gavv.*;
 import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
@@ -49,7 +48,7 @@ public class Gavv_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> HEATPRESS = ITEMS.register("heatpress",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+			() -> new HitpressItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO = ITEMS.register("poppingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gavv","henshin_belt_gavv_belt",
@@ -452,7 +451,7 @@ public class Gavv_Rider_Items {
 					.Override_belt_text("bakebuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
-			() -> new GavvgabladeItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> ZAKUZAKUCHIPSLASHER = ITEMS.register("zakuzakuchipslasher",
@@ -486,7 +485,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BITTER_GAVVGABLADE = ITEMS.register("bitter_gavvgablade",
-			() -> new GavvgabladeItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BAKEMAGNUM = ITEMS.register("bakemagnum",

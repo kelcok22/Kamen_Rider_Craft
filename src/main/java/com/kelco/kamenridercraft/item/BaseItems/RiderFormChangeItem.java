@@ -375,13 +375,10 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public Boolean iscompatible(String rider) {
-
-        for (int i = 0; i < compatibilityList.length; i++)
-        {
-            if (compatibilityList[i]==rider){
-                return true;
-            }
+    public Boolean iscompatible(RiderDriverItem belt) {
+        if (belt.Rider==RIDER_NAME) return true;
+        for (String str : compatibilityList) {
+            if (str==belt.Rider) return true;
         }
 
         return false;
@@ -416,7 +413,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
             }
         }
-     if(belt.Rider!=RIDER_NAME&!iscompatible(belt.Rider)) {
+        if(!iscompatible(belt)) {
             return false;
         }
         if ( !NEEDITEM.isEmpty()) {

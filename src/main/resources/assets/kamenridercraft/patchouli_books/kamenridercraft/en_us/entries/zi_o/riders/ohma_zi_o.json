@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Ohma Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ohma_zi_o_driver)Ohma Zi-O Driver$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration IV$(li)Haste VII$(li)Saturation$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ohma_zi_o_driver)Ohma Zi-O Driver$(/l)$(br2)Can summon other Riders by shift-clicking Ridewatches$(br2)Status Effects:$(li)Speed VII$(li)Resistance VII$(li)Water Breathing$(li)Night Vision$(li)Regeneration IV$(li)Haste VII$(li)Saturation$(li)Jump Boost VII$(li)Fire Resistance$(li)Strength VII$(li)Flying"
 		}
 	]
 }

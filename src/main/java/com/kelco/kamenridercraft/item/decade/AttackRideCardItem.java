@@ -190,9 +190,8 @@ public class AttackRideCardItem extends BaseItem {
 					break;
 				case "rekka_daizantou":
 					if (ModList.get().isLoaded("supersentaicraft")) {
-						Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou"));
-						ItemStack stack = new ItemStack(item, 1);
-						stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", item.getName(stack).getString()));
+						ItemStack stack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou")));
+						stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getDisplayName().getString()));
 						
 						ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 						entity.setPickUpDelay(0);
