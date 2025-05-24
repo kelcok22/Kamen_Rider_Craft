@@ -116,7 +116,7 @@ public class Modded_item_core {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(Effect_core.FLYING, 40, 1,true,false))
-                    .IsGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
+                    .IsGlowing().IsBeltGlowing().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> HERCULESPADER = ITEMS.register("herculespader",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_herculespader","blade","blay_buckle_belt",
