@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "drive_rolling_gravity",
+  "pattern": [
+	"XMX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:shift_alloy"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	},
+	"M": {
+	  "item": "kamenridercraft:rolling_gravity"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:ten_ton_weight"
+  }	
+}
+

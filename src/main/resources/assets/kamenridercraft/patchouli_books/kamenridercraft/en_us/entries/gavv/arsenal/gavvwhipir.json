@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)$(br2)Can summon up to 2 $(l:gavv/mobs/whipped_soldier)Whipped Soldiers$(/l) when right-clicked as $(l:gavv/riders/gavv#caking)Gavv Caking Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)$(br2)Can summon up to 2 $(l:gavv/mobs/whipped_soldier)Whipped Soldiers$(/l) when right-clicked as $(l:gavv/riders/gavv#caking)Gavv Caking Form$(/l)$(br2)Can free villagers from $(l:gavv/items/heatpress)Hitpresses$(/l) when held in your off-hand"
 		},
 		{
 			"type": "patchouli:crafting",

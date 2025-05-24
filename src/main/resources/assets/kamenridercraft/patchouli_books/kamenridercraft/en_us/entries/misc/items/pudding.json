@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pudding",
 			"title": " ",
-			"text": "Found on the $(l:den_o/structures/denliner_isurugi)DenLiner Isurugi$(/l)"
+			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)"
 		}
 	]
 }

@@ -1,5 +1,8 @@
 package com.kelco.kamenridercraft.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
@@ -11,6 +14,7 @@ import com.kelco.kamenridercraft.world.inventory.MiridewatchHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RidewatchHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -31,6 +35,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class Zi_O_Rider_Items {
+	public static List<Item> REIWA_SUMMON_BELTS = new ArrayList<Item>();
+	public static List<Item> REIWA_SUMMON_WEAPONS = new ArrayList<Item>();
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
@@ -48,11 +54,36 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 30));
 
 	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",
+			() -> new RidewatchItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Decade_Rider_Items.DECADRIVER.get())
+					.addSummonWeapon(Decade_Rider_Items.RIDE_BOOKER.get())
+					.addAltBelt(Decade_Rider_Items.NEO_DECADRIVER.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.W_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.OOO_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.FOURZE_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.WIZARD_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.GAIM_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.DRIVE_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.GHOST_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.EX_AID_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.BUILD_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.ZI_O_CARD.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltBelt(Decade_Rider_Items.K_TOUCH_21.get(), (RiderDriverItem)Decade_Rider_Items.NEO_DECADRIVER.get())
+					.addAltForm(Decade_Rider_Items.DIEND_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.DECADE_CYAN_CARD.get())
+					.addAltForm(Decade_Rider_Items.REKKA_DAIZANTOU_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.K_TOUCH.get())
+					.addAltForm(Decade_Rider_Items.G4_GIGANT_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.DECADE_VIOLENT_EMOTION_CARD.get())
+					.addAltForm(Decade_Rider_Items.RYUKI_STRIKE_VENT_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.RYUKI_CARD.get())
+					.addAltForm(Decade_Rider_Items.HIBIKI_ONGEKIBOU_REKKA_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.HIBIKI_CARD.get())
+					.addAltWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Decade_Rider_Items.ONGEKIBO_REKKA_DECADE.get(), Decade_Rider_Items.ONGEKIBO_REKKA_DECADE.get())
+					.addAltWeapon(Decade_Rider_Items.DECADE_BLAST_CARD.get(), Decade_Rider_Items.DECADE_BAZOOKA.get())
+					.addAltWeapon(Decade_Rider_Items.REKKA_DAIZANTOU_CARD.get(), BuiltInRegistries.ITEM.get(ResourceLocation.parse("supersentaicraft:rekka_daizantou")))
+					.addAltWeapon(Decade_Rider_Items.G4_GIGANT_CARD.get(), Agito_Rider_Items.G4_GIGANT.get())
+					.addAltWeapon(Decade_Rider_Items.RYUKI_STRIKE_VENT_CARD.get(), Ryuki_Rider_Items.DRAG_CLAW.get())
+					.addAltWeapon(Decade_Rider_Items.HIBIKI_ONGEKIBOU_REKKA_CARD.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_II_RIDEWATCH = ITEMS.register("zi_o_ii_ridewatch",
@@ -180,20 +211,33 @@ public class Zi_O_Rider_Items {
 
 
 	public static final DeferredItem<Item> KUUGA_RIDEWATCH = ITEMS.register("kuuga_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kuuga","zi_o","ziku_driver_zi_o_belt_kuuga",
+			() -> new RidewatchItem(new Item.Properties(),0,"_kuuga","zi_o","ziku_driver_zi_o_belt_kuuga",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
+					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_RIDEWATCH = ITEMS.register("agito_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_agito","zi_o","ziku_driver_zi_o_belt_agito",
+			() -> new RidewatchItem(new Item.Properties(),0,"_agito","zi_o","ziku_driver_zi_o_belt_agito",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Agito_Rider_Items.ALTERING.get())
+					.addAltWeapon(Agito_Rider_Items.AGITO_FLAME.get(), Agito_Rider_Items.FLAME_SABER.get())
+					.addAltWeapon(Agito_Rider_Items.AGITO_STORM.get(), Agito_Rider_Items.STORM_HALBERD.get())
+					.addAltWeapon(Agito_Rider_Items.AGITO_TRINITY.get(), Agito_Rider_Items.FLAME_SABER.get(), Agito_Rider_Items.STORM_HALBERD.get())
+					.addAltWeapon(Agito_Rider_Items.AGITO_BURNING.get(), Agito_Rider_Items.SHINING_CALIBER.get())
+					.addAltWeapon(Agito_Rider_Items.AGITO_SHINING.get(), Agito_Rider_Items.SHINING_CALIBER_TWIN.get(), Agito_Rider_Items.SHINING_CALIBER_TWIN.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_RYUKI_RIDEWATCH = ITEMS.register("decade_ryuki_ridewatch",
@@ -205,12 +249,22 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> RYUKI_RIDEWATCH = ITEMS.register("ryuki_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ryuki","zi_o","ziku_driver_zi_o_belt_ryuki",
+			() -> new RidewatchItem(new Item.Properties(),0,"_ryuki","zi_o","ziku_driver_zi_o_belt_ryuki",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.RYUKIDRIVER.get())
+					.addAltForm(Ryuki_Rider_Items.RIDE_SABER_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.ADVENT_CARD.get())
+					.addAltForm(Ryuki_Rider_Items.DRAG_VISOR_ZWEI_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_REKKA.get())
+					.addAltForm(Ryuki_Rider_Items.DRAG_BLADE_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_REKKA.get())
+					.addAltWeapon(Ryuki_Rider_Items.RIDE_SABER_VENT.get(), Ryuki_Rider_Items.RIDE_SABER.get())
+					.addAltWeapon(Ryuki_Rider_Items.DRAG_SABER_VENT.get(), Ryuki_Rider_Items.DRAG_SABER.get())
+					.addAltWeapon(Ryuki_Rider_Items.DRAG_CLAW_VENT.get(), Ryuki_Rider_Items.DRAG_CLAW.get())
+					.addAltWeapon(Ryuki_Rider_Items.DRAG_SHIELD_VENT.get(), Ryuki_Rider_Items.DRAG_SHIELD.get(), Ryuki_Rider_Items.DRAG_SHIELD.get())
+					.addAltWeapon(Ryuki_Rider_Items.DRAG_VISOR_ZWEI_VENT.get(), Ryuki_Rider_Items.DRAG_VISOR_ZWEI.get())
+					.addAltWeapon(Ryuki_Rider_Items.DRAG_BLADE_VENT.get(), Ryuki_Rider_Items.DRAG_BLADE.get())
 					.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_RYUKI_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_FAIZ_RIDEWATCH = ITEMS.register("decade_faiz_ridewatch",
@@ -222,59 +276,116 @@ public class Zi_O_Rider_Items {
 					.addNeedForm(DECADE_RIDEWATCH.asItem(), 1).ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> FAIZ_RIDEWATCH = ITEMS.register("faiz_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_faiz","geiz","ziku_driver_geiz_belt_faiz",
+			() -> new RidewatchItem(new Item.Properties(),0,"_faiz","geiz","ziku_driver_geiz_belt_faiz",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+					.setSummonBelt((RiderDriverItem)Faiz_Rider_Items.FAIZ_DRIVER.get())
+					.addSummonWeapon(Faiz_Rider_Items.FAIZ_EDGE.get())
+					.addAltWeapon(Faiz_Rider_Items.FAIZ_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_PHONE.get())
+					.addAltWeapon(Faiz_Rider_Items.FAIZ_AXEL_MISSION_MEMORY.get(), Items.AIR)
+					.addAltWeapon(Faiz_Rider_Items.FAIZ_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
+					.addAltWeapon(Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
+					.addAltWeapon(Modded_item_core.BAKUEN_NO_SENSHI.get(), Faiz_Rider_Items.FAIZ_BLASTER.get())
 					.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_FAIZ_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_RIDEWATCH = ITEMS.register("blade_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_blade","zi_o","ziku_driver_zi_o_belt_blade",
+			() -> new RidewatchItem(new Item.Properties(),0,"_blade","zi_o","ziku_driver_zi_o_belt_blade",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)Blade_Rider_Items.BLAYBUCKLE.get())
+					.addSummonWeapon(Blade_Rider_Items.BLAYROUZER.get())
+					.addAltForm(Modded_item_core.JINRAI_NO_SENSHI.get(), (RiderFormChangeItem)Modded_item_core.JINRAI_NO_SENSHI_BLADE.get())
+					.addAltWeapon(Blade_Rider_Items.EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
+					.addAltWeapon(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_RIDEWATCH = ITEMS.register("hibiki_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hibiki","zi_o","ziku_driver_zi_o_belt_hibiki",
+			() -> new RidewatchItem(new Item.Properties(),0,"_hibiki","zi_o","ziku_driver_zi_o_belt_hibiki",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)Hibiki_Rider_Items.HIBIKIDRIVER.get())
+					.addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+					.addSummonWeapon(Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+					.addAltForm(Modded_item_core.BAKUEN_NO_SENSHI.get(), (RiderFormChangeItem)Modded_item_core.BAKUEN_NO_SENSHI_HIBIKI.get())
+					.addAltForm(Hibiki_Rider_Items.ARMED_SABER.get(), (RiderFormChangeItem)Hibiki_Rider_Items.HENSHIN_ONSA_ARMED.get())
+					.addAltWeapon(Hibiki_Rider_Items.ARMED_SABER.get(), Hibiki_Rider_Items.ARMED_SABER.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_RIDEWATCH = ITEMS.register("kabuto_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kabuto","zi_o","ziku_driver_zi_o_belt_kabuto",
+			() -> new RidewatchItem(new Item.Properties(),0,"_kabuto","zi_o","ziku_driver_zi_o_belt_kabuto",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)Kabuto_Rider_Items.KABUTO_RIDER_BELT.get())
+					.setSummonForm((RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER.get())
+					.addSummonWeapon(Kabuto_Rider_Items.KABUTO_KUNAI.get())
+					.addAltForm(Kabuto_Rider_Items.KABUTO_ZECTER.get(), (RiderFormChangeItem)Kabuto_Rider_Items.KABUTO_ZECTER_MASK.get())
+					.addAltWeapon(Kabuto_Rider_Items.HYPER_ZECTER.get(), Kabuto_Rider_Items.PERFECT_ZECTER.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_RIDEWATCH = ITEMS.register("den_o_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_den_o","zi_o","ziku_driver_zi_o_belt_den_o",
+			() -> new RidewatchItem(new Item.Properties(),0,"_den_o","zi_o","ziku_driver_zi_o_belt_den_o",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Den_O_Rider_Items.DEN_O_BELT.get())
+					.addSummonWeapon(Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+					.addAltForm(Den_O_Rider_Items.DENKAMEN_SWORD.get(), (RiderFormChangeItem)Den_O_Rider_Items.DEN_O_LINER_FORM.get())
+					.addAltForm(Decade_Rider_Items.DEN_O_CLIMAX_CARD.get(), (RiderFormChangeItem)Den_O_Rider_Items.SUPER_KTAROS.get())
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET.get(), Items.AIR)
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_ROD.get(), Den_O_Rider_Items.DEN_GASHER_ROD.get())
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_AX.get(), Den_O_Rider_Items.DEN_GASHER_AX.get())
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_GUN.get(), Den_O_Rider_Items.DEN_GASHER_GUN.get())
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_WING.get(), Den_O_Rider_Items.DEN_GASHER_HANDAX.get(), Den_O_Rider_Items.DEN_GASHER_BOOMERANG.get())
+					.addAltWeapon(Den_O_Rider_Items.DENKAMEN_SWORD.get(), Den_O_Rider_Items.DENKAMEN_SWORD.get())
+					.addAltWeapon(Den_O_Rider_Items.RIDER_TICKET_PUDDING.get(), Den_O_Rider_Items.DEN_GASHER_PUDDING.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_RIDEWATCH = ITEMS.register("kiva_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kiva","zi_o","ziku_driver_zi_o_belt_kiva",
+			() -> new RidewatchItem(new Item.Properties(),0,"_kiva","zi_o","ziku_driver_zi_o_belt_kiva",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Kiva_Rider_Items.KIVAT_BELT.get())
+					.addAltForm(Decade_Rider_Items.KIVA_DOGABAKI_CARD.get(), (RiderFormChangeItem)Kiva_Rider_Items.DOGABAKI.get())
+					.addAltForm(Kiva_Rider_Items.ZANVAT_SWORD.get(), (RiderFormChangeItem)Kiva_Rider_Items.DOGABAKI_EMPEROR.get())
+					.addAltWeapon(Kiva_Rider_Items.GARULU_FUESTLE.get(), Kiva_Rider_Items.GARULU_SABER.get())
+					.addAltWeapon(Kiva_Rider_Items.BASSHAA_FUESTLE.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get())
+					.addAltWeapon(Kiva_Rider_Items.DOGGA_FUESTLE.get(), Kiva_Rider_Items.DOGGA_HAMMER.get())
+					.addAltWeapon(Decade_Rider_Items.KIVA_DOGABAKI_CARD.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get(), Kiva_Rider_Items.GARULU_SABER.get())
+					.addAltWeapon(Kiva_Rider_Items.TATSULOT.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
+					.addAltWeapon(Kiva_Rider_Items.KIVATTE_FUESTLE.get(), Kiva_Rider_Items.ZANVAT_SWORD.get())
+					.addAltWeapon(Kiva_Rider_Items.ZANVAT_SWORD.get(), Kiva_Rider_Items.BASSHAA_MAGNUM.get(), Kiva_Rider_Items.GARULU_SABER.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_w","zi_o","ziku_driver_zi_o_belt_w",
+			() -> new RidewatchItem(new Item.Properties(),0,"_w","zi_o","ziku_driver_zi_o_belt_w",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)W_Rider_Items.WDRIVER.get())
+					.addAltForm(W_Rider_Items.HEAT_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.METAL_MEMORY.get())
+					.addAltForm(W_Rider_Items.METAL_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.HEAT_MEMORY.get())
+					.addAltForm(W_Rider_Items.LUNA_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.TRIGGER_MEMORY.get())
+					.addAltForm(W_Rider_Items.TRIGGER_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.LUNA_MEMORY.get())
+					.addAltForm(W_Rider_Items.SKULL_MEMORY.get(), (RiderFormChangeItem)W_Rider_Items.CYCLONE_SKULL_MEMORY.get())
+					.addAltWeapon(W_Rider_Items.HEAT_MEMORY.get(), W_Rider_Items.METAL_SHAFT.get())
+					.addAltWeapon(W_Rider_Items.METAL_MEMORY.get(), W_Rider_Items.METAL_SHAFT.get())
+					.addAltWeapon(W_Rider_Items.LUNA_MEMORY.get(), W_Rider_Items.TRIGGER_MAGNUM.get())
+					.addAltWeapon(W_Rider_Items.TRIGGER_MEMORY.get(), W_Rider_Items.TRIGGER_MAGNUM.get())
+					.addAltWeapon(W_Rider_Items.XTREME_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
+					.addAltWeapon(W_Rider_Items.XTREME_GOLD_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
+					.addAltWeapon(W_Rider_Items.XTREME_ACCEL_MEMORY.get(), W_Rider_Items.PRISM_BICKER.get(), W_Rider_Items.SHIELD_PRISM_BICKER.get())
 							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_OOO_RIDEWATCH = ITEMS.register("decade_ooo_ridewatch",
@@ -286,45 +397,275 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json"));
 
 	public static final DeferredItem<Item> OOO_RIDEWATCH = ITEMS.register("ooo_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ooo","zi_o","ziku_driver_zi_o_belt_ooo",
+					() -> new RidewatchItem(new Item.Properties(),0,"_ooo","zi_o","ziku_driver_zi_o_belt_ooo",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)OOO_Rider_Items.OOODRIVER.get())
+					.addSummonWeapon(OOO_Rider_Items.MEDAJALIBUR.get())
+					.addAltForm(OOO_Rider_Items.TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.CONDOR_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_CONDOR_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_CONDOR_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TORA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_TORA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_TORA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CHEETAH_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.CHEETAH_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_CHEETAH_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_CHEETAH_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LION_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KAMAKIRI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_KAMAKIRI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_KAMAKIRI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.BATTA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_BATTA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_BATTA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUWAGATA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAMAKIRI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_GORILLA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ZOU_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZOU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_ZOU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_ZOU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GORILLA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_UNAGI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TAKO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.FOUNDATION_X_TAKO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_TAKO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.UNAGI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TRICERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TYRANNO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TRICERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TYRANNO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TRICERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TYRANNO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_TRICERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TYRANNO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TYRANNO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TRICERA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_TYRANNO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PTERA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TRICERA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.COBRA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAME_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.WANI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KAME_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.COBRA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.WANI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.WANI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.COBRA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KAME_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.MUKADE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ARI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_MUKADE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ARI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ARI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.MUKADE_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ARI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.MUKADE_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ARI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.MUKADE_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ZEUS_ARI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HACHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.MUKADE_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.EBI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KANI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SASORI_NEW_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KANI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.EBI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SASORI_NEW_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SASORI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.EBI_NEW_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KANI_NEW_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SAME_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJIRA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.OOKAMIUO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KUJIRA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAME_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.OOKAMIUO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.OOKAMIUO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SAME_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJIRA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SHIKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GAZELLE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.USHI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.GAZELLE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHIKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.USHI_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.USHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHIKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.GAZELLE_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SEIUCHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHIROKUMA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PENGUIN_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SHIROKUMA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SEIUCHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.PENGUIN_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.PENGUIN_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SEIUCHI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHIROKUMA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SUPER_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_TORA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_BATTA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SUPER_TORA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_BATTA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SUPER_BATTA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SUPER_TORA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.LOVE_CORE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE2_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE3_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.LOVE_CORE2_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE3_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.LOVE_CORE3_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.LOVE_CORE2_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.HABATAKI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAIGA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ICHIGO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TAIGA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HABATAKI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.ICHIGO_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.ICHIGO_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.HABATAKI_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.TAIGA_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.IMAGIN_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.SHOCKER_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.SHOCKER_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.IMAGIN_MEDAL.get())
+					.addAltWeapon(OOO_Rider_Items.TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.FOUNDATION_X_TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.FOUNDATION_X_KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.CONDOR_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.FOUNDATION_X_CONDOR_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_CONDOR_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.PTERA_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_PTERA_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.TRICERA_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_TRICERA_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.TYRANNO_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.ZEUS_TYRANNO_MEDAL.get(), OOO_Rider_Items.MEDAGABURYU.get())
+					.addAltWeapon(OOO_Rider_Items.TAKA_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
+					.addAltWeapon(OOO_Rider_Items.KUJAKU_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
+					.addAltWeapon(OOO_Rider_Items.CONDOR_ETERNITY_MEDAL.get(), OOO_Rider_Items.TAJASPINNER_ETERNITY.get())
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_RIDEWATCH = ITEMS.register("fourze_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_fourze","zi_o","ziku_driver_zi_o_belt_fourze",
+					() -> new RidewatchItem(new Item.Properties(),0,"_fourze","zi_o","ziku_driver_zi_o_belt_fourze",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(Effect_core.BOOST, 40, 0,true,false),
 							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Fourze_Rider_Items.FOURZE_DRIVER.get())
+					.addAltForm(Fourze_Rider_Items.ELEK_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_ELEK_STATES.get())
+					.addAltForm(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_FIRE_STATES.get())
+					.addAltForm(Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get(), (RiderFormChangeItem)Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_MAGNET_STATES.get())
+					.addAltForm(Fourze_Rider_Items.MAGNET_ASTROSWITCH_S.get(), (RiderFormChangeItem)Fourze_Rider_Items.MAGNET_ASTROSWITCH_N.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_MAGNET_STATES.get())
+					.addAltForm(Fourze_Rider_Items.COSMIC_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_COSMIC_STATES.get())
+					.addAltForm(Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.SUPER_ROCKET_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_ROCKET_STATES.get())
+					.addAltForm(Fourze_Rider_Items.SUPER_LAUNCHER_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_LAUNCHER_STATES.get())
+					.addAltForm(Fourze_Rider_Items.CLEAR_DRILL_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_ROCKET_DRILL_STATES.get())
+					.addAltForm(Fourze_Rider_Items.FUSION_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FUSION_ASTROSWITCH_OG.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_FUSION_STATES.get())
+					.addAltForm(Fourze_Rider_Items.NADESHIKO_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FUSION_ASTROSWITCH.get(), (RiderFormChangeItem)Fourze_Rider_Items.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get())
+					.addAltWeapon(Fourze_Rider_Items.ELEK_ASTROSWITCH.get(), Fourze_Rider_Items.BILLY_THE_ROD.get())
+					.addAltWeapon(Fourze_Rider_Items.SHIELD_ASTROSWITCH.get(), Fourze_Rider_Items.SHIELD_MODULE.get())
+					.addAltWeapon(Fourze_Rider_Items.FIRE_ASTROSWITCH.get(), Fourze_Rider_Items.HEE_HACKGUN.get())
+					.addAltWeapon(Fourze_Rider_Items.COSMIC_ASTROSWITCH.get(), Fourze_Rider_Items.BARIZUN_SWORD.get())
 							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_RIDEWATCH = ITEMS.register("wizard_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_wizard","geiz","ziku_driver_geiz_belt_wizard",
+					() -> new RidewatchItem(new Item.Properties(),0,"_wizard","geiz","ziku_driver_geiz_belt_wizard",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
+							.setSummonBelt((RiderDriverItem)Wizard_Rider_Items.WIZARDRIVER.get())
+							.addSummonWeapon(Wizard_Rider_Items.WIZARSWORDSGUN.get())
+							.addAltForm(Wizard_Rider_Items.FINISH_STRIKE_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.FINISH_STRIKE_RING_NO_HOPE.get())
+							.addAltForm(Wizard_Rider_Items.HOPE_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.FINISH_STRIKE_RING.get())
+							.addAltForm(Wizard_Rider_Items.FALCO_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.FALCO_RING_WIZARD.get())
+							.addAltForm(Wizard_Rider_Items.BUFFA_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.BUFFA_RING_WIZARD.get())
+							.addAltWeapon(Wizard_Rider_Items.INFINITY_WIZARD_RING.get(), Wizard_Rider_Items.AXCALIBUR.get())
 							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 			public static final DeferredItem<Item> GAIM_RIDEWATCH = ITEMS.register("gaim_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_gaim","zi_o","ziku_driver_zi_o_belt_gaim",
+					() -> new RidewatchItem(new Item.Properties(),0,"_gaim","zi_o","ziku_driver_zi_o_belt_gaim",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.SATURATION, 40, 5,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
+							.setSummonBelt((RiderDriverItem)Gaim_Rider_Items.SENGOKU_DRIVER_GAIM.get())
+							.addSummonWeapon(Gaim_Rider_Items.DAIDAIMARU.get())
+							.addSummonWeapon(Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.MATSUBOKKURI_LOCKSEED.get(), Gaim_Rider_Items.KAGEMATSU.get())
+							.addAltWeapon(Gaim_Rider_Items.KURUMI_LOCKSEED.get(), Items.AIR)
+							.addAltWeapon(Gaim_Rider_Items.DONGURI_LOCKSEED.get(), Gaim_Rider_Items.DONKACHI.get())
+							.addAltWeapon(Gaim_Rider_Items.MELON_LOCKSEED.get(), Gaim_Rider_Items.MELON_DEFENDER.get())
+							.addAltWeapon(Gaim_Rider_Items.PINE_LOCKSEED.get(), Gaim_Rider_Items.PINE_IRON.get())
+							.addAltWeapon(Gaim_Rider_Items.ICHIGO_LOCKSEED.get(), Gaim_Rider_Items.ICHIGO_KUNAI.get(), Gaim_Rider_Items.ICHIGO_KUNAI.get())
+							.addAltWeapon(Gaim_Rider_Items.BANANA_LOCKSEED.get(), Gaim_Rider_Items.BANA_SPEAR.get())
+							.addAltWeapon(Gaim_Rider_Items.BUDOU_LOCKSEED.get(), Gaim_Rider_Items.BUDOU_RYUHOU.get())
+							.addAltWeapon(Gaim_Rider_Items.SUIKA_LOCKSEED.get(), Gaim_Rider_Items.SUIKA_SOJINTO.get())
+							.addAltWeapon(Gaim_Rider_Items.MANGO_LOCKSEED.get(), Gaim_Rider_Items.MANGO_PUNISHER.get())
+							.addAltWeapon(Gaim_Rider_Items.DURIAN_LOCKSEED.get(), Gaim_Rider_Items.DURI_NOKO.get(), Gaim_Rider_Items.DURI_NOKO.get())
+							.addAltWeapon(Gaim_Rider_Items.KIWI_LOCKSEED.get(), Gaim_Rider_Items.KIWI_GEKIRIN.get())
+							.addAltWeapon(Gaim_Rider_Items.LEMON_LOCKSEED.get(), Gaim_Rider_Items.LEMON_RAPIER.get())
+							.addAltForm(Gaim_Rider_Items.LEMON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_LEMON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.LEMON_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
+							.addAltForm(Gaim_Rider_Items.CHERRY_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_CHERRY_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.CHERRY_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
+							.addAltForm(Gaim_Rider_Items.PEACH_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_PEACH_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.PEACH_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
+							.addAltForm(Gaim_Rider_Items.MELON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_MELON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.MELON_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
+							.addAltForm(Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.DRAGON_FRUITS_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.SONIC_ARROW.get())
+							.addAltForm(Gaim_Rider_Items.MARRON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.JIMBER_GAIM_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.MARRON_ENERGY_LOCKSEED.get(), Items.AIR)
+							.addAltWeapon(Gaim_Rider_Items.KACHIDOKI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN.get())
+							.addAltWeapon(Gaim_Rider_Items.KIWAMI_LOCKSEED.get(), Gaim_Rider_Items.DJ_GUN_TAIKEN_MODE.get())
+							.addAltWeapon(Gaim_Rider_Items.BLOOD_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.BLOOD_DAIDAIMARU.get())
+							.addAltWeapon(Gaim_Rider_Items.FIFTEEN_LOCKSEED.get(), Gaim_Rider_Items.YOMIMARU.get())
+							.addAltWeapon(Gaim_Rider_Items.GOLDEN_RINGO_LOCKSEED.get(), Gaim_Rider_Items.SWORD_BRINGER.get())
+							.addAltWeapon(Gaim_Rider_Items.SILVER_RINGO_LOCKSEED.get(), Gaim_Rider_Items.SOUGINJOU.get())
+							.addAltWeapon(Gaim_Rider_Items.BLACK_RINGO_LOCKSEED.get(), Gaim_Rider_Items.DARK_DAIDAIMARU.get())
+							.addAltForm(Gaim_Rider_Items.FORBIBBEN_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.FORBIBBEN_LOCKSEED_BASE.get())
+							.addAltWeapon(Gaim_Rider_Items.FORBIBBEN_LOCKSEED.get(), Gaim_Rider_Items.APPLE_REFLECTER.get())
+							.addAltWeapon(Gaim_Rider_Items.MAJA_LOCKSEED.get(), Gaim_Rider_Items.MAJAS_SWORD.get())
+							.addAltWeapon(Gaim_Rider_Items.KABI_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.KABI_DAIDAIMARU.get())
+							.addAltWeapon(Gaim_Rider_Items.FRESH_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.DAIDAIMARU.get())
+							.addAltWeapon(Gaim_Rider_Items.HELEIM_LOCKSEED.get(), Gaim_Rider_Items.HELLS_CANE.get())
+							.addAltWeapon(Gaim_Rider_Items.NATSUMIKAN_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get(), Gaim_Rider_Items.DAIDAIMARU.get())
+							.addAltWeapon(Gaim_Rider_Items.PROTO_DONGURI_LOCKSEED.get(), Gaim_Rider_Items.DONKACHI.get())
+							.addAltWeapon(Gaim_Rider_Items.PROTO_ORANGE_LOCKSEED.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.PROTO_BANANA_LOCKSEED.get(), Gaim_Rider_Items.BANA_SPEAR.get())
+							.addAltWeapon(Gaim_Rider_Items.PROTO_BUDOU_LOCKSEED.get(), Gaim_Rider_Items.BUDOU_RYUHOU.get())
+							.addAltWeapon(Gaim_Rider_Items.PROTO_DURIAN_LOCKSEED.get(), Gaim_Rider_Items.DURI_NOKO.get(), Gaim_Rider_Items.DURI_NOKO.get())
+							.addAltForm(Gaim_Rider_Items.DARK_LEMON_ENERGY_LOCKSEED.get(), (RiderFormChangeItem)Gaim_Rider_Items.GAIM_YAMI_CORE.get())
+							.addAltWeapon(Gaim_Rider_Items.DARK_LEMON_ENERGY_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.DRIVE_LOCKSEED.get(), Drive_Rider_Items.HANDLE_KEN.get())
+							.addAltWeapon(Gaim_Rider_Items.GAIM_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.WIZARD_LOCKSEED.get(), Wizard_Rider_Items.WIZARSWORDSGUN.get())
+							.addAltWeapon(Gaim_Rider_Items.FOURZE_LOCKSEED.get(), Fourze_Rider_Items.BARIZUN_SWORD.get())
+							.addAltWeapon(Gaim_Rider_Items.OOO_LOCKSEED.get(), OOO_Rider_Items.MEDAJALIBUR.get())
+							.addAltWeapon(Gaim_Rider_Items.W_LOCKSEED.get(), W_Rider_Items.TRIGGER_MAGNUM.get())
+							.addAltWeapon(Gaim_Rider_Items.DECADE_LOCKSEED.get(), Decade_Rider_Items.RIDE_BOOKER.get())
+							.addAltWeapon(Gaim_Rider_Items.KIVA_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.DEN_O_LOCKSEED.get(), Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+							.addAltWeapon(Gaim_Rider_Items.KABUTO_LOCKSEED.get(), Kabuto_Rider_Items.KABUTO_KUNAI.get())
+							.addAltWeapon(Gaim_Rider_Items.HIBIKI_LOCKSEED.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+							.addAltWeapon(Gaim_Rider_Items.BLADE_LOCKSEED.get(), Blade_Rider_Items.BLAYROUZER.get())
+							.addAltWeapon(Gaim_Rider_Items.FAIZ_LOCKSEED.get(), Faiz_Rider_Items.FAIZ_EDGE.get())
+							.addAltWeapon(Gaim_Rider_Items.RYUKI_LOCKSEED.get(), Ryuki_Rider_Items.DRAG_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.AGITO_LOCKSEED.get(), Agito_Rider_Items.FLAME_SABER.get(), Agito_Rider_Items.STORM_HALBERD.get())
+							.addAltWeapon(Gaim_Rider_Items.KUUGA_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.RIDER_ICHIGO_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.SHOWA_RIDER_LOCKSEED.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Gaim_Rider_Items.HEISEI_RIDER_LOCKSEED.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
 							.ChangeModel("default_rider_plusbelt_and_wings.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 			public static final DeferredItem<Item> DRIVE_RIDEWATCH = ITEMS.register("drive_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_drive","geiz","ziku_driver_geiz_belt_drive",
+					() -> new RidewatchItem(new Item.Properties(),0,"_drive","geiz","ziku_driver_geiz_belt_drive",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+							.setSummonBelt((RiderDriverItem)Drive_Rider_Items.DRIVE_DRIVER.get())
+							.addSummonWeapon(Drive_Rider_Items.HANDLE_KEN.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_PROTO_SPEED.get(), Items.AIR)
+							.addAltWeapon(Drive_Rider_Items.SHIFT_WILD.get(), Items.AIR)
+							.addAltWeapon(Drive_Rider_Items.SHIFT_TECHNIC.get(), Drive_Rider_Items.DOOR_JU.get())
+							.addAltBelt(Drive_Rider_Items.MACH_DRIVER_HONOH_DRIVE.get(), (RiderDriverItem)Drive_Rider_Items.MACH_DRIVER_HONOH_DRIVE.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_FORMULA.get(), Drive_Rider_Items.TRAILER_HOU.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_TRIDORON.get(), Drive_Rider_Items.TRAILER_HOU.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_SPECIAL.get(), Drive_Rider_Items.SHINGOU_AX.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_FRUITS.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_SPEED_WILD_TECHNIC.get(), Items.AIR)
+							.addAltWeapon(Drive_Rider_Items.SHIFT_JUSTICE_HUNTER.get(), Drive_Rider_Items.JUSTICE_CAGE.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_DREAM_VAGAS.get(), Drive_Rider_Items.DRUM_SHIELD_RED.get(), Drive_Rider_Items.DRUM_SHIELD_GREEN.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_MASSIVE_MONSTER.get(), Drive_Rider_Items.MONSTER_TOP.get(), Drive_Rider_Items.MONSTER_BOTTOM.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_WILD.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get(), Drive_Rider_Items.RUMBLE_SMASHER.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_MAD_DOCTOR.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_WILD.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_MAD_DOCTOR.get(), Drive_Rider_Items.CURE_QUICKER.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_HOOKING_WRECKER.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_WILD.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_HOOKING_WRECKER.get(), Items.AIR)
+							.addAltForm(Drive_Rider_Items.SHIFT_FIRE_BRAVER.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_TECHNIC.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_FIRE_BRAVER.get(), Drive_Rider_Items.DOOR_JU.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_ROLLING_GRAVITY.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_TECHNIC.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_ROLLING_GRAVITY.get(), Drive_Rider_Items.TEN_TON_WEIGHT.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_ROAD_WINTER.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_TECHNIC.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_ROAD_WINTER.get(), Drive_Rider_Items.DOOR_JU.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_MANTARN_F01.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_FORMULA.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_MANTARN_F01.get(), Drive_Rider_Items.TRAILER_HOU.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_JACKY_F02.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_FORMULA.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_JACKY_F02.get(), Drive_Rider_Items.TRAILER_HOU.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_SPARNER_F03.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_FORMULA.get())
+							.addAltWeapon(Drive_Rider_Items.SHIFT_SPARNER_F03.get(), Drive_Rider_Items.TRAILER_HOU.get())
+							.addAltForm(Drive_Rider_Items.SHIFT_MEGA_MAX_FLARE.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_HIGH_SPEED.get())
+							.addAltBelt(Drive_Rider_Items.TRIDORON_KEY.get(), (RiderDriverItem)Drive_Rider_Items.MACH_DRIVER_HONOH_DRIVE.get())
 							.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_GHOST_RIDEWATCH = ITEMS.register("decade_ghost_ridewatch",
@@ -345,11 +686,52 @@ public class Zi_O_Rider_Items {
 							.model_has_different_name("ghost_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ghost","geiz","ziku_driver_geiz_belt_ghost",
+					() -> new RidewatchItem(new Item.Properties(),0,"_ghost","geiz","ziku_driver_geiz_belt_ghost",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+							.setSummonBelt((RiderDriverItem)Ghost_Rider_Items.GHOST_DRIVER.get())
+							.addSummonWeapon(Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
+							.addAltForm(Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_DAMASHII.get())
+							.addAltWeapon(Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltForm(Ghost_Rider_Items.TOUSAN_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_DAMASHII.get())
+							.addAltWeapon(Ghost_Rider_Items.TOUSAN_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltBelt(Ghost_Rider_Items.EYECON_DRIVER_G.get(), (RiderDriverItem)Ghost_Rider_Items.EYECON_DRIVER_G.get())
+							.addAltForm(Ghost_Rider_Items.MUGEN_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.MUGEN_DAMASHII.get(), (RiderFormChangeItem)Ghost_Rider_Items.MUGEN_GHOST_EYECON.get())
+							.addAltForm(Ghost_Rider_Items.SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.SPECTER_DAMASHII.get())
+							.addAltForm(Ghost_Rider_Items.NECROM_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.NECROM_DAMASHII.get())
+							.addAltForm(Ghost_Rider_Items.DARK_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.DARK_DAMASHII.get())
+							.addAltForm(Ghost_Rider_Items.ZERO_SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.ZERO_SPECTER_DAMASHII.get())
+							.addAltForm(Ghost_Rider_Items.PROTO_ORE_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.PROTO_ORE_DAMASHII.get())
+							.addAltForm(Ghost_Rider_Items.KANON_SPECTER_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.KANON_SPECTER_DAMASHII.get())
+							.addAltWeapon(Ghost_Rider_Items.MUSASHI_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU_2.get())
+							.addAltWeapon(Ghost_Rider_Items.EDISON_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_GUN.get())
+							.addAltWeapon(Ghost_Rider_Items.ROBIN_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_CONDOR_DENWOR.get())
+							.addAltWeapon(Ghost_Rider_Items.NEWTON_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_NAGINATA.get())
+							.addAltWeapon(Ghost_Rider_Items.BILLY_THE_KID_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_RIFLE.get())
+							.addAltWeapon(Ghost_Rider_Items.BEETHOVEN_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU.get(), Ghost_Rider_Items.GAN_GUN_SABER_NITOURYU_2.get())
+							.addAltWeapon(Ghost_Rider_Items.BENKEI_GHOST_EYECON.get(), Ghost_Rider_Items.GAN_GUN_SABER_HAMMER.get())
+							.addAltForm(Ghost_Rider_Items.GOEMON_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_GHOST_EYECON.get())
+							.addAltWeapon(Ghost_Rider_Items.GOEMON_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltForm(Ghost_Rider_Items.RYOMA_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_GHOST_EYECON.get())
+							.addAltWeapon(Ghost_Rider_Items.RYOMA_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltForm(Ghost_Rider_Items.HIMIKO_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_GHOST_EYECON.get())
+							.addAltWeapon(Ghost_Rider_Items.HIMIKO_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltForm(Ghost_Rider_Items.DARWIN_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.BOOST_GHOST_EYECON.get())
+							.addAltWeapon(Ghost_Rider_Items.DARWIN_GHOST_EYECON.get(), Ghost_Rider_Items.SUNGLASSESLASHER.get())
+							.addAltWeapon(Ghost_Rider_Items.RYUKI_GHOST_EYECON.get(), Ryuki_Rider_Items.DRAG_SABER.get())
+							.addAltWeapon(Ghost_Rider_Items.FAIZ_GHOST_EYECON.get(), Faiz_Rider_Items.FAIZ_EDGE.get())
+							.addAltWeapon(Ghost_Rider_Items.BLADE_GHOST_EYECON.get(), Blade_Rider_Items.BLAYROUZER.get())
+							.addAltWeapon(Ghost_Rider_Items.HIBIKI_GHOST_EYECON.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+							.addAltWeapon(Ghost_Rider_Items.KABUTO_GHOST_EYECON.get(), Kabuto_Rider_Items.KABUTO_KUNAI.get())
+							.addAltWeapon(Ghost_Rider_Items.DEN_O_GHOST_EYECON.get(), Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+							.addAltWeapon(Ghost_Rider_Items.DECADE_GHOST_EYECON.get(), Decade_Rider_Items.RIDE_BOOKER.get())
+							.addAltWeapon(Ghost_Rider_Items.OOO_GHOST_EYECON.get(), OOO_Rider_Items.MEDAJALIBUR.get())
+							.addAltWeapon(Ghost_Rider_Items.WIZARD_GHOST_EYECON.get(), Wizard_Rider_Items.WIZARSWORDSGUN.get())
+							.addAltWeapon(Ghost_Rider_Items.GAIM_GHOST_EYECON.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltWeapon(Ghost_Rider_Items.DRIVE_GHOST_EYECON.get(), Drive_Rider_Items.HANDLE_KEN.get(), Drive_Rider_Items.DOOR_JU.get())
+							.addAltForm(Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get(), (RiderFormChangeItem)Ghost_Rider_Items.FOURTYFIVE_HEISEI_DAMASHII.get(), (RiderFormChangeItem)Ghost_Rider_Items.FOURTYFIVE_HEISEI_GHOST_EYECON.get())
 							.addAlternative(GHOST_RIDEWATCH_ZI_O.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_R = ITEMS.register("decade_ex_aid_ridewatch_r",
@@ -377,11 +759,28 @@ public class Zi_O_Rider_Items {
 							.model_has_different_name("ex_aid_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> EX_AID_RIDEWATCH = ITEMS.register("ex_aid_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_ex_aid","zi_o","ziku_driver_zi_o_belt_ex_aid",
+					() -> new RidewatchItem(new Item.Properties(),0,"_ex_aid","zi_o","ziku_driver_zi_o_belt_ex_aid",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+							.setSummonBelt((RiderDriverItem)Ex_Aid_Rider_Items.GAMER_DRIVER_EX_AID.get())
+							.setSummonForm((RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get())
+							.addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
+							.addAltForm(Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get(), (RiderFormChangeItem)Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT_LV_1.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.MIGHTY_ACTION_X_GASHAT.get(), Items.AIR)
+							.addAltWeapon(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
+							.addAltForm(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHA_TROPHY.get(), (RiderFormChangeItem)Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
+							.addAltForm(Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), (RiderFormChangeItem)Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.MIGHTY_BROTHERS_XX_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.MAXIMUM_MIGHTY_X_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.HYPER_MUTEKI_GASHAT.get(), Ex_Aid_Rider_Items.GASHACON_KEY_SLASHER.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.KAIGEN_GHOST_GASHAT.get(), Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.FULL_THROTTLE_DRIVE_GASHAT.get(), Drive_Rider_Items.HANDLE_KEN.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.TOUKENDEN_GAIM_GASHAT.get(), Gaim_Rider_Items.DAIDAIMARU.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.BERCODE_WARRIOR_DECADE_GASHAT.get(), Decade_Rider_Items.RIDE_BOOKER.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.INSECT_WARS_KABUTO_GASHAT.get(), Kabuto_Rider_Items.KABUTO_KUNAI.get())
+							.addAltWeapon(Ex_Aid_Rider_Items.MIRROR_LABRYINTH_RYUKI_GASHAT.get(), Ryuki_Rider_Items.DRAG_SABER.get())
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).AddIncompatibleForm(DECADE_EX_AID_RIDEWATCH_L.asItem()).AddIncompatibleForm(DECADE_EX_AID_RIDEWATCH_R.asItem())
 							.addAlternative(DECADE_EX_AID_RIDEWATCH_L.get()).addAlternative(EX_AID_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
@@ -403,11 +802,103 @@ public class Zi_O_Rider_Items {
 							.model_has_different_name("build_ridewatch").has_basic_model());
 
 			public static final DeferredItem<Item> BUILD_RIDEWATCH = ITEMS.register("build_ridewatch",
-					() -> new RiderFormChangeItem(new Item.Properties(),0,"_build","zi_o","ziku_driver_zi_o_belt_build",
+					() -> new RidewatchItem(new Item.Properties(),0,"_build","zi_o","ziku_driver_zi_o_belt_build",
 							new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 							new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+							.setSummonBelt((RiderDriverItem)Build_Rider_Items.BUILD_DRIVER.get()).addSummonWeapon(Build_Rider_Items.DRILL_CRUSHER.get())
+							.addAltForm(Build_Rider_Items.GORILLA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DIAMOND_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.DIAMOND_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GORILLA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GATLING_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.GATLING_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TAKA_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), Build_Rider_Items.HAWK_GATLINGER.get())
+							.addAltWeapon(Build_Rider_Items.GATLING_FULL_BOTTLE.get(), Build_Rider_Items.HAWK_GATLINGER.get())
+							.addAltForm(Build_Rider_Items.NINJA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.COMIC_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.COMIC_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.NINJA_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.NINJA_FULL_BOTTLE.get(), Build_Rider_Items.KOMA_NINPOUTOU.get())
+							.addAltWeapon(Build_Rider_Items.COMIC_FULL_BOTTLE.get(), Build_Rider_Items.KOMA_NINPOUTOU.get())
+							.addAltForm(Build_Rider_Items.PANDA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.ROCKET_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.ROCKET_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.PANDA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.HARINEZUMI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SHOUBOUSHA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SHOUBOUSHA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.HARINEZUMI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.LION_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SOUJIKI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SOUJIKI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.LION_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.DRAGON_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DRAGON_FULL_BOTTLE_BUILD.get(), (RiderFormChangeItem)Build_Rider_Items.LOCK_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.LOCK_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DRAGON_FULL_BOTTLE_BUILD.get())
+							.addAltForm(Build_Rider_Items.KAIZOKU_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DENSHA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.DENSHA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KAIZOKU_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.KAIZOKU_FULL_BOTTLE.get(), Build_Rider_Items.KAIZOKU_HASSYAR.get())
+							.addAltWeapon(Build_Rider_Items.DENSHA_FULL_BOTTLE.get(), Build_Rider_Items.KAIZOKU_HASSYAR.get())
+							.addAltForm(Build_Rider_Items.OCTOPUS_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.LIGHT_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.LIGHT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.OCTOPUS_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.PHOENIX_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.ROBOT_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.ROBOT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.PHOENIX_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.WOLF_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SMAPHO_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SMAPHO_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.WOLF_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.UNICORN_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KESHIGOMU_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.KESHIGOMU_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.UNICORN_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.ROSE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.HELICOPTER_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.HELICOPTER_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.ROSE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.TURTLE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.WATCH_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.WATCH_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TURTLE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.KUMA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TELEVI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.TELEVI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KUMA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.KABUTOMUSHI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.CAMERA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.CAMERA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KABUTOMUSHI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SPIDER_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.REIZOUKO_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.REIZOUKO_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SPIDER_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.DOG_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.MIC_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.MIC_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DOG_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SANTA_CLAUS_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.CAKE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.CAKE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SANTA_CLAUS_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.TORA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.UFO_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.UFO_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TORA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.KUJIRA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.JET_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.JET_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KUJIRA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SHIKA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.PYRAMID_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.PYRAMID_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SHIKA_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.KIRIN_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SENPUUKI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SENPUUKI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.KIRIN_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.PENGUIN_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SKEBO_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SKEBO_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.PENGUIN_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SAME_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.BIKE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.BIKE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SAME_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.HACHI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SENSUIKAN_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SENSUIKAN_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.HACHI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SAI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DRYER_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.DRYER_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SAI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.BAT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.ENGINE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.ENGINE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.BAT_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.OBAKE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.MAGNET_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.MAGNET_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.OBAKE_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SCORPION_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GOLD_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.GOLD_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SCORPION_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.LOW_RABBIT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.FULLFULL_TANK_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.LOW_RABBIT_FULL_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
+							.addAltWeapon(Build_Rider_Items.FULLFULL_RABBIT_TANK_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
+							.addAltWeapon(Build_Rider_Items.GENIUS_FULL_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
+							.addAltForm(Build_Rider_Items.GOLD_RABBIT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SILVER_DRAGON_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.SILVER_DRAGON_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GOLD_RABBIT_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.MOMOTAROS_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DENSHA_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.MOMOTAROS_FULL_BOTTLE.get(), Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+							.addAltForm(Build_Rider_Items.RIDER_CARD_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.CAMERA_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.RIDER_CARD_FULL_BOTTLE.get(), Decade_Rider_Items.RIDE_BOOKER.get())
+							.addAltForm(Build_Rider_Items.TANTEI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.USB_MEMORY_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.USB_MEMORY_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TANTEI_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.MEDAL_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TAKA_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.MEDAL_FULL_BOTTLE.get(), OOO_Rider_Items.MEDAJALIBUR.get(), OOO_Rider_Items.MEDAGABURYU.get())
+							.addAltForm(Build_Rider_Items.YUUJOU_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.ROCKET_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.MAHOUTSUKAI_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DIAMOND_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.MAHOUTSUKAI_FULL_BOTTLE.get(), Wizard_Rider_Items.WIZARSWORDSGUN.get())
+							.addAltForm(Build_Rider_Items.ORANGE_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.LOCK_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.ORANGE_FULL_BOTTLE.get(), Gaim_Rider_Items.DAIDAIMARU.get(), Gaim_Rider_Items.MUSOU_SABER.get())
+							.addAltForm(Build_Rider_Items.PARKA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.OBAKE_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.PARKA_FULL_BOTTLE.get(), Ghost_Rider_Items.GAN_GUN_SABER_BLADE.get())
+							.addAltForm(Build_Rider_Items.DOCTOR_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GAME_FULL_BOTTLE.get())
+							.addAltForm(Build_Rider_Items.GAME_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DOCTOR_FULL_BOTTLE.get())
+							.addAltWeapon(Build_Rider_Items.DOCTOR_FULL_BOTTLE.get(), Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
+							.addAltWeapon(Build_Rider_Items.GAME_FULL_BOTTLE.get(), Ex_Aid_Rider_Items.GASHACON_BREAKER.get())
 							.AddIncompatibleForm(DECADE_RIDEWATCH.asItem()).AddIncompatibleForm(DECADE_BUILD_RIDEWATCH.asItem())
 							.addAlternative(BUILD_RIDEWATCH_GEIZ.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
