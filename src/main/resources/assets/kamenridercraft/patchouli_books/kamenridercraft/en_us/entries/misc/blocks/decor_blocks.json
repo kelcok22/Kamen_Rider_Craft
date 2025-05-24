@@ -13,8 +13,7 @@
 			"anchor": "kuuga_tomb",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_tomb",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside Kuuga's Tomb"
+			"text": "Found inside $(l:kuuga/structures/kuuga_tomb)Kuuga's Tomb$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
