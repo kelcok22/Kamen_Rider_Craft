@@ -32,19 +32,19 @@ public class Agito_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","agito","alter_ring_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_STORM = ITEMS.register("agito_storm",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","agito","alter_ring_belt_s",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_FLAME = ITEMS.register("agito_flame",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_flame","agito","alter_ring_belt_f",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_TRINITY = ITEMS.register("agito_trinity",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_trinity","agito","alter_ring_belt",
@@ -52,7 +52,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_BURNING = ITEMS.register("agito_burning",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_burning","agito","alter_ring_belt_b",
@@ -61,7 +61,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_SHINING = ITEMS.register("agito_shining",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","agito","alter_ring_belt_b",
@@ -70,14 +70,14 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gills","meta_factor_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> EXCEED_GILLS = ITEMS.register("exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed","gills","meta_factor_belt_e",
@@ -85,7 +85,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLD_EXCEED_GILLS = ITEMS.register("gold_exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_gold_exceed","gills","meta_factor_belt_g",
@@ -93,14 +93,15 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
-            .ChangeModel("gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().ChangeModel("gills_exceed.geo.json").AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","another_agito","ank_point_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-            		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)).AddToList(RiderTabs.AGITO_TAB_ITEM));
+            		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
     
     public static final DeferredItem<Item> MIRAGE_AGITO = ITEMS.register("agito_miracle",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","mirage_agito","alter_ring_mirage_belt",
@@ -109,7 +110,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().IsGlowing().IsBeltGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> ANOTHER_AGITO_KOJI = ITEMS.register("another_agito_koji",
@@ -117,7 +118,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
  
     public static final DeferredItem<Item> ANOTHER_AGITO_BURNING = ITEMS.register("another_agito_burning_form",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_burning","another_agito_koji","ank_point_belt_b",
@@ -125,7 +126,7 @@ public class Agito_Rider_Items {
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     
     public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",
@@ -135,38 +136,38 @@ public class Agito_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_X_CHIP = ITEMS.register("g3x",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_x","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-					.AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 3).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G3_MILD_CHIP = ITEMS.register("g3mild",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g3_mild","g_buckle_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 2).AddToList(RiderTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G4_CHIP = ITEMS.register("g4",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g4","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.POISON, 40, 0,true,false))
-					.AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 1).AddToList(RiderTabs.AGITO_TAB_ITEM));
   
     public static final DeferredItem<Item> G4_X_CHIP = ITEMS.register("g4x",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g4_x","g_buckle_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-            .AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(RiderTabs.AGITO_TAB_ITEM));
     
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","g1","g_buckle_belt_1",
             		new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false))
-					.AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
+					.IsGlowing().AddToList(GSystemChipProgrammer.G_CHIP, 10).AddToList(RiderTabs.AGITO_TAB_ITEM));
    
     public static final DeferredItem<Item> V1_CHIP = ITEMS.register("v1",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","v1","blank",
