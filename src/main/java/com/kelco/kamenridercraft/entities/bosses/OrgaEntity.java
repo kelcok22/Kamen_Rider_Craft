@@ -48,9 +48,9 @@ public class OrgaEntity extends BaseHenchmenEntity {
 	@Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-    	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<50
+    	if(!this.level().isClientSide()  && this.getHealth()<50
 		&& this.getItemBySlot(EquipmentSlot.FEET).getItem()!=Faiz_Rider_Items.ORGA_DRIVER.get()) {
-			playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
+			if(source.getEntity() instanceof Player playerIn)playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.orga"));
 			this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 			this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
 			this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
