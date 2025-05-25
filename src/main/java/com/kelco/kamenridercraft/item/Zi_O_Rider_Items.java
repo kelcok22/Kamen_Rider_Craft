@@ -217,7 +217,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
-					.addAltForm(Decade_Rider_Items.KUUGA_GROWING_CARD.get(), (RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_GROWING_AR.get())
+					.addAltForm(Decade_Rider_Items.KUUGA_GROWING_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.KUUGA_GROWING_AR.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
