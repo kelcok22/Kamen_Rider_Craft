@@ -130,10 +130,13 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         boolean fly = rider instanceof Player player && player.getAbilities().flying;
 
         if (get_Form_Item(itemstack,1).get_Stored_num()==2) return"blank";
+
         if(num==2) return get_Form_Item(itemstack,1).getFormName(fly);
-        else if(num==3) return get_Form_Item(itemstack,2).getFormName(fly);
-        else if(num==4 && riderName=="saber"&get_Form_Item(itemstack,3)==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get()) return get_Form_Item(itemstack,3).getFormName(fly)+"_saber";
-        else if(num==4) return get_Form_Item(itemstack,3).getFormName(fly);
+        else if(num==3 && riderName=="saber"&get_Form_Item(itemstack,3)==Saber_Rider_Items.LAMP_DO_ALNGINA_WONDER_RIDE_BOOK.get()) return get_Form_Item(itemstack,3).getFormName(fly)+"_saber";
+        else if(num==3) return get_Form_Item(itemstack,3).getFormName(fly);
+        else if(num==4) return get_Form_Item(itemstack,2).getFormName(fly);
+        else if (get_Form_Item(itemstack,1).get_Stored_num()==3)return "xross_"+riderName + "_base";
+
         else return riderName + "_base";
     }
 
@@ -173,10 +176,8 @@ public class SeikenSwordriverItem extends RiderDriverItem {
         if (equipmentSlot == EquipmentSlot.FEET) {
             return "belts/"+get_Form_Item(itemstack,1).getBeltTex();
         }
-        if (equipmentSlot == EquipmentSlot.HEAD) return get_Form_Item(itemstack,1).getFormName(fly);
-        else if (equipmentSlot == EquipmentSlot.CHEST) return get_Form_Item(itemstack,2).getFormName(fly);
-        else if (equipmentSlot == EquipmentSlot.LEGS) return get_Form_Item(itemstack,3).getFormName(fly);
-        else return get_Form_Item(itemstack,3).getFormName(fly);
+        if (equipmentSlot == EquipmentSlot.HEAD&get_Form_Item(itemstack, 1).get_Stored_num()==2) return get_Form_Item(itemstack,1).getFormName(fly);
+        else return "blank";
     }
 
 

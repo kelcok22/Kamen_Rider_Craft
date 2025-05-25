@@ -456,7 +456,7 @@ public class RiderFormChangeItem extends BaseItem {
                 }
                 else if (CanChange(player,belt,BELT)) {
                     if (RESET_FORM)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (RESET_FORM_MAIN&iscompatible(belt))RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
+                    if (RESET_FORM_MAIN&belt.Rider==RIDER_NAME)RiderDriverItem.reset_Form_Item(player.getItemBySlot(EquipmentSlot.FEET));
                     if (alsoChange1stSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange1stSlot, 1);
                     if (alsoChange2ndSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange2ndSlot, 2);
                     if (alsoChange3rdSlot !=null)RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),alsoChange3rdSlot, 3);

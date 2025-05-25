@@ -60,7 +60,7 @@ public class Saber_Rider_Items {
 
 
 	public static final DeferredItem<Item> BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS = ITEMS.register("brave_dragon_wonder_ride_book_xross",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_xross","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"xross_brave_dragon","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
