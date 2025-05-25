@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "zi_o_ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Zi-O's $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#zi_o)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Zi-O's $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver (Zi-O)$(/l)$(br2)Used to access Zi-O's $(l:zi_o/riders/zi_o#zi_o)base$(/l) form$(br2)Can summon $(l:zi_o/riders/zi_o)Kamen Rider Zi-O$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -438,7 +438,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_alpha_ridewatch",
 			"title": "Amazon Alpha Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:amazons/riders/amazon_alpha)Kamen Rider Amazon Alpha$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -449,7 +449,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_omega_ridewatch",
 			"title": "Amazon Omega Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:amazons/riders/amazon_omega)Kamen Rider Amazon Omega$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -460,7 +460,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_neo_ridewatch",
 			"title": "Amazon Neo Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:amazons/riders/amazon_neo)Kamen Rider Amazon Neo$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -471,7 +471,7 @@
 			"type": "patchouli:text",
 			"anchor": "genm_ridewatch",
 			"title": "Genm Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#genm)GenmArmor$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#genm)GenmArmor$(/l)$(br2)Can summon $(l:ex_aid/riders/genm)Kamen Rider Genm$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -715,7 +715,7 @@
 			"type": "patchouli:text",
 			"anchor": "ryusoulger_ridewatch",
 			"title": "Ryusoulger Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O UT (2019, apparel)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O UT (2019, apparel)$(br2)Can summon Ryusoul Red when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) while the Super Sentai Craft mod is installed"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -728,7 +728,7 @@
 			"type": "patchouli:text",
 			"anchor": "ichigo_ridewatch",
 			"title": "Ichigo Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:ichigo/riders/ichigo)Kamen Rider Ichigo$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -739,7 +739,7 @@
 			"type": "patchouli:text",
 			"anchor": "nigo_ridewatch",
 			"title": "Nigo Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:ichigo/riders/nigo)Kamen Rider Nigo$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -750,7 +750,7 @@
 			"type": "patchouli:text",
 			"anchor": "v3_ridewatch",
 			"title": "V3 Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:v3/riders/v3)Kamen Rider V3$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -761,7 +761,7 @@
 			"type": "patchouli:text",
 			"anchor": "riderman_ridewatch",
 			"title": "Riderman Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:v3/riders/riderman)Riderman$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -772,7 +772,7 @@
 			"type": "patchouli:text",
 			"anchor": "x_ridewatch",
 			"title": "X Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:x/riders/x)Kamen Rider X$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -783,7 +783,7 @@
 			"type": "patchouli:text",
 			"anchor": "amazon_ridewatch",
 			"title": "Amazon Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:amazon/riders/amazon)Kamen Rider Amazon$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -794,7 +794,7 @@
 			"type": "patchouli:text",
 			"anchor": "stronger_ridewatch",
 			"title": "Stronger Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Final Stage (2020, stage show)$(br2)Can summon $(l:stronger/riders/stronger)Kamen Rider Stronger$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -805,7 +805,7 @@
 			"type": "patchouli:text",
 			"anchor": "black_rx_ridewatch",
 			"title": "Black RX Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:black_rx/riders/black_rx)Kamen Rider Black RX$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -814,20 +814,9 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "bio_rider_ridewatch",
-			"title": "Bio Rider Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to access Barlckxs's $(l:zi_o/riders/barlckxs#giant)giant$(/l) form"
-		},
-		{
-			"type": "patchouli:crafting",
-			"title": " ",
-			"recipe": "kamenridercraft:zi_o/bio_rider_ridewatch"
-		},
-		{
-			"type": "patchouli:text",
 			"anchor": "robo_rider_ridewatch",
 			"title": "Robo Rider Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:black_rx/riders/black_rx#roborider)Roborider$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -836,9 +825,20 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "bio_rider_ridewatch",
+			"title": "Bio Rider Ridewatch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Used to access Barlckxs's $(l:zi_o/riders/barlckxs#giant)giant$(/l) form$(br2)Can summon $(l:black_rx/riders/black_rx#biorider)Biorider$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/bio_rider_ridewatch"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "shin_ridewatch",
 			"title": "Shin Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:shin/riders/shin)Kamen Rider Shin$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -849,7 +849,7 @@
 			"type": "patchouli:text",
 			"anchor": "zo_ridewatch",
 			"title": "ZO Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:zo/riders/zo)Kamen Rider ZO$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -860,7 +860,7 @@
 			"type": "patchouli:text",
 			"anchor": "j_ridewatch",
 			"title": "J Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O: Over Quartzer (2019, movie)$(br2)Can summon $(l:j/riders/j)Kamen Rider J$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -871,7 +871,7 @@
 			"type": "patchouli:text",
 			"anchor": "knight_ridewatch",
 			"title": "Knight Ridewatch",
-			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)"
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)$(br2)Can summon $(l:ryuki/riders/knight)Kamen Rider Knight$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -882,7 +882,7 @@
 			"type": "patchouli:text",
 			"anchor": "chalice_ridewatch",
 			"title": "Chalice Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can summon $(l:blade/riders/chalice)Kamen Rider Chalice$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -893,7 +893,7 @@
 			"type": "patchouli:text",
 			"anchor": "diend_ridewatch",
 			"title": "Diend Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Used to craft Diend's $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)$(br2)Used to craft Diend's $(l:decade/arsenal/neo_diendriver)Neo Diendriver$(/l)$(br2)Can summon $(l:decade/riders/diend)Kamen Rider Diend$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -904,7 +904,7 @@
 			"type": "patchouli:text",
 			"anchor": "beast_ridewatch",
 			"title": "Beast Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can summon $(l:wizard/riders/beast)Kamen Rider Beast$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -915,7 +915,7 @@
 			"type": "patchouli:text",
 			"anchor": "mach_ridewatch",
 			"title": "Mach Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can summon $(l:drive/riders/mach)Kamen Rider Mach$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -926,7 +926,7 @@
 			"type": "patchouli:text",
 			"anchor": "cross_z_ridewatch",
 			"title": "Cross-Z Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Can summon $(l:build/riders/cross-z)Kamen Rider Cross-Z$(/l) when shift-clicked as $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

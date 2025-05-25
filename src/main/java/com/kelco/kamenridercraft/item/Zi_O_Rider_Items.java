@@ -47,10 +47,39 @@ public class Zi_O_Rider_Items {
 			() -> new BlankRidewatchItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
     	    
     public static final DeferredItem<Item> ZI_O_RIDEWATCH = ITEMS.register("zi_o_ridewatch",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","zi_o","ziku_driver_zi_o_belt",
+            () -> new Zi_ORidewatchItem(new Item.Properties(),0,"","zi_o","ziku_driver_zi_o_belt",
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
+					.addSummonWeapon("kamenridercraft:zikan_girade")
+					.addAltWeapon("kamenridercraft:build_ridewatch", "kamenridercraft:drill_crusher_crusher")
+					.addAltWeapon("kamenridercraft:decade_ridewatch", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:survive_rekka", "kamenridercraft:decade_ryuki_ridewatch")
+					.addAltWeapon("kamenridercraft:survive_rekka", "kamenridercraft:drag_visor_zwei", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:faiz_axel_mission_memory", "kamenridercraft:decade_faiz_ridewatch")
+					.addAltWeapon("kamenridercraft:faiz_axel_mission_memory", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:kujaku_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:kujaku_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:condor_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:condor_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:foundation_x_kujaku_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:foundation_x_kujaku_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:foundation_x_condor_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:foundation_x_condor_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:zeus_kujaku_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:zeus_kujaku_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:zeus_condor_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:zeus_condor_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:taka_ankh_medal", "kamenridercraft:decade_ooo_ridewatch")
+					.addAltWeapon("kamenridercraft:taka_ankh_medal", "kamenridercraft:tajaspinner", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:eyecon_driver_g", "kamenridercraft:decade_ghost_ridewatch")
+					.addAltWeapon("kamenridercraft:eyecon_driver_g", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:mighty_brothers_xx_gashat", "kamenridercraft:decade_ex_aid_ridewatch_r")
+					.addAltWeapon("kamenridercraft:mighty_brothers_xx_gashat", "kamenridercraft:ride_heisaber")
+					.addAltForm("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:decade_build_ridewatch")
+					.addAltWeapon("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:drill_crusher_crusher", "kamenridercraft:ride_heisaber")
+					.addAltWeapon("kamenridercraft:zi_o_ii_ridewatch", "kamenridercraft:saikyo_girade")
+					.addAltWeapon("kamenridercraft:zi_o_trinity_ridewatch", "kamenridercraft:zikan_zax", "kamenridercraft:zikan_despear")
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 30));
 
 	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
@@ -224,6 +253,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_TITAN.get(), Kuuga_Rider_Items.TITAN_SWORD.get())
+					.addAltWeapon(Modded_item_core.GRANDGOURAM.get(), Modded_item_core.GRANDGOURAM_ROD.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_RIDEWATCH = ITEMS.register("agito_ridewatch",
@@ -303,6 +333,7 @@ public class Zi_O_Rider_Items {
 					.addAltForm(Modded_item_core.JINRAI_NO_SENSHI.get(), (RiderFormChangeItem)Modded_item_core.JINRAI_NO_SENSHI_BLADE.get())
 					.addAltWeapon(Blade_Rider_Items.EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
 					.addAltWeapon(Blade_Rider_Items.SILVER_EVOLUTION_CAUCASUS.get(), Blade_Rider_Items.KINGROUZER.get())
+					.addAltWeapon(Modded_item_core.HERCULESPADER.get(), Modded_item_core.HERCULESPADER_SWORD.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_RIDEWATCH = ITEMS.register("hibiki_ridewatch",
@@ -929,17 +960,38 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Reboot_Rider_Items.AMAZONS_DRIVER_ALPHA.get())
+			.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> AMAZON_OMEGA_RIDEWATCH = ITEMS.register("amazon_omega_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Reboot_Rider_Items.AMAZONS_DRIVER_OMEGA.get())
+			.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> AMAZON_NEO_RIDEWATCH = ITEMS.register("amazon_neo_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Reboot_Rider_Items.NEO_AMAZONS_DRIVER_NEO.get())
+			.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GENM_RIDEWATCH = ITEMS.register("genm_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_genm","geiz","ziku_driver_geiz_belt_genm",
+			() -> new RidewatchItem(new Item.Properties(),0,"_genm","geiz","ziku_driver_geiz_belt_genm",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
+					.setSummonBelt((RiderDriverItem)Ex_Aid_Rider_Items.GAMER_DRIVER_GENM.get())
+					.setSummonForm((RiderFormChangeItem)Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT.get())
+					.addSummonWeapon(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get())
+					.addAltForm(Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT.get(), (RiderFormChangeItem)Ex_Aid_Rider_Items.PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
+					.addAltWeapon(Ex_Aid_Rider_Items.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get(), Items.AIR)
+					.addAltBelt(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get(), (RiderDriverItem)Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get())
+					.addAltForm(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get(), (RiderFormChangeItem)Ex_Aid_Rider_Items.DANGEROUS_ZOBIE_GASHAT_BD.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get(), Items.AIR)
+					.addAltBelt(Ex_Aid_Rider_Items.THE_UNBEATABLE_GAME.get(), (RiderDriverItem)Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.THE_UNBEATABLE_GAME.get(), Items.AIR)
+					.addAltWeapon(Ex_Aid_Rider_Items.MAGIC_THE_WIZARD_GASHAT.get(), Wizard_Rider_Items.WIZARSWORDSGUN.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.JUNGLE_OOO_GASHAT.get(), OOO_Rider_Items.MEDAJALIBUR.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.BERCODE_WARRIOR_DECADE_GASHAT.get(), Decade_Rider_Items.RIDE_BOOKER.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.TIME_EXPRESS_DEN_O_GASHAT.get(), Den_O_Rider_Items.DEN_GASHER_SWORD.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.TAIKO_MASTER_HIBIKI_GASHAT.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get(), Hibiki_Rider_Items.ONGEKIBO_REKKA.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.KING_OF_POKER_BLADE_GASHAT.get(), Blade_Rider_Items.BLAYROUZER.get())
+					.addAltWeapon(Ex_Aid_Rider_Items.MOSHI_MOSHI_FAIZ_GASHAT.get(), Faiz_Rider_Items.FAIZ_EDGE.get())
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_RIDEWATCH = ITEMS.register("woz_ridewatch",
@@ -1016,68 +1068,96 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUSOULGER_RIDEWATCH = ITEMS.register("ryusoulger_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ICHIGO_RIDEWATCH = ITEMS.register("ichigo_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_ICHIGO.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> NIGO_RIDEWATCH = ITEMS.register("nigo_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.TYPHOON_NIGO.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> V3_RIDEWATCH = ITEMS.register("v3_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.DOUBLE_TYPHOON.get()).addAltWeapon(Modded_item_core.FLARESALAMANDER.get(), Modded_item_core.FLARESALAMANDER_SWORD.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDERMAN_RIDEWATCH = ITEMS.register("riderman_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDERMAN_BELT.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_RIDEWATCH = ITEMS.register("x_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.RIDOL.get()).addSummonWeapon(Ichigo_Rider_Items.RIDOL_STICK.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZON_RIDEWATCH = ITEMS.register("amazon_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.CONDORER.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> STRONGER_RIDEWATCH = ITEMS.register("stronger_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ELECTRER.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_RX_RIDEWATCH = ITEMS.register("black_rx_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).addSummonWeapon(Ichigo_Rider_Items.REVOLCANE.get()).addAltForm(Ichigo_Rider_Items.ROBO_CORE.get(), (RiderFormChangeItem)Ichigo_Rider_Items.RX_CORE.get()).addAltForm(Ichigo_Rider_Items.BIO_CORE.get(), (RiderFormChangeItem)Ichigo_Rider_Items.RX_CORE.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+
+	public static final DeferredItem<Item> ROBO_RIDER_RIDEWATCH = ITEMS.register("robo_rider_ridewatch",
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.ROBO_CORE.get()).addSummonWeapon(Ichigo_Rider_Items.VORTECHSHOOTER.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIO_RIDER_RIDEWATCH = ITEMS.register("bio_rider_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_biorider","barlckxs","ziku_driver_barlckxs_belt_biorider",
+			() -> new RidewatchItem(new Item.Properties(),0,"_biorider","barlckxs","ziku_driver_barlckxs_belt_biorider",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false))
+					.setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.SUN_RISER.get()).setSummonForm((RiderFormChangeItem)Ichigo_Rider_Items.BIO_CORE.get()).addSummonWeapon(Ichigo_Rider_Items.BIOBLADE.get())
 					.SetPalyerModelInvisible().IsGlowing().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
-	public static final DeferredItem<Item> ROBO_RIDER_RIDEWATCH = ITEMS.register("robo_rider_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
-
 	public static final DeferredItem<Item> SHIN_RIDEWATCH = ITEMS.register("shin_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.GRASSHOPPER_DNA.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZO_RIDEWATCH = ITEMS.register("zo_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.ZO_CORE.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> J_RIDEWATCH = ITEMS.register("j_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ichigo_Rider_Items.J_SPIRIT.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIGHT_RIDEWATCH = ITEMS.register("knight_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Ryuki_Rider_Items.KNIGHTDRIVER.get())
+			.addSummonWeapon(Ryuki_Rider_Items.DARK_VISOR.get())
+			.addAltForm(Ryuki_Rider_Items.RIDE_SABER_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.ADVENT_CARD.get())
+			.addAltForm(Ryuki_Rider_Items.DARK_VISOR_ZWEI_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_SHIPPU.get())
+			.addAltForm(Ryuki_Rider_Items.DARK_BLADE_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_SHIPPU.get())
+			.addAltForm(Ryuki_Rider_Items.DARK_ARROW_VENT.get(), (RiderFormChangeItem)Ryuki_Rider_Items.SURVIVE_SHIPPU.get())
+			.addAltWeapon(Ryuki_Rider_Items.RIDE_SABER_VENT.get(), Ryuki_Rider_Items.RIDE_SABER.get())
+			.addAltWeapon(Ryuki_Rider_Items.WING_LANCER_VENT.get(), Ryuki_Rider_Items.WING_LANCER.get())
+			.addAltWeapon(Ryuki_Rider_Items.SURVIVE_SHIPPU.get(), Ryuki_Rider_Items.DARK_BLADE.get(), Ryuki_Rider_Items.DARK_SHIELD.get())
+			.addAltWeapon(Ryuki_Rider_Items.DARK_VISOR_ZWEI_VENT.get(), Ryuki_Rider_Items.DARK_BLADE.get(), Ryuki_Rider_Items.DARK_SHIELD.get())
+			.addAltWeapon(Ryuki_Rider_Items.DARK_BLADE_VENT.get(), Ryuki_Rider_Items.DARK_BLADE.get(), Ryuki_Rider_Items.DARK_SHIELD.get())
+			.addAltWeapon(Ryuki_Rider_Items.DARK_ARROW_VENT.get(), Ryuki_Rider_Items.DARK_ARROW.get())
+			.addAltWeapon(Modded_item_core.DARKWING.get(), Modded_item_core.DARKWING_SWORD.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHALICE_RIDEWATCH = ITEMS.register("chalice_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Blade_Rider_Items.CHALICEROUZER.get()).addSummonWeapon(Blade_Rider_Items.CHALICE_ARROW.get())
+			.addAltWeapon(Blade_Rider_Items.EVOLUTION_PARADOXA.get(), Blade_Rider_Items.WILD_SLASHER.get(), Blade_Rider_Items.WILD_SLASHER.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_RIDEWATCH = ITEMS.register("diend_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Decade_Rider_Items.DIEND_BELT.get()).addSummonWeapon(Decade_Rider_Items.DIENDRIVER.get())
+			.addAltForm(Decade_Rider_Items.DECADE_CARD.get(), (RiderFormChangeItem)Decade_Rider_Items.DIEND_GREEN_CARD.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_RIDEWATCH = ITEMS.register("beast_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Wizard_Rider_Items.BEAST_DRIVER.get()).addSummonWeapon(Wizard_Rider_Items.DICE_SABER.get())
+			.addAltForm(Wizard_Rider_Items.LAND_DRAGON_WIZARD_RING.get(), (RiderFormChangeItem)Wizard_Rider_Items.LAND_DRAGON_WIZARD_RING_BEAST.get())
+			.addAltWeapon(Wizard_Rider_Items.HYPER_RING.get(), Wizard_Rider_Items.MIRAGE_MAGNUM.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> MACH_RIDEWATCH = ITEMS.register("mach_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Drive_Rider_Items.MACH_DRIVER_HONOH.get()).addSummonWeapon(Drive_Rider_Items.ZENRIN_SHOOTER.get())
+			.addAltWeapon(Drive_Rider_Items.SHIFT_RUMBLE_DUMP.get(), Drive_Rider_Items.RUMBLE_SMASHER.get())
+			.addAltForm(Drive_Rider_Items.SHIFT_DEAD_HEAT.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get())
+			.addAltForm(Drive_Rider_Items.SHIFT_MAD_DOCTOR.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_DEAD_HEAT_MACH.get())
+			.addAltForm(Drive_Rider_Items.SIGNAL_CHASER.get(), (RiderFormChangeItem)Drive_Rider_Items.SIGNAL_CHASER_MACH.get())
+			.addAltWeapon(Drive_Rider_Items.SIGNAL_CHASER.get(), Drive_Rider_Items.SHINGOU_AX.get())
+			.addAltForm(Drive_Rider_Items.RHINO_SUPER_VIRAL_CORE.get(), (RiderFormChangeItem)Drive_Rider_Items.SHIFT_VIRAL_CORE.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROSS_Z_RIDEWATCH = ITEMS.register("cross_z_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem)Build_Rider_Items.BUILD_DRIVER_CROSS_Z.get()).addSummonWeapon(Build_Rider_Items.BEAT_CROSSER.get())
+			.addAltBelt(Build_Rider_Items.DRAGON_SCLASH_JELLY.get(), (RiderDriverItem)Build_Rider_Items.SCLASH_DRIVER.get())
+			.addAltWeapon(Build_Rider_Items.DRAGON_SCLASH_JELLY.get(), Build_Rider_Items.TWIN_BREAKER.get())
+			.addAltBelt(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), (RiderDriverItem)Build_Rider_Items.SCLASH_DRIVER.get())
+			.addAltForm(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.TAKA_FULL_BOTTLE_CROSS_Z.get())
+			.addAltWeapon(Build_Rider_Items.TAKA_FULL_BOTTLE.get(), Build_Rider_Items.TWIN_BREAKER.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINOBI_MIRIDEWATCH = ITEMS.register("shinobi_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shinobi","woz","beyondriver_belt",

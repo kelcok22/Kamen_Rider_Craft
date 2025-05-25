@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Zi-O",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon other Riders by shift-clicking Ridewatches$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)Ziku Driver$(/l)$(br2)Can summon other Riders by shift-clicking Ridewatches (forms can be chosen through your off-hand)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
 		},
 		{
 			"type": "patchouli:entity",

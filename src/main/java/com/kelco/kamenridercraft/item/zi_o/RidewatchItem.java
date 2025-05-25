@@ -30,10 +30,7 @@ public class RidewatchItem extends RiderFormChangeItem {
     private Map<Item, RiderFormChangeItem[]> summonAltForms = new HashMap<>();
     private Map<Item, RiderDriverItem> summonAltBelts = new HashMap<>();
     private Map<Item, Item[]> summonAltWeapons = new HashMap<>();
-    private Integer summonNeoBelt = null;
-    private Integer summonNeoForm = null;
-    private List<Object> summonWeapons = new ArrayList<>(2);
-    private int summonAmount = 1;
+    private List<Item> summonWeapons = new ArrayList<>(2);
 
     public RidewatchItem( Properties properties,int belt,String formName,String ridername,String beltTex, MobEffectInstance... effects) {
         super(properties, belt, formName, ridername, beltTex, effects);
@@ -41,11 +38,6 @@ public class RidewatchItem extends RiderFormChangeItem {
 
     public RidewatchItem setSummonBelt(RiderDriverItem belt) {
         this.summonBelt = belt;
-        return this;
-    }
-
-    public RidewatchItem setSummonBelt(int neoBelt) {
-        this.summonNeoBelt = neoBelt;
         return this;
     }
 
@@ -69,66 +61,47 @@ public class RidewatchItem extends RiderFormChangeItem {
         return this;
     }
 
-    public RidewatchItem setSummonForm(int neoForm) {
-        this.summonNeoForm = neoForm;
-        return this;
-    }
-
     public RidewatchItem addSummonWeapon(Item weapon) {
         this.summonWeapons.add(weapon);
         return this;
     }
 
-    public RidewatchItem addSummonWeapon(int neoWeapon) {
-        this.summonWeapons.add(neoWeapon);
-        return this;
-    }
-
     public void summon(ItemStack stack, Level level, Player player) {
-        if (this.summonNeoBelt != null) this.summonBelt = (RiderDriverItem) Zi_O_Rider_Items.REIWA_SUMMON_BELTS.get(this.summonNeoBelt);
-        
-        for (int i = 0; i < this.summonAmount; i++) {
-		    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
-		    if (summon != null) {
-		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-		    	summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.HEAD));
-		    	summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.TORSO));
-		    	summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.LEGS));
+		RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+		if (summon != null) {
+			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
+			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.HEAD));
+			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.TORSO));
+			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.LEGS));
+            Item key = player.getItemBySlot(EquipmentSlot.OFFHAND).getItem();
 
-		    	if (this.summonAltBelts.containsKey(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())) {
-                    summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonAltBelts.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())));
-                } else summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonBelt));
-                
-                if (this.summonAltWeapons.containsKey(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())) {
-                    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonAltWeapons.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())[0]));
-                    if (this.summonAltWeapons.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem()).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(this.summonAltWeapons.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())[1]));
-                } else if (!summonWeapons.isEmpty()) {
-                    summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonWeapons.get(0) instanceof Item item ? item : Zi_O_Rider_Items.REIWA_SUMMON_WEAPONS.get((int) this.summonWeapons.get(0))));
-                    if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1) instanceof Item item ? item : Zi_O_Rider_Items.REIWA_SUMMON_WEAPONS.get((int) this.summonWeapons.get(1))));
-                }
-
-                if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, 1);
-                if (this.summonNeoForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), Zi_O_Rider_Items.REIWA_SUMMON_BELTS.get(this.summonNeoForm), 1);
-                if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
-                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
-
-                    if (summonAltForms.containsKey(formItem)) {
-                        for (RiderFormChangeItem item : this.summonAltForms.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())) {
-                        RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
-                        }
-                    }
-                } else if (this.summonAltForms.containsKey(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())) {
-                    for (RiderFormChangeItem item : this.summonAltForms.get(player.getItemBySlot(EquipmentSlot.OFFHAND).getItem())) {
-                        RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
-                    }
-                }
+			if (this.summonAltBelts.containsKey(key)) {
+                summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonAltBelts.get(key)));
+            } else summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonBelt));
             
-		    	level.addFreshEntity(summon);
-		    	summon.bindToPlayer(player);
-                if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
-                player.awardStat(Stats.ITEM_USED.get(this));
-		    }
-        }
+            if (this.summonAltWeapons.containsKey(key)) {
+                summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonAltWeapons.get(key)[0]));
+                if (this.summonAltWeapons.get(key).length > 1) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(this.summonAltWeapons.get(key)[1]));
+            } else if (!summonWeapons.isEmpty()) {
+                summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(this.summonWeapons.get(0)));
+                if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
+            }
+
+            if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, 1);
+            if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
+                RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
+            }
+            if (this.summonAltForms.containsKey(key)) {
+                for (RiderFormChangeItem item : this.summonAltForms.get(key)) {
+                    RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), item, item.getSlot());
+                }
+            }
+        
+			level.addFreshEntity(summon);
+			summon.bindToPlayer(player);
+            if (!player.isCreative()) player.getCooldowns().addCooldown(this, 200);
+            player.awardStat(Stats.ITEM_USED.get(this));
+		}
     }
 
     @Override
@@ -137,7 +110,7 @@ public class RidewatchItem extends RiderFormChangeItem {
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
         if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
-        && (RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get()
+        && (RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get() && (this != Zi_O_Rider_Items.BIO_RIDER_RIDEWATCH.get() && this != Zi_O_Rider_Items.GENM_RIDEWATCH.get())
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get())) {
             summon(itemstack, level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
