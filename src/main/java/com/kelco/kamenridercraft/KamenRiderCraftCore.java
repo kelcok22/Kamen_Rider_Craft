@@ -114,6 +114,7 @@ public class KamenRiderCraftCore
         ModSounds.register(modEventBus);
         RiderPotPattern.register(modEventBus);
         Modded_item_core.register(modEventBus);
+        Reboot_Rider_Items.register(modEventBus);
         Ichigo_Rider_Items.register(modEventBus);
         Kuuga_Rider_Items.register(modEventBus);
         Agito_Rider_Items.register(modEventBus);
@@ -141,7 +142,6 @@ public class KamenRiderCraftCore
         Geats_Rider_Items.register(modEventBus);
         Gotchard_Rider_Items.register(modEventBus);
         Gavv_Rider_Items.register(modEventBus);
-        Reboot_Rider_Items.register(modEventBus);
         Miscellaneous_Rider_Items.register(modEventBus);
         Rider_Blocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
