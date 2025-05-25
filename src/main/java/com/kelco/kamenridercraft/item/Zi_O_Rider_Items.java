@@ -217,6 +217,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.setSummonBelt((RiderDriverItem)Kuuga_Rider_Items.ARCLE.get())
+					.addAltForm(Decade_Rider_Items.KUUGA_GROWING_CARD.get(), (RiderFormChangeItem)Kuuga_Rider_Items.KUUGA_GROWING_AR.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_RISING_DRAGON.get(), Kuuga_Rider_Items.DRAGON_ROD.get())
 					.addAltWeapon(Kuuga_Rider_Items.KUUGA_PEGASUS.get(), Kuuga_Rider_Items.PEGASUS_BOWGUN.get())
@@ -408,6 +409,7 @@ public class Zi_O_Rider_Items {
 					.addAltForm(OOO_Rider_Items.TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
 					.addAltForm(OOO_Rider_Items.FOUNDATION_X_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
 					.addAltForm(OOO_Rider_Items.ZEUS_TAKA_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
+					.addAltForm(OOO_Rider_Items.TAKA_ANKH_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
 					.addAltForm(OOO_Rider_Items.KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
 					.addAltForm(OOO_Rider_Items.FOUNDATION_X_KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
 					.addAltForm(OOO_Rider_Items.ZEUS_KUJAKU_MEDAL.get(), (RiderFormChangeItem)OOO_Rider_Items.CONDOR_MEDAL.get())
@@ -494,6 +496,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon(OOO_Rider_Items.TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
 					.addAltWeapon(OOO_Rider_Items.FOUNDATION_X_TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
 					.addAltWeapon(OOO_Rider_Items.ZEUS_TAKA_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
+					.addAltWeapon(OOO_Rider_Items.TAKA_ANKH_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
 					.addAltWeapon(OOO_Rider_Items.KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
 					.addAltWeapon(OOO_Rider_Items.FOUNDATION_X_KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
 					.addAltWeapon(OOO_Rider_Items.ZEUS_KUJAKU_MEDAL.get(), OOO_Rider_Items.TAJASPINNER.get())
