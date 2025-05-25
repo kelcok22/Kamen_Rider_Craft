@@ -109,16 +109,16 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> GEKITOTSU_ROBOTS_GASHAT = ITEMS.register("gekitotsu_robots_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"robot_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)).SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
 
 	public static final DeferredItem<Item> DOREMIFA_BEAT_GASHAT = ITEMS.register("doremifa_beat_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"beat_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2)
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor().ChangeSlot(2)
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
 
 	public static final DeferredItem<Item> JET_COMBAT_GASHAT = ITEMS.register("jet_combat_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"combat_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2)
+					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false)).SetFormToArmor().ChangeSlot(2)
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
 
 	public static final DeferredItem<Item> GIRI_GIRI_CHAMBARA_GASHAT = ITEMS.register("giri_giri_chambara_gashat",
@@ -136,7 +136,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> SHAKARIKI_SPORTS_GASHAT = ITEMS.register("shakariki_sports_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"sports_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 10));
 
 	public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW = ITEMS.register("drago_knight_hunter_z_gashat_claw",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"hunter_gamer_claw","lazer","gamer_driver_mighty_action_x",
@@ -161,8 +161,8 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT = ITEMS.register("drago_knight_hunter_z_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"hunter_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get())
-			.AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor()
+					.addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_LV_1 = ITEMS.register("proto_mighty_action_x_gashat_lv_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv1","genm","gamer_driver_proto_mighty_action_x_lv_1",
@@ -222,14 +222,14 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> PROTO_GEKITOTSU_ROBOTS_GASHAT = ITEMS.register("proto_gekitotsu_robots_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_robot_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_DOREMIFA_BEAT_GASHAT = ITEMS.register("proto_doremifa_beat_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_beat_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
@@ -244,7 +244,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false))
-			.addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			.addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).SetFormToArmor().ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_GIRI_GIRI_CHAMBARA_GASHAT = ITEMS.register("proto_giri_giri_chambara_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"proto_chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -268,7 +268,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(Effect_core.BUGSTER, 40, 1,true,false)).SetFormToArmor()
 			.addAlternative(PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER.get()).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 
@@ -309,7 +309,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(Effect_core.BUGSTER, 40, 2,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).SetFormToArmor()
-			.addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			.addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN = ITEMS.register("proto_mighty_action_x_gashat_origin",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_lv0","genm","gamer_driver_proto_mighty_action_x_origin",
@@ -373,7 +373,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-			.AddCompatibilityList(new String[] {"chronos"}).addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
+			.addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT_RED_EYES= ITEMS.register("toki_meki_crisis_gashat_red_eyes",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_red","poppy","gashacon_bugvisor_ii_poppy",
@@ -413,19 +413,19 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> JU_JU_BURGER_GASHAT = ITEMS.register("ju_ju_burger_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"burger_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 5));
 
 	public static final DeferredItem<Item> NIGHT_OF_SAFARI_GASHAT = ITEMS.register("night_of_safari_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"safari_gamer","ex_aid","gamer_driver_mighty_action_x",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2)
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor().ChangeSlot(2)
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 3));
 
 	public static final DeferredItem<Item> BANG_BANG_TANK_GASHAT = ITEMS.register("bang_bang_tank_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"tank_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers).ChangeSlot(2)
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)).SetFormToArmor().ChangeSlot(2)
 			.AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_GASHAT, 2));
 
 	
@@ -454,22 +454,22 @@ public class Ex_Aid_Rider_Items {
 
 	public static final DeferredItem<Item> PAC_ADVENTURE_GASHAT = ITEMS.register("pac_adventure_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"pac_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(GameCreator.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAMITSA_GASHAT = ITEMS.register("famitsa_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"famista_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(GameCreator.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> XEVIOUS_GASHAT = ITEMS.register("xevious_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"xevious_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(GameCreator.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> GALAXIAN_GASHAT = ITEMS.register("galaxian_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"galaxian_gamer","ex_aid","gamer_driver_mighty_action_x",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).SetFormToArmor().AddCompatibilityList(BaseGamerDriverUsers)
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).SetFormToArmor()
 			.ChangeSlot(2).AddToList(GameCreator.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIKO_NO_TATSUJIN_GASHAT = ITEMS.register("taiko_no_tatsujin_gashat",
@@ -527,7 +527,7 @@ public class Ex_Aid_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-			.AddCompatibilityList(new String[] {"para_dx_lv99"}).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.EX_AID_TAB_ITEM).AddToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
 	public static final DeferredItem<Item> TADDLE_FANTASY_GASHAT = ITEMS.register("taddle_fantasy_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"fantasy_gamer","brave","gamer_driver_taddle_fantasy",
@@ -763,7 +763,7 @@ public class Ex_Aid_Rider_Items {
 	public static final DeferredItem<Item> BERCODE_WARRIOR_DECADE_GASHAT = ITEMS.register("barcode_warrior_decade_gashat",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_decade","ex_aid","gamer_driver_barcode_warrior_decade",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddCompatibilityList(new String[] {"genm"})
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false))
 			.alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(GanbarizingMachine.BLANK_GASHAT, 1).AddToList(RiderTabs.EX_AID_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOKIDOKI_MAKAI_CASTLE_KIVA_GASHAT = ITEMS.register("dokidoki_makai_castle_kiva_gashat",
