@@ -145,7 +145,7 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.EXPLOSION_SLASH, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.CHRISTMAS, 40, 0,true,false))
-					.AddCompatibilityList(new String[] {"gavv"}).AddToList(CAKE,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(CAKE,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
@@ -188,7 +188,7 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookie","bitter_gavv","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-					.AddCompatibilityList(new String[] {"bake"}).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKIBAKISTICK_GOCHIZO = ITEMS.register("bakibakistick_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_bitter_gavv_belt")
@@ -354,7 +354,7 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tirolchocolate","valen","henshin_belt_gavv_belt_chocodan",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.SHOT_BOOST, 40, 0,true,false))
-					.AddCompatibilityList(new String[] {"gavv"}).AddToList(CHOCO,2).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+					.AddToList(CHOCO,2).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> STRAWBERRYJELLYTIROL_GOCHIZO = ITEMS.register("strawberryjellytirol_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_strawberryjellytirol","do_not_work","valenbuckle_belt")
