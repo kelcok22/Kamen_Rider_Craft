@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gackt_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:decade/items/blank_card)Blank Rider Cards$(/l)"
 		}
 	]
 }
