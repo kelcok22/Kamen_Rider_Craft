@@ -396,6 +396,8 @@
   "effect.kamenridercraft.rider_poison_hand.description": "Poisons any mob you hit with an empty hand.",
 
   "owner.kamenridercraft.decade":"Decade's %s",
+  "owner.kamenridercraft.zi_o":"Zi-O's %s",
+  "owner.kamenridercraft.geiz":"Geiz's %s",
   "owner.kamenridercraft.zein":"Zein's %s",
 
   "henshin.kamenridercraft.henshin":"Henshin!",
@@ -7858,6 +7860,7 @@
 
 "entity.kamenridercraft.rider_summon": "Rider Summon",
 "entity.kamenridercraft.complete_summon": "Complete Summon",
+"entity.kamenridercraft.grand_summon": "Grand Summon",
 "entity.kamenridercraft.paradx_summon": "Para-DX Summon",
 "entity.kamenridercraft.decade_armor_ex_aid": "DecadeArmor Ex-Aid Form",
 "entity.kamenridercraft.vice": "Vice",

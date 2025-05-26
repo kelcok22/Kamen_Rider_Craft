@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
@@ -72,7 +72,7 @@ public class OhmaRidewatchItem extends BaseItem {
         if (!level.isClientSide() && this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
             player.sendSystemMessage(Component.translatable("message.kamenridercraft.ryusoul_red_fail"));
         } else {
-		    RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
+		    GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		    if (summon != null) {
 		    	summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
                 if (this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get()) {
@@ -123,7 +123,9 @@ public class OhmaRidewatchItem extends BaseItem {
         ItemStack itemstack = player.getItemInHand(usedHand);
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
-        if (player.isShiftKeyDown() && BELT == Zi_O_Rider_Items.OHMA_ZI_O_DRIVER.get() && ((RiderDriverItem)BELT).isTransformed(player)) {
+        if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
+        && (RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
+        || RiderDriverItem.get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(itemstack, level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }

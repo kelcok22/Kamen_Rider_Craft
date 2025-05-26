@@ -77,17 +77,15 @@ public class AttackRideCardItem extends BaseItem {
 
 	public void attackride(ItemStack itemstack, Level level, Player player) {
 		if (EFFECTS != null) {
-			for (int i = 0; i < EFFECTS.size(); i++) {
-				player.addEffect(new MobEffectInstance(EFFECTS.get(i).getEffect(),EFFECTS.get(i).getDuration(),EFFECTS.get(i).getAmplifier(),true,false));
-			}
+			for (MobEffectInstance effect : EFFECTS) player.addEffect(effect);
 		}
 		if (ITEMS.size() != 0) {
-			for (int i = 0; i < ITEMS.size(); i++) {
-				ItemStack item = new ItemStack(ITEMS.get(i), 1);
-				item.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", ITEMS.get(i).getName(item).getString()));
-				if (item.isDamageableItem() && ServerConfig.summonedItemDurability != 0) item.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
+			for (Item item : ITEMS) {
+				ItemStack stack = new ItemStack(item, 1);
+				stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));
+				if (stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
 
-				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), item, 0, 0, 0);
+				ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack, 0, 0, 0);
 				entity.setPickUpDelay(0);
 				level.addFreshEntity(entity);
 			}

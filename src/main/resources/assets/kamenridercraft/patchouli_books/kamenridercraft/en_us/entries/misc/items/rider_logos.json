@@ -179,9 +179,16 @@
 			"text": "Banner patterns:$(li)Build Logo$(li)Touto Emblem$(li)Hokuto Emblem$(li)Seito Emblem"
 		},
 		{
+			"type": "patchouli:empty"
+		},
+		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:zi_o/zi_o_logo",
-			"text": "Banner patterns:$(li)Zi-O Logo"
+			"text": "Banner patterns:$(li)Zi-O Logo$(br2)Can be used by $(l:zi_o/riders/zi_o#ohmaform)Kamen Rider Zi-O OhmaForm$(/l) or $(l:zi_o/riders/ohma_zi_o)Ohma Zi-O$(/l) to summon different Riders based on off-hand items"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l): $(l:kuuga/items/kuuga_manga)Kuuga Manga$(/l)$(li)$(l:g/riders/g)Kamen Rider G$(/l): $(l:g/items/goro_wine_bottle)Goro Wine Bottle$(/l)$(li)$(l:gaim/riders/zangetsu#kachidoki)Kamen Rider Zangetsu Kachidoki Arms$(/l): $(l:gaim/items/lockseeds#zangetsu_kachidoki_lockseed)Shin Kachidoki Lockseed$(/l)$(li)$(l:drive/riders/brain)Kamen Rider Brain$(/l): $(l:drive/items/roidmude_cores#roidmude_core_003)Roidmude Core 003$(/l)$(li)$(l:gorider/riders/akarider)Akarider$(/l): $(l:gorider/items/gorider_cards#akarider_card)Akarider Card$(/l)$(li)$(l:gorider/riders/aorider)Aorider$(/l): $(l:gorider/items/gorider_cards#aorider_card)Aorider Card$(/l)$(li)$(l:gorider/riders/kirider)Kirider$(/l): $(l:gorider/items/gorider_cards#kirider_card)Kirider Card$(/l)$(li)$(l:gorider/riders/momorider)Momorider$(/l): $(l:gorider/items/gorider_cards#momorider_card)Momorider Card$(/l)$(li)$(l:gorider/riders/midorider)Midorider$(/l): $(l:gorider/items/gorider_cards#midorider_card)Midorider Card$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
