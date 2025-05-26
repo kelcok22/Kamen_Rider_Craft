@@ -96,7 +96,6 @@ public class SengokuDriverItem extends RiderDriverItem {
 		switch (currentSlot) {
 			case HEAD, LEGS ->{
 			 return true;
-
 			}
 			case CHEST -> {
 				if (part =="head") return true;
