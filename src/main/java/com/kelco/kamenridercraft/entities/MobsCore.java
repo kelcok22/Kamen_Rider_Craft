@@ -1120,38 +1120,23 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
                   () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":rider_summon"));
 
-    //      public static final DeferredItem<DeferredSpawnEggItem> RIDER_SUMMON_SPAWN_EGG = ITEMS.register("rider_summon_spawn_egg",
-    //              () -> new DeferredSpawnEggItem(RIDER_SUMMON, 0xEC008C, 0x222222, new Item.Properties()));
-
     public static final DeferredHolder<EntityType<?>, EntityType<CompleteSummonEntity>> COMPLETE_SUMMON = MOBLIST.register("complete_summon",
                   () -> EntityType.Builder.of(CompleteSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":complete_summon"));
-
-          //public static final DeferredItem<DeferredSpawnEggItem> COMPLETE_SUMMON_SPAWN_EGG = ITEMS.register("complete_summon_spawn_egg",
-          //        () -> new DeferredSpawnEggItem(RIDER_SUMMON, 0xEC008C, 0x222222, new Item.Properties()));
+          
+    public static final DeferredHolder<EntityType<?>, EntityType<GrandSummonEntity>> GRAND_SUMMON = MOBLIST.register("grand_summon",
+                  () -> EntityType.Builder.of(GrandSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":grand_summon"));
           
           public static final DeferredHolder<EntityType<?>, EntityType<ParaDXSummonEntity>> PARADX_SUMMON = MOBLIST.register("paradx_summon",
                   () -> EntityType.Builder.of(ParaDXSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":paradx_summon"));
-
-          //public static final DeferredItem<DeferredSpawnEggItem> PARADX_SUMMON_SPAWN_EGG = ITEMS.register("paradx_summon_spawn_egg",
-          //        () -> new DeferredSpawnEggItem(PARADX_SUMMON, 0xffa500, 0x00bccf, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<DecadeArmorExAidEntity>> DECADE_ARMOR_EX_AID = MOBLIST.register("decade_armor_ex_aid",
                   () -> EntityType.Builder.of(DecadeArmorExAidEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":decade_armor_ex_aid"));
-
-          //public static final DeferredItem<DeferredSpawnEggItem> DECADE_ARMOR_EX_AID_SPAWN_EGG = ITEMS.register("decade_armor_ex_aid_spawn_egg",
-          //        () -> new DeferredSpawnEggItem(DECADE_ARMOR_EX_AID, 0xffa500, 0x00bccf, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<ViceEntity>> VICE = MOBLIST.register("vice",
                   () -> EntityType.Builder.of(ViceEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":vice"));
-
-          //public static final DeferredItem<DeferredSpawnEggItem> VICE_SPAWN_EGG = ITEMS.register("vice_spawn_egg",
-          //        () -> new DeferredSpawnEggItem(VICE, 0xeaeaea, 0xd9a900, new Item.Properties()));
           
           public static final DeferredHolder<EntityType<?>, EntityType<WhippedSoldierEntity>> WHIPPED_SOLDIER = MOBLIST.register("whipped_soldier",
                   () -> EntityType.Builder.of(WhippedSoldierEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":whipped_soldier"));
-
-          //public static final DeferredItem<DeferredSpawnEggItem> WHIPPED_SOLDIER_SPAWN_EGG = ITEMS.register("whipped_soldier_spawn_egg",
-          //        () -> new DeferredSpawnEggItem(WHIPPED_SOLDIER, 0xeaeaea, 0xd9a900, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<ChairEntity>>CHAIR_ENTITY = MOBLIST.register("chair_entity",
                     () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC).sized(0.5f, 0.6f).build("chair_entity"));
