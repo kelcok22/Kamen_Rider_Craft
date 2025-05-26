@@ -9,11 +9,8 @@
 			"text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Used by Drive's $(l:drive/riders/drive#mad_doctor)Type Wild Doctor$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:cure_quicker",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/cure_quicker"
 		}
 	]
 }
