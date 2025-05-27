@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:raidenji_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kesuzo_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:mitemirror_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:energyl_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:panpakaparka_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:televi_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:timelord_ride_chemy_card",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:smaphone_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:renkingrobo_ride_chemy_card",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:spana_riser_green"
+}

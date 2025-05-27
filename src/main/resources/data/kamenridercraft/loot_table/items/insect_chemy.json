@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:hopper1_ride_chemy_card",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:pikahotaru_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gengenchoucho_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:bakuonzemi_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:antrooper_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:greatonbo_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:stagvine_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kaizerbee_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kamantis_ride_chemy_card",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:gift"
+}

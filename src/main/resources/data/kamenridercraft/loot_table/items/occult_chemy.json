@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:carcery_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:berosol_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:sayzombie_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:angelead_ride_chemy_card",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zukyumpire_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:daiohni_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:mackraken_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:jyamatanoorochi_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:ninetail_ride_chemy_card",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:supana_riser_purple"
+}

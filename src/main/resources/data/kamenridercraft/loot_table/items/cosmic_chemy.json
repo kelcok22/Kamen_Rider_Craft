@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:mercurin_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kinkiravina_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gokigenmeteon_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:neminemoon_ride_chemy_card",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:firemars_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:grandsaturn_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:the_sun_ride_chemy_card",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:jupitta_ride_chemy_card",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:kuroana_ride_chemy_card",
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:gift"
+}
