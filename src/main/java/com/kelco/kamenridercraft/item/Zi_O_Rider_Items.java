@@ -39,7 +39,6 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> ZI_O_LOGO = ITEMS.register("zi_o_logo",
     		() -> new Zi_OLogoItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zi_o")), new Item.Properties())
-			.addBelt("kamenridercraft:nophoon_core", "kamenridercraft:nophoon_kamen_norider")
 			.addBelt("kamenridercraft:kuuga_manga", "kamenridercraft:manga_arcle")
 			.addBelt("kamenridercraft:zangetsu_kachidoki_lockseed", "kamenridercraft:sengoku_driver_zangetsu")
 			.addWeapon("kamenridercraft:zangetsu_kachidoki_lockseed", "kamenridercraft:zangetsu_dj_gun")

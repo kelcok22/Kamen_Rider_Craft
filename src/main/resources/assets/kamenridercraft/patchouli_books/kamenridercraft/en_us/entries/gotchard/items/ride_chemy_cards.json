@@ -631,7 +631,7 @@
 			"type": "patchouli:text",
 			"anchor": "kuuga_ride_chemy_card",
 			"title": "Kuuga Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#kuuga)Gorgeous Kuuga$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -644,7 +644,7 @@
 			"type": "patchouli:text",
 			"anchor": "faiz_ride_chemy_card",
 			"title": "Faiz Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -657,7 +657,7 @@
 			"type": "patchouli:text",
 			"anchor": "w_ride_chemy_card",
 			"title": "Double Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#double)Gorgeous Double$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -670,7 +670,7 @@
 			"type": "patchouli:text",
 			"anchor": "ooo_ride_chemy_card",
 			"title": "OOO Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#cyclone_tatoba)Cyclone Tatoba$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#ooo)Gorgeous OOO$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -683,7 +683,7 @@
 			"type": "patchouli:text",
 			"anchor": "fourze_ride_chemy_card",
 			"title": "Fourze Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#fourze)Gorgeous Fourze$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -696,7 +696,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_ride_chemy_card",
 			"title": "Build Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
