@@ -23,9 +23,9 @@
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.1, "uv": [0, 0]},
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [32, 0]},
 						{
-							"origin": [-4, 11, -1],
+							"origin": [-4, 11, 0],
 							"size": [8, 12, 4],
-							"inflate": 1,
+							"inflate": 0.5,
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [0, 0]},
 								"east": {"uv": [0, 0], "uv_size": [0, 0]},
