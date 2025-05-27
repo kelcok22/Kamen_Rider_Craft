@@ -394,22 +394,20 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_batta","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.ChangeSlot(5).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
-					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 4)
-					.AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MOGURA_VISTAMP = ITEMS.register("mogura_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mogura","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
-					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 4)
-					.AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SCORPION_VISTAMP = ITEMS.register("scorpion_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_scorpion","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false))
-				.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get()).AddCompatibilityList(new String[] {"over_demons","over_demons_get"})
+				.ChangeSlot(4).addSwitchForm(Modded_item_core.BLANK_FORM.get())
 					.needBaseForm().AddToList(VistampBar.PROTO_VISTAMP, 4).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 
@@ -417,7 +415,7 @@ public class Revice_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_anomalocaris","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
 					.ChangeSlot(2).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
-					.AddCompatibilityList(new String[] {"over_demons","over_demons_get"}).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","jeanne","libera_driver_belt",
@@ -565,10 +563,9 @@ public class Revice_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_VISTAMP_DEMONS = ITEMS.register("batta_vistamp_demons",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_batta", "demons", "demons_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_condor", "demons", "demons_driver_belt",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0, true, false))
-					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm()
-					.AddCompatibilityList(new String[]{"over_demons", "over_demons_get"}));
+					.ChangeSlot(3).addSwitchForm(Modded_item_core.BLANK_FORM.get()).needBaseForm());
 
 	public static final DeferredItem<Item> CONDOR_VISTAMP_VICE = ITEMS.register("condor_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_condor","vice","buddy_buckle_belt",

@@ -586,7 +586,7 @@ public class OOO_Rider_Items {
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
 					.addSwitchForm(OOO_Rider_Items.BIRTH_CORE.get())
-					.IsGlowing().AddCompatibilityList(new String[] {"birth_prototype"}).AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
+					.IsGlowing().AddToList(CellMedalProgramer.CELL_MEDAL).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","",
