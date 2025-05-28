@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gotchard.GotchancollectionPanelItem;
@@ -62,6 +63,16 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_ExceedMighty= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_CycloneTaToBa= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_FullFullRocket= new ArrayList<Item>();
+
+	public static final DeferredItem<Item> ARK_ONE_MALGAM = ITEMS.register("ark_one_malgam",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_malgam","ark_zero","ark_driver_belt_1",
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).ChangeRiderName("ark_one"));
+
 
 	public static final DeferredItem<Item> GOTCHARD_LOGO = ITEMS.register("gotchard_logo",
     		() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gotchard")), new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -649,6 +660,35 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
 					.ChangeRiderName("gotchard").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+
+	public static final DeferredItem<Item> ARK_ZERO_RIDE_CHEMY_CARD = ITEMS.register("ark_zero_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_outsiders","ark_zero","ark_driver_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ARK_ONE_RIDE_CHEMY_CARD = ITEMS.register("ark_one_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_saigetsu","ark_zero","ark_driver_belt_1",
+					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).ChangeRiderName("ark_one").AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> ETERNAL_RIDE_CHEMY_CARD = ITEMS.register("eternal_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yellowed","eternal","lostdriver_belt_e",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fire","gotchard_daybreak","gotchardriver_belt_daybreak_fire",
