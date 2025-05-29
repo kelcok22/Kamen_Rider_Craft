@@ -76,7 +76,7 @@
 			"type": "patchouli:text",
 			"anchor": "geiz_ridewatch",
 			"title": "Geiz Ridewatch",
-			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Geiz's $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#geiz)base$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to craft Geiz's $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)Ziku Driver (Geiz)$(/l)$(br2)Used to access Geiz's $(l:zi_o/riders/geiz#geiz)base$(/l) form$(br2)Can summon Kamen Rider Geiz's weapons when shift-clicked as $(l:zi_o/riders/geiz#majesty)GeizMajesty$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

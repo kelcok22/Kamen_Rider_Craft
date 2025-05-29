@@ -1,10 +1,33 @@
 {
   "values": [
     "kamenridercraft:kuuga_ride_chemy_card",
+    "kamenridercraft:agito_ride_chemy_card",
+    "kamenridercraft:ryuki_ride_chemy_card",
     "kamenridercraft:faiz_ride_chemy_card",
+    "kamenridercraft:blade_ride_chemy_card",
+    "kamenridercraft:hibiki_ride_chemy_card",
+    "kamenridercraft:kabuto_ride_chemy_card",
+    "kamenridercraft:den_o_ride_chemy_card",
+    "kamenridercraft:kiva_ride_chemy_card",
+    "kamenridercraft:decade_ride_chemy_card",
     "kamenridercraft:w_ride_chemy_card",
     "kamenridercraft:ooo_ride_chemy_card",
     "kamenridercraft:fourze_ride_chemy_card",
-    "kamenridercraft:build_ride_chemy_card"
+    "kamenridercraft:wizard_ride_chemy_card",
+    "kamenridercraft:gaim_ride_chemy_card",
+    "kamenridercraft:drive_ride_chemy_card",
+    "kamenridercraft:ghost_ride_chemy_card",
+    "kamenridercraft:ex_aid_ride_chemy_card",
+    "kamenridercraft:build_ride_chemy_card",
+    "kamenridercraft:zi_o_ride_chemy_card",
+    "kamenridercraft:zero_one_ride_chemy_card",
+    "kamenridercraft:saber_ride_chemy_card",
+    "kamenridercraft:revi_ride_chemy_card",
+    "kamenridercraft:vice_ride_chemy_card",
+    "kamenridercraft:geats_ride_chemy_card",
+    "kamenridercraft:gotchard_ride_chemy_card",
+    "kamenridercraft:ark_zero_ride_chemy_card",
+    "kamenridercraft:ark_one_ride_chemy_card",
+    "kamenridercraft:eternal_ride_chemy_card"
   ]
 }

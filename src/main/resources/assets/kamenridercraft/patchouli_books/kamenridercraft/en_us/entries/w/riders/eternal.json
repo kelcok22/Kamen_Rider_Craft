@@ -45,6 +45,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Eternal",
 			"text": "Appears in:$(li)Kamen Rider W Forever: A to Z/The Gaia Memories of Fate (2010, movie)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_eternal)Lostdriver$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Resistance III$(li)Haste III$(li)Jump Boost VI$(li)Strength VII (with empty hand)$(li)Strength IV (with weapon)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "yellowed",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lostdriver_eternal\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Blue Flare (Yellowed Suit)",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_card#eternal_ride_chemy_card)Eternal Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Eternal",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:w/devices/lostdriver#lostdriver_eternal)Lostdriver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Resistance II$(li)Haste III$(li)Jump Boost III$(li)Strength VI (with empty hand)$(li)Strength III (with weapon)"
 		}
 	]
 }
