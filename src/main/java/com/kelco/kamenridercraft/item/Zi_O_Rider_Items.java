@@ -170,7 +170,7 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","geiz","ziku_driver_geiz_belt",
+			() -> new GeizRidewatchItem(new Item.Properties(),0,"","geiz","ziku_driver_geiz_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
@@ -923,6 +923,7 @@ public class Zi_O_Rider_Items {
 							.addAltWeapon(Build_Rider_Items.LOW_RABBIT_FULL_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
 							.addAltWeapon(Build_Rider_Items.FULLFULL_RABBIT_TANK_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
 							.addAltWeapon(Build_Rider_Items.GENIUS_FULL_BOTTLE.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
+							.addAltWeapon(Build_Rider_Items.CROSS_Z_BUILD_CAN.get(), Build_Rider_Items.FULLBOTTLE_BUSTER.get())
 							.addAltForm(Build_Rider_Items.GOLD_RABBIT_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.SILVER_DRAGON_FULL_BOTTLE.get())
 							.addAltForm(Build_Rider_Items.SILVER_DRAGON_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.GOLD_RABBIT_FULL_BOTTLE.get())
 							.addAltForm(Build_Rider_Items.MOMOTAROS_FULL_BOTTLE.get(), (RiderFormChangeItem)Build_Rider_Items.DENSHA_FULL_BOTTLE.get())

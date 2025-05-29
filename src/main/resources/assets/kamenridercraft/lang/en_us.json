@@ -7275,6 +7275,10 @@
 "item.kamenridercraft.revi_ride_chemy_card": "Revi Ride Chemy Card",
 "item.kamenridercraft.vice_ride_chemy_card": "Vice Ride Chemy Card",
 "item.kamenridercraft.geats_ride_chemy_card": "Geats Ride Chemy Card",
+"item.kamenridercraft.gotchard_ride_chemy_card": "Gotchard Ride Chemy Card",
+"item.kamenridercraft.ark_zero_ride_chemy_card": "Ark-Zero Ride Chemy Card",
+"item.kamenridercraft.ark_one_ride_chemy_card": "Ark-One Ride Chemy Card",
+"item.kamenridercraft.eternal_ride_chemy_card": "Eternal Ride Chemy Card",
 "item.kamenridercraft.legend_ride_chemy_card": "Legend Ride Chemy Card",
 "item.kamenridercraft.legendary_legend_ride_chemy_card": "Legendary Legend Ride Chemy Card",
 
@@ -8481,6 +8485,7 @@
   "tag.item.kamenridercraft.gear.form_items.ancient_ooo": "Ancient OOO's Form Items",
   "tag.item.kamenridercraft.gear.form_items.another_agito_kouji": "Kouji Majima's Form Items",
   "tag.item.kamenridercraft.gear.form_items.arc": "Arc's Form Items",
+  "tag.item.kamenridercraft.gear.form_items.ark_zero": "Ark-Zero/Ark-One's Form Items",
   "tag.item.kamenridercraft.gear.form_items.barlckxs": "Barlckxs's Form Items",
   "tag.item.kamenridercraft.gear.form_items.beast": "Beast's Form Items",
   "tag.item.kamenridercraft.gear.form_items.beroba": "Beroba's Form Items",

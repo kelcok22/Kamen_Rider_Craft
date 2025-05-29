@@ -14,6 +14,19 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:steamliner_repli_chemy_card",
 			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicon_repli_chemy_card",
+			"title": "Unicon Replichemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Dread's $(l:gotchard/riders/dread#type_one)Type One$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicon_repli_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

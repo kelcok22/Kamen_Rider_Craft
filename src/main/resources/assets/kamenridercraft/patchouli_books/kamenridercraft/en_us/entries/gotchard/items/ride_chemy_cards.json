@@ -642,6 +642,32 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "agito_ride_chemy_card",
+			"title": "Agito Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#agito)Gorgeous Agito$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_ride_chemy_card",
+			"title": "Ryuki Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ryuki)Gorgeous Ryuki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ryuki_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "faiz_ride_chemy_card",
 			"title": "Faiz Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#exceed_mighty)Exceed Mighty$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#faiz)Gorgeous Faiz$(/l) form"
@@ -650,6 +676,84 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:faiz_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_ride_chemy_card",
+			"title": "Blade Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#blade)Gorgeous Blade$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blade_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_ride_chemy_card",
+			"title": "Hibiki Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#hibiki)Gorgeous Hibiki$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hibiki_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_ride_chemy_card",
+			"title": "Kabuto Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kabuto)Gorgeous Kabuto$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_ride_chemy_card",
+			"title": "Den-O Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#den-o)Gorgeous Den-O$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:den_o_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_ride_chemy_card",
+			"title": "Kiva Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#kiva)Gorgeous Kiva$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiva_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_ride_chemy_card",
+			"title": "Decade Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#decade)Gorgeous Decade$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:decade_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
@@ -694,6 +798,71 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "wizard_ride_chemy_card",
+			"title": "Wizard Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#wizard)Gorgeous Wizard$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizard_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaim_ride_chemy_card",
+			"title": "Gaim Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#gaim)Gorgeous Gaim$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaim_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_ride_chemy_card",
+			"title": "Drive Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#drive)Gorgeous Drive$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_ride_chemy_card",
+			"title": "Ghost Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ghost)Gorgeous Ghost$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ghost_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ex_aid_ride_chemy_card",
+			"title": "Ex-Aid Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#ex_aid)Gorgeous Ex-Aid$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ex_aid_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "build_ride_chemy_card",
 			"title": "Build Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#fullfull_rocket)FullFull Rocket$(/l) form$(br2)Used to access Legend's $(l:gotchard/riders/legend#build)Gorgeous Build$(/l) form"
@@ -702,6 +871,136 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:build_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zi_o_ride_chemy_card",
+			"title": "Zi-O Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zi_o)Gorgeous Zi-O$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zi_o_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_one_ride_chemy_card",
+			"title": "Zero-One Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#zero_one)Gorgeous Zero-One$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zero_one_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saber_ride_chemy_card",
+			"title": "Saber Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#saber)Gorgeous Saber$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:saber_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revi_ride_chemy_card",
+			"title": "Revi Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#revi)Gorgeous Revi$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:revi_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vice_ride_chemy_card",
+			"title": "Vice Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#vice)Gorgeous Vice$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vice_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_ride_chemy_card",
+			"title": "Geats Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#geats)Gorgeous Geats$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gotchard_ride_chemy_card",
+			"title": "Gotchard Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard VS Kamen Rider Legend (2023, web series)$(br2)Used to access Legend's $(l:gotchard/riders/legend#gotchard)Gorgeous Gotchard$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gotchard_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ark_zero_ride_chemy_card",
+			"title": "Ark-Zero Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Ark-Zero's $(l:zero_one/riders/ark_zero#outsiders)Outsiders/Gotchard$(/l) version"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ark_zero_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ark_one_ride_chemy_card",
+			"title": "Ark-One Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Ark-One's $(l:zero_one/riders/ark_zero#gotchard)Gotchard$(/l) version"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ark_one_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eternal_ride_chemy_card",
+			"title": "Eternal Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Eternal's $(l:w/riders/eternal#yellowed)Blue Flare (Yellowed Suit)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eternal_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		}
