@@ -307,8 +307,10 @@ public class Gotchard_Rider_Items {
 
      /* carery
      * berosol
-     * sayzombie
      */
+
+	public static final DeferredItem<Item> SAYZOMBIE_RIDE_CHEMY_CARD = ITEMS.register("sayzombie_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ANGELEAD_RIDE_CHEMY_CARD = ITEMS.register("angelead_ride_chemy_card",
 			() -> new CopyFormChangeItem(new Item.Properties(),GEKIOCOPTER_RIDE_CHEMY_CARD_V.get()).AddToList(NEED_ITEM_AngeCopter)
@@ -340,14 +342,20 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION,400,0,true,false))
 					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
-     /* nanmonite
-     * akumanocaris
+	public static final DeferredItem<Item> NAMMONITE_RIDE_CHEMY_CARD = ITEMS.register("nammonite_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+     /* akumanocaris
      * pakuraptor
      * ojilacanth
      * sabeliger
      * warptera
-     * gigalodon
-     * tricera
+     */
+
+	public static final DeferredItem<Item> GIGALODON_RIDE_CHEMY_CARD = ITEMS.register("gigalodon_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+     /* tricera
      * blizzammoth
      */
 
@@ -360,8 +368,10 @@ public class Gotchard_Rider_Items {
 
      /* mercurin
      * kinkiravina
-     * gokigenmeteon
      */
+
+	public static final DeferredItem<Item> GOKIGENMETEON_RIDE_CHEMY_CARD = ITEMS.register("gokigenmeteon_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER1_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> NEMINEMOON_RIDE_CHEMY_CARD = ITEMS.register("neminemoon_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_moon_cerberus","majade","alchemisdriver_belt",
@@ -673,7 +683,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ARK_ONE_RIDE_CHEMY_CARD = ITEMS.register("ark_one_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_saigetsu","ark_zero","ark_driver_belt_1",
@@ -682,7 +692,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).ChangeRiderName("ark_one").AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)).ChangeRiderName("ark_one").AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> ETERNAL_RIDE_CHEMY_CARD = ITEMS.register("eternal_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_yellowed","eternal","lostdriver_belt_e",
@@ -691,7 +701,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
