@@ -71,6 +71,7 @@ public class OhmaRidewatchItem extends BaseItem {
     public void summon(ItemStack stack, Level level, Player player) {
         if (!level.isClientSide() && this == Zi_O_Rider_Items.RYUSOULGER_RIDEWATCH.get() && !ModList.get().isLoaded("supersentaicraft")) {
             player.sendSystemMessage(Component.translatable("message.kamenridercraft.ryusoul_red_fail"));
+	    player.awardStat(Stats.ITEM_USED.get(this));
         } else {
 		    GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		    if (summon != null) {
