@@ -63,6 +63,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         if (!RIDER.hasEffect(MobEffects.INVISIBILITY) || !RIDER.isInvisible()) {
             if (currentSlot == EquipmentSlot.FEET) {
                 setBoneVisible(this.body, true);
+                setBoneVisible(this.leftArm, true);
             } else if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem BELT && BELT.isTransformed(RIDER)) {
                 setBoneVisible(this.head, BELT.getPartsForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET),currentSlot,"head"));
                 setBoneVisible(this.body, BELT.getPartsForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET),currentSlot,"body"));
