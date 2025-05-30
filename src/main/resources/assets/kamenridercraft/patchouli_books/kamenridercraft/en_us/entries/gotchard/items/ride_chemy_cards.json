@@ -382,6 +382,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "sayzombie_ride_chemy_card",
+			"title": "Sayzombie Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sayzombie_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "angelead_ride_chemy_card",
 			"title": "Angelead Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Valvarad's $(l:gotchard/riders/valvarad_rider#angecopter)Angecopter Custom$(/l)"
@@ -434,6 +447,32 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "nammonite_ride_chemy_card",
+			"title": "Nammonite Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nammonite_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigalodon_ride_chemy_card",
+			"title": "Gigalodon Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigalodon_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "x_rex_ride_chemy_card",
 			"title": "X-Rex Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_x_rex)Super Gotchard Cross X-Rex$(/l) form"
@@ -442,6 +481,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:x_rex_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gokigenmeteon_ride_chemy_card",
+			"title": "Gokigenmeteon Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gokigenmeteon_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
