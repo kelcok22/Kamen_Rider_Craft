@@ -1,10 +1,14 @@
 package com.kelco.kamenridercraft.entities.footSoldiers;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.entities.MobsCore;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -26,7 +30,18 @@ public class YummyEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
 		if ( this.isDeadOrDying()) {
+
+
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+				if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_SAVANNA))boss = MobsCore.KAZARI.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_FOREST))boss = MobsCore.UVA.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_MOUNTAIN))boss = MobsCore.ANKH_LOST.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_RIVER)
+				||this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_OCEAN)
+						||this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_DEEP_OCEAN))boss = MobsCore.MEZOOL.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_BADLANDS))boss = MobsCore.GAMEL.get().create(this.level());
+				else if (this.level().getBiome(this.blockPosition()).is(BiomeTags.IS_NETHER))boss = MobsCore.MUCHIRI.get().create(this.level());
+				else {
 				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
 					case 0:
@@ -45,6 +60,7 @@ public class YummyEntity extends BaseHenchmenEntity {
 						boss = MobsCore.ANKH_LOST.get().create(this.level());
 						break;
 					default:
+				}
 				}
 				if (boss != null) {
 					boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
