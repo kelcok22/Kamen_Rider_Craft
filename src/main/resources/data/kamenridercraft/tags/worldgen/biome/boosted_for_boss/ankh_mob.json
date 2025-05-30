@@ -1,0 +1,13 @@
+{
+  "values": [
+	"#c:is_plains",
+	"#c:is_desert",
+	"minecraft:windswept_hills",
+	"minecraft:forest",
+	"minecraft:taiga",
+	"#c:is_swamp",
+	"#c:is_aquatic_icy",
+	"#c:is_river",
+	"#c:is_snowy_plains"
+  ]
+}
