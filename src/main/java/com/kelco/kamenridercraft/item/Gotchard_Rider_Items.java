@@ -774,7 +774,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.BOOST,40,2,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,0,true,false))
-					.addAlternative(GOTCHAR_IGNITER_DB.get()).addNeedForm(KUUGA_RIDE_CHEMY_CARD.get(),1).ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					.addAlternative(GOTCHAR_IGNITER_DB.get()).addNeedForm(KUUGA_RIDE_CHEMY_CARD_GOTCHARD.get(),1).ChangeModel("gotchard_fire.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_AW = ITEMS.register("gotchar_igniter_aw",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ant_wrestler_fire","gotchard","gotchardriver_belt_fire",
