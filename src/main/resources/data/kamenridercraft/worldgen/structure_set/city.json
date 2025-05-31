@@ -2,8 +2,24 @@
   "structures": [
 	{
 	  "structure": "kamenridercraft:city",
-	  "weight": 1
-	}
+	  "weight": 3
+	},
+	  {
+		  "structure": "kamenridercraft:fuuto_city",
+		  "weight": 3
+	  },
+	  {
+		  "structure": "kamenridercraft:zawame_city",
+		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:kuruma_town",
+		  "weight": 2
+	  },
+	  {
+		  "structure": "kamenridercraft:touto",
+		  "weight": 1
+	  }
   ],
   "placement": {
 	"type": "minecraft:random_spread",
