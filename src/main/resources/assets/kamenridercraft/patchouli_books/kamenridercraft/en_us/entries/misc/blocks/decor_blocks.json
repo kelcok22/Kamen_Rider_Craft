@@ -72,6 +72,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "dark_treat",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_treat",
+			"text": "Block is currently unobtainable"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "kuruma_brick",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuruma_brick",
@@ -532,9 +539,23 @@
 			"text": "Block is currently unobtainable"
 		},
 		{
+			"type": "patchouli:spotlight",
+			"anchor": "ghostliner_wheel",
+			"link_recipe": true,
+			"item": "kamenridercraft:ghostliner_wheel",
+			"text": "Block is currently unobtainable"
+		},
+		{
 			"type": "patchouli:crafting",
 			"anchor": "black_wallplate",
 			"recipe": "kamenridercraft:misc/block/wallplate/black_wallplate"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "jail_door",
+			"link_recipe": true,
+			"item": "kamenridercraft:jail_door",
+			"text": "Block is currently unobtainable"
 		},
 		{
 			"type": "patchouli:crafting",
