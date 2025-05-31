@@ -188,6 +188,34 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "bulletchoucho",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gengenchoucho_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Bulletchoucho",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#gengenchoucho_ride_chemy_card)Gengenchoucho$(/l) or $(l:gotchard/items/ride_chemy_cards#bulletbaang_ride_chemy_card)Bulletbaang$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Gatling$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "smahotaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:pikahotaru_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Smahotaru",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#pikahotaru_ride_chemy_card)Pikahotaru$(/l) or $(l:gotchard/items/ride_chemy_cards#smaphone_ride_chemy_card)Smaphone$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Gotchard File (2023, mobile app)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "cross_ufo_x",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ufo_x_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
