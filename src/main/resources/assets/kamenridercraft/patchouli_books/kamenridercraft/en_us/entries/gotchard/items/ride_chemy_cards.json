@@ -31,6 +31,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "kamantis_ride_chemy_card",
+			"title": "Kamantis Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamantis_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "beetlx_ride_chemy_card",
 			"title": "BeetlX Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
@@ -39,6 +52,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:beetlx_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "odorippa_ride_chemy_card",
+			"title": "Odorippa Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#odorimantis)Odorimantis$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:odorippa_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
@@ -57,6 +83,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "pilets_ride_chemy_card",
+			"title": "Pilets Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pilets_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "wrestler_g_ride_chemy_card",
 			"title": "Wrestler G Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form"
@@ -65,6 +104,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:wrestler_g_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasukemaru_ride_chemy_card",
+			"title": "Sasukemaru Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasukemaru_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
@@ -150,7 +202,7 @@
 			"type": "patchouli:text",
 			"anchor": "madwheel_ride_chemy_card",
 			"title": "Madwheel Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to craft Valvarad's $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#madpirates)Madpirates$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -286,6 +338,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:raidenji_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "energyl_ride_chemy_card",
+			"title": "Energyl Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#energymaru)Energymaru$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:energyl_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
