@@ -18,6 +18,32 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "pikahotaru_ride_chemy_card",
+			"title": "Pikahotaru Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pikahotaru_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gengenchoucho_ride_chemy_card",
+			"title": "Gengenchoucho Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gengenchoucho_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "antrooper_ride_chemy_card",
 			"title": "Antrooper Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#antwrestler)Antwrestler$(/l) form"
@@ -117,6 +143,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:sasukemaru_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bulletbaang_ride_chemy_card",
+			"title": "Bulletbaang Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#bulletchoucho)Bulletchoucho$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bulletbaang_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
@@ -351,6 +390,19 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:energyl_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smaphone_ride_chemy_card",
+			"title": "Smaphone Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#smahotaru)Smahotaru$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smaphone_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
