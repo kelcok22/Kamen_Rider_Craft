@@ -1,6 +1,6 @@
 {
 
-	"name": "kamenridercraft:city/tower",
+	"name": "kamenridercraft:city/zawame",
 	
 	// The template pool to refer to if the entries in 'elements' fails to generate.
   "fallback": "minecraft:empty",
@@ -12,16 +12,7 @@
 	  {
 		  "weight": 4,
 		  "element": {
-			  "location": "kamenridercraft:city/origin/tokyo_tower",
-			  "processors": "minecraft:empty",
-			  "projection": "rigid",
-			  "element_type": "minecraft:single_pool_element"
-		  }
-	  },
-	  {
-		  "weight": 4,
-		  "element": {
-			  "location": "kamenridercraft:city/origin/toei_studios",
+			  "location": "kamenridercraft:city/origin/yggdrasill_tower",
 			  "processors": "minecraft:empty",
 			  "projection": "rigid",
 			  "element_type": "minecraft:single_pool_element"
