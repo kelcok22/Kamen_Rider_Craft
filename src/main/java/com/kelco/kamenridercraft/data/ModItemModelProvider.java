@@ -60,6 +60,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(Rider_Blocks.WONDERWOOD_DOOR.asItem());
         basicItem(Rider_Blocks.RABBIT_HUTCH_DOOR.asItem());
         basicItem(Rider_Blocks.GLASS_DOOR.asItem());
+        basicItem(Rider_Blocks.JAIL_DOOR.asItem());
 
         basicItem(Modded_item_core.HELHEIM_SIGN_ITEM.asItem());
         basicItem(Modded_item_core.HELHEIM_HANGING_SIGN_ITEM.asItem());

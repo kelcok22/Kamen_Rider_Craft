@@ -73,6 +73,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createDoorTable(Rider_Blocks.GLASS_DOOR.get()));
         add(Rider_Blocks.WONDERWOOD_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.WONDERWOOD_DOOR.get()));
+        add(Rider_Blocks.JAIL_DOOR.get(),
+                block -> createDoorTable(Rider_Blocks.JAIL_DOOR.get()));
 
         add(Rider_Blocks.HELHEIM_SIGN.get(),
                 block -> createSingleItemTable(Modded_item_core.HELHEIM_SIGN_ITEM.get()));
