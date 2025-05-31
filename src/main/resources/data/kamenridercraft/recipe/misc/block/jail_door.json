@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "iron_door",
+  "key": {
+    "#": {
+      "item": "kamenridercraft:black_wallplate"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "kamenridercraft:jail_door"
+  }
+}

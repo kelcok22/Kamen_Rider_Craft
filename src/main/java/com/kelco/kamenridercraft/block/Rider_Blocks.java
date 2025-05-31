@@ -780,6 +780,9 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
 					.strength(2f)));
 
+	public static final DeferredBlock<DoorBlock> JAIL_DOOR = registerBlock("jail_door",
+			() -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
+
 	public static final DeferredBlock<Block> WHITE_WALLPLATE = registerBlock("white_wallplate",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
