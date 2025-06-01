@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "blank_ride_chemy_card",
+	"ingredients": [
+		{
+
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "kamenridercraft:wizardgem"
+		} ,
+		{
+			"tag": "kamenridercraft:gear/alchemist_ring"
+
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:blank_ride_chemy_card"
+	}
+}
