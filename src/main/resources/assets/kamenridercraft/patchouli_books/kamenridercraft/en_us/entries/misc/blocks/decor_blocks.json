@@ -543,7 +543,7 @@
 			"anchor": "ghostliner_wheel",
 			"link_recipe": true,
 			"item": "kamenridercraft:ghostliner_wheel",
-			"text": "Block is currently unobtainable"
+			"text": "Found on the $(l:den_o/structures/ghostliner)Ghost Train$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -551,11 +551,9 @@
 			"recipe": "kamenridercraft:misc/block/wallplate/black_wallplate"
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "patchouli:crafting",
 			"anchor": "jail_door",
-			"link_recipe": true,
-			"item": "kamenridercraft:jail_door",
-			"text": "Block is currently unobtainable"
+			"recipe": "kamenridercraft:misc/block/jail_door"
 		},
 		{
 			"type": "patchouli:crafting",
