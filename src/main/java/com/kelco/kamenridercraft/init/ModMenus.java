@@ -46,6 +46,7 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<RaiseBuckleHolderGuiMenu>> RAISE_BUCKLE_HOLDER_GUI = REGISTRY.register("raise_buckle_holder_gui", () -> IMenuTypeExtension.create(RaiseBuckleHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchandrawHolderGuiMenu>> GOTCHANDRAW_HOLDER_GUI = REGISTRY.register("gotchandraw_holder_gui", () -> IMenuTypeExtension.create(GotchandrawHolderGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ChemyRiserGuiMenu>> CHEMY_RISER_GUI = REGISTRY.register("chemy_riser_gui", () -> IMenuTypeExtension.create(ChemyRiserGuiMenu::new));
 
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 

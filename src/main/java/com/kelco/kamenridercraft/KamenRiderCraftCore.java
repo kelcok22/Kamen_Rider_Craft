@@ -669,7 +669,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.register(ModMenus.RAISE_BUCKLE_HOLDER_GUI.get(), RaiseBuckleHolderGuiScreen::new);
             event.register(ModMenus.GOTCHANDRAW_HOLDER_GUI.get(), GotchandrawHolderGuiScreen::new);
             event.register(ModMenus.GOTCHANCOLLECTION_PANEL_GUI.get(), GotchancollectionPanelGuiScreen::new);
-
+            event.register(ModMenus.CHEMY_RISER_GUI.get(), ChemyRiserGuiScreen::new);
         }
     }
 
