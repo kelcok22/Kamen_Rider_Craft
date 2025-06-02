@@ -17,7 +17,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "next_kaixa_driver",
-			"title": "Kaixa Driver with Kaixa Phone XX",
+			"title": "Kaixa Driver (Next Kaixa)",
 			"text": "Appears in:$(li)Kamen Rider 555 20th: Paradise Regained (2024, movie)$(br2)Used alongside the $(l:faiz/devices/armor)Faiz armor$(/l) to transform into $(l:faiz/riders/next_kaixa)Kamen Rider Next Kaixa"
 		},
 		{

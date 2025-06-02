@@ -44,7 +44,7 @@ public class ChemyRiserGuiMenu extends AbstractContainerMenu {
 				return (stack.getItem()==Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get());
 			}
 		});
-		this.addSlot(new SlotByTag(container,1,44,35,"gear/alchemist_ring"));
+		this.addSlot(new SlotByTag(container,1,44,35,"gear/alchemist_rings"));
 
 		for(int i1 = 0; i1 < 3; ++i1) {
 			for(int k1 = 0; k1 < 9; ++k1) {

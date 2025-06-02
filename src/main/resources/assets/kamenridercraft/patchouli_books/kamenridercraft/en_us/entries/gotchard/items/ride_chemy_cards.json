@@ -14,7 +14,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hopper1_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -27,7 +27,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pikahotaru_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -40,7 +40,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gengenchoucho_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakuonzemi_ride_chemy_card",
+			"title": "Bakuonzemi Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakuonzemi_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -53,7 +66,46 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:antrooper_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greatonbo_ride_chemy_card",
+			"title": "Greatonbo Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greatonbo_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stagvine_ride_chemy_card",
+			"title": "Stagvine Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stagvine_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kaiserbee_ride_chemy_card",
+			"title": "Kaiserbee Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaiserbee_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -66,7 +118,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamantis_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -75,11 +127,9 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:beetlx_ride_chemy_card",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:gotchard/beetlx_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -92,7 +142,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:odorippa_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -105,7 +155,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dokkirimajin_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doctorkozo_ride_chemy_card",
+			"title": "Doctorkozo Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doctorkozo_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -118,7 +181,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pilets_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -131,7 +194,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wrestler_g_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -144,7 +207,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sasukemaru_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -157,7 +220,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bulletbaang_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -170,7 +233,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:apparebushido_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "karyudos_ride_chemy_card",
+			"title": "Karyudos Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:karyudos_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,11 +255,22 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/x_wizard_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spicle_ride_chemy_card",
+			"title": "Spicle Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:x_wizard_ride_chemy_card",
+			"item": "kamenridercraft:spicle_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -196,7 +283,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:skebows_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -209,7 +296,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hiikescue_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -222,7 +309,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gekiocopter_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -235,7 +322,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:deepmariner_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -248,7 +335,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:madwheel_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -274,7 +361,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:golddash_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -287,7 +374,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gutsshovel_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -300,7 +387,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:steamliner_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_blue)blue Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -309,11 +396,35 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/exceedfighter_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yamibat_ride_chemy_card",
+			"title": "Yamibat Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:exceedfighter_ride_chemy_card",
+			"item": "kamenridercraft:yamibat_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "catchula_ride_chemy_card",
+			"title": "Catchula Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:catchula_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -326,7 +437,33 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mechanichani_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bussasorry_ride_chemy_card",
+			"title": "Bussasorry Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bussasorry_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bountybunny_ride_chemy_card",
+			"title": "Bountybunny Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bountybunny_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -339,7 +476,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hawkstar_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tsupparihebi_ride_chemy_card",
+			"title": "Tsupparihebi Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsupparihebi_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -352,7 +502,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gorillasensei_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ganvhale_ride_chemy_card",
+			"title": "Ganvhale Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ganvhale_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -361,11 +524,9 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:lixion_ride_chemy_card",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:gotchard/lixion_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -378,7 +539,33 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:raidenji_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kesuzo_ride_chemy_card",
+			"title": "Kesuzo Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kesuzo_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mitemirror_ride_chemy_card",
+			"title": "Mitemirror Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mitemirror_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -391,7 +578,46 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:energyl_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "panpakaparka_ride_chemy_card",
+			"title": "Panpakaparka Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panpakaparka_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "televi_ride_chemy_card",
+			"title": "Televi Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:televi_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "timelord_ride_chemy_card",
+			"title": "Timelord Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:timelord_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -404,7 +630,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:smaphone_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "renkingrobo_ride_chemy_card",
+			"title": "Renkingrobo Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:renkingrobo_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -413,11 +652,22 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/x_fortress_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "happyclover_ride_chemy_card",
+			"title": "Happyclover Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:x_fortress_ride_chemy_card",
+			"item": "kamenridercraft:happyclover_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -430,7 +680,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:burningnero_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bambamboo_ride_chemy_card",
+			"title": "Bambamboo Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bambamboo_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -443,7 +706,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:saboneedle_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -456,7 +719,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:venomdake_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "utsubocchama_ride_chemy_card",
+			"title": "Utsubocchama Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:utsubocchama_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -469,7 +745,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:flayrose_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buglesia_ride_chemy_card",
+			"title": "Buglesia Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buglesia_ride_chemy_card",
+			"title": " ",
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -482,7 +771,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:junglejan_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_green)green Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -491,11 +780,9 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:xeggdrasil_ride_chemy_card",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:gotchard/xeggdrasil_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -508,7 +795,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sayzombie_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -521,7 +808,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:angelead_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -534,7 +821,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daiohni_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -547,7 +834,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jyamatanoorochi_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_purple)purple Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -556,11 +843,9 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_ufo_x)Super Gotchard Cross UFO-X$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:ufo_x_ride_chemy_card",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:gotchard/ufo_x_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -573,7 +858,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nammonite_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -586,7 +871,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gigalodon_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and a $(l:gotchard/items/alchemist_rings#alchemist_ring_red)red Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -595,11 +880,9 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#super_x_rex)Super Gotchard Cross X-Rex$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:x_rex_ride_chemy_card",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:gotchard/x_rex_ride_chemy_card"
 		},
 		{
 			"type": "patchouli:text",
@@ -612,7 +895,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gokigenmeteon_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -625,7 +908,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:neminemoon_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -638,7 +921,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:firemars_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -651,7 +934,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:the_sun_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -664,7 +947,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:unicon_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -677,7 +960,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:inphoenix_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -690,7 +973,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:yoacerberus_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings#alchemist_ring_orange)orange Alchemist Ring$(/l) in the $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -742,7 +1025,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daybreak_hopper1_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
 		},
 		{
 			"type": "patchouli:text",
@@ -755,7 +1038,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daybreak_steamliner_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the Nether"
 		},
 		{
 			"type": "patchouli:text",
@@ -768,7 +1051,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:legend_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",

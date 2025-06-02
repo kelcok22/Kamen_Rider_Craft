@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.trust_last.desc"
+  },
+  "length_in_seconds": 82,
+  "sound_event": "kamenridercraft:trust_last"
+}

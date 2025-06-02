@@ -1,0 +1,110 @@
+{
+	"name": "Alchemist Rings",
+	"icon": "kamenridercraft:alchemist_ring_blue",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_blue",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Insect Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Vehicle Chemy Cards"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_blue",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_green",
+			"title": "Alchemist Ring (Green)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Plant Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Job Chemy Cards"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_green",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_red",
+			"title": "Alchemist Ring (Red)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Animal Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Ancient Chemy Cards"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_red",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_orange",
+			"title": "Alchemist Ring (Orange)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Fantastic Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Cosmic Chemy Cards"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_orange",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_purple",
+			"title": "Alchemist Ring (Purple)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Artifact Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Occult Chemy Cards"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_purple",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_gold",
+			"title": "Alchemist Ring (Gold & Red)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_gold",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_black",
+			"title": "Alchemist Ring (Black & Gold)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_black",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_no_gem",
+			"title": "Alchemist Ring (Empty)",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_no_gem",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

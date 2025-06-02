@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.climax_jump.desc"
+  },
+  "length_in_seconds": 79,
+  "sound_event": "kamenridercraft:climax_jump"
+}

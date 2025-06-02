@@ -35,6 +35,28 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "amazon_rider_koko_ni_ari_music_disc",
+			"text": "Song:$(li)HosephHoestar - Amazon Rider Koko ni Ari$(br2)Based on:$(li)Masato Shimon - Amazon Rider Koko ni Ari$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Amazon (1974, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazon_rider_koko_ni_ari_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "moero_kamen_rider_music_disc",
+			"text": "Song:$(li)HosephHoestar - Moero! Kamen Rider$(br2)Based on:$(li)Ichiro Mizuki & Koorogi '73 - Moero! Kamen Rider$(br)Type:$(li)Opening theme$(br)Appears in:$(li)The New Kamen Rider (1979, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:moero_kamen_rider_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "dragon_road_music_disc",
 			"text": "Song:$(li)HosephHoestar - Dragon Road$(br2)Based on:$(li)Akira Kushida - Dragon Road$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Birth of the 10th! Kamen Riders All Together!! (1984, TV special)"
 		},
@@ -112,6 +134,17 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "round_zero_blade_brave_music_disc",
+			"text": "Song:$(li)HosephHoestar - Round ZERO~BLADE BRAVE$(br2)Based on:$(li)Nanase Aikawa - Round ZERO~BLADE BRAVE$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Blade (2004, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:round_zero_blade_brave_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "rebirth_music_disc",
 			"text": "Song:$(li)HosephHoestar - rebirth$(br2)Based on:$(li)Kousei Amano - rebirth$(br)Type:$(li)Insert song, secondary Rider theme$(br)Appears in:$(li)Kamen Rider Blade (2004, TV show)"
 		},
@@ -130,6 +163,17 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:next_level_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "climax_jump_music_disc",
+			"text": "Song:$(li)HosephHoestar - Climax Jump$(br2)Based on:$(li)AAA - Climax Jump$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Den-O (2007, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:climax_jump_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
 		{
@@ -161,6 +205,28 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:anything_goes_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "switch_on_music_disc",
+			"text": "Song:$(li)HosephHoestar - Switch On!$(br2)Based on:$(li)Anna Tsuchiya - Switch On!$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Fourze (2011, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:switch_on_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "life_is_showtime_music_disc",
+			"text": "Song:$(li)HosephHoestar - Life is SHOW TIME$(br2)Based on:$(li)Sho Kiryuin from Golden Bomber - Life is SHOW TIME$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Wizard (2012, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:life_is_showtime_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
 		{
@@ -238,6 +304,17 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:almighty_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "trust_last_music_disc",
+			"text": "Song:$(li)HosephHoestar - Trust・Last$(br2)Based on:$(li)Koda Kumi x Shonan no Kaze - Trust・Last$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:trust_last_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
 		{

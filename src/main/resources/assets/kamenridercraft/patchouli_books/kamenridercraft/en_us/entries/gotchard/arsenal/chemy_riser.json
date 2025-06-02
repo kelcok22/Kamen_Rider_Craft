@@ -6,11 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by the Alchemist Academy"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used by the Alchemist Academy$(br2)Use $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) and an $(l:gotchard/items/alchemist_rings)Alchemist Ring$(/l) inside to obtain Chemy Cards$(li)Blue: Insect$(li)Green: Plant$(li)Red: Animal$(li)Purple: Artifact$(li)Orange: Fantastic"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gotchard/chemy_riser"
+			"recipe": "kamenridercraft:gotchard/chemy_riser",
+			"text": "Use in the Nether to obtain Daybreak Chemy Cards$(br2)Use in the City dimension to obtain the $(l:gotchard/items/ride_chemy_cards#legend_ride_chemy_card)Legend Chemy Card$(/l)"
 		}
 	]
 }

@@ -7,66 +7,26 @@
       }
     ]
   },
-  "justifaiz": {
+  "tatakae_kamen_rider_v3": {
     "sounds": [
       {
-        "name": "kamenridercraft:justifaiz",
+        "name": "kamenridercraft:tatakae_kamen_rider_v3",
         "stream": true
       }
     ]
   },
-  "kamen_rider_black": {
+  "amazon_rider_koko_ni_ari": {
     "sounds": [
       {
-        "name": "kamenridercraft:kamen_rider_black",
+        "name": "kamenridercraft:amazon_rider_koko_ni_ari",
         "stream": true
       }
     ]
   },
-  "be_the_one": {
+  "moero_kamen_rider": {
     "sounds": [
       {
-        "name": "kamenridercraft:be_the_one",
-        "stream": true
-      }
-    ]
-  },
-  "excite": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:excite",
-        "stream": true
-      }
-    ]
-  },
-  "realxeyez": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:realxeyez",
-        "stream": true
-      }
-    ]
-  },
-  "alive_a_life": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:alive_a_life",
-        "stream": true
-      }
-    ]
-  },
-  "almighty": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:almighty",
-        "stream": true
-      }
-    ]
-  },
-  "anything_goes": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:anything_goes",
+        "name": "kamenridercraft:moero_kamen_rider",
         "stream": true
       }
     ]
@@ -79,34 +39,10 @@
       }
     ]
   },
-  "journey_through_the_decade": {
+  "kamen_rider_black": {
     "sounds": [
       {
-        "name": "kamenridercraft:journey_through_the_decade",
-        "stream": true
-      }
-    ]
-  },
-  "just_live_more": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:just_live_more",
-        "stream": true
-      }
-    ]
-  },
-  "over_quartzer": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:over_quartzer",
-        "stream": true
-      }
-    ]
-  },
-  "kamen_rider_agito": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:kamen_rider_agito",
+        "name": "kamenridercraft:kamen_rider_black",
         "stream": true
       }
     ]
@@ -127,10 +63,66 @@
       }
     ]
   },
-  "tatakae_kamen_rider_v3": {
+  "kamen_rider_agito": {
     "sounds": [
       {
-        "name": "kamenridercraft:tatakae_kamen_rider_v3",
+        "name": "kamenridercraft:kamen_rider_agito",
+        "stream": true
+      }
+    ]
+  },
+  "alive_a_life": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:alive_a_life",
+        "stream": true
+      }
+    ]
+  },
+  "justifaiz": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:justifaiz",
+        "stream": true
+      }
+    ]
+  },
+  "round_zero_blade_brave": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:round_zero_blade_brave",
+        "stream": true
+      }
+    ]
+  },
+  "rebirth": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:rebirth",
+        "stream": true
+      }
+    ]
+  },
+  "next_level": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:next_level",
+        "stream": true
+      }
+    ]
+  },
+  "climax_jump": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:climax_jump",
+        "stream": true
+      }
+    ]
+  },
+  "journey_through_the_decade": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:journey_through_the_decade",
         "stream": true
       }
     ]
@@ -143,10 +135,34 @@
       }
     ]
   },
-  "got_boost": {
+  "anything_goes": {
     "sounds": [
       {
-        "name": "kamenridercraft:got_boost",
+        "name": "kamenridercraft:anything_goes",
+        "stream": true
+      }
+    ]
+  },
+  "switch_on": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:switch_on",
+        "stream": true
+      }
+    ]
+  },
+  "life_is_showtime": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:life_is_showtime",
+        "stream": true
+      }
+    ]
+  },
+  "just_live_more": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:just_live_more",
         "stream": true
       }
     ]
@@ -155,6 +171,54 @@
     "sounds": [
       {
         "name": "kamenridercraft:surprise_drive",
+        "stream": true
+      }
+    ]
+  },
+  "excite": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:excite",
+        "stream": true
+      }
+    ]
+  },
+  "be_the_one": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:be_the_one",
+        "stream": true
+      }
+    ]
+  },
+  "over_quartzer": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:over_quartzer",
+        "stream": true
+      }
+    ]
+  },
+  "realxeyez": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:realxeyez",
+        "stream": true
+      }
+    ]
+  },
+  "almighty": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:almighty",
+        "stream": true
+      }
+    ]
+  },
+  "trust_last": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:trust_last",
         "stream": true
       }
     ]
@@ -175,18 +239,10 @@
       }
     ]
   },
-  "next_level": {
+  "got_boost": {
     "sounds": [
       {
-        "name": "kamenridercraft:next_level",
-        "stream": true
-      }
-    ]
-  },
-  "rebirth": {
-    "sounds": [
-      {
-        "name": "kamenridercraft:rebirth",
+        "name": "kamenridercraft:got_boost",
         "stream": true
       }
     ]

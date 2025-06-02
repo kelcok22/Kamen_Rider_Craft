@@ -356,6 +356,12 @@ public class Modded_item_core {
     public static final DeferredItem<Item> TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC = ITEMS.register("tatakae_kamen_rider_v3_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.TATAKAE_KAMEN_RIDER_V3_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> AMAZON_RIDER_KOKO_NI_ARI_MUSIC_DISC = ITEMS.register("amazon_rider_koko_ni_ari_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.AMAZON_RIDER_KOKO_NI_ARI_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> MOERO_KAMEN_RIDER_MUSIC_DISC = ITEMS.register("moero_kamen_rider_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.MOERO_KAMEN_RIDER_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> DRAGON_ROAD_MUSIC_DISC = ITEMS.register("dragon_road_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.DRAGON_ROAD_KEY).stacksTo(1)));
 
@@ -377,11 +383,17 @@ public class Modded_item_core {
     public static final DeferredItem<Item> JUSTIFAIZ_MUSIC_DISC = ITEMS.register("justifaiz_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.JUSTIFAIZ_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC = ITEMS.register("round_zero_blade_brave_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ROUND_ZERO_BLADE_BRAVE_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> REBIRTH_MUSIC_DISC = ITEMS.register("rebirth_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.REBIRTH_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> NEXT_LEVEL_MUSIC_DISC = ITEMS.register("next_level_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.NEXT_LEVEL_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> CLIMAX_JUMP_MUSIC_DISC = ITEMS.register("climax_jump_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CLIMAX_JUMP_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC = ITEMS.register("journey_through_the_decade_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.JOURNEY_THROUGH_THE_DECADE_KEY).stacksTo(1)));
@@ -391,6 +403,12 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item> ANYTHING_GOES_MUSIC_DISC = ITEMS.register("anything_goes_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ANYTHING_GOES_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> SWITCH_ON_MUSIC_DISC = ITEMS.register("switch_on_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.SWITCH_ON_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> LIFE_IS_SHOWTIME_MUSIC_DISC = ITEMS.register("life_is_showtime_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.LIFE_IS_SHOWTIME_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> JUST_LIVE_MORE_MUSIC_DISC = ITEMS.register("just_live_more_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.JUST_LIVE_MORE_KEY).stacksTo(1)));
@@ -412,6 +430,9 @@ public class Modded_item_core {
 
     public static final DeferredItem<Item> ALMIGHTY_MUSIC_DISC = ITEMS.register("almighty_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.ALMIGHTY_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> TRUST_LAST_MUSIC_DISC = ITEMS.register("trust_last_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.TRUST_LAST_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> CHEMY_X_STORY_MUSIC_DISC = ITEMS.register("chemy_x_story_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CHEMY_X_STORY_KEY).stacksTo(1)));

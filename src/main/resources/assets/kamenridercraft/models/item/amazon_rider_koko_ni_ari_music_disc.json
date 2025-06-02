@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/amazon_rider_koko_ni_ari_music_disc"
+  }
+}
