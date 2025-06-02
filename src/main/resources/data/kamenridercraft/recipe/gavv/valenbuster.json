@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "group": "valen",
   "pattern": [
-	"XXX",
 	"XMX",
+	"XOX",
 	"XXX"
   ],
   "key": {
@@ -12,7 +12,10 @@
 	},
 	"M": {
 	  "item": "kamenridercraft:chocodon_gochizo"
-	}
+	},
+	  "M": {
+		  "item": "kamenridercraft:base_sword"
+	  }
   },
   "result": {
 	"id": "kamenridercraft:valenbuster"
