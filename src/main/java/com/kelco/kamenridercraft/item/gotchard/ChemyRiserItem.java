@@ -104,7 +104,7 @@ public class ChemyRiserItem extends BaseItem {
         }else  if (ring==Gotchard_Rider_Items.ALCHEMIST_RING_PURPLE.asItem()&&this ==Gotchard_Rider_Items.CHEMY_RISER_SUPANA.get()){
             int rand = generator.nextInt(Occult_CHEMY.size());
             return Occult_CHEMY.get(rand);
-        }else  if (ring==Gotchard_Rider_Items.ALCHEMIST_RING_BLUE.asItem()&&this ==Gotchard_Rider_Items.CHEMY_RISER_SUPANA.get()){
+        }else  if (ring==Gotchard_Rider_Items.ALCHEMIST_RING_ORANGE.asItem()&&this ==Gotchard_Rider_Items.CHEMY_RISER_SUPANA.get()){
             int rand = generator.nextInt(Cosmic_CHEMY.size());
             return Cosmic_CHEMY.get(rand);
         }else {
