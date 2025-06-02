@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:geats/items/raise_buckles#silver_arrow_raise_buckle)Arrow Buckle (Silver Plating ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle_theme)Beat Buckle (Theme Song ver)$(/l) (1.1%)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+			"text": "$(li)$(l:geats/items/raise_buckles#silver_arrow_raise_buckle)Arrow Buckle (Silver Plating ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)Arrow Buckle (Clear ver)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle_theme)Beat Buckle (Theme Song ver)$(/l) (1.1%)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)"
 		}
 	]
 }

@@ -15,7 +15,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2.5%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2.5%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2.5%)"
+			"text": "Bosses$(li)$(l:revice/mobs/evil)Kamen Rider Evil$(/l) (2%)$(li)$(l:revice/mobs/daiouika_deadman)Daiouika Deadman$(/l) (2%)$(li)$(l:revice/mobs/wolf_deadman)Wolf Deadman$(/l) (2%)$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l) (2%)$(li)$(l:revice/mobs/vail)Crimson Vail$(/l) (2%)"
 		}
 	]
 }

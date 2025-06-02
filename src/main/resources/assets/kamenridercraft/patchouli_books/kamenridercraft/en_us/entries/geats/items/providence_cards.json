@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:providence_card_glare",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:providence_card_gazer",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:providence_card_glare2",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/glare2)Kamen Rider Glare2$(/l)"
 		}
 	]
 }

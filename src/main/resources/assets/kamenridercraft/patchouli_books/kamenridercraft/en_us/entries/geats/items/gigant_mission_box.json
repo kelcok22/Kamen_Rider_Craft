@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gigant_mission_box",
 			"title": " ",
-			"text": "$(li)$(l:geats/items/raise_buckles#magnum_shooter_40x_raise_buckle)Magnum Shooter 40X Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#ninja_dueler_raise_buckle)Ninja Dueler Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#zombie_breaker_raise_buckle)Zombie Breaker Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#beat_axe_raise_buckle)Beat Axe Buckle$(/l) (12.5%)$(br2)Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+			"text": "$(li)$(l:geats/items/raise_buckles#magnum_shooter_40x_raise_buckle)Magnum Shooter 40X Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#ninja_dueler_raise_buckle)Ninja Dueler Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#zombie_breaker_raise_buckle)Zombie Breaker Buckle$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#beat_axe_raise_buckle)Beat Axe Buckle$(/l) (12.5%)$(br2)Drops from:$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)$(li)$(l:geats/mobs/glare2)Kamen Rider Glare2$(/l)"
 		}
 	]
 }
