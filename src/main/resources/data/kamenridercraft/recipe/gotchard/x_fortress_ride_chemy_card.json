@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "artifact_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:raidenji_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kesuzo_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:mitemirror_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:energyl_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:panpakaparka_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:televi_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:timelord_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:smaphone_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:renkingrobo_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:x_fortress_ride_chemy_card"
+	}
+}

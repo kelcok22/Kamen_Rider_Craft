@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "insect_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:hopper1_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:pikahotaru_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gengenchoucho_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:bakuonzemi_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:antrooper_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:greatonbo_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:stagvine_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kaiserbee_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kamantis_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:beetlx_ride_chemy_card"
+	}
+}

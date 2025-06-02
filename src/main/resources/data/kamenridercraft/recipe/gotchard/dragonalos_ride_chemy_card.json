@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "fantastic_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:gigabaham_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:macentaurus_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:unicon_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:vanfenrir_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:inphoenix_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:yoacerberus_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:haodin_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gingriffon_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:donposeidon_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:dragonalos_ride_chemy_card"
+	}
+}

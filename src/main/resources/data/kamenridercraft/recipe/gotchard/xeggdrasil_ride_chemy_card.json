@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "plant_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:happyclover_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:burningnero_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:bambamboo_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:saboneedle_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:venomdake_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:utsubocchama_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:flayrose_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:buglesia_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:junglejan_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:xeggdrasil_ride_chemy_card"
+	}
+}

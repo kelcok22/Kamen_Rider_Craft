@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "occult_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:carery_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:berosol_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:sayzombie_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:angelead_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:zukyumpire_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:daiohni_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:mackraken_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:jyamatanoorochi_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ninetail_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:ufo_x_ride_chemy_card"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "animal_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:yamibat_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:catchula_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:mechanichani_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:bussasorry_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:bountybunny_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:hawkstar_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:tsupparihebi_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gorillasensei_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ganvhale_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:lixion_ride_chemy_card"
+	}
+}

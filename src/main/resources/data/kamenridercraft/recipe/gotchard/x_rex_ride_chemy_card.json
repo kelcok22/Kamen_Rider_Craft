@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ancient_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:nammonite_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:akumanocaris_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:pakuraptor_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:ojilacanth_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:sabeliger_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:warptera_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gigalodon_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:tricera_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:blizzammoth_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:x_rex_ride_chemy_card"
+	}
+}
