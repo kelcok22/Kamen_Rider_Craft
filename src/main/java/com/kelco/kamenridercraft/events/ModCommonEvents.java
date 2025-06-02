@@ -599,6 +599,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
 		event.put(MobsCore.GLARE.get(), GmRiderEntity.setAttributes().build());
 		event.put(MobsCore.GLARE2.get(), GmRiderEntity.setAttributes().build());
+		event.put(MobsCore.GAZER.get(), GmRiderEntity.setAttributes().build());
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());

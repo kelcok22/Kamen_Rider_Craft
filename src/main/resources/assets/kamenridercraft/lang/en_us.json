@@ -525,7 +525,8 @@
   "henshin.kamenridercraft.vail":"§0Blackout! §4Crimson Up!",
   "henshin.kamenridercraft.jyamato_rider":"<Jyamato Rider> §2Jurapira... Henshin!\n§2Jyamato!",
   "henshin.kamenridercraft.glare":"§5Install! Dominate a System! Glare!",
-  "henshin.kamenridercraft.glare2":"§5Install! I Hane Full Control Over! Glare 2",
+  "henshin.kamenridercraft.glare2":"§5Install! I Have Full Control Over! Glare 2",
+  "henshin.kamenridercraft.gazer":"§6Install! Innovation And Control! Gazer",
   "henshin.kamenridercraft.bitter_gavv":"§4SparkinGummi! Yummy!",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
@@ -7927,11 +7928,16 @@
 "entity.kamenridercraft.anomalocaris_deadman": "Anomalocaris Deadman",
 "entity.kamenridercraft.queen_bee_deadman": "Queen Bee Deadman",
 "entity.kamenridercraft.wolf_deadman": "Wolf Deadman",
+  "entity.kamenridercraft.vail": "Crimson Vail",
 "entity.kamenridercraft.pawnjyamato_mob": "Pawn Jyamato",
 "entity.kamenridercraft.jyamatorider": "Jyamato Rider",
 "entity.kamenridercraft.gmrider": "GM Rider",
+  "entity.kamenridercraft.glare": "Kamen Rider Glare",
+  "entity.kamenridercraft.glare2": "Kamen Rider Glare 2",
+  "entity.kamenridercraft.gazer": "Kamen Rider Gazer",
 
   "entity.kamenridercraft.agent": "Agent",
+  "entity.kamenridercraft.bitter_gavv": "Kamen Rider Bitter Gavv",
 
 "entity.kamenridercraft.denbird": "DenBird",
 "entity.kamenridercraft.machine_tornador": "Machine Tornador",
@@ -8121,10 +8127,14 @@
   "item.kamenridercraft.anomalocaris_deadman_spawn_egg": "Anomalocaris Deadman Spawn Egg",
   "item.kamenridercraft.queen_bee_deadman_spawn_egg": "Queen Bee Deadman Spawn Egg",
   "item.kamenridercraft.wolf_deadman_spawn_egg": "Wolf Deadman Spawn Egg",
+  "item.kamenridercraft.vail_spawn_egg": "Crimson Vail Spawn Egg",
 
 "item.kamenridercraft.pawnjyamato_spawn_egg": "Pawn Jyamato Spawn Egg",
 "item.kamenridercraft.jyamatorider_spawn_egg": "Jyamato Rider Spawn Egg",
 "item.kamenridercraft.gmrider_spawn_egg": "GM Rider Spawn Egg",
+  "item.kamenridercraft.glare_spawn_egg": "Kamen Rider Glare Spawn Egg",
+  "item.kamenridercraft.glare2_spawn_egg": "Kamen Rider Glare 2 Spawn Egg",
+  "item.kamenridercraft.gazer_spawn_egg": "Kamen Rider Gazer Spawn Egg",
 
   "item.kamenridercraft.agent_spawn_egg": "Agent Spawn Egg",
   "item.kamenridercraft.bitter_gavv_spawn_egg": "Kamen Rider Bitter Gavv Spawn Egg",
