@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blank_rider_core_id",
 			"title": " ",
-			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(/l)"
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)$(br2)Drops from:$(li)$(l:geats/mobs/pawnjyamato_mob)Pawn Jyamato$(/l)$(li)$(l:geats/mobs/jyamatorider)Jyamato Rider$(/l)$(li)$(l:geats/mobs/gmrider)GM Rider$(li)$(l:geats/mobs/glare)Kamen Rider Glare$(/l)$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)$(li)$(l:geats/mobs/glare2)Kamen Rider Glare2$(/l)"
 		}
 	]
 }

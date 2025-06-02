@@ -556,7 +556,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kabuto_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:revice/mobs/vail)Crimson Vail$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -569,7 +569,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crimson_vail_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:revice/mobs/vail)Crimson Vail$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -582,7 +582,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hercules_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:revice/mobs/vail)Crimson Vail$(/l)"
 		},
 		{
 			"type": "patchouli:text",

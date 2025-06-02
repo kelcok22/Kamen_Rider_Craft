@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fantasy_wish_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/gazer)Kamen Rider Gazer$(/l)"
 		}
 	]
 }
