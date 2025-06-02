@@ -779,10 +779,13 @@ public class RiderTabs {
             event.accept(MobsCore.ANOMALOCARIS_DEADMAN_SPAWN_EGG);
             event.accept(MobsCore.QUEEN_BEE_DEADMAN_SPAWN_EGG);
             event.accept(MobsCore.WOLF_DEADMAN_SPAWN_EGG);
+            event.accept(MobsCore.VAIL_SPAWN_EGG);
 
             event.accept(MobsCore.PAWN_JYAMATO_SPAWN_EGG);
             event.accept(MobsCore.JYAMATO_RIDER_SPAWN_EGG);
             event.accept(MobsCore.GM_RIDER_SPAWN_EGG);
+            event.accept(MobsCore.GLARE_SPAWN_EGG);
+            event.accept(MobsCore.GLARE2_SPAWN_EGG);
 
             event.accept(MobsCore.AGENT_SPAWN_EGG);
             event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);

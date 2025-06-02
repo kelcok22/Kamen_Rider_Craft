@@ -1,0 +1,49 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 2,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:gigant_mission_box",
+			"weight": 4
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:hatena_mission_box",
+			"weight": 3
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:providence_card_glare",
+			"weight": 1
+		  }
+			]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_rider_core_id",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 2,
+				  "max": 4
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+

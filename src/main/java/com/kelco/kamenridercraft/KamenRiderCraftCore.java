@@ -603,10 +603,13 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.ANOMALOCARIS_DEADMAN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.QUEEN_BEE_DEADMAN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOLF_DEADMAN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.CRIMSON_VAIL.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.PAWN_JYAMATO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.JYAMATO_RIDER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GM_RIDER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GLARE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GLARE2.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.AGENT.get(), AgentRenderer::new);
             event.registerEntityRenderer(MobsCore.BITTER_GAVV.get(), BasicEntityRenderer::new);

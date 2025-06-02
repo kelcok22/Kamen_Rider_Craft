@@ -7,22 +7,27 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:banana_lockseed",
-          "weight": 3
+          "weight": 8
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:budou_lockseed",
-          "weight": 3
+          "weight": 8
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:orange_lockseed",
-          "weight": 3
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:lemon_lockseed",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:himawari_lockseed",
-          "weight": 9
+          "weight": 15
         }
       ],
       "rolls": {
@@ -31,6 +36,45 @@
         "min": 1.0
       }
     },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_banana_lockseed",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_budou_lockseed",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_orange_lockseed",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_durian_lockseed",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_donguri_lockseed",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:himawari_lockseed",
+          "weight": 15
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 1.0
+      }},
     {"bonus_rolls": 0.0,
       "entries": [
     {

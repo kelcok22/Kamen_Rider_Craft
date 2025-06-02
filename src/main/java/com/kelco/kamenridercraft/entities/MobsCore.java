@@ -1061,6 +1061,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> WOLF_DEADMAN_SPAWN_EGG = ITEMS.register("wolf_deadman_spawn_egg",
             () -> new DeferredSpawnEggItem(WOLF_DEADMAN, 0x60451a, 0xeb2916, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<VailEntity>> CRIMSON_VAIL = MOBLIST.register("vail",
+            () -> EntityType.Builder.of(VailEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":vail"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> VAIL_SPAWN_EGG = ITEMS.register("vail_spawn_egg",
+            () -> new DeferredSpawnEggItem(CRIMSON_VAIL, 0x0a0909, 0xed1909, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<PawnJyamatoEntity>> PAWN_JYAMATO = MOBLIST.register("pawnjyamato_mob",
                   () -> EntityType.Builder.of(PawnJyamatoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":pawnjyamato_mob"));
           
@@ -1078,6 +1085,19 @@ public class MobsCore {
  
           public static final DeferredItem<DeferredSpawnEggItem> GM_RIDER_SPAWN_EGG = ITEMS.register("gmrider_spawn_egg",
                   () -> new DeferredSpawnEggItem(GM_RIDER, 0x0F100F, 0x9B0E52, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<GlareEntity>> GLARE = MOBLIST.register("glare",
+            () -> EntityType.Builder.of(GlareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":glare"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GLARE_SPAWN_EGG = ITEMS.register("glare_spawn_egg",
+            () -> new DeferredSpawnEggItem(GLARE, 0x802ed9, 0xb8182b, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<Glare2Entity>> GLARE2 = MOBLIST.register("glare2",
+            () -> EntityType.Builder.of(Glare2Entity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":glare2"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GLARE2_SPAWN_EGG = ITEMS.register("glare2_spawn_egg",
+            () -> new DeferredSpawnEggItem(GLARE2, 0x802ed9, 0xffffff, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));

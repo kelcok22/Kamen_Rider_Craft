@@ -592,10 +592,13 @@ public class ModCommonEvents {
 		event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), AnomalocarisDeadmanEntity.setAttributes().build());
 		event.put(MobsCore.QUEEN_BEE_DEADMAN.get(), QueenBeeDeadmanEntity.setAttributes().build());
 		event.put(MobsCore.WOLF_DEADMAN.get(), WolfDeadmanEntity.setAttributes().build());
+		event.put(MobsCore.CRIMSON_VAIL.get(), WolfDeadmanEntity.setAttributes().build());
 
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
 		event.put(MobsCore.GM_RIDER.get(), GmRiderEntity.setAttributes().build());
+		event.put(MobsCore.GLARE.get(), GmRiderEntity.setAttributes().build());
+		event.put(MobsCore.GLARE2.get(), GmRiderEntity.setAttributes().build());
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
