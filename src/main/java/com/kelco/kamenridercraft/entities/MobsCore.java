@@ -1098,6 +1098,11 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GLARE2_SPAWN_EGG = ITEMS.register("glare2_spawn_egg",
             () -> new DeferredSpawnEggItem(GLARE2, 0x802ed9, 0xffffff, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GazerEntity>> GAZER = MOBLIST.register("gazer",
+            () -> EntityType.Builder.of(GazerEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":gazer"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> GAZER_SPAWN_EGG = ITEMS.register("gazer_spawn_egg",
+            () -> new DeferredSpawnEggItem(GAZER, 0xffffff, 0xedc92b, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));

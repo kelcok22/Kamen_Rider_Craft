@@ -4,19 +4,19 @@
 	  {
 		"rolls": 2,
 		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:gigant_mission_box",
+			"weight": 6
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:hatena_mission_box",
+			"weight": 4
+		  },
 			{
 				"type": "minecraft:item",
-				"name": "kamenridercraft:gigant_mission_box",
-				"weight": 6
-			},
-			{
-				"type": "minecraft:item",
-				"name": "kamenridercraft:hatena_mission_box",
-				"weight": 4
-			},
-			{
-				"type": "minecraft:item",
-				"name": "kamenridercraft:sirius_card_gazer_zero",
+				"name": "kamenridercraft:fantasy_wish_card",
 				"weight": 2
 			}
 		]
@@ -26,7 +26,7 @@
 		"entries": [
 		  {
 			"type": "minecraft:item",
-			"name": "kamenridercraft:providence_card_glare",
+			"name": "kamenridercraft:providence_card_gazer",
 			"weight": 1
 		  }
 			]
