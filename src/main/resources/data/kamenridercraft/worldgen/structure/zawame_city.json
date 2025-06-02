@@ -55,7 +55,7 @@
           "type": "kamenridercraft:kurokage_trooper",
           "maxCount": 4,
           "minCount": 2,
-          "weight": 10
+          "weight": 4
         }
         ]
         }

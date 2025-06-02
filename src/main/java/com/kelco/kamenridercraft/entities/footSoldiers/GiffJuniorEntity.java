@@ -33,7 +33,7 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-				int bossChoice = this.random.nextInt(4);
+				int bossChoice = this.random.nextInt(5);
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.EVIL.get().create(this.level());
@@ -57,6 +57,12 @@ public class GiffJuniorEntity extends BaseHenchmenEntity {
 						boss = MobsCore.QUEEN_BEE_DEADMAN.get().create(this.level());
 						if (boss != null && this.getLastAttacker() instanceof Player playerIn) {
 							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.queen_bee_deadman"));
+						}
+						break;
+					case 4:
+						boss = MobsCore.CRIMSON_VAIL.get().create(this.level());
+						if (boss != null && this.getLastAttacker() instanceof Player playerIn) {
+							playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.vail"));
 						}
 						break;
 					default:
