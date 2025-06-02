@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "bake",
+  "group": "bitter_gavv",
   "pattern": [
+	"XXX",
 	"XMX",
-	"XOX",
 	"XXX"
   ],
   "key": {
@@ -11,13 +11,10 @@
 	  "item": "kamenridercraft:blank_gochizo"
 	},
 	"M": {
-	  "item": "kamenridercraft:breacookie_gochizo"
-	},
-	  "O": {
-		  "item": "kamenridercraft:base_sword"
-	  }
+	  "item": "kamenridercraft:sparkingummy_gochizo"
+	}
   },
   "result": {
-	"id": "kamenridercraft:bakemagnum"
+	"id": "kamenridercraft:henshin_belt_bitter_gavv"
   }	
 }
