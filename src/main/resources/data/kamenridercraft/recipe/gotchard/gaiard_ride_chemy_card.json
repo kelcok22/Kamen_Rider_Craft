@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "cosmic_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:mercurin_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kinkiravina_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gokigenmeteon_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:neminemoon_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:firemars_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:grandsaturn_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:the_sun_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:jupitta_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:kuroana_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:gaiard_ride_chemy_card"
+	}
+}

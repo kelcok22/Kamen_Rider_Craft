@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "vehicle_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:spicle_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:skebows_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:hiikescue_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gekiocopter_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:deepmariner_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:madwheel_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:golddash_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:gutsshovel_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:steamliner_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:exceedfighter_ride_chemy_card"
+	}
+}

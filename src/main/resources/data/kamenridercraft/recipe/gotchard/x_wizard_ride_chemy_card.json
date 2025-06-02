@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "job_chemy",
+	"ingredients": [
+		{
+
+			"item": "kamenridercraft:odorippa_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:dokkirimajin_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:doctorzoko_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:pilets_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:wrestler_g_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:sasukemaru_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:bulletbaang_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:apparebushido_ride_chemy_card"
+		},
+		{
+			"item": "kamenridercraft:karyudos_ride_chemy_card"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:x_wizard_ride_chemy_card"
+	}
+}
