@@ -635,6 +635,8 @@
   "raise_buckle_holder.text": "Raise Buckle Holder",
   "gotchandraw_holder.text": "Gotchandraw Holder",
   "valvaradraw_buckle.text": "Valvaradraw Buckle",
+  "chemyriser_gui.text": "Chemy Riser",
+  "chemyriser_supana_gui.text": "Chemy Riser (Supana Kurogane ver.)",
 
   "item.kamenridercraft.kamen_rider_logo.desc": "Banner Pattern: Kamen Rider Logo",
   "banner.kamenridercraft.ichigo.black": "Black Kamen Rider Logo",
@@ -7125,6 +7127,16 @@
 "item.kamenridercraft.chemy_riser": "Chemy Riser",
 "item.kamenridercraft.chemy_riser_supana": "Chemy Riser (Supana Kurogane Ver.)",
 "item.kamenridercraft.sabi_riser": "Sabi Riser",
+
+  "item.kamenridercraft.alchemist_ring_blue": "Alchemist Ring (Blue)",
+  "item.kamenridercraft.alchemist_ring_green": "Alchemist Ring (Green)",
+  "item.kamenridercraft.alchemist_ring_red": "Alchemist Ring (Red)",
+  "item.kamenridercraft.alchemist_ring_orange": "Alchemist Ring (Orange)",
+  "item.kamenridercraft.alchemist_ring_purple": "Alchemist Ring (Purple)",
+  "item.kamenridercraft.alchemist_ring_gold": "Alchemist Ring (Gold & Red)",
+  "item.kamenridercraft.alchemist_ring_black": "Alchemist Ring (Black & Gold)",
+  "item.kamenridercraft.alchemist_ring_no_gem": "Alchemist Ring (Empty)",
+
 
 "item.kamenridercraft.blank_ride_chemy_card": "Blank Ride Chemy Card",
 "item.kamenridercraft.hopper1_ride_chemy_card": "Hopper1 Ride Chemy Card",
