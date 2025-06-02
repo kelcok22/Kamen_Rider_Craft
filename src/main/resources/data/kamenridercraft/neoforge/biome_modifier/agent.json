@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "#kamenridercraft:agent",
+  "biomes": "#kamenridercraft:agents",
   "spawners": {
 	"type": "kamenridercraft:agent",
 	"weight": 15,
