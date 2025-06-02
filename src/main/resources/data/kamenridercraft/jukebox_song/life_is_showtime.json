@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.life_is_showtime.desc"
+  },
+  "length_in_seconds": 74,
+  "sound_event": "kamenridercraft:life_is_showtime"
+}

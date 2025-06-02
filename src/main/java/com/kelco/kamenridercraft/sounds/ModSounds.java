@@ -23,6 +23,12 @@ public class ModSounds {
     public static final Supplier<SoundEvent> TATAKAE_KAMEN_RIDER_V3= registerSoundEvent("tatakae_kamen_rider_v3");
     public static final ResourceKey<JukeboxSong> TATAKAE_KAMEN_RIDER_V3_KEY = createSong("tatakae_kamen_rider_v3");
 
+    public static final Supplier<SoundEvent> AMAZON_RIDER_KOKO_NI_ARI= registerSoundEvent("amazon_rider_koko_ni_ari");
+    public static final ResourceKey<JukeboxSong> AMAZON_RIDER_KOKO_NI_ARI_KEY = createSong("amazon_rider_koko_ni_ari");
+
+    public static final Supplier<SoundEvent> MOERO_KAMEN_RIDER= registerSoundEvent("moero_kamen_rider");
+    public static final ResourceKey<JukeboxSong> MOERO_KAMEN_RIDER_KEY = createSong("moero_kamen_rider");
+
     public static final Supplier<SoundEvent> DRAGON_ROAD= registerSoundEvent("dragon_road");
     public static final ResourceKey<JukeboxSong> DRAGON_ROAD_KEY = createSong("dragon_road");
 
@@ -44,11 +50,17 @@ public class ModSounds {
     public static final Supplier<SoundEvent> JUSTIFAIZ= registerSoundEvent("justifaiz");
     public static final ResourceKey<JukeboxSong> JUSTIFAIZ_KEY = createSong("justifaiz");
 
+    public static final Supplier<SoundEvent> ROUND_ZERO_BLADE_BRAVE= registerSoundEvent("round_zero_blade_brave");
+    public static final ResourceKey<JukeboxSong> ROUND_ZERO_BLADE_BRAVE_KEY = createSong("round_zero_blade_brave");
+
     public static final Supplier<SoundEvent> REBIRTH= registerSoundEvent("rebirth");
     public static final ResourceKey<JukeboxSong> REBIRTH_KEY = createSong("rebirth");
 
     public static final Supplier<SoundEvent> NEXT_LEVEL= registerSoundEvent("next_level");
     public static final ResourceKey<JukeboxSong> NEXT_LEVEL_KEY = createSong("next_level");
+
+    public static final Supplier<SoundEvent> CLIMAX_JUMP= registerSoundEvent("climax_jump");
+    public static final ResourceKey<JukeboxSong> CLIMAX_JUMP_KEY = createSong("climax_jump");
 
     public static final Supplier<SoundEvent> JOURNEY_THROUGH_THE_DECADE= registerSoundEvent("journey_through_the_decade");
     public static final ResourceKey<JukeboxSong> JOURNEY_THROUGH_THE_DECADE_KEY = createSong("journey_through_the_decade");
@@ -58,6 +70,12 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> ANYTHING_GOES= registerSoundEvent("anything_goes");
     public static final ResourceKey<JukeboxSong> ANYTHING_GOES_KEY = createSong("anything_goes");
+
+    public static final Supplier<SoundEvent> SWITCH_ON= registerSoundEvent("switch_on");
+    public static final ResourceKey<JukeboxSong> SWITCH_ON_KEY = createSong("switch_on");
+
+    public static final Supplier<SoundEvent> LIFE_IS_SHOWTIME= registerSoundEvent("life_is_showtime");
+    public static final ResourceKey<JukeboxSong> LIFE_IS_SHOWTIME_KEY = createSong("life_is_showtime");
 
     public static final Supplier<SoundEvent> JUST_LIVE_MORE= registerSoundEvent("just_live_more");
     public static final ResourceKey<JukeboxSong> JUST_LIVE_MORE_KEY = createSong("just_live_more");
@@ -80,14 +98,17 @@ public class ModSounds {
     public static final Supplier<SoundEvent> ALMIGHTY= registerSoundEvent("almighty");
     public static final ResourceKey<JukeboxSong> ALMIGHTY_KEY = createSong("almighty");
 
-    public static final Supplier<SoundEvent> GOT_BOOST= registerSoundEvent("got_boost");
-    public static final ResourceKey<JukeboxSong> GOT_BOOST_KEY = createSong("got_boost");
+    public static final Supplier<SoundEvent> TRUST_LAST= registerSoundEvent("trust_last");
+    public static final ResourceKey<JukeboxSong> TRUST_LAST_KEY = createSong("trust_last");
 
     public static final Supplier<SoundEvent> CHEMY_X_STORY= registerSoundEvent("chemy_x_story");
     public static final ResourceKey<JukeboxSong> CHEMY_X_STORY_KEY = createSong("chemy_x_story");
 
     public static final Supplier<SoundEvent> CHEMY_X_STORY_FLOW= registerSoundEvent("chemy_x_story_flow");
     public static final ResourceKey<JukeboxSong> CHEMY_X_STORY_FLOW_KEY = createSong("chemy_x_story_flow");
+
+    public static final Supplier<SoundEvent> GOT_BOOST= registerSoundEvent("got_boost");
+    public static final ResourceKey<JukeboxSong> GOT_BOOST_KEY = createSong("got_boost");
 
     public static final Supplier<SoundEvent> MASKED_RIDER= registerSoundEvent("masked_rider");
     public static final ResourceKey<JukeboxSong> MASKED_RIDER_KEY = createSong("masked_rider");

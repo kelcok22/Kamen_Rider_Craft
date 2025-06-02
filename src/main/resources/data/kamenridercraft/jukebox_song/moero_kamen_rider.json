@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.moero_kamen_rider.desc"
+  },
+  "length_in_seconds": 81,
+  "sound_event": "kamenridercraft:moero_kamen_rider"
+}

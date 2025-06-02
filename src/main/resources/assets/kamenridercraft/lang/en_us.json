@@ -112,6 +112,14 @@
   "item.kamenridercraft.tatakae_kamen_rider_v3.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
   "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
 
+  "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc": "Amazon Rider Koko ni Ari Music Disc",
+  "item.kamenridercraft.amazon_rider_koko_ni_ari.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
+  "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
+
+  "item.kamenridercraft.moero_kamen_rider_music_disc": "Moero! Kamen Rider Music Disc",
+  "item.kamenridercraft.moero_kamen_rider.desc": "HosephHoestar - Moero! Kamen Rider",
+  "item.kamenridercraft.moero_kamen_rider_music_disc.desc": "HosephHoestar - Moero! Kamen Rider",
+
   "item.kamenridercraft.dragon_road_music_disc": "Dragon Road Music Disc",
   "item.kamenridercraft.dragon_road.desc": "HosephHoestar - Dragon Road",
   "item.kamenridercraft.dragon_road_music_disc.desc": "HosephHoestar - Dragon Road",
@@ -144,6 +152,10 @@
   "item.kamenridercraft.justifaiz.desc": "HosephHoestar - Justiφ's",
   "item.kamenridercraft.justifaiz_music_disc.desc": "HosephHoestar - Justiφ's",
 
+  "item.kamenridercraft.round_zero_blade_brave_music_disc": "Round ZERO~BLADE BRAVE Music Disc",
+  "item.kamenridercraft.round_zero_blade_brave.desc": "HosephHoestar - Round ZERO~BLADE BRAVE",
+  "item.kamenridercraft.round_zero_blade_brave_music_disc.desc": "HosephHoestar - Round ZERO~BLADE BRAVE",
+
   "item.kamenridercraft.rebirth_music_disc": "rebirth Music Disc",
   "item.kamenridercraft.rebirth.desc": "HosephHoestar - rebirth",
   "item.kamenridercraft.rebirth_music_disc.desc": "HosephHoestar - rebirth",
@@ -151,6 +163,10 @@
   "item.kamenridercraft.next_level_music_disc": "NEXT LEVEL Music Disc",
   "item.kamenridercraft.next_level.desc": "HosephHoestar - NEXT LEVEL",
   "item.kamenridercraft.next_level_music_disc.desc": "HosephHoestar - NEXT LEVEL",
+
+  "item.kamenridercraft.climax_jump_music_disc": "Climax Jump Music Disc",
+  "item.kamenridercraft.climax_jump.desc": "HosephHoestar - Climax Jump",
+  "item.kamenridercraft.climax_jump_music_disc.desc": "HosephHoestar - Climax Jump",
 
   "item.kamenridercraft.journey_through_the_decade_music_disc": "Journey Through the Decade Music Disc",
   "item.kamenridercraft.journey_through_the_decade.desc": "HosephHoestar - Journey Through the Decade",
@@ -163,6 +179,14 @@
   "item.kamenridercraft.anything_goes_music_disc": "Anything Goes! Music Disc",
   "item.kamenridercraft.anything_goes.desc": "HosephHoestar - Anything Goes!",
   "item.kamenridercraft.anything_goes_music_disc.desc": "HosephHoestar - Anything Goes!",
+
+  "item.kamenridercraft.switch_on_music_disc": "Switch On! Music Disc",
+  "item.kamenridercraft.switch_on.desc": "HosephHoestar - Switch On!",
+  "item.kamenridercraft.switch_on_music_disc.desc": "HosephHoestar - Switch On!",
+
+  "item.kamenridercraft.life_is_showtime_music_disc": "Life is SHOW TIME Music Disc",
+  "item.kamenridercraft.life_is_showtime.desc": "HosephHoestar - Life is SHOW TIME",
+  "item.kamenridercraft.life_is_showtime_music_disc.desc": "HosephHoestar - Life is SHOW TIME",
 
   "item.kamenridercraft.just_live_more_music_disc": "JUST LIVE MORE Music Disc",
   "item.kamenridercraft.just_live_more.desc": "HosephHoestar - JUST LIVE MORE",
@@ -191,6 +215,10 @@
   "item.kamenridercraft.almighty_music_disc": "ALMIGHTY ~ Kamen no Yakusoku Music Disc",
   "item.kamenridercraft.almighty.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
   "item.kamenridercraft.almighty_music_disc.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
+
+  "item.kamenridercraft.trust_last_music_disc": "Trust・Last Music Disc",
+  "item.kamenridercraft.trust_last.desc": "HosephHoestar - Trust・Last",
+  "item.kamenridercraft.trust_last_music_disc.desc": "HosephHoestar - Trust・Last",
 
   "item.kamenridercraft.chemy_x_story_music_disc": "CHEMY×STORY Music Disc",
   "item.kamenridercraft.chemy_x_story.desc": "HosephHoestar - CHEMY×STORY",
@@ -2306,7 +2334,7 @@
 "kamenridercraft.name.riotrooper_v2": "Debatable Rider: Riotrooper V2",
 "item.kamenridercraft.faiz_driver_next": "Faiz Driver NEXT",
 "kamenridercraft.name.next_faiz": "Rider: Kamen Rider Next Faiz",
-"item.kamenridercraft.next_kaixa_driver": "Kaixa Driver with Kaixa Phone XX",
+"item.kamenridercraft.next_kaixa_driver": "Kaixa Driver",
 "kamenridercraft.name.next_kaixa": "Rider: Kamen Rider Next Kaixa",
 "item.kamenridercraft.muez_driver": "Muez Driver",
 "kamenridercraft.name.muez": "Rider: Kamen Rider Muez",

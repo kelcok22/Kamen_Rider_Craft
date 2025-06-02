@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.amazon_rider_koko_ni_ari.desc"
+  },
+  "length_in_seconds": 81,
+  "sound_event": "kamenridercraft:amazon_rider_koko_ni_ari"
+}
