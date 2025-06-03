@@ -150,7 +150,7 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamantis_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "odorimantis",
+			"name": "Odorimantis",
 			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kamantis_ride_chemy_card)Kamantis$(/l) or $(l:gotchard/items/ride_chemy_cards#odorippa_ride_chemy_card)Odorippa$(/l) Ride Chemy Card (both cards must be in your inventory)"
 		},
 		{
