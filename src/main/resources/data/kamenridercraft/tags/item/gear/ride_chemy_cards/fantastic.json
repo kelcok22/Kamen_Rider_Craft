@@ -1,9 +1,16 @@
 {
-	"values": [
+  "values": [
+    "kamenridercraft:gigabaham_ride_chemy_card",
+    "kamenridercraft:macentaurus_ride_chemy_card",
     "kamenridercraft:unicon_ride_chemy_card",
+    "kamenridercraft:vanfenrir_ride_chemy_card",
     "kamenridercraft:inphoenix_ride_chemy_card",
     "kamenridercraft:inphoenix_ride_chemy_card_televikun",
-    "kamenridercraft:yoacerberus_ride_chemy_card"
-	]
-  }
+    "kamenridercraft:yoacerberus_ride_chemy_card",
+    "kamenridercraft:haodin_ride_chemy_card",
+    "kamenridercraft:gingriffon_ride_chemy_card",
+    "kamenridercraft:donposeidon_ride_chemy_card",
+    "kamenridercraft:dragonalos_ride_chemy_card"
+  ]
+}
   

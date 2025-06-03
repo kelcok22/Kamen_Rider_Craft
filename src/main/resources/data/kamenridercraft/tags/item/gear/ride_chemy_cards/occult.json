@@ -1,10 +1,15 @@
 {
-	"values": [
+  "values": [
+    "kamenridercraft:carery_ride_chemy_card",
+    "kamenridercraft:berosol_ride_chemy_card",
     "kamenridercraft:sayzombie_ride_chemy_card",
     "kamenridercraft:angelead_ride_chemy_card",
+    "kamenridercraft:zukyumpire_ride_chemy_card",
     "kamenridercraft:daiohni_ride_chemy_card",
+    "kamenridercraft:mackraken_ride_chemy_card",
     "kamenridercraft:jyamatanoorochi_ride_chemy_card",
+    "kamenridercraft:ninetail_ride_chemy_card",
     "kamenridercraft:ufo_x_ride_chemy_card"
-	]
-  }
+  ]
+}
   

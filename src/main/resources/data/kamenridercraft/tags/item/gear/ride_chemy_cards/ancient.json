@@ -1,8 +1,15 @@
 {
-	"values": [
+  "values": [
     "kamenridercraft:nammonite_ride_chemy_card",
+    "kamenridercraft:akumanocaris_ride_chemy_card",
+    "kamenridercraft:pakuraptor_ride_chemy_card",
+    "kamenridercraft:ojilacanth_ride_chemy_card",
+    "kamenridercraft:sabeliger_ride_chemy_card",
+    "kamenridercraft:warptera_ride_chemy_card",
     "kamenridercraft:gigalodon_ride_chemy_card",
+    "kamenridercraft:tricera_ride_chemy_card",
+    "kamenridercraft:blizzammoth_ride_chemy_card",
     "kamenridercraft:x_rex_ride_chemy_card"
-	]
-  }
+  ]
+}
   
