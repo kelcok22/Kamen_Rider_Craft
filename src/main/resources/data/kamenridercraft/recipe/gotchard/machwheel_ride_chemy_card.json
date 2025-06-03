@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "blank_ride_chemy_card",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:alchemist_ring_purple"
+		} ,
+		{
+			"item": "kamenridercraft:madwheel_ride_chemy_card"
+
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:machwheel_ride_chemy_card"
+	}
+}
