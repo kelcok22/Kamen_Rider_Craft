@@ -1,0 +1,16 @@
+{
+	"name": "Blank Legend Chemy Card",
+	"icon": "kamenridercraft:blank_legend_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/blank_legend_chemy_card"
+		}
+	]
+}

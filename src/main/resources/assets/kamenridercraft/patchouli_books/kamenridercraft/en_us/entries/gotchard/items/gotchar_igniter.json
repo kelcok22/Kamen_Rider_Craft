@@ -2,7 +2,7 @@
 	"name": "Gotcharigniter",
 	"icon": "kamenridercraft:gotchar_igniter",
 	"category": "kamenridercraft:gotchard/items",
-	"sortnum": 3,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

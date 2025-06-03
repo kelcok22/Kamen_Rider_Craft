@@ -2,7 +2,7 @@
 	"name": "Alchemist Rings",
 	"icon": "kamenridercraft:alchemist_ring_blue",
 	"category": "kamenridercraft:gotchard/items",
-	"sortnum": 4,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
