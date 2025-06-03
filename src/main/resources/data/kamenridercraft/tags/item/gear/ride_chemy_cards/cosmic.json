@@ -1,10 +1,16 @@
 {
-	"values": [
+  "values": [
+    "kamenridercraft:mercurin_ride_chemy_card",
+    "kamenridercraft:kinkiravina_ride_chemy_card",
     "kamenridercraft:gokigenmeteon_ride_chemy_card",
     "kamenridercraft:neminemoon_ride_chemy_card",
     "kamenridercraft:firemars_ride_chemy_card",
     "kamenridercraft:firemars_ride_chemy_card_televikun",
-    "kamenridercraft:the_sun_ride_chemy_card"
-	]
-  }
+    "kamenridercraft:grandsaturn_ride_chemy_card",
+    "kamenridercraft:the_sun_ride_chemy_card",
+    "kamenridercraft:jupitta_ride_chemy_card",
+    "kamenridercraft:kuroana_ride_chemy_card",
+    "kamenridercraft:gaiard_ride_chemy_card"
+  ]
+}
   
