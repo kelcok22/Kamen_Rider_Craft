@@ -2,7 +2,7 @@
 	"name": "Ride Chemy Cards",
 	"icon": "kamenridercraft:hopper1_ride_chemy_card",
 	"category": "kamenridercraft:gotchard/items",
-	"sortnum": 3,
+	"sortnum": 1,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -1448,7 +1448,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1461,7 +1461,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:agito_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1474,7 +1474,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ryuki_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1487,7 +1487,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:faiz_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1500,7 +1500,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blade_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1513,7 +1513,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hibiki_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1526,7 +1526,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kabuto_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1539,7 +1539,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:den_o_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1552,7 +1552,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kiva_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1565,7 +1565,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:decade_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1578,7 +1578,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:w_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1591,7 +1591,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ooo_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1604,7 +1604,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fourze_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1617,7 +1617,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wizard_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1630,7 +1630,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gaim_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1643,7 +1643,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1656,7 +1656,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ghost_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1669,7 +1669,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ex_aid_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1682,7 +1682,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:build_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1695,7 +1695,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zi_o_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1708,7 +1708,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zero_one_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1721,7 +1721,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:saber_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1734,7 +1734,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:revi_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1747,7 +1747,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:vice_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1760,7 +1760,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:geats_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
@@ -1773,7 +1773,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gotchard_ride_chemy_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l) in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) or $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) while in the City dimension"
 		},
 		{
 			"type": "patchouli:text",
