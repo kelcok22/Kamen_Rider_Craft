@@ -8,8 +8,11 @@
     }, 
     {
       "item": "kamenridercraft:zero_two_progrisekey"
-    } 
-    ],
+    } ,
+    {
+      "item": "kamenridercraft:kuroto_dan_card"
+    }
+  ],
   "result": {
     "id": "kamenridercraft:zero_three_progrisekey"
   }
