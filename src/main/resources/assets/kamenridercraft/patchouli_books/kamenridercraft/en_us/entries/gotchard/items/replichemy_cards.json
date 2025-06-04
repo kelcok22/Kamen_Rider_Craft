@@ -2,7 +2,7 @@
 	"name": "Replichemy Cards",
 	"icon": "kamenridercraft:steamliner_repli_chemy_card",
 	"category": "kamenridercraft:gotchard/items",
-	"sortnum": 4,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

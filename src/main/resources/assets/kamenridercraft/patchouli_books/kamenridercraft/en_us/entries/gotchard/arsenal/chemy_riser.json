@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:gotchard/chemy_riser",
-			"text": "Use in the Nether to obtain Daybreak Chemy Cards$(br2)Use in the City dimension to obtain the $(l:gotchard/items/ride_chemy_cards#legend_ride_chemy_card)Legend Chemy Card$(/l)"
+			"text": "Use in the Nether to obtain Daybreak Chemy Cards$(br2)Use in the City dimension to obtain Legend Rider Chemy Cards (27% chance for $(l:gotchard/items/ride_chemy_cards#legend_ride_chemy_card)Legend$(/l), 2.7% chance for all others)"
 		}
 	]
 }
