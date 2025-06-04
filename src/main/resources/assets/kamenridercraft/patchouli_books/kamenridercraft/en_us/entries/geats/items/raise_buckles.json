@@ -226,11 +226,8 @@
 			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used to access Tycoon's $(l:geats/riders/tycoon#bujin_sword)Bujin Sword$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:bujin_sword_raise_buckle",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bujin_sword_raise_buckle"
 		},
 		{
 			"type": "patchouli:text",
