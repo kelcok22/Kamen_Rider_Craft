@@ -1,0 +1,16 @@
+{
+	"name": "DGP Winner's Coin",
+	"icon": "kamenridercraft:dgp_winners_coin",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/dgp_winners_coin"
+		}
+	]
+}
