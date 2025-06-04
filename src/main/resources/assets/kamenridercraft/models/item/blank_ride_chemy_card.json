@@ -3,4 +3,21 @@
   "textures": {
     "layer0": "kamenridercraft:item/blank_ride_chemy_card"
   }
+,
+
+  "overrides": [
+
+    {
+      "predicate": {
+        "pull": 1
+      },
+      "model": "kamenridercraft:item/blank_legend_chemy_card"
+    }  ,   {
+      "predicate": {
+        "pull": 2
+      },
+      "model": "kamenridercraft:item/blank_daybreak_chemy_card"
+    }
+
+  ]
 }

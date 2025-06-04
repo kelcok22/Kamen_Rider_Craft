@@ -70,7 +70,6 @@ public class ChemyRiserItem extends BaseItem {
         Random generator = new Random();
 
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-
         if (world.dimension() == CITY){
             int rand = generator.nextInt(Legend_CHEMY.size());
             return Legend_CHEMY.get(rand);
@@ -128,7 +127,9 @@ public class ChemyRiserItem extends BaseItem {
                         if( card.getItem() == Gotchard_Rider_Items.BLANK_RIDE_CHEMY_CARD.get()) {
                             serverPlayer.drop(new ItemStack(ChemyDrop(ring.getItem(),world,serverPlayer), 1), false);
                             card.shrink(1);
-
+                            if (!serverPlayer.isCreative()) {
+                                serverPlayer.getCooldowns().addCooldown(this, 10);
+                            }
                         }
 
 
