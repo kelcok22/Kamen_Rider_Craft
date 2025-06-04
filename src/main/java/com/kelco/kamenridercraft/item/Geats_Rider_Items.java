@@ -1265,8 +1265,18 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
+	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+
 	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+
+	public static final DeferredItem<Item> KUROTO_DAN_CARD = ITEMS.register("kuroto_dan_card",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> DGP_WINNERS_COIN = ITEMS.register("dgp_winners_coin",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static void register(net.neoforged.bus.api.IEventBus eventBus) {
 		ITEMS.register(eventBus);

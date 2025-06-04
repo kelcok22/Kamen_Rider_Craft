@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:gigant_mission_box"
+    }, 
+    {
+      "item": "kamenridercraft:hakubi_rider_core_id"
+    },
+    {
+      "item": "kamenridercraft:bujin_wish_card"
+    }
+    ],
+  "result": {
+    "id": "kamenridercraft:bujin_sword_raise_buckle"
+  }
+}

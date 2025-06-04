@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkiii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:boost_mkii_wish_card"
+    }, 
+    {
+      "item": "kamenridercraft:bujin_wish_card"
+    } ,
+    {
+      "item": "kamenridercraft:fantasy_wish_card"
+    },
+    {
+      "item": "kamenridercraft:jyamashin_wish_card"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:dgp_winners_coin"
+  }
+}
