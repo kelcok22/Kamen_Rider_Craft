@@ -35,7 +35,10 @@ import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -43,6 +46,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.client.event.*;
 import org.slf4j.Logger;
 
@@ -94,6 +98,7 @@ public class KamenRiderCraftCore
 
     public static List<Item> DARK_SHIELD_ITEM= new ArrayList<Item>();
 
+    public static List<Item> CHEMY_CARD= new ArrayList<Item>();
 
     public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer)
     {
@@ -344,6 +349,22 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                 );
             }
 
+            for (Item item : CHEMY_CARD) {
+                ItemProperties.register(item, ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                            if (p_174637_ == null) {
+                                return 0.0F;
+                            } else if (p_174637_ instanceof Player player) {
+                                ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+                                if (player.level().dimension() == CITY){
+                                    return 1;
+                                }else if (player.level().getBiome(player.blockPosition()).is(BiomeTags.IS_NETHER)){
+                                    return 2;
+                                }else return 0;
+                                }
+                                return 0;
+                }
+                );
+            }
 
 
  for (int i = 0; i < RAISE_RISER_ITEM.size(); i++)
