@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:nether_wastes",
+  "spawners": {
+	"type": "kamenridercraft:end_rider",
+	"weight": 15,
+	"minCount": 1,
+	"maxCount": 4
+  }
+}

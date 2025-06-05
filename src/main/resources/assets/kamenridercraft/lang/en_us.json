@@ -525,8 +525,10 @@
   "henshin.kamenridercraft.vail":"§0Blackout! §4Crimson Up!",
   "henshin.kamenridercraft.jyamato_rider":"<Jyamato Rider> §2Jurapira... Henshin!\n§2Jyamato!",
   "henshin.kamenridercraft.glare":"§5Install! Dominate a System! Glare!",
-  "henshin.kamenridercraft.glare2":"§5Install! I Have Full Control Over! Glare 2",
-  "henshin.kamenridercraft.gazer":"§6Install! Innovation And Control! Gazer",
+  "henshin.kamenridercraft.glare2":"§5Install! I Have Full Control Over! Glare 2!",
+  "henshin.kamenridercraft.gazer":"§6Install! Innovation And Control! Gazer!",
+  "henshin.kamenridercraft.premium_beroba":"§dBeroba! Set! Laser On! Premium Beroba",
+  "henshin.kamenridercraft.premium_kekera":"§aKekera! Set! Laser On! Premium Kekera",
   "henshin.kamenridercraft.bitter_gavv":"§4SparkinGummi! Yummy!",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
@@ -7939,6 +7941,9 @@
   "entity.kamenridercraft.glare": "Kamen Rider Glare",
   "entity.kamenridercraft.glare2": "Kamen Rider Glare2",
   "entity.kamenridercraft.gazer": "Kamen Rider Gazer",
+  "entity.kamenridercraft.end_rider": "End Rider",
+  "entity.kamenridercraft.premium_beroba": "Premium Beroba",
+  "entity.kamenridercraft.premium_kekera": "Premium Kekera",
 
   "entity.kamenridercraft.agent": "Agent",
   "entity.kamenridercraft.bitter_gavv": "Kamen Rider Bitter Gavv",
@@ -8139,6 +8144,9 @@
   "item.kamenridercraft.glare_spawn_egg": "Kamen Rider Glare Spawn Egg",
   "item.kamenridercraft.glare2_spawn_egg": "Kamen Rider Glare 2 Spawn Egg",
   "item.kamenridercraft.gazer_spawn_egg": "Kamen Rider Gazer Spawn Egg",
+  "item.kamenridercraft.end_rider_spawn_egg": "End Rider Spawn Egg",
+  "item.kamenridercraft.premium_beroba_spawn_egg": "Premium Beroba Spawn Egg",
+  "item.kamenridercraft.premium_kekera_spawn_egg": "Premium Kekera Spawn Egg",
 
   "item.kamenridercraft.agent_spawn_egg": "Agent Spawn Egg",
   "item.kamenridercraft.bitter_gavv_spawn_egg": "Kamen Rider Bitter Gavv Spawn Egg",

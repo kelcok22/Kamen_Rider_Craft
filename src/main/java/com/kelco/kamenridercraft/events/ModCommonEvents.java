@@ -592,7 +592,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.ANOMALOCARIS_DEADMAN.get(), AnomalocarisDeadmanEntity.setAttributes().build());
 		event.put(MobsCore.QUEEN_BEE_DEADMAN.get(), QueenBeeDeadmanEntity.setAttributes().build());
 		event.put(MobsCore.WOLF_DEADMAN.get(), WolfDeadmanEntity.setAttributes().build());
-		event.put(MobsCore.CRIMSON_VAIL.get(), WolfDeadmanEntity.setAttributes().build());
+		event.put(MobsCore.CRIMSON_VAIL.get(), VailEntity.setAttributes().build());
 
 		event.put(MobsCore.PAWN_JYAMATO.get(), PawnJyamatoEntity.setAttributes().build());
 		event.put(MobsCore.JYAMATO_RIDER.get(), JyamatoRiderEntity.setAttributes().build());
@@ -600,6 +600,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.GLARE.get(), GlareEntity.setAttributes().build());
 		event.put(MobsCore.GLARE2.get(), Glare2Entity.setAttributes().build());
 		event.put(MobsCore.GAZER.get(), GazerEntity.setAttributes().build());
+		event.put(MobsCore.END_RIDER.get(), EndRiderEntity.setAttributes().build());
+		event.put(MobsCore.PREMIUM_BEROBA.get(), PremiumBerobaEntity.setAttributes().build());
+		event.put(MobsCore.PREMIUM_KEKERA.get(), PremiumKekeraEntity.setAttributes().build());
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
@@ -688,6 +691,7 @@ public class ModCommonEvents {
 		event.register(MobsCore.PAWN_JYAMATO.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.JYAMATO_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.GM_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.END_RIDER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkAnyLightMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.AGENT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 

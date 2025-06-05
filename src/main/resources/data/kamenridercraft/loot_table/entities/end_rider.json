@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:desire_driver_the_end_riders",
+			"weight": 2
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:gigant_mission_box",
+			"weight": 3
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:hatena_mission_box",
+			"weight": 5
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "kamenridercraft:blank_rider_core_id",
+			"functions": [
+			  {
+				"function": "minecraft:set_count",
+				"count": {
+				  "min": 2,
+				  "max": 4
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

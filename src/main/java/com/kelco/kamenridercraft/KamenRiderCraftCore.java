@@ -632,6 +632,9 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             event.registerEntityRenderer(MobsCore.GLARE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GLARE2.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GAZER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.END_RIDER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.PREMIUM_BEROBA.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.PREMIUM_KEKERA.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.AGENT.get(), AgentRenderer::new);
             event.registerEntityRenderer(MobsCore.BITTER_GAVV.get(), BasicEntityRenderer::new);
