@@ -1104,6 +1104,25 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GAZER_SPAWN_EGG = ITEMS.register("gazer_spawn_egg",
             () -> new DeferredSpawnEggItem(GAZER, 0xffffff, 0xedc92b, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<EndRiderEntity>> END_RIDER = MOBLIST.register("end_rider",
+            () -> EntityType.Builder.of(EndRiderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":end_rider"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> END_RIDER_SPAWN_EGG = ITEMS.register("end_rider_spawn_egg",
+            () -> new DeferredSpawnEggItem(END_RIDER, 0x0F100F, 0xffffff, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PremiumBerobaEntity>> PREMIUM_BEROBA = MOBLIST.register("premium_beroba",
+            () -> EntityType.Builder.of(PremiumBerobaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":premium_beroba"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PREMIUM_BEROBA_SPAWN_EGG = ITEMS.register("premium_beroba_spawn_egg",
+            () -> new DeferredSpawnEggItem(PREMIUM_BEROBA, 0xea9aed, 0x6af54e, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PremiumKekeraEntity>> PREMIUM_KEKERA = MOBLIST.register("premium_kekera",
+            () -> EntityType.Builder.of(PremiumKekeraEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":premium_kekera"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PREMIUM_KEKERA_SPAWN_EGG = ITEMS.register("premium_kekera_spawn_egg",
+            () -> new DeferredSpawnEggItem(PREMIUM_KEKERA, 0x32f032, 0xe9f2e9, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<AgentEntity>> AGENT = MOBLIST.register("agent",
             () -> EntityType.Builder.of(AgentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":agent"));
 
