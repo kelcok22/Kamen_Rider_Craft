@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-04T16:36:22.0501075	Item Models: kamenridercraft
+// 1.21.1	2025-06-06T20:44:14.5474818	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -69,6 +69,7 @@ cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/care
 fd6378e7aa4fe861bc5392d1559b991512c63532 assets/kamenridercraft/models/item/chocoball_gochizo.json
 6104219c05b5b7e9cb75021d1cd98f15361bdf46 assets/kamenridercraft/models/item/chocold_gochizo.json
 758915c703a4e1fdec17eb50ce05b992e12ca965 assets/kamenridercraft/models/item/chocopie_gochizo.json
+9b14d9ce129403d0e2f2dfd83650c0e480cc2e63 assets/kamenridercraft/models/item/chophopper_rider_belt.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/circle_astroswitch.json
 78198f20d9d7b7aab8c7d82954077ba2f82427d7 assets/kamenridercraft/models/item/colorful_commercial.json
 052f1e707b239445030cc60b84f42895b0d20143 assets/kamenridercraft/models/item/crepuna_gochizo.json
