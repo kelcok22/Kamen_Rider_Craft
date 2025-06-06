@@ -7,11 +7,21 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:lady_zecter",
-          "weight": 1
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:blue_rose",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:chophopper_rider_belt",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:next_level_music_disc",
           "weight": 1
         }
       ],

@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
+import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.kabuto.ClockUpPadItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -224,6 +225,14 @@ public class Kabuto_Rider_Items {
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
+
+        public static final DeferredItem<Item> CHOPHOPPER_ZECTER = ITEMS.register("chophopper_zecter",
+                () -> new RiderFormChangeItem(new Item.Properties(),0,"","chophopper","chophopper_zect_buckle_belt",
+                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                        new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
+                        new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
+
                     
         public static final DeferredItem<Item> KABUTOHELMET = ITEMS.register("kabutohead",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
@@ -265,7 +274,9 @@ public class Kabuto_Rider_Items {
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"brightrooper",BRIGHTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> NEOTROOPER_BELT = ITEMS.register("neotrooper_belt",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neotrooper",NEOTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
-	    
+        public static final DeferredItem<Item> CHOPHOPPER_RIDER_BELT = ITEMS.register("chophopper_rider_belt",
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
+
         public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
                 () -> new ClockUpPadItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
