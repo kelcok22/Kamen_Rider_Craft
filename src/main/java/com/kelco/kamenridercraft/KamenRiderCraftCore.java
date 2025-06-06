@@ -191,22 +191,23 @@ public class KamenRiderCraftCore
     public void addRenderLivingEvent(RenderLivingEvent.Pre event) {
 
 if (event.getRenderer().getModel()instanceof PlayerModel model){
+    if (event.getEntity()instanceof Player){
     if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
         if (belt.isTransformed(event.getEntity())) {
             if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Face()) {
                 model.head.visible = false;
                 model.hat.visible = false;
-            }else{
+            } else {
                 model.head.visible = true;
                 model.hat.visible = true;
             }
-            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_under()){
+            if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_under()) {
                 model.leftLeg.visible = false;
                 model.rightLeg.visible = false;
                 model.leftArm.visible = false;
                 model.rightArm.visible = false;
                 model.body.visible = false;
-            }else{
+            } else {
                 model.leftLeg.visible = true;
                 model.rightLeg.visible = true;
                 model.leftArm.visible = true;
@@ -218,6 +219,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             model.leftPants.visible = false;
             model.rightPants.visible = false;
             model.jacket.visible = false;
+        }
         }else{
             model.head.visible = true;
             model.hat.visible = true;
