@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:beroba_black_raise_riser_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/premium_beroba)Premium Beroba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kekera_black_raise_riser_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/premium_kekera)Premium Kekera$(/l)"
 		}
 	]
 }

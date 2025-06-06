@@ -1,0 +1,17 @@
+{
+	"name": "Premium Beroba",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:premium_beroba",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:geats/mobs/end_rider)The End Rider$(/l)$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l)$(li)1 $(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)Black Raise Riser Card (Beroba)$(/l)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (90% x2)$(li)1 $(l:geats/items/desire_cards#jyamashin_wish_card)Jyamashin Desire Card$(/l) (10% x2)"
+		}
+	]
+}

@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:jyamashin_wish_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/premium_beroba)Premium Beroba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bujin_wish_card",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:geats/mobs/premium_kekera)Premium Kekera$(/l)"
 		},
 		{
 			"type": "patchouli:text",

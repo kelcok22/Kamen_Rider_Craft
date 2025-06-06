@@ -298,7 +298,8 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:geats/desire_driver_the_end_riders"
+			"recipe": "kamenridercraft:geats/desire_driver_the_end_riders",
+			"text": "Drops from:$(li)$(l:geats/mobs/end_rider)The End Riders$(/l)"
 		},
 		{
 			"type": "patchouli:text",
