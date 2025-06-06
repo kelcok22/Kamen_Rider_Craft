@@ -1,0 +1,17 @@
+{
+	"name": "Premium Kekera",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:premium_kekera",
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br)Health: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Has a 5% chance to spawn from a $(l:geats/mobs/end_rider)The End Rider$(/l)$(br2)Drops$(li)2-4 $(l:geats/items/blank_rider_core_id)Blank Rider Core IDs$(/l)$(li)1 $(l:geats/items/raise_riser_cards#kekera_black_raise_riser_card)Black Raise Riser Card (Kekera)$(/l)$(li)1 $(l:geats/items/gigant_mission_box)Support Mission Box Type Geats$(/l) (90% x2)$(li)1 $(l:geats/items/desire_cards#bujin_wish_card)Bujin Sword Desire Card$(/l) (10% x2)"
+		}
+	]
+}
