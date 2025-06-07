@@ -602,6 +602,7 @@ public class RiderTabs {
 
 
             event.accept(Rider_Blocks.GLASS_DOOR);
+            event.accept(Rider_Blocks.PLINTH);
 
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
