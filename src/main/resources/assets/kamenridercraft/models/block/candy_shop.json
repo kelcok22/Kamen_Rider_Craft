@@ -1,0 +1,10 @@
+{
+    "parent": "block/orientable",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "top": "kamenridercraft:block/kamen_cafe_counter_top",
+        "front": "kamenridercraft:block/candy_shop",
+        "side": "kamenridercraft:block/candy_shop",
+         "bottom": "kamenridercraft:block/kamen_cafe_counter_bottom"
+    }
+}

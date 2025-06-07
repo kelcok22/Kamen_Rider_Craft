@@ -1,0 +1,8 @@
+{
+    "variants":{   
+    "facing=north": { "model": "kamenridercraft:block/candy_shop" },
+    "facing=south": { "model": "kamenridercraft:block/candy_shop", "y": 180 },
+    "facing=west": { "model": "kamenridercraft:block/candy_shop", "y": 270 },
+    "facing=east": { "model": "kamenridercraft:block/candy_shop", "y": 90 }
+  }
+ }

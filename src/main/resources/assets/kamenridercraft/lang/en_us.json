@@ -1658,6 +1658,7 @@
   "item.kamenridercraft.potato_snacks": "Potato Snacks",
   "item.kamenridercraft.candy_wrapper": "Candy Wrapper",
   "item.kamenridercraft.pancake": "Pancake Stack",
+  "item.kamenridercraft.dango": "Dango",
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
@@ -7454,6 +7455,8 @@
 "item.kamenridercraft.frappeis_gochizo": "Frappeis Gochizo",
 "item.kamenridercraft.doppudding_gochizo": "Doppudding Gochizo",
 "item.kamenridercraft.purujelly_gochizo": "Purujelly Gochizo",
+  "item.kamenridercraft.shouma_doppudding_gochizo": "Shouma's Doppudding Gochizo",
+  "item.kamenridercraft.prujelly_gochizo": "Prujelly Gochizo",
 "item.kamenridercraft.sparkingummy_gochizo": "Sparkingummy Gochizo",
 "item.kamenridercraft.vrocanspicy_gochizo": "Vrocan Spicy Gochizo",
 "item.kamenridercraft.bakibakistick_gochizo": "Bakibaki Stick Gochizo",
@@ -8401,6 +8404,7 @@
 "block.kamenridercraft.kamen_cafe_counter": "Kamen Cafe Counter",
   "block.kamenridercraft.heatpress_extractor": "Hitpress Extractor",
   "block.kamenridercraft.dark_treat": "Dark Treat Block",
+  "block.kamenridercraft.candy_shop": "Candy Shop Counter",
 
 "block.kamenridercraft.gaoh_boss_block": "Gaoh Boss Block",
 "block.kamenridercraft.poseidon_boss_block": "Poseidon Boss Block",

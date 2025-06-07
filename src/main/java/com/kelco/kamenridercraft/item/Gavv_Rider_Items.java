@@ -37,6 +37,7 @@ public class Gavv_Rider_Items {
 	public static List<Item> COOKIE= new ArrayList<Item>();
 	public static List<Item> PANCAKE= new ArrayList<Item>();
 	public static List<Item> MOCHI= new ArrayList<Item>();
+	public static List<Item> PUDDING= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<Item>();
 
@@ -46,6 +47,9 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> BLANK_GOCHIZO = ITEMS.register("blank_gochizo",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> PROTOTYPE_CUP_GOCHIZO = ITEMS.register("prototype_cup_gochizo",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> HEATPRESS = ITEMS.register("heatpress",
 			() -> new HitpressItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
@@ -177,12 +181,19 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(Effect_core.STEALTH, 40, 1,true,false))
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> SHOUMA_DOPPUDDING_GOCHIZO = ITEMS.register("shouma_doppudding_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","vrastumgear_belt")
+					.AddToList(PUDDING,3).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> PRUJELLY_GOCHIZO = ITEMS.register("prujelly_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","vrastumgear_belt")
+					.AddToList(PUDDING,1).AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 	public static final DeferredItem<Item> SPARKINGUMMY_GOCHIZO = ITEMS.register("sparkingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","bitter_gavv","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
-
 
 	public static final DeferredItem<Item> BREACOOKIE_GOCHIZO = ITEMS.register("breacookie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookie","bitter_gavv","henshin_belt_bitter_gavv_belt",
@@ -191,8 +202,10 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKIBAKISTICK_GOCHIZO = ITEMS.register("bakibakistick_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_bitter_gavv_belt")
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"bakibaki","do_not_work","henshin_belt_bitter_gavv_belt")
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+
 
 	public static final DeferredItem<Item> VROCANSPICY_GOCHIZO = ITEMS.register("vrocanspicy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_bitter_gavv_belt")
