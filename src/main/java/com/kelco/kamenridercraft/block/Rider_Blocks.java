@@ -238,6 +238,9 @@ public class Rider_Blocks {
 			() -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<PlinthBlock> PLINTH = registerBlock("sword_plinth",
+			() -> new PlinthBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
 	public static final DeferredBlock<Block> SWORD_OF_LOGOS_BOOK_ANALYZER = registerBlock("sword_of_logos_book_analyzer",
 			() -> new SwordOfLogosBookAnalyzer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));

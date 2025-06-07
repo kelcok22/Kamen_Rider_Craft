@@ -28,6 +28,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
                     PandoraPanelBlockEntity::new, Rider_Blocks.PANDORA_PANEL_BLOCK.get()).build(null));
 
+    public static final Supplier<BlockEntityType<PlinthBlockEntity>> PLINTH_BE =
+            BLOCK_ENTITIES.register("plinth_be", () -> BlockEntityType.Builder.of(
+                    PlinthBlockEntity::new, Rider_Blocks.PLINTH.get()).build(null));
+
 
     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}
 }
