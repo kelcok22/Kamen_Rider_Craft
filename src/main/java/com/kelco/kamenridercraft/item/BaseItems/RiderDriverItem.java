@@ -93,6 +93,14 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
+    public static double getRenderType(ItemStack stack) {
+        double form_double = 1;
+        RiderFormChangeItem form = get_Form_Item(stack, 1);
+        if (form.get_Show_Face())form_double=2;
+        if (form.get_Show_under())form_double=3;
+        return form_double ;
+    }
+
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
@@ -103,8 +111,9 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
                 if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
 
-                if (!isTransformed(player)) tag.putBoolean("Transformed", false);
-                if (isTransformed(player)) tag.putBoolean("Transformed", true);
+                if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
+                if (!isTransformed(player)) tag.putDouble("render_type", 0);
+
                 //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
             }else{
                 set_Upadete_Form(stack);
@@ -279,6 +288,7 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemstack.getItem() instanceof RiderDriverItem) {
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", true);
+                form.putDouble("render_type", getRenderType(itemstack));
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }
@@ -296,6 +306,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 if (!form.getString("slot_tex" + SLOT).equals(ITEM.toString())) {
                     form.putString("slot_tex" + SLOT, ITEM.toString());
                     form.putBoolean("Update_form", true);
+                    form.putDouble("render_type", getRenderType(itemstack));
                 }
             };
 
