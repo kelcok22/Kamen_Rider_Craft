@@ -4,10 +4,6 @@
 	  "kamenridercraft:another_agito",
 	  "#kamenridercraft:by_series/555",
 	  "#kamenridercraft:by_series/kabuto",
-	  "kamenridercraft:foundation_x_masquerade",
-	  "kamenridercraft:commander_dopant",
-	  "kamenridercraft:eternal_mob",
-	  "kamenridercraft:muchiri_mob",
     "kamenridercraft:mage_captain",
     "kamenridercraft:mage_footsoldier",
     "kamenridercraft:sorcerer",
@@ -33,9 +29,6 @@
     "kamenridercraft:gmrider",
     "kamenridercraft:glare",
     "kamenridercraft:gazer",
-    "kamenridercraft:glare2",
-    "kamenridercraft:end_rider",
-    "kamenridercraft:premium_kekera",
-    "kamenridercraft:premium_beroba"
+    "kamenridercraft:glare2"
   ]
 }
