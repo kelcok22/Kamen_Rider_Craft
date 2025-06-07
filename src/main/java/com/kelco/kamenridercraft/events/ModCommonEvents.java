@@ -334,7 +334,11 @@ public class ModCommonEvents {
 				trades.get(2).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 2),
 						new ItemStack(Modded_item_core.CARD_WARRIOR_KAMEN_RIDER_MANGA.get(), 1), 10, 8, 0.02F));
-			} 
+			} else if (event.getType() == VillagerProfession.CLERIC) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 5),
+						new ItemStack(Gotchard_Rider_Items.ALCHEMIST_RING_NO_GEM.get(), 1), 10, 8, 0.02F));
+		}
 			else if (event.getType() == RiderVillagers.SHOCKER_VILLAGER.get()) {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Ichigo_Rider_Items.RIDOL_CORE.get(), 1),
