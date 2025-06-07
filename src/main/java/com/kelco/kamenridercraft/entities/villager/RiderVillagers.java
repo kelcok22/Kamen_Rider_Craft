@@ -58,6 +58,14 @@ public class RiderVillagers {
                     (X) -> {return X.is(HEATPRESS_EXTRACTOR_POI);}, ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
 
+    public static final DeferredHolder<PoiType,PoiType> CANDY_SHOP_POI = POI_TYPES.register("candy_shop_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Rider_Blocks.CANDY_SHOP.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    public static final DeferredHolder<VillagerProfession,VillagerProfession> CANDYSHOP_VILLAGER = VILLAGER_PROFESSIONS.register("candyshop_villager",
+            () -> new VillagerProfession("candyshop_villager",(X) -> {return X.is(CANDY_SHOP_POI);},
+                    (X) -> {return X.is(CANDY_SHOP_POI);}, ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_FARMER));
 
     
 
@@ -71,6 +79,8 @@ public class RiderVillagers {
                     "registerBlockStates", PoiType.class).invoke(null, KAMEN_CAFE_COUNTER_POI.get());
             ObfuscationReflectionHelper.findMethod(PoiType.class,
                     "registerBlockStates", PoiType.class).invoke(null, HEATPRESS_EXTRACTOR_POI.get());
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, CANDY_SHOP_POI.get());
         } catch (InvocationTargetException | IllegalAccessException exception) {
             exception.printStackTrace();
         }

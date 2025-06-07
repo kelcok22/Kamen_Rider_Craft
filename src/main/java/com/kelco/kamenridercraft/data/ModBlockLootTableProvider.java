@@ -39,6 +39,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB.get(),
                 block -> createSlabItemTable(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB.get()));
 
+        dropSelf(Rider_Blocks.CANDY_SHOP.get());
         dropSelf(Rider_Blocks.HELHEIM_STAIRS.get());
         dropSelf(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get());
         dropSelf(Rider_Blocks.HELHEIM_FENCE.get());

@@ -250,6 +250,10 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> CANDY_SHOP = registerBlock("candy_shop",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
 	public static final DeferredBlock<Block>  DARK_TREAT_GLASS = registerBlock("dark_treat",
 			() -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0,0),DyeColor.BROWN).AddToTabList(RiderTabs.RIDER_BLOCK));
 

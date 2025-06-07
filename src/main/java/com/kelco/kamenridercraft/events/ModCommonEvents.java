@@ -138,6 +138,9 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/mochi_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.MOCHI.size());
 				return Gavv_Rider_Items.MOCHI.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pudding_gochizo")))) {
+				int rand = generator.nextInt(Gavv_Rider_Items.PUDDING.size());
+				return Gavv_Rider_Items.PUDDING.get(rand);
 			}
 			return Items.APPLE;
 		}
@@ -396,6 +399,38 @@ public class ModCommonEvents {
 			trades.get(1).add((trader, rand) -> new MerchantOffer(
 					new ItemCost(Gavv_Rider_Items.HEATPRESS, 2),
 					new ItemStack(Gavv_Rider_Items.PURUJELLY_GOCHIZO.get(), 1), 10, 8, 0.02F));
+			}
+			else if (event.getType() == RiderVillagers.CANDYSHOP_VILLAGER.get()) {
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.DANGO.get(), 2), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.PUDDING.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.GUMMI_CANDY.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.POTATO_SNACKS.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.CHOCOLATE_BAR.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.LOLLIPOP.get(), 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Miscellaneous_Rider_Items.CANDY.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.MARSHMALLOW.get(), 1), 10, 8, 0.02F));
+				trades.get(1).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Items.COOKIE, 1), 10, 8, 0.02F));
+				trades.get(3).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.MAYO.get(), 1), 10, 8, 0.02F));
 		}
 		}
 

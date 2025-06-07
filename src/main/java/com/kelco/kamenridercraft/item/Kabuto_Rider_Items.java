@@ -228,7 +228,6 @@ public class Kabuto_Rider_Items {
 
         public static final DeferredItem<Item> CHOPHOPPER_ZECTER = ITEMS.register("chophopper_zecter",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"","chophopper","chophopper_zect_buckle_belt",
-                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                         new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false),
                         new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
