@@ -1,0 +1,136 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:beetlx_ride_chemy_card"
+	},
+	"title": "Insect King",
+	"description": "Obtain all the Insect Chemy Cards",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/gotchard",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hopper1_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:pikahotaru_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gengenchoucho_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:bakuonzemi_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:antrooper_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:greatonbo_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"7": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:stagvine_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"8": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kaiserbee_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"9": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kamantis_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"10": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:beetlx_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

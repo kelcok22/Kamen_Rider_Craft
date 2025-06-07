@@ -1,0 +1,206 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:nijigon_ride_chemy_card_special"
+    },
+    "title": "Gotcha! 101 Chemies",
+    "description": "Obtain all 100 main Chemy Cards + Machwheel, Tenliner, Crosshopper, and Nijigon",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/fantastic_chemy",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/insect_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/job_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/vehicle_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/animal_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "5": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/artifact_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "6": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/plant_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "7": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/occult_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "8": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/ancient_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "9": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/cosmic_chemy": true
+            }
+          }
+        }
+      }
+    },
+    "10": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "kamenridercraft:gotchard/fantastic_chemy": true
+            }
+          }
+        }
+      }
+    },
+	"11": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:machwheel_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"12": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:tenliner_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"13": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:crosshopper_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"14": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:nijigon_ride_chemy_card_extra"
+			]
+		  }
+		]
+	  }
+	},
+	"15": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:nijigon_ride_chemy_card_special"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

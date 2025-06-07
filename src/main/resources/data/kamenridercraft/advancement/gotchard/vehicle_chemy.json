@@ -1,0 +1,136 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:exceedfighter_ride_chemy_card"
+	},
+	"title": "Top Vehicle",
+	"description": "Obtain all the Vehicle Chemy Cards",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/job_chemy",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:spicle_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:skebows_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:hiikescue_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gekiocopter_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:deepmariner_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:madwheel_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"7": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:golddash_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"8": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:gutsshovel_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"9": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:steamliner_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"10": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:exceedfighter_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

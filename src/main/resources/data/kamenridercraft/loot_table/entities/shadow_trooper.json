@@ -11,10 +11,6 @@
 		{
 		  "type": "minecraft:item",
 		  "name": "kamenridercraft:punchhopper_zecter"
-		},
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:lady_zecter"
 		}
 	  ],
 	  "conditions": [

@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lady_zecter",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:kabuto/mobs/shadow_trooper)Shadow Troopers$(/l)"
+			"text": "Obtained as trial loot from the $(l:kabuto/structures/god_speed_love)God Speed Love$(/l) structure"
 		},
 		{
 			"type": "patchouli:text",

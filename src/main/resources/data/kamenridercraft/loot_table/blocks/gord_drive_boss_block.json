@@ -10,7 +10,7 @@
 		  "children": [
 			{
 			  "type": "minecraft:item",
-			  "name": "kamenridercraft:gold_drive_boss_block",
+			  "name": "kamenridercraft:gord_drive_boss_block",
 			  "conditions": [
 				{
 				  "condition": "minecraft:match_tool",
@@ -34,5 +34,5 @@
 	  ]
 	}
   ],
-  "random_sequence": "kamenridercraft:gold_drive_boss_block"
+  "random_sequence": "kamenridercraft:gord_drive_boss_block"
 }

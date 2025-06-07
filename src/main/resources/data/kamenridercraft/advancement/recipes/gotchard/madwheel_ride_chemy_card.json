@@ -22,7 +22,8 @@
   "rewards": {
 	"recipes": [
 	  "kamenridercraft:gotchard/valvarusher",
-	  "kamenridercraft:gotchard/chemy_riser_supana"
+	  "kamenridercraft:gotchard/chemy_riser_supana",
+	  "kamenridercraft:gotchard/machwheel_ride_chemy_card"
 	]
   },
   "sends_telemetry_event": false

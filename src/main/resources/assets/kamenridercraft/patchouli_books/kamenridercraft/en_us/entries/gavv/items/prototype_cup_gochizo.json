@@ -1,0 +1,19 @@
+{
+	"name": "Prototype Cup Gochizo",
+	"icon": "kamenridercraft:prototype_cup_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:prototype_cup_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

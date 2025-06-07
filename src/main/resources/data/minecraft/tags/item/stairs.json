@@ -1,9 +1,18 @@
 {
   "values": [
-	"kamenridercraft:sword_of_logos_stairs",
-	"kamenridercraft:sword_of_logos_wood_stairs",
+	"kamenridercraft:rabbit_hutch_computer_stairs",
+	"kamenridercraft:helheim_stairs",
 	"kamenridercraft:sword_of_logos_gold_stairs",
-	"kamenridercraft:sword_of_logos_tabel_stairs",
-	  "kamenridercraft:helheim_stairs"
+	"kamenridercraft:sword_of_logos_wood_stairs",
+	"kamenridercraft:sword_of_logos_stairs",
+	"kamenridercraft:yellow_wallplate_grate_stairs",
+	"kamenridercraft:red_wallplate_stairs",
+	"kamenridercraft:grey_wallplate_stairs",
+	"kamenridercraft:green_wallplate_stairs",
+	"kamenridercraft:light_green_wallplate_stairs",
+	"kamenridercraft:black_wallplate_stairs",
+	"kamenridercraft:yellow_wallplate_stairs",
+	"kamenridercraft:wallplate_stairs",
+	"kamenridercraft:white_wallplate_stairs"
   ]
 }
