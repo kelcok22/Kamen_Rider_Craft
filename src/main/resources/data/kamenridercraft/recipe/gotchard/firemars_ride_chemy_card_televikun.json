@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "alchemist_rings",
+	"ingredients": [
+
+		{
+			"item": "kamenridercraft:alchemist_ring_blue"
+		} ,
+		{
+			"item": "kamenridercraft:alchemist_ring_orange"
+
+		},
+		{
+			"item": "kamenridercraft:firemars_ride_chemy_card"
+
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:firemars_ride_chemy_card_televikun"
+	}
+}

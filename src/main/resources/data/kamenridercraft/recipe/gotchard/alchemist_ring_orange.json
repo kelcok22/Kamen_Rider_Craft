@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "alchemist_rings",
+	"ingredients": [
+
+		{
+			"item": "kamenridercraft:alchemist_ring_no_gem"
+		} ,{
+			"item": "kamenridercraft:alchemist_ring_gold"
+		} ,
+		{
+			"item": "kamenridercraft:wizardgem"
+
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:alchemist_ring_orange"
+	}
+}
