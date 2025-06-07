@@ -198,22 +198,22 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
     if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ArmorItem belt) {
         if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
-            if (tag.getBoolean("Transformed")) {
-                if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
-                    if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_Face()) {
+            if (tag.getDouble("render_type")!=0) {
+                    if (tag.getDouble("render_type")!=2) {
                         model.head.visible = false;
                         model.hat.visible = false;
                     } else {
                         model.head.visible = true;
                         model.hat.visible = true;
                     }
-                    if (!RiderDriverItem.get_Form_Item(event.getEntity().getItemBySlot(EquipmentSlot.FEET), 1).get_Show_under()) {
+                    if (tag.getDouble("render_type")!=3) {
                         model.leftLeg.visible = false;
                         model.rightLeg.visible = false;
                         model.leftArm.visible = false;
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     } else {
+                        model.head.visible = true;
                         model.leftLeg.visible = true;
                         model.rightLeg.visible = true;
                         model.leftArm.visible = true;
@@ -225,50 +225,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                     model.leftPants.visible = false;
                     model.rightPants.visible = false;
                     model.jacket.visible = false;
-                } else {
-                    model.head.visible = false;
-                    model.hat.visible = false;
-                    model.leftLeg.visible = false;
-                    model.rightLeg.visible = false;
-                    model.leftArm.visible = false;
-                    model.rightArm.visible = false;
-                    model.body.visible = false;
-                    model.leftSleeve.visible = false;
-                    model.rightSleeve.visible = false;
-                    model.leftPants.visible = false;
-                    model.rightPants.visible = false;
-                    model.jacket.visible = false;
-                }
             }
-        } if (!(event.getEntity() instanceof Player)&event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem){
-            if (((RiderDriverItem)event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem()).isTransformed(event.getEntity())) {
-                model.head.visible = false;
-                model.hat.visible = false;
-                model.leftLeg.visible = false;
-                model.rightLeg.visible = false;
-                model.leftArm.visible = false;
-                model.rightArm.visible = false;
-                model.body.visible = false;
-                model.leftSleeve.visible = false;
-                model.rightSleeve.visible = false;
-                model.leftPants.visible = false;
-                model.rightPants.visible = false;
-                model.jacket.visible = false;
-            }else{
-                model.head.visible = true;
-                model.hat.visible = true;
-                model.leftLeg.visible = true;
-                model.rightLeg.visible = true;
-                model.leftArm.visible = true;
-                model.rightArm.visible = true;
-                model.body.visible = true;
-                model.leftSleeve.visible = true;
-                model.rightSleeve.visible = true;
-                model.leftPants.visible = true;
-                model.rightPants.visible = true;
-                model.jacket.visible = true;
-            }
-
     }
 
     }else {
