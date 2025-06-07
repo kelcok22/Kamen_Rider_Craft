@@ -102,6 +102,9 @@ public class RiderDriverItem extends RiderArmorItem {
                 CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
                 if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
                 if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+
+                if (!isTransformed(player)) tag.putBoolean("Transformed", false);
+                if (isTransformed(player)) tag.putBoolean("Transformed", true);
                 //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
             }else{
                 set_Upadete_Form(stack);
