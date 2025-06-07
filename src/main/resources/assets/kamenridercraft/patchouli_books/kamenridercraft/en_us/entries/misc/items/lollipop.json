@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/lollipop"
+			"recipe": "kamenridercraft:misc/lollipop",
+			"text": "Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		}
 	]
 }

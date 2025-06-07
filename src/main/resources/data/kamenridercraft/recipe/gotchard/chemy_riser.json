@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "group": "kr_gotchard",
   "pattern": [
-	"XXX",
+	"XTX",
 	"XSX",
-	"XTX"
+	"XXX"
   ],
   "key": {
 	"X": {

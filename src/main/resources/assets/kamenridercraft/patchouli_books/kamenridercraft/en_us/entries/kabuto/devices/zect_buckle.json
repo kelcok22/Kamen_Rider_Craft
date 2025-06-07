@@ -104,6 +104,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kabuto/lady_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chophopper_rider_belt",
+			"title": "ZECT Buckle (ChopHopper)",
+			"text": "Appears in:$(li)Kamen Rider Kabuto: Special Show (2006, stage show)$(br2)Used alongside the $(l:kabuto/devices/armor)Kabuto armor$(/l) to transform into $(l:kabuto/riders/chophopper)Kamen Rider ChopHopper"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chophopper_rider_belt",
+			"title": " ",
+			"text": "Obtained as trial loot from the $(l:kabuto/structures/god_speed_love)God Speed Love$(/l) structure"
 		}
 	]
 }

@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "group": "valvarad",
   "pattern": [
-	"XXX",
+	"XTX",
 	"XSX",
-	"XTX"
+	"XXX"
   ],
   "key": {
 	"X": {

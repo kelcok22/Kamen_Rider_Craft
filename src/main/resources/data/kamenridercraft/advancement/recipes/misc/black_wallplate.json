@@ -7,7 +7,7 @@
 		"items": [
 		  {
 			"items": [
-			  "kamenridercraft:ark_scorpion_progrisekey"
+			  "kamenridercraft:black_wallplate"
 			]
 		  }
 		]
@@ -21,7 +21,7 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:zero_one/zetsumetsu_driver"
+	  "kamenridercraft:misc/block/jail_door"
 	]
   },
   "sends_telemetry_event": false

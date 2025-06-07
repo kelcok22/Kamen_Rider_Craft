@@ -2631,7 +2631,7 @@
 "item.kamenridercraft.lady_rider_belt": "ZECT Buckle",
 "kamenridercraft.name.lady": "Rider: Kamen Rider Lady",
   "item.kamenridercraft.chophopper_rider_belt": "ZECT Buckle",
-  "kamenridercraft.name.neotrooper": "Debatable Rider: ChopHopper",
+  "kamenridercraft.name.chophopper": "Debatable Rider: ChopHopper",
 
 "item.kamenridercraft.clock_up_pad": "Clock Up Pad",
 
@@ -7434,6 +7434,7 @@
   "item.kamenridercraft.bakebuckle": "Bakebuckle",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
+"item.kamenridercraft.prototype_cup_gochizo": "Prototype Cup Gochizo",
 "item.kamenridercraft.poppingummy_gochizo": "Poppingummy Gochizo",
 "item.kamenridercraft.punchingummy_gochizo": "Punchingummy Gochizo",
 "item.kamenridercraft.kickingummy_gochizo": "Kickingummy Gochizo",
@@ -7767,6 +7768,7 @@
 "entity.minecraft.villager.kamenridercraft.humagear_villager":"Humagear",
 "entity.minecraft.villager.kamenridercraft.kamen_cafe_butler":"Kamen Cafe Butler",
   "entity.minecraft.villager.kamenridercraft.agent_villager":"Stomach Inc. Agent",
+  "entity.minecraft.villager.kamenridercraft.candyshop_villager":"Candy Vendor",
 "entity.kamenridercraft.shocker_riders":"Shocker Rider",
 "entity.kamenridercraft.destron_combatman":"Destron Combatman",
 "entity.kamenridercraft.god_warfare_agent":"G.O.D. Warfare Agent",

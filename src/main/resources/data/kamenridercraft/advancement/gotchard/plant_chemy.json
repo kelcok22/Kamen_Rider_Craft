@@ -1,0 +1,136 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:xeggdrasil_ride_chemy_card"
+	},
+	"title": "Best Plant",
+	"description": "Obtain all the Plant Chemy Cards",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/artifact_chemy",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:happyclover_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:burningnero_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:bambamboo_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:saboneedle_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:venomdake_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:utsubocchama_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"7": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:flayrose_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"8": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:buglesia_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"9": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:junglejan_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"10": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:xeggdrasil_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

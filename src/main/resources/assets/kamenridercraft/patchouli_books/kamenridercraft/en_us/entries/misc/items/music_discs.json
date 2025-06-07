@@ -2,7 +2,7 @@
 	"name": "Music Discs",
 	"icon": "kamenridercraft:lets_go_rider_kick_music_disc",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 23,
+	"sortnum": 999,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -163,7 +163,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:next_level_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Obtained as trial loot from the $(l:kabuto/structures/god_speed_love)God Speed Love$(/l) structure"
 		},
 		{
 			"type": "patchouli:text",

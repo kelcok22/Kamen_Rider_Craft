@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+	"has_item": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:alchemist_ring_no_gem"
+			]
+		  }
+		]
+	  }
+	}
+  },
+  "requirements": [
+	[
+	  "has_item"
+	]
+  ],
+  "rewards": {
+	"recipes": [
+	  "kamenridercraft:gotchard/alchemist_ring_blue",
+	  "kamenridercraft:gotchard/alchemist_ring_green",
+	  "kamenridercraft:gotchard/alchemist_ring_red",
+	  "kamenridercraft:gotchard/alchemist_ring_orange",
+	  "kamenridercraft:gotchard/alchemist_ring_purple"
+	]
+  },
+  "sends_telemetry_event": false
+}

@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Soul Sand Valley$(br2)Drops$(li)2-4 $(l:kabuto/items/mini_zecter)Mizerbombers$(/l)$(li)1 $(l:kabuto/items/zecters#gatack_zecter)Gatack Zecter$(/l) (25%)$(li)1 $(l:kabuto/items/zecters#kickhopper_zecter)KickHopper Zecter$(/l) (10%)$(li)1 $(l:kabuto/items/zecters#punchhopper_zecter)PunchHopper Zecter$(/l) (10%)$(li)1 $(l:kabuto/items/zecters#lady_zecter)Lady Zecter$(/l) (10%)"
+			"text": "Spawn locations: Soul Sand Valley, $(l:kabuto/structures/god_speed_love)God Speed Love$(/l)$(br2)Drops$(li)2-4 $(l:kabuto/items/mini_zecter)Mizerbombers$(/l)$(li)1 $(l:kabuto/items/zecters#gatack_zecter)Gatack Zecter$(/l) (25%)$(li)1 $(l:kabuto/items/zecters#kickhopper_zecter)KickHopper Zecter$(/l) (5%)$(li)1 $(l:kabuto/items/zecters#punchhopper_zecter)PunchHopper Zecter$(/l) (5%)"
 		}
 	]
 }

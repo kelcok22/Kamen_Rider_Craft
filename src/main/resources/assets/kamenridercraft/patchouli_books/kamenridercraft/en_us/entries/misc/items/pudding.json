@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)"
+			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into pudding Gochizos when eaten"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:pudding",
 			"title": " ",
-			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)"
+			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)$(br2)Traded by a journeyman $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		}
 	]
 }

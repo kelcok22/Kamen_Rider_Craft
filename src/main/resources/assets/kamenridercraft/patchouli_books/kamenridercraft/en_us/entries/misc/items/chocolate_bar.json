@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/chocolate_bar"
+			"recipe": "kamenridercraft:misc/chocolate_bar",
+			"text": "Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		}
 	]
 }

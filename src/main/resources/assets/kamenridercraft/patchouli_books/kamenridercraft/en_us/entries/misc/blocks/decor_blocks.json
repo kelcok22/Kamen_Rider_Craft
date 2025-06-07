@@ -634,7 +634,7 @@
 			"anchor": "blue_rose",
 			"link_recipe": true,
 			"item": "kamenridercraft:blue_rose",
-			"text": "Drops from:$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)$(br2)A flower for decoration"
+			"text": "Obtained as trial loot from the $(l:kabuto/structures/god_speed_love)God Speed Love$(/l) structure$(br2)Drops from:$(li)$(l:kabuto/mobs/caucasus)Kamen Rider Caucasus$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -274,7 +274,7 @@ public class Kabuto_Rider_Items {
         public static final DeferredItem<Item> NEOTROOPER_BELT = ITEMS.register("neotrooper_belt",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"neotrooper",NEOTROOPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> CHOPHOPPER_RIDER_BELT = ITEMS.register("chophopper_rider_belt",
-                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
+                () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
 
         public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
                 () -> new ClockUpPadItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));

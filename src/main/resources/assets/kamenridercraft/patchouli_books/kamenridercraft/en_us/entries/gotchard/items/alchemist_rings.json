@@ -10,10 +10,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Insect Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Vehicle Chemy Cards"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_blue",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_blue"
 		},
 		{
 			"type": "patchouli:text",
@@ -22,11 +20,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Plant Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Job Chemy Cards"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_green",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_green"
 		},
 		{
 			"type": "patchouli:text",
@@ -35,11 +30,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Animal Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Ancient Chemy Cards"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_red",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_red"
 		},
 		{
 			"type": "patchouli:text",
@@ -48,11 +40,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Fantastic Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Cosmic Chemy Cards"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_orange",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_orange"
 		},
 		{
 			"type": "patchouli:text",
@@ -61,11 +50,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used in a $(l:gotchard/arsenal/chemy_riser)Chemy Riser$(/l) to obtain Artifact Chemy Cards$(br2)Used in a $(l:gotchard/arsenal/chemy_riser_supana)Chemy Riser (Supana Kurogane Ver.)$(/l) to obtain Occult Chemy Cards"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:alchemist_ring_purple",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_purple"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +90,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:alchemist_ring_no_gem",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Traded by a novice $(l:misc/villagers#cleric)Cleric$(/l)"
 		}
 	]
 }

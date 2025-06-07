@@ -1353,11 +1353,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:firemars_ride_chemy_card_televikun",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/firemars_ride_chemy_card_televikun"
 		},
 		{
 			"type": "patchouli:text",
@@ -1366,11 +1363,8 @@
 			"text": "Appears in:$(li)Kamen Rider Gotchard: What's That!? Houtaro and Rinne Switched Places!! (2024, Hyper Battle Video)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#marsphoenix)Marsphoenix$(/l) form"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:inphoenix_ride_chemy_card_televikun",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/inphoenix_ride_chemy_card_televikun"
 		},
 		{
 			"type": "patchouli:text",

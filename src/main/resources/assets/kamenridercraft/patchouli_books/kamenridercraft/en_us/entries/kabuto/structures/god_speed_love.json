@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "God Speed Love",
-			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Spawn locations: Nether$(br2)Includes 3 $(l:kabuto/mobs/neotrooper)Neotrooper$(/l) spawners"
+			"text": "Appears in:$(li)Kamen Rider Kabuto: God Speed Love (2006, movie)$(br2)Spawn locations: Nether$(br2)Includes $(l:kabuto/mobs/zectrooper)ZECTrooper$(/l), $(l:kabuto/mobs/shadow_trooper)Shadow Trooper$(/l), and $(l:kabuto/mobs/neotrooper)Neotrooper$(/l) trial spawners$(br2)Trial loot:$(li)1 $(l:kabuto/items/zecters#lady_zecter)Lady Zecter$(/l) (28.6%)$(li)1 $(l:misc/blocks/decor_blocks#blue_rose)Blue Rose$(/l) (28.6%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -15,7 +15,8 @@
 			"images": [
 				"kamenridercraft:patchouli_books/kamenridercraft/images/god_speed_love.png"
 			],
-			"title": " "
+			"title": " ",
+			"text": "$(li)1 $(l:kabuto/devices/zect_buckle#chophopper_rider_belt)ZECT Buckle (ChopHopper)$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#next_level_music_disc)NEXT LEVEL Music Disc$(/l) (14.3%)"
 		}
 	]
 }

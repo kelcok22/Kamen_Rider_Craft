@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:misc/marshmallow"
+			"recipe": "kamenridercraft:misc/marshmallow",
+			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		}
 	]
 }

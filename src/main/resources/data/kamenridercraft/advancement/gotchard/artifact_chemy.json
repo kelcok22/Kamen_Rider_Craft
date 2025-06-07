@@ -1,0 +1,136 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:x_fortress_ride_chemy_card"
+	},
+	"title": "High-End Artifact",
+	"description": "Obtain all the Artifact Chemy Cards",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/animal_chemy",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:raidenji_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:kesuzo_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:mitemirror_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:energyl_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:panpakaparka_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:televi_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"7": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:timelord_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"8": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:smaphone_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"9": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:renkingrobo_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	},
+	"10": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"items": [
+			  "kamenridercraft:x_fortress_ride_chemy_card"
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

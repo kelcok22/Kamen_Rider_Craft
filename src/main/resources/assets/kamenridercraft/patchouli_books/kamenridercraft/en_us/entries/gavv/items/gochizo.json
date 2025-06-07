@@ -2,7 +2,7 @@
 	"name": "Gochizo",
 	"icon": "kamenridercraft:poppingummy_gochizo",
 	"category": "kamenridercraft:gavv/items",
-	"sortnum": 2,
+	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -251,6 +251,32 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "shouma_doppudding_gochizo",
+			"title": "Shouma's Doppudding Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shouma_doppudding_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "prujelly_gochizo",
+			"title": "Prujelly Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:prujelly_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "sparkingummy_gochizo",
 			"title": "Sparkingummy Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Bitter Gavv's $(l:gavv/riders/bitter_gavv#sparkingummy)Sparkingummy Form$(/l)"
@@ -442,7 +468,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hagigoro_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +533,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mitaramotti_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -520,7 +546,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mogimaru_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
