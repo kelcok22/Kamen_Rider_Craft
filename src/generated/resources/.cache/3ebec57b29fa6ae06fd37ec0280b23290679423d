@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-06T23:16:03.5055204	Item Models: kamenridercraft
+// 1.21.1	2025-06-08T01:58:13.1632719	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -294,6 +294,7 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/shif
 2135ee3580824c0697060d3bf97c2c1e67d09e92 assets/kamenridercraft/models/item/shin_ichigohead.json
 d3071505948eb09483e6f6cfedec4ce17ead052d assets/kamenridercraft/models/item/shin_ichigolegs.json
 c4270e728e581fa7f4123e4aee54287afc7bcce3 assets/kamenridercraft/models/item/shin_ichigotroso.json
+5b756d2d9c38cdf29dab65d846572492c5f590b6 assets/kamenridercraft/models/item/shin_o_belt.json
 54094e252c1ac442d9377cfdecd2bc3a1b1ecedf assets/kamenridercraft/models/item/shin_typhoon_2_1.json
 674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core.json
 674492822b5a385e5883587b1cc6eb37aa977bb7 assets/kamenridercraft/models/item/shin_typhoon_core2.json
