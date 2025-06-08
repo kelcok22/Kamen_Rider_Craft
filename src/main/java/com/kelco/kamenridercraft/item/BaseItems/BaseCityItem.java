@@ -40,14 +40,14 @@ public class BaseCityItem extends BaseItem {
 
 	 if (dim==1) {
 
-		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
-		 BlockPos blockpos= new BlockPos(40, 60, 40);
+		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 5.0, 0.0);
+		 BlockPos blockpos= new BlockPos(40, 65, 40);
 
 		 if (get_has_city(itemstack)){
 			 int X = (int) get_XYZ(itemstack, "x1", respawn.pos().x());
 			 double Y = get_XYZ(itemstack, "y1", respawn.pos().y());
 			 int Z = (int) get_XYZ(itemstack, "z1", respawn.pos().z());
-			 blockpos= new BlockPos( X, 60, Z);
+			 blockpos= new BlockPos( X, 70, Z);
 		 }
 		 else{
 			 TagKey<Structure>tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft","city"));
@@ -60,7 +60,7 @@ public class BaseCityItem extends BaseItem {
 			 }
 
 
-		 entity.teleportTo(otherDim, blockpos.getX(),60, blockpos.getZ(), new HashSet<>(), 0, 0);
+		 entity.teleportTo(otherDim, blockpos.getX(),64, blockpos.getZ(), new HashSet<>(), 0, 0);
 
 
 		 }else {
@@ -69,7 +69,7 @@ public class BaseCityItem extends BaseItem {
 		 double Y=get_XYZ(itemstack,"y0",respawn.pos().y());
 		 double Z=get_XYZ(itemstack,"z0",respawn.pos().z());
 		 entity.teleportTo(otherDim, X,Y,Z, new HashSet<>(), 0, 0);
-		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
+		 while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 5.0, 0.0);
 		 entity.randomTeleport(X, Y, Z, false);
 	 }
 	}

@@ -128,7 +128,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.HELHEIM_SLAB);
         blockItem(Rider_Blocks.HELHEIM_TRAPDOOR, "_bottom");
         blockItem(Rider_Blocks.PAVEMENT);
-     //   blockItem(Rider_Blocks.PAVEMENT_ROADLINE);
+        blockItem(Rider_Blocks.PAVEMENT_ROADLINE);
 
         doorBlockWithRenderType(Rider_Blocks.RABBIT_HUTCH_DOOR.get(),modLoc("block/rabbit_hutch_door_bottom"),modLoc("block/rabbit_hutch_door_top"), "cutout");
         doorBlockWithRenderType(Rider_Blocks.GLASS_DOOR.get(),modLoc("block/glass_door_bottom"),modLoc("block/glass_door_top"), "cutout");
