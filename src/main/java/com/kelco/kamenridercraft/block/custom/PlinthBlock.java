@@ -111,7 +111,7 @@ public class PlinthBlock extends BaseEntityBlock {
 	@Nullable
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-		return null;
+		return new PlinthBlockEntity(blockPos, blockState);
 	}
 
 	@Override
