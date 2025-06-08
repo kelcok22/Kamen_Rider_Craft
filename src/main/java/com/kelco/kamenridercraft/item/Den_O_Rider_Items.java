@@ -232,7 +232,7 @@ public class Den_O_Rider_Items {
 			.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIRO ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).has_basic_model().ChangeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
