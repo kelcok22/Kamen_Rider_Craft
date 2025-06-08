@@ -183,6 +183,15 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
+	public static final DeferredItem<Item> RIDER_TICKET_SHIRO = ITEMS.register("rider_ticket_shiro",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_o","shin_o_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLAT, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.SMALL, 40, 4,true,false))
+					.ChangeBeltModel("geo/lv_1_belt.geo.json"));
+
+
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_OCHESTPLATE = ITEMS.register("den_otroso",
@@ -222,7 +231,11 @@ public class Den_O_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pretty_den_o",RIDER_TICKET_PRETTY_DEN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
 			.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
 
-    public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
+	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIRO ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.DEN_O_TAB_ITEM).has_basic_model().ChangeRepairItem(IMAGIN_SAND.get()));
+
+	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
             () -> new RiderPassItem(new Item.Properties(),500).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> MASTER_PASS = ITEMS.register("master_pass",
