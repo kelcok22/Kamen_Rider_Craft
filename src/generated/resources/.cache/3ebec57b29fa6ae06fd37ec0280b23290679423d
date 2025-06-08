@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-08T01:58:13.1632719	Item Models: kamenridercraft
+// 1.21.1	2025-06-08T19:20:00.5101718	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -361,6 +361,7 @@ b3fc962f39e8630c37821887d50de498e1f93a66 assets/kamenridercraft/models/item/whit
 330c0fe93ef2298f767e41f55f0561177ffb9765 assets/kamenridercraft/models/item/wizard_full_bottle.json
 6e2dbf7b745f3c31322bdadb11df87387ba899e4 assets/kamenridercraft/models/item/wizard_ride_chemy_card.json
 185ece7dbef84a1e307baa559f9673796f39cd85 assets/kamenridercraft/models/item/wonderwood_door.json
+c9a157260c290172faf688a0f66cdaec0735968a assets/kamenridercraft/models/item/woz_time_majin_ridewatch.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_colorful.json
 9f141f0b4e2ba84ac50b3a10f364b5811dff7b12 assets/kamenridercraft/models/item/x_swordman_wonder_ride_book_powerful.json
 874aebe207822ea795e279a43461356db49a3ada assets/kamenridercraft/models/item/yamibat_ride_chemy_card.json

@@ -16,18 +16,23 @@
 
 			  {
 				  "type": "minecraft:item",
-				  "weight": 4,
+				  "weight": 6,
 				  "name": "kamenridercraft:shinobi_miridewatch"
 			  },
 			  {
 				  "type": "minecraft:item",
-				  "weight": 4,
+				  "weight": 6,
 				  "name": "kamenridercraft:quiz_miridewatch"
 			  },
 			  {
 				  "type": "minecraft:item",
-				  "weight": 4,
+				  "weight": 6,
 				  "name": "kamenridercraft:kikai_miridewatch"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 1,
+				  "name": "kamenridercraft:woz_time_majin_ridewatch"
 			  }
 		  ]
 	  },

@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab",
   "textures": {
     "bottom": "kamenridercraft:block/pavement_roadline",
-    "side": "block/black_concrete_powder",
+    "side": "block/blackstone",
     "top": "kamenridercraft:block/pavement_roadline"
   }
 }

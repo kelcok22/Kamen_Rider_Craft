@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.block;
 
 
+import java.awt.*;
 import java.util.function.Supplier;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
@@ -34,6 +35,7 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -918,9 +920,9 @@ public class Rider_Blocks {
 			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
-//	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
-//			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
-//					.strength(2f)));
+	public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
+			() -> new RotatableSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
 	public static final DeferredBlock<Block> PAVEMENT = registerBlock("pavement",
 			() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
