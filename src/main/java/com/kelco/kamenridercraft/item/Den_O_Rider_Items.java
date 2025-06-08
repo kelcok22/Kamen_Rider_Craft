@@ -183,7 +183,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
-	public static final DeferredItem<Item> RIDER_TICKET_SHIRO = ITEMS.register("rider_ticket_shiro",
+	public static final DeferredItem<Item> RIDER_TICKET_SHIN_O = ITEMS.register("rider_ticket_shin_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","shin_o","shin_o_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
