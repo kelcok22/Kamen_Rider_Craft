@@ -36,8 +36,8 @@ public class PlinthBlockEntityRenderer implements BlockEntityRenderer<PlinthBloc
         if (pBlockEntity.getRenderingRotation(pBlockEntity)==180) Z =133;
         if (pBlockEntity.getRenderingRotation(pBlockEntity)==270) Z =133;
 
-        pPoseStack.translate(0.5f, .7f, 0.5f);
-        pPoseStack.scale(0.8f, 1f, 0.8f);
+        pPoseStack.translate(0.5f, 0.6f, 0.5f);
+        pPoseStack.scale(0.8f, 0.8f, 0.8f);
         pPoseStack.mulPose(Axis.YP.rotationDegrees(pBlockEntity.getRenderingRotation(pBlockEntity)));
         pPoseStack.mulPose(Axis.ZP.rotationDegrees(Z));
         pPoseStack.mulPose(Axis.XP.rotationDegrees(X));

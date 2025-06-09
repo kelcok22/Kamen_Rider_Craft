@@ -295,7 +295,7 @@
 			}
 		},
 		{
-			"from": [7, 3, -3],
+			"from": [7, 2.975, -3],
 			"to": [9, 5, 1],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 2]},
 			"faces": {
@@ -503,6 +503,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 0, 180],

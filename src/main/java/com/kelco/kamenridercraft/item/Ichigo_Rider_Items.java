@@ -340,7 +340,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","tackle","tackle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-                    .SetShowFace().SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
+                    .SetShowUnder().AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
 
 
