@@ -2,7 +2,7 @@
 	"name": "RideHeisaber",
 	"icon": "kamenridercraft:ride_heisaber",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

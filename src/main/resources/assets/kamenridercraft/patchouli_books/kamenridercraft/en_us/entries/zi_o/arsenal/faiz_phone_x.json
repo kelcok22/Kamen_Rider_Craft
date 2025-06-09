@@ -2,7 +2,7 @@
 	"name": "Faizphone X",
 	"icon": "kamenridercraft:faiz_phone_x",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

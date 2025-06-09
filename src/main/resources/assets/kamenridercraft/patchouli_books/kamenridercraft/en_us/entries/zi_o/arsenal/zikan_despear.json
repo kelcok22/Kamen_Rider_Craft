@@ -2,7 +2,7 @@
 	"name": "Zikan Despear",
 	"icon": "kamenridercraft:zikan_despear",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

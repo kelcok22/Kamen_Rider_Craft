@@ -2,7 +2,7 @@
 	"name": "Saikyo Zikan Girade",
 	"icon": "kamenridercraft:saikyo_zikan_girade",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -2,7 +2,7 @@
 	"name": "Zikan Despear (Tsue)",
 	"icon": "kamenridercraft:zikan_despear_tsue",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

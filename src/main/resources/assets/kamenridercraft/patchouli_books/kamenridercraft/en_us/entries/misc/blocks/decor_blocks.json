@@ -631,6 +631,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "pavement_roadline",
+			"link_recipe": true,
+			"item": "kamenridercraft:pavement_roadline",
+			"text": "Found throughout the City dimension",
+			"future_text": "Found throughout the $(l:misc/city/city)City dimension$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "blue_rose",
 			"link_recipe": true,
 			"item": "kamenridercraft:blue_rose",

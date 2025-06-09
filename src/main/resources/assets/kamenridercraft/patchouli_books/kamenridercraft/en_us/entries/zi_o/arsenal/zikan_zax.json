@@ -2,7 +2,7 @@
 	"name": "Zikan Zax",
 	"icon": "kamenridercraft:zikan_zax",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 1,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

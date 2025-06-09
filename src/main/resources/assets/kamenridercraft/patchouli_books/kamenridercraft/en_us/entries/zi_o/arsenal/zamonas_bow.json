@@ -2,7 +2,7 @@
 	"name": "Zamonas' Bow",
 	"icon": "kamenridercraft:zamonas_bow",
 	"category": "kamenridercraft:zi_o/arsenal",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",
