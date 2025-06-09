@@ -1,0 +1,21 @@
+{
+	"name": "Kamen Rider Shin-O",
+	"icon": "kamenridercraft:shin_o_belt",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shin_o_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Shin-O",
+			"text": "Appears in:$(li)Kamen Rider Den-O + Shin-O (2007, TV special)$(br2)Transforms with the $(l:den_o/devices/shin_o_belt)Shin-O Belt$(/l)$(br2)Status Effects:$(li)Shrink V$(li)Haste$(li)Flatten$(li)Strength II"
+		}
+	]
+}

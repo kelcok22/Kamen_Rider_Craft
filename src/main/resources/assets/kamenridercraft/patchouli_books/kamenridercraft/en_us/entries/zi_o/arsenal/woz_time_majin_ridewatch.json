@@ -1,0 +1,20 @@
+{
+	"name": "White Woz Time Mazine Ridewatch",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to enter the City dimension",
+			"future_text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used to enter the $(l:misc/city/city)City dimension$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:woz_time_majin_ridewatch",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:zi_o/mobs/woz)Kamen Rider Woz$(/l)"
+		}
+	]
+}

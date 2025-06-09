@@ -1,0 +1,19 @@
+{
+	"name": "Sword Plinth",
+	"icon": "kamenridercraft:sword_plinth",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Can hold a sword inside"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_plinth",
+			"title": " ",
+			"text": "Block is currently unobtainable"
+		}
+	]
+}
