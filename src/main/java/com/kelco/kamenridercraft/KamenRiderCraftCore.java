@@ -202,11 +202,10 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
             if (tag.getDouble("render_type")!=0) {
                     if (tag.getDouble("render_type")!=2) {
                         model.head.visible = false;
-                        model.hat.visible = false;
                     } else {
                         model.head.visible = true;
-                        model.hat.visible = true;
                     }
+
                     if (tag.getDouble("render_type")!=3) {
                         model.leftLeg.visible = false;
                         model.rightLeg.visible = false;
@@ -221,6 +220,8 @@ if (event.getRenderer().getModel()instanceof PlayerModel model){
                         model.rightArm.visible = true;
                         model.body.visible = true;
                     }
+
+                    model.hat.visible = false;
                     model.leftSleeve.visible = false;
                     model.rightSleeve.visible = false;
                     model.leftPants.visible = false;

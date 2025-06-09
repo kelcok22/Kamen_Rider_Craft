@@ -155,7 +155,7 @@ public class Miscellaneous_Rider_Items {
 	            		,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 	            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-						.SetShowFace().addAlternative(ELECTRER_CORE_ARTIST.get()));
+						.SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 	 
 	    public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
 	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","kuuga","arcle_belt_r",
