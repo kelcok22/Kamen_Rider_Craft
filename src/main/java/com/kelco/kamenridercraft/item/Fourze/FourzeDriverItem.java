@@ -68,6 +68,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		@Override
     	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
 
+			super.inventoryTick(stack,level,entity,slotId,isSelected);
+
     	    if (entity instanceof LivingEntity player) {
 
     	        if (stack.has(DataComponents.CUSTOM_DATA)) {
@@ -113,7 +115,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 		@Override
 		public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
 		{
-
 
 			if ((get_Form_Item(belt, 5) ==Fourze_Rider_Items.FOURZE_ELEK_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.ELEK_ASTROSWITCH.get())
 			  ||(get_Form_Item(belt, 5)==Fourze_Rider_Items.FOURZE_FIRE_STATES.get() && get_Form_Item(belt, 1)!=Fourze_Rider_Items.FIRE_ASTROSWITCH.get())
@@ -193,7 +194,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 
 		public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-
 			return super.getModelResource(itemstack, animatable, slot,rider);
 		}
 

@@ -326,6 +326,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+	super.inventoryTick(stack,level,entity,slotId,isSelected);
 
 		if (entity instanceof LivingEntity player) {
 
