@@ -1229,6 +1229,10 @@ public class 	Geats_Rider_Items {
 			() -> new LaserRaiseRiserItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.AddToTabList(KamenRiderCraftCore.RAISE_RISER_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
 
+	public static final DeferredItem<Item> LASER_RAISE_BAZOOKA = ITEMS.register("laser_raise_bazooka",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL)
+					.AddToTabList(RiderTabs.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
+
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_OSAKA = ITEMS.register("geats_rider_core_id_osaka",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_osaka","geats","desire_driver_belt_geats",
