@@ -1,0 +1,19 @@
+{
+	"name": "Laser Raise Bazooka",
+	"icon": "kamenridercraft:laser_raise_bazooka",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Geats: GOLDEN DESIRE NIGHT (2023, stage show)$(br2)Used by Kamen Riders $(l:geats/riders/buffa)Buffa$(/l) and $(l:geats/riders/ziin)Ziin$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:laser_raise_bazooka",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

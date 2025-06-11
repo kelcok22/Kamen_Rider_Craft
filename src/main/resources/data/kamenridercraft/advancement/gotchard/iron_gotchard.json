@@ -1,0 +1,48 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:tenliner_ride_chemy_card"
+	},
+	"title": "I Can't Believe It's Not a Malgam!",
+	"description": "Transform into Iron Gotchard",
+	"frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gotchard/star_gotchard",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gotchard_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gotchard_torso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gotchard_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:gotchardriver"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tenliner_ride_chemy_card\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
