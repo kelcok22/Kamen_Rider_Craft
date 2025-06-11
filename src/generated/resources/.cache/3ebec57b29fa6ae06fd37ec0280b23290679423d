@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-08T19:20:00.5101718	Item Models: kamenridercraft
+// 1.21.1	2025-06-11T21:53:55.0201776	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -324,6 +324,7 @@ ad96f2530fa729165596a9449f306ab0f94307af assets/kamenridercraft/models/item/stra
 135885965bef4e15e0ed96ef66ee01a4a8e6044a assets/kamenridercraft/models/item/tamagon_ride_chemy_card.json
 ee8b5b9fc341db2190d84f3069a05b33e9b8daf2 assets/kamenridercraft/models/item/tarakomentaiko_gochizo.json
 e7d5e0854846ebbb776dc3f59e4ee1867bba5344 assets/kamenridercraft/models/item/televi_ride_chemy_card.json
+ee7bd024ed57eac5cfa9d77e8f70f8a288e6f66d assets/kamenridercraft/models/item/tenliner_ride_chemy_card.json
 3d4423deb0f134e4432ba22a5e0c4dd065a38a20 assets/kamenridercraft/models/item/timelord_ride_chemy_card.json
 829dfe043f82d3ad35e83d6f12efc53fb3680625 assets/kamenridercraft/models/item/tirolchocolate_gochizo.json
 cedaeb5dbcdaa19dc2ade38e64a8bf357fd5ed1e assets/kamenridercraft/models/item/tirolchocolate_gochizo_variety.json
