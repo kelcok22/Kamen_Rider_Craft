@@ -2,7 +2,7 @@
 	"name": "Chemy Riser (Supana Kurogane Ver.)",
 	"icon": "kamenridercraft:chemy_riser_supana",
 	"category": "kamenridercraft:gotchard/arsenal",
-	"sortnum": 4,
+	"sortnum": 5,
 	"pages": [
 		{
 			"type": "patchouli:text",

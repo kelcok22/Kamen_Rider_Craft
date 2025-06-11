@@ -2,7 +2,7 @@
 	"name": "Chemy Riser",
 	"icon": "kamenridercraft:chemy_riser",
 	"category": "kamenridercraft:gotchard/arsenal",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

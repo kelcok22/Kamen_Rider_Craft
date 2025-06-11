@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gotchard",
+  "pattern": [
+	"XTX",
+	"XSX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_ride_chemy_card"
+	},
+	"T": {
+	  "tag": "kamenridercraft:gear/ride_chemy_cards/level_10"
+	},
+	"S": {
+	  "item": "kamenridercraft:base_sword"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:exgotchalibur"
+  }	
+}
+

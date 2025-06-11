@@ -400,6 +400,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "tenliner_ride_chemy_card",
+			"title": "Tenliner Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tenliner_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "yamibat_ride_chemy_card",
 			"title": "Yamibat Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
