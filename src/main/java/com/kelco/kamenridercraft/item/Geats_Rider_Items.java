@@ -436,10 +436,10 @@ public class 	Geats_Rider_Items {
 
 	public static final DeferredItem<Item> BOOST_MKIII_RAISE_BUCKLE = ITEMS.register("boost_mkiii_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boost_mkiii","geats","desire_driver_belt_geats",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),

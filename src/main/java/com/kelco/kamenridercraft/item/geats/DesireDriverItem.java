@@ -260,7 +260,6 @@ public class DesireDriverItem  extends RiderDriverItem {
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.NINJA_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.NINJA_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.BEAT_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.BEAT_RAISE_BUCKLE_FEVER.get()) return true;
 			if (get_Form_Item(itemstack,2)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get()&get_Form_Item(itemstack,3)==Geats_Rider_Items.MONSTER_RAISE_BUCKLE_FEVER.get()) return true;
-
 		}
 		return false;
 	}
@@ -337,12 +336,13 @@ public class DesireDriverItem  extends RiderDriverItem {
 
 			if (isTransformed(player)) {
 				if (this.get_Form_Item(stack, 2) == Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false));
+				boolean Fever=  isFever(stack,this.Rider);
+				if (get_Form_Item(stack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&get_Form_Item(stack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get())  Fever= true;
+
 				for (int n = 0; n < Num_Base_Form_Item; n++) {
 					List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
-
 					for (MobEffectInstance effect : potionEffectList) {
-						boolean Fever=  isFever(stack,this.Rider);
-						player.addEffect(new MobEffectInstance(effect.getEffect(),effect.getDuration(), effect.getAmplifier() + (Fever ? 2 : 0),true,false));	}
+							player.addEffect(new MobEffectInstance(effect.getEffect(),effect.getDuration(), effect.getAmplifier() + (Fever ? 2 : 0),true,false));	}
 					
 				}
 			}
