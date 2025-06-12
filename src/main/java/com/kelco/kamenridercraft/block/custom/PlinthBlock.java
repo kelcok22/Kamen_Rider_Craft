@@ -141,7 +141,7 @@ public class PlinthBlock extends BaseEntityBlock {
 	@Override
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 		if(level.getBlockEntity(pos) instanceof PlinthBlockEntity plinthBlockEntity) {
-			if(plinthBlockEntity.inventory.getStackInSlot(0).isEmpty() && stack.is(SWORDS)){
+			if(plinthBlockEntity.inventory.getStackInSlot(0).isEmpty() && !stack.isEmpty()){
 				plinthBlockEntity.inventory.insertItem(0, stack.copy(), false);
 				stack.shrink(1);
 				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
