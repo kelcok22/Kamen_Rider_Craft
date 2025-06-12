@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "poi",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "q": {
+      "item": "kamenridercraft:candy_wrapper"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GqG",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:candy_shop"
+  }
+}
