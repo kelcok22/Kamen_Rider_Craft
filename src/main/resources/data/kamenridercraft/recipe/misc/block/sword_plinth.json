@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "poi",
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "q": {
+      "item": "minecraft:item_frame"
+    }
+  },
+  "pattern": [
+    "   ",
+    " q ",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kamenridercraft:sword_plinth"
+  }
+}
