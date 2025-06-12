@@ -6829,6 +6829,7 @@
 "item.kamenridercraft.raise_chain_array": "Raise Chain Array",
 "item.kamenridercraft.raise_propeller": "Raise Propeller",
 "item.kamenridercraft.laser_raise_riser": "Laser Raise Riser",
+  "item.kamenridercraft.laser_raise_bazooka": "Laser Raise Bazooka",
 
 "item.kamenridercraft.magnum_raise_buckle": "Magnum Buckle",
 "item.kamenridercraft.boost_raise_buckle": "Boost Buckle",
@@ -6849,7 +6850,9 @@
   "item.kamenridercraft.bujin_wish_card": "Bujin Sword Desire Card",
   "item.kamenridercraft.fantasy_wish_card": "Fantasy Desire Card",
   "item.kamenridercraft.boost_mkii_wish_card": "Boost MKII Desire Card",
+  "item.kamenridercraft.dan_kuroto_card": "Dan Kuroto Desire Card",
 "item.kamenridercraft.plosion_rage_raise_buckle": "Plosion Rage Buckle",
+  "item.kamenridercraft.dgp_winners_coin": "DGP Prize Coin",
 
 "item.kamenridercraft.monster_raise_buckle": "Monster Buckle",
 "item.kamenridercraft.beat_raise_buckle": "Beat Buckle",
@@ -8270,6 +8273,7 @@
   "block.kamenridercraft.rabbit_hutch_ladder": "Rabbit Hutch Ladder",
   "block.kamenridercraft.rabbit_hutch_door": "Rabbit Hutch Door",
   "block.kamenridercraft.jail_door": "Jail Door",
+  "block.kamenridercraft.pavement_roadline": "Painted Pavement",
 
   "block.kamenridercraft.helheim_leaves": "Helheim Leaves",
   "block.kamenridercraft.helheim_log": "Helheim Log",

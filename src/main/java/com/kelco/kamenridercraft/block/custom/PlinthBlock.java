@@ -1,16 +1,23 @@
 package com.kelco.kamenridercraft.block.custom;
 
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.entity.PlinthBlockEntity;
 import com.kelco.kamenridercraft.entities.ChairEntity;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.item.BaseItems.component.slot.SlotByTag;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
@@ -18,6 +25,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -34,6 +42,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -48,6 +57,10 @@ public class PlinthBlock extends BaseEntityBlock {
 	protected static final VoxelShape WEST_AABB;
 	protected static final VoxelShape SOUTH_AABB;
 	protected static final VoxelShape NORTH_AABB;
+
+	public static final TagKey<Item> SWORDS = TagKey.create(
+			Registries.ITEM,
+			ResourceLocation.fromNamespaceAndPath("c", "tools/melee_weapons"));
 
 	public PlinthBlock(Properties properties) {
 		super(properties);
@@ -128,7 +141,7 @@ public class PlinthBlock extends BaseEntityBlock {
 	@Override
 	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
 		if(level.getBlockEntity(pos) instanceof PlinthBlockEntity plinthBlockEntity) {
-			if(plinthBlockEntity.inventory.getStackInSlot(0).isEmpty() && !stack.isEmpty()){
+			if(plinthBlockEntity.inventory.getStackInSlot(0).isEmpty() && stack.is(SWORDS)){
 				plinthBlockEntity.inventory.insertItem(0, stack.copy(), false);
 				stack.shrink(1);
 				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
