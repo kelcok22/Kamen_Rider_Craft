@@ -202,7 +202,10 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKIBAKISTICK_GOCHIZO = ITEMS.register("bakibakistick_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"bakibaki","do_not_work","henshin_belt_bitter_gavv_belt")
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"bakibaki","bitter_gavv","henshin_belt_bitter_gavv_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 

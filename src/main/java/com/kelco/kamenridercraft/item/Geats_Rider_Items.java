@@ -839,19 +839,19 @@ public class 	Geats_Rider_Items {
 
 	public static final DeferredItem<Item> BEROBA_RAISE_RISER_CARD = ITEMS.register("beroba_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","beroba","raise_riser_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(Effect_core.BIG, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false))
 			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","beroba","raise_riser_belt_premium",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEKERA_RAISE_RISER_CARD = ITEMS.register("kekera_raise_riser_card",
@@ -875,7 +875,7 @@ public class 	Geats_Rider_Items {
 	public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","kekera","raise_riser_belt_premium_kekera",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 8,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
@@ -886,8 +886,8 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE2 = ITEMS.register("providence_card_glare2",
@@ -896,8 +896,8 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GAZER = ITEMS.register("providence_card_gazer",
@@ -906,16 +906,17 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ziingazer","laser_raise_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
 					.has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
@@ -925,28 +926,28 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)));
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)));
 	
 	public static final DeferredItem<Item> SIRIUS_CARD = ITEMS.register("sirius_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","regad","zillion_driver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
+					new MobEffectInstance(Effect_core.RADAR, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 			.addSwitchForm(SIRIUS_CARD_OMEGA.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIRIUS_CARD_GAZER_ZERO = ITEMS.register("sirius_card_gazer_zero",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gazer_zero","zillion_driver_gazer_zero_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.RADAR, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
