@@ -64,6 +64,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
         dropSelf(Rider_Blocks.LIME_CHECKERED_TILE.get());
         dropSelf(Rider_Blocks.VERTICAL_PANEL.get());
+        dropSelf(Rider_Blocks.PLINTH.get());
+        dropSelf(Rider_Blocks.PAVEMENT_ROADLINE.get());
         add(Rider_Blocks.HELHEIM_DOOR.get(),
                 block -> createDoorTable(Rider_Blocks.HELHEIM_DOOR.get()));
         dropSelf(Rider_Blocks.ICHIGO_CHAIR.get());
