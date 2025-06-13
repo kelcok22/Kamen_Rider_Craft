@@ -9,11 +9,8 @@
 			"text": "Used as the job block for a $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:candy_shop",
-			"title": " ",
-			"text": "Block is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/candy_shop"
 		}
 	]
 }

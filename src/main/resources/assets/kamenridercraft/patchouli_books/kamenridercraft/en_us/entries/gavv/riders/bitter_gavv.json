@@ -31,6 +31,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Bitter Gavv",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_bitter_gavv)Henshin Belt Bitter Gavv$(/l)$(br2)Status Effects:$(li)Resistance II$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bakibaki_stick",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_bitter_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakibakistick_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Bakibaki Stick Form",
+			"text": "Accessed with the $(l:gavv/items/gochizo#bakibakistick_gochizo)Bakibaki Stick Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Bitter Gavv",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_bitter_gavv)Henshin Belt Bitter Gavv$(/l)$(br2)Status Effects:$(li)Resistance$(li)Jump Boost II$(li)Strength III"
 		}
 	]
 }

@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Premium Kekera",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_kekera)Raise Riser Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Haste$(li)Jump Boost IX"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/raise_riser_belt#raise_riser_belt_kekera)Raise Riser Belt$(/l)$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Jump Boost IX$(li)Strength IV"
 		}
 	]
 }
