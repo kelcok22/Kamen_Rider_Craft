@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "boost_mkiii",
+  "ingredients": [
+{
+    
+      "item": "kamenridercraft:magnum_raise_buckle"
+    },
+    {
+      "item": "kamenridercraft:fever_slot_raise_buckle"
+    },
+    {
+      "item": "kamenridercraft:boost_raise_buckle"
+    },
+    {
+      "item": "kamenridercraft:command_twin_buckle_jet"
+    },
+    {
+      "item": "kamenridercraft:dgp_winners_coin"
+    },
+    {
+      "item": "kamenridercraft:command_twin_buckle_cannon"
+    },
+    {
+      "item": "kamenridercraft:boost_mkii_raise_buckle"
+    },
+    {
+      "item": "kamenridercraft:powered_builder_raise_buckle"
+    },
+    {
+      "item": "kamenridercraft:unite_grip"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:boost_mkiii_raise_buckle"
+  }
+}
