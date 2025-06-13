@@ -552,11 +552,6 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"anchor": "jail_door",
-			"recipe": "kamenridercraft:misc/block/jail_door"
-		},
-		{
-			"type": "patchouli:crafting",
 			"anchor": "white_wallplate",
 			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate"
 		},
@@ -700,6 +695,11 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rabbit_hutch_ladder",
 			"text": "Found inside the $(l:fourze/structures/rabbit_hutch)Rabbit Hutch$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "jail_door",
+			"recipe": "kamenridercraft:misc/block/jail_door"
 		},
 		{
 			"type": "patchouli:spotlight",

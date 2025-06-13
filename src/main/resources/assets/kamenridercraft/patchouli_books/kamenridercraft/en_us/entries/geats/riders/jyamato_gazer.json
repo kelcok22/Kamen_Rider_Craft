@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Jyamato Gazer",
-			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/vision_driver#vision_driver_jyamato_glare)Vision Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Slow Falling IV$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Geats: Final Stage (2023, stage show)$(br2)Transforms with the $(l:geats/devices/vision_driver#vision_driver_jyamato_glare)Vision Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Strength III"
 		}
 	]
 }
