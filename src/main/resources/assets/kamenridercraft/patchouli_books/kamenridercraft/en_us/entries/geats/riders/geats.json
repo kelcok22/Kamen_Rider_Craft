@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geats",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_geats)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkIII Buckle Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_geats)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkIII Buckle Effects:$(li)Speed V$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Geats",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_geats)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)Boost MarkIII Buckle Effects:$(li)Speed VII$(li)Resistance IV$(li)Night Vision$(li)Haste V$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength VI"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Transforms with the $(l:geats/devices/desire_driver#desire_driver_geats)Desire Driver$(/l)$(br2)Core ID Effects:$(li)Speed$(br2)GeatsIX Effects:$(li)Speed VII$(li)Resistance V$(li)Night Vision$(li)Haste VI$(li)Fire Fist VII$(li)Jump Boost VIII$(li)Boost VII$(li)Fire Resistance III$(li)Strength VII"
 		},
 		{
 			"type": "patchouli:entity",

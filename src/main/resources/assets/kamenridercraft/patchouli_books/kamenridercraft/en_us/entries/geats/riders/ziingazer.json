@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Ziingazer",
-			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:geats/devices/laser_raise_driver)Laser Raise Driver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Night Vision$(li)Slow Falling IV$(li)Jump Boost VI"
+			"text": "Appears in:$(li)Kamen Rider Outsiders (2022, web series)$(br2)Transforms with the $(l:geats/devices/laser_raise_driver)Laser Raise Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste II$(li)Slow Falling IV$(li)Jump Boost VI$(li)Strength IV"
 		}
 	]
 }

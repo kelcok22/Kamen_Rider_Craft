@@ -305,7 +305,7 @@
 			"type": "patchouli:text",
 			"anchor": "bakibakistick_gochizo",
 			"title": "Bakibaki Stick Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Bitter Gavv's $(l:gavv/riders/bitter_gavv#bakibaki_stick)Bakibaki Stick Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
