@@ -14,7 +14,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "N·Daguva·Zeba",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Transforms with the $(l:kuuga/devices/n_daguva_zeba_belt)N.Daguva.Zeba Belt$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)$(li)Speed IV$(li)Resistance IV$(li)Flame Body VI$(li)Jump Boost IV$(li)Fire Resistance"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Transforms with the $(l:kuuga/devices/n_daguva_zeba_belt)Gedorudo$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)$(li)Speed IV$(li)Resistance IV$(li)Flame Body VI$(li)Jump Boost IV$(li)Fire Resistance"
 		}
 	]
 }
