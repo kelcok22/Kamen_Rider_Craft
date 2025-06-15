@@ -9,10 +9,9 @@
 			"text": "Used as the job block for a $(l:misc/villagers#agent_villager)Stomach Inc. Agent$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:heatpress_extractor",
-			"text": "Block is currently unobtainable"
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gavv/heatpress_extractor"
 		}
 	]
 }
