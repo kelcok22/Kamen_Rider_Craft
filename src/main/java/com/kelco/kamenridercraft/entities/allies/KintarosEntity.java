@@ -9,7 +9,6 @@ import com.kelco.kamenridercraft.item.Den_O_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -21,7 +20,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -42,20 +40,15 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Enemy;
+import net.minecraft.world.entity.monster.Ghast;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.DyeItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.neoforged.neoforge.event.EventHooks;
 
 
 public class KintarosEntity extends BaseAllyEntity {
@@ -86,6 +79,9 @@ public class KintarosEntity extends BaseAllyEntity {
 		this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
 		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Mob.class, 5, false, false, (p_28879_) -> {
 			if (isTame()) {
+        		if (p_28879_ instanceof Creeper || p_28879_ instanceof Ghast) {
+					return this.getMainHandItem().getItem() instanceof BowItem;
+				}
 				return p_28879_ instanceof Enemy && !(p_28879_ instanceof Creeper) && !(p_28879_ instanceof NeutralMob neutral && !neutral.isAngry());
 			}else return false;
 		}));
