@@ -29,14 +29,14 @@ public class HitpressItem extends BaseItem {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player playerIn, InteractionHand p_41434_) {
-        ItemStack weapon = playerIn.getItemBySlot(EquipmentSlot.OFFHAND);
-		if (world instanceof ServerLevel level && playerIn.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == this
+        ItemStack weapon = playerIn.getOffhandItem();
+		if (world instanceof ServerLevel level && playerIn.getMainHandItem().getItem() == this
         && weapon.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/can_free_hitpress")))) {
             EntityType.VILLAGER.spawn(level, playerIn.blockPosition(), MobSpawnType.SPAWN_EGG);
 			world.playSound(null, playerIn.getOnPos().above(), this.getBreakingSound(), SoundSource.PLAYERS, 1.0F, 1.0F);
 			level.sendParticles(new ItemParticleOption(ParticleTypes.ITEM, new ItemStack(Gavv_Rider_Items.HEATPRESS.get())), playerIn.getX(), playerIn.getY()+1, playerIn.getZ(), 10, 0.0, 0.0, 0.0, 0.1);
-            playerIn.getItemBySlot(EquipmentSlot.MAINHAND).shrink(1);
-			playerIn.getItemBySlot(EquipmentSlot.OFFHAND).hurtAndBreak(1, playerIn, EquipmentSlot.OFFHAND);
+            playerIn.getMainHandItem().shrink(1);
+			playerIn.getOffhandItem().hurtAndBreak(1, playerIn, EquipmentSlot.OFFHAND);
 		}
 		return super.use(world, playerIn, p_41434_);
 	}

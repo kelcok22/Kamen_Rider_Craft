@@ -138,7 +138,7 @@ public class BaseBlasterItem extends BowItem {
 		if (entityLiving instanceof Player player && level instanceof ServerLevel serverlevel) {
 			if (HenshinBeltItem != null && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
 				player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
-				if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem formItem) formItem.use(level, player, InteractionHand.OFF_HAND);
+				if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem formItem) formItem.use(level, player, InteractionHand.OFF_HAND);
 			}
 			if (FormChangeItem != null && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) FormChangeItem.use(level, player, InteractionHand.MAIN_HAND);
 			if (projectile != BlasterProjectile.ARROW) {

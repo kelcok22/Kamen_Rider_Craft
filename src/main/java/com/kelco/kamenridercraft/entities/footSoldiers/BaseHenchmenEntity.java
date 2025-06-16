@@ -116,7 +116,7 @@ public abstract class BaseHenchmenEntity extends  Monster implements RangedAttac
        this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * f);
 
             spawnGroupData =  super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
-    if (this.getItemBySlot(EquipmentSlot.OFFHAND).isEmpty()) {
+    if (this.getOffhandItem().isEmpty()) {
        LocalDate localdate = LocalDate.now();
        int i = localdate.get(ChronoField.DAY_OF_MONTH);
        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
