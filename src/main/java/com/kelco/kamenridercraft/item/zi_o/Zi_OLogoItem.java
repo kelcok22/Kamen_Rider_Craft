@@ -44,7 +44,7 @@ public class Zi_OLogoItem extends BaseBannerPatternItem {
 		GrandSummonEntity summon = MobsCore.GRAND_SUMMON.get().create(level);
 		if (summon != null) {
 			summon.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-            Item key = player.getItemBySlot(EquipmentSlot.OFFHAND).getItem();
+            Item key = player.getOffhandItem().getItem();
             RiderDriverItem belt = (RiderDriverItem)BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonBelts.get(key.toString())));
             summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt));
 			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(belt.HEAD));

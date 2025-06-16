@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
 
 import net.minecraft.core.BlockPos;
@@ -18,9 +19,11 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.TimeUtil;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.damagesource.DamageSource;
@@ -29,6 +32,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
+import net.minecraft.world.entity.OwnableEntity;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -46,14 +50,19 @@ import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
+import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.entity.animal.WolfVariant;
 import net.minecraft.world.entity.animal.WolfVariants;
 import net.minecraft.world.entity.animal.horse.AbstractHorse;
+import net.minecraft.world.entity.decoration.ArmorStand;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Enemy;
+import net.minecraft.world.entity.monster.Ghast;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathType;
@@ -184,21 +193,21 @@ public class BaseAllyEntity extends TamableAnimal implements NeutralMob {
       this.persistentAngerTarget = p_30400_;
    }
 
-	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
-        if (p_30389_ instanceof BaseAllyEntity) {
-            BaseAllyEntity illusion = (BaseAllyEntity)p_30389_;
-            return !illusion.isTame() || illusion.getOwner() != p_30390_;
-		} /**else if (p_30389_ instanceof BaseSummonEntity) {
-			BaseSummonEntity illusion = (BaseSummonEntity)p_30389_;
-			return !illusion.isTame() || illusion.getOwner() != p_30390_;
-		 }**/ else if (p_30389_ instanceof Player player2 && p_30390_ instanceof Player player1 && !player1.canHarmPlayer(player2)) {
-			return false;
-		} else if (p_30389_ instanceof AbstractHorse horse && horse.isTamed()) {
-			return false;
-		} else {
-			return !(p_30389_ instanceof TamableAnimal) || !((TamableAnimal)p_30389_).isTame();
-		}
-	}
+	@Override
+    public boolean wantsToAttack(LivingEntity target, LivingEntity owner) {
+        if (target instanceof Creeper || target instanceof Ghast) {
+            return this.getMainHandItem().getItem() instanceof BowItem;
+        } else if (target instanceof Wolf wolf) {
+            return !wolf.isTame() || wolf.getOwner() != owner;
+        } else {
+            if (target instanceof ArmorStand) return false;
+            if (target instanceof Player player && owner instanceof Player player1 && !player1.canHarmPlayer(player)) return false;
+            if (target instanceof AbstractHorse abstracthorse && abstracthorse.isTamed()) return false;
+            if (target instanceof TamableAnimal tamableanimal && tamableanimal.isTame()) return false;
+
+            return true;
+        }
+    }
 
    class AllyPanicGoal extends PanicGoal {
       public AllyPanicGoal(double p_203124_) {

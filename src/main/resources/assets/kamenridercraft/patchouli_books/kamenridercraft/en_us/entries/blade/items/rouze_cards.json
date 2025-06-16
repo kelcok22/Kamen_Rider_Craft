@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "evolution_paradoxa",
 			"title": "Evolution Paradoxa Rouze Card",
-			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Chalice's $(l:blade/devices/wild_slasher)Wild Slasher$(/l)$(br2)Used to access Chalice's $(l:blade/riders/chalice#wild)Wild$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used to craft Chalice's $(l:blade/arsenal/wild_slasher)Wild Slasher$(/l)$(br2)Used to access Chalice's $(l:blade/riders/chalice#wild)Wild$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",

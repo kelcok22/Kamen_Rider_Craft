@@ -73,7 +73,7 @@ public class RidewatchItem extends RiderFormChangeItem {
 			summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(this.summonBelt.HEAD));
 			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(this.summonBelt.TORSO));
 			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(this.summonBelt.LEGS));
-            Item key = player.getItemBySlot(EquipmentSlot.OFFHAND).getItem();
+            Item key = player.getOffhandItem().getItem();
 
 			if (this.summonAltBelts.containsKey(key)) {
                 summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(this.summonAltBelts.get(key)));

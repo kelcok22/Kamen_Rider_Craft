@@ -59,7 +59,7 @@ public class Zi_ORidewatchItem extends RiderFormChangeItem {
 			summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Zi_O_Rider_Items.ZI_O_CHESTPLATE.get()));
 			summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Zi_O_Rider_Items.ZI_O_LEGGINGS.get()));
 			summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(Zi_O_Rider_Items.ZIKU_DRIVER_ZI_O.get()));
-            Item key = player.getItemBySlot(EquipmentSlot.OFFHAND).getItem();
+            Item key = player.getOffhandItem().getItem();
             
             if (this.summonAltWeapons.containsKey(key.toString())) {
                 summon.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(this.summonAltWeapons.get(key.toString())[0]))));

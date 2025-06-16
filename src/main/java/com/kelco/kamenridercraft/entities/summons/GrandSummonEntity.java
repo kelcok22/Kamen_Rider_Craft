@@ -47,8 +47,8 @@ public class GrandSummonEntity extends RiderSummonEntity {
     @Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		if (!this.level().isClientSide && this.isOwnedBy(player) && this.getHealth() == this.getMaxHealth() && !this.getMainHandItem().isEmpty() && player.getMainHandItem().isEmpty()) {
-            this.spawnAtLocation(this.getItemBySlot(EquipmentSlot.MAINHAND));
-            this.spawnAtLocation(this.getItemBySlot(EquipmentSlot.OFFHAND));
+            this.spawnAtLocation(this.getMainHandItem());
+            this.spawnAtLocation(this.getOffhandItem());
 			this.discard();
 			return InteractionResult.SUCCESS;
 		}

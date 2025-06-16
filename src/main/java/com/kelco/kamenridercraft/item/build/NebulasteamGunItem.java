@@ -19,13 +19,13 @@ public class NebulasteamGunItem extends BaseBlasterItem {
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeLeft) {
         super.releaseUsing(stack, level, entityLiving, timeLeft);
 		if (entityLiving instanceof Player player && player.getItemBySlot(EquipmentSlot.FEET) == ItemStack.EMPTY) {
-			if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Build_Rider_Items.GEAR_ENGINE.get() || player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Build_Rider_Items.GEAR_REMOCON.get()) {
+			if (player.getOffhandItem().getItem() == Build_Rider_Items.GEAR_ENGINE.get() || player.getOffhandItem().getItem() == Build_Rider_Items.GEAR_REMOCON.get()) {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.NEBULA_STEAM_GUN_HELL_BROS.get(), 1));
-                player.getItemBySlot(EquipmentSlot.OFFHAND).use(level, player, InteractionHand.OFF_HAND);
+                player.getOffhandItem().use(level, player, InteractionHand.OFF_HAND);
             } else {
 				player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Build_Rider_Items.NEBULA_STEAM_GUN_KAISER.get(), 1));
-				if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Build_Rider_Items.GEAR_ENGINE_RED.get() || player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() == Build_Rider_Items.GEAR_REMOCON_BLUE.get())
-					player.getItemBySlot(EquipmentSlot.OFFHAND).use(level, player, InteractionHand.OFF_HAND);
+				if (player.getOffhandItem().getItem() == Build_Rider_Items.GEAR_ENGINE_RED.get() || player.getOffhandItem().getItem() == Build_Rider_Items.GEAR_REMOCON_BLUE.get())
+					player.getOffhandItem().use(level, player, InteractionHand.OFF_HAND);
 			} 
 		}
 	}

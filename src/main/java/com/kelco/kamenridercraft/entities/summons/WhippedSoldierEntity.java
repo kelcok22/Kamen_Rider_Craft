@@ -192,26 +192,4 @@ public class WhippedSoldierEntity extends BaseSummonEntity {
 		if (!this.ABSORBED_GOCHIZO.isEmpty() && !this.level().isClientSide()) this.spawnAtLocation(this.ABSORBED_GOCHIZO);
 		super.die(p_21809_);
 	}
-
-	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
-		if (!(p_30389_ instanceof Creeper)&&!(p_30389_ instanceof Ghast)) {
-            if (p_30389_ instanceof BaseAllyEntity) {
-                BaseAllyEntity illusion = (BaseAllyEntity)p_30389_;
-                return !illusion.isTame() || illusion.getOwner() != p_30390_;
-		    } else if (p_30389_ instanceof BaseSummonEntity) {
-		    	BaseSummonEntity illusion = (BaseSummonEntity)p_30389_;
-		    	return !illusion.isTame() || illusion.getOwner() != p_30390_;
-		    } else if (p_30389_ instanceof Player player2 && p_30390_ instanceof Player player1 && !player1.canHarmPlayer(player2)) {
-		    	return false;
-		    } else if (p_30389_ instanceof AbstractHorse horse && horse.isTamed()) {
-		    	return false;
-		    } else {
-		    	return !(p_30389_ instanceof TamableAnimal) || !((TamableAnimal)p_30389_).isTame();
-		    }
-        } else if (this.getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof BowItem) {
-            if (this.getItemBySlot(EquipmentSlot.MAINHAND).getItem() instanceof SwordItem
-            || this.getItemBySlot(EquipmentSlot.MAINHAND).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "arsenal/all_swordguns")))) return !this.getMeleeOnly();
-            else return true;
-        } else return false;
-	}
 }

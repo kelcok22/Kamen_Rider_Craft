@@ -86,14 +86,14 @@ public class GordDriveEntity extends BaseHenchmenEntity {
     
     public void tick() {
         if (ServerConfig.goldDriveWeaponSteal && this.getHealth()<75 && this.getLastAttacker() != null) {
-            if (this.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty()) {
-                this.STOLEN_MAINHAND_WEAPON = this.getLastAttacker().getItemBySlot(EquipmentSlot.MAINHAND);
-                this.setItemSlot(EquipmentSlot.MAINHAND, this.getLastAttacker().getItemBySlot(EquipmentSlot.MAINHAND));
+            if (this.getMainHandItem().isEmpty()) {
+                this.STOLEN_MAINHAND_WEAPON = this.getLastAttacker().getMainHandItem();
+                this.setItemSlot(EquipmentSlot.MAINHAND, this.getLastAttacker().getMainHandItem());
                 this.getLastAttacker().setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
             }
-            if (this.getItemBySlot(EquipmentSlot.OFFHAND).isEmpty()) {
-                this.STOLEN_OFFHAND_WEAPON = this.getLastAttacker().getItemBySlot(EquipmentSlot.OFFHAND);
-                this.setItemSlot(EquipmentSlot.OFFHAND, this.getLastAttacker().getItemBySlot(EquipmentSlot.OFFHAND));
+            if (this.getOffhandItem().isEmpty()) {
+                this.STOLEN_OFFHAND_WEAPON = this.getLastAttacker().getOffhandItem();
+                this.setItemSlot(EquipmentSlot.OFFHAND, this.getLastAttacker().getOffhandItem());
                 this.getLastAttacker().setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
             }
         } else if (this.getHealth()<130) {

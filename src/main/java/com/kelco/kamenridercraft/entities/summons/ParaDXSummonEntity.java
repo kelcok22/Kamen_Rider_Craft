@@ -112,24 +112,4 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 		this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20.0D);
 		this.setHealth(20.0F);
 	}
-
-	public boolean wantsToAttack(LivingEntity p_30389_, LivingEntity p_30390_) {
-		if (!(p_30389_ instanceof Creeper)&&!(p_30389_ instanceof Ghast)) {
-        	if (p_30389_ instanceof BaseAllyEntity) {
-        	    BaseAllyEntity illusion = (BaseAllyEntity)p_30389_;
-        	    return !illusion.isTame() || illusion.getOwner() != p_30390_;
-			} else if (p_30389_ instanceof BaseSummonEntity) {
-				BaseSummonEntity illusion = (BaseSummonEntity)p_30389_;
-				return !illusion.isTame() || illusion.getOwner() != p_30390_;
-			} else if (p_30389_ instanceof Player player2 && p_30390_ instanceof Player player1 && !player1.canHarmPlayer(player2)) {
-				return false;
-			} else if (p_30389_ instanceof AbstractHorse horse && horse.isTamed()) {
-				return false;
-			} else {
-				return !(p_30389_ instanceof TamableAnimal) || !((TamableAnimal)p_30389_).isTame();
-			}
-		} else {
-			return false;
-		}
-	}
 }

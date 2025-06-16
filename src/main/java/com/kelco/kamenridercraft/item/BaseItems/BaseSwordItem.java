@@ -114,7 +114,7 @@ public class BaseSwordItem extends SwordItem {
 		ItemStack itemstack = player.getItemInHand(p_41130_);
 		if (Henshin_item && player.getItemBySlot(EquipmentSlot.FEET)==ItemStack.EMPTY) {
 			player.setItemSlot(EquipmentSlot.FEET, new ItemStack(HenshinBeltItem));
-			if (player.getItemBySlot(EquipmentSlot.OFFHAND).getItem() instanceof RiderFormChangeItem form) form.use(level, player, InteractionHand.OFF_HAND);
+			if (player.getOffhandItem().getItem() instanceof RiderFormChangeItem form) form.use(level, player, InteractionHand.OFF_HAND);
 		}	
 		if (Form_item && player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
 			FormChangeItem.use(level, player, p_41130_);
