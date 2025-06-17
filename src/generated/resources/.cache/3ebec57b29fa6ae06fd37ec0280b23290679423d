@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-11T21:53:55.0201776	Item Models: kamenridercraft
+// 1.21.1	2025-06-16T18:35:15.5018	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -216,6 +216,7 @@ ccb1e9ded555771c36aa115a9f8e211cf9a89014 assets/kamenridercraft/models/item/kuro
 72c64001c18363cf47fcd6f8282f0d33c79f0330 assets/kamenridercraft/models/item/kuuga_ball.json
 ee2f4e767a79523b232fb53e835a260fdedec0a3 assets/kamenridercraft/models/item/kuuga_black_rising_mighty.json
 43417046b68fa6383de2c1c8304e6f693c36e488 assets/kamenridercraft/models/item/kuuga_rising_ultimate_black_eyes.json
+f2c2052123ce8fb740ec64ddf5ed9bbb7eecffa5 assets/kamenridercraft/models/item/kuuga_touma.json
 2867b28734599b9b5de2de14ce546f7182f5ce91 assets/kamenridercraft/models/item/kuuga_ultimate_black_eyes.json
 28f699ea644de835bdc85cd37acd76cf60beeeaf assets/kamenridercraft/models/item/macentaurus_ride_chemy_card.json
 0dc660dbe37d4932b8dc7585219e39d159a1fec9 assets/kamenridercraft/models/item/machwheel_ride_chemy_card.json
