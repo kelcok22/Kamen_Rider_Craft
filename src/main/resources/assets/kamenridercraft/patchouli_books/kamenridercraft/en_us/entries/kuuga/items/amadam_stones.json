@@ -179,6 +179,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "kuuga_touma",
+			"title": "Kuuga Mighty Amadam (-TOUMA-)",
+			"text": "Appears in:$(li)HEROES VINYL ART Kamen Rider Kuuga -TOUMA- (2025, toyline)$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#touma)Rising Mighty Form (-TOUMA- Version)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_touma",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "n_daguva_zeba_ultimate",
 			"title": "N.Daguva.Zeba Ultimate Amadam",
 			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)"
