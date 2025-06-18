@@ -88,11 +88,7 @@ public class BuildDriverItem extends RiderDriverItem {
 		}
 		super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 	}
-	
-	@Override
-	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-		super.inventoryTick(stack,level,entity,slotId,isSelected);
-	}
+
 
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
