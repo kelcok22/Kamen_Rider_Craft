@@ -101,23 +101,25 @@ public class RiderDriverItem extends RiderArmorItem {
         return form_double ;
     }
 
+    public void beltTick(ItemStack stack, Level level, LivingEntity player, int slotId) {
+        if (stack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
+            if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
+            if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
+
+            if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
+            if (!isTransformed(player)) tag.putDouble("render_type", 0);
+
+            //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
+        }else{
+            set_Upadete_Form(stack);
+        }
+    }
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
-
-            if (stack.has(DataComponents.CUSTOM_DATA)) {
-                CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-                if (tag.getBoolean("Update_form")&&slotId==36) OnformChange(stack, player, tag);
-                if (!isTransformed(player)||slotId!=36) tag.putBoolean("Update_form", true);
-
-                if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
-                if (!isTransformed(player)) tag.putDouble("render_type", 0);
-
-                //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
-            }else{
-                set_Upadete_Form(stack);
-            }
+            beltTick(stack,level,player,slotId);
 
             if (isTransformed(player)) {
                 for (int n = 0; n < Num_Base_Form_Item; n++) {

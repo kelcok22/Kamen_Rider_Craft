@@ -60,6 +60,7 @@ import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEvent.LivingVisibilityEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
@@ -95,13 +96,13 @@ public class ModCommonEvents {
 		}
 
 		@SubscribeEvent
-		public void riderVisibility(LivingVisibilityEvent event) {
-			if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
-			&& belt.isTransformed(event.getEntity()) && event.getEntity().hasEffect(MobEffects.INVISIBILITY)) {
-				event.modifyVisibility(event.getVisibilityModifier() * 0.1);
+		public void onEntityTick(EntityTickEvent.Post event) {
+			if (event.getEntity()instanceof LivingEntity entity){
+				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
+					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
+				}
 			}
 		}
-
 
 
 		private Item getGochizoDrop(ItemStack itemstack) {

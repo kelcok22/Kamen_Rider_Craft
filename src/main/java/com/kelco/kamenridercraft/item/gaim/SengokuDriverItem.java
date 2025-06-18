@@ -32,12 +32,6 @@ public class SengokuDriverItem extends RiderDriverItem {
 
 
 	@Override
-	public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-		super.inventoryTick(stack,level,entity,slotId,isSelected);
-
-	}
-
-	@Override
 	public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
 	{
 
