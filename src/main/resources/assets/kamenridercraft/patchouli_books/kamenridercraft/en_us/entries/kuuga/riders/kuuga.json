@@ -297,6 +297,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Kuuga",
 			"text": "Appears in:$(li)Televi-Kun (January 2001, magazine)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Speed$(li)Resistance$(li)Strength VII (with empty hand)$(li)Rider Kick!"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "touma",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_touma\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Mighty Form (-TOUMA- Version)",
+			"text": "Accessed with the $(l:kuuga/items/amadam_stones#kuuga_touma)Kuuga Mighty Amadam (-TOUMA-)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Kuuga",
+			"text": "Appears in:$(li)HEROES VINYL ART Kamen Rider Kuuga -TOUMA- (2025, toyline)$(br2)Transforms with the $(l:kuuga/devices/arcle)Arcle$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Rider Kick!"
 		}
 	]
 }
