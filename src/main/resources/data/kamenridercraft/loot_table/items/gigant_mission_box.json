@@ -7,51 +7,46 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:odorippa_ride_chemy_card",
+          "name": "kamenridercraft:powered_builder_raise_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:dokkirimajin_ride_chemy_card",
+          "name": "kamenridercraft:gigant_sword_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:doctorkozo_ride_chemy_card",
+          "name": "kamenridercraft:gigant_hammer_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:pilets_ride_chemy_card",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:wrestler_g_ride_chemy_card",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:sasukemaru_ride_chemy_card",
+          "name": "kamenridercraft:gigant_blaster_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:bulletbaang_ride_chemy_card",
+          "name": "kamenridercraft:magnum_shooter_40x_raise_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:apparebushido_ride_chemy_card",
+          "name": "kamenridercraft:ninja_dueler_raise_buckle",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:karyudos_ride_chemy_card",
+          "name": "kamenridercraft:zombie_breaker_raise_buckle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:beat_axe_raise_buckle",
           "weight": 1
         }
       ]
     }
   ],
-  "random_sequence": "kamenridercraft:gift"
+  "random_sequence": "kamenridercraft:gigant_mission_box"
 }
