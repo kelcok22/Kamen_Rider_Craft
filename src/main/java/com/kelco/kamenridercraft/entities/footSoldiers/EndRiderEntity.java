@@ -27,6 +27,7 @@ public class EndRiderEntity extends BaseHenchmenEntity {
 
 	public EndRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
 		super(type, level);
+		NAME = "the_end_rider";
 	    this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Geats_Rider_Items.GEATS_HELMET.get()));
 	    this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Geats_Rider_Items.GEATS_CHESTPLATE.get()));
 	    this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Geats_Rider_Items.GEATS_LEGGINGS.get()));
