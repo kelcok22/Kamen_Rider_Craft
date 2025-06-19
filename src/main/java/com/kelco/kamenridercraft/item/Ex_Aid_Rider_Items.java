@@ -7,7 +7,6 @@ import com.kelco.kamenridercraft.block.machineBlocks.GanbarizingMachine;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ex_aid.*;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import net.minecraft.core.registries.Registries;

@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gaim.*;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RingHolderGuiMenu;

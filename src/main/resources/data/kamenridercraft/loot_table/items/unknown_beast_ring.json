@@ -7,51 +7,56 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:hopper1_ride_chemy_card",
-          "weight": 2
+          "name": "kamenridercraft:beast_ring",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:pikahotaru_ride_chemy_card",
+          "name": "kamenridercraft:falco_ring",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:chameleo_ring",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:buffa_ring",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dolphi_ring",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:hyper_ring",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:gengenchoucho_ride_chemy_card",
+          "name": "kamenridercraft:beast_engage_ring",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:bakuonzemi_ride_chemy_card",
+          "name": "kamenridercraft:chimarise_ring",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:antrooper_ride_chemy_card",
+          "name": "kamenridercraft:beast_driver_on_ring",
           "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:greatonbo_ride_chemy_card",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:stagvine_ride_chemy_card",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:kaiserbee_ride_chemy_card",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:kamantis_ride_chemy_card",
+          "name": "kamenridercraft:griffin_ring",
           "weight": 1
         }
       ]
     }
   ],
-  "random_sequence": "kamenridercraft:gift"
+  "random_sequence": "kamenridercraft:unknown_beast_ring"
 }

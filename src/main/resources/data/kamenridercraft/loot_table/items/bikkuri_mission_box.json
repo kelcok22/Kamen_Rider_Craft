@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geats_rider_core_id",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:tycoon_rider_core_id",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:na_go_rider_core_id",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:buffa_rider_core_id",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:punkjack_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:nudge_sparrow_rider_core_id",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:shirowe_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:ginpen_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:mary_rider_core_id",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:da_paan_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:keirou_rider_core_id",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:letter_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:lopo_rider_core_id",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:groovy_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:hakubi_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:turbon_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:brali_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:gya_go_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:seeker_rider_core_id",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:butchi_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:revi_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:vice_rider_core_id",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geats_rider_core_id_osaka",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geats_rider_core_id_fukuoka",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geats_rider_core_id_nagoya",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geats_rider_core_id_tokyo",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:bikkuri_mission_box"
+}

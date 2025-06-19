@@ -8,7 +8,6 @@ import com.kelco.kamenridercraft.item.Fourze.AstroswitchCaseItem;
 import com.kelco.kamenridercraft.item.Fourze.FourzeDriverItem;
 import com.kelco.kamenridercraft.item.Fourze.GateSwitchItem;
 import com.kelco.kamenridercraft.item.Fourze.ShowaSwitchItem;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import net.minecraft.core.registries.Registries;

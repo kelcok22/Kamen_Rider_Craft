@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.VistampBar;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.revice.ReviceDriverItem;
 import com.kelco.kamenridercraft.item.revice.CyclotronDriverItem;
 import com.kelco.kamenridercraft.item.revice.DemonsDriverItem;
