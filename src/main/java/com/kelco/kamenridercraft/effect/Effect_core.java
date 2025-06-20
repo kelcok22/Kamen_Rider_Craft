@@ -1,5 +1,7 @@
 package com.kelco.kamenridercraft.effect;
 
+import java.util.Set;
+
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.cores.*;
@@ -179,7 +181,7 @@ public class Effect_core {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x76ecff));
 
     public static final Holder<MobEffect>  FORM_TIMEOUT= EFFECT.register("form_timeout",
-            () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
+            () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
     public static final Holder<MobEffect>  FORM_LOCK= EFFECT.register("form_lock",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0xffffff));
@@ -218,7 +220,7 @@ public class Effect_core {
     );
 
     public static final Holder<MobEffect>  PORTAL_COOLDOWN= EFFECT.register("portal_cooldown",
-            () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
+            () -> new UncurableEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
 
     public static final Holder<MobEffect>  RIDER_KICK= EFFECT.register("rider_kick",
             () -> new RiderKickEffect(MobEffectCategory.BENEFICIAL, 0x565656));
