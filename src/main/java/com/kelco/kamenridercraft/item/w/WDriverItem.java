@@ -28,6 +28,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class WDriverItem extends RiderDriverItem {
 
@@ -72,17 +73,21 @@ public class WDriverItem extends RiderDriverItem {
     {
 		if (get_Form_Item(belt, 1)==W_Rider_Items.XTREME_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_GOLD_MEMORY.get()||get_Form_Item(belt, 1)==W_Rider_Items.XTREME_ACCEL_MEMORY.get()) {
 			if (get_Form_Item(belt, 2)!=W_Rider_Items.JOKER_MEMORY.get()) {
-				tag.putString("slot_tex" + 1, (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
-				tag.putInt("slot" + 1, Item.getId(W_Rider_Items.CYCLONE_MEMORY.get()));
-				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
+            	Consumer<CompoundTag> data = form -> {
+					form.putString("slot_tex1", (W_Rider_Items.CYCLONE_MEMORY.get()).toString());
+            	};
+
+            	CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 			}
 		}
-		if (get_Form_Item(belt, 2)==W_Rider_Items.CYCLONE_SKULL_MEMORY.get()) {
-			if (get_Form_Item(belt, 1)!=W_Rider_Items.CYCLONE_MEMORY.get()) {
-				tag.putString("slot_tex" + 2, (W_Rider_Items.JOKER_MEMORY.get()).toString());
-				tag.putInt("slot" + 2, Item.getId(W_Rider_Items.JOKER_MEMORY.get()));
-				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
-			}
+		if (get_Form_Item(belt, 2)==W_Rider_Items.CYCLONE_SKULL_MEMORY.get() && get_Form_Item(belt, 1)!=W_Rider_Items.CYCLONE_MEMORY.get()) {
+            Consumer<CompoundTag> data = form -> {
+				form.putString("slot_tex2", (W_Rider_Items.JOKER_MEMORY.get()).toString());
+            	form.putBoolean("Update_form", true);
+            	form.putDouble("render_type", getRenderType(belt));
+            };
+
+            CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
 	}
 

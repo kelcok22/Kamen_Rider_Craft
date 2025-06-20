@@ -25,6 +25,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class GhostDriverItem extends RiderDriverItem {
 
@@ -66,11 +67,11 @@ if (stack.getItem()==Ghost_Rider_Items.NEW_GHOST_DRIVER.get())rider="new_ghost";
 		||get_Form_Item(belt, 1)==Ghost_Rider_Items.MUGEN_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.MUGEN_DAMASHII.get()
 				||get_Form_Item(belt, 1)==Ghost_Rider_Items.SIN_SPECTER_GHOST_EYECON.get()&get_Form_Item(belt, 2)!=Ghost_Rider_Items.SIN_SPECTER_DAMASHII.get()
 		) {
+            Consumer<CompoundTag> data = form -> {
+				form.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
+            };
 
-				tag.putString("slot_tex" + 1, (this.Base_Form_Item).toString());
-				tag.putInt("slot" + 1, Item.getId(this.Base_Form_Item));
-				CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
-
+            CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
 	}
 

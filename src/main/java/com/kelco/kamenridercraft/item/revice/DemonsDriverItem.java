@@ -24,6 +24,7 @@ import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class DemonsDriverItem extends RiderDriverItem {
 
@@ -145,11 +146,11 @@ public class DemonsDriverItem extends RiderDriverItem {
     public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
     {
 		if (((RiderFormChangeItem) ITEM).getSlot()==1&Modded_item_core.BLANK_FORM.get()!=ITEM) {
-			for (int n = 2; n < 6; n++) {
-				tag.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
-				tag.putInt("slot" + n, Item.getId(Modded_item_core.BLANK_FORM.get()));
-			}
-			CustomData.set(DataComponents.CUSTOM_DATA, belt, tag);
+            Consumer<CompoundTag> data = form -> {
+				for (int n = 2; n < 6; n++) form.putString("slot_tex" + n, (Modded_item_core.BLANK_FORM.get()).toString());
+            };
+
+            CustomData.update(DataComponents.CUSTOM_DATA, belt, data);
 		}
 	}
 }
