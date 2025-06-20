@@ -303,7 +303,7 @@ public class RiderDriverItem extends RiderArmorItem {
             itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         }
         if (itemstack.getItem() instanceof RiderDriverItem driver) {
-            CompoundTag  tag = new CompoundTag();
+            CompoundTag  tag = itemstack.get(DataComponents.CUSTOM_DATA).copyTag();
             Consumer<CompoundTag> data = form ->
             {
                 if (!form.getString("slot_tex" + SLOT).equals(ITEM.toString())) {

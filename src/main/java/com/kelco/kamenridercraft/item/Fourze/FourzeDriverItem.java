@@ -71,12 +71,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 			super.inventoryTick(stack,level,entity,slotId,isSelected);
 
     	    if (entity instanceof LivingEntity player) {
-
-    	        if (stack.has(DataComponents.CUSTOM_DATA)) {
-    	            CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-    	            if (tag.getBoolean("Update_form")&!level.isClientSide()) OnformChange(stack, player, tag);
-    	        }
-
     	        if (isTransformed(player)) {
     	            for (int n = 0; n < Num_Base_Form_Item; n++) {
     	                List<MobEffectInstance> potionEffectList = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1).getPotionEffectList();
