@@ -420,7 +420,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:king_durian_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:gaim/mobs/rosyuo)Rosyuo$(/l)"
 		},
 		{
 			"type": "patchouli:text",
