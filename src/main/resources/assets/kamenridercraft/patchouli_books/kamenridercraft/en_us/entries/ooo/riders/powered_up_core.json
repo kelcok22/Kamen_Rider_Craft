@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Core (Reinforced)",
 	"icon": "kamenridercraft:powered_up_core_driver",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -2,7 +2,7 @@
 	"name": "Muchiri",
 	"icon": "kamenridercraft:greeed_blet_muchiri",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:entity",

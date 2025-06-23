@@ -2,7 +2,7 @@
 	"name": "Uva",
 	"icon": "kamenridercraft:greeed_blet_uva",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:entity",
