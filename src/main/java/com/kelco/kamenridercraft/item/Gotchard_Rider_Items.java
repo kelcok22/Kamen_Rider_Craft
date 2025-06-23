@@ -8,7 +8,6 @@ import com.kelco.kamenridercraft.block.machineBlocks.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gotchard.*;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import io.netty.buffer.Unpooled;

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zi_o_ridewatch",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:geiz_ridewatch",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:tsukuyomi_ridewatch",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:blank_watch"
+}

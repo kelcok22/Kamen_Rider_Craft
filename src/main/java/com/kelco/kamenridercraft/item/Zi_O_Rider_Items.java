@@ -1,15 +1,10 @@
 package com.kelco.kamenridercraft.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
 import com.kelco.kamenridercraft.item.zi_o.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
-import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.MiridewatchHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RidewatchHolderGuiMenu;
 import io.netty.buffer.Unpooled;
@@ -53,7 +48,7 @@ public class Zi_O_Rider_Items {
 			.AddToList(RiderTabs.ZI_O_TAB_ITEM));
  
 	public static final DeferredItem<Item> BLANK_RIDEWATCH = ITEMS.register("blank_watch",
-			() -> new BlankRidewatchItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_watch")).AddToList(RiderTabs.ZI_O_TAB_ITEM));
     	    
     public static final DeferredItem<Item> ZI_O_RIDEWATCH = ITEMS.register("zi_o_ridewatch",
             () -> new Zi_ORidewatchItem(new Item.Properties(),0,"","zi_o","ziku_driver_zi_o_belt",
@@ -89,7 +84,7 @@ public class Zi_O_Rider_Items {
 					.addAltWeapon("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:drill_crusher_crusher", "kamenridercraft:ride_heisaber")
 					.addAltWeapon("kamenridercraft:zi_o_ii_ridewatch", "kamenridercraft:saikyo_girade")
 					.addAltWeapon("kamenridercraft:zi_o_trinity_ridewatch", "kamenridercraft:zikan_zax", "kamenridercraft:zikan_despear")
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 30));
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
 			() -> new RidewatchItem(new Item.Properties(),0,"_decade","zi_o","ziku_driver_zi_o_belt_decade",
@@ -174,7 +169,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 20));
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_shippu","geiz","ziku_driver_geiz_belt_revive",
@@ -210,7 +205,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
-					.AddToList(RiderTabs.ZI_O_TAB_ITEM).AddToList(BlankRidewatchItem.RIDEWATCH, 1));
+					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_MIRIDEWATCH = ITEMS.register("woz_miridewatch",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","woz","beyondriver_belt",

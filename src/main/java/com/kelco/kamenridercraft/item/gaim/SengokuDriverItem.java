@@ -30,13 +30,6 @@ public class SengokuDriverItem extends RiderDriverItem {
 		super(material, rider, baseFormItem, head, torso, legs, properties);
 	}
 
-
-	@Override
-	public void Extra_set_Form_Item(ItemStack belt, Item ITEM,int SLOT,CompoundTag  tag)
-	{
-
-	}
-
 	@Override
 	public String GET_TEXT(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider,String riderName)
 	{
