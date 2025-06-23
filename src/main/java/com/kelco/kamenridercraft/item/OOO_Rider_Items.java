@@ -567,8 +567,13 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> BADAN_MEDAL = ITEMS.register("badan_medal",
 					() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
+	public static final DeferredItem<Item> HEXA_OOOOOO = ITEMS.register("hexa_oooooo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","oooooo","oooooodriver_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
+					.ChangeModel("oooooo.geo.json","oooooo.animation.json").ChangeBeltModel("geo/ooo_belt.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
 
-			public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
+	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","birth_driver_belt",
 							new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 							new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
@@ -686,7 +691,6 @@ public class OOO_Rider_Items {
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"re_birth",Modded_item_core.BLANK_FORM ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 							.Dont_show_belt_form_info().Override_belt_text("rebirth_driver_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
-
 			public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aqua",AQUA_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 							.Dont_show_belt_form_info().ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
@@ -708,7 +712,12 @@ public class OOO_Rider_Items {
 					() -> new OOODriverItem(ArmorMaterials.DIAMOND,"shocker_ooo",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.Add_Extra_Base_Form_Items(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
-			public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
+	public static final DeferredItem<Item> OOOOOODRIVER = ITEMS.register("oooooodriver",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oooooo",HEXA_OOOOOO ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().ChangeRepairItem(CELL_MEDAL.get()).has_basic_model().AddToTabList(RiderTabs.OOO_TAB_ITEM));
+
+
+	public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
 					() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(KANI_MEDAL,SASORI_MEDAL,Modded_item_core.BLANK_FORM).Override_belt_text("gaia_core_typhoon_belt").ChangeRepairItem(CELL_MEDAL.get()).AddToTabList(RiderTabs.OOO_TAB_ITEM));
 
