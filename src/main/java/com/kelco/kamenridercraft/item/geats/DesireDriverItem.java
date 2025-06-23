@@ -7,13 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.Geats_Rider_Items;
-import com.kelco.kamenridercraft.item.Ichigo_Rider_Items;
-import com.kelco.kamenridercraft.item.Miscellaneous_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
-import com.kelco.kamenridercraft.item.OOO_Rider_Items;
-import com.kelco.kamenridercraft.item.Saber_Rider_Items;
-
-import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import com.kelco.kamenridercraft.world.inventory.RaiseBuckleHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -328,12 +322,6 @@ public class DesireDriverItem  extends RiderDriverItem {
 	super.inventoryTick(stack,level,entity,slotId,isSelected);
 
 		if (entity instanceof LivingEntity player) {
-
-			if (stack.has(DataComponents.CUSTOM_DATA)) {
-				CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).getUnsafe();
-				if (tag.getBoolean("Update_form")) OnformChange(stack, player, tag);
-			}
-
 			if (isTransformed(player)) {
 				if (this.get_Form_Item(stack, 2) == Geats_Rider_Items.BOOST_MKII_RAISE_BUCKLE.get()) player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 40, 2,true,false));
 				boolean Fever=  isFever(stack,this.Rider);

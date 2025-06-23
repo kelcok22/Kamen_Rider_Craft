@@ -284,22 +284,14 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void formTimeout(MobEffectEvent.Expired event) {
-			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
-				LivingEntity entity = event.getEntity();
-                for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
-					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), form.getRevertForm(), n+1);
-                }
-			}
-		}
-
-		@SubscribeEvent
-		public void formTimeout(MobEffectEvent.Remove event) {
-			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT && event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
-				LivingEntity entity = event.getEntity();
-                for (int n = 0; n < belt.Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), n + 1);
-					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(entity.getItemBySlot(EquipmentSlot.FEET), form.getRevertForm(), n+1);
+			LivingEntity entity = event.getEntity();
+			ItemStack belt = entity.getItemBySlot(EquipmentSlot.FEET);
+			
+			if (event.getEffectInstance() != null && event.getEffectInstance().getEffect() == Effect_core.FORM_TIMEOUT
+			&& belt.getItem() instanceof RiderDriverItem driver && driver.isTransformed(entity)) {
+                for (int n = 1; n == driver.Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = RiderDriverItem.get_Form_Item(belt, n);
+					if (form.getTimeoutDuration() != 0) RiderDriverItem.set_Form_Item(belt, form.getRevertForm(), n);
                 }
 			}
 		}

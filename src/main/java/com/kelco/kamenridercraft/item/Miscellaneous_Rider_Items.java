@@ -4,12 +4,11 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBannerPatternItem;
+import com.kelco.kamenridercraft.item.BaseItems.BaseDropItem;
 import com.kelco.kamenridercraft.item.BaseItems.BaseItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderArmorItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
-import com.kelco.kamenridercraft.item.misc.GiftItem;
-import com.kelco.kamenridercraft.item.ride_kamens.GashaTicketItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import net.minecraft.core.registries.Registries;
@@ -177,43 +176,43 @@ public class Miscellaneous_Rider_Items {
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","saigo","chaos_driver_saigo_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-							.SetShowFace().IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+							.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_HARUMA = ITEMS.register("chaos_ring_haruma",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","haruma","chaos_driver_haruma_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-							.SetShowFace().IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+							.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_SHION = ITEMS.register("chaos_ring_shion",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","shion","chaos_driver_shion_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-							.SetShowFace().IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+							.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 		  public static final DeferredItem<Item> CHAOS_RING_JIGEN = ITEMS.register("chaos_ring_jigen",
 		            () -> new RiderFormChangeItem(new Item.Properties(),0,"","jigen","chaos_driver_jigen_belt",
 		            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 		            		,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-							.SetShowFace().ChangeModel("haruma.geo.json").IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+							.SetShowFace().ChangeModel("haruma.geo.json").IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_ARAKI = ITEMS.register("chaos_ring_araki",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","araki","chaos_driver_araki_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-					.SetShowFace().IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_KAMUI = ITEMS.register("chaos_ring_kamui",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","kamui","chaos_driver_kamui_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-					.SetShowFace().IsGlowing().ChangeModel("kamui.geo.json").AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					.SetShowFace().IsGlowing().ChangeModel("kamui.geo.json").AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 	public static final DeferredItem<Item> CHAOS_RING_AGATA = ITEMS.register("chaos_ring_agata",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","agata","chaos_driver_agata_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.DIG_SPEED,40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false))
-					.SetShowFace().IsGlowing().AddToList(GashaTicketItem.CHAOS_RING).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
+					.SetShowFace().IsGlowing().AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM).KeepItem());
 
 
 	public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
@@ -252,7 +251,7 @@ public class Miscellaneous_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
-		    		() -> new GashaTicketItem(new Item.Properties()).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
+		    		() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gasha_ticket")).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
 		    public static final DeferredItem<Item> CANDY = ITEMS.register("candy",
 					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 0), 1.0F).build()))
@@ -264,7 +263,7 @@ public class Miscellaneous_Rider_Items {
 
 
 	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
-			() -> new GiftItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

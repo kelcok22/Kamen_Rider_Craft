@@ -299,13 +299,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static void set_Form_Item(ItemStack itemstack, Item ITEM,int SLOT)
     {
-        if (!itemstack.has(DataComponents.CUSTOM_DATA)) {
-            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
+        if (!itemstack.has(DataComponents.CUSTOM_DATA)) itemstack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
         if (itemstack.getItem() instanceof RiderDriverItem driver) {
-            CompoundTag  tag = new CompoundTag();
-            Consumer<CompoundTag> data = form ->
-            {
+            Consumer<CompoundTag> data = form -> {
                 if (!form.getString("slot_tex" + SLOT).equals(ITEM.toString())) {
                     form.putString("slot_tex" + SLOT, ITEM.toString());
                     form.putBoolean("Update_form", true);
@@ -313,9 +309,8 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             };
 
-            data.accept(tag);
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
-            driver.Extra_set_Form_Item(itemstack, ITEM, SLOT,tag);
+            driver.Extra_set_Form_Item(itemstack, ITEM, SLOT, itemstack.get(DataComponents.CUSTOM_DATA).copyTag());
         }
     }
 

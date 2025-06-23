@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:magnum_raise_buckle",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:boost_raise_buckle",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zombie_raise_buckle",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:ninja_raise_buckle",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:monster_raise_buckle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:beat_raise_buckle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:arrow_raise_buckle",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:water_raise_buckle",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:hammer_raise_buckle",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:shield_raise_buckle",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:chain_array_raise_buckle",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:claw_raise_buckle",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:drill_raise_buckle",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:propeller_raise_buckle",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:golden_hammer_raise_buckle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:silver_arrow_raise_buckle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:clear_arrow_raise_buckle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:beat_raise_buckle_theme",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kamenridercraft:hatena_mission_box"
+}

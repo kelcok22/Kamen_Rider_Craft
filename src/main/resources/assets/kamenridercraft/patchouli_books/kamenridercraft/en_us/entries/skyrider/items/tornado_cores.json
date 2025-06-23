@@ -19,6 +19,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "original_tornado_core",
+			"title": "Tornado Core (Original)",
 			"text": "Appears in:$(li)The New Kamen Rider (1979, TV show)$(br2)Used to access Skyrider's $(l:skyrider/riders/skyrider#original)original$(/l) form"
 		},
 		{
