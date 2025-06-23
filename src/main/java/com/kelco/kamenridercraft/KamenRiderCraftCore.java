@@ -301,8 +301,22 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
              model.leftPants.visible = true;
              model.rightPants.visible = true;
              model.jacket.visible = true;
-         }
-     }
+         }}}
+     else {
+            {
+                model.head.visible = true;
+                model.hat.visible = true;
+                model.leftLeg.visible = true;
+                model.rightLeg.visible = true;
+                model.leftArm.visible = true;
+                model.rightArm.visible = true;
+                model.body.visible = true;
+                model.leftSleeve.visible = true;
+                model.rightSleeve.visible = true;
+                model.leftPants.visible = true;
+                model.rightPants.visible = true;
+                model.jacket.visible = true;
+            }
     }
 }
 
