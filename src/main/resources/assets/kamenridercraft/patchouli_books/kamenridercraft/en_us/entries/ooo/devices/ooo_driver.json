@@ -46,6 +46,19 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:ooo/shocker_ooodriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oooooodriver",
+			"title": "Six Group OOO Driver",
+			"text": "Appears in:$(li)OOZ (2010, S.I.C. Hero Saga)$(br2)Used alongside the $(l:ooo/devices/armor)OOO armor$(/l) to transform into $(l:ooo/riders/oooooo)OOOOOO"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oooooodriver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }

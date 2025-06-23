@@ -2,7 +2,7 @@
 	"name": "Mezool",
 	"icon": "kamenridercraft:greeed_blet_mezool",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:entity",

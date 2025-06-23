@@ -2,7 +2,7 @@
 	"name": "Ankh (Lost)",
 	"icon": "kamenridercraft:greeed_blet_ankh_lost",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:entity",

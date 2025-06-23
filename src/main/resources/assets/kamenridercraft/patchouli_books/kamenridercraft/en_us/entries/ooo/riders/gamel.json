@@ -2,7 +2,7 @@
 	"name": "Gamel",
 	"icon": "kamenridercraft:greeed_blet_gamel",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:entity",

@@ -2,7 +2,7 @@
 	"name": "Ankh (Complete)",
 	"icon": "kamenridercraft:greeed_blet_ankh",
 	"category": "kamenridercraft:ooo/riders",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:entity",
