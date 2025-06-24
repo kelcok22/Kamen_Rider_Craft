@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "jinrai_no_senshi",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:blay_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi_blade\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Jack Form (Jinrai no Senshi)",
