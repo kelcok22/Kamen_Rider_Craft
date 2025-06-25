@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-08T20:14:15.0372622	Block States: kamenridercraft
+// 1.21.1	2025-06-25T18:56:54.5966593	Block States: kamenridercraft
 60be54a851efab4ce567c09d92b86bbc6ac11112 assets/kamenridercraft/blockstates/black_wallplate.json
 d067653346b0c2ece3e52d459ecb7363d7f3b401 assets/kamenridercraft/blockstates/black_wallplate_slab.json
 94fbc1ff4b4f8e3b5dc493c61c824ce29a954d68 assets/kamenridercraft/blockstates/black_wallplate_stairs.json
@@ -171,6 +171,7 @@ b5d7d21dc0fe227efd966fc619448b032f49fbf9 assets/kamenridercraft/models/block/yel
 7f7b6f60215aab4f24201f955cac8d262d3123f1 assets/kamenridercraft/models/item/black_wallplate.json
 812723e2f70a82a1423bf4833baa7df10626673f assets/kamenridercraft/models/item/black_wallplate_slab.json
 98612d3374efe05c935fe5804bc639da2fd41024 assets/kamenridercraft/models/item/black_wallplate_stairs.json
+1652d523aac27be7f6f696c16735ed1386f21ca3 assets/kamenridercraft/models/item/cafe_counter.json
 be4edaf198dab624ac2735de52e05e69e2b57a8d assets/kamenridercraft/models/item/checkered_tile.json
 c294811844a1ee5756397bc3661152335992a1cd assets/kamenridercraft/models/item/cornerstore_sign.json
 1818010afc2942518cbc836843a8d41a82c95756 assets/kamenridercraft/models/item/green_wallplate.json

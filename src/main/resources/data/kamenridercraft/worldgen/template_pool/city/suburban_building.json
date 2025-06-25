@@ -82,6 +82,14 @@
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
+      },
+    {
+      "weight": 1,
+      "element": {
+        "location": "kamenridercraft:city/suburban/cous_coussier",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
       }
     }
   ]

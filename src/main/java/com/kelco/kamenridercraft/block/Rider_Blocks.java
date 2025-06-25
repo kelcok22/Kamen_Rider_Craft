@@ -402,6 +402,10 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> CAFE_COUNTER = registerBlock("cafe_counter",
+			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 	
 	
 	public static final DeferredBlock<Block> MONITOR = registerBlock("monitor",
