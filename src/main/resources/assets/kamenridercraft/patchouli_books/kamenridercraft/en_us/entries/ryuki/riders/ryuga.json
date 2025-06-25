@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "dragshield",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:drag_shield_vent_form\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:drag_shield_vent_form_ryuga\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Ryuga w/ Dragshields",
