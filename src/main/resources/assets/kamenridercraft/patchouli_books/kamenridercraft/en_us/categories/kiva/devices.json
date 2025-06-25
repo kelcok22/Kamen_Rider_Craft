@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:kiva/main",
     "name": "Kiva Transformation Devices",
-    "description": "The transformation devices used by the Kiva Riders.",
+    "description": "The transformation devices used by the Kiva Riders. These can be repaired in an anvil using $(l:kiva/items/fuestle)Fuestles$(/l).",
     "icon": "kamenridercraft:kivadriver",
     "sortnum": 1
 }

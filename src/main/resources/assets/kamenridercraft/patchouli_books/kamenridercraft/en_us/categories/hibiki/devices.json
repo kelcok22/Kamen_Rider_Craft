@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:hibiki/main",
     "name": "Hibiki Transformation Devices",
-    "description": "The transformation devices used by the Hibiki Riders.",
+    "description": "The transformation devices used by the Hibiki Riders. These can be repaired in an anvil using $(l:hibiki/items/oni_ore)Akane Taka Disk Animals$(/l).",
     "icon": "kamenridercraft:hibikidriver",
     "sortnum": 1
 }

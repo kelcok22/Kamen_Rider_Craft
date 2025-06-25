@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:shin_kamen_rider/main",
     "name": "Shin Kamen Rider Transformation Devices",
-    "description": "The transformation devices used by the Shin Kamen Rider Riders.",
+    "description": "The transformation devices used by the Shin Kamen Rider Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:shin_typhoon_ichigo",
     "sortnum": 1
 }

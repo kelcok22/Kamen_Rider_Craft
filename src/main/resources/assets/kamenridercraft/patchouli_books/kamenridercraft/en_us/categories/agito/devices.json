@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:agito/main",
     "name": "Agito Transformation Devices",
-    "description": "The transformation devices used by the Agito Riders.",
+    "description": "The transformation devices used by the Agito Riders. These can be repaired in an anvil using $(l:agito/items/agito_of_seed)Seeds of Agito$(/l).",
     "icon": "kamenridercraft:alter_ring",
     "sortnum": 1
 }

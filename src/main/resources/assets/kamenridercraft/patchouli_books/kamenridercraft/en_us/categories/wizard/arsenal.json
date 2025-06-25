@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:wizard/main",
     "name": "Wizard Arsenal",
-    "description": "Every weapon and tool used by the Wizard Riders.",
+    "description": "Every weapon and tool used by the Wizard Riders. These can be repaired in an anvil using $(l:wizard/items/wizardgem)Orange Magic Stones$(/l).",
     "icon": "kamenridercraft:wizarswordgun",
     "sortnum": 3
 }

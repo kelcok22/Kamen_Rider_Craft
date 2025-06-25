@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used as the base item for most Revice items"
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Used as the base item and repair material for most Revice items"
 		},
 		{
 			"type": "patchouli:spotlight",

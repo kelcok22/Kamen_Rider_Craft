@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:gotchard/main",
     "name": "Gotchard Arsenal",
-    "description": "Every weapon and tool used by the Gotchard Riders.",
+    "description": "Every weapon and tool used by the Gotchard Riders. These can be repaired in an anvil using $(l:gotchard/items/blank_ride_chemy_card)Blank Ride Chemy Cards$(/l).",
     "icon": "kamenridercraft:gotcharge_gun",
     "sortnum": 3
 }

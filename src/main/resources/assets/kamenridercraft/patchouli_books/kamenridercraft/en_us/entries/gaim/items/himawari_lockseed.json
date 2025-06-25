@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used as the base item for most Gaim items"
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Used as the base item and repair material for most Gaim items"
 		},
 		{
 			"type": "patchouli:spotlight",

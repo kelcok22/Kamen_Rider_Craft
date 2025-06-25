@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:kabuto/main",
     "name": "Kabuto Arsenal",
-    "description": "Every weapon and tool used by the Kabuto Riders.",
+    "description": "Every weapon and tool used by the Kabuto Riders. These can be repaired in an anvil using $(l:kabuto/items/mini_zecter)Mizerbombers$(/l).",
     "icon": "kamenridercraft:kabuto_kunai",
     "sortnum": 3
 }

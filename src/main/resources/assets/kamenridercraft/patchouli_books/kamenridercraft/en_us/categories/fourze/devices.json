@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:fourze/main",
     "name": "Fourze Transformation Devices",
-    "description": "The transformation devices used by the Fourze Riders.",
+    "description": "The transformation devices used by the Fourze Riders. These can be repaired in an anvil using $(l:fourze/items/astroswitch)Blank Switches$(/l).",
     "icon": "kamenridercraft:fourze_driver",
     "sortnum": 1
 }

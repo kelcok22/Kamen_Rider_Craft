@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zo/main",
     "name": "ZO Transformation Devices",
-    "description": "The transformation devices used by ZO.",
+    "description": "The transformation devices used by Kamen Rider ZO. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:zo_core",
     "sortnum": 1
 }

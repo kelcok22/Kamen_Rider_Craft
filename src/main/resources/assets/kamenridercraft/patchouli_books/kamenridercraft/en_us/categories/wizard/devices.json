@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:wizard/main",
     "name": "Wizard Transformation Devices",
-    "description": "The transformation devices used by the Wizard Riders.",
+    "description": "The transformation devices used by the Wizard Riders. These can be repaired in an anvil using $(l:wizard/items/wizardgem)Orange Magic Stones$(/l).",
     "icon": "kamenridercraft:wizardriver",
     "sortnum": 1
 }

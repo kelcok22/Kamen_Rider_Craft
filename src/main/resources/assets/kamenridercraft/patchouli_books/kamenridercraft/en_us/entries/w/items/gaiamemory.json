@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used as the base item for most W items$(br2)Drops from:$(li)$(l:misc/blocks/gaiamemoryblock)Gaia Memory Ore$(/l)$(li)$(l:misc/blocks/deepslate_gaiamemoryblock)Deepslate Gaia Memory Ore$(/l)$(li)$(l:w/mobs/masquerade)Masquerades$(/l)$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerades$(/l)$(li)$(l:w/mobs/commander_dopant)Commander Dopant$(/l)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)"
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Used as the base item and repair material for most W items$(br2)Drops from:$(li)$(l:misc/blocks/gaiamemoryblock)Gaia Memory Ore$(/l)$(li)$(l:misc/blocks/deepslate_gaiamemoryblock)Deepslate Gaia Memory Ore$(/l)$(li)$(l:w/mobs/masquerade)Masquerades$(/l)$(li)$(l:w/mobs/foundation_x_masquerade)Foundation X Masquerades$(/l)$(li)$(l:w/mobs/commander_dopant)Commander Dopant$(/l)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

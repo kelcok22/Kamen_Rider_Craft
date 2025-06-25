@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:black/main",
     "name": "Black Transformation Devices",
-    "description": "The transformation devices used by the Black Riders.",
+    "description": "The transformation devices used by the Black Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:vital_charger",
     "sortnum": 1
 }

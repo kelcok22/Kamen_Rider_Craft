@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:den_o/main",
     "name": "Den-O Arsenal",
-    "description": "Every weapon and tool used by the Den-O Riders.",
+    "description": "Every weapon and tool used by the Den-O Riders. These can be repaired in an anvil using $(l:den_o/items/imagin_sand)Imagin Sand$(/l).",
     "icon": "kamenridercraft:den_gasher_sword",
     "sortnum": 3
 }

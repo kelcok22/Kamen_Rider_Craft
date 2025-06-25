@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ooo/main",
     "name": "OOO Arsenal",
-    "description": "Every weapon and tool used by the OOO Riders.",
+    "description": "Every weapon and tool used by the OOO Riders. These can be repaired in an anvil using $(l:ooo/items/cellmedal)Cell Medals$(/l).",
     "icon": "kamenridercraft:medajalibur",
     "sortnum": 3
 }

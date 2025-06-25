@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:kuuga/main",
     "name": "Kuuga Transformation Devices",
-    "description": "The transformation devices used by the Kuuga Riders.",
+    "description": "The transformation devices used by the Kuuga Riders. These can be repaired in an anvil using $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadams$(/l).",
     "icon": "kamenridercraft:arcle",
     "sortnum": 1
 }

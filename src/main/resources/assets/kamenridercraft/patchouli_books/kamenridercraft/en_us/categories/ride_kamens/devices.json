@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ride_kamens/main",
     "name": "Ride Kamens Transformation Devices",
-    "description": "The transformation devices used by the Ride Kamens Riders.",
+    "description": "The transformation devices used by the Ride Kamens Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:chaos_driver_saigo",
     "sortnum": 1
 }

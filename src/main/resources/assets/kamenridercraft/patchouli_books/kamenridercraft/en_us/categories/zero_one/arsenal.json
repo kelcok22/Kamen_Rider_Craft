@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zero_one/main",
     "name": "Zero-One Arsenal",
-    "description": "Every weapon and tool used by the Zero-One Riders.",
+    "description": "Every weapon and tool used by the Zero-One Riders. These can be repaired in an anvil using $(l:zero_one/items/hiden_metal)Hiden Metal$(/l).",
     "icon": "kamenridercraft:attache_calibur",
     "sortnum": 3
 }

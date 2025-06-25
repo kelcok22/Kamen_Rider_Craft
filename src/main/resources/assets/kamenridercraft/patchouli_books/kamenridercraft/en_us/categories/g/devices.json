@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:g/main",
     "name": "G Transformation Devices",
-    "description": "The transformation devices used by the G Riders.",
+    "description": "The transformation devices used by Kamen Rider G. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:g_belt",
     "sortnum": 1
 }

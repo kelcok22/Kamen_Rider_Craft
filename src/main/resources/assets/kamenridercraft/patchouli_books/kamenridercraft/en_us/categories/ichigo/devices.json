@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ichigo/main",
     "name": "Ichigo Transformation Devices",
-    "description": "The transformation devices used by the Ichigo Riders.",
+    "description": "The transformation devices used by the Ichigo Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:typhoon_ichigo",
     "sortnum": 1
 }

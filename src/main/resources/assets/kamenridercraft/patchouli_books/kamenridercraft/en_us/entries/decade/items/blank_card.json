@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item for most Decade items$(br2)Drops different Rider Cards when right-clicked"
+			"text": "Appears in:$(li)Kamen Rider Decade (2009, TV show)$(br2)Used as the base item and repair material for most Decade items$(br2)Drops different Rider Cards when right-clicked"
 		},
 		{
 			"type": "patchouli:crafting",

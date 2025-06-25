@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zx/main",
     "name": "ZX Transformation Devices",
-    "description": "The transformation devices used by the ZX Riders.",
+    "description": "The transformation devices used by the ZX Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:zx_belt",
     "sortnum": 1
 }

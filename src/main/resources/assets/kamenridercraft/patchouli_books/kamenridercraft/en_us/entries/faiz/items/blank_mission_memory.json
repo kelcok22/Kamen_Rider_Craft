@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used as the base item for most 555 items"
+			"text": "Appears in:$(li)Kamen Rider 555 (2003, TV show)$(br2)Used as the base item and repair material for most 555 items"
 		},
 		{
 			"type": "patchouli:spotlight",
