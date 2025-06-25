@@ -150,6 +150,18 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(Effect_core.CHRISTMAS, 40, 0,true,false))
 					.AddToList(CAKE,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> KUNGFU_RAMEN_GOCHIZO = ITEMS.register("kungfu_ramen_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shieldsnack","gavv","henshin_belt_gavv_belt_shieldsnack",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> CHOCO_TREASURE_GOCHIZO = ITEMS.register("choco_treasure_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shieldsnack","gavv","henshin_belt_gavv_belt_choco_treasure",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
+					.addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
 					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
