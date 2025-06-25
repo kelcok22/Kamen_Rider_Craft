@@ -96,6 +96,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.YELLOW_CHECKERED_TILE);
         blockItem(Rider_Blocks.LIME_CHECKERED_TILE);
         blockItem(Rider_Blocks.VERTICAL_PANEL);
+        blockItem(Rider_Blocks.CAFE_COUNTER);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
