@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:amazon/main",
     "name": "Amazon Transformation Devices",
-    "description": "The transformation devices used by the Amazon Riders.",
+    "description": "The transformation devices used by the Amazon Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:condorer",
     "sortnum": 1
 }

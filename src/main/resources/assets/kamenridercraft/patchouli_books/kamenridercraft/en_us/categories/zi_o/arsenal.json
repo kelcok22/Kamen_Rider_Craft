@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zi_o/main",
     "name": "Zi-O Arsenal",
-    "description": "Every weapon and tool used by the Zi-O Riders.",
+    "description": "Every weapon and tool used by the Zi-O Riders. These can be repaired in an anvil using $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l).",
     "icon": "kamenridercraft:zikan_girade",
     "sortnum": 3
 }

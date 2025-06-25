@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ooo/main",
     "name": "OOO Transformation Devices",
-    "description": "The transformation devices used by the OOO Riders.",
+    "description": "The transformation devices used by the OOO Riders. These can be repaired in an anvil using $(l:ooo/items/cellmedal)Cell Medals$(/l).",
     "icon": "kamenridercraft:ooodriver",
     "sortnum": 1
 }

@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:saber/main",
     "name": "Saber Arsenal",
-    "description": "Every weapon and tool used by the Saber Riders.",
+    "description": "Every weapon and tool used by the Saber Riders. These can be repaired in an anvil using $(l:saber/items/blank_wonder_ride_book)Blank Wonder Ride Books$(/l).",
     "icon": "kamenridercraft:kaenken_rekka",
     "sortnum": 3
 }

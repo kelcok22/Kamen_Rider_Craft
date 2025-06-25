@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:kabuto/main",
     "name": "Kabuto Transformation Devices",
-    "description": "The transformation devices used by the Kabuto Riders.",
+    "description": "The transformation devices used by the Kabuto Riders. These can be repaired in an anvil using $(l:kabuto/items/mini_zecter)Mizerbombers$(/l).",
     "icon": "kamenridercraft:kabuto_rider_belt",
     "sortnum": 1
 }

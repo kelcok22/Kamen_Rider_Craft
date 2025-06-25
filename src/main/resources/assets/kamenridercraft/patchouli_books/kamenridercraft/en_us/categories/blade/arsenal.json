@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:blade/main",
     "name": "Blade Arsenal",
-    "description": "Every weapon and tool used by the Blade Riders.",
+    "description": "Every weapon and tool used by the Blade Riders. These can be repaired in an anvil using $(l:blade/items/bladecard)Common Blank Rouze Cards$(/l).",
     "icon": "kamenridercraft:blayrouzer",
     "sortnum": 3
 }

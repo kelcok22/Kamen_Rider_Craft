@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:stronger/main",
     "name": "Stronger Transformation Devices",
-    "description": "The transformation devices used by the Stronger Riders.",
+    "description": "The transformation devices used by the Stronger Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:electrer",
     "sortnum": 1
 }

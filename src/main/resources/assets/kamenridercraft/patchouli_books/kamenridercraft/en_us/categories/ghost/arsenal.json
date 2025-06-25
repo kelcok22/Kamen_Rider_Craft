@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ghost/main",
     "name": "Ghost Arsenal",
-    "description": "Every weapon and tool used by the Ghost Riders.",
+    "description": "Every weapon and tool used by the Ghost Riders. These can be repaired in an anvil using $(l:ghost/items/blank_ghost_eyecon)Blank Ghost Eyecons$(/l).",
     "icon": "kamenridercraft:gan_gun_saber_blade",
     "sortnum": 3
 }

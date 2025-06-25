@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:drive/main",
     "name": "Drive Transformation Devices",
-    "description": "The transformation devices used by the Drive Riders.",
+    "description": "The transformation devices used by the Drive Riders. These can be repaired in an anvil using $(l:drive/items/shift_alloy)Shift Alloy$(/l).",
     "icon": "kamenridercraft:drivedriver",
     "sortnum": 1
 }

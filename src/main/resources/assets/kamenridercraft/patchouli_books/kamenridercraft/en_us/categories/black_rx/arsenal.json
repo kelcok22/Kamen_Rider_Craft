@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:black_rx/main",
     "name": "Black RX Arsenal",
-    "description": "Every weapon and tool used by the Black RX Riders.",
+    "description": "Every weapon and tool used by the Black RX Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:revolcane",
     "sortnum": 3
 }

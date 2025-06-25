@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:black/main",
     "name": "Satansaber",
-    "description": "",
+    "description": "This can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:satansaber",
     "sortnum": 3
 }

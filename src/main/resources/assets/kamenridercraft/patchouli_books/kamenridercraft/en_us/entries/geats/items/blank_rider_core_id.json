@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used as the base item for most Geats items$(br2)Used to revert a $(l:geats/riders/keibi_rider)Keibi Rider$(/l) to Entry Form$(br2)Used to revert a $(l:geats/riders/the_end_rider)The End Rider$(/l) to Entry Form"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Used as the base item and repair material for most Geats items$(br2)Used to revert a $(l:geats/riders/keibi_rider)Keibi Rider$(/l) to Entry Form$(br2)Used to revert a $(l:geats/riders/the_end_rider)The End Rider$(/l) to Entry Form"
 		},
 		{
 			"type": "patchouli:spotlight",

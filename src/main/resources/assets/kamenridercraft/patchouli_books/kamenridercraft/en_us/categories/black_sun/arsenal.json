@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:black_sun/main",
     "name": "Black Sun Arsenal",
-    "description": "Every weapon and tool used by the Black Sun Riders.",
+    "description": "Every weapon and tool used by the Black Sun Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:century_king_black_blade",
     "sortnum": 3
 }

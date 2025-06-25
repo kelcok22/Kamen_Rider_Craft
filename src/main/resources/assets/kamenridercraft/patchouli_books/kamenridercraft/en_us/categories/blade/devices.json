@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:blade/main",
     "name": "Blade Transformation Devices",
-    "description": "The transformation devices used by the Blade Riders.",
+    "description": "The transformation devices used by the Blade Riders. These can be repaired in an anvil using $(l:blade/items/bladecard)Common Blank Rouze Cards$(/l).",
     "icon": "kamenridercraft:blay_buckle",
     "sortnum": 1
 }

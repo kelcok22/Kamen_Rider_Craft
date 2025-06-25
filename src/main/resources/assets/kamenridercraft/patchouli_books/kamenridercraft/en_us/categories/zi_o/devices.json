@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zi_o/main",
     "name": "Zi-O Transformation Devices",
-    "description": "The transformation devices used by the Zi-O Riders.",
+    "description": "The transformation devices used by the Zi-O Riders. These can be repaired in an anvil using $(l:zi_o/items/blank_watch)Blank Ridewatches$(/l).",
     "icon": "kamenridercraft:ziku_driver_zi_o",
     "sortnum": 1
 }

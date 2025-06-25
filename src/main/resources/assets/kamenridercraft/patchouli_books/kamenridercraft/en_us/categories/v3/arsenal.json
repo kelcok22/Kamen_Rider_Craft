@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:v3/main",
     "name": "Flaresalamander Sword",
-    "description": "",
+    "description": "This can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:flaresalamander_sword",
     "sortnum": 3
 }

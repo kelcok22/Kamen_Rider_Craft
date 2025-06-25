@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:x/main",
     "name": "Ridol Stick",
-    "description": "",
+    "description": "This can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:ridol_stick",
     "sortnum": 3
 }

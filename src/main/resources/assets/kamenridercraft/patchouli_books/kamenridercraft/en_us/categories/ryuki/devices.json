@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ryuki/main",
     "name": "Ryuki Transformation Devices",
-    "description": "The transformation devices used by the Ryuki Riders.",
+    "description": "The transformation devices used by the Ryuki Riders. These can be repaired in an anvil using $(l:ryuki/items/advent_card)Contract Cards$(/l).",
     "icon": "kamenridercraft:v_buckle_ryuki",
     "sortnum": 1
 }
