@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ryuki/main",
     "name": "Ryuki Arsenal",
-    "description": "Every weapon and tool used by the Ryuki Riders.",
+    "description": "Every weapon and tool used by the Ryuki Riders. These can be repaired in an anvil using $(l:ryuki/items/advent_card)Contract Cards$(/l).",
     "icon": "kamenridercraft:drag_saber",
     "sortnum": 3
 }

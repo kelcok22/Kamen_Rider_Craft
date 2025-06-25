@@ -87,6 +87,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "cafe_counter",
+			"link_recipe": true,
+			"item": "kamenridercraft:cafe_counter",
+			"text": "Found in several City buildings",
+			"future_text": "Found in several $(l:misc/city/city)City$(/l) buildings"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "planks_big_oak_golden_trim",
 			"link_recipe": true,
 			"item": "kamenridercraft:planks_big_oak_golden_trim",

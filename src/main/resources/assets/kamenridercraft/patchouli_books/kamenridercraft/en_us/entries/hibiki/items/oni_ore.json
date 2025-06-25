@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used as the base item for most Hibiki items"
+			"text": "Appears in:$(li)Kamen Rider Hibiki (2005, TV show)$(br2)Used as the base item and repair material for most Hibiki items"
 		},
 		{
 			"type": "patchouli:spotlight",

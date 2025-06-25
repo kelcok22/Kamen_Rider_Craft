@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used as the base item for most Ex-Aid items$(br2)Used on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l) to obtain Rider Gashats$(br2)Used on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l) to obtain Legend Rider Gashats"
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Used as the base item and repair material for most Ex-Aid items$(br2)Used on the $(l:misc/blocks/machine_blocks#gamecreator)Game Creator$(/l) to obtain Rider Gashats$(br2)Used on the $(l:misc/blocks/machine_blocks#ganbarizing_machine)Ganbarizing Machine$(/l) to obtain Legend Rider Gashats"
 		},
 		{
 			"type": "patchouli:crafting",

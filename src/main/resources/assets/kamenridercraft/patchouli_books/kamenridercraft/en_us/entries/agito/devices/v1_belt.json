@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/v-1)V-1"
+			"text": "Appears in:$(li)Kamen Rider Agito (2001, TV show)$(br2)Used alongside the $(l:agito/devices/armor)Agito armor$(/l) to transform into $(l:agito/riders/v-1)V-1$(/l)$(br2)Can be repaired in an anvil using $(l:agito/items/g3core)Blank G-System Chips$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

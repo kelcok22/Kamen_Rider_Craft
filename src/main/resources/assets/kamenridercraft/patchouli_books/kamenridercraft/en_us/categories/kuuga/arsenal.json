@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:kuuga/main",
     "name": "Kuuga Arsenal",
-    "description": "Every weapon and tool used by Kamen Rider Kuuga.",
+    "description": "Every weapon and tool used by Kamen Rider Kuuga. These can be repaired in an anvil using $(l:kuuga/items/kuuga_growing)Kuuga Growing Amadams$(/l).",
     "icon": "kamenridercraft:dragon_rod",
     "sortnum": 3
 }

@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Used to craft a wide range of items in the mod"
+			"text": "Used to craft a wide range of items in the mod$(br2)Used as the repair material for Showa and misc. series items"
 		},
 		{
 			"type": "patchouli:crafting",

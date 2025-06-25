@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:shin/main",
     "name": "Shin Transformation Devices",
-    "description": "The transformation devices used by Shin.",
+    "description": "The transformation devices used by Kamen Rider Shin. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:grasshopper_dna",
     "sortnum": 1
 }

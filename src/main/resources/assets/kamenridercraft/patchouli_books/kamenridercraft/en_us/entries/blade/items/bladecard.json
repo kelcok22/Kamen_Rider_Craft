@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used as the base item for most Blade items"
+			"text": "Appears in:$(li)Kamen Rider Blade (2004, TV show)$(br2)Used as the base item and repair material for most Blade items"
 		},
 		{
 			"type": "patchouli:spotlight",

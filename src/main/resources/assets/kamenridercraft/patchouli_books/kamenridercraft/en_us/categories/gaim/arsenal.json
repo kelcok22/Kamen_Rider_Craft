@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:gaim/main",
     "name": "Gaim Arsenal",
-    "description": "Every weapon and tool used by the Gaim Riders.",
+    "description": "Every weapon and tool used by the Gaim Riders. These can be repaired in an anvil using $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l).",
     "icon": "kamenridercraft:musou_saber",
     "sortnum": 3
 }

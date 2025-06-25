@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:x/main",
     "name": "X Transformation Devices",
-    "description": "The transformation devices used by the X Riders.",
+    "description": "The transformation devices used by the X Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:ridol",
     "sortnum": 1
 }

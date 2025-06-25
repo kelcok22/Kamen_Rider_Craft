@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:zero_one/main",
     "name": "Zero-One Transformation Devices",
-    "description": "The transformation devices used by the Zero-One Riders.",
+    "description": "The transformation devices used by the Zero-One Riders. These can be repaired in an anvil using $(l:zero_one/items/hiden_metal)Hiden Metal$(/l).",
     "icon": "kamenridercraft:hiden_zero_one_driver",
     "sortnum": 1
 }

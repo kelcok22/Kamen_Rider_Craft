@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:super-1/main",
     "name": "Super-1 Transformation Devices",
-    "description": "The transformation devices used by Super-1.",
+    "description": "The transformation devices used by the Super-1 Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:cyclode",
     "sortnum": 1
 }
