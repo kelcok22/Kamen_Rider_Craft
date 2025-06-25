@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:ex_aid/main",
     "name": "Ex-Aid Transformation Devices",
-    "description": "The transformation devices used by the Ex-Aid Riders.",
+    "description": "The transformation devices used by the Ex-Aid Riders. These can be repaired in an anvil using $(l:ex_aid/items/blank_gashat)Unfinished Gashats$(/l).",
     "icon": "kamenridercraft:gamer_driver_ex_aid",
     "sortnum": 1
 }

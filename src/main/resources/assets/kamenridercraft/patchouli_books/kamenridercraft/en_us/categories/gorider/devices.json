@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:gorider/main",
     "name": "Gorider Transformation Devices",
-    "description": "The transformation devices used by the Goriders.",
+    "description": "The transformation devices used by the Goriders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:typhoon_akarider",
     "sortnum": 1
 }

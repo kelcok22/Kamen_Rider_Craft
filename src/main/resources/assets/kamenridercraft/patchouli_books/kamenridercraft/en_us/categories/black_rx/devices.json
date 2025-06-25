@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:black_rx/main",
     "name": "Black RX Transformation Devices",
-    "description": "The transformation devices used by the Black RX Riders.",
+    "description": "The transformation devices used by the Black RX Riders. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:sun_riser",
     "sortnum": 1
 }

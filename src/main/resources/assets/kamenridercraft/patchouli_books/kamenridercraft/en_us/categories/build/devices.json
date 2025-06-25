@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:build/main",
     "name": "Build Transformation Devices",
-    "description": "The transformation devices used by the Build Riders.",
+    "description": "The transformation devices used by the Build Riders. These can be repaired in an anvil using $(l:build/items/full_bottle)Empty Bottles$(/l).",
     "icon": "kamenridercraft:build_driver",
     "sortnum": 1
 }

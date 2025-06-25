@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:gaim/main",
     "name": "Gaim Transformation Devices",
-    "description": "The transformation devices used by the Gaim Riders.",
+    "description": "The transformation devices used by the Gaim Riders. These can be repaired in an anvil using $(l:gaim/items/himawari_lockseed)Himawari Lockseeds$(/l).",
     "icon": "kamenridercraft:sengoku_driver_gaim",
     "sortnum": 1
 }

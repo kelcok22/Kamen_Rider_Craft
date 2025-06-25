@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:agito/main",
     "name": "Agito Arsenal",
-    "description": "Every weapon and tool used by the Agito Riders.",
+    "description": "Every weapon and tool used by the Agito Riders. These can be repaired in an anvil using $(l:agito/items/agito_of_seed)Seeds of Agito$(/l).",
     "icon": "kamenridercraft:flame_saber",
     "sortnum": 3
 }

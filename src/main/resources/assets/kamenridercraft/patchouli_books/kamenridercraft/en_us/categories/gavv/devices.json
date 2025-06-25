@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:gavv/main",
     "name": "Gavv Transformation Devices",
-    "description": "The transformation devices used by the Gavv Riders.",
+    "description": "The transformation devices used by the Gavv Riders. These can be repaired in an anvil using $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l).",
     "icon": "kamenridercraft:henshin_belt_gavv",
     "sortnum": 1
 }

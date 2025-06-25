@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:w/main",
     "name": "W Arsenal",
-    "description": "Every weapon and tool used by the W Riders.",
+    "description": "Every weapon and tool used by the W Riders. These can be repaired in an anvil using $(l:w/items/gaiamemory)Gaia Memory Shards$(/l).",
     "icon": "kamenridercraft:trigger_magnum",
     "sortnum": 3
 }

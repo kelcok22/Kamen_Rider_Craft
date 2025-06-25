@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:decade/main",
     "name": "Decade Transformation Devices",
-    "description": "The transformation devices used by the Decade Riders.",
+    "description": "The transformation devices used by the Decade Riders. These can be repaired in an anvil using $(l:decade/items/blank_card)Blank Rider Cards$(/l).",
     "icon": "kamenridercraft:decadriver",
     "sortnum": 1
 }

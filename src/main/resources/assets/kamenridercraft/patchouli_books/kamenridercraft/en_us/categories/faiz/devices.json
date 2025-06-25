@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:faiz/main",
     "name": "555 Transformation Devices",
-    "description": "The transformation devices used by the 555 Riders.",
+    "description": "The transformation devices used by the 555 Riders. These can be repaired in an anvil using $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l).",
     "icon": "kamenridercraft:faiz_driver",
     "sortnum": 1
 }

@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:faiz/main",
     "name": "555 Arsenal",
-    "description": "Every weapon and tool used by the 555 Riders.",
+    "description": "Every weapon and tool used by the 555 Riders. These can be repaired in an anvil using $(l:faiz/items/blank_mission_memory)Blank Mission Memories$(/l).",
     "icon": "kamenridercraft:faiz_edge",
     "sortnum": 3
 }

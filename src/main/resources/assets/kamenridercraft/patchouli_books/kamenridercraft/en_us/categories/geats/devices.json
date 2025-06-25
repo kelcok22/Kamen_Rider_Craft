@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:geats/main",
     "name": "Geats Transformation Devices",
-    "description": "The transformation devices used by the Geats Riders.",
+    "description": "The transformation devices used by the Geats Riders. These can be repaired in an anvil using $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l).",
     "icon": "kamenridercraft:desire_driver_geats",
     "sortnum": 1
 }

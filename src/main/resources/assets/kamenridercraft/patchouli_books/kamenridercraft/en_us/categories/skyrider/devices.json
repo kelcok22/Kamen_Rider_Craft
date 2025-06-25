@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:skyrider/main",
     "name": "Skyrider Transformation Devices",
-    "description": "The transformation devices used by Skyrider.",
+    "description": "The transformation devices used by Skyrider. These can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l).",
     "icon": "kamenridercraft:tornado",
     "sortnum": 1
 }

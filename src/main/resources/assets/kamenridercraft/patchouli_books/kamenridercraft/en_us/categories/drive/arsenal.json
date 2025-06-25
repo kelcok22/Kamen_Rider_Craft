@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:drive/main",
     "name": "Drive Arsenal",
-    "description": "Every weapon and tool used by the Drive Riders.",
+    "description": "Every weapon and tool used by the Drive Riders. These can be repaired in an anvil using $(l:drive/items/shift_alloy)Shift Alloy$(/l).",
     "icon": "kamenridercraft:handle_sword",
     "sortnum": 3
 }

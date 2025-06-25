@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Used by Blade's $(l:blade/riders/blade#herculespader)Herculespader$(/l) form"
+			"text": "Appears in:$(li)Card Warrior Kamen Riders (2009, manga/toyline)$(br2)Used by Blade's $(l:blade/riders/blade#herculespader)Herculespader$(/l) form$(br2)Can be repaired in an anvil using $(l:misc/items/rider_circuit)Rider Circuits$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",

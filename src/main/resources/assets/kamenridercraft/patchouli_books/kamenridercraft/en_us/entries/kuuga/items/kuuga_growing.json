@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used as the base item for most Kuuga items$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#growing)Growing Form$(/l)"
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used as the base item and repair material for most Kuuga items$(br2)Used to access Kuuga's $(l:kuuga/riders/kuuga#growing)Growing Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
