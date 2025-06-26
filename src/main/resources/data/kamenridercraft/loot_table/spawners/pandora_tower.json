@@ -49,11 +49,6 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:nanba_walking_stick",
           "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:evol_trigger",
-          "weight": 1
         }
       ],
       "rolls": 1.0
