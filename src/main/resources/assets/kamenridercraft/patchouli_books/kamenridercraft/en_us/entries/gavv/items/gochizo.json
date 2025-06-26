@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "poppingummy_gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Gavv's $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#poppingummy)Poppingummy$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Gavv's $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#poppingummy)Poppingummy Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -45,7 +45,7 @@
 			"type": "patchouli:text",
 			"anchor": "zakuzakuchips_gochizo",
 			"title": "Zakuzakuchips Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#zakuzakuchips)Zakuzakuchips$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#zakuzakuchips)Zakuzakuchips Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -71,7 +71,7 @@
 			"type": "patchouli:text",
 			"anchor": "fuwamallow_gochizo",
 			"title": "Fuwamallow Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#fuwamallow)Fuwamallow$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#fuwamallow)Fuwamallow Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -97,7 +97,7 @@
 			"type": "patchouli:text",
 			"anchor": "chocodan_gochizo",
 			"title": "Chocodan Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocodan)Chocodan Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "chocodon_gochizo",
 			"title": "Chocodon Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#chocodon)Chocodon$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#chocodon)Chocodon Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -123,7 +123,7 @@
 			"type": "patchouli:text",
 			"anchor": "chocold_gochizo",
 			"title": "Chocold Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#chocold)Chocold$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to craft Valen's $(l:gavv/arsenal/valenbuster)Valenbuster$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#chocold)Chocold Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
 			"type": "patchouli:text",
 			"anchor": "gurucan_gochizo",
 			"title": "Gurucan Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#gurucan)Gurucan Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -175,7 +175,7 @@
 			"type": "patchouli:text",
 			"anchor": "partea_gochizo",
 			"title": "Partea Scone Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv: Funny Sweats Tea Party (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#partea_scone)Partea Scone$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv: Funny Sweats Tea Party (2025, stage show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#partea_scone)Partea Scone Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -188,7 +188,7 @@
 			"type": "patchouli:text",
 			"anchor": "bushel_gochizo",
 			"title": "Bushel Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#bushel)Bushel$(/l) form$(br2)Used to access Valen's $(l:gavv/riders/valen#bushel)Bushel$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#bushel)Bushel Form$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#bushel)Bushel Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -199,9 +199,35 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "kungfu_ramen_gochizo",
+			"title": "Kungfu Ramen Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv: The Snacks Gourmet Woo!-mai Wakamen!! (2025, Hyper Battle Video)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#shield_snack)Shield Snack Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kungfu_ramen_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "choco_treasure_gochizo",
+			"title": "Choco Treasure Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv: The Snacks Gourmet Woo!-mai Wakamen!! (2025, Hyper Battle Video)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#choco_t)Choco T Assist$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:choco_treasure_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "caking_gochizo",
 			"title": "Caking Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#caking)Caking$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#caking)Caking Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -214,7 +240,7 @@
 			"type": "patchouli:text",
 			"anchor": "doumaru_gochizo",
 			"title": "Doumaru Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Valen's $(l:gavv/riders/valen#doumaru)Doumaru$(/l) form"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Valen's $(l:gavv/riders/valen#doumaru)Doumaru Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -825,7 +851,7 @@
 			"type": "patchouli:text",
 			"anchor": "tirolchocolate_gochizo_variety",
 			"title": "Tirol Chocolate Gochizo (Variety Pack ver.)",
-			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#tirol)Tirol$(/l) form$(br2)Used to access Valen's $(l:gavv/riders/valen#tirol)Tirol$(/l) form"
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set -Tirol Choco Collaboration Ver- (2025, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#tirol)Tirol Form$(/l)$(br2)Used to access Valen's $(l:gavv/riders/valen#tirol)Tirol Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -942,7 +968,7 @@
 			"type": "patchouli:text",
 			"anchor": "charapaki_gochizo",
 			"title": "Charapaki Gochizo",
-			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocohone)Chocohone$(/l) form"
+			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocohone)Chocohone Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -955,7 +981,7 @@
 			"type": "patchouli:text",
 			"anchor": "charapaki_gochizo_special",
 			"title": "Charapaki Gochizo (Special Ver.)",
-			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocohone_special)Chocohone$(/l) form"
+			"text": "Appears in:$(li)SG Charapaki Gochizo (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#chocohone_special)Chocohone Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1007,7 +1033,7 @@
 			"type": "patchouli:text",
 			"anchor": "boonboomger_gochizo",
 			"title": "Boonboomger Gochizo",
-			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger$(/l) form"
+			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger Form$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
