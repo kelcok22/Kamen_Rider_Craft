@@ -44,6 +44,28 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
+				  "name": "kamenridercraft:pandora_panel_black"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "attacking_player",
+				  "predicate": {
+					  "slots": {
+						  "container.*": {
+							  "items": "kamenridercraft:evol_trigger"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
 				  "name": "kamenridercraft:silver_dragon_full_bottle",
 				  "weight": 1
 			  },
