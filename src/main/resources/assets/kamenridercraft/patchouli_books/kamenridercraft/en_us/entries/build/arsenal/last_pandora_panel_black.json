@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:last_pandora_panel_black",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		}
 	]
 }

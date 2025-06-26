@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evol_trigger",
 			"title": " ",
-			"text": "Obtained as trial loot from $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
+			"text": "Drops from:$(li)$(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		}
 	]
 }

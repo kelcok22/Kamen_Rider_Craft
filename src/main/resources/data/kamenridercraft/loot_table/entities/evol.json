@@ -44,7 +44,7 @@
 		  "entries": [
 			  {
 				  "type": "minecraft:item",
-				  "name": "kamenridercraft:pandora_panel_black"
+				  "name": "kamenridercraft:last_pandora_panel_black"
 			  }
 		  ],
 		  "conditions": [
