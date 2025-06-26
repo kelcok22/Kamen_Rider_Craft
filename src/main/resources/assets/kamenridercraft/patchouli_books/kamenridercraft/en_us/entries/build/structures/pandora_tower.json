@@ -24,7 +24,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Standard loot drops:$(li)1 $(l:build/items/fullbottles#buttobasoul_full_bottle)Buttobasoul Fullbottle$(/l) (7.1%)$(li)1 $(l:build/items/fullbottles#ganbarizing_full_bottle)Ganbarizing Fullbottle$(/l) (7.1%)$(li)2-4 $(l:build/items/full_bottle)Empty Bottles$(/l) (21.4%)$(li)1 $(l:build/items/evolbottles#great_dragon_evol_bottle)Great Dragon Evol Bottle$(/l) (14.3%)$(li)1 $(l:build/items/evolbottles#dragon_evol_bottle)Dragon Evol Bottle$(/l) (14.3%)$(li)1 $(l:build/items/evolbottles#rabbit_evol_bottle)Rabbit Evol Bottle$(/l) (14.3%)$(li)1 $(l:build/arsenal/nanba_walking_stick)Nanba's Walking Stick$(/l) (14.3%)$(li)1 $(l:build/items/evol_trigger)Evol Trigger$(/l) (7.1%)$(br2)Lost Fullbottle drops on next page"
+			"text": "Standard loot drops:$(li)1 $(l:build/items/fullbottles#buttobasoul_full_bottle)Buttobasoul Fullbottle$(/l) (7.7%)$(li)1 $(l:build/items/fullbottles#ganbarizing_full_bottle)Ganbarizing Fullbottle$(/l) (7.7%)$(li)2-4 $(l:build/items/smash_bottle)Smash Bottles$(/l) (23.1%)$(li)1 $(l:build/items/evolbottles#great_dragon_evol_bottle)Great Dragon Evol Bottle$(/l) (15.4%)$(li)1 $(l:build/items/evolbottles#dragon_evol_bottle)Dragon Evol Bottle$(/l) (15.4%)$(li)1 $(l:build/items/evolbottles#rabbit_evol_bottle)Rabbit Evol Bottle$(/l) (15.4%)$(li)1 $(l:build/arsenal/nanba_walking_stick)Nanba's Walking Stick$(/l) (15.4%)$(br2)Lost Fullbottle drops on next page"
 		},
 		{
 			"type": "patchouli:text",
