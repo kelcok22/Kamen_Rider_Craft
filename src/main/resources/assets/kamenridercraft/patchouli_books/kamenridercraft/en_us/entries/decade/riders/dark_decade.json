@@ -707,20 +707,6 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "black_rx_roborider",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_rx_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
-			"scale": -1,
-			"offset": 0.1,
-			"name": "Decade Black RX",
-			"text": "Accessed with the $(l:decade/items/kamenride_cards#black_rx_card)KamenRide Black RX$(/l) card"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Kamen Rider Dark Decade",
-			"text": "Appears in:$(li)CSM Rider Card Set -Decade- (2022, toyline)$(br2)Transforms with the $(l:decade/devices/dark_decadriver)Dark Decadriver$(/l)$(br2)Status Effects:$(li)Punch II$(li)Haste$(li)Jump Boost II$(li)Strength V (with empty hand)$(li)Strength II (with weapon)"
-		},
-		{
-			"type": "patchouli:entity",
-			"anchor": "black_rx_roborider",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_rx_roborider_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
