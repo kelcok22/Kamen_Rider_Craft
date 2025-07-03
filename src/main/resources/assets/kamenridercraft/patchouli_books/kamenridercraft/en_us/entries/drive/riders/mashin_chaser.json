@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "super_mashin_chaser",
+			"anchor": "super",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rhino_super_viral_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
