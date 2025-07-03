@@ -56,8 +56,12 @@ public class Modded_item_core {
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MAYO= ITEMS.register("mayo",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(Effect_core.LOW_GRAVITY, 500, 2), 1.0F).build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
                     .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));
+
+    public static final DeferredItem<Item> MAYO_DONUT = ITEMS.register("mayo_donut",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
+                    .has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  CANDY_WRAPPER = ITEMS.register("candy_wrapper",

@@ -219,11 +219,23 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> MARBLEBREACOOKIE_GOCHIZO = ITEMS.register("marble_breacookie_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_marblebreacookie","bitter_gavv","henshin_belt_bitter_gavv_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 
 	public static final DeferredItem<Item> VROCANSPICY_GOCHIZO = ITEMS.register("vrocanspicy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","henshin_belt_bitter_gavv_belt")
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
+					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+
 
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cookiekie","do_not_work","valenbuckle_belt")
@@ -476,6 +488,10 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> BAKEBUCKLE = ITEMS.register("bakebuckle",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"bake",BREACOOKIE_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.Override_belt_text("bakebuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> HENSHIN_BELT_CARIES_GAVV = ITEMS.register("henshin_belt_caries_gavv",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"caries",TERROR_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()).has_basic_model());
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
