@@ -342,6 +342,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "marble_breacookie_gochizo",
+			"title": "Marble Breacookie Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Bitter Gavv's $(l:gavv/riders/bitter_gavv#marble_breacookie)Marble Breacookie Form$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:marble_breacookie_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "vrocanspicy_gochizo",
 			"title": "Vrocan Spicy Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
@@ -352,6 +365,19 @@
 			"item": "kamenridercraft:vrocanspicy_gochizo",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:gavv/mobs/bitter_gavv)Kamen Rider Bitter Gavv$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "terror_gochizo",
+			"title": "Terror Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:terror_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		},
 		{
 			"type": "patchouli:text",

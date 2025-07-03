@@ -2,7 +2,7 @@
 	"name": "Candy Wrapper",
 	"icon": "kamenridercraft:candy_wrapper",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",
