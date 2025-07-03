@@ -1646,6 +1646,8 @@
 "item.kamenridercraft.base_bike": "Base Bike",
 "item.kamenridercraft.shocker_emblem": "Shocker Emblem",
 "item.kamenridercraft.donut": "Donut",
+  "item.kamenridercraft.mayo": "Mayo",
+  "item.kamenridercraft.mayo_donut": "Mayo Donut",
   "item.kamenridercraft.pudding": "Pudding",
 "item.kamenridercraft.heat_heaven": "Heat Heaven",
 "item.kamenridercraft.icepop1": "Ice Pop",
@@ -4163,7 +4165,7 @@
   "kamenridercraft:garuda_ring_color_ver.form": "Form: Flame Style Garuda",
   "kamenridercraft:kraken_ring_color_ver.form": "Form: Water Style Kraken",
 
-  "item.kamenridercraft.mayo": "Mayo",
+
 
   "item.kamenridercraft.gaim_logo": "Gaim Logo",
   "item.kamenridercraft.gaimhead": "Gaim Helmet",
