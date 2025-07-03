@@ -2,7 +2,7 @@
 	"name": "Chocolate Bar",
 	"icon": "kamenridercraft:chocolate_bar",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

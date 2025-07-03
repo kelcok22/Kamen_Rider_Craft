@@ -2,7 +2,7 @@
 	"name": "Marshmallow",
 	"icon": "kamenridercraft:marshmallow",
 	"category": "kamenridercraft:misc/items",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",

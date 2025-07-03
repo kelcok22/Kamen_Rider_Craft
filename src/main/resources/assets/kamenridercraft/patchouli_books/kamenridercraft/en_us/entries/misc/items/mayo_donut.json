@@ -1,0 +1,16 @@
+{
+	"name": "Mayo Donut",
+	"icon": "kamenridercraft:mayo_donut",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Restores 3 hunger points and gives Slow Falling III when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/mayo_donut"
+		}
+	]
+}
