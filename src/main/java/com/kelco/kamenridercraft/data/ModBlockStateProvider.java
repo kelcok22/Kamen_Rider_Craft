@@ -43,6 +43,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlock(Rider_Blocks.KURUMA_BRICK.get());
         simpleBlock(Rider_Blocks.YELLOW_WALLPLATE.get());
+        simpleBlock(Rider_Blocks.CYAN_WALLPLATE.get());
+        simpleBlock(Rider_Blocks.BLUE_WALLPLATE.get());
+        simpleBlock(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get());
         simpleBlock(Rider_Blocks.CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.LIME_CHECKERED_TILE.get());
@@ -57,6 +60,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(Rider_Blocks.LIGHT_GREEN_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.LIGHT_GREEN_WALLPLATE.get()));
         stairsBlock(Rider_Blocks.WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.WALLPLATE.get()));
         stairsBlock(Rider_Blocks.WHITE_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.WHITE_WALLPLATE.get()));
+        stairsBlock(Rider_Blocks.CYAN_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.CYAN_WALLPLATE.get()));
+        stairsBlock(Rider_Blocks.BLUE_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.BLUE_WALLPLATE.get()));
+        stairsBlock(Rider_Blocks.LIGHT_BLUE_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get()));
 
         slabBlock(Rider_Blocks.HELHEIM_SLAB.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         slabBlock(Rider_Blocks.WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.WALLPLATE.get()), blockTexture(Rider_Blocks.WALLPLATE.get()));
@@ -67,6 +73,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(Rider_Blocks.GREY_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.GREY_WALLPLATE.get()), blockTexture(Rider_Blocks.GREY_WALLPLATE.get()));
         slabBlock(Rider_Blocks.WHITE_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.WHITE_WALLPLATE.get()), blockTexture(Rider_Blocks.WHITE_WALLPLATE.get()));
         slabBlock(Rider_Blocks.BLACK_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.BLACK_WALLPLATE.get()), blockTexture(Rider_Blocks.BLACK_WALLPLATE.get()));
+        slabBlock(Rider_Blocks.CYAN_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.CYAN_WALLPLATE.get()), blockTexture(Rider_Blocks.CYAN_WALLPLATE.get()));
+        slabBlock(Rider_Blocks.BLUE_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.BLUE_WALLPLATE.get()), blockTexture(Rider_Blocks.BLUE_WALLPLATE.get()));
+        slabBlock(Rider_Blocks.LIGHT_BLUE_WALLPLATE_SLAB.get(), blockTexture(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get()), blockTexture(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get()));
 
         buttonBlock(Rider_Blocks.HELHEIM_BUTTON.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         pressurePlateBlock(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
@@ -87,6 +96,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         wallBlock(Rider_Blocks.YELLOW_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
         wallBlock(Rider_Blocks.WHITE_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.WHITE_WALLPLATE.get()));
+        wallBlock(Rider_Blocks.CYAN_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.CYAN_WALLPLATE.get()));
+        wallBlock(Rider_Blocks.BLUE_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.BLUE_WALLPLATE.get()));
+        wallBlock(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL.get(), blockTexture(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get()));
 
 
         blockItem(Rider_Blocks.KURUMA_BRICK);
@@ -124,6 +136,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.WALLPLATE_SLAB);
         blockItem(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
         blockItem(Rider_Blocks.WHITE_WALLPLATE_SLAB);
+        blockItem(Rider_Blocks.CYAN_WALLPLATE);
+        blockItem(Rider_Blocks.CYAN_WALLPLATE_STAIRS);
+        blockItem(Rider_Blocks.CYAN_WALLPLATE_SLAB);
+        blockItem(Rider_Blocks.BLUE_WALLPLATE);
+        blockItem(Rider_Blocks.BLUE_WALLPLATE_STAIRS);
+        blockItem(Rider_Blocks.BLUE_WALLPLATE_SLAB);
+        blockItem(Rider_Blocks.LIGHT_BLUE_WALLPLATE);
+        blockItem(Rider_Blocks.LIGHT_BLUE_WALLPLATE_STAIRS);
+        blockItem(Rider_Blocks.LIGHT_BLUE_WALLPLATE_SLAB);
 
         blockItem(Rider_Blocks.HELHEIM_FENCE_GATE);
         blockItem(Rider_Blocks.HELHEIM_SLAB);
