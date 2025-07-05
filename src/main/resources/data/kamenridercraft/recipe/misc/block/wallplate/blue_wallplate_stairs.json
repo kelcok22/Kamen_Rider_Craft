@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wallplate",
+  "key": {
+    "#": {
+      "item": "kamenridercraft:blue_wallplate"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kamenridercraft:blue_wallplate_stairs"
+  }
+}

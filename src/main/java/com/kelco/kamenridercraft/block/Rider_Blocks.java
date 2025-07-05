@@ -882,6 +882,54 @@ public class Rider_Blocks {
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
 					.strength(2f)));
 
+	public static final DeferredBlock<Block> CYAN_WALLPLATE = registerBlock("cyan_wallplate",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<StairBlock> CYAN_WALLPLATE_STAIRS = registerBlock("cyan_wallplate_stairs",
+			() -> new StairBlock(Rider_Blocks.CYAN_WALLPLATE.get().defaultBlockState(),
+					BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
+
+	public static final DeferredBlock<SlabBlock> CYAN_WALLPLATE_SLAB = registerBlock("cyan_wallplate_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
+					.strength(2f)));
+
+	public static final DeferredBlock<WallBlock> CYAN_WALLPLATE_WALL = registerBlock("cyan_wallplate_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
+
+	public static final DeferredBlock<Block> LIGHT_BLUE_WALLPLATE = registerBlock("light_blue_wallplate",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<StairBlock> LIGHT_BLUE_WALLPLATE_STAIRS = registerBlock("light_blue_wallplate_stairs",
+			() -> new StairBlock(Rider_Blocks.LIGHT_BLUE_WALLPLATE.get().defaultBlockState(),
+					BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
+
+	public static final DeferredBlock<SlabBlock> LIGHT_BLUE_WALLPLATE_SLAB = registerBlock("light_blue_wallplate_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
+					.strength(2f)));
+
+	public static final DeferredBlock<WallBlock> LIGHT_BLUE_WALLPLATE_WALL = registerBlock("light_blue_wallplate_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
+
+	public static final DeferredBlock<Block> BLUE_WALLPLATE = registerBlock("blue_wallplate",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<StairBlock> BLUE_WALLPLATE_STAIRS = registerBlock("blue_wallplate_stairs",
+			() -> new StairBlock(Rider_Blocks.BLUE_WALLPLATE.get().defaultBlockState(),
+					BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
+
+	public static final DeferredBlock<SlabBlock> BLUE_WALLPLATE_SLAB = registerBlock("blue_wallplate_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
+					.strength(2f)));
+
+	public static final DeferredBlock<WallBlock> BLUE_WALLPLATE_WALL = registerBlock("blue_wallplate_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
+
 	public static final DeferredBlock<Block> WALLPLATE_GRATE = registerBlock("wallplate_grate_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
