@@ -581,6 +581,8 @@ public class RiderTabs {
             event.accept(Rider_Blocks.DRIVE_PIT_LOGO);
             event.accept(Rider_Blocks.DRIVE_PIT_LADDER);
 
+            event.accept(Rider_Blocks.WHITEBOARD);
+
             event.accept(Rider_Blocks.WALLPLATE_GRATE);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);
