@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "kamenridercraft:item/giga_armor"
+        "layer0": "kamenridercraft:item/shield_snack_shield"
     },
     "display": {
 "ground": {
@@ -41,9 +41,9 @@
     "overrides": [
         {
             "predicate": {
-                 "kamenridercraft:blocking": 1
+                "blocking": 1
             },
-            "model": "kamenridercraft:item/giga_armor_blocking"
+            "model": "kamenridercraft:item/shield_snack_shield_blocking"
         }
     ]
 }

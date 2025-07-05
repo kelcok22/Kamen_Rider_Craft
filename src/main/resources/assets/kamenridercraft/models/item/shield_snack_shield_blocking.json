@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "kamenridercraft:item/plosion_rage_shield"
+        "layer0": "kamenridercraft:item/shield_snack_shield"
     },
     "display": {
 "ground": {

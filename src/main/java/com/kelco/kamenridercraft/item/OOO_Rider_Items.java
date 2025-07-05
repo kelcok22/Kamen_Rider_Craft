@@ -571,7 +571,7 @@ public class OOO_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","oooooo","oooooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false))
-					.ChangeModel("oooooo.geo.json","oooooo.animation.json").ChangeBeltModel("geo/ooo_belt.geo.json").AddToList(RiderTabs.OOO_TAB_ITEM));
+					.ChangeModel("oooooo.geo.json","oooooo.animation.json").ChangeBeltModel("geo/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 					() -> new RiderFormChangeItem(new Item.Properties(),0,"","birth","birth_driver_belt",

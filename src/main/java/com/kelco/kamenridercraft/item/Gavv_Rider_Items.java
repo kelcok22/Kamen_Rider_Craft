@@ -154,13 +154,13 @@ public class Gavv_Rider_Items {
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shieldsnack","gavv","henshin_belt_gavv_belt_shieldsnack",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-					.AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHOCO_TREASURE_GOCHIZO = ITEMS.register("choco_treasure_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shieldsnack","gavv","henshin_belt_gavv_belt_choco_treasure",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-					.addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
@@ -231,10 +231,10 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TERROR_GOCHIZO = ITEMS.register("terror_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_caries_gavv_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","caries","henshin_belt_bitter_gavv_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-					.AddToList(RiderTabs.GAVV_TAB_ITEM).has_basic_model());
+					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> COOKIEKIE_GOCHIZO = ITEMS.register("cookiekie_gochizo",
@@ -491,7 +491,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> HENSHIN_BELT_CARIES_GAVV = ITEMS.register("henshin_belt_caries_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"caries",TERROR_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
-					.AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()).has_basic_model());
+					.AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -542,6 +542,8 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> WHIPPED_ROD = ITEMS.register("whipped_rod",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
+	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
