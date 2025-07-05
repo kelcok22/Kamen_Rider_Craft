@@ -7450,6 +7450,8 @@
 "item.kamenridercraft.vrastumgear_valen": "Vrastumgear",
 "kamenridercraft.name.bake": "Rider: Kamen Rider Bake",
   "item.kamenridercraft.bakebuckle": "Bakebuckle",
+  "item.kamenridercraft.henshin_belt_caries_gavv": "Henshin Belt Caries Gavv",
+  "kamenridercraft.name.caries": "Rider: Kamen Rider Caries",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.prototype_cup_gochizo": "Prototype Cup Gochizo",
@@ -7541,6 +7543,8 @@
 "kamenridercraft:umaibo_gochizo.form": "Form: Shot Snack Form",
 "kamenridercraft:partea_gochizo.form": "Form: Partea Scone Form",
 
+  "item.kamenridercraft.terror_gochizo": "Terror Gochizo",
+
   "item.kamenridercraft.hichew_gochizo": "Hi-Chew Gummy Gochizo",
   "item.kamenridercraft.ottotto_gochizo": "Ottotto Gochizo",
   "item.kamenridercraft.happyturn_gochizo": "Happyturn Gochizo",
@@ -7595,6 +7599,8 @@
   "item.kamenridercraft.whipped_rod": "Whipped Rod",
   "item.kamenridercraft.xmax_gavv": "X-Max",
   "item.kamenridercraft.xmax_valen": "X-Max",
+
+  "item.kamenridercraft.shield_snack_shield": "Shield Snack Shield",
 
   "item.kamenridercraft.gochizo_holder": "Gochizo Holder",
 
