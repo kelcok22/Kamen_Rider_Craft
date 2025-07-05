@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "kamenridercraft:block/cyan_wallplate"
+  }
+}

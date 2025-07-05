@@ -44,6 +44,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCE_GATES).add(Rider_Blocks.HELHEIM_FENCE_GATE.get());
 
         tag(BlockTags.WALLS).add(Rider_Blocks.YELLOW_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(Rider_Blocks.CYAN_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(Rider_Blocks.BLUE_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL.get());
 
     }
 }
