@@ -226,6 +226,9 @@ public class Rider_Blocks {
 			() -> new FullbottleSolidifier(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
+	public static final DeferredBlock<WhiteboardBlock> WHITEBOARD = registerBlock("whiteboard",
+			() -> new WhiteboardBlock(BlockBehaviour.Properties.of().noOcclusion().lightLevel((p_152632_) -> {
+				return 2;})));
 
 	public static final DeferredBlock<Block> COUNTER_95DO = registerBlock("counter_95do",
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
