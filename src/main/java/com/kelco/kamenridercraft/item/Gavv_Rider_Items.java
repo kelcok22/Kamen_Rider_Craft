@@ -546,5 +546,8 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> SHIELD_SNACK_CHOCO_SHIELD = ITEMS.register("shield_snack_shield_choco",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

@@ -261,6 +261,10 @@ public class Miscellaneous_Rider_Items {
 					() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
 							.SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
+	public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
+			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(Effect_core.NOTE, 500, 0), 1.0F).build()))
+					.SetItemAnimation(UseAnim.DRINK).has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
 			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).AddToList(RiderTabs.Misc_TAB_ITEM));
