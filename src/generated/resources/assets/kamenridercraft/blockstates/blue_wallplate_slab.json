@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kamenridercraft:block/blue_wallplate_slab"
+    },
+    "type=double": {
+      "model": "kamenridercraft:block/blue_wallplate"
+    },
+    "type=top": {
+      "model": "kamenridercraft:block/blue_wallplate_slab_top"
+    }
+  }
+}

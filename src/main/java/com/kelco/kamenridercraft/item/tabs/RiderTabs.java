@@ -602,6 +602,15 @@ public class RiderTabs {
             event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_SLAB);
             event.accept(Rider_Blocks.GREEN_WALLPLATE_STAIRS);
             event.accept(Rider_Blocks.GREEN_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.CYAN_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.CYAN_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.CYAN_WALLPLATE_WALL);
+            event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.LIGHT_BLUE_WALLPLATE_WALL);
+            event.accept(Rider_Blocks.BLUE_WALLPLATE_STAIRS);
+            event.accept(Rider_Blocks.BLUE_WALLPLATE_SLAB);
+            event.accept(Rider_Blocks.BLUE_WALLPLATE_WALL);
             event.accept(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS);
             event.accept(Rider_Blocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
 

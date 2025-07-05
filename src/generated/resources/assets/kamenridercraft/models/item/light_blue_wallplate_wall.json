@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "kamenridercraft:block/light_blue_wallplate"
+  }
+}

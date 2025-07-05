@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "kamenridercraft:block/light_blue_wallplate",
+    "side": "kamenridercraft:block/light_blue_wallplate",
+    "top": "kamenridercraft:block/light_blue_wallplate"
+  }
+}
