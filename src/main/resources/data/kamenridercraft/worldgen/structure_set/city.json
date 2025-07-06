@@ -19,6 +19,10 @@
 	  {
 		  "structure": "kamenridercraft:touto",
 		  "weight": 1
+	  },
+	  {
+		  "structure": "kamenridercraft:seito_city",
+		  "weight": 2
 	  }
   ],
   "placement": {
