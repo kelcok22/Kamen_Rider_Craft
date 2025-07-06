@@ -194,7 +194,7 @@ public class RiderTabs {
                     .title(Component.translatable("tab.kamenridercraft.gavv_items")).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ZeztzTab = CREATIVE_MODE_TABS.register("krc_470_zeztz_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(Miscellaneous_Rider_Items.ZEZTZ_HELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+            CreativeModeTab.builder().icon(() -> new ItemStack(Zeztz_Rider_Items.ZEZTZHELMET.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.zeztz_items")).build());
 
 

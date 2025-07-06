@@ -151,6 +151,7 @@ public class KamenRiderCraftCore
         Geats_Rider_Items.register(modEventBus);
         Gotchard_Rider_Items.register(modEventBus);
         Gavv_Rider_Items.register(modEventBus);
+        Zeztz_Rider_Items.register(modEventBus);
         Miscellaneous_Rider_Items.register(modEventBus);
         Rider_Blocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
