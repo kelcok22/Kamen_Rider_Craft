@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-06T22:26:23.2210586	Item Models: kamenridercraft
+// 1.21.1	2025-07-07T15:18:40.3782316	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -184,6 +184,7 @@ a07acae377b6df0de55a2064bcc6ffcd24bb6c3a assets/kamenridercraft/models/item/helh
 85d7bf7624a9d9a3682635a77771f3c1ce8a554d assets/kamenridercraft/models/item/hibiki_ride_chemy_card.json
 455ecf868613e5ca2ef1b19650abc8fede7d0d84 assets/kamenridercraft/models/item/hichew_gochizo.json
 70d6c79243e4068dd15cbb49476aece8d2dd9f44 assets/kamenridercraft/models/item/hotcaken_gochizo.json
+0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
 8b5d75860f71750d3905a3d57c74a2b704970ef2 assets/kamenridercraft/models/item/inphoenix_ride_chemy_card.json
 938ca676afbf13a42dcf6a44e7202d7838cab86e assets/kamenridercraft/models/item/inphoenix_ride_chemy_card_televikun.json
 e72208f2f83c837b0292277d7d4a845d0c834b56 assets/kamenridercraft/models/item/jaaku_dragon_wonder_ride_book_calibur.json
@@ -381,5 +382,7 @@ b48590b84c67fd15e919d7a10d34f7e67e6db147 assets/kamenridercraft/models/item/yoac
 a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero_one_ride_chemy_card.json
 23ed1a4a44583566ec5c1081af648359e8d030f5 assets/kamenridercraft/models/item/zeztz_driver.json
 59d6af98d1118a96e4f72f598f60281b358b8ea9 assets/kamenridercraft/models/item/zeztz_head.json
+c1b0fb4c4bf04054f4fd98eb574a72965b646b0e assets/kamenridercraft/models/item/zeztz_legs.json
+fb4e07085e463b3946ec6a837dbc46e42c30588d assets/kamenridercraft/models/item/zeztz_troso.json
 3870f1b69438ca4d863bcd8ad669b72c0d766edd assets/kamenridercraft/models/item/zi_o_ride_chemy_card.json
 17fb57fab3a8b21904f87a0e988cc54ba138d08a assets/kamenridercraft/models/item/zukyumpire_ride_chemy_card.json
