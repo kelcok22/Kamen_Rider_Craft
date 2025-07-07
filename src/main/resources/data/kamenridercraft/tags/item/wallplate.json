@@ -2,11 +2,14 @@
   "values": [
 	"kamenridercraft:wallplate",
 	"kamenridercraft:white_wallplate",
-	  "kamenridercraft:grey_wallplate",
+	"kamenridercraft:grey_wallplate",
 	"kamenridercraft:black_wallplate",
-	  "kamenridercraft:red_wallplate",
-	  "kamenridercraft:yellow_wallplate",
-	  "kamenridercraft:green_wallplate",
-	  "kamenridercraft:light_green_wallplate"
+	"kamenridercraft:red_wallplate",
+	"kamenridercraft:yellow_wallplate",
+	"kamenridercraft:green_wallplate",
+	"kamenridercraft:light_green_wallplate",
+	"kamenridercraft:cyan_wallplate",
+	"kamenridercraft:blue_wallplate",
+	"kamenridercraft:light_blue_wallplate"
   ]
 }

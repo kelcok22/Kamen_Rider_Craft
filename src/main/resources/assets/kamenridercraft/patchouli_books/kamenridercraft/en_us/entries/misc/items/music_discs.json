@@ -46,6 +46,17 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "set_up_kamen_rider_x_music_disc",
+			"text": "Song:$(li)HosephHoestar - Set Up! Kamen Rider X$(br2)Based on:$(li)Ichiro Mizuki - Set Up! Kamen Rider X$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider X (1974, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:set_up_kamen_rider_x_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "moero_kamen_rider_music_disc",
 			"text": "Song:$(li)HosephHoestar - Moero! Kamen Rider$(br2)Based on:$(li)Ichiro Mizuki & Koorogi '73 - Moero! Kamen Rider$(br)Type:$(li)Opening theme$(br)Appears in:$(li)The New Kamen Rider (1979, TV show)"
 		},
@@ -53,6 +64,17 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:moero_kamen_rider_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamen_rider_super_1_music_disc",
+			"text": "Song:$(li)HosephHoestar - Kamen Rider Super-1$(br2)Based on:$(li)Shunsuke Takasugi & Koorogi '73 - Kamen Rider Super-1$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Super-1 (1980, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamen_rider_super_1_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
 		{
@@ -178,6 +200,17 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "break_the_chain_music_disc",
+			"text": "Song:$(li)HosephHoestar - Break the Chain$(br2)Based on:$(li)Tourbillon - Break the Chain$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Kiva (2008, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:break_the_chain_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "journey_through_the_decade_music_disc",
 			"text": "Song:$(li)HosephHoestar - Journey Through the Decade$(br2)Based on:$(li)Gackt - Journey Through the Decade$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Decade (2009, TV show)"
 		},
@@ -253,6 +286,17 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "warera_omou_yue_ni_warera_ari_music_disc",
+			"text": "Song:$(li)HosephHoestar - Warera Omou, Yue Ni Warera Ari$(br2)Based on:$(li)Kishidan - Warera Omou, Yue Ni Warera Ari$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Ghost (2015, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:warera_omou_yue_ni_warera_ari_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "excite_music_disc",
 			"text": "Song:$(li)HosephHoestar - EXCITE$(br2)Based on:$(li)Daichi Miura - EXCITE$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)"
 		},
@@ -304,6 +348,28 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:almighty_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "livedevil_music_disc",
+			"text": "Song:$(li)HosephHoestar - liveDevil$(br2)Based on:$(li)Da-iCE ft. Subaru Kimura - liveDevil$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:livedevil_music_disc",
+			"text": "Disc is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "george_karizakis_rider_system_music_disc",
+			"text": "Song:$(li)HosephHoestar - George Karizaki's Rider System$(br2)Based on:$(li)Noritaka Hamao - George Karizaki's Rider System$(br)Type:$(li)Ending theme$(br)Appears in:$(li)Kamen Rider Juuga VS Kamen Rider Orteca (2023, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:george_karizakis_rider_system_music_disc",
 			"text": "Disc is currently unobtainable"
 		},
 		{

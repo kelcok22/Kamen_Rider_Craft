@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zeztz/main",
+    "name": "Zeztz Rider Items",
+    "description": "All Zeztz-related items that are neither an armor piece nor part of an arsenal.",
+    "icon": "kamenridercraft:impact_capsem",
+    "sortnum": 2
+}

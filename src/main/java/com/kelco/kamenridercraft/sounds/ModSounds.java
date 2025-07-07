@@ -1,6 +1,9 @@
 package com.kelco.kamenridercraft.sounds;
 
+import java.util.function.Supplier;
+
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -8,10 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.JukeboxSong;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.common.util.DeferredSoundType;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
@@ -23,11 +23,17 @@ public class ModSounds {
     public static final Supplier<SoundEvent> TATAKAE_KAMEN_RIDER_V3= registerSoundEvent("tatakae_kamen_rider_v3");
     public static final ResourceKey<JukeboxSong> TATAKAE_KAMEN_RIDER_V3_KEY = createSong("tatakae_kamen_rider_v3");
 
+    public static final Supplier<SoundEvent> SET_UP_KAMEN_RIDER_X= registerSoundEvent("set_up_kamen_rider_x");
+    public static final ResourceKey<JukeboxSong> SET_UP_KAMEN_RIDER_X_KEY = createSong("set_up_kamen_rider_x");
+
     public static final Supplier<SoundEvent> AMAZON_RIDER_KOKO_NI_ARI= registerSoundEvent("amazon_rider_koko_ni_ari");
     public static final ResourceKey<JukeboxSong> AMAZON_RIDER_KOKO_NI_ARI_KEY = createSong("amazon_rider_koko_ni_ari");
 
     public static final Supplier<SoundEvent> MOERO_KAMEN_RIDER= registerSoundEvent("moero_kamen_rider");
     public static final ResourceKey<JukeboxSong> MOERO_KAMEN_RIDER_KEY = createSong("moero_kamen_rider");
+
+    public static final Supplier<SoundEvent> KAMEN_RIDER_SUPER_1= registerSoundEvent("kamen_rider_super_1");
+    public static final ResourceKey<JukeboxSong> KAMEN_RIDER_SUPER_1_KEY = createSong("kamen_rider_super_1");
 
     public static final Supplier<SoundEvent> DRAGON_ROAD= registerSoundEvent("dragon_road");
     public static final ResourceKey<JukeboxSong> DRAGON_ROAD_KEY = createSong("dragon_road");
@@ -62,6 +68,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> CLIMAX_JUMP= registerSoundEvent("climax_jump");
     public static final ResourceKey<JukeboxSong> CLIMAX_JUMP_KEY = createSong("climax_jump");
 
+    public static final Supplier<SoundEvent> BREAK_THE_CHAIN= registerSoundEvent("break_the_chain");
+    public static final ResourceKey<JukeboxSong> BREAK_THE_CHAIN_KEY = createSong("break_the_chain");
+
     public static final Supplier<SoundEvent> JOURNEY_THROUGH_THE_DECADE= registerSoundEvent("journey_through_the_decade");
     public static final ResourceKey<JukeboxSong> JOURNEY_THROUGH_THE_DECADE_KEY = createSong("journey_through_the_decade");
 
@@ -83,6 +92,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> SURPRISE_DRIVE= registerSoundEvent("surprise_drive");
     public static final ResourceKey<JukeboxSong> SURPRISE_DRIVE_KEY = createSong("surprise_drive");
 
+    public static final Supplier<SoundEvent> WARERA_OMOU_YUE_NI_WARERA_ARI= registerSoundEvent("warera_omou_yue_ni_warera_ari");
+    public static final ResourceKey<JukeboxSong> WARERA_OMOU_YUE_NI_WARERA_ARI_KEY = createSong("warera_omou_yue_ni_warera_ari");
+
     public static final Supplier<SoundEvent> EXCITE= registerSoundEvent("excite");
     public static final ResourceKey<JukeboxSong> EXCITE_KEY = createSong("excite");
 
@@ -97,6 +109,12 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> ALMIGHTY= registerSoundEvent("almighty");
     public static final ResourceKey<JukeboxSong> ALMIGHTY_KEY = createSong("almighty");
+
+    public static final Supplier<SoundEvent> LIVEDEVIL= registerSoundEvent("livedevil");
+    public static final ResourceKey<JukeboxSong> LIVEDEVIL_KEY = createSong("livedevil");
+
+    public static final Supplier<SoundEvent> GEORGE_KARIZAKIS_RIDER_SYSTEM= registerSoundEvent("george_karizakis_rider_system");
+    public static final ResourceKey<JukeboxSong> GEORGE_KARIZAKIS_RIDER_SYSTEM_KEY = createSong("george_karizakis_rider_system");
 
     public static final Supplier<SoundEvent> TRUST_LAST= registerSoundEvent("trust_last");
     public static final ResourceKey<JukeboxSong> TRUST_LAST_KEY = createSong("trust_last");

@@ -17,7 +17,7 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/demushu_helheim_city_2.png"
 			],
 			"title": " ",
-			"text": "$(li)1 $(l:gaim/items/helheim_fruit)Helheim Fruit$(/l) (28.6%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE Music Disc$(/l) (14.3%)"
+			"text": "$(li)1 $(l:misc/items/foods#helheim_fruit)Helheim Fruit$(/l) (28.6%)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.6%)$(li)1 $(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE Music Disc$(/l) (14.3%)"
 		}
 	]
 }

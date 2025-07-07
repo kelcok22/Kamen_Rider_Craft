@@ -1,0 +1,16 @@
+{
+	"name": "Shield Snack Shield (Choco T Assist)",
+	"icon": "kamenridercraft:shield_snack_shield_choco",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: The Snacks Gourmet Woo!-mai Wakamen!! (2025, Hyper Battle Video)$(br2)Used by Gavv's $(l:gavv/riders/gavv#choco_t)Choco T Assist$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/shield_snack_shield_choco"
+		}
+	]
+}

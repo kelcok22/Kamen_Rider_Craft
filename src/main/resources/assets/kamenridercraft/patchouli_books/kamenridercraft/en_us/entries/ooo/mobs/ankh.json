@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Plains, Sunflower Plains, Desert, Windswept Hills, Forest, Taiga, Swamp, Mangrove Swamp, River, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains$(br2)Tamed with $(l:misc/items/ice_pop)Ice Pops$(/l)$(br2)Right-click with a $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l) to transform into $(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(br2)Drops$(li)2-4 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (50%)$(li)1 $(l:ooo/items/core_medals#taka_medal)Taka Medal$(/l) (50%)"
+			"text": "Spawn locations: Plains, Sunflower Plains, Desert, Windswept Hills, Forest, Taiga, Swamp, Mangrove Swamp, River, Frozen Ocean, Deep Frozen Ocean, Frozen River, Snowy Plains$(br2)Tamed with $(l:misc/items/foods#icepop)Ice Pops$(/l)$(br2)Right-click with a $(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)Greeed Belt (Lost Ankh)$(/l) to transform into $(l:ooo/mobs/complete_ankh)Ankh (Complete)$(/l)$(br2)Drops$(li)2-4 $(l:ooo/items/cellmedal)Cell Medals$(/l)$(li)1 $(l:ooo/items/cellmedal)Cell Medal$(/l) (50%)$(li)1 $(l:ooo/items/core_medals#taka_medal)Taka Medal$(/l) (50%)"
 		}
 	]
 }

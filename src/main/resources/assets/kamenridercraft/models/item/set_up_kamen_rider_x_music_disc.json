@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/set_up_kamen_rider_x_music_disc"
+  }
+}

@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Merry Christmas$(li)Explosive Slash$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,21 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Gavv",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Shot Boost$(li)Speed"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Hunger$(li)Strength II$(li)Resistance$(li)Speed"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blizzardsorbet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:blizzardsorbei_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Blizzardsorbet Form",
+			"text": "Accessed with the $(l:gavv/items/gochizo#blizzardsorbei_gochizo)Blizzardsorbei Gochizo$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gavv",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Blizzard"
 		},
 		{
 			"type": "patchouli:entity",
@@ -262,7 +276,7 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:boonboomger_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "Boonboomger Form",
+			"name": "Boonboomger Assist",
 			"text": "Accessed with the $(l:gavv/items/gochizo#boonboomger_gochizo)Boonboomger Gochizo$(/l)"
 		},
 		{

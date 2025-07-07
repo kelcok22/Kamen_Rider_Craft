@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.george_karizakis_rider_system.desc"
+  },
+  "length_in_seconds": 204,
+  "sound_event": "kamenridercraft:george_karizakis_rider_system"
+}

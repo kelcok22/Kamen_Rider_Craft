@@ -1,0 +1,16 @@
+{
+	"name": "Shield Snack Shield",
+	"icon": "kamenridercraft:shield_snack_shield",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: The Snacks Gourmet Woo!-mai Wakamen!! (2025, Hyper Battle Video)$(br2)Used by Gavv's $(l:gavv/riders/gavv#shield_snack)Shield Snack Form$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/shield_snack_shield"
+		}
+	]
+}

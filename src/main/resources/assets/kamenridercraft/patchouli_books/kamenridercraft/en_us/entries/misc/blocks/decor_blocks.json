@@ -589,6 +589,21 @@
 			"recipe": "kamenridercraft:misc/block/wallplate/light_green_wallplate"
 		},
 		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"anchor": "wooden_panel",
 			"link_recipe": true,
@@ -615,7 +630,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:vertical_panel",
 			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the Narumi Detective Office"
+			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -727,6 +742,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"anchor": "whiteboard",
+			"link_recipe": true,
+			"item": "kamenridercraft:whiteboard",
+			"text": "Block is currently unobtainable",
+			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
 			"anchor": "wallplate_grate_slab",
 			"link_recipe": true,
 			"item": "kamenridercraft:wallplate_grate_slab",
@@ -819,12 +842,57 @@
 			"recipe": "kamenridercraft:misc/block/wallplate/green_wallplate_slab"
 		},
 		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_wall"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"anchor": "yellow_wallplate_grate_stairs",
 			"link_recipe": true,
 			"item": "kamenridercraft:yellow_wallplate_grate_stairs",
 			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the Narumi Detective Office"
+			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

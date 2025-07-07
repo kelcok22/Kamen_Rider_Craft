@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zeztz/main",
+    "name": "Zeztz Arsenal",
+    "description": "Every weapon and tool used by the Zeztz Riders. These can be repaired in an anvil using a mythical substance known as \"kuzu\"",
+    "icon": "kamenridercraft:base_sword",
+    "sortnum": 3
+}

@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.entities.summons.WhippedSoldierEntity;
+import com.kelco.kamenridercraft.entities.variants.WhippedSoldierVariant;
 import com.kelco.kamenridercraft.item.Decade_Rider_Items;
 import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
 import com.kelco.kamenridercraft.item.Modded_item_core;
@@ -38,7 +39,7 @@ public class GavvwhipirItem extends BaseSwordItem {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
         ItemStack belt = entity.getItemBySlot(EquipmentSlot.FEET);
 		if (!world.isClientSide() && belt.getItem() == Gavv_Rider_Items.HENSHIN_BELT_GAVV.get() && ((RiderDriverItem)belt.getItem()).isTransformed(entity)
-        && RiderDriverItem.get_Form_Item(belt, 1) == Gavv_Rider_Items.CAKING_GOCHIZO.get()) {
+        && (RiderDriverItem.get_Form_Item(belt, 1) == Gavv_Rider_Items.CAKING_GOCHIZO.get() || RiderDriverItem.get_Form_Item(belt, 1) == Gavv_Rider_Items.BLIZZARDSORBEI_GOCHIZO.get())) {
 			List<WhippedSoldierEntity> soldiers = world.getEntitiesOfClass(WhippedSoldierEntity.class, entity.getBoundingBox().inflate(50), whip -> (whip.getOwner() == entity));
 			if (soldiers.size() < 2) {
                 WhippedSoldierEntity whip = MobsCore.WHIPPED_SOLDIER.get().create(world);
@@ -46,6 +47,7 @@ public class GavvwhipirItem extends BaseSwordItem {
                     whip.moveTo(entity.getX(), entity.getY()+1, entity.getZ(), entity.getYRot(), entity.getXRot());				
                     world.addFreshEntity(whip);
                     whip.bindToPlayer(entity);
+					if (RiderDriverItem.get_Form_Item(belt, 1) == Gavv_Rider_Items.BLIZZARDSORBEI_GOCHIZO.get()) whip.setVariant(WhippedSoldierVariant.ICE);
                 }
                 entity.displayClientMessage(Component.translatable("attack.kamenridercraft.whip_party"), true);
 				if (!entity.isCreative()) entity.getCooldowns().addCooldown(this, 80);

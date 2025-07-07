@@ -1,0 +1,16 @@
+{
+	"name": "Henshin Belt Caries Gavv",
+	"icon": "kamenridercraft:henshin_belt_caries_gavv",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv: Invaders of the House of Snacks (2025, movie)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/caries)Kamen Rider Caries"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/henshin_belt_caries_gavv"
+		}
+	]
+}
