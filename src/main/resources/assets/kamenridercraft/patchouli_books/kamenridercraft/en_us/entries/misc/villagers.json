@@ -47,7 +47,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)3 $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) for 1 emerald$(li)$(l:ride_kamens/items/contract_chaostone)Contract Chaostone$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:ride_kamens/items/gasha_ticket)Gasha Ticket$(/l) for 6 emeralds$(li)$(l:ride_kamens/items/energy_drink)Energy Drink$(/l) for 2 emeralds"
+			"text": "Novice Trades:$(li)3 $(l:misc/items/foods#candy)Nourishing Candy S$(/l) for 1 emerald$(li)$(l:ride_kamens/items/contract_chaostone)Contract Chaostone$(/l) for 2 emeralds$(br2)Apprentice Trades:$(li)$(l:ride_kamens/items/gasha_ticket)Gasha Ticket$(/l) for 6 emeralds$(li)$(l:misc/items/foods#energy_drink)Energy Drink$(/l) for 2 emeralds"
 		},
 		{
 			"type": "patchouli:entity",
@@ -69,7 +69,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)2 $(l:misc/items/dango)Dango$(/l) for 1 emerald$(li)1 $(l:misc/items/gummi_candy)Gummi Candy$(/l) for 1 emerald$(li)1 $(l:misc/items/potato_snacks)Potato Snacks$(/l) for 1 emerald$(li)1 $(l:misc/items/marshmallow)Marshmallow$(/l) for 1 emerald$(li)1 cookie for 1 emerald$(br2)Apprentice Trades:$(li)1 $(l:misc/items/chocolate_bar)Chocolate Bar$(/l) for 1 emerald$(li)1 $(l:misc/items/lollipop)Lollipop$(/l) for 1 emerald$(li)1 $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) for 1 emerald$(br2)Journeyman Trades:$(li)1 $(l:misc/items/pudding)Pudding$(/l) for 1 emerald$(li)1 $(l:misc/items/mayo)Mayo$(/l) for 1 emerald"
+			"text": "Novice Trades:$(li)2 $(l:misc/items/foods#dango)Dango$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#marshmallow)Marshmallow$(/l) for 1 emerald$(li)1 cookie for 1 emerald$(br2)Apprentice Trades:$(li)1 $(l:misc/items/foods#chocolate_bar)Chocolate Bar$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#lollipop)Lollipop$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#candy)Nourishing Candy S$(/l) for 1 emerald$(br2)Journeyman Trades:$(li)1 $(l:misc/items/foods#pudding)Pudding$(/l) for 1 emerald$(li)1 $(l:misc/items/foods#mayo)Mayo$(/l) for 1 emerald"
 		},
 		{
 			"type": "patchouli:entity",

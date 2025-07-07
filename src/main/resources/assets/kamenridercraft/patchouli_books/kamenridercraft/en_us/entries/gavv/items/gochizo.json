@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:poppingummy_gochizo",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory$(br2)Drops from:$(li)$(l:gavv/mobs/agent)Agents$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:punchingummy_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +39,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kickingummy_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zakuzakuchips_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hirihirichips_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fuwamallow_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:marumallow_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chocodan_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chocodon_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gurucan_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:vrocan_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bakucan_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -238,6 +238,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "blizzardsorbei_gochizo",
+			"title": "Blizzardsorbei Gochizo",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#blizzardsorbet)Blizzardsorbet Form$(/l)$(br2)Can alter the sizes of 2 $(l:gavv/mobs/whipped_soldier)Whipped Soldiers$(/l) when right-clicked while sneaking"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blizzardsorbei_gochizo",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "doumaru_gochizo",
 			"title": "Doumaru Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Valen's $(l:gavv/riders/valen#doumaru)Doumaru Form$(/l)"
@@ -247,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doumaru_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/donut)Donuts$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#donut)Donuts$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -286,7 +299,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shouma_doppudding_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +312,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:prujelly_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pudding)Pudding$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -429,7 +442,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:caramelmel_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -442,7 +455,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:popburn_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -455,7 +468,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:oshiruko_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -468,7 +481,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bubbleramune_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -481,7 +494,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bubbleramune_gochizo_peach",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -494,7 +507,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wafusaku_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mofupachi_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -520,7 +533,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hagigoro_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -533,7 +546,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hotcaken_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -546,7 +559,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crepuna_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -572,7 +585,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:doranosuke_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#pancake)Pancake Stacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -585,7 +598,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mitaramotti_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -598,7 +611,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mogimaru_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#dango)Dango$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -611,7 +624,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:morinagaramune_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -624,7 +637,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:angelpie_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#marshmallow)Marshmallows$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -637,7 +650,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:artcandy_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/lollipop)Lollipops$(/l) or $(l:ride_kamens/items/candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#lollipop)Lollipops$(/l) or $(l:misc/items/foods#candy)Nourishing Candy S$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -650,7 +663,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bonchiage_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -663,7 +676,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chocoball_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -689,7 +702,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crunky_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -715,7 +728,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ghana_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -728,7 +741,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:happyturn_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -741,7 +754,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hichew_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -767,7 +780,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:meitoalphabet_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -793,7 +806,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ottotto_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -819,7 +832,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:peanutage_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#potato_snacks)Potato Snacks$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -871,7 +884,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tirolchocolate_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -884,7 +897,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tirolchocolate_gochizo_variety",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -897,7 +910,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:strawberryjellytirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -910,7 +923,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nougattirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -923,7 +936,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:milktirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -936,7 +949,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bispinktirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -949,7 +962,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:whiteandcookiestirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -962,7 +975,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:crunchtirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -975,7 +988,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:almondtirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -988,7 +1001,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bisbluetirol_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -1001,7 +1014,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:charapaki_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -1014,7 +1027,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:charapaki_gochizo_special",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#chocolate_bar)Chocolate Bars$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
@@ -1053,13 +1066,13 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kamenridergummy_gochizo",
 			"title": " ",
-			"text": "Obtained by eating $(l:misc/items/gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "boonboomger_gochizo",
 			"title": "Boonboomger Gochizo",
-			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger Form$(/l)"
+			"text": "Appears in:$(li)Televi-Kun (November 2024, magazine)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#boonboomger)Boonboomger Assist$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.kamenridercraft.warera_omou_yue_ni_warera_ari.desc"
+  },
+  "length_in_seconds": 78,
+  "sound_event": "kamenridercraft:warera_omou_yue_ni_warera_ari"
+}

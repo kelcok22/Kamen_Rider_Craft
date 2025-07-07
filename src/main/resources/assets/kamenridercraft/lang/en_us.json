@@ -112,6 +112,10 @@
   "item.kamenridercraft.tatakae_kamen_rider_v3.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
   "item.kamenridercraft.tatakae_kamen_rider_v3_music_disc.desc": "HosephHoestar - Tatakae! Kamen Rider V3",
 
+  "item.kamenridercraft.set_up_kamen_rider_x_music_disc": "Set Up! Kamen Rider X Music Disc",
+  "item.kamenridercraft.set_up_kamen_rider_x.desc": "HosephHoestar - Set Up! Kamen Rider X",
+  "item.kamenridercraft.set_up_kamen_rider_x_music_disc.desc": "HosephHoestar - Set Up! Kamen Rider X",
+
   "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc": "Amazon Rider Koko ni Ari Music Disc",
   "item.kamenridercraft.amazon_rider_koko_ni_ari.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
   "item.kamenridercraft.amazon_rider_koko_ni_ari_music_disc.desc": "HosephHoestar - Amazon Rider Koko ni Ari",
@@ -119,6 +123,10 @@
   "item.kamenridercraft.moero_kamen_rider_music_disc": "Moero! Kamen Rider Music Disc",
   "item.kamenridercraft.moero_kamen_rider.desc": "HosephHoestar - Moero! Kamen Rider",
   "item.kamenridercraft.moero_kamen_rider_music_disc.desc": "HosephHoestar - Moero! Kamen Rider",
+
+  "item.kamenridercraft.kamen_rider_super_1_music_disc": "Kamen Rider Super-1 Music Disc",
+  "item.kamenridercraft.kamen_rider_super_1.desc": "HosephHoestar - Kamen Rider Super-1",
+  "item.kamenridercraft.kamen_rider_super_1_music_disc.desc": "HosephHoestar - Kamen Rider Super-1",
 
   "item.kamenridercraft.dragon_road_music_disc": "Dragon Road Music Disc",
   "item.kamenridercraft.dragon_road.desc": "HosephHoestar - Dragon Road",
@@ -168,6 +176,10 @@
   "item.kamenridercraft.climax_jump.desc": "HosephHoestar - Climax Jump",
   "item.kamenridercraft.climax_jump_music_disc.desc": "HosephHoestar - Climax Jump",
 
+  "item.kamenridercraft.break_the_chain_music_disc": "Break the Chain Music Disc",
+  "item.kamenridercraft.break_the_chain.desc": "HosephHoestar - Break the Chain",
+  "item.kamenridercraft.break_the_chain_music_disc.desc": "HosephHoestar - Break the Chain",
+
   "item.kamenridercraft.journey_through_the_decade_music_disc": "Journey Through the Decade Music Disc",
   "item.kamenridercraft.journey_through_the_decade.desc": "HosephHoestar - Journey Through the Decade",
   "item.kamenridercraft.journey_through_the_decade_music_disc.desc": "HosephHoestar - Journey Through the Decade",
@@ -196,6 +208,10 @@
   "item.kamenridercraft.surprise_drive.desc": "HosephHoestar - SURPRISE-DRIVE",
   "item.kamenridercraft.surprise_drive_music_disc.desc": "HosephHoestar - SURPRISE-DRIVE",
 
+  "item.kamenridercraft.warera_omou_yue_ni_warera_ari_music_disc": "Warera Omou, Yue Ni Warera Ari Music Disc",
+  "item.kamenridercraft.warera_omou_yue_ni_warera_ari.desc": "HosephHoestar - Warera Omou, Yue Ni Warera Ari",
+  "item.kamenridercraft.warera_omou_yue_ni_warera_ari_music_disc.desc": "HosephHoestar - Warera Omou, Yue Ni Warera Ari",
+
   "item.kamenridercraft.excite_music_disc": "EXCITE Music Disc",
   "item.kamenridercraft.excite.desc": "HosephHoestar - EXCITE",
   "item.kamenridercraft.excite_music_disc.desc": "HosephHoestar - EXCITE",
@@ -215,6 +231,14 @@
   "item.kamenridercraft.almighty_music_disc": "ALMIGHTY ~ Kamen no Yakusoku Music Disc",
   "item.kamenridercraft.almighty.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
   "item.kamenridercraft.almighty_music_disc.desc": "HosephHoestar - ALMIGHTY ~ Kamen no Yakusoku",
+
+  "item.kamenridercraft.livedevil_music_disc": "liveDevil Music Disc",
+  "item.kamenridercraft.livedevil.desc": "HosephHoestar - liveDevil",
+  "item.kamenridercraft.livedevil_music_disc.desc": "HosephHoestar - liveDevil",
+
+  "item.kamenridercraft.george_karizakis_rider_system_music_disc": "George Karizaki's Rider System Music Disc",
+  "item.kamenridercraft.george_karizakis_rider_system.desc": "HosephHoestar - George Karizaki's Rider System",
+  "item.kamenridercraft.george_karizakis_rider_system_music_disc.desc": "HosephHoestar - George Karizaki's Rider System",
 
   "item.kamenridercraft.trust_last_music_disc": "Trust・Last Music Disc",
   "item.kamenridercraft.trust_last.desc": "HosephHoestar - Trust・Last",
@@ -7524,7 +7548,7 @@
 "kamenridercraft:doumaru_gochizo.form": "Form: Doumaru Form",
 "kamenridercraft:bushel_gochizo.form": "Form: Bushel Form",
 "kamenridercraft:caking_gochizo.form": "Form: Caking Form",
-"kamenridercraft:blizzardsorbei_gochizo.form": "Form: Blizzardsorbei Form",
+"kamenridercraft:blizzardsorbei_gochizo.form": "Form: Blizzardsorbet Form",
 "kamenridercraft:gochipod.form": "Form: Over Mode",
 "kamenridercraft:gochipod_master.form": "Form: Master Mode",
 "kamenridercraft:chocold_gochizo.form": "Form: Chocold Form",
@@ -8346,7 +8370,7 @@
   "block.kamenridercraft.yellow_wallplate": "Yellow Wallplate",
   "block.kamenridercraft.cyan_wallplate": "Cyan Wallplate",
   "block.kamenridercraft.blue_wallplate": "Blue Wallplate",
-  "block.kamenridercraft.light_blue_wallplate": "Light BLue Wallplate",
+  "block.kamenridercraft.light_blue_wallplate": "Light Blue Wallplate",
   "block.kamenridercraft.yellow_wallplate_wall": "Yellow Wallplate Wall",
   "block.kamenridercraft.white_wallplate_wall": "White Wallplate Wall",
   "block.kamenridercraft.cyan_wallplate_wall": "Cyan Wallplate Wall",
@@ -8367,7 +8391,7 @@
   "block.kamenridercraft.wallplate_slab": "Wallplate Slab",
   "block.kamenridercraft.cyan_wallplate_slab": "Cyan Wallplate Slab",
   "block.kamenridercraft.blue_wallplate_slab": "Blue Wallplate Slab",
-  "block.kamenridercraft.light_blue_wallplate_slab": "Light BLue Wallplate Slab",
+  "block.kamenridercraft.light_blue_wallplate_slab": "Light Blue Wallplate Slab",
   "block.kamenridercraft.white_wallplate_slab": "White Wallplate Slab",
   "block.kamenridercraft.red_wallplate_stairs": "Red Wallplate Stairs",
   "block.kamenridercraft.grey_wallplate_stairs": "Grey Wallplate Stairs",

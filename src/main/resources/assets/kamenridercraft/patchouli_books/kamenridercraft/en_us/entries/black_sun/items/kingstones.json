@@ -2,7 +2,7 @@
 	"name": "Kingstones",
 	"icon": "kamenridercraft:king_stone_sun",
 	"category": "kamenridercraft:black_sun/items",
-	"sortnum": 3,
+	"sortnum": 2,
 	"pages": [
 		{
 			"type": "patchouli:text",

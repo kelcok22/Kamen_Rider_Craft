@@ -23,10 +23,26 @@
       }
     ]
   },
+  "set_up_kamen_rider_x": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:set_up_kamen_rider_x",
+        "stream": true
+      }
+    ]
+  },
   "moero_kamen_rider": {
     "sounds": [
       {
         "name": "kamenridercraft:moero_kamen_rider",
+        "stream": true
+      }
+    ]
+  },
+  "kamen_rider_super_1": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:kamen_rider_super_1",
         "stream": true
       }
     ]
@@ -119,6 +135,14 @@
       }
     ]
   },
+  "break_the_chain": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:break_the_chain",
+        "stream": true
+      }
+    ]
+  },
   "journey_through_the_decade": {
     "sounds": [
       {
@@ -175,6 +199,14 @@
       }
     ]
   },
+  "warera_omou_yue_ni_warera_ari": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:warera_omou_yue_ni_warera_ari",
+        "stream": true
+      }
+    ]
+  },
   "excite": {
     "sounds": [
       {
@@ -211,6 +243,22 @@
     "sounds": [
       {
         "name": "kamenridercraft:almighty",
+        "stream": true
+      }
+    ]
+  },
+  "livedevil": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:livedevil",
+        "stream": true
+      }
+    ]
+  },
+  "george_karizakis_rider_system": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:george_karizakis_rider_system",
         "stream": true
       }
     ]

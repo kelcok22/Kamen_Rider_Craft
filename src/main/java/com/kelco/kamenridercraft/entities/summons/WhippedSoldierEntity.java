@@ -60,6 +60,7 @@ public class WhippedSoldierEntity extends BaseSummonEntity {
 		this.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Gavv_Rider_Items.WHIPPED_ROD.get()));
         this.reassessWeaponGoal();
 		this.addRequiredForm((RiderFormChangeItem)Gavv_Rider_Items.CAKING_GOCHIZO.get(), 1);
+		this.addRequiredForm((RiderFormChangeItem)Gavv_Rider_Items.BLIZZARDSORBEI_GOCHIZO.get(), 1);
 	}
 
     @Override
@@ -76,7 +77,7 @@ public class WhippedSoldierEntity extends BaseSummonEntity {
         return WhippedSoldierVariant.byId(this.getTypeVariant() & 255);
     }
 
-    private void setVariant(WhippedSoldierVariant variant) {
+    public void setVariant(WhippedSoldierVariant variant) {
         this.entityData.set(VARIANT, variant.getId() & 255);
     }
 

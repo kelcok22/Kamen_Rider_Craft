@@ -170,6 +170,11 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddToList(CAKE,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> BLIZZARDSORBEI_GOCHIZO = ITEMS.register("blizzardsorbei_gochizo",
+			() -> new BlizzardsorbeiItem(new Item.Properties(),0,"_blizzardsorbet","gavv","henshin_belt_gavv_belt_blizzardsorbet",
+					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false))
+					.AddToList(RiderTabs.GAVV_TAB_ITEM)); //effects unfinished, leaving this to Kelco
+
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_doumaru","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)

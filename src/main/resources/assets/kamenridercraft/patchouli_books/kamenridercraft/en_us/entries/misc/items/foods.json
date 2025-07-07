@@ -1,0 +1,222 @@
+{
+	"name": "Foods",
+	"icon": "kamenridercraft:vienna_coffee",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "vienna_coffee",
+			"text": "Restores 2 hunger points when drank$(br2)Can be used to tame $(l:den_o/mobs/momotaros)th$(/l)$(l:den_o/mobs/urataros)e T$(/l)$(l:den_o/mobs/kintaros)ar$(/l)$(l:den_o/mobs/ryutaros)os$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vienna_coffee",
+			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pudding",
+			"title": "Pudding",
+			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into pudding Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pudding",
+			"title": " ",
+			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)$(br2)Traded by a journeyman $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "icepop",
+			"title": "Ice Pops",
+			"text": "Restores 3 hunger points when eaten$(br2)Can be used to tame $(l:ooo/mobs/ankh)Ankh$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/icepop1"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/icepop2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/icepop3"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "donut",
+			"title": "Donut",
+			"text": "Restores 5 hunger points when eaten$(br2)Plain sugar flavor (probably)$(br2)Converts a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) into the $(l:gavv/items/gochizo#doumaru_gochizo)Doumaru Gochizo$(/l) when eaten"
+		},
+		{
+			"title": " ",
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/donut"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mayo",
+			"title": "Mayo",
+			"text": "Restores 1 hunger point and gives Slow Falling III when eaten$(br2)Goes great with (almost) everything"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mayo",
+			"title": " ",
+			"text": "Obtained by fishing$(br2)Traded by a journeyman $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mayo_donut",
+			"title": "Mayo Donut",
+			"text": "Restores 3 hunger points and gives Slow Falling III when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/mayo_donut"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gummi_candy",
+			"title": "Gummi Candy",
+			"text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into gummy Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/gummi_candy",
+			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "potato_snacks",
+			"title": "Potato Snacks",
+			"text": "Restores 1 hunger point when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into chips Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/potato_snacks",
+			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lollipop",
+			"title": "Lollipop",
+			"text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into candy Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/lollipop",
+			"text": "Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chocolate_bar",
+			"title": "Chocolate Bar",
+			"text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into chocolate Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/chocolate_bar",
+			"text": "Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "marshmallow",
+			"title": "Marshmallow",
+			"text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into marshmallow Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/marshmallow",
+			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pancake",
+			"title": "Pancake Stack",
+			"text": "Restores 5 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into pancake Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/pancake"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dango",
+			"title": "Dango",
+			"text": "Restores 2 hunger points when eaten$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into mochi Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dango",
+			"title": " ",
+			"text": "Traded by a novice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "candy",
+			"title": "Nourishing Candy S",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Restores 1 hunger point when eaten$(br2)Gives the Haste effect for 25 seconds$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into candy Gochizos when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:candy",
+			"title": " ",
+			"text": "Traded by a novice $(l:misc/villagers#kamen_cafe_butler)Kamen Cafe Butler$(/l)$(br2)Traded by an apprentice $(l:misc/villagers#candyshop_villager)Candy Vendor$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "energy_drink",
+			"title": "Energy Drink",
+			"text": "Appears in:$(li)Ride Kamens (2024, mobile game)$(br2)Restores 1 hunger point when drank$(br2)Gives Speed III for 25 seconds"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:energy_drink",
+			"title": " ",
+			"text": "Traded by an apprentice $(l:misc/villagers#kamen_cafe_butler)Kamen Cafe Butler$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "heat_heaven",
+			"title": "Heat Heaven",
+			"text": "Appears in:$(li)Kamen Rider Black Sun (2022, web series)$(br2)Restores 3 hunger points when eaten"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:black_sun/heat_heaven"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "helheim_fruit",
+			"title": "Helheim Fruit",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Gives Poison III when eaten"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_fruit",
+			"title": " ",
+			"text": "Found in suspicious gravel around the $(l:gaim/structures/rosyuo_helheim_city)Over $(/l)$(l:gaim/structures/redyue_helheim_city)Lords' $(/l) $(l:gaim/structures/demushu_helheim_city)structures$(/l)$(br2)Drops from:$(li)Helheim Leaves"
+		}
+	]
+}
