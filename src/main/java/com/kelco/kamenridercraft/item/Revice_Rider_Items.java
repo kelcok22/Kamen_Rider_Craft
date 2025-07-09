@@ -853,6 +853,11 @@ public class Revice_Rider_Items {
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
+	public static final DeferredItem<Item> LOVEKOV_BELT = ITEMS.register("lovekov_belt",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+
+
 	public static final DeferredItem<Item> DEMONS_DRIVER = ITEMS.register("demons_driver",
 			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"demons",SPIDER_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
