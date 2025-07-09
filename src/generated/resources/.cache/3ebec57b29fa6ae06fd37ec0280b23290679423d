@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-07T15:18:40.3782316	Item Models: kamenridercraft
+// 1.21.1	2025-07-09T02:06:32.3903326	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -180,6 +180,7 @@ f86d141373dc18bc1d67980dd839817c41b040f1 assets/kamenridercraft/models/item/helh
 4f706cf6c682507ee06307cd6c8feb975a14cee0 assets/kamenridercraft/models/item/helheim_hanging_sign_item.json
 a07acae377b6df0de55a2064bcc6ffcd24bb6c3a assets/kamenridercraft/models/item/helheim_sign_item.json
 2152c2fc9fadbf113bcdd9602ed109b55ff1f12b assets/kamenridercraft/models/item/henshin_belt_bitter_gavv.json
+6bbe917244b0301647dab998a63daa5c59451e88 assets/kamenridercraft/models/item/henshin_belt_caries_gavv.json
 02c36591229e460d9066cb2f800af08b567e94c7 assets/kamenridercraft/models/item/hexa_oooooo.json
 85d7bf7624a9d9a3682635a77771f3c1ce8a554d assets/kamenridercraft/models/item/hibiki_ride_chemy_card.json
 455ecf868613e5ca2ef1b19650abc8fede7d0d84 assets/kamenridercraft/models/item/hichew_gochizo.json
@@ -336,6 +337,7 @@ ad96f2530fa729165596a9449f306ab0f94307af assets/kamenridercraft/models/item/stra
 ee8b5b9fc341db2190d84f3069a05b33e9b8daf2 assets/kamenridercraft/models/item/tarakomentaiko_gochizo.json
 e7d5e0854846ebbb776dc3f59e4ee1867bba5344 assets/kamenridercraft/models/item/televi_ride_chemy_card.json
 ee7bd024ed57eac5cfa9d77e8f70f8a288e6f66d assets/kamenridercraft/models/item/tenliner_ride_chemy_card.json
+5aaa95c493d91ece17c9d1443800382e8e56c89f assets/kamenridercraft/models/item/terror_gochizo.json
 3d4423deb0f134e4432ba22a5e0c4dd065a38a20 assets/kamenridercraft/models/item/timelord_ride_chemy_card.json
 829dfe043f82d3ad35e83d6f12efc53fb3680625 assets/kamenridercraft/models/item/tirolchocolate_gochizo.json
 cedaeb5dbcdaa19dc2ade38e64a8bf357fd5ed1e assets/kamenridercraft/models/item/tirolchocolate_gochizo_variety.json
