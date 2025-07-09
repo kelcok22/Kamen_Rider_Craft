@@ -35,9 +35,9 @@ public class BlizzardsorbeiItem extends RiderFormChangeItem {
 			if (soldiers.size() == 2 && soldiers.get(0).getAttributeValue(Attributes.SCALE) == 1.0) {
                 soldiers.get(0).getAttribute(Attributes.SCALE).setBaseValue(0.5);
                 soldiers.get(1).getAttribute(Attributes.SCALE).setBaseValue(2.0);
-                player.displayClientMessage(Component.translatable("attack.kamenridercraft.atari"), true);                
+                player.displayClientMessage(Component.translatable("attack.kamenridercraft.atari"), true);
+		player.awardStat(Stats.ITEM_USED.get(this));
             }
-            player.awardStat(Stats.ITEM_USED.get(this));
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
         return super.use(level, player, usedHand);
