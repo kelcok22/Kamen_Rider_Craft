@@ -2,7 +2,7 @@
 	"name": "Crimson Vail",
 	"icon": "kamenridercraft:vail_belt",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:entity",

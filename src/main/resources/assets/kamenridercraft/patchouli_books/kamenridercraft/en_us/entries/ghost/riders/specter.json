@@ -385,7 +385,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "special_ore",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_specter_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_ore_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Special Ore Damashii",

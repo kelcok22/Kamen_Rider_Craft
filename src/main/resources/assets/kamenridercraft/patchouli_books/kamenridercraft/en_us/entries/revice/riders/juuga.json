@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Juuga",
 	"icon": "kamenridercraft:juuga_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 18,
+	"sortnum": 19,
 	"pages": [
 		{
 			"type": "patchouli:entity",

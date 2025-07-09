@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Destream",
 	"icon": "kamenridercraft:destream_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:entity",

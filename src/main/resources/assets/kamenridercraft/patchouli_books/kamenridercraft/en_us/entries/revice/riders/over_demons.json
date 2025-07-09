@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Over Demons",
 	"icon": "kamenridercraft:over_demons_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

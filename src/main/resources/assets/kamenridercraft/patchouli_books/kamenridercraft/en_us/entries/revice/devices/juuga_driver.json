@@ -2,7 +2,7 @@
 	"name": "Juuga Driver",
 	"icon": "kamenridercraft:juuga_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 12,
+	"sortnum": 13,
 	"pages": [
 		{
 			"type": "patchouli:text",
