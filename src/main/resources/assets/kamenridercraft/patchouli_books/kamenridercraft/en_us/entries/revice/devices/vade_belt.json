@@ -2,7 +2,7 @@
 	"name": "Blood Vade Belt",
 	"icon": "kamenridercraft:vade_belt",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

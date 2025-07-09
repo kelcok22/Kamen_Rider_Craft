@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Aguilera",
 	"icon": "kamenridercraft:week_endriver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 14,
+	"sortnum": 15,
 	"pages": [
 		{
 			"type": "patchouli:entity",

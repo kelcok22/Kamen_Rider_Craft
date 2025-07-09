@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Century",
 	"icon": "kamenridercraft:cyclotron_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 19,
+	"sortnum": 20,
 	"pages": [
 		{
 			"type": "patchouli:entity",

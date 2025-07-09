@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Vail",
 	"icon": "kamenridercraft:vail_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 10,
+	"sortnum": 11,
 	"pages": [
 		{
 			"type": "patchouli:entity",

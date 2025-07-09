@@ -2,7 +2,7 @@
 	"name": "Demons Driver",
 	"icon": "kamenridercraft:demons_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

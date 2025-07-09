@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Demons Trooper ß",
 	"icon": "kamenridercraft:demons_driver_demons_trooper_b",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:entity",

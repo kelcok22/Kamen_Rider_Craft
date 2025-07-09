@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Daimon",
 	"icon": "kamenridercraft:chimera_driver_daimon",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 17,
+	"sortnum": 18,
 	"pages": [
 		{
 			"type": "patchouli:entity",

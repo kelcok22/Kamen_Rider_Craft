@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Chimera",
 	"icon": "kamenridercraft:chimera_driver",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 16,
+	"sortnum": 17,
 	"pages": [
 		{
 			"type": "patchouli:entity",

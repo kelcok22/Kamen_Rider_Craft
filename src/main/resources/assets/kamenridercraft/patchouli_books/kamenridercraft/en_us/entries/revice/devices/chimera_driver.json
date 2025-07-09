@@ -2,7 +2,7 @@
 	"name": "Chimera Driver",
 	"icon": "kamenridercraft:chimera_driver",
 	"category": "kamenridercraft:revice/devices",
-	"sortnum": 11,
+	"sortnum": 12,
 	"pages": [
 		{
 			"type": "patchouli:text",

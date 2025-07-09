@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Blood Vade",
 	"icon": "kamenridercraft:vade_belt",
 	"category": "kamenridercraft:revice/riders",
-	"sortnum": 13,
+	"sortnum": 14,
 	"pages": [
 		{
 			"type": "patchouli:entity",
