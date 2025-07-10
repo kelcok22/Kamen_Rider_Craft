@@ -855,7 +855,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> LOVEKOV_BELT = ITEMS.register("lovekov_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+					.Dont_show_belt_form_info().Override_belt_text("lovekov_belt_belt").AddToTabList(RiderTabs.REVICE_TAB_ITEM).has_basic_model().ChangeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> DEMONS_DRIVER = ITEMS.register("demons_driver",
