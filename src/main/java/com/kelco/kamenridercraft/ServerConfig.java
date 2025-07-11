@@ -47,6 +47,10 @@ public class ServerConfig
             .comment(" (default: true) Should Vice spawn if you are playing as Kamen Rider Revi?")
             .define("viceSpawning", true);
 
+    private static final ModConfigSpec.BooleanValue LOVEKOV_SPAWNING = BUILDER
+            .comment(" (default: true) Should Lovekov spawn if you are playing as Kamen Rider Jeanne?")
+            .define("lovekovSpawning", true);
+
     /*public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
             .comment("What you want the introduction message to be for the magic number")
             .define("magicNumberIntroduction", "The magic number is... ");
@@ -65,6 +69,7 @@ public class ServerConfig
     public static boolean mightyBrotherSpawning;
     public static boolean decadeExAidSpawning;
     public static boolean viceSpawning;
+    public static boolean lovekovSpawning;
     /*public static String magicNumberIntroduction;
     public static Set<Item> items;
 
@@ -83,6 +88,7 @@ public class ServerConfig
         mightyBrotherSpawning = MIGHTY_BROTHER_SPAWNING.get();
         decadeExAidSpawning = DECADE_ARMOR_EX_AID_SPAWNING.get();
         viceSpawning = VICE_SPAWNING.get();
+        lovekovSpawning = LOVEKOV_SPAWNING.get();
 
         /* convert the list of strings into a set of items
         items = ITEM_STRINGS.get().stream()

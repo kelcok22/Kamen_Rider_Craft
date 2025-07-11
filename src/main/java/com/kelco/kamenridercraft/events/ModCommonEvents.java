@@ -650,6 +650,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.PARADX_SUMMON.get(), ParaDXSummonEntity.setAttributes().build());
 		event.put(MobsCore.DECADE_ARMOR_EX_AID.get(), DecadeArmorExAidEntity.setAttributes().build());
 		event.put(MobsCore.VICE.get(), ViceEntity.setAttributes().build());
+		event.put(MobsCore.LOVEKOV.get(), LovekovEntity.setAttributes().build());
 		event.put(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierEntity.setAttributes().build());
 
 	}

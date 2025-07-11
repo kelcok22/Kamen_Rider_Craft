@@ -113,13 +113,10 @@ public class GamerDriverItem extends RiderDriverItem {
 			 belt = get_Form_Item(itemstack,1).getBeltTex();
 			}
 		
-			if (itemstack.getItem()== Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get()) {
-				if(rider.getMainHandItem().getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get()||rider.getOffhandItem().getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get() ) belt="bugster_buckle";
-				}
-			if (itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
-					||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_LAZER.get()) {
-				if(rider.getMainHandItem().getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get()||rider.getOffhandItem().getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get() ) belt="bugster_buckle";
-				}
+			if (itemstack.getItem()== Ex_Aid_Rider_Items.GASHACON_BUGVISOR_GENM.get() && rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR.get())) belt="bugster_buckle";
+			if ((itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONOS.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
+				||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_POPPY.get()||itemstack.getItem()==Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II_LAZER.get())
+				&& rider.isHolding(Ex_Aid_Rider_Items.GASHACON_BUGVISOR_II.get())) belt="bugster_buckle";
 			
 			if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/lv_1_belt.geo.json") {
 				if (!isTransformed(rider)) belt = get_Form_Item(itemstack,1).getBeltTex()+"_un";
