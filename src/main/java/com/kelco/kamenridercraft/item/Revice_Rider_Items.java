@@ -4,9 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.VistampBar;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.item.BaseItems.*;
-import com.kelco.kamenridercraft.item.revice.ReviceDriverItem;
-import com.kelco.kamenridercraft.item.revice.CyclotronDriverItem;
-import com.kelco.kamenridercraft.item.revice.DemonsDriverItem;
+import com.kelco.kamenridercraft.item.revice.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import com.kelco.kamenridercraft.world.inventory.VistampHolderGuiMenu;
 import io.netty.buffer.Unpooled;
@@ -833,7 +831,7 @@ public class Revice_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> LIBERA_DRIVER = ITEMS.register("libera_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jeanne",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+			() -> new LiberaDriverItem(ArmorMaterials.DIAMOND,"jeanne",COBRA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,  new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {

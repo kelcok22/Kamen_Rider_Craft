@@ -28,13 +28,13 @@ public class ShotriserItem extends RiderDriverItem {
 	{
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			if (itemstack.getItem()==Zero_One_Rider_Items.SHOTRISER_VULCAN.get() || itemstack.getItem()== Zero_One_Rider_Items.SHOTRISER_VALKYRIE.get()) {
-				if(rider.getMainHandItem().getItem()==Zero_One_Rider_Items.SHOTRISER.get()||rider.getOffhandItem().getItem()==Zero_One_Rider_Items.SHOTRISER.get() ) return "belts/z_con_band_belt";
+				if(rider.isHolding(Zero_One_Rider_Items.SHOTRISER.get()) ) return "belts/z_con_band_belt";
 			} else if (itemstack.getItem()==Zero_One_Rider_Items.ZAIA_SLASHRISER.get()) {
-				if(rider.getMainHandItem().getItem()==Zero_One_Rider_Items.SLASHRISER.get()||rider.getOffhandItem().getItem()==Zero_One_Rider_Items.SLASHRISER.get() ) return "belts/s_con_band_belt";
+				if(rider.isHolding(Zero_One_Rider_Items.SLASHRISER.get()) ) return "belts/s_con_band_belt";
 			} else if (itemstack.getItem()==Zero_One_Rider_Items.SHOT_ABADDO_RISER.get() || itemstack.getItem()==Zero_One_Rider_Items.SHOT_ABADDO_RISER_B.get() || itemstack.getItem()==Zero_One_Rider_Items.SHOT_ABADDO_RISER_G.get()) {
-				if(rider.getMainHandItem().getItem()==Zero_One_Rider_Items.SHOTABADDORISER_GUN.get()||rider.getOffhandItem().getItem()==Zero_One_Rider_Items.SHOTABADDORISER_GUN.get() ) return "belts/abaddo_riser_belt";
+				if(rider.isHolding(Zero_One_Rider_Items.SHOTABADDORISER_GUN.get()) ) return "belts/abaddo_riser_belt";
 			} else if (itemstack.getItem()==Zero_One_Rider_Items.SLASH_ABADDO_RISER.get() || itemstack.getItem()==Zero_One_Rider_Items.SLASH_ABADDO_RISER_O.get() || itemstack.getItem()==Zero_One_Rider_Items.SLASH_ABADDO_RISER_R.get()) {
-				if(rider.getMainHandItem().getItem()==Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()||rider.getOffhandItem().getItem()==Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get() ) return "belts/abaddo_riser_belt";
+				if(rider.isHolding(Zero_One_Rider_Items.SLASHABADDORISER_SWORD.get()) ) return "belts/abaddo_riser_belt";
 			}
 		}
 		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
