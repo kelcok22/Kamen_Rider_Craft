@@ -119,7 +119,10 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	@Override
 	public void travel(Vec3 pos) {
 		if (this.isAlive()) {
+			this.fallDistance=0;
+
 			if (this.isVehicle()) {
+
 
 				LivingEntity passenger = (LivingEntity)getControllingPassenger();
 				if (passenger!=null){
@@ -129,17 +132,17 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 				float z = passenger.zza;
 
 				if (z <= 0) z *= 0.5f;
-
+if (this.onGround()){
 				if (z>0) {
 					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
 					if (this.getSpeed() <0.2){
 						if (level() instanceof ServerLevel sl) {
 							sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
 									this.getX(), this.getY() ,
-									this.getZ(), 10, 0, 0, 0, 0.1);
+									this.getZ(), 10, 0, 0, 0, 0);
 						}
 
-						this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+						//this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
 					}
 
 					if (this.getSpeed()<0.6) this.setSpeed(this.getSpeed()+0.01f);
@@ -165,6 +168,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 						this.setSpeed(0f);
 					}
 				}
+}
 				super.travel(new Vec3(0, pos.y, z));
 			}
 
