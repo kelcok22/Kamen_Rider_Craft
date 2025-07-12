@@ -31,6 +31,10 @@ public class RiderTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
             KamenRiderCraftCore.MOD_ID) ;
 
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderEggTab = CREATIVE_MODE_TABS.register("krc_996_egg_tab", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(MobsCore.SHOCKER_RIDER_SPAWN_EGG.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
+                    .title(Component.translatable("tab.kamenridercraft.egg_items")).build());
+
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> RiderMiscTab = CREATIVE_MODE_TABS.register("krc_997_misc_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(Modded_item_core.RIDER_CIRCUIT.get())).backgroundTexture(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.misc_items")).build());
@@ -630,7 +634,7 @@ public class RiderTabs {
             event.accept(Rider_Blocks.PLINTH);
 
 
-        }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
+        }else if(event.getTab() == RiderTabs.RiderEggTab.get()) {
 
             event.accept(MobsCore.SHOCKER_COMBATMAN_SPAWN_EGG);
             event.accept(MobsCore.SHOCKER_RIDER_SPAWN_EGG);
@@ -819,6 +823,9 @@ public class RiderTabs {
 
             event.accept(MobsCore.AGENT_SPAWN_EGG);
             event.accept(MobsCore.BITTER_GAVV_SPAWN_EGG);
+
+
+        }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);

@@ -112,6 +112,11 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:shirowe_rider_core_id_cracked",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:buffa_rider_core_id_cracked",
+          "weight": 3
         }
       ],
       "rolls": {

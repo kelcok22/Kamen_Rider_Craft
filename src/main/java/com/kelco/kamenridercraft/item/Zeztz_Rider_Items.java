@@ -25,6 +25,14 @@ public class Zeztz_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
                .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
+        public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
+                () -> new RiderFormChangeItem(new Item.Properties(),0,"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
+                        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                        new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+                        .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
+
+
         public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
                 () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
         public static final DeferredItem<Item> ZEZTZ_CHESTPLATE = ITEMS.register("zeztz_troso",
