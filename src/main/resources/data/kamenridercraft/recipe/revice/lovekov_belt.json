@@ -10,10 +10,10 @@
 		"X": {
 			"item": "kamenridercraft:giff_junior_vistamp"
 		}, "C": {
-			"item": "kamenridercraft:rex_vistamp"
+			"item": "kamenridercraft:cobra_vistamp"
 		}
 	},
 	"result": {
-		"id": "kamenridercraft:vice_belt"
+		"id": "kamenridercraft:lovekov_belt"
 	}
 }

@@ -578,7 +578,7 @@ public class Revice_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.addAlternative(CONDOR_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.addAlternative(CONDOR_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_LEO_VISTAMP_VICE = ITEMS.register("white_leo_vistamp_vice",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_white_leo","vice","buddy_buckle_belt",
@@ -593,14 +593,15 @@ public class Revice_Rider_Items {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
-					.addAlternative(WHITE_LEO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					.addAlternative(WHITE_LEO_VISTAMP_VICE.get()).AddToList(VistampBar.PROTO_VISTAMP, 1).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> QUETZALCOATLUS_VISTAMP = ITEMS.register("quetzalcoatlus_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_quetzalcoatlus","revi","revice_driver_belt_q",
 					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
+					.AddToList(VistampBar.PROTO_VISTAMP, 1).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAJIKI_VISTAMP = ITEMS.register("kajiki_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
@@ -708,7 +709,7 @@ public class Revice_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAMMOTH_VISTAMP_CHINA = ITEMS.register("mammoth_vistamp_china",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 1).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIFF_JUNIOR_VISTAMP = ITEMS.register("giff_junior_vistamp",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
