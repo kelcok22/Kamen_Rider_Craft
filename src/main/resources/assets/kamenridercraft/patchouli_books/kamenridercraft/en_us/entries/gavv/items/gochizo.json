@@ -43,6 +43,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "tsurigummy_gochizo",
+			"title": "Tsuri-Gummy Gochizo",
+			"text": "Appears in:$(li)DX Rider Gochizo Special Set (2024, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#fishingummy)Fishingummy Assist$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsurigummy_gochizo",
+			"title": " ",
+			"text": "Obtained by eating $(l:misc/items/foods#gummi_candy)Gummi Candy$(/l) with a $(l:gavv/items/blank_gochizo)Blank Gochizo$(/l) in your inventory"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "zakuzakuchips_gochizo",
 			"title": "Zakuzakuchips Gochizo",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#zakuzakuchips)Zakuzakuchips Form$(/l)"
