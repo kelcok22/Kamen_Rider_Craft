@@ -15,6 +15,19 @@
 			"item": "kamenridercraft:impact_capsem",
 			"title": " ",
 			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stream_capsem",
+			"title": "Stream Capsem",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Used to craft Zeztz's $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Used to access Zeztz's $(l:zeztz/riders/zeztz#technolom_stream)Technolom Stream$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stream_capsem",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		}
 	]
 }
