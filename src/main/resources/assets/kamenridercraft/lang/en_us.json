@@ -4,6 +4,7 @@
 
   "kamenridercraft.container.enderchest": "Connected to your Ender Chest",
 
+"tab.kamenridercraft.egg_items": "Rider Spawn Eggs",
 "tab.kamenridercraft.misc_items": "Misc. Rider Items",
 "tab.kamenridercraft.rider_blocks": "Rider Blocks",
 "tab.kamenridercraft.rider_blocks_decor": "Rider Blocks Decor",
@@ -7529,6 +7530,7 @@
   "item.kamenridercraft.oshiruko_gochizo": "Oshiruko Gochizo",
 "item.kamenridercraft.charapaki_gochizo": "Charapaki Gochizo",
 "item.kamenridercraft.charapaki_gochizo_special": "Charapaki Gochizo (Special Ver.)",
+"item.kamenridercraft.tsurigummy_gochizo": "Tsuri-Gummy Gochizo",
 "item.kamenridercraft.umaibo_gochizo": "Umaibo Gochizo",
   "item.kamenridercraft.doranosuke_gochizo": "Doranosuke Gochizo",
   "item.kamenridercraft.mitaramotti_gochizo": "Mitaramotti Gochizo",
@@ -7566,6 +7568,7 @@
 "kamenridercraft:choco_treasure_gochizo.form": "Form: Choco T Assist",
 "kamenridercraft:charapaki_gochizo.form": "Form: Chocohone Form",
 "kamenridercraft:charapaki_gochizo_special.form": "Form: Chocohone Form (Special Ver.)",
+"kamenridercraft:tsurigummy_gochizo.form": "Form: Fishingummy Assist",
 "kamenridercraft:umaibo_gochizo.form": "Form: Shot Snack Form",
 "kamenridercraft:partea_gochizo.form": "Form: Partea Scone Form",
 
@@ -7643,6 +7646,13 @@
   "kamenridercraft.name.zeztz": "Rider: Kamen Rider Zeztz",
 
   "item.kamenridercraft.impact_capsem": "Impact Capsem",
+  "kamenridercraft:impact_capsem.form": "Form: Physicam Impact",
+  "item.kamenridercraft.stream_capsem": "Stream Capsem",
+  "kamenridercraft:stream_capsem.form": "Form: Technolom Stream",
+  "item.kamenridercraft.recovery_capsem": "Recovery Capsem",
+  "kamenridercraft:recovery_capsem.form": "Form: Esprim Recovery",
+  "item.kamenridercraft.wonder_capsem": "Wonder Capsem",
+  "kamenridercraft:wonder_capsem.form": "Form: Paradigm Wonder",
 
 "item.kamenridercraft.g_logo": "G Logo",
 "item.kamenridercraft.ghead": "G Helmet",

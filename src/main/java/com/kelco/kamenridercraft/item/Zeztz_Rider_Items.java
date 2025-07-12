@@ -35,7 +35,7 @@ public class Zeztz_Rider_Items {
             
         public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                        .Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
+                        .has_basic_model().AddToTabList(RiderTabs.ZEZTZ_TAB_ITEM));
 
         public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    
