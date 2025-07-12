@@ -64,6 +64,18 @@
     {
         "id": "pamhc2foodextended:cheesytacotortillachipsitem",
         "required": false
+    },
+    {
+        "id": "casualness_delight:potato_chip",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:senbei",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:sekibankiyaki",
+        "required": false
     }
   ]
 }
