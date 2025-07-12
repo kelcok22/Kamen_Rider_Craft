@@ -75,6 +75,10 @@
     {
         "id": "pamhc2foodextended:pineappleupsidedowncakeitem",
         "required": false
+    },
+    {
+        "id": "youkaishomecoming:udumbara_cake",
+        "required": false
     }
   ]
 }
