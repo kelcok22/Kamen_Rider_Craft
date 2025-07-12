@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "revice",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:giffard_rex_vistamp"
+	}, 
+	{
+	  "item": "kamenridercraft:bat_vistamp"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:mega_bat_vistamp"
+  }
+}

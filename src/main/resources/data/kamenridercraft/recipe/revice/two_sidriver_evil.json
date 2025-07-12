@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "group": "livevil",
   "pattern": [
-	  "XXX",
-	  "XCX",
-	  "XXX"
+	"XXX",
+	"XCX",
+	"XXX"
   ],
   "key": {
 	"X": {
 	  "item": "kamenridercraft:giff_junior_vistamp"
 	}, "C": {
-	  "item": "kamenridercraft:mega_bat_vistamp"
+	  "item": "kamenridercraft:bat_vistamp"
 	}
   },
   "result": {
-	"id": "kamenridercraft:revice_driver_evil"
+	"id": "kamenridercraft:two_sidriver_evil"
   }
 }

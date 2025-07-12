@@ -77,6 +77,13 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(KICKINGUMMY_PUNCHINGUMMY_GOCHIZO.get())
 					.AddToList(NEED_ITEM_KICKIN_PUNCHIN).AddToList(GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> FISHINGGUMMY_GOCHIZO = ITEMS.register("tsurigummy_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fishingummy","gavv","henshin_belt_gavv_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.FISH, 40, 0,true,false))
+					.AddToList(GUMMY,1).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO = ITEMS.register("zakuzakuchips_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_zakuzaku",
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)

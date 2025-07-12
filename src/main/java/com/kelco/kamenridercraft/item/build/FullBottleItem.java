@@ -25,6 +25,8 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static net.minecraft.util.parsing.packrat.Term.alternative;
+
 public class FullBottleItem extends RiderFormChangeItem {
 
   private Boolean HAZARD = false;
@@ -74,7 +76,9 @@ public class FullBottleItem extends RiderFormChangeItem {
               if (CanChange(player,belt,BELT)) {
                  RiderDriverItem.set_Form_Item(player.getItemBySlot(EquipmentSlot.FEET),Build_Rider_Items.FULL_BOTTLE.get(), 3);
                  super.use(level, player, usedHand);
-                }
+                }else if(!getAlternative().isEmpty()){
+                  super.use(level, player, usedHand);
+              }
             }
         }
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
