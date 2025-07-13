@@ -78,7 +78,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:buffa_rider_core_id_cracked",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside a $(l:geats/structures/jamar_garden)Jyamar Garden$(/l)"
 		},
 		{
 			"type": "patchouli:text",
