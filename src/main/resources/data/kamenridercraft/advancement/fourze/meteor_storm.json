@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:meteor_storm_switch"
 	},
-	"title": "Evolvin' Storm",
-	"description": "Transform into Meteor Storm",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.meteor_storm.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.meteor_storm.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

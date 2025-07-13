@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_metal"
 	},
-	"title": "There is no fair play in war…",
-	"description": "Transform into Kamen Rider Metal Build",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.metal_build.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.metal_build.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

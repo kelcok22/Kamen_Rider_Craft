@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_duke"
 	},
-	"title": "Power worthy of a God",
-	"description": "Transform into Kamen Rider Duke using the Sengoku Driver",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.duke_sengoku_driver.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.duke_sengoku_driver.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

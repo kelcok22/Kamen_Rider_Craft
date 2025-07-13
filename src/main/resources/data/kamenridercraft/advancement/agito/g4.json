@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g4_belt"
 	},
-	"title": "Rocket Man",
-	"description": "Transform into Kamen Rider G4",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g4.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g4.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

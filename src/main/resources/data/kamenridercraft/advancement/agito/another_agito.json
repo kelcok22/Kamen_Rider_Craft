@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ank_point"
 	},
-	"title": "Now there are two of them!",
-	"description": "Transform into Kamen Rider Another Agito",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.another_agito.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.another_agito.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

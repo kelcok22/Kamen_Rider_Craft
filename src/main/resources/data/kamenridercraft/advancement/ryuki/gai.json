@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_gai"
 	},
-	"title": "The worst Gai ever",
-	"description": "Transform into Kamen Rider Gai",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.gai.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.gai.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

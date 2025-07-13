@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:agito_trinity"
 	},
-	"title": "BELIEVE YOURSELF",
-	"description": "Transform into Agito Trinity Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.agito_trinity.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.agito_trinity.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

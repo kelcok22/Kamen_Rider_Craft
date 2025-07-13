@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shadow_charger"
 	},
-	"title": "Century King",
-	"description": "Transform into Shadow Moon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.shadow_moon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.shadow_moon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

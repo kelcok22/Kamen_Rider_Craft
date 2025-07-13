@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_killbus"
 	},
-	"title": "No! Bad Spider-Type Pet Robot!",
-	"description": "Transform into Kamen Rider Killbus",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.killbus.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.killbus.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

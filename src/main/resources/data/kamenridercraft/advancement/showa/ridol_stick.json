@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ridol"
 	},
-	"title": "Crown Splitter",
-	"description": "Obtain the Ridol Stick",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.ridol_stick.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.ridol_stick.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

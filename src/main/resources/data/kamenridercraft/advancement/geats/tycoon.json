@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_tycoon"
 	},
-	"title": "I Peace",
-	"description": "Transform into Kamen Rider Tycoon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.tycoon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.tycoon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

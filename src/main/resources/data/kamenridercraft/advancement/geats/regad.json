@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:zillion_driver"
 	  },
-	  "title": "With Regads, the end of the DGP",
-	  "description": "Transform into Kamen Rider Regad (Omega)",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.regad.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.regad.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

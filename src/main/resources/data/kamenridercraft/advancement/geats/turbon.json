@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_turbon"
 	},
-	"title": "Dead Meat",
-	"description": "Transform into Kamen Rider Turbon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.turbon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.turbon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

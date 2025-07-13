@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:titan_sword"
 	},
-	"title": "Calamity Titan",
-	"description": "Obtain the Titan Sword",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.titan_sword.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.titan_sword.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:proto_mega_ulorder_yellow"
 	},
-	"title": "Persona Dominator Y",
-	"description": "Transform into Kamen Rider Dark Necrom Yellow",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_yellow.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

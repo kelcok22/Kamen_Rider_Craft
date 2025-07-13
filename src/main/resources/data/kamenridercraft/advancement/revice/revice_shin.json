@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:true_rex_vistamp"
       },
-      "title": "The True Final Form",
-      "description": "Transform into Revice Shin",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.revice_shin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.revice_shin.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

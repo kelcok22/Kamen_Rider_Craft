@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gotchardriver_daybreak"
 	},
-	"title": "You have two choices",
-	"description": "Transform into Kamen Rider Gotchard Daybreak",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.gotchard_daybreak.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.gotchard_daybreak.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

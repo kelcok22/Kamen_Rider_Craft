@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genius_full_bottle"
 	},
-	"title": "60 Fullbottles sitting in the suit",
-	"description": "Transform into Build Genius",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.genius.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.genius.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

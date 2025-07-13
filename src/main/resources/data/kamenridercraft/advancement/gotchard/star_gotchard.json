@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:x_assemble_ride_chemy_card"
 	},
-	"title": "Wish Upon A Star",
-	"description": "Transform into Star Gotchard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.star_gotchard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.star_gotchard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

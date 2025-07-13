@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:fever_slot_raise_buckle"
 	  },
-	  "title": "Let's go gambling!",
-	  "description": "Obtain the Feverslot Buckle",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.feverslot.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.feverslot.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

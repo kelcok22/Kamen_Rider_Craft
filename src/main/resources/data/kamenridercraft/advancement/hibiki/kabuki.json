@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kabukidriver"
 	},
-	"title": "Performance Demon",
-	"description": "Transform into Kamen Rider Kabuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.kabuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.kabuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

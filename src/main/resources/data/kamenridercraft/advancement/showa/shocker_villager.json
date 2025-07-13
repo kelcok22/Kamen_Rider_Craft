@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shocker_emblem"
 	},
-	"title": "Approaching Shocker",
-	"description": "Interact with a Shocker Villager",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.shocker_villager.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.shocker_villager.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": true

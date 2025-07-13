@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hyper_muteki_gashat"
 	},
-	"title": "Time of Victory",
-	"description": "Transform into Ex-Aid Muteki Gamer",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.hyper_muteki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.hyper_muteki.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

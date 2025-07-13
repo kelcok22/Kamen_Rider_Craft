@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sword_of_logos_buckle_kenzan"
 	},
-	"title": "Strength is Justice!",
-	"description": "Transform into Kamen Rider Kenzan",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.kenzan.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.kenzan.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

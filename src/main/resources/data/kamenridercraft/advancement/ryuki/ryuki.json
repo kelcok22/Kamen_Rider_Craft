@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_ryuki"
 	},
-	"title": "Ssha!",
-	"description": "Transform into Kamen Rider Ryuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

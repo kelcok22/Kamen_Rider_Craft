@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:amazons_driver_sigma"
 	},
-	"title": "Chess Sigma",
-	"description": "Transform into Kamen Rider Amazon Sigma",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.amazon_sigma.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.amazon_sigma.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

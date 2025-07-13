@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:faiz_driver"
 	},
-	"title": "Ends Justifaiz the Means",
-	"description": "Transform into Kamen Rider Faiz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.faiz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.faiz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

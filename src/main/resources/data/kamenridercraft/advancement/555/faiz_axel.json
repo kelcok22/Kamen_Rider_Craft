@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:faiz_axel_mission_memory"
 	},
-	"title": "The people with no name",
-	"description": "Transform into Faiz Axel Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.faiz_axel.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.faiz_axel.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

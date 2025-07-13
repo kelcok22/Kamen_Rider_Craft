@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zero_specter_driver"
 	},
-	"title": "I will guide him",
-	"description": "Transform into Kamen Rider Zero Specter",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.zero_specter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.zero_specter.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

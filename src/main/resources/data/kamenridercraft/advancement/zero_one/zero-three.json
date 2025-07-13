@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zero_three_progrisekey"
 	},
-	"title": "The Third Singularity",
-	"description": "Transform into Kamen Rider Zero-Three",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-three.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-three.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

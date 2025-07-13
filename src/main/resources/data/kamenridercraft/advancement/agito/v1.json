@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v1_belt"
 	},
-	"title": "Totally not a Space Sheriff",
-	"description": "Transform into V1",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.v1.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.v1.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

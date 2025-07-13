@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:black_ring"
 	},
-	"title": "The Magician's Apprentice",
-	"description": "Transform into Kamen Rider Black Wizard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.black_wizard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.black_wizard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

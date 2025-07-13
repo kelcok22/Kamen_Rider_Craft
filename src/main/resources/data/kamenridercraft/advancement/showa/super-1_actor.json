@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "minecraft:emerald"
 	  },
-	  "title": "I Sure Do Love Paying My Taxes!",
-	  "description": "As Super-1, loot a bastion remnant",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.super-1_actor.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.super-1_actor.description"
+    },
 	  "frame": "challenge",
 	  "show_toast": true,
 	  "announce_to_chat": true,

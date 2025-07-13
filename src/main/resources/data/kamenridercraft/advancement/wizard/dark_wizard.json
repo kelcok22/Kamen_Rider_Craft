@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dark_ring"
 	},
-	"title": "Purple Guy!?",
-	"description": "Transform into Kamen Rider Dark Wizard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.dark_wizard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.dark_wizard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hazard_trigger"
 	},
-	"title": "Is this thing safe?",
-	"description": "Transform into one of Build's Hazard forms",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.hazard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.hazard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

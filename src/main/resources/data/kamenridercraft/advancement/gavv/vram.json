@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:vrastumgear"
 	},
-	"title": "Giga Pudding!",
-	"description": "Transform into Kamen Rider Vram",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.vram.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.vram.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

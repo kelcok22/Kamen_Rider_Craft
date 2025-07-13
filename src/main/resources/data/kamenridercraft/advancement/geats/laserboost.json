@@ -3,8 +3,12 @@
     "icon": {
   	  "id": "kamenridercraft:unite_grip"
     },
-    "title": "Oshi no Kitsune",
-    "description": "Transform into Geats LaserBoost",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.laserboost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.laserboost.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

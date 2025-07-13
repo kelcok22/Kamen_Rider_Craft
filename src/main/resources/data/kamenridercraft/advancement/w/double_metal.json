@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:metal_shaft"
 	},
-	"title": "Free your Heat",
-	"description": "Obtain the Metalshaft",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.double_metal.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.double_metal.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

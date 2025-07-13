@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:mega_bat_vistamp"
       },
-      "title": "Come alive",
-      "description": "Transform into Evil Marvelous",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.evil_marvelous.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.evil_marvelous.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

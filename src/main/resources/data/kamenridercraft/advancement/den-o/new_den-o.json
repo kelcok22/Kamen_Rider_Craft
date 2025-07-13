@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_strike"
 	},
-	"title": "My strength is for real",
-	"description": "Transform into Kamen Rider New Den-O",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.new_den-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.new_den-o.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

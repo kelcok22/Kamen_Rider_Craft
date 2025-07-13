@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gashacon_bugvisor_ii_lazer"
 	},
-	"title": "I'm on board!",
-	"description": "Transform into Lazer Level X",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.lazer_level_x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.lazer_level_x.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

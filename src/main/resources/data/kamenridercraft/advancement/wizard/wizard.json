@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:wizardriver"
 	},
-	"title": "Life is Showtime",
-	"description": "Transform into Kamen Rider Wizard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.wizard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.wizard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

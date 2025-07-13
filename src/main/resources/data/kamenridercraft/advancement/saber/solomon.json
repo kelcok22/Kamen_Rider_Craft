@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:solomon_boss_block"
 	},
-	"title": "Kings 11:43",
-	"description": "Defeat Kamen Rider Solomon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.solomon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.solomon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

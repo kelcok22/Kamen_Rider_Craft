@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gaia_belt"
 	},
-	"title": "Captain Planet",
-	"description": "Transform into Kamen Rider Gaia",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.gaia.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.gaia.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

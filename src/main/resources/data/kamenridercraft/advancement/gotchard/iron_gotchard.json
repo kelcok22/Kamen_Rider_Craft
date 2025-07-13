@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tenliner_ride_chemy_card"
 	},
-	"title": "I Can't Believe It's Not a Malgam!",
-	"description": "Transform into Iron Gotchard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.iron_gotchard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.iron_gotchard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

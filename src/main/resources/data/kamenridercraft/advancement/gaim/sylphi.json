@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_sylphi"
 	},
-	"title": "Your battle will never end",
-	"description": "Transform into Kamen Rider Sylphi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.sylphi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.sylphi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

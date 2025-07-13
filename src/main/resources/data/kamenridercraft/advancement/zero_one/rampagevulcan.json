@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rampage_gatling_progrisekey"
 	},
-	"title": "10000 rounds per minute",
-	"description": "Transform into RampageVulcan",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.rampagevulcan.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.rampagevulcan.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

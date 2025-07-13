@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_zonjis"
 	},
-	"title": "ShoWannabe",
-	"description": "Transform into Kamen Rider Zonjis",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.zonjis.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.zonjis.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

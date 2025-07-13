@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:garulu_saber"
 	},
-	"title": "Shout in the Moonlight",
-	"description": "Obtain the Garulu Saber",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.garulu_saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.garulu_saber.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

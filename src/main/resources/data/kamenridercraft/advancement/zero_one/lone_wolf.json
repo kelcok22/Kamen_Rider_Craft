@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dire_wolf_zetsumerisekey"
 	},
-	"title": "New driver who dis",
-	"description": "Transform into Vulcan Lone Wolf",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.lone_wolf.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.lone_wolf.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:desire_driver_x_geats"
 	  },
-	  "title": "Honk Honk",
-	  "description": "Transform into Kamen Rider XGeats",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.xgeats.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.xgeats.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

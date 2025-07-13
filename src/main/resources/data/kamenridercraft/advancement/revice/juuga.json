@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:juuga_driver"
       },
-      "title": "George Karizaki's Rider System",
-      "description": "Transform into Kamen Rider Juuga",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.juuga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.juuga.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

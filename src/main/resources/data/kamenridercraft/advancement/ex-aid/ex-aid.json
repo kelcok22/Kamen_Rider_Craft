@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_ex_aid"
 	},
-	"title": "I'll Clear with No Continues!",
-	"description": "Transform into Kamen Rider Ex-Aid",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.ex-aid.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.ex-aid.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

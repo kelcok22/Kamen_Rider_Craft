@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:grand_zi_o_ridewatch"
 	},
-	"title": "The True Power of Heisei",
-	"description": "Transform into Grand Zi-O",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.grand_zi-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.grand_zi-o.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

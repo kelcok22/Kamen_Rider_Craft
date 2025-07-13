@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_jam"
 	},
-	"title": "Disgrace of the Armored Riders",
-	"description": "Transform into Kamen Rider Jam",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.jam.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.jam.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

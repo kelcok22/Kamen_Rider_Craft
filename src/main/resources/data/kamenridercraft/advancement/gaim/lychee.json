@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lychee_lockseed"
 	},
-	"title": "Eat this, my ultimate sweets!",
-	"description": "Transform into Gridon Lychee Arms",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.lychee.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.lychee.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

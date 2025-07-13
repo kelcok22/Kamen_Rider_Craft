@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:leangle_buckle"
 	},
-	"title": "After him, Mukki!",
-	"description": "Transform into Kamen Rider Leangle",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.leangle.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.leangle.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

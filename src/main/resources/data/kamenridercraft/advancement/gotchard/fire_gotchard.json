@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gotchar_igniter"
 	},
-	"title": "What's your FIRE",
-	"description": "Transform into Fire Gotchard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.fire_gotchard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.fire_gotchard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

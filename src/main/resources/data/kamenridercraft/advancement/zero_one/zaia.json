@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zaia_thousandriver_zaia"
 	},
-	"title": "I am the President now.",
-	"description": "Defeat Kamen Rider Zaia",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.zaia.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.zaia.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,8 +3,12 @@
     "icon": {
   	  "id": "kamenridercraft:oneness_raise_buckle"
     },
-    "title": "Unlimited Colors",
-    "description": "Transform into Kamen Rider Geats Oneness",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.oneness.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.oneness.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

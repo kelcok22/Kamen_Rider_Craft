@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:magma_knuckle"
 	},
-	"title": "My magma is surging",
-	"description": "Transform into Cross-Z Magma",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.cross-z_magma.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.cross-z_magma.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

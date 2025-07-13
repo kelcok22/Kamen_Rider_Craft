@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ufo_x_ride_chemy_card"
 	},
-	"title": "Marvelous Occult",
-	"description": "Obtain all the Occult Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.occult_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.occult_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

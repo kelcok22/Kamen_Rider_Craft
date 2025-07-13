@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sclash_driver_rogue"
 	},
-	"title": "Are the T-shirts included?",
-	"description": "Transform into Kamen Rider Rogue",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.rogue.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.rogue.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

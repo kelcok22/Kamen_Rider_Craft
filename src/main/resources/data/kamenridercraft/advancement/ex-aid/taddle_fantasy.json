@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:taddle_fantasy_gashat"
 	},
-	"title": "Final Fantasy",
-	"description": "Transform into Brave Fantasy Gamer Level 50",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.taddle_fantasy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.taddle_fantasy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

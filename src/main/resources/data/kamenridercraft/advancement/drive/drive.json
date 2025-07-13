@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:drivedriver"
 	},
-	"title": "Start Your Engine!",
-	"description": "Transform into Kamen Rider Drive",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.drive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.drive.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ghost_driver"
 	},
-	"title": "My life is burning bright!",
-	"description": "Transform into Kamen Rider Ghost",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.ghost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.ghost.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

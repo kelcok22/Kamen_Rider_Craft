@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tokidriver"
 	},
-	"title": "War Demon",
-	"description": "Transform into Kamen Rider Touki (from the show!)",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.toki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.toki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

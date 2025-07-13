@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:basshaamagnum"
 	},
-	"title": "Innocent Trap",
-	"description": "Obtain the Basshaa Magnum",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.basshaa_magnum.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.basshaa_magnum.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

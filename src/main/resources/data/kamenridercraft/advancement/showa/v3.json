@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:double_typhoon"
 	},
-	"title": "26 Secrets",
-	"description": "Transform into Kamen Rider V3",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.v3.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.v3.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

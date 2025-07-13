@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:storious_boss_block"
 	},
-	"title": "More like Ceased to Existorious",
-	"description": "Defeat Kamen Rider Storious",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.storious.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.storious.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

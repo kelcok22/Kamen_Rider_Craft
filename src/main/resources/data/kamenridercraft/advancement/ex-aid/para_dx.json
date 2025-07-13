@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_paradx"
 	},
-	"title": "My heart is dancing",
-	"description": "Transform into Kamen Rider Para-DX Level 99",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.para_dx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.para_dx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

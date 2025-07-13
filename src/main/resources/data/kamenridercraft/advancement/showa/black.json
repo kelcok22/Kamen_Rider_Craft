@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:vital_charger"
 	},
-	"title": "Unforgivable!",
-	"description": "Transform into Kamen Rider Black",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.black.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.black.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

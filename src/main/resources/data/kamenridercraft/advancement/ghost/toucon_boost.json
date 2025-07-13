@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:boost_ghost_eyecon"
 	},
-	"title": "The Spirit of Combat",
-	"description": "Transform into Ghost Toucon Boost Damashii",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.toucon_boost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.toucon_boost.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

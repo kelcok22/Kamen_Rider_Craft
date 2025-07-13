@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kickhopper_rider_belt"
 	},
-	"title": "Have you… laughed at me…?",
-	"description": "Transform into Kamen Rider KickHopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.kickhopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.kickhopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

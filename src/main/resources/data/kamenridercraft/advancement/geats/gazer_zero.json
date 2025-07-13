@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:zillion_driver_gazer_zero"
 	  },
-	  "title": "Approaching DGP",
-	  "description": "Transform into Kamen Rider Gazer Zero",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.gazer_zero.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.gazer_zero.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

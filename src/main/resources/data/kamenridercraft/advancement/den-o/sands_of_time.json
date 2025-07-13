@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:rider_pass"
 	  },
-	  "title": "I've decided... I will be strong",
-	  "description": "Enter the Sands of Time",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.sands_of_time.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.sands_of_time.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

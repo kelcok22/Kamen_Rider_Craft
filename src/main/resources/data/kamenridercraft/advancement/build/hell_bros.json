@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:nebulasteam_gun"
 	},
-	"title": "All for Nanba Industries",
-	"description": "Defeat the Hell Bros",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.hell_bros.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.hell_bros.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

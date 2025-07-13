@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:jaou_dragon_wonder_ride_book"
 	},
-	"title": "Better too big than too small",
-	"description": "Transform into Calibur Jaou Dragon",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.jaou_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.jaou_dragon.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

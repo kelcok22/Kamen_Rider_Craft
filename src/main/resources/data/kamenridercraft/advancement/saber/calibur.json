@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:jaken_caliburdriver"
 	},
-	"title": "Your story ends here.",
-	"description": "Transform into Kamen Rider Calibur",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.calibur.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.calibur.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

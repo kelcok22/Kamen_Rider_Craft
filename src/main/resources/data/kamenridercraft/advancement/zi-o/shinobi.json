@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shinobi_driver"
 	},
-	"title": "IZANAGI",
-	"description": "Transform into Kamen Rider Shinobi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.shinobi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.shinobi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

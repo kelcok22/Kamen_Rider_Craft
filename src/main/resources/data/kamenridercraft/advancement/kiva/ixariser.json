@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ixariser"
 	},
-	"title": "Intercept X Attacker Ver. XI",
-	"description": "Obtain the Ixariser",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.ixariser.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.ixariser.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

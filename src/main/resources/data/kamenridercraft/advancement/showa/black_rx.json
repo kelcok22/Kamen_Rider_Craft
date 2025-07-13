@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sun_riser"
 	},
-	"title": "Child of the Sun",
-	"description": "Transform into Kamen Rider Black RX",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.black_rx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.black_rx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

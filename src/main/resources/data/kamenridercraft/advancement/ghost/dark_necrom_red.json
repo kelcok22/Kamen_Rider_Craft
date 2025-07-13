@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:proto_mega_ulorder_red"
 	},
-	"title": "Persona Dominator R",
-	"description": "Transform into Kamen Rider Dark Necrom Red",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_red.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_red.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

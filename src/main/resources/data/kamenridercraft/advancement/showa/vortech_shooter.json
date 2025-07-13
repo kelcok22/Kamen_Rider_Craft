@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:vortech_shooter"
 	},
-	"title": "Hard Shot",
-	"description": "Obtain the Vortech Shooter",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.vortech_shooter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.vortech_shooter.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

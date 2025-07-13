@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g3_mild_belt"
 	},
-	"title": "Working on a Budget",
-	"description": "Transform into Kamen Rider G3 Mild",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g3_mild.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g3_mild.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

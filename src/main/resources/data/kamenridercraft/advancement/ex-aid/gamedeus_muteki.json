@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_gamedeus_muteki"
 	},
-	"title": "God of Games",
-	"description": "Transform into Gamedeus Muteki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.gamedeus_muteki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.gamedeus_muteki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:todorokidriver"
 	},
-	"title": "Roaring Demon",
-	"description": "Transform into Kamen Rider Todoroki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.todoroki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.todoroki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

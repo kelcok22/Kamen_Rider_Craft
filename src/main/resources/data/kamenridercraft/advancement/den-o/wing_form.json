@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_wing"
 	},
-	"title": "Advent, to the top...",
-	"description": "Transform into Den-O Wing Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.wing_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.wing_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

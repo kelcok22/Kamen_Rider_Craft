@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:seiken_swordriver_desast"
 	},
-	"title": "Calamity Strike",
-	"description": "Transform into Kamen Rider Desast",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.desast.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.desast.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

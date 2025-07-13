@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:blood_vade_vistamp"
       },
-      "title": "Invader of the Simulation",
-      "description": "Transform into Blood Vade",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.blood_vade.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.blood_vade.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

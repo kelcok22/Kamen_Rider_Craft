@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:boost_mkii_raise_buckle"
 	},
-	"title": "1+1+1+1+1=2",
-	"description": "Transform into Geats Boost Mark II",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.boost_markii.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.boost_markii.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

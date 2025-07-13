@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:blizzardsorbei_gochizo"
 	},
-	"title": "Brain Freeze",
-	"description": "Transform into Gavv Blizzardsorbet",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.blizzardsorbet.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.blizzardsorbet.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

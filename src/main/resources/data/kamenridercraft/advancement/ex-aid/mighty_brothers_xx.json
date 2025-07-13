@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mighty_brothers_xx_gashat"
 	},
-	"title": "Let's Try Together",
-	"description": "Transform into Ex-Aid Double Action Gamer Level X",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.mighty_brothers_xx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.mighty_brothers_xx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

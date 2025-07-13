@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ginga_oh_driver"
 	},
-	"title": "GanGanGiGin GingaOh",
-	"description": "Defeat Super GingaOh",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.super_gingaoh.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.super_gingaoh.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

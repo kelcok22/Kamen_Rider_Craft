@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zx_belt"
 	},
-	"title": "So I'm a ninja, so what?",
-	"description": "Transform into Kamen Rider ZX",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.zx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.zx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

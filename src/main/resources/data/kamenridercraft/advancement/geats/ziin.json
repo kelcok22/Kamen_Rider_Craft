@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:ziin_raise_riser_card"
 	  },
-	  "title": "Pfft. Screw Gravity",
-	  "description": "Transform into Kamen Rider Ziin",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.ziin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.ziin.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

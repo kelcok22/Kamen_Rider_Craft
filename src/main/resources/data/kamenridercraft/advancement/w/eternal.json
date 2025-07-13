@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lostdriver_eternal"
 	},
-	"title": "Enjoy Hell",
-	"description": "Transform into Kamen Rider Eternal",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.eternal.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.eternal.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

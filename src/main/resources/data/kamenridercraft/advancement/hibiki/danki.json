@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dankidriver"
 	},
-	"title": "Dank Memes",
-	"description": "Transform into Kamen Rider Danki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.danki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.danki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

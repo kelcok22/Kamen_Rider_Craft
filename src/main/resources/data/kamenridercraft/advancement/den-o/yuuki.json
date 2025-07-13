@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_yuuki"
 	},
-	"title": "Hundreds of years, I think",
-	"description": "Transform into Kamen Rider Yuuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.yuuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.yuuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chalice_rouzer"
 	},
-	"title": "Go on and say it, I will kill you!",
-	"description": "Transform into Kamen Rider Chalice",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.chalice.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.chalice.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

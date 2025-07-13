@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:denkamen_sword"
 	},
-	"title": "Real-Action",
-	"description": "Transform into Den-O Liner Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.liner_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.liner_form.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

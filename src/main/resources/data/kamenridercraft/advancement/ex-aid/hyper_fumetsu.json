@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hyper_fumetsu_gashat"
 	},
-	"title": "The Ultimate Cheat Game",
-	"description": "Transform into Genm Hyper Fumetsu Gamer",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.hyper_fumetsu.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.hyper_fumetsu.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

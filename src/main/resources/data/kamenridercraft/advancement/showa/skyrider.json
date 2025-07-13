@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tornado"
 	},
-	"title": "Sailing Jump!",
-	"description": "Transform into Skyrider",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.skyrider.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.skyrider.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

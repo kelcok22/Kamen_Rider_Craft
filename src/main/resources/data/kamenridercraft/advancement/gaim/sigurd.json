@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genesis_driver_sigurd"
 	},
-	"title": "Hey kid, wanna buy some locks?",
-	"description": "Transform into Kamen Rider Sigurd",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.sigurd.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.sigurd.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

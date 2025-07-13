@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_nico_snipe"
 	},
-	"title": "Supreme, Strongest, Genius!",
-	"description": "Transform into Kamen Rider Nico Snipe",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.nico_snipe.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.nico_snipe.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

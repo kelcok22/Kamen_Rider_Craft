@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_rod"
 	},
-	"title": "Mind if I reel you in?",
-	"description": "Transform into Den-O Rod Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.rod_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.rod_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

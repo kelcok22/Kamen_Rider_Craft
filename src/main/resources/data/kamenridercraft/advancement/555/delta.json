@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:delta_driver"
 	},
-	"title": "DELTA STRIP",
-	"description": "Transform into Kamen Rider Delta",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.delta.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.delta.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_kurokage"
 	},
-	"title": "So you never transform again!",
-	"description": "Transform into Kamen Rider Kurokage",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.kurokage.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.kurokage.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

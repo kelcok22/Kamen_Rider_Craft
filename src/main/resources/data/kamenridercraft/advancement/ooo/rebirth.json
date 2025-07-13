@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rebirth_driver"
 	},
-	"title": "Karamiso?",
-	"description": "Transform into Kamen Rider Rebirth",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.rebirth.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.rebirth.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

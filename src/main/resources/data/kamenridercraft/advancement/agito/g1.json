@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g1_belt"
 	},
-	"title": "Chou Henshin't",
-	"description": "Transform into Kamen Rider G1",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g1.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g1.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

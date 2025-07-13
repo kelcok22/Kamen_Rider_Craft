@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:robo_core"
 	},
-	"title": "Prince of Sadness",
-	"description": "Transform into Roborider",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.roborider.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.roborider.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

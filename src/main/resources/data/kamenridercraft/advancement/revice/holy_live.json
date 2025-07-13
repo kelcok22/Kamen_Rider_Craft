@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:holy_wing_vistamp"
       },
-      "title": "WINGS TO FRY! WINGS TO FRY!",
-      "description": "Transform into Kamen Rider Holy Live",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.holy_live.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.holy_live.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

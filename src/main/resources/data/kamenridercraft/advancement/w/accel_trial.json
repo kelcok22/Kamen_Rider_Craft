@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:trial_memory"
 	},
-	"title": "9.9 Seconds Until Your Despair",
-	"description": "Transform into Accel Trial",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.accel_trial.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.accel_trial.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

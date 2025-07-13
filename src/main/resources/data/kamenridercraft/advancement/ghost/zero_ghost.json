@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zero_ghost_driver"
 	},
-	"title": "Superior Ghost Hunter",
-	"description": "Transform into Kamen Rider Zero Ghost",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.zero_ghost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.zero_ghost.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

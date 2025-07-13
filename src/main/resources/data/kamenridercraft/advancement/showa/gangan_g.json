@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gangan_g_belt"
 	},
-	"title": "gg ez",
-	"description": "Transform into GanGan G",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.gangan_g.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.gangan_g.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

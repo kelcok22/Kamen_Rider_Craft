@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hattari_driver"
 	},
-	"title": "This isn't a bluff, this is real!",
-	"description": "Transform into Kamen Rider Hattari",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.hattari.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.hattari.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

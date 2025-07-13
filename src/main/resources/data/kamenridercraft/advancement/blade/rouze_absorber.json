@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rouze_absorber"
 	},
-	"title": "Wanna Be Stronger",
-	"description": "Obtain the Rouze Absorber",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.rouze_absorber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.rouze_absorber.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

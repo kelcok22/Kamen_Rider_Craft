@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:new_ghost_driver"
 	},
-	"title": "Runs in the Family",
-	"description": "Transform into Kamen Rider New Ghost",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

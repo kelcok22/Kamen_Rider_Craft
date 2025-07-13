@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zi_o_ii_ridewatch"
 	},
-	"title": "Trust yourself. Literally",
-	"description": "Transform into Zi-O II",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o_ii.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o_ii.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

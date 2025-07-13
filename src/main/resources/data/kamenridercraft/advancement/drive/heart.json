@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:drivedriver_heart"
 	},
-	"title": "Sheer Heart Attack",
-	"description": "Transform into Kamen Rider Heart",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.heart.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.heart.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:typhoon_ichigo"
 	},
-	"title": "Rider… Henshin!",
-	"description": "Transform into Kamen Rider Ichigo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.ichigo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.ichigo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

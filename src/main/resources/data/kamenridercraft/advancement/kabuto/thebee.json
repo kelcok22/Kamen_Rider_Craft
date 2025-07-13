@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:thebee_zecter"
 	},
-	"title": "Sting like TheBee",
-	"description": "Transform into Kamen Rider TheBee",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.thebee.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.thebee.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

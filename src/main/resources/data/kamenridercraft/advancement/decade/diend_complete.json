@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:k_touch_diend"
 	},
-	"title": "Treasure Sniper",
-	"description": "Transform into Diend Complete Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.diend_complete.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.diend_complete.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:birth_driver_x"
 	},
-	"title": "Please Insert 3 Medals",
-	"description": "Transform into Kamen Rider Birth X",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.birth_x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.birth_x.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

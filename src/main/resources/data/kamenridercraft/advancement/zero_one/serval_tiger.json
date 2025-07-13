@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:serval_tiger_zetsumerisekey"
 	},
-	"title": "I'm a big cat now",
-	"description": "Defeat the Serval Tiger Sold Magia",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.serval_tiger.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.serval_tiger.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

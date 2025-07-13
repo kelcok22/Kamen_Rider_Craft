@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:eden_driver_lucifer"
 	},
-	"title": "Do you want to have a bad time?",
-	"description": "Transform into Kamen Rider Lucifer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.lucifer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.lucifer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

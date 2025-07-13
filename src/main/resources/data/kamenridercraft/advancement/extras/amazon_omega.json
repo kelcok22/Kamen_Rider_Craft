@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:amazons_driver_omega"
 	},
-	"title": "Armour Zone",
-	"description": "Transform into Kamen Rider Amazon Omega",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.amazon_omega.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.amazon_omega.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

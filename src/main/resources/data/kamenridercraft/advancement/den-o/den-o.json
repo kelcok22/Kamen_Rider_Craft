@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_sword"
 	},
-	"title": "I... have arrived!",
-	"description": "Transform into Kamen Rider Den-O",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.den-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.den-o.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

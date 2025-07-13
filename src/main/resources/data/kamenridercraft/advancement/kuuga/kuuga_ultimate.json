@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kuuga_ultimate"
 	},
-	"title": "Ultimate Darkness",
-	"description": "Transform into Kuuga Ultimate",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_ultimate.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_ultimate.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

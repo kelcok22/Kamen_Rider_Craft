@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:survive_rekka"
 	},
-	"title": "revolution",
-	"description": "Transform into Ryuki or Ryuga Survive",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.survive_rekka.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.survive_rekka.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

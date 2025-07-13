@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:faiz_blaster_mission_memory"
 	},
-	"title": "Eyes Glazing Over",
-	"description": "Transform into Faiz Blaster Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.faiz_blaster.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.faiz_blaster.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

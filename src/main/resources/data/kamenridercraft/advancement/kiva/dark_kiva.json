@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:darkkivadriver"
 	},
-	"title": "Sins of the Father",
-	"description": "Transform into Kamen Rider Dark Kiva",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.dark_kiva.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.dark_kiva.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ohma_zi_o_ridewatch"
 	},
-	"title": "Heisei will Never End",
-	"description": "Transform into Zi-O OhmaForm",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.ohmaform.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.ohmaform.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

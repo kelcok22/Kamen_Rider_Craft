@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ooodriver"
 	},
-	"title": "Count the Medals, 1, 2, and 3",
-	"description": "Transform into Kamen Rider OOO",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.ooo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.ooo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

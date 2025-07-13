@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_gaim"
 	},
-	"title": "This is my stage!",
-	"description": "Transform into Kamen Rider Gaim",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.gaim.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.gaim.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

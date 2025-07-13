@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:muez_driver"
 	},
-	"title": "The Devil is in the DetAIls",
-	"description": "Transform into Kamen Rider Muez",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.muez.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.muez.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

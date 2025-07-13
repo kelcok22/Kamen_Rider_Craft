@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:goukidriver"
 	},
-	"title": "Manly Demon",
-	"description": "Transform into Kamen Rider Gouki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.gouki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.gouki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

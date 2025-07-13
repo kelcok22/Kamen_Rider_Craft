@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_blood"
 	},
-	"title": "There will be Blood",
-	"description": "Transform into Kamen Rider Blood",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.blood.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.blood.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

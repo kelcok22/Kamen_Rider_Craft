@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evol_x_full_bottle"
 	},
-	"title": "Not Phase 10, Phase \"X\"",
-	"description": "Transform into Evol-X",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.evol-x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.evol-x.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

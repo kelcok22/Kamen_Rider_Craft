@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:alternative_v_buckle"
 	},
-	"title": "Dead End",
-	"description": "Transform into Alternative",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.alternative.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.alternative.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

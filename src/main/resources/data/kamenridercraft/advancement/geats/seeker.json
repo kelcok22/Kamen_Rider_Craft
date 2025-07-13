@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_seeker"
 	},
-	"title": "Shikanoko Nokonoko Koshitantan",
-	"description": "Transform into Kamen Rider Seeker",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.seeker.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.seeker.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

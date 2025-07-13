@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:super_taka_medal"
 	},
-	"title": "Super! Super!! Super!!!",
-	"description": "Obtain the Super Taka, Super Tora, and Super Batta Core Medals",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.super_tatoba.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.super_tatoba.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

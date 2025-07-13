@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_butchi"
 	},
-	"title": "One for the Pound",
-	"description": "Transform into Kamen Rider Butchi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.butchi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.butchi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

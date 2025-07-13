@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:arcdriver"
 	},
-	"title": "Doron Doron",
-	"description": "Transform into Kamen Rider Arc",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.arc.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.arc.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

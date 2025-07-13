@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ginga_miridewatch"
 	},
-	"title": "It's just a meteor, or is it?",
-	"description": "Defeat Kamen Rider Ginga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.ginga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.ginga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

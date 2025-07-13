@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_baron"
 	},
-	"title": "Knight of Spear",
-	"description": "Transform into Kamen Rider Baron",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.baron.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.baron.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

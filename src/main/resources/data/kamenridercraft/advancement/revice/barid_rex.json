@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:barid_rex_vistamp"
       },
-      "title": "Hi! My name is!",
-      "description": "Transform into Revi Barid Rex Genome",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.barid_rex.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.barid_rex.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:garren_buckle"
 	},
-	"title": "My body is falling apart!",
-	"description": "Transform into Kamen Rider Garren",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.garren.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.garren.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

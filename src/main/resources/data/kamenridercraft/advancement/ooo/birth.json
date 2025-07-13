@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:birth_driver"
 	},
-	"title": "Reverse/Re:birth",
-	"description": "Transform into Kamen Rider Birth",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.birth.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.birth.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

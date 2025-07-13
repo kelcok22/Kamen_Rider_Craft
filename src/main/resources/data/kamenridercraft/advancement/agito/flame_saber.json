@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:flame_saber"
 	},
-	"title": "Saber Brake",
-	"description": "Obtain the Flame Saber",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.flame_saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.flame_saber.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evolution_paradoxa"
 	},
-	"title": "take it a try",
-	"description": "Transform into Wild Chalice",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.wild_chalice.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.wild_chalice.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

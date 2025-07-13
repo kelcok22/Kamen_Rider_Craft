@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_verde"
 	},
-	"title": "The Yoyo Master",
-	"description": "Transform into Kamen Rider Verde",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.verde.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.verde.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

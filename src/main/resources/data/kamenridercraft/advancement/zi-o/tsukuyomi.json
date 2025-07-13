@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_tsukuyomi"
 	},
-	"title": "Moonlight Legend",
-	"description": "Transform into Kamen Rider Tsukuyomi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.tsukuyomi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.tsukuyomi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

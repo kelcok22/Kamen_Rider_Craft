@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sai_medal"
 	},
-	"title": "Sun Goes Up",
-	"description": "Obtain the Sai, Gorilla, and Zou Core Medals",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.sagohzo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.sagohzo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

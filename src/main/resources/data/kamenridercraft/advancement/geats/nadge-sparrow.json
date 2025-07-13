@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_nudge_sparrow"
 	},
-	"title": "Um, aktchually,",
-	"description": "Transform into Kamen Rider Nadge-Sparrow",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.nadge-sparrow.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.nadge-sparrow.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

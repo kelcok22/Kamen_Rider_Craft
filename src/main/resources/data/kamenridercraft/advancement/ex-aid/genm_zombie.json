@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gashacon_bugvisor_genmu"
 	},
-	"title": "Death the Crisis",
-	"description": "Transform into Genm Zombie Gamer Level X",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm_zombie.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm_zombie.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

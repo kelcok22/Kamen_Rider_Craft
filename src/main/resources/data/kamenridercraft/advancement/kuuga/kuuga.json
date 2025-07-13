@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:arcle"
 	},
-	"title": "Please Watch My Henshin!",
-	"description": "Transform into Kamen Rider Kuuga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

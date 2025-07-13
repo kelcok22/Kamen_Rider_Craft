@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_fifteen"
 	},
-	"title": "Showa vs Heisei",
-	"description": "Transform into Kamen Rider Fifteen",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.fifteen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.fifteen.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

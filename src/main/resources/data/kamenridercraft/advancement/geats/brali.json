@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_brali"
 	},
-	"title": "No daughter?",
-	"description": "Transform into Kamen Rider Brali",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.brali.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.brali.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,8 +3,12 @@
     "icon": {
   	"id": "kamenridercraft:jyamashin_wish_card"
     },
-    "title": "Even if I die...I will crush you!",
-    "description": "Transform into Buffa Fever Zombie Form (Jyamashin)",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.jyamashin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.jyamashin.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

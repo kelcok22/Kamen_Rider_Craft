@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:necrom_ghost_eyecon"
 	},
-	"title": "Listen to the call of your heart",
-	"description": "Transform into Kamen Rider Necrom",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.necrom.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.necrom.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:eyecon_driver_g"
 	},
-	"title": "Dai Henge!",
-	"description": "Transform into Ghost Grateful Damashii",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.grateful.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.grateful.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

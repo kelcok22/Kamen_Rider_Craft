@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:chimera_driver"
       },
-      "title": "My dad is Mr. Heisei Rider",
-      "description": "Transform into Kamen Rider Chimera",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.chimera.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.chimera.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

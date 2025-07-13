@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dragonic_knight_wonder_ride_book"
 	},
-	"title": "Dragon Quest",
-	"description": "Transform into Saber Dragonic Knight",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.dragonic_knight.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.dragonic_knight.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shining_caliber_summoned"
 	},
-	"title": "Burning Bomber",
-	"description": "Obtain the Shining Calibur (Single)",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.shining_caliber_single.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.shining_caliber_single.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

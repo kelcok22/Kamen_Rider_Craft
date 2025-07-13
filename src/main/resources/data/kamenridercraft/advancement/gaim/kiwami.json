@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kiwami_lockseed"
 	},
-	"title": "Ranbu Escalation",
-	"description": "Transform into Gaim Kiwami Arms",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.kiwami.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.kiwami.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

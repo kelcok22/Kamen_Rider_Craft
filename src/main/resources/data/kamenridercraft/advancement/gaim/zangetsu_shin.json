@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genesis_driver_zangetsu_shin"
 	},
-	"title": "Brotherly Love",
-	"description": "Transform into Kamen Rider Zangetsu Shin",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu_shin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu_shin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

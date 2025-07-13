@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:decadriver"
 	},
-	"title": "A Passing Through Kamen Rider",
-	"description": "Transform into Kamen Rider Decade",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.decade.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.decade.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

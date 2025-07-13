@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zangetsu_kachidoki_lockseed"
 	},
-	"title": "Noblesse Oblige",
-	"description": "Transform into Zangetsu Kachidoki Arms",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu_kachidoki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu_kachidoki.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

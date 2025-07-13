@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kaixa_driver"
 	},
-	"title": "existence",
-	"description": "Transform into Kamen Rider Kaixa",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.kaixa.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.kaixa.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

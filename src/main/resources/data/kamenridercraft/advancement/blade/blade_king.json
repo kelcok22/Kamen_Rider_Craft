@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evolution_caucasus"
 	},
-	"title": "Royal Straight Flush",
-	"description": "Transform into Blade King Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.blade_king.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.blade_king.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

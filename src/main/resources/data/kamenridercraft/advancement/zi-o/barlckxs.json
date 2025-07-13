@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_barlckxs"
 	},
-	"title": "It's Pronounced バールクス",
-	"description": "Transform into Kamen Rider Barlckxs",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.barlckxs.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.barlckxs.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

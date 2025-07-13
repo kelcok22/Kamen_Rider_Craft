@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:century_king_sun_driver"
 	},
-	"title": "Did you see the sunrise?",
-	"description": "Transform into Kamen Rider Black Sun",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.black_sun.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.black_sun.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

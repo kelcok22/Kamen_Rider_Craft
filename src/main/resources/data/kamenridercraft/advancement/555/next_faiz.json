@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:faiz_driver_next"
 	},
-	"title": "Open Your Eyes...",
-	"description": "Transform into Kamen Rider Next Faiz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.next_faiz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.next_faiz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:whitewizardriver"
 	},
-	"title": "You did well not to lose hope!",
-	"description": "Defeat Kamen Rider Wiseman",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.wiseman.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.wiseman.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

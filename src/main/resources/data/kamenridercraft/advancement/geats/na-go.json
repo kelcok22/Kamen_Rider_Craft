@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_na_go"
 	},
-	"title": "Beat of my Life",
-	"description": "Transform into Kamen Rider Na-Go",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.na-go.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.na-go.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_ax"
 	},
-	"title": "My strength has made you cry!",
-	"description": "Transform into Den-O Ax Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.ax_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.ax_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

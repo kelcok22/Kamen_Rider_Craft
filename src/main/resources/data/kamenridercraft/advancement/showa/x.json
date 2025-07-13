@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ridol"
 	},
-	"title": "Deep Sea Cyborg",
-	"description": "Transform into Kamen Rider X",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.x.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

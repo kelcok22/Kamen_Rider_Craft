@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shining_hopper_progrisekey"
 	},
-	"title": "When I shine, darkness fades!",
-	"description": "Transform into Zero-One Shining Hopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.shining_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.shining_hopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

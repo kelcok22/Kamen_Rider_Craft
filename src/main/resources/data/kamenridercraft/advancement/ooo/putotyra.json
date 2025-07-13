@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ptera_medal"
 	},
-	"title": "POWER to TEARER",
-	"description": "Obtain the Ptera, Tricera, and Tyranno Core Medals",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.putotyra.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.putotyra.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

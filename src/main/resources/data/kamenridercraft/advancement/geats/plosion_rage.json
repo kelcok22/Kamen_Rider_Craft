@@ -3,8 +3,12 @@
     "icon": {
   	"id": "kamenridercraft:plosion_rage_raise_buckle"
     },
-    "title": "CREATORs",
-    "description": "Transform into Buffa Plosion Rage",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.plosion_rage.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.plosion_rage.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

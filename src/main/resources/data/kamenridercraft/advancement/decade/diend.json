@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:diendriver"
 	},
-	"title": "It'll only hurt for a moment",
-	"description": "Transform into Kamen Rider Diend",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.diend.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.diend.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

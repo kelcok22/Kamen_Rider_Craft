@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:yomotsu_heguri_lockseed"
 	},
-	"title": "Point of No Return",
-	"description": "Transform into Kamen Rider Ryugen Yomi",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.yomotsuheguri.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.yomotsuheguri.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

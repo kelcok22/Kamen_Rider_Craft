@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_fuuma"
 	},
-	"title": "Ninja Gaiden",
-	"description": "Transform into Kamen Rider Fuma",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.fuma.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.fuma.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

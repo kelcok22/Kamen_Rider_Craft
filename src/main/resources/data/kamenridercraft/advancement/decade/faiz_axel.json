@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:faiz_axel_card"
 	},
-	"title": "Clock Up, more like Start Up",
-	"description": "Transform into Decade Faiz Axel Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.faiz_axel.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.faiz_axel.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

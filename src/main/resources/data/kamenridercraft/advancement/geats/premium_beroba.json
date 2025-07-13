@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:beroba_black_raise_riser_card"
 	  },
-	  "title": "Unhappiness suits you",
-	  "description": "Transform into Premium Beroba",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.premium_beroba.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.premium_beroba.description"
+    },
 	  "frame": "goal",
 	  "show_toast": true,
 	  "announce_to_chat": true,

@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:vision_driver_gazer"
 	  },
-	  "title": "Non-fiction",
-	  "description": "Transform into Kamen Rider Gazer",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.gazer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.gazer.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

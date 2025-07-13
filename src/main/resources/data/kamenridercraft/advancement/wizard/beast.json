@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:beastdriver"
 	},
-	"title": "Life is Breakfast Time",
-	"description": "Transform into Kamen Rider Beast",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.beast.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.beast.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_idunn"
 	},
-	"title": "Give in to Temptation",
-	"description": "Transform into Kamen Rider Idunn",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.idunn.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.idunn.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

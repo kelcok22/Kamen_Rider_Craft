@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:vision_driver_jyamato_glare"
 	  },
-	  "title": "4 Eye Clover",
-	  "description": "Transform into Kamen Rider Jyamato Gazer",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.jyamato_gazer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.jyamato_gazer.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

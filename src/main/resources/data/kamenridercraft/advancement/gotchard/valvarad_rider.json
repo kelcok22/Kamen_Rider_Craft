@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:valvaradriver"
 	},
-	"title": "Speed Demon",
-	"description": "Transform into Kamen Rider Valvarad",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_rider.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.valvarad_rider.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zeronos_zero_card"
 	},
-	"title": "Sakurai... what a lovely name...",
-	"description": "Transform into Zeronos Zero Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.zero_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.zero_form.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

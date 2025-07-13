@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:chimera_driver_daimon"
       },
-      "title": "Game On!",
-      "description": "Transform into Kamen Rider Daimon",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.daimon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.daimon.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

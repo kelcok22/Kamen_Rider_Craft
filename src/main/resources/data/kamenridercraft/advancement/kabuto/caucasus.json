@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:caucasus_zecter"
 	},
-	"title": "God, Speed, Love",
-	"description": "Defeat Kamen Rider Caucasus",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.caucasus.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.caucasus.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

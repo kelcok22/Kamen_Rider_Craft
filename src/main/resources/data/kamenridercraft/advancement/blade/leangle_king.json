@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evolution_tarantula"
 	},
-	"title": "Round 20 begins now...",
-	"description": "Transform into Leangle King Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.leangle_king.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.leangle_king.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

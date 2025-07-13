@@ -17,11 +17,15 @@
     }
   },
   "display": {
-    "description": "Defeat White Woz",
     "icon": {
       "id": "kamenridercraft:woz_miridewatch"
     },
-    "title": "Don't eat the Ridewatches",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.white_woz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.white_woz.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

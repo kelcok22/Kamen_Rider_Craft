@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_ryuga"
 	},
-	"title": "Man in the Mirror",
-	"description": "Transform into Kamen Rider Ryuga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

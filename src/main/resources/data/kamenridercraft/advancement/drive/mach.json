@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mach_driver_honoh"
 	},
-	"title": "It’s time for Superstar Action!",
-	"description": "Transform into Kamen Rider Mach",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.mach.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.mach.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

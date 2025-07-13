@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_knight"
 	},
-	"title": "I have no right to hesitate",
-	"description": "Transform into Kamen Rider Knight",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.knight.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.knight.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

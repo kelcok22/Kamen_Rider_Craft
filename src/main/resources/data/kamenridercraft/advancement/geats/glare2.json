@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:vision_driver_glare2"
 	  },
-	  "title": "Do the Worm!",
-	  "description": "Transform into Kamen Rider Glare2",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.glare2.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.glare2.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

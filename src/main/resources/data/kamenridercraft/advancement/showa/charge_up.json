@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:charge_up"
 	},
-	"title": "I'm Strongest now",
-	"description": "Transform into Stronger Charge Up",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.charge_up.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.charge_up.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

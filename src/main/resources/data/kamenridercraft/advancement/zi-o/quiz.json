@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:quiz_driver"
 	},
-	"title": "Here's your question",
-	"description": "Transform into Kamen Rider Quiz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.quiz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.quiz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

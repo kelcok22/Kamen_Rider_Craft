@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zo_core"
 	},
-	"title": "Neonoid No. 1",
-	"description": "Transform into Kamen Rider ZO",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.zo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.zo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

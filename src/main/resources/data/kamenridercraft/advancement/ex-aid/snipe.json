@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_snipe"
 	},
-	"title": "Doctor of Darkness",
-	"description": "Transform into Kamen Rider Snipe",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.snipe.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.snipe.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

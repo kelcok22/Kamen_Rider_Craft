@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zeronos_vega_card"
 	},
-	"title": "Have some Deneb Candy",
-	"description": "Transform into Zeronos Vega Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.vega_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.vega_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

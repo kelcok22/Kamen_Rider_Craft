@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sabakidriver"
 	},
-	"title": "Judgement Demon",
-	"description": "Transform into Kamen Rider Sabaki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.sabaki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.sabaki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

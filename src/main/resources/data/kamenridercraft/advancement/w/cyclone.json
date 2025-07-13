@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lostdriver_cyclone"
 	},
-	"title": "Cyclone Effect",
-	"description": "Transform into Kamen Rider Cyclone",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.cyclone.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.cyclone.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

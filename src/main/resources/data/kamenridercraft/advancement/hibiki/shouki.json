@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shoukidriver"
 	},
-	"title": "Victorious Demon",
-	"description": "Transform into Kamen Rider Shouki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.shouki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.shouki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

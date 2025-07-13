@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hibikidriver"
 	},
-	"title": "Don't worry, I'm trained",
-	"description": "Transform into Kamen Rider Hibiki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.hibiki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.hibiki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

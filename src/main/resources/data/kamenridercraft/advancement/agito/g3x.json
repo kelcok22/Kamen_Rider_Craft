@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g3_x_belt"
 	},
-	"title": "G3-X Equip!",
-	"description": "Transform into Kamen Rider G3-X",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g3x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g3x.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

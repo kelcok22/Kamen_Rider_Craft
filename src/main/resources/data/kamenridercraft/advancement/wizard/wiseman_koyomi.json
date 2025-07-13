@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hope_ring"
 	},
-	"title": "I'm a wizard with Haruto now...",
-	"description": "Transform into Kamen Rider Wiseman (Koyomi)",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.wiseman_koyomi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.wiseman_koyomi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

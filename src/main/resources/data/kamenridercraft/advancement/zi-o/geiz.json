@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_geiz"
 	},
-	"title": "That’s gates, plural.",
-	"description": "Transform into Kamen Rider Geiz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.geiz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.geiz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

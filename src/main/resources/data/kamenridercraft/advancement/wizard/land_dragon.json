@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:land_ring_dragon"
 	},
-	"title": "Strength of the Earth",
-	"description": "Transform into Wizard Land Dragon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.land_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.land_dragon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

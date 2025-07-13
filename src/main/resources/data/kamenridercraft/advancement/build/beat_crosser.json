@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:beat_crosser"
 	},
-	"title": "These hands don't just punch!",
-	"description": "Obtain the Beat Crosser",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.beat_crosser.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.beat_crosser.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_hakubi"
 	},
-	"title": "My Older Sister's a Rider?!",
-	"description": "Transform into Kamen Rider Hakubi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.hakubi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.hakubi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

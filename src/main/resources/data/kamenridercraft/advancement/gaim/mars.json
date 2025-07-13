@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_mars"
 	},
-	"title": "God of Soccer",
-	"description": "Transform into Kamen Rider Mars",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.mars.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.mars.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

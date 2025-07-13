@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tora_medal"
 	},
-	"title": "Ride on Right Time",
-	"description": "Obtain the Lion, Tora, and Cheetah Core Medals",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.latorartar.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.latorartar.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

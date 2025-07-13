@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:emotional_dragon_wonder_ride_book"
 	},
-	"title": "You need a chill pill",
-	"description": "Transform into Saber Emotional Dragon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.emotional_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.emotional_dragon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

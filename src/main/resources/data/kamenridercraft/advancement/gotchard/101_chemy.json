@@ -3,8 +3,12 @@
     "icon": {
       "id": "kamenridercraft:nijigon_ride_chemy_card_special"
     },
-    "title": "Gotcha! 101 Chemies",
-    "description": "Obtain all 100 main Chemy Cards + Machwheel, Tenliner, Crosshopper, and Nijigon",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.101_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.101_chemy.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

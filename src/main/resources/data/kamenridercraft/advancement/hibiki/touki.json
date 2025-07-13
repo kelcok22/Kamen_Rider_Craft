@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:toukidriver"
 	},
-	"title": "Freezing Demon",
-	"description": "Transform into Kamen Rider Touki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.touki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.touki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:valenbuster"
 	},
-	"title": "Waowoawow about it",
-	"description": "Transform into Kamen Rider Valen",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.valen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.valen.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

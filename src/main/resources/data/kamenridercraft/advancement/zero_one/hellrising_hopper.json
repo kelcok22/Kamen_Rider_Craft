@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hellrise_progrisekey"
 	},
-	"title": "Bug Outta Hell",
-	"description": "Transform into Zero-One Hellrising Hopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.hellrising_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.hellrising_hopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

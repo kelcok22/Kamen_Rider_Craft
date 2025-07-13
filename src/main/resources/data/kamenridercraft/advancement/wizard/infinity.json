@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:infinity_ring"
 	},
-	"title": "Missing Piece",
-	"description": "Transform into Wizard Infinity Style",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.infinity.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.infinity.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

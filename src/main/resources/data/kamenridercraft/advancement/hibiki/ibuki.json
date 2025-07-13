@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ibukidriver"
 	},
-	"title": "Doot Doot",
-	"description": "Transform into Kamen Rider Ibuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.ibuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.ibuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

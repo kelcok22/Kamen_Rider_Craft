@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gm_01_scorpion"
 	},
-	"title": "G3 Maneuvers: Start!",
-	"description": "Obtain all of G3-X's weapons",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g3x_weapons.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g3x_weapons.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

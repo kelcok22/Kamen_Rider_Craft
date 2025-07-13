@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:grasshopper_dna"
 	},
-	"title": "Cyborg Soldier Level 3",
-	"description": "Transform into Kamen Rider Shin",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.shin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.shin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

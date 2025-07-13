@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lost_cobra_full_bottle"
 	},
-	"title": "Bloodbath",
-	"description": "Defeat Blood Stalk",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.blood_stalk.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.blood_stalk.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:elemental_dragon_wonder_ride_book"
 	},
-	"title": "Dap me up",
-	"description": "Transform into Saber Elemental Primitive Dragon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.elemental_primitive_dragon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

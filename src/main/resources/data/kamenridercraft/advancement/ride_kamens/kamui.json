@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_kamui"
 	},
-	"title": "The most beautiful Rider is I!",
-	"description": "Transform into Kamen Rider Kamui",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.kamui.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.kamui.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

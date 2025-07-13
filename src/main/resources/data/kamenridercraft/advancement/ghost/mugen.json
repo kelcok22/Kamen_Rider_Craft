@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mugen_ghost_eyecon"
 	},
-	"title": "KEEP・ON・GOING !",
-	"description": "Transform into Ghost Mugen Damashii",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.mugen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.mugen.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

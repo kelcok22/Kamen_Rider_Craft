@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:electrer"
 	},
-	"title": "Harder Better Faster Stronger",
-	"description": "Transform into Kamen Rider Stronger",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.stronger.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.stronger.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

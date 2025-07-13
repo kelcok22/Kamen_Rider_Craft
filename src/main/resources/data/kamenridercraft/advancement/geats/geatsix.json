@@ -3,8 +3,12 @@
     "icon": {
   	  "id": "kamenridercraft:boost_mkiii_raise_buckle"
     },
-    "title": "Wish",
-    "description": "Transform into Kamen Rider GeatsIX",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.geatsix.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.geatsix.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

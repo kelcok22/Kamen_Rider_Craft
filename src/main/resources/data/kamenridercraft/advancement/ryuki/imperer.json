@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_imperer"
 	},
-	"title": "Speeeeeen Vent",
-	"description": "Transform into Kamen Rider Imperer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.imperer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.imperer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

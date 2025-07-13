@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:drivedriver_darkdrive"
 	},
-	"title": "START OUR MISSION!",
-	"description": "Transform into Kamen Rider Dark Drive",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.dark_drive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.dark_drive.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

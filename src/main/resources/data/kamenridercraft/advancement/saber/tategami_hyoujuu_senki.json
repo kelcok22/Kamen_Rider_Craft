@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book"
 	},
-	"title": "To protect the people I love!",
-	"description": "Transform into Blades Tategami Hyoujuu Senki",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.tategami_hyoujuu_senki.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

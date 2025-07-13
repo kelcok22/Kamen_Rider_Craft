@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zankidriver"
 	},
-	"title": "Slashing Demon",
-	"description": "Transform into Kamen Rider Zanki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.zanki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.zanki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

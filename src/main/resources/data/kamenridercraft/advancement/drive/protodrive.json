@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:drivedriver_protodrive"
 	},
-	"title": "You won’t need to know my name",
-	"description": "Transform into Kamen Rider Protodrive",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.protodrive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.protodrive.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:decade_violent_emotion_card"
 	},
-	"title": "The Destroyer of Worlds",
-	"description": "Transform into Decade Violent Emotion",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.violent_emotion.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.violent_emotion.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

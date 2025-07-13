@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:henshin_belt_bitter_gavv"
 	},
-	"title": "Honey & Vanilla, sometimes Bitter",
-	"description": "Transform into Kamen Rider Bitter Gavv",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.bitter_gavv.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.bitter_gavv.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

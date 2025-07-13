@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shachi_medal"
 	},
-	"title": "Shout Out",
-	"description": "Obtain the Shachi, Unagi, and Tako Core Medals",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.shauta.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.shauta.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

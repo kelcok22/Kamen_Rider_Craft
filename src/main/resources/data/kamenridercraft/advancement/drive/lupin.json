@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lupin_belt"
 	},
-	"title": "Mr Steal your Treasure",
-	"description": "Transform into Kamen Rider Lupin",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.lupin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.lupin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

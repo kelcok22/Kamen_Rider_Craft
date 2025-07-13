@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:giant_spider_vistamp"
       },
-      "title": "I will devote my heart and soul...",
-      "description": "Transform into Kamen Rider Imperial Demons",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.imperial_demons.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.imperial_demons.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

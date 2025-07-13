@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gx_launcher"
 	},
-	"title": "Rocket Jumping not included",
-	"description": "Obtain the GX Launcher",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.gx_launcher.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.gx_launcher.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

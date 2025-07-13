@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:wonder_almighty_wonder_ride_book"
 	},
-	"title": "Promise of the Mask",
-	"description": "Transform into Almighty Saber",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.almighty_saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.almighty_saber.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

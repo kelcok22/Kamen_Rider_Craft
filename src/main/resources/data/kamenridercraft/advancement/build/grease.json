@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sclash_driver_grease"
 	},
-	"title": "Robot in Grease",
-	"description": "Transform into Kamen Rider Grease",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.grease.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.grease.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
