@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:assault_wolf_progrisekey"
 	},
-	"title": "No chance of surviving",
-	"description": "Transform into Vulcan Assault Wolf",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.assault_wolf.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.assault_wolf.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

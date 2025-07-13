@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:haken_bladriver_falchion"
 	},
-	"title": "「                 」",
-	"description": "Transform into Kamen Rider Falchion",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.falchion.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.falchion.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

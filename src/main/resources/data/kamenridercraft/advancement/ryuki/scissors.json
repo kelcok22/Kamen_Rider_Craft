@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_scissors"
 	},
-	"title": "Running with Scissors",
-	"description": "Transform into Kamen Rider Scissors",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.scissors.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.scissors.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

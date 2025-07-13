@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:amazons_driver_alpha"
 	},
-	"title": "Blood and Wild",
-	"description": "Transform into Kamen Rider Amazon Alpha",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.amazon_alpha.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.amazon_alpha.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

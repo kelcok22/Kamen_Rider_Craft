@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_lopo"
 	},
-	"title": "Running at Warf Speed",
-	"description": "Transform into Kamen Rider Lopo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.lopo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.lopo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

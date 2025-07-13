@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genesis_driver_marika"
 	},
-	"title": "Momo-Rider",
-	"description": "Transform into Kamen Rider Marika",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.marika.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.marika.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_sword"
 	},
-	"title": "I feel so alive!",
-	"description": "Transform into Kamen Rider Pretty Den-O",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.pretty_den-o.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

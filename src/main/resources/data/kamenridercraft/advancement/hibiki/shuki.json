@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shukidriver"
 	},
-	"title": "Scarlet Demon",
-	"description": "Transform into Kamen Rider Shuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.shuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.shuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

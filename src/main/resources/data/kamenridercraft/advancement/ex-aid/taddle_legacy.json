@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:taddle_legacy_gashat"
 	},
-	"title": "Skill Issue Level 100",
-	"description": "Transform into Brave Legacy Gamer Level 100",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.taddle_legacy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.taddle_legacy.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

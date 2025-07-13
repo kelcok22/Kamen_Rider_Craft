@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:seiken_swordriver_espada"
 	},
-	"title": "My feelings will pierce through!",
-	"description": "Transform into Kamen Rider Espada",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.espada.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.espada.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

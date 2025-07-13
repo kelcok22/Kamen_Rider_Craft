@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:riderman_belt"
 	},
-	"title": "Demon of Vengeance",
-	"description": "Transform into Riderman",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.riderman.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.riderman.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

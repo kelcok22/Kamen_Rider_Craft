@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_jigen"
 	},
-	"title": "All I need is my own strength.",
-	"description": "Transform into Kamen Rider Jigen",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.jigen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.jigen.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

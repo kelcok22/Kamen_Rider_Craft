@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gashacon_bugvisor_ii_chronos"
 	},
-	"title": "JUSTICE",
-	"description": "Defeat Kamen Rider Cronus",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.cronus.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.cronus.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

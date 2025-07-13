@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_femme"
 	},
-	"title": "White Swan",
-	"description": "Transform into Kamen Rider Femme",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.femme.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.femme.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

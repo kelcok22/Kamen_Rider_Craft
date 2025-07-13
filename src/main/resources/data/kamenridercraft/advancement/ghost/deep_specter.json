@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:deep_specter_ghost_eyecon"
 	},
-	"title": "I'm your dad and this is Deep",
-	"description": "Transform into Deep Specter",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.deep_specter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.deep_specter.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

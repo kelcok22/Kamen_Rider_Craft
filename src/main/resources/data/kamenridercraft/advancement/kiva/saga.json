@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sagarc_belt"
 	},
-	"title": "Roots of the King",
-	"description": "Transform into Kamen Rider Saga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.saga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.saga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

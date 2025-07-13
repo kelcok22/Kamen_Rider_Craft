@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:two_sidriver_live"
       },
-      "title": "Let's settle this seriously",
-      "description": "Transform into Kamen Rider Live",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.live.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.live.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

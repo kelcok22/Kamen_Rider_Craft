@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:orga_driver"
 	},
-	"title": "A dream is the same as a curse.",
-	"description": "Transform into Kamen Rider Orga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.orga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.orga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

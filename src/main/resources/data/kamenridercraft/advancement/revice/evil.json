@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:two_sidriver_evil"
       },
-      "title": "Jealousy is a demon's food",
-      "description": "Transform into Kamen Rider Evil",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.evil.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.evil.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_grease"
 	},
-	"title": "They know me where it snows",
-	"description": "Transform into Grease Blizzard",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.grease_blizzard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.grease_blizzard.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

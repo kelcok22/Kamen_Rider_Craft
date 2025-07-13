@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:valvarusher"
 	},
-	"title": "What a ridiculous joke.",
-	"description": "Transform into Valvarad",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.valvarad.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.valvarad.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

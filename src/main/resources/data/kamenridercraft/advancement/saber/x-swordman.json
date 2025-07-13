@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:x_swordman_wonder_ride_book"
 	},
-	"title": "Needs more comic accuracy",
-	"description": "Transform into Saikou X-Swordman",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.x-swordman.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.x-swordman.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

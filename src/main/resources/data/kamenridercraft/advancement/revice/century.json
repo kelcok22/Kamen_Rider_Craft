@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:cyclotron_driver"
       },
-      "title": "Promise",
-      "description": "Transform into Kamen Rider Century",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.century.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.century.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

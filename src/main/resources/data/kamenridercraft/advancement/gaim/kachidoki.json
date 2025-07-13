@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kachidoki_lockseed"
 	},
-	"title": "Rise up your Flag",
-	"description": "Transform into Gaim Kachidoki Arms",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.kachidoki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.kachidoki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

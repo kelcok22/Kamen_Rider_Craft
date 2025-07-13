@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:giffard_rex_vistamp"
       },
-      "title": "Giff's Inheritor",
-      "description": "Transform into Ultimate Revi/Vice",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.ultimate.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.ultimate.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

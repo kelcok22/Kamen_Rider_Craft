@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "minecraft:jukebox"
 	},
-	"title": "Get Ryukirolled",
-	"description": "As Ryuki, play a music disc in a jukebox",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuki_roll.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.ryuki_roll.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": true

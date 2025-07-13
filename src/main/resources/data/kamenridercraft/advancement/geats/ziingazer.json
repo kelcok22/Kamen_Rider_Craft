@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:ziin_raise_riser_card"
 	  },
-	  "title": "I will protect this touching world",
-	  "description": "Transform into Kamen Rider Ziingazer",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.ziingazer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.ziingazer.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

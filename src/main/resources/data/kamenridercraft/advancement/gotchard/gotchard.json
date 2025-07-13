@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gotchardriver"
 	},
-	"title": "Gotcha!",
-	"description": "Transform into Kamen Rider Gotchard",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.gotchard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.gotchard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shocker_emblem"
 	},
-	"title": "The Infernal Army",
-	"description": "Collect all the Shocker Rider Typhoons",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.shocker_riders.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.shocker_riders.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": true

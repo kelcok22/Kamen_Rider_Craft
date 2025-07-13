@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:forceriser_jin"
 	},
-	"title": "Found you. You're my friend now.",
-	"description": "Transform into Kamen Rider Jin",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.jin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.jin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

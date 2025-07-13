@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_bravo"
 	},
-	"title": "Charmant Geezer",
-	"description": "Transform into Kamen Rider Bravo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.bravo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.bravo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

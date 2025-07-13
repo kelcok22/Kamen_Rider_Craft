@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:destream_driver"
       },
-      "title": "My dream",
-      "description": "Transform into Kamen Rider Destream",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.destream.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.destream.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dark_ghost_driver"
 	},
-	"title": "Free all souls!",
-	"description": "Transform into Kamen Rider Dark Ghost",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.dark_ghost.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.dark_ghost.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

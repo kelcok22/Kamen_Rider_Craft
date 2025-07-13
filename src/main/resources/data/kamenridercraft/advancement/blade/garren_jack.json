@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fusion_peacock"
 	},
-	"title": "rebirth",
-	"description": "Transform into Garren Jack Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.garren_jack.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.garren_jack.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

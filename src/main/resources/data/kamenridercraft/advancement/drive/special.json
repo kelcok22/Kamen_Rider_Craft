@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:specialshift"
 	},
-	"title": "Brand New Whip",
-	"description": "Transform into Drive type Special",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.special.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.special.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

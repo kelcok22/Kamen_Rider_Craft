@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hyper_zecter"
 	},
-	"title": "FULL FORCE",
-	"description": "Transform into Kabuto/Gatack/Dark Kabuto Hyper Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.hyper_zecter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.hyper_zecter.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

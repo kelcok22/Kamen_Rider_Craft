@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:puchhopper_rider_belt"
 	},
-	"title": "Anywhere with you, bro",
-	"description": "Transform into Kamen Rider PunchHopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.punchhopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.punchhopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

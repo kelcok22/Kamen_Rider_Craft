@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:specter_driver"
 	},
-	"title": "I'll show you my way of life",
-	"description": "Transform into Kamen Rider Specter",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.specter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.specter.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

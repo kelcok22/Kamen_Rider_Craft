@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_brave"
 	},
-	"title": "There is nothing I cannot cut.",
-	"description": "Transform into Kamen Rider Brave",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.brave.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.brave.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

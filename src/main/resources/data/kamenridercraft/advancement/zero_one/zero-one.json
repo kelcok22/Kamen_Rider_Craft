@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hiden_zero_one_driver"
 	},
-	"title": "Zero-One, that's my name!",
-	"description": "Transform into Kamen Rider Zero-One",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-one.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-one.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

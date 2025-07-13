@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:revice_driver"
       },
-      "title": "I'm really feeling it",
-      "description": "Transform into Kamen Rider Revi or Vice",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.revice.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.revice.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

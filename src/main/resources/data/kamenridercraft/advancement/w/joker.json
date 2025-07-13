@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lostdriver_joker"
 	},
-	"title": "We Live in a Society",
-	"description": "Transform into Kamen Rider Joker",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.joker.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.joker.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

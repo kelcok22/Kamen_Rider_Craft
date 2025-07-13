@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:k_touch_21"
 	},
-	"title": "What's 9 + 10?",
-	"description": "Transform into Decade Complete Form 21",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.complete_21.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.complete_21.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

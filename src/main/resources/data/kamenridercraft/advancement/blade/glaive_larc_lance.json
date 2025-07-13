@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:glaive_buckle"
 	},
-	"title": "3 of Ace",
-	"description": "Transform into Kamen Riders Glaive, Larc, and Lance",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.glaive_larc_lance.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.glaive_larc_lance.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

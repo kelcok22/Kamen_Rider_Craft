@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lixion_ride_chemy_card"
 	},
-	"title": "Animal Champ",
-	"description": "Obtain all the Animal Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.animal_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.animal_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

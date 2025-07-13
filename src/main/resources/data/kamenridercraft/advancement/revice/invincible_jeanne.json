@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:king_cobra_vistamp"
       },
-      "title": "Cherry-ish!",
-      "description": "Transform into Kamen Rider Invincible Jeanne",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.invincible_jeanne.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.invincible_jeanne.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

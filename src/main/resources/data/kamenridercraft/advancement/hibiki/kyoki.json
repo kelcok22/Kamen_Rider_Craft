@@ -3,19 +3,12 @@
 	"icon": {
 	  "id": "kamenridercraft:kyosukedriver"
 	},
-	"title": "Strong Demon?",
-	"description": [
-	  {
-		"text": "Transform into "
-	  },
-	  {
-		"text": "Kamen Rider Kyoki",
-		"strikethrough": true
-	  },
-	  {
-		"text": " Transformed Kyosuke"
-	  }
-	],
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.kyoki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.kyoki.description"
+    },
 	"frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,

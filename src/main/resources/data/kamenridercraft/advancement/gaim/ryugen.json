@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_ryugen"
 	},
-	"title": "No Ducks Allowed",
-	"description": "Transform into Kamen Rider Ryugen",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.ryugen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.ryugen.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_lazer"
 	},
-	"title": "Now we're revving it up",
-	"description": "Transform into Kamen Rider Lazer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.lazer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.lazer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

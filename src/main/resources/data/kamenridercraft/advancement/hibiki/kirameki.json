@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kiramekidriver"
 	},
-	"title": "Shining Demon",
-	"description": "Transform into Kamen Rider Kirameki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.kirameki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.kirameki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

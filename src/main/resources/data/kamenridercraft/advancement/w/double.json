@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:wdriver"
 	},
-	"title": "Now, Count Up Your Sins!",
-	"description": "Transform into Kamen Rider Double",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.double.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.double.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

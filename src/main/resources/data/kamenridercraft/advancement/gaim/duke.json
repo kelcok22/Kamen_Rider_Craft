@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genesis_driver_duke"
 	},
-	"title": "The Path to God",
-	"description": "Transform into Kamen Rider Duke",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.duke.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.duke.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

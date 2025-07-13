@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:survive_shippu"
 	},
-	"title": "If you're serious, fight me now",
-	"description": "Transform into Knight Survive",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.knight_survive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.knight_survive.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

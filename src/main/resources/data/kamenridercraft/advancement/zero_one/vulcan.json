@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shotriser_vulcan"
 	},
-	"title": "Wolf? More like Gorilla",
-	"description": "Transform into Kamen Rider Vulcan",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.vulcan.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.vulcan.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

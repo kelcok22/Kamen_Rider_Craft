@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:break_gunner"
       },
-      "title": "The Advanced Reaper",
-      "description": "Transform into Mashin Chaser",
-      "frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.mashin_chaser.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.mashin_chaser.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

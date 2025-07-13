@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:desire_driver_dooms_geats"
 	  },
-	  "title": "Dangerously",
-	  "description": "Transform into Kamen Rider Dooms Geats",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.dooms_geats.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.dooms_geats.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

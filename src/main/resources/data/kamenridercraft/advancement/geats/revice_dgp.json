@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_revi"
 	},
-	"title": "Change my future",
-	"description": "Transform into Kamen Riders Revi and Vice using the Desire Driver",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.revice_dgp.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.revice_dgp.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

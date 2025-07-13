@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gashacon_bugvisor_ii_poppy"
 	},
-	"title": "People Game",
-	"description": "Transform into Kamen Rider Poppy",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.poppy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.poppy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

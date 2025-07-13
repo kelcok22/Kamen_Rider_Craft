@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:genm_musou_gashat"
 	},
-	"title": "The Jet Black Genius President",
-	"description": "Transform into Genm Musou Gamer",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm_musou.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm_musou.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

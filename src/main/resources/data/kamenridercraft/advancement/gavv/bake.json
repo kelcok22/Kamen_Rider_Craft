@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:bakebuckle"
 	},
-	"title": "That's How The Cookie Crumbles",
-	"description": "Transform into Kamen Rider Bake",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.bake.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.bake.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

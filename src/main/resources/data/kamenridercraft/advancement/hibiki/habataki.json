@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:habatakidriver"
 	},
-	"title": "Feathered Demon",
-	"description": "Transform into Kamen Rider Habataki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.habataki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.habataki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

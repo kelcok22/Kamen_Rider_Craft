@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tridoronshift"
 	},
-	"title": "Unlimited Drive",
-	"description": "Transform into Drive type Tridoron",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.tridoron.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.tridoron.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

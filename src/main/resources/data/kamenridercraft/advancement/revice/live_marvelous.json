@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:mega_bat_vistamp"
       },
-      "title": "Marvel's Batman",
-      "description": "Transform into Live Marvelous",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.live_marvelous.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.live_marvelous.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

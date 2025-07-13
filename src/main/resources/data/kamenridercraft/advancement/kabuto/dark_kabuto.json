@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dark_kabuto_rider_belt"
 	},
-	"title": "An Imposter Among Us",
-	"description": "Transform into Kamen Rider Dark Kabuto",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.dark_kabuto.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.dark_kabuto.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:forceriser_horobi"
 	},
-	"title": "I'm the Hackerman",
-	"description": "Transform into Kamen Rider Horobi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.horobi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.horobi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

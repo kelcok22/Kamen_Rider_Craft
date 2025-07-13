@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_shion"
 	},
-	"title": "I can feel your heart...",
-	"description": "Transform into Kamen Rider Shion",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.shion.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.shion.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

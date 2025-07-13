@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_gun"
 	},
-	"title": "I can't hear your answer!",
-	"description": "Transform into Den-O Gun Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.gun_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.gun_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

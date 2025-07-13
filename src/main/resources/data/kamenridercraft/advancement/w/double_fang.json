@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fang_memory"
 	},
-	"title": "Wild Skilled Warrior",
-	"description": "Transform into Double's Fang forms",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.double_fang.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.double_fang.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

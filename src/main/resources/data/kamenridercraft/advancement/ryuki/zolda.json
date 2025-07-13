@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_zolda"
 	},
-	"title": "Super-Lawyer",
-	"description": "Transform into Kamen Rider Zolda",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.zolda.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.zolda.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

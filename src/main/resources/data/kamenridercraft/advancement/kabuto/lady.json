@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lady_zecter"
 	},
-	"title": "A Miraculous Zecter",
-	"description": "Transform into Kamen Rider Lady",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.lady.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.lady.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tackle_belt"
 	},
-	"title": "First Lady(bug)",
-	"description": "Transform into Electromagnetic Wave Human Tackle",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.tackle.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.tackle.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

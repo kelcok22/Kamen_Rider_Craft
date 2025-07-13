@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zi_o_trinity_ridewatch"
 	},
-	"title": "The Power of Three",
-	"description": "Transform into Zi-O Trinity",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o_trinity.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o_trinity.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

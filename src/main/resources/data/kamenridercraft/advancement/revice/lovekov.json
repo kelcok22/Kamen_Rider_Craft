@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lovekov_kujaku"
 	},
-	"title": "All kuzu eliminated",
-	"description": "Obtain all Lovekov Genomes",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.revice.lovekov.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.lovekov.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hawk_gatlinger"
 	},
-	"title": "The Rampage of the Skies",
-	"description": "Obtain the Hawk Gatlinger",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.hawk_gatlinger.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.hawk_gatlinger.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:alchemisdriver"
 	},
-	"title": "As Above, So Below",
-	"description": "Transform into Kamen Rider Majade",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.majade.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.majade.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

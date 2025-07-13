@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sin_specter_ghost_eyecon"
 	},
-	"title": "Lucky Number 7 of Hell",
-	"description": "Transform into Sin Specter",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.sin_specter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.sin_specter.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

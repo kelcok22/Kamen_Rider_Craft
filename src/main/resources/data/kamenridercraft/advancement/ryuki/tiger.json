@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_tiger"
 	},
-	"title": "Eye of the Tiger",
-	"description": "Transform into Kamen Rider Tiger",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.tiger.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.tiger.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

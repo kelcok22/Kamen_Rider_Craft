@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g3_belt"
 	},
-	"title": "Tennis Pro",
-	"description": "Transform into Kamen Rider G3",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g3.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g3.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

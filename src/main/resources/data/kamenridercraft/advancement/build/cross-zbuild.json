@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:cross_z_build_can"
 	},
-	"title": "Be the One!",
-	"description": "Transform into Cross-ZBuild",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.cross-zbuild.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.cross-zbuild.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

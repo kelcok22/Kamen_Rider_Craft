@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:henshin_onsa_kurenai"
 	},
-	"title": "Burning Crimson",
-	"description": "Transform into Hibiki Kurenai",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.henshin_onsa_kurenai.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.henshin_onsa_kurenai.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

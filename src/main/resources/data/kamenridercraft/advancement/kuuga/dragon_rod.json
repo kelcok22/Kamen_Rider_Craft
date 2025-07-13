@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dragon_rod"
 	},
-	"title": "Splash Dragon",
-	"description": "Obtain the Dragon Rod",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.dragon_rod.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.dragon_rod.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

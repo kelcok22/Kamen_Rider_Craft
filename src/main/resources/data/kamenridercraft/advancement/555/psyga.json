@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:psyga_driver"
 	},
-	"title": "Let the Game Begin",
-	"description": "Transform into Kamen Rider Psyga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.555.psyga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.555.psyga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

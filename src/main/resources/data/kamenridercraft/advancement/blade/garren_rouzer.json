@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:garrenrouzer"
 	},
-	"title": "SAYOKOOOOOO",
-	"description": "Obtain the Garren Rouzer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.garren_rouzer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.garren_rouzer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

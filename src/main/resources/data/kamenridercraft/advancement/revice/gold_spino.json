@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:gold_spino_vistamp"
       },
-      "title": "The Spirit of No. 2",
-      "description": "Transform into Revi Gold Spino Genome",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.gold_spino.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.gold_spino.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

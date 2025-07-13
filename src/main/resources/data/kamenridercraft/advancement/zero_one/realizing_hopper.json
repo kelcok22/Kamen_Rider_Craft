@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:realize_rising_hopper_progrisekey"
 	},
-	"title": "Initialize!",
-	"description": "Transform into Zero-One Realizing Hopper",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.realizing_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.realizing_hopper.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

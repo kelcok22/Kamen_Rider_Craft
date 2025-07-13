@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:maximum_mighty_x_gashat"
 	},
-	"title": "Highest Class of Powerful Body",
-	"description": "Transform into Ex-Aid Maximum Gamer Level 99",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.maximum_mighty_x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.maximum_mighty_x.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

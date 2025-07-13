@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:bang_bang_simulation_gashat"
 	},
-	"title": "Remember, No Bugsters.",
-	"description": "Transform into Snipe Simulation Gamer Level 50",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.bang_bang_simulations.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.bang_bang_simulations.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

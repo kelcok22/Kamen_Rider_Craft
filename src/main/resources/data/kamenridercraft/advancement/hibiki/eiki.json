@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:eikidriver"
 	},
-	"title": "Sharp Demon",
-	"description": "Transform into Kamen Rider Eiki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.eiki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.eiki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

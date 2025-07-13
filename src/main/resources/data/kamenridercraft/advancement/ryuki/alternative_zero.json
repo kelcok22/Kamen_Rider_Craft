@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:alternative_zero_v_buckle"
 	},
-	"title": "Many for the price of 1",
-	"description": "Transform into Alternative Zero",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.alternative_zero.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.alternative_zero.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

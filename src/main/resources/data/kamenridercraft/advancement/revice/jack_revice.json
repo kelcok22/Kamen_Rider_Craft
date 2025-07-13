@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:rolling_vistamp"
       },
-      "title": "#NiceVice",
-      "description": "Transform into Kamen Rider Jack Revice",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.jack_revice.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.jack_revice.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

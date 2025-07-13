@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evol_driver"
 	},
-	"title": "Evolution",
-	"description": "Defeat Evolto",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.evol.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.evol.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

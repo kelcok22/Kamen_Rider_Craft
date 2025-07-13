@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:seiken_swordriver_blades"
 	},
-	"title": "I swear on Suiseiken Nagare...",
-	"description": "Transform into Kamen Rider Blades",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.blades.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.blades.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

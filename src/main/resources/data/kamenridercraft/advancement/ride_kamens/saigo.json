@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_saigo"
 	},
-	"title": "Protect What Must Be Protected",
-	"description": "Transform into Kamen Rider Saigo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.saigo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.saigo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

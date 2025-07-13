@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:thunder_gale_vistamp"
       },
-      "title": "New Style",
-      "description": "Transform into Kamen Rider Revice",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.thunder_gale.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.thunder_gale.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

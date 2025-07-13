@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kuuga_rising_mighty"
 	},
-	"title": "Rising your power to Gold",
-	"description": "Transform into all of Kuuga's Rising forms",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

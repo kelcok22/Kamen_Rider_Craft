@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:beroba_raise_riser_card"
 	  },
-	  "title": "Sentinel in Pink",
-	  "description": "Transform into Kamen Rider Beroba",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.beroba.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.beroba.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

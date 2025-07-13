@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:neo_amazons_driver_neo_alpha"
 	},
-	"title": "Chainsaw Ma(zo)n",
-	"description": "Transform into Kamen Rider Amazon Neo Alpha",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.amazon_neo_alpha.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.amazon_neo_alpha.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

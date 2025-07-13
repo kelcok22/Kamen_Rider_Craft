@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:batta_medal"
 	},
-	"title": "Got to keep it real",
-	"description": "Obtain the Kuwagata, Kamakiri, and Batta Core Medals",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.gatakiriba.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.gatakiriba.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

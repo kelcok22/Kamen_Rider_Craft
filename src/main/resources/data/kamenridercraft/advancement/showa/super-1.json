@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:cyclode"
 	},
-	"title": "To Infinity and Beyond",
-	"description": "Transform into Kamen Rider Super-1",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.super-1.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.super-1.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

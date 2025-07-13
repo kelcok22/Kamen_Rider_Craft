@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fusion_switch"
 	},
-	"title": "3 + 2 + 1",
-	"description": "Transform into Fourze Meteor Nadeshiko Fusionstates",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.fusionstates.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.fusionstates.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

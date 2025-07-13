@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_zi_o"
 	},
-	"title": "I've got a feeling this will work!",
-	"description": "Transform into Kamen Rider Zi-O",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.zi-o.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

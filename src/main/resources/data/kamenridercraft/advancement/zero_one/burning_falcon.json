@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zaia_slashriser"
 	},
-	"title": "Your dream might not be so bad",
-	"description": "Transform into Jin Burning Falcon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.burning_falcon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.burning_falcon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:geiz_majesty_ridewatch"
 	},
-	"title": "Brand New Day",
-	"description": "Transform into Geiz Majesty",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.geiz_majesty.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.geiz_majesty.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

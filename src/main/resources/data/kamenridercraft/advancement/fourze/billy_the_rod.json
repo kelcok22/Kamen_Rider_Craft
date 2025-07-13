@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:billy_the_rod"
 	},
-	"title": "Don't tase me, bro!",
-	"description": "Obtain the Billy the Rod",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.billy_the_rod.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.billy_the_rod.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:haouken_xross_saber"
 	},
-	"title": "Rewrite the Story",
-	"description": "Transform into Xross Saber",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.xross_saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.xross_saber.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_anotherparadox"
 	},
-	"title": "The most thrilling, deadly game",
-	"description": "Transform into Kamen Rider Another Para-DX",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.another_para_dx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.another_para_dx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

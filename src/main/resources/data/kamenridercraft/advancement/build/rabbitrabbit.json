@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fullfull_rabbit_tank_bottle"
 	},
-	"title": "Haei! Tuei!",
-	"description": "Transform into Build RabbitRabbit or TankTank",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.rabbitrabbit.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.rabbitrabbit.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

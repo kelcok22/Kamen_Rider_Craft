@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:beetlx_ride_chemy_card"
 	},
-	"title": "Insect King",
-	"description": "Obtain all the Insect Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.insect_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.insect_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_knuckle"
 	},
-	"title": "I will protect the name Baron!",
-	"description": "Transform into Kamen Rider Knuckle",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.knuckle.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.knuckle.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

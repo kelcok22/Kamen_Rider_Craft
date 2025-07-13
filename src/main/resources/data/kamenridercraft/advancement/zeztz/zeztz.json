@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zeztz_driver"
 	},
-	"title": "Good Mythical Morning!",
-	"description": "Transform into Kamen Rider Zeztz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zeztz.zeztz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zeztz.zeztz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

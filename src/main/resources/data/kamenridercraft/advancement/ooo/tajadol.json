@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:taka_medal"
 	},
-	"title": "Time Judged All",
-	"description": "Obtain the Taka, Kujaku, and Condor Core Medals",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.tajadol.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.tajadol.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

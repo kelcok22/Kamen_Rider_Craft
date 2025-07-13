@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:poseidon_boss_block"
 	},
-	"title": "Beg for my life? Yeah, right",
-	"description": "Defeat Kamen Rider Poseidon",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.poseidon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.poseidon.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

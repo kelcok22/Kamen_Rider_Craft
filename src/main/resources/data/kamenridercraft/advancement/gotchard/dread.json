@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dreadriver"
 	},
-	"title": "The Dark Destroyer",
-	"description": "Transform into Kamen Rider Dread",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.dread.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.dread.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

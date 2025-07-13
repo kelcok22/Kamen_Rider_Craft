@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:agito_shining"
 	},
-	"title": "DEEP BREATH",
-	"description": "Transform into Agito Shining Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.agito_shining.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.agito_shining.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

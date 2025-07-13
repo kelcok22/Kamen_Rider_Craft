@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hyper_ring"
 	},
-	"title": "A pinch is a chance...",
-	"description": "Transform into Beast Hyper",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.hyper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.hyper.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

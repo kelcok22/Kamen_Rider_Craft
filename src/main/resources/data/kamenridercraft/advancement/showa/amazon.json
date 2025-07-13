@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:condorer"
 	},
-	"title": "AAAAAAMAAAAAAZOOOOOON!",
-	"description": "Transform into Kamen Rider Amazon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.amazon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.amazon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

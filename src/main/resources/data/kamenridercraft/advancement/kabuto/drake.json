@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:drake_zecter"
 	},
-	"title": "Certified Loverboy",
-	"description": "Transform into Kamen Rider Drake",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.drake.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.drake.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

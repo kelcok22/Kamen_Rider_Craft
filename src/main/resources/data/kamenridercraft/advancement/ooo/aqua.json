@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:aqua_driver"
 	},
-	"title": "Water Bucket! Release!",
-	"description": "Transform into Kamen Rider Aqua",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.aqua.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.aqua.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

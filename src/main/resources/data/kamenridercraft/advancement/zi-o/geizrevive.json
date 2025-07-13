@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:geiz_revive_ridewatch"
 	},
-	"title": "Future Guardian",
-	"description": "Transform into GeizRevive Goretsu/Shippu",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.geizrevive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.geizrevive.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

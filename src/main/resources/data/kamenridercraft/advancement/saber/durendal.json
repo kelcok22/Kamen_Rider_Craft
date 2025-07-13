@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:durendal_boss_block"
 	},
-	"title": "Don't make me angry",
-	"description": "Defeat Kamen Rider Durendal",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.durendal.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.durendal.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:alter_ring"
 	},
-	"title": "Ready to Go! Count Zero!",
-	"description": "Transform into Kamen Rider Agito",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.agito.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.agito.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

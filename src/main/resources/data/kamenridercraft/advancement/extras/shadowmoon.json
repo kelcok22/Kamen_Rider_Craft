@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:century_king_moon_driver"
 	},
-	"title": "A Shade of Lunar",
-	"description": "Transform into Kamen Rider Shadowmoon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.shadowmoon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.shadowmoon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

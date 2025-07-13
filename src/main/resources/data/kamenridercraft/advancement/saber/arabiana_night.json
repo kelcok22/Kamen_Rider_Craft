@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:arabiana_night_wonder_ride_book"
 	},
-	"title": "Longest. Anthology. Ever.",
-	"description": "Transform into Espada Arabiana Night",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.arabiana_night.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.arabiana_night.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

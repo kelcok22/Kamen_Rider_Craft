@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shotriser_valkyrie"
 	},
-	"title": "Revolver Ocelot",
-	"description": "Transform into Kamen Rider Valkyrie",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.valkyrie.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.valkyrie.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

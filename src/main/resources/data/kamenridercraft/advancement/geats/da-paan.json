@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_da_paan"
 	},
-	"title": "GET SMOKED",
-	"description": "Transform into Kamen Rider Da*Paan",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.da-paan.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.da-paan.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

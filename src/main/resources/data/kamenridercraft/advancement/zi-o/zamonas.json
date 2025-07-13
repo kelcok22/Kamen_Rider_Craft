@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ziku_driver_zamonas"
 	},
-	"title": "Think of the children!",
-	"description": "Transform into Kamen Rider Zamonas",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.zamonas.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.zamonas.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

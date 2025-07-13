@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:4koma_ninpoutou"
 	},
-	"title": "The Shinobi Entertainer",
-	"description": "Obtain the 4koma Ninpoutou",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.4koma_ninpoutou.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.4koma_ninpoutou.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

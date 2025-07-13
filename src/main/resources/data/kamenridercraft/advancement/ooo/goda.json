@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:goda_boss_block"
 	},
-	"title": "Core Medals of Strongest Power",
-	"description": "Defeat Kamen Rider Goda",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.goda.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.goda.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

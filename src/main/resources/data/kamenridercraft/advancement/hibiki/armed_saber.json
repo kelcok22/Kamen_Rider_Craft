@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:armed_saber"
 	},
-	"title": "Hibiki Soukou",
-	"description": "Transform into Armed Hibiki",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.armed_saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.armed_saber.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

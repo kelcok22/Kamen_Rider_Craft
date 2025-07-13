@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:water_ring_dragon"
 	},
-	"title": "Mystical Liquid",
-	"description": "Transform into Wizard Water Dragon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.water_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.water_dragon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

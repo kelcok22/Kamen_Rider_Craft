@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:banno_driver_bronze_drive"
 	},
-	"title": "You're not gold at aaaaaall!",
-	"description": "Transform into Bronze Drive",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.bronze_drive.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.bronze_drive.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

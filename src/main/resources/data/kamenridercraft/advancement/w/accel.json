@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:acceldriver"
 	},
-	"title": "Do Not Question Me",
-	"description": "Transform into Kamen Rider Accel",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.accel.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.accel.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

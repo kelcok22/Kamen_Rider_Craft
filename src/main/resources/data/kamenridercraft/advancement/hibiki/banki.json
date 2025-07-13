@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:bankidriver"
 	},
-	"title": "Barbaric Demon",
-	"description": "Transform into Kamen Rider Banki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.banki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.banki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sclash_driver"
 	},
-	"title": "What flavor would dragons be?",
-	"description": "Transform into Cross-Z Charge",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.cross-z_charge.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.cross-z_charge.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

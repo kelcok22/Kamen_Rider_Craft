@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:cosmic_switch"
 	},
-	"title": "Cosmic Mind",
-	"description": "Transform into Fourze Cosmicstates",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.cosmicstates.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.cosmicstates.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

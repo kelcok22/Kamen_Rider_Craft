@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zeronos_belt"
 	},
-	"title": "I am fairly strong!",
-	"description": "Transform into Kamen Rider Zeronos",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.zeronos.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.zeronos.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

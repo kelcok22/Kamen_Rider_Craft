@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kabuto_rider_belt"
 	},
-	"title": "My grandma told me this...",
-	"description": "Transform into Kamen Rider Kabuto",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.kabuto.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.kabuto.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

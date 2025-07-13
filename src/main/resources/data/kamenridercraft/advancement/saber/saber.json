@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:seiken_swordriver_saber"
 	},
-	"title": "I'll decide how this story ends!",
-	"description": "Transform into Kamen Rider Saber",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.saber.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.saber.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

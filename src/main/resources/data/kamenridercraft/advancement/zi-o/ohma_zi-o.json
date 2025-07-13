@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ohma_zi_o_driver"
 	},
-	"title": "Ohma's Day",
-	"description": "Transform into Ohma Zi-O",
-	"frame": "challenge",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.ohma_zi-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.ohma_zi-o.description"
+    },
+    "frame": "challenge",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

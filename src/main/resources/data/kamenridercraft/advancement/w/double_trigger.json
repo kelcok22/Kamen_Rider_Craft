@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:trigger_magnum"
 	},
-	"title": "Finger on the Trigger",
-	"description": "Obtain the Triggermagnum",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.double_trigger.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.double_trigger.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

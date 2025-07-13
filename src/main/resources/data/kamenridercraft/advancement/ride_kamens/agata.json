@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_agata"
 	},
-	"title": "NEVER SAY NEVER",
-	"description": "Transform into Kamen Rider Agata",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.agata.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.agata.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:forceriser_ikazuchi"
 	},
-	"title": "Who's the electrician here?",
-	"description": "Transform into Kamen Rider Ikazuchi",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.ikazuchi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.ikazuchi.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

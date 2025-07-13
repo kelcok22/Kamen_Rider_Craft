@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_ginpen"
 	},
-	"title": "I just... wanted to save my son!",
-	"description": "Transform into Kamen Rider Ginpen",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.ginpen.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.ginpen.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

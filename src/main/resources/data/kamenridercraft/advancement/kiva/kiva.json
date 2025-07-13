@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kivadriver"
 	},
-	"title": "Kivatte Ikuze!",
-	"description": "Transform into Kamen Rider Kiva",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.kiva.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.kiva.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

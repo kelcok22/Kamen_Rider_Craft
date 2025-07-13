@@ -3,10 +3,14 @@
 	"icon": {
 	  "id": "kamenridercraft:kamen_rider_logo"
 	},
-	"title": "Kamen Rider Craft",
-	"description": "IWAE! This is the moment where your story begins!",
-	"background": "kamenridercraft:textures/block/zero_liner_green.png",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.root.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.root.description"
+    },
+    "background": "kamenridercraft:textures/block/zero_liner_green.png",
+    "frame": "task",
 	"show_toast": false,
 	"announce_to_chat": false,
 	"hidden": false

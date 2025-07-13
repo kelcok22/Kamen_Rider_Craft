@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lostdriver_skull"
 	},
-	"title": "Nobody's Perfect",
-	"description": "Transform into Kamen Rider Skull",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.skull.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.skull.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

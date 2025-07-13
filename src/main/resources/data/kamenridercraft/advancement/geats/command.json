@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:command_twin_buckle_jet"
 	  },
-	  "title": "A Soaring Upgrade",
-	  "description": "Transform into Geats Command Form",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.command.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.command.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

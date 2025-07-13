@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rider_ticket_g"
 	},
-	"title": "For complete control of all time",
-	"description": "Transform into Kamen Rider G Den-O",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.g_den-o.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.g_den-o.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

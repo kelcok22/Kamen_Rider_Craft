@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_geats"
 	},
-	"title": "Star of the Stars of the Stars",
-	"description": "Transform into Kamen Rider Geats",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.geats.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.geats.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

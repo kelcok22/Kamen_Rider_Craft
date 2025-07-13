@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:grease_full_bottle"
 	},
-	"title": "This is our Final Festival!",
-	"description": "Transform into Grease Perfect Kingdom",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.grease_perfect.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.grease_perfect.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

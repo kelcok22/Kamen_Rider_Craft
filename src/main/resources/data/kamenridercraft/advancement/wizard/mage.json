@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mage_o_ring"
 	},
-	"title": "Time to end this",
-	"description": "Transform into Kamen Rider Mage",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.mage.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.mage.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

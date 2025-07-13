@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:x_rex_ride_chemy_card"
 	},
-	"title": "Grateful Ancient",
-	"description": "Obtain all the Ancient Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.ancient_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.ancient_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_buffa"
 	},
-	"title": "Undead Fire",
-	"description": "Transform into Kamen Rider Buffa",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.buffa.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.buffa.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

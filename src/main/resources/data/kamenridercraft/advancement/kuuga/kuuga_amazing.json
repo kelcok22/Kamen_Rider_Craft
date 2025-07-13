@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kuuga_amazing_mighty"
 	},
-	"title": "Black and Gold",
-	"description": "Transform into Kuuga Amazing Mighty",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_amazing.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.kuuga_amazing.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

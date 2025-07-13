@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_raia"
 	},
-	"title": "My predictions are never wrong.",
-	"description": "Transform into Kamen Rider Raia",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.raia.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.raia.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

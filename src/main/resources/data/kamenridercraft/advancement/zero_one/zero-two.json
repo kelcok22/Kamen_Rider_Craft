@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zero_two_progrisekey"
 	},
-	"title": "It's Never Over",
-	"description": "Transform into Kamen Rider Zero-Two",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-two.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.zero-two.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

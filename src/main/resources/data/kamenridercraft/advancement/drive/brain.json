@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:brain_driver"
 	},
-	"title": "Big Brain Mode Activate",
-	"description": "Transform into Kamen Rider Brain",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.brain.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.brain.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

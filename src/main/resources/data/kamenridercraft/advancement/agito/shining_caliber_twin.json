@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shining_caliber"
 	},
-	"title": "Shining Clash",
-	"description": "Obtain the Shining Calibur (Twin)",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.shining_caliber_twin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.shining_caliber_twin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

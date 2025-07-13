@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hurricane_ring_dragon"
 	},
-	"title": "Blessed Wind",
-	"description": "Transform into Wizard Hurricane Dragon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.hurricane_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.hurricane_dragon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

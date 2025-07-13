@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:meteor_driver"
 	},
-	"title": "I'll decide your fate",
-	"description": "Transform into Kamen Rider Meteor",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.meteor.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.meteor.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

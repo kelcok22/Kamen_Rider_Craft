@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gaoh_boss_block"
 	},
-	"title": "The Devourer is devoured",
-	"description": "Defeat Kamen Rider Gaoh",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.gaoh.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.gaoh.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

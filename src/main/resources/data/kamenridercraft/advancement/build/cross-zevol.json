@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:muscle_galaxy_full_bottle"
 	},
-	"title": "Crouching Evol, Waking Dragon",
-	"description": "Transform into Cross-ZEvol",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.cross-zevol.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.cross-zevol.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

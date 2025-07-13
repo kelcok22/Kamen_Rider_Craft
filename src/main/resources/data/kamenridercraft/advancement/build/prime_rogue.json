@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_rogue"
 	},
-	"title": "Prime Cut",
-	"description": "Transform into Prime Rogue",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.prime_rogue.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.prime_rogue.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

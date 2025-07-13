@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:k_touch"
 	},
-	"title": "Ride the Wind",
-	"description": "Transform into Decade Complete Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.complete.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.complete.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sword_of_logos_buckle_buster"
 	},
-	"title": "The Strongest Swordsman",
-	"description": "Transform into Kamen Rider Buster",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.buster.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.buster.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

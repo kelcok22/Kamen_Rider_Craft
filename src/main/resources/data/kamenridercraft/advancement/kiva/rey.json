@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:reydriver"
 	},
-	"title": "Graceful yet Violent",
-	"description": "Transform into Kamen Rider Rey",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.rey.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.rey.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_saver"
 	},
-	"title": "Fake Fruit Jesus",
-	"description": "Transform into Kamen Rider Saver",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.saver.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.saver.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

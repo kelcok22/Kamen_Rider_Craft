@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mighty_creator_vrx_gashat"
 	},
-	"title": "Mightier than the Headset",
-	"description": "Transform into Ex-Aid Creator Gamer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.mighty_creator_vrx.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.mighty_creator_vrx.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

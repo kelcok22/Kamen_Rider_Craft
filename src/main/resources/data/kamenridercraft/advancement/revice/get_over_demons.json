@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:giraffa_vistamp"
       },
-      "title": "Got over it",
-      "description": "Transform into Kamen Rider Get Over Demons",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.get_over_demons.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.get_over_demons.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

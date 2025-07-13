@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_gya_go"
 	},
-	"title": "TIME FIYAHHHHHHHHHH",
-	"description": "Transform into Kamen Rider Gya-Go",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.gya-go.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.gya-go.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

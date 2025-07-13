@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sorcerer_ring"
 	},
-	"title": "The Sorcerer Supreme",
-	"description": "Defeat Kamen Rider Sorcerer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.wizard.sorcerer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.wizard.sorcerer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

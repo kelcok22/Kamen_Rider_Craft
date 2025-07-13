@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_letter"
 	},
-	"title": "Letter Best Girl",
-	"description": "Transform into Kamen Rider Letter",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.letter.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.letter.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

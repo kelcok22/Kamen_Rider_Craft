@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:dark_week_endriver"
       },
-      "title": "Flowers will bloom",
-      "description": "Transform into Kamen Rider Dark Aguilera",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.dark_aguilera.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.dark_aguilera.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

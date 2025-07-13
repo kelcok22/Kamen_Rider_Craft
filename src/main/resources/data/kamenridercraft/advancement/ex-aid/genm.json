@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gamer_driver_genmu"
 	},
-	"title": "I'll clear even with continues!",
-	"description": "Transform into Kamen Rider Genm",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ex-aid.genm.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

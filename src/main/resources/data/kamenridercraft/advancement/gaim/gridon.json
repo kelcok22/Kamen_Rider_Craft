@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_gridon"
 	},
-	"title": "Never Gonna Give You Up",
-	"description": "Transform into Kamen Rider Gridon",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.gridon.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.gridon.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

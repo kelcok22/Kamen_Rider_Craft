@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:x_wizard_ride_chemy_card"
 	},
-	"title": "Master Job",
-	"description": "Obtain all the Job Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.job_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.job_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

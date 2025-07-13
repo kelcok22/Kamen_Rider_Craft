@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:accel_booster_memory"
 	},
-	"title": "Shake it Off",
-	"description": "Transform into AccelBooster",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.accel_booster.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.accel_booster.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:magnet_switch_n"
 	},
-	"title": "Bounce Back",
-	"description": "Transform into Fourze Magnetstates",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.magnetstates.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.magnetstates.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:neo_amazons_driver_neo"
 	},
-	"title": "Until the End",
-	"description": "Transform into Kamen Rider Amazon Neo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.amazon_neo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.amazon_neo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

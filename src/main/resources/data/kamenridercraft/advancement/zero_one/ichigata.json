@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:cycloneriser"
 	},
-	"title": "Type-1",
-	"description": "Transform into Kamen Rider Ichi-Gata",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.ichigata.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.ichigata.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

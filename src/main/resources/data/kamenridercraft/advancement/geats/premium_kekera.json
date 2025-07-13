@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:kekera_black_raise_riser_card"
 	  },
-	  "title": "kek, lmao even",
-	  "description": "Transform into Premium Kekera",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.premium_kekera.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.premium_kekera.description"
+    },
 	  "frame": "goal",
 	  "show_toast": true,
 	  "announce_to_chat": true,

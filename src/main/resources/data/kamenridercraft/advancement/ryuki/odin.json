@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_odin"
 	},
-	"title": "Wibbly Wobbly Timey Wimey",
-	"description": "Transform into Kamen Rider Odin",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.odin.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.odin.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

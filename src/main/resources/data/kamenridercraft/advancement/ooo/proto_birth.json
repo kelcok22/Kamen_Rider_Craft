@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:proto_birth_driver"
 	},
-	"title": "Let's Start Earning",
-	"description": "Transform into Kamen Rider Birth·Proto Type",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.proto_birth.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.proto_birth.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

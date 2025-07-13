@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lost_castle_full_bottle"
 	},
-	"title": "Three Crows, One Knuckle",
-	"description": "Defeat the Hokuto Trio",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.hokuto_trio.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.hokuto_trio.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

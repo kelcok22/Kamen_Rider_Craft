@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dogga_hammer"
 	},
-	"title": "Silent Shout",
-	"description": "Obtain the Dogga Hammer",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.dogga_hammer.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.dogga_hammer.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

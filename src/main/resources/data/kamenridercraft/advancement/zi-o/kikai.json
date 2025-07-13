@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:kikai_driver"
 	},
-	"title": "Robots? In your dreams.",
-	"description": "Transform into Kamen Rider Kikai",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.kikai.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.kikai.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

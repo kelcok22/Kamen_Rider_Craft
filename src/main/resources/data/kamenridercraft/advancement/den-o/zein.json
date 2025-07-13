@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zein_driver"
 	},
-	"title": "Salvation of Humankind",
-	"description": "Transform into Kamen Rider Zein",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.zein.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.zein.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": true

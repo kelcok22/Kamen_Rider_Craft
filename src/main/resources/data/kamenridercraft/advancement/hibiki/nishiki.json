@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:nishikidriver"
 	},
-	"title": "10 years in the village",
-	"description": "Transform into Kamen Rider Nishiki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.nishiki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.nishiki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

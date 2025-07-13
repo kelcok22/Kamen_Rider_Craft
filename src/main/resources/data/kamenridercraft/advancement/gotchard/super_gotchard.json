@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ufo_x_ride_chemy_card"
 	},
-	"title": "Rising Fighter",
-	"description": "Transform into a Super Gotchard form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.super_gotchard.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.super_gotchard.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

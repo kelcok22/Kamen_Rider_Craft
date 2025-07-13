@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sasword_zecter"
 	},
-	"title": "Go. To. Hell!",
-	"description": "Transform into Kamen Rider Sasword",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.sasword.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.sasword.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

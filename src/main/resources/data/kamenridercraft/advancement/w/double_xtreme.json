@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:xtreme_memory"
 	},
-	"title": "The Ultimate W",
-	"description": "Transform into Double CycloneJokerXtreme",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.w.double_xtreme.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.w.double_xtreme.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

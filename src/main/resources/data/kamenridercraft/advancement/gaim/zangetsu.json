@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sengoku_driver_zangetsu"
 	},
-	"title": "Heavenly Immunity",
-	"description": "Transform into Kamen Rider Zangetsu",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.zangetsu.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

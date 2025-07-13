@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:metalcluster_hopper_progrisekey"
 	},
-	"title": "An Uneasy Alloyiance",
-	"description": "Transform into Zero-One MetalCluster Hopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.metalcluster_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.metalcluster_hopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

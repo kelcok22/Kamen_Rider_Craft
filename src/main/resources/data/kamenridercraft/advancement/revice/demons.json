@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:demons_driver"
       },
-      "title": "I'll lay my life down...",
-      "description": "Transform into Kamen Rider Demons",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.demons.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.demons.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

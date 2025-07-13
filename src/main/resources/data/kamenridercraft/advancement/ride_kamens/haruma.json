@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:chaos_driver_haruma"
 	},
-	"title": "Super Positive!",
-	"description": "Transform into Kamen Rider Haruma",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ride_kamens.haruma.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ride_kamens.haruma.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

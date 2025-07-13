@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:hee_hackgun"
 	},
-	"title": "Extendo-Gun",
-	"description": "Obtain the Hee-Hackgun",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.fourze.hee_hackgun.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.fourze.hee_hackgun.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

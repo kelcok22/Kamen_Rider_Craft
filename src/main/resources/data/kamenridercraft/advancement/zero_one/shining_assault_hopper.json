@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shining_assault_hopper_progrisekey"
 	},
-	"title": "Assault on the RealXEyez",
-	"description": "Transform into Zero-One Shining Assault Hopper",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.shining_assault_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.shining_assault_hopper.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

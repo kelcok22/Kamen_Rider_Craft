@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:forceriser_naki"
 	},
-	"title": "Male? Female? I'm a robot",
-	"description": "Transform into Kamen Rider Naki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.naki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.naki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

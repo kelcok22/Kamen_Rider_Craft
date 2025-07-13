@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_keirou"
 	},
-	"title": "I used Ninja before it was cool",
-	"description": "Transform into Kamen Rider Keilow",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.keilow.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.keilow.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:sabela_boss_block"
 	},
-	"title": "We stan Magine in this house",
-	"description": "Defeat Kamen Rider Sabela",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.sabela.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.sabela.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

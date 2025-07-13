@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:cellmedal"
 	},
-	"title": "Happy Birthday!",
-	"description": "Use all the Birth CLAWs at once (Birth·Day)",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.birth_day.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.birth_day.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

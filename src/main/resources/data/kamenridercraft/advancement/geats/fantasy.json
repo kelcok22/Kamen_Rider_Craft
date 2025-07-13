@@ -3,8 +3,12 @@
     "icon": {
   	  "id": "kamenridercraft:fantasy_raise_buckle"
     },
-    "title": "Kurama Foundation Inheritance",
-    "description": "Transform into Na-Go Fantasy Form",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.fantasy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.fantasy.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

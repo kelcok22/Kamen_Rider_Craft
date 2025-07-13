@@ -3,8 +3,12 @@
 	  "icon": {
 		"id": "kamenridercraft:kyuun_raise_riser_card"
 	  },
-	  "title": "Prince of the Lions",
-	  "description": "Transform into Kamen Rider Kyuun",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.kyuun.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.kyuun.description"
+    },
 	  "frame": "task",
 	  "show_toast": true,
 	  "announce_to_chat": true,

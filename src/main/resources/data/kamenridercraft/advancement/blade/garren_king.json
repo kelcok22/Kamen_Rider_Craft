@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evolution_giraffa"
 	},
-	"title": "I have no fear!",
-	"description": "Transform into Garren King Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.garren_king.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.garren_king.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

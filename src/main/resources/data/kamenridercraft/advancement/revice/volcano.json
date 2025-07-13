@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:volcano_vistamp"
       },
-      "title": "VOLCANO",
-      "description": "Transform into Revi Volcano Rex or Vice Barid Rex Genome",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.volcano.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.volcano.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:typhoon_ichigo"
 	},
-	"title": "If There Is No God or Buddha…",
-	"description": "Transform into Kamen Rider Nigo",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.nigo.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.nigo.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

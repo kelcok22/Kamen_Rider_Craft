@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:demons_driver_orteca"
       },
-      "title": "Itoshi no Frenemy",
-      "description": "Transform into Kamen Rider Orteca",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.orteca.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.orteca.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

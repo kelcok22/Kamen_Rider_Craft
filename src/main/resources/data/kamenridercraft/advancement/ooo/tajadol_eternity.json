@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:taka_eternity_medal"
 	},
-	"title": "Core Medals of Revival",
-	"description": "Obtain the Taka Eternity, Kujaku Eternity, and Condor Eternity Core Medals",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.tajadol_eternity.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.tajadol_eternity.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

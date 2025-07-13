@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:evol_driver_mad_rogue"
 	},
-	"title": "I pledge my loyalty to you!",
-	"description": "Transform into Kamen Rider MadRogue",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.madrogue.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.madrogue.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

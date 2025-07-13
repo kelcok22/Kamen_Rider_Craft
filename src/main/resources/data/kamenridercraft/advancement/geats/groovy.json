@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_groovy"
 	},
-	"title": ":robdog:",
-	"description": "Transform into Kamen Rider Groovy",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.groovy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.groovy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

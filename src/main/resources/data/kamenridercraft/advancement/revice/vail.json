@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:vail_driver"
       },
-      "title": "The True* Primary Rider",
-      "description": "Transform into Kamen Rider Vail",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.vail.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.vail.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

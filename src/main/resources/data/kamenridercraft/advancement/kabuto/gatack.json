@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:gatack_rider_belt"
 	},
-	"title": "That's my Pride",
-	"description": "Transform into Kamen Rider Gatack",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kabuto.gatack.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kabuto.gatack.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

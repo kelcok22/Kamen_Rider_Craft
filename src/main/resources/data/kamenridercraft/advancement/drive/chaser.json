@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:mach_driver_honoh_chaser"
 	},
-	"title": "For individuality of all beings",
-	"description": "Transform into Kamen Rider Chaser",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.chaser.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.chaser.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

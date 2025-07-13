@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:eden_driver"
 	},
-	"title": "Nanomachines, son",
-	"description": "Transform into Kamen Rider Eden",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.eden.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.eden.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_cross_z"
 	},
-	"title": "I don't really feel like losing",
-	"description": "Transform into Kamen Rider Cross-Z",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.cross-z.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.cross-z.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

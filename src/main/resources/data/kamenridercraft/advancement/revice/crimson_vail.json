@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:crimson_vail_vistamp"
       },
-      "title": "The blood red curtain falls...",
-      "description": "Transform into Crimson Vail",
-      "frame": "goal",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.crimson_vail.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.crimson_vail.description"
+    },
+    "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

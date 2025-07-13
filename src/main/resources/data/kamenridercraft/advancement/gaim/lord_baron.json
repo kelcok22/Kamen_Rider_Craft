@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:lord_baron_boss_block"
 	},
-	"title": "This is the Power of Helheim",
-	"description": "Defeat Lord Baron",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.gaim.lord_baron.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gaim.lord_baron.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

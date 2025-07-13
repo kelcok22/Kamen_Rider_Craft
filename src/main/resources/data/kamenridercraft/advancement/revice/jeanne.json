@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:libera_driver"
       },
-      "title": "I'll defeat you quickly",
-      "description": "Transform into Kamen Rider Jeanne",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.jeanne.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.jeanne.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

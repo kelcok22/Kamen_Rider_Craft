@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ktaros"
 	},
-	"title": "I'm at a climax from the start!",
-	"description": "Transform into Den-O Climax Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.den-o.climax_form.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.den-o.climax_form.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

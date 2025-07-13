@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:neo_decadriver"
 	},
-	"title": "It's not Pink, it's Magenta!",
-	"description": "Transform into Kamen Rider Decade using the NeoDecadriver",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.decade.neodecadriver.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.decade.neodecadriver.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

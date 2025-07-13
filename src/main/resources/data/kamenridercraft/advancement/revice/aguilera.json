@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:week_endriver"
       },
-      "title": "Riot in Bloom",
-      "description": "Transform into Kamen Rider Aguilera",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.aguilera.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.aguilera.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

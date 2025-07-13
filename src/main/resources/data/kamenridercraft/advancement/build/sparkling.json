@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:rabbittank_sparkling_full_bottle"
 	},
-	"title": "The Pepsi-Man",
-	"description": "Transform into Build RabbitTank Sparkling",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.sparkling.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.sparkling.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

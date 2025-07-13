@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:build_driver_phantom"
 	},
-	"title": "This is my greatest masterpiece",
-	"description": "Transform into Kamen Rider Phantom Build",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.build.phantom_build.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.build.phantom_build.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

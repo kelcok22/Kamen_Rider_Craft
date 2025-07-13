@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:tatsulot"
 	},
-	"title": "Supernova",
-	"description": "Transform into Kiva Emperor Form",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.kiva.tatsulot.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kiva.tatsulot.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

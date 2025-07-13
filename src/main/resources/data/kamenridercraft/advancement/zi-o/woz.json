@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:beyondriver"
 	},
-	"title": "IWAE!",
-	"description": "Transform into Kamen Rider Woz",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zi-o.woz.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zi-o.woz.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

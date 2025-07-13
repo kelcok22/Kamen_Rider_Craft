@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fubukidriver"
 	},
-	"title": "Blizzard Demon",
-	"description": "Transform into Kamen Rider Fubuki",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.hibiki.fubuki.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.hibiki.fubuki.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

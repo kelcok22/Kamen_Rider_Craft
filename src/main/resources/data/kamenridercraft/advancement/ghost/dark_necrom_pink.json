@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:proto_mega_ulorder_pink"
 	},
-	"title": "Nothing left to forgive",
-	"description": "Transform into Kamen Rider Dark Necrom Pink",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_pink.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ghost.dark_necrom_pink.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

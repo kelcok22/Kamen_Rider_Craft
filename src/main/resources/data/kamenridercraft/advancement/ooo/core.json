@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:core_boss_block"
 	},
-	"title": "He who turns Sadness into Rage",
-	"description": "Defeat Kamen Rider Core",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.ooo.core.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ooo.core.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

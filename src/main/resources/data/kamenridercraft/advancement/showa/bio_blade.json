@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:bio_blade"
 	},
-	"title": "Spark Cutter",
-	"description": "Obtain the Bio Blade",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.bio_blade.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.bio_blade.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

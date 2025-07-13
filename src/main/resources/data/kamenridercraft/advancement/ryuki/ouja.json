@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:v_buckle_ouja"
 	},
-	"title": "This is where the festival is…",
-	"description": "Transform into Kamen Rider Ouja",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.ryuki.ouja.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.ryuki.ouja.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

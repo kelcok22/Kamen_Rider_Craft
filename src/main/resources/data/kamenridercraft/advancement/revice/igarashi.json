@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:fifty_gale_vistamp"
       },
-      "title": "Dance Dance",
-      "description": "Transform into Kamen Rider Igarashi",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.igarashi.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.igarashi.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

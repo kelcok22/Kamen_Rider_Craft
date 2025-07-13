@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:shingouax"
 	},
-	"title": "Wait a Sec! ...Now Off You Go!",
-	"description": "Obtain the Shingou-Ax",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.shingou-ax.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.shingou-ax.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

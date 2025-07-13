@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_shirowe"
 	},
-	"title": "Don't talk like we're the same",
-	"description": "Transform into Kamen Rider Shirowe",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.shirowe.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.shirowe.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

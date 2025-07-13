@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:manga_arcle"
 	},
-	"title": "Man of 2015 Talents",
-	"description": "Transform into Manga Kuuga",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.kuuga.manga_kuuga.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.kuuga.manga_kuuga.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

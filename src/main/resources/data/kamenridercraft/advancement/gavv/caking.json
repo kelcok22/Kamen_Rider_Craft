@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:caking_gochizo"
 	},
-	"title": "A Feast Fit for a King",
-	"description": "Transform into Gavv Caking",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.caking.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.caking.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

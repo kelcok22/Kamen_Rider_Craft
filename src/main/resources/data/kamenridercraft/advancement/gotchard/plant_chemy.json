@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:xeggdrasil_ride_chemy_card"
 	},
-	"title": "Best Plant",
-	"description": "Obtain all the Plant Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.plant_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.plant_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

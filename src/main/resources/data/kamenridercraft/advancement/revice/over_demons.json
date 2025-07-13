@@ -3,9 +3,13 @@
       "icon": {
         "id": "kamenridercraft:over_demons_driver"
       },
-      "title": "Getting over it",
-      "description": "Transform into Kamen Rider Over Demons",
-      "frame": "task",
+      "title": {
+      "translate": "advancements.kamenridercraft.revice.over_demons.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.revice.over_demons.description"
+    },
+    "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

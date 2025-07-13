@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g_belt"
 	},
-	"title": "Vintage Approach",
-	"description": "Transform into Kamen Rider G",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.extras.g.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.g.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

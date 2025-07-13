@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:haken_bladriver_tassel"
 	},
-	"title": "Everyone, bonne lecture",
-	"description": "Transform into Kamen Rider Tassel",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.saber.tassel.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.saber.tassel.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

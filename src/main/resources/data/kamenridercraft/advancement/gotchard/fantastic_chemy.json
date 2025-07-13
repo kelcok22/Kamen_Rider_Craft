@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:dragonalos_ride_chemy_card"
 	},
-	"title": "Perfect Fantastic",
-	"description": "Obtain all the Fantastic Chemy Cards",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.fantastic_chemy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.fantastic_chemy.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

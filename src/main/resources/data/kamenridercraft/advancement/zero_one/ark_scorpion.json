@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:zetsumetsu_driver"
 	},
-	"title": "Look how he massacred my boy",
-	"description": "Transform into Horobi Ark Scorpion",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.zero_one.ark_scorpion.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zero_one.ark_scorpion.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

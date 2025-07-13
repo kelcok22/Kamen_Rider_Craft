@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:ank_point_burning"
 	},
-	"title": "We Didn't Start the Fire",
-	"description": "Transform into Kamen Rider Another Agito (Kouji Majima)",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.another_agito_kouji_majima.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.another_agito_kouji_majima.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

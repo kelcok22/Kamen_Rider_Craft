@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:storm_halberd"
 	},
-	"title": "Halberd Spin",
-	"description": "Obtain the Storm Halberd",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.storm_halberd.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.storm_halberd.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

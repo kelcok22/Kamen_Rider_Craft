@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:desire_driver_mary"
 	},
-	"title": "Mary had a little illegal casino",
-	"description": "Transform into Kamen Rider Mary",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.mary.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.mary.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

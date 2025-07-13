@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:fusion_elephant"
 	},
-	"title": "More like Jacked Form",
-	"description": "Transform into Leangle Jack Form",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.blade.leangle_jack.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.blade.leangle_jack.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

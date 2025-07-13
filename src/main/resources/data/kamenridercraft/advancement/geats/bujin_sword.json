@@ -3,8 +3,12 @@
     "icon": {
   	  "id": "kamenridercraft:bujin_sword_raise_buckle"
     },
-    "title": "Chair",
-    "description": "Transform into Tycoon Bujin Sword",
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.bujin_sword.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.bujin_sword.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

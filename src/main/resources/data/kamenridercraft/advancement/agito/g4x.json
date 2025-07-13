@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:g4_x_belt"
 	},
-	"title": "I'm Blue (Da Ba Dee)",
-	"description": "Transform into Kamen Rider G4-X",
-	"frame": "goal",
+	"title": {
+      "translate": "advancements.kamenridercraft.agito.g4x.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.g4x.description"
+    },
+    "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

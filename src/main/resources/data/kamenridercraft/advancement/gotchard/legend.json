@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:legendriver"
 	},
-	"title": "Gorgeous Time!",
-	"description": "Transform into Kamen Rider Legend",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.gotchard.legend.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gotchard.legend.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false

@@ -3,9 +3,13 @@
 	"icon": {
 	  "id": "kamenridercraft:deadheatshift"
 	},
-	"title": "Don't lose your mind",
-	"description": "Transform into Drive type Dead Heat",
-	"frame": "task",
+	"title": {
+      "translate": "advancements.kamenridercraft.drive.dead_heat.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.drive.dead_heat.description"
+    },
+    "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
