@@ -1,5 +1,53 @@
 {
   "values": [
-    "kamenridercraft:dango"
+    "kamenridercraft:dango",
+    {
+        "id": "pamhc2foodextended:dangoitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:mochiitem",
+        "required": false
+    },
+    {
+        "id": "pamhc2foodextended:mochidessertitem",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:tsukimi_dango",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:yashouma_dango",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:kinako_dango",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:mitarashi_dango",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:assorted_dango",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:mochi",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:coffee_mochi",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:matcha_mochi",
+        "required": false
+    },
+    {
+        "id": "youkaishomecoming:sakura_mochi",
+        "required": false
+    }
   ]
 }

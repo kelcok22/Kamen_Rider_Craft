@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "giff",
+  "pattern": [
+	"XCX",
+	"AXB",
+	"XEX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:giff_junior_vistamp"
+	}, "C": {
+	  "item": "kamenridercraft:rex_vistamp"
+	}, "A": {
+		  "item": "kamenridercraft:bat_vistamp"
+	  }, "B": {
+		  "item": "kamenridercraft:cobra_vistamp"
+	  }, "E": {
+		  "item": "kamenridercraft:crimson_vail_vistamp"
+	  }
+  },
+  "result": {
+	"id": "kamenridercraft:giff_stamp"
+  }
+}

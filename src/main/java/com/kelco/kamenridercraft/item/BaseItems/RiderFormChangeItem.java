@@ -129,6 +129,11 @@ public class RiderFormChangeItem extends BaseItem {
         return BELT_TEX;
     }
 
+    public List<RiderFormChangeItem> getAlternative () {
+        return alternative;
+    }
+
+
     public Boolean getIgnoreOverrideBeltText() {
         return IGNORE_BELT_TEXT;
     }

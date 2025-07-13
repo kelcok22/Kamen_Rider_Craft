@@ -723,6 +723,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.PARADX_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DECADE_ARMOR_EX_AID.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.VICE.get(), SummonedEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.LOVEKOV.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WHIPPED_SOLDIER.get(), WhippedSoldierRenderer::new);
             
             event.registerEntityRenderer(MobsCore.CHAIR_ENTITY.get(), ChairRenderer::new);
