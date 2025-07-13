@@ -1179,6 +1179,9 @@ public class MobsCore {
           public static final DeferredHolder<EntityType<?>, EntityType<ViceEntity>> VICE = MOBLIST.register("vice",
                   () -> EntityType.Builder.of(ViceEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":vice"));
           
+          public static final DeferredHolder<EntityType<?>, EntityType<LovekovEntity>> LOVEKOV = MOBLIST.register("lovekov",
+                  () -> EntityType.Builder.of(LovekovEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lovekov"));
+          
           public static final DeferredHolder<EntityType<?>, EntityType<WhippedSoldierEntity>> WHIPPED_SOLDIER = MOBLIST.register("whipped_soldier",
                   () -> EntityType.Builder.of(WhippedSoldierEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":whipped_soldier"));
 

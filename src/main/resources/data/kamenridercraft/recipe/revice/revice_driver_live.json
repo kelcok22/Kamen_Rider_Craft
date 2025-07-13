@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "demons",
+  "group": "livevil",
   "pattern": [
-	"XCX",
 	"XXX",
+	"XCX",
 	"XXX"
   ],
   "key": {

@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-10T00:51:39.6957458	Item Models: kamenridercraft
+// 1.21.1	2025-07-12T20:12:08.4397762	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -351,6 +351,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/trid
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/tridoron_all_tire.json
 15de1a14d31fe7f1f079b53ec696d175ab766da2 assets/kamenridercraft/models/item/tridoron_key.json
 19d7ac204ade8508ab6f0c2ebb34a09a6477cb94 assets/kamenridercraft/models/item/tsupparihebi_ride_chemy_card.json
+473e54a55d9729ee2d218164b5267afca7ffefdb assets/kamenridercraft/models/item/tsurigummy_gochizo.json
 8fa117bf2975e2934fde29137997a6688bb828c1 assets/kamenridercraft/models/item/unicon_repli_chemy_card.json
 8d83a17a078e587b2659b175f4b2659188abbac9 assets/kamenridercraft/models/item/utsubocchama_ride_chemy_card.json
 c19a0f725e304e48d94731f7601028278a872c68 assets/kamenridercraft/models/item/valvaradriver.json

@@ -356,10 +356,8 @@
 			"text": "Song:$(li)HosephHoestar - liveDevil$(br2)Based on:$(li)Da-iCE ft. Subaru Kimura - liveDevil$(br)Type:$(li)Opening theme$(br)Appears in:$(li)Kamen Rider Revice (2021, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:livedevil_music_disc",
-			"text": "Disc is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/livedevil_music_disc"
 		},
 		{
 			"type": "patchouli:text",

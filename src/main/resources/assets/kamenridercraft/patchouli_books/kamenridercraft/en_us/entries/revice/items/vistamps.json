@@ -359,11 +359,9 @@
 			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to craft Live's $(l:revice/devices/revice_driver#revice_driver_live)Revice Driver (Live)$(/l)$(br2)Used to craft Evil's $(l:revice/devices/revice_driver#revice_driver_evil)Revice Driver (Evil)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:mega_bat_vistamp",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:revice/mega_bat_vistamp"
 		},
 		{
 			"type": "patchouli:text",
@@ -385,11 +383,9 @@
 			"text": "Appears in:$(li)Revice Forward: Kamen Rider Live & Evil & Demons (2023, V-Cinema film)$(br2)Used to access Demons's $(l:revice/riders/demons#giant_spider)Giant Spider Genome$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:giant_spider_vistamp",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:revice/giant_spider_vistamp"
 		},
 		{
 			"type": "patchouli:text",
@@ -411,11 +407,9 @@
 			"text": "Appears in:$(li)Kamen Rider Geats × Revice: Movie Battle Royale (2022, movie)$(br2)Used to craft Get Over Demons's $(l:revice/devices/demons_driver#get_over_demons_driver)Demons Driver (Get Over Demons)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:giraffa_vistamp",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:revice/giraffa_vistamp"
 		},
 		{
 			"type": "patchouli:text",
@@ -732,7 +726,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:condor_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -745,7 +739,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:white_leo_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -758,7 +752,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:quetzalcoatlus_vistamp",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1226,7 +1220,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:mammoth_vistamp_china",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by using $(l:revice/items/proto_vistamp)Blank Vistamps$(/l) on the $(l:misc/blocks/machine_blocks#vistamp_bar)Vistamp Bar$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -1248,11 +1242,9 @@
 			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:giff_stamp",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"recipe": "kamenridercraft:revice/giff_stamp"
 		},
 		{
 			"type": "patchouli:text",

@@ -28,8 +28,7 @@ public class FaizDriverItem extends RiderDriverItem {
 	{
 		if (equipmentSlot == EquipmentSlot.FEET && itemstack.getItem()==Faiz_Rider_Items.FAIZ_DRIVER.get()) {
 			if(get_Form_Item(itemstack, 1)!=Faiz_Rider_Items.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get()
-				&&((rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE.get())
-				||(rider.getMainHandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()||rider.getOffhandItem().getItem()==Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()))) return "belts/faiz_driver_belt_b";
+				&&((rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE.get())||(rider.isHolding(Faiz_Rider_Items.FAIZ_PHONE_POINTER.get()))))) return "belts/faiz_driver_belt_b";
 		}
 		return super.GET_TEXT(itemstack, equipmentSlot, rider, riderName);
 

@@ -6,9 +6,11 @@ import javax.annotation.Nullable;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
@@ -27,6 +29,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.vehicle.VehicleEntity;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
@@ -109,43 +112,66 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
 	// Turn off step sounds since it's a bike
 	@Override
-	protected void playStepSound(BlockPos pos, BlockState block) {}
+	protected void playStepSound(BlockPos pos, BlockState state) {
+	}
 
 	// Apply player-controlled movement
 	@Override
 	public void travel(Vec3 pos) {
 		if (this.isAlive()) {
+			this.fallDistance=0;
+
 			if (this.isVehicle()) {
+
+
 				LivingEntity passenger = (LivingEntity)getControllingPassenger();
+				if (passenger!=null){
 				this.yRotO = getYRot();
 				this.xRotO = getXRot();
 
-
-
-				float x = passenger.xxa * 0.0F;
 				float z = passenger.zza;
 
-				if (z <= 0) z *= 0.25f;
-
+				if (z <= 0) z *= 0.5f;
+if (this.onGround()){
 				if (z>0) {
+					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
+					if (this.getSpeed() <0.2){
+						if (level() instanceof ServerLevel sl) {
+							sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+									this.getX(), this.getY() ,
+									this.getZ(), 10, 0, 0, 0, 0);
+						}
+
+						//this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+					}
+
+					if (this.getSpeed()<0.6) this.setSpeed(this.getSpeed()+0.01f);
 					setYRot(yRotO - passenger.xxa * 5F);
 					setXRot(passenger.getXRot() * 3f);
 
 					setRot(getYRot(), getXRot());
 					this.yBodyRot = this.getYRot();
 					this.yHeadRot = this.yBodyRot;
-					//this.playSound(SoundEvents.SKELETON_HORSE_AMBIENT_WATER, 1.0F, 0F);
 				}else if (z<0) {
+					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
+
+					if (this.getSpeed()<1) this.setSpeed(this.getSpeed()+0.01f);
 					setYRot(yRotO + passenger.xxa * 5F);
 					setXRot(-passenger.getXRot() * 3f);
 
 					setRot(getYRot(), getXRot());
 					this.yBodyRot = this.getYRot();
 					this.yHeadRot = this.yBodyRot;
-					//this.playSound(SoundEvents.SKELETON_HORSE_AMBIENT_WATER, 1.0F, 0F);
+				}else{
+					if (this.getSpeed()!=0) {
+						if (this.getSpeed() >0.6)this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+						this.setSpeed(0f);
+					}
 				}
-				this.setSpeed(0.6f);
-				super.travel(new Vec3(x, pos.y, z));
+}
+				super.travel(new Vec3(0, pos.y, z));
+			}
+
 			}
 		}
 	}
