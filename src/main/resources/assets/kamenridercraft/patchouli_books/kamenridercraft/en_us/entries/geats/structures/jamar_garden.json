@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Jyamar Garden",
-			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Spawn locations: Jungle, Bamboo Jungle, Sparse Jungle$(br2)Chest loot:$(li)3-7 $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l) (20%)$(li)4-6 Bones (10%)$(li)1 Iron Hoe (8%)$(li)1 Gold Hoe (6%)$(li)1 Diamond Hoe (4%)"
+			"text": "Appears in:$(li)Kamen Rider Geats (2022, TV show)$(br2)Spawn locations: Jungle, Bamboo Jungle, Sparse Jungle$(br2)Chest loot:$(li)3-7 $(l:geats/items/blank_rider_core_id)Blank Rider Core ID$(/l) (18.8%)$(li)4-6 Bones (9.4%)$(li)1 Iron Hoe (7.5%)$(li)1 Gold Hoe (5.7%)$(li)1 Diamond Hoe (3.8%)"
 		},
 		{
 			"type": "patchouli:image",
@@ -16,15 +16,15 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/jamar_garden.png"
 			],
 			"title": " ",
-			"text": "$(li)1 $(l:geats/items/rider_core_ids#togechi_rider_core_id)Kamen Rider Togetchi Core ID$(/l) (4%)$(li)1 $(l:geats/items/rider_core_ids#lancer_rider_core_id)Kamen Rider Lancer Core ID$(/l) (4%)"
+			"text": "$(li)1 $(l:geats/items/rider_core_ids#togechi_rider_core_id)Kamen Rider Togetchi Core ID$(/l) (3.8%)$(li)1 $(l:geats/items/rider_core_ids#lancer_rider_core_id)Kamen Rider Lancer Core ID$(/l) (3.8%)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:geats/items/rider_core_ids#garun_rider_core_id)Kamen Rider Garun Core ID$(/l) (4%)$(li)1 $(l:geats/items/rider_core_ids#togechi_rider_core_id_cracked)Kamen Rider Togetchi Core ID (Cracked)$(/l) (6%)$(li)1 $(l:geats/items/rider_core_ids#letter_rider_core_id_cracked)Kamen Rider Letter Core ID (Cracked)$(/l) (6%)$(li)1 $(l:geats/items/rider_core_ids#nudge_sparrow_rider_core_id_cracked)Kamen Rider Nadge-Sparrow Core ID (Cracked)$(/l) (6%)$(li)1 $(l:geats/items/rider_core_ids#ginpen_rider_core_id_cracked)Kamen Rider Ginpen Core ID (Cracked)$(/l) (6%)$(li)1 $(l:geats/items/rider_core_ids#shirowe_rider_core_id_cracked)Kamen Rider Shirowe Core ID (Cracked)$(/l) (6%)$(li)1 $(l:geats/items/raise_riser_cards#ziin_raise_riser_card)Raise Riser Card (Ziin)$(/l) (2%)$(li)1 $(l:geats/items/raise_riser_cards#kekera_raise_riser_card)Raise Riser Card (Kekera)$(/l) (2%)"
+			"text": "$(li)1 $(l:geats/items/rider_core_ids#garun_rider_core_id)Kamen Rider Garun Core ID$(/l) (3.8%)$(li)1 $(l:geats/items/rider_core_ids#togechi_rider_core_id_cracked)Kamen Rider Togetchi Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/rider_core_ids#letter_rider_core_id_cracked)Kamen Rider Letter Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/rider_core_ids#nudge_sparrow_rider_core_id_cracked)Kamen Rider Nadge-Sparrow Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/rider_core_ids#ginpen_rider_core_id_cracked)Kamen Rider Ginpen Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/rider_core_ids#shirowe_rider_core_id_cracked)Kamen Rider Shirowe Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/rider_core_ids#buffa_rider_core_id_cracked)Kamen Rider Buffa Core ID (Cracked)$(/l) (5.7%)$(li)1 $(l:geats/items/raise_riser_cards#ziin_raise_riser_card)Raise Riser Card (Ziin)$(/l) (1.9%)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l) (2%)$(li)1 $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (2%)"
+			"text": "$(li)1 $(l:geats/items/raise_riser_cards#kekera_raise_riser_card)Raise Riser Card (Kekera)$(/l) (1.9%)$(li)1 $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)Raise Riser Card (Beroba)$(/l) (1.9%)$(li)1 $(l:geats/items/raise_buckles#jyamato_buckle)Jyamato Buckle$(/l) (1.9%)"
 		}
 	]
 }
