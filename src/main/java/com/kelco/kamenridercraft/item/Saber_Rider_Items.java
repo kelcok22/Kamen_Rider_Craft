@@ -558,7 +558,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false))
-					.ChangeSlot(2).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK = ITEMS.register("tategami_hyoujuu_senki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"blades_tategami_hyoujuu_senki","blades","seiken_swordriver_belt"
@@ -570,7 +570,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
-					.ChangeSlot(2).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARABIANA_NIGHT_WONDER_RIDE_BOOK = ITEMS.register("arabiana_night_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"espada_arabiana_night","espada","seiken_swordriver_belt"
@@ -581,7 +581,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 5,true,false))
-					.ChangeSlot(3).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
+					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("gaikotsu_ninjaden_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","desast","seiken_swordriver_belt_desast"
