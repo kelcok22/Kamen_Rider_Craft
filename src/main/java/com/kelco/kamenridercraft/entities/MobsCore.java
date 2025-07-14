@@ -1135,6 +1135,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BITTER_GAVV_SPAWN_EGG = ITEMS.register("bitter_gavv_spawn_egg",
             () -> new DeferredSpawnEggItem(BITTER_GAVV, 0x0d0d0d, 0xfa4d02, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<NyelvEntity>> NYELV_STOMACH = MOBLIST.register("nyelv_stomach",
+            () -> EntityType.Builder.of(NyelvEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nyelv_stomach"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> NYELV_STOMACH_SPAWN_EGG = ITEMS.register("nyelv_stomach_spawn_egg",
+            () -> new DeferredSpawnEggItem(NYELV_STOMACH, 0x415048, 0xf57b14, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
                   () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
