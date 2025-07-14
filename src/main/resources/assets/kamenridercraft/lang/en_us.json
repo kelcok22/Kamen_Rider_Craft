@@ -556,6 +556,8 @@
   "henshin.kamenridercraft.premium_beroba":"§dBeroba! Set! Laser On! Premium Beroba",
   "henshin.kamenridercraft.premium_kekera":"§aKekera! Set! Laser On! Premium Kekera",
   "henshin.kamenridercraft.bitter_gavv":"§4SparkinGummi! Yummy!",
+  "henshin.kamenridercraft.nyelv":"<Nyelv Stomach> §6My, That Would Be An Issue",
+  "henshin.kamenridercraft.marble_breacookie":"§5Breacookie! Yummy!",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
   "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -7480,6 +7482,8 @@
   "item.kamenridercraft.bakebuckle": "Bakebuckle",
   "item.kamenridercraft.henshin_belt_caries_gavv": "Henshin Belt Caries Gavv",
   "kamenridercraft.name.caries": "Rider: Kamen Rider Caries",
+  "item.kamenridercraft.nyelv_mimicdeviser": "Mimicdeviser",
+  "kamenridercraft.name.nyelv": "Granute: Nyelv Stomach",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.prototype_cup_gochizo": "Prototype Cup Gochizo",
@@ -7611,6 +7615,8 @@
 
   "item.kamenridercraft.boonboomger_gochizo": "Boonboomger Gochizo",
   "kamenridercraft:boonboomger_gochizo.form": "Form: Boonboomger Assist",
+
+  "item.kamenridercraft.nyelv_mimic_key": "Nyelvs Mimic Key",
 
 "item.kamenridercraft.gavvgablade": "Gavvgablade",
 "item.kamenridercraft.zakuzakuchipslasher": "Zakuzakuchipslasher",
@@ -8022,6 +8028,7 @@
 
   "entity.kamenridercraft.agent": "Agent",
   "entity.kamenridercraft.bitter_gavv": "Kamen Rider Bitter Gavv",
+  "entity.kamenridercraft.nyelv_stomach": "Nyelv Stomach",
 
 "entity.kamenridercraft.denbird": "DenBird",
 "entity.kamenridercraft.machine_tornador": "Machine Tornador",
@@ -8225,6 +8232,7 @@
 
   "item.kamenridercraft.agent_spawn_egg": "Agent Spawn Egg",
   "item.kamenridercraft.bitter_gavv_spawn_egg": "Kamen Rider Bitter Gavv Spawn Egg",
+  "item.kamenridercraft.nyelv_stomach_spawn_egg": "Nyelv Stomach Spawn Egg",
 
 "item.kamenridercraft.denbird_spawn_egg": "DenBird Spawn Egg",
 "item.kamenridercraft.machine_tornador_spawn_egg": "Machine Tornador Spawn Egg",

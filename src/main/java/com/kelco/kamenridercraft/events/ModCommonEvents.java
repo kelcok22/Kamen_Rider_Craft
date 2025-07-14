@@ -638,6 +638,7 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.AGENT.get(), AgentEntity.setAttributes().build());
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
+		event.put(MobsCore.NYELV_STOMACH.get(), BitterGavvEntity.setAttributes().build());
 
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());

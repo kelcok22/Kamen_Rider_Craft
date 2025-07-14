@@ -42,6 +42,28 @@
 				}
 			]
 		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:marble_breacookie_gochizo"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "attacking_player",
+					"predicate": {
+						"slots": {
+							"container.*": {
+								"items": "kamenridercraft:nyelv_mimic_key"
+							}
+						}
+					}
+				}
+			]
+		},
 	  {
 		"rolls": 1,
 		"entries": [

@@ -28,6 +28,10 @@ public class AgentRenderer extends  HumanoidMobRenderer<AgentEntity, BasicMobMod
 						ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/agent_blue_a.png"));
 				map.put(AgentVariant.BLUE_B,
 						ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/agent_blue_b.png"));
+				map.put(AgentVariant.ORANGE_A,
+						ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/agent_orange_a.png"));
+				map.put(AgentVariant.ORANGE_B,
+						ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/agent_orange_b.png"));
 			});
 
 

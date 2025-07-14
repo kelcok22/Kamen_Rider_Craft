@@ -22,7 +22,12 @@ import javax.annotation.Nullable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 
+import static com.kelco.kamenridercraft.entities.variants.AgentVariant.ORANGE_A;
+import static com.kelco.kamenridercraft.entities.variants.AgentVariant.ORANGE_B;
+
 public class AgentEntity extends BaseHenchmenEntity {
+
+    private BaseHenchmenEntity boss;
 
     private static final EntityDataAccessor<Integer> VARIANT =
         SynchedEntityData.defineId(AgentEntity.class, EntityDataSerializers.INT);
@@ -33,22 +38,7 @@ public class AgentEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.AGENT_BLASTER.get()));
     }
 
-    public void remove(Entity.RemovalReason p_149847_) {
 
-        if ( this.isDeadOrDying()) {
-            if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                BaseHenchmenEntity boss = MobsCore.BITTER_GAVV.get().create(this.level());
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-                    if (this.getLastAttacker()instanceof Player playerIn) {
-                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_gavv"));
-                    }
-                }
-            }
-        }
-        super.remove(p_149847_);
-    }
 
     //variants below
 
@@ -93,5 +83,35 @@ public class AgentEntity extends BaseHenchmenEntity {
         AgentVariant variant = Util.getRandom(AgentVariant.values(), this.random);
         this.setVariant(variant);
         return super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
+    }
+
+    public void remove(Entity.RemovalReason p_149847_) {
+
+        if ( this.isDeadOrDying()) {
+            if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
+                int bossChoice = this.random.nextInt(2);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.BITTER_GAVV.get().create(this.level());
+                        if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_gavv"));
+                        }
+                        break;
+                    case 1:
+                        if (getVariant() == ORANGE_A) {
+                            boss = MobsCore.NYELV_STOMACH.get().create(this.level());
+                            if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                                playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
+                        }}
+                        break;
+                    default:
+                }
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
+            }
+        }
+        super.remove(p_149847_);
     }
 }

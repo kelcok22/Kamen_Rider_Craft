@@ -1,0 +1,42 @@
+package com.kelco.kamenridercraft.entities.bosses;
+
+
+import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
+import com.kelco.kamenridercraft.item.Gavv_Rider_Items;
+import com.kelco.kamenridercraft.item.Zero_One_Rider_Items;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+
+public class NyelvEntity extends BaseHenchmenEntity {
+
+
+
+    public NyelvEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+        super(type, level);
+        NAME="nyelv_stomach";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Gavv_Rider_Items.GAVV_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gavv_Rider_Items.GAVV_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gavv_Rider_Items.GAVV_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gavv_Rider_Items.NYELV_MIMICDEVISER.get()));
+     //   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.THOUSAND_JACKER.get()));
+    }
+
+
+    public static AttributeSupplier.Builder setAttributes() {
+
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 135.0D)
+                .add(Attributes.MOVEMENT_SPEED,(double)0.3F)
+                .add(Attributes.ATTACK_DAMAGE, 10.0D)
+                .add(Attributes.ARMOR, 3.0D)
+                .add(Attributes.MAX_HEALTH, 200.0D);
+    }
+
+
+}

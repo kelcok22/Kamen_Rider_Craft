@@ -472,6 +472,13 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> NYELV_MIMIC_KEY = ITEMS.register("nyelv_mimic_key",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","nyelv","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> GAVV_HELMET = ITEMS.register("gavv_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -507,6 +514,10 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> HENSHIN_BELT_CARIES_GAVV = ITEMS.register("henshin_belt_caries_gavv",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"caries",TERROR_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> NYELV_MIMICDEVISER = ITEMS.register("nyelv_mimicdeviser",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nyelv",NYELV_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
