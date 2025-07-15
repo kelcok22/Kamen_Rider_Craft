@@ -31,7 +31,6 @@ import com.kelco.kamenridercraft.particle.WizardParticles;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -42,19 +41,13 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.client.event.*;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
@@ -83,7 +76,6 @@ import java.util.List;
 public class KamenRiderCraftCore
 {
      public static final String MOD_ID = "kamenridercraft";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final int NEW_STRUCTURE_SIZE = 512;
 
@@ -199,7 +191,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
 
     if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ArmorItem belt) {
      if (belt instanceof RiderDriverItem driver && driver.isTransformed(event.getEntity())) {
-        double tag = driver.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET));
+        double tag = RiderDriverItem.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET));
         if (tag != 0) {
             if (tag != 2) {
                 model.head.visible = false;
@@ -322,7 +314,6 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
 }
 
         float size = 1;
-        boolean Tall = event.getEntity().hasEffect(Effect_core.STRETCH);
 
         if (event.getEntity().hasEffect(Effect_core.STRETCH)) {
             size = size + ((event.getEntity().getEffect(Effect_core.STRETCH).getAmplifier()) +1f);

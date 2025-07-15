@@ -13,6 +13,17 @@
 	"kamenridercraft:hattari_driver",
 	"kamenridercraft:quiz_driver",
 	"kamenridercraft:kikai_driver",
-	"kamenridercraft:ginga_driver"
+	"kamenridercraft:ginga_driver",
+	"kamenridercraft:another_build_driver",
+	"kamenridercraft:another_ex_aid_driver",
+	"kamenridercraft:another_ghost_driver",
+	"kamenridercraft:another_gaim_driver",
+	"kamenridercraft:another_wizard_driver",
+	"kamenridercraft:another_fourze_driver",
+	"kamenridercraft:another_ooo_driver",
+	"kamenridercraft:another_faiz_driver",
+	"kamenridercraft:another_w_driver",
+	"kamenridercraft:another_shinobi_driver",
+	"kamenridercraft:another_altering"
   ]
 }
