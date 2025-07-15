@@ -132,7 +132,7 @@ public class DesireDriverItem  extends RiderDriverItem {
 		boolean fly = rider instanceof Player player && player.getAbilities().flying;
 		
 		Boolean isBujin= false;
-		if (get_Form_Item(itemstack,2)== Geats_Rider_Items.BOOST_RAISE_BUCKLE.get()||get_Form_Item(itemstack,2)== Modded_item_core.BLANK_FORM.get())  isBujin = true;
+		if (get_Form_Item(itemstack,2)== Geats_Rider_Items.MONSTER_RAISE_BUCKLE.get()||get_Form_Item(itemstack,2)== Geats_Rider_Items.BOOST_RAISE_BUCKLE.get()||get_Form_Item(itemstack,2)== Modded_item_core.BLANK_FORM.get())  isBujin = true;
 		
 		if (equipmentSlot == EquipmentSlot.FEET) {
 			
@@ -358,10 +358,18 @@ public class DesireDriverItem  extends RiderDriverItem {
 			 }else 
 				 
 				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()&&get_Form_Item(itemstack,2)==Geats_Rider_Items.BOOST_MKIII_RAISE_BUCKLE.get()) return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_wings_armor.geo.json");
+				 if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/default_cape.geo.json");
 				
 				 if (get_Form_Item(itemstack, num).get_Model(this.Rider)=="default.geo.json")return  ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/geats.geo.json");
 				 else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/"+get_Form_Item(itemstack, num).get_Model(this.Rider));
 				
+
+	}
+
+	public ResourceLocation getAnimationResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot) {
+		if (get_Form_Item(itemstack,3)==Geats_Rider_Items.BUJIN_SWORD_RAISE_BUCKLE.get()) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_cape.animation.json");
+
+		else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, get_Form_Item(itemstack, 1).get_Animation());
 
 	}
 	
