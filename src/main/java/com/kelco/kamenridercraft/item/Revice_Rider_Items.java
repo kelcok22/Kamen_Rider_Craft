@@ -659,7 +659,14 @@ public class Revice_Rider_Items {
 	
 	public static final DeferredItem<Item> RAFFLESIA_VISTAMP = ITEMS.register("raflessia_vistamp",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
-	
+
+	public static final DeferredItem<Item> PROTO_JACKAL_VISTAMP_VICE = ITEMS.register("proto_jackal_vistamp",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jackal_concept","vice","buddy_buckle_belt",
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
+					.SetPalyerModelInvisible().has_basic_model().model_has_different_name("jackal_vistamp").AddToList(RiderTabs.REVICE_TAB_ITEM));
+
+
 	public static final DeferredItem<Item> OBLIVION_STAMP = ITEMS.register("oblivion_stamp",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
