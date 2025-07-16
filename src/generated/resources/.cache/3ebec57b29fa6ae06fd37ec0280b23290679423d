@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-14T20:03:30.5993732	Item Models: kamenridercraft
+// 1.21.1	2025-07-16T19:13:17.1289293	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -277,6 +277,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popburn_gochizo.json
 cf5d6cd7d04c073d011ef32a1776093054ce4955 assets/kamenridercraft/models/item/prototype_cup_gochizo.json
 43bda8c5bf518c60593a57b61622246185ad2d39 assets/kamenridercraft/models/item/protozero_core.json
+f503329fe717bef2a8dea219dc171f2624cc9f4e assets/kamenridercraft/models/item/proto_jackal_vistamp.json
 ec5fd7d93fc06a2708b266545e140c5aefaac96d assets/kamenridercraft/models/item/proto_speedshift_chaser.json
 007c6c02c902b826c6c5d40dadb96d7119b4f3d6 assets/kamenridercraft/models/item/providence_card_ziingazer.json
 693adc57e039e4592470fe01e01af9c0459c3c59 assets/kamenridercraft/models/item/prujelly_gochizo.json
