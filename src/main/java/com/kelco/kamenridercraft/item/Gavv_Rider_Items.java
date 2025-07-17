@@ -193,7 +193,7 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
