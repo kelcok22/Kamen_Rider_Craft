@@ -37,20 +37,23 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
     public void setCustomAnimations(baseBikeEntity an, long instanceId, AnimationState<baseBikeEntity> state) {
 
 
-
-
         GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
         GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");
         GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
         EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
+        baseBikeEntity entityData2 = (baseBikeEntity) state.getData(DataTickets.ENTITY);
+
 
         baseBikeEntity  animatable= state.getAnimatable();
         if (front_fork != null) {
             front_fork.setRotY(entityData.headPitch());
         }
         if (b_wheel != null & f_wheel != null) {
-           // this.getBone("b_wheel").get().setRotX(entityData.netHeadYaw());
-            //this.getBone("f_wheel").get().setRotX(entityData.netHeadYaw());
+            if (entityData.isSitting()) {
+
+               // f_wheel.setRotX(entityData2.yHeadRot);
+               // b_wheel.setRotX(entityData2.yHeadRot);
+            }
         }
     }
 }
