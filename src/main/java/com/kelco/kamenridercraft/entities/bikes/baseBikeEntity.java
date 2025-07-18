@@ -256,7 +256,7 @@ protected SoundEvent getDeathSound() {
 				if (this.getControllingPassenger().xxa < 0) front_fork = -0.25f;
 				if (this.getControllingPassenger().xxa > 0) front_fork = 0.25f;
 				if (this.getControllingPassenger().zza > 0) wheel=- 0.1f;
-				if (this.getControllingPassenger().zza < 0) wheel=- 0.05f;
+				if (this.getControllingPassenger().zza < 0) wheel=+ 0.05f;
 
 			}
 			EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
