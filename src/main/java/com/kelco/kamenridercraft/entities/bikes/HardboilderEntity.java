@@ -25,18 +25,4 @@ public class HardboilderEntity extends baseBikeEntity {
 	public static AttributeSupplier.Builder setAttributes() {
 		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
 	}
-	@Override
-	public boolean alwaysAccepts() {
-		return super.alwaysAccepts();
-	}
-
-	@Override
-	public void equip(EquipmentTable equipmentTable, LootParams params) {
-		super.equip(equipmentTable, params);
-	}
-
-	@Override
-	public void equip(ResourceKey<LootTable> equipmentLootTable, LootParams params, Map<EquipmentSlot, Float> slotDropChances) {
-		super.equip(equipmentLootTable, params, slotDropChances);
-	}
 }

@@ -36,6 +36,8 @@ import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
+import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.model.data.EntityModelData;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 
@@ -45,7 +47,12 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String NAME ="skullboilder";
 	public String NAME_MODEL ="hardboilder";
-	
+
+	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
+	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
+	public RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
+
+
 	public baseBikeEntity(EntityType<? extends Mob> entityType, Level level) {
 		super(entityType, level);
 		this.setPersistenceRequired();
@@ -118,6 +125,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	// Apply player-controlled movement
 	@Override
 	public void travel(Vec3 pos) {
+
 		if (this.isAlive()) {
 			this.fallDistance=0;
 
@@ -131,7 +139,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
 				float z = passenger.zza;
 
-				if (z <= 0) z *= 0.5f;
+				if (z <= 0) z *= 0.25f;
 if (this.onGround()){
 				if (z>0) {
 					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
@@ -152,6 +160,7 @@ if (this.onGround()){
 					setRot(getYRot(), getXRot());
 					this.yBodyRot = this.getYRot();
 					this.yHeadRot = this.yBodyRot;
+
 				}else if (z<0) {
 					this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume()/4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
 
@@ -165,6 +174,11 @@ if (this.onGround()){
 				}else{
 					if (this.getSpeed()!=0) {
 						if (this.getSpeed() >0.6)this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+						if (level() instanceof ServerLevel sl) {
+							sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+									this.getX(), this.getY() ,
+									this.getZ(), 10, 0, 0, 0, 0);
+						}
 						this.setSpeed(0f);
 					}
 				}
@@ -233,11 +247,22 @@ protected SoundEvent getDeathSound() {
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 
-		RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
-		RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");
-		RawAnimation DRIVE_BACKWARDS = RawAnimation.begin().thenLoop("animation.model.walk_backwards");
-
 		controllers.add(new AnimationController<>(this, "controller", 2, state -> {
+
+			float front_fork=0;
+			float wheel=0;
+
+			if (this.getControllingPassenger() != null) {
+				if (this.getControllingPassenger().xxa < 0) front_fork = -0.25f;
+				if (this.getControllingPassenger().xxa > 0) front_fork = 0.25f;
+				if (this.getControllingPassenger().zza > 0) wheel=- 0.1f;
+				if (this.getControllingPassenger().zza < 0) wheel=- 0.05f;
+
+			}
+			EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
+			EntityModelData newEntityData = new EntityModelData(false,false,entityData.netHeadYaw()+wheel,front_fork);
+			state.setData(DataTickets.ENTITY_MODEL_DATA,newEntityData);
+
 			if (state.isMoving() && getControllingPassenger() != null) {
 				if (getControllingPassenger().zza>0)return state.setAndContinue(DRIVE);
 				else return state.setAndContinue(DRIVE_BACKWARDS);

@@ -66,7 +66,6 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         RawAnimation IDLE = RawAnimation.begin().thenLoop("idle");
         RawAnimation WALK = RawAnimation.begin().thenLoop("walk");
-        RawAnimation SNEAK = RawAnimation.begin().thenLoop("sneak");
         RawAnimation KICK = RawAnimation.begin().thenLoop("kick");
 
 
