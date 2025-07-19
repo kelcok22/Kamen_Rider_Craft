@@ -640,10 +640,13 @@ public class ModCommonEvents {
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
 		event.put(MobsCore.NYELV_STOMACH.get(), BitterGavvEntity.setAttributes().build());
 
+		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.MACEHINE_BUILDER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.DIAGOSPEEDY.get(), baseBikeEntity.setAttributes().build());
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
 		event.put(MobsCore.COMPLETE_SUMMON.get(), CompleteSummonEntity.setAttributes().build());
