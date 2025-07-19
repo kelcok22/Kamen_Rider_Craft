@@ -49,11 +49,8 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
             front_fork.setRotY(entityData.headPitch());
         }
         if (b_wheel != null & f_wheel != null) {
-            if (entityData.isSitting()) {
-
                // f_wheel.setRotX(entityData2.yHeadRot);
                // b_wheel.setRotX(entityData2.yHeadRot);
             }
-        }
     }
 }

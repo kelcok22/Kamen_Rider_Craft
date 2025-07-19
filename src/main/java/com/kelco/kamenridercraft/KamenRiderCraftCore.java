@@ -704,10 +704,13 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.BITTER_GAVV.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NYELV_STOMACH.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKE_GAMER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.MACEHINE_BUILDER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.DIAGOSPEEDY.get(), BikeRenderer::new);
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMPLETE_SUMMON.get(), SummonedEntityRenderer::new);

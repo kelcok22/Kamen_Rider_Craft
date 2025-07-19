@@ -1142,6 +1142,13 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(NYELV_STOMACH, 0x415048, 0xf57b14, new Item.Properties()));
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
+            () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ACROBATTER_SPAWN_EGG = ITEMS.register("acrobatter_spawn_egg",
+            () -> new DeferredSpawnEggItem(ACROBATTER, 0xffffff, 0xffe300, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
                   () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
 
@@ -1165,6 +1172,19 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> BIKE_GAMER_SPAWN_EGG = ITEMS.register("bike_gamer_spawn_egg",
             () -> new DeferredSpawnEggItem(BIKE_GAMER, 0xffffff, 0x151515, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<MachineBuilderEntity>> MACEHINE_BUILDER = MOBLIST.register("machine_builder",
+            () -> EntityType.Builder.of(MachineBuilderEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_builder"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_BUILDER_SPAWN_EGG = ITEMS.register("machine_builder_spawn_egg",
+            () -> new DeferredSpawnEggItem(MACEHINE_BUILDER, 0xffffff, 0xffe300, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<DiagospeedyEntity>> DIAGOSPEEDY = MOBLIST.register("diagospeedy",
+            () -> EntityType.Builder.of(DiagospeedyEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":diagospeedy"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DIAGOSPEEDY_SPAWN_EGG = ITEMS.register("diagospeedy_spawn_egg",
+            () -> new DeferredSpawnEggItem(DIAGOSPEEDY, 0xffffff, 0x151515, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
