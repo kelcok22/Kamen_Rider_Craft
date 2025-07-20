@@ -642,10 +642,17 @@ public class ModCommonEvents {
 
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.MACEHINE_DENBIRD.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.RIDEVENDOR.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.ACCEL_BIKE_FORM.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.TORIDEVENDOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.SAKURA_HURRICANE.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.ROSE_ATTACKER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_BUILDER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.RISEHOPPER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.DIAGOSPEEDY.get(), baseBikeEntity.setAttributes().build());
 
 		event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());

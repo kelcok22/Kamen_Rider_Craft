@@ -266,10 +266,13 @@ protected SoundEvent getDeathSound() {
 			EntityModelData newEntityData = new EntityModelData(false,false,entityData.netHeadYaw()+wheel,front_fork);
 			state.setData(DataTickets.ENTITY_MODEL_DATA,newEntityData);
 
-			if (state.isMoving() && getControllingPassenger() != null) {
+			if (getControllingPassenger() != null) {
+				if (getControllingPassenger().zza!=0) {
 				if (getControllingPassenger().zza>0)return state.setAndContinue(DRIVE);
 				else return state.setAndContinue(DRIVE_BACKWARDS);
-
+				} else {
+					return state.setAndContinue(IDLE);
+				}
 			}
 			else {
 				return state.setAndContinue(IDLE);
