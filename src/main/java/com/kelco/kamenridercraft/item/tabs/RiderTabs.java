@@ -828,10 +828,19 @@ public class RiderTabs {
 
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 
+            event.accept(MobsCore.ACROBATTER_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
+            event.accept(MobsCore.MACEHINE_DENBIRD_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);
             event.accept(MobsCore.SKULLBOILER_SPAWN_EGG);
+            event.accept(MobsCore.ACCEL_BIKE_FORM_SPAWN_EGG);
+            event.accept(MobsCore.RIDEVENDOR_SPAWN_EGG);
+            event.accept(MobsCore.TORIDEVENDOR_SPAWN_EGG);
+            event.accept(MobsCore.SAKURA_HURRICANE_SPAWN_EGG);
+            event.accept(MobsCore.ROSE_ATTACKER_SPAWN_EGG);
             event.accept(MobsCore.BIKE_GAMER_SPAWN_EGG);
+            event.accept(MobsCore.RISEHOPPER_SPAWN_EGG);
+            event.accept(MobsCore.DIAGOSPEEDY_SPAWN_EGG);
 
             for (int i = 0; i < RiderTabs.Misc_TAB_ITEM.size(); i++)
             {

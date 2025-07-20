@@ -706,10 +706,17 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
 
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.MACEHINE_DENBIRD.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SKULLBOILER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.ACCEL_BIKE_FORM.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.RIDEVENDOR.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.TORIDEVENDOR.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.SAKURA_HURRICANE.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.ROSE_ATTACKER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKE_GAMER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_BUILDER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.RISEHOPPER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.DIAGOSPEEDY.get(), BikeRenderer::new);
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);

@@ -6,9 +6,9 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 64,
 				"texture_height": 128,
-				"visible_bounds_width": 4,
-				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [0, 0.75, 0]
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
 			},
 			"bones": [
 				{
@@ -256,62 +256,16 @@
 					]
 				},
 				{
-					"name": "Shape61",
+					"name": "Shape2",
 					"parent": "front_fork",
-					"pivot": [-3, 21.8, -12],
-					"rotation": [-8.52071, 0, 0]
-				},
-				{
-					"name": "Shape60",
-					"parent": "front_fork",
-					"pivot": [-2.5, 21.5, -10],
-					"rotation": [19.1716, 0, 0]
-				},
-				{
-					"name": "Shape14",
-					"parent": "front_fork",
-					"pivot": [-1.5, 21.5, -18],
-					"rotation": [6.39053, 0, 0],
-					"mirror": true
-				},
-				{
-					"name": "Shape3",
-					"parent": "front_fork",
-					"pivot": [-1.499, 19.3, -20.3],
-					"rotation": [49.26036, 0, 0],
-					"mirror": true
-				},
-				{
-					"name": "Shape1",
-					"parent": "front_fork",
-					"pivot": [-6, 20.6, -7.5],
+					"pivot": [-6, 21.6, -6.5],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-6, 19.6, -9.5], "size": [11, 1, 1], "uv": [0, 126]}
+						{"origin": [-6, 20.6, -8.5], "size": [11, 1, 1], "uv": [0, 126]}
 					]
 				},
 				{
-					"name": "Shape26",
-					"parent": "front_fork",
-					"pivot": [-1, 14.5, -7],
-					"rotation": [14.94928, 0, 0],
-					"mirror": true,
-					"cubes": [
-						{"origin": [-2.5, 16.5, -19], "size": [4, 2, 8], "uv": [40, 63]}
-					]
-				},
-				{
-					"name": "Shape66",
-					"parent": "front_fork",
-					"pivot": [-1.5, 21.5, -14],
-					"rotation": [23.43195, 0, 0],
-					"mirror": true,
-					"cubes": [
-						{"origin": [-1.5, 15.5, -16], "size": [2, 6, 6], "uv": [19, 39]}
-					]
-				},
-				{
-					"name": "Shape67",
+					"name": "Shape63",
 					"parent": "front_fork",
 					"pivot": [-4, 20.8, -11],
 					"rotation": [27.69231, 0, 0],
@@ -321,7 +275,37 @@
 					]
 				},
 				{
-					"name": "Shape16",
+					"name": "Shape62",
+					"parent": "front_fork",
+					"pivot": [-2.5, 22.5, -10],
+					"rotation": [78.81659, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-2.5, 21.5, -12], "size": [4, 1, 4], "uv": [21, 24]}
+					]
+				},
+				{
+					"name": "Shape64",
+					"parent": "front_fork",
+					"pivot": [-3, 18.5, -14],
+					"rotation": [35.1716, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 15.5, -15], "size": [5, 3, 4], "uv": [0, 46]}
+					]
+				},
+				{
+					"name": "Shape14",
+					"parent": "front_fork",
+					"pivot": [-1, 10.5, -7],
+					"rotation": [-12.74303, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-2.5, 12.5, -18], "size": [4, 2, 8], "uv": [40, 63]}
+					]
+				},
+				{
+					"name": "Shape3",
 					"pivot": [-4, 19, -8],
 					"rotation": [-28.47337, 0, 0],
 					"mirror": true,
@@ -330,7 +314,7 @@
 					]
 				},
 				{
-					"name": "Shape29",
+					"name": "Shape16",
 					"pivot": [-2.5, 13, -8],
 					"rotation": [27.85714, 0, 0],
 					"mirror": true,
@@ -339,25 +323,24 @@
 					]
 				},
 				{
-					"name": "Shape30",
+					"name": "Shape26",
 					"pivot": [2, 14, 0],
 					"rotation": [19.20964, 0, 0],
-					"mirror": true,
 					"cubes": [
-						{"origin": [2, 11, 0], "size": [1, 4, 7], "pivot": [0, 0, 0],"mirror": true, "rotation": [0, 2.5, 0], "uv": [0, 20]}
+						{"origin": [2, 11, 0], "size": [1, 4, 7], "pivot": [-2, 0, 0],"mirror": true, "rotation": [0, 2.5, 0], "uv": [0, 20]}
 					]
 				},
 				{
-					"name": "Shape31",
+					"name": "Shape29",
 					"pivot": [-4, 14, 0],
 					"rotation": [19.20964, 0, 0],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-4, 11, 0], "size": [1, 4, 7], "pivot": [0, 0, 0], "rotation": [0, -2.5, 0], "uv": [0, 20], "mirror": false}
+						{"origin": [-4, 11, 0], "size": [1, 4, 7], "pivot": [-2, 0, 0], "rotation": [0, -2.5, 0], "uv": [0, 20], "mirror": false}
 					]
 				},
 				{
-					"name": "Shape32",
+					"name": "Shape30",
 					"pivot": [-3, 16, -4],
 					"rotation": [6.39053, 0, 0],
 					"mirror": true,
@@ -366,7 +349,7 @@
 					]
 				},
 				{
-					"name": "Shape33",
+					"name": "Shape31",
 					"pivot": [-2, 16, -1],
 					"mirror": true,
 					"cubes": [
@@ -374,16 +357,24 @@
 					]
 				},
 				{
-					"name": "Shape55",
-					"pivot": [1, 10, 2],
-					"rotation": [-11.8825, 0, 0],
+					"name": "Shape52",
+					"pivot": [0.5, 9.16667, 6.5],
 					"mirror": true,
 					"cubes": [
-						{"origin": [1, 8, 2], "size": [1, 2, 7], "uv": [0, 35]}
+						{"origin": [0.5, 6.16667, 6.5], "size": [1, 3, 3], "uv": [42, 0]}
 					]
 				},
 				{
-					"name": "Shape63",
+					"name": "Shape53",
+					"pivot": [0.8, 10.5, 5],
+					"rotation": [-11.8825, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [0.8, 6.5, 5], "size": [1, 4, 6], "uv": [0, 82]}
+					]
+				},
+				{
+					"name": "Shape59",
 					"pivot": [-3, 10, 2],
 					"rotation": [-11.8825, 0, 0],
 					"mirror": true,
@@ -392,16 +383,16 @@
 					]
 				},
 				{
-					"name": "Shape64",
-					"pivot": [-3, 17.5, 4],
-					"rotation": [21.33981, 0, 0],
+					"name": "Shape60",
+					"pivot": [-3, 17.5, 3],
+					"rotation": [12.81911, 0, 0],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-3, 12.5, 4], "size": [5, 5, 11], "uv": [0, 107]}
+						{"origin": [-3, 12.5, 3], "size": [5, 5, 11], "uv": [0, 107]}
 					]
 				},
 				{
-					"name": "Shape65",
+					"name": "Shape61",
 					"pivot": [-2.5, 17, -4],
 					"mirror": true,
 					"cubes": [
@@ -409,12 +400,21 @@
 					]
 				},
 				{
-					"name": "Shape68",
-					"pivot": [-2, 18, 3],
-					"rotation": [21.30177, 0, 0],
+					"name": "Shape65",
+					"pivot": [1.5, 15, -4],
+					"rotation": [-6.39053, 0, 0],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-1.5, 16, 3.4], "size": [2, 2, 5], "uv": [0, 0]}
+						{"origin": [1.5, 10, -4], "size": [1, 5, 5], "inflate": 0.01, "uv": [0, 71]}
+					]
+				},
+				{
+					"name": "Shape66",
+					"pivot": [1, 10, 2],
+					"rotation": [-11.8825, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [1, 8, 2], "size": [1, 2, 7], "uv": [0, 35]}
 					]
 				}
 			]
