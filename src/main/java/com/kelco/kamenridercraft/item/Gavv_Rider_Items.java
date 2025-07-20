@@ -53,6 +53,9 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> HEATPRESS = ITEMS.register("heatpress",
 			() -> new HitpressItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> GRANUTE_TOOTH = ITEMS.register("granute_tooth",
+			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO = ITEMS.register("poppingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -490,6 +493,12 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(Effect_core.RIDER_POISON_HAND, 40, 1,true,false))
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> GLOTTA_MIMIC_KEY = ITEMS.register("glotta_mimic_key",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","glotta","blank",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+					,new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAVV_HELMET = ITEMS.register("gavv_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -528,6 +537,10 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> NYELV_MIMICDEVISER = ITEMS.register("nyelv_mimicdeviser",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nyelv",NYELV_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> GLOTTA_MIMICDEVISER = ITEMS.register("glotta_mimicdeviser",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glotta",GLOTTA_MIMIC_KEY ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVGABLADE = ITEMS.register("gavvgablade",

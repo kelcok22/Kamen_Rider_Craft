@@ -9,7 +9,9 @@ public enum AgentVariant {
     BLUE_A(2),
     BLUE_B(3),
     ORANGE_A(4),
-    ORANGE_B(5);
+    ORANGE_B(5),
+    PINK_A(6),
+    PINK_B(7);
 
     private static final AgentVariant[] BY_ID = Arrays.stream(values()).sorted(
             Comparator.comparingInt(AgentVariant::getId)).toArray(AgentVariant[]::new);

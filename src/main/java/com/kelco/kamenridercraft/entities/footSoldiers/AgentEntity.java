@@ -22,8 +22,7 @@ import javax.annotation.Nullable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 
-import static com.kelco.kamenridercraft.entities.variants.AgentVariant.ORANGE_A;
-import static com.kelco.kamenridercraft.entities.variants.AgentVariant.ORANGE_B;
+import static com.kelco.kamenridercraft.entities.variants.AgentVariant.*;
 
 public class AgentEntity extends BaseHenchmenEntity {
 
@@ -89,7 +88,7 @@ public class AgentEntity extends BaseHenchmenEntity {
 
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                int bossChoice = this.random.nextInt(2);
+                int bossChoice = this.random.nextInt(3);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.BITTER_GAVV.get().create(this.level());
@@ -102,8 +101,13 @@ public class AgentEntity extends BaseHenchmenEntity {
                             boss = MobsCore.NYELV_STOMACH.get().create(this.level());
                             if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
-                        }}
-                        break;
+                            }
+                        } else if (getVariant() == PINK_B) {
+                            boss = MobsCore.GLOTTA_STOMACH.get().create(this.level());
+                            if (boss != null && this.getLastAttacker()instanceof Player playerIn) {
+                                playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.glotta"));
+                            }
+                        }
                     default:
                 }
                 if (boss != null) {

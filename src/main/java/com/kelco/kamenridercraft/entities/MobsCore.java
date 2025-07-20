@@ -1141,7 +1141,14 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> NYELV_STOMACH_SPAWN_EGG = ITEMS.register("nyelv_stomach_spawn_egg",
             () -> new DeferredSpawnEggItem(NYELV_STOMACH, 0x415048, 0xf57b14, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GlottaEntity>> GLOTTA_STOMACH = MOBLIST.register("glotta_stomach",
+            () -> EntityType.Builder.of(GlottaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":glotta_stomach"));
 
+    public static final DeferredItem<DeferredSpawnEggItem> GLOTTA_STOMACH_SPAWN_EGG = ITEMS.register("glotta_stomach_spawn_egg",
+            () -> new DeferredSpawnEggItem(GLOTTA_STOMACH, 0x4a3484, 0xe21bb9, new Item.Properties()));
+
+
+    
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
             () -> EntityType.Builder.of(AcrobatterEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":acrobatter"));
 
