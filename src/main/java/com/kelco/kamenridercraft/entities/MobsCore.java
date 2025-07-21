@@ -407,8 +407,14 @@ public class MobsCore {
           public static final DeferredItem<DeferredSpawnEggItem> GODA_SPAWN_EGG = ITEMS.register("goda_spawn_egg",
                    () -> new DeferredSpawnEggItem(GODA, 0x000000, 0xB200FF, new Item.Properties()));
 
-          
-          public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
+    public static final DeferredHolder<EntityType<?>, EntityType<TakaCanEntity>> TAKA_CAN = MOBLIST.register("taka_can",
+            () -> EntityType.Builder.of(TakaCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":taka_can"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> TAKA_SPAWN_EGG = ITEMS.register("taka_can_spawn_egg",
+            () -> new DeferredSpawnEggItem(TAKA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
                   () -> EntityType.Builder.of(SuperGingaOhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":super_gingaoh"));
 
           public static final DeferredItem<DeferredSpawnEggItem> SUPER_GINGAOH_SPAWN_EGG = ITEMS.register("super_gingaoh_spawn_egg",
