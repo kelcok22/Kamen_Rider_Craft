@@ -35,6 +35,10 @@ public class Modded_item_core {
     public static final DeferredItem<Item>  RIDER_CIRCUIT = ITEMS.register("rider_circuit",
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM));
 
+    public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).build()))
+                    .SetItemAnimation(UseAnim.DRINK).has_basic_model().AddToList(RiderTabs.Misc_TAB_ITEM));
+
     public static final DeferredItem<Item>  VIENNA_COFFEE= ITEMS.register("vienna_coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).alwaysEdible().build()))
                     .SetItemAnimation(UseAnim.DRINK).AddToList(RiderTabs.Misc_TAB_ITEM));

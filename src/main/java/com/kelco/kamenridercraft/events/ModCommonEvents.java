@@ -146,10 +146,23 @@ public class ModCommonEvents {
 			return Items.APPLE;
 		}
 
+		private Item getCupGochizoDrop(ItemStack itemstack) {
+			Random generator = new Random();
+			if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/frappeis_gochizo")))) {
+				int rand = generator.nextInt(Gavv_Rider_Items.COFFEE.size());
+				return Gavv_Rider_Items.COFFEE.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/ala_mode_gochizo")))) {
+				int rand = generator.nextInt(Gavv_Rider_Items.ALA_MODE.size());
+				return Gavv_Rider_Items.ALA_MODE.get(rand);
+			}
+			return Items.APPLE;
+		}
+
 		@SubscribeEvent
 		public void Give_Gochizo(LivingEntityUseItemEvent.Finish event) {
 
 			Item GOCHIZO = getGochizoDrop(event.getItem());
+			Item CUP_GOCHIZO = getCupGochizoDrop(event.getItem());
 			 if (GOCHIZO!=Items.APPLE) {
 
 				 if (event.getEntity() instanceof Player player) {
@@ -160,6 +173,14 @@ public class ModCommonEvents {
 						 }else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 
 						 player.drop(new ItemStack(GOCHIZO), false);
+					 }
+					 else if (player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
+
+						 if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()){
+							 player.getInventory().removeItem(40, 1);
+						 }else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get())), 1);
+
+						 player.drop(new ItemStack(CUP_GOCHIZO), false);
 					 }
 				 }
 			 }

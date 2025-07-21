@@ -37,6 +37,8 @@ public class Gavv_Rider_Items {
 	public static List<Item> PANCAKE= new ArrayList<Item>();
 	public static List<Item> MOCHI= new ArrayList<Item>();
 	public static List<Item> PUDDING= new ArrayList<Item>();
+	public static List<Item> COFFEE= new ArrayList<Item>();
+	public static List<Item> ALA_MODE= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<Item>();
 
@@ -205,6 +207,14 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> FRAPPEIS_GOCHIZO = ITEMS.register("frappeis_gochizo",
+			() -> new BlizzardsorbeiItem(new Item.Properties(),0,"_frappeis","do_not_work","vrastumgear_belt_frappeis",
+					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					.has_basic_model().AddToList(COFFEE,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> DOPPUDDING_GOCHIZO = ITEMS.register("doppudding_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","vram","vrastumgear_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
@@ -220,6 +230,14 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(Effect_core.STEALTH, 40, 1,true,false))
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> PUDDINTE_GOCHIZO = ITEMS.register("puddinte_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"a_la_mode","do_not_work","vrastumgear_belt_mode",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+					.has_basic_model().AddToList(ALA_MODE,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOUMA_DOPPUDDING_GOCHIZO = ITEMS.register("shouma_doppudding_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","do_not_work","vrastumgear_belt")

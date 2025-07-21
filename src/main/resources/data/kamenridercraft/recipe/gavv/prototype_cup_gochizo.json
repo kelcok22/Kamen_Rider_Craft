@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "blank_gochizo",
+  "ingredients": [
+{
+	
+	  "item": "kamenridercraft:blank_gochizo"
+	}, 
+	{
+	  "item": "kamenridercraft:granute_tooth"
+	}
+	],
+  "result": {
+	"id": "kamenridercraft:prototype_cup_gochizo"
+  }
+}
