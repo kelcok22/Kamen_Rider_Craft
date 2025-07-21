@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-20T22:21:22.9381349	Item Models: kamenridercraft
+// 1.21.1	2025-07-21T21:59:57.26435	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -73,6 +73,7 @@ fd6378e7aa4fe861bc5392d1559b991512c63532 assets/kamenridercraft/models/item/choc
 ad99ea7902362c5a0b6e6e1df29e456894e87498 assets/kamenridercraft/models/item/choco_treasure_gochizo.json
 9b14d9ce129403d0e2f2dfd83650c0e480cc2e63 assets/kamenridercraft/models/item/chophopper_rider_belt.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/circle_astroswitch.json
+4d1baac3e16004959a3c5fe100c44e268ffb4ba7 assets/kamenridercraft/models/item/coffee.json
 78198f20d9d7b7aab8c7d82954077ba2f82427d7 assets/kamenridercraft/models/item/colorful_commercial.json
 052f1e707b239445030cc60b84f42895b0d20143 assets/kamenridercraft/models/item/crepuna_gochizo.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/cross_astroswitch.json
@@ -125,6 +126,7 @@ da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/four
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/fourze_meteor_nadeshiko_fusionstates.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/fourze_rocketdrillstates.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/fourze_rocketstates.json
+bad90c2daef8981af31ab84900a584c1461c27a9 assets/kamenridercraft/models/item/frappeis_gochizo.json
 fc989a7da2361aa925334eccd9d1f5622d8c3ea4 assets/kamenridercraft/models/item/fullfull_tank_bottle.json
 70432d05ad9bbee9ef4984116f8b63f627d1b707 assets/kamenridercraft/models/item/funkorogashi_vistamp_vice.json
 e33c8e730e575e0bffc587414cd2b904de330af3 assets/kamenridercraft/models/item/fusion_switch_og.json
@@ -283,6 +285,7 @@ f503329fe717bef2a8dea219dc171f2624cc9f4e assets/kamenridercraft/models/item/prot
 ec5fd7d93fc06a2708b266545e140c5aefaac96d assets/kamenridercraft/models/item/proto_speedshift_chaser.json
 007c6c02c902b826c6c5d40dadb96d7119b4f3d6 assets/kamenridercraft/models/item/providence_card_ziingazer.json
 693adc57e039e4592470fe01e01af9c0459c3c59 assets/kamenridercraft/models/item/prujelly_gochizo.json
+a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/puddinte_gochizo.json
 129f007fb3ce3d4aaa9f4aea3ea2a289fafcb20f assets/kamenridercraft/models/item/pukupukutai_gochizo.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json

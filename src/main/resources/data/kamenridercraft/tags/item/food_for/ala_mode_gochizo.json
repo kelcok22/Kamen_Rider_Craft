@@ -1,0 +1,9 @@
+{
+  "values": [
+    "kamenridercraft:pudding",
+    {
+        "id": "ubesdelight:leche_flan",
+        "required": false
+    }
+  ]
+}
