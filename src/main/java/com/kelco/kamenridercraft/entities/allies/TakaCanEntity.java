@@ -211,8 +211,9 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 			RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.taka_can.idle");
 			RawAnimation WALK = RawAnimation.begin().thenLoop("animation.taka_can.walk");
 			RawAnimation SIT = RawAnimation.begin().thenPlay("animation.taka_can.sit");
-			
-			controllers.add(new AnimationController<TakaCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isInSittingPose()? state.isMoving() ? WALK : IDLE :SIT)));
+			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.taka_can.death");
+
+			controllers.add(new AnimationController<TakaCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying()?!isInSittingPose()? state.isMoving() ? WALK:IDLE:SIT:RIP)));
 		}
 
 	@Override

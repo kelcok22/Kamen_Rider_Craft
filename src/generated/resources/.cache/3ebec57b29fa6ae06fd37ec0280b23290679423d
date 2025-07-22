@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-21T21:59:57.26435	Item Models: kamenridercraft
+// 1.21.1	2025-07-22T01:24:11.4719769	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -289,6 +289,7 @@ a0b2ad303869724616966c8436e6fc28a600a8e1 assets/kamenridercraft/models/item/pudd
 129f007fb3ce3d4aaa9f4aea3ea2a289fafcb20f assets/kamenridercraft/models/item/pukupukutai_gochizo.json
 5ef4d9c3f16b35d7bb125d175e8f05b261f6f7ca assets/kamenridercraft/models/item/purujelly_gochizo.json
 4850fef84808841774404a0a3a0ae3babfc7f9c0 assets/kamenridercraft/models/item/rabbit_hutch_door.json
+da9d2ade2a47312b354bcbbdc787e5f067027d6d assets/kamenridercraft/models/item/recovery_capsem.json
 76350df9b93d1d3631b1013ef65733d2361efc8b assets/kamenridercraft/models/item/renkingrobo_ride_chemy_card.json
 50ceb4d926ad1f44d13b75d95a5a6ebeb05ea30e assets/kamenridercraft/models/item/revi_ride_chemy_card.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhino_super_viral_core.json

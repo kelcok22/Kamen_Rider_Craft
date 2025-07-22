@@ -173,8 +173,9 @@ public class ModCommonEvents {
 						 }else player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(Gavv_Rider_Items.BLANK_GOCHIZO.get())), 1);
 
 						 player.drop(new ItemStack(GOCHIZO), false);
+
 					 }
-					 else if (player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
+					 if (player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
 
 						 if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()){
 							 player.getInventory().removeItem(40, 1);
