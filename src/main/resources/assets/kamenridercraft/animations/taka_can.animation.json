@@ -66,6 +66,71 @@
 				}
 			}
 		},
+		"animation.taka_can.summon": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.25": [-90, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"leftwing": {
+					"rotation": {
+						"0.25": [0, 0, -90],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"tinyleftwing": {
+					"rotation": {
+						"0.25": [0, -90, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"rightwing": {
+					"rotation": {
+						"0.25": [0, 0, 90],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"tinyrightwing": {
+					"rotation": {
+						"0.25": [0, 90, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.25": [90, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"righttail": {
+					"rotation": {
+						"0.25": [0, 90, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"lefttail": {
+					"rotation": {
+						"0.25": [0, -90, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"can": {
+					"rotation": {
+						"0.25": [-180, 0, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.1667": [0, 9, -1],
+						"0.25": [0, 12, -1],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
 		"animation.taka_can.idle": {
 			"animation_length": 1.0833,
 			"bones": {
