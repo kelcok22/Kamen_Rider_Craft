@@ -163,10 +163,9 @@ public class ModCommonEvents {
 
 			Item GOCHIZO = getGochizoDrop(event.getItem());
 			Item CUP_GOCHIZO = getCupGochizoDrop(event.getItem());
-			 if (GOCHIZO!=Items.APPLE) {
 
 				 if (event.getEntity() instanceof Player player) {
-					 if (player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
+					 if (GOCHIZO!=Items.APPLE&player.getInventory().countItem(Gavv_Rider_Items.BLANK_GOCHIZO.get()) > 0) {
 
 						 if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.BLANK_GOCHIZO.get()){
 							 player.getInventory().removeItem(40, 1);
@@ -175,7 +174,7 @@ public class ModCommonEvents {
 						 player.drop(new ItemStack(GOCHIZO), false);
 
 					 }
-					 if (player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
+					 if (CUP_GOCHIZO!=Items.APPLE&player.getInventory().countItem(Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()) > 0) {
 
 						 if ( player.getInventory().getItem(40).getItem()==Gavv_Rider_Items.PROTOTYPE_CUP_GOCHIZO.get()){
 							 player.getInventory().removeItem(40, 1);
@@ -183,7 +182,6 @@ public class ModCommonEvents {
 
 						 player.drop(new ItemStack(CUP_GOCHIZO), false);
 					 }
-				 }
 			 }
 		}
 

@@ -2,8 +2,6 @@
   "values": [
     "kamenridercraft:vienna_coffee",
     "kamenridercraft:coffee",
-    "kamenridercraft:donut",
-    "kamenridercraft:chocolate_bar",
-    "#c:foods/coffee"
+    "kamenridercraft:chocolate_bar"
   ]
 }
