@@ -47,6 +47,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String NAME ="skullboilder";
 	public String NAME_MODEL ="hardboilder";
+	public String NAME_ANIMATIONS ="hardboilder";
 
 	public RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.model.idle");
 	public RawAnimation DRIVE = RawAnimation.begin().thenLoop("animation.model.walk");

@@ -12,6 +12,7 @@ import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.*;
+import com.kelco.kamenridercraft.entities.bikes.RidoronEntity;
 import com.kelco.kamenridercraft.entities.bikes.baseBikeEntity;
 import com.kelco.kamenridercraft.entities.bosses.*;
 import com.kelco.kamenridercraft.entities.footSoldiers.*;
@@ -665,6 +666,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.GLOTTA_STOMACH.get(), GlottaEntity.setAttributes().build());
 
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_TORADOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.MACEHINE_DENBIRD.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());

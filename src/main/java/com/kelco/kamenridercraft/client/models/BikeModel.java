@@ -29,7 +29,7 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
 
     @Override
     public ResourceLocation getAnimationResource(baseBikeEntity animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/hardboilder.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/"+animatable.NAME_ANIMATIONS+".animation.json");
     }
 
 
