@@ -38,6 +38,7 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
 
 
         GeoBone front_fork = this.getAnimationProcessor().getBone("front_fork");
+        GeoBone front_fork2 = this.getAnimationProcessor().getBone("front_fork2");
         GeoBone b_wheel= this.getAnimationProcessor().getBone("b_wheel");
         GeoBone f_wheel = this.getAnimationProcessor().getBone("f_wheel");
         EntityModelData entityData = (EntityModelData) state.getData(DataTickets.ENTITY_MODEL_DATA);
@@ -47,6 +48,9 @@ public class BikeModel extends GeoModel<baseBikeEntity> {
         baseBikeEntity  animatable= state.getAnimatable();
         if (front_fork != null) {
             front_fork.setRotY(entityData.headPitch());
+        }
+        if (front_fork2 != null) {
+            front_fork2.setRotY(entityData.headPitch());
         }
         if (b_wheel != null & f_wheel != null) {
                // f_wheel.setRotX(entityData2.yHeadRot);

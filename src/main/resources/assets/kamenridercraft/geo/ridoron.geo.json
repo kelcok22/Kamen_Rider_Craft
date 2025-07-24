@@ -263,7 +263,7 @@
 				},
 				{
 					"name": "front_fork2",
-					"pivot": [10, 5.5, -14]
+					"pivot": [-10, 5.5, -14]
 				},
 				{
 					"name": "f_wheel2",
