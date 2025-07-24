@@ -1,0 +1,21 @@
+{
+	"name": "Another OOO",
+	"icon": "kamenridercraft:another_ooo_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_ooo_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Another OOO",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/another_ooo_driver)Another OOO Driver$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
+		}
+	]
+}

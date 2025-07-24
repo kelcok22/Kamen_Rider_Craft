@@ -1,0 +1,21 @@
+{
+	"name": "Another Shinobi",
+	"icon": "kamenridercraft:another_shinobi_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_shinobi_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Another Shinobi",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/another_shinobi_driver)Another Shinobi Driver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Strength II$(li)Haste II"
+		}
+	]
+}

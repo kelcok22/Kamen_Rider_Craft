@@ -1,0 +1,19 @@
+{
+	"name": "Another Altering",
+	"icon": "kamenridercraft:another_altering",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_agito)Another Agito"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_altering",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Another Fourze Driver",
+	"icon": "kamenridercraft:another_fourze_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_fourze)Another Fourze"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_fourze_driver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

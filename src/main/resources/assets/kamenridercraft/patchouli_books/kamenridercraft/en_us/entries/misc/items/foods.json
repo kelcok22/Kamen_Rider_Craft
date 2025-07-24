@@ -6,20 +6,33 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "coffee",
+			"text": "Restores 2 hunger points and gives Speed II when drank$(br2)Converts $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizos$(/l) into $(l:gavv/items/gochizo#frappeis_gochizo)Frappeis Gochizos$(/l) when drank"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:coffee",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "vienna_coffee",
+			"title": "Vienna Coffee",
 			"text": "Restores 2 hunger points when drank$(br2)Can be used to tame $(l:den_o/mobs/momotaros)th$(/l)$(l:den_o/mobs/urataros)e T$(/l)$(l:den_o/mobs/kintaros)ar$(/l)$(l:den_o/mobs/ryutaros)os$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:vienna_coffee",
+			"title": " ",
 			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "pudding",
 			"title": "Pudding",
-			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into pudding Gochizos when eaten"
+			"text": "Restores 2 hunger points when eaten$(br2)Can be used to tame $(l:den_o/mobs/momotaros)Momotaros$(/l)$(br2)Converts $(l:gavv/items/blank_gochizo)Blank Gochizos$(/l) into pudding Gochizos when eaten$(br2)Converts $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizos$(/l) into $(l:gavv/items/gochizo#puddinte_gochizo)Puddinte Gochizos$(/l) when eaten"
 		},
 		{
 			"type": "patchouli:spotlight",

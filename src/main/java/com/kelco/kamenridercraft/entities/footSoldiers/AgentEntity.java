@@ -88,7 +88,7 @@ public class AgentEntity extends BaseHenchmenEntity {
 
         if ( this.isDeadOrDying()) {
             if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-                int bossChoice = this.random.nextInt(3);
+                int bossChoice = this.random.nextInt(2);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.BITTER_GAVV.get().create(this.level());

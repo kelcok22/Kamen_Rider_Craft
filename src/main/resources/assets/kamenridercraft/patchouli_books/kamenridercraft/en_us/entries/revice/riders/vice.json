@@ -283,6 +283,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Vice",
 			"text": "Appears in:$(li)DX White Leo and Quetzalcoatlus Vistamp Set (2021, toyline)$(br2)Transforms with the $(l:revice/devices/vice_belt)Buddy Buckle$(/l)$(br2)Status Effects:$(li)Punch VIII$(li)Strength XI (with empty hand)$(li)Strength III (with weapon)$(li)Night Vision$(li)Jump Boost IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal_theoretical",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_jackal_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Jackal Genome (Theoretical)",
+			"text": "Accessed with the $(l:revice/items/vistamps#proto_jackal_vistamp)Jackal Proto Vistamp$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Vice",
+			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)$(br2)Transforms with the $(l:revice/devices/vice_belt)Buddy Buckle$(/l)$(br2)Status Effects:$(li)Speed III$(li)Haste II"
 		}
 	]
 }

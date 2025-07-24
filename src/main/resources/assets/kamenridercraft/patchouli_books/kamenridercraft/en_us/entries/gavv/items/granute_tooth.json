@@ -1,0 +1,19 @@
+{
+	"name": "Granute Tooth",
+	"icon": "kamenridercraft:granute_tooth",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:granute_tooth",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)"
+		}
+	]
+}

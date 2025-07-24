@@ -1,0 +1,49 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:henshin_belt_caries_gavv"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.caries.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.caries.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gavv/bake",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gavv_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gavv_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gavv_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:henshin_belt_caries_gavv"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
