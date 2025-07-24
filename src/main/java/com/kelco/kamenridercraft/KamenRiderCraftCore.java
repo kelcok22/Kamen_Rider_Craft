@@ -708,6 +708,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.GLOTTA_STOMACH.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.RIDORON.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_TORADOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_DENBIRD.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.HARDBOILER.get(), BikeRenderer::new);

@@ -830,6 +830,7 @@ public class RiderTabs {
         }else if(event.getTab() == RiderTabs.RiderMiscTab.get()) {
 
             event.accept(MobsCore.ACROBATTER_SPAWN_EGG);
+            event.accept(MobsCore.RIDORON_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_TORADOR_SPAWN_EGG);
             event.accept(MobsCore.MACEHINE_DENBIRD_SPAWN_EGG);
             event.accept(MobsCore.HARDBOILER_SPAWN_EGG);

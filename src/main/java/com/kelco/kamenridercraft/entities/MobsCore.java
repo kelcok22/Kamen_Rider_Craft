@@ -1166,6 +1166,11 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ACROBATTER_SPAWN_EGG = ITEMS.register("acrobatter_spawn_egg",
             () -> new DeferredSpawnEggItem(ACROBATTER, 0xffffff, 0xffe300, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<RidoronEntity>> RIDORON = MOBLIST.register("ridoron",
+            () -> EntityType.Builder.of(RidoronEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(2F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":ridoron"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> RIDORON_SPAWN_EGG = ITEMS.register("ridoron_spawn_egg",
+            () -> new DeferredSpawnEggItem(RIDORON, 0xffffff, 0xffe300, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<MachineTornadorEntity>> MACEHINE_TORADOR = MOBLIST.register("machine_tornador",
                   () -> EntityType.Builder.of(MachineTornadorEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":machine_tornador"));
