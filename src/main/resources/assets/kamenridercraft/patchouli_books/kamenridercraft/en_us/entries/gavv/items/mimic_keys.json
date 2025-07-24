@@ -1,0 +1,33 @@
+{
+	"name": "Mimic Keys",
+	"icon": "kamenridercraft:nyelv_mimic_key",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "nyelv_mimic_key",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nyelv_mimic_key",
+			"title": "Nyelv's Mimic Key",
+			"text": "Drops from:$(li)$(l:gavv/mobs/nyelv_stomach)Nyelv Stomach$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "glotta_mimic_key",
+			"title": "Glotta's Mimic Key",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:glotta_mimic_key",
+			"title": " ",
+			"text": "Drops from:$(li)$(l:gavv/mobs/glotta_stomach)Glotta Stomach$(/l)"
+		}
+	]
+}

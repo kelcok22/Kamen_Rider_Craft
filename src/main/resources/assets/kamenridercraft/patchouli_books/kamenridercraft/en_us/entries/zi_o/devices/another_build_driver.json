@@ -1,0 +1,19 @@
+{
+	"name": "Another Build Driver",
+	"icon": "kamenridercraft:another_build_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Used alongside the $(l:zi_o/devices/armor)Zi-O armor$(/l) to transform into $(l:zi_o/riders/another_build)Another Build"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_build_driver",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

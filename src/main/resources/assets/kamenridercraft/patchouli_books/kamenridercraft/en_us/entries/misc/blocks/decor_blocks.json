@@ -768,6 +768,11 @@
 		},
 		{
 			"type": "patchouli:crafting",
+			"anchor": "white_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
 			"anchor": "grey_wallplate_stairs",
 			"recipe": "kamenridercraft:misc/block/wallplate/grey_wallplate_stairs"
 		},

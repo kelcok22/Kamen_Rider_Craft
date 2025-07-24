@@ -1,8 +1,17 @@
 {
   "values": [
-	"kamenridercraft:hardboilder",
+	"kamenridercraft:acrobatter",
 	"kamenridercraft:machine_tornador",
+	"kamenridercraft:machine_denbird",
+	"kamenridercraft:hardboilder",
 	"kamenridercraft:skullboilder",
-	"kamenridercraft:bike_gamer"
+	"kamenridercraft:accel_bike_form",
+	"kamenridercraft:ridevendor",
+	"kamenridercraft:toridevendor",
+	"kamenridercraft:sakura_hurricane",
+	"kamenridercraft:rose_attacker",
+	"kamenridercraft:bike_gamer",
+	"kamenridercraft:risehopper",
+	"kamenridercraft:diagospeedy"
   ]
 }

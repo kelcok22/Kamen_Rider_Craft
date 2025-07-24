@@ -979,7 +979,7 @@
 			"type": "patchouli:text",
 			"anchor": "koala_vistamp",
 			"title": "Koala Proto Vistamp",
-			"text": "Appears in:$(li)Kamen Rider Revice (2021, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Revice: Koala VS Kangaroo!! Declare Your Love Right Smack in the Middle of the Wedding?! (2021, Hyper Battle Video)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1000,6 +1000,19 @@
 			"item": "kamenridercraft:raflessia_vistamp",
 			"title": " ",
 			"text": "Drops from:$(li)$(l:revice/mobs/queen_bee_deadman)Queen Bee Deadman$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_jackal_vistamp",
+			"title": "Jackal Proto Vistamp",
+			"text": "Used to access Vice's $(l:revice/riders/vice#jackal_theoretical)Jackal Genome (Theoretical)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_jackal_vistamp",
+			"title": " ",
+			"text": "Item is currently unobtainable"
 		},
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,21 @@
+{
+	"name": "Another Gaim",
+	"icon": "kamenridercraft:another_gaim_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_gaim_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Another Gaim",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)$(br2)Transforms with the $(l:zi_o/devices/another_gaim_driver)Another Gaim Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste"
+		}
+	]
+}

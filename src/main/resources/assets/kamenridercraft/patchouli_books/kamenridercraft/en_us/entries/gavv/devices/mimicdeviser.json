@@ -1,0 +1,33 @@
+{
+	"name": "Mimicdeviser",
+	"icon": "kamenridercraft:nyelv_mimicdeviser",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "nyelv_mimicdeviser",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/nyelv_stomach)Nyelv Stomach"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nyelv_mimicdeviser",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "glotta_mimicdeviser",
+			"title": "Mimicdeviser",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used alongside the $(l:gavv/devices/armor)Gavv armor$(/l) to transform into $(l:gavv/riders/glotta_stomach)Glotta Stomach"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:glotta_mimicdeviser",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

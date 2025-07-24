@@ -2,7 +2,7 @@
 	"name": "Unfinished Grand Zi-O Ridewatch Part",
 	"icon": "kamenridercraft:unfinished_grand_zi_o_ridewatch_l",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

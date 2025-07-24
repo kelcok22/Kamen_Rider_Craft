@@ -2,7 +2,7 @@
 	"name": "Unfinished Geiz Majesty Ridewatch Part",
 	"icon": "kamenridercraft:unfinished_geiz_majesty_ridewatch_l",
 	"category": "kamenridercraft:zi_o/items",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",

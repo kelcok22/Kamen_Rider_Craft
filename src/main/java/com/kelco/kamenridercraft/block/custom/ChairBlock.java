@@ -42,6 +42,7 @@ public class ChairBlock extends Block {
 
 	public static VoxelShape SHAPE = Block.box(4, 0, 6, 12,16, 10);
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+	public static ChairEntity CHAIR_ENTITY;
 
 	public ChairBlock(Properties prop,VoxelShape shape ) {
 		super(prop);
@@ -51,16 +52,9 @@ public class ChairBlock extends Block {
 
 	@Override
 	protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-		if(!level.isClientSide()) {
-			Entity entity = null;
-			List<ChairEntity> entities = level.getEntities(MobsCore.CHAIR_ENTITY.get(), new AABB(pos), chair -> true);
-			if(entities.isEmpty()) {
-				entity = MobsCore.CHAIR_ENTITY.get().spawn(((ServerLevel) level), pos, MobSpawnType.TRIGGERED);
-			} else {
-				entity = entities.get(0);
-			}
-
-			player.startRiding(entity);
+		if(level instanceof ServerLevel server) {
+			CHAIR_ENTITY = MobsCore.CHAIR_ENTITY.get().spawn(server, pos, MobSpawnType.TRIGGERED);
+			player.startRiding(CHAIR_ENTITY);
 		}
 
 		return InteractionResult.SUCCESS;
@@ -68,10 +62,7 @@ public class ChairBlock extends Block {
 	
 	@Override
 	public BlockState playerWillDestroy(Level world, BlockPos pos, BlockState state, Player player) {
-		if (!world.isClientSide()) {
-			List<ChairEntity> entities = world.getEntities(MobsCore.CHAIR_ENTITY.get(), new AABB(pos), chair -> chair.hasPassenger(player));
-			if(!entities.isEmpty()) entities.getFirst().discard();
-		}
+		if (!world.isClientSide()) CHAIR_ENTITY.discard();
 		return super.playerWillDestroy(world, pos, state, player);
 	}
 

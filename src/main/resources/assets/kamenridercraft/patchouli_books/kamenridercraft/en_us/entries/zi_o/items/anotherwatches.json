@@ -1,0 +1,370 @@
+{
+	"name": "Anotherwatches",
+	"icon": "kamenridercraft:another_build_watch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kuuga_watch",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kuuga_watch",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_watch",
+			"title": "Another Agito Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ryuki_watch",
+			"title": "Another Ryuki Watch",
+			"text": "Appears in:$(li)Rider Time: Kamen Rider Ryuki (2019, web series)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ryuki_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ryuga_watch",
+			"title": "Another Ryuga Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ryuga_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_faiz_watch",
+			"title": "Another Faiz Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_faiz_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_blade_watch",
+			"title": "Another Blade Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_blade_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_hibiki_watch",
+			"title": "Another Hibiki Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_hibiki_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kabuto_watch",
+			"title": "Another Kabuto Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kabuto_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_den_o_watch",
+			"title": "Another Den-O Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_den_o_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kiva_watch",
+			"title": "Another Kiva Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kiva_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_decade_watch",
+			"title": "Another Decade Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_decade_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_diend_watch",
+			"title": "Another Diend Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O NEXT TIME: Geiz, Majesty (2020, V-Cinema film)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_diend_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_w_watch",
+			"title": "Another W Watch",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Forever (2018, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_w_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ooo_watch",
+			"title": "Another OOO Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ooo_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_fourze_watch",
+			"title": "Another Fourze Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_fourze_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_wizard_watch",
+			"title": "Another Wizard Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_wizard_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_gaim_watch",
+			"title": "Another Gaim Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_gaim_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_drive_watch",
+			"title": "Another Drive Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_drive_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ghost_watch",
+			"title": "Another Ghost Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ghost_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ex_aid_watch",
+			"title": "Another Ex-Aid Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ex_aid_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_build_watch",
+			"title": "Another Build Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_build_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zi_o_watch",
+			"title": "Another Zi-O Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zi_o_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zi_o_ii_watch",
+			"title": "Another Zi-O II Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zi_o_ii_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zero_one_watch",
+			"title": "Another Zero-One Watch",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zero_one_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ichigo_watch",
+			"title": "Another Ichigo Watch",
+			"text": "Appears in:$(li)Kamen Rider: Reiwa The First Generation (2019, movie)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ichigo_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_shinobi_watch",
+			"title": "Another Shinobi Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_shinobi_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_quiz_watch",
+			"title": "Another Quiz Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_quiz_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kikai_watch",
+			"title": "Another Kikai Watch",
+			"text": "Appears in:$(li)Kamen Rider Zi-O (2018, TV show)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kikai_watch",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		}
+	]
+}

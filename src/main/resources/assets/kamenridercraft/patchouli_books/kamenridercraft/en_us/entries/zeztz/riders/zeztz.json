@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:entity",
-			"anchor": "physicam_impact",
+			"anchor": "impact",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:impact_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
@@ -20,12 +20,26 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"anchor": "technolom_stream",
+			"anchor": "stream",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stream_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Technolom Stream",
 			"text": "Accessed with the $(l:zeztz/items/capsems#stream_capsem)Stream Capsem$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Zeztz",
+			"text": "Appears in:$(li)Kamen Rider Zeztz (2025, TV show)$(br2)Transforms with the $(l:zeztz/devices/zeztz_driver)Zeztz Driver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste II$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "recovery",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:recovery_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Esprim Recovery",
+			"text": "Accessed with the $(l:zeztz/items/capsems#recovery_capsem)Recovery Capsem$(/l)"
 		},
 		{
 			"type": "patchouli:text",
