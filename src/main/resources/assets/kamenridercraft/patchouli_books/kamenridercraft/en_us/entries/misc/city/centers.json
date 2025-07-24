@@ -1,0 +1,37 @@
+{
+	"name": "City Centers",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:misc/city",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "City centers are large buildings that determine the type of Rider mobs that spawn in a city. They also determine whether the city will be an urban or suburban area."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/city_centers.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Tokyo Tower",
+			"text": "Mobs: None$(br2)Cityscape: Urban (high-rise)$(br2)Loot: None"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_2.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_3.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_4.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_5.png"
+			],
+			"title": " "
+		}
+	]
+}

@@ -34,7 +34,7 @@
 			"anchor": "taddle_brick",
 			"link_recipe": true,
 			"item": "kamenridercraft:taddle_brick",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -68,7 +68,7 @@
 			"anchor": "counter_95do",
 			"link_recipe": true,
 			"item": "kamenridercraft:counter_95do",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -82,23 +82,21 @@
 			"anchor": "kuruma_brick",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuruma_brick",
-			"text": "Makes up the walls of the Kuruma Center",
-			"future_text": "Makes up the walls of the $(l:misc/city/kuruma_center)Kuruma Center$(/l)"
+			"text": "Makes up the walls of the $(l:misc/city/centers#kuruma_center)Kuruma Center$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "cafe_counter",
 			"link_recipe": true,
 			"item": "kamenridercraft:cafe_counter",
-			"text": "Found in several City buildings",
-			"future_text": "Found in several $(l:misc/city/city)City$(/l) buildings"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "planks_big_oak_golden_trim",
 			"link_recipe": true,
 			"item": "kamenridercraft:planks_big_oak_golden_trim",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -125,7 +123,7 @@
 			"anchor": "quartz_block_gold_trim",
 			"link_recipe": true,
 			"item": "kamenridercraft:quartz_block_gold_trim",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -544,7 +542,7 @@
 			"anchor": "hazard_wallplate",
 			"link_recipe": true,
 			"item": "kamenridercraft:hazard_wallplate",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -608,29 +606,28 @@
 			"anchor": "wooden_panel",
 			"link_recipe": true,
 			"item": "kamenridercraft:wooden_panel",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "wooden_panel2",
 			"link_recipe": true,
 			"item": "kamenridercraft:wooden_panel2",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside $(l:saber/structures/northern_base)Northern Base$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "cornerstore_sign",
 			"link_recipe": true,
 			"item": "kamenridercraft:cornerstore_sign",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "vertical_panel",
 			"link_recipe": true,
 			"item": "kamenridercraft:vertical_panel",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -652,8 +649,7 @@
 			"anchor": "pavement_roadline",
 			"link_recipe": true,
 			"item": "kamenridercraft:pavement_roadline",
-			"text": "Found throughout the City dimension",
-			"future_text": "Found throughout the $(l:misc/city/city)City dimension$(/l)"
+			"text": "Found throughout the City dimension"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -695,15 +691,14 @@
 			"anchor": "wonderwood_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:wonderwood_door",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/city#fantastic_bookstore_kamiyama)Fantastic Bookstore Kamiyama$(/l)"
+			"text": "Found inside the $(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)Fantastic Bookstore Kamiyama$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "white_fence",
 			"link_recipe": true,
 			"item": "kamenridercraft:white_fence",
-			"text": "Block is currently unobtainable"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -729,32 +724,28 @@
 			"anchor": "drive_pit_logo",
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_pit_logo",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Found in the Drive Pit inside the $(l:misc/city/centers#kuruma_center)Kuruma Center$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "drive_pit_ladder",
 			"link_recipe": true,
 			"item": "kamenridercraft:drive_pit_ladder",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Found in the Drive Pit inside the $(l:misc/city/centers#kuruma_center)Kuruma Center$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "whiteboard",
 			"link_recipe": true,
 			"item": "kamenridercraft:whiteboard",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "wallplate_grate_slab",
 			"link_recipe": true,
 			"item": "kamenridercraft:wallplate_grate_slab",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/kuruma_center#drive_pit)Drive Pit$(/l)"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -896,8 +887,7 @@
 			"anchor": "yellow_wallplate_grate_stairs",
 			"link_recipe": true,
 			"item": "kamenridercraft:yellow_wallplate_grate_stairs",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside the $(l:misc/city/narumi_detective_office)Narumi Detective Office$(/l)"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -912,8 +902,7 @@
 			"anchor": "glass_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:glass_door",
-			"text": "Block is currently unobtainable",
-			"future_text": "Found inside various $(l:misc/city/city)city buildings$(/l)"
+			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		}
 	]
 }

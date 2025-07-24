@@ -8,7 +8,11 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:helheim_crack",
-			"text": "Walk through this block to travel to $(l:gaim/dimensions/helheim)Helheim$(/l)$(br2)Spawn locations: Bamboo Jungle, Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Jungle, Mangrove Swamp, Old Growth Birch Forest, Plains, Sparse Jungle, Sunflower Plains, Swamp, $(l:gaim/dimensions/helheim)Helheim$(/l)$(br2)Can be opened manually with a $(l:gaim/arsenal/sid_lockseed)Sid Lockseed$(/l)"
+			"text": "Walk through this block to travel to $(l:gaim/dimensions/helheim)Helheim$(/l)$(br2)Spawn locations: Bamboo Jungle, Birch Forest, Dark Forest, Flower Forest, Forest, Grove, Jungle, Mangrove Swamp, Old Growth Birch Forest, Plains, Sparse Jungle, Sunflower Plains, Swamp, $(l:gaim/dimensions/helheim)Helheim$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Can be opened manually with a $(l:gaim/arsenal/sid_lockseed)Sid Lockseed$(/l)"
 		}
 	]
 }
