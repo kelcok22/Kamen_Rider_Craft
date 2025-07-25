@@ -571,6 +571,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.GODA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.TAKA_CAN.get(), TakaCanRenderer::new);
             event.registerEntityRenderer(MobsCore.TAKO_CAN.get(), TakoCanRenderer::new);
+            event.registerEntityRenderer(MobsCore.BATTA_CAN.get(), BattaCanRenderer::new);
 
             event.registerEntityRenderer(MobsCore.SUPER_GINGAOH.get(), BasicEntityRenderer::new);
 
