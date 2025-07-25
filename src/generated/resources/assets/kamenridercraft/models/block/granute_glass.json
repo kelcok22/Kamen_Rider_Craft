@@ -1,0 +1,11 @@
+
+{
+  "parent": "block/orientable",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "top": "kamenridercraft:block/granute_glass_top",
+    "front": "kamenridercraft:block/granute_glass",
+    "side": "kamenridercraft:block/granute_glass",
+    "bottom": "kamenridercraft:block/granute_glass_top"
+  }
+}

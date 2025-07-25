@@ -419,6 +419,12 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> TAKO_CAN_SPAWN_EGG = ITEMS.register("tako_can_spawn_egg",
             () -> new DeferredSpawnEggItem(TAKO_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BattaCanEntity>> BATTA_CAN = MOBLIST.register("batta_can",
+            () -> EntityType.Builder.of(BattaCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_can"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BATTA_CAN_SPAWN_EGG = ITEMS.register("batta_can_spawn_egg",
+            () -> new DeferredSpawnEggItem(BATTA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
                   () -> EntityType.Builder.of(SuperGingaOhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":super_gingaoh"));
 
