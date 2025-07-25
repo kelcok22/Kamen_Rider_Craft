@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-22T01:24:11.4719769	Item Models: kamenridercraft
+// 1.21.1	2025-07-25T02:18:08.5831662	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -343,6 +343,7 @@ ad96f2530fa729165596a9449f306ab0f94307af assets/kamenridercraft/models/item/stra
 197544477f86874d1495dd28d8938a7147e22fc4 assets/kamenridercraft/models/item/super_sentai_full_bottle.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/t2_memory_case.json
 07409adfa9eca2b8c7754d5ec3858baf569c0189 assets/kamenridercraft/models/item/taka_full_bottle_cross_z.json
+363e94f1ff42c46977b7df4e6a8008efd507e987 assets/kamenridercraft/models/item/taki_belt.json
 135885965bef4e15e0ed96ef66ee01a4a8e6044a assets/kamenridercraft/models/item/tamagon_ride_chemy_card.json
 ee8b5b9fc341db2190d84f3069a05b33e9b8daf2 assets/kamenridercraft/models/item/tarakomentaiko_gochizo.json
 e7d5e0854846ebbb776dc3f59e4ee1867bba5344 assets/kamenridercraft/models/item/televi_ride_chemy_card.json

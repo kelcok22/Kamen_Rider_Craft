@@ -91,6 +91,14 @@ public class Ichigo_Rider_Items {
                     new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
                     .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
+    public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),0,"","taki_rider","taki_rider_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+                    new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
+                    .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
+
     public static final DeferredItem<Item> GAIA_CORE = ITEMS.register("gaia_core",
             () -> new RiderFormChangeItem(new Item.Properties(),0,"","gaia","gaia_belt_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
@@ -194,6 +202,9 @@ public class Ichigo_Rider_Items {
     public static final DeferredItem<Item> TYPHOON_FAKE_ICHIGO = ITEMS.register("typhoon_fake_ichigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties())
                     .Dont_show_belt_form_info().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+
+    public static final DeferredItem<Item> TAKI_BELT = ITEMS.register("taki_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
