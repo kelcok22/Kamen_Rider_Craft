@@ -112,7 +112,7 @@ public class Kuuga_Rider_Items {
 					.IsBeltGlowing().IsGlowing().AddToList(RiderTabs.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_BLACK_EYES = ITEMS.register("kuuga_ultimate_black_eyes",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_ultimate_black_eyes","kuuga","arcle_belt_u",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_ultimate_black_eyes","kuuga","arcle_belt_ru",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
