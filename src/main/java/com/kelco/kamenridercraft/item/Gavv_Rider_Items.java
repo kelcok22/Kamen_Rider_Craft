@@ -208,11 +208,11 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> FRAPPEIS_GOCHIZO = ITEMS.register("frappeis_gochizo",
-			() -> new BlizzardsorbeiItem(new Item.Properties(),0,"_frappeis","do_not_work","vrastumgear_belt_frappeis",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_frappe_custom","valen","vrastumgear_belt_frappe",
 					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.has_basic_model().AddToList(COFFEE,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOPPUDDING_GOCHIZO = ITEMS.register("doppudding_gochizo",
@@ -232,11 +232,11 @@ public class Gavv_Rider_Items {
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUDDINTE_GOCHIZO = ITEMS.register("puddinte_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"a_la_mode","do_not_work","vrastumgear_belt_mode",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_a_la_mode","vram","vrastumgear_belt_mode",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
 					.has_basic_model().AddToList(ALA_MODE,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOUMA_DOPPUDDING_GOCHIZO = ITEMS.register("shouma_doppudding_gochizo",
@@ -537,6 +537,10 @@ public class Gavv_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",CHOCODON_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.Override_belt_text("valenbuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> VRASTUMGEAR_VALEN = ITEMS.register("vrastumgear_valen",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vram",DOPPUDDING_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
@@ -580,8 +584,11 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> XMAX_GAVV = ITEMS.register("xmax_gavv",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
-	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> SHIELD_SNACK_CHOCO_SHIELD = ITEMS.register("shield_snack_shield_choco",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
 			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -591,9 +598,15 @@ public class Gavv_Rider_Items {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsHenshinItem(VALENBUCKLE.get()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
+	public static final DeferredItem<Item> XMAX_VALEN = ITEMS.register("xmax_valen",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+
 	public static final DeferredItem<Item> VRAMBREAKER = ITEMS.register("vrambreaker",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
+
+	public static final DeferredItem<Item> SILVER_DEFENSER = ITEMS.register("silver_defenser",
+			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BITTER_GAVVGABLADE = ITEMS.register("bitter_gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
@@ -610,12 +623,6 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> WHIPPED_ROD = ITEMS.register("whipped_rod",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
-
-	public static final DeferredItem<Item> SHIELD_SNACK_SHIELD = ITEMS.register("shield_snack_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
-
-	public static final DeferredItem<Item> SHIELD_SNACK_CHOCO_SHIELD = ITEMS.register("shield_snack_shield_choco",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

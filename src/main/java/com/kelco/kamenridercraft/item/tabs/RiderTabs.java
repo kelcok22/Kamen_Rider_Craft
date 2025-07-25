@@ -598,6 +598,8 @@ public class RiderTabs {
 
             event.accept(Rider_Blocks.WHITEBOARD);
 
+            event.accept(Rider_Blocks.GRANUTE_GLASS_PANE);
+
             event.accept(Rider_Blocks.WALLPLATE_GRATE);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_STAIRS);
             event.accept(Rider_Blocks.WHITE_WALLPLATE_SLAB);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vram",
+  "pattern": [
+	"XXX",
+	"XMX",
+	"XXX"
+  ],
+  "key": {
+	"X": {
+	  "item": "kamenridercraft:blank_gochizo"
+	},
+	"M": {
+	  "item": "kamenridercraft:frappeis_gochizo"
+	}
+  },
+  "result": {
+	"id": "kamenridercraft:vrastumgear_valen"
+  }	
+}

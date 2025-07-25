@@ -753,6 +753,14 @@ public class Rider_Blocks {
 			() -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
 					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
 
+	public static final DeferredBlock<Block> GRANUTE_GLASS = registerBlock("granute_glass",
+			() -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
+					.strength(2f)).AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<IronBarsBlock> GRANUTE_GLASS_PANE = registerBlock("granute_glass_pane",
+			() -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE)
+					.strength(2f)));
+
 
 	public static final DeferredBlock<Block> TADDLE_BRICK = registerBlock("taddle_brick",
 			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
