@@ -49,6 +49,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(Rider_Blocks.CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.YELLOW_CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.LIME_CHECKERED_TILE.get());
+        simpleBlock(Rider_Blocks.GRANUTE_GLASS.get());
 
         stairsBlock(Rider_Blocks.HELHEIM_STAIRS.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         stairsBlock(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
@@ -80,6 +81,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         buttonBlock(Rider_Blocks.HELHEIM_BUTTON.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         pressurePlateBlock(Rider_Blocks.HELHEIM_PRESSURE_PLATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
 
+        paneBlock(Rider_Blocks.GRANUTE_GLASS_PANE.get(), blockTexture(Rider_Blocks.GRANUTE_GLASS.get()), blockTexture(Rider_Blocks.WALLPLATE.get()));
+
         fenceBlock(Rider_Blocks.HELHEIM_FENCE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         fenceGateBlock(Rider_Blocks.HELHEIM_FENCE_GATE.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         fenceBlock(Rider_Blocks.WHITE_FENCE.get(), blockTexture(Rider_Blocks.PLANKS_WHITE.get()));
@@ -109,6 +112,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(Rider_Blocks.LIME_CHECKERED_TILE);
         blockItem(Rider_Blocks.VERTICAL_PANEL);
         blockItem(Rider_Blocks.CAFE_COUNTER);
+        blockItem(Rider_Blocks.GRANUTE_GLASS);
 
         blockItem(Rider_Blocks.HELHEIM_PRESSURE_PLATE);
         blockItem(Rider_Blocks.HELHEIM_STAIRS);
@@ -158,8 +162,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     }
 
+    private void paneBlock(Block block, ResourceLocation resourceLocation) {
+    }
 
-        private void blockWithItem(DeferredBlock<?> deferredBlock) {
+
+    private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 

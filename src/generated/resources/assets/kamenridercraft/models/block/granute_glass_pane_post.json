@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "edge": "kamenridercraft:block/wallplate",
+    "pane": "kamenridercraft:block/granute_glass"
+  }
+}

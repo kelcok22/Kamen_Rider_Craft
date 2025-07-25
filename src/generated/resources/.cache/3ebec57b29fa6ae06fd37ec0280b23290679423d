@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-25T02:18:08.5831662	Item Models: kamenridercraft
+// 1.21.1	2025-07-25T18:12:03.0878705	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 050334a11efb2f7ec28a68d787cd5a46b8603f76 assets/kamenridercraft/models/item/alchemist_ring_blue.json
@@ -169,6 +169,7 @@ b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotc
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_db.json
 b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotchar_igniter_em.json
 1aca2f2dd2cf6c4d79f0f2effe2dbd5026844c9d assets/kamenridercraft/models/item/grandsaturn_ride_chemy_card.json
+bc58ef73a50485581df0a6721eaaadef22d0c275 assets/kamenridercraft/models/item/granute_glass_pane.json
 e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/granute_tooth.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
 7c52a21d11943073184164edea967c821c3dfb34 assets/kamenridercraft/models/item/gutsshovel_ride_chemy_card_v.json
@@ -377,6 +378,7 @@ b143b4600fb84607bff98f9aa6dafb11f1eed4d6 assets/kamenridercraft/models/item/vira
 a78acedfa584d69342653cd220801a5a8855a885 assets/kamenridercraft/models/item/viral_core_neo_spider.json
 34adffabf84514bc51f5e6f1380e79cdebae1f3e assets/kamenridercraft/models/item/viral_core_spider.json
 f7908df6af226da73305c449f77b42ef4692af86 assets/kamenridercraft/models/item/vrastumgear.json
+93f85f568640ffacb1ea8cc19dee1fb7fc1b6921 assets/kamenridercraft/models/item/vrastumgear_valen.json
 45535ed1c0f49b5c82341945fca67098cbae1c6b assets/kamenridercraft/models/item/vrocanspicy_gochizo.json
 2a4cceaf08cd78ab99b736e623de8234f8ecc90e assets/kamenridercraft/models/item/wafusaku_gochizo.json
 6d803df8f3ea9dc9ad6c14cef595c7ffcc791ef5 assets/kamenridercraft/models/item/warptera_ride_chemy_card.json
