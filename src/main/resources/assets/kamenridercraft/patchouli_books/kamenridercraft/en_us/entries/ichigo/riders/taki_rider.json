@@ -1,0 +1,21 @@
+{
+	"name": "Taki Rider",
+	"icon": "kamenridercraft:taki_vampire_core",
+	"category": "kamenridercraft:ichigo/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:taki_belt\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Taki Rider",
+			"text": "Appears in:$(li)Kamen Rider SPIRITS (2001, manga)$(br2)Transforms with the $(l:ichigo/devices/taki_belt)Taki Kuzu WeHn LaGn Belt$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost III$(li)Strength$(li)Rider Kick!"
+		}
+	]
+}

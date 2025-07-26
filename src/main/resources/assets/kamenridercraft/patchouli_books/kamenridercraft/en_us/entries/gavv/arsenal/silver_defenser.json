@@ -1,0 +1,16 @@
+{
+	"name": "Silver Defencer",
+	"icon": "kamenridercraft:silver_defenser",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used by Vram's $(l:gavv/riders/vram#a_la_mode)A la Mode Mode$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/silver_defenser"
+		}
+	]
+}
