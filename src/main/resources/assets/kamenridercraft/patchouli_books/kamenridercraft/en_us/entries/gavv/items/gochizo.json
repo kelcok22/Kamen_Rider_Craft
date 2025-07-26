@@ -279,7 +279,7 @@
 			"type": "patchouli:text",
 			"anchor": "frappeis_gochizo",
 			"title": "Frappeis Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Valen's $(l:gavv/riders/valen#frappe)Frappe Custom$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -318,7 +318,7 @@
 			"type": "patchouli:text",
 			"anchor": "puddinte_gochizo",
 			"title": "Puddinte Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Vram's $(l:gavv/riders/vram#a_la_mode)A la Mode Mode$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

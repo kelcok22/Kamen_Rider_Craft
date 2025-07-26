@@ -2,7 +2,7 @@
 	"name": "Bitter Gavvgablade",
 	"icon": "kamenridercraft:bitter_gavvgablade",
 	"category": "kamenridercraft:gavv/arsenal",
-	"sortnum": 9,
+	"sortnum": 10,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -1,0 +1,49 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:frappeis_gochizo"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.frappe_custom.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.frappe_custom.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gavv/valen",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gavv_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gavv_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gavv_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:vrastumgear_valen"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

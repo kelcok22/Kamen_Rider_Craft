@@ -1,0 +1,52 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:vrastumgear"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.gavv.a_la_mode.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.a_la_mode.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:gavv/vram",
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gavv_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gavv_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gavv_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:vrastumgear"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:puddinte_gochizo\"}"
+              }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

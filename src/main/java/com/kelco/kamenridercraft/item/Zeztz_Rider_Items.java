@@ -39,7 +39,7 @@ public class Zeztz_Rider_Items {
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
                         .ChangeBeltModel("geo/zeztz_riderbelt.geo.json").IsBeltGlowing().IsGlowing().has_basic_model().AddToList(RiderTabs.ZEZTZ_TAB_ITEM));
 
-        public static final DeferredItem<Item> PARADIGM_CAPSEM = ITEMS.register("paradigm_capsem",
+        public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
                 () -> new RiderFormChangeItem(new Item.Properties(),0,"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),

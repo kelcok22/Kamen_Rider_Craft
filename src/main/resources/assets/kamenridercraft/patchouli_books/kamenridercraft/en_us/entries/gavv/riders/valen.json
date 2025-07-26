@@ -62,6 +62,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "frappe",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Frappe Custom",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Valen",
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/vrastumgear#vrastumgear_valen)Vrastumgear$(/l)$(br2)Status Effects:$(li)Speed III$(li)Blizzard$(li)Resistance III$(li)Strength III"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "tirol",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
 			"scale": -1,

@@ -208,7 +208,7 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> FRAPPEIS_GOCHIZO = ITEMS.register("frappeis_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_frappe_custom","valen","vrastumgear_belt_frappe",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valen_frappe_custom","vrastumgear_belt_frappe",
 					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -538,7 +538,7 @@ public class Gavv_Rider_Items {
 					.Override_belt_text("valenbuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR_VALEN = ITEMS.register("vrastumgear_valen",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen_frappe_custom",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
 					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
