@@ -74,13 +74,6 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 
 	}
 
-	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
-				.add(Attributes.MAX_HEALTH, 40.0D)
-				.add(Attributes.ATTACK_DAMAGE, 2.0D)
-				.add(Attributes.FLYING_SPEED, 0.1F);
-	}
-
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
 		Item item = itemstack.getItem();
@@ -121,26 +114,7 @@ public class BattaCanEntity extends BaseAllyEntity implements GeoEntity {
 	@Override
 	protected void checkFallDamage(double y, boolean onGround, BlockState state, BlockPos pos) {
 	}
-	@Override
-	public void travel(Vec3 travelVector) {
-		if (this.isControlledByLocalInstance()) {
-			if (this.isInWater()) {
-				this.moveRelative(0.02F, travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.8F));
-			} else if (this.isInLava()) {
-				this.moveRelative(0.02F, travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.5));
-			} else {
-				this.moveRelative(this.getSpeed(), travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.91F));
-			}
-		}
 
-		this.calculateEntityAnimation(false);
-	}
 
 	private void tryToTame(Player player) {
 			this.tame(player);
