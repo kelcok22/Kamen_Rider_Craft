@@ -10,10 +10,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
@@ -34,23 +36,32 @@ public class CandroidItem extends BaseItem {
 		TEXT.add(text);
 	}
 
-	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-		ItemStack itemstack = player.getItemInHand(usedHand);
+	/**
+	 * Called when this item is used when targeting a Block
+	 */
+	public InteractionResult useOn(UseOnContext context) {
+
+		Player player = context.getPlayer();
+		ItemStack itemstack = player.getItemInHand(context.getHand());
+		Level level = player.level();
 
 		if (!level.isClientSide()) {
-			if (player.level() instanceof ServerLevel) {
-				BlockPos pos = player.blockPosition();
+			if (level instanceof ServerLevel) {
+				BlockPos pos = context.getClickedPos();
 				BaseAllyEntity boss = BOSS.get().create(level);
 				if (boss != null) {
 					boss.tame(player);
-					boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
+					boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
 					level.addFreshEntity(boss);
 					if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
-				itemstack.consume(1,player);
+					itemstack.consume(1,player);
 				}
 			}
 		}
-		return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+		return InteractionResult.PASS;
 	}
+
+
+
 
 }
