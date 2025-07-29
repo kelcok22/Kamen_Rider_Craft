@@ -443,6 +443,24 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GORILLA_CAN_SPAWN_EGG = ITEMS.register("gorilla_can_spawn_egg",
             () -> new DeferredSpawnEggItem(GORILLA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<KujakuCanEntity>> KUJAKU_CAN = MOBLIST.register("kujaku_can",
+            () -> EntityType.Builder.of(KujakuCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kujaku_can"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KUJAKU_CAN_SPAWN_EGG = ITEMS.register("Kujaku_can_spawn_egg",
+            () -> new DeferredSpawnEggItem(KUJAKU_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<PteraCanEntity>> PTERA_CAN = MOBLIST.register("ptera_can",
+            () -> EntityType.Builder.of(PteraCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":ptera_can"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PTERA_CAN_SPAWN_EGG = ITEMS.register("ptera_can_spawn_egg",
+            () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<TorikeraCanEntity>> TORIKERA_CAN = MOBLIST.register("torikera_can",
+            () -> EntityType.Builder.of(TorikeraCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":torikera_can"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> TORIKERA_CAN_SPAWN_EGG = ITEMS.register("torikera_can_spawn_egg",
+            () -> new DeferredSpawnEggItem(PTERA_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<SuperGingaOhEntity>> SUPER_GINGAOH = MOBLIST.register("super_gingaoh",
                   () -> EntityType.Builder.of(SuperGingaOhEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":super_gingaoh"));

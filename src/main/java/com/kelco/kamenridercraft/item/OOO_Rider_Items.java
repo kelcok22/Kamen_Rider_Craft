@@ -803,6 +803,18 @@ public class OOO_Rider_Items {
 	public static final DeferredItem<Item> GORILLA_CANDROID = ITEMS.register("gorilla_candroid",
 			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.gorilla"), MobsCore.GORILLA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
 
+	public static final DeferredItem<Item> KUJAKU_CANDROID = ITEMS.register("kujaku_candroid",
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.kujaku"), MobsCore.KUJAKU_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+
+	public static final DeferredItem<Item> PTERA_CANDROID = ITEMS.register("ptera_candroid",
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.ptera"), MobsCore.PTERA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+
+	public static final DeferredItem<Item> TORIKERA_CANDROID = ITEMS.register("torikera_candroid",
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.torikera"), MobsCore.TORIKERA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+
+	public static final DeferredItem<Item> FURIFURI_CANDROID = ITEMS.register("furifuri_candroid",
+			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

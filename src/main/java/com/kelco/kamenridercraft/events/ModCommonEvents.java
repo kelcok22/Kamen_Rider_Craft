@@ -533,6 +533,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.TORA_CAN.get(), ToraCanEntity.setAttributes().build());
 		event.put(MobsCore.DENKIUNAGI_CAN.get(), DenkiunagiCanEntity.setAttributes().build());
 		event.put(MobsCore.GORILLA_CAN.get(), GorillaCanEntity.setAttributes().build());
+		event.put(MobsCore.KUJAKU_CAN.get(), KujakuCanEntity.setAttributes().build());
+		event.put(MobsCore.PTERA_CAN.get(), PteraCanEntity.setAttributes().build());
+		event.put(MobsCore.TORIKERA_CAN.get(), TorikeraCanEntity.setAttributes().build());
 
 		event.put(MobsCore.SUPER_GINGAOH.get(), SuperGingaOhEntity.setAttributes().build());
 
