@@ -34,23 +34,23 @@ public class CandroidItem extends BaseItem {
 		TEXT.add(text);
 	}
 
-	public InteractionResultHolder<ItemStack> use(Level p_41128_, Player p_41129_, InteractionHand p_41130_) {
-		ItemStack itemstack = p_41129_.getItemInHand(p_41130_);
-		if (!p_41128_.isClientSide()) {
-			if (p_41129_.level() instanceof ServerLevel) {
-				BlockPos pos = p_41129_.getOnPos();
-				BaseAllyEntity boss = BOSS.get().create(p_41128_);
+	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+		ItemStack itemstack = player.getItemInHand(usedHand);
+
+		if (!level.isClientSide()) {
+			if (player.level() instanceof ServerLevel) {
+				BlockPos pos = player.blockPosition();
+				BaseAllyEntity boss = BOSS.get().create(level);
 				if (boss != null) {
-					boss.tame(p_41129_);
+					boss.tame(player);
 					boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), 0, 0.0F);
-					p_41128_.addFreshEntity(boss);
-					if (!TEXT.isEmpty()) for (Component text : TEXT) p_41129_.sendSystemMessage(text);
+					level.addFreshEntity(boss);
+					if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
+				itemstack.consume(1,player);
 				}
 			}
-
 		}
-
-		return InteractionResultHolder.sidedSuccess(itemstack, p_41128_.isClientSide());
+		return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
 	}
 
 }
