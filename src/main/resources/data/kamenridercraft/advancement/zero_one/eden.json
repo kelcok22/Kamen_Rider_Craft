@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:zero_one/hellrising_hopper",
+  "parent": "kamenridercraft:zero_one/abaddon",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",

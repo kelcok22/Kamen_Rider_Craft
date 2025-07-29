@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:new_ghost_driver"
+	  "id": "kamenridercraft:ziku_driver_zi_o_mirror"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+      "translate": "advancements.kamenridercraft.zi-o.mirror_zi-o.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+      "translate": "advancements.kamenridercraft.zi-o.mirror_zi-o.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/kanon_specter",
+  "parent": "kamenridercraft:zi-o/tsukuyomi",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:zi_o_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:zi_o_troso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:zi_o_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:new_ghost_driver"
+				"kamenridercraft:ziku_driver_zi_o_mirror"
 			  ]
 			}
 		  }

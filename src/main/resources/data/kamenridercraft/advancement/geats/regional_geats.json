@@ -1,0 +1,148 @@
+{
+  "display": {
+    "icon": {
+  	  "id": "kamenridercraft:geats_rider_core_id_osaka"
+    },
+	"title": {
+      "translate": "advancements.kamenridercraft.geats.regional_geats.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.geats.regional_geats.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:geats/oneness",
+  "criteria": {
+    "1": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_geats"
+  			],
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:geats_rider_core_id_osaka\"}"
+              }
+  		  }
+  		}
+  	  }
+  	}
+    },
+    "2": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_geats"
+  			],
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:geats_rider_core_id_fukuoka\"}"
+              }
+  		  }
+  		}
+  	  }
+  	}
+    },
+    "3": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_geats"
+  			],
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:geats_rider_core_id_nagoya\"}"
+              }
+  		  }
+  		}
+  	  }
+  	}
+    },
+    "4": {
+  	"trigger": "minecraft:inventory_changed",
+  	"conditions": {
+  	  "player": {
+  		"equipment": {
+  		  "head": {
+  			"items": [
+  			  "kamenridercraft:geatshead"
+  			]
+  		  },
+  		  "chest": {
+  			"items": [
+  			  "kamenridercraft:geatstroso"
+  			]
+  		  },
+  		  "legs": {
+  			"items": [
+  			  "kamenridercraft:geatslegs"
+  			]
+  		  },
+  		  "feet": {
+  			"items": [
+  			  "kamenridercraft:desire_driver_geats"
+  			],
+  		  "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:geats_rider_core_id_tokyo\"}"
+              }
+  		  }
+  		}
+  	  }
+  	}
+    }
+  }
+}

@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:deadheatshift"
+	  "id": "kamenridercraft:proto_speedshift"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.drive.dead_heat.title"
+      "translate": "advancements.kamenridercraft.drive.zero_drive.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.drive.dead_heat.description"
+      "translate": "advancements.kamenridercraft.drive.zero_drive.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:drive/zero_drive",
+  "parent": "kamenridercraft:drive/drive",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -41,7 +41,7 @@
 				"kamenridercraft:drivedriver"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:deadheatshift\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:proto_speedshift\"}"
               }
 			}
 		  }
