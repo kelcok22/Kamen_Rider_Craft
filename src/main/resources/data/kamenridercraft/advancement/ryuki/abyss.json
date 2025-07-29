@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:new_ghost_driver"
+	  "id": "kamenridercraft:v_buckle_abyss"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+      "translate": "advancements.kamenridercraft.ryuki.abyss.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+      "translate": "advancements.kamenridercraft.ryuki.abyss.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/kanon_specter",
+  "parent": "kamenridercraft:ryuki/verde",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:ryukihead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:ryukitroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:ryukilegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:new_ghost_driver"
+				"kamenridercraft:v_buckle_abyss"
 			  ]
 			}
 		  }

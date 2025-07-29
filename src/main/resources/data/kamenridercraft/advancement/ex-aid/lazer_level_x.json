@@ -14,7 +14,7 @@
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ex-aid/lazer",
+  "parent": "kamenridercraft:ex-aid/lazer_turbo",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
