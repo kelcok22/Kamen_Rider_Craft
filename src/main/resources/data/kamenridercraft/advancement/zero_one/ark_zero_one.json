@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:new_ghost_driver"
+	  "id": "kamenridercraft:hiden_zero_one_driver_azu"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+      "translate": "advancements.kamenridercraft.zero_one.ark_zero_one.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+      "translate": "advancements.kamenridercraft.zero_one.ark_zero_one.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/kanon_specter",
+  "parent": "kamenridercraft:zero_one/ark_one",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:zero_onehead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:zero_onetroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:zero_onelegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:new_ghost_driver"
+				"kamenridercraft:hiden_zero_one_driver_azu"
 			  ]
 			}
 		  }

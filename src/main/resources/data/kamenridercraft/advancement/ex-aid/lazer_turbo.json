@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:kuuga_rising_ultimate"
+	  "id": "kamenridercraft:bakusou_bike_gashat_turbo"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising_ultimate.title"
+      "translate": "advancements.kamenridercraft.ex-aid.lazer_turbo.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.kuuga.kuuga_rising_ultimate.description"
+      "translate": "advancements.kamenridercraft.ex-aid.lazer_turbo.description"
     },
     "frame": "goal",
 	"show_toast": true,
 	"announce_to_chat": true,
-	"hidden": true
+	"hidden": false
   },
-  "parent": "kamenridercraft:kuuga/kuuga_ultimate",
+  "parent": "kamenridercraft:ex-aid/lazer",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,25 +23,25 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:kuugahead"
+				"kamenridercraft:ex_aidhead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:kuugatroso"
+				"kamenridercraft:ex_aidtroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:kuugalegs"
+				"kamenridercraft:ex_aidlegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:arcle"
+				"kamenridercraft:gamer_driver_lazer"
 			  ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate\"}"
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:bakusou_bike_gashat_turbo\"}"
               }
 			}
 		  }

@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:new_ghost_driver"
+	  "id": "kamenridercraft:mage_b_ring"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+      "translate": "advancements.kamenridercraft.wizard.mage_b.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+      "translate": "advancements.kamenridercraft.wizard.mage_b.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/kanon_specter",
+  "parent": "kamenridercraft:wizard/mage",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,23 +23,23 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:wizard_head"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:wizard_troso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:wizard_legs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:new_ghost_driver"
-			  ]
+				"kamenridercraft:magewizardriver_b"
+              ]
 			}
 		  }
 		}

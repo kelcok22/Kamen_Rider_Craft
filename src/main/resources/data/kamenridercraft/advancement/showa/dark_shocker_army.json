@@ -1,0 +1,223 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:typhoon_dark_ichigo"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.dark_shocker_army.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.dark_shocker_army.description"
+    },
+    "frame": "task",
+	"show_toast": true,
+	"announce_to_chat": true,
+	"hidden": false
+  },
+  "parent": "kamenridercraft:showa/stronger",
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ichigohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ichigotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ichigolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:typhoon_dark_ichigo"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:ichigohead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:ichigotroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:ichigolegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:typhoon_dark_nigo"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"3": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:v3head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:v3troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:v3legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_double_typhoon"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"4": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:v3head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:v3troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:v3legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_riderman_belt"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"5": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:xhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:xtroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:xlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_ridol"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"6": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:amazonhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:amazontroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:amazonlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_condorer"
+			  ]
+			}
+		  }
+		}
+	  }
+	},
+	"7": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:strongerhead"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:strongertroso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:strongerlegs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:dark_electrer"
+			  ]
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
