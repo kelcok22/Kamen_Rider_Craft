@@ -1,7 +1,7 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:gamer_driver_paradx"
+	  "id": "kamenridercraft:paradoxbelt"
 	},
 	"title": {
       "translate": "advancements.kamenridercraft.ex-aid.para_dx.title"
@@ -38,7 +38,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:gamer_driver_paradx"
+				"kamenridercraft:paradoxbelt"
 			  ]
 			}
 		  }

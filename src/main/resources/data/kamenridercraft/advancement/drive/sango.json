@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:new_ghost_driver"
+	  "id": "kamenridercraft:typhoon_sango"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.title"
+      "translate": "advancements.kamenridercraft.drive.sango.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.ghost.new_ghost.description"
+      "translate": "advancements.kamenridercraft.drive.sango.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:ghost/kanon_specter",
+  "parent": "kamenridercraft:drive/lupin",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 		  "equipment": {
 			"head": {
 			  "items": [
-				"kamenridercraft:ghost_head"
+				"kamenridercraft:ichigohead"
 			  ]
 			},
 			"chest": {
 			  "items": [
-				"kamenridercraft:ghost_troso"
+				"kamenridercraft:ichigotroso"
 			  ]
 			},
 			"legs": {
 			  "items": [
-				"kamenridercraft:ghost_legs"
+				"kamenridercraft:ichigolegs"
 			  ]
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:new_ghost_driver"
+				"kamenridercraft:typhoon_sango"
 			  ]
 			}
 		  }
