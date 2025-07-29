@@ -575,6 +575,9 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.TORA_CAN.get(), ToraCanRenderer::new);
             event.registerEntityRenderer(MobsCore.DENKIUNAGI_CAN.get(), DenkiunagiCanRenderer::new);
             event.registerEntityRenderer(MobsCore.GORILLA_CAN.get(), GorillaCanRenderer::new);
+            event.registerEntityRenderer(MobsCore.KUJAKU_CAN.get(), KujakuCanRenderer::new);
+            event.registerEntityRenderer(MobsCore.PTERA_CAN.get(), PteraCanRenderer::new);
+            event.registerEntityRenderer(MobsCore.TORIKERA_CAN.get(), TorikeraCanRenderer::new);
 
             event.registerEntityRenderer(MobsCore.SUPER_GINGAOH.get(), BasicEntityRenderer::new);
 

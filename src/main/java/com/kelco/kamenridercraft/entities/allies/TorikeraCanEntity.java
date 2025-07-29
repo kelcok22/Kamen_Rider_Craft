@@ -1,43 +1,27 @@
 package com.kelco.kamenridercraft.entities.allies;
 
 
-import com.kelco.kamenridercraft.entities.MobsCore;
-import com.kelco.kamenridercraft.entities.footSoldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entities.footSoldiers.YummyEntity;
 import com.kelco.kamenridercraft.entities.summons.BaseSummonEntity;
-import com.kelco.kamenridercraft.item.Modded_item_core;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.DamageTypeTags;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Bee;
-import net.minecraft.world.entity.animal.FlyingAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -46,13 +30,12 @@ import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 
-public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingAnimal {
+public class TorikeraCanEntity extends BaseAllyEntity implements GeoEntity {
 
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-	public TakaCanEntity(EntityType<? extends TakaCanEntity> entityType, Level level) {
+	public TorikeraCanEntity(EntityType<? extends TorikeraCanEntity> entityType, Level level) {
 		super(entityType, level);
-		this.moveControl = new FlyingMoveControl(this, 20, true);
 		if (level != null && !level.isClientSide) {
 			this.registerGoals();
 		}
@@ -60,8 +43,9 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 
 	protected void registerGoals() {
 		this.goalSelector.addGoal(1, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new TamableAnimal.TamableAnimalPanicGoal(1.5, DamageTypeTags.PANIC_ENVIRONMENTAL_CAUSES));
+		this.goalSelector.addGoal(1, new TamableAnimalPanicGoal(1.5, DamageTypeTags.PANIC_ENVIRONMENTAL_CAUSES));
 		this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
+		this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, 0.4F));
 		this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.0, true));
 		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1.0, 10.0F, 2.0F));
 		this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 1.0));
@@ -82,21 +66,6 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 
 	}
 
-	public static AttributeSupplier.Builder setAttributes() {
-		return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, (double)0.3F)
-				.add(Attributes.MAX_HEALTH, 40.0D)
-				.add(Attributes.ATTACK_DAMAGE, 2.0D)
-				.add(Attributes.FLYING_SPEED, 0.1F);
-	}
-
-	@Override
-	protected PathNavigation createNavigation(Level level) {
-		FlyingPathNavigation flyingpathnavigation = new FlyingPathNavigation(this, level);
-		flyingpathnavigation.setCanOpenDoors(false);
-		flyingpathnavigation.setCanFloat(true);
-		flyingpathnavigation.setCanPassDoors(true);
-		return flyingpathnavigation;
-	}
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
 		Item item = itemstack.getItem();
@@ -137,26 +106,7 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 	@Override
 	protected void checkFallDamage(double y, boolean onGround, BlockState state, BlockPos pos) {
 	}
-	@Override
-	public void travel(Vec3 travelVector) {
-		if (this.isControlledByLocalInstance()) {
-			if (this.isInWater()) {
-				this.moveRelative(0.02F, travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.8F));
-			} else if (this.isInLava()) {
-				this.moveRelative(0.02F, travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.5));
-			} else {
-				this.moveRelative(this.getSpeed(), travelVector);
-				this.move(MoverType.SELF, this.getDeltaMovement());
-				this.setDeltaMovement(this.getDeltaMovement().scale(0.91F));
-			}
-		}
 
-		this.calculateEntityAnimation(false);
-	}
 
 	private void tryToTame(Player player) {
 			this.tame(player);
@@ -195,21 +145,6 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 		      return item == OOO_Rider_Items.CELL_MEDAL.get();
 		   }
 
-	@Override
-	public boolean isPushable() {
-		return true;
-	}
-
-	@Override
-	protected void doPush(Entity entity) {
-		if (!(entity instanceof Player)) {
-			super.doPush(entity);
-		}
-	}
-	@Override
-	protected boolean canFlyToOwner() {
-		return true;
-	}
 
 
 	@Override
@@ -221,17 +156,12 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 		@Override
 		public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 			
-			RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.taka_can.idle");
-			RawAnimation WALK = RawAnimation.begin().thenLoop("animation.taka_can.walk");
-			RawAnimation SIT = RawAnimation.begin().thenPlay("animation.taka_can.sit");
-			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.taka_can.summon");
-			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.taka_can.death");
+			RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.tricera_can.idle");
+			RawAnimation WALK = RawAnimation.begin().thenLoop("animation.tricera_can.walk");
+			RawAnimation SIT = RawAnimation.begin().thenPlay("animation.tricera_can.sit");
+			RawAnimation SUMMON = RawAnimation.begin().thenPlay("animation.tricera_can.summon");
+			RawAnimation RIP = RawAnimation.begin().thenPlay("animation.tricera_can.death");
 
-			controllers.add(new AnimationController<TakaCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
+			controllers.add(new AnimationController<TorikeraCanEntity>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isDeadOrDying() ? !isInSittingPose() ? state.isMoving() ? WALK:IDLE:SIT:RIP)));
 		}
-
-	@Override
-	public boolean isFlying() {
-		return !this.onGround();
-	}
 }
