@@ -74,7 +74,6 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		if (!this.isVehicle()) {
 			player.startRiding(this);
-
 			return super.mobInteract(player, hand);
 		}
 
