@@ -1,0 +1,23 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:zero_one_logo"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.reiwa.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.reiwa.description"
+    },
+    "background": "kamenridercraft:textures/block/denliner_interior.png",
+    "frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": false
+  },
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:tick"
+	}
+  }
+}

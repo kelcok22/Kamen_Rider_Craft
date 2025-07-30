@@ -14,7 +14,7 @@
 	  "announce_to_chat": true,
 	  "hidden": false
 	},
-	"parent": "kamenridercraft:root",
+	"parent": "kamenridercraft:heisei_p1",
 	"criteria": {
 	  "requirement": {
 		"trigger": "minecraft:changed_dimension",

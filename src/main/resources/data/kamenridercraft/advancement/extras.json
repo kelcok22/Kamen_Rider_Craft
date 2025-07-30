@@ -1,15 +1,15 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:kamen_rider_logo"
+	  "id": "kamenridercraft:g_logo"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.root.title"
+      "translate": "advancements.kamenridercraft.extras.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.root.description"
+      "translate": "advancements.kamenridercraft.extras.description"
     },
-    "background": "kamenridercraft:textures/block/zero_liner_green.png",
+    "background": "kamenridercraft:textures/block/gaoh_liner_gold.png",
     "frame": "task",
 	"show_toast": false,
 	"announce_to_chat": false,
