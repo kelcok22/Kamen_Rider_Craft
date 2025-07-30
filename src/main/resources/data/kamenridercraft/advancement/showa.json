@@ -1,0 +1,23 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:kamen_rider_logo"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.showa.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.showa.description"
+    },
+    "background": "kamenridercraft:textures/block/zero_liner_green.png",
+    "frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": false
+  },
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:tick"
+	}
+  }
+}

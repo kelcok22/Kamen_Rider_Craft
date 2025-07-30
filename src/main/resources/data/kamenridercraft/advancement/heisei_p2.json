@@ -1,0 +1,23 @@
+{
+  "display": {
+	"icon": {
+	  "id": "kamenridercraft:w_logo"
+	},
+	"title": {
+      "translate": "advancements.kamenridercraft.heisei_p2.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.heisei_p2.description"
+    },
+    "background": "kamenridercraft:textures/block/new_denliner_interior.png",
+    "frame": "task",
+	"show_toast": false,
+	"announce_to_chat": false,
+	"hidden": false
+  },
+  "criteria": {
+	"requirement": {
+	  "trigger": "minecraft:tick"
+	}
+  }
+}

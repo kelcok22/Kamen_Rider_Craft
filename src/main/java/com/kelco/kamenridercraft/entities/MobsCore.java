@@ -446,7 +446,7 @@ public class MobsCore {
     public static final DeferredHolder<EntityType<?>, EntityType<KujakuCanEntity>> KUJAKU_CAN = MOBLIST.register("kujaku_can",
             () -> EntityType.Builder.of(KujakuCanEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kujaku_can"));
 
-    public static final DeferredItem<DeferredSpawnEggItem> KUJAKU_CAN_SPAWN_EGG = ITEMS.register("Kujaku_can_spawn_egg",
+    public static final DeferredItem<DeferredSpawnEggItem> KUJAKU_CAN_SPAWN_EGG = ITEMS.register("kujaku_can_spawn_egg",
             () -> new DeferredSpawnEggItem(KUJAKU_CAN, 0xbd0000, 0xc4c4c4, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<PteraCanEntity>> PTERA_CAN = MOBLIST.register("ptera_can",
