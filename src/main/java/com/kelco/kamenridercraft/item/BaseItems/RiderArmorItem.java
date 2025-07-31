@@ -45,7 +45,6 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
         consumer.accept(new GeoRenderProvider() {
             private RiderArmorRenderer renderer;
-
             @Override
             public <T extends LivingEntity> HumanoidModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable HumanoidModel<T> original) {
                this.renderer = new RiderArmorRenderer(livingEntity, equipmentSlot);
@@ -71,25 +70,19 @@ public class RiderArmorItem extends ArmorItem implements GeoItem {
 
         controllerRegistrar.add(new AnimationController<RiderArmorItem>(this, "Walk/Idle", 20, state -> {
             Entity entity = state.getData(DataTickets.ENTITY);
-
             Boolean IsWaking = false;
             Boolean IsKicking = false;
-
             if (entity instanceof Player player) {
-
                 if(player.getDeltaMovement().x!=0||player.getDeltaMovement().z!=0)IsWaking=true;
-
                 if(player.hasEffect(Effect_core.RIDER_KICK)){
                     if(player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=0&player.getEffect(Effect_core.RIDER_KICK).getAmplifier()!=5)IsKicking =true;
                 }
 
             }
 
-
             if (IsKicking){
                 state.setAndContinue(KICK);
             }else state.setAndContinue(IsWaking ? WALK:IDLE);
-
             return PlayState.CONTINUE;
         }));
 

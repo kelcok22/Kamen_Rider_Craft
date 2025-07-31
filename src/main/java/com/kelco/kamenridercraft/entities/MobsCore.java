@@ -1245,6 +1245,8 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ACCEL_BIKE_FORM_SPAWN_EGG = ITEMS.register("accel_bike_form_spawn_egg",
             () -> new DeferredSpawnEggItem(ACCEL_BIKE_FORM, 0xffffff, 0x151515, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<RidevendorVendingModeEntity>> RIDEVENDOR_VENDING_MODE = MOBLIST.register("ridevendor_vending",
+            () -> EntityType.Builder.of(RidevendorVendingModeEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":ridevendor"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<RidevendorEntity>> RIDEVENDOR = MOBLIST.register("ridevendor",
             () -> EntityType.Builder.of(RidevendorEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":ridevendor"));

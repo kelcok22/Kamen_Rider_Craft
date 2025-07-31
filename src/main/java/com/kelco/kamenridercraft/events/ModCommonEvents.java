@@ -679,6 +679,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.HARDBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.SKULLBOILER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDEVENDOR.get(), baseBikeEntity.setAttributes().build());
+		event.put(MobsCore.RIDEVENDOR_VENDING_MODE.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.ACCEL_BIKE_FORM.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.TORIDEVENDOR.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.BIKE_GAMER.get(), baseBikeEntity.setAttributes().build());
