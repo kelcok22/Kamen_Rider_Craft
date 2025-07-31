@@ -14,16 +14,16 @@ import com.kelco.kamenridercraft.item.zero_one.ProgriseHolderItem;
 import com.kelco.kamenridercraft.item.zero_one.ShotriserItem;
 import com.kelco.kamenridercraft.item.zero_one.ThousandriverItem;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -115,7 +115,7 @@ public class Zero_One_Rider_Items {
             () -> new RiderFormChangeItem(new Item.Properties(),0,"_red","zero_one","hiden_zero_one_driver_belt_r",
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
             .addAlternative(RAGNAROK_APOCALYPSE_REBOOT.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY));
-	
+
 	public static final DeferredItem<Item> REALIZE_RISING_HOPPER_PROGRISEKEY = ITEMS.register("realize_rising_hopper_progrisekey",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_realizing_hopper","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
@@ -126,6 +126,19 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false))
+			{
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.REALIZING_PARTICLES.get(),
+							player.getX(), player.getY() + 1,
+							player.getZ(), 5, 0, 0, 0, 1);
+
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FIREWORK,
+							player.getX(), player.getY() + 1,
+							player.getZ(), 50, 0, 0, 0, 1);
+				}
+			}
             .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> HELLRISE_PROGRISEKEY = ITEMS.register("hellrise_progrisekey",
