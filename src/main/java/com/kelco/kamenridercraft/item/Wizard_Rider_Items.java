@@ -76,16 +76,6 @@ public class Wizard_Rider_Items {
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false))
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
-	/**
-	{
-		public void OnTransformation(ItemStack itemstack, LivingEntity player) {
-		super.OnTransformation(itemstack,player);
-		((ServerLevel) player.level()).sendParticles(ModParticles.WIZARD_PARTICLES.get(),
-				player.getX() , player.getY()+1,
-				player.getZ(), 1, 0, 0, 0, 0.4);
-	}
-	}
-	**/
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING = ITEMS.register("water_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water","wizard","wizardriver_belt",
