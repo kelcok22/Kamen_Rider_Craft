@@ -41,7 +41,6 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     }
 
 
-
     @Override
     public ResourceLocation getAnimationResource(RiderArmorItem animatable) {
         if (slot== EquipmentSlot.FEET) {

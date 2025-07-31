@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.OOO_Rider_Items;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
@@ -17,9 +18,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RidevendorEntity extends baseBikeEntity {
-
-
 
 	public RidevendorEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
 		super(entityType, level);
@@ -29,24 +31,56 @@ public class RidevendorEntity extends baseBikeEntity {
 
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack itemstack = player.getItemInHand(hand);
-		Item item = itemstack.getItem();
-		if (item == OOO_Rider_Items.TORA_CANDROID.get()) {
-			if (!level().isClientSide()) {
+		if (!level().isClientSide()) {
+			if (itemstack.getItem() == OOO_Rider_Items.TORA_CANDROID.get()) {
 				if (this.level() instanceof ServerLevel) {
 					BlockPos pos = this.blockPosition();
 					baseBikeEntity boss = MobsCore.TORIDEVENDOR.get().create(this.level());
 					if (boss != null) {
 						boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), this.getYRot(), this.getXRot());
-						boss.setYBodyRot(this.yBodyRot);
-
+						boss.yRotO = getYRot();
+						boss.xRotO = getXRot();
+						setRot(getYRot(), getXRot());
+						boss.yBodyRot = this.getYRot();
+						boss.yHeadRot = this.yBodyRot;
+						if (boss.level() instanceof ServerLevel sl) {
+							sl.sendParticles(ParticleTypes.GUST,
+									boss.getX(), boss.getY() + 1.0,
+									boss.getZ(), 1, 0, 0, 0, 1);
+						}
 						this.level().addFreshEntity(boss);
 						this.remove(RemovalReason.DISCARDED);
-						itemstack.consume(1,player);
+						itemstack.consume(1, player);
 					}
+
 				}
-			}
+
+			} else if (player.isShiftKeyDown()){
+				if (this.level() instanceof ServerLevel) {
+					BlockPos pos = this.blockPosition();
+					baseBikeEntity boss = MobsCore.RIDEVENDOR_VENDING_MODE.get().create(this.level());
+					if (boss != null) {
+						boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), this.getYRot(), this.getXRot());
+						boss.yRotO = getYRot();
+						boss.xRotO = getXRot();
+						setRot(getYRot(), getXRot());
+						boss.yBodyRot = this.getYRot();
+						boss.yHeadRot = this.yBodyRot;
+						if (boss.level() instanceof ServerLevel sl) {
+							sl.sendParticles(ParticleTypes.GUST,
+									boss.getX(), boss.getY() + 1.0,
+									boss.getZ(), 1, 0, 0, 0, 1);
+						}
+						this.level().addFreshEntity(boss);
+						this.remove(RemovalReason.DISCARDED);
+					}
+
+				}
+
+			}else return super.mobInteract(player, hand);
+
 		}
-		return super.mobInteract(player, hand);
+		return InteractionResult.PASS;
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {

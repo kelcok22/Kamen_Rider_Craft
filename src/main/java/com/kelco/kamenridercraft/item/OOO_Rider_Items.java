@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machineBlocks.CellMedalProgramer;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
+import com.kelco.kamenridercraft.entities.bikes.RidevendorVendingModeEntity;
 import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.ooo.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
@@ -786,34 +787,43 @@ public class OOO_Rider_Items {
      */
 
 	public static final DeferredItem<Item> TAKA_CANDROID = ITEMS.register("taka_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.taka"), MobsCore.TAKA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.taka"), MobsCore.TAKA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,5).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAKO_CANDROID = ITEMS.register("tako_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.tako"), MobsCore.TAKO_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.tako"), MobsCore.TAKO_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,4).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> BATTA_CANDROID = ITEMS.register("batta_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.batta"), MobsCore.BATTA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.batta"), MobsCore.BATTA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,4).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TORA_CANDROID = ITEMS.register("tora_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.tora"), MobsCore.TORA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.tora"), MobsCore.TORA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,3).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> DENKIUNAGI_CANDROID = ITEMS.register("denkiunagi_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.denkiunagi"), MobsCore.DENKIUNAGI_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.denkiunagi"), MobsCore.DENKIUNAGI_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,3).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> GORILLA_CANDROID = ITEMS.register("gorilla_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.gorilla"), MobsCore.GORILLA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.gorilla"), MobsCore.GORILLA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,3).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUJAKU_CANDROID = ITEMS.register("kujaku_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.kujaku"), MobsCore.KUJAKU_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.kujaku"), MobsCore.KUJAKU_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,3).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> PTERA_CANDROID = ITEMS.register("ptera_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.ptera"), MobsCore.PTERA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.ptera"), MobsCore.PTERA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TORIKERA_CANDROID = ITEMS.register("torikera_candroid",
-			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.torikera"), MobsCore.TORIKERA_CAN).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new CandroidItem(new Item.Properties(),Component.translatable("candroid.kamenridercraft.torikera"), MobsCore.TORIKERA_CAN)
+					.AddToList(RidevendorVendingModeEntity.CANDROID,2).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> FURIFURI_CANDROID = ITEMS.register("furifuri_candroid",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).AddToList(RidevendorVendingModeEntity.CANDROID,1).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);
