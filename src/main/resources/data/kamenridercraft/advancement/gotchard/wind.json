@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:legendriver"
+	  "id": "kamenridercraft:alchemisdriver_wind"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gotchard.legend.title"
+      "translate": "advancements.kamenridercraft.gotchard.wind.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gotchard.legend.description"
+      "translate": "advancements.kamenridercraft.gotchard.wind.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gotchard/wind",
+  "parent": "kamenridercraft:gotchard/dread",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -38,7 +38,7 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:legendriver"
+				"kamenridercraft:alchemisdriver_wind"
 			  ]
 			}
 		  }

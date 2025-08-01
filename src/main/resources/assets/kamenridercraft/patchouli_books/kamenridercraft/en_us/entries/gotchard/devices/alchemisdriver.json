@@ -1,16 +1,29 @@
 {
-	"name": "Alchemisdriver (Majade)",
+	"name": "Alchemisdriver",
 	"icon": "kamenridercraft:alchemisdriver",
 	"category": "kamenridercraft:gotchard/devices",
 	"sortnum": 3,
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "alchemisdriver",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/majade)Kamen Rider Majade$(/l)$(br2)Can store up to 10 stacks of Ride Chemy Cards"
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:gotchard/alchemisdriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemisdriver_wind",
+			"title": "Alchemisdriver",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/wind)Kamen Rider Wind$(/l)$(br2)Can store up to 10 stacks of Ride Chemy Cards"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/alchemisdriver_wind"
 		}
 	]
 }
