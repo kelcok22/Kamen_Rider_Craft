@@ -533,7 +533,11 @@ public class Gotchard_Rider_Items {
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> KUROANA_RIDE_CHEMY_CARD = ITEMS.register("kuroana_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","wind","alchemisdriver_belt_wind",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GAIARD_RIDE_CHEMY_CARD = ITEMS.register("gaiard_ride_chemy_card",
@@ -1020,6 +1024,27 @@ public class Gotchard_Rider_Items {
 					});
 				}
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+	public static final DeferredItem<Item> ALCHEMISDRIVER_WIND = ITEMS.register("alchemisdriver_wind",
+			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"wind", KUROANA_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+				@Override
+				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
+					player.openMenu(new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.translatable("gotchandraw_holder.text");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+							packetBuffer.writeBlockPos(player.blockPosition());
+							packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
+							return new GotchandrawHolderGuiMenu(id, inventory, packetBuffer,itemstack);
+						}
+					});
+				}
+			}.Has_Inventory_Gui().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()).has_basic_model());
 
 	public static final DeferredItem<Item> VALVARADRIVER = ITEMS.register("valvaradriver",
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"valvarad_rider", MACHWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
