@@ -537,7 +537,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
+					new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)).ChangeAnimation("default_cape.animation.json").AddToList(RiderTabs.GOTCHARD_TAB_ITEM)
 					.AddToList(ChemyRiserItem.ALL_CHEMY).AddToList(ChemyRiserItem.Cosmic_CHEMY).has_basic_model());
 
 	public static final DeferredItem<Item> GAIARD_RIDE_CHEMY_CARD = ITEMS.register("gaiard_ride_chemy_card",
