@@ -16,7 +16,7 @@
   },
   "parent": "kamenridercraft:gavv/blizzardsorbet",
   "criteria": {
-	"requirement": {
+	"1": {
 	  "trigger": "minecraft:inventory_changed",
 	  "conditions": {
 		"player": {
@@ -47,6 +47,44 @@
 		  }
 		}
 	  }
+	},
+	"2": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"player": {
+		  "equipment": {
+			"head": {
+			  "items": [
+				"kamenridercraft:gavv_head"
+			  ]
+			},
+			"chest": {
+			  "items": [
+				"kamenridercraft:gavv_troso"
+			  ]
+			},
+			"legs": {
+			  "items": [
+				"kamenridercraft:gavv_legs"
+			  ]
+			},
+			"feet": {
+			  "items": [
+				"kamenridercraft:henshin_belt_gavv"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:gochipod_master\"}"
+              }
+			}
+		  }
+		}
+	  }
 	}
-  }
+  },
+  "requirements": [
+	[
+	  "1",
+	  "2"
+	]
+  ]
 }
