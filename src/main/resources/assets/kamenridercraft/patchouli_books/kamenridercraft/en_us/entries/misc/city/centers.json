@@ -18,6 +18,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "tokyo_tower",
 			"title": "Tokyo Tower",
 			"text": "Mobs: None$(br2)Cityscape: Urban (high-rise)$(br2)Loot: None"
 		},
@@ -32,6 +33,69 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_5.png"
 			],
 			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toei_studios",
+			"title": "Toei Studios",
+			"text": "Mobs: None$(br2)Cityscape: Suburban (low-rise)$(br2)Loot: None"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_2.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_3.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_4.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_5.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_6.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fuuto_tower",
+			"title": "Fuuto Tower",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Mobs:$(li)$(l:w/mobs/masquerade)Masquerade$(/l)$(br2)Cityscape: Urban$(br2)Loot: None"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_2.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_3.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_4.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yggdrasil_tower",
+			"title": "Yggdrasil Tower",
+			"text": "Appears in:$(li)Kamen Rider Gaim (2013, TV show)$(br2)Mobs:$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)Kurokage Trooper$(/l)$(br2)Cityscape: Urban$(br2)Loot on next page"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_2.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_3.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_4.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_5.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_6.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Chest loot:$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l)$(br)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (37.5%)$(li)1 $(l:gaim/items/lockseeds#orange_lockseed)Orange Lockseed$(/l) (20%)$(li)1 $(l:gaim/items/lockseeds#banana_lockseed)Banana Lockseed$(/l) (20%)$(li)1 $(l:gaim/items/lockseeds#budou_lockseed)Budou Lockseed$(/l) (20%)$(li)1 $(l:gaim/items/lockseeds#lemon_lockseed)Lemon Lockseed$(/l) (0.25%)$(br)$(li)1 $(l:gaim/items/himawari_lockseed)Himawari Lockseed$(/l) (28.3%)$(li)1 $(l:gaim/items/lockseeds#proto_orange_lockseed)Proto Orange Lockseed$(/l) (15.1%)$(li)1 $(l:gaim/items/lockseeds#proto_banana_lockseed)Proto Banana Lockseed$(/l) (15.1%)$(li)1 $(l:gaim/items/lockseeds#proto_budou_lockseed)Proto Budou Lockseed$(/l) (15.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1 $(l:gaim/items/lockseeds#proto_donguri_lockseed)Proto Donguri Lockseed$(/l) (13.2%)$(li)1 $(l:gaim/items/lockseeds#proto_durian_lockseed)Proto Durian Lockseed$(/l) (13.2%)$(br2)Other loot:$(li)18 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (in a row of barrels on the third floor)$(li)3 $(l:misc/items/foods#helheim_fruit)Helheim Fruits$(/l) (on the desks in the sixth floor lab area)$(li)1 $(l:gaim/items/energy_lockseeds#proto_dragon_fruits_energy_lockseed)Proto Dragon Fruits Energy Lockseed$(/l) (on a table in Ryoma Sengoku's office)"
 		}
 	]
 }

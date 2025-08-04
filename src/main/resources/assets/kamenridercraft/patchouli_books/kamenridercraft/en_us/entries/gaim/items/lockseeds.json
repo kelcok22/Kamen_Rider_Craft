@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:orange_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)Elementary Inves$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:banana_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +117,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:budou_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)$(br2)Drops from:$(li)$(l:misc/blocks/helheim_vine)Helheim Vine$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lemon_lockseed",
 			"title": " ",
-			"text": "Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)$(br2)Drops from:$(li)$(l:gaim/mobs/duke)Kamen Rider Duke$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -457,7 +457,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_donguri_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -470,7 +470,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_orange_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -483,7 +483,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_banana_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -496,7 +496,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_budou_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -509,7 +509,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_durian_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",

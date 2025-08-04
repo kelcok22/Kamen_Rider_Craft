@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:proto_dragon_fruits_energy_lockseed",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#yggdrasil_tower)Yggdrasil Tower$(/l)"
 		},
 		{
 			"type": "patchouli:text",

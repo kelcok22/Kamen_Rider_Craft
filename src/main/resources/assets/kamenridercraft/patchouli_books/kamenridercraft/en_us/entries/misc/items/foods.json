@@ -26,7 +26,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:vienna_coffee",
 			"title": " ",
-			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l)"
+			"text": "Found in the café car of the $(l:den_o/structures/denliner_gouka)DenLiner Gouka$(/l) and in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:text",

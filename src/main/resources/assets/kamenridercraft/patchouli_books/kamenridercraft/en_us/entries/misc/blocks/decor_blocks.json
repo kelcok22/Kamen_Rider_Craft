@@ -68,7 +68,7 @@
 			"anchor": "counter_95do",
 			"link_recipe": true,
 			"item": "kamenridercraft:counter_95do",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -542,7 +542,7 @@
 			"anchor": "hazard_wallplate",
 			"link_recipe": true,
 			"item": "kamenridercraft:hazard_wallplate",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -620,7 +620,7 @@
 			"anchor": "cornerstore_sign",
 			"link_recipe": true,
 			"item": "kamenridercraft:cornerstore_sign",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -698,7 +698,7 @@
 			"anchor": "white_fence",
 			"link_recipe": true,
 			"item": "kamenridercraft:white_fence",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -745,7 +745,7 @@
 			"anchor": "wallplate_grate_slab",
 			"link_recipe": true,
 			"item": "kamenridercraft:wallplate_grate_slab",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -902,7 +902,7 @@
 			"anchor": "glass_door",
 			"link_recipe": true,
 			"item": "kamenridercraft:glass_door",
-			"text": "Found inside various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
+			"text": "Found in various $(l:misc/city/suburban_area)City bui$(/l)$(l:misc/city/urban_area)ldings$(/l)"
 		}
 	]
 }
