@@ -62,6 +62,8 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_OrochiShovel= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_AngeCopter= new ArrayList<Item>();
 
+	public static List<Item> NEED_ITEM_TypeThree= new ArrayList<Item>();
+
 	public static List<Item> NEED_ITEM_SteamHopper_daybreak= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_ExceedMighty= new ArrayList<Item>();
@@ -637,19 +639,35 @@ public class Gotchard_Rider_Items {
 	//		() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 
+	public static final DeferredItem<Item> DREAD_TYPE_THREE_CARDS = ITEMS.register("dread_type_three_cards",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_type_three","dread","dreadriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
+					.ChangeModel("dread_type_one.geo.json").AddNeedItemList(NEED_ITEM_TypeThree));
+
 	public static final DeferredItem<Item> STEAMLINER_REPLI_CHEMY_CARD = ITEMS.register("steamliner_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dread","dreadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
-					.AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					.AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNICON_REPLI_CHEMY_CARD = ITEMS.register("unicon_repli_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_type_one","dread","dreadriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					.AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> DAIOHNI_REPLI_CHEMY_CARD = ITEMS.register("daiohni_repli_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_type_two","dread","dreadriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
+					.AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -915,7 +933,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.BOOST,40,4,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE,40,0,true,false),
 					new MobEffectInstance(Effect_core.FIRE_PUNCH,40,2,true,false))
-					.ChangeModel("default_cape.geo.json").model_has_different_name("gotchar_igniter").has_basic_model());
+					.ChangeModel("default_cape.geo.json","default_cape.animation.json").model_has_different_name("gotchar_igniter").has_basic_model());
 
 	public static final DeferredItem<Item> GOTCHAR_IGNITER_EM = ITEMS.register("gotchar_igniter_em",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_exceed_mighty_fire","gotchard","gotchardriver_belt_fire",
