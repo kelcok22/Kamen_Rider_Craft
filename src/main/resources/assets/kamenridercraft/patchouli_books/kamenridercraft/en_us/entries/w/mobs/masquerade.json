@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Spawn locations: Plains, Sunflower Plains, Birch Forest, Dark Forest$(br2)Drops$(li)2-4 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)$(li)1 $(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) (45%)$(li)1 $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l) (45%)$(li)1 $(l:w/items/dopant_memories#masquerade_memory)Masquerade Memory$(/l) (10%)$(br2)Bosses$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l) (2.5%)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l) (2.5%)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l) (2.5%)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l) (2.5%)"
+			"text": "Spawn locations: Plains, Sunflower Plains, Birch Forest, Dark Forest, around $(l:misc/city/centers#fuuto_tower)Fuuto Tower$(/l)$(br2)Drops$(li)2-4 $(l:w/items/gaiamemory)Gaia Memory Shards$(/l)$(li)1 $(l:w/items/gaia_memories#cyclone_memory)Cyclone Memory$(/l) (45%)$(li)1 $(l:w/items/gaia_memories#joker_memory)Joker Memory$(/l) (45%)$(li)1 $(l:w/items/dopant_memories#masquerade_memory)Masquerade Memory$(/l) (10%)$(br2)Bosses$(li)$(l:w/mobs/nazca_dopant)Nazca Dopant$(/l) (2.5%)$(li)$(l:w/mobs/claydoll_dopant)Claydoll Dopant$(/l) (2.5%)$(li)$(l:w/mobs/smilodon_dopant)Smilodon Dopant$(/l) (2.5%)$(li)$(l:w/mobs/weather_dopant)Weather Dopant$(/l) (2.5%)"
 		}
 	]
 }
