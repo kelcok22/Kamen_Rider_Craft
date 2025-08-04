@@ -725,6 +725,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.RIDEVENDOR_VENDING_MODE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDEVENDOR.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.TORIDEVENDOR.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.MACEHINE_MASSIGLER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.SAKURA_HURRICANE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.ROSE_ATTACKER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKE_GAMER.get(), BikeRenderer::new);
