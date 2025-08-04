@@ -1261,6 +1261,13 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(TORIDEVENDOR,  0xffffff, 0x222222, new Item.Properties()));
 
 
+    public static final DeferredHolder<EntityType<?>, EntityType<MachineMassiglerEntity>> MACEHINE_MASSIGLER = MOBLIST.register("machine_massigler",
+            () -> EntityType.Builder.of(MachineMassiglerEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":sakura_hurricane"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_MASSIGLER_SPAWN_EGG = ITEMS.register("machine_massigler_spawn_egg",
+            () -> new DeferredSpawnEggItem(MACEHINE_MASSIGLER, 0xffffff, 0xffe300, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<SakuraHurricaneEntity>> SAKURA_HURRICANE = MOBLIST.register("sakura_hurricane",
             () -> EntityType.Builder.of(SakuraHurricaneEntity::new, MobCategory.MISC).clientTrackingRange(10).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":sakura_hurricane"));
 
