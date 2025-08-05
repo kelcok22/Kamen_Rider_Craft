@@ -603,6 +603,17 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
 					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false)).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
+	public static final DeferredItem<Item> CROSSHOPPER_RIDE_CHEMY_CARD = ITEMS.register("crosshopper_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_platina","gotchard","gotchardriver_belt_p",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
+					.addNeedForm(TENLINER_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
 	public static final DeferredItem<Item> X_ASSEMBLE_RIDE_CHEMY_CARD = ITEMS.register("x_assemble_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_star","gotchard","gotchardriver_belt_star",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -668,6 +679,12 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).addShiftForm(DREAD_TYPE_THREE_CARDS.get())
 					.AddToList(NEED_ITEM_TypeThree).AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> MADWHEEL_REPLI_CHEMY_CARD = ITEMS.register("madwheel_repli_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valvarad_lachesis","valvaradraw_buckle_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
+					.AddToList(ChemyRiserItem.Repli_CHEMY).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
@@ -1079,6 +1096,9 @@ public class Gotchard_Rider_Items {
 			() -> new ValvaradItem(ArmorMaterials.DIAMOND,"valvarad", MADWHEEL_RIDE_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
 					.AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
+	public static final DeferredItem<Item> VALVARADRAW_BUCKLE_LACHESIS = ITEMS.register("valvaradraw_buckle_lachesis",
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valvarad_lachesis", MADWHEEL_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties())
+					.AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item> GOTCHANCOLLECTION_PANEL = ITEMS.register("gotchancollection_panel",
 			() -> new GotchancollectionPanelItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
