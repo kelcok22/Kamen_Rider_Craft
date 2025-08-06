@@ -3,10 +3,11 @@
 	"kamenridercraft:gotchardriver",
 	"kamenridercraft:alchemisdriver",
 	"kamenridercraft:alchemisdriver_wind",
-	"kamenridercraft:valvaradraw_buckle",
 	"kamenridercraft:valvaradriver",
 	"kamenridercraft:gotchardriver_daybreak",
 	"kamenridercraft:dreadriver",
-	"kamenridercraft:legendriver"
+	"kamenridercraft:legendriver",
+	"kamenridercraft:valvaradraw_buckle",
+	"kamenridercraft:valvaradraw_buckle_lachesis"
   ]
 }
