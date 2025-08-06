@@ -6,6 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+			"anchor": "valvaradraw_buckle",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/valvarad)Valvarad$(/l)$(br2)Can store up to 10 stacks of Ride Chemy Cards"
 		},
 		{
@@ -14,6 +15,19 @@
 			"item": "kamenridercraft:valvaradraw_buckle",
 			"title": " ",
 			"text": "Obtained by firing the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) without any foot armor"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "valvaradraw_buckle_lachesis",
+			"title": "Valvaradraw Buckle",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/valvarad_lachesis)Valvarad (Lachesis)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:valvaradraw_buckle_lachesis",
+			"title": " ",
+			"text": "Obtained by firing the $(l:gotchard/arsenal/valvarusher)Valvarusher$(/l) without any foot armor and with the $(l:gotchard/items/replichemy_cards#madwheel_repli_chemy_card)Madwheel Replichemy Card$(/l) in your off-hand"
 		}
 	]
 }
