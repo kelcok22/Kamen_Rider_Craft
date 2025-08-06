@@ -730,6 +730,7 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.ROSE_ATTACKER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BIKE_GAMER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.MACEHINE_BUILDER.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.RIDESTRIKER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RISEHOPPER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.DIAGOSPEEDY.get(), BikeRenderer::new);
 
