@@ -1293,6 +1293,13 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> MACEHINE_BUILDER_SPAWN_EGG = ITEMS.register("machine_builder_spawn_egg",
             () -> new DeferredSpawnEggItem(MACEHINE_BUILDER, 0xffffff, 0xffe300, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<RidestrikerEntity>> RIDESTRIKER= MOBLIST.register("ridestriker",
+            () -> EntityType.Builder.of(RidestrikerEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":risehopper"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> RIDESTRIKER_SPAWN_EGG = ITEMS.register("ridestriker_spawn_egg",
+            () -> new DeferredSpawnEggItem(RIDESTRIKER, 0xffffff, 0x151515, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<RisehopperEntity>> RISEHOPPER = MOBLIST.register("risehopper",
             () -> EntityType.Builder.of(RisehopperEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.2F).build( KamenRiderCraftCore.MOD_ID + ":risehopper"));
 
