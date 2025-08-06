@@ -413,6 +413,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "crosshopper_ride_chemy_card",
+			"title": "Crosshopper Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crosshopper_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "yamibat_ride_chemy_card",
 			"title": "Yamibat Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"

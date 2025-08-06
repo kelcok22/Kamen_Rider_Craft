@@ -314,6 +314,20 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"anchor": "platina_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crosshopper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Platina Gotchard",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#crosshopper_ride_chemy_card)Crosshopper Ride Chemy Card$(/l) as $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Gotchard",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver)Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength IV (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VI$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
 			"anchor": "marsphoenix",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:firemars_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
