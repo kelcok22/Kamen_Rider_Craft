@@ -688,10 +688,17 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legend_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","legend","legendriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false))
 					.AddToList(ChemyRiserItem.Legend_CHEMY,10).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> LEGENDARY_LEGEND_RIDE_CHEMY_CARD = ITEMS.register("legendary_legend_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_legendary","legend","legendriver_belt_l",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
@@ -1115,7 +1122,13 @@ public class Gotchard_Rider_Items {
 
 	public static final DeferredItem<Item> VALVARUSHER = ITEMS.register("valvarusher",
 			() -> new ValvarusherItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
-	
+
+	public static final DeferredItem<Item> LEGEND_RIDE_MAGNUM = ITEMS.register("legend_ride_magnum",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
+	public static final DeferredItem<Item> LEGEND_KAMEN_RISER = ITEMS.register("legend_kamen_riser",
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+
 	public static final DeferredItem<Item> CHEMY_RISER = ITEMS.register("chemy_riser",
 			() -> new ChemyRiserItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 	

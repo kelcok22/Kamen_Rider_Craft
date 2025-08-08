@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-05T21:18:26.2853217	Item Models: kamenridercraft
+// 1.21.1	2025-08-08T21:51:50.3668399	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
 75ef97f1060512905e49fdd6b9bb40c48c9c57d4 assets/kamenridercraft/models/item/alchemisdriver_wind.json
@@ -233,6 +233,7 @@ ee2f4e767a79523b232fb53e835a260fdedec0a3 assets/kamenridercraft/models/item/kuug
 43417046b68fa6383de2c1c8304e6f693c36e488 assets/kamenridercraft/models/item/kuuga_rising_ultimate_black_eyes.json
 f2c2052123ce8fb740ec64ddf5ed9bbb7eecffa5 assets/kamenridercraft/models/item/kuuga_touma.json
 2867b28734599b9b5de2de14ce546f7182f5ce91 assets/kamenridercraft/models/item/kuuga_ultimate_black_eyes.json
+0ce82588b30e004f0b047d32c04683ac844284e5 assets/kamenridercraft/models/item/legendary_legend_ride_chemy_card.json
 3fcf0340b09025e6cd3d3fb496e5668e1e9274c7 assets/kamenridercraft/models/item/light_blue_wallplate_wall.json
 0394f6bbfd94c70a04bd1cd1bf29b55070291d23 assets/kamenridercraft/models/item/lovekov_belt.json
 28f699ea644de835bdc85cd37acd76cf60beeeaf assets/kamenridercraft/models/item/macentaurus_ride_chemy_card.json
