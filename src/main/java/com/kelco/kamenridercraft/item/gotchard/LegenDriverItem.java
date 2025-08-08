@@ -51,6 +51,7 @@ public class LegenDriverItem extends RiderDriverItem {
 		}
 		else if (equipmentSlot == EquipmentSlot.CHEST) {
 			if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGEND_RIDE_CHEMY_CARD.get()) return get_Form_Item(itemstack,1).getRiderName(riderName);
+			else if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.LEGENDARY_LEGEND_RIDE_CHEMY_CARD.get()) return get_Form_Item(itemstack,1).getRiderName(riderName);
 			else return "legend_ride";
 		}
 
