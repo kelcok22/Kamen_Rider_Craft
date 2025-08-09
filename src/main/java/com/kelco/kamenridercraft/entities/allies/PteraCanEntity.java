@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
@@ -127,6 +128,11 @@ public class PteraCanEntity extends BaseAllyEntity implements GeoEntity , Flying
 		return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
 	}
 }
+    @Override
+    public void die(DamageSource p_21809_) {
+        this.setOwnerUUID(null);
+        super.die(p_21809_);
+    }
 	@Override
 	protected void checkFallDamage(double y, boolean onGround, BlockState state, BlockPos pos) {
 	}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:toridevendor_spawn_egg"
+		}
+	  ]
+	},
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:tora_candroid"
+        }
+      ]
+    }
+  ]
+}

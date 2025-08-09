@@ -96,6 +96,25 @@
 		{
 			"type": "patchouli:text",
 			"text": "$(li)1 $(l:gaim/items/lockseeds#proto_donguri_lockseed)Proto Donguri Lockseed$(/l) (13.2%)$(li)1 $(l:gaim/items/lockseeds#proto_durian_lockseed)Proto Durian Lockseed$(/l) (13.2%)$(br2)Other loot:$(li)18 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (in a row of barrels on the third floor)$(li)3 $(l:misc/items/foods#helheim_fruit)Helheim Fruits$(/l) (on the desks in the sixth floor lab area)$(li)1 $(l:gaim/items/energy_lockseeds#proto_dragon_fruits_energy_lockseed)Proto Dragon Fruits Energy Lockseed$(/l) (on a table in Ryoma Sengoku's office)"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "kuruma_center",
+        "title": "Kuruma Center",
+        "text": "Appears in:$(li)Kamen Rider Drive (2014, TV show)$(br2)Mobs:$(li)$(l:drive/mobs/roidmude)Roidmude$(/l)$(br2)Cityscape: Suburban$(br2)Loot: None?"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_3.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_4.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_5.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_6.png"
+        ],
+        "title": " "
+      }
 	]
 }
