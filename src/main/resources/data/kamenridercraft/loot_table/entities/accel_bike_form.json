@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:accel_bike_form_spawn_egg"
+		}
+	  ]
+	}
+  ]
+}

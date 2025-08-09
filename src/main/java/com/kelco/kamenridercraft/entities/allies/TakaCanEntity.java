@@ -134,6 +134,11 @@ public class TakaCanEntity extends BaseAllyEntity implements GeoEntity , FlyingA
 		return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
 	}
 }
+    @Override
+    public void die(DamageSource p_21809_) {
+        this.setOwnerUUID(null);
+        super.die(p_21809_);
+    }
 	@Override
 	protected void checkFallDamage(double y, boolean onGround, BlockState state, BlockPos pos) {
 	}

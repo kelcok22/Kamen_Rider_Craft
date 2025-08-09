@@ -50,10 +50,11 @@ public class CandroidItem extends BaseItem {
 				BlockPos pos = context.getClickedPos();
 				BaseAllyEntity boss = BOSS.get().create(level);
 				if (boss != null) {
-					boss.tame(player);
+                    boss.setTame(true, false);
+                    boss.setOwnerUUID(player.getUUID());
 					boss.moveTo(pos.getX(), pos.getY()+1, pos.getZ(), 0, 0.0F);
 					level.addFreshEntity(boss);
-					if (!TEXT.isEmpty()) for (Component text : TEXT) player.sendSystemMessage(text);
+					if (!TEXT.isEmpty()) for (Component text : TEXT) player.displayClientMessage(text, true);
 					itemstack.consume(1,player);
 				}
 			}
