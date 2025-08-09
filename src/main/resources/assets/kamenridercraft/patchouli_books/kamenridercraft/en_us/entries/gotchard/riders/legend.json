@@ -381,6 +381,20 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
 			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legendary",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Legendary Legend",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#legendary_legend_ride_chemy_card)Legendary Legend Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Kamen Rider Legend",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Strength II"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"name": "Gotchancollection Panel",
 	"icon": "kamenridercraft:gotchancollection_panel",
 	"category": "kamenridercraft:gotchard/arsenal",
-	"sortnum": 6,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:text",

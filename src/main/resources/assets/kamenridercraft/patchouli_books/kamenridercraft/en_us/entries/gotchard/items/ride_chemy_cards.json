@@ -1433,6 +1433,19 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "legendary_legend_ride_chemy_card",
+			"title": "Legendary Legend Ride Chemy Card",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Legend's $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l) form"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:legendary_legend_ride_chemy_card",
+			"title": " ",
+			"text": "Item is currently unobtainable"
+		},
+		{
+			"type": "patchouli:text",
 			"anchor": "santaclaus_ride_chemy_card",
 			"title": "Santaclaus Ride Chemy Card",
 			"text": "Appears in:$(li)Kamen Rider Gotchard Charadeco Cake (2023, pastry line)"
