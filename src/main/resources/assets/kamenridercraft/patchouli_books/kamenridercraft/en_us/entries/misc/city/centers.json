@@ -107,14 +107,58 @@
         "type": "patchouli:image",
         "border": true,
         "images": [
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower.png",
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_2.png",
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_3.png",
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_4.png",
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_5.png",
-          "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_6.png"
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_3.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_4.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_5.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_6.png"
         ],
         "title": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "seito_u_hospital",
+        "title": "Seito University Hospital",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Mobs:$(li)$(l:ex_aid/mobs/bugstervirus_mob)Bugster$(/l)$(br2)Cityscape: Suburban$(br2)Loot: 1 $(l:misc/items/music_discs#excite_music_disc)EXCITE Music Disc$(/l) (in a barrel at the CR meeting room)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_3.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_4.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_5.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_6.png"
+        ],
+        "title": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "pandora_tower",
+        "title": "Pandora Tower",
+        "text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Mobs:$(li)$(l:build/mobs/touto_guardian)Touto Guardian$(/l)$(li)$(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l)$(li)$(l:build/mobs/seito_guardian)Seito Guardian$(/l)$(br2)Cityscape: Urban$(br2)Includes $(l:build/mobs/touto_guardian)Touto Guardian$(/l), $(l:build/mobs/hokuto_guardian)Hokuto Guardian$(/l), $(l:build/mobs/seito_guardian)Seito Guardian$(/l), and $(l:build/mobs/hard_guardian)Hard Guardian$(/l) trial spawners"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city_3.png"
+        ],
+        "title": " ",
+        "text": "Loot on next page"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "Trial loot:$(li)67% chance to drop standard loot$(li)33% chance to drop Lost Fullbottles$(br2)Standard loot drops:$(li)1 $(l:build/items/fullbottles#buttobasoul_full_bottle)Buttobasoul Fullbottle$(/l) (7.7%)$(li)1 $(l:build/items/fullbottles#ganbarizing_full_bottle)Ganbarizing Fullbottle$(/l) (7.7%)$(li)2-4 $(l:build/items/smash_bottle)Smash Bottles$(/l) (23.1%)$(li)1 $(l:build/items/evolbottles#great_dragon_evol_bottle)Great Dragon Evol Bottle$(/l) (15.4%)$(li)1 $(l:build/items/evolbottles#dragon_evol_bottle)Dragon Evol Bottle$(/l) (15.4%)$(li)1 $(l:build/items/evolbottles#rabbit_evol_bottle)Rabbit Evol Bottle$(/l) (15.4%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)1 $(l:build/arsenal/nanba_walking_stick)Nanba's Walking Stick$(/l) (15.4%)$(br2)Lost Fullbottle drops:$(li)1 $(l:build/items/fullbottles#black_lost_cd_full_bottle)Lost CD Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_cobra_full_bottle)Lost Cobra Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_shimauma_full_bottle)Lost Shimauma Fullbottle$(/l) (25%)$(li)1 $(l:build/items/fullbottles#black_lost_hasami_full_bottle)Lost Hasami Fullbottle$(/l) (25%)"
       }
 	]
 }
