@@ -227,7 +227,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:w_b_x_w_boiled_xtreme_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside the $(l:misc/city/urban_area#narumi_detective_office)Narumi Detective Office$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -238,7 +238,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:anything_goes_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside the $(l:misc/city/suburban_area#cous_coussier)Cous Coussier$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -304,7 +304,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:excite_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside $(l:misc/city/centers#seito_u_hospital)Seito University Hospital$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -348,7 +348,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:almighty_music_disc",
-			"text": "Disc is currently unobtainable"
+			"text": "Found inside the $(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)Fantastic Bookstore Kamiyama$(/l)"
 		},
 		{
 			"type": "patchouli:text",
