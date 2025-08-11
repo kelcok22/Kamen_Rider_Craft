@@ -25,10 +25,7 @@ import com.kelco.kamenridercraft.loot.LootModifierCore;
 import com.kelco.kamenridercraft.network.ClientPayloadHandler;
 import com.kelco.kamenridercraft.network.ServerPayloadHandler;
 import com.kelco.kamenridercraft.network.payload.*;
-import com.kelco.kamenridercraft.particle.HitParticles;
-import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.particle.WizardParticles;
-import com.kelco.kamenridercraft.particle.realizingParticles;
+import com.kelco.kamenridercraft.particle.*;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.wordgen.ModConfiguredFeatures;
 
@@ -751,6 +748,16 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
 
         @SubscribeEvent
         public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticles.WHITE_SPARK_PARTICLES.get(), WhiteSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.RED_SPARK_PARTICLES.get(), RedSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.BLUE_SPARK_PARTICLES.get(), BlueSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GREEN_SPARK_PARTICLES.get(), GreenSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PURPLE_SPARK_PARTICLES.get(), PurpleSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.PINK_SPARK_PARTICLES.get(), PinkSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.YELLOW_SPARK_PARTICLES.get(), YellowSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.GOLD_SPARK_PARTICLES.get(), GoldSparkParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.BLACK_SPARK_PARTICLES.get(), BlackSparkParticles.Provider::new);
+
             event.registerSpriteSet(ModParticles.HIT_PARTICLES.get(), HitParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), realizingParticles.Provider::new);
             event.registerSpriteSet(ModParticles.WIZARD_PARTICLES.get(), WizardParticles.Provider::new);

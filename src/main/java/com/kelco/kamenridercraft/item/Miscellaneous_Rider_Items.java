@@ -11,16 +11,16 @@ import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -163,8 +163,14 @@ public class Miscellaneous_Rider_Items {
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 	            		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 	            		new MobEffectInstance(Effect_core.PUNCH, 40, 4,true,false),
-						new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
-						.IsBeltGlowing().IsGlowing().addNeedForm(Kuuga_Rider_Items.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
+						new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false)){
+					public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+						super.OnTransformation(itemstack, player);
+						((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 1);
+					}
+				}.IsBeltGlowing().IsGlowing().addNeedForm(Kuuga_Rider_Items.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(TACKLE_CORE_ARTIST.get())
 						.AddToList(RiderTabs.Misc_TAB_ITEM));
 		
 		//Ride Kamens

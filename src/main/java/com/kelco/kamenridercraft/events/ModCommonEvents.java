@@ -101,6 +101,7 @@ public class ModCommonEvents {
 			if (event.getEntity()instanceof LivingEntity entity){
 				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
 					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
+					belt.giveEffects(entity);
 				}
 			}
 		}
