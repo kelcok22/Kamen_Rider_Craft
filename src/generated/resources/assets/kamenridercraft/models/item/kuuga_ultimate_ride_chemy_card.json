@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/kuuga_ultimate_ride_chemy_card"
+  }
+}

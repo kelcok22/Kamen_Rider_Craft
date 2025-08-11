@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kamenridercraft:item/w_cyclone_joker_xtreme_ride_chemy_card"
+  }
+}
