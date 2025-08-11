@@ -604,7 +604,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Legend",
-        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength III"
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Fire Resistance$(li)Strength III"
       },
       {
         "type": "patchouli:entity",
@@ -660,7 +660,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Legend",
-        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Jump Boost V$(li)Fire Resistance$(li)Flying"
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Strength IV$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Jump Boost V$(li)Fire Resistance$(li)Flying"
       },
       {
         "type": "patchouli:entity",
@@ -744,7 +744,7 @@
       {
         "type": "patchouli:text",
         "title": "Kamen Rider Legend",
-        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:EX (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance V$(li)Night Vision$(li)Haste VI$(li)Fire Fist VII$(li)Jump Boost VIII$(li)Boost VII$(li)Fire Resistance III$(li)Strength VII"
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:EX (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed V$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Fire Fist V$(li)Jump Boost VI$(li)Boost V$(li)Fire Resistance$(li)Strength V"
       }
 	]
 }
