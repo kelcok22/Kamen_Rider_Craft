@@ -41,7 +41,7 @@
                 "kamenridercraft:legendriver"
               ],
               "predicates": {
-                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\"}"
+                "minecraft:custom_data": "{slot_tex2:\"kamenridercraft:legendary_legend\"}"
               }
             }
           }
