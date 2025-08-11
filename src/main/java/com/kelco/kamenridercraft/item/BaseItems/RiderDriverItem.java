@@ -94,6 +94,15 @@ public class RiderDriverItem extends RiderArmorItem {
         &&player.getItemBySlot(EquipmentSlot.FEET).getItem()==this;
     }
 
+    public static boolean isTransforming(LivingEntity player) {
+        if (!(player.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem))return false;
+        else if (player.getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = player.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).getUnsafe();
+                return tag.getDouble("is_transforming")!=0;
+        }
+        return false;
+    }
+
     public static double getRenderType(ItemStack stack) {
         double form_double = 1;
         RiderFormChangeItem form = get_Form_Item(stack, 1);
@@ -110,10 +119,26 @@ public class RiderDriverItem extends RiderArmorItem {
 
             if (isTransformed(player)) tag.putDouble("render_type", getRenderType(stack));
             if (!isTransformed(player)) tag.putDouble("render_type", 0);
+            if (tag.getDouble("is_transforming")!=0) tag.putDouble("is_transforming", tag.getDouble("is_transforming")-1);
+            if (tag.getDouble("is_transforming")<0) tag.putDouble("is_transforming", 0);
 
             //if (!level.isClientSide)player.sendSystemMessage(Component.literal("SlotID=" + slotId));
+
         }else{
             set_Upadete_Form(stack);
+        }
+    }
+
+
+    public void giveEffects(LivingEntity player) {
+            if (isTransformed(player)) {
+                for (int n = 0; n < Num_Base_Form_Item; n++) {
+                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                    List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
+                    for (MobEffectInstance effect : potionEffectList) {
+                        player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
+                    }
+                }
         }
     }
 
@@ -121,17 +146,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof LivingEntity player) {
             beltTick(stack,level,player,slotId);
-
-            if (isTransformed(player)) {
-                for (int n = 0; n < Num_Base_Form_Item; n++) {
-                    RiderFormChangeItem form = get_Form_Item(player.getItemBySlot(EquipmentSlot.FEET), n + 1);
-
-                    List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
-                    for (MobEffectInstance effect : potionEffectList) {
-                        player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
-                    }
-                }
-            }
+          giveEffects(player);
         }
     }
 
@@ -140,6 +155,7 @@ public class RiderDriverItem extends RiderArmorItem {
             OnTransformation(itemstack,player);
             Consumer<CompoundTag> data = form -> {
                 form.putBoolean("Update_form", false);
+                form.putDouble("is_transforming",120);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemstack, data);
         }

@@ -27,6 +27,9 @@
 		},
 		"swing_r": {
 			"loop": true
+		},
+		"henshin_pose": {
+			"loop": "hold_on_last_frame"
 		}
 	},
 	"geckolib_format_version": 2

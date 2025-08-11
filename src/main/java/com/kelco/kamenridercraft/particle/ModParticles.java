@@ -13,6 +13,34 @@ public class ModParticles {
     public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES =
             DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, KamenRiderCraftCore.MOD_ID);
 
+
+    public static final Supplier<SimpleParticleType> WHITE_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("white_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> RED_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("red_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BLUE_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("blue_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GREEN_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("green_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PURPLE_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("purple_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> YELLOW_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("yellow_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> PINK_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("pink_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GOLD_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("gold_spark_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> BLACK_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("black_spark_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> HIT_PARTICLES =
             PARTICLE_TYPES.register("hit_particles", () -> new SimpleParticleType(true));
 

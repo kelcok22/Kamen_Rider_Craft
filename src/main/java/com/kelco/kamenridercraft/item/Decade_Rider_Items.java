@@ -10,15 +10,15 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.decade.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -809,8 +809,14 @@ public class Decade_Rider_Items {
 	*/
 	public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ball","kuuga","blank",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
-					.IsGlowing().ChangeModel("kuuga_ball.geo.json","kuuga_ball.animation.json").SetPalyerModelInvisible().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
+					new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+							player.getX(), player.getY(),
+							player.getZ(), 200, 0, 0, 0, 1);
+				}
+			}.IsGlowing().ChangeModel("kuuga_ball.geo.json","kuuga_ball.animation.json").SetPalyerModelInvisible().has_basic_model().AddToList(RiderTabs.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.DECADE_TAB_ITEM).ChangeRepairItem(BLANK_CARD.get()));
