@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "legend",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legend_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": " ",
@@ -21,7 +21,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kuuga",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kuuga",
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "agito",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Agito",
@@ -49,7 +49,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "ryuki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ryuki",
@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "faiz",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Faiz",
@@ -77,7 +77,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "blade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Blade",
@@ -91,7 +91,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "hibiki",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Hibiki",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kabuto",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kabuto",
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "den-o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Den-O",
@@ -133,7 +133,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "kiva",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Kiva",
@@ -147,7 +147,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "decade",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Decade",
@@ -161,7 +161,7 @@
 		{
 			"type": "patchouli:entity",
 			"anchor": "double",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Double",
@@ -170,12 +170,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "ooo",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous OOO",
@@ -184,12 +184,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:01 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "fourze",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Fourze",
@@ -198,12 +198,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "wizard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Wizard",
@@ -212,12 +212,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:01 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "gaim",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Gaim",
@@ -226,12 +226,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:01 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste$(li)Saturation"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "drive",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Drive",
@@ -240,12 +240,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost II"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "ghost",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ghost",
@@ -254,12 +254,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Ghost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Ghost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "ex-aid",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Ex-Aid",
@@ -268,12 +268,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Haste"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "build",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Build",
@@ -282,12 +282,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:01 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "zi-o",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Zi-O",
@@ -296,12 +296,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:02 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "zero-one",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_one_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_one_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Zero-One",
@@ -310,12 +310,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Jump Boost IV"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "saber",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Saber",
@@ -324,12 +324,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Strength (with sword)$(li)Haste$(li)Fire Resistance"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "revi",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Revi",
@@ -338,12 +338,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "vice",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Vice",
@@ -352,12 +352,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "geats",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Geats",
@@ -366,12 +366,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Flame Shot$(li)Boost$(li)Strength"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Flame Shot$(li)Boost$(li)Strength"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "gotchard",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchard_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchard_ride_chemy_card\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Gorgeous Gotchard",
@@ -380,12 +380,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
-			"text": "Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
+			"text": "Appears in:$(li)Ride Chemy Trading Card Phase:00 (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
 		},
 		{
 			"type": "patchouli:entity",
 			"anchor": "legendary",
-			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:legendary_legend_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
 			"name": "Legendary Legend",
@@ -395,6 +395,356 @@
 			"type": "patchouli:text",
 			"title": "Kamen Rider Legend",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost II$(li)Strength II"
-		}
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "kuuga_ultimate",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Kuuga Ultimate Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kuuga_ultimate_ride_chemy_card)Kuuga Ultimate Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch VI$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)$(li)Flame Body VI$(li)Rider Kick!"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "agito_shining",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_shining_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Agito Shining Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#agito_shining_ride_chemy_card)Agito Shining Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ryuki_survive",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_survive_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Ryuki Survive",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ryuki_survive_ride_chemy_card)Ryuki Survive Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Haste II$(li)Fire Resistance$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "faiz_blaster",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Faiz Blaster Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#faiz_blaster_ride_chemy_card)Faiz Blaster Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Flying II$(li)Speed IV$(li)Resistance III$(li)Night Vision$(li)Haste IV$(li)Jump Boost IV$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "blade_king",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_king_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Blade King Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#blade_king_ride_chemy_card)Blade King Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Slowness$(li)Resistance IV$(li)Jump Boost III$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "armed_hibiki",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:armed_hibiki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Armed Hibiki",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#armed_hibiki_ride_chemy_card)Armed Hibiki Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Resistance III$(li)Regeneration$(li)Haste IV$(li)Strength III"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "kabuto_hyper",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_hyper_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Kabuto Hyper Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kabuto_hyper_ride_chemy_card)Kabuto Hyper Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed VIII$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost V$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "den_o_liner",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Den-O Liner Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#den_o_liner_ride_chemy_card)Den-O Liner Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Weakness$(li)Resistance II$(li)Haste III$(li)Jump Boost II$(li)Strength IV"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "kiva_emperor",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_emperor_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Kiva Emperor Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kiva_emperor_ride_chemy_card)Kiva Emperor Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Regeneration II$(li)Haste II$(li)Jump Boost II$(li)Strength III"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "decade_complete",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_complete_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Decade Complete Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#decade_complete_ride_chemy_card)Decade Complete Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance III$(li)Night Vision$(li)Haste III$(li)Jump Boost III$(li)Fire Resistance$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "double_cyclonejokerxtreme",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_cyclone_joker_xtreme_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Double CycloneJokerXtreme",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#w_cyclone_joker_xtreme_ride_chemy_card)Double CycloneJokerXtreme Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch IV$(li)Speed III$(li)Resistance IV$(li)Night Vision$(li)Regeneration II$(li)Haste II$(li)Strength VII (with empty hand)$(li)Strength IV (with weapon)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ooo_putotyra",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_putotyra_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous OOO Putotyra Combo",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ooo_putotyra_ride_chemy_card)OOO Putotyra Combo Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Jump Boost III$(li)Resistance IV$(li)Strength III$(li)Flying"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "fourze_cosmic",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_cosmic_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Fourze Cosmicstates",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#fourze_cosmic_ride_chemy_card)Fourze Cosmicstates Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Resistance III$(li)Fire Resistance II$(li)Strength III"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "wizard_infinity",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_infinity_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Wizard Infinity Style",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#wizard_infinity_ride_chemy_card)Wizard Infinity Style Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Fire Resistance$(li)Resistance IV$(li)Punch VI$(li)Strength IX (with empty hand)$(li)Strength V (with weapon)"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "gaim_kiwami",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_kiwami_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Gaim Kiwami Arms",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#gaim_kiwami_ride_chemy_card)Gaim Kiwami Arms Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration III$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength III"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "drive_tridoron",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_tridoron_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Drive type Tridoron",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#drive_tridoron_ride_chemy_card)Drive Type Tridoron Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Resistance IV$(li)Night Vision$(li)Jump Boost IV$(li)Strength V"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ghost_mugen",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_mugen_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Ghost Mugen Damashii",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ghost_mugen_ride_chemy_card)Ghost Mugen Damashii Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Ghost$(li)Strength VI"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ex_aid_muteki",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_muteki_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Ex-Aid Muteki Gamer",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ex_aid_muteki_ride_chemy_card)Ex-Aid Muteki Gamer Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance VII$(li)Night Vision$(li)Haste V$(li)Saturation III$(li)Jump Boost IV$(li)Fire Resistance$(li)Strength V$(li)Save"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "build_genius",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_genius_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Build Genius Form",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#build_genius_ride_chemy_card)Build Genius Form Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Jump Boost V$(li)Fire Resistance$(li)Flying"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "grandzi_o",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:grand_zi_o_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous GrandZi-O",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#grand_zi_o_ride_chemy_card)GrandZi-O Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Resistance IV$(li)Water Breathing$(li)Night Vision$(li)Regeneration II$(li)Haste IV$(li)Saturation$(li)Fire Resistance$(li)Strength IV"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "zero_two",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zero_two_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Zero-Two",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#zero_two_ride_chemy_card)Zero-Two Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch IX$(li)Strength XII (with empty hand)$(li)Strength V (with weapon)$(li)Speed V$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "xross_saber",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xross_saber_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Xross Saber",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#xross_saber_ride_chemy_card)Xross Saber Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:04 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Slash$(li)Speed V$(li)Resistance IV$(li)Water Breathing$(li)Haste IV$(li)Jump Boost V$(li)Fire Resistance$(li)Strength VI"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ultimate_revi",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_revi_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Ultimate Revi",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ultimate_revi_ride_chemy_card)Ultimate Revi Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch IX$(li)Strength XII (with empty hand)$(li)Strength V (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "ultimate_vice",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ultimate_vice_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous Ultimate Vice",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ultimate_vice_ride_chemy_card)Ultimate Vice Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:03 (2024, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Punch IX$(li)Strength XII (with empty hand)$(li)Strength V (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Haste IV$(li)Jump Boost VII$(li)Fire Resistance"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "geatsix",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:legendriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_ix_ride_chemy_card\",slot_tex2:\"kamenridercraft:legendary_legend\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Gorgeous GeatsIX",
+        "text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#geats_ix_ride_chemy_card)GeatsIX Ride Chemy Card$(/l) after assuming $(l:gotchard/riders/legend#legendary)Legendary Legend$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Legend",
+        "text": "Appears in:$(li)Ride Chemy Trading Card Phase:EX (2023, toyline)$(br2)Transforms with the $(l:gotchard/devices/legendriver)Legendriver$(/l)$(br2)Status Effects:$(li)Speed VII$(li)Resistance V$(li)Night Vision$(li)Haste VI$(li)Fire Fist VII$(li)Jump Boost VIII$(li)Boost VII$(li)Fire Resistance III$(li)Strength VII"
+      }
 	]
 }

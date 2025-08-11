@@ -95,7 +95,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1 $(l:gaim/items/lockseeds#proto_donguri_lockseed)Proto Donguri Lockseed$(/l) (13.2%)$(li)1 $(l:gaim/items/lockseeds#proto_durian_lockseed)Proto Durian Lockseed$(/l) (13.2%)$(br2)Other loot:$(li)18 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (in a row of barrels on the third floor)$(li)3 $(l:misc/items/foods#helheim_fruit)Helheim Fruits$(/l) (on the desks in the sixth floor lab area)$(li)1 $(l:gaim/items/energy_lockseeds#proto_dragon_fruits_energy_lockseed)Proto Dragon Fruits Energy Lockseed$(/l) (on a table in Ryoma Sengoku's office)"
+			"text": "$(li)1 $(l:gaim/items/lockseeds#proto_donguri_lockseed)Proto Donguri Lockseed$(/l) (13.2%)$(li)1 $(l:gaim/items/lockseeds#proto_durian_lockseed)Proto Durian Lockseed$(/l) (13.2%)$(br2)Other loot:$(li)18 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (in a row of barrels on the third floor)$(li)3 $(l:misc/items/foods#helheim_fruit)Helheim Fruits$(/l) (on the desks in the sixth floor lab area)$(li)1 $(l:gaim/items/energy_lockseeds#proto_dragon_fruits_energy_lockseed)Proto Dragon Fruits Energy Lockseed$(/l) (on a table in Ryoma's office)"
 		},
       {
         "type": "patchouli:text",

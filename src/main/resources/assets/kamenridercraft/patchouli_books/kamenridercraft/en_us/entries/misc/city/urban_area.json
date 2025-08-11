@@ -1,0 +1,81 @@
+{
+	"name": "Urban Buildings",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:misc/city",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Urban areas mainly consist of high-rises and recreational spaces. Some buildings have food on display both from the mod and from vanilla Minecraft.$(br2)This list goes into further detail about certain buildings from specific Rider series."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornerhotel.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornerpark1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornershop.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornershop2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornerstore711.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/corner_construction.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cornerhelheim.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/park1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/rainbow_tower.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shop.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shop2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/tower1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/tower2.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "narumi_detective_office",
+			"title": "Narumi Detective Office",
+			"text": "Appears in:$(li)Kamen Rider W (2009, TV show)$(br2)Loot:$(li)6 gold $(l:w/items/unrefined_memory_g)Unrefined Memories$(/l), 5 silver $(l:w/items/unrefined_memory_s)Unrefined Memories$(/l), and 1 $(l:misc/items/music_discs#w_b_x_w_boiled_xtreme_music_disc)W-B-X ~W-Boiled Extreme~ Music Disc$(/l) (in barrels in the underground bunker)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office.png",
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_3.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_4.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_5.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "donut_shop_hungry",
+        "title": "Donut Shop Hungry",
+        "text": "Appears in:$(li)Kamen Rider Wizard (2012, TV show)$(br2)Loot:$(li)12 $(l:misc/items/foods#donut)Donuts$(/l), 2 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l), and 1 $(l:misc/items/foods#mayo)Mayo$(/l) (in a chest)$(li)2 $(l:misc/items/foods#donut)Donuts$(/l) and 1 $(l:misc/items/foods#vienna_coffee)Vienna Coffee$(/l) (on display)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/donut_shop_hungry.png"
+        ],
+        "title": " "
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "nascita",
+        "title": "Nascita",
+        "text": "Appears in:$(li)Kamen Rider Build (2017, TV show)$(br2)Loot:$(li)4 $(l:misc/items/foods#coffee)Coffee$(/l) (on display)$(li)5 $(l:build/items/full_bottle)Empty Bottles$(/l) and 5 $(l:build/items/smash_bottle)Smash Bottles$(/l) (in a barrel in Sento's lab)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/nascita.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_2.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_3.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_4.png"
+        ],
+        "title": " "
+      }
+	]
+}
