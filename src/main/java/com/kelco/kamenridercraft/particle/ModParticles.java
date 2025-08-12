@@ -26,6 +26,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> GREEN_SPARK_PARTICLES =
             PARTICLE_TYPES.register("green_spark_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> DARK_GREEN_SPARK_PARTICLES =
+            PARTICLE_TYPES.register("dark_green_spark_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> PURPLE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("purple_spark_particles", () -> new SimpleParticleType(true));
 
