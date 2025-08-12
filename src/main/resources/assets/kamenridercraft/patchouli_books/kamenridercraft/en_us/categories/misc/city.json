@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:misc/misc",
     "name": "City Dimension",
-    "description": "$(l)[SECTION WORK IN PROGRESS]$()$(br2)The city dimension is a forested and mostly flat landscape where cities can be found. These cities are an excellent place to grind Rider mobs and may even have certain buildings with special loot.",
+    "description": "The city dimension is a forested and mostly flat landscape where cities can be found. These cities are an excellent place to grind Rider mobs and may even have certain buildings with special loot.",
     "icon": "kamenridercraft:woz_time_majin_ridewatch",
     "sortnum": 2
 }

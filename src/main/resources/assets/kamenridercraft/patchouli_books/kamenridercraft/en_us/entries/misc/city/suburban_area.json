@@ -1,0 +1,56 @@
+{
+	"name": "Suburban Buildings",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:misc/city",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Suburban areas are comprised of smaller low-rise buildings.$(br2)This list goes into further detail about certain buildings from specific Rider series."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/houses.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/house_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/house_3.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/park_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/playground_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shop_warehouse.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cous_coussier",
+			"title": "Cous Coussier",
+			"text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Loot:$(li)1 $(l:misc/items/music_discs#anything_goes_music_disc)Anything Goes! Music Disc$(/l) (in a chest)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier.png",
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier_2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier_3.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "fantastic_bookstore_kamiyama",
+        "title": "Fantastic Bookstore Kamiyama",
+        "text": "Appears in:$(li)Kamen Rider Saber (2020, TV show)$(br2)Loot:$(li)1 $(l:misc/items/music_discs#almighty_music_disc)ALMIGHTY ~ Kamen no Yakusoku Music Disc$(/l) (on display)$(li)1 $(l:saber/arsenal/book_gate_wonder_ride_book)Book Gate Wonder Ride Book$(/l) (in a \"hidden\" doorway)"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/fantastic_bookstore_kamiyama.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/fantastic_bookstore_kamiyama_2.png"
+        ],
+        "title": " "
+      }
+	]
+}
