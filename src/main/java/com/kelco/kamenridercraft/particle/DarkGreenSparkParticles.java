@@ -5,9 +5,9 @@ import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
 import org.jetbrains.annotations.Nullable;
 
-public class WhiteSparkParticles extends TextureSheetParticle {
-    protected WhiteSparkParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
-                                  double xSpeed, double ySpeed, double zSpeed) {
+public class DarkGreenSparkParticles extends TextureSheetParticle {
+    protected DarkGreenSparkParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
+                                      double xSpeed, double ySpeed, double zSpeed) {
         super(level, x, y, z, xSpeed, ySpeed, zSpeed);
 
         this.friction = 1.1f;
@@ -15,6 +15,10 @@ public class WhiteSparkParticles extends TextureSheetParticle {
         this.lifetime = 20;
         this.setSpriteFromAge(spriteSet);
 this.scale(1);
+        this.rCol = 0f;
+        this.gCol = 0.25f;
+        this.bCol = 0f;
+
     }
     @Override
     public ParticleRenderType getRenderType() {
@@ -32,7 +36,7 @@ this.scale(1);
         @Override
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel,
                                        double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
-            return new WhiteSparkParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
+            return new DarkGreenSparkParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
         }
     }
 }
