@@ -207,6 +207,10 @@ public class Effect_core {
     public static final Holder<MobEffect>  BUGSTER= EFFECT.register("bug",
             () -> new 	BugEffect(MobEffectCategory.HARMFUL, 0xe8842e));
 
+    public static final Holder<MobEffect>  HAZARD_LEVEL= EFFECT.register("hazard_level",
+            () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xff0000));
+
+
     public static final Holder<MobEffect>  RESET= EFFECT.register("reset",
             () -> new 	ResetEffect(MobEffectCategory.HARMFUL, 0x4eff00));
 

@@ -48,6 +48,9 @@ public class BugEffect extends MobEffect {
 
 
 		BaseHenchmenEntity boss  =   MobsCore.BUGSTERVIRUS.get().create(pLivingEntity.level());
+			if (pLivingEntity.hasEffect(Effect_core.HAZARD_LEVEL)){
+				boss = MobsCore.NEBULA_BUGSTERVIRUS.get().create(pLivingEntity.level());
+			}
 		Random rand = new Random();
 		switch  (pAmplifier<50? rand.nextInt(500-(pAmplifier*10)):0)
 		{

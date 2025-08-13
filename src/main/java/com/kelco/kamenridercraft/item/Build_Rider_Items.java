@@ -28,6 +28,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemContainerContents;
@@ -50,7 +51,8 @@ public class Build_Rider_Items {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/build")), new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEBULA_GAS_SAMPLE = ITEMS.register("nebula_gas_sample",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(Effect_core.HAZARD_LEVEL, 500, 0), 1.0F).build()))
+					.SetItemAnimation(UseAnim.DRINK).KeepDifItem(Reboot_Rider_Items.EMPTY_VIAL.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULL_BOTTLE= ITEMS.register("full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","","build_driver_belt")
