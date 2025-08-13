@@ -48,6 +48,8 @@ public class ModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GotchancollectionPanelGuiMenu>> GOTCHANCOLLECTION_PANEL_GUI = REGISTRY.register("gotchancollection_panel_gui", () -> IMenuTypeExtension.create(GotchancollectionPanelGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ChemyRiserGuiMenu>> CHEMY_RISER_GUI = REGISTRY.register("chemy_riser_gui", () -> IMenuTypeExtension.create(ChemyRiserGuiMenu::new));
 
+	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));
+
 	public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 
 	public static AbstractContainerMenu ASTROSWITCH_PANEL_DOUBLE_GUI(int p51622, Inventory p51623) {
