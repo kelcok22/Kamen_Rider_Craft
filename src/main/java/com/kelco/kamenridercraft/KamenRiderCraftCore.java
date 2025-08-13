@@ -611,6 +611,8 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.GAMMA_COMMANDO.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.NEBULA_BUGSTERVIRUS.get(), BasicEntityRenderer::new);
+
             //event.registerEntityRenderer(MobsCore.MIGHTY_BUGSTER.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.TADDLE_BUGSTER.get(), BasicEntityRenderer::new);
             //event.registerEntityRenderer(MobsCore.BANG_BANG_BUGSTER.get(), BasicEntityRenderer::new);
@@ -650,6 +652,9 @@ if (event.getRenderer().getModel()instanceof PlayerModel model) {
             event.registerEntityRenderer(MobsCore.ENGINE_BROS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.REMOCON_BROS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MAD_ROGUE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.KAISER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.KAISER_REVERSE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BIKAISER.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GINGA.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.WOZ.get(), BasicEntityRenderer::new);

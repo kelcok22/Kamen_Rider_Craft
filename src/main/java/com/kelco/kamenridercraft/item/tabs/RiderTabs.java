@@ -738,6 +738,7 @@ public class RiderTabs {
             event.accept(MobsCore.GAMMA_COMMANDO_SPAWN_EGG);
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
+            event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
             //event.accept(MobsCore.MIGHTY_BUGSTER_SPAWN_EGG);
             //event.accept(MobsCore.TADDLE_BUGSTER_SPAWN_EGG);
             //event.accept(MobsCore.BANG_BANG_BUGSTER_SPAWN_EGG);
@@ -766,6 +767,9 @@ public class RiderTabs {
             event.accept(MobsCore.STAG_LOST_SMASH_SPAWN_EGG);
             event.accept(MobsCore.HELL_BROS_SPAWN_EGG);
             event.accept(MobsCore.MAD_ROGUE_SPAWN_EGG);
+            event.accept(MobsCore.KAISER_SPAWN_EGG);
+            event.accept(MobsCore.KAISER_REVERSE_SPAWN_EGG);
+            event.accept(MobsCore.BIKAISER_SPAWN_EGG);
 
             event.accept(MobsCore.GINGA_SPAWN_EGG);
             event.accept(MobsCore.WOZ_SPAWN_EGG);

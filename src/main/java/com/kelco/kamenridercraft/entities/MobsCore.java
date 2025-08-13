@@ -640,7 +640,13 @@ public class MobsCore {
           
           public static final DeferredItem<DeferredSpawnEggItem> BUGSTERVIRUS_SPAWN_EGG = ITEMS.register("bugstervirus_spawn_egg",
                   () -> new DeferredSpawnEggItem(BUGSTERVIRUS, 0xFF7400, 0x150E08, new Item.Properties()));
-          
+
+    public static final DeferredHolder<EntityType<?>, EntityType<NebulaBugsterVirusEntity>> NEBULA_BUGSTERVIRUS = MOBLIST.register("nebula_bugstervirus_mob",
+            () -> EntityType.Builder.of(NebulaBugsterVirusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nebula_bugster_mob"));
+
+    public static final DeferredItem<DeferredSpawnEggItem>  NEBULA_BUGSTERVIRUS_SPAWN_EGG = ITEMS.register("nebulabugstervirus_spawn_egg",
+            () -> new DeferredSpawnEggItem( NEBULA_BUGSTERVIRUS, 0x4DD1E4, 0xE9E9E9, new Item.Properties()));
+
     /**
           public static final DeferredHolder<EntityType<?>, EntityType<MightyBugsterEntity>> MIGHTY_BUGSTER = MOBLIST.register("mighty_bugster_mob",
                   () -> EntityType.Builder.of(MightyBugsterEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mighty_bugster_mob"));
@@ -859,6 +865,26 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> HELL_BROS_SPAWN_EGG = ITEMS.register("hell_bros_spawn_egg",
             () -> new DeferredSpawnEggItem(ENGINE_BROS, 0x7ec1c2, 0xd3e3e3, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<KaiserEntity>> KAISER = MOBLIST.register("kaiser",
+            () -> EntityType.Builder.of(KaiserEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kaiser"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KAISER_SPAWN_EGG = ITEMS.register("kaiser_spawn_egg",
+            () -> new DeferredSpawnEggItem(KAISER, 0x161616,0xC40000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<KaiserReverseEntity>> KAISER_REVERSE = MOBLIST.register("kaiser_reverse",
+            () -> EntityType.Builder.of(KaiserReverseEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":kaiser_reverse"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> KAISER_REVERSE_SPAWN_EGG = ITEMS.register("kaiser_reverse_spawn_egg",
+            () -> new DeferredSpawnEggItem(KAISER_REVERSE, 0x161616,0x003EBA, new Item.Properties()));
+
+
+    public static final DeferredHolder<EntityType<?>, EntityType<BikaiserEntity>> BIKAISER = MOBLIST.register("bikaiser",
+            () -> EntityType.Builder.of(BikaiserEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":bikaiser"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> BIKAISER_SPAWN_EGG = ITEMS.register("bikaiser_spawn_egg",
+            () -> new DeferredSpawnEggItem(BIKAISER, 0x161616,0x003EBA, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<MadRogueEntity>> MAD_ROGUE = MOBLIST.register("mad_rogue",
             () -> EntityType.Builder.of(MadRogueEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mad_rogue"));

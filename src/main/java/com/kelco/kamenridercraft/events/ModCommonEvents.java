@@ -36,6 +36,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
@@ -98,7 +99,7 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void onEntityTick(EntityTickEvent.Post event) {
-			if (event.getEntity()instanceof LivingEntity entity){
+			if (event.getEntity()instanceof ArmorStand entity){
 				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
 					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
 					belt.giveEffects(entity);
@@ -575,6 +576,7 @@ public class ModCommonEvents {
 		event.put(MobsCore.GAMMA_COMMANDO.get(), GammaCommandoEntity.setAttributes().build());
 
 		event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
+		event.put(MobsCore.NEBULA_BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
 		//event.put(MobsCore.MIGHTY_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.TADDLE_BUGSTER.get(), GodaEntity.setAttributes().build());
 		//event.put(MobsCore.BANG_BANG_BUGSTER.get(), GodaEntity.setAttributes().build());
@@ -614,6 +616,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.ENGINE_BROS.get(), EngineBrosEntity.setAttributes().build());
 		event.put(MobsCore.REMOCON_BROS.get(), RemoconBrosEntity.setAttributes().build());
 		event.put(MobsCore.MAD_ROGUE.get(), MadRogueEntity.setAttributes().build());
+		event.put(MobsCore.KAISER.get(), KaiserEntity.setAttributes().build());
+		event.put(MobsCore.KAISER_REVERSE.get(), KaiserReverseEntity.setAttributes().build());
+		event.put(MobsCore.BIKAISER.get(), KaiserEntity.setAttributes().build());
 
 		event.put(MobsCore.GINGA.get(), GingaEntity.setAttributes().build());
 		event.put(MobsCore.WOZ.get(), GingaEntity.setAttributes().build());
@@ -752,6 +757,8 @@ public class ModCommonEvents {
 		event.register(MobsCore.REAPER_LEGION.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
 		event.register(MobsCore.BUGSTERVIRUS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MobsCore.NEBULA_BUGSTERVIRUS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
 		//	event.register(MobsCore.LOVELY_BUGSTER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 		event.register(MobsCore.RIDEPLAYER.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 
