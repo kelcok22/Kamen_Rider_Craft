@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:w/lostdriver_skull",
 	  "kamenridercraft:w/skullmagnum",
+      "kamenridercraft:w/skullboilder_spawn_egg",
 	  "kamenridercraft:decade/skull_card"
 	]
   },

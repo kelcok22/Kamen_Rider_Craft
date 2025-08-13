@@ -9,11 +9,8 @@
 			"text": "Used to craft the Riders' bikes"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:base_bike",
-			"title": " ",
-			"text": "Item is currently unobtainable"
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/base_bike"
 		}
 	]
 }

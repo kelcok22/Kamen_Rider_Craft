@@ -8,10 +8,12 @@ import java.util.Map;
 import com.kelco.kamenridercraft.effect.Effect_core;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.entities.summons.GrandSummonEntity;
+import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -87,6 +89,11 @@ public class RidewatchItem extends RiderFormChangeItem {
                 if (this.summonWeapons.size() == 2) summon.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(summonWeapons.get(1)));
             }
 
+            for (ItemStack weapon : summon.getHandSlots()) {
+                if (player.getItemBySlot(EquipmentSlot.FEET).is(Gotchard_Rider_Items.LEGENDRIVER.get())) weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.legend", weapon.getHoverName()));
+                else weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", weapon.getHoverName()));
+            }
+
             if (this.summonForm != null) RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), this.summonForm, 1);
             if (key instanceof RiderFormChangeItem formItem && formItem.iscompatible((RiderDriverItem)summon.getItemBySlot(EquipmentSlot.FEET).getItem())) {
                 RiderDriverItem.set_Form_Item(summon.getItemBySlot(EquipmentSlot.FEET), formItem, formItem.getSlot());
@@ -112,8 +119,9 @@ public class RidewatchItem extends RiderFormChangeItem {
         if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
         && (RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get() && (this != Zi_O_Rider_Items.BIO_RIDER_RIDEWATCH.get() && this != Zi_O_Rider_Items.GENM_RIDEWATCH.get())
         || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
-        || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get())) {
-            summon(itemstack, level, player);
+        || RiderDriverItem.get_Form_Item(BELT, 1) == Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get()
+        || RiderDriverItem.get_Form_Item(BELT, 1) == Gotchard_Rider_Items.GRAND_ZI_O_RIDE_CHEMY_CARD.get())) {
+                summon(itemstack, level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
         return super.use(level, player, usedHand);

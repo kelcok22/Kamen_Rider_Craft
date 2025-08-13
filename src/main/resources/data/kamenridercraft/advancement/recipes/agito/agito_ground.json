@@ -23,6 +23,7 @@
 	"recipes": [
 	  "kamenridercraft:agito/alter_ring",
 	  "kamenridercraft:agito/agito_logo",
+      "kamenridercraft:agito/machine_tornador_spawn_egg",
 	  "kamenridercraft:fourze/agito_switch",
 	  "kamenridercraft:gaim/agito_lockseed",
 	  "kamenridercraft:ghost/agito_ghost_eyecon",

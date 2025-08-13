@@ -2,7 +2,7 @@
 	"name": "Gaia Typhoon",
 	"icon": "kamenridercraft:gaia_belt",
 	"category": "kamenridercraft:ichigo/devices",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

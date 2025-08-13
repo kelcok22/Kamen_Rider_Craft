@@ -24,8 +24,10 @@
 	  "kamenridercraft:rx/rxhead",
 	  "kamenridercraft:rx/rxtroso",
 	  "kamenridercraft:rx/rxlegs",
-	  "kamenridercraft:rx/sun_riser"
-	]
+	  "kamenridercraft:rx/sun_riser",
+      "kamenridercraft:rx/acrobatter_spawn_egg",
+      "kamenridercraft:rx/ridoron_spawn_egg"
+    ]
   },
   "sends_telemetry_event": false
 }

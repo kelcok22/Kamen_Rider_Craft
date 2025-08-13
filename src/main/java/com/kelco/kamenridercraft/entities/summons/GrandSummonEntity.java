@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entities.summons;
 
 import com.kelco.kamenridercraft.ServerConfig;
+import com.kelco.kamenridercraft.item.Gotchard_Rider_Items;
 import com.kelco.kamenridercraft.item.Zi_O_Rider_Items;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
 
@@ -25,6 +26,7 @@ public class GrandSummonEntity extends RiderSummonEntity {
         this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.GRAND_ZI_O_RIDEWATCH.get(), 1);
         this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.UNFINISHED_OHMA_ZI_O_DRIVER_L.get(), 1);
         this.addRequiredForm((RiderFormChangeItem)Zi_O_Rider_Items.OHMA_ZI_O_RIDEWATCH.get(), 1);
+        this.addRequiredForm((RiderFormChangeItem)Gotchard_Rider_Items.GRAND_ZI_O_RIDE_CHEMY_CARD.get(), 1);
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {
@@ -33,10 +35,7 @@ public class GrandSummonEntity extends RiderSummonEntity {
 	
     @Override
     public void setItemSlot(EquipmentSlot hand, ItemStack stack) {
-        if (!hand.isArmor()) {
-			stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zi_o", stack.getHoverName()));
-			if (stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
-        }
+        if (!hand.isArmor() && stack.isDamageableItem() && ServerConfig.summonedItemDurability != 0) stack.set(DataComponents.MAX_DAMAGE, ServerConfig.summonedItemDurability);
         super.setItemSlot(hand, stack);
     }
 

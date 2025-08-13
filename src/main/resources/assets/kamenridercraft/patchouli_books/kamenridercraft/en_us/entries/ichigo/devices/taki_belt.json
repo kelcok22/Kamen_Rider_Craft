@@ -1,0 +1,16 @@
+{
+	"name": "Taki Rider Belt",
+	"icon": "kamenridercraft:taki_belt",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Appears in:$(li)Kamen Rider SPIRITS (2001, manga)$(br2)Used alongside the $(l:ichigo/devices/armor)Ichigo armor$(/l) to transform into $(l:ichigo/riders/taki_rider)Taki Rider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/taki_belt"
+		}
+	]
+}
