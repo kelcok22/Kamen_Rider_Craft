@@ -33,9 +33,9 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("plinth_be", () -> BlockEntityType.Builder.of(
                     PlinthBlockEntity::new, Rider_Blocks.PLINTH.get()).build(null));
 
-    public static final Supplier<BlockEntityType<AstroswitchRackBlockEntity>> ASTROSWITCH_RACK_BE =
-            BLOCK_ENTITIES.register("astroswitch_rack_be", () -> BlockEntityType.Builder.of(
-                    AstroswitchRackBlockEntity::new, Rider_Blocks.ASTROSWITCH_RACK.get()).build(null));
+//    public static final Supplier<BlockEntityType<AstroswitchRackBlockEntity>> ASTROSWITCH_RACK_BE =
+//            BLOCK_ENTITIES.register("astroswitch_rack_be", () -> BlockEntityType.Builder.of(
+//                    AstroswitchRackBlockEntity::new, Rider_Blocks.ASTROSWITCH_RACK.get()).build(null));
 
 
     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}
