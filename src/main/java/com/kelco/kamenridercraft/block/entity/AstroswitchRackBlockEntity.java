@@ -60,9 +60,9 @@ public class AstroswitchRackBlockEntity extends ChestBlockEntity {
     }
 
 
-    public AstroswitchRackBlockEntity(BlockPos pos, BlockState blockState) {
-        this(ModBlockEntities.ASTROSWITCH_RACK_BE.get(), pos, blockState);
-    }
+//    public AstroswitchRackBlockEntity(BlockPos pos, BlockState blockState) {
+//        this(ModBlockEntities.ASTROSWITCH_RACK_BE.get(), pos, blockState);
+//    }
 
     @Override
     public int getContainerSize() {

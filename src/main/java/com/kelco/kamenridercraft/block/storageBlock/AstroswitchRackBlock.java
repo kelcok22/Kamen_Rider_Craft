@@ -36,9 +36,9 @@ public class AstroswitchRackBlock extends ChestBlock {
         super(properties, blockEntityType);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TYPE, ChestType.SINGLE).setValue(WATERLOGGED, false));
     }
-        public static final MapCodec<AstroswitchRackBlock> CODEC = simpleCodec((p_304364_) -> {
-            return new AstroswitchRackBlock(p_304364_, ModBlockEntities.ASTROSWITCH_RACK_BE::get);
-        });
+ //       public static final MapCodec<AstroswitchRackBlock> CODEC = simpleCodec((p_304364_) -> {
+ //           return new AstroswitchRackBlock(p_304364_, ModBlockEntities.ASTROSWITCH_RACK_BE::get);
+ //       });
 
     public static DoubleBlockCombiner.@NotNull BlockType getBlockType(BlockState state) {
         ChestType chesttype = state.getValue(TYPE);

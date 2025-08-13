@@ -22,9 +22,9 @@ public class AstroswitchRackGuiMenu extends AbstractContainerMenu {
     private static final int CONTAINER_SIZE = 10;
     private final Container container;
 
-    public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
-        this(containerId, playerInventory,new ItemStack(Rider_Blocks.ASTROSWITCH_RACK.get()));
-    }
+ //   public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf) {
+ //       this(containerId, playerInventory,new ItemStack(Rider_Blocks.ASTROSWITCH_RACK.get()));
+ //   }
 
     public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf registryFriendlyByteBuf, ItemStack itemstack) {
 
@@ -32,7 +32,7 @@ public class AstroswitchRackGuiMenu extends AbstractContainerMenu {
     }
 
     public AstroswitchRackGuiMenu(int containerId, Inventory playerInventory, ItemStack itemstack) {
-        super(ModMenus.ASTROSWITCH_RACK_GUI.get(), containerId);
+        super(ModMenus.GOTCHANCOLLECTION_PANEL_GUI.get(), containerId);
         this.container = new BasicContainer(itemstack,10);
         container.startOpen(playerInventory.player);
 

@@ -39,6 +39,7 @@ public class Gavv_Rider_Items {
 	public static List<Item> PUDDING= new ArrayList<Item>();
 	public static List<Item> COFFEE= new ArrayList<Item>();
 	public static List<Item> ALA_MODE= new ArrayList<Item>();
+	public static List<Item> ICE_CREAM= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_KICKIN_PUNCHIN= new ArrayList<Item>();
 
@@ -188,7 +189,7 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
-					.AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.AddToList(ICE_CREAM,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_master","gavv","henshin_belt_gavv_belt_over",
