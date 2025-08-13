@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.block.entity;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.Rider_Blocks;
+import com.kelco.kamenridercraft.block.storageBlock.AstroswitchRackBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
@@ -31,6 +32,10 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<PlinthBlockEntity>> PLINTH_BE =
             BLOCK_ENTITIES.register("plinth_be", () -> BlockEntityType.Builder.of(
                     PlinthBlockEntity::new, Rider_Blocks.PLINTH.get()).build(null));
+
+    public static final Supplier<BlockEntityType<AstroswitchRackBlockEntity>> ASTROSWITCH_RACK_BE =
+            BLOCK_ENTITIES.register("astroswitch_rack_be", () -> BlockEntityType.Builder.of(
+                    AstroswitchRackBlockEntity::new, Rider_Blocks.ASTROSWITCH_RACK.get()).build(null));
 
 
     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus);}

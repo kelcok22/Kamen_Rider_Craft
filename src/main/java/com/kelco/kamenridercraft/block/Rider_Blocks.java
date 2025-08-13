@@ -8,8 +8,11 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.block.baseBlocks.*;
 import com.kelco.kamenridercraft.block.custom.*;
+import com.kelco.kamenridercraft.block.entity.AstroswitchRackBlockEntity;
+import com.kelco.kamenridercraft.block.entity.ModBlockEntities;
 import com.kelco.kamenridercraft.block.machineBlocks.*;
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
+import com.kelco.kamenridercraft.block.storageBlock.AstroswitchRackBlock;
 import com.kelco.kamenridercraft.block.storageBlock.PandoraPanelBlock;
 import com.kelco.kamenridercraft.data.ModWoodTypes;
 import com.kelco.kamenridercraft.entities.MobsCore;
@@ -28,6 +31,8 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -174,7 +179,8 @@ public class Rider_Blocks {
 			() -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-
+//	public static final DeferredBlock<AstroswitchRackBlock> ASTROSWITCH_RACK = registerBlock("astroswitch_rack",
+//			() -> new AstroswitchRackBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.PLING).strength(2.5F).sound(SoundType.METAL), ModBlockEntities.ASTROSWITCH_RACK_BE::get));
 
 	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
 			() -> new DoorBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
