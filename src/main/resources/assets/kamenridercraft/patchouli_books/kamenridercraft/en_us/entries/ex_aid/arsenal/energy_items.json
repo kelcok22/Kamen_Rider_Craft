@@ -1,0 +1,332 @@
+{
+	"name": "Energy Items",
+	"icon": "kamenridercraft:speed_energy_item",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+            "anchor": "speed_energy_item",
+			"text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Speed XXI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:speed_energy_item",
+            "title": "Speed Energy Item",
+			"text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "iron_energy_item",
+        "title": "Iron Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Resistance VI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:iron_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "instigate_energy_item",
+        "title": "Instigate Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Glowing effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:instigate_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "jump_energy_item",
+        "title": "Jump Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Jump Boost XI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:jump_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "muscle_energy_item",
+        "title": "Muscle Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Strength VI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:muscle_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shrink_energy_item",
+        "title": "Shrink Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Shrink III when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shrink_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "christmas_energy_item",
+        "title": "Christmas Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Merry Christmas effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:christmas_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)$(br2)Obtained by opening $(l:misc/items/gift)Gifts$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "stretch_energy_item",
+        "title": "Stretch Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Stretch III when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:stretch_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "invisible_energy_item",
+        "title": "Invisible Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Invisibility effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:invisible_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "confusion_energy_item",
+        "title": "Confusion Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Nausea effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:confusion_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "recover_energy_item",
+        "title": "Recover Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Instant Health XI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:recover_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "emission_energy_item",
+        "title": "Emission Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Night Vision when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:emission_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "reflect_energy_item",
+        "title": "Reflect Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Reflect effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:reflect_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "save_energy_item",
+        "title": "Save Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Save effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:save_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "reverse_energy_item",
+        "title": "Reverse Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Instant Health XI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:reverse_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "giant_energy_item",
+        "title": "Giant Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Giant III when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:giant_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "liquid_energy_item",
+        "title": "Liquid Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Water Breathing when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:liquid_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "dark_energy_item",
+        "title": "Dark Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Blindness effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dark_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "sleep_energy_item",
+        "title": "Sleep Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Sleeps through the night when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:sleep_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "lucky_energy_item",
+        "title": "Lucky Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives the Luck effect when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lucky_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "flatten_energy_item",
+        "title": "Flatten Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Flatten III when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:flatten_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "balloon_energy_item",
+        "title": "Balloon Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Wide III when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:balloon_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "halt_energy_item",
+        "title": "Halt Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Slowness CI when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:halt_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "end_energy_item",
+        "title": "End Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Ex-Aid (2016, TV show)$(br2)Gives Explosion II when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:end_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bug_energy_item",
+        "title": "Bug Energy Item",
+        "text": "Appears in:$(li)Kamen Rider Buttobasoul (2016, arcade game)$(br2)Gives Bugster Virus II when right-clicked or obtained without an $(l:ex_aid/arsenal/energy_item_holder)Energy Item Holder$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:bug_energy_item",
+        "title": " ",
+        "text": "Drops from:$(li)$(l:misc/blocks/mighty_block)Mighty Block$(/l)$(li)$(l:misc/blocks/bang_bang_drum)Bang Bang Drum$(/l)$(li)$(l:misc/blocks/bakusou_trophy)Bakusou Trophy$(/l)"
+      }
+	]
+}

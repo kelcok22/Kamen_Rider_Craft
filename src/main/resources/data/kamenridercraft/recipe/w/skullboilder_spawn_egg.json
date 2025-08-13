@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "skull",
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:gaiamemory"
+    }, "A": {
+      "item": "kamenridercraft:skull_memory"
+    }, "B": {
+      "item": "kamenridercraft:base_bike"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:skullboilder_spawn_egg"
+  }
+}

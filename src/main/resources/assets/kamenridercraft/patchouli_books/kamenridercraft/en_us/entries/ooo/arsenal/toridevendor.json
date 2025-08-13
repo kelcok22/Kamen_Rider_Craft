@@ -1,0 +1,19 @@
+{
+  "name": "ToRidevendor",
+  "icon": "kamenridercraft:toridevendor_spawn_egg",
+  "category": "kamenridercraft:ooo/arsenal",
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Used by OOO's $(l:ooo/riders/ooo#latorartar)Latorartar Combo$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:toridevendor_spawn_egg",
+      "title": " ",
+      "text": "Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/arsenal/candroids#tora_candroid)Tora Candroid$(/l)"
+    }
+  ]
+}

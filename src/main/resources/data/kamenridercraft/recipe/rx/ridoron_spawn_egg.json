@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "black_rx",
+  "pattern": [
+    "XXX",
+    "BAB",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    }, "A": {
+      "item": "kamenridercraft:split_king_stone"
+    }, "B": {
+      "item": "kamenridercraft:base_bike"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:ridoron_spawn_egg"
+  }
+}

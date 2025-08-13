@@ -21,8 +21,9 @@
   ],
   "rewards": {
 	"recipes": [
-	  "kamenridercraft:den_o/den_o_belt"
-	]
+	  "kamenridercraft:den_o/den_o_belt",
+      "kamenridercraft:den_o/machine_denbird_spawn_egg"
+    ]
   },
   "sends_telemetry_event": false
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "black_rx",
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:rider_circuit"
+    }, "A": {
+      "item": "kamenridercraft:split_king_stone"
+    }, "B": {
+      "item": "kamenridercraft:base_bike"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:acrobatter_spawn_egg"
+  }
+}

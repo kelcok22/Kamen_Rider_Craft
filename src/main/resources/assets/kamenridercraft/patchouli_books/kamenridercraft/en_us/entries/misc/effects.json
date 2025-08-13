@@ -121,7 +121,7 @@
 			"type": "patchouli:text",
 			"anchor": "shrink",
 			"title": "Shrink",
-			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/vistamps#kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
+			"text": "This effect causes you to shrink down, with higher amplifiers making you shrink further.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#small_ring)Small Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#shrink_energy_item)Shrink Energy Item$(/l)$(li)Use the $(l:revice/items/vistamps#kangaroo_vistamp)Kangaroo Vistamp$(/l) as $(l:revice/riders/vice#kangaroo)Kamen Rider Vice$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,25 +133,25 @@
 			"type": "patchouli:text",
 			"anchor": "flatten",
 			"title": "Flatten",
-			"text": "This effect causes you to appear flat, like a 2D character.$(br2)Examples for how to get this effect:$(li)Transform into $(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l)$(li)Use the $(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/flatten_energy_item)Flatten Energy Item$(/l)"
+			"text": "This effect causes you to appear flat, like a 2D character.$(br2)Examples for how to get this effect:$(li)Transform into $(l:kuuga/riders/manga_kuuga)Manga Kuuga$(/l)$(li)Use the $(l:fourze/items/astroswitches#shin_chan_switch)Shin-chan Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#flatten_energy_item)Flatten Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "stretch",
 			"title": "Stretch",
-			"text": "This effect causes you to stretch out and look tall.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/stretch_energy_item)Stretch Energy Item$(/l)"
+			"text": "This effect causes you to stretch out and look tall.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/energy_items#stretch_energy_item)Stretch Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "wide",
 			"title": "Wide",
-			"text": "This effect causes you to stretch out and look wide.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/balloon_energy_item)Balloon Energy Item$(/l)"
+			"text": "This effect causes you to stretch out and look wide.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/energy_items#balloon_energy_item)Balloon Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "explode",
 			"title": "Explode",
-			"text": "This effect causes you to explode once its duration runs out. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/end_energy_item)End Energy Item$(/l)"
+			"text": "This effect causes you to explode once its duration runs out. Higher amplifiers increase the power of the explosion.$(br2)Examples for how to get this effect:$(li)Use the $(l:ex_aid/arsenal/energy_items#end_energy_item)End Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -181,7 +181,7 @@
 			"type": "patchouli:text",
 			"anchor": "merry_christmas",
 			"title": "Merry Christmas",
-			"text": "This effect causes you to receive a $(l:misc/items/gift)Gift$(/l) every 4 minutes and 20 seconds.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/christmas_energy_item)Christmas Energy Item$(/l)"
+			"text": "This effect causes you to receive a $(l:misc/items/gift)Gift$(/l) every 4 minutes and 20 seconds.$(br2)Examples for how to get this effect:$(li)Play Kamen Rider Craft from December 22nd through December 28th$(li)Use the $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)Merry Christmas Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#christmas_energy_item)Christmas Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -253,7 +253,7 @@
 			"type": "patchouli:text",
 			"anchor": "mirror",
 			"title": "Mirror",
-			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/raise_buckles#fantasy_raise_buckle)Fantasy Buckle$(/l)"
+			"text": "With this effect, any entities that hit you will take the damage they dealt multiplied by this effect's amplifier.$(br2)Examples for how to get this effect:$(li)Use the $(l:fourze/items/astroswitches#spike_switch)Spike Switch$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#reflect_energy_item)Reflect Energy Item$(/l)$(li)Use the $(l:geats/items/raise_buckles#fantasy_raise_buckle)Fantasy Buckle$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -265,7 +265,7 @@
 			"type": "patchouli:text",
 			"anchor": "sleep",
 			"title": "Sleep",
-			"text": "This effect skips the night, acting as a fast sleep method without setting your spawn.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#sleep_ring)Sleep Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/sleep_energy_item)Sleep Energy Item$(/l)"
+			"text": "This effect skips the night, acting as a fast sleep method without setting your spawn.$(br2)Examples for how to get this effect:$(li)Use the $(l:wizard/arsenal/wizard_rings#sleep_ring)Sleep Wizard Ring$(/l)$(li)Use the $(l:ex_aid/arsenal/energy_items#sleep_energy_item)Sleep Energy Item$(/l)"
 		},
 		{
 			"type": "patchouli:text",

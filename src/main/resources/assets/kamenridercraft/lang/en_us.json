@@ -453,6 +453,7 @@
   "owner.kamenridercraft.zi_o":"Zi-O's %s",
   "owner.kamenridercraft.geiz":"Geiz's %s",
   "owner.kamenridercraft.zein":"Zein's %s",
+  "owner.kamenridercraft.legend":"Legend's %s",
 
   "henshin.kamenridercraft.henshin":"Henshin!",
   "henshin.kamenridercraft.shocker_rider":"<Shocker Rider> §eHenshin!",
@@ -1725,6 +1726,7 @@
   "kamenridercraft:new_typhoon_core.form": "Form: Base Form (2016)",
 "item.kamenridercraft.shocker_rider_typhoon_core": "Shocker Rider Typhoon Core",
 "item.kamenridercraft.nophoon_core": "Nophoon Core",
+  "item.kamenridercraft.taki_vampire_core": "Taki Vampire Core",
 "item.kamenridercraft.gaia_core": "Gaia Typhoon Core",
 "kamenridercraft:gaia_core.form": "Form: Base Form",
 
@@ -1770,6 +1772,8 @@
 "kamenridercraft.name.dark_nigo": "Rider: Dark Nigo",
 "item.kamenridercraft.typhoon_fake_ichigo": "Typhoon",
 "kamenridercraft.name.fake_ichigo": "Debatable Rider: Fake Ichigo",
+  "item.kamenridercraft.taki_belt": "Taki Rider Belt",
+  "kamenridercraft.name.taki_rider": "Debatable Rider: Taki Rider",
 "item.kamenridercraft.gaia_belt": "Gaia Typhoon",
 "kamenridercraft.name.gaia": "Rider: Kamen Rider Gaia",
 
@@ -3631,7 +3635,7 @@
 "item.kamenridercraft.tora_candroid": "Tora Candroid",
 "item.kamenridercraft.denkiunagi_candroid": "Denkiunagi Candroid",
 "item.kamenridercraft.gorilla_candroid": "Gorilla Candroid",
-"item.kamenridercraft.kujaku_candroid": "Kujyaku Candroid",
+"item.kamenridercraft.kujaku_candroid": "Kujaku Candroid",
 "item.kamenridercraft.ptera_candroid": "Ptera Candroid",
 "item.kamenridercraft.torikera_candroid": "Torikera Candroid",
 "item.kamenridercraft.furifuri_candroid": "Furifuri Candroid",

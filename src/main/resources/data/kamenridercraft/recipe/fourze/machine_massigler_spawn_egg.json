@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fourze",
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:astroswitch"
+    }, "A": {
+      "item": "kamenridercraft:rocket_switch"
+    }, "B": {
+      "item": "kamenridercraft:base_bike"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:machine_massigler_spawn_egg"
+  }
+}

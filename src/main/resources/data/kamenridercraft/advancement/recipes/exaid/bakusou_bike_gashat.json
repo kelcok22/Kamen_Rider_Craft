@@ -23,7 +23,8 @@
 	"recipes": [
 	  "kamenridercraft:exaid/gamer_driver_lazer",
 	  "kamenridercraft:exaid/gashacon_sparrow_sickle_a",
-	  "kamenridercraft:exaid/bakusou_bike_gashat_turbo"
+	  "kamenridercraft:exaid/bakusou_bike_gashat_turbo",
+      "kamenridercraft:exaid/bike_gamer_spawn_egg"
 	]
   },
   "sends_telemetry_event": false
