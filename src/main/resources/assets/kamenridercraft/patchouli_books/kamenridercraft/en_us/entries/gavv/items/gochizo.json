@@ -175,7 +175,7 @@
 			"type": "patchouli:text",
 			"anchor": "bakucan_gochizo",
 			"title": "Bakucan Gochizo",
-			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#bakucan)Bakucan Assist$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

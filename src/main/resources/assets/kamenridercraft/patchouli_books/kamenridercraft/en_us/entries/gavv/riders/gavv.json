@@ -144,6 +144,20 @@
 			"title": "Kamen Rider Gavv",
 			"text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Giant$(li)Gravity$(li)Slowness II$(li)Resistance II"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "bakucan",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakucan_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Bakucan Assist",
+        "text": "Accessed with the $(l:gavv/items/gochizo#bakucan_gochizo)Bakucan Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Giant$(li)Cannon$(li)Gravity$(li)Slowness II$(li)Resistance II"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "bushel",
