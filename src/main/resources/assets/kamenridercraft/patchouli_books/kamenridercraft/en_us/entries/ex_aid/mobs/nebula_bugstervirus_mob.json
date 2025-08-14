@@ -1,0 +1,21 @@
+{
+  "name": "Nebula Bugster",
+  "icon": "kamenridercraft:ex_aid_logo",
+  "category": "kamenridercraft:ex_aid/mobs",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:nebula_bugstervirus_mob",
+      "text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br)Health: 30"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Spawn locations: around players with the Bugster Virus and Hazard Level effects"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bosses$(li)$(l:build/mobs/kaiser)Kaiser$(/l) (5%)$(li)$(l:build/mobs/kaiser_reverse)Kaiser Reverse$(/l) (5%)"
+    }
+  ]
+}

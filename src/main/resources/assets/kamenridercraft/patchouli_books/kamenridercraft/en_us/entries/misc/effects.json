@@ -355,7 +355,7 @@
 			"type": "patchouli:text",
 			"anchor": "bugster_virus",
 			"title": "Bugster Virus",
-			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Gashat$(/l)"
+			"text": "This effect causes $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l) to spawn around you. Higher amplifiers increase the rate at which they spawn. If you have the Hazard Level effect as well, $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l) will spawn instead.$(br2)Examples for how to get this effect:$(li)Use a $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)Proto Gashat$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -392,6 +392,12 @@
 			"anchor": "rider_poison_hand",
 			"title": "Rider Dokushu!",
 			"text": "This effect poisons any mob you hit with an empty hand.$(br2)Examples for how to get this effect:$(li)Transform into $(l:drive/riders/brain)Kamen Rider Brain$(/l)"
-		}
-	]
+		},
+        {
+          "type": "patchouli:text",
+          "anchor": "hazard_level",
+          "title": "Hazard Level",
+          "text": "This effect causes the Bugster Virus effect to spawn $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugsters$(/l) instead of normal $(l:ex_aid/mobs/bugstervirus_mob)Bugsters$(/l).$(br2)Examples for how to get this effect:$(li)Consume a $(l:build/items/nebula_gas_sample)Nebula Gas Sample$(/l)"
+        }
+    ]
 }
