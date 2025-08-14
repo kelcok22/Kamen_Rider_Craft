@@ -8106,6 +8106,11 @@
 "entity.kamenridercraft.cronus": "Kamen Rider Chronos",
 "entity.kamenridercraft.cronus_gamedeus": "Kamen Rider Chronos (Gamedeus)",
 
+  "entity.kamenridercraft.nebula_bugstervirus_mob": "Nebula Bugster",
+  "entity.kamenridercraft.kaiser": "Kaiser",
+  "entity.kamenridercraft.kaiser_reverse": "Kaiser Reverse",
+  "entity.kamenridercraft.bikaiser": "Bikaiser",
+
   "entity.kamenridercraft.touto_guardian": "Touto Guardian",
   "entity.kamenridercraft.hokuto_guardian": "Hokuto Guardian",
   "entity.kamenridercraft.seito_guardian": "Seito Guardian",
@@ -8319,6 +8324,11 @@
 "item.kamenridercraft.paradx_spawn_egg": "Kamen Rider Para-DX Spawn Egg",
 "item.kamenridercraft.rideplayer_spawn_egg": "Ride-Player Spawn Egg",
 "item.kamenridercraft.cronus_spawn_egg": "Kamen Rider Cronus Spawn Egg",
+
+  "item.kamenridercraft.nebulabugstervirus_spawn_egg": "Nebula Bugster Spawn Egg",
+  "item.kamenridercraft.kaiser_spawn_egg": "Kaiser Spawn Egg",
+  "item.kamenridercraft.kaiser_reverse_spawn_egg": "Kaiser Reverse Spawn Egg",
+  "item.kamenridercraft.bikaiser_spawn_egg": "Bikaiser Spawn Egg",
 
   "item.kamenridercraft.touto_guardian_spawn_egg": "Touto Guardian Spawn Egg",
   "item.kamenridercraft.hokuto_guardian_spawn_egg": "Hokuto Guardian Spawn Egg",
@@ -8788,6 +8798,7 @@
   "tag.item.kamenridercraft.food_for.pancake_gochizo": "Pancake Gochizo Food",
   "tag.item.kamenridercraft.food_for.pudding_gochizo": "Pudding Gochizo Food",
   "tag.item.kamenridercraft.food_for.snack_gochizo": "Snack Gochizo Food",
+  "tag.item.kamenridercraft.food_for.sorbei_gochizo": "Blizzardsorbei Gochizo Food",
   "tag.item.kamenridercraft.food_for.tarakomentaiko_gochizo": "Tarakomentaiko Gochizo Food",
   "tag.item.kamenridercraft.food_for.taros": "Taros' Preferred Food",
   "tag.item.kamenridercraft.game_area": "Game Area Blocks",
@@ -8827,6 +8838,7 @@
   "tag.item.kamenridercraft.gear.black_sun_kingstones": "Kingstones (Black Sun)",
   "tag.item.kamenridercraft.gear.bikes": "Rider Bikes",
   "tag.item.kamenridercraft.gear.books": "Rider Books",
+  "tag.item.kamenridercraft.gear.candroids": "Candroids",
   "tag.item.kamenridercraft.gear.card_warrior_cards": "Card Warrior Cards",
   "tag.item.kamenridercraft.gear.capsems": "Capsems",
   "tag.item.kamenridercraft.gear.chaos_rings": "Chaos Rings",

@@ -1,0 +1,17 @@
+{
+	"name": "Bikaiser",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bikaiser",
+			"text": "Appears in:$(li)Kamen Rider Heisei Generations Final: Build & Ex-Aid with Legend Riders (2017, movie)$(br)Health: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": " "
+		}
+	]
+}

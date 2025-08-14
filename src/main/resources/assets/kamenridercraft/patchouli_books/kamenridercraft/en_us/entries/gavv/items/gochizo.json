@@ -260,7 +260,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:blizzardsorbei_gochizo",
 			"title": " ",
-			"text": "Item is currently unobtainable"
+			"text": "Obtained by eating $(l:misc/items/foods#icepop)Ice Pops$(/l) with a $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizo$(/l) in your inventory"
 		},
 		{
 			"type": "patchouli:text",

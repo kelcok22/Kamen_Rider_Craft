@@ -1,0 +1,137 @@
+{
+  "name": "Candroids",
+  "icon": "kamenridercraft:taka_candroid",
+  "category": "kamenridercraft:ooo/arsenal",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:taka_candroid",
+      "anchor": "taka_candroid",
+      "title": "Candroids",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:taka_can",
+      "name": "Taka Candroid",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:tako_candroid",
+      "anchor": "tako_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:tako_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:batta_candroid",
+      "anchor": "batta_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:batta_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:tora_candroid",
+      "anchor": "tora_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking$(br2)Used to convert the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) into the $(l:ooo/arsenal/toridevendor)ToRidevendor$(/l)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:tora_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:denkiunagi_candroid",
+      "anchor": "denkiunagi_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:denkiunagi_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:gorilla_candroid",
+      "anchor": "gorilla_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:gorilla_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:kujaku_candroid",
+      "anchor": "kujaku_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:kujaku_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:ptera_candroid",
+      "anchor": "ptera_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ptera_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:torikera_candroid",
+      "anchor": "torikera_candroid",
+      "text": "Appears in:$(li)Kamen Rider OOO (2010, TV show)$(br2)Attacks anything you hit similarly to a tamed wolf$(br2)Can be changed between Can Mode and Animal Mode by right-clicking"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:torikera_can",
+      "name": " ",
+      "text": "Health: 40$(br)Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:furifuri_candroid",
+      "anchor": "furifuri_candroid",
+      "text": "Appears in:$(li)Kamen Rider Battle: Ganbaride (2008, arcade game)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/items/cellmedal)Cell Medal$(/l)"
+    }
+  ]
+}

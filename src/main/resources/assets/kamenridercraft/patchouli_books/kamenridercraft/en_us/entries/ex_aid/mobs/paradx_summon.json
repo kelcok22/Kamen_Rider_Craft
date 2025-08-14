@@ -2,7 +2,7 @@
 	"name": "Para-DX Summon",
 	"icon": "kamenridercraft:ex_aid_logo",
 	"category": "kamenridercraft:ex_aid/mobs",
-	"sortnum": 7,
+	"sortnum": 8,
 	"pages": [
 		{
 			"type": "patchouli:entity",

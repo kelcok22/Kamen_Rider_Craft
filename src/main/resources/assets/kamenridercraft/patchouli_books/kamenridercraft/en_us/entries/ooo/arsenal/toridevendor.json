@@ -13,7 +13,7 @@
       "link_recipe": true,
       "item": "kamenridercraft:toridevendor_spawn_egg",
       "title": " ",
-      "text": "Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/arsenal/candroids#tora_candroid)Tora Candroid$(/l)"
+      "text": "Obtained by right-clicking the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l) with a $(l:ooo/arsenal/candroids#tora_candroid)Tora Candroid$(/l)$(br2)Right-click while sneaking to change back into the $(l:ooo/arsenal/ridevendor)Ridevendor$(/l)"
     }
   ]
 }
