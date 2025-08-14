@@ -146,7 +146,12 @@ public class Gavv_Rider_Items {
 					.AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> BAKUCAN_GOCHIZO = ITEMS.register("bakucan_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bakucan","do_not_work","henshin_belt_gavv_belt")
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bakucan","gavv","henshin_belt_gavv_belt_bakucan",
+					new MobEffectInstance(Effect_core.BIG, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.CANNON, 40, 0,true,false)
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false))
 					.AddToList(CANDY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARTEA_GOCHIZO = ITEMS.register("partea_gochizo",
