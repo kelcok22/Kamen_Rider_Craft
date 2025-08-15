@@ -239,6 +239,11 @@ public class ModCommonEvents {
 									event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
 									event.getEntity().getZ() + 0.5, 1, 0, 0, 0, 3);
 						}
+						if (RiderDriverItem.get_Form_Item(_livEnt.getItemBySlot(EquipmentSlot.FEET),1).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/gochizo/puchingummy")))) {
+							((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
+									event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
+									event.getEntity().getZ() + 0.5, 10, 0, 0, 0, 3);
+						}
 
 						if (_livEnt.hasEffect(Effect_core.RIDER_POISON_HAND)) {
 							if (_livEnt.getMainHandItem().isEmpty()) {
