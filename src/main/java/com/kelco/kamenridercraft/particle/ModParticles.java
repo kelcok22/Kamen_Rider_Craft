@@ -13,7 +13,6 @@ public class ModParticles {
     public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES =
             DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, KamenRiderCraftCore.MOD_ID);
 
-
     public static final Supplier<SimpleParticleType> WHITE_SPARK_PARTICLES =
             PARTICLE_TYPES.register("white_spark_particles", () -> new SimpleParticleType(true));
 
@@ -58,6 +57,11 @@ public class ModParticles {
 
     public static final Supplier<SimpleParticleType> GUMMI_PARTICLES3 =
             PARTICLE_TYPES.register("gummi_particles_3", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> SNACK_PARTICLES =
+            PARTICLE_TYPES.register("snack_particles", () -> new SimpleParticleType(true));
+
+
 
     public static final Supplier<SimpleParticleType> WIZARD_PARTICLES =
             PARTICLE_TYPES.register("wizard_particles", () -> new SimpleParticleType(true));

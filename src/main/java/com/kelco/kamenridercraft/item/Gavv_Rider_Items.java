@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.gavv.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -75,44 +76,94 @@ public class Gavv_Rider_Items {
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
 				}
-			}
-					.AddToList(GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
+			}.AddToList(GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICKINGUMMY_PUNCHINGUMMY_GOCHIZO = ITEMS.register("kickingummy_punchingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin_punchin","gavv","henshin_belt_gavv_belt_kickin",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddNeedItemList(NEED_ITEM_KICKIN_PUNCHIN)
-					.model_has_different_name("poppingummy_gochizo").has_basic_model());
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+				}
+			}.AddNeedItemList(NEED_ITEM_KICKIN_PUNCHIN).model_has_different_name("poppingummy_gochizo").has_basic_model());
 
 	public static final DeferredItem<Item> PUNCHINGUMMY_GOCHIZO = ITEMS.register("punchingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_punchin","gavv","henshin_belt_gavv_belt_punchin",
-					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(KICKINGUMMY_PUNCHINGUMMY_GOCHIZO.get())
+					new MobEffectInstance(Effect_core.PUNCH, 40, 1,true,false)
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)) {
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+				}
+			}.addShiftForm(KICKINGUMMY_PUNCHINGUMMY_GOCHIZO.get())
 					.AddToList(NEED_ITEM_KICKIN_PUNCHIN).AddToList(GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICKINGUMMY_GOCHIZO = ITEMS.register("kickingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_kickin","gavv","henshin_belt_gavv_belt_kickin",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).addShiftForm(KICKINGUMMY_PUNCHINGUMMY_GOCHIZO.get())
-					.AddToList(NEED_ITEM_KICKIN_PUNCHIN).AddToList(GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+				}
+			}.addShiftForm(KICKINGUMMY_PUNCHINGUMMY_GOCHIZO.get()).AddToList(NEED_ITEM_KICKIN_PUNCHIN)
+					.AddToList(GUMMY,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> FISHINGGUMMY_GOCHIZO = ITEMS.register("tsurigummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fishingummy","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(Effect_core.FISH, 40, 0,true,false))
-					.AddToList(GUMMY,1).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(Effect_core.FISH, 40, 0,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+				}
+			}.AddToList(GUMMY,1).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO = ITEMS.register("zakuzakuchips_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_zakuzaku",
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.AddToList(SNACK,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 40, 0, 0, 0, 1);
+				}
+			}.AddToList(SNACK,5).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIRIHIRICHIPS_GOCHIZO = ITEMS.register("hirihirichips_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_hirihiri",
 					new MobEffectInstance(Effect_core.FIRE_ARMOR, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 40, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 30, 0, 0, 0, 0.2);
+				}
+			}
 					.AddToList(SNACK,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUWAMALLOW_GOCHIZO = ITEMS.register("fuwamallow_gochizo",

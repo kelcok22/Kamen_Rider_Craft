@@ -7,6 +7,7 @@ import java.util.List;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -46,6 +47,11 @@ public class BaseItem extends Item {
         Model_Name=Name;
         return this;
     }
+
+    public boolean is(TagKey<Item> tag) {
+        return this.builtInRegistryHolder().is(tag);
+    }
+
 
     public ItemStack getCraftingRemainingItem(ItemStack stack)
     {
