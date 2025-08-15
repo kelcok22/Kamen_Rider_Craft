@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Has a 5% chance to spawn from a $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l)"
+			"text": "Has a 10% chance to spawn from a $(l:ex_aid/mobs/nebula_bugstervirus_mob)Nebula Bugster$(/l) outside of the City dimension"
 		}
 	]
 }
