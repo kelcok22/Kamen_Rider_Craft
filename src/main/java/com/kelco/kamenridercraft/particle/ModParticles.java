@@ -50,6 +50,15 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> REALIZING_PARTICLES =
             PARTICLE_TYPES.register("realize_hopper_lines", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> GUMMI_PARTICLES =
+            PARTICLE_TYPES.register("gummi_particles_1", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GUMMI_PARTICLES2 =
+            PARTICLE_TYPES.register("gummi_particles_2", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> GUMMI_PARTICLES3 =
+            PARTICLE_TYPES.register("gummi_particles_3", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> WIZARD_PARTICLES =
             PARTICLE_TYPES.register("wizard_particles", () -> new SimpleParticleType(true));
 

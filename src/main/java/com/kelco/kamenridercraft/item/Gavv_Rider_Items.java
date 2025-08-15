@@ -7,15 +7,15 @@ import com.kelco.kamenridercraft.item.BaseItems.*;
 import com.kelco.kamenridercraft.item.gavv.*;
 import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -62,7 +62,20 @@ public class Gavv_Rider_Items {
 	public static final DeferredItem<Item> POPPINGUMMY_GOCHIZO = ITEMS.register("poppingummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES2.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES3.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 34, 0, 0, 0, 1);
+				}
+			}
 					.AddToList(GUMMY,3).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICKINGUMMY_PUNCHINGUMMY_GOCHIZO = ITEMS.register("kickingummy_punchingummy_gochizo",
