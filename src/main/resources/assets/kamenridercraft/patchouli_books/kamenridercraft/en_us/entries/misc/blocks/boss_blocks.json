@@ -132,6 +132,13 @@
 			"item": "kamenridercraft:evol_boss_block",
 			"text": "Found inside $(l:build/structures/pandora_tower)Pandora Tower$(/l)$(br2)Mine this block to summon $(l:build/mobs/evol)Kamen Rider Evol$(/l)"
 		},
+        {
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "anchor": "bikaiser_boss_block",
+          "item": "kamenridercraft:bikaiser_boss_block",
+          "text": "Block is currently unobtainable$(br2)Mine this block to summon $(l:build/mobs/bikaiser)Bikaiser$(/l)"
+        },
 		{
 			"type": "patchouli:crafting",
 			"anchor": "woz_boss_block",

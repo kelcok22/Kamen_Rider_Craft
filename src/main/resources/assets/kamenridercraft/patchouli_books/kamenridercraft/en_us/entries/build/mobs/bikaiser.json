@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": " "
+			"text": "Summoned from a $(l:misc/blocks/boss_blocks#bikaiser_boss_block)Bikaiser Boss Block$(/l)"
 		}
 	]
 }
