@@ -51,6 +51,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(Rider_Blocks.LIME_CHECKERED_TILE.get());
         simpleBlock(Rider_Blocks.GRANUTE_GLASS.get());
 
+
         stairsBlock(Rider_Blocks.HELHEIM_STAIRS.get(), blockTexture(Rider_Blocks.HELHEIM_PLANKS.get()));
         stairsBlock(Rider_Blocks.YELLOW_WALLPLATE_GRATE_STAIRS.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
         stairsBlock(Rider_Blocks.YELLOW_WALLPLATE_STAIRS.get(), blockTexture(Rider_Blocks.YELLOW_WALLPLATE.get()));
