@@ -36,7 +36,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
 
 	public void remove(Entity.RemovalReason p_149847_) {
 
-		if ( this.isDeadOrDying()) {
+		if ( this.isDeadOrDying()&!(this instanceof NebulaBugsterVirusEntity)) {
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
 				int bossChoice = this.random.nextInt(2);
 				switch (bossChoice) {
