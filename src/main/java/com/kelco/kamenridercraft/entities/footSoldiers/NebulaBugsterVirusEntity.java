@@ -5,7 +5,10 @@ import com.kelco.kamenridercraft.block.Rider_Blocks;
 import com.kelco.kamenridercraft.entities.MobsCore;
 import com.kelco.kamenridercraft.item.Ex_Aid_Rider_Items;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -32,7 +35,9 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
 
 		if ( this.isDeadOrDying()) {
 			if (this.random.nextDouble() * 100.0 <= ServerConfig.bossSpawnRate) {
-				int bossChoice = this.random.nextInt(2);
+				ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
+				int bossChoice = 0;
+				if (this.level().dimension() == MOON)bossChoice=1;
 				switch (bossChoice) {
 					case 0:
 						boss = MobsCore.KAISER.get().create(this.level());
