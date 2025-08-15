@@ -996,7 +996,15 @@ public class Rider_Blocks {
 	public static final DeferredBlock<Block> PAVEMENT = registerBlock("pavement",
 			() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
 					.strength(2f)));
-	
+
+	public static final DeferredBlock<Block> MEGAHEX_MATEL = registerBlock("megahex_matel",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
+
+	public static final DeferredBlock<Block> MEGAHEX_MATEL_LINES = registerBlock("megahex_matel_lines",
+			() -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+					.strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().AddToTabList(RiderTabs.RIDER_DECOR));
+
 
 	public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
 			() -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
