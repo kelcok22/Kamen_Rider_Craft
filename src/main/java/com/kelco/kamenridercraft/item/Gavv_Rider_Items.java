@@ -261,7 +261,7 @@ public class Gavv_Rider_Items {
 					.AddToList(ICE_CREAM,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_master","gavv","henshin_belt_gavv_belt_over",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_master","gavv","henshin_belt_gavv_belt_master",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false),
@@ -280,6 +280,16 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
 					.addSwitchForm(GOCHIPOD_MASTER.get()).AddToList(RiderTabs.GAVV_TAB_ITEM));
+
+	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
+					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
+					new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DOUMARU_GOCHIZO = ITEMS.register("doumaru_gochizo",
