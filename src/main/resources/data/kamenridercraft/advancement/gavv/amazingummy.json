@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:amazingummy_gochizo"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.gavv.amazingummy.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.gavv.amazingummy.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:gavv/gochipod",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "kamenridercraft:gavv_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "kamenridercraft:gavv_troso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "kamenridercraft:gavv_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "kamenridercraft:henshin_belt_gavv"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:amazingummy_gochizo\"}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
