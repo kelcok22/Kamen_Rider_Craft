@@ -262,6 +262,19 @@
 			"title": " ",
 			"text": "Obtained by eating $(l:misc/items/foods#icepop)Ice Pops$(/l) with a $(l:gavv/items/prototype_cup_gochizo)Prototype Cup Gochizo$(/l) in your inventory"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "amazingummy_gochizo",
+        "title": "Amazingummy Gochizo",
+        "text": "Appears in:$(li)Kamen Rider Gavv (2024, TV show)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#amazingummy)Amazingummy Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:amazingummy_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "doumaru_gochizo",
