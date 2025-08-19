@@ -131,6 +131,19 @@
 			"title": " ",
 			"recipe": "kamenridercraft:gotchard/beetlx_ride_chemy_card"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "crosshopper_ride_chemy_card",
+        "title": "Crosshopper Ride Chemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) form"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:crosshopper_ride_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "odorippa_ride_chemy_card",
@@ -408,19 +421,6 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:tenliner_ride_chemy_card",
-			"title": " ",
-			"text": "Item is currently unobtainable"
-		},
-		{
-			"type": "patchouli:text",
-			"anchor": "crosshopper_ride_chemy_card",
-			"title": "Crosshopper Ride Chemy Card",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#platina_gotchard)Platina Gotchard$(/l) form"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:crosshopper_ride_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
@@ -1337,7 +1337,7 @@
 			"type": "patchouli:text",
 			"anchor": "nijigon_ride_chemy_card_extra",
 			"title": "Nijigon Ride Chemy Card (Extra)",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#rainbow_gotchard)Rainbow Gotchard$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1350,7 +1350,7 @@
 			"type": "patchouli:text",
 			"anchor": "nijigon_ride_chemy_card_special",
 			"title": "Nijigon Ride Chemy Card (Special)",
-			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used to access Gotchard's $(l:gotchard/riders/gotchard#rainbow_gotchard)Rainbow Gotchard$(/l) form"
 		},
 		{
 			"type": "patchouli:spotlight",
