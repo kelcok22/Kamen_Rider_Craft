@@ -58,16 +58,16 @@ public class Wizard_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_VIOLET= ITEMS.register("wizardgem_violet",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_BLACK= ITEMS.register("wizardgem_black",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CYAN= ITEMS.register("wizardgem_cyan",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PHILOSOPHERS_STONE= ITEMS.register("philosophers_stone",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FLAME_WIZARD_RING = ITEMS.register("flame_ring",
@@ -96,7 +96,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLAME_DRAGON_WIZARD_RING = ITEMS.register("flame_ring_dragon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_flame_dragon","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -104,7 +104,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_DRAGON_WIZARD_RING = ITEMS.register("water_ring_dragon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_water_dragon","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_water_dragon","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -112,7 +112,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HURRICANE_DRAGON_WIZARD_RING = ITEMS.register("hurricane_ring_dragon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hurricane_dragon","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_hurricane_dragon","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -129,7 +129,7 @@ public class Wizard_Rider_Items {
 					.ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING = ITEMS.register("land_ring_dragon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_land_dragon","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_land_dragon","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
@@ -139,7 +139,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> INFINITY_WIZARD_RING = ITEMS.register("infinity_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_infinity","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_infinity","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
@@ -149,7 +149,7 @@ public class Wizard_Rider_Items {
 
 
 	public static final DeferredItem<Item> DRAGO_TIMER = ITEMS.register("drago_timer",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon_all_dragon","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_flame_dragon_all_dragon","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -188,7 +188,7 @@ public class Wizard_Rider_Items {
 					.addNeedForm(LAND_DRAGON_WIZARD_RING.get(),1).addAlternative(HURRICANE_DRAGON_WIZARD_SPECIAL_RING.get()).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> SPECIAL_RING = ITEMS.register("special_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon_special","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_flame_dragon_special","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -199,7 +199,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOPE_RING = ITEMS.register("hope_ring",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING_NO_HOPE  = ITEMS.register("finish_strike_ring_no_hope",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_infinity_dragon","wizard","wizardriver_belt",
@@ -215,7 +215,7 @@ public class Wizard_Rider_Items {
 					.addNeedForm(INFINITY_WIZARD_RING.get(),1).ChangeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING  = ITEMS.register("finish_strike_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_infinity_gold","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_infinity_gold","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
@@ -229,7 +229,7 @@ public class Wizard_Rider_Items {
 					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECIAL_RUSH_RING = ITEMS.register("special_rush_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_flame_dragon_special_rush","wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_flame_dragon_special_rush","wizard","wizardriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
@@ -306,7 +306,7 @@ public class Wizard_Rider_Items {
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HYPER_RING = ITEMS.register("hyper_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","beast","beast_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_hyper","beast","beast_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
@@ -389,11 +389,11 @@ public class Wizard_Rider_Items {
 					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> EXPLOSION_WIZARD_RING = ITEMS.register("explosion_ring",
-               () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.EXPLOSION, 500,1,true,true))
+               () -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(Effect_core.EXPLOSION, 500,1,true,true))
 					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TELEPORT_WIZARD_RING = ITEMS.register("teleport_ring",
-			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.RETURN, 500,20,true,true))
+			() -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(Effect_core.RETURN, 500,20,true,true))
 					.AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONNECT_WIZARD_RING = ITEMS.register("connect_ring",
@@ -418,7 +418,7 @@ public class Wizard_Rider_Items {
 					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> ECLIPSE_WIZARD_RING = ITEMS.register("eclipse_ring",
-               () -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(Effect_core.NIGHT, 80,0,true,true))
+               () -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(Effect_core.NIGHT, 80,0,true,true))
 					   .AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
        public static final DeferredItem<Item> LIGUID_WIZARD_RING = ITEMS.register("liquid_ring",
@@ -700,7 +700,7 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
-		() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
+		() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToTabList(RiderTabs.WIZARD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS)
 				.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",
@@ -708,7 +708,7 @@ public class Wizard_Rider_Items {
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.WIZARD_TAB_ITEM)
 					.ChangeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN_MAGE = ITEMS.register("wizarswordgun_mage",

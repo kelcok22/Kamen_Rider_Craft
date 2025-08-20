@@ -12,10 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -60,7 +57,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_climax","den_o","den_o_belt_c",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_climax","den_o","den_o_belt_c",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -77,7 +74,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).addNeedItem(KTAROS.get()).hasStaticWings());
 
 	public static final DeferredItem<Item> RIDER_TICKET_WING = ITEMS.register("rider_ticket_wing",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_wing","den_o","den_o_belt_w",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_wing","den_o","den_o_belt_w",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
@@ -118,7 +115,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)).addAlternative(NEW_DEN_O_VEGA_CARD.get()).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ZERO_CARD = ITEMS.register("zeronos_zero_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_zero","zeronos","zeronos_belt_z",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_zero","zeronos","zeronos_belt_z",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -179,7 +176,7 @@ public class Den_O_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)));
 
     public static final DeferredItem<Item> RIDER_TICKET_PUDDING = ITEMS.register("rider_ticket_pudding",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_pudding","den_o","den_o_belt_pu",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_pudding","den_o","den_o_belt_pu",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
@@ -239,10 +236,10 @@ public class Den_O_Rider_Items {
             () -> new RiderPassItem(new Item.Properties(),500).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item> MASTER_PASS = ITEMS.register("master_pass",
-            () -> new RiderPassItem(new Item.Properties(),10).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+            () -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> G_DEN_O_RIDER_PASS = ITEMS.register("g_den_o_rider_pass",
-            () -> new RiderPassItem(new Item.Properties(),300).AddToList(RiderTabs.DEN_O_TAB_ITEM));
+            () -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),300).AddToList(RiderTabs.DEN_O_TAB_ITEM));
 
     public static final DeferredItem<Item>DEN_GASHER_SWORD = ITEMS.register("den_gasher_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
@@ -253,7 +250,7 @@ public class Den_O_Rider_Items {
     public static final DeferredItem<Item> DEN_GASHER_GUN = ITEMS.register("den_gasher_gun",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
     public static final DeferredItem<Item>DENKAMEN_SWORD = ITEMS.register("denkamen_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).IsFormItem(DEN_O_LINER_FORM.get()).ChangeRepairItem(IMAGIN_SAND.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).IsFormItem(DEN_O_LINER_FORM.get()).ChangeRepairItem(IMAGIN_SAND.get()));
     public static final DeferredItem<Item> DEN_GASHER_HANDAX = ITEMS.register("den_gasher_handax",
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.DEN_O_TAB_ITEM).ChangeRepairItem(IMAGIN_SAND.get()));
     public static final DeferredItem<Item> DEN_GASHER_BOOMERANG = ITEMS.register("den_gasher_boomerang",

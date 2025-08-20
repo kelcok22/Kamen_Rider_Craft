@@ -11,10 +11,7 @@ import com.kelco.kamenridercraft.item.tabs.RiderTabs;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -85,7 +82,7 @@ public class Reboot_Rider_Items {
 	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEW_OMEGA = ITEMS.register("amazon_injector_new_omega",
-	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_alpha","neo_amazons_driver_omega_belt",
+	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_alpha","neo_amazons_driver_omega_belt",
 	             		new MobEffectInstance(Effect_core.PUNCH, 40, 7,true,false)
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
@@ -94,7 +91,7 @@ public class Reboot_Rider_Items {
 	            .AddToList(RiderTabs.AMAZONS_TAB_ITEM));
 	 
 	    public static final DeferredItem<Item> AMAZON_INJECTOR_NEO_ALPHA = ITEMS.register("amazon_injector_neo_alpha",
-	            () -> new RiderFormChangeItem(new Item.Properties(),0,"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
+	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","amazon_neo_alpha","neo_amazons_driver_neo_belt",
 	            		new MobEffectInstance(Effect_core.PUNCH, 40, 7,true,false)
 						,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200, 1,true,false)
 	            		,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
@@ -123,10 +120,10 @@ public class Reboot_Rider_Items {
 		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_new_omega",AMAZON_INJECTOR_NEW_OMEGA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	    public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_NEO = ITEMS.register("neo_amazons_driver_neo",
-		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo",AMAZON_INJECTOR_NEO ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
+		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo",AMAZON_INJECTOR_NEO ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	    public static final DeferredItem<Item> NEO_AMAZONS_DRIVER_NEO_ALPHA = ITEMS.register("neo_amazons_driver_neo_alpha",
-		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
+		           () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon_neo_alpha",AMAZON_INJECTOR_NEO_ALPHA ,AMAZONSHELMET,AMAZONSCHESTPLATE,AMAZONSLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.AMAZONS_TAB_ITEM));
 
 	    
 	    // BLack Sun

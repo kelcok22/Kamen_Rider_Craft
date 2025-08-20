@@ -55,7 +55,7 @@ public class Zero_One_Rider_Items {
             .addAlternative(RISING_HOPPER_PROGRISEKEY_VULCAN.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 10));
 	
 	public static final DeferredItem<Item> SHINING_HOPPER_PROGRISEKEY = ITEMS.register("shining_hopper_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_shining","zero_one","hiden_zero_one_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_shining","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -63,7 +63,7 @@ public class Zero_One_Rider_Items {
             .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HIDEN_PROGRISEKEY, 2));
 	
 	public static final DeferredItem<Item> SHINING_ASSAULT_HOPPER_PROGRISEKEY = ITEMS.register("shining_assault_hopper_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_assault","zero_one","hiden_zero_one_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_assault","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -73,7 +73,7 @@ public class Zero_One_Rider_Items {
             .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> METALCLUSTER_HOPPER_PROGRISEKEY = ITEMS.register("metalcluster_hopper_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_metalcluster","zero_one","hiden_zero_one_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_metalcluster","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -83,7 +83,7 @@ public class Zero_One_Rider_Items {
             .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ZERO_TWO_PROGRISEKEY = ITEMS.register("zero_two_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_two","hiden_zero_two_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","zero_two","hiden_zero_two_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -142,7 +142,7 @@ public class Zero_One_Rider_Items {
             .IsGlowing().AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> HELLRISE_PROGRISEKEY = ITEMS.register("hellrise_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_hell","zero_one","hiden_zero_one_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hell","zero_one","hiden_zero_one_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -155,7 +155,7 @@ public class Zero_One_Rider_Items {
             .AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ZERO_THREE_PROGRISEKEY = ITEMS.register("zero_three_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","zero_three","hiden_zero_three_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"","zero_three","hiden_zero_three_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -322,7 +322,7 @@ public class Zero_One_Rider_Items {
 			.addAlternative(SHOOTING_WOLF_PROGRISEKEY_ZERO_ONE.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ASSAULT_WOLF_PROGRISEKEY = ITEMS.register("assault_wolf_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_assault","vulcan","aims_shot_riser_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_assault","vulcan","aims_shot_riser_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -332,7 +332,7 @@ public class Zero_One_Rider_Items {
 			.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 2));
 	
 	public static final DeferredItem<Item> RAMPAGE_GATLING_PROGRISEKEY = ITEMS.register("rampage_gatling_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_rampage","vulcan","aims_shot_riser_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rampage","vulcan","aims_shot_riser_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -355,7 +355,7 @@ public class Zero_One_Rider_Items {
 			.addAlternative(PUNCHING_KONG_PROGRISEKEY_ZERO_ONE.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 5));
 	
 	public static final DeferredItem<Item> DIRE_WOLF_ZETSUMERISEKEY = ITEMS.register("dire_wolf_zetsumerisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","vulcan_lone","hiden_zero_one_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","vulcan_lone","hiden_zero_one_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -402,7 +402,7 @@ public class Zero_One_Rider_Items {
 			.addAlternative(FIGHTING_JACKAL_PROGRISEKEY_ZERO_ONE.get()).ChangeBeltModel("geo/raider_belt.geo.json").AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> SERVAL_TIGER_ZETSUMERISEKEY = ITEMS.register("serval_tiger_zetsumerisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_serval","valkyrie","aims_shot_riser_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_serval","valkyrie","aims_shot_riser_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -423,7 +423,7 @@ public class Zero_One_Rider_Items {
 			.addAlternative(STING_SCORPION_PROGRISEKEY_ZERO_ONE.get()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 10));
 	
 	public static final DeferredItem<Item> ARK_SCORPION_PROGRISEKEY = ITEMS.register("ark_scorpion_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","horobi_ark_scorpion","zetsumetsu_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","horobi_ark_scorpion","zetsumetsu_driver_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -450,7 +450,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false)));
 	
 	public static final DeferredItem<Item> BURNING_FALCON_PROGRISEKEY = ITEMS.register("burning_falcon_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","jin_burning","zaia_slash_riser_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","jin_burning","zaia_slash_riser_belt",
             		new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -477,7 +477,7 @@ public class Zero_One_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 2));
 	
 	public static final DeferredItem<Item> THOUSAND_ARK_PROGRISEKEY = ITEMS.register("thousand_ark_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","thousand_ark","ark_driver_belt_1",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","thousand_ark","ark_driver_belt_1",
             		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -494,7 +494,7 @@ public class Zero_One_Rider_Items {
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)));
 
 	public static final DeferredItem<Item> ARK_ONE_PROGRISEKEY = ITEMS.register("ark_one_progrisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","ark_zero","ark_driver_belt_1",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","ark_zero","ark_driver_belt_1",
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -567,7 +567,7 @@ public class Zero_One_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> MASSBRAIN_ZETSUMERISEKEY = ITEMS.register("massbrain_zetsumerisekey",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","metsuboujinrai","metsuboujinrai_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","metsuboujinrai","metsuboujinrai_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -578,7 +578,7 @@ public class Zero_One_Rider_Items {
 			.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEIN_PROGRISEKEY = ITEMS.register("zein_progrisekey",
-              () -> new RiderFormChangeItem(new Item.Properties(),0,"","zein","zein_driver_belt",
+              () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","zein","zein_driver_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
             		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -587,7 +587,7 @@ public class Zero_One_Rider_Items {
     		.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	
 	public static final DeferredItem<Item> THOUSAND_KEY = ITEMS.register("thousand_key",
-	          () -> new RiderFormChangeItem(new Item.Properties(),0,"_supreme","ragnarok","ragnarok_driver_belt",
+	          () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_supreme","ragnarok","ragnarok_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -694,7 +694,7 @@ public class Zero_One_Rider_Items {
 			.AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> IS_PROGRISEKEY = ITEMS.register("is_progrisekey",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HUMAGEAR_PROGRISEKEY));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HUMAGEAR_PROGRISEKEY));
 	public static final DeferredItem<Item> UCHUYARO_SUBARU_PROGRISEKEY = ITEMS.register("uchuyaro_subaru_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToList(ProgrisekeyPrinter.HUMAGEAR_PROGRISEKEY, 5));
 	public static final DeferredItem<Item> SAIKYO_TAKUMI_OYAKATA_PROGRISEKEY = ITEMS.register("saikyo_takumi_oyakata_progrisekey",
@@ -737,7 +737,7 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> IKAZUCHI_PROGRISEKEY = ITEMS.register("ikazuchi_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 	public static final DeferredItem<Item> PRESIDENT_DAN_KUROTO_PROGRISEKEY = ITEMS.register("president_dan_kuroto_progrisekey",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MERRY_HOPPER_PROGRISEKEY = ITEMS.register("merry_hopper_progrisekey",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZERO_ONE_TAB_ITEM));
@@ -756,10 +756,10 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
    
     public static final DeferredItem<Item> HIDEN_ZERO_TWO_DRIVER = ITEMS.register("hiden_zero_two_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_two",ZERO_TWO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_two",ZERO_TWO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.RARE)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_BELTS).ChangeRepairItem(HIDEN_METAL.get()));
  
     public static final DeferredItem<Item> HIDEN_ZERO_THREE_DRIVER = ITEMS.register("hiden_zero_three_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_three",ZERO_THREE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_three",ZERO_THREE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
  
     public static final DeferredItem<Item> SHOTRISER_VULCAN = ITEMS.register("shotriser_vulcan",
     		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"vulcan",SHOOTING_WOLF_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
@@ -783,17 +783,17 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zero_zero_one",RISING_HOPPER_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().Override_belt_text("force_riser_belt_001").AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZAIA_SLASHRISER = ITEMS.register("zaia_slashriser",
-    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"jin_burning",BURNING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new ShotriserItem(ArmorMaterials.DIAMOND,"jin_burning",BURNING_FALCON_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZETSUMETSU_DRIVER = ITEMS.register("zetsumetsu_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi_ark_scorpion",ARK_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"horobi_ark_scorpion",ARK_SCORPION_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> METSUBOUJINRAI_DRIVER = ITEMS.register("metsuboujinrai_driver",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metsuboujinrai",MASSBRAIN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metsuboujinrai",MASSBRAIN_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ARK_DRIVER_ZERO = ITEMS.register("ark_driver_zero",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero",ARK_ZERO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero",ARK_ZERO_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> ARK_DRIVER_ZERO_THOUSAND_ARK = ITEMS.register("ark_driver_zero_thousand_ark",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"thousand_ark",THOUSAND_ARK_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"thousand_ark",THOUSAND_ARK_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> HIDEN_ZERO_ONE_DRIVER_AZU = ITEMS.register("hiden_zero_one_driver_azu",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ark_zero_one",ARK_ZERO_ONE_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
@@ -822,7 +822,7 @@ public class Zero_One_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vulcan_lone",DIRE_WOLF_ZETSUMERISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> ZEIN_DRIVER = ITEMS.register("zein_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zein",ZEIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zein",ZEIN_PROGRISEKEY ,ZERO_ONE_HELMET, ZERO_ONE_CHESTPLATE,ZERO_ONE_LEGGINGS , new Item.Properties().rarity(Rarity.RARE)).Dont_show_belt_form_info().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 
 	public static final DeferredItem<Item> RAGNAROK_DRIVER = ITEMS.register("ragnarok_driver",
@@ -883,18 +883,18 @@ public class Zero_One_Rider_Items {
 	public static final DeferredItem<Item> ATTACHE_ARROW = ITEMS.register("attache_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> AUTHORISE_BUSTER = ITEMS.register("authorise_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> PROGRISE_HOPPER_BLADE = ITEMS.register("progrise_hopper_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> PROGRISE_HOPPER_BLADE_NAGINATA = ITEMS.register("progrise_hopper_blade_naginata",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIDEN_METAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> THOUSAND_JACKER = ITEMS.register("thousand_jacker",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 
 	public static final DeferredItem<Item> SHOTRISER = ITEMS.register("shot_riser_gun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> SLASHRISER = ITEMS.register("zaia_slashriser_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(ArkZeroEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
 	public static final DeferredItem<Item> SHOTABADDORISER_GUN = ITEMS.register("shot_abaddo_gun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZERO_ONE_TAB_ITEM).ChangeRepairItem(HIDEN_METAL.get()));
     public static final DeferredItem<Item> SLASHABADDORISER_SWORD = ITEMS.register("slash_abaddo_sword",

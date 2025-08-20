@@ -13,10 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -108,7 +105,7 @@ public class Drive_Rider_Items {
 
 
 	public static final DeferredItem<Item> SHIFT_DEAD_HEAT = ITEMS.register("deadheatshift",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dead_heat","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_dead_heat","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.CONFUSION, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
@@ -117,14 +114,14 @@ public class Drive_Rider_Items {
 
 
 	public static final DeferredItem<Item> SHIFT_FORMULA= ITEMS.register("formulashift",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_formula","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_formula","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
 					.ChangeModel("drive_formula.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON_CORE = ITEMS.register("tridoronshift_core",
-			() -> new BaseItem(new Item.Properties()).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).has_basic_model()
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(ShiftChassisAssembler.DRIVE_CAR,5).has_basic_model()
 					.AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 
@@ -155,7 +152,7 @@ public class Drive_Rider_Items {
 					.alsoChange2ndSlot(BASIC_TIRE.get()).model_has_different_name("tridoronshift").has_basic_model().AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> SHIFT_TRIDORON = ITEMS.register("tridoronshift",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_tridoron","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_tridoron","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
@@ -164,7 +161,7 @@ public class Drive_Rider_Items {
 					.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).AddNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_HEARTRON = ITEMS.register("heartronshift",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","heart","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","heart","drivedriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
@@ -188,7 +185,7 @@ public class Drive_Rider_Items {
 					.ChangeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(ShiftChassisAssembler.NEXT_CAR).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_SPECIAL = ITEMS.register("specialshift",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_special","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_special","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
@@ -365,19 +362,19 @@ public class Drive_Rider_Items {
 					.AddToList(ShiftChassisAssembler.DRIVE_CAR,3).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_MANTARN_F01 = ITEMS.register("mantarn_f01",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"f01_tire","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f01_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 39,true,false))
 					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_JACKY_F02 = ITEMS.register("jacky_f02",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"f02_tire","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f02_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false))
 					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIFT_SPARNER_F03 = ITEMS.register("sparner_f03",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"f03_tire","drive","drivedriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"f03_tire","drive","drivedriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false))
 					.addNeedForm(SHIFT_FORMULA.get(),1).AddIncompatibleForm(SHIFT_TRIDORON.asItem()).AddIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
 					.ChangeSlot(2).AddToList(NEED_ITEM_TRIDORON_ALL_TIRE).AddToList(ShiftChassisAssembler.DRIVE_CAR,1).AddToList(RiderTabs.DRIVE_TAB_ITEM));
@@ -455,7 +452,7 @@ public class Drive_Rider_Items {
 					.AddToList(ShiftChassisAssembler.NEXT_BIKE,3).has_basic_model());
 
 	public static final DeferredItem<Item> SHIFT_RIDE_CROSSER= ITEMS.register("shift_ride_crosser",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_mach_chaser","mach","mach_driver_honoh_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_mach_chaser","mach","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)
@@ -464,7 +461,7 @@ public class Drive_Rider_Items {
 					.ChangeModel("mach.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).AddToList(RiderTabs.DRIVE_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> TRIDORON_KEY= ITEMS.register("tridoron_key",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super","drive_dead_heat","mach_driver_honoh_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super","drive_dead_heat","mach_driver_honoh_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
@@ -510,7 +507,7 @@ public class Drive_Rider_Items {
 					.model_has_different_name("rhino_super_viral_core").has_basic_model());
 
 	public static final DeferredItem<Item> RHINO_SUPER_VIRAL_CORE = ITEMS.register("rhino_super_viral_core",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chou","mashin_chaser","blank",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_chou","mashin_chaser","blank",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false))
@@ -583,7 +580,7 @@ public class Drive_Rider_Items {
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MACH_DRIVER_HONOH_DRIVE = ITEMS.register("mach_driver_honoh_drive",
-			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"drive_dead_heat",SHIFT_DEAD_HEAT_DRIVE_MACH , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"drive_dead_heat",SHIFT_DEAD_HEAT_DRIVE_MACH , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_DRIVER_PROTO_DRIVE = ITEMS.register("drivedriver_protodrive",
@@ -599,7 +596,7 @@ public class Drive_Rider_Items {
 					.Dont_show_belt_form_info().ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_DRIVER_HEART = ITEMS.register("drivedriver_heart",
-			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"heart",SHIFT_HEARTRON , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties())
+			() -> new DriveDriverItem(ArmorMaterials.DIAMOND,"heart",SHIFT_HEARTRON , DRIVE_HELMET,DRIVE_CHESTPLATE,DRIVE_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
 					.Add_Extra_Base_Form_Items(BASIC_TIRE).ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_DRIVER_DARK_DRIVE = ITEMS.register("drivedriver_darkdrive",
@@ -636,7 +633,7 @@ public class Drive_Rider_Items {
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(GordDriveEntity.THINGS_AND_STUFF).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
 					.ChangeRepairItem(SHIFT_ALLOY.get()).AddToTabList(RiderTabs.DRIVE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",

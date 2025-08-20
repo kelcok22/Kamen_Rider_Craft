@@ -286,7 +286,7 @@ public class Saber_Rider_Items {
 					.addAlternative(JAAKU_DRAGON_WONDER_RIDE_BOOK_CALIBUR.get()).AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> JAOU_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("jaou_dragon_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jaou_dragon","calibur","jaken_caliburdriver_belt_j"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jaou_dragon","calibur","jaken_caliburdriver_belt_j"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
@@ -302,7 +302,7 @@ public class Saber_Rider_Items {
 					.model_has_different_name("kin_no_buki_gin_no_buki_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","saikou","seiken_saikou_driver_belt_saikou"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","saikou","seiken_saikou_driver_belt_saikou"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
@@ -334,7 +334,7 @@ public class Saber_Rider_Items {
 					.model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK = ITEMS.register("x_swordman_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_swordman_wonderful","saikou","seiken_saikou_driver_belt_w"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_x_swordman_wonderful","saikou","seiken_saikou_driver_belt_w"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
@@ -362,7 +362,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK = ITEMS.register("omni_force_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","solomon","dooms_driver_buckle_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","solomon","dooms_driver_buckle_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false)
@@ -371,7 +371,7 @@ public class Saber_Rider_Items {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRIMOIRE_WONDER_RIDE_BOOK = ITEMS.register("grimoire_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","storious","dooms_driver_buckle_belt_storious"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","storious","dooms_driver_buckle_belt_storious"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 7,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
@@ -405,7 +405,7 @@ public class Saber_Rider_Items {
 					.addAlternative(ETERNAL_PHOENIX_WONDER_RIDE_BOOK_FALCHION.get()).AddCompatibilityList(new String[] {"espada"}).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> AMAZING_SIREN_WONDER_RIDE_BOOK = ITEMS.register("amazing_siren_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_amazing_siren","falchion","haken_bladriver_belt_s"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_amazing_siren","falchion","haken_bladriver_belt_s"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
@@ -478,14 +478,14 @@ public class Saber_Rider_Items {
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 5));
 
 	public static final DeferredItem<Item> KING_OF_ARTHUR_WONDER_RIDE_BOOK = ITEMS.register("king_of_arthur_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"king_of_arthur","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"king_of_arthur","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false))
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK, 3));
 
 	public static final DeferredItem<Item> DRAGONIC_KNIGHT_WONDER_RIDE_BOOK = ITEMS.register("dragonic_knight_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_dragonic_knight","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"saber_dragonic_knight","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
@@ -495,7 +495,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> EMOTIONAL_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("emotional_dragon_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_emotional_dragon","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"saber_emotional_dragon","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
@@ -504,7 +504,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIMITIVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("primitive_dragon_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_primitive_dragon","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"saber_primitive_dragon","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
@@ -514,7 +514,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ELEMENTAL_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("elemental_dragon_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_elemental_primitive_dragon","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"saber_elemental_primitive_dragon","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
@@ -526,7 +526,7 @@ public class Saber_Rider_Items {
 					.addNeedForm(PRIMITIVE_DRAGON_WONDER_RIDE_BOOK.get(), 1).AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> WONDER_ALMIGHTY_WONDER_RIDE_BOOK = ITEMS.register("wonder_almighty_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_wonder_almighty","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"saber_wonder_almighty","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
@@ -539,7 +539,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_HERO_SENKI_WONDER_RIDE_BOOK = ITEMS.register("super_hero_senki_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_super_hero_senki","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"saber_super_hero_senki","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
@@ -551,7 +551,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_LION_DAISENKI_WONDER_RIDE_BOOK = ITEMS.register("king_lion_daisenki_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"blades_king_lion_daisenki","blades","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"blades_king_lion_daisenki","blades","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
@@ -561,7 +561,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> TATEGAMI_HYOUJUU_SENKI_WONDER_RIDE_BOOK = ITEMS.register("tategami_hyoujuu_senki_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"blades_tategami_hyoujuu_senki","blades","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"blades_tategami_hyoujuu_senki","blades","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false)
@@ -573,7 +573,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARABIANA_NIGHT_WONDER_RIDE_BOOK = ITEMS.register("arabiana_night_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"espada_arabiana_night","espada","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"espada_arabiana_night","espada","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
@@ -584,7 +584,7 @@ public class Saber_Rider_Items {
 					.AddNum(2).ResetFormToBase().AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("gaikotsu_ninjaden_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","desast","seiken_swordriver_belt_desast"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","desast","seiken_swordriver_belt_desast"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
@@ -599,7 +599,7 @@ public class Saber_Rider_Items {
 					.AddCompatibilityList(new String[] {"blades"}).ChangeSlot(3).AddToList(RiderTabs.SABER_TAB_ITEM).AddToList(SwordOfLogosBookAnalyzer.BLANK_BOOK));
 
 	public static final DeferredItem<Item> ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK = ITEMS.register("ultimate_bahamut_wonder_ride_book",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"saber_ultimate_bahamut","saber","seiken_swordriver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"saber_ultimate_bahamut","saber","seiken_swordriver_belt"
 					,new MobEffectInstance(Effect_core.SLASH, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false)
@@ -660,10 +660,10 @@ public class Saber_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK_PART = ITEMS.register("omni_force_wonder_ride_book_part",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> OMNI_FORCE_WONDER_RIDE_BOOK_PART_2 = ITEMS.register("omni_force_wonder_ride_book_part_2",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOK_OF_RUIN = ITEMS.register("book_of_ruin",
 			() -> new BookOfRuinItem(new Item.Properties()).AddToList(RiderTabs.SABER_TAB_ITEM));
@@ -805,15 +805,15 @@ public class Saber_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SEIKEN_SAIKOU_DRIVER = ITEMS.register("seiken_saikou_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saikou",KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"saikou",KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> DOOMS_DRIVER_BUCKLE_SOLOMON = ITEMS.register("dooms_driver_buckle_solomon",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"solomon",OMNI_FORCE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"solomon",OMNI_FORCE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> DOOMS_DRIVER_BUCKLE_STORIOUS = ITEMS.register("dooms_driver_buckle_storious",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"storious",GRIMOIRE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"storious",GRIMOIRE_WONDER_RIDE_BOOK ,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> HAKEN_BLADRIVER_FALCHION = ITEMS.register("haken_bladriver_falchion",
@@ -852,7 +852,7 @@ public class Saber_Rider_Items {
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_DRIVER_DESAST = ITEMS.register("seiken_swordriver_desast",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"desast",GAIKOTSU_NINJADEN_WONDER_RIDE_BOOK,SABER_HELMET,SABER_CHESTPLATE,SABER_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -879,7 +879,7 @@ public class Saber_Rider_Items {
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> KINGEXCALIBUR = ITEMS.register("kingexcalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SUISEIKEN_NAGARE = ITEMS.register("suiseiken_nagare",
@@ -919,7 +919,7 @@ public class Saber_Rider_Items {
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> KOUGOUKEN_SAIKOU = ITEMS.register("kougouken_saikou",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> MUMEIKEN_KYOMU = ITEMS.register("mumeiken_kyomu",
@@ -935,26 +935,26 @@ public class Saber_Rider_Items {
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> CALADBOLG = ITEMS.register("caladbolg",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> BILGAMED = ITEMS.register("bilgamed",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> HAOUKEN_XROSS_SABER = ITEMS.register("haouken_xross_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()).IsFormItem(BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS.get()));
 
 	public static final DeferredItem<Item> DESTRUCTION_SHIELD = ITEMS.register("destruction_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM).ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> GEKKOU_RAIMEIKEN_IKAZUCHI = ITEMS.register("gekkou_raimeiken_ikazuchi",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> KOKURANKEN_SHIKKOKU = ITEMS.register("kokuranken_shikkoku",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.SABER_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.SABER_TAB_ITEM)
 					.ChangeRepairItem(BLANK_WONDER_RIDE_BOOK.get()));
 
 	public static final DeferredItem<Item> SHIMI_LOT = ITEMS.register("shimi_lot",

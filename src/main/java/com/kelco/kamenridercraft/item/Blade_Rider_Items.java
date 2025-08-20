@@ -11,10 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -31,7 +28,7 @@ public class Blade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROUZE_ABSORBER = ITEMS.register("rouze_absorber",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CHANGE_BEETLE = ITEMS.register("change_beetle",
@@ -41,7 +38,7 @@ public class Blade_Rider_Items {
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_EAGLE = ITEMS.register("fusion_eagle",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_jack", "blade", "blay_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "blade", "blay_buckle_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
@@ -50,10 +47,10 @@ public class Blade_Rider_Items {
 					.addNeedItem(ROUZE_ABSORBER.get()).hasFlyingWings(null).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOLUTION_CAUCASUS = ITEMS.register("evolution_caucasus",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_king", "blade", "blay_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), 0, "_king", "blade", "blay_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -62,7 +59,7 @@ public class Blade_Rider_Items {
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_silver_king", "blade", "blay_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), 0, "_silver_king", "blade", "blay_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -78,7 +75,7 @@ public class Blade_Rider_Items {
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_PEACOCK = ITEMS.register("fusion_peacock",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_jack", "garren", "garren_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "garren", "garren_buckle_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
@@ -90,7 +87,7 @@ public class Blade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOLUTION_GIRAFFA = ITEMS.register("evolution_giraffa",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_king", "garren", "garren_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_king", "garren", "garren_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -106,7 +103,7 @@ public class Blade_Rider_Items {
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOLUTION_PARADOXA = ITEMS.register("evolution_paradoxa",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_wild", "chalice", "chalice_rouzer_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_wild", "chalice", "chalice_rouzer_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
@@ -120,7 +117,7 @@ public class Blade_Rider_Items {
 					.AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_ELEPHANT = ITEMS.register("fusion_elephant",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_jack", "leangle", "leangle_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_jack", "leangle", "leangle_buckle_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
@@ -131,7 +128,7 @@ public class Blade_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOLUTION_TARANTULA = ITEMS.register("evolution_tarantula",
-			() -> new RiderFormChangeItem(new Item.Properties(), 0, "_king", "leangle", "leangle_buckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), 0, "_king", "leangle", "leangle_buckle_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
@@ -187,7 +184,7 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> KINGROUZER = ITEMS.register("kingrouzer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GARRENROUZER = ITEMS.register("garrenrouzer",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLEROUZER = ITEMS.register("leanglerouzer",
@@ -202,9 +199,9 @@ public class Blade_Rider_Items {
 	public static final DeferredItem<Item> CHALICE_ARROW = ITEMS.register("chalice_arrow",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_SLASHER = ITEMS.register("wild_slasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.BLADE_TAB_ITEM).ChangeRepairItem(BLADECARD.get()));
 	
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

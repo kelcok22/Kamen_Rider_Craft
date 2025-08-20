@@ -112,7 +112,7 @@ public class Modded_item_core {
 
 
     public static final DeferredItem<Item>  CARD_WARRIOR_KAMEN_RIDER_MANGA = ITEMS.register("card_warrior_kamen_rider_manga",
-            () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.Misc_TAB_ITEM).KeepItem());
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.Misc_TAB_ITEM).KeepItem());
 
 
     public static final DeferredItem<Item> DRAGREDER = ITEMS.register("dragreder",
@@ -154,7 +154,7 @@ public class Modded_item_core {
                     .hasStaticWings().AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> GRANDGOURAM = ITEMS.register("grandgouram",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_grand_gouram","kuuga","arcle_belt_r",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_grand_gouram","kuuga","arcle_belt_r",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -202,7 +202,7 @@ public class Modded_item_core {
             ).AddToList(RiderTabs.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAGRANZER = ITEMS.register("dragranzer",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_dragranzer","ryuki","v_buckle_belt_ryuki_s",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_dragranzer","ryuki","v_buckle_belt_ryuki_s",
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -279,7 +279,7 @@ public class Modded_item_core {
             ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI = ITEMS.register("bakuen_no_senshi",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_bakuen_no_senshi","faiz","faiz_driver_belt_b",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_bakuen_no_senshi","faiz","faiz_driver_belt_b",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -313,7 +313,7 @@ public class Modded_item_core {
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI = ITEMS.register("jinrai_no_senshi",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_jinrai_no_senshi","kuuga","arcle_belt_r",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jinrai_no_senshi","kuuga","arcle_belt_r",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -353,7 +353,7 @@ public class Modded_item_core {
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.Misc_TAB_ITEM)
                     .ChangeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> HERCULESPADER_SWORD = ITEMS.register("herculespader_sword",

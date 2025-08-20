@@ -16,10 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -64,7 +61,7 @@ public class W_Rider_Items {
 			.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 10));
 
 	public static final DeferredItem<Item> FANG_MEMORY = ITEMS.register("fang_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fang","w","wdriver_belt_fj",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_fang","w","wdriver_belt_fj",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -102,7 +99,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> XTREME_MEMORY = ITEMS.register("xtreme_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone_xtreme","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -113,7 +110,7 @@ public class W_Rider_Items {
 			.alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone_xtreme_gold","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme_gold","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -125,7 +122,7 @@ public class W_Rider_Items {
 			.alsoChange2ndSlot(JOKER_MEMORY.get()).hasStaticWings().AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cyclone_xtreme_accel","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme_accel","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -146,7 +143,7 @@ public class W_Rider_Items {
 			.AddToList(RiderTabs.W_TAB_ITEM).AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_trial","accel","acceldriver_belt_t",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trial","accel","acceldriver_belt_t",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -156,7 +153,7 @@ public class W_Rider_Items {
 			.AddToList(RiderTabs.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_BOOSTER_MEMORY = ITEMS.register("accel_booster_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_booster","accel","acceldriver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_booster","accel","acceldriver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -222,11 +219,11 @@ public class W_Rider_Items {
 			.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
 
 	public static final DeferredItem<Item> XTREME_MEMORY_G = ITEMS.register("xtreme_memory_g",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM)
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.W_TAB_ITEM)
 			.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 1));
 
 	public static final DeferredItem<Item> XTREME_MEMORY_S = ITEMS.register("xtreme_memory_s",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.W_TAB_ITEM)
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.W_TAB_ITEM)
 			.AddToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
 
 
@@ -351,7 +348,7 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> T2_ZONE_MEMORY = ITEMS.register("zone_t2_memory",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_strengthening_armament","eternal","lostdriver_belt_e",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_strengthening_armament","eternal","lostdriver_belt_e",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -481,11 +478,11 @@ public class W_Rider_Items {
 
 
 	public static final DeferredItem<Item> PRISM_BICKER = ITEMS.register("prism_bicker",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> SHIELD_PRISM_BICKER = ITEMS.register("shield_prism_bicker",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.W_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem( GAIA_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> ETERNAL_EDGE = ITEMS.register("eternal_edge",

@@ -12,10 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -199,7 +196,7 @@ public class Kabuto_Rider_Items {
                 .AddToList(RiderTabs.KABUTO_TAB_ITEM));
         
         public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
-                () -> new RiderFormChangeItem(new Item.Properties(),0,"_hyper","kabuto","kabuto_rider_belt",
+                () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_hyper","kabuto","kabuto_rider_belt",
                         new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                         new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
                         new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -277,7 +274,7 @@ public class Kabuto_Rider_Items {
                 () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chophopper",CHOPHOPPER_ZECTER ,KABUTOHELMET,KABUTOCHESTPLATE,KABUTOLEGGINGS, new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.KABUTO_TAB_ITEM).ChangeRepairItem(MINI_ZECTER.get()).has_basic_model());
 
         public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
-                () -> new ClockUpPadItem(new Item.Properties()).AddToList(RiderTabs.KABUTO_TAB_ITEM));
+                () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.KABUTO_TAB_ITEM));
 
         public static final DeferredItem<Item> KABUTO_KUNAI = ITEMS.register("kabuto_kunai",
                 () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
@@ -289,7 +286,7 @@ public class Kabuto_Rider_Items {
                 () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                 .ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> PERFECT_ZECTER = ITEMS.register("perfect_zecter",
-                () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
+                () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)
                 .ChangeRepairItem(MINI_ZECTER.get()));
         public static final DeferredItem<Item> DRAKE_GLIP = ITEMS.register("drake_grip",
                 () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KABUTO_TAB_ITEM)

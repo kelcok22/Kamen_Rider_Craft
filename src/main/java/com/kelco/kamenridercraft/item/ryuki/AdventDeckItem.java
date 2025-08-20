@@ -31,8 +31,8 @@ import java.util.List;
 public class AdventDeckItem extends BaseItem {
 	private static final Component UNKNOWN_CONTENTS = Component.translatable("container.shulkerBox.unknownContents");
 
-	public AdventDeckItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
+	public AdventDeckItem(Properties prop) {
+		super(prop.stacksTo(1).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
 	}
 
 	@Override

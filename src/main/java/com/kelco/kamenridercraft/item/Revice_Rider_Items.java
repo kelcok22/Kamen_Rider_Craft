@@ -60,7 +60,7 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)));
 
 	public static final DeferredItem<Item> BARID_REX_VISTAMP = ITEMS.register("barid_rex_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_barid_rex","revi","revice_driver_belt_b",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_barid_rex","revi","revice_driver_belt_b",
                 new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -76,7 +76,7 @@ public class Revice_Rider_Items {
                 new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)));
 
 	public static final DeferredItem<Item> VOLCANO_VISTAMP = ITEMS.register("volcano_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_volcano_rex","revi","revice_driver_belt_v",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_volcano_rex","revi","revice_driver_belt_v",
                 new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
@@ -86,7 +86,7 @@ public class Revice_Rider_Items {
 				.ChangeBeltModel("geo/volcano_riderbelt.geo.json").addAlternative(VOLCANO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ROLLING_VISTAMP = ITEMS.register("rolling_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_jack_revice","revi","revice_driver_belt_r",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jack_revice","revi","revice_driver_belt_r",
 				new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -94,7 +94,7 @@ public class Revice_Rider_Items {
 				.ChangeBeltModel("geo/volcano_riderbelt.geo.json").AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> THUNDER_GALE_VISTAMP = ITEMS.register("thunder_gale_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_revice","revi","revice_driver_belt_t",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_revice","revi","revice_driver_belt_t",
 				new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -114,7 +114,7 @@ public class Revice_Rider_Items {
 				new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false)));
 
 	public static final DeferredItem<Item> GIFFARD_REX_VISTAMP = ITEMS.register("giffard_rex_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_ultimate","revi","revice_driver_belt_g",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_ultimate","revi","revice_driver_belt_g",
 				new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -125,7 +125,7 @@ public class Revice_Rider_Items {
 				new MobEffectInstance(Effect_core.PUNCH, 40, 8,true,false)).addAlternative(GIFFARD_REX_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FIFTY_GALE_VISTAMP = ITEMS.register("fifty_gale_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_igarashi","revi","revice_driver_belt_f",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_igarashi","revi","revice_driver_belt_f",
 				new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -149,7 +149,7 @@ public class Revice_Rider_Items {
 				.addAlternative(GOLD_SPINO_VISTAMP_VICE.get()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRUE_REX_VISTAMP = ITEMS.register("true_rex_vistamp",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_shin","revi","revice_driver_belt_tr",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_shin","revi","revice_driver_belt_tr",
 				new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 				new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
@@ -335,7 +335,7 @@ public class Revice_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOLY_WING_VISTAMP = ITEMS.register("holy_wing_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_holy","live","two_sidriver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_holy","live","two_sidriver_belt",
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -343,7 +343,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> PERFECT_WING_VISTAMP = ITEMS.register("perfect_wing_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_evility","live","two_sidriver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_evility","live","two_sidriver_belt",
                     new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -351,7 +351,7 @@ public class Revice_Rider_Items {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEGA_BAT_VISTAMP = ITEMS.register("mega_bat_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","live_marvelous","revice_driver_belt_live",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","live_marvelous","revice_driver_belt_live",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
@@ -365,7 +365,7 @@ public class Revice_Rider_Items {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)).AddToList(VistampBar.PROTO_VISTAMP, 6).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIANT_SPIDER_VISTAMP = ITEMS.register("giant_spider_vistamp",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_imperial","demons","demons_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_imperial","demons","demons_driver_belt",
 					new MobEffectInstance(MobEffects.POISON, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -380,7 +380,7 @@ public class Revice_Rider_Items {
     		        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIRAFFA_VISTAMP = ITEMS.register("giraffa_vistamp",
-    		() -> new RiderFormChangeItem(new Item.Properties(),0,"","over_demons_get","demons_driver_belt",
+    		() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","over_demons_get","demons_driver_belt",
     		        new MobEffectInstance(Effect_core.FLYING, 40, 0,true,false),
     		        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
     		        new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -435,7 +435,7 @@ public class Revice_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(VistampBar.PROTO_VISTAMP, 3).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_COBRA_VISTAMP = ITEMS.register("king_cobra_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_invincible","jeanne","libera_driver_belt_k",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_invincible","jeanne","libera_driver_belt_k",
                     new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -452,7 +452,7 @@ public class Revice_Rider_Items {
     		        new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> CRIMSON_VAIL_VISTAMP = ITEMS.register("crimson_vail_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","crimson_vail","crimson_vail_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","crimson_vail","crimson_vail_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -500,7 +500,7 @@ public class Revice_Rider_Items {
 					.addAlternative(KOMODO_DRAGON_VISTAMP_DEMONS.get()).AddToList(VistampBar.PROTO_VISTAMP).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLOOD_VADE_VISTAMP = ITEMS.register("blood_vade_vistamp",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","blood_vade","vade_belt_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","blood_vade","vade_belt_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
@@ -528,21 +528,21 @@ public class Revice_Rider_Items {
             () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TWIN_CHIMERA_VISTAMP = ITEMS.register("twin_chimera_vistamp",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","chimera","chimera_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","chimera","chimera_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRI_CHIMERA_VISTAMP = ITEMS.register("tri_chimera_vistamp",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","daimon","chimera_driver_daimon_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","daimon","chimera_driver_daimon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)).AddToList(RiderTabs.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> JUUGA_VISTAMP = ITEMS.register("juuga_vistamp",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","juuga","juuga_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","juuga","juuga_driver_belt",
                 	new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -908,7 +908,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> GET_OVER_DEMONS_DRIVER = ITEMS.register("get_over_demons_driver",
 			() -> new DemonsDriverItem(ArmorMaterials.DIAMOND,"over_demons_get",GIRAFFA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -982,11 +982,11 @@ public class Revice_Rider_Items {
 			}.Has_Inventory_Gui().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VAIL_BELT = ITEMS.register("vail_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"crimson_vail",CRIMSON_VAIL_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"crimson_vail",CRIMSON_VAIL_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	public static final DeferredItem<Item> VADE_BELT = ITEMS.register("vade_belt",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_vade",BLOOD_VADE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blood_vade",BLOOD_VADE_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
 	
@@ -1036,7 +1036,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER = ITEMS.register("chimera_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"chimera",TWIN_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1058,7 +1058,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> CHIMERA_DRIVER_DAIMON = ITEMS.register("chimera_driver_daimon",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"daimon",TRI_CHIMERA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1080,7 +1080,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> JUUGA_DRIVER = ITEMS.register("juuga_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"juuga",JUUGA_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.RARE).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1106,7 +1106,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> REVICE_DRIVER_LIVE = ITEMS.register("revice_driver_live",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"live_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1128,7 +1128,7 @@ public class Revice_Rider_Items {
 
 	public static final DeferredItem<Item> REVICE_DRIVER_EVIL = ITEMS.register("revice_driver_evil",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"evil_marvelous",MEGA_BAT_VISTAMP ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS ,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1165,7 +1165,7 @@ public class Revice_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 	
 	public static final DeferredItem<Item> BARID_SHIELD = ITEMS.register("egg_shield",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
+            () -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));
 
     public static final DeferredItem<Item> MAMMOTH_GASHER  = ITEMS.register("mammoth_gasher",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.REVICE_TAB_ITEM).ChangeRepairItem(PROTO_VISTAMP.get()));

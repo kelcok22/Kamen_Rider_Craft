@@ -15,10 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -55,7 +52,7 @@ public class 	Geats_Rider_Items {
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_ONENESS_CORE_ID = ITEMS.register("geats_oneness_rider_core_id",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 	
 
 	public static final DeferredItem<Item> TYCOON_CORE_ID = ITEMS.register("tycoon_rider_core_id",
@@ -74,7 +71,7 @@ public class 	Geats_Rider_Items {
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID_CRACKED = ITEMS.register("buffa_rider_core_id_cracked",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jyamato","buffa","desire_driver_belt_buffa",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamato","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.ANTIPOISON, 40, 0,true,false))
@@ -183,12 +180,12 @@ public class 	Geats_Rider_Items {
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","x_geats","desire_driver_belt_vice",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","x_geats","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 			.hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","dooms_geats","desire_driver_belt_dooms_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","dooms_geats","desire_driver_belt_dooms_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 			.hasStaticWings().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
@@ -285,7 +282,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(BaseDesireDriverUsers));
 
 	public static final DeferredItem<Item> FANTASY_RAISE_BUCKLE = ITEMS.register("fantasy_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fantasy","na_go","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_fantasy","na_go","desire_driver_belt_geats",
 					new MobEffectInstance(Effect_core.REFLECT, 40, 1,true,false),
 					new MobEffectInstance(Effect_core.SLASH, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false))
@@ -380,13 +377,13 @@ public class 	Geats_Rider_Items {
 
 	
 	public static final DeferredItem<Item> FEVER_SLOT_RAISE_BUCKLE = ITEMS.register("fever_slot_raise_buckle",
-			() -> new FeverSlotItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new FeverSlotItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	
 	  public static List<Item> NEED_ITEM_COMMAND_TWIN= new ArrayList<Item>();
 	  
 	public static final DeferredItem<Item> COMMAND_TWIN_BUCKLE_JET = ITEMS.register("command_twin_buckle_jet",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_raising","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_raising","geats","desire_driver_belt_geats",
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
 			.ChangeSlot(2).SetOffhandSlot(3).AddCompatibilityList(new String[] {"buffa","tycoon"}
 					).AddToList(NEED_ITEM_COMMAND_TWIN).AddToList(RiderTabs.GEATS_TAB_ITEM));
@@ -402,7 +399,7 @@ public class 	Geats_Rider_Items {
 					).addNeedForm(COMMAND_TWIN_BUCKLE_JET.get(), 2));
 
 	public static final DeferredItem<Item> COMMAND_TWIN_BUCKLE_CANNON = ITEMS.register("command_twin_buckle_cannon",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cannon","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_cannon","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -413,7 +410,7 @@ public class 	Geats_Rider_Items {
 
 	
 	public static final DeferredItem<Item> BOOST_MKII_RAISE_BUCKLE = ITEMS.register("boost_mkii_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boost_mkii","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_boost_mkii","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -425,7 +422,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).AddCompatibilityList(new String[] {"tycoon"}).alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNITE_GRIP = ITEMS.register("unite_grip",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_laser_boost","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_laser_boost","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
@@ -434,7 +431,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).addNeedForm(BOOST_MKII_RAISE_BUCKLE.get(), 2).alsoChange3rdSlot(BOOST_MKII_RAISE_BUCKLE.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKIII_RAISE_BUCKLE = ITEMS.register("boost_mkiii_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_boost_mkiii","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_boost_mkiii","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -447,7 +444,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).SetOffhandSlot(3).AddToList(RiderTabs.GEATS_TAB_ITEM));
 	
 	public static final DeferredItem<Item> ONENESS_RAISE_BUCKLE = ITEMS.register("oneness_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_oneness","geats","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_oneness","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 7,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
@@ -463,7 +460,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).addNeedItem(GEATS_ONENESS_CORE_ID.get()).addNeedForm(BOOST_MKIII_RAISE_BUCKLE.get(), 3).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> XGEATS_RAISE_BUCKLE = ITEMS.register("x_geats_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x_geats","x_geats","desire_driver_belt_vice",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_x_geats","x_geats","desire_driver_belt_vice",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
@@ -476,7 +473,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).SetOffhandSlot(3).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_RAISE_BUCKLE = ITEMS.register("dooms_geats_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_dooms_geats","dooms_geats","desire_driver_belt_dooms_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_dooms_geats","dooms_geats","desire_driver_belt_dooms_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
@@ -489,7 +486,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(2).SetOffhandSlot(3).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_SWORD_RAISE_BUCKLE = ITEMS.register("bujin_sword_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_bujin_sword","tycoon","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_bujin_sword","tycoon","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -498,7 +495,7 @@ public class 	Geats_Rider_Items {
 			.ChangeSlot(3).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_RAISE_BUCKLE = ITEMS.register("plosion_rage_raise_buckle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_plosion_rage_2","buffa","desire_driver_belt_geats",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_plosion_rage_2","buffa","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -846,7 +843,7 @@ public class 	Geats_Rider_Items {
 			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","beroba","raise_riser_belt_premium",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","beroba","raise_riser_belt_premium",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 2,true,false),
@@ -872,7 +869,7 @@ public class 	Geats_Rider_Items {
 			.SetPalyerModelInvisible().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_premium","kekera","raise_riser_belt_premium_kekera",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_premium","kekera","raise_riser_belt_premium_kekera",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -909,7 +906,7 @@ public class 	Geats_Rider_Items {
 			.AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ziingazer","laser_raise_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","ziingazer","laser_raise_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -930,7 +927,7 @@ public class 	Geats_Rider_Items {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)));
 	
 	public static final DeferredItem<Item> SIRIUS_CARD = ITEMS.register("sirius_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","regad","zillion_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","regad","zillion_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -940,7 +937,7 @@ public class 	Geats_Rider_Items {
 			.addSwitchForm(SIRIUS_CARD_OMEGA.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIRIUS_CARD_GAZER_ZERO = ITEMS.register("sirius_card_gazer_zero",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gazer_zero","zillion_driver_gazer_zero_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","gazer_zero","zillion_driver_gazer_zero_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -1068,11 +1065,11 @@ public class 	Geats_Rider_Items {
 			.Add_Extra_Base_Form_Items(Modded_item_core.BLANK_FORM,Modded_item_core.BLANK_FORM).AddToTabList(RiderTabs.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_X_GEATS = ITEMS.register("desire_driver_x_geats",
-			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"x_geats",X_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
+			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"x_geats",X_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
 			.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(XGEATS_RAISE_BUCKLE,XGEATS_RAISE_BUCKLE).AddToTabList(RiderTabs.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_DOOMS_GEATS = ITEMS.register("desire_driver_dooms_geats",
-			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"dooms_geats",DOOMS_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
+			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"dooms_geats",DOOMS_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
 			.Dont_show_belt_form_info().Add_Extra_Base_Form_Items(DOOMS_GEATS_RAISE_BUCKLE,DOOMS_GEATS_RAISE_BUCKLE).AddToTabList(RiderTabs.GEATS_TAB_ITEM).ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	
@@ -1114,15 +1111,15 @@ public class 	Geats_Rider_Items {
  
 	 public static final DeferredItem<Item> ZILLION_DRIVER = ITEMS.register("zillion_driver",
              () -> new ZillionDriverItem(ArmorMaterials.DIAMOND,"regad",SIRIUS_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
-           		  new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+           		  new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM));
  
 	 public static final DeferredItem<Item> ZILLION_DRIVER_GAZER_ZERO = ITEMS.register("zillion_driver_gazer_zero",
              () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS, 
-           		  new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+           		  new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LASER_RISE_DRIVER_GAZER_ZERO = ITEMS.register("laser_raise_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",PROVIDENCE_CARD_ZIINGAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).Dont_show_belt_form_info().AddToTabList(RiderTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",
@@ -1130,7 +1127,7 @@ public class 	Geats_Rider_Items {
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X_RIFLE = ITEMS.register("magnum_shooter_40x_rifle",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER = ITEMS.register("zombie_breaker",
@@ -1138,7 +1135,7 @@ public class 	Geats_Rider_Items {
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER_POISON_CHARGE = ITEMS.register("zombie_breaker_poison_charge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BEAT_AXE = ITEMS.register("beat_axe",
@@ -1154,35 +1151,35 @@ public class 	Geats_Rider_Items {
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER = ITEMS.register("ninja_dueler",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISING_SWORD = ITEMS.register("raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_QB9 = ITEMS.register("geats_buster_qb9",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 			
 	public static final DeferredItem<Item> GEATS_BUSTER_X = ITEMS.register("geats_buster_x",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> X_RAISING_SWORD = ITEMS.register("x_raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_BUSTER = ITEMS.register("dooms_geats_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BUJIN = ITEMS.register("bujin",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_SHIELD = ITEMS.register("plosion_rage_shield",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GEATS_TAB_ITEM)
 			.ChangeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_SWORD = ITEMS.register("gigant_sword",
@@ -1259,10 +1256,10 @@ public class 	Geats_Rider_Items {
 			.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKII_WISH_CARD = ITEMS.register("boost_mkii_wish_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> JYAMASHIN_WISH_CARD = ITEMS.register("jyamashin_wish_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_jyamashin","buffa","desire_driver_belt_buffa",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_jyamashin","buffa","desire_driver_belt_buffa",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1270,17 +1267,17 @@ public class 	Geats_Rider_Items {
 			.alsoChange3rdSlot(Modded_item_core.BLANK_FORM.get()).alsoChange2ndSlot(Modded_item_core.BLANK_FORM.get()).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUROTO_DAN_CARD = ITEMS.register("kuroto_dan_card",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().model_has_different_name("jyamashin_wish_card").AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DGP_WINNERS_COIN = ITEMS.register("dgp_winners_coin",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToList(RiderTabs.GEATS_TAB_ITEM));
 
 	public static void register(net.neoforged.bus.api.IEventBus eventBus) {
 		ITEMS.register(eventBus);
