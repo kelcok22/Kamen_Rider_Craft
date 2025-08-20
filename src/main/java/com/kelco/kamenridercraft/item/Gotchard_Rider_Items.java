@@ -50,6 +50,7 @@ public class Gotchard_Rider_Items {
 	public static List<Item> NEED_ITEM_MarsPhoenix2= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_Rainbow= new ArrayList<Item>();
+	public static List<Item> NEED_ITEM_Ultima= new ArrayList<Item>();
 
 	public static List<Item> NEED_ITEM_OdoriMantis= new ArrayList<Item>();
 	public static List<Item> NEED_ITEM_MadPilets= new ArrayList<Item>();
@@ -602,8 +603,7 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
-					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
-					new MobEffectInstance(Effect_core.BOOST, 40, 2,true,false))
+					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
 					.AddNeedItemList(NEED_ITEM_Rainbow).AddToList(NEED_ITEM_Rainbow).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> NIJIGON_RIDE_CHEMY_CARD_SPECIAL = ITEMS.register("nijigon_ride_chemy_card_special",
@@ -628,6 +628,24 @@ public class Gotchard_Rider_Items {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false))
 					.addNeedForm(TENLINER_RIDE_CHEMY_CARD.get()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("hopper1_ride_chemy_card_ultima",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"","gotchard","gotchardriver_belt_daybreak",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 9,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 9,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 9,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
+					new MobEffectInstance(Effect_core.PUNCH, 40, 9,true,false))
+					.AddNeedItemList(NEED_ITEM_Ultima).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
+
+	public static final DeferredItem<Item> STEAMLINER_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("steamliner_ride_chemy_card_ultima",
+			() -> new CopyFormChangeItem(new Item.Properties(), HOPPER1_RIDE_CHEMY_CARD_ULTIMA.get()).AddToList(NEED_ITEM_Ultima).AddToList(RiderTabs.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> X_ASSEMBLE_RIDE_CHEMY_CARD = ITEMS.register("x_assemble_ride_chemy_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_star","gotchard","gotchardriver_belt_star",

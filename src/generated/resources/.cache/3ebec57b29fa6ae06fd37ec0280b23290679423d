@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-17T00:40:52.3412677	Item Models: kamenridercraft
+// 1.21.1	2025-08-20T16:14:49.1477318	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 6d5634426eeb42c0d0b168f6237855cc5b6d9aee assets/kamenridercraft/models/item/agito_shining_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
@@ -207,6 +207,7 @@ a07acae377b6df0de55a2064bcc6ffcd24bb6c3a assets/kamenridercraft/models/item/helh
 02c36591229e460d9066cb2f800af08b567e94c7 assets/kamenridercraft/models/item/hexa_oooooo.json
 85d7bf7624a9d9a3682635a77771f3c1ce8a554d assets/kamenridercraft/models/item/hibiki_ride_chemy_card.json
 455ecf868613e5ca2ef1b19650abc8fede7d0d84 assets/kamenridercraft/models/item/hichew_gochizo.json
+b978aebb5ea0e62bb75c1908421d77b6ca1094bb assets/kamenridercraft/models/item/hopper1_ride_chemy_card_ultima.json
 70d6c79243e4068dd15cbb49476aece8d2dd9f44 assets/kamenridercraft/models/item/hotcaken_gochizo.json
 0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
 8b5d75860f71750d3905a3d57c74a2b704970ef2 assets/kamenridercraft/models/item/inphoenix_ride_chemy_card.json
@@ -364,6 +365,7 @@ dcf9bddf405e71a3399687707cd404db5a29b750 assets/kamenridercraft/models/item/spar
 9d4c5953e3da2f28bdfb87e5d095be16a3d1aad4 assets/kamenridercraft/models/item/spicle_ride_chemy_card.json
 da3a067f7ce7563da630fd41968bf9d993e05276 assets/kamenridercraft/models/item/square_astroswitch.json
 ac6fa777dd48ab88a74eba52b76dfc7832820d44 assets/kamenridercraft/models/item/stagvine_ride_chemy_card.json
+8e27e2b8f45a37c589d5af32949bbf79b984086a assets/kamenridercraft/models/item/steamliner_ride_chemy_card_ultima.json
 ad96f2530fa729165596a9449f306ab0f94307af assets/kamenridercraft/models/item/strawberryjellytirol_gochizo.json
 0c9e7e31906e2567c23438fa9425b7934c521318 assets/kamenridercraft/models/item/stream_capsem.json
 197544477f86874d1495dd28d8938a7147e22fc4 assets/kamenridercraft/models/item/super_sentai_full_bottle.json
