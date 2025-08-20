@@ -157,7 +157,7 @@ public class Miscellaneous_Rider_Items {
 						.SetShowUnder().addAlternative(ELECTRER_CORE_ARTIST.get()));
 	 
 	    public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
-	            () -> new RiderFormChangeItem(new Item.Properties(),0,"_artist","kuuga","arcle_belt_r",
+	            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_artist","kuuga","arcle_belt_r",
 	            		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 	            		new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 	            		new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
@@ -269,7 +269,7 @@ public class Miscellaneous_Rider_Items {
 
 
 	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
-			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).AddToList(RiderTabs.Misc_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).AddToList(RiderTabs.Misc_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 	    

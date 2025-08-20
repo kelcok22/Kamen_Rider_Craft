@@ -244,7 +244,7 @@ public class Gavv_Rider_Items {
 					.addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
 					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -252,7 +252,7 @@ public class Gavv_Rider_Items {
 					.AddToList(CAKE,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLIZZARDSORBEI_GOCHIZO = ITEMS.register("blizzardsorbei_gochizo",
-			() -> new BlizzardsorbeiItem(new Item.Properties(),0,"_blizzardsorbet","gavv","henshin_belt_gavv_belt_blizzardsorbet",
+			() -> new BlizzardsorbeiItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_blizzardsorbet","gavv","henshin_belt_gavv_belt_blizzardsorbet",
 					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -277,7 +277,7 @@ public class Gavv_Rider_Items {
 
 
 	public static final DeferredItem<Item> GOCHIPOD = ITEMS.register("gochipod",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_over","gavv","henshin_belt_gavv_belt_over",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_over","gavv","henshin_belt_gavv_belt_over",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false),
@@ -299,7 +299,7 @@ public class Gavv_Rider_Items {
 
 
 	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
 					new MobEffectInstance(Effect_core.GRAVITY, 40, 0,true,false),
@@ -322,7 +322,7 @@ public class Gavv_Rider_Items {
 					.AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> FRAPPEIS_GOCHIZO = ITEMS.register("frappeis_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","valen_frappe_custom","vrastumgear_belt_frappe",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","valen_frappe_custom","vrastumgear_belt_frappe",
 					new MobEffectInstance(Effect_core.BLIZZARD, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -346,7 +346,7 @@ public class Gavv_Rider_Items {
 					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUDDINTE_GOCHIZO = ITEMS.register("puddinte_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_a_la_mode","vram","vrastumgear_belt_mode",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_a_la_mode","vram","vrastumgear_belt_mode",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -652,7 +652,7 @@ public class Gavv_Rider_Items {
 					.Override_belt_text("valenbuckle_belt").AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR_VALEN = ITEMS.register("vrastumgear_valen",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen_frappe_custom",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties())
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"valen_frappe_custom",FRAPPEIS_GOCHIZO ,GAVV_HELMET,GAVV_CHESTPLATE,GAVV_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.has_basic_model().AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VRASTUMGEAR = ITEMS.register("vrastumgear",
@@ -705,7 +705,7 @@ public class Gavv_Rider_Items {
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> GAVVWHIPIR = ITEMS.register("gavvwhipir",
-			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
+			() -> new GavvwhipirItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAVV_TAB_ITEM)
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> VALENBUSTER = ITEMS.register("valenbuster",
@@ -720,7 +720,7 @@ public class Gavv_Rider_Items {
 					.ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> SILVER_DEFENSER = ITEMS.register("silver_defenser",
-			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.GAVV_TAB_ITEM).ChangeRepairItem(BLANK_GOCHIZO.get()));
 
 	public static final DeferredItem<Item> BITTER_GAVVGABLADE = ITEMS.register("bitter_gavvgablade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.GAVV_TAB_ITEM)

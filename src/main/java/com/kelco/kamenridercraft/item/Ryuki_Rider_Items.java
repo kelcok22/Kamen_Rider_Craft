@@ -12,10 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -134,7 +131,7 @@ public class Ryuki_Rider_Items {
 			);
 
 	public static final DeferredItem<Item> SURVIVE_REKKA = ITEMS.register("survive_rekka",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","ryuki","v_buckle_belt_ryuki_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","ryuki","v_buckle_belt_ryuki_s",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -160,7 +157,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).addAlternative(SURVIVE_SHIPPU_RAIA.get()));
 	  
 	public static final DeferredItem<Item> SURVIVE_SHIPPU = ITEMS.register("survive_shippu",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive","knight","v_buckle_belt_knight_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive","knight","v_buckle_belt_knight_s",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -168,7 +165,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).addAlternative(SURVIVE_SHIPPU_OUJA.get()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_MUGEN = ITEMS.register("survive_mugen",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive_mugen","ouja","v_buckle_belt_ouja_s",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive_mugen","ouja","v_buckle_belt_ouja_s",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
@@ -176,7 +173,7 @@ public class Ryuki_Rider_Items {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	  
 	public static final DeferredItem<Item> SURVIVE_BLACK = ITEMS.register("survive_black",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_survive_black","ryuki","v_buckle_belt_ryuki",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_survive_black","ryuki","v_buckle_belt_ryuki",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -276,10 +273,10 @@ public class Ryuki_Rider_Items {
             () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem( ADVENT_CARD.get()));
     
     public static final DeferredItem<Item> DRAG_VISOR_ZWEI = ITEMS.register("drag_visor_zwei",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> DRAG_BLADE = ITEMS.register("drag_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> DARK_VISOR = ITEMS.register("dark_visor",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -291,10 +288,10 @@ public class Ryuki_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> DARK_SHIELD = ITEMS.register("dark_visor_zwei",
-            () -> new BaseShieldItem(new Item.Properties()).AddToTabList(KamenRiderCraftCore.DARK_SHIELD_ITEM).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(KamenRiderCraftCore.DARK_SHIELD_ITEM).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> DARK_ARROW = ITEMS.register("dark_arrow",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> SCISSORS_VISOR = ITEMS.register("scissors_visor",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -324,7 +321,7 @@ public class Ryuki_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> EVIL_VISOR_ZWEI = ITEMS.register("evil_visor_zwei",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> METAL_VISOR = ITEMS.register("metal_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -339,7 +336,7 @@ public class Ryuki_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> VENO_VISOR_ZWEI = ITEMS.register("veno_visor_zwei",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> GOLD_VISOR = ITEMS.register("gold_visor",
             () -> new BaseSwordItem(Tiers.DIAMOND, 10, -3F, new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
@@ -387,7 +384,7 @@ public class Ryuki_Rider_Items {
             () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem( ADVENT_CARD.get()));
     
     public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI = ITEMS.register("black_drag_visor_zwei",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).AddToTabList(RiderTabs.RYUKI_TAB_ITEM).ChangeRepairItem(ADVENT_CARD.get()));
 	
     public static final DeferredItem<Item> BIO_VISOR = ITEMS.register("bio_visor",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM));
@@ -562,47 +559,47 @@ public class Ryuki_Rider_Items {
 	**/
 
 	 public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
-			 () -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			 () -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUKI_DECK = ITEMS.register("advent_deck_ryuki",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> KNIGHT_DECK = ITEMS.register("advent_deck_knight",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ZOLDA_DECK = ITEMS.register("advent_deck_zolda",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> OUJA_DECK = ITEMS.register("advent_deck_ouja",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> SCISSORS_DECK = ITEMS.register("advent_deck_scissors",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RAIA_DECK = ITEMS.register("advent_deck_raia",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> GAI_DECK = ITEMS.register("advent_deck_gai",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> TIGER_DECK = ITEMS.register("advent_deck_tiger",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> IMPERER_DECK = ITEMS.register("advent_deck_imperer",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> VERDE_DECK = ITEMS.register("advent_deck_verde",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> FEMME_DECK = ITEMS.register("advent_deck_femme",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUGA_DECK = ITEMS.register("advent_deck_ryuga",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ODIN_DECK = ITEMS.register("advent_deck_odin",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ABYSS_DECK = ITEMS.register("advent_deck_abyss",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> ALTERNATIVE_DECK = ITEMS.register("advent_deck_alternative",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).AddToList(RiderTabs.RYUKI_TAB_ITEM).KeepItem());
 	public static final DeferredItem<Item> RYUKI_SURVIVE_DECK = ITEMS.register("advent_deck_ryuki_survive",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_SURVIVE_DECK = ITEMS.register("advent_deck_knight_survive",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> OUJA_SURVIVE_DECK = ITEMS.register("advent_deck_ouja_survive",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RAIA_SURVIVE_DECK = ITEMS.register("advent_deck_raia_survive",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> RYUGA_SURVIVE_DECK = ITEMS.register("advent_deck_ryuga_survive",
-			() -> new AdventDeckItem().AddToList(RiderTabs.RYUKI_TAB_ITEM));
+			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.RYUKI_TAB_ITEM));
 
 	 public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

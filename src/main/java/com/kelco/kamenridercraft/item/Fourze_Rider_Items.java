@@ -15,10 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -280,12 +277,12 @@ public class Fourze_Rider_Items {
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_switch_n",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magnet_n_module","fourze","fourze_driver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_magnet_n_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.PULL, 40, 2,true,false))
 					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 	public static final DeferredItem<Item> MAGNET_ASTROSWITCH_S = ITEMS.register("magnet_switch_s",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magnet_s_module","fourze","fourze_driver_belt"
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_magnet_s_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(Effect_core.PUSH, 40, 2,true,false))
 					.ChangeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
@@ -330,17 +327,17 @@ public class Fourze_Rider_Items {
 					.ChangeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
 	public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cosmic_module","fourze","fourze_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cosmic_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
 					.alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(AstroswitchProgrammer.ASTROSWITCH, 1));
 
 	public static final DeferredItem<Item> SUPER_ROCKET_ASTROSWITCH = ITEMS.register("super_rocket_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_rocket_module","fourze","fourze_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super_rocket_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false))
 					.ChangeSlot(4).alsoChange5thSlot(FOURZE_ROCKET_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_LAUNCHER_ASTROSWITCH = ITEMS.register("super_launcher_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_super_launcher_module","fourze","fourze_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_super_launcher_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.CANNON, 40, 6,true,false))
 					.ChangeSlot(2).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).ResetFormToBase().AddToList(RiderTabs.FOURZE_TAB_ITEM));
 
@@ -349,7 +346,7 @@ public class Fourze_Rider_Items {
 
 
 	public static final DeferredItem<Item> CLEAR_DRILL_ASTROSWITCH = ITEMS.register("clear_drill_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rocket_drill_module","fourze","fourze_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rocket_drill_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(Effect_core.BOOST, 40, 1,true,false))
 					.addNeedItem(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ROCKET_DRILL_STATES.get()).alsoChange3rdSlot(BLANK_TRIANGLE_ASTROSWITCH.get()).AddToList(RiderTabs.FOURZE_TAB_ITEM));
@@ -364,7 +361,7 @@ public class Fourze_Rider_Items {
 
 
 	public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_storm","meteor","meteor_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_storm","meteor","meteor_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
@@ -403,7 +400,7 @@ public class Fourze_Rider_Items {
 					.model_has_different_name("fusion_switch").has_basic_model());
 
 	public static final DeferredItem<Item> FUSION_ASTROSWITCH = ITEMS.register("fusion_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_fusion_nadeshiko_module","fourze","fourze_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_fusion_nadeshiko_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(Effect_core.SLASH, 40, 2,true,false))
 					.ChangeSlot(4).ResetFormToBase()
 					.alsoChange5thSlot(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get())
@@ -602,14 +599,14 @@ public class Fourze_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> BARIZUN_SWORD = ITEMS.register("barizun_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToTabList(RiderTabs.FOURZE_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> SHIELD_MODULE = ITEMS.register("shield_module",
 			() -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM)
 			.ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static final DeferredItem<Item> METEOR_STORM_SHAFT = ITEMS.register("meteor_storm_shaft",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.FOURZE_TAB_ITEM).ChangeRepairItem(BLANK_ASTROSWITCH.get()));
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

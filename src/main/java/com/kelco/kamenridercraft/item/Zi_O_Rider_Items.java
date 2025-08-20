@@ -120,7 +120,7 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_II_RIDEWATCH = ITEMS.register("zi_o_ii_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ii","zi_o","ziku_driver_zi_o_belt_zi_o_ii",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_ii","zi_o","ziku_driver_zi_o_belt_zi_o_ii",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -128,7 +128,7 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZI_O_TRINITY_RIDEWATCH = ITEMS.register("zi_o_trinity_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_trinity","zi_o","ziku_driver_zi_o_belt_trinity",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_trinity","zi_o","ziku_driver_zi_o_belt_trinity",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -137,7 +137,7 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRAND_ZI_O_RIDEWATCH = ITEMS.register("grand_zi_o_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_grand","zi_o","ziku_driver_zi_o_belt_grand",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_grand","zi_o","ziku_driver_zi_o_belt_grand",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -150,7 +150,7 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ohma","zi_o","ziku_driver_zi_o_belt_ohma",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_ohma","zi_o","ziku_driver_zi_o_belt_ohma",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
@@ -180,7 +180,7 @@ public class Zi_O_Rider_Items {
 					.model_has_different_name("geiz_revive_ridewatch").has_basic_model());
 
 	public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_revive_goretsu","geiz","ziku_driver_geiz_belt_revive",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -188,7 +188,7 @@ public class Zi_O_Rider_Items {
 					.addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEIZ_MAJESTY_RIDEWATCH = ITEMS.register("geiz_majesty_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_majesty","geiz","ziku_driver_geiz_belt_majesty",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_majesty","geiz","ziku_driver_geiz_belt_majesty",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -201,7 +201,7 @@ public class Zi_O_Rider_Items {
 					.ChangeBeltModel("geo/zi_o_decade_riderbelt.geo.json").AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","tsukuyomi","ziku_driver_tsukuyomi_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","tsukuyomi","ziku_driver_tsukuyomi_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false))
@@ -1002,7 +1002,7 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_RIDEWATCH = ITEMS.register("woz_ridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_woz","zi_o","ziku_driver_zi_o_belt_woz",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_woz","zi_o","ziku_driver_zi_o_belt_woz",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -1018,61 +1018,61 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDEWATCH = ITEMS.register("kuuga_ultimate_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_SHINING_RIDEWATCH = ITEMS.register("agito_shining_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUKI_SURVIVE_RIDEWATCH = ITEMS.register("ryuki_survive_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_RIDEWATCH = ITEMS.register("faiz_blaster_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_KING_RIDEWATCH = ITEMS.register("blade_king_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_ARMED_RIDEWATCH = ITEMS.register("hibiki_armed_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_HYPER_RIDEWATCH = ITEMS.register("kabuto_hyper_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_LINER_RIDEWATCH = ITEMS.register("den_o_liner_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_EMPEROR_RIDEWATCH = ITEMS.register("kiva_emperor_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_COMPLETE_RIDEWATCH = ITEMS.register("decade_complete_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> W_XTREME_RIDEWATCH = ITEMS.register("w_xtreme_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_PUTOTYRA_RIDEWATCH = ITEMS.register("ooo_putotyra_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_RIDEWATCH = ITEMS.register("fourze_cosmic_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_INFINITY_RIDEWATCH = ITEMS.register("wizard_infinity_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIM_KIWAMI_RIDEWATCH = ITEMS.register("gaim_kiwami_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_TRIDORON_RIDEWATCH = ITEMS.register("drive_tridoron_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_MUGEN_RIDEWATCH = ITEMS.register("ghost_mugen_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_MUTEKI_RIDEWATCH = ITEMS.register("ex_aid_muteki_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_GENIUS_RIDEWATCH = ITEMS.register("build_genius_ridewatch",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUSOULGER_RIDEWATCH = ITEMS.register("ryusoulger_ridewatch",
 			() -> new OhmaRidewatchItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1230,7 +1230,7 @@ public class Zi_O_Rider_Items {
 					.model_has_different_name("ginga_miridewatch").has_basic_model());
 	
 	public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_ginga_wakusei","woz","beyondriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_ginga_wakusei","woz","beyondriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
@@ -1241,15 +1241,15 @@ public class Zi_O_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_L = ITEMS.register("unfinished_grand_zi_o_ridewatch_l",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_R = ITEMS.register("unfinished_grand_zi_o_ridewatch_r",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_L = ITEMS.register("unfinished_geiz_majesty_ridewatch_l",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_R = ITEMS.register("unfinished_geiz_majesty_ridewatch_r",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_L = ITEMS.register("unfinished_ohma_zi_o_driver_l",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","ohma_zi_o","ohma_zi_o_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"","ohma_zi_o","ohma_zi_o_driver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false),
@@ -1263,7 +1263,7 @@ public class Zi_O_Rider_Items {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
 					.hasStaticWings().AddToList(RiderTabs.ZI_O_TAB_ITEM));
 	public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ANOTHER_KUUGA_WATCH = ITEMS.register("another_kuuga_watch",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1398,7 +1398,7 @@ public class Zi_O_Rider_Items {
 					.AddToList(RiderTabs.ZI_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
-			() -> new BaseCityItem(new Item.Properties(),10).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
+			() -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).AddToList(RiderTabs.ZI_O_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",
     		() -> new OhmaAdventCalendarItem(new Item.Properties()).AddToList(RiderTabs.ZI_O_TAB_ITEM));
@@ -1440,7 +1440,7 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> OHMA_ZI_O_DRIVER = ITEMS.register("ohma_zi_o_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ohma_zi_o",UNFINISHED_OHMA_ZI_O_DRIVER_L ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.EPIC).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1488,7 +1488,7 @@ public class Zi_O_Rider_Items {
 
 	public static final DeferredItem<Item> ZIKU_DRIVER_TSUKUYOMI = ITEMS.register("ziku_driver_tsukuyomi",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tsukuyomi",TSUKUYOMI_RIDEWATCH ,ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1694,7 +1694,7 @@ public class Zi_O_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> RIDE_HEISABER = ITEMS.register("ride_heisaber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> SAIKYO_GIRADE = ITEMS.register("saikyo_girade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
@@ -1712,7 +1712,7 @@ public class Zi_O_Rider_Items {
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZIKAN_JACLAW = ITEMS.register("zikan_jaclaw",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsChangeSword().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsChangeSword().AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));
 
 	public static final DeferredItem<Item> ZAMONAS_BOW = ITEMS.register("zamonas_bow",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.ZI_O_TAB_ITEM).ChangeRepairItem(BLANK_RIDEWATCH.get()));

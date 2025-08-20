@@ -10,10 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -30,7 +27,7 @@ public class Hibiki_Rider_Items {
         public static final DeferredItem<Item> ONI_OREHELL = ITEMS.register("oni_orehell",
                 () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
         public static final DeferredItem<Item> UNFINISHED_ARMED_SABER = ITEMS.register("unfinished_armed_saber",
-                () -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
+                () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         
         public static final DeferredItem<Item> HENSHIN_ONSA = ITEMS.register("henshin_onsa",
@@ -40,7 +37,7 @@ public class Hibiki_Rider_Items {
                 new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)).AddToList(RiderTabs.HIBIKI_TAB_ITEM));
 
         public static final DeferredItem<Item> HENSHIN_ONSA_KURENAI = ITEMS.register("henshin_onsa_kurenai",
-        () -> new RiderFormChangeItem(new Item.Properties(),0,"_kurenai","hibiki","hibikidriver_belt",
+        () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_kurenai","hibiki","hibikidriver_belt",
                 new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                 new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
                 new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
@@ -243,7 +240,7 @@ public class Hibiki_Rider_Items {
         public static final DeferredItem<Item> ONGEKIBO_REKKA = ITEMS.register("ongekibo_rekka",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ARMED_SABER = ITEMS.register("armed_saber",
-                () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).IsFormItem(HENSHIN_ONSA_ARMED.get()).ChangeRepairItem(ONI_ORE.get()));
+                () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).IsFormItem(HENSHIN_ONSA_ARMED.get()).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ONGEKIBO_YAMASE = ITEMS.register("ongekibo_yamase",
                 () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.HIBIKI_TAB_ITEM).ChangeRepairItem(ONI_ORE.get()));
         public static final DeferredItem<Item> ONGEKIBO_RAKURAI = ITEMS.register("ongekibo_rakurai",

@@ -96,7 +96,7 @@ public class Kiva_Rider_Items {
             .addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
     
     public static final DeferredItem<Item> TATSULOT = ITEMS.register("tatsulot",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_emperor","kiva","kivat_belt_e",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_emperor","kiva","kivat_belt_e",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -106,7 +106,7 @@ public class Kiva_Rider_Items {
             .addShiftForm(DOGABAKI_EMPEROR.get()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> KIVATTE_FUESTLE = ITEMS.register("kiva_says_fuestle",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_red_emperor","kiva","kivat_belt_e",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_red_emperor","kiva","kivat_belt_e",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -135,7 +135,7 @@ public class Kiva_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.KIVA_TAB_ITEM));
     
     public static final DeferredItem<Item> RISER_FUESTLE = ITEMS.register("risingfuestle",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_rising","ixa","ixa_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rising","ixa","ixa_belt",
             		new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
             		new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
             		new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
@@ -361,16 +361,16 @@ public class Kiva_Rider_Items {
          	() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
 	public static final DeferredItem<Item> GARULU_SABER_TATSULOT = ITEMS.register("garulu_saber_tatsulot",
-         	() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+         	() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
 	public static final DeferredItem<Item> BASSHAA_MAGNUM_TATSULOT = ITEMS.register("basshaa_magnum_tatsulot",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> DOGGA_HAMMER_TATSULOT = ITEMS.register("dogga_hammer_tatsulot",
-         	() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+         	() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ZANVAT_SWORD = ITEMS.register("zanbatsword",
-         	() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+         	() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
 	public static final DeferredItem<Item> ZANVAT_SWORD_PAST = ITEMS.register("zanbatsword_core",
          	() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
@@ -382,7 +382,7 @@ public class Kiva_Rider_Items {
          	() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
     
 	public static final DeferredItem<Item> IXA_RISER = ITEMS.register("ixariser",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> JACORDER = ITEMS.register("jacorder",
          	() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.KIVA_TAB_ITEM).ChangeRepairItem(FUESTLE.get()));

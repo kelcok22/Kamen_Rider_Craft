@@ -450,7 +450,7 @@ public class Build_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
 
 	public static final DeferredItem<Item> RABBIT_TANK_SPARKLING = ITEMS.register("rabbittank_sparkling_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_sparkling","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_sparkling","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -458,7 +458,7 @@ public class Build_Rider_Items {
 			.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAZARD_TRIGGER = ITEMS.register("hazard_trigger",
-			() -> new HazardTriggerItem(new Item.Properties(),0,"_hazard","build","build_driver_belt_hazard",
+			() -> new HazardTriggerItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_hazard","build","build_driver_belt_hazard",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -467,7 +467,7 @@ public class Build_Rider_Items {
 					.ChangeSlot(3).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOW_RABBIT_FULL_BOTTLE = ITEMS.register("low_rabbit_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.BANGLE_REFINED));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BUILD_TAB_ITEM).AddToList(FullbottlePurifier.BANGLE_REFINED));
 
 	public static final DeferredItem<Item> FULLFULL_TANK_BOTTLE = ITEMS.register("fullfull_tank_bottle",
 			() -> new FullBottleItem(new Item.Properties(),0,"_tank","build","build_driver_belt",
@@ -480,7 +480,7 @@ public class Build_Rider_Items {
 					.model_has_different_name("fullfull_rabbit_tank_bottle").has_basic_model());
 
 	public static final DeferredItem<Item> FULLFULL_RABBIT_TANK_BOTTLE = ITEMS.register("fullfull_rabbit_tank_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_rabbit","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_rabbit","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
@@ -489,10 +489,10 @@ public class Build_Rider_Items {
 					.addSwitchForm(FULLFULL_TANK_BOTTLE.get()).alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).addNeedItem(HAZARD_TRIGGER.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNFINISHED_GENIUS_FULL_BOTTLE = ITEMS.register("unfinished_genius_full_bottle",
-			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GENIUS_FULL_BOTTLE = ITEMS.register("genius_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_genius","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_genius","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
@@ -507,18 +507,18 @@ public class Build_Rider_Items {
 					.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).ChangeSlot(3).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_RABBIT_FULL_BOTTLE = ITEMS.register("gold_rabbit_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_gold_rabbit","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_gold_rabbit","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false))
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_DRAGON_FULL_BOTTLE = ITEMS.register("silver_dragon_full_bottle",
-			() -> new FullBottleItem(new Item.Properties(),0,"_silver_dragon","build","build_driver_belt",
+			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_silver_dragon","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false))
 					.BestMatch(GOLD_RABBIT_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CROSS_Z_BUILD_CAN = ITEMS.register("cross_z_build_can",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_cross_z","build","build_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cross_z","build","build_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 4,true,false),
@@ -598,7 +598,7 @@ public class Build_Rider_Items {
 					.IsLegend("ex_aid").BestMatch(DOCTOR_FULL_BOTTLE.get()).ChangeSlot(2).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_SCLASH_JELLY = ITEMS.register("dragon_sclash_jelly",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","cross_z_charge","sclash_driver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","cross_z_charge","sclash_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -607,7 +607,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGON_MAGMA_FULL_BOTTLE = ITEMS.register("dragon_magma_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_magma","cross_z","build_driver_belt_magma",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_magma","cross_z","build_driver_belt_magma",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -617,7 +617,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREAT_DRAGON_EVOL_BOTTLE = ITEMS.register("great_dragon_evol_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_great","cross_z","build_driver_belt_great",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_great","cross_z","build_driver_belt_great",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
@@ -626,7 +626,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MUSCLE_GALAXY_FULL_BOTTLE = ITEMS.register("muscle_galaxy_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_evol","cross_z","build_driver_belt_evol",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_evol","cross_z","build_driver_belt_evol",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -646,7 +646,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","grease_blizzard","build_driver_belt_blizzard",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","grease_blizzard","build_driver_belt_blizzard",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -657,7 +657,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GREASE_FULL_BOTTLE = ITEMS.register("grease_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_perfect_kingdom","grease_blizzard","build_driver_belt_perfect_kingdom",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
@@ -678,7 +678,7 @@ public class Build_Rider_Items {
 					.AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PRIME_ROGUE_FULL_BOTTLE = ITEMS.register("prime_rogue_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"","prime_rogue","build_driver_belt_prime",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","prime_rogue","build_driver_belt_prime",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -726,7 +726,7 @@ public class Build_Rider_Items {
 					.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).AddNeedItemList(NEED_ITEM_EVOLTO).model_has_different_name("evol_trigger").has_basic_model());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_black_hole","evol","evol_driver_belt_b",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_black_hole","evol","evol_driver_belt_b",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -737,7 +737,7 @@ public class Build_Rider_Items {
 					.addShiftForm(EVOL_TRIGGER_KAIJIN.get()).AddToList(RiderTabs.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVOL_X_FULL_BOTTLE = ITEMS.register("evol_x_full_bottle",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_x","evol","evol_driver_belt_evol_x",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_x","evol","evol_driver_belt_evol_x",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -974,7 +974,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> BUILD_DRIVER_GREASE = ITEMS.register("build_driver_grease",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease_blizzard", NORTH_BLIZZARD_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -998,7 +998,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> BUILD_DRIVER_ROGUE = ITEMS.register("build_driver_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "prime_rogue", PRIME_ROGUE_FULL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
+					new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.CONTAINER, ItemContainerContents.EMPTY)){
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
@@ -1118,7 +1118,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> SCLASH_DRIVER = ITEMS.register("sclash_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cross_z_charge", DRAGON_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> SCLASH_DRIVER_GREASE = ITEMS.register("sclash_driver_grease",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grease", ROBOT_SCLASH_JELLY ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1130,7 +1130,7 @@ public class Build_Rider_Items {
 
 	public static final DeferredItem<Item> EVOL_DRIVER = ITEMS.register("evol_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "evol", COBRA_EVOL_BOTTLE ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
-					new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> EVOL_DRIVER_MAD_ROGUE = ITEMS.register("evol_driver_mad_rogue",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mad_rogue", MAD_ROGUE_BOTTLES ,BUILD_HELMET,BUILD_CHESTPLATE,BUILD_LEGGINGS,
@@ -1165,19 +1165,19 @@ public class Build_Rider_Items {
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
     public static final DeferredItem<Item> TWIN_BREAKER = ITEMS.register("twin_breaker",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BEAT_CROSSER = ITEMS.register("beat_crosser",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.NEO_DIEND_SUMMON_WEAPONS).ChangeRepairItem(FULL_BOTTLE.get()));
 
     public static final DeferredItem<Item> FULLBOTTLE_BUSTER = ITEMS.register("fullbottle_buster",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(FULL_BOTTLE.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().AddToTabList(RiderTabs.BUILD_TAB_ITEM).AddToTabList(Decade_Rider_Items.COMPLETE_21_WEAPONS).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> MAGMA_KNUCKLE = ITEMS.register("magma_knuckle",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> BLIZZARD_KNUCKLE = ITEMS.register("blizzard_knuckle",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.BUILD_TAB_ITEM).ChangeRepairItem(FULL_BOTTLE.get()));
 
 	public static final DeferredItem<Item> TRANSTEAM_GUN = ITEMS.register("transteam_gun",
 			() -> new TransteamGunItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.BUILD_TAB_ITEM)

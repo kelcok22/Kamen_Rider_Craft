@@ -85,7 +85,7 @@ public class Ichigo_Rider_Items {
                     .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NEW_TYPHOON_CORE = ITEMS.register("new_typhoon_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_new","ichigo","new_typhoon_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_new","ichigo","new_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
                     new MobEffectInstance(Effect_core.RIDER_KICK, 40, 0,true,false))
@@ -342,7 +342,7 @@ public class Ichigo_Rider_Items {
                     .AddToList(RiderTabs.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_UP = ITEMS.register("charge_up",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"_charge_up","stronger","electrer_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_charge_up","stronger","electrer_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
                     .AddToList(RiderTabs.STRONGER_TAB_ITEM));
