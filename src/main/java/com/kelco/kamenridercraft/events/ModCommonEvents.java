@@ -101,7 +101,7 @@ public class ModCommonEvents {
 
 		@SubscribeEvent
 		public void onEntityTick(EntityTickEvent.Post event) {
-			if (event.getEntity()instanceof ArmorStand entity){
+			if (event.getEntity()instanceof LivingEntity entity){
 				if (entity.getItemBySlot(EquipmentSlot.FEET).getItem()instanceof RiderDriverItem belt){
 					belt.beltTick(entity.getItemBySlot(EquipmentSlot.FEET),entity.level(),entity,36);
 					belt.giveEffects(entity);
