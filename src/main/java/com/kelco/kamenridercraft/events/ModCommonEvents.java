@@ -22,6 +22,7 @@ import com.kelco.kamenridercraft.item.*;
 import com.kelco.kamenridercraft.item.BaseItems.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderDriverItem;
 import com.kelco.kamenridercraft.item.BaseItems.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.gavv.GochipodItem;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -55,6 +56,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
@@ -208,7 +210,28 @@ public class ModCommonEvents {
 			}
 		}
 
+		@SubscribeEvent
+		public void addLivingDamageEvent(ItemStackedOnOtherEvent event) {
+			if (event.getCarriedItem().is(Gavv_Rider_Items.GOCHIPOD_EMPTY)){
 
+				ItemStack stack =event.getCarriedItem();
+				ItemStack other= event.getStackedOnItem();
+				if (other.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/gochizo/gochizo_for_gochipod")))){
+					int stored = GochipodItem.get_store_Item(stack);
+					int need = 100-stored;
+					int have = other.getCount();
+					if (need!=0){
+						if (have>need){
+							GochipodItem.set_store_Item(stack,need);
+							other.shrink(need);
+						}else {
+							GochipodItem.set_store_Item(stack,have);
+							other.shrink(have);
+						}
+					}
+				}
+			}
+		}
 
 
 		/*
