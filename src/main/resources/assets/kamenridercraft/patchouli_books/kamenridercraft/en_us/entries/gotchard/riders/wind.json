@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Wind",
 	"icon": "kamenridercraft:alchemisdriver_wind",
 	"category": "kamenridercraft:gotchard/riders",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:entity",

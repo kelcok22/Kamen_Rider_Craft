@@ -2,7 +2,7 @@
 	"name": "Kamen Rider Legend",
 	"icon": "kamenridercraft:legendriver",
 	"category": "kamenridercraft:gotchard/riders",
-	"sortnum": 6,
+	"sortnum": 7,
 	"pages": [
 		{
 			"type": "patchouli:entity",

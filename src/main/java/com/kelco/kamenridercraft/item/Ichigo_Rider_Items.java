@@ -162,7 +162,7 @@ public class Ichigo_Rider_Items {
                     .AddToList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_CORE = ITEMS.register("gaia_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),0,"","gaia","gaia_belt_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"","gaia","gaia_belt_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
@@ -281,7 +281,7 @@ public class Ichigo_Rider_Items {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).Dont_show_belt_form_info().has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().AddToTabList(RiderTabs.ICHIGO_TAB_ITEM));
 
     //V3
 

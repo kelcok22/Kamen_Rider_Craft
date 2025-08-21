@@ -1,20 +1,20 @@
 {
   "display": {
 	"icon": {
-	  "id": "kamenridercraft:frappeis_gochizo"
+	  "id": "kamenridercraft:chocold_gochizo"
 	},
 	"title": {
-      "translate": "advancements.kamenridercraft.gavv.frappe_custom.title"
+      "translate": "advancements.kamenridercraft.gavv.chocold.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.gavv.frappe_custom.description"
+      "translate": "advancements.kamenridercraft.gavv.chocold.description"
     },
     "frame": "task",
 	"show_toast": true,
 	"announce_to_chat": true,
 	"hidden": false
   },
-  "parent": "kamenridercraft:gavv/chocold",
+  "parent": "kamenridercraft:gavv/valen",
   "criteria": {
 	"requirement": {
 	  "trigger": "minecraft:inventory_changed",
@@ -38,8 +38,11 @@
 			},
 			"feet": {
 			  "items": [
-				"kamenridercraft:vrastumgear_valen"
-			  ]
+				"kamenridercraft:valenbuckle"
+			  ],
+              "predicates": {
+                "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:chocold_gochizo\"}"
+              }
 			}
 		  }
 		}

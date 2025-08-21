@@ -1429,7 +1429,7 @@ public class Gotchard_Rider_Items {
 			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dread", STEAMLINER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 	public static final DeferredItem<Item>  DREADRIVER_TROOPER = ITEMS.register("dreadriver_trooper",
-			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dreatrooper", ANTROOPER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
+			() -> new GotcharDriverItem(ArmorMaterials.DIAMOND,"dreatrooper", ANTROOPER_REPLI_CHEMY_CARD ,GOTCHARD_HELMET, GOTCHARD_CHESTPLATE,GOTCHARD_LEGGINGS , new Item.Properties()).Dont_show_belt_form_info().AddToTabList(RiderTabs.GOTCHARD_TAB_ITEM).ChangeRepairItem(BLANK_RIDE_CHEMY_CARD.get()));
 
 
 	public static final DeferredItem<Item> LEGENDRIVER = ITEMS.register("legendriver",
@@ -1491,7 +1491,7 @@ public class Gotchard_Rider_Items {
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).KeepItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALCHEMIST_RING_BLACK = ITEMS.register("alchemist_ring_black",
-			() -> new BaseItem(new Item.Properties()).KeepItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).KeepItem().AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALCHEMIST_RING_NO_GEM = ITEMS.register("alchemist_ring_no_gem",
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.GOTCHARD_TAB_ITEM));
