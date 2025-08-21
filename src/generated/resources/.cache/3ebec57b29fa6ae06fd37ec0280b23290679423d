@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-20T18:21:12.559896	Item Models: kamenridercraft
+// 1.21.1	2025-08-20T23:25:34.4128457	Item Models: kamenridercraft
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 6d5634426eeb42c0d0b168f6237855cc5b6d9aee assets/kamenridercraft/models/item/agito_shining_ride_chemy_card.json
 2a2f87602c94b3bf63b1fb4a64cc70aab4bed7af assets/kamenridercraft/models/item/akumanocaris_ride_chemy_card.json
@@ -178,6 +178,7 @@ b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ging
 afb254913756a409fb3fb0d22fe0e85541214827 assets/kamenridercraft/models/item/gingriffon_ride_chemy_card.json
 3840f6c42a53ef5c0dde7a21ee10ca0191b21387 assets/kamenridercraft/models/item/glass_door.json
 537894a7488a35a47f6c80cafc577d20d5278256 assets/kamenridercraft/models/item/glotta_mimic_key.json
+cdfd614932182db513038571dfb590a866a7a7ef assets/kamenridercraft/models/item/gochipod_empty.json
 4e76e2f2d24558a9156e20686a5f35dd955ec0b2 assets/kamenridercraft/models/item/gokigenmeteon_ride_chemy_card.json
 bfedf19b3676885ca5ec0820b22abb5a2884aec8 assets/kamenridercraft/models/item/gotchancollection_panel.json
 c0b4ca701d5a70ad0ff23467da471e44596570e5 assets/kamenridercraft/models/item/gotchard_ride_chemy_card.json

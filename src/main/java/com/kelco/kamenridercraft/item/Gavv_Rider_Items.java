@@ -294,7 +294,7 @@ public class Gavv_Rider_Items {
 
 	public static final DeferredItem<Item> GOCHIPOD_EMPTY = ITEMS.register("gochipod_empty",
 			() -> new GochipodItem(new Item.Properties())
-				.AddToList(RiderTabs.GAVV_TAB_ITEM));
+					.has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 
 
