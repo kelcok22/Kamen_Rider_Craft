@@ -1,3 +1,4 @@
+// TODO: Re-balancing for all Riders
 package com.kelco.kamenridercraft;
 
 import com.kelco.kamenridercraft.block.Rider_Blocks;

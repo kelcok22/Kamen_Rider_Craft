@@ -2,7 +2,7 @@
 	"name": "Alchemisdriver",
 	"icon": "kamenridercraft:alchemisdriver",
 	"category": "kamenridercraft:gotchard/devices",
-	"sortnum": 3,
+	"sortnum": 4,
 	"pages": [
 		{
 			"type": "patchouli:text",

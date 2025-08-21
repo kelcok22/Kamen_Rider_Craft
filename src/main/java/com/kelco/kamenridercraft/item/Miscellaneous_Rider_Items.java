@@ -256,6 +256,8 @@ public class Miscellaneous_Rider_Items {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agata",CHAOS_RING_AGATA ,RIDE_KAMENS_HELMET,RIDE_KAMENS_CHESTPLATE,RIDE_KAMENS_LEGGINGS , new Item.Properties())
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 
+    // TODO: Add Catboy Double, and also WeHn PaLyEr AnIaMtOnS
+
 		    public static final DeferredItem<Item> GASHA_TICKET = ITEMS.register("gasha_ticket",
 		    		() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gasha_ticket")).AddToList(RiderTabs.RIDE_KAMENS_TAB_ITEM));
 

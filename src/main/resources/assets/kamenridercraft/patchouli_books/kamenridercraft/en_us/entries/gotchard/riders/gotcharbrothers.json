@@ -1,0 +1,316 @@
+{
+	"name": "Gotcharbrothers",
+	"icon": "kamenridercraft:gotchardriver_brother",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Steamhopper",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)Hopper1$(/l) or $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)Steamliner$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "appareskebow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:apparebushido_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Appareskebow",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#skebows_ride_chemy_card)Skebows$(/l) or $(l:gotchard/items/ride_chemy_cards#apparebushido_ride_chemy_card)Apparebushido$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Slash II$(li)Strength II (with sword)$(li)Speed II$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "antwrestler",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:antrooper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Antwrestler",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#antrooper_ride_chemy_card)Antrooper$(/l) or $(l:gotchard/items/ride_chemy_cards#wrestler_g_ride_chemy_card)Wrestler G$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "needlehawk",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:hawkstar_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Needlehawk",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hawkstar_ride_chemy_card)Hawkstar$(/l) or $(l:gotchard/items/ride_chemy_cards#saboneedle_ride_chemy_card)Saboneedle$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Night Vision II$(li)Jump Boost$(li)Flying II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "goldmechanichor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:golddash_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Goldmechanichor",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#golddash_ride_chemy_card)Golddash$(/l) or $(l:gotchard/items/ride_chemy_cards#mechanichani_ride_chemy_card)Mechanichani$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance IV$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightningjungle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:raidenji_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Lightningjungle",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#raidenji_ride_chemy_card)Raidenji$(/l) or $(l:gotchard/items/ride_chemy_cards#junglejan_ride_chemy_card)Junglejan$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Night Vision II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "venommariner",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:deepmariner_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Venommariner",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#deepmariner_ride_chemy_card)Deepmariner$(/l) or $(l:gotchard/items/ride_chemy_cards#venomdake_ride_chemy_card)Venomdake$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Anti Poison II$(li)Water Breathing II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burninggorilla",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorillasensei_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Burninggorilla",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#gorillasensei_ride_chemy_card)Gorillasensei$(/l) or $(l:gotchard/items/ride_chemy_cards#burningnero_ride_chemy_card)Burningnero$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength (with weapon)$(li)Fire Fist$(li)Jump Boost"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dokkirishovel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:dokkirimajin_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Dokkirishovel",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#dokkirimajin_ride_chemy_card)Dokkirimajin$(/l) or $(l:gotchard/items/ride_chemy_cards#gutsshovel_ride_chemy_card)Gutsshovel$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Haste II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hiikesurose",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:hiikescue_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Hiikesurose",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#hiikescue_ride_chemy_card)Hiikescue$(/l) or $(l:gotchard/items/ride_chemy_cards#flayrose_ride_chemy_card)Flayrose$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Mirror II$(li)Jump Boost$(li)Fire Resistance II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "odorimantis",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamantis_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Odorimantis",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kamantis_ride_chemy_card)Kamantis$(/l) or $(l:gotchard/items/ride_chemy_cards#odorippa_ride_chemy_card)Odorippa$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Haste II$(li)Jump Boost II$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "energymaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:sasukemaru_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Energymaru",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#sasukemaru_ride_chemy_card)Sasukemaru$(/l) or $(l:gotchard/items/ride_chemy_cards#energyl_ride_chemy_card)Energyl$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed IV$(li)Stealth$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "madpirates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:pilets_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Madpirates",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#pilets_ride_chemy_card)Pilets$(/l) or $(l:gotchard/items/ride_chemy_cards#madwheel_ride_chemy_card)Madwheel$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Cannon II$(li)Speed IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bulletchoucho",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:gengenchoucho_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Bulletchoucho",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#gengenchoucho_ride_chemy_card)Gengenchoucho$(/l) or $(l:gotchard/items/ride_chemy_cards#bulletbaang_ride_chemy_card)Bulletbaang$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Gatling$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "smahotaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:pikahotaru_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Smahotaru",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#pikahotaru_ride_chemy_card)Pikahotaru$(/l) or $(l:gotchard/items/ride_chemy_cards#smaphone_ride_chemy_card)Smaphone$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cross_ufo_x",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:ufo_x_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "Gotcharbrothers Super Cross UFO-X",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed II$(li)Night Vision$(li)Jump Boost$(li)Strength$(li)Flying"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cross_x_rex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_rex_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "Gotcharbrothers Super Cross X-Rex",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#x_rex_ride_chemy_card)X-Rex Ride Chemy Card$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed III$(li)Jump Boost$(li)Strength"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "platina",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:crosshopper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Platina Gotcharbrothers",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#crosshopper_ride_chemy_card)Crosshopper Ride Chemy Card$(/l) as $(l:gotchard/riders/gotchard#iron_gotchard)Iron Gotchard$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch VII$(li)Strength X (with empty hand)$(li)Strength IV (with weapon)$(li)Speed VI$(li)Resistance IV$(li)Night Vision$(li)Jump Boost VI$(li)Fire Resistance"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marsphoenix",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:firemars_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Marsphoenix",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card)Firemars$(/l) or $(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card)Inphoenix$(/l) Ride Chemy Card (both cards must be in your inventory. the Televi-Kun variants can also be used)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Fire Fist$(li)Jump Boost II$(li)Strength II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "exceed_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Exceed Mighty",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#kuuga_ride_chemy_card)Kuuga$(/l) or $(l:gotchard/items/ride_chemy_cards#faiz_ride_chemy_card)Faiz$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Strength III (with weapon)$(li)Resistance$(li)Night Vision"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cyclone_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers Cyclone Tatoba",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#w_ride_chemy_card)Double$(/l) or $(l:gotchard/items/ride_chemy_cards#ooo_ride_chemy_card)OOO$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Punch$(li)Strength IV (with empty hand)$(li)Strength II (with weapon)$(li)Speed II$(li)Night Vision II$(li)Haste II$(li)Jump Boost III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fullfull_rocket",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_brother\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Gotcharbrothers FullFull Rocket",
+			"text": "Accessed with the $(l:gotchard/items/ride_chemy_cards#fourze_ride_chemy_card)Fourze$(/l) or $(l:gotchard/items/ride_chemy_cards#build_ride_chemy_card)Build$(/l) Ride Chemy Card (both cards must be in your inventory)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gotcharbrothers",
+			"text": "Transforms with the $(l:gotchard/devices/gotchardriver_brother)Brother Gotchardriver$(/l)$(br2)Status Effects:$(li)Speed$(li)Resistance$(li)Jump Boost III$(li)Strength"
+		}
+	]
+}

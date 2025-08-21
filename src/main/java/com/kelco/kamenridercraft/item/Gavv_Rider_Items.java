@@ -259,7 +259,7 @@ public class Gavv_Rider_Items {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false))
 					.AddToList(ICE_CREAM,1).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
-	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master",
+	public static final DeferredItem<Item> GOCHIPOD_MASTER = ITEMS.register("gochipod_master", // TODO: Effects not copy-pasted from Over
 			() -> new RiderFormChangeItem(new Item.Properties(),0,"_master","gavv","henshin_belt_gavv_belt_master",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),
@@ -298,7 +298,7 @@ public class Gavv_Rider_Items {
 
 
 
-	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo",
+	public static final DeferredItem<Item> AMAZINGGUMMY = ITEMS.register("amazingummy_gochizo", // TODO: Effects not copy-pasted from Over
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_amazingummy","gavv","henshin_belt_gavv_belt_amazingummy",
 					new MobEffectInstance(Effect_core.PUNCH, 40, 6,true,false),
 					new MobEffectInstance(Effect_core.EXPLOSION_PUNCH, 40, 0,true,false),

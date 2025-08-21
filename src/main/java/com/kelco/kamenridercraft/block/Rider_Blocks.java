@@ -179,7 +179,7 @@ public class Rider_Blocks {
 			() -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 					.strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RiderTabs.RIDER_BLOCK));
 
-//	public static final DeferredBlock<AstroswitchRackBlock> ASTROSWITCH_RACK = registerBlock("astroswitch_rack",
+//	public static final DeferredBlock<AstroswitchRackBlock> ASTROSWITCH_RACK = registerBlock("astroswitch_rack", TODO: Make this work
 //			() -> new AstroswitchRackBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.PLING).strength(2.5F).sound(SoundType.METAL), ModBlockEntities.ASTROSWITCH_RACK_BE::get));
 
 	public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
@@ -1129,7 +1129,7 @@ public class Rider_Blocks {
 					,MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).AddToTabList(RiderTabs.RIDER_BLOCK));
 
 
-	public static final DeferredBlock<PandoraPanelBlock> PANDORA_PANEL_BLOCK = registerBlock("pandora_panel_block",
+	public static final DeferredBlock<PandoraPanelBlock> PANDORA_PANEL_BLOCK = registerBlock("pandora_panel_block", // TODO: Make this openable while placed
 			() -> new PandoraPanelBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
 
 
