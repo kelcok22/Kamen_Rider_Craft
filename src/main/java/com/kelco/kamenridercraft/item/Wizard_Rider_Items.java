@@ -64,10 +64,10 @@ public class Wizard_Rider_Items {
 			() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CYAN= ITEMS.register("wizardgem_cyan",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PHILOSOPHERS_STONE= ITEMS.register("philosophers_stone",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).AddToList(RiderTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FLAME_WIZARD_RING = ITEMS.register("flame_ring",

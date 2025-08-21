@@ -53,6 +53,19 @@
 			"item": "kamenridercraft:madwheel_repli_chemy_card",
 			"title": " ",
 			"text": "Item is currently unobtainable"
-		}
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "antrooper_repli_chemy_card",
+        "title": "Antrooper Replichemy Card",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:antrooper_repli_chemy_card",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
 	]
 }

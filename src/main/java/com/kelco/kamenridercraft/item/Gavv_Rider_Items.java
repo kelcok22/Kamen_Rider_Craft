@@ -190,7 +190,7 @@ public class Gavv_Rider_Items {
 					.AddToList(CHOCO,9).AddToList(RiderTabs.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHOCOLD_GOCHIZO = ITEMS.register("chocold_gochizo",
-			() -> new RiderFormChangeItem(new Item.Properties(),0,"_chocold","valen","valenbuckle_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_chocold","valen","valenbuckle_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.WITHER, 40, 2,true,false))

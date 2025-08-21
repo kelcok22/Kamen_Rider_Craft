@@ -351,7 +351,7 @@ public class Agito_Rider_Items {
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"agito",AGITO_GROUND ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
     
     public static final DeferredItem<Item> ALTERING_REIKO = ITEMS.register("alter_ring_reiko",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"female_agito",AGITO_TRINITY ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 
     
     public static final DeferredItem<Item> META_FACTOR = ITEMS.register("meta_factor",
@@ -366,7 +366,7 @@ public class Agito_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G3_X = ITEMS.register("g3_x_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g3_x",G3_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     	
     public static final DeferredItem<Item> G_BUCKLE_G3_MILD = ITEMS.register("g3_mild_belt",
@@ -374,11 +374,11 @@ public class Agito_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
     public static final DeferredItem<Item> G_BUCKLE_G4 = ITEMS.register("g4_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4",G4_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 	
     public static final DeferredItem<Item> G_BUCKLE_G4_X = ITEMS.register("g4_x_belt",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties())
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g4_x",G4_X_CHIP ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
@@ -390,7 +390,7 @@ public class Agito_Rider_Items {
 					.Dont_show_belt_form_info().AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
     
     public static final DeferredItem<Item> ALTERING_MIRAGE = ITEMS.register("alter_ring_miracle",
-    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+    		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mirage_agito",MIRAGE_AGITO ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties().rarity(Rarity.EPIC)).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
     
     public static final DeferredItem<Item> ANK_POINT_BURNING = ITEMS.register("ank_point_burning",
     		() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"another_agito_koji",ANOTHER_AGITO_KOJI ,AGITOHELMET, AGITOCHESTPLATE,AGITOLEGGINGS , new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
@@ -421,7 +421,7 @@ public class Agito_Rider_Items {
 	public static final DeferredItem<Item> GX_LAUNCHER = ITEMS.register("gx_launcher",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(2).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GK_06_UNICORN = ITEMS.register("gk_06_unicorn",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.RARE)).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_SHIELD = ITEMS.register("g3_shield",
             () -> new BaseShieldItem(new Item.Properties()).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_X_SHIELD = ITEMS.register("g3x_shield",
@@ -429,7 +429,7 @@ public class Agito_Rider_Items {
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(4).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(4).AddToTabList(RiderTabs.AGITO_TAB_ITEM).ChangeRepairItem(SEED_OF_AGITO.get()));
 	
 	
 	public static final DeferredItem<Item>V1_SHOT = ITEMS.register("v1_shot",

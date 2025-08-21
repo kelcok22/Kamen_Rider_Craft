@@ -643,9 +643,9 @@ public class OOO_Rider_Items {
 			public static final DeferredItem<Item> PURPLE_MEDALS_SEALED = ITEMS.register("purple_medals_sealed",
 					() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.OOO_TAB_ITEM));
 			public static final DeferredItem<Item> PURPLE_MEDALS_OPENED = ITEMS.register("purple_medals_opened",
-					() -> new Item_Purple_Medals(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new Item_Purple_Medals(new Item.Properties().rarity(Rarity.RARE)).AddToList(RiderTabs.OOO_TAB_ITEM));
 			public static final DeferredItem<Item> PURPLE_MEDALS_EMPTY = ITEMS.register("purple_medals_empty",
-					() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).AddToList(RiderTabs.OOO_TAB_ITEM));
+					() -> new BaseItem(new Item.Properties()).AddToList(RiderTabs.OOO_TAB_ITEM));
 
 			public static final DeferredItem<Item> OOOHELMET = ITEMS.register("ooohead",
 					() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).AddToTabList(RiderTabs.OOO_TAB_ITEM).ChangeRepairItem(CELL_MEDAL.get()));

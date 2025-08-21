@@ -110,7 +110,7 @@ public class W_Rider_Items {
 			.alsoChange2ndSlot(JOKER_MEMORY.get()).AddToList(RiderTabs.W_TAB_ITEM).AddToList(Decade_Rider_Items.COMPLETE_21_FORMS));
 
 	public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),0,"_cyclone_xtreme_gold","w","wdriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),0,"_cyclone_xtreme_gold","w","wdriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),

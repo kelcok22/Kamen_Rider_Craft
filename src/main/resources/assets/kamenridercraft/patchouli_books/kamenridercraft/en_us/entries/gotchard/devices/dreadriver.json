@@ -6,11 +6,25 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
+            "anchor": "dreadriver",
 			"text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into $(l:gotchard/riders/dread)Kamen Rider Dread"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:gotchard/dreadriver"
-		}
-	]
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "dreadriver_trooper",
+        "title": "Dreadriver",
+        "text": "Appears in:$(li)Kamen Rider Gotchard (2023, TV show)$(br2)Used alongside the $(l:gotchard/devices/armor)Gotchard armor$(/l) to transform into a $(l:gotchard/riders/dreatrooper)Dreatrooper"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dreadriver_trooper",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      }
+    ]
 }
