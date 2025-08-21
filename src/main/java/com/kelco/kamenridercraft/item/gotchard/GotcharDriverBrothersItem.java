@@ -31,6 +31,9 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 			if (((RiderDriverItem)itemstack.getItem()).BELT_TEXT==null) {
 				belt = get_Form_Item(itemstack,1).getBeltTex();
 			}
+			if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/gotchard_belt_big.geo.json") {
+				if (!isTransformed(rider)) belt = "gotchardriver_belt";
+			}
 			return "belts/"+belt;
 		}
 		else if (equipmentSlot == EquipmentSlot.CHEST) {
@@ -39,13 +42,13 @@ public class GotcharDriverBrothersItem extends RiderDriverItem {
 			if (get_Form_Item(itemstack,1)==Gotchard_Rider_Items.CROSSHOPPER_RIDE_CHEMY_CARD.get()) return "gotchar_brothers_part_p";
 			return "gotchar_brothers_part";
 		}
-
 		else return "gotchar_brothers/gotchard"+get_Form_Item(itemstack,1).getFormName(fly);
 	}
 
 	public ResourceLocation getBeltModelResource(ItemStack itemstack,RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/gotchard_belt_big.geo.json" && !isTransformed(rider)) {
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/gotchard_belt.geo.json");
+		if(get_Form_Item(itemstack,1).get_Belt_Model()=="geo/gotchard_belt_big.geo.json") {
+			if (!isTransformed(rider)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/gotchard_belt.geo.json");
+			else return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,"geo/gotchard_belt_big.geo.json");
 		}
 
 		return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/gotchard_belt.geo.json");
