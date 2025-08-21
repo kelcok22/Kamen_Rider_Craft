@@ -2,7 +2,7 @@
 	"name": "Dreadriver",
 	"icon": "kamenridercraft:dreadriver",
 	"category": "kamenridercraft:gotchard/devices",
-	"sortnum": 5,
+	"sortnum": 6,
 	"pages": [
 		{
 			"type": "patchouli:text",
