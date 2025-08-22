@@ -243,6 +243,18 @@ public class Gavv_Rider_Items {
 					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false))
 					.addNeedForm(KUNGFU_RAMEN_GOCHIZO.get()).has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
 
+	public static final DeferredItem<Item> UMAIBO_GOCHIZO = ITEMS.register("umaibo_gochizo",
+			() -> new RiderFormChangeItem(new Item.Properties(),0,"_shot_snack","gavv","henshin_belt_gavv_belt_shot_snack",
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
+					,new MobEffectInstance(Effect_core.PUNCH, 40, 2,true,false)){
+				public void OnTransformation(ItemStack itemstack, LivingEntity player) {
+					super.OnTransformation(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.SNACK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 40, 0, 0, 0, 1);
+				}
+			}.ChangeModel("gavv_shot_snack.geo.json","default_cape.animation.json").has_basic_model().AddToList(RiderTabs.GAVV_TAB_ITEM));
+
 	public static final DeferredItem<Item> CAKING_GOCHIZO = ITEMS.register("caking_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),0,"_caking","gavv","henshin_belt_gavv_belt_caking",
 					new MobEffectInstance(MobEffects.HUNGER, 40, 0,true,false),
