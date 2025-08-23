@@ -236,6 +236,19 @@
 			"title": " ",
 			"text": "Item is currently unobtainable"
 		},
+      {
+        "type": "patchouli:text",
+        "anchor": "umaibo_gochizo",
+        "title": "Umaibo Gochizo",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)$(br2)Used to access Gavv's $(l:gavv/riders/gavv#shot_snack)Shot Snack Form$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:umaibo_gochizo",
+        "title": " ",
+        "text": "Item is currently unobtainable"
+      },
 		{
 			"type": "patchouli:text",
 			"anchor": "caking_gochizo",

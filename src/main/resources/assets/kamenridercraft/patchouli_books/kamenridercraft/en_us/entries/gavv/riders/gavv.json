@@ -270,6 +270,20 @@
 			"title": "Kamen Rider Gavv",
 			"text": "Appears in:$(li)Kamen Rider Gavv: The Snacks Gourmet Woo!-mai Wakamen!! (2025, Hyper Battle Video)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Resistance"
 		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "shot_snack",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:umaibo_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Shot Snack Form",
+        "text": "Accessed with the $(l:gavv/items/gochizo#umaibo_gochizo)Umaibo Gochizo$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Kamen Rider Gavv",
+        "text": "Appears in:$(li)DX Rider Gochizo Special Set -Umaibo Collaboration Ver- (2025, toyline)$(br2)Transforms with the $(l:gavv/devices/henshin_belt_gavv)Henshin Belt Gavv$(/l)$(br2)Status Effects:$(li)Punch III$(li)Strength VI (with empty hand)$(li)Resistance"
+      },
 		{
 			"type": "patchouli:entity",
 			"anchor": "partea_scone",
