@@ -561,6 +561,10 @@
   "henshin.kamenridercraft.nyelv":"<Nyelv Stomach> §6My, That Would Be An Issue",
   "henshin.kamenridercraft.marble_breacookie":"§5Breacookie! Yummy!",
   "henshin.kamenridercraft.glotta":"<Glotta Stomach> §dI hope you are ready… Little Red Gavv",
+  "henshin.kamenridercraft.bitter_jeeb":"§eBakiBakiStick! Yummy!",
+  "henshin.kamenridercraft.jeeb":"<Jeeb Stomach> §1I'm looking forward to this",
+  "henshin.kamenridercraft.shiita":"<Shiita Stomach> Jeeb, will you stay with me?\n<Jeeb Stomach>§1 I won't ever leave you, Shiita",
+  "henshin.kamenridercraft.lango":"<Lango Stomach> §4Don't get in my way",
 
   "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
   "attack.kamenridercraft.hyper_clock_up":"§6Hyper Clock Up!",
@@ -1698,6 +1702,7 @@
   "item.kamenridercraft.candy_wrapper": "Candy Wrapper",
   "item.kamenridercraft.pancake": "Pancake Stack",
   "item.kamenridercraft.dango": "Dango",
+  "item.kamenridercraft.corn_snack": "Corn Snack",
   "item.kamenridercraft.gift": "Gift",
   "item.kamenridercraft.rider_case": "Rider Storage Case",
 
@@ -7626,6 +7631,12 @@
   "kamenridercraft.name.nyelv": "Granute: Nyelv Stomach",
   "item.kamenridercraft.glotta_mimicdeviser": "Mimicdeviser",
   "kamenridercraft.name.glotta": "Granute: Glotta Stomach",
+  "item.kamenridercraft.jeeb_mimicdeviser": "Mimicdeviser",
+  "kamenridercraft.name.jeeb": "Granute: Jeeb Stomach",
+  "item.kamenridercraft.shiita_mimicdeviser": "Mimicdeviser",
+  "kamenridercraft.name.shiita": "Granute: Shiita Stomach",
+  "item.kamenridercraft.lango_mimicdeviser": "Mimicdeviser",
+  "kamenridercraft.name.lango": "Granute: Lango Stomach",
 
 "item.kamenridercraft.blank_gochizo": "Blank Gochizo",
 "item.kamenridercraft.prototype_cup_gochizo": "Prototype Cup Gochizo",
@@ -7646,6 +7657,7 @@
 "item.kamenridercraft.caking_gochizo": "Caking Gochizo",
 "item.kamenridercraft.blizzardsorbei_gochizo": "Blizzardsorbei Gochizo",
 "item.kamenridercraft.gochipod": "Gochipod",
+  "item.kamenridercraft.gochipod_empty": "Unfilled Gochipod",
   "item.kamenridercraft.amazingummy_gochizo": "Amazingummy Gochizo",
 "item.kamenridercraft.chocold_gochizo": "Chocold Gochizo",
 "item.kamenridercraft.frappeis_gochizo": "Frappeis Gochizo",
@@ -7663,7 +7675,7 @@
 "item.kamenridercraft.cookiekie_gochizo": "Cookikkie Gochizo",
 "item.kamenridercraft.byunbei_gochizo": "Byunbei Gochizo",
 "item.kamenridercraft.bubbleramune_gochizo": "Bubble Ramune Gochizo",
-  "item.kamenridercraft.bubbleramune_gochizo_peach": "Bubble Ramune Gochizo (Peach ver.)",
+  "item.kamenridercraft.bubbleramune_gochizo_peach": "Bubble Ramune Gochizo (Peach Flavour)",
 "item.kamenridercraft.eleganmacaron_gochizo": "Eleganmacaron Gochizo",
 "item.kamenridercraft.popburn_gochizo": "Popburn Gochizo",
 "item.kamenridercraft.caramelmel_gochizo": "Caramelmel Gochizo",
@@ -7752,6 +7764,14 @@
   "item.kamenridercraft.pienomi_gochizo": "Pie No Mi Gochizo",
   "item.kamenridercraft.custardcake_gochizo": "Custard Cake Gochizo",
   "item.kamenridercraft.tarakomentaiko_gochizo": "Tarako Mentaiko Gochizo",
+  "item.kamenridercraft.takoyaki_umaibo_gochizo": "Umaibo Gochizo (Takoyaki Flavour)",
+  "item.kamenridercraft.teriyaki_umaibo_gochizo": "Umaibo Gochizo (Teriyaki Flavour)",
+  "item.kamenridercraft.salad_umaibo_gochizo": "Umaibo Gochizo (Salad Flavour)",
+  "item.kamenridercraft.tonkatsu_umaibo_gochizo": "Umaibo Gochizo (Tonkatsu Flavour)",
+  "item.kamenridercraft.potage_umaibo_gochizo": "Umaibo Gochizo (Potage Flavour)",
+  "item.kamenridercraft.natto_umaibo_gochizo": "Umaibo Gochizo (Natto Flavour)",
+  "item.kamenridercraft.salami_umaibo_gochizo": "Umaibo Gochizo (Salami Flavour)",
+  "item.kamenridercraft.mentaiko_umaibo_gochizo": "Umaibo Gochizo (Mentaiko Flavour)",
 
   "item.kamenridercraft.poppingummy_gochizo_charadeco_ver": "Poppingummy Gochizo (Charadeco ver.)",
   "item.kamenridercraft.merrychristmas_gochizo": "Merry Christmas Gochizo",
@@ -7762,6 +7782,9 @@
 
   "item.kamenridercraft.nyelv_mimic_key": "Nyelv's Mimic Key",
   "item.kamenridercraft.glotta_mimic_key": "Glotta's Mimic Key",
+  "item.kamenridercraft.jeeb_mimic_key": "Jeeb's Mimic Key",
+  "item.kamenridercraft.shiita_mimic_key": "Shiita's Mimic Key",
+  "item.kamenridercraft.lango_mimic_key": "Lango's Mimic Key",
 
 "item.kamenridercraft.gavvgablade": "Gavvgablade",
 "item.kamenridercraft.zakuzakuchipslasher": "Zakuzakuchipslasher",
@@ -8199,6 +8222,9 @@
   "entity.kamenridercraft.bitter_gavv": "Kamen Rider Bitter Gavv",
   "entity.kamenridercraft.nyelv_stomach": "Nyelv Stomach",
   "entity.kamenridercraft.glotta_stomach": "Glotta Stomach",
+  "entity.kamenridercraft.jeeb_stomach": "Jeeb Stomach",
+  "entity.kamenridercraft.shiita_stomach": "Shiita Stomach",
+  "entity.kamenridercraft.lango_stomach": "Lango Stomach",
 
 	"entity.kamenridercraft.acrobatter": "Acrobatter",
 	"entity.kamenridercraft.ridoron": "Ridoron",
@@ -8418,6 +8444,9 @@
   "item.kamenridercraft.bitter_gavv_spawn_egg": "Kamen Rider Bitter Gavv Spawn Egg",
   "item.kamenridercraft.nyelv_stomach_spawn_egg": "Nyelv Stomach Spawn Egg",
   "item.kamenridercraft.glotta_stomach_spawn_egg": "Glotta Stomach Spawn Egg",
+  "item.kamenridercraft.jeeb_stomach_spawn_egg": "Jeeb Stomach Spawn Egg",
+  "item.kamenridercraft.shiita_stomach_spawn_egg": "Shiita Stomach Spawn Egg",
+  "item.kamenridercraft.lango_stomach_spawn_egg": "Lango Stomach Spawn Egg",
 
 	"item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
 	"item.kamenridercraft.ridoron_spawn_egg": "Ridoron",
@@ -10392,5 +10421,6 @@
   "advancements.kamenridercraft.zi-o.zi-o.description": "Transform into Kamen Rider Zi-O",
   "advancements.kamenridercraft.zi-o.zi-o.title": "I've got a feeling this will work!",
   "advancements.kamenridercraft.zi-o.zonjis.description": "Transform into Kamen Rider Zonjis",
-  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe"
+  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe",
+  "kamenridercraft.name.gochipod.stored": "Gochizo Inserted"
 }

@@ -147,6 +147,9 @@ public class ModCommonEvents {
 			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/pudding_gochizo")))) {
 				int rand = generator.nextInt(Gavv_Rider_Items.PUDDING.size());
 				return Gavv_Rider_Items.PUDDING.get(rand);
+			}else if (itemstack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "food_for/corn_gochizo")))) {
+				int rand = generator.nextInt(Gavv_Rider_Items.CORN.size());
+				return Gavv_Rider_Items.CORN.get(rand);
 			}
 			return Items.APPLE;
 		}
@@ -479,6 +482,9 @@ public class ModCommonEvents {
 				trades.get(1).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Items.COOKIE, 1), 10, 8, 0.02F));
+				trades.get(2).add((trader, rand) -> new MerchantOffer(
+						new ItemCost(Items.EMERALD, 1),
+						new ItemStack(Modded_item_core.CORN_SNACK.get(), 1), 10, 8, 0.02F));
 				trades.get(3).add((trader, rand) -> new MerchantOffer(
 						new ItemCost(Items.EMERALD, 1),
 						new ItemStack(Modded_item_core.MAYO.get(), 1), 10, 8, 0.02F));
@@ -708,6 +714,9 @@ public class ModCommonEvents {
 		event.put(MobsCore.BITTER_GAVV.get(), BitterGavvEntity.setAttributes().build());
 		event.put(MobsCore.NYELV_STOMACH.get(), NyelvEntity.setAttributes().build());
 		event.put(MobsCore.GLOTTA_STOMACH.get(), GlottaEntity.setAttributes().build());
+		event.put(MobsCore.JEEB_STOMACH.get(), JeebEntity.setAttributes().build());
+		event.put(MobsCore.SHIITA_STOMACH.get(), ShiitaEntity.setAttributes().build());
+		event.put(MobsCore.LANGO_STOMACH.get(), LangoEntity.setAttributes().build());
 
 		event.put(MobsCore.ACROBATTER.get(), baseBikeEntity.setAttributes().build());
 		event.put(MobsCore.RIDORON.get(), RidoronEntity.setAttributes().build());
