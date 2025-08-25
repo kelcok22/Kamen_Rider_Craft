@@ -1215,6 +1215,18 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> BITTER_GAVV_SPAWN_EGG = ITEMS.register("bitter_gavv_spawn_egg",
             () -> new DeferredSpawnEggItem(BITTER_GAVV, 0x0d0d0d, 0xfa4d02, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<JeebEntity>> JEEB_STOMACH = MOBLIST.register("jeeb_stomach",
+            () -> EntityType.Builder.of(JeebEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":jeeb_stomach"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> JEEB_STOMACH_SPAWN_EGG = ITEMS.register("jeeb_stomach_spawn_egg",
+            () -> new DeferredSpawnEggItem(JEEB_STOMACH, 0xf0ffff, 0x2c76c9, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ShiitaEntity>> SHIITA_STOMACH = MOBLIST.register("shiita_stomach",
+            () -> EntityType.Builder.of(ShiitaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shiita_stomach"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> SHIITA_STOMACH_SPAWN_EGG = ITEMS.register("shiita_stomach_spawn_egg",
+            () -> new DeferredSpawnEggItem(SHIITA_STOMACH, 0xf0ffff, 0xc9e3ff, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<NyelvEntity>> NYELV_STOMACH = MOBLIST.register("nyelv_stomach",
             () -> EntityType.Builder.of(NyelvEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nyelv_stomach"));
 
@@ -1227,6 +1239,11 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> GLOTTA_STOMACH_SPAWN_EGG = ITEMS.register("glotta_stomach_spawn_egg",
             () -> new DeferredSpawnEggItem(GLOTTA_STOMACH, 0x4a3484, 0xe21bb9, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<LangoEntity>> LANGO_STOMACH = MOBLIST.register("lango_stomach",
+            () -> EntityType.Builder.of(LangoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lango_stomach"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> LANGO_STOMACH_SPAWN_EGG = ITEMS.register("lango_stomach_spawn_egg",
+            () -> new DeferredSpawnEggItem(LANGO_STOMACH, 0x6c7075, 0xe60510, new Item.Properties()));
 
     
     public static final DeferredHolder<EntityType<?>, EntityType<AcrobatterEntity>> ACROBATTER = MOBLIST.register("acrobatter",
