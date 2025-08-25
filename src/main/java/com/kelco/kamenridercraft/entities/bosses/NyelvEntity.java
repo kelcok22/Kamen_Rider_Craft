@@ -24,7 +24,7 @@ public class NyelvEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Gavv_Rider_Items.GAVV_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Gavv_Rider_Items.GAVV_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Gavv_Rider_Items.NYELV_MIMICDEVISER.get()));
-     //   this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.THOUSAND_JACKER.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Gavv_Rider_Items.NYELV_BOW.get()));
     }
 
 

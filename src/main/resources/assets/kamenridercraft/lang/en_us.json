@@ -7715,6 +7715,7 @@
 "kamenridercraft:blizzardsorbei_gochizo.form": "Form: Blizzardsorbet Form",
 "kamenridercraft:gochipod.form": "Form: Over Mode",
 "kamenridercraft:gochipod_master.form": "Form: Master Mode",
+  "kamenridercraft.name.gochipod.stored": "Gochizo Inserted",
   "kamenridercraft:amazingummy_gochizo.form": "Form: Amazingummy Form",
 "kamenridercraft:chocold_gochizo.form": "Form: Chocold Form",
 "kamenridercraft:frappeis_gochizo.form": "Form: Frappe Custom",
@@ -10421,6 +10422,5 @@
   "advancements.kamenridercraft.zi-o.zi-o.description": "Transform into Kamen Rider Zi-O",
   "advancements.kamenridercraft.zi-o.zi-o.title": "I've got a feeling this will work!",
   "advancements.kamenridercraft.zi-o.zonjis.description": "Transform into Kamen Rider Zonjis",
-  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe",
-  "kamenridercraft.name.gochipod.stored": "Gochizo Inserted"
+  "advancements.kamenridercraft.zi-o.zonjis.title": "ShoWannabe"
 }
